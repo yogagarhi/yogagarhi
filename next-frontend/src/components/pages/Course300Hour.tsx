@@ -1043,6 +1043,18 @@ export default function Course300Hour() {
                   Book an Appointment
                 </Button>
               </div>
+
+              {/* Mobile Only - Sunday Schedule Button */}
+              <div className="sm:hidden flex justify-center pt-4">
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
+                  onClick={() => window.location.href = '/sunday-schedule'}
+                >
+                  Explore Joyful Sunday ☀️
+                </Button>
+              </div>
             </div>
           </div>
 
@@ -1212,12 +1224,11 @@ export default function Course300Hour() {
 
                   <ul className="space-y-4">
                     {[
-                      <>You want to <span className="font-semibold text-foreground">deepen your yoga practice</span> — physically, mentally, spiritually</>,
-                      <>You feel called to <span className="font-semibold text-foreground">teach yoga with confidence and clarity</span></>,
-                      <>You are seeking <span className="font-semibold text-foreground">healing, clarity, and a fresh start</span> in the heart of Bali</>,
-                      <>You want to learn yoga <span className="font-semibold text-foreground">authentically, not commercially</span></>,
-                      <>You’re not sure yet if you’ll teach — but you want a <span className="font-semibold text-foreground">strong foundation</span></>,
-                      <>You value <span className="font-semibold text-foreground">tradition, self-discipline, and conscious living</span></>
+                      <>Deepens <span className="font-semibold text-foreground">teaching skills</span> with advanced alignment, sequencing, and philosophy</>,
+                      <>Builds <span className="font-semibold text-foreground">confidence</span> to lead full-length classes, workshops, and retreats</>,
+                      <>Refines <span className="font-semibold text-foreground">personal practice</span> and professional presence as a yoga teacher</>,
+                      <>Expands <span className="font-semibold text-foreground">career opportunities</span> in international studios, retreats, and wellness programs</>,
+                      <>Strengthens the <span className="font-semibold text-foreground">foundation</span> for long-term teaching, mentorship, and specialization</>
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-sm md:text-base text-muted-foreground">
                         <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
@@ -1251,8 +1262,8 @@ export default function Course300Hour() {
                 <div className="space-y-6 text-muted-foreground leading-relaxed">
                   {/* First 2 paragraphs - always visible */}
                   <p>
-                    Become a Yoga Alliance Registered Yoga Teacher (RYT 200) through Yogagarhi's
-                    200-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
+                    Become a Yoga Alliance Registered Yoga Teacher (RYT 300) through Yogagarhi's
+                    300-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
                     of yoga and self-realization.
                   </p>
                   <p>
@@ -1394,7 +1405,7 @@ export default function Course300Hour() {
                 <div className="mt-6 p-4 rounded-xl bg-primary/5 border border-primary/20 relative overflow-hidden group/box">
                   <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
                   <p className="text-xs md:text-sm text-foreground font-medium leading-relaxed relative z-10">
-                    <span className="text-primary font-bold">Career Impact:</span> After completing the 300-Hour Yoga Teacher Training, you can start teaching yoga <strong className="text-foreground">anywhere in the world</strong> in studios, online live classes, yoga retreats, or through your own independent practice.
+                    <span className="text-primary font-bold">Career Impact:</span> A 300-Hour Yoga Training advances your practice into confident, professional teaching. It refines alignment, sequencing, and yogic understanding while preparing you to lead complete classes, workshops, and retreats. This training supports long-term growth within global yoga, wellness, and conscious living spaces.
                   </p>
                   <Globe className="absolute -bottom-2 -right-2 w-12 h-12 text-primary/10 group-hover/box:text-primary/20 transition-colors duration-500" />
                 </div>
@@ -2046,6 +2057,18 @@ export default function Course300Hour() {
               <p className="mt-12 text-center text-sm text-muted-foreground">
                 Sunday is a full day off for rest, self-study, or optional excursions.
               </p>
+
+              {/* Sunday Schedule CTA Button */}
+              <div className="flex justify-center mt-8">
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
+                  onClick={() => window.location.href = '/sunday-schedule'}
+                >
+                  Explore Joyful Sunday ☀️
+                </Button>
+              </div>
             </div>
           </div>
         </section>

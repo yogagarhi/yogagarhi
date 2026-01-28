@@ -62,6 +62,28 @@ const TestimonialsIcon = () => (
   </svg>
 );
 
+const SunIcon1 = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none">
+    <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
+    <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
+  </svg>
+);
+
+const SunIcon2 = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none">
+    <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
+    <path d="M12 3v2M12 19v2M3 12h2M19 12h2" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
+    <path d="M20 4l-2 2M6 18l-2 2M4 4l2 2M18 18l2 2" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
+  </svg>
+);
+
+const SunIcon3 = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none">
+    <circle cx="12" cy="12" r="6" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
+    <path d="M12 8v8M8 12h8" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
+  </svg>
+);
+
 const courses = [
   { name: "100 Hour YTTC", href: "/100-hour-yoga-teacher-training-in-bali", icon: ChakraSymbol1 },
   { name: "200 Hour YTTC", href: "/200-hour-yoga-teacher-training-in-bali", icon: ChakraSymbol2 },
@@ -74,11 +96,18 @@ const aboutItems = [
   { name: "Testimonials", href: "/testimonials", icon: TestimonialsIcon },
 ];
 
+const sundayItems = [
+  { name: "Sunday 1", href: "/sunday-schedule#sunday-1", icon: SunIcon1 },
+  { name: "Sunday 2", href: "/sunday-schedule#sunday-2", icon: SunIcon2 },
+  { name: "Sunday 3", href: "/sunday-schedule#sunday-3", icon: SunIcon3 },
+];
+
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "#", dropdown: aboutItems },
   { name: "Courses", href: "#", dropdown: courses },
   { name: "Gallery", href: "/gallery" },
+  { name: "Sunday Schedule", href: "/sunday-schedule", dropdown: sundayItems },
   { name: "Blogs", href: "/blogs" },
   { name: "Contact", href: "/contact-us" },
 ];
@@ -138,6 +167,7 @@ export default function Header() {
   const isActive = (href: string) => pathname === href;
   const isCoursesActive = pathname.includes("-hour-yoga-teacher-training-in-bali");
   const isAboutActive = pathname === "/about-school" || pathname === "/teachers" || pathname === "/testimonials";
+  const isSundayActive = pathname === "/sunday-schedule";
 
   return (
     <>
@@ -199,7 +229,8 @@ export default function Header() {
               <div className="flex items-center bg-secondary/30 rounded-full px-2 py-1.5">
                 {navLinks.map((link, index) => {
                   const isDropdownActive = link.name === 'Courses' ? isCoursesActive :
-                    link.name === 'About' ? isAboutActive : false;
+                    link.name === 'About' ? isAboutActive :
+                      link.name === 'Sunday Schedule' ? isSundayActive : false;
                   return (
                     <div key={link.name} className="relative">
                       {link.dropdown ? (
@@ -311,7 +342,8 @@ export default function Header() {
           <nav className="container mx-auto px-4 py-6 flex flex-col gap-1">
             {navLinks.map((link) => {
               const isMobileDropdownActive = link.name === 'Courses' ? isCoursesActive :
-                link.name === 'About' ? isAboutActive : false;
+                link.name === 'About' ? isAboutActive :
+                  link.name === 'Sunday Schedule' ? isSundayActive : false;
               const isThisDropdownOpen = mobileOpenDropdown === link.name;
 
               return (

@@ -319,6 +319,18 @@ export default function CourseDetail() {
                 </div>
               ))}
             </div>
+
+            {/* Sunday Schedule CTA Button */}
+            <div className="flex justify-center mt-12">
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
+                onClick={() => window.location.href = '/sunday-schedule'}
+              >
+                Explore Joyful Sunday ☀️
+              </Button>
+            </div>
           </div>
         </div>
       </section>

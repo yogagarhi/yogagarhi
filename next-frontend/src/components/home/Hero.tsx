@@ -113,6 +113,18 @@ export default function Hero() {
               Book an Appointment
             </Button>
           </div>
+
+          {/* Mobile Only - Sunday Schedule Button */}
+          <div className="sm:hidden flex justify-center pt-4">
+            <Button
+              variant="default"
+              size="lg"
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
+              onClick={() => window.location.href = '/sunday-schedule'}
+            >
+              Explore Joyful Sunday ☀️
+            </Button>
+          </div>
         </div>
       </div>
 
