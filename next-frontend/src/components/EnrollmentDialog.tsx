@@ -66,6 +66,8 @@ export function EnrollmentProvider({ children }: { children: ReactNode }) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!isFormValid || isLoading) return;
+
     setIsLoading(true);
 
     try {
@@ -83,17 +85,22 @@ export function EnrollmentProvider({ children }: { children: ReactNode }) {
 
       if (response.ok) {
         setIsSubmitted(true);
-        router.push('/thank-you?type=enrollment');
+        // Small delay to allow the success UI to be seen before redirect
+        setTimeout(() => {
+          router.push('/thank-you?type=enrollment');
+        }, 1500);
       } else {
-        throw new Error('Failed to send enrollment');
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.message || 'Failed to send enrollment');
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error submitting enrollment:", error);
       toast({
-        title: "Something went wrong",
-        description: "Please try again later or contact us directly.",
+        title: "Submission Failed",
+        description: error.message || "Please check your internet connection and try again.",
         variant: "destructive"
       });
+    } finally {
       setIsLoading(false);
     }
   };
