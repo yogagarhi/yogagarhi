@@ -7,21 +7,23 @@ import { useEnrollment } from "@/components/EnrollmentDialog";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
 // Import gallery images
-import yogaRiver from "@/assets/gallery/yoga-river.jpg";
-import anatomyClass from "@/assets/gallery/anatomy-class.jpg";
-import outdoorSession from "@/assets/gallery/outdoor-session.jpg";
-import acroYoga from "@/assets/gallery/acro-yoga.jpg";
-import groupStudy from "@/assets/gallery/group-study.jpg";
-import adjustment from "@/assets/gallery/adjustment.jpg";
-import backbend from "@/assets/gallery/backbend.jpg";
-import seatedTwist from "@/assets/gallery/seated-twist.jpg";
-import communityMeal from "@/assets/gallery/community-meal.jpg";
-import teachingPractice from "@/assets/gallery/teaching-practice.jpg";
-import savasana from "@/assets/gallery/savasana.jpg";
-import seatedMeditation from "@/assets/gallery/seated-meditation.jpg";
-import partnerAssist from "@/assets/gallery/partner-assist.jpg";
-import groupClass from "@/assets/gallery/group-class.jpg";
+const yogaRiver = getCloudinaryImage("yoga-river.png");
+const anatomyClass = getCloudinaryImage("anatomy-class.png");
+const outdoorSession = getCloudinaryImage("outdoor-session.png");
+const acroYoga = getCloudinaryImage("acro-yoga.png");
+const groupStudy = getCloudinaryImage("group-study.png");
+const adjustment = getCloudinaryImage("adjustment.png");
+const backbend = getCloudinaryImage("backbend.png");
+const seatedTwist = getCloudinaryImage("seated-twist.png");
+const communityMeal = getCloudinaryImage("community-meal.png");
+const teachingPractice = getCloudinaryImage("teaching-practice.png");
+const savasana = getCloudinaryImage("savasana.png");
+const seatedMeditation = getCloudinaryImage("seated-meditation.png");
+const partnerAssist = getCloudinaryImage("partner-assist.png");
+const groupClass = getCloudinaryImage("group-class.png");
 
 const galleryImages = [
   { src: yogaRiver, alt: "Yoga by the river" },

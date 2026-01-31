@@ -12,11 +12,13 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import SacredGeometryBackground from "@/components/3d/SacredGeometryBackground";
-import preYttcOnline from "@/assets/pre-yttc-online.png";
-import postSupport1 from "@/assets/post-support-1.jpg";
-import postSupport2 from "@/assets/post-support-2.jpg";
-import postSupport3 from "@/assets/post-support-3.jpg";
-import postSupport4 from "@/assets/post-support-4.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
+const preYttcOnline = getCloudinaryImage("pre-yttc-online.png");
+const postSupport1 = getCloudinaryImage("post-support-1.jpg");
+const postSupport2 = getCloudinaryImage("post-support-2.jpg");
+const postSupport3 = getCloudinaryImage("post-support-3.jpg");
+const postSupport4 = getCloudinaryImage("post-support-4.jpg");
 
 // Pre-YTTC Support Items
 const preYTTCItems = [

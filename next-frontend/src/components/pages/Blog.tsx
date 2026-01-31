@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { Calendar, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-yoga-bali.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 
 const blogPosts = [
   {

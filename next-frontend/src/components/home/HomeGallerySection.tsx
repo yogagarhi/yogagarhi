@@ -5,14 +5,16 @@ import Image from "next/image";
 import { ArrowRight, Camera, Play } from "lucide-react";
 
 // Import gallery images
-import gallery1 from "@/assets/gallery/gallery-1.jpg";
-import gallery2 from "@/assets/gallery/gallery-2-new.jpg";
-import gallery3 from "@/assets/gallery/gallery-3-new.jpg";
-import gallery4 from "@/assets/gallery/gallery-4-new.jpg";
-import gallery5 from "@/assets/gallery/gallery-5-latest.jpg";
-import gallery6 from "@/assets/gallery/gallery-6-new.jpg";
-import gallery7 from "@/assets/gallery/gallery-7.jpg";
-import gallery8 from "@/assets/gallery/gallery-8.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
+const gallery1 = getCloudinaryImage("gallery-1.png");
+const gallery2 = getCloudinaryImage("gallery-2-new.jpg");
+const gallery3 = getCloudinaryImage("gallery-3-new.jpg");
+const gallery4 = getCloudinaryImage("gallery-4-new.jpg");
+const gallery5 = getCloudinaryImage("gallery-5-latest.jpg");
+const gallery6 = getCloudinaryImage("gallery-6-new.jpg");
+const gallery7 = getCloudinaryImage("gallery-7.png");
+const gallery8 = getCloudinaryImage("gallery-8.png");
 
 const galleryImages = [
   { src: gallery1, alt: "Waterfall excursion", label: "Nature Immersion" },

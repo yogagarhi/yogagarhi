@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin } from "lucide-react";
-import heroImage from "@/assets/hero-yoga-bali.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 import Image from "next/image";
 
 export default function Contact() {

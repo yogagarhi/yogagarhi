@@ -6,7 +6,8 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEnrollment } from "@/components/EnrollmentDialog";
-import logo from "@/assets/yogagarhi-logo-hd-preview.png";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
 // Chakra/Mandala spiritual symbols
 const ChakraSymbol1 = () => (

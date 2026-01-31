@@ -4,9 +4,11 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Award } from "lucide-react";
 import { useContactDialog } from "@/components/ContactDialog";
-import course100hr from "@/assets/course-100hr-new.jpg";
-import course200hr from "@/assets/course-200hr-new.jpg";
-import course300hr from "@/assets/course-300hr-v2.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
+const course100hr = getCloudinaryImage("course-100hr-new.png");
+const course200hr = getCloudinaryImage("course-200hr-new.png");
+const course300hr = getCloudinaryImage("course-300hr-v2.png");
 
 const courses = [
   {

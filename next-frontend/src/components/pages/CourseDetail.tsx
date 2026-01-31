@@ -5,20 +5,22 @@ import Image from "next/image";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Check, Clock, Users, Award, MapPin, Utensils, Gift, ChevronDown, ChevronUp } from "lucide-react";
-import heroImage from "@/assets/hero-yoga-bali.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
+const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 import { useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 // What Sets Apart section images
-import apartHammock from "@/assets/apart/hammock.jpg";
-import apartSeatedTalk from "@/assets/apart/seated-talk.jpg";
-import apartGroupPose from "@/assets/apart/group-pose.jpg";
-import apartCeremony from "@/assets/apart/ceremony.jpg";
-import apartGroupClass from "@/assets/apart/group-class.jpg";
-import apartChildPose from "@/assets/apart/child-pose.jpg";
-import apartWaterTemple from "@/assets/apart/water-temple.jpg";
-import apartPoolVilla from "@/assets/apart/pool-villa.jpg";
-import apartMountainPose from "@/assets/apart/mountain-pose.jpg";
+const apartHammock = getCloudinaryImage("hammock.png");
+const apartSeatedTalk = getCloudinaryImage("seated-talk.png");
+const apartGroupPose = getCloudinaryImage("group-pose.png");
+const apartCeremony = getCloudinaryImage("ceremony.png");
+const apartGroupClass = getCloudinaryImage("group-class.png");
+const apartChildPose = getCloudinaryImage("child-pose.png");
+const apartWaterTemple = getCloudinaryImage("water-temple.png");
+const apartPoolVilla = getCloudinaryImage("pool-villa.png");
+const apartMountainPose = getCloudinaryImage("mountain-pose.png");
 
 const apartImages = [
   apartHammock,
