@@ -382,7 +382,7 @@ const YTTCSupportSection = () => {
         </div>
 
         {/* Timeline Visual at Bottom */}
-        <div className="mt-20 max-w-4xl mx-auto">
+        <div className="mt-20 max-w-4xl mx-auto px-2 md:px-0">
           <div className="relative flex items-center justify-between">
             {/* Line */}
             <div className="absolute inset-x-0 top-1/2 h-0.5 bg-gradient-to-r from-primary/50 via-primary to-primary/50 -translate-y-1/2" />
@@ -392,30 +392,30 @@ const YTTCSupportSection = () => {
               className="relative z-10 flex flex-col items-center cursor-pointer group transition-all duration-300"
               onClick={() => setActiveTab('pre')}
             >
-              <div className={`w-16 h-16 rounded-full flex items-center justify-center transition-all duration-500 z-20 ${activeTab === 'pre'
+              <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center transition-all duration-500 z-20 ${activeTab === 'pre'
                 ? 'bg-primary text-primary-foreground shadow-[0_0_20px_rgba(var(--primary),0.3)] ring-4 ring-primary/20 scale-110'
                 : 'bg-background/80 backdrop-blur-sm border-2 border-primary/40 text-primary group-hover:scale-110 shadow-sm'
                 }`}>
-                <GraduationCap className="w-7 h-7" />
+                <GraduationCap className="w-5 h-5 md:w-7 md:h-7" />
               </div>
 
-              <div className={`mt-4 px-6 py-2.5 rounded-full transition-all duration-500 border flex flex-col items-center min-w-[150px] backdrop-blur-md ${activeTab === 'pre'
+              <div className={`mt-4 px-2 md:px-6 py-2 md:py-2.5 rounded-full transition-all duration-500 border flex flex-col items-center md:min-w-[150px] backdrop-blur-md ${activeTab === 'pre'
                 ? 'bg-primary/90 text-primary-foreground border-primary/50 shadow-[0_8px_32px_rgba(var(--primary),0.25)] -translate-y-1'
                 : 'bg-white/40 dark:bg-white/5 border-white/20 dark:border-white/10 text-foreground shadow-[0_4px_16px_rgba(0,0,0,0.08)] group-hover:bg-white/60 group-hover:shadow-lg group-hover:-translate-y-0.5'
                 }`}>
-                <p className="font-heading font-bold text-sm leading-tight">Before You Join</p>
-                <p className={`text-[10px] mt-0.5 font-bold uppercase tracking-widest ${activeTab === 'pre' ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>Preparation</p>
+                <p className="font-heading font-bold text-[10px] md:text-sm leading-tight text-center whitespace-nowrap md:whitespace-normal">Before You Join</p>
+                <p className={`text-[9px] md:text-[10px] mt-0.5 font-bold uppercase tracking-widest ${activeTab === 'pre' ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>Preparation</p>
               </div>
             </div>
 
             {/* Training Point */}
             <div className="relative z-10 flex flex-col items-center">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-primary-foreground shadow-[0_10px_30px_rgba(var(--primary),0.3)] ring-4 ring-primary/10">
-                <Play className="w-8 h-8 ml-1" />
+              <div className="w-14 h-14 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-primary-foreground shadow-[0_10px_30px_rgba(var(--primary),0.3)] ring-4 ring-primary/10">
+                <Play className="w-5 h-5 md:w-8 md:h-8 ml-1" />
               </div>
-              <div className="mt-4 px-6 py-2.5 flex flex-col items-center">
-                <p className="font-heading font-bold text-sm text-foreground">YTTC Training</p>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">21-24 Days</p>
+              <div className="mt-4 px-2 md:px-6 py-2 md:py-2.5 flex flex-col items-center">
+                <p className="font-heading font-bold text-[10px] md:text-sm text-foreground text-center whitespace-nowrap md:whitespace-normal">YTTC Training</p>
+                <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-muted-foreground">21-24 Days</p>
               </div>
             </div>
 
@@ -424,19 +424,19 @@ const YTTCSupportSection = () => {
               className="relative z-10 flex flex-col items-center cursor-pointer group transition-all duration-300"
               onClick={() => setActiveTab('post')}
             >
-              <div className={`w-16 h-16 rounded-full flex items-center justify-center transition-all duration-500 z-20 ${activeTab === 'post'
+              <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center transition-all duration-500 z-20 ${activeTab === 'post'
                 ? 'bg-primary text-primary-foreground shadow-[0_0_20px_rgba(var(--primary),0.3)] ring-4 ring-primary/20 scale-110'
                 : 'bg-background/80 backdrop-blur-sm border-2 border-primary/40 text-primary group-hover:scale-110 shadow-sm'
                 }`}>
-                <RefreshCw className="w-7 h-7" />
+                <RefreshCw className="w-5 h-5 md:w-7 md:h-7" />
               </div>
 
-              <div className={`mt-4 px-6 py-2.5 rounded-full transition-all duration-500 border flex flex-col items-center min-w-[150px] backdrop-blur-md ${activeTab === 'post'
+              <div className={`mt-4 px-2 md:px-6 py-2 md:py-2.5 rounded-full transition-all duration-500 border flex flex-col items-center md:min-w-[150px] backdrop-blur-md ${activeTab === 'post'
                 ? 'bg-primary/90 text-primary-foreground border-primary/50 shadow-[0_8px_32px_rgba(var(--primary),0.25)] -translate-y-1'
                 : 'bg-white/40 dark:bg-white/5 border-white/20 dark:border-white/10 text-foreground shadow-[0_4px_16px_rgba(0,0,0,0.08)] group-hover:bg-white/60 group-hover:shadow-lg group-hover:-translate-y-0.5'
                 }`}>
-                <p className="font-heading font-bold text-sm leading-tight">Life After Graduation</p>
-                <p className={`text-[10px] mt-0.5 font-bold uppercase tracking-widest ${activeTab === 'post' ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>Lifelong Support</p>
+                <p className="font-heading font-bold text-[10px] md:text-sm leading-tight text-center whitespace-nowrap md:whitespace-normal">Life After Graduation</p>
+                <p className={`text-[9px] md:text-[10px] mt-0.5 font-bold uppercase tracking-widest ${activeTab === 'post' ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>Lifelong Support</p>
               </div>
             </div>
           </div>

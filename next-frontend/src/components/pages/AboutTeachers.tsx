@@ -1,7 +1,7 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
-import { Award, Clock, Heart, Sparkles, Users, BookOpen, Mountain, Flame, Star, ChevronDown } from "lucide-react";
+import { Award, Clock, Heart, Users, BookOpen, Mountain, Flame, Star, ChevronDown } from "lucide-react";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import ReadyToBeginSection from "@/components/home/ReadyToBeginSection";
 import heroImage from "@/assets/hero-yoga-bali.jpg";
@@ -254,7 +254,7 @@ export default function AboutTeachers() {
                 <div className="absolute -bottom-6 -right-6 bg-card rounded-2xl p-4 shadow-elevated border border-border/50 animate-float-ultra-smooth">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Sparkles className="w-6 h-6 text-primary" />
+                      <Award className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">Founder & Lead Teacher</p>
