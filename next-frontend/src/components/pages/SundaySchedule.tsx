@@ -7,20 +7,22 @@ import { Button } from "@/components/ui/button";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import ReadyToBeginSection from "@/components/home/ReadyToBeginSection";
 
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
 // Import images
-import beachYogaClass from "@/assets/sunday/beach-yoga-class.png";
-import monkeyForestVisit from "@/assets/sunday/monkey-forest-visit.png";
-import ubudArtMarket from "@/assets/sunday/ubud-art-market.png";
+const beachYogaClass = getCloudinaryImage("beach-yoga-class.png");
+const monkeyForestVisit = getCloudinaryImage("monkey-forest-visit.png");
+const ubudArtMarket = getCloudinaryImage("ubud-art-market.png");
 
-import makingCoffee from "@/assets/sunday/making-coffee.png";
-import woodCarving from "@/assets/sunday/wood-carving.png";
-import canangSari from "@/assets/sunday/canang-sari-new.jpg";
-import rindikMusic from "@/assets/sunday/rindik-music.png";
+const makingCoffee = getCloudinaryImage("making-coffee.png");
+const woodCarving = getCloudinaryImage("wood-carving.png");
+const canangSari = getCloudinaryImage("canang-sari-new.jpg");
+const rindikMusic = getCloudinaryImage("rindik-music.png");
 
-import riceFieldTrek from "@/assets/sunday/rice-field-trek.png";
-import balineseDance from "@/assets/sunday/balinese-dance.jpg";
-import waterPurification from "@/assets/sunday/water-purification.jpg";
-import ubudMarketNew from "@/assets/sunday/ubud-market-new.jpg";
+const riceFieldTrek = getCloudinaryImage("rice-field-trek.png");
+const balineseDance = getCloudinaryImage("balinese-dance.jpg");
+const waterPurification = getCloudinaryImage("water-purification.jpg");
+const ubudMarketNew = getCloudinaryImage("ubud-market-new.jpg");
 
 const sundaySchedules = [
     {

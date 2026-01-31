@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { useBooking } from "@/components/BookingDialog";
+import { getCloudinaryUrl } from "@/utils/cloudinary";
 
 export default function Hero() {
   const { setShowQuickEnquiry } = useQuickEnquiry();
@@ -11,7 +12,7 @@ export default function Hero() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/hero-yoga-group.jpg)' }}
+        style={{ backgroundImage: `url(${getCloudinaryUrl('/hero-yoga-group.jpg')})` }}
       >
         <div className="absolute inset-0 bg-black/40" />
       </div>

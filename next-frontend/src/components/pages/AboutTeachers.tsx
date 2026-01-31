@@ -4,15 +4,17 @@ import Image from "next/image";
 import { Award, Clock, Heart, Users, BookOpen, Mountain, Flame, Star, ChevronDown } from "lucide-react";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import ReadyToBeginSection from "@/components/home/ReadyToBeginSection";
-import heroImage from "@/assets/hero-yoga-bali.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
+const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 
 // Teacher Images
-import sachinJiImg from "@/assets/founder-image.png";
-import chandaJiImg from "@/assets/teachers/chanda-ji-hd.jpg";
-import rahulJiImg from "@/assets/teachers/rahul-ji-hd.jpg";
-import rohitJiImg from "@/assets/teachers/rohit-ji-hd.jpg";
-import abhishekJiImg from "@/assets/teachers/abhishek-ji-hd.jpg";
-import ankitJiImg from "@/assets/teachers/ankit-ji-hd.jpg";
+const sachinJiImg = getCloudinaryImage("founder-image.png");
+const chandaJiImg = getCloudinaryImage("chanda-ji-hd.png");
+const rahulJiImg = getCloudinaryImage("rahul-ji-hd.png");
+const rohitJiImg = getCloudinaryImage("rohit-ji-hd.png");
+const abhishekJiImg = getCloudinaryImage("abhishek-ji-hd.png");
+const ankitJiImg = getCloudinaryImage("ankit-ji-hd.png");
 
 const founderAchievements = [
   { icon: Users, label: "2500+ Students Trained" },

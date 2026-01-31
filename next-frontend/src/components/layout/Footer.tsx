@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Instagram, Facebook, Youtube, Phone, Mail, MapPin, Sparkles } from "lucide-react";
-import logo from "@/assets/yogagarhi-logo-hd-preview.png";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
 const courses = [
   { name: "100 Hour YTTC", href: "/100-hour-yoga-teacher-training-in-bali" },

@@ -6,17 +6,19 @@ import Image from "next/image";
 import { Shield, Heart, Users, BookOpen, Sparkles, Mountain, ArrowRight, Leaf, Star, Flame, Brain, Zap, Layers, RefreshCw } from "lucide-react";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import ReadyToBeginSection from "@/components/home/ReadyToBeginSection";
-import heroImage from "@/assets/hero-yoga-bali.jpg";
-import gallery1 from "@/assets/gallery/gallery-1.jpg";
-import gallery2 from "@/assets/gallery/gallery-2.jpg";
-import gallery3 from "@/assets/gallery/gallery-3.jpg";
-import gallery4 from "@/assets/gallery/gallery-4.jpg";
-import gallery5 from "@/assets/gallery/gallery-5.jpg";
-import seatedMeditation from "@/assets/gallery/seated-meditation.jpg";
-import founderImage from "@/assets/founder-image.png";
-import aboutYoga1 from "@/assets/about-yoga-1.jpg";
-import aboutYoga2 from "@/assets/about-yoga-2.jpg";
-import aboutYoga3 from "@/assets/about-yoga-3.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
+const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
+const gallery1 = getCloudinaryImage("gallery-1.png");
+const gallery2 = getCloudinaryImage("gallery-2-new.jpg");
+const gallery3 = getCloudinaryImage("gallery-3-new.jpg");
+const gallery4 = getCloudinaryImage("gallery-4-new.jpg");
+const gallery5 = getCloudinaryImage("gallery-5-latest.jpg");
+const seatedMeditation = getCloudinaryImage("seated-meditation.png");
+const founderImage = getCloudinaryImage("founder-image.png");
+const aboutYoga1 = getCloudinaryImage("about-yoga-1.jpg");
+const aboutYoga2 = getCloudinaryImage("about-yoga-2.jpg");
+const aboutYoga3 = getCloudinaryImage("about-yoga-3.jpg");
 
 const whyChooseUs = [
   { title: "The Unique Shivshakti Method", desc: "Our Signature Approach converts yogic theory into practical wisdom.", highlight: "Signature" },

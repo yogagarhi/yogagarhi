@@ -4,7 +4,9 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Award, Heart, Users } from "lucide-react";
-import founderImage from "@/assets/founder-image.png";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
+const founderImage = getCloudinaryImage("founder-image.png");
 
 const achievements = [
   { icon: Users, label: "2500+ Students Trained" },

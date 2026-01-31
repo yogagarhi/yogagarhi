@@ -1,7 +1,9 @@
 import Image from "next/image";
-import waterfallImg from "@/assets/activity-waterfall.jpg";
-import soundHealingImg from "@/assets/activity-sound-healing.jpg";
-import ayurvedaImg from "@/assets/activity-ayurveda.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
+const waterfallImg = getCloudinaryImage("activity-waterfall.jpg");
+const soundHealingImg = getCloudinaryImage("activity-sound-healing.jpg");
+const ayurvedaImg = getCloudinaryImage("activity-ayurveda.jpg");
 
 const activities = [
   {

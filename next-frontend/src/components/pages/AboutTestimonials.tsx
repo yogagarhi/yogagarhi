@@ -5,7 +5,8 @@ import { Quote, Star, MapPin, ArrowRight } from "lucide-react";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import ReadyToBeginSection from "@/components/home/ReadyToBeginSection";
 import StudentStoriesSection from "@/components/home/StudentStoriesSection";
-import heroImage from "@/assets/hero-yoga-bali.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 import Image from "next/image";
 import { googleReviews } from "@/constants/googleReviews";
 

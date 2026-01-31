@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import yogaAllianceLogo from "@/assets/yoga-alliance-official.png";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
+const yogaAllianceLogo = getCloudinaryImage("yoga-alliance-official.png");
 
 const partnerships = [
     {

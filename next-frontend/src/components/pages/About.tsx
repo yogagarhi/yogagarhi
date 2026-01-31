@@ -4,11 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, MapPin, Users, Quote, Star, Clock, Award, Heart, Sparkles } from "lucide-react";
 import { useEnrollment } from "@/components/EnrollmentDialog";
-import heroImage from "@/assets/hero-yoga-bali.jpg";
-import founderImage from "@/assets/founder-image.png";
-import gallery1 from "@/assets/gallery/gallery-1.jpg";
-import gallery2 from "@/assets/gallery/gallery-2.jpg";
-import gallery3 from "@/assets/gallery/gallery-3.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+
+const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
+const founderImage = getCloudinaryImage("founder-image.png");
+const gallery1 = getCloudinaryImage("gallery-1.png");
+const gallery2 = getCloudinaryImage("gallery-2-new.jpg");
+const gallery3 = getCloudinaryImage("gallery-3-new.jpg");
 import { googleReviews } from "@/constants/googleReviews";
 
 const sections = [

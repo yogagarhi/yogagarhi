@@ -10,7 +10,8 @@ import {
   Instagram, Youtube, Sparkles, ArrowRight, Mail,
   Phone, Download, BookOpen
 } from "lucide-react";
-import heroImage from "@/assets/hero-yoga-bali.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 
 export default function ThankYou() {
   return (

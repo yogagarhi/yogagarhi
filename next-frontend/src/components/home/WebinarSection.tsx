@@ -4,7 +4,8 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import Image from "next/image";
-import webinarBackground from "@/assets/webinar-background.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+const webinarBackground = getCloudinaryImage("webinar-background.jpg");
 
 const WebinarSection = () => {
   const router = useRouter();

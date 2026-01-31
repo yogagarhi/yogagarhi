@@ -7,7 +7,8 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Phone, BookOpen, Sparkles, Video, Calendar, GraduationCap, Check } from "lucide-react";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useBooking } from "@/components/BookingDialog";
-import readyToBeginBg from "@/assets/ready-to-begin-bg.jpg";
+import { getCloudinaryImage } from "@/utils/cloudinary";
+const readyToBeginBg = getCloudinaryImage("ready-to-begin-bg.png");
 
 const ReadyToBeginSection = () => {
   const { setShowEnrollDialog } = useEnrollment();
