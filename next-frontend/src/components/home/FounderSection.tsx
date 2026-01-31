@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Award, Heart, Users, Sparkles } from "lucide-react";
+import { Award, Heart, Users } from "lucide-react";
 import founderImage from "@/assets/founder-image.png";
 
 const achievements = [
@@ -67,7 +67,7 @@ export default function FounderSection() {
               <div className="absolute -bottom-6 -right-6 bg-card rounded-2xl p-4 shadow-elevated border border-border/50 animate-float-ultra-smooth">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Sparkles className="w-6 h-6 text-primary" />
+                    <Award className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Founder & Lead Teacher</p>
