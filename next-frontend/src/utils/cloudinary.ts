@@ -58,7 +58,7 @@ export function getCloudinaryImage(filename: string) {
             // console.warn(`[Cloudinary] Image not found for object: ${cleanName}`);
         }
         return {
-            src: filename,
+            src: filename.startsWith('/') ? filename : `/${filename}`,
             width: 800, // Fallback
             height: 600
         };
