@@ -1,5 +1,5 @@
 "use client";
-import { useState, Suspense } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import {
@@ -11,7 +11,6 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
-import SacredGeometryBackground from "@/components/3d/SacredGeometryBackground";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 
 const preYttcOnline = getCloudinaryImage("pre-yttc-online.png");
@@ -193,11 +192,11 @@ const YTTCSupportSection = () => {
                 <div className="relative">
                   {/* Main Card */}
                   <div className="relative bg-gradient-to-br from-amber-50/90 via-orange-50/80 to-yellow-50/70 dark:from-amber-950/40 dark:via-orange-950/30 dark:to-yellow-950/20 rounded-3xl p-8 border border-amber-200/50 dark:border-amber-800/30 overflow-hidden min-h-[500px] flex flex-col">
-                    {/* 3D Background */}
-                    <div className="absolute inset-0">
-                      <Suspense fallback={<div className="w-full h-full bg-primary/5" />}>
-                        <SacredGeometryBackground />
-                      </Suspense>
+                    {/* 3D Background - Replaced with CSS gradient for performance */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/10 to-primary/5">
+                      <div className="absolute inset-0 opacity-30" style={{
+                        backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255,200,100,0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,150,50,0.2) 0%, transparent 50%)',
+                      }} />
                     </div>
 
                     {/* Content with z-index for readability */}

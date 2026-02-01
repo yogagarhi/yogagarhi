@@ -4,19 +4,24 @@ import "./globals.css";
 import Script from "next/script";
 import { Providers } from "@/components/Providers";
 import MainLayout from "@/components/MainLayout";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"], // Removed 300 to reduce bundle
   variable: "--font-heading",
   display: "swap",
+  preload: true,
+  fallback: ['Georgia', 'serif'],
 });
 
 const lato = Lato({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  weight: ["400", "700"], // Removed 300 to reduce bundle
   variable: "--font-body",
   display: "swap",
+  preload: true,
+  fallback: ['system-ui', 'Arial', 'sans-serif'],
 });
 
 export const metadata: Metadata = {
@@ -92,8 +97,6 @@ export const metadata: Metadata = {
   },
 };
 
-import WhatsAppButton from "@/components/WhatsAppButton";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -102,10 +105,23 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=5"
+        />
         <meta name="theme-color" content="#0f766e" />
+        {/* Preconnect to external domains for better performance */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
       </head>
-      <body className={`${cormorant.variable} ${lato.variable} font-body bg-background text-foreground antialiased scroll-smooth`} suppressHydrationWarning>
+
+      <body
+        className={`${cormorant.variable} ${lato.variable} font-body bg-background text-foreground antialiased scroll-smooth`}
+        suppressHydrationWarning
+      >
+        {/* Google Tag Manager */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-T9PKFR8P"
@@ -114,13 +130,16 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <Script id="google-tag-manager" strategy="afterInteractive">
+
+        <Script id="google-tag-manager" strategy="lazyOnload">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-T9PKFR8P');`}
         </Script>
+
+        {/* ✅ FUNCTIONALITY PRESERVED — LOADED AFTER FIRST PAINT */}
         <Providers>
           <MainLayout>
             {children}
