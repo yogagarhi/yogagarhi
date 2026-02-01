@@ -1,4 +1,52 @@
 export const cloudinaryMap: Record<string, { public_id: string, width: number, height: number, format: string }> = {
+  "stay-resort.jpg": {
+    "public_id": "yogagarhi/assets/stay-resort",
+    "width": 1024,
+    "height": 575,
+    "format": "jpg"
+  },
+  "stay-pool-2.jpg": {
+    "public_id": "yogagarhi/assets/stay-pool-2",
+    "width": 1024,
+    "height": 1024,
+    "format": "jpg"
+  },
+  "stay-pool-1.jpg": {
+    "public_id": "yogagarhi/assets/stay-pool-1",
+    "width": 1024,
+    "height": 682,
+    "format": "jpg"
+  },
+  "stay-shala.png": {
+    "public_id": "yogagarhi/assets/stay-shala",
+    "width": 1024,
+    "height": 682,
+    "format": "png"
+  },
+  "stay-stairs.jpg": {
+    "public_id": "yogagarhi/assets/stay-stairs",
+    "width": 1024,
+    "height": 682,
+    "format": "jpg"
+  },
+  "stay-balcony.jpg": {
+    "public_id": "yogagarhi/assets/stay-balcony",
+    "width": 1024,
+    "height": 682,
+    "format": "jpg"
+  },
+  "stay-sunset.png": {
+    "public_id": "yogagarhi/assets/stay-sunset",
+    "width": 768,
+    "height": 1024,
+    "format": "png"
+  },
+  "stay-temple.jpg": {
+    "public_id": "yogagarhi/assets/stay-temple",
+    "width": 1024,
+    "height": 683,
+    "format": "jpg"
+  },
   "window.svg": {
     "public_id": "yogagarhi/public/window",
     "width": 16,
