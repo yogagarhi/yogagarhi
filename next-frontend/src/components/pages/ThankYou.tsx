@@ -41,6 +41,8 @@ function ThankYouContent() {
         return "The syllabus guide is on its way to your inbox. Please check your email.";
       case 'manual':
         return "Your free manual is being sent to your email. We hope it helps your practice!";
+      case 'guide-prep':
+        return "Your \"Before You Join\" preparation guide is on its way to your inbox. Please check your email (and spam folder) within the next few minutes.";
       case 'enrollment':
       default:
         return "We have received your enrollment request. Our team will reach out to you within 24 hours with next steps.";

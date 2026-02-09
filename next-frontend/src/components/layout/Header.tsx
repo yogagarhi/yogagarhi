@@ -146,11 +146,14 @@ export default function Header() {
       const isScrolled = window.scrollY > 100;
       setScrolled(window.scrollY > 20);
 
-      // Show announcement when scrolling down (if not dismissed and on home page)
+      // Show announcement when scrolling down (if not dismissed and on home or 200h page)
       const isHome = pathname === '/';
-      if (isHome && isScrolled && !announcementDismissed) {
+      const is200hPage = pathname === '/200-hour-yoga-teacher-training-in-bali';
+      const shouldShowOnPage = isHome || is200hPage;
+
+      if (shouldShowOnPage && isScrolled && !announcementDismissed) {
         setShowAnnouncement(true);
-      } else if (!isScrolled || !isHome) {
+      } else if (!isScrolled || !shouldShowOnPage) {
         setShowAnnouncement(false);
       }
     };
@@ -174,7 +177,7 @@ export default function Header() {
     <>
       {/* Announcement Bar - Slides in from top on scroll */}
       <div
-        className={`fixed top-0 left-0 right-0 bg-primary text-primary-foreground py-2.5 px-4 z-[60] transition-transform duration-500 ease-out ${showAnnouncement && pathname === '/' ? 'translate-y-0' : '-translate-y-full'
+        className={`fixed top-0 left-0 right-0 bg-primary text-primary-foreground py-2.5 px-4 z-[60] transition-transform duration-500 ease-out ${(showAnnouncement && (pathname === '/' || pathname === '/200-hour-yoga-teacher-training-in-bali')) ? 'translate-y-0' : '-translate-y-full'
           }`}
       >
         <div className="container mx-auto flex items-center justify-center gap-2 text-xs sm:text-sm pr-8">
