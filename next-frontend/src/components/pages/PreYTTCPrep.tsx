@@ -28,7 +28,6 @@ const preYTTCItems = [
 
 export default function PreYTTCPrep() {
     const router = useRouter();
-    const [showPreYTTCDialog, setShowPreYTTCDialog] = useState(false);
     const [email, setEmail] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
     const { setShowEnrollDialog } = useEnrollment();
@@ -52,7 +51,6 @@ export default function PreYTTCPrep() {
             });
 
             if (response.ok) {
-                setShowPreYTTCDialog(false);
                 setEmail("");
                 // Redirect to thank you page
                 setTimeout(() => {
@@ -118,27 +116,35 @@ export default function PreYTTCPrep() {
                             Our exclusive "Before You Join" program ensures you arrive grounded, confident, and ready for deep transformation.
                         </p>
 
-                        {/* Top CTA Buttons - Visible Immediately */}
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                            <Button
-                                onClick={() => setShowPreYTTCDialog(true)}
-                                className="group relative h-16 overflow-hidden rounded-full px-10 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold shadow-[0_10px_30px_-10px_rgba(245,158,11,0.5)] hover:shadow-[0_20px_40px_-10px_rgba(245,158,11,0.4)] transition-all duration-300 border-0 flex-1 sm:flex-none"
-                            >
-                                <span className="absolute inset-0 bg-white/20 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-                                <span className="relative flex items-center gap-2 text-lg">
-                                    <Mail className="w-5 h-5" />
-                                    Get Free Prep Guide
-                                    <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                </span>
-                            </Button>
-
-                            <Button
-                                onClick={() => setShowEnrollDialog(true)}
-                                variant="outline"
-                                className="h-16 rounded-full px-10 text-lg font-bold border-2 bg-background/50 backdrop-blur-sm hover:bg-secondary transition-all flex-1 sm:flex-none border-primary/20"
-                            >
-                                Begin Your Journey
-                            </Button>
+                        {/* Inline Email Capture Form - Replaces lone buttons */}
+                        <div className="max-w-xl mx-auto mb-10">
+                            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 p-2 bg-white/50 dark:bg-black/20 backdrop-blur-md rounded-[2rem] border border-primary/20 shadow-xl">
+                                <div className="relative flex-1 group">
+                                    <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground group-focus-within:text-primary transition-colors" />
+                                    <Input
+                                        type="email"
+                                        placeholder="Enter your email for the guide"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        className="h-14 pl-12 bg-transparent border-0 focus-visible:ring-0 focus-visible:ring-offset-0 text-lg rounded-full"
+                                        required
+                                    />
+                                </div>
+                                <Button
+                                    type="submit"
+                                    disabled={!isValidEmail || isSubmitting}
+                                    className="h-14 px-8 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold text-lg hover:shadow-lg transition-all duration-300 flex items-center gap-2"
+                                >
+                                    {isSubmitting ? (
+                                        "Sending..."
+                                    ) : (
+                                        <>
+                                            Get Free Prep Guide
+                                            <Send className="w-4 h-4" />
+                                        </>
+                                    )}
+                                </Button>
+                            </form>
                         </div>
 
                         <p className="text-sm text-muted-foreground flex items-center justify-center gap-2 animate-pulse">
@@ -245,43 +251,6 @@ export default function PreYTTCPrep() {
                 </div>
             </section>
 
-            {/* Dialogs */}
-            <Dialog open={showPreYTTCDialog} onOpenChange={setShowPreYTTCDialog}>
-                <DialogContent className="sm:max-w-md border-0 shadow-2xl p-0 overflow-hidden bg-background">
-                    <div className="h-24 bg-gradient-to-r from-amber-500 to-orange-600 flex items-center justify-center">
-                        <GraduationCap className="w-12 h-12 text-white" />
-                    </div>
-                    <div className="p-8">
-                        <DialogHeader className="text-center space-y-2 mb-8">
-                            <DialogTitle className="font-heading text-3xl font-bold">Free Prep Guide</DialogTitle>
-                            <DialogDescription className="text-lg">
-                                Enter your email to receive our exclusive "Before You Join" roadmap for 2026.
-                            </DialogDescription>
-                        </DialogHeader>
-
-                        <form onSubmit={handleSubmit} className="space-y-4">
-                            <div className="relative">
-                                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-                                <Input
-                                    type="email"
-                                    placeholder="Your best email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    className="pl-12 h-14 rounded-xl border-2 focus:border-amber-500 text-lg"
-                                    required
-                                />
-                            </div>
-                            <Button
-                                type="submit"
-                                disabled={!isValidEmail || isSubmitting}
-                                className="w-full h-14 rounded-xl font-bold text-lg bg-gradient-to-r from-amber-500 to-orange-600 hover:opacity-90 transition-all text-white"
-                            >
-                                {isSubmitting ? "Sending..." : "Send My Guide Now"}
-                            </Button>
-                        </form>
-                    </div>
-                </DialogContent>
-            </Dialog>
         </div>
     );
 }

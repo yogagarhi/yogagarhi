@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Sparkles } from "lucide-react";
+import { Menu, X, ChevronDown, Sparkles, Globe, Mountain, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
@@ -85,19 +85,42 @@ const SunIcon3 = () => (
   </svg>
 );
 
-const courses = [
-  { name: "100 Hour YTTC", href: "/100-hour-yoga-teacher-training-in-bali", icon: ChakraSymbol1 },
-  { name: "200 Hour YTTC", href: "/200-hour-yoga-teacher-training-in-bali", icon: ChakraSymbol2 },
-  { name: "300 Hour YTTC", href: "/300-hour-yoga-teacher-training-in-bali", icon: ChakraSymbol3 },
+interface NavDropdownItem {
+  name: string;
+  href: string;
+  icon: any;
+  subItems?: { name: string; href: string }[];
+}
+
+const courses: NavDropdownItem[] = [
+  {
+    name: "Bali, Indonesia",
+    href: "#",
+    icon: Globe,
+    subItems: [
+      { name: "100 Hour YTTC", href: "/100-hour-yoga-teacher-training-in-bali" },
+      { name: "200 Hour YTTC", href: "/200-hour-yoga-teacher-training-in-bali" },
+      { name: "300 Hour YTTC", href: "/300-hour-yoga-teacher-training-in-bali" },
+    ]
+  },
+  {
+    name: "Rishikesh, India",
+    href: "#",
+    icon: Mountain,
+    subItems: [
+      { name: "100 Hour YTTC", href: "/100-hour-yoga-teacher-training-in-rishikesh" },
+      { name: "200 Hour YTTC", href: "/200-hour-yoga-teacher-training-in-rishikesh" },
+    ]
+  },
 ];
 
-const aboutItems = [
+const aboutItems: NavDropdownItem[] = [
   { name: "About School", href: "/about-school", icon: AshramIcon },
   { name: "Our Teachers", href: "/teachers", icon: TeachersIcon },
   { name: "Testimonials", href: "/testimonials", icon: TestimonialsIcon },
 ];
 
-const sundayItems = [
+const sundayItems: NavDropdownItem[] = [
   { name: "Sunday 1", href: "/sunday-schedule#sunday-1", icon: SunIcon1 },
   { name: "Sunday 2", href: "/sunday-schedule#sunday-2", icon: SunIcon2 },
   { name: "Sunday 3", href: "/sunday-schedule#sunday-3", icon: SunIcon3 },
@@ -116,7 +139,9 @@ const navLinks = [
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [openSubDropdown, setOpenSubDropdown] = useState<string | null>(null);
   const [mobileOpenDropdown, setMobileOpenDropdown] = useState<string | null>(null);
+  const [mobileOpenSubDropdown, setMobileOpenSubDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const [showAnnouncement, setShowAnnouncement] = useState(false);
   const [announcementDismissed, setAnnouncementDismissed] = useState(false);
@@ -165,7 +190,9 @@ export default function Header() {
   useEffect(() => {
     setIsOpen(false);
     setOpenDropdown(null);
+    setOpenSubDropdown(null);
     setMobileOpenDropdown(null);
+    setMobileOpenSubDropdown(null);
   }, [pathname]);
 
   const isActive = (href: string) => pathname === href;
@@ -256,26 +283,76 @@ export default function Header() {
 
                           {/* Dropdown */}
                           <div
-                            className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-card rounded-2xl shadow-xl border border-border/50 overflow-hidden transition-all duration-300 ${openDropdown === link.name
+                            className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-card rounded-2xl shadow-xl border border-border/50 transition-all duration-300 ${openDropdown === link.name
                               ? 'opacity-100 visible translate-y-0'
                               : 'opacity-0 invisible -translate-y-4'
                               }`}
                           >
                             <div className="p-2">
                               {link.dropdown.map((item) => (
-                                <Link
+                                <div
                                   key={item.name}
-                                  href={item.href}
-                                  className={`block px-4 py-3 rounded-xl text-sm transition-all duration-200 ${pathname === item.href
-                                    ? 'bg-primary/10 text-primary font-medium'
-                                    : 'text-foreground/70 hover:bg-secondary hover:text-primary'
-                                    }`}
+                                  className="relative"
+                                  onMouseEnter={() => item.subItems && setOpenSubDropdown(item.name)}
+                                  onMouseLeave={() => setOpenSubDropdown(null)}
                                 >
-                                  <span className="flex items-center gap-3">
-                                    <item.icon />
-                                    {item.name}
-                                  </span>
-                                </Link>
+                                  {item.subItems ? (
+                                    <div className="relative">
+                                      <button
+                                        onClick={(e) => {
+                                          e.stopPropagation();
+                                          setOpenSubDropdown(openSubDropdown === item.name ? null : item.name);
+                                        }}
+                                        className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm transition-all duration-200 ${openSubDropdown === item.name
+                                          ? 'bg-primary/10 text-primary font-medium'
+                                          : 'text-foreground/70 hover:bg-secondary hover:text-primary'
+                                          }`}
+                                      >
+                                        <span className="flex items-center gap-3">
+                                          <item.icon className="h-4 w-4" />
+                                          {item.name}
+                                        </span>
+                                        <ArrowRight className={`h-3 w-3 transition-transform ${openSubDropdown === item.name ? 'translate-x-1' : ''}`} />
+                                      </button>
+
+                                      {/* Sub-dropdown */}
+                                      <div
+                                        className={`absolute top-0 left-full ml-1 w-56 bg-card rounded-2xl shadow-xl border border-border/50 overflow-hidden transition-all duration-300 ${openSubDropdown === item.name
+                                          ? 'opacity-100 visible translate-x-0'
+                                          : 'opacity-0 invisible -translate-x-2'
+                                          }`}
+                                      >
+                                        <div className="p-2">
+                                          {item.subItems.map((sub) => (
+                                            <Link
+                                              key={sub.name}
+                                              href={sub.href}
+                                              className={`block px-4 py-2.5 rounded-xl text-sm transition-all duration-200 ${pathname === sub.href
+                                                ? 'bg-primary/10 text-primary font-medium'
+                                                : 'text-foreground/70 hover:bg-secondary hover:text-primary'
+                                                }`}
+                                            >
+                                              {sub.name}
+                                            </Link>
+                                          ))}
+                                        </div>
+                                      </div>
+                                    </div>
+                                  ) : (
+                                    <Link
+                                      href={item.href}
+                                      className={`block px-4 py-3 rounded-xl text-sm transition-all duration-200 ${pathname === item.href
+                                        ? 'bg-primary/10 text-primary font-medium'
+                                        : 'text-foreground/70 hover:bg-secondary hover:text-primary'
+                                        }`}
+                                    >
+                                      <span className="flex items-center gap-3">
+                                        <item.icon />
+                                        {item.name}
+                                      </span>
+                                    </Link>
+                                  )}
+                                </div>
                               ))}
                             </div>
                           </div>
@@ -365,22 +442,58 @@ export default function Header() {
                         <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${isThisDropdownOpen ? 'rotate-180' : ''
                           }`} />
                       </button>
-                      <div className={`overflow-hidden transition-all duration-300 ${isThisDropdownOpen ? 'max-h-48 mt-1' : 'max-h-0'
+                      <div className={`overflow-hidden transition-all duration-300 ${isThisDropdownOpen ? 'max-h-[600px] mt-1' : 'max-h-0'
                         }`}>
                         <div className="pl-4 flex flex-col gap-1 pb-2">
                           {link.dropdown.map((item) => (
-                            <Link
-                              key={item.name}
-                              href={item.href}
-                              onClick={() => setIsOpen(false)}
-                              className={`flex items-center gap-3 py-2.5 px-4 rounded-lg text-sm transition-all ${pathname === item.href
-                                ? 'bg-primary/10 text-primary font-medium'
-                                : 'text-foreground/60 hover:text-primary hover:bg-secondary/50'
-                                }`}
-                            >
-                              <item.icon />
-                              {item.name}
-                            </Link>
+                            <div key={item.name}>
+                              {item.subItems ? (
+                                <>
+                                  <button
+                                    onClick={() => setMobileOpenSubDropdown(mobileOpenSubDropdown === item.name ? null : item.name)}
+                                    className={`w-full flex items-center justify-between py-2.5 px-4 rounded-lg text-sm transition-all ${mobileOpenSubDropdown === item.name
+                                      ? 'text-primary'
+                                      : 'text-foreground/60'
+                                      }`}
+                                  >
+                                    <span className="flex items-center gap-3">
+                                      <item.icon className="h-4 w-4" />
+                                      {item.name}
+                                    </span>
+                                    <ChevronDown className={`h-3 w-3 transition-transform ${mobileOpenSubDropdown === item.name ? 'rotate-180' : ''}`} />
+                                  </button>
+                                  <div className={`overflow-hidden transition-all duration-300 ${mobileOpenSubDropdown === item.name ? 'max-h-48 mt-1' : 'max-h-0'}`}>
+                                    <div className="pl-8 flex flex-col gap-1 pb-2">
+                                      {item.subItems.map((sub) => (
+                                        <Link
+                                          key={sub.name}
+                                          href={sub.href}
+                                          onClick={() => setIsOpen(false)}
+                                          className={`block py-2 px-4 rounded-lg text-xs transition-all ${pathname === sub.href
+                                            ? 'bg-primary/10 text-primary'
+                                            : 'text-foreground/50 hover:text-primary'
+                                            }`}
+                                        >
+                                          {sub.name}
+                                        </Link>
+                                      ))}
+                                    </div>
+                                  </div>
+                                </>
+                              ) : (
+                                <Link
+                                  href={item.href}
+                                  onClick={() => setIsOpen(false)}
+                                  className={`flex items-center gap-3 py-2.5 px-4 rounded-lg text-sm transition-all ${pathname === item.href
+                                    ? 'bg-primary/10 text-primary font-medium'
+                                    : 'text-foreground/60 hover:text-primary hover:bg-secondary/50'
+                                    }`}
+                                >
+                                  <item.icon />
+                                  {item.name}
+                                </Link>
+                              )}
+                            </div>
                           ))}
                         </div>
                       </div>

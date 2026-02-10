@@ -31,7 +31,8 @@ export function getCloudinaryUrl(path: string, options: CloudinaryImageOptions =
         if (process.env.NODE_ENV === 'development') {
             // console.warn(`[Cloudinary] Image not found in map: ${filename}`);
         }
-        return path;
+        // Ensure path starts with / for next/image if it's not a URL
+        return path.startsWith('/') ? path : `/${path}`;
     }
 
     const transformations: string[] = ['f_auto', 'q_auto'];
@@ -58,7 +59,7 @@ export function getCloudinaryImage(filename: string) {
             // console.warn(`[Cloudinary] Image not found for object: ${cleanName}`);
         }
         return {
-            src: filename,
+            src: filename.startsWith('/') ? filename : `/${filename}`,
             width: 800, // Fallback
             height: 600
         };
