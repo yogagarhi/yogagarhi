@@ -31,6 +31,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  console.log("Root Page Rendering");
   return <Index />;
 }

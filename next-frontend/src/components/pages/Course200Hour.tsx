@@ -143,16 +143,14 @@ const privateNew2 = getCloudinaryImage("private-new-2.png");
 const privateNew3 = getCloudinaryImage("private-new-3.png");
 const privateNew4 = getCloudinaryImage("private-new-4.png");
 const privateNew5 = getCloudinaryImage("private-new-5.png");
-const apartGallery1 = getCloudinaryImage("gallery-1.png");
-const apartGallery2 = getCloudinaryImage("gallery-2.png");
-const apartGallery3 = getCloudinaryImage("gallery-3.png");
-const apartGallery4 = getCloudinaryImage("gallery-4.png");
-const apartGallery5 = getCloudinaryImage("gallery-5.png");
-const apartGallery6 = getCloudinaryImage("gallery-6.png");
-const apartGallery7 = getCloudinaryImage("gallery-7.png");
-const apartGallery8 = getCloudinaryImage("gallery-8.png");
-const apartGallery9 = getCloudinaryImage("gallery-9.jpg");
-const apartGallery10 = getCloudinaryImage("gallery-10.jpg");
+const apartGallery1 = getCloudinaryImage("stay-temple.jpg");
+const apartGallery2 = getCloudinaryImage("stay-sunset.png");
+const apartGallery3 = getCloudinaryImage("stay-balcony.jpg");
+const apartGallery4 = getCloudinaryImage("stay-stairs.jpg");
+const apartGallery5 = getCloudinaryImage("stay-shala.png");
+const apartGallery6 = getCloudinaryImage("stay-pool-1.jpg");
+const apartGallery7 = getCloudinaryImage("stay-pool-2.jpg");
+const apartGallery8 = getCloudinaryImage("stay-resort.jpg");
 const sattvicBreakfast = getCloudinaryImage("sattvic-breakfast-new.jpg");
 const sattvicDinner = getCloudinaryImage("sattvic-dinner-new.jpg");
 
@@ -2407,8 +2405,8 @@ export default function Course200Hour() {
               {/* Horizontal Scroll Container */}
               <div className="flex overflow-x-auto gap-4 pb-6 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
                 {[
-                  apartGallery1, apartGallery2, apartGallery3, apartGallery4, apartGallery5,
-                  apartGallery6, apartGallery7, apartGallery8, apartGallery9, apartGallery10
+                  apartGallery1, apartGallery2, apartGallery3, apartGallery4,
+                  apartGallery5, apartGallery6, apartGallery7, apartGallery8
                 ].map((img, index) => (
                   <div
                     key={index}
