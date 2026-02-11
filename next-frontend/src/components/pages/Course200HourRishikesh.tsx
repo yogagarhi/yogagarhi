@@ -78,7 +78,7 @@ const apartPoolVilla = getCloudinaryImage("pool-villa.png");
 const apartMountainPose = getCloudinaryImage("mountain-pose.png");
 const apartWarriorSequence = getCloudinaryImage("warrior-sequence.png");
 const apartYogaAllianceGraduates = getCloudinaryImage("yoga-alliance-graduates.png");
-const apartRishikeshSurroundings = getCloudinaryImage("Rishikesh-surroundings.png");
+const apartRishikeshSurroundings = getCloudinaryImage("rishikesh-surroundings.png");
 const postSupport1 = getCloudinaryImage("post-support-1.jpg");
 const postSupport2 = getCloudinaryImage("post-support-2.jpg");
 const postSupport3 = getCloudinaryImage("post-support-3.jpg");
@@ -95,9 +95,9 @@ const syllabus9 = getCloudinaryImage("syllabus-9.jpg");
 const syllabus10 = getCloudinaryImage("syllabus-10.jpg");
 const syllabusMudras = getCloudinaryImage("syllabus-mudras.png");
 const apartCommunityBeach = getCloudinaryImage("community-beach.png");
-const apartKecakDance = getCloudinaryImage("Rishikeshnese-dance-new.jpg");
+const apartKecakDance = getCloudinaryImage("rishikesh-dance.jpg");
 const apartInstructorAnatomy = getCloudinaryImage("instructor-anatomy.png");
-const apartRishikeshneseMassage = getCloudinaryImage("Rishikeshnese-massage.jpg");
+const apartRishikeshMassage = getCloudinaryImage("rishikesh-massage.jpg");
 const apartAyurvedicMeals = getCloudinaryImage("ayurvedic-meals.jpg");
 const apartMeditationPractice = getCloudinaryImage("meditation-practice.jpg");
 const apartYogaLifestyle = getCloudinaryImage("yoga-lifestyle.jpg");
@@ -327,8 +327,8 @@ const inclusions = [
   "Airport pickup (nearest airport)",
   "24/7 campus support team",
   "Certification upon completion",
-  "Rishikeshnese massage",
-  "Rishikeshnese dance show",
+  "Rishikesh massage",
+  "Rishikesh dance show",
   "Rice field trek",
   "Pre-TTC preparation",
   "Arm balance workshop",
@@ -384,14 +384,14 @@ const whatYouWillReceive = [
     image: apartCommunityBeach
   },
   {
-    title: "Rishikeshnese Massage",
-    description: "Traditional Indonesian therapy to relieve muscle tension. Promotes deep relaxation and holistic healing.",
+    title: "Rishikesh Massage",
+    description: "Traditional Indian therapy to relieve muscle tension. Promotes deep relaxation and holistic healing.",
     icon: Sparkles,
-    image: apartRishikeshneseMassage
+    image: apartRishikeshMassage
   },
   {
-    title: "Rishikeshnese Dance Performance",
-    description: "Ancient, dynamic and highly expressive dance form that reflects Rishikesh's rich cultural heritage.",
+    title: "Rishikesh Dance Performance",
+    description: "Ancient, dynamic and highly expressive dance form that reflects India's rich cultural heritage.",
     icon: Star,
     image: apartKecakDance
   },
@@ -459,8 +459,8 @@ const workshops = [
 // Excursions - using user photos
 const excursions = [
   {
-    title: "Rishikeshnese Dance Performance",
-    description: "Witness the ancient art of Rishikeshnese dance — a mesmerizing display of grace, storytelling, and spiritual devotion passed down through generations.",
+    title: "Rishikesh Dance Performance",
+    description: "Witness the ancient art of Indian dance — a mesmerizing display of grace, storytelling, and spiritual devotion passed down through generations.",
     image: apartKecakDance,
     icon: Star
   },
@@ -485,14 +485,14 @@ const foodMenu = [
     meal: "Breakfast",
     time: "7:00 AM",
     icon: Coffee,
-    items: ["Fresh tropical fruits", "Homemade granola with coconut yogurt", "Herbal teas & fresh juices", "Rishikeshnese rice porridge"],
+    items: ["Fresh tropical fruits", "Homemade granola with coconut yogurt", "Herbal teas & fresh juices", "Rishikesh style rice porridge"],
     image: sattvicBreakfast
   },
   {
     meal: "Lunch",
     time: "12:30 PM",
     icon: Salad,
-    items: ["Nourishing Buddha bowls", "Tempeh & tofu preparations", "Fresh garden salads", "Traditional Rishikeshnese vegetables"],
+    items: ["Nourishing Buddha bowls", "Tempeh & tofu preparations", "Fresh garden salads", "Traditional Indian vegetables"],
     image: healthyMeals
   },
   {

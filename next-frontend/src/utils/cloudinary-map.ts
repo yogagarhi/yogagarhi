@@ -1174,5 +1174,23 @@ export const cloudinaryMap: Record<string, { public_id: string, width: number, h
     "width": 864,
     "height": 576,
     "format": "jpg"
+  },
+  "rishikesh-surroundings.png": {
+    "public_id": "yogagarhi/assets/bali-surroundings",
+    "width": 1024,
+    "height": 575,
+    "format": "png"
+  },
+  "rishikesh-massage.jpg": {
+    "public_id": "yogagarhi/assets/balinese-massage",
+    "width": 800,
+    "height": 800,
+    "format": "jpg"
+  },
+  "rishikesh-dance.jpg": {
+    "public_id": "yogagarhi/assets/balinese-dance-new",
+    "width": 1024,
+    "height": 768,
+    "format": "jpg"
   }
 };
