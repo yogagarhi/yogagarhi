@@ -3,10 +3,11 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Sparkles, Globe, Mountain, ArrowRight } from "lucide-react";
+import { Menu, X, ChevronDown, Sparkles, Globe, Mountain, ArrowRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import PromoCountdown from "@/components/PromoCountdown";
 const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
 // Chakra/Mandala spiritual symbols
@@ -202,10 +203,33 @@ export default function Header() {
 
   return (
     <>
+      {/* April to July Batch Promo Bar - Sticky at the very top */}
+      <div className="sticky top-0 left-0 right-0 bg-[#2D7A70] text-white py-2 sm:py-3 z-[70] shadow-sm overflow-hidden">
+        <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8">
+          <div className="flex items-center gap-2 whitespace-nowrap animate-pulse">
+            <Sparkles className="w-4 h-4 text-amber-300" />
+            <span className="text-xs sm:text-sm font-bold tracking-wide uppercase">
+              April to July Batch Open: Few Seats Left! Save $250
+            </span>
+          </div>
+
+          <div className="flex items-center gap-3 bg-black/20 px-4 py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner">
+            <div className="flex items-center gap-1.5 whitespace-nowrap">
+              <Clock className="w-3.5 h-3.5 text-amber-300" />
+              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-white/90">
+                Offer Resets In:
+              </span>
+            </div>
+            <PromoCountdown />
+          </div>
+        </div>
+      </div>
+
       {/* Announcement Bar - Slides in from top on scroll */}
       <div
-        className={`fixed top-0 left-0 right-0 bg-primary text-primary-foreground py-2.5 px-4 z-[60] transition-transform duration-500 ease-out ${(showAnnouncement && (pathname === '/' || pathname === '/200-hour-yoga-teacher-training-in-bali')) ? 'translate-y-0' : '-translate-y-full'
+        className={`fixed left-0 right-0 bg-primary text-primary-foreground py-2.5 px-4 z-[60] transition-all duration-500 ease-out ${(showAnnouncement && (pathname === '/' || pathname === '/200-hour-yoga-teacher-training-in-bali')) ? 'translate-y-0' : '-translate-y-full'
           }`}
+        style={{ top: '100px' }} // Position it below the promo bar (adjusted for height)
       >
         <div className="container mx-auto flex items-center justify-center gap-2 text-xs sm:text-sm pr-8">
           <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 animate-pulse flex-shrink-0" />
@@ -225,7 +249,7 @@ export default function Header() {
       </div>
 
       <header
-        className={`sticky z-50 transition-all duration-500 ${showAnnouncement ? 'top-[42px]' : 'top-0'
+        className={`sticky z-50 transition-all duration-500 ${showAnnouncement ? 'top-[142px]' : 'top-[100px]'
           } ${scrolled
             ? 'bg-background/98 backdrop-blur-md shadow-md py-2'
             : 'bg-background py-4'

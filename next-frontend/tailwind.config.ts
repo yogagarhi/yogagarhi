@@ -120,6 +120,10 @@ const config: Config = {
                 "shimmer": {
                     "100%": { transform: "translateX(100%)" },
                 },
+                "bounce-subtle": {
+                    "0%, 100%": { transform: "translateY(0)" },
+                    "50%": { transform: "translateY(-5px)" },
+                },
             },
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
@@ -134,6 +138,7 @@ const config: Config = {
                 "float-gentle": "float-gentle 10s ease-in-out infinite",
                 "float-ultra-smooth": "float-ultra-smooth 8s cubic-bezier(0.45, 0, 0.55, 1) infinite",
                 "shimmer": "shimmer 2s infinite",
+                "bounce-subtle": "bounce-subtle 2s infinite",
             },
         },
     },

@@ -1025,33 +1025,44 @@ export default function Course100Hour() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-                <Button
-                  variant="hero"
-                  size="xl"
-                  onClick={() => setShowQuickEnquiryDialog(true)}
-                >
-                  Quick Enquiry
-                </Button>
-                <Button
-                  variant="heroOutline"
-                  size="xl"
-                  onClick={() => openBookingDialog(true)}
-                >
-                  Book an Appointment
-                </Button>
-              </div>
+              <div className="flex flex-col items-center justify-center pt-8 space-y-6">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+                  <Button
+                    variant="hero"
+                    size="xl"
+                    onClick={() => setShowQuickEnquiryDialog(true)}
+                  >
+                    Quick Enquiry
+                  </Button>
+                  <Button
+                    variant="heroOutline"
+                    size="xl"
+                    onClick={() => openBookingDialog(true)}
+                  >
+                    Book an Appointment
+                  </Button>
+                </div>
 
-              {/* Mobile Only - Sunday Schedule Button */}
-              <div className="sm:hidden flex justify-center pt-4">
-                <Button
-                  variant="default"
-                  size="lg"
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                  onClick={() => window.location.href = '/sunday-schedule'}
-                >
-                  Explore Joyful Sunday ☀️
-                </Button>
+                {/* Secondary CTA & Offer Box */}
+                <div className="flex flex-col items-center gap-4 pt-2">
+                  <div className="flex justify-center">
+                    <Button
+                      variant="default"
+                      size="lg"
+                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
+                      onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
+                    >
+                      Claim $450 Bali Explorer Gift
+                    </Button>
+                  </div>
+
+                  {/* Special Offer Box */}
+                  <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
+                    <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
+                      Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1166,10 +1177,10 @@ export default function Course100Hour() {
               </div>
             </div>
           </div>
-        </section>
+        </section >
 
         {/* ===== ICON HIGHLIGHTS ===== */}
-        <section className="py-16 bg-background">
+        < section className="py-16 bg-background" >
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
               {iconHighlights.map((item, index) => (
@@ -1185,11 +1196,11 @@ export default function Course100Hour() {
               ))}
             </div>
           </div>
-        </section>
+        </section >
 
 
         {/* ===== WELCOME SECTION ===== */}
-        <section className="py-20 bg-background">
+        < section className="py-20 bg-background" >
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Left Column - Welcome Text & Video on Mobile */}
@@ -1381,11 +1392,11 @@ export default function Course100Hour() {
               </div>
             </div>
           </div>
-        </section>
+        </section >
 
 
         {/* ===== WHAT YOU’LL CARRY HOME - UNIQUE COMPACT DESIGN ===== */}
-        <section className="py-16 bg-muted/30 relative overflow-hidden">
+        < section className="py-16 bg-muted/30 relative overflow-hidden" >
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
               {/* Left Column: Heading */}
@@ -1462,10 +1473,10 @@ export default function Course100Hour() {
               </div>
             </div>
           </div>
-        </section>
+        </section >
 
         {/* ===== WHAT YOU'LL RECEIVE ===== */}
-        <section className="py-20 bg-background overflow-hidden">
+        < section className="py-20 bg-background overflow-hidden" >
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
               What You Will Receive in This Training
@@ -1544,15 +1555,16 @@ export default function Course100Hour() {
               </div>
             </div>
           </div>
-        </section>
+        </section >
 
         {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
-        <section
+        < section
           className="py-24 relative bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${apartYogaAllianceGraduates.src})` }}
+          style={{ backgroundImage: `url(${apartYogaAllianceGraduates.src})` }
+          }
         >
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/50" />
+          < div className="absolute inset-0 bg-black/50" />
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
@@ -1587,10 +1599,10 @@ export default function Course100Hour() {
               </div>
             </div>
           </div>
-        </section>
+        </section >
 
         {/* ===== COURSE SYLLABUS ===== */}
-        <section className="py-20 bg-background overflow-hidden">
+        < section className="py-20 bg-background overflow-hidden" >
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
               Course Syllabus
@@ -1821,7 +1833,7 @@ export default function Course100Hour() {
               </Dialog>
             </div>
           </div>
-        </section>
+        </section >
 
 
 
@@ -1829,24 +1841,26 @@ export default function Course100Hour() {
 
 
         {/* ===== VIDEO TESTIMONIALS ===== */}
-        <section className="py-20 bg-secondary/30 relative overflow-hidden">
+        < section className="py-20 bg-secondary/30 relative overflow-hidden" >
           {/* Enhanced Yoga-themed Background Art with Animations */}
-          <div className="absolute inset-0 pointer-events-none">
+          < div className="absolute inset-0 pointer-events-none" >
             {/* Large Chakra Wheel - Center */}
-            <svg className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] text-primary/[0.04] animate-float-gentle" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+            < svg className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] text-primary/[0.04] animate-float-gentle" viewBox="0 0 100 100" fill="none" stroke="currentColor" >
               <circle cx="50" cy="50" r="48" strokeWidth="0.2" />
               <circle cx="50" cy="50" r="40" strokeWidth="0.2" />
               <circle cx="50" cy="50" r="32" strokeWidth="0.2" />
               <circle cx="50" cy="50" r="24" strokeWidth="0.2" />
               <circle cx="50" cy="50" r="16" strokeWidth="0.2" />
               {/* 8-pointed star */}
-              {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => (
-                <line key={i} x1="50" y1="50" x2={50 + 48 * Math.cos(angle * Math.PI / 180)} y2={50 + 48 * Math.sin(angle * Math.PI / 180)} strokeWidth="0.15" />
-              ))}
-            </svg>
+              {
+                [0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => (
+                  <line key={i} x1="50" y1="50" x2={50 + 48 * Math.cos(angle * Math.PI / 180)} y2={50 + 48 * Math.sin(angle * Math.PI / 180)} strokeWidth="0.15" />
+                ))
+              }
+            </svg >
 
             {/* Sri Yantra - Top Left */}
-            <svg className="absolute -top-5 -left-5 w-56 h-56 text-primary/[0.05] animate-float" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.5">
+            < svg className="absolute -top-5 -left-5 w-56 h-56 text-primary/[0.05] animate-float" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.5" >
               <polygon points="50,5 95,90 5,90" />
               <polygon points="50,95 5,10 95,10" />
               <polygon points="50,20 78,75 22,75" />
@@ -1854,12 +1868,12 @@ export default function Course100Hour() {
               <circle cx="50" cy="50" r="20" />
               <circle cx="50" cy="50" r="30" />
               <circle cx="50" cy="50" r="40" />
-            </svg>
+            </svg >
 
             {/* Lotus Flower - Bottom Right */}
-            <svg className="absolute -bottom-10 -right-10 w-72 h-72 text-primary/[0.04] animate-float-slow" style={{ animationDelay: '2s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.4">
+            < svg className="absolute -bottom-10 -right-10 w-72 h-72 text-primary/[0.04] animate-float-slow" style={{ animationDelay: '2s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.4" >
               {/* Outer petals */}
-              <ellipse cx="50" cy="50" rx="10" ry="35" />
+              < ellipse cx="50" cy="50" rx="10" ry="35" />
               <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(30 50 50)" />
               <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(60 50 50)" />
               <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(90 50 50)" />
@@ -1872,18 +1886,18 @@ export default function Course100Hour() {
               <ellipse cx="50" cy="50" rx="6" ry="20" transform="rotate(135 50 50)" />
               {/* Center */}
               <circle cx="50" cy="50" r="8" />
-            </svg>
+            </svg >
 
             {/* Om Symbol - Top Right */}
-            <svg className="absolute top-16 right-20 w-36 h-36 text-primary/[0.06] animate-float-gentle" style={{ animationDelay: '1s' }} viewBox="0 0 100 100" fill="currentColor">
+            < svg className="absolute top-16 right-20 w-36 h-36 text-primary/[0.06] animate-float-gentle" style={{ animationDelay: '1s' }} viewBox="0 0 100 100" fill="currentColor" >
               <path d="M28,68 C18,68 12,58 12,48 C12,32 24,22 40,22 C56,22 62,34 62,44 C62,56 50,62 44,62 C38,62 32,56 32,48 C32,42 38,38 44,38" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
               <path d="M62,44 C62,32 74,26 80,32 C86,38 80,50 74,56 L68,72" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
               <path d="M74,18 C80,18 84,24 84,30" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
               <circle cx="88" cy="14" r="4" />
-            </svg>
+            </svg >
 
             {/* Seed of Life - Left Center */}
-            <svg className="absolute top-1/3 -left-10 w-48 h-48 text-primary/[0.04] animate-float" style={{ animationDelay: '3s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.4">
+            < svg className="absolute top-1/3 -left-10 w-48 h-48 text-primary/[0.04] animate-float" style={{ animationDelay: '3s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.4" >
               <circle cx="50" cy="50" r="18" />
               <circle cx="50" cy="32" r="18" />
               <circle cx="65.6" cy="41" r="18" />
@@ -1891,35 +1905,37 @@ export default function Course100Hour() {
               <circle cx="50" cy="68" r="18" />
               <circle cx="34.4" cy="59" r="18" />
               <circle cx="34.4" cy="41" r="18" />
-            </svg>
+            </svg >
 
             {/* Mandala - Bottom Left */}
-            <svg className="absolute bottom-20 left-16 w-44 h-44 text-primary/[0.04] animate-float-slow" style={{ animationDelay: '4s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.3">
+            < svg className="absolute bottom-20 left-16 w-44 h-44 text-primary/[0.04] animate-float-slow" style={{ animationDelay: '4s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.3" >
               <circle cx="50" cy="50" r="45" />
               <circle cx="50" cy="50" r="36" />
               <circle cx="50" cy="50" r="27" />
               <circle cx="50" cy="50" r="18" />
               <circle cx="50" cy="50" r="9" />
               {/* Decorative petals */}
-              {isMounted && [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle, i) => (
-                <ellipse key={i} cx={50 + 36 * Math.cos(angle * Math.PI / 180)} cy={50 + 36 * Math.sin(angle * Math.PI / 180)} rx="4" ry="8" transform={`rotate(${angle} ${50 + 36 * Math.cos(angle * Math.PI / 180)} ${50 + 36 * Math.sin(angle * Math.PI / 180)})`} />
-              ))}
-            </svg>
+              {
+                isMounted && [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle, i) => (
+                  <ellipse key={i} cx={50 + 36 * Math.cos(angle * Math.PI / 180)} cy={50 + 36 * Math.sin(angle * Math.PI / 180)} rx="4" ry="8" transform={`rotate(${angle} ${50 + 36 * Math.cos(angle * Math.PI / 180)} ${50 + 36 * Math.sin(angle * Math.PI / 180)})`} />
+                ))
+              }
+            </svg >
 
             {/* Merudanda (Spine/Chakras) - Right Side */}
-            <svg className="absolute top-1/4 right-8 w-20 h-80 text-primary/[0.05] animate-float-gentle" style={{ animationDelay: '2.5s' }} viewBox="0 0 40 160" fill="none" stroke="currentColor" strokeWidth="0.5">
+            < svg className="absolute top-1/4 right-8 w-20 h-80 text-primary/[0.05] animate-float-gentle" style={{ animationDelay: '2.5s' }} viewBox="0 0 40 160" fill="none" stroke="currentColor" strokeWidth="0.5" >
               {/* Spine line */}
-              <line x1="20" y1="10" x2="20" y2="150" strokeWidth="0.3" />
+              < line x1="20" y1="10" x2="20" y2="150" strokeWidth="0.3" />
               {/* 7 Chakras */}
-              <circle cx="20" cy="20" r="8" />
+              < circle cx="20" cy="20" r="8" />
               <circle cx="20" cy="40" r="7" />
               <circle cx="20" cy="60" r="7" />
               <circle cx="20" cy="80" r="8" />
               <circle cx="20" cy="100" r="7" />
               <circle cx="20" cy="120" r="7" />
               <circle cx="20" cy="140" r="9" />
-            </svg>
-          </div>
+            </svg >
+          </div >
 
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4 italic">
@@ -1984,7 +2000,7 @@ export default function Course100Hour() {
               </div>
             </div>
           </div>
-        </section>
+        </section >
 
         <FounderSection />
 
@@ -2053,15 +2069,22 @@ export default function Course100Hour() {
               </p>
 
               {/* Sunday Schedule CTA Button */}
-              <div className="flex justify-center mt-8">
+              <div className="flex flex-col items-center gap-6 mt-8">
                 <Button
                   variant="default"
                   size="lg"
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                  onClick={() => window.location.href = '/sunday-schedule'}
+                  onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
                 >
-                  Explore Joyful Sunday ☀️
+                  Claim $450 Bali Explorer Gift
                 </Button>
+
+                {/* Special Offer Box */}
+                <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
+                  <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
+                    Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -4741,7 +4764,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
         <Dialog open={showQuickEnquiryDialog} onOpenChange={setShowQuickEnquiryDialog}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
-              <DialogTitle className="font-heading text-2xl">Quick Enquiry</DialogTitle>
+              <DialogTitle className="font-heading text-2xl">Claim Your $250 Early Bird Discount</DialogTitle>
               <DialogDescription className="text-sm text-muted-foreground">
                 Connect with us and begin your journey of transformation
               </DialogDescription>
@@ -4850,15 +4873,17 @@ This is not a transactional relationship — it is a lifelong connection.`}
         </Dialog>
 
         {/* Scroll to Top Button */}
-        {showScrollTop && (
-          <button
-            onClick={scrollToTop}
-            className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-primary text-primary-foreground rounded-full shadow-elevated hover:bg-primary/90 transition-all duration-300 flex items-center justify-center animate-fade-in hover:scale-110"
-            aria-label="Scroll to top"
-          >
-            <ChevronDown className="w-6 h-6 rotate-180" />
-          </button>
-        )}
+        {
+          showScrollTop && (
+            <button
+              onClick={scrollToTop}
+              className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-primary text-primary-foreground rounded-full shadow-elevated hover:bg-primary/90 transition-all duration-300 flex items-center justify-center animate-fade-in hover:scale-110"
+              aria-label="Scroll to top"
+            >
+              <ChevronDown className="w-6 h-6 rotate-180" />
+            </button>
+          )
+        }
       </Layout >
     </>
   );

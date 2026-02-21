@@ -1068,33 +1068,44 @@ export default function Course200HourRishikesh() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-                <Button
-                  variant="hero"
-                  size="xl"
-                  onClick={() => setShowQuickEnquiryDialog(true)}
-                >
-                  Quick Enquiry
-                </Button>
-                <Button
-                  variant="heroOutline"
-                  size="xl"
-                  onClick={() => openBookingDialog(true)}
-                >
-                  Book an Appointment
-                </Button>
-              </div>
+              <div className="flex flex-col items-center justify-center pt-8 space-y-6">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+                  <Button
+                    variant="hero"
+                    size="xl"
+                    onClick={() => setShowQuickEnquiryDialog(true)}
+                  >
+                    Quick Enquiry
+                  </Button>
+                  <Button
+                    variant="heroOutline"
+                    size="xl"
+                    onClick={() => openBookingDialog(true)}
+                  >
+                    Book an Appointment
+                  </Button>
+                </div>
 
-              {/* Mobile Only - Sunday Schedule Button */}
-              <div className="sm:hidden flex justify-center pt-4">
-                <Button
-                  variant="default"
-                  size="lg"
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                  onClick={() => window.location.href = '/sunday-schedule'}
-                >
-                  Explore Joyful Sunday ☀️
-                </Button>
+                {/* Secondary CTA & Offer Box */}
+                <div className="flex flex-col items-center gap-4 pt-2">
+                  <div className="flex justify-center">
+                    <Button
+                      variant="default"
+                      size="lg"
+                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
+                      onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
+                    >
+                      Claim $450 Bali Explorer Gift
+                    </Button>
+                  </div>
+
+                  {/* Special Offer Box */}
+                  <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
+                    <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
+                      Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -2093,15 +2104,22 @@ export default function Course200HourRishikesh() {
               </p>
 
               {/* Sunday Schedule CTA Button */}
-              <div className="flex justify-center mt-8">
+              <div className="flex flex-col items-center gap-6 mt-8">
                 <Button
                   variant="default"
                   size="lg"
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                  onClick={() => window.location.href = '/sunday-schedule'}
+                  onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
                 >
-                  Explore Joyful Sunday ☀️
+                  Claim $450 Bali Explorer Gift
                 </Button>
+
+                {/* Special Offer Box */}
+                <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
+                  <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
+                    Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -4568,7 +4586,7 @@ export default function Course200HourRishikesh() {
         <Dialog open={showQuickEnquiryDialog} onOpenChange={setShowQuickEnquiryDialog}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
-              <DialogTitle className="font-heading text-2xl">Quick Enquiry</DialogTitle>
+              <DialogTitle className="font-heading text-2xl">Claim Your $250 Early Bird Discount</DialogTitle>
               <DialogDescription className="text-sm text-muted-foreground">
                 Connect with us and begin your journey of transformation
               </DialogDescription>
