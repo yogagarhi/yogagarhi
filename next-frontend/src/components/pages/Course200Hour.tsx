@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useBooking } from "@/components/BookingDialog";
 import { useEnrollment } from "@/components/EnrollmentDialog";
+import { useYogicEnergy } from "@/components/YogicEnergyDialog";
 import {
   Carousel,
   CarouselContent,
@@ -573,6 +574,7 @@ export default function Course200Hour() {
   const router = useRouter();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
   const { setShowEnrollDialog: openEnrollDialog } = useEnrollment();
+  const { setShowYogicEnergy } = useYogicEnergy();
   const [showCompactHeader, setShowCompactHeader] = useState(false);
   const [showQuizDialog, setShowQuizDialog] = useState(false);
   const [showQuizThankYou, setShowQuizThankYou] = useState(false);
@@ -993,7 +995,7 @@ export default function Course200Hour() {
     <>
       <Layout>
         {/* ===== HERO SECTION ===== */}
-        <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-8 md:pt-12 pb-20">
+        <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-32 sm:pt-36 md:pt-48 pb-20">
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -1005,7 +1007,7 @@ export default function Course200Hour() {
           {/* Content */}
           <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
             <div className="max-w-4xl mx-auto flex flex-col items-center">
-              <p className="text-xl md:text-2xl font-medium tracking-widest opacity-90 animate-fade-in mb-4 uppercase text-white/80" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+              <p className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.3em] opacity-90 animate-fade-in mb-4 uppercase text-white/90" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
                 Welcome To
               </p>
               <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold leading-tight mb-6 drop-shadow-2xl">
@@ -1077,13 +1079,20 @@ export default function Course200Hour() {
                   >
                     Quick Enquiry
                   </Button>
-                  <Button
-                    variant="heroOutline"
-                    size="xl"
-                    onClick={() => openBookingDialog(true)}
+                  <button
+                    onClick={() => setShowYogicEnergy(true)}
+                    className="relative h-14 px-10 text-base font-bold rounded-lg overflow-hidden group/yogic
+                      bg-gradient-to-r from-amber-400 via-orange-500 to-rose-500
+                      text-white shadow-xl shadow-orange-500/40
+                      hover:shadow-orange-500/60 hover:scale-105
+                      transition-all duration-300"
                   >
-                    Book an Appointment
-                  </Button>
+                    <span className="relative z-10 flex items-center gap-2">
+                      <Sparkles className="w-5 h-5 animate-pulse" />
+                      Reveal Your Unique Yogic Energy
+                    </span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent translate-x-[-100%] group-hover/yogic:translate-x-[100%] transition-transform duration-700 ease-in-out" />
+                  </button>
                 </div>
 
                 {/* Secondary CTA & Offer Box */}
@@ -1308,16 +1317,37 @@ export default function Course200Hour() {
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                       <Zap className="w-4 h-4 text-primary" />
                     </div>
-                    Not Sure if You’re Ready? Let’s Start Together (Pre YTTC)
+                    Not Sure Which YTTC to Trust? Experience It First Free 2-Day Yoga Teacher Training Foundation
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                    If you’re worried about being <span className="font-semibold text-foreground italic">"just a beginner,"</span> don't be. The moment you sign up, you join our <span className="font-semibold text-primary">Live Online Prep sessions</span> where you can meet us and ask questions before Bali. We’ll guide you through the basics personally, so you can <span className="font-semibold text-foreground">build your confidence and flexibility from home</span>. You won’t just show up to a course; you’ll land in Bali already <span className="font-semibold text-foreground">knowing your teachers</span> and feeling <span className="font-bold text-primary italic underline underline-offset-4">100% ready to join the family</span>.
-                  </p>
+                  <div className="text-sm text-muted-foreground leading-relaxed mb-4 space-y-3">
+                    <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
+                    <p className="font-medium text-foreground italic">
+                      It’s about <span className="text-primary not-italic">feeling safe</span>, it’s about <span className="text-primary not-italic">feeling guided</span>, and it’s about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
+                    </p>
+                    <p>That’s why we keep things simple and transparent.</p>
+                  </div>
+
+                  <div className="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 shadow-inner">
+                    <div className="flex items-center gap-2 text-orange-700 font-bold text-sm mb-1 uppercase tracking-tight">
+                      <Calendar className="w-4 h-4" />
+                      Next Batch: 7 & 8 March
+                    </div>
+                    <div className="flex items-center gap-2 text-orange-600/80 text-xs font-semibold mb-2">
+                      <Clock className="w-4 h-4" />
+                      10:00 AM CET (German Time)
+                    </div>
+                    <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-100 text-red-600 text-[10px] font-bold uppercase animate-pulse border border-red-200">
+                      <UsersRound className="w-3 h-3" />
+                      Limited Seats Only
+                    </div>
+                  </div>
                   <Button
                     className="w-full bg-gradient-to-r from-[#FF8C00] to-[#FF4500] text-white hover:from-[#FF4500] hover:to-[#FF8C00] font-bold shadow-lg shadow-orange-500/30 border-none"
-                    onClick={() => setShowPreYttcOptions(true)}
+                    asChild
                   >
-                    Start My Live Training
+                    <Link href="/teacher-training-foundation">
+                      Join Foundation for FREE
+                    </Link>
                   </Button>
                 </div>
 
@@ -1413,30 +1443,55 @@ export default function Course200Hour() {
                       <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                         <Zap className="w-5 h-5 text-primary" />
                       </div>
-                      Not Sure if You’re Ready? Let’s Start Together (Pre YTTC)
+                      Not Sure Which YTTC to Trust? Experience It First Free 2-Day Yoga Teacher Training Foundation
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      If you’re worried about being <span className="font-semibold text-foreground italic">"just a beginner,"</span> don't be. The moment you sign up, you join our <span className="font-semibold text-primary">Live Online Prep sessions</span> where you can meet us and ask questions before Bali. We’ll guide you through the basics personally, so you can <span className="font-semibold text-foreground">build your confidence and flexibility from home</span>. You won’t just show up to a course; you’ll land in Bali already <span className="font-semibold text-foreground">knowing your teachers</span> and feeling <span className="font-bold text-primary italic underline underline-offset-4">100% ready to join the family</span>.
-                    </p>
+                    <div className="text-muted-foreground leading-relaxed space-y-4">
+                      <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
+                      <p className="text-lg font-medium text-foreground italic">
+                        It’s about <span className="text-primary not-italic">feeling safe</span>, it’s about <span className="text-primary not-italic">feeling guided</span>, and it’s about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
+                      </p>
+                      <p className="font-semibold text-accent uppercase tracking-wider text-xs">That’s why we keep things simple and transparent.</p>
+                    </div>
+
+                    <div className="mt-8 flex flex-col md:flex-row items-start md:items-center gap-6 p-5 rounded-2xl bg-orange-50/50 border border-orange-200/50 backdrop-blur-sm">
+                      <div className="flex-1 space-y-2">
+                        <div className="flex items-center gap-3 text-orange-800 font-extrabold text-lg leading-none">
+                          <Calendar className="w-5 h-5 text-orange-600" />
+                          Next Batch: 7 & 8 March
+                        </div>
+                        <div className="flex items-center gap-3 text-orange-700 font-semibold text-sm">
+                          <Clock className="w-4 h-4 text-orange-500" />
+                          10:00 AM CET (German Time)
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-end gap-3">
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500 text-white text-xs font-black uppercase tracking-widest shadow-lg shadow-red-500/20 animate-bounce-subtle">
+                          <UsersRound className="w-3.5 h-3.5" />
+                          Limited Seats Only
+                        </div>
+                      </div>
+                    </div>
                     <div className="mt-8 flex flex-wrap items-center gap-6 justify-between">
                       <Button
                         size="lg"
                         className="bg-gradient-to-r from-[#FF8C00] to-[#FF4500] text-white hover:from-[#FF4500] hover:to-[#FF8C00] font-bold px-8 shadow-xl shadow-orange-500/20 hover:scale-105 transition-all duration-300 border-none relative overflow-hidden group/btn"
-                        onClick={() => setShowPreYttcOptions(true)}
+                        asChild
                       >
-                        <span className="relative z-10 flex items-center gap-2">
-                          Start My Live Training
-                          <Zap className="w-4 h-4 fill-current animate-pulse" />
-                        </span>
-                        <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-500 ease-in-out" />
+                        <Link href="/teacher-training-foundation">
+                          <span className="relative z-10 flex items-center gap-2">
+                            Join Foundation for FREE
+                            <Zap className="w-4 h-4 fill-current animate-pulse" />
+                          </span>
+                          <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-500 ease-in-out" />
+                        </Link>
                       </Button>
 
                       <div className="flex items-center gap-5 text-sm font-medium text-primary">
                         <span className="flex items-center gap-1.5 bg-primary/5 px-3 py-1.5 rounded-full">
-                          <Check className="w-4 h-4" /> Live Mentorship
+                          <Check className="w-4 h-4" /> 2-Day Experience
                         </span>
                         <span className="flex items-center gap-1.5 bg-primary/5 px-3 py-1.5 rounded-full">
-                          <Check className="w-4 h-4" /> Community Access
+                          <Check className="w-4 h-4" /> Live Interraction
                         </span>
                       </div>
                     </div>
@@ -1950,9 +2005,15 @@ export default function Course200Hour() {
             <div className="text-center mt-12">
               <Dialog open={showSyllabusDialog} onOpenChange={setShowSyllabusDialog}>
                 <DialogTrigger asChild>
-                  <Button size="lg" variant="outline" className="gap-2">
-                    <Download className="w-4 h-4" />
-                    Download Detailed Syllabus
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-[#FF8C00] to-[#FF4500] text-white hover:from-[#FF4500] hover:to-[#FF8C00] font-bold px-10 shadow-xl shadow-orange-500/30 hover:scale-105 transition-all duration-300 border-none h-14 relative overflow-hidden group/btn"
+                  >
+                    <span className="relative z-10 flex items-center gap-2">
+                      <Download className="w-5 h-5" />
+                      Download Detailed Syllabus
+                    </span>
+                    <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-500 ease-in-out" />
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-md">
@@ -4107,7 +4168,7 @@ export default function Course200Hour() {
                       onClick={() => setShowQuizDialog(true)}
                     >
                       <Sparkles className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-                      Reveal Your Yogic Energy
+                      Reveal Your Unique Yogic Energy
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </div>
@@ -4216,7 +4277,7 @@ export default function Course200Hour() {
                 onClick={() => setShowQuizDialog(true)}
               >
                 <Sparkles className="w-4 h-4 mr-2" />
-                Reveal Your Yogic Energy
+                Reveal Your Unique Yogic Energy
               </Button>
               <Button
                 size="lg"

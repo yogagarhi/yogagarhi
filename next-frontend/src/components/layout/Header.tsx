@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Sparkles, Globe, Mountain, ArrowRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useEnrollment } from "@/components/EnrollmentDialog";
+import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import PromoCountdown from "@/components/PromoCountdown";
 const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
@@ -147,7 +147,7 @@ export default function Header() {
   const [showAnnouncement, setShowAnnouncement] = useState(false);
   const [announcementDismissed, setAnnouncementDismissed] = useState(false);
   const pathname = usePathname();
-  const { setShowEnrollDialog } = useEnrollment();
+  const { setShowQuickEnquiry } = useQuickEnquiry();
 
   // Check if announcement was dismissed in this session
   useEffect(() => {
@@ -405,9 +405,9 @@ export default function Header() {
                 variant="cta"
                 size="sm"
                 className="lg:hidden text-xs px-3 py-1.5"
-                onClick={() => setShowEnrollDialog(true)}
+                onClick={() => setShowQuickEnquiry(true)}
               >
-                Begin Journey
+                Quick Inquiry
               </Button>
 
               {/* Desktop CTA Button */}
@@ -415,9 +415,9 @@ export default function Header() {
                 variant="cta"
                 size="default"
                 className="hidden lg:flex"
-                onClick={() => setShowEnrollDialog(true)}
+                onClick={() => setShowQuickEnquiry(true)}
               >
-                Begin Journey
+                Quick Inquiry
               </Button>
 
               {/* Mobile Menu Button */}
@@ -544,11 +544,11 @@ export default function Header() {
                 size="lg"
                 className="w-full"
                 onClick={() => {
-                  setShowEnrollDialog(true);
+                  setShowQuickEnquiry(true);
                   setIsOpen(false);
                 }}
               >
-                Begin Your Journey
+                Quick Inquiry
               </Button>
             </div>
           </nav>

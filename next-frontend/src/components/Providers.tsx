@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { EnrollmentProvider } from "@/components/EnrollmentDialog";
 import { BookingProvider } from "@/components/BookingDialog";
 import { QuickEnquiryProvider } from "@/components/QuickEnquiryDialog";
+import { YogicEnergyProvider } from "@/components/YogicEnergyDialog";
 import { ContactDialogProvider } from "@/components/ContactDialog";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -20,12 +21,14 @@ export function Providers({ children }: { children: React.ReactNode }) {
                 <EnrollmentProvider>
                     <BookingProvider>
                         <QuickEnquiryProvider>
-                            <ContactDialogProvider>
-                                <ScrollToTop />
-                                {children}
-                                <Toaster />
-                                <Sonner />
-                            </ContactDialogProvider>
+                            <YogicEnergyProvider>
+                                <ContactDialogProvider>
+                                    <ScrollToTop />
+                                    {children}
+                                    <Toaster />
+                                    <Sonner />
+                                </ContactDialogProvider>
+                            </YogicEnergyProvider>
                         </QuickEnquiryProvider>
                     </BookingProvider>
                 </EnrollmentProvider>

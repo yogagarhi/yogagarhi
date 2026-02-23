@@ -200,7 +200,7 @@ YogaGarhi Team`,
             onClick={scrollToQuiz}
           >
             <Sparkles className="w-4 h-4 mr-2" />
-            Reveal Your Yogic Energy
+            Reveal Your Unique Yogic Energy
           </Button>
           <Button
             size="lg"
