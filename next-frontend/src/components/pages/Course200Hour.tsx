@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -237,11 +237,11 @@ const whatSetsApart = [
   },
   {
     title: "The Shiv-Shakti Sadhana",
-    description: "Beyond asana and pranayama, students are introduced to the subtle practices of Shiv-Shakti Sadhana — awakening the inner masculine and feminine energies that govern transformation.",
+    description: "Beyond asana and pranayama, students are introduced to the subtle practices of Shiv-Shakti Sadhana â€” awakening the inner masculine and feminine energies that govern transformation.",
   },
   {
     title: "Beyond the Certification Mindset",
-    description: "Many come for a certificate. We prepare you for a calling. The certificate is a formality. The transformation is the reality. Our graduates don't just teach yoga — they live it.",
+    description: "Many come for a certificate. We prepare you for a calling. The certificate is a formality. The transformation is the reality. Our graduates don't just teach yoga â€” they live it.",
   },
 ];
 
@@ -461,7 +461,7 @@ const workshops = [
 const excursions = [
   {
     title: "Balinese Dance Performance",
-    description: "Witness the ancient art of Balinese dance — a mesmerizing display of grace, storytelling, and spiritual devotion passed down through generations.",
+    description: "Witness the ancient art of Balinese dance â€” a mesmerizing display of grace, storytelling, and spiritual devotion passed down through generations.",
     image: apartKecakDance,
     icon: Star
   },
@@ -995,7 +995,7 @@ export default function Course200Hour() {
     <>
       <Layout>
         {/* ===== HERO SECTION ===== */}
-        <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-32 sm:pt-36 md:pt-48 pb-20">
+        <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-8 sm:pt-12 md:pt-16 pb-20">
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -1111,7 +1111,7 @@ export default function Course200Hour() {
                   {/* Special Offer Box */}
                   <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                     <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                      Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                      Book your Aprilâ€“July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities â€” <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
                     </p>
                   </div>
                 </div>
@@ -1294,11 +1294,11 @@ export default function Course200Hour() {
 
                   <ul className="space-y-4">
                     {[
-                      <>You want to <span className="font-semibold text-foreground">deepen your yoga practice</span> — physically, mentally, spiritually</>,
+                      <>You want to <span className="font-semibold text-foreground">deepen your yoga practice</span> â€” physically, mentally, spiritually</>,
                       <>You feel called to <span className="font-semibold text-foreground">teach yoga with confidence and clarity</span></>,
                       <>You are seeking <span className="font-semibold text-foreground">healing, clarity, and a fresh start</span> in the heart of Bali</>,
                       <>You want to learn yoga <span className="font-semibold text-foreground">authentically, not commercially</span></>,
-                      <>You’re not sure yet if you’ll teach — but you want a <span className="font-semibold text-foreground">strong foundation</span></>,
+                      <>Youâ€™re not sure yet if youâ€™ll teach â€” but you want a <span className="font-semibold text-foreground">strong foundation</span></>,
                       <>You value <span className="font-semibold text-foreground">tradition, self-discipline, and conscious living</span></>
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-sm md:text-base text-muted-foreground">
@@ -1322,9 +1322,9 @@ export default function Course200Hour() {
                   <div className="text-sm text-muted-foreground leading-relaxed mb-4 space-y-3">
                     <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
                     <p className="font-medium text-foreground italic">
-                      It’s about <span className="text-primary not-italic">feeling safe</span>, it’s about <span className="text-primary not-italic">feeling guided</span>, and it’s about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
+                      Itâ€™s about <span className="text-primary not-italic">feeling safe</span>, itâ€™s about <span className="text-primary not-italic">feeling guided</span>, and itâ€™s about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
                     </p>
-                    <p>That’s why we keep things simple and transparent.</p>
+                    <p>Thatâ€™s why we keep things simple and transparent.</p>
                   </div>
 
                   <div className="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 shadow-inner">
@@ -1448,9 +1448,9 @@ export default function Course200Hour() {
                     <div className="text-muted-foreground leading-relaxed space-y-4">
                       <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
                       <p className="text-lg font-medium text-foreground italic">
-                        It’s about <span className="text-primary not-italic">feeling safe</span>, it’s about <span className="text-primary not-italic">feeling guided</span>, and it’s about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
+                        Itâ€™s about <span className="text-primary not-italic">feeling safe</span>, itâ€™s about <span className="text-primary not-italic">feeling guided</span>, and itâ€™s about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
                       </p>
-                      <p className="font-semibold text-accent uppercase tracking-wider text-xs">That’s why we keep things simple and transparent.</p>
+                      <p className="font-semibold text-accent uppercase tracking-wider text-xs">Thatâ€™s why we keep things simple and transparent.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col md:flex-row items-start md:items-center gap-6 p-5 rounded-2xl bg-orange-50/50 border border-orange-200/50 backdrop-blur-sm">
@@ -1503,7 +1503,7 @@ export default function Course200Hour() {
         </section>
 
 
-        {/* ===== WHAT YOU’LL CARRY HOME - UNIQUE COMPACT DESIGN ===== */}
+        {/* ===== WHAT YOUâ€™LL CARRY HOME - UNIQUE COMPACT DESIGN ===== */}
         <section className="py-16 bg-muted/30 relative overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
@@ -1514,7 +1514,7 @@ export default function Course200Hour() {
                   <span className="text-[10px] font-bold tracking-widest uppercase text-primary">The Takeaway</span>
                 </div>
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
-                  What You’ll <br />
+                  What Youâ€™ll <br />
                   <span className="text-primary italic">Carry Home</span>
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
@@ -1603,7 +1603,7 @@ export default function Course200Hour() {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
-              Everything you need to live, learn, and grow — fully supported
+              Everything you need to live, learn, and grow â€” fully supported
             </p>
 
             {/* Horizontal Scrollable Flip Cards */}
@@ -1679,7 +1679,7 @@ export default function Course200Hour() {
             <div className="max-w-4xl mx-auto text-center">
               {/* Subtitle */}
               <p className="text-white/90 text-lg mb-2 font-medium">
-                "YOGAGARHI – 200 Hour YTTC"
+                "YOGAGARHI â€“ 200 Hour YTTC"
               </p>
 
               {/* Main Title */}
@@ -1829,7 +1829,7 @@ export default function Course200Hour() {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
-              Here’s what one student felt after taking that step.
+              Hereâ€™s what one student felt after taking that step.
             </p>
 
             <div className="max-w-2xl mx-auto mb-12">
@@ -2080,7 +2080,7 @@ export default function Course200Hour() {
                     </div>
                     <div>
                       <DialogTitle className="font-heading text-2xl font-bold text-primary mb-2">
-                        Thank You! 🙏
+                        Thank You! ðŸ™
                       </DialogTitle>
                       <DialogDescription className="text-muted-foreground">
                         Your {selectedSyllabusCourse}-hour YTTC syllabus is on its way to <span className="font-medium text-foreground">{syllabusEmail}</span>
@@ -2178,7 +2178,7 @@ export default function Course200Hour() {
                 {/* Special Offer Box */}
                 <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                   <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                    Book your Aprilâ€“July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities â€” <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
                   </p>
                 </div>
               </div>
@@ -2210,7 +2210,7 @@ export default function Course200Hour() {
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                    Training: 1st – 24th of each month
+                    Training: 1st â€“ 24th of each month
                   </h3>
                   <p className="text-sm text-muted-foreground">
                     Immersive 24-day program every month in Bali
@@ -2250,7 +2250,7 @@ export default function Course200Hour() {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Enhance your training with these exclusive bonus workshops — all included free
+              Enhance your training with these exclusive bonus workshops â€” all included free
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -3305,7 +3305,7 @@ export default function Course200Hour() {
               </div>
               <div>
                 <DialogTitle className="font-heading text-2xl font-bold text-primary mb-2">
-                  Thank You! 🙏
+                  Thank You! ðŸ™
                 </DialogTitle>
                 <p className="text-muted-foreground">
                   Your personalized yogic energy insight is on its way to <span className="font-medium text-foreground">{email}</span>
@@ -3394,7 +3394,7 @@ export default function Course200Hour() {
                   <option value="UTC-06:00">(UTC-06:00) Central Time (US & Canada)</option>
                   <option value="UTC-05:00">(UTC-05:00) Eastern Time (US & Canada)</option>
                   <option value="UTC-04:00">(UTC-04:00) Atlantic Time (Canada)</option>
-                  <option value="UTC-03:00">(UTC-03:00) Buenos Aires, São Paulo</option>
+                  <option value="UTC-03:00">(UTC-03:00) Buenos Aires, SÃ£o Paulo</option>
                   <option value="UTC-02:00">(UTC-02:00) Mid-Atlantic</option>
                   <option value="UTC-01:00">(UTC-01:00) Azores</option>
                   <option value="UTC+00:00">(UTC+00:00) London, Dublin, Lisbon</option>
@@ -3484,15 +3484,15 @@ export default function Course200Hour() {
               </div>
               <div>
                 <DialogTitle className="font-heading text-2xl font-bold text-primary mb-2">
-                  You're Registered! 🎉
+                  You're Registered! ðŸŽ‰
                 </DialogTitle>
                 <DialogDescription className="text-muted-foreground">
                   Thank you, <span className="font-medium text-foreground">{webinarForm.name}</span>! Your webinar registration is confirmed.
                 </DialogDescription>
               </div>
               <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground space-y-2">
-                <p>📧 Confirmation sent to: <span className="font-medium text-foreground">{webinarForm.email}</span></p>
-                <p>📅 We'll send you the webinar link before your selected date.</p>
+                <p>ðŸ“§ Confirmation sent to: <span className="font-medium text-foreground">{webinarForm.email}</span></p>
+                <p>ðŸ“… We'll send you the webinar link before your selected date.</p>
               </div>
               <Button
                 onClick={() => {
@@ -3575,14 +3575,14 @@ export default function Course200Hour() {
               </div>
               <div>
                 <DialogTitle className="font-heading text-2xl font-bold text-primary mb-2">
-                  Details on the Way! 🎓
+                  Details on the Way! ðŸŽ“
                 </DialogTitle>
                 <DialogDescription className="text-muted-foreground">
                   Thank you, <span className="font-medium text-foreground">{preYTTCForm.name}</span>! Your Pre-YTTC program details will be sent to your email.
                 </DialogDescription>
               </div>
               <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground">
-                📧 Sent to: <span className="font-medium text-foreground">{preYTTCForm.email}</span>
+                ðŸ“§ Sent to: <span className="font-medium text-foreground">{preYTTCForm.email}</span>
               </div>
               <Button
                 onClick={() => {
@@ -3659,7 +3659,7 @@ export default function Course200Hour() {
               </div>
               <div>
                 <DialogTitle className="font-heading text-2xl font-bold text-primary mb-2">
-                  Manual on the Way! 📚
+                  Manual on the Way! ðŸ“š
                 </DialogTitle>
                 <DialogDescription className="text-muted-foreground">
                   Thank you! The study manual has been sent to <span className="font-medium text-foreground">{manualForm.email}</span>
@@ -3888,64 +3888,64 @@ export default function Course200Hour() {
                                 onChange={(e) => setBookingForm(prev => ({ ...prev, countryCode: e.target.value }))}
                                 className="w-28 px-2 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"
                               >
-                                <option value="+1">🇺🇸 +1</option>
-                                <option value="+44">🇬🇧 +44</option>
-                                <option value="+91">🇮🇳 +91</option>
-                                <option value="+61">🇦🇺 +61</option>
-                                <option value="+49">🇩🇪 +49</option>
-                                <option value="+33">🇫🇷 +33</option>
-                                <option value="+39">🇮🇹 +39</option>
-                                <option value="+34">🇪🇸 +34</option>
-                                <option value="+31">🇳🇱 +31</option>
-                                <option value="+46">🇸🇪 +46</option>
-                                <option value="+47">🇳🇴 +47</option>
-                                <option value="+45">🇩🇰 +45</option>
-                                <option value="+358">🇫🇮 +358</option>
-                                <option value="+41">🇨🇭 +41</option>
-                                <option value="+43">🇦🇹 +43</option>
-                                <option value="+32">🇧🇪 +32</option>
-                                <option value="+351">🇵🇹 +351</option>
-                                <option value="+48">🇵🇱 +48</option>
-                                <option value="+7">🇷🇺 +7</option>
-                                <option value="+380">🇺🇦 +380</option>
-                                <option value="+81">🇯🇵 +81</option>
-                                <option value="+82">🇰🇷 +82</option>
-                                <option value="+86">🇨🇳 +86</option>
-                                <option value="+852">🇭🇰 +852</option>
-                                <option value="+65">🇸🇬 +65</option>
-                                <option value="+60">🇲🇾 +60</option>
-                                <option value="+62">🇮🇩 +62</option>
-                                <option value="+66">🇹🇭 +66</option>
-                                <option value="+84">🇻🇳 +84</option>
-                                <option value="+63">🇵🇭 +63</option>
-                                <option value="+92">🇵🇰 +92</option>
-                                <option value="+880">🇧🇩 +880</option>
-                                <option value="+94">🇱🇰 +94</option>
-                                <option value="+977">🇳🇵 +977</option>
-                                <option value="+971">🇦🇪 +971</option>
-                                <option value="+966">🇸🇦 +966</option>
-                                <option value="+972">🇮🇱 +972</option>
-                                <option value="+90">🇹🇷 +90</option>
-                                <option value="+20">🇪🇬 +20</option>
-                                <option value="+27">🇿🇦 +27</option>
-                                <option value="+234">🇳🇬 +234</option>
-                                <option value="+254">🇰🇪 +254</option>
-                                <option value="+55">🇧🇷 +55</option>
-                                <option value="+52">🇲🇽 +52</option>
-                                <option value="+54">🇦🇷 +54</option>
-                                <option value="+57">🇨🇴 +57</option>
-                                <option value="+56">🇨🇱 +56</option>
-                                <option value="+51">🇵🇪 +51</option>
-                                <option value="+64">🇳🇿 +64</option>
-                                <option value="+353">🇮🇪 +353</option>
-                                <option value="+30">🇬🇷 +30</option>
-                                <option value="+36">🇭🇺 +36</option>
-                                <option value="+420">🇨🇿 +420</option>
-                                <option value="+40">🇷🇴 +40</option>
-                                <option value="+375">🇧🇾 +375</option>
-                                <option value="+370">🇱🇹 +370</option>
-                                <option value="+371">🇱🇻 +371</option>
-                                <option value="+372">🇪🇪 +372</option>
+                                <option value="+1">ðŸ‡ºðŸ‡¸ +1</option>
+                                <option value="+44">ðŸ‡¬ðŸ‡§ +44</option>
+                                <option value="+91">ðŸ‡®ðŸ‡³ +91</option>
+                                <option value="+61">ðŸ‡¦ðŸ‡º +61</option>
+                                <option value="+49">ðŸ‡©ðŸ‡ª +49</option>
+                                <option value="+33">ðŸ‡«ðŸ‡· +33</option>
+                                <option value="+39">ðŸ‡®ðŸ‡¹ +39</option>
+                                <option value="+34">ðŸ‡ªðŸ‡¸ +34</option>
+                                <option value="+31">ðŸ‡³ðŸ‡± +31</option>
+                                <option value="+46">ðŸ‡¸ðŸ‡ª +46</option>
+                                <option value="+47">ðŸ‡³ðŸ‡´ +47</option>
+                                <option value="+45">ðŸ‡©ðŸ‡° +45</option>
+                                <option value="+358">ðŸ‡«ðŸ‡® +358</option>
+                                <option value="+41">ðŸ‡¨ðŸ‡­ +41</option>
+                                <option value="+43">ðŸ‡¦ðŸ‡¹ +43</option>
+                                <option value="+32">ðŸ‡§ðŸ‡ª +32</option>
+                                <option value="+351">ðŸ‡µðŸ‡¹ +351</option>
+                                <option value="+48">ðŸ‡µðŸ‡± +48</option>
+                                <option value="+7">ðŸ‡·ðŸ‡º +7</option>
+                                <option value="+380">ðŸ‡ºðŸ‡¦ +380</option>
+                                <option value="+81">ðŸ‡¯ðŸ‡µ +81</option>
+                                <option value="+82">ðŸ‡°ðŸ‡· +82</option>
+                                <option value="+86">ðŸ‡¨ðŸ‡³ +86</option>
+                                <option value="+852">ðŸ‡­ðŸ‡° +852</option>
+                                <option value="+65">ðŸ‡¸ðŸ‡¬ +65</option>
+                                <option value="+60">ðŸ‡²ðŸ‡¾ +60</option>
+                                <option value="+62">ðŸ‡®ðŸ‡© +62</option>
+                                <option value="+66">ðŸ‡¹ðŸ‡­ +66</option>
+                                <option value="+84">ðŸ‡»ðŸ‡³ +84</option>
+                                <option value="+63">ðŸ‡µðŸ‡­ +63</option>
+                                <option value="+92">ðŸ‡µðŸ‡° +92</option>
+                                <option value="+880">ðŸ‡§ðŸ‡© +880</option>
+                                <option value="+94">ðŸ‡±ðŸ‡° +94</option>
+                                <option value="+977">ðŸ‡³ðŸ‡µ +977</option>
+                                <option value="+971">ðŸ‡¦ðŸ‡ª +971</option>
+                                <option value="+966">ðŸ‡¸ðŸ‡¦ +966</option>
+                                <option value="+972">ðŸ‡®ðŸ‡± +972</option>
+                                <option value="+90">ðŸ‡¹ðŸ‡· +90</option>
+                                <option value="+20">ðŸ‡ªðŸ‡¬ +20</option>
+                                <option value="+27">ðŸ‡¿ðŸ‡¦ +27</option>
+                                <option value="+234">ðŸ‡³ðŸ‡¬ +234</option>
+                                <option value="+254">ðŸ‡°ðŸ‡ª +254</option>
+                                <option value="+55">ðŸ‡§ðŸ‡· +55</option>
+                                <option value="+52">ðŸ‡²ðŸ‡½ +52</option>
+                                <option value="+54">ðŸ‡¦ðŸ‡· +54</option>
+                                <option value="+57">ðŸ‡¨ðŸ‡´ +57</option>
+                                <option value="+56">ðŸ‡¨ðŸ‡± +56</option>
+                                <option value="+51">ðŸ‡µðŸ‡ª +51</option>
+                                <option value="+64">ðŸ‡³ðŸ‡¿ +64</option>
+                                <option value="+353">ðŸ‡®ðŸ‡ª +353</option>
+                                <option value="+30">ðŸ‡¬ðŸ‡· +30</option>
+                                <option value="+36">ðŸ‡­ðŸ‡º +36</option>
+                                <option value="+420">ðŸ‡¨ðŸ‡¿ +420</option>
+                                <option value="+40">ðŸ‡·ðŸ‡´ +40</option>
+                                <option value="+375">ðŸ‡§ðŸ‡¾ +375</option>
+                                <option value="+370">ðŸ‡±ðŸ‡¹ +370</option>
+                                <option value="+371">ðŸ‡±ðŸ‡» +371</option>
+                                <option value="+372">ðŸ‡ªðŸ‡ª +372</option>
                               </select>
                               <input
                                 type="tel"
@@ -4050,7 +4050,7 @@ export default function Course200Hour() {
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-20">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Sachin Ji’s Research on Personalized Yoga and Prakriti
+                Sachin Jiâ€™s Research on Personalized Yoga and Prakriti
               </h2>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />
@@ -4067,7 +4067,7 @@ export default function Course200Hour() {
               {[
                 {
                   title: "The Core Question",
-                  text: <>During our Lead Teacher’s <strong className="text-foreground font-bold">Master Yoga studies</strong>, one question became impossible to ignore: Why does the same yoga practice calm some people, but leave others feeling <strong className="text-foreground font-bold">tired, restless, or mentally disturbed</strong>?</>,
+                  text: <>During our Lead Teacherâ€™s <strong className="text-foreground font-bold">Master Yoga studies</strong>, one question became impossible to ignore: Why does the same yoga practice calm some people, but leave others feeling <strong className="text-foreground font-bold">tired, restless, or mentally disturbed</strong>?</>,
                   icon: Brain,
                   color: "bg-amber-500/10 text-amber-600 border-amber-500/20"
                 },
@@ -4090,8 +4090,8 @@ export default function Course200Hour() {
                   color: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20"
                 },
                 {
-                  title: "Shiv–Shakti Sadhana",
-                  text: <>Born from this realization, <strong className="text-foreground font-bold">Shiv–Shakti Sadhana</strong> is a balanced approach that harmonizes <strong className="text-foreground font-bold">stability and movement</strong>, awareness and energy. Asana here supports grounding and strength.</>,
+                  title: "Shivâ€“Shakti Sadhana",
+                  text: <>Born from this realization, <strong className="text-foreground font-bold">Shivâ€“Shakti Sadhana</strong> is a balanced approach that harmonizes <strong className="text-foreground font-bold">stability and movement</strong>, awareness and energy. Asana here supports grounding and strength.</>,
                   icon: RefreshCw,
                   color: "bg-rose-500/10 text-rose-600 border-rose-500/20"
                 },
@@ -4220,7 +4220,7 @@ export default function Course200Hour() {
                   </a>
                 </Button>
                 <p className="text-sm text-muted-foreground">
-                  <span className="font-medium text-foreground">Open 24 hours</span> • Gianyar, Bali
+                  <span className="font-medium text-foreground">Open 24 hours</span> â€¢ Gianyar, Bali
                 </p>
               </div>
             </div>
@@ -4396,254 +4396,7 @@ export default function Course200Hour() {
               </a>
             </div>
           </div>
-        </section>
-
-        {/* ===== ENROLLMENT FORM DIALOG ===== */}
-        <Dialog open={showEnrollDialog} onOpenChange={setShowEnrollDialog}>
-          <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
-            <DialogHeader>
-              <DialogTitle className="font-heading text-2xl">Enroll Now</DialogTitle>
-              <DialogDescription className="text-sm text-muted-foreground">
-                Fill in your details to begin your yoga journey
-              </DialogDescription>
-            </DialogHeader>
-
-            <div className="space-y-4 mt-4">
-              {/* Name */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Name <span className="text-destructive">*</span>
-                </label>
-                <input
-                  type="text"
-                  value={enrollForm.name}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, name: e.target.value }))}
-                  placeholder="Enter your full name"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                />
-              </div>
-
-              {/* Email */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Email <span className="text-destructive">*</span>
-                </label>
-                <input
-                  type="email"
-                  value={enrollForm.email}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, email: e.target.value }))}
-                  placeholder="you@example.com"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                />
-              </div>
-
-              {/* Contact/WhatsApp */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Contact No./WhatsApp No. <span className="text-destructive">*</span>
-                </label>
-                <div className="flex gap-2">
-                  <select
-                    value={enrollForm.countryCode}
-                    onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))}
-                    className="w-28 px-2 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"
-                  >
-                    <option value="+1">🇺🇸 +1</option>
-                    <option value="+44">🇬🇧 +44</option>
-                    <option value="+91">🇮🇳 +91</option>
-                    <option value="+61">🇦🇺 +61</option>
-                    <option value="+49">🇩🇪 +49</option>
-                    <option value="+33">🇫🇷 +33</option>
-                    <option value="+39">🇮🇹 +39</option>
-                    <option value="+34">🇪🇸 +34</option>
-                    <option value="+31">🇳🇱 +31</option>
-                    <option value="+46">🇸🇪 +46</option>
-                    <option value="+47">🇳🇴 +47</option>
-                    <option value="+45">🇩🇰 +45</option>
-                    <option value="+358">🇫🇮 +358</option>
-                    <option value="+41">🇨🇭 +41</option>
-                    <option value="+43">🇦🇹 +43</option>
-                    <option value="+32">🇧🇪 +32</option>
-                    <option value="+351">🇵🇹 +351</option>
-                    <option value="+48">🇵🇱 +48</option>
-                    <option value="+7">🇷🇺 +7</option>
-                    <option value="+380">🇺🇦 +380</option>
-                    <option value="+81">🇯🇵 +81</option>
-                    <option value="+82">🇰🇷 +82</option>
-                    <option value="+86">🇨🇳 +86</option>
-                    <option value="+852">🇭🇰 +852</option>
-                    <option value="+65">🇸🇬 +65</option>
-                    <option value="+60">🇲🇾 +60</option>
-                    <option value="+62">🇮🇩 +62</option>
-                    <option value="+66">🇹🇭 +66</option>
-                    <option value="+84">🇻🇳 +84</option>
-                    <option value="+63">🇵🇭 +63</option>
-                    <option value="+92">🇵🇰 +92</option>
-                    <option value="+880">🇧🇩 +880</option>
-                    <option value="+94">🇱🇰 +94</option>
-                    <option value="+977">🇳🇵 +977</option>
-                    <option value="+971">🇦🇪 +971</option>
-                    <option value="+966">🇸🇦 +966</option>
-                    <option value="+972">🇮🇱 +972</option>
-                    <option value="+90">🇹🇷 +90</option>
-                    <option value="+20">🇪🇬 +20</option>
-                    <option value="+27">🇿🇦 +27</option>
-                    <option value="+234">🇳🇬 +234</option>
-                    <option value="+254">🇰🇪 +254</option>
-                    <option value="+55">🇧🇷 +55</option>
-                    <option value="+52">🇲🇽 +52</option>
-                    <option value="+54">🇦🇷 +54</option>
-                    <option value="+57">🇨🇴 +57</option>
-                    <option value="+56">🇨🇱 +56</option>
-                    <option value="+51">🇵🇪 +51</option>
-                    <option value="+64">🇳🇿 +64</option>
-                    <option value="+353">🇮🇪 +353</option>
-                    <option value="+30">🇬🇷 +30</option>
-                    <option value="+36">🇭🇺 +36</option>
-                    <option value="+420">🇨🇿 +420</option>
-                    <option value="+40">🇷🇴 +40</option>
-                    <option value="+375">🇧🇾 +375</option>
-                    <option value="+370">🇱🇹 +370</option>
-                    <option value="+371">🇱🇻 +371</option>
-                    <option value="+372">🇪🇪 +372</option>
-                  </select>
-                  <input
-                    type="tel"
-                    value={enrollForm.contact}
-                    onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))}
-                    placeholder="Phone number"
-                    className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  />
-                </div>
-              </div>
-
-              {/* Course Name */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Course Name <span className="text-destructive">*</span>
-                </label>
-                <select
-                  value={enrollForm.courseName}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                >
-                  <option value="">Choose Your Yoga Course</option>
-                  <option value="100 Hour Yoga Teacher Training Course in Bali">100 Hour Yoga Teacher Training Course in Bali</option>
-                  <option value="200 Hour Yoga Teacher Training Course in Bali">200 Hour Yoga Teacher Training Course in Bali</option>
-                  <option value="300 Hour Yoga Teacher Training Course in Bali">300 Hour Yoga Teacher Training Course in Bali</option>
-                </select>
-              </div>
-
-              {/* Course Date */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Course Date <span className="text-destructive">*</span>
-                </label>
-                <select
-                  value={enrollForm.courseDate}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, courseDate: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                >
-                  <option value="">Choose...</option>
-                  {courseDates.map((date) => (
-                    <option key={date} value={date}>{date}</option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Accommodation */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Accommodation <span className="text-destructive">*</span>
-                </label>
-                <select
-                  value={enrollForm.accommodation}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, accommodation: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                >
-                  <option value="">Select Accommodation</option>
-                  <option value="Private Room">Private Room</option>
-                  <option value="Shared Room">Shared Room</option>
-                  <option value="Deluxe Room">Deluxe Room</option>
-                </select>
-              </div>
-
-              {/* Gender */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Gender <span className="text-destructive">*</span>
-                </label>
-                <select
-                  value={enrollForm.gender}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, gender: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                >
-                  <option value="">Select Gender</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Others">Others</option>
-                </select>
-              </div>
-
-              {/* Country */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Country <span className="text-destructive">*</span>
-                </label>
-                <input
-                  type="text"
-                  value={enrollForm.country}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, country: e.target.value }))}
-                  placeholder="Enter your country"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                />
-              </div>
-
-              {/* Source */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  From where you get to know about us? <span className="text-destructive">*</span>
-                </label>
-                <select
-                  value={enrollForm.source}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, source: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                >
-                  <option value="">Choose</option>
-                  <option value="Google Search">Google Search</option>
-                  <option value="Social Media">Social Media</option>
-                  <option value="Recommendation">Recommendation</option>
-                  <option value="Any other source">Any other source</option>
-                </select>
-              </div>
-
-              {/* Message */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Message
-                </label>
-                <textarea
-                  value={enrollForm.message}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, message: e.target.value }))}
-                  placeholder="Any additional message or questions..."
-                  rows={3}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
-                />
-              </div>
-            </div>
-
-            <Button
-              className="w-full mt-6"
-              size="lg"
-              disabled={!isEnrollFormComplete || isSubmittingEnroll}
-              onClick={handleEnrollSubmit}
-            >
-              {isSubmittingEnroll ? "Submitting..." : "Submit Enrollment"}
-            </Button>
-          </DialogContent>
-        </Dialog>
-
-        {/* ===== QUICK ENQUIRY DIALOG ===== */}
+        </section>{/* ===== QUICK ENQUIRY DIALOG ===== */}
         <Dialog open={showQuickEnquiryDialog} onOpenChange={setShowQuickEnquiryDialog}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
@@ -4754,13 +4507,201 @@ export default function Course200Hour() {
             </p>
           </DialogContent>
         </Dialog>
+        {/* ===== ENROLLMENT FORM DIALOG ===== */}
+        <Dialog open={showEnrollDialog} onOpenChange={setShowEnrollDialog}>
+          <DialogContent className="sm:max-w-lg p-0 gap-0">
+            {/* Gradient Header */}
+            <div className="bg-gradient-to-br from-primary to-primary/80 px-6 pt-8 pb-6 sm:px-8 text-primary-foreground rounded-t-2xl sm:rounded-t-xl">
+              <div className="pr-8">
+                <DialogTitle className="font-heading text-2xl sm:text-3xl font-bold mb-1 text-primary-foreground">Begin Your Yoga Journey</DialogTitle>
+                <p className="text-primary-foreground/80 text-sm">Fill in your details and we&#39;ll be in touch shortly</p>
+              </div>
+            </div>
+
+            {/* Scrollable Form Body */}
+            <div className="px-6 sm:px-8 py-6 space-y-4 overflow-y-auto max-h-[60vh] sm:max-h-[65vh]">
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">Name <span className="text-destructive">*</span></label>
+                <input
+                  type="text"
+                  value={enrollForm.name}
+                  onChange={(e) => setEnrollForm(prev => ({ ...prev, name: e.target.value }))}
+                  placeholder="Enter your full name"
+                  className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                />
+              </div>
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">Email <span className="text-destructive">*</span></label>
+                <input
+                  type="email"
+                  value={enrollForm.email}
+                  onChange={(e) => setEnrollForm(prev => ({ ...prev, email: e.target.value }))}
+                  placeholder="you@example.com"
+                  className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                />
+              </div>
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">Contact / WhatsApp No. <span className="text-destructive">*</span></label>
+                <div className="flex gap-2">
+                  <select
+                    value={enrollForm.countryCode}
+                    onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))}
+                    className="w-24 px-2 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                  >
+                    <option value="+1">&#127482;&#127480; +1</option>
+                    <option value="+44">&#127468;&#127463; +44</option>
+                    <option value="+91">&#127470;&#127475; +91</option>
+                    <option value="+61">&#127462;&#127482; +61</option>
+                    <option value="+49">&#127465;&#127466; +49</option>
+                    <option value="+33">&#127467;&#127479; +33</option>
+                    <option value="+39">&#127470;&#127481; +39</option>
+                    <option value="+34">&#127466;&#127480; +34</option>
+                    <option value="+31">&#127475;&#127473; +31</option>
+                    <option value="+46">&#127480;&#127466; +46</option>
+                    <option value="+47">&#127475;&#127476; +47</option>
+                    <option value="+45">&#127465;&#127472; +45</option>
+                    <option value="+41">&#127464;&#127469; +41</option>
+                    <option value="+43">&#127462;&#127481; +43</option>
+                    <option value="+32">&#127463;&#127466; +32</option>
+                    <option value="+55">&#127463;&#127479; +55</option>
+                    <option value="+52">&#127474;&#127485; +52</option>
+                    <option value="+81">&#127471;&#127477; +81</option>
+                    <option value="+82">&#127472;&#127479; +82</option>
+                    <option value="+86">&#127464;&#127475; +86</option>
+                    <option value="+65">&#127480;&#127468; +65</option>
+                    <option value="+971">&#127462;&#127466; +971</option>
+                    <option value="+92">&#127477;&#127472; +92</option>
+                    <option value="+977">&#127475;&#127477; +977</option>
+                    <option value="+94">&#127473;&#127472; +94</option>
+                    <option value="+27">&#127487;&#127462; +27</option>
+                    <option value="+64">&#127475;&#127487; +64</option>
+                  </select>
+                  <input
+                    type="tel"
+                    value={enrollForm.contact}
+                    onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))}
+                    placeholder="Phone number"
+                    className="flex-1 px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-semibold text-foreground">Course <span className="text-destructive">*</span></label>
+                  <select
+                    value={enrollForm.courseName}
+                    onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))}
+                    className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                  >
+                    <option value="">Select</option>
+                    <option value="100 Hour Yoga Teacher Training Course in Bali">100 Hr YTTC</option>
+                    <option value="200 Hour Yoga Teacher Training Course in Bali">200 Hr YTTC</option>
+                    <option value="300 Hour Yoga Teacher Training Course in Bali">300 Hr YTTC</option>
+                  </select>
+                </div>
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-semibold text-foreground">Date <span className="text-destructive">*</span></label>
+                  <select
+                    value={enrollForm.courseDate}
+                    onChange={(e) => setEnrollForm(prev => ({ ...prev, courseDate: e.target.value }))}
+                    className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                  >
+                    <option value="">Choose</option>
+                    {courseDates.map((date) => (
+                      <option key={date} value={date}>{date}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-semibold text-foreground">Room <span className="text-destructive">*</span></label>
+                  <select
+                    value={enrollForm.accommodation}
+                    onChange={(e) => setEnrollForm(prev => ({ ...prev, accommodation: e.target.value }))}
+                    className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                  >
+                    <option value="">Select</option>
+                    <option value="Private Room">Private Room</option>
+                    <option value="Shared Room">Shared Room</option>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                  </select>
+                </div>
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-semibold text-foreground">Gender <span className="text-destructive">*</span></label>
+                  <select
+                    value={enrollForm.gender}
+                    onChange={(e) => setEnrollForm(prev => ({ ...prev, gender: e.target.value }))}
+                    className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                  >
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+              </div>
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">Country <span className="text-destructive">*</span></label>
+                <input
+                  type="text"
+                  value={enrollForm.country}
+                  onChange={(e) => setEnrollForm(prev => ({ ...prev, country: e.target.value }))}
+                  placeholder="Your country"
+                  className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                />
+              </div>
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">How did you hear about us? <span className="text-destructive">*</span></label>
+                <select
+                  value={enrollForm.source}
+                  onChange={(e) => setEnrollForm(prev => ({ ...prev, source: e.target.value }))}
+                  className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                >
+                  <option value="">Choose</option>
+                  <option value="Google Search">Google Search</option>
+                  <option value="Social Media">Social Media</option>
+                  <option value="Recommendation">Recommendation</option>
+                  <option value="Any other source">Any other source</option>
+                </select>
+              </div>
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">Message <span className="text-muted-foreground font-normal">(optional)</span></label>
+                <textarea
+                  value={enrollForm.message}
+                  onChange={(e) => setEnrollForm(prev => ({ ...prev, message: e.target.value }))}
+                  placeholder="Any questions or additional info..."
+                  rows={3}
+                  className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none text-sm"
+                />
+              </div>
+            </div>
+
+            {/* Sticky Footer */}
+            <div className="px-6 sm:px-8 py-4 border-t border-border bg-background">
+              <Button
+                className="w-full h-12 text-base font-bold"
+                size="lg"
+                disabled={!isEnrollFormComplete || isSubmittingEnroll}
+                onClick={handleEnrollSubmit}
+              >
+                {isSubmittingEnroll ? "Submitting..." : "Submit Enrollment"}
+              </Button>
+              <p className="text-center text-xs text-muted-foreground mt-2">
+                &#128274; Your information is secure and never shared
+              </p>
+            </div>
+          </DialogContent>
+        </Dialog>
+
+
 
         {/* Scroll to Top Button */}
         {
           showScrollTop && (
             <button
               onClick={scrollToTop}
-              className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-primary text-primary-foreground rounded-full shadow-elevated hover:bg-primary/90 transition-all duration-300 flex items-center justify-center animate-fade-in hover:scale-110"
+              className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-primary text-primary-foreground rounded-full shadow-elevated hover:bg-primary/90 transition-all duration-300 hidden sm:flex items-center justify-center animate-fade-in hover:scale-110"
               aria-label="Scroll to top"
             >
               <ChevronDown className="w-6 h-6 rotate-180" />

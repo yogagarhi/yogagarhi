@@ -90,7 +90,7 @@ export default function SundaySchedule() {
     return (
         <div className="bg-[#FBFBF8] min-h-screen">
             {/* Hero Section */}
-            <section className="relative pt-32 pb-20 overflow-hidden">
+            <section className="relative pt-8 pb-20 overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">

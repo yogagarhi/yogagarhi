@@ -14,7 +14,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     return (
         <div className="min-h-screen flex flex-col">
             {!hideHeader && <Header />}
-            <main className="flex-grow">{children}</main>
+            <main className={`flex-grow${!hideHeader ? ' pt-[132px] sm:pt-[104px]' : ''}`}>{children}</main>
             {!hideFooter && (
                 <>
                     <PartnershipsSection />

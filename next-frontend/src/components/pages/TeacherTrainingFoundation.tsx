@@ -203,7 +203,7 @@ export default function TeacherTrainingFoundation() {
     return (
         <Layout>
             {/* Hero Section */}
-            <section className="relative pt-20 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-background">
+            <section className="relative pt-4 pb-20 lg:pt-8 lg:pb-32 overflow-hidden bg-background">
                 {/* Spiritual Pattern Background */}
                 <div className="absolute inset-0 opacity-10 pointer-events-none pattern-lotus" />
 
