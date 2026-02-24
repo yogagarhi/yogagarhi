@@ -952,7 +952,7 @@ export default function Course100Hour() {
 
       <Layout>
         {/* ===== HERO SECTION ===== */}
-        <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-32 sm:pt-36 md:pt-48 pb-20">
+        <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-8 sm:pt-12 md:pt-16 pb-20">
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -4577,216 +4577,107 @@ This is not a transactional relationship — it is a lifelong connection.`}
         </section>
 
         {/* ===== ENROLLMENT FORM DIALOG ===== */}
+        {/* ===== ENROLLMENT FORM DIALOG ===== */}
         <Dialog open={showEnrollDialog} onOpenChange={setShowEnrollDialog}>
-          <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
-            <DialogHeader>
-              <DialogTitle className="font-heading text-2xl">Enroll Now</DialogTitle>
-              <DialogDescription className="text-sm text-muted-foreground">
-                Fill in your details to begin your yoga journey
-              </DialogDescription>
-            </DialogHeader>
-
-            <div className="space-y-4 mt-4">
-              {/* Name */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Name <span className="text-destructive">*</span>
-                </label>
-                <input
-                  type="text"
-                  value={enrollForm.name}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, name: e.target.value }))}
-                  placeholder="Enter your full name"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                />
+          <DialogContent className="sm:max-w-lg p-0 gap-0">
+            {/* Compact Header */}
+            <div className="bg-gradient-to-br from-primary to-primary/80 px-5 pt-4 pb-4 sm:px-6 text-primary-foreground rounded-t-xl">
+              <div className="pr-10">
+                <DialogTitle className="font-heading text-xl font-bold text-primary-foreground">Begin Your Yoga Journey</DialogTitle>
+                <p className="text-primary-foreground/80 text-xs mt-0.5">Fill in your details and we will be in touch shortly</p>
               </div>
+            </div>
 
-              {/* Email */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Email <span className="text-destructive">*</span>
-                </label>
-                <input
-                  type="email"
-                  value={enrollForm.email}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, email: e.target.value }))}
-                  placeholder="you@example.com"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                />
+            {/* Scrollable Form Body */}
+            <div className="px-5 sm:px-6 py-4 space-y-3 overflow-y-auto max-h-[72vh]">
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">Name <span className="text-destructive">*</span></label>
+                <input type="text" value={enrollForm.name} onChange={(e) => setEnrollForm(prev => ({ ...prev, name: e.target.value }))} placeholder="Enter your full name" className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
               </div>
-
-              {/* Contact/WhatsApp */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Contact No./WhatsApp No. <span className="text-destructive">*</span>
-                </label>
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">Email <span className="text-destructive">*</span></label>
+                <input type="email" value={enrollForm.email} onChange={(e) => setEnrollForm(prev => ({ ...prev, email: e.target.value }))} placeholder="you@example.com" className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
+              </div>
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">Contact / WhatsApp No. <span className="text-destructive">*</span></label>
                 <div className="flex gap-2">
-                  <select
-                    value={enrollForm.countryCode}
-                    onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))}
-                    className="w-28 px-2 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"
-                  >
-                    <option value="+1">🇺🇸 +1</option>
-                    <option value="+44">🇬🇧 +44</option>
-                    <option value="+91">🇮🇳 +91</option>
-                    <option value="+61">🇦🇺 +61</option>
-                    <option value="+49">🇩🇪 +49</option>
-                    <option value="+33">🇫🇷 +33</option>
-                    <option value="+39">🇮🇹 +39</option>
-                    <option value="+34">🇪🇸 +34</option>
-                    <option value="+31">🇳🇱 +31</option>
-                    <option value="+46">🇸🇪 +46</option>
-                    <option value="+47">🇳🇴 +47</option>
-                    <option value="+45">🇩🇰 +45</option>
-                    <option value="+358">🇫🇮 +358</option>
-                    <option value="+41">🇨🇭 +41</option>
-                    <option value="+43">🇦🇹 +43</option>
-                    <option value="+32">🇧🇪 +32</option>
-                    <option value="+351">🇵🇹 +351</option>
-                    <option value="+48">🇵🇱 +48</option>
-                    <option value="+7">🇷🇺 +7</option>
-                    <option value="+380">🇺🇦 +380</option>
-                    <option value="+81">🇯🇵 +81</option>
-                    <option value="+82">🇰🇷 +82</option>
-                    <option value="+86">🇨🇳 +86</option>
-                    <option value="+852">🇭🇰 +852</option>
-                    <option value="+65">🇸🇬 +65</option>
-                    <option value="+60">🇲🇾 +60</option>
-                    <option value="+62">🇮🇩 +62</option>
-                    <option value="+66">🇹🇭 +66</option>
-                    <option value="+84">🇻🇳 +84</option>
-                    <option value="+63">🇵🇭 +63</option>
-                    <option value="+92">🇵🇰 +92</option>
-                    <option value="+880">🇧🇩 +880</option>
-                    <option value="+94">🇱🇰 +94</option>
-                    <option value="+977">🇳🇵 +977</option>
-                    <option value="+971">🇦🇪 +971</option>
-                    <option value="+966">🇸🇦 +966</option>
-                    <option value="+972">🇮🇱 +972</option>
-                    <option value="+90">🇹🇷 +90</option>
-                    <option value="+20">🇪🇬 +20</option>
-                    <option value="+27">🇿🇦 +27</option>
-                    <option value="+234">🇳🇬 +234</option>
-                    <option value="+254">🇰🇪 +254</option>
-                    <option value="+55">🇧🇷 +55</option>
-                    <option value="+52">🇲🇽 +52</option>
-                    <option value="+54">🇦🇷 +54</option>
-                    <option value="+57">🇨🇴 +57</option>
-                    <option value="+56">🇨🇱 +56</option>
-                    <option value="+51">🇵🇪 +51</option>
-                    <option value="+64">🇳🇿 +64</option>
-                    <option value="+353">🇮🇪 +353</option>
-                    <option value="+30">🇬🇷 +30</option>
-                    <option value="+36">🇭🇺 +36</option>
-                    <option value="+420">🇨🇿 +420</option>
-                    <option value="+40">🇷🇴 +40</option>
-                    <option value="+375">🇧🇾 +375</option>
-                    <option value="+370">🇱🇹 +370</option>
-                    <option value="+371">🇱🇻 +371</option>
-                    <option value="+372">🇪🇪 +372</option>
+                  <select value={enrollForm.countryCode} onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))} className="w-24 px-2 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
+                    <option value="+1">US +1</option>
+                    <option value="+44">UK +44</option>
+                    <option value="+91">IN +91</option>
+                    <option value="+61">AU +61</option>
+                    <option value="+49">DE +49</option>
+                    <option value="+33">FR +33</option>
+                    <option value="+39">IT +39</option>
+                    <option value="+34">ES +34</option>
+                    <option value="+31">NL +31</option>
+                    <option value="+46">SE +46</option>
+                    <option value="+47">NO +47</option>
+                    <option value="+45">DK +45</option>
+                    <option value="+41">CH +41</option>
+                    <option value="+43">AT +43</option>
+                    <option value="+32">BE +32</option>
+                    <option value="+55">BR +55</option>
+                    <option value="+52">MX +52</option>
+                    <option value="+81">JP +81</option>
+                    <option value="+82">KR +82</option>
+                    <option value="+86">CN +86</option>
+                    <option value="+65">SG +65</option>
+                    <option value="+971">AE +971</option>
+                    <option value="+92">PK +92</option>
+                    <option value="+977">NP +977</option>
+                    <option value="+94">LK +94</option>
+                    <option value="+27">ZA +27</option>
+                    <option value="+64">NZ +64</option>
                   </select>
-                  <input
-                    type="tel"
-                    value={enrollForm.contact}
-                    onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))}
-                    placeholder="Phone number"
-                    className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  />
+                  <input type="tel" value={enrollForm.contact} onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))} placeholder="Phone number" className="flex-1 px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
                 </div>
               </div>
-
-              {/* Course Name */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Course Name <span className="text-destructive">*</span>
-                </label>
-                <select
-                  value={enrollForm.courseName}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                >
-                  <option value="">Choose Your Yoga Course</option>
-                  <option value="100 Hour Yoga Teacher Training Course in Bali">100 Hour Yoga Teacher Training Course in Bali</option>
-                  <option value="200 Hour Yoga Teacher Training Course in Bali">200 Hour Yoga Teacher Training Course in Bali</option>
-                  <option value="300 Hour Yoga Teacher Training Course in Bali">300 Hour Yoga Teacher Training Course in Bali</option>
-                </select>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-semibold text-foreground">Course <span className="text-destructive">*</span></label>
+                  <select value={enrollForm.courseName} onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
+                    <option value="">Select</option>
+                    <option value="100 Hour Yoga Teacher Training Course in Bali">100 Hr YTTC</option>
+                    <option value="200 Hour Yoga Teacher Training Course in Bali">200 Hr YTTC</option>
+                    <option value="300 Hour Yoga Teacher Training Course in Bali">300 Hr YTTC</option>
+                  </select>
+                </div>
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-semibold text-foreground">Date <span className="text-destructive">*</span></label>
+                  <select value={enrollForm.courseDate} onChange={(e) => setEnrollForm(prev => ({ ...prev, courseDate: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
+                    <option value="">Choose</option>
+                    {courseDates.map((date) => (<option key={date} value={date}>{date}</option>))}
+                  </select>
+                </div>
               </div>
-
-              {/* Course Date */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Course Date <span className="text-destructive">*</span>
-                </label>
-                <select
-                  value={enrollForm.courseDate}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, courseDate: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                >
-                  <option value="">Choose...</option>
-                  {courseDates.map((date) => (
-                    <option key={date} value={date}>{date}</option>
-                  ))}
-                </select>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-semibold text-foreground">Room <span className="text-destructive">*</span></label>
+                  <select value={enrollForm.accommodation} onChange={(e) => setEnrollForm(prev => ({ ...prev, accommodation: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
+                    <option value="">Select</option>
+                    <option value="Private Room">Private Room</option>
+                    <option value="Shared Room">Shared Room</option>
+                    <option value="Deluxe Room">Deluxe Room</option>
+                  </select>
+                </div>
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-semibold text-foreground">Gender <span className="text-destructive">*</span></label>
+                  <select value={enrollForm.gender} onChange={(e) => setEnrollForm(prev => ({ ...prev, gender: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
+                    <option value="">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
               </div>
-
-              {/* Accommodation */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Accommodation <span className="text-destructive">*</span>
-                </label>
-                <select
-                  value={enrollForm.accommodation}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, accommodation: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                >
-                  <option value="">Select Accommodation</option>
-                  <option value="Private Room">Private Room</option>
-                  <option value="Shared Room">Shared Room</option>
-                  <option value="Deluxe Room">Deluxe Room</option>
-                </select>
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">Country <span className="text-destructive">*</span></label>
+                <input type="text" value={enrollForm.country} onChange={(e) => setEnrollForm(prev => ({ ...prev, country: e.target.value }))} placeholder="Your country" className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
               </div>
-
-              {/* Gender */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Gender <span className="text-destructive">*</span>
-                </label>
-                <select
-                  value={enrollForm.gender}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, gender: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                >
-                  <option value="">Select Gender</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Others">Others</option>
-                </select>
-              </div>
-
-              {/* Country */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Country <span className="text-destructive">*</span>
-                </label>
-                <input
-                  type="text"
-                  value={enrollForm.country}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, country: e.target.value }))}
-                  placeholder="Enter your country"
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                />
-              </div>
-
-              {/* Source */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  From where you get to know about us? <span className="text-destructive">*</span>
-                </label>
-                <select
-                  value={enrollForm.source}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, source: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
-                >
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">How did you hear about us? <span className="text-destructive">*</span></label>
+                <select value={enrollForm.source} onChange={(e) => setEnrollForm(prev => ({ ...prev, source: e.target.value }))} className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
                   <option value="">Choose</option>
                   <option value="Google Search">Google Search</option>
                   <option value="Social Media">Social Media</option>
@@ -4794,30 +4685,19 @@ This is not a transactional relationship — it is a lifelong connection.`}
                   <option value="Any other source">Any other source</option>
                 </select>
               </div>
-
-              {/* Message */}
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Message
-                </label>
-                <textarea
-                  value={enrollForm.message}
-                  onChange={(e) => setEnrollForm(prev => ({ ...prev, message: e.target.value }))}
-                  placeholder="Any additional message or questions..."
-                  rows={3}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
-                />
+              <div className="space-y-1.5">
+                <label className="block text-sm font-semibold text-foreground">Message <span className="text-muted-foreground font-normal">(optional)</span></label>
+                <textarea value={enrollForm.message} onChange={(e) => setEnrollForm(prev => ({ ...prev, message: e.target.value }))} placeholder="Any questions or additional info..." rows={3} className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none text-sm" />
               </div>
             </div>
 
-            <Button
-              className="w-full mt-6"
-              size="lg"
-              disabled={!isEnrollFormComplete || isSubmittingEnroll}
-              onClick={handleEnrollSubmit}
-            >
-              {isSubmittingEnroll ? "Submitting..." : "Submit Enrollment"}
-            </Button>
+            {/* Sticky Footer */}
+            <div className="px-6 sm:px-8 py-4 border-t border-border bg-background rounded-b-2xl sm:rounded-b-xl">
+              <Button className="w-full h-12 text-base font-bold" size="lg" disabled={!isEnrollFormComplete || isSubmittingEnroll} onClick={handleEnrollSubmit}>
+                {isSubmittingEnroll ? "Submitting..." : "Submit Enrollment"}
+              </Button>
+              <p className="text-center text-xs text-muted-foreground mt-2">Your information is secure and never shared</p>
+            </div>
           </DialogContent>
         </Dialog>
 

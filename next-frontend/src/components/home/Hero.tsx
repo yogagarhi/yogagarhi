@@ -11,7 +11,7 @@ export default function Hero() {
   const { setShowYogicEnergy } = useYogicEnergy();
   const { openBooking } = useBooking();
   return (
-    <section className="relative min-h-[90vh] flex items-start justify-center overflow-hidden pt-32 sm:pt-36 md:pt-48 pb-20">
+    <section className="relative min-h-[90vh] flex items-start justify-center overflow-hidden pt-8 sm:pt-12 md:pt-16 pb-20">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
