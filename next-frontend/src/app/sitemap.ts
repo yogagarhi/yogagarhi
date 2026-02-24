@@ -62,6 +62,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'yearly',
             priority: 0.5,
         },
+        {
+            url: 'https://yogagarhi.com/teacher-training-foundation',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+        },
+        {
+            url: 'https://yogagarhi.com/yogic-energy',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
     ]
 }
 

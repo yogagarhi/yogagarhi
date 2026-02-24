@@ -8,20 +8,21 @@ import PartnershipsSection from "./home/PartnershipsSection"
 
 export default function MainLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
-    const isLandingPage = pathname === "/pre-yttc-prep";
+    const hideHeader = ["/pre-yttc-prep", "/teacher-training-foundation", "/yogic-energy"].includes(pathname);
+    const hideFooter = ["/pre-yttc-prep", "/yogic-energy"].includes(pathname);
 
     return (
         <div className="min-h-screen flex flex-col">
-            {!isLandingPage && <Header />}
+            {!hideHeader && <Header />}
             <main className="flex-grow">{children}</main>
-            {!isLandingPage && (
+            {!hideFooter && (
                 <>
                     <PartnershipsSection />
                     <Footer />
                     <EarlyBirdPopup />
-                    <StickyContactButton />
+                    {!hideHeader && <StickyContactButton />}
                 </>
             )}
         </div>
-    )
+    );
 }

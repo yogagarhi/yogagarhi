@@ -323,15 +323,22 @@ export default function CourseDetail() {
             </div>
 
             {/* Sunday Schedule CTA Button */}
-            <div className="flex justify-center mt-12">
+            <div className="flex flex-col items-center gap-6 mt-12">
               <Button
                 variant="default"
                 size="lg"
                 className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                onClick={() => window.location.href = '/sunday-schedule'}
+                onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
               >
-                Explore Joyful Sunday ☀️
+                Claim $450 Bali Explorer Gift
               </Button>
+
+              {/* Special Offer Box */}
+              <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
+                <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
+                  Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>

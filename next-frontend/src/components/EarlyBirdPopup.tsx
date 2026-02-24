@@ -78,13 +78,13 @@ const EarlyBirdPopup = () => {
             <div className="relative -mx-6 my-2">
               <div className="bg-primary py-2 px-4 transform -rotate-2">
                 <span className="text-primary-foreground font-heading text-lg font-bold">
-                  March to July batches
+                  April to July batches
                 </span>
               </div>
             </div>
 
             <p className="text-white font-heading text-lg font-semibold">
-              Get 150 USD off
+              Get 250 USD off
             </p>
 
             {/* Decorative line */}

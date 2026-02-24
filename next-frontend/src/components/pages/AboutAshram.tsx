@@ -519,7 +519,7 @@ export default function AboutAshram() {
                   >
                     <Link href="/200-hour-yoga-teacher-training-in-bali#prakriti-section">
                       <Sparkles className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-                      Reveal Your Yogic Energy
+                      Reveal Your Unique Yogic Energy
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
