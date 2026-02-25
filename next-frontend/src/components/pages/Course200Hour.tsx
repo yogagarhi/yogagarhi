@@ -1,4 +1,4 @@
-﻿"use client";
+﻿﻿"use client";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -237,11 +237,11 @@ const whatSetsApart = [
   },
   {
     title: "The Shiv-Shakti Sadhana",
-    description: "Beyond asana and pranayama, students are introduced to the subtle practices of Shiv-Shakti Sadhana â€” awakening the inner masculine and feminine energies that govern transformation.",
+    description: "Beyond asana and pranayama, students are introduced to the subtle practices of Shiv-Shakti Sadhana — awakening the inner masculine and feminine energies that govern transformation.",
   },
   {
     title: "Beyond the Certification Mindset",
-    description: "Many come for a certificate. We prepare you for a calling. The certificate is a formality. The transformation is the reality. Our graduates don't just teach yoga â€” they live it.",
+    description: "Many come for a certificate. We prepare you for a calling. The certificate is a formality. The transformation is the reality. Our graduates don't just teach yoga — they live it.",
   },
 ];
 
@@ -461,7 +461,7 @@ const workshops = [
 const excursions = [
   {
     title: "Balinese Dance Performance",
-    description: "Witness the ancient art of Balinese dance â€” a mesmerizing display of grace, storytelling, and spiritual devotion passed down through generations.",
+    description: "Witness the ancient art of Balinese dance — a mesmerizing display of grace, storytelling, and spiritual devotion passed down through generations.",
     image: apartKecakDance,
     icon: Star
   },
@@ -995,7 +995,7 @@ export default function Course200Hour() {
     <>
       <Layout>
         {/* ===== HERO SECTION ===== */}
-        <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-8 sm:pt-12 md:pt-16 pb-20">
+        <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32 pb-20">
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -1111,7 +1111,7 @@ export default function Course200Hour() {
                   {/* Special Offer Box */}
                   <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                     <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                      Book your Aprilâ€“July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities â€” <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                      Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
                     </p>
                   </div>
                 </div>
@@ -1294,11 +1294,11 @@ export default function Course200Hour() {
 
                   <ul className="space-y-4">
                     {[
-                      <>You want to <span className="font-semibold text-foreground">deepen your yoga practice</span> â€” physically, mentally, spiritually</>,
+                      <>You want to <span className="font-semibold text-foreground">deepen your yoga practice</span> — physically, mentally, spiritually</>,
                       <>You feel called to <span className="font-semibold text-foreground">teach yoga with confidence and clarity</span></>,
                       <>You are seeking <span className="font-semibold text-foreground">healing, clarity, and a fresh start</span> in the heart of Bali</>,
                       <>You want to learn yoga <span className="font-semibold text-foreground">authentically, not commercially</span></>,
-                      <>Youâ€™re not sure yet if youâ€™ll teach â€” but you want a <span className="font-semibold text-foreground">strong foundation</span></>,
+                      <>You're not sure yet if you'll teach — but you want a <span className="font-semibold text-foreground">strong foundation</span></>,
                       <>You value <span className="font-semibold text-foreground">tradition, self-discipline, and conscious living</span></>
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-sm md:text-base text-muted-foreground">
@@ -1322,9 +1322,9 @@ export default function Course200Hour() {
                   <div className="text-sm text-muted-foreground leading-relaxed mb-4 space-y-3">
                     <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
                     <p className="font-medium text-foreground italic">
-                      Itâ€™s about <span className="text-primary not-italic">feeling safe</span>, itâ€™s about <span className="text-primary not-italic">feeling guided</span>, and itâ€™s about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
+                      It's about <span className="text-primary not-italic">feeling safe</span>, it's about <span className="text-primary not-italic">feeling guided</span>, and it's about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
                     </p>
-                    <p>Thatâ€™s why we keep things simple and transparent.</p>
+                    <p>That's why we keep things simple and transparent.</p>
                   </div>
 
                   <div className="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 shadow-inner">
@@ -1448,9 +1448,9 @@ export default function Course200Hour() {
                     <div className="text-muted-foreground leading-relaxed space-y-4">
                       <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
                       <p className="text-lg font-medium text-foreground italic">
-                        Itâ€™s about <span className="text-primary not-italic">feeling safe</span>, itâ€™s about <span className="text-primary not-italic">feeling guided</span>, and itâ€™s about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
+                        It's about <span className="text-primary not-italic">feeling safe</span>, it's about <span className="text-primary not-italic">feeling guided</span>, and it's about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
                       </p>
-                      <p className="font-semibold text-accent uppercase tracking-wider text-xs">Thatâ€™s why we keep things simple and transparent.</p>
+                      <p className="font-semibold text-accent uppercase tracking-wider text-xs">That's why we keep things simple and transparent.</p>
                     </div>
 
                     <div className="mt-8 flex flex-col md:flex-row items-start md:items-center gap-6 p-5 rounded-2xl bg-orange-50/50 border border-orange-200/50 backdrop-blur-sm">
@@ -1503,7 +1503,7 @@ export default function Course200Hour() {
         </section>
 
 
-        {/* ===== WHAT YOUâ€™LL CARRY HOME - UNIQUE COMPACT DESIGN ===== */}
+        {/* ===== WHAT YOU'LL CARRY HOME - UNIQUE COMPACT DESIGN ===== */}
         <section className="py-16 bg-muted/30 relative overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
@@ -1514,7 +1514,7 @@ export default function Course200Hour() {
                   <span className="text-[10px] font-bold tracking-widest uppercase text-primary">The Takeaway</span>
                 </div>
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
-                  What Youâ€™ll <br />
+                  What You'll <br />
                   <span className="text-primary italic">Carry Home</span>
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
@@ -1603,7 +1603,7 @@ export default function Course200Hour() {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
-              Everything you need to live, learn, and grow â€” fully supported
+              Everything you need to live, learn, and grow — fully supported
             </p>
 
             {/* Horizontal Scrollable Flip Cards */}
@@ -1679,7 +1679,7 @@ export default function Course200Hour() {
             <div className="max-w-4xl mx-auto text-center">
               {/* Subtitle */}
               <p className="text-white/90 text-lg mb-2 font-medium">
-                "YOGAGARHI â€“ 200 Hour YTTC"
+                "YOGAGARHI – 200 Hour YTTC"
               </p>
 
               {/* Main Title */}
@@ -1829,7 +1829,7 @@ export default function Course200Hour() {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
-              Hereâ€™s what one student felt after taking that step.
+              Here's what one student felt after taking that step.
             </p>
 
             <div className="max-w-2xl mx-auto mb-12">
@@ -2178,7 +2178,7 @@ export default function Course200Hour() {
                 {/* Special Offer Box */}
                 <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                   <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    Book your Aprilâ€“July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities â€” <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                    Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
                   </p>
                 </div>
               </div>
@@ -2210,7 +2210,7 @@ export default function Course200Hour() {
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                    Training: 1st â€“ 24th of each month
+                    Training: 1st – 24th of each month
                   </h3>
                   <p className="text-sm text-muted-foreground">
                     Immersive 24-day program every month in Bali
@@ -2250,7 +2250,7 @@ export default function Course200Hour() {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Enhance your training with these exclusive bonus workshops â€” all included free
+              Enhance your training with these exclusive bonus workshops — all included free
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -4050,7 +4050,7 @@ export default function Course200Hour() {
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-20">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Sachin Jiâ€™s Research on Personalized Yoga and Prakriti
+                Sachin Ji's Research on Personalized Yoga and Prakriti
               </h2>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />
@@ -4067,7 +4067,7 @@ export default function Course200Hour() {
               {[
                 {
                   title: "The Core Question",
-                  text: <>During our Lead Teacherâ€™s <strong className="text-foreground font-bold">Master Yoga studies</strong>, one question became impossible to ignore: Why does the same yoga practice calm some people, but leave others feeling <strong className="text-foreground font-bold">tired, restless, or mentally disturbed</strong>?</>,
+                  text: <>During our Lead Teacher's <strong className="text-foreground font-bold">Master Yoga studies</strong>, one question became impossible to ignore: Why does the same yoga practice calm some people, but leave others feeling <strong className="text-foreground font-bold">tired, restless, or mentally disturbed</strong>?</>,
                   icon: Brain,
                   color: "bg-amber-500/10 text-amber-600 border-amber-500/20"
                 },
@@ -4090,8 +4090,8 @@ export default function Course200Hour() {
                   color: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20"
                 },
                 {
-                  title: "Shivâ€“Shakti Sadhana",
-                  text: <>Born from this realization, <strong className="text-foreground font-bold">Shivâ€“Shakti Sadhana</strong> is a balanced approach that harmonizes <strong className="text-foreground font-bold">stability and movement</strong>, awareness and energy. Asana here supports grounding and strength.</>,
+                  title: "Shiv–Shakti Sadhana",
+                  text: <>Born from this realization, <strong className="text-foreground font-bold">Shiv–Shakti Sadhana</strong> is a balanced approach that harmonizes <strong className="text-foreground font-bold">stability and movement</strong>, awareness and energy. Asana here supports grounding and strength.</>,
                   icon: RefreshCw,
                   color: "bg-rose-500/10 text-rose-600 border-rose-500/20"
                 },
@@ -4220,7 +4220,7 @@ export default function Course200Hour() {
                   </a>
                 </Button>
                 <p className="text-sm text-muted-foreground">
-                  <span className="font-medium text-foreground">Open 24 hours</span> â€¢ Gianyar, Bali
+                  <span className="font-medium text-foreground">Open 24 hours</span> • Gianyar, Bali
                 </p>
               </div>
             </div>
@@ -4623,8 +4623,8 @@ export default function Course200Hour() {
                   >
                     <option value="">Select</option>
                     <option value="Private Room">Private Room</option>
-                    <option value="Shared Room">Shared Room</option>
-                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Double Sharing">Double Sharing</option>
+                    <option value="Triple Sharing">Triple Sharing</option>
                   </select>
                 </div>
                 <div className="space-y-1.5">

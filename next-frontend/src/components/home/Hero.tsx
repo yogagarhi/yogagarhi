@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { Button } from "@/components/ui/button";
 import { Clock, Sparkles } from "lucide-react";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
@@ -11,7 +11,7 @@ export default function Hero() {
   const { setShowYogicEnergy } = useYogicEnergy();
   const { openBooking } = useBooking();
   return (
-    <section className="relative min-h-[90vh] flex items-start justify-center overflow-hidden pt-8 sm:pt-12 md:pt-16 pb-20">
+    <section className="relative min-h-[90vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32 pb-20">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -144,7 +144,7 @@ export default function Hero() {
             {/* Special Offer Box */}
             <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
               <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
               </p>
             </div>
           </div>

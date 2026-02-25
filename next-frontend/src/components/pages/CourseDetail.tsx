@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -336,7 +336,7 @@ export default function CourseDetail() {
               {/* Special Offer Box */}
               <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                 <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                  Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                  Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
                 </p>
               </div>
             </div>
