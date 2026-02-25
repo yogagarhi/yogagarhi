@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -952,7 +952,7 @@ export default function Course100HourRishikesh() {
 
       <Layout>
         {/* ===== HERO SECTION ===== */}
-        <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-8 sm:pt-12 md:pt-16 pb-20">
+        <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32 pb-20">
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -1068,7 +1068,7 @@ export default function Course100HourRishikesh() {
                   {/* Special Offer Box */}
                   <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                     <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                      Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                      Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
                     </p>
                   </div>
                 </div>
@@ -2138,7 +2138,7 @@ export default function Course100HourRishikesh() {
                 {/* Special Offer Box */}
                 <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                   <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    Book your April–July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities — <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                    Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
                   </p>
                 </div>
               </div>
@@ -4652,8 +4652,8 @@ This is not a transactional relationship — it is a lifelong connection.`}
                   <select value={enrollForm.accommodation} onChange={(e) => setEnrollForm(prev => ({ ...prev, accommodation: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
                     <option value="">Select</option>
                     <option value="Private Room">Private Room</option>
-                    <option value="Shared Room">Shared Room</option>
-                    <option value="Deluxe Room">Deluxe Room</option>
+                    <option value="Double Sharing">Double Sharing</option>
+                    <option value="Triple Sharing">Triple Sharing</option>
                   </select>
                 </div>
                 <div className="space-y-1.5">
