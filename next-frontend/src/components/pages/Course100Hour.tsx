@@ -804,7 +804,7 @@ export default function Course100Hour() {
       await submitToFormSubmit({
         name: manualForm.name,
         email: manualForm.email,
-        _subject: "New Free Manual Request",
+        _subject: "New Free 100-Hour Manual Request",
         _next: `${window.location.origin}/thank-you?type=manual`,
         _autoresponder: "Namaste! Your free manual is being sent to your email. We hope it helps your practice!"
       });
