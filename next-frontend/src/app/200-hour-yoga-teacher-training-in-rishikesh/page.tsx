@@ -28,7 +28,7 @@ export function generateMetadata(): Metadata {
             "yoga teacher training rishikesh"
         ],
         alternates: {
-            canonical: url,
+            canonical: "/200-hour-yoga-teacher-training-in-rishikesh",
         },
         robots: {
             index: true,
@@ -41,7 +41,7 @@ export function generateMetadata(): Metadata {
             type: "website",
             images: [
                 {
-                    url: "https://www.yogagarhi.com/og-image.jpg",
+                    url: "https://yogagarhi.com/og-image.jpg",
                     width: 1200,
                     height: 630,
                     alt: title,
@@ -78,7 +78,7 @@ export default function Page() {
         "provider": {
             "@type": "Organization",
             "name": "YogaGarhi",
-            "url": "https://www.yogagarhi.com"
+            "url": "https://yogagarhi.com"
         },
         "audience": {
             "@type": "Audience",
@@ -121,7 +121,7 @@ export default function Page() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://www.yogagarhi.com"
+                "item": "https://yogagarhi.com"
             },
             {
                 "@type": "ListItem",

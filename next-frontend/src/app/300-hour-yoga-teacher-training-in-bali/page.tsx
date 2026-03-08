@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: title,
     description: description,
     alternates: {
-      canonical: "https://yogagarhi.com/300-hour-yoga-teacher-training-in-bali",
+      canonical: "/300-hour-yoga-teacher-training-in-bali",
     },
     openGraph: {
       title: title,

@@ -1284,7 +1284,7 @@ export default function Course300Hour() {
                   <div className="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 shadow-inner">
                     <div className="flex items-center gap-2 text-orange-700 font-bold text-sm mb-1 uppercase tracking-tight">
                       <Calendar className="w-4 h-4" />
-                      Next Batch: 7 & 8 March
+                      Next Batch: 14th & 15th March
                     </div>
                     <div className="flex items-center gap-2 text-orange-600/80 text-xs font-semibold mb-2">
                       <Clock className="w-4 h-4" />
@@ -1410,7 +1410,7 @@ export default function Course300Hour() {
                       <div className="flex-1 space-y-2">
                         <div className="flex items-center gap-3 text-orange-800 font-extrabold text-lg leading-none">
                           <Calendar className="w-5 h-5 text-orange-600" />
-                          Next Batch: 7 & 8 March
+                          Next Batch: 14th & 15th March
                         </div>
                         <div className="flex items-center gap-3 text-orange-700 font-semibold text-sm">
                           <Clock className="w-4 h-4 text-orange-500" />

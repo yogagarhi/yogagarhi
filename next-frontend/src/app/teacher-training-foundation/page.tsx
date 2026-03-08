@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         "YogaGarhi masterclass"
     ],
     alternates: {
-        canonical: "https://yogagarhi.com/teacher-training-foundation",
+        canonical: "/teacher-training-foundation",
     },
     openGraph: {
         title: "2-Day Yoga Teacher Foundation | Start Your Career - YogaGarhi",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         type: "website",
         images: [
             {
-                url: "https://www.yogagarhi.com/og-image.jpg",
+                url: "https://yogagarhi.com/og-image.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Yoga Teacher Foundation",
