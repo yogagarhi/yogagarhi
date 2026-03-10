@@ -1282,7 +1282,7 @@ export default function Course100Hour() {
                     </div>
                     <div className="flex items-center gap-2 text-orange-600/80 text-xs font-semibold mb-2">
                       <Clock className="w-4 h-4" />
-                      10:00 AM CET (German Time)
+                      10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)
                     </div>
                     <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-100 text-red-600 text-[10px] font-bold uppercase animate-pulse border border-red-200">
                       <UsersRound className="w-3 h-3" />
@@ -1408,7 +1408,7 @@ export default function Course100Hour() {
                         </div>
                         <div className="flex items-center gap-3 text-orange-700 font-semibold text-sm">
                           <Clock className="w-4 h-4 text-orange-500" />
-                          10:00 AM CET (German Time)
+                          10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)
                         </div>
                       </div>
                       <div className="flex flex-col items-end gap-3">

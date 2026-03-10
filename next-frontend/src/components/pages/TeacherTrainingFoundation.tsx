@@ -241,7 +241,7 @@ export default function TeacherTrainingFoundation() {
                     <div className="max-w-4xl mx-auto text-center mb-12">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground text-sm font-bold mb-6 shadow-md">
                             <Sparkles className="w-4 h-4 fill-current" />
-                            Next Batch: 14th & 15th March | 10:00 AM CET (German Time)
+                            Next Batch: 14th & 15th March | 10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)
                         </div>
                         <h1 className="font-heading text-3xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 md:mb-6 leading-[1.2] md:leading-[1.1]">
                             Not Sure Which YTTC to Trust? <span className="text-primary italic">Experience It First</span> Free 2-Day Yoga teacher training Foundation
