@@ -24,13 +24,13 @@ export default function ContactPage() {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://yogagarhi.com"
+                                "item": "https://www.yogagarhi.com"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Contact",
-                                "item": "https://yogagarhi.com/contact"
+                                "item": "https://www.yogagarhi.com/contact"
                             }
                         ]
                     })

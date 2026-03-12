@@ -15,7 +15,7 @@ export function generateMetadata(): Metadata {
         "Can we do 100 hour yoga teacher training in Rishikesh? Yes. Join YogaGarhi’s beginner-friendly residential 100 Hour Yoga TTC designed for short stays, deep yogic practice, and authentic learning in Rishikesh, India.";
 
     const url =
-        "https://yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh";
+        "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh";
 
     return {
         title,
@@ -41,7 +41,7 @@ export function generateMetadata(): Metadata {
             type: "website",
             images: [
                 {
-                    url: "https://yogagarhi.com/og-image.jpg",
+                    url: "https://www.yogagarhi.com/og-image.jpg",
                     width: 1200,
                     height: 630,
                     alt: title,
@@ -62,7 +62,7 @@ export function generateMetadata(): Metadata {
 export default function Page() {
     const course = courseData["100-hour-rishikesh"];
     const pageUrl =
-        "https://yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh";
+        "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh";
 
     /* =========================
        COURSE SCHEMA
@@ -78,7 +78,7 @@ export default function Page() {
         "provider": {
             "@type": "Organization",
             "name": "YogaGarhi",
-            "url": "https://yogagarhi.com"
+            "url": "https://www.yogagarhi.com"
         },
         "audience": {
             "@type": "Audience",
@@ -120,7 +120,7 @@ export default function Page() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://yogagarhi.com"
+                "item": "https://www.yogagarhi.com"
             },
             {
                 "@type": "ListItem",

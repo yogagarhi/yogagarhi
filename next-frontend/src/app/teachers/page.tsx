@@ -24,13 +24,13 @@ export default function AboutTeachersPage() {
                                 "@type": "ListItem",
                                 "position": 1,
                                 "name": "Home",
-                                "item": "https://yogagarhi.com"
+                                "item": "https://www.yogagarhi.com"
                             },
                             {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Our Teachers",
-                                "item": "https://yogagarhi.com/teachers"
+                                "item": "https://www.yogagarhi.com/teachers"
                             }
                         ]
                     })

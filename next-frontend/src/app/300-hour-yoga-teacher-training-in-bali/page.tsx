@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: title,
       description: description,
-      url: "https://yogagarhi.com/300-hour-yoga-teacher-training-in-bali",
+      url: "https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-bali",
       type: "website",
       images: [
         {
@@ -42,7 +42,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function Page() {
   const course = courseData["300-hour"];
-  const pageUrl = "https://yogagarhi.com/300-hour-yoga-teacher-training-in-bali";
+  const pageUrl = "https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-bali";
 
   const courseSchema = {
     "@context": "https://schema.org",
@@ -52,7 +52,7 @@ export default function Page() {
     "provider": {
       "@type": "Organization",
       "name": "YogaGarhi",
-      "url": "https://yogagarhi.com"
+      "url": "https://www.yogagarhi.com"
     },
     "hasCourseInstance": {
       "@type": "CourseInstance",
@@ -93,7 +93,7 @@ export default function Page() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://yogagarhi.com"
+        "item": "https://www.yogagarhi.com"
       },
       {
         "@type": "ListItem",

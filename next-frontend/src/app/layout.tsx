@@ -20,7 +20,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://yogagarhi.com'),
+  metadataBase: new URL('https://www.yogagarhi.com'),
   title: {
     default: "YogaGarhi - Yoga Teacher Training Bali",
     template: "%s | YogaGarhi"
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://yogagarhi.com',
+    url: 'https://www.yogagarhi.com',
     siteName: 'YogaGarhi',
     title: 'YogaGarhi - Yoga Teacher Training in Bali, Ubud',
     description: 'Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.',

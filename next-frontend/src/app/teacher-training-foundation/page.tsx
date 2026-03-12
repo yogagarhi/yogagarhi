@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: "2-Day Yoga Teacher Foundation | Start Your Career - YogaGarhi",
         description: "Join YogaGarhi's 2-Day Yoga Teacher Foundation Masterclass. Discover the path to becoming a certified yoga teacher and building a purpose-driven career.",
-        url: "https://yogagarhi.com/teacher-training-foundation",
+        url: "https://www.yogagarhi.com/teacher-training-foundation",
         type: "website",
         images: [
             {
-                url: "https://yogagarhi.com/og-image.jpg",
+                url: "https://www.yogagarhi.com/og-image.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Yoga Teacher Foundation",

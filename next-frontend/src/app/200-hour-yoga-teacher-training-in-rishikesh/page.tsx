@@ -15,7 +15,7 @@ export function generateMetadata(): Metadata {
         "Join YogaGarhi’s 200 Hour Yoga Teacher Training in Rishikesh. A residential RYT 200 Yoga Alliance certified course offering authentic yogic education, asana, pranayama, meditation, philosophy, and teaching methodology in Rishikesh, India.";
 
     const url =
-        "https://yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh";
+        "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh";
 
     return {
         title,
@@ -41,7 +41,7 @@ export function generateMetadata(): Metadata {
             type: "website",
             images: [
                 {
-                    url: "https://yogagarhi.com/og-image.jpg",
+                    url: "https://www.yogagarhi.com/og-image.jpg",
                     width: 1200,
                     height: 630,
                     alt: title,
@@ -62,7 +62,7 @@ export function generateMetadata(): Metadata {
 export default function Page() {
     const course = courseData["200-hour-rishikesh"];
     const pageUrl =
-        "https://yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh";
+        "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh";
 
     /* =========================
        COURSE SCHEMA
@@ -78,7 +78,7 @@ export default function Page() {
         "provider": {
             "@type": "Organization",
             "name": "YogaGarhi",
-            "url": "https://yogagarhi.com"
+            "url": "https://www.yogagarhi.com"
         },
         "audience": {
             "@type": "Audience",
@@ -121,7 +121,7 @@ export default function Page() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://yogagarhi.com"
+                "item": "https://www.yogagarhi.com"
             },
             {
                 "@type": "ListItem",

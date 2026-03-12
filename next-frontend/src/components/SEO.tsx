@@ -11,7 +11,7 @@ interface SEOProps {
   structuredData?: object;
 }
 
-const BASE_URL = 'https://yogagarhi.com';
+const BASE_URL = 'https://www.yogagarhi.com';
 const DEFAULT_IMAGE = `${BASE_URL}/og-image.jpg`;
 const SITE_NAME = 'YogaGarhi';
 
@@ -152,7 +152,7 @@ export const generateCourseSchema = (course: {
   provider: {
     '@type': 'Organization',
     name: 'YogaGarhi',
-    url: 'https://yogagarhi.com',
+    url: 'https://www.yogagarhi.com',
   },
   hasCourseInstance: {
     '@type': 'CourseInstance',
@@ -198,6 +198,6 @@ export const generateBreadcrumbSchema = (items: { name: string; url: string }[])
     '@type': 'ListItem',
     position: index + 1,
     name: item.name,
-    item: `https://yogagarhi.com${item.url}`,
+    item: `https://www.yogagarhi.com${item.url}`,
   })),
 });

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://yogagarhi.com/sitemap.xml',
+        sitemap: 'https://www.yogagarhi.com/sitemap.xml',
     }
 }
