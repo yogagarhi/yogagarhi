@@ -104,6 +104,25 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#0f766e" />
+        {/* Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Yogagarhi",
+              "url": "https://www.yogagarhi.com/",
+              "logo": "https://www.yogagarhi.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdngsqdwbb%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fyogagarhi%2Fassets%2Fabout-yoga-3&w=1920&q=75",
+              "sameAs": [
+                "https://instagram.com/yogagarhi",
+                "https://facebook.com/yogagarhi",
+                "https://youtube.com/@yogagarhi",
+                "https://id.pinterest.com/yogagarhi"
+              ]
+            })
+          }}
+        />
       </head>
       <body className={`${cormorant.variable} ${lato.variable} font-body bg-background text-foreground antialiased scroll-smooth`} suppressHydrationWarning>
         <noscript>
