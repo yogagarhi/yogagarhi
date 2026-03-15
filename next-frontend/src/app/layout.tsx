@@ -123,6 +123,54 @@ export default function RootLayout({
             })
           }}
         />
+        {/* LocalBusiness Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Yogagarhi",
+              "image": "https://www.yogagarhi.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdngsqdwbb%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fyogagarhi%2Fassets%2Fabout-yoga-3&w=1920&q=75",
+              "@id": "https://www.yogagarhi.com/#localbusiness",
+              "url": "https://www.yogagarhi.com/",
+              "telephone": "+91-7895350563",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Ds madangan kaja, Desa petak, Petak kaja, Kec. Gianyar, Kabupaten Gianyar, Bali, Indonesia",
+                "addressLocality": "Bali",
+                "postalCode": "80515",
+                "addressCountry": "ID"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 8.4649127,
+                "longitude": 115.3258379
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+              },
+              "sameAs": [
+                "https://youtube.com/@yogagarhi",
+                "https://in.pinterest.com/yogagarhi",
+                "https://instagram.com/yogagarhi",
+                "https://facebook.com/yogagarhi"
+              ]
+            })
+          }}
+        />
+
       </head>
       <body className={`${cormorant.variable} ${lato.variable} font-body bg-background text-foreground antialiased scroll-smooth`} suppressHydrationWarning>
         <noscript>
