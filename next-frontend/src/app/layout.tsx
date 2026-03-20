@@ -4,6 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 import { Providers } from "@/components/Providers";
 import MainLayout from "@/components/MainLayout";
+import { getCloudinaryUrl } from "@/utils/cloudinary";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -113,7 +114,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Yogagarhi",
               "url": "https://www.yogagarhi.com/",
-              "logo": "https://www.yogagarhi.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdngsqdwbb%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fyogagarhi%2Fassets%2Fabout-yoga-3&w=1920&q=75",
+              "logo": getCloudinaryUrl("about-yoga-3"),
               "sameAs": [
                 "https://instagram.com/yogagarhi",
                 "https://facebook.com/yogagarhi",
@@ -131,7 +132,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Yogagarhi",
-              "image": "https://www.yogagarhi.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdngsqdwbb%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fyogagarhi%2Fassets%2Fabout-yoga-3&w=1920&q=75",
+              "image": getCloudinaryUrl("about-yoga-3"),
               "@id": "https://www.yogagarhi.com/#localbusiness",
               "url": "https://www.yogagarhi.com/",
               "telephone": "+91-7895350563",

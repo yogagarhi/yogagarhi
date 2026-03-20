@@ -54,6 +54,16 @@ const nextConfig: NextConfig = {
         destination: '/testimonials',
         permanent: true,
       },
+      {
+        source: '/blog',
+        destination: '/blogs',
+        permanent: true,
+      },
+      {
+        source: '/contact',
+        destination: '/contact-us',
+        permanent: true,
+      },
     ];
   },
 };

@@ -185,7 +185,7 @@ export default function Header() {
             <div className="flex items-center gap-1.5 whitespace-nowrap">
               <Clock className="w-3.5 h-3.5 text-amber-300" />
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-white/90">
-                Offer Resets In:
+                Offer Ends In:
               </span>
             </div>
             <PromoCountdown />
