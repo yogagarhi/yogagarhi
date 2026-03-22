@@ -9,8 +9,8 @@ type Props = {
 
 export async function generateMetadata(): Promise<Metadata> {
   const course = courseData["300-hour"];
-  const title = `${course.title} ${course.subtitle} | YogaGarhi Bali`;
-  const description = course.welcomeText.substring(0, 160) + "...";
+  const title = "300 Hour Yoga Teacher Training in Bali | Yogagarhi";
+  const description = "Join 300 Hour Yoga Teacher Training in Bali, an advanced Yoga Alliance certified course for dedicated practitioners who have already completed a 200 Hour YTT.";
 
   return {
     title: title,
@@ -43,6 +43,28 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Page() {
   const course = courseData["300-hour"];
   const pageUrl = "https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-bali";
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "300 Hour Yoga Teacher Training in Bali",
+    "description": course.welcomeText,
+    "image": "https://www.yogagarhi.com/og-image.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Yogagarhi"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Yogagarhi",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.yogagarhi.com/logo.png"
+      }
+    },
+    "datePublished": "2026-03-22",
+    "dateModified": "2026-03-22"
+  };
 
   const courseSchema = {
     "@context": "https://schema.org",
@@ -154,6 +176,10 @@ export default function Page() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}

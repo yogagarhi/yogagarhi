@@ -8,11 +8,9 @@ import { courseData } from "@/constants/courses";
 export function generateMetadata(): Metadata {
     const course = courseData["100-hour"];
 
-    const title =
-        "100 Hour Yoga Teacher Training in Ubud Bali | Beginner Yoga TTC – YogaGarhi";
+    const title = "100 Hour Yoga Teacher Training in Bali | Yogagarhi";
 
-    const description =
-        "Our 100 Hour Yoga Teacher Training in Bali is for anyone who wants to deepen their yoga practice in a peaceful, natural space. Join YogaGarhi's beginner-friendly 100 Hour Yoga TTC in Gianyar, Bali.";
+    const description = "Experience our Yoga Alliance certified 100 Hour Yoga Teacher Training in Bali. Deepen your yoga practice in a calm and natural setting with Yogagarhi.";
 
     const url =
         "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali";
@@ -73,7 +71,7 @@ export default function Page() {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "100 Hour Yoga Teacher Training in Ubud Bali",
+        "headline": "100 Hour Yoga Teacher Training in Bali",
         "description": fullDescription,
         "image": "https://www.yogagarhi.com/og-image.jpg",
         "author": {

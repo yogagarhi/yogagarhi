@@ -8,11 +8,9 @@ import { courseData } from "@/constants/courses";
 export function generateMetadata(): Metadata {
     const course = courseData["200-hour"];
 
-    const title =
-        "200 Hour Yoga Teacher Training in Bali | RYT 200 Yoga TTC – YogaGarhi";
+    const title = "200 Hour Yoga Teacher Training in Bali | Yogagarhi";
 
-    const description =
-        "Join YogaGarhi’s 200 Hour Yoga Teacher Training in Bali. A residential RYT 200 Yoga Alliance certified course offering authentic yogic education, asana, pranayama, meditation, philosophy, and teaching methodology in Bali.";
+    const description = "Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation.";
 
     const url =
         "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali";
@@ -72,7 +70,7 @@ export default function Page() {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "200 hour yoga teacher training in Bali",
+        "headline": "200 Hour Yoga Teacher Training in Bali",
         "description": fullDescription,
         "image": "https://www.yogagarhi.com/og-image.jpg",
         "author": {
