@@ -177,7 +177,7 @@ export default function Header() {
           <div className="flex items-center gap-2 whitespace-nowrap animate-pulse">
             <Sparkles className="w-4 h-4 text-amber-300" />
             <span className="text-xs sm:text-sm font-bold tracking-wide uppercase">
-              April to July Batch Open: Few Seats Left! Save <span className="text-amber-300 font-extrabold">$250</span>
+              Easter Sale 🎉 Flat <span className="text-amber-300 font-extrabold">$300 OFF</span> on May to July batches
             </span>
           </div>
 
@@ -237,6 +237,7 @@ export default function Header() {
                           onMouseLeave={() => setOpenDropdown(null)}
                         >
                           <button
+                            suppressHydrationWarning
                             className={`flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${isDropdownActive
                               ? 'bg-primary text-primary-foreground'
                               : 'text-foreground/70 hover:text-primary hover:bg-secondary/50'
@@ -265,6 +266,7 @@ export default function Header() {
                                   {item.subItems ? (
                                     <div className="relative">
                                       <button
+                                        suppressHydrationWarning
                                         onClick={(e) => {
                                           e.stopPropagation();
                                           setOpenSubDropdown(openSubDropdown === item.name ? null : item.name);

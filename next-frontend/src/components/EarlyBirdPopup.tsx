@@ -71,20 +71,20 @@ const EarlyBirdPopup = () => {
             <Sparkles className="absolute top-2 right-2 w-4 h-4 text-yellow-300 animate-pulse" />
 
             <h3 className="text-white font-heading text-xl font-bold tracking-tight leading-tight">
-              Early Bird:
+              Easter Sale 🎉:
             </h3>
 
             {/* Bird Banner */}
             <div className="relative -mx-6 my-2">
               <div className="bg-primary py-2 px-4 transform -rotate-2">
                 <span className="text-primary-foreground font-heading text-lg font-bold">
-                  April to July batches
+                  May to July batches
                 </span>
               </div>
             </div>
 
             <p className="text-white font-heading text-lg font-semibold">
-              Get 250 USD off
+              Flat $300 OFF
             </p>
 
             {/* Decorative line */}

@@ -297,7 +297,7 @@ export const courseData = {
         meals: "Delicious and Nutritious Vegan & Vegetarian Dishes",
         bonus: "Get a bonus 1 month access of live class, an ancient yoga textbook, and a non-slip yoga mat to elevate your practice.",
         welcomeTitle: "Welcome to Yogagarhi",
-        welcomeText: "Elevate your teaching to the next level with our 300-Hour Advanced Yoga Teacher Training in Bali. This intensive program is designed for certified 200-hour yoga teachers who wish to deepen their practice, expand their knowledge, and develop advanced teaching skills.",
+        welcomeText: "Elevate your teaching to the next level with our RYT-200 Certification required 300-Hour Advanced Yoga Teacher Training in Bali. This intensive program is designed for certified 200-hour yoga teachers who wish to deepen their practice, expand their knowledge, and develop advanced teaching skills.",
         welcomeText2: "This transformative 28-day journey takes you beyond the basics into therapeutic applications, advanced anatomy, specialty workshops, and the profound depths of yoga philosophy. Graduate as a 500-hour RYT and become an exceptional yoga teacher capable of transforming lives.",
         features: [
             { title: "Advanced Multi-style Teaching", description: "Master advanced techniques in Hatha, Vinyasa, Ashtanga & therapeutic yoga applications." },

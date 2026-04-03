@@ -85,7 +85,7 @@ export default function Blog() {
                     {post.excerpt}
                   </p>
                   <Button variant="link" className="p-0 h-auto text-primary" asChild>
-                    <Link href={`/blog/${post.slug}`}>
+                    <Link href={`/blogs/${post.slug}`}>
                       Read More <ArrowRight className="w-4 h-4 ml-1" />
                     </Link>
                   </Button>

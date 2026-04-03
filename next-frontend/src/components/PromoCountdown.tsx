@@ -7,6 +7,7 @@ interface PromoCountdownProps {
 
 const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
     const [timeLeft, setTimeLeft] = useState({
+        days: 0,
         hours: 0,
         minutes: 0,
         seconds: 0
@@ -15,13 +16,17 @@ const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
     useEffect(() => {
         const calculateTimeLeft = () => {
             const now = new Date();
-            // Target: Next midnight
-            const midnight = new Date(now);
-            midnight.setHours(24, 0, 0, 0);
+            // Target: 20 days from April 3rd, 2026
+            const target = new Date("2026-04-23T00:00:00");
 
-            const distance = midnight.getTime() - now.getTime();
+            const distance = target.getTime() - now.getTime();
+
+            if (distance < 0) {
+                return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+            }
 
             return {
+                days: Math.floor(distance / (1000 * 60 * 60 * 24)),
                 hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
                 minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
                 seconds: Math.floor((distance % (1000 * 60)) / 1000)
@@ -52,6 +57,8 @@ const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
     return (
         <div className={`flex items-center justify-center ${className}`}>
             <div className="flex items-center">
+                <TimeUnit value={timeLeft.days} label="Days" />
+                <span className="text-lg font-bold mb-4 opacity-50">:</span>
                 <TimeUnit value={timeLeft.hours} label="Hrs" />
                 <span className="text-lg font-bold mb-4 opacity-50">:</span>
                 <TimeUnit value={timeLeft.minutes} label="Mins" />

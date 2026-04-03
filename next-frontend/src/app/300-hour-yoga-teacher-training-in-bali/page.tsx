@@ -10,13 +10,13 @@ type Props = {
 export async function generateMetadata(): Promise<Metadata> {
   const course = courseData["300-hour"];
   const title = "300 Hour Yoga Teacher Training in Bali | Yogagarhi";
-  const description = "Join 300 Hour Yoga Teacher Training in Bali, an advanced Yoga Alliance certified course for dedicated practitioners who have already completed a 200 Hour YTT.";
+  const description = "Join our RYT-200 Certification required 300 Hour Yoga Teacher Training in Bali, an advanced Yoga Alliance certified course for dedicated practitioners who have already completed a 200 Hour YTT.";
 
   return {
     title: title,
     description: description,
     alternates: {
-      canonical: "/300-hour-yoga-teacher-training-in-bali",
+      canonical: "https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-bali",
     },
     openGraph: {
       title: title,

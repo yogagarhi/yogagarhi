@@ -102,7 +102,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
         <DialogContent className="sm:max-w-md bg-[#FDFBF7] border-none shadow-2xl rounded-3xl">
           <DialogHeader className="pt-4">
             <DialogTitle className="text-center font-heading text-2xl sm:text-3xl text-[#2D7A70] tracking-tight leading-tight">
-              {isSubmitted ? "Thank You!" : "Claim Your $250 Early Bird Discount"}
+              {isSubmitted ? "Thank You!" : "Easter Sale 🎉 Flat $300 OFF"}
             </DialogTitle>
             <DialogDescription className="text-center text-[#1A4D45]/70 mt-2">
               {isSubmitted
