@@ -13,8 +13,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Send, CheckCircle } from "lucide-react";
+import { Send, CheckCircle, GraduationCap } from "lucide-react";
 import { countryCodes } from "@/constants/formOptions";
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "@/components/ui/radio-group";
 
 interface QuickEnquiryContextType {
   showQuickEnquiry: boolean;
@@ -41,6 +45,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    level: "",
     message: "",
   });
 
@@ -90,6 +95,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
       setFormData({
         name: "",
         email: "",
+        level: "",
         message: "",
       });
     }
@@ -102,7 +108,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
         <DialogContent className="sm:max-w-md bg-[#FDFBF7] border-none shadow-2xl rounded-3xl">
           <DialogHeader className="pt-4">
             <DialogTitle className="text-center font-heading text-2xl sm:text-3xl text-[#2D7A70] tracking-tight leading-tight">
-              {isSubmitted ? "Thank You!" : "Easter Sale 🎉 Flat $300 OFF"}
+              {isSubmitted ? "Thank You!" : "Book Free Demo Now"}
             </DialogTitle>
             <DialogDescription className="text-center text-[#1A4D45]/70 mt-2">
               {isSubmitted
@@ -147,9 +153,23 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
                   className="bg-white/80 border-teal-100 focus:border-[#87BCB4] focus:ring-[#87BCB4] rounded-xl h-12"
                 />
               </div>
-
-
-
+              <div className="space-y-1.5">
+                <Label htmlFor="level" className="text-[#1A4D45] font-semibold text-sm">Level *</Label>
+                <RadioGroup
+                  onValueChange={(value) => handleChange("level", value)}
+                  value={formData.level}
+                  className="flex flex-col space-y-2 pt-1"
+                >
+                  <div className="flex items-center space-x-3 bg-white/50 p-3 rounded-xl border border-teal-50 hover:bg-white/80 transition-colors cursor-pointer" onClick={() => handleChange("level", "Level 1")}>
+                    <RadioGroupItem value="Level 1" id="level-1" className="border-teal-500 text-teal-600" />
+                    <Label htmlFor="level-1" className="flex-grow cursor-pointer font-medium text-[#1A4D45]">Level 1</Label>
+                  </div>
+                  <div className="flex items-center space-x-3 bg-white/50 p-3 rounded-xl border border-teal-50 hover:bg-white/80 transition-colors cursor-pointer" onClick={() => handleChange("level", "Level 2")}>
+                    <RadioGroupItem value="Level 2" id="level-2" className="border-teal-500 text-teal-600" />
+                    <Label htmlFor="level-2" className="flex-grow cursor-pointer font-medium text-[#1A4D45]">Level 2</Label>
+                  </div>
+                </RadioGroup>
+              </div>
               <div className="space-y-1.5">
                 <Label htmlFor="message" className="text-[#1A4D45] font-semibold text-sm">Message (Optional)</Label>
                 <Textarea
@@ -164,18 +184,18 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
 
               <Button
                 type="submit"
-                className={`w-full text-white rounded-xl h-14 text-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg mt-2 ${formData.name && formData.email
+                className={`w-full text-white rounded-xl h-14 text-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg mt-2 ${formData.name && formData.email && formData.level
                   ? "bg-[#2D7A70] hover:bg-[#1A4D45]" // Darken when filled
                   : "bg-[#87BCB4] hover:bg-[#76ADA5]" // Light/Teal when not filled
                   }`}
-                disabled={isLoading || !formData.name || !formData.email}
+                disabled={isLoading || !formData.name || !formData.email || !formData.level}
               >
                 {isLoading ? (
                   "Submitting..."
                 ) : (
                   <>
-                    <Send className="w-5 h-5 mr-2" />
-                    Submit Enquiry
+                    <GraduationCap className="w-5 h-5 mr-2" />
+                    Book Now
                   </>
                 )}
               </Button>

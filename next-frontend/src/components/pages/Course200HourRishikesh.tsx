@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -30,7 +30,7 @@ import {
   Cherry, Sprout, CircleDot, Sun, MessageSquare, Mail,
   Wifi, Droplets, Wind, Activity, ShieldCheck, ArrowRight, Globe
 } from "lucide-react";
-import { timezones } from "@/constants/formOptions";
+import { timezones, countryCodes } from "@/constants/formOptions";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import FounderSection from "@/components/home/FounderSection";
 import HomeGallerySection from "@/components/home/HomeGallerySection";
@@ -570,6 +570,8 @@ const quizQuestions = [
   },
 ];
 
+// - [x] Standardize internal forms in `Course100HourRishikesh.tsx`
+// - [x] Standardize internal forms in `Course200HourRishikesh.tsx`
 export default function Course200HourRishikesh() {
   const router = useRouter();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
@@ -646,7 +648,7 @@ export default function Course200HourRishikesh() {
   });
   const [bookingForm, setBookingForm] = useState({
     name: '',
-    countryCode: '+91',
+    countryCode: '',
     contact: '',
     email: '',
     course: ''
@@ -654,7 +656,7 @@ export default function Course200HourRishikesh() {
   const [enrollForm, setEnrollForm] = useState({
     name: '',
     email: '',
-    countryCode: '+91',
+    countryCode: '',
     contact: '',
     courseName: '',
     courseDate: '',
@@ -666,6 +668,7 @@ export default function Course200HourRishikesh() {
   });
 
   const isEnrollFormComplete = enrollForm.name && enrollForm.email && enrollForm.contact &&
+    enrollForm.countryCode &&
     enrollForm.courseName && enrollForm.courseDate && enrollForm.accommodation &&
     enrollForm.gender && enrollForm.country && enrollForm.source;
 
@@ -740,7 +743,7 @@ export default function Course200HourRishikesh() {
   };
 
 
-  const isBookingFormComplete = bookingForm.name && bookingForm.contact && bookingForm.email && bookingForm.course;
+  const isBookingFormComplete = bookingForm.name && bookingForm.contact && bookingForm.countryCode && bookingForm.email && bookingForm.course;
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -3887,65 +3890,14 @@ export default function Course200HourRishikesh() {
                                 value={bookingForm.countryCode}
                                 onChange={(e) => setBookingForm(prev => ({ ...prev, countryCode: e.target.value }))}
                                 className="w-28 px-2 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"
+                                required
                               >
-                                <option value="+1">🇺🇸 +1</option>
-                                <option value="+44">🇬🇧 +44</option>
-                                <option value="+91">🇮🇳 +91</option>
-                                <option value="+61">🇦🇺 +61</option>
-                                <option value="+49">🇩🇪 +49</option>
-                                <option value="+33">🇫🇷 +33</option>
-                                <option value="+39">🇮🇹 +39</option>
-                                <option value="+34">🇪🇸 +34</option>
-                                <option value="+31">🇳🇱 +31</option>
-                                <option value="+46">🇸🇪 +46</option>
-                                <option value="+47">🇳🇴 +47</option>
-                                <option value="+45">🇩🇰 +45</option>
-                                <option value="+358">🇫🇮 +358</option>
-                                <option value="+41">🇨🇭 +41</option>
-                                <option value="+43">🇦🇹 +43</option>
-                                <option value="+32">🇧🇪 +32</option>
-                                <option value="+351">🇵🇹 +351</option>
-                                <option value="+48">🇵🇱 +48</option>
-                                <option value="+7">🇷🇺 +7</option>
-                                <option value="+380">🇺🇦 +380</option>
-                                <option value="+81">🇯🇵 +81</option>
-                                <option value="+82">🇰🇷 +82</option>
-                                <option value="+86">🇨🇳 +86</option>
-                                <option value="+852">🇭🇰 +852</option>
-                                <option value="+65">🇸🇬 +65</option>
-                                <option value="+60">🇲🇾 +60</option>
-                                <option value="+62">🇮🇩 +62</option>
-                                <option value="+66">🇹🇭 +66</option>
-                                <option value="+84">🇻🇳 +84</option>
-                                <option value="+63">🇵🇭 +63</option>
-                                <option value="+92">🇵🇰 +92</option>
-                                <option value="+880">🇧🇩 +880</option>
-                                <option value="+94">🇱🇰 +94</option>
-                                <option value="+977">🇳🇵 +977</option>
-                                <option value="+971">🇦🇪 +971</option>
-                                <option value="+966">🇸🇦 +966</option>
-                                <option value="+972">🇮🇱 +972</option>
-                                <option value="+90">🇹🇷 +90</option>
-                                <option value="+20">🇪🇬 +20</option>
-                                <option value="+27">🇿🇦 +27</option>
-                                <option value="+234">🇳🇬 +234</option>
-                                <option value="+254">🇰🇪 +254</option>
-                                <option value="+55">🇧🇷 +55</option>
-                                <option value="+52">🇲🇽 +52</option>
-                                <option value="+54">🇦🇷 +54</option>
-                                <option value="+57">🇨🇴 +57</option>
-                                <option value="+56">🇨🇱 +56</option>
-                                <option value="+51">🇵🇪 +51</option>
-                                <option value="+64">🇳🇿 +64</option>
-                                <option value="+353">🇮🇪 +353</option>
-                                <option value="+30">🇬🇷 +30</option>
-                                <option value="+36">🇭🇺 +36</option>
-                                <option value="+420">🇨🇿 +420</option>
-                                <option value="+40">🇷🇴 +40</option>
-                                <option value="+375">🇧🇾 +375</option>
-                                <option value="+370">🇱🇹 +370</option>
-                                <option value="+371">🇱🇻 +371</option>
-                                <option value="+372">🇪🇪 +372</option>
+                                <option value="" disabled>Code</option>
+                                {countryCodes.map((country) => (
+                                  <option key={`${country.country}-${country.code}`} value={country.code}>
+                                    {country.flag} {country.code}
+                                  </option>
+                                ))}
                               </select>
                               <input
                                 type="tel"
@@ -4423,34 +4375,18 @@ export default function Course200HourRishikesh() {
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">Contact / WhatsApp No. <span className="text-destructive">*</span></label>
                 <div className="flex gap-2">
-                  <select value={enrollForm.countryCode} onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))} className="w-24 px-2 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
-                    <option value="+1">US +1</option>
-                    <option value="+44">UK +44</option>
-                    <option value="+91">IN +91</option>
-                    <option value="+61">AU +61</option>
-                    <option value="+49">DE +49</option>
-                    <option value="+33">FR +33</option>
-                    <option value="+39">IT +39</option>
-                    <option value="+34">ES +34</option>
-                    <option value="+31">NL +31</option>
-                    <option value="+46">SE +46</option>
-                    <option value="+47">NO +47</option>
-                    <option value="+45">DK +45</option>
-                    <option value="+41">CH +41</option>
-                    <option value="+43">AT +43</option>
-                    <option value="+32">BE +32</option>
-                    <option value="+55">BR +55</option>
-                    <option value="+52">MX +52</option>
-                    <option value="+81">JP +81</option>
-                    <option value="+82">KR +82</option>
-                    <option value="+86">CN +86</option>
-                    <option value="+65">SG +65</option>
-                    <option value="+971">AE +971</option>
-                    <option value="+92">PK +92</option>
-                    <option value="+977">NP +977</option>
-                    <option value="+94">LK +94</option>
-                    <option value="+27">ZA +27</option>
-                    <option value="+64">NZ +64</option>
+                  <select
+                    value={enrollForm.countryCode}
+                    onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))}
+                    className="w-24 px-2 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                    required
+                  >
+                    <option value="" disabled>Code</option>
+                    {countryCodes.map((country) => (
+                      <option key={`${country.country}-${country.code}`} value={country.code}>
+                        {country.flag} {country.code}
+                      </option>
+                    ))}
                   </select>
                   <input type="tel" value={enrollForm.contact} onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))} placeholder="Phone number" className="flex-1 px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
                 </div>

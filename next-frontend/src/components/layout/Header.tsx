@@ -102,6 +102,7 @@ const courses: NavDropdownItem[] = [
       { name: "100 Hour YTTC", href: "/100-hour-yoga-teacher-training-in-bali" },
       { name: "200 Hour YTTC", href: "/200-hour-yoga-teacher-training-in-bali" },
       { name: "300 Hour YTTC", href: "/300-hour-yoga-teacher-training-in-bali" },
+      { name: "Anatomy Mastery", href: "/yoga-anatomy-mastery" },
     ]
   },
   {
@@ -351,7 +352,7 @@ export default function Header() {
                 className="lg:hidden text-xs px-3 py-1.5"
                 onClick={() => setShowQuickEnquiry(true)}
               >
-                Quick Inquiry
+                Book Now
               </Button>
 
               {/* Desktop CTA Button */}
@@ -361,7 +362,7 @@ export default function Header() {
                 className="hidden lg:flex"
                 onClick={() => setShowQuickEnquiry(true)}
               >
-                Quick Inquiry
+                Book Now
               </Button>
 
               {/* Mobile Menu Button */}
@@ -492,7 +493,7 @@ export default function Header() {
                   setIsOpen(false);
                 }}
               >
-                Quick Inquiry
+                Book Now
               </Button>
             </div>
           </nav>

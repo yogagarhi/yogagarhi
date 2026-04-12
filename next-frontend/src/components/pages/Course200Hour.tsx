@@ -1,4 +1,4 @@
-﻿﻿"use client";
+"use client";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -30,7 +30,7 @@ import {
   Cherry, Sprout, CircleDot, Sun, MessageSquare, Mail,
   Wifi, Droplets, Wind, Activity, ShieldCheck, ArrowRight, Globe
 } from "lucide-react";
-import { timezones } from "@/constants/formOptions";
+import { timezones, countryCodes } from "@/constants/formOptions";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import FounderSection from "@/components/home/FounderSection";
 import HomeGallerySection from "@/components/home/HomeGallerySection";
@@ -646,7 +646,7 @@ export default function Course200Hour() {
   });
   const [bookingForm, setBookingForm] = useState({
     name: '',
-    countryCode: '+91',
+    countryCode: '',
     contact: '',
     email: '',
     course: ''
@@ -654,7 +654,7 @@ export default function Course200Hour() {
   const [enrollForm, setEnrollForm] = useState({
     name: '',
     email: '',
-    countryCode: '+91',
+    countryCode: '',
     contact: '',
     courseName: '',
     courseDate: '',
@@ -666,6 +666,7 @@ export default function Course200Hour() {
   });
 
   const isEnrollFormComplete = enrollForm.name && enrollForm.email && enrollForm.contact &&
+    enrollForm.countryCode &&
     enrollForm.courseName && enrollForm.courseDate && enrollForm.accommodation &&
     enrollForm.gender && enrollForm.country && enrollForm.source;
 
@@ -740,7 +741,7 @@ export default function Course200Hour() {
   };
 
 
-  const isBookingFormComplete = bookingForm.name && bookingForm.contact && bookingForm.email && bookingForm.course;
+  const isBookingFormComplete = bookingForm.name && bookingForm.contact && bookingForm.countryCode && bookingForm.email && bookingForm.course;
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -3887,65 +3888,14 @@ export default function Course200Hour() {
                                 value={bookingForm.countryCode}
                                 onChange={(e) => setBookingForm(prev => ({ ...prev, countryCode: e.target.value }))}
                                 className="w-28 px-2 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"
+                                required
                               >
-                                <option value="+1">ðŸ‡ºðŸ‡¸ +1</option>
-                                <option value="+44">ðŸ‡¬ðŸ‡§ +44</option>
-                                <option value="+91">ðŸ‡®ðŸ‡³ +91</option>
-                                <option value="+61">ðŸ‡¦ðŸ‡º +61</option>
-                                <option value="+49">ðŸ‡©ðŸ‡ª +49</option>
-                                <option value="+33">ðŸ‡«ðŸ‡· +33</option>
-                                <option value="+39">ðŸ‡®ðŸ‡¹ +39</option>
-                                <option value="+34">ðŸ‡ªðŸ‡¸ +34</option>
-                                <option value="+31">ðŸ‡³ðŸ‡± +31</option>
-                                <option value="+46">ðŸ‡¸ðŸ‡ª +46</option>
-                                <option value="+47">ðŸ‡³ðŸ‡´ +47</option>
-                                <option value="+45">ðŸ‡©ðŸ‡° +45</option>
-                                <option value="+358">ðŸ‡«ðŸ‡® +358</option>
-                                <option value="+41">ðŸ‡¨ðŸ‡­ +41</option>
-                                <option value="+43">ðŸ‡¦ðŸ‡¹ +43</option>
-                                <option value="+32">ðŸ‡§ðŸ‡ª +32</option>
-                                <option value="+351">ðŸ‡µðŸ‡¹ +351</option>
-                                <option value="+48">ðŸ‡µðŸ‡± +48</option>
-                                <option value="+7">ðŸ‡·ðŸ‡º +7</option>
-                                <option value="+380">ðŸ‡ºðŸ‡¦ +380</option>
-                                <option value="+81">ðŸ‡¯ðŸ‡µ +81</option>
-                                <option value="+82">ðŸ‡°ðŸ‡· +82</option>
-                                <option value="+86">ðŸ‡¨ðŸ‡³ +86</option>
-                                <option value="+852">ðŸ‡­ðŸ‡° +852</option>
-                                <option value="+65">ðŸ‡¸ðŸ‡¬ +65</option>
-                                <option value="+60">ðŸ‡²ðŸ‡¾ +60</option>
-                                <option value="+62">ðŸ‡®ðŸ‡© +62</option>
-                                <option value="+66">ðŸ‡¹ðŸ‡­ +66</option>
-                                <option value="+84">ðŸ‡»ðŸ‡³ +84</option>
-                                <option value="+63">ðŸ‡µðŸ‡­ +63</option>
-                                <option value="+92">ðŸ‡µðŸ‡° +92</option>
-                                <option value="+880">ðŸ‡§ðŸ‡© +880</option>
-                                <option value="+94">ðŸ‡±ðŸ‡° +94</option>
-                                <option value="+977">ðŸ‡³ðŸ‡µ +977</option>
-                                <option value="+971">ðŸ‡¦ðŸ‡ª +971</option>
-                                <option value="+966">ðŸ‡¸ðŸ‡¦ +966</option>
-                                <option value="+972">ðŸ‡®ðŸ‡± +972</option>
-                                <option value="+90">ðŸ‡¹ðŸ‡· +90</option>
-                                <option value="+20">ðŸ‡ªðŸ‡¬ +20</option>
-                                <option value="+27">ðŸ‡¿ðŸ‡¦ +27</option>
-                                <option value="+234">ðŸ‡³ðŸ‡¬ +234</option>
-                                <option value="+254">ðŸ‡°ðŸ‡ª +254</option>
-                                <option value="+55">ðŸ‡§ðŸ‡· +55</option>
-                                <option value="+52">ðŸ‡²ðŸ‡½ +52</option>
-                                <option value="+54">ðŸ‡¦ðŸ‡· +54</option>
-                                <option value="+57">ðŸ‡¨ðŸ‡´ +57</option>
-                                <option value="+56">ðŸ‡¨ðŸ‡± +56</option>
-                                <option value="+51">ðŸ‡µðŸ‡ª +51</option>
-                                <option value="+64">ðŸ‡³ðŸ‡¿ +64</option>
-                                <option value="+353">ðŸ‡®ðŸ‡ª +353</option>
-                                <option value="+30">ðŸ‡¬ðŸ‡· +30</option>
-                                <option value="+36">ðŸ‡­ðŸ‡º +36</option>
-                                <option value="+420">ðŸ‡¨ðŸ‡¿ +420</option>
-                                <option value="+40">ðŸ‡·ðŸ‡´ +40</option>
-                                <option value="+375">ðŸ‡§ðŸ‡¾ +375</option>
-                                <option value="+370">ðŸ‡±ðŸ‡¹ +370</option>
-                                <option value="+371">ðŸ‡±ðŸ‡» +371</option>
-                                <option value="+372">ðŸ‡ªðŸ‡ª +372</option>
+                                <option value="" disabled>Code</option>
+                                {countryCodes.map((country) => (
+                                  <option key={`${country.country}-${country.code}`} value={country.code}>
+                                    {country.flag} {country.code}
+                                  </option>
+                                ))}
                               </select>
                               <input
                                 type="tel"
@@ -4547,34 +4497,14 @@ export default function Course200Hour() {
                     value={enrollForm.countryCode}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))}
                     className="w-24 px-2 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                    required
                   >
-                    <option value="+1">&#127482;&#127480; +1</option>
-                    <option value="+44">&#127468;&#127463; +44</option>
-                    <option value="+91">&#127470;&#127475; +91</option>
-                    <option value="+61">&#127462;&#127482; +61</option>
-                    <option value="+49">&#127465;&#127466; +49</option>
-                    <option value="+33">&#127467;&#127479; +33</option>
-                    <option value="+39">&#127470;&#127481; +39</option>
-                    <option value="+34">&#127466;&#127480; +34</option>
-                    <option value="+31">&#127475;&#127473; +31</option>
-                    <option value="+46">&#127480;&#127466; +46</option>
-                    <option value="+47">&#127475;&#127476; +47</option>
-                    <option value="+45">&#127465;&#127472; +45</option>
-                    <option value="+41">&#127464;&#127469; +41</option>
-                    <option value="+43">&#127462;&#127481; +43</option>
-                    <option value="+32">&#127463;&#127466; +32</option>
-                    <option value="+55">&#127463;&#127479; +55</option>
-                    <option value="+52">&#127474;&#127485; +52</option>
-                    <option value="+81">&#127471;&#127477; +81</option>
-                    <option value="+82">&#127472;&#127479; +82</option>
-                    <option value="+86">&#127464;&#127475; +86</option>
-                    <option value="+65">&#127480;&#127468; +65</option>
-                    <option value="+971">&#127462;&#127466; +971</option>
-                    <option value="+92">&#127477;&#127472; +92</option>
-                    <option value="+977">&#127475;&#127477; +977</option>
-                    <option value="+94">&#127473;&#127472; +94</option>
-                    <option value="+27">&#127487;&#127462; +27</option>
-                    <option value="+64">&#127475;&#127487; +64</option>
+                    <option value="" disabled>Code</option>
+                    {countryCodes.map((country) => (
+                      <option key={`${country.country}-${country.code}`} value={country.code}>
+                        {country.flag} {country.code}
+                      </option>
+                    ))}
                   </select>
                   <input
                     type="tel"

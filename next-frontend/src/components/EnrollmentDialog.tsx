@@ -50,7 +50,7 @@ export function EnrollmentProvider({ children }: { children: ReactNode }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    countryCode: "+91",
+    countryCode: "",
     phone: "",
     country: "",
     course: "200hr",
@@ -117,7 +117,7 @@ export function EnrollmentProvider({ children }: { children: ReactNode }) {
       setFormData({
         name: "",
         email: "",
-        countryCode: "+91",
+        countryCode: "",
         phone: "",
         country: "",
         course: "200hr",
@@ -130,7 +130,7 @@ export function EnrollmentProvider({ children }: { children: ReactNode }) {
     }
   };
 
-  const isFormValid = formData.name.trim() && formData.email.trim() && formData.phone.trim() && formData.country && formData.course && formData.courseDate && formData.accommodation && formData.gender && formData.referralSource;
+  const isFormValid = formData.name.trim() && formData.email.trim() && formData.phone.trim() && formData.countryCode && formData.country && formData.course && formData.courseDate && formData.accommodation && formData.gender && formData.referralSource;
 
   return (
     <EnrollmentContext.Provider value={{ showEnrollDialog, setShowEnrollDialog, navigateToEnrollment }}>
@@ -209,7 +209,9 @@ export function EnrollmentProvider({ children }: { children: ReactNode }) {
                     value={formData.countryCode}
                     onChange={(e) => handleChange("countryCode", e.target.value)}
                     className="w-28 px-2 py-2 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring text-sm"
+                    required
                   >
+                    <option value="" disabled>Code</option>
                     {countryCodes.map((country) => (
                       <option key={`${country.code}-${country.country}`} value={country.code}>
                         {country.flag} {country.code}
