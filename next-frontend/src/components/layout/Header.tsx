@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Sparkles, Globe, Mountain, ArrowRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import PromoCountdown from "@/components/PromoCountdown";
@@ -146,6 +147,7 @@ export default function Header() {
   const [mobileOpenSubDropdown, setMobileOpenSubDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const { setShowEnrollDialog } = useEnrollment();
   const { setShowQuickEnquiry } = useQuickEnquiry();
 
   useEffect(() => {
@@ -202,6 +204,7 @@ export default function Header() {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
+
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
               <div className="relative">
@@ -347,23 +350,23 @@ export default function Header() {
             <div className="flex items-center gap-2 sm:gap-3">
               {/* Mobile CTA Button */}
               <Button
-                variant="cta"
+                variant="default"
                 size="sm"
-                className="lg:hidden text-xs px-3 py-1.5"
-                onClick={() => setShowQuickEnquiry(true)}
+                className="lg:hidden bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-4 h-9 shadow-sm transition-all whitespace-nowrap"
+                onClick={() => setShowEnrollDialog(true)}
               >
                 Book Now
               </Button>
 
               {/* Desktop CTA Button */}
               <Button
-                variant="cta"
-                size="default"
-                className="hidden lg:flex"
-                onClick={() => setShowQuickEnquiry(true)}
+                variant="default"
+                className="hidden lg:flex bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-6 py-2.5 h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap"
+                onClick={() => setShowEnrollDialog(true)}
               >
                 Book Now
               </Button>
+
 
               {/* Mobile Menu Button */}
               <button
@@ -483,14 +486,13 @@ export default function Header() {
               );
             })}
 
-            <div className="pt-4 mt-2 border-t border-border/50">
+            {/* Mobile Footer CTA */}
+            <div className="mt-6 px-4 pb-8">
               <Button
-                variant="cta"
-                size="lg"
-                className="w-full"
+                className="w-full bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg py-6 text-lg shadow-sm transition-all"
                 onClick={() => {
-                  setShowQuickEnquiry(true);
                   setIsOpen(false);
+                  setShowEnrollDialog(true);
                 }}
               >
                 Book Now

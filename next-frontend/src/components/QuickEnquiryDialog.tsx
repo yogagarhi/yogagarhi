@@ -1,6 +1,5 @@
 "use client";
 import { createContext, useContext, ReactNode, useState } from "react";
-import { useRouter } from "next/navigation";
 import {
   Dialog,
   DialogContent,
@@ -13,12 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Send, CheckCircle, GraduationCap } from "lucide-react";
-import { countryCodes } from "@/constants/formOptions";
-import {
-  RadioGroup,
-  RadioGroupItem,
-} from "@/components/ui/radio-group";
+import { CheckCircle, GraduationCap, Send, ArrowRight } from "lucide-react";
 
 interface QuickEnquiryContextType {
   showQuickEnquiry: boolean;
@@ -36,11 +30,11 @@ export function useQuickEnquiry() {
 }
 
 export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
+  console.log("PREMIUM QUICK ENQUIRY LOADED");
   const [showQuickEnquiry, setShowQuickEnquiry] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
-  const router = useRouter();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -51,6 +45,8 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.name || !formData.email || !formData.level || isLoading) return;
+
     setIsLoading(true);
 
     try {
@@ -61,23 +57,22 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
         },
         body: JSON.stringify({
           ...formData,
-          _subject: `New Quick Enquiry from ${formData.name}`,
-          _autoresponder: "Namaste! Thank you for contacting YogaGarhi. We have received your enquiry and our team will get back to you within 24 hours to assist you further."
+          _subject: `New Free Demo Request from ${formData.name}`,
+          _autoresponder: "Namaste! Thank you for your interest in our free demo session. We have received your request and will contact you within 24 hours to schedule the demo. We look forward to meeting you!"
         }),
       });
 
       if (response.ok) {
         setIsSubmitted(true);
-        router.push('/thank-you?type=enquiry');
       } else {
-        throw new Error('Failed to send enquiry');
+        throw new Error('Failed to send inquiry');
       }
-    } catch (error) {
-      console.error(error);
+    } catch (error: any) {
+      console.error("Error submitting inquiry:", error);
       toast({
-        title: "Error",
-        description: "Something went wrong. Please try again or contact us directly.",
-        variant: "destructive",
+        title: "Submission Failed",
+        description: error.message || "Please check your internet connection and try again.",
+        variant: "destructive"
       });
     } finally {
       setIsLoading(false);
@@ -105,101 +100,144 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
     <QuickEnquiryContext.Provider value={{ showQuickEnquiry, setShowQuickEnquiry }}>
       {children}
       <Dialog open={showQuickEnquiry} onOpenChange={handleOpenChange}>
-        <DialogContent className="sm:max-w-md bg-[#FDFBF7] border-none shadow-2xl rounded-3xl">
-          <DialogHeader className="pt-4">
-            <DialogTitle className="text-center font-heading text-2xl sm:text-3xl text-[#2D7A70] tracking-tight leading-tight">
-              {isSubmitted ? "Thank You!" : "Book Free Demo Now"}
-            </DialogTitle>
-            <DialogDescription className="text-center text-[#1A4D45]/70 mt-2">
-              {isSubmitted
-                ? "Your message has been received."
-                : "Have a quick question? Send us a message and we'll get back to you soon."
-              }
-            </DialogDescription>
-          </DialogHeader>
+        <DialogContent className="sm:max-w-lg !p-0 gap-0 overflow-hidden border-0 shadow-2xl bg-white rounded-3xl">
+          {/* Header Section - Vibrant Brand Gradient */}
+          <div className="bg-[#2D7A70] bg-gradient-to-br from-[#2D7A70] to-[#1a4d46] px-6 pt-10 pb-8 sm:px-10 text-white relative text-center">
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4 backdrop-blur-sm border border-white/20">
+                <GraduationCap className="w-10 h-10 text-white" />
+              </div>
+              <DialogTitle className="font-heading text-3xl sm:text-4xl font-bold mb-2 text-white">
+                {isSubmitted ? "Thank You!" : "Book Free Demo Now"}
+              </DialogTitle>
+              {!isSubmitted && (
+                <p className="text-white/80 text-sm max-w-[280px] mx-auto leading-relaxed font-medium">
+                  Experience our authentic yoga path. Fill the form to book your free orientation demo.
+                </p>
+              )}
+            </div>
+          </div>
 
           {isSubmitted ? (
-            <div className="flex flex-col items-center justify-center py-8 space-y-4">
-              <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
-                <CheckCircle className="w-10 h-10 text-green-600" />
+            <div className="flex flex-col items-center justify-center py-16 px-10 space-y-8 text-center bg-white">
+              <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center shadow-lg">
+                <CheckCircle className="w-12 h-12 text-green-600" />
               </div>
-              <p className="text-center text-muted-foreground">
-                We've received your enquiry and will get back to you within 24 hours.
-              </p>
+              <div className="space-y-3">
+                <h3 className="font-heading text-2xl font-bold text-[#2D7A70]">
+                  Inquiry Received!
+                </h3>
+                <p className="text-muted-foreground leading-relaxed max-w-sm">
+                  Namaste! We&#39;ve received your request. Our team will contact you within 24 hours to schedule your free demo.
+                </p>
+              </div>
+              <Button 
+                onClick={() => handleOpenChange(false)}
+                className="w-full h-14 rounded-2xl font-bold bg-[#2D7A70] hover:bg-[#1a4d46] transition-all shadow-lg"
+              >
+                Continue Exploring
+              </Button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-1.5">
-                <Label htmlFor="name" className="text-[#1A4D45] font-semibold text-sm">Full Name *</Label>
-                <Input
-                  id="name"
-                  placeholder="Enter your name"
-                  value={formData.name}
-                  onChange={(e) => handleChange("name", e.target.value)}
-                  required
-                  className="bg-white/80 border-teal-100 focus:border-[#87BCB4] focus:ring-[#87BCB4] rounded-xl h-12"
-                />
+            <>
+              {/* Form Body - Premium Card Layout */}
+              <div className="px-6 sm:px-10 py-8 space-y-6 bg-white">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  {/* Name */}
+                  <div className="space-y-2">
+                    <Label htmlFor="q-name" className="text-sm font-bold text-gray-700 ml-1">Full Name</Label>
+                    <Input
+                      id="q-name"
+                      placeholder="Enter your name"
+                      value={formData.name}
+                      onChange={(e) => handleChange("name", e.target.value)}
+                      required
+                      className="h-12 px-4 rounded-xl border-2 border-gray-100 bg-gray-50/50 text-gray-900 transition-all focus:border-[#2D7A70] focus:bg-white focus:ring-0"
+                    />
+                  </div>
+
+                  {/* Email */}
+                  <div className="space-y-2">
+                    <Label htmlFor="q-email" className="text-sm font-bold text-gray-700 ml-1">Email Address</Label>
+                    <Input
+                      id="q-email"
+                      type="email"
+                      placeholder="you@example.com"
+                      value={formData.email}
+                      onChange={(e) => handleChange("email", e.target.value)}
+                      required
+                      className="h-12 px-4 rounded-xl border-2 border-gray-100 bg-gray-50/50 text-gray-900 transition-all focus:border-[#2D7A70] focus:bg-white focus:ring-0"
+                    />
+                  </div>
+                </div>
+
+                {/* Level selection using premium card options - High Conversion UI */}
+                <div className="space-y-3">
+                  <Label className="text-sm font-bold text-gray-700 ml-1">Your Yoga Level</Label>
+                  <div className="grid grid-cols-2 gap-3">
+                    {[
+                      { id: "Level 1", label: "Level 1 (Beginner)", icon: "🌱" },
+                      { id: "Level 2", label: "Level 2 (Intermediate)", icon: "🧘" }
+                    ].map((level) => (
+                      <button
+                        key={level.id}
+                        type="button"
+                        onClick={() => handleChange("level", level.id)}
+                        className={`flex flex-col items-center justify-center p-4 rounded-2xl border-2 transition-all duration-300 ${
+                          formData.level === level.id
+                            ? "bg-[#2D7A70]/5 border-[#2D7A70] shadow-md shadow-[#2D7A70]/10"
+                            : "bg-gray-50/50 border-gray-100 hover:border-[#2D7A70]/30 hover:bg-white"
+                        }`}
+                      >
+                        <span className="text-2xl mb-1">{level.icon}</span>
+                        <span className={`text-xs font-bold ${formData.level === level.id ? "text-[#2D7A70]" : "text-gray-500"}`}>
+                          {level.label}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Message */}
+                <div className="space-y-2">
+                  <Label htmlFor="q-message" className="text-sm font-bold text-gray-700 ml-1">Message (Optional)</Label>
+                  <Textarea
+                    id="q-message"
+                    placeholder="Tell us about your yoga goals or any specific questions..."
+                    value={formData.message}
+                    onChange={(e) => handleChange("message", e.target.value)}
+                    rows={3}
+                    className="rounded-xl border-2 border-gray-100 bg-gray-50/50 text-gray-900 focus:border-[#2D7A70] focus:bg-white focus:ring-0 transition-all resize-none"
+                  />
+                </div>
               </div>
 
-              <div className="space-y-1.5">
-                <Label htmlFor="email" className="text-[#1A4D45] font-semibold text-sm">Email *</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="Enter your email"
-                  value={formData.email}
-                  onChange={(e) => handleChange("email", e.target.value)}
-                  required
-                  className="bg-white/80 border-teal-100 focus:border-[#87BCB4] focus:ring-[#87BCB4] rounded-xl h-12"
-                />
-              </div>
-              <div className="space-y-1.5">
-                <Label htmlFor="level" className="text-[#1A4D45] font-semibold text-sm">Level *</Label>
-                <RadioGroup
-                  onValueChange={(value) => handleChange("level", value)}
-                  value={formData.level}
-                  className="flex flex-col space-y-2 pt-1"
-                >
-                  <div className="flex items-center space-x-3 bg-white/50 p-3 rounded-xl border border-teal-50 hover:bg-white/80 transition-colors cursor-pointer" onClick={() => handleChange("level", "Level 1")}>
-                    <RadioGroupItem value="Level 1" id="level-1" className="border-teal-500 text-teal-600" />
-                    <Label htmlFor="level-1" className="flex-grow cursor-pointer font-medium text-[#1A4D45]">Level 1</Label>
-                  </div>
-                  <div className="flex items-center space-x-3 bg-white/50 p-3 rounded-xl border border-teal-50 hover:bg-white/80 transition-colors cursor-pointer" onClick={() => handleChange("level", "Level 2")}>
-                    <RadioGroupItem value="Level 2" id="level-2" className="border-teal-500 text-teal-600" />
-                    <Label htmlFor="level-2" className="flex-grow cursor-pointer font-medium text-[#1A4D45]">Level 2</Label>
-                  </div>
-                </RadioGroup>
-              </div>
-              <div className="space-y-1.5">
-                <Label htmlFor="message" className="text-[#1A4D45] font-semibold text-sm">Message (Optional)</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Any questions or specific requirements..."
-                  value={formData.message}
-                  onChange={(e) => handleChange("message", e.target.value)}
-                  rows={4}
-                  className="bg-white/80 border-teal-100 focus:border-[#87BCB4] focus:ring-[#87BCB4] rounded-xl resize-none"
-                />
-              </div>
-
-              <Button
-                type="submit"
-                className={`w-full text-white rounded-xl h-14 text-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg mt-2 ${formData.name && formData.email && formData.level
-                  ? "bg-[#2D7A70] hover:bg-[#1A4D45]" // Darken when filled
-                  : "bg-[#87BCB4] hover:bg-[#76ADA5]" // Light/Teal when not filled
+              {/* Action Footer - Sticky */}
+              <div className="px-6 sm:px-10 pb-10 pt-2 bg-white rounded-b-2xl">
+                <Button
+                  onClick={handleSubmit}
+                  className={`w-full h-14 text-lg font-bold rounded-2xl shadow-xl transition-all duration-500 flex items-center justify-center gap-3 ${
+                    formData.name && formData.email && formData.level
+                      ? "bg-[#2D7A70] hover:bg-[#1a4d46] hover:scale-[1.01] shadow-[#2D7A70]/20 text-white"
+                      : "bg-gray-200 text-gray-400 cursor-not-allowed"
                   }`}
-                disabled={isLoading || !formData.name || !formData.email || !formData.level}
-              >
-                {isLoading ? (
-                  "Submitting..."
-                ) : (
-                  <>
-                    <GraduationCap className="w-5 h-5 mr-2" />
-                    Book Now
-                  </>
-                )}
-              </Button>
-            </form>
+                  disabled={isLoading || !formData.name || !formData.email || !formData.level}
+                >
+                  {isLoading ? (
+                    "Sending Inquiry..."
+                  ) : (
+                    <>
+                      Book Free Demo
+                      <ArrowRight className="w-5 h-5" />
+                    </>
+                  )}
+                </Button>
+                <div className="mt-5 flex items-center justify-center gap-2 text-[10px] text-gray-400 uppercase tracking-[0.2em] font-bold">
+                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                  Free 15-Min Live Demo Session
+                </div>
+              </div>
+            </>
           )}
         </DialogContent>
       </Dialog>

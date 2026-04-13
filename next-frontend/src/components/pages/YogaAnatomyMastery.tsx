@@ -5,14 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { 
-  Check, 
-  ArrowRight, 
-  Sparkles, 
-  Target, 
-  Zap, 
-  Brain, 
-  ShieldCheck, 
+import {
+  Check,
+  ArrowRight,
+  Sparkles,
+  Target,
+  Zap,
+  Brain,
+  ShieldCheck,
   Activity,
   ChevronDown,
   Play,
@@ -49,30 +49,30 @@ export default function YogaAnatomyMastery() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
         </div>
-        
+
         <div className="container mx-auto px-4 relative z-10 text-white">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-md border border-accent/30 px-4 py-2 rounded-full text-accent-foreground font-semibold mb-6 animate-fade-in">
               <Sparkles className="w-4 h-4" />
               <span className="text-sm uppercase tracking-wider">New Core Positioning</span>
             </div>
-            
+
             <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               Master Yoga Through <span className="text-accent italic">Anatomy</span>, Not Guesswork
             </h1>
-            
+
             <p className="text-xl md:text-2xl font-medium mb-4 italic opacity-90 border-l-4 border-accent pl-6 py-2">
               "Asana brings awareness — anatomy gives it direction."
             </p>
-            
+
             <p className="text-lg md:text-xl mb-10 text-white/80">
               Understand your body. Transform your practice. Teach with confidence.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="xl" 
-                variant="cta" 
+              <Button
+                size="xl"
+                variant="cta"
                 className="text-lg group"
                 onClick={() => setShowQuickEnquiry(true)}
               >
@@ -103,22 +103,22 @@ export default function YogaAnatomyMastery() {
                 </p>
               </div>
             </div>
-            
+
             <div className="space-y-8">
               <div>
                 <span className="text-primary font-bold tracking-widest uppercase text-sm block mb-4">Core Philosophy</span>
                 <SectionHeading centered={false}>
-                  Asana Brings Awareness. <br/>
+                  Asana Brings Awareness. <br />
                   <span className="text-primary">We Teach You How to Understand It.</span>
                 </SectionHeading>
               </div>
-              
+
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  In yoga, awareness begins with movement. 
+                  In yoga, awareness begins with movement.
                   But without understanding the body, that awareness stays incomplete.
                 </p>
-                
+
                 <div className="grid grid-cols-1 gap-4 mt-8">
                   <div className="flex items-center gap-4 bg-secondary/50 p-4 rounded-2xl border border-secondary">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
@@ -133,7 +133,7 @@ export default function YogaAnatomyMastery() {
                     <span className="font-semibold text-primary">And what is actually happening inside your body</span>
                   </div>
                 </div>
-                
+
                 <p className="font-bold text-foreground text-xl pt-4">
                   ✨ This is where real transformation begins.
                 </p>
@@ -150,7 +150,7 @@ export default function YogaAnatomyMastery() {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-16">
             We don’t believe in memorizing muscles. We believe in practical, experiential wisdom.
           </p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { icon: Sparkles, title: "Asana brings awareness", color: "text-amber-500" },
@@ -166,14 +166,14 @@ export default function YogaAnatomyMastery() {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-20 p-8 bg-primary rounded-[2rem] text-white">
             <p className="text-2xl font-heading font-medium mb-8">
               ✨ We trust the depth of our knowledge — so we invite you to experience it yourself.
             </p>
-            <Button 
-              size="lg" 
-              variant="cta" 
+            <Button
+              size="lg"
+              variant="cta"
               className="bg-white text-primary hover:bg-white/90"
               onClick={() => setShowQuickEnquiry(true)}
             >
@@ -190,24 +190,18 @@ export default function YogaAnatomyMastery() {
             <span className="text-primary font-bold tracking-widest uppercase text-sm block mb-4">Two Levels. One Deep Understanding.</span>
             <SectionHeading>Choose Your Path</SectionHeading>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Level 1 */}
             <div className="border-2 border-secondary rounded-[2.5rem] overflow-hidden flex flex-col hover:border-primary/20 transition-colors">
               <div className="bg-secondary p-8">
-                <div className="flex justify-between items-start mb-4">
-                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white">
-                    <span className="font-bold text-xl">01</span>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-3xl font-bold text-primary">$99</span>
-                    <span className="block text-xs uppercase tracking-widest font-bold opacity-60">Investment</span>
-                  </div>
+                <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white mb-4">
+                  <span className="font-bold text-xl">01</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Level 1 – Foundation Anatomy</h3>
                 <p className="text-primary font-medium italic">Perfect for: Beginners & those who feel confused in yoga practice</p>
               </div>
-              
+
               <div className="p-10 flex-grow space-y-8">
                 <div>
                   <h4 className="font-bold text-lg mb-6 flex items-center gap-2">
@@ -227,7 +221,7 @@ export default function YogaAnatomyMastery() {
                     ))}
                   </ul>
                 </div>
-                
+
                 <div className="pt-6 border-t border-secondary">
                   <h4 className="font-bold text-lg mb-6 text-primary">🔥 Interesting Topics:</h4>
                   <div className="flex flex-wrap gap-3">
@@ -247,7 +241,7 @@ export default function YogaAnatomyMastery() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="p-10 pt-0">
                 <Button className="w-full h-14 text-lg" onClick={() => setShowQuickEnquiry(true)}>
                   Book Now
@@ -258,19 +252,13 @@ export default function YogaAnatomyMastery() {
             {/* Level 2 */}
             <div className="border-2 border-primary/20 bg-primary/5 rounded-[2.5rem] overflow-hidden flex flex-col shadow-xl">
               <div className="bg-primary p-8 text-white">
-                <div className="flex justify-between items-start mb-4">
-                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-primary">
-                    <span className="font-bold text-xl">02</span>
-                  </div>
-                  <div className="text-right">
-                    <span className="text-3xl font-bold text-white">$199</span>
-                    <span className="block text-xs uppercase tracking-widest font-bold opacity-60">Investment</span>
-                  </div>
+                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-primary mb-4">
+                  <span className="font-bold text-xl">02</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Level 2 – Applied Anatomy & Biomechanics</h3>
                 <p className="text-accent font-medium italic">Perfect for: Teachers who want to go deeper</p>
               </div>
-              
+
               <div className="p-10 flex-grow space-y-8">
                 <div>
                   <h4 className="font-bold text-lg mb-6 flex items-center gap-2 text-primary">
@@ -290,7 +278,7 @@ export default function YogaAnatomyMastery() {
                     ))}
                   </ul>
                 </div>
-                
+
                 <div className="pt-6 border-t border-primary/10">
                   <h4 className="font-bold text-lg mb-6 text-primary">🔥 Advanced Topics:</h4>
                   <div className="flex flex-wrap gap-3">
@@ -311,7 +299,7 @@ export default function YogaAnatomyMastery() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="p-10 pt-0">
                 <Button variant="cta" className="w-full h-14 text-lg" onClick={() => setShowQuickEnquiry(true)}>
                   Book Now
@@ -328,7 +316,7 @@ export default function YogaAnatomyMastery() {
           <div className="text-center mb-16">
             <SectionHeading light>From Awareness to Understanding</SectionHeading>
           </div>
-          
+
           <div className="max-w-4xl mx-auto relative">
             <div className="absolute top-1/2 left-0 w-full h-1 bg-white/10 -translate-y-1/2 hidden md:block" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
@@ -350,7 +338,7 @@ export default function YogaAnatomyMastery() {
               ))}
             </div>
           </div>
-          
+
           <div className="mt-20 flex flex-wrap justify-center gap-8">
             {["Learn through movement", "Feel before you analyze", "Understand your body's language"].map((tag, i) => (
               <div key={i} className="flex items-center gap-3 bg-white/10 px-6 py-4 rounded-2xl backdrop-blur-sm border border-white/20">
@@ -368,15 +356,15 @@ export default function YogaAnatomyMastery() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <SectionHeading centered={false}>
-                Learn From Teachers Who <br/>
+                Learn From Teachers Who <br />
                 <span className="text-primary">Go Beyond Theory</span>
               </SectionHeading>
-              
+
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Our teachers don’t just explain anatomy — <br/>
+                Our teachers don’t just explain anatomy — <br />
                 <span className="font-bold text-foreground">they help you feel it inside your practice.</span>
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
                   "Yoga teaching excellence",
@@ -390,7 +378,7 @@ export default function YogaAnatomyMastery() {
                   </div>
                 ))}
               </div>
-              
+
               <div className="bg-secondary p-8 rounded-3xl border border-secondary">
                 <p className="text-lg font-bold mb-4">They guide you from:</p>
                 <div className="flex items-center gap-3 text-primary text-xl font-heading">
@@ -402,7 +390,7 @@ export default function YogaAnatomyMastery() {
                 </div>
               </div>
             </div>
-            
+
             <div className="relative">
               <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl relative">
                 <Image
@@ -428,18 +416,18 @@ export default function YogaAnatomyMastery() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="bg-white rounded-[3rem] shadow-2xl overflow-hidden border border-secondary relative">
             <div className="absolute top-0 right-0 w-32 h-32 bg-accent/20 rounded-bl-[10rem] pointer-events-none" />
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="p-12 md:p-16 space-y-8">
                 <div>
                   <span className="text-accent font-bold tracking-widest uppercase text-sm block mb-4">High-Conversion Experience</span>
                   <SectionHeading centered={false}>Experience the Depth Yourself</SectionHeading>
                 </div>
-                
+
                 <p className="text-xl text-muted-foreground italic">
                   "If you experience it once, you’ll understand the difference."
                 </p>
-                
+
                 <div className="space-y-4">
                   <p className="font-bold flex items-center gap-2">
                     <Play className="w-5 h-5 text-primary fill-primary" />
@@ -458,7 +446,7 @@ export default function YogaAnatomyMastery() {
                     ))}
                   </ul>
                 </div>
-                
+
                 <div className="space-y-4 pt-4">
                   <Button size="xl" className="w-full text-lg shadow-xl hover:shadow-2xl transition-all" onClick={() => setShowQuickEnquiry(true)}>
                     Book Your Free Demo Session Today
@@ -468,7 +456,7 @@ export default function YogaAnatomyMastery() {
                   </p>
                 </div>
               </div>
-              
+
               <div className="relative min-h-[400px] hidden lg:block">
                 <Image
                   src={mindfulness}
@@ -489,7 +477,7 @@ export default function YogaAnatomyMastery() {
           <div className="text-center mb-16">
             <SectionHeading>After This Course, You Will:</SectionHeading>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               "Practice with deep awareness",
@@ -511,8 +499,8 @@ export default function YogaAnatomyMastery() {
       {/* ⚡ FINAL CTA */}
       <section className="py-24 bg-primary text-white text-center">
         <div className="container mx-auto px-4 max-w-3xl">
-          <SectionHeading light>Awareness is the First Step. <br/> Understanding is the Next.</SectionHeading>
-          
+          <SectionHeading light>Awareness is the First Step. <br /> Understanding is the Next.</SectionHeading>
+
           <div className="flex flex-col gap-4 mt-12 items-center">
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full border border-white/20">
@@ -520,17 +508,17 @@ export default function YogaAnatomyMastery() {
                 <span className="text-sm font-medium">May 2026 Batch Enrollment Open</span>
               </div>
             </div>
-            
-            <Button 
-              size="xl" 
-              variant="cta" 
+
+            <Button
+              size="xl"
+              variant="cta"
               className="bg-accent text-accent-foreground px-12 group h-20 text-xl font-bold"
               onClick={() => setShowQuickEnquiry(true)}
             >
               Book Your FREE Demo Session Now
               <Play className="ml-3 w-6 h-6 fill-accent-foreground group-hover:scale-110 transition-transform" />
             </Button>
-            
+
             <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-8 opacity-70">
               <div className="flex flex-col items-center">
                 <h4 className="font-bold text-2xl">800+</h4>
