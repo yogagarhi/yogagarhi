@@ -70,8 +70,8 @@ export default function Page() {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "200 Hour Yoga Teacher Training in Bali",
-        "description": fullDescription,
+        "headline": "200 Hour Yoga Teacher Training in Bali | Yogagarhi",
+        "description": "Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation.",
         "image": "https://www.yogagarhi.com/og-image.jpg",
         "author": {
             "@type": "Organization",
@@ -95,8 +95,8 @@ export default function Page() {
     const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": "200 Hour Yoga Teacher Training in Bali",
-        "description": fullDescription,
+        "name": "200 Hour Yoga Teacher Training in Bali | Yogagarhi",
+        "description": "Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation.",
         "inLanguage": "en",
         "educationalCredentialAwarded":
             "RYT 200 Yoga Alliance Certification",

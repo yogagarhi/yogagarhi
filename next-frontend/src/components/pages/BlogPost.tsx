@@ -131,7 +131,7 @@ export default function BlogPost() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="xl" variant="default" asChild>
-                <Link href="/courses/200-hour-yoga-teacher-training-in-bali">View 200-Hour Course</Link>
+                <Link href="/200-hour-yoga-teacher-training-in-bali">View 200-Hour Course</Link>
               </Button>
                <Button size="xl" variant="secondary" asChild>
                 <a href="https://wa.me/+917895350563">Chat on WhatsApp</a>

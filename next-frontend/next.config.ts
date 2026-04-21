@@ -109,6 +109,16 @@ const nextConfig: NextConfig = {
         destination: '/contact-us',
         permanent: true,
       },
+      {
+        source: '/300-hour-yoga-teacher-training-in-rishikesh',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/free-yoga-training',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
 };

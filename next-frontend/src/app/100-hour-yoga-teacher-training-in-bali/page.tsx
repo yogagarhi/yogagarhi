@@ -27,7 +27,7 @@ export function generateMetadata(): Metadata {
             "yoga training ubud"
         ],
         alternates: {
-            canonical: "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali",
+            canonical: "/100-hour-yoga-teacher-training-in-bali",
         },
         robots: {
             index: true,

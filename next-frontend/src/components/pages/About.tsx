@@ -405,7 +405,7 @@ export default function About() {
             Join our yoga teacher training program and transform not just your practice, but your entire life.
           </p>
           <Button variant="hero" size="xl" asChild>
-            <Link href="/contact">Start Your Journey</Link>
+            <Link href="/contact-us">Start Your Journey</Link>
           </Button>
         </div>
       </section>
