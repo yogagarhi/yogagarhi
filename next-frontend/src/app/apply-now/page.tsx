@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-    title: "Apply Now - Register for Yoga Teacher Training | YogaGarhi",
+    title: "Apply Now - Register for Yoga Teacher Training",
     description: "Register for our Yoga Teacher Training courses in Bali. Start your journey to becoming a certified yoga teacher.",
     alternates: {
         canonical: "/apply-now",

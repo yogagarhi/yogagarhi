@@ -9,7 +9,7 @@ type Props = {
 
 export async function generateMetadata(): Promise<Metadata> {
   const course = courseData["300-hour"];
-  const title = "300 Hour Yoga Teacher Training in Bali | Yogagarhi";
+  const title = "300 Hour Yoga Teacher Training in Bali";
   const description = "Join 300 Hour Yoga Teacher Training in Bali, an advanced Yoga Alliance certified course for dedicated practitioners who have already completed a 200 Hour YTT.";
 
   return {

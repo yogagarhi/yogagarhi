@@ -16,8 +16,8 @@ const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
     useEffect(() => {
         const calculateTimeLeft = () => {
             const now = new Date();
-            // Target: 20 days from April 3rd, 2026
-            const target = new Date("2026-04-23T00:00:00");
+            // Target: 20 days from April 29th, 2026
+            const target = new Date("2026-05-19T00:00:00");
 
             const distance = target.getTime() - now.getTime();
 

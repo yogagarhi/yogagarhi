@@ -103,7 +103,6 @@ const courses: NavDropdownItem[] = [
       { name: "100 Hour YTTC", href: "/100-hour-yoga-teacher-training-in-bali" },
       { name: "200 Hour YTTC", href: "/200-hour-yoga-teacher-training-in-bali" },
       { name: "300 Hour YTTC", href: "/300-hour-yoga-teacher-training-in-bali" },
-      { name: "Anatomy Mastery", href: "/yoga-anatomy-mastery" },
     ]
   },
   {
@@ -129,10 +128,15 @@ const sundayItems: NavDropdownItem[] = [
   { name: "Sunday 3", href: "/sunday-schedule#sunday-3", icon: SunIcon3 },
 ];
 
+const onlineCourses: NavDropdownItem[] = [
+  { name: "Anatomy Mastery", href: "/yoga-anatomy-mastery", icon: Sparkles },
+];
+
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "#", dropdown: aboutItems },
   { name: "Courses", href: "#", dropdown: courses },
+  { name: "Online Courses", href: "#", dropdown: onlineCourses },
   { name: "Gallery", href: "/gallery" },
   { name: "Sunday Schedule", href: "/sunday-schedule", dropdown: sundayItems },
   { name: "Blogs", href: "/blogs" },
@@ -169,6 +173,7 @@ export default function Header() {
 
   const isActive = (href: string) => pathname === href;
   const isCoursesActive = pathname.includes("-hour-yoga-teacher-training-in-bali");
+  const isOnlineCoursesActive = pathname === "/yoga-anatomy-mastery";
   const isAboutActive = pathname === "/about-school" || pathname === "/teachers" || pathname === "/testimonials";
   const isSundayActive = pathname === "/sunday-schedule";
 
@@ -180,7 +185,7 @@ export default function Header() {
           <div className="flex items-center gap-2 whitespace-nowrap animate-pulse">
             <Sparkles className="w-4 h-4 text-amber-300" />
             <span className="text-xs sm:text-sm font-bold tracking-wide uppercase">
-              Easter Sale 🎉 Flat <span className="text-amber-300 font-extrabold">$300 OFF</span> on May to July batches
+              Summer Sale 🎉 Flat <span className="text-amber-300 font-extrabold">$300 OFF</span> on May to July batches
             </span>
           </div>
 
@@ -231,6 +236,7 @@ export default function Header() {
                 {navLinks.map((link, index) => {
                   const isDropdownActive = link.name === 'Courses' ? isCoursesActive :
                     link.name === 'About' ? isAboutActive :
+                      link.name === 'Online Courses' ? isOnlineCoursesActive :
                       link.name === 'Sunday Schedule' ? isSundayActive : false;
                   return (
                     <div key={link.name} className="relative">
@@ -396,6 +402,7 @@ export default function Header() {
             {navLinks.map((link) => {
               const isMobileDropdownActive = link.name === 'Courses' ? isCoursesActive :
                 link.name === 'About' ? isAboutActive :
+                  link.name === 'Online Courses' ? isOnlineCoursesActive :
                   link.name === 'Sunday Schedule' ? isSundayActive : false;
               const isThisDropdownOpen = mobileOpenDropdown === link.name;
 

@@ -9,7 +9,7 @@ export function generateMetadata(): Metadata {
     const course = courseData["100-hour-rishikesh"];
 
     const title =
-        "100 Hour Yoga Teacher Training in Rishikesh | Beginner Yoga TTC – YogaGarhi";
+        "100 Hour Yoga Teacher Training in Rishikesh";
 
     const description =
         "Can we do 100 hour yoga teacher training in Rishikesh? Yes. Join YogaGarhi’s beginner-friendly residential 100 Hour Yoga TTC designed for short stays, deep yogic practice, and authentic learning in Rishikesh, India.";

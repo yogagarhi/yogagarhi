@@ -45,7 +45,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.level || isLoading) return;
+    if (!formData.name || !formData.email || isLoading) return;
 
     setIsLoading(true);
 
@@ -171,39 +171,14 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
                   </div>
                 </div>
 
-                {/* Level selection using premium card options - High Conversion UI */}
-                <div className="space-y-3">
-                  <Label className="text-sm font-bold text-gray-700 ml-1">Your Yoga Level</Label>
-                  <div className="grid grid-cols-2 gap-3">
-                    {[
-                      { id: "Level 1", label: "Level 1 (Beginner)", icon: "🌱" },
-                      { id: "Level 2", label: "Level 2 (Intermediate)", icon: "🧘" }
-                    ].map((level) => (
-                      <button
-                        key={level.id}
-                        type="button"
-                        onClick={() => handleChange("level", level.id)}
-                        className={`flex flex-col items-center justify-center p-4 rounded-2xl border-2 transition-all duration-300 ${
-                          formData.level === level.id
-                            ? "bg-[#2D7A70]/5 border-[#2D7A70] shadow-md shadow-[#2D7A70]/10"
-                            : "bg-gray-50/50 border-gray-100 hover:border-[#2D7A70]/30 hover:bg-white"
-                        }`}
-                      >
-                        <span className="text-2xl mb-1">{level.icon}</span>
-                        <span className={`text-xs font-bold ${formData.level === level.id ? "text-[#2D7A70]" : "text-gray-500"}`}>
-                          {level.label}
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-                </div>
+
 
                 {/* Message */}
                 <div className="space-y-2">
                   <Label htmlFor="q-message" className="text-sm font-bold text-gray-700 ml-1">Message (Optional)</Label>
                   <Textarea
                     id="q-message"
-                    placeholder="Tell us about your yoga goals or any specific questions..."
+                    placeholder="Tell us about the suitable time and date for free session..."
                     value={formData.message}
                     onChange={(e) => handleChange("message", e.target.value)}
                     rows={3}
@@ -217,11 +192,11 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
                 <Button
                   onClick={handleSubmit}
                   className={`w-full h-14 text-lg font-bold rounded-2xl shadow-xl transition-all duration-500 flex items-center justify-center gap-3 ${
-                    formData.name && formData.email && formData.level
+                    formData.name && formData.email
                       ? "bg-[#2D7A70] hover:bg-[#1a4d46] hover:scale-[1.01] shadow-[#2D7A70]/20 text-white"
                       : "bg-gray-200 text-gray-400 cursor-not-allowed"
                   }`}
-                  disabled={isLoading || !formData.name || !formData.email || !formData.level}
+                  disabled={isLoading || !formData.name || !formData.email}
                 >
                   {isLoading ? (
                     "Sending Inquiry..."
@@ -234,7 +209,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
                 </Button>
                 <div className="mt-5 flex items-center justify-center gap-2 text-[10px] text-gray-400 uppercase tracking-[0.2em] font-bold">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                  Free 15-Min Live Demo Session
+                  Free 60-Min Live Demo Session
                 </div>
               </div>
             </>

@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "himalayan-roots-yoga": "The Himalayan Roots of Authentic Yoga",
     };
 
-    const title = titles[slug] || "Blog - YogaGarhi Insights & Wisdom";
+    const title = titles[slug] || "Blog - Insights & Wisdom";
 
     return {
         title: title,

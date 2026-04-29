@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import ThankYou from "@/components/pages/ThankYou";
 
 export const metadata: Metadata = {
-    title: "Thank You | Yogagarhi",
+    title: "Thank You",
     description: "Thank you for your enrollment request.",
     robots: {
         index: false,

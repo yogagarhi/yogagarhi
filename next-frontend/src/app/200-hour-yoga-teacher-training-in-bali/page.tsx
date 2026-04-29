@@ -8,7 +8,7 @@ import { courseData } from "@/constants/courses";
 export function generateMetadata(): Metadata {
     const course = courseData["200-hour"];
 
-    const title = "200 Hour Yoga Teacher Training in Bali | Yogagarhi";
+    const title = "200 Hour Yoga Teacher Training in Bali";
 
     const description = "Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation.";
 
