@@ -51,7 +51,7 @@ export default function YogaAnatomyMastery() {
     <Layout>
       {/* 🧘‍♂️ HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 pointer-events-none">
           <Image
             src={heroImage}
             alt="Functional Anatomy of Yoga"
@@ -62,8 +62,8 @@ export default function YogaAnatomyMastery() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
         </div>
 
-        <div className="container mx-auto px-4 relative z-10 text-white">
-          <div className="max-w-3xl pt-20">
+        <div className="container mx-auto px-4 relative z-30 text-white pointer-events-auto">
+          <div className="max-w-3xl pt-20 pb-16 lg:pb-0">
             <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-md border border-accent/30 px-4 py-2 rounded-full text-accent font-semibold mb-6 animate-fade-in">
               <Sparkles className="w-4 h-4" />
               <span className="text-sm uppercase tracking-wider">Yogagarhi Presents</span>
@@ -85,14 +85,14 @@ export default function YogaAnatomyMastery() {
               Move beyond simply practicing yoga — start understanding the science of movement, alignment, and the body. We are excited to offer our 25-hour Functional Anatomy of Yoga Course, designed to help you build a deep, practical understanding of how the body moves in yoga — so you can practice and teach safely, intelligently, and effectively.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 relative z-50">
               <Button
                 size="xl"
                 variant="cta"
-                className="text-lg group bg-accent text-accent-foreground hover:bg-accent/90"
+                className="text-lg group bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto"
                 onClick={() => setShowQuickEnquiry(true)}
               >
-                Book Free Demo • $149
+                Book Free Demo
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
@@ -550,7 +550,7 @@ export default function YogaAnatomyMastery() {
             <p className="text-5xl font-heading font-bold text-primary mb-6">$149 <span className="text-xl text-muted-foreground font-normal">USD</span></p>
             <Button
               size="xl"
-              className="w-full text-lg h-16 bg-primary hover:bg-primary/90 text-white shadow-xl hover:shadow-2xl transition-all"
+              className="w-full text-lg h-16 bg-primary hover:bg-primary/90 text-white shadow-xl hover:shadow-2xl transition-all relative z-50"
               onClick={() => setShowQuickEnquiry(true)}
             >
               Book Free Demo

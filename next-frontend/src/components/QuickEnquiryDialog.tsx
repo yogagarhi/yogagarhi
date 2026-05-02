@@ -100,7 +100,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
     <QuickEnquiryContext.Provider value={{ showQuickEnquiry, setShowQuickEnquiry }}>
       {children}
       <Dialog open={showQuickEnquiry} onOpenChange={handleOpenChange}>
-        <DialogContent className="sm:max-w-lg !p-0 gap-0 overflow-hidden border-0 shadow-2xl bg-white rounded-3xl">
+        <DialogContent className="sm:max-w-lg !p-0 gap-0 overflow-hidden border-0 shadow-2xl bg-white rounded-3xl [&>button]:!text-white [&>button]:!opacity-100 [&>button]:!bg-white/20 hover:[&>button]:!bg-white/30 [&>button]:!rounded-full [&>button]:!p-1.5 [&>button>svg]:!w-5 [&>button>svg]:!h-5 [&>button]:!right-5 [&>button]:!top-5 transition-all">
           {/* Header Section - Vibrant Brand Gradient */}
           <div className="bg-[#2D7A70] bg-gradient-to-br from-[#2D7A70] to-[#1a4d46] px-6 pt-10 pb-8 sm:px-10 text-white relative text-center">
             <div className="flex flex-col items-center">

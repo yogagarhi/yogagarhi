@@ -136,7 +136,7 @@ export function EnrollmentProvider({ children }: { children: ReactNode }) {
     <EnrollmentContext.Provider value={{ showEnrollDialog, setShowEnrollDialog, navigateToEnrollment }}>
       {children}
       <Dialog open={showEnrollDialog} onOpenChange={handleOpenChange}>
-        <DialogContent className="sm:max-w-lg p-0 gap-0 overflow-hidden border-0 shadow-2xl bg-background">
+        <DialogContent className="sm:max-w-lg p-0 gap-0 overflow-hidden border-0 shadow-2xl bg-background [&>button]:!text-white [&>button]:!opacity-100 [&>button]:!bg-white/20 hover:[&>button]:!bg-white/30 [&>button]:!rounded-full [&>button]:!p-1.5 [&>button>svg]:!w-5 [&>button>svg]:!h-5 [&>button]:!right-5 [&>button]:!top-5 transition-all">
           {/* Premium Gradient Header */}
           <div className="bg-gradient-to-br from-primary to-primary/80 px-6 pt-8 pb-6 sm:px-8 text-primary-foreground relative">
             <div className="pr-8">
