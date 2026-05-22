@@ -185,7 +185,7 @@ export default function Header() {
           <div className="flex items-center gap-2 whitespace-nowrap animate-pulse">
             <Sparkles className="w-4 h-4 text-amber-300" />
             <span className="text-xs sm:text-sm font-bold tracking-wide uppercase">
-              Summer Sale 🎉 Flat <span className="text-amber-300 font-extrabold">$300 OFF</span> on May to July batches
+              Summer Sale 🎉 Flat <span className="text-amber-300 font-extrabold">$300 OFF</span> on August to December batches
             </span>
           </div>
 

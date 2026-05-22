@@ -16,13 +16,17 @@ const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
     useEffect(() => {
         const calculateTimeLeft = () => {
             const now = new Date();
-            // Target: 20 days from April 29th, 2026
-            const target = new Date("2026-05-19T00:00:00");
+            // Use a fixed reference epoch for the 15-day cycle
+            const referenceDate = new Date("2026-05-22T00:00:00Z");
+            const cycleMs = 15 * 24 * 60 * 60 * 1000; // 15 days in ms
 
-            const distance = target.getTime() - now.getTime();
-
-            if (distance < 0) {
-                return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+            let distance;
+            if (now.getTime() < referenceDate.getTime()) {
+                distance = referenceDate.getTime() - now.getTime();
+            } else {
+                const elapsedMs = now.getTime() - referenceDate.getTime();
+                const timeInCurrentCycle = elapsedMs % cycleMs;
+                distance = cycleMs - timeInCurrentCycle;
             }
 
             return {

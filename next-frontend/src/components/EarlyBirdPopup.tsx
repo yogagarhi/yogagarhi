@@ -78,7 +78,7 @@ const EarlyBirdPopup = () => {
             <div className="relative -mx-6 my-2">
               <div className="bg-primary py-2 px-4 transform -rotate-2">
                 <span className="text-primary-foreground font-heading text-lg font-bold">
-                  May to July batches
+                  August to December batches
                 </span>
               </div>
             </div>

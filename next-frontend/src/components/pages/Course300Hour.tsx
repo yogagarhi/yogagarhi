@@ -1,4 +1,5 @@
 "use client";
+import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -975,7 +976,7 @@ export default function Course300Hour() {
               <p className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.3em] opacity-90 animate-fade-in mb-4 uppercase text-white/90" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
                 Welcome To
               </p>
-              <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold leading-tight mb-6 drop-shadow-2xl">
+              <div className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold leading-tight mb-6 drop-shadow-2xl">
                 {"Yogagarhi".split("").map((char, index) => (
                   <span
                     key={index}
@@ -988,11 +989,11 @@ export default function Course300Hour() {
                     {char}
                   </span>
                 ))}
-              </h1>
+              </div>
 
-              <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tight opacity-0 animate-fade-in text-primary-foreground/95 leading-tight mb-8" style={{ animationDelay: '1.2s', animationFillMode: 'forwards' }}>
-                300 Hour Yoga Teacher Training in Bali
-              </h2>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tight opacity-0 animate-fade-in text-primary-foreground/95 leading-tight mb-8" style={{ animationDelay: '1.2s', animationFillMode: 'forwards' }}>
+                300 Hour Yoga Teacher Training Bali
+              </h1>
 
               <div className="space-y-10 opacity-0 animate-fade-in mb-12" style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}>
                 <p className="text-2xl md:text-4xl font-medium max-w-5xl mx-auto leading-relaxed text-white">
@@ -1285,7 +1286,7 @@ export default function Course300Hour() {
                   <div className="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 shadow-inner">
                     <div className="flex items-center gap-2 text-orange-700 font-bold text-sm mb-1 uppercase tracking-tight">
                       <Calendar className="w-4 h-4" />
-                      Next Batch: 14th & 15th March
+                      Next Batch: <DynamicBatchDate />
                     </div>
                     <div className="flex items-center gap-2 text-orange-600/80 text-xs font-semibold mb-2">
                       <Clock className="w-4 h-4" />
@@ -1411,7 +1412,7 @@ export default function Course300Hour() {
                       <div className="flex-1 space-y-2">
                         <div className="flex items-center gap-3 text-orange-800 font-extrabold text-lg leading-none">
                           <Calendar className="w-5 h-5 text-orange-600" />
-                          Next Batch: 14th & 15th March
+                          Next Batch: <DynamicBatchDate />
                         </div>
                         <div className="flex items-center gap-3 text-orange-700 font-semibold text-sm">
                           <Clock className="w-4 h-4 text-orange-500" />
