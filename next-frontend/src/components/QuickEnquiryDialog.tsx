@@ -57,8 +57,8 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
         },
         body: JSON.stringify({
           ...formData,
-          _subject: `New Free Demo Request from ${formData.name}`,
-          _autoresponder: "Namaste! Thank you for your interest in our free demo session. We have received your request and will contact you within 24 hours to schedule the demo. We look forward to meeting you!"
+          _subject: `New Booking Request from ${formData.name}`,
+          _autoresponder: "Namaste! Thank you for your interest in our course. We have received your request and will contact you within 24 hours to assist you with the booking process. We look forward to meeting you!"
         }),
       });
 
@@ -108,11 +108,11 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
                 <GraduationCap className="w-10 h-10 text-white" />
               </div>
               <DialogTitle className="font-heading text-3xl sm:text-4xl font-bold mb-2 text-white">
-                {isSubmitted ? "Thank You!" : "Book Free Demo Now"}
+                {isSubmitted ? "Thank You!" : "Book Now"}
               </DialogTitle>
               {!isSubmitted && (
                 <p className="text-white/80 text-sm max-w-[280px] mx-auto leading-relaxed font-medium">
-                  Experience our authentic yoga path. Fill the form to book your free orientation demo.
+                  Experience our authentic yoga path. Fill the form to book your spot in the course.
                 </p>
               )}
             </div>
@@ -128,7 +128,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
                   Inquiry Received!
                 </h3>
                 <p className="text-muted-foreground leading-relaxed max-w-sm">
-                  Namaste! We&#39;ve received your request. Our team will contact you within 24 hours to schedule your free demo.
+                  Namaste! We&#39;ve received your request. Our team will contact you within 24 hours to help you complete your booking.
                 </p>
               </div>
               <Button 
@@ -178,7 +178,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
                   <Label htmlFor="q-message" className="text-sm font-bold text-gray-700 ml-1">Message (Optional)</Label>
                   <Textarea
                     id="q-message"
-                    placeholder="Tell us about the suitable time and date for free session..."
+                    placeholder="Tell us any questions or messages you have..."
                     value={formData.message}
                     onChange={(e) => handleChange("message", e.target.value)}
                     rows={3}
@@ -202,14 +202,14 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
                     "Sending Inquiry..."
                   ) : (
                     <>
-                      Book Free Demo
+                      Book Now
                       <ArrowRight className="w-5 h-5" />
                     </>
                   )}
                 </Button>
                 <div className="mt-5 flex items-center justify-center gap-2 text-[10px] text-gray-400 uppercase tracking-[0.2em] font-bold">
                   <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                  Free 60-Min Live Demo Session
+                  Secure Your Spot Today
                 </div>
               </div>
             </>
