@@ -2269,9 +2269,11 @@ export default function Course200HourRishikesh() {
                   variant="default"
                   size="lg"
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                  onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
+                  asChild
                 >
-                  Claim $450 Bali Explorer Gift
+                  <Link href="/sunday-schedule">
+                    Explore Sunday in Rishikesh
+                  </Link>
                 </Button>
 
                 {/* Special Offer Box */}
