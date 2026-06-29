@@ -2201,169 +2201,6 @@ export default function Course200HourRishikesh() {
 
 
 
-        {/* ===== VIDEO TESTIMONIALS ===== */}
-        <section className="py-20 bg-secondary/30 relative overflow-hidden">
-          {/* Enhanced Yoga-themed Background Art with Animations */}
-          <div className="absolute inset-0 pointer-events-none">
-            {/* Large Chakra Wheel - Center */}
-            <svg className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] text-primary/[0.04] animate-float-gentle" viewBox="0 0 100 100" fill="none" stroke="currentColor">
-              <circle cx="50" cy="50" r="48" strokeWidth="0.2" />
-              <circle cx="50" cy="50" r="40" strokeWidth="0.2" />
-              <circle cx="50" cy="50" r="32" strokeWidth="0.2" />
-              <circle cx="50" cy="50" r="24" strokeWidth="0.2" />
-              <circle cx="50" cy="50" r="16" strokeWidth="0.2" />
-              {/* 8-pointed star */}
-              {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => (
-                <line key={i} x1="50" y1="50" x2={50 + 48 * Math.cos(angle * Math.PI / 180)} y2={50 + 48 * Math.sin(angle * Math.PI / 180)} strokeWidth="0.15" />
-              ))}
-            </svg>
-
-            {/* Sri Yantra - Top Left */}
-            <svg className="absolute -top-5 -left-5 w-56 h-56 text-primary/[0.05] animate-float" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.5">
-              <polygon points="50,5 95,90 5,90" />
-              <polygon points="50,95 5,10 95,10" />
-              <polygon points="50,20 78,75 22,75" />
-              <polygon points="50,80 22,25 78,25" />
-              <circle cx="50" cy="50" r="20" />
-              <circle cx="50" cy="50" r="30" />
-              <circle cx="50" cy="50" r="40" />
-            </svg>
-
-            {/* Lotus Flower - Bottom Right */}
-            <svg className="absolute -bottom-10 -right-10 w-72 h-72 text-primary/[0.04] animate-float-slow" style={{ animationDelay: '2s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.4">
-              {/* Outer petals */}
-              <ellipse cx="50" cy="50" rx="10" ry="35" />
-              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(30 50 50)" />
-              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(60 50 50)" />
-              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(90 50 50)" />
-              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(120 50 50)" />
-              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(150 50 50)" />
-              {/* Inner petals */}
-              <ellipse cx="50" cy="50" rx="6" ry="20" />
-              <ellipse cx="50" cy="50" rx="6" ry="20" transform="rotate(45 50 50)" />
-              <ellipse cx="50" cy="50" rx="6" ry="20" transform="rotate(90 50 50)" />
-              <ellipse cx="50" cy="50" rx="6" ry="20" transform="rotate(135 50 50)" />
-              {/* Center */}
-              <circle cx="50" cy="50" r="8" />
-            </svg>
-
-            {/* Om Symbol - Top Right */}
-            <svg className="absolute top-16 right-20 w-36 h-36 text-primary/[0.06] animate-float-gentle" style={{ animationDelay: '1s' }} viewBox="0 0 100 100" fill="currentColor">
-              <path d="M28,68 C18,68 12,58 12,48 C12,32 24,22 40,22 C56,22 62,34 62,44 C62,56 50,62 44,62 C38,62 32,56 32,48 C32,42 38,38 44,38" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-              <path d="M62,44 C62,32 74,26 80,32 C86,38 80,50 74,56 L68,72" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-              <path d="M74,18 C80,18 84,24 84,30" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-              <circle cx="88" cy="14" r="4" />
-            </svg>
-
-            {/* Seed of Life - Left Center */}
-            <svg className="absolute top-1/3 -left-10 w-48 h-48 text-primary/[0.04] animate-float" style={{ animationDelay: '3s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.4">
-              <circle cx="50" cy="50" r="18" />
-              <circle cx="50" cy="32" r="18" />
-              <circle cx="65.6" cy="41" r="18" />
-              <circle cx="65.6" cy="59" r="18" />
-              <circle cx="50" cy="68" r="18" />
-              <circle cx="34.4" cy="59" r="18" />
-              <circle cx="34.4" cy="41" r="18" />
-            </svg>
-
-            {/* Mandala - Bottom Left */}
-            <svg className="absolute bottom-20 left-16 w-44 h-44 text-primary/[0.04] animate-float-slow" style={{ animationDelay: '4s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.3">
-              <circle cx="50" cy="50" r="45" />
-              <circle cx="50" cy="50" r="36" />
-              <circle cx="50" cy="50" r="27" />
-              <circle cx="50" cy="50" r="18" />
-              <circle cx="50" cy="50" r="9" />
-              {/* Decorative petals */}
-              {isMounted && [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle, i) => (
-                <ellipse key={i} cx={50 + 36 * Math.cos(angle * Math.PI / 180)} cy={50 + 36 * Math.sin(angle * Math.PI / 180)} rx="4" ry="8" transform={`rotate(${angle} ${50 + 36 * Math.cos(angle * Math.PI / 180)} ${50 + 36 * Math.sin(angle * Math.PI / 180)})`} />
-              ))}
-            </svg>
-
-            {/* Merudanda (Spine/Chakras) - Right Side */}
-            <svg className="absolute top-1/4 right-8 w-20 h-80 text-primary/[0.05] animate-float-gentle" style={{ animationDelay: '2.5s' }} viewBox="0 0 40 160" fill="none" stroke="currentColor" strokeWidth="0.5">
-              {/* Spine line */}
-              <line x1="20" y1="10" x2="20" y2="150" strokeWidth="0.3" />
-              {/* 7 Chakras */}
-              <circle cx="20" cy="20" r="8" />
-              <circle cx="20" cy="40" r="7" />
-              <circle cx="20" cy="60" r="7" />
-              <circle cx="20" cy="80" r="8" />
-              <circle cx="20" cy="100" r="7" />
-              <circle cx="20" cy="120" r="7" />
-              <circle cx="20" cy="140" r="9" />
-            </svg>
-          </div>
-
-          <div className="container mx-auto px-4 relative z-10">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4 italic">
-              Choosing a Teacher Training Is Deeply Personal
-            </h2>
-            {/* Decorative Lotus Icon */}
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
-              <svg className="w-10 h-6 text-primary" viewBox="0 0 40 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <ellipse cx="20" cy="12" rx="4" ry="10" />
-                <ellipse cx="20" cy="12" rx="4" ry="10" transform="rotate(60 20 12)" />
-                <ellipse cx="20" cy="12" rx="4" ry="10" transform="rotate(-60 20 12)" />
-                <circle cx="20" cy="12" r="2" fill="currentColor" />
-              </svg>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
-            </div>
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
-              Here’s what one student felt after taking that step.
-            </p>
-
-            <div className="max-w-2xl mx-auto mb-12">
-              <div className="relative aspect-video rounded-lg overflow-hidden bg-muted shadow-card">
-                <iframe
-                  src="https://www.youtube.com/embed/OGmWr_aC4WA?rel=0"
-                  title="Student testimonial"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </div>
-            </div>
-
-            <div className="text-center">
-              <div className="flex flex-col items-center gap-6">
-                <h3 className="font-heading text-2xl font-medium text-foreground">
-                  Talk to Us Personally
-                </h3>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <Button
-                    variant="outline"
-                    className="h-12 px-6 rounded-xl text-base gap-2.5 border-primary/20 bg-background/80 hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 shadow-sm hover:shadow-md"
-                    asChild
-                  >
-                    <a
-                      href="https://wa.me/+917895350563"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <MessageCircle className="w-5 h-5" />
-                      WhatsApp
-                    </a>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="h-12 px-6 rounded-xl text-base gap-2.5 border-primary/20 bg-background/80 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md"
-                    asChild
-                  >
-                    <a href="mailto:yogagarhi@gmail.com">
-                      <Mail className="w-5 h-5" />
-                      Email Us
-                    </a>
-                  </Button>
-
-
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <HomeGallerySection />
 
         {/* COURSE_SYLLABUS_MOVED_UP */}
@@ -2603,6 +2440,168 @@ export default function Course200HourRishikesh() {
         </section >
 
         <FounderSection />
+
+        {/* ===== VIDEO TESTIMONIALS ===== */}
+        <section className="py-20 bg-secondary/30 relative overflow-hidden">
+          {/* Enhanced Yoga-themed Background Art with Animations */}
+          <div className="absolute inset-0 pointer-events-none">
+            {/* Large Chakra Wheel - Center */}
+            <svg className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] text-primary/[0.04] animate-float-gentle" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+              <circle cx="50" cy="50" r="48" strokeWidth="0.2" />
+              <circle cx="50" cy="50" r="40" strokeWidth="0.2" />
+              <circle cx="50" cy="50" r="32" strokeWidth="0.2" />
+              <circle cx="50" cy="50" r="24" strokeWidth="0.2" />
+              <circle cx="50" cy="50" r="16" strokeWidth="0.2" />
+              {/* 8-pointed star */}
+              {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => (
+                <line key={i} x1="50" y1="50" x2={50 + 48 * Math.cos(angle * Math.PI / 180)} y2={50 + 48 * Math.sin(angle * Math.PI / 180)} strokeWidth="0.15" />
+              ))}
+            </svg>
+
+            {/* Sri Yantra - Top Left */}
+            <svg className="absolute -top-5 -left-5 w-56 h-56 text-primary/[0.05] animate-float" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.5">
+              <polygon points="50,5 95,90 5,90" />
+              <polygon points="50,95 5,10 95,10" />
+              <polygon points="50,20 78,75 22,75" />
+              <polygon points="50,80 22,25 78,25" />
+              <circle cx="50" cy="50" r="20" />
+              <circle cx="50" cy="50" r="30" />
+              <circle cx="50" cy="50" r="40" />
+            </svg>
+
+            {/* Lotus Flower - Bottom Right */}
+            <svg className="absolute -bottom-10 -right-10 w-72 h-72 text-primary/[0.04] animate-float-slow" style={{ animationDelay: '2s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.4">
+              {/* Outer petals */}
+              <ellipse cx="50" cy="50" rx="10" ry="35" />
+              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(30 50 50)" />
+              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(60 50 50)" />
+              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(90 50 50)" />
+              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(120 50 50)" />
+              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(150 50 50)" />
+              {/* Inner petals */}
+              <ellipse cx="50" cy="50" rx="6" ry="20" transform="rotate(45 50 50)" />
+              <ellipse cx="50" cy="50" rx="6" ry="20" transform="rotate(90 50 50)" />
+              <ellipse cx="50" cy="50" rx="6" ry="20" transform="rotate(135 50 50)" />
+              {/* Center */}
+              <circle cx="50" cy="50" r="8" />
+            </svg>
+
+            {/* Om Symbol - Top Right */}
+            <svg className="absolute top-16 right-20 w-36 h-36 text-primary/[0.06] animate-float-gentle" style={{ animationDelay: '1s' }} viewBox="0 0 100 100" fill="currentColor">
+              <path d="M28,68 C18,68 12,58 12,48 C12,32 24,22 40,22 C56,22 62,34 62,44 C62,56 50,62 44,62 C38,62 32,56 32,48 C32,42 38,38 44,38" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+              <path d="M62,44 C62,32 74,26 80,32 C86,38 80,50 74,56 L68,72" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+              <path d="M74,18 C80,18 84,24 84,30" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+              <circle cx="88" cy="14" r="4" />
+            </svg>
+
+            {/* Seed of Life - Left Center */}
+            <svg className="absolute top-1/3 -left-10 w-48 h-48 text-primary/[0.04] animate-float" style={{ animationDelay: '3s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.4">
+              <circle cx="50" cy="50" r="18" />
+              <circle cx="50" cy="32" r="18" />
+              <circle cx="65.6" cy="41" r="18" />
+              <circle cx="65.6" cy="59" r="18" />
+              <circle cx="50" cy="68" r="18" />
+              <circle cx="34.4" cy="59" r="18" />
+              <circle cx="34.4" cy="41" r="18" />
+            </svg>
+
+            {/* Mandala - Bottom Left */}
+            <svg className="absolute bottom-20 left-16 w-44 h-44 text-primary/[0.04] animate-float-slow" style={{ animationDelay: '4s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.3">
+              <circle cx="50" cy="50" r="45" />
+              <circle cx="50" cy="50" r="36" />
+              <circle cx="50" cy="50" r="27" />
+              <circle cx="50" cy="50" r="18" />
+              <circle cx="50" cy="50" r="9" />
+              {/* Decorative petals */}
+              {isMounted && [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle, i) => (
+                <ellipse key={i} cx={50 + 36 * Math.cos(angle * Math.PI / 180)} cy={50 + 36 * Math.sin(angle * Math.PI / 180)} rx="4" ry="8" transform={`rotate(${angle} ${50 + 36 * Math.cos(angle * Math.PI / 180)} ${50 + 36 * Math.sin(angle * Math.PI / 180)})`} />
+              ))}
+            </svg>
+
+            {/* Merudanda (Spine/Chakras) - Right Side */}
+            <svg className="absolute top-1/4 right-8 w-20 h-80 text-primary/[0.05] animate-float-gentle" style={{ animationDelay: '2.5s' }} viewBox="0 0 40 160" fill="none" stroke="currentColor" strokeWidth="0.5">
+              {/* Spine line */}
+              <line x1="20" y1="10" x2="20" y2="150" strokeWidth="0.3" />
+              {/* 7 Chakras */}
+              <circle cx="20" cy="20" r="8" />
+              <circle cx="20" cy="40" r="7" />
+              <circle cx="20" cy="60" r="7" />
+              <circle cx="20" cy="80" r="8" />
+              <circle cx="20" cy="100" r="7" />
+              <circle cx="20" cy="120" r="7" />
+              <circle cx="20" cy="140" r="9" />
+            </svg>
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4 italic">
+              Choosing a Teacher Training Is Deeply Personal
+            </h2>
+            {/* Decorative Lotus Icon */}
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
+              <svg className="w-10 h-6 text-primary" viewBox="0 0 40 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <ellipse cx="20" cy="12" rx="4" ry="10" />
+                <ellipse cx="20" cy="12" rx="4" ry="10" transform="rotate(60 20 12)" />
+                <ellipse cx="20" cy="12" rx="4" ry="10" transform="rotate(-60 20 12)" />
+                <circle cx="20" cy="12" r="2" fill="currentColor" />
+              </svg>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
+            </div>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
+              Here’s what one student felt after taking that step.
+            </p>
+
+            <div className="max-w-2xl mx-auto mb-12">
+              <div className="relative aspect-video rounded-lg overflow-hidden bg-muted shadow-card">
+                <iframe
+                  src="https://www.youtube.com/embed/OGmWr_aC4WA?rel=0"
+                  title="Student testimonial"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+
+            <div className="text-center">
+              <div className="flex flex-col items-center gap-6">
+                <h3 className="font-heading text-2xl font-medium text-foreground">
+                  Talk to Us Personally
+                </h3>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <Button
+                    variant="outline"
+                    className="h-12 px-6 rounded-xl text-base gap-2.5 border-primary/20 bg-background/80 hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 shadow-sm hover:shadow-md"
+                    asChild
+                  >
+                    <a
+                      href="https://wa.me/+917895350563"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <MessageCircle className="w-5 h-5" />
+                      WhatsApp
+                    </a>
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="h-12 px-6 rounded-xl text-base gap-2.5 border-primary/20 bg-background/80 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md"
+                    asChild
+                  >
+                    <a href="mailto:yogagarhi@gmail.com">
+                      <Mail className="w-5 h-5" />
+                      Email Us
+                    </a>
+                  </Button>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* ===== ACCOMMODATION ===== */}
         {/* Hero Banner with Background */}
