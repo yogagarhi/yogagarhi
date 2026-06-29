@@ -1983,281 +1983,6 @@ export default function Course200HourRishikesh() {
         </section>
 
 
-        {/* ===== WHAT YOU WILL RECEIVE ===== */}
-        <section className="py-20 bg-background overflow-hidden">
-          <div className="container mx-auto px-4">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
-              What You Will Receive in This Training
-            </h2>
-            {/* Decorative Mandala Icon */}
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
-              <svg className="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1">
-                <circle cx="20" cy="20" r="16" />
-                <circle cx="20" cy="20" r="6" strokeDasharray="2 2" />
-                {/* Orbital dots */}
-                {isMounted && [0, 60, 120, 180, 240, 300].map((angle, i) => (
-                  <circle key={i} cx={20 + 10 * Math.cos(angle * Math.PI / 180)} cy={20 + 10 * Math.sin(angle * Math.PI / 180)} r="3" fill="currentColor" />
-                ))}
-              </svg>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
-            </div>
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
-              Everything you need to live, learn, and grow — fully supported
-            </p>
-
-            {/* Horizontal Scrollable Flip Cards */}
-            <div className="relative">
-              {/* Gradient fade edges */}
-              <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-              <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
-
-              <div className="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4">
-                <div className="flex gap-6" style={{ width: 'max-content' }}>
-                  {whatYouWillReceive.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flip-card w-64 h-72 flex-shrink-0 cursor-pointer"
-                      onClick={(e) => {
-                        const card = e.currentTarget;
-                        card.classList.toggle('flipped');
-                      }}
-                    >
-                      <div className="flip-card-inner relative w-full h-full transition-transform duration-500 transform-style-preserve-3d">
-                        {/* Front - Image */}
-                        <div className="flip-card-front absolute w-full h-full backface-hidden rounded-xl overflow-hidden border border-border shadow-card">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            fill
-                            className="object-cover"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                          <div className="absolute bottom-0 left-0 right-0 p-5">
-                            <h3 className="font-heading text-lg font-semibold text-white text-center">
-                              {item.title}
-                            </h3>
-                            <p className="text-xs text-white/70 mt-1 text-center md:hidden">Tap to see more</p>
-                            <p className="text-xs text-white/70 mt-1 text-center hidden md:block">Hover to see more</p>
-                          </div>
-                        </div>
-
-                        {/* Back - Content */}
-                        <div className="flip-card-back absolute w-full h-full backface-hidden rounded-xl overflow-hidden border border-border shadow-card rotate-y-180 bg-card">
-                          <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center">
-                            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                              <item.icon className="w-7 h-7 text-primary" />
-                            </div>
-                            <h3 className="font-heading text-lg font-semibold text-foreground mb-3">
-                              {item.title}
-                            </h3>
-                            <p className="text-sm text-muted-foreground leading-relaxed">
-                              {item.description}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        {/* ===== WHAT YOU’LL CARRY HOME - UNIQUE COMPACT DESIGN ===== */}
-        <section className="py-16 bg-muted/30 relative overflow-hidden">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
-              {/* Left Column: Heading */}
-              <div className="lg:w-1/3 lg:sticky lg:top-24">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-4">
-                  <Heart className="w-3 h-3 text-primary" fill="currentColor" />
-                  <span className="text-[10px] font-bold tracking-widest uppercase text-primary">The Takeaway</span>
-                </div>
-                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
-                  What You’ll <br />
-                  <span className="text-primary italic">Carry Home</span>
-                </h2>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  Beyond the physical certificate, you walk away with a transformed perspective, a deeper connection to yourself, and the authentic skills to lead others.
-                </p>
-                <div className="mt-6 p-4 rounded-xl bg-primary/5 border border-primary/20 relative overflow-hidden group/box">
-                  <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
-                  <p className="text-xs md:text-sm text-foreground font-medium leading-relaxed relative z-10">
-                    <span className="text-primary font-bold">Career Impact:</span> After completing the 200-Hour Yoga Teacher Training, you can start teaching yoga <strong className="text-foreground">anywhere in the world</strong> in studios, online live classes, yoga retreats, or through your own independent practice.
-                  </p>
-                  <Globe className="absolute -bottom-2 -right-2 w-12 h-12 text-primary/10 group-hover/box:text-primary/20 transition-colors duration-500" />
-                </div>
-                <div className="mt-8 hidden lg:block">
-                  <div className="w-12 h-1 bg-primary/30 rounded-full" />
-                </div>
-              </div>
-
-              {/* Right Column: Compact Grid */}
-              <div className="lg:w-2/3 grid grid-cols-2 gap-x-6 gap-y-10 md:gap-x-12">
-                {[
-                  {
-                    title: "Global Certification",
-                    desc: "Yoga Alliance RYT-200 to start your career anywhere.",
-                    icon: Award
-                  },
-                  {
-                    title: "Master the Practice",
-                    desc: "Expert guidance in Hatha, Vinyasa, Ashtanga & Iyengar.",
-                    icon: Activity
-                  },
-                  {
-                    title: "Safety & Anatomy",
-                    desc: "Learn to teach and practice safely without injuries.",
-                    icon: ShieldCheck
-                  },
-                  {
-                    title: "Spiritual Depth",
-                    desc: "Deep dive into Mantras, Meditation, and Philosophy.",
-                    icon: Sparkles
-                  },
-                  {
-                    title: "Teaching Skills",
-                    desc: "Practical skills to lead, cue, and inspire students.",
-                    icon: GraduationCap
-                  },
-                  {
-                    title: "Deep Bonds",
-                    desc: "Lifelong connections with a global yoga community.",
-                    icon: Users
-                  }
-                ].map((item, index) => (
-                  <div key={index} className="group flex flex-col items-start">
-                    <div className="w-10 h-10 rounded-lg bg-background border border-border flex items-center justify-center mb-4 group-hover:border-primary/50 group-hover:bg-primary/5 transition-all duration-300">
-                      <item.icon className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                    </div>
-                    <h3 className="font-heading text-sm sm:text-base font-bold text-foreground mb-1.5 group-hover:text-primary transition-colors">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed">
-                      {item.desc}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
-
-        {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
-        <section
-          className="py-24 relative bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${apartYogaAllianceGraduates.src})` }}
-        >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/50" />
-
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              {/* Subtitle */}
-              <p className="text-white/90 text-lg mb-2 font-medium">
-                "YOGAGARHI – 200 Hour YTTC"
-              </p>
-
-              {/* Main Title */}
-              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
-                Yoga Alliance USA CERTIFIED
-              </h2>
-
-              {/* Description */}
-              <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-                Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
-                you will receive an internationally recognized certification, allowing you to become a
-                <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                This certification opens doors for you to teach yoga anywhere in the world.
-              </p>
-
-              {/* Certification Badges - Real Images */}
-              <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <Image src={yaRys100} alt="RYS 100" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRys200} alt="RYS 200" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRyt200} alt="RYT 200" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-              </div>
-
-              {/* Full Certification Banner */}
-              <div className="mt-10">
-                <Image src={yaAllCertifications} alt="All Yoga Alliance Certifications" width={672} height={400} className="rounded-lg shadow-lg mx-auto" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* COURSE_SYLLABUS_REMOVED_FROM_HERE */}
-
-
-
-
-
-
-
-
-
-        <HomeGallerySection />
-
-        {/* COURSE_SYLLABUS_MOVED_UP */}
-
-
-
-
-        {/* ===== PROGRAM TIMELINE HIGHLIGHTS ===== */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-3 gap-8">
-                {/* Preparation */}
-                <div className="text-center group">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <BookOpen className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                    Preparation begins on signup
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Start your journey with pre-course materials and guidance
-                  </p>
-                </div>
-
-                {/* Training Dates */}
-                <div className="text-center group">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <Calendar className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                    Training: 1st – 24th of each month
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Immersive 24-day program every month IN RISHIKESH
-                  </p>
-                </div>
-
-                {/* Lifetime Support */}
-                <div className="text-center group">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <Users className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                    Lifetime Yogagarhi community support
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    Forever connected to our global yoga family
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* SPECIAL_WORKSHOPS_REMOVED_FROM_HERE */}
-
         {/* ===== POST-PROGRAM SUPPORT ===== */}
         < section className="py-24 bg-background" >
           <div className="container mx-auto px-4">
@@ -2606,6 +2331,282 @@ export default function Course200HourRishikesh() {
             </div>
           </div>
         </section >
+
+        {/* ===== WHAT YOU WILL RECEIVE ===== */}
+        <section className="py-20 bg-background overflow-hidden">
+          <div className="container mx-auto px-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
+              What You Will Receive in This Training
+            </h2>
+            {/* Decorative Mandala Icon */}
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
+              <svg className="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1">
+                <circle cx="20" cy="20" r="16" />
+                <circle cx="20" cy="20" r="6" strokeDasharray="2 2" />
+                {/* Orbital dots */}
+                {isMounted && [0, 60, 120, 180, 240, 300].map((angle, i) => (
+                  <circle key={i} cx={20 + 10 * Math.cos(angle * Math.PI / 180)} cy={20 + 10 * Math.sin(angle * Math.PI / 180)} r="3" fill="currentColor" />
+                ))}
+              </svg>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
+            </div>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
+              Everything you need to live, learn, and grow — fully supported
+            </p>
+
+            {/* Horizontal Scrollable Flip Cards */}
+            <div className="relative">
+              {/* Gradient fade edges */}
+              <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+              <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+
+              <div className="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4">
+                <div className="flex gap-6" style={{ width: 'max-content' }}>
+                  {whatYouWillReceive.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flip-card w-64 h-72 flex-shrink-0 cursor-pointer"
+                      onClick={(e) => {
+                        const card = e.currentTarget;
+                        card.classList.toggle('flipped');
+                      }}
+                    >
+                      <div className="flip-card-inner relative w-full h-full transition-transform duration-500 transform-style-preserve-3d">
+                        {/* Front - Image */}
+                        <div className="flip-card-front absolute w-full h-full backface-hidden rounded-xl overflow-hidden border border-border shadow-card">
+                          <Image
+                            src={item.image}
+                            alt={item.title}
+                            fill
+                            className="object-cover"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                          <div className="absolute bottom-0 left-0 right-0 p-5">
+                            <h3 className="font-heading text-lg font-semibold text-white text-center">
+                              {item.title}
+                            </h3>
+                            <p className="text-xs text-white/70 mt-1 text-center md:hidden">Tap to see more</p>
+                            <p className="text-xs text-white/70 mt-1 text-center hidden md:block">Hover to see more</p>
+                          </div>
+                        </div>
+
+                        {/* Back - Content */}
+                        <div className="flip-card-back absolute w-full h-full backface-hidden rounded-xl overflow-hidden border border-border shadow-card rotate-y-180 bg-card">
+                          <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center">
+                            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                              <item.icon className="w-7 h-7 text-primary" />
+                            </div>
+                            <h3 className="font-heading text-lg font-semibold text-foreground mb-3">
+                              {item.title}
+                            </h3>
+                            <p className="text-sm text-muted-foreground leading-relaxed">
+                              {item.description}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        {/* ===== WHAT YOU’LL CARRY HOME - UNIQUE COMPACT DESIGN ===== */}
+        <section className="py-16 bg-muted/30 relative overflow-hidden">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+              {/* Left Column: Heading */}
+              <div className="lg:w-1/3 lg:sticky lg:top-24">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-4">
+                  <Heart className="w-3 h-3 text-primary" fill="currentColor" />
+                  <span className="text-[10px] font-bold tracking-widest uppercase text-primary">The Takeaway</span>
+                </div>
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
+                  What You’ll <br />
+                  <span className="text-primary italic">Carry Home</span>
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Beyond the physical certificate, you walk away with a transformed perspective, a deeper connection to yourself, and the authentic skills to lead others.
+                </p>
+                <div className="mt-6 p-4 rounded-xl bg-primary/5 border border-primary/20 relative overflow-hidden group/box">
+                  <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
+                  <p className="text-xs md:text-sm text-foreground font-medium leading-relaxed relative z-10">
+                    <span className="text-primary font-bold">Career Impact:</span> After completing the 200-Hour Yoga Teacher Training, you can start teaching yoga <strong className="text-foreground">anywhere in the world</strong> in studios, online live classes, yoga retreats, or through your own independent practice.
+                  </p>
+                  <Globe className="absolute -bottom-2 -right-2 w-12 h-12 text-primary/10 group-hover/box:text-primary/20 transition-colors duration-500" />
+                </div>
+                <div className="mt-8 hidden lg:block">
+                  <div className="w-12 h-1 bg-primary/30 rounded-full" />
+                </div>
+              </div>
+
+              {/* Right Column: Compact Grid */}
+              <div className="lg:w-2/3 grid grid-cols-2 gap-x-6 gap-y-10 md:gap-x-12">
+                {[
+                  {
+                    title: "Global Certification",
+                    desc: "Yoga Alliance RYT-200 to start your career anywhere.",
+                    icon: Award
+                  },
+                  {
+                    title: "Master the Practice",
+                    desc: "Expert guidance in Hatha, Vinyasa, Ashtanga & Iyengar.",
+                    icon: Activity
+                  },
+                  {
+                    title: "Safety & Anatomy",
+                    desc: "Learn to teach and practice safely without injuries.",
+                    icon: ShieldCheck
+                  },
+                  {
+                    title: "Spiritual Depth",
+                    desc: "Deep dive into Mantras, Meditation, and Philosophy.",
+                    icon: Sparkles
+                  },
+                  {
+                    title: "Teaching Skills",
+                    desc: "Practical skills to lead, cue, and inspire students.",
+                    icon: GraduationCap
+                  },
+                  {
+                    title: "Deep Bonds",
+                    desc: "Lifelong connections with a global yoga community.",
+                    icon: Users
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="group flex flex-col items-start">
+                    <div className="w-10 h-10 rounded-lg bg-background border border-border flex items-center justify-center mb-4 group-hover:border-primary/50 group-hover:bg-primary/5 transition-all duration-300">
+                      <item.icon className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
+                    </div>
+                    <h3 className="font-heading text-sm sm:text-base font-bold text-foreground mb-1.5 group-hover:text-primary transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
+
+        {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
+        <section
+          className="py-24 relative bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url(${apartYogaAllianceGraduates.src})` }}
+        >
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/50" />
+
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              {/* Subtitle */}
+              <p className="text-white/90 text-lg mb-2 font-medium">
+                "YOGAGARHI – 200 Hour YTTC"
+              </p>
+
+              {/* Main Title */}
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
+                Yoga Alliance USA CERTIFIED
+              </h2>
+
+              {/* Description */}
+              <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
+                Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
+                you will receive an internationally recognized certification, allowing you to become a
+                <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
+                This certification opens doors for you to teach yoga anywhere in the world.
+              </p>
+
+              {/* Certification Badges - Real Images */}
+              <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+                <Image src={yaRys100} alt="RYS 100" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRys200} alt="RYS 200" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRyt200} alt="RYT 200" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+              </div>
+
+              {/* Full Certification Banner */}
+              <div className="mt-10">
+                <Image src={yaAllCertifications} alt="All Yoga Alliance Certifications" width={672} height={400} className="rounded-lg shadow-lg mx-auto" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* COURSE_SYLLABUS_REMOVED_FROM_HERE */}
+
+
+
+
+
+
+
+
+
+        <HomeGallerySection />
+
+        {/* COURSE_SYLLABUS_MOVED_UP */}
+
+
+
+
+        {/* ===== PROGRAM TIMELINE HIGHLIGHTS ===== */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-3 gap-8">
+                {/* Preparation */}
+                <div className="text-center group">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <BookOpen className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="font-heading text-lg font-bold text-foreground mb-2">
+                    Preparation begins on signup
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Start your journey with pre-course materials and guidance
+                  </p>
+                </div>
+
+                {/* Training Dates */}
+                <div className="text-center group">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Calendar className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="font-heading text-lg font-bold text-foreground mb-2">
+                    Training: 1st – 24th of each month
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Immersive 24-day program every month IN RISHIKESH
+                  </p>
+                </div>
+
+                {/* Lifetime Support */}
+                <div className="text-center group">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Users className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="font-heading text-lg font-bold text-foreground mb-2">
+                    Lifetime Yogagarhi community support
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    Forever connected to our global yoga family
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SPECIAL_WORKSHOPS_REMOVED_FROM_HERE */}
+
 
         {/* ===== ACCOMMODATION ===== */}
         {/* Hero Banner with Background */}
