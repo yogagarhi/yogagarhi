@@ -2249,6 +2249,87 @@ export default function Course200Hour() {
           </div>
         </section>
 
+        {/* ===== DAILY SCHEDULE ===== */}
+        <section className="py-20 bg-secondary/30">
+          <div className="container mx-auto px-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
+              Daily Schedule
+            </h2>
+            {/* Decorative Sun Icon */}
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
+              <svg className="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <circle cx="20" cy="20" r="9" />
+                {/* Sun rays */}
+                {isMounted && [0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => (
+                  <line key={i} x1={20 + 11 * Math.cos(angle * Math.PI / 180)} y1={20 + 11 * Math.sin(angle * Math.PI / 180)} x2={20 + 16 * Math.cos(angle * Math.PI / 180)} y2={20 + 16 * Math.sin(angle * Math.PI / 180)} />
+                ))}
+              </svg>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
+            </div>
+            <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
+              A typical day at YogaGarhi is designed to balance intensive learning with rest and integration.
+            </p>
+
+            <div className="max-w-3xl mx-auto">
+              <div className="relative space-y-4">
+                {/* Vertical connecting line */}
+                <div className="absolute left-[calc(6rem+1.5rem+0.5rem-1px)] md:left-[calc(7rem+1.5rem+0.5rem-1px)] top-2 bottom-2 w-0.5 bg-primary/30" />
+
+                {dailySchedule.map((item, index) => (
+                  <div
+                    key={index}
+                    className="relative flex items-center gap-6"
+                  >
+                    {/* Time */}
+                    <div className="w-24 md:w-28 flex-shrink-0 text-right">
+                      <span className="font-heading text-lg md:text-xl font-semibold text-primary">{item.time}</span>
+                    </div>
+
+                    {/* Timeline dot with pulse animation */}
+                    <div className="flex-shrink-0 z-10">
+                      <div
+                        className="w-4 h-4 rounded-full bg-primary animate-pulse-dot"
+                        style={{ animationDelay: `${index * 0.5}s` }}
+                      />
+                    </div>
+
+                    {/* Activity card */}
+                    <div className="flex-1 bg-card border border-border rounded-lg px-6 py-4 shadow-sm">
+                      <span className="text-foreground font-medium">{item.activity}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <p className="mt-12 text-center text-sm text-muted-foreground">
+                Sunday is a full day off for rest, self-study, or optional excursions.
+              </p>
+
+              {/* Sunday Schedule CTA Button */}
+              <div className="flex flex-col items-center gap-6 mt-8">
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
+                  asChild
+                >
+                  <Link href="/sunday-schedule">
+                    Explore Sunday in Bali
+                  </Link>
+                </Button>
+
+                {/* Special Offer Box */}
+                <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
+                  <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
+                    Book your September to December YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section >
+
         {/* ===== WHAT YOU WILL RECEIVE ===== */}
         <section className="py-20 bg-background overflow-hidden">
           <div className="container mx-auto px-4">
@@ -2472,86 +2553,7 @@ export default function Course200Hour() {
         {/* COURSE_SYLLABUS_MOVED_UP */}
 
 
-        {/* ===== DAILY SCHEDULE ===== */}
-        <section className="py-20 bg-secondary/30">
-          <div className="container mx-auto px-4">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
-              Daily Schedule
-            </h2>
-            {/* Decorative Sun Icon */}
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
-              <svg className="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="20" cy="20" r="9" />
-                {/* Sun rays */}
-                {isMounted && [0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => (
-                  <line key={i} x1={20 + 11 * Math.cos(angle * Math.PI / 180)} y1={20 + 11 * Math.sin(angle * Math.PI / 180)} x2={20 + 16 * Math.cos(angle * Math.PI / 180)} y2={20 + 16 * Math.sin(angle * Math.PI / 180)} />
-                ))}
-              </svg>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
-            </div>
-            <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
-              A typical day at YogaGarhi is designed to balance intensive learning with rest and integration.
-            </p>
 
-            <div className="max-w-3xl mx-auto">
-              <div className="relative space-y-4">
-                {/* Vertical connecting line */}
-                <div className="absolute left-[calc(6rem+1.5rem+0.5rem-1px)] md:left-[calc(7rem+1.5rem+0.5rem-1px)] top-2 bottom-2 w-0.5 bg-primary/30" />
-
-                {dailySchedule.map((item, index) => (
-                  <div
-                    key={index}
-                    className="relative flex items-center gap-6"
-                  >
-                    {/* Time */}
-                    <div className="w-24 md:w-28 flex-shrink-0 text-right">
-                      <span className="font-heading text-lg md:text-xl font-semibold text-primary">{item.time}</span>
-                    </div>
-
-                    {/* Timeline dot with pulse animation */}
-                    <div className="flex-shrink-0 z-10">
-                      <div
-                        className="w-4 h-4 rounded-full bg-primary animate-pulse-dot"
-                        style={{ animationDelay: `${index * 0.5}s` }}
-                      />
-                    </div>
-
-                    {/* Activity card */}
-                    <div className="flex-1 bg-card border border-border rounded-lg px-6 py-4 shadow-sm">
-                      <span className="text-foreground font-medium">{item.activity}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <p className="mt-12 text-center text-sm text-muted-foreground">
-                Sunday is a full day off for rest, self-study, or optional excursions.
-              </p>
-
-              {/* Sunday Schedule CTA Button */}
-              <div className="flex flex-col items-center gap-6 mt-8">
-                <Button
-                  variant="default"
-                  size="lg"
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                  asChild
-                >
-                  <Link href="/sunday-schedule">
-                    Explore Sunday in Bali
-                  </Link>
-                </Button>
-
-                {/* Special Offer Box */}
-                <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
-                  <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    Book your September to December YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section >
 
         {/* ===== PROGRAM TIMELINE HIGHLIGHTS ===== */}
         <section className="py-16 bg-background">
