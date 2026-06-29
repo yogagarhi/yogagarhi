@@ -2364,8 +2364,6 @@ export default function Course200HourRishikesh() {
           </div>
         </section>
 
-        <FounderSection />
-
         <HomeGallerySection />
 
         {/* COURSE_SYLLABUS_MOVED_UP */}
@@ -2603,6 +2601,8 @@ export default function Course200HourRishikesh() {
             </div>
           </div>
         </section >
+
+        <FounderSection />
 
         {/* ===== ACCOMMODATION ===== */}
         {/* Hero Banner with Background */}

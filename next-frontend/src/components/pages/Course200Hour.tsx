@@ -2084,6 +2084,7 @@ export default function Course200Hour() {
           </div>
         </section>
 
+        <FounderSection />
 
         {/* ===== WHAT YOU WILL RECEIVE ===== */}
         <section className="py-20 bg-background overflow-hidden">
@@ -2466,7 +2467,6 @@ export default function Course200Hour() {
           </div>
         </section>
 
-        <FounderSection />
         <HomeGallerySection />
 
         {/* COURSE_SYLLABUS_MOVED_UP */}
