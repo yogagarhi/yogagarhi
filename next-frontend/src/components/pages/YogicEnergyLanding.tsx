@@ -497,7 +497,7 @@ export default function YogicEnergyLanding() {
             <footer className="text-center py-6 text-xs text-[#1A4D45]/40 border-t border-[#2D7A70]/10">
                 © {new Date().getFullYear()} YogaGarhi · Bali & Rishikesh ·{" "}
                 <a href="/privacy-policy" className="hover:text-[#2D7A70] underline">Privacy</a> ·{" "}
-                <a href="/contact" className="hover:text-[#2D7A70] underline">Contact</a>
+                <a href="/contact-us" className="hover:text-[#2D7A70] underline">Contact</a>
             </footer>
         </div>
     );

@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 1,
+            images: ['https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/hero-yoga-bali-new.jpg']
         },
         {
             url: 'https://www.yogagarhi.com/about-school',
@@ -31,18 +32,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.9,
+            images: ['https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/course-100-hour.jpg']
         },
         {
             url: 'https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 1,
+            images: ['https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/course-200-hour.jpg']
         },
         {
             url: 'https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-bali',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.9,
+            images: ['https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/course-300-hour.jpg']
         },
         {
             url: 'https://www.yogagarhi.com/gallery',
@@ -73,6 +77,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.7,
+        },
+        {
+            url: 'https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
+            url: 'https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
+            url: 'https://www.yogagarhi.com/apply-now',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.6,
+        },
+        {
+            url: 'https://www.yogagarhi.com/pre-yttc-prep',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: 'https://www.yogagarhi.com/sunday-schedule',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.7,
+        },
+        {
+            url: 'https://www.yogagarhi.com/yoga-anatomy-mastery',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
         },
     ]
 }

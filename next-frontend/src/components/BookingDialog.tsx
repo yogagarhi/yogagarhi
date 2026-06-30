@@ -57,12 +57,12 @@ function BookingDialogContent({ source, router }: { source: string, router: any 
   const [bookingForm, setBookingForm] = useState({
     name: '',
     email: '',
-    countryCode: '+91',
+    countryCode: '',
     phone: '',
     message: ''
   });
 
-  const isFormComplete = bookingForm.name.trim() && bookingForm.email.trim() && bookingForm.phone.trim();
+  const isFormComplete = bookingForm.name.trim() && bookingForm.email.trim() && bookingForm.phone.trim() && bookingForm.countryCode;
   const canProceedToForm = selectedDay && selectedTime;
 
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -106,7 +106,7 @@ function BookingDialogContent({ source, router }: { source: string, router: any 
     setStep('calendar');
     setSelectedDay(null);
     setSelectedTime(null);
-    setBookingForm({ name: '', email: '', countryCode: '+1', phone: '', message: '' });
+    setBookingForm({ name: '', email: '', countryCode: '', phone: '', message: '' });
   };
 
   const handleClose = (open: boolean) => {
@@ -330,7 +330,9 @@ function BookingDialogContent({ source, router }: { source: string, router: any 
                     value={bookingForm.countryCode}
                     onChange={(e) => setBookingForm(prev => ({ ...prev, countryCode: e.target.value }))}
                     className="w-24 px-2 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"
+                    required
                   >
+                    <option value="" disabled>Code</option>
                     {countryCodes.map((country) => (
                       <option key={`${country.country}-${country.code}`} value={country.code}>
                         {country.flag} {country.code}

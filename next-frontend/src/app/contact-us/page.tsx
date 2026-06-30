@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: "Contact YogaGarhi for yoga teacher training inquiries. Reach us via WhatsApp, phone, or email. We respond within 24 hours.",
     keywords: "contact YogaGarhi, yoga training inquiry, YTTC questions, yoga school contact Bali",
     alternates: {
-        canonical: "/contact",
+        canonical: "/contact-us",
     },
 };
 
@@ -30,7 +30,7 @@ export default function ContactPage() {
                                 "@type": "ListItem",
                                 "position": 2,
                                 "name": "Contact",
-                                "item": "https://www.yogagarhi.com/contact"
+                                "item": "https://www.yogagarhi.com/contact-us"
                             }
                         ]
                     })

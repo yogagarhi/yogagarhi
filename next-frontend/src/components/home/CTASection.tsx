@@ -18,7 +18,7 @@ export default function CTASection() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="xl" asChild>
-              <Link href="/contact">Get Started</Link>
+              <Link href="/contact-us">Get Started</Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <a href="https://wa.me/+917895350563" target="_blank" rel="noopener noreferrer">

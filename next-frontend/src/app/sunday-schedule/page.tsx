@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import SundaySchedule from "@/components/pages/SundaySchedule";
 
 export const metadata: Metadata = {
-    title: "Sunday Schedule - Yogagarhi Tourism & Activities",
+    title: "Sunday Schedule - Tourism & Activities",
     description: "Explore our Sunday excursion schedule at Yogagarhi. From Beach Yoga to Monkey Forest, see how our students spend their free Sundays in Bali.",
     keywords: "Sunday yoga schedule, Bali excursions, Monkey Forest, Beach Yoga Bali, Yogagarhi activities",
     alternates: {

@@ -1,49 +1,19 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
-import Link from "next/link";
+import Image from "next/image";
+import { BookOpen, Leaf, Zap, Award, Users, GraduationCap, RefreshCw, Globe } from "lucide-react";
+import { getCloudinaryImage } from "@/utils/cloudinary";
 
-const features = [
-  {
-    title: "Multi-Style & Ayurveda Training",
-    desc: "Vinyasa, Hatha, Ashtanga, and Iyengar taught with a strong foundation in Ayurveda.",
-    highlight: "Integrated"
-  },
-  {
-    title: "Shiv-Shakti Method",
-    desc: "Our signature approach that converts ancient yogic theory into practical, life-changing wisdom.",
-    highlight: "Signature"
-  },
-  {
-    title: "Pre-TTC Mentorship",
-    desc: "World's first program to build your foundation before training begins.",
-    highlight: "World's 1st"
-  },
-  {
-    title: "Intimate Learning",
-    desc: "Only 8-10 students per batch for deeply personalized attention.",
-    highlight: "8-10 Max"
-  },
-  {
-    title: "Philosophy-Driven",
-    desc: "Highest yogic philosophy through rituals, meditation, and satsang.",
-    highlight: "Authentic"
-  },
-  {
-    title: "35+ Sequencing Book",
-    desc: "Practical sequences you can teach from day one after graduation.",
-    highlight: "Included"
-  },
-  {
-    title: "Global Yoga Family",
-    desc: "Join a worldwide community that supports your growth forever.",
-    highlight: "Lifetime"
-  },
-  {
-    title: "Free Course Repeat",
-    desc: "Revisit any training whenever it runs, at absolutely no extra cost.",
-    highlight: "Forever"
-  },
-];
+// Cloudinary image paths
+const imgPreTtc = getCloudinaryImage("pre-yttc-online.png");
+const imgAyurveda = getCloudinaryImage("activity-ayurveda.jpg");
+const imgShivShakti = getCloudinaryImage("himalayan-lineage.jpg");
+const imgPhilosophy = getCloudinaryImage("living-philosophy.jpg");
+const imgSmallGroup = getCloudinaryImage("small-group-work.jpg");
+const imgSequencing = getCloudinaryImage("yoga-sequences.png");
+const imgAssistant = getCloudinaryImage("warrior-sequence.png");
+const imgRepeat = getCloudinaryImage("group-class.png");
+const imgFamily = getCloudinaryImage("yoga-alliance-graduates.png");
 
 // Lotus SVG for decorative purposes
 const LotusDecor = ({ className }: { className?: string }) => (
@@ -80,7 +50,7 @@ export default function WhyChooseUs() {
   return (
     <section ref={sectionRef} className="py-24 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden">
       {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-[0.02]">
+      <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
         <div className="absolute top-20 left-10 w-64 h-64 rounded-full border border-primary" />
         <div className="absolute bottom-20 right-10 w-48 h-48 rounded-full border border-primary" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full border border-primary" />
@@ -88,155 +58,329 @@ export default function WhyChooseUs() {
 
       <div className="container mx-auto px-4 relative">
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="inline-block text-sm font-medium tracking-widest text-primary/70 uppercase mb-3">
-            The Yogagarhi Difference
-          </span>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Why Students Choose Yogagarhi
+        <div className="text-center mb-20">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-6 tracking-widest uppercase">
+            THE YOGAGARHI DIFFERENCE
           </h2>
-          <LotusDecor className="w-16 h-10 mx-auto text-primary/40 mb-6" />
-          <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground italic leading-relaxed">
-            "Choosing a teacher training is not about trends, it’s about trust, depth, and being ready for your next step, as a practitioner or teacher."
-          </p>
+          <LotusDecor className="w-16 h-10 mx-auto text-primary/40" />
         </div>
 
-        {/* Unique Bento-style layout */}
-        <div className="max-w-6xl mx-auto">
-          {/* Top row - 3 columns with featured card */}
-          <div className="grid md:grid-cols-3 gap-4 mb-4">
-            {/* Featured large card */}
-            <div
-              className={`md:col-span-2 group relative p-8 rounded-2xl bg-primary/5 border border-primary/10 hover:border-primary/30 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                }`}
-              style={{ transitionDelay: '100ms' }}
-            >
-              <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
-                {features[0].highlight}
-              </div>
-              <h3 className="font-heading text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                {features[0].title}
+        <div className="max-w-6xl mx-auto space-y-20">
+          
+          {/* ================= STAGE 1: BEFORE YOU ARRIVE ================= */}
+          <div className="space-y-8">
+            <div className="flex items-center gap-4">
+              <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-wider">
+                Stage 01
+              </span>
+              <h3 className="text-sm font-bold text-foreground uppercase tracking-widest">
+                Before You Arrive
               </h3>
-              <p className="text-muted-foreground leading-relaxed max-w-md">
-                {features[0].desc}
-              </p>
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="h-px bg-border flex-1" />
             </div>
 
-            {/* Stacked cards */}
-            <div className="flex flex-col gap-4">
-              {features.slice(1, 3).map((item, index) => (
-                <div
-                  key={index}
-                  className={`group relative p-5 rounded-xl bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                    }`}
-                  style={{ transitionDelay: `${(index + 2) * 100}ms` }}
-                >
-                  <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-muted text-muted-foreground text-[10px] font-semibold">
-                    {item.highlight}
+            <div className="grid md:grid-cols-3 gap-8 items-stretch">
+              <div className="md:col-span-3 group relative rounded-2xl overflow-hidden border border-border bg-card shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col lg:flex-row items-stretch">
+                {/* Left content */}
+                <div className="flex-1 p-8 lg:p-12 flex flex-col justify-between space-y-6">
+                  <div className="space-y-4">
+                    <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
+                      World's 1st Pre-YTTC Support Academy
+                    </div>
+                    <h4 className="font-heading text-2xl lg:text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
+                      Pre-TTC Mentorship
+                    </h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl">
+                      Most schools start with day one. We start weeks earlier — online, free — so you arrive already grounded in the basics, not learning them under pressure.
+                    </p>
                   </div>
-                  <h3 className="font-heading text-lg font-semibold text-foreground mb-1.5 group-hover:text-primary transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground line-clamp-2">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Middle row - 4 equal columns */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-            {features.slice(3, 7).map((item, index) => (
-              <div
-                key={index}
-                className={`group relative p-5 rounded-xl bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-500 text-center ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                  }`}
-                style={{ transitionDelay: `${(index + 4) * 100}ms` }}
-              >
-                <div className="inline-block px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[10px] font-bold mb-3">
-                  {item.highlight}
-                </div>
-                <h3 className="font-heading text-base font-semibold text-foreground mb-1.5 group-hover:text-primary transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-xs text-muted-foreground line-clamp-2">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom row - Two cards side by side */}
-          <div className="grid md:grid-cols-2 gap-4">
-            {/* Free Course Repeat */}
-            <div
-              className={`group relative p-6 rounded-2xl bg-white border border-primary/10 hover:border-primary/30 hover:shadow-xl transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                }`}
-              style={{ transitionDelay: '800ms' }}
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex-1">
-                  <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-3 font-heading uppercase tracking-wider">
-                    Forever
-                  </div>
-                  <h3 className="font-heading text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    Free Course Repeat
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    Revisit any training whenever it runs, at absolutely no extra cost. Keep your practice fresh forever.
-                  </p>
-                </div>
-                <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-full bg-primary/5 flex items-center justify-center group-hover:bg-primary/20 transition-all duration-500 transform group-hover:rotate-12 shadow-inner">
-                    <svg className="w-7 h-7 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                      <path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0Z" />
-                      <path d="M12 8v4l2 2" />
-                    </svg>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                      <BookOpen className="w-5 h-5 text-primary" />
+                    </div>
+                    <span className="text-xs font-bold text-foreground uppercase tracking-wider">Grounded Foundation First</span>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Assistant Teacher Opportunity */}
-            <div
-              className={`group relative p-6 rounded-2xl bg-accent/5 border border-accent/20 hover:border-accent/40 hover:shadow-xl transition-all duration-500 overflow-hidden ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                }`}
-              style={{ transitionDelay: '900ms' }}
-            >
-              {/* Decorative accent element */}
-              <div className="absolute -top-10 -right-10 w-32 h-32 bg-accent/10 rounded-full blur-2xl group-hover:bg-accent/20 transition-all duration-700" />
-
-              <div className="flex items-start justify-between gap-4 relative z-10">
-                <div className="flex-1">
-                  <div className="inline-block px-3 py-1 rounded-full bg-accent text-white text-xs font-semibold mb-3 font-heading uppercase tracking-wider">
-                    Growth
-                  </div>
-                  <h3 className="font-heading text-xl font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
-                    Assistant Teacher Opportunity (Optional)
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    Get the chance to become an assistant teacher in future batches and grow your authentic teaching experience.
-                  </p>
-                </div>
-                <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center group-hover:bg-accent group-hover:text-white transition-all duration-500 transform group-hover:scale-110 shadow-lg group-hover:shadow-accent/40">
-                    <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                      <circle cx="9" cy="7" r="4" />
-                      <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                    </svg>
-                  </div>
+                {/* Right image */}
+                <div className="lg:w-2/5 min-h-[250px] relative overflow-hidden">
+                  <Image
+                    src={imgPreTtc}
+                    alt="Pre-TTC Mentorship"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    style={{ objectPosition: "center -45px" }}
+                  />
                 </div>
               </div>
             </div>
           </div>
+
+          {/* ================= STAGE 2: GOING DEEP ================= */}
+          <div className="space-y-8">
+            <div className="flex items-center gap-4">
+              <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-wider">
+                Stage 02
+              </span>
+              <h3 className="text-sm font-bold text-foreground uppercase tracking-widest">
+                Going Deep Into Yourself
+              </h3>
+              <div className="h-px bg-border flex-1" />
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Multi-Style & Ayurveda */}
+              <div className="group relative rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-500 flex flex-col justify-between">
+                <div>
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={imgAyurveda}
+                      alt="Multi-Style & Ayurveda"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
+                      Integrated
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Leaf className="w-4 h-4 text-primary" />
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Ayurveda</span>
+                    </div>
+                    <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      Multi-Style & Ayurveda
+                    </h4>
+                    <p className="text-muted-foreground text-xs leading-relaxed">
+                      Vinyasa, Hatha, Ashtanga, and Iyengar taught with a strong foundation in Ayurveda.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Shiv-Shakti Method */}
+              <div className="group relative rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-500 flex flex-col justify-between">
+                <div>
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={imgShivShakti}
+                      alt="Shiv-Shakti Method"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
+                      Signature
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Zap className="w-4 h-4 text-primary" />
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Methodology</span>
+                    </div>
+                    <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      Shiv-Shakti Method
+                    </h4>
+                    <p className="text-muted-foreground text-xs leading-relaxed">
+                      Our signature approach that converts ancient yogic theory into practical, life-changing wisdom.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Philosophy-Driven */}
+              <div className="group relative rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-500 flex flex-col justify-between">
+                <div>
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={imgPhilosophy}
+                      alt="Philosophy-Driven"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
+                      Authentic
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Award className="w-4 h-4 text-primary" />
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Yogic Wisdom</span>
+                    </div>
+                    <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      Philosophy-Driven
+                    </h4>
+                    <p className="text-muted-foreground text-xs leading-relaxed">
+                      Highest yogic philosophy through rituals, meditation, and satsang.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Intimate learning */}
+              <div className="group relative rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-500 flex flex-col justify-between">
+                <div>
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={imgSmallGroup}
+                      alt="Intimate learning"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
+                      8-10 Max
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Users className="w-4 h-4 text-primary" />
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Mentorship</span>
+                    </div>
+                    <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      Intimate learning
+                    </h4>
+                    <p className="text-muted-foreground text-xs leading-relaxed">
+                      Only 8-10 students per batch. Intimacy = real mentorship, not crowd teaching.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ================= STAGE 3: TEACHING & AFTER ================= */}
+          <div className="space-y-8">
+            <div className="flex items-center gap-4">
+              <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-wider">
+                Stage 03
+              </span>
+              <h3 className="text-sm font-bold text-foreground uppercase tracking-widest">
+                Teaching & Beyond
+              </h3>
+              <div className="h-px bg-border flex-1" />
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* 35+ Sequencing Book */}
+              <div className="group relative rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-500 flex flex-col justify-between">
+                <div>
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={imgSequencing}
+                      alt="35+ Sequencing Book"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
+                      Included
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <BookOpen className="w-4 h-4 text-primary" />
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Resources</span>
+                    </div>
+                    <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      35+ Sequencing Book
+                    </h4>
+                    <p className="text-muted-foreground text-xs leading-relaxed">
+                      Practical sequences you can teach from day one after graduation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Assistant Teacher */}
+              <div className="group relative rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-500 flex flex-col justify-between">
+                <div>
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={imgAssistant}
+                      alt="Assistant Teacher"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
+                      Growth
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <GraduationCap className="w-4 h-4 text-primary" />
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Teaching</span>
+                    </div>
+                    <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      Assistant Teacher
+                    </h4>
+                    <p className="text-muted-foreground text-xs leading-relaxed">
+                      Apply to become an assistant teacher in future batches and grow your authentic experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Free Course Repeat */}
+              <div className="group relative rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-500 flex flex-col justify-between">
+                <div>
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={imgRepeat}
+                      alt="Free Course Repeat"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
+                      Forever
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <RefreshCw className="w-4 h-4 text-primary" />
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Lifetime</span>
+                    </div>
+                    <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      Free Course Repeat
+                    </h4>
+                    <p className="text-muted-foreground text-xs leading-relaxed">
+                      Revisit any training whenever it runs, at absolutely no extra tuition cost.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Global Family */}
+              <div className="group relative rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-500 flex flex-col justify-between">
+                <div>
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <Image
+                      src={imgFamily}
+                      alt="Global Family"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
+                      Lifetime
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Globe className="w-4 h-4 text-primary" />
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Community</span>
+                    </div>
+                    <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                      Global Family
+                    </h4>
+                    <p className="text-muted-foreground text-xs leading-relaxed">
+                      Join a worldwide community that supports your growth forever.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* Bottom decoration */}
-        <div className="flex items-center justify-center gap-3 mt-12">
+        <div className="flex items-center justify-center gap-3 mt-20">
           <div className="h-px w-16 bg-gradient-to-r from-transparent to-primary/30" />
           <div className="w-2 h-2 rounded-full bg-primary/30" />
           <div className="h-px w-16 bg-gradient-to-l from-transparent to-primary/30" />

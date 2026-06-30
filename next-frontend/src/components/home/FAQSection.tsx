@@ -142,7 +142,7 @@ export default function FAQSection() {
                       We're here to help you on your yoga journey.
                     </p>
                     <Button variant="outline" size="sm" asChild>
-                      <Link href="/contact">Contact Us</Link>
+                      <Link href="/contact-us">Contact Us</Link>
                     </Button>
                   </div>
                 </div>

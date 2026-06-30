@@ -7,6 +7,7 @@ interface PromoCountdownProps {
 
 const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
     const [timeLeft, setTimeLeft] = useState({
+        days: 0,
         hours: 0,
         minutes: 0,
         seconds: 0
@@ -15,13 +16,21 @@ const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
     useEffect(() => {
         const calculateTimeLeft = () => {
             const now = new Date();
-            // Target: Next midnight
-            const midnight = new Date(now);
-            midnight.setHours(24, 0, 0, 0);
+            // Use a fixed reference epoch for the 15-day cycle
+            const referenceDate = new Date("2026-05-22T00:00:00Z");
+            const cycleMs = 15 * 24 * 60 * 60 * 1000; // 15 days in ms
 
-            const distance = midnight.getTime() - now.getTime();
+            let distance;
+            if (now.getTime() < referenceDate.getTime()) {
+                distance = referenceDate.getTime() - now.getTime();
+            } else {
+                const elapsedMs = now.getTime() - referenceDate.getTime();
+                const timeInCurrentCycle = elapsedMs % cycleMs;
+                distance = cycleMs - timeInCurrentCycle;
+            }
 
             return {
+                days: Math.floor(distance / (1000 * 60 * 60 * 24)),
                 hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
                 minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
                 seconds: Math.floor((distance % (1000 * 60)) / 1000)
@@ -52,6 +61,8 @@ const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
     return (
         <div className={`flex items-center justify-center ${className}`}>
             <div className="flex items-center">
+                <TimeUnit value={timeLeft.days} label="Days" />
+                <span className="text-lg font-bold mb-4 opacity-50">:</span>
                 <TimeUnit value={timeLeft.hours} label="Hrs" />
                 <span className="text-lg font-bold mb-4 opacity-50">:</span>
                 <TimeUnit value={timeLeft.minutes} label="Mins" />

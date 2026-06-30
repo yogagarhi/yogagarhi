@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -112,7 +112,7 @@ export default function CourseDetail() {
             </div>
 
             <Button variant="cta" size="xl" className="w-full" asChild>
-              <Link href="/contact">START YOUR JOURNEY</Link>
+              <Link href="/contact-us">START YOUR JOURNEY</Link>
             </Button>
           </div>
         </div>
@@ -382,7 +382,7 @@ export default function CourseDetail() {
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="xl" asChild>
-              <Link href="/contact">Enroll Now</Link>
+              <Link href="/contact-us">Enroll Now</Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <a href="https://wa.me/+917895350563" target="_blank" rel="noopener noreferrer">

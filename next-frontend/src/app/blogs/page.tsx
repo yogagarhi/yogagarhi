@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Blog from "@/components/pages/Blog";
 
 export const metadata: Metadata = {
-    title: "Blog - YogaGarhi Insights & Wisdom",
+    title: "Blog - Insights & Wisdom",
     description: "Read our latest articles on yoga philosophy, teacher training tips, and stories from the ashram. Deepen your understanding of yoga with YogaGarhi.",
     keywords: "yoga blog, yoga articles, yoga philosophy, yoga teacher training tips, YogaGarhi blog",
     alternates: {

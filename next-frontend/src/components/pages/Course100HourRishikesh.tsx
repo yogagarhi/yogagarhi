@@ -1,4 +1,5 @@
-﻿"use client";
+"use client";
+import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,6 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useBooking } from "@/components/BookingDialog";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useYogicEnergy } from "@/components/YogicEnergyDialog";
+import { useToast } from "@/hooks/use-toast";
 import {
   Carousel,
   CarouselContent,
@@ -29,7 +31,7 @@ import {
   Cherry, Sprout, CircleDot, Sun, MessageSquare, Mail,
   Wifi, Droplets, Wind, Activity, ShieldCheck, ArrowRight, Globe
 } from "lucide-react";
-import { timezones } from "@/constants/formOptions";
+import { timezones, countryCodes } from "@/constants/formOptions";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import FounderSection from "@/components/home/FounderSection";
 import HomeGallerySection from "@/components/home/HomeGallerySection";
@@ -519,11 +521,11 @@ const upcomingDates = [
   { date: "1 May - 12 May 2026", spotsLeft: 7, earlyBirdSaving: "$150" },
   { date: "1 Jun - 12 Jun 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
   { date: "1 Jul - 12 Jul 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Aug - 12 Aug 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Sept - 12 Sept 2026", spotsLeft: 7, earlyBirdSaving: "$150" },
-  { date: "1 Oct - 12 Oct 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Nov - 12 Nov 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Dec - 12 Dec 2026", spotsLeft: 6, earlyBirdSaving: "$150" },
+  { date: "1 Aug - 12 Aug 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
+  { date: "1 Sept - 12 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$150" },
+  { date: "1 Oct - 12 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
+  { date: "1 Nov - 12 Nov 2026", spotsLeft: 1, earlyBirdSaving: "$150" },
+  { date: "1 Dec - 12 Dec 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
 ];
 
 
@@ -556,6 +558,7 @@ const quizQuestions = [
 ];
 
 export default function Course100HourRishikesh() {
+  const { toast } = useToast();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
   const { setShowEnrollDialog: openEnrollDialog } = useEnrollment();
   const { setShowYogicEnergy } = useYogicEnergy();
@@ -630,7 +633,7 @@ export default function Course100HourRishikesh() {
   });
   const [bookingForm, setBookingForm] = useState({
     name: '',
-    countryCode: '+91',
+    countryCode: '',
     contact: '',
     email: '',
     course: ''
@@ -638,7 +641,7 @@ export default function Course100HourRishikesh() {
   const [enrollForm, setEnrollForm] = useState({
     name: '',
     email: '',
-    countryCode: '+91',
+    countryCode: '',
     contact: '',
     courseName: '',
     courseDate: '',
@@ -650,6 +653,7 @@ export default function Course100HourRishikesh() {
   });
 
   const isEnrollFormComplete = enrollForm.name && enrollForm.email && enrollForm.contact &&
+    enrollForm.countryCode &&
     enrollForm.courseName && enrollForm.courseDate && enrollForm.accommodation &&
     enrollForm.gender && enrollForm.country && enrollForm.source;
 
@@ -700,7 +704,7 @@ export default function Course100HourRishikesh() {
   };
 
 
-  const isBookingFormComplete = bookingForm.name && bookingForm.contact && bookingForm.email && bookingForm.course;
+  const isBookingFormComplete = bookingForm.name && bookingForm.contact && bookingForm.countryCode && bookingForm.email && bookingForm.course;
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -1278,7 +1282,7 @@ export default function Course100HourRishikesh() {
                   <div className="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 shadow-inner">
                     <div className="flex items-center gap-2 text-orange-700 font-bold text-sm mb-1 uppercase tracking-tight">
                       <Calendar className="w-4 h-4" />
-                      Next Batch: 14th & 15th March
+                      Next Batch: <DynamicBatchDate />
                     </div>
                     <div className="flex items-center gap-2 text-orange-600/80 text-xs font-semibold mb-2">
                       <Clock className="w-4 h-4" />
@@ -1404,7 +1408,7 @@ export default function Course100HourRishikesh() {
                       <div className="flex-1 space-y-2">
                         <div className="flex items-center gap-3 text-orange-800 font-extrabold text-lg leading-none">
                           <Calendar className="w-5 h-5 text-orange-600" />
-                          Next Batch: 14th & 15th March
+                          Next Batch: <DynamicBatchDate />
                         </div>
                         <div className="flex items-center gap-3 text-orange-700 font-semibold text-sm">
                           <Clock className="w-4 h-4 text-orange-500" />
@@ -3581,42 +3585,76 @@ This is not a transactional relationship — it is a lifelong connection.`}
               <div className="grid lg:grid-cols-3 gap-8">
                 {/* Dates List */}
                 <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
-                  {upcomingDates.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 gap-4 hover:bg-secondary/30 transition-colors duration-200"
-                    >
-                      {/* Date */}
-                      <div className="flex items-center gap-3 min-w-[200px]">
-                        <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
-                        <span className="font-medium text-foreground">{item.date}</span>
-                      </div>
-
-                      {/* Spots Left */}
-                      <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
-                        ? "bg-red-100 text-red-700"
-                        : "bg-secondary text-secondary-foreground"
-                        }`}>
-                        Only {item.spotsLeft} spots left
-                      </span>
-
-                      {/* Early Bird */}
-                      <div className="text-center">
-                        <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                        <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
-                      </div>
-
-                      {/* Book Button */}
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="whitespace-nowrap"
-                        onClick={() => setShowEnrollDialog(true)}
+                  {upcomingDates.map((item, index) => {
+                    const isFull = /feb|mar|apr|may|jun|jul/i.test(item.date);
+                    const isAugust = /aug/i.test(item.date);
+                    return (
+                      <div
+                        key={index}
+                        className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 gap-4 hover:bg-secondary/30 transition-colors duration-200"
                       >
-                        Book Now
-                      </Button>
-                    </div>
-                  ))}
+                        {/* Date */}
+                        <div className="flex flex-col gap-1 min-w-[200px]">
+                          <div className="flex items-center gap-3">
+                            <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
+                            <span className="font-medium text-foreground">{item.date}</span>
+                          </div>
+                          {isAugust && (
+                            <span className="text-xs font-semibold text-amber-600 dark:text-amber-500 flex items-center gap-1 mt-1 animate-pulse">
+                              🔥 Hurry up! Limited seats, fast filling. Book quickly!
+                            </span>
+                          )}
+                        </div>
+
+                        {/* Spots Left */}
+                        {isFull ? (
+                          <span className="text-sm px-3 py-1.5 rounded-md whitespace-nowrap bg-muted text-muted-foreground">
+                            Fully Booked
+                          </span>
+                        ) : (
+                          <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
+                            ? "bg-red-100 text-red-700"
+                            : "bg-secondary text-secondary-foreground"
+                            }`}>
+                            Only {item.spotsLeft} spots left
+                          </span>
+                        )}
+
+                        {/* Early Bird */}
+                        <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
+                          <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
+                          <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                        </div>
+
+                        {/* Book Button */}
+                        {isFull ? (
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            className="whitespace-nowrap bg-muted text-muted-foreground hover:bg-muted hover:text-muted-foreground border border-border"
+                            onClick={() => {
+                              toast({
+                                title: "Full Now",
+                                description: "This batch is fully booked.",
+                                variant: "destructive",
+                              });
+                            }}
+                          >
+                            Full
+                          </Button>
+                        ) : (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="whitespace-nowrap"
+                            onClick={() => setShowEnrollDialog(true)}
+                          >
+                            Book Now
+                          </Button>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
 
                 {/* Pricing Card */}
@@ -3630,7 +3668,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                     {/* Content */}
                     <div className="p-6 space-y-5">
                       <p className="text-center text-foreground font-medium border-b border-border pb-4">
-                        Course Duration: 21 Nights / 22 Days
+                        Course Duration: 11 Nights / 12 Days
                       </p>
 
                       {/* Triple Sharing */}
@@ -3993,65 +4031,14 @@ This is not a transactional relationship — it is a lifelong connection.`}
                                 value={bookingForm.countryCode}
                                 onChange={(e) => setBookingForm(prev => ({ ...prev, countryCode: e.target.value }))}
                                 className="w-28 px-2 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"
+                                required
                               >
-                                <option value="+1">🇺🇸 +1</option>
-                                <option value="+44">🇬🇧 +44</option>
-                                <option value="+91">🇮🇳 +91</option>
-                                <option value="+61">🇦🇺 +61</option>
-                                <option value="+49">🇩🇪 +49</option>
-                                <option value="+33">🇫🇷 +33</option>
-                                <option value="+39">🇮🇹 +39</option>
-                                <option value="+34">🇪🇸 +34</option>
-                                <option value="+31">🇳🇱 +31</option>
-                                <option value="+46">🇸🇪 +46</option>
-                                <option value="+47">🇳🇴 +47</option>
-                                <option value="+45">🇩🇰 +45</option>
-                                <option value="+358">🇫🇮 +358</option>
-                                <option value="+41">🇨🇭 +41</option>
-                                <option value="+43">🇦🇹 +43</option>
-                                <option value="+32">🇧🇪 +32</option>
-                                <option value="+351">🇵🇹 +351</option>
-                                <option value="+48">🇵🇱 +48</option>
-                                <option value="+7">🇷🇺 +7</option>
-                                <option value="+380">🇺🇦 +380</option>
-                                <option value="+81">🇯🇵 +81</option>
-                                <option value="+82">🇰🇷 +82</option>
-                                <option value="+86">🇨🇳 +86</option>
-                                <option value="+852">🇭🇰 +852</option>
-                                <option value="+65">🇸🇬 +65</option>
-                                <option value="+60">🇲🇾 +60</option>
-                                <option value="+62">🇮🇩 +62</option>
-                                <option value="+66">🇹🇭 +66</option>
-                                <option value="+84">🇻🇳 +84</option>
-                                <option value="+63">🇵🇭 +63</option>
-                                <option value="+92">🇵🇰 +92</option>
-                                <option value="+880">🇧🇩 +880</option>
-                                <option value="+94">🇱🇰 +94</option>
-                                <option value="+977">🇳🇵 +977</option>
-                                <option value="+971">🇦🇪 +971</option>
-                                <option value="+966">🇸🇦 +966</option>
-                                <option value="+972">🇮🇱 +972</option>
-                                <option value="+90">🇹🇷 +90</option>
-                                <option value="+20">🇪🇬 +20</option>
-                                <option value="+27">🇿🇦 +27</option>
-                                <option value="+234">🇳🇬 +234</option>
-                                <option value="+254">🇰🇪 +254</option>
-                                <option value="+55">🇧🇷 +55</option>
-                                <option value="+52">🇲🇽 +52</option>
-                                <option value="+54">🇦🇷 +54</option>
-                                <option value="+57">🇨🇴 +57</option>
-                                <option value="+56">🇨🇱 +56</option>
-                                <option value="+51">🇵🇪 +51</option>
-                                <option value="+64">🇳🇿 +64</option>
-                                <option value="+353">🇮🇪 +353</option>
-                                <option value="+30">🇬🇷 +30</option>
-                                <option value="+36">🇭🇺 +36</option>
-                                <option value="+420">🇨🇿 +420</option>
-                                <option value="+40">🇷🇴 +40</option>
-                                <option value="+375">🇧🇾 +375</option>
-                                <option value="+370">🇱🇹 +370</option>
-                                <option value="+371">🇱🇻 +371</option>
-                                <option value="+372">🇪🇪 +372</option>
+                                <option value="" disabled>Code</option>
+                                {countryCodes.map((country) => (
+                                  <option key={`${country.country}-${country.code}`} value={country.code}>
+                                    {country.flag} {country.code}
+                                  </option>
+                                ))}
                               </select>
                               <input
                                 type="tel"
@@ -4596,34 +4583,18 @@ This is not a transactional relationship — it is a lifelong connection.`}
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">Contact / WhatsApp No. <span className="text-destructive">*</span></label>
                 <div className="flex gap-2">
-                  <select value={enrollForm.countryCode} onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))} className="w-24 px-2 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
-                    <option value="+1">US +1</option>
-                    <option value="+44">UK +44</option>
-                    <option value="+91">IN +91</option>
-                    <option value="+61">AU +61</option>
-                    <option value="+49">DE +49</option>
-                    <option value="+33">FR +33</option>
-                    <option value="+39">IT +39</option>
-                    <option value="+34">ES +34</option>
-                    <option value="+31">NL +31</option>
-                    <option value="+46">SE +46</option>
-                    <option value="+47">NO +47</option>
-                    <option value="+45">DK +45</option>
-                    <option value="+41">CH +41</option>
-                    <option value="+43">AT +43</option>
-                    <option value="+32">BE +32</option>
-                    <option value="+55">BR +55</option>
-                    <option value="+52">MX +52</option>
-                    <option value="+81">JP +81</option>
-                    <option value="+82">KR +82</option>
-                    <option value="+86">CN +86</option>
-                    <option value="+65">SG +65</option>
-                    <option value="+971">AE +971</option>
-                    <option value="+92">PK +92</option>
-                    <option value="+977">NP +977</option>
-                    <option value="+94">LK +94</option>
-                    <option value="+27">ZA +27</option>
-                    <option value="+64">NZ +64</option>
+                  <select
+                    value={enrollForm.countryCode}
+                    onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))}
+                    className="w-24 px-2 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
+                    required
+                  >
+                    <option value="" disabled>Code</option>
+                    {countryCodes.map((country) => (
+                      <option key={`${country.country}-${country.code}`} value={country.code}>
+                        {country.flag} {country.code}
+                      </option>
+                    ))}
                   </select>
                   <input type="tel" value={enrollForm.contact} onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))} placeholder="Phone number" className="flex-1 px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
                 </div>

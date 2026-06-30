@@ -128,7 +128,7 @@ export default function Contact() {
             {/* Form Info */}
             <div className="space-y-6">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-                Claim Your $250 Early Bird Discount
+                Easter Sale 🎉 Flat $300 OFF
               </h2>
 
               <p className="text-lg text-muted-foreground">

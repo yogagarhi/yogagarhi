@@ -42,8 +42,9 @@ export function getCloudinaryUrl(path: string, options: CloudinaryImageOptions =
     if (options.quality) transformations.push(`q_${options.quality}`);
 
     const transformationString = transformations.join(',');
+    const extension = resource.format ? `.${resource.format}` : '';
 
-    return `${BASE_URL}/${transformationString}/${resource.public_id}`;
+    return `${BASE_URL}/${transformationString}/${resource.public_id}${extension}`;
 }
 
 /**

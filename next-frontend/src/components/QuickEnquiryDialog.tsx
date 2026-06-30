@@ -1,6 +1,5 @@
 "use client";
 import { createContext, useContext, ReactNode, useState } from "react";
-import { useRouter } from "next/navigation";
 import {
   Dialog,
   DialogContent,
@@ -13,8 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Send, CheckCircle } from "lucide-react";
-import { countryCodes } from "@/constants/formOptions";
+import { CheckCircle, GraduationCap, Send, ArrowRight } from "lucide-react";
 
 interface QuickEnquiryContextType {
   showQuickEnquiry: boolean;
@@ -32,20 +30,23 @@ export function useQuickEnquiry() {
 }
 
 export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
+  console.log("PREMIUM QUICK ENQUIRY LOADED");
   const [showQuickEnquiry, setShowQuickEnquiry] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
-  const router = useRouter();
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    level: "",
     message: "",
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.name || !formData.email || isLoading) return;
+
     setIsLoading(true);
 
     try {
@@ -56,23 +57,22 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
         },
         body: JSON.stringify({
           ...formData,
-          _subject: `New Quick Enquiry from ${formData.name}`,
-          _autoresponder: "Namaste! Thank you for contacting YogaGarhi. We have received your enquiry and our team will get back to you within 24 hours to assist you further."
+          _subject: `New Booking Request from ${formData.name}`,
+          _autoresponder: "Namaste! Thank you for your interest in our course. We have received your request and will contact you within 24 hours to assist you with the booking process. We look forward to meeting you!"
         }),
       });
 
       if (response.ok) {
         setIsSubmitted(true);
-        router.push('/thank-you?type=enquiry');
       } else {
-        throw new Error('Failed to send enquiry');
+        throw new Error('Failed to send inquiry');
       }
-    } catch (error) {
-      console.error(error);
+    } catch (error: any) {
+      console.error("Error submitting inquiry:", error);
       toast({
-        title: "Error",
-        description: "Something went wrong. Please try again or contact us directly.",
-        variant: "destructive",
+        title: "Submission Failed",
+        description: error.message || "Please check your internet connection and try again.",
+        variant: "destructive"
       });
     } finally {
       setIsLoading(false);
@@ -90,6 +90,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
       setFormData({
         name: "",
         email: "",
+        level: "",
         message: "",
       });
     }
@@ -99,87 +100,119 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
     <QuickEnquiryContext.Provider value={{ showQuickEnquiry, setShowQuickEnquiry }}>
       {children}
       <Dialog open={showQuickEnquiry} onOpenChange={handleOpenChange}>
-        <DialogContent className="sm:max-w-md bg-[#FDFBF7] border-none shadow-2xl rounded-3xl">
-          <DialogHeader className="pt-4">
-            <DialogTitle className="text-center font-heading text-2xl sm:text-3xl text-[#2D7A70] tracking-tight leading-tight">
-              {isSubmitted ? "Thank You!" : "Claim Your $250 Early Bird Discount"}
-            </DialogTitle>
-            <DialogDescription className="text-center text-[#1A4D45]/70 mt-2">
-              {isSubmitted
-                ? "Your message has been received."
-                : "Have a quick question? Send us a message and we'll get back to you soon."
-              }
-            </DialogDescription>
-          </DialogHeader>
+        <DialogContent className="sm:max-w-lg !p-0 gap-0 overflow-hidden border-0 shadow-2xl bg-white rounded-3xl [&>button]:!text-white [&>button]:!opacity-100 [&>button]:!bg-white/20 hover:[&>button]:!bg-white/30 [&>button]:!rounded-full [&>button]:!p-1.5 [&>button>svg]:!w-5 [&>button>svg]:!h-5 [&>button]:!right-5 [&>button]:!top-5 transition-all">
+          {/* Header Section - Vibrant Brand Gradient */}
+          <div className="bg-[#2D7A70] bg-gradient-to-br from-[#2D7A70] to-[#1a4d46] px-6 pt-10 pb-8 sm:px-10 text-white relative text-center">
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-4 backdrop-blur-sm border border-white/20">
+                <GraduationCap className="w-10 h-10 text-white" />
+              </div>
+              <DialogTitle className="font-heading text-3xl sm:text-4xl font-bold mb-2 text-white">
+                {isSubmitted ? "Thank You!" : "Book Now"}
+              </DialogTitle>
+              {!isSubmitted && (
+                <p className="text-white/80 text-sm max-w-[280px] mx-auto leading-relaxed font-medium">
+                  Experience our authentic yoga path. Fill the form to book your spot in the course.
+                </p>
+              )}
+            </div>
+          </div>
 
           {isSubmitted ? (
-            <div className="flex flex-col items-center justify-center py-8 space-y-4">
-              <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
-                <CheckCircle className="w-10 h-10 text-green-600" />
+            <div className="flex flex-col items-center justify-center py-16 px-10 space-y-8 text-center bg-white">
+              <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center shadow-lg">
+                <CheckCircle className="w-12 h-12 text-green-600" />
               </div>
-              <p className="text-center text-muted-foreground">
-                We've received your enquiry and will get back to you within 24 hours.
-              </p>
+              <div className="space-y-3">
+                <h3 className="font-heading text-2xl font-bold text-[#2D7A70]">
+                  Inquiry Received!
+                </h3>
+                <p className="text-muted-foreground leading-relaxed max-w-sm">
+                  Namaste! We&#39;ve received your request. Our team will contact you within 24 hours to help you complete your booking.
+                </p>
+              </div>
+              <Button 
+                onClick={() => handleOpenChange(false)}
+                className="w-full h-14 rounded-2xl font-bold bg-[#2D7A70] hover:bg-[#1a4d46] transition-all shadow-lg"
+              >
+                Continue Exploring
+              </Button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-1.5">
-                <Label htmlFor="name" className="text-[#1A4D45] font-semibold text-sm">Full Name *</Label>
-                <Input
-                  id="name"
-                  placeholder="Enter your name"
-                  value={formData.name}
-                  onChange={(e) => handleChange("name", e.target.value)}
-                  required
-                  className="bg-white/80 border-teal-100 focus:border-[#87BCB4] focus:ring-[#87BCB4] rounded-xl h-12"
-                />
+            <>
+              {/* Form Body - Premium Card Layout */}
+              <div className="px-6 sm:px-10 py-8 space-y-6 bg-white">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  {/* Name */}
+                  <div className="space-y-2">
+                    <Label htmlFor="q-name" className="text-sm font-bold text-gray-700 ml-1">Full Name</Label>
+                    <Input
+                      id="q-name"
+                      placeholder="Enter your name"
+                      value={formData.name}
+                      onChange={(e) => handleChange("name", e.target.value)}
+                      required
+                      className="h-12 px-4 rounded-xl border-2 border-gray-100 bg-gray-50/50 text-gray-900 transition-all focus:border-[#2D7A70] focus:bg-white focus:ring-0"
+                    />
+                  </div>
+
+                  {/* Email */}
+                  <div className="space-y-2">
+                    <Label htmlFor="q-email" className="text-sm font-bold text-gray-700 ml-1">Email Address</Label>
+                    <Input
+                      id="q-email"
+                      type="email"
+                      placeholder="you@example.com"
+                      value={formData.email}
+                      onChange={(e) => handleChange("email", e.target.value)}
+                      required
+                      className="h-12 px-4 rounded-xl border-2 border-gray-100 bg-gray-50/50 text-gray-900 transition-all focus:border-[#2D7A70] focus:bg-white focus:ring-0"
+                    />
+                  </div>
+                </div>
+
+
+
+                {/* Message */}
+                <div className="space-y-2">
+                  <Label htmlFor="q-message" className="text-sm font-bold text-gray-700 ml-1">Message (Optional)</Label>
+                  <Textarea
+                    id="q-message"
+                    placeholder="Tell us any questions or messages you have..."
+                    value={formData.message}
+                    onChange={(e) => handleChange("message", e.target.value)}
+                    rows={3}
+                    className="rounded-xl border-2 border-gray-100 bg-gray-50/50 text-gray-900 focus:border-[#2D7A70] focus:bg-white focus:ring-0 transition-all resize-none"
+                  />
+                </div>
               </div>
 
-              <div className="space-y-1.5">
-                <Label htmlFor="email" className="text-[#1A4D45] font-semibold text-sm">Email *</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="Enter your email"
-                  value={formData.email}
-                  onChange={(e) => handleChange("email", e.target.value)}
-                  required
-                  className="bg-white/80 border-teal-100 focus:border-[#87BCB4] focus:ring-[#87BCB4] rounded-xl h-12"
-                />
-              </div>
-
-
-
-              <div className="space-y-1.5">
-                <Label htmlFor="message" className="text-[#1A4D45] font-semibold text-sm">Message (Optional)</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Any questions or specific requirements..."
-                  value={formData.message}
-                  onChange={(e) => handleChange("message", e.target.value)}
-                  rows={4}
-                  className="bg-white/80 border-teal-100 focus:border-[#87BCB4] focus:ring-[#87BCB4] rounded-xl resize-none"
-                />
-              </div>
-
-              <Button
-                type="submit"
-                className={`w-full text-white rounded-xl h-14 text-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg mt-2 ${formData.name && formData.email
-                  ? "bg-[#2D7A70] hover:bg-[#1A4D45]" // Darken when filled
-                  : "bg-[#87BCB4] hover:bg-[#76ADA5]" // Light/Teal when not filled
+              {/* Action Footer - Sticky */}
+              <div className="px-6 sm:px-10 pb-10 pt-2 bg-white rounded-b-2xl">
+                <Button
+                  onClick={handleSubmit}
+                  className={`w-full h-14 text-lg font-bold rounded-2xl shadow-xl transition-all duration-500 flex items-center justify-center gap-3 ${
+                    formData.name && formData.email
+                      ? "bg-[#2D7A70] hover:bg-[#1a4d46] hover:scale-[1.01] shadow-[#2D7A70]/20 text-white"
+                      : "bg-gray-200 text-gray-400 cursor-not-allowed"
                   }`}
-                disabled={isLoading || !formData.name || !formData.email}
-              >
-                {isLoading ? (
-                  "Submitting..."
-                ) : (
-                  <>
-                    <Send className="w-5 h-5 mr-2" />
-                    Submit Enquiry
-                  </>
-                )}
-              </Button>
-            </form>
+                  disabled={isLoading || !formData.name || !formData.email}
+                >
+                  {isLoading ? (
+                    "Sending Inquiry..."
+                  ) : (
+                    <>
+                      Book Now
+                      <ArrowRight className="w-5 h-5" />
+                    </>
+                  )}
+                </Button>
+                <div className="mt-5 flex items-center justify-center gap-2 text-[10px] text-gray-400 uppercase tracking-[0.2em] font-bold">
+                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                  Secure Your Spot Today
+                </div>
+              </div>
+            </>
           )}
         </DialogContent>
       </Dialog>

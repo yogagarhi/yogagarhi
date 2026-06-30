@@ -54,6 +54,71 @@ const nextConfig: NextConfig = {
         destination: '/testimonials',
         permanent: true,
       },
+      {
+        source: '/top-3-yogarhi-classes-you-should-try-this-month/:path*',
+        destination: '/blogs',
+        permanent: true,
+      },
+      {
+        source: '/health-wellness-focus-2/:path*',
+        destination: '/blogs',
+        permanent: true,
+      },
+      {
+        source: '/blog/:slug*',
+        destination: '/blogs/:slug*',
+        permanent: true,
+      },
+      {
+        source: '/tag/:path*',
+        destination: '/blogs',
+        permanent: true,
+      },
+      {
+        source: '/category/:path*',
+        destination: '/blogs',
+        permanent: true,
+      },
+      {
+        source: '/author/:path*',
+        destination: '/about-school',
+        permanent: true,
+      },
+      {
+        source: '/7-days-yoga-retreat',
+        destination: '/100-hour-yoga-teacher-training-in-bali',
+        permanent: true,
+      },
+      {
+        source: '/yoga-courses',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/course',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/blog',
+        destination: '/blogs',
+        permanent: true,
+      },
+      {
+        source: '/contact',
+        destination: '/contact-us',
+        permanent: true,
+      },
+      {
+        source: '/300-hour-yoga-teacher-training-in-rishikesh',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/free-yoga-training',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
 };

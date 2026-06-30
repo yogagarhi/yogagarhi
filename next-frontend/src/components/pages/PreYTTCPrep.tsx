@@ -88,7 +88,7 @@ export default function PreYTTCPrep() {
                     </Link>
                     <div className="flex items-center gap-6">
                         <Link href="/100-hour-yoga-teacher-training-in-bali" className="text-sm font-semibold text-muted-foreground hover:text-primary transition-colors">Courses</Link>
-                        <Link href="/contact" className="text-sm font-semibold text-muted-foreground hover:text-primary transition-colors">Contact</Link>
+                        <Link href="/contact-us" className="text-sm font-semibold text-muted-foreground hover:text-primary transition-colors">Contact</Link>
                     </div>
                 </div>
             </nav>

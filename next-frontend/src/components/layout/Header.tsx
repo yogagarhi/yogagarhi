@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Sparkles, Globe, Mountain, ArrowRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import PromoCountdown from "@/components/PromoCountdown";
@@ -127,10 +128,15 @@ const sundayItems: NavDropdownItem[] = [
   { name: "Sunday 3", href: "/sunday-schedule#sunday-3", icon: SunIcon3 },
 ];
 
+const onlineCourses: NavDropdownItem[] = [
+  { name: "Anatomy Mastery", href: "/yoga-anatomy-mastery", icon: Sparkles },
+];
+
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "#", dropdown: aboutItems },
   { name: "Courses", href: "#", dropdown: courses },
+  { name: "Online Courses", href: "#", dropdown: onlineCourses },
   { name: "Gallery", href: "/gallery" },
   { name: "Sunday Schedule", href: "/sunday-schedule", dropdown: sundayItems },
   { name: "Blogs", href: "/blogs" },
@@ -145,6 +151,7 @@ export default function Header() {
   const [mobileOpenSubDropdown, setMobileOpenSubDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const { setShowEnrollDialog } = useEnrollment();
   const { setShowQuickEnquiry } = useQuickEnquiry();
 
   useEffect(() => {
@@ -166,6 +173,7 @@ export default function Header() {
 
   const isActive = (href: string) => pathname === href;
   const isCoursesActive = pathname.includes("-hour-yoga-teacher-training-in-bali");
+  const isOnlineCoursesActive = pathname === "/yoga-anatomy-mastery";
   const isAboutActive = pathname === "/about-school" || pathname === "/teachers" || pathname === "/testimonials";
   const isSundayActive = pathname === "/sunday-schedule";
 
@@ -177,7 +185,7 @@ export default function Header() {
           <div className="flex items-center gap-2 whitespace-nowrap animate-pulse">
             <Sparkles className="w-4 h-4 text-amber-300" />
             <span className="text-xs sm:text-sm font-bold tracking-wide uppercase">
-              April to July Batch Open: Few Seats Left! Save <span className="text-amber-300 font-extrabold">$250</span>
+              Summer Sale 🎉 Flat <span className="text-amber-300 font-extrabold">$300 OFF</span> on August to December batches
             </span>
           </div>
 
@@ -185,7 +193,7 @@ export default function Header() {
             <div className="flex items-center gap-1.5 whitespace-nowrap">
               <Clock className="w-3.5 h-3.5 text-amber-300" />
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-white/90">
-                Offer Resets In:
+                Offer Ends In:
               </span>
             </div>
             <PromoCountdown />
@@ -201,6 +209,7 @@ export default function Header() {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
+
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
               <div className="relative">
@@ -227,6 +236,7 @@ export default function Header() {
                 {navLinks.map((link, index) => {
                   const isDropdownActive = link.name === 'Courses' ? isCoursesActive :
                     link.name === 'About' ? isAboutActive :
+                      link.name === 'Online Courses' ? isOnlineCoursesActive :
                       link.name === 'Sunday Schedule' ? isSundayActive : false;
                   return (
                     <div key={link.name} className="relative">
@@ -237,6 +247,7 @@ export default function Header() {
                           onMouseLeave={() => setOpenDropdown(null)}
                         >
                           <button
+                            suppressHydrationWarning
                             className={`flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${isDropdownActive
                               ? 'bg-primary text-primary-foreground'
                               : 'text-foreground/70 hover:text-primary hover:bg-secondary/50'
@@ -265,6 +276,7 @@ export default function Header() {
                                   {item.subItems ? (
                                     <div className="relative">
                                       <button
+                                        suppressHydrationWarning
                                         onClick={(e) => {
                                           e.stopPropagation();
                                           setOpenSubDropdown(openSubDropdown === item.name ? null : item.name);
@@ -344,23 +356,23 @@ export default function Header() {
             <div className="flex items-center gap-2 sm:gap-3">
               {/* Mobile CTA Button */}
               <Button
-                variant="cta"
+                variant="default"
                 size="sm"
-                className="lg:hidden text-xs px-3 py-1.5"
-                onClick={() => setShowQuickEnquiry(true)}
+                className="lg:hidden bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-4 h-9 shadow-sm transition-all whitespace-nowrap"
+                onClick={() => setShowEnrollDialog(true)}
               >
-                Quick Inquiry
+                Book Now
               </Button>
 
               {/* Desktop CTA Button */}
               <Button
-                variant="cta"
-                size="default"
-                className="hidden lg:flex"
-                onClick={() => setShowQuickEnquiry(true)}
+                variant="default"
+                className="hidden lg:flex bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-6 py-2.5 h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap"
+                onClick={() => setShowEnrollDialog(true)}
               >
-                Quick Inquiry
+                Book Now
               </Button>
+
 
               {/* Mobile Menu Button */}
               <button
@@ -390,6 +402,7 @@ export default function Header() {
             {navLinks.map((link) => {
               const isMobileDropdownActive = link.name === 'Courses' ? isCoursesActive :
                 link.name === 'About' ? isAboutActive :
+                  link.name === 'Online Courses' ? isOnlineCoursesActive :
                   link.name === 'Sunday Schedule' ? isSundayActive : false;
               const isThisDropdownOpen = mobileOpenDropdown === link.name;
 
@@ -480,17 +493,16 @@ export default function Header() {
               );
             })}
 
-            <div className="pt-4 mt-2 border-t border-border/50">
+            {/* Mobile Footer CTA */}
+            <div className="mt-6 px-4 pb-8">
               <Button
-                variant="cta"
-                size="lg"
-                className="w-full"
+                className="w-full bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg py-6 text-lg shadow-sm transition-all"
                 onClick={() => {
-                  setShowQuickEnquiry(true);
                   setIsOpen(false);
+                  setShowEnrollDialog(true);
                 }}
               >
-                Quick Inquiry
+                Book Now
               </Button>
             </div>
           </nav>
