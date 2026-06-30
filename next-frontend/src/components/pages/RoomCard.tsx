@@ -124,7 +124,11 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                     <h3 className="font-heading text-lg font-bold text-foreground">{room.title}</h3>
                     <div className="flex items-center gap-1 text-muted-foreground">
                         <Users className="w-4 h-4" />
-                        <span className="text-xs">{room.beds} {room.beds === 1 ? 'bed' : 'beds'}</span>
+                        <span className="text-xs">
+                            {typeof room.beds === 'number'
+                                ? `${room.beds} ${room.beds === 1 ? 'bed' : 'beds'}`
+                                : room.beds}
+                        </span>
                     </div>
                 </div>
 

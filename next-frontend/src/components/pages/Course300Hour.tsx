@@ -14,6 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useBooking } from "@/components/BookingDialog";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useYogicEnergy } from "@/components/YogicEnergyDialog";
+import { useToast } from "@/hooks/use-toast";
 import {
   Carousel,
   CarouselContent,
@@ -523,11 +524,11 @@ const upcomingDates = [
   { date: "1 May - 28 May 2026", spotsLeft: 5, earlyBirdSaving: "$300" },
   { date: "1 Jun - 28 Jun 2026", spotsLeft: 6, earlyBirdSaving: "$300" },
   { date: "1 Jul - 28 Jul 2026", spotsLeft: 6, earlyBirdSaving: "$300" },
-  { date: "1 Aug - 28 Aug 2026", spotsLeft: 6, earlyBirdSaving: "$300" },
-  { date: "1 Sept - 28 Sept 2026", spotsLeft: 5, earlyBirdSaving: "$300" },
-  { date: "1 Oct - 28 Oct 2026", spotsLeft: 6, earlyBirdSaving: "$300" },
-  { date: "1 Nov - 28 Nov 2026", spotsLeft: 6, earlyBirdSaving: "$300" },
-  { date: "1 Dec - 28 Dec 2026", spotsLeft: 6, earlyBirdSaving: "$300" },
+  { date: "1 Aug - 28 Aug 2026", spotsLeft: 2, earlyBirdSaving: "$300" },
+  { date: "1 Sept - 28 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$300" },
+  { date: "1 Oct - 28 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$300" },
+  { date: "1 Nov - 28 Nov 2026", spotsLeft: 1, earlyBirdSaving: "$300" },
+  { date: "1 Dec - 28 Dec 2026", spotsLeft: 2, earlyBirdSaving: "$300" },
 ];
 
 
@@ -560,6 +561,7 @@ const quizQuestions = [
 ];
 
 export default function Course300Hour() {
+  const { toast } = useToast();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
   const { setShowEnrollDialog: openEnrollDialog } = useEnrollment();
   const { setShowYogicEnergy } = useYogicEnergy();
@@ -3594,44 +3596,78 @@ This is not a transactional relationship — it is a lifelong connection.`}
               <div className="grid lg:grid-cols-3 gap-8">
                 {/* Dates List */}
                 <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
-                  {upcomingDates.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 gap-4 hover:bg-secondary/30 transition-colors duration-200"
-                    >
-                      {/* Date */}
-                      <div className="flex items-center gap-3 min-w-[200px]">
-                        <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
-                        <span className="font-medium text-foreground">{item.date}</span>
-                      </div>
-
-                      {/* Spots Left */}
-                      <div className="flex items-center gap-4 sm:gap-6 flex-wrap sm:flex-nowrap">
-                        <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
-                          ? "bg-red-100 text-red-700"
-                          : "bg-secondary text-secondary-foreground"
-                          }`}>
-                          Only {item.spotsLeft} spots left
-                        </span>
-
-                        {/* Early Bird */}
-                        <div className="text-center">
-                          <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                          <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                  {upcomingDates.map((item, index) => {
+                    const isFull = /feb|mar|apr|may|jun|jul/i.test(item.date);
+                    const isAugust = /aug/i.test(item.date);
+                    return (
+                      <div
+                        key={index}
+                        className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 gap-4 hover:bg-secondary/30 transition-colors duration-200"
+                      >
+                        {/* Date */}
+                        <div className="flex flex-col gap-1 min-w-[200px]">
+                          <div className="flex items-center gap-3">
+                            <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
+                            <span className="font-medium text-foreground">{item.date}</span>
+                          </div>
+                          {isAugust && (
+                            <span className="text-xs font-semibold text-amber-600 dark:text-amber-500 flex items-center gap-1 mt-1 animate-pulse">
+                              🔥 Hurry up! Limited seats, fast filling. Book quickly!
+                            </span>
+                          )}
                         </div>
 
-                        {/* Book Button */}
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="whitespace-nowrap"
-                          onClick={() => setShowEnrollDialog(true)}
-                        >
-                          Book Now
-                        </Button>
+                        {/* Spots Left, Early Bird & Button */}
+                        <div className="flex items-center gap-4 sm:gap-6 flex-wrap sm:flex-nowrap">
+                          {isFull ? (
+                            <span className="text-sm px-3 py-1.5 rounded-md whitespace-nowrap bg-muted text-muted-foreground">
+                              Fully Booked
+                            </span>
+                          ) : (
+                            <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
+                              ? "bg-red-100 text-red-700"
+                              : "bg-secondary text-secondary-foreground"
+                              }`}>
+                              Only {item.spotsLeft} spots left
+                            </span>
+                          )}
+
+                          {/* Early Bird */}
+                          <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
+                            <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
+                            <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                          </div>
+
+                          {/* Book Button */}
+                          {isFull ? (
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="whitespace-nowrap bg-muted text-muted-foreground hover:bg-muted hover:text-muted-foreground border border-border"
+                              onClick={() => {
+                                toast({
+                                  title: "Full Now",
+                                  description: "This batch is fully booked.",
+                                  variant: "destructive",
+                                });
+                              }}
+                            >
+                              Full
+                            </Button>
+                          ) : (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="whitespace-nowrap"
+                              onClick={() => setShowEnrollDialog(true)}
+                            >
+                              Book Now
+                            </Button>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
 
                 {/* Pricing Card */}

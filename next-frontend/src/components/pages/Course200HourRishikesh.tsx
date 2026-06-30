@@ -15,6 +15,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useBooking } from "@/components/BookingDialog";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useYogicEnergy } from "@/components/YogicEnergyDialog";
+import { useToast } from "@/hooks/use-toast";
 import {
   Carousel,
   CarouselContent,
@@ -535,11 +536,11 @@ const upcomingDates = [
   { date: "1 May - 24 May 2026", spotsLeft: 7, earlyBirdSaving: "$200" },
   { date: "1 Jun - 24 Jun 2026", spotsLeft: 8, earlyBirdSaving: "$200" },
   { date: "1 Jul - 24 Jul 2026", spotsLeft: 8, earlyBirdSaving: "$200" },
-  { date: "1 Aug - 24 Aug 2026", spotsLeft: 8, earlyBirdSaving: "$200" },
-  { date: "1 Sept - 24 Sept 2026", spotsLeft: 7, earlyBirdSaving: "$200" },
-  { date: "1 Oct - 24 Oct 2026", spotsLeft: 8, earlyBirdSaving: "$200" },
-  { date: "1 Nov - 24 Nov 2026", spotsLeft: 8, earlyBirdSaving: "$200" },
-  { date: "1 Dec - 24 Dec 2026", spotsLeft: 6, earlyBirdSaving: "$200" },
+  { date: "1 Aug - 24 Aug 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
+  { date: "1 Sept - 24 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$200" },
+  { date: "1 Oct - 24 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
+  { date: "1 Nov - 24 Nov 2026", spotsLeft: 1, earlyBirdSaving: "$200" },
+  { date: "1 Dec - 24 Dec 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
 ];
 
 
@@ -574,6 +575,7 @@ const quizQuestions = [
 // - [x] Standardize internal forms in `Course100HourRishikesh.tsx`
 // - [x] Standardize internal forms in `Course200HourRishikesh.tsx`
 export default function Course200HourRishikesh() {
+  const { toast } = useToast();
   const router = useRouter();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
   const { setShowEnrollDialog: openEnrollDialog } = useEnrollment();
@@ -1163,17 +1165,17 @@ export default function Course200HourRishikesh() {
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
                     <div className="flex flex-col items-center lg:items-start">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                        <span className="text-base text-muted-foreground line-through opacity-60">$2187</span>
+                        <span className="text-base text-muted-foreground line-through opacity-60">$1299</span>
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
-                            $1750
+                            $999
                           </span>
                           <div className="absolute -inset-1 bg-primary/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
                         </div>
                       </div>
                       <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform">
                         <Zap className="w-3.5 h-3.5 fill-current" />
-                        Save $437 Now
+                        Save $300 Now
                       </div>
                     </div>
                   </div>
@@ -2332,203 +2334,7 @@ export default function Course200HourRishikesh() {
           </div>
         </section >
 
-        {/* ===== LIVE Q&A SESSIONS ===== */}
-        <section className="py-20 bg-background relative overflow-hidden border-t border-border/30">
-          <div className="absolute top-1/4 -left-64 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-1/4 -right-64 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-primary font-heading text-xs font-bold tracking-widest uppercase bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
-                Global Support
-              </span>
-              <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mt-4 mb-4 leading-tight">
-                Live Support & Q&A Schedule
-              </h2>
-              <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                Connect with our founders and lead teachers live to get answers to all your course-related questions. Select the session that best matches your local timezone.
-              </p>
-            </div>
-
-            {/* Session Cards Grid */}
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
-              {/* Session A */}
-              <div className="group relative bg-card/60 backdrop-blur-md border border-border/80 hover:border-primary/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors" />
-                <div>
-                  <div className="flex justify-between items-start mb-6">
-                    <span className="text-xs font-bold text-primary tracking-widest uppercase bg-primary/10 px-2.5 py-1 rounded-md border border-primary/20">
-                      Session A
-                    </span>
-                    <span className="text-xs text-emerald-600 dark:text-emerald-400 font-semibold bg-emerald-500/10 px-2.5 py-1 rounded-md">
-                      APAC Friendly
-                    </span>
-                  </div>
-                  <h3 className="font-heading text-xl font-bold text-foreground mb-4">
-                    Asia-Pacific Friendly
-                  </h3>
-                  <ul className="space-y-3.5 mb-8">
-                    <li className="flex items-center gap-3 text-sm text-foreground/90">
-                      <span className="w-2 h-2 rounded-full bg-primary" />
-                      <strong>Day:</strong> Tuesday
-                    </li>
-                    <li className="flex items-center gap-3 text-sm text-foreground/90">
-                      <span className="w-2 h-2 rounded-full bg-primary" />
-                      <strong>Time (India):</strong> 2:30 PM IST
-                    </li>
-                    <li className="flex flex-col gap-1 text-xs text-muted-foreground pl-5 border-l border-border/60">
-                      <span>• Sydney: 7:00 PM AEST</span>
-                      <span>• US East: 7:00 AM EDT</span>
-                      <span>• Bali: 5:00 PM WITA</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="pt-4 border-t border-border/40">
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    <strong className="text-foreground">Best for:</strong> Australia, New Zealand, and early-rising US East Coast prospects.
-                  </p>
-                </div>
-              </div>
-
-              {/* Session B */}
-              <div className="group relative bg-card/60 backdrop-blur-md border border-border/80 hover:border-primary/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors" />
-                <div>
-                  <div className="flex justify-between items-start mb-6">
-                    <span className="text-xs font-bold text-primary tracking-widest uppercase bg-primary/10 px-2.5 py-1 rounded-md border border-primary/20">
-                      Session B
-                    </span>
-                    <span className="text-xs text-blue-600 dark:text-blue-400 font-semibold bg-blue-500/10 px-2.5 py-1 rounded-md">
-                      Europe Friendly
-                    </span>
-                  </div>
-                  <h3 className="font-heading text-xl font-bold text-foreground mb-4">
-                    Europe Friendly
-                  </h3>
-                  <ul className="space-y-3.5 mb-8">
-                    <li className="flex items-center gap-3 text-sm text-foreground/90">
-                      <span className="w-2 h-2 rounded-full bg-primary" />
-                      <strong>Day:</strong> Thursday
-                    </li>
-                    <li className="flex items-center gap-3 text-sm text-foreground/90">
-                      <span className="w-2 h-2 rounded-full bg-primary" />
-                      <strong>Time (India):</strong> 4:30 PM IST
-                    </li>
-                    <li className="flex flex-col gap-1 text-xs text-muted-foreground pl-5 border-l border-border/60">
-                      <span>• United Kingdom: 12:00 PM BST</span>
-                      <span>• Germany: 1:00 PM CEST</span>
-                      <span>• Bali: 7:00 PM WITA</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="pt-4 border-t border-border/40">
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    <strong className="text-foreground">Best for:</strong> UK, Germany, and the rest of Europe.
-                  </p>
-                </div>
-              </div>
-
-              {/* Session C */}
-              <div className="group relative bg-card/60 backdrop-blur-md border border-border/80 hover:border-primary/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors" />
-                <div>
-                  <div className="flex justify-between items-start mb-6">
-                    <span className="text-xs font-bold text-primary tracking-widest uppercase bg-primary/10 px-2.5 py-1 rounded-md border border-primary/20">
-                      Session C
-                    </span>
-                    <span className="text-xs text-amber-600 dark:text-amber-400 font-semibold bg-amber-500/10 px-2.5 py-1 rounded-md">
-                      Americas Friendly
-                    </span>
-                  </div>
-                  <h3 className="font-heading text-xl font-bold text-foreground mb-4">
-                    Americas Friendly
-                  </h3>
-                  <ul className="space-y-3.5 mb-8">
-                    <li className="flex items-center gap-3 text-sm text-foreground/90">
-                      <span className="w-2 h-2 rounded-full bg-primary" />
-                      <strong>Day:</strong> Saturday
-                    </li>
-                    <li className="flex items-center gap-3 text-sm text-foreground/90">
-                      <span className="w-2 h-2 rounded-full bg-primary" />
-                      <strong>Time (India):</strong> 6:30 AM IST
-                    </li>
-                    <li className="flex flex-col gap-1 text-xs text-muted-foreground pl-5 border-l border-border/60">
-                      <span>• US West Coast: 7:00 PM (Friday)</span>
-                      <span>• US East Coast: 10:00 PM (Friday)</span>
-                      <span>• Bali: 9:00 AM WITA</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="pt-4 border-t border-border/40">
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    <strong className="text-foreground">Best for:</strong> United States and Canada.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Timezone Comparison Table */}
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-card/40 border border-border/60 rounded-2xl p-6 md:p-8 shadow-inner backdrop-blur-sm">
-                <h4 className="font-heading text-lg font-bold text-foreground mb-6 text-center">
-                  Quick Timezone Translation Table
-                </h4>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse">
-                    <thead>
-                      <tr className="border-b border-border/40 text-xs tracking-wider text-muted-foreground uppercase">
-                        <th className="py-3 px-4">Region</th>
-                        <th className="py-3 px-4">Timezone</th>
-                        <th className="py-3 px-4">Your Local Time</th>
-                        <th className="py-3 px-4">India Time (Base)</th>
-                        <th className="py-3 px-4 text-right">Bali Time</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-border/20 text-sm">
-                      <tr className="hover:bg-primary/5 transition-colors">
-                        <td className="py-3.5 px-4 font-medium text-foreground">Australia (Sydney/Melbourne)</td>
-                        <td className="py-3.5 px-4 text-muted-foreground">AEST (UTC+10/+11)</td>
-                        <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
-                        <td className="py-3.5 px-4 text-muted-foreground font-mono">2:30 – 3:30 PM</td>
-                        <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">5:00 – 6:00 PM</td>
-                      </tr>
-                      <tr className="hover:bg-primary/5 transition-colors">
-                        <td className="py-3.5 px-4 font-medium text-foreground">United Kingdom (London)</td>
-                        <td className="py-3.5 px-4 text-muted-foreground">BST/GMT (UTC+0/+1)</td>
-                        <td className="py-3.5 px-4 text-primary font-semibold">12:00 – 1:00 PM</td>
-                        <td className="py-3.5 px-4 text-muted-foreground font-mono">4:30 – 5:30 PM</td>
-                        <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">7:00 – 8:00 PM</td>
-                      </tr>
-                      <tr className="hover:bg-primary/5 transition-colors bg-amber-500/5">
-                        <td className="py-3.5 px-4 font-medium text-foreground flex items-center gap-1.5">
-                          Germany (Berlin) <span title="Late night Bali time" className="cursor-help text-amber-500 text-xs">⚠️</span>
-                        </td>
-                        <td className="py-3.5 px-4 text-muted-foreground">CEST (UTC+1/+2)</td>
-                        <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
-                        <td className="py-3.5 px-4 text-muted-foreground font-mono">10:30 – 11:30 PM</td>
-                        <td className="py-3.5 px-4 text-right text-amber-600 dark:text-amber-400 font-semibold font-mono">1:00 – 2:00 AM (Next Day)</td>
-                      </tr>
-                      <tr className="hover:bg-primary/5 transition-colors">
-                        <td className="py-3.5 px-4 font-medium text-foreground">US East Coast (New York)</td>
-                        <td className="py-3.5 px-4 text-muted-foreground">EDT (UTC-4)</td>
-                        <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
-                        <td className="py-3.5 px-4 text-muted-foreground font-mono">3:30 – 4:30 AM</td>
-                        <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">6:00 – 7:00 AM</td>
-                      </tr>
-                      <tr className="hover:bg-primary/5 transition-colors">
-                        <td className="py-3.5 px-4 font-medium text-foreground">US West Coast (Los Angeles)</td>
-                        <td className="py-3.5 px-4 text-muted-foreground">PDT (UTC-7)</td>
-                        <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
-                        <td className="py-3.5 px-4 text-muted-foreground font-mono">6:30 – 7:30 AM</td>
-                        <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">9:00 – 10:00 AM</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
 
         {/* ===== UPCOMING DATES ===== */}
@@ -2560,43 +2366,77 @@ export default function Course200HourRishikesh() {
               <div className="grid lg:grid-cols-3 gap-8">
                 {/* Dates List */}
                 <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
-                  {upcomingDates.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 gap-4 hover:bg-secondary/30 transition-colors duration-200"
-                    >
-                      {/* Date */}
-                      <div className="flex items-center gap-3 min-w-[200px]">
-                        <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
-                        <span className="font-medium text-foreground">{item.date}</span>
-                      </div>
-
-                      {/* Spots Left */}
-                      <div className="flex items-center gap-4 sm:gap-6 flex-wrap sm:flex-nowrap">
-                        <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
-                          ? "bg-red-100 text-red-700"
-                          : "bg-secondary text-secondary-foreground"
-                          }`}>
-                          Only {item.spotsLeft} spots left
-                        </span>
-
-                        {/* Early Bird */}
-                        <div className="text-center">
-                          <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                          <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                  {upcomingDates.map((item, index) => {
+                    const isFull = /feb|mar|apr|may|jun|jul/i.test(item.date);
+                    const isAugust = /aug/i.test(item.date);
+                    return (
+                      <div
+                        key={index}
+                        className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 gap-4 hover:bg-secondary/30 transition-colors duration-200"
+                      >
+                        {/* Date */}
+                        <div className="flex flex-col gap-1 min-w-[200px]">
+                          <div className="flex items-center gap-3">
+                            <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
+                            <span className="font-medium text-foreground">{item.date}</span>
+                          </div>
+                          {isAugust && (
+                            <span className="text-xs font-semibold text-amber-600 dark:text-amber-500 flex items-center gap-1 mt-1 animate-pulse">
+                              🔥 Hurry up! Limited seats, fast filling. Book quickly!
+                            </span>
+                          )}
                         </div>
 
-                        {/* Book Button */}
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          onClick={() => setShowEnrollDialog(true)}
-                        >
-                          Book Now
-                        </Button>
+                        {/* Spots Left, Early Bird & Button */}
+                        <div className="flex items-center gap-4 sm:gap-6 flex-wrap sm:flex-nowrap">
+                          {isFull ? (
+                            <span className="text-sm px-3 py-1.5 rounded-md whitespace-nowrap bg-muted text-muted-foreground">
+                              Fully Booked
+                            </span>
+                          ) : (
+                            <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
+                              ? "bg-red-100 text-red-700"
+                              : "bg-secondary text-secondary-foreground"
+                              }`}>
+                              Only {item.spotsLeft} spots left
+                            </span>
+                          )}
+
+                          {/* Early Bird */}
+                          <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
+                            <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
+                            <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                          </div>
+
+                          {/* Book Button */}
+                          {isFull ? (
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className="whitespace-nowrap bg-muted text-muted-foreground hover:bg-muted hover:text-muted-foreground border border-border"
+                              onClick={() => {
+                                toast({
+                                  title: "Full Now",
+                                  description: "This batch is fully booked.",
+                                  variant: "destructive",
+                                });
+                              }}
+                            >
+                              Full
+                            </Button>
+                          ) : (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={() => setShowEnrollDialog(true)}
+                            >
+                              Book Now
+                            </Button>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
 
                 {/* Pricing Card */}
@@ -2610,8 +2450,19 @@ export default function Course200HourRishikesh() {
                     {/* Content */}
                     <div className="p-6 space-y-5">
                       <p className="text-center text-foreground font-medium border-b border-border pb-4">
-                        Course Duration: 21 Nights / 22 Days
+                        Course Duration: 23 Nights / 24 Days
                       </p>
+
+                      {/* Tuition Fees */}
+                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Tuition Fees</p>
+                        <p className="font-heading text-2xl font-bold text-foreground">
+                          $999
+                        </p>
+                        <p className="text-muted-foreground line-through text-sm">
+                          $1,299
+                        </p>
+                      </div>
 
                       {/* Triple Sharing */}
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
@@ -3057,17 +2908,28 @@ export default function Course200HourRishikesh() {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">Choose Your Stay</p>
+              <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">Choose Your Package</p>
               <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Room Options
+                Yoga Teaching & Room Packages
               </h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Rest and recharge in our peaceful living spaces, designed to support your yogic journey
+                Choose the package that suits you best — from tuition-only course attendance to complete residential packages with peaceful room stays.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
               {[
+                {
+                  title: "Tuition Only",
+                  beds: "Course Only",
+                  description: "Full access to classes, study materials, and certification. Accommodation and meals not included.",
+                  originalPrice: "$1,299",
+                  price: "$999",
+                  images: [apartGroupClass, apartSeatedTalk, apartGroupPose, apartChildPose, apartMountainPose],
+                  features: ["Yoga Shala", "TTC Manual", "Wi-Fi", "All Classes"],
+                  badge: "Course Only",
+                  isPopular: false,
+                },
                 {
                   title: "Triple Sharing",
                   beds: 3,
