@@ -2462,6 +2462,77 @@ export default function Course200Hour() {
         </section>
 
 
+        {/* ===== INCLUSIONS / EXCLUSIONS ===== */}
+        < section className="py-20 bg-secondary/30" >
+          <div className="container mx-auto px-4">
+            {/* Tab Buttons */}
+            <div className="flex justify-center gap-4 mb-12">
+              <button
+                onClick={() => setActiveInclusionTab('inclusions')}
+                className={`px-8 py-3 rounded-lg font-heading text-lg font-semibold transition-all duration-300 ${activeInclusionTab === 'inclusions'
+                  ? 'bg-primary text-primary-foreground shadow-lg'
+                  : 'bg-card text-foreground border border-border hover:bg-secondary'
+                  }`}
+              >
+                What's Included
+              </button>
+              <button
+                onClick={() => setActiveInclusionTab('exclusions')}
+                className={`px-8 py-3 rounded-lg font-heading text-lg font-semibold transition-all duration-300 ${activeInclusionTab === 'exclusions'
+                  ? 'bg-primary text-primary-foreground shadow-lg'
+                  : 'bg-card text-foreground border border-border hover:bg-secondary'
+                  }`}
+              >
+                What's Not Included
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="max-w-5xl mx-auto">
+              {activeInclusionTab === 'inclusions' ? (
+                <div className="animate-fade-in">
+                  <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-10">
+                    What's Included
+                  </h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {inclusions.map((item, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center gap-4 p-5 bg-card rounded-lg shadow-sm"
+                      >
+                        <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                          <Check className="w-5 h-5 text-accent" />
+                        </div>
+                        <span className="text-foreground font-medium">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div className="animate-fade-in">
+                  <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-10">
+                    What's Not Included
+                  </h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {exclusions.map((item, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center gap-4 p-5 bg-card rounded-lg shadow-sm"
+                      >
+                        <div className="w-8 h-8 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0">
+                          <X className="w-5 h-5 text-destructive" />
+                        </div>
+                        <span className="text-foreground font-medium">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section >
+
+
         {/* ===== WHAT YOU WILL RECEIVE ===== */}
         <section className="py-20 bg-background overflow-hidden">
           <div className="container mx-auto px-4">
@@ -3181,76 +3252,6 @@ export default function Course200Hour() {
             </div>
           </div>
         </section>
-
-        {/* ===== INCLUSIONS / EXCLUSIONS ===== */}
-        < section className="py-20 bg-secondary/30" >
-          <div className="container mx-auto px-4">
-            {/* Tab Buttons */}
-            <div className="flex justify-center gap-4 mb-12">
-              <button
-                onClick={() => setActiveInclusionTab('inclusions')}
-                className={`px-8 py-3 rounded-lg font-heading text-lg font-semibold transition-all duration-300 ${activeInclusionTab === 'inclusions'
-                  ? 'bg-primary text-primary-foreground shadow-lg'
-                  : 'bg-card text-foreground border border-border hover:bg-secondary'
-                  }`}
-              >
-                What's Included
-              </button>
-              <button
-                onClick={() => setActiveInclusionTab('exclusions')}
-                className={`px-8 py-3 rounded-lg font-heading text-lg font-semibold transition-all duration-300 ${activeInclusionTab === 'exclusions'
-                  ? 'bg-primary text-primary-foreground shadow-lg'
-                  : 'bg-card text-foreground border border-border hover:bg-secondary'
-                  }`}
-              >
-                What's Not Included
-              </button>
-            </div>
-
-            {/* Content */}
-            <div className="max-w-5xl mx-auto">
-              {activeInclusionTab === 'inclusions' ? (
-                <div className="animate-fade-in">
-                  <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-10">
-                    What's Included
-                  </h2>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {inclusions.map((item, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center gap-4 p-5 bg-card rounded-lg shadow-sm"
-                      >
-                        <div className="w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                          <Check className="w-5 h-5 text-accent" />
-                        </div>
-                        <span className="text-foreground font-medium">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <div className="animate-fade-in">
-                  <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-10">
-                    What's Not Included
-                  </h2>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {exclusions.map((item, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center gap-4 p-5 bg-card rounded-lg shadow-sm"
-                      >
-                        <div className="w-8 h-8 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0">
-                          <X className="w-5 h-5 text-destructive" />
-                        </div>
-                        <span className="text-foreground font-medium">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </section >
 
         {/* ===== GOOGLE REVIEWS ===== */}
         <section className="py-20 bg-secondary/30 relative overflow-hidden">
