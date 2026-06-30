@@ -2330,6 +2330,196 @@ export default function Course200Hour() {
           </div>
         </section >
 
+        {/* ===== LIVE Q&A SESSIONS ===== */}
+        <section className="py-20 bg-background relative overflow-hidden border-t border-border/30">
+          <div className="absolute top-1/4 -left-64 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute bottom-1/4 -right-64 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-primary font-heading text-xs font-bold tracking-widest uppercase bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+                Global Support
+              </span>
+              <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mt-4 mb-4 leading-tight">
+                Live Support & Q&A Schedule
+              </h2>
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                Connect with our founders and lead teachers live to get answers to all your course-related questions. Select the session that best matches your local timezone.
+              </p>
+            </div>
+
+            {/* Session Cards Grid */}
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+              {/* Session A */}
+              <div className="group relative bg-card/60 backdrop-blur-md border border-border/80 hover:border-primary/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors" />
+                <div>
+                  <div className="flex justify-between items-start mb-6">
+                    <span className="text-xs font-bold text-primary tracking-widest uppercase bg-primary/10 px-2.5 py-1 rounded-md border border-primary/20">
+                      Session A
+                    </span>
+                    <span className="text-xs text-emerald-600 dark:text-emerald-400 font-semibold bg-emerald-500/10 px-2.5 py-1 rounded-md">
+                      APAC Friendly
+                    </span>
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-foreground mb-4">
+                    Asia-Pacific Friendly
+                  </h3>
+                  <ul className="space-y-3.5 mb-8">
+                    <li className="flex items-center gap-3 text-sm text-foreground/90">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                      <strong>Day:</strong> Tuesday
+                    </li>
+                    <li className="flex items-center gap-3 text-sm text-foreground/90">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                      <strong>Time (Bali):</strong> 5:00 PM WITA
+                    </li>
+                    <li className="flex flex-col gap-1 text-xs text-muted-foreground pl-5 border-l border-border/60">
+                      <span>• Sydney: 7:00 PM AEST</span>
+                      <span>• US East: 7:00 AM EDT</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="pt-4 border-t border-border/40">
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    <strong className="text-foreground">Best for:</strong> Australia, New Zealand, and early-rising US East Coast prospects.
+                  </p>
+                </div>
+              </div>
+
+              {/* Session B */}
+              <div className="group relative bg-card/60 backdrop-blur-md border border-border/80 hover:border-primary/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors" />
+                <div>
+                  <div className="flex justify-between items-start mb-6">
+                    <span className="text-xs font-bold text-primary tracking-widest uppercase bg-primary/10 px-2.5 py-1 rounded-md border border-primary/20">
+                      Session B
+                    </span>
+                    <span className="text-xs text-blue-600 dark:text-blue-400 font-semibold bg-blue-500/10 px-2.5 py-1 rounded-md">
+                      Europe Friendly
+                    </span>
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-foreground mb-4">
+                    Europe Friendly
+                  </h3>
+                  <ul className="space-y-3.5 mb-8">
+                    <li className="flex items-center gap-3 text-sm text-foreground/90">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                      <strong>Day:</strong> Thursday
+                    </li>
+                    <li className="flex items-center gap-3 text-sm text-foreground/90">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                      <strong>Time (Bali):</strong> 7:00 PM WITA
+                    </li>
+                    <li className="flex flex-col gap-1 text-xs text-muted-foreground pl-5 border-l border-border/60">
+                      <span>• United Kingdom: 12:00 PM BST</span>
+                      <span>• Germany: 1:00 PM CEST</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="pt-4 border-t border-border/40">
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    <strong className="text-foreground">Best for:</strong> UK, Germany, and the rest of Europe.
+                  </p>
+                </div>
+              </div>
+
+              {/* Session C */}
+              <div className="group relative bg-card/60 backdrop-blur-md border border-border/80 hover:border-primary/50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -z-10 group-hover:bg-primary/10 transition-colors" />
+                <div>
+                  <div className="flex justify-between items-start mb-6">
+                    <span className="text-xs font-bold text-primary tracking-widest uppercase bg-primary/10 px-2.5 py-1 rounded-md border border-primary/20">
+                      Session C
+                    </span>
+                    <span className="text-xs text-amber-600 dark:text-amber-400 font-semibold bg-amber-500/10 px-2.5 py-1 rounded-md">
+                      Americas Friendly
+                    </span>
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-foreground mb-4">
+                    Americas Friendly
+                  </h3>
+                  <ul className="space-y-3.5 mb-8">
+                    <li className="flex items-center gap-3 text-sm text-foreground/90">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                      <strong>Day:</strong> Saturday
+                    </li>
+                    <li className="flex items-center gap-3 text-sm text-foreground/90">
+                      <span className="w-2 h-2 rounded-full bg-primary" />
+                      <strong>Time (Bali):</strong> 9:00 AM WITA
+                    </li>
+                    <li className="flex flex-col gap-1 text-xs text-muted-foreground pl-5 border-l border-border/60">
+                      <span>• US West Coast: 7:00 PM (Friday)</span>
+                      <span>• US East Coast: 10:00 PM (Friday)</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="pt-4 border-t border-border/40">
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    <strong className="text-foreground">Best for:</strong> United States and Canada.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Timezone Comparison Table */}
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-card/40 border border-border/60 rounded-2xl p-6 md:p-8 shadow-inner backdrop-blur-sm">
+                <h4 className="font-heading text-lg font-bold text-foreground mb-6 text-center">
+                  Quick Timezone Translation Table
+                </h4>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="border-b border-border/40 text-xs tracking-wider text-muted-foreground uppercase">
+                        <th className="py-3 px-4">Region</th>
+                        <th className="py-3 px-4">Timezone</th>
+                        <th className="py-3 px-4">Your Local Time</th>
+                        <th className="py-3 px-4 text-right">Bali Time (Base)</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-border/20 text-sm">
+                      <tr className="hover:bg-primary/5 transition-colors">
+                        <td className="py-3.5 px-4 font-medium text-foreground">Australia (Sydney/Melbourne)</td>
+                        <td className="py-3.5 px-4 text-muted-foreground">AEST (UTC+10/+11)</td>
+                        <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
+                        <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">5:00 – 6:00 PM</td>
+                      </tr>
+                      <tr className="hover:bg-primary/5 transition-colors">
+                        <td className="py-3.5 px-4 font-medium text-foreground">United Kingdom (London)</td>
+                        <td className="py-3.5 px-4 text-muted-foreground">BST/GMT (UTC+0/+1)</td>
+                        <td className="py-3.5 px-4 text-primary font-semibold">12:00 – 1:00 PM</td>
+                        <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">7:00 – 8:00 PM</td>
+                      </tr>
+                      <tr className="hover:bg-primary/5 transition-colors bg-amber-500/5">
+                        <td className="py-3.5 px-4 font-medium text-foreground flex items-center gap-1.5">
+                          Germany (Berlin) <span title="Late night Bali time" className="cursor-help text-amber-500 text-xs">⚠️</span>
+                        </td>
+                        <td className="py-3.5 px-4 text-muted-foreground">CEST (UTC+1/+2)</td>
+                        <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
+                        <td className="py-3.5 px-4 text-right text-amber-600 dark:text-amber-400 font-semibold font-mono">1:00 – 2:00 AM (Next Day)</td>
+                      </tr>
+                      <tr className="hover:bg-primary/5 transition-colors">
+                        <td className="py-3.5 px-4 font-medium text-foreground">US East Coast (New York)</td>
+                        <td className="py-3.5 px-4 text-muted-foreground">EDT (UTC-4)</td>
+                        <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
+                        <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">6:00 – 7:00 AM</td>
+                      </tr>
+                      <tr className="hover:bg-primary/5 transition-colors">
+                        <td className="py-3.5 px-4 font-medium text-foreground">US West Coast (Los Angeles)</td>
+                        <td className="py-3.5 px-4 text-muted-foreground">PDT (UTC-7)</td>
+                        <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
+                        <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">9:00 – 10:00 AM</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
         {/* ===== UPCOMING DATES ===== */}
         <section id="book-now" className="py-20 bg-background scroll-mt-24">
           <div className="container mx-auto px-4">
