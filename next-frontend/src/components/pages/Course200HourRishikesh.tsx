@@ -2698,68 +2698,6 @@ export default function Course200HourRishikesh() {
           </div>
         </section>
 
-        {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
-
-        {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
-        <section
-          className="py-24 relative bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${apartYogaAllianceGraduates.src})` }}
-        >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/50" />
-
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              {/* Subtitle */}
-              <p className="text-white/90 text-lg mb-2 font-medium">
-                "YOGAGARHI – 200 Hour YTTC"
-              </p>
-
-              {/* Main Title */}
-              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
-                Yoga Alliance USA CERTIFIED
-              </h2>
-
-              {/* Description */}
-              <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-                Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
-                you will receive an internationally recognized certification, allowing you to become a
-                <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                This certification opens doors for you to teach yoga anywhere in the world.
-              </p>
-
-              {/* Certification Badges - Real Images */}
-              <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <Image src={yaRys100} alt="RYS 100" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRys200} alt="RYS 200" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRyt200} alt="RYT 200" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-              </div>
-
-              {/* Full Certification Banner */}
-              <div className="mt-10">
-                <Image src={yaAllCertifications} alt="All Yoga Alliance Certifications" width={672} height={400} className="rounded-lg shadow-lg mx-auto" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* COURSE_SYLLABUS_REMOVED_FROM_HERE */}
-
-
-
-
-
-
-
-
-
-        <HomeGallerySection />
-
-        {/* COURSE_SYLLABUS_MOVED_UP */}
-
-
-
-
         {/* ===== PROGRAM TIMELINE HIGHLIGHTS ===== */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
@@ -3333,6 +3271,69 @@ export default function Course200HourRishikesh() {
             </div>
           </div>
         </section >
+
+        {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
+
+        {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
+        <section
+          className="py-24 relative bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url(${apartYogaAllianceGraduates.src})` }}
+        >
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/50" />
+
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              {/* Subtitle */}
+              <p className="text-white/90 text-lg mb-2 font-medium">
+                "YOGAGARHI – 200 Hour YTTC"
+              </p>
+
+              {/* Main Title */}
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
+                Yoga Alliance USA CERTIFIED
+              </h2>
+
+              {/* Description */}
+              <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
+                Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
+                you will receive an internationally recognized certification, allowing you to become a
+                <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
+                This certification opens doors for you to teach yoga anywhere in the world.
+              </p>
+
+              {/* Certification Badges - Real Images */}
+              <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+                <Image src={yaRys100} alt="RYS 100" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRys200} alt="RYS 200" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRyt200} alt="RYT 200" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+              </div>
+
+              {/* Full Certification Banner */}
+              <div className="mt-10">
+                <Image src={yaAllCertifications} alt="All Yoga Alliance Certifications" width={672} height={400} className="rounded-lg shadow-lg mx-auto" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* COURSE_SYLLABUS_REMOVED_FROM_HERE */}
+
+
+
+
+
+
+
+
+
+        <HomeGallerySection />
+
+        {/* COURSE_SYLLABUS_MOVED_UP */}
+
+
+
+
 
         {/* ===== GOOGLE REVIEWS ===== */}
         <section className="py-20 bg-secondary/30 relative overflow-hidden">
