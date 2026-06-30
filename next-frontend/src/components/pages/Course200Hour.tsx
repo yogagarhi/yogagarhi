@@ -2330,6 +2330,138 @@ export default function Course200Hour() {
           </div>
         </section >
 
+        {/* ===== UPCOMING DATES ===== */}
+        <section id="book-now" className="py-20 bg-background scroll-mt-24">
+          <div className="container mx-auto px-4">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-2">
+              200 Hour Yoga Teacher Training
+            </h2>
+            <p className="text-center text-primary font-heading text-lg tracking-[0.3em] uppercase mb-2">
+              Upcoming Dates
+            </p>
+            {/* Decorative Calendar Icon */}
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
+              <svg className="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <rect x="6" y="10" width="28" height="24" rx="3" />
+                <line x1="6" y1="18" x2="34" y2="18" />
+                <line x1="14" y1="6" x2="14" y2="12" />
+                <line x1="26" y1="6" x2="26" y2="12" />
+                <circle cx="14" cy="26" r="2" fill="currentColor" />
+                <circle cx="20" cy="26" r="2" fill="currentColor" />
+                <circle cx="26" cy="26" r="2" fill="currentColor" />
+              </svg>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
+            </div>
+            <div className="w-16 h-0.5 bg-primary mx-auto mb-12" />
+
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-3 gap-8">
+                {/* Dates List */}
+                <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
+                  {upcomingDates.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 gap-4 hover:bg-secondary/30 transition-colors duration-200"
+                    >
+                      {/* Date */}
+                      <div className="flex items-center gap-3 min-w-[200px]">
+                        <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
+                        <span className="font-medium text-foreground">{item.date}</span>
+                      </div>
+
+                      {/* Spots Left */}
+                      <div className="flex items-center gap-4 sm:gap-6 flex-wrap sm:flex-nowrap">
+                        <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
+                          ? "bg-red-100 text-red-700"
+                          : "bg-secondary text-secondary-foreground"
+                          }`}>
+                          Only {item.spotsLeft} spots left
+                        </span>
+
+                        {/* Early Bird */}
+                        <div className="text-center">
+                          <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
+                          <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                        </div>
+
+                        {/* Book Button */}
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => setShowEnrollDialog(true)}
+                        >
+                          Book Now
+                        </Button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Pricing Card */}
+                <div className="lg:col-span-1">
+                  <div className="bg-card border border-border rounded-xl overflow-hidden sticky top-24">
+                    {/* Header */}
+                    <div className="bg-primary text-primary-foreground p-4 text-center">
+                      <h3 className="font-heading font-bold text-lg tracking-wide">200 HOUR YOGA TTC FEES</h3>
+                    </div>
+
+                    {/* Content */}
+                    <div className="p-6 space-y-5">
+                      <p className="text-center text-foreground font-medium border-b border-border pb-4">
+                        Course Duration: 21 Nights / 22 Days
+                      </p>
+
+                      {/* Triple Sharing */}
+                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Triple Sharing</p>
+                        <p className="font-heading text-2xl font-bold text-foreground">
+                          $1,750
+                        </p>
+                        <p className="text-muted-foreground line-through text-sm">
+                          $2,187
+                        </p>
+                      </div>
+
+                      {/* Double Sharing */}
+                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Double Sharing</p>
+                        <p className="font-heading text-2xl font-bold text-foreground">
+                          $1,899
+                        </p>
+                        <p className="text-muted-foreground line-through text-sm">
+                          $2,370
+                        </p>
+                      </div>
+
+                      {/* Private Room */}
+                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Private Room</p>
+                        <p className="font-heading text-2xl font-bold text-foreground">
+                          $2,499
+                        </p>
+                        <p className="text-muted-foreground line-through text-sm">
+                          $3,125
+                        </p>
+                      </div>
+
+                      {/* CTA */}
+                      <Button
+                        className="w-full"
+                        size="lg"
+                        onClick={() => setShowEnrollDialog(true)}
+                      >
+                        Enroll Now
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
         {/* ===== WHAT YOU WILL RECEIVE ===== */}
         <section className="py-20 bg-background overflow-hidden">
           <div className="container mx-auto px-4">
@@ -3119,137 +3251,6 @@ export default function Course200Hour() {
             </div>
           </div>
         </section >
-
-        {/* ===== UPCOMING DATES ===== */}
-        <section id="book-now" className="py-20 bg-background scroll-mt-24">
-          <div className="container mx-auto px-4">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-2">
-              200 Hour Yoga Teacher Training
-            </h2>
-            <p className="text-center text-primary font-heading text-lg tracking-[0.3em] uppercase mb-2">
-              Upcoming Dates
-            </p>
-            {/* Decorative Calendar Icon */}
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
-              <svg className="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <rect x="6" y="10" width="28" height="24" rx="3" />
-                <line x1="6" y1="18" x2="34" y2="18" />
-                <line x1="14" y1="6" x2="14" y2="12" />
-                <line x1="26" y1="6" x2="26" y2="12" />
-                <circle cx="14" cy="26" r="2" fill="currentColor" />
-                <circle cx="20" cy="26" r="2" fill="currentColor" />
-                <circle cx="26" cy="26" r="2" fill="currentColor" />
-              </svg>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
-            </div>
-            <div className="w-16 h-0.5 bg-primary mx-auto mb-12" />
-
-            <div className="max-w-6xl mx-auto">
-              <div className="grid lg:grid-cols-3 gap-8">
-                {/* Dates List */}
-                <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
-                  {upcomingDates.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 gap-4 hover:bg-secondary/30 transition-colors duration-200"
-                    >
-                      {/* Date */}
-                      <div className="flex items-center gap-3 min-w-[200px]">
-                        <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
-                        <span className="font-medium text-foreground">{item.date}</span>
-                      </div>
-
-                      {/* Spots Left */}
-                      <div className="flex items-center gap-4 sm:gap-6 flex-wrap sm:flex-nowrap">
-                        <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
-                          ? "bg-red-100 text-red-700"
-                          : "bg-secondary text-secondary-foreground"
-                          }`}>
-                          Only {item.spotsLeft} spots left
-                        </span>
-
-                        {/* Early Bird */}
-                        <div className="text-center">
-                          <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                          <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
-                        </div>
-
-                        {/* Book Button */}
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          onClick={() => setShowEnrollDialog(true)}
-                        >
-                          Book Now
-                        </Button>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Pricing Card */}
-                <div className="lg:col-span-1">
-                  <div className="bg-card border border-border rounded-xl overflow-hidden sticky top-24">
-                    {/* Header */}
-                    <div className="bg-primary text-primary-foreground p-4 text-center">
-                      <h3 className="font-heading font-bold text-lg tracking-wide">200 HOUR YOGA TTC FEES</h3>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-6 space-y-5">
-                      <p className="text-center text-foreground font-medium border-b border-border pb-4">
-                        Course Duration: 21 Nights / 22 Days
-                      </p>
-
-                      {/* Triple Sharing */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Triple Sharing</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,750
-                        </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $2,187
-                        </p>
-                      </div>
-
-                      {/* Double Sharing */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Double Sharing</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,899
-                        </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $2,370
-                        </p>
-                      </div>
-
-                      {/* Private Room */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Private Room</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          $2,499
-                        </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $3,125
-                        </p>
-                      </div>
-
-                      {/* CTA */}
-                      <Button
-                        className="w-full"
-                        size="lg"
-                        onClick={() => setShowEnrollDialog(true)}
-                      >
-                        Enroll Now
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* ===== GOOGLE REVIEWS ===== */}
         <section className="py-20 bg-secondary/30 relative overflow-hidden">
