@@ -3184,6 +3184,85 @@ export default function Course200Hour() {
           </div>
         </section>
 
+        {/* ===== INSTAGRAM FOLLOW ===== */}
+        <section className="py-20 bg-background overflow-hidden">
+          <div className="container mx-auto px-4">
+            {/* Header */}
+            <div className="text-center mb-12">
+              <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">
+                Behind the Scenes
+              </p>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Follow Our Journey
+              </h2>
+              <p className="text-muted-foreground max-w-xl mx-auto">
+                Daily moments of transformation, wisdom, and community from Bali
+              </p>
+            </div>
+
+            {/* Instagram Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 max-w-6xl mx-auto mb-12">
+              {[
+                { img: insta1, likes: "16", type: "image", url: "https://www.instagram.com/p/DQndCYAkrtF/" },
+                { img: insta2, likes: "81", type: "reel", url: "https://www.instagram.com/reel/DP1YgMtCc5z/" },
+                { img: insta3, likes: "37", type: "image", url: "https://www.instagram.com/p/DO-sSZACYSg/" },
+                { img: insta4, likes: "35", type: "image", url: "https://www.instagram.com/p/DO25IFjCTbB/" },
+                { img: insta5, likes: "92", type: "reel", url: "https://www.instagram.com/reel/DPl0yZCCVa6/" },
+              ].map((post, index) => (
+                <a
+                  key={index}
+                  href={post.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative aspect-square rounded-xl overflow-hidden bg-muted"
+                >
+                  <Image
+                    src={post.img}
+                    alt={`Instagram post ${index + 1}`}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  {/* Overlay on hover */}
+                  <div className="absolute inset-0 bg-foreground/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="flex items-center gap-3 text-primary-foreground">
+                      <div className="flex items-center gap-1">
+                        <Heart className="w-5 h-5 fill-primary-foreground" />
+                        <span className="font-medium">{post.likes}</span>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Reel indicator */}
+                  {post.type === "reel" && (
+                    <div className="absolute top-2 right-2">
+                      <Play className="w-5 h-5 text-primary-foreground drop-shadow-lg" />
+                    </div>
+                  )}
+                </a>
+              ))}
+            </div>
+
+            {/* Follow CTA */}
+            <div className="text-center">
+              <a
+                href="https://www.instagram.com/yogagarhi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-4 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] p-[2px] rounded-full group"
+              >
+                <div className="flex items-center gap-3 bg-background rounded-full px-6 py-3 group-hover:bg-transparent transition-colors duration-300">
+                  <Instagram className="w-6 h-6 text-foreground group-hover:text-primary-foreground transition-colors" />
+                  <span className="font-heading font-semibold text-foreground group-hover:text-primary-foreground transition-colors">
+                    @yogagarhi
+                  </span>
+                  <span className="text-muted-foreground group-hover:text-primary-foreground/80 transition-colors text-sm">
+                    Follow us
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* ===== EXCURSIONS ===== */}
         < section className="py-24 bg-background relative overflow-hidden" >
           {/* Decorative Elements */}
@@ -4531,84 +4610,7 @@ export default function Course200Hour() {
           </div>
         </section>
 
-        {/* ===== INSTAGRAM FOLLOW ===== */}
-        <section className="py-20 bg-background overflow-hidden">
-          <div className="container mx-auto px-4">
-            {/* Header */}
-            <div className="text-center mb-12">
-              <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">
-                Behind the Scenes
-              </p>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Follow Our Journey
-              </h2>
-              <p className="text-muted-foreground max-w-xl mx-auto">
-                Daily moments of transformation, wisdom, and community from Bali
-              </p>
-            </div>
-
-            {/* Instagram Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 max-w-6xl mx-auto mb-12">
-              {[
-                { img: insta1, likes: "16", type: "image", url: "https://www.instagram.com/p/DQndCYAkrtF/" },
-                { img: insta2, likes: "81", type: "reel", url: "https://www.instagram.com/reel/DP1YgMtCc5z/" },
-                { img: insta3, likes: "37", type: "image", url: "https://www.instagram.com/p/DO-sSZACYSg/" },
-                { img: insta4, likes: "35", type: "image", url: "https://www.instagram.com/p/DO25IFjCTbB/" },
-                { img: insta5, likes: "92", type: "reel", url: "https://www.instagram.com/reel/DPl0yZCCVa6/" },
-              ].map((post, index) => (
-                <a
-                  key={index}
-                  href={post.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative aspect-square rounded-xl overflow-hidden bg-muted"
-                >
-                  <Image
-                    src={post.img}
-                    alt={`Instagram post ${index + 1}`}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-foreground/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="flex items-center gap-3 text-primary-foreground">
-                      <div className="flex items-center gap-1">
-                        <Heart className="w-5 h-5 fill-primary-foreground" />
-                        <span className="font-medium">{post.likes}</span>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Reel indicator */}
-                  {post.type === "reel" && (
-                    <div className="absolute top-2 right-2">
-                      <Play className="w-5 h-5 text-primary-foreground drop-shadow-lg" />
-                    </div>
-                  )}
-                </a>
-              ))}
-            </div>
-
-            {/* Follow CTA */}
-            <div className="text-center">
-              <a
-                href="https://www.instagram.com/yogagarhi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-4 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] p-[2px] rounded-full group"
-              >
-                <div className="flex items-center gap-3 bg-background rounded-full px-6 py-3 group-hover:bg-transparent transition-colors duration-300">
-                  <Instagram className="w-6 h-6 text-foreground group-hover:text-primary-foreground transition-colors" />
-                  <span className="font-heading font-semibold text-foreground group-hover:text-primary-foreground transition-colors">
-                    @yogagarhi
-                  </span>
-                  <span className="text-muted-foreground group-hover:text-primary-foreground/80 transition-colors text-sm">
-                    Follow us
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>{/* ===== QUICK ENQUIRY DIALOG ===== */}
+        {/* ===== QUICK ENQUIRY DIALOG ===== */}
         <Dialog open={showQuickEnquiryDialog} onOpenChange={setShowQuickEnquiryDialog}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
