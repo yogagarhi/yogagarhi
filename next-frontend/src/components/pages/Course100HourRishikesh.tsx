@@ -1257,7 +1257,7 @@ export default function Course100HourRishikesh() {
                         <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                           <Check className="w-3.5 h-3.5 text-primary" />
                         </div>
-                        <span className="leading-relaxed">{item}</span>
+                        <span className="leading-relaxed flex-1">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -1265,11 +1265,11 @@ export default function Course100HourRishikesh() {
 
                 {/* Mobile-only Pre-YTTC Section */}
                 <div className="mb-10 p-6 rounded-2xl bg-primary/10 border-2 border-primary/20 lg:hidden group shadow-sm">
-                  <h3 className="font-heading text-xl font-extrabold text-foreground mb-3 flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                  <h3 className="font-heading text-xl font-extrabold text-foreground mb-3 flex items-start gap-2">
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Zap className="w-4 h-4 text-primary" />
                     </div>
-                    Not Sure Which YTTC to Trust? Experience It First Free 2-Day Yoga Teacher Training Foundation
+                    <span className="flex-1">Not Sure Which YTTC to Trust? Experience It First Free 2-Day Yoga Teacher Training Foundation</span>
                   </h3>
                   <div className="text-sm text-muted-foreground leading-relaxed mb-4 space-y-3">
                     <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
@@ -1281,16 +1281,16 @@ export default function Course100HourRishikesh() {
 
                   <div className="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 shadow-inner">
                     <div className="flex items-center gap-2 text-orange-700 font-bold text-sm mb-1 uppercase tracking-tight">
-                      <Calendar className="w-4 h-4" />
-                      Next Batch: <DynamicBatchDate />
+                      <Calendar className="w-4 h-4 flex-shrink-0" />
+                      <span>Next Batch: <DynamicBatchDate /></span>
                     </div>
-                    <div className="flex items-center gap-2 text-orange-600/80 text-xs font-semibold mb-2">
-                      <Clock className="w-4 h-4" />
-                      10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)
+                    <div className="flex items-start gap-2 text-orange-600/80 text-xs font-semibold mb-2">
+                      <Clock className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                      <span className="flex-1">10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)</span>
                     </div>
                     <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-100 text-red-600 text-[10px] font-bold uppercase animate-pulse border border-red-200">
-                      <UsersRound className="w-3 h-3" />
-                      Limited Seats Only
+                      <UsersRound className="w-3 h-3 flex-shrink-0" />
+                      <span>Limited Seats Only</span>
                     </div>
                   </div>
                   <Button

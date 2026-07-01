@@ -6,7 +6,7 @@ import { getCloudinaryImage } from "@/utils/cloudinary";
 
 // Cloudinary image paths
 const imgPreTtc = getCloudinaryImage("pre-yttc-online.png");
-const imgAyurveda = getCloudinaryImage("activity-ayurveda.jpg");
+const imgAyurveda = getCloudinaryImage("yoga-lifestyle.jpg");
 const imgShivShakti = getCloudinaryImage("himalayan-lineage.jpg");
 const imgPhilosophy = getCloudinaryImage("living-philosophy.jpg");
 const imgSmallGroup = getCloudinaryImage("small-group-work.jpg");
