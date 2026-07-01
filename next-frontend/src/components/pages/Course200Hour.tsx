@@ -4120,7 +4120,7 @@ export default function Course200Hour() {
 
         {/* ===== BOOK A CALL DIALOG ===== */}
         <Dialog open={showCalendarDialog} onOpenChange={setShowCalendarDialog}>
-          <DialogContent className="max-w-5xl p-0 overflow-hidden bg-card border-none rounded-2xl">
+          <DialogContent className="max-w-5xl p-0 overflow-y-auto max-h-[92vh] bg-card border-none rounded-2xl">
             <div className="grid lg:grid-cols-2">
               {/* Left: Calendar Section */}
               <div className="bg-foreground text-primary-foreground p-8">
@@ -4272,6 +4272,13 @@ export default function Course200Hour() {
                     }}
                   >
                     Confirm Booking
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    className="w-full mt-2 text-muted-foreground hover:text-foreground"
+                    onClick={() => setShowCalendarDialog(false)}
+                  >
+                    Cancel
                   </Button>
                 </div>
               </div>
