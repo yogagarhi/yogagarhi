@@ -609,8 +609,8 @@ export default function Course200Hour() {
     date: '',
     time: ''
   });
-  const [selectedMonth, setSelectedMonth] = useState(0);
-  const [selectedDay, setSelectedDay] = useState<number | null>(13);
+  const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth());
+  const [selectedDay, setSelectedDay] = useState<number | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [showBookingDialog, setShowBookingDialog] = useState(false);
   const [showCalendarDialog, setShowCalendarDialog] = useState(false);
@@ -1319,7 +1319,7 @@ export default function Course200Hour() {
                         <Leaf className="w-5 h-5 text-primary" />
                       </div>
                       <h3 className="font-heading text-lg font-bold text-foreground">
-                        Philosophy + Ayurveda + Your Unique Energy
+                        Multi-Style + Philosophy + Ayurveda + Personalized Guidance
                       </h3>
                     </div>
                     <div className="border-l-2 border-primary/30 pl-4 py-1 italic text-muted-foreground text-xs leading-relaxed my-4">
@@ -1502,7 +1502,7 @@ export default function Course200Hour() {
                         <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                           <Check className="w-3.5 h-3.5 text-primary" />
                         </div>
-                        <span className="leading-relaxed">{item}</span>
+                        <span className="leading-relaxed flex-1">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -1562,11 +1562,11 @@ export default function Course200Hour() {
 
                 {/* Mobile-only Pre-YTTC Section */}
                 <div className="mb-10 p-6 rounded-2xl bg-primary/10 border-2 border-primary/20 lg:hidden group shadow-sm">
-                  <h3 className="font-heading text-xl font-extrabold text-foreground mb-3 flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                  <h3 className="font-heading text-xl font-extrabold text-foreground mb-3 flex items-start gap-2">
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Zap className="w-4 h-4 text-primary" />
                     </div>
-                    Not Sure Which YTTC to Trust? Experience It First Free 2-Day Yoga Teacher Training Foundation
+                    <span className="flex-1">Not Sure Which YTTC to Trust? Experience It First Free 2-Day Yoga Teacher Training Foundation</span>
                   </h3>
                   <div className="text-sm text-muted-foreground leading-relaxed mb-4 space-y-3">
                     <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
@@ -1578,16 +1578,16 @@ export default function Course200Hour() {
 
                   <div className="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 shadow-inner">
                     <div className="flex items-center gap-2 text-orange-700 font-bold text-sm mb-1 uppercase tracking-tight">
-                      <Calendar className="w-4 h-4" />
-                      Next Batch: <DynamicBatchDate />
+                      <Calendar className="w-4 h-4 flex-shrink-0" />
+                      <span>Next Batch: <DynamicBatchDate /></span>
                     </div>
-                    <div className="flex items-center gap-2 text-orange-600/80 text-xs font-semibold mb-2">
-                      <Clock className="w-4 h-4" />
-                      10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)
+                    <div className="flex items-start gap-2 text-orange-600/80 text-xs font-semibold mb-2">
+                      <Clock className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                      <span className="flex-1">10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)</span>
                     </div>
                     <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-100 text-red-600 text-[10px] font-bold uppercase animate-pulse border border-red-200">
-                      <UsersRound className="w-3 h-3" />
-                      Limited Seats Only
+                      <UsersRound className="w-3 h-3 flex-shrink-0" />
+                      <span>Limited Seats Only</span>
                     </div>
                   </div>
                   <Button
@@ -1610,11 +1610,11 @@ export default function Course200Hour() {
                       Hop on a live video call to get a personal tour of the campus, classrooms, shala, and student rooms.
                     </p>
                     <Button
-                      className="w-full h-14 bg-gradient-to-r from-primary to-accent text-white font-bold hover:opacity-95 transition-all shadow-lg text-sm md:text-base flex items-center justify-center gap-3 rounded-xl"
+                      className="w-full h-auto py-4 bg-gradient-to-r from-primary to-accent text-white font-bold hover:opacity-95 transition-all shadow-lg text-sm md:text-base flex items-center justify-center gap-3 rounded-xl whitespace-normal"
                       onClick={() => setShowTourCallDialog(true)}
                     >
-                      <Video className="w-5 h-5 text-white" />
-                      Book a Call. See the School. See Your Room. See Your Yoga Hall.
+                      <Video className="w-5 h-5 text-white flex-shrink-0" />
+                      <span className="text-center">Book a Call. See the School. See Your Room. See Your Yoga Hall.</span>
                     </Button>
                   </div>
                 </div>
@@ -4120,7 +4120,7 @@ export default function Course200Hour() {
 
         {/* ===== BOOK A CALL DIALOG ===== */}
         <Dialog open={showCalendarDialog} onOpenChange={setShowCalendarDialog}>
-          <DialogContent className="max-w-5xl p-0 overflow-hidden bg-card border-none rounded-2xl">
+          <DialogContent className="max-w-5xl p-0 overflow-y-auto max-h-[92vh] bg-card border-none rounded-2xl">
             <div className="grid lg:grid-cols-2">
               {/* Left: Calendar Section */}
               <div className="bg-foreground text-primary-foreground p-8">
@@ -4160,7 +4160,7 @@ export default function Course200Hour() {
                     </div>
                   ))}
                   {/* Empty cells for offset */}
-                  {Array.from({ length: 3 }).map((_, i) => (
+                  {Array.from({ length: new Date(2026, selectedMonth, 1).getDay() }).map((_, i) => (
                     <div key={`empty-${i}`} className="py-2" />
                   ))}
                   {/* Days */}
@@ -4272,6 +4272,13 @@ export default function Course200Hour() {
                     }}
                   >
                     Confirm Booking
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    className="w-full mt-2 text-muted-foreground hover:text-foreground"
+                    onClick={() => setShowCalendarDialog(false)}
+                  >
+                    Cancel
                   </Button>
                 </div>
               </div>
