@@ -1193,6 +1193,38 @@ export default function Course300Hour() {
                       </div>
                     </div>
                   </div>
+
+                  {/* Highlighted Refund Policy Banner */}
+                  <div className="mt-6 pt-6 border-t border-border/20">
+                    <div className="relative overflow-hidden rounded-2xl border-2 border-amber-500/30 bg-gradient-to-br from-amber-500/[0.08] via-amber-500/[0.03] to-background p-6 sm:p-8 flex flex-col md:flex-row items-center md:items-start gap-6 shadow-md shadow-amber-500/5">
+                      {/* Decorative glowing gradient blur */}
+                      <div className="absolute -top-10 -right-10 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+                      <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+                      
+                      {/* Gold Badge Icon */}
+                      <div className="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center flex-shrink-0 shadow-lg shadow-amber-500/10 animate-float-gentle">
+                        <svg className="w-8 h-8 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                          <path d="m9 12 2 2 4-4" />
+                        </svg>
+                      </div>
+                      
+                      <div className="space-y-3 text-center md:text-left flex-1">
+                        <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
+                          <h4 className="font-heading font-extrabold text-foreground text-base sm:text-lg">
+                            A written refund policy, before you pay
+                          </h4>
+                          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-500 text-white text-[10px] font-black uppercase tracking-wider shadow-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                            100% Risk Free
+                          </span>
+                        </div>
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          If you arrive and feel within the first <strong className="font-extrabold text-foreground underline decoration-amber-500 decoration-2 underline-offset-4">2 days</strong> that this is not the right place for you, we <strong className="font-extrabold text-amber-600 dark:text-amber-500 bg-amber-500/10 px-1.5 py-0.5 rounded">refund 100%</strong> — in writing, no arguments. We would rather lose a fee than keep an unhappy student.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1225,10 +1257,10 @@ export default function Course300Hour() {
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Left Column - Welcome Text & Video on Mobile */}
               <div className="order-1 lg:order-2">
-                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-2 text-left">
                   Welcome to Yogagarhi
                 </h2>
-                <p className="font-heading text-xl text-primary mb-6 italic">
+                <p className="font-heading text-xl text-primary mb-6 italic text-left">
                   300 Hour Yoga Teacher Training Course
                 </p>
 
@@ -1245,32 +1277,46 @@ export default function Course300Hour() {
                   </div>
                 </div>
 
-                <div className="bg-secondary/30 border-l-4 border-primary rounded-r-xl p-6 md:p-8 my-8 relative overflow-hidden group hover:bg-secondary/40 transition-colors">
-                  <h3 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
-                    <span className="w-10 h-1 bg-primary rounded-full" />
-                    This Training Is for You If
-                  </h3>
+                <div className="space-y-6 text-muted-foreground leading-relaxed text-left mb-8">
+                  {/* First 2 paragraphs - always visible */}
+                  <p className="text-base sm:text-lg text-foreground/80 font-medium">
+                    Become a Yoga Alliance Registered Yoga Teacher (RYT 300) through Yogagarhi's
+                    300-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
+                    of yoga and self-realization.
+                  </p>
+                  <p>
+                    Our professional course is made for both beginners and intermediate practitioners.
+                    This course covers all essential aspects of yoga, including asanas, pranayama,
+                    anatomy, and teaching methodology.
+                  </p>
 
-                  <ul className="space-y-4">
-                    {[
-                      <>Deepens <span className="font-semibold text-foreground">teaching skills</span> with advanced alignment, sequencing, and philosophy</>,
-                      <>Builds <span className="font-semibold text-foreground">confidence</span> to lead full-length classes, workshops, and retreats</>,
-                      <>Refines <span className="font-semibold text-foreground">personal practice</span> and professional presence as a yoga teacher</>,
-                      <>Expands <span className="font-semibold text-foreground">career opportunities</span> in international studios, retreats, and wellness programs</>,
-                      <>Strengthens the <span className="font-semibold text-foreground">foundation</span> for long-term teaching, mentorship, and specialization</>
-                    ].map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-sm md:text-base text-muted-foreground">
-                        <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                          <Check className="w-3.5 h-3.5 text-primary" />
-                        </div>
-                        <span className="leading-relaxed flex-1">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  {/* Expandable content */}
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${showWelcomeExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                  >
+                    <p className="pt-2">
+                      Become a part of this transformative once in a lifetime experience in the
+                      mesmerizing beauty of Bali. This holistic program prepares you to become a
+                      professional yoga teacher having expertise, skills, and confidence.
+                    </p>
+                  </div>
+
+                  {/* Read More / Read Less Button */}
+                  <button
+                    onClick={() => setShowWelcomeExpanded(!showWelcomeExpanded)}
+                    className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors mt-2 group"
+                  >
+                    {showWelcomeExpanded ? 'Read Less' : 'Read More'}
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform duration-300 ${showWelcomeExpanded ? 'rotate-180' : ''
+                        }`}
+                    />
+                  </button>
                 </div>
 
                 {/* Mobile-only Pre-YTTC Section */}
-                <div className="mb-10 p-6 rounded-2xl bg-primary/10 border-2 border-primary/20 lg:hidden group shadow-sm">
+                <div className="mb-10 p-6 rounded-2xl bg-primary/10 border-2 border-primary/20 lg:hidden group shadow-sm text-left">
                   <h3 className="font-heading text-xl font-extrabold text-foreground mb-3 flex items-start gap-2">
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Zap className="w-4 h-4 text-primary" />
