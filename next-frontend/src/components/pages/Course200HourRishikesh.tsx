@@ -1235,133 +1235,36 @@ export default function Course200HourRishikesh() {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        {/* ===== DEPTH FIRST PATHWAY SECTION ===== */}
-        <section className="py-20 bg-secondary/30 border-b border-border/50 relative overflow-hidden">
-          {/* Decorative elements */}
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
-
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <h2 className="font-heading text-3xl md:text-5xl font-black text-foreground mb-4 leading-tight">
-                Depth first. <span className="text-primary font-normal italic">Teaching second.</span>
-              </h2>
-              <p className="text-base text-muted-foreground font-semibold uppercase tracking-[0.2em]">
-                Here's how transformation happens
-              </p>
-              <div className="w-16 h-1 bg-primary mx-auto mt-6 rounded-full" />
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto relative">
-              {/* Step 1 */}
-              <div className="group bg-card rounded-2xl border border-border/80 p-8 transition-all duration-500 relative overflow-hidden flex flex-col justify-between hover:border-primary/40 hover:shadow-xl hover:-translate-y-1">
-                {/* Left accent bar */}
-                <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-primary to-accent scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500 ease-out" />
-                
-                {/* Huge bg number */}
-                <div className="absolute top-4 right-6 text-8xl font-black text-primary/5 select-none pointer-events-none group-hover:text-primary/10 transition-colors duration-500 font-heading">
-                  01
-                </div>
-
-                <div className="relative z-10 space-y-6">
-                  <div className="flex items-center gap-3">
-                    <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-wider">
-                      Step 1
-                    </span>
-                    <span className="text-muted-foreground text-[10px] font-bold uppercase tracking-wider">
-                      Before You Arrive
-                    </span>
-                  </div>
-
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors duration-300">
-                        <BookOpen className="w-5 h-5 text-primary" />
+                  {/* Highlighted Refund Policy Banner */}
+                  <div className="mt-6 pt-6 border-t border-border/20">
+                    <div className="relative overflow-hidden rounded-2xl border-2 border-amber-500/30 bg-gradient-to-br from-amber-500/[0.08] via-amber-500/[0.03] to-background p-6 sm:p-8 flex flex-col md:flex-row items-center md:items-start gap-6 shadow-md shadow-amber-500/5">
+                      {/* Decorative glowing gradient blur */}
+                      <div className="absolute -top-10 -right-10 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+                      <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+                      
+                      {/* Gold Badge Icon */}
+                      <div className="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center flex-shrink-0 shadow-lg shadow-amber-500/10 animate-float-gentle">
+                        <svg className="w-8 h-8 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                          <path d="m9 12 2 2 4-4" />
+                        </svg>
                       </div>
-                      <h3 className="font-heading text-lg font-bold text-foreground">
-                        Pre-YTTC Academy
-                      </h3>
-                    </div>
-                    <div className="border-l-2 border-primary/30 pl-4 py-1 italic text-muted-foreground text-xs leading-relaxed my-4">
-                      "Most schools start with day one. We start <strong className="font-semibold text-foreground">1 month earlier</strong>, <strong className="font-semibold text-foreground">online, free</strong>, so you arrive already <strong className="font-semibold text-foreground">grounded in the basics</strong>, not learning them under pressure."
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Step 2 */}
-              <div className="group bg-card rounded-2xl border border-border/80 p-8 transition-all duration-500 relative overflow-hidden flex flex-col justify-between hover:border-primary/40 hover:shadow-xl hover:-translate-y-1">
-                {/* Left accent bar */}
-                <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-primary to-accent scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500 ease-out" />
-                
-                {/* Huge bg number */}
-                <div className="absolute top-4 right-6 text-8xl font-black text-primary/5 select-none pointer-events-none group-hover:text-primary/10 transition-colors duration-500 font-heading">
-                  02
-                </div>
-
-                <div className="relative z-10 space-y-6">
-                  <div className="flex items-center gap-3">
-                    <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-wider">
-                      Step 2
-                    </span>
-                    <span className="text-muted-foreground text-[10px] font-bold uppercase tracking-wider">
-                      Going Deep Into Yourself
-                    </span>
-                  </div>
-
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors duration-300">
-                        <Leaf className="w-5 h-5 text-primary" />
+                      
+                      <div className="space-y-3 text-center md:text-left flex-1">
+                        <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
+                          <h4 className="font-heading font-extrabold text-foreground text-base sm:text-lg">
+                            A written refund policy, before you pay
+                          </h4>
+                          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-500 text-white text-[10px] font-black uppercase tracking-wider shadow-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                            100% Risk Free
+                          </span>
+                        </div>
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          If you arrive and feel within the first <strong className="font-extrabold text-foreground underline decoration-amber-500 decoration-2 underline-offset-4">2 days</strong> that this is not the right place for you, we <strong className="font-extrabold text-amber-600 dark:text-amber-500 bg-amber-500/10 px-1.5 py-0.5 rounded">refund 100%</strong> — in writing, no arguments. We would rather lose a fee than keep an unhappy student.
+                        </p>
                       </div>
-                      <h3 className="font-heading text-lg font-bold text-foreground">
-                        Multi-Style + Philosophy + Ayurveda + Personalized Guidance
-                      </h3>
-                    </div>
-                    <div className="border-l-2 border-primary/30 pl-4 py-1 italic text-muted-foreground text-xs leading-relaxed my-4">
-                      "Before we teach you to guide someone else's practice, we help you <strong className="font-semibold text-foreground">understand your own constitution</strong>, your own patterns, <strong className="font-semibold text-foreground">your own 'why.'</strong> This is where <strong className="font-semibold text-foreground">real teaching ability</strong> actually comes from."
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Step 3 */}
-              <div className="group bg-card rounded-2xl border border-border/80 p-8 transition-all duration-500 relative overflow-hidden flex flex-col justify-between hover:border-primary/40 hover:shadow-xl hover:-translate-y-1">
-                {/* Left accent bar */}
-                <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-primary to-accent scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-500 ease-out" />
-                
-                {/* Huge bg number */}
-                <div className="absolute top-4 right-6 text-8xl font-black text-primary/5 select-none pointer-events-none group-hover:text-primary/10 transition-colors duration-500 font-heading">
-                  03
-                </div>
-
-                <div className="relative z-10 space-y-6">
-                  <div className="flex items-center gap-3">
-                    <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-wider">
-                      Step 3
-                    </span>
-                    <span className="text-muted-foreground text-[10px] font-bold uppercase tracking-wider">
-                      Teaching as Extension
-                    </span>
-                  </div>
-
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/10 transition-colors duration-300">
-                        <GraduationCap className="w-5 h-5 text-primary" />
-                      </div>
-                      <h3 className="font-heading text-lg font-bold text-foreground">
-                        Teaching Methodology + Practice Teaching
-                      </h3>
-                    </div>
-                    <div className="border-l-2 border-primary/30 pl-4 py-1 italic text-muted-foreground text-xs leading-relaxed my-4">
-                      "By the time you stand in front of a class, you're <strong className="font-semibold text-foreground">not reciting cues you memorized</strong>. You're <strong className="font-semibold text-foreground">teaching from a practice you've actually lived</strong>."
                     </div>
                   </div>
                 </div>
@@ -1369,6 +1272,8 @@ export default function Course200HourRishikesh() {
             </div>
           </div>
         </section>
+
+
 
         <WhyChooseUs />
 
@@ -1485,29 +1390,12 @@ export default function Course200HourRishikesh() {
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Left Column - Welcome Text & Video on Mobile */}
               <div className="order-1 lg:order-2">
-                <div className="bg-secondary/30 border-l-4 border-primary rounded-r-xl p-6 md:p-8 mb-8 relative overflow-hidden group hover:bg-secondary/40 transition-colors">
-                  <h3 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
-                    <span className="w-10 h-1 bg-primary rounded-full" />
-                    This Training Is for You If
-                  </h3>
-
-                  <ul className="space-y-4">
-                    {[
-                      <>You want to <span className="font-semibold text-foreground">deepen your yoga practice</span> — physically, mentally, spiritually</>,
-                      <>You feel called to <span className="font-semibold text-foreground">teach yoga with confidence and clarity</span></>,
-                      <>You are seeking <span className="font-semibold text-foreground">healing, clarity, and a fresh start</span> in the heart of Rishikesh</>,
-                      <>You want to learn yoga <span className="font-semibold text-foreground">authentically, not commercially</span></>,
-                      <>You’re not sure yet if you’ll teach — but you want a <span className="font-semibold text-foreground">strong foundation</span></>,
-                      <>You value <span className="font-semibold text-foreground">tradition, self-discipline, and conscious living</span></>
-                    ].map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-sm md:text-base text-muted-foreground">
-                        <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                          <Check className="w-3.5 h-3.5 text-primary" />
-                        </div>
-                        <span className="leading-relaxed flex-1">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <div className="space-y-4 mb-8 text-left">
+                  <span className="text-accent font-bold uppercase tracking-widest text-xs">Welcome to YogaGarhi</span>
+                  <h2 className="font-heading text-3xl md:text-4xl font-black text-foreground leading-tight">
+                    A Transformative Journey of Self-Realization
+                  </h2>
+                  <div className="w-16 h-1 bg-accent rounded-full" />
                 </div>
 
                 {/* YouTube Video - Shows here on mobile, hidden on desktop */}
@@ -1523,11 +1411,28 @@ export default function Course200HourRishikesh() {
                   </div>
                 </div>
 
-                <div className="space-y-6 text-muted-foreground leading-relaxed mb-8">
+                {/* Mobile-only Tour Call Card */}
+                <div className="lg:hidden p-6 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm text-center md:text-left mb-8">
+                  <h3 className="font-heading text-xl font-medium text-foreground mb-3">
+                    Want to See Before You Book?
+                  </h3>
+                  <p className="text-muted-foreground text-xs mb-4">
+                    Hop on a live video call to get a personal tour of the campus, classrooms, shala, and student rooms.
+                  </p>
+                  <Button
+                    className="w-full h-auto py-3.5 bg-gradient-to-r from-primary to-accent text-white font-bold hover:opacity-95 transition-all shadow-lg text-xs flex items-center justify-center gap-2 rounded-xl whitespace-normal"
+                    onClick={() => setShowTourCallDialog(true)}
+                  >
+                    <Video className="w-4 h-4 text-white flex-shrink-0" />
+                    <span className="text-center">Book a Call. See the School. See Your Room. See Your Yoga Hall.</span>
+                  </Button>
+                </div>
+
+                <div className="space-y-6 text-muted-foreground leading-relaxed mb-8 text-left">
                   {/* First 2 paragraphs - always visible */}
-                  <p>
+                  <p className="text-base sm:text-lg text-foreground/80 font-medium">
                     Become a Yoga Alliance Registered Yoga Teacher (RYT 200) through Yogagarhi's
-                    200-Hour Yoga Teacher Training IN RISHIKESH Rishikesh and join a life-changing journey
+                    200-Hour Yoga Teacher Training in Rishikesh and join a life-changing journey
                     of yoga and self-realization.
                   </p>
 
@@ -1600,7 +1505,7 @@ export default function Course200HourRishikesh() {
                   </Button>
                 </div>
 
-                <div className="space-y-6">
+                <div className="space-y-6 hidden lg:block">
 
                   <div className="mt-10 p-8 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm text-center md:text-left">
                     <h3 className="font-heading text-2xl font-medium text-foreground mb-4">
@@ -2086,171 +1991,11 @@ export default function Course200HourRishikesh() {
               </div>
             </div>
           </div>
-        </section >
+        </section>
 
         <FounderSection />
 
-        {/* ===== VIDEO TESTIMONIALS ===== */}
-        <section className="py-20 bg-secondary/30 relative overflow-hidden">
-          {/* Enhanced Yoga-themed Background Art with Animations */}
-          <div className="absolute inset-0 pointer-events-none">
-            {/* Large Chakra Wheel - Center */}
-            <svg className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] text-primary/[0.04] animate-float-gentle" viewBox="0 0 100 100" fill="none" stroke="currentColor">
-              <circle cx="50" cy="50" r="48" strokeWidth="0.2" />
-              <circle cx="50" cy="50" r="40" strokeWidth="0.2" />
-              <circle cx="50" cy="50" r="32" strokeWidth="0.2" />
-              <circle cx="50" cy="50" r="24" strokeWidth="0.2" />
-              <circle cx="50" cy="50" r="16" strokeWidth="0.2" />
-              {/* 8-pointed star */}
-              {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => (
-                <line key={i} x1="50" y1="50" x2={50 + 48 * Math.cos(angle * Math.PI / 180)} y2={50 + 48 * Math.sin(angle * Math.PI / 180)} strokeWidth="0.15" />
-              ))}
-            </svg>
-
-            {/* Sri Yantra - Top Left */}
-            <svg className="absolute -top-5 -left-5 w-56 h-56 text-primary/[0.05] animate-float" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.5">
-              <polygon points="50,5 95,90 5,90" />
-              <polygon points="50,95 5,10 95,10" />
-              <polygon points="50,20 78,75 22,75" />
-              <polygon points="50,80 22,25 78,25" />
-              <circle cx="50" cy="50" r="20" />
-              <circle cx="50" cy="50" r="30" />
-              <circle cx="50" cy="50" r="40" />
-            </svg>
-
-            {/* Lotus Flower - Bottom Right */}
-            <svg className="absolute -bottom-10 -right-10 w-72 h-72 text-primary/[0.04] animate-float-slow" style={{ animationDelay: '2s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.4">
-              {/* Outer petals */}
-              <ellipse cx="50" cy="50" rx="10" ry="35" />
-              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(30 50 50)" />
-              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(60 50 50)" />
-              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(90 50 50)" />
-              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(120 50 50)" />
-              <ellipse cx="50" cy="50" rx="10" ry="35" transform="rotate(150 50 50)" />
-              {/* Inner petals */}
-              <ellipse cx="50" cy="50" rx="6" ry="20" transform="rotate(45 50 50)" />
-              <ellipse cx="50" cy="50" rx="6" ry="20" transform="rotate(90 50 50)" />
-              <ellipse cx="50" cy="50" rx="6" ry="20" transform="rotate(135 50 50)" />
-              {/* Center */}
-              <circle cx="50" cy="50" r="8" />
-            </svg>
-
-            {/* Om Symbol - Top Right */}
-            <svg className="absolute top-16 right-20 w-36 h-36 text-primary/[0.06] animate-float-gentle" style={{ animationDelay: '1s' }} viewBox="0 0 100 100" fill="currentColor">
-              <path d="M28,68 C18,68 12,58 12,48 C12,32 24,22 40,22 C56,22 62,34 62,44 C62,56 50,62 44,62 C38,62 32,56 32,48 C32,42 38,38 44,38" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-              <path d="M62,44 C62,32 74,26 80,32 C86,38 80,50 74,56 L68,72" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-              <path d="M74,18 C80,18 84,24 84,30" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-              <circle cx="88" cy="14" r="4" />
-            </svg>
-
-            {/* Seed of Life - Left Center */}
-            <svg className="absolute top-1/3 -left-10 w-48 h-48 text-primary/[0.04] animate-float" style={{ animationDelay: '3s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.4">
-              <circle cx="50" cy="50" r="18" />
-              <circle cx="50" cy="32" r="18" />
-              <circle cx="65.6" cy="41" r="18" />
-              <circle cx="65.6" cy="59" r="18" />
-              <circle cx="50" cy="68" r="18" />
-              <circle cx="34.4" cy="59" r="18" />
-              <circle cx="34.4" cy="41" r="18" />
-            </svg>
-
-            {/* Mandala - Bottom Left */}
-            <svg className="absolute bottom-20 left-16 w-44 h-44 text-primary/[0.04] animate-float-slow" style={{ animationDelay: '4s' }} viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.3">
-              <circle cx="50" cy="50" r="45" />
-              <circle cx="50" cy="50" r="36" />
-              <circle cx="50" cy="50" r="27" />
-              <circle cx="50" cy="50" r="18" />
-              <circle cx="50" cy="50" r="9" />
-              {/* Decorative petals */}
-              {isMounted && [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle, i) => (
-                <ellipse key={i} cx={50 + 36 * Math.cos(angle * Math.PI / 180)} cy={50 + 36 * Math.sin(angle * Math.PI / 180)} rx="4" ry="8" transform={`rotate(${angle} ${50 + 36 * Math.cos(angle * Math.PI / 180)} ${50 + 36 * Math.sin(angle * Math.PI / 180)})`} />
-              ))}
-            </svg>
-
-            {/* Merudanda (Spine/Chakras) - Right Side */}
-            <svg className="absolute top-1/4 right-8 w-20 h-80 text-primary/[0.05] animate-float-gentle" style={{ animationDelay: '2.5s' }} viewBox="0 0 40 160" fill="none" stroke="currentColor" strokeWidth="0.5">
-              {/* Spine line */}
-              <line x1="20" y1="10" x2="20" y2="150" strokeWidth="0.3" />
-              {/* 7 Chakras */}
-              <circle cx="20" cy="20" r="8" />
-              <circle cx="20" cy="40" r="7" />
-              <circle cx="20" cy="60" r="7" />
-              <circle cx="20" cy="80" r="8" />
-              <circle cx="20" cy="100" r="7" />
-              <circle cx="20" cy="120" r="7" />
-              <circle cx="20" cy="140" r="9" />
-            </svg>
-          </div>
-
-          <div className="container mx-auto px-4 relative z-10">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4 italic">
-              Choosing a Teacher Training Is Deeply Personal
-            </h2>
-            {/* Decorative Lotus Icon */}
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
-              <svg className="w-10 h-6 text-primary" viewBox="0 0 40 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <ellipse cx="20" cy="12" rx="4" ry="10" />
-                <ellipse cx="20" cy="12" rx="4" ry="10" transform="rotate(60 20 12)" />
-                <ellipse cx="20" cy="12" rx="4" ry="10" transform="rotate(-60 20 12)" />
-                <circle cx="20" cy="12" r="2" fill="currentColor" />
-              </svg>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
-            </div>
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
-              Here’s what one student felt after taking that step.
-            </p>
-
-            <div className="max-w-2xl mx-auto mb-12">
-              <div className="relative aspect-video rounded-lg overflow-hidden bg-muted shadow-card">
-                <iframe
-                  src="https://www.youtube.com/embed/OGmWr_aC4WA?rel=0"
-                  title="Student testimonial"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </div>
-            </div>
-
-            <div className="text-center">
-              <div className="flex flex-col items-center gap-6">
-                <h3 className="font-heading text-2xl font-medium text-foreground">
-                  Talk to Us Personally
-                </h3>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <Button
-                    variant="outline"
-                    className="h-12 px-6 rounded-xl text-base gap-2.5 border-primary/20 bg-background/80 hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 shadow-sm hover:shadow-md"
-                    asChild
-                  >
-                    <a
-                      href="https://wa.me/+917895350563"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <MessageCircle className="w-5 h-5" />
-                      WhatsApp
-                    </a>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="h-12 px-6 rounded-xl text-base gap-2.5 border-primary/20 bg-background/80 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md"
-                    asChild
-                  >
-                    <a href="mailto:yogagarhi@gmail.com">
-                      <Mail className="w-5 h-5" />
-                      Email Us
-                    </a>
-                  </Button>
-
-
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <StudentStoriesSection />
 
         {/* ===== DAILY SCHEDULE ===== */}
         <section className="py-20 bg-secondary/30">
@@ -3506,7 +3251,7 @@ export default function Course200HourRishikesh() {
           </div>
         </section>
 
-        <StudentStoriesSection />
+
 
         {/* ===== CODE OF CONDUCT & REFUND ===== */}
         <section className="py-20 bg-background">
