@@ -13,12 +13,6 @@ import {
 import { getCloudinaryImage } from "@/utils/cloudinary";
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 
-declare global {
-  interface Window {
-    dataLayer: any[];
-  }
-}
-
 export default function ThankYou() {
   return (
     <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
@@ -70,8 +64,8 @@ function ThankYouContent() {
     if (typeof window !== 'undefined') {
       const conversionFired = sessionStorage.getItem(`conversion_${type}_fired`);
       if (!conversionFired) {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ event: 'generate_lead', lead_type: type });
+        (window as any).dataLayer = (window as any).dataLayer || [];
+        (window as any).dataLayer.push({ event: 'generate_lead', lead_type: type });
         sessionStorage.setItem(`conversion_${type}_fired`, 'true');
       }
     }
