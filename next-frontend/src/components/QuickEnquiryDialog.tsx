@@ -13,6 +13,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { CheckCircle, GraduationCap, Send, ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 interface QuickEnquiryContextType {
   showQuickEnquiry: boolean;
@@ -35,6 +36,7 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
+  const router = useRouter();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -64,6 +66,8 @@ export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
 
       if (response.ok) {
         setIsSubmitted(true);
+        router.push('/thank-you?type=inquiry');
+        setShowQuickEnquiry(false);
       } else {
         throw new Error('Failed to send inquiry');
       }

@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     default: "YogaGarhi - Yoga Teacher Training Bali",
     template: "%s | YogaGarhi"
   },
+  alternates: {
+    canonical: '/',
+  },
   description: "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.",
   keywords: [
     "yoga teacher training Bali",

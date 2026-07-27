@@ -8,6 +8,10 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
                 disallow: ['/api/', '/_next/', '/private/', '/thank-you'],
             },
+            {
+                userAgent: 'AdsBot-Google',
+                allow: '/',
+            },
         ],
         sitemap: 'https://www.yogagarhi.com/sitemap.xml',
     }
