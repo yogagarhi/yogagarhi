@@ -179,7 +179,27 @@ export default function Header() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-[70]">
+      {/* April to July Batch Promo Bar */}
+      <div className="bg-[#2D7A70] text-white py-2 sm:py-3 shadow-sm overflow-hidden">
+        <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8">
+          <div className="flex items-center gap-2 sm:whitespace-nowrap animate-pulse">
+            <Sparkles className="w-4 h-4 text-amber-300" />
+            <span className="text-xs sm:text-sm font-bold tracking-wide uppercase">
+              Summer Sale 🎉 Flat <span className="text-amber-300 font-extrabold">$300 OFF</span> on August to December batches
+            </span>
+          </div>
 
+          <div className="flex items-center gap-3 bg-black/20 px-4 py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner">
+            <div className="flex items-center gap-1.5 whitespace-nowrap">
+              <Clock className="w-3.5 h-3.5 text-amber-300" />
+              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-white/90">
+                Offer Ends In:
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
 
       <header
         className={`py-3 transition-colors duration-300 ${scrolled

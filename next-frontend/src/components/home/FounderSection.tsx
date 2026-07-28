@@ -139,7 +139,7 @@ export default function FounderSection() {
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="group" asChild>
                   <Link href="/teachers" className="flex items-center gap-2">
-                    Learn More About Teachers
+                    Know more about team
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </Link>
                 </Button>

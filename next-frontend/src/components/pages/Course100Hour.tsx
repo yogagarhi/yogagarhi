@@ -14,6 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useBooking } from "@/components/BookingDialog";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useYogicEnergy } from "@/components/YogicEnergyDialog";
+import { useToast } from "@/hooks/use-toast";
 import {
   Carousel,
   CarouselContent,
@@ -520,11 +521,11 @@ const upcomingDates = [
   { date: "1 May - 12 May 2026", spotsLeft: 7, earlyBirdSaving: "$150" },
   { date: "1 Jun - 12 Jun 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
   { date: "1 Jul - 12 Jul 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Aug - 12 Aug 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Sept - 12 Sept 2026", spotsLeft: 7, earlyBirdSaving: "$150" },
-  { date: "1 Oct - 12 Oct 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Nov - 12 Nov 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Dec - 12 Dec 2026", spotsLeft: 6, earlyBirdSaving: "$150" },
+  { date: "1 Aug - 12 Aug 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
+  { date: "1 Sept - 12 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$150" },
+  { date: "1 Oct - 12 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
+  { date: "1 Nov - 12 Nov 2026", spotsLeft: 1, earlyBirdSaving: "$150" },
+  { date: "1 Dec - 12 Dec 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
 ];
 
 
@@ -557,6 +558,7 @@ const quizQuestions = [
 ];
 
 export default function Course100Hour() {
+  const { toast } = useToast();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
   const { setShowEnrollDialog: openEnrollDialog } = useEnrollment();
   const { setShowYogicEnergy } = useYogicEnergy();
@@ -1123,10 +1125,10 @@ export default function Course100Hour() {
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
                     <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                      <span className="text-sm text-muted-foreground line-through">$1399</span>
-                      <span className="font-heading text-2xl md:text-3xl font-bold text-primary animate-pulse">$1149</span>
+                      <span className="text-sm text-muted-foreground line-through">$899</span>
+                      <span className="font-heading text-2xl md:text-3xl font-bold text-primary animate-pulse">$599</span>
                     </div>
-                    <span className="inline-block mt-1 px-2 py-0.5 text-xs font-medium bg-green-100 text-green-700 rounded-full">Save $250</span>
+                    <span className="inline-block mt-1 px-2 py-0.5 text-xs font-medium bg-green-100 text-green-700 rounded-full">Save $300</span>
                   </div>
 
                   {/* Book Now Button */}
@@ -1184,6 +1186,38 @@ export default function Course100Hour() {
                       </div>
                     </div>
                   </div>
+
+                  {/* Highlighted Refund Policy Banner */}
+                  <div className="mt-6 pt-6 border-t border-border/20">
+                    <div className="relative overflow-hidden rounded-2xl border-2 border-amber-500/30 bg-gradient-to-br from-amber-500/[0.08] via-amber-500/[0.03] to-background p-6 sm:p-8 flex flex-col md:flex-row items-center md:items-start gap-6 shadow-md shadow-amber-500/5">
+                      {/* Decorative glowing gradient blur */}
+                      <div className="absolute -top-10 -right-10 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
+                      <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+                      
+                      {/* Gold Badge Icon */}
+                      <div className="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center flex-shrink-0 shadow-lg shadow-amber-500/10 animate-float-gentle">
+                        <svg className="w-8 h-8 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                          <path d="m9 12 2 2 4-4" />
+                        </svg>
+                      </div>
+                      
+                      <div className="space-y-3 text-center md:text-left flex-1">
+                        <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
+                          <h4 className="font-heading font-extrabold text-foreground text-base sm:text-lg">
+                            A written refund policy, before you pay
+                          </h4>
+                          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-500 text-white text-[10px] font-black uppercase tracking-wider shadow-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                            100% Risk Free
+                          </span>
+                        </div>
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                          If you arrive and feel within the first <strong className="font-extrabold text-foreground underline decoration-amber-500 decoration-2 underline-offset-4">2 days</strong> that this is not the right place for you, we <strong className="font-extrabold text-amber-600 dark:text-amber-500 bg-amber-500/10 px-1.5 py-0.5 rounded">refund 100%</strong> — in writing, no arguments. We would rather lose a fee than keep an unhappy student.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1216,10 +1250,10 @@ export default function Course100Hour() {
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               {/* Left Column - Welcome Text & Video on Mobile */}
               <div className="order-1 lg:order-2">
-                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-2 text-left">
                   Welcome to Yogagarhi
                 </h2>
-                <p className="font-heading text-xl text-primary mb-6 italic">
+                <p className="font-heading text-xl text-primary mb-6 italic text-left">
                   100 Hour Yoga Teacher Training Course
                 </p>
 
@@ -1236,38 +1270,51 @@ export default function Course100Hour() {
                   </div>
                 </div>
 
-                <div className="bg-secondary/30 border-l-4 border-primary rounded-r-xl p-6 md:p-8 my-8 relative overflow-hidden group hover:bg-secondary/40 transition-colors">
-                  <h3 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
-                    <span className="w-10 h-1 bg-primary rounded-full" />
-                    This Training Is for You If
-                  </h3>
+                <div className="space-y-6 text-muted-foreground leading-relaxed text-left mb-8">
+                  {/* First 2 paragraphs - always visible */}
+                  <p className="text-base sm:text-lg text-foreground/80 font-medium">
+                    Become a Yoga Alliance Registered Yoga Teacher (RYT 100) through Yogagarhi's
+                    100-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
+                    of yoga and self-realization.
+                  </p>
+                  <p>
+                    Our professional course is made for both beginners and intermediate practitioners.
+                    This course covers all essential aspects of yoga, including asanas, pranayama,
+                    anatomy, and teaching methodology.
+                  </p>
 
-                  <ul className="space-y-4">
-                    {[
-                      <>Builds a <span className="font-semibold text-foreground">strong foundation</span> in yoga practice and principles</>,
-                      <>Enhances <span className="font-semibold text-foreground">personal practice</span>, confidence, and self-discipline</>,
-                      <>Opens <span className="font-semibold text-foreground">pathways</span> to assistant teaching, workshops, and retreats</>,
-                      <>Adds <span className="font-semibold text-foreground">value</span> for wellness professionals, therapists, and coaches</>,
-                      <>Prepares you for <span className="font-semibold text-foreground">advanced training</span> (200/300 hours)</>,
-                      <>Supports <span className="font-semibold text-foreground">career growth</span> in global wellness and holistic health spaces</>
-                    ].map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-sm md:text-base text-muted-foreground">
-                        <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                          <Check className="w-3.5 h-3.5 text-primary" />
-                        </div>
-                        <span className="leading-relaxed">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  {/* Expandable content */}
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ease-in-out ${showWelcomeExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                  >
+                    <p className="pt-2">
+                      Become a part of this transformative once in a lifetime experience in the
+                      mesmerizing beauty of Bali. This holistic program prepares you to become a
+                      professional yoga teacher having expertise, skills, and confidence.
+                    </p>
+                  </div>
+
+                  {/* Read More / Read Less Button */}
+                  <button
+                    onClick={() => setShowWelcomeExpanded(!showWelcomeExpanded)}
+                    className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors mt-2 group"
+                  >
+                    {showWelcomeExpanded ? 'Read Less' : 'Read More'}
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform duration-300 ${showWelcomeExpanded ? 'rotate-180' : ''
+                        }`}
+                    />
+                  </button>
                 </div>
 
                 {/* Mobile-only Pre-YTTC Section */}
-                <div className="mb-10 p-6 rounded-2xl bg-primary/10 border-2 border-primary/20 lg:hidden group shadow-sm">
-                  <h3 className="font-heading text-xl font-extrabold text-foreground mb-3 flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="mb-10 p-6 rounded-2xl bg-primary/10 border-2 border-primary/20 lg:hidden group shadow-sm text-left">
+                  <h3 className="font-heading text-xl font-extrabold text-foreground mb-3 flex items-start gap-2">
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                       <Zap className="w-4 h-4 text-primary" />
                     </div>
-                    Not Sure Which YTTC to Trust? Experience It First Free 2-Day Yoga Teacher Training Foundation
+                    <span className="flex-1">Not Sure Which YTTC to Trust? Experience It First Free 2-Day Yoga Teacher Training Foundation</span>
                   </h3>
                   <div className="text-sm text-muted-foreground leading-relaxed mb-4 space-y-3">
                     <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
@@ -1279,16 +1326,16 @@ export default function Course100Hour() {
 
                   <div className="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 shadow-inner">
                     <div className="flex items-center gap-2 text-orange-700 font-bold text-sm mb-1 uppercase tracking-tight">
-                      <Calendar className="w-4 h-4" />
-                      Next Batch: <DynamicBatchDate />
+                      <Calendar className="w-4 h-4 flex-shrink-0" />
+                      <span>Next Batch: <DynamicBatchDate /></span>
                     </div>
-                    <div className="flex items-center gap-2 text-orange-600/80 text-xs font-semibold mb-2">
-                      <Clock className="w-4 h-4" />
-                      10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)
+                    <div className="flex items-start gap-2 text-orange-600/80 text-xs font-semibold mb-2">
+                      <Clock className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                      <span className="flex-1">10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)</span>
                     </div>
                     <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-100 text-red-600 text-[10px] font-bold uppercase animate-pulse border border-red-200">
-                      <UsersRound className="w-3 h-3" />
-                      Limited Seats Only
+                      <UsersRound className="w-3 h-3 flex-shrink-0" />
+                      <span>Limited Seats Only</span>
                     </div>
                   </div>
                   <Button
@@ -3588,42 +3635,76 @@ This is not a transactional relationship — it is a lifelong connection.`}
               <div className="grid lg:grid-cols-3 gap-8">
                 {/* Dates List */}
                 <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
-                  {upcomingDates.map((item, index) => (
-                    <div
-                      key={index}
-                      className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 gap-4 hover:bg-secondary/30 transition-colors duration-200"
-                    >
-                      {/* Date */}
-                      <div className="flex items-center gap-3 min-w-[200px]">
-                        <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
-                        <span className="font-medium text-foreground">{item.date}</span>
-                      </div>
-
-                      {/* Spots Left */}
-                      <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
-                        ? "bg-red-100 text-red-700"
-                        : "bg-secondary text-secondary-foreground"
-                        }`}>
-                        Only {item.spotsLeft} spots left
-                      </span>
-
-                      {/* Early Bird */}
-                      <div className="text-center">
-                        <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                        <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
-                      </div>
-
-                      {/* Book Button */}
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="whitespace-nowrap"
-                        onClick={() => setShowEnrollDialog(true)}
+                  {upcomingDates.map((item, index) => {
+                    const isFull = /feb|mar|apr|may|jun|jul/i.test(item.date);
+                    const isAugust = /aug/i.test(item.date);
+                    return (
+                      <div
+                        key={index}
+                        className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 gap-4 hover:bg-secondary/30 transition-colors duration-200"
                       >
-                        Book Now
-                      </Button>
-                    </div>
-                  ))}
+                        {/* Date */}
+                        <div className="flex flex-col gap-1 min-w-[200px]">
+                          <div className="flex items-center gap-3">
+                            <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
+                            <span className="font-medium text-foreground">{item.date}</span>
+                          </div>
+                          {isAugust && (
+                            <span className="text-xs font-semibold text-amber-600 dark:text-amber-500 flex items-center gap-1 mt-1 animate-pulse">
+                              🔥 Hurry up! Limited seats, fast filling. Book quickly!
+                            </span>
+                          )}
+                        </div>
+
+                        {/* Spots Left */}
+                        {isFull ? (
+                          <span className="text-sm px-3 py-1.5 rounded-md whitespace-nowrap bg-muted text-muted-foreground">
+                            Fully Booked
+                          </span>
+                        ) : (
+                          <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
+                            ? "bg-red-100 text-red-700"
+                            : "bg-secondary text-secondary-foreground"
+                            }`}>
+                            Only {item.spotsLeft} spots left
+                          </span>
+                        )}
+
+                        {/* Early Bird */}
+                        <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
+                          <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
+                          <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                        </div>
+
+                        {/* Book Button */}
+                        {isFull ? (
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            className="whitespace-nowrap bg-muted text-muted-foreground hover:bg-muted hover:text-muted-foreground border border-border"
+                            onClick={() => {
+                              toast({
+                                title: "Full Now",
+                                description: "This batch is fully booked.",
+                                variant: "destructive",
+                              });
+                            }}
+                          >
+                            Full
+                          </Button>
+                        ) : (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="whitespace-nowrap"
+                            onClick={() => setShowEnrollDialog(true)}
+                          >
+                            Book Now
+                          </Button>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
 
                 {/* Pricing Card */}
@@ -3637,8 +3718,19 @@ This is not a transactional relationship — it is a lifelong connection.`}
                     {/* Content */}
                     <div className="p-6 space-y-5">
                       <p className="text-center text-foreground font-medium border-b border-border pb-4">
-                        Course Duration: 21 Nights / 22 Days
+                        Course Duration: 11 Nights / 12 Days
                       </p>
+
+                      {/* Tuition Fee Only */}
+                      <div className="text-center p-4 bg-secondary/30 rounded-lg border-2 border-accent/20">
+                        <p className="text-xs text-accent font-bold uppercase tracking-wider mb-1">Tuition Fee Only</p>
+                        <p className="font-heading text-2xl font-bold text-foreground">
+                          $599
+                        </p>
+                        <p className="text-muted-foreground line-through text-sm">
+                          $899
+                        </p>
+                      </div>
 
                       {/* Triple Sharing */}
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
