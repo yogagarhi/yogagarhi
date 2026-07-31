@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     default: "YogaGarhi - Yoga Teacher Training Bali",
     template: "%s | YogaGarhi"
   },
+  alternates: {
+    canonical: '/',
+  },
   description: "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.",
   keywords: [
     "yoga teacher training Bali",
@@ -93,6 +96,7 @@ export const metadata: Metadata = {
   },
 };
 
+import UtmTracker from '@/components/UtmTracker';
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function RootLayout({
@@ -174,6 +178,7 @@ export default function RootLayout({
 
       </head>
       <body className={`${cormorant.variable} ${lato.variable} font-body bg-background text-foreground antialiased scroll-smooth`} suppressHydrationWarning>
+        <UtmTracker />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-T9PKFR8P"

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
-import PromoCountdown from "@/components/PromoCountdown";
+
 const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
 // Chakra/Mandala spiritual symbols
@@ -196,7 +196,7 @@ export default function Header() {
                 Offer Ends In:
               </span>
             </div>
-            <PromoCountdown />
+
           </div>
         </div>
       </div>
