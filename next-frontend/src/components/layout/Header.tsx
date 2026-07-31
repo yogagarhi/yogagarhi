@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import PromoCountdown from "@/components/PromoCountdown";
 
 const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
@@ -196,7 +197,7 @@ export default function Header() {
                 Offer Ends In:
               </span>
             </div>
-
+            <PromoCountdown className="scale-75 sm:scale-90 origin-left" />
           </div>
         </div>
       </div>

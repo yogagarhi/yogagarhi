@@ -1032,14 +1032,10 @@ export default function Course200Hour() {
         {/* ===== HERO SECTION ===== */}
         <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32 pb-20">
           {/* Background Image */}
-          <div className="absolute inset-0">
-            <Image
-              src="/hero-yoga-group.jpg"
-              alt="Yoga Teacher Training Bali"
-              fill
-              priority
-              className="object-cover object-center"
-            />
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: 'url("/hero-yoga-group.jpg")' }}
+          >
             <div className="absolute inset-0 bg-black/40" />
           </div>
 
