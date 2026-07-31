@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { COURSE_200_HOUR_PRICING } from "@/constants/pricing";
+import Header from "@/components/layout/Header";
 import Layout from "@/components/layout/Layout";
 import SEO, { generateCourseSchema } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -530,17 +532,12 @@ const dietaryOptions = [
 
 // Upcoming Dates
 const upcomingDates = [
-  { date: "1 Feb - 24 Feb 2026", spotsLeft: 8, earlyBirdSaving: "$200" },
-  { date: "1 Mar - 24 Mar 2026", spotsLeft: 8, earlyBirdSaving: "$200" },
-  { date: "1 Apr - 24 Apr 2026", spotsLeft: 8, earlyBirdSaving: "$200" },
-  { date: "1 May - 24 May 2026", spotsLeft: 7, earlyBirdSaving: "$200" },
-  { date: "1 Jun - 24 Jun 2026", spotsLeft: 8, earlyBirdSaving: "$200" },
-  { date: "1 Jul - 24 Jul 2026", spotsLeft: 8, earlyBirdSaving: "$200" },
-  { date: "1 Aug - 24 Aug 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
   { date: "1 Sept - 24 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$200" },
   { date: "1 Oct - 24 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
   { date: "1 Nov - 24 Nov 2026", spotsLeft: 1, earlyBirdSaving: "$200" },
   { date: "1 Dec - 24 Dec 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
+  { date: "1 Jan - 24 Jan 2027", spotsLeft: 5, earlyBirdSaving: "$200" },
+  { date: "1 Feb - 24 Feb 2027", spotsLeft: 7, earlyBirdSaving: "$200" },
 ];
 
 
@@ -1059,51 +1056,40 @@ export default function Course200Hour() {
                 </p>
               </div>
 
+              {/* Trust Line & Pricing */}
+              <div className="space-y-4 opacity-0 animate-fade-in mb-8" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
+                <p className="text-lg md:text-xl font-medium text-white/90">
+                  Small Groups of 8–10 • Beginner Friendly • 1-Year Mentorship
+                </p>
+                <div className="inline-block bg-black/30 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/10">
+                  <p className="text-white font-semibold">
+                    Tuition only from {COURSE_200_HOUR_PRICING.shared.price} | Residential packages from {COURSE_200_HOUR_PRICING.private.price}
+                  </p>
+                  <p className="text-white/80 text-sm mt-1">
+                    Next available training: {upcomingDates[0].date}
+                  </p>
+                </div>
+              </div>
+
               {/* CTA Buttons */}
-              <div className="flex flex-col items-center justify-center pt-8 space-y-6">
+              <div className="flex flex-col items-center justify-center pt-4 space-y-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
                   <Button
                     variant="hero"
                     size="xl"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl"
+                    onClick={() => setShowEnrollDialog(true)}
+                  >
+                    Check Availability
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="xl"
+                    className="bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm shadow-xl"
                     onClick={() => setShowCalendarDialog(true)}
                   >
-                    Book a Call with Teacher
+                    Book a Free Video Call
                   </Button>
-                  <button
-                    onClick={() => setShowYogicEnergy(true)}
-                    className="relative h-14 px-10 text-base font-bold rounded-lg overflow-hidden group/yogic
-                      bg-gradient-to-r from-amber-400 via-orange-500 to-rose-500
-                      text-white shadow-xl shadow-orange-500/40
-                      hover:shadow-orange-500/60 hover:scale-105
-                      transition-all duration-300"
-                  >
-                    <span className="relative z-10 flex items-center gap-2">
-                      <Sparkles className="w-5 h-5 animate-pulse" />
-                      Reveal Your Unique Yogic Energy
-                    </span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent translate-x-[-100%] group-hover/yogic:translate-x-[100%] transition-transform duration-700 ease-in-out" />
-                  </button>
-                </div>
-
-                {/* Secondary CTA & Offer Box */}
-                <div className="flex flex-col items-center gap-4 pt-2">
-                  <div className="flex justify-center">
-                    <Button
-                      variant="default"
-                      size="lg"
-                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                      onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
-                    >
-                      Claim $450 Bali Explorer Gift
-                    </Button>
-                  </div>
-
-                  {/* Special Offer Box */}
-                  <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
-                    <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                      Book your September to December YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -1155,10 +1141,10 @@ export default function Course200Hour() {
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
                     <div className="flex flex-col items-center lg:items-start">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                        <span className="text-base text-muted-foreground line-through opacity-60">$1299</span>
+                        <span className="text-base text-muted-foreground line-through opacity-60">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
-                            $999
+                            {COURSE_200_HOUR_PRICING.shared.price}
                           </span>
                           <div className="absolute -inset-1 bg-primary/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
                         </div>
@@ -1392,7 +1378,7 @@ export default function Course200Hour() {
                 <div className="relative w-full mb-8 lg:hidden">
                   <div className="aspect-video rounded-lg overflow-hidden shadow-card bg-muted">
                     <iframe
-                      src="https://www.youtube.com/embed/n4rJ0xJ6cR0?autoplay=1&mute=0&rel=0&showinfo=0&modestbranding=1"
+                      src="https://www.youtube.com/embed/U1r2mQRmWXM?rel=0&autoplay=1&mute=1"
                       title="Yogagarhi Course Video"
                       loading="lazy"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1400,23 +1386,6 @@ export default function Course200Hour() {
                       className="w-full h-full"
                     />
                   </div>
-                </div>
-
-                {/* Mobile-only Tour Call Card */}
-                <div className="lg:hidden p-6 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm text-center md:text-left mb-8">
-                  <h3 className="font-heading text-xl font-medium text-foreground mb-3">
-                    Want to See Before You Book?
-                  </h3>
-                  <p className="text-muted-foreground text-xs mb-4">
-                    Hop on a live video call to get a personal tour of the campus, classrooms, shala, and student rooms.
-                  </p>
-                  <Button
-                    className="w-full h-auto py-3.5 bg-gradient-to-r from-primary to-accent text-white font-bold hover:opacity-95 transition-all shadow-lg text-xs flex items-center justify-center gap-2 rounded-xl whitespace-normal"
-                    onClick={() => setShowTourCallDialog(true)}
-                  >
-                    <Video className="w-4 h-4 text-white flex-shrink-0" />
-                    <span className="text-center">Book a Call. See the School. See Your Room. See Your Yoga Hall.</span>
-                  </Button>
                 </div>
 
                 <div className="space-y-6 text-muted-foreground leading-relaxed mb-8 text-left">
@@ -1456,142 +1425,38 @@ export default function Course200Hour() {
                         }`}
                     />
                   </button>
-                </div>
 
-                {/* Mobile-only Pre-YTTC Section */}
-                <div className="mb-10 p-6 rounded-2xl bg-primary/10 border-2 border-primary/20 lg:hidden group shadow-sm">
-                  <h3 className="font-heading text-xl font-extrabold text-foreground mb-3 flex items-start gap-2">
-                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Zap className="w-4 h-4 text-primary" />
-                    </div>
-                    <span className="flex-1">Not Sure Which YTTC to Trust? Experience It First Free 2-Day Yoga Teacher Training Foundation</span>
-                  </h3>
-                  <div className="text-sm text-muted-foreground leading-relaxed mb-4 space-y-3">
-                    <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
-                    <p className="font-medium text-foreground italic">
-                      It's about <span className="text-primary not-italic">feeling safe</span>, it's about <span className="text-primary not-italic">feeling guided</span>, and it's about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
-                    </p>
-                    <p>That's why we keep things simple and transparent.</p>
-                  </div>
-
-                  <div className="mb-6 p-4 rounded-xl bg-orange-50 border border-orange-200 shadow-inner">
-                    <div className="flex items-center gap-2 text-orange-700 font-bold text-sm mb-1 uppercase tracking-tight">
-                      <Calendar className="w-4 h-4 flex-shrink-0" />
-                      <span>Next Batch: <DynamicBatchDate /></span>
-                    </div>
-                    <div className="flex items-start gap-2 text-orange-600/80 text-xs font-semibold mb-2">
-                      <Clock className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                      <span className="flex-1">10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)</span>
-                    </div>
-                    <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-100 text-red-600 text-[10px] font-bold uppercase animate-pulse border border-red-200">
-                      <UsersRound className="w-3 h-3 flex-shrink-0" />
-                      <span>Limited Seats Only</span>
-                    </div>
-                  </div>
-                  <Button
-                    className="w-full bg-gradient-to-r from-[#FF8C00] to-[#FF4500] text-white hover:from-[#FF4500] hover:to-[#FF8C00] font-bold shadow-lg shadow-orange-500/30 border-none"
-                    asChild
-                  >
-                    <Link href="/teacher-training-foundation">
-                      Join Foundation for FREE
-                    </Link>
-                  </Button>
-                </div>
-
-                <div className="space-y-6 hidden lg:block">
-
-                  <div className="mt-10 p-8 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm text-center md:text-left">
-                    <h3 className="font-heading text-2xl font-medium text-foreground mb-4">
+                  {/* Consolidated Tour Call Card */}
+                  <div className="mt-8 p-6 lg:p-8 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm text-center md:text-left">
+                    <h3 className="font-heading text-xl lg:text-2xl font-medium text-foreground mb-3 lg:mb-4">
                       Want to See Before You Book?
                     </h3>
-                    <p className="text-muted-foreground text-sm mb-6">
+                    <p className="text-muted-foreground text-sm mb-4 lg:mb-6">
                       Hop on a live video call to get a personal tour of the campus, classrooms, shala, and student rooms.
                     </p>
                     <Button
-                      className="w-full h-auto py-4 bg-gradient-to-r from-primary to-accent text-white font-bold hover:opacity-95 transition-all shadow-lg text-sm md:text-base flex items-center justify-center gap-3 rounded-xl whitespace-normal"
+                      className="w-full h-auto py-3.5 lg:py-4 bg-gradient-to-r from-primary to-accent text-white font-bold hover:opacity-95 transition-all shadow-lg text-sm md:text-base flex items-center justify-center gap-2 lg:gap-3 rounded-xl whitespace-normal"
                       onClick={() => setShowTourCallDialog(true)}
                     >
-                      <Video className="w-5 h-5 text-white flex-shrink-0" />
+                      <Video className="w-4 h-4 lg:w-5 lg:h-5 text-white flex-shrink-0" />
                       <span className="text-center">Book a Call. See the School. See Your Room. See Your Yoga Hall.</span>
                     </Button>
                   </div>
                 </div>
+
               </div>
 
-              {/* Right Column - YouTube Video & Pre-YTTC Support (desktop only) */}
+              {/* Right Column - YouTube Video */}
               <div className="relative w-full order-2 lg:order-1 hidden lg:block sticky top-24 self-start space-y-8">
                 <div className="aspect-video rounded-lg overflow-hidden shadow-card bg-muted">
                   <iframe
-                    src="https://www.youtube.com/embed/1B4D21Xw_wQ"
+                    src="https://www.youtube.com/embed/U1r2mQRmWXM?rel=0&autoplay=1&mute=1"
                     title="Student Testimonial"
                     loading="lazy"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="w-full h-full"
                   />
-                </div>
-
-                {/* Desktop-only Pre-YTTC Section */}
-                <div className="p-8 rounded-3xl bg-primary/[0.07] border-2 border-primary/20 relative overflow-hidden group shadow-xl shadow-primary/5">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
-                  <div className="relative z-10">
-                    <h3 className="font-heading text-2xl font-extrabold text-foreground mb-4 flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                        <Zap className="w-5 h-5 text-primary" />
-                      </div>
-                      Not Sure Which YTTC to Trust? Experience It First Free 2-Day Yoga Teacher Training Foundation
-                    </h3>
-                    <div className="text-muted-foreground leading-relaxed space-y-4">
-                      <p>At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
-                      <p className="text-lg font-medium text-foreground italic">
-                        It's about <span className="text-primary not-italic">feeling safe</span>, it's about <span className="text-primary not-italic">feeling guided</span>, and it's about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
-                      </p>
-                      <p className="font-semibold text-accent uppercase tracking-wider text-xs">That's why we keep things simple and transparent.</p>
-                    </div>
-
-                    <div className="mt-8 flex flex-col md:flex-row items-start md:items-center gap-6 p-5 rounded-2xl bg-orange-50/50 border border-orange-200/50 backdrop-blur-sm">
-                      <div className="flex-1 space-y-2">
-                        <div className="flex items-center gap-3 text-orange-800 font-extrabold text-lg leading-none">
-                          <Calendar className="w-5 h-5 text-orange-600" />
-                          Next Batch: <DynamicBatchDate />
-                        </div>
-                        <div className="flex items-center gap-3 text-orange-700 font-semibold text-sm">
-                          <Clock className="w-4 h-4 text-orange-500" />
-                          10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)
-                        </div>
-                      </div>
-                      <div className="flex flex-col items-end gap-3">
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500 text-white text-xs font-black uppercase tracking-widest shadow-lg shadow-red-500/20 animate-bounce-subtle">
-                          <UsersRound className="w-3.5 h-3.5" />
-                          Limited Seats Only
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-8 flex flex-wrap items-center gap-6 justify-between">
-                      <Button
-                        size="lg"
-                        className="bg-gradient-to-r from-[#FF8C00] to-[#FF4500] text-white hover:from-[#FF4500] hover:to-[#FF8C00] font-bold px-8 shadow-xl shadow-orange-500/20 hover:scale-105 transition-all duration-300 border-none relative overflow-hidden group/btn"
-                        asChild
-                      >
-                        <Link href="/teacher-training-foundation">
-                          <span className="relative z-10 flex items-center gap-2">
-                            Join Foundation for FREE
-                            <Zap className="w-4 h-4 fill-current animate-pulse" />
-                          </span>
-                          <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-500 ease-in-out" />
-                        </Link>
-                      </Button>
-
-                      <div className="flex items-center gap-5 text-sm font-medium text-primary">
-                        <span className="flex items-center gap-1.5 bg-primary/5 px-3 py-1.5 rounded-full">
-                          <Check className="w-4 h-4" /> 2-Day Experience
-                        </span>
-                        <span className="flex items-center gap-1.5 bg-primary/5 px-3 py-1.5 rounded-full">
-                          <Check className="w-4 h-4" /> Live Interraction
-                        </span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -2193,10 +2058,10 @@ export default function Course200Hour() {
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Tuition Fees</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          $999
+                          {COURSE_200_HOUR_PRICING.shared.price}
                         </p>
                         <p className="text-muted-foreground line-through text-sm">
-                          $1,299
+                          {COURSE_200_HOUR_PRICING.shared.originalPrice}
                         </p>
                       </div>
 
@@ -2204,10 +2069,10 @@ export default function Course200Hour() {
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Triple Sharing</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,750
+                          {COURSE_200_HOUR_PRICING.private.price}
                         </p>
                         <p className="text-muted-foreground line-through text-sm">
-                          $2,187
+                          {COURSE_200_HOUR_PRICING.private.originalPrice}
                         </p>
                       </div>
 
@@ -2215,7 +2080,7 @@ export default function Course200Hour() {
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Double Sharing</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,899
+                          {COURSE_200_HOUR_PRICING.deluxe.price}
                         </p>
                         <p className="text-muted-foreground line-through text-sm">
                           $2,370
@@ -2656,8 +2521,8 @@ export default function Course200Hour() {
                   title: "Tuition Only",
                   beds: "Course Only",
                   description: "Full access to classes, study materials, and certification. Accommodation and meals not included.",
-                  originalPrice: "$1,299",
-                  price: "$999",
+                  originalPrice: COURSE_200_HOUR_PRICING.shared.originalPrice,
+                  price: COURSE_200_HOUR_PRICING.shared.price,
                   images: [apartGroupClass, apartSeatedTalk, apartGroupPose, apartChildPose, apartMountainPose],
                   features: ["Yoga Shala", "TTC Manual", "Wi-Fi", "All Classes"],
                   badge: "Course Only",
@@ -2667,8 +2532,8 @@ export default function Course200Hour() {
                   title: "Triple Sharing",
                   beds: 3,
                   description: "Share your space with two like-minded yogis. A great way to build lasting friendships.",
-                  originalPrice: "$2,187",
-                  price: "$1,750",
+                  originalPrice: COURSE_200_HOUR_PRICING.private.originalPrice,
+                  price: COURSE_200_HOUR_PRICING.private.price,
                   images: [tripleBalcony, tripleBathroom, tripleBedroom1, tripleBedroom2, tripleBedroom3],
                   features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
                   badge: null,
@@ -2678,8 +2543,8 @@ export default function Course200Hour() {
                   title: "Double Sharing",
                   beds: 2,
                   description: "Share with one roommate. Perfect balance of community and personal space.",
-                  originalPrice: "$2,370",
-                  price: "$1,899",
+                  originalPrice: COURSE_200_HOUR_PRICING.deluxe.originalPrice,
+                  price: COURSE_200_HOUR_PRICING.deluxe.price,
                   images: [doubleBedroom1, doubleBedroom2, doubleBedroom3, doubleBedroom4, doubleBalcony],
                   features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
                   badge: "Most Popular",
@@ -2689,8 +2554,8 @@ export default function Course200Hour() {
                   title: "Private Room",
                   beds: 1,
                   description: "Your own sanctuary for complete privacy and deep personal reflection.",
-                  originalPrice: "$3,125",
-                  price: "$2,499",
+                  originalPrice: COURSE_200_HOUR_PRICING.vip.originalPrice,
+                  price: COURSE_200_HOUR_PRICING.vip.price,
                   images: [
                     privateNew2,
                     privateNew3,

@@ -96,6 +96,7 @@ export const metadata: Metadata = {
   },
 };
 
+import UtmTracker from '@/components/UtmTracker';
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function RootLayout({
@@ -177,6 +178,7 @@ export default function RootLayout({
 
       </head>
       <body className={`${cormorant.variable} ${lato.variable} font-body bg-background text-foreground antialiased scroll-smooth`} suppressHydrationWarning>
+        <UtmTracker />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-T9PKFR8P"
