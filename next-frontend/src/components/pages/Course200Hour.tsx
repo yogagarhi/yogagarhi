@@ -2056,8 +2056,9 @@ export default function Course200Hour() {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.shared.price}
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          {COURSE_200_HOUR_PRICING.shared.originalPrice}
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 
@@ -2067,8 +2068,9 @@ export default function Course200Hour() {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.private.price}
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          {COURSE_200_HOUR_PRICING.private.originalPrice}
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">{COURSE_200_HOUR_PRICING.private.originalPrice}</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 
@@ -2078,8 +2080,9 @@ export default function Course200Hour() {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.deluxe.price}
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $2,370
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">{COURSE_200_HOUR_PRICING.deluxe.originalPrice}</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 
@@ -2087,10 +2090,11 @@ export default function Course200Hour() {
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Private Room</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          $2,499
+                          {COURSE_200_HOUR_PRICING.vip.price}
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $3,125
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">{COURSE_200_HOUR_PRICING.vip.originalPrice}</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 

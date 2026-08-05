@@ -3727,8 +3727,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $599
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $899
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">$899</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 
@@ -3738,8 +3739,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,149
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $1,399
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">$1,449</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 
@@ -3749,8 +3751,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,349
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $1,649
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">$1,649</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 
@@ -3760,8 +3763,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,649
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $1,999
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">$1,949</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 
