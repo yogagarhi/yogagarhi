@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Map slugs to better titles/descriptions if possible, or use a generic pattern
     const titles: Record<string, string> = {
         "benefits-yttc-bali": "Benefits of Yoga Teacher Training in Bali",
-        "what-to-expect-200hr": "What to Expect in Your 200 Hour YTTC",
+        "what-to-expect-200hr": "What to Expect in Your 200 Hour YTTC in Bali: A Complete Guide",
         "himalayan-roots-yoga": "The Himalayan Roots of Authentic Yoga",
     };
 
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     return {
         title: title,
-        description: "Deepen your understanding of yoga with YogaGarhi's latest articles on philosophy, training, and holistic living.",
+        description: "Discover what to expect in a 200 hour YTTC in Bali, from daily classes and teaching practice to accommodation, preparation, and certification.",
         alternates: {
             canonical: `/blogs/${slug}`,
         },
