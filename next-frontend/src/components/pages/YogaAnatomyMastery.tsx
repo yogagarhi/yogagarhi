@@ -74,6 +74,7 @@ export default function YogaAnatomyMastery() {
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
 
         <div className="container mx-auto px-4 relative z-30 pointer-events-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mt-8 lg:mt-12">
+        <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">Yoga Anatomy Mastery</h1>
           
           {/* Founder's Message Card */}
           <div className="bg-[#fcf8f2] text-foreground rounded-3xl p-8 md:p-12 shadow-2xl w-full border border-accent/20 h-full flex flex-col justify-center">
