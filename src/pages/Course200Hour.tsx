@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
-import SEO, { generateCourseSchema } from "@/components/SEO";
+import SEO, { generateCourseSchema, generateFAQSchema, generateBreadcrumbSchema } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -746,13 +746,37 @@ export default function Course200Hour() {
           description="Transform your life with our Yoga Alliance certified 200 Hour YTTC in Bali, Ubud. 24-day comprehensive training with experienced teachers, small batches, and 100% refund guarantee."
           keywords="200 hour yoga teacher training, YTTC Bali, RYT 200, yoga certification Ubud, yoga alliance 200hr, yoga teacher course Bali"
           canonicalUrl="/courses/200-hour"
-          structuredData={generateCourseSchema({
-            name: '200 Hour Yoga Teacher Training',
-            description: '24-day comprehensive Yoga Alliance certified teacher training in Bali, Ubud',
-            duration: 'P24D',
-            price: '$1750',
-            image: 'https://yogagarhi.com/og-image.jpg'
-          })}
+          structuredData={[
+            generateCourseSchema({
+              name: '200 Hour Yoga Teacher Training in Bali | Yogagarhi',
+              description: 'Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation.',
+              duration: 'P24D',
+              price: '1750',
+              image: 'https://yogagarhi.com/og-image.jpg'
+            }),
+            generateFAQSchema([
+              {
+                question: "Where is your 200 hour YTTC held in Bali?",
+                answer: "Our 200 hour YTTC takes place at Yoga Garhi in Gianyar, Bali, just about 15 km from Ubud. You practice in a peaceful, green area with village life around, and you can easily visit Ubud, the main yoga and culture hub, in your free time."
+              },
+              {
+                question: "Will I be able to teach after the 200 hour YTTC?",
+                answer: "Yes. A 200 hour training is the standard level to start teaching yoga. After completing the course and meeting all requirements, you will have the knowledge and confidence to guide safe, basic group classes and one-to-one sessions."
+              },
+              {
+                question: "What style of yoga do you teach in the 200 hour course?",
+                answer: "We mainly teach traditional Hatha yoga with elements of Vinyasa-style flow. The focus is on correct alignment, breath awareness, mindful movement, and balanced practice rather than only strong or fast sequences."
+              },
+              {
+                question: "How long is the 200 hour course, and what is the schedule like?",
+                answer: "Most 200 hour trainings run for around 3–4 weeks of intensive study. A typical day includes early morning pranayama and meditation, a strong asana practice, theory classes on philosophy or anatomy, afternoon workshops on teaching and adjustments, and evening gentle practice or group activities."
+              }
+            ]),
+            generateBreadcrumbSchema([
+              { name: "Home", url: "/" },
+              { name: "200 Hour Yoga Teacher Training in Bali", url: "/courses/200-hour" }
+            ])
+          ]}
         />
         {/* ===== HERO SECTION ===== */}
         <section className="relative min-h-[90vh] flex items-center">
