@@ -108,12 +108,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 0.7,
         },
-        {
-            url: 'https://www.yogagarhi.com/yoga-anatomy-mastery',
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
     ]
 }
 

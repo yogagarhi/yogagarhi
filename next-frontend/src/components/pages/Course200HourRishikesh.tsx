@@ -2203,8 +2203,9 @@ export default function Course200HourRishikesh() {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $999
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $1,299
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">$1,299</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 
@@ -2214,8 +2215,9 @@ export default function Course200HourRishikesh() {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,750
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $2,187
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">$2,050</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 
@@ -2225,8 +2227,9 @@ export default function Course200HourRishikesh() {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,899
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $2,370
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">$2,199</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 
@@ -2236,8 +2239,9 @@ export default function Course200HourRishikesh() {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $2,499
                         </p>
-                        <p className="text-muted-foreground line-through text-sm">
-                          $3,125
+                        <p className="text-muted-foreground text-sm">
+                          <span className="line-through">$2,799</span>
+                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
                         </p>
                       </div>
 

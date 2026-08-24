@@ -59,8 +59,29 @@ function ThankYouContent() {
       setTimeout(() => setAnimationStep(4), 1200),
       setTimeout(() => setShowConfetti(false), 5000),
     ];
+    
+    // Check sessionStorage to prevent duplicate conversions
+    if (typeof window !== 'undefined') {
+      const conversionFired = sessionStorage.getItem(`conversion_${type}_fired`);
+      if (!conversionFired) {
+        // Generate a unique transaction ID for deduplication
+        const transactionId = crypto.randomUUID ? crypto.randomUUID() : `txn_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        
+        // Push to Google Tag Manager dataLayer
+        (window as any).dataLayer = (window as any).dataLayer || [];
+        (window as any).dataLayer.push({ 
+          event: 'generate_lead', 
+          lead_type: type,
+          transaction_id: transactionId
+        });
+        
+        sessionStorage.setItem(`conversion_${type}_fired`, 'true');
+        sessionStorage.setItem(`conversion_${type}_txnid`, transactionId);
+      }
+    }
+
     return () => timers.forEach(clearTimeout);
-  }, []);
+  }, [type]);
 
   return (
     <Layout>

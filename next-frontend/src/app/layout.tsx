@@ -1,30 +1,36 @@
-import type { Metadata } from "next";
-import { Cormorant_Garamond, Lato } from "next/font/google";
+// Removed Google Font imports to avoid build-time fetch errors
+// import { Cormorant_Garamond, Lato } from "next/font/google";
+// const cormorant = Cormorant_Garamond({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "500", "600", "700"],
+//   variable: "--font-heading",
+//   display: "swap",
+// });
+// const lato = Lato({
+//   subsets: ["latin"],
+//   weight: ["300", "400", "700"],
+//   variable: "--font-body",
+//   display: "swap",
+// });
+// import { Cormorant_Garamond, Lato } from "next/font/google"; // removed to avoid font fetch errors
 import "./globals.css";
 import Script from "next/script";
-import { Providers } from "@/components/Providers";
+import type { Metadata } from "next";
 import MainLayout from "@/components/MainLayout";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-heading",
-  display: "swap",
-});
-
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
-  variable: "--font-body",
-  display: "swap",
-});
+// Font definitions removed to avoid runtime fetching errors.
+// const cormorant = Cormorant_Garamond({ /* ... */ });
+// const lato = Lato({ /* ... */ });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.yogagarhi.com'),
   title: {
     default: "YogaGarhi - Yoga Teacher Training Bali",
     template: "%s | YogaGarhi"
+  },
+  alternates: {
+    canonical: '/',
   },
   description: "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.",
   keywords: [
@@ -93,6 +99,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { Providers } from "@/components/Providers";
+import UtmTracker from '@/components/UtmTracker';
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function RootLayout({
@@ -173,7 +181,8 @@ export default function RootLayout({
         />
 
       </head>
-      <body className={`${cormorant.variable} ${lato.variable} font-body bg-background text-foreground antialiased scroll-smooth`} suppressHydrationWarning>
+      <body className="font-body bg-background text-foreground antialiased scroll-smooth" suppressHydrationWarning>
+        <UtmTracker />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-T9PKFR8P"
