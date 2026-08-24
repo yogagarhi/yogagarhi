@@ -9,7 +9,7 @@ interface SEOProps {
   ogImage?: string;
   ogType?: 'website' | 'article' | 'product';
   noIndex?: boolean;
-  structuredData?: object;
+  structuredData?: object | object[];
 }
 
 const BASE_URL = 'https://yogagarhi.com';
@@ -128,9 +128,23 @@ export default function SEO({
       <link rel="alternate" hrefLang="en" href={canonical || BASE_URL} />
       
       {/* Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify(structuredData || defaultStructuredData)}
-      </script>
+      {structuredData ? (
+        Array.isArray(structuredData) ? (
+          structuredData.map((data, index) => (
+            <script key={index} type="application/ld+json">
+              {JSON.stringify(data)}
+            </script>
+          ))
+        ) : (
+          <script type="application/ld+json">
+            {JSON.stringify(structuredData)}
+          </script>
+        )
+      ) : (
+        <script type="application/ld+json">
+          {JSON.stringify(defaultStructuredData)}
+        </script>
+      )}
     </Helmet>
   );
 }
