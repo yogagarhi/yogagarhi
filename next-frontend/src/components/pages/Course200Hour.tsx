@@ -533,7 +533,7 @@ const dietaryOptions = [
 // Upcoming Dates
 const upcomingDates = [
   { date: "1 Sept - 24 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$200" },
-  { date: "1 Oct - 24 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
+  { date: "8 Oct - 31 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
   { date: "1 Nov - 24 Nov 2026", spotsLeft: 1, earlyBirdSaving: "$200" },
   { date: "1 Dec - 24 Dec 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
   { date: "1 Jan - 24 Jan 2027", spotsLeft: 5, earlyBirdSaving: "$200" },

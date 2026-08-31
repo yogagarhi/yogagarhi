@@ -438,6 +438,7 @@ const upcomingDates = [
   { date: "2 May - 13 May 2026", spotsLeft: 7, earlyBirdSaving: "$150" },
   { date: "2 Aug - 13 Aug 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
   { date: "2 Sept - 13 Sept 2026", spotsLeft: 7, earlyBirdSaving: "$150" },
+  { date: "8 Oct - 19 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
 ];
 
 

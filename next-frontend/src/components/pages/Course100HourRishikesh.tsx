@@ -523,7 +523,7 @@ const upcomingDates = [
   { date: "1 Jul - 12 Jul 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
   { date: "1 Aug - 12 Aug 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
   { date: "1 Sept - 12 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$150" },
-  { date: "1 Oct - 12 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
+  { date: "8 Oct - 19 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
   { date: "1 Nov - 12 Nov 2026", spotsLeft: 1, earlyBirdSaving: "$150" },
   { date: "1 Dec - 12 Dec 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
 ];
