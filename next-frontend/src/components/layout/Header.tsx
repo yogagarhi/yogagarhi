@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Sparkles, Globe, Mountain, ArrowRight, Clock } from "lucide-react";
+import { Menu, X, ChevronDown, Sparkles, Globe, Mountain, ArrowRight, Clock, Palmtree, Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
@@ -117,6 +117,39 @@ const courses: NavDropdownItem[] = [
   },
 ];
 
+const retreats: NavDropdownItem[] = [
+  {
+    name: "Bali",
+    href: "/retreat/bali/7-days",
+    icon: Palmtree,
+    subItems: [
+      { name: "3 Days Retreat", href: "/retreat/bali/3-days" },
+      { name: "7 Days Retreat", href: "/retreat/bali/7-days" },
+      { name: "14 Days Retreat", href: "/retreat/bali/14-days" },
+    ]
+  },
+  {
+    name: "Rishikesh",
+    href: "/retreat/rishikesh/7-days",
+    icon: Mountain,
+    subItems: [
+      { name: "3 Days Retreat", href: "/retreat/rishikesh/3-days" },
+      { name: "7 Days Retreat", href: "/retreat/rishikesh/7-days" },
+      { name: "14 Days Retreat", href: "/retreat/rishikesh/14-days" },
+    ]
+  },
+  {
+    name: "Warkala",
+    href: "/retreat/warkala/7-days",
+    icon: Waves,
+    subItems: [
+      { name: "3 Days Retreat", href: "/retreat/warkala/3-days" },
+      { name: "7 Days Retreat", href: "/retreat/warkala/7-days" },
+      { name: "14 Days Retreat", href: "/retreat/warkala/14-days" },
+    ]
+  },
+];
+
 const aboutItems: NavDropdownItem[] = [
   { name: "About School", href: "/about-school", icon: AshramIcon },
   { name: "Our Teachers", href: "/teachers", icon: TeachersIcon },
@@ -137,6 +170,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "#", dropdown: aboutItems },
   { name: "Courses", href: "#", dropdown: courses },
+  { name: "Retreat", href: "#", dropdown: retreats },
   { name: "Online Courses", href: "#", dropdown: onlineCourses },
   { name: "Gallery", href: "/gallery" },
   { name: "Sunday Schedule", href: "/sunday-schedule", dropdown: sundayItems },
@@ -174,6 +208,7 @@ export default function Header() {
 
   const isActive = (href: string) => pathname === href;
   const isCoursesActive = pathname.includes("-hour-yoga-teacher-training-in-bali");
+  const isRetreatActive = pathname.startsWith("/retreat");
   const isOnlineCoursesActive = pathname === "/yoga-anatomy-mastery";
   const isAboutActive = pathname === "/about-school" || pathname === "/teachers" || pathname === "/testimonials";
   const isSundayActive = pathname === "/sunday-schedule";
@@ -231,16 +266,17 @@ export default function Header() {
               </div>
             </Link>
 
-            {/* Desktop Navigation - Centered */}
-            <nav className="hidden lg:flex items-center">
-              <div className="flex items-center bg-secondary/30 rounded-full px-2 py-1.5">
-                {navLinks.map((link, index) => {
+            {/* Desktop Navigation - Semantic & Accessible */}
+            <nav className="hidden lg:flex items-center" aria-label="Main Navigation">
+              <ul className="flex items-center bg-secondary/30 rounded-full px-2 py-1.5 list-none m-0 p-0">
+                {navLinks.map((link) => {
                   const isDropdownActive = link.name === 'Courses' ? isCoursesActive :
+                    link.name === 'Retreat' ? isRetreatActive :
                     link.name === 'About' ? isAboutActive :
                       link.name === 'Online Courses' ? isOnlineCoursesActive :
                       link.name === 'Sunday Schedule' ? isSundayActive : false;
                   return (
-                    <div key={link.name} className="relative">
+                    <li key={link.name} className="relative list-none">
                       {link.dropdown ? (
                         <div
                           className="relative"
@@ -248,7 +284,12 @@ export default function Header() {
                           onMouseLeave={() => setOpenDropdown(null)}
                         >
                           <button
+                            type="button"
                             suppressHydrationWarning
+                            aria-haspopup="true"
+                            aria-expanded={openDropdown === link.name}
+                            aria-label={`${link.name} navigation menu`}
+                            onClick={() => setOpenDropdown(openDropdown === link.name ? null : link.name)}
                             className={`flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${isDropdownActive
                               ? 'bg-primary text-primary-foreground'
                               : 'text-foreground/70 hover:text-primary hover:bg-secondary/50'
@@ -259,25 +300,30 @@ export default function Header() {
                               }`} />
                           </button>
 
-                          {/* Dropdown */}
+                          {/* Dropdown Menu */}
                           <div
+                            role="menu"
+                            aria-label={`${link.name} Submenu`}
                             className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-card rounded-2xl shadow-xl border border-border/50 transition-all duration-300 ${openDropdown === link.name
                               ? 'opacity-100 visible translate-y-0'
                               : 'opacity-0 invisible -translate-y-4'
                               }`}
                           >
-                            <div className="p-2">
+                            <ul className="p-2 list-none m-0">
                               {link.dropdown.map((item) => (
-                                <div
+                                <li
                                   key={item.name}
-                                  className="relative"
+                                  className="relative list-none"
                                   onMouseEnter={() => item.subItems && setOpenSubDropdown(item.name)}
                                   onMouseLeave={() => setOpenSubDropdown(null)}
                                 >
                                   {item.subItems ? (
                                     <div className="relative">
                                       <button
+                                        type="button"
                                         suppressHydrationWarning
+                                        aria-haspopup="true"
+                                        aria-expanded={openSubDropdown === item.name}
                                         onClick={(e) => {
                                           e.stopPropagation();
                                           setOpenSubDropdown(openSubDropdown === item.name ? null : item.name);
@@ -288,7 +334,7 @@ export default function Header() {
                                           }`}
                                       >
                                         <span className="flex items-center gap-3">
-                                          <item.icon className="h-4 w-4" />
+                                          <item.icon className="h-4 w-4 text-primary" />
                                           {item.name}
                                         </span>
                                         <ArrowRight className={`h-3 w-3 transition-transform ${openSubDropdown === item.name ? 'translate-x-1' : ''}`} />
@@ -296,44 +342,55 @@ export default function Header() {
 
                                       {/* Sub-dropdown */}
                                       <div
+                                        role="menu"
+                                        aria-label={`${item.name} Retreat Durations`}
                                         className={`absolute top-0 left-full ml-1 w-56 bg-card rounded-2xl shadow-xl border border-border/50 overflow-hidden transition-all duration-300 ${openSubDropdown === item.name
                                           ? 'opacity-100 visible translate-x-0'
                                           : 'opacity-0 invisible -translate-x-2'
                                           }`}
                                       >
-                                        <div className="p-2">
+                                        <ul className="p-2 list-none m-0">
                                           {item.subItems.map((sub) => (
-                                            <Link
-                                              key={sub.name}
-                                              href={sub.href}
-                                              className={`block px-4 py-2.5 rounded-xl text-sm transition-all duration-200 ${pathname === sub.href
-                                                ? 'bg-primary/10 text-primary font-medium'
-                                                : 'text-foreground/70 hover:bg-secondary hover:text-primary'
-                                                }`}
-                                            >
-                                              {sub.name}
-                                            </Link>
+                                            <li key={sub.name} className="list-none">
+                                              <Link
+                                                href={sub.href}
+                                                onClick={() => {
+                                                  setOpenDropdown(null);
+                                                  setOpenSubDropdown(null);
+                                                }}
+                                                className={`block px-4 py-2.5 rounded-xl text-sm transition-all duration-200 ${pathname === sub.href
+                                                  ? 'bg-primary/10 text-primary font-medium'
+                                                  : 'text-foreground/70 hover:bg-secondary hover:text-primary'
+                                                  }`}
+                                              >
+                                                {sub.name}
+                                              </Link>
+                                            </li>
                                           ))}
-                                        </div>
+                                        </ul>
                                       </div>
                                     </div>
                                   ) : (
                                     <Link
                                       href={item.href}
+                                      onClick={() => {
+                                        setOpenDropdown(null);
+                                        setOpenSubDropdown(null);
+                                      }}
                                       className={`block px-4 py-3 rounded-xl text-sm transition-all duration-200 ${pathname === item.href
                                         ? 'bg-primary/10 text-primary font-medium'
                                         : 'text-foreground/70 hover:bg-secondary hover:text-primary'
                                         }`}
                                     >
                                       <span className="flex items-center gap-3">
-                                        <item.icon />
+                                        <item.icon className="h-4 w-4 text-primary" />
                                         {item.name}
                                       </span>
                                     </Link>
                                   )}
-                                </div>
+                                </li>
                               ))}
-                            </div>
+                            </ul>
                           </div>
                         </div>
                       ) : (
@@ -347,10 +404,10 @@ export default function Header() {
                           {link.name}
                         </Link>
                       )}
-                    </div>
+                    </li>
                   );
                 })}
-              </div>
+              </ul>
             </nav>
 
             {/* Right Side - CTA */}
@@ -402,6 +459,7 @@ export default function Header() {
           <nav className="container mx-auto px-4 py-6 flex flex-col gap-1">
             {navLinks.map((link) => {
               const isMobileDropdownActive = link.name === 'Courses' ? isCoursesActive :
+                link.name === 'Retreat' ? isRetreatActive :
                 link.name === 'About' ? isAboutActive :
                   link.name === 'Online Courses' ? isOnlineCoursesActive :
                   link.name === 'Sunday Schedule' ? isSundayActive : false;
