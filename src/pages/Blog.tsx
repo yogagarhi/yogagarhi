@@ -20,8 +20,8 @@ const blogPosts = [
     slug: "what-to-expect-200hr",
   },
   {
-    title: "The Himalayan Roots of Authentic Yoga",
-    excerpt: "Exploring the ancient traditions and lineages that form the foundation of traditional yoga practice.",
+    title: "The Himalayan Roots of Authentic Yoga: Why It Matters for Your Training in Bali",
+    excerpt: "Discover the Himalayan roots of authentic yoga and why this lineage matters for your yoga teacher training in Bali. Learn what makes training truly traditional.",
     date: "December 20, 2024",
     image: heroImage,
     slug: "himalayan-roots-yoga",

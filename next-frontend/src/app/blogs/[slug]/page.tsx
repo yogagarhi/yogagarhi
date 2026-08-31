@@ -8,20 +8,31 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const slug = (await params).slug;
 
-    // Map slugs to better titles/descriptions if possible, or use a generic pattern
-    const titles: Record<string, string> = {
-        "benefits-yttc-bali": "Benefits of Yoga Teacher Training in Bali",
-        "what-to-expect-200hr": "What to Expect in Your 200 Hour YTTC in Bali: A Complete Guide",
-        "himalayan-roots-yoga": "The Himalayan Roots of Authentic Yoga",
+    const postMetadata: Record<string, { title: string; description: string }> = {
+        "benefits-yttc-bali": {
+            title: "Benefits of Yoga Teacher Training in Bali | YogaGarhi",
+            description: "Discover why Bali has become the premier destination for yoga teacher training and how it can transform your practice.",
+        },
+        "what-to-expect-200hr": {
+            title: "What to Expect in Your 200 Hour YTTC in Bali: A Complete Guide | YogaGarhi",
+            description: "Discover what to expect in a 200 hour YTTC in Bali, from daily classes and teaching practice to accommodation, preparation, and certification.",
+        },
+        "himalayan-roots-yoga": {
+            title: "The Himalayan Roots of Authentic Yoga: Why It Matters for Your Training in Bali | YogaGarhi",
+            description: "Discover the Himalayan roots of authentic yoga and why this lineage matters for your yoga teacher training in Bali. Learn what makes training truly traditional.",
+        },
     };
 
-    const title = titles[slug] || "Blog - Insights & Wisdom";
+    const meta = postMetadata[slug] || {
+        title: "Blog - Insights & Wisdom | YogaGarhi",
+        description: "Discover authentic yogic wisdom, teacher training insights, and Himalayan lineage practices at YogaGarhi.",
+    };
 
     return {
-        title: title,
-        description: "Discover what to expect in a 200 hour YTTC in Bali, from daily classes and teaching practice to accommodation, preparation, and certification.",
+        title: meta.title,
+        description: meta.description,
         alternates: {
-            canonical: `/blogs/${slug}`,
+            canonical: `https://www.yogagarhi.com/blogs/${slug}`,
         },
     };
 }
