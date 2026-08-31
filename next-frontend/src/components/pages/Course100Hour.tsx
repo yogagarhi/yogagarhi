@@ -515,17 +515,12 @@ const dietaryOptions = [
 
 // Upcoming Dates
 const upcomingDates = [
-  { date: "1 Feb - 12 Feb 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Mar - 12 Mar 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Apr - 12 Apr 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 May - 12 May 2026", spotsLeft: 7, earlyBirdSaving: "$150" },
-  { date: "1 Jun - 12 Jun 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Jul - 12 Jul 2026", spotsLeft: 8, earlyBirdSaving: "$150" },
-  { date: "1 Aug - 12 Aug 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
   { date: "1 Sept - 12 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$150" },
   { date: "8 Oct - 19 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
-  { date: "1 Nov - 12 Nov 2026", spotsLeft: 1, earlyBirdSaving: "$150" },
-  { date: "1 Dec - 12 Dec 2026", spotsLeft: 2, earlyBirdSaving: "$150" },
+  { date: "1 Nov - 12 Nov 2026", spotsLeft: 3, earlyBirdSaving: "$150" },
+  { date: "1 Dec - 12 Dec 2026", spotsLeft: 4, earlyBirdSaving: "$150" },
+  { date: "1 Jan - 12 Jan 2027", spotsLeft: 6, earlyBirdSaving: "$150" },
+  { date: "1 Feb - 12 Feb 2027", spotsLeft: 8, earlyBirdSaving: "$150" },
 ];
 
 
@@ -3636,8 +3631,8 @@ This is not a transactional relationship — it is a lifelong connection.`}
                 {/* Dates List */}
                 <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
                   {upcomingDates.map((item, index) => {
-                    const isFull = /feb|mar|apr|may|jun|jul/i.test(item.date);
-                    const isAugust = /aug/i.test(item.date);
+                    const isFull = item.spotsLeft <= 0;
+                    const isUrgent = item.spotsLeft <= 2;
                     return (
                       <div
                         key={index}
@@ -3649,7 +3644,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                             <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
                             <span className="font-medium text-foreground">{item.date}</span>
                           </div>
-                          {isAugust && (
+                          {isUrgent && (
                             <span className="text-xs font-semibold text-amber-600 dark:text-amber-500 flex items-center gap-1 mt-1 animate-pulse">
                               🔥 Hurry up! Limited seats, fast filling. Book quickly!
                             </span>

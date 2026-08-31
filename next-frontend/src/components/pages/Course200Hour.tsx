@@ -534,10 +534,10 @@ const dietaryOptions = [
 const upcomingDates = [
   { date: "1 Sept - 24 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$200" },
   { date: "8 Oct - 31 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
-  { date: "1 Nov - 24 Nov 2026", spotsLeft: 1, earlyBirdSaving: "$200" },
-  { date: "1 Dec - 24 Dec 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
-  { date: "1 Jan - 24 Jan 2027", spotsLeft: 5, earlyBirdSaving: "$200" },
-  { date: "1 Feb - 24 Feb 2027", spotsLeft: 7, earlyBirdSaving: "$200" },
+  { date: "1 Nov - 24 Nov 2026", spotsLeft: 3, earlyBirdSaving: "$200" },
+  { date: "1 Dec - 24 Dec 2026", spotsLeft: 4, earlyBirdSaving: "$200" },
+  { date: "1 Jan - 24 Jan 2027", spotsLeft: 6, earlyBirdSaving: "$200" },
+  { date: "1 Feb - 24 Feb 2027", spotsLeft: 8, earlyBirdSaving: "$200" },
 ];
 
 
@@ -1964,8 +1964,8 @@ export default function Course200Hour() {
                 {/* Dates List */}
                 <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
                   {upcomingDates.map((item, index) => {
-                    const isFull = /feb|mar|apr|may|jun|jul/i.test(item.date);
-                    const isAugust = /aug/i.test(item.date);
+                    const isFull = item.spotsLeft <= 0;
+                    const isUrgent = item.spotsLeft <= 2;
                     return (
                       <div
                         key={index}
@@ -1977,7 +1977,7 @@ export default function Course200Hour() {
                             <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
                             <span className="font-medium text-foreground">{item.date}</span>
                           </div>
-                          {isAugust && (
+                          {isUrgent && (
                             <span className="text-xs font-semibold text-amber-600 dark:text-amber-500 flex items-center gap-1 mt-1 animate-pulse">
                               🔥 Hurry up! Limited seats, fast filling. Book quickly!
                             </span>

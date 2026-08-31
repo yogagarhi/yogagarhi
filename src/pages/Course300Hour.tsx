@@ -430,14 +430,12 @@ const dietaryOptions = [
 
 // Upcoming Dates
 const upcomingDates = [
-  { date: "1 Dec - 28 Dec 2025", spotsLeft: 2, earlyBirdSaving: "$300" },
-  { date: "5 Jan - 1 Feb 2026", spotsLeft: 4, earlyBirdSaving: "$300" },
-  { date: "5 Feb - 4 Mar 2026", spotsLeft: 6, earlyBirdSaving: "$300" },
-  { date: "5 Mar - 1 Apr 2026", spotsLeft: 6, earlyBirdSaving: "$300" },
-  { date: "5 Apr - 2 May 2026", spotsLeft: 6, earlyBirdSaving: "$300" },
-  { date: "5 May - 1 Jun 2026", spotsLeft: 5, earlyBirdSaving: "$300" },
-  { date: "5 Aug - 1 Sep 2026", spotsLeft: 6, earlyBirdSaving: "$300" },
-  { date: "5 Sep - 2 Oct 2026", spotsLeft: 5, earlyBirdSaving: "$300" },
+  { date: "1 Sept - 28 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$300" },
+  { date: "1 Oct - 28 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$300" },
+  { date: "1 Nov - 28 Nov 2026", spotsLeft: 3, earlyBirdSaving: "$300" },
+  { date: "1 Dec - 28 Dec 2026", spotsLeft: 4, earlyBirdSaving: "$300" },
+  { date: "1 Jan - 28 Jan 2027", spotsLeft: 6, earlyBirdSaving: "$300" },
+  { date: "1 Feb - 28 Feb 2027", spotsLeft: 8, earlyBirdSaving: "$300" },
 ];
 
 
