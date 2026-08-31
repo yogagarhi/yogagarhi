@@ -3,6 +3,9 @@
 
 @layer base {
   :root {
+    --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
     /* YogaGarhi Brand Colors */
     --background: 42 37% 95%;
     --foreground: 192 76% 18%;

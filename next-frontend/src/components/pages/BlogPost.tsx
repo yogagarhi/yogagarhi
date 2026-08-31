@@ -409,26 +409,33 @@ export default function BlogPost() {
             </Link>
           </Button>
 
-          <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
-            <div className="flex items-center gap-1">
-              <Calendar className="w-4 h-4 text-primary" />
-              {post.date}
-            </div>
-            <div className="flex items-center gap-1">
-              <Clock className="w-4 h-4 text-primary" />
-              10 min read
-            </div>
-            <div className="flex items-center gap-1">
-              <User className="w-4 h-4 text-primary" />
-              By YogaGarhi Team
+          <div className="flex flex-col gap-3 mb-6">
+            <span className="inline-flex items-center gap-1.5 w-fit px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold uppercase tracking-wider">
+              ✦ Yogic Wisdom & Himalayan Lineage
+            </span>
+            <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+              <div className="flex items-center gap-1.5 font-medium">
+                <Calendar className="w-4 h-4 text-primary" />
+                {post.date}
+              </div>
+              <span className="text-border">•</span>
+              <div className="flex items-center gap-1.5 font-medium">
+                <Clock className="w-4 h-4 text-primary" />
+                10 min read
+              </div>
+              <span className="text-border">•</span>
+              <div className="flex items-center gap-1.5 font-medium">
+                <User className="w-4 h-4 text-primary" />
+                By YogaGarhi Team
+              </div>
             </div>
           </div>
 
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-8">
+          <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-foreground leading-[1.18] tracking-tight mb-8">
             {post.title}
           </h1>
 
-          <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-elevated mb-12">
+          <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-elevated mb-12 border border-border/40">
             <Image
               src={post.image}
               alt={post.title}
@@ -439,46 +446,49 @@ export default function BlogPost() {
           </div>
 
           {/* Article Content */}
-          <div className="bg-card rounded-3xl p-8 md:p-12 shadow-card border border-border/40">
-            <div className="prose prose-lg max-w-none text-muted-foreground">
+          <div className="bg-card rounded-3xl p-8 md:p-12 lg:p-14 shadow-card border border-border/50">
+            <div className="prose prose-lg max-w-none text-foreground/80">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={{
                   h2: ({ node, ...props }) => (
-                    <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mt-10 mb-4 pb-2 border-b border-border/50" {...props} />
+                    <h2 className="font-heading text-2xl sm:text-3xl md:text-[2.2rem] font-bold text-foreground mt-12 mb-5 pb-3 border-b border-border/60 leading-[1.25] tracking-tight" {...props} />
                   ),
                   h3: ({ node, ...props }) => (
-                    <h3 className="font-heading text-xl md:text-2xl font-semibold text-foreground mt-8 mb-3" {...props} />
+                    <h3 className="font-heading text-xl sm:text-2xl font-bold text-primary mt-8 mb-3.5 leading-snug tracking-tight" {...props} />
                   ),
                   p: ({ node, ...props }) => (
-                    <p className="text-muted-foreground leading-relaxed mb-6" {...props} />
+                    <p className="text-foreground/80 text-[1.05rem] md:text-lg leading-[1.85] mb-6 font-normal" {...props} />
                   ),
                   ul: ({ node, ...props }) => (
-                    <ul className="list-disc list-inside space-y-2 mb-6 text-muted-foreground pl-2" {...props} />
+                    <ul className="space-y-3 mb-6 text-foreground/80 text-[1.05rem] md:text-lg pl-6 list-disc marker:text-primary" {...props} />
                   ),
                   ol: ({ node, ...props }) => (
-                    <ol className="list-decimal list-inside space-y-2 mb-6 text-muted-foreground pl-2" {...props} />
+                    <ol className="space-y-3 mb-6 text-foreground/80 text-[1.05rem] md:text-lg pl-6 list-decimal marker:text-primary" {...props} />
                   ),
                   li: ({ node, ...props }) => (
-                    <li className="leading-relaxed" {...props} />
+                    <li className="leading-relaxed pl-1" {...props} />
                   ),
                   a: ({ node, href, children, ...props }) => {
                     if (href?.startsWith("/")) {
                       return (
-                        <Link href={href} className="text-primary font-semibold hover:underline inline-flex items-center gap-1" {...props}>
+                        <Link href={href} className="text-primary font-semibold underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors inline-flex items-center gap-1" {...props}>
                           {children}
                         </Link>
                       );
                     }
                     return (
-                      <a href={href} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline" {...props}>
+                      <a href={href} target="_blank" rel="noopener noreferrer" className="text-primary font-semibold underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors" {...props}>
                         {children}
                       </a>
                     );
                   },
+                  blockquote: ({ node, ...props }) => (
+                    <blockquote className="border-l-4 border-primary/80 pl-6 py-3 my-8 italic text-foreground/90 bg-primary/5 rounded-r-2xl text-lg font-serif" {...props} />
+                  ),
                   table: ({ node, ...props }) => (
                     <div className="overflow-x-auto my-8 border border-border rounded-2xl shadow-sm">
-                      <table className="w-full text-left border-collapse text-sm" {...props} />
+                      <table className="w-full text-left border-collapse text-sm md:text-base" {...props} />
                     </div>
                   ),
                   thead: ({ node, ...props }) => (
@@ -488,7 +498,7 @@ export default function BlogPost() {
                     <th className="py-3.5 px-4 font-semibold text-foreground" {...props} />
                   ),
                   td: ({ node, ...props }) => (
-                    <td className="py-3.5 px-4 border-b border-border/40 text-muted-foreground" {...props} />
+                    <td className="py-3.5 px-4 border-b border-border/40 text-foreground/75" {...props} />
                   ),
                   strong: ({ node, ...props }) => (
                     <strong className="font-semibold text-foreground" {...props} />
