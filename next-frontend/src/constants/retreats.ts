@@ -4,6 +4,30 @@ export interface RetreatScheduleItem {
   description: string;
 }
 
+export interface DaySchedule {
+  dayNumber: number;
+  dayLabel: string;
+  title: string;
+  items: { time: string; activity: string }[];
+}
+
+export interface CampusPricingOption {
+  roomType: string;
+  campus: string;
+  regularPrice: string;
+  discountedPrice: string;
+  features: string[];
+  popular?: boolean;
+}
+
+export interface RetreatTeacher {
+  name: string;
+  role: string;
+  image: string;
+  bio: string;
+  specialties: string[];
+}
+
 export interface RetreatPackage {
   slug: string;
   durationKey: '3-days' | '7-days' | '14-days';
@@ -26,6 +50,15 @@ export interface RetreatPackage {
   overview: string[];
   highlights: string[];
   schedule: RetreatScheduleItem[];
+  dayByDaySchedule?: DaySchedule[];
+  campusPricing?: CampusPricingOption[];
+  teachersList?: RetreatTeacher[];
+  mealTimings?: { meal: string; time: string; notes?: string }[];
+  policy?: {
+    reschedule: string;
+    airportGuide: string;
+    arrivalInfo: string;
+  };
   included: string[];
   notIncluded: string[];
   accommodation: {
@@ -99,66 +132,144 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
     locationStateOrCountry: 'Indonesia',
     durationDays: 3,
     durationNights: 2,
-    title: '3 Day Weekend Yoga & Nature Retreat in Bali',
-    tagline: 'A revitalizing weekend escape amidst Ubud’s tropical jungles and sacred water springs.',
-    badge: 'Quick Reset',
+    title: '3 DAYS & 2 NIGHTS YOGA RETREAT IN UBUD BALI',
+    tagline: 'Step into your zen zone through an enlightening 3 day journey in the cultural capital of Bali – Ubud amidst its tranquility.',
+    badge: 'Short Wellness Reset',
     seoTitle: '3 Day Bali Yoga Retreat | Weekend Wellness Escape Ubud | YogaGarhi',
-    seoDescription: 'Recharge your mind and body with our 3 Day Yoga Retreat in Ubud, Bali. Enjoy daily Hatha/Vinyasa yoga, sound healing, organic Sattvic meals, and lush nature.',
+    seoDescription: 'Find peace with our 3 Days & 2 Nights Yoga Retreat in Ubud Bali. Daily Hatha Vinyasa yoga, 2 Balinese massages, sound healing, and organic plant-based dining.',
     keywords: ['3 day yoga retreat bali', 'weekend yoga retreat ubud', 'short wellness retreat bali', 'ubud yoga escape', 'yoga retreat bali 3 days'],
     heroImage: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1200&q=80',
     heroImageAlt: 'Yoga practice surrounded by Bali tropical nature',
-    priceShared: '$350',
-    pricePrivate: '$480',
-    earlyBirdSaving: '$50',
+    priceShared: '$299',
+    pricePrivate: '$390',
+    earlyBirdSaving: '$80',
     overview: [
-      'Need a quick, powerful pause from daily hustle? Our 3-day Ubud weekend retreat is carefully tailored to release physical tension, quiet mental noise, and recharge your vitality in a serene sanctuary surrounded by rainforests and birdsong.',
-      'Enjoy morning revitalizing yoga, afternoon grounding pranayama, Balinese sound bath meditation, and wholesome farm-to-table Sattvic cuisine designed to bring you into deep harmony within a short getaway.'
+      'Step into your zen zone through an enlightening 3-day journey in the cultural capital of Bali – Ubud amidst its tranquility. Find the best 3 days yoga retreat in Ubud Bali to achieve your purpose and restore inner balance.',
+      'Escape the hustle of daily routines and nourish yourself with authentic Hatha Vinyasa yoga, restorative evening sound healing, daily Balinese massage treatments, and wholesome plant-based dining in a lush tropical sanctuary.'
     ],
     highlights: [
-      'Twice daily yoga sessions: Energizing morning Vinyasa & calming evening Yin/Hatha',
-      'Daily guided pranayama breathwork and Himalayan meditation',
-      'One complimentary 60-minute traditional Balinese massage',
-      'Authentic Balinese Agnihotra fire blessing or sacred sound bath',
-      '2 nights luxury stay in a boutique resort surrounded by nature',
-      'Delicious organic vegan & vegetarian meals, detox smoothies, and herbal teas'
+      'Daily authentic Hatha & Vinyasa Flow yoga sessions',
+      'Daily complimentary Full-Body Balinese Massage treatments (2 sessions)',
+      'Evening Tibetan singing bowl sound healing & aura cleansing',
+      'Morning Himalayan breathwork (Pranayama) & guided meditation',
+      'Full access to campus swimming pool, lush tropical gardens, and bamboo shala',
+      'Three daily delicious, hygienic plant-based / vegan meals prepared with Ahimsa love'
+    ],
+    campusPricing: [
+      {
+        roomType: 'Private Room in Campus-I',
+        campus: 'Deluxe Garden Villa',
+        regularPrice: '$480 USD',
+        discountedPrice: '$390 USD',
+        popular: true,
+        features: ['King / Queen Bed with luxury mattress', 'Silent Air Conditioning & ceiling fan', 'Ensuite Balinese semi-open bathroom', 'Private balcony overlooking lush tropical foliage', 'Complimentary High-Speed Wi-Fi']
+      },
+      {
+        roomType: 'Twin Shared Room in Campus-I',
+        campus: 'Twin Share Comfort',
+        regularPrice: '$390 USD',
+        discountedPrice: '$299 USD',
+        features: ['Two separate comfortable single beds', 'Shared with one retreat companion (same gender)', 'Silent Air Conditioning & ensuite bathroom', 'Direct tropical garden & pool access', 'Complimentary High-Speed Wi-Fi']
+      },
+      {
+        roomType: 'Private Room in Campus-II',
+        campus: 'New Luxury Pool Campus',
+        regularPrice: '$440 USD',
+        discountedPrice: '$350 USD',
+        features: ['Spacious modern private room', 'Direct sparkling swimming pool views', 'Premium bathroom with rainfall hot shower', 'Work desk, safe box & wardrobe', 'Peaceful sanctuary location in Ubud']
+      }
+    ],
+    dayByDaySchedule: [
+      {
+        dayNumber: 1,
+        dayLabel: 'Day 1 Schedule',
+        title: 'Arrival, Check-in & Relaxation',
+        items: [
+          { time: '12:00 PM', activity: 'Check in & Welcome Coconut Water' },
+          { time: '12:30 PM', activity: 'Nutritious & Delicious Plant-Based Lunch' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Complimentary Full-Body Balinese Massage Treatment' },
+          { time: '05:30 PM – 06:30 PM', activity: 'Sunset Welcome Meditation & Gentle Stretch' },
+          { time: '07:00 PM', activity: 'Wholesome Vegetarian / Vegan Dinner' }
+        ]
+      },
+      {
+        dayNumber: 2,
+        dayLabel: 'Day 2 Schedule',
+        title: 'Yoga, Sound Healing & Spa Care',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama Breathwork & Silent Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Hatha Vinyasa Yoga Flow' },
+          { time: '09:30 AM', activity: 'Nutritious & Energizing Tropical Breakfast' },
+          { time: '11:00 AM – 12:00 PM', activity: 'Sound Healing & Tibetan Singing Bowls Session' },
+          { time: '12:30 PM', activity: 'Fresh Organic Plant-Based Lunch' },
+          { time: '02:00 PM – 04:00 PM', activity: 'Free Time for Swimming Pool & Jungle Relaxation' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Complimentary Full-Body Balinese Massage Treatment' },
+          { time: '07:00 PM', activity: 'Candlelight Dinner & Heart Circle' }
+        ]
+      },
+      {
+        dayNumber: 3,
+        dayLabel: 'Day 3 Schedule',
+        title: 'Morning Yoga, Closing Blessing & Departure',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama & Mindfulness Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Morning Energizing Hatha Yoga Practice' },
+          { time: '09:30 AM', activity: 'Farewell Tropical Breakfast' },
+          { time: '11:00 AM', activity: 'Closing Blessing Ceremony & Retreat Certificate' },
+          { time: '12:00 PM', activity: 'Check out with renewed energy and peace' }
+        ]
+      }
     ],
     schedule: [
-      { time: '06:30 AM', activity: 'Morning Herbal Tea & Awakening', description: 'Fresh ginger-lemongrass tea with sunrise view.' },
-      { time: '07:00 AM', activity: 'Morning Flow Yoga & Breathwork', description: 'Gentle somatic warm-up followed by uplifting Vinyasa.' },
-      { time: '08:45 AM', activity: 'Nourishing Sattvic Breakfast', description: 'Tropical smoothie bowls, exotic fruits, and wholesome proteins.' },
-      { time: '10:30 AM', activity: 'Mindfulness / Sound Healing Workshop', description: 'Tibetan singing bowls and guided deep sensory relaxation.' },
-      { time: '01:00 PM', activity: 'Wholesome Organic Lunch', description: 'Fresh Balinese-inspired farm-to-table cuisine.' },
-      { time: '02:30 PM', activity: 'Spa & Rest Time', description: 'Balinese massage session or relaxing by the infinity pool.' },
-      { time: '05:00 PM', activity: 'Restorative Yin Yoga & Nidra', description: 'Deep muscle release and guided sleep meditation.' },
-      { time: '07:00 PM', activity: 'Community Dinner & Circle', description: 'Warm evening meal and relaxing fireside chat.' }
+      { time: '07:00 AM', activity: 'Pranayama & Meditation', description: 'Centering breathwork and morning silence.' },
+      { time: '08:00 AM', activity: 'Hatha Vinyasa Yoga', description: 'Fluid, mindful alignment flow.' },
+      { time: '09:30 AM', activity: 'Nutritious Breakfast', description: 'Fresh tropical fruit, smoothie bowls, and porridge.' },
+      { time: '11:00 AM', activity: 'Sound Healing Session', description: 'Tibetan singing bowl resonance and nervous system relaxation.' },
+      { time: '12:30 PM', activity: 'Plant-Based Lunch', description: 'Vibrant organic vegetarian and vegan cuisine.' },
+      { time: '04:00 PM', activity: 'Balinese Massage', description: 'Daily 60-min complimentary traditional full-body massage.' },
+      { time: '07:00 PM', activity: 'Wholesome Dinner', description: 'Nourishing dinner prepared with Ahimsa love.' }
     ],
+    mealTimings: [
+      { meal: 'Breakfast', time: '09:30 AM', notes: 'Fresh tropical fruits, smoothie bowls, chia puddings, herbal tea' },
+      { meal: 'Lunch', time: '12:30 PM – 01:30 PM', notes: 'Nutritious Balinese & Indian Sattvic bowls, fresh steamed greens' },
+      { meal: 'Dinner', time: '07:00 PM – 08:00 PM', notes: 'Warm soul soups, roasted vegetables, curries, and herbal digestion tonics' }
+    ],
+    policy: {
+      reschedule: 'Each student is eligible for one course reschedule free of charge. Once rescheduled, your dates are firmly reserved for maximum flexibility.',
+      airportGuide: 'The best and most convenient way to travel to YogaGarhi Bali is to take a flight to Denpasar Bali Airport (DPS). Denpasar Airport is merely 38 km away from our Ubud campus.',
+      arrivalInfo: 'Campus check-in begins at 12:00 PM on your arrival day. Early arrival and luggage storage are gladly assisted.'
+    },
     included: [
-      '2 Nights accommodation in luxury garden or pool villa',
-      '3 Daily healthy, nourishing vegan/vegetarian meals',
-      'All daily yoga, pranayama, and meditation sessions',
-      '1x 60-minute traditional Balinese massage',
-      'Unlimited herbal teas, purified water, and fresh fruit',
-      'Access to yoga props (mats, blocks, straps, bolsters)',
-      'High-speed Wi-Fi and swimming pool access'
+      'Chosen Accommodation (Campus-I or Campus-II)',
+      '3 Times a Day Nutritious and Delicious vegan/Vegetarian Meals',
+      'Mentioned Daily Yoga Classes (Hatha & Vinyasa)',
+      '10:00 AM to 8:00 PM Swimming Pool Access',
+      'Complimentary High-Speed Wi-Fi anywhere in the Campus',
+      '2 Full-Body Complimentary Balinese Massage Treatments',
+      'Sound Healing & Tibetan Singing Bowls Session',
+      'All necessary yoga items and props available in the yoga shala',
+      'Unlimited purified drinking water and fresh herbal tea'
     ],
     notIncluded: [
       'Flight tickets to/from Denpasar Bali (DPS)',
-      'Airport transfers (can be arranged on request for $30)',
-      'Personal expenses and additional spa treatments'
+      'Airport drop-off transfer (easily booked for $25–$30)',
+      'Personal expenses and shopping'
     ],
     accommodation: {
-      title: 'Serene Nature’s Escape Resort, Ubud',
-      description: 'Sleep in comfortable, eco-luxe villas featuring private balconies overlooking lush tropical ravines, ensuite bathrooms, air conditioning, and plush bedding.',
-      features: ['Air Conditioning & Ceiling Fan', 'Ensuite semi-open Balinese bathroom', 'Swimming pool amidst rainforest', 'Daily housekeeping & fresh linens']
+      title: 'YogaGarhi Ubud Campus-I & Campus-II',
+      description: 'Nestled amidst lush green rice terraces and tropical palms in Ubud, our campuses offer peaceful garden sanctuaries with sparkling swimming pools, airy bamboo yoga shalas, and modern air-conditioned rooms.',
+      features: ['Air Conditioning & ceiling fan in every room', 'Ensuite bathroom with hot & cold water', '10:00 AM to 8:00 PM swimming pool access', 'High-Speed Wi-Fi across the entire sanctuary', 'Daily housekeeping service']
     },
     meals: {
-      title: 'Wholesome Farm-to-Table Nutrition',
-      description: 'Every dish is lovingly crafted with organic ingredients sourced from local volcanic soil farms to balance digestion and awaken your energy.',
-      types: ['100% Vegetarian & Vegan Options', 'Gluten-Free & Dairy-Free friendly', 'Herbal teas, fresh coconut water & tonics']
+      title: 'YogaGarhi Dining – Pure Plant-Based & Ahimsa Nutrition',
+      description: 'We believe that food is a sacred expression of care and one of the ways to enhance our spirit. We serve plant-based meals, prepared with the highest standards of hygiene, cleanliness, and love to support your yoga journey. One of the primary practices in yoga is Ahimsa, meaning non-violence. By following a pure vegetarian and vegan diet, our meals heal the gut and energize the soul.',
+      types: ['100% Vegetarian & Vegan Plant-Based Cuisine', 'Fresh tropical fruits, juices & digestive herbal infusions', 'Gluten-Free & Dairy-Free friendly menu']
     },
     faqs: [
-      { question: 'Is this retreat suitable for beginners?', answer: 'Yes! All classes provide beginner-friendly modifications and props so you can practice comfortably at your own pace.' },
-      { question: 'Can I extend my stay after 3 days?', answer: 'Subject to room availability, you can easily extend into a 7-day retreat or book extra nights.' }
+      { question: 'What is the check-in and check-out time?', answer: 'Check-in is at 12:00 PM on Day 1, and check-out is at 12:00 PM on Day 3.' },
+      { question: 'Are beginners welcome on this 3-day retreat?', answer: 'Yes! All classes are tailored with variations for complete beginners through intermediate practitioners.' },
+      { question: 'Is the Balinese massage really complimentary?', answer: 'Yes, 2 full-body Balinese massages are fully complimentary and included in your retreat fees.' },
+      { question: 'How do I reach the retreat campus from the airport?', answer: 'Denpasar International Airport (DPS) is approximately 38 km away. We provide hassle-free private taxi pickup upon request.' }
     ]
   },
 
@@ -170,67 +281,238 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
     locationStateOrCountry: 'Indonesia',
     durationDays: 7,
     durationNights: 6,
-    title: '7 Day Rejuvenating Yoga & Holistic Wellness Retreat in Bali',
-    tagline: 'A week of complete mind, body, and soul renewal in the spiritual heart of Ubud, Bali.',
+    title: '7 DAYS & 6 NIGHTS YOGA RETREAT IN UBUD BALI',
+    tagline: 'Step into your zen zone through an enlightening 7 day journey in the cultural capital of Bali – Ubud amidst its tranquility.',
     badge: 'Most Popular',
     seoTitle: '7 Day Bali Yoga Retreat | Rejuvenating Wellness in Ubud | YogaGarhi',
-    seoDescription: 'Transform your energy with our 7 Day Yoga Retreat in Ubud, Bali. Experience daily multi-style yoga, Tirta Empul water blessing, Balinese massages, and Sattvic dining.',
-    keywords: ['7 day yoga retreat bali', '1 week yoga retreat ubud', 'wellness holiday bali', 'best yoga retreat bali', 'bali yoga rejuvenation'],
+    seoDescription: 'Find the Best 7 days yoga retreat in Ubud Bali. Experience daily Hatha Vinyasa yoga, 6 complimentary Balinese massages, sound healing, Reiki, water blessing, and organic dining.',
+    keywords: ['7 day yoga retreat bali', '7 days 6 nights yoga retreat ubud', 'best yoga retreat in bali', 'ubud yoga retreat 7 days', 'bali yoga school retreat'],
     heroImage: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80',
     heroImageAlt: 'Woman meditating at sunrise in Bali retreat center',
-    priceShared: '$750',
-    pricePrivate: '$990',
-    earlyBirdSaving: '$100',
+    priceShared: '$650',
+    pricePrivate: '$800',
+    earlyBirdSaving: '$200',
     overview: [
-      'Our 7-day signature retreat in Bali is an invitation to pause, breathe deeply, and reconnect with your inner light. Designed around the five elements (Pancha Mahabhuta), this week-long journey gently melts stress, boosts flexibility, and revitalizes your nervous system.',
-      'From authentic Himalayan pranayama and daily multi-style asana classes to visiting the sacred Tirta Empul water temple for holy purification, you will experience the genuine spiritual essence of Bali.'
+      'Step into your zen zone through an enlightening 7-day journey in the cultural capital of Bali – Ubud amidst its tranquility. Find the Best 7 days yoga retreat in Ubud Bali to achieve your purpose. And you will certainly find the best retreat at YogaGarhi due to our authentic Himalayan teaching lineage, experienced gurus, and peaceful tropical sanctuary.',
+      'Our 7-day retreat is uniquely designed to give you profound holistic rejuvenation. Every single day features daily Hatha Vinyasa yoga, soothing Himalayan pranayama, daily complimentary full-body Balinese massage treatments, and healing modalities like Sound Healing and Reiki. Immerse in sacred temple water purification at Tirta Empul and taste delicious, hygienic plant-based meals prepared with love and Ahimsa.'
     ],
     highlights: [
-      'Daily morning Hatha/Vinyasa and evening Yin/Restorative yoga',
-      'Sacred Melukat Water Purification ceremony at an ancient temple',
-      'Sound healing & Tibetan singing bowl immersion in a bamboo shala',
-      '2x Rejuvenating Balinese spa treatments included',
-      'Excursion to scenic Tegalalang rice terraces and hidden waterfalls',
-      '6 nights accommodation in premium tropical villas with infinity pool',
-      'All organic, chef-curated Sattvic vegetarian and vegan meals'
+      'Daily authentic Hatha & Vinyasa Flow yoga sessions with expert teachers',
+      '6 Full-Body Complimentary Balinese Massage Treatments (daily spa care)',
+      'Transformative Sound Healing & Tibetan Singing Bowls therapy sessions',
+      'Traditional Reiki Healing & Chakra Aura Cleansing session',
+      'Sacred Melukat Water Blessing & Temple Excursion (Tirta Empul)',
+      '3 Nutritious and delicious vegan/vegetarian meals daily based on Ahimsa',
+      '10:00 AM to 8:00 PM Swimming Pool Access & high-speed Wi-Fi everywhere'
+    ],
+    campusPricing: [
+      {
+        roomType: 'Private Room in Campus-I',
+        campus: 'Deluxe Garden Villa',
+        regularPrice: '$1,000 USD',
+        discountedPrice: '$800 USD',
+        popular: true,
+        features: [
+          'King / Queen Bed with plush luxury mattress',
+          'Silent Air Conditioning & ceiling fan',
+          'Ensuite semi-open Balinese bathroom with hot rainfall shower',
+          'Private balcony overlooking tropical palm gardens',
+          'Daily housekeeping, fresh organic towels & linens',
+          'Complimentary High-Speed Wi-Fi anywhere in Campus'
+        ]
+      },
+      {
+        roomType: 'Twin Shared Room in Campus-I',
+        campus: 'Twin Share Comfort',
+        regularPrice: '$812.5 USD',
+        discountedPrice: '$650 USD',
+        features: [
+          'Two comfortable single beds for two students (same gender)',
+          'Ensuite spacious bathroom with hot water shower',
+          'Silent Air Conditioning & tropical garden view',
+          'Safety locker, wardrobe & luggage storage',
+          'Perfect for friends or solo travelers seeking companion value',
+          'Complimentary High-Speed Wi-Fi anywhere in Campus'
+        ]
+      },
+      {
+        roomType: 'Private Room in Campus-II',
+        campus: 'New Luxury Pool Campus',
+        regularPrice: '$875 USD',
+        discountedPrice: '$700 USD',
+        features: [
+          'Brand new boutique private room overlooking swimming pool',
+          'Modern Balinese design with teakwood finishes',
+          'Silent Air Conditioning & luxury ensuite bath',
+          'Writing desk, reading lounge & private terrace',
+          'Direct steps to outdoor swimming pool and sun loungers',
+          'Complimentary High-Speed Wi-Fi anywhere in Campus'
+        ]
+      }
+    ],
+    dayByDaySchedule: [
+      {
+        dayNumber: 1,
+        dayLabel: 'Day 1 Schedule',
+        title: 'Check-In, Welcome & Balinese Massage',
+        items: [
+          { time: '12:00 PM', activity: 'Check in & Fresh Welcome Young Coconut' },
+          { time: '12:30 PM', activity: 'Delicious Plant-Based Lunch' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Full-Body Complimentary Balinese Massage Treatment' },
+          { time: '05:30 PM – 06:30 PM', activity: 'Welcome Circle & Twilight Gentle Stretch' },
+          { time: '07:00 PM', activity: 'Nutritious Vegetarian / Vegan Dinner' }
+        ]
+      },
+      {
+        dayNumber: 2,
+        dayLabel: 'Day 2 Schedule',
+        title: 'Yoga, Sound Healing & Spa Treatment',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama Breathwork & Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Hatha Vinyasa Yoga Flow' },
+          { time: '09:30 AM', activity: 'Nutritious & Delicious Tropical Breakfast' },
+          { time: '11:00 AM – 12:00 PM', activity: 'Sound Healing Session (Tibetan Singing Bowls)' },
+          { time: '12:30 PM', activity: 'Plant-Based Organic Lunch' },
+          { time: '02:00 PM – 04:00 PM', activity: 'Pool Relaxation, Reading & Jungle Leisure' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Full-Body Complimentary Balinese Massage Treatment' },
+          { time: '07:00 PM', activity: 'Wholesome Sattvic Dinner' }
+        ]
+      },
+      {
+        dayNumber: 3,
+        dayLabel: 'Day 3 Schedule',
+        title: 'Reiki Healing, Energy Flow & Massage',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama Breathwork & Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Hatha Vinyasa Yoga Flow' },
+          { time: '09:30 AM', activity: 'Nourishing Tropical Breakfast' },
+          { time: '11:00 AM – 12:00 PM', activity: 'Reiki Healing & Energy Balancing Session' },
+          { time: '12:30 PM', activity: 'Nutritious Plant-Based Lunch' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Full-Body Complimentary Balinese Massage Treatment' },
+          { time: '05:30 PM – 06:30 PM', activity: 'Restorative Yin Yoga & Yoga Nidra' },
+          { time: '07:00 PM', activity: 'Nutritious Vegetarian / Vegan Dinner' }
+        ]
+      },
+      {
+        dayNumber: 4,
+        dayLabel: 'Day 4 Schedule',
+        title: 'Sacred Temple Water Blessing Excursion',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama & Gentle Morning Practice' },
+          { time: '08:00 AM', activity: 'Hearty Breakfast' },
+          { time: '09:30 AM – 01:30 PM', activity: 'Sacred Melukat Water Purification Temple Tour (Tirta Empul)' },
+          { time: '01:30 PM', activity: 'Fresh Lunch at Sanctuary' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Full-Body Complimentary Balinese Massage Treatment' },
+          { time: '07:00 PM', activity: 'Nutritious Dinner & Quiet Integration' }
+        ]
+      },
+      {
+        dayNumber: 5,
+        dayLabel: 'Day 5 Schedule',
+        title: 'Sound Healing, Vinyasa & Deep Rest',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama Breathwork & Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Hatha Vinyasa Yoga Flow' },
+          { time: '09:30 AM', activity: 'Nutritious Breakfast' },
+          { time: '11:00 AM – 12:00 PM', activity: 'Sound Healing & Breath Alignment Session' },
+          { time: '12:30 PM', activity: 'Plant-Based Lunch' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Full-Body Complimentary Balinese Massage Treatment' },
+          { time: '07:00 PM', activity: 'Nutritious Vegetarian / Vegan Dinner' }
+        ]
+      },
+      {
+        dayNumber: 6,
+        dayLabel: 'Day 6 Schedule',
+        title: 'Culture Workshop, Farewell Kirtan & Celebration',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama Breathwork & Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Hatha Vinyasa Yoga Flow' },
+          { time: '09:30 AM', activity: 'Nutritious Breakfast' },
+          { time: '11:00 AM – 12:30 PM', activity: 'Balinese Herbal Offering (Canang Sari) & Culture Session' },
+          { time: '12:30 PM', activity: 'Plant-Based Organic Lunch' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Full-Body Complimentary Balinese Massage Treatment' },
+          { time: '06:00 PM', activity: 'Candlelight Kirtan Chanting & Farewell Celebration' },
+          { time: '07:30 PM', activity: 'Special Feast Dinner' }
+        ]
+      },
+      {
+        dayNumber: 7,
+        dayLabel: 'Day 7 Schedule',
+        title: 'Morning Yoga, Closing Blessing & Check-Out',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama Breathwork & Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Hatha Vinyasa Yoga Flow' },
+          { time: '09:30 AM', activity: 'Farewell Tropical Breakfast' },
+          { time: '11:00 AM', activity: 'Closing Blessing Ceremony & Certificate Presentation' },
+          { time: '12:00 PM', activity: 'Check out with rejuvenated body, mind, and spirit' }
+        ]
+      }
     ],
     schedule: [
-      { time: '06:30 AM', activity: 'Pranayama & Himalayan Meditation', description: 'Breath of life (Nadi Shodhana, Kapalabhati) and inner stillness.' },
-      { time: '07:30 AM', activity: 'Energizing Morning Asana Practice', description: 'Dynamic Vinyasa Flow integrating alignment and breath.' },
-      { time: '09:15 AM', activity: 'Abundant Tropical Breakfast', description: 'Freshly cut fruits, chia pudding, fresh juices, and warm entrees.' },
-      { time: '11:00 AM', activity: 'Yogic Philosophy / Chakra Workshop', description: 'Practical wisdom for stress-free living and emotional balance.' },
-      { time: '01:00 PM', activity: 'Sattvic Lunch & Leisure', description: 'Delicious, nourishing dishes followed by pool time or massage.' },
-      { time: '04:30 PM', activity: 'Gentle Hatha & Somatic Release', description: 'Deep tissue stretching, fascial release, and yoga therapy.' },
-      { time: '06:00 PM', activity: 'Sunset Meditation or Kirtan Chanting', description: 'Heart-opening devotional singing or silent twilight sitting.' },
-      { time: '07:30 PM', activity: 'Candlelight Dinner', description: 'Nutritious gourmet cuisine with international retreat companions.' }
+      { time: '07:00 to 08:00 AM', activity: 'Pranayama & Meditation', description: 'Centering breathwork and morning silence.' },
+      { time: '08:00 to 09:00 AM', activity: 'Hatha Vinyasa Yoga', description: 'Dynamic, mindful alignment flow.' },
+      { time: '09:30 AM', activity: 'Nutritious Breakfast', description: 'Fresh tropical fruit, smoothie bowls, and porridge.' },
+      { time: '11:00 AM to 12:00 PM', activity: 'Healing Session (Sound / Reiki)', description: 'Tibetan singing bowls and energy alignment.' },
+      { time: '12:30 PM', activity: 'Nutritious Lunch', description: 'Vibrant organic vegetarian and vegan cuisine.' },
+      { time: '04:00 to 05:00 PM', activity: 'Balinese Massage Treatment', description: 'Daily 60-min complimentary full-body traditional massage.' },
+      { time: '07:00 PM', activity: 'Wholesome Dinner', description: 'Nourishing dinner prepared with Ahimsa love.' }
     ],
+    mealTimings: [
+      { meal: 'Breakfast', time: '09:30 AM', notes: 'Fresh tropical fruits, smoothie bowls, chia puddings, herbal tea' },
+      { meal: 'Lunch', time: '12:30 PM – 01:30 PM', notes: 'Nutritious Balinese & Indian Sattvic bowls, fresh steamed greens' },
+      { meal: 'Dinner', time: '07:00 PM – 08:00 PM', notes: 'Warm soul soups, roasted vegetables, curries, and herbal digestion tonics' }
+    ],
+    policy: {
+      reschedule: 'Each student is eligible for one course reschedule free of charge. Once the course has been rescheduled, no further changes to the course dates will be permitted. We provide complete booking flexibility.',
+      airportGuide: 'The best and most convenient way to travel to YogaGarhi Bali is to take a flight to Denpasar Bali Airport (DPS). Denpasar Airport is merely 38 km away from our Ubud retreat campus.',
+      arrivalInfo: 'Campus check-in begins at 12:00 PM on Day 1. If you arrive early, feel free to relax by the swimming pool or enjoy our herbal welcome drinks.'
+    },
     included: [
-      '6 Nights accommodation in luxury garden or pool villa',
-      '3 Nutritious organic meals daily + healthy snacks & juices',
-      'All daily yoga, breathwork, and guided meditation classes',
-      'Sacred Tirta Empul Water Blessing temple excursion',
-      '2x 60-minute Balinese oil massages',
-      'Airport pickup from Denpasar (DPS) Airport',
-      'Full retreat welcome kit, yoga mat, and journal'
+      'Chosen Accommodation (Campus-I or Campus-II)',
+      '3 Times a Day Nutritious and Delicious vegan/Vegetarian Meals',
+      'Mentioned Daily Yoga Classes (Hatha & Vinyasa Flow)',
+      '10:00 AM to 8:00 PM Swimming Pool Access',
+      'Complimentary High-Speed Wi-Fi anywhere in the Campus',
+      '6 Full-Body Complimentary Balinese Massage Treatments (1 per day)',
+      'Sound Healing & Tibetan Singing Bowls Session',
+      'Reiki Healing & Aura Balancing Session',
+      'Sacred Melukat Water Purification Temple Tour (Tirta Empul)',
+      'All necessary items & props for the classes available in the yoga shala',
+      'Unlimited purified drinking water and fresh herbal tea'
     ],
     notIncluded: [
-      'International flight tickets',
-      'Airport drop-off (can be easily organized for $30)',
-      'Travel insurance and personal shopping'
+      'Flight tickets to/from Denpasar Bali (DPS)',
+      'Airport drop-off transfer (can be easily arranged for $25–$30)',
+      'Personal laundry and shopping expenses'
     ],
     accommodation: {
-      title: 'Luxury Eco-Villas in Gianyar / Ubud',
-      description: 'Nestled beside flowing jungle streams, our rooms offer natural wood furnishings, private verandas, silent air conditioning, and serene garden views.',
-      features: ['Private or shared luxury options', 'Organic cotton bedding', 'Balinese outdoor rain shower', 'Infinity swimming pool looking out to jungle']
+      title: 'YogaGarhi Ubud Campus-I & Campus-II',
+      description: 'We offer two tranquil campus sanctuaries in Ubud. Campus-I offers authentic Balinese boutique villas with lush jungle and garden views. Campus-II is our newly opened luxury pool campus featuring contemporary design, private sun balconies, and immediate pool access.',
+      features: [
+        'Air Conditioning & ceiling fan in all rooms',
+        'Attached semi-open Balinese bathroom with hot rainfall shower',
+        'Large outdoor swimming pool open 10:00 AM to 8:00 PM',
+        'Traditional open-air bamboo yoga shala surrounded by nature',
+        'Complimentary High-Speed Wi-Fi throughout the property',
+        'Daily housekeeping and fresh linens'
+      ]
     },
     meals: {
-      title: 'Conscious Culinary Experience',
-      description: 'Clean, anti-inflammatory, vitality-enhancing cuisine prepared with fresh herbs, cold-pressed oils, and vibrant seasonal vegetables.',
-      types: ['Ayurvedic & Sattvic principles', '100% Vegetarian with extensive Vegan & GF dishes', 'Daily fresh young coconuts & detox elixirs']
+      title: 'YogaGarhi Dining – Pure Plant-Based & Ahimsa Nutrition',
+      description: 'At YogaGarhi, we believe that food is a sacred expression of care and one of the most powerful ways to enhance our spirit. What we serve is plant-based meals, prepared with the highest standards of hygiene, cleanliness, and love to support your yoga journey. One of the primary ethical pillars of yoga is Ahimsa, meaning non-violence. By honoring a vegetarian and vegan lifestyle, our kitchen provides clean, easily digestible, and deeply nourishing meals that promote physical vitality and mental clarity.',
+      types: [
+        '100% Nutritious Vegetarian & Vegan Plant-Based Cuisine',
+        'Daily fresh tropical fruits (papaya, dragon fruit, mango, banana)',
+        'Freshly pressed juices, detox elixirs & Balinese herbal Jamu',
+        'Gluten-Free and dairy-free friendly choices upon request'
+      ]
     },
     faqs: [
-      { question: 'What is the Melukat Water Ceremony?', answer: 'Melukat is a sacred Balinese purification ritual performed by a traditional priest at holy natural springs to cleanse negative energy and renew clarity.' },
-      { question: 'Are solo travelers common on this retreat?', answer: 'Over 80% of our retreat guests travel solo. You will find a warm, inclusive, and heartfelt community here.' }
+      { question: 'What is the check-in and check-out time?', answer: 'Check-in is at 12:00 PM on Day 1, and check-out is at 12:00 PM on Day 7.' },
+      { question: 'Is the daily Balinese massage really included every day?', answer: 'Yes! You receive 6 full-body complimentary Balinese massage treatments (one on each full day of your retreat).' },
+      { question: 'What is the Melukat Water Blessing ceremony?', answer: 'Melukat is an ancient Balinese water purification ritual at the sacred Tirta Empul spring temple, guided by a traditional Balinese priest to cleanse emotional burdens and restore clarity.' },
+      { question: 'What is your Course Reschedule Policy?', answer: 'Each student is eligible for one free course reschedule. You can reschedule your retreat dates with prior notice, ensuring complete peace of mind when booking.' },
+      { question: 'How do I arrive at the retreat from the airport?', answer: 'Fly to Denpasar International Airport (DPS), which is 38 km away. We coordinate reliable private driver transfers directly to our Ubud campus.' }
     ]
   },
 
@@ -242,68 +524,220 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
     locationStateOrCountry: 'Indonesia',
     durationDays: 14,
     durationNights: 13,
-    title: '14 Day Deep Healing & Mind-Body Transformation Retreat in Bali',
-    tagline: 'An immersive two-week life transformation combining ancient yogic sadhana, holistic cleansing, and Balinese mysticism.',
+    title: '14 DAYS & 13 NIGHTS YOGA RETREAT IN UBUD BALI',
+    tagline: 'Step into your zen zone through a profound two-week life transformation in Ubud amidst deep jungle tranquility and authentic sadhana.',
     badge: 'Deep Immersion',
     seoTitle: '14 Day Bali Yoga Retreat | Two Week Life Transformation | YogaGarhi',
-    seoDescription: 'Experience true metamorphosis on our 14 Day Yoga & Healing Retreat in Ubud, Bali. Two full weeks of multi-style yoga, Ayurvedic bodywork, temple pilgrimages, and inner peace.',
-    keywords: ['14 day yoga retreat bali', '2 week yoga retreat ubud', 'deep healing retreat bali', 'transformational yoga retreat bali', 'long term yoga retreat'],
+    seoDescription: 'Experience complete mind-body transformation with our 14 Days & 13 Nights Yoga Retreat in Ubud Bali. Daily Hatha Vinyasa, 12 Balinese massages, sound healing, Reiki, and temple pilgrimages.',
+    keywords: ['14 day yoga retreat bali', 'two week yoga retreat ubud', 'long term yoga retreat bali', '14 days 13 nights yoga retreat bali', 'deep healing retreat ubud'],
     heroImage: 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=1200&q=80',
     heroImageAlt: 'Serene yoga shala in the rice fields of Bali',
-    priceShared: '$1,390',
-    pricePrivate: '$1,850',
-    earlyBirdSaving: '$200',
+    priceShared: '$1,250',
+    pricePrivate: '$1,590',
+    earlyBirdSaving: '$360',
     overview: [
-      'Two weeks in Bali offers the rare luxury of time: time for the nervous system to fully downshift, time for your physical practice to break through old barriers, and time for true mental renewal.',
-      'Our 14-day retreat allows you to delve into advanced pranayama, master asana alignment, enjoy multiple Ayurvedic and Balinese body treatments, and build mindful habits that remain with you for a lifetime.'
+      'Two weeks in Bali gives your mind, nervous system, and body the luxury of time – allowing you to truly decompress, heal chronic fatigue, and establish a profound yoga and meditation habit that lasts forever.',
+      'Our 14-day retreat in Ubud Bali features 12 complimentary full-body Balinese massages, multiple Sound Healing and Reiki sessions, deep Himalayan pranayama, alignment masterclasses, sacred water temple ceremonies, and exquisite plant-based dining.'
     ],
     highlights: [
-      '14 days of comprehensive yoga instruction across Hatha, Vinyasa, and Ashtanga',
-      '4x Therapeutic massages and Ayurvedic treatments',
-      'Two sacred cultural excursions: Besakih Mother Temple and hidden jungle waterfalls',
-      'Personalized 1-on-1 yoga and lifestyle consultation with lead yogacharya',
-      'Comprehensive workshops on Yoga Nidra, breath mechanics, and somatic release',
-      '13 nights peaceful accommodation in our quiet Ubud sanctuary',
-      'Three daily chef-prepared organic meals tailored to your dosha'
+      'Two full weeks of daily Hatha & Vinyasa Flow yoga classes',
+      '12 Full-Body Complimentary Balinese Massage Treatments (regular spa care)',
+      'Multiple Sound Healing & Tibetan Singing Bowls energy alignment sessions',
+      'Reiki Healing & Chakra purification therapies',
+      'Sacred Melukat Water Temple Excursion (Tirta Empul) & Waterfall Pilgrimage',
+      '3 Daily chef-prepared organic plant-based meals based on Ahimsa',
+      '10:00 AM to 8:00 PM Swimming Pool Access & high-speed Wi-Fi throughout'
+    ],
+    campusPricing: [
+      {
+        roomType: 'Private Room in Campus-I',
+        campus: 'Deluxe Garden Villa',
+        regularPrice: '$1,950 USD',
+        discountedPrice: '$1,590 USD',
+        popular: true,
+        features: [
+          'King / Queen Bed with plush luxury mattress',
+          'Silent Air Conditioning & ceiling fan',
+          'Ensuite semi-open Balinese bathroom with hot rainfall shower',
+          'Private balcony overlooking tropical palm gardens',
+          'Daily housekeeping, fresh organic towels & linens',
+          'Complimentary High-Speed Wi-Fi anywhere in Campus'
+        ]
+      },
+      {
+        roomType: 'Twin Shared Room in Campus-I',
+        campus: 'Twin Share Comfort',
+        regularPrice: '$1,550 USD',
+        discountedPrice: '$1,250 USD',
+        features: [
+          'Two comfortable single beds for two students (same gender)',
+          'Ensuite spacious bathroom with hot water shower',
+          'Silent Air Conditioning & tropical garden view',
+          'Safety locker, wardrobe & luggage storage',
+          'Ideal for two friends or solo travelers seeking shared value',
+          'Complimentary High-Speed Wi-Fi anywhere in Campus'
+        ]
+      },
+      {
+        roomType: 'Private Room in Campus-II',
+        campus: 'New Luxury Pool Campus',
+        regularPrice: '$1,750 USD',
+        discountedPrice: '$1,390 USD',
+        features: [
+          'Brand new boutique private room overlooking swimming pool',
+          'Modern Balinese design with teakwood finishes',
+          'Silent Air Conditioning & luxury ensuite bath',
+          'Writing desk, reading lounge & private terrace',
+          'Direct steps to outdoor swimming pool and sun loungers',
+          'Complimentary High-Speed Wi-Fi anywhere in Campus'
+        ]
+      }
+    ],
+    dayByDaySchedule: [
+      {
+        dayNumber: 1,
+        dayLabel: 'Day 1 Schedule',
+        title: 'Check-In, Welcome & Balinese Massage',
+        items: [
+          { time: '12:00 PM', activity: 'Check in & Fresh Welcome Young Coconut' },
+          { time: '12:30 PM', activity: 'Delicious Plant-Based Lunch' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Full-Body Complimentary Balinese Massage Treatment' },
+          { time: '05:30 PM – 06:30 PM', activity: 'Welcome Circle & Twilight Gentle Stretch' },
+          { time: '07:00 PM', activity: 'Nutritious Vegetarian / Vegan Dinner' }
+        ]
+      },
+      {
+        dayNumber: 2,
+        dayLabel: 'Day 2 Schedule',
+        title: 'Hatha Flow, Sound Healing & Spa Care',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama Breathwork & Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Hatha Vinyasa Yoga Flow' },
+          { time: '09:30 AM', activity: 'Nutritious & Delicious Tropical Breakfast' },
+          { time: '11:00 AM – 12:00 PM', activity: 'Sound Healing Session (Tibetan Singing Bowls)' },
+          { time: '12:30 PM', activity: 'Plant-Based Organic Lunch' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Full-Body Complimentary Balinese Massage Treatment' },
+          { time: '07:00 PM', activity: 'Wholesome Sattvic Dinner' }
+        ]
+      },
+      {
+        dayNumber: 3,
+        dayLabel: 'Day 3 Schedule',
+        title: 'Reiki Energy Healing & Yin Yoga',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama Breathwork & Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Hatha Vinyasa Yoga Flow' },
+          { time: '09:30 AM', activity: 'Nourishing Tropical Breakfast' },
+          { time: '11:00 AM – 12:00 PM', activity: 'Reiki Healing & Energy Balancing' },
+          { time: '12:30 PM', activity: 'Nutritious Plant-Based Lunch' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Full-Body Complimentary Balinese Massage Treatment' },
+          { time: '05:30 PM – 06:30 PM', activity: 'Restorative Yin Yoga' },
+          { time: '07:00 PM', activity: 'Nutritious Dinner' }
+        ]
+      },
+      {
+        dayNumber: 4,
+        dayLabel: 'Day 4 Schedule',
+        title: 'Sacred Water Temple Excursion (Tirta Empul)',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Pranayama & Gentle Stretch' },
+          { time: '08:00 AM', activity: 'Hearty Breakfast' },
+          { time: '09:30 AM – 01:30 PM', activity: 'Sacred Melukat Water Purification Temple Tour' },
+          { time: '01:30 PM', activity: 'Fresh Lunch at Sanctuary' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Full-Body Complimentary Balinese Massage Treatment' },
+          { time: '07:00 PM', activity: 'Nutritious Dinner' }
+        ]
+      },
+      {
+        dayNumber: 5,
+        dayLabel: 'Days 5–13',
+        title: 'Deep Sadhana, Sound Baths, Massages & Waterfall Excursions',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Advanced Pranayama Breathwork & Silent Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Hatha Vinyasa Yoga Alignment & Sequencing' },
+          { time: '09:30 AM', activity: 'Abundant Tropical Breakfast' },
+          { time: '11:00 AM – 12:00 PM', activity: 'Alternating Sound Baths, Reiki & Philosophy Workshops' },
+          { time: '12:30 PM', activity: 'Gourmet Organic Plant-Based Lunch' },
+          { time: '04:00 PM – 05:00 PM', activity: 'Daily Complimentary Full-Body Balinese Massage' },
+          { time: '05:30 PM – 06:30 PM', activity: 'Sunset Yin Yoga / Yoga Nidra / Candlelight Kirtan' },
+          { time: '07:00 PM', activity: 'Wholesome Community Dinner' }
+        ]
+      },
+      {
+        dayNumber: 14,
+        dayLabel: 'Day 14 Schedule',
+        title: 'Closing Puja, Blessings & Check-Out',
+        items: [
+          { time: '07:00 AM – 08:00 AM', activity: 'Final Celebration Pranayama & Meditation' },
+          { time: '08:00 AM – 09:00 AM', activity: 'Heart-Opening Hatha Yoga' },
+          { time: '09:30 AM', activity: 'Celebration Tropical Breakfast' },
+          { time: '11:00 AM', activity: 'Closing Fire Blessing & Certificate Presentation' },
+          { time: '12:00 PM', activity: 'Check out with lifelong transformation' }
+        ]
+      }
     ],
     schedule: [
-      { time: '06:15 AM', activity: 'Japa & Morning Silent Meditation', description: 'Traditional mantra meditation as the jungle awakens.' },
-      { time: '07:00 AM', activity: 'Masterclass Asana & Alignment', description: 'Multi-style practice with personalized hands-on adjustments.' },
-      { time: '09:00 AM', activity: 'Gourmet Organic Breakfast', description: 'Energizing fresh tropical fare and specialty teas.' },
-      { time: '11:00 AM', activity: 'Interactive Yogic Wisdom Session', description: 'Patanjali Yoga Sutras, lifestyle medicine, and energetic anatomy.' },
-      { time: '01:00 PM', activity: 'Sattvic Lunch & Quiet Integration', description: 'Rest, read in garden hammocks, or take a refreshing swim.' },
-      { time: '04:00 PM', activity: 'Pranayama Science & Restorative Yoga', description: 'Advanced breath control and profound nervous system healing.' },
-      { time: '06:00 PM', activity: 'Sunset Sound Bath or Fire Ceremony', description: 'Sacred ceremonies to release old emotional blocks.' },
-      { time: '07:30 PM', activity: 'Nutritious Community Dinner', description: 'Wholesome dinner cooked with love and mindful intention.' }
+      { time: '07:00 to 08:00 AM', activity: 'Pranayama & Meditation', description: 'Deep breathwork and Himalayan stillness.' },
+      { time: '08:00 to 09:00 AM', activity: 'Hatha Vinyasa Yoga', description: 'Dynamic, mindful alignment practice.' },
+      { time: '09:30 AM', activity: 'Nutritious Breakfast', description: 'Fresh tropical fruit, smoothie bowls, and porridge.' },
+      { time: '11:00 AM to 12:00 PM', activity: 'Healing Session (Sound / Reiki)', description: 'Tibetan singing bowls and energy alignment.' },
+      { time: '12:30 PM', activity: 'Nutritious Lunch', description: 'Vibrant organic vegetarian and vegan cuisine.' },
+      { time: '04:00 to 05:00 PM', activity: 'Balinese Massage Treatment', description: 'Daily 60-min complimentary full-body traditional massage.' },
+      { time: '07:00 PM', activity: 'Wholesome Dinner', description: 'Nourishing dinner prepared with Ahimsa love.' }
     ],
+    mealTimings: [
+      { meal: 'Breakfast', time: '09:30 AM', notes: 'Fresh tropical fruits, smoothie bowls, chia puddings, herbal tea' },
+      { meal: 'Lunch', time: '12:30 PM – 01:30 PM', notes: 'Nutritious Balinese & Indian Sattvic bowls, fresh steamed greens' },
+      { meal: 'Dinner', time: '07:00 PM – 08:00 PM', notes: 'Warm soul soups, roasted vegetables, curries, and herbal digestion tonics' }
+    ],
+    policy: {
+      reschedule: 'Each student is eligible for one course reschedule free of charge. Once rescheduled, your dates are firmly reserved for maximum flexibility.',
+      airportGuide: 'The best and most convenient way to travel to YogaGarhi Bali is to take a flight to Denpasar Bali Airport (DPS). Denpasar Airport is merely 38 km away from our Ubud retreat campus.',
+      arrivalInfo: 'Campus check-in begins at 12:00 PM on Day 1. If you arrive early, feel free to relax by the swimming pool or enjoy our herbal welcome drinks.'
+    },
     included: [
-      '13 Nights accommodation in premium villa',
-      'All meals (3x daily gourmet organic breakfast, lunch, and dinner)',
-      'Daily morning & afternoon yoga and meditation sessions',
-      '4x 60-minute Balinese and Ayurvedic massages',
-      'Full day cultural excursions to temples, rice terraces, and waterfalls',
-      'Two-way airport transfers (DPS Airport pickup & drop-off)',
-      '1-on-1 Personalized Yogic lifestyle consultation',
-      'Welcome pack, yoga mat, journals, and reusable copper water bottle'
+      'Chosen Accommodation (Campus-I or Campus-II)',
+      '3 Times a Day Nutritious and Delicious vegan/Vegetarian Meals',
+      'Mentioned Daily Yoga Classes across 14 Days',
+      '10:00 AM to 8:00 PM Swimming Pool Access',
+      'Complimentary High-Speed Wi-Fi anywhere in the Campus',
+      '12 Full-Body Complimentary Balinese Massage Treatments',
+      'Multiple Sound Healing & Reiki Energy sessions',
+      'Two Cultural Excursions (Water Temple & Jungle Waterfall Pilgrimage)',
+      'All necessary yoga props available in the yoga shala',
+      'Round-trip Airport Pickup and Drop-off included'
     ],
     notIncluded: [
-      'Flight tickets to Bali',
-      'Visa fees (Visa on Arrival is approx $35 USD)',
-      'Personal medical expenses'
+      'Flight tickets to/from Denpasar Bali (DPS)',
+      'Personal laundry and shopping expenses'
     ],
     accommodation: {
-      title: 'Boutique Ashram-Style Resort Living',
-      description: 'Spacious private or shared suites designed with sustainable materials, quiet air conditioning, high-speed fiber internet, and panoramic views of tropical greenery.',
-      features: ['Private terrace with hammock', 'Ensuite stone bathtub and rain shower', 'Daily laundry service available', 'Swimming pool & meditation gardens']
+      title: 'YogaGarhi Ubud Campus-I & Campus-II',
+      description: 'Experience your two-week transformation in complete comfort. Choose between Campus-I (Deluxe Garden Villa with traditional Balinese stonework) and Campus-II (New Luxury Pool Campus with modern aesthetic, pool views, and expansive sun deck).',
+      features: [
+        'Air Conditioning & ceiling fan in all rooms',
+        'Attached semi-open Balinese bathroom with hot rainfall shower',
+        'Large outdoor swimming pool open 10:00 AM to 8:00 PM',
+        'Traditional open-air bamboo yoga shala surrounded by nature',
+        'Complimentary High-Speed Wi-Fi throughout the property',
+        'Daily housekeeping and fresh linens'
+      ]
     },
     meals: {
-      title: 'Two-Week Detox & Vitality Culinary Plan',
-      description: 'Scientifically crafted to reduce inflammation, improve gut microbiome health, and elevate energy levels without feeling restricted.',
-      types: ['Sattvic vegetarian & vegan culinary art', 'Nutritional consultation support', 'Custom dietary modifications upon request']
+      title: 'YogaGarhi Dining – Pure Plant-Based & Ahimsa Nutrition',
+      description: 'At YogaGarhi, we believe that food is a sacred expression of care and one of the most powerful ways to enhance our spirit. What we serve is plant-based meals, prepared with the highest standards of hygiene, cleanliness, and love to support your yoga journey. One of the primary ethical pillars of yoga is Ahimsa, meaning non-violence. By honoring a vegetarian and vegan lifestyle, our kitchen provides clean, easily digestible, and deeply nourishing meals that promote physical vitality and mental clarity.',
+      types: [
+        '100% Nutritious Vegetarian & Vegan Plant-Based Cuisine',
+        'Daily fresh tropical fruits (papaya, dragon fruit, mango, banana)',
+        'Freshly pressed juices, detox elixirs & Balinese herbal Jamu',
+        'Gluten-Free and dairy-free friendly choices upon request'
+      ]
     },
     faqs: [
-      { question: 'Do I get free time during the 14 days?', answer: 'Yes, Sundays and select afternoons are intentionally left open for personal exploration, visits to Ubud market, or simple quiet rest.' },
-      { question: 'Can I do this retreat if I have physical injuries?', answer: 'Absolutely. Our teachers assess your mobility on Day 1 and tailor props, adjustments, and pose variations specifically for your body.' }
+      { question: 'What is the check-in and check-out time?', answer: 'Check-in is at 12:00 PM on Day 1, and check-out is at 12:00 PM on Day 14.' },
+      { question: 'How many massages are included in 14 days?', answer: 'You receive 12 full-body complimentary Balinese massages during your two-week stay.' },
+      { question: 'Is round-trip airport transfer included?', answer: 'Yes, for the 14-day retreat, both airport pickup and airport drop-off from Denpasar (DPS) are included.' },
+      { question: 'What is your Course Reschedule Policy?', answer: 'Each student is eligible for one free course reschedule with prior notice.' }
     ]
   },
 
