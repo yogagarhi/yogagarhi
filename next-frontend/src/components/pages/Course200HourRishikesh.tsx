@@ -1230,38 +1230,6 @@ export default function Course200HourRishikesh() {
                       </div>
                     </div>
                   </div>
-
-                  {/* Highlighted Refund Policy Banner */}
-                  <div className="mt-6 pt-6 border-t border-border/20">
-                    <div className="relative overflow-hidden rounded-2xl border-2 border-amber-500/30 bg-gradient-to-br from-amber-500/[0.08] via-amber-500/[0.03] to-background p-6 sm:p-8 flex flex-col md:flex-row items-center md:items-start gap-6 shadow-md shadow-amber-500/5">
-                      {/* Decorative glowing gradient blur */}
-                      <div className="absolute -top-10 -right-10 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
-                      <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-                      
-                      {/* Gold Badge Icon */}
-                      <div className="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-500/40 flex items-center justify-center flex-shrink-0 shadow-lg shadow-amber-500/10 animate-float-gentle">
-                        <svg className="w-8 h-8 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                          <path d="m9 12 2 2 4-4" />
-                        </svg>
-                      </div>
-                      
-                      <div className="space-y-3 text-center md:text-left flex-1">
-                        <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
-                          <h4 className="font-heading font-extrabold text-foreground text-base sm:text-lg">
-                            A written refund policy, before you pay
-                          </h4>
-                          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-500 text-white text-[10px] font-black uppercase tracking-wider shadow-sm">
-                            <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                            100% Risk Free
-                          </span>
-                        </div>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          If you arrive and feel within the first <strong className="font-extrabold text-foreground underline decoration-amber-500 decoration-2 underline-offset-4">2 days</strong> that this is not the right place for you, we <strong className="font-extrabold text-amber-600 dark:text-amber-500 bg-amber-500/10 px-1.5 py-0.5 rounded">refund 100%</strong> — in writing, no arguments. We would rather lose a fee than keep an unhappy student.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -4584,13 +4552,6 @@ export default function Course200HourRishikesh() {
                   placeholder="Tell us about your interest in yoga teacher training..."
                   className="min-h-[120px]"
                 />
-              </div>
-
-              {/* Trust Badge */}
-              <div className="bg-accent/20 rounded-lg p-4">
-                <p className="text-sm text-foreground">
-                  We Trust The Depth Of What We Offer. If, After The First Day, You Feel This Journey Is Not Meant For You, We Will Offer A 100% Full Refund With Complete Respect.
-                </p>
               </div>
 
               <Button type="submit" className="w-full" size="lg">

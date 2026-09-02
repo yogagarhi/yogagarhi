@@ -110,9 +110,6 @@ export default function YogaAnatomyMastery() {
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                   There is no perfect moment to begin learning anatomy. You simply have to start the journey.
                 </p>
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  If within 7 days you feel this course is not for you, let us know and we’ll happily offer you a full refund.
-                </p>
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-medium">
                   Start your journey with Yogagarhi today.
                 </p>

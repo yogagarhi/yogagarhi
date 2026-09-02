@@ -26,9 +26,6 @@ export default function CTASection() {
               </a>
             </Button>
           </div>
-          <p className="mt-8 text-sm opacity-80">
-            We trust the depth of what we offer. 100% refund if not satisfied after the first day.
-          </p>
         </div>
       </div>
     </section>

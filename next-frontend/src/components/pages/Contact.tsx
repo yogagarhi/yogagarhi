@@ -134,11 +134,6 @@ export default function Contact() {
               <p className="text-lg text-muted-foreground">
                 Connect with us and begin your journey of transformation. Fill out the form and we'll guide you every step of the way.
               </p>
-              <div className="bg-accent/20 rounded-lg p-6">
-                <p className="text-foreground font-medium">
-                  We Trust The Depth Of What We Offer. If, After The First Day, You Feel This Journey Is Not Meant For You, We Will Offer A 100% Full Refund With Complete Respect.
-                </p>
-              </div>
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <p className="text-muted-foreground">
