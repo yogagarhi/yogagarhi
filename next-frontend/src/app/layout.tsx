@@ -92,11 +92,13 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code', // Replace with actual code
-    // yandex: 'your-yandex-verification-code',
-    // bing: 'your-bing-verification-code',
-  },
+  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? {
+        verification: {
+          google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+        },
+      }
+    : {}),
 };
 
 import { Providers } from "@/components/Providers";
@@ -113,68 +115,161 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#0f766e" />
-        {/* Organization Schema */}
+        {/* Unified Structured Data (EducationalOrganization, LocalBusiness, WebSite) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Yogagarhi",
-              "url": "https://www.yogagarhi.com/",
-              "logo": getCloudinaryUrl("about-yoga-3"),
-              "sameAs": [
-                "https://instagram.com/yogagarhi",
-                "https://facebook.com/yogagarhi",
-                "https://youtube.com/@yogagarhi",
-                "https://id.pinterest.com/yogagarhi"
-              ]
-            })
-          }}
-        />
-        {/* LocalBusiness Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Yogagarhi",
-              "image": getCloudinaryUrl("about-yoga-3"),
-              "@id": "https://www.yogagarhi.com/#localbusiness",
-              "url": "https://www.yogagarhi.com/",
-              "telephone": "+91-7895350563",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Ds madangan kaja, Desa petak, Petak kaja, Kec. Gianyar, Kabupaten Gianyar, Bali, Indonesia",
-                "addressLocality": "Bali",
-                "postalCode": "80515",
-                "addressCountry": "ID"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 8.4649127,
-                "longitude": 115.3258379
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday"
-                ],
-                "opens": "00:00",
-                "closes": "23:59"
-              },
-              "sameAs": [
-                "https://youtube.com/@yogagarhi",
-                "https://in.pinterest.com/yogagarhi",
-                "https://instagram.com/yogagarhi",
-                "https://facebook.com/yogagarhi"
+              "@graph": [
+                {
+                  "@type": "EducationalOrganization",
+                  "@id": "https://www.yogagarhi.com/#organization",
+                  "name": "YogaGarhi",
+                  "url": "https://www.yogagarhi.com",
+                  "logo": getCloudinaryUrl("about-yoga-3"),
+                  "image": "https://www.yogagarhi.com/og-image.jpg",
+                  "description": "Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training school and spiritual ashram in Ubud Bali & Rishikesh India.",
+                  "telephone": "+91-7895350563",
+                  "email": "yogagarhi@gmail.com",
+                  "priceRange": "$$",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Ds madangan kaja, Desa petak, Petak kaja, Kec. Gianyar",
+                    "addressLocality": "Gianyar",
+                    "addressRegion": "Bali",
+                    "postalCode": "80515",
+                    "addressCountry": "ID"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 8.4649127,
+                    "longitude": 115.3258379
+                  },
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.9",
+                    "reviewCount": "195",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                  },
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+91-7895350563",
+                    "contactType": "customer service",
+                    "areaServed": "Worldwide",
+                    "availableLanguage": ["English", "Hindi", "Indonesian"]
+                  },
+                  "sameAs": [
+                    "https://www.instagram.com/yogagarhi",
+                    "https://www.facebook.com/yogagarhi",
+                    "https://www.youtube.com/@yogagarhi",
+                    "https://in.pinterest.com/yogagarhi"
+                  ],
+                  "knowsAbout": [
+                    "https://en.wikipedia.org/wiki/Hatha_yoga",
+                    "https://en.wikipedia.org/wiki/Ashtanga_vinyasa_yoga",
+                    "https://en.wikipedia.org/wiki/Pranayama",
+                    "https://en.wikipedia.org/wiki/Yoga_Sutras_of_Patanjali",
+                    "https://en.wikipedia.org/wiki/Yoga_Alliance"
+                  ],
+                  "slogan": "Authentic Himalayan Yoga Teacher Training in Bali & Rishikesh"
+                },
+                {
+                  "@type": "LocalBusiness",
+                  "@id": "https://www.yogagarhi.com/#localbusiness-bali",
+                  "name": "YogaGarhi Ashram & Yoga School - Bali",
+                  "image": getCloudinaryUrl("about-yoga-3"),
+                  "url": "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali",
+                  "telephone": "+91-7895350563",
+                  "priceRange": "$$",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Ds madangan kaja, Desa petak, Petak kaja, Kec. Gianyar",
+                    "addressLocality": "Gianyar",
+                    "addressRegion": "Bali",
+                    "postalCode": "80515",
+                    "addressCountry": "ID"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 8.4649127,
+                    "longitude": 115.3258379
+                  },
+                  "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                      "Saturday",
+                      "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                  },
+                  "sameAs": [
+                    "https://www.youtube.com/@yogagarhi",
+                    "https://in.pinterest.com/yogagarhi",
+                    "https://www.instagram.com/yogagarhi",
+                    "https://www.facebook.com/yogagarhi"
+                  ]
+                },
+                {
+                  "@type": "LocalBusiness",
+                  "@id": "https://www.yogagarhi.com/#localbusiness-rishikesh",
+                  "name": "YogaGarhi Yoga School - Rishikesh",
+                  "image": getCloudinaryUrl("about-yoga-3"),
+                  "url": "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh",
+                  "telephone": "+91-7895350563",
+                  "priceRange": "$$",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Tapovan, Badrinath Rd",
+                    "addressLocality": "Rishikesh",
+                    "addressRegion": "Uttarakhand",
+                    "postalCode": "249192",
+                    "addressCountry": "IN"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 30.1313,
+                    "longitude": 78.3245
+                  },
+                  "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday",
+                      "Saturday",
+                      "Sunday"
+                    ],
+                    "opens": "00:00",
+                    "closes": "23:59"
+                  },
+                  "sameAs": [
+                    "https://www.youtube.com/@yogagarhi",
+                    "https://in.pinterest.com/yogagarhi",
+                    "https://www.instagram.com/yogagarhi",
+                    "https://www.facebook.com/yogagarhi"
+                  ]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.yogagarhi.com/#website",
+                  "url": "https://www.yogagarhi.com",
+                  "name": "YogaGarhi",
+                  "description": "Authentic Yoga Teacher Training & Yoga Retreats in Bali & Rishikesh",
+                  "publisher": {
+                    "@id": "https://www.yogagarhi.com/#organization"
+                  },
+                  "inLanguage": "en-US"
+                }
               ]
             })
           }}

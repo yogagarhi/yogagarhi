@@ -32,8 +32,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const title = `${loc.name} Yoga Retreats: 3, 7 & 14 Day Wellness Holidays | YogaGarhi`;
-  const description = `Find the best Yoga Retreat in ${loc.fullName}. Choose from 3-day weekend resets, 7-day rejuvenating retreats, or 14-day deep healing immersions with daily massages and organic meals.`;
+  const titles: Record<string, string> = {
+    bali: "Yoga Retreat in Bali | 3, 7 & 14 Day Ubud Wellness Trips",
+    rishikesh: "Yoga Retreat in Rishikesh | 3, 7 & 14 Day Himalayan Escape",
+    warkala: "Yoga Retreat in Warkala | Beach & Ayurveda Holidays Kerala",
+  };
+
+  const descriptions: Record<string, string> = {
+    bali: "Escape to tranquil Ubud with 3, 7 & 14-day yoga retreats in Bali. Daily Balinese massage, sound baths, multi-style yoga & vegan dining. Check dates & rates!",
+    rishikesh: "Experience peaceful yoga retreats in Rishikesh along the sacred Ganges. Daily meditation, Ayurvedic therapy & Sattvic meals. View dates and book your retreat!",
+    warkala: "Unwind with oceanfront yoga retreats in Warkala, Kerala. Authentic Ayurvedic healing, beach yoga sessions & sunset meditation. Book your wellness holiday now!",
+  };
+
+  const title = titles[loc.key] || `${loc.name} Yoga Retreats | YogaGarhi`;
+  const description = descriptions[loc.key] || `Find the best Yoga Retreat in ${loc.fullName} with YogaGarhi.`;
   const canonicalUrl = `https://www.yogagarhi.com/retreat/${loc.key}`;
 
   return {

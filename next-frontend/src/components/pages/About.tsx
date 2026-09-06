@@ -220,15 +220,15 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="h-48 rounded-2xl overflow-hidden relative">
-                  <Image src={gallery1} alt="Ashram" fill className="object-cover" />
+                  <Image src={gallery1} alt="YogaGarhi Ashram grounds and accommodation" fill className="object-cover" />
                 </div>
                 <div className="h-32 rounded-2xl overflow-hidden relative">
-                  <Image src={gallery2} alt="Practice" fill className="object-cover" />
+                  <Image src={gallery2} alt="Students practicing authentic yoga postures and alignment" fill className="object-cover" />
                 </div>
               </div>
               <div className="pt-8">
                 <div className="h-64 rounded-2xl overflow-hidden relative">
-                  <Image src={gallery3} alt="Environment" fill className="object-cover" />
+                  <Image src={gallery3} alt="Serene natural ashram environment for teacher training" fill className="object-cover" />
                 </div>
               </div>
             </div>

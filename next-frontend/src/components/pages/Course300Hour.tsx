@@ -4418,7 +4418,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
           <div className="absolute inset-0">
             <Image
               src={heroImage}
-              alt=""
+              alt="300 Hour Yoga Teacher Training in Bali - YogaGarhi"
               fill
               className="object-cover"
             />
@@ -4599,16 +4599,17 @@ This is not a transactional relationship — it is a lifelong connection.`}
             <div className="px-5 sm:px-6 py-4 space-y-3 overflow-y-auto max-h-[72vh]">
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">Name <span className="text-destructive">*</span></label>
-                <input type="text" value={enrollForm.name} onChange={(e) => setEnrollForm(prev => ({ ...prev, name: e.target.value }))} placeholder="Enter your full name" className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
+                <input type="text" aria-label="Full Name" value={enrollForm.name} onChange={(e) => setEnrollForm(prev => ({ ...prev, name: e.target.value }))} placeholder="Enter your full name" className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
               </div>
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">Email <span className="text-destructive">*</span></label>
-                <input type="email" value={enrollForm.email} onChange={(e) => setEnrollForm(prev => ({ ...prev, email: e.target.value }))} placeholder="you@example.com" className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
+                <input type="email" aria-label="Email Address" value={enrollForm.email} onChange={(e) => setEnrollForm(prev => ({ ...prev, email: e.target.value }))} placeholder="you@example.com" className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
               </div>
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">Contact / WhatsApp No. <span className="text-destructive">*</span></label>
                 <div className="flex gap-2">
                   <select
+                    aria-label="Country Code"
                     value={enrollForm.countryCode}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))}
                     className="w-24 px-2 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4621,13 +4622,13 @@ This is not a transactional relationship — it is a lifelong connection.`}
                       </option>
                     ))}
                   </select>
-                  <input type="tel" value={enrollForm.contact} onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))} placeholder="Phone number" className="flex-1 px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
+                  <input type="tel" aria-label="Phone number" value={enrollForm.contact} onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))} placeholder="Phone number" className="flex-1 px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">Course <span className="text-destructive">*</span></label>
-                  <select value={enrollForm.courseName} onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
+                  <select aria-label="Select Course" value={enrollForm.courseName} onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
                     <option value="">Select</option>
                     <option value="100 Hour Yoga Teacher Training Course in Bali">100 Hr YTTC</option>
                     <option value="200 Hour Yoga Teacher Training Course in Bali">200 Hr YTTC</option>
@@ -4636,7 +4637,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                 </div>
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">Date <span className="text-destructive">*</span></label>
-                  <select value={enrollForm.courseDate} onChange={(e) => setEnrollForm(prev => ({ ...prev, courseDate: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
+                  <select aria-label="Select Date" value={enrollForm.courseDate} onChange={(e) => setEnrollForm(prev => ({ ...prev, courseDate: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
                     <option value="">Choose</option>
                     {courseDates.map((date) => (<option key={date} value={date}>{date}</option>))}
                   </select>
@@ -4645,7 +4646,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">Room <span className="text-destructive">*</span></label>
-                  <select value={enrollForm.accommodation} onChange={(e) => setEnrollForm(prev => ({ ...prev, accommodation: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
+                  <select aria-label="Select Room" value={enrollForm.accommodation} onChange={(e) => setEnrollForm(prev => ({ ...prev, accommodation: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
                     <option value="">Select</option>
                     <option value="Private Room">Private Room</option>
                     <option value="Double Sharing">Double Sharing</option>
@@ -4654,7 +4655,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                 </div>
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">Gender <span className="text-destructive">*</span></label>
-                  <select value={enrollForm.gender} onChange={(e) => setEnrollForm(prev => ({ ...prev, gender: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
+                  <select aria-label="Select Gender" value={enrollForm.gender} onChange={(e) => setEnrollForm(prev => ({ ...prev, gender: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
                     <option value="">Select</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
@@ -4664,11 +4665,11 @@ This is not a transactional relationship — it is a lifelong connection.`}
               </div>
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">Country <span className="text-destructive">*</span></label>
-                <input type="text" value={enrollForm.country} onChange={(e) => setEnrollForm(prev => ({ ...prev, country: e.target.value }))} placeholder="Your country" className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
+                <input type="text" aria-label="Country" value={enrollForm.country} onChange={(e) => setEnrollForm(prev => ({ ...prev, country: e.target.value }))} placeholder="Your country" className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm" />
               </div>
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">How did you hear about us? <span className="text-destructive">*</span></label>
-                <select value={enrollForm.source} onChange={(e) => setEnrollForm(prev => ({ ...prev, source: e.target.value }))} className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
+                <select aria-label="How did you hear about us" value={enrollForm.source} onChange={(e) => setEnrollForm(prev => ({ ...prev, source: e.target.value }))} className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
                   <option value="">Choose</option>
                   <option value="Google Search">Google Search</option>
                   <option value="Social Media">Social Media</option>
@@ -4678,7 +4679,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
               </div>
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">Message <span className="text-muted-foreground font-normal">(optional)</span></label>
-                <textarea value={enrollForm.message} onChange={(e) => setEnrollForm(prev => ({ ...prev, message: e.target.value }))} placeholder="Any questions or additional info..." rows={3} className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none text-sm" />
+                <textarea aria-label="Optional message" value={enrollForm.message} onChange={(e) => setEnrollForm(prev => ({ ...prev, message: e.target.value }))} placeholder="Any questions or additional info..." rows={3} className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none text-sm" />
               </div>
             </div>
 

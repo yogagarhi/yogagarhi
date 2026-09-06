@@ -18,6 +18,8 @@ const explore = [
   { name: "Blogs", href: "/blogs" },
   { name: "Contact", href: "/contact-us" },
   { name: "Apply Now", href: "/apply-now" },
+  { name: "Terms & Conditions", href: "/terms-and-conditions" },
+  { name: "Refund Policy", href: "/refund-policy" },
 ];
 
 // Animated Lotus SVG
@@ -186,6 +188,13 @@ export default function Footer() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-primary-foreground/40">
             <p>© {new Date().getFullYear()} YogaGarhi. All rights reserved.</p>
+            <div className="flex items-center gap-4 text-xs">
+              <Link href="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link>
+              <span>•</span>
+              <Link href="/terms-and-conditions" className="hover:text-primary-foreground transition-colors">Terms & Conditions</Link>
+              <span>•</span>
+              <Link href="/refund-policy" className="hover:text-primary-foreground transition-colors">Refund Policy</Link>
+            </div>
             <div className="flex items-center gap-1">
               <Sparkles className="h-3 w-3" />
               <span>Transforming lives through yoga</span>

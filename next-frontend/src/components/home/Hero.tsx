@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import { Button } from "@/components/ui/button";
 import { Clock, Sparkles } from "lucide-react";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
@@ -6,17 +6,24 @@ import { useYogicEnergy } from "@/components/YogicEnergyDialog";
 import { useBooking } from "@/components/BookingDialog";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
 
+import Image from "next/image";
+
 export default function Hero() {
   const { setShowQuickEnquiry } = useQuickEnquiry();
   const { setShowYogicEnergy } = useYogicEnergy();
   const { openBooking } = useBooking();
   return (
     <section className="relative min-h-[90vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32 pb-20">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${getCloudinaryUrl('/hero-yoga-group.jpg')})` }}
-      >
+      {/* Background Image with Priority Preload for LCP */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={getCloudinaryUrl('/hero-yoga-group.jpg')}
+          alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
@@ -26,7 +33,7 @@ export default function Hero() {
           <p className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.3em] uppercase opacity-90 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
             Welcome To
           </p>
-          <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
+          <div className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
             {"Yogagarh".split("").map((char, index) => (
               <span
                 key={index}
@@ -61,10 +68,10 @@ export default function Hero() {
                 </span>
               </span>
             </span>
+          </div>
+          <h1 className="text-xl md:text-3xl font-heading font-medium max-w-4xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '1.1s', animationFillMode: 'forwards' }}>
+            Yoga Alliance Certified Yoga Teacher Training in Bali & Rishikesh
           </h1>
-          <p className="text-xl md:text-3xl font-heading font-medium max-w-4xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '1.1s', animationFillMode: 'forwards' }}>
-            Yoga Alliance Certified Teacher Training in Bali for practitioners seeking depth, structure, and real teaching confidence.
-          </p>
           <p className="text-lg md:text-xl font-light max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}>
             Ancient Himalayan wisdom. Authentic yoga, lived & taught.
           </p>

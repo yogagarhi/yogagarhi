@@ -9,16 +9,18 @@ export function generateMetadata(): Metadata {
     const course = courseData["200-hour-rishikesh"];
 
     const title =
-        "200 Hour Yoga Teacher Training in Rishikesh";
+        "200 Hour Yoga Teacher Training Rishikesh | RYT 200 India";
 
     const description =
-        "Join YogaGarhi’s 200 Hour Yoga Teacher Training in Rishikesh. A residential RYT 200 Yoga Alliance certified course offering authentic yogic education, asana, pranayama, meditation, philosophy, and teaching methodology in Rishikesh, India.";
+        "Master traditional yoga with our 200-Hour Yoga TTC in Rishikesh. Yoga Alliance certified RYT 200 residential course by the Ganges. Register for upcoming batch!";
 
     const url =
         "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh";
 
     return {
-        title,
+        title: {
+            absolute: title,
+        },
         description,
         keywords: [
             "200 hour yoga teacher training in rishikesh",
@@ -101,6 +103,13 @@ export default function Page() {
                 }
             }
         },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "195",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
         "offers": {
             "@type": "Offer",
             "price": course.price.replace("$", ""),
@@ -108,6 +117,32 @@ export default function Page() {
             "availability": "https://schema.org/InStock",
             "url": pageUrl
         }
+    };
+
+    /* =========================
+       FAQ SCHEMA
+    ========================= */
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is this 200 Hour YTTC in Rishikesh certified with Yoga Alliance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, our 200 Hour Yoga Teacher Training in Rishikesh is fully certified with Yoga Alliance USA (RYT 200). Upon completion, you can register as a certified yoga teacher internationally."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is included in the 200 Hour Rishikesh course?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The course includes 24 days residential stay, 3 daily Ayurvedic vegetarian meals, course manual, Yoga Alliance certification, Ganga excursions, and full instruction in Hatha, Ashtanga, Anatomy, and Philosophy."
+                }
+            }
+        ]
     };
 
     /* =========================
@@ -139,6 +174,14 @@ export default function Page() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(courseSchema),
+                }}
+            />
+
+            {/* FAQ Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(faqSchema),
                 }}
             />
 

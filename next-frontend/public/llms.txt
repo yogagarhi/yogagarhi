@@ -1,6 +1,6 @@
-# YogaGarhi
+﻿# YogaGarhi
 
-> YogaGarhi is a traditional, Yoga Alliance certified yoga school offering authentic 100-Hour, 200-Hour, and 300-Hour Yoga Teacher Training Courses (YTTC) in Ubud, Bali (Indonesia) and Rishikesh (India). Rooted in authentic Himalayan lineage, the school emphasizes small batch sizes (8–10 students), personalized mentorship, and multi-style yoga education.
+> YogaGarhi is a traditional, Yoga Alliance certified yoga school offering authentic 100-Hour, 200-Hour, and 300-Hour Yoga Teacher Training Courses (YTTC) in Ubud, Bali (Indonesia) and Rishikesh (India). Rooted in authentic Himalayan lineage, the school emphasizes small batch sizes (8â€“10 students), personalized mentorship, and multi-style yoga education.
 
 ## Core Courses & Certifications
 
@@ -13,7 +13,7 @@
 ## What Makes YogaGarhi Unique
 
 - **Himalayan Lineage**: Founded and guided by experienced yogacharyas following authentic traditional roots, integrating Patanjali Yoga Sutras, Hatha Yoga Pradipika, and Bhagavad Gita.
-- **Intimate Batch Sizes**: Strictly capped at 8–10 students per batch to ensure dedicated individual attention, proper alignment adjustments, and safe practice.
+- **Intimate Batch Sizes**: Strictly capped at 8â€“10 students per batch to ensure dedicated individual attention, proper alignment adjustments, and safe practice.
 - **World's First Pre-YTTC Prep**: Optional complimentary online preparation program before arriving in Bali or Rishikesh to help students build confidence in basic asanas, Sanskrit terms, and anatomy.
 - **Multi-Style Approach**: Thorough training in classical Hatha Yoga, dynamic Vinyasa, traditional Ashtanga Vinyasa, and Iyengar alignment methodology.
 - **Holistic Living**: Includes 3 nutritious daily Sattvic vegetarian/vegan meals, comfortable residential accommodation (private villas & shared rooms), airport pick-up, Balinese massages, and cultural excursions (waterfall treks, ancient temple ceremonies).
@@ -28,6 +28,7 @@
 - [Photo & Video Gallery](https://www.yogagarhi.com/gallery): Glimpse into ashram life, student practices, accommodation, and Bali scenery.
 - [Student Testimonials](https://www.yogagarhi.com/testimonials): Real reviews and experiences from international graduates.
 - [Blog & Yogic Guides](https://www.yogagarhi.com/blogs): In-depth articles including comprehensive guides on what to expect during a 200-hour YTTC in Bali.
+- [Bali vs Rishikesh YTTC Comparison Guide](https://www.yogagarhi.com/blogs/bali-vs-rishikesh-yttc-comparison): Complete 2026 side-by-side comparison of training in Bali vs Rishikesh covering costs, vibe, and curriculum.
 - [Apply Now](https://www.yogagarhi.com/apply-now): Online course application and registration form.
 - [Contact Us](https://www.yogagarhi.com/contact-us): Direct inquiry form, email, location address, and official WhatsApp contact.
 

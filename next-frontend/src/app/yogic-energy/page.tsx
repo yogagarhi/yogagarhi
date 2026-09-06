@@ -6,6 +6,9 @@ export const metadata: Metadata = {
     description:
         "Take our 6-question Prakriti quiz and discover whether you are Vata, Pitta or Kapha — and which yoga practice will truly transform your life.",
     robots: "noindex, nofollow",
+    alternates: {
+        canonical: "/yogic-energy",
+    },
     openGraph: {
         title: "What Is Your Yogic Energy Type?",
         description:

@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { Calendar, ArrowLeft, Clock, User, Share2 } from "lucide-react";
+import { Calendar, ArrowLeft, Clock, User, Share2, Sparkles, CheckCircle2 } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
@@ -376,6 +376,114 @@ YogaGarhi's [200 Hour Yoga Teacher Training in Bali](/200-hour-yoga-teacher-trai
 Ready to begin your journey? Check our [Course Dates and Fees](/apply-now) or reach out to our team with any questions to start planning your training in Bali.
 `
   },
+  {
+    title: "Bali vs Rishikesh Yoga Teacher Training: Which Is Right for You? (2026 Comparison)",
+    excerpt: "Comprehensive comparison of yoga teacher training in Bali vs Rishikesh covering costs, ashram atmosphere, climate, spiritual lineage, and curriculum.",
+    date: "January 15, 2026",
+    image: heroImage,
+    slug: "bali-vs-rishikesh-yttc-comparison",
+    content: `
+Choosing where to undertake your Yoga Teacher Training Course (YTTC) is one of the most important decisions on your yogic path. Two global destinations stand out above all others: **Bali (Indonesia)** and **Rishikesh (India)**.
+
+Both locations offer internationally recognized Yoga Alliance certifications (RYT 200, RYT 300, RYT 500), but they provide distinct experiences, environments, and cultural rhythms.
+
+This guide provides a direct, objective comparison of doing your Yoga Teacher Training in Bali versus Rishikesh in 2026, helping you choose the destination that best aligns with your goals, budget, and learning style.
+
+## Quick Comparison: Bali vs Rishikesh at a Glance
+
+| Feature / Factor | Bali (Ubud & Gianyar) | Rishikesh (India) |
+| :--- | :--- | :--- |
+| **Primary Atmosphere** | Peaceful tropical sanctuary, jungle tranquility, holistic wellness | Sacred river energy, bustling spiritual pilgrimage, monastic tradition |
+| **Lineage & Teachings** | Authentic Himalayan lineage delivered in lush tropical ashrams | Historic birthplace of yoga on the sacred Ganges river |
+| **Average Cost (200-Hr)** | $1,600 – $2,800 USD (All-inclusive residential) | $900 – $1,800 USD (All-inclusive residential) |
+| **Accommodation** | Boutique villa rooms, swimming pool, tropical garden en-suite | Traditional ashram rooms, mountain/river view, minimalist comfort |
+| **Food & Cuisine** | Gourmet Sattvic vegetarian, vegan, gluten-free, tropical fruits | Traditional North Indian Ayurvedic vegetarian cuisine |
+| **Climate & Travel** | Warm tropical year-round, Visa on Arrival (e-VOA) | Seasonal (Best: Oct–Apr; cooler winters, hot summers) |
+| **Excursions & Culture** | Ancient water temples (Tirta Empul), jungle waterfalls, sound baths | Ganga Aarti ceremonies, Himalayan sunrise treks, historic ashrams |
+| **Cohort Size at YogaGarhi** | Strictly 8–10 students per batch | Strictly 8–10 students per batch |
+| **Best Suited For** | Deep personal transformation with restorative comfort and nature | Raw, traditional monastic immersion at the roots of yoga |
+
+## 1. Spiritual Atmosphere and Cultural Vibe
+
+### Bali: The Island of Peace and Healing
+Bali—and specifically the spiritual heartland of **Ubud and Gianyar**—is celebrated worldwide for its gentle Hindu-Dharma culture, daily flower offerings (Canang Sari), and lush green rice terraces. 
+
+Training in Bali allows you to immerse in intense yogic study while surrounded by soothing tropical nature. The calm, restorative energy helps reduce stress and supports emotional release, making it ideal for students seeking personal healing alongside teacher certification. [Explore our 200-Hour Bali Training](/200-hour-yoga-teacher-training-in-bali)
+
+### Rishikesh: The World Yoga Capital
+Rishikesh sits at the foothills of the Himalayas where the holy Ganges river descends into the plains. For millennia, sages, rishis, and yogis have meditated in its caves and temples. 
+
+Training in Rishikesh immerses you directly in ancient Vedic culture—from listening to temple bells and chanting to witnessing the nightly Ganga Aarti. The energy is intense, vibrant, and deeply traditional. [Explore our 200-Hour Rishikesh Training](/200-hour-yoga-teacher-training-in-rishikesh)
+
+## 2. Curriculum, Accreditation, and Teaching Quality
+
+Whether you choose Bali or Rishikesh, **the curriculum standards at YogaGarhi remain identically rigorous and authentic**:
+
+1. **Yoga Alliance RYT 200 Certification**: Both courses award the globally recognized RYT 200 credential.
+2. **Multi-Style Foundation**: Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment.
+3. **Comprehensive Hour Breakdown**:
+   - 100 Hours Techniques, Training & Practice (Asanas, Pranayama, Kriyas)
+   - 20 Hours Functional Anatomy & Biomechanics
+   - 30 Hours Yoga Philosophy (Patanjali Yoga Sutras, Bhagavad Gita)
+   - 25 Hours Teaching Methodology & Safe Cueing
+   - 25 Hours Practicum & Live Peer Teaching
+4. **Himalayan Master Teachers**: Our lead faculty—born and trained in the Himalayas—teach across both our Bali and Rishikesh campuses.
+
+## 3. Accommodation, Food, and Daily Living
+
+### Bali Accommodation & Dining
+At our Bali campus in Gianyar, students enjoy resort-style residential amenities:
+- Private or shared villas surrounded by tropical palm trees and jungle breezes.
+- On-site swimming pool for post-practice relaxation.
+- Three daily Sattvic meals incorporating fresh Balinese organic produce, tropical fruit platters, and digestive herbal teas.
+
+### Rishikesh Accommodation & Dining
+At our Rishikesh ashram in Tapovan:
+- Clean, peaceful rooms with private bathrooms and mountain or garden views.
+- Walkable access to the sacred Ganges river and historic meditation centers.
+- Pure Ayurvedic vegetarian meals cooked fresh according to classical nutritional principles.
+
+## 4. Cost Comparison: What Should You Budget?
+
+| Expense Category | Bali (Estimated USD) | Rishikesh (Estimated USD) |
+| :--- | :--- | :--- |
+| **200-Hour Residential Tuition** | $1,600 – $2,400 | $1,000 – $1,500 |
+| **All-Inclusive Meals & Lodging** | Included in tuition | Included in tuition |
+| **International Flights** | $600 – $1,200 (DPS Denpasar) | $700 – $1,300 (DEL New Delhi + Dehradun) |
+| **Visa Fees** | ~$35 USD (30-day e-VOA) | ~$25 USD (30-day e-Tourist Visa) |
+| **Personal Spending / Massages** | $150 – $300 | $100 – $200 |
+
+## 5. How to Make Your Final Choice
+
+**Choose Bali if:**
+- You want an immersive learning experience in a tranquil, tropical natural resort.
+- You appreciate holistic wellness additions such as Balinese massages, waterfall excursions, and sound healing.
+- You are looking for a gentle, emotionally restorative environment to begin your teaching journey.
+
+**Choose Rishikesh if:**
+- You are passionate about experiencing the historic birthplace and traditional roots of yoga in India.
+- You want to bathe in the holy Ganges, visit ancient Himalayan temples, and experience traditional ashram life.
+- You are traveling on a more conservative budget while still desiring top-tier instruction.
+
+## Frequently Asked Questions
+
+### Is the certification difference between Bali and Rishikesh?
+No. Both courses at YogaGarhi award the exact same Yoga Alliance USA RYT 200 credential, eligible for worldwide teaching insurance and studio registration.
+
+### What is the batch size at both campuses?
+At both our Bali and Rishikesh centers, we strictly cap enrollment at **8–10 students per batch** to guarantee personalized alignment and mentorship.
+
+### Can beginners join either location?
+Yes! Both our Bali and Rishikesh 200-Hour foundational programs welcome beginners and include our complimentary Pre-YTTC online preparation course.
+
+---
+
+### Ready to Begin Your Journey?
+- Apply for [200-Hour Yoga Teacher Training in Bali](/200-hour-yoga-teacher-training-in-bali)
+- Apply for [200-Hour Yoga Teacher Training in Rishikesh](/200-hour-yoga-teacher-training-in-rishikesh)
+- Or [Contact Our Admissions Team](/contact-us) for personalized guidance.
+`
+  },
 ];
 
 export default function BlogPost() {
@@ -398,16 +506,153 @@ export default function BlogPost() {
     );
   }
 
+  const headings = React.useMemo(() => {
+    if (!post?.content) return [];
+    const lines = post.content.split('\n');
+    const items: { text: string; id: string; level: number }[] = [];
+    lines.forEach((line) => {
+      const h2Match = line.match(/^##\s+(.+)$/);
+      const h3Match = line.match(/^###\s+(.+)$/);
+      if (h2Match) {
+        const text = h2Match[1].replace(/[*_~`]/g, '').trim();
+        const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        items.push({ text, id, level: 2 });
+      } else if (h3Match) {
+        const text = h3Match[1].replace(/[*_~`]/g, '').trim();
+        const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        items.push({ text, id, level: 3 });
+      }
+    });
+    return items;
+  }, [post?.content]);
+
+  const keyTakeawaysMap: Record<string, string[]> = {
+    "benefits-yttc-bali": [
+      "Bali blends authentic Himalayan lineage with serene natural surroundings, creating an ideal setting for deep spiritual immersion.",
+      "Comprehensive multi-style curriculum covers Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment.",
+      "Intimate batch sizes (8–10 students) ensure personalized alignment corrections, injury prevention, and continuous 1-on-1 mentorship.",
+      "Graduates receive a Yoga Alliance USA certified RYT 200 credential recognized across 150+ countries worldwide."
+    ],
+    "what-to-expect-200hr": [
+      "No prior advanced flexibility or Sanskrit knowledge is required — foundational courses are designed for all experience levels.",
+      "Clear 200-Hour syllabus breakdown: 100h Asana/Pranayama, 20h Anatomy & Biomechanics, 30h Philosophy & Ethics, and 25h Practicum.",
+      "All-inclusive 24-day residential experience includes private or shared villa lodging, 3 daily Sattvic meals, and cultural excursions.",
+      "Dual focus on personal sadhana and teaching methodology ensures confident, safe student sequencing and cueing."
+    ],
+    "himalayan-roots-yoga": [
+      "Authentic yoga lineage preserves traditional Vedic wisdom from Patanjali's Yoga Sutras and the Hatha Yoga Pradipika.",
+      "Traditional guru-shishya parampara transmission provides nuanced corrections for pranayama, bandhas, and shatkarmas.",
+      "Small cohort sizes prevent commercialization, fostering genuine spiritual transformation and deep community connection.",
+      "Balanced approach integrates asana alignment with meditative stillness, philosophy, and yogic lifestyle ethics."
+    ],
+    "bali-vs-rishikesh-yttc-comparison": [
+      "Both Bali and Rishikesh campuses at YogaGarhi award identical Yoga Alliance USA RYT 200 certifications taught by authentic Himalayan masters.",
+      "Bali offers a restorative tropical resort ambiance with lush jungle surroundings and holistic spa therapies.",
+      "Rishikesh provides traditional ashram immersion along the holy Ganges river with ancient temple rituals.",
+      "Both locations maintain strictly small cohort sizes (8–10 students) with comprehensive 200-Hour multi-style curricula."
+    ]
+  };
+
+  const keyTakeaways = keyTakeawaysMap[post?.slug] || [
+    "Comprehensive Yoga Alliance certified training rooted in authentic Himalayan traditions.",
+    "Small cohort sizes (8–10 students) with dedicated 1-on-1 guidance from master yogis.",
+    "Integrated study of asana, functional anatomy, pranayama, and classical philosophy.",
+    "All-inclusive residential stay with organic Sattvic nutrition and cultural excursions."
+  ];
+
   return (
     <Layout>
+      {/* Breadcrumb & Article JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "description": post.excerpt,
+            "image": post.image,
+            "datePublished": "2025-01-05",
+            "dateModified": "2026-03-01T00:00:00+00:00",
+            "author": {
+              "@type": "Person",
+              "name": "Yogacharya Sachin",
+              "jobTitle": "Lead Yoga Master & Founder",
+              "url": "https://www.yogagarhi.com/teachers",
+              "knowsAbout": ["Hatha Yoga", "Ashtanga Vinyasa", "Pranayama", "Patanjali Yoga Sutras"]
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "YogaGarhi",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.yogagarhi.com/icon.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://www.yogagarhi.com/blogs/${post.slug}`
+            },
+            "keywords": ["yoga teacher training bali", "200 hour YTTC", "himalayan yoga lineage", "yoga alliance certification"],
+            "about": [
+              {
+                "@type": "Thing",
+                "name": "Yoga Teacher Training",
+                "sameAs": "https://en.wikipedia.org/wiki/Yoga_Alliance"
+              }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.yogagarhi.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blogs",
+                "item": "https://www.yogagarhi.com/blogs"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": post.title,
+                "item": `https://www.yogagarhi.com/blogs/${post.slug}`
+              }
+            ]
+          })
+        }}
+      />
+
       {/* Blog Article Hero */}
-      <section className="relative py-20 lg:py-32 overflow-hidden bg-secondary">
+      <section className="relative py-20 lg:py-28 overflow-hidden bg-secondary">
         <div className="container mx-auto px-4 relative z-10 max-w-4xl">
-          <Button variant="ghost" size="sm" className="mb-8 hover:bg-primary/10" asChild>
-            <Link href="/blogs" className="flex items-center gap-2">
-              <ArrowLeft className="w-4 h-4" /> Back to Blog
-            </Link>
-          </Button>
+          {/* Breadcrumbs */}
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground flex-wrap">
+              <li>
+                <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+              </li>
+              <li>/</li>
+              <li>
+                <Link href="/blogs" className="hover:text-primary transition-colors">Blogs</Link>
+              </li>
+              <li>/</li>
+              <li className="text-foreground font-semibold line-clamp-1" aria-current="page">
+                {post.title}
+              </li>
+            </ol>
+          </nav>
 
           <div className="flex flex-col gap-3 mb-6">
             <span className="inline-flex items-center gap-1.5 w-fit px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold uppercase tracking-wider">
@@ -426,7 +671,7 @@ export default function BlogPost() {
               <span className="text-border">•</span>
               <div className="flex items-center gap-1.5 font-medium">
                 <User className="w-4 h-4 text-primary" />
-                By YogaGarhi Team
+                By Yogacharya Sachin
               </div>
             </div>
           </div>
@@ -445,18 +690,74 @@ export default function BlogPost() {
             />
           </div>
 
+          {/* AI GEO Key Takeaways Box */}
+          <div className="mb-10 p-6 md:p-8 rounded-3xl bg-primary/5 border border-primary/20 shadow-soft">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="p-1.5 rounded-lg bg-primary/10 text-primary">
+                <Sparkles className="w-4 h-4" />
+              </span>
+              <span className="text-xs uppercase font-bold tracking-widest text-primary">Key Takeaways & Quick Summary</span>
+            </div>
+            <h2 className="font-heading text-xl md:text-2xl font-bold text-foreground mb-4">Core Insights at a Glance</h2>
+            <ul className="space-y-3">
+              {keyTakeaways.map((point, index) => (
+                <li key={index} className="flex items-start gap-3 text-sm md:text-base text-foreground/85 leading-relaxed">
+                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Table of Contents (for long posts) */}
+          {headings.length > 2 && (
+            <div className="mb-10 p-6 md:p-8 rounded-3xl bg-card border border-border/70 shadow-soft">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-xs uppercase font-bold tracking-widest text-primary">Quick Navigation</span>
+              </div>
+              <h2 className="font-heading text-xl font-bold text-foreground mb-4">Table of Contents</h2>
+              <ol className="space-y-2.5 text-sm md:text-base">
+                {headings.map((item, idx) => (
+                  <li
+                    key={idx}
+                    className={`transition-colors hover:text-primary ${
+                      item.level === 3 ? "pl-5 text-muted-foreground text-sm" : "font-medium text-foreground"
+                    }`}
+                  >
+                    <a href={`#${item.id}`} className="hover:underline underline-offset-2">
+                      {item.level === 2 ? `${idx + 1}. ` : "• "}
+                      {item.text}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
           {/* Article Content */}
           <div className="bg-card rounded-3xl p-8 md:p-12 lg:p-14 shadow-card border border-border/50">
             <div className="prose prose-lg max-w-none text-foreground/80">
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={{
-                  h2: ({ node, ...props }) => (
-                    <h2 className="font-heading text-2xl sm:text-3xl md:text-[2.2rem] font-bold text-foreground mt-12 mb-5 pb-3 border-b border-border/60 leading-[1.25] tracking-tight" {...props} />
-                  ),
-                  h3: ({ node, ...props }) => (
-                    <h3 className="font-heading text-xl sm:text-2xl font-bold text-primary mt-8 mb-3.5 leading-snug tracking-tight" {...props} />
-                  ),
+                  h2: ({ node, children, ...props }) => {
+                    const text = String(children).replace(/[*_~`]/g, '').trim();
+                    const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                    return (
+                      <h2 id={id} className="font-heading text-2xl sm:text-3xl md:text-[2.2rem] font-bold text-foreground mt-12 mb-5 pb-3 border-b border-border/60 leading-[1.25] tracking-tight scroll-mt-28" {...props}>
+                        {children}
+                      </h2>
+                    );
+                  },
+                  h3: ({ node, children, ...props }) => {
+                    const text = String(children).replace(/[*_~`]/g, '').trim();
+                    const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                    return (
+                      <h3 id={id} className="font-heading text-xl sm:text-2xl font-bold text-primary mt-8 mb-3.5 leading-snug tracking-tight scroll-mt-28" {...props}>
+                        {children}
+                      </h3>
+                    );
+                  },
                   p: ({ node, ...props }) => (
                     <p className="text-foreground/80 text-[1.05rem] md:text-lg leading-[1.85] mb-6 font-normal" {...props} />
                   ),
@@ -508,19 +809,40 @@ export default function BlogPost() {
                 {post.content}
               </ReactMarkdown>
             </div>
+
+            {/* Author E-E-A-T Bio Card */}
+            <div className="mt-14 p-6 md:p-8 rounded-3xl bg-secondary/70 border border-border/70 flex flex-col sm:flex-row items-center sm:items-start gap-6">
+              <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/30 shadow-sm">
+                <Image src={getCloudinaryImage("founder-sachin-ji.jpg")} alt="Yogacharya Sachin" fill className="object-cover" />
+              </div>
+              <div className="space-y-2 text-center sm:text-left">
+                <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                  <h3 className="font-heading font-bold text-xl text-foreground">Yogacharya Sachin</h3>
+                  <span className="text-[11px] bg-primary/10 text-primary font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full">
+                    Lead Yoga Master & Founder
+                  </span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Born in the foothills of the Himalayas, Yogacharya Sachin has dedicated over 15 years to authentic Hatha, Ashtanga, and Pranayama sadhana. He leads teacher trainings at YogaGarhi with traditional rigor and compassionate guidance.
+                </p>
+                <Link href="/teachers" className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline mt-1">
+                  Meet our full teaching faculty →
+                </Link>
+              </div>
+            </div>
             
-            <div className="mt-12 pt-8 border-t border-border flex flex-wrap items-center justify-between gap-4">
+            <div className="mt-10 pt-8 border-t border-border flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-4">
-                <span className="font-semibold text-foreground">Share this article:</span>
+                <span className="font-semibold text-foreground text-sm">Share this article:</span>
                 <div className="flex gap-2">
-                  <Button variant="outline" size="icon" className="rounded-full w-10 h-10 hover:bg-primary/10 hover:text-primary transition-all">
+                  <Button variant="outline" size="icon" className="rounded-full w-9 h-9 hover:bg-primary/10 hover:text-primary transition-all">
                     <Share2 className="w-4 h-4" />
                   </Button>
                 </div>
               </div>
               <div className="flex gap-4">
                  <Button asChild variant="cta">
-                    <Link href="/200-hour-yoga-teacher-training-in-bali">Start Your Training</Link>
+                    <Link href="/200-hour-yoga-teacher-training-in-bali">Explore 200-Hour Bali Course</Link>
                  </Button>
               </div>
             </div>

@@ -11,15 +11,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const postMetadata: Record<string, { title: string; description: string }> = {
         "benefits-yttc-bali": {
             title: "Benefits of Yoga Teacher Training in Bali | YogaGarhi",
-            description: "Discover why Bali has become the premier destination for yoga teacher training and how it can transform your practice.",
+            description: "Discover why Bali is the world's premier yoga training hub. Learn how a Yoga TTC transforms your practice, mindset & teaching skills. Read our guide!",
         },
         "what-to-expect-200hr": {
-            title: "What to Expect in Your 200 Hour YTTC in Bali: A Complete Guide | YogaGarhi",
-            description: "Discover what to expect in a 200 hour YTTC in Bali, from daily classes and teaching practice to accommodation, preparation, and certification.",
+            title: "What to Expect in a 200 Hour YTTC in Bali | Complete Guide",
+            description: "Wondering what happens in a 200-Hour Yoga Teacher Training in Bali? Discover daily schedules, difficulty, anatomy, exams & packing tips in this full guide.",
         },
         "himalayan-roots-yoga": {
-            title: "The Himalayan Roots of Authentic Yoga: Why It Matters for Your Training in Bali | YogaGarhi",
-            description: "Discover the Himalayan roots of authentic yoga and why this lineage matters for your yoga teacher training in Bali. Learn what makes training truly traditional.",
+            title: "Himalayan Roots of Authentic Yoga | Bali YTTC Lineage",
+            description: "Learn why authentic Himalayan lineage matters for your yoga teacher training in Bali. Discover traditional Hatha wisdom and lineage teachings at YogaGarhi.",
+        },
+        "bali-vs-rishikesh-yttc-comparison": {
+            title: "Bali vs Rishikesh Yoga Teacher Training: Complete 2026 Comparison Guide",
+            description: "Comparing a Yoga Teacher Training in Bali vs Rishikesh? Discover costs, atmosphere, curriculum, weather, and spiritual vibe to choose your ideal YTTC.",
         },
     };
 

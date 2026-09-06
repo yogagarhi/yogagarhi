@@ -601,16 +601,16 @@ export default function AboutAshram() {
           {/* Gallery */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
             <div className="aspect-square rounded-2xl overflow-hidden relative">
-              <Image src={gallery1} alt="Experience 1" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src={gallery1} alt="Yoga teacher training students practicing asana at YogaGarhi Ashram Bali" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="aspect-square rounded-2xl overflow-hidden relative">
-              <Image src={gallery2} alt="Experience 2" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src={gallery2} alt="Morning meditation and breathwork session in open-air shala Gianyar Ubud" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="aspect-square rounded-2xl overflow-hidden relative">
-              <Image src={gallery4} alt="Experience 3" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src={gallery4} alt="Traditional fire ceremony and mantra chanting at YogaGarhi Ashram" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="aspect-square rounded-2xl overflow-hidden relative">
-              <Image src={seatedMeditation} alt="Experience 4" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src={seatedMeditation} alt="Seated meditation and mindfulness practice in tropical Bali nature" fill className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 

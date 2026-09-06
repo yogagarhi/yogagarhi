@@ -29,6 +29,14 @@ const blogPosts = [
     slug: "himalayan-roots-yoga",
     imageAlt: "Himalayan yoga traditions in Bali"
   },
+  {
+    title: "Bali vs Rishikesh Yoga Teacher Training: Which Is Right for You? (2026 Comparison)",
+    excerpt: "Comprehensive comparison of yoga teacher training in Bali vs Rishikesh covering costs, ashram atmosphere, climate, spiritual lineage, and curriculum.",
+    date: "January 15, 2026",
+    image: heroImage,
+    slug: "bali-vs-rishikesh-yttc-comparison",
+    imageAlt: "Bali vs Rishikesh Yoga Teacher Training Comparison"
+  },
 ];
 
 export default function Blog() {

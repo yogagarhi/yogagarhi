@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Yoga Retreats in Bali, Rishikesh & Warkala | YogaGarhi",
   },
-  description: "Rejuvenate your body and soul with YogaGarhi's transformative yoga retreats. Choose from 3, 7, and 14-day wellness holidays in Ubud Bali, Rishikesh, and Warkala.",
+  description: "Rejuvenate with 3, 7 & 14-day transformative yoga retreats in Ubud Bali, Rishikesh & Warkala beach. Daily yoga, sound healing & organic meals. Book online!",
   alternates: {
     canonical: "https://www.yogagarhi.com/retreat",
   },
   openGraph: {
     title: "Yoga Retreats in Bali, Rishikesh & Warkala | YogaGarhi",
-    description: "Rejuvenate your body and soul with YogaGarhi's transformative yoga retreats. 3, 7, and 14-day wellness holidays in Ubud Bali, Rishikesh, and Warkala.",
+    description: "Rejuvenate with 3, 7 & 14-day transformative yoga retreats in Ubud Bali, Rishikesh & Warkala beach. Daily yoga, sound healing & organic meals. Book online!",
     url: "https://www.yogagarhi.com/retreat",
     type: "website",
     siteName: "YogaGarhi",
@@ -26,11 +26,82 @@ export const metadata: Metadata = {
 export default function RetreatsHubPage() {
   const locations = Object.values(RETREAT_LOCATIONS);
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.yogagarhi.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Yoga Retreats",
+        "item": "https://www.yogagarhi.com/retreat"
+      }
+    ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What durations are available for YogaGarhi yoga retreats?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer 3-day weekend resets, 7-day rejuvenation retreats, and 14-day deep healing wellness holidays across Ubud Bali, Rishikesh, and Warkala."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are retreats suitable for complete beginners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, our retreats are designed for all levels from beginners to regular practitioners looking to rest, rejuvenate, and experience authentic yoga."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is included in the retreat packages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All packages include daily multi-style yoga, meditation, Balinese or Ayurvedic massages, 3 organic vegetarian/vegan meals daily, cultural excursions, and comfortable accommodation."
+        }
+      }
+    ]
+  };
+
   return (
     <Layout>
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Hero Header */}
       <header className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-secondary/60 via-background to-background text-center">
         <div className="container mx-auto px-4 max-w-4xl">
+          {/* Breadcrumbs */}
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex items-center justify-center gap-2 text-xs md:text-sm text-muted-foreground">
+              <li>
+                <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+              </li>
+              <li>/</li>
+              <li className="text-foreground font-semibold" aria-current="page">Yoga Retreats</li>
+            </ol>
+          </nav>
+
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold uppercase tracking-wider mb-6">
             ✦ Sacred Wellness Sanctuaries
           </span>
@@ -38,7 +109,7 @@ export default function RetreatsHubPage() {
             Transformative Yoga Retreats
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
-            Escape the ordinary and immerse in healing practices, Sattvic nutrition, and spiritual nature across our three handpicked destinations.
+            Escape the ordinary and immerse in healing practices, Sattvic nutrition, and spiritual nature across our three handpicked destinations in Bali, Rishikesh, and Warkala.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
@@ -76,7 +147,7 @@ export default function RetreatsHubPage() {
                 </div>
                 <Button asChild variant="outline" className="rounded-full w-fit">
                   <Link href={`/retreat/${loc.key}`}>
-                    Explore {loc.name} Hub
+                    Explore All {loc.name} Packages
                     <ArrowRight className="w-4 h-4 ml-1" />
                   </Link>
                 </Button>
@@ -98,7 +169,7 @@ export default function RetreatsHubPage() {
                         />
                         <div className="absolute top-4 left-4">
                           <span className="px-3 py-1 bg-black/60 backdrop-blur-md text-white text-xs font-semibold rounded-full">
-                            {retreat.durationDays} Days
+                            {retreat.durationDays} Days / {retreat.durationNights} Nights
                           </span>
                         </div>
                         <div className="absolute top-4 right-4">
@@ -136,7 +207,7 @@ export default function RetreatsHubPage() {
                       </div>
                       <Button asChild className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground">
                         <Link href={`/retreat/${loc.key}/${retreat.slug}`}>
-                          Book Now
+                          View Package
                           <ArrowRight className="w-4 h-4 ml-1" />
                         </Link>
                       </Button>

@@ -155,7 +155,7 @@ YogaGarhi Team`,
       <div className="absolute inset-0">
         <Image
           src={readyToBeginBg}
-          alt=""
+          alt="Yoga students practicing meditation at YogaGarhi Ashram"
           fill
           className="object-cover"
           priority
@@ -255,12 +255,14 @@ YogaGarhi Team`,
           <form onSubmit={handleManualSubmit} className="space-y-4 pt-4">
 
             <div>
-              <label className="text-sm font-medium text-foreground mb-1 block">
+              <label htmlFor="manual-name" className="text-sm font-medium text-foreground mb-1 block">
                 Full Name <span className="text-destructive">*</span>
               </label>
               <input
+                id="manual-name"
                 type="text"
                 placeholder="Enter your full name"
+                aria-label="Full Name"
                 required
                 value={manualForm.name}
                 onChange={(e) => setManualForm(prev => ({ ...prev, name: e.target.value }))}
@@ -269,12 +271,14 @@ YogaGarhi Team`,
             </div>
 
             <div>
-              <label className="text-sm font-medium text-foreground mb-1 block">
+              <label htmlFor="manual-email" className="text-sm font-medium text-foreground mb-1 block">
                 Email Address <span className="text-destructive">*</span>
               </label>
               <input
+                id="manual-email"
                 type="email"
                 placeholder="Enter your email"
+                aria-label="Email Address"
                 required
                 value={manualForm.email}
                 onChange={(e) => setManualForm(prev => ({ ...prev, email: e.target.value }))}
@@ -310,12 +314,14 @@ YogaGarhi Team`,
           <form onSubmit={handleWebinarSubmit} className="space-y-4 pt-4">
 
             <div>
-              <label className="text-sm font-medium text-foreground mb-1 block">
+              <label htmlFor="webinar-diag-name" className="text-sm font-medium text-foreground mb-1 block">
                 Full Name <span className="text-destructive">*</span>
               </label>
               <input
+                id="webinar-diag-name"
                 type="text"
                 placeholder="Enter your full name"
+                aria-label="Full Name"
                 required
                 value={webinarForm.name}
                 onChange={(e) => setWebinarForm(prev => ({ ...prev, name: e.target.value }))}
@@ -324,12 +330,14 @@ YogaGarhi Team`,
             </div>
 
             <div>
-              <label className="text-sm font-medium text-foreground mb-1 block">
+              <label htmlFor="webinar-diag-email" className="text-sm font-medium text-foreground mb-1 block">
                 Email Address <span className="text-destructive">*</span>
               </label>
               <input
+                id="webinar-diag-email"
                 type="email"
                 placeholder="Enter your email"
+                aria-label="Email Address"
                 required
                 value={webinarForm.email}
                 onChange={(e) => setWebinarForm(prev => ({ ...prev, email: e.target.value }))}
@@ -338,10 +346,12 @@ YogaGarhi Team`,
             </div>
 
             <div>
-              <label className="text-sm font-medium text-foreground mb-1 block">
+              <label htmlFor="webinar-diag-timezone" className="text-sm font-medium text-foreground mb-1 block">
                 Your Timezone <span className="text-destructive">*</span>
               </label>
               <select
+                id="webinar-diag-timezone"
+                aria-label="Your Timezone"
                 required
                 value={webinarForm.timezone}
                 onChange={(e) => setWebinarForm(prev => ({ ...prev, timezone: e.target.value }))}
@@ -359,11 +369,13 @@ YogaGarhi Team`,
             </div>
 
             <div>
-              <label className="text-sm font-medium text-foreground mb-1 block">
+              <label htmlFor="webinar-diag-date" className="text-sm font-medium text-foreground mb-1 block">
                 Preferred Date <span className="text-destructive">*</span>
               </label>
               <input
+                id="webinar-diag-date"
                 type="date"
+                aria-label="Preferred Date"
                 required
                 value={webinarForm.date}
                 onChange={(e) => setWebinarForm(prev => ({ ...prev, date: e.target.value }))}
@@ -372,10 +384,12 @@ YogaGarhi Team`,
             </div>
 
             <div>
-              <label className="text-sm font-medium text-foreground mb-1 block">
+              <label htmlFor="webinar-diag-time" className="text-sm font-medium text-foreground mb-1 block">
                 Preferred Time <span className="text-destructive">*</span>
               </label>
               <select
+                id="webinar-diag-time"
+                aria-label="Preferred Time"
                 required
                 value={webinarForm.time}
                 onChange={(e) => setWebinarForm(prev => ({ ...prev, time: e.target.value }))}
@@ -415,12 +429,14 @@ YogaGarhi Team`,
           <form onSubmit={handlePreYTTCSubmit} className="space-y-4 pt-4">
 
             <div>
-              <label className="text-sm font-medium text-foreground mb-1 block">
+              <label htmlFor="preyttc-diag-name" className="text-sm font-medium text-foreground mb-1 block">
                 Full Name <span className="text-destructive">*</span>
               </label>
               <input
+                id="preyttc-diag-name"
                 type="text"
                 placeholder="Enter your full name"
+                aria-label="Full Name"
                 required
                 value={preYTTCForm.name}
                 onChange={(e) => setPreYTTCForm(prev => ({ ...prev, name: e.target.value }))}
@@ -429,12 +445,14 @@ YogaGarhi Team`,
             </div>
 
             <div>
-              <label className="text-sm font-medium text-foreground mb-1 block">
+              <label htmlFor="preyttc-diag-email" className="text-sm font-medium text-foreground mb-1 block">
                 Email Address <span className="text-destructive">*</span>
               </label>
               <input
+                id="preyttc-diag-email"
                 type="email"
                 placeholder="Enter your email"
+                aria-label="Email Address"
                 required
                 value={preYTTCForm.email}
                 onChange={(e) => setPreYTTCForm(prev => ({ ...prev, email: e.target.value }))}

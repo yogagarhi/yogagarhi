@@ -84,7 +84,7 @@ export default function YogaAnatomyMastery() {
                 <div className="w-40 h-40 md:w-48 md:h-48 shrink-0 relative rounded-full overflow-hidden border-4 border-accent shadow-xl">
                   <Image
                     src={sachinJiImg}
-                    alt="Sachin Ji"
+                    alt="Yogacharya Sachin - Lead Anatomy and Yoga Master at YogaGarhi"
                     fill
                     className="object-cover"
                   />

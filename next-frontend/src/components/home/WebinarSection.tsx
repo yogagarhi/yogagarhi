@@ -92,12 +92,14 @@ const WebinarSection = () => {
 
               {/* Name */}
               <div>
-                <label className="text-sm font-medium text-foreground mb-1 block">
+                <label htmlFor="webinar-name" className="text-sm font-medium text-foreground mb-1 block">
                   Full Name <span className="text-destructive">*</span>
                 </label>
                 <input
+                  id="webinar-name"
                   type="text"
                   placeholder="Enter your full name"
+                  aria-label="Full Name"
                   required
                   value={webinarForm.name}
                   onChange={(e) => setWebinarForm(prev => ({ ...prev, name: e.target.value }))}
@@ -107,12 +109,14 @@ const WebinarSection = () => {
 
               {/* Email */}
               <div>
-                <label className="text-sm font-medium text-foreground mb-1 block">
+                <label htmlFor="webinar-email" className="text-sm font-medium text-foreground mb-1 block">
                   Email Address <span className="text-destructive">*</span>
                 </label>
                 <input
+                  id="webinar-email"
                   type="email"
                   placeholder="Enter your email"
+                  aria-label="Email Address"
                   required
                   value={webinarForm.email}
                   onChange={(e) => setWebinarForm(prev => ({ ...prev, email: e.target.value }))}
@@ -122,10 +126,12 @@ const WebinarSection = () => {
 
               {/* Timezone */}
               <div>
-                <label className="text-sm font-medium text-foreground mb-1 block">
+                <label htmlFor="webinar-timezone" className="text-sm font-medium text-foreground mb-1 block">
                   Your Timezone <span className="text-destructive">*</span>
                 </label>
                 <select
+                  id="webinar-timezone"
+                  aria-label="Your Timezone"
                   required
                   value={webinarForm.timezone}
                   onChange={(e) => setWebinarForm(prev => ({ ...prev, timezone: e.target.value }))}

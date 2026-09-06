@@ -460,6 +460,7 @@ const YTTCSupportSection = () => {
           <button
             onClick={() => setShowPreYTTCDialog(false)}
             className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition-colors z-10"
+            aria-label="Close dialog"
           >
             <X className="w-4 h-4 text-white" />
           </button>

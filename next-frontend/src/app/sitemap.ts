@@ -61,6 +61,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
+            url: 'https://www.yogagarhi.com/blogs/benefits-yttc-bali',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: 'https://www.yogagarhi.com/blogs/what-to-expect-200hr',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: 'https://www.yogagarhi.com/blogs/himalayan-roots-yoga',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
             url: 'https://www.yogagarhi.com/contact-us',
             lastModified: new Date(),
             changeFrequency: 'yearly',
@@ -73,10 +91,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
-            url: 'https://www.yogagarhi.com/yogic-energy',
+            url: 'https://www.yogagarhi.com/yoga-anatomy-mastery',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+        },
+        {
+            url: 'https://www.yogagarhi.com/privacy-policy',
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.3,
+        },
+        {
+            url: 'https://www.yogagarhi.com/terms-and-conditions',
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.3,
+        },
+        {
+            url: 'https://www.yogagarhi.com/refund-policy',
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.3,
+        },
+        {
+            url: 'https://www.yogagarhi.com/payment',
             lastModified: new Date(),
             changeFrequency: 'monthly',
-            priority: 0.7,
+            priority: 0.5,
         },
         {
             url: 'https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh',
@@ -95,12 +137,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.6,
-        },
-        {
-            url: 'https://www.yogagarhi.com/pre-yttc-prep',
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.7,
         },
         {
             url: 'https://www.yogagarhi.com/sunday-schedule',

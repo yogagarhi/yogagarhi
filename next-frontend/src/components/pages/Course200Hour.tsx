@@ -4141,7 +4141,7 @@ export default function Course200Hour() {
           <div className="absolute inset-0">
             <Image
               src={heroImage}
-              alt=""
+              alt="200 Hour Yoga Teacher Training in Bali - YogaGarhi"
               fill
               className="object-cover"
             />
@@ -4348,6 +4348,7 @@ export default function Course200Hour() {
                 <label className="block text-sm font-semibold text-foreground">Name <span className="text-destructive">*</span></label>
                 <input
                   type="text"
+                  aria-label="Full Name"
                   value={enrollForm.name}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, name: e.target.value }))}
                   placeholder="Enter your full name"
@@ -4358,6 +4359,7 @@ export default function Course200Hour() {
                 <label className="block text-sm font-semibold text-foreground">Email <span className="text-destructive">*</span></label>
                 <input
                   type="email"
+                  aria-label="Email Address"
                   value={enrollForm.email}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, email: e.target.value }))}
                   placeholder="you@example.com"
@@ -4368,6 +4370,7 @@ export default function Course200Hour() {
                 <label className="block text-sm font-semibold text-foreground">Contact / WhatsApp No. <span className="text-destructive">*</span></label>
                 <div className="flex gap-2">
                   <select
+                    aria-label="Country Code"
                     value={enrollForm.countryCode}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))}
                     className="w-24 px-2 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4382,6 +4385,7 @@ export default function Course200Hour() {
                   </select>
                   <input
                     type="tel"
+                    aria-label="Phone number"
                     value={enrollForm.contact}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))}
                     placeholder="Phone number"
@@ -4393,6 +4397,7 @@ export default function Course200Hour() {
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">Course <span className="text-destructive">*</span></label>
                   <select
+                    aria-label="Select Course"
                     value={enrollForm.courseName}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4406,6 +4411,7 @@ export default function Course200Hour() {
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">Date <span className="text-destructive">*</span></label>
                   <select
+                    aria-label="Select Date"
                     value={enrollForm.courseDate}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, courseDate: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4421,6 +4427,7 @@ export default function Course200Hour() {
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">Room <span className="text-destructive">*</span></label>
                   <select
+                    aria-label="Select Room"
                     value={enrollForm.accommodation}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, accommodation: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4434,6 +4441,7 @@ export default function Course200Hour() {
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">Gender <span className="text-destructive">*</span></label>
                   <select
+                    aria-label="Select Gender"
                     value={enrollForm.gender}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, gender: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4449,6 +4457,7 @@ export default function Course200Hour() {
                 <label className="block text-sm font-semibold text-foreground">Country <span className="text-destructive">*</span></label>
                 <input
                   type="text"
+                  aria-label="Country"
                   value={enrollForm.country}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, country: e.target.value }))}
                   placeholder="Your country"
@@ -4458,6 +4467,7 @@ export default function Course200Hour() {
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">How did you hear about us? <span className="text-destructive">*</span></label>
                 <select
+                  aria-label="How did you hear about us"
                   value={enrollForm.source}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, source: e.target.value }))}
                   className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4472,6 +4482,7 @@ export default function Course200Hour() {
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">Message <span className="text-muted-foreground font-normal">(optional)</span></label>
                 <textarea
+                  aria-label="Optional message"
                   value={enrollForm.message}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, message: e.target.value }))}
                   placeholder="Any questions or additional info..."
