@@ -1,9 +1,21 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { MessageCircle } from "lucide-react";
 import Image from "next/image";
 
 export default function WhatsAppButton() {
+    const pathname = usePathname();
+    const isLandingPage = [
+        "/yoga-anatomy-masterclass",
+        "/yoga-anatomy-mastery",
+        "/pre-yttc-prep",
+        "/teacher-training-foundation",
+        "/yogic-energy"
+    ].includes(pathname);
+
+    if (isLandingPage) return null;
+
     const phoneNumber = "917895350563"; // Format: CountryCode + Number without '+'
     const message = "Namaste! I am interested in Yoga Teacher Training.";
     const link = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

@@ -8,8 +8,20 @@ import PartnershipsSection from "./home/PartnershipsSection"
 
 export default function MainLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
-    const hideHeader = ["/pre-yttc-prep", "/teacher-training-foundation", "/yogic-energy"].includes(pathname);
-    const hideFooter = ["/pre-yttc-prep", "/yogic-energy"].includes(pathname);
+    const hideHeader = [
+        "/yoga-anatomy-masterclass",
+        "/yoga-anatomy-mastery",
+        "/pre-yttc-prep",
+        "/teacher-training-foundation",
+        "/yogic-energy"
+    ].includes(pathname);
+
+    const hideFooter = [
+        "/yoga-anatomy-masterclass",
+        "/yoga-anatomy-mastery",
+        "/pre-yttc-prep",
+        "/yogic-energy"
+    ].includes(pathname);
 
     return (
         <div className="min-h-screen flex flex-col">
