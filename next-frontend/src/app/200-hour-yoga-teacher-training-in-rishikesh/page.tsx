@@ -1,112 +1,199 @@
 import { Metadata } from "next";
-import Rishikesh200HourLanding from "@/components/pages/Rishikesh200HourLanding";
+import Course200HourRishikesh from "@/components/pages/Course200HourRishikesh";
+import { courseData } from "@/constants/courses";
 
-export const metadata: Metadata = {
-  title: "200 Hour Yoga Teacher Training in Rishikesh | Yoga Alliance RYS 200",
-  description:
-    "Join Yoga Gadhi's 28-day 200-Hour Yoga Teacher Training in Rishikesh (4–31 Jan 2027). Max 10 students, teaching practice from week 1, 5 traditions, functional biomechanics & 1-year mentorship. Yoga Alliance certified.",
-  keywords: [
-    "200 hour yoga teacher training in rishikesh",
-    "200 hour yoga ttc rishikesh",
-    "yoga teacher training rishikesh",
-    "yoga alliance certified 200 hour rishikesh",
-    "small batch yoga ttc rishikesh",
-    "yoga teacher training india",
-    "rys 200 rishikesh",
-    "yoga gadhi rishikesh"
-  ],
-  alternates: {
-    canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-rishikesh",
-  },
-  openGraph: {
-    title: "200 Hour Yoga Teacher Training in Rishikesh | Yoga Gadhi",
-    description:
-      "Strictly 10 students per batch. 28 days of authentic immersion in 5 traditions, functional biomechanics, and 1-year post-course mentorship in Rishikesh, India.",
-    url: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-rishikesh",
-    type: "website",
-    images: [
-      {
-        url: "https://www.yogagarhi.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "200 Hour Yoga Teacher Training Rishikesh - Yoga Gadhi",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "200 Hour Yoga Teacher Training in Rishikesh | Yoga Gadhi",
-    description:
-      "Yoga Alliance RYS 200 certified 28-day residential immersion in Rishikesh. Max 10 students. Admission by conversation only.",
-    images: ["https://www.yogagarhi.com/og-image.jpg"],
-  },
-};
+/* =========================
+   SEO METADATA
+========================= */
+export function generateMetadata(): Metadata {
+    const course = courseData["200-hour-rishikesh"];
 
+    const title =
+        "200 Hour Yoga Teacher Training Rishikesh | RYT 200 India";
+
+    const description =
+        "Master traditional yoga with our 200-Hour Yoga TTC in Rishikesh. Yoga Alliance certified RYT 200 residential course by the Ganges. Register for upcoming batch!";
+
+    const url =
+        "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh";
+
+    return {
+        title: {
+            absolute: title,
+        },
+        description,
+        keywords: [
+            "200 hour yoga teacher training in rishikesh",
+            "200 hour yoga TTC rishikesh",
+            "ryt 200 yoga teacher training rishikesh",
+            "yoga alliance 200 hour rishikesh",
+            "yoga teacher training rishikesh"
+        ],
+        alternates: {
+            canonical: "/200-hour-yoga-teacher-training-in-rishikesh",
+        },
+        robots: {
+            index: true,
+            follow: true,
+        },
+        openGraph: {
+            title,
+            description,
+            url,
+            type: "website",
+            images: [
+                {
+                    url: "https://www.yogagarhi.com/og-image.jpg",
+                    width: 1200,
+                    height: 630,
+                    alt: title,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+        },
+    };
+}
+
+/* =========================
+   PAGE
+========================= */
 export default function Page() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+    const course = courseData["200-hour-rishikesh"];
+    const pageUrl =
+        "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh";
+
+    /* =========================
+       COURSE SCHEMA
+    ========================= */
+    const courseSchema = {
+        "@context": "https://schema.org",
         "@type": "Course",
         "name": "200 Hour Yoga Teacher Training in Rishikesh",
-        "description":
-          "A 28-day Yoga Alliance certified residential 200-hour yoga teacher training in Rishikesh, India. Strictly maximum 10 students per batch. Covers 5 traditions, functional anatomy, biomechanics, and 1-year post-course mentorship.",
+        "description": course.welcomeText,
+        "inLanguage": "en",
+        "educationalCredentialAwarded":
+            "RYT 200 Yoga Alliance Certification",
         "provider": {
-          "@type": "EducationalOrganization",
-          "name": "Yoga Gadhi Ashram & Yoga School",
-          "url": "https://www.yogagarhi.com"
+            "@type": "Organization",
+            "name": "YogaGarhi",
+            "url": "https://www.yogagarhi.com"
         },
-        "educationalCredentialAwarded": "Yoga Alliance RYT 200 Certification",
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Beginner to intermediate yoga practitioners"
+        },
+        "coursePrerequisites":
+            "Basic yoga practice recommended but not mandatory",
         "hasCourseInstance": {
-          "@type": "CourseInstance",
-          "courseMode": "onsite",
-          "duration": "P28D",
-          "startDate": "2027-01-04",
-          "endDate": "2027-01-31",
-          "location": {
-            "@type": "Place",
-            "name": "Yoga Gadhi Ashram Rishikesh",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Tapovan, Badrinath Rd",
-              "addressLocality": "Rishikesh",
-              "addressRegion": "Uttarakhand",
-              "postalCode": "249192",
-              "addressCountry": "IN"
+            "@type": "CourseInstance",
+            "courseMode": "onsite",
+            "duration": "P24D",
+            "location": {
+                "@type": "Place",
+                "name": "YogaGarhi Ashram",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Rishikesh",
+                    "addressRegion": "Uttarakhand",
+                    "addressCountry": "India"
+                }
             }
-          },
-          "offers": [
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "195",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": course.price.replace("$", ""),
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": pageUrl
+        }
+    };
+
+    /* =========================
+       FAQ SCHEMA
+    ========================= */
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
             {
-              "@type": "Offer",
-              "category": "Twin Sharing Room",
-              "price": "1550",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/LimitedAvailability",
-              "validFrom": "2026-01-01",
-              "url": "https://www.yogagarhi.com/200-hour-yoga-teacher-training-rishikesh"
+                "@type": "Question",
+                "name": "Is this 200 Hour YTTC in Rishikesh certified with Yoga Alliance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, our 200 Hour Yoga Teacher Training in Rishikesh is fully certified with Yoga Alliance USA (RYT 200). Upon completion, you can register as a certified yoga teacher internationally."
+                }
             },
             {
-              "@type": "Offer",
-              "category": "Private Room",
-              "price": "2000",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/LimitedAvailability",
-              "validFrom": "2026-01-01",
-              "url": "https://www.yogagarhi.com/200-hour-yoga-teacher-training-rishikesh"
+                "@type": "Question",
+                "name": "What is included in the 200 Hour Rishikesh course?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The course includes 24 days residential stay, 3 daily Ayurvedic vegetarian meals, course manual, Yoga Alliance certification, Ganga excursions, and full instruction in Hatha, Ashtanga, Anatomy, and Philosophy."
+                }
             }
-          ]
-        }
-      }
-    ]
-  };
+        ]
+    };
 
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <Rishikesh200HourLanding />
-    </>
-  );
+    /* =========================
+       BREADCRUMB SCHEMA
+    ========================= */
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.yogagarhi.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "200 Hour Yoga Teacher Training in Rishikesh",
+                "item": pageUrl
+            }
+        ]
+    };
+
+    return (
+        <>
+            {/* Course Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(courseSchema),
+                }}
+            />
+
+            {/* FAQ Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(faqSchema),
+                }}
+            />
+
+            {/* Breadcrumb Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(breadcrumbSchema),
+                }}
+            />
+
+            <Course200HourRishikesh />
+        </>
+    );
 }

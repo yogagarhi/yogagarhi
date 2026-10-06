@@ -9,8 +9,6 @@ export default function WhatsAppButton() {
     const isLandingPage = [
         "/yoga-anatomy-masterclass",
         "/yoga-anatomy-mastery",
-        "/200-hour-yoga-teacher-training-rishikesh",
-        "/200-hour-yoga-teacher-training-in-rishikesh",
         "/pre-yttc-prep",
         "/teacher-training-foundation",
         "/yogic-energy"
