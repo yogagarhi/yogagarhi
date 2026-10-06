@@ -372,24 +372,36 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
       <main>
         {/* ========================================================================= */}
-        {/* 2. HERO SECTION (MATCHING SCREENSHOT 1 & 2) */}
+        {/* 2. HERO SECTION WITH BACKGROUND PHOTO & OVERLAY HEADINGS */}
         {/* ========================================================================= */}
-        <section className="relative pt-8 pb-14 md:pt-12 md:pb-18 bg-[#120D09]/40 backdrop-blur-[2px] text-white overflow-hidden">
+        <section className="relative pt-10 pb-14 md:pt-16 md:pb-20 text-white overflow-hidden border-b border-[#3E2818]/60">
           
-          {/* Subtle background glow */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-80 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#634026]/40 via-transparent to-transparent pointer-events-none" />
+          {/* Background Photo with High-Definition Projection & Luxury Obsidian Overlay */}
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            <Image
+              src="/sachin-anatomy-projection.jpg"
+              alt="Acharya Sachin Kotiyal live yoga anatomy projection mapping"
+              fill
+              className="object-cover object-center opacity-30 md:opacity-35 scale-100"
+              priority
+            />
+            {/* Multi-layered dark obsidian gradient to ensure text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0B0806]/95 via-[#0E0A07]/80 to-[#0B0806]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(99,64,38,0.35)_0%,_transparent_75%)]" />
+          </div>
 
           <div className="max-w-5xl mx-auto px-4 relative z-10 text-center">
             
             {/* Top Pill Badge: Limited Seats - Live Online Workshop */}
-            <div className="inline-flex items-center gap-2 bg-[#18110C]/90 border border-[#634026] px-4 py-1.5 rounded-full text-xs md:text-sm font-medium text-[#f5b942] mb-6 shadow-sm">
+            <div className="inline-flex items-center gap-2 bg-[#18110C]/90 border border-[#f5b942]/50 px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold text-[#f5b942] mb-6 shadow-lg backdrop-blur-md">
+              <span className="w-2 h-2 rounded-full bg-[#ea580c] animate-ping" />
               <span>🔥 Limited Seats - Live Online Workshop</span>
             </div>
 
-            {/* Main Heading (H1) with Colored & Gold Highlighting */}
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.35rem] font-bold text-white leading-[1.18] tracking-tight mb-4 max-w-4xl mx-auto">
+            {/* Main Heading (H1) Typed Directly Over the Photo */}
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white leading-[1.18] tracking-tight mb-4 max-w-4xl mx-auto drop-shadow-md">
               Master{" "}
-              <span className="bg-gradient-to-r from-[#ffd700] via-[#f5b942] to-[#ea580c] bg-clip-text text-transparent font-black drop-shadow-sm">
+              <span className="bg-gradient-to-r from-[#ffd700] via-[#f5b942] to-[#ea580c] bg-clip-text text-transparent font-black">
                 Yoga Anatomy
               </span>{" "}
               & Learn How to{" "}
@@ -398,11 +410,11 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               </span>
             </h1>
 
-            {/* Subheading */}
-            <p className="text-base sm:text-lg md:text-xl font-semibold text-[#f5b942] max-w-3xl mx-auto leading-relaxed mb-2.5">
+            {/* Subheading Typed Directly Over the Photo */}
+            <p className="text-base sm:text-xl md:text-2xl font-bold text-[#f5b942] max-w-3xl mx-auto leading-relaxed mb-3 drop-shadow-sm">
               Understand movement, alignment, mobility, and injury prevention.
             </p>
-            <p className="text-xs sm:text-sm md:text-base text-[#D0BDA8] max-w-2xl mx-auto leading-relaxed mb-8">
+            <p className="text-xs sm:text-sm md:text-base text-[#E8D9C8] max-w-2xl mx-auto leading-relaxed mb-8">
               A live 2-hour deep-dive for yoga teachers and serious practitioners — learn the science behind safe, transformative yoga that most teacher training courses never cover.
             </p>
 
@@ -583,46 +595,6 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               <div className="bg-[#18110C]/90 border border-[#523520] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#F5EBE1]">
                 <span>💻</span>
                 <span className="font-semibold text-white">Live on Zoom</span>
-              </div>
-            </div>
-
-            {/* ========================================================================= */}
-            {/* LIVE TEACHING PROJECTION DEMONSTRATION PHOTO CARD */}
-            {/* ========================================================================= */}
-            <div className="max-w-2xl mx-auto mb-8 bg-[#0E0A07]/95 rounded-3xl border-2 border-[#f5b942]/70 p-3 sm:p-4 shadow-[0_0_50px_rgba(245,185,66,0.18)] overflow-hidden text-left backdrop-blur-md">
-              <div className="px-2 py-1.5 flex items-center justify-between text-[11px] sm:text-xs font-bold text-[#f5b942] uppercase tracking-wider mb-2">
-                <span className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#22c55e] animate-pulse" />
-                  Live Workshop Demonstration
-                </span>
-                <span className="text-[#DBC4AC] normal-case font-medium">
-                  Rishikesh Masterclass
-                </span>
-              </div>
-
-              <div className="relative aspect-[4/3] sm:aspect-[16/10] w-full rounded-2xl overflow-hidden border border-[#523520] shadow-inner bg-black">
-                <Image
-                  src="/sachin-anatomy-projection.jpg"
-                  alt="Acharya Sachin Kotiyal conducting live functional yoga anatomy & pelvic girdle projection mapping on student"
-                  fill
-                  className="object-cover object-center"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0806]/95 via-[#0B0806]/30 to-transparent pointer-events-none" />
-                
-                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-[#0E0A07]/90 backdrop-blur-md border border-[#f5b942]/40 rounded-xl p-3 text-left">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="bg-[#ea580c] text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-md">
-                      Interactive Biomechanics
-                    </span>
-                    <span className="text-[11px] text-[#f5b942] font-mono font-bold">
-                      Pelvic Girdle & Ischium Alignment
-                    </span>
-                  </div>
-                  <p className="text-xs sm:text-[13px] text-[#F5EBE1] leading-snug">
-                    Acharya Sachin Kotiyal demonstrating real-time skeletal projection mapping to pinpoint exact pelvic tilt, spinal load distribution, and hip joint mechanics on students.
-                  </p>
-                </div>
               </div>
             </div>
 
