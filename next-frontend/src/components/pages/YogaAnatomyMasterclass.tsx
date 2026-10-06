@@ -79,36 +79,36 @@ function getUpcomingSunday(): { fullDate: string; shortDate: string; ordinalDate
 // Video Testimonials Data
 const videoTestimonials = [
   {
-    id: "OGmWr_aC4WA",
+    id: "KFnHagVMDtI",
     name: "Fernanda",
     country: "Australia",
     role: "RYT 200 Teacher",
     quote: "Sachin Ji transformed my understanding of spine & hip alignment completely.",
-    thumb: "https://img.youtube.com/vi/OGmWr_aC4WA/hqdefault.jpg"
+    thumb: "https://img.youtube.com/vi/KFnHagVMDtI/hqdefault.jpg"
   },
   {
-    id: "2pLe6NHa5WU",
+    id: "3_mJI4flz_4",
     name: "Gana",
     country: "India",
     role: "Yoga Instructor",
     quote: "The clinical biomechanics perspective is something you will never get in standard TTCs.",
-    thumb: "https://img.youtube.com/vi/2pLe6NHa5WU/hqdefault.jpg"
+    thumb: "https://img.youtube.com/vi/3_mJI4flz_4/hqdefault.jpg"
   },
   {
-    id: "30jjvcqHEwA",
+    id: "ta-5jHBCpKY",
     name: "Joss",
     country: "France",
     role: "Dedicated Practitioner",
     quote: "Rotator cuff safety in Chaturanga finally made practical sense without medical jargon.",
-    thumb: "https://img.youtube.com/vi/30jjvcqHEwA/hqdefault.jpg"
+    thumb: "https://img.youtube.com/vi/ta-5jHBCpKY/hqdefault.jpg"
   },
   {
-    id: "J2LT9xn4RBE",
+    id: "9uGW2o3jTGM",
     name: "Aarzu",
     country: "Germany",
     role: "Vinyasa Teacher",
     quote: "I went from being terrified of student injuries to teaching with total clinical precision.",
-    thumb: "https://img.youtube.com/vi/J2LT9xn4RBE/hqdefault.jpg"
+    thumb: "https://img.youtube.com/vi/9uGW2o3jTGM/hqdefault.jpg"
   },
 ];
 
