@@ -159,8 +159,8 @@ const whatsappReviews = [
 
 
 // =============================================================================
-// 3D ANIMATED HOLOGRAPHIC FUNCTIONAL ANATOMY CANVAS BACKGROUND
-// Renders real-time 3D rotating spine vertebrae, myofascial kinetic mesh & energy nodes
+// DUAL 3D ANIMATED HOLOGRAPHIC FUNCTIONAL ANATOMY CANVAS BACKGROUND
+// Renders real-time 3D rotating Spine & 3D Pelvis Girdle, Hip Joints & Kinetic Mesh
 // =============================================================================
 function Anatomy3DCanvas() {
   const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
@@ -191,112 +191,146 @@ function Anatomy3DCanvas() {
     const handleMouseMove = (e: MouseEvent) => {
       mouseX = (e.clientX - width / 2) / (width / 2);
       mouseY = (e.clientY - height / 2) / (height / 2);
-      targetRotY = mouseX * 0.4;
-      targetRotX = -mouseY * 0.4;
+      targetRotY = mouseX * 0.6;
+      targetRotX = -mouseY * 0.6;
     };
 
     window.addEventListener("resize", handleResize);
     window.addEventListener("mousemove", handleMouseMove);
 
-    // 1. Generate 3D Spinal Vertebrae Chain (33 Vertebrae)
-    const spineNodes: { x: number; y: number; z: number; label?: string; color: string }[] = [];
-    const totalVertebrae = 30;
+    // 1. Generate 3D Spine Vertebrae (C1-C7, T1-T12, L1-L5, Sacrum)
+    const spineNodes: { x: number; y: number; z: number; label: string; color: string }[] = [];
+    const totalVertebrae = 24;
     for (let i = 0; i < totalVertebrae; i++) {
       const t = (i / totalVertebrae) * Math.PI * 2;
-      const y = (i - totalVertebrae / 2) * 22;
-      const x = Math.sin(t * 1.5) * 25;
-      const z = Math.cos(t * 1.5) * 25;
+      const y = (i - 12) * 16;
+      const x = Math.sin(t * 1.5) * 18;
+      const z = Math.cos(t * 1.5) * 18;
       let label = "";
       let color = "#f5b942";
       if (i < 7) { label = `C${i + 1}`; color = "#ffd700"; }
       else if (i < 19) { label = `T${i - 6}`; color = "#f59e0b"; }
-      else if (i < 24) { label = `L${i - 18}`; color = "#ea580c"; }
-      else { label = "Sacrum"; color = "#38bdf8"; }
+      else { label = `L${i - 18}`; color = "#ea580c"; }
 
       spineNodes.push({ x, y, z, label, color });
     }
 
-    // 2. Generate 3D Myofascial Kinetic Cloud Nodes
+    // 2. Generate 3D Pelvic Girdle & Hip Joint Geometry
+    const pelvisLines: { from: [number, number, number]; to: [number, number, number]; color: string; label?: string }[] = [
+      // Sacrum Base
+      { from: [-20, -30, 0], to: [20, -30, 0], color: "#f5b942" },
+      { from: [-20, -30, 0], to: [0, 30, -15], color: "#f5b942" },
+      { from: [20, -30, 0], to: [0, 30, -15], color: "#f5b942" },
+
+      // Left Ilium Wing & Crest
+      { from: [-20, -30, 0], to: [-65, -55, 20], color: "#ffd700", label: "Iliac Crest" },
+      { from: [-65, -55, 20], to: [-100, -20, 30], color: "#ffd700" },
+      { from: [-100, -20, 30], to: [-85, 25, 25], color: "#ffd700" },
+      { from: [-85, 25, 25], to: [-55, 45, 15], color: "#ffd700" },
+      { from: [-55, 45, 15], to: [-20, 35, 5], color: "#f59e0b" },
+
+      // Right Ilium Wing & Crest
+      { from: [20, -30, 0], to: [65, -55, 20], color: "#ffd700", label: "Iliac Crest" },
+      { from: [65, -55, 20], to: [100, -20, 30], color: "#ffd700" },
+      { from: [100, -20, 30], to: [85, 25, 25], color: "#ffd700" },
+      { from: [85, 25, 25], to: [55, 45, 15], color: "#ffd700" },
+      { from: [55, 45, 15], to: [20, 35, 5], color: "#f59e0b" },
+
+      // Pubic Symphysis Joint
+      { from: [-20, 35, 5], to: [0, 42, 10], color: "#38bdf8" },
+      { from: [20, 35, 5], to: [0, 42, 10], color: "#38bdf8", label: "Pubic Symphysis" },
+
+      // Left Hip Joint Socket (Acetabulum) & Femur
+      { from: [-85, 25, 25], to: [-110, 65, 15], color: "#ea580c", label: "Hip Socket (Acetabulum)" },
+      { from: [-110, 65, 15], to: [-90, 150, 0], color: "#f59e0b", label: "Femur Bone" },
+
+      // Right Hip Joint Socket (Acetabulum) & Femur
+      { from: [85, 25, 25], to: [110, 65, 15], color: "#ea580c", label: "Hip Socket (Acetabulum)" },
+      { from: [110, 65, 15], to: [90, 150, 0], color: "#f59e0b", label: "Femur Bone" },
+
+      // Ischial Tuberosity (Sit Bones)
+      { from: [-55, 45, 15], to: [-35, 80, -20], color: "#38bdf8", label: "Sit Bone" },
+      { from: [55, 45, 15], to: [35, 80, -20], color: "#38bdf8", label: "Sit Bone" },
+      { from: [-35, 80, -20], to: [0, 30, -15], color: "#38bdf8" },
+      { from: [35, 80, -20], to: [0, 30, -15], color: "#38bdf8" },
+    ];
+
+    // 3. Generate 3D Connective Tissue (Myofascial Cloud)
     const cloudNodes: { x: number; y: number; z: number; vx: number; vy: number; vz: number; size: number }[] = [];
-    const numCloud = 50;
+    const numCloud = 60;
     for (let i = 0; i < numCloud; i++) {
       cloudNodes.push({
-        x: (Math.random() - 0.5) * 800,
-        y: (Math.random() - 0.5) * 800,
+        x: (Math.random() - 0.5) * 1000,
+        y: (Math.random() - 0.5) * 900,
         z: (Math.random() - 0.5) * 600,
-        vx: (Math.random() - 0.5) * 0.3,
-        vy: (Math.random() - 0.5) * 0.3,
-        vz: (Math.random() - 0.5) * 0.3,
-        size: Math.random() * 2 + 1,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        vz: (Math.random() - 0.5) * 0.35,
+        size: Math.random() * 2.5 + 1.2,
       });
     }
 
     let time = 0;
 
     const render = () => {
-      time += 0.012;
-      rotX += (targetRotX - rotX) * 0.05;
-      rotY += (targetRotY + time * 0.25 - rotY) * 0.05;
+      time += 0.014;
+      rotX += (targetRotX - rotX) * 0.06;
+      rotY += (targetRotY + time * 0.28 - rotY) * 0.06;
 
       ctx.clearRect(0, 0, width, height);
 
-      const fov = 450;
-      const centerX = width > 1024 ? width * 0.8 : width * 0.5;
-      const centerY = height * 0.45;
+      const fov = 480;
 
       // 3D Projection Helper
-      const project = (x: number, y: number, z: number) => {
-        // Rotate Y
-        const cosY = Math.cos(rotY);
-        const sinY = Math.sin(rotY);
+      const projectAt = (cx: number, cy: number, x: number, y: number, z: number, rY: number, rX: number) => {
+        const cosY = Math.cos(rY);
+        const sinY = Math.sin(rY);
         const x1 = x * cosY - z * sinY;
         const z1 = z * cosY + x * sinY;
 
-        // Rotate X
-        const cosX = Math.cos(rotX);
-        const sinX = Math.sin(rotX);
+        const cosX = Math.cos(rX);
+        const sinX = Math.sin(rX);
         const y2 = y * cosX - z1 * sinX;
         const z2 = z1 * cosX + y * sinX + 500;
 
         if (z2 <= 0) return null;
         const scale = fov / z2;
         return {
-          x: centerX + x1 * scale,
-          y: centerY + y2 * scale,
+          x: cx + x1 * scale,
+          y: cy + y2 * scale,
           scale,
           z: z2,
         };
       };
 
-      // Draw 3D Myofascial Kinetic Cloud Connections
+      // 1. Draw 3D Connective Fascia Matrix across screen
       for (let i = 0; i < cloudNodes.length; i++) {
         const n = cloudNodes[i];
         n.x += n.vx;
         n.y += n.vy;
         n.z += n.vz;
 
-        if (n.x > 400 || n.x < -400) n.vx *= -1;
-        if (n.y > 400 || n.y < -400) n.vy *= -1;
+        if (n.x > 500 || n.x < -500) n.vx *= -1;
+        if (n.y > 450 || n.y < -450) n.vy *= -1;
         if (n.z > 300 || n.z < -300) n.vz *= -1;
 
-        const p = project(n.x, n.y, n.z);
+        const p = projectAt(width * 0.5, height * 0.5, n.x, n.y, n.z, rotY * 0.5, rotX * 0.5);
         if (!p) continue;
 
-        ctx.fillStyle = "rgba(245, 185, 66, 0.4)";
+        ctx.fillStyle = "rgba(245, 185, 66, 0.5)";
         ctx.beginPath();
         ctx.arc(p.x, p.y, n.size * p.scale, 0, Math.PI * 2);
         ctx.fill();
 
-        // Connect nearby nodes
         for (let j = i + 1; j < cloudNodes.length; j++) {
           const n2 = cloudNodes[j];
           const dist = Math.hypot(n.x - n2.x, n.y - n2.y, n.z - n2.z);
-          if (dist < 130) {
-            const p2 = project(n2.x, n2.y, n2.z);
+          if (dist < 135) {
+            const p2 = projectAt(width * 0.5, height * 0.5, n2.x, n2.y, n2.z, rotY * 0.5, rotX * 0.5);
             if (!p2) continue;
-            const alpha = (1 - dist / 130) * 0.15;
-            ctx.strokeStyle = `rgba(212, 175, 55, ${alpha})`;
-            ctx.lineWidth = 1 * p.scale;
+            const alpha = (1 - dist / 135) * 0.25;
+            ctx.strokeStyle = `rgba(245, 185, 66, ${alpha})`;
+            ctx.lineWidth = 1.2 * p.scale;
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
@@ -305,18 +339,20 @@ function Anatomy3DCanvas() {
         }
       }
 
-      // Draw 3D Animated Spine & Vertebrae
+      // 2. Draw 3D Rotating Spine on the Left / Center-Left
+      const spineCenterX = width > 1024 ? width * 0.16 : width * 0.5;
+      const spineCenterY = height * 0.42;
+
       const projectedSpine = spineNodes.map((node, i) => {
-        // Add waving motion
-        const waveX = node.x + Math.sin(time * 2 + i * 0.3) * 8;
-        const waveZ = node.z + Math.cos(time * 2 + i * 0.3) * 8;
+        const waveX = node.x + Math.sin(time * 2 + i * 0.3) * 6;
+        const waveZ = node.z + Math.cos(time * 2 + i * 0.3) * 6;
         return {
           ...node,
-          proj: project(waveX, node.y, waveZ),
+          proj: projectAt(spineCenterX, spineCenterY, waveX, node.y, waveZ, rotY, rotX),
         };
       });
 
-      // Draw Spine Linking Line & Discs
+      // Spine Central Linking Line
       ctx.beginPath();
       let first = true;
       projectedSpine.forEach((item) => {
@@ -328,49 +364,76 @@ function Anatomy3DCanvas() {
           ctx.lineTo(item.proj.x, item.proj.y);
         }
       });
-      ctx.strokeStyle = "rgba(245, 185, 66, 0.45)";
-      ctx.lineWidth = 2.5;
+      ctx.strokeStyle = "rgba(245, 185, 66, 0.65)";
+      ctx.lineWidth = 3;
       ctx.stroke();
 
-      // Draw Each Vertebrae Ring & Floating Hologram Node
+      // Draw Vertebrae Discs
       projectedSpine.forEach((item) => {
         if (!item.proj) return;
         const { x, y, scale } = item.proj;
 
-        // Vertebrae Disc Ellipse in 3D
         ctx.strokeStyle = item.color;
-        ctx.lineWidth = 1.8 * scale;
+        ctx.lineWidth = 2 * scale;
         ctx.beginPath();
-        ctx.ellipse(x, y, 18 * scale, 7 * scale, rotY, 0, Math.PI * 2);
+        ctx.ellipse(x, y, 24 * scale, 8 * scale, rotY, 0, Math.PI * 2);
         ctx.stroke();
 
-        // Glowing center node
         ctx.fillStyle = item.color;
         ctx.beginPath();
-        ctx.arc(x, y, 3.5 * scale, 0, Math.PI * 2);
+        ctx.arc(x, y, 4.5 * scale, 0, Math.PI * 2);
         ctx.fill();
 
-        // High resolution coordinate markers on large screens
         if (width > 1024 && item.label && scale > 0.65) {
-          ctx.fillStyle = "rgba(245, 185, 66, 0.85)";
+          ctx.fillStyle = "rgba(255, 215, 0, 0.9)";
           ctx.font = `${Math.max(8, Math.floor(10 * scale))}px monospace`;
-          ctx.fillText(item.label, x + 24 * scale, y + 4 * scale);
+          ctx.fillText(item.label, x + 28 * scale, y + 4 * scale);
         }
       });
 
-      // Draw Holographic Biomechanics Ring Orbits
-      const ringY = Math.sin(time) * 150;
-      for (let angle = 0; angle < Math.PI * 2; angle += Math.PI / 8) {
-        const ringRadius = 75;
-        const rx = Math.cos(angle + time * 0.5) * ringRadius;
-        const rz = Math.sin(angle + time * 0.5) * ringRadius;
-        const rp = project(rx, ringY, rz);
-        if (rp) {
-          ctx.fillStyle = "rgba(56, 189, 248, 0.6)";
+      // 3. Draw 3D Rotating Pelvis Girdle & Hip Joint on Right Side
+      const pelvisCenterX = width > 1024 ? width * 0.84 : width * 0.5;
+      const pelvisCenterY = width > 1024 ? height * 0.42 : height * 0.65;
+      const pelvisRotY = rotY + Math.PI * 0.3; // slightly offset rotation
+
+      pelvisLines.forEach((line) => {
+        const p1 = projectAt(pelvisCenterX, pelvisCenterY, line.from[0], line.from[1], line.from[2], pelvisRotY, rotX);
+        const p2 = projectAt(pelvisCenterX, pelvisCenterY, line.to[0], line.to[1], line.to[2], pelvisRotY, rotX);
+        if (!p1 || !p2) return;
+
+        ctx.strokeStyle = line.color;
+        ctx.lineWidth = 2.5 * p1.scale;
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.stroke();
+
+        // Glowing Joint Nodes
+        ctx.fillStyle = line.color;
+        ctx.beginPath();
+        ctx.arc(p1.x, p1.y, 4.5 * p1.scale, 0, Math.PI * 2);
+        ctx.arc(p2.x, p2.y, 4.5 * p2.scale, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Acetabulum Orbit Ring & Labels
+        if (line.label && p1.scale > 0.65 && width > 1024) {
+          ctx.strokeStyle = "rgba(56, 189, 248, 0.7)";
           ctx.beginPath();
-          ctx.arc(rp.x, rp.y, 2 * rp.scale, 0, Math.PI * 2);
-          ctx.fill();
+          ctx.arc(p1.x, p1.y, 12 * p1.scale, 0, Math.PI * 2);
+          ctx.stroke();
+
+          ctx.fillStyle = "#ffd700";
+          ctx.font = `${Math.max(9, Math.floor(10 * p1.scale))}px monospace`;
+          ctx.fillText(line.label, p1.x + 16 * p1.scale, p1.y + 4);
         }
+      });
+
+      // Holographic Title Labels in 3D Space (Desktop)
+      if (width > 1024) {
+        ctx.fillStyle = "rgba(245, 185, 66, 0.9)";
+        ctx.font = "bold 11px monospace";
+        ctx.fillText("🦴 3D SPINAL COLUMN (C1–L5)", spineCenterX - 85, spineCenterY - 220);
+        ctx.fillText("📐 3D PELVIC GIRDLE & HIPS", pelvisCenterX - 85, pelvisCenterY - 140);
       }
 
       animationFrameId = requestAnimationFrame(render);
@@ -388,7 +451,7 @@ function Anatomy3DCanvas() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-45 mix-blend-screen"
+      className="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-80"
     />
   );
 }
@@ -611,7 +674,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         {/* ========================================================================= */}
         {/* 2. HERO SECTION (MATCHING SCREENSHOT 1 & 2) */}
         {/* ========================================================================= */}
-        <section className="relative pt-8 pb-14 md:pt-12 md:pb-18 bg-[#120D09] text-white overflow-hidden">
+        <section className="relative pt-8 pb-14 md:pt-12 md:pb-18 bg-[#120D09]/40 backdrop-blur-[2px] text-white overflow-hidden">
           
           {/* Subtle background glow */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-80 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#634026]/40 via-transparent to-transparent pointer-events-none" />
@@ -1083,7 +1146,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         {/* ========================================================================= */}
         {/* 5. INSTRUCTOR SPOTLIGHT: ACHARYA SACHIN KOTIYAL */}
         {/* ========================================================================= */}
-        <section className="py-16 md:py-20 bg-[#100B07] text-white border-b border-[#3E2818]">
+        <section className="py-16 md:py-20 bg-[#100B07]/50 backdrop-blur-[2px] text-white border-b border-[#3E2818]">
           <div className="max-w-5xl mx-auto px-4">
             
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
