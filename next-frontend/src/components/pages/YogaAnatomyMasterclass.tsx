@@ -314,10 +314,10 @@ export default function YogaAnatomyMasterclass() {
               {/* Video Preview Container */}
               <div 
                 className="relative aspect-video rounded-xl overflow-hidden bg-black group cursor-pointer"
-                onClick={() => setActiveVideoModal("OGmWr_aC4WA")}
+                onClick={() => setActiveVideoModal("iwhPI8Oric4")}
               >
                 <Image
-                  src="https://img.youtube.com/vi/OGmWr_aC4WA/hqdefault.jpg"
+                  src="https://img.youtube.com/vi/iwhPI8Oric4/hqdefault.jpg"
                   alt="Student Review - Acharya Sachin Kotiyal Yoga Anatomy Masterclass"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
@@ -338,7 +338,7 @@ export default function YogaAnatomyMasterclass() {
                   "Hear authentic student feedback, teaching transformation, and real class reviews."
                 </p>
                 <button
-                  onClick={() => setActiveVideoModal("OGmWr_aC4WA")}
+                  onClick={() => setActiveVideoModal("iwhPI8Oric4")}
                   className="text-[#f5b942] hover:underline font-semibold flex items-center gap-1 shrink-0"
                 >
                   Watch on YouTube ↗
