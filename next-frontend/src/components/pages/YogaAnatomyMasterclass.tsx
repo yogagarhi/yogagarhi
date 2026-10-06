@@ -577,10 +577,11 @@ export default function YogaAnatomyMasterclass() {
               <div className="lg:col-span-5 text-center">
                 <div className="relative w-64 h-80 sm:w-72 sm:h-96 mx-auto rounded-3xl overflow-hidden border-4 border-[#f5b942]/60 shadow-2xl bg-[#041a14]">
                   <Image
-                    src={getCloudinaryUrl("founder-sachin-ji.jpg") || getCloudinaryUrl("sachin-ji.webp") || "/hero-yoga-group.jpg"}
+                    src="/sachin-ji-instructor.jpg"
                     alt="Acharya Sachin Kotiyal - Founder YogaGarhi"
                     fill
                     className="object-cover object-top"
+                    priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#041a14] via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-0 right-0 text-center">
