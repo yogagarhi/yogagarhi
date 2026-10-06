@@ -387,25 +387,23 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             </div>
 
             {/* Main Heading (H1) with Colored & Gold Highlighting */}
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-white leading-[1.18] tracking-tight mb-5 max-w-4xl mx-auto">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.35rem] font-bold text-white leading-[1.18] tracking-tight mb-4 max-w-4xl mx-auto">
               Master{" "}
               <span className="bg-gradient-to-r from-[#ffd700] via-[#f5b942] to-[#ea580c] bg-clip-text text-transparent font-black drop-shadow-sm">
-                Functional Yoga Anatomy
-              </span>
-              ,{" "}
-              <span className="text-[#f5b942] underline decoration-[#f5b942]/40 decoration-wavy underline-offset-4 font-bold">
-                Alignment
+                Yoga Anatomy
               </span>{" "}
-              &{" "}
+              & Learn How to{" "}
               <span className="bg-gradient-to-r from-[#f5b942] via-[#ffd700] to-[#f59e0b] bg-clip-text text-transparent font-black">
-                Teaching Methodology
-              </span>{" "}
-              in One Workshop
+                Apply It in Every Pose
+              </span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="text-sm sm:text-base md:text-lg text-[#E8D9C8] max-w-3xl mx-auto leading-relaxed mb-8">
-              A live 2-hour deep-dive for yoga teachers and serious practitioners — learn the science behind safe, effective yoga that most teacher training courses never cover.
+            {/* Subheading */}
+            <p className="text-base sm:text-lg md:text-xl font-semibold text-[#f5b942] max-w-3xl mx-auto leading-relaxed mb-2.5">
+              Understand movement, alignment, mobility, and injury prevention.
+            </p>
+            <p className="text-xs sm:text-sm md:text-base text-[#D0BDA8] max-w-2xl mx-auto leading-relaxed mb-8">
+              A live 2-hour deep-dive for yoga teachers and serious practitioners — learn the science behind safe, transformative yoga that most teacher training courses never cover.
             </p>
 
             
@@ -509,6 +507,19 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                     <span className="bg-[#22c55e]/20 text-[#22c55e] border border-[#22c55e]/40 text-[10px] font-bold px-2.5 py-1 rounded-full shrink-0">
                       Crucial Alignment Rule
                     </span>
+                  </div>
+
+                  <div className="relative w-full h-48 sm:h-64 rounded-xl overflow-hidden border border-[#523520] my-2 shadow-md">
+                    <Image
+                      src="/sachin-anatomy-projection.jpg"
+                      alt="Acharya Sachin Kotiyal live functional yoga anatomy projection on student"
+                      fill
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-2.5 text-[11px] text-[#ffd700] font-mono flex items-center justify-between">
+                      <span>📸 Live Workshop: 3D Pelvic Girdle & Ischium Functional Alignment</span>
+                      <span className="text-white/80">Rishikesh</span>
+                    </div>
                   </div>
 
                   <p className="text-xs sm:text-sm text-[#E8D9C8] leading-relaxed">
