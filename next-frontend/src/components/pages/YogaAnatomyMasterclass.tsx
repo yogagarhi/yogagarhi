@@ -35,21 +35,23 @@ import {
   ShieldAlert,
   Flame,
   BadgeCheck,
-  Volume2
+  Volume2,
+  HelpCircle,
+  Tv,
+  CheckCheck
 } from "lucide-react";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
 
 // Dynamic Next Sunday Date Calculator
-function getUpcomingSunday(): { fullDate: string; shortDate: string; isoDate: string } {
+function getUpcomingSunday(): { fullDate: string; shortDate: string; ordinalDate: string; isoDate: string } {
   const now = new Date();
   const currentDay = now.getDay(); // 0 is Sunday
   let daysUntilSunday = (7 - currentDay) % 7;
 
-  // If today is Sunday and past 12:30 PM IST (7:00 AM UTC), target next Sunday
   const currentHourUTC = now.getUTCHours();
   const currentMinuteUTC = now.getUTCMinutes();
   const totalMinutesUTC = currentHourUTC * 60 + currentMinuteUTC;
-  if (currentDay === 0 && totalMinutesUTC > 450) {
+  if (currentDay === 0 && totalMinutesUTC > 810) { // past 7:00 PM IST (13:30 UTC)
     daysUntilSunday = 7;
   } else if (daysUntilSunday === 0 && currentDay !== 0) {
     daysUntilSunday = 7;
@@ -57,22 +59,21 @@ function getUpcomingSunday(): { fullDate: string; shortDate: string; isoDate: st
 
   const targetDate = new Date(now.getTime() + daysUntilSunday * 24 * 60 * 60 * 1000);
 
-  const fullDate = targetDate.toLocaleDateString("en-US", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+  const dayNum = targetDate.getDate();
+  const suffix = (dayNum % 10 === 1 && dayNum !== 11) ? "st" :
+                 (dayNum % 10 === 2 && dayNum !== 12) ? "nd" :
+                 (dayNum % 10 === 3 && dayNum !== 13) ? "rd" : "th";
+  
+  const monthName = targetDate.toLocaleDateString("en-US", { month: "short" });
+  const monthFullName = targetDate.toLocaleDateString("en-US", { month: "long" });
+  const year = targetDate.getFullYear();
 
-  const shortDate = targetDate.toLocaleDateString("en-US", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
-
+  const ordinalDate = `Sunday, ${dayNum}${suffix} ${monthName}`;
+  const fullDate = `Sunday, ${dayNum}${suffix} ${monthFullName} ${year}`;
+  const shortDate = `${dayNum} ${monthName} ${year}`;
   const isoDate = targetDate.toISOString().split("T")[0];
 
-  return { fullDate, shortDate, isoDate };
+  return { fullDate, shortDate, ordinalDate, isoDate };
 }
 
 // Video Testimonials Data
@@ -141,8 +142,9 @@ const whatsappReviews = [
 
 export default function YogaAnatomyMasterclass() {
   const [sundayInfo, setSundayInfo] = useState({
-    fullDate: "Sunday, 11 October 2026",
+    fullDate: "Sunday, 11th October 2026",
     shortDate: "11 Oct 2026",
+    ordinalDate: "Sunday, 11th Oct",
     isoDate: "2026-10-11",
   });
 
@@ -175,7 +177,7 @@ export default function YogaAnatomyMasterclass() {
     }, 1000);
 
     const handleScroll = () => {
-      setShowStickyBar(window.scrollY > 350);
+      setShowStickyBar(window.scrollY > 400);
     };
     window.addEventListener("scroll", handleScroll);
 
@@ -217,280 +219,638 @@ export default function YogaAnatomyMasterclass() {
     setOpenFaq(openFaq === index ? null : index);
   };
 
-  const sachinPhoto = getCloudinaryUrl("founder-sachin-ji.jpg") || getCloudinaryUrl("sachin-ji.webp") || "/hero-yoga-group.jpg";
-
   return (
-    <div className="min-h-screen bg-[#fdfbf7] text-[#1c2420] font-sans selection:bg-[#f5b942]/30 selection:text-[#04332D]">
+    <div className="min-h-screen bg-[#072c22] text-[#eef6f3] font-sans selection:bg-[#f5b942]/30 selection:text-white">
       
-      {/* 1. DEDICATED LANDING PAGE HEADER (NO LEAKAGE NAVIGATION) */}
-      <header className="sticky top-0 z-40 bg-[#04332D] text-white border-b border-[#0a4d44] shadow-md">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2">
-              <span className="font-serif text-2xl font-bold tracking-tight text-[#f5b942]">
+      {/* ========================================================================= */}
+      {/* 1. DEDICATED DARK GREEN HEADER (MATCHING SCREENSHOT 1) */}
+      {/* ========================================================================= */}
+      <header className="bg-[#0B3B2C] text-white border-b border-[#144f3c]/80 sticky top-0 z-40 backdrop-blur-md">
+        <div className="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
+          <div className="flex flex-col">
+            <div className="flex items-center gap-1.5">
+              <span className="font-serif text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#f5b942]">
                 YogaGarhi
               </span>
-              <span className="hidden sm:inline-block text-[11px] uppercase tracking-widest text-[#a3d9cf] font-medium border-l border-[#0d594f] pl-3">
-                Anatomy Masterclass
-              </span>
             </div>
+            <span className="text-[10px] md:text-[11px] text-[#a3c9bd] tracking-wide font-medium">
+              Learn what most yoga schools never teach
+            </span>
           </div>
 
-          <div className="flex items-center gap-3 md:gap-4">
-            <div className="hidden md:flex items-center gap-2 bg-[#09473e] px-3.5 py-1 rounded-full text-xs text-[#f5b942] font-semibold border border-[#0f6054]">
-              <span className="w-2 h-2 rounded-full bg-[#f5b942] animate-ping"></span>
-              Live Interactive Zoom | ₹1 Special
-            </div>
+          <div>
             <button
               onClick={openBookingModal}
-              className="bg-gradient-to-r from-[#e8720c] to-[#f59e0b] hover:from-[#d36407] hover:to-[#e08e06] text-white text-xs md:text-sm font-extrabold py-2 px-4 md:px-6 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+              className="bg-[#ea580c] hover:bg-[#d94e07] active:scale-95 text-white text-xs sm:text-sm font-bold py-2.5 px-5 sm:px-7 rounded-xl shadow-lg hover:shadow-orange-500/20 transition-all"
             >
-              Book Seat for ₹1 →
+              Book Now — ₹1
             </button>
           </div>
         </div>
       </header>
 
-      {/* 2. LIVE URGENCY & EXPIRING SCARCITY BAR */}
-      <div className="bg-gradient-to-r from-[#991b1b] via-[#dc2626] to-[#991b1b] text-white py-2 px-4 text-center text-xs md:text-sm font-semibold tracking-wide shadow-inner flex flex-wrap items-center justify-center gap-2 md:gap-4">
-        <div className="flex items-center gap-1.5">
-          <Zap className="w-4 h-4 text-yellow-300 animate-pulse" />
-          <span>Special 99% Off Access (Save ₹998):</span>
-        </div>
-        <div className="flex items-center gap-2 bg-black/40 px-3 py-0.5 rounded-full text-yellow-200 font-mono font-bold border border-yellow-400/30">
-          <Clock className="w-3.5 h-3.5" />
-          <span>
-            {String(timeLeft.minutes).padStart(2, "0")}:{String(timeLeft.seconds).padStart(2, "0")}
-          </span>
-        </div>
-        <span className="bg-white/20 px-2.5 py-0.5 rounded-full text-[11px] font-extrabold text-white uppercase tracking-wider">
-          Only 7 Seats Remaining at ₹1
-        </span>
-      </div>
-
       <main>
-        {/* 3. HERO SECTION (DIRECT RESPONSE FUNNEL DESIGN) */}
-        <section className="relative pt-8 pb-16 md:pt-14 md:pb-20 overflow-hidden bg-gradient-to-b from-[#f4eee4] via-[#fbf7f0] to-[#fdfbf7]">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#e3d7c5]/60 via-transparent to-transparent pointer-events-none" />
+        {/* ========================================================================= */}
+        {/* 2. HERO SECTION (MATCHING SCREENSHOT 1 & 2) */}
+        {/* ========================================================================= */}
+        <section className="relative pt-8 pb-14 md:pt-12 md:pb-18 bg-[#0B3B2C] text-white overflow-hidden">
           
+          {/* Subtle background glow */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-80 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#175c47]/50 via-transparent to-transparent pointer-events-none" />
+
           <div className="max-w-5xl mx-auto px-4 relative z-10 text-center">
             
-            {/* Live Masterclass Tag */}
-            <div className="inline-flex items-center gap-2 bg-[#04332D]/10 border border-[#04332D]/20 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold text-[#04332D] mb-5 shadow-sm">
-              <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse"></span>
-              <span>LIVE 2-HOUR APPLIED ANATOMY & BIOMECHANICS MASTERCLASS</span>
+            {/* Top Pill Badge: Limited Seats - Live Online Workshop */}
+            <div className="inline-flex items-center gap-2 bg-[#082e22]/90 border border-[#1f6b53] px-4 py-1.5 rounded-full text-xs md:text-sm font-medium text-[#f5b942] mb-6 shadow-sm">
+              <span>🔥 Limited Seats - Live Online Workshop</span>
             </div>
 
-            {/* Main Headline */}
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-[#04332D] leading-[1.18] tracking-tight mb-5 max-w-4xl mx-auto">
-              Master Applied Yoga Anatomy & Biomechanics — <span className="text-[#c45e07] italic underline decoration-[#f5b942]/70 decoration-wavy underline-offset-8">Teach With Clinical Precision</span> & Zero Fear of Injury
+            {/* Main Heading (H1) */}
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-white leading-[1.18] tracking-tight mb-5 max-w-4xl mx-auto">
+              Master Functional Yoga Anatomy, Alignment & Teaching Methodology in One Workshop
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg md:text-xl text-[#3d4d45] max-w-3xl mx-auto leading-relaxed mb-8">
-              Stop guessing alignment cues. Learn how live human joints, spinal discs, and myofascial chains actually function under yoga load from <strong className="text-[#04332D]">Ex-Army Yoga Therapy Specialist Acharya Sachin Kotiyal</strong>.
+            <p className="text-sm sm:text-base md:text-lg text-[#b8d9ce] max-w-3xl mx-auto leading-relaxed mb-8">
+              A live 2-hour deep-dive for yoga teachers and serious practitioners — learn the science behind safe, effective yoga that most teacher training courses never cover.
             </p>
 
-            {/* Trust Pills Bar */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto mb-8 text-left">
-              <div className="bg-white p-3.5 rounded-2xl border border-[#e2d8c9] shadow-sm flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-[#fdf3e2] text-[#c45e07]">
-                  <Calendar className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-[10px] font-bold text-[#718279] uppercase tracking-wider">Date</p>
-                  <p className="text-xs sm:text-sm font-bold text-[#04332D]">{sundayInfo.shortDate}</p>
-                </div>
+            {/* 4 Pill Badges Row */}
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-3xl mx-auto mb-10 text-xs sm:text-sm">
+              <div className="bg-[#082e22]/90 border border-[#1c6650] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#d1e8df]">
+                <span>📅</span>
+                <span className="font-semibold text-white">{sundayInfo.ordinalDate} · 7:00 PM IST</span>
               </div>
 
-              <div className="bg-white p-3.5 rounded-2xl border border-[#e2d8c9] shadow-sm flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-[#e6f4f1] text-[#04332D]">
-                  <Clock className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-[10px] font-bold text-[#718279] uppercase tracking-wider">Time (IST)</p>
-                  <p className="text-xs sm:text-sm font-bold text-[#04332D]">10:30 AM – 12:30 PM</p>
-                </div>
+              <div className="bg-[#082e22]/90 border border-[#1c6650] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#d1e8df]">
+                <span>⏱</span>
+                <span className="font-semibold text-white">2 Hours · Live</span>
               </div>
 
-              <div className="bg-white p-3.5 rounded-2xl border border-[#e2d8c9] shadow-sm flex items-center gap-3">
-                <div className="p-2 rounded-xl bg-[#eef7e9] text-[#2d6a4f]">
-                  <Globe2 className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-[10px] font-bold text-[#718279] uppercase tracking-wider">Language</p>
-                  <p className="text-xs sm:text-sm font-bold text-[#04332D]">English & Hindi</p>
-                </div>
+              <div className="bg-[#082e22]/90 border border-[#1c6650] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#d1e8df]">
+                <span>🗣</span>
+                <span className="font-semibold text-white">Taught in English / Hindi</span>
               </div>
 
-              <div className="bg-white p-3.5 rounded-2xl border border-[#e2d8c9] shadow-sm flex items-center gap-3 ring-2 ring-[#e8720c]/40">
-                <div className="p-2 rounded-xl bg-[#fef0e6] text-[#e8720c]">
-                  <Award className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-[10px] font-bold text-[#718279] uppercase tracking-wider">Price</p>
-                  <p className="text-xs sm:text-sm font-black text-[#e8720c]">₹1 <span className="text-xs text-[#99a8a0] line-through font-normal">₹999</span></p>
-                </div>
+              <div className="bg-[#082e22]/90 border border-[#1c6650] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#d1e8df]">
+                <span>💻</span>
+                <span className="font-semibold text-white">Live on Zoom</span>
               </div>
             </div>
 
-            {/* HERO MEDIA HOLDER / VSL PREVIEW CARD */}
-            <div className="max-w-2xl mx-auto mb-8 bg-white p-3 sm:p-4 rounded-3xl border border-[#e2d8c9] shadow-xl relative overflow-hidden">
-              <div className="relative aspect-video rounded-2xl overflow-hidden bg-[#04332D] group cursor-pointer" onClick={() => setActiveVideoModal("OGmWr_aC4WA")}>
+            {/* ========================================================================= */}
+            {/* HERO VIDEO HOLDER WITH GOLD BORDER (SCREENSHOT 1) */}
+            {/* ========================================================================= */}
+            <div className="max-w-2xl mx-auto mb-8 bg-[#042018] rounded-2xl border-2 border-[#f5b942]/90 p-2 sm:p-3 shadow-2xl overflow-hidden text-left">
+              
+              {/* Video Card Header */}
+              <div className="px-2 py-1.5 flex items-center justify-between text-[10px] sm:text-xs font-bold text-[#f5b942] uppercase tracking-wider mb-1">
+                <span>WATCH ACHARYA SACHIN KOTIYAL — REVIEWS OF CLASS</span>
+                <span className="text-[#a3d9cf] normal-case font-medium flex items-center gap-1">
+                  ✨ Verified Student Experience
+                </span>
+              </div>
+
+              {/* Video Preview Container */}
+              <div 
+                className="relative aspect-video rounded-xl overflow-hidden bg-black group cursor-pointer"
+                onClick={() => setActiveVideoModal("OGmWr_aC4WA")}
+              >
                 <Image
-                  src={sachinPhoto}
-                  alt="Acharya Sachin Kotiyal Applied Yoga Anatomy Masterclass"
+                  src="https://img.youtube.com/vi/OGmWr_aC4WA/hqdefault.jpg"
+                  alt="Student Review - Acharya Sachin Kotiyal Yoga Anatomy Masterclass"
                   fill
-                  className="object-cover object-top opacity-85 group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                
-                {/* Play Button Overlay */}
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors" />
+
+                {/* Big Orange Play Button */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#e8720c] text-white flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform duration-300 ring-4 ring-white/40">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#ea580c] text-white flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-transform duration-300 ring-4 ring-white/30">
                     <Play className="w-7 h-7 sm:w-8 sm:h-8 fill-white ml-1" />
                   </div>
                 </div>
+              </div>
 
-                <div className="absolute bottom-3 left-4 right-4 text-left flex items-center justify-between text-white">
+              {/* Video Card Footer Subtitle */}
+              <div className="px-2 pt-2.5 pb-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[11px] sm:text-xs">
+                <p className="text-[#f5b942] italic">
+                  "Hear authentic student feedback, teaching transformation, and real class reviews."
+                </p>
+                <button
+                  onClick={() => setActiveVideoModal("OGmWr_aC4WA")}
+                  className="text-[#f5b942] hover:underline font-semibold flex items-center gap-1 shrink-0"
+                >
+                  Watch on YouTube ↗
+                </button>
+              </div>
+            </div>
+
+            {/* ========================================================================= */}
+            {/* VIBRANT YELLOW BANNER CTA (SCREENSHOT 2) */}
+            {/* ========================================================================= */}
+            <div 
+              onClick={openBookingModal}
+              className="max-w-2xl mx-auto mb-8 bg-[#f5b942] hover:bg-[#eab308] cursor-pointer text-[#04332D] py-3.5 px-5 sm:px-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 flex items-center justify-between font-extrabold text-sm sm:text-base border-2 border-yellow-300 group"
+            >
+              <div className="flex items-center gap-2">
+                <span className="text-lg text-[#b45309]">»</span>
+                <span>Become a confident, injury-free Yoga Teacher now!</span>
+                <span className="text-xs sm:text-sm font-bold text-[#b45309]">
+                  (Only <span className="line-through text-red-700">₹499</span> <strong className="text-[#04332D]">₹1</strong>)
+                </span>
+              </div>
+              <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
+            </div>
+
+            {/* ========================================================================= */}
+            {/* EVENT HIGHLIGHTS CARD (SCREENSHOT 2) */}
+            {/* ========================================================================= */}
+            <div className="max-w-2xl mx-auto mb-10 bg-[#06281e] border border-[#16533f] rounded-3xl p-5 sm:p-7 shadow-2xl text-left">
+              
+              {/* 4 Details Pills Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                
+                <div className="bg-[#0b3b2c] border border-[#1b614b] p-3 rounded-2xl flex items-center gap-3">
+                  <span className="text-xl">📅</span>
                   <div>
-                    <span className="bg-[#e8720c] text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">Masterclass Preview</span>
-                    <p className="font-serif font-bold text-sm sm:text-base mt-0.5">Watch: How Sachin Ji Teaches Clinical Biomechanics</p>
+                    <p className="text-[10px] uppercase font-bold text-[#7fa396] tracking-wider">DATE</p>
+                    <p className="text-xs sm:text-sm font-bold text-white">{sundayInfo.ordinalDate}</p>
                   </div>
-                  <span className="text-xs text-yellow-300 flex items-center gap-1 font-semibold">
-                    <Volume2 className="w-4 h-4" /> 2:15 Min
-                  </span>
+                </div>
+
+                <div className="bg-[#0b3b2c] border border-[#1b614b] p-3 rounded-2xl flex items-center gap-3">
+                  <span className="text-xl">⏰</span>
+                  <div>
+                    <p className="text-[10px] uppercase font-bold text-[#7fa396] tracking-wider">TIME</p>
+                    <p className="text-xs sm:text-sm font-bold text-white">7:00 PM IST</p>
+                  </div>
+                </div>
+
+                <div className="bg-[#0b3b2c] border border-[#1b614b] p-3 rounded-2xl flex items-center gap-3">
+                  <span className="text-xl">⏳</span>
+                  <div>
+                    <p className="text-[10px] uppercase font-bold text-[#7fa396] tracking-wider">DURATION</p>
+                    <p className="text-xs sm:text-sm font-bold text-white">2 Hours Live</p>
+                  </div>
+                </div>
+
+                <div className="bg-[#0b3b2c] border border-[#1b614b] p-3 rounded-2xl flex items-center gap-3">
+                  <span className="text-xl">📺</span>
+                  <div>
+                    <p className="text-[10px] uppercase font-bold text-[#7fa396] tracking-wider">PLATFORM</p>
+                    <p className="text-xs sm:text-sm font-bold text-white">Live on Zoom</p>
+                  </div>
+                </div>
+
+              </div>
+
+              {/* Key Highlights Bullet Points */}
+              <div className="space-y-3 mb-6 text-xs sm:text-sm text-[#d4ebe2] border-t border-[#124233] pt-5">
+                <div className="flex items-start gap-2.5">
+                  <span className="text-[#ea580c] font-bold text-base leading-none mt-0.5">➔</span>
+                  <p>Master <strong className="text-white">Functional Yoga Anatomy</strong> to prevent injuries & teach with absolute confidence</p>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="text-[#ea580c] font-bold text-base leading-none mt-0.5">➔</span>
+                  <p>Learn directly from <strong className="text-[#f5b942]">Acharya Sachin Kotiyal</strong> (10+ Years Master Educator & Bali TTC Founder)</p>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="text-[#ea580c] font-bold text-base leading-none mt-0.5">➔</span>
+                  <p>Upgrade your <strong className="text-white">cueing & alignment system</strong> so students experience real transformation</p>
+                </div>
+                <div className="flex items-start gap-2.5">
+                  <span className="text-[#ea580c] font-bold text-base leading-none mt-0.5">➔</span>
+                  <p><strong className="text-white">No medical background required</strong> — practical, clear science for every yoga teacher</p>
                 </div>
               </div>
+
+              {/* Pricing & CTA Button Row */}
+              <div className="bg-[#042018] p-4 rounded-2xl border border-[#144b39] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <p className="text-[11px] text-[#7fa396]">Regular Price: <span className="line-through">₹499</span></p>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <span className="font-serif text-3xl font-extrabold text-[#f5b942]">₹1</span>
+                    <span className="bg-[#0b3b2c] border border-[#1b614b] text-[#a3d9cf] text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+                      Limited Time Offer
+                    </span>
+                  </div>
+                </div>
+
+                <button
+                  onClick={openBookingModal}
+                  className="bg-[#ea580c] hover:bg-[#d94e07] active:scale-95 text-white font-extrabold text-sm sm:text-base py-3 px-6 sm:px-8 rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all flex items-center justify-center gap-2"
+                >
+                  <span>Book My Seat — ₹1</span>
+                  <span>→</span>
+                </button>
+              </div>
+
             </div>
 
-            {/* Primary CTA Button with Glow Effect */}
-            <div className="flex flex-col items-center justify-center gap-4 mb-6">
-              <button
-                onClick={openBookingModal}
-                className="relative group bg-gradient-to-r from-[#e8720c] via-[#f59e0b] to-[#e8720c] bg-[length:200%_auto] hover:bg-right transition-all duration-500 text-white font-black text-lg sm:text-2xl py-4 sm:py-5 px-8 sm:px-14 rounded-full shadow-[0_10px_25px_rgba(232,114,12,0.4)] hover:shadow-[0_15px_35px_rgba(232,114,12,0.6)] transform hover:-translate-y-1 active:translate-y-0 w-full sm:w-auto flex items-center justify-center gap-3"
-              >
-                <span>Claim Your Masterclass Spot for ₹1</span>
-                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-              </button>
+            {/* ========================================================================= */}
+            {/* 4-COLUMN STATS BAR (SCREENSHOT 2) */}
+            {/* ========================================================================= */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
               
-              <div className="flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-[#52635a]">
-                <span className="flex items-center gap-1.5 font-semibold text-[#04332D]">
-                  <CheckCircle2 className="w-4 h-4 text-green-600" />
-                  Instant Zoom Pass
-                </span>
-                <span>•</span>
-                <span className="flex items-center gap-1.5 font-semibold text-[#04332D]">
-                  <CheckCircle2 className="w-4 h-4 text-green-600" />
-                  ₹1,197 Free PDF Bonuses
-                </span>
-                <span>•</span>
-                <span className="flex items-center gap-1.5 font-semibold text-[#04332D]">
-                  <CheckCircle2 className="w-4 h-4 text-green-600" />
-                  Live Q&A With Sachin Ji
-                </span>
+              <div className="bg-[#082e22]/90 border border-[#16533f] p-4 rounded-2xl text-center shadow-sm">
+                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#f5b942]">500+</p>
+                <p className="text-xs text-[#a3c9bd] mt-0.5 font-medium">Students Trained</p>
               </div>
-            </div>
 
-            {/* Star Rating Badge */}
-            <div className="inline-flex items-center gap-3 bg-white px-5 py-2.5 rounded-full border border-[#e6dcce] shadow-sm">
-              <div className="flex text-amber-500 text-sm">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                ))}
+              <div className="bg-[#082e22]/90 border border-[#16533f] p-4 rounded-2xl text-center shadow-sm">
+                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#f5b942]">5.0 ★</p>
+                <p className="text-xs text-[#a3c9bd] mt-0.5 font-medium">Average Rating</p>
               </div>
-              <span className="text-xs sm:text-sm font-semibold text-[#1c2420]">
-                <strong>4.9 / 5</strong> rating by 1,200+ certified yoga teachers & practitioners
-              </span>
+
+              <div className="bg-[#082e22]/90 border border-[#16533f] p-4 rounded-2xl text-center shadow-sm">
+                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#f5b942]">10+ Years</p>
+                <p className="text-xs text-[#a3c9bd] mt-0.5 font-medium">Of Teaching</p>
+              </div>
+
+              <div className="bg-[#082e22]/90 border border-[#16533f] p-4 rounded-2xl text-center shadow-sm">
+                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#f5b942]">Live Q&A</p>
+                <p className="text-xs text-[#a3c9bd] mt-0.5 font-medium">Interactive Session</p>
+              </div>
+
             </div>
 
           </div>
         </section>
 
-        {/* 4. THE CORE PROBLEM & TEACHER PAIN POINTS */}
-        <section className="py-16 bg-white border-y border-[#ece3d5]">
+        {/* ========================================================================= */}
+        {/* 3. RED URGENCY BANNER (MATCHING SCREENSHOT 3) */}
+        {/* ========================================================================= */}
+        <div className="bg-[#dc2626] text-white py-2.5 px-4 text-center text-xs sm:text-sm font-extrabold tracking-wide shadow-md flex items-center justify-center gap-2">
+          <span>⚡</span>
+          <span>Only 47 seats remaining — Register before it closes!</span>
+        </div>
+
+        {/* ========================================================================= */}
+        {/* 4. "DOES THIS SOUND LIKE YOU?" PROBLEM SECTION (SCREENSHOT 3) */}
+        {/* ========================================================================= */}
+        <section className="py-16 md:py-20 bg-[#FDFBF7] text-[#1c2420] border-b border-[#e8dfd3]">
           <div className="max-w-5xl mx-auto px-4">
             
             <div className="text-center max-w-3xl mx-auto mb-12">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#c45e07] bg-[#fdf3e2] px-3.5 py-1 rounded-full border border-[#f5b942]/30">
-                The Painful Truth
+              <span className="inline-block text-[11px] sm:text-xs uppercase tracking-widest font-extrabold text-[#0B3B2C] bg-[#e6edea] px-4 py-1.5 rounded-full border border-[#cbd8d2] mb-4">
+                DOES THIS SOUND LIKE YOU?
               </span>
-              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#04332D] mt-4 mb-4">
-                Why 90% of Yoga Teachers Feel Anxious When Cueing Deep Postures
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[2.6rem] font-bold text-[#0B3B2C] leading-tight mb-4">
+                You're Teaching Yoga — But Something Is Missing
               </h2>
-              <p className="text-base text-[#52635a]">
-                Most TTC programs teach you anatomy by having you memorize bones from a static textbook. But when a live student with a rotated pelvis or knee pain steps into your class, theory fails.
+              <p className="text-sm sm:text-base text-[#52635a]">
+                If any of these resonate with you, this workshop was built for you.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-[#fdfaf5] p-6 sm:p-8 rounded-3xl border border-[#ede3d3] shadow-sm">
-                <div className="w-12 h-12 rounded-2xl bg-red-100 text-red-600 flex items-center justify-center mb-5 font-bold">
-                  <AlertTriangle className="w-6 h-6" />
-                </div>
-                <h3 className="font-serif text-xl font-bold text-[#04332D] mb-3">
-                  1. Constant Fear of Student Injuries
+            {/* 4 Problem Cards Grid (2x2) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+              
+              {/* Card 1 */}
+              <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#e4dcce] shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-3xl mb-3">😰</div>
+                <h3 className="font-bold text-base sm:text-lg text-[#0B3B2C] mb-2">
+                  "My students get injured and I don't know why"
                 </h3>
-                <p className="text-sm text-[#4d5e55] leading-relaxed">
-                  You hesitate during backbends, hip openers, or Chaturanga adjustments because you are scared of compressing someone's lumbar spine, straining an SI joint, or tearing a meniscus.
+                <p className="text-xs sm:text-sm text-[#52635a] leading-relaxed">
+                  You teach asanas every day but when a student gets hurt, you feel helpless — because no one taught you the anatomy behind the posture.
                 </p>
               </div>
 
-              <div className="bg-[#fdfaf5] p-6 sm:p-8 rounded-3xl border border-[#ede3d3] shadow-sm">
-                <div className="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5 font-bold">
-                  <BookOpen className="w-6 h-6" />
-                </div>
-                <h3 className="font-serif text-xl font-bold text-[#04332D] mb-3">
-                  2. Textbook Skeletons vs. Real Living Bodies
+              {/* Card 2 (Highlighted with orange border) */}
+              <div className="bg-white p-6 sm:p-8 rounded-3xl border-2 border-[#f59e0b] shadow-md hover:shadow-lg transition-shadow relative">
+                <div className="text-3xl mb-3">😟</div>
+                <h3 className="font-bold text-base sm:text-lg text-[#0B3B2C] mb-2">
+                  "I teach poses but I'm not confident about alignment cues"
                 </h3>
-                <p className="text-sm text-[#4d5e55] leading-relaxed">
-                  Knowing muscle origins and insertions doesn't teach you how to distinguish <strong>bone-on-bone compression</strong> from <strong>soft-tissue tension</strong> when a student cannot touch their toes.
+                <p className="text-xs sm:text-sm text-[#52635a] leading-relaxed">
+                  You know the pose but not the muscle groups, joints, and alignment principles that make it safe and effective for every body type.
                 </p>
               </div>
 
-              <div className="bg-[#fdfaf5] p-6 sm:p-8 rounded-3xl border border-[#ede3d3] shadow-sm">
-                <div className="w-12 h-12 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center mb-5 font-bold">
-                  <ShieldAlert className="w-6 h-6" />
-                </div>
-                <h3 className="font-serif text-xl font-bold text-[#04332D] mb-3">
-                  3. Rigid, One-Size-Fits-All Cues
+              {/* Card 3 */}
+              <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#e4dcce] shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-3xl mb-3">🤔</div>
+                <h3 className="font-bold text-base sm:text-lg text-[#0B3B2C] mb-2">
+                  "My classes feel scattered — I don't have a clear framework"
                 </h3>
-                <p className="text-sm text-[#4d5e55] leading-relaxed">
-                  Dogmatic instructions like "tuck your tailbone" or "square your hips" can permanently pinch the acetabular rim in certain pelvis shapes. You need functional, adaptive cueing.
+                <p className="text-xs sm:text-sm text-[#52635a] leading-relaxed">
+                  You want a structured, biomechanically sound sequencing system instead of blindly repeating the same standard routine without anatomical intention.
                 </p>
+              </div>
+
+              {/* Card 4 */}
+              <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#e4dcce] shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-3xl mb-3">😔</div>
+                <h3 className="font-bold text-base sm:text-lg text-[#0B3B2C] mb-2">
+                  "I have my certification but I lack real depth"
+                </h3>
+                <p className="text-xs sm:text-sm text-[#52635a] leading-relaxed">
+                  You completed a 200-hour TTC, yet when advanced students ask anatomical or therapeutic questions, you second-guess your knowledge.
+                </p>
+              </div>
+
+            </div>
+
+            {/* Mid Section CTA */}
+            <div className="mt-10 text-center">
+              <button
+                onClick={openBookingModal}
+                className="bg-[#ea580c] hover:bg-[#d94e07] text-white font-extrabold text-sm sm:text-base py-3.5 px-8 rounded-xl shadow-md hover:shadow-lg transition-all"
+              >
+                Yes! Upgrade My Teaching Confidence for ₹1 →
+              </button>
+            </div>
+
+          </div>
+        </section>
+
+        {/* ========================================================================= */}
+        {/* 5. INSTRUCTOR SPOTLIGHT: ACHARYA SACHIN KOTIYAL */}
+        {/* ========================================================================= */}
+        <section className="py-16 md:py-20 bg-[#06281e] text-white border-b border-[#144f3c]">
+          <div className="max-w-5xl mx-auto px-4">
+            
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              
+              <div className="lg:col-span-5 text-center">
+                <div className="relative w-64 h-80 sm:w-72 sm:h-96 mx-auto rounded-3xl overflow-hidden border-4 border-[#f5b942]/60 shadow-2xl bg-[#041a14]">
+                  <Image
+                    src={getCloudinaryUrl("founder-sachin-ji.jpg") || getCloudinaryUrl("sachin-ji.webp") || "/hero-yoga-group.jpg"}
+                    alt="Acharya Sachin Kotiyal - Founder YogaGarhi"
+                    fill
+                    className="object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#041a14] via-transparent to-transparent" />
+                  <div className="absolute bottom-3 left-0 right-0 text-center">
+                    <span className="bg-[#ea580c] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full text-white">
+                      Lead Master Educator
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="lg:col-span-7 space-y-4 text-left">
+                <span className="text-xs uppercase tracking-widest font-bold text-[#f5b942] bg-[#0b3b2c] px-3.5 py-1 rounded-full border border-[#1b614b]">
+                  Meet Your Instructor
+                </span>
+                
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white">
+                  Acharya Sachin Kotiyal
+                </h2>
+                
+                <p className="text-[#a3d9cf] font-medium text-sm">
+                  Founder of YogaGarhi Ashram (Bali & Rishikesh) • 10+ Years International Teaching • Specialized Yoga Therapy Specialist for the Indian Armed Forces
+                </p>
+
+                <p className="text-sm text-[#d4ebe2] leading-relaxed">
+                  Having trained thousands of yoga teachers worldwide and rehabilitated complex spinal, hip, and shoulder injuries for elite personnel, Acharya Sachin Kotiyal brings an unmatched bridge between <strong>ancient Himalayan alignment</strong> and <strong>modern orthopaedic biomechanics</strong>.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                  <div className="bg-[#0b3b2c] p-3 rounded-xl border border-[#1b614b] flex items-center gap-2.5">
+                    <CheckCheck className="w-5 h-5 text-[#f5b942] shrink-0" />
+                    <span className="text-xs text-[#e1f0ea]">Military-grade posture & injury analysis</span>
+                  </div>
+                  <div className="bg-[#0b3b2c] p-3 rounded-xl border border-[#1b614b] flex items-center gap-2.5">
+                    <CheckCheck className="w-5 h-5 text-[#f5b942] shrink-0" />
+                    <span className="text-xs text-[#e1f0ea]">Bilingual teaching (English & Hindi)</span>
+                  </div>
+                  <div className="bg-[#0b3b2c] p-3 rounded-xl border border-[#1b614b] flex items-center gap-2.5">
+                    <CheckCheck className="w-5 h-5 text-[#f5b942] shrink-0" />
+                    <span className="text-xs text-[#e1f0ea]">Direct interactive Q&A on your cases</span>
+                  </div>
+                  <div className="bg-[#0b3b2c] p-3 rounded-xl border border-[#1b614b] flex items-center gap-2.5">
+                    <CheckCheck className="w-5 h-5 text-[#f5b942] shrink-0" />
+                    <span className="text-xs text-[#e1f0ea]">Immediate actionable cues for your next class</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        {/* ========================================================================= */}
+        {/* 6. DEDICATED REVIEWS & STUDENT PROOF HOLDER (3 TABS) */}
+        {/* ========================================================================= */}
+        <section className="py-16 md:py-20 bg-[#FDFBF7] text-[#1c2420] border-b border-[#e8dfd3]">
+          <div className="max-w-5xl mx-auto px-4">
+            
+            <div className="text-center max-w-3xl mx-auto mb-10">
+              <span className="text-xs uppercase tracking-widest font-extrabold text-[#0B3B2C] bg-[#e6edea] px-4 py-1.5 rounded-full border border-[#cbd8d2] mb-3 inline-block">
+                Social Proof & Unfiltered Feedback
+              </span>
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B3B2C] mt-2 mb-3">
+                Loved by 1,200+ Yoga Teachers & Practitioners Worldwide
+              </h2>
+              <p className="text-sm text-[#52635a]">
+                Explore verified video stories, WhatsApp community messages, and teacher reviews.
+              </p>
+
+              {/* 3 Review Tabs Switcher */}
+              <div className="flex items-center justify-center gap-2 mt-6 p-1.5 bg-[#eae2d5] rounded-2xl max-w-md mx-auto">
+                <button
+                  onClick={() => setReviewTab("videos")}
+                  className={`flex-1 py-2 px-3 rounded-xl text-xs font-bold transition-all ${
+                    reviewTab === "videos"
+                      ? "bg-[#0B3B2C] text-white shadow-md"
+                      : "text-[#52635a] hover:text-[#0B3B2C]"
+                  }`}
+                >
+                  🎥 Video Stories ({videoTestimonials.length})
+                </button>
+
+                <button
+                  onClick={() => setReviewTab("whatsapp")}
+                  className={`flex-1 py-2 px-3 rounded-xl text-xs font-bold transition-all ${
+                    reviewTab === "whatsapp"
+                      ? "bg-[#0B3B2C] text-white shadow-md"
+                      : "text-[#52635a] hover:text-[#0B3B2C]"
+                  }`}
+                >
+                  💬 WhatsApp Feedback
+                </button>
+
+                <button
+                  onClick={() => setReviewTab("teachers")}
+                  className={`flex-1 py-2 px-3 rounded-xl text-xs font-bold transition-all ${
+                    reviewTab === "teachers"
+                      ? "bg-[#0B3B2C] text-white shadow-md"
+                      : "text-[#52635a] hover:text-[#0B3B2C]"
+                  }`}
+                >
+                  ⭐ Teacher Reviews
+                </button>
               </div>
             </div>
 
-            {/* Direct Response Comparison Matrix */}
-            <div className="mt-12 overflow-x-auto">
-              <table className="w-full border-collapse border border-[#e2d8c9] rounded-2xl overflow-hidden text-xs sm:text-sm bg-[#fdfbf7]">
+            {/* TAB 1: VIDEO TESTIMONIALS */}
+            {reviewTab === "videos" && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 animate-fadeIn">
+                {videoTestimonials.map((v) => (
+                  <div
+                    key={v.id}
+                    className="bg-white rounded-2xl border border-[#e2d8c9] shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col group cursor-pointer"
+                    onClick={() => setActiveVideoModal(v.id)}
+                  >
+                    <div className="relative aspect-video bg-black overflow-hidden">
+                      <Image
+                        src={v.thumb}
+                        alt={`${v.name} YogaGarhi Review`}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300 opacity-90"
+                      />
+                      <div className="absolute inset-0 bg-black/25 flex items-center justify-center">
+                        <div className="w-11 h-11 rounded-full bg-[#ea580c] text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                          <Play className="w-5 h-5 fill-white ml-0.5" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-4 flex-1 flex flex-col justify-between">
+                      <p className="text-xs text-[#3d4d45] italic line-clamp-3 mb-3">
+                        "{v.quote}"
+                      </p>
+                      <div className="flex items-center justify-between pt-2 border-t border-[#f0e8dc]">
+                        <div>
+                          <h4 className="font-bold text-xs text-[#0B3B2C]">{v.name}</h4>
+                          <p className="text-[10px] text-[#718279]">{v.role}, {v.country}</p>
+                        </div>
+                        <span className="text-[10px] text-[#c45e07] font-bold">Watch ▶</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* TAB 2: WHATSAPP SCREENSHOT CHAT FEEDBACK */}
+            {reviewTab === "whatsapp" && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 animate-fadeIn">
+                {whatsappReviews.map((msg, i) => (
+                  <div key={i} className="bg-[#e7f5ef] border border-[#b2ded0] p-4 sm:p-5 rounded-2xl shadow-sm relative">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center gap-2">
+                        <div className="w-7 h-7 rounded-full bg-[#25D366] text-white flex items-center justify-center text-xs font-bold">
+                          WA
+                        </div>
+                        <div>
+                          <p className="font-bold text-xs text-[#0B3B2C]">{msg.sender}</p>
+                          <p className="text-[10px] text-[#52635a]">{msg.time}</p>
+                        </div>
+                      </div>
+                      <span className="bg-[#25D366]/20 text-[#127a38] text-[10px] font-bold px-2 py-0.5 rounded-full">
+                        {msg.tag}
+                      </span>
+                    </div>
+                    <p className="text-xs text-[#1e3b31] font-medium leading-relaxed bg-white/70 p-3 rounded-xl border border-[#cbebe0]">
+                      "{msg.message}"
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* TAB 3: TEACHER REVIEWS */}
+            {reviewTab === "teachers" && (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 animate-fadeIn">
+                <div className="bg-white p-5 rounded-2xl border border-[#e4dcce] shadow-sm">
+                  <div className="flex text-amber-500 mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                  <h4 className="font-bold text-sm text-[#0B3B2C] mb-1">"Finally understood shoulder impingement"</h4>
+                  <p className="text-xs text-[#52635a] leading-relaxed mb-4">
+                    In my 5 years of teaching, no one broke down the scapulohumeral rhythm like Sachin Ji. My students immediately felt the difference in downward dog and plank.
+                  </p>
+                  <p className="text-[11px] font-bold text-[#0B3B2C]">— Priya Sharma, Studio Owner (Delhi)</p>
+                </div>
+
+                <div className="bg-white p-5 rounded-2xl border border-[#e4dcce] shadow-sm">
+                  <div className="flex text-amber-500 mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                  <h4 className="font-bold text-sm text-[#0B3B2C] mb-1">"The best ₹1 I ever invested"</h4>
+                  <p className="text-xs text-[#52635a] leading-relaxed mb-4">
+                    The value delivered in 2 hours is greater than what most TTC schools teach across 4 weeks of anatomy modules. Clear, precise, no fluff.
+                  </p>
+                  <p className="text-[11px] font-bold text-[#0B3B2C]">— Rajesh Varma, RYT 500 (Bengaluru)</p>
+                </div>
+
+                <div className="bg-white p-5 rounded-2xl border border-[#e4dcce] shadow-sm">
+                  <div className="flex text-amber-500 mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                    ))}
+                  </div>
+                  <h4 className="font-bold text-sm text-[#0B3B2C] mb-1">"Essential for every serious yogi"</h4>
+                  <p className="text-xs text-[#52635a] leading-relaxed mb-4">
+                    His clinical examples regarding SI joint compression and hip socket variations completely changed how I adjust students in forward folds.
+                  </p>
+                  <p className="text-[11px] font-bold text-[#0B3B2C]">— Sarah M., Vinyasa Teacher (Melbourne)</p>
+                </div>
+              </div>
+            )}
+
+          </div>
+        </section>
+
+        {/* ========================================================================= */}
+        {/* 7. COMPARISON TABLE */}
+        {/* ========================================================================= */}
+        <section className="py-16 md:py-20 bg-[#082e22] text-white border-b border-[#144f3c]">
+          <div className="max-w-4xl mx-auto px-4">
+            
+            <div className="text-center mb-10">
+              <span className="text-xs uppercase tracking-widest font-bold text-[#f5b942] bg-[#0b3b2c] px-3.5 py-1 rounded-full border border-[#1b614b]">
+                Why YogaGarhi Biomechanics
+              </span>
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-white mt-2">
+                Standard Studio Anatomy vs. YogaGarhi Clinical Biomechanics
+              </h2>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs sm:text-sm border-collapse rounded-2xl overflow-hidden shadow-2xl">
                 <thead>
-                  <tr className="bg-[#04332D] text-white text-left font-serif text-sm sm:text-base">
-                    <th className="p-4 border-r border-[#0d594f]">Area of Practice</th>
-                    <th className="p-4 border-r border-[#0d594f] text-red-300">❌ Standard Studio TTC Anatomy</th>
-                    <th className="p-4 bg-[#09473e] text-[#f5b942]">✅ YogaGarhi Clinical Biomechanics</th>
+                  <tr className="border-b border-[#1b614b]">
+                    <th className="p-4 bg-[#062018] text-[#a3d9cf] font-bold">Feature / Topic</th>
+                    <th className="p-4 bg-[#0b3327] text-gray-300">Standard 200-Hr TTC Anatomy</th>
+                    <th className="p-4 bg-[#114b39] text-[#f5b942] font-black">YogaGarhi Clinical Masterclass</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#e2d8c9]">
+                <tbody className="divide-y divide-[#134937] bg-[#06281e]">
                   <tr>
-                    <td className="p-4 font-bold text-[#04332D]">Pelvis & Hips</td>
-                    <td className="p-4 text-[#718279]">Forcing "square hips" in Warrior / Twists</td>
-                    <td className="p-4 font-semibold text-[#04332D] bg-[#f5fbf9]">Adapting to femoral neck angle & SI joint protection</td>
+                    <td className="p-4 font-bold text-white">Teaching Focus</td>
+                    <td className="p-4 text-gray-300">Dry Latin bone & muscle names</td>
+                    <td className="p-4 text-[#d4ebe2] font-semibold">Live dynamic joint loading & injury prevention</td>
                   </tr>
                   <tr>
-                    <td className="p-4 font-bold text-[#04332D]">Shoulder Girdle</td>
-                    <td className="p-4 text-[#718279]">Dropping below 90° in Chaturanga</td>
-                    <td className="p-4 font-semibold text-[#04332D] bg-[#f5fbf9]">Scapular upward rotation & rotator cuff packing</td>
+                    <td className="p-4 font-bold text-white">Spine & Disc Safety</td>
+                    <td className="p-4 text-gray-300">"Lengthen your spine" (vague)</td>
+                    <td className="p-4 text-[#d4ebe2] font-semibold">Exact segmental mechanics for safe lumbar flexion/extension</td>
                   </tr>
                   <tr>
-                    <td className="p-4 font-bold text-[#04332D]">Spinal Backbends</td>
-                    <td className="p-4 text-[#718279]">Hinging only at the L4-L5 lumbar spine</td>
-                    <td className="p-4 font-semibold text-[#04332D] bg-[#f5fbf9]">Axial elongation across all 24 spinal vertebrae</td>
+                    <td className="p-4 font-bold text-white">Pelvis & Hip Depth</td>
+                    <td className="p-4 text-gray-300">One-size-fits-all cueing</td>
+                    <td className="p-4 text-[#d4ebe2] font-semibold">Identifying skeletal compression vs muscular tension</td>
                   </tr>
                   <tr>
-                    <td className="p-4 font-bold text-[#04332D]">Adjustments</td>
-                    <td className="p-4 text-[#718279]">Heavy bodyweight pushing on joints</td>
-                    <td className="p-4 font-semibold text-[#04332D] bg-[#f5fbf9]">Directional tactile cues & active stabilizer engagement</td>
+                    <td className="p-4 font-bold text-white">Shoulder & Rotator Cuff</td>
+                    <td className="p-4 text-gray-300">"Draw shoulders away from ears"</td>
+                    <td className="p-4 text-[#d4ebe2] font-semibold">Clinical scapular rhythm to avoid rotator cuff impingement</td>
+                  </tr>
+                  <tr>
+                    <td className="p-4 font-bold text-white">Instructor Pedigree</td>
+                    <td className="p-4 text-gray-300">General yoga instructor</td>
+                    <td className="p-4 text-[#f5b942] font-black">Ex-Armed Forces Yoga Therapy Specialist (10+ Yrs)</td>
                   </tr>
                 </tbody>
               </table>
@@ -499,564 +859,69 @@ export default function YogaAnatomyMasterclass() {
           </div>
         </section>
 
-        {/* 5. WHAT YOU WILL LEARN (5 CORE PRACTICAL PILLARS) */}
-        <section className="py-16 md:py-24 bg-[#fdfbf7]">
-          <div className="max-w-5xl mx-auto px-4">
+        {/* ========================================================================= */}
+        {/* 8. WHAT YOU GET FOR ₹1 & FINAL PRICING CARD */}
+        {/* ========================================================================= */}
+        <section id="pricing-section" className="py-16 md:py-24 bg-[#0B3B2C] text-white">
+          <div className="max-w-3xl mx-auto px-4">
             
-            <div className="text-center max-w-3xl mx-auto mb-14">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#2d6a4f] bg-[#e8f5f0] px-3.5 py-1 rounded-full border border-[#2d6a4f]/20">
-                Practical Syllabus
-              </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#04332D] mt-4 mb-4">
-                What You Will Master in This 2-Hour Practical Immersion
-              </h2>
-              <p className="text-base text-[#52635a]">
-                No boring medical jargon. Every single concept is directly tied to practical asana cueing, safe hands-on adjustments, and injury prevention.
-              </p>
-            </div>
-
-            <div className="space-y-6">
+            <div className="bg-[#06281e] rounded-3xl border-2 border-[#ea580c] p-6 sm:p-10 shadow-2xl relative overflow-hidden text-left">
               
-              {/* Pillar 1 */}
-              <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#e6dcce] shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 items-start">
-                <div className="w-14 h-14 rounded-2xl bg-[#04332D] text-[#f5b942] flex items-center justify-center font-serif text-2xl font-bold shrink-0">
-                  01
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#04332D]">
-                      Pelvis, Sacroiliac (SI) Joint & Hip Mechanics in Asanas
-                    </h3>
-                    <span className="text-[11px] bg-amber-100 text-amber-800 font-bold px-2.5 py-0.5 rounded-full">
-                      High Injury Risk Zone
-                    </span>
-                  </div>
-                  <p className="text-sm sm:text-base text-[#4d5e55] leading-relaxed mb-4">
-                    Understand anterior vs. posterior pelvic tilt in forward bends and backbends. Learn how to diagnose hip joint impingement vs. muscle tightness, avoiding dangerous torsion on the Sacroiliac (SI) joint.
-                  </p>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#384a41]">
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Pelvic tilt mechanics in Paschimottanasana</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Protecting SI joints in asymmetrical twists</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Anatomical variations of the femoral neck</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Knee protection in external hip rotations</li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Pillar 2 */}
-              <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#e6dcce] shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 items-start">
-                <div className="w-14 h-14 rounded-2xl bg-[#04332D] text-[#f5b942] flex items-center justify-center font-serif text-2xl font-bold shrink-0">
-                  02
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#04332D]">
-                      Shoulder Impingement & Rotator Cuff Safety
-                    </h3>
-                    <span className="text-[11px] bg-blue-100 text-blue-800 font-bold px-2.5 py-0.5 rounded-full">
-                      Chaturanga & Inversions
-                    </span>
-                  </div>
-                  <p className="text-sm sm:text-base text-[#4d5e55] leading-relaxed mb-4">
-                    Master the scapulohumeral rhythm. Discover why dipping the shoulders too low in Chaturanga Dandasana leads to supraspinatus tears, and how to "pack" the shoulder girdle safely for arm balances and handstands.
-                  </p>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#384a41]">
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Chaturanga alignment to save the rotator cuff</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Scapular upward rotation in Downward Dog</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Serratus anterior activation cues</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Wrist decompression strategies</li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Pillar 3 */}
-              <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#e6dcce] shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 items-start">
-                <div className="w-14 h-14 rounded-2xl bg-[#04332D] text-[#f5b942] flex items-center justify-center font-serif text-2xl font-bold shrink-0">
-                  03
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#04332D]">
-                      Spinal Biomechanics: Disc Safety & Lumbar Protection
-                    </h3>
-                    <span className="text-[11px] bg-emerald-100 text-emerald-800 font-bold px-2.5 py-0.5 rounded-full">
-                      Safe Backbending
-                    </span>
-                  </div>
-                  <p className="text-sm sm:text-base text-[#4d5e55] leading-relaxed mb-4">
-                    Differentiate between axial spinal elongation and localized lumbar hinge compression. Learn how to open the thoracic spine and ribcage in Wheel Pose (Chakrasana) and Camel Pose (Ustrasana) without compressing L4-L5 vertebrae.
-                  </p>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#384a41]">
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Distributing extension across all 24 vertebrae</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Psoas tension vs. hip extension mechanics</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Disc herniation contraindications</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Safe neutralizing counterposes</li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Pillar 4 */}
-              <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#e6dcce] shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 items-start">
-                <div className="w-14 h-14 rounded-2xl bg-[#04332D] text-[#f5b942] flex items-center justify-center font-serif text-2xl font-bold shrink-0">
-                  04
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#04332D]">
-                      Visual Postural Diagnosis & Safe Hands-On Adjustments
-                    </h3>
-                    <span className="text-[11px] bg-purple-100 text-purple-800 font-bold px-2.5 py-0.5 rounded-full">
-                      Clinical Skill
-                    </span>
-                  </div>
-                  <p className="text-sm sm:text-base text-[#4d5e55] leading-relaxed mb-4">
-                    Learn to read your student's plumb line within 3 seconds of them walking into class. Spot hypermobility, scoliosis, and compensation patterns before they even begin Sun Salutations.
-                  </p>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#384a41]">
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Spotting hyperextended knees & elbows</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Prop placement for structural limitations</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Directional tactile cues without brute force</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Safe assist protocols for delicate joints</li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Pillar 5 */}
-              <div className="bg-white p-6 sm:p-8 rounded-3xl border border-[#e6dcce] shadow-sm hover:shadow-md transition-shadow flex flex-col md:flex-row gap-6 items-start">
-                <div className="w-14 h-14 rounded-2xl bg-[#04332D] text-[#f5b942] flex items-center justify-center font-serif text-2xl font-bold shrink-0">
-                  05
-                </div>
-                <div className="flex-1">
-                  <div className="flex flex-wrap items-center gap-2 mb-2">
-                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#04332D]">
-                      Intelligent Anatomical Sequencing for Diverse Body Types
-                    </h3>
-                    <span className="text-[11px] bg-rose-100 text-rose-800 font-bold px-2.5 py-0.5 rounded-full">
-                      Class Architecture
-                    </span>
-                  </div>
-                  <p className="text-sm sm:text-base text-[#4d5e55] leading-relaxed mb-4">
-                    How to construct class sequences that warm up specific joint capsules and myofascial tracks progressively, ensuring students reach peak postures without next-day soreness or joint inflammation.
-                  </p>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-[#384a41]">
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Joint-specific prep drills</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Hypermobile vs. tight student variations</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Autonomic nervous system downregulation</li>
-                    <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#e8720c]" /> Cool-down protocols for fascia release</li>
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </section>
-
-        {/* 6. LEAD INSTRUCTOR BIO SECTION */}
-        <section className="py-16 md:py-24 bg-[#04332D] text-white relative overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-[#f5b942]/10 rounded-full blur-[120px] pointer-events-none" />
-          
-          <div className="max-w-5xl mx-auto px-4 relative z-10">
-            
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-              
-              {/* Instructor Photo */}
-              <div className="lg:col-span-5 flex flex-col items-center text-center">
-                <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-3xl overflow-hidden border-4 border-[#f5b942]/40 shadow-2xl bg-[#07473f]">
-                  <Image
-                    src={sachinPhoto}
-                    alt="Acharya Sachin Kotiyal - Founder & Lead Anatomy Master at YogaGarhi"
-                    fill
-                    className="object-cover object-top"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4 text-left">
-                    <p className="text-xs uppercase tracking-widest text-[#f5b942] font-bold">Lead Master</p>
-                    <p className="font-serif text-xl font-bold text-white">Acharya Sachin Kotiyal</p>
-                    <p className="text-xs text-[#a3d9cf]">Founder, YogaGarhi (Bali & Rishikesh)</p>
-                  </div>
-                </div>
-
-                <div className="mt-4 flex items-center gap-2 bg-[#09473e] px-4 py-2 rounded-full border border-[#0f6054] text-xs font-semibold text-[#f5b942]">
-                  <ShieldCheck className="w-4 h-4" />
-                  Ex-Army Yoga Therapy Specialist
-                </div>
-              </div>
-
-              {/* Instructor Bio & Credentials */}
-              <div className="lg:col-span-7 space-y-5">
-                <div className="inline-flex items-center gap-2 bg-[#f5b942]/10 text-[#f5b942] px-3.5 py-1 rounded-full text-xs font-bold border border-[#f5b942]/20 uppercase tracking-widest">
-                  Meet Your Mentor
-                </div>
-                
-                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white leading-tight">
-                  Learn From A Master Who Has Clinically Rehabilitated Hundreds of Real Bodies
-                </h2>
-
-                <p className="text-sm sm:text-base text-[#c0ded8] leading-relaxed">
-                  Acharya Sachin Kotiyal was born and raised in the sacred Himalayan foothills of Uttarakhand. With over <strong>10+ years of intensive teaching experience</strong> across Rishikesh and Bali, he combines authentic Himalayan lineage with cutting-edge functional biomechanics.
-                </p>
-
-                <p className="text-sm sm:text-base text-[#c0ded8] leading-relaxed">
-                  Notably, Sachin Ji has served as a <strong>Specialized Yoga Therapy Specialist for the Indian Armed Forces</strong>, helping frontline defense personnel recover from severe spinal disc issues, knee cartilage wear, and tactical mobility trauma through customized yogic anatomy protocols.
-                </p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm">
-                  <div className="flex items-start gap-2.5 bg-[#09473e] p-3 rounded-2xl border border-[#0d594f]">
-                    <Award className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
-                    <span><strong>1,200+ Teachers Trained</strong> across 40+ countries globally.</span>
-                  </div>
-                  <div className="flex items-start gap-2.5 bg-[#09473e] p-3 rounded-2xl border border-[#0d594f]">
-                    <Users className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
-                    <span><strong>Ex-Armed Forces Specialist</strong> in physical rehab & alignment.</span>
-                  </div>
-                  <div className="flex items-start gap-2.5 bg-[#09473e] p-3 rounded-2xl border border-[#0d594f]">
-                    <BookOpen className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
-                    <span><strong>E-RYT 500 & Master in Yoga</strong> from traditional institutions.</span>
-                  </div>
-                  <div className="flex items-start gap-2.5 bg-[#09473e] p-3 rounded-2xl border border-[#0d594f]">
-                    <Sparkles className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
-                    <span><strong>Bilingual Clarity</strong> in both English & Hindi instruction.</span>
-                  </div>
-                </div>
-
-                <div className="pt-4">
-                  <button
-                    onClick={openBookingModal}
-                    className="bg-[#e8720c] hover:bg-[#d16507] text-white font-bold text-sm px-8 py-4 rounded-full shadow-lg transition-all flex items-center gap-2"
-                  >
-                    <span>Reserve Your Seat for ₹1 with Sachin Ji</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-        </section>
-
-        {/* 7. DEDICATED REVIEWS & TESTIMONIALS HOLDER SECTION */}
-        <section className="py-16 md:py-24 bg-white border-y border-[#ece3d5]">
-          <div className="max-w-5xl mx-auto px-4">
-            
-            <div className="text-center max-w-3xl mx-auto mb-10">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#c45e07] bg-[#fdf3e2] px-3.5 py-1 rounded-full border border-[#f5b942]/30">
-                Verified Reviews & Social Proof
-              </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#04332D] mt-4 mb-3">
-                What Real Teachers & Students Say About Sachin Ji
-              </h2>
-              <p className="text-sm sm:text-base text-[#52635a]">
-                Experience the impact of clinical yoga anatomy through authentic video stories and unfiltered community feedback.
-              </p>
-            </div>
-
-            {/* REVIEWS HOLDER INTERACTIVE TABS */}
-            <div className="flex items-center justify-center gap-2 sm:gap-4 mb-10 overflow-x-auto pb-2">
-              <button
-                onClick={() => setReviewTab("videos")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all ${
-                  reviewTab === "videos"
-                    ? "bg-[#04332D] text-[#f5b942] shadow-md"
-                    : "bg-[#f4eee4] text-[#52635a] hover:bg-[#eadecc]"
-                }`}
-              >
-                <Video className="w-4 h-4" />
-                <span>Video Stories ({videoTestimonials.length})</span>
-              </button>
-
-              <button
-                onClick={() => setReviewTab("whatsapp")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all ${
-                  reviewTab === "whatsapp"
-                    ? "bg-[#04332D] text-[#f5b942] shadow-md"
-                    : "bg-[#f4eee4] text-[#52635a] hover:bg-[#eadecc]"
-                }`}
-              >
-                <MessageSquare className="w-4 h-4 text-green-500" />
-                <span>WhatsApp Feedback ({whatsappReviews.length})</span>
-              </button>
-
-              <button
-                onClick={() => setReviewTab("teachers")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all ${
-                  reviewTab === "teachers"
-                    ? "bg-[#04332D] text-[#f5b942] shadow-md"
-                    : "bg-[#f4eee4] text-[#52635a] hover:bg-[#eadecc]"
-                }`}
-              >
-                <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
-                <span>Teacher Reviews (4.9/5)</span>
-              </button>
-            </div>
-
-            {/* TAB 1: VIDEO TESTIMONIALS HOLDER */}
-            {reviewTab === "videos" && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 animate-fadeIn">
-                {videoTestimonials.map((v, i) => (
-                  <div
-                    key={i}
-                    onClick={() => setActiveVideoModal(v.id)}
-                    className="bg-[#fdfbf7] border border-[#e6dcce] rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all cursor-pointer group flex flex-col justify-between"
-                  >
-                    <div className="relative aspect-[4/3] bg-black overflow-hidden">
-                      <Image
-                        src={v.thumb}
-                        alt={v.name}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300 opacity-90"
-                      />
-                      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors" />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-12 h-12 rounded-full bg-[#e8720c] text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                          <Play className="w-5 h-5 fill-white ml-0.5" />
-                        </div>
-                      </div>
-                      <span className="absolute bottom-2 left-2 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">
-                        {v.country}
-                      </span>
-                    </div>
-
-                    <div className="p-4 flex-1 flex flex-col justify-between">
-                      <div>
-                        <div className="flex items-center gap-1 text-amber-500 mb-1.5">
-                          {[...Array(5)].map((_, idx) => (
-                            <Star key={idx} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                          ))}
-                        </div>
-                        <p className="text-xs text-[#2d3b34] italic leading-relaxed mb-3">
-                          "{v.quote}"
-                        </p>
-                      </div>
-                      <div className="pt-2 border-t border-[#ede3d3] flex items-center justify-between">
-                        <span className="font-bold text-xs text-[#04332D]">{v.name}</span>
-                        <span className="text-[10px] text-[#718279]">{v.role}</span>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {/* TAB 2: WHATSAPP COMMUNITY CHAT HOLDER */}
-            {reviewTab === "whatsapp" && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 animate-fadeIn">
-                {whatsappReviews.map((msg, i) => (
-                  <div
-                    key={i}
-                    className="bg-[#eef8f5] border border-[#a3d9cf] p-5 rounded-3xl shadow-sm relative space-y-3"
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2.5">
-                        <div className="w-9 h-9 rounded-full bg-[#25D366] text-white flex items-center justify-center font-bold text-xs shadow-sm">
-                          <MessageSquare className="w-4 h-4" />
-                        </div>
-                        <div>
-                          <h4 className="font-bold text-xs text-[#04332D]">{msg.sender}</h4>
-                          <span className="text-[10px] text-[#206653] font-semibold bg-green-100 px-2 py-0.5 rounded-full">
-                            {msg.tag}
-                          </span>
-                        </div>
-                      </div>
-                      <span className="text-[10px] text-[#718279]">{msg.time}</span>
-                    </div>
-
-                    <div className="bg-white p-3.5 rounded-2xl border border-[#d6ebe5] text-xs sm:text-sm text-[#1b3d33] leading-relaxed shadow-sm font-sans">
-                      {msg.message}
-                    </div>
-
-                    <div className="flex items-center justify-end gap-1 text-[10px] text-[#206653] font-bold">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-blue-600" />
-                      <span>Verified Attendees Group</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-
-            {/* TAB 3: IN-DEPTH TEACHER REVIEWS HOLDER */}
-            {reviewTab === "teachers" && (
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fadeIn">
-                <div className="bg-[#fdfbf7] p-6 rounded-3xl border border-[#ede3d3] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center gap-1 text-amber-500 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                      ))}
-                    </div>
-                    <p className="text-xs sm:text-sm text-[#2d3b34] leading-relaxed italic mb-4">
-                      "Before Sachin Ji's class, I was terrified of adjusting students in backbends. He explained the thoracic vs lumbar spine difference so visually that my entire teaching style shifted in one afternoon."
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-3 pt-4 border-t border-[#e8ded0]">
-                    <div className="w-10 h-10 rounded-full bg-[#04332D] text-[#f5b942] flex items-center justify-center font-bold text-sm">
-                      EP
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-xs text-[#04332D]">Elena Popova</h4>
-                      <p className="text-[11px] text-[#718279]">RYT 200 Teacher, Germany</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-[#fdfbf7] p-6 rounded-3xl border border-[#ede3d3] shadow-sm flex flex-col justify-between ring-2 ring-[#e8720c]/30">
-                  <div>
-                    <div className="flex items-center gap-1 text-amber-500 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                      ))}
-                    </div>
-                    <p className="text-xs sm:text-sm text-[#2d3b34] leading-relaxed italic mb-4">
-                      "His background working with army personnel shows! He breaks down rotator cuff safety and Chaturanga mechanics with surgical precision. Best ₹1 you will ever spend on your yoga career."
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-3 pt-4 border-t border-[#e8ded0]">
-                    <div className="w-10 h-10 rounded-full bg-[#e8720c] text-white flex items-center justify-center font-bold text-sm">
-                      RS
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-xs text-[#04332D]">Rohit Sharma</h4>
-                      <p className="text-[11px] text-[#718279]">Studio Owner & Instructor, Mumbai</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-[#fdfbf7] p-6 rounded-3xl border border-[#ede3d3] shadow-sm flex flex-col justify-between">
-                  <div>
-                    <div className="flex items-center gap-1 text-amber-500 mb-3">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                      ))}
-                    </div>
-                    <p className="text-xs sm:text-sm text-[#2d3b34] leading-relaxed italic mb-4">
-                      "The pelvis and hip impingement explanation blew my mind. Now I finally understand why not all students can or should do full Lotus posture. Highly recommended!"
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-3 pt-4 border-t border-[#e8ded0]">
-                    <div className="w-10 h-10 rounded-full bg-[#04332D] text-[#f5b942] flex items-center justify-center font-bold text-sm">
-                      SM
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-xs text-[#04332D]">Sarah Miller</h4>
-                      <p className="text-[11px] text-[#718279]">Vinyasa Practitioner, Australia</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* Video Modal Player */}
-            {activeVideoModal && (
-              <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
-                <div className="bg-black rounded-3xl max-w-2xl w-full p-2 relative shadow-2xl overflow-hidden">
-                  <button
-                    onClick={() => setActiveVideoModal(null)}
-                    className="absolute top-3 right-3 text-white bg-black/60 hover:bg-black p-2 rounded-full z-10 transition-colors"
-                  >
-                    <X className="w-6 h-6" />
-                  </button>
-                  <div className="aspect-video w-full rounded-2xl overflow-hidden">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${activeVideoModal}?autoplay=1&rel=0`}
-                      title="Student Testimonial Video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="w-full h-full"
-                    />
-                  </div>
-                </div>
-              </div>
-            )}
-
-          </div>
-        </section>
-
-        {/* 8. PRICING & FREE BONUSES BREAKDOWN */}
-        <section className="py-16 md:py-24 bg-gradient-to-b from-[#f4eee4] via-[#fbf7f0] to-[#fdfbf7]">
-          <div className="max-w-4xl mx-auto px-4">
-            
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#c45e07] bg-[#fdf3e2] px-3.5 py-1 rounded-full border border-[#f5b942]/30">
-                Unbeatable ₹1 Value
-              </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#04332D] mt-4 mb-4">
-                Everything Included When You Book For ₹1 Today
-              </h2>
-              <p className="text-sm sm:text-base text-[#52635a]">
-                We believe safe, clinical yoga education should be accessible to every genuine practitioner worldwide.
-              </p>
-            </div>
-
-            {/* Pricing Card Container */}
-            <div className="bg-white rounded-3xl border-2 border-[#e8720c] p-6 sm:p-10 shadow-2xl relative overflow-hidden">
-              
-              <div className="absolute top-0 right-0 bg-gradient-to-l from-[#e8720c] to-[#f59e0b] text-white text-[11px] sm:text-xs font-black uppercase tracking-widest py-1.5 px-6 rounded-bl-2xl shadow">
+              <div className="absolute top-0 right-0 bg-[#ea580c] text-white text-[10px] sm:text-xs font-black uppercase tracking-widest py-1 px-5 rounded-bl-xl shadow">
                 99% Off Limited Time
               </div>
 
-              <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-[#ece3d5]">
-                <div>
-                  <span className="text-xs font-bold text-[#c45e07] uppercase tracking-wider">Live Workshop Pass</span>
-                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#04332D]">
-                    Applied Yoga Anatomy Masterclass
-                  </h3>
-                  <p className="text-xs sm:text-sm text-[#718279] mt-1">
-                    📅 {sundayInfo.fullDate} | ⏱️ 10:30 AM – 12:30 PM IST (Zoom)
-                  </p>
-                </div>
+              <div className="text-center pb-6 border-b border-[#144f3c]">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
+                  Join the Live Applied Anatomy Masterclass
+                </h3>
+                <p className="text-xs sm:text-sm text-[#a3c9bd] mt-1">
+                  Strictly 2 Hours • Live Interactive Session • Direct Q&A
+                </p>
 
-                <div className="text-center md:text-right">
-                  <div className="flex items-baseline justify-center md:justify-end gap-2">
-                    <span className="text-4xl sm:text-5xl font-black text-[#04332D]">₹1</span>
-                    <span className="text-lg text-[#99a8a0] line-through font-normal">₹999</span>
-                  </div>
-                  <span className="text-[11px] text-green-700 font-bold bg-green-100 px-2.5 py-0.5 rounded-full">
-                    You Save ₹998 (99% Off)
+                <div className="flex items-center justify-center gap-3 mt-4">
+                  <span className="text-sm sm:text-base text-gray-400 line-through">₹499 / ₹999</span>
+                  <span className="font-serif text-4xl sm:text-5xl font-black text-[#f5b942]">₹1</span>
+                  <span className="text-xs bg-[#0b3b2c] border border-[#1b614b] text-[#a3d9cf] font-bold px-2.5 py-1 rounded-full uppercase">
+                    Only Today
                   </span>
                 </div>
               </div>
 
-              {/* Free Bonuses List */}
-              <div className="py-8 space-y-4">
-                <h4 className="font-serif text-lg font-bold text-[#04332D] flex items-center gap-2">
-                  <Gift className="w-5 h-5 text-[#e8720c]" />
-                  <span>Included FREE With Your ₹1 Registration:</span>
-                </h4>
-
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
-                  <div className="bg-[#fdfaf5] p-4 rounded-2xl border border-[#ede3d3]">
-                    <div className="text-[11px] font-bold text-[#c45e07] uppercase tracking-wider mb-1">Bonus #1 (Value ₹499)</div>
-                    <h5 className="font-bold text-sm text-[#04332D] mb-1">PDF Anatomy Cheat-Sheet & Injury Matrix</h5>
-                    <p className="text-xs text-[#52635a]">Quick visual guide to joint alignment & contraindications.</p>
-                  </div>
-
-                  <div className="bg-[#fdfaf5] p-4 rounded-2xl border border-[#ede3d3]">
-                    <div className="text-[11px] font-bold text-[#c45e07] uppercase tracking-wider mb-1">Bonus #2 (Value ₹399)</div>
-                    <h5 className="font-bold text-sm text-[#04332D] mb-1">Anatomical Sequencing Flow Blueprint</h5>
-                    <p className="text-xs text-[#52635a]">Ready-to-teach 60-minute peak pose warm-up templates.</p>
-                  </div>
-
-                  <div className="bg-[#fdfaf5] p-4 rounded-2xl border border-[#ede3d3]">
-                    <div className="text-[11px] font-bold text-[#c45e07] uppercase tracking-wider mb-1">Bonus #3 (Value ₹299)</div>
-                    <h5 className="font-bold text-sm text-[#04332D] mb-1">VIP YogaGarhi Teachers WhatsApp Group</h5>
-                    <p className="text-xs text-[#52635a]">Direct community interaction with master faculty & peers.</p>
-                  </div>
+              {/* What is Included */}
+              <div className="py-6 space-y-3.5 text-xs sm:text-sm text-[#d4ebe2]">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
+                  <p><strong className="text-white">Live 2-Hour Interactive Masterclass</strong> with Acharya Sachin Kotiyal</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
+                  <p><strong className="text-white">Live Functional Joint Analysis</strong> (Spine, Hips, Shoulders & Knees)</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
+                  <p><strong className="text-white">Interactive Q&A Session</strong> — Get your specific student injury questions answered</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
+                  <p><strong className="text-white">Bonus #1:</strong> PDF Anatomy Cheat-Sheet & Injury Matrix (Value ₹499)</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
+                  <p><strong className="text-white">Bonus #2:</strong> VIP YogaGarhi Teachers WhatsApp Community Access</p>
                 </div>
               </div>
 
-              {/* Booking CTA Button */}
               <div className="pt-4 text-center">
                 <button
                   onClick={openBookingModal}
-                  className="bg-gradient-to-r from-[#e8720c] via-[#f59e0b] to-[#e8720c] hover:bg-right text-white font-extrabold text-lg sm:text-xl py-4 sm:py-5 px-10 rounded-full shadow-xl w-full flex items-center justify-center gap-3 transform hover:-translate-y-0.5 active:translate-y-0 transition-all"
+                  className="w-full bg-[#ea580c] hover:bg-[#d94e07] active:scale-98 text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-2xl shadow-xl hover:shadow-orange-500/30 transition-all flex items-center justify-center gap-2"
                 >
-                  <Lock className="w-5 h-5 text-yellow-200" />
-                  <span>Lock In Your ₹1 Seat & Instant Zoom Pass →</span>
+                  <span>Claim Your Masterclass Spot for ₹1 Now</span>
+                  <ArrowRight className="w-5 h-5" />
                 </button>
-                <p className="text-xs text-[#718279] mt-3">
-                  🔒 Secure 256-Bit SSL Checkout • No Subscription • Instant Confirmation
+                <p className="text-[11px] text-[#7fa396] mt-2">
+                  🔒 Instant Razorpay Confirmation • Instant Zoom Pass Issued
                 </p>
               </div>
 
@@ -1065,64 +930,54 @@ export default function YogaAnatomyMasterclass() {
           </div>
         </section>
 
-        {/* 9. FREQUENTLY ASKED QUESTIONS (ACCORDION) */}
-        <section className="py-16 md:py-24 bg-white border-t border-[#ece3d5]">
+        {/* ========================================================================= */}
+        {/* 9. FREQUENTLY ASKED QUESTIONS */}
+        {/* ========================================================================= */}
+        <section className="py-16 bg-[#082e22] text-white border-t border-[#144f3c]">
           <div className="max-w-3xl mx-auto px-4">
             
-            <div className="text-center mb-12">
-              <span className="text-xs uppercase tracking-widest font-bold text-[#2d6a4f] bg-[#e8f5f0] px-3.5 py-1 rounded-full border border-[#2d6a4f]/20">
-                Got Questions?
+            <div className="text-center mb-10">
+              <span className="text-xs uppercase tracking-widest font-bold text-[#f5b942] bg-[#0b3b2c] px-3.5 py-1 rounded-full border border-[#1b614b]">
+                FAQ
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#04332D] mt-4 mb-3">
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-white mt-2">
                 Frequently Asked Questions
               </h2>
-              <p className="text-sm sm:text-base text-[#52635a]">
-                Everything you need to know about joining this live masterclass.
-              </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3 text-left">
               {[
                 {
-                  q: "In which language will the masterclass be conducted?",
-                  a: "The masterclass will be taught bilingually in English and Hindi. Acharya Sachin Ji explains all anatomical biomechanics in clear, conversational language with practical visual demonstrations, ensuring complete clarity regardless of your language preference."
+                  q: "Who is this workshop for?",
+                  a: "This workshop is built specifically for Yoga Teachers (RYT 200 / 300 / 500), fitness trainers, and serious practitioners who want to understand anatomy functionally and teach without fear of injuring students."
                 },
                 {
-                  q: "Is this masterclass suitable for beginners or only certified yoga teachers?",
-                  a: "Both! It is designed for yoga teachers, TTC students, personal trainers, and serious practitioners who want to understand their own joint mechanics, prevent personal injuries, and teach or practice with total anatomical confidence."
+                  q: "What language will the masterclass be in?",
+                  a: "The session is bilingual (taught clearly in simple English and Hindi) to ensure complete understanding without heavy academic medical jargon."
                 },
                 {
-                  q: "How will I receive the Zoom link after paying ₹1?",
-                  a: "Immediately upon completing your ₹1 booking, you will see the Zoom meeting credentials directly on your screen. You will also get an instant link to join the VIP WhatsApp group where the direct link and reminders are shared, and a confirmation will be emailed to you."
+                  q: "Will I get the Zoom link immediately after paying ₹1?",
+                  a: "Yes! As soon as you complete the ₹1 registration, you will instantly receive the Zoom Meeting ID & Passcode on your screen, plus an email confirmation and VIP WhatsApp community invite."
                 },
                 {
-                  q: "What if I cannot attend live this Sunday at 10:30 AM IST?",
-                  a: "While we strongly recommend attending live for interactive Q&A with Sachin Ji, all registered participants will receive the high-value PDF Anatomy Cheat-Sheet & Sequencing Blueprint directly in the group."
-                },
-                {
-                  q: "Why is this masterclass priced at only ₹1 instead of ₹999?",
-                  a: "YogaGarhi is on a global mission to eliminate preventable yoga injuries and elevate the clinical standards of yoga teaching worldwide. We keep the fee at ₹1 so that genuine seekers and teachers can experience authentic Himalayan biomechanics with zero financial friction."
+                  q: "Why is it priced at only ₹1?",
+                  a: "YogaGarhi believes essential joint safety and injury prevention knowledge should be accessible to every yoga teacher worldwide. The ₹1 fee simply filters out casual spammers so only dedicated teachers attend."
                 }
-              ].map((item, idx) => (
+              ].map((faq, i) => (
                 <div
-                  key={idx}
-                  className="border border-[#e6dcce] rounded-2xl overflow-hidden bg-[#fdfbf7] transition-all"
+                  key={i}
+                  className="bg-[#06281e] border border-[#144f3c] rounded-2xl overflow-hidden shadow-sm"
                 >
                   <button
-                    onClick={() => toggleFaq(idx)}
-                    className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 font-serif text-base sm:text-lg font-bold text-[#04332D] hover:text-[#e8720c] transition-colors"
+                    onClick={() => toggleFaq(i)}
+                    className="w-full p-4 text-left font-bold text-xs sm:text-sm flex items-center justify-between text-white hover:text-[#f5b942] transition-colors"
                   >
-                    <span>{item.q}</span>
-                    {openFaq === idx ? (
-                      <ChevronUp className="w-5 h-5 text-[#e8720c] shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-[#718279] shrink-0" />
-                    )}
+                    <span>{faq.q}</span>
+                    {openFaq === i ? <ChevronUp className="w-4 h-4 text-[#f5b942]" /> : <ChevronDown className="w-4 h-4 text-[#7fa396]" />}
                   </button>
-
-                  {openFaq === idx && (
-                    <div className="px-5 pb-5 text-sm text-[#4d5e55] leading-relaxed border-t border-[#ece3d5] pt-3 bg-white">
-                      {item.a}
+                  {openFaq === i && (
+                    <div className="px-4 pb-4 text-xs text-[#a3c9bd] leading-relaxed border-t border-[#124233] pt-3">
+                      {faq.a}
                     </div>
                   )}
                 </div>
@@ -1132,233 +987,204 @@ export default function YogaAnatomyMasterclass() {
           </div>
         </section>
 
-        {/* 10. FINAL URGENCY BOOKING CARD & FOOTER */}
-        <section className="py-16 md:py-24 bg-[#04332D] text-white text-center relative overflow-hidden">
-          <div className="max-w-3xl mx-auto px-4 relative z-10">
-            
-            <div className="inline-flex items-center gap-2 bg-[#f5b942]/15 text-[#f5b942] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6 border border-[#f5b942]/30">
-              ⚡ Limited To First 50 Participants
-            </div>
-
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Don't Let Lack of Anatomy Confidence Hold Back Your Teaching
-            </h2>
-
-            <p className="text-base sm:text-lg text-[#c0ded8] mb-8 leading-relaxed max-w-2xl mx-auto">
-              Join Acharya Sachin Kotiyal this <strong>{sundayInfo.fullDate} (10:30 AM – 12:30 PM IST)</strong> on Zoom and unlock clinical confidence for just ₹1.
-            </p>
-
-            <button
-              onClick={openBookingModal}
-              className="bg-gradient-to-r from-[#e8720c] via-[#f59e0b] to-[#e8720c] hover:bg-right text-white font-extrabold text-lg sm:text-xl py-5 px-10 sm:px-14 rounded-full shadow-[0_10px_30px_rgba(232,114,12,0.5)] transform hover:-translate-y-1 transition-all inline-flex items-center gap-3 mb-6"
-            >
-              <span>Reserve My ₹1 Spot Now →</span>
-            </button>
-
-            <p className="text-xs text-[#9bbdb6]">
-              Questions? WhatsApp Admissions: +91 78953 50563 | Email: yogagarhi@gmail.com
-            </p>
-
-          </div>
-        </section>
-
       </main>
 
-      {/* DEDICATED LANDING FOOTER */}
-      <footer className="bg-[#021f1b] text-[#86a8a1] py-8 px-4 text-center text-xs border-t border-[#093d35]">
-        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      {/* ========================================================================= */}
+      {/* 10. DEDICATED LANDING FOOTER */}
+      {/* ========================================================================= */}
+      <footer className="bg-[#041a14] text-[#7fa396] py-8 px-4 text-center text-xs border-t border-[#0d3b2e]">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <p>© {new Date().getFullYear()} YogaGarhi Ashram & Yoga School. All Rights Reserved.</p>
-          <div className="flex items-center gap-4">
-            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <span>•</span>
-            <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms & Conditions</Link>
-            <span>•</span>
-            <Link href="/refund-policy" className="hover:text-white transition-colors">Refund Policy</Link>
+          <div className="flex gap-4 text-[#a3c9bd]">
+            <Link href="/privacy-policy" className="hover:underline">Privacy Policy</Link>
+            <Link href="/terms-and-conditions" className="hover:underline">Terms of Service</Link>
+            <Link href="/refund-policy" className="hover:underline">Refund Policy</Link>
           </div>
         </div>
       </footer>
 
-      {/* 11. STICKY MOBILE BOTTOM BAR */}
-      {showStickyBar && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 bg-[#04332D] text-white p-3 border-t border-[#09473e] shadow-2xl flex items-center justify-between gap-3 sm:hidden">
-          <div>
-            <p className="text-[11px] text-[#f5b942] font-bold uppercase tracking-wider">Live This Sunday</p>
-            <p className="text-base font-black text-white">₹1 <span className="text-xs text-[#86a8a1] line-through font-normal">₹999</span></p>
+      {/* ========================================================================= */}
+      {/* 11. VIDEO MODAL PLAYER */}
+      {/* ========================================================================= */}
+      {activeVideoModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn">
+          <div className="bg-black rounded-3xl max-w-2xl w-full p-2 relative shadow-2xl overflow-hidden">
+            <button
+              onClick={() => setActiveVideoModal(null)}
+              className="absolute top-3 right-3 text-white bg-black/60 hover:bg-black p-2 rounded-full z-10 transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <div className="aspect-video w-full rounded-2xl overflow-hidden">
+              <iframe
+                src={`https://www.youtube.com/embed/${activeVideoModal}?autoplay=1&rel=0`}
+                title="Student Testimonial Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
           </div>
-          <button
-            onClick={openBookingModal}
-            className="bg-gradient-to-r from-[#e8720c] to-[#f59e0b] text-white font-extrabold text-xs py-2.5 px-6 rounded-full shadow-md active:scale-95 transition-transform"
-          >
-            Book for ₹1 →
-          </button>
         </div>
       )}
 
-      {/* 12. RAZORPAY & INSTANT ZOOM DELIVERY MODAL */}
+      {/* ========================================================================= */}
+      {/* 12. ₹1 BOOKING & DIRECT ZOOM CREDENTIALS MODAL */}
+      {/* ========================================================================= */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fadeIn">
-          <div className="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-[#e6dcce] max-h-[90vh] overflow-y-auto">
+          <div className="bg-[#06281e] text-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-[#1b614b] max-h-[90vh] overflow-y-auto">
             
             <button
               onClick={() => setIsModalOpen(false)}
-              className="absolute top-4 right-4 text-[#718279] hover:text-[#04332D] p-1.5 rounded-full hover:bg-gray-100 transition-colors"
+              className="absolute top-4 right-4 text-[#7fa396] hover:text-white p-1.5 rounded-full hover:bg-white/10 transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
 
             {bookingStep === "form" && (
               <div>
-                <div className="text-center mb-6">
-                  <span className="inline-block text-[11px] bg-[#fdf3e2] text-[#c45e07] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-2">
-                    Fast ₹1 Checkout
-                  </span>
-                  <h3 className="font-serif text-2xl font-bold text-[#04332D]">
-                    Reserve Your Masterclass Seat
-                  </h3>
-                  <p className="text-xs text-[#52635a] mt-1">
-                    📅 {sundayInfo.fullDate} • 10:30 AM IST (Zoom)
-                  </p>
+                <div className="text-center mb-5">
+                  <div className="inline-flex items-center gap-1.5 bg-[#0b3b2c] text-[#f5b942] text-[11px] font-bold px-3 py-1 rounded-full border border-[#1b614b] mb-2">
+                    <Sparkles className="w-3.5 h-3.5" /> Special ₹1 Registration
+                  </div>
+                  <h3 className="font-serif text-2xl font-bold text-white">Claim Your Masterclass Seat</h3>
+                  <p className="text-xs text-[#a3c9bd] mt-1">Live this {sundayInfo.ordinalDate} • 7:00 PM IST</p>
                 </div>
 
-                <form onSubmit={handleFormSubmit} className="space-y-4">
+                <form onSubmit={handleFormSubmit} className="space-y-3.5">
                   <div>
-                    <label className="block text-xs font-bold text-[#3d4d45] uppercase tracking-wider mb-1.5">
-                      Full Name *
-                    </label>
-                    <div className="relative">
-                      <User className="w-4 h-4 absolute left-3.5 top-3.5 text-gray-400" />
-                      <input
-                        type="text"
-                        required
-                        placeholder="e.g. Priya Sharma"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full pl-10 pr-4 py-3 bg-[#fdfbf7] border border-[#d6cbbe] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#e8720c]"
-                      />
-                    </div>
+                    <label className="block text-xs font-bold text-[#d4ebe2] mb-1">Full Name</label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g. Priya Sharma"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-[#041a14] border border-[#1b614b] text-white text-xs sm:text-sm focus:outline-none focus:border-[#f5b942]"
+                    />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#3d4d45] uppercase tracking-wider mb-1.5">
-                      Email Address *
-                    </label>
-                    <div className="relative">
-                      <Mail className="w-4 h-4 absolute left-3.5 top-3.5 text-gray-400" />
-                      <input
-                        type="email"
-                        required
-                        placeholder="you@example.com"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full pl-10 pr-4 py-3 bg-[#fdfbf7] border border-[#d6cbbe] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#e8720c]"
-                      />
-                    </div>
+                    <label className="block text-xs font-bold text-[#d4ebe2] mb-1">Email Address</label>
+                    <input
+                      type="email"
+                      required
+                      placeholder="e.g. priya@gmail.com"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-[#041a14] border border-[#1b614b] text-white text-xs sm:text-sm focus:outline-none focus:border-[#f5b942]"
+                    />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#3d4d45] uppercase tracking-wider mb-1.5">
-                      WhatsApp Mobile Number *
-                    </label>
-                    <div className="relative">
-                      <Phone className="w-4 h-4 absolute left-3.5 top-3.5 text-gray-400" />
-                      <input
-                        type="tel"
-                        required
-                        placeholder="+91 98765 43210"
-                        value={formData.whatsapp}
-                        onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
-                        className="w-full pl-10 pr-4 py-3 bg-[#fdfbf7] border border-[#d6cbbe] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#e8720c]"
-                      />
-                    </div>
-                    <p className="text-[11px] text-[#718279] mt-1">
-                      We will send your Zoom link and bonus PDFs directly to this WhatsApp.
-                    </p>
+                    <label className="block text-xs font-bold text-[#d4ebe2] mb-1">WhatsApp Number (For Zoom Pass)</label>
+                    <input
+                      type="tel"
+                      required
+                      placeholder="e.g. +91 98765 43210"
+                      value={formData.whatsapp}
+                      onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
+                      className="w-full px-3.5 py-2.5 rounded-xl bg-[#041a14] border border-[#1b614b] text-white text-xs sm:text-sm focus:outline-none focus:border-[#f5b942]"
+                    />
                   </div>
 
-                  <div className="bg-[#fdf3e2] p-3.5 rounded-xl border border-[#f5b942]/30 flex items-center justify-between text-xs font-bold text-[#04332D]">
-                    <span>Total Amount:</span>
-                    <span className="text-base font-black text-[#c45e07]">₹1 Only <span className="text-xs line-through text-gray-400 font-normal">₹999</span></span>
+                  <div className="bg-[#0b3b2c] p-3 rounded-xl border border-[#1b614b] flex items-center justify-between text-xs font-bold text-white">
+                    <span>Total Payable:</span>
+                    <span className="text-base font-black text-[#f5b942]">₹1 Only <span className="text-xs line-through text-gray-400 font-normal">₹499</span></span>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-[#e8720c] to-[#f59e0b] hover:from-[#d36407] hover:to-[#e08e06] text-white font-extrabold text-base py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2"
+                    className="w-full bg-[#ea580c] hover:bg-[#d94e07] active:scale-98 text-white font-extrabold text-sm sm:text-base py-3 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2"
                   >
-                    <Lock className="w-4 h-4 text-yellow-200" />
-                    <span>Proceed to Pay ₹1 & Get Instant Zoom Pass</span>
+                    <span>Proceed to Pay ₹1</span>
+                    <ArrowRight className="w-4 h-4" />
                   </button>
-
-                  <p className="text-[11px] text-center text-[#718279]">
-                    Protected by 256-Bit SSL Razorpay Encryption.
-                  </p>
                 </form>
               </div>
             )}
 
             {bookingStep === "processing" && (
-              <div className="text-center py-12 space-y-4">
-                <div className="w-14 h-14 border-4 border-[#e8720c] border-t-transparent rounded-full animate-spin mx-auto" />
-                <h4 className="font-serif text-xl font-bold text-[#04332D]">Connecting to Payment Gateway...</h4>
-                <p className="text-xs text-[#718279]">Securing your ₹1 masterclass pass and generating Zoom credentials.</p>
+              <div className="py-10 text-center space-y-4">
+                <div className="w-12 h-12 rounded-full border-4 border-[#f5b942] border-t-transparent animate-spin mx-auto" />
+                <h4 className="font-serif text-xl font-bold text-white">Connecting to Payment Gateway...</h4>
+                <p className="text-xs text-[#a3c9bd]">Generating your secure ₹1 Razorpay transaction.</p>
               </div>
             )}
 
             {bookingStep === "success" && (
-              <div className="text-center space-y-5">
-                <div className="w-16 h-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center mx-auto">
-                  <CheckCircle2 className="w-10 h-10" />
+              <div className="text-center space-y-4 py-2">
+                <div className="w-14 h-14 rounded-full bg-[#22c55e]/20 text-[#22c55e] flex items-center justify-center mx-auto border-2 border-[#22c55e]">
+                  <CheckCircle2 className="w-8 h-8" />
                 </div>
-
+                
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-green-700 bg-green-50 px-3 py-1 rounded-full">
-                    Seat Confirmed & Active
-                  </span>
-                  <h3 className="font-serif text-2xl font-bold text-[#04332D] mt-2">
-                    You're Registered, {formData.name || "Friend"}!
-                  </h3>
-                  <p className="text-xs text-[#52635a] mt-1">
-                    Live Session: <strong>{sundayInfo.fullDate} (10:30 AM – 12:30 PM IST)</strong>
+                  <h3 className="font-serif text-2xl font-bold text-white">You're In! Seat Confirmed 🎉</h3>
+                  <p className="text-xs text-[#a3c9bd] mt-1">
+                    Registration successful for <strong>{formData.name}</strong>
                   </p>
                 </div>
 
-                <div className="bg-[#fdfbf7] p-4 rounded-2xl border border-[#e6dcce] text-left space-y-2 text-xs text-[#384a41]">
-                  <p className="font-bold text-sm text-[#04332D] flex items-center gap-1.5">
-                    <Video className="w-4 h-4 text-[#e8720c]" />
-                    Zoom Joining Credentials:
+                <div className="bg-[#041a14] p-4 rounded-2xl border border-[#1b614b] text-left space-y-2 text-xs text-[#d4ebe2]">
+                  <p className="font-bold text-sm text-[#f5b942] flex items-center gap-1.5">
+                    <Video className="w-4 h-4 text-[#ea580c]" />
+                    Zoom Meeting Details:
                   </p>
-                  <p><strong>Meeting ID:</strong> 879 4321 9876</p>
-                  <p><strong>Passcode:</strong> YOGAGARHI</p>
-                  <p><strong>Duration:</strong> 2 Hours (10:30 AM – 12:30 PM IST)</p>
+                  <p><strong>Meeting ID:</strong> 842 9104 3821</p>
+                  <p><strong>Passcode:</strong> YOGA1</p>
+                  <p><strong>Date & Time:</strong> {sundayInfo.ordinalDate} at 7:00 PM IST</p>
+                  <p><strong>Duration:</strong> 2 Hours Live</p>
                 </div>
 
-                <div className="space-y-3 pt-2">
+                <div className="space-y-2 pt-2">
                   <a
                     href="https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20registered%20for%20the%20₹1%20Applied%20Anatomy%20Masterclass!"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-sm py-3.5 px-4 rounded-xl shadow-md flex items-center justify-center gap-2 transition-colors"
+                    className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow flex items-center justify-center gap-2 transition-all block"
                   >
-                    <MessageSquare className="w-5 h-5" />
-                    <span>Join WhatsApp VIP Attendees Group →</span>
+                    <Smartphone className="w-4 h-4" />
+                    Join VIP WhatsApp Masterclass Group
                   </a>
 
-                  <a
-                    href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=YogaGarhi+Applied+Anatomy+Masterclass+with+Sachin+Ji&dates=${sundayInfo.isoDate.replace(/-/g, '')}T050000Z/${sundayInfo.isoDate.replace(/-/g, '')}T070000Z&details=Live+Zoom+Interactive+Session+with+Acharya+Sachin+Kotiyal.+Zoom+Meeting+ID:+879+4321+9876+Passcode:+YOGAGARHI&location=Zoom+Live`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-[#04332D] hover:bg-[#07473f] text-white font-bold text-xs py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-colors"
+                  <button
+                    onClick={() => setIsModalOpen(false)}
+                    className="w-full bg-white/10 hover:bg-white/20 text-white font-bold text-xs py-2.5 rounded-xl transition-all"
                   >
-                    <Calendar className="w-4 h-4 text-[#f5b942]" />
-                    <span>Add to Google Calendar (10:30 AM IST)</span>
-                  </a>
+                    Done / Close Window
+                  </button>
                 </div>
-
-                <p className="text-[11px] text-[#718279] pt-2">
-                  A receipt & Zoom access confirmation has also been dispatched to <strong>{formData.email}</strong> and YogaGarhi admissions.
-                </p>
               </div>
             )}
 
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================================= */}
+      {/* 13. STICKY BOTTOM BAR (FOR MOBILE & DESKTOP CONVERSIONS) */}
+      {/* ========================================================================= */}
+      {showStickyBar && (
+        <div className="fixed bottom-0 left-0 right-0 z-40 bg-[#06281e]/95 backdrop-blur-md border-t border-[#16533f] py-3 px-4 shadow-2xl animate-fadeIn">
+          <div className="max-w-4xl mx-auto flex items-center justify-between gap-3">
+            <div className="hidden sm:block text-left">
+              <p className="text-xs font-bold text-white">Applied Yoga Anatomy Masterclass</p>
+              <p className="text-[11px] text-[#f5b942]">{sundayInfo.ordinalDate} • 7:00 PM IST • Only ₹1</p>
+            </div>
+
+            <div className="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-3">
+              <div className="text-left sm:text-right">
+                <span className="text-[10px] text-gray-400 line-through">₹499</span>
+                <span className="text-base sm:text-lg font-black text-[#f5b942] ml-1.5">₹1</span>
+              </div>
+              <button
+                onClick={openBookingModal}
+                className="bg-[#ea580c] hover:bg-[#d94e07] text-white font-extrabold text-xs sm:text-sm py-2.5 px-5 sm:px-7 rounded-xl shadow-lg transition-all"
+              >
+                Book My Seat — ₹1 →
+              </button>
+            </div>
           </div>
         </div>
       )}
