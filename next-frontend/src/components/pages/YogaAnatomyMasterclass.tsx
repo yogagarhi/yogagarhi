@@ -38,7 +38,8 @@ import {
   Volume2,
   HelpCircle,
   Tv,
-  CheckCheck
+  CheckCheck,
+  CreditCard
 } from "lucide-react";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
 
@@ -74,6 +75,21 @@ function getUpcomingSunday(): { fullDate: string; shortDate: string; ordinalDate
 
   return { fullDate, shortDate, ordinalDate, isoDate };
 }
+
+// Razorpay Dynamic Script Loader
+const loadRazorpayScript = (): Promise<boolean> => {
+  return new Promise((resolve) => {
+    if (typeof window === "undefined") return resolve(false);
+    if ((window as any).Razorpay) return resolve(true);
+
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.async = true;
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.body.appendChild(script);
+  });
+};
 
 // Video Testimonials Data
 const videoTestimonials = [
@@ -148,6 +164,7 @@ export default function YogaAnatomyMasterclass() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [bookingStep, setBookingStep] = useState<"form" | "processing" | "success">("form");
   const [formData, setFormData] = useState({ name: "", email: "", whatsapp: "" });
+  const [paymentId, setPaymentId] = useState<string>("");
   const [showStickyBar, setShowStickyBar] = useState(false);
   
   // Reviews Holder Active Tab
@@ -156,6 +173,9 @@ export default function YogaAnatomyMasterclass() {
 
   useEffect(() => {
     setSundayInfo(getUpcomingSunday());
+
+    // Preload Razorpay Checkout Script in background
+    loadRazorpayScript();
 
     // 15-minute countdown loop
     const timer = setInterval(() => {
@@ -186,27 +206,92 @@ export default function YogaAnatomyMasterclass() {
     setBookingStep("form");
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.whatsapp) return;
 
     setBookingStep("processing");
-    setTimeout(() => {
-      setBookingStep("success");
-      try {
-        fetch("/api/send-email", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            phone: formData.whatsapp,
-            subject: "New ₹1 Anatomy Masterclass Booking - " + formData.name,
-            message: `Registration for Applied Yoga Anatomy Masterclass on ${sundayInfo.fullDate}. WhatsApp: ${formData.whatsapp}, Email: ${formData.email}`,
-          }),
-        }).catch(() => {});
-      } catch (err) {}
-    }, 1400);
+
+    const isLoaded = await loadRazorpayScript();
+    if (!isLoaded) {
+      alert("Razorpay payment gateway failed to load. Please check your internet connection.");
+      setBookingStep("form");
+      return;
+    }
+
+    const razorpayKey =
+      process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID ||
+      process.env.VITE_RAZORPAY_KEY_ID ||
+      "rzp_live_TiX95mBO2U2F1q";
+
+    const options = {
+      key: razorpayKey,
+      amount: 100, // 100 paise = ₹1.00
+      currency: "INR",
+      name: "YogaGarhi Ashram",
+      description: `Applied Yoga Anatomy Masterclass (${sundayInfo.ordinalDate})`,
+      image: "https://www.yogagarhi.com/icon.png",
+      prefill: {
+        name: formData.name,
+        email: formData.email,
+        contact: formData.whatsapp,
+      },
+      notes: {
+        workshop: "Applied Yoga Anatomy & Biomechanics Masterclass",
+        date: sundayInfo.fullDate,
+        time: "7:00 PM IST",
+      },
+      theme: {
+        color: "#0B3B2C",
+      },
+      modal: {
+        ondismiss: () => {
+          setBookingStep("form");
+        },
+      },
+      handler: async (response: any) => {
+        const pId = response.razorpay_payment_id || "pay_verified";
+        setPaymentId(pId);
+        setBookingStep("success");
+
+        // Send confirmation to admin and student
+        try {
+          await fetch("/api/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name: formData.name,
+              email: formData.email,
+              phone: formData.whatsapp,
+              payment_id: pId,
+              amount: "₹1.00",
+              subject: `₹1 Anatomy Masterclass Paid - ${formData.name} (${pId})`,
+              message: `Confirmed ₹1 Masterclass Registration
+Name: ${formData.name}
+Email: ${formData.email}
+WhatsApp: ${formData.whatsapp}
+Payment ID: ${pId}
+Workshop Date: ${sundayInfo.fullDate} (7:00 PM IST)`,
+            }),
+          });
+        } catch (err) {
+          console.error("Email notification error:", err);
+        }
+      },
+    };
+
+    try {
+      const rzp = new (window as any).Razorpay(options);
+      rzp.on("payment.failed", function (failResponse: any) {
+        alert("Payment failed: " + (failResponse.error?.description || "Transaction declined"));
+        setBookingStep("form");
+      });
+      rzp.open();
+    } catch (err) {
+      console.error("Razorpay launch error:", err);
+      setBookingStep("form");
+      alert("Unable to open Razorpay checkout. Please check your details and try again.");
+    }
   };
 
   const toggleFaq = (index: number) => {
@@ -915,8 +1000,9 @@ export default function YogaAnatomyMasterclass() {
                   <span>Claim Your Masterclass Spot for ₹1 Now</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
-                <p className="text-[11px] text-[#7fa396] mt-2">
-                  🔒 Instant Razorpay Confirmation • Instant Zoom Pass Issued
+                <p className="text-[11px] text-[#7fa396] mt-2 flex items-center justify-center gap-1.5">
+                  <Lock className="w-3.5 h-3.5 text-[#22c55e]" />
+                  <span>Official Live Razorpay Checkout • Instant Zoom Pass Issued</span>
                 </p>
               </div>
 
@@ -951,8 +1037,8 @@ export default function YogaAnatomyMasterclass() {
                   a: "The session is bilingual (taught clearly in simple English and Hindi) to ensure complete understanding without heavy academic medical jargon."
                 },
                 {
-                  q: "Will I get the Zoom link immediately after paying ₹1?",
-                  a: "Yes! As soon as you complete the ₹1 registration, you will instantly receive the Zoom Meeting ID & Passcode on your screen, plus an email confirmation and VIP WhatsApp community invite."
+                  q: "Will I get the Zoom link immediately after paying ₹1 via Razorpay?",
+                  a: "Yes! As soon as your ₹1 payment is completed via Razorpay UPI / Cards, you will instantly receive the Zoom Meeting ID & Passcode on your screen, plus an email confirmation and VIP WhatsApp community invite."
                 },
                 {
                   q: "Why is it priced at only ₹1?",
@@ -1024,10 +1110,10 @@ export default function YogaAnatomyMasterclass() {
       )}
 
       {/* ========================================================================= */}
-      {/* 12. ₹1 BOOKING & DIRECT ZOOM CREDENTIALS MODAL */}
+      {/* 12. ₹1 RAZORPAY BOOKING & INSTANT ZOOM PASS MODAL */}
       {/* ========================================================================= */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fadeIn">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-fadeIn">
           <div className="bg-[#06281e] text-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-[#1b614b] max-h-[90vh] overflow-y-auto">
             
             <button
@@ -1041,7 +1127,7 @@ export default function YogaAnatomyMasterclass() {
               <div>
                 <div className="text-center mb-5">
                   <div className="inline-flex items-center gap-1.5 bg-[#0b3b2c] text-[#f5b942] text-[11px] font-bold px-3 py-1 rounded-full border border-[#1b614b] mb-2">
-                    <Sparkles className="w-3.5 h-3.5" /> Special ₹1 Registration
+                    <Sparkles className="w-3.5 h-3.5" /> Official Live Razorpay ₹1 Checkout
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-white">Claim Your Masterclass Seat</h3>
                   <p className="text-xs text-[#a3c9bd] mt-1">Live this {sundayInfo.ordinalDate} • 7:00 PM IST</p>
@@ -1073,7 +1159,7 @@ export default function YogaAnatomyMasterclass() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#d4ebe2] mb-1">WhatsApp Number (For Zoom Pass)</label>
+                    <label className="block text-xs font-bold text-[#d4ebe2] mb-1">WhatsApp Number (For Zoom Pass & Reminders)</label>
                     <input
                       type="tel"
                       required
@@ -1085,26 +1171,31 @@ export default function YogaAnatomyMasterclass() {
                   </div>
 
                   <div className="bg-[#0b3b2c] p-3 rounded-xl border border-[#1b614b] flex items-center justify-between text-xs font-bold text-white">
-                    <span>Total Payable:</span>
+                    <span>Total Amount Payable:</span>
                     <span className="text-base font-black text-[#f5b942]">₹1 Only <span className="text-xs line-through text-gray-400 font-normal">₹499</span></span>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-[#ea580c] hover:bg-[#d94e07] active:scale-98 text-white font-extrabold text-sm sm:text-base py-3 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2"
+                    className="w-full bg-[#ea580c] hover:bg-[#d94e07] active:scale-98 text-white font-extrabold text-sm sm:text-base py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2"
                   >
-                    <span>Proceed to Pay ₹1</span>
+                    <CreditCard className="w-4 h-4" />
+                    <span>Pay ₹1 via Razorpay (UPI / Cards / GPay)</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
+
+                  <p className="text-[10px] text-center text-[#7fa396] pt-1">
+                    🔒 Secured by 256-bit encryption • Supports UPI, Google Pay, PhonePe, Cards & NetBanking
+                  </p>
                 </form>
               </div>
             )}
 
             {bookingStep === "processing" && (
-              <div className="py-10 text-center space-y-4">
+              <div className="py-12 text-center space-y-4">
                 <div className="w-12 h-12 rounded-full border-4 border-[#f5b942] border-t-transparent animate-spin mx-auto" />
-                <h4 className="font-serif text-xl font-bold text-white">Connecting to Payment Gateway...</h4>
-                <p className="text-xs text-[#a3c9bd]">Generating your secure ₹1 Razorpay transaction.</p>
+                <h4 className="font-serif text-xl font-bold text-white">Opening Razorpay Checkout...</h4>
+                <p className="text-xs text-[#a3c9bd]">Please complete your ₹1 payment in the popup window.</p>
               </div>
             )}
 
@@ -1115,26 +1206,26 @@ export default function YogaAnatomyMasterclass() {
                 </div>
                 
                 <div>
-                  <h3 className="font-serif text-2xl font-bold text-white">You're In! Seat Confirmed 🎉</h3>
+                  <h3 className="font-serif text-2xl font-bold text-white">Payment Received! Seat Confirmed 🎉</h3>
                   <p className="text-xs text-[#a3c9bd] mt-1">
-                    Registration successful for <strong>{formData.name}</strong>
+                    Receipt ID: <strong className="text-white font-mono">{paymentId}</strong> for <strong>{formData.name}</strong>
                   </p>
                 </div>
 
                 <div className="bg-[#041a14] p-4 rounded-2xl border border-[#1b614b] text-left space-y-2 text-xs text-[#d4ebe2]">
                   <p className="font-bold text-sm text-[#f5b942] flex items-center gap-1.5">
                     <Video className="w-4 h-4 text-[#ea580c]" />
-                    Zoom Meeting Details:
+                    Live Zoom Meeting Pass:
                   </p>
                   <p><strong>Meeting ID:</strong> 842 9104 3821</p>
                   <p><strong>Passcode:</strong> YOGA1</p>
                   <p><strong>Date & Time:</strong> {sundayInfo.ordinalDate} at 7:00 PM IST</p>
-                  <p><strong>Duration:</strong> 2 Hours Live</p>
+                  <p><strong>Duration:</strong> Strictly 2 Hours Live</p>
                 </div>
 
                 <div className="space-y-2 pt-2">
                   <a
-                    href="https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20registered%20for%20the%20₹1%20Applied%20Anatomy%20Masterclass!"
+                    href="https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow flex items-center justify-center gap-2 transition-all block"
