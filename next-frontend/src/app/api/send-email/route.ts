@@ -7,12 +7,35 @@ export async function POST(request: Request) {
     console.log('API Route: Received form data:', data);
     const { email, _subject, _autoresponder, ...remainingData } = data;
 
-    // 1. Direct Zero-Password Dispatch to yogagarhi@gmail.com via FormSubmit
+    // 1. Direct Zero-Password Dispatch to yogagarhi@gmail.com and Student via FormSubmit
     try {
+      const defaultAutoReply = `Namaste,
+
+Thank you for registering for the "Applied Functional Yoga Anatomy & Biomechanics Masterclass" led by Acharya Sachin Kotiyal!
+
+We have successfully received your ₹1 registration payment.
+
+=== YOUR LIVE CLASS ACCESS PASS ===
+• Mode: Live on Zoom
+• Meeting ID: 842 9104 3821
+• Passcode: YOGA1
+• Live Session: Sunday at 7:00 PM – 9:00 PM IST
+
+=== NEXT STEPS ===
+1. Join our VIP WhatsApp Teachers Group for live class reminders and bonus materials:
+https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20for%20the%20Applied%20Anatomy%20Masterclass!
+
+2. Please ensure you join the Zoom room 5 minutes before 7:00 PM IST with your yoga mat and notebook ready.
+
+With warm regards,
+Acharya Sachin Kotiyal & The YogaGarhi Team
+YogaGarhi Ashram & Yoga School`;
+
       const formSubmitPayload = {
         _subject: _subject || 'New Website Booking / Lead Submission',
         _template: 'table',
         _captcha: 'false',
+        _autoresponse: _autoresponder || defaultAutoReply,
         email: email || 'N/A',
         ...remainingData,
       };
