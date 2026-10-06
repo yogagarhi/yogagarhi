@@ -41,7 +41,9 @@ import {
   CheckCheck,
   CreditCard
 } from "lucide-react";
-import { getCloudinaryUrl } from "@/utils/cloudinary";
+import { getCloudinaryUrl, getCloudinaryImage } from "@/utils/cloudinary";
+
+const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
 // Dynamic Next Sunday Date Calculator (Auto-calculates every week for any year)
 function getUpcomingSunday(): { fullDate: string; shortDate: string; ordinalDate: string; isoDate: string } {
@@ -326,19 +328,33 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
     <div className="min-h-screen bg-[#18100A] text-[#FAF5EE] font-sans selection:bg-[#f5b942]/30 selection:text-white">
       
       {/* ========================================================================= */}
-      {/* 1. DEDICATED DARK GREEN HEADER (MATCHING SCREENSHOT 1) */}
+      {/* 1. DEDICATED HEADER WITH YOGAGARHI LOGO */}
       {/* ========================================================================= */}
       <header className="bg-[#26170E] text-white border-b border-[#5C3A20]/80 sticky top-0 z-40 backdrop-blur-md">
-        <div className="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
-          <div className="flex flex-col">
-            <div className="flex items-center gap-1.5">
-              <span className="font-serif text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#f5b942]">
-                YogaGarhi
+        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden p-0.5 bg-gradient-to-br from-[#f5b942] to-[#8A5D31] shadow-md flex-shrink-0">
+              <div className="w-full h-full rounded-full bg-[#18100A] flex items-center justify-center overflow-hidden">
+                <Image
+                  src={logo}
+                  alt="YogaGarhi Official Logo"
+                  width={48}
+                  height={48}
+                  className="object-contain w-full h-full p-0.5"
+                  priority
+                />
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="flex items-center gap-1.5">
+                <span className="font-serif text-xl sm:text-2xl md:text-[1.75rem] font-bold tracking-tight text-[#f5b942]">
+                  YogaGarhi
+                </span>
+              </div>
+              <span className="text-[10px] md:text-[11px] text-[#D7C0A9] tracking-wide font-medium">
+                Learn what most yoga schools never teach
               </span>
             </div>
-            <span className="text-[10px] md:text-[11px] text-[#D7C0A9] tracking-wide font-medium">
-              Learn what most yoga schools never teach
-            </span>
           </div>
 
           <div>
@@ -368,9 +384,21 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               <span>🔥 Limited Seats - Live Online Workshop</span>
             </div>
 
-            {/* Main Heading (H1) */}
+            {/* Main Heading (H1) with Colored & Gold Highlighting */}
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-white leading-[1.18] tracking-tight mb-5 max-w-4xl mx-auto">
-              Master Functional Yoga Anatomy, Alignment & Teaching Methodology in One Workshop
+              Master{" "}
+              <span className="bg-gradient-to-r from-[#ffd700] via-[#f5b942] to-[#ea580c] bg-clip-text text-transparent font-black drop-shadow-sm">
+                Functional Yoga Anatomy
+              </span>
+              ,{" "}
+              <span className="text-[#f5b942] underline decoration-[#f5b942]/40 decoration-wavy underline-offset-4 font-bold">
+                Alignment
+              </span>{" "}
+              &{" "}
+              <span className="bg-gradient-to-r from-[#f5b942] via-[#ffd700] to-[#f59e0b] bg-clip-text text-transparent font-black">
+                Teaching Methodology
+              </span>{" "}
+              in One Workshop
             </h1>
 
             {/* Subtitle */}
