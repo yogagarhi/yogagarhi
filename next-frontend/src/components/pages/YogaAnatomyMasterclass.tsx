@@ -172,6 +172,7 @@ export default function YogaAnatomyMasterclass() {
   // Reviews Holder Active Tab
   const [reviewTab, setReviewTab] = useState<"videos" | "whatsapp" | "teachers">("videos");
   const [activeVideoModal, setActiveVideoModal] = useState<string | null>(null);
+  const [activeAnatomyTab, setActiveAnatomyTab] = useState<"spine" | "pelvis" | "shoulder">("spine");
 
   useEffect(() => {
     setSundayInfo(getUpcomingSunday());
@@ -405,6 +406,150 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             <p className="text-sm sm:text-base md:text-lg text-[#E8D9C8] max-w-3xl mx-auto leading-relaxed mb-8">
               A live 2-hour deep-dive for yoga teachers and serious practitioners — learn the science behind safe, effective yoga that most teacher training courses never cover.
             </p>
+
+            
+            {/* ========================================================================= */}
+            {/* 3D APPLIED ANATOMY INTERACTIVE BIOMECHANICS VISUALIZER */}
+            {/* ========================================================================= */}
+            <div className="max-w-3xl mx-auto mb-10 bg-[#0E0A07]/95 border-2 border-[#f5b942]/60 rounded-3xl p-5 sm:p-7 shadow-[0_0_60px_rgba(245,185,66,0.15)] text-left backdrop-blur-xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 px-4 py-1.5 bg-[#f5b942] text-[#0B0806] font-mono text-[10px] sm:text-xs font-black rounded-bl-2xl uppercase tracking-wider flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#ea580c] animate-ping" />
+                3D Functional Anatomy Visualizer
+              </div>
+
+              <div className="mb-4">
+                <span className="text-[11px] uppercase tracking-widest font-bold text-[#f5b942]">
+                  🔬 Interactive Teaching Breakdown
+                </span>
+                <h3 className="font-serif text-lg sm:text-xl font-bold text-white mt-1">
+                  What You Will Dissect & Master in 3D:
+                </h3>
+              </div>
+
+              {/* 3 Interactive Tabs */}
+              <div className="grid grid-cols-3 gap-2 mb-5 p-1 bg-[#18110C] rounded-2xl border border-[#3E2818]">
+                <button
+                  type="button"
+                  onClick={() => setActiveAnatomyTab("spine")}
+                  className={`py-2 px-2 sm:px-3 rounded-xl text-xs font-bold transition-all text-center ${
+                    activeAnatomyTab === "spine"
+                      ? "bg-[#f5b942] text-[#0B0806] shadow-md scale-102"
+                      : "text-[#D0BDA8] hover:text-white"
+                  }`}
+                >
+                  🦴 1. Spine & Discs
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setActiveAnatomyTab("pelvis")}
+                  className={`py-2 px-2 sm:px-3 rounded-xl text-xs font-bold transition-all text-center ${
+                    activeAnatomyTab === "pelvis"
+                      ? "bg-[#f5b942] text-[#0B0806] shadow-md scale-102"
+                      : "text-[#D0BDA8] hover:text-white"
+                  }`}
+                >
+                  📐 2. Pelvis & Hips
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setActiveAnatomyTab("shoulder")}
+                  className={`py-2 px-2 sm:px-3 rounded-xl text-xs font-bold transition-all text-center ${
+                    activeAnatomyTab === "shoulder"
+                      ? "bg-[#f5b942] text-[#0B0806] shadow-md scale-102"
+                      : "text-[#D0BDA8] hover:text-white"
+                  }`}
+                >
+                  💪 3. Shoulder Cuff
+                </button>
+              </div>
+
+              {/* Dynamic Anatomical Display Panel */}
+              {activeAnatomyTab === "spine" && (
+                <div className="bg-[#140E0A] p-4 sm:p-5 rounded-2xl border border-[#4F331F] space-y-3 animate-fadeIn">
+                  <div className="flex items-start justify-between gap-2">
+                    <div>
+                      <span className="text-xs font-bold text-[#f5b942] uppercase tracking-wider font-mono">
+                        Biomechanical Focus: L1–L5 & Cervical Spine Safety
+                      </span>
+                      <h4 className="text-sm sm:text-base font-bold text-white mt-0.5">
+                        Backbends & Twists: Preventing Disc Herniation
+                      </h4>
+                    </div>
+                    <span className="bg-[#ea580c]/20 text-[#ea580c] border border-[#ea580c]/40 text-[10px] font-bold px-2.5 py-1 rounded-full shrink-0">
+                      High Injury Risk Area
+                    </span>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-[#E8D9C8] leading-relaxed">
+                    Learn how bone compression in lumbar vertebrae restricts backward bending, and why forcing deep Bhujangasana or Urdhva Dhanurasana pinches facet joints instead of distributing load through thoracic extension.
+                  </p>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-2 text-[11px] font-mono text-[#f5b942]">
+                    <div className="bg-[#1E150F] p-2 rounded-lg border border-[#3E2818]">✓ Facet Joint Angles</div>
+                    <div className="bg-[#1E150F] p-2 rounded-lg border border-[#3E2818]">✓ Annulus Fibrosus</div>
+                    <div className="bg-[#1E150F] p-2 rounded-lg border border-[#3E2818]">✓ Axial Elongation</div>
+                  </div>
+                </div>
+              )}
+
+              {activeAnatomyTab === "pelvis" && (
+                <div className="bg-[#140E0A] p-4 sm:p-5 rounded-2xl border border-[#4F331F] space-y-3 animate-fadeIn">
+                  <div className="flex items-start justify-between gap-2">
+                    <div>
+                      <span className="text-xs font-bold text-[#f5b942] uppercase tracking-wider font-mono">
+                        Biomechanical Focus: Acetabulum & SI Joint Kinematics
+                      </span>
+                      <h4 className="text-sm sm:text-base font-bold text-white mt-0.5">
+                        Lotus & Hip Openers: Protecting Meniscus & Knee Ligaments
+                      </h4>
+                    </div>
+                    <span className="bg-[#22c55e]/20 text-[#22c55e] border border-[#22c55e]/40 text-[10px] font-bold px-2.5 py-1 rounded-full shrink-0">
+                      Crucial Alignment Rule
+                    </span>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-[#E8D9C8] leading-relaxed">
+                    Why the knee is a hinge joint that must never rotate. Discover how skeletal variations in the femoral neck dictate whether a student can ever do Padmasana safely without knee surgery.
+                  </p>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-2 text-[11px] font-mono text-[#f5b942]">
+                    <div className="bg-[#1E150F] p-2 rounded-lg border border-[#3E2818]">✓ Anteversion / Retroversion</div>
+                    <div className="bg-[#1E150F] p-2 rounded-lg border border-[#3E2818]">✓ Labrum Cartilage</div>
+                    <div className="bg-[#1E150F] p-2 rounded-lg border border-[#3E2818]">✓ Zero Knee Torque</div>
+                  </div>
+                </div>
+              )}
+
+              {activeAnatomyTab === "shoulder" && (
+                <div className="bg-[#140E0A] p-4 sm:p-5 rounded-2xl border border-[#4F331F] space-y-3 animate-fadeIn">
+                  <div className="flex items-start justify-between gap-2">
+                    <div>
+                      <span className="text-xs font-bold text-[#f5b942] uppercase tracking-wider font-mono">
+                        Biomechanical Focus: Glenohumeral Joint & Scapulohumeral Rhythm
+                      </span>
+                      <h4 className="text-sm sm:text-base font-bold text-white mt-0.5">
+                        Chaturanga & Inversions: Bulletproofing Rotator Cuffs
+                      </h4>
+                    </div>
+                    <span className="bg-[#38bdf8]/20 text-[#38bdf8] border border-[#38bdf8]/40 text-[10px] font-bold px-2.5 py-1 rounded-full shrink-0">
+                      Upper Body Dynamics
+                    </span>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-[#E8D9C8] leading-relaxed">
+                    Learn exact serratus anterior activation and external rotation cues to stop subacromial impingement in Downward Dog, Chaturanga Dandasana, and Handstand transitions.
+                  </p>
+
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-2 text-[11px] font-mono text-[#f5b942]">
+                    <div className="bg-[#1E150F] p-2 rounded-lg border border-[#3E2818]">✓ Supraspinatus Safety</div>
+                    <div className="bg-[#1E150F] p-2 rounded-lg border border-[#3E2818]">✓ Serratus Anterior</div>
+                    <div className="bg-[#1E150F] p-2 rounded-lg border border-[#3E2818]">✓ Scapular Upward Rotation</div>
+                  </div>
+                </div>
+              )}
+            </div>
 
             {/* 4 Pill Badges Row */}
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-3xl mx-auto mb-10 text-xs sm:text-sm">
