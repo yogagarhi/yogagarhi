@@ -254,7 +254,7 @@ export default function YogaAnatomyMasterclass() {
         setPaymentId(pId);
         setBookingStep("success");
 
-        // Dual-Channel Email Dispatch (Direct Browser + Backend API)
+        // Email Payload for YogaGarhi and Student
         const emailPayload = {
           name: formData.name,
           email: formData.email,
@@ -262,10 +262,11 @@ export default function YogaAnatomyMasterclass() {
           payment_id: pId,
           amount: "₹1.00",
           workshop_date: `${sundayInfo.fullDate} at 7:00 PM IST`,
-          zoom_meeting_id: "842 9104 3821",
-          zoom_passcode: "YOGA1",
+          zoom_meeting_id: "890 4962 6217",
+          zoom_passcode: "260670",
+          zoom_link: "https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1",
           whatsapp_group: "https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!",
-          _subject: `Confirmed: ₹1 Masterclass Payment - ${formData.name} (${pId})`,
+          _subject: `Confirmed: Masterclass Access Pass - ${formData.name} (${pId})`,
           _autoresponder: `Namaste ${formData.name},
 
 Thank you for registering for the "Applied Functional Yoga Anatomy & Biomechanics Masterclass" led by Acharya Sachin Kotiyal!
@@ -275,8 +276,9 @@ We have successfully received your ₹1 payment.
 === YOUR LIVE ZOOM ACCESS PASS ===
 • Date & Time: ${sundayInfo.fullDate} | 7:00 PM – 9:00 PM IST
 • Mode: Live on Zoom
-• Meeting ID: 842 9104 3821
-• Passcode: YOGA1
+• Meeting ID: 890 4962 6217
+• Passcode: 260670
+• Direct Zoom Link: https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1
 • Payment Receipt ID: ${pId}
 
 === VIP WHATSAPP GROUP ===
@@ -287,7 +289,6 @@ Please join the Zoom room 5 minutes before 7:00 PM IST with your yoga mat and no
 
 With warm regards,
 Acharya Sachin Kotiyal & The YogaGarhi Team
-YogaGarhi Ashram & Yoga School`,
         };
 
         // Official Server API Route Dispatch (Sends direct authenticated email from yogagarhi@gmail.com)
@@ -1240,13 +1241,33 @@ YogaGarhi Ashram & Yoga School`,
                     <Video className="w-4 h-4 text-[#ea580c]" />
                     Live Zoom Meeting Pass:
                   </p>
-                  <p><strong>Meeting ID:</strong> 842 9104 3821</p>
-                  <p><strong>Passcode:</strong> YOGA1</p>
+                  <p><strong>Meeting ID:</strong> 890 4962 6217</p>
+                  <p><strong>Passcode:</strong> 260670</p>
                   <p><strong>Date & Time:</strong> {sundayInfo.ordinalDate} at 7:00 PM IST</p>
                   <p><strong>Duration:</strong> Strictly 2 Hours Live</p>
+                  <div className="pt-1">
+                    <a
+                      href="https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-[#f5b942] hover:underline font-bold flex items-center gap-1"
+                    >
+                      🔗 Click here to Open Zoom Directly →
+                    </a>
+                  </div>
                 </div>
 
                 <div className="space-y-2 pt-2">
+                  <a
+                    href="https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow flex items-center justify-center gap-2 transition-all block"
+                  >
+                    <Video className="w-4 h-4" />
+                    Join Live Zoom Class
+                  </a>
+
                   <a
                     href="https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!"
                     target="_blank"

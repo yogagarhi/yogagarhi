@@ -105,8 +105,10 @@ Thank you for registering for the Applied Functional Yoga Anatomy & Biomechanics
 We have successfully received your ₹1 registration payment.
 
 === YOUR LIVE ZOOM CLASS PASS ===
-• Meeting ID: 842 9104 3821
-• Passcode: YOGA1
+• Mode: Live on Zoom
+• Meeting ID: 890 4962 6217
+• Passcode: 260670
+• Direct Zoom Link: https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1
 • Time: Sunday at 7:00 PM – 9:00 PM IST
 
 === VIP WHATSAPP GROUP ===
@@ -141,11 +143,11 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               <table style="width: 100%; font-size: 14px; border-collapse: collapse;">
                 <tr>
                   <td style="padding: 6px 0; color: #4b5563; width: 40%;"><strong>Meeting ID:</strong></td>
-                  <td style="padding: 6px 0; color: #111827; font-weight: bold; font-family: monospace; font-size: 16px;">842 9104 3821</td>
+                  <td style="padding: 6px 0; color: #111827; font-weight: bold; font-family: monospace; font-size: 16px;">890 4962 6217</td>
                 </tr>
                 <tr>
                   <td style="padding: 6px 0; color: #4b5563;"><strong>Passcode:</strong></td>
-                  <td style="padding: 6px 0; color: #111827; font-weight: bold; font-family: monospace; font-size: 16px;">YOGA1</td>
+                  <td style="padding: 6px 0; color: #111827; font-weight: bold; font-family: monospace; font-size: 16px;">260670</td>
                 </tr>
                 <tr>
                   <td style="padding: 6px 0; color: #4b5563;"><strong>Session Time:</strong></td>
@@ -156,6 +158,12 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   <td style="padding: 6px 0; color: #16a34a; font-weight: bold;">₹1.00 Paid & Verified ✓</td>
                 </tr>
               </table>
+
+              <div style="text-align: center; margin-top: 15px;">
+                <a href="https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1" style="background-color: #2563eb; color: #ffffff; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; font-size: 13px; display: inline-block;">
+                  🔗 Click Here to Join Zoom Meeting
+                </a>
+              </div>
             </div>
 
             <!-- WhatsApp CTA Button -->
