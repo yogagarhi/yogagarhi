@@ -1,5 +1,49 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import https from 'https';
+
+function sendViaFormSubmit(payload: any): Promise<boolean> {
+  return new Promise((resolve) => {
+    try {
+      const dataString = JSON.stringify(payload);
+      const options = {
+        hostname: 'formsubmit.co',
+        path: '/ajax/yogagarhi@gmail.com',
+        method: 'POST',
+        rejectUnauthorized: false,
+        headers: {
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(dataString),
+          'Accept': 'application/json',
+          'Referer': 'https://www.yogagarhi.com',
+          'Origin': 'https://www.yogagarhi.com',
+        },
+      };
+
+      const req = https.request(options, (res) => {
+        let responseData = '';
+        res.on('data', (chunk) => {
+          responseData += chunk;
+        });
+        res.on('end', () => {
+          console.log('API Route: FormSubmit response:', responseData);
+          resolve(true);
+        });
+      });
+
+      req.on('error', (err) => {
+        console.error('API Route: FormSubmit https error:', err);
+        resolve(false);
+      });
+
+      req.write(dataString);
+      req.end();
+    } catch (e) {
+      console.error('API Route: FormSubmit exception:', e);
+      resolve(false);
+    }
+  });
+}
 
 export async function POST(request: Request) {
   try {
@@ -8,8 +52,7 @@ export async function POST(request: Request) {
     const { email, _subject, _autoresponder, ...remainingData } = data;
 
     // 1. Direct Zero-Password Dispatch to yogagarhi@gmail.com and Student via FormSubmit
-    try {
-      const defaultAutoReply = `Namaste,
+    const defaultAutoReply = `Namaste,
 
 Thank you for registering for the "Applied Functional Yoga Anatomy & Biomechanics Masterclass" led by Acharya Sachin Kotiyal!
 
@@ -31,29 +74,16 @@ With warm regards,
 Acharya Sachin Kotiyal & The YogaGarhi Team
 YogaGarhi Ashram & Yoga School`;
 
-      const formSubmitPayload = {
-        _subject: _subject || 'New Website Booking / Lead Submission',
-        _template: 'table',
-        _captcha: 'false',
-        _autoresponse: _autoresponder || defaultAutoReply,
-        email: email || 'N/A',
-        ...remainingData,
-      };
+    const formSubmitPayload = {
+      _subject: _subject || 'New Website Booking / Lead Submission',
+      _template: 'table',
+      _captcha: 'false',
+      _autoresponse: _autoresponder || defaultAutoReply,
+      email: email || 'N/A',
+      ...remainingData,
+    };
 
-      await fetch('https://formsubmit.co/ajax/yogagarhi@gmail.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-          'Referer': 'https://www.yogagarhi.com',
-          'Origin': 'https://www.yogagarhi.com',
-        },
-        body: JSON.stringify(formSubmitPayload),
-      });
-      console.log('API Route: FormSubmit delivered to yogagarhi@gmail.com successfully.');
-    } catch (fsErr) {
-      console.error('API Route: FormSubmit dispatch error:', fsErr);
-    }
+    await sendViaFormSubmit(formSubmitPayload);
 
     // 2. If SMTP credentials exist, send via Nodemailer as well
     if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {

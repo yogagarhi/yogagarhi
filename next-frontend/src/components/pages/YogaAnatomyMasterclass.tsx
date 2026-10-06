@@ -254,47 +254,65 @@ export default function YogaAnatomyMasterclass() {
         setPaymentId(pId);
         setBookingStep("success");
 
-        // Send confirmation to both YogaGarhi admin and the student
-        try {
-          await fetch("/api/send-email", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              name: formData.name,
-              email: formData.email,
-              phone: formData.whatsapp,
-              payment_id: pId,
-              amount: "₹1.00",
-              workshop_date: `${sundayInfo.fullDate} at 7:00 PM IST`,
-              zoom_meeting_id: "842 9104 3821",
-              zoom_passcode: "YOGA1",
-              whatsapp_group: "https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!",
-              _subject: `Confirmed: Your Zoom Pass for Applied Yoga Anatomy Masterclass (${sundayInfo.ordinalDate})`,
-              _autoresponder: `Namaste ${formData.name},
+        // Dual-Channel Email Dispatch (Direct Browser + Backend API)
+        const emailPayload = {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.whatsapp,
+          payment_id: pId,
+          amount: "₹1.00",
+          workshop_date: `${sundayInfo.fullDate} at 7:00 PM IST`,
+          zoom_meeting_id: "842 9104 3821",
+          zoom_passcode: "YOGA1",
+          whatsapp_group: "https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!",
+          _subject: `Confirmed: ₹1 Masterclass Payment - ${formData.name} (${pId})`,
+          _autoresponder: `Namaste ${formData.name},
 
 Thank you for registering for the "Applied Functional Yoga Anatomy & Biomechanics Masterclass" led by Acharya Sachin Kotiyal!
 
-Your ₹1 payment has been successfully confirmed.
+We have successfully received your ₹1 payment.
 
-=== YOUR LIVE CLASS ACCESS PASS ===
+=== YOUR LIVE ZOOM ACCESS PASS ===
 • Date & Time: ${sundayInfo.fullDate} | 7:00 PM – 9:00 PM IST
 • Mode: Live on Zoom
 • Meeting ID: 842 9104 3821
 • Passcode: YOGA1
 • Payment Receipt ID: ${pId}
 
-=== NEXT STEPS ===
-1. Join our VIP WhatsApp Teachers Group for live class reminders and bonus materials:
+=== VIP WHATSAPP GROUP ===
+Join our VIP WhatsApp Teachers Group for live class reminders and bonus materials:
 https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!
 
-2. Please ensure you join the Zoom room 5 minutes before 7:00 PM IST with your yoga mat and a notebook ready.
-
-If you have any questions before the session, feel free to reply directly to this email or reach us on WhatsApp at +91 78953 50563.
+Please join the Zoom room 5 minutes before 7:00 PM IST with your yoga mat and notebook ready.
 
 With warm regards,
 Acharya Sachin Kotiyal & The YogaGarhi Team
 YogaGarhi Ashram & Yoga School`,
+        };
+
+        // 1. Direct Browser-Level Dispatch
+        try {
+          fetch("https://formsubmit.co/ajax/yogagarhi@gmail.com", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              ...emailPayload,
+              _template: "table",
+              _captcha: "false",
+              _autoresponse: emailPayload._autoresponder,
             }),
+          }).catch(() => {});
+        } catch (e) {}
+
+        // 2. Server API Route Dispatch
+        try {
+          await fetch("/api/send-email", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(emailPayload),
           });
         } catch (err) {
           console.error("Email notification error:", err);
