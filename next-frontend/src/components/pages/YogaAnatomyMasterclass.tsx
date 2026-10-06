@@ -587,6 +587,46 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             </div>
 
             {/* ========================================================================= */}
+            {/* LIVE TEACHING PROJECTION DEMONSTRATION PHOTO CARD */}
+            {/* ========================================================================= */}
+            <div className="max-w-2xl mx-auto mb-8 bg-[#0E0A07]/95 rounded-3xl border-2 border-[#f5b942]/70 p-3 sm:p-4 shadow-[0_0_50px_rgba(245,185,66,0.18)] overflow-hidden text-left backdrop-blur-md">
+              <div className="px-2 py-1.5 flex items-center justify-between text-[11px] sm:text-xs font-bold text-[#f5b942] uppercase tracking-wider mb-2">
+                <span className="flex items-center gap-1.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#22c55e] animate-pulse" />
+                  Live Workshop Demonstration
+                </span>
+                <span className="text-[#DBC4AC] normal-case font-medium">
+                  Rishikesh Masterclass
+                </span>
+              </div>
+
+              <div className="relative aspect-[4/3] sm:aspect-[16/10] w-full rounded-2xl overflow-hidden border border-[#523520] shadow-inner bg-black">
+                <Image
+                  src="/sachin-anatomy-projection.jpg"
+                  alt="Acharya Sachin Kotiyal conducting live functional yoga anatomy & pelvic girdle projection mapping on student"
+                  fill
+                  className="object-cover object-center"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0806]/95 via-[#0B0806]/30 to-transparent pointer-events-none" />
+                
+                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-[#0E0A07]/90 backdrop-blur-md border border-[#f5b942]/40 rounded-xl p-3 text-left">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="bg-[#ea580c] text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-md">
+                      Interactive Biomechanics
+                    </span>
+                    <span className="text-[11px] text-[#f5b942] font-mono font-bold">
+                      Pelvic Girdle & Ischium Alignment
+                    </span>
+                  </div>
+                  <p className="text-xs sm:text-[13px] text-[#F5EBE1] leading-snug">
+                    Acharya Sachin Kotiyal demonstrating real-time skeletal projection mapping to pinpoint exact pelvic tilt, spinal load distribution, and hip joint mechanics on students.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* ========================================================================= */}
             {/* HERO VIDEO HOLDER WITH GOLD BORDER (AESTHETIC STUDIO FRAME) */}
             {/* ========================================================================= */}
             <div className="max-w-2xl mx-auto mb-8 bg-[#0E0A07]/90 rounded-3xl border border-[#f5b942]/60 p-2.5 sm:p-3.5 shadow-[0_0_50px_rgba(245,185,66,0.12)] overflow-hidden text-left backdrop-blur-md">
