@@ -1,49 +1,5 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
-import https from 'https';
-
-function sendViaFormSubmit(payload: any): Promise<boolean> {
-  return new Promise((resolve) => {
-    try {
-      const dataString = JSON.stringify(payload);
-      const options = {
-        hostname: 'formsubmit.co',
-        path: '/ajax/yogagarhi@gmail.com',
-        method: 'POST',
-        rejectUnauthorized: false,
-        headers: {
-          'Content-Type': 'application/json',
-          'Content-Length': Buffer.byteLength(dataString),
-          'Accept': 'application/json',
-          'Referer': 'https://www.yogagarhi.com',
-          'Origin': 'https://www.yogagarhi.com',
-        },
-      };
-
-      const req = https.request(options, (res) => {
-        let responseData = '';
-        res.on('data', (chunk) => {
-          responseData += chunk;
-        });
-        res.on('end', () => {
-          console.log('API Route: FormSubmit response:', responseData);
-          resolve(true);
-        });
-      });
-
-      req.on('error', (err) => {
-        console.error('API Route: FormSubmit https error:', err);
-        resolve(false);
-      });
-
-      req.write(dataString);
-      req.end();
-    } catch (e) {
-      console.error('API Route: FormSubmit exception:', e);
-      resolve(false);
-    }
-  });
-}
 
 export async function POST(request: Request) {
   try {
@@ -51,51 +7,20 @@ export async function POST(request: Request) {
     console.log('API Route: Received form data:', data);
     const { email, _subject, _autoresponder, ...remainingData } = data;
 
-    // 1. Direct Zero-Password Dispatch to yogagarhi@gmail.com and Student via FormSubmit
-    const defaultAutoReply = `Namaste,
-
-Thank you for registering for the "Applied Functional Yoga Anatomy & Biomechanics Masterclass" led by Acharya Sachin Kotiyal!
-
-We have successfully received your ₹1 registration payment.
-
-=== YOUR LIVE CLASS ACCESS PASS ===
-• Mode: Live on Zoom
-• Meeting ID: 842 9104 3821
-• Passcode: YOGA1
-• Live Session: Sunday at 7:00 PM – 9:00 PM IST
-
-=== NEXT STEPS ===
-1. Join our VIP WhatsApp Teachers Group for live class reminders and bonus materials:
-https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20for%20the%20Applied%20Anatomy%20Masterclass!
-
-2. Please ensure you join the Zoom room 5 minutes before 7:00 PM IST with your yoga mat and notebook ready.
-
-With warm regards,
-Acharya Sachin Kotiyal & The YogaGarhi Team
-YogaGarhi Ashram & Yoga School`;
-
-    const formSubmitPayload = {
-      _subject: _subject || 'New Website Booking / Lead Submission',
-      _template: 'table',
-      _captcha: 'false',
-      _autoresponse: _autoresponder || defaultAutoReply,
-      email: email || 'N/A',
-      ...remainingData,
-    };
-
-    await sendViaFormSubmit(formSubmitPayload);
-
-    // 2. If SMTP credentials exist, send via Nodemailer as well
+    // Check for SMTP configuration
     if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
-      console.log('API Route: SMTP credentials not set, delivered via FormSubmit to yogagarhi@gmail.com.');
-      return NextResponse.json({ success: true, message: 'Delivered to yogagarhi@gmail.com' });
+      console.error('API Route Error: SMTP credentials missing in environment variables.');
+      return NextResponse.json(
+        { success: false, message: 'SMTP credentials missing.' },
+        { status: 500 }
+      );
     }
 
-    // Create a transporter using SMTP
+    // Create a transporter using official authenticated Gmail SMTP
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || 'smtp.gmail.com',
-      port: parseInt(process.env.SMTP_PORT || '587'),
-      secure: process.env.SMTP_PORT === '465', // true for 465, false for other ports
+      port: parseInt(process.env.SMTP_PORT || '465'),
+      secure: process.env.SMTP_PORT === '465' || !process.env.SMTP_PORT, // true for port 465
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
@@ -123,7 +48,8 @@ YogaGarhi Ashram & Yoga School`;
     const adminMailOptions = {
       from: `"YogaGarhi Website" <${process.env.SMTP_USER}>`,
       to: 'yogagarhi@gmail.com',
-      subject: _subject || `New ₹1 Anatomy Masterclass Payment - ${remainingData.name || 'Student'}`,
+      replyTo: email || 'yogagarhi@gmail.com',
+      subject: `New Masterclass Registration: ${remainingData.name || 'Student'} (${remainingData.payment_id || '₹1 Paid'})`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #16533f; border-radius: 12px; overflow: hidden;">
           <div style="background-color: #0b3b2c; color: #f5b942; padding: 20px; text-align: center;">
@@ -168,9 +94,10 @@ YogaGarhi Ashram & Yoga School`;
 
     // 2. Send "Thank You - Payment Received" Auto-responder to User (Student)
     const userMailOptions = email ? {
-      from: `"YogaGarhi Ashram" <${process.env.SMTP_USER}>`,
+      from: `"Acharya Sachin Kotiyal - YogaGarhi" <${process.env.SMTP_USER}>`,
       to: email,
-      subject: _subject || 'Thank You! Your ₹1 Payment is Received — Applied Yoga Anatomy Masterclass',
+      replyTo: 'yogagarhi@gmail.com',
+      subject: 'Confirmation & Live Zoom Pass: Applied Yoga Anatomy Masterclass',
       text: _autoresponder || `Namaste,
 
 Thank you for registering for the Applied Functional Yoga Anatomy & Biomechanics Masterclass!

@@ -290,24 +290,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team
 YogaGarhi Ashram & Yoga School`,
         };
 
-        // 1. Direct Browser-Level Dispatch
-        try {
-          fetch("https://formsubmit.co/ajax/yogagarhi@gmail.com", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-            body: JSON.stringify({
-              ...emailPayload,
-              _template: "table",
-              _captcha: "false",
-              _autoresponse: emailPayload._autoresponder,
-            }),
-          }).catch(() => {});
-        } catch (e) {}
-
-        // 2. Server API Route Dispatch
+        // Official Server API Route Dispatch (Sends direct authenticated email from yogagarhi@gmail.com)
         try {
           await fetch("/api/send-email", {
             method: "POST",
