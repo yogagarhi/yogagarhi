@@ -94,7 +94,7 @@ export async function POST(request: Request) {
 
     // 2. Send "Thank You - Payment Received" Auto-responder to User (Student)
     const userMailOptions = email ? {
-      from: `"Acharya Sachin Kotiyal - YogaGarhi" <${process.env.SMTP_USER}>`,
+      from: `"YogaGarhi" <${process.env.SMTP_USER}>`,
       to: email,
       replyTo: 'yogagarhi@gmail.com',
       subject: 'Confirmation & Live Zoom Pass: Applied Yoga Anatomy Masterclass',
