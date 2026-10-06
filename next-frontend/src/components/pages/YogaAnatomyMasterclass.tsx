@@ -157,6 +157,242 @@ const whatsappReviews = [
   }
 ];
 
+
+// =============================================================================
+// 3D ANIMATED HOLOGRAPHIC FUNCTIONAL ANATOMY CANVAS BACKGROUND
+// Renders real-time 3D rotating spine vertebrae, myofascial kinetic mesh & energy nodes
+// =============================================================================
+function Anatomy3DCanvas() {
+  const canvasRef = React.useRef<HTMLCanvasElement | null>(null);
+
+  React.useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    let animationFrameId: number;
+    let width = (canvas.width = window.innerWidth);
+    let height = (canvas.height = window.innerHeight);
+
+    let mouseX = 0;
+    let mouseY = 0;
+    let targetRotX = 0;
+    let targetRotY = 0;
+    let rotX = 0;
+    let rotY = 0;
+
+    const handleResize = () => {
+      if (!canvas) return;
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      mouseX = (e.clientX - width / 2) / (width / 2);
+      mouseY = (e.clientY - height / 2) / (height / 2);
+      targetRotY = mouseX * 0.4;
+      targetRotX = -mouseY * 0.4;
+    };
+
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("mousemove", handleMouseMove);
+
+    // 1. Generate 3D Spinal Vertebrae Chain (33 Vertebrae)
+    const spineNodes: { x: number; y: number; z: number; label?: string; color: string }[] = [];
+    const totalVertebrae = 30;
+    for (let i = 0; i < totalVertebrae; i++) {
+      const t = (i / totalVertebrae) * Math.PI * 2;
+      const y = (i - totalVertebrae / 2) * 22;
+      const x = Math.sin(t * 1.5) * 25;
+      const z = Math.cos(t * 1.5) * 25;
+      let label = "";
+      let color = "#f5b942";
+      if (i < 7) { label = `C${i + 1}`; color = "#ffd700"; }
+      else if (i < 19) { label = `T${i - 6}`; color = "#f59e0b"; }
+      else if (i < 24) { label = `L${i - 18}`; color = "#ea580c"; }
+      else { label = "Sacrum"; color = "#38bdf8"; }
+
+      spineNodes.push({ x, y, z, label, color });
+    }
+
+    // 2. Generate 3D Myofascial Kinetic Cloud Nodes
+    const cloudNodes: { x: number; y: number; z: number; vx: number; vy: number; vz: number; size: number }[] = [];
+    const numCloud = 50;
+    for (let i = 0; i < numCloud; i++) {
+      cloudNodes.push({
+        x: (Math.random() - 0.5) * 800,
+        y: (Math.random() - 0.5) * 800,
+        z: (Math.random() - 0.5) * 600,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+        vz: (Math.random() - 0.5) * 0.3,
+        size: Math.random() * 2 + 1,
+      });
+    }
+
+    let time = 0;
+
+    const render = () => {
+      time += 0.012;
+      rotX += (targetRotX - rotX) * 0.05;
+      rotY += (targetRotY + time * 0.25 - rotY) * 0.05;
+
+      ctx.clearRect(0, 0, width, height);
+
+      const fov = 450;
+      const centerX = width > 1024 ? width * 0.8 : width * 0.5;
+      const centerY = height * 0.45;
+
+      // 3D Projection Helper
+      const project = (x: number, y: number, z: number) => {
+        // Rotate Y
+        const cosY = Math.cos(rotY);
+        const sinY = Math.sin(rotY);
+        const x1 = x * cosY - z * sinY;
+        const z1 = z * cosY + x * sinY;
+
+        // Rotate X
+        const cosX = Math.cos(rotX);
+        const sinX = Math.sin(rotX);
+        const y2 = y * cosX - z1 * sinX;
+        const z2 = z1 * cosX + y * sinX + 500;
+
+        if (z2 <= 0) return null;
+        const scale = fov / z2;
+        return {
+          x: centerX + x1 * scale,
+          y: centerY + y2 * scale,
+          scale,
+          z: z2,
+        };
+      };
+
+      // Draw 3D Myofascial Kinetic Cloud Connections
+      for (let i = 0; i < cloudNodes.length; i++) {
+        const n = cloudNodes[i];
+        n.x += n.vx;
+        n.y += n.vy;
+        n.z += n.vz;
+
+        if (n.x > 400 || n.x < -400) n.vx *= -1;
+        if (n.y > 400 || n.y < -400) n.vy *= -1;
+        if (n.z > 300 || n.z < -300) n.vz *= -1;
+
+        const p = project(n.x, n.y, n.z);
+        if (!p) continue;
+
+        ctx.fillStyle = "rgba(245, 185, 66, 0.4)";
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, n.size * p.scale, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Connect nearby nodes
+        for (let j = i + 1; j < cloudNodes.length; j++) {
+          const n2 = cloudNodes[j];
+          const dist = Math.hypot(n.x - n2.x, n.y - n2.y, n.z - n2.z);
+          if (dist < 130) {
+            const p2 = project(n2.x, n2.y, n2.z);
+            if (!p2) continue;
+            const alpha = (1 - dist / 130) * 0.15;
+            ctx.strokeStyle = `rgba(212, 175, 55, ${alpha})`;
+            ctx.lineWidth = 1 * p.scale;
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Draw 3D Animated Spine & Vertebrae
+      const projectedSpine = spineNodes.map((node, i) => {
+        // Add waving motion
+        const waveX = node.x + Math.sin(time * 2 + i * 0.3) * 8;
+        const waveZ = node.z + Math.cos(time * 2 + i * 0.3) * 8;
+        return {
+          ...node,
+          proj: project(waveX, node.y, waveZ),
+        };
+      });
+
+      // Draw Spine Linking Line & Discs
+      ctx.beginPath();
+      let first = true;
+      projectedSpine.forEach((item) => {
+        if (!item.proj) return;
+        if (first) {
+          ctx.moveTo(item.proj.x, item.proj.y);
+          first = false;
+        } else {
+          ctx.lineTo(item.proj.x, item.proj.y);
+        }
+      });
+      ctx.strokeStyle = "rgba(245, 185, 66, 0.45)";
+      ctx.lineWidth = 2.5;
+      ctx.stroke();
+
+      // Draw Each Vertebrae Ring & Floating Hologram Node
+      projectedSpine.forEach((item) => {
+        if (!item.proj) return;
+        const { x, y, scale } = item.proj;
+
+        // Vertebrae Disc Ellipse in 3D
+        ctx.strokeStyle = item.color;
+        ctx.lineWidth = 1.8 * scale;
+        ctx.beginPath();
+        ctx.ellipse(x, y, 18 * scale, 7 * scale, rotY, 0, Math.PI * 2);
+        ctx.stroke();
+
+        // Glowing center node
+        ctx.fillStyle = item.color;
+        ctx.beginPath();
+        ctx.arc(x, y, 3.5 * scale, 0, Math.PI * 2);
+        ctx.fill();
+
+        // High resolution coordinate markers on large screens
+        if (width > 1024 && item.label && scale > 0.65) {
+          ctx.fillStyle = "rgba(245, 185, 66, 0.85)";
+          ctx.font = `${Math.max(8, Math.floor(10 * scale))}px monospace`;
+          ctx.fillText(item.label, x + 24 * scale, y + 4 * scale);
+        }
+      });
+
+      // Draw Holographic Biomechanics Ring Orbits
+      const ringY = Math.sin(time) * 150;
+      for (let angle = 0; angle < Math.PI * 2; angle += Math.PI / 8) {
+        const ringRadius = 75;
+        const rx = Math.cos(angle + time * 0.5) * ringRadius;
+        const rz = Math.sin(angle + time * 0.5) * ringRadius;
+        const rp = project(rx, ringY, rz);
+        if (rp) {
+          ctx.fillStyle = "rgba(56, 189, 248, 0.6)";
+          ctx.beginPath();
+          ctx.arc(rp.x, rp.y, 2 * rp.scale, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      animationFrameId = requestAnimationFrame(render);
+    };
+
+    render();
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  return (
+    <canvas
+      ref={canvasRef}
+      className="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-45 mix-blend-screen"
+    />
+  );
+}
+
 export default function YogaAnatomyMasterclass() {
   const [sundayInfo, setSundayInfo] = useState(() => getUpcomingSunday());
 
@@ -326,7 +562,9 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
   };
 
   return (
-    <div className="min-h-screen bg-[#0B0806] text-[#FCF8F2] font-sans selection:bg-[#f5b942]/30 selection:text-white">
+    <div className="min-h-screen bg-[#0B0806] text-[#FCF8F2] font-sans selection:bg-[#f5b942]/30 selection:text-white relative">
+      {/* Real-time 3D Animated Anatomy Canvas Backdrop */}
+      <Anatomy3DCanvas />
       
       {/* ========================================================================= */}
       {/* 1. DEDICATED HEADER WITH YOGAGARHI LOGO */}
