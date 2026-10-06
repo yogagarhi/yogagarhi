@@ -288,7 +288,7 @@ https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%2
 Please join the Zoom room 5 minutes before 7:00 PM IST with your yoga mat and notebook ready.
 
 With warm regards,
-Acharya Sachin Kotiyal & The YogaGarhi Team
+Acharya Sachin Kotiyal & The YogaGarhi Team`,
         };
 
         // Official Server API Route Dispatch (Sends direct authenticated email from yogagarhi@gmail.com)
