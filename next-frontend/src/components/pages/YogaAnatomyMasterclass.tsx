@@ -42,18 +42,17 @@ import {
 } from "lucide-react";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
 
-// Dynamic Next Sunday Date Calculator
+// Dynamic Next Sunday Date Calculator (Auto-calculates every week for any year)
 function getUpcomingSunday(): { fullDate: string; shortDate: string; ordinalDate: string; isoDate: string } {
   const now = new Date();
   const currentDay = now.getDay(); // 0 is Sunday
   let daysUntilSunday = (7 - currentDay) % 7;
 
+  // If today is Sunday and past 7:30 PM IST (14:00 UTC), target next Sunday
   const currentHourUTC = now.getUTCHours();
   const currentMinuteUTC = now.getUTCMinutes();
   const totalMinutesUTC = currentHourUTC * 60 + currentMinuteUTC;
-  if (currentDay === 0 && totalMinutesUTC > 810) { // past 7:00 PM IST (13:30 UTC)
-    daysUntilSunday = 7;
-  } else if (daysUntilSunday === 0 && currentDay !== 0) {
+  if (currentDay === 0 && totalMinutesUTC >= 870) {
     daysUntilSunday = 7;
   }
 
@@ -141,12 +140,7 @@ const whatsappReviews = [
 ];
 
 export default function YogaAnatomyMasterclass() {
-  const [sundayInfo, setSundayInfo] = useState({
-    fullDate: "Sunday, 11th October 2026",
-    shortDate: "11 Oct 2026",
-    ordinalDate: "Sunday, 11th Oct",
-    isoDate: "2026-10-11",
-  });
+  const [sundayInfo, setSundayInfo] = useState(() => getUpcomingSunday());
 
   // Countdown timer: 14 mins 59 secs
   const [timeLeft, setTimeLeft] = useState({ minutes: 14, seconds: 59 });
@@ -314,10 +308,10 @@ export default function YogaAnatomyMasterclass() {
               {/* Video Preview Container */}
               <div 
                 className="relative aspect-video rounded-xl overflow-hidden bg-black group cursor-pointer"
-                onClick={() => setActiveVideoModal("iwhPI8Oric4")}
+                onClick={() => setActiveVideoModal("9uGW2o3jTGM")}
               >
                 <Image
-                  src="https://img.youtube.com/vi/iwhPI8Oric4/hqdefault.jpg"
+                  src="https://img.youtube.com/vi/9uGW2o3jTGM/hqdefault.jpg"
                   alt="Student Review - Acharya Sachin Kotiyal Yoga Anatomy Masterclass"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
@@ -338,7 +332,7 @@ export default function YogaAnatomyMasterclass() {
                   "Hear authentic student feedback, teaching transformation, and real class reviews."
                 </p>
                 <button
-                  onClick={() => setActiveVideoModal("iwhPI8Oric4")}
+                  onClick={() => setActiveVideoModal("9uGW2o3jTGM")}
                   className="text-[#f5b942] hover:underline font-semibold flex items-center gap-1 shrink-0"
                 >
                   Watch on YouTube ↗
