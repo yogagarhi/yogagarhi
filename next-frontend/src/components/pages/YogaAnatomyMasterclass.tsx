@@ -372,71 +372,39 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
       <main>
         {/* ========================================================================= */}
-        {/* 2. FULL-WIDTH HERO SECTION: REAL WORKSHOP PHOTO VISIBLE AS BACKGROUND */}
+        {/* 2. HERO SECTION (MATCHING SCREENSHOT 1 & 2) */}
         {/* ========================================================================= */}
-        <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 text-white overflow-hidden border-b border-[#3E2818]/60 min-h-[580px] flex items-center justify-center">
+        <section className="relative pt-8 pb-14 md:pt-12 md:pb-18 bg-[#120D09]/40 backdrop-blur-[2px] text-white overflow-hidden">
           
-          {/* Top Full Background Photo - Crisp & Clearly Visible */}
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="/sachin-anatomy-projection.jpg"
-              alt="Acharya Sachin Kotiyal live functional yoga anatomy & pelvic girdle projection mapping on student"
-              fill
-              className="object-cover object-center scale-100 brightness-[0.82] contrast-[1.08]"
-              priority
-            />
-            {/* Subtle gradient vignette to blend edges while keeping central photo bright & fully visible */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[#0B0806]/75 via-transparent to-[#0B0806]" />
-            <div className="absolute inset-0 bg-black/35" />
-          </div>
+          {/* Subtle background glow */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-80 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#634026]/40 via-transparent to-transparent pointer-events-none" />
 
           <div className="max-w-5xl mx-auto px-4 relative z-10 text-center">
             
-            {/* Glassmorphic backdrop container to ensure 100% text readability over the bright photo */}
-            <div className="bg-[#0B0806]/70 backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-[#f5b942]/40 shadow-[0_10px_50px_rgba(0,0,0,0.8)]">
-              
-              {/* Top Pill Badge: Limited Seats - Live Online Workshop */}
-              <div className="inline-flex items-center gap-2 bg-[#0B0806]/95 border-2 border-[#f5b942]/80 px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold text-[#f5b942] mb-6 shadow-2xl">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#ea580c] animate-ping" />
-                <span>🔥 Limited Seats - Live Online Workshop</span>
-              </div>
-
-              {/* Main Heading (H1) Matching Screenshot */}
-              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white leading-[1.18] tracking-tight mb-5 max-w-4xl mx-auto drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
-                Master{" "}
-                <span className="bg-gradient-to-r from-[#ffd700] via-[#f5b942] to-[#ea580c] bg-clip-text text-transparent font-black drop-shadow-md">
-                  Yoga Anatomy
-                </span>{" "}
-                & Learn{" "}
-                <br className="hidden sm:inline" />
-                How to{" "}
-                <span className="bg-gradient-to-r from-[#f5b942] via-[#ffd700] to-[#f59e0b] bg-clip-text text-transparent font-black drop-shadow-md">
-                  Apply It in Every Pose
-                </span>
-              </h1>
-
-              {/* Subheading Matching Screenshot */}
-              <p className="text-lg sm:text-2xl md:text-[1.65rem] font-bold text-[#f5b942] max-w-3xl mx-auto leading-relaxed mb-4 drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">
-                Understand movement, alignment, mobility, and injury prevention.
-              </p>
-              
-              {/* Description */}
-              <p className="text-xs sm:text-sm md:text-base text-[#F5EBE1] max-w-2xl mx-auto leading-relaxed mb-8 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] font-medium">
-                A live 2-hour deep-dive for yoga teachers and serious practitioners — learn the science behind safe, transformative yoga that most teacher training courses never cover.
-              </p>
-
-              {/* CTA Button directly over hero */}
-              <div className="flex items-center justify-center">
-                <button
-                  onClick={openBookingModal}
-                  className="bg-[#ea580c] hover:bg-[#d94e07] active:scale-95 text-white font-extrabold text-sm sm:text-base py-3.5 px-8 rounded-2xl shadow-[0_0_30px_rgba(234,88,12,0.6)] hover:shadow-orange-500/80 transition-all flex items-center gap-2"
-                >
-                  <span>Book Masterclass Pass — Just ₹1</span>
-                  <span className="text-lg">→</span>
-                </button>
-              </div>
-
+            {/* Top Pill Badge: Limited Seats - Live Online Workshop */}
+            <div className="inline-flex items-center gap-2 bg-[#18110C]/90 border border-[#634026] px-4 py-1.5 rounded-full text-xs md:text-sm font-medium text-[#f5b942] mb-6 shadow-sm">
+              <span>🔥 Limited Seats - Live Online Workshop</span>
             </div>
+
+            {/* Main Heading (H1) with Colored & Gold Highlighting */}
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.35rem] font-bold text-white leading-[1.18] tracking-tight mb-4 max-w-4xl mx-auto">
+              Master{" "}
+              <span className="bg-gradient-to-r from-[#ffd700] via-[#f5b942] to-[#ea580c] bg-clip-text text-transparent font-black drop-shadow-sm">
+                Yoga Anatomy
+              </span>{" "}
+              & Learn How to{" "}
+              <span className="bg-gradient-to-r from-[#f5b942] via-[#ffd700] to-[#f59e0b] bg-clip-text text-transparent font-black">
+                Apply It in Every Pose
+              </span>
+            </h1>
+
+            {/* Subheading */}
+            <p className="text-base sm:text-lg md:text-xl font-semibold text-[#f5b942] max-w-3xl mx-auto leading-relaxed mb-2.5">
+              Understand movement, alignment, mobility, and injury prevention.
+            </p>
+            <p className="text-xs sm:text-sm md:text-base text-[#D0BDA8] max-w-2xl mx-auto leading-relaxed mb-8">
+              A live 2-hour deep-dive for yoga teachers and serious practitioners — learn the science behind safe, transformative yoga that most teacher training courses never cover.
+            </p>
 
             
             {/* ========================================================================= */}
@@ -539,6 +507,19 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                     <span className="bg-[#22c55e]/20 text-[#22c55e] border border-[#22c55e]/40 text-[10px] font-bold px-2.5 py-1 rounded-full shrink-0">
                       Crucial Alignment Rule
                     </span>
+                  </div>
+
+                  <div className="relative w-full h-48 sm:h-64 rounded-xl overflow-hidden border border-[#523520] my-2 shadow-md">
+                    <Image
+                      src="/sachin-anatomy-projection.jpg"
+                      alt="Acharya Sachin Kotiyal live functional yoga anatomy projection on student"
+                      fill
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-2.5 text-[11px] text-[#ffd700] font-mono flex items-center justify-between">
+                      <span>📸 Live Workshop: 3D Pelvic Girdle & Ischium Functional Alignment</span>
+                      <span className="text-white/80">Rishikesh</span>
+                    </div>
                   </div>
 
                   <p className="text-xs sm:text-sm text-[#E8D9C8] leading-relaxed">
