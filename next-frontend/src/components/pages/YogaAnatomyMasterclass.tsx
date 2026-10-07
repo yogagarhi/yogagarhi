@@ -374,7 +374,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         {/* ========================================================================= */}
         {/* 2. HERO SECTION (PHOTO CLEARLY VISIBLE WITH ZERO WASHOUT) */}
         {/* ========================================================================= */}
-        <section className="relative min-h-[640px] md:min-h-[720px] lg:min-h-[760px] bg-[#FAF7F2] text-[#1C1917] overflow-hidden border-b border-[#E7E5E4] flex flex-col justify-between">
+        <section className="relative min-h-[640px] md:min-h-[720px] lg:min-h-[760px] bg-[#0B0806] md:bg-[#FAF7F2] text-[#1C1917] overflow-hidden border-b border-[#E7E5E4] flex flex-col justify-between">
           
           {/* Background Image: 100% Visible Full Resolution Photo */}
           <div className="absolute inset-0 z-0 overflow-hidden">
@@ -382,43 +382,47 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               src="/sachin-anatomy-projection.jpg"
               alt="Acharya Sachin Kotiyal live yoga anatomy projection mapping on student"
               fill
-              className="object-cover object-[75%_center] md:object-[80%_center] scale-100"
+              className="object-cover object-[72%_center] md:object-[80%_center] scale-100"
               priority
             />
+            {/* Mobile Gradient Overlay: dark scrim at top and bottom so text is razor sharp while keeping projection visible */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-black/75 md:hidden" />
+            {/* Desktop Gradient Overlay: subtle soft fade on left side */}
+            <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent w-2/3" />
           </div>
 
-          {/* Main Hero Content (In a Clean Frosted White Card on Left) */}
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 pt-8 pb-14 md:pt-14 md:pb-18 my-auto">
-            <div className="max-w-xl text-left bg-white/80 md:bg-white/85 backdrop-blur-md p-6 sm:p-8 md:p-9 rounded-3xl border border-[#E7E5E4] shadow-[0_10px_35px_rgba(0,0,0,0.06)]">
+          {/* Main Hero Content: Direct text overlay on mobile, frosted card on desktop */}
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 pt-10 pb-12 md:pt-14 md:pb-18 my-auto">
+            <div className="max-w-xl text-left bg-transparent md:bg-white/90 md:backdrop-blur-md p-0 md:p-9 rounded-none md:rounded-3xl border-0 md:border md:border-[#E7E5E4] shadow-none md:shadow-[0_10px_35px_rgba(0,0,0,0.06)]">
               
               {/* Eyebrow Label */}
               <div className="flex items-center gap-2 mb-2.5">
-                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#B45309] font-mono">
+                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#F59E0B] md:text-[#B45309] font-mono drop-shadow-sm md:drop-shadow-none">
                   YOGAGARHI — MASTER ONLINE WORKSHOP
                 </span>
               </div>
 
               {/* Main Heading (H1) Matching Screenshot */}
-              <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[2.85rem] font-bold text-[#1C1917] leading-[1.15] tracking-tight mb-3.5">
+              <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[2.85rem] font-bold text-white md:text-[#1C1917] leading-[1.18] tracking-tight mb-3.5 drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)] md:drop-shadow-none">
                 Master{" "}
-                <span className="text-[#B45309] font-bold">
+                <span className="text-[#FBBF24] md:text-[#B45309] font-bold">
                   Yoga Anatomy
                 </span>{" "}
                 <br className="hidden sm:inline" />
                 & Learn How to{" "}
-                <span className="text-[#B45309] font-bold">
+                <span className="text-[#FBBF24] md:text-[#B45309] font-bold">
                   Apply It
                 </span>{" "}
                 in Every Pose
               </h1>
 
               {/* Subheading Matching Screenshot */}
-              <p className="text-sm sm:text-base md:text-lg font-semibold text-[#44403C] leading-relaxed mb-2.5">
+              <p className="text-sm sm:text-base md:text-lg font-semibold text-stone-200 md:text-[#44403C] leading-relaxed mb-2.5 drop-shadow-md md:drop-shadow-none">
                 Understand movement, alignment, mobility, and injury prevention.
               </p>
 
               {/* Tagline / Formats */}
-              <p className="text-xs sm:text-sm text-[#78716C] mb-5 font-medium tracking-wide">
+              <p className="text-xs sm:text-sm text-stone-300 md:text-[#78716C] mb-6 font-medium tracking-wide drop-shadow-sm md:drop-shadow-none">
                 Live on Zoom · Interactive Q&A
               </p>
 
@@ -426,13 +430,13 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
                 <button
                   onClick={openBookingModal}
-                  className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white font-bold text-xs sm:text-sm py-3 px-6 sm:px-7 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2"
+                  className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white font-bold text-xs sm:text-sm py-3.5 px-6 sm:px-7 rounded-xl shadow-lg hover:shadow-orange-500/20 transition-all flex items-center gap-2"
                 >
                   <span>Book Workshop — ₹1</span>
                   <span className="text-base">→</span>
                 </button>
 
-                <div className="inline-flex items-center gap-1.5 bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2.5 rounded-xl text-xs text-[#44403C] shadow-sm font-medium">
+                <div className="inline-flex items-center gap-1.5 bg-black/55 md:bg-[#FAF7F2] border border-white/20 md:border-[#E7E5E4] backdrop-blur-sm px-3.5 py-2.5 rounded-xl text-xs text-stone-200 md:text-[#44403C] shadow-sm font-medium">
                   <span className="w-2 h-2 rounded-full bg-[#22c55e] animate-pulse" />
                   <span>{sundayInfo.ordinalDate} · 7:00 PM IST</span>
                 </div>
