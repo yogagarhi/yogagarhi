@@ -625,7 +625,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               {/* 4 Details Pills Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                 
-                <div className="bg-[#FAF7F2] border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-xs">
+                <div className="bg-white border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-sm">
                   <span className="text-xl">📅</span>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-[#78716C] tracking-wider">DATE</p>
@@ -633,7 +633,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
                 </div>
 
-                <div className="bg-[#FAF7F2] border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-xs">
+                <div className="bg-white border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-sm">
                   <span className="text-xl">⏰</span>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-[#78716C] tracking-wider">TIME</p>
@@ -641,7 +641,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
                 </div>
 
-                <div className="bg-[#FAF7F2] border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-xs">
+                <div className="bg-white border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-sm">
                   <span className="text-xl">⏳</span>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-[#78716C] tracking-wider">DURATION</p>
@@ -649,7 +649,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
                 </div>
 
-                <div className="bg-[#FAF7F2] border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-xs">
+                <div className="bg-white border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-sm">
                   <span className="text-xl">📺</span>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-[#78716C] tracking-wider">PLATFORM</p>
@@ -757,12 +757,12 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               </div>
 
               {/* Pricing & CTA Button Row */}
-              <div className="bg-[#FAF7F2] p-4 rounded-2xl border border-[#E7E5E4] shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="bg-white p-4 rounded-2xl border border-[#E7E5E4] shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
                   <p className="text-[11px] text-[#78716C]">Regular Price: <span className="line-through">₹499</span></p>
                   <div className="flex items-center gap-2 mt-0.5">
                     <span className="font-serif text-3xl font-extrabold text-[#D97706]">₹1</span>
-                    <span className="bg-[#FAF7F2] border border-[#E7E5E4] text-[#B45309] text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+                    <span className="bg-white border border-[#E7E5E4] text-[#B45309] text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider shadow-2xs">
                       Limited Time Offer
                     </span>
                   </div>
