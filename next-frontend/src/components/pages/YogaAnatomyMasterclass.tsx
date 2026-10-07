@@ -419,7 +419,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
               {/* Tagline / Formats */}
               <p className="text-xs sm:text-sm text-[#78716C] mb-5 font-medium tracking-wide">
-                Rishikesh · Live on Zoom · Interactive Q&A · Dual Certification
+                Live on Zoom · Interactive Q&A
               </p>
 
               {/* Action Buttons */}
@@ -472,7 +472,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
                   <div>
                     <p className="text-[10px] text-[#A89482] uppercase font-bold tracking-wider">Alumni</p>
-                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">1,200+ Teachers Trained</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">5,000+ Students Trained</p>
                   </div>
                 </div>
 
@@ -920,7 +920,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                 Social Proof & Unfiltered Feedback
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#120D09] mt-2 mb-3">
-                Loved by 1,200+ Yoga Teachers & Practitioners Worldwide
+                Loved by 5,000+ Students & Practitioners Worldwide
               </h2>
               <p className="text-sm text-[#8E7763]">
                 Explore verified video stories, WhatsApp community messages, and teacher reviews.
