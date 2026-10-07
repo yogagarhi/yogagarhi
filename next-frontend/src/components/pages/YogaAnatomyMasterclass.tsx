@@ -675,7 +675,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
                 <div className="space-y-3">
                   {/* Point 1 */}
-                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                  <div className="bg-white border border-[#E7E5E4] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
@@ -685,7 +685,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
 
                   {/* Point 2 */}
-                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                  <div className="bg-white border border-[#E7E5E4] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
@@ -695,7 +695,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
 
                   {/* Point 3 */}
-                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                  <div className="bg-white border border-[#E7E5E4] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
@@ -705,7 +705,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
 
                   {/* Point 4 */}
-                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                  <div className="bg-white border border-[#E7E5E4] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
@@ -715,7 +715,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
 
                   {/* Point 5 */}
-                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                  <div className="bg-white border border-[#E7E5E4] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
@@ -725,7 +725,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
 
                   {/* Point 6 */}
-                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                  <div className="bg-white border border-[#E7E5E4] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
@@ -735,7 +735,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
 
                   {/* Point 7 */}
-                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                  <div className="bg-white border border-[#E7E5E4] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
@@ -745,7 +745,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </div>
 
                   {/* Point 8 (HIGHLIGHTED AS REQUESTED) */}
-                  <div className="bg-gradient-to-r from-amber-50 via-yellow-50 to-orange-50 border-2 border-[#D97706] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-md">
+                  <div className="bg-white border-2 border-[#D97706] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-md">
                     <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#D97706] text-white flex items-center justify-center font-bold text-xs sm:text-sm shrink-0 shadow-sm">
                       ★
                     </div>
