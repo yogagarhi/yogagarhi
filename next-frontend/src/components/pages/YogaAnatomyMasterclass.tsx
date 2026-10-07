@@ -706,13 +706,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
           </div>
         </section>
 
-        {/* ========================================================================= */}
-        {/* 3. RED URGENCY BANNER (MATCHING SCREENSHOT 3) */}
-        {/* ========================================================================= */}
-        <div className="bg-[#dc2626] text-white py-2.5 px-4 text-center text-xs sm:text-sm font-extrabold tracking-wide shadow-md flex items-center justify-center gap-2">
-          <span>⚡</span>
-          <span>Only 47 seats remaining — Register before it closes!</span>
-        </div>
+
 
         {/* ========================================================================= */}
         {/* 4. "DOES THIS SOUND LIKE YOU?" PROBLEM SECTION (SCREENSHOT 3) */}
