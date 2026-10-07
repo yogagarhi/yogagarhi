@@ -178,6 +178,7 @@ export default function YogaAnatomyMasterclass() {
   const [reviewTab, setReviewTab] = useState<"videos" | "whatsapp" | "teachers">("videos");
   const [activeVideoModal, setActiveVideoModal] = useState<string | null>(null);
   const [activeAnatomyTab, setActiveAnatomyTab] = useState<"spine" | "pelvis" | "shoulder">("spine");
+  const [selectedQuizOption, setSelectedQuizOption] = useState<"A" | "B" | null>(null);
 
   useEffect(() => {
     setSundayInfo(getUpcomingSunday());
@@ -779,6 +780,205 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
             </div>
 
+
+          </div>
+        </section>
+
+        {/* ========================================================================= */}
+        {/* 3. ALIGNMENT QUIZ INTERACTIVE SECTION */}
+        {/* ========================================================================= */}
+        <section className="py-16 md:py-20 bg-[#FAF7F2] text-[#1c2420] border-b border-[#E7E5E4]">
+          <div className="max-w-4xl mx-auto px-4">
+            
+            {/* Header */}
+            <div className="text-center max-w-2xl mx-auto mb-10">
+              <span className="inline-block text-[11px] sm:text-xs uppercase tracking-widest font-extrabold text-[#D97706] bg-[#FEF3C7] px-4 py-1.5 rounded-full border border-[#FDE68A] mb-3">
+                ALIGNMENT QUIZ
+              </span>
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#1C1917] leading-tight mb-3">
+                Which Alignment Is Correct?
+              </h2>
+              <p className="text-sm sm:text-base text-[#78716C]">
+                Take a look at both variations below. Tap on the one you believe is the correct alignment.
+              </p>
+            </div>
+
+            {/* 2 Comparison Cards (Option A vs Option B) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {/* Option A */}
+              <div
+                onClick={() => setSelectedQuizOption("A")}
+                className={`bg-white rounded-3xl p-4 sm:p-5 border-2 transition-all cursor-pointer shadow-sm hover:shadow-md flex flex-col items-center text-center group ${
+                  selectedQuizOption === "A"
+                    ? "border-[#D97706] ring-2 ring-[#D97706]/20 bg-white"
+                    : "border-[#E7E5E4] hover:border-[#D97706]/60"
+                }`}
+              >
+                <div className="relative aspect-4/3 w-full rounded-2xl overflow-hidden mb-4 bg-stone-100 border border-[#E7E5E4]">
+                  <Image
+                    src="/quiz-trikonasana-a.jpg"
+                    alt="Trikonasana Alignment Option A"
+                    fill
+                    className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-2.5 left-2.5 bg-[#1C1917]/80 backdrop-blur-xs text-white text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full">
+                    Option A
+                  </div>
+                  {selectedQuizOption === "A" && (
+                    <div className="absolute top-2.5 right-2.5 bg-[#D97706] text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center shadow-xs">
+                      ✓
+                    </div>
+                  )}
+                </div>
+                <button
+                  type="button"
+                  className={`w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm transition-all ${
+                    selectedQuizOption === "A"
+                      ? "bg-[#D97706] text-white shadow-xs"
+                      : "bg-[#FAF7F2] text-[#44403C] group-hover:bg-[#D97706] group-hover:text-white border border-[#E7E5E4]"
+                  }`}
+                >
+                  {selectedQuizOption === "A" ? "Selected: Option A ✓" : "Choose Option A"}
+                </button>
+              </div>
+
+              {/* Option B */}
+              <div
+                onClick={() => setSelectedQuizOption("B")}
+                className={`bg-white rounded-3xl p-4 sm:p-5 border-2 transition-all cursor-pointer shadow-sm hover:shadow-md flex flex-col items-center text-center group ${
+                  selectedQuizOption === "B"
+                    ? "border-[#D97706] ring-2 ring-[#D97706]/20 bg-white"
+                    : "border-[#E7E5E4] hover:border-[#D97706]/60"
+                }`}
+              >
+                <div className="relative aspect-4/3 w-full rounded-2xl overflow-hidden mb-4 bg-stone-100 border border-[#E7E5E4]">
+                  <Image
+                    src="/quiz-trikonasana-b.jpg"
+                    alt="Trikonasana Alignment Option B"
+                    fill
+                    className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-2.5 left-2.5 bg-[#1C1917]/80 backdrop-blur-xs text-white text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full">
+                    Option B
+                  </div>
+                  {selectedQuizOption === "B" && (
+                    <div className="absolute top-2.5 right-2.5 bg-[#D97706] text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center shadow-xs">
+                      ✓
+                    </div>
+                  )}
+                </div>
+                <button
+                  type="button"
+                  className={`w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm transition-all ${
+                    selectedQuizOption === "B"
+                      ? "bg-[#D97706] text-white shadow-xs"
+                      : "bg-[#FAF7F2] text-[#44403C] group-hover:bg-[#D97706] group-hover:text-white border border-[#E7E5E4]"
+                  }`}
+                >
+                  {selectedQuizOption === "B" ? "Selected: Option B ✓" : "Choose Option B"}
+                </button>
+              </div>
+            </div>
+
+            {/* Revealed Answer Block */}
+            {selectedQuizOption && (
+              <div className="mt-8 max-w-3xl mx-auto bg-white rounded-3xl p-6 sm:p-10 border border-[#E7E5E4] shadow-md text-left">
+                {/* 1. Big heading */}
+                <h3
+                  className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#1C1917] leading-tight mb-4 quiz-stagger-item"
+                  style={{ animationDelay: "0s" }}
+                >
+                  Surprise: both are right.
+                </h3>
+
+                {/* 2. Paragraph */}
+                <p
+                  className="text-sm sm:text-base text-[#44403C] leading-relaxed mb-4 quiz-stagger-item"
+                  style={{ animationDelay: "0.15s" }}
+                >
+                  Whichever one you picked, you picked it for a reason. Maybe that's how your teacher taught you. Maybe that's what you saw online.
+                </p>
+
+                {/* 3. Paragraph */}
+                <p
+                  className="text-sm sm:text-base text-[#44403C] leading-relaxed mb-5 quiz-stagger-item"
+                  style={{ animationDelay: "0.30s" }}
+                >
+                  That's exactly what is happening all around the world. Every teacher teaches a little differently, and we believe what we were taught is 'the right way.'
+                </p>
+
+                {/* 4. Short standalone line (slightly larger, medium weight) */}
+                <p
+                  className="text-base sm:text-lg font-medium text-[#1C1917] mb-5 quiz-stagger-item"
+                  style={{ animationDelay: "0.45s" }}
+                >
+                  But alignment is not about chasing a shape.
+                </p>
+
+                {/* 5. Highlight box (soft background color from the site palette, rounded corners, bold text) */}
+                <div
+                  className="bg-[#FAF7F2] border border-[#E7E5E4] rounded-2xl p-4 sm:p-5 mb-5 shadow-2xs quiz-stagger-item"
+                  style={{ animationDelay: "0.60s" }}
+                >
+                  <p className="text-sm sm:text-base md:text-lg font-bold text-[#1C1917] leading-snug">
+                    Every alignment comes from anatomy. More importantly, from functional anatomy.
+                  </p>
+                </div>
+
+                {/* 6. Paragraph */}
+                <p
+                  className="text-sm sm:text-base text-[#44403C] leading-relaxed mb-5 quiz-stagger-item"
+                  style={{ animationDelay: "0.75s" }}
+                >
+                  When you understand why a pose works, you stop copying and start knowing.
+                </p>
+
+                {/* 7. Emphasis line (bold, larger, the strongest text in the block) */}
+                <p
+                  className="text-base sm:text-lg text-[#292524] leading-relaxed mb-5 quiz-stagger-item"
+                  style={{ animationDelay: "0.90s" }}
+                >
+                  <strong className="font-extrabold text-lg sm:text-xl text-[#1C1917]">This is the code.</strong>{" "}
+                  Once you learn it, you can decode any pose, and every alignment starts to make sense.
+                </p>
+
+                {/* 8. Paragraph */}
+                <p
+                  className="text-sm sm:text-base text-[#44403C] leading-relaxed mb-6 quiz-stagger-item"
+                  style={{ animationDelay: "1.05s" }}
+                >
+                  In this workshop, you'll learn functional anatomy and exactly how to apply it in your own practice.
+                </p>
+
+                {/* 9. Tagline (bold, centered) */}
+                <p
+                  className="text-base sm:text-lg font-bold text-center text-[#B45309] mb-6 quiz-stagger-item"
+                  style={{ animationDelay: "1.20s" }}
+                >
+                  Stop memorizing poses. Start decoding them.
+                </p>
+
+                {/* 10. Button & Try again */}
+                <div
+                  className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2 quiz-stagger-item"
+                  style={{ animationDelay: "1.35s" }}
+                >
+                  <button
+                    onClick={openBookingModal}
+                    className="w-full sm:w-auto bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white shadow-md font-extrabold text-base py-3.5 px-8 rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all flex items-center justify-center gap-2"
+                  >
+                    <span>Join the workshop →</span>
+                  </button>
+
+                  <button
+                    onClick={() => setSelectedQuizOption(null)}
+                    className="text-xs sm:text-sm text-[#78716C] hover:text-[#1C1917] font-semibold underline underline-offset-4 transition-colors py-2 px-3 cursor-pointer"
+                  >
+                    Try again
+                  </button>
+                </div>
+              </div>
+            )}
 
           </div>
         </section>
