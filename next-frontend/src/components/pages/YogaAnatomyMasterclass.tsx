@@ -509,56 +509,6 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
         </section>
 
-        {/* ========================================================================= */}
-        {/* 2.5 EXPERIENCE: LEARN THROUGH PRACTICE (MATCHING REFERENCE) */}
-        {/* ========================================================================= */}
-        <section className="py-16 md:py-24 bg-[#FAF7F2] text-[#1C1917] border-b border-[#E7E5E4]">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-left">
-            
-            {/* Category / Eyebrow */}
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-[#A67C48] font-mono block mb-2.5">
-              EXPERIENCE
-            </span>
-
-            {/* Title */}
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#24180E] leading-tight mb-6">
-              Learn Through Practice
-            </h2>
-
-            {/* Description Paragraph */}
-            <p className="text-base sm:text-lg md:text-xl text-[#4A3828] leading-relaxed max-w-3xl mb-10 font-medium">
-              Knowledge becomes meaningful when you experience it yourself. Through daily practice, observation, meditation, pranayama and teaching, develop a deeper relationship with what you learn.
-            </p>
-
-            {/* Key Experiential Highlights */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-[#E8DFD3]">
-              <div className="space-y-2">
-                <span className="text-2xl">🧘</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-[#24180E]">Direct Body Awareness</h4>
-                <p className="text-xs sm:text-sm text-[#705844] leading-relaxed">
-                  Feel bone compression vs tissue tension in your own joints before queuing it to your students.
-                </p>
-              </div>
-
-              <div className="space-y-2">
-                <span className="text-2xl">👁</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-[#24180E]">Posture Dissection</h4>
-                <p className="text-xs sm:text-sm text-[#705844] leading-relaxed">
-                  Real-time visual diagnostic skills to spot skeletal limits and misalignment in seconds.
-                </p>
-              </div>
-
-              <div className="space-y-2">
-                <span className="text-2xl">🛡</span>
-                <h4 className="font-serif text-base sm:text-lg font-bold text-[#24180E]">Injury-Proof Sequencing</h4>
-                <p className="text-xs sm:text-sm text-[#705844] leading-relaxed">
-                  Practical biomechanics principles to teach safely without causing long-term joint wear.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </section>
 
         {/* ========================================================================= */}
         {/* 2.6 WORKSHOP EVENT DETAILS & VIDEO REVIEWS */}
