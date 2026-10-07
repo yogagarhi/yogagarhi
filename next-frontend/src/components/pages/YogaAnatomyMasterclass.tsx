@@ -702,32 +702,6 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
             </div>
 
-            {/* ========================================================================= */}
-            {/* 4-COLUMN STATS BAR (SCREENSHOT 2) */}
-            {/* ========================================================================= */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
-              
-              <div className="bg-white border border-[#E7E5E4] p-4 rounded-2xl text-center shadow-sm">
-                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#B45309]">500+</p>
-                <p className="text-xs text-[#D0BDA8] mt-0.5 font-medium">Students Trained</p>
-              </div>
-
-              <div className="bg-white border border-[#E7E5E4] p-4 rounded-2xl text-center shadow-sm">
-                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#B45309]">5.0 ★</p>
-                <p className="text-xs text-[#D0BDA8] mt-0.5 font-medium">Average Rating</p>
-              </div>
-
-              <div className="bg-white border border-[#E7E5E4] p-4 rounded-2xl text-center shadow-sm">
-                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#B45309]">10+ Years</p>
-                <p className="text-xs text-[#D0BDA8] mt-0.5 font-medium">Of Teaching</p>
-              </div>
-
-              <div className="bg-white border border-[#E7E5E4] p-4 rounded-2xl text-center shadow-sm">
-                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#B45309]">Live Q&A</p>
-                <p className="text-xs text-[#D0BDA8] mt-0.5 font-medium">Interactive Session</p>
-              </div>
-
-            </div>
 
           </div>
         </section>
