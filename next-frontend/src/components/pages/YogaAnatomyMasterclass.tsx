@@ -649,7 +649,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             {/* ========================================================================= */}
             {/* HERO VIDEO HOLDER (CLEAN AESTHETIC STUDIO FRAME MATCHING REFERENCE) */}
             {/* ========================================================================= */}
-            <div className="max-w-2xl mx-auto mb-8 bg-[#FAF7F2] rounded-3xl border border-[#FDE68A] p-2 sm:p-3 shadow-xl overflow-hidden backdrop-blur-md">
+            <div className="max-w-2xl mx-auto mb-8 bg-white rounded-3xl border border-[#E7E5E4] p-2 sm:p-3 shadow-md overflow-hidden backdrop-blur-md">
               {/* Video Preview Container */}
               <div 
                 className="relative aspect-video rounded-2xl overflow-hidden bg-black group cursor-pointer"
