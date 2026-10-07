@@ -372,44 +372,138 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
       <main>
         {/* ========================================================================= */}
-        {/* 2. HERO SECTION (MATCHING SCREENSHOT 1 & 2) */}
+        {/* 2. HERO SECTION (EXACT YOGIC PATH REFERENCE STYLE) */}
         {/* ========================================================================= */}
-        <section className="relative pt-8 pb-14 md:pt-12 md:pb-18 bg-[#120D09]/40 backdrop-blur-[2px] text-white overflow-hidden">
+        <section className="relative min-h-[640px] md:min-h-[720px] lg:min-h-[760px] bg-[#0B0806] text-white overflow-hidden border-b border-[#3E2818]/80 flex flex-col justify-between">
           
-          {/* Subtle background glow */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-80 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#634026]/40 via-transparent to-transparent pointer-events-none" />
+          {/* Background Image: Full Resolution Photo on Right/Center */}
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            <Image
+              src="/sachin-anatomy-projection.jpg"
+              alt="Acharya Sachin Kotiyal live yoga anatomy projection mapping on student"
+              fill
+              className="object-cover object-[70%_center] md:object-[80%_center] scale-100"
+              priority
+            />
+            
+            {/* Left Dark Gradient Overlay (Matching Reference) */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0B0806] via-[#0B0806]/85 to-transparent md:hidden" />
+            <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-[#0B0806] via-[#0B0806]/90 via-45% to-transparent" />
+            <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+          </div>
 
+          {/* Main Hero Content (Left-Aligned Over Dark Gradient) */}
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 pt-10 pb-16 md:pt-16 md:pb-20 my-auto">
+            <div className="max-w-2xl text-left">
+              
+              {/* Eyebrow Label */}
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#f5b942] font-mono">
+                  YOGAGARHI — MASTER ONLINE WORKSHOP
+                </span>
+              </div>
+
+              {/* Main Heading (H1) Matching Screenshot */}
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.65rem] font-bold text-white leading-[1.14] tracking-tight mb-4 drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
+                Master{" "}
+                <span className="text-[#f5b942] font-bold">
+                  Yoga Anatomy
+                </span>{" "}
+                <br className="hidden sm:inline" />
+                & Learn How to{" "}
+                <span className="text-[#f5b942] font-bold">
+                  Apply It
+                </span>{" "}
+                in Every Pose
+              </h1>
+
+              {/* Subheading Matching Screenshot */}
+              <p className="text-base sm:text-lg md:text-xl font-semibold text-[#DBC4AC] leading-relaxed mb-3 drop-shadow-md">
+                Understand movement, alignment, mobility, and injury prevention.
+              </p>
+
+              {/* Tagline / Formats */}
+              <p className="text-xs sm:text-sm text-[#A89482] mb-6 font-medium tracking-wide">
+                Rishikesh · Live on Zoom · Interactive Q&A · Official Certification
+              </p>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+                <button
+                  onClick={openBookingModal}
+                  className="bg-[#c28433] hover:bg-[#b07324] active:scale-95 text-[#0B0806] font-bold text-sm sm:text-base py-3.5 px-7 sm:px-8 rounded-xl shadow-xl transition-all flex items-center gap-2"
+                >
+                  <span>Book Workshop — ₹1</span>
+                  <span className="text-lg">→</span>
+                </button>
+
+                <div className="inline-flex items-center gap-2 bg-[#18110C]/80 border border-[#523520] px-4 py-3 rounded-xl text-xs sm:text-sm text-[#F5EBE1] backdrop-blur-md">
+                  <span className="w-2 h-2 rounded-full bg-[#22c55e] animate-pulse" />
+                  <span>{sundayInfo.ordinalDate} · 7:00 PM IST</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Bottom Floating Translucent Bar (Matching Reference) */}
+          <div className="w-full relative z-10 pb-4 px-4">
+            <div className="max-w-6xl mx-auto bg-[#100B07]/85 backdrop-blur-md border border-[#4F331F]/80 rounded-2xl p-3 sm:p-4 shadow-2xl">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center sm:text-left divide-y sm:divide-y-0 sm:divide-x divide-[#3E2818]/60">
+                
+                <div className="flex items-center justify-center sm:justify-start gap-2.5 px-2 py-1">
+                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#f5b942] shrink-0">
+                    📜
+                  </div>
+                  <div>
+                    <p className="text-[10px] text-[#A89482] uppercase font-bold tracking-wider">Certified</p>
+                    <p className="text-xs sm:text-sm font-bold text-white">Yoga Alliance Continuing Ed</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-center sm:justify-start gap-2.5 px-2 py-1">
+                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#f5b942] shrink-0">
+                    🌍
+                  </div>
+                  <div>
+                    <p className="text-[10px] text-[#A89482] uppercase font-bold tracking-wider">Ashram Hubs</p>
+                    <p className="text-xs sm:text-sm font-bold text-white">Rishikesh & Bali Campuses</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-center sm:justify-start gap-2.5 px-2 py-1">
+                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#f5b942] shrink-0">
+                    🎓
+                  </div>
+                  <div>
+                    <p className="text-[10px] text-[#A89482] uppercase font-bold tracking-wider">Alumni</p>
+                    <p className="text-xs sm:text-sm font-bold text-white">1,200+ Teachers Trained</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-center sm:justify-start gap-2.5 px-2 py-1">
+                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#f5b942] shrink-0">
+                    🔬
+                  </div>
+                  <div>
+                    <p className="text-[10px] text-[#A89482] uppercase font-bold tracking-wider">Expertise</p>
+                    <p className="text-xs sm:text-sm font-bold text-white">10+ Years Biomechanics</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        {/* ========================================================================= */}
+        {/* 2.5 WORKSHOP HIGHLIGHTS & INTERACTIVE ANATOMY BREAKDOWN */}
+        {/* ========================================================================= */}
+        <section className="py-14 md:py-20 bg-[#0B0806] text-white border-b border-[#3E2818]/60">
           <div className="max-w-5xl mx-auto px-4 relative z-10 text-center">
             
-            {/* Top Pill Badge: Limited Seats - Live Online Workshop */}
-            <div className="inline-flex items-center gap-2 bg-[#18110C]/90 border border-[#634026] px-4 py-1.5 rounded-full text-xs md:text-sm font-medium text-[#f5b942] mb-6 shadow-sm">
-              <span>🔥 Limited Seats - Live Online Workshop</span>
-            </div>
-
-            {/* Main Heading (H1) with Colored & Gold Highlighting */}
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.35rem] font-bold text-white leading-[1.18] tracking-tight mb-4 max-w-4xl mx-auto">
-              Master{" "}
-              <span className="bg-gradient-to-r from-[#ffd700] via-[#f5b942] to-[#ea580c] bg-clip-text text-transparent font-black drop-shadow-sm">
-                Yoga Anatomy
-              </span>{" "}
-              & Learn How to{" "}
-              <span className="bg-gradient-to-r from-[#f5b942] via-[#ffd700] to-[#f59e0b] bg-clip-text text-transparent font-black">
-                Apply It in Every Pose
-              </span>
-            </h1>
-
-            {/* Subheading */}
-            <p className="text-base sm:text-lg md:text-xl font-semibold text-[#f5b942] max-w-3xl mx-auto leading-relaxed mb-2.5">
-              Understand movement, alignment, mobility, and injury prevention.
-            </p>
-            <p className="text-xs sm:text-sm md:text-base text-[#D0BDA8] max-w-2xl mx-auto leading-relaxed mb-8">
-              A live 2-hour deep-dive for yoga teachers and serious practitioners — learn the science behind safe, transformative yoga that most teacher training courses never cover.
-            </p>
-
-            
-            {/* ========================================================================= */}
             {/* 3D APPLIED ANATOMY INTERACTIVE BIOMECHANICS VISUALIZER */}
-            {/* ========================================================================= */}
             <div className="max-w-3xl mx-auto mb-10 bg-[#0E0A07]/95 border-2 border-[#f5b942]/60 rounded-3xl p-5 sm:p-7 shadow-[0_0_60px_rgba(245,185,66,0.15)] text-left backdrop-blur-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 px-4 py-1.5 bg-[#f5b942] text-[#0B0806] font-mono text-[10px] sm:text-xs font-black rounded-bl-2xl uppercase tracking-wider flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-[#ea580c] animate-ping" />
