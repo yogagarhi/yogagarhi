@@ -590,6 +590,57 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             </div>
 
             {/* ========================================================================= */}
+            {/* TRUST & GOOGLE REVIEW RATING BADGE (MATCHING USER REFERENCE SCREENSHOT) */}
+            {/* ========================================================================= */}
+            <div className="max-w-2xl mx-auto mb-4 bg-white border border-[#E7E5E4] rounded-2xl sm:rounded-3xl p-3 sm:p-4 shadow-md flex items-center justify-between gap-3 text-left">
+              {/* Overlapping Student Avatars Cluster */}
+              <div className="flex items-center shrink-0">
+                <div className="flex -space-x-2 sm:-space-x-2.5 overflow-hidden">
+                  <Image
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80"
+                    alt="Yoga Teacher Alumni"
+                    width={36}
+                    height={36}
+                    className="inline-block h-8 w-8 sm:h-9 sm:w-9 rounded-full ring-2 ring-white object-cover"
+                  />
+                  <Image
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80"
+                    alt="Yoga Teacher Alumni"
+                    width={36}
+                    height={36}
+                    className="inline-block h-8 w-8 sm:h-9 sm:w-9 rounded-full ring-2 ring-white object-cover"
+                  />
+                  <Image
+                    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&h=120&q=80"
+                    alt="Yoga Teacher Alumni"
+                    width={36}
+                    height={36}
+                    className="inline-block h-8 w-8 sm:h-9 sm:w-9 rounded-full ring-2 ring-white object-cover"
+                  />
+                  <div className="h-8 w-8 sm:h-9 sm:w-9 rounded-full bg-[#EA580C] text-white ring-2 ring-white flex items-center justify-center font-bold text-[10px] sm:text-xs shrink-0 shadow-sm">
+                    5K+
+                  </div>
+                </div>
+              </div>
+
+              {/* Rating & Trust Text (Matching Reference Layout) */}
+              <div className="flex-1 min-w-0 pl-1 sm:pl-2">
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  <div className="flex text-[#EA580C] text-xs sm:text-sm tracking-tighter">
+                    ★★★★★
+                  </div>
+                  <span className="font-extrabold text-xs sm:text-sm text-[#1C1917]">5.0/5</span>
+                  <span className="text-[10px] sm:text-xs font-semibold text-[#78716C] bg-[#FAF7F2] px-1.5 py-0.5 rounded border border-[#E7E5E4] flex items-center gap-1">
+                    <span className="text-[#4285F4] font-bold">G</span>oogle Reviews
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm font-bold text-[#1C1917] tracking-tight mt-0.5 truncate">
+                  Trusted by 5,000+ Yoga Teachers
+                </p>
+              </div>
+            </div>
+
+            {/* ========================================================================= */}
             {/* HERO VIDEO HOLDER WITH GOLD BORDER (AESTHETIC STUDIO FRAME) */}
             {/* ========================================================================= */}
             <div className="max-w-2xl mx-auto mb-8 bg-[#FAF7F2] rounded-3xl border border-[#FDE68A] p-3 sm:p-4 shadow-xl overflow-hidden text-left backdrop-blur-md">
