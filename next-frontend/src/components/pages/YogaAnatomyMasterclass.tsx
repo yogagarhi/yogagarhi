@@ -376,19 +376,15 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         {/* ========================================================================= */}
         <section className="relative min-h-[640px] md:min-h-[720px] lg:min-h-[760px] bg-[#FAF7F2] text-[#1C1917] overflow-hidden border-b border-[#E7E5E4] flex flex-col justify-between">
           
-          {/* Background Image: Full Resolution Natural Contrast Photo */}
+          {/* Background Image: 100% Visible Full Resolution Photo */}
           <div className="absolute inset-0 z-0 overflow-hidden">
             <Image
               src="/sachin-anatomy-projection.jpg"
               alt="Acharya Sachin Kotiyal live yoga anatomy projection mapping on student"
               fill
-              className="object-cover object-[80%_center] md:object-[88%_center] scale-100 contrast-[1.04]"
+              className="object-cover object-[75%_center] md:object-[80%_center] scale-100"
               priority
             />
-            
-            {/* Subtle Gradient that stops early to preserve photo clarity */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#FAF7F2] via-[#FAF7F2]/80 via-35% to-transparent md:hidden pointer-events-none" />
-            <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-[#FAF7F2] via-[#FAF7F2]/75 via-28% to-transparent pointer-events-none" />
           </div>
 
           {/* Main Hero Content (In a Clean Frosted White Card on Left) */}
