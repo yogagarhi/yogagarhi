@@ -328,15 +328,15 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
   };
 
   return (
-    <div className="min-h-screen bg-[#0B0806] text-[#FCF8F2] font-sans selection:bg-[#f5b942]/30 selection:text-white relative">
+    <div className="min-h-screen bg-[#FDFBF7] text-[#1C1917] font-sans selection:bg-[#F59E0B]/30 selection:text-[#78350F] relative">
       {/* ========================================================================= */}
       {/* 1. DEDICATED HEADER WITH YOGAGARHI LOGO */}
       {/* ========================================================================= */}
-      <header className="bg-[#120D09] text-white border-b border-[#3E2818]/80 sticky top-0 z-40 backdrop-blur-md">
+      <header className="bg-white/95 text-[#1C1917] border-b border-[#E7E5E4] sticky top-0 z-40 backdrop-blur-md shadow-sm">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2.5 sm:gap-3">
             <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden p-0.5 bg-gradient-to-br from-[#f5b942] to-[#8A5D31] shadow-md flex-shrink-0">
-              <div className="w-full h-full rounded-full bg-[#0B0806] flex items-center justify-center overflow-hidden">
+              <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
                 <Image
                   src={logo}
                   alt="YogaGarhi Official Logo"
@@ -353,7 +353,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   YogaGarhi
                 </span>
               </div>
-              <span className="text-[10px] md:text-[11px] text-[#D0BDA8] tracking-wide font-medium">
+              <span className="text-[10px] md:text-[11px] text-[#78716C] tracking-wide font-medium">
                 Learn what most yoga schools never teach
               </span>
             </div>
@@ -362,7 +362,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
           <div>
             <button
               onClick={openBookingModal}
-              className="bg-[#ea580c] hover:bg-[#d94e07] active:scale-95 text-white text-xs sm:text-sm font-bold py-2.5 px-5 sm:px-7 rounded-xl shadow-lg hover:shadow-orange-500/20 transition-all"
+              className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white shadow-md text-xs sm:text-sm font-bold py-2.5 px-5 sm:px-7 rounded-xl shadow-lg hover:shadow-orange-500/20 transition-all"
             >
               Book Now — ₹1
             </button>
@@ -374,7 +374,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         {/* ========================================================================= */}
         {/* 2. HERO SECTION (EXACT YOGIC PATH REFERENCE STYLE) */}
         {/* ========================================================================= */}
-        <section className="relative min-h-[640px] md:min-h-[720px] lg:min-h-[760px] bg-[#0B0806] text-white overflow-hidden border-b border-[#3E2818]/80 flex flex-col justify-between">
+        <section className="relative min-h-[640px] md:min-h-[720px] lg:min-h-[760px] bg-[#FDFBF7] text-[#1C1917] overflow-hidden border-b border-[#E7E5E4] flex flex-col justify-between">
           
           {/* Background Image: Full Resolution Photo on Right/Center */}
           <div className="absolute inset-0 z-0 overflow-hidden">
@@ -386,10 +386,9 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               priority
             />
             
-            {/* Left Dark Gradient Overlay (Matching Reference) */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B0806] via-[#0B0806]/85 to-transparent md:hidden" />
-            <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-[#0B0806] via-[#0B0806]/90 via-45% to-transparent" />
-            <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+            {/* Left Light Luxury White Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#FDFBF7] via-[#FDFBF7]/90 to-transparent md:hidden" />
+            <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-[#FDFBF7] via-[#FDFBF7]/95 via-48% to-transparent" />
           </div>
 
           {/* Main Hero Content (Left-Aligned Over Dark Gradient) */}
@@ -398,32 +397,32 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               
               {/* Eyebrow Label */}
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#f5b942] font-mono">
+                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#B45309] font-mono">
                   YOGAGARHI — MASTER ONLINE WORKSHOP
                 </span>
               </div>
 
               {/* Main Heading (H1) Matching Screenshot */}
-              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.65rem] font-bold text-white leading-[1.14] tracking-tight mb-4 drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.65rem] font-bold text-[#1C1917] leading-[1.14] tracking-tight mb-4">
                 Master{" "}
-                <span className="text-[#f5b942] font-bold">
+                <span className="text-[#B45309] font-bold">
                   Yoga Anatomy
                 </span>{" "}
                 <br className="hidden sm:inline" />
                 & Learn How to{" "}
-                <span className="text-[#f5b942] font-bold">
+                <span className="text-[#B45309] font-bold">
                   Apply It
                 </span>{" "}
                 in Every Pose
               </h1>
 
               {/* Subheading Matching Screenshot */}
-              <p className="text-base sm:text-lg md:text-xl font-semibold text-[#DBC4AC] leading-relaxed mb-3 drop-shadow-md">
+              <p className="text-base sm:text-lg md:text-xl font-semibold text-[#44403C] leading-relaxed mb-3">
                 Understand movement, alignment, mobility, and injury prevention.
               </p>
 
               {/* Tagline / Formats */}
-              <p className="text-xs sm:text-sm text-[#A89482] mb-6 font-medium tracking-wide">
+              <p className="text-xs sm:text-sm text-[#78716C] mb-6 font-medium tracking-wide">
                 Rishikesh · Live on Zoom · Interactive Q&A · Official Certification
               </p>
 
@@ -431,13 +430,13 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               <div className="flex flex-wrap items-center gap-3 sm:gap-4">
                 <button
                   onClick={openBookingModal}
-                  className="bg-[#c28433] hover:bg-[#b07324] active:scale-95 text-[#0B0806] font-bold text-sm sm:text-base py-3.5 px-7 sm:px-8 rounded-xl shadow-xl transition-all flex items-center gap-2"
+                  className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white shadow-lg font-bold text-sm sm:text-base py-3.5 px-7 sm:px-8 rounded-xl shadow-xl transition-all flex items-center gap-2"
                 >
                   <span>Book Workshop — ₹1</span>
                   <span className="text-lg">→</span>
                 </button>
 
-                <div className="inline-flex items-center gap-2 bg-[#18110C]/80 border border-[#523520] px-4 py-3 rounded-xl text-xs sm:text-sm text-[#F5EBE1] backdrop-blur-md">
+                <div className="inline-flex items-center gap-2 bg-white/90 border border-[#E7E5E4] px-4 py-3 rounded-xl text-xs sm:text-sm text-[#44403C] shadow-sm backdrop-blur-md">
                   <span className="w-2 h-2 rounded-full bg-[#22c55e] animate-pulse" />
                   <span>{sundayInfo.ordinalDate} · 7:00 PM IST</span>
                 </div>
@@ -448,46 +447,46 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
           {/* Bottom Floating Translucent Bar (Matching Reference) */}
           <div className="w-full relative z-10 pb-4 px-4">
-            <div className="max-w-6xl mx-auto bg-[#100B07]/85 backdrop-blur-md border border-[#4F331F]/80 rounded-2xl p-3 sm:p-4 shadow-2xl">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center sm:text-left divide-y sm:divide-y-0 sm:divide-x divide-[#3E2818]/60">
+            <div className="max-w-6xl mx-auto bg-white/95 backdrop-blur-md border border-[#E7E5E4] rounded-2xl p-3 sm:p-4 shadow-xl">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center sm:text-left divide-y sm:divide-y-0 sm:divide-x divide-[#E7E5E4]">
                 
                 <div className="flex items-center justify-center sm:justify-start gap-2.5 px-2 py-1">
-                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#f5b942] shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#D97706] shrink-0">
                     📜
                   </div>
                   <div>
                     <p className="text-[10px] text-[#A89482] uppercase font-bold tracking-wider">Certified</p>
-                    <p className="text-xs sm:text-sm font-bold text-white">Yoga Alliance Continuing Ed</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">Yoga Alliance Continuing Ed</p>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center sm:justify-start gap-2.5 px-2 py-1">
-                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#f5b942] shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#D97706] shrink-0">
                     🌍
                   </div>
                   <div>
                     <p className="text-[10px] text-[#A89482] uppercase font-bold tracking-wider">Ashram Hubs</p>
-                    <p className="text-xs sm:text-sm font-bold text-white">Rishikesh & Bali Campuses</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">Rishikesh & Bali Campuses</p>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center sm:justify-start gap-2.5 px-2 py-1">
-                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#f5b942] shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#D97706] shrink-0">
                     🎓
                   </div>
                   <div>
                     <p className="text-[10px] text-[#A89482] uppercase font-bold tracking-wider">Alumni</p>
-                    <p className="text-xs sm:text-sm font-bold text-white">1,200+ Teachers Trained</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">1,200+ Teachers Trained</p>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center sm:justify-start gap-2.5 px-2 py-1">
-                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#f5b942] shrink-0">
+                  <div className="w-8 h-8 rounded-lg bg-[#f5b942]/10 border border-[#f5b942]/30 flex items-center justify-center text-[#D97706] shrink-0">
                     🔬
                   </div>
                   <div>
                     <p className="text-[10px] text-[#A89482] uppercase font-bold tracking-wider">Expertise</p>
-                    <p className="text-xs sm:text-sm font-bold text-white">10+ Years Biomechanics</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">10+ Years Biomechanics</p>
                   </div>
                 </div>
 
@@ -500,7 +499,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         {/* ========================================================================= */}
         {/* 2.5 EXPERIENCE: LEARN THROUGH PRACTICE (MATCHING REFERENCE) */}
         {/* ========================================================================= */}
-        <section className="py-16 md:py-24 bg-[#FDFBF7] text-[#1E150F] border-b border-[#E8DFD3]">
+        <section className="py-16 md:py-24 bg-[#FAF7F2] text-[#1C1917] border-b border-[#E7E5E4]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 text-left">
             
             {/* Category / Eyebrow */}
@@ -551,41 +550,41 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         {/* ========================================================================= */}
         {/* 2.6 WORKSHOP EVENT DETAILS & VIDEO REVIEWS */}
         {/* ========================================================================= */}
-        <section className="py-14 md:py-20 bg-[#0B0806] text-white border-b border-[#3E2818]/60">
+        <section className="py-14 md:py-20 bg-white text-[#1C1917] border-b border-[#E7E5E4]">
           <div className="max-w-5xl mx-auto px-4 relative z-10 text-center">
 
             {/* 4 Pill Badges Row */}
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-3xl mx-auto mb-10 text-xs sm:text-sm">
-              <div className="bg-[#18110C]/90 border border-[#523520] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#F5EBE1]">
+              <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
                 <span>📅</span>
-                <span className="font-semibold text-white">{sundayInfo.ordinalDate} · 7:00 PM IST</span>
+                <span className="font-semibold text-[#1C1917]">{sundayInfo.ordinalDate} · 7:00 PM IST</span>
               </div>
 
-              <div className="bg-[#18110C]/90 border border-[#523520] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#F5EBE1]">
+              <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
                 <span>⏱</span>
-                <span className="font-semibold text-white">2 Hours · Live</span>
+                <span className="font-semibold text-[#1C1917]">2 Hours · Live</span>
               </div>
 
-              <div className="bg-[#18110C]/90 border border-[#523520] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#F5EBE1]">
+              <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
                 <span>🗣</span>
-                <span className="font-semibold text-white">Taught in English / Hindi</span>
+                <span className="font-semibold text-[#1C1917]">Taught in English / Hindi</span>
               </div>
 
-              <div className="bg-[#18110C]/90 border border-[#523520] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#F5EBE1]">
+              <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
                 <span>💻</span>
-                <span className="font-semibold text-white">Live on Zoom</span>
+                <span className="font-semibold text-[#1C1917]">Live on Zoom</span>
               </div>
             </div>
 
             {/* ========================================================================= */}
             {/* HERO VIDEO HOLDER WITH GOLD BORDER (AESTHETIC STUDIO FRAME) */}
             {/* ========================================================================= */}
-            <div className="max-w-2xl mx-auto mb-8 bg-[#0E0A07]/90 rounded-3xl border border-[#f5b942]/60 p-2.5 sm:p-3.5 shadow-[0_0_50px_rgba(245,185,66,0.12)] overflow-hidden text-left backdrop-blur-md">
+            <div className="max-w-2xl mx-auto mb-8 bg-[#FAF7F2] rounded-3xl border border-[#FDE68A] p-3 sm:p-4 shadow-xl overflow-hidden text-left backdrop-blur-md">
               
               {/* Video Card Header */}
-              <div className="px-2 py-1.5 flex items-center justify-between text-[10px] sm:text-xs font-bold text-[#f5b942] uppercase tracking-wider mb-1">
+              <div className="px-2 py-1.5 flex items-center justify-between text-[10px] sm:text-xs font-bold text-[#B45309] uppercase tracking-wider mb-1">
                 <span>WATCH ACHARYA SACHIN KOTIYAL — REVIEWS OF CLASS</span>
-                <span className="text-[#DBC4AC] normal-case font-medium flex items-center gap-1">
+                <span className="text-[#78716C] normal-case font-medium flex items-center gap-1">
                   ✨ Verified Student Experience
                 </span>
               </div>
@@ -613,12 +612,12 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
               {/* Video Card Footer Subtitle */}
               <div className="px-2 pt-2.5 pb-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[11px] sm:text-xs">
-                <p className="text-[#f5b942] italic">
+                <p className="text-[#78716C] italic">
                   "Hear authentic student feedback, teaching transformation, and real class reviews."
                 </p>
                 <button
                   onClick={() => setActiveVideoModal("9uGW2o3jTGM")}
-                  className="text-[#f5b942] hover:underline font-semibold flex items-center gap-1 shrink-0"
+                  className="text-[#B45309] hover:underline font-semibold flex items-center gap-1 shrink-0"
                 >
                   Watch on YouTube ↗
                 </button>
@@ -645,7 +644,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             {/* ========================================================================= */}
             {/* EVENT HIGHLIGHTS CARD (SCREENSHOT 2) */}
             {/* ========================================================================= */}
-            <div className="max-w-2xl mx-auto mb-10 bg-[#100B07] border border-[#3E2818] rounded-3xl p-5 sm:p-7 shadow-2xl text-left">
+            <div className="max-w-2xl mx-auto mb-10 bg-[#FAF7F2] border border-[#E7E5E4] rounded-3xl p-5 sm:p-7 shadow-lg text-left">
               
               {/* 4 Details Pills Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
@@ -654,7 +653,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   <span className="text-xl">📅</span>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-[#B59E89] tracking-wider">DATE</p>
-                    <p className="text-xs sm:text-sm font-bold text-white">{sundayInfo.ordinalDate}</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">{sundayInfo.ordinalDate}</p>
                   </div>
                 </div>
 
@@ -662,7 +661,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   <span className="text-xl">⏰</span>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-[#B59E89] tracking-wider">TIME</p>
-                    <p className="text-xs sm:text-sm font-bold text-white">7:00 PM IST</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">7:00 PM IST</p>
                   </div>
                 </div>
 
@@ -670,7 +669,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   <span className="text-xl">⏳</span>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-[#B59E89] tracking-wider">DURATION</p>
-                    <p className="text-xs sm:text-sm font-bold text-white">2 Hours Live</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">2 Hours Live</p>
                   </div>
                 </div>
 
@@ -678,7 +677,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   <span className="text-xl">📺</span>
                   <div>
                     <p className="text-[10px] uppercase font-bold text-[#B59E89] tracking-wider">PLATFORM</p>
-                    <p className="text-xs sm:text-sm font-bold text-white">Live on Zoom</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">Live on Zoom</p>
                   </div>
                 </div>
 
@@ -718,7 +717,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
                 <button
                   onClick={openBookingModal}
-                  className="bg-[#ea580c] hover:bg-[#d94e07] active:scale-95 text-white font-extrabold text-sm sm:text-base py-3 px-6 sm:px-8 rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all flex items-center justify-center gap-2"
+                  className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white shadow-md font-extrabold text-sm sm:text-base py-3 px-6 sm:px-8 rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all flex items-center justify-center gap-2"
                 >
                   <span>Book My Seat — ₹1</span>
                   <span>→</span>
@@ -732,23 +731,23 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             {/* ========================================================================= */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
               
-              <div className="bg-[#18110C]/90 border border-[#3E2818] p-4 rounded-2xl text-center shadow-sm">
-                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#f5b942]">500+</p>
+              <div className="bg-white border border-[#E7E5E4] p-4 rounded-2xl text-center shadow-sm">
+                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#B45309]">500+</p>
                 <p className="text-xs text-[#D0BDA8] mt-0.5 font-medium">Students Trained</p>
               </div>
 
-              <div className="bg-[#18110C]/90 border border-[#3E2818] p-4 rounded-2xl text-center shadow-sm">
-                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#f5b942]">5.0 ★</p>
+              <div className="bg-white border border-[#E7E5E4] p-4 rounded-2xl text-center shadow-sm">
+                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#B45309]">5.0 ★</p>
                 <p className="text-xs text-[#D0BDA8] mt-0.5 font-medium">Average Rating</p>
               </div>
 
-              <div className="bg-[#18110C]/90 border border-[#3E2818] p-4 rounded-2xl text-center shadow-sm">
-                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#f5b942]">10+ Years</p>
+              <div className="bg-white border border-[#E7E5E4] p-4 rounded-2xl text-center shadow-sm">
+                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#B45309]">10+ Years</p>
                 <p className="text-xs text-[#D0BDA8] mt-0.5 font-medium">Of Teaching</p>
               </div>
 
-              <div className="bg-[#18110C]/90 border border-[#3E2818] p-4 rounded-2xl text-center shadow-sm">
-                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#f5b942]">Live Q&A</p>
+              <div className="bg-white border border-[#E7E5E4] p-4 rounded-2xl text-center shadow-sm">
+                <p className="font-serif text-2xl sm:text-3xl font-bold text-[#B45309]">Live Q&A</p>
                 <p className="text-xs text-[#D0BDA8] mt-0.5 font-medium">Interactive Session</p>
               </div>
 
@@ -848,7 +847,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         {/* ========================================================================= */}
         {/* 5. INSTRUCTOR SPOTLIGHT: ACHARYA SACHIN KOTIYAL */}
         {/* ========================================================================= */}
-        <section className="py-16 md:py-20 bg-[#100B07]/50 backdrop-blur-[2px] text-white border-b border-[#3E2818]">
+        <section className="py-16 md:py-20 bg-white text-[#1C1917] border-b border-[#E7E5E4]">
           <div className="max-w-5xl mx-auto px-4">
             
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -876,7 +875,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   Meet Your Instructor
                 </span>
                 
-                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white">
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#1C1917]">
                   Acharya Sachin Kotiyal
                 </h2>
                 
@@ -884,26 +883,26 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   Founder of YogaGarhi Ashram (Bali & Rishikesh) • 10+ Years International Teaching • Specialized Yoga Therapy Specialist for the Indian Armed Forces
                 </p>
 
-                <p className="text-sm text-[#FBF6F0] leading-relaxed">
+                <p className="text-sm text-[#44403C] leading-relaxed">
                   Having trained thousands of yoga teachers worldwide and rehabilitated complex spinal, hip, and shoulder injuries for elite personnel, Acharya Sachin Kotiyal brings an unmatched bridge between <strong>ancient Himalayan alignment</strong> and <strong>modern orthopaedic biomechanics</strong>.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                  <div className="bg-[#120D09] p-3 rounded-xl border border-[#4F331F] flex items-center gap-2.5">
-                    <CheckCheck className="w-5 h-5 text-[#f5b942] shrink-0" />
-                    <span className="text-xs text-[#e1f0ea]">Military-grade posture & injury analysis</span>
+                  <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5">
+                    <CheckCheck className="w-5 h-5 text-[#D97706] shrink-0" />
+                    <span className="text-xs text-[#292524] font-medium">Military-grade posture & injury analysis</span>
                   </div>
-                  <div className="bg-[#120D09] p-3 rounded-xl border border-[#4F331F] flex items-center gap-2.5">
-                    <CheckCheck className="w-5 h-5 text-[#f5b942] shrink-0" />
-                    <span className="text-xs text-[#e1f0ea]">Bilingual teaching (English & Hindi)</span>
+                  <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5">
+                    <CheckCheck className="w-5 h-5 text-[#D97706] shrink-0" />
+                    <span className="text-xs text-[#292524] font-medium">Bilingual teaching (English & Hindi)</span>
                   </div>
-                  <div className="bg-[#120D09] p-3 rounded-xl border border-[#4F331F] flex items-center gap-2.5">
-                    <CheckCheck className="w-5 h-5 text-[#f5b942] shrink-0" />
-                    <span className="text-xs text-[#e1f0ea]">Direct interactive Q&A on your cases</span>
+                  <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5">
+                    <CheckCheck className="w-5 h-5 text-[#D97706] shrink-0" />
+                    <span className="text-xs text-[#292524] font-medium">Direct interactive Q&A on your cases</span>
                   </div>
-                  <div className="bg-[#120D09] p-3 rounded-xl border border-[#4F331F] flex items-center gap-2.5">
-                    <CheckCheck className="w-5 h-5 text-[#f5b942] shrink-0" />
-                    <span className="text-xs text-[#e1f0ea]">Immediate actionable cues for your next class</span>
+                  <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5">
+                    <CheckCheck className="w-5 h-5 text-[#D97706] shrink-0" />
+                    <span className="text-xs text-[#292524] font-medium">Immediate actionable cues for your next class</span>
                   </div>
                 </div>
 
@@ -1171,23 +1170,23 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               {/* What is Included */}
               <div className="py-6 space-y-3.5 text-xs sm:text-sm text-[#FBF6F0]">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-[#D97706] shrink-0 mt-0.5" />
                   <p><strong className="text-white">Live 2-Hour Interactive Masterclass</strong> with Acharya Sachin Kotiyal</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-[#D97706] shrink-0 mt-0.5" />
                   <p><strong className="text-white">Live Functional Joint Analysis</strong> (Spine, Hips, Shoulders & Knees)</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-[#D97706] shrink-0 mt-0.5" />
                   <p><strong className="text-white">Interactive Q&A Session</strong> — Get your specific student injury questions answered</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-[#D97706] shrink-0 mt-0.5" />
                   <p><strong className="text-white">Bonus #1:</strong> PDF Anatomy Cheat-Sheet & Injury Matrix (Value ₹499)</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#f5b942] shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-[#D97706] shrink-0 mt-0.5" />
                   <p><strong className="text-white">Bonus #2:</strong> VIP YogaGarhi Teachers WhatsApp Community Access</p>
                 </div>
               </div>
