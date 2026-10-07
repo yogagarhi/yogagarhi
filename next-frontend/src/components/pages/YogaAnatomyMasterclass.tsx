@@ -45,21 +45,24 @@ import { getCloudinaryUrl, getCloudinaryImage } from "@/utils/cloudinary";
 
 const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
-// Dynamic Next Sunday Date Calculator (Auto-calculates every week for any year)
+// Dynamic Next Sunday Date Calculator (Auto-calculates every week in IST)
 function getUpcomingSunday(): { fullDate: string; shortDate: string; ordinalDate: string; isoDate: string } {
   const now = new Date();
-  const currentDay = now.getDay(); // 0 is Sunday
+  // Compute current time in IST (UTC + 5:30)
+  const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+  const istNow = new Date(utc + (3600000 * 5.5));
+
+  const currentDay = istNow.getDay(); // 0 is Sunday
   let daysUntilSunday = (7 - currentDay) % 7;
 
-  // If today is Sunday and past 7:30 PM IST (14:00 UTC), target next Sunday
-  const currentHourUTC = now.getUTCHours();
-  const currentMinuteUTC = now.getUTCMinutes();
-  const totalMinutesUTC = currentHourUTC * 60 + currentMinuteUTC;
-  if (currentDay === 0 && totalMinutesUTC >= 870) {
+  // If today is Sunday in IST and past 1:00 PM IST (workshop finished), target next Sunday
+  const currentISTHour = istNow.getHours();
+  const currentISTMinute = istNow.getMinutes();
+  if (currentDay === 0 && (currentISTHour > 13 || (currentISTHour === 13 && currentISTMinute >= 0))) {
     daysUntilSunday = 7;
   }
 
-  const targetDate = new Date(now.getTime() + daysUntilSunday * 24 * 60 * 60 * 1000);
+  const targetDate = new Date(istNow.getTime() + daysUntilSunday * 24 * 60 * 60 * 1000);
 
   const dayNum = targetDate.getDate();
   const suffix = (dayNum % 10 === 1 && dayNum !== 11) ? "st" :
@@ -242,9 +245,9 @@ export default function YogaAnatomyMasterclass() {
         contact: formData.whatsapp,
       },
       notes: {
-        workshop: "Applied Yoga Anatomy & Biomechanics Masterclass",
+        workshop: "Applied Yoga Anatomy & Biomechanics Masterclass (2-Hour Live)",
         date: sundayInfo.fullDate,
-        time: "7:00 PM IST",
+        time: "11:00 AM IST",
       },
       theme: {
         color: "#120D09",
@@ -266,7 +269,7 @@ export default function YogaAnatomyMasterclass() {
           phone: formData.whatsapp,
           payment_id: pId,
           amount: "₹1.00",
-          workshop_date: `${sundayInfo.fullDate} at 7:00 PM IST`,
+          workshop_date: `${sundayInfo.fullDate} at 11:00 AM – 1:00 PM IST (2-Hour Live Workshop)`,
           zoom_meeting_id: "890 4962 6217",
           zoom_passcode: "260670",
           zoom_link: "https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1",
@@ -274,12 +277,12 @@ export default function YogaAnatomyMasterclass() {
           _subject: `Confirmed: Masterclass Access Pass - ${formData.name} (${pId})`,
           _autoresponder: `Namaste ${formData.name},
 
-Thank you for registering for the "Applied Functional Yoga Anatomy & Biomechanics Masterclass" led by Acharya Sachin Kotiyal!
+Thank you for registering for the "Applied Functional Yoga Anatomy & Biomechanics Masterclass" (2-Hour Live Intensive) led by Acharya Sachin Kotiyal!
 
 We have successfully received your ₹1 payment.
 
 === YOUR LIVE ZOOM ACCESS PASS ===
-• Date & Time: ${sundayInfo.fullDate} | 7:00 PM – 9:00 PM IST
+• Date & Time: ${sundayInfo.fullDate} | 11:00 AM – 1:00 PM IST (2 Hours Live)
 • Mode: Live on Zoom
 • Meeting ID: 890 4962 6217
 • Passcode: 260670
@@ -290,7 +293,7 @@ We have successfully received your ₹1 payment.
 Join our VIP WhatsApp Teachers Group for live class reminders and bonus materials:
 https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!
 
-Please join the Zoom room 5 minutes before 7:00 PM IST with your yoga mat and notebook ready.
+Please join the Zoom room 5 minutes before 11:00 AM IST with your yoga mat and notebook ready.
 
 With warm regards,
 Acharya Sachin Kotiyal & The YogaGarhi Team`,
@@ -398,7 +401,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               {/* Eyebrow Label */}
               <div className="flex items-center gap-2 mb-2.5">
                 <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#F59E0B] md:text-[#B45309] font-mono drop-shadow-sm md:drop-shadow-none">
-                  YOGAGARHI — MASTER ONLINE WORKSHOP
+                  YOGAGARHI — 2-HOUR LIVE ONLINE MASTERCLASS
                 </span>
               </div>
 
@@ -421,24 +424,34 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                 Understand movement, alignment, mobility, and injury prevention.
               </p>
 
-              {/* Tagline / Formats */}
-              <p className="text-xs sm:text-sm text-stone-300 md:text-[#78716C] mb-6 font-medium tracking-wide drop-shadow-sm md:drop-shadow-none">
-                Live on Zoom · Interactive Q&A
-              </p>
+              {/* Tagline / Formats with Highlighted 2-Hour Tag */}
+              <div className="flex items-center flex-wrap gap-2 text-xs sm:text-sm text-stone-300 md:text-[#78716C] mb-6 font-medium tracking-wide drop-shadow-sm md:drop-shadow-none">
+                <span>Live on Zoom</span>
+                <span>·</span>
+                <span className="text-[#FBBF24] md:text-[#B45309] font-bold bg-amber-500/20 md:bg-amber-100 px-2 py-0.5 rounded-md border border-amber-500/30 md:border-amber-300">
+                  2-Hour Intensive
+                </span>
+                <span>·</span>
+                <span>Interactive Q&A</span>
+              </div>
 
-              {/* Action Buttons */}
+              {/* Action Buttons & Highly Visible Date / Time Badge */}
               <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
                 <button
                   onClick={openBookingModal}
-                  className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white font-bold text-xs sm:text-sm py-3.5 px-6 sm:px-7 rounded-xl shadow-lg hover:shadow-orange-500/20 transition-all flex items-center gap-2"
+                  className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white font-bold text-xs sm:text-sm py-3.5 px-6 sm:px-7 rounded-xl shadow-lg hover:shadow-orange-500/20 transition-all flex items-center gap-2 shrink-0"
                 >
                   <span>Book Workshop — ₹1</span>
                   <span className="text-base">→</span>
                 </button>
 
-                <div className="inline-flex items-center gap-1.5 bg-black/55 md:bg-[#FAF7F2] border border-white/20 md:border-[#E7E5E4] backdrop-blur-sm px-3.5 py-2.5 rounded-xl text-xs text-stone-200 md:text-[#44403C] shadow-sm font-medium">
-                  <span className="w-2 h-2 rounded-full bg-[#22c55e] animate-pulse" />
-                  <span>{sundayInfo.ordinalDate} · 7:00 PM IST</span>
+                {/* Prominent Variable Date & Time Pill (Every Sunday 11:00 AM IST + 2 Hours) */}
+                <div className="inline-flex items-center gap-2 bg-black/75 md:bg-white border-2 border-[#F59E0B]/60 md:border-[#F59E0B]/40 backdrop-blur-md px-3.5 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold shadow-lg">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#22c55e] animate-pulse shrink-0" />
+                  <span className="text-white md:text-[#1C1917] tracking-tight">{sundayInfo.ordinalDate} · 11:00 AM IST</span>
+                  <span className="bg-[#D97706]/30 md:bg-[#D97706]/15 text-[#FBBF24] md:text-[#B45309] font-bold text-[10px] sm:text-xs px-2 py-0.5 rounded-md border border-[#D97706]/30 shrink-0">
+                    2 Hours
+                  </span>
                 </div>
               </div>
 
@@ -557,12 +570,12 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-3xl mx-auto mb-10 text-xs sm:text-sm">
               <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
                 <span>📅</span>
-                <span className="font-semibold text-[#1C1917]">{sundayInfo.ordinalDate} · 7:00 PM IST</span>
+                <span className="font-semibold text-[#1C1917]">{sundayInfo.ordinalDate} · 11:00 AM IST</span>
               </div>
 
               <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
                 <span>⏱</span>
-                <span className="font-semibold text-[#1C1917]">2 Hours · Live</span>
+                <span className="font-semibold text-[#1C1917]">2 Hours · Live Workshop</span>
               </div>
 
               <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
@@ -649,34 +662,34 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               {/* 4 Details Pills Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                 
-                <div className="bg-[#120D09] border border-[#4F331F] p-3 rounded-2xl flex items-center gap-3">
+                <div className="bg-white border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-sm">
                   <span className="text-xl">📅</span>
                   <div>
-                    <p className="text-[10px] uppercase font-bold text-[#B59E89] tracking-wider">DATE</p>
+                    <p className="text-[10px] uppercase font-bold text-[#78716C] tracking-wider">DATE</p>
                     <p className="text-xs sm:text-sm font-bold text-[#1C1917]">{sundayInfo.ordinalDate}</p>
                   </div>
                 </div>
 
-                <div className="bg-[#120D09] border border-[#4F331F] p-3 rounded-2xl flex items-center gap-3">
+                <div className="bg-white border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-sm">
                   <span className="text-xl">⏰</span>
                   <div>
-                    <p className="text-[10px] uppercase font-bold text-[#B59E89] tracking-wider">TIME</p>
-                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">7:00 PM IST</p>
+                    <p className="text-[10px] uppercase font-bold text-[#78716C] tracking-wider">TIME</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">11:00 AM IST</p>
                   </div>
                 </div>
 
-                <div className="bg-[#120D09] border border-[#4F331F] p-3 rounded-2xl flex items-center gap-3">
+                <div className="bg-white border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-sm">
                   <span className="text-xl">⏳</span>
                   <div>
-                    <p className="text-[10px] uppercase font-bold text-[#B59E89] tracking-wider">DURATION</p>
+                    <p className="text-[10px] uppercase font-bold text-[#78716C] tracking-wider">DURATION</p>
                     <p className="text-xs sm:text-sm font-bold text-[#1C1917]">2 Hours Live</p>
                   </div>
                 </div>
 
-                <div className="bg-[#120D09] border border-[#4F331F] p-3 rounded-2xl flex items-center gap-3">
+                <div className="bg-white border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-sm">
                   <span className="text-xl">📺</span>
                   <div>
-                    <p className="text-[10px] uppercase font-bold text-[#B59E89] tracking-wider">PLATFORM</p>
+                    <p className="text-[10px] uppercase font-bold text-[#78716C] tracking-wider">PLATFORM</p>
                     <p className="text-xs sm:text-sm font-bold text-[#1C1917]">Live on Zoom</p>
                   </div>
                 </div>
@@ -684,32 +697,32 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               </div>
 
               {/* Key Highlights Bullet Points */}
-              <div className="space-y-3 mb-6 text-xs sm:text-sm text-[#FBF6F0] border-t border-[#124233] pt-5">
+              <div className="space-y-3 mb-6 text-xs sm:text-sm text-[#44403C] border-t border-[#E7E5E4] pt-5">
                 <div className="flex items-start gap-2.5">
-                  <span className="text-[#ea580c] font-bold text-base leading-none mt-0.5">➔</span>
-                  <p>Master <strong className="text-white">Functional Yoga Anatomy</strong> to prevent injuries & teach with absolute confidence</p>
+                  <span className="text-[#D97706] font-bold text-base leading-none mt-0.5">➔</span>
+                  <p>Master <strong className="text-[#1C1917]">Functional Yoga Anatomy</strong> to prevent injuries & teach with absolute confidence</p>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <span className="text-[#ea580c] font-bold text-base leading-none mt-0.5">➔</span>
-                  <p>Learn directly from <strong className="text-[#f5b942]">Acharya Sachin Kotiyal</strong> (10+ Years Master Educator & Bali TTC Founder)</p>
+                  <span className="text-[#D97706] font-bold text-base leading-none mt-0.5">➔</span>
+                  <p>Learn directly from <strong className="text-[#B45309]">Acharya Sachin Kotiyal</strong> (10+ Years Master Educator & Bali TTC Founder)</p>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <span className="text-[#ea580c] font-bold text-base leading-none mt-0.5">➔</span>
-                  <p>Upgrade your <strong className="text-white">cueing & alignment system</strong> so students experience real transformation</p>
+                  <span className="text-[#D97706] font-bold text-base leading-none mt-0.5">➔</span>
+                  <p>Upgrade your <strong className="text-[#1C1917]">cueing & alignment system</strong> so students experience real transformation</p>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <span className="text-[#ea580c] font-bold text-base leading-none mt-0.5">➔</span>
-                  <p><strong className="text-white">No medical background required</strong> — practical, clear science for every yoga teacher</p>
+                  <span className="text-[#D97706] font-bold text-base leading-none mt-0.5">➔</span>
+                  <p><strong className="text-[#1C1917]">No medical background required</strong> — practical, clear science for every yoga teacher</p>
                 </div>
               </div>
 
               {/* Pricing & CTA Button Row */}
-              <div className="bg-[#0E0A07] p-4 rounded-2xl border border-[#3B2516] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="bg-white p-4 rounded-2xl border border-[#E7E5E4] shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
-                  <p className="text-[11px] text-[#B59E89]">Regular Price: <span className="line-through">₹499</span></p>
+                  <p className="text-[11px] text-[#78716C]">Regular Price: <span className="line-through">₹499</span></p>
                   <div className="flex items-center gap-2 mt-0.5">
-                    <span className="font-serif text-3xl font-extrabold text-[#f5b942]">₹1</span>
-                    <span className="bg-[#120D09] border border-[#4F331F] text-[#DBC4AC] text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
+                    <span className="font-serif text-3xl font-extrabold text-[#D97706]">₹1</span>
+                    <span className="bg-[#FAF7F2] border border-[#E7E5E4] text-[#B45309] text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">
                       Limited Time Offer
                     </span>
                   </div>
@@ -1329,7 +1342,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                     <Sparkles className="w-3.5 h-3.5" /> Official Live Razorpay ₹1 Checkout
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-white">Claim Your Masterclass Seat</h3>
-                  <p className="text-xs text-[#D0BDA8] mt-1">Live this {sundayInfo.ordinalDate} • 7:00 PM IST</p>
+                  <p className="text-xs text-[#D0BDA8] mt-1">Live this {sundayInfo.ordinalDate} • 11:00 AM IST (2-Hour Live Workshop)</p>
                 </div>
 
                 <form onSubmit={handleFormSubmit} className="space-y-3.5">
@@ -1418,8 +1431,8 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </p>
                   <p><strong>Meeting ID:</strong> 890 4962 6217</p>
                   <p><strong>Passcode:</strong> 260670</p>
-                  <p><strong>Date & Time:</strong> {sundayInfo.ordinalDate} at 7:00 PM IST</p>
-                  <p><strong>Duration:</strong> Strictly 2 Hours Live</p>
+                  <p><strong>Date & Time:</strong> {sundayInfo.ordinalDate} at 11:00 AM IST</p>
+                  <p><strong>Duration:</strong> Strictly 2 Hours Live (11:00 AM – 1:00 PM IST)</p>
                   <div className="pt-1">
                     <a
                       href="https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1"
@@ -1475,7 +1488,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
           <div className="max-w-4xl mx-auto flex items-center justify-between gap-3">
             <div className="hidden sm:block text-left">
               <p className="text-xs font-bold text-white">Applied Yoga Anatomy Masterclass</p>
-              <p className="text-[11px] text-[#f5b942]">{sundayInfo.ordinalDate} • 7:00 PM IST • Only ₹1</p>
+              <p className="text-[11px] text-[#f5b942]">{sundayInfo.ordinalDate} • 11:00 AM IST (2-Hr Live) • Only ₹1</p>
             </div>
 
             <div className="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-3">

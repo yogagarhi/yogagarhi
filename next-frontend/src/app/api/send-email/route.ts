@@ -81,7 +81,7 @@ export async function POST(request: Request) {
               </tr>
               <tr>
                 <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; color: #0b3b2c;">Workshop Date</td>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222;">${remainingData.workshop_date || 'Upcoming Sunday at 7:00 PM IST'}</td>
+                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222;">${remainingData.workshop_date || 'Upcoming Sunday at 11:00 AM – 1:00 PM IST'}</td>
               </tr>
             </table>
             <div style="margin-top: 30px; padding-top: 15px; border-top: 1px solid #eee; text-align: center; color: #888; font-size: 12px;">
@@ -109,7 +109,7 @@ We have successfully received your ₹1 registration payment.
 • Meeting ID: 890 4962 6217
 • Passcode: 260670
 • Direct Zoom Link: https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1
-• Time: Sunday at 7:00 PM – 9:00 PM IST
+• Time: Sunday at 11:00 AM – 1:00 PM IST (2-Hour Live Workshop)
 
 === VIP WHATSAPP GROUP ===
 Join our VIP WhatsApp group for live reminders:
@@ -131,7 +131,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             <p style="font-size: 16px; margin-top: 0;">Namaste <strong>${remainingData.name || 'Friend'}</strong>,</p>
             
             <p style="font-size: 14px; color: #4a5568;">
-              We have successfully received your registration payment for the <strong>Applied Functional Yoga Anatomy & Biomechanics Masterclass</strong> led by <strong>Acharya Sachin Kotiyal</strong>.
+              We have successfully received your registration payment for the <strong>Applied Functional Yoga Anatomy & Biomechanics Masterclass</strong> (2-Hour Live Intensive) led by <strong>Acharya Sachin Kotiyal</strong>.
             </p>
 
             <!-- Zoom Access Pass Box -->
@@ -151,7 +151,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                 </tr>
                 <tr>
                   <td style="padding: 6px 0; color: #4b5563;"><strong>Session Time:</strong></td>
-                  <td style="padding: 6px 0; color: #111827; font-weight: bold;">Sunday at 7:00 PM – 9:00 PM IST</td>
+                  <td style="padding: 6px 0; color: #111827; font-weight: bold;">Sunday at 11:00 AM – 1:00 PM IST (2 Hours)</td>
                 </tr>
                 <tr>
                   <td style="padding: 6px 0; color: #4b5563;"><strong>Payment Status:</strong></td>
@@ -176,7 +176,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
             <!-- Preparation Note -->
             <div style="background-color: #fffbeb; border-left: 4px solid #f59e0b; padding: 12px 16px; border-radius: 4px; font-size: 13px; color: #92400e; margin-bottom: 24px;">
-              <strong>Important:</strong> Please join the Zoom room 5 minutes before 7:00 PM IST with your yoga mat and notebook ready.
+              <strong>Important:</strong> Please join the Zoom room 5 minutes before 11:00 AM IST with your yoga mat and notebook ready.
             </div>
 
             <!-- Signoff -->
