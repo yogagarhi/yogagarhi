@@ -983,6 +983,180 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
           </div>
         </section>
 
+        {/* ========================================================================= */}
+        {/* 3.5 "WHAT YOU'LL LEARN IN 2 HOURS" (3-STEP METHOD SECTION) */}
+        {/* ========================================================================= */}
+        <section className="py-16 md:py-20 bg-white text-[#1c2420] border-b border-[#E7E5E4]">
+          <div className="max-w-5xl mx-auto px-4">
+            
+            {/* Header */}
+            <div className="text-center max-w-2xl mx-auto mb-14">
+              <span className="inline-block text-[11px] sm:text-xs uppercase tracking-widest font-extrabold text-[#D97706] bg-[#FEF3C7] px-4 py-1.5 rounded-full border border-[#FDE68A] mb-3">
+                WHAT YOU'LL LEARN
+              </span>
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#1C1917] leading-tight mb-3">
+                What you'll learn in 2 hours
+              </h2>
+              <p className="text-sm sm:text-base text-[#78716C]">
+                One simple method, in three steps.
+              </p>
+            </div>
+
+            {/* 3 Step Cards Grid with Connecting Journey Line */}
+            <div className="relative mb-12">
+              
+              {/* Desktop Horizontal Journey Connector Line */}
+              <div className="hidden md:block absolute top-1/2 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-[#D97706]/20 via-[#D97706]/40 to-[#D97706]/20 -translate-y-12 z-0" />
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+                
+                {/* Card 1 — 01 Understand */}
+                <div 
+                  className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E7E5E4] shadow-sm hover:shadow-md transition-all flex flex-col justify-between hover:border-[#D97706]/50 group relative quiz-stagger-item"
+                  style={{ animationDelay: "0.15s" }}
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="w-12 h-12 rounded-2xl bg-[#FEF3C7] text-[#D97706] font-mono font-extrabold text-lg sm:text-xl flex items-center justify-center border border-[#FDE68A] shadow-xs group-hover:scale-105 transition-transform">
+                        01
+                      </div>
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-[#78716C] bg-[#FAF7F2] px-2.5 py-1 rounded-full border border-[#E7E5E4]">
+                        Step 1
+                      </span>
+                    </div>
+
+                    <h3 className="font-serif text-2xl font-bold text-[#1C1917] mb-5">
+                      Understand
+                    </h3>
+
+                    <ul className="space-y-3.5">
+                      <li className="flex items-start gap-3 text-xs sm:text-sm text-[#44403C] leading-relaxed">
+                        <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                          ✓
+                        </div>
+                        <span>What alignment really means, and why there's no single "perfect" pose</span>
+                      </li>
+                      <li className="flex items-start gap-3 text-xs sm:text-sm text-[#44403C] leading-relaxed">
+                        <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                          ✓
+                        </div>
+                        <span>Why every body is different: how your bones and joints shape your poses</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Mobile Journey Arrow Down */}
+                  <div className="md:hidden flex justify-center pt-4 text-[#D97706] opacity-60">
+                    ↓
+                  </div>
+                </div>
+
+                {/* Card 2 — 02 Decode */}
+                <div 
+                  className="bg-white rounded-3xl p-6 sm:p-7 border-2 border-[#D97706]/40 shadow-sm hover:shadow-md transition-all flex flex-col justify-between hover:border-[#D97706] group relative quiz-stagger-item"
+                  style={{ animationDelay: "0.30s" }}
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="w-12 h-12 rounded-2xl bg-[#D97706] text-white font-mono font-extrabold text-lg sm:text-xl flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+                        02
+                      </div>
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-[#B45309] bg-[#FEF3C7] px-2.5 py-1 rounded-full border border-[#FDE68A]">
+                        Step 2 • Core
+                      </span>
+                    </div>
+
+                    <h3 className="font-serif text-2xl font-bold text-[#1C1917] mb-5">
+                      Decode
+                    </h3>
+
+                    <ul className="space-y-3.5">
+                      <li className="flex items-start gap-3 text-xs sm:text-sm text-[#44403C] leading-relaxed">
+                        <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                          ✓
+                        </div>
+                        <span>Functional anatomy, made simple: which joints should move and which should stay stable</span>
+                      </li>
+                      <li className="flex items-start gap-3 text-xs sm:text-sm text-[#44403C] leading-relaxed">
+                        <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                          ✓
+                        </div>
+                        <span>Tension or compression: when to go deeper, and when your body says "this is your limit"</span>
+                      </li>
+                      <li className="flex items-start gap-3 text-xs sm:text-sm text-[#44403C] leading-relaxed">
+                        <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                          ✓
+                        </div>
+                        <span>Passive vs. active stretching, and why active stretching makes you stronger and safer</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Mobile Journey Arrow Down */}
+                  <div className="md:hidden flex justify-center pt-4 text-[#D97706] opacity-60">
+                    ↓
+                  </div>
+                </div>
+
+                {/* Card 3 — 03 Apply */}
+                <div 
+                  className="bg-white rounded-3xl p-6 sm:p-7 border border-[#E7E5E4] shadow-sm hover:shadow-md transition-all flex flex-col justify-between hover:border-[#D97706]/50 group relative quiz-stagger-item"
+                  style={{ animationDelay: "0.45s" }}
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="w-12 h-12 rounded-2xl bg-[#FEF3C7] text-[#D97706] font-mono font-extrabold text-lg sm:text-xl flex items-center justify-center border border-[#FDE68A] shadow-xs group-hover:scale-105 transition-transform">
+                        03
+                      </div>
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-[#78716C] bg-[#FAF7F2] px-2.5 py-1 rounded-full border border-[#E7E5E4]">
+                        Step 3
+                      </span>
+                    </div>
+
+                    <h3 className="font-serif text-2xl font-bold text-[#1C1917] mb-5">
+                      Apply
+                    </h3>
+
+                    <ul className="space-y-3.5">
+                      <li className="flex items-start gap-3 text-xs sm:text-sm text-[#44403C] leading-relaxed">
+                        <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                          ✓
+                        </div>
+                        <span>Break down key poses step by step, so you can decode any pose</span>
+                      </li>
+                      <li className="flex items-start gap-3 text-xs sm:text-sm text-[#44403C] leading-relaxed">
+                        <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
+                          ✓
+                        </div>
+                        <span>Build a smart sequence that prepares your body for a key pose</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* Bottom Centered CTA Block */}
+            <div 
+              className="text-center max-w-xl mx-auto pt-2 quiz-stagger-item"
+              style={{ animationDelay: "0.60s" }}
+            >
+              <p className="font-bold text-base sm:text-lg text-[#1C1917] mb-5">
+                Two hours. One method. Every pose starts making sense.
+              </p>
+              
+              <button
+                onClick={openBookingModal}
+                className="w-full sm:w-auto bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white font-extrabold text-base py-3.5 px-8 rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all inline-flex items-center justify-center gap-2"
+              >
+                <span>Save my spot →</span>
+              </button>
+            </div>
+
+          </div>
+        </section>
+
 
 
         {/* ========================================================================= */}
