@@ -641,18 +641,9 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             </div>
 
             {/* ========================================================================= */}
-            {/* HERO VIDEO HOLDER WITH GOLD BORDER (AESTHETIC STUDIO FRAME) */}
+            {/* HERO VIDEO HOLDER (CLEAN AESTHETIC STUDIO FRAME MATCHING REFERENCE) */}
             {/* ========================================================================= */}
-            <div className="max-w-2xl mx-auto mb-8 bg-[#FAF7F2] rounded-3xl border border-[#FDE68A] p-3 sm:p-4 shadow-xl overflow-hidden text-left backdrop-blur-md">
-              
-              {/* Video Card Header */}
-              <div className="px-2 py-1.5 flex items-center justify-between text-[10px] sm:text-xs font-bold text-[#B45309] uppercase tracking-wider mb-1">
-                <span>WATCH ACHARYA SACHIN KOTIYAL — REVIEWS OF CLASS</span>
-                <span className="text-[#78716C] normal-case font-medium flex items-center gap-1">
-                  ✨ Verified Student Experience
-                </span>
-              </div>
-
+            <div className="max-w-2xl mx-auto mb-8 bg-[#FAF7F2] rounded-3xl border border-[#FDE68A] p-2 sm:p-3 shadow-xl overflow-hidden backdrop-blur-md">
               {/* Video Preview Container */}
               <div 
                 className="relative aspect-video rounded-2xl overflow-hidden bg-black group cursor-pointer"
@@ -672,19 +663,6 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                     <Play className="w-7 h-7 sm:w-8 sm:h-8 fill-white ml-1" />
                   </div>
                 </div>
-              </div>
-
-              {/* Video Card Footer Subtitle */}
-              <div className="px-2 pt-2.5 pb-1 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[11px] sm:text-xs">
-                <p className="text-[#78716C] italic">
-                  "Hear authentic student feedback, teaching transformation, and real class reviews."
-                </p>
-                <button
-                  onClick={() => setActiveVideoModal("9uGW2o3jTGM")}
-                  className="text-[#B45309] hover:underline font-semibold flex items-center gap-1 shrink-0"
-                >
-                  Watch on YouTube ↗
-                </button>
               </div>
             </div>
 
