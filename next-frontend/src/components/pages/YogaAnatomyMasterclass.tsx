@@ -566,28 +566,6 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         <section className="py-14 md:py-20 bg-white text-[#1C1917] border-b border-[#E7E5E4]">
           <div className="max-w-5xl mx-auto px-4 relative z-10 text-center">
 
-            {/* 4 Pill Badges Row */}
-            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-3xl mx-auto mb-10 text-xs sm:text-sm">
-              <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
-                <span>📅</span>
-                <span className="font-semibold text-[#1C1917]">{sundayInfo.ordinalDate} · 11:00 AM IST</span>
-              </div>
-
-              <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
-                <span>⏱</span>
-                <span className="font-semibold text-[#1C1917]">2 Hours · Live Workshop</span>
-              </div>
-
-              <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
-                <span>🗣</span>
-                <span className="font-semibold text-[#1C1917]">Taught in English / Hindi</span>
-              </div>
-
-              <div className="bg-[#FAF7F2] border border-[#E7E5E4] px-3.5 py-2 rounded-xl flex items-center gap-2 text-[#44403C] shadow-sm">
-                <span>💻</span>
-                <span className="font-semibold text-[#1C1917]">Live on Zoom</span>
-              </div>
-            </div>
 
             {/* ========================================================================= */}
             {/* TRUST & GOOGLE REVIEW RATING BADGE (MATCHING USER REFERENCE SCREENSHOT) */}
