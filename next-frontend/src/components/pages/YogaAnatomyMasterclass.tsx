@@ -149,7 +149,7 @@ const whatsappReviews = [
   {
     sender: "Ananya Roy (Bengaluru)",
     time: "Monday at 11:20 AM",
-    message: "Sachin Ji breaks down anatomy in such relatable Hindi and English. No dry memorization, just pure functional movement. The bonus sequencing PDF is also super practical!",
+    message: "Sachin Ji breaks down anatomy in such relatable English. No dry memorization, just pure functional movement. The bonus sequencing PDF is also super practical!",
     tag: "TTC Graduate"
   },
   {
@@ -623,8 +623,8 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
             {/* ========================================================================= */}
             <div className="max-w-2xl mx-auto mb-10 bg-white border border-[#E7E5E4] rounded-3xl p-5 sm:p-7 shadow-xl text-left">
               
-              {/* 4 Details Pills Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+              {/* 5 Details Pills Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
                 
                 <div className="bg-white border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-sm">
                   <span className="text-xl">📅</span>
@@ -655,6 +655,14 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   <div>
                     <p className="text-[10px] uppercase font-bold text-[#78716C] tracking-wider">PLATFORM</p>
                     <p className="text-xs sm:text-sm font-bold text-[#1C1917]">Live on Zoom</p>
+                  </div>
+                </div>
+
+                <div className="bg-white border border-[#E7E5E4] p-3 rounded-2xl flex items-center gap-3 shadow-sm sm:col-span-2 lg:col-span-1">
+                  <span className="text-xl">🌐</span>
+                  <div>
+                    <p className="text-[10px] uppercase font-bold text-[#78716C] tracking-wider">LANGUAGE</p>
+                    <p className="text-xs sm:text-sm font-bold text-[#1C1917]">English Only</p>
                   </div>
                 </div>
 
@@ -1246,7 +1254,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                       <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0">
                         ✓
                       </div>
-                      <span className="text-xs text-[#1C1917] font-semibold">Bilingual teaching (English & Hindi)</span>
+                      <span className="text-xs text-[#1C1917] font-semibold">Taught 100% in English Only</span>
                     </div>
                   </div>
 
@@ -1641,7 +1649,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                 },
                 {
                   q: "What language will the masterclass be in?",
-                  a: "The session is bilingual (taught clearly in simple English and Hindi) to ensure complete understanding without heavy academic medical jargon."
+                  a: "The masterclass will be conducted 100% in clear, simple English without complex medical jargon, making it easy to understand for yoga teachers and practitioners globally."
                 },
                 {
                   q: "Will I get the Zoom link immediately after paying ₹1 via Razorpay?",
