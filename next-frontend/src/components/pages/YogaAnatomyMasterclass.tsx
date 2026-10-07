@@ -1167,62 +1167,153 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         <section className="py-16 md:py-20 bg-white text-[#1C1917] border-b border-[#E7E5E4]">
           <div className="max-w-5xl mx-auto px-4">
             
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              
-              <div className="lg:col-span-5 text-center">
-                <div className="relative w-64 h-80 sm:w-72 sm:h-96 mx-auto rounded-3xl overflow-hidden border-4 border-[#f5b942]/60 shadow-2xl bg-[#090604]">
-                  <Image
-                    src="/sachin-ji-instructor.jpg"
-                    alt="Acharya Sachin Kotiyal - Founder YogaGarhi"
-                    fill
-                    className="object-cover object-top"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#090604] via-transparent to-transparent" />
-                  <div className="absolute bottom-3 left-0 right-0 text-center">
-                    <span className="bg-[#ea580c] text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full text-white">
-                      Lead Master Educator
+            {/* Header Badge & Title */}
+            <div className="text-center max-w-2xl mx-auto mb-10">
+              <span className="inline-block text-[11px] sm:text-xs uppercase tracking-widest font-extrabold text-[#D97706] bg-[#FEF3C7] px-4 py-1.5 rounded-full border border-[#FDE68A] mb-3">
+                MEET YOUR INSTRUCTOR
+              </span>
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#1C1917] leading-tight">
+                Acharya Sachin Kotiyal
+              </h2>
+              <p className="text-xs sm:text-sm font-semibold text-[#B45309] mt-1.5">
+                Founder, YogaGarhi Ashram (Bali & Rishikesh) • 10+ Years Global Teaching • Armed Forces Yoga Therapy Specialist
+              </p>
+            </div>
+
+            {/* Main Instructor Card */}
+            <div className="bg-white rounded-3xl border border-[#E7E5E4] shadow-md p-5 sm:p-8 lg:p-10 mb-8">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                {/* Left Side: 2 Portrait Photos (Teaching & Hands-On) */}
+                <div className="lg:col-span-5 grid grid-cols-2 gap-3">
+                  <div className="relative aspect-3/4 rounded-2xl overflow-hidden border border-[#E7E5E4] shadow-sm bg-stone-100 group">
+                    <Image
+                      src="/instructor-teaching-block.jpg"
+                      alt="Acharya Sachin Kotiyal teaching active biomechanics"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                    <span className="absolute bottom-2.5 left-2.5 right-2.5 text-[10px] sm:text-[11px] font-bold text-white leading-tight">
+                      Active Biomechanics
+                    </span>
+                  </div>
+
+                  <div className="relative aspect-3/4 rounded-2xl overflow-hidden border border-[#E7E5E4] shadow-sm bg-stone-100 group">
+                    <Image
+                      src="/instructor-hands-on.jpg"
+                      alt="Hands-on alignment correction"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                    <span className="absolute bottom-2.5 left-2.5 right-2.5 text-[10px] sm:text-[11px] font-bold text-white leading-tight">
+                      Clinical Adjustments
                     </span>
                   </div>
                 </div>
-              </div>
 
-              <div className="lg:col-span-7 space-y-4 text-left">
-                <span className="text-xs uppercase tracking-widest font-bold text-[#f5b942] bg-[#120D09] px-3.5 py-1 rounded-full border border-[#4F331F]">
-                  Meet Your Instructor
-                </span>
-                
-                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#1C1917]">
-                  Acharya Sachin Kotiyal
-                </h2>
-                
-                <p className="text-[#DBC4AC] font-medium text-sm">
-                  Founder of YogaGarhi Ashram (Bali & Rishikesh) • 10+ Years International Teaching • Specialized Yoga Therapy Specialist for the Indian Armed Forces
-                </p>
+                {/* Right Side: Bio & 4 Key Highlights */}
+                <div className="lg:col-span-7 space-y-4 text-left">
+                  <p className="text-sm sm:text-[15px] text-[#44403C] leading-relaxed">
+                    Having trained over <strong>5,000+ yoga teachers worldwide</strong> and rehabilitated complex spinal, hip, and shoulder injuries for elite <strong>Indian Armed Forces personnel</strong>, Acharya Sachin bridges ancient Himalayan alignment with modern orthopaedic biomechanics.
+                  </p>
 
-                <p className="text-sm text-[#44403C] leading-relaxed">
-                  Having trained thousands of yoga teachers worldwide and rehabilitated complex spinal, hip, and shoulder injuries for elite personnel, Acharya Sachin Kotiyal brings an unmatched bridge between <strong>ancient Himalayan alignment</strong> and <strong>modern orthopaedic biomechanics</strong>.
-                </p>
+                  {/* 4 Feature Checkboxes (Pure White Backgrounds) */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+                    <div className="bg-white p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5 shadow-2xs">
+                      <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0">
+                        ✓
+                      </div>
+                      <span className="text-xs text-[#1C1917] font-semibold">Armed Forces posture & injury analysis</span>
+                    </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                  <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5">
-                    <CheckCheck className="w-5 h-5 text-[#D97706] shrink-0" />
-                    <span className="text-xs text-[#292524] font-medium">Military-grade posture & injury analysis</span>
+                    <div className="bg-white p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5 shadow-2xs">
+                      <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0">
+                        ✓
+                      </div>
+                      <span className="text-xs text-[#1C1917] font-semibold">Hands-on alignment & adjustment cues</span>
+                    </div>
+
+                    <div className="bg-white p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5 shadow-2xs">
+                      <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0">
+                        ✓
+                      </div>
+                      <span className="text-xs text-[#1C1917] font-semibold">Direct live Q&A on your personal cases</span>
+                    </div>
+
+                    <div className="bg-white p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5 shadow-2xs">
+                      <div className="w-5 h-5 rounded-full bg-[#dcfce7] text-[#16a34a] flex items-center justify-center font-bold text-xs shrink-0">
+                        ✓
+                      </div>
+                      <span className="text-xs text-[#1C1917] font-semibold">Bilingual teaching (English & Hindi)</span>
+                    </div>
                   </div>
-                  <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5">
-                    <CheckCheck className="w-5 h-5 text-[#D97706] shrink-0" />
-                    <span className="text-xs text-[#292524] font-medium">Bilingual teaching (English & Hindi)</span>
-                  </div>
-                  <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5">
-                    <CheckCheck className="w-5 h-5 text-[#D97706] shrink-0" />
-                    <span className="text-xs text-[#292524] font-medium">Direct interactive Q&A on your cases</span>
-                  </div>
-                  <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E7E5E4] flex items-center gap-2.5">
-                    <CheckCheck className="w-5 h-5 text-[#D97706] shrink-0" />
-                    <span className="text-xs text-[#292524] font-medium">Immediate actionable cues for your next class</span>
+
+                  {/* Pricing Row CTA */}
+                  <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <p className="text-xs text-[#78716C]">
+                      Live 2-Hour Interactive Masterclass • <strong>{sundayInfo.ordinalDate} at 11:00 AM IST</strong>
+                    </p>
+                    <button
+                      onClick={openBookingModal}
+                      className="w-full sm:w-auto bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white font-extrabold text-xs sm:text-sm py-2.5 px-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-1.5"
+                    >
+                      <span>Book Seat — ₹1</span>
+                      <span>→</span>
+                    </button>
                   </div>
                 </div>
 
+              </div>
+            </div>
+
+            {/* Bottom Proof Strip: 3 Credibility Photos (Armed Forces Training, Award & 5,000+ Graduates) */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              
+              {/* Photo 1: Military Session */}
+              <div className="bg-white rounded-2xl border border-[#E7E5E4] p-2.5 shadow-sm group">
+                <div className="relative aspect-16/10 w-full rounded-xl overflow-hidden mb-2">
+                  <Image
+                    src="/instructor-military-training.jpg"
+                    alt="Acharya Sachin Kotiyal training Indian Armed Forces"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-[11px] sm:text-xs font-bold text-[#1C1917] text-center">
+                  Specialist for Indian Armed Forces
+                </p>
+              </div>
+
+              {/* Photo 2: Award Recognition */}
+              <div className="bg-white rounded-2xl border border-[#E7E5E4] p-2.5 shadow-sm group">
+                <div className="relative aspect-16/10 w-full rounded-xl overflow-hidden mb-2">
+                  <Image
+                    src="/instructor-award.jpg"
+                    alt="Acharya Sachin Kotiyal felicitation award"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-[11px] sm:text-xs font-bold text-[#1C1917] text-center">
+                  Honored for Yoga Therapy Excellence
+                </p>
+              </div>
+
+              {/* Photo 3: 5,000+ Graduates */}
+              <div className="bg-white rounded-2xl border border-[#E7E5E4] p-2.5 shadow-sm group">
+                <div className="relative aspect-16/10 w-full rounded-xl overflow-hidden mb-2">
+                  <Image
+                    src="/instructor-graduates.jpg"
+                    alt="5,000+ Yoga Teachers Mentored Worldwide"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-[11px] sm:text-xs font-bold text-[#1C1917] text-center">
+                  5,000+ Yoga Teachers Mentored Globally
+                </p>
               </div>
 
             </div>
