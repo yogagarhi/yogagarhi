@@ -659,23 +659,100 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
               </div>
 
-              {/* Key Highlights Bullet Points */}
-              <div className="space-y-3 mb-6 text-xs sm:text-sm text-[#44403C] border-t border-[#E7E5E4] pt-5">
-                <div className="flex items-start gap-2.5">
-                  <span className="text-[#D97706] font-bold text-base leading-none mt-0.5">➔</span>
-                  <p>Master <strong className="text-[#1C1917]">Functional Yoga Anatomy</strong> to prevent injuries & teach with absolute confidence</p>
+              {/* ========================================================================= */}
+              {/* IS THIS WORKSHOP RIGHT FOR YOU IF... (MATCHING REFERENCE UI) */}
+              {/* ========================================================================= */}
+              <div className="border-t border-[#E7E5E4] pt-6 mb-6">
+                <div className="mb-4">
+                  <h3 className="font-serif text-lg sm:text-xl md:text-2xl font-bold text-[#1C1917] flex items-center gap-2 flex-wrap">
+                    <span>Is This Workshop Right</span>
+                    <span className="inline-flex items-center justify-center bg-emerald-100 text-emerald-700 text-xs sm:text-sm px-2 py-0.5 rounded-lg border border-emerald-300 font-bold">
+                      ✅
+                    </span>
+                    <span>For You If...</span>
+                  </h3>
                 </div>
-                <div className="flex items-start gap-2.5">
-                  <span className="text-[#D97706] font-bold text-base leading-none mt-0.5">➔</span>
-                  <p>Learn directly from <strong className="text-[#B45309]">Acharya Sachin Kotiyal</strong> (10+ Years Master Educator & Bali TTC Founder)</p>
-                </div>
-                <div className="flex items-start gap-2.5">
-                  <span className="text-[#D97706] font-bold text-base leading-none mt-0.5">➔</span>
-                  <p>Upgrade your <strong className="text-[#1C1917]">cueing & alignment system</strong> so students experience real transformation</p>
-                </div>
-                <div className="flex items-start gap-2.5">
-                  <span className="text-[#D97706] font-bold text-base leading-none mt-0.5">➔</span>
-                  <p><strong className="text-[#1C1917]">No medical background required</strong> — practical, clear science for every yoga teacher</p>
+
+                <div className="space-y-2.5">
+                  {/* Point 1 */}
+                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                      ✓
+                    </div>
+                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
+                      You want to <strong className="text-[#1C1917]">apply anatomy</strong>, not just learn it.
+                    </p>
+                  </div>
+
+                  {/* Point 2 */}
+                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                      ✓
+                    </div>
+                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
+                      You know anatomy, but <strong className="text-[#1C1917]">don't know how to use it</strong> in class.
+                    </p>
+                  </div>
+
+                  {/* Point 3 */}
+                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                      ✓
+                    </div>
+                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
+                      You want to <strong className="text-[#1C1917]">become a yoga teacher</strong> one day.
+                    </p>
+                  </div>
+
+                  {/* Point 4 */}
+                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                      ✓
+                    </div>
+                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
+                      You want to <strong className="text-[#1C1917]">help people with pain</strong> & become a yoga therapist.
+                    </p>
+                  </div>
+
+                  {/* Point 5 */}
+                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                      ✓
+                    </div>
+                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
+                      You've completed your 200 or 300-hour training, or a bachelor's or master's in yoga, and want to take your understanding to a <strong className="text-[#1C1917]">deeper, more practical & Applied level</strong>.
+                    </p>
+                  </div>
+
+                  {/* Point 6 */}
+                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                      ✓
+                    </div>
+                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
+                      You want to teach but don't have confidence & knowledge — <strong className="text-[#1C1917]">this will be your first step</strong>.
+                    </p>
+                  </div>
+
+                  {/* Point 7 */}
+                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                      ✓
+                    </div>
+                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
+                      You want to <strong className="text-[#1C1917]">earn more money</strong> as a yoga teacher.
+                    </p>
+                  </div>
+
+                  {/* Point 8 (HIGHLIGHTED AS REQUESTED) */}
+                  <div className="bg-gradient-to-r from-amber-50 via-yellow-50 to-orange-50 border-2 border-[#D97706] rounded-2xl p-3.5 sm:p-4 flex items-start gap-3 shadow-md">
+                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#D97706] text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                      ★
+                    </div>
+                    <p className="text-xs sm:text-sm md:text-base text-[#1C1917] font-extrabold leading-snug">
+                      ✨ And most of all, if you want to teach yoga to <span className="text-[#B45309] underline decoration-[#B45309] decoration-2 underline-offset-2">heal, not just to stretch</span>.
+                    </p>
+                  </div>
                 </div>
               </div>
 
