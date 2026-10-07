@@ -673,80 +673,80 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </h3>
                 </div>
 
-                <div className="space-y-2.5">
+                <div className="space-y-3">
                   {/* Point 1 */}
-                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
-                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
-                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
-                      You want to <strong className="text-[#1C1917]">apply anatomy</strong>, not just learn it.
+                    <p className="text-xs sm:text-sm md:text-[15px] text-[#1C1917] font-semibold leading-snug">
+                      You want to <strong className="text-[#1C1917] font-bold">apply anatomy</strong>, not just learn it.
                     </p>
                   </div>
 
                   {/* Point 2 */}
-                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
-                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
-                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
-                      You know anatomy, but <strong className="text-[#1C1917]">don't know how to use it</strong> in class.
+                    <p className="text-xs sm:text-sm md:text-[15px] text-[#1C1917] font-semibold leading-snug">
+                      You know anatomy, but <strong className="text-[#1C1917] font-bold">don't know how to use it</strong> in class.
                     </p>
                   </div>
 
                   {/* Point 3 */}
-                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
-                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
-                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
-                      You want to <strong className="text-[#1C1917]">become a yoga teacher</strong> one day.
+                    <p className="text-xs sm:text-sm md:text-[15px] text-[#1C1917] font-semibold leading-snug">
+                      You want to <strong className="text-[#1C1917] font-bold">become a yoga teacher</strong> one day.
                     </p>
                   </div>
 
                   {/* Point 4 */}
-                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
-                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
-                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
-                      You want to <strong className="text-[#1C1917]">help people with pain</strong> & become a yoga therapist.
+                    <p className="text-xs sm:text-sm md:text-[15px] text-[#1C1917] font-semibold leading-snug">
+                      You want to <strong className="text-[#1C1917] font-bold">help people with pain</strong> & become a yoga therapist.
                     </p>
                   </div>
 
                   {/* Point 5 */}
-                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
-                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
-                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
-                      You've completed your 200 or 300-hour training, or a bachelor's or master's in yoga, and want to take your understanding to a <strong className="text-[#1C1917]">deeper, more practical & Applied level</strong>.
+                    <p className="text-xs sm:text-sm md:text-[15px] text-[#1C1917] font-semibold leading-snug">
+                      You've completed your 200 or 300-hour training, or a bachelor's or master's in yoga, and want to take your understanding to a <strong className="text-[#1C1917] font-bold">deeper, more practical & Applied level</strong>.
                     </p>
                   </div>
 
                   {/* Point 6 */}
-                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
-                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
-                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
-                      You want to teach but don't have confidence & knowledge — <strong className="text-[#1C1917]">this will be your first step</strong>.
+                    <p className="text-xs sm:text-sm md:text-[15px] text-[#1C1917] font-semibold leading-snug">
+                      You want to teach but don't have confidence & knowledge — <strong className="text-[#1C1917] font-bold">this will be your first step</strong>.
                     </p>
                   </div>
 
                   {/* Point 7 */}
-                  <div className="bg-white hover:bg-[#FAF7F2] transition-colors border border-emerald-400/80 rounded-2xl p-3 sm:p-3.5 flex items-start gap-3 shadow-xs">
-                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                  <div className="bg-white border-2 border-[#22c55e] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-xs hover:shadow-sm transition-shadow">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#22c55e] text-white flex items-center justify-center font-black text-xs sm:text-sm shrink-0 shadow-xs">
                       ✓
                     </div>
-                    <p className="text-xs sm:text-sm text-[#1C1917] font-medium leading-snug">
-                      You want to <strong className="text-[#1C1917]">earn more money</strong> as a yoga teacher.
+                    <p className="text-xs sm:text-sm md:text-[15px] text-[#1C1917] font-semibold leading-snug">
+                      You want to <strong className="text-[#1C1917] font-bold">earn more money</strong> as a yoga teacher.
                     </p>
                   </div>
 
                   {/* Point 8 (HIGHLIGHTED AS REQUESTED) */}
-                  <div className="bg-gradient-to-r from-amber-50 via-yellow-50 to-orange-50 border-2 border-[#D97706] rounded-2xl p-3.5 sm:p-4 flex items-start gap-3 shadow-md">
-                    <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-[#D97706] text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5 shadow-sm">
+                  <div className="bg-gradient-to-r from-amber-50 via-yellow-50 to-orange-50 border-2 border-[#D97706] rounded-2xl p-3.5 sm:p-4 flex items-center gap-3.5 shadow-md">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#D97706] text-white flex items-center justify-center font-bold text-xs sm:text-sm shrink-0 shadow-sm">
                       ★
                     </div>
                     <p className="text-xs sm:text-sm md:text-base text-[#1C1917] font-extrabold leading-snug">
