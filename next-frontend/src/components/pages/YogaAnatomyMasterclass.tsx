@@ -787,7 +787,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         {/* ========================================================================= */}
         {/* 3. ALIGNMENT QUIZ INTERACTIVE SECTION */}
         {/* ========================================================================= */}
-        <section className="py-16 md:py-20 bg-[#FAF7F2] text-[#1c2420] border-b border-[#E7E5E4]">
+        <section className="py-16 md:py-20 bg-white text-[#1c2420] border-b border-[#E7E5E4]">
           <div className="max-w-4xl mx-auto px-4">
             
             {/* Header */}
@@ -810,11 +810,11 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                 onClick={() => setSelectedQuizOption("A")}
                 className={`bg-white rounded-3xl p-4 sm:p-5 border-2 transition-all cursor-pointer shadow-sm hover:shadow-md flex flex-col items-center text-center group ${
                   selectedQuizOption === "A"
-                    ? "border-[#D97706] ring-2 ring-[#D97706]/20 bg-white"
+                    ? "border-[#D97706] ring-2 ring-[#D97706]/20 shadow-md"
                     : "border-[#E7E5E4] hover:border-[#D97706]/60"
                 }`}
               >
-                <div className="relative aspect-4/3 w-full rounded-2xl overflow-hidden mb-4 bg-stone-100 border border-[#E7E5E4]">
+                <div className="relative aspect-4/3 w-full rounded-2xl overflow-hidden mb-4 bg-white border border-[#E7E5E4]">
                   <Image
                     src="/quiz-trikonasana-a.jpg"
                     alt="Trikonasana Alignment Option A"
@@ -835,7 +835,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   className={`w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm transition-all ${
                     selectedQuizOption === "A"
                       ? "bg-[#D97706] text-white shadow-xs"
-                      : "bg-[#FAF7F2] text-[#44403C] group-hover:bg-[#D97706] group-hover:text-white border border-[#E7E5E4]"
+                      : "bg-white text-[#44403C] group-hover:bg-[#D97706] group-hover:text-white border border-[#E7E5E4]"
                   }`}
                 >
                   {selectedQuizOption === "A" ? "Selected: Option A ✓" : "Choose Option A"}
@@ -847,11 +847,11 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                 onClick={() => setSelectedQuizOption("B")}
                 className={`bg-white rounded-3xl p-4 sm:p-5 border-2 transition-all cursor-pointer shadow-sm hover:shadow-md flex flex-col items-center text-center group ${
                   selectedQuizOption === "B"
-                    ? "border-[#D97706] ring-2 ring-[#D97706]/20 bg-white"
+                    ? "border-[#D97706] ring-2 ring-[#D97706]/20 shadow-md"
                     : "border-[#E7E5E4] hover:border-[#D97706]/60"
                 }`}
               >
-                <div className="relative aspect-4/3 w-full rounded-2xl overflow-hidden mb-4 bg-stone-100 border border-[#E7E5E4]">
+                <div className="relative aspect-4/3 w-full rounded-2xl overflow-hidden mb-4 bg-white border border-[#E7E5E4]">
                   <Image
                     src="/quiz-trikonasana-b.jpg"
                     alt="Trikonasana Alignment Option B"
@@ -872,7 +872,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   className={`w-full py-2.5 px-4 rounded-xl font-bold text-xs sm:text-sm transition-all ${
                     selectedQuizOption === "B"
                       ? "bg-[#D97706] text-white shadow-xs"
-                      : "bg-[#FAF7F2] text-[#44403C] group-hover:bg-[#D97706] group-hover:text-white border border-[#E7E5E4]"
+                      : "bg-white text-[#44403C] group-hover:bg-[#D97706] group-hover:text-white border border-[#E7E5E4]"
                   }`}
                 >
                   {selectedQuizOption === "B" ? "Selected: Option B ✓" : "Choose Option B"}
@@ -915,9 +915,9 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   But alignment is not about chasing a shape.
                 </p>
 
-                {/* 5. Highlight box (soft background color from the site palette, rounded corners, bold text) */}
+                {/* 5. Highlight box (pure white background, rounded corners, bold text, clean border) */}
                 <div
-                  className="bg-[#FAF7F2] border border-[#E7E5E4] rounded-2xl p-4 sm:p-5 mb-5 shadow-2xs quiz-stagger-item"
+                  className="bg-white border-2 border-[#D97706]/40 rounded-2xl p-4 sm:p-5 mb-5 shadow-xs quiz-stagger-item"
                   style={{ animationDelay: "0.60s" }}
                 >
                   <p className="text-sm sm:text-base md:text-lg font-bold text-[#1C1917] leading-snug">
