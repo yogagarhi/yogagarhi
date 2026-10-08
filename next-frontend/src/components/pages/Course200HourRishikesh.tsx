@@ -39,7 +39,7 @@ import HomeGallerySection from "@/components/home/HomeGallerySection";
 import RoomCard from "./RoomCard";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 
-const heroImage = getCloudinaryImage("hero-yoga-Rishikesh.jpg");
+const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 const preYttcOnline = getCloudinaryImage("pre-yttc-online.png");
 const activityAyurveda = getCloudinaryImage("activity-ayurveda.jpg");
 const transformYou = getCloudinaryImage("transform-you.jpg");

@@ -24,12 +24,13 @@ export function getCloudinaryUrl(path: string, options: CloudinaryImageOptions =
     if (!path) return '';
     if (path.startsWith('http')) return path;
 
-    const filename = path.split('/').pop() || '';
-    const resource = cloudinaryMap[filename];
+    const cleanPath = path.replace(/^\/+/, '');
+    const filename = cleanPath.split('/').pop() || cleanPath;
+    const resource = cloudinaryMap[cleanPath] || cloudinaryMap[filename];
 
     if (!resource) {
         if (process.env.NODE_ENV === 'development') {
-            // console.warn(`[Cloudinary] Image not found in map: ${filename}`);
+            // console.warn(`[Cloudinary] Image not found in map: ${path}`);
         }
         // Ensure path starts with / for next/image if it's not a URL
         return path.startsWith('/') ? path : `/${path}`;
@@ -53,12 +54,13 @@ export function getCloudinaryUrl(path: string, options: CloudinaryImageOptions =
  */
 export function getCloudinaryImage(filename: string) {
     // If passed a path or url, clean it
-    const cleanName = filename.split('/').pop() || '';
-    const resource = cloudinaryMap[cleanName];
+    const cleanPath = filename.replace(/^\/+/, '');
+    const cleanName = cleanPath.split('/').pop() || cleanPath;
+    const resource = cloudinaryMap[cleanPath] || cloudinaryMap[cleanName];
 
     if (!resource) {
         if (process.env.NODE_ENV === 'development') {
-            // console.warn(`[Cloudinary] Image not found for object: ${cleanName}`);
+            // console.warn(`[Cloudinary] Image not found for object: ${filename}`);
         }
         return {
             src: filename.startsWith('/') ? filename : `/${filename}`,
@@ -67,15 +69,13 @@ export function getCloudinaryImage(filename: string) {
         };
     }
 
-    // Reuse getCloudinaryUrl logic or construct manually
-    // Since getCloudinaryUrl now handles objects, we can call it.
-    const url = getCloudinaryUrl(cleanName);
+    const url = getCloudinaryUrl(cleanPath);
 
     return {
         src: url,
         width: resource.width,
         height: resource.height,
         // Optional: blurDataURL if we want placeholder
-        blurDataURL: getCloudinaryUrl(cleanName, { width: 10, quality: 10 })
+        blurDataURL: getCloudinaryUrl(cleanPath, { width: 10, quality: 10 })
     };
 }
