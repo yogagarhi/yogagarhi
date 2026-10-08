@@ -235,7 +235,7 @@ export default function YogaAnatomyMasterclass() {
 
     const options = {
       key: razorpayKey,
-      amount: 100, // 100 paise = ₹1.00
+      amount: 9900, // 9900 paise = ₹99.00
       currency: "INR",
       name: "YogaGarhi Ashram",
       description: `Applied Yoga Anatomy Masterclass (${sundayInfo.ordinalDate})`,
@@ -269,18 +269,18 @@ export default function YogaAnatomyMasterclass() {
           email: formData.email,
           phone: formData.whatsapp,
           payment_id: pId,
-          amount: "₹1.00",
+          amount: "₹99.00",
           workshop_date: `${sundayInfo.fullDate} at 11:00 AM – 1:00 PM IST (2-Hour Live Workshop)`,
           zoom_meeting_id: "890 4962 6217",
           zoom_passcode: "260670",
           zoom_link: "https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1",
-          whatsapp_group: "https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!",
+          whatsapp_group: "https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹99%20for%20the%20Applied%20Anatomy%20Masterclass!",
           _subject: `Confirmed: Masterclass Access Pass - ${formData.name} (${pId})`,
           _autoresponder: `Namaste ${formData.name},
 
 Thank you for registering for the "Applied Functional Yoga Anatomy & Biomechanics Masterclass" (2-Hour Live Intensive) led by Acharya Sachin Kotiyal!
 
-We have successfully received your ₹1 payment.
+We have successfully received your ₹99 payment.
 
 === YOUR LIVE ZOOM ACCESS PASS ===
 • Date & Time: ${sundayInfo.fullDate} | 11:00 AM – 1:00 PM IST (2 Hours Live)
@@ -292,7 +292,7 @@ We have successfully received your ₹1 payment.
 
 === VIP WHATSAPP GROUP ===
 Join our VIP WhatsApp Teachers Group for live class reminders and bonus materials:
-https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!
+https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹99%20for%20the%20Applied%20Anatomy%20Masterclass!
 
 Please join the Zoom room 5 minutes before 11:00 AM IST with your yoga mat and notebook ready.
 
@@ -366,7 +366,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               onClick={openBookingModal}
               className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white shadow-md text-xs sm:text-sm font-bold py-2.5 px-5 sm:px-7 rounded-xl shadow-lg hover:shadow-orange-500/20 transition-all"
             >
-              Book Now — ₹1
+              Book Now — ₹99
             </button>
           </div>
         </div>
@@ -440,7 +440,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   onClick={openBookingModal}
                   className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white font-bold text-xs sm:text-sm py-3.5 px-6 sm:px-7 rounded-xl shadow-lg hover:shadow-orange-500/20 transition-all flex items-center gap-2 shrink-0"
                 >
-                  <span>Book Workshop — ₹1</span>
+                  <span>Book Workshop — ₹99</span>
                   <span className="text-base">→</span>
                 </button>
 
@@ -610,7 +610,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                 <span className="text-lg text-[#b45309]">»</span>
                 <span>Become a confident, injury-free Yoga Teacher now!</span>
                 <span className="text-xs sm:text-sm font-bold text-[#b45309]">
-                  (Only <span className="line-through text-red-700">₹499</span> <strong className="text-[#0E0A07]">₹1</strong>)
+                  (Only <span className="line-through text-red-700">₹499</span> <strong className="text-[#0E0A07]">₹99</strong>)
                 </span>
               </div>
               <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
@@ -768,7 +768,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                 <div>
                   <p className="text-[11px] text-[#78716C]">Regular Price: <span className="line-through">₹499</span></p>
                   <div className="flex items-center gap-2 mt-0.5">
-                    <span className="font-serif text-3xl font-extrabold text-[#D97706]">₹1</span>
+                    <span className="font-serif text-3xl font-extrabold text-[#D97706]">₹99</span>
                     <span className="bg-white border border-[#E7E5E4] text-[#B45309] text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider shadow-2xs">
                       Limited Time Offer
                     </span>
@@ -779,7 +779,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   onClick={openBookingModal}
                   className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white shadow-md font-extrabold text-sm sm:text-base py-3 px-6 sm:px-8 rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all flex items-center justify-center gap-2"
                 >
-                  <span>Book My Seat — ₹1</span>
+                  <span>Book My Seat — ₹99</span>
                   <span>→</span>
                 </button>
               </div>
@@ -1265,7 +1265,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                       onClick={openBookingModal}
                       className="w-full sm:w-auto bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white font-extrabold text-xs sm:text-sm py-2.5 px-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-1.5"
                     >
-                      <span>Book Seat — ₹1</span>
+                      <span>Book Seat — ₹99</span>
                       <span>→</span>
                     </button>
                   </div>
@@ -1470,7 +1470,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                       <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <h4 className="font-bold text-sm text-[#1C1917] mb-1">"The best ₹1 I ever invested"</h4>
+                  <h4 className="font-bold text-sm text-[#1C1917] mb-1">"The best ₹99 I ever invested"</h4>
                   <p className="text-xs text-[#44403C] leading-relaxed mb-4">
                     The value delivered in 2 hours is greater than what most TTC schools teach across 4 weeks of anatomy modules. Clear, precise, no fluff.
                   </p>
@@ -1553,7 +1553,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
         </section>
 
         {/* ========================================================================= */}
-        {/* 8. WHAT YOU GET FOR ₹1 & FINAL PRICING CARD */}
+        {/* 8. WHAT YOU GET FOR ₹99 & FINAL PRICING CARD */}
         {/* ========================================================================= */}
         <section id="pricing-section" className="py-16 md:py-24 bg-white text-[#1C1917] border-b border-[#E7E5E4]">
           <div className="max-w-3xl mx-auto px-4">
@@ -1574,7 +1574,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
                 <div className="flex items-center justify-center gap-3 mt-4">
                   <span className="text-sm sm:text-base text-gray-400 line-through">₹499 / ₹999</span>
-                  <span className="font-serif text-4xl sm:text-5xl font-black text-[#D97706]">₹1</span>
+                  <span className="font-serif text-4xl sm:text-5xl font-black text-[#D97706]">₹99</span>
                   <span className="text-xs bg-[#FEF3C7] border border-[#FDE68A] text-[#B45309] font-bold px-2.5 py-1 rounded-full uppercase">
                     Only Today
                   </span>
@@ -1610,7 +1610,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   onClick={openBookingModal}
                   className="w-full bg-[#D97706] hover:bg-[#B45309] active:scale-98 text-white font-extrabold text-base sm:text-lg py-4 px-8 rounded-2xl shadow-xl hover:shadow-orange-500/30 transition-all flex items-center justify-center gap-2"
                 >
-                  <span>Claim Your Masterclass Spot for ₹1 Now</span>
+                  <span>Claim Your Masterclass Spot for ₹99 Now</span>
                   <ArrowRight className="w-5 h-5" />
                 </button>
                 <p className="text-[11px] text-[#78716C] mt-2 flex items-center justify-center gap-1.5">
@@ -1650,12 +1650,12 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   a: "The masterclass will be conducted 100% in clear, simple English without complex medical jargon, making it easy to understand for yoga teachers and practitioners globally."
                 },
                 {
-                  q: "Will I get the Zoom link immediately after paying ₹1 via Razorpay?",
-                  a: "Yes! As soon as your ₹1 payment is completed via Razorpay UPI / Cards, you will instantly receive the Zoom Meeting ID & Passcode on your screen, plus an email confirmation and VIP WhatsApp community invite."
+                  q: "Will I get the Zoom link immediately after paying ₹99 via Razorpay?",
+                  a: "Yes! As soon as your ₹99 payment is completed via Razorpay UPI / Cards, you will instantly receive the Zoom Meeting ID & Passcode on your screen, plus an email confirmation and VIP WhatsApp community invite."
                 },
                 {
-                  q: "Why is it priced at only ₹1?",
-                  a: "YogaGarhi believes essential joint safety and injury prevention knowledge should be accessible to every yoga teacher worldwide. The ₹1 fee simply filters out casual spammers so only dedicated teachers attend."
+                  q: "Why is it priced at only ₹99?",
+                  a: "YogaGarhi believes essential joint safety and injury prevention knowledge should be accessible to every yoga teacher worldwide. The ₹99 fee simply filters out casual spammers so only dedicated teachers attend."
                 }
               ].map((faq, i) => (
                 <div
@@ -1748,7 +1748,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
       )}
 
       {/* ========================================================================= */}
-      {/* 12. ₹1 RAZORPAY BOOKING & INSTANT ZOOM PASS MODAL */}
+      {/* 12. ₹99 RAZORPAY BOOKING & INSTANT ZOOM PASS MODAL */}
       {/* ========================================================================= */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-fadeIn">
@@ -1765,7 +1765,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               <div>
                 <div className="text-center mb-5">
                   <div className="inline-flex items-center gap-1.5 bg-[#FEF3C7] text-[#B45309] text-[11px] font-bold px-3 py-1 rounded-full border border-[#FDE68A] mb-2">
-                    <Sparkles className="w-3.5 h-3.5" /> Official Live Razorpay ₹1 Checkout
+                    <Sparkles className="w-3.5 h-3.5" /> Official Live Razorpay ₹99 Checkout
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-[#1C1917]">Claim Your Masterclass Seat</h3>
                   <p className="text-xs text-[#78716C] mt-1">Live this {sundayInfo.ordinalDate} • 11:00 AM IST (2-Hour Live Workshop)</p>
@@ -1810,7 +1810,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
                   <div className="bg-[#FAF7F2] p-3 rounded-xl border border-[#E7E5E4] flex items-center justify-between text-xs font-bold text-[#1C1917]">
                     <span>Total Amount Payable:</span>
-                    <span className="text-base font-black text-[#D97706]">₹1 Only <span className="text-xs line-through text-gray-400 font-normal">₹499</span></span>
+                    <span className="text-base font-black text-[#D97706]">₹99 Only <span className="text-xs line-through text-gray-400 font-normal">₹499</span></span>
                   </div>
 
                   <button
@@ -1818,7 +1818,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                     className="w-full bg-[#D97706] hover:bg-[#B45309] active:scale-98 text-white font-extrabold text-sm sm:text-base py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
                   >
                     <CreditCard className="w-4 h-4" />
-                    <span>Pay ₹1 via Razorpay (UPI / Cards / GPay)</span>
+                    <span>Pay ₹99 via Razorpay (UPI / Cards / GPay)</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
 
@@ -1833,7 +1833,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               <div className="py-12 text-center space-y-4">
                 <div className="w-12 h-12 rounded-full border-4 border-[#D97706] border-t-transparent animate-spin mx-auto" />
                 <h4 className="font-serif text-xl font-bold text-[#1C1917]">Opening Razorpay Checkout...</h4>
-                <p className="text-xs text-[#78716C]">Please complete your ₹1 payment in the popup window.</p>
+                <p className="text-xs text-[#78716C]">Please complete your ₹99 payment in the popup window.</p>
               </div>
             )}
 
@@ -1883,7 +1883,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </a>
 
                   <a
-                    href="https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.1+for+the+Applied+Anatomy+Masterclass!"
+                    href="https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.99+for+the+Applied+Anatomy+Masterclass!"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow flex items-center justify-center gap-2 transition-all block"
@@ -1914,19 +1914,19 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
           <div className="max-w-4xl mx-auto flex items-center justify-between gap-3">
             <div className="hidden sm:block text-left">
               <p className="text-xs font-bold text-[#1C1917]">Applied Yoga Anatomy Masterclass</p>
-              <p className="text-[11px] text-[#B45309] font-semibold">{sundayInfo.ordinalDate} • 11:00 AM IST (2-Hr Live) • Only ₹1</p>
+              <p className="text-[11px] text-[#B45309] font-semibold">{sundayInfo.ordinalDate} • 11:00 AM IST (2-Hr Live) • Only ₹99</p>
             </div>
 
             <div className="flex items-center justify-between sm:justify-end w-full sm:w-auto gap-3">
               <div className="text-left sm:text-right">
                 <span className="text-[10px] text-gray-400 line-through">₹499</span>
-                <span className="text-base sm:text-lg font-black text-[#D97706] ml-1.5">₹1</span>
+                <span className="text-base sm:text-lg font-black text-[#D97706] ml-1.5">₹99</span>
               </div>
               <button
                 onClick={openBookingModal}
                 className="bg-[#D97706] hover:bg-[#B45309] active:scale-95 text-white font-extrabold text-xs sm:text-sm py-2.5 px-5 sm:px-7 rounded-xl shadow-md transition-all cursor-pointer"
               >
-                Book My Seat — ₹1 →
+                Book My Seat — ₹99 →
               </button>
             </div>
           </div>

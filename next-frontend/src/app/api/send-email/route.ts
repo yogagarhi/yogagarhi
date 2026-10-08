@@ -49,7 +49,7 @@ export async function POST(request: Request) {
       from: `"YogaGarhi Website" <${process.env.SMTP_USER}>`,
       to: 'yogagarhi@gmail.com',
       replyTo: email || 'yogagarhi@gmail.com',
-      subject: `New Masterclass Registration: ${remainingData.name || 'Student'} (${remainingData.payment_id || '₹1 Paid'})`,
+      subject: `New Masterclass Registration: ${remainingData.name || 'Student'} (${remainingData.payment_id || '₹99 Paid'})`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #16533f; border-radius: 12px; overflow: hidden;">
           <div style="background-color: #0b3b2c; color: #f5b942; padding: 20px; text-align: center;">
@@ -57,7 +57,7 @@ export async function POST(request: Request) {
             <p style="margin: 5px 0 0; color: #d4ebe2; font-size: 14px;">Applied Yoga Anatomy & Biomechanics Masterclass</p>
           </div>
           <div style="padding: 24px; background: #ffffff;">
-            <p style="margin-bottom: 20px; color: #333; font-size: 15px;">A student has completed their ₹1 registration payment:</p>
+            <p style="margin-bottom: 20px; color: #333; font-size: 15px;">A student has completed their ₹99 registration payment:</p>
             <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
               <tr>
                 <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; width: 35%; color: #0b3b2c;">Student Name</td>
@@ -77,7 +77,7 @@ export async function POST(request: Request) {
               </tr>
               <tr>
                 <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; color: #0b3b2c;">Amount Paid</td>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222; font-weight: bold;">₹1.00</td>
+                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222; font-weight: bold;">₹99.00</td>
               </tr>
               <tr>
                 <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; color: #0b3b2c;">Workshop Date</td>
@@ -102,7 +102,7 @@ export async function POST(request: Request) {
 
 Thank you for registering for the Applied Functional Yoga Anatomy & Biomechanics Masterclass!
 
-We have successfully received your ₹1 registration payment.
+We have successfully received your ₹99 registration payment.
 
 === YOUR LIVE ZOOM CLASS PASS ===
 • Mode: Live on Zoom
@@ -113,7 +113,7 @@ We have successfully received your ₹1 registration payment.
 
 === VIP WHATSAPP GROUP ===
 Join our VIP WhatsApp group for live reminders:
-https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.1+for+the+Applied+Anatomy+Masterclass!
+https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.99+for+the+Applied+Anatomy+Masterclass!
 
 With warm regards,
 Acharya Sachin Kotiyal & The YogaGarhi Team`,
@@ -155,7 +155,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                 </tr>
                 <tr>
                   <td style="padding: 6px 0; color: #4b5563;"><strong>Payment Status:</strong></td>
-                  <td style="padding: 6px 0; color: #16a34a; font-weight: bold;">₹1.00 Paid & Verified ✓</td>
+                  <td style="padding: 6px 0; color: #16a34a; font-weight: bold;">₹99.00 Paid & Verified ✓</td>
                 </tr>
               </table>
 
@@ -168,7 +168,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
             <!-- WhatsApp CTA Button -->
             <div style="text-align: center; margin: 28px 0;">
-              <a href="https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.1+for+the+Applied+Anatomy+Masterclass!" style="background-color: #25D366; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 10px; font-weight: bold; font-size: 15px; display: inline-block; box-shadow: 0 4px 10px rgba(37,211,102,0.3);">
+              <a href="https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.99+for+the+Applied+Anatomy+Masterclass!" style="background-color: #25D366; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 10px; font-weight: bold; font-size: 15px; display: inline-block; box-shadow: 0 4px 10px rgba(37,211,102,0.3);">
                 📲 Join VIP WhatsApp Teachers Group
               </a>
               <p style="font-size: 12px; color: #6b7280; margin-top: 8px;">Click above to receive class reminders and anatomy study resources on WhatsApp.</p>
