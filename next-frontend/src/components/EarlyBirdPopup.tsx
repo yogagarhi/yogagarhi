@@ -20,10 +20,10 @@ const EarlyBirdPopup = () => {
     // If already dismissed, don't show
     if (isDismissed) return;
 
-    // Show popup after 2 seconds
+    // Show popup after 4 seconds (after initial LCP window)
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 2000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [isDismissed]);

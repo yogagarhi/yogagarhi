@@ -169,94 +169,96 @@ YogaGarhi – Bali`,
     return (
         <YogicEnergyContext.Provider value={{ showYogicEnergy, setShowYogicEnergy }}>
             {children}
-            <Dialog open={showYogicEnergy} onOpenChange={handleOpenChange}>
-                <DialogContent className="sm:max-w-md bg-[#FDFBF7] border-none shadow-2xl rounded-3xl overflow-hidden p-0">
-                    <div className="p-8">
-                        <DialogHeader className="mb-6">
-                            <DialogTitle className="text-center font-heading text-3xl text-[#2D7A70] tracking-tight leading-tight">
-                                {quizStep < quizQuestions.length
-                                    ? "Discover Your Yogic Energy"
-                                    : "Your Insight Awaits"}
-                            </DialogTitle>
-                            <DialogDescription className="text-center text-[#1A4D45]/70 mt-2 text-base">
-                                {quizStep < quizQuestions.length
-                                    ? `Question ${quizStep + 1} of ${quizQuestions.length}: How does your body typically feel in the morning?`
-                                    : "Enter your details to receive your personalized yogic energy analysis."}
-                            </DialogDescription>
-                        </DialogHeader>
+            {showYogicEnergy && (
+                <Dialog open={showYogicEnergy} onOpenChange={handleOpenChange}>
+                    <DialogContent className="sm:max-w-md bg-[#FDFBF7] border-none shadow-2xl rounded-3xl overflow-hidden p-0">
+                        <div className="p-8">
+                            <DialogHeader className="mb-6">
+                                <DialogTitle className="text-center font-heading text-3xl text-[#2D7A70] tracking-tight leading-tight">
+                                    {quizStep < quizQuestions.length
+                                        ? "Discover Your Yogic Energy"
+                                        : "Your Insight Awaits"}
+                                </DialogTitle>
+                                <DialogDescription className="text-center text-[#1A4D45]/70 mt-2 text-base">
+                                    {quizStep < quizQuestions.length
+                                        ? `Question ${quizStep + 1} of ${quizQuestions.length}: How does your body typically feel in the morning?`
+                                        : "Enter your details to receive your personalized yogic energy analysis."}
+                                </DialogDescription>
+                            </DialogHeader>
 
-                        {quizStep < quizQuestions.length ? (
-                            <div className="space-y-4">
-                                {/* Custom Progress Dots */}
-                                <div className="flex justify-center gap-2 mb-6">
-                                    {quizQuestions.map((_, i) => (
-                                        <div
-                                            key={i}
-                                            className={`h-1.5 rounded-full transition-all duration-300 ${i === quizStep ? "w-6 bg-[#2D7A70]" : "w-1.5 bg-[#2D7A70]/20"
-                                                }`}
+                            {quizStep < quizQuestions.length ? (
+                                <div className="space-y-4">
+                                    {/* Custom Progress Dots */}
+                                    <div className="flex justify-center gap-2 mb-6">
+                                        {quizQuestions.map((_, i) => (
+                                            <div
+                                                key={i}
+                                                className={`h-1.5 rounded-full transition-all duration-300 ${i === quizStep ? "w-6 bg-[#2D7A70]" : "w-1.5 bg-[#2D7A70]/20"
+                                                    }`}
+                                            />
+                                        ))}
+                                    </div>
+
+                                    <div className="space-y-3">
+                                        {quizQuestions[quizStep].options.map((option, i) => (
+                                            <button
+                                                key={i}
+                                                onClick={() => handleQuizAnswer(option.dosha)}
+                                                className="
+                            w-full p-5 text-center rounded-2xl 
+                            border border-[#2D7A70]/10 bg-white/50
+                            hover:border-[#2D7A70] hover:bg-white
+                            transition-all duration-300
+                            hover:shadow-md active:scale-[0.98]
+                            text-[#1A4D45] font-medium text-lg
+                            group
+                          "
+                                            >
+                                                {option.text}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                            ) : (
+                                <form onSubmit={handleSubmit} className="space-y-4">
+                                    <div className="space-y-1.5">
+                                        <Label htmlFor="quiz-name" className="text-[#1A4D45] font-semibold text-sm">Full Name *</Label>
+                                        <Input
+                                            id="quiz-name"
+                                            placeholder="Enter your name"
+                                            value={name}
+                                            onChange={(e) => setName(e.target.value)}
+                                            required
+                                            className="bg-white/80 border-teal-100 focus:border-[#87BCB4] rounded-xl h-12"
                                         />
-                                    ))}
-                                </div>
+                                    </div>
 
-                                <div className="space-y-3">
-                                    {quizQuestions[quizStep].options.map((option, i) => (
-                                        <button
-                                            key={i}
-                                            onClick={() => handleQuizAnswer(option.dosha)}
-                                            className="
-                        w-full p-5 text-center rounded-2xl 
-                        border border-[#2D7A70]/10 bg-white/50
-                        hover:border-[#2D7A70] hover:bg-white
-                        transition-all duration-300
-                        hover:shadow-md active:scale-[0.98]
-                        text-[#1A4D45] font-medium text-lg
-                        group
-                      "
-                                        >
-                                            {option.text}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
-                        ) : (
-                            <form onSubmit={handleSubmit} className="space-y-4">
-                                <div className="space-y-1.5">
-                                    <Label htmlFor="quiz-name" className="text-[#1A4D45] font-semibold text-sm">Full Name *</Label>
-                                    <Input
-                                        id="quiz-name"
-                                        placeholder="Enter your name"
-                                        value={name}
-                                        onChange={(e) => setName(e.target.value)}
-                                        required
-                                        className="bg-white/80 border-teal-100 focus:border-[#87BCB4] rounded-xl h-12"
-                                    />
-                                </div>
+                                    <div className="space-y-1.5">
+                                        <Label htmlFor="quiz-email" className="text-[#1A4D45] font-semibold text-sm">Email *</Label>
+                                        <Input
+                                            id="quiz-email"
+                                            type="email"
+                                            placeholder="Enter your email"
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                            required
+                                            className="bg-white/80 border-teal-100 focus:border-[#87BCB4] rounded-xl h-12"
+                                        />
+                                    </div>
 
-                                <div className="space-y-1.5">
-                                    <Label htmlFor="quiz-email" className="text-[#1A4D45] font-semibold text-sm">Email *</Label>
-                                    <Input
-                                        id="quiz-email"
-                                        type="email"
-                                        placeholder="Enter your email"
-                                        value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        required
-                                        className="bg-white/80 border-teal-100 focus:border-[#87BCB4] rounded-xl h-12"
-                                    />
-                                </div>
-
-                                <Button
-                                    type="submit"
-                                    disabled={isSubmitting || !name || !email}
-                                    className="w-full bg-[#2D7A70] hover:bg-[#1A4D45] text-white rounded-xl h-14 text-lg font-bold shadow-lg mt-4"
-                                >
-                                    {isSubmitting ? "Submitting..." : "Reveal My Energy"}
-                                </Button>
-                            </form>
-                        )}
-                    </div>
-                </DialogContent>
-            </Dialog>
+                                    <Button
+                                        type="submit"
+                                        disabled={isSubmitting || !name || !email}
+                                        className="w-full bg-[#2D7A70] hover:bg-[#1A4D45] text-white rounded-xl h-14 text-lg font-bold shadow-lg mt-4"
+                                    >
+                                        {isSubmitting ? "Submitting..." : "Reveal My Energy"}
+                                    </Button>
+                                </form>
+                            )}
+                        </div>
+                    </DialogContent>
+                </Dialog>
+            )}
         </YogicEnergyContext.Provider>
     );
 }

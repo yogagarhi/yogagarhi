@@ -35,7 +35,7 @@ export function BookingProvider({ children }: { children: ReactNode }) {
   return (
     <BookingContext.Provider value={{ showBookingDialog, setShowBookingDialog, openBooking }}>
       {children}
-      <BookingDialogContent source={bookingSource} router={router} />
+      {showBookingDialog && <BookingDialogContent source={bookingSource} router={router} />}
     </BookingContext.Provider>
   );
 }

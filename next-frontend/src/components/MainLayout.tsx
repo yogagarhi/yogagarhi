@@ -1,10 +1,12 @@
 "use client"
 import { usePathname } from "next/navigation"
+import dynamic from "next/dynamic"
 import Header from "./layout/Header"
 import Footer from "./layout/Footer"
-import EarlyBirdPopup from "./EarlyBirdPopup"
 import StickyContactButton from "./StickyContactButton"
 import PartnershipsSection from "./home/PartnershipsSection"
+
+const EarlyBirdPopup = dynamic(() => import("./EarlyBirdPopup"), { ssr: false });
 
 export default function MainLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
