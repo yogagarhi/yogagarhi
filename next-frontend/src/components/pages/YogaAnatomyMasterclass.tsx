@@ -339,17 +339,15 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
       <header className="bg-white/95 text-[#1C1917] border-b border-[#E7E5E4] sticky top-0 z-40 backdrop-blur-md shadow-sm">
         <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2.5 sm:gap-3">
-            <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden p-0.5 bg-gradient-to-br from-[#f5b942] to-[#8A5D31] shadow-md flex-shrink-0">
-              <div className="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
-                <Image
-                  src={logo}
-                  alt="YogaGarhi Official Logo"
-                  width={48}
-                  height={48}
-                  className="object-contain w-full h-full p-0.5"
-                  priority
-                />
-              </div>
+            <div className="relative w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 flex items-center justify-center">
+              <Image
+                src="/yogagarhi-logo-hd-preview.png"
+                alt="YogaGarhi Official Logo"
+                width={48}
+                height={48}
+                className="object-contain w-full h-full"
+                priority
+              />
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
