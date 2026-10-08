@@ -1678,6 +1678,39 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
               ))}
             </div>
 
+            {/* Talk to Us: Mail & Message Support Card */}
+            <div className="mt-8 bg-white border border-[#E7E5E4] rounded-3xl p-6 sm:p-8 text-center shadow-sm max-w-2xl mx-auto">
+              <div className="w-12 h-12 rounded-2xl bg-[#FEF3C7] text-[#D97706] flex items-center justify-center mx-auto mb-3 border border-[#FDE68A]">
+                <HelpCircle className="w-6 h-6 text-[#D97706]" />
+              </div>
+              <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#1C1917] mb-1.5">
+                Still have questions? Talk to us
+              </h3>
+              <p className="text-xs sm:text-sm text-[#78716C] mb-6 max-w-md mx-auto">
+                Have a question about the curriculum, timing, or payment? Our support team is here to help you.
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a
+                  href="https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20a%20question%20about%20the%20Yoga%20Anatomy%20Masterclass!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs sm:text-sm py-3 px-6 rounded-xl shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2"
+                >
+                  <MessageSquare className="w-4 h-4" />
+                  <span>Message on WhatsApp</span>
+                </a>
+
+                <a
+                  href="mailto:yogagarhi@gmail.com?subject=Query%20Regarding%20Yoga%20Anatomy%20Masterclass"
+                  className="w-full sm:w-auto bg-white hover:bg-stone-50 text-[#1C1917] border border-[#E7E5E4] font-bold text-xs sm:text-sm py-3 px-6 rounded-xl shadow-2xs hover:shadow-sm transition-all flex items-center justify-center gap-2"
+                >
+                  <Mail className="w-4 h-4 text-[#D97706]" />
+                  <span>Send an Email</span>
+                </a>
+              </div>
+            </div>
+
           </div>
         </section>
 
