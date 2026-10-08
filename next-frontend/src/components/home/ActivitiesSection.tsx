@@ -49,6 +49,7 @@ export default function ActivitiesSection() {
                 <Image
                   src={activity.image}
                   alt={activity.title}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />

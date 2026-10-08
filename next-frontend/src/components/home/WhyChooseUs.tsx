@@ -121,6 +121,7 @@ export default function WhyChooseUs() {
                     src={imgPreTtc}
                     alt="Preparation for your YTTC Free Program"
                     fill
+                    sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     style={{ objectPosition: "center -45px" }}
                   />
@@ -155,6 +156,7 @@ export default function WhyChooseUs() {
                     src={imgFamily}
                     alt="1-Year Post-TTC Support"
                     fill
+                    sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     style={{ objectPosition: "center" }}
                   />
@@ -184,6 +186,7 @@ export default function WhyChooseUs() {
                       src={imgAyurveda}
                       alt="Multi-Style & Ayurveda"
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
@@ -213,6 +216,7 @@ export default function WhyChooseUs() {
                       src={imgShivShakti}
                       alt="Shiv-Shakti Method"
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
@@ -242,6 +246,7 @@ export default function WhyChooseUs() {
                       src={imgPhilosophy}
                       alt="Philosophy-Driven"
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
@@ -271,6 +276,7 @@ export default function WhyChooseUs() {
                       src={imgTradition}
                       alt="Real tradition, taught clearly"
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
@@ -300,6 +306,7 @@ export default function WhyChooseUs() {
                       src={imgSmallGroup}
                       alt="Intimate learning"
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
@@ -329,6 +336,7 @@ export default function WhyChooseUs() {
                       src={imgAssistant}
                       alt="Learn how to actually work as a teacher"
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
@@ -424,6 +432,7 @@ export default function WhyChooseUs() {
                       src={imgSequencing}
                       alt="35+ Sequencing Book"
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
@@ -453,6 +462,7 @@ export default function WhyChooseUs() {
                       src={imgAssistant}
                       alt="Assistant Teacher"
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
@@ -482,6 +492,7 @@ export default function WhyChooseUs() {
                       src={imgRepeat}
                       alt="Free Course Repeat"
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
@@ -511,6 +522,7 @@ export default function WhyChooseUs() {
                       src={imgFamily}
                       alt="Global Family"
                       fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">

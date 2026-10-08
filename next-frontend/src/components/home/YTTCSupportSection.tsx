@@ -319,6 +319,7 @@ const YTTCSupportSection = () => {
                             src={item.image}
                             alt={item.title}
                             fill
+                            sizes="160px"
                             className="object-cover transition-transform duration-500 group-hover:scale-110"
                           />
                           {/* Overlay on Hover */}

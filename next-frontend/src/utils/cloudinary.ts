@@ -35,11 +35,12 @@ export function getCloudinaryUrl(path: string, options: CloudinaryImageOptions =
         return path.startsWith('/') ? path : `/${path}`;
     }
 
-    const transformations: string[] = ['f_auto', 'q_auto'];
+    const transformations: string[] = [];
+    transformations.push(options.format ? `f_${options.format}` : 'f_auto');
+    transformations.push(options.quality ? `q_${options.quality}` : 'q_auto');
 
     if (options.width) transformations.push(`w_${options.width}`);
     if (options.height) transformations.push(`h_${options.height}`);
-    if (options.quality) transformations.push(`q_${options.quality}`);
 
     const transformationString = transformations.join(',');
     const extension = resource.format ? `.${resource.format}` : '';
