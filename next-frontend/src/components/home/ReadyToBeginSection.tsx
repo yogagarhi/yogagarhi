@@ -157,8 +157,8 @@ YogaGarhi Team`,
           src={readyToBeginBg}
           alt="Yoga students practicing meditation at YogaGarhi Ashram"
           fill
+          sizes="100vw"
           className="object-cover"
-          priority
         />
         <div className="absolute inset-0 bg-foreground/85" />
       </div>

@@ -43,6 +43,7 @@ const VideoPlayer = ({
             src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
             alt={video.name}
             fill
+            sizes="(max-width: 1024px) 100vw, 60vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-foreground/20" />

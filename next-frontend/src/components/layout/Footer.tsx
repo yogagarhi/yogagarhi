@@ -60,6 +60,8 @@ export default function Footer() {
               <Image
                 src={logo}
                 alt="YogaGarhi"
+                width={80}
+                height={74}
                 className="h-20 w-20 object-contain"
               />
               <div className="absolute -inset-4 border border-primary-foreground/10 rounded-full animate-spin-slow" />

@@ -8,7 +8,7 @@ const yogaAllianceLogo = getCloudinaryImage("yoga-alliance-official.png");
 const partnerships = [
     {
         name: "Yoga Alliance (USA)",
-        icon: <Image src={yogaAllianceLogo} alt="Yoga Alliance" className="w-full h-full object-contain filter brightness-95" />,
+        icon: <Image src={yogaAllianceLogo} alt="Yoga Alliance" width={66} height={38} className="w-full h-full object-contain filter brightness-95" />,
         bg: "bg-teal-500/5"
     },
     {

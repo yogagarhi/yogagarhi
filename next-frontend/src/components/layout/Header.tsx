@@ -252,6 +252,8 @@ export default function Header() {
                 <Image
                   src={logo}
                   alt="YogaGarhi"
+                  width={56}
+                  height={52}
                   className="object-contain h-12 w-12 sm:h-14 sm:w-14"
                 />
                 <div className="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-300" />

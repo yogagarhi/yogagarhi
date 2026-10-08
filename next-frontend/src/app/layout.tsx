@@ -1,27 +1,25 @@
-// Removed Google Font imports to avoid build-time fetch errors
-// import { Cormorant_Garamond, Lato } from "next/font/google";
-// const cormorant = Cormorant_Garamond({
-//   subsets: ["latin"],
-//   weight: ["300", "400", "500", "600", "700"],
-//   variable: "--font-heading",
-//   display: "swap",
-// });
-// const lato = Lato({
-//   subsets: ["latin"],
-//   weight: ["300", "400", "700"],
-//   variable: "--font-body",
-//   display: "swap",
-// });
-// import { Cormorant_Garamond, Lato } from "next/font/google"; // removed to avoid font fetch errors
+import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import type { Metadata } from "next";
 import MainLayout from "@/components/MainLayout";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
 
-// Font definitions removed to avoid runtime fetching errors.
-// const cormorant = Cormorant_Garamond({ /* ... */ });
-// const lato = Lato({ /* ... */ });
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.yogagarhi.com'),
@@ -111,29 +109,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${cormorant.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#0f766e" />
-        {/* Google Analytics 4 (GA4) */}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
-                  page_path: window.location.pathname,
-                });
-              `}
-            </Script>
-          </>
-        )}
+        {/* Initialize dataLayer immediately for early conversion events */}
+        <script
+          id="init-datalayer"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];`,
+          }}
+        />
         {/* Unified Structured Data (EducationalOrganization, LocalBusiness, WebSite) */}
         <script
           type="application/ld+json"
@@ -293,9 +279,6 @@ export default function RootLayout({
             })
           }}
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" />
       </head>
       <body className="font-body bg-background text-foreground antialiased scroll-smooth" suppressHydrationWarning>
         <UtmTracker />
@@ -307,7 +290,7 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <Script id="google-tag-manager" strategy="afterInteractive">
+        <Script id="google-tag-manager" strategy="lazyOnload">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
