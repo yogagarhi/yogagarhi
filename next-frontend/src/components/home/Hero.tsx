@@ -17,7 +17,7 @@ export default function Hero() {
       {/* Background Image with Priority Preload for LCP */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={getCloudinaryUrl('/hero-yoga-group.jpg')}
+          src={getCloudinaryUrl('/hero-yoga-group.jpg', { format: 'auto', quality: 'auto' })}
           alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
           fill
           priority
@@ -30,29 +30,21 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
         <div className="max-w-4xl mx-auto space-y-8">
-          <p className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.3em] uppercase opacity-90 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+          <p className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.3em] uppercase opacity-90">
             Welcome To
           </p>
           <div className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
             {"Yogagarh".split("").map((char, index) => (
               <span
                 key={index}
-                className="inline-block animate-fade-in opacity-0"
-                style={{
-                  animationDelay: `${0.4 + index * 0.08}s`,
-                  animationFillMode: 'forwards'
-                }}
+                className="inline-block"
               >
                 {char}
               </span>
             ))}
             {/* Custom "i" with lotus dot */}
             <span
-              className="inline-block animate-fade-in opacity-0 relative"
-              style={{
-                animationDelay: `${0.4 + 8 * 0.08}s`,
-                animationFillMode: 'forwards'
-              }}
+              className="inline-block relative"
             >
               <span className="relative">
                 {/* The "i" stem without dot */}
@@ -69,10 +61,10 @@ export default function Hero() {
               </span>
             </span>
           </div>
-          <h1 className="text-xl md:text-3xl font-heading font-medium max-w-4xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '1.1s', animationFillMode: 'forwards' }}>
+          <h1 className="text-xl md:text-3xl font-heading font-medium max-w-4xl mx-auto">
             Yoga Alliance Certified Yoga Teacher Training in Bali & Rishikesh
           </h1>
-          <p className="text-lg md:text-xl font-light max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}>
+          <p className="text-lg md:text-xl font-light max-w-2xl mx-auto">
             Ancient Himalayan wisdom. Authentic yoga, lived & taught.
           </p>
 
