@@ -2,9 +2,11 @@
 import { usePathname } from "next/navigation"
 import Header from "./layout/Header"
 import Footer from "./layout/Footer"
-import EarlyBirdPopup from "./EarlyBirdPopup"
 import StickyContactButton from "./StickyContactButton"
 import PartnershipsSection from "./home/PartnershipsSection"
+import dynamic from "next/dynamic"
+
+const EarlyBirdPopup = dynamic(() => import("./EarlyBirdPopup"), { ssr: false });
 
 export default function MainLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
