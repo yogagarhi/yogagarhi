@@ -1692,7 +1692,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a
-                  href="https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20a%20question%20about%20the%20Yoga%20Anatomy%20Masterclass!"
+                  href="https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+a+question+about+the+Yoga+Anatomy+Masterclass!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs sm:text-sm py-3 px-6 rounded-xl shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2"
@@ -1893,7 +1893,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                   </a>
 
                   <a
-                    href="https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!"
+                    href="https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.1+for+the+Applied+Anatomy+Masterclass!"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs sm:text-sm py-3 px-4 rounded-xl shadow flex items-center justify-center gap-2 transition-all block"

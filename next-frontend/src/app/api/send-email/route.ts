@@ -113,7 +113,7 @@ We have successfully received your ₹1 registration payment.
 
 === VIP WHATSAPP GROUP ===
 Join our VIP WhatsApp group for live reminders:
-https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!
+https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.1+for+the+Applied+Anatomy+Masterclass!
 
 With warm regards,
 Acharya Sachin Kotiyal & The YogaGarhi Team`,
@@ -168,7 +168,7 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
 
             <!-- WhatsApp CTA Button -->
             <div style="text-align: center; margin: 28px 0;">
-              <a href="https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹1%20for%20the%20Applied%20Anatomy%20Masterclass!" style="background-color: #25D366; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 10px; font-weight: bold; font-size: 15px; display: inline-block; box-shadow: 0 4px 10px rgba(37,211,102,0.3);">
+              <a href="https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.1+for+the+Applied+Anatomy+Masterclass!" style="background-color: #25D366; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 10px; font-weight: bold; font-size: 15px; display: inline-block; box-shadow: 0 4px 10px rgba(37,211,102,0.3);">
                 📲 Join VIP WhatsApp Teachers Group
               </a>
               <p style="font-size: 12px; color: #6b7280; margin-top: 8px;">Click above to receive class reminders and anatomy study resources on WhatsApp.</p>
