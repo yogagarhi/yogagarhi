@@ -17,7 +17,7 @@ export default function Hero() {
       {/* Background Image with Priority Preload for LCP */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={getCloudinaryUrl('/hero-yoga-group.jpg', { format: 'auto', quality: 'auto' })}
+          src={getCloudinaryUrl('/hero-yoga-group.jpg')}
           alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
           fill
           priority
