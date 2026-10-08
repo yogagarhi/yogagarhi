@@ -1702,11 +1702,13 @@ Acharya Sachin Kotiyal & The YogaGarhi Team`,
                 </a>
 
                 <a
-                  href="mailto:yogagarhi@gmail.com?subject=Query%20Regarding%20Yoga%20Anatomy%20Masterclass&body=Hi%20YogaGarhi%20Team%2C%0A%0AI%20have%20a%20question%20regarding%20the%20Yoga%20Anatomy%20Masterclass%3A%0A%0A"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yogagarhi@gmail.com&su=Query%20Regarding%20Yoga%20Anatomy%20Masterclass"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full sm:w-auto bg-white hover:bg-stone-50 text-[#1C1917] border border-[#E7E5E4] font-bold text-xs sm:text-sm py-3 px-6 rounded-xl shadow-2xs hover:shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Mail className="w-4 h-4 text-[#D97706]" />
-                  <span>Send an Email (yogagarhi@gmail.com)</span>
+                  <span>Send an Email</span>
                 </a>
               </div>
             </div>
