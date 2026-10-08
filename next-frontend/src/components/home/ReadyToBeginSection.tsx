@@ -158,7 +158,6 @@ YogaGarhi Team`,
           alt="Yoga students practicing meditation at YogaGarhi Ashram"
           fill
           className="object-cover"
-          priority
         />
         <div className="absolute inset-0 bg-foreground/85" />
       </div>

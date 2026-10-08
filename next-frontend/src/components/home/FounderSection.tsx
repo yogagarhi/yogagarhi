@@ -58,7 +58,6 @@ export default function FounderSection() {
                   src={founderImage}
                   alt="Founder of YogaGarhi"
                   className="w-full h-auto object-cover"
-                  priority
                 />
 
                 {/* Gradient Overlay */}
