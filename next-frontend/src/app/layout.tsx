@@ -102,6 +102,7 @@ export const metadata: Metadata = {
 import { Providers } from "@/components/Providers";
 import UtmTracker from '@/components/UtmTracker';
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SvgSprite from "@/components/SvgSprite";
 
 export default function RootLayout({
   children,
@@ -281,6 +282,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body bg-background text-foreground antialiased scroll-smooth" suppressHydrationWarning>
+        <SvgSprite />
         <UtmTracker />
         <noscript>
           <iframe

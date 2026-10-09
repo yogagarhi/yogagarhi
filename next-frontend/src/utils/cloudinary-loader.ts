@@ -1,5 +1,3 @@
-import { cloudinaryMap } from './cloudinary-map';
-
 const CLOUD_NAME = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || 'dngsqdwbb';
 
 interface ImageLoaderProps {
@@ -44,23 +42,12 @@ export default function cloudinaryLoader({ src, width }: ImageLoaderProps): stri
     }
   }
 
-  // 3. Local relative path or filename
+  // 3. Direct Cloudinary path (e.g. yogagarhi/public/...)
   const cleanPath = src.replace(/^\/+/, '');
-  const filename = cleanPath.split('/').pop() || cleanPath;
-
-  const resource = cloudinaryMap[cleanPath] || cloudinaryMap[filename];
-
-  if (resource) {
-    const ext = resource.format ? `.${resource.format}` : '';
-    const publicIdWithExt = `${resource.public_id}${ext}`;
-    return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/f_auto,q_auto,c_limit,w_${width}/${publicIdWithExt}`;
-  }
-
-  // If path explicitly starts with yogagarhi/ or assets/ on Cloudinary
   if (cleanPath.startsWith('yogagarhi/')) {
     return `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/f_auto,q_auto,c_limit,w_${width}/${cleanPath}`;
   }
 
-  // Local fallback: unmapped files served from /public
+  // 4. Local fallback: unmapped files served from /public
   return src.startsWith('/') ? src : `/${src}`;
 }

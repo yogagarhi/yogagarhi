@@ -453,11 +453,11 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu - Slide Down */}
-        <div
-          className={`lg:hidden absolute top-full left-0 right-0 bg-background border-t border-border/50 shadow-lg transition-all duration-400 overflow-hidden ${isOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'
-            }`}
-        >
+        {/* Mobile Menu - Slide Down (conditionally rendered only when open) */}
+        {isOpen && (
+          <div
+            className="lg:hidden absolute top-full left-0 right-0 bg-background border-t border-border/50 shadow-lg max-h-[80vh] opacity-100 overflow-y-auto"
+          >
           <nav className="container mx-auto px-4 py-6 flex flex-col gap-1">
             {navLinks.map((link) => {
               const isMobileDropdownActive = link.name === 'Courses' ? isCoursesActive :
@@ -568,6 +568,7 @@ export default function Header() {
             </div>
           </nav>
         </div>
+        )}
       </header>
     </div>
   );
