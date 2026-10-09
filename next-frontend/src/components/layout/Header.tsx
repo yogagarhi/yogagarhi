@@ -419,7 +419,7 @@ export default function Header() {
                 className="lg:hidden bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-4 h-9 shadow-sm transition-all whitespace-nowrap"
                 onClick={() => setShowEnrollDialog(true)}
               >
-                Book Now
+                Begin Journey
               </Button>
 
               {/* Desktop CTA Button */}
@@ -429,7 +429,7 @@ export default function Header() {
                 className="hidden lg:flex bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-6 py-2.5 h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap"
                 onClick={() => setShowEnrollDialog(true)}
               >
-                Book Now
+                Begin Journey
               </Button>
 
               {/* Mobile Menu Button */}
@@ -568,7 +568,7 @@ export default function Header() {
                   }, 150);
                 }}
               >
-                Book Now
+                Begin Your Journey
               </Button>
             </div>
           </nav>

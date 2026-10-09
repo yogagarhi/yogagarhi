@@ -20,7 +20,6 @@ const courses = [
   { value: "100hr", label: "100-Hour YTTC" },
   { value: "200hr", label: "200-Hour YTTC" },
   { value: "300hr", label: "300-Hour YTTC" },
-  { value: "foundation", label: "2-Day Foundation Workshop" },
 ];
 
 export default function EnrollmentModal() {
