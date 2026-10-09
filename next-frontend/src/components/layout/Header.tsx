@@ -326,10 +326,7 @@ export default function Header() {
                                         suppressHydrationWarning
                                         aria-haspopup="true"
                                         aria-expanded={openSubDropdown === item.name}
-                                        onClick={(e) => {
-                                          e.stopPropagation();
-                                          setOpenSubDropdown(openSubDropdown === item.name ? null : item.name);
-                                        }}
+                                        onClick={() => setOpenSubDropdown(openSubDropdown === item.name ? null : item.name)}
                                         className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm transition-all duration-200 ${openSubDropdown === item.name
                                           ? 'bg-primary/10 text-primary font-medium'
                                           : 'text-foreground/70 hover:bg-secondary hover:text-primary'
@@ -420,11 +417,7 @@ export default function Header() {
                 variant="default"
                 size="sm"
                 className="lg:hidden bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-4 h-9 shadow-sm transition-all whitespace-nowrap"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  setShowEnrollDialog(true);
-                }}
+                onClick={() => setShowEnrollDialog(true)}
               >
                 Book Now
               </Button>
@@ -434,11 +427,7 @@ export default function Header() {
                 type="button"
                 variant="default"
                 className="hidden lg:flex bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-6 py-2.5 h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  setShowEnrollDialog(true);
-                }}
+                onClick={() => setShowEnrollDialog(true)}
               >
                 Book Now
               </Button>
@@ -447,11 +436,7 @@ export default function Header() {
               <button
                 type="button"
                 className="lg:hidden p-2 rounded-full hover:bg-secondary transition-colors"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  setIsOpen((prev) => !prev);
-                }}
+                onClick={() => setIsOpen((prev) => !prev)}
                 aria-label="Toggle menu"
               >
                 <div className="relative w-6 h-5 flex flex-col justify-between">
@@ -488,11 +473,7 @@ export default function Header() {
                     <>
                       <button
                         type="button"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation();
-                          setMobileOpenDropdown(isThisDropdownOpen ? null : link.name);
-                        }}
+                        onClick={() => setMobileOpenDropdown(isThisDropdownOpen ? null : link.name)}
                         className={`w-full flex items-center justify-between py-3 px-4 rounded-xl text-base font-medium transition-all ${isMobileDropdownActive
                           ? 'bg-primary/10 text-primary'
                           : 'text-foreground/80 hover:bg-secondary'
@@ -511,11 +492,7 @@ export default function Header() {
                                 <>
                                   <button
                                     type="button"
-                                    onClick={(e) => {
-                                      e.preventDefault();
-                                      e.stopPropagation();
-                                      setMobileOpenSubDropdown(mobileOpenSubDropdown === item.name ? null : item.name);
-                                    }}
+                                    onClick={() => setMobileOpenSubDropdown(mobileOpenSubDropdown === item.name ? null : item.name)}
                                     className={`w-full flex items-center justify-between py-2.5 px-4 rounded-lg text-sm transition-all ${mobileOpenSubDropdown === item.name
                                       ? 'text-primary'
                                       : 'text-foreground/60'
@@ -584,9 +561,7 @@ export default function Header() {
               <Button
                 type="button"
                 className="w-full bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg py-6 text-lg shadow-sm transition-all"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
+                onClick={() => {
                   setShowEnrollDialog(true);
                   setTimeout(() => {
                     setIsOpen(false);

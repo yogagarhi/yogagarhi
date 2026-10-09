@@ -183,11 +183,7 @@ YogaGarhi Team`,
             type="button"
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setShowEnrollDialog(true);
-            }}
+            onClick={() => setShowEnrollDialog(true)}
           >
             Start Your Journey
           </Button>
@@ -195,11 +191,7 @@ YogaGarhi Team`,
             type="button"
             size="lg"
             className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setShowManualDialog(true);
-            }}
+            onClick={() => setShowManualDialog(true)}
           >
             <BookOpen className="w-4 h-4 mr-2" />
             Get Free Manual
@@ -208,11 +200,7 @@ YogaGarhi Team`,
             type="button"
             size="lg"
             className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              scrollToQuiz();
-            }}
+            onClick={() => scrollToQuiz()}
           >
             <Sparkles className="w-4 h-4 mr-2" />
             Reveal Your Unique Yogic Energy
@@ -221,11 +209,7 @@ YogaGarhi Team`,
             type="button"
             size="lg"
             className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setShowWebinarDialog(true);
-            }}
+            onClick={() => setShowWebinarDialog(true)}
           >
             <Video className="w-4 h-4 mr-2" />
             Free Webinar
@@ -234,11 +218,7 @@ YogaGarhi Team`,
             type="button"
             size="lg"
             className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setShowBookingDialog(true);
-            }}
+            onClick={() => setShowBookingDialog(true)}
           >
             <Phone className="w-4 h-4 mr-2" />
             Book a Call
@@ -247,11 +227,7 @@ YogaGarhi Team`,
             type="button"
             size="lg"
             className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setShowPreYTTCDialog(true);
-            }}
+            onClick={() => setShowPreYTTCDialog(true)}
           >
             <GraduationCap className="w-4 h-4 mr-2" />
             Get "Before You Join" Detail

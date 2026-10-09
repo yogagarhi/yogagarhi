@@ -19,21 +19,13 @@ export default function HeroCTAButtons() {
             type="button"
             variant="hero"
             size="xl"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setShowQuickEnquiry(true);
-            }}
+            onClick={() => setShowQuickEnquiry(true)}
           >
             Quick Enquiry
           </Button>
           <button
             type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              setShowYogicEnergy(true);
-            }}
+            onClick={() => setShowYogicEnergy(true)}
             className="relative h-14 px-10 text-base font-bold rounded-lg overflow-hidden group/yogic
               bg-gradient-to-r from-amber-400 via-orange-500 to-rose-500
               text-white shadow-xl shadow-orange-500/40
@@ -57,11 +49,7 @@ export default function HeroCTAButtons() {
           variant="default"
           size="lg"
           className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank");
-          }}
+          onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
         >
           Claim $450 Bali Explorer Gift
         </Button>

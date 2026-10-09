@@ -13,11 +13,7 @@ export default function CoursesHelpButton() {
       type="button"
       variant="link"
       className="text-primary p-0 h-auto font-medium group"
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        setShowContactDialog(true);
-      }}
+      onClick={() => setShowContactDialog(true)}
     >
       <span className="flex items-center gap-2">
         Get Personalized Guidance
