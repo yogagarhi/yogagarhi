@@ -1,7 +1,5 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Award, Heart, Users } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
@@ -16,12 +14,13 @@ const achievements = [
   { icon: Award, label: "Taught Yoga Therapy to Indian Army" },
 ];
 
-export default function FounderSection() {
-  const pathname = usePathname();
-  const isCoursePage = pathname?.includes("-hour-yoga-teacher-training-in-bali");
-  const researchLink = isCoursePage
-    ? "#sachinji-research"
-    : "/200-hour-yoga-teacher-training-in-bali#sachinji-research";
+interface FounderSectionProps {
+  researchLink?: string;
+}
+
+export default function FounderSection({
+  researchLink = "/200-hour-yoga-teacher-training-in-bali#sachinji-research"
+}: FounderSectionProps) {
 
   return (
     <section className="py-12 md:py-24 bg-background relative overflow-hidden">

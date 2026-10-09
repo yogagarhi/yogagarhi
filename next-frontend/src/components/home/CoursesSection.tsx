@@ -1,10 +1,9 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Award } from "lucide-react";
-import { useContactDialog } from "@/components/ContactDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import CoursesHelpButton from "./CoursesHelpButton";
 
 const course100hr = getCloudinaryImage("course-100hr-new.png");
 const course200hr = getCloudinaryImage("course-200hr-new.png");
@@ -54,8 +53,6 @@ const courses = [
 ];
 
 export default function CoursesSection() {
-  const { setShowContactDialog } = useContactDialog();
-
   return (
     <section className="py-24 bg-background relative overflow-hidden">
       {/* Decorative Elements */}
@@ -180,16 +177,7 @@ export default function CoursesSection() {
         {/* Bottom CTA */}
         <div className="text-center mt-14">
           <p className="text-muted-foreground mb-3">Need help choosing the right program?</p>
-          <Button
-            variant="link"
-            className="text-primary p-0 h-auto font-medium group"
-            onClick={() => setShowContactDialog(true)}
-          >
-            <span className="flex items-center gap-2">
-              Get Personalized Guidance
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </span>
-          </Button>
+          <CoursesHelpButton />
         </div>
       </div>
     </section>

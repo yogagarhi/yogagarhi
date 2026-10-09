@@ -1814,7 +1814,7 @@ export default function Course200Hour() {
           </div>
         </section>
 
-        <FounderSection />
+        <FounderSection researchLink="#sachinji-research" />
 
         <StudentStoriesSection />
 

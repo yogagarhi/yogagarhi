@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Leaf, Sun, Mountain, Flower2, CheckCircle2, Award, MessageCircle, Mail } from "lucide-react";
