@@ -21,11 +21,17 @@ export function useQuickEnquiry() {
 
 export function QuickEnquiryProvider({ children }: { children: ReactNode }) {
   const [showQuickEnquiry, setShowQuickEnquiry] = useState(false);
+  const [hasOpened, setHasOpened] = useState(false);
+
+  const handleSetShowQuickEnquiry = (show: boolean) => {
+    if (show) setHasOpened(true);
+    setShowQuickEnquiry(show);
+  };
 
   return (
-    <QuickEnquiryContext.Provider value={{ showQuickEnquiry, setShowQuickEnquiry }}>
+    <QuickEnquiryContext.Provider value={{ showQuickEnquiry, setShowQuickEnquiry: handleSetShowQuickEnquiry }}>
       {children}
-      {showQuickEnquiry && <QuickEnquiryModal />}
+      {hasOpened && <QuickEnquiryModal />}
     </QuickEnquiryContext.Provider>
   );
 }

@@ -16,14 +16,24 @@ export default function HeroCTAButtons() {
       <div className="flex flex-col items-center justify-center pt-6 space-y-4">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
           <Button
+            type="button"
             variant="hero"
             size="xl"
-            onClick={() => setShowQuickEnquiry(true)}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setShowQuickEnquiry(true);
+            }}
           >
             Quick Enquiry
           </Button>
           <button
-            onClick={() => setShowYogicEnergy(true)}
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setShowYogicEnergy(true);
+            }}
             className="relative h-14 px-10 text-base font-bold rounded-lg overflow-hidden group/yogic
               bg-gradient-to-r from-amber-400 via-orange-500 to-rose-500
               text-white shadow-xl shadow-orange-500/40
@@ -43,10 +53,15 @@ export default function HeroCTAButtons() {
       {/* Secondary WhatsApp Gift CTA */}
       <div className="flex justify-center pt-4">
         <Button
+          type="button"
           variant="default"
           size="lg"
           className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-          onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank");
+          }}
         >
           Claim $450 Bali Explorer Gift
         </Button>

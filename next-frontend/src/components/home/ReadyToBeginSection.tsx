@@ -180,48 +180,78 @@ YogaGarhi Team`,
 
         <div className="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
           <Button
+            type="button"
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
-            onClick={() => setShowEnrollDialog(true)}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setShowEnrollDialog(true);
+            }}
           >
             Start Your Journey
           </Button>
           <Button
+            type="button"
             size="lg"
             className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
-            onClick={() => setShowManualDialog(true)}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setShowManualDialog(true);
+            }}
           >
             <BookOpen className="w-4 h-4 mr-2" />
             Get Free Manual
           </Button>
           <Button
+            type="button"
             size="lg"
             className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
-            onClick={scrollToQuiz}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              scrollToQuiz();
+            }}
           >
             <Sparkles className="w-4 h-4 mr-2" />
             Reveal Your Unique Yogic Energy
           </Button>
           <Button
+            type="button"
             size="lg"
             className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
-            onClick={() => setShowWebinarDialog(true)}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setShowWebinarDialog(true);
+            }}
           >
             <Video className="w-4 h-4 mr-2" />
             Free Webinar
           </Button>
           <Button
+            type="button"
             size="lg"
             className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
-            onClick={() => setShowBookingDialog(true)}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setShowBookingDialog(true);
+            }}
           >
             <Phone className="w-4 h-4 mr-2" />
             Book a Call
           </Button>
           <Button
+            type="button"
             size="lg"
             className="bg-primary-foreground/10 backdrop-blur-sm border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20"
-            onClick={() => setShowPreYTTCDialog(true)}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setShowPreYTTCDialog(true);
+            }}
           >
             <GraduationCap className="w-4 h-4 mr-2" />
             Get "Before You Join" Detail

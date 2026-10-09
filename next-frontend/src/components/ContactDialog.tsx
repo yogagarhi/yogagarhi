@@ -21,11 +21,17 @@ export function useContactDialog() {
 
 export function ContactDialogProvider({ children }: { children: ReactNode }) {
   const [showContactDialog, setShowContactDialog] = useState(false);
+  const [hasOpened, setHasOpened] = useState(false);
+
+  const handleSetShowContactDialog = (show: boolean) => {
+    if (show) setHasOpened(true);
+    setShowContactDialog(show);
+  };
 
   return (
-    <ContactDialogContext.Provider value={{ showContactDialog, setShowContactDialog }}>
+    <ContactDialogContext.Provider value={{ showContactDialog, setShowContactDialog: handleSetShowContactDialog }}>
       {children}
-      {showContactDialog && <ContactModal />}
+      {hasOpened && <ContactModal />}
     </ContactDialogContext.Provider>
   );
 }

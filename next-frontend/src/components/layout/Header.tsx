@@ -416,28 +416,42 @@ export default function Header() {
             <div className="flex items-center gap-2 sm:gap-3">
               {/* Mobile CTA Button */}
               <Button
+                type="button"
                 variant="default"
                 size="sm"
                 className="lg:hidden bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-4 h-9 shadow-sm transition-all whitespace-nowrap"
-                onClick={() => setShowEnrollDialog(true)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setShowEnrollDialog(true);
+                }}
               >
                 Book Now
               </Button>
 
               {/* Desktop CTA Button */}
               <Button
+                type="button"
                 variant="default"
                 className="hidden lg:flex bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-6 py-2.5 h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap"
-                onClick={() => setShowEnrollDialog(true)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setShowEnrollDialog(true);
+                }}
               >
                 Book Now
               </Button>
 
-
               {/* Mobile Menu Button */}
               <button
+                type="button"
                 className="lg:hidden p-2 rounded-full hover:bg-secondary transition-colors"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setIsOpen((prev) => !prev);
+                }}
                 aria-label="Toggle menu"
               >
                 <div className="relative w-6 h-5 flex flex-col justify-between">
@@ -453,11 +467,12 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu - Slide Down (conditionally rendered only when open) */}
-        {isOpen && (
-          <div
-            className="lg:hidden absolute top-full left-0 right-0 bg-background border-t border-border/50 shadow-lg max-h-[80vh] opacity-100 overflow-y-auto"
-          >
+        {/* Mobile Menu - Slide Down (CSS transition prevents ghost click on DOM unmount) */}
+        <div
+          className={`lg:hidden absolute top-full left-0 right-0 bg-background border-t border-border/50 shadow-lg transition-all duration-300 overflow-hidden ${
+            isOpen ? 'max-h-[80vh] opacity-100 pointer-events-auto overflow-y-auto' : 'max-h-0 opacity-0 pointer-events-none'
+          }`}
+        >
           <nav className="container mx-auto px-4 py-6 flex flex-col gap-1">
             {navLinks.map((link) => {
               const isMobileDropdownActive = link.name === 'Courses' ? isCoursesActive :
@@ -472,7 +487,12 @@ export default function Header() {
                   {link.dropdown ? (
                     <>
                       <button
-                        onClick={() => setMobileOpenDropdown(isThisDropdownOpen ? null : link.name)}
+                        type="button"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          setMobileOpenDropdown(isThisDropdownOpen ? null : link.name);
+                        }}
                         className={`w-full flex items-center justify-between py-3 px-4 rounded-xl text-base font-medium transition-all ${isMobileDropdownActive
                           ? 'bg-primary/10 text-primary'
                           : 'text-foreground/80 hover:bg-secondary'
@@ -490,7 +510,12 @@ export default function Header() {
                               {item.subItems ? (
                                 <>
                                   <button
-                                    onClick={() => setMobileOpenSubDropdown(mobileOpenSubDropdown === item.name ? null : item.name)}
+                                    type="button"
+                                    onClick={(e) => {
+                                      e.preventDefault();
+                                      e.stopPropagation();
+                                      setMobileOpenSubDropdown(mobileOpenSubDropdown === item.name ? null : item.name);
+                                    }}
                                     className={`w-full flex items-center justify-between py-2.5 px-4 rounded-lg text-sm transition-all ${mobileOpenSubDropdown === item.name
                                       ? 'text-primary'
                                       : 'text-foreground/60'
@@ -557,10 +582,15 @@ export default function Header() {
             {/* Mobile Footer CTA */}
             <div className="mt-6 px-4 pb-8">
               <Button
+                type="button"
                 className="w-full bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg py-6 text-lg shadow-sm transition-all"
-                onClick={() => {
-                  setIsOpen(false);
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
                   setShowEnrollDialog(true);
+                  setTimeout(() => {
+                    setIsOpen(false);
+                  }, 150);
                 }}
               >
                 Book Now
@@ -568,7 +598,6 @@ export default function Header() {
             </div>
           </nav>
         </div>
-        )}
       </header>
     </div>
   );

@@ -22,15 +22,22 @@ export function useEnrollment() {
 
 export function EnrollmentProvider({ children }: { children: ReactNode }) {
   const [showEnrollDialog, setShowEnrollDialog] = useState(false);
+  const [hasOpened, setHasOpened] = useState(false);
+
+  const handleSetShowEnrollDialog = (show: boolean) => {
+    if (show) setHasOpened(true);
+    setShowEnrollDialog(show);
+  };
 
   const navigateToEnrollment = () => {
+    setHasOpened(true);
     setShowEnrollDialog(true);
   };
 
   return (
-    <EnrollmentContext.Provider value={{ showEnrollDialog, setShowEnrollDialog, navigateToEnrollment }}>
+    <EnrollmentContext.Provider value={{ showEnrollDialog, setShowEnrollDialog: handleSetShowEnrollDialog, navigateToEnrollment }}>
       {children}
-      {showEnrollDialog && <EnrollmentModal />}
+      {hasOpened && <EnrollmentModal />}
     </EnrollmentContext.Provider>
   );
 }

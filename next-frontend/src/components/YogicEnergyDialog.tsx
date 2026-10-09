@@ -21,11 +21,17 @@ export function useYogicEnergy() {
 
 export function YogicEnergyProvider({ children }: { children: ReactNode }) {
     const [showYogicEnergy, setShowYogicEnergy] = useState(false);
+    const [hasOpened, setHasOpened] = useState(false);
+
+    const handleSetShowYogicEnergy = (show: boolean) => {
+        if (show) setHasOpened(true);
+        setShowYogicEnergy(show);
+    };
 
     return (
-        <YogicEnergyContext.Provider value={{ showYogicEnergy, setShowYogicEnergy }}>
+        <YogicEnergyContext.Provider value={{ showYogicEnergy, setShowYogicEnergy: handleSetShowYogicEnergy }}>
             {children}
-            {showYogicEnergy && <YogicEnergyModal />}
+            {hasOpened && <YogicEnergyModal />}
         </YogicEnergyContext.Provider>
     );
 }

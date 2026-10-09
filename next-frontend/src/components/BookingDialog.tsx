@@ -24,22 +24,34 @@ export function BookingProvider({ children }: { children: ReactNode }) {
   const [showBookingDialog, setShowBookingDialog] = useState(false);
   const [showThankYou, setShowThankYou] = useState(false);
   const [bookingSource, setBookingSource] = useState("Direct/Unknown");
+  const [hasOpened, setHasOpened] = useState(false);
 
   const openBooking = (source: string = "Direct/Unknown") => {
     setBookingSource(source);
+    setHasOpened(true);
     setShowBookingDialog(true);
   };
 
+  const handleSetShowBookingDialog = (show: boolean) => {
+    if (show) setHasOpened(true);
+    setShowBookingDialog(show);
+  };
+
+  const handleSetShowThankYou = (show: boolean) => {
+    if (show) setHasOpened(true);
+    setShowThankYou(show);
+  };
+
   return (
-    <BookingContext.Provider value={{ showBookingDialog, setShowBookingDialog, openBooking }}>
+    <BookingContext.Provider value={{ showBookingDialog, setShowBookingDialog: handleSetShowBookingDialog, openBooking }}>
       {children}
-      {(showBookingDialog || showThankYou) && (
+      {hasOpened && (
         <BookingModal
           source={bookingSource}
           showBookingDialog={showBookingDialog}
-          setShowBookingDialog={setShowBookingDialog}
+          setShowBookingDialog={handleSetShowBookingDialog}
           showThankYou={showThankYou}
-          setShowThankYou={setShowThankYou}
+          setShowThankYou={handleSetShowThankYou}
         />
       )}
     </BookingContext.Provider>
