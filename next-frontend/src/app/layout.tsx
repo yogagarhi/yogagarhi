@@ -1,6 +1,5 @@
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
 import type { Metadata } from "next";
 import MainLayout from "@/components/MainLayout";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
@@ -292,13 +291,34 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <Script id="google-tag-manager" strategy="lazyOnload">
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T9PKFR8P');`}
-        </Script>
+        <script
+          id="delayed-gtm"
+          dangerouslySetInnerHTML={{
+            __html: `(function(){
+  var gtmLoaded = false;
+  function loadGTM(){
+    if (gtmLoaded) return;
+    gtmLoaded = true;
+    var events = ['scroll','click','touchstart','keydown','mousemove','wheel'];
+    events.forEach(function(e){
+      window.removeEventListener(e, loadGTM, { passive: true });
+    });
+    clearTimeout(timerId);
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T9PKFR8P');
+  }
+  var timerId = setTimeout(loadGTM, 5000);
+  var events = ['scroll','click','touchstart','keydown','mousemove','wheel'];
+  events.forEach(function(e){
+    window.addEventListener(e, loadGTM, { once: true, passive: true });
+  });
+})();`
+          }}
+        />
         <Providers>
           <MainLayout>
             {children}
