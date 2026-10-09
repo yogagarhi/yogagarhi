@@ -12,7 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import SacredGeometryBackground from "@/components/3d/SacredGeometryBackground";
+import SacredGeometryLazy from "@/components/3d/SacredGeometryLazy";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 
@@ -158,12 +158,8 @@ export default function PreYTTCPrep() {
                             {/* Left: Interactive Card */}
                             <div className="relative group">
                                 <div className="relative bg-gradient-to-br from-amber-50/90 via-orange-50/80 to-yellow-50/70 dark:from-amber-950/40 dark:via-orange-950/30 dark:to-yellow-950/20 rounded-[2.5rem] p-8 md:p-12 border border-amber-200/50 dark:border-amber-800/30 overflow-hidden shadow-2xl transition-all duration-500 hover:shadow-[0_20px_60px_-15px_rgba(245,158,11,0.3)]">
-                                    {/* 3D Sacred Geometry */}
-                                    <div className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity duration-700">
-                                        <Suspense fallback={<div className="w-full h-full" />}>
-                                            <SacredGeometryBackground />
-                                        </Suspense>
-                                    </div>
+                                    {/* 3D Sacred Geometry with SVG Fallback */}
+                                    <SacredGeometryLazy />
 
                                     <div className="relative z-10">
                                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white text-xs md:text-sm font-bold mb-8 shadow-lg">

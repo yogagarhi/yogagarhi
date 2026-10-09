@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
-import SacredGeometryBackground from "@/components/3d/SacredGeometryBackground";
+import SacredGeometryLazy from "@/components/3d/SacredGeometryLazy";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 
 const preYttcOnline = getCloudinaryImage("pre-yttc-online.png");
@@ -193,12 +193,8 @@ const YTTCSupportSection = () => {
                 <div className="relative">
                   {/* Main Card */}
                   <div className="relative bg-gradient-to-br from-amber-50/90 via-orange-50/80 to-yellow-50/70 dark:from-amber-950/40 dark:via-orange-950/30 dark:to-yellow-950/20 rounded-3xl p-8 border border-amber-200/50 dark:border-amber-800/30 overflow-hidden min-h-[500px] flex flex-col">
-                    {/* 3D Background */}
-                    <div className="absolute inset-0">
-                      <Suspense fallback={<div className="w-full h-full bg-primary/5" />}>
-                        <SacredGeometryBackground />
-                      </Suspense>
-                    </div>
+                    {/* 3D Background with SVG Fallback */}
+                    <SacredGeometryLazy />
 
                     {/* Content with z-index for readability */}
                     <div className="relative z-10">

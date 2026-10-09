@@ -207,13 +207,14 @@ function Scene() {
 }
 
 // Exported Component
-const SacredGeometryBackground = () => {
+const SacredGeometryBackground = ({ isActive = true }: { isActive?: boolean }) => {
   return (
     <div className="absolute inset-0 -z-10">
       <Canvas
         camera={{ position: [0, 0, 3], fov: 50 }}
         style={{ background: 'transparent' }}
-        gl={{ alpha: true, antialias: true }}
+        gl={{ alpha: true, antialias: true, powerPreference: 'low-power' }}
+        frameloop={isActive ? 'always' : 'never'}
       >
         <Scene />
       </Canvas>
