@@ -6,16 +6,25 @@ import { getCloudinaryUrl } from "@/utils/cloudinary";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal"],
   variable: "--font-heading",
   display: "swap",
   preload: true,
 });
 
-const plusJakarta = Plus_Jakarta_Sans({
+const cormorantItalic = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
+  style: ["italic"],
+  variable: "--font-heading-italic",
+  display: "swap",
+  preload: false,
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal"],
   variable: "--font-body",
   display: "swap",
@@ -111,7 +120,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${cormorant.variable} ${plusJakarta.variable} ${cormorantItalic.variable}`} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#0f766e" />
