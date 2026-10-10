@@ -89,7 +89,7 @@ const HomeGallerySection = () => {
                 <button
                   key={index}
                   type="button"
-                  aria-label={`View gallery image ${index + 1}: ${image.title}`}
+                  aria-label={`View gallery image ${index + 1}: ${image.label}`}
                   onClick={() => setActiveIndex(index)}
                   className={`
                     relative aspect-square rounded-lg md:rounded-xl overflow-hidden transition-all duration-300
