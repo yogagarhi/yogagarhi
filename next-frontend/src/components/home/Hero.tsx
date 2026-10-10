@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32 pb-20">
       {/* Background Image with Priority Preload for LCP */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-[#1c130d]">
         <Image
           src={getCloudinaryUrl('/hero-yoga-group.jpg')}
           alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
@@ -44,9 +44,6 @@ export default function Hero() {
                 {/* Star symbol as the dot - closer and animated */}
                 <span
                   className="absolute -top-[0.02em] left-1/2 -translate-x-1/2 text-[0.4em] animate-pulse"
-                  style={{
-                    animation: 'pulse 2s ease-in-out infinite, spin 8s linear infinite'
-                  }}
                 >
                   ✦
                 </span>
@@ -98,7 +95,7 @@ export default function Hero() {
           <div className="flex flex-col items-center gap-4 pt-2">
 
             {/* Special Offer Box */}
-            <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
+            <div className="bg-amber-100/95 dark:bg-amber-900/60 border border-amber-200/60 dark:border-amber-800/60 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle text-center max-w-lg mx-auto">
               <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
                 Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
               </p>
