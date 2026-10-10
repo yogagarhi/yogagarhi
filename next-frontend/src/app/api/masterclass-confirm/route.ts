@@ -43,35 +43,68 @@ export async function POST(request: Request) {
     }
 
     // -------------------------------------------------------------
-    // 1. Server-Side Razorpay Verification
+    // 1. Zoom Environment Variables Check (Strict: No in-code fallback)
+    // -------------------------------------------------------------
+    const zoomMeetingId = process.env.ZOOM_MEETING_ID;
+    const zoomPasscode = process.env.ZOOM_PASSCODE;
+    const zoomLink = process.env.ZOOM_LINK;
+
+    if (!zoomMeetingId || !zoomPasscode || !zoomLink) {
+      console.error(
+        'API Route Error: Zoom environment variables missing on server (ZOOM_MEETING_ID, ZOOM_PASSCODE, or ZOOM_LINK).'
+      );
+      return NextResponse.json(
+        {
+          success: false,
+          message: 'Server configuration error: Zoom credentials not configured in environment variables.',
+        },
+        { status: 500 }
+      );
+    }
+
+    // -------------------------------------------------------------
+    // 2. Server-Side Razorpay Payment Verification
     // -------------------------------------------------------------
     const razorpayKeySecret = process.env.RAZORPAY_KEY_SECRET;
     const razorpayKeyId =
-      process.env.RAZORPAY_KEY_ID ||
-      process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID ||
-      'rzp_live_TiX95mBO2U2F1q';
+      process.env.RAZORPAY_KEY_ID || process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID;
+
+    if (!razorpayKeySecret) {
+      console.error('API Route Error: RAZORPAY_KEY_SECRET missing in server environment variables.');
+      return NextResponse.json(
+        { success: false, message: 'Server configuration error: Razorpay secret not configured.' },
+        { status: 500 }
+      );
+    }
 
     let isVerified = false;
 
-    if (razorpayKeySecret && razorpay_order_id && razorpay_signature) {
-      // Option A: Verify signature with order_id
-      const generatedSignature = crypto
+    if (razorpay_signature) {
+      // Option A: Verify signature via HMAC SHA256
+      const payloadToSign = razorpay_order_id
+        ? `${razorpay_order_id}|${actualPaymentId}`
+        : actualPaymentId;
+
+      const expectedSignature = crypto
         .createHmac('sha256', razorpayKeySecret)
-        .update(`${razorpay_order_id}|${actualPaymentId}`)
+        .update(payloadToSign)
         .digest('hex');
 
-      if (generatedSignature === razorpay_signature) {
+      if (expectedSignature === razorpay_signature) {
         isVerified = true;
         console.log('API Route: Razorpay signature verified successfully.');
       } else {
-        console.error('API Route Error: Invalid Razorpay signature.');
+        console.error('API Route Error: Invalid Razorpay signature mismatch.', {
+          received: razorpay_signature,
+          expected: expectedSignature,
+        });
         return NextResponse.json(
-          { success: false, message: 'Invalid payment signature.' },
+          { success: false, message: 'Invalid payment signature. Verification failed.' },
           { status: 400 }
         );
       }
-    } else if (razorpayKeySecret && razorpayKeyId && actualPaymentId && !actualPaymentId.startsWith('test_')) {
-      // Option B: Fetch payment details from Razorpay API
+    } else if (razorpayKeyId && actualPaymentId) {
+      // Option B: Fetch payment status and amount from Razorpay REST API
       try {
         const auth = Buffer.from(`${razorpayKeyId}:${razorpayKeySecret}`).toString('base64');
         const rzpRes = await fetch(`https://api.razorpay.com/v1/payments/${actualPaymentId}`, {
@@ -82,7 +115,7 @@ export async function POST(request: Request) {
 
         if (rzpRes.ok) {
           const paymentData = await rzpRes.json();
-          console.log('API Route: Fetched Razorpay payment data:', {
+          console.log('API Route: Razorpay payment API verification result:', {
             id: paymentData.id,
             status: paymentData.status,
             amount: paymentData.amount,
@@ -96,48 +129,49 @@ export async function POST(request: Request) {
           } else {
             console.error('API Route Error: Payment amount or status mismatch:', paymentData);
             return NextResponse.json(
-              { success: false, message: 'Payment verification failed (amount/status mismatch).' },
+              { success: false, message: 'Payment verification failed: invalid amount or uncaptured status.' },
               { status: 400 }
             );
           }
         } else {
-          console.warn('API Route: Could not verify with Razorpay API, status:', rzpRes.status);
-          // If Razorpay API call fails or key permissions differ, proceed with caution if payment ID format is valid
-          isVerified = actualPaymentId.startsWith('pay_');
+          const errBody = await rzpRes.text().catch(() => '');
+          console.error('API Route Error: Razorpay API returned error status:', rzpRes.status, errBody);
+          return NextResponse.json(
+            { success: false, message: 'Payment verification failed with payment gateway.' },
+            { status: 400 }
+          );
         }
-      } catch (rzpErr) {
-        console.error('API Route Error during Razorpay fetch:', rzpErr);
-        isVerified = actualPaymentId.startsWith('pay_');
+      } catch (rzpErr: any) {
+        console.error('API Route Error during Razorpay API verification:', rzpErr);
+        return NextResponse.json(
+          { success: false, message: 'Payment gateway connection error during verification.' },
+          { status: 502 }
+        );
       }
     } else {
-      // Fallback for test mode or local testing
-      console.log('API Route: RAZORPAY_KEY_SECRET not set or test mode, proceeding with payment ID:', actualPaymentId);
-      isVerified = Boolean(actualPaymentId);
+      return NextResponse.json(
+        { success: false, message: 'Payment verification details missing.' },
+        { status: 400 }
+      );
     }
 
     if (!isVerified) {
       return NextResponse.json(
-        { success: false, message: 'Payment could not be verified.' },
+        { success: false, message: 'Payment verification rejected.' },
         { status: 400 }
       );
     }
 
     // -------------------------------------------------------------
-    // 2. Zoom & Contact Config from Environment Variables
+    // 3. Contact & Date Config
     // -------------------------------------------------------------
-    const zoomMeetingId = process.env.ZOOM_MEETING_ID || '890 4962 6217';
-    const zoomPasscode = process.env.ZOOM_PASSCODE || '260670';
-    const zoomLink =
-      process.env.ZOOM_LINK ||
-      'https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1';
     const whatsappPhone = process.env.WHATSAPP_SUPPORT_PHONE || '917895350563';
     const whatsappGroupLink = `https://api.whatsapp.com/send?phone=${whatsappPhone}&text=Hi+YogaGarhi,+I+have+paid+Rs.99+for+the+Applied+Anatomy+Masterclass!`;
-
     const actualWorkshopDate =
       workshop_date || 'Upcoming Sunday at 11:00 AM – 1:00 PM IST (2-Hour Live Workshop)';
 
     // -------------------------------------------------------------
-    // 3. Nodemailer SMTP Setup
+    // 4. Nodemailer SMTP Setup
     // -------------------------------------------------------------
     if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
       console.error('API Route Error: SMTP credentials missing.');
@@ -161,7 +195,7 @@ export async function POST(request: Request) {
     });
 
     // -------------------------------------------------------------
-    // 4. Admin Email Notification
+    // 5. Admin Email Notification
     // -------------------------------------------------------------
     const adminMailOptions = {
       from: `"YogaGarhi Website" <${process.env.SMTP_USER}>`,
@@ -211,7 +245,7 @@ export async function POST(request: Request) {
     };
 
     // -------------------------------------------------------------
-    // 5. User Confirmation & Instant Zoom Access Pass
+    // 6. User Confirmation & Instant Zoom Access Pass
     // -------------------------------------------------------------
     const userMailOptions = {
       from: `"YogaGarhi" <${process.env.SMTP_USER}>`,
