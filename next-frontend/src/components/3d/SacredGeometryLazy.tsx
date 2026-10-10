@@ -1,12 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import dynamic from "next/dynamic";
-
-const SacredGeometry3D = dynamic(
-  () => import("./SacredGeometryBackground"),
-  { ssr: false }
-);
 
 function SvgSacredPattern() {
   return (
@@ -50,7 +44,7 @@ function SvgSacredPattern() {
 
 export default function SacredGeometryLazy() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [shouldLoad3D, setShouldLoad3D] = useState(false);
+  const [Component3D, setComponent3D] = useState<React.ComponentType<{ isActive?: boolean }> | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [is3DReady, setIs3DReady] = useState(false);
 
@@ -60,23 +54,29 @@ export default function SacredGeometryLazy() {
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     if (isMobile || prefersReducedMotion) {
-      return; // Keep SVG fallback permanently on mobile/reduced-motion
+      return; // Keep SVG fallback permanently on mobile/reduced-motion (never download Three.js)
     }
 
-    // 2. Set up IntersectionObserver with 300px rootMargin
+    // 2. Set up IntersectionObserver on desktop only
     const currentElem = containerRef.current;
     if (!currentElem) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setShouldLoad3D(true);
           setIsVisible(true);
+          // Lazy load Three.js component strictly on desktop when in view
+          import("./SacredGeometryBackground").then((mod) => {
+            setComponent3D(() => mod.default);
+            setIs3DReady(true);
+          }).catch((err) => {
+            console.warn("SacredGeometry 3D load error:", err);
+          });
         } else {
           setIsVisible(false); // Pause render loop when scrolled out
         }
       },
-      { rootMargin: "300px" }
+      { rootMargin: "200px" }
     );
 
     observer.observe(currentElem);
@@ -86,27 +86,19 @@ export default function SacredGeometryLazy() {
     };
   }, []);
 
-  useEffect(() => {
-    if (shouldLoad3D) {
-      // Small timeout to allow canvas initialization before smooth fade-in
-      const t = setTimeout(() => setIs3DReady(true), 150);
-      return () => clearTimeout(t);
-    }
-  }, [shouldLoad3D]);
-
   return (
     <div ref={containerRef} className="absolute inset-0 -z-10 overflow-hidden">
       {/* 1. Universal SVG Fallback: rendered on SSR & client, zero layout shift */}
       <SvgSacredPattern />
 
-      {/* 2. 3D WebGL Canvas: Loaded strictly on desktop when near viewport, pauses frameloop when out of view */}
-      {shouldLoad3D && (
+      {/* 2. 3D WebGL Canvas: Loaded strictly on desktop when scrolled near viewport */}
+      {Component3D && (
         <div
           className={`absolute inset-0 transition-opacity duration-700 ${
             is3DReady ? "opacity-100" : "opacity-0"
           }`}
         >
-          <SacredGeometry3D isActive={isVisible} />
+          <Component3D isActive={isVisible} />
         </div>
       )}
     </div>
