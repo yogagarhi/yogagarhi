@@ -263,52 +263,28 @@ export default function YogaAnatomyMasterclass() {
         setPaymentId(pId);
         setBookingStep("success");
 
-        // Email Payload for YogaGarhi and Student
-        const emailPayload = {
+        // Payload for Masterclass Confirmation API
+        const confirmPayload = {
           name: formData.name,
           email: formData.email,
           phone: formData.whatsapp,
+          whatsapp: formData.whatsapp,
           payment_id: pId,
-          amount: "₹99.00",
+          razorpay_payment_id: response.razorpay_payment_id,
+          razorpay_order_id: response.razorpay_order_id,
+          razorpay_signature: response.razorpay_signature,
           workshop_date: `${sundayInfo.fullDate} at 11:00 AM – 1:00 PM IST (2-Hour Live Workshop)`,
-          zoom_meeting_id: "890 4962 6217",
-          zoom_passcode: "260670",
-          zoom_link: "https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1",
-          whatsapp_group: "https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹99%20for%20the%20Applied%20Anatomy%20Masterclass!",
-          _subject: `Confirmed: Masterclass Access Pass - ${formData.name} (${pId})`,
-          _autoresponder: `Namaste ${formData.name},
-
-Thank you for registering for the "Applied Functional Yoga Anatomy & Biomechanics Masterclass" (2-Hour Live Intensive) led by Acharya Sachin Kotiyal!
-
-We have successfully received your ₹99 payment.
-
-=== YOUR LIVE ZOOM ACCESS PASS ===
-• Date & Time: ${sundayInfo.fullDate} | 11:00 AM – 1:00 PM IST (2 Hours Live)
-• Mode: Live on Zoom
-• Meeting ID: 890 4962 6217
-• Passcode: 260670
-• Direct Zoom Link: https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1
-• Payment Receipt ID: ${pId}
-
-=== VIP WHATSAPP GROUP ===
-Join our VIP WhatsApp Teachers Group for live class reminders and bonus materials:
-https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I%20have%20paid%20₹99%20for%20the%20Applied%20Anatomy%20Masterclass!
-
-Please join the Zoom room 5 minutes before 11:00 AM IST with your yoga mat and notebook ready.
-
-With warm regards,
-Acharya Sachin Kotiyal & The YogaGarhi Team`,
         };
 
-        // Official Server API Route Dispatch (Sends direct authenticated email from yogagarhi@gmail.com)
+        // Dispatch to dedicated Masterclass confirmation route
         try {
-          await fetch("/api/send-email", {
+          await fetch("/api/masterclass-confirm", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(emailPayload),
+            body: JSON.stringify(confirmPayload),
           });
         } catch (err) {
-          console.error("Email notification error:", err);
+          console.error("Masterclass email dispatch error:", err);
         }
       },
     };

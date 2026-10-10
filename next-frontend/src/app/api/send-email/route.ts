@@ -1,10 +1,22 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
+// Helper to escape HTML characters to prevent XSS / injection in HTML emails
+function escapeHtml(value: unknown): string {
+  if (value === null || value === undefined) return '';
+  const str = typeof value === 'object' ? JSON.stringify(value) : String(value);
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 export async function POST(request: Request) {
   try {
     const data = await request.json();
-    console.log('API Route: Received form data:', data);
+    console.log('API Route (/api/send-email): Received form data:', data);
     const { email, _subject, _autoresponder, ...remainingData } = data;
 
     // Check for SMTP configuration
@@ -16,7 +28,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // Create a transporter using official authenticated Gmail SMTP
+    // Create a transporter using SMTP
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || 'smtp.gmail.com',
       port: parseInt(process.env.SMTP_PORT || '465'),
@@ -26,184 +38,150 @@ export async function POST(request: Request) {
         pass: process.env.SMTP_PASS,
       },
       tls: {
-        rejectUnauthorized: false
-      }
+        rejectUnauthorized: false,
+      },
     });
 
-    // Format data into a nice table for the admin
+    // Format remaining form fields into a sanitized, styled HTML table for the admin
     const tableRows = Object.entries(remainingData)
       .map(([key, value]) => {
-        const label = key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-        const displayValue = typeof value === 'object' ? JSON.stringify(value) : String(value);
+        const label = escapeHtml(key.replace(/_/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase()));
+        const displayValue = escapeHtml(value);
         return `
           <tr>
-            <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; width: 30%; color: #666;">${label}</td>
-            <td style="padding: 10px; border-bottom: 1px solid #eee; color: #333;">${displayValue}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; width: 32%; color: #555;">${label}</td>
+            <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222;">${displayValue}</td>
           </tr>
         `;
       })
       .join('');
 
-    // 1. Send Email to Admin (yogagarhi@gmail.com)
+    const sanitizedSubject = escapeHtml(_subject || 'New Website Submission');
+
+    // 1. Send Notification Email to Admin (yogagarhi@gmail.com)
     const adminMailOptions = {
       from: `"YogaGarhi Website" <${process.env.SMTP_USER}>`,
       to: 'yogagarhi@gmail.com',
       replyTo: email || 'yogagarhi@gmail.com',
-      subject: `New Masterclass Registration: ${remainingData.name || 'Student'} (${remainingData.payment_id || '₹99 Paid'})`,
+      subject: _subject || 'New Website Submission',
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #16533f; border-radius: 12px; overflow: hidden;">
-          <div style="background-color: #0b3b2c; color: #f5b942; padding: 20px; text-align: center;">
-            <h2 style="margin: 0; font-size: 22px;">🎉 New Masterclass Registration</h2>
-            <p style="margin: 5px 0 0; color: #d4ebe2; font-size: 14px;">Applied Yoga Anatomy & Biomechanics Masterclass</p>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden; background-color: #ffffff;">
+          <div style="background-color: #0b3b2c; color: white; padding: 20px; text-align: center;">
+            <h2 style="margin: 0; font-size: 20px; color: #f5b942;">YogaGarhi &bull; Website Submission</h2>
+            <p style="margin: 6px 0 0; color: #d4ebe2; font-size: 14px;">${sanitizedSubject}</p>
           </div>
-          <div style="padding: 24px; background: #ffffff;">
-            <p style="margin-bottom: 20px; color: #333; font-size: 15px;">A student has completed their ₹99 registration payment:</p>
+          <div style="padding: 24px;">
+            <p style="margin-top: 0; margin-bottom: 18px; color: #333; font-size: 15px;">You have received a new inquiry/submission from the website:</p>
             <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
               <tr>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; width: 35%; color: #0b3b2c;">Student Name</td>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222; font-weight: bold;">${remainingData.name || 'N/A'}</td>
+                <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; width: 32%; color: #555;">User Email</td>
+                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222;">${escapeHtml(email || 'N/A')}</td>
               </tr>
-              <tr>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; color: #0b3b2c;">Student Email</td>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222;"><a href="mailto:${email}">${email || 'N/A'}</a></td>
-              </tr>
-              <tr>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; color: #0b3b2c;">WhatsApp Phone</td>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222;">${remainingData.phone || 'N/A'}</td>
-              </tr>
-              <tr>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; color: #0b3b2c;">Payment ID</td>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #16a34a; font-family: monospace; font-weight: bold;">${remainingData.payment_id || 'N/A'}</td>
-              </tr>
-              <tr>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; color: #0b3b2c;">Amount Paid</td>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222; font-weight: bold;">₹99.00</td>
-              </tr>
-              <tr>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; color: #0b3b2c;">Workshop Date</td>
-                <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222;">${remainingData.workshop_date || 'Upcoming Sunday at 11:00 AM – 1:00 PM IST'}</td>
-              </tr>
+              ${tableRows}
             </table>
             <div style="margin-top: 30px; padding-top: 15px; border-top: 1px solid #eee; text-align: center; color: #888; font-size: 12px;">
-              YogaGarhi Ashram & Yoga School • Automated Booking Notification
+              Generated by YogaGarhi Website System
             </div>
           </div>
         </div>
       `,
     };
 
-    // 2. Send "Thank You - Payment Received" Auto-responder to User (Student)
-    const userMailOptions = email ? {
-      from: `"YogaGarhi" <${process.env.SMTP_USER}>`,
-      to: email,
-      replyTo: 'yogagarhi@gmail.com',
-      subject: 'Confirmation & Live Zoom Pass: Applied Yoga Anatomy Masterclass',
-      text: _autoresponder || `Namaste,
+    // 2. Send Auto-responder to User (Student / Inquirer)
+    const userMailOptions = email
+      ? {
+          from: `"YogaGarhi" <${process.env.SMTP_USER}>`,
+          to: email,
+          replyTo: 'yogagarhi@gmail.com',
+          subject: _subject ? `Confirmation: ${_subject}` : 'We Have Received Your Request - YogaGarhi',
+          text:
+            _autoresponder ||
+            `Namaste,
 
-Thank you for registering for the Applied Functional Yoga Anatomy & Biomechanics Masterclass!
+Thank you for reaching out to YogaGarhi.
 
-We have successfully received your ₹99 registration payment.
+Your message has been received. A member of our team will connect with you personally within 24 hours.
 
-=== YOUR LIVE ZOOM CLASS PASS ===
-• Mode: Live on Zoom
-• Meeting ID: 890 4962 6217
-• Passcode: 260670
-• Direct Zoom Link: https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1
-• Time: Sunday at 11:00 AM – 1:00 PM IST (2-Hour Live Workshop)
+At YogaGarhi, yoga is approached as a living tradition rooted in discipline, awareness, and direct experience. Whether your inquiry is about learning, teaching, deepening your practice, or simply understanding the path ahead, we believe clarity unfolds best through conscious conversation, not urgency.
 
-=== VIP WHATSAPP GROUP ===
-Join our VIP WhatsApp group for live reminders:
-https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.99+for+the+Applied+Anatomy+Masterclass!
+Until we connect, we invite you to pause for a moment, soften the breath, and allow this step to settle naturally.
 
-With warm regards,
-Acharya Sachin Kotiyal & The YogaGarhi Team`,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #16533f; border-radius: 14px; overflow: hidden; background-color: #ffffff; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-          <!-- Header Banner -->
-          <div style="background-color: #0b3b2c; color: white; padding: 28px 20px; text-align: center;">
-            <p style="margin: 0 0 6px; color: #f5b942; font-size: 13px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase;">YOGAGARHI ASHRAM &bull; RISHIKESH</p>
-            <h1 style="margin: 0; font-size: 24px; color: #ffffff; font-weight: bold;">Thank You! Your Payment is Received 🎉</h1>
-            <p style="margin: 8px 0 0; color: #d4ebe2; font-size: 14px;">Your seat is successfully confirmed for the Masterclass</p>
+We look forward to connecting with you.
+
+With respect and sincerity,
+YogaGarhi Team
+Authentic Yoga • Rooted in Tradition • Lived with Awareness`,
+          html: _autoresponder
+            ? `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #16533f; border-radius: 12px; overflow: hidden; background-color: #ffffff; box-shadow: 0 4px 15px rgba(0,0,0,0.06);">
+          <div style="background-color: #0b3b2c; color: white; padding: 24px 20px; text-align: center;">
+            <p style="margin: 0 0 4px; color: #f5b942; font-size: 12px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase;">YOGAGARHI ASHRAM &bull; RISHIKESH & BALI</p>
+            <h1 style="margin: 0; font-size: 22px; color: #ffffff;">Namaste</h1>
           </div>
-
-          <!-- Content Body -->
-          <div style="padding: 28px 24px; color: #2d3748; line-height: 1.6;">
-            <p style="font-size: 16px; margin-top: 0;">Namaste <strong>${remainingData.name || 'Friend'}</strong>,</p>
-            
-            <p style="font-size: 14px; color: #4a5568;">
-              We have successfully received your registration payment for the <strong>Applied Functional Yoga Anatomy & Biomechanics Masterclass</strong> (2-Hour Live Intensive) led by <strong>Acharya Sachin Kotiyal</strong>.
-            </p>
-
-            <!-- Zoom Access Pass Box -->
-            <div style="background-color: #f0fdf4; border: 2px dashed #22c55e; border-radius: 12px; padding: 20px; margin: 24px 0;">
-              <div style="text-align: center; margin-bottom: 15px;">
-                <span style="background-color: #166534; color: #ffffff; font-size: 11px; font-weight: bold; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px;">Official Live Class Pass</span>
-                <h3 style="margin: 8px 0 0; color: #14532d; font-size: 18px;">Live Zoom Meeting Credentials</h3>
-              </div>
-              <table style="width: 100%; font-size: 14px; border-collapse: collapse;">
-                <tr>
-                  <td style="padding: 6px 0; color: #4b5563; width: 40%;"><strong>Meeting ID:</strong></td>
-                  <td style="padding: 6px 0; color: #111827; font-weight: bold; font-family: monospace; font-size: 16px;">890 4962 6217</td>
-                </tr>
-                <tr>
-                  <td style="padding: 6px 0; color: #4b5563;"><strong>Passcode:</strong></td>
-                  <td style="padding: 6px 0; color: #111827; font-weight: bold; font-family: monospace; font-size: 16px;">260670</td>
-                </tr>
-                <tr>
-                  <td style="padding: 6px 0; color: #4b5563;"><strong>Session Time:</strong></td>
-                  <td style="padding: 6px 0; color: #111827; font-weight: bold;">Sunday at 11:00 AM – 1:00 PM IST (2 Hours)</td>
-                </tr>
-                <tr>
-                  <td style="padding: 6px 0; color: #4b5563;"><strong>Payment Status:</strong></td>
-                  <td style="padding: 6px 0; color: #16a34a; font-weight: bold;">₹99.00 Paid & Verified ✓</td>
-                </tr>
-              </table>
-
-              <div style="text-align: center; margin-top: 15px;">
-                <a href="https://us06web.zoom.us/j/89049626217?pwd=582v4nKvrQ54BOTHleb1H1c7f0sX35.1" style="background-color: #2563eb; color: #ffffff; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; font-size: 13px; display: inline-block;">
-                  🔗 Click Here to Join Zoom Meeting
-                </a>
-              </div>
-            </div>
-
-            <!-- WhatsApp CTA Button -->
-            <div style="text-align: center; margin: 28px 0;">
-              <a href="https://api.whatsapp.com/send?phone=917895350563&text=Hi+YogaGarhi,+I+have+paid+Rs.99+for+the+Applied+Anatomy+Masterclass!" style="background-color: #25D366; color: #ffffff; text-decoration: none; padding: 14px 28px; border-radius: 10px; font-weight: bold; font-size: 15px; display: inline-block; box-shadow: 0 4px 10px rgba(37,211,102,0.3);">
-                📲 Join VIP WhatsApp Teachers Group
-              </a>
-              <p style="font-size: 12px; color: #6b7280; margin-top: 8px;">Click above to receive class reminders and anatomy study resources on WhatsApp.</p>
-            </div>
-
-            <!-- Preparation Note -->
-            <div style="background-color: #fffbeb; border-left: 4px solid #f59e0b; padding: 12px 16px; border-radius: 4px; font-size: 13px; color: #92400e; margin-bottom: 24px;">
-              <strong>Important:</strong> Please join the Zoom room 5 minutes before 11:00 AM IST with your yoga mat and notebook ready.
-            </div>
-
-            <!-- Signoff -->
-            <div style="border-top: 1px solid #e5e7eb; padding-top: 20px; font-size: 14px; color: #4b5563;">
+          <div style="padding: 28px 24px; color: #2d3748; line-height: 1.7; font-size: 15px;">
+            <div style="white-space: pre-wrap; color: #333;">${escapeHtml(_autoresponder)}</div>
+            <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid #eee; font-size: 14px; color: #4b5563;">
               <p style="margin: 0;">With warm regards & blessings,</p>
-              <p style="margin: 4px 0 0; font-weight: bold; color: #0b3b2c; font-size: 16px;">Acharya Sachin Kotiyal & The YogaGarhi Team</p>
-              <p style="margin: 2px 0 0; font-size: 12px; color: #6b7280;">YogaGarhi Ashram &bull; Authentic Yoga & Biomechanics</p>
+              <p style="margin: 4px 0 0; font-weight: bold; color: #0b3b2c; font-size: 15px;">YogaGarhi Team</p>
+              <p style="margin: 2px 0 0; font-size: 12px; color: #6b7280;">Authentic Yoga &bull; Rooted in Tradition &bull; Lived with Awareness</p>
             </div>
           </div>
         </div>
+      `
+            : `
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+          </head>
+          <body style="margin: 0; padding: 0; background-color: #f9f9f9; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+            <div style="padding: 40px 10px;">
+              <div style="max-width: 600px; margin: 0 auto; padding: 36px 28px; color: #333; line-height: 1.8; border: 1px solid #16533f; border-radius: 12px; background-color: #ffffff; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                <div style="text-align: center; margin-bottom: 25px;">
+                  <p style="margin: 0 0 6px; color: #b45309; font-size: 12px; font-weight: bold; letter-spacing: 1.5px; text-transform: uppercase;">YOGAGARHI ASHRAM</p>
+                  <h1 style="color: #0b3b2c; font-weight: 300; margin: 0; font-size: 26px; letter-spacing: 2px;">Namaste</h1>
+                  <div style="width: 40px; height: 2px; background-color: #f5b942; margin: 12px auto;"></div>
+                </div>
+                
+                <p style="font-size: 15px; margin-bottom: 18px;">Thank you for reaching out to <strong>YogaGarhi</strong>.</p>
+                
+                <p style="font-size: 15px; margin-bottom: 18px;">Your message has been received. A member of our team will connect with you personally within 24 hours.</p>
+                
+                <p style="font-size: 14px; color: #555; margin-bottom: 18px; font-style: italic; background-color: #f7faf8; padding: 12px 16px; border-left: 3px solid #0b3b2c; border-radius: 4px;">"At YogaGarhi, yoga is approached as a living tradition rooted in discipline, awareness, and direct experience. Whether your inquiry is about learning, teaching, deepening your practice, or simply understanding the path ahead, we believe clarity unfolds best through conscious conversation, not urgency."</p>
+                
+                <p style="font-size: 15px; color: #555; margin-bottom: 18px;">Until we connect, we invite you to pause for a moment, soften the breath, and allow this step to settle naturally.</p>
+                
+                <p style="font-size: 15px; margin-bottom: 24px;">We look forward to connecting with you.</p>
+                
+                <div style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+                  <p style="margin-bottom: 4px; color: #666; font-size: 14px;">With respect and sincerity,</p>
+                  <p style="margin-top: 0; font-weight: bold; font-size: 16px; color: #0b3b2c; margin-bottom: 4px;">YogaGarhi Team</p>
+                  <div style="font-size: 12px; color: #888; margin-top: 6px;">
+                    Authentic Yoga &bull; Rooted in Tradition &bull; Lived with Awareness
+                  </div>
+                </div>
+              </div>
+            </div>
+          </body>
+        </html>
       `,
-    } : null;
+        }
+      : null;
 
-    // Send both emails
-    console.log('API Route: Attempting to send admin email...');
+    // Send emails
+    console.log('API Route (/api/send-email): Attempting to send admin email...');
     await transporter.sendMail(adminMailOptions);
-    console.log('API Route: Admin email sent successfully.');
+    console.log('API Route (/api/send-email): Admin email sent successfully.');
 
     if (userMailOptions) {
-      console.log('API Route: Attempting to send user Thank You email to:', email);
+      console.log('API Route (/api/send-email): Attempting to send user auto-responder to:', email);
       await transporter.sendMail(userMailOptions);
-      console.log('API Route: User Thank You email sent successfully.');
+      console.log('API Route (/api/send-email): User auto-responder sent successfully.');
     }
 
     return NextResponse.json({ success: true, message: 'Emails sent successfully' });
   } catch (error: any) {
-    console.error('Nodemailer Error:', error);
+    console.error('API Route (/api/send-email) Error:', error);
     return NextResponse.json(
       { success: false, message: 'Failed to send emails', error: error.message },
       { status: 500 }
