@@ -105,7 +105,7 @@ export default function CoursesSection() {
                       src={course.image}
                       alt={`${course.hours} Hour Yoga Teacher Training`}
                       fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
                       className={`object-cover transition-transform duration-700 group-hover:scale-105 ${course.hours === "200" ? "object-top" : ""
                         }`}
                     />

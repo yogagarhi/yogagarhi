@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   images: {
     loader: "custom",
     loaderFile: "./src/utils/cloudinary-loader.ts",
-    deviceSizes: [640, 828, 1080, 1280, 1920],
+    deviceSizes: [390, 480, 640, 750, 828, 1080, 1280, 1920],
     imageSizes: [64, 128, 256, 384],
     remotePatterns: [
       {
