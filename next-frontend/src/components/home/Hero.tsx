@@ -13,6 +13,7 @@ export default function Hero() {
           fill
           priority
           fetchPriority="high"
+          decoding="sync"
           sizes="100vw"
           className="object-cover object-center"
         />
