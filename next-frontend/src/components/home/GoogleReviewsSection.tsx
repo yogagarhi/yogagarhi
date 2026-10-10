@@ -22,7 +22,7 @@ function ReviewCard({ review }: { review: GoogleReview }) {
 
         {/* Name & Location */}
         <div className="flex-1 min-w-0">
-          <h4 className="font-medium text-foreground text-sm leading-tight">{review.name}</h4>
+          <h3 className="font-medium text-foreground text-sm leading-tight">{review.name}</h3>
           <p className="text-xs text-muted-foreground">{review.location}</p>
         </div>
 
@@ -159,17 +159,21 @@ export default function GoogleReviewsSection() {
             </Button>
 
             {/* Dots */}
-            <div className="flex gap-1.5">
+            <div className="flex gap-1.5 items-center">
               {googleReviews.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => scrollToIndex(index)}
                   aria-label={`Go to review ${index + 1}`}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex
-                    ? "bg-primary w-5"
-                    : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                    }`}
-                />
+                  className="relative p-2.5 flex items-center justify-center -m-1 focus:outline-none"
+                >
+                  <span
+                    className={`block h-2 rounded-full transition-all duration-300 ${index === currentIndex
+                      ? "bg-primary w-5"
+                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50 w-2"
+                      }`}
+                  />
+                </button>
               ))}
             </div>
 

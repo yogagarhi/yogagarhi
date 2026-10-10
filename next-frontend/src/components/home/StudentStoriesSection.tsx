@@ -50,7 +50,9 @@ const VideoPlayer = ({
 
           {/* Play Button */}
           <button
+            type="button"
             onClick={onPlay}
+            aria-label={`Play testimonial video by ${video.name}`}
             className="absolute inset-0 flex items-center justify-center group/play"
           >
             <div className="w-20 h-20 rounded-full bg-primary-foreground/95 flex items-center justify-center shadow-xl transform group-hover/play:scale-110 transition-transform duration-300">
@@ -163,6 +165,8 @@ const StudentStoriesSection = () => {
               {videoTestimonials.map((video, index) => (
                 <button
                   key={index}
+                  type="button"
+                  aria-label={`Select testimonial video by ${video.name}`}
                   onClick={() => handleVideoChange(index)}
                   className={`w-full flex items-center gap-4 p-3 rounded-xl transition-all duration-300 text-left group ${activeVideo === index
                     ? 'bg-primary/10 border-l-4 border-primary'

@@ -11,6 +11,7 @@ export default function StickyContactButton() {
         <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col items-end pointer-events-none">
             <button
                 onClick={() => setShowQuickEnquiry(true)}
+                aria-label="Open Quick Enquiry Contact Form"
                 className={cn(
                     "pointer-events-auto",
                     "bg-primary text-primary-foreground",
