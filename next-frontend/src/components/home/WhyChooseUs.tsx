@@ -49,7 +49,11 @@ export default function WhyChooseUs() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="py-24 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 7600px' }}
+    >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
         <div className="absolute top-20 left-10 w-64 h-64 rounded-full border border-primary" />

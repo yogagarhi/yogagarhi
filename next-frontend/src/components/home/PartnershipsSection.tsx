@@ -108,7 +108,10 @@ export default function PartnershipsSection() {
     const items = [...partnerships, ...partnerships, ...partnerships];
 
     return (
-        <section className="py-12 bg-background border-t border-b border-border/50 overflow-hidden">
+        <section
+            className="py-12 bg-background border-t border-b border-border/50 overflow-hidden"
+            style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 200px' }}
+        >
             <div className="container mx-auto px-4 mb-4">
                 <div className="text-center">
                     <h2 className="font-heading text-lg md:text-xl font-bold text-muted-foreground uppercase tracking-widest">

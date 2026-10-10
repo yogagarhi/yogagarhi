@@ -89,7 +89,10 @@ export default function GoogleReviewsSection() {
 
 
   return (
-    <section className="py-16 md:py-20 bg-gradient-to-b from-background via-secondary/5 to-background relative overflow-hidden">
+    <section
+      className="py-16 md:py-20 bg-gradient-to-b from-background via-secondary/5 to-background relative overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 730px' }}
+    >
       {/* Decorative Elements */}
       <div className="absolute top-10 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-10 right-0 w-72 h-72 bg-accent/5 rounded-full blur-3xl" />

@@ -31,7 +31,10 @@ const HomeGallerySection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="py-16 md:py-24 bg-secondary/20 overflow-hidden">
+    <section
+      className="py-16 md:py-24 bg-secondary/20 overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 960px' }}
+    >
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-10 md:mb-14">

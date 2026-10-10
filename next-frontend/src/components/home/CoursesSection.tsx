@@ -54,7 +54,10 @@ const courses = [
 
 export default function CoursesSection() {
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section
+      className="py-24 bg-background relative overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 2150px' }}
+    >
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />

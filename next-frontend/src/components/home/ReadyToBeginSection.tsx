@@ -150,7 +150,10 @@ YogaGarhi Team`,
   };
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section
+      className="py-20 relative overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 760px' }}
+    >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <Image

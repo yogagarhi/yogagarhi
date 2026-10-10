@@ -54,7 +54,10 @@ const WebinarSection = () => {
   };
 
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section
+      className="relative py-20 overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 370px' }}
+    >
       {/* Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image

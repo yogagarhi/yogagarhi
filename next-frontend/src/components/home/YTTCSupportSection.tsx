@@ -100,7 +100,10 @@ const YTTCSupportSection = () => {
   };
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section
+      className="py-24 bg-background relative overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 2220px' }}
+    >
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Gradient Orbs */}

@@ -88,7 +88,10 @@ const StudentStoriesSection = () => {
   const currentVideo = videoTestimonials[activeVideo];
 
   return (
-    <section className="py-20 bg-background overflow-hidden relative">
+    <section
+      className="py-20 bg-background overflow-hidden relative"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 1230px' }}
+    >
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">

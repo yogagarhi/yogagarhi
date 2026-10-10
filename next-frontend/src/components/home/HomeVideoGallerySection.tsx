@@ -31,7 +31,10 @@ export default function HomeVideoGallerySection() {
     const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
 
     return (
-        <section className="py-20 bg-background overflow-hidden relative">
+        <section
+            className="py-20 bg-background overflow-hidden relative"
+            style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 3010px' }}
+        >
             {/* Background Decor */}
             <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
