@@ -148,7 +148,7 @@ export default function CoursesSection() {
                           <span className="text-sm text-muted-foreground line-through">{course.originalPrice}</span>
                         </div>
                       </div>
-                      <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1.5 rounded-full">
+                      <span className="text-xs font-semibold text-amber-900 dark:text-amber-200 bg-amber-100 dark:bg-amber-900/40 px-3 py-1.5 rounded-full">
                         Save {course.savings}
                       </span>
                     </div>

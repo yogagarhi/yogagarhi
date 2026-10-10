@@ -37,10 +37,10 @@ const HomeGallerySection = () => {
         <div className="text-center mb-10 md:mb-14">
           <div className="inline-flex items-center gap-2 mb-4">
             <span className="w-8 h-px bg-primary/40" />
-            <Camera className="w-4 h-4 text-primary/60" />
+            <Camera className="w-4 h-4 text-primary" />
             <span className="w-8 h-px bg-primary/40" />
           </div>
-          <span className="text-primary/60 font-medium text-sm tracking-widest uppercase mb-3 block">
+          <span className="text-amber-800 dark:text-amber-300 font-bold text-sm tracking-widest uppercase mb-3 block">
             Moments & Memories
           </span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">

@@ -121,7 +121,7 @@ const YTTCSupportSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-900 dark:text-amber-200 text-sm font-bold mb-4">
             <Sparkles className="w-4 h-4" />
             Complete Journey Support
           </div>
@@ -239,9 +239,9 @@ const YTTCSupportSection = () => {
 
                 {/* Right: Message */}
                 <div className="lg:pl-8">
-                  <div className="inline-flex items-center gap-2 text-primary mb-4">
-                    <CheckCircle2 className="w-5 h-5" />
-                    <span className="text-sm font-medium uppercase tracking-wider">Complimentary & Optional</span>
+                  <div className="inline-flex items-center gap-2 text-amber-900 dark:text-amber-200 mb-4">
+                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                    <span className="text-sm font-semibold uppercase tracking-wider">Complimentary & Optional</span>
                   </div>
 
                   <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
@@ -256,7 +256,7 @@ const YTTCSupportSection = () => {
                     <p>
                       So when training begins, <span className="text-foreground font-medium">you don't panic</span>.
                       You arrive <span className="text-foreground font-medium">grounded</span>.
-                      You don't jump into transformation — you are <span className="text-primary font-medium">gently prepared for it</span>.
+                      You don't jump into transformation — you are <span className="text-amber-900 dark:text-amber-300 font-bold">gently prepared for it</span>.
                     </p>
                   </div>
 
@@ -442,7 +442,7 @@ const YTTCSupportSection = () => {
 
           {/* Hint Text */}
           <p className="text-center mt-8 text-sm text-muted-foreground italic">
-            👆 Click on <span className="font-semibold text-primary cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('pre')}>Before You Join</span> or <span className="font-semibold text-primary cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('post')}>Life After Graduation</span> to see what we offer
+            👆 Click on <span className="font-bold text-amber-900 dark:text-amber-300 cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('pre')}>Before You Join</span> or <span className="font-bold text-amber-900 dark:text-amber-300 cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('post')}>Life After Graduation</span> to see what we offer
           </p>
         </div>
       </div>

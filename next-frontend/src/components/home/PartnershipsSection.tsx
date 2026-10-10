@@ -122,12 +122,12 @@ export default function PartnershipsSection() {
                     {items.map((item, index) => (
                         <div
                             key={index}
-                            className="flex items-center gap-4 group/item opacity-70 hover:opacity-100 transition-opacity duration-300"
+                            className="flex items-center gap-4 group/item opacity-90 hover:opacity-100 transition-opacity duration-300"
                         >
                             <div className={`w-12 h-12 flex items-center justify-center transition-transform duration-500 group-hover/item:scale-110`}>
                                 {item.icon}
                             </div>
-                            <span className="text-sm md:text-base font-bold text-foreground/70 group-hover/item:text-primary transition-colors">
+                            <span className="text-sm md:text-base font-bold text-foreground/90 group-hover/item:text-primary transition-colors">
                                 {item.name}
                             </span>
                         </div>

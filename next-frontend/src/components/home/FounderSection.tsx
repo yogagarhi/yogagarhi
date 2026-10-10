@@ -32,7 +32,7 @@ export default function FounderSection({
         <div className="max-w-6xl mx-auto">
           {/* Mobile Header */}
           <div className="lg:hidden mb-8">
-            <span className="inline-flex items-center gap-2 text-primary/80 text-sm font-medium tracking-widest uppercase mb-4">
+            <span className="inline-flex items-center gap-2 text-amber-800 dark:text-amber-300 text-sm font-bold tracking-widest uppercase mb-4">
               <Heart className="w-4 h-4" fill="currentColor" />
               Meet The Teacher Behind YogaGarhi
             </span>
@@ -81,7 +81,7 @@ export default function FounderSection({
             {/* Content Column */}
             <div className="order-2 lg:order-2">
               <div className="hidden lg:block">
-                <span className="inline-flex items-center gap-2 text-primary/80 text-sm font-medium tracking-widest uppercase mb-4">
+                <span className="inline-flex items-center gap-2 text-amber-800 dark:text-amber-300 text-sm font-bold tracking-widest uppercase mb-4">
                   <Heart className="w-4 h-4" fill="currentColor" />
                   Meet The Teacher Behind YogaGarhi
                 </span>

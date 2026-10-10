@@ -97,7 +97,7 @@ export default function FAQSection() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                   <HelpCircle className="w-6 h-6 text-primary" />
                 </div>
-                <span className="text-primary font-medium tracking-wide uppercase text-sm">Got Questions?</span>
+                <span className="text-amber-800 dark:text-amber-300 font-bold tracking-wide uppercase text-sm">Got Questions?</span>
               </div>
 
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
