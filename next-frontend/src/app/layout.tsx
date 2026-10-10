@@ -6,18 +6,20 @@ import { getCloudinaryUrl } from "@/utils/cloudinary";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  weight: ["400", "600", "700"],
+  style: ["normal"],
   variable: "--font-heading",
   display: "swap",
+  preload: true,
 });
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal"],
   variable: "--font-body",
   display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
