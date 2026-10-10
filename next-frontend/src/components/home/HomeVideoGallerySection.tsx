@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import { Play } from "lucide-react";
+import Image from "next/image";
 
 const videos = [
     {
@@ -24,6 +28,8 @@ const videos = [
 ];
 
 export default function HomeVideoGallerySection() {
+    const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+
     return (
         <section className="py-20 bg-background overflow-hidden relative">
             {/* Background Decor */}
@@ -44,32 +50,60 @@ export default function HomeVideoGallerySection() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                    {videos.map((video) => (
-                        <div
-                            key={video.id}
-                            className="group relative rounded-2xl overflow-hidden shadow-xl aspect-[9/16] bg-black border border-white/10"
-                        >
-                            <iframe
-                                className="absolute inset-0 w-full h-full object-cover"
-                                src={`https://www.youtube.com/embed/${video.id}?rel=0&controls=1&mute=0&loop=1&playlist=${video.id}`}
-                                title={video.title}
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                                loading="lazy"
-                            ></iframe>
+                    {videos.map((video) => {
+                        const isPlaying = activeVideoId === video.id;
 
-                            {/* Overlay for inactive state */}
-                            <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none opacity-100 transition-opacity">
-                                <div className="flex items-center gap-2 text-white/90 mb-1">
-                                    <Play className="w-3 h-3 fill-current" />
-                                    <span className="text-xs font-medium uppercase tracking-wider">Shorts</span>
-                                </div>
-                                <h3 className="text-white font-heading font-medium text-lg leading-tight mb-1">
-                                    {video.title}
-                                </h3>
+                        return (
+                            <div
+                                key={video.id}
+                                className="group relative rounded-2xl overflow-hidden shadow-xl aspect-[9/16] bg-black border border-white/10"
+                            >
+                                {isPlaying ? (
+                                    <iframe
+                                        className="absolute inset-0 w-full h-full object-cover"
+                                        src={`https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0&controls=1&loop=1&playlist=${video.id}`}
+                                        title={video.title}
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    />
+                                ) : (
+                                    <button
+                                        type="button"
+                                        onClick={() => setActiveVideoId(video.id)}
+                                        aria-label={`Play ${video.title}`}
+                                        className="w-full h-full text-left relative block focus:outline-none focus:ring-2 focus:ring-primary"
+                                    >
+                                        <Image
+                                            src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`}
+                                            alt={video.title}
+                                            fill
+                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                                            className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 group-hover:opacity-100"
+                                            loading="lazy"
+                                        />
+
+                                        {/* Play Button Overlay */}
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <div className="w-14 h-14 rounded-full bg-black/60 border border-white/30 text-white flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110 group-hover:bg-primary">
+                                                <Play className="w-6 h-6 fill-white translate-x-0.5" />
+                                            </div>
+                                        </div>
+
+                                        {/* Overlay text at bottom */}
+                                        <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/85 via-black/50 to-transparent pointer-events-none">
+                                            <div className="flex items-center gap-2 text-white/90 mb-1">
+                                                <Play className="w-3 h-3 fill-current" />
+                                                <span className="text-xs font-medium uppercase tracking-wider">Shorts</span>
+                                            </div>
+                                            <h3 className="text-white font-heading font-medium text-lg leading-tight mb-1">
+                                                {video.title}
+                                            </h3>
+                                        </div>
+                                    </button>
+                                )}
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>
