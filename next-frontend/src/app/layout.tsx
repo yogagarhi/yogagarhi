@@ -126,6 +126,25 @@ export default function RootLayout({
         <meta name="theme-color" content="#0f766e" />
         <link rel="preconnect" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+        {/* Preload Hero image for maximum LCP speed on mobile and desktop */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_412,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg"
+          imageSrcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_412,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 412w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_640,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 640w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_750,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 750w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_828,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 828w"
+          imageSizes="100vw"
+          media="(max-width: 768px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg"
+          imageSrcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1080/yogagarhi/public/hero-yoga-group.jpg 1080w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1280/yogagarhi/public/hero-yoga-group.jpg 1280w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg 1920w"
+          imageSizes="100vw"
+          media="(min-width: 769px)"
+          fetchPriority="high"
+        />
         {/* Initialize dataLayer immediately for early conversion events */}
         <script
           id="init-datalayer"
