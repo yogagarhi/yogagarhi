@@ -4,15 +4,30 @@ import HeroCTAButtons from "./HeroCTAButtons";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32 pb-20">
-      {/* Background Image with Priority Preload for LCP & Art Direction */}
-      <div className="absolute inset-0 z-0 bg-[#1c130d]">
+    <section className="relative flex flex-col md:flex-row items-center justify-center overflow-hidden bg-[#1c130d] md:min-h-[90vh] md:items-start pt-20 md:pt-32 pb-16 md:pb-20">
+      {/* Mobile Top Uncropped Hero Photo Container (Visible strictly on mobile < 768px) */}
+      <div className="w-full md:hidden relative bg-black aspect-[1024/684] shadow-md z-10 flex-shrink-0">
         <picture>
           <source
             media="(max-width: 768px)"
-            srcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_412,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 412w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_640,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 640w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_750,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 750w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_828,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 828w"
+            srcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_412/yogagarhi/public/hero-yoga-group.jpg 412w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_640/yogagarhi/public/hero-yoga-group.jpg 640w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg 750w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_828/yogagarhi/public/hero-yoga-group.jpg 828w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1024/yogagarhi/public/hero-yoga-group.jpg 1024w"
             sizes="100vw"
           />
+          <img
+            src="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg"
+            alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
+            fetchPriority="high"
+            decoding="async"
+            width={1024}
+            height={684}
+            className="w-full h-full object-contain object-center block"
+          />
+        </picture>
+      </div>
+
+      {/* Desktop Background Image (Hidden on mobile < 768px, exactly identical on desktop >= 769px) */}
+      <div className="hidden md:block absolute inset-0 z-0 bg-[#1c130d]">
+        <picture>
           <source
             media="(min-width: 769px)"
             srcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1080/yogagarhi/public/hero-yoga-group.jpg 1080w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1280/yogagarhi/public/hero-yoga-group.jpg 1280w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg 1920w"
@@ -30,7 +45,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
+      <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground pt-6 md:pt-0">
         <div className="max-w-4xl mx-auto space-y-8">
           <p className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.3em] uppercase opacity-90">
             Welcome To

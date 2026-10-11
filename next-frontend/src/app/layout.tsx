@@ -130,8 +130,8 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_412,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg"
-          imageSrcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_412,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 412w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_640,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 640w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_750,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 750w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_828,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 828w"
+          href="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg"
+          imageSrcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_412/yogagarhi/public/hero-yoga-group.jpg 412w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_640/yogagarhi/public/hero-yoga-group.jpg 640w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg 750w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_828/yogagarhi/public/hero-yoga-group.jpg 828w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1024/yogagarhi/public/hero-yoga-group.jpg 1024w"
           imageSizes="100vw"
           media="(max-width: 768px)"
           fetchPriority="high"
