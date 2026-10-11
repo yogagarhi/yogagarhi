@@ -5,18 +5,27 @@ import HeroCTAButtons from "./HeroCTAButtons";
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32 pb-20">
-      {/* Background Image with Priority Preload for LCP */}
+      {/* Background Image with Priority Preload for LCP & Art Direction */}
       <div className="absolute inset-0 z-0 bg-[#1c130d]">
-        <Image
-          src={getCloudinaryUrl('/hero-yoga-group.jpg')}
-          alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
-          fill
-          priority
-          fetchPriority="high"
-          decoding="async"
-          sizes="100vw"
-          className="object-cover object-center"
-        />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_412,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 412w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_640,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 640w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_750,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 750w, https://res.cloudinary.com/dngsqdwbb/image/upload/c_fill,ar_412:1054,g_center,w_828,f_auto,q_auto/yogagarhi/public/hero-yoga-group.jpg 828w"
+            sizes="100vw"
+          />
+          <source
+            media="(min-width: 769px)"
+            srcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1080/yogagarhi/public/hero-yoga-group.jpg 1080w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1280/yogagarhi/public/hero-yoga-group.jpg 1280w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg 1920w"
+            sizes="100vw"
+          />
+          <img
+            src="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg"
+            alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          />
+        </picture>
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
