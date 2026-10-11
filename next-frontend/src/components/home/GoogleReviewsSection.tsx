@@ -1,93 +1,8 @@
-"use client";
-import { useCallback, useEffect, useRef, useState } from "react";
-import { Star, ChevronLeft, ChevronRight } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { googleReviews, GoogleReview } from "@/constants/googleReviews";
-
-// Review Card Component
-function ReviewCard({ review }: { review: GoogleReview }) {
-  const [expanded, setExpanded] = useState(false);
-  const isLongText = review.text.length > 150;
-  const displayText = expanded || !isLongText ? review.text : review.text.slice(0, 150) + "...";
-
-  return (
-    <div className="bg-card rounded-xl border border-border p-4 transition-all duration-300 hover:shadow-lg hover:border-primary/20">
-      {/* Header Row */}
-      <div className="flex items-center gap-3 mb-3">
-        {/* Avatar */}
-        <div className="w-9 h-9 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center flex-shrink-0">
-          <span className="text-xs font-bold text-primary-foreground">{review.avatar}</span>
-        </div>
-
-        {/* Name & Location */}
-        <div className="flex-1 min-w-0">
-          <h3 className="font-medium text-foreground text-sm leading-tight">{review.name}</h3>
-          <p className="text-xs text-muted-foreground">{review.location}</p>
-        </div>
-
-        {/* Google Icon */}
-        <svg className="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24">
-          <use href="#icon-google" />
-        </svg>
-      </div>
-
-      {/* Rating & Date */}
-      <div className="flex items-center gap-2 mb-2">
-        <svg className="h-3.5 w-[76px]" viewBox="0 0 116 20">
-          <use href="#icon-5-stars" />
-        </svg>
-        <span className="text-xs text-muted-foreground">{review.date}</span>
-      </div>
-
-      {/* Review Text */}
-      <p className="text-sm text-muted-foreground leading-relaxed">
-        {displayText}
-      </p>
-      {isLongText && (
-        <button
-          onClick={() => setExpanded(!expanded)}
-          className="text-xs text-primary hover:text-primary/80 font-medium mt-2 transition-colors"
-        >
-          {expanded ? "Read less" : "Read more"}
-        </button>
-      )}
-    </div>
-  );
-}
+import { googleReviews } from "@/constants/googleReviews";
+import { GoogleReviewCard } from "./GoogleReviewCard";
+import GoogleReviewsMobileCarousel from "./GoogleReviewsMobileCarousel";
 
 export default function GoogleReviewsSection() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const viewportRef = useRef<HTMLDivElement | null>(null);
-
-  const scrollToIndex = useCallback((index: number) => {
-    const el = viewportRef.current;
-    if (!el) return;
-
-    const width = el.clientWidth;
-    el.scrollTo({ left: index * width, behavior: "smooth" });
-    setCurrentIndex(index);
-  }, []);
-
-  const nextSlide = useCallback(() => {
-    scrollToIndex((currentIndex + 1) % googleReviews.length);
-  }, [currentIndex, scrollToIndex]);
-
-  const prevSlide = useCallback(() => {
-    scrollToIndex((currentIndex - 1 + googleReviews.length) % googleReviews.length);
-  }, [currentIndex, scrollToIndex]);
-
-  useEffect(() => {
-    // Only run on client-side to avoid hydration mismatch
-    const timer = setTimeout(() => {
-      scrollToIndex(0);
-    }, 0);
-
-    return () => clearTimeout(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-
   return (
     <section
       className="py-16 md:py-20 bg-gradient-to-b from-background via-secondary/5 to-background relative overflow-hidden"
@@ -123,74 +38,12 @@ export default function GoogleReviewsSection() {
         {/* Reviews Grid - Desktop */}
         <div className="hidden md:grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
           {googleReviews.map((review, index) => (
-            <ReviewCard key={index} review={review} />
+            <GoogleReviewCard key={index} review={review} />
           ))}
         </div>
 
-        {/* Reviews Carousel - Mobile */}
-        <div className="md:hidden relative">
-          <div
-            ref={viewportRef}
-            className="overflow-x-auto snap-x snap-mandatory scrollbar-hide"
-            style={{ scrollBehavior: 'smooth' }}
-            onScroll={(e) => {
-              const el = e.currentTarget;
-              const width = el.clientWidth || 1;
-              const idx = Math.round(el.scrollLeft / width);
-              if (idx !== currentIndex) setCurrentIndex(idx);
-            }}
-          >
-            <div className="flex">
-              {googleReviews.map((review, index) => (
-                <div key={index} className="w-full flex-shrink-0 px-1 snap-start">
-                  <ReviewCard review={review} />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Mobile Navigation */}
-          <div className="flex items-center justify-center gap-3 mt-4">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={prevSlide}
-              className="rounded-full w-8 h-8"
-              aria-label="Previous review"
-            >
-              <ChevronLeft className="w-4 h-4" />
-            </Button>
-
-            {/* Dots */}
-            <div className="flex gap-1.5 items-center">
-              {googleReviews.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => scrollToIndex(index)}
-                  aria-label={`Go to review ${index + 1}`}
-                  className="relative p-2.5 flex items-center justify-center -m-1 focus:outline-none"
-                >
-                  <span
-                    className={`block h-2 rounded-full transition-all duration-300 ${index === currentIndex
-                      ? "bg-primary w-5"
-                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50 w-2"
-                      }`}
-                  />
-                </button>
-              ))}
-            </div>
-
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={nextSlide}
-              className="rounded-full w-8 h-8"
-              aria-label="Next review"
-            >
-              <ChevronRight className="w-4 h-4" />
-            </Button>
-          </div>
-        </div>
+        {/* Reviews Carousel - Mobile Island */}
+        <GoogleReviewsMobileCarousel />
 
         {/* View All CTA */}
         <div className="text-center mt-8">

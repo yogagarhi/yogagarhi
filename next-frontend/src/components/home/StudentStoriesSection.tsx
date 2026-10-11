@@ -1,12 +1,6 @@
-"use client";
-import { useState } from "react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Play, ArrowRight, Quote } from "lucide-react";
-import Image from "next/image";
-import { useIsMobile } from "@/hooks/use-mobile";
+import StudentStoriesInteractiveIsland, { VideoTestimonial } from "./StudentStoriesInteractiveIsland";
 
-const videoTestimonials = [
+const videoTestimonials: VideoTestimonial[] = [
   { id: "OGmWr_aC4WA", name: "Fernanda", country: "Australia", quote: "Life-changing experience" },
   { id: "2pLe6NHa5WU", name: "Gana", country: "India", quote: "Found my true calling" },
   { id: "30jjvcqHEwA", name: "Joss", country: "France", quote: "Beyond expectations" },
@@ -14,78 +8,77 @@ const videoTestimonials = [
   { id: "ta-5jHBCpKY", name: "Aania", country: "Italy", quote: "Deeply spiritual journey" },
 ];
 
-// Reusable Video Player Component
-const VideoPlayer = ({
-  video,
-  isPlaying,
-  onPlay,
-  videoKey
-}: {
-  video: typeof videoTestimonials[0];
-  isPlaying: boolean;
-  onPlay: () => void;
-  videoKey: string;
-}) => (
-  <div className="relative rounded-2xl overflow-hidden shadow-elevated bg-muted">
-    <div className="aspect-video">
-      {isPlaying ? (
-        <iframe
-          key={videoKey}
-          src={`https://www.youtube.com/embed/${video.id}?rel=0&autoplay=1&enablejsapi=1`}
-          title={`${video.name} testimonial`}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="w-full h-full"
-        />
-      ) : (
-        <div className="relative w-full h-full">
-          <Image
-            src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
-            alt={video.name}
-            fill
-            sizes="(max-width: 1024px) 100vw, 60vw"
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-foreground/20" />
-
-          {/* Play Button */}
-          <button
-            type="button"
-            onClick={onPlay}
-            aria-label={`Play testimonial video by ${video.name}`}
-            className="absolute inset-0 flex items-center justify-center group/play"
-          >
-            <div className="w-20 h-20 rounded-full bg-primary-foreground/95 flex items-center justify-center shadow-xl transform group-hover/play:scale-110 transition-transform duration-300">
-              <Play className="w-8 h-8 text-primary ml-1" />
-            </div>
-          </button>
-
-          {/* Video Info Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-foreground/80 to-transparent">
-            <p className="font-heading text-xl font-bold text-primary-foreground">
-              {video.name}
-            </p>
-            <p className="text-primary-foreground/70 text-sm">
-              {video.country} • Click to play
-            </p>
+export default function StudentStoriesSection() {
+  const desktopExtraContent = (
+    <>
+      {/* Stats Row */}
+      <div className="mt-6 grid grid-cols-3 gap-4">
+        {[
+          { number: "500+", label: "Graduates" },
+          { number: "45+", label: "Countries" },
+          { number: "5.0", label: "Rating" },
+        ].map((stat, index) => (
+          <div key={index} className="text-center p-4 bg-secondary/30 rounded-xl">
+            <p className="font-heading text-2xl font-bold text-primary">{stat.number}</p>
+            <p className="text-sm text-muted-foreground">{stat.label}</p>
           </div>
+        ))}
+      </div>
+
+      {/* Trust Badges */}
+      <div className="mt-6 flex items-center justify-center gap-6 p-4 bg-background rounded-xl border border-border">
+        <div className="flex items-center gap-2">
+          <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24">
+            <use href="#icon-shield-check" />
+          </svg>
+          <span className="text-sm font-medium text-foreground">Yoga Alliance Certified</span>
         </div>
-      )}
-    </div>
-  </div>
-);
+        <div className="w-px h-6 bg-border" />
+        <div className="flex items-center gap-2">
+          <svg className="w-5 h-5 text-amber-500 fill-amber-500" viewBox="0 0 24 24">
+            <use href="#icon-star" />
+          </svg>
+          <span className="text-sm font-medium text-foreground">5.0 Google Rating</span>
+        </div>
+      </div>
 
-const StudentStoriesSection = () => {
-  const [activeVideo, setActiveVideo] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const isMobile = useIsMobile();
+      {/* Contact CTA */}
+      <div className="mt-8 text-center bg-secondary/30 p-4 rounded-xl border border-secondary">
+        <p className="font-medium text-foreground">
+          Still wondering if this journey is right for you?
+        </p>
+        <p className="text-sm text-muted-foreground mt-1">
+          👉 Talk to us on WhatsApp or Email — we’ll answer honestly
+        </p>
+      </div>
 
-  const handleVideoChange = (index: number) => {
-    setActiveVideo(index);
-    setIsPlaying(false);
-  };
+      {/* Contact Buttons */}
+      <div className="mt-6 flex flex-wrap gap-4 justify-center">
+        <a
+          href="https://wa.me/917895350563"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 min-w-[180px] flex items-center justify-center gap-3 px-6 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+        >
+          <svg className="w-6 h-6" viewBox="0 0 24 24">
+            <use href="#icon-whatsapp" />
+          </svg>
+          <span className="font-bold tracking-wide">WhatsApp Us</span>
+        </a>
 
-  const currentVideo = videoTestimonials[activeVideo];
+        <a
+          href="mailto:yogagarhi@gmail.com"
+          className="flex-1 min-w-[180px] flex items-center justify-center gap-3 px-6 py-4 bg-white hover:bg-gray-50 text-red-600 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 group"
+        >
+          <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          <span className="font-bold tracking-wide text-gray-800 group-hover:text-red-600 transition-colors">Email Us</span>
+        </a>
+      </div>
+    </>
+  );
 
   return (
     <section
@@ -118,209 +111,12 @@ const StudentStoriesSection = () => {
           </p>
         </div>
 
-        {/* Featured Video - Mobile Only (conditionally rendered) */}
-        {isMobile && (
-          <div className="lg:hidden mb-10">
-            <div className="relative">
-              {/* Decorative Elements */}
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/5 rounded-full blur-3xl" />
-              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
-
-              {/* Quote Decoration */}
-              <div className="absolute -top-4 -left-4 z-10">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg">
-                  <Quote className="w-5 h-5 text-primary-foreground" />
-                </div>
-              </div>
-
-              <VideoPlayer
-                video={currentVideo}
-                isPlaying={isPlaying}
-                onPlay={() => setIsPlaying(true)}
-                videoKey={`video-${activeVideo}-${isPlaying}`}
-              />
-            </div>
-          </div>
-        )}
-
-        {/* Asymmetric Layout - Desktop */}
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-
-          {/* Left Column - Header & Thumbnails */}
-          <div className="lg:col-span-5 lg:sticky lg:top-24">
-            {/* Header - Desktop */}
-            <div className="hidden lg:block mb-10">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6">
-                <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                <span className="text-primary font-medium text-sm">Real Voices</span>
-              </div>
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Voices From Our YogaGarhi Family
-              </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Every graduate carries a unique story of transformation.
-                Here are some voices from our global yoga family.
-              </p>
-            </div>
-
-            {/* Vertical Thumbnail Stack */}
-            <div className="space-y-3">
-              {videoTestimonials.map((video, index) => (
-                <button
-                  key={index}
-                  type="button"
-                  aria-label={`Select testimonial video by ${video.name}`}
-                  onClick={() => handleVideoChange(index)}
-                  className={`w-full flex items-center gap-4 p-3 rounded-xl transition-all duration-300 text-left group ${activeVideo === index
-                    ? 'bg-primary/10 border-l-4 border-primary'
-                    : 'hover:bg-secondary/50 border-l-4 border-transparent'
-                    }`}
-                >
-                  {/* Thumbnail */}
-                  <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
-                    <Image
-                      src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
-                      alt={video.name}
-                      fill
-                      className="object-cover"
-                    />
-                    {activeVideo !== index && (
-                      <div className="absolute inset-0 bg-foreground/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <Play className="w-4 h-4 text-primary-foreground" />
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Info */}
-                  <div className="flex-1 min-w-0">
-                    <p className={`font-medium transition-colors ${activeVideo === index ? 'text-primary' : 'text-foreground'
-                      }`}>
-                      {video.name}
-                    </p>
-                    <p className="text-sm text-muted-foreground">{video.country}</p>
-                    <p className="text-xs text-muted-foreground/70 italic mt-1 truncate">
-                      "{video.quote}"
-                    </p>
-                  </div>
-
-                  {/* Active Indicator */}
-                  {activeVideo === index && (
-                    <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
-                      <Play className="w-3 h-3 text-primary-foreground ml-0.5" />
-                    </div>
-                  )}
-                </button>
-              ))}
-            </div>
-
-            {/* CTA */}
-            <div className="mt-8">
-              <Button variant="outline" className="group" asChild>
-                <Link href="/testimonials">
-                  View All Stories
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-
-          {/* Right Column - Featured Video (Desktop Only - conditionally rendered) */}
-          {!isMobile && (
-            <div className="hidden lg:block lg:col-span-7">
-              <div className="relative">
-                {/* Decorative Elements */}
-                <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/5 rounded-full blur-3xl" />
-                <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
-
-                {/* Quote Decoration */}
-                <div className="absolute -top-4 -left-4 z-10">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg">
-                    <Quote className="w-5 h-5 text-primary-foreground" />
-                  </div>
-                </div>
-
-                <VideoPlayer
-                  video={currentVideo}
-                  isPlaying={isPlaying}
-                  onPlay={() => setIsPlaying(true)}
-                  videoKey={`video-${activeVideo}-${isPlaying}`}
-                />
-
-
-
-                {/* Stats Row */}
-                <div className="mt-6 grid grid-cols-3 gap-4">
-                  {[
-                    { number: "500+", label: "Graduates" },
-                    { number: "45+", label: "Countries" },
-                    { number: "5.0", label: "Rating" },
-                  ].map((stat, index) => (
-                    <div key={index} className="text-center p-4 bg-secondary/30 rounded-xl">
-                      <p className="font-heading text-2xl font-bold text-primary">{stat.number}</p>
-                      <p className="text-sm text-muted-foreground">{stat.label}</p>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Trust Badges */}
-                <div className="mt-6 flex items-center justify-center gap-6 p-4 bg-background rounded-xl border border-border">
-                  <div className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24">
-                      <use href="#icon-shield-check" />
-                    </svg>
-                    <span className="text-sm font-medium text-foreground">Yoga Alliance Certified</span>
-                  </div>
-                  <div className="w-px h-6 bg-border" />
-                  <div className="flex items-center gap-2">
-                    <svg className="w-5 h-5 text-amber-500 fill-amber-500" viewBox="0 0 24 24">
-                      <use href="#icon-star" />
-                    </svg>
-                    <span className="text-sm font-medium text-foreground">5.0 Google Rating</span>
-                  </div>
-                </div>
-
-                {/* Contact CTA */}
-                <div className="mt-8 text-center bg-secondary/30 p-4 rounded-xl border border-secondary">
-                  <p className="font-medium text-foreground">
-                    Still wondering if this journey is right for you?
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-1">
-                    👉 Talk to us on WhatsApp or Email — we’ll answer honestly
-                  </p>
-                </div>
-
-                {/* Contact Buttons */}
-                <div className="mt-6 flex flex-wrap gap-4 justify-center">
-                  <a
-                    href="https://wa.me/917895350563"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 min-w-[180px] flex items-center justify-center gap-3 px-6 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
-                  >
-                    <svg className="w-6 h-6" viewBox="0 0 24 24">
-                      <use href="#icon-whatsapp" />
-                    </svg>
-                    <span className="font-bold tracking-wide">WhatsApp Us</span>
-                  </a>
-
-                  <a
-                    href="mailto:yogagarhi@gmail.com"
-                    className="flex-1 min-w-[180px] flex items-center justify-center gap-3 px-6 py-4 bg-white hover:bg-gray-50 text-red-600 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 group"
-                  >
-                    <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <rect width="20" height="16" x="2" y="4" rx="2" />
-                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                    <span className="font-bold tracking-wide text-gray-800 group-hover:text-red-600 transition-colors">Email Us</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
+        {/* Interactive Island: Video Player & Thumbnails */}
+        <StudentStoriesInteractiveIsland
+          videos={videoTestimonials}
+          desktopExtraContent={desktopExtraContent}
+        />
       </div>
     </section>
   );
-};
-
-export default StudentStoriesSection;
+}

@@ -57,32 +57,64 @@ export default function SacredGeometryLazy() {
       return; // Keep SVG fallback permanently on mobile/reduced-motion (never download Three.js)
     }
 
-    // 2. Set up IntersectionObserver on desktop only
     const currentElem = containerRef.current;
     if (!currentElem) return;
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          // Lazy load Three.js component strictly on desktop when in view
-          import("./SacredGeometryBackground").then((mod) => {
-            setComponent3D(() => mod.default);
-            setIs3DReady(true);
-          }).catch((err) => {
-            console.warn("SacredGeometry 3D load error:", err);
-          });
-        } else {
-          setIsVisible(false); // Pause render loop when scrolled out
-        }
-      },
-      { rootMargin: "200px" }
-    );
+    let observer: IntersectionObserver | null = null;
+    let idleHandle: number | null = null;
 
-    observer.observe(currentElem);
+    const initObserver = () => {
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            // Lazy load Three.js component strictly on desktop after requestIdleCallback
+            const schedule = typeof window !== 'undefined' && 'requestIdleCallback' in window
+              ? (cb: () => void) => window.requestIdleCallback(cb, { timeout: 3000 })
+              : (cb: () => void) => setTimeout(cb, 1000);
+
+            idleHandle = schedule(() => {
+              import("./SacredGeometryBackground").then((mod) => {
+                setComponent3D(() => mod.default);
+                setIs3DReady(true);
+              }).catch((err) => {
+                console.warn("SacredGeometry 3D load error:", err);
+              });
+            }) as number;
+          } else {
+            setIsVisible(false); // Pause render loop when scrolled out
+          }
+        },
+        { rootMargin: "100px" }
+      );
+
+      observer.observe(currentElem);
+    };
+
+    // 2. Only observe after actual user scroll (never on initial page load)
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        window.removeEventListener("scroll", onScroll);
+        initObserver();
+      }
+    };
+
+    if (window.scrollY > 50) {
+      initObserver();
+    } else {
+      window.addEventListener("scroll", onScroll, { passive: true });
+    }
 
     return () => {
-      observer.disconnect();
+      window.removeEventListener("scroll", onScroll);
+      if (observer) observer.disconnect();
+      if (idleHandle) {
+        if ('cancelIdleCallback' in window && typeof idleHandle === 'number') {
+          window.cancelIdleCallback(idleHandle);
+        } else {
+          clearTimeout(idleHandle);
+        }
+      }
     };
   }, []);
 
