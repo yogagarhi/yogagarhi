@@ -3,16 +3,21 @@ import YogaAnatomyMasterclass from "@/components/pages/YogaAnatomyMasterclass";
 
 export const metadata: Metadata = {
   title: "Applied Functional Yoga Anatomy & Biomechanics Masterclass | YogaGarhi",
-  description: "Live 2-Hour intensive masterclass on Applied Yoga Anatomy, Joint Biomechanics & Injury Prevention by Ex-Army Yoga Therapy Specialist Acharya Sachin Kotiyal. Book your seat for ₹1.",
+  description: "Live 2-Hour intensive masterclass on Applied Yoga Anatomy, Joint Biomechanics & Injury Prevention by Ex-Army Yoga Therapy Specialist Acharya Sachin Kotiyal. Book your seat for ₹99.",
   keywords: "yoga anatomy masterclass, yoga biomechanics, injury prevention yoga, sachin kotiyal, functional yoga anatomy, yogagarhi",
   alternates: {
     canonical: "/yoga-anatomy-masterclass",
   },
   openGraph: {
-    title: "Applied Functional Yoga Anatomy Masterclass | ₹1 Special",
-    description: "Master Applied Yoga Anatomy & Biomechanics with Ex-Army Yoga Therapy Specialist Acharya Sachin Kotiyal. Live this Sunday on Zoom.",
+    title: "Applied Functional Yoga Anatomy Masterclass | ₹99 Special",
+    description: "Master Applied Yoga Anatomy & Biomechanics with Ex-Army Yoga Therapy Specialist Acharya Sachin Kotiyal. Live this Sunday on Zoom. Book your seat for ₹99.",
     url: "https://www.yogagarhi.com/yoga-anatomy-masterclass",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Applied Functional Yoga Anatomy Masterclass | ₹99 Special",
+    description: "Master Applied Yoga Anatomy & Biomechanics with Ex-Army Yoga Therapy Specialist Acharya Sachin Kotiyal. Live this Sunday on Zoom. Book your seat for ₹99.",
   },
 };
 
@@ -31,7 +36,7 @@ export default function Page() {
     "image": "https://www.yogagarhi.com/og-image.jpg",
     "offers": {
       "@type": "Offer",
-      "price": "1",
+      "price": "99",
       "priceCurrency": "INR",
       "availability": "https://schema.org/InStock",
       "url": "https://www.yogagarhi.com/yoga-anatomy-masterclass",

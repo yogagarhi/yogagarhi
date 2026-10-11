@@ -813,7 +813,7 @@ export default function BlogPost() {
             {/* Author E-E-A-T Bio Card */}
             <div className="mt-14 p-6 md:p-8 rounded-3xl bg-secondary/70 border border-border/70 flex flex-col sm:flex-row items-center sm:items-start gap-6">
               <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/30 shadow-sm">
-                <Image src={getCloudinaryImage("founder-sachin-ji.jpg")} alt="Yogacharya Sachin" fill className="object-cover" />
+                <Image src={getCloudinaryImage("founder-image.png")} alt="Yogacharya Sachin" fill className="object-cover object-top" />
               </div>
               <div className="space-y-2 text-center sm:text-left">
                 <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">

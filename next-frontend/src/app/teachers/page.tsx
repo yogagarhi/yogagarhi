@@ -27,7 +27,7 @@ export default function AboutTeachersPage() {
                     "name": "YogaGarhi",
                     "url": "https://www.yogagarhi.com"
                 },
-                "image": "https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/founder-sachin-ji.jpg",
+                "image": "https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/founder-image.png",
                 "description": "Born in the foothills of the Himalayas, Yogacharya Sachin has dedicated over 15 years to authentic Hatha, Ashtanga, Pranayama, and Yogic Philosophy sadhana. E-RYT 500 accredited.",
                 "knowsAbout": [
                     "Traditional Hatha Yoga",
