@@ -23,7 +23,6 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     turbopackUseSystemTlsCerts: true,
-    inlineCss: true,
   },
   async redirects() {
     return [
