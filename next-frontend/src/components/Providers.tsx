@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
+import dynamic from "next/dynamic";
+
+const Toaster = dynamic(() => import("@/components/ui/toaster").then((mod) => mod.Toaster), { ssr: false });
+const Sonner = dynamic(() => import("@/components/ui/sonner").then((mod) => mod.Toaster), { ssr: false });
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { EnrollmentProvider } from "@/components/EnrollmentDialog";
