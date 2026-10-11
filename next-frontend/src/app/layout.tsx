@@ -130,8 +130,8 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg"
-          imageSrcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_412/yogagarhi/public/hero-yoga-group.jpg 412w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_640/yogagarhi/public/hero-yoga-group.jpg 640w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg 750w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_828/yogagarhi/public/hero-yoga-group.jpg 828w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1024/yogagarhi/public/hero-yoga-group.jpg 1024w"
+          href="/hero-img/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg"
+          imageSrcSet="/hero-img/f_auto,q_auto,c_limit,w_412/yogagarhi/public/hero-yoga-group.jpg 412w, /hero-img/f_auto,q_auto,c_limit,w_640/yogagarhi/public/hero-yoga-group.jpg 640w, /hero-img/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg 750w, /hero-img/f_auto,q_auto,c_limit,w_828/yogagarhi/public/hero-yoga-group.jpg 828w, /hero-img/f_auto,q_auto,c_limit,w_1024/yogagarhi/public/hero-yoga-group.jpg 1024w"
           imageSizes="100vw"
           media="(max-width: 768px)"
           fetchPriority="high"
@@ -139,8 +139,8 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg"
-          imageSrcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1080/yogagarhi/public/hero-yoga-group.jpg 1080w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1280/yogagarhi/public/hero-yoga-group.jpg 1280w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg 1920w"
+          href="/hero-img/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg"
+          imageSrcSet="/hero-img/f_auto,q_auto,c_limit,w_1080/yogagarhi/public/hero-yoga-group.jpg 1080w, /hero-img/f_auto,q_auto,c_limit,w_1280/yogagarhi/public/hero-yoga-group.jpg 1280w, /hero-img/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg 1920w"
           imageSizes="100vw"
           media="(min-width: 769px)"
           fetchPriority="high"

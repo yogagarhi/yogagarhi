@@ -128,6 +128,14 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    return [
+      {
+        source: '/hero-img/:path*',
+        destination: 'https://res.cloudinary.com/dngsqdwbb/image/upload/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

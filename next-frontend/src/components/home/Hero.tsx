@@ -10,11 +10,11 @@ export default function Hero() {
         <picture>
           <source
             media="(max-width: 768px)"
-            srcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_412/yogagarhi/public/hero-yoga-group.jpg 412w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_640/yogagarhi/public/hero-yoga-group.jpg 640w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg 750w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_828/yogagarhi/public/hero-yoga-group.jpg 828w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1024/yogagarhi/public/hero-yoga-group.jpg 1024w"
+            srcSet="/hero-img/f_auto,q_auto,c_limit,w_412/yogagarhi/public/hero-yoga-group.jpg 412w, /hero-img/f_auto,q_auto,c_limit,w_640/yogagarhi/public/hero-yoga-group.jpg 640w, /hero-img/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg 750w, /hero-img/f_auto,q_auto,c_limit,w_828/yogagarhi/public/hero-yoga-group.jpg 828w, /hero-img/f_auto,q_auto,c_limit,w_1024/yogagarhi/public/hero-yoga-group.jpg 1024w"
             sizes="100vw"
           />
           <img
-            src="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg"
+            src="/hero-img/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg"
             alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
             fetchPriority="high"
             decoding="async"
@@ -30,11 +30,11 @@ export default function Hero() {
         <picture>
           <source
             media="(min-width: 769px)"
-            srcSet="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1080/yogagarhi/public/hero-yoga-group.jpg 1080w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1280/yogagarhi/public/hero-yoga-group.jpg 1280w, https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg 1920w"
+            srcSet="/hero-img/f_auto,q_auto,c_limit,w_1080/yogagarhi/public/hero-yoga-group.jpg 1080w, /hero-img/f_auto,q_auto,c_limit,w_1280/yogagarhi/public/hero-yoga-group.jpg 1280w, /hero-img/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg 1920w"
             sizes="100vw"
           />
           <img
-            src="https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg"
+            src="/hero-img/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg"
             alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
             fetchPriority="high"
             decoding="async"
