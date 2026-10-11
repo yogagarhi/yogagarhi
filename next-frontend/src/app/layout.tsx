@@ -309,12 +309,16 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `(function(){
   var gtmLoaded = false;
+  function triggerGTM(e){
+    if (e && !e.isTrusted) return;
+    loadGTM();
+  }
   function loadGTM(){
     if (gtmLoaded) return;
     gtmLoaded = true;
     var events = ['scroll','click','touchstart','keydown','mousemove','wheel'];
-    events.forEach(function(e){
-      window.removeEventListener(e, loadGTM, { passive: true });
+    events.forEach(function(ev){
+      window.removeEventListener(ev, triggerGTM, { passive: true });
     });
     clearTimeout(timerId);
     (function(w,d,s,l,i){
@@ -326,8 +330,8 @@ export default function RootLayout({
   }
   var timerId = setTimeout(loadGTM, 5000);
   var events = ['scroll','click','touchstart','keydown','mousemove','wheel'];
-  events.forEach(function(e){
-    window.addEventListener(e, loadGTM, { once: true, passive: true });
+  events.forEach(function(ev){
+    window.addEventListener(ev, triggerGTM, { passive: true });
   });
 })();`
           }}
