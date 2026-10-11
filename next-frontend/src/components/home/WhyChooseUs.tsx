@@ -1,5 +1,3 @@
-"use client";
-import { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import { BookOpen, Leaf, Zap, Award, Users, GraduationCap, RefreshCw, Globe, MessageCircle } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
@@ -28,29 +26,8 @@ const LotusDecor = ({ className }: { className?: string }) => (
 );
 
 export default function WhyChooseUs() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section
-      ref={sectionRef}
       className="py-24 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden"
       style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 7600px' }}
     >
