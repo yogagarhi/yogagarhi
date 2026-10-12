@@ -126,12 +126,13 @@ export default function RootLayout({
         <meta name="theme-color" content="#0f766e" />
         <link rel="preconnect" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
-        {/* Preload Hero image for maximum LCP speed on mobile and desktop */}
+        {/* Preload Hero image for maximum LCP speed on mobile and desktop from same-origin edge CDN */}
         <link
           rel="preload"
           as="image"
-          href="/hero-img/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg"
-          imageSrcSet="/hero-img/f_auto,q_auto,c_limit,w_412/yogagarhi/public/hero-yoga-group.jpg 412w, /hero-img/f_auto,q_auto,c_limit,w_640/yogagarhi/public/hero-yoga-group.jpg 640w, /hero-img/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg 750w, /hero-img/f_auto,q_auto,c_limit,w_828/yogagarhi/public/hero-yoga-group.jpg 828w, /hero-img/f_auto,q_auto,c_limit,w_1024/yogagarhi/public/hero-yoga-group.jpg 1024w"
+          type="image/avif"
+          href="/images/hero/hero-yoga-group-750.avif"
+          imageSrcSet="/images/hero/hero-yoga-group-412.avif 412w, /images/hero/hero-yoga-group-640.avif 640w, /images/hero/hero-yoga-group-750.avif 750w, /images/hero/hero-yoga-group-828.avif 828w, /images/hero/hero-yoga-group-1024.avif 1024w"
           imageSizes="100vw"
           media="(max-width: 768px)"
           fetchPriority="high"
@@ -139,8 +140,9 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/hero-img/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg"
-          imageSrcSet="/hero-img/f_auto,q_auto,c_limit,w_1080/yogagarhi/public/hero-yoga-group.jpg 1080w, /hero-img/f_auto,q_auto,c_limit,w_1280/yogagarhi/public/hero-yoga-group.jpg 1280w, /hero-img/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg 1920w"
+          type="image/avif"
+          href="/images/hero/hero-yoga-group-1920.avif"
+          imageSrcSet="/images/hero/hero-yoga-group-1080.avif 1080w, /images/hero/hero-yoga-group-1280.avif 1280w, /images/hero/hero-yoga-group-1920.avif 1920w"
           imageSizes="100vw"
           media="(min-width: 769px)"
           fetchPriority="high"

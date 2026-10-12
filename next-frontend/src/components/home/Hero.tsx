@@ -5,43 +5,48 @@ import HeroCTAButtons from "./HeroCTAButtons";
 export default function Hero() {
   return (
     <section className="relative flex flex-col md:flex-row items-center justify-center overflow-hidden bg-[#1c130d] md:min-h-[90vh] md:items-start pt-20 md:pt-32 pb-16 md:pb-20">
-      {/* Mobile Top Uncropped Hero Photo Container (Visible strictly on mobile < 768px) */}
-      <div className="w-full md:hidden relative bg-black aspect-[1024/684] shadow-md z-10 flex-shrink-0">
-        <picture>
+      {/* Unified Responsive Hero Photo: Top uncropped on mobile (Option A), full-bleed cover background on desktop */}
+      <div className="w-full aspect-[1024/684] md:aspect-auto md:absolute md:inset-0 md:h-full md:w-full z-10 md:z-0 bg-black md:bg-[#1c130d] flex-shrink-0 shadow-md md:shadow-none relative">
+        <picture className="w-full h-full block">
+          {/* Mobile responsive sources (AVIF with WebP fallback) */}
           <source
             media="(max-width: 768px)"
-            srcSet="/hero-img/f_auto,q_auto,c_limit,w_412/yogagarhi/public/hero-yoga-group.jpg 412w, /hero-img/f_auto,q_auto,c_limit,w_640/yogagarhi/public/hero-yoga-group.jpg 640w, /hero-img/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg 750w, /hero-img/f_auto,q_auto,c_limit,w_828/yogagarhi/public/hero-yoga-group.jpg 828w, /hero-img/f_auto,q_auto,c_limit,w_1024/yogagarhi/public/hero-yoga-group.jpg 1024w"
+            type="image/avif"
+            srcSet="/images/hero/hero-yoga-group-412.avif 412w, /images/hero/hero-yoga-group-640.avif 640w, /images/hero/hero-yoga-group-750.avif 750w, /images/hero/hero-yoga-group-828.avif 828w, /images/hero/hero-yoga-group-1024.avif 1024w"
             sizes="100vw"
           />
+          <source
+            media="(max-width: 768px)"
+            type="image/webp"
+            srcSet="/images/hero/hero-yoga-group-412.webp 412w, /images/hero/hero-yoga-group-640.webp 640w, /images/hero/hero-yoga-group-750.webp 750w, /images/hero/hero-yoga-group-828.webp 828w, /images/hero/hero-yoga-group-1024.webp 1024w"
+            sizes="100vw"
+          />
+          {/* Desktop responsive sources (AVIF with WebP fallback) */}
+          <source
+            media="(min-width: 769px)"
+            type="image/avif"
+            srcSet="/images/hero/hero-yoga-group-1080.avif 1080w, /images/hero/hero-yoga-group-1280.avif 1280w, /images/hero/hero-yoga-group-1920.avif 1920w"
+            sizes="100vw"
+          />
+          <source
+            media="(min-width: 769px)"
+            type="image/webp"
+            srcSet="/images/hero/hero-yoga-group-1080.webp 1080w, /images/hero/hero-yoga-group-1280.webp 1280w, /images/hero/hero-yoga-group-1920.webp 1920w"
+            sizes="100vw"
+          />
+          {/* Single Image Tag in entire DOM */}
           <img
-            src="/hero-img/f_auto,q_auto,c_limit,w_750/yogagarhi/public/hero-yoga-group.jpg"
+            src="/images/hero/hero-yoga-group-750.webp"
             alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
             fetchPriority="high"
             decoding="async"
             width={1024}
             height={684}
-            className="w-full h-full object-contain object-center block"
+            className="w-full h-full object-contain md:object-cover object-center block"
           />
         </picture>
-      </div>
-
-      {/* Desktop Background Image (Hidden on mobile < 768px, exactly identical on desktop >= 769px) */}
-      <div className="hidden md:block absolute inset-0 z-0 bg-[#1c130d]">
-        <picture>
-          <source
-            media="(min-width: 769px)"
-            srcSet="/hero-img/f_auto,q_auto,c_limit,w_1080/yogagarhi/public/hero-yoga-group.jpg 1080w, /hero-img/f_auto,q_auto,c_limit,w_1280/yogagarhi/public/hero-yoga-group.jpg 1280w, /hero-img/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg 1920w"
-            sizes="100vw"
-          />
-          <img
-            src="/hero-img/f_auto,q_auto,c_limit,w_1920/yogagarhi/public/hero-yoga-group.jpg"
-            alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
-            fetchPriority="high"
-            decoding="async"
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          />
-        </picture>
-        <div className="absolute inset-0 bg-black/40" />
+        {/* Dark overlay behind text on desktop only */}
+        <div className="hidden md:block absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}
