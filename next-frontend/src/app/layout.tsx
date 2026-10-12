@@ -11,20 +11,13 @@ const cormorant = Cormorant_Garamond({
   preload: true,
 });
 
-const cormorantItalic = Cormorant_Garamond({
-  subsets: ["latin"],
-  style: ["italic"],
-  variable: "--font-heading-italic",
-  display: "swap",
-  preload: false,
-});
-
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
   preload: false,
 });
+
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.yogagarhi.com'),
@@ -115,8 +108,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${plusJakarta.variable} ${cormorantItalic.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${cormorant.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
       <head>
+
         {/* Preload Hero image first in head for immediate scanner discovery before fonts and CSS */}
         <link
           rel="preload"
