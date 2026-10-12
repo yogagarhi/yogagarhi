@@ -10,7 +10,8 @@ import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import PromoCountdown from "@/components/PromoCountdown";
 
-const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
+const logo = "/images/logo/yogagarhi-logo.png";
+
 
 // Chakra/Mandala spiritual symbols
 const ChakraSymbol1 = () => (
@@ -247,17 +248,19 @@ export default function Header() {
           <div className="flex items-center justify-between">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group">
+            <Link href="/" prefetch={false} className="flex items-center gap-2 group">
               <div className="relative">
                 <Image
                   src={logo}
                   alt="YogaGarhi"
                   width={56}
                   height={52}
+                  unoptimized
                   className="object-contain h-12 w-12 sm:h-14 sm:w-14"
                 />
                 <div className="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-300" />
               </div>
+
               <div className="flex flex-col">
                 <span className="font-heading font-bold text-primary tracking-wide text-base sm:text-xl">
                   YOGAGARHI
@@ -353,6 +356,7 @@ export default function Header() {
                                             <li key={sub.name} className="list-none">
                                               <Link
                                                 href={sub.href}
+                                                prefetch={false}
                                                 onClick={() => {
                                                   setOpenDropdown(null);
                                                   setOpenSubDropdown(null);
@@ -372,6 +376,7 @@ export default function Header() {
                                   ) : (
                                     <Link
                                       href={item.href}
+                                      prefetch={false}
                                       onClick={() => {
                                         setOpenDropdown(null);
                                         setOpenSubDropdown(null);
@@ -395,6 +400,7 @@ export default function Header() {
                       ) : (
                         <Link
                           href={link.href}
+                          prefetch={false}
                           className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${isActive(link.href)
                             ? 'bg-primary text-primary-foreground'
                             : 'text-foreground/70 hover:text-primary hover:bg-secondary/50'
@@ -525,6 +531,7 @@ export default function Header() {
                               ) : (
                                 <Link
                                   href={item.href}
+                                  prefetch={false}
                                   onClick={() => setIsOpen(false)}
                                   className={`flex items-center gap-3 py-2.5 px-4 rounded-lg text-sm transition-all ${pathname === item.href
                                     ? 'bg-primary/10 text-primary font-medium'
@@ -543,6 +550,7 @@ export default function Header() {
                   ) : (
                     <Link
                       href={link.href}
+                      prefetch={false}
                       onClick={() => setIsOpen(false)}
                       className={`block py-3 px-4 rounded-xl text-base font-medium transition-all ${isActive(link.href)
                         ? 'bg-primary/10 text-primary'

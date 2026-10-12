@@ -3,11 +3,12 @@ import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
 import Header from "./layout/Header"
 import Footer from "./layout/Footer"
-import StickyContactButton from "./StickyContactButton"
-import PartnershipsSection from "./home/PartnershipsSection"
 import dynamic from "next/dynamic"
 
 const EarlyBirdPopup = dynamic(() => import("./EarlyBirdPopup"), { ssr: false });
+const StickyContactButton = dynamic(() => import("./StickyContactButton"), { ssr: false });
+const PartnershipsSection = dynamic(() => import("./home/PartnershipsSection"), { ssr: true });
+
 
 export default function MainLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();

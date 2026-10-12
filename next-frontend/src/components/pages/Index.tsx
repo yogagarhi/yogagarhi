@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import Hero from "@/components/home/Hero";
 import WelcomeSection from "@/components/home/WelcomeSection";
 import CoursesSection from "@/components/home/CoursesSection";
@@ -8,10 +9,12 @@ import YTTCSupportSection from "@/components/home/YTTCSupportSection";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import FAQSection from "@/components/home/FAQSection";
 import WebinarSection from "@/components/home/WebinarSection";
-import HomeGallerySection from "@/components/home/HomeGallerySection";
-import HomeVideoGallerySection from "@/components/home/HomeVideoGallerySection";
 import StudentStoriesSection from "@/components/home/StudentStoriesSection";
 import ReadyToBeginSection from "@/components/home/ReadyToBeginSection";
+
+const HomeGallerySection = dynamic(() => import("@/components/home/HomeGallerySection"));
+const HomeVideoGallerySection = dynamic(() => import("@/components/home/HomeVideoGallerySection"));
+
 
 const Index = () => {
   return (
