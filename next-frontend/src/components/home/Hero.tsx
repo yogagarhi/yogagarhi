@@ -7,11 +7,11 @@ export default function Hero() {
     <section className="relative flex items-center justify-center overflow-hidden bg-[#1c130d] min-h-[90vh] pt-24 sm:pt-28 md:pt-32 pb-16 md:pb-20">
       {/* Background Container: Desktop full cover, Mobile Option B uncropped photo centered + blurred background filler */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-[#1c130d]">
-        {/* Mobile blurred background filler (ultra-lightweight inlined data-URI, 0 HTTP overhead, 0 LCP competition) */}
+        {/* Mobile pre-blurred background filler: zero CSS filter, zero transform, zero GPU/CPU raster cost */}
         <div
-          className="md:hidden absolute inset-0 w-full h-full bg-cover bg-center filter blur-2xl scale-125 opacity-70 pointer-events-none"
+          className="md:hidden absolute inset-0 w-full h-full bg-cover bg-center pointer-events-none"
           style={{
-            backgroundImage: `url("data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABwBgCdASpAACsAPsFKnEunpCkhsr2+YSAYCWds0FcUlRro1isVXfRcZDYRXhLWupk+KiAYdDXfFwzs1MAA/vI1051+iqyYVM+DwTX7Zz7G0r0DKbIGm6KcHc/nW9wzzxNPkX3Mpd7eDNriR7w23Y8VOpGWNfcUmca1JfuVS5snGrUzvk8/UNT+GvVDORXv2fgAAA==")`
+            backgroundImage: `url("data:image/webp;base64,UklGRvwCAABXRUJQVlA4IPACAACQIgCdASpAAdUAPpFCnEulsaYho5CJ+jASCWlu4E1K3e17Cd9neH5fv//EQH3rc68Y/QAg5sidSYeeMYxh54dNG8QhG6FsGACOIQe8DjeAju7vaLWNgDB/fwTW8BU+jE+iiXrPj145TrWt5CWAT+Z+973vO/q0XBccUa+lsl0TdfcgCxQ3XeiFDh3DrO/5daK4XfYIgendegdlCjWd/9jLJysfiS0tFwYHlc6J4zsHGyYobOESsT42rEK4BFdh/b7Oim2ODtwtVZrOIDQTaO6b60+AeCcCwrJqOGoD2E/74RC+ljKr2ez3VxpN+YmMcLzwXSfvBr6yQnEw7Td/Ewz2SlNT5FzOPw4/3309O16Rfcv/ah7zn3Ev8XDybQAA/vdWFH+ter0yNHUtlJbtg6vL6ZAbLOzf80ekQM69qgkXjnmj+q5A9Ob6s8xfEN0EqQbih8IEmlZbxAVGJ0TiZuskKKcvIVwlF2ZkKx3VdsZY7/6QQSxxlGzlMmXpjVfP39xz9gfeRZT458hQOH/SND+vZYOuoi/BZlPY4UZm4A6mdZ1Oen832Hcux+mrlE8KJgGXta07xLb2KUuQkU0Yhy6rhEApBI6kRoP9Fbya1NffQpJo04o6G7lm1BAR+c6aj7ZELmU30ThKgOjvHLQrZrtzVLsXXwsR6k6ThRMgwhcRKw/OPF5OdliFMLQd+ilPA+CuFdAbq+SLjOUhBtydBRQEy1E/qWXBwcZdHBEJC2n720bZTPpWQWYuRu2z//6Jpqd5sXyW/uIcgrN+GVAoafGlpNDIuobW1zyirjAF3UhorDbe5GAR55SJmdiMTszAPmqu4QjlUaIqwPwhpfdQs5dXBssf0MVV6rf3eaZhjC3BPNFQIVNwgIPjj2IQPxb24nUfz+txiHAqluf8oRniqhmUSMYZxoiKGIHoavWqxAqKWYNAeCghAiLb9nx8ExNZbfjZ53D7KjhCwOvlNYyyZviXjFrOHAZ4oQVF1ijWqjjAAA==")`
           }}
         />
 
@@ -84,7 +84,7 @@ export default function Hero() {
                 <span className="font-heading">ı</span>
                 {/* Star symbol as the dot - closer and animated */}
                 <span
-                  className="absolute -top-[0.02em] left-1/2 -translate-x-1/2 text-[0.4em] animate-pulse"
+                  className="absolute -top-[0.02em] left-1/2 -translate-x-1/2 text-[0.4em] animate-none md:animate-pulse"
                 >
                   ✦
                 </span>
@@ -136,7 +136,7 @@ export default function Hero() {
           <div className="flex flex-col items-center gap-4 pt-2">
 
             {/* Special Offer Box */}
-            <div className="bg-amber-100/95 dark:bg-amber-900/60 border border-amber-200/60 dark:border-amber-800/60 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle text-center max-w-lg mx-auto">
+            <div className="bg-amber-100/95 dark:bg-amber-900/60 border border-amber-200/60 dark:border-amber-800/60 px-6 py-3 rounded-xl shadow-xl animate-none md:animate-bounce-subtle text-center max-w-lg mx-auto">
               <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
                 Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-950 dark:text-amber-200 font-extrabold underline underline-offset-2">all included for free.</span>
               </p>
