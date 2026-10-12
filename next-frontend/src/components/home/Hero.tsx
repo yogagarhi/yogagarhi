@@ -4,10 +4,19 @@ import HeroCTAButtons from "./HeroCTAButtons";
 
 export default function Hero() {
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-center overflow-hidden bg-[#1c130d] md:min-h-[90vh] md:items-start pt-20 md:pt-32 pb-16 md:pb-20">
-      {/* Unified Responsive Hero Photo: Top uncropped on mobile (Option A), full-bleed cover background on desktop */}
-      <div className="w-full aspect-[1024/684] md:aspect-auto md:absolute md:inset-0 md:h-full md:w-full z-10 md:z-0 bg-black md:bg-[#1c130d] flex-shrink-0 shadow-md md:shadow-none relative">
-        <picture className="w-full h-full block">
+    <section className="relative flex items-center justify-center overflow-hidden bg-[#1c130d] min-h-[90vh] pt-24 sm:pt-28 md:pt-32 pb-16 md:pb-20">
+      {/* Background Container: Desktop full cover, Mobile Option B uncropped photo centered + blurred background filler */}
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-[#1c130d]">
+        {/* Mobile blurred background filler (ultra-lightweight inlined data-URI, 0 HTTP overhead, 0 LCP competition) */}
+        <div
+          className="md:hidden absolute inset-0 w-full h-full bg-cover bg-center filter blur-2xl scale-125 opacity-70 pointer-events-none"
+          style={{
+            backgroundImage: `url("data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABwBgCdASpAACsAPsFKnEunpCkhsr2+YSAYCWds0FcUlRro1isVXfRcZDYRXhLWupk+KiAYdDXfFwzs1MAA/vI1051+iqyYVM+DwTX7Zz7G0r0DKbIGm6KcHc/nW9wzzxNPkX3Mpd7eDNriR7w23Y8VOpGWNfcUmca1JfuVS5snGrUzvk8/UNT+GvVDORXv2fgAAA==")`
+          }}
+        />
+
+        {/* Single Responsive Picture & exactly ONE <img> in DOM (LCP element) */}
+        <picture className="w-full h-full block relative z-10">
           {/* Mobile responsive sources (AVIF with WebP fallback) */}
           <source
             media="(max-width: 768px)"
@@ -45,12 +54,14 @@ export default function Hero() {
             className="w-full h-full object-contain md:object-cover object-center block"
           />
         </picture>
-        {/* Dark overlay behind text on desktop only */}
-        <div className="hidden md:block absolute inset-0 bg-black/40" />
+
+        {/* Contrast overlay: darker on mobile for perfect WCAG AA readability, standard 40% on desktop */}
+        <div className="absolute inset-0 z-10 bg-black/60 md:bg-black/40 pointer-events-none" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground pt-6 md:pt-0">
+      <div className="relative z-20 container mx-auto px-4 text-center text-primary-foreground">
+
         <div className="max-w-4xl mx-auto space-y-8">
           <p className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.3em] uppercase opacity-90">
             Welcome To

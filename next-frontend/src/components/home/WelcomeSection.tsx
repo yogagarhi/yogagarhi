@@ -13,8 +13,12 @@ const highlights = [
 export default function WelcomeSection() {
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background via-secondary/20 to-background relative overflow-hidden">
+    <section
+      className="py-24 bg-gradient-to-b from-background via-secondary/20 to-background relative overflow-hidden"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 900px' }}
+    >
       {/* Decorative Background Elements */}
+
       <div className="absolute inset-0 pointer-events-none">
         {/* Lotus SVG Pattern - Top Right */}
         <svg
