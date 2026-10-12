@@ -328,18 +328,21 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `(function(){
   var gtmLoaded = false;
+  var timerId = null;
+  var events = ['scroll','click','touchstart','keydown','wheel'];
+
   function triggerGTM(e){
     if (e && !e.isTrusted) return;
     loadGTM();
   }
+
   function loadGTM(){
     if (gtmLoaded) return;
     gtmLoaded = true;
-    var events = ['scroll','click','touchstart','keydown','mousemove','wheel'];
     events.forEach(function(ev){
       window.removeEventListener(ev, triggerGTM, { passive: true });
     });
-    clearTimeout(timerId);
+    if (timerId) clearTimeout(timerId);
     (function(w,d,s,l,i){
       w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
       var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
@@ -347,11 +350,25 @@ export default function RootLayout({
       f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-T9PKFR8P');
   }
-  var timerId = setTimeout(loadGTM, 5000);
-  var events = ['scroll','click','touchstart','keydown','mousemove','wheel'];
-  events.forEach(function(ev){
-    window.addEventListener(ev, triggerGTM, { passive: true });
-  });
+
+  function initGTM(){
+    timerId = setTimeout(loadGTM, 5000);
+    events.forEach(function(ev){
+      window.addEventListener(ev, triggerGTM, { once: true, passive: true });
+    });
+  }
+
+  if (document.readyState === 'complete') {
+    initGTM();
+  } else {
+    window.addEventListener('load', function(){
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(initGTM, { timeout: 2000 });
+      } else {
+        setTimeout(initGTM, 500);
+      }
+    }, { once: true, passive: true });
+  }
 })();`
           }}
         />
