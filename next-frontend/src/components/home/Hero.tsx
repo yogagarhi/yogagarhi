@@ -39,7 +39,7 @@ export default function Hero() {
             src="/images/hero/hero-yoga-group-750.webp"
             alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
             fetchPriority="high"
-            decoding="async"
+            decoding="sync"
             width={1024}
             height={684}
             className="w-full h-full object-contain md:object-cover object-center block"
