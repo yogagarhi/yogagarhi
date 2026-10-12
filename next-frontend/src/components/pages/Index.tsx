@@ -2,18 +2,19 @@ import dynamic from "next/dynamic";
 import Hero from "@/components/home/Hero";
 import WelcomeSection from "@/components/home/WelcomeSection";
 import CoursesSection from "@/components/home/CoursesSection";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
+import YTTCSupportSection from "@/components/home/YTTCSupportSection";
 import FounderSection from "@/components/home/FounderSection";
 import WhyOneStyleSection from "@/components/home/WhyOneStyleSection";
-import GoogleReviewsSection from "@/components/home/GoogleReviewsSection";
-import YTTCSupportSection from "@/components/home/YTTCSupportSection";
-import WhyChooseUs from "@/components/home/WhyChooseUs";
-import FAQSection from "@/components/home/FAQSection";
-import WebinarSection from "@/components/home/WebinarSection";
-import StudentStoriesSection from "@/components/home/StudentStoriesSection";
 import ReadyToBeginSection from "@/components/home/ReadyToBeginSection";
 
-const HomeGallerySection = dynamic(() => import("@/components/home/HomeGallerySection"));
+const GoogleReviewsSection = dynamic(() => import("@/components/home/GoogleReviewsSection"));
+const StudentStoriesSection = dynamic(() => import("@/components/home/StudentStoriesSection"));
 const HomeVideoGallerySection = dynamic(() => import("@/components/home/HomeVideoGallerySection"));
+const WebinarSection = dynamic(() => import("@/components/home/WebinarSection"));
+const HomeGallerySection = dynamic(() => import("@/components/home/HomeGallerySection"));
+const FAQSection = dynamic(() => import("@/components/home/FAQSection"));
+
 
 
 const Index = () => {

@@ -1,5 +1,9 @@
 import { Flame, Droplets, Wind, Sparkles } from "lucide-react";
-import PrakritiQuizIsland from "@/components/home/PrakritiQuizIsland";
+import dynamic from "next/dynamic";
+
+const PrakritiQuizIsland = dynamic(() => import("@/components/home/PrakritiQuizIsland"));
+
+
 
 // Dosha types with their characteristics
 const doshaTypes = [
