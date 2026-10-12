@@ -9,6 +9,7 @@ import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import PromoCountdown from "@/components/PromoCountdown";
+import { PROMO_OFFER } from "@/constants/offers";
 
 const logo = "/images/logo/yogagarhi-logo.png";
 
@@ -216,13 +217,13 @@ export default function Header() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-[70]">
-      {/* April to July Batch Promo Bar */}
-      <div className="bg-[#2D7A70] text-white py-2 sm:py-3 shadow-sm overflow-hidden">
+      {/* April to July Batch Promo Bar - Desktop Only */}
+      <div className="hidden md:block bg-[#2D7A70] text-white py-2 sm:py-3 shadow-sm overflow-hidden">
         <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8">
           <div className="flex items-center gap-2 sm:whitespace-nowrap animate-pulse">
             <Sparkles className="w-4 h-4 text-amber-300" />
             <span className="text-xs sm:text-sm font-bold tracking-wide uppercase">
-              Summer Sale 🎉 Flat <span className="text-amber-300 font-extrabold">$300 OFF</span> on August to December batches
+              {PROMO_OFFER.title} 🎉 Flat <span className="text-amber-300 font-extrabold">{PROMO_OFFER.discountText}</span> {PROMO_OFFER.batchesText}
             </span>
           </div>
 

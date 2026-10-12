@@ -1,9 +1,12 @@
 import Image from "next/image";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
 import HeroCTAButtons from "./HeroCTAButtons";
+import PromoCountdown from "@/components/PromoCountdown";
+import { PROMO_OFFER } from "@/constants/offers";
 
 export default function Hero() {
   return (
+    <>
     <section className="relative flex items-center justify-center overflow-hidden bg-[#1c130d] min-h-[90vh] pt-24 sm:pt-28 md:pt-32 pb-16 md:pb-20">
       {/* Background Container: Desktop full cover, Mobile Option B uncropped photo centered + blurred background filler */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-[#1c130d]">
@@ -62,7 +65,16 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-20 container mx-auto px-4 text-center text-primary-foreground">
 
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl mx-auto space-y-6 md:space-y-8">
+          {/* Mobile In-Hero Compact Offer Pill (Replaces heavy top bar on mobile) */}
+          <div className="md:hidden inline-flex items-center gap-2 bg-black/60 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-amber-400/30 text-amber-300 text-xs font-semibold shadow-md">
+            <span>🎉 {PROMO_OFFER.compactBannerText}</span>
+            <span className="opacity-40">|</span>
+            <span className="text-white font-medium text-[11px] flex items-center gap-1.5">
+              Ends in: <PromoCountdown className="scale-75 origin-left inline-flex" />
+            </span>
+          </div>
+
           <p className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.3em] uppercase opacity-90">
             Welcome To
           </p>
@@ -98,55 +110,101 @@ export default function Hero() {
             Ancient Himalayan wisdom. Authentic yoga, lived & taught.
           </p>
 
-          {/* Stats */}
-          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 pt-4">
-            <div className="text-center">
-              <p className="font-heading text-3xl md:text-4xl font-bold">500+</p>
-              <p className="text-xs md:text-sm opacity-80">Graduated Students</p>
-            </div>
-            <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
-            <div className="text-center">
-              <p className="font-heading text-3xl md:text-4xl font-bold">Multi-Style</p>
-              <p className="text-xs md:text-sm opacity-80">Authentic Yoga</p>
-            </div>
-            <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
-            <div className="text-center">
-              <p className="font-heading text-3xl md:text-4xl font-bold">Ayurveda</p>
-              <p className="text-xs md:text-sm opacity-80">Strong Basis</p>
-            </div>
-          </div>
-
-          {/* Second Row - Yoga Alliance & World's First */}
-          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-            <div className="text-center">
-              <p className="font-heading text-3xl md:text-4xl font-bold">Yoga Alliance</p>
-              <p className="text-xs md:text-sm opacity-80">Certified School</p>
-            </div>
-            <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
-            <div className="text-center">
-              <p className="font-heading text-3xl md:text-4xl font-bold">World's First</p>
-              <p className="text-xs md:text-sm opacity-80">Pre-YTTC Support Academy</p>
-            </div>
-          </div>
-
-          {/* Client Island: Interactive CTA Buttons & WhatsApp Gift */}
+          {/* Client Island: Interactive CTA Buttons */}
           <HeroCTAButtons />
 
-          {/* Special Offer Box */}
-          <div className="flex flex-col items-center gap-4 pt-2">
+          {/* Desktop-Only Stats & Offer Box (Inside Hero on Desktop) */}
+          <div className="hidden md:block space-y-8 pt-4">
+            {/* Stats Row 1 */}
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+              <div className="text-center">
+                <p className="font-heading text-3xl md:text-4xl font-bold">500+</p>
+                <p className="text-xs md:text-sm opacity-80">Graduated Students</p>
+              </div>
+              <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
+              <div className="text-center">
+                <p className="font-heading text-3xl md:text-4xl font-bold">Multi-Style</p>
+                <p className="text-xs md:text-sm opacity-80">Authentic Yoga</p>
+              </div>
+              <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
+              <div className="text-center">
+                <p className="font-heading text-3xl md:text-4xl font-bold">Ayurveda</p>
+                <p className="text-xs md:text-sm opacity-80">Strong Basis</p>
+              </div>
+            </div>
+
+            {/* Stats Row 2 */}
+            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+              <div className="text-center">
+                <p className="font-heading text-3xl md:text-4xl font-bold">Yoga Alliance</p>
+                <p className="text-xs md:text-sm opacity-80">Certified School</p>
+              </div>
+              <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
+              <div className="text-center">
+                <p className="font-heading text-3xl md:text-4xl font-bold">World's First</p>
+                <p className="text-xs md:text-sm opacity-80">Pre-YTTC Support Academy</p>
+              </div>
+            </div>
 
             {/* Special Offer Box */}
-            <div className="bg-amber-100/95 dark:bg-amber-900/60 border border-amber-200/60 dark:border-amber-800/60 px-6 py-3 rounded-xl shadow-xl animate-none md:animate-bounce-subtle text-center max-w-lg mx-auto">
-              <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-950 dark:text-amber-200 font-extrabold underline underline-offset-2">all included for free.</span>
-              </p>
+            <div className="flex flex-col items-center gap-4 pt-2">
+              <div className="bg-amber-100/95 dark:bg-amber-900/60 border border-amber-200/60 dark:border-amber-800/60 px-6 py-3 rounded-xl shadow-xl animate-none md:animate-bounce-subtle text-center max-w-lg mx-auto">
+                <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
+                  {PROMO_OFFER.specialOfferBoxPrefix}{" "}
+                  <span className="text-amber-950 dark:text-amber-200 font-extrabold underline underline-offset-2">
+                    {PROMO_OFFER.specialOfferBoxHighlighted}
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
     </section>
+
+    {/* Mobile Dedicated Trust Stats & Offer Block Directly Below Hero */}
+    <section className="md:hidden bg-[#1c130d] border-t border-b border-amber-900/30 py-8 px-4 text-center text-primary-foreground">
+      <div className="max-w-md mx-auto space-y-6">
+        <div className="flex flex-wrap items-center justify-center gap-6">
+          <div className="text-center">
+            <p className="font-heading text-2xl font-bold">500+</p>
+            <p className="text-xs opacity-80">Graduated Students</p>
+          </div>
+          <div className="text-center">
+            <p className="font-heading text-2xl font-bold">Multi-Style</p>
+            <p className="text-xs opacity-80">Authentic Yoga</p>
+          </div>
+          <div className="text-center">
+            <p className="font-heading text-2xl font-bold">Ayurveda</p>
+            <p className="text-xs opacity-80">Strong Basis</p>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-6">
+          <div className="text-center">
+            <p className="font-heading text-2xl font-bold">Yoga Alliance</p>
+            <p className="text-xs opacity-80">Certified School</p>
+          </div>
+          <div className="text-center">
+            <p className="font-heading text-2xl font-bold">World's First</p>
+            <p className="text-xs opacity-80">Pre-YTTC Support Academy</p>
+          </div>
+        </div>
+
+        {/* Special Offer Box on Mobile */}
+        <div className="bg-amber-100/95 dark:bg-amber-900/60 border border-amber-200/60 dark:border-amber-800/60 px-5 py-3 rounded-xl shadow-xl text-center max-w-lg mx-auto">
+          <p className="text-amber-900 dark:text-amber-100 text-xs font-bold leading-relaxed">
+            {PROMO_OFFER.specialOfferBoxPrefix}{" "}
+            <span className="text-amber-950 dark:text-amber-200 font-extrabold underline underline-offset-2">
+              {PROMO_OFFER.specialOfferBoxHighlighted}
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+    </>
   );
 }
