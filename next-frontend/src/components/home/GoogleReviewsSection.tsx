@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { googleReviews } from "@/constants/googleReviews";
 import { GoogleReviewCard } from "./GoogleReviewCard";
-import GoogleReviewsMobileCarousel from "./GoogleReviewsMobileCarousel";
 
 export default function GoogleReviewsSection() {
   return (
@@ -42,8 +42,21 @@ export default function GoogleReviewsSection() {
           ))}
         </div>
 
-        {/* Reviews Carousel - Mobile Island */}
-        <GoogleReviewsMobileCarousel />
+        {/* Reviews Static List - Mobile (Zero Carousel JS, fast & lightweight) */}
+        <div className="md:hidden space-y-4 max-w-md mx-auto mb-6">
+          {googleReviews.slice(0, 3).map((review, index) => (
+            <GoogleReviewCard key={index} review={review} />
+          ))}
+          <div className="text-center pt-2">
+            <Link
+              href="/testimonials"
+              className="inline-flex items-center gap-2 bg-card border-2 border-primary/40 text-primary px-6 py-2.5 rounded-full text-xs font-bold shadow-sm hover:bg-primary/5 transition-colors"
+            >
+              <span>Read All Student Stories & Reviews</span>
+              <span>→</span>
+            </Link>
+          </div>
+        </div>
 
         {/* View All CTA */}
         <div className="text-center mt-8">

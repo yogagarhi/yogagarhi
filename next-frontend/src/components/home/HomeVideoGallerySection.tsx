@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const videos = [
     {
@@ -53,13 +54,15 @@ export default function HomeVideoGallerySection() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                    {videos.map((video) => {
+                    {videos.map((video, idx) => {
                         const isPlaying = activeVideoId === video.id;
 
                         return (
                             <div
                                 key={video.id}
-                                className="group relative rounded-2xl overflow-hidden shadow-xl aspect-[9/16] bg-black border border-white/10"
+                                className={`group relative rounded-2xl overflow-hidden shadow-xl aspect-[9/16] bg-black border border-white/10 ${
+                                    idx > 0 ? "hidden sm:block" : "block"
+                                }`}
                             >
                                 {isPlaying ? (
                                     <iframe
@@ -107,6 +110,17 @@ export default function HomeVideoGallerySection() {
                             </div>
                         );
                     })}
+                </div>
+
+                {/* Mobile-Only CTA to Watch All Videos in Gallery */}
+                <div className="mt-8 text-center sm:hidden">
+                    <Link
+                        href="/gallery"
+                        className="inline-flex items-center justify-center gap-2 bg-[#2D7A70] text-white px-7 py-3 rounded-full text-sm font-bold shadow-md hover:bg-[#23635b] transition-colors"
+                    >
+                        <span>Watch All Ashram Videos</span>
+                        <span>→</span>
+                    </Link>
                 </div>
             </div>
         </section>

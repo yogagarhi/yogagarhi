@@ -73,9 +73,22 @@ export default function WhyChooseUs() {
                     <h4 className="font-heading text-2xl lg:text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
                       Pre-TTC Mentorship
                     </h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl">
+                    {/* Desktop full text */}
+                    <p className="hidden md:block text-muted-foreground text-sm leading-relaxed max-w-2xl">
                       Wondering if you are truly ready for a Yoga Teacher Training Course (TTC)? This preparatory program is designed specifically for practitioners who want to test their readiness. While most schools start on day one, we begin weeks earlier — online and completely free — helping you build a solid foundation so you arrive confident, grounded, and stress-free.
                     </p>
+                    {/* Mobile accordion */}
+                    <div className="md:hidden text-muted-foreground text-xs leading-relaxed">
+                      <p>Wondering if you are truly ready for a Yoga Teacher Training Course (TTC)? This preparatory program helps build your solid foundation...</p>
+                      <details className="mt-2 cursor-pointer group">
+                        <summary className="text-amber-700 dark:text-amber-400 font-bold uppercase text-[11px] tracking-wider select-none list-none outline-none hover:underline">
+                          Read full details ▾
+                        </summary>
+                        <div className="pt-2 text-xs leading-relaxed text-foreground/90">
+                          While most schools start on day one, we begin weeks earlier — online and completely free — helping you build a solid foundation so you arrive confident, grounded, and stress-free.
+                        </div>
+                      </details>
+                    </div>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
                     <div className="flex items-center gap-3">
@@ -120,9 +133,22 @@ export default function WhyChooseUs() {
                     <h4 className="font-heading text-2xl lg:text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
                       Your Teacher Stays With You For One Year
                     </h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl">
+                    {/* Desktop full text */}
+                    <p className="hidden md:block text-muted-foreground text-sm leading-relaxed max-w-2xl">
                       Most schools say goodbye on graduation day. We don't. For 12 months after your training, you get monthly live sessions with us — feedback on your real classes if you teach, guidance on your personal practice if you don't — and a teacher you can write to when you're stuck. This isn't a new idea we invented for marketing: students from our founder's past trainings have been practicing with him online for three, four, even five years after their course ended. We simply made into a promise what was already true.
                     </p>
+                    {/* Mobile accordion */}
+                    <div className="md:hidden text-muted-foreground text-xs leading-relaxed">
+                      <p>Most schools say goodbye on graduation day. We don't. For 12 months after your training, you get monthly live sessions with us...</p>
+                      <details className="mt-2 cursor-pointer group">
+                        <summary className="text-amber-700 dark:text-amber-400 font-bold uppercase text-[11px] tracking-wider select-none list-none outline-none hover:underline">
+                          Read full details ▾
+                        </summary>
+                        <div className="pt-2 text-xs leading-relaxed text-foreground/90">
+                          Get feedback on your real classes if you teach, guidance on your personal practice if you don't — and a teacher you can write to when you're stuck. Students from our founder's past trainings have been practicing with him online for years after their course ended.
+                        </div>
+                      </details>
+                    </div>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">

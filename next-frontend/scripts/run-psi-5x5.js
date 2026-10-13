@@ -11,7 +11,7 @@ if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
 
 function fetchHtmlStats(url) {
   return new Promise((resolve) => {
-    https.get(url, (res) => {
+    https.get(url, { rejectUnauthorized: false }, (res) => {
       let body = '';
       res.on('data', chunk => body += chunk);
       res.on('end', () => {
@@ -26,45 +26,14 @@ function fetchHtmlStats(url) {
   });
 }
 
-function extractMetricsFromLh(lh) {
-  if (!lh) return null;
-  const perfScore = Math.round((lh.categories?.performance?.score || 0) * 100);
-  const a11yScore = Math.round((lh.categories?.accessibility?.score || 0) * 100);
-  const bpScore = Math.round((lh.categories?.['best-practices']?.score || 0) * 100);
-  const seoScore = Math.round((lh.categories?.seo?.score || 0) * 100);
+function parseSeconds(str) {
+  if (!str) return 0;
+  return parseFloat(str.replace(/[^0-9.]/g, ''));
+}
 
-  const fcpMs = lh.audits?.['first-contentful-paint']?.numericValue || 0;
-  const lcpMs = lh.audits?.['largest-contentful-paint']?.numericValue || 0;
-  const tbtMs = lh.audits?.['total-blocking-time']?.numericValue || 0;
-  const siMs = lh.audits?.['speed-index']?.numericValue || 0;
-  const clsVal = lh.audits?.['cumulative-layout-shift']?.numericValue || 0;
-
-  const lcpElemItem = lh.audits?.['largest-contentful-paint-element']?.details?.items?.[0];
-  const lcpBreakdownItems = lh.audits?.['largest-contentful-paint-element']?.details?.items?.[1]?.items || [];
-
-  return {
-    formFactor: lh.configSettings?.formFactor,
-    scores: {
-      Performance: perfScore,
-      Accessibility: a11yScore,
-      BestPractices: bpScore,
-      SEO: seoScore
-    },
-    metrics: {
-      FCP_s: Number((fcpMs / 1000).toFixed(2)),
-      LCP_s: Number((lcpMs / 1000).toFixed(2)),
-      TBT_ms: Math.round(tbtMs),
-      SI_s: Number((siMs / 1000).toFixed(2)),
-      CLS: Number(clsVal.toFixed(3)),
-      FCP_display: lh.audits?.['first-contentful-paint']?.displayValue,
-      LCP_display: lh.audits?.['largest-contentful-paint']?.displayValue,
-      TBT_display: lh.audits?.['total-blocking-time']?.displayValue,
-      SI_display: lh.audits?.['speed-index']?.displayValue,
-      CLS_display: lh.audits?.['cumulative-layout-shift']?.displayValue
-    },
-    lcpElement: lcpElemItem?.items?.[0]?.node?.snippet || lcpElemItem?.node?.snippet || 'unknown',
-    lcpBreakdown: lcpBreakdownItems
-  };
+function parseMs(str) {
+  if (!str) return 0;
+  return parseFloat(str.replace(/[^0-9.]/g, ''));
 }
 
 async function runSinglePair(runNum) {
@@ -81,37 +50,26 @@ async function runSinglePair(runNum) {
   const page = await browser.newPage();
   await page.setViewport({ width: 1400, height: 1000 });
 
-  let mobileLh = null;
-  let desktopLh = null;
+  let capturedMobileLh = null;
+  let capturedDesktopLh = null;
 
   page.on('response', async (res) => {
     const url = res.url();
-    if (url.includes('batchexecute') && url.includes('LsX2he')) {
+    if (url.includes('batchexecute') || url.includes('pagespeed') || url.includes('lighthouse')) {
       try {
         const text = await res.text();
-        const lines = text.split('\n');
-        for (const line of lines) {
-          if (line.startsWith('[') || line.includes('wrb.fr')) {
+        if (text.includes('lighthouseVersion')) {
+          // Find JSON inside batchexecute
+          const match = text.match(/\["wrb\.fr","LsX2he","(.*?)"\s*,\s*null/s);
+          if (match && match[1]) {
             try {
-              const parsed = JSON.parse(line);
-              for (const item of parsed) {
-                if (item && item[1] === 'LsX2he' && typeof item[2] === 'string') {
-                  const payload = JSON.parse(item[2]);
-                  const raw = payload?.[0]?.[0]?.[9];
-                  if (raw && typeof raw === 'string' && raw.includes('lighthouseVersion')) {
-                    const parsedLh = JSON.parse(raw);
-                    const ff = parsedLh.configSettings?.formFactor;
-                    if (ff === 'mobile') {
-                      mobileLh = parsedLh;
-                      const m = extractMetricsFromLh(mobileLh);
-                      console.log(`  -> Captured MOBILE Lighthouse JSON (Run #${runNum}): Score=${m.scores.Performance}, LCP=${m.metrics.LCP_s}s, TBT=${m.metrics.TBT_ms}ms, FCP=${m.metrics.FCP_s}s, CLS=${m.metrics.CLS}`);
-                    } else if (ff === 'desktop') {
-                      desktopLh = parsedLh;
-                      const d = extractMetricsFromLh(desktopLh);
-                      console.log(`  -> Captured DESKTOP Lighthouse JSON (Run #${runNum}): Score=${d.scores.Performance}, LCP=${d.metrics.LCP_s}s, TBT=${d.metrics.TBT_ms}ms, FCP=${d.metrics.FCP_s}s, CLS=${d.metrics.CLS}`);
-                    }
-                  }
-                }
+              const unesc = JSON.parse(`"${match[1]}"`);
+              const payload = JSON.parse(unesc);
+              const raw = payload?.[0]?.[0]?.[9];
+              if (raw && typeof raw === 'string') {
+                const parsedLh = JSON.parse(raw);
+                if (parsedLh.configSettings?.formFactor === 'mobile') capturedMobileLh = parsedLh;
+                if (parsedLh.configSettings?.formFactor === 'desktop') capturedDesktopLh = parsedLh;
               }
             } catch (e) {}
           }
@@ -121,28 +79,132 @@ async function runSinglePair(runNum) {
   });
 
   const queryUrl = `https://pagespeed.web.dev/analysis?url=${encodeURIComponent(TARGET_URL)}`;
+  console.log('Navigating to:', queryUrl);
   await page.goto(queryUrl, { waitUntil: 'domcontentloaded' });
 
-  // Wait up to 150s for both mobileLh and desktopLh to be captured
-  const start = Date.now();
-  while ((!mobileLh || !desktopLh) && Date.now() - start < 150000) {
-    await new Promise(r => setTimeout(r, 1000));
-  }
+  console.log('Waiting for analysis to complete...');
+  await page.waitForSelector('.lh-gauge__percentage', { timeout: 150000 });
+  console.log('Analysis finished! Reading metrics...');
 
+  // Dismiss cookie banner
+  await page.evaluate(() => {
+    const btn = Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Got it') || b.textContent.includes('OK') || b.textContent.includes('Accept'));
+    if (btn) btn.click();
+  });
+
+  await new Promise(r => setTimeout(r, 2000));
+
+  // 1. Read Mobile Tab
+  await page.evaluate(() => {
+    const mobileBtn = document.querySelector('#mobile_tab, [id*="mobile"], button[aria-controls*="mobile"]') ||
+      Array.from(document.querySelectorAll('button, [role="tab"]')).find(t => t.textContent.trim().startsWith('Mobile'));
+    if (mobileBtn) mobileBtn.click();
+  });
+  await new Promise(r => setTimeout(r, 2000));
+
+  const mobileData = await page.evaluate(() => {
+    const scores = {};
+    document.querySelectorAll('.lh-category-header, .lh-gauge__wrapper').forEach(el => {
+      if (el.offsetParent === null) return;
+      const label = el.querySelector('.lh-gauge__label')?.textContent?.trim();
+      const pct = el.querySelector('.lh-gauge__percentage')?.textContent?.trim();
+      if (label && pct) scores[label] = parseInt(pct, 10);
+    });
+
+    const metrics = {};
+    document.querySelectorAll('.lh-metric').forEach(m => {
+      if (m.offsetParent === null) return;
+      const title = m.querySelector('.lh-metric__title')?.textContent?.trim();
+      const val = m.querySelector('.lh-metric__value')?.textContent?.trim();
+      if (title && val) metrics[title] = val;
+    });
+
+    const lcpElem = document.querySelector('[id*="largest-contentful-paint-element"]')?.closest('.lh-audit');
+    const lcpSnippet = lcpElem?.querySelector('.lh-node__snippet')?.textContent?.trim() ||
+      lcpElem?.querySelector('.lh-snippet')?.textContent?.trim() || '';
+
+    return { scores, metrics, lcpSnippet };
+  });
+
+  // 2. Read Desktop Tab
+  await page.evaluate(() => {
+    const desktopBtn = document.querySelector('#desktop_tab, [id*="desktop"], button[aria-controls*="desktop"]') ||
+      Array.from(document.querySelectorAll('button, [role="tab"]')).find(t => t.textContent.trim().startsWith('Desktop'));
+    if (desktopBtn) desktopBtn.click();
+  });
+  await new Promise(r => setTimeout(r, 4000));
+
+  const desktopData = await page.evaluate(() => {
+    const scores = {};
+    document.querySelectorAll('.lh-category-header, .lh-gauge__wrapper').forEach(el => {
+      if (el.offsetParent === null) return;
+      const label = el.querySelector('.lh-gauge__label')?.textContent?.trim();
+      const pct = el.querySelector('.lh-gauge__percentage')?.textContent?.trim();
+      if (label && pct) scores[label] = parseInt(pct, 10);
+    });
+
+    const metrics = {};
+    document.querySelectorAll('.lh-metric').forEach(m => {
+      if (m.offsetParent === null) return;
+      const title = m.querySelector('.lh-metric__title')?.textContent?.trim();
+      const val = m.querySelector('.lh-metric__value')?.textContent?.trim();
+      if (title && val) metrics[title] = val;
+    });
+
+    return { scores, metrics };
+  });
+
+  const mobileScreenshotPath = path.join(OUT_DIR, `mobile-run-${runNum}.png`);
+  // Switch back to mobile for screenshot
+  await page.evaluate(() => {
+    const mobileBtn = document.querySelector('#mobile_tab, [id*="mobile"], button[aria-controls*="mobile"]') ||
+      Array.from(document.querySelectorAll('button, [role="tab"]')).find(t => t.textContent.trim().startsWith('Mobile'));
+    if (mobileBtn) mobileBtn.click();
+  });
   await new Promise(r => setTimeout(r, 1500));
+  await page.screenshot({ path: mobileScreenshotPath, fullPage: false });
+
   await browser.close();
 
-  if (mobileLh) {
-    fs.writeFileSync(path.join(OUT_DIR, `mobile-lh-run-${runNum}.json`), JSON.stringify(mobileLh, null, 2));
-  }
-  if (desktopLh) {
-    fs.writeFileSync(path.join(OUT_DIR, `desktop-lh-run-${runNum}.json`), JSON.stringify(desktopLh, null, 2));
-  }
+  const mPerf = capturedMobileLh ? Math.round((capturedMobileLh.categories?.performance?.score || 0) * 100) : (mobileData.scores?.Performance || 0);
+  const mLcp = capturedMobileLh ? Number(((capturedMobileLh.audits?.['largest-contentful-paint']?.numericValue || 0) / 1000).toFixed(2)) : parseSeconds(mobileData.metrics?.['Largest Contentful Paint']);
+  const mTbt = capturedMobileLh ? Math.round(capturedMobileLh.audits?.['total-blocking-time']?.numericValue || 0) : parseMs(mobileData.metrics?.['Total Blocking Time']);
+  const mFcp = capturedMobileLh ? Number(((capturedMobileLh.audits?.['first-contentful-paint']?.numericValue || 0) / 1000).toFixed(2)) : parseSeconds(mobileData.metrics?.['First Contentful Paint']);
+  const mSi = capturedMobileLh ? Number(((capturedMobileLh.audits?.['speed-index']?.numericValue || 0) / 1000).toFixed(2)) : parseSeconds(mobileData.metrics?.['Speed Index']);
+  const mCls = capturedMobileLh ? Number((capturedMobileLh.audits?.['cumulative-layout-shift']?.numericValue || 0).toFixed(3)) : parseFloat(mobileData.metrics?.['Cumulative Layout Shift'] || '0');
+  const mA11y = capturedMobileLh ? Math.round((capturedMobileLh.categories?.accessibility?.score || 0) * 100) : (mobileData.scores?.Accessibility || 0);
+
+  const dPerf = capturedDesktopLh ? Math.round((capturedDesktopLh.categories?.performance?.score || 0) * 100) : (desktopData.scores?.Performance || 0);
+  const dLcp = capturedDesktopLh ? Number(((capturedDesktopLh.audits?.['largest-contentful-paint']?.numericValue || 0) / 1000).toFixed(2)) : parseSeconds(desktopData.metrics?.['Largest Contentful Paint']);
+  const dTbt = capturedDesktopLh ? Math.round(capturedDesktopLh.audits?.['total-blocking-time']?.numericValue || 0) : parseMs(desktopData.metrics?.['Total Blocking Time']);
+  const dFcp = capturedDesktopLh ? Number(((capturedDesktopLh.audits?.['first-contentful-paint']?.numericValue || 0) / 1000).toFixed(2)) : parseSeconds(desktopData.metrics?.['First Contentful Paint']);
+  const dSi = capturedDesktopLh ? Number(((capturedDesktopLh.audits?.['speed-index']?.numericValue || 0) / 1000).toFixed(2)) : parseSeconds(desktopData.metrics?.['Speed Index']);
+  const dCls = capturedDesktopLh ? Number((capturedDesktopLh.audits?.['cumulative-layout-shift']?.numericValue || 0).toFixed(3)) : parseFloat(desktopData.metrics?.['Cumulative Layout Shift'] || '0');
+
+  console.log(`\nRun #${runNum} RESULTS:`);
+  console.log(`  MOBILE:  Score=${mPerf}, LCP=${mLcp}s, TBT=${mTbt}ms, FCP=${mFcp}s, SI=${mSi}s, CLS=${mCls}, A11y=${mA11y}`);
+  console.log(`  DESKTOP: Score=${dPerf}, LCP=${dLcp}s, TBT=${dTbt}ms, FCP=${dFcp}s, SI=${dSi}s, CLS=${dCls}`);
 
   return {
     runNum,
-    mobile: extractMetricsFromLh(mobileLh),
-    desktop: extractMetricsFromLh(desktopLh)
+    mobile: {
+      perf: mPerf,
+      lcp: mLcp,
+      tbt: mTbt,
+      fcp: mFcp,
+      si: mSi,
+      cls: mCls,
+      a11y: mA11y,
+      lcpSnippet: mobileData.lcpSnippet
+    },
+    desktop: {
+      perf: dPerf,
+      lcp: dLcp,
+      tbt: dTbt,
+      fcp: dFcp,
+      si: dSi,
+      cls: dCls
+    }
   };
 }
 
@@ -160,38 +222,30 @@ async function main() {
 
   const runs = [];
   for (let i = 1; i <= 5; i++) {
-    let attempt = 0;
     let res = null;
-    while (attempt < 2 && (!res || !res.mobile || !res.desktop)) {
-      attempt++;
-      try {
-        res = await runSinglePair(i);
-      } catch (e) {
-        console.error(`Run #${i} attempt ${attempt} error:`, e.message);
-      }
-      if (!res?.mobile || !res?.desktop) {
-        console.log(`Retrying Run #${i} after 5s...`);
-        await new Promise(r => setTimeout(r, 5000));
-      }
+    try {
+      res = await runSinglePair(i);
+    } catch (e) {
+      console.error(`Run #${i} error:`, e.message);
     }
     if (res) runs.push(res);
     if (i < 5) await new Promise(r => setTimeout(r, 4000));
   }
 
-  const mScores = runs.map(r => r.mobile?.scores?.Performance);
-  const mLcps = runs.map(r => r.mobile?.metrics?.LCP_s);
-  const mTbts = runs.map(r => r.mobile?.metrics?.TBT_ms);
-  const mFcps = runs.map(r => r.mobile?.metrics?.FCP_s);
-  const mSis = runs.map(r => r.mobile?.metrics?.SI_s);
-  const mClss = runs.map(r => r.mobile?.metrics?.CLS);
-  const mA11y = runs.map(r => r.mobile?.scores?.Accessibility);
+  const mScores = runs.map(r => r.mobile.perf);
+  const mLcps = runs.map(r => r.mobile.lcp);
+  const mTbts = runs.map(r => r.mobile.tbt);
+  const mFcps = runs.map(r => r.mobile.fcp);
+  const mSis = runs.map(r => r.mobile.si);
+  const mClss = runs.map(r => r.mobile.cls);
+  const mA11y = runs.map(r => r.mobile.a11y);
 
-  const dScores = runs.map(r => r.desktop?.scores?.Performance);
-  const dLcps = runs.map(r => r.desktop?.metrics?.LCP_s);
-  const dTbts = runs.map(r => r.desktop?.metrics?.TBT_ms);
-  const dFcps = runs.map(r => r.desktop?.metrics?.FCP_s);
-  const dSis = runs.map(r => r.desktop?.metrics?.SI_s);
-  const dClss = runs.map(r => r.desktop?.metrics?.CLS);
+  const dScores = runs.map(r => r.desktop.perf);
+  const dLcps = runs.map(r => r.desktop.lcp);
+  const dTbts = runs.map(r => r.desktop.tbt);
+  const dFcps = runs.map(r => r.desktop.fcp);
+  const dSis = runs.map(r => r.desktop.si);
+  const dClss = runs.map(r => r.desktop.cls);
 
   const summary = {
     stepLabel,
@@ -211,7 +265,7 @@ async function main() {
       clss: mClss,
       medianCls: computeMedian(mClss),
       medianA11y: computeMedian(mA11y),
-      lcpElement: runs[0]?.mobile?.lcpElement
+      lcpSnippet: runs[0]?.mobile?.lcpSnippet
     },
     desktop: {
       scores: dScores,
@@ -244,7 +298,7 @@ async function main() {
   console.log(`  SI (s):      [${mSis.join(', ')}] -> MEDIAN: ${summary.mobile.medianSi}s`);
   console.log(`  CLS:         [${mClss.join(', ')}] -> MEDIAN: ${summary.mobile.medianCls}`);
   console.log(`  A11y Median: ${summary.mobile.medianA11y}`);
-  console.log(`  LCP Element: ${summary.mobile.lcpElement}`);
+  console.log(`  LCP Snippet: ${summary.mobile.lcpSnippet}`);
   console.log(`DESKTOP (5 runs):`);
   console.log(`  Perf Scores: [${dScores.join(', ')}] -> MEDIAN: ${summary.desktop.medianScore}`);
   console.log(`  LCP (s):     [${dLcps.join(', ')}] -> MEDIAN: ${summary.desktop.medianLcp}s`);
