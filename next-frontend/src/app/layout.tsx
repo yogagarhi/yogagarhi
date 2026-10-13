@@ -8,7 +8,7 @@ const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap",
-  preload: true,
+  preload: false,
 });
 
 const cormorantItalic = Cormorant_Garamond({
@@ -119,9 +119,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${plusJakarta.variable} ${cormorantItalic.variable}`} suppressHydrationWarning>
       <head>
-
-
-        {/* Preload Hero image first in head for immediate scanner discovery before fonts and CSS */}
+        {/* Preload Hero image in head for instant browser scanner discovery */}
         <link
           rel="preload"
           as="image"
@@ -142,6 +140,8 @@ export default function RootLayout({
           media="(min-width: 769px)"
           fetchPriority="high"
         />
+
+
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#0f766e" />
         {/* Initialize dataLayer immediately for early conversion events */}

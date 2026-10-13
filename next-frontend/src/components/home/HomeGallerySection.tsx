@@ -95,7 +95,7 @@ const HomeGallerySection = () => {
                   aria-label={`View gallery image ${index + 1}: ${image.label}`}
                   onClick={() => setActiveIndex(index)}
                   className={`
-                    relative aspect-square rounded-lg md:rounded-xl overflow-hidden transition-all duration-300
+                    ${index >= 4 ? 'hidden md:block ' : ''}relative aspect-square rounded-lg md:rounded-xl overflow-hidden transition-all duration-300
                     ${activeIndex === index
                       ? 'ring-2 ring-primary ring-offset-2 ring-offset-secondary/20 scale-95'
                       : 'hover:scale-105 opacity-70 hover:opacity-100'

@@ -142,7 +142,7 @@ export default function StudentStoriesInteractiveIsland({
                 type="button"
                 aria-label={`Select testimonial video by ${video.name}`}
                 onClick={() => handleVideoChange(index)}
-                className={`w-full flex items-center gap-4 p-3 rounded-xl transition-all duration-300 text-left group ${activeVideo === index
+                className={`w-full ${index >= 2 ? 'hidden sm:flex' : 'flex'} items-center gap-4 p-3 rounded-xl transition-all duration-300 text-left group ${activeVideo === index
                   ? 'bg-primary/10 border-l-4 border-primary'
                   : 'hover:bg-secondary/50 border-l-4 border-transparent'
                   }`}
