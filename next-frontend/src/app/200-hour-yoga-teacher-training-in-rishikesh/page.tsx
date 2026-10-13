@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Course200HourRishikesh from "@/components/pages/Course200HourRishikesh";
 import { courseData } from "@/constants/courses";
+import { BATCHES_200_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
 
 /* =========================
    SEO METADATA
@@ -88,9 +89,11 @@ export default function Page() {
         },
         "coursePrerequisites":
             "Basic yoga practice recommended but not mandatory",
-        "hasCourseInstance": {
+        "hasCourseInstance": filterUpcomingBatches(BATCHES_200_HOUR).map((batch) => ({
             "@type": "CourseInstance",
             "courseMode": "onsite",
+            "startDate": batch.startDate,
+            "endDate": batch.endDate,
             "duration": "P24D",
             "location": {
                 "@type": "Place",
@@ -102,7 +105,7 @@ export default function Page() {
                     "addressCountry": "India"
                 }
             }
-        },
+        })),
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",

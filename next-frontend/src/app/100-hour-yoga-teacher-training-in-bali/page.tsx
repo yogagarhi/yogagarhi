@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Course100Hour from "@/components/pages/Course100Hour";
 import { courseData } from "@/constants/courses";
+import { BATCHES_100_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
 
 /* =========================
    SEO METADATA
@@ -114,9 +115,11 @@ export default function Page() {
             "audienceType": "Beginner yoga practitioners"
         },
         "coursePrerequisites": "No prior teaching experience required",
-        "hasCourseInstance": {
+        "hasCourseInstance": filterUpcomingBatches(BATCHES_100_HOUR).map((batch) => ({
             "@type": "CourseInstance",
             "courseMode": "onsite",
+            "startDate": batch.startDate,
+            "endDate": batch.endDate,
             "duration": "P12D",
             "location": {
                 "@type": "Place",
@@ -128,7 +131,7 @@ export default function Page() {
                     "addressCountry": "Indonesia"
                 }
             }
-        },
+        })),
         "offers": {
             "@type": "Offer",
             "price": course.price.replace("$", ""),

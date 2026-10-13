@@ -21,10 +21,13 @@ const EarlyBirdPopup = () => {
     // If already dismissed, don't show
     if (isDismissed) return;
 
-    // Show popup after 4 seconds
+    // Show popup: on mobile trigger smoothly after mount (since MainLayout already waited for scroll or idle+8s);
+    // on desktop keep original 4s delay after mount.
+    const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+    const delay = isMobile ? 80 : 4000;
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 4000);
+    }, delay);
 
     return () => clearTimeout(timer);
   }, [isDismissed]);
@@ -37,62 +40,65 @@ const EarlyBirdPopup = () => {
     }
   };
 
-  // Removed handleContactClick as we are using Link component now
-
   if (isDismissed) return null;
 
   return (
     <div
-      className={`fixed left-0 top-1/2 -translate-y-1/2 z-40 transition-transform duration-500 ease-out ${isVisible ? 'translate-x-0' : '-translate-x-full'
-        } scale-[0.8] sm:scale-100 origin-left`}
+      className={`fixed z-40 transition-all duration-500 ease-out
+        bottom-3 left-3 right-3 max-w-[380px] mx-auto
+        md:bottom-auto md:left-0 md:right-auto md:top-1/2 md:-translate-y-1/2 md:max-w-none md:mx-0 md:origin-left
+        ${isVisible
+          ? 'translate-y-0 opacity-100 pointer-events-auto md:translate-x-0 md:opacity-100'
+          : 'translate-y-8 opacity-0 pointer-events-none md:-translate-x-full md:pointer-events-none'
+        }`}
     >
       <div className="relative">
-        {/* Close Button */}
+        {/* Close Button - 44px touch target on mobile, 28px on desktop */}
         <button
           onClick={handleDismiss}
-          className="absolute -right-3 -top-3 w-7 h-7 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center shadow-lg transition-colors z-10"
+          className="absolute -right-2 -top-2 md:-right-3 md:-top-3 min-w-[44px] min-h-[44px] w-11 h-11 md:w-7 md:h-7 md:min-w-0 md:min-h-0 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center shadow-lg transition-colors z-20 cursor-pointer"
           aria-label="Close popup"
         >
-          <X className="w-4 h-4 text-white" />
+          <X className="w-5 h-5 md:w-4 md:h-4 text-white" />
         </button>
 
         {/* Popup Content */}
-        <div className="relative overflow-hidden rounded-r-xl shadow-2xl">
+        <div className="relative overflow-hidden rounded-2xl md:rounded-r-xl md:rounded-l-none shadow-2xl border border-white/20 md:border-0">
           {/* Top Banner - "FOR" */}
-          <div className="bg-primary text-primary-foreground text-center py-1.5 px-6 relative">
-            <span className="text-xs font-bold tracking-widest uppercase">For</span>
+          <div className="bg-primary text-primary-foreground text-center py-1 md:py-1.5 px-4 md:px-6 relative">
+            <span className="text-[11px] md:text-xs font-bold tracking-widest uppercase">For</span>
             {/* Triangle decoration */}
-            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-t-[8px] border-l-transparent border-r-transparent border-t-primary" />
+            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[8px] md:border-l-[10px] border-r-[8px] md:border-r-[10px] border-t-[6px] md:border-t-[8px] border-l-transparent border-r-transparent border-t-primary" />
           </div>
 
           {/* Main Content */}
-          <div className="bg-gradient-to-b from-teal-500 to-teal-600 px-6 py-4 text-center relative">
+          <div className="bg-gradient-to-b from-teal-500 to-teal-600 px-4 md:px-6 py-2.5 md:py-4 text-center relative">
             {/* Sparkle decorations */}
-            <Sparkles className="absolute top-2 left-2 w-4 h-4 text-yellow-300 animate-pulse" />
-            <Sparkles className="absolute top-2 right-2 w-4 h-4 text-yellow-300 animate-pulse" />
+            <Sparkles className="absolute top-2 left-2 w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-300 animate-pulse" />
+            <Sparkles className="absolute top-2 right-2 w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-300 animate-pulse" />
 
-            <h3 className="text-white font-heading text-xl font-bold tracking-tight leading-tight">
+            <h3 className="text-white font-heading text-lg md:text-xl font-bold tracking-tight leading-tight">
               {PROMO_OFFER.popupTitle}
             </h3>
 
             {/* Bird Banner */}
-            <div className="relative -mx-6 my-2">
-              <div className="bg-primary py-2 px-4 transform -rotate-2">
-                <span className="text-primary-foreground font-heading text-lg font-bold">
+            <div className="relative -mx-4 md:-mx-6 my-1.5 md:my-2">
+              <div className="bg-primary py-1.5 md:py-2 px-3 md:px-4 transform -rotate-1 md:-rotate-2">
+                <span className="text-primary-foreground font-heading text-sm md:text-lg font-bold">
                   {PROMO_OFFER.popupBatches}
                 </span>
               </div>
             </div>
 
-            <p className="text-white font-heading text-lg font-semibold">
+            <p className="text-white font-heading text-base md:text-lg font-semibold">
               {PROMO_OFFER.popupDiscount}
             </p>
 
             {/* Decorative line */}
-            <div className="flex items-center justify-center gap-2 mt-2">
-              <span className="w-6 h-0.5 bg-white/40" />
-              <span className="text-yellow-300 text-lg">✦</span>
-              <span className="w-6 h-0.5 bg-white/40" />
+            <div className="flex items-center justify-center gap-2 mt-1.5 md:mt-2">
+              <span className="w-5 md:w-6 h-0.5 bg-white/40" />
+              <span className="text-yellow-300 text-sm md:text-lg">✦</span>
+              <span className="w-5 md:w-6 h-0.5 bg-white/40" />
             </div>
           </div>
 
@@ -102,10 +108,10 @@ const EarlyBirdPopup = () => {
               setShowQuickEnquiry(true);
               setIsVisible(false);
             }}
-            className="w-full bg-amber-700 hover:bg-amber-800 text-white py-3 px-6 font-bold text-sm tracking-wide uppercase transition-colors flex items-center justify-center gap-2 group"
+            className="w-full bg-amber-700 hover:bg-amber-800 text-white py-2.5 md:py-3 px-4 md:px-6 font-bold text-xs md:text-sm tracking-wide uppercase transition-colors flex items-center justify-center gap-2 group"
           >
             <span>Contact Us</span>
-            <span className="text-lg group-hover:translate-x-1 transition-transform">»</span>
+            <span className="text-base md:text-lg group-hover:translate-x-1 transition-transform">»</span>
           </button>
         </div>
       </div>

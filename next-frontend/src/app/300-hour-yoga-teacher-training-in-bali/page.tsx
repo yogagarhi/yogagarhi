@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Course300Hour from "@/components/pages/Course300Hour";
 import { courseData } from "@/constants/courses";
+import { BATCHES_300_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -78,9 +79,11 @@ export default function Page() {
       "name": "YogaGarhi",
       "url": "https://www.yogagarhi.com"
     },
-    "hasCourseInstance": {
+    "hasCourseInstance": filterUpcomingBatches(BATCHES_300_HOUR).map((batch) => ({
       "@type": "CourseInstance",
       "courseMode": "onsite",
+      "startDate": batch.startDate,
+      "endDate": batch.endDate,
       "duration": "P28D",
       "location": {
         "@type": "Place",
@@ -92,7 +95,7 @@ export default function Page() {
           "addressCountry": "Indonesia"
         }
       }
-    },
+    })),
     "offers": {
       "@type": "Offer",
       "price": course.price.replace("$", ""),

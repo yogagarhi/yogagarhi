@@ -7,6 +7,8 @@ import Image from "next/image";
 import Layout from "@/components/layout/Layout";
 import SEO, { generateCourseSchema } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
+import { BATCHES_200_HOUR, getBatchBadge } from "@/constants/courseDates";
+import { useUpcomingBatches } from "@/hooks/useUpcomingBatches";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -528,17 +530,6 @@ const dietaryOptions = [
   { icon: MessageSquare, name: "Custom Request", description: "Other diets on request" },
 ];
 
-// Upcoming Dates
-const upcomingDates = [
-  { date: "1 Sept - 24 Sept 2026", spotsLeft: 1, earlyBirdSaving: "$200" },
-  { date: "8 Oct - 31 Oct 2026", spotsLeft: 2, earlyBirdSaving: "$200" },
-  { date: "1 Nov - 24 Nov 2026", spotsLeft: 3, earlyBirdSaving: "$200" },
-  { date: "1 Dec - 24 Dec 2026", spotsLeft: 4, earlyBirdSaving: "$200" },
-  { date: "1 Jan - 24 Jan 2027", spotsLeft: 6, earlyBirdSaving: "$200" },
-  { date: "1 Feb - 24 Feb 2027", spotsLeft: 8, earlyBirdSaving: "$200" },
-];
-
-
 // Yogic Energy Quiz Questions
 const quizQuestions = [
   {
@@ -570,6 +561,7 @@ const quizQuestions = [
 // - [x] Standardize internal forms in `Course100HourRishikesh.tsx`
 // - [x] Standardize internal forms in `Course200HourRishikesh.tsx`
 export default function Course200HourRishikesh() {
+  const upcomingDates = useUpcomingBatches(BATCHES_200_HOUR);
   const { toast } = useToast();
   const router = useRouter();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
@@ -2074,8 +2066,7 @@ export default function Course200HourRishikesh() {
                 {/* Dates List */}
                 <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
                   {upcomingDates.map((item, index) => {
-                    const isFull = item.spotsLeft <= 0;
-                    const isUrgent = item.spotsLeft <= 2;
+                    const { isFull, isUrgent, text: badgeText, colorClass: badgeColorClass } = getBatchBadge(item);
                     return (
                       <div
                         key={index}
@@ -2101,11 +2092,8 @@ export default function Course200HourRishikesh() {
                               Fully Booked
                             </span>
                           ) : (
-                            <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${item.spotsLeft <= 3
-                              ? "bg-red-100 text-red-700"
-                              : "bg-secondary text-secondary-foreground"
-                              }`}>
-                              Only {item.spotsLeft} spots left
+                            <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${badgeColorClass}`}>
+                              {badgeText}
                             </span>
                           )}
 
