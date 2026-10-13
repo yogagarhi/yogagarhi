@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { X, Sparkles } from "lucide-react";
 import { useQuickEnquiry } from "./QuickEnquiryDialog";
+import { PROMO_OFFER } from "@/constants/offers";
 
 const EarlyBirdPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -71,20 +72,20 @@ const EarlyBirdPopup = () => {
             <Sparkles className="absolute top-2 right-2 w-4 h-4 text-yellow-300 animate-pulse" />
 
             <h3 className="text-white font-heading text-xl font-bold tracking-tight leading-tight">
-              Easter Sale 🎉:
+              {PROMO_OFFER.popupTitle}
             </h3>
 
             {/* Bird Banner */}
             <div className="relative -mx-6 my-2">
               <div className="bg-primary py-2 px-4 transform -rotate-2">
                 <span className="text-primary-foreground font-heading text-lg font-bold">
-                  August to December batches
+                  {PROMO_OFFER.popupBatches}
                 </span>
               </div>
             </div>
 
             <p className="text-white font-heading text-lg font-semibold">
-              Flat $300 OFF
+              {PROMO_OFFER.popupDiscount}
             </p>
 
             {/* Decorative line */}
