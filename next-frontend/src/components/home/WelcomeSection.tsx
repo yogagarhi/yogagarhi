@@ -107,7 +107,7 @@ export default function WelcomeSection() {
 
             {/* Quote Block */}
             <div className="relative pl-6 py-4 border-l-4 border-primary/40 bg-primary/5 rounded-r-lg">
-              <p className="text-foreground italic font-heading text-lg">
+              <p className="text-foreground italic text-lg">
                 "Every breath is a step towards freedom, every practice a journey towards wholeness."
               </p>
             </div>

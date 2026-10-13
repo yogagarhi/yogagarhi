@@ -87,17 +87,97 @@ const faqs: FAQItem[] = [
   },
 ];
 
+const top5MobileFaqs: FAQItem[] = [
+  faqs[0], // Visa
+  faqs[1], // Safety
+  faqs[8], // Courses
+  faqs[9], // Accommodation
+  faqs[10], // Meals
+];
+
 export default function FAQInteractiveGrid() {
   const [activeCategory, setActiveCategory] = useState("travel");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [mobileOpenIndex, setMobileOpenIndex] = useState<number | null>(0);
 
   const filteredFaqs = faqs.filter((faq) => faq.category === activeCategory);
 
   return (
-    <div className="grid lg:grid-cols-12 gap-12 items-start">
-      {/* Left Column - Header & Categories */}
-      <div className="lg:col-span-5">
-        <div className="lg:sticky lg:top-24">
+    <>
+      {/* Mobile Lite View: Top 5 FAQs + Contact link (preserves fast scroll & clean UI) */}
+      <div className="lg:hidden space-y-6">
+        <div className="text-center mb-6">
+          <div className="inline-flex items-center gap-2 mb-3">
+            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+              <HelpCircle className="w-5 h-5 text-primary" />
+            </div>
+            <span className="text-amber-800 dark:text-amber-300 font-bold tracking-wide uppercase text-sm">
+              Got Questions?
+            </span>
+          </div>
+          <h2 className="font-heading text-3xl font-bold text-foreground mb-2">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-muted-foreground text-sm leading-relaxed max-w-md mx-auto">
+            Essential answers about our yoga teacher training in Bali.
+          </p>
+        </div>
+
+        <div className="space-y-3">
+          {top5MobileFaqs.map((faq, index) => (
+            <div
+              key={index}
+              className={`rounded-xl border transition-all duration-300 overflow-hidden ${
+                mobileOpenIndex === index
+                  ? "bg-card border-primary/30 shadow-card"
+                  : "bg-card/50 border-border"
+              }`}
+            >
+              <button
+                onClick={() => setMobileOpenIndex(mobileOpenIndex === index ? null : index)}
+                className="w-full flex items-center justify-between gap-3 p-4 text-left"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center font-heading font-bold text-xs shrink-0">
+                    {index + 1}
+                  </span>
+                  <span className="font-heading font-semibold text-base text-foreground">
+                    {faq.question}
+                  </span>
+                </div>
+                <ChevronDown
+                  className={`w-4 h-4 text-primary shrink-0 transition-transform ${
+                    mobileOpenIndex === index ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {mobileOpenIndex === index && (
+                <div className="px-4 pb-4 pt-1 border-t border-border/40 text-sm text-muted-foreground leading-relaxed pl-14">
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
+        <div className="p-5 bg-secondary/30 rounded-xl border border-border text-center space-y-3 mt-4">
+          <p className="font-medium text-foreground text-sm">Have more questions about courses, dates, or travel?</p>
+          <div className="flex gap-3 justify-center">
+            <Button variant="default" size="sm" asChild>
+              <Link href="/contact-us">Ask Us Directly</Link>
+            </Button>
+            <Button variant="outline" size="sm" asChild>
+              <a href="https://wa.me/917895350563" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Full 2-Column Interactive Grid */}
+      <div className="hidden lg:grid lg:grid-cols-12 gap-12 items-start">
+        {/* Left Column - Header & Categories */}
+        <div className="lg:col-span-5">
+          <div className="lg:sticky lg:top-24">
           {/* Header */}
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -312,5 +392,6 @@ export default function FAQInteractiveGrid() {
         </div>
       </div>
     </div>
-  );
+  </>
+);
 }
