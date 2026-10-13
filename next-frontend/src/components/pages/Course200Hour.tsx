@@ -9,7 +9,7 @@ import Header from "@/components/layout/Header";
 import Layout from "@/components/layout/Layout";
 import SEO, { generateCourseSchema } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { BATCHES_200_HOUR, getBatchBadge } from "@/constants/courseDates";
+import { BATCHES_200_HOUR, CourseBatch, getBatchBadge } from "@/constants/courseDates";
 import { useUpcomingBatches } from "@/hooks/useUpcomingBatches";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -560,8 +560,8 @@ const quizQuestions = [
   },
 ];
 
-export default function Course200Hour() {
-  const upcomingDates = useUpcomingBatches(BATCHES_200_HOUR);
+export default function Course200Hour({ initialBatches }: { initialBatches?: CourseBatch[] } = {}) {
+  const upcomingDates = useUpcomingBatches(BATCHES_200_HOUR, initialBatches);
   const { toast } = useToast();
   const router = useRouter();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
@@ -1054,7 +1054,7 @@ export default function Course200Hour() {
                     Tuition only from {COURSE_200_HOUR_PRICING.shared.price} | Residential packages from {COURSE_200_HOUR_PRICING.private.price}
                   </p>
                   <p className="text-white/80 text-sm mt-1">
-                    Next available training: <span suppressHydrationWarning>{upcomingDates[0]?.date || BATCHES_200_HOUR[0].date}</span>
+                    Next available training: <span suppressHydrationWarning>{upcomingDates[0]?.date || initialBatches?.[0]?.date || BATCHES_200_HOUR[0].date}</span>
                   </p>
                 </div>
               </div>

@@ -59,10 +59,16 @@ export function generateMetadata(): Metadata {
 }
 
 /* =========================
+   ISR REVALIDATION
+========================= */
+export const revalidate = 86400; // Revalidate daily (24h) to keep batch dates fresh
+
+/* =========================
    PAGE
 ========================= */
 export default function Page() {
     const course = courseData["200-hour"];
+    const initialBatches = filterUpcomingBatches(BATCHES_200_HOUR);
     const pageUrl =
         "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali";
 
@@ -115,7 +121,7 @@ export default function Page() {
         },
         "coursePrerequisites":
             "Basic yoga practice recommended but not mandatory",
-        "hasCourseInstance": filterUpcomingBatches(BATCHES_200_HOUR).map((batch) => ({
+        "hasCourseInstance": initialBatches.map((batch) => ({
             "@type": "CourseInstance",
             "courseMode": "onsite",
             "startDate": batch.startDate,
@@ -132,13 +138,40 @@ export default function Page() {
                 }
             }
         })),
-        "offers": {
-            "@type": "Offer",
-            "price": course.price.replace("$", ""),
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": pageUrl
-        }
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Shared Room Package",
+                "price": "999",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": pageUrl
+            },
+            {
+                "@type": "Offer",
+                "name": "Private Room Package",
+                "price": "1750",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": pageUrl
+            },
+            {
+                "@type": "Offer",
+                "name": "Deluxe Private Room Package",
+                "price": "1899",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": pageUrl
+            },
+            {
+                "@type": "Offer",
+                "name": "VIP Suite Package",
+                "price": "2499",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": pageUrl
+            }
+        ]
     };
 
     /* =========================
@@ -276,7 +309,7 @@ export default function Page() {
                 }}
             />
 
-            <Course200Hour />
+            <Course200Hour initialBatches={initialBatches} />
         </>
     );
 }
