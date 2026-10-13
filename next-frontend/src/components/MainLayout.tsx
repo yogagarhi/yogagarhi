@@ -15,6 +15,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     const [mountEarlyBird, setMountEarlyBird] = useState(false);
 
     useEffect(() => {
+        if (typeof window !== 'undefined' && window.innerWidth <= 768) return;
         // Defer popup loading until after initial hydration and idle time
         const schedule = typeof window !== 'undefined' && 'requestIdleCallback' in window
             ? (cb: () => void) => window.requestIdleCallback(cb, { timeout: 4000 })
@@ -48,7 +49,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     return (
         <div className="min-h-screen flex flex-col">
             {!hideHeader && <Header />}
-            <main className={`flex-grow${!hideHeader ? ' pt-[68px] md:pt-[104px]' : ''}`}>{children}</main>
+            <main className={`flex-grow${!hideHeader ? ' pt-[144px] min-[375px]:pt-[154px] sm:pt-[104px]' : ''}`}>{children}</main>
             {!hideFooter && (
                 <>
                     <PartnershipsSection />

@@ -1,6 +1,6 @@
 export const PROMO_OFFER = {
   title: "Summer Sale",
-  discountText: "Flat $300 OFF",
+  discountText: "$300 OFF",
   batchesText: "on August to December batches",
   fullBannerText: "Summer Sale 🎉 Flat $300 OFF on August to December batches",
   compactBannerText: "Summer Sale: $300 OFF",

@@ -1,155 +1,131 @@
-import Image from "next/image";
-import { getCloudinaryUrl } from "@/utils/cloudinary";
 import HeroCTAButtons from "./HeroCTAButtons";
-import PromoCountdown from "@/components/PromoCountdown";
 import { PROMO_OFFER } from "@/constants/offers";
 
 export default function Hero() {
   return (
     <>
-    <section className="relative flex items-center justify-center overflow-hidden bg-[#1c130d] min-h-[90vh] pt-24 sm:pt-28 md:pt-32 pb-16 md:pb-20">
-      {/* Background Container: Desktop full cover, Mobile Option B uncropped photo centered + blurred background filler */}
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-[#1c130d]">
-        {/* Mobile pre-blurred background filler: zero CSS filter, zero transform, zero GPU/CPU raster cost */}
-        <div
-          className="md:hidden absolute inset-0 w-full h-full bg-cover bg-center pointer-events-none"
-          style={{
-            backgroundImage: `url("data:image/webp;base64,UklGRvwCAABXRUJQVlA4IPACAACQIgCdASpAAdUAPpFCnEulsaYho5CJ+jASCWlu4E1K3e17Cd9neH5fv//EQH3rc68Y/QAg5sidSYeeMYxh54dNG8QhG6FsGACOIQe8DjeAju7vaLWNgDB/fwTW8BU+jE+iiXrPj145TrWt5CWAT+Z+973vO/q0XBccUa+lsl0TdfcgCxQ3XeiFDh3DrO/5daK4XfYIgendegdlCjWd/9jLJysfiS0tFwYHlc6J4zsHGyYobOESsT42rEK4BFdh/b7Oim2ODtwtVZrOIDQTaO6b60+AeCcCwrJqOGoD2E/74RC+ljKr2ez3VxpN+YmMcLzwXSfvBr6yQnEw7Td/Ewz2SlNT5FzOPw4/3309O16Rfcv/ah7zn3Ev8XDybQAA/vdWFH+ter0yNHUtlJbtg6vL6ZAbLOzf80ekQM69qgkXjnmj+q5A9Ob6s8xfEN0EqQbih8IEmlZbxAVGJ0TiZuskKKcvIVwlF2ZkKx3VdsZY7/6QQSxxlGzlMmXpjVfP39xz9gfeRZT458hQOH/SND+vZYOuoi/BZlPY4UZm4A6mdZ1Oen832Hcux+mrlE8KJgGXta07xLb2KUuQkU0Yhy6rhEApBI6kRoP9Fbya1NffQpJo04o6G7lm1BAR+c6aj7ZELmU30ThKgOjvHLQrZrtzVLsXXwsR6k6ThRMgwhcRKw/OPF5OdliFMLQd+ilPA+CuFdAbq+SLjOUhBtydBRQEy1E/qWXBwcZdHBEJC2n720bZTPpWQWYuRu2z//6Jpqd5sXyW/uIcgrN+GVAoafGlpNDIuobW1zyirjAF3UhorDbe5GAR55SJmdiMTszAPmqu4QjlUaIqwPwhpfdQs5dXBssf0MVV6rf3eaZhjC3BPNFQIVNwgIPjj2IQPxb24nUfz+txiHAqluf8oRniqhmUSMYZxoiKGIHoavWqxAqKWYNAeCghAiLb9nx8ExNZbfjZ53D7KjhCwOvlNYyyZviXjFrOHAZ4oQVF1ijWqjjAAA==")`
-          }}
-        />
+      <section className="relative flex items-center justify-center overflow-hidden bg-[#1c130d] md:min-h-[90vh] pt-10 pb-12 sm:pt-14 sm:pb-16 md:pt-32 md:pb-20">
+        {/* Background Container: Full-bleed smart crop on mobile (zero cut faces), full cover on desktop */}
+        <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-[#1c130d]">
+          {/* Single Responsive Picture & exactly ONE <img> in DOM (LCP element) */}
+          <picture className="w-full h-full block relative z-10">
+            {/* Mobile smart-cropped responsive sources (AVIF with WebP fallback) */}
+            <source
+              media="(max-width: 768px)"
+              type="image/avif"
+              srcSet="/images/hero/hero-mobile-crop-360.avif 360w, /images/hero/hero-mobile-crop-420.avif 420w"
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 768px)"
+              type="image/webp"
+              srcSet="/images/hero/hero-mobile-crop-360.webp 360w, /images/hero/hero-mobile-crop-420.webp 420w"
+              sizes="100vw"
+            />
+            {/* Desktop responsive sources (AVIF with WebP fallback) */}
+            <source
+              media="(min-width: 769px)"
+              type="image/avif"
+              srcSet="/images/hero/hero-yoga-group-1080.avif 1080w, /images/hero/hero-yoga-group-1280.avif 1280w, /images/hero/hero-yoga-group-1920.avif 1920w"
+              sizes="100vw"
+            />
+            <source
+              media="(min-width: 769px)"
+              type="image/webp"
+              srcSet="/images/hero/hero-yoga-group-1080.webp 1080w, /images/hero/hero-yoga-group-1280.webp 1280w, /images/hero/hero-yoga-group-1920.webp 1920w"
+              sizes="100vw"
+            />
+            {/* Single Image Tag in entire DOM */}
+            <img
+              src="/images/hero/hero-mobile-crop-420.webp"
+              alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
+              fetchPriority="high"
+              decoding="sync"
+              width={420}
+              height={640}
+              className="w-full h-full object-cover object-[47%_68%] md:object-center block"
+            />
+          </picture>
 
-        {/* Single Responsive Picture & exactly ONE <img> in DOM (LCP element) */}
-        <picture className="w-full h-full block relative z-10">
-          {/* Mobile responsive sources (AVIF with WebP fallback) */}
-          <source
-            media="(max-width: 768px)"
-            type="image/avif"
-            srcSet="/images/hero/hero-yoga-group-412.avif 412w, /images/hero/hero-yoga-group-640.avif 640w, /images/hero/hero-yoga-group-750.avif 750w, /images/hero/hero-yoga-group-828.avif 828w, /images/hero/hero-yoga-group-1024.avif 1024w"
-            sizes="100vw"
-          />
-          <source
-            media="(max-width: 768px)"
-            type="image/webp"
-            srcSet="/images/hero/hero-yoga-group-412.webp 412w, /images/hero/hero-yoga-group-640.webp 640w, /images/hero/hero-yoga-group-750.webp 750w, /images/hero/hero-yoga-group-828.webp 828w, /images/hero/hero-yoga-group-1024.webp 1024w"
-            sizes="100vw"
-          />
-          {/* Desktop responsive sources (AVIF with WebP fallback) */}
-          <source
-            media="(min-width: 769px)"
-            type="image/avif"
-            srcSet="/images/hero/hero-yoga-group-1080.avif 1080w, /images/hero/hero-yoga-group-1280.avif 1280w, /images/hero/hero-yoga-group-1920.avif 1920w"
-            sizes="100vw"
-          />
-          <source
-            media="(min-width: 769px)"
-            type="image/webp"
-            srcSet="/images/hero/hero-yoga-group-1080.webp 1080w, /images/hero/hero-yoga-group-1280.webp 1280w, /images/hero/hero-yoga-group-1920.webp 1920w"
-            sizes="100vw"
-          />
-          {/* Single Image Tag in entire DOM */}
-          <img
-            src="/images/hero/hero-yoga-group-750.webp"
-            alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
-            fetchPriority="high"
-            decoding="sync"
-            width={1024}
-            height={684}
-            className="w-full h-full object-contain md:object-cover object-center block"
-          />
-        </picture>
+          {/* Contrast overlay for WCAG AA text readability */}
+          <div className="absolute inset-0 z-10 bg-black/45 md:bg-black/40 pointer-events-none" />
+        </div>
 
-        {/* Contrast overlay: darker on mobile for perfect WCAG AA readability, standard 40% on desktop */}
-        <div className="absolute inset-0 z-10 bg-black/60 md:bg-black/40 pointer-events-none" />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-20 container mx-auto px-4 text-center text-primary-foreground">
-
-        <div className="max-w-4xl mx-auto space-y-6 md:space-y-8">
-          {/* Mobile In-Hero Compact Offer Pill (Replaces heavy top bar on mobile) */}
-          <div className="md:hidden inline-flex items-center gap-2 bg-black/60 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-amber-400/30 text-amber-300 text-xs font-semibold shadow-md">
-            <span>🎉 {PROMO_OFFER.compactBannerText}</span>
-            <span className="opacity-40">|</span>
-            <span className="text-white font-medium text-[11px] flex items-center gap-1.5">
-              Ends in: <PromoCountdown className="scale-75 origin-left inline-flex" />
-            </span>
-          </div>
-
-          <p className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.3em] uppercase opacity-90">
-            Welcome To
-          </p>
-          <div className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
-            {"Yogagarh".split("").map((char, index) => (
-              <span
-                key={index}
-                className="inline-block"
-              >
-                {char}
-              </span>
-            ))}
-            {/* Custom "i" with lotus dot */}
-            <span
-              className="inline-block relative"
-            >
-              <span className="relative">
-                {/* The "i" stem without dot */}
-                <span className="font-heading">ı</span>
-                {/* Star symbol as the dot - closer and animated */}
+        {/* Content */}
+        <div className="relative z-20 container mx-auto px-4 text-center text-primary-foreground">
+          <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6 md:space-y-8">
+            <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.25em] sm:tracking-[0.3em] uppercase opacity-90">
+              Welcome To
+            </p>
+            <div className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
+              {"Yogagarh".split("").map((char, index) => (
                 <span
-                  className="absolute -top-[0.02em] left-1/2 -translate-x-1/2 text-[0.4em] animate-none md:animate-pulse"
+                  key={index}
+                  className="inline-block"
                 >
-                  ✦
+                  {char}
+                </span>
+              ))}
+              {/* Custom "i" with lotus dot */}
+              <span className="inline-block relative">
+                <span className="relative">
+                  {/* The "i" stem without dot */}
+                  <span className="font-heading">ı</span>
+                  {/* Star symbol as the dot - closer and animated on desktop only */}
+                  <span className="absolute -top-[0.02em] left-1/2 -translate-x-1/2 text-[0.4em] animate-none md:animate-pulse">
+                    ✦
+                  </span>
                 </span>
               </span>
-            </span>
-          </div>
-          <h1 className="text-xl md:text-3xl font-heading font-medium max-w-4xl mx-auto">
-            Yoga Alliance Certified Yoga Teacher Training in Bali & Rishikesh
-          </h1>
-          <p className="text-lg md:text-xl font-light max-w-2xl mx-auto">
-            Ancient Himalayan wisdom. Authentic yoga, lived & taught.
-          </p>
+            </div>
+            <h1 className="text-lg sm:text-xl md:text-3xl font-heading font-medium max-w-4xl mx-auto leading-snug">
+              Yoga Alliance Certified Yoga Teacher Training in Bali & Rishikesh
+            </h1>
+            <p className="text-sm sm:text-lg md:text-xl font-light max-w-2xl mx-auto">
+              Ancient Himalayan wisdom. Authentic yoga, lived & taught.
+            </p>
 
-          {/* Client Island: Interactive CTA Buttons */}
-          <HeroCTAButtons />
+            {/* Desktop-Only Stats (Inside Hero on Desktop, Shifted Right Below Hero on Mobile) */}
+            <div className="hidden md:block space-y-8 pt-4">
+              {/* Stats Row 1 */}
+              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+                <div className="text-center">
+                  <p className="font-heading text-3xl md:text-4xl font-bold">500+</p>
+                  <p className="text-xs md:text-sm opacity-80">Graduated Students</p>
+                </div>
+                <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
+                <div className="text-center">
+                  <p className="font-heading text-3xl md:text-4xl font-bold">Multi-Style</p>
+                  <p className="text-xs md:text-sm opacity-80">Authentic Yoga</p>
+                </div>
+                <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
+                <div className="text-center">
+                  <p className="font-heading text-3xl md:text-4xl font-bold">Ayurveda</p>
+                  <p className="text-xs md:text-sm opacity-80">Strong Basis</p>
+                </div>
+              </div>
 
-          {/* Desktop-Only Stats & Offer Box (Inside Hero on Desktop) */}
-          <div className="hidden md:block space-y-8 pt-4">
-            {/* Stats Row 1 */}
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-              <div className="text-center">
-                <p className="font-heading text-3xl md:text-4xl font-bold">500+</p>
-                <p className="text-xs md:text-sm opacity-80">Graduated Students</p>
-              </div>
-              <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
-              <div className="text-center">
-                <p className="font-heading text-3xl md:text-4xl font-bold">Multi-Style</p>
-                <p className="text-xs md:text-sm opacity-80">Authentic Yoga</p>
-              </div>
-              <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
-              <div className="text-center">
-                <p className="font-heading text-3xl md:text-4xl font-bold">Ayurveda</p>
-                <p className="text-xs md:text-sm opacity-80">Strong Basis</p>
+              {/* Stats Row 2 */}
+              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+                <div className="text-center">
+                  <p className="font-heading text-3xl md:text-4xl font-bold">Yoga Alliance</p>
+                  <p className="text-xs md:text-sm opacity-80">Certified School</p>
+                </div>
+                <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
+                <div className="text-center">
+                  <p className="font-heading text-3xl md:text-4xl font-bold">World's First</p>
+                  <p className="text-xs md:text-sm opacity-80">Pre-YTTC Support Academy</p>
+                </div>
               </div>
             </div>
 
-            {/* Stats Row 2 */}
-            <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-              <div className="text-center">
-                <p className="font-heading text-3xl md:text-4xl font-bold">Yoga Alliance</p>
-                <p className="text-xs md:text-sm opacity-80">Certified School</p>
-              </div>
-              <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
-              <div className="text-center">
-                <p className="font-heading text-3xl md:text-4xl font-bold">World's First</p>
-                <p className="text-xs md:text-sm opacity-80">Pre-YTTC Support Academy</p>
-              </div>
-            </div>
+            {/* Client Island: Interactive CTA Buttons (2 Buttons) */}
+            <HeroCTAButtons />
 
-            {/* Special Offer Box */}
-            <div className="flex flex-col items-center gap-4 pt-2">
-              <div className="bg-amber-100/95 dark:bg-amber-900/60 border border-amber-200/60 dark:border-amber-800/60 px-6 py-3 rounded-xl shadow-xl animate-none md:animate-bounce-subtle text-center max-w-lg mx-auto">
-                <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
+            {/* Special Offer Box (Inside Hero on Both Mobile & Desktop) */}
+            <div className="flex flex-col items-center gap-4 pt-1 md:pt-2">
+              <div className="bg-amber-100/95 dark:bg-amber-900/60 border border-amber-200/60 dark:border-amber-800/60 px-4 py-2.5 md:px-6 md:py-3 rounded-xl shadow-xl animate-none md:animate-bounce-subtle text-center max-w-lg mx-auto">
+                <p className="text-amber-900 dark:text-amber-100 text-xs md:text-sm font-bold leading-relaxed">
                   {PROMO_OFFER.specialOfferBoxPrefix}{" "}
                   <span className="text-amber-950 dark:text-amber-200 font-extrabold underline underline-offset-2">
                     {PROMO_OFFER.specialOfferBoxHighlighted}
@@ -159,52 +135,41 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
-    </section>
+        {/* Decorative Elements */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 md:h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+      </section>
 
-    {/* Mobile Dedicated Trust Stats & Offer Block Directly Below Hero */}
-    <section className="md:hidden bg-[#1c130d] border-t border-b border-amber-900/30 py-8 px-4 text-center text-primary-foreground">
-      <div className="max-w-md mx-auto space-y-6">
-        <div className="flex flex-wrap items-center justify-center gap-6">
-          <div className="text-center">
-            <p className="font-heading text-2xl font-bold">500+</p>
-            <p className="text-xs opacity-80">Graduated Students</p>
+      {/* Mobile Dedicated Trust Stats Block Directly Below Hero */}
+      <section className="md:hidden bg-[#1c130d] border-t border-b border-amber-900/30 py-6 px-3 text-center text-primary-foreground">
+        <div className="max-w-md mx-auto space-y-5">
+          <div className="grid grid-cols-3 gap-2 items-start">
+            <div className="text-center">
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">500+</p>
+              <p className="text-[11px] min-[380px]:text-xs opacity-80">Graduated Students</p>
+            </div>
+            <div className="text-center">
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">Multi-Style</p>
+              <p className="text-[11px] min-[380px]:text-xs opacity-80">Authentic Yoga</p>
+            </div>
+            <div className="text-center">
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">Ayurveda</p>
+              <p className="text-[11px] min-[380px]:text-xs opacity-80">Strong Basis</p>
+            </div>
           </div>
-          <div className="text-center">
-            <p className="font-heading text-2xl font-bold">Multi-Style</p>
-            <p className="text-xs opacity-80">Authentic Yoga</p>
-          </div>
-          <div className="text-center">
-            <p className="font-heading text-2xl font-bold">Ayurveda</p>
-            <p className="text-xs opacity-80">Strong Basis</p>
+
+          <div className="flex items-start justify-center gap-6 min-[380px]:gap-8">
+            <div className="text-center">
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">Yoga Alliance</p>
+              <p className="text-[11px] min-[380px]:text-xs opacity-80">Certified School</p>
+            </div>
+            <div className="text-center">
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">World&apos;s First</p>
+              <p className="text-[11px] min-[380px]:text-xs opacity-80">Pre-YTTC Support Academy</p>
+            </div>
           </div>
         </div>
-
-        <div className="flex flex-wrap items-center justify-center gap-6">
-          <div className="text-center">
-            <p className="font-heading text-2xl font-bold">Yoga Alliance</p>
-            <p className="text-xs opacity-80">Certified School</p>
-          </div>
-          <div className="text-center">
-            <p className="font-heading text-2xl font-bold">World's First</p>
-            <p className="text-xs opacity-80">Pre-YTTC Support Academy</p>
-          </div>
-        </div>
-
-        {/* Special Offer Box on Mobile */}
-        <div className="bg-amber-100/95 dark:bg-amber-900/60 border border-amber-200/60 dark:border-amber-800/60 px-5 py-3 rounded-xl shadow-xl text-center max-w-lg mx-auto">
-          <p className="text-amber-900 dark:text-amber-100 text-xs font-bold leading-relaxed">
-            {PROMO_OFFER.specialOfferBoxPrefix}{" "}
-            <span className="text-amber-950 dark:text-amber-200 font-extrabold underline underline-offset-2">
-              {PROMO_OFFER.specialOfferBoxHighlighted}
-            </span>
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 }

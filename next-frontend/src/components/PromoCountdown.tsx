@@ -50,32 +50,32 @@ const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
     return (
         <div className={`flex items-center justify-center ${className}`}>
             <div className="flex items-center">
-                <div className="flex flex-col items-center mx-1 sm:mx-1.5">
-                    <div className="bg-white/10 backdrop-blur-md rounded-lg px-2 py-1 min-w-[2.2rem] sm:min-w-[2.5rem] shadow-inner border border-white/20">
-                        <span ref={daysRef} className="text-base sm:text-lg font-bold tracking-tighter">00</span>
+                <div className="flex flex-col items-center mx-0.5 sm:mx-1.5">
+                    <div className="bg-white/10 backdrop-blur-md rounded-md sm:rounded-lg px-1.5 sm:px-2 py-0.5 sm:py-1 min-w-[1.75rem] sm:min-w-[2.5rem] shadow-inner border border-white/20 text-center">
+                        <span ref={daysRef} className="text-xs sm:text-lg font-bold tracking-tighter block leading-tight">00</span>
                     </div>
-                    <span className="text-[8px] sm:text-[9px] uppercase font-bold mt-1 opacity-80 tracking-widest">Days</span>
+                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">Days</span>
                 </div>
-                <span className="text-lg font-bold mb-4 opacity-50">:</span>
-                <div className="flex flex-col items-center mx-1 sm:mx-1.5">
-                    <div className="bg-white/10 backdrop-blur-md rounded-lg px-2 py-1 min-w-[2.2rem] sm:min-w-[2.5rem] shadow-inner border border-white/20">
-                        <span ref={hoursRef} className="text-base sm:text-lg font-bold tracking-tighter">00</span>
+                <span className="text-xs sm:text-lg font-bold mb-3 sm:mb-4 opacity-50">:</span>
+                <div className="flex flex-col items-center mx-0.5 sm:mx-1.5">
+                    <div className="bg-white/10 backdrop-blur-md rounded-md sm:rounded-lg px-1.5 sm:px-2 py-0.5 sm:py-1 min-w-[1.75rem] sm:min-w-[2.5rem] shadow-inner border border-white/20 text-center">
+                        <span ref={hoursRef} className="text-xs sm:text-lg font-bold tracking-tighter block leading-tight">00</span>
                     </div>
-                    <span className="text-[8px] sm:text-[9px] uppercase font-bold mt-1 opacity-80 tracking-widest">Hrs</span>
+                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">Hrs</span>
                 </div>
-                <span className="text-lg font-bold mb-4 opacity-50">:</span>
-                <div className="flex flex-col items-center mx-1 sm:mx-1.5">
-                    <div className="bg-white/10 backdrop-blur-md rounded-lg px-2 py-1 min-w-[2.2rem] sm:min-w-[2.5rem] shadow-inner border border-white/20">
-                        <span ref={minsRef} className="text-base sm:text-lg font-bold tracking-tighter">00</span>
+                <span className="text-xs sm:text-lg font-bold mb-3 sm:mb-4 opacity-50">:</span>
+                <div className="flex flex-col items-center mx-0.5 sm:mx-1.5">
+                    <div className="bg-white/10 backdrop-blur-md rounded-md sm:rounded-lg px-1.5 sm:px-2 py-0.5 sm:py-1 min-w-[1.75rem] sm:min-w-[2.5rem] shadow-inner border border-white/20 text-center">
+                        <span ref={minsRef} className="text-xs sm:text-lg font-bold tracking-tighter block leading-tight">00</span>
                     </div>
-                    <span className="text-[8px] sm:text-[9px] uppercase font-bold mt-1 opacity-80 tracking-widest">Mins</span>
+                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">Mins</span>
                 </div>
-                <span className="text-lg font-bold mb-4 opacity-50">:</span>
-                <div className="flex flex-col items-center mx-1 sm:mx-1.5">
-                    <div className="bg-white/10 backdrop-blur-md rounded-lg px-2 py-1 min-w-[2.2rem] sm:min-w-[2.5rem] shadow-inner border border-white/20">
-                        <span ref={secsRef} className="text-base sm:text-lg font-bold tracking-tighter">00</span>
+                <span className="text-xs sm:text-lg font-bold mb-3 sm:mb-4 opacity-50">:</span>
+                <div className="flex flex-col items-center mx-0.5 sm:mx-1.5">
+                    <div className="bg-white/10 backdrop-blur-md rounded-md sm:rounded-lg px-1.5 sm:px-2 py-0.5 sm:py-1 min-w-[1.75rem] sm:min-w-[2.5rem] shadow-inner border border-white/20 text-center">
+                        <span ref={secsRef} className="text-xs sm:text-lg font-bold tracking-tighter block leading-tight">00</span>
                     </div>
-                    <span className="text-[8px] sm:text-[9px] uppercase font-bold mt-1 opacity-80 tracking-widest">Secs</span>
+                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">Secs</span>
                 </div>
             </div>
         </div>

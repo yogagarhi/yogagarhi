@@ -217,53 +217,53 @@ export default function Header() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-[70]">
-      {/* April to July Batch Promo Bar - Desktop Only */}
-      <div className="hidden md:block bg-[#2D7A70] text-white py-2 sm:py-3 shadow-sm overflow-hidden">
-        <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8">
-          <div className="flex items-center gap-2 sm:whitespace-nowrap animate-pulse">
-            <Sparkles className="w-4 h-4 text-amber-300" />
-            <span className="text-xs sm:text-sm font-bold tracking-wide uppercase">
+      {/* Top Countdown Promo Bar - Visible on Mobile & Desktop */}
+      <div className="bg-[#2D7A70] text-white py-1.5 sm:py-3 shadow-sm overflow-hidden">
+        <div className="container mx-auto px-2 sm:px-4 flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-8">
+          <div className="flex items-center justify-center gap-1.5 sm:gap-2 sm:whitespace-nowrap animate-none md:animate-pulse text-center">
+            <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
+            <span className="text-[11px] min-[375px]:text-xs sm:text-sm font-bold tracking-wide uppercase leading-tight">
               {PROMO_OFFER.title} 🎉 Flat <span className="text-amber-300 font-extrabold">{PROMO_OFFER.discountText}</span> {PROMO_OFFER.batchesText}
             </span>
           </div>
 
-          <div className="flex items-center gap-3 bg-black/20 px-4 py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner">
-            <div className="flex items-center gap-1.5 whitespace-nowrap">
-              <Clock className="w-3.5 h-3.5 text-amber-300" />
-              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-white/90">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 bg-black/20 px-3 sm:px-4 py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner">
+            <div className="flex items-center gap-1 sm:gap-1.5 whitespace-nowrap">
+              <Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300 shrink-0" />
+              <span className="text-[9px] min-[375px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest text-white/90">
                 Offer Ends In:
               </span>
             </div>
-            <PromoCountdown className="scale-75 sm:scale-90 origin-left" />
+            <PromoCountdown className="sm:scale-90 sm:origin-left" />
           </div>
         </div>
       </div>
 
       <header
-        className={`py-3 transition-colors duration-300 ${scrolled
+        className={`py-2.5 sm:py-3 transition-colors duration-300 ${scrolled
           ? 'bg-background/98 backdrop-blur-md shadow-md'
           : 'bg-background'
           }`}
       >
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between">
+        <div className="container mx-auto px-3 sm:px-4">
+          <div className="flex items-center justify-between gap-3">
 
             {/* Logo */}
-            <Link href="/" prefetch={false} className="flex items-center gap-2 group">
-              <div className="relative">
+            <Link href="/" prefetch={false} className="flex items-center gap-1.5 sm:gap-2 group shrink-0">
+              <div className="relative shrink-0">
                 <Image
                   src={logo}
                   alt="YogaGarhi"
                   width={56}
                   height={52}
                   unoptimized
-                  className="object-contain h-12 w-12 sm:h-14 sm:w-14"
+                  className="object-contain h-9 w-9 min-[375px]:h-11 min-[375px]:w-11 sm:h-14 sm:w-14"
                 />
                 <div className="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-300" />
               </div>
 
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-primary tracking-wide text-base sm:text-xl">
+                <span className="font-heading font-bold text-primary tracking-wide text-sm min-[375px]:text-base sm:text-xl whitespace-nowrap">
                   YOGAGARHI
                 </span>
                 <span className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase hidden sm:block">
@@ -417,13 +417,13 @@ export default function Header() {
             </nav>
 
             {/* Right Side - CTA */}
-            <div className="flex items-center gap-2 sm:gap-3">
+            <div className="flex items-center gap-1.5 min-[375px]:gap-2 sm:gap-3 shrink-0">
               {/* Mobile CTA Button */}
               <Button
                 type="button"
                 variant="default"
                 size="sm"
-                className="lg:hidden bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-4 h-9 shadow-sm transition-all whitespace-nowrap"
+                className="lg:hidden bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-2.5 min-[375px]:px-3.5 sm:px-4 h-8 min-[375px]:h-9 text-xs min-[375px]:text-sm shadow-sm transition-all whitespace-nowrap"
                 onClick={() => setShowEnrollDialog(true)}
               >
                 Begin Journey
@@ -442,11 +442,11 @@ export default function Header() {
               {/* Mobile Menu Button */}
               <button
                 type="button"
-                className="lg:hidden p-2 rounded-full hover:bg-secondary transition-colors"
+                className="lg:hidden p-1.5 min-[375px]:p-2 rounded-full hover:bg-secondary transition-colors"
                 onClick={() => setIsOpen((prev) => !prev)}
                 aria-label="Toggle menu"
               >
-                <div className="relative w-6 h-5 flex flex-col justify-between">
+                <div className="relative w-5 h-4 min-[375px]:w-6 min-[375px]:h-5 flex flex-col justify-between">
                   <span className={`w-full h-0.5 bg-foreground rounded-full transition-all duration-300 origin-left ${isOpen ? 'rotate-45 translate-x-0.5' : ''
                     }`} />
                   <span className={`w-full h-0.5 bg-foreground rounded-full transition-all duration-300 ${isOpen ? 'opacity-0 translate-x-4' : ''
