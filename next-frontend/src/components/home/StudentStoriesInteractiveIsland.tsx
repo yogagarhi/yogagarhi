@@ -117,23 +117,8 @@ export default function StudentStoriesInteractiveIsland({
       </div>
 
       <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-        {/* Left Column - Header (desktop) & Thumbnails */}
+        {/* Left Column - Thumbnails */}
         <div className="lg:col-span-5 lg:sticky lg:top-24">
-          {/* Header - Desktop */}
-          <div className="hidden lg:block mb-10">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6">
-              <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              <span className="text-primary font-medium text-sm">Real Voices</span>
-            </div>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Voices From Our YogaGarhi Family
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Every graduate carries a unique story of transformation.
-              Here are some voices from our global yoga family.
-            </p>
-          </div>
-
           {/* Vertical Thumbnail Stack */}
           <div className="space-y-3">
             {videos.map((video, index) => (

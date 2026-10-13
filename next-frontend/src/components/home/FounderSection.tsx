@@ -33,8 +33,8 @@ export default function FounderSection({
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          {/* Mobile Header */}
-          <div className="lg:hidden mb-8">
+          {/* Header - Single Responsive Markup */}
+          <div className="mb-8 md:mb-10 text-center lg:text-left">
             <span className="inline-flex items-center gap-2 text-amber-800 dark:text-amber-300 text-sm font-bold tracking-widest uppercase mb-4">
               <Heart className="w-4 h-4" fill="currentColor" />
               Meet The Teacher Behind YogaGarhi
@@ -83,17 +83,6 @@ export default function FounderSection({
 
             {/* Content Column */}
             <div className="order-2 lg:order-2">
-              <div className="hidden lg:block">
-                <span className="inline-flex items-center gap-2 text-amber-800 dark:text-amber-300 text-sm font-bold tracking-widest uppercase mb-4">
-                  <Heart className="w-4 h-4" fill="currentColor" />
-                  Meet The Teacher Behind YogaGarhi
-                </span>
-
-                <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-2">
-                  Yogacharya Sachin
-                </h2>
-                <p className="text-primary font-medium text-lg mb-6">Founder & Lead Teacher, YogaGarhi</p>
-              </div>
 
               {/* Achievement Badges */}
               <div className="flex flex-wrap gap-2 md:gap-4 mb-6 md:mb-8">

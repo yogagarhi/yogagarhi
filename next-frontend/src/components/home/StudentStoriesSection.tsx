@@ -97,13 +97,13 @@ export default function StudentStoriesSection() {
       </div>
 
       <div className="container mx-auto px-4 relative">
-        {/* Header - Mobile */}
-        <div className="lg:hidden mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6">
+        {/* Header - Unified Single Responsive Markup */}
+        <div className="mb-8 md:mb-12 text-center lg:text-left max-w-2xl">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
             <span className="text-primary font-medium text-sm">Real Voices</span>
           </div>
-          <h2 className="font-heading text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Voices From Our Yogagarhi Family
           </h2>
           <p className="text-muted-foreground leading-relaxed">
