@@ -3,11 +3,10 @@ import Hero from "@/components/home/Hero";
 import WelcomeSection from "@/components/home/WelcomeSection";
 import CoursesSection from "@/components/home/CoursesSection";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
-import YTTCSupportSection from "@/components/home/YTTCSupportSection";
-import FounderSection from "@/components/home/FounderSection";
-import WhyOneStyleSection from "@/components/home/WhyOneStyleSection";
-import ReadyToBeginSection from "@/components/home/ReadyToBeginSection";
-
+const YTTCSupportSection = dynamic(() => import("@/components/home/YTTCSupportSection"));
+const FounderSection = dynamic(() => import("@/components/home/FounderSection"));
+const WhyOneStyleSection = dynamic(() => import("@/components/home/WhyOneStyleSection"));
+const ReadyToBeginSection = dynamic(() => import("@/components/home/ReadyToBeginSection"));
 const GoogleReviewsSection = dynamic(() => import("@/components/home/GoogleReviewsSection"));
 const StudentStoriesSection = dynamic(() => import("@/components/home/StudentStoriesSection"));
 const HomeVideoGallerySection = dynamic(() => import("@/components/home/HomeVideoGallerySection"));

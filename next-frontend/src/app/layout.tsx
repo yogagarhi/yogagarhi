@@ -6,15 +6,8 @@ import { getCloudinaryUrl } from "@/utils/cloudinary";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
+  style: ["normal"],
   variable: "--font-heading",
-  display: "swap",
-  preload: false,
-});
-
-const cormorantItalic = Cormorant_Garamond({
-  subsets: ["latin"],
-  style: ["italic"],
-  variable: "--font-heading-italic",
   display: "swap",
   preload: false,
 });
@@ -117,7 +110,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${plusJakarta.variable} ${cormorantItalic.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${cormorant.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
       <head>
         {/* Preload Hero image in head for instant browser scanner discovery */}
         <link

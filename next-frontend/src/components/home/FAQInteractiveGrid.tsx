@@ -357,7 +357,7 @@ export default function FAQInteractiveGrid() {
               </svg>
             </div>
 
-            <p className="font-heading text-lg italic text-foreground/80 leading-relaxed mb-6 relative z-10">
+            <p className="text-lg italic text-foreground/80 leading-relaxed mb-6 relative z-10">
               "The team answered all my questions before I even arrived. From visa guidance to what to pack —
               they made me feel completely prepared and supported."
             </p>
