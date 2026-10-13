@@ -71,6 +71,7 @@ import WhyFeatureItem from "@/components/home/WhyFeatureItem";
 import StudentStoriesSection from "@/components/home/StudentStoriesSection";
 import HomeVideoGallerySection from "@/components/home/HomeVideoGallerySection";
 import { googleReviews } from "@/constants/googleReviews";
+import { GOOGLE_REVIEWS_CONFIG } from "@/constants/reviews";
 
 // User-provided photos for different sections
 const apartHammock = getCloudinaryImage("hammock.png");
@@ -1237,34 +1238,40 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
               <div className="overflow-x-auto scrollbar-hide pb-6 -mx-4 px-4 flex gap-6 snap-x snap-mandatory">
                 {[
                   {
-                    name: "Sarah Jenkins",
-                    country: "United Kingdom",
-                    quote: "Yogagarhi completely redefined my practice. The small batch size (only 8 of us) meant Sachin Ji corrected my alignment daily. I arrived anxious and left a confident teacher.",
-                    avatar: insta1
-                  },
-                  {
-                    name: "David Müller",
-                    country: "Germany",
-                    quote: "Most schools start on Day 1, but Yogagarhi's Pre-TTC mentorship started weeks earlier. When I landed, I already knew the Sanskrit terms and basic sequencing. Truly professional.",
-                    avatar: insta2
-                  },
-                  {
-                    name: "Elena Rostova",
+                    name: "Gurpreet Kaur Dhou",
                     country: "Canada",
-                    quote: "The integration of Ayurveda and philosophy was life-changing. We didn't just learn postures; we learned our own unique energy. It completely transformed my path.",
-                    avatar: insta3
+                    quote: "YogaGhari is truly authentic and deeply rooted in the real essence of yoga. From the very beginning, I felt seen and supported as a person, not treated as just another number. The teachers genuinely care about your growth and help you build confidence in your own voice.",
+                    avatarLetter: "G"
                   },
                   {
-                    name: "Min-Ji Kim",
-                    country: "South Korea",
-                    quote: "I was worried about the language barrier, but the teachers are incredibly patient. The 35+ sequencing book they gave us is a goldmine—I taught my first class the week I got home!",
-                    avatar: insta4
+                    name: "Ilksen Doğan",
+                    country: "Turkey",
+                    quote: "Sachin is hands down one of the most knowledgeable yoga teachers I have been taught by. Despite me being an absolute beginner, he was patient and encouraging. I was able to confidently understand the foundations of asana alignment.",
+                    avatarLetter: "I"
                   },
                   {
-                    name: "Aisha Rahman",
-                    country: "United Arab Emirates",
-                    quote: "Sacred temple tours, sound healing, and professional photoshoot—all included. But the real magic is the lineage and depth of yogic knowledge. Best decision of my life.",
-                    avatar: insta5
+                    name: "Aleksandra Dyachenko",
+                    country: "Russia",
+                    quote: "I completed my 200-hour yoga teacher training in Bali, and it was truly magical. 🌺 The knowledge I gained was deep and authentic. The teachers are real mentors who teach from the heart with kindness and wisdom. Felt like being part of a big, warm family.",
+                    avatarLetter: "A"
+                  },
+                  {
+                    name: "Amy Letourneau",
+                    country: "Canada",
+                    quote: "Sachin is such an amazing teacher and human. The training I did here in Bali was the start of a beautiful yoga journey, which has now led me to be confident enough to teach in multiple countries around the world.",
+                    avatarLetter: "A"
+                  },
+                  {
+                    name: "Lisa Beltman",
+                    country: "Germany",
+                    quote: "I really appreciate Sachin Ji’s calm, friendly, and welcoming energy. He is knowledgeable and takes the time to guide each student with care. His classes are structured in such a way that you find yourself doing more than you thought you could.",
+                    avatarLetter: "L"
+                  },
+                  {
+                    name: "Nicole Drake",
+                    country: "Australia",
+                    quote: "Sachin’s instruction helped my practice and asana skills develop beyond what I believed I could achieve. I learned the traditional way to practice yoga, with extensive knowledge in anatomy, traditional practice, and alignment.",
+                    avatarLetter: "N"
                   }
                 ].map((t, idx) => (
                   <div
@@ -1292,26 +1299,37 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
 
                     {/* Student Info */}
                     <div className="flex items-center gap-4 mt-8 pt-6 border-t border-border/60">
-                      <div className="relative w-12 h-12 rounded-full overflow-hidden border border-primary/20 flex-shrink-0">
-                        <Image
-                          src={t.avatar}
-                          alt={t.name}
-                          fill
-                          className="object-cover"
-                        />
+                      <div className="w-12 h-12 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-heading text-lg flex-shrink-0 border border-primary/20">
+                        {t.avatarLetter}
                       </div>
-                      <div>
-                        <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors">
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors truncate">
                           {t.name}
                         </h4>
-                        <p className="text-[10px] text-muted-foreground font-medium uppercase tracking-widest">
-                          {t.country}
-                        </p>
+                        <div className="flex items-center gap-2">
+                          <p className="text-[10px] text-muted-foreground font-medium uppercase tracking-widest">
+                            {t.country}
+                          </p>
+                          <span className="text-[10px] text-primary/80 font-medium">
+                            • Google Review
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* Link to Video Testimonials */}
+            <div className="text-center mt-10">
+              <a
+                href="#student-stories"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-secondary hover:bg-secondary/80 text-foreground font-medium text-sm transition-all duration-300 border border-border shadow-sm group"
+              >
+                <span>Watch Student Video Stories & Testimonials</span>
+                <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
+              </a>
             </div>
           </div>
         </section>
@@ -3022,14 +3040,14 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
 
               {/* Overall Rating */}
               <div className="flex items-center justify-center gap-4 mb-2">
-                <span className="font-heading text-5xl font-bold text-foreground">5.0</span>
+                <span className="font-heading text-5xl font-bold text-foreground">{GOOGLE_REVIEWS_CONFIG.rating}</span>
                 <div className="text-left">
                   <div className="flex gap-0.5 mb-1">
                     {[1, 2, 3, 4, 5].map((i) => (
                       <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <p className="text-sm text-muted-foreground">Based on 127 reviews</p>
+                  <p className="text-sm text-muted-foreground">Based on {GOOGLE_REVIEWS_CONFIG.displayCount}</p>
                 </div>
               </div>
             </div>
@@ -3044,7 +3062,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             {/* View All Reviews Link */}
             <div className="text-center mt-10">
               <a
-                href="https://www.google.com/maps/place/Yoga+Teacher+Training+in+Bali+-+Yogagarhi/@-8.4645426,115.3278308,18z/data=!4m6!3m5!1s0x2dd219e70aa3e43d:0x281930517f104591!8m2!3d-8.4649127!4d115.3258379!16s%2Fg%2F11xywjhmnz?entry=ttu&g_ep=EgoyMDI2MDExMS4wIKXMDSoASAFQAw%3D%3D"
+                href={GOOGLE_REVIEWS_CONFIG.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"

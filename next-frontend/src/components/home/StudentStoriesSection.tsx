@@ -82,7 +82,8 @@ export default function StudentStoriesSection() {
 
   return (
     <section
-      className="py-20 bg-background overflow-hidden relative"
+      id="student-stories"
+      className="py-20 bg-background overflow-hidden relative scroll-mt-20"
       style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 1230px' }}
     >
       {/* Subtle Background Pattern */}
