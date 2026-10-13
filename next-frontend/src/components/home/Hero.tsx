@@ -9,17 +9,17 @@ export default function Hero() {
         <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-[#1c130d]">
           {/* Single Responsive Picture & exactly ONE <img> in DOM (LCP element) */}
           <picture className="w-full h-full block relative z-10">
-            {/* Mobile smart-cropped responsive sources (AVIF with WebP fallback) */}
-            <source
-              media="(max-width: 768px)"
-              type="image/avif"
-              srcSet="/images/hero/hero-mobile-crop-360.avif 360w, /images/hero/hero-mobile-crop-420.avif 420w"
-              sizes="100vw"
-            />
+            {/* Mobile smart-cropped responsive sources (WebP first for ultra-fast mobile decode) */}
             <source
               media="(max-width: 768px)"
               type="image/webp"
               srcSet="/images/hero/hero-mobile-crop-360.webp 360w, /images/hero/hero-mobile-crop-420.webp 420w"
+              sizes="100vw"
+            />
+            <source
+              media="(max-width: 768px)"
+              type="image/avif"
+              srcSet="/images/hero/hero-mobile-crop-360.avif 360w, /images/hero/hero-mobile-crop-420.avif 420w"
               sizes="100vw"
             />
             {/* Desktop responsive sources (AVIF with WebP fallback) */}
