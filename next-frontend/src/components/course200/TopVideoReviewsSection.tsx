@@ -1,5 +1,5 @@
 import React from "react";
-import { Video, Calendar, Star, ArrowRight } from "lucide-react";
+import { Video, Calendar, Star } from "lucide-react";
 import CourseVideoFacade from "@/components/common/CourseVideoFacade";
 import { Button } from "@/components/ui/button";
 
@@ -67,7 +67,7 @@ export default function TopVideoReviewsSection({ onBookCall }: TopVideoReviewsSe
                       ))}
                     </div>
                     <p className="text-xs md:text-sm text-muted-foreground italic leading-relaxed">
-                      "{rev.quote}"
+                      &ldquo;{rev.quote}&rdquo;
                     </p>
                   </div>
 

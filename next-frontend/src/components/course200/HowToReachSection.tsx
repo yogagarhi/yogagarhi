@@ -1,5 +1,5 @@
 import React from "react";
-import { Plane, Clock, Calendar, MapPin } from "lucide-react";
+import { Plane, Clock, MapPin } from "lucide-react";
 import { HOW_TO_REACH } from "@/constants/course200Data";
 
 export default function HowToReachSection() {
