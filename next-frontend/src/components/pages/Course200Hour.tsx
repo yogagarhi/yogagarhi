@@ -1453,7 +1453,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
         </section>
 
         {/* ===== COURSE SYLLABUS ===== */}
-        <section className="py-20 bg-background overflow-hidden">
+        <section className="py-20 bg-background overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 979px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
               Course Syllabus
@@ -1672,7 +1672,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
         </section>
 
         {/* ===== SPECIAL WORKSHOPS ===== */}
-        <section className="py-20 bg-secondary/30">
+        <section className="py-20 bg-secondary/30" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2426px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
               Special Workshops Included
@@ -1736,7 +1736,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
         </section>
 
         {/* ===== POST-PROGRAM SUPPORT ===== */}
-        <section className="py-24 bg-background">
+        <section className="py-24 bg-background" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2248px" }}>
           <div className="container mx-auto px-4">
             {/* Section Header */}
             <div className="text-center mb-16">
@@ -1928,7 +1928,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
 
 
         {/* ===== UPCOMING DATES ===== */}
-        <section id="book-now" className="py-20 bg-background scroll-mt-24">
+        <section id="book-now" className="py-20 bg-background scroll-mt-24" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2932px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-2">
               200 Hour Yoga Teacher Training
@@ -2396,7 +2396,8 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
               alt="Bali yoga retreat accommodation"
               fill
               className="object-cover"
-              priority
+              loading="lazy"
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-foreground/60" />
           </div>
@@ -2599,7 +2600,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
 
 
         {/* ===== SATTVIC FOOD ===== */}
-        <section className="py-20 bg-secondary/20 relative overflow-hidden">
+        <section className="py-20 bg-secondary/20 relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 3346px" }}>
           {/* Decorative Background */}
           <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-primary/5 -translate-y-1/2 translate-x-1/2" />
           <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-accent/5 translate-y-1/2 -translate-x-1/2" />
@@ -2920,14 +2921,20 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
         </section>
 
         {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
-
-        {/* ===== YOGA ALLIANCE CERTIFICATION ===== */}
         <section
-          className="py-24 relative bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${apartYogaAllianceGraduates.src})` }}
+          className="py-24 relative overflow-hidden"
+          style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 773px' }}
         >
+          <Image
+            src={apartYogaAllianceGraduates}
+            alt="Yoga Alliance USA Certified School in Bali"
+            fill
+            sizes="100vw"
+            loading="lazy"
+            className="object-cover object-center -z-10"
+          />
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-black/50 -z-10" />
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
@@ -3604,6 +3611,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
 
 
         {/* ===== TOUR BOOKING DIALOG ===== */}
+        {showTourCallDialog && (
         <Dialog open={showTourCallDialog} onOpenChange={setShowTourCallDialog}>
           <DialogContent className="max-w-md p-6 bg-card rounded-2xl border border-border shadow-2xl">
             <DialogHeader className="mb-4">
@@ -3686,8 +3694,10 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             </form>
           </DialogContent>
         </Dialog>
+        )}
 
         {/* ===== BOOK A CALL DIALOG ===== */}
+        {showCalendarDialog && (
         <Dialog open={showCalendarDialog} onOpenChange={setShowCalendarDialog}>
           <DialogContent className="max-w-5xl p-0 overflow-y-auto max-h-[92vh] bg-card border-none rounded-2xl">
             <div className="grid lg:grid-cols-2">
@@ -3854,8 +3864,10 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             </div>
           </DialogContent>
         </Dialog>
+        )}
 
         {/* Booking Confirmation Dialog */}
+        {showBookingDialog && (
         <Dialog open={showBookingDialog} onOpenChange={setShowBookingDialog}>
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
@@ -3968,9 +3980,10 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             </Button>
           </DialogContent>
         </Dialog>
+        )}
 
         {/* ===== SACHIN JI'S RESEARCH & PRAKRITI SECTION ===== */}
-        <section id="sachinji-research" className="py-24 bg-background relative overflow-hidden">
+        <section id="sachinji-research" className="py-24 bg-background relative overflow-hidden scroll-mt-24" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 3613px" }}>
           {/* Decorative background elements */}
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
@@ -4249,6 +4262,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
         </section>
 
         {/* ===== QUICK ENQUIRY DIALOG ===== */}
+        {showQuickEnquiryDialog && (
         <Dialog open={showQuickEnquiryDialog} onOpenChange={setShowQuickEnquiryDialog}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
@@ -4307,8 +4321,10 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             </form>
           </DialogContent>
         </Dialog>
+        )}
 
         {/* ===== PRE-YTTC CONTACT OPTIONS DIALOG ===== */}
+        {showPreYttcOptions && (
         <Dialog open={showPreYttcOptions} onOpenChange={setShowPreYttcOptions}>
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
@@ -4352,7 +4368,9 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             </p>
           </DialogContent>
         </Dialog>
+        )}
         {/* ===== ENROLLMENT FORM DIALOG ===== */}
+        {showEnrollDialog && (
         <Dialog open={showEnrollDialog} onOpenChange={setShowEnrollDialog}>
           <DialogContent className="sm:max-w-lg p-0 gap-0">
             {/* Gradient Header */}
@@ -4529,6 +4547,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             </div>
           </DialogContent>
         </Dialog>
+        )}
 
 
 
