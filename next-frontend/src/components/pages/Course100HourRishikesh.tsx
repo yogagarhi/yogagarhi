@@ -6,7 +6,7 @@ import Image from "next/image";
 import Layout from "@/components/layout/Layout";
 import SEO, { generateCourseSchema } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { BATCHES_100_HOUR, getBatchBadge } from "@/constants/courseDates";
+import { CourseBatch, BATCHES_100_HOUR, getBatchBadge } from "@/constants/courseDates";
 import { useUpcomingBatches } from "@/hooks/useUpcomingBatches";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -34,6 +34,7 @@ import {
   Wifi, Droplets, Wind, Activity, ShieldCheck, ArrowRight, Globe
 } from "lucide-react";
 import { timezones, countryCodes } from "@/constants/formOptions";
+import CourseVideoFacade from "@/components/common/CourseVideoFacade";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import FounderSection from "@/components/home/FounderSection";
 import HomeGallerySection from "@/components/home/HomeGallerySection";
@@ -543,8 +544,9 @@ const quizQuestions = [
   },
 ];
 
-export default function Course100HourRishikesh() {
-  const upcomingDates = useUpcomingBatches(BATCHES_100_HOUR);
+export default function Course100HourRishikesh({ initialBatches }: { initialBatches?: CourseBatch[] }) {
+  const clientBatches = useUpcomingBatches(BATCHES_100_HOUR);
+  const upcomingDates = initialBatches && initialBatches.length > 0 ? initialBatches : clientBatches;
   const { toast } = useToast();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
   const { setShowEnrollDialog: openEnrollDialog } = useEnrollment();
@@ -944,12 +946,51 @@ export default function Course100HourRishikesh() {
       <Layout>
         {/* ===== HERO SECTION ===== */}
         <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32 pb-20">
-          {/* Background Image */}
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url(/hero-yoga-group.jpg)' }}
-          >
-            <div className="absolute inset-0 bg-black/40" />
+          {/* Background Container: Full-bleed smart crop on mobile (zero cut faces), full cover on desktop */}
+          <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-[#1c130d]">
+            {/* Single Responsive Picture & exactly ONE <img> in DOM (LCP element) */}
+            <picture className="w-full h-full block relative z-10">
+              {/* Mobile smart-cropped responsive sources (WebP first for ultra-fast mobile decode) */}
+              <source
+                media="(max-width: 768px)"
+                type="image/webp"
+                srcSet="/images/hero/hero-mobile-crop-360.webp 360w, /images/hero/hero-mobile-crop-420.webp 420w"
+                sizes="100vw"
+              />
+              <source
+                media="(max-width: 768px)"
+                type="image/avif"
+                srcSet="/images/hero/hero-mobile-crop-360.avif 360w, /images/hero/hero-mobile-crop-420.avif 420w"
+                sizes="100vw"
+              />
+              {/* Desktop responsive sources (AVIF with WebP fallback) */}
+              <source
+                media="(min-width: 769px)"
+                type="image/avif"
+                srcSet="/images/hero/hero-yoga-group-1080.avif 1080w, /images/hero/hero-yoga-group-1280.avif 1280w, /images/hero/hero-yoga-group-1920.avif 1920w"
+                sizes="100vw"
+              />
+              <source
+                media="(min-width: 769px)"
+                type="image/webp"
+                srcSet="/images/hero/hero-yoga-group-1080.webp 1080w, /images/hero/hero-yoga-group-1280.webp 1280w, /images/hero/hero-yoga-group-1920.webp 1920w"
+                sizes="100vw"
+              />
+              {/* Single Image Tag in entire DOM */}
+              <img
+                src="/images/hero/hero-mobile-crop-420.webp"
+                alt="100 Hour Yoga Teacher Training in Rishikesh - YogaGarhi"
+                fetchPriority="high"
+                loading="eager"
+                decoding="sync"
+                width={420}
+                height={640}
+                className="w-full h-full object-cover object-[47%_68%] md:object-center block"
+              />
+            </picture>
+
+            {/* Contrast overlay for WCAG AA text readability */}
+            <div className="absolute inset-0 z-10 bg-black/45 md:bg-black/40 pointer-events-none" />
           </div>
 
           {/* Content */}
@@ -1215,13 +1256,7 @@ export default function Course100HourRishikesh() {
                 {/* YouTube Video - Shows here on mobile, hidden on desktop */}
                 <div className="relative w-full mb-6 lg:hidden">
                   <div className="aspect-video rounded-lg overflow-hidden shadow-card bg-muted">
-                    <iframe
-                      src="https://www.youtube.com/embed/U1r2mQRmWXM?rel=0&autoplay=1&mute=1"
-                      title="YogaGarhi 100 Hour Yoga Teacher Training"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="w-full h-full"
-                    />
+                    <CourseVideoFacade youtubeVideoId="U1r2mQRmWXM" title="100 Hour Yoga Teacher Training in Rishikesh" />
                   </div>
                 </div>
 
@@ -1377,13 +1412,7 @@ export default function Course100HourRishikesh() {
               {/* Right Column - YouTube Video & Pre-YTTC Support (desktop only) */}
               <div className="relative w-full order-2 lg:order-1 hidden lg:block sticky top-24 self-start space-y-8">
                 <div className="aspect-video rounded-lg overflow-hidden shadow-card bg-muted">
-                  <iframe
-                    src="https://www.youtube.com/embed/U1r2mQRmWXM?rel=0&autoplay=1&mute=1"
-                    title="YogaGarhi 100 Hour Yoga Teacher Training"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-full"
-                  />
+                  <CourseVideoFacade youtubeVideoId="U1r2mQRmWXM" title="100 Hour Yoga Teacher Training in Rishikesh" />
                 </div>
 
                 {/* Desktop-only Pre-YTTC Section */}
@@ -2018,13 +2047,7 @@ export default function Course100HourRishikesh() {
 
             <div className="max-w-2xl mx-auto mb-12">
               <div className="relative aspect-video rounded-lg overflow-hidden bg-muted shadow-card">
-                <iframe
-                  src="https://www.youtube.com/embed/OGmWr_aC4WA?rel=0"
-                  title="Student testimonial"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
+                <CourseVideoFacade youtubeVideoId="OGmWr_aC4WA" title="Student Testimonial" />
               </div>
             </div>
 
@@ -4571,6 +4594,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
 
         {/* ===== ENROLLMENT FORM DIALOG ===== */}
         {/* ===== ENROLLMENT FORM DIALOG ===== */}
+        {showEnrollDialog && (
         <Dialog open={showEnrollDialog} onOpenChange={setShowEnrollDialog}>
           <DialogContent className="sm:max-w-lg p-0 gap-0">
             {/* Compact Header */}
@@ -4678,8 +4702,10 @@ This is not a transactional relationship — it is a lifelong connection.`}
             </div>
           </DialogContent>
         </Dialog>
+        )}
 
         {/* ===== QUICK ENQUIRY DIALOG ===== */}
+        {showQuickEnquiryDialog && (
         <Dialog open={showQuickEnquiryDialog} onOpenChange={setShowQuickEnquiryDialog}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
@@ -4738,8 +4764,10 @@ This is not a transactional relationship — it is a lifelong connection.`}
             </form>
           </DialogContent>
         </Dialog>
+        )}
 
         {/* ===== PRE-YTTC CONTACT OPTIONS DIALOG ===== */}
+        {showPreYttcOptions && (
         <Dialog open={showPreYttcOptions} onOpenChange={setShowPreYttcOptions}>
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
@@ -4755,7 +4783,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                 asChild
               >
                 <a
-                  href="https://wa.me/+917895350563"
+                  href="https://wa.me/917895350563?text=Hi%20YogaGarhi,%20I'm%20interested%20in%20the%20Yoga%20Teacher%20Training.%20Please%20share%20details."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -4783,8 +4811,8 @@ This is not a transactional relationship — it is a lifelong connection.`}
             </p>
           </DialogContent>
         </Dialog>
+        )}
 
-        {/* Scroll to Top Button */}
         {showScrollTop && (
           <button
             onClick={scrollToTop}

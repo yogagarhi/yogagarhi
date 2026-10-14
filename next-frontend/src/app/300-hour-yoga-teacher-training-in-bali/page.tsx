@@ -43,8 +43,11 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+export const revalidate = 86400;
+
 export default function Page() {
   const course = courseData["300-hour"];
+  const upcomingBatches = filterUpcomingBatches(BATCHES_300_HOUR);
   const pageUrl = "https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-bali";
 
   const articleSchema = {
@@ -197,7 +200,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Course300Hour />
+      <Course300Hour initialBatches={upcomingBatches} />
     </>
   );
 }

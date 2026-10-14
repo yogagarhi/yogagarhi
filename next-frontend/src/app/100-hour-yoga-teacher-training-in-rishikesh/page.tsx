@@ -60,10 +60,13 @@ export function generateMetadata(): Metadata {
 }
 
 /* =========================
-   PAGE
+   PAGE (ISR 24 Hours)
 ========================= */
+export const revalidate = 86400;
+
 export default function Page() {
     const course = courseData["100-hour-rishikesh"];
+    const upcomingBatches = filterUpcomingBatches(BATCHES_100_HOUR);
     const pageUrl =
         "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh";
 
@@ -196,7 +199,7 @@ export default function Page() {
             />
 
             {/* Page Content */}
-            <Course100HourRishikesh />
+            <Course100HourRishikesh initialBatches={upcomingBatches} />
         </>
     );
 }
