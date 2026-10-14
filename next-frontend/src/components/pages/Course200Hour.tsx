@@ -34,7 +34,7 @@ import {
   UserCheck, Brain, BookMarked, UsersRound, RefreshCw,
   Salad, Coffee, Apple, Soup, UtensilsCrossed, Wheat, Milk,
   Cherry, Sprout, CircleDot, Sun, MessageSquare, Mail,
-  Wifi, Droplets, Wind, Activity, ShieldCheck, ArrowRight, Globe, Video
+  Wifi, Droplets, Wind, Activity, ShieldCheck, ArrowRight, Globe, Video, ExternalLink
 } from "lucide-react";
 import { timezones, countryCodes } from "@/constants/formOptions";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
@@ -42,6 +42,14 @@ import CourseVideoFacade from "@/components/common/CourseVideoFacade";
 import FounderSection from "@/components/home/FounderSection";
 import HomeGallerySection from "@/components/home/HomeGallerySection";
 import RoomCard from "./RoomCard";
+import WhyYogaGarhiBox from "@/components/course200/WhyYogaGarhiBox";
+import CourseFAQSection from "@/components/course200/CourseFAQSection";
+import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
+import MeetYourTeachersSection from "@/components/course200/MeetYourTeachersSection";
+import CourseHoursStructureSection from "@/components/course200/CourseHoursStructureSection";
+import HowToReachSection from "@/components/course200/HowToReachSection";
+import HelpfulGuidesSection from "@/components/course200/HelpfulGuidesSection";
+import { YOGA_ALLIANCE_PROFILE } from "@/constants/course200Data";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
@@ -1246,7 +1254,11 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
           </div>
         </section>
 
-
+        {/* ===== WHY YOGAGARHI HIGHLIGHT BOX ===== */}
+        <WhyYogaGarhiBox
+          onCheckAvailability={() => setShowEnrollDialog(true)}
+          onBookCall={() => setShowCalendarDialog(true)}
+        />
 
         <WhyChooseUs />
 
@@ -1567,6 +1579,9 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
               </div>
             </div>
 
+            {/* Expandable Detailed Syllabus (Semantic HTML) */}
+            <CourseSyllabusDetails />
+
             <div className="text-center mt-12">
               <Dialog open={showSyllabusDialog} onOpenChange={setShowSyllabusDialog}>
                 <DialogTrigger asChild>
@@ -1670,6 +1685,12 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             </div>
           </div>
         </section>
+
+        {/* ===== HOURS STRUCTURE (CONDITIONAL) ===== */}
+        <CourseHoursStructureSection />
+
+        {/* ===== MEET YOUR TEACHERS (CONDITIONAL) ===== */}
+        <MeetYourTeachersSection />
 
         {/* ===== SPECIAL WORKSHOPS ===== */}
         <section className="py-20 bg-secondary/30" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2426px" }}>
@@ -2949,12 +2970,47 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
               </h2>
 
               {/* Description */}
-              <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
+              <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-8 leading-relaxed">
                 Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
                 you will receive an internationally recognized certification, allowing you to become a
                 <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
                 This certification opens doors for you to teach yoga anywhere in the world.
               </p>
+
+              {/* RYS vs RYT Explanation */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8 text-left">
+                <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10">
+                  <span className="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">
+                    RYS (Registered Yoga School)
+                  </span>
+                  <p className="text-xs text-white/80 leading-relaxed">
+                    YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.
+                  </p>
+                </div>
+                <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10">
+                  <span className="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">
+                    RYT (Registered Yoga Teacher)
+                  </span>
+                  <p className="text-xs text-white/80 leading-relaxed">
+                    The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide.
+                  </p>
+                </div>
+              </div>
+
+              {/* Public Profile Link (Conditional) */}
+              {YOGA_ALLIANCE_PROFILE.publicProfileUrl && !YOGA_ALLIANCE_PROFILE.publicProfileUrl.includes("[CONFIRM]") && (
+                <div className="mb-8">
+                  <a
+                    href={YOGA_ALLIANCE_PROFILE.publicProfileUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500 hover:bg-amber-600 text-black font-semibold text-xs tracking-wider uppercase transition-colors"
+                  >
+                    <span>View Yoga Alliance School Registry</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              )}
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
@@ -3069,7 +3125,9 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
                       <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <p className="text-sm text-muted-foreground">Based on {GOOGLE_REVIEWS_CONFIG.displayCount}</p>
+                  {GOOGLE_REVIEWS_CONFIG.displayCount && !GOOGLE_REVIEWS_CONFIG.displayCount.includes("[CONFIRM]") && (
+                    <p className="text-sm text-muted-foreground">Based on {GOOGLE_REVIEWS_CONFIG.displayCount}</p>
+                  )}
                 </div>
               </div>
             </div>
@@ -4125,6 +4183,9 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
 
 
 
+        {/* ===== HOW TO REACH SECTION (CONDITIONAL) ===== */}
+        <HowToReachSection />
+
         {/* ===== LOCATION & MAP ===== */}
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
@@ -4168,6 +4229,12 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             </div>
           </div>
         </section>
+
+        {/* ===== HELPFUL GUIDES SECTION ===== */}
+        <HelpfulGuidesSection />
+
+        {/* ===== FREQUENTLY ASKED QUESTIONS ===== */}
+        <CourseFAQSection />
 
         {/* ===== FINAL CONVERSION HUB ===== */}
         <section className="py-20 relative overflow-hidden">

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Course200Hour from "@/components/pages/Course200Hour";
 import { courseData } from "@/constants/courses";
 import { BATCHES_200_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
+import { COURSE_200_FAQS } from "@/constants/course200Data";
 
 /* =========================
    SEO METADATA
@@ -180,77 +181,14 @@ export default function Page() {
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [{
+        "mainEntity": COURSE_200_FAQS.map((faq) => ({
             "@type": "Question",
-            "name": "Where is your 200 hour YTTC held in Bali?",
+            "name": faq.question,
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Our 200 hour YTTC takes place at Yoga Garhi in Gianyar, Bali, just about 15 km from Ubud. You practice in a peaceful, green area with village life around, and you can easily visit Ubud, the main yoga and culture hub, in your free time."
-            }
-        }, {
-            "@type": "Question",
-            "name": "Will I be able to teach after the 200 hour YTTC?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. A 200 hour training is the standard level to start teaching yoga. After completing the course and meeting all requirements, you will have the knowledge and confidence to guide safe, basic group classes and one-to-one sessions."
-            }
-        }, {
-            "@type": "Question",
-            "name": "What style of yoga do you teach in the 200 hour course?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We mainly teach traditional Hatha yoga with elements of Vinyasa-style flow. The focus is on correct alignment, breath awareness, mindful movement, and balanced practice rather than only strong or fast sequences."
-            }
-        }, {
-            "@type": "Question",
-            "name": "How long is the 200 hour course, and what is the schedule like?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Most 200 hour trainings run for around 3–4 weeks of intensive study. A typical day includes early morning pranayama and meditation, a strong asana practice, theory classes on philosophy or anatomy, afternoon workshops on teaching and adjustments, and evening gentle practice or group activities."
-            }
-        }, {
-            "@type": "Question",
-            "name": "Do I need to complete a 100 hour course before joining the 200 hour YTTC?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No, it is not required. You can directly join the 200 hour course if you have some basic yoga practice. However, if you have already done a 100 hour training (with us or elsewhere), it can help you feel more comfortable with the pace."
-            }
-        }, {
-            "@type": "Question",
-            "name": "Do you offer accommodation and food for the 200 hour YTTC?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, we usually offer course packages that include accommodation and yogic meals, as well as tuition-only options. Please contact us for current details about rooms, food, and prices for your chosen batch."
-            }
-        }, {
-            "@type": "Question",
-            "name": "What kind of food is served during the training?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "When included, we serve simple, healthy, mostly sattvic meals that support your practice and digestion. The food is light, clean, and designed to keep your energy stable during full training days."
-            }
-        }, {
-            "@type": "Question",
-            "name": "Is the course safe and suitable for solo travelers?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Many of our students come alone. Gianyar is generally calm, and our school atmosphere is friendly and supportive. We can help with airport pickup arrangements and give guidance about staying safe and comfortable in Bali."
-            }
-        }, {
-            "@type": "Question",
-            "name": "Will I get time to rest or explore Bali during the course?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. You will have breaks during the day and usually one rest day per week. You can use this time to relax, journal, enjoy nature, or visit nearby places like Ubud, waterfalls, temples, and local markets."
-            }
-        }, {
-            "@type": "Question",
-            "name": "How do I apply and book my seat?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "You can contact Yoga Garhi through our website, email, or WhatsApp for upcoming dates and availability. After confirmation, you will be asked to pay a booking deposit to secure your spot, and we will send all details about what to bring, how to travel, and how to prepare."
-            }
-        }]
+                "text": faq.answer,
+            },
+        })),
     };
 
     /* =========================
