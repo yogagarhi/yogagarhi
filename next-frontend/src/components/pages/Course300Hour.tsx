@@ -1331,7 +1331,7 @@ export default function Course300Hour() {
                     <p className="pt-6">
                       Become a part of this transformative once in a lifetime experience in the
                       mesmerizing beauty of Bali. This holistic program prepares you to become a
-                      professional yoga teacher having expertise, skills, and confidence.
+                      professional yoga teacher having expertise, skills, and confidence. This advanced training is designed for graduates of a <Link href="/200-hour-yoga-teacher-training-in-bali" className="text-primary font-semibold underline hover:text-primary/80">200 hour yoga teacher training in Bali</Link> who are ready to elevate their mastery to the RYT 300 level.
                     </p>
                   </div>
 

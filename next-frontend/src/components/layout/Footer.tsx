@@ -5,9 +5,11 @@ import { getCloudinaryImage } from "@/utils/cloudinary";
 const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
 const courses = [
-  { name: "100 Hour YTTC", href: "/100-hour-yoga-teacher-training-in-bali" },
-  { name: "200 Hour YTTC", href: "/200-hour-yoga-teacher-training-in-bali" },
-  { name: "300 Hour YTTC", href: "/300-hour-yoga-teacher-training-in-bali" },
+  { name: "200 Hour Yoga Teacher Training in Bali", href: "/200-hour-yoga-teacher-training-in-bali" },
+  { name: "100 Hour Yoga Teacher Training in Bali", href: "/100-hour-yoga-teacher-training-in-bali" },
+  { name: "300 Hour Yoga Teacher Training in Bali", href: "/300-hour-yoga-teacher-training-in-bali" },
+  { name: "200 Hour Yoga TTC in Rishikesh", href: "/200-hour-yoga-teacher-training-in-rishikesh" },
+  { name: "100 Hour Yoga TTC in Rishikesh", href: "/100-hour-yoga-teacher-training-in-rishikesh" },
 ];
 
 const explore = [

@@ -11,8 +11,8 @@ export const metadata: Metadata = {
     canonical: "/payment",
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   },
 };
 

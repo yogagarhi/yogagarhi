@@ -115,12 +115,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.3,
         },
         {
-            url: 'https://www.yogagarhi.com/payment',
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.5,
-        },
-        {
             url: 'https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh',
             lastModified: new Date(),
             changeFrequency: 'weekly',

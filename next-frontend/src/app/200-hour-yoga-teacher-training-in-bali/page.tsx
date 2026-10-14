@@ -10,10 +10,10 @@ import { COURSE_200_FAQS } from "@/constants/course200Data";
 export function generateMetadata(): Metadata {
     const course = courseData["200-hour"];
 
-    const title = "200 Hour Yoga Teacher Training in Bali | RYT 200 Ubud Bali";
+    const title = "200 Hour Yoga Teacher Training in Bali 2027 | YogaGarhi";
 
     const description =
-        "Become a certified yoga instructor with our 200-Hour Yoga TTC in Bali. Yoga Alliance RYT 200, authentic Hatha & Vinyasa in Ubud. Apply now for early-bird rates!";
+        "Join YogaGarhi's residential 200-Hour Yoga Teacher Training in Bali (Yoga Alliance RYT 200). Small intimate batches of 8–10 students, authentic Himalayan lineage, all-inclusive packages from $999 USD.";
 
     const url =
         "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali";
@@ -28,10 +28,10 @@ export function generateMetadata(): Metadata {
             "200 hour yoga TTC bali",
             "ryt 200 yoga teacher training bali",
             "yoga alliance 200 hour bali",
-            "yoga teacher training bali"
+            "yoga teacher training bali 2027"
         ],
         alternates: {
-            canonical: "/200-hour-yoga-teacher-training-in-bali",
+            canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
         },
         robots: {
             index: true,
@@ -213,6 +213,34 @@ export default function Page() {
         ]
     };
 
+    /* =========================
+       LOCAL BUSINESS / PLACE SCHEMA
+    ========================= */
+    const localBusinessSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.yogagarhi.com/#school-bali",
+        "name": "YogaGarhi Bali",
+        "description": "Yoga Alliance certified residential Yoga Teacher Training School in Gianyar, Bali.",
+        "image": "https://www.yogagarhi.com/logo.png",
+        "url": pageUrl,
+        "telephone": "+917895350563",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ds Madangan Kaja, Desa Petak, Petak Kaja",
+            "addressLocality": "Gianyar",
+            "addressRegion": "Bali",
+            "postalCode": "80515",
+            "addressCountry": "ID"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -8.5085186,
+            "longitude": 115.2635395
+        }
+    };
+
     return (
         <>
             {/* Preload Hero image for instant browser scanner discovery on 200hr Course Page */}
@@ -258,6 +286,14 @@ export default function Page() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(breadcrumbSchema),
+                }}
+            />
+
+            {/* Local Business Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(localBusinessSchema),
                 }}
             />
 

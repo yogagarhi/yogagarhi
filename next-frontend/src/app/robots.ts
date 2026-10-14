@@ -6,12 +6,12 @@ export default function robots(): MetadataRoute.Robots {
             {
                 userAgent: '*',
                 allow: '/',
-                disallow: ['/api/', '/_next/', '/private/', '/thank-you'],
+                disallow: ['/api/', '/_next/', '/private/', '/thank-you', '/payment'],
             },
             {
                 userAgent: 'GPTBot',
                 allow: '/',
-                disallow: ['/api/', '/_next/', '/private/', '/thank-you'],
+                disallow: ['/api/', '/_next/', '/private/', '/thank-you', '/payment'],
             },
             {
                 userAgent: 'ChatGPT-User',
@@ -20,12 +20,12 @@ export default function robots(): MetadataRoute.Robots {
             {
                 userAgent: 'ClaudeBot',
                 allow: '/',
-                disallow: ['/api/', '/_next/', '/private/', '/thank-you'],
+                disallow: ['/api/', '/_next/', '/private/', '/thank-you', '/payment'],
             },
             {
                 userAgent: 'PerplexityBot',
                 allow: '/',
-                disallow: ['/api/', '/_next/', '/private/', '/thank-you'],
+                disallow: ['/api/', '/_next/', '/private/', '/thank-you', '/payment'],
             },
             {
                 userAgent: 'Google-Extended',
