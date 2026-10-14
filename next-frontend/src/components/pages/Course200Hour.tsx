@@ -1024,12 +1024,51 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
       <Layout>
         {/* ===== HERO SECTION ===== */}
         <section className="relative min-h-[85vh] flex items-start justify-center overflow-hidden pt-24 sm:pt-28 md:pt-32 pb-20">
-          {/* Background Image */}
-          <div 
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: 'url("/hero-yoga-group.jpg")' }}
-          >
-            <div className="absolute inset-0 bg-black/40" />
+          {/* Background Container: Full-bleed smart crop on mobile (zero cut faces), full cover on desktop */}
+          <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-[#1c130d]">
+            {/* Single Responsive Picture & exactly ONE <img> in DOM (LCP element) */}
+            <picture className="w-full h-full block relative z-10">
+              {/* Mobile smart-cropped responsive sources (WebP first for ultra-fast mobile decode) */}
+              <source
+                media="(max-width: 768px)"
+                type="image/webp"
+                srcSet="/images/hero/hero-mobile-crop-360.webp 360w, /images/hero/hero-mobile-crop-420.webp 420w"
+                sizes="100vw"
+              />
+              <source
+                media="(max-width: 768px)"
+                type="image/avif"
+                srcSet="/images/hero/hero-mobile-crop-360.avif 360w, /images/hero/hero-mobile-crop-420.avif 420w"
+                sizes="100vw"
+              />
+              {/* Desktop responsive sources (AVIF with WebP fallback) */}
+              <source
+                media="(min-width: 769px)"
+                type="image/avif"
+                srcSet="/images/hero/hero-yoga-group-1080.avif 1080w, /images/hero/hero-yoga-group-1280.avif 1280w, /images/hero/hero-yoga-group-1920.avif 1920w"
+                sizes="100vw"
+              />
+              <source
+                media="(min-width: 769px)"
+                type="image/webp"
+                srcSet="/images/hero/hero-yoga-group-1080.webp 1080w, /images/hero/hero-yoga-group-1280.webp 1280w, /images/hero/hero-yoga-group-1920.webp 1920w"
+                sizes="100vw"
+              />
+              {/* Single Image Tag in entire DOM */}
+              <img
+                src="/images/hero/hero-mobile-crop-420.webp"
+                alt="200 Hour Yoga Teacher Training in Bali - YogaGarhi"
+                fetchPriority="high"
+                loading="eager"
+                decoding="sync"
+                width={420}
+                height={640}
+                className="w-full h-full object-cover object-[47%_68%] md:object-center block"
+              />
+            </picture>
+
+            {/* Contrast overlay for WCAG AA text readability */}
+            <div className="absolute inset-0 z-10 bg-black/45 md:bg-black/40 pointer-events-none" />
           </div>
 
           {/* Content */}
