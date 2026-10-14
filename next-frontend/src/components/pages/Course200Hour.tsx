@@ -38,6 +38,7 @@ import {
 } from "lucide-react";
 import { timezones, countryCodes } from "@/constants/formOptions";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
+import CourseVideoFacade from "@/components/common/CourseVideoFacade";
 import FounderSection from "@/components/home/FounderSection";
 import HomeGallerySection from "@/components/home/HomeGallerySection";
 import RoomCard from "./RoomCard";
@@ -1376,100 +1377,75 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
         {/* ===== WELCOME SECTION ===== */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-16 items-start">
-              {/* Left Column - Welcome Text & Video on Mobile */}
-              <div className="order-1 lg:order-2">
-                <div className="space-y-4 mb-8 text-left">
-                  <span className="text-accent font-bold uppercase tracking-widest text-xs">Welcome to YogaGarhi</span>
-                  <h2 className="font-heading text-3xl md:text-4xl font-black text-foreground leading-tight">
-                    A Transformative Journey of Self-Realization
-                  </h2>
-                  <div className="w-16 h-1 bg-accent rounded-full" />
-                </div>
-
-                {/* YouTube Video - Shows here on mobile, hidden on desktop */}
-                <div className="relative w-full mb-8 lg:hidden">
-                  <div className="aspect-video rounded-lg overflow-hidden shadow-card bg-muted">
-                    <iframe
-                      src="https://www.youtube.com/embed/U1r2mQRmWXM?rel=0&autoplay=1&mute=1"
-                      title="Yogagarhi Course Video"
-                      loading="lazy"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="w-full h-full"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-6 text-muted-foreground leading-relaxed mb-8 text-left">
-                  {/* First 2 paragraphs - always visible */}
-                  <p className="text-base sm:text-lg text-foreground/80 font-medium">
-                    Become a Yoga Alliance Registered Yoga Teacher (RYT 200) through Yogagarhi's
-                    200-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
-                    of yoga and self-realization.
-                  </p>
-
-                  <p>
-                    Our professional course is made for both beginners and intermediate practitioners.
-                    This course covers all essential aspects of yoga, including asanas, pranayama,
-                    anatomy, and teaching methodology.
-                  </p>
-
-                  {/* Expandable content */}
-                  <div
-                    className={`overflow-hidden transition-all duration-500 ease-in-out ${showWelcomeExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                      }`}
-                  >
-                    <p className="pt-6">
-                      Become a part of this transformative once in a lifetime experience in the
-                      mesmerizing beauty of Bali. This holistic program prepares you to become a
-                      professional yoga teacher having expertise, skills, and confidence.
-                    </p>
-                  </div>
-
-                  {/* Read More / Read Less Button */}
-                  <button
-                    onClick={() => setShowWelcomeExpanded(!showWelcomeExpanded)}
-                    className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors mt-2 group"
-                  >
-                    {showWelcomeExpanded ? 'Read Less' : 'Read More'}
-                    <ChevronDown
-                      className={`w-4 h-4 transition-transform duration-300 ${showWelcomeExpanded ? 'rotate-180' : ''
-                        }`}
-                    />
-                  </button>
-
-                  {/* Consolidated Tour Call Card */}
-                  <div className="mt-8 p-6 lg:p-8 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm text-center md:text-left">
-                    <h3 className="font-heading text-xl lg:text-2xl font-medium text-foreground mb-3 lg:mb-4">
-                      Want to See Before You Book?
-                    </h3>
-                    <p className="text-muted-foreground text-sm mb-4 lg:mb-6">
-                      Hop on a live video call to get a personal tour of the campus, classrooms, shala, and student rooms.
-                    </p>
-                    <Button
-                      className="w-full h-auto py-3.5 lg:py-4 bg-gradient-to-r from-primary to-accent text-white font-bold hover:opacity-95 transition-all shadow-lg text-sm md:text-base flex items-center justify-center gap-2 lg:gap-3 rounded-xl whitespace-normal"
-                      onClick={() => setShowTourCallDialog(true)}
-                    >
-                      <Video className="w-4 h-4 lg:w-5 lg:h-5 text-white flex-shrink-0" />
-                      <span className="text-center">Book a Call. See the School. See Your Room. See Your Yoga Hall.</span>
-                    </Button>
-                  </div>
-                </div>
-
+            <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+              {/* Heading (shows first on mobile, top right on desktop) */}
+              <div className="order-1 lg:col-start-2 lg:row-start-1 space-y-4 mb-2 lg:mb-0 text-left">
+                <span className="text-accent font-bold uppercase tracking-widest text-xs">Welcome to YogaGarhi</span>
+                <h2 className="font-heading text-3xl md:text-4xl font-black text-foreground leading-tight">
+                  A Transformative Journey of Self-Realization
+                </h2>
+                <div className="w-16 h-1 bg-accent rounded-full" />
               </div>
 
-              {/* Right Column - YouTube Video */}
-              <div className="relative w-full order-2 lg:order-1 hidden lg:block sticky top-24 self-start space-y-8">
-                <div className="aspect-video rounded-lg overflow-hidden shadow-card bg-muted">
-                  <iframe
-                    src="https://www.youtube.com/embed/U1r2mQRmWXM?rel=0&autoplay=1&mute=1"
-                    title="Student Testimonial"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-full"
+              {/* Single YouTube Facade instance for both Mobile and Desktop */}
+              <div className="relative w-full order-2 lg:col-start-1 lg:row-start-1 lg:row-span-2 mb-6 lg:mb-0 lg:sticky lg:top-24 self-start">
+                <CourseVideoFacade youtubeVideoId="U1r2mQRmWXM" title="Yoga Teacher Training in Bali - YogaGarhi Campus Tour" />
+              </div>
+
+              {/* Text Body & Tour Call (order 3 on mobile, below heading in right column on desktop) */}
+              <div className="order-3 lg:col-start-2 lg:row-start-2 space-y-6 text-muted-foreground leading-relaxed text-left">
+                {/* First 2 paragraphs - always visible */}
+                <p className="text-base sm:text-lg text-foreground/80 font-medium">
+                  Become a Yoga Alliance Registered Yoga Teacher (RYT 200) through Yogagarhi's
+                  200-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
+                  of yoga and self-realization.
+                </p>
+
+                <p>
+                  Our professional course is made for both beginners and intermediate practitioners.
+                  This course covers all essential aspects of yoga, including asanas, pranayama,
+                  anatomy, and teaching methodology.
+                </p>
+
+                {/* Expandable content */}
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${showWelcomeExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                >
+                  <p className="pt-6">
+                    Become a part of this transformative once in a lifetime experience in the
+                    mesmerizing beauty of Bali. This holistic program prepares you to become a
+                    professional yoga teacher having expertise, skills, and confidence.
+                  </p>
+                </div>
+
+                {/* Read More / Read Less Button */}
+                <button
+                  onClick={() => setShowWelcomeExpanded(!showWelcomeExpanded)}
+                  className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors mt-2 group"
+                >
+                  {showWelcomeExpanded ? 'Read Less' : 'Read More'}
+                  <ChevronDown
+                    className={`w-4 h-4 transition-transform duration-300 ${showWelcomeExpanded ? 'rotate-180' : ''
+                      }`}
                   />
+                </button>
+
+                {/* Consolidated Tour Call Card */}
+                <div className="mt-8 p-6 lg:p-8 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm text-center md:text-left">
+                  <h3 className="font-heading text-xl lg:text-2xl font-medium text-foreground mb-3 lg:mb-4">
+                    Want to See Before You Book?
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4 lg:mb-6">
+                    Hop on a live video call to get a personal tour of the campus, classrooms, shala, and student rooms.
+                  </p>
+                  <Button
+                    className="w-full h-auto py-3.5 lg:py-4 bg-gradient-to-r from-primary to-accent text-white font-bold hover:opacity-95 transition-all shadow-lg text-sm md:text-base flex items-center justify-center gap-2 lg:gap-3 rounded-xl whitespace-normal"
+                    onClick={() => setShowTourCallDialog(true)}
+                  >
+                    <Video className="w-4 h-4 lg:w-5 lg:h-5 text-white flex-shrink-0" />
+                    <span className="text-center">Book a Call. See the School. See Your Room. See Your Yoga Hall.</span>
+                  </Button>
                 </div>
               </div>
             </div>
