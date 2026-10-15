@@ -265,6 +265,28 @@ export default function Page() {
                 }}
             />
 
+            {/* Preload Hero image for instant browser scanner discovery */}
+            <link
+                rel="preload"
+                as="image"
+                type="image/webp"
+                href="/images/hero/hero-mobile-crop-420.webp"
+                imageSrcSet="/images/hero/hero-mobile-crop-360.webp 360w, /images/hero/hero-mobile-crop-420.webp 420w"
+                imageSizes="100vw"
+                media="(max-width: 768px)"
+                fetchPriority="high"
+            />
+            <link
+                rel="preload"
+                as="image"
+                type="image/avif"
+                href="/images/hero/hero-yoga-group-1920.avif"
+                imageSrcSet="/images/hero/hero-yoga-group-1080.avif 1080w, /images/hero/hero-yoga-group-1280.avif 1280w, /images/hero/hero-yoga-group-1920.avif 1920w"
+                imageSizes="100vw"
+                media="(min-width: 769px)"
+                fetchPriority="high"
+            />
+
             {/* Page Content */}
             <Course100Hour initialBatches={upcomingBatches} />
         </>
