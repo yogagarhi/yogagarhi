@@ -10,6 +10,8 @@ export interface GoogleReview {
     text: string;
 }
 
+export const GOOGLE_REVIEW_COUNT = "100";
+
 export const googleReviews: GoogleReview[] = [
     {
         name: "Gurpreet Kaur Dhou",

@@ -35,27 +35,22 @@ export default function GoogleReviewsSection() {
           </p>
         </div>
 
-        {/* Reviews Grid - Desktop */}
-        <div className="hidden md:grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        {/* Reviews Grid - Responsive: 1 column on mobile, 3 columns on tablet/desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-6">
           {googleReviews.map((review, index) => (
             <GoogleReviewCard key={index} review={review} />
           ))}
         </div>
 
-        {/* Reviews Static List - Mobile (Zero Carousel JS, fast & lightweight) */}
-        <div className="md:hidden space-y-4 max-w-md mx-auto mb-6">
-          {googleReviews.slice(0, 3).map((review, index) => (
-            <GoogleReviewCard key={index} review={review} />
-          ))}
-          <div className="text-center pt-2">
-            <Link
-              href="/testimonials"
-              className="inline-flex items-center gap-2 bg-card border-2 border-primary/40 text-primary px-6 py-2.5 rounded-full text-xs font-bold shadow-sm hover:bg-primary/5 transition-colors"
-            >
-              <span>Read All Student Stories & Reviews</span>
-              <span>→</span>
-            </Link>
-          </div>
+        {/* Read All Link for Mobile */}
+        <div className="text-center pt-2 md:hidden">
+          <Link
+            href="/testimonials"
+            className="inline-flex items-center gap-2 bg-card border-2 border-primary/40 text-primary px-6 py-2.5 rounded-full text-xs font-bold shadow-sm hover:bg-primary/5 transition-colors"
+          >
+            <span>Read All Student Stories & Reviews</span>
+            <span>→</span>
+          </Link>
         </div>
 
         {/* View All CTA */}

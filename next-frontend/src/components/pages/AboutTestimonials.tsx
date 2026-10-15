@@ -86,7 +86,7 @@ export default function AboutTestimonials() {
                 </p>
                 <div className="flex items-center justify-between flex-wrap gap-4">
                   <div>
-                    <h4 className="font-semibold text-lg text-foreground">{googleReviews[0].name}</h4>
+                    <h3 className="font-semibold text-lg text-foreground">{googleReviews[0].name}</h3>
                     <div className="flex items-center gap-2 text-muted-foreground text-sm">
                       <MapPin className="w-4 h-4" />
                       {googleReviews[0].location}
@@ -136,7 +136,7 @@ export default function AboutTestimonials() {
                   <div className="pt-4 border-t border-border/40">
                     <div className="flex items-center justify-between mb-3">
                       <div>
-                        <h4 className="font-semibold text-foreground">{review.name}</h4>
+                        <h3 className="font-semibold text-foreground">{review.name}</h3>
                         <div className="flex items-center gap-1 text-sm text-muted-foreground">
                           <MapPin className="w-3 h-3" />
                           {review.location}

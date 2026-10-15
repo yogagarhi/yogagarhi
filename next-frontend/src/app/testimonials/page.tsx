@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import AboutTestimonials from "@/components/pages/AboutTestimonials";
+import { googleReviews, GOOGLE_REVIEW_COUNT } from "@/constants/googleReviews";
 
 export const metadata: Metadata = {
     title: "Reviews & Testimonials - Student Stories",
@@ -18,19 +19,50 @@ export default function AboutTestimonialsPage() {
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
                         "@context": "https://schema.org",
-                        "@type": "BreadcrumbList",
-                        "itemListElement": [
+                        "@graph": [
                             {
-                                "@type": "ListItem",
-                                "position": 1,
-                                "name": "Home",
-                                "item": "https://www.yogagarhi.com"
+                                "@type": "BreadcrumbList",
+                                "itemListElement": [
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 1,
+                                        "name": "Home",
+                                        "item": "https://www.yogagarhi.com"
+                                    },
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 2,
+                                        "name": "Reviews & Testimonials",
+                                        "item": "https://www.yogagarhi.com/testimonials"
+                                    }
+                                ]
                             },
                             {
-                                "@type": "ListItem",
-                                "position": 2,
-                                "name": "Reviews & Testimonials",
-                                "item": "https://www.yogagarhi.com/testimonials"
+                                "@type": "EducationalOrganization",
+                                "@id": "https://www.yogagarhi.com/#organization",
+                                "name": "YogaGarhi",
+                                "url": "https://www.yogagarhi.com",
+                                "aggregateRating": {
+                                    "@type": "AggregateRating",
+                                    "ratingValue": "5.0",
+                                    "reviewCount": GOOGLE_REVIEW_COUNT,
+                                    "bestRating": "5",
+                                    "worstRating": "1"
+                                },
+                                "review": googleReviews.map((review) => ({
+                                    "@type": "Review",
+                                    "author": {
+                                        "@type": "Person",
+                                        "name": review.name
+                                    },
+                                    "reviewRating": {
+                                        "@type": "Rating",
+                                        "ratingValue": review.rating,
+                                        "bestRating": "5",
+                                        "worstRating": "1"
+                                    },
+                                    "reviewBody": review.text
+                                }))
                             }
                         ]
                     })
