@@ -74,6 +74,8 @@ export default function PreYTTCPrep() {
                             <Image
                                 src={logoImage}
                                 alt="YogaGarhi"
+                                width={48}
+                                height={48}
                                 className="object-contain h-10 w-10 sm:h-12 sm:w-12 transition-all duration-300"
                             />
                         </div>

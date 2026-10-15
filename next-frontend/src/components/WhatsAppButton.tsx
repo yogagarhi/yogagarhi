@@ -8,7 +8,6 @@ export default function WhatsAppButton() {
     const pathname = usePathname();
     const isLandingPage = [
         "/yoga-anatomy-masterclass",
-        "/yoga-anatomy-mastery",
         "/pre-yttc-prep",
         "/teacher-training-foundation",
         "/yogic-energy"

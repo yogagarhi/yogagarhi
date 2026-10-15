@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Learn about YogaGarhi's authentic Himalayan lineage, our sacred ashram in Gianyar Ubud, Bali, and our mission to train compassionate yoga teachers worldwide.",
   keywords: "about YogaGarhi, yoga school Bali, yoga ashram story, yoga teacher training mission, Ubud yoga center",
   alternates: {
-    canonical: "/about-school",
+    canonical: "https://www.yogagarhi.com/about-school",
   },
 };
 

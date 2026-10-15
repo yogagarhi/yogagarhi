@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: "Explore our yoga teacher training gallery. See photos from our ashram in Bali, yoga classes, ceremonies, and the beautiful surroundings of Ubud.",
     keywords: "yoga training photos, YTTC gallery, yoga ashram pictures, Bali yoga images, Ubud retreat photos",
     alternates: {
-        canonical: "/gallery",
+        canonical: "https://www.yogagarhi.com/gallery",
     },
 };
 

@@ -359,7 +359,7 @@ export default function YogaAnatomyMasterclass() {
             <Image
               src="/sachin-anatomy-projection.jpg"
               alt="Acharya Sachin Kotiyal live yoga anatomy projection mapping on student"
-              fill
+              fill sizes="100vw" 
               className="object-cover object-[72%_center] md:object-[80%_center] scale-100"
               priority
             />
@@ -561,7 +561,7 @@ export default function YogaAnatomyMasterclass() {
                 <Image
                   src="https://img.youtube.com/vi/9uGW2o3jTGM/hqdefault.jpg"
                   alt="Student Review - Acharya Sachin Kotiyal Yoga Anatomy Masterclass"
-                  fill
+                  fill sizes="(max-width: 768px) 100vw, 50vw" 
                   className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
                 />
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors" />
@@ -800,7 +800,7 @@ export default function YogaAnatomyMasterclass() {
                   <Image
                     src="/quiz-trikonasana-a.jpg"
                     alt="Trikonasana Alignment Option A"
-                    fill
+                    fill sizes="(max-width: 768px) 100vw, 500px" 
                     className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-2.5 left-2.5 bg-[#1C1917]/80 backdrop-blur-xs text-white text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full">
@@ -837,7 +837,7 @@ export default function YogaAnatomyMasterclass() {
                   <Image
                     src="/quiz-trikonasana-b.jpg"
                     alt="Trikonasana Alignment Option B"
-                    fill
+                    fill sizes="(max-width: 768px) 100vw, 500px" 
                     className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-2.5 left-2.5 bg-[#1C1917]/80 backdrop-blur-xs text-white text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full">
@@ -1172,7 +1172,7 @@ export default function YogaAnatomyMasterclass() {
                     <Image
                       src="/instructor-teaching-block.jpg"
                       alt="Acharya Sachin Kotiyal teaching active biomechanics"
-                      fill
+                      fill sizes="(max-width: 768px) 100vw, 350px" 
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
@@ -1185,7 +1185,7 @@ export default function YogaAnatomyMasterclass() {
                     <Image
                       src="/instructor-hands-on.jpg"
                       alt="Hands-on alignment correction"
-                      fill
+                      fill sizes="(max-width: 768px) 100vw, 350px" 
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
@@ -1259,7 +1259,7 @@ export default function YogaAnatomyMasterclass() {
                   <Image
                     src="/instructor-military-training.jpg"
                     alt="Acharya Sachin Kotiyal training Indian Armed Forces"
-                    fill
+                    fill sizes="(max-width: 768px) 100vw, 300px" 
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -1274,7 +1274,7 @@ export default function YogaAnatomyMasterclass() {
                   <Image
                     src="/instructor-award.jpg"
                     alt="Acharya Sachin Kotiyal felicitation award"
-                    fill
+                    fill sizes="(max-width: 768px) 100vw, 300px" 
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -1289,7 +1289,7 @@ export default function YogaAnatomyMasterclass() {
                   <Image
                     src="/instructor-graduates.jpg"
                     alt="5,000+ Yoga Teachers Mentored Worldwide"
-                    fill
+                    fill sizes="(max-width: 768px) 100vw, 300px" 
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -1370,7 +1370,7 @@ export default function YogaAnatomyMasterclass() {
                       <Image
                         src={v.thumb}
                         alt={`${v.name} YogaGarhi Review`}
-                        fill
+                        fill sizes="(max-width: 768px) 100vw, 384px" 
                         className="object-cover group-hover:scale-105 transition-transform duration-300 opacity-90"
                       />
                       <div className="absolute inset-0 bg-black/25 flex items-center justify-center">

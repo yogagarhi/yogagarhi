@@ -222,6 +222,7 @@ export default function TeacherTrainingFoundation() {
                                     src={logoImage}
                                     alt="Yogagarhi Logo"
                                     fill
+                                    sizes="(max-width: 768px) 48px, 64px"
                                     className="object-contain"
                                     priority
                                 />
@@ -355,6 +356,7 @@ export default function TeacherTrainingFoundation() {
                                         src={curriculumImage}
                                         alt="Yoga Curriculum Journey"
                                         fill
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
                                         className="object-cover"
                                     />
                                 </div>
@@ -473,6 +475,7 @@ export default function TeacherTrainingFoundation() {
                                         src={founderImage}
                                         alt="YogaGarhi Founder"
                                         fill
+                                        sizes="(max-width: 1024px) 100vw, 50vw"
                                         className="object-cover"
                                     />
                                 </div>

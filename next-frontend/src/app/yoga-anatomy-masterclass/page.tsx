@@ -2,11 +2,13 @@ import { Metadata } from "next";
 import YogaAnatomyMasterclass from "@/components/pages/YogaAnatomyMasterclass";
 
 export const metadata: Metadata = {
-  title: "Applied Functional Yoga Anatomy & Biomechanics Masterclass | YogaGarhi",
+  title: {
+    absolute: "Yoga Anatomy & Biomechanics Masterclass | YogaGarhi",
+  },
   description: "Live 2-Hour intensive masterclass on Applied Yoga Anatomy, Joint Biomechanics & Injury Prevention by Ex-Army Yoga Therapy Specialist Acharya Sachin Kotiyal. Book your seat for ₹99.",
   keywords: "yoga anatomy masterclass, yoga biomechanics, injury prevention yoga, sachin kotiyal, functional yoga anatomy, yogagarhi",
   alternates: {
-    canonical: "/yoga-anatomy-masterclass",
+    canonical: "https://www.yogagarhi.com/yoga-anatomy-masterclass",
   },
   openGraph: {
     title: "Applied Functional Yoga Anatomy Masterclass | ₹99 Special",

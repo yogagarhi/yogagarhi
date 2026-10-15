@@ -247,7 +247,7 @@ export default function AboutAshram() {
           <Image
             src={heroImage}
             alt="Hero Background"
-            fill
+            fill sizes="100vw" 
             className="object-cover"
             priority
           />
@@ -276,15 +276,15 @@ export default function AboutAshram() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="h-48 rounded-2xl overflow-hidden relative">
-                  <Image src={aboutYoga1} alt="YogaGarhi Practice" fill className="object-cover" />
+                  <Image src={aboutYoga1} alt="YogaGarhi Practice" fill sizes="(max-width: 768px) 100vw, 33vw"  className="object-cover" />
                 </div>
                 <div className="h-32 rounded-2xl overflow-hidden relative">
-                  <Image src={aboutYoga2} alt="YogaGarhi Environment" fill className="object-cover" />
+                  <Image src={aboutYoga2} alt="YogaGarhi Environment" fill sizes="(max-width: 768px) 100vw, 33vw"  className="object-cover" />
                 </div>
               </div>
               <div className="pt-8">
                 <div className="h-64 rounded-2xl overflow-hidden relative">
-                  <Image src={aboutYoga3} alt="YogaGarhi Ashram" fill className="object-cover" />
+                  <Image src={aboutYoga3} alt="YogaGarhi Ashram" fill sizes="(max-width: 768px) 100vw, 33vw"  className="object-cover" />
                 </div>
               </div>
             </div>
@@ -329,7 +329,7 @@ export default function AboutAshram() {
               <div className="order-2 lg:order-1">
                 <div className="relative">
                   <div className="aspect-[3/4] rounded-2xl overflow-hidden relative">
-                    <Image src={founderImage} alt="Yogacharya Sachin" fill className="object-cover" />
+                    <Image src={founderImage} alt="Yogacharya Sachin" fill sizes="(max-width: 1024px) 100vw, 50vw"  className="object-cover" />
                   </div>
                   <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-xl">
                     <p className="font-semibold">Yogacharya Sachin</p>
@@ -601,16 +601,16 @@ export default function AboutAshram() {
           {/* Gallery */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
             <div className="aspect-square rounded-2xl overflow-hidden relative">
-              <Image src={gallery1} alt="Yoga teacher training students practicing asana at YogaGarhi Ashram Bali" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src={gallery1} alt="Yoga teacher training students practicing asana at YogaGarhi Ashram Bali" fill sizes="(max-width: 768px) 100vw, 25vw"  className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="aspect-square rounded-2xl overflow-hidden relative">
-              <Image src={gallery2} alt="Morning meditation and breathwork session in open-air shala Gianyar Ubud" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src={gallery2} alt="Morning meditation and breathwork session in open-air shala Gianyar Ubud" fill sizes="(max-width: 768px) 100vw, 25vw"  className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="aspect-square rounded-2xl overflow-hidden relative">
-              <Image src={gallery4} alt="Traditional fire ceremony and mantra chanting at YogaGarhi Ashram" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src={gallery4} alt="Traditional fire ceremony and mantra chanting at YogaGarhi Ashram" fill sizes="(max-width: 768px) 100vw, 25vw"  className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="aspect-square rounded-2xl overflow-hidden relative">
-              <Image src={seatedMeditation} alt="Seated meditation and mindfulness practice in tropical Bali nature" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+              <Image src={seatedMeditation} alt="Seated meditation and mindfulness practice in tropical Bali nature" fill sizes="(max-width: 768px) 100vw, 25vw"  className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
 

@@ -40,7 +40,11 @@ export function getCloudinaryUrl(path: string, options: CloudinaryImageOptions =
     transformations.push(options.format ? `f_${options.format}` : 'f_auto');
     transformations.push(options.quality ? `q_${options.quality}` : 'q_auto');
 
-    if (options.width) transformations.push(`w_${options.width}`);
+    if (options.width) {
+        transformations.push(`c_limit,w_${options.width}`);
+    } else {
+        transformations.push('c_limit,w_1200');
+    }
     if (options.height) transformations.push(`h_${options.height}`);
 
     const transformationString = transformations.join(',');

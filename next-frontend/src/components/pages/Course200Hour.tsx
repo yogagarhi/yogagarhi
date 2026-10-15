@@ -1580,7 +1580,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
                         <Image
                           src={item.image}
                           alt={item.title}
-                          fill
+                          fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           className="object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -1751,7 +1751,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
                     <Image
                       src={workshop.image}
                       alt={workshop.title}
-                      fill
+                      fill sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     {/* Gradient Overlay */}
@@ -1836,7 +1836,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
                     <Image
                       src={item.image}
                       alt={item.title}
-                      fill
+                      fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
@@ -2277,7 +2277,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
                           <Image
                             src={item.image}
                             alt={item.title}
-                            fill
+                            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
@@ -2447,14 +2447,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
         <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 -z-10">
-            <Image
-              src={apartPoolVilla}
-              alt="Bali yoga retreat accommodation"
-              fill
-              className="object-cover"
-              loading="lazy"
-              sizes="100vw"
-            />
+            <Image src={apartPoolVilla} alt="Bali yoga retreat accommodation" fill sizes="100vw" className="object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-foreground/60" />
           </div>
 
@@ -2537,7 +2530,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
                     <Image
                       src={img}
                       alt={`Accommodation Gallery ${index + 1}`}
-                      fill
+                      fill sizes="(max-width: 768px) 85vw, 400px"
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
@@ -2743,7 +2736,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
                               <Image
                                 src={meal.image}
                                 alt={meal.meal}
-                                fill
+                                fill sizes="(max-width: 768px) 100vw, 33vw"
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                               />
                               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-foreground/20 to-transparent" />
@@ -2866,7 +2859,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
                   <Image
                     src={post.img}
                     alt={`Instagram post ${index + 1}`}
-                    fill
+                    fill sizes="(max-width: 640px) 50vw, 250px"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   {/* Overlay on hover */}
@@ -2946,11 +2939,11 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
                   >
                     {/* Hexagonal Image Container */}
                     <div className="relative mb-6">
-                      <div className="aspect-square max-w-[280px] mx-auto overflow-hidden rounded-[2.5rem] shadow-card group-hover:shadow-elevated transition-shadow duration-500">
+                      <div className="relative aspect-square max-w-[280px] mx-auto overflow-hidden rounded-[2.5rem] shadow-card group-hover:shadow-elevated transition-shadow duration-500">
                         <Image
                           src={excursion.image}
                           alt={excursion.title}
-                          fill
+                          fill sizes="(max-width: 640px) 100vw, 280px"
                           className="object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         {/* Overlay */}
@@ -3052,9 +3045,9 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <Image src={yaRys100} alt="RYS 100" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRys200} alt="RYS 200" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRyt200} alt="RYT 200" height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRys100} alt="RYS 100" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRyt200} alt="RYT 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
               </div>
 
               {/* Full Certification Banner */}
@@ -4281,7 +4274,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             <Image
               src={heroImage}
               alt="200 Hour Yoga Teacher Training in Bali - YogaGarhi"
-              fill
+              fill sizes="100vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-foreground/85" />

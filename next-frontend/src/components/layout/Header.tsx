@@ -165,7 +165,7 @@ const sundayItems: NavDropdownItem[] = [
 ];
 
 const onlineCourses: NavDropdownItem[] = [
-  { name: "Anatomy Mastery", href: "/yoga-anatomy-mastery", icon: Sparkles },
+  { name: "Anatomy Masterclass", href: "/yoga-anatomy-masterclass", icon: Sparkles },
 ];
 
 const navLinks = [
@@ -211,7 +211,7 @@ export default function Header() {
   const isActive = (href: string) => pathname === href;
   const isCoursesActive = pathname.includes("-hour-yoga-teacher-training-in-bali");
   const isRetreatActive = pathname.startsWith("/retreat");
-  const isOnlineCoursesActive = pathname === "/yoga-anatomy-mastery";
+  const isOnlineCoursesActive = pathname === "/yoga-anatomy-masterclass";
   const isAboutActive = pathname === "/about-school" || pathname === "/teachers" || pathname === "/testimonials";
   const isSundayActive = pathname === "/sunday-schedule";
 

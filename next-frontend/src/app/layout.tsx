@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | YogaGarhi"
   },
   alternates: {
-    canonical: '/',
+    canonical: "https://www.yogagarhi.com",
   },
   description: "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.",
   keywords: [
@@ -54,6 +54,16 @@ export const metadata: Metadata = {
     email: false,
     address: false,
     telephone: false,
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+    ],
   },
   openGraph: {
     type: 'website',

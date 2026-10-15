@@ -1,14 +1,16 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Layout from '@/components/layout/Layout';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ScrollText, Award, Heart, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions | YogaGarhi Ashram',
+  title: {
+    absolute: 'Terms & Conditions | YogaGarhi Ashram',
+  },
   description: 'Review YogaGarhi terms and conditions, ashram rules, code of conduct, and Yoga Alliance certification graduation guidelines.',
   alternates: {
-    canonical: '/terms-and-conditions',
+    canonical: "https://www.yogagarhi.com/terms-and-conditions",
   },
   robots: {
     index: true,

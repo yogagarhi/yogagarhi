@@ -1609,7 +1609,7 @@ export default function Course100Hour({ initialBatches }: { initialBatches?: Cou
                           <Image
                             src={item.image}
                             alt={item.title}
-                            fill
+                            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
@@ -1676,9 +1676,9 @@ export default function Course100Hour({ initialBatches }: { initialBatches?: Cou
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <Image src={yaRys100} alt="RYS 100" height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRys200} alt="RYS 200" height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRyt200} alt="RYT 200" height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRys100} alt="RYS 100" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRyt200} alt="RYT 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
               </div>
 
               {/* Full Certification Banner */}
@@ -1784,7 +1784,7 @@ export default function Course100Hour({ initialBatches }: { initialBatches?: Cou
                           <Image
                             src={item.image}
                             alt={item.title}
-                            fill
+                            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover transition-transform duration-700 group-hover:scale-110"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -2363,7 +2363,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
               <Image
                 src={apartCeremony}
                 alt="Yoga practice in nature"
-                fill
+                fill sizes="100vw"
                 className="object-cover"
                 priority
               />
@@ -2592,7 +2592,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             <Image
               src={webinarBackground}
               alt="Yoga meditation background"
-              fill
+              fill sizes="100vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-foreground/70" />
@@ -3039,7 +3039,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                     <Image
                       src={workshop.image}
                       alt={workshop.title}
-                      fill
+                      fill sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     {/* Gradient Overlay */}
@@ -3109,11 +3109,11 @@ This is not a transactional relationship — it is a lifelong connection.`}
                   >
                     {/* Hexagonal Image Container */}
                     <div className="relative mb-6">
-                      <div className="aspect-square max-w-[280px] mx-auto overflow-hidden rounded-[2.5rem] shadow-card group-hover:shadow-elevated transition-shadow duration-500">
+                      <div className="relative aspect-square max-w-[280px] mx-auto overflow-hidden rounded-[2.5rem] shadow-card group-hover:shadow-elevated transition-shadow duration-500">
                         <Image
                           src={excursion.image}
                           alt={excursion.title}
-                          fill
+                          fill sizes="(max-width: 640px) 100vw, 280px"
                           className="object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         {/* Overlay */}
@@ -3193,7 +3193,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                     <Image
                       src={item.image}
                       alt={item.title}
-                      fill
+                      fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
@@ -3254,7 +3254,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             <Image
               src={apartPoolVilla}
               alt="Bali yoga retreat accommodation"
-              fill
+              fill sizes="100vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-foreground/60" />
@@ -3496,7 +3496,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                               <Image
                                 src={meal.image}
                                 alt={meal.meal}
-                                fill
+                                fill sizes="(max-width: 768px) 100vw, 33vw"
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                               />
                               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-foreground/20 to-transparent" />
@@ -4433,7 +4433,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             <Image
               src={heroImage}
               alt="100 Hour Yoga Teacher Training in Bali - YogaGarhi"
-              fill
+              fill sizes="100vw"
               className="object-cover"
             />
             <div className="absolute inset-0 bg-foreground/85" />
@@ -4553,7 +4553,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                   <Image
                     src={post.img}
                     alt={`Instagram post ${index + 1}`}
-                    fill
+                    fill sizes="(max-width: 640px) 50vw, 250px"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   {/* Overlay on hover */}

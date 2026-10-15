@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Refund & Cancellation Policy | YogaGarhi',
   description: 'Understand YogaGarhi transparent refund, booking deposit, and batch transfer policy for Yoga Teacher Training courses and retreats in Bali and Rishikesh.',
   alternates: {
-    canonical: '/refund-policy',
+    canonical: "https://www.yogagarhi.com/refund-policy",
   },
   robots: {
     index: true,

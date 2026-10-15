@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | YogaGarhi",
   description: "Read YogaGarhi's privacy policy. Learn how we handle and protect your personal information when you inquire or enroll in our yoga teacher training courses.",
   alternates: {
-    canonical: "/privacy-policy",
+    canonical: "https://www.yogagarhi.com/privacy-policy",
   },
   robots: {
     index: true,

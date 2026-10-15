@@ -59,6 +59,8 @@ export default function FounderSection({
                 <Image
                   src={founderImage}
                   alt="Founder of YogaGarhi"
+                  width={864}
+                  height={1184}
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="w-full h-auto object-cover"
                 />

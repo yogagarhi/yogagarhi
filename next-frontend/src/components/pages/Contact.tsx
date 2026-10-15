@@ -59,7 +59,7 @@ export default function Contact() {
           <Image
             src={heroImage}
             alt="YogaGarhi Ashram & Yoga School Contact"
-            fill
+            fill sizes="100vw" 
             className="object-cover"
             priority
           />

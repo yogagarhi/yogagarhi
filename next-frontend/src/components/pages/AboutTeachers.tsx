@@ -113,7 +113,7 @@ function TeacherCard({ teacher, index }: { teacher: typeof teachers[0]; index: n
         <Image
           src={teacher.image}
           alt={teacher.name}
-          fill
+          fill sizes="(max-width: 768px) 100vw, 33vw" 
           className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
@@ -193,7 +193,7 @@ export default function AboutTeachers() {
           <Image
             src={heroImage}
             alt="Hero Background"
-            fill
+            fill sizes="100vw" 
             className="object-cover"
             priority
           />
@@ -245,6 +245,9 @@ export default function AboutTeachers() {
                   <Image
                     src={sachinJiImg}
                     alt="Yogacharya Sachin - Founder of YogaGarhi"
+                    width={864}
+                    height={1184}
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="w-full h-auto object-cover"
                   />
 

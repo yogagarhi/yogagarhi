@@ -2,7 +2,9 @@ import { Metadata } from "next";
 import TeacherTrainingFoundation from "@/components/pages/TeacherTrainingFoundation";
 
 export const metadata: Metadata = {
-    title: "2-Day Yoga Teacher Foundation | Start Your Career",
+    title: {
+        absolute: "2-Day Yoga Teacher Foundation Course | YogaGarhi",
+    },
     description: "Join YogaGarhi's 2-Day Yoga Teacher Foundation Masterclass. Discover the path to becoming a certified yoga teacher and building a purpose-driven career.",
     keywords: [
         "yoga teacher training foundation",
@@ -12,7 +14,7 @@ export const metadata: Metadata = {
         "YogaGarhi masterclass"
     ],
     alternates: {
-        canonical: "/teacher-training-foundation",
+        canonical: "https://www.yogagarhi.com/teacher-training-foundation",
     },
     openGraph: {
         title: "2-Day Yoga Teacher Foundation | Start Your Career",

@@ -14,15 +14,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: "Discover why Bali is the world's premier yoga training hub. Learn how a Yoga TTC transforms your practice, mindset & teaching skills. Read our guide!",
         },
         "what-to-expect-200hr": {
-            title: "What to Expect in a 200 Hour YTTC in Bali | Complete Guide",
+            title: "What to Expect in 200-Hour Yoga TTC Bali | YogaGarhi",
             description: "Wondering what happens in a 200-Hour Yoga Teacher Training in Bali? Discover daily schedules, difficulty, anatomy, exams & packing tips in this full guide.",
         },
         "himalayan-roots-yoga": {
-            title: "Himalayan Roots of Authentic Yoga | Bali YTTC Lineage",
+            title: "Himalayan Roots of Authentic Yoga in Bali | YogaGarhi",
             description: "Learn why authentic Himalayan lineage matters for your yoga teacher training in Bali. Discover traditional Hatha wisdom and lineage teachings at YogaGarhi.",
         },
         "bali-vs-rishikesh-yttc-comparison": {
-            title: "Bali vs Rishikesh Yoga Teacher Training: Complete 2026 Comparison Guide",
+            title: "Bali vs Rishikesh Yoga TTC Comparison | YogaGarhi",
             description: "Comparing a Yoga Teacher Training in Bali vs Rishikesh? Discover costs, atmosphere, curriculum, weather, and spiritual vibe to choose your ideal YTTC.",
         },
     };
@@ -32,8 +32,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: "Discover authentic yogic wisdom, teacher training insights, and Himalayan lineage practices at YogaGarhi.",
     };
 
+    const finalTitle = meta.title.includes("YogaGarhi") ? meta.title : `${meta.title} | YogaGarhi`;
+
     return {
-        title: meta.title,
+        title: {
+            absolute: finalTitle,
+        },
         description: meta.description,
         alternates: {
             canonical: `https://www.yogagarhi.com/blogs/${slug}`,

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: "Explore our Sunday excursion schedule at Yogagarhi. From Beach Yoga to Monkey Forest, see how our students spend their free Sundays in Bali.",
     keywords: "Sunday yoga schedule, Bali excursions, Monkey Forest, Beach Yoga Bali, Yogagarhi activities",
     alternates: {
-        canonical: "/sunday-schedule",
+        canonical: "https://www.yogagarhi.com/sunday-schedule",
     },
 };
 

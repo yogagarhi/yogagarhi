@@ -89,7 +89,7 @@ export default function About() {
           <Image
             src={heroImage}
             alt="Hero Background"
-            fill
+            fill sizes="100vw" 
             className="object-cover"
             priority
           />
@@ -154,7 +154,7 @@ export default function About() {
                       <Image
                         src={section.image}
                         alt={section.subtitle}
-                        fill
+                        fill sizes="(max-width: 768px) 100vw, 50vw" 
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                       {/* Overlay */}
@@ -220,15 +220,15 @@ export default function About() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="h-48 rounded-2xl overflow-hidden relative">
-                  <Image src={gallery1} alt="YogaGarhi Ashram grounds and accommodation" fill className="object-cover" />
+                  <Image src={gallery1} alt="YogaGarhi Ashram grounds and accommodation" fill sizes="(max-width: 768px) 100vw, 33vw"  className="object-cover" />
                 </div>
                 <div className="h-32 rounded-2xl overflow-hidden relative">
-                  <Image src={gallery2} alt="Students practicing authentic yoga postures and alignment" fill className="object-cover" />
+                  <Image src={gallery2} alt="Students practicing authentic yoga postures and alignment" fill sizes="(max-width: 768px) 100vw, 33vw"  className="object-cover" />
                 </div>
               </div>
               <div className="pt-8">
                 <div className="h-64 rounded-2xl overflow-hidden relative">
-                  <Image src={gallery3} alt="Serene natural ashram environment for teacher training" fill className="object-cover" />
+                  <Image src={gallery3} alt="Serene natural ashram environment for teacher training" fill sizes="(max-width: 768px) 100vw, 33vw"  className="object-cover" />
                 </div>
               </div>
             </div>
@@ -286,7 +286,7 @@ export default function About() {
                   <Image
                     src={teacher.image}
                     alt={teacher.name}
-                    fill
+                    fill sizes="(max-width: 768px) 100vw, 33vw" 
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/40 to-transparent" />

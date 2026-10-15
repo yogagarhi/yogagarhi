@@ -126,6 +126,40 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/yoga-anatomy-mastery',
+        destination: '/yoga-anatomy-masterclass',
+        permanent: true,
+      },
+    ];
+  },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          // NOTE: Content-Security-Policy is set in Report-Only mode without an external reporting endpoint.
+          // Policy violations are logged to the browser developer console only and will not block resources or scripts.
+          {
+            key: 'Content-Security-Policy-Report-Only',
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://connect.facebook.net https://www.google-analytics.com https://www.youtube.com https://s.ytimg.com https://scripts.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; media-src 'self' https:; connect-src 'self' https:; frame-src 'self' https://www.youtube.com https://www.google.com;",
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          // NOTE: X-Frame-Options is set to 'SAMEORIGIN' to protect against clickjacking.
+          // This header is optional; if an external partner site needs to embed yogagarhi.com in an iframe, this can be relaxed or removed.
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+        ],
+      },
     ];
   },
   async rewrites() {

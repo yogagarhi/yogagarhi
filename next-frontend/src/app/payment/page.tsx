@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Secure Payment & Booking Information | YogaGarhi",
   description: "Learn about secure payment options, $250 booking deposit, and payment methods for YogaGarhi yoga teacher training courses and retreats in Bali and Rishikesh.",
   alternates: {
-    canonical: "/payment",
+    canonical: "https://www.yogagarhi.com/payment",
   },
   robots: {
     index: false,

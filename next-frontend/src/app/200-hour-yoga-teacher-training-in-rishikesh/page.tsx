@@ -31,7 +31,7 @@ export function generateMetadata(): Metadata {
             "yoga teacher training rishikesh"
         ],
         alternates: {
-            canonical: "/200-hour-yoga-teacher-training-in-rishikesh",
+            canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh",
         },
         robots: {
             index: true,

@@ -347,7 +347,7 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
             <Image
               src={retreat.heroImage}
               alt={retreat.heroImageAlt}
-              fill
+              fill sizes="100vw" 
               priority
               className="object-cover"
             />
@@ -917,7 +917,7 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
                     <Image
                       src={teacher.image}
                       alt={teacher.name}
-                      fill
+                      fill sizes="(max-width: 768px) 100vw, 33vw" 
                       className="object-cover object-top"
                     />
                   </div>
@@ -970,7 +970,7 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
                   <Image
                     src={item.url}
                     alt={item.title}
-                    fill
+                    fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity" />

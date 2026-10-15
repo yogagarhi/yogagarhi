@@ -67,7 +67,7 @@ export default function CourseDetail() {
           <Image
             src={heroImage}
             alt={`${course.title} ${course.subtitle}`}
-            fill
+            fill sizes="(max-width: 1024px) 100vw, 60vw" 
             className="object-cover"
             priority
           />
@@ -229,7 +229,7 @@ export default function CourseDetail() {
                         <Image
                           src={apartImages[imageIndex]}
                           alt={item.title}
-                          fill
+                          fill sizes="100vw" 
                           className="object-cover"
                         />
                       </div>

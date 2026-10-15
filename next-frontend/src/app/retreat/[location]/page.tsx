@@ -33,9 +33,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const titles: Record<string, string> = {
-    bali: "Yoga Retreat in Bali | 3, 7 & 14 Day Ubud Wellness Trips",
-    rishikesh: "Yoga Retreat in Rishikesh | 3, 7 & 14 Day Himalayan Escape",
-    warkala: "Yoga Retreat in Warkala | Beach & Ayurveda Holidays Kerala",
+    bali: "Yoga Retreats in Bali | Ubud Wellness | YogaGarhi",
+    rishikesh: "Yoga Retreats in Rishikesh | Himalayas | YogaGarhi",
+    warkala: "Yoga Retreats in Warkala | Kerala Beach | YogaGarhi",
   };
 
   const descriptions: Record<string, string> = {
@@ -186,6 +186,7 @@ export default async function RetreatLocationPage({ params }: Props) {
                       src={retreat.heroImage}
                       alt={retreat.heroImageAlt}
                       fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute top-4 left-4">

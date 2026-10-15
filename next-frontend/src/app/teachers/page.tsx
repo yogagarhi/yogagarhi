@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: "Meet our experienced yoga teachers at YogaGarhi. Learn from Yogacharya Sachin and our expert faculty with decades of combined teaching experience.",
     keywords: "yoga teachers Bali, yoga masters, YogaGarhi instructors, Sachin Ji, yoga teacher training faculty",
     alternates: {
-        canonical: "/teachers",
+        canonical: "https://www.yogagarhi.com/teachers",
     },
 };
 

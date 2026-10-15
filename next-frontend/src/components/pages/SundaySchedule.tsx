@@ -138,6 +138,7 @@ export default function SundaySchedule() {
                                                 src={sunday.images[selectedImageIndex[sunday.id]]}
                                                 alt={sunday.title}
                                                 fill
+                                                sizes="(max-width: 1024px) 100vw, 50vw"
                                                 className="object-cover transition-all duration-500 group-hover:scale-105"
                                             />
                                             {/* Glassmorphism Badge */}
@@ -159,6 +160,7 @@ export default function SundaySchedule() {
                                                     src={img}
                                                     alt={`View ${i + 1}`}
                                                     fill
+                                                    sizes="(max-width: 768px) 33vw, 150px"
                                                     className="object-cover"
                                                 />
                                             </div>

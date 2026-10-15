@@ -91,7 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
-            url: 'https://www.yogagarhi.com/yoga-anatomy-mastery',
+            url: 'https://www.yogagarhi.com/yoga-anatomy-masterclass',
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.8,

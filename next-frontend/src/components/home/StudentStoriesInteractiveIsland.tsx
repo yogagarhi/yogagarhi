@@ -138,6 +138,7 @@ export default function StudentStoriesInteractiveIsland({
                     src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
                     alt={video.name}
                     fill
+                    sizes="64px"
                     className="object-cover"
                   />
                   {activeVideo !== index && (

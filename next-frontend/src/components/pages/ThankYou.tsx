@@ -118,7 +118,7 @@ function ThankYouContent() {
           <Image
             src={heroImage}
             alt="Hero Background"
-            fill
+            fill sizes="100vw" 
             className="object-cover"
             priority
           />

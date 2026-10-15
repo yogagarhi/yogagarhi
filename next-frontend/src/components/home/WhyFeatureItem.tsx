@@ -76,6 +76,7 @@ const WhyFeatureItem = ({
             src={imageUrl}
             alt={imageAlt}
             fill
+            sizes="(max-width: 768px) 128px, 160px"
             className={cn("object-cover", imagePosition)}
           />
         </div>

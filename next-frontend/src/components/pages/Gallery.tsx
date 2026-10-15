@@ -239,7 +239,7 @@ export default function Gallery() {
                             <Image
                               src={image.src}
                               alt={image.alt}
-                              fill
+                              fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 250px" 
                               className="object-cover"
                             />
                             {/* Hover overlay */}
@@ -263,7 +263,7 @@ export default function Gallery() {
                       <Image
                         src={galleryImages[currentIndex].src}
                         alt={galleryImages[currentIndex].alt}
-                        fill
+                        fill sizes="(max-width: 640px) 100vw, 420px" 
                         className="object-cover transition-opacity duration-500"
                       />
                     </div>
