@@ -1,34 +1,22 @@
-﻿User-Agent: *
+﻿User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /_next/
 Disallow: /private/
-Disallow: /thank-you
-Disallow: /payment
 
 # Specific Crawlers
 User-agent: GPTBot
 Allow: /
 Disallow: /api/
-Disallow: /_next/
 Disallow: /private/
-Disallow: /thank-you
-Disallow: /payment
 
 User-agent: ClaudeBot
 Allow: /
 Disallow: /api/
-Disallow: /_next/
 Disallow: /private/
-Disallow: /thank-you
-Disallow: /payment
 
 User-agent: PerplexityBot
 Allow: /
 Disallow: /api/
-Disallow: /_next/
 Disallow: /private/
-Disallow: /thank-you
-Disallow: /payment
 
 Sitemap: https://www.yogagarhi.com/sitemap.xml
