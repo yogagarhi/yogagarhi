@@ -1,12 +1,34 @@
-# Robots.txt for YogaGarhi
-# https://www.yogagarhi.com
-
-User-agent: *
+﻿User-Agent: *
 Allow: /
-
-# Block internal / technical paths
 Disallow: /api/
 Disallow: /_next/
+Disallow: /private/
+Disallow: /thank-you
+Disallow: /payment
 
-# Sitemap
+# Specific Crawlers
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /thank-you
+Disallow: /payment
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /thank-you
+Disallow: /payment
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /thank-you
+Disallow: /payment
+
 Sitemap: https://www.yogagarhi.com/sitemap.xml
