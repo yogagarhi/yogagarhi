@@ -94,7 +94,7 @@ export const COURSE_200_FAQS: FAQItem[] = [
   },
   {
     question: "What is the daily schedule during the training?",
-    answer: "A typical training day at YogaGarhi runs as follows: 6:00 AM Wake Up & Morning Cleansing; 6:30 AM Pranayama & Meditation; 7:30 AM Asana Practice (Hatha/Ashtanga); 9:00 AM Breakfast; 10:00 AM Yoga Philosophy or Anatomy; 12:00 PM Lunch & Rest; 3:00 PM Teaching Methodology & Alignment; 5:00 PM Asana Practice (Vinyasa Flow); 7:00 PM Dinner; 8:00 PM Evening Meditation, Kirtan, or Group Reflection."
+    answer: "A typical training day at YogaGarhi follows our verified daily schedule: 6:00 AM Wake Up & Morning Cleansing; 6:30 AM Pranayama & Meditation; 7:30 AM Hatha & Vinyasa; 9:00 AM Breakfast; 10:00 AM Yoga Philosophy; 12:00 PM Lunch & Rest; 3:00 PM Applied Anatomy & Bio Mechanics; 4:30 PM Alignment, Adjustments & Teaching Methodology; 6:00 PM Ashtanga & Iyengar with Yoga Therapy; 7:30 PM Dinner; 9:00 PM Self-Study / Lights Off."
   },
   {
     question: "What is the batch size at YogaGarhi Bali?",
@@ -106,11 +106,11 @@ export const COURSE_200_FAQS: FAQItem[] = [
   },
   {
     question: "What room accommodation options and prices are available?",
-    answer: "We offer four all-inclusive residential packages: Shared Room ($999 USD, early-bird discount from $1,299), Private Room ($1,750 USD, early-bird from $2,050), Deluxe Private Room ($1,899 USD, early-bird from $2,199), and VIP Suite ($2,499 USD, early-bird from $2,799). Tuition-only options are also available on request."
+    answer: "We offer four transparent enrollment packages: Tuition Only ($999 USD, early-bird from $1,299; accommodation and meals not included), Triple Sharing ($1,750 USD, early-bird from $2,050), Double Sharing ($1,899 USD, early-bird from $2,199), and Private Room ($2,499 USD, early-bird from $2,799). All residential packages include 23 nights accommodation and 3 daily meals."
   },
   {
     question: "What is included in the course fee?",
-    answer: "The course fee includes 24 nights accommodation, 3 wholesome sattvic vegetarian/vegan meals daily, all official course textbooks and manuals, Yoga Alliance RYT 200 certification upon graduation, airport pickup, sacred Bali temple and cultural excursions, 2 Balinese massages, complimentary non-slip yoga mat, free Pre-TTC online preparation course, and lifetime course re-attendance privileges."
+    answer: "For residential packages, the fee includes 23 nights accommodation (with attached bathroom, hot water, AC/fan, Wi-Fi, and daily cleaning), 3 healthy vegetarian meals daily, herbal teas and drinking water, official study manuals and notebooks, yoga mats and props for practice, airport pickup from DPS, cultural excursions (rice field trek, Balinese dance show, sacred water temple visits), a Balinese massage, Pre-TTC online preparation, special workshops (Arm Balance, Ayurveda), YogaGarhi 35+ creative sequencing book, Yoga Alliance RYT 200 certification upon graduation, and lifetime course repetition privileges. For the Tuition-Only package ($999 USD), accommodation and meals are not included."
   },
   {
     question: "What is the refund and cancellation policy?",

@@ -142,7 +142,7 @@ export default function Page() {
         "offers": [
             {
                 "@type": "Offer",
-                "name": "Shared Room Package",
+                "name": "Tuition Only Package",
                 "price": "999",
                 "priceCurrency": "USD",
                 "availability": "https://schema.org/InStock",
@@ -150,7 +150,7 @@ export default function Page() {
             },
             {
                 "@type": "Offer",
-                "name": "Private Room Package",
+                "name": "Triple Sharing Package",
                 "price": "1750",
                 "priceCurrency": "USD",
                 "availability": "https://schema.org/InStock",
@@ -158,7 +158,7 @@ export default function Page() {
             },
             {
                 "@type": "Offer",
-                "name": "Deluxe Private Room Package",
+                "name": "Double Sharing Package",
                 "price": "1899",
                 "priceCurrency": "USD",
                 "availability": "https://schema.org/InStock",
@@ -166,7 +166,7 @@ export default function Page() {
             },
             {
                 "@type": "Offer",
-                "name": "VIP Suite Package",
+                "name": "Private Room Package",
                 "price": "2499",
                 "priceCurrency": "USD",
                 "availability": "https://schema.org/InStock",

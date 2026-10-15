@@ -90,22 +90,19 @@ export default function WhyYogaGarhiBox({ onCheckAvailability, onBookCall }: Why
                 <div className="flex items-center gap-2 mb-2">
                   <CheckCircle2 className="w-4 h-4 text-primary" />
                   <span className="text-xs font-bold uppercase tracking-wider text-foreground">
-                    All-Inclusive Residential Packages (24 Days / 23 Nights)
+                    Residential Packages (24 Days / 23 Nights) & Tuition-Only Option
                   </span>
                 </div>
                 <div className="flex flex-wrap items-baseline gap-3">
                   <span className="text-2xl md:text-3xl font-extrabold font-heading text-primary">
-                    Starting from {COURSE_200_HOUR_PRICING.shared.price} USD
-                  </span>
-                  <span className="text-sm text-muted-foreground line-through">
-                    {COURSE_200_HOUR_PRICING.shared.originalPrice}
+                    Tuition from {COURSE_200_HOUR_PRICING.shared.price} USD | Residential from {COURSE_200_HOUR_PRICING.private.price} USD
                   </span>
                   <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-green-500/10 text-green-600 border border-green-500/20">
                     Save $300 Early-Bird
                   </span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2">
-                  Shared: {COURSE_200_HOUR_PRICING.shared.price} • Private: {COURSE_200_HOUR_PRICING.private.price} • Deluxe: {COURSE_200_HOUR_PRICING.deluxe.price} • VIP Suite: {COURSE_200_HOUR_PRICING.vip.price}
+                  Tuition Only: {COURSE_200_HOUR_PRICING.shared.price} • Triple Sharing: {COURSE_200_HOUR_PRICING.private.price} • Double Sharing: {COURSE_200_HOUR_PRICING.deluxe.price} • Private Room: {COURSE_200_HOUR_PRICING.vip.price}
                 </p>
               </div>
 
