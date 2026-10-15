@@ -647,13 +647,13 @@ export default function YogaAnatomyMasterclass() {
               {/* ========================================================================= */}
               <div className="border-t border-[#E7E5E4] pt-6 mb-6">
                 <div className="mb-4">
-                  <h3 className="font-serif text-lg sm:text-xl md:text-2xl font-bold text-[#1C1917] flex items-center gap-2 flex-wrap">
+                  <h2 className="font-serif text-lg sm:text-xl md:text-2xl font-bold text-[#1C1917] flex items-center gap-2 flex-wrap">
                     <span>Is This Workshop Right</span>
                     <span className="inline-flex items-center justify-center bg-emerald-100 text-emerald-700 text-xs sm:text-sm px-2 py-0.5 rounded-lg border border-emerald-300 font-bold">
                       ✅
                     </span>
                     <span>For You If...</span>
-                  </h3>
+                  </h2>
                 </div>
 
                 <div className="space-y-3">
@@ -1170,7 +1170,7 @@ export default function YogaAnatomyMasterclass() {
                 <div className="lg:col-span-5 grid grid-cols-2 gap-3">
                   <div className="relative aspect-3/4 rounded-2xl overflow-hidden border border-[#E7E5E4] shadow-sm bg-stone-100 group">
                     <Image
-                      src="/instructor-teaching-block.jpg"
+                      src="/instructor-teaching-block.webp"
                       alt="Acharya Sachin Kotiyal teaching active biomechanics"
                       fill sizes="(max-width: 768px) 100vw, 350px" 
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1183,7 +1183,7 @@ export default function YogaAnatomyMasterclass() {
 
                   <div className="relative aspect-3/4 rounded-2xl overflow-hidden border border-[#E7E5E4] shadow-sm bg-stone-100 group">
                     <Image
-                      src="/instructor-hands-on.jpg"
+                      src="/instructor-hands-on.webp"
                       alt="Hands-on alignment correction"
                       fill sizes="(max-width: 768px) 100vw, 350px" 
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1257,7 +1257,7 @@ export default function YogaAnatomyMasterclass() {
               <div className="bg-white rounded-2xl border border-[#E7E5E4] p-2.5 shadow-sm group">
                 <div className="relative aspect-16/10 w-full rounded-xl overflow-hidden mb-2">
                   <Image
-                    src="/instructor-military-training.jpg"
+                    src="/instructor-military-training.webp"
                     alt="Acharya Sachin Kotiyal training Indian Armed Forces"
                     fill sizes="(max-width: 768px) 100vw, 300px" 
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1272,7 +1272,7 @@ export default function YogaAnatomyMasterclass() {
               <div className="bg-white rounded-2xl border border-[#E7E5E4] p-2.5 shadow-sm group">
                 <div className="relative aspect-16/10 w-full rounded-xl overflow-hidden mb-2">
                   <Image
-                    src="/instructor-award.jpg"
+                    src="/instructor-award.webp"
                     alt="Acharya Sachin Kotiyal felicitation award"
                     fill sizes="(max-width: 768px) 100vw, 300px" 
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1287,7 +1287,7 @@ export default function YogaAnatomyMasterclass() {
               <div className="bg-white rounded-2xl border border-[#E7E5E4] p-2.5 shadow-sm group">
                 <div className="relative aspect-16/10 w-full rounded-xl overflow-hidden mb-2">
                   <Image
-                    src="/instructor-graduates.jpg"
+                    src="/instructor-graduates.webp"
                     alt="5,000+ Yoga Teachers Mentored Worldwide"
                     fill sizes="(max-width: 768px) 100vw, 300px" 
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1842,7 +1842,7 @@ export default function YogaAnatomyMasterclass() {
                       rel="noopener noreferrer"
                       className="text-xs text-[#B45309] hover:underline font-bold flex items-center gap-1"
                     >
-                      🔗 Click here to Open Zoom Directly →
+                      Join Live Masterclass on Zoom
                     </a>
                   </div>
                 </div>

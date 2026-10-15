@@ -154,7 +154,6 @@ const sattvicBreakfast = getCloudinaryImage("sattvic-breakfast.jpg");
 function ReviewCard({ review }: { review: { name: string; location: string; avatar: string; rating: number; date: string; text: string } }) {
   const [expanded, setExpanded] = useState(false);
   const isLongText = review.text.length > 120;
-  const displayText = expanded || !isLongText ? review.text : review.text.slice(0, 120) + "...";
 
   return (
     <div className="bg-card p-6 rounded-xl border border-border hover:shadow-card transition-shadow duration-300">
@@ -191,11 +190,12 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
       </div>
 
       {/* Review Text */}
-      <p className="text-sm text-muted-foreground leading-relaxed">
-        {displayText}
+      <p className={`text-sm text-muted-foreground leading-relaxed ${!expanded && isLongText ? 'line-clamp-4' : ''}`}>
+        {review.text}
       </p>
       {isLongText && (
         <button
+          type="button"
           onClick={() => setExpanded(!expanded)}
           className="text-sm text-primary hover:text-primary/80 font-medium mt-2 transition-colors"
         >
@@ -1229,9 +1229,9 @@ export default function Course100HourRishikesh({ initialBatches }: { initialBatc
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                     <item.icon className="w-7 h-7 text-primary" />
                   </div>
-                  <h3 className="font-heading text-sm font-semibold text-foreground mb-1">
+                  <p className="font-heading text-sm font-semibold text-foreground mb-1">
                     {item.title}
-                  </h3>
+                  </p>
                   <p className="text-xs text-muted-foreground">{item.subtitle}</p>
                 </div>
               ))}

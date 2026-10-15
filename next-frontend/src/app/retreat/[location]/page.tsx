@@ -39,9 +39,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 
   const descriptions: Record<string, string> = {
-    bali: "Escape to tranquil Ubud with 3, 7 & 14-day yoga retreats in Bali. Daily Balinese massage, sound baths, multi-style yoga & vegan dining. Check dates & rates!",
-    rishikesh: "Experience peaceful yoga retreats in Rishikesh along the sacred Ganges. Daily meditation, Ayurvedic therapy & Sattvic meals. View dates and book your retreat!",
-    warkala: "Unwind with oceanfront yoga retreats in Warkala, Kerala. Authentic Ayurvedic healing, beach yoga sessions & sunset meditation. Book your wellness holiday now!",
+    bali: "Escape to Ubud with 3, 7 & 14-day yoga retreats in Bali. Daily Balinese massage, sound baths, yoga & vegan dining. Check dates & rates!",
+    rishikesh: "Experience yoga retreats in Rishikesh along the Ganges. Daily meditation, Ayurvedic therapy & Sattvic meals. View dates and book online!",
+    warkala: "Oceanfront yoga retreats in Warkala, Kerala. Authentic Ayurvedic healing, beach yoga sessions & sunset meditation. Book your holiday now!",
   };
 
   const title = titles[loc.key] || `${loc.name} Yoga Retreats | YogaGarhi`;

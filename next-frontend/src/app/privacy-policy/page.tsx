@@ -3,7 +3,7 @@ import Layout from "@/components/layout/Layout";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | YogaGarhi",
-  description: "Read YogaGarhi's privacy policy. Learn how we handle and protect your personal information when you inquire or enroll in our yoga teacher training courses.",
+  description: "Read YogaGarhi's privacy policy. Learn how we protect your personal information when you inquire or enroll in our yoga training courses.",
   alternates: {
     canonical: "https://www.yogagarhi.com/privacy-policy",
   },

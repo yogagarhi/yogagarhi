@@ -12,7 +12,7 @@ export function generateMetadata(): Metadata {
     const title = "100 Hour Yoga Teacher Training in Bali | Yoga Alliance Ubud";
 
     const description =
-        "Deepen your practice with our 100-Hour Yoga Teacher Training in Ubud, Bali. Beginner-friendly, certified curriculum & organic meals. Reserve your spot today!";
+        "Deepen your practice with 100-Hour Yoga Teacher Training in Ubud, Bali. Beginner-friendly curriculum & organic meals. Reserve your spot today!";
 
     const url =
         "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali";

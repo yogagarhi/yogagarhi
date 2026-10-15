@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: {
     absolute: "Yoga Retreats in Bali, Rishikesh & Warkala | YogaGarhi",
   },
-  description: "Rejuvenate with 3, 7 & 14-day transformative yoga retreats in Ubud Bali, Rishikesh & Warkala beach. Daily yoga, sound healing & organic meals. Book online!",
+  description: "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Warkala beach. Daily yoga, sound healing and organic meals. Book now!",
   alternates: {
     canonical: "https://www.yogagarhi.com/retreat",
   },
   openGraph: {
     title: "Yoga Retreats in Bali, Rishikesh & Warkala | YogaGarhi",
-    description: "Rejuvenate with 3, 7 & 14-day transformative yoga retreats in Ubud Bali, Rishikesh & Warkala beach. Daily yoga, sound healing & organic meals. Book online!",
+    description: "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Warkala beach. Daily yoga, sound healing and organic meals. Book now!",
     url: "https://www.yogagarhi.com/retreat",
     type: "website",
     siteName: "YogaGarhi",

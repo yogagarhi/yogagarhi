@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Layout from '@/components/layout/Layout';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -6,7 +6,7 @@ import { RefreshCw, Calendar, HeartHandshake } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Refund & Cancellation Policy | YogaGarhi',
-  description: 'Understand YogaGarhi transparent refund, booking deposit, and batch transfer policy for Yoga Teacher Training courses and retreats in Bali and Rishikesh.',
+  description: 'YogaGarhi transparent refund, booking deposit, and batch transfer policy for Yoga Teacher Training courses and retreats in Bali and Rishikesh.',
   alternates: {
     canonical: "https://www.yogagarhi.com/refund-policy",
   },
@@ -31,6 +31,7 @@ export default function RefundPolicy() {
         </div>
 
         {/* Feature Highlights */}
+        <h2 className="sr-only">Policy Highlights</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="p-6 rounded-2xl bg-secondary/50 border border-border text-center space-y-3">
             <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto">

@@ -3,16 +3,16 @@ import Index from "@/components/pages/Index";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi RYT",
+    absolute: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi",
   },
-  description: "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your transformative journey!",
+  description: "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your journey!",
   keywords: "yoga teacher training Bali, YTTC Ubud, 200 hour yoga certification, yoga alliance certified, yoga retreat Bali, yoga school Indonesia, RYT 200, yoga ashram Bali, meditation training, pranayama course, YogaGarhi",
   alternates: {
     canonical: "https://www.yogagarhi.com",
   },
   openGraph: {
-    title: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi RYT",
-    description: "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your transformative journey!",
+    title: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi",
+    description: "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your journey!",
     url: "/",
     type: "website",
     images: [

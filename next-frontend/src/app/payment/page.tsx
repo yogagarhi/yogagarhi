@@ -5,8 +5,10 @@ import { Button } from "@/components/ui/button";
 import { ShieldCheck, CreditCard, RefreshCw, Lock, Sparkles, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Secure Payment & Booking Information | YogaGarhi",
-  description: "Learn about secure payment options, $250 booking deposit, and payment methods for YogaGarhi yoga teacher training courses and retreats in Bali and Rishikesh.",
+  title: {
+    absolute: "Payment & Booking Information | YogaGarhi",
+  },
+  description: "Secure payment options, $250 booking deposit, and payment methods for YogaGarhi yoga teacher training courses and retreats in Bali & India.",
   alternates: {
     canonical: "https://www.yogagarhi.com/payment",
   },
@@ -31,6 +33,7 @@ export default function Payment() {
         </div>
 
         {/* 3 Step Payment Journey */}
+        <h2 className="sr-only">How Booking & Payment Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="p-8 rounded-3xl bg-card border border-border shadow-soft space-y-4 text-center">
             <div className="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center font-bold text-lg mx-auto">

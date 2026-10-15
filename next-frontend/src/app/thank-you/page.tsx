@@ -8,6 +8,9 @@ export const metadata: Metadata = {
         index: false,
         follow: false,
     },
+    alternates: {
+        canonical: "https://www.yogagarhi.com/thank-you",
+    },
 };
 
 export default function Page() {

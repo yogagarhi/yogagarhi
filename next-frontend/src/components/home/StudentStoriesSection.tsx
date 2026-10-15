@@ -8,8 +8,12 @@ const videoTestimonials: VideoTestimonial[] = [
   { id: "ta-5jHBCpKY", name: "Aania", country: "Italy", quote: "Deeply spiritual journey" },
 ];
 
-export default function StudentStoriesSection() {
-  const desktopExtraContent = (
+interface StudentStoriesSectionProps {
+  initialVisibleCount?: number;
+}
+
+export default function StudentStoriesSection({ initialVisibleCount }: StudentStoriesSectionProps = {}) {
+  const extraContent = (
     <>
       {/* Stats Row */}
       <div className="mt-6 grid grid-cols-3 gap-4">
@@ -115,7 +119,8 @@ export default function StudentStoriesSection() {
         {/* Interactive Island: Video Player & Thumbnails */}
         <StudentStoriesInteractiveIsland
           videos={videoTestimonials}
-          desktopExtraContent={desktopExtraContent}
+          extraContent={extraContent}
+          initialVisibleCount={initialVisibleCount}
         />
       </div>
     </section>

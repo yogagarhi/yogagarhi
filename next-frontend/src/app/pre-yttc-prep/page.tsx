@@ -3,7 +3,7 @@ import PreYTTCPrep from "@/components/pages/PreYTTCPrep";
 
 export const metadata: Metadata = {
     title: "Begin Before You Begin | Pre-YTTC Support",
-    description: "Don't jump into transformation, be gently prepared for it. Discover our exclusive 'Before You Join' preparation program for yoga teacher training in Bali.",
+    description: "Prepare gently for transformation. Discover our exclusive 'Before You Join' preparation program for yoga teacher training in Bali.",
     alternates: {
         canonical: "https://www.yogagarhi.com/pre-yttc-prep",
     },

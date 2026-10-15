@@ -13,7 +13,7 @@ export function generateMetadata(): Metadata {
         "100 Hour Yoga Teacher Training Rishikesh | Short Yoga TTC";
 
     const description =
-        "Join residential 100-Hour Yoga Teacher Training in Rishikesh, India. Authentic Himalayan master teachers, sacred Ganga location & certification. Enroll now!";
+        "Residential 100-Hour Yoga Teacher Training in Rishikesh, India. Authentic Himalayan master teachers, sacred Ganga ashram & certification.";
 
     const url =
         "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh";

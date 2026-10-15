@@ -246,8 +246,11 @@ export default function TeacherTrainingFoundation() {
                             <Sparkles className="w-4 h-4 fill-current" />
                             Next Batch: <DynamicBatchDate /> | 10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)
                         </div>
+                        <p className="text-lg md:text-2xl font-semibold text-muted-foreground mb-3">
+                            Not Sure Which YTTC to Trust? <span className="text-primary italic font-bold">Experience It First</span>
+                        </p>
                         <h1 className="font-heading text-3xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 md:mb-6 leading-[1.2] md:leading-[1.1]">
-                            Not Sure Which YTTC to Trust? <span className="text-primary italic">Experience It First</span> Free 2-Day Yoga teacher training Foundation
+                            Free 2-Day Yoga Teacher Training Foundation Masterclass
                         </h1>
                         <div className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8 md:mb-10">
                             <p className="mb-4">At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>

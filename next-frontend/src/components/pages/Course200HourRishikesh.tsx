@@ -168,7 +168,6 @@ const sattvicDinner = getCloudinaryImage("sattvic-dinner-new.jpg");
 function ReviewCard({ review }: { review: { name: string; location: string; avatar: string; rating: number; date: string; text: string } }) {
   const [expanded, setExpanded] = useState(false);
   const isLongText = review.text.length > 120;
-  const displayText = expanded || !isLongText ? review.text : review.text.slice(0, 120) + "...";
 
   return (
     <div className="bg-card p-6 rounded-xl border border-border hover:shadow-card transition-shadow duration-300">
@@ -205,11 +204,12 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
       </div>
 
       {/* Review Text */}
-      <p className="text-sm text-muted-foreground leading-relaxed">
-        {displayText}
+      <p className={`text-sm text-muted-foreground leading-relaxed ${!expanded && isLongText ? 'line-clamp-4' : ''}`}>
+        {review.text}
       </p>
       {isLongText && (
         <button
+          type="button"
           onClick={() => setExpanded(!expanded)}
           className="text-sm text-primary hover:text-primary/80 font-medium mt-2 transition-colors"
         >

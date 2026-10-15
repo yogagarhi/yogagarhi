@@ -12,6 +12,8 @@ export interface VideoTestimonial {
 
 interface StudentStoriesInteractiveIslandProps {
   videos: VideoTestimonial[];
+  extraContent?: React.ReactNode;
+  initialVisibleCount?: number;
 }
 
 const VideoPlayer = ({
@@ -77,13 +79,12 @@ const VideoPlayer = ({
 
 export default function StudentStoriesInteractiveIsland({
   videos,
-  desktopExtraContent
-}: {
-  videos: VideoTestimonial[];
-  desktopExtraContent?: React.ReactNode;
-}) {
+  extraContent,
+  initialVisibleCount = 2,
+}: StudentStoriesInteractiveIslandProps) {
   const [activeVideo, setActiveVideo] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showAll, setShowAll] = useState(false);
 
   const handleVideoChange = (index: number) => {
     setActiveVideo(index);
@@ -121,55 +122,71 @@ export default function StudentStoriesInteractiveIsland({
       <div className="order-2 lg:order-none lg:col-span-5 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:sticky lg:top-24">
         {/* Vertical Thumbnail Stack */}
         <div className="space-y-3">
-          {videos.map((video, index) => (
-            <button
-              key={index}
-              type="button"
-              aria-label={`Select testimonial video by ${video.name}`}
-              onClick={() => handleVideoChange(index)}
-              className={`w-full flex items-center gap-4 p-3 rounded-xl transition-all duration-300 text-left group ${activeVideo === index
-                ? 'bg-primary/10 border-l-4 border-primary'
-                : 'hover:bg-secondary/50 border-l-4 border-transparent'
-                }`}
-            >
-              {/* Thumbnail */}
-              <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
-                <Image
-                  src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
-                  alt={video.name}
-                  fill
-                  sizes="64px"
-                  unoptimized
-                  className="object-cover"
-                />
-                {activeVideo !== index && (
-                  <div className="absolute inset-0 bg-foreground/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <Play className="w-4 h-4 text-primary-foreground" />
+          {videos.map((video, index) => {
+            const isHidden = !showAll && index >= initialVisibleCount;
+            return (
+              <button
+                key={index}
+                type="button"
+                aria-label={`Select testimonial video by ${video.name}`}
+                onClick={() => handleVideoChange(index)}
+                className={`w-full ${isHidden ? 'hidden' : 'flex'} items-center gap-4 p-3 rounded-xl transition-all duration-300 text-left group ${activeVideo === index
+                  ? 'bg-primary/10 border-l-4 border-primary'
+                  : 'hover:bg-secondary/50 border-l-4 border-transparent'
+                  }`}
+              >
+                {/* Thumbnail */}
+                <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+                  <Image
+                    src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
+                    alt={video.name}
+                    fill
+                    sizes="64px"
+                    unoptimized
+                    className="object-cover"
+                  />
+                  {activeVideo !== index && (
+                    <div className="absolute inset-0 bg-foreground/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                      <Play className="w-4 h-4 text-primary-foreground" />
+                    </div>
+                  )}
+                </div>
+
+                {/* Info */}
+                <div className="flex-1 min-w-0">
+                  <p className={`font-medium transition-colors ${activeVideo === index ? 'text-primary' : 'text-foreground'
+                    }`}>
+                    {video.name}
+                  </p>
+                  <p className="text-sm text-muted-foreground">{video.country}</p>
+                  <p className="text-xs text-muted-foreground/70 italic mt-1 truncate">
+                    "{video.quote}"
+                  </p>
+                </div>
+
+                {/* Active Indicator */}
+                {activeVideo === index && (
+                  <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                    <Play className="w-3 h-3 text-primary-foreground ml-0.5" />
                   </div>
                 )}
-              </div>
-
-              {/* Info */}
-              <div className="flex-1 min-w-0">
-                <p className={`font-medium transition-colors ${activeVideo === index ? 'text-primary' : 'text-foreground'
-                  }`}>
-                  {video.name}
-                </p>
-                <p className="text-sm text-muted-foreground">{video.country}</p>
-                <p className="text-xs text-muted-foreground/70 italic mt-1 truncate">
-                  "{video.quote}"
-                </p>
-              </div>
-
-              {/* Active Indicator */}
-              {activeVideo === index && (
-                <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
-                  <Play className="w-3 h-3 text-primary-foreground ml-0.5" />
-                </div>
-              )}
-            </button>
-          ))}
+              </button>
+            );
+          })}
         </div>
+
+        {/* Watch All Stories Button (Toggles remaining thumbnails when total > initialVisibleCount) */}
+        {videos.length > initialVisibleCount && (
+          <button
+            type="button"
+            onClick={() => setShowAll(!showAll)}
+            aria-expanded={showAll}
+            className="mt-4 w-full py-2.5 px-4 text-xs font-semibold text-primary hover:text-primary/80 bg-primary/5 hover:bg-primary/10 rounded-xl border border-primary/20 transition-colors flex items-center justify-center gap-2"
+          >
+            <span>{showAll ? "Show Less" : `Watch All Stories (${videos.length})`}</span>
+            <span className={`transform transition-transform duration-200 ${showAll ? "rotate-180" : ""}`}>↓</span>
+          </button>
+        )}
 
         {/* CTA */}
         <div className="mt-8">
@@ -184,9 +201,9 @@ export default function StudentStoriesInteractiveIsland({
       </div>
 
       {/* 3. Extra Content (Stats, Badges, CTA) - order-3 on mobile, row-2 col 6-12 on desktop */}
-      {desktopExtraContent && (
+      {extraContent && (
         <div className="order-3 lg:order-none lg:col-span-7 lg:col-start-6 lg:row-start-2">
-          {desktopExtraContent}
+          {extraContent}
         </div>
       )}
     </div>

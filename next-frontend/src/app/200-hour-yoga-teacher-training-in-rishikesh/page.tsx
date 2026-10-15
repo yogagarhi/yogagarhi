@@ -13,7 +13,7 @@ export function generateMetadata(): Metadata {
         "200 Hour Yoga Teacher Training Rishikesh | RYT 200 India";
 
     const description =
-        "Master traditional yoga with our 200-Hour Yoga TTC in Rishikesh. Yoga Alliance certified RYT 200 residential course by the Ganges. Register for upcoming batch!";
+        "Master authentic yoga with 200-Hour Yoga TTC in Rishikesh. Yoga Alliance certified RYT 200 residential course by the Ganges. Register now!";
 
     const url =
         "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh";

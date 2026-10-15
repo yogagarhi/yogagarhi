@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: {
         absolute: "Apply for Yoga Teacher Training | YogaGarhi",
     },
-    description: "Apply for Yoga Alliance certified 100, 200, and 300-hour yoga teacher training courses in Bali and Rishikesh. Step-by-step admissions, prerequisites, and dates.",
+    description: "Apply for Yoga Alliance certified 100, 200 & 300-hour yoga teacher training courses in Bali and Rishikesh. Admissions, prerequisites & dates.",
     alternates: {
         canonical: "https://www.yogagarhi.com/apply-now",
     },

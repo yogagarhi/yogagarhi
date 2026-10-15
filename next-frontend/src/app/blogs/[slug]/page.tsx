@@ -11,15 +11,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const postMetadata: Record<string, { title: string; description: string }> = {
         "benefits-yttc-bali": {
             title: "Benefits of Yoga Teacher Training in Bali | YogaGarhi",
-            description: "Discover why Bali is the world's premier yoga training hub. Learn how a Yoga TTC transforms your practice, mindset & teaching skills. Read our guide!",
+            description: "Discover why Bali is the premier yoga training hub. Learn how a Yoga TTC transforms practice, mindset & teaching skills. Read our guide!",
         },
         "what-to-expect-200hr": {
             title: "What to Expect in 200-Hour Yoga TTC Bali | YogaGarhi",
-            description: "Wondering what happens in a 200-Hour Yoga Teacher Training in Bali? Discover daily schedules, difficulty, anatomy, exams & packing tips in this full guide.",
+            description: "What happens in a 200-Hour Yoga TTC in Bali? Discover daily schedules, difficulty, anatomy, exams & packing tips in this complete guide.",
         },
         "himalayan-roots-yoga": {
             title: "Himalayan Roots of Authentic Yoga in Bali | YogaGarhi",
-            description: "Learn why authentic Himalayan lineage matters for your yoga teacher training in Bali. Discover traditional Hatha wisdom and lineage teachings at YogaGarhi.",
+            description: "Discover why authentic Himalayan lineage matters for your yoga teacher training in Bali. Explore traditional Hatha wisdom and lineage teachings.",
         },
         "bali-vs-rishikesh-yttc-comparison": {
             title: "Bali vs Rishikesh Yoga TTC Comparison | YogaGarhi",

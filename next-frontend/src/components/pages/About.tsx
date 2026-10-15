@@ -338,7 +338,7 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {googleReviews.slice(0, 3).map((review, index) => (
+            {googleReviews.map((review, index) => (
               <div
                 key={review.name}
                 className={`group rounded-3xl overflow-hidden transition-all duration-300 hover:shadow-xl ${index === 1 ? 'ring-2 ring-primary/30' : 'border border-border/40'

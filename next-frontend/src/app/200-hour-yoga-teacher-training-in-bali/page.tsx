@@ -13,7 +13,7 @@ export function generateMetadata(): Metadata {
     const title = "200 Hour Yoga Teacher Training in Bali 2027 | YogaGarhi";
 
     const description =
-        "Join YogaGarhi's residential 200-Hour Yoga Teacher Training in Bali (Yoga Alliance RYT 200). Small intimate batches of 8–10 students, authentic Himalayan lineage, all-inclusive packages from $999 USD.";
+        "Join residential 200-Hour Yoga Teacher Training in Bali (RYT 200). Small batches of 8–10, Himalayan lineage, all-inclusive from $999 USD.";
 
     const url =
         "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali";

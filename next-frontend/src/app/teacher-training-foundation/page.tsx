@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: {
         absolute: "2-Day Yoga Teacher Foundation Course | YogaGarhi",
     },
-    description: "Join YogaGarhi's 2-Day Yoga Teacher Foundation Masterclass. Discover the path to becoming a certified yoga teacher and building a purpose-driven career.",
+    description: "Join YogaGarhi's 2-Day Yoga Teacher Foundation Masterclass. Discover how to become a certified teacher and launch a purpose-driven career.",
     keywords: [
         "yoga teacher training foundation",
         "2 day yoga workshop",

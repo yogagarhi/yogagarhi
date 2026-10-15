@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: {
     absolute: "Yoga Anatomy & Biomechanics Masterclass | YogaGarhi",
   },
-  description: "Live 2-Hour intensive masterclass on Applied Yoga Anatomy, Joint Biomechanics & Injury Prevention by Ex-Army Yoga Therapy Specialist Acharya Sachin Kotiyal. Book your seat for ₹99.",
+  description: "Live 2-Hour intensive on Applied Yoga Anatomy & Joint Biomechanics by Ex-Army Yoga Specialist Acharya Sachin Kotiyal. Book seat for ₹99.",
   keywords: "yoga anatomy masterclass, yoga biomechanics, injury prevention yoga, sachin kotiyal, functional yoga anatomy, yogagarhi",
   alternates: {
     canonical: "https://www.yogagarhi.com/yoga-anatomy-masterclass",

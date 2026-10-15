@@ -216,6 +216,7 @@ Ready to deepen your practice in the serene energy of Bali? [Explore our upcomin
   },
   {
     title: "The Himalayan Roots of Authentic Yoga: Why It Matters for Your Training in Bali",
+    h1Title: "Himalayan Roots of Authentic Yoga Training in Bali",
     excerpt: "Discover the Himalayan roots of authentic yoga and why this lineage matters for your yoga teacher training in Bali. Learn what makes training truly traditional.",
     date: "December 20, 2024",
     image: heroImage,
@@ -378,6 +379,7 @@ Ready to begin your journey? Check our [Course Dates and Fees](/apply-now) or re
   },
   {
     title: "Bali vs Rishikesh Yoga Teacher Training: Which Is Right for You? (2026 Comparison)",
+    h1Title: "Bali vs Rishikesh Yoga Teacher Training: 2026 Guide",
     excerpt: "Comprehensive comparison of yoga teacher training in Bali vs Rishikesh covering costs, ashram atmosphere, climate, spiritual lineage, and curriculum.",
     date: "January 15, 2026",
     image: heroImage,
@@ -677,7 +679,7 @@ export default function BlogPost() {
           </div>
 
           <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-bold text-foreground leading-[1.18] tracking-tight mb-8">
-            {post.title}
+            {post.h1Title || post.title}
           </h1>
 
           <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-elevated mb-12 border border-border/40">

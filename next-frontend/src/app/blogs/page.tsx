@@ -3,7 +3,7 @@ import Blog from "@/components/pages/Blog";
 
 export const metadata: Metadata = {
     title: "Yoga Articles & Wisdom Blog",
-    description: "Explore authentic articles on yoga philosophy, teacher training guides, asana alignment, and ashram life in Bali & Rishikesh. Read our latest insights!",
+    description: "Explore authentic articles on yoga philosophy, teacher training, asana alignment, and ashram life in Bali & Rishikesh. Read our latest insights!",
     keywords: "yoga blog, yoga articles, yoga philosophy, yoga teacher training tips, YogaGarhi blog",
     alternates: {
         canonical: "https://www.yogagarhi.com/blogs",
