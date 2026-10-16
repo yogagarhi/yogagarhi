@@ -4663,7 +4663,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
           showScrollTop && (
             <button
               onClick={scrollToTop}
-              className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-primary text-primary-foreground rounded-full shadow-elevated hover:bg-primary/90 transition-all duration-300 hidden sm:flex items-center justify-center animate-fade-in hover:scale-110"
+              className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-primary text-primary-foreground rounded-full shadow-elevated hover:bg-primary/90 transition-all duration-300 hidden md:flex items-center justify-center animate-fade-in hover:scale-110"
               aria-label="Scroll to top"
             >
               <ChevronDown className="w-6 h-6 rotate-180" />

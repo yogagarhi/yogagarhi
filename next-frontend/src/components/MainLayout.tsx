@@ -29,41 +29,44 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
             cleanup();
         };
 
-        const onScroll = () => {
-            if (window.scrollY > 150) {
-                trigger();
-            }
-        };
-
         const cleanup = () => {
-            if (timer) clearTimeout(timer);
+            if (timer) {
+                clearTimeout(timer);
+                timer = null;
+            }
             if ('cancelIdleCallback' in window && typeof idleHandle === 'number') {
                 window.cancelIdleCallback(idleHandle);
+                idleHandle = null;
             }
-            window.removeEventListener('scroll', onScroll);
         };
 
-        const isMobile = window.innerWidth <= 768;
+        const media = window.matchMedia('(min-width: 769px)');
 
-        if (isMobile) {
-            // Mobile: listen to scroll (>150px) OR idle + 8s
-            window.addEventListener('scroll', onScroll, { passive: true });
+        const scheduleDesktop = () => {
             if ('requestIdleCallback' in window) {
-                idleHandle = window.requestIdleCallback(() => {
-                    timer = setTimeout(trigger, 8000);
-                }, { timeout: 4000 });
+                idleHandle = window.requestIdleCallback(trigger, { timeout: 4000 });
             } else {
-                timer = setTimeout(trigger, 8000);
+                timer = setTimeout(trigger, 3500);
             }
-        } else {
-            // Desktop: exact previous behavior (idle/3500ms then mount)
-            const schedule = 'requestIdleCallback' in window
-                ? (cb: () => void) => window.requestIdleCallback(cb, { timeout: 4000 })
-                : (cb: () => void) => setTimeout(cb, 3500);
-            idleHandle = schedule(trigger);
+        };
+
+        if (media.matches) {
+            scheduleDesktop();
         }
 
-        return cleanup;
+        const handleMediaChange = (e: MediaQueryListEvent) => {
+            if (e.matches && !triggered) {
+                scheduleDesktop();
+            } else if (!e.matches && !triggered) {
+                cleanup();
+            }
+        };
+        media.addEventListener('change', handleMediaChange);
+
+        return () => {
+            cleanup();
+            media.removeEventListener('change', handleMediaChange);
+        };
     }, []);
 
     const hideHeader = [
