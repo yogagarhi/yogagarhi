@@ -561,7 +561,7 @@ const quizQuestions = [
 
 // - [x] Standardize internal forms in `Course100HourRishikesh.tsx`
 // - [x] Standardize internal forms in `Course200HourRishikesh.tsx`
-export default function Course200HourRishikesh({ initialBatches }: { initialBatches?: CourseBatch[] }) {
+export default function Course200HourRishikesh({ initialBatches, syllabusSlot }: { initialBatches?: CourseBatch[]; syllabusSlot?: React.ReactNode }) {
   const clientBatches = useUpcomingBatches(BATCHES_200_HOUR);
   const upcomingDates = initialBatches && initialBatches.length > 0 ? initialBatches : clientBatches;
   const { toast } = useToast();
@@ -1703,6 +1703,9 @@ export default function Course200HourRishikesh({ initialBatches }: { initialBatc
                 ))}
               </div>
             </div>
+
+            {/* Expandable Detailed Syllabus (Semantic HTML) */}
+            {syllabusSlot}
 
             <div className="text-center mt-12">
               <Dialog open={showSyllabusDialog} onOpenChange={setShowSyllabusDialog}>

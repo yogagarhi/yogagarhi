@@ -2,8 +2,12 @@ import React from "react";
 import { BookOpen, CheckCircle2, ChevronDown } from "lucide-react";
 import { courseData } from "@/constants/courses";
 
-export default function CourseSyllabusDetails() {
-  const curriculum = courseData["200-hour"]?.curriculum || [];
+export default function CourseSyllabusDetails({
+  courseKey = "200-hour"
+}: {
+  courseKey?: keyof typeof courseData;
+}) {
+  const curriculum = courseData[courseKey]?.curriculum || [];
 
   if (curriculum.length === 0) return null;
 

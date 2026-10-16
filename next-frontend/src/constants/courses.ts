@@ -97,6 +97,42 @@ export const courseData = {
                 ]
             },
             {
+                title: "Alignment Principles & Prop Adjustments",
+                items: [
+                    "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+                    "Safe execution and anatomical alignment in foundational standing and seated poses",
+                    "Effective use of props (blocks, straps, bolsters) to support safe practice",
+                    "Identifying common postural habits and applying self-correction techniques"
+                ]
+            },
+            {
+                title: "Traditional Hatha Yoga",
+                items: [
+                    "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+                    "Traditional Surya Namaskar variations with breath-synchronized awareness",
+                    "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+                    "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
+                ]
+            },
+            {
+                title: "Iyengar Yoga Foundations",
+                items: [
+                    "Introduction to precision, geometry, and anatomical awareness in asanas",
+                    "Prop-assisted alignment techniques using blocks, belts, and wall support",
+                    "Building strength, stability, and postural endurance through extended holds",
+                    "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
+                ]
+            },
+            {
+                title: "Vinyasa Yoga Flow",
+                items: [
+                    "Breath-synchronized movement connecting postures into fluid sequences",
+                    "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+                    "Coordinating conscious inhalation with heart openers and exhalation with folds",
+                    "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
+                ]
+            },
+            {
                 title: "Additional Classes",
                 items: [
                     "Kirtan Meditation",
@@ -237,6 +273,42 @@ export const courseData = {
                     "Antar Mouna & Ajapa Japa",
                     "All four Bandhas mastery",
                     "Integration with asana & pranayama"
+                ]
+            },
+            {
+                title: "Art of Alignment & Hands-on Adjustments",
+                items: [
+                    "Comprehensive biomechanics and functional alignment for over 60 classical postures",
+                    "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
+                    "Understanding individual anatomical variations, skeletal compression vs tension",
+                    "Modification strategies using props and stance adjustments for diverse student flexibility"
+                ]
+            },
+            {
+                title: "Classical Hatha Yoga Practice",
+                items: [
+                    "In-depth study of classical Hatha asana principles and sustained holds",
+                    "Complete Hatha sequencing: preparatory warming, peak postures, and counter-poses",
+                    "Balancing solar (Ha) and lunar (Tha) energies through mindful posture practice",
+                    "Integration of Bandhas and Mudras within traditional Hatha asana holding"
+                ]
+            },
+            {
+                title: "Iyengar Yoga & Precision Alignment",
+                items: [
+                    "Methodical alignment utilizing blocks, straps, blankets, and wall ropes",
+                    "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
+                    "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
+                    "Restorative Iyengar prop setups for supported holding and quiet focus"
+                ]
+            },
+            {
+                title: "Vinyasa Flow & Dynamic Sequencing",
+                items: [
+                    "Intelligent sequencing architecture: progressive warm-up, peak pose, and cool down",
+                    "Dynamic transitions, jump-backs, and jump-throughs with breath awareness",
+                    "Creating thematic vinyasa classes for varying student levels and intentions",
+                    "Pacing, tempo modulation, and holding space during energetic flowing sequences"
                 ]
             },
             {
@@ -385,6 +457,42 @@ export const courseData = {
                 ]
             },
             {
+                title: "Advanced Alignment & Biomechanical Adjustments",
+                items: [
+                    "Micro-alignment principles and postural observation for advanced and complex asanas",
+                    "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+                    "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+                    "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
+                ]
+            },
+            {
+                title: "Advanced Classical Hatha Yoga",
+                items: [
+                    "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+                    "Cultivating steadiness and inward focus through still posture holding and measured breath",
+                    "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+                    "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
+                ]
+            },
+            {
+                title: "Advanced Iyengar Yoga & Restorative Alignment",
+                items: [
+                    "Deep structural alignment utilizing advanced prop variations, chairs, and ropes",
+                    "Structural alignment techniques for posture balance and foundational body mechanics",
+                    "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+                    "Posture observation and personalized alignment sequencing for student needs"
+                ]
+            },
+            {
+                title: "Creative Vinyasa Krama & Master Sequencing",
+                items: [
+                    "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+                    "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+                    "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+                    "Designing transformative workshops, masterclasses, and multi-day retreat flows"
+                ]
+            },
+            {
                 title: "Specialty Workshops",
                 items: [
                     "Aerial yoga introduction",
@@ -530,6 +638,42 @@ export const courseData = {
                 ]
             },
             {
+                title: "Alignment Principles & Prop Adjustments",
+                items: [
+                    "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+                    "Safe execution and anatomical alignment in foundational standing and seated poses",
+                    "Effective use of props (blocks, straps, bolsters) to support safe practice",
+                    "Identifying common postural habits and applying self-correction techniques"
+                ]
+            },
+            {
+                title: "Traditional Hatha Yoga",
+                items: [
+                    "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+                    "Traditional Surya Namaskar variations with breath-synchronized awareness",
+                    "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+                    "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
+                ]
+            },
+            {
+                title: "Iyengar Yoga Foundations",
+                items: [
+                    "Introduction to precision, geometry, and anatomical awareness in asanas",
+                    "Prop-assisted alignment techniques using blocks, belts, and wall support",
+                    "Building strength, stability, and postural endurance through extended holds",
+                    "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
+                ]
+            },
+            {
+                title: "Vinyasa Yoga Flow",
+                items: [
+                    "Breath-synchronized movement connecting postures into fluid sequences",
+                    "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+                    "Coordinating conscious inhalation with heart openers and exhalation with folds",
+                    "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
+                ]
+            },
+            {
                 title: "Additional Classes",
                 items: [
                     "Kirtan Meditation",
@@ -670,6 +814,42 @@ export const courseData = {
                     "Antar Mouna & Ajapa Japa",
                     "All four Bandhas mastery",
                     "Integration with asana & pranayama"
+                ]
+            },
+            {
+                title: "Art of Alignment & Hands-on Adjustments",
+                items: [
+                    "Comprehensive biomechanics and functional alignment for over 60 classical postures",
+                    "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
+                    "Understanding individual anatomical variations, skeletal compression vs tension",
+                    "Modification strategies using props and stance adjustments for diverse student flexibility"
+                ]
+            },
+            {
+                title: "Classical Hatha Yoga Practice",
+                items: [
+                    "In-depth study of classical Hatha asana principles and sustained holds",
+                    "Complete Hatha sequencing: preparatory warming, peak postures, and counter-poses",
+                    "Balancing solar (Ha) and lunar (Tha) energies through mindful posture practice",
+                    "Integration of Bandhas and Mudras within traditional Hatha asana holding"
+                ]
+            },
+            {
+                title: "Iyengar Yoga & Precision Alignment",
+                items: [
+                    "Methodical alignment utilizing blocks, straps, blankets, and wall ropes",
+                    "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
+                    "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
+                    "Restorative Iyengar prop setups for supported holding and quiet focus"
+                ]
+            },
+            {
+                title: "Vinyasa Flow & Dynamic Sequencing",
+                items: [
+                    "Intelligent sequencing architecture: progressive warm-up, peak pose, and cool down",
+                    "Dynamic transitions, jump-backs, and jump-throughs with breath awareness",
+                    "Creating thematic vinyasa classes for varying student levels and intentions",
+                    "Pacing, tempo modulation, and holding space during energetic flowing sequences"
                 ]
             },
             {

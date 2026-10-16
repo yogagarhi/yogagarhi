@@ -544,7 +544,7 @@ const quizQuestions = [
   },
 ];
 
-export default function Course100HourRishikesh({ initialBatches }: { initialBatches?: CourseBatch[] }) {
+export default function Course100HourRishikesh({ initialBatches, syllabusSlot }: { initialBatches?: CourseBatch[]; syllabusSlot?: React.ReactNode }) {
   const clientBatches = useUpcomingBatches(BATCHES_100_HOUR);
   const upcomingDates = initialBatches && initialBatches.length > 0 ? initialBatches : clientBatches;
   const { toast } = useToast();
@@ -1826,6 +1826,9 @@ export default function Course100HourRishikesh({ initialBatches }: { initialBatc
                 </div>
               </div>
             </div>
+
+            {/* Expandable Detailed Syllabus (Semantic HTML) */}
+            {syllabusSlot}
 
             <div className="text-center mt-12">
               <Dialog open={showSyllabusDialog} onOpenChange={setShowSyllabusDialog}>

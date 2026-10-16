@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Course100HourRishikesh from "@/components/pages/Course100HourRishikesh";
+import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
 import { BATCHES_100_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
 
@@ -221,7 +222,10 @@ export default function Page() {
             />
 
             {/* Page Content */}
-            <Course100HourRishikesh initialBatches={upcomingBatches} />
+            <Course100HourRishikesh
+                initialBatches={upcomingBatches}
+                syllabusSlot={<CourseSyllabusDetails courseKey="100-hour-rishikesh" />}
+            />
         </>
     );
 }

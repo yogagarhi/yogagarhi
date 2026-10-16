@@ -547,7 +547,7 @@ const quizQuestions = [
   },
 ];
 
-export default function Course300Hour({ initialBatches }: { initialBatches?: CourseBatch[] }) {
+export default function Course300Hour({ initialBatches, syllabusSlot }: { initialBatches?: CourseBatch[]; syllabusSlot?: React.ReactNode } = {}) {
   const clientBatches = useUpcomingBatches(BATCHES_300_HOUR);
   const upcomingDates = initialBatches && initialBatches.length > 0 ? initialBatches : clientBatches;
   const { toast } = useToast();
@@ -1833,6 +1833,9 @@ export default function Course300Hour({ initialBatches }: { initialBatches?: Cou
                 </div>
               </div>
             </div>
+
+            {/* Expandable Detailed Syllabus (Semantic HTML) */}
+            {syllabusSlot}
 
             <div className="text-center mt-12">
               <Dialog open={showSyllabusDialog} onOpenChange={setShowSyllabusDialog}>

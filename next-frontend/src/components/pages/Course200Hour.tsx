@@ -44,7 +44,6 @@ import HomeGallerySection from "@/components/home/HomeGallerySection";
 import RoomCard from "./RoomCard";
 import WhyYogaGarhiBox from "@/components/course200/WhyYogaGarhiBox";
 import CourseFAQSection from "@/components/course200/CourseFAQSection";
-import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import MeetYourTeachersSection from "@/components/course200/MeetYourTeachersSection";
 import CourseHoursStructureSection from "@/components/course200/CourseHoursStructureSection";
 import HowToReachSection from "@/components/course200/HowToReachSection";
@@ -572,7 +571,7 @@ const quizQuestions = [
   },
 ];
 
-export default function Course200Hour({ initialBatches }: { initialBatches?: CourseBatch[] } = {}) {
+export default function Course200Hour({ initialBatches, syllabusSlot }: { initialBatches?: CourseBatch[]; syllabusSlot?: React.ReactNode } = {}) {
   const upcomingDates = useUpcomingBatches(BATCHES_200_HOUR, initialBatches);
   const { toast } = useToast();
   const router = useRouter();
@@ -1609,7 +1608,7 @@ export default function Course200Hour({ initialBatches }: { initialBatches?: Cou
             </div>
 
             {/* Expandable Detailed Syllabus (Semantic HTML) */}
-            <CourseSyllabusDetails />
+            {syllabusSlot}
 
             <div className="text-center mt-12">
               <Dialog open={showSyllabusDialog} onOpenChange={setShowSyllabusDialog}>
