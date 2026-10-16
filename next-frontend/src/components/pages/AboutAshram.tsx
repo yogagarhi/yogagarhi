@@ -464,9 +464,9 @@ export default function AboutAshram() {
                     <card.icon className="w-8 h-8" />
                   </div>
 
-                  <h4 className="font-heading text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="font-heading text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                     {card.title}
-                  </h4>
+                  </h3>
 
                   <p className="text-sm md:text-base text-muted-foreground leading-relaxed px-4 line-clamp-6 group-hover:line-clamp-none transition-all duration-500">
                     {card.text}

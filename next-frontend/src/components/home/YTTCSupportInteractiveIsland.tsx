@@ -316,7 +316,7 @@ export default function YTTCSupportInteractiveIsland() {
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <RefreshCw className="w-6 h-6" />
                   </div>
-                  <h5 className="font-heading font-bold text-foreground mb-2">Lifetime Free Course Repetation</h5>
+                  <h4 className="font-heading font-bold text-foreground mb-2">Lifetime Free Course Repetation</h4>
                   <p className="text-xs text-muted-foreground">Repeat same course forever at no extra tuition cost.</p>
                 </div>
 
@@ -326,7 +326,7 @@ export default function YTTCSupportInteractiveIsland() {
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
                     <GraduationCap className="w-6 h-6" />
                   </div>
-                  <h5 className="font-heading font-bold text-foreground mb-2">Assistant Teaching Mentorship</h5>
+                  <h4 className="font-heading font-bold text-foreground mb-2">Assistant Teaching Mentorship</h4>
                   <p className="text-xs text-muted-foreground">Apply to become an assistant teacher in future batches.</p>
                 </div>
 
@@ -335,7 +335,7 @@ export default function YTTCSupportInteractiveIsland() {
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <Users className="w-6 h-6" />
                   </div>
-                  <h5 className="font-heading font-bold text-foreground mb-2">Alumni Family</h5>
+                  <h4 className="font-heading font-bold text-foreground mb-2">Alumni Family</h4>
                   <p className="text-xs text-muted-foreground">Stay connected with a global community of practitioners.</p>
                 </div>
               </div>

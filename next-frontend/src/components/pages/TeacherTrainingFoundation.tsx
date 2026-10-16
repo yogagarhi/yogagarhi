@@ -502,7 +502,7 @@ export default function TeacherTrainingFoundation() {
                                             <Award className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-lg mb-1">Authentic Lineage</h4>
+                                            <h3 className="font-bold text-lg mb-1">Authentic Lineage</h3>
                                             <p className="text-muted-foreground">Rooted in traditional Himalayan wisdom, not commercial trends.</p>
                                         </div>
                                     </div>
@@ -511,7 +511,7 @@ export default function TeacherTrainingFoundation() {
                                             <Users className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-lg mb-1">Proven Results</h4>
+                                            <h3 className="font-bold text-lg mb-1">Proven Results</h3>
                                             <p className="text-muted-foreground">Join 2,500+ professionals who started their journey with us.</p>
                                         </div>
                                     </div>
@@ -520,7 +520,7 @@ export default function TeacherTrainingFoundation() {
                                             <BookOpen className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-lg mb-1">TTC Pathway</h4>
+                                            <h3 className="font-bold text-lg mb-1">TTC Pathway</h3>
                                             <p className="text-muted-foreground">The perfect bridge to our globally recognized Yoga Alliance certifications.</p>
                                         </div>
                                     </div>

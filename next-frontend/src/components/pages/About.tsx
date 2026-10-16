@@ -357,7 +357,7 @@ export default function About() {
                   <div className="pt-4 border-t border-border/40">
                     <div className="flex items-center justify-between">
                       <div>
-                        <h4 className="font-semibold text-foreground">{review.name}</h4>
+                        <h3 className="font-semibold text-foreground">{review.name}</h3>
                         <p className="text-sm text-muted-foreground">{review.location}</p>
                       </div>
                       <div className="flex gap-0.5">

@@ -192,7 +192,7 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
 
         {/* Name & Location */}
         <div className="flex-1 min-w-0">
-          <h4 className="font-medium text-foreground text-sm">{review.name}</h4>
+          <h3 className="font-medium text-foreground text-sm">{review.name}</h3>
           <p className="text-xs text-muted-foreground">{review.location}</p>
         </div>
 
@@ -1380,9 +1380,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         {t.avatarLetter}
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h4 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                        <h3 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors truncate">
                           {t.name}
-                        </h4>
+                        </h3>
                         <div className="flex items-center gap-2">
                           <p className="text-[10px] text-muted-foreground font-medium uppercase tracking-widest">
                             {t.country}
@@ -1861,7 +1861,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <RefreshCw className="w-6 h-6" />
                   </div>
-                  <h5 className="font-heading font-bold text-foreground mb-2">Lifetime Free Course Repetation</h5>
+                  <h4 className="font-heading font-bold text-foreground mb-2">Lifetime Free Course Repetation</h4>
                   <p className="text-xs text-muted-foreground">Repeat same course forever at no extra tuition cost.</p>
                 </div>
 
@@ -1871,7 +1871,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
                     <GraduationCap className="w-6 h-6" />
                   </div>
-                  <h5 className="font-heading font-bold text-foreground mb-2">Assistant Teaching Mentorship</h5>
+                  <h4 className="font-heading font-bold text-foreground mb-2">Assistant Teaching Mentorship</h4>
                   <p className="text-xs text-muted-foreground">Apply to become an assistant teacher in future batches.</p>
                 </div>
 
@@ -1880,7 +1880,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <Users className="w-6 h-6" />
                   </div>
-                  <h5 className="font-heading font-bold text-foreground mb-2">Alumni Family</h5>
+                  <h4 className="font-heading font-bold text-foreground mb-2">Alumni Family</h4>
                   <p className="text-xs text-muted-foreground">Stay connected with a global community of practitioners.</p>
                 </div>
               </div>
@@ -2693,7 +2693,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
                       <IconComponent className="w-6 h-6 text-primary" />
                     </div>
-                    <h4 className="font-heading font-bold text-foreground mb-1">{item.title}</h4>
+                    <h3 className="font-heading font-bold text-foreground mb-1">{item.title}</h3>
                     <p className="text-sm text-muted-foreground">{item.description}</p>
                   </div>
                 );
@@ -4144,9 +4144,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       <card.icon className="w-8 h-8" />
                     </div>
 
-                    <h4 className="font-heading text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="font-heading text-xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                       {card.title}
-                    </h4>
+                    </h3>
 
                     <p className="text-sm md:text-base text-muted-foreground leading-relaxed px-4 line-clamp-6 group-hover:line-clamp-none transition-all duration-500">
                       {card.text}

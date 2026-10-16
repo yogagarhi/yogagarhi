@@ -188,9 +188,9 @@ export default function PreYTTCPrep() {
                                                         {item.icon}
                                                     </div>
                                                     <div>
-                                                        <h4 className="font-heading font-bold text-foreground group-hover/item:text-amber-600 transition-colors">
+                                                        <h3 className="font-heading font-bold text-foreground group-hover/item:text-amber-600 transition-colors">
                                                             {item.title}
-                                                        </h4>
+                                                        </h3>
                                                         <p className="text-sm text-muted-foreground">{item.desc}</p>
                                                     </div>
                                                 </div>

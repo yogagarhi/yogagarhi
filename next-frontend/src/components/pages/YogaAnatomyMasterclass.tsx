@@ -1386,7 +1386,7 @@ export default function YogaAnatomyMasterclass() {
                       </p>
                       <div className="flex items-center justify-between pt-2 border-t border-[#E7E5E4]">
                         <div>
-                          <h4 className="font-bold text-xs text-[#1C1917]">{v.name}</h4>
+                          <h3 className="font-bold text-xs text-[#1C1917]">{v.name}</h3>
                           <p className="text-[10px] text-[#78716C]">{v.role}, {v.country}</p>
                         </div>
                         <span className="text-[10px] text-[#B45309] font-bold">Watch ▶</span>
@@ -1433,7 +1433,7 @@ export default function YogaAnatomyMasterclass() {
                       <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <h4 className="font-bold text-sm text-[#1C1917] mb-1">"Finally understood shoulder impingement"</h4>
+                  <h3 className="font-bold text-sm text-[#1C1917] mb-1">"Finally understood shoulder impingement"</h3>
                   <p className="text-xs text-[#44403C] leading-relaxed mb-4">
                     In my 5 years of teaching, no one broke down the scapulohumeral rhythm like Sachin Ji. My students immediately felt the difference in downward dog and plank.
                   </p>
@@ -1446,7 +1446,7 @@ export default function YogaAnatomyMasterclass() {
                       <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <h4 className="font-bold text-sm text-[#1C1917] mb-1">"The best ₹99 I ever invested"</h4>
+                  <h3 className="font-bold text-sm text-[#1C1917] mb-1">"The best ₹99 I ever invested"</h3>
                   <p className="text-xs text-[#44403C] leading-relaxed mb-4">
                     The value delivered in 2 hours is greater than what most TTC schools teach across 4 weeks of anatomy modules. Clear, precise, no fluff.
                   </p>
@@ -1459,7 +1459,7 @@ export default function YogaAnatomyMasterclass() {
                       <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <h4 className="font-bold text-sm text-[#1C1917] mb-1">"Essential for every serious yogi"</h4>
+                  <h3 className="font-bold text-sm text-[#1C1917] mb-1">"Essential for every serious yogi"</h3>
                   <p className="text-xs text-[#44403C] leading-relaxed mb-4">
                     His clinical examples regarding SI joint compression and hip socket variations completely changed how I adjust students in forward folds.
                   </p>
