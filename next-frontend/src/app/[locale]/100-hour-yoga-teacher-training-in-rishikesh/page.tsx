@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { applyQualityGate } from "@/utils/seoQualityGate";
 import Course100HourRishikesh from "@/components/pages/Course100HourRishikesh";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
@@ -7,7 +8,12 @@ import { BATCHES_100_HOUR, filterUpcomingBatches } from "@/constants/courseDates
 /* =========================
    SEO METADATA
 ========================= */
-export function generateMetadata(): Metadata {
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
     const course = courseData["100-hour-rishikesh"];
 
     const title =
@@ -19,7 +25,7 @@ export function generateMetadata(): Metadata {
     const url =
         "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh";
 
-    return {
+    return applyQualityGate({
         title: {
             absolute: title,
         },
@@ -57,7 +63,7 @@ export function generateMetadata(): Metadata {
             title,
             description,
         },
-    };
+    }, locale);
 }
 
 /* =========================

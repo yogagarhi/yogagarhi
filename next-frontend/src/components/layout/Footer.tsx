@@ -1,5 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import { Instagram, Facebook, Youtube, Phone, Mail, MapPin, Sparkles } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
@@ -34,6 +35,7 @@ const LotusIcon = ({ className }: { className?: string }) => (
 );
 
 export default function Footer() {
+  const tFooter = useTranslations("footer");
   return (
     <footer className="relative bg-gradient-to-b from-primary to-primary/95 text-primary-foreground overflow-hidden">
       {/* Top Wave Decoration */}
@@ -191,13 +193,13 @@ export default function Footer() {
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-primary-foreground/40">
-            <p>© {new Date().getFullYear()} YogaGarhi. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} YogaGarhi. {tFooter("copyright")}</p>
             <div className="flex items-center gap-4 text-xs">
-              <Link href="/privacy-policy" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link>
+              <Link href="/privacy-policy" className="hover:text-primary-foreground transition-colors">{tFooter("privacyPolicy")}</Link>
               <span>•</span>
-              <Link href="/terms-and-conditions" className="hover:text-primary-foreground transition-colors">Terms & Conditions</Link>
+              <Link href="/terms-and-conditions" className="hover:text-primary-foreground transition-colors">{tFooter("termsConditions")}</Link>
               <span>•</span>
-              <Link href="/refund-policy" className="hover:text-primary-foreground transition-colors">Refund Policy</Link>
+              <Link href="/refund-policy" className="hover:text-primary-foreground transition-colors">{tFooter("refundPolicy")}</Link>
             </div>
             <div className="flex items-center gap-1">
               <Sparkles className="h-3 w-3" />

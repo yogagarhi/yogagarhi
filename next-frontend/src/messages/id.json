@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "courses": "Kursus",
+    "retreat": "Retret",
+    "onlineCourses": "Kursus Online",
+    "gallery": "Galeri",
+    "sundaySchedule": "Jadwal Minggu",
+    "blogs": "Blog",
+    "contact": "Kontak",
+    "beginJourney": "Mulai Perjalanan",
+    "beginYourJourney": "Mulai Perjalanan Anda",
+    "toggleMenu": "Alihkan menu"
+  },
+  "navDropdown": {
+    "aboutSchool": "Tentang Sekolah",
+    "ourTeachers": "Guru Kami",
+    "testimonials": "Testimoni",
+    "anatomyMasterclass": "Masterclass Anatomi",
+    "sunday1": "Minggu 1",
+    "sunday2": "Minggu 2",
+    "sunday3": "Minggu 3",
+    "baliLocation": "Bali, Indonesia",
+    "rishikeshLocation": "Rishikesh, India",
+    "course100": "100 Jam YTTC",
+    "course200": "200 Jam YTTC",
+    "course300": "300 Jam YTTC",
+    "retreatBali": "Bali",
+    "retreatRishikesh": "Rishikesh",
+    "retreatWarkala": "Warkala",
+    "retreat3Days": "Retret 3 Hari",
+    "retreat7Days": "Retret 7 Hari",
+    "retreat14Days": "Retret 14 Hari"
+  },
+  "promo": {
+    "title": "Promo Tahun Baru",
+    "discountText": "DISKON $300",
+    "batchesText": "Semua Angkatan",
+    "endsIn": "Penawaran berakhir dalam:"
+  },
+  "switcher": {
+    "label": "Pilih bahasa",
+    "currentLanguage": "Bahasa saat ini: {lang}"
+  },
+  "common": {
+    "bookNow": "Pesan Sekarang",
+    "quickEnquiry": "Tanya Cepat",
+    "applyNow": "Daftar Sekarang",
+    "chatWhatsApp": "Chat di WhatsApp",
+    "readMore": "Baca Selengkapnya",
+    "close": "Tutup",
+    "viewAll": "Lihat Semua"
+  },
+  "footer": {
+    "tagline": "Transform Within",
+    "description": "Sekolah Pelatihan Guru Yoga 100, 200 & 300 Jam bersertifikat Yoga Alliance dan ashram spiritual di Ubud Bali & Rishikesh India.",
+    "coursesHeading": "Kursus",
+    "retreatsHeading": "Retret",
+    "quickLinksHeading": "Tautan Cepat",
+    "contactHeading": "Hubungi Kami",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsConditions": "Syarat & Ketentuan",
+    "refundPolicy": "Kebijakan Pengembalian Dana",
+    "copyright": "Hak cipta dilindungi undang-undang."
+  }
+}

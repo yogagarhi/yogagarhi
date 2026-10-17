@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "courses": "Courses",
+    "retreat": "Retreat",
+    "onlineCourses": "Online Courses",
+    "gallery": "Gallery",
+    "sundaySchedule": "Sunday Schedule",
+    "blogs": "Blogs",
+    "contact": "Contact",
+    "beginJourney": "Begin Journey",
+    "beginYourJourney": "Begin Your Journey",
+    "toggleMenu": "Toggle menu"
+  },
+  "navDropdown": {
+    "aboutSchool": "About School",
+    "ourTeachers": "Our Teachers",
+    "testimonials": "Testimonials",
+    "anatomyMasterclass": "Anatomy Masterclass",
+    "sunday1": "Sunday 1",
+    "sunday2": "Sunday 2",
+    "sunday3": "Sunday 3",
+    "baliLocation": "Bali, Indonesia",
+    "rishikeshLocation": "Rishikesh, India",
+    "course100": "100 Hour YTTC",
+    "course200": "200 Hour YTTC",
+    "course300": "300 Hour YTTC",
+    "retreatBali": "Bali",
+    "retreatRishikesh": "Rishikesh",
+    "retreatWarkala": "Warkala",
+    "retreat3Days": "3 Days Retreat",
+    "retreat7Days": "7 Days Retreat",
+    "retreat14Days": "14 Days Retreat"
+  },
+  "promo": {
+    "title": "New Year Sale",
+    "discountText": "$300 OFF",
+    "batchesText": "All Batches",
+    "endsIn": "Offer Ends In:"
+  },
+  "switcher": {
+    "label": "Select language",
+    "currentLanguage": "Current language: {lang}"
+  },
+  "common": {
+    "bookNow": "Book Now",
+    "quickEnquiry": "Quick Enquiry",
+    "applyNow": "Apply Now",
+    "chatWhatsApp": "Chat on WhatsApp",
+    "readMore": "Read More",
+    "close": "Close",
+    "viewAll": "View All"
+  },
+  "footer": {
+    "tagline": "Transform Within",
+    "description": "Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training school and spiritual ashram in Ubud Bali & Rishikesh India.",
+    "coursesHeading": "Courses",
+    "retreatsHeading": "Retreats",
+    "quickLinksHeading": "Quick Links",
+    "contactHeading": "Contact Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "refundPolicy": "Refund Policy",
+    "copyright": "All rights reserved."
+  }
+}

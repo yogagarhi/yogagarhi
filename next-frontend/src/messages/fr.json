@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "courses": "Formations",
+    "retreat": "Retraite",
+    "onlineCourses": "Cours en ligne",
+    "gallery": "Galerie",
+    "sundaySchedule": "Programme du dimanche",
+    "blogs": "Blog",
+    "contact": "Contact",
+    "beginJourney": "Commencer",
+    "beginYourJourney": "Commencez votre voyage",
+    "toggleMenu": "Basculer le menu"
+  },
+  "navDropdown": {
+    "aboutSchool": "À propos de l'école",
+    "ourTeachers": "Nos professeurs",
+    "testimonials": "Témoignages",
+    "anatomyMasterclass": "Masterclass d'anatomie",
+    "sunday1": "Dimanche 1",
+    "sunday2": "Dimanche 2",
+    "sunday3": "Dimanche 3",
+    "baliLocation": "Bali, Indonésie",
+    "rishikeshLocation": "Rishikesh, Inde",
+    "course100": "100 Heures YTTC",
+    "course200": "200 Heures YTTC",
+    "course300": "300 Heures YTTC",
+    "retreatBali": "Bali",
+    "retreatRishikesh": "Rishikesh",
+    "retreatWarkala": "Warkala",
+    "retreat3Days": "Retraite de 3 jours",
+    "retreat7Days": "Retraite de 7 jours",
+    "retreat14Days": "Retraite de 14 jours"
+  },
+  "promo": {
+    "title": "Promotion du Nouvel An",
+    "discountText": "300 $ DE RÉDUCTION",
+    "batchesText": "Toutes les sessions",
+    "endsIn": "L'offre se termine dans :"
+  },
+  "switcher": {
+    "label": "Choisir la langue",
+    "currentLanguage": "Langue actuelle : {lang}"
+  },
+  "common": {
+    "bookNow": "Réserver",
+    "quickEnquiry": "Demande rapide",
+    "applyNow": "Postuler",
+    "chatWhatsApp": "Discuter sur WhatsApp",
+    "readMore": "En savoir plus",
+    "close": "Fermer",
+    "viewAll": "Voir tout"
+  },
+  "footer": {
+    "tagline": "Transform Within",
+    "description": "École de formation de professeurs de yoga certifiée Yoga Alliance de 100, 200 et 300 heures et ashram spirituel à Ubud Bali et Rishikesh en Inde.",
+    "coursesHeading": "Formations",
+    "retreatsHeading": "Retraites",
+    "quickLinksHeading": "Liens rapides",
+    "contactHeading": "Contactez-nous",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsConditions": "Conditions générales",
+    "refundPolicy": "Politique de remboursement",
+    "copyright": "Tous droits réservés."
+  }
+}

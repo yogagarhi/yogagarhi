@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "소개",
+    "courses": "코스",
+    "retreat": "리트릿",
+    "onlineCourses": "온라인 코스",
+    "gallery": "갤러리",
+    "sundaySchedule": "일요일 일정",
+    "blogs": "블로그",
+    "contact": "문의",
+    "beginJourney": "여정 시작하기",
+    "beginYourJourney": "당신의 여정을 시작하세요",
+    "toggleMenu": "메뉴 전환"
+  },
+  "navDropdown": {
+    "aboutSchool": "학교 소개",
+    "ourTeachers": "강사진 소개",
+    "testimonials": "수강생 후기",
+    "anatomyMasterclass": "해부학 마스터클래스",
+    "sunday1": "일요일 1",
+    "sunday2": "일요일 2",
+    "sunday3": "일요일 3",
+    "baliLocation": "발리 (인도네시아)",
+    "rishikeshLocation": "리시케시 (인도)",
+    "course100": "100시간 YTTC",
+    "course200": "200시간 YTTC",
+    "course300": "300시간 YTTC",
+    "retreatBali": "발리",
+    "retreatRishikesh": "리시케시",
+    "retreatWarkala": "바르칼라",
+    "retreat3Days": "3일 리트릿",
+    "retreat7Days": "7일 리트릿",
+    "retreat14Days": "14일 리트릿"
+  },
+  "promo": {
+    "title": "새해 프로모션",
+    "discountText": "$300 할인",
+    "batchesText": "전 일정 적용",
+    "endsIn": "마감까지 남은 시간:"
+  },
+  "switcher": {
+    "label": "언어 선택",
+    "currentLanguage": "현재 언어: {lang}"
+  },
+  "common": {
+    "bookNow": "지금 예약하기",
+    "quickEnquiry": "빠른 문의",
+    "applyNow": "지금 신청하기",
+    "chatWhatsApp": "WhatsApp으로 문의",
+    "readMore": "더 보기",
+    "close": "닫기",
+    "viewAll": "전체 보기"
+  },
+  "footer": {
+    "tagline": "Transform Within",
+    "description": "Yoga Alliance 인증 100시간, 200시간, 300시간 요가 지도자 과정 학교 및 영적 아쉬람 (발리 우붓 & 인도 리시케시).",
+    "coursesHeading": "코스",
+    "retreatsHeading": "리트릿",
+    "quickLinksHeading": "빠른 링크",
+    "contactHeading": "고객 지원",
+    "privacyPolicy": "개인정보 처리방침",
+    "termsConditions": "이용약관",
+    "refundPolicy": "환불 정책",
+    "copyright": "All rights reserved."
+  }
+}

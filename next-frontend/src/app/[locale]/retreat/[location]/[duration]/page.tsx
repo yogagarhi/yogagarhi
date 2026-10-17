@@ -2,9 +2,11 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getRetreat, RETREATS_DATA } from "@/constants/retreats";
 import RetreatDetail from "@/components/pages/RetreatDetail";
+import { applyQualityGate } from "@/utils/seoQualityGate";
 
 interface Props {
   params: Promise<{
+    locale?: string;
     location: string;
     duration: string;
   }>;
@@ -24,7 +26,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { location, duration } = await params;
+  const { locale, location, duration } = await params;
   const retreat = getRetreat(location, duration);
 
   if (!retreat) {
@@ -36,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonicalUrl = `https://www.yogagarhi.com/retreat/${retreat.locationKey}/${retreat.slug}`;
 
-  return {
+  return applyQualityGate({
     title: {
       absolute: retreat.seoTitle,
     },
@@ -78,7 +80,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [retreat.heroImage],
       creator: "@YogaGarhi",
     },
-  };
+  }, locale);
 }
 
 export default async function RetreatDetailPage({ params }: Props) {

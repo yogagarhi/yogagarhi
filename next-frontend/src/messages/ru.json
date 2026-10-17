@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Главная",
+    "about": "О нас",
+    "courses": "Курсы",
+    "retreat": "Ретриты",
+    "onlineCourses": "Онлайн-курсы",
+    "gallery": "Галерея",
+    "sundaySchedule": "Воскресная программа",
+    "blogs": "Блог",
+    "contact": "Контакты",
+    "beginJourney": "Начать путь",
+    "beginYourJourney": "Начните свой путь",
+    "toggleMenu": "Переключить меню"
+  },
+  "navDropdown": {
+    "aboutSchool": "О школе",
+    "ourTeachers": "Наши преподаватели",
+    "testimonials": "Отзывы",
+    "anatomyMasterclass": "Мастер-класс по анатомии",
+    "sunday1": "Воскресенье 1",
+    "sunday2": "Воскресенье 2",
+    "sunday3": "Воскресенье 3",
+    "baliLocation": "Бали, Индонезия",
+    "rishikeshLocation": "Ришикеш, Индия",
+    "course100": "100 часов YTTC",
+    "course200": "200 часов YTTC",
+    "course300": "300 часов YTTC",
+    "retreatBali": "Бали",
+    "retreatRishikesh": "Ришикеш",
+    "retreatWarkala": "Варкала",
+    "retreat3Days": "Ретрит 3 дня",
+    "retreat7Days": "Ретрит 7 дней",
+    "retreat14Days": "Ретрит 14 дней"
+  },
+  "promo": {
+    "title": "Новогодняя распродажа",
+    "discountText": "СКИДКА $300",
+    "batchesText": "Все потоки",
+    "endsIn": "Предложение заканчивается через:"
+  },
+  "switcher": {
+    "label": "Выбрать язык",
+    "currentLanguage": "Текущий язык: {lang}"
+  },
+  "common": {
+    "bookNow": "Забронировать",
+    "quickEnquiry": "Быстрый запрос",
+    "applyNow": "Подать заявку",
+    "chatWhatsApp": "Написать в WhatsApp",
+    "readMore": "Подробнее",
+    "close": "Закрыть",
+    "viewAll": "Посмотреть все"
+  },
+  "footer": {
+    "tagline": "Transform Within",
+    "description": "Сертифицированная Yoga Alliance школа подготовки преподавателей йоги (100, 200 и 300 часов) и духовный ашрам в Убуде (Бали) и Ришикеше (Индия).",
+    "coursesHeading": "Курсы",
+    "retreatsHeading": "Ретриты",
+    "quickLinksHeading": "Быстрые ссылки",
+    "contactHeading": "Свяжитесь с нами",
+    "privacyPolicy": "Политика конфиденциальности",
+    "termsConditions": "Условия и положения",
+    "refundPolicy": "Политика возврата",
+    "copyright": "Все права защищены."
+  }
+}

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { applyQualityGate } from "@/utils/seoQualityGate";
 import Course200Hour from "@/components/pages/Course200Hour";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
@@ -8,7 +9,12 @@ import { COURSE_200_FAQS } from "@/constants/course200Data";
 /* =========================
    SEO METADATA
 ========================= */
-export function generateMetadata(): Metadata {
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
     const course = courseData["200-hour"];
 
     const title = "200 Hour Yoga Teacher Training in Bali 2027 | YogaGarhi";
@@ -19,7 +25,7 @@ export function generateMetadata(): Metadata {
     const url =
         "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali";
 
-    return {
+    return applyQualityGate({
         title: {
             absolute: title,
         },
@@ -57,7 +63,7 @@ export function generateMetadata(): Metadata {
             title,
             description,
         },
-    };
+    }, locale);
 }
 
 /* =========================

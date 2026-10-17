@@ -1,8 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
-import Link from "next/link";
+import { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/routing";
 import { Menu, X, ChevronDown, Sparkles, Globe, Mountain, ArrowRight, Clock, Palmtree, Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEnrollment } from "@/components/EnrollmentDialog";
@@ -10,6 +10,7 @@ import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import PromoCountdown from "@/components/PromoCountdown";
 import { PROMO_OFFER } from "@/constants/offers";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const logo = "/images/logo/yogagarhi-logo.png";
 
@@ -91,96 +92,94 @@ const SunIcon3 = () => (
 );
 
 interface NavDropdownItem {
+  id?: string;
   name: string;
   href: string;
   icon: any;
-  subItems?: { name: string; href: string }[];
+  subItems?: { id?: string; name: string; href: string }[];
 }
 
-const courses: NavDropdownItem[] = [
+const getCourses = (t: any): NavDropdownItem[] => [
   {
-    name: "Bali, Indonesia",
+    id: "bali",
+    name: t("baliLocation"),
     href: "#",
     icon: Globe,
     subItems: [
-      { name: "100 Hour YTTC", href: "/100-hour-yoga-teacher-training-in-bali" },
-      { name: "200 Hour YTTC", href: "/200-hour-yoga-teacher-training-in-bali" },
-      { name: "300 Hour YTTC", href: "/300-hour-yoga-teacher-training-in-bali" },
+      { id: "course100", name: t("course100"), href: "/100-hour-yoga-teacher-training-in-bali" },
+      { id: "course200", name: t("course200"), href: "/200-hour-yoga-teacher-training-in-bali" },
+      { id: "course300", name: t("course300"), href: "/300-hour-yoga-teacher-training-in-bali" },
     ]
   },
   {
-    name: "Rishikesh, India",
+    id: "rishikesh",
+    name: t("rishikeshLocation"),
     href: "#",
     icon: Mountain,
     subItems: [
-      { name: "100 Hour YTTC", href: "/100-hour-yoga-teacher-training-in-rishikesh" },
-      { name: "200 Hour YTTC", href: "/200-hour-yoga-teacher-training-in-rishikesh" },
+      { id: "course100", name: t("course100"), href: "/100-hour-yoga-teacher-training-in-rishikesh" },
+      { id: "course200", name: t("course200"), href: "/200-hour-yoga-teacher-training-in-rishikesh" },
     ]
   },
 ];
 
-const retreats: NavDropdownItem[] = [
+const getRetreats = (t: any): NavDropdownItem[] => [
   {
-    name: "Bali",
+    id: "bali",
+    name: t("retreatBali"),
     href: "/retreat/bali/7-days",
     icon: Palmtree,
     subItems: [
-      { name: "3 Days Retreat", href: "/retreat/bali/3-days" },
-      { name: "7 Days Retreat", href: "/retreat/bali/7-days" },
-      { name: "14 Days Retreat", href: "/retreat/bali/14-days" },
+      { id: "retreat3Days", name: t("retreat3Days"), href: "/retreat/bali/3-days" },
+      { id: "retreat7Days", name: t("retreat7Days"), href: "/retreat/bali/7-days" },
+      { id: "retreat14Days", name: t("retreat14Days"), href: "/retreat/bali/14-days" },
     ]
   },
   {
-    name: "Rishikesh",
+    id: "rishikesh",
+    name: t("retreatRishikesh"),
     href: "/retreat/rishikesh/7-days",
     icon: Mountain,
     subItems: [
-      { name: "3 Days Retreat", href: "/retreat/rishikesh/3-days" },
-      { name: "7 Days Retreat", href: "/retreat/rishikesh/7-days" },
-      { name: "14 Days Retreat", href: "/retreat/rishikesh/14-days" },
+      { id: "retreat3Days", name: t("retreat3Days"), href: "/retreat/rishikesh/3-days" },
+      { id: "retreat7Days", name: t("retreat7Days"), href: "/retreat/rishikesh/7-days" },
+      { id: "retreat14Days", name: t("retreat14Days"), href: "/retreat/rishikesh/14-days" },
     ]
   },
   {
-    name: "Warkala",
+    id: "warkala",
+    name: t("retreatWarkala"),
     href: "/retreat/warkala/7-days",
     icon: Waves,
     subItems: [
-      { name: "3 Days Retreat", href: "/retreat/warkala/3-days" },
-      { name: "7 Days Retreat", href: "/retreat/warkala/7-days" },
-      { name: "14 Days Retreat", href: "/retreat/warkala/14-days" },
+      { id: "retreat3Days", name: t("retreat3Days"), href: "/retreat/warkala/3-days" },
+      { id: "retreat7Days", name: t("retreat7Days"), href: "/retreat/warkala/7-days" },
+      { id: "retreat14Days", name: t("retreat14Days"), href: "/retreat/warkala/14-days" },
     ]
   },
 ];
 
-const aboutItems: NavDropdownItem[] = [
-  { name: "About School", href: "/about-school", icon: AshramIcon },
-  { name: "Our Teachers", href: "/teachers", icon: TeachersIcon },
-  { name: "Testimonials", href: "/testimonials", icon: TestimonialsIcon },
+const getAboutItems = (t: any): NavDropdownItem[] => [
+  { id: "aboutSchool", name: t("aboutSchool"), href: "/about-school", icon: AshramIcon },
+  { id: "ourTeachers", name: t("ourTeachers"), href: "/teachers", icon: TeachersIcon },
+  { id: "testimonials", name: t("testimonials"), href: "/testimonials", icon: TestimonialsIcon },
 ];
 
-const sundayItems: NavDropdownItem[] = [
-  { name: "Sunday 1", href: "/sunday-schedule#sunday-1", icon: SunIcon1 },
-  { name: "Sunday 2", href: "/sunday-schedule#sunday-2", icon: SunIcon2 },
-  { name: "Sunday 3", href: "/sunday-schedule#sunday-3", icon: SunIcon3 },
+const getSundayItems = (t: any): NavDropdownItem[] => [
+  { id: "sunday1", name: t("sunday1"), href: "/sunday-schedule#sunday-1", icon: SunIcon1 },
+  { id: "sunday2", name: t("sunday2"), href: "/sunday-schedule#sunday-2", icon: SunIcon2 },
+  { id: "sunday3", name: t("sunday3"), href: "/sunday-schedule#sunday-3", icon: SunIcon3 },
 ];
 
-const onlineCourses: NavDropdownItem[] = [
-  { name: "Anatomy Masterclass", href: "/yoga-anatomy-masterclass", icon: Sparkles },
-];
-
-const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "#", dropdown: aboutItems },
-  { name: "Courses", href: "#", dropdown: courses },
-  { name: "Retreat", href: "#", dropdown: retreats },
-  { name: "Online Courses", href: "#", dropdown: onlineCourses },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Sunday Schedule", href: "/sunday-schedule", dropdown: sundayItems },
-  { name: "Blogs", href: "/blogs" },
-  { name: "Contact", href: "/contact-us" },
+const getOnlineCourses = (t: any): NavDropdownItem[] => [
+  { id: "anatomyMasterclass", name: t("anatomyMasterclass"), href: "/yoga-anatomy-masterclass", icon: Sparkles },
 ];
 
 export default function Header() {
+  const tNav = useTranslations("nav");
+  const tDrop = useTranslations("navDropdown");
+  const tPromo = useTranslations("promo");
+
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [openSubDropdown, setOpenSubDropdown] = useState<string | null>(null);
@@ -190,6 +189,18 @@ export default function Header() {
   const pathname = usePathname();
   const { setShowEnrollDialog } = useEnrollment();
   const { setShowQuickEnquiry } = useQuickEnquiry();
+
+  const navLinks = useMemo(() => [
+    { id: "home", name: tNav("home"), href: "/" },
+    { id: "about", name: tNav("about"), href: "#", dropdown: getAboutItems(tDrop) },
+    { id: "courses", name: tNav("courses"), href: "#", dropdown: getCourses(tDrop) },
+    { id: "retreat", name: tNav("retreat"), href: "#", dropdown: getRetreats(tDrop) },
+    { id: "onlineCourses", name: tNav("onlineCourses"), href: "#", dropdown: getOnlineCourses(tDrop) },
+    { id: "gallery", name: tNav("gallery"), href: "/gallery" },
+    { id: "sundaySchedule", name: tNav("sundaySchedule"), href: "/sunday-schedule", dropdown: getSundayItems(tDrop) },
+    { id: "blogs", name: tNav("blogs"), href: "/blogs" },
+    { id: "contact", name: tNav("contact"), href: "/contact-us" },
+  ], [tNav, tDrop]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -223,7 +234,7 @@ export default function Header() {
           <div className="flex items-center justify-center gap-1.5 sm:gap-2 sm:whitespace-nowrap animate-none md:animate-pulse text-center">
             <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
             <span className="text-[11px] min-[375px]:text-xs sm:text-sm font-bold tracking-wide uppercase leading-tight">
-              {PROMO_OFFER.title} 🎉 Flat <span className="text-amber-300 font-extrabold">{PROMO_OFFER.discountText}</span> {PROMO_OFFER.batchesText}
+              {tPromo("title")} 🎉 Flat <span className="text-amber-300 font-extrabold">{tPromo("discountText")}</span> {tPromo("batchesText")}
             </span>
           </div>
 
@@ -231,7 +242,7 @@ export default function Header() {
             <div className="flex items-center gap-1 sm:gap-1.5 whitespace-nowrap">
               <Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300 shrink-0" />
               <span className="text-[9px] min-[375px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest text-white/90">
-                Offer Ends In:
+                {tPromo("endsIn")}
               </span>
             </div>
             <PromoCountdown className="sm:scale-90 sm:origin-left" />
@@ -276,33 +287,34 @@ export default function Header() {
             <nav className="hidden lg:flex items-center" aria-label="Main Navigation">
               <ul className="flex items-center bg-secondary/30 rounded-full px-2 py-1.5 list-none m-0 p-0">
                 {navLinks.map((link) => {
-                  const isDropdownActive = link.name === 'Courses' ? isCoursesActive :
-                    link.name === 'Retreat' ? isRetreatActive :
-                    link.name === 'About' ? isAboutActive :
-                      link.name === 'Online Courses' ? isOnlineCoursesActive :
-                      link.name === 'Sunday Schedule' ? isSundayActive : false;
+                  const isDropdownActive = link.id === 'courses' ? isCoursesActive :
+                    link.id === 'retreat' ? isRetreatActive :
+                    link.id === 'about' ? isAboutActive :
+                      link.id === 'onlineCourses' ? isOnlineCoursesActive :
+                      link.id === 'sundaySchedule' ? isSundayActive : false;
+                  const dropdownKey = link.id || link.name;
                   return (
-                    <li key={link.name} className="relative list-none">
+                    <li key={dropdownKey} className="relative list-none">
                       {link.dropdown ? (
                         <div
                           className="relative"
-                          onMouseEnter={() => setOpenDropdown(link.name)}
+                          onMouseEnter={() => setOpenDropdown(dropdownKey)}
                           onMouseLeave={() => setOpenDropdown(null)}
                         >
                           <button
                             type="button"
                             suppressHydrationWarning
                             aria-haspopup="true"
-                            aria-expanded={openDropdown === link.name}
+                            aria-expanded={openDropdown === dropdownKey}
                             aria-label={`${link.name} navigation menu`}
-                            onClick={() => setOpenDropdown(openDropdown === link.name ? null : link.name)}
+                            onClick={() => setOpenDropdown(openDropdown === dropdownKey ? null : dropdownKey)}
                             className={`flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${isDropdownActive
                               ? 'bg-primary text-primary-foreground'
                               : 'text-foreground/70 hover:text-primary hover:bg-secondary/50'
                               }`}
                           >
                             {link.name}
-                            <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${openDropdown === link.name ? 'rotate-180' : ''
+                            <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${openDropdown === dropdownKey ? 'rotate-180' : ''
                               }`} />
                           </button>
 
@@ -310,17 +322,19 @@ export default function Header() {
                           <div
                             role="menu"
                             aria-label={`${link.name} Submenu`}
-                            className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-card rounded-2xl shadow-xl border border-border/50 transition-all duration-300 ${openDropdown === link.name
+                            className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-card rounded-2xl shadow-xl border border-border/50 transition-all duration-300 ${openDropdown === dropdownKey
                               ? 'opacity-100 visible translate-y-0'
                               : 'opacity-0 invisible -translate-y-4'
                               }`}
                           >
                             <ul className="p-2 list-none m-0">
-                              {link.dropdown.map((item) => (
+                              {link.dropdown.map((item) => {
+                                const subItemKey = item.id || item.name;
+                                return (
                                 <li
-                                  key={item.name}
+                                  key={subItemKey}
                                   className="relative list-none"
-                                  onMouseEnter={() => item.subItems && setOpenSubDropdown(item.name)}
+                                  onMouseEnter={() => item.subItems && setOpenSubDropdown(subItemKey)}
                                   onMouseLeave={() => setOpenSubDropdown(null)}
                                 >
                                   {item.subItems ? (
@@ -329,9 +343,9 @@ export default function Header() {
                                         type="button"
                                         suppressHydrationWarning
                                         aria-haspopup="true"
-                                        aria-expanded={openSubDropdown === item.name}
-                                        onClick={() => setOpenSubDropdown(openSubDropdown === item.name ? null : item.name)}
-                                        className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm transition-all duration-200 ${openSubDropdown === item.name
+                                        aria-expanded={openSubDropdown === subItemKey}
+                                        onClick={() => setOpenSubDropdown(openSubDropdown === subItemKey ? null : subItemKey)}
+                                        className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm transition-all duration-200 ${openSubDropdown === subItemKey
                                           ? 'bg-primary/10 text-primary font-medium'
                                           : 'text-foreground/70 hover:bg-secondary hover:text-primary'
                                           }`}
@@ -340,21 +354,21 @@ export default function Header() {
                                           <item.icon className="h-4 w-4 text-primary" />
                                           {item.name}
                                         </span>
-                                        <ArrowRight className={`h-3 w-3 transition-transform ${openSubDropdown === item.name ? 'translate-x-1' : ''}`} />
+                                        <ArrowRight className={`h-3 w-3 transition-transform ${openSubDropdown === subItemKey ? 'translate-x-1' : ''}`} />
                                       </button>
 
                                       {/* Sub-dropdown */}
                                       <div
                                         role="menu"
                                         aria-label={`${item.name} Retreat Durations`}
-                                        className={`absolute top-0 left-full ml-1 w-56 bg-card rounded-2xl shadow-xl border border-border/50 overflow-hidden transition-all duration-300 ${openSubDropdown === item.name
+                                        className={`absolute top-0 left-full ml-1 w-56 bg-card rounded-2xl shadow-xl border border-border/50 overflow-hidden transition-all duration-300 ${openSubDropdown === subItemKey
                                           ? 'opacity-100 visible translate-x-0'
                                           : 'opacity-0 invisible -translate-x-2'
                                           }`}
                                       >
                                         <ul className="p-2 list-none m-0">
                                           {item.subItems.map((sub) => (
-                                            <li key={sub.name} className="list-none">
+                                            <li key={sub.id || sub.name} className="list-none">
                                               <Link
                                                 href={sub.href}
                                                 prefetch={false}
@@ -394,7 +408,7 @@ export default function Header() {
                                     </Link>
                                   )}
                                 </li>
-                              ))}
+                              )})}
                             </ul>
                           </div>
                         </div>
@@ -416,8 +430,10 @@ export default function Header() {
               </ul>
             </nav>
 
-            {/* Right Side - CTA */}
+            {/* Right Side - Switcher & CTA */}
             <div className="flex items-center gap-1.5 min-[375px]:gap-2 sm:gap-3 shrink-0">
+              <LanguageSwitcher />
+
               {/* Mobile CTA Button */}
               <Button
                 type="button"
@@ -426,7 +442,7 @@ export default function Header() {
                 className="lg:hidden bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-2.5 min-[375px]:px-3.5 sm:px-4 h-8 min-[375px]:h-9 text-xs min-[375px]:text-sm shadow-sm transition-all whitespace-nowrap"
                 onClick={() => setShowEnrollDialog(true)}
               >
-                Begin Journey
+                {tNav("beginJourney")}
               </Button>
 
               {/* Desktop CTA Button */}
@@ -436,7 +452,7 @@ export default function Header() {
                 className="hidden lg:flex bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-6 py-2.5 h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap"
                 onClick={() => setShowEnrollDialog(true)}
               >
-                Begin Journey
+                {tNav("beginJourney")}
               </Button>
 
               {/* Mobile Menu Button */}
@@ -444,7 +460,7 @@ export default function Header() {
                 type="button"
                 className="lg:hidden p-1.5 min-[375px]:p-2 rounded-full hover:bg-secondary transition-colors"
                 onClick={() => setIsOpen((prev) => !prev)}
-                aria-label="Toggle menu"
+                aria-label={tNav("toggleMenu")}
               >
                 <div className="relative w-5 h-4 min-[375px]:w-6 min-[375px]:h-5 flex flex-col justify-between">
                   <span className={`w-full h-0.5 bg-foreground rounded-full transition-all duration-300 origin-left ${isOpen ? 'rotate-45 translate-x-0.5' : ''
@@ -467,20 +483,21 @@ export default function Header() {
         >
           <nav className="container mx-auto px-4 py-6 flex flex-col gap-1">
             {navLinks.map((link) => {
-              const isMobileDropdownActive = link.name === 'Courses' ? isCoursesActive :
-                link.name === 'Retreat' ? isRetreatActive :
-                link.name === 'About' ? isAboutActive :
-                  link.name === 'Online Courses' ? isOnlineCoursesActive :
-                  link.name === 'Sunday Schedule' ? isSundayActive : false;
-              const isThisDropdownOpen = mobileOpenDropdown === link.name;
+              const isMobileDropdownActive = link.id === 'courses' ? isCoursesActive :
+                link.id === 'retreat' ? isRetreatActive :
+                link.id === 'about' ? isAboutActive :
+                  link.id === 'onlineCourses' ? isOnlineCoursesActive :
+                  link.id === 'sundaySchedule' ? isSundayActive : false;
+              const dropdownKey = link.id || link.name;
+              const isThisDropdownOpen = mobileOpenDropdown === dropdownKey;
 
               return (
-                <div key={link.name}>
+                <div key={dropdownKey}>
                   {link.dropdown ? (
                     <>
                       <button
                         type="button"
-                        onClick={() => setMobileOpenDropdown(isThisDropdownOpen ? null : link.name)}
+                        onClick={() => setMobileOpenDropdown(isThisDropdownOpen ? null : dropdownKey)}
                         className={`w-full flex items-center justify-between py-3 px-4 rounded-xl text-base font-medium transition-all ${isMobileDropdownActive
                           ? 'bg-primary/10 text-primary'
                           : 'text-foreground/80 hover:bg-secondary'
@@ -493,14 +510,16 @@ export default function Header() {
                       <div className={`overflow-hidden transition-all duration-300 ${isThisDropdownOpen ? 'max-h-[600px] mt-1' : 'max-h-0'
                         }`}>
                         <div className="pl-4 flex flex-col gap-1 pb-2">
-                          {link.dropdown.map((item) => (
-                            <div key={item.name}>
+                          {link.dropdown.map((item) => {
+                            const subItemKey = item.id || item.name;
+                            return (
+                            <div key={subItemKey}>
                               {item.subItems ? (
                                 <>
                                   <button
                                     type="button"
-                                    onClick={() => setMobileOpenSubDropdown(mobileOpenSubDropdown === item.name ? null : item.name)}
-                                    className={`w-full flex items-center justify-between py-2.5 px-4 rounded-lg text-sm transition-all ${mobileOpenSubDropdown === item.name
+                                    onClick={() => setMobileOpenSubDropdown(mobileOpenSubDropdown === subItemKey ? null : subItemKey)}
+                                    className={`w-full flex items-center justify-between py-2.5 px-4 rounded-lg text-sm transition-all ${mobileOpenSubDropdown === subItemKey
                                       ? 'text-primary'
                                       : 'text-foreground/60'
                                       }`}
@@ -509,13 +528,13 @@ export default function Header() {
                                       <item.icon className="h-4 w-4" />
                                       {item.name}
                                     </span>
-                                    <ChevronDown className={`h-3 w-3 transition-transform ${mobileOpenSubDropdown === item.name ? 'rotate-180' : ''}`} />
+                                    <ChevronDown className={`h-3 w-3 transition-transform ${mobileOpenSubDropdown === subItemKey ? 'rotate-180' : ''}`} />
                                   </button>
-                                  <div className={`overflow-hidden transition-all duration-300 ${mobileOpenSubDropdown === item.name ? 'max-h-48 mt-1' : 'max-h-0'}`}>
+                                  <div className={`overflow-hidden transition-all duration-300 ${mobileOpenSubDropdown === subItemKey ? 'max-h-48 mt-1' : 'max-h-0'}`}>
                                     <div className="pl-8 flex flex-col gap-1 pb-2">
                                       {item.subItems.map((sub) => (
                                         <Link
-                                          key={sub.name}
+                                          key={sub.id || sub.name}
                                           href={sub.href}
                                           onClick={() => setIsOpen(false)}
                                           className={`block py-2 px-4 rounded-lg text-xs transition-all ${pathname === sub.href
@@ -544,7 +563,7 @@ export default function Header() {
                                 </Link>
                               )}
                             </div>
-                          ))}
+                          )})}
                         </div>
                       </div>
                     </>
@@ -565,8 +584,15 @@ export default function Header() {
               );
             })}
 
-            {/* Mobile Footer CTA */}
-            <div className="mt-6 px-4 pb-8">
+            {/* Mobile Language & Footer CTA */}
+            <div className="mt-6 px-4 pb-8 flex flex-col gap-4">
+              <div className="flex items-center justify-between py-2 border-t border-border/40 pt-4">
+                <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                  Language / Bhasha
+                </span>
+                <LanguageSwitcher align="left" />
+              </div>
+
               <Button
                 type="button"
                 className="w-full bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg py-6 text-lg shadow-sm transition-all"
@@ -577,7 +603,7 @@ export default function Header() {
                   }, 150);
                 }}
               >
-                Begin Your Journey
+                {tNav("beginYourJourney")}
               </Button>
             </div>
           </nav>

@@ -69,18 +69,21 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
         };
     }, []);
 
+    // Strip optional locale prefix (e.g. /de/yoga-anatomy-masterclass -> /yoga-anatomy-masterclass)
+    const normalizedPathname = pathname?.replace(/^\/(id|de|ko|ja|zh|nl|ru|it|es|fr)(\/|$)/, '/') || pathname;
+
     const hideHeader = [
         "/yoga-anatomy-masterclass",
         "/pre-yttc-prep",
         "/teacher-training-foundation",
         "/yogic-energy"
-    ].includes(pathname);
+    ].includes(normalizedPathname);
 
     const hideFooter = [
         "/yoga-anatomy-masterclass",
         "/pre-yttc-prep",
         "/yogic-energy"
-    ].includes(pathname);
+    ].includes(normalizedPathname);
 
     return (
         <div className="min-h-screen flex flex-col">

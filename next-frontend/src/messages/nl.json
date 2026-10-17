@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over ons",
+    "courses": "Opleidingen",
+    "retreat": "Retreat",
+    "onlineCourses": "Online cursussen",
+    "gallery": "Galerij",
+    "sundaySchedule": "Zondagsprogramma",
+    "blogs": "Blog",
+    "contact": "Contact",
+    "beginJourney": "Begin je reis",
+    "beginYourJourney": "Begin je reis",
+    "toggleMenu": "Menu openen"
+  },
+  "navDropdown": {
+    "aboutSchool": "Over de school",
+    "ourTeachers": "Onze docenten",
+    "testimonials": "Ervaringen",
+    "anatomyMasterclass": "Anatomie Masterclass",
+    "sunday1": "Zondag 1",
+    "sunday2": "Zondag 2",
+    "sunday3": "Zondag 3",
+    "baliLocation": "Bali, Indonesië",
+    "rishikeshLocation": "Rishikesh, India",
+    "course100": "100 Uur YTTC",
+    "course200": "200 Uur YTTC",
+    "course300": "300 Uur YTTC",
+    "retreatBali": "Bali",
+    "retreatRishikesh": "Rishikesh",
+    "retreatWarkala": "Warkala",
+    "retreat3Days": "3-daagse retreat",
+    "retreat7Days": "7-daagse retreat",
+    "retreat14Days": "14-daagse retreat"
+  },
+  "promo": {
+    "title": "Nieuwjaarsactie",
+    "discountText": "$300 KORTING",
+    "batchesText": "Alle groepen",
+    "endsIn": "Aanbieding eindigt over:"
+  },
+  "switcher": {
+    "label": "Kies taal",
+    "currentLanguage": "Huidige taal: {lang}"
+  },
+  "common": {
+    "bookNow": "Boek nu",
+    "quickEnquiry": "Snelle aanvraag",
+    "applyNow": "Nu aanmelden",
+    "chatWhatsApp": "Chat via WhatsApp",
+    "readMore": "Lees meer",
+    "close": "Sluiten",
+    "viewAll": "Bekijk alles"
+  },
+  "footer": {
+    "tagline": "Transform Within",
+    "description": "Yoga Alliance gecertificeerde 100, 200 & 300 uur yoga docentenopleiding en spirituele ashram in Ubud Bali & Rishikesh India.",
+    "coursesHeading": "Opleidingen",
+    "retreatsHeading": "Retreats",
+    "quickLinksHeading": "Snelle links",
+    "contactHeading": "Contact",
+    "privacyPolicy": "Privacybeleid",
+    "termsConditions": "Algemene voorwaarden",
+    "refundPolicy": "Terugbetalingsbeleid",
+    "copyright": "Alle rechten voorbehouden."
+  }
+}

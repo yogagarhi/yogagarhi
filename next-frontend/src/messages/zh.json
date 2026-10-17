@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "courses": "培训课程",
+    "retreat": "静修营",
+    "onlineCourses": "在线课程",
+    "gallery": "精彩图库",
+    "sundaySchedule": "周日日程",
+    "blogs": "博客",
+    "contact": "联系我们",
+    "beginJourney": "开启旅程",
+    "beginYourJourney": "开启您的瑜伽之旅",
+    "toggleMenu": "切换菜单"
+  },
+  "navDropdown": {
+    "aboutSchool": "关于学院",
+    "ourTeachers": "导师团队",
+    "testimonials": "学员评价",
+    "anatomyMasterclass": "解剖学大师课",
+    "sunday1": "周日 1",
+    "sunday2": "周日 2",
+    "sunday3": "周日 3",
+    "baliLocation": "巴厘岛，印度尼西亚",
+    "rishikeshLocation": "瑞诗凯诗，印度",
+    "course100": "100小时 YTTC",
+    "course200": "200小时 YTTC",
+    "course300": "300小时 YTTC",
+    "retreatBali": "巴厘岛",
+    "retreatRishikesh": "瑞诗凯诗",
+    "retreatWarkala": "瓦卡拉",
+    "retreat3Days": "3天静修营",
+    "retreat7Days": "7天静修营",
+    "retreat14Days": "14天静修营"
+  },
+  "promo": {
+    "title": "新年特惠",
+    "discountText": "立减 $300",
+    "batchesText": "所有班期",
+    "endsIn": "特惠倒计时："
+  },
+  "switcher": {
+    "label": "选择语言",
+    "currentLanguage": "当前语言：{lang}"
+  },
+  "common": {
+    "bookNow": "立即预订",
+    "quickEnquiry": "快速咨询",
+    "applyNow": "立即报名",
+    "chatWhatsApp": "WhatsApp 咨询",
+    "readMore": "阅读更多",
+    "close": "关闭",
+    "viewAll": "查看全部"
+  },
+  "footer": {
+    "tagline": "Transform Within",
+    "description": "Yoga Alliance 认证 100、200 和 300 小时瑜伽导师培训学院及精神静修所，坐落于巴厘岛乌布与印度瑞诗凯诗。",
+    "coursesHeading": "培训课程",
+    "retreatsHeading": "静修营",
+    "quickLinksHeading": "快速链接",
+    "contactHeading": "联系我们",
+    "privacyPolicy": "隐私政策",
+    "termsConditions": "条款与条件",
+    "refundPolicy": "退款政策",
+    "copyright": "版权所有。"
+  }
+}

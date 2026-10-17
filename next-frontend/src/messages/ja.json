@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "私たちについて",
+    "courses": "コース",
+    "retreat": "リトリート",
+    "onlineCourses": "オンラインコース",
+    "gallery": "ギャラリー",
+    "sundaySchedule": "日曜日のスケジュール",
+    "blogs": "ブログ",
+    "contact": "お問い合わせ",
+    "beginJourney": "旅を始める",
+    "beginYourJourney": "旅を始めましょう",
+    "toggleMenu": "メニューを開閉"
+  },
+  "navDropdown": {
+    "aboutSchool": "学校について",
+    "ourTeachers": "講師紹介",
+    "testimonials": "受講生の声",
+    "anatomyMasterclass": "解剖学マスタークラス",
+    "sunday1": "日曜日 1",
+    "sunday2": "日曜日 2",
+    "sunday3": "日曜日 3",
+    "baliLocation": "バリ島（インドネシア）",
+    "rishikeshLocation": "リシケシ（インド）",
+    "course100": "100時間 YTTC",
+    "course200": "200時間 YTTC",
+    "course300": "300時間 YTTC",
+    "retreatBali": "バリ島",
+    "retreatRishikesh": "リシケシ",
+    "retreatWarkala": "ヴァルカラ",
+    "retreat3Days": "3日間リトリート",
+    "retreat7Days": "7日間リトリート",
+    "retreat14Days": "14日間リトリート"
+  },
+  "promo": {
+    "title": "ニューイヤーセール",
+    "discountText": "$300 割引",
+    "batchesText": "全日程対象",
+    "endsIn": "終了まであと："
+  },
+  "switcher": {
+    "label": "言語を選択",
+    "currentLanguage": "現在の言語: {lang}"
+  },
+  "common": {
+    "bookNow": "今すぐ予約",
+    "quickEnquiry": "お問い合わせ",
+    "applyNow": "お申し込み",
+    "chatWhatsApp": "WhatsAppで相談",
+    "readMore": "詳細を見る",
+    "close": "閉じる",
+    "viewAll": "すべて見る"
+  },
+  "footer": {
+    "tagline": "Transform Within",
+    "description": "Yoga Alliance認定の100・200・300時間ヨガ指導者養成校およびスピリチュアルアシュラム（ウブド・バリ島＆リシケシ・インド）。",
+    "coursesHeading": "コース一覧",
+    "retreatsHeading": "リトリート",
+    "quickLinksHeading": "クイックリンク",
+    "contactHeading": "お問い合わせ",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsConditions": "利用規約",
+    "refundPolicy": "返金ポリシー",
+    "copyright": "All rights reserved."
+  }
+}

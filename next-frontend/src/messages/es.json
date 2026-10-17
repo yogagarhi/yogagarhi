@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "courses": "Cursos",
+    "retreat": "Retiros",
+    "onlineCourses": "Cursos online",
+    "gallery": "Galería",
+    "sundaySchedule": "Horario dominical",
+    "blogs": "Blog",
+    "contact": "Contacto",
+    "beginJourney": "Comenzar",
+    "beginYourJourney": "Comienza tu viaje",
+    "toggleMenu": "Alternar menú"
+  },
+  "navDropdown": {
+    "aboutSchool": "Sobre la escuela",
+    "ourTeachers": "Nuestros maestros",
+    "testimonials": "Testimonios",
+    "anatomyMasterclass": "Masterclass de anatomía",
+    "sunday1": "Domingo 1",
+    "sunday2": "Domingo 2",
+    "sunday3": "Domingo 3",
+    "baliLocation": "Bali, Indonesia",
+    "rishikeshLocation": "Rishikesh, India",
+    "course100": "100 Horas YTTC",
+    "course200": "200 Horas YTTC",
+    "course300": "300 Horas YTTC",
+    "retreatBali": "Bali",
+    "retreatRishikesh": "Rishikesh",
+    "retreatWarkala": "Warkala",
+    "retreat3Days": "Retiro de 3 días",
+    "retreat7Days": "Retiro de 7 días",
+    "retreat14Days": "Retiro de 14 días"
+  },
+  "promo": {
+    "title": "Oferta de Año Nuevo",
+    "discountText": "$300 DE DESCUENTO",
+    "batchesText": "Todas las fechas",
+    "endsIn": "La oferta termina en:"
+  },
+  "switcher": {
+    "label": "Seleccionar idioma",
+    "currentLanguage": "Idioma actual: {lang}"
+  },
+  "common": {
+    "bookNow": "Reservar ahora",
+    "quickEnquiry": "Consulta rápida",
+    "applyNow": "Inscribirse ahora",
+    "chatWhatsApp": "Chatear por WhatsApp",
+    "readMore": "Leer más",
+    "close": "Cerrar",
+    "viewAll": "Ver todo"
+  },
+  "footer": {
+    "tagline": "Transform Within",
+    "description": "Escuela de formación de profesores de yoga certificada por Yoga Alliance de 100, 200 y 300 horas y ashram espiritual en Ubud Bali y Rishikesh India.",
+    "coursesHeading": "Cursos",
+    "retreatsHeading": "Retiros",
+    "quickLinksHeading": "Enlaces rápidos",
+    "contactHeading": "Contáctanos",
+    "privacyPolicy": "Política de privacidad",
+    "termsConditions": "Términos y condiciones",
+    "refundPolicy": "Política de reembolso",
+    "copyright": "Todos los derechos reservados."
+  }
+}

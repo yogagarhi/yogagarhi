@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "courses": "Kurse",
+    "retreat": "Retreat",
+    "onlineCourses": "Online-Kurse",
+    "gallery": "Galerie",
+    "sundaySchedule": "Sonntagsprogramm",
+    "blogs": "Blog",
+    "contact": "Kontakt",
+    "beginJourney": "Reise beginnen",
+    "beginYourJourney": "Beginne deine Reise",
+    "toggleMenu": "Menü umschalten"
+  },
+  "navDropdown": {
+    "aboutSchool": "Über die Schule",
+    "ourTeachers": "Unsere Lehrer",
+    "testimonials": "Erfahrungsberichte",
+    "anatomyMasterclass": "Anatomie-Masterclass",
+    "sunday1": "Sonntag 1",
+    "sunday2": "Sonntag 2",
+    "sunday3": "Sonntag 3",
+    "baliLocation": "Bali, Indonesien",
+    "rishikeshLocation": "Rishikesh, Indien",
+    "course100": "100-Stunden YTTC",
+    "course200": "200-Stunden YTTC",
+    "course300": "300-Stunden YTTC",
+    "retreatBali": "Bali",
+    "retreatRishikesh": "Rishikesh",
+    "retreatWarkala": "Warkala",
+    "retreat3Days": "3-Tage-Retreat",
+    "retreat7Days": "7-Tage-Retreat",
+    "retreat14Days": "14-Tage-Retreat"
+  },
+  "promo": {
+    "title": "Neujahrs-Aktion",
+    "discountText": "$300 RABATT",
+    "batchesText": "Alle Termine",
+    "endsIn": "Angebot endet in:"
+  },
+  "switcher": {
+    "label": "Sprache wählen",
+    "currentLanguage": "Aktuelle Sprache: {lang}"
+  },
+  "common": {
+    "bookNow": "Jetzt buchen",
+    "quickEnquiry": "Schnellanfrage",
+    "applyNow": "Jetzt bewerben",
+    "chatWhatsApp": "Auf WhatsApp chatten",
+    "readMore": "Mehr erfahren",
+    "close": "Schließen",
+    "viewAll": "Alle ansehen"
+  },
+  "footer": {
+    "tagline": "Transform Within",
+    "description": "Yoga Alliance zertifizierte 100, 200 & 300 Stunden Yoga-Lehrerausbildungsschule und spiritueller Ashram in Ubud Bali & Rishikesh Indien.",
+    "coursesHeading": "Kurse",
+    "retreatsHeading": "Retreats",
+    "quickLinksHeading": "Schnelllinks",
+    "contactHeading": "Kontakt",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsConditions": "AGB",
+    "refundPolicy": "Rückerstattungsrichtlinie",
+    "copyright": "Alle Rechte vorbehalten."
+  }
+}

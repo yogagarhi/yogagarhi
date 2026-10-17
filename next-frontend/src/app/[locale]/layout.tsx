@@ -1,8 +1,17 @@
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import type { Metadata } from "next";
 import MainLayout from "@/components/MainLayout";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
+import { Providers } from "@/components/Providers";
+import UtmTracker from "@/components/UtmTracker";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import SvgSprite from "@/components/SvgSprite";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import { isLocaleReviewed } from "@/config/i18nConfig";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -19,119 +28,147 @@ const plusJakarta = Plus_Jakarta_Sans({
   preload: false,
 });
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isReviewed = isLocaleReviewed(locale);
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://www.yogagarhi.com'),
-  title: {
-    default: "YogaGarhi - Yoga Teacher Training Bali",
-    template: "%s | YogaGarhi"
-  },
-  alternates: {
-    canonical: "https://www.yogagarhi.com",
-  },
-  description: "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.",
-  keywords: [
-    "yoga teacher training Bali",
-    "YTTC Ubud",
-    "200 hour yoga certification",
-    "yoga alliance certified",
-    "yoga retreat Bali",
-    "yoga school Indonesia",
-    "RYT 200",
-    "yoga ashram Bali",
-    "meditation training",
-    "pranayama course",
-    "YogaGarhi",
-    "100 hour YTTC",
-    "300 hour YTTC",
-    "yoga teacher training Gianyar"
-  ],
-  authors: [{ name: "YogaGarhi" }],
-  creator: "YogaGarhi",
-  publisher: "YogaGarhi",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.png', sizes: '192x192', type: 'image/png' },
-      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
-    ],
-    apple: [
-      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
-    ],
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://www.yogagarhi.com',
-    siteName: 'YogaGarhi',
-    title: 'YogaGarhi - Yoga Teacher Training in Bali, Ubud',
-    description: 'Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'YogaGarhi - Yoga Teacher Training Bali',
-      }
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'YogaGarhi - Yoga Teacher Training in Bali, Ubud',
-    description: 'Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs.',
-    images: ['/og-image.jpg'],
-    creator: '@YogaGarhi',
-    site: '@YogaGarhi',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+  const baseMetadata: Metadata = {
+    metadataBase: new URL("https://www.yogagarhi.com"),
+    title: {
+      default: "YogaGarhi - Yoga Teacher Training Bali",
+      template: "%s | YogaGarhi",
     },
-  },
-  ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
-    ? {
-        verification: {
-          google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    alternates: {
+      canonical: "https://www.yogagarhi.com",
+    },
+    description:
+      "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.",
+    keywords: [
+      "yoga teacher training Bali",
+      "YTTC Ubud",
+      "200 hour yoga certification",
+      "yoga alliance certified",
+      "yoga retreat Bali",
+      "yoga school Indonesia",
+      "RYT 200",
+      "yoga ashram Bali",
+      "meditation training",
+      "pranayama course",
+      "YogaGarhi",
+      "100 hour YTTC",
+      "300 hour YTTC",
+      "yoga teacher training Gianyar",
+    ],
+    authors: [{ name: "YogaGarhi" }],
+    creator: "YogaGarhi",
+    publisher: "YogaGarhi",
+    formatDetection: {
+      email: false,
+      address: false,
+      telephone: false,
+    },
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/favicon.png", sizes: "192x192", type: "image/png" },
+        { url: "/icon.png", sizes: "512x512", type: "image/png" },
+      ],
+      apple: [{ url: "/icon.png", sizes: "512x512", type: "image/png" }],
+    },
+    openGraph: {
+      type: "website",
+      locale: locale === "en" ? "en_US" : locale,
+      url: "https://www.yogagarhi.com",
+      siteName: "YogaGarhi",
+      title: "YogaGarhi - Yoga Teacher Training in Bali, Ubud",
+      description:
+        "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.",
+      images: [
+        {
+          url: "/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: "YogaGarhi - Yoga Teacher Training Bali",
         },
-      }
-    : {}),
-};
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "YogaGarhi - Yoga Teacher Training in Bali, Ubud",
+      description:
+        "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs.",
+      images: ["/og-image.jpg"],
+      creator: "@YogaGarhi",
+      site: "@YogaGarhi",
+    },
+    robots: isReviewed
+      ? {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+          },
+        }
+      : {
+          index: false,
+          follow: true,
+          googleBot: {
+            index: false,
+            follow: true,
+          },
+        },
+    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+      ? {
+          verification: {
+            google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+          },
+        }
+      : {}),
+  };
 
-import { Providers } from "@/components/Providers";
-import UtmTracker from '@/components/UtmTracker';
-import WhatsAppButton from "@/components/WhatsAppButton";
-import SvgSprite from "@/components/SvgSprite";
+  return baseMetadata;
+}
 
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  setRequestLocale(locale);
+
+  const messages = await getMessages();
+
   return (
-    <html lang="en" className={`${cormorant.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
+    <html lang={locale} className={`${cormorant.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#0f766e" />
-        {/* Initialize dataLayer immediately for early conversion events */}
         <script
           id="init-datalayer"
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];`,
           }}
         />
-        {/* Unified Structured Data (EducationalOrganization, LocalBusiness, WebSite) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -284,7 +321,7 @@ export default function RootLayout({
                   "publisher": {
                     "@id": "https://www.yogagarhi.com/#organization"
                   },
-                  "inLanguage": "en-US"
+                  "inLanguage": locale === 'en' ? 'en-US' : locale
                 }
               ]
             })
@@ -351,12 +388,14 @@ export default function RootLayout({
 })();`
           }}
         />
-        <Providers>
-          <MainLayout>
-            {children}
-          </MainLayout>
-          <WhatsAppButton />
-        </Providers>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Providers>
+            <MainLayout>
+              {children}
+            </MainLayout>
+            <WhatsAppButton />
+          </Providers>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
