@@ -1153,7 +1153,7 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
                   {/* Certification */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Certification</p>
-                    <p className="font-heading font-semibold text-foreground">Yoga Alliance RYT 300</p>
+                    <p className="font-heading font-semibold text-foreground">Yoga Alliance 300-Hour</p>
                   </div>
 
                   {/* Price */}
@@ -1270,7 +1270,7 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="space-y-6 text-muted-foreground leading-relaxed text-left mb-8">
                   {/* First 2 paragraphs - always visible */}
                   <p className="text-base sm:text-lg text-foreground/80 font-medium">
-                    Become a Yoga Alliance Registered Yoga Teacher (RYT 300) through Yogagarhi's
+                    Advance your teaching credentials towards RYT 500 through Yogagarhi's
                     300-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
                     of yoga and self-realization.
                   </p>
@@ -1348,7 +1348,7 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="space-y-6 text-muted-foreground leading-relaxed">
                   {/* First 2 paragraphs - always visible */}
                   <p>
-                    Become a Yoga Alliance Registered Yoga Teacher (RYT 300) through Yogagarhi's
+                    Advance your teaching credentials towards RYT 500 through Yogagarhi's
                     300-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
                     of yoga and self-realization.
                   </p>
@@ -1366,7 +1366,7 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
                     <p className="pt-6">
                       Become a part of this transformative once in a lifetime experience in the
                       mesmerizing beauty of Bali. This holistic program prepares you to become a
-                      professional yoga teacher having expertise, skills, and confidence. This advanced training is designed for graduates of a <Link href="/200-hour-yoga-teacher-training-in-bali" className="text-primary font-semibold underline hover:text-primary/80">200 hour yoga teacher training in Bali</Link> who are ready to elevate their mastery to the RYT 300 level.
+                      professional yoga teacher having expertise, skills, and confidence. This advanced training is designed for graduates of a <Link href="/200-hour-yoga-teacher-training-in-bali" className="text-primary font-semibold underline hover:text-primary/80">200 hour yoga teacher training in Bali</Link> who are ready to elevate their mastery to the 300-hour level.
                     </p>
                   </div>
 

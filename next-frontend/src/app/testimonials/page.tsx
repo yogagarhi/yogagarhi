@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import AboutTestimonials from "@/components/pages/AboutTestimonials";
-import { googleReviews, GOOGLE_REVIEW_COUNT } from "@/constants/googleReviews";
+import { googleReviews } from "@/constants/googleReviews";
 
 export const metadata: Metadata = {
     title: "Reviews & Testimonials - Student Stories",
@@ -42,13 +42,6 @@ export default function AboutTestimonialsPage() {
                                 "@id": "https://www.yogagarhi.com/#organization",
                                 "name": "YogaGarhi",
                                 "url": "https://www.yogagarhi.com",
-                                "aggregateRating": {
-                                    "@type": "AggregateRating",
-                                    "ratingValue": "5.0",
-                                    "reviewCount": GOOGLE_REVIEW_COUNT,
-                                    "bestRating": "5",
-                                    "worstRating": "1"
-                                },
                                 "review": googleReviews.map((review) => ({
                                     "@type": "Review",
                                     "author": {
