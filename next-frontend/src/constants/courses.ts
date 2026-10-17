@@ -278,7 +278,7 @@ export const courseData = {
             {
                 title: "Art of Alignment & Hands-on Adjustments",
                 items: [
-                    "Comprehensive biomechanics and functional alignment for over 60 classical postures",
+                    "Comprehensive biomechanics and functional alignment for classical yoga postures",
                     "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
                     "Understanding individual anatomical variations, skeletal compression vs tension",
                     "Modification strategies using props and stance adjustments for diverse student flexibility"
@@ -296,7 +296,7 @@ export const courseData = {
             {
                 title: "Iyengar Yoga & Precision Alignment",
                 items: [
-                    "Methodical alignment utilizing blocks, straps, blankets, and wall ropes",
+                    "Methodical alignment utilizing blocks, straps, blankets, and props",
                     "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
                     "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
                     "Restorative Iyengar prop setups for supported holding and quiet focus"
@@ -477,7 +477,7 @@ export const courseData = {
             {
                 title: "Advanced Iyengar Yoga & Restorative Alignment",
                 items: [
-                    "Deep structural alignment utilizing advanced prop variations, chairs, and ropes",
+                    "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
                     "Structural alignment techniques for posture balance and foundational body mechanics",
                     "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
                     "Posture observation and personalized alignment sequencing for student needs"
@@ -819,7 +819,7 @@ export const courseData = {
             {
                 title: "Art of Alignment & Hands-on Adjustments",
                 items: [
-                    "Comprehensive biomechanics and functional alignment for over 60 classical postures",
+                    "Comprehensive biomechanics and functional alignment for classical yoga postures",
                     "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
                     "Understanding individual anatomical variations, skeletal compression vs tension",
                     "Modification strategies using props and stance adjustments for diverse student flexibility"
@@ -837,7 +837,7 @@ export const courseData = {
             {
                 title: "Iyengar Yoga & Precision Alignment",
                 items: [
-                    "Methodical alignment utilizing blocks, straps, blankets, and wall ropes",
+                    "Methodical alignment utilizing blocks, straps, blankets, and props",
                     "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
                     "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
                     "Restorative Iyengar prop setups for supported holding and quiet focus"

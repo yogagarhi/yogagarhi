@@ -285,11 +285,11 @@ Immersive, residential training helps you live the lifestyle you're studying: ea
 
 ### Are They Transparent About Certification?
 Check for:
-- Yoga Alliance registration (RYT 200 / RYT 300 / RYT 500) if you plan to teach internationally.
+- Yoga Alliance registration (RYT 200 / RYT 500) if you plan to teach internationally.
 - A transparent breakdown of hours, syllabus, and inclusions.
 - Realistic claims (no "become an enlightened master in 2 weeks" promises).
 
-YogaGarhi clearly displays its Yoga Alliance RYT 200 and RYT 300 accredited syllabi, upcoming dates, and straightforward fee structures.
+YogaGarhi clearly displays its Yoga Alliance accredited 200-Hour and 300-Hour syllabi, upcoming dates, and straightforward fee structures.
 
 ## What a Typical Day Looks Like in a Himalayan-Inspired Training
 While every school differs, a Himalayan-inspired daily schedule in Bali follows a disciplined yet supportive ashram rhythm:
@@ -387,7 +387,7 @@ Ready to begin your journey? Check our [Course Dates and Fees](/apply-now) or re
     content: `
 Choosing where to undertake your Yoga Teacher Training Course (YTTC) is one of the most important decisions on your yogic path. Two global destinations stand out above all others: **Bali (Indonesia)** and **Rishikesh (India)**.
 
-Both locations offer internationally recognized Yoga Alliance certifications (RYT 200, RYT 300, RYT 500), but they provide distinct experiences, environments, and cultural rhythms.
+Both locations offer internationally recognized Yoga Alliance certifications (RYT 200, RYT 500), but they provide distinct experiences, environments, and cultural rhythms.
 
 This guide provides a direct, objective comparison of doing your Yoga Teacher Training in Bali versus Rishikesh in 2026, helping you choose the destination that best aligns with your goals, budget, and learning style.
 

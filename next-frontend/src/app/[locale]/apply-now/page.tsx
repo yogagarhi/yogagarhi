@@ -47,8 +47,8 @@ export default function ApplyNowPage() {
         },
         {
             step: "03",
-            title: "Reserve Seat with $250 Deposit",
-            description: "Lock in your dates, room tier, and early bird pricing. Protected by our 12-month free rescheduling policy and seat transfer flexibility.",
+            title: "Reserve Your Seat",
+            description: "Lock in your preferred dates and room tier. Protected by our flexible booking and rescheduling policy.",
             icon: ShieldCheck,
         },
         {
@@ -96,15 +96,15 @@ export default function ApplyNowPage() {
         },
         {
             title: "300-Hour Advanced Teacher Training",
-            tag: "Advanced Mastery • RYT 300 / RYT 500",
+            tag: "Advanced Mastery • Pathway to RYT 500",
             duration: "28 Days / 27 Nights",
-            description: "Designed exclusively for 200-Hour graduates ready to master advanced adjustments, hands-on assists, anatomy pathology, and subtle yogic energy.",
+            description: "Designed exclusively for 200-Hour graduates ready to master advanced adjustments, hands-on assists, advanced biomechanics, and subtle yogic energy.",
             baliLink: "/300-hour-yoga-teacher-training-in-bali",
             rishikeshLink: null,
             features: [
-                "Advanced Yoga Alliance RYT 300 / 500 qualification",
-                "Advanced sequencing, injury therapeutics & biomechanics",
-                "27 nights deluxe accommodation & nutrition in Ubud",
+                "Advanced 300-Hour training towards Yoga Alliance RYT 500",
+                "Advanced sequencing, therapeutic alignment & biomechanics",
+                "27 nights accommodation & nourishing meals in Ubud",
                 "Subtle body, chakras, and advanced teaching practicum",
             ],
         },
@@ -116,12 +116,12 @@ export default function ApplyNowPage() {
             a: "No. Our 200-Hour curriculum is structured from foundational roots to advanced applications. We welcome passionate practitioners of all ages, backgrounds, and flexibility levels. What matters most is dedication, openness, and sincere curiosity.",
         },
         {
-            q: "What is the deposit requirement and payment terms?",
-            a: "A $250 deposit reserves your seat and locks in any applicable early-bird tuition discounts and your preferred room tier. The remaining balance is payable upon arrival on Campus (Day 1).",
+            q: "How do I secure my seat and what are the payment terms?",
+            a: "A registration deposit reserves your seat and confirms your enrollment. Complete details regarding payment schedules and accepted methods are provided during the application process.",
         },
         {
-            q: "What if my schedule changes after paying the deposit?",
-            a: "We offer complete peace of mind: your deposit includes a 12-Month Free Reschedule policy. You may transfer your booking to any future batch in Bali or Rishikesh within 12 months with zero penalty, or transfer your seat to a family member or friend with prior notice.",
+            q: "What if my travel dates or schedule change?",
+            a: "We offer flexible rescheduling options for our upcoming batches. Contact our admissions team in advance if you need to adjust your dates.",
         },
         {
             q: "What is included with my enrollment?",
@@ -129,7 +129,7 @@ export default function ApplyNowPage() {
         },
         {
             q: "How many students are in each cohort?",
-            a: "To ensure rigorous pedagogical quality and individual hands-on attention, our cohorts are strictly capped at 8–10 students in Bali and 10–12 in Rishikesh.",
+            a: "To ensure personal attention, individual alignment feedback, and deep learning, our cohorts maintain intimate class sizes with dedicated teacher mentorship.",
         },
     ];
 
@@ -155,7 +155,7 @@ export default function ApplyNowPage() {
                         </div>
                         <div className="flex items-center gap-1.5">
                             <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                            <span>12-Month Free Reschedule</span>
+                            <span>Flexible Rescheduling</span>
                         </div>
                         <div className="flex items-center gap-1.5">
                             <Award className="w-4 h-4 text-emerald-600" />
@@ -303,11 +303,11 @@ export default function ApplyNowPage() {
                         Need Guidance Choosing the Right Training?
                     </h2>
                     <p className="text-primary-foreground/90 text-sm md:text-base mb-8 max-w-xl mx-auto leading-relaxed">
-                        Our admissions counselors are available daily to answer questions regarding course syllabi, travel arrangements, room choices, and prerequisites.
+                        Our admissions team is available to assist you with questions regarding course syllabi, travel arrangements, room choices, and prerequisites.
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-4">
                         <a 
-                            href="https://wa.me/6282144027878" 
+                            href="https://wa.me/917895350563" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
