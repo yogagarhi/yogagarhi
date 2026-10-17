@@ -308,7 +308,7 @@ export default function Header() {
                             aria-expanded={openDropdown === dropdownKey}
                             aria-label={`${link.name} navigation menu`}
                             onClick={() => setOpenDropdown(openDropdown === dropdownKey ? null : dropdownKey)}
-                            className={`flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${isDropdownActive
+                            className={`flex items-center gap-1 px-2.5 py-1.5 xl:px-4 xl:py-2 rounded-full text-xs xl:text-sm font-medium transition-all duration-300 ${isDropdownActive
                               ? 'bg-primary text-primary-foreground'
                               : 'text-foreground/70 hover:text-primary hover:bg-secondary/50'
                               }`}
@@ -416,7 +416,7 @@ export default function Header() {
                         <Link
                           href={link.href}
                           prefetch={false}
-                          className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${isActive(link.href)
+                          className={`px-2.5 py-1.5 xl:px-4 xl:py-2 rounded-full text-xs xl:text-sm font-medium transition-all duration-300 ${isActive(link.href)
                             ? 'bg-primary text-primary-foreground'
                             : 'text-foreground/70 hover:text-primary hover:bg-secondary/50'
                             }`}
@@ -449,7 +449,7 @@ export default function Header() {
               <Button
                 type="button"
                 variant="default"
-                className="hidden lg:flex bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-6 py-2.5 h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap"
+                className="hidden lg:flex bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-3.5 py-2 xl:px-6 xl:py-2.5 text-xs xl:text-sm h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap"
                 onClick={() => setShowEnrollDialog(true)}
               >
                 {tNav("beginJourney")}
