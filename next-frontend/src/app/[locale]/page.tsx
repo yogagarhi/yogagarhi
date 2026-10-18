@@ -17,11 +17,50 @@ export async function generateMetadata({
     messages = (await import(`@/messages/en.json`)).default;
   }
 
+  if (locale === "en") {
+    return {
+      metadataBase: new URL("https://www.yogagarhi.com"),
+      title: {
+        absolute: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi",
+      },
+      description:
+        "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your journey!",
+      keywords:
+        "yoga teacher training Bali, YTTC Ubud, 200 hour yoga certification, yoga alliance certified, yoga retreat Bali, yoga school Indonesia, RYT 200, yoga ashram Bali, meditation training, pranayama course, YogaGarhi",
+      alternates: {
+        canonical: "https://www.yogagarhi.com",
+      },
+      openGraph: {
+        title: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi",
+        description:
+          "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your journey!",
+        url: "/",
+        type: "website",
+        images: [
+          {
+            url: "/opengraph-image",
+            width: 1200,
+            height: 630,
+            alt: "YogaGarhi - Yoga Teacher Training Bali",
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi RYT",
+        description:
+          "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage.",
+        images: ["/opengraph-image"],
+      },
+    };
+  }
+
   const tHero = messages.home?.hero;
   const title = `${tHero?.h1 || "Yoga Alliance Certified Yoga Teacher Training in Bali & Rishikesh"} | YogaGarhi`;
   const description = tHero?.tagline || "Ancient Himalayan wisdom. Authentic yoga, lived & taught.";
 
   return applyQualityGate({
+    metadataBase: new URL("https://www.yogagarhi.com"),
     title: {
       absolute: title,
     },

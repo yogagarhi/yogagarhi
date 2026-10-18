@@ -4574,7 +4574,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   </select>
                 </div>
                 <div className="space-y-1.5">
-                  <label className="block text-sm font-semibold text-foreground">{tDialog("date")} <span className="text-destructive">*</span></label>
+                  <label className="block text-sm font-semibold text-foreground">{locale === 'en' ? 'Date' : tDialog("date")} <span className="text-destructive">*</span></label>
                   <select
                     aria-label="Select Date"
                     value={enrollForm.courseDate}
@@ -4590,7 +4590,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-1.5">
-                  <label className="block text-sm font-semibold text-foreground">{tDialog("room")} <span className="text-destructive">*</span></label>
+                  <label className="block text-sm font-semibold text-foreground">{locale === 'en' ? 'Room' : tDialog("room")} <span className="text-destructive">*</span></label>
                   <select
                     aria-label="Select Room"
                     value={enrollForm.accommodation}
@@ -4625,7 +4625,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   aria-label="Country"
                   value={enrollForm.country}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, country: e.target.value }))}
-                  placeholder={tDialog("country")}
+                  placeholder={locale === 'en' ? "Your country" : tDialog("country")}
                   className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                 />
               </div>
@@ -4665,7 +4665,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 disabled={!isEnrollFormComplete || isSubmittingEnroll}
                 onClick={handleEnrollSubmit}
               >
-                {isSubmittingEnroll ? tCommon("loading") : tDialog("submitApplication")}
+                {isSubmittingEnroll ? (locale === 'en' ? "Submitting..." : tCommon("loading")) : (locale === 'en' ? "Submit Enrollment" : tDialog("submitApplication"))}
               </Button>
               <p className="text-center text-xs text-muted-foreground mt-2">
                 &#128274; {tDialog("securityNote")}
