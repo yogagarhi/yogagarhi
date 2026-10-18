@@ -1978,7 +1978,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 {/* Special Offer Box */}
                 <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                   <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    {tPromo("courseSpecialOfferPrefix")} <span className="text-amber-600 dark:text-amber-400">{tPromo("specialOfferFree")}</span>
+                    {tPromo("courseSpecialOfferPrefix")} <span className="text-amber-600 dark:text-amber-400">{tPromo("courseSpecialOfferHighlight")}</span>
                   </p>
                 </div>
               </div>
@@ -2720,12 +2720,12 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div ref={foodTriggerRef} className="text-center mb-10 cursor-pointer group scroll-mt-24">
                   <div className="inline-flex items-center gap-3 px-6 py-3 bg-background rounded-full border border-border hover:border-primary/40 transition-all duration-300 shadow-sm hover:shadow-card">
                     <h3 className="font-heading text-xl font-bold text-foreground">
-                      A Day of Mindful Eating
+                      {t("mindfulEating")}
                     </h3>
                     <ChevronDown className={`w-6 h-6 text-primary transition-transform duration-300 ${isFoodSectionOpen ? 'rotate-180' : ''}`} />
                   </div>
                   <p className="text-primary/70 text-sm mt-3 group-hover:text-primary transition-colors">
-                    {isFoodSectionOpen ? 'Click to collapse' : 'Click to expand'}
+                    {isFoodSectionOpen ? t('clickToCollapse') : t('clickToExpand')}
                   </p>
                 </div>
               </CollapsibleTrigger>
@@ -2736,7 +2736,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="max-w-6xl mx-auto">
 
                     <div className="grid md:grid-cols-3 gap-8">
-                      {foodMenu.map((meal, index) => {
+                      {(((t.raw("foodMenuList") as any[]) || foodMenu)).map((meal: any, index: number) => {
                         const MealIcon = meal.icon;
                         return (
                           <div
@@ -2768,7 +2768,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                             {/* Meal Items */}
                             <div className="p-6">
                               <ul className="space-y-3">
-                                {meal.items.map((item, itemIndex) => (
+                                {meal.items.map((item: string, itemIndex: number) => (
                                   <li key={itemIndex} className="flex items-start gap-3 text-muted-foreground">
                                     <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                                     <span>{item}</span>
@@ -2788,10 +2788,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   {/* Dietary Options Grid */}
                   <div className="mt-20">
                     <h3 className="font-heading text-2xl font-bold text-center text-foreground mb-4">
-                      We Cater To All Diets
+                      {t("caterDietsTitle")}
                     </h3>
                     <p className="text-center text-muted-foreground mb-10 max-w-xl mx-auto">
-                      Let us know your dietary requirements and we'll take care of everything
+                      {t("caterDietsDesc")}
                     </p>
 
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">

@@ -56,6 +56,12 @@ const postYTTCItems = [
 
 export default function YTTCSupportInteractiveIsland() {
   const t = useTranslations("home.support");
+  const tCommon = useTranslations("common");
+  const preTitles = [t("b1Title"), t("b2Title"), t("b3Title"), t("tabBefore")];
+  const preDescs = [t("b1Desc"), t("b2Desc"), t("b3Desc"), t("subtitle")];
+  const postTitles = [t("a1Title"), t("alumniTitle"), t("a3Title"), t("asstTitle")];
+  const postDescs = [t("a1Desc"), t("alumniDesc"), t("a3Desc"), t("asstDesc")];
+
   const [activeTab, setActiveTab] = useState<'pre' | 'post'>('pre');
   const [showPreYTTCDialog, setShowPreYTTCDialog] = useState(false);
   const [showThankYouDialog, setShowThankYouDialog] = useState(false);
@@ -165,16 +171,17 @@ export default function YTTCSupportInteractiveIsland() {
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white text-sm font-semibold mb-6 shadow-lg">
                       <Star className="w-4 h-4 fill-white" />
-                      World's First Pre-YTTC School
+                      {tCommon("worldsFirst")} {tCommon("preYttcAcademy")}
                     </div>
 
                     <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">
-                      Begin Before You Begin
+                      {t("b1Title")}
                     </h3>
 
                     <p className="text-muted-foreground mb-8 leading-relaxed">
-                      The <span className="inline-flex items-center gap-1 px-3 py-1 bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 rounded-full text-sm font-semibold border border-amber-200 dark:border-amber-700">Optional Complimentary Online</span> Before You Join Preparation. If you feel like you don't know you are ready for course or not,
-                      this preparation is for you to be prepared & feel confident.
+                      <span className="inline-flex items-center gap-1 px-3 py-1 bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 rounded-full text-sm font-semibold border border-amber-200 dark:border-amber-700">{t("optOnline")}</span>
+                      {" "}
+                      {t("b1Desc")}
                     </p>
 
                     {/* Feature List */}
@@ -187,9 +194,9 @@ export default function YTTCSupportInteractiveIsland() {
                           <div className="text-2xl">{item.icon}</div>
                           <div>
                             <h4 className="font-heading font-semibold text-foreground group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
-                              {item.title}
+                              {preTitles[index] || item.title}
                             </h4>
-                            <p className="text-sm text-muted-foreground">{item.desc}</p>
+                            <p className="text-sm text-muted-foreground">{preDescs[index] || item.desc}</p>
                           </div>
                         </div>
                       ))}
@@ -205,22 +212,23 @@ export default function YTTCSupportInteractiveIsland() {
               <div className="lg:pl-8">
                 <div className="inline-flex items-center gap-2 text-amber-900 dark:text-amber-200 mb-4">
                   <CheckCircle2 className="w-5 h-5 text-primary" />
-                  <span className="text-sm font-semibold uppercase tracking-wider">Complimentary & Optional</span>
+                  <span className="text-sm font-semibold uppercase tracking-wider">{t("compOpt")}</span>
                 </div>
 
                 <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-                  Don't Jump Into Transformation — Be Gently Prepared For It
+                  {t("title")}
                 </h3>
 
                 <div className="space-y-4 text-muted-foreground mb-8">
                   <p>
-                    At Yogagarhi, we do something different. We offer a "Before You Join" Online Optional Complimentary
-                    Preparation Program before your main training begins.
+                    {t("desc")}
                   </p>
                   <p>
-                    So when training begins, <span className="text-foreground font-medium">you don't panic</span>.
-                    You arrive <span className="text-foreground font-medium">grounded</span>.
-                    You don't jump into transformation — you are <span className="text-amber-900 dark:text-amber-300 font-bold">gently prepared for it</span>.
+                    <span className="text-foreground font-medium">{t("noPanic")}</span>.
+                    {" "}
+                    <span className="text-foreground font-medium">{t("grounded")}</span>.
+                    {" "}
+                    <span className="text-amber-900 dark:text-amber-300 font-bold">{t("gentlyPrep")}</span>.
                   </p>
                 </div>
 
@@ -234,7 +242,7 @@ export default function YTTCSupportInteractiveIsland() {
 
                   <span className="relative flex items-center gap-2">
                     <GraduationCap className="w-5 h-5" />
-                    Learn More About Before You Join
+                    {t("tabBefore")}
                     <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Button>
@@ -252,10 +260,10 @@ export default function YTTCSupportInteractiveIsland() {
             {/* Top Message */}
             <div className="text-center mb-12">
               <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Your Journey Continues After Graduation
+                {t("title")}
               </h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Because yoga is not a one-time achievement. It is a lifelong refinement.
+                {t("subtitle")}
               </p>
             </div>
 
@@ -277,7 +285,7 @@ export default function YTTCSupportInteractiveIsland() {
                       <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-background shadow-card group-hover:shadow-elevated transition-all duration-300">
                         <Image
                           src={item.image}
-                          alt={item.title}
+                          alt={postTitles[index] || item.title}
                           fill
                           sizes="160px"
                           className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -296,12 +304,12 @@ export default function YTTCSupportInteractiveIsland() {
 
                     {/* Title */}
                     <h4 className="font-heading text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                      {item.title}
+                      {postTitles[index] || item.title}
                     </h4>
 
                     {/* Description */}
                     <p className="text-muted-foreground text-sm leading-relaxed px-2">
-                      {item.description}
+                      {postDescs[index] || item.description}
                     </p>
                   </div>
                 );
@@ -316,8 +324,8 @@ export default function YTTCSupportInteractiveIsland() {
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <RefreshCw className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">Lifetime Free Course Repetation</h4>
-                  <p className="text-xs text-muted-foreground">Repeat same course forever at no extra tuition cost.</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2">{t("a2Title")}</h4>
+                  <p className="text-xs text-muted-foreground">{t("a2Desc")}</p>
                 </div>
 
                 {/* Assistant Teaching Opportunities */}
@@ -326,8 +334,8 @@ export default function YTTCSupportInteractiveIsland() {
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
                     <GraduationCap className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">Assistant Teaching Mentorship</h4>
-                  <p className="text-xs text-muted-foreground">Apply to become an assistant teacher in future batches.</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2">{t("asstTitle")}</h4>
+                  <p className="text-xs text-muted-foreground">{t("asstDesc")}</p>
                 </div>
 
                 {/* Global Alumni Network */}
@@ -335,8 +343,8 @@ export default function YTTCSupportInteractiveIsland() {
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <Users className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">Alumni Family</h4>
-                  <p className="text-xs text-muted-foreground">Stay connected with a global community of practitioners.</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2">{t("alumniTitle")}</h4>
+                  <p className="text-xs text-muted-foreground">{t("alumniDesc")}</p>
                 </div>
               </div>
             </div>
@@ -366,7 +374,7 @@ export default function YTTCSupportInteractiveIsland() {
               ? 'bg-primary/90 text-primary-foreground border-primary/50 shadow-[0_8px_32px_rgba(var(--primary),0.25)] -translate-y-1'
               : 'bg-white/40 dark:bg-white/5 border-white/20 dark:border-white/10 text-foreground shadow-[0_4px_16px_rgba(0,0,0,0.08)] group-hover:bg-white/60 group-hover:shadow-lg group-hover:-translate-y-0.5'
               }`}>
-              <p className="font-heading font-bold text-[10px] md:text-sm leading-tight text-center whitespace-nowrap md:whitespace-normal">Before You Join</p>
+              <p className="font-heading font-bold text-[10px] md:text-sm leading-tight text-center whitespace-nowrap md:whitespace-normal">{t("tabBefore")}</p>
               <p className={`text-[9px] md:text-[10px] mt-0.5 font-bold uppercase tracking-widest ${activeTab === 'pre' ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>Preparation</p>
             </div>
           </div>
@@ -377,7 +385,7 @@ export default function YTTCSupportInteractiveIsland() {
               <Play className="w-5 h-5 md:w-8 md:h-8 ml-1" />
             </div>
             <div className="mt-4 px-2 md:px-6 py-2 md:py-2.5 flex flex-col items-center">
-              <p className="font-heading font-bold text-[10px] md:text-sm text-foreground text-center whitespace-nowrap md:whitespace-normal">YTTC Training</p>
+              <p className="font-heading font-bold text-[10px] md:text-sm text-foreground text-center whitespace-nowrap md:whitespace-normal">{t("tabDuring")}</p>
               <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-muted-foreground">21-24 Days</p>
             </div>
           </div>
@@ -398,7 +406,7 @@ export default function YTTCSupportInteractiveIsland() {
               ? 'bg-primary/90 text-primary-foreground border-primary/50 shadow-[0_8px_32px_rgba(var(--primary),0.25)] -translate-y-1'
               : 'bg-white/40 dark:bg-white/5 border-white/20 dark:border-white/10 text-foreground shadow-[0_4px_16px_rgba(0,0,0,0.08)] group-hover:bg-white/60 group-hover:shadow-lg group-hover:-translate-y-0.5'
               }`}>
-              <p className="font-heading font-bold text-[10px] md:text-sm leading-tight text-center whitespace-nowrap md:whitespace-normal">Life After Graduation</p>
+              <p className="font-heading font-bold text-[10px] md:text-sm leading-tight text-center whitespace-nowrap md:whitespace-normal">{t("tabAfter")}</p>
               <p className={`text-[9px] md:text-[10px] mt-0.5 font-bold uppercase tracking-widest ${activeTab === 'post' ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>Lifelong Support</p>
             </div>
           </div>
@@ -406,7 +414,7 @@ export default function YTTCSupportInteractiveIsland() {
 
         {/* Hint Text */}
         <p className="text-center mt-8 text-sm text-muted-foreground italic">
-          👆 Click on <span className="font-bold text-amber-900 dark:text-amber-300 cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('pre')}>Before You Join</span> or <span className="font-bold text-amber-900 dark:text-amber-300 cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('post')}>Life After Graduation</span> to see what we offer
+          👆 Click on <span className="font-bold text-amber-900 dark:text-amber-300 cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('pre')}>{t("tabBefore")}</span> or <span className="font-bold text-amber-900 dark:text-amber-300 cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('post')}>{t("tabAfter")}</span> to see what we offer
         </p>
       </div>
 

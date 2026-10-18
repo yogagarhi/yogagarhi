@@ -24,7 +24,11 @@
     "contact": "Contact",
     "beginJourney": "Begin Journey",
     "beginYourJourney": "Begin Your Journey",
-    "toggleMenu": "Toggle menu"
+    "toggleMenu": "Toggle menu",
+    "transformWithin": "Transform Within",
+    "tagline": "Transform Within",
+    "teachers": "Our Teachers",
+    "testimonials": "Testimonials"
   },
   "navDropdown": {
     "aboutSchool": "About School",
@@ -363,7 +367,10 @@
       "tabPost": "After Graduation"
     },
     "googleReviews": {
-      "readAll": "Read All Student Stories & Reviews"
+      "readAll": "Read All Student Stories & Reviews",
+      "heading": "What Our Students Say on Google",
+      "sub": "Real experiences from our yoga teacher training graduates",
+      "viewAllGoogle": "View all reviews on Google"
     },
     "studentStories": {
       "badge": "Real Voices",
@@ -371,14 +378,23 @@
       "sub": "Hear authentic stories from our graduates worldwide.",
       "chatWhatsApp": "WhatsApp Us",
       "emailUs": "Email Us",
-      "certifiedBadge": "Yoga Alliance Certified"
+      "certifiedBadge": "Yoga Alliance Certified",
+      "graduates": "Graduates",
+      "countries": "Countries",
+      "rating": "Rating",
+      "wonderingTitle": "Still wondering if this journey is right for you?",
+      "wonderingSub": "Talk to us on WhatsApp or Email — we'll answer honestly"
     },
     "founder": {
       "badge": "Our Lineage",
       "title": "Guided by Authentic Wisdom",
       "name": "Yash",
       "role": "Founder & Lead Teacher, YogaGarhi",
-      "quote": "\"Yoga as union — when yoga is lived, not merely taught, it transforms everything.\""
+      "quote": "\"Yoga as union — when yoga is lived, not merely taught, it transforms everything.\"",
+      "meetTeacher": "Meet The Teacher Behind YogaGarhi",
+      "trainedCount": "2500+ Students Trained",
+      "experienceYears": "18+ Years Practice",
+      "armyTherapy": "Taught Yoga Therapy to Indian Army"
     },
     "dosha": {
       "badge": "Ancient Wisdom, Personalized Practice",
@@ -396,7 +412,11 @@
       "title": "Step Inside YogaGarhi Bali",
       "desc": "Experience the daily rhythm of meditation, dynamic practice, and community connection in our Ubud sanctuary.",
       "shorts": "Shorts",
-      "watchAll": "Watch All Ashram Videos"
+      "watchAll": "Watch All Ashram Videos",
+      "v1Title": "Morning Yoga Flow",
+      "v2Title": "Sound Healing",
+      "v3Title": "Voice from our YogaGarhi Family",
+      "v4Title": "Bali Ashram Life"
     },
     "webinar": {
       "badge": "Free Interactive Session",
@@ -414,7 +434,9 @@
     "gallery": {
       "badge": "Sanctuary Moments",
       "title": "Life at YogaGarhi Ashram",
-      "desc": "Surrounded by lush rice terraces and quiet jungle streams, our campus provides the serene atmosphere necessary for deep introspection."
+      "desc": "Surrounded by lush rice terraces and quiet jungle streams, our campus provides the serene atmosphere necessary for deep introspection.",
+      "practiceMeetsPurpose": "Where practice meets purpose.",
+      "exploreGallery": "Explore Full Gallery"
     },
     "ready": {
       "tag": "Your Journey Awaits",
@@ -983,6 +1005,106 @@
           "Calming herbal infusions"
         ]
       }
-    ]
+    ],
+    "videoStoriesBadge": "Real Student Video Stories",
+    "videoStoriesHeading": "Hear Directly from Our Graduates in Bali",
+    "videoStoriesSub": "Real reflections from practitioners who embarked on this residential journey at YogaGarhi.",
+    "verifiedGraduate": "Verified Graduate",
+    "speakTeacherTitle": "Want to speak with a lead teacher first?",
+    "speakTeacherDesc": "15-minute 1-on-1 video call to discuss your goals, rooms, and dates.",
+    "helpfulGuidesBadge": "Read Before You Fly",
+    "helpfulGuidesTitle": "Helpful Guides & Preparation Articles",
+    "helpfulGuidesDesc": "Explore our in-depth guides to prepare your mind, body, and travel arrangements for your Bali yoga teacher training.",
+    "readArticle": "Read Article",
+    "mindfulEating": "A Day of Mindful Eating",
+    "clickToCollapse": "Click to collapse",
+    "clickToExpand": "Click to expand",
+    "caterDietsTitle": "We Cater To All Diets",
+    "caterDietsDesc": "Let us know your dietary requirements and we'll take care of everything"
+  },
+  "whyChoose": {
+    "heading": "THE YOGAGARHI DIFFERENCE",
+    "stage1": "Stage 01",
+    "stage1Title": "Before & After The Course",
+    "stage2": "Stage 02",
+    "stage2Title": "Inside The Course Experience",
+    "stage3": "Stage 03",
+    "stage3Title": "Post-Graduation Career Support",
+    "preTtcBadge": "Preparation for your YTTC Free Program",
+    "preTtcTitle": "Pre-TTC Mentorship",
+    "preTtcDesc": "Wondering if you are truly ready for a Yoga Teacher Training Course (TTC)? This preparatory program is designed specifically for practitioners who want to test their readiness. While most schools start on day one, we begin weeks earlier — online and completely free — helping you build a solid foundation so you arrive confident, grounded, and stress-free.",
+    "preTtcTag": "Test Your Readiness First",
+    "postTtcBadge": "1-Year Post-TTC Support",
+    "postTtcTitle": "Your Teacher Stays With You For One Year",
+    "postTtcDesc": "Most schools say goodbye on graduation day. We don't. For 12 months after your training, you get monthly live sessions with us — feedback on your real classes if you teach, guidance on your personal practice if you don't — and a teacher you can write to when you're stuck. This isn't a new idea we invented for marketing: students from our founder's past trainings have been practicing with him online for three, four, even five years after their course ended. We simply made into a promise what was already true.",
+    "postTtcShort": "Most schools say goodbye on graduation day. We don't. For 12 months after your training, you get monthly live sessions with us...",
+    "readFullDetails": "Read full details ▾",
+    "postTtcDetail": "Get feedback on your real classes if you teach, guidance on your personal practice if you don't — and a teacher you can write to when you're stuck. Students from our founder's past trainings have been practicing with him online for years after their course ended.",
+    "postTtcTag": "Continuous Guidance Promise",
+    "joinUs": "Join Us",
+    "multiStyleBadge": "Integrated",
+    "multiStyleCategory": "Ayurveda",
+    "multiStyleTitle": "Multi-Style & Ayurveda",
+    "multiStyleDesc": "Vinyasa, Hatha, Ashtanga, and Iyengar taught with a strong foundation in Ayurveda.",
+    "methodBadge": "Signature",
+    "methodCategory": "Methodology",
+    "methodTitle": "Shiv-Shakti Method",
+    "methodDesc": "Our signature approach that converts ancient yogic theory into practical, life-changing wisdom.",
+    "philosophyBadge": "Authentic",
+    "philosophyCategory": "Yogic Wisdom",
+    "philosophyTitle": "Philosophy-Driven",
+    "philosophyDesc": "Highest yogic philosophy through rituals, meditation, and satsang.",
+    "traditionBadge": "Traditional",
+    "traditionCategory": "Authentic Texts",
+    "traditionTitle": "Real Tradition, Taught Clearly",
+    "traditionDesc": "We study the actual texts — Yoga Sutras, Hatha Yoga Pradipika, Bhagavad Gita — and live the practice daily. Clear, structured, modern English. Traditional does not have to mean confusing.",
+    "smallGroupCategory": "Mentorship",
+    "smallGroupCardTitle": "Small Group Work (8–10 Students)",
+    "smallGroupCardDesc": "Every student gets personalized guidance, adjustments, and feedback. You are never lost in the crowd.",
+    "handsOnBadge": "Practical",
+    "handsOnCategory": "Teaching",
+    "handsOnTitle": "Hands-on Adjustments & Sequencing",
+    "handsOnDesc": "Learn safe physical adjustments, intelligent alignment principles, and creative sequencing for diverse student bodies.",
+    "manifestoBadge": "Student Manifesto",
+    "manifestoHeading": "Not planning to teach? You are exactly who this school was made for.",
+    "manifestoQuote": "\"I don't actually want to teach. I just want to go deeper.\"",
+    "manifestoIntro": "More than half the people who write to us say this, almost apologetically. Please don't apologize. In India, yoga was never a career course — it was a pathway to understand oneself. The student always came first.",
+    "manifestoB1Title": "You Are the Tradition:",
+    "manifestoB1Desc": "For thousands of years, people came to a teacher for one reason: self-discovery.",
+    "manifestoB2Title": "Practice-First Classroom:",
+    "manifestoB2Desc": "You will live yoga as it was meant to be lived: sadhana, pranayama, food, and texts.",
+    "manifestoB3Title": "Deepest Learning:",
+    "manifestoB3Desc": "Explaining postures is job-free training to help you understand them in your own body.",
+    "manifestoB4Title": "1-Year Sadhana Support:",
+    "manifestoB4Desc": "Mentorship is for practitioners, not just teachers. We support your daily life sadhana.",
+    "manifestoFooter": "Come as a student. Leave as a deeper one. That is enough.",
+    "manifestoPill": "No Pressure • No Expiry",
+    "seqBookBadge": "Included",
+    "seqBookCategory": "Resources",
+    "seqBookTitle": "35+ Creative Sequencing Book",
+    "seqBookDesc": "A complete practical guide with 35+ ready-to-teach class sequences for Hatha, Vinyasa, and Gentle flows.",
+    "assistantBadge": "Hands-on",
+    "assistantCategory": "Experience",
+    "assistantTitle": "Assistant Teacher Program",
+    "assistantDesc": "Top graduates are invited back to assist senior faculty in subsequent cohorts to gain real classroom teaching experience.",
+    "careerBadge": "Practical",
+    "careerCategory": "Livelihood",
+    "careerTitle": "Career & Studio Setup Mentoring",
+    "careerDesc": "Learn how to launch workshops, build private client rosters, teach internationally, and navigate Yoga Alliance registration.",
+    "repeatCategory": "Continuing Education",
+    "repeatCardTitle": "Tuition-Free Lifetime Re-attendance",
+    "repeatCardDesc": "Return to future YogaGarhi 200-hour batches in Bali anytime to refresh your knowledge without paying tuition fees.",
+    "repeatBadge": "Ongoing Learning",
+    "repeatTitle": "Lifetime Re-attendance",
+    "repeatDesc": "Your learning never stops. Return to future 200-hour batches in Bali tuition-free anytime to refresh your knowledge, assist classes, or deepen your sadhana.",
+    "communityBadge": "Global Network",
+    "communityTitle": "YogaGarhi Global Family",
+    "communityDesc": "Join an authentic, lifelong international community of like-minded teachers, practitioners, and seekers supporting each other worldwide.",
+    "lineageBadge": "Authentic Wisdom",
+    "lineageTitle": "Living Himalayan Lineage",
+    "lineageDesc": "Study authentic, traditional yoga passed down directly through Himalayan masters, combining classical practice with practical, living philosophy.",
+    "smallGroupBadge": "Personal Attention",
+    "smallGroupTitle": "Small Group Size (8–10 Students)",
+    "smallGroupDesc": "We deliberately cap our batch sizes at 8–10 students to guarantee individual attention, precise posture adjustments, and personal mentoring."
   }
 }

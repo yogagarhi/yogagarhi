@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Camera, Play } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 // Import gallery images
 import { getCloudinaryImage } from "@/utils/cloudinary";
@@ -17,17 +18,18 @@ const gallery7 = getCloudinaryImage("gallery-7.png");
 const gallery8 = getCloudinaryImage("gallery-8.png");
 
 const galleryImages = [
-  { src: gallery1, alt: "Waterfall excursion", label: "Nature Immersion" },
-  { src: gallery2, alt: "Meditation session", label: "Inner Peace" },
-  { src: gallery3, alt: "Yoga practice", label: "Daily Practice" },
-  { src: gallery4, alt: "Asana training", label: "Growth Journey" },
-  { src: gallery5, alt: "Community meal", label: "Sacred Sangha" },
-  { src: gallery6, alt: "Warrior pose", label: "Finding Strength" },
-  { src: gallery7, alt: "Group class", label: "Unity in Practice" },
-  { src: gallery8, alt: "Anatomy workshop", label: "Wisdom Sharing" },
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
+  gallery5,
+  gallery6,
+  gallery7,
+  gallery8,
 ];
 
 const HomeGallerySection = () => {
+  const t = useTranslations("home.gallery");
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -44,10 +46,10 @@ const HomeGallerySection = () => {
             <span className="w-8 h-px bg-primary/40" />
           </div>
           <span className="text-amber-800 dark:text-amber-300 font-bold text-sm tracking-widest uppercase mb-3 block">
-            Moments & Memories
+            {t("badge")}
           </span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-            Life at Yogagarhi
+            {t("title")}
           </h2>
         </div>
 
@@ -57,8 +59,8 @@ const HomeGallerySection = () => {
           <div className="relative group">
             <div className="aspect-[4/3] lg:aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative">
               <Image
-                src={galleryImages[activeIndex].src}
-                alt={galleryImages[activeIndex].alt}
+                src={galleryImages[activeIndex]}
+                alt={t("title")}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -72,10 +74,10 @@ const HomeGallerySection = () => {
                   {String(activeIndex + 1).padStart(2, '0')} / {String(galleryImages.length).padStart(2, '0')}
                 </span>
                 <h3 className="font-heading text-2xl md:text-3xl text-white font-semibold">
-                  {galleryImages[activeIndex].label}
+                  {t("badge")}
                 </h3>
                 <p className="text-white/70 mt-2 text-sm md:text-base">
-                  {galleryImages[activeIndex].alt}
+                  {t("practiceMeetsPurpose")}
                 </p>
               </div>
             </div>
@@ -88,11 +90,11 @@ const HomeGallerySection = () => {
           {/* Right - Thumbnail Grid */}
           <div className="flex flex-col">
             <div className="grid grid-cols-4 lg:grid-cols-4 gap-2 md:gap-3">
-              {galleryImages.map((image, index) => (
+              {galleryImages.map((src, index) => (
                 <button
                   key={index}
                   type="button"
-                  aria-label={`View gallery image ${index + 1}: ${image.label}`}
+                  aria-label={`${index + 1}`}
                   onClick={() => setActiveIndex(index)}
                   className={`
                     ${index >= 4 ? 'hidden md:block ' : ''}relative aspect-square rounded-lg md:rounded-xl overflow-hidden transition-all duration-300
@@ -103,8 +105,8 @@ const HomeGallerySection = () => {
                   `}
                 >
                   <Image
-                    src={image.src}
-                    alt={image.alt}
+                    src={src}
+                    alt={t("title")}
                     fill
                     sizes="(max-width: 768px) 25vw, 15vw"
                     className="object-cover"
@@ -130,17 +132,17 @@ const HomeGallerySection = () => {
             {/* Description below thumbnails */}
             <div className="mt-6 md:mt-8 p-6 bg-background rounded-xl border border-primary/10">
               <p className="font-heading text-xl md:text-2xl text-foreground mb-2">
-                Where practice meets purpose.
+                {t("practiceMeetsPurpose")}
               </p>
               <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-5">
-                Glimpses of transformation, community, and the yogic journey at our Bali ashram.
+                {t("desc")}
               </p>
 
               <Link
                 href="/gallery"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full font-medium text-sm group hover:bg-primary/90 transition-all"
               >
-                Explore Full Gallery
+                {t("exploreGallery")}
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>

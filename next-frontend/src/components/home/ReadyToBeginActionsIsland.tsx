@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Phone, BookOpen, Sparkles, Video, Calendar, GraduationCap, Check } from "lucide-react";
@@ -9,6 +10,13 @@ import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useBooking } from "@/components/BookingDialog";
 
 export default function ReadyToBeginActionsIsland() {
+  const tReady = useTranslations("home.ready");
+  const tNav = useTranslations("nav");
+  const tCommon = useTranslations("common");
+  const tDosha = useTranslations("home.dosha");
+  const tWebinar = useTranslations("home.webinar");
+  const tSupport = useTranslations("home.support");
+
   const { setShowEnrollDialog } = useEnrollment();
   const { setShowBookingDialog } = useBooking();
   const router = useRouter();
@@ -157,7 +165,7 @@ YogaGarhi Team`,
           className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
           onClick={() => setShowEnrollDialog(true)}
         >
-          Start Your Journey
+          {tReady("applyNow") || tNav("beginYourJourney")}
         </Button>
         <Button
           type="button"
@@ -166,7 +174,7 @@ YogaGarhi Team`,
           onClick={() => setShowManualDialog(true)}
         >
           <BookOpen className="w-4 h-4 mr-2" />
-          Get Free Manual
+          {tCommon("exploreCourse")}
         </Button>
         <Button
           type="button"
@@ -175,7 +183,7 @@ YogaGarhi Team`,
           onClick={() => scrollToQuiz()}
         >
           <Sparkles className="w-4 h-4 mr-2" />
-          Reveal Your Unique Yogic Energy
+          {tDosha("quizBtn")}
         </Button>
         <Button
           type="button"
@@ -184,7 +192,7 @@ YogaGarhi Team`,
           onClick={() => setShowWebinarDialog(true)}
         >
           <Video className="w-4 h-4 mr-2" />
-          Free Webinar
+          {tWebinar("badge")}
         </Button>
         <Button
           type="button"
@@ -193,7 +201,7 @@ YogaGarhi Team`,
           onClick={() => setShowBookingDialog(true)}
         >
           <Phone className="w-4 h-4 mr-2" />
-          Book a Call
+          {tReady("btnBook") || tCommon("bookCall")}
         </Button>
         <Button
           type="button"
@@ -202,7 +210,7 @@ YogaGarhi Team`,
           onClick={() => setShowPreYTTCDialog(true)}
         >
           <GraduationCap className="w-4 h-4 mr-2" />
-          Get "Before You Join" Detail
+          {tSupport("tabPre")}
         </Button>
         <Button
           size="lg"

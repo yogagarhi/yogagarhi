@@ -95,7 +95,7 @@ export default async function Page({
         course200: messages.course200,
         common: messages.common,
         dialogs: messages.dialogs,
-        whyChoose: messages.whyChoose,
+        whyChoose: messages.home?.whyChoose || messages.whyChoose,
         promo: messages.promo,
         stickyContact: messages.stickyContact,
         switcher: messages.switcher,

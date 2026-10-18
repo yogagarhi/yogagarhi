@@ -25,7 +25,10 @@
     "beginJourney": "Mulai Perjalanan",
     "beginYourJourney": "Mulai Perjalanan Anda",
     "toggleMenu": "Buka menu",
-    "tagline": "Transformasi dari Dalam"
+    "tagline": "Transformasi dari Dalam",
+    "transformWithin": "Transformasi dari Dalam",
+    "teachers": "Guru Kami",
+    "testimonials": "Testimoni"
   },
   "navDropdown": {
     "aboutSchool": "Tentang Sekolah",
@@ -364,7 +367,10 @@
       "alumniDesc": "Tetap terhubung dengan komunitas praktisi global yang suportif."
     },
     "googleReviews": {
-      "readAll": "Baca Semua Cerita & Ulasan Siswa"
+      "readAll": "Baca Semua Cerita & Ulasan Siswa",
+      "heading": "Apa Kata Siswa Kami di Google",
+      "sub": "Pengalaman nyata dari lulusan pelatihan guru yoga kami",
+      "viewAllGoogle": "Lihat semua ulasan di Google"
     },
     "studentStories": {
       "badge": "Kisah Nyata",
@@ -372,14 +378,23 @@
       "sub": "Dengarkan cerita jujur dari para lulusan kami di seluruh dunia.",
       "chatWhatsApp": "WhatsApp Kami",
       "emailUs": "Kirim Email",
-      "certifiedBadge": "Bersertifikat Yoga Alliance"
+      "certifiedBadge": "Bersertifikat Yoga Alliance",
+      "graduates": "Lulusan",
+      "countries": "Negara",
+      "rating": "Penilaian",
+      "wonderingTitle": "Masih ragu apakah perjalanan ini tepat untuk Anda?",
+      "wonderingSub": "Hubungi kami via WhatsApp atau Email — kami akan menjawab dengan jujur"
     },
     "founder": {
       "badge": "Silsilah Kami",
       "title": "Dibimbing oleh Kebijaksanaan Sejati",
       "name": "Yash",
       "role": "Pendiri & Guru Utama, YogaGarhi",
-      "quote": "«Yoga sebagai penyatuan: ketika yoga dihayati dan bukan sekadar diajarkan, ia mentransformasi segalanya.»"
+      "quote": "«Yoga sebagai penyatuan: ketika yoga dihayati dan bukan sekadar diajarkan, ia mentransformasi segalanya.»",
+      "meetTeacher": "Kenali Guru di Balik YogaGarhi",
+      "trainedCount": "2500+ Siswa Terlatih",
+      "experienceYears": "18+ Tahun Praktik",
+      "armyTherapy": "Mengajar Terapi Yoga untuk Militer India"
     },
     "dosha": {
       "badge": "Sadhana Pribadi",
@@ -397,7 +412,11 @@
       "title": "Melihat Lebih Dekat YogaGarhi Bali",
       "desc": "Rasakan ritme harian meditasi, latihan dinamis, dan kehangatan kebersamaan di ashram kami di Ubud.",
       "shorts": "Video Singkat",
-      "watchAll": "Tonton Semua Video Ashram"
+      "watchAll": "Tonton Semua Video Ashram",
+      "v1Title": "Aliran Yoga Pagi",
+      "v2Title": "Terapi Mangkuk Suara",
+      "v3Title": "Suara Keluarga YogaGarhi",
+      "v4Title": "Kehidupan Ashram di Bali"
     },
     "webinar": {
       "badge": "Sesi Interaktif Gratis",
@@ -415,7 +434,9 @@
     "gallery": {
       "badge": "Momen Ashram",
       "title": "Kehidupan di Ashram YogaGarhi",
-      "desc": "Dikelilingi persawahan hijau dan aliran sungai tropis yang tenang, kampus kami memberikan suasana damai yang sangat mendukung introspeksi diri."
+      "desc": "Dikelilingi persawahan hijau dan aliran sungai tropis yang tenang, kampus kami memberikan suasana damai yang sangat mendukung introspeksi diri.",
+      "practiceMeetsPurpose": "Di mana latihan bertemu dengan tujuan sejati.",
+      "exploreGallery": "Jelajahi Galeri Lengkap"
     },
     "ready": {
       "tag": "Mulai Perjalanan Anda",
@@ -984,6 +1005,106 @@
           "Seduhan herbal menenangkan"
         ]
       }
-    ]
+    ],
+    "videoStoriesBadge": "Kisah Video Siswa Nyata",
+    "videoStoriesHeading": "Dengarkan Langsung dari Lulusan Kami di Bali",
+    "videoStoriesSub": "Refleksi nyata dari para praktisi yang menjalani perjalanan residensial di YogaGarhi.",
+    "verifiedGraduate": "Lulusan Terverifikasi",
+    "speakTeacherTitle": "Ingin berkonsultasi dengan guru utama terlebih dahulu?",
+    "speakTeacherDesc": "Panggilan video privat 15 menit untuk membahas tujuan, kamar, dan tanggal Anda.",
+    "helpfulGuidesBadge": "Baca Sebelum Berangkat",
+    "helpfulGuidesTitle": "Panduan Bermanfaat & Artikel Persiapan",
+    "helpfulGuidesDesc": "Pelajari panduan mendalam kami untuk mempersiapkan fisik, mental, dan perjalanan pelatihan Anda di Bali.",
+    "readArticle": "Baca Artikel",
+    "mindfulEating": "Sehari Pola Makan Berkesadaran",
+    "clickToCollapse": "Klik untuk menutup",
+    "clickToExpand": "Klik untuk membuka",
+    "caterDietsTitle": "Kami Melayani Semua Pola Makan",
+    "caterDietsDesc": "Beri tahu kami preferensi makanan Anda, dan kami akan menyiapkan segalanya"
+  },
+  "whyChoose": {
+    "heading": "KEISTIMEWAAN YOGAGARHI",
+    "stage1": "Tahap 01",
+    "stage1Title": "Sebelum & Sesudah Kursus",
+    "stage2": "Tahap 02",
+    "stage2Title": "Pengalaman di Dalam Kursus",
+    "stage3": "Tahap 03",
+    "stage3Title": "Dukungan Karier Pasca Kelulusan",
+    "preTtcBadge": "Program Gratis Persiapan Menuju YTTC Anda",
+    "preTtcTitle": "Mentoring Pra-TTC",
+    "preTtcDesc": "Masih ragu apakah Anda benar-benar siap untuk Pelatihan Guru Yoga (TTC)? Program persiapan ini dirancang khusus bagi praktisi yang ingin menguji kesiapan mereka. Ketika kebanyakan sekolah baru memulai di hari pertama, kami mulai berminggu-minggu lebih awal — online dan sepenuhnya gratis — membantu Anda membangun fondasi yang kokoh sehingga Anda tiba dengan tenang, terarah, dan tanpa rasa cemas.",
+    "preTtcTag": "Uji Kesiapan Anda Terlebih Dahulu",
+    "postTtcBadge": "Dukungan Pasca-TTC Selama 1 Tahun",
+    "postTtcTitle": "Guru Anda Mendampingi Anda Selama Satu Tahun Penuh",
+    "postTtcDesc": "Kebanyakan sekolah berpamitan pada hari kelulusan. Kami tidak. Selama 12 bulan setelah pelatihan, Anda mendapatkan sesi live bulanan bersama kami — umpan balik untuk kelas nyata Anda jika Anda mengajar, bimbingan untuk latihan pribadi jika Anda tidak mengajar — serta guru yang siap menjawab pesan Anda saat menghadapi kendala. Ini bukan trik pemasaran: murid-murid dari pelatihan masa lalu pendiri kami masih berlatih online bersamanya selama 3, 4, bahkan 5 tahun setelah kursus usai. Kami hanya meresmikan apa yang sudah menjadi kenyataan.",
+    "postTtcShort": "Kebanyakan sekolah berpamitan pada hari kelulusan. Kami tidak. Selama 12 bulan Anda mendapatkan sesi live bulanan...",
+    "readFullDetails": "Baca rincian lengkap ▾",
+    "postTtcDetail": "Dapatkan evaluasi untuk kelas mengajar pertama Anda, bimbingan sadhana harian, dan akses langsung ke mentor Anda sepanjang tahun.",
+    "postTtcTag": "Janji Bimbingan Berkelanjutan",
+    "joinUs": "Bergabunglah",
+    "multiStyleBadge": "Terpadu",
+    "multiStyleCategory": "Ayurveda",
+    "multiStyleTitle": "Multi-Style & Ayurveda",
+    "multiStyleDesc": "Vinyasa, Hatha, Ashtanga, dan Iyengar diajarkan dengan fondasi Ayurveda yang mendalam.",
+    "methodBadge": "Khas",
+    "methodCategory": "Metodologi",
+    "methodTitle": "Metode Shiv-Shakti",
+    "methodDesc": "Pendekatan khas kami yang menerjemahkan teori yoga kuno menjadi kebijaksanaan hidup yang nyata.",
+    "philosophyBadge": "Otentik",
+    "philosophyCategory": "Kebijaksanaan Yoga",
+    "philosophyTitle": "Berlandaskan Filosofi",
+    "philosophyDesc": "Filosofi yoga tertinggi dihayati melalui ritual, meditasi, dan satsang.",
+    "traditionBadge": "Tradisional",
+    "traditionCategory": "Teks Otentik",
+    "traditionTitle": "Tradisi Nyata, Diajarkan dengan Jelas",
+    "traditionDesc": "Kami mempelajari teks-teks klasik asli — Yoga Sutras, Hatha Yoga Pradipika, Bhagavad Gita — dan mempraktikkannya setiap hari. Dalam bahasa Inggris yang terstruktur, jelas, dan modern. Tradisional tidak harus membingungkan.",
+    "smallGroupCategory": "Mentoring",
+    "smallGroupCardTitle": "Grup Kelas Kecil (8–10 Siswa)",
+    "smallGroupCardDesc": "Setiap siswa mendapatkan perhatian, penyesuaian postur, dan masukan pribadi. Anda tidak akan pernah merasa diabaikan.",
+    "handsOnBadge": "Praktis",
+    "handsOnCategory": "Pengajaran",
+    "handsOnTitle": "Penyesuaian Fisik & Sekuensing",
+    "handsOnDesc": "Pelajari penyesuaian fisik yang aman, prinsip penjajaran cerdas, dan penyusunan sekuens kreatif untuk berbagai bentuk tubuh.",
+    "manifestoBadge": "Manifesto Siswa",
+    "manifestoHeading": "Tidak berencana untuk mengajar? Sekolah ini justru diciptakan khusus untuk Anda.",
+    "manifestoQuote": "«Saya sebenarnya tidak berniat mengajar. Saya hanya ingin mendalami latihan saya.»",
+    "manifestoIntro": "Lebih dari separuh orang yang menulis kepada kami mengatakan hal ini, hampir seperti meminta maaf. Tolong jangan meminta maaf. Di India, yoga tidak pernah menjadi kursus kejuruan semata — yoga adalah jalan untuk memahami diri sendiri. Siswa selalu menjadi yang utama.",
+    "manifestoB1Title": "Anda Adalah Tradisi Itu:",
+    "manifestoB1Desc": "Selama ribuan tahun, orang-orang datang menemui guru karena satu alasan: penemuan jati diri.",
+    "manifestoB2Title": "Praktik Sebagai Prioritas Utama:",
+    "manifestoB2Desc": "Anda akan menghayati yoga sebagaimana mestinya: sadhana, pranayama, makanan murni, dan naskah suci.",
+    "manifestoB3Title": "Pemahaman Terdalam:",
+    "manifestoB3Desc": "Mampu menjelaskan postur adalah cara terbaik untuk memahaminya secara menyeluruh di tubuh Anda sendiri.",
+    "manifestoB4Title": "1 Tahun Dukungan Sadhana:",
+    "manifestoB4Desc": "Mentoring diperuntukkan bagi semua praktisi, bukan hanya guru. Kami mendukung sadhana harian Anda.",
+    "manifestoFooter": "Datanglah sebagai pembelajar. Pulanglah dengan pemahaman yang lebih dalam. Itu sudah lebih dari cukup.",
+    "manifestoPill": "Tanpa Tekanan • Tanpa Kadaluarsa",
+    "seqBookBadge": "Termasuk",
+    "seqBookCategory": "Sumber Daya",
+    "seqBookTitle": "Buku 35+ Sekuens Kreatif",
+    "seqBookDesc": "Panduan praktis lengkap berisi 35+ rancangan kelas siap pakai untuk Hatha, Vinyasa, dan aliran lembut.",
+    "assistantBadge": "Pengalaman Nyata",
+    "assistantCategory": "Pengalaman",
+    "assistantTitle": "Program Guru Asisten",
+    "assistantDesc": "Lulusan terbaik diundang untuk mendampingi pengajar senior pada angkatan berikutnya guna memperoleh pengalaman mengajar di kelas nyata.",
+    "careerBadge": "Praktis",
+    "careerCategory": "Profesi",
+    "careerTitle": "Mentoring Karier & Pendirian Studio",
+    "careerDesc": "Pelajari cara mengadakan workshop, membangun basis murid privat, mengajar di kancah internasional, dan menyelesaikan pendaftaran Yoga Alliance.",
+    "repeatCategory": "Pendidikan Berkelanjutan",
+    "repeatCardTitle": "Mengulang Kursus Seumur Hidup Tanpa Biaya",
+    "repeatCardDesc": "Kembalilah ke angkatan 200 jam YogaGarhi berikutnya di Bali kapan saja untuk menyegarkan pengetahuan Anda tanpa membayar biaya kursus.",
+    "repeatBadge": "Mengulang Seumur Hidup",
+    "repeatTitle": "Mengulang Kursus Gratis",
+    "repeatDesc": "Lulusan dapat mengulang kursus di masa depan secara gratis untuk menyegarkan ilmu.",
+    "communityBadge": "Komunitas",
+    "communityTitle": "Jaringan Internasional",
+    "communityDesc": "Terhubung dengan keluarga besar alumni yang suportif di seluruh dunia.",
+    "lineageBadge": "Silsilah Himalaya",
+    "lineageTitle": "Kebijaksanaan Hidup",
+    "lineageDesc": "Belajar langsung dari guru yang membawa transmisi silsilah otentik.",
+    "smallGroupBadge": "8–10 Siswa",
+    "smallGroupTitle": "Kelompok Kecil",
+    "smallGroupDesc": "Menjamin perhatian penuh dan bimbingan mendalam untuk setiap siswa."
   }
 }

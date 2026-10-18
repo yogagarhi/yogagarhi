@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { googleReviews } from "@/constants/googleReviews";
 import { GoogleReviewCard } from "./GoogleReviewCard";
+import { useTranslations } from "next-intl";
 
 export default function GoogleReviewsSection() {
+  const t = useTranslations("home.googleReviews");
   return (
     <section
       className="py-16 md:py-20 bg-gradient-to-b from-background via-secondary/5 to-background relative overflow-hidden"
@@ -28,10 +30,10 @@ export default function GoogleReviewsSection() {
           </div>
 
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">
-            What Our Students Say on Google
+            {t("heading")}
           </h2>
           <p className="text-muted-foreground text-base max-w-xl mx-auto">
-            Real experiences from our yoga teacher training graduates
+            {t("sub")}
           </p>
         </div>
 
@@ -48,7 +50,7 @@ export default function GoogleReviewsSection() {
             href="/testimonials"
             className="inline-flex items-center gap-2 bg-card border-2 border-primary/40 text-primary px-6 py-2.5 rounded-full text-xs font-bold shadow-sm hover:bg-primary/5 transition-colors"
           >
-            <span>Read All Student Stories & Reviews</span>
+            <span>{t("readAll")}</span>
             <span>→</span>
           </Link>
         </div>
@@ -65,7 +67,7 @@ export default function GoogleReviewsSection() {
               <use href="#icon-google" />
             </svg>
             <span className="font-semibold text-gray-700 group-hover:text-blue-600 transition-colors">
-              View all reviews on Google
+              {t("viewAllGoogle")}
             </span>
             <span className="text-blue-500 group-hover:translate-x-1 transition-transform text-lg">→</span>
           </a>

@@ -3,16 +3,9 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Award, Heart, Users } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import { useTranslations } from "next-intl";
 
 const founderImage = getCloudinaryImage("founder-image.png");
-
-const achievements = [
-  { icon: Users, label: "2500+ Students Trained" },
-  { icon: Award, label: "E-RYT 500" },
-  { icon: Award, label: "Master in Yoga" },
-  { icon: Heart, label: "18+ Years Practice" },
-  { icon: Award, label: "Taught Yoga Therapy to Indian Army" },
-];
 
 interface FounderSectionProps {
   researchLink?: string;
@@ -21,6 +14,16 @@ interface FounderSectionProps {
 export default function FounderSection({
   researchLink = "/200-hour-yoga-teacher-training-in-bali#sachinji-research"
 }: FounderSectionProps) {
+  const t = useTranslations("home.founder");
+  const tCommon = useTranslations("common");
+
+  const achievements = [
+    { icon: Users, label: t("trainedCount") },
+    { icon: Award, label: "E-RYT 500" },
+    { icon: Award, label: "Master in Yoga" },
+    { icon: Heart, label: t("experienceYears") },
+    { icon: Award, label: t("armyTherapy") },
+  ];
 
   return (
     <section
@@ -37,13 +40,13 @@ export default function FounderSection({
           <div className="mb-8 md:mb-10 text-center lg:text-left">
             <span className="inline-flex items-center gap-2 text-amber-800 dark:text-amber-300 text-sm font-bold tracking-widest uppercase mb-4">
               <Heart className="w-4 h-4" fill="currentColor" />
-              Meet The Teacher Behind YogaGarhi
+              {t("meetTeacher")}
             </span>
 
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-2">
               Yogacharya Sachin
             </h2>
-            <p className="text-primary font-medium text-lg">Founder & Lead Teacher, YogaGarhi</p>
+            <p className="text-primary font-medium text-lg">{t("role")}</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center">

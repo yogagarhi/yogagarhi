@@ -25,7 +25,10 @@
     "beginJourney": "여정 시작하기",
     "beginYourJourney": "여정 시작하기",
     "toggleMenu": "메뉴 열기",
-    "tagline": "내면의 변화"
+    "tagline": "내면의 변화",
+    "transformWithin": "내면의 변화",
+    "teachers": "강사진 소개",
+    "testimonials": "수강 후기"
   },
   "navDropdown": {
     "aboutSchool": "학교 소개",
@@ -108,7 +111,7 @@
     "privacyPolicy": "개인정보 처리방침",
     "termsConditions": "이용약관",
     "refundPolicy": "환불 및 취소 규정",
-    "copyright": "All rights reserved.",
+    "copyright": "모든 권리 보유.",
     "authenticBali": "발리에서 만나는 정통 요가",
     "sutra": "요가란 마음의 동요를 가라앉히는 것이다",
     "transformingLives": "요가를 통해 삶의 진정한 변화를 이끕니다"
@@ -364,7 +367,10 @@
       "alumniDesc": "전 세계의 진지한 수련자들과 평생 이어지는 인연을 맺어보세요."
     },
     "googleReviews": {
-      "readAll": "모든 수강생 후기 및 리뷰 보기"
+      "readAll": "모든 수강생 후기 및 리뷰 보기",
+      "heading": "Google 수강생 리뷰",
+      "sub": "요가 지도자 과정 수료생들의 솔직한 후기",
+      "viewAllGoogle": "Google에서 모든 리뷰 보기"
     },
     "studentStories": {
       "badge": "생생한 후기",
@@ -372,14 +378,23 @@
       "sub": "전 세계에서 참여한 졸업생들의 솔직하고 따뜻한 후기를 들어보세요.",
       "chatWhatsApp": "WhatsApp으로 문의하기",
       "emailUs": "이메일로 문의하기",
-      "certifiedBadge": "Yoga Alliance 공인"
+      "certifiedBadge": "Yoga Alliance 공인",
+      "graduates": "수료생",
+      "countries": "참가국",
+      "rating": "평점",
+      "wonderingTitle": "이 과정이 자신에게 맞는지 고민되시나요?",
+      "wonderingSub": "WhatsApp이나 이메일로 편하게 문의하세요 — 솔직하게 상담해 드립니다"
     },
     "founder": {
       "badge": "아쉬람 계보",
       "title": "정통의 지혜를 전하는 스승",
       "name": "Yash",
       "role": "YogaGarhi 설립자 겸 대표 강사",
-      "quote": "\"요가는 조화입니다. 요가를 단순히 지식으로 가르치는 것이 아니라 온 삶으로 살아낼 때, 모든 것이 아름답게 변화하기 시작합니다.\""
+      "quote": "\"요가는 조화입니다. 요가를 단순히 지식으로 가르치는 것이 아니라 온 삶으로 살아낼 때, 모든 것이 아름답게 변화하기 시작합니다.\"",
+      "meetTeacher": "YogaGarhi의 수석 지도자",
+      "trainedCount": "2,500명 이상의 수료생 배출",
+      "experienceYears": "18년 이상의 수련 경험",
+      "armyTherapy": "인도 육군에 요가 테라피 지도"
     },
     "dosha": {
       "badge": "맞춤형 수련",
@@ -397,7 +412,11 @@
       "title": "YogaGarhi 발리의 하루를 엿보세요",
       "desc": "우붓의 푸르른 자연 속에서 명상, 역동적인 수련, 도반들과의 따뜻한 대화로 채워지는 일상을 만나보세요.",
       "shorts": "쇼츠 영상",
-      "watchAll": "모든 아쉬람 영상 시청하기"
+      "watchAll": "모든 아쉬람 영상 시청하기",
+      "v1Title": "모닝 요가 플로우",
+      "v2Title": "사운드 힐링 세션",
+      "v3Title": "요가가르히 가족들의 목소리",
+      "v4Title": "발리 아쉬람의 일상"
     },
     "webinar": {
       "badge": "무료 온라인 세미나",
@@ -415,7 +434,9 @@
     "gallery": {
       "badge": "아쉬람 풍경",
       "title": "YogaGarhi 아쉬람에서의 하루하루",
-      "desc": "푸르른 논과 맑은 시냇물이 흐르는 자연 속 캠퍼스는 깊은 내면 탐구에 가장 이상적인 평온함을 선사합니다."
+      "desc": "푸르른 논과 맑은 시냇물이 흐르는 자연 속 캠퍼스는 깊은 내면 탐구에 가장 이상적인 평온함을 선사합니다.",
+      "practiceMeetsPurpose": "수련이 진정한 목적과 만나는 곳.",
+      "exploreGallery": "갤러리 전체 보기"
     },
     "ready": {
       "tag": "여정 시작하기",
@@ -984,6 +1005,106 @@
           "숙면을 돕는 이완 허브티"
         ]
       }
-    ]
+    ],
+    "videoStoriesBadge": "수료생들의 생생한 영상 후기",
+    "videoStoriesHeading": "발리 과정 수료생들의 생생한 인터뷰",
+    "videoStoriesSub": "YogaGarhi 발리 기숙형 과정을 직접 경험한 수련생들의 진솔한 이야기.",
+    "verifiedGraduate": "인증된 수료생",
+    "speakTeacherTitle": "등록 전 수석 지도 강사와 먼저 이야기 나누고 싶으신가요?",
+    "speakTeacherDesc": "15분 1:1 화상 상담을 통해 목표, 숙소, 일정에 대해 자세히 알아보세요.",
+    "helpfulGuidesBadge": "출국 전 필독 안내",
+    "helpfulGuidesTitle": "유용한 가이드 및 준비 팁",
+    "helpfulGuidesDesc": "발리 요가 지도자 과정을 위한 몸과 마음가짐, 여행 준비 가이드를 확인해보세요.",
+    "readArticle": "기사 읽기",
+    "mindfulEating": "마음챙김 식단의 하루",
+    "clickToCollapse": "클릭하여 접기",
+    "clickToExpand": "클릭하여 펼치기",
+    "caterDietsTitle": "모든 식이 요구 맞춤 제공",
+    "caterDietsDesc": "원하시는 식단 요구사항을 알려주시면 정성껏 준비해 드립니다"
+  },
+  "whyChoose": {
+    "heading": "YOGAGARHI를 선택해야 하는 이유",
+    "stage1": "1단계",
+    "stage1Title": "코스 시작 전과 종료 후의 전방위 지원",
+    "stage2": "2단계",
+    "stage2Title": "코스 기간 동안의 풍부한 교육 경험",
+    "stage3": "3단계",
+    "stage3Title": "수료 후 평생 지속되는 커리어 지원",
+    "preTtcBadge": "무료 사전 준비 프로그램",
+    "preTtcTitle": "Pre-TTC 멘토링",
+    "preTtcDesc": "요가 지도자 과정(TTC)을 수강할 준비가 되었는지 걱정되시나요? 이 프로그램은 코스에 참여하기 전 자신의 몸과 마음을 점검하고 싶은 분들을 위해 설계되었습니다. 대부분의 학교는 첫날부터 시작하지만, 저희는 수주 전부터 완전 무료 온라인 세션으로 기초를 함께 다져드립니다. 덕분에 발리에 도착했을 때 당황하지 않고 편안하게 수련에 임할 수 있습니다.",
+    "preTtcTag": "수강 전 준비도 무료 점검",
+    "postTtcBadge": "수료 후 1년 전담 케어",
+    "postTtcTitle": "수료 후 1년 동안 담당 강사가 함께합니다",
+    "postTtcDesc": "대부분의 학교는 졸업식 날로 모든 관계가 끝납니다. 하지만 저희는 다릅니다. 수료 후 12개월 동안 매달 라이브 온라인 세션을 통해 여러분과 만납니다. 티칭을 시작하신 분께는 실제 수업 시퀀스에 대한 피드백을, 개인 수련에 집중하시는 분께는 sadhana 가이드를 제공합니다. 이는 단순한 마케팅이 아닙니다. 설립 강사의 수강생들은 수료 후 3년, 4년, 5년이 지난 지금도 온라인에서 함께 수련하고 있습니다. 저희는 원래 하던 따뜻한 인연을 약속으로 문서화했을 뿐입니다.",
+    "postTtcShort": "수료식으로 끝나지 않습니다. 12개월간 매달 라이브 세션을 제공합니다...",
+    "readFullDetails": "전체 내용 보기 ▾",
+    "postTtcDetail": "수업을 개설할 때 시퀀스 피드백을 받거나, 매일의 개인 수련(sadhana)에 관해 1년 동안 언제든 담당 강사에게 직접 질문하실 수 있습니다.",
+    "postTtcTag": "장기 동행의 약속",
+    "joinUs": "함께하기",
+    "multiStyleBadge": "통합적 접근",
+    "multiStyleCategory": "아유르베다",
+    "multiStyleTitle": "멀티스타일 & 아유르베다",
+    "multiStyleDesc": "Vinyasa, Hatha, Ashtanga, Iyengar를 아유르베다 지혜와 결합하여 지도합니다.",
+    "methodBadge": "독창적 방법론",
+    "methodCategory": "지도법",
+    "methodTitle": "Shiv-Shakti 교수법",
+    "methodDesc": "고대 요가 이론을 일상에서 실천 가능한 살아있는 지혜로 승화시키는 독창적인 지도법입니다.",
+    "philosophyBadge": "정통 철학",
+    "philosophyCategory": "요가의 지혜",
+    "philosophyTitle": "철학 중심의 심도 있는 접근",
+    "philosophyDesc": "의식, 명상, 사트상을 통해 체화하는 깊이 있는 정통 요가 철학 교육.",
+    "traditionBadge": "살아있는 전통",
+    "traditionCategory": "고전 원전",
+    "traditionTitle": "고전 원전을 명쾌하고 이해하기 쉽게",
+    "traditionDesc": "Yoga Sutras, Hatha Yoga Pradipika, Bhagavad Gita를 원문으로 배우고 삶에서 실천합니다. 현대적이고 논리적인 언어로 설명하므로 난해하지 않고 자연스럽게 마음에 와닿습니다.",
+    "smallGroupCategory": "멘토링",
+    "smallGroupCardTitle": "소수 정예 그룹 지도 (8~10명)",
+    "smallGroupCardDesc": "1:1 맞춤형 자세 교정, 개별 피드백 및 세심한 정렬 코칭을 보장합니다.",
+    "handsOnBadge": "실전 지도력",
+    "handsOnCategory": "티칭 실습",
+    "handsOnTitle": "핸즈온 어시스트 & 시퀀싱",
+    "handsOnDesc": "부상 없는 안전한 핸즈온 기술, 해부학적 원리, 체형별 맞춤 시퀀스 구성법을 습득합니다.",
+    "manifestoBadge": "수강생 선언문",
+    "manifestoHeading": "남을 가르칠 생각이 없으셔도 괜찮습니다. 바로 여러분을 위해 준비된 학교입니다.",
+    "manifestoQuote": "\"저는 강사가 되려는 게 아니라, 그저 제 요가를 깊이 알고 싶을 뿐이에요.\"",
+    "manifestoIntro": "저희에게 문의하시는 분의 절반 이상이 조심스럽게 이렇게 말씀하십니다. 전혀 미안해하실 필요가 없습니다. 원래 인도에서 요가는 취업 준비 과정이 아니라, 진정한 나를 찾아가는 구도의 길이었습니다. 시대가 변해도 가장 중요한 것은 언제나 수련자 자신의 내적 성장입니다.",
+    "manifestoB1Title": "당신 자신이 바로 전통입니다:",
+    "manifestoB1Desc": "수천 년 동안 사람들이 구루를 찾아 떠났던 유일한 이유는 오직 자기 탐구 때문이었습니다.",
+    "manifestoB2Title": "오롯이 수련에 집중하는 경험:",
+    "manifestoB2Desc": "sadhana, pranayama, 순수한 식단, 경전 공부 등 요가가 가진 본래의 삶을 온전히 누려보세요.",
+    "manifestoB3Title": "가장 깊은 배움의 길:",
+    "manifestoB3Desc": "아사나의 원리를 타인에게 설명할 수 있게 되는 것은, 내 몸으로 완전히 이해하는 가장 좋은 방법입니다.",
+    "manifestoB4Title": "1년간의 수련 멘토링:",
+    "manifestoB4Desc": "저희의 멘토링은 요가 강사만을 위한 것이 아닙니다. 여러분의 평생 수련을 길게 응원합니다.",
+    "manifestoFooter": "한 명의 학생으로 오셔서, 더 깊은 구도자가 되어 일상으로 돌아가세요. 그것만으로도 충분합니다.",
+    "manifestoPill": "부담 없이 • 유효기간 없이",
+    "seqBookBadge": "특별 혜택",
+    "seqBookCategory": "교재",
+    "seqBookTitle": "35가지 실전 시퀀스 가이드북",
+    "seqBookDesc": "Hatha, Vinyasa, 힐링 플로우 등 수료 즉시 실제 클래스에서 가르칠 수 있는 알찬 가이드북을 증정합니다.",
+    "assistantBadge": "실전 경험",
+    "assistantCategory": "현장 실습",
+    "assistantTitle": "어시스턴트 티처 기회",
+    "assistantDesc": "우수 수료생은 다음 코스에서 시니어 강사의 보조 강사로 참여하여 현장 티칭 경험을 쌓을 수 있습니다.",
+    "careerBadge": "커리어 지원",
+    "careerCategory": "비즈니스",
+    "careerTitle": "스튜디오 창업 및 커리어 가이드",
+    "careerDesc": "워크숍 기획, 프라이빗 레슨 유치, 해외 진출 및 Yoga Alliance 등록 실무를 친절히 안내합니다.",
+    "repeatCategory": "평생 재수강",
+    "repeatCardTitle": "평생 수강료 무료 재수강 혜택",
+    "repeatCardDesc": "배운 내용을 복습하고 싶으실 때, 향후 발리에서 열리는 YogaGarhi 200시간 코스에 수강료 전액 무료로 다시 참여하실 수 있습니다.",
+    "repeatBadge": "평생 무료",
+    "repeatTitle": "코스 무료 재수강",
+    "repeatDesc": "수료생은 미래의 코스에 무료로 재참여하여 배움을 언제든 새롭게 다질 수 있습니다.",
+    "communityBadge": "커뮤니티",
+    "communityTitle": "글로벌 동문 네트워크",
+    "communityDesc": "전 세계에서 활동하는 따뜻하고 진정성 있는 요가 가족들과 소통할 수 있습니다.",
+    "lineageBadge": "히말라야 정통",
+    "lineageTitle": "살아있는 스승의 지혜",
+    "lineageDesc": "정통 계보를 계승한 마스터 강사진으로부터 직접 요가를 배웁니다.",
+    "smallGroupBadge": "8~10명",
+    "smallGroupTitle": "소수 정예",
+    "smallGroupDesc": "모든 학생에 대한 세심한 관심과 개별적인 성장을 보장합니다."
   }
 }

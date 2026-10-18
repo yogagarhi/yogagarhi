@@ -25,7 +25,10 @@
     "beginJourney": "旅を始める",
     "beginYourJourney": "旅を始める",
     "toggleMenu": "メニューを開く",
-    "tagline": "内なる変容"
+    "tagline": "内なる変容",
+    "transformWithin": "内なる変容",
+    "teachers": "講師紹介",
+    "testimonials": "受講生の声"
   },
   "navDropdown": {
     "aboutSchool": "学校紹介",
@@ -108,7 +111,7 @@
     "privacyPolicy": "プライバシーポリシー",
     "termsConditions": "利用規約",
     "refundPolicy": "キャンセル・返金規定",
-    "copyright": "All rights reserved.",
+    "copyright": "無断転載を禁じます。",
     "authenticBali": "バリ島で学ぶ本物のヨガ",
     "sutra": "ヨガとは心の働きを静止させることである",
     "transformingLives": "ヨガを通じて人生を豊かに変革する"
@@ -364,7 +367,10 @@
       "alumniDesc": "世界中の真摯なプラクティショナーと生涯の繋がりを築けます。"
     },
     "googleReviews": {
-      "readAll": "すべての受講生の体験談・レビューを読む"
+      "readAll": "すべての受講生の体験談・レビューを読む",
+      "heading": "Googleでの受講生のレビュー",
+      "sub": "ヨガ指導者養成コース修了生の生の声",
+      "viewAllGoogle": "Googleで全レビューを見る"
     },
     "studentStories": {
       "badge": "リアルな声",
@@ -372,14 +378,23 @@
       "sub": "世界中から集まった卒業生たちの飾らない声をお聞きください。",
       "chatWhatsApp": "WhatsAppで問い合わせる",
       "emailUs": "メールで問い合わせる",
-      "certifiedBadge": "Yoga Alliance 認定"
+      "certifiedBadge": "Yoga Alliance 認定",
+      "graduates": "卒業生",
+      "countries": "参加国",
+      "rating": "評価",
+      "wonderingTitle": "このコースが自分に合っているか迷っていますか？",
+      "wonderingSub": "WhatsAppまたはメールでお気軽にご相談ください。丁寧にお答えします"
     },
     "founder": {
       "badge": "当校の血脈",
       "title": "本物の叡智に導かれて",
       "name": "Yash",
       "role": "YogaGarhi 創設者 兼 リードティーチャー",
-      "quote": "「ヨガとは調和です。ヨガを教えるだけでなく、生き方として体現したとき、すべてが美しく変わり始めます。」"
+      "quote": "「ヨガとは調和です。ヨガを教えるだけでなく、生き方として体現したとき、すべてが美しく変わり始めます。」",
+      "meetTeacher": "YogaGarhiを率いる指導者",
+      "trainedCount": "2500名以上の卒業生を指導",
+      "experienceYears": "18年以上の実践経験",
+      "armyTherapy": "インド陸軍にヨガセラピーを指導"
     },
     "dosha": {
       "badge": "個別のSadhana",
@@ -397,7 +412,11 @@
       "title": "YogaGarhi バリ島の日常を覗いてみましょう",
       "desc": "ウブドの豊かな自然に囲まれ、瞑想、力強い練習、仲間との語らいで満たされる日々の様子をご覧ください。",
       "shorts": "ショート動画",
-      "watchAll": "すべてのアシュラム動画を見る"
+      "watchAll": "すべてのアシュラム動画を見る",
+      "v1Title": "モーニングヨガフロー",
+      "v2Title": "サウンドヒーリング",
+      "v3Title": "卒業生・仲間の声",
+      "v4Title": "バリ島アシュラム生活"
     },
     "webinar": {
       "badge": "無料オンラインワークショップ",
@@ -415,7 +434,9 @@
     "gallery": {
       "badge": "アシュラムの日常風景",
       "title": "YogaGarhi アシュラムでの日々",
-      "desc": "瑞々しいライステラスと清らかな小川に抱かれたキャンパスは、深い自己探求に理想的な静けさに包まれています。"
+      "desc": "瑞々しいライステラスと清らかな小川に抱かれたキャンパスは、深い自己探求に理想的な静けさに包まれています。",
+      "practiceMeetsPurpose": "日々の修練が、真の目的と出会う場所。",
+      "exploreGallery": "ギャラリーの全写真を見る"
     },
     "ready": {
       "tag": "旅を始める",
@@ -984,6 +1005,106 @@
           "心を落ち着かせる夜のハーブブレンド"
         ]
       }
-    ]
+    ],
+    "videoStoriesBadge": "受講生のリアルなビデオ体験談",
+    "videoStoriesHeading": "バリ島卒業生からの直接のメッセージ",
+    "videoStoriesSub": "YogaGarhiでの宿泊集中コースに参加した練習生たちのありのままの感想。",
+    "verifiedGraduate": "認証済み修了生",
+    "speakTeacherTitle": "受講前にリードティーチャーと直接話してみませんか？",
+    "speakTeacherDesc": "15分間の個別無料ビデオ通話で、目標や日程、お部屋について相談できます。",
+    "helpfulGuidesBadge": "渡航前の必読ガイド",
+    "helpfulGuidesTitle": "役立つガイド＆準備に関する記事",
+    "helpfulGuidesDesc": "心と身体、そして渡航準備を万全にするための詳細ガイドをご覧ください。",
+    "readArticle": "記事を読む",
+    "mindfulEating": "マインドフルな食事の1日",
+    "clickToCollapse": "クリックして閉じる",
+    "clickToExpand": "クリックして展開",
+    "caterDietsTitle": "あらゆる食事制限・食事法に対応",
+    "caterDietsDesc": "ご希望の食事制限がございましたら、事前にお知らせください"
+  },
+  "whyChoose": {
+    "heading": "YOGAGARHI が選ばれる理由",
+    "stage1": "第1段階",
+    "stage1Title": "コース受講の前後における徹底支援",
+    "stage2": "第2段階",
+    "stage2Title": "コース期間中の充実した体験",
+    "stage3": "第3段階",
+    "stage3Title": "卒業後のキャリアサポート",
+    "preTtcBadge": "YTTC無料事前準備プログラム",
+    "preTtcTitle": "Pre-TTC メンターシップ",
+    "preTtcDesc": "ヨガ指導者養成コース（TTC）を受ける準備が整っているか不安ですか？この準備プログラムは、受講前に自身の状態を確認したい方のためのものです。多くの学校は初日からスタートしますが、当校は数週間前からオンラインで完全に無料で始めます。基礎を築いておくことで、不安なく落ち着いた状態でバリ島に到着できます。",
+    "preTtcTag": "受講前に自身の準備度を確認",
+    "postTtcBadge": "卒業後1年間の継続サポート",
+    "postTtcTitle": "卒業後も1年間、担当講師が伴走します",
+    "postTtcDesc": "卒業式で関係が終わってしまう学校がほとんどですが、当校は違います。卒業後12ヶ月間、毎月ライブセッションを開催します。教え始めた方には実際のクラスへのフィードバックを、指導しない方には個人の練習法のアドバイスを直接提供します。これは宣伝用の思いつきではありません。当校創始者の過去の受講生たちは、コース終了後3年、4年、5年経った今もオンラインで共に練習を続けています。私たちは、元々行っていた温かい関係性を約束として明文化しただけです。",
+    "postTtcShort": "卒業式で終わりではありません。12ヶ月間、毎月のライブセッションをお届けします...",
+    "readFullDetails": "詳細を見る ▾",
+    "postTtcDetail": "指導を始めた際のクラス構成へのフィードバックや、毎日の個人練習（sadhana）に関する相談を1年間いつでも担当講師に質問できます。",
+    "postTtcTag": "長期伴走の約束",
+    "joinUs": "参加する",
+    "multiStyleBadge": "統合的アプローチ",
+    "multiStyleCategory": "アーユルヴェーダ",
+    "multiStyleTitle": "マルチスタイル ＆ アーユルヴェーダ",
+    "multiStyleDesc": "Vinyasa、Hatha、Ashtanga、Iyengarをアーユルヴェーダの確かな知識に基づいて指導。",
+    "methodBadge": "独自メソッド",
+    "methodCategory": "指導法",
+    "methodTitle": "Shiv-Shakti メソッド",
+    "methodDesc": "古代のヨガ理論を、実生活を変革する生きた知恵へと昇華させる独自の指導法。",
+    "philosophyBadge": "本格派",
+    "philosophyCategory": "ヨガの叡智",
+    "philosophyTitle": "哲学を重視するアプローチ",
+    "philosophyDesc": "儀式、瞑想、サットサンガを通じて体得する最高峰のヨガ哲学。",
+    "traditionBadge": "伝統の継承",
+    "traditionCategory": "古典原典",
+    "traditionTitle": "本物の伝統をわかりやすく明快に",
+    "traditionDesc": "Yoga Sutras、Hatha Yoga Pradipika、Bhagavad Gitaなどの原典を学び、日々の生活で実践します。現代的で論理的な言葉で解説するため、難解になりがちな伝統も自然と腑に落ちます。",
+    "smallGroupCategory": "メンターシップ",
+    "smallGroupCardTitle": "少人数制グループ指導（8〜10名）",
+    "smallGroupCardDesc": "一人ひとりに合わせた調整、アライメント修正、丁寧なフィードバック。大人数に埋もれることはありません。",
+    "handsOnBadge": "実践的指導",
+    "handsOnCategory": "ティーチング",
+    "handsOnTitle": "ハンズオンアジャストメント ＆ シークエンス",
+    "handsOnDesc": "安全な身体の補助法、解剖学的なアライメント原則、個々の体格に合わせた柔軟なシークエンス構成を学びます。",
+    "manifestoBadge": "受講生へのマニフェスト",
+    "manifestoHeading": "教える予定がなくても大丈夫。まさにあなたのために作られた学校です。",
+    "manifestoQuote": "「指導者になりたいわけではなく、ただ自分のヨガを深めたいのです。」",
+    "manifestoIntro": "お問い合わせいただく方の半数以上が、少し申し訳なさそうにこう仰います。どうぞ謝らないでください。本来インドにおいて、ヨガは就職のための講座ではなく、自己を深く知るための道でした。いつの時代も、まず生徒自身の成長が最優先です。",
+    "manifestoB1Title": "あなた自身が伝統です：",
+    "manifestoB1Desc": "何千年もの間、人々が一人の師のもとを訪れた理由はただ一つ、自己探求のためでした。",
+    "manifestoB2Title": "実践を何よりも大切に：",
+    "manifestoB2Desc": "sadhana、pranayama、純粋な食事、原典の教えなど、ヨガのあるべき姿を丸ごと体感します。",
+    "manifestoB3Title": "最も深い学び：",
+    "manifestoB3Desc": "ポーズの意図を他人に説明できるようになることは、自らの身体で深く理解するための最良の道です。",
+    "manifestoB4Title": "1年間の練習サポート：",
+    "manifestoB4Desc": "メンターシップは講師のためだけのものではありません。日々の実践を長くサポートします。",
+    "manifestoFooter": "一人の生徒として参加し、より深い探求者として日常へ帰る。それだけで充分なのです。",
+    "manifestoPill": "プレッシャーなし • 期限なし",
+    "seqBookBadge": "特典",
+    "seqBookCategory": "教材",
+    "seqBookTitle": "35以上の実践シークエンス解説書",
+    "seqBookDesc": "Hatha、Vinyasa、リラックス系フローなど、卒業後すぐに現場で教えられる実用的な指導ガイド。",
+    "assistantBadge": "現場経験",
+    "assistantCategory": "実践力",
+    "assistantTitle": "アシスタントティーチャー制度",
+    "assistantDesc": "優秀な修了生は次回以降のコースでシニア講師のアシスタントとして登壇し、現場での指導経験を積むことができます。",
+    "careerBadge": "実務支援",
+    "careerCategory": "キャリア",
+    "careerTitle": "スタジオ開設・キャリア構築指導",
+    "careerDesc": "ワークショップの立ち上げ、プライベートクライアントの獲得、海外での指導、Yoga Alliance 登録の実務を伝授。",
+    "repeatCategory": "継続学習",
+    "repeatCardTitle": "受講料永年無料で再受講可能",
+    "repeatCardDesc": "知識のブラッシュアップのため、将来バリ島で開催されるYogaGarhiの200時間コースに受講料無料で何度でも参加できます。",
+    "repeatBadge": "生涯再受講",
+    "repeatTitle": "無料でのコース再受講",
+    "repeatDesc": "卒業生は将来のコースに無料で再参加し、いつでも知識を復習できます。",
+    "communityBadge": "コミュニティ",
+    "communityTitle": "世界的な修了生ネットワーク",
+    "communityDesc": "互いを高め合える温かい世界中のヨガファミリーと繋がれます。",
+    "lineageBadge": "ヒマラヤ直系",
+    "lineageTitle": "生きた伝統の智慧",
+    "lineageDesc": "正統な継承者であるマスター講師陣から本物のヨガを直接学べます。",
+    "smallGroupBadge": "8〜10名",
+    "smallGroupTitle": "少人数限定",
+    "smallGroupDesc": "受講生一人ひとりに行き届く指導と個別の成長を保証します。"
   }
 }

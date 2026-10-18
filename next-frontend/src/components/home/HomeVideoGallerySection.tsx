@@ -4,31 +4,13 @@ import { useState } from "react";
 import { Play } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
-const videos = [
-    {
-        id: "ipnGYnma1mI",
-        title: "Morning Yoga Flow",
-        description: "Start your day with energy and mindfulness."
-    },
-    {
-        id: "dIuGniJZpFs",
-        title: "Sound Healing Session",
-        description: "Experience the calming vibrations of sound bowl healing."
-    },
-    {
-        id: "6JllDeF3WzY",
-        title: "Voice from our Yogagarhi Family",
-        description: "Hear from our graduates about their transformative journey."
-    },
-    {
-        id: "0-uWiqJgw7Y",
-        title: "Bali Ashram Life",
-        description: "A glimpse into the daily life at our beautiful ashram."
-    }
-];
+const videoIds = ["ipnGYnma1mI", "dIuGniJZpFs", "6JllDeF3WzY", "0-uWiqJgw7Y"];
 
 export default function HomeVideoGallerySection() {
+    const t = useTranslations("home.videoGallery");
+    const videoTitles = [t("v1Title"), t("v2Title"), t("v3Title"), t("v4Title")];
     const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
 
     return (
@@ -43,23 +25,24 @@ export default function HomeVideoGallerySection() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-16">
                     <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full mb-3">
-                        Watch & Experience
+                        {t("badge")}
                     </span>
                     <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                        Glimpses of Life at Yogagarhi
+                        {t("title")}
                     </h2>
                     <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-                        Immerse yourself in the energy of Yogagarhi. From morning flows to sacred ceremonies, capture the essence of our training.
+                        {t("desc")}
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                    {videos.map((video, idx) => {
-                        const isPlaying = activeVideoId === video.id;
+                    {videoIds.map((id, idx) => {
+                        const isPlaying = activeVideoId === id;
+                        const title = videoTitles[idx] || "Ashram Life";
 
                         return (
                             <div
-                                key={video.id}
+                                key={id}
                                 className={`group relative rounded-2xl overflow-hidden shadow-xl aspect-[9/16] bg-black border border-white/10 ${
                                     idx > 0 ? "hidden sm:block" : "block"
                                 }`}
@@ -67,21 +50,21 @@ export default function HomeVideoGallerySection() {
                                 {isPlaying ? (
                                     <iframe
                                         className="absolute inset-0 w-full h-full object-cover"
-                                        src={`https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0&controls=1&loop=1&playlist=${video.id}`}
-                                        title={video.title}
+                                        src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&controls=1&loop=1&playlist=${id}`}
+                                        title={title}
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
                                     />
                                 ) : (
                                     <button
                                         type="button"
-                                        onClick={() => setActiveVideoId(video.id)}
-                                        aria-label={`Play ${video.title}`}
+                                        onClick={() => setActiveVideoId(id)}
+                                        aria-label={title}
                                         className="w-full h-full text-left relative block focus:outline-none focus:ring-2 focus:ring-primary"
                                     >
                                         <Image
-                                            src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`}
-                                            alt={video.title}
+                                            src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
+                                            alt={title}
                                             fill
                                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                                             className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 group-hover:opacity-100"
@@ -99,10 +82,10 @@ export default function HomeVideoGallerySection() {
                                         <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/85 via-black/50 to-transparent pointer-events-none">
                                             <div className="flex items-center gap-2 text-white/90 mb-1">
                                                 <Play className="w-3 h-3 fill-current" />
-                                                <span className="text-xs font-medium uppercase tracking-wider">Shorts</span>
+                                                <span className="text-xs font-medium uppercase tracking-wider">{t("shorts")}</span>
                                             </div>
                                             <h3 className="text-white font-heading font-medium text-lg leading-tight mb-1">
-                                                {video.title}
+                                                {title}
                                             </h3>
                                         </div>
                                     </button>
@@ -118,7 +101,7 @@ export default function HomeVideoGallerySection() {
                         href="/gallery"
                         className="inline-flex items-center justify-center gap-2 bg-[#2D7A70] text-white px-7 py-3 rounded-full text-sm font-bold shadow-md hover:bg-[#23635b] transition-colors"
                     >
-                        <span>Watch All Ashram Videos</span>
+                        <span>{t("watchAll")}</span>
                         <span>→</span>
                     </Link>
                 </div>

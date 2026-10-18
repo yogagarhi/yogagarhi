@@ -2,8 +2,10 @@ import React from "react";
 import Link from "next/link";
 import { BookOpen, ArrowRight } from "lucide-react";
 import { HELPFUL_GUIDES } from "@/constants/course200Data";
+import { useTranslations } from "next-intl";
 
 export default function HelpfulGuidesSection() {
+  const t = useTranslations("course200");
   if (!HELPFUL_GUIDES || HELPFUL_GUIDES.length === 0) return null;
 
   return (
@@ -13,13 +15,13 @@ export default function HelpfulGuidesSection() {
           <div className="text-center mb-12">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-2">
               <BookOpen className="w-3.5 h-3.5" />
-              <span>Read Before You Fly</span>
+              <span>{t("helpfulGuidesBadge")}</span>
             </span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">
-              Helpful Guides & Preparation Articles
+              {t("helpfulGuidesTitle")}
             </h2>
             <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
-              Explore our in-depth guides to prepare your mind, body, and travel arrangements for your Bali yoga teacher training.
+              {t("helpfulGuidesDesc")}
             </p>
           </div>
 
@@ -43,7 +45,7 @@ export default function HelpfulGuidesSection() {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-border/50 flex items-center gap-2 text-xs font-semibold text-primary group-hover:translate-x-1 transition-transform">
-                  <span>Read Article</span>
+                  <span>{t("readArticle")}</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </div>
               </Link>

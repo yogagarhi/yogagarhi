@@ -1,4 +1,5 @@
 import StudentStoriesInteractiveIsland, { VideoTestimonial } from "./StudentStoriesInteractiveIsland";
+import { useTranslations } from "next-intl";
 
 const videoTestimonials: VideoTestimonial[] = [
   { id: "OGmWr_aC4WA", name: "Fernanda", country: "Australia", quote: "Life-changing experience" },
@@ -13,14 +14,15 @@ interface StudentStoriesSectionProps {
 }
 
 export default function StudentStoriesSection({ initialVisibleCount }: StudentStoriesSectionProps = {}) {
+  const t = useTranslations("home.studentStories");
   const extraContent = (
     <>
       {/* Stats Row */}
       <div className="mt-6 grid grid-cols-3 gap-4">
         {[
-          { number: "500+", label: "Graduates" },
-          { number: "45+", label: "Countries" },
-          { number: "5.0", label: "Rating" },
+          { number: "500+", label: t("graduates") },
+          { number: "45+", label: t("countries") },
+          { number: "5.0", label: t("rating") },
         ].map((stat, index) => (
           <div key={index} className="text-center p-4 bg-secondary/30 rounded-xl">
             <p className="font-heading text-2xl font-bold text-primary">{stat.number}</p>
@@ -35,7 +37,7 @@ export default function StudentStoriesSection({ initialVisibleCount }: StudentSt
           <svg className="w-5 h-5 text-primary" viewBox="0 0 24 24">
             <use href="#icon-shield-check" />
           </svg>
-          <span className="text-sm font-medium text-foreground">Yoga Alliance Certified</span>
+          <span className="text-sm font-medium text-foreground">{t("certifiedBadge")}</span>
         </div>
         <div className="w-px h-6 bg-border" />
         <div className="flex items-center gap-2">
@@ -49,10 +51,10 @@ export default function StudentStoriesSection({ initialVisibleCount }: StudentSt
       {/* Contact CTA */}
       <div className="mt-8 text-center bg-secondary/30 p-4 rounded-xl border border-secondary">
         <p className="font-medium text-foreground">
-          Still wondering if this journey is right for you?
+          {t("wonderingTitle")}
         </p>
         <p className="text-sm text-muted-foreground mt-1">
-          👉 Talk to us on WhatsApp or Email — we’ll answer honestly
+          👉 {t("wonderingSub")}
         </p>
       </div>
 
@@ -67,7 +69,7 @@ export default function StudentStoriesSection({ initialVisibleCount }: StudentSt
           <svg className="w-6 h-6" viewBox="0 0 24 24">
             <use href="#icon-whatsapp" />
           </svg>
-          <span className="font-bold tracking-wide">WhatsApp Us</span>
+          <span className="font-bold tracking-wide">{t("chatWhatsApp")}</span>
         </a>
 
         <a
@@ -78,7 +80,7 @@ export default function StudentStoriesSection({ initialVisibleCount }: StudentSt
             <rect width="20" height="16" x="2" y="4" rx="2" />
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
           </svg>
-          <span className="font-bold tracking-wide text-gray-800 group-hover:text-red-600 transition-colors">Email Us</span>
+          <span className="font-bold tracking-wide text-gray-800 group-hover:text-red-600 transition-colors">{t("emailUs")}</span>
         </a>
       </div>
     </>
@@ -105,14 +107,13 @@ export default function StudentStoriesSection({ initialVisibleCount }: StudentSt
         <div className="mb-8 md:mb-12 text-center lg:text-left max-w-2xl">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            <span className="text-primary font-medium text-sm">Real Voices</span>
+            <span className="text-primary font-medium text-sm">{t("badge")}</span>
           </div>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Voices From Our Yogagarhi Family
+            {t("title")}
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Every graduate carries a unique story of transformation.
-            Here are some voices from our global yoga family.
+            {t("sub")}
           </p>
         </div>
 

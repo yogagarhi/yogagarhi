@@ -25,7 +25,10 @@
     "beginJourney": "Reis beginnen",
     "beginYourJourney": "Begin je reis",
     "toggleMenu": "Menu openen",
-    "tagline": "Transformeer van binnenuit"
+    "tagline": "Transformeer van binnenuit",
+    "transformWithin": "Transformeer van binnenuit",
+    "teachers": "Onze docenten",
+    "testimonials": "Ervaringen"
   },
   "navDropdown": {
     "aboutSchool": "Over de school",
@@ -364,7 +367,10 @@
       "alumniDesc": "Blijf verbonden met een wereldwijde gemeenschap van yogi's."
     },
     "googleReviews": {
-      "readAll": "Lees alle verhalen en reviews van studenten"
+      "readAll": "Lees alle verhalen en reviews van studenten",
+      "heading": "Wat onze studenten zeggen op Google",
+      "sub": "Echte ervaringen van onze afgestudeerde yogadocenten",
+      "viewAllGoogle": "Bekijk alle recensies op Google"
     },
     "studentStories": {
       "badge": "Echte verhalen",
@@ -372,14 +378,23 @@
       "sub": "Ontdek de oprechte ervaringen van onze afgestudeerden wereldwijd.",
       "chatWhatsApp": "Stuur ons een WhatsApp",
       "emailUs": "Stuur ons een e-mail",
-      "certifiedBadge": "Yoga Alliance gecertificeerd"
+      "certifiedBadge": "Yoga Alliance gecertificeerd",
+      "graduates": "Afgestudeerden",
+      "countries": "Landen",
+      "rating": "Beoordeling",
+      "wonderingTitle": "Vraag je je af of deze reis bij jou past?",
+      "wonderingSub": "Praat met ons via WhatsApp of e-mail — we antwoorden eerlijk"
     },
     "founder": {
       "badge": "Onze traditie",
       "title": "Geleid door authentieke wijsheid",
       "name": "Yash",
       "role": "Oprichter & Hoofddocent, YogaGarhi",
-      "quote": "«Yoga als eenheid: wanneer yoga wordt geleefd en niet alleen onderwezen, verandert het alles.»"
+      "quote": "«Yoga als eenheid: wanneer yoga wordt geleefd en niet alleen onderwezen, verandert het alles.»",
+      "meetTeacher": "Ontmoet de docent achter YogaGarhi",
+      "trainedCount": "2500+ studenten opgeleid",
+      "experienceYears": "18+ jaar beoefening",
+      "armyTherapy": "Gaf yogatherapie aan het Indiase leger"
     },
     "dosha": {
       "badge": "Persoonlijke Sadhana",
@@ -397,7 +412,11 @@
       "title": "Neem een kijkje bij YogaGarhi Bali",
       "desc": "Ervaar het dagelijkse ritme van meditatie, dynamische yoga en saamhorigheid in ons ashram in Ubud.",
       "shorts": "Korte video's",
-      "watchAll": "Bekijk alle ashramvideo's"
+      "watchAll": "Bekijk alle ashramvideo's",
+      "v1Title": "Ochtend Yoga Flow",
+      "v2Title": "Klankschalen Heling",
+      "v3Title": "Stemmen van de YogaGarhi-familie",
+      "v4Title": "Ashramleven in Bali"
     },
     "webinar": {
       "badge": "Gratis interactieve sessie",
@@ -415,7 +434,9 @@
     "gallery": {
       "badge": "Momenten in de ashram",
       "title": "Het leven op YogaGarhi Ashram",
-      "desc": "Omringd door groene rijstvelden en tropische beekjes biedt onze campus de serene rust die nodig is voor diepe bezinning."
+      "desc": "Omringd door groene rijstvelden en tropische beekjes biedt onze campus de serene rust die nodig is voor diepe bezinning.",
+      "practiceMeetsPurpose": "Waar beoefening en zingeving samenkomen.",
+      "exploreGallery": "Bekijk de volledige galerij"
     },
     "ready": {
       "tag": "Begin je reis",
@@ -984,6 +1005,106 @@
           "Rustgevende avondkruidenthee"
         ]
       }
-    ]
+    ],
+    "videoStoriesBadge": "Video-ervaringen van studenten",
+    "videoStoriesHeading": "Hoor het direct van onze afgestudeerden in Bali",
+    "videoStoriesSub": "Eerlijke verhalen van cursisten die deze residentiële reis bij YogaGarhi hebben gemaakt.",
+    "verifiedGraduate": "Geverifieerde afgestudeerde",
+    "speakTeacherTitle": "Wil je eerst met een hoofddocent praten?",
+    "speakTeacherDesc": "15 minuten 1-op-1 videogesprek om je doelen, kamer en data te bespreken.",
+    "helpfulGuidesBadge": "Lees voor vertrek",
+    "helpfulGuidesTitle": "Handige gidsen & voorbereidingstips",
+    "helpfulGuidesDesc": "Ontdek onze uitgebreide gidsen om lichaam, geest en reis voor te bereiden op je YTT in Bali.",
+    "readArticle": "Lees artikel",
+    "mindfulEating": "Een dag van bewuste voeding",
+    "clickToCollapse": "Klik om in te klappen",
+    "clickToExpand": "Klik om uit te vouwen",
+    "caterDietsTitle": "We houden rekening met alle diëten",
+    "caterDietsDesc": "Laat ons je dieetwensen weten en wij zorgen voor de rest"
+  },
+  "whyChoose": {
+    "heading": "HET YOGAGARHI VERSCHIL",
+    "stage1": "Fase 01",
+    "stage1Title": "Voor en na de opleiding",
+    "stage2": "Fase 02",
+    "stage2Title": "De ervaring tijdens de cursus",
+    "stage3": "Fase 03",
+    "stage3Title": "Loopbaanbegeleiding na het afstuderen",
+    "preTtcBadge": "Gratis voorbereidingsprogramma voor je YTTC",
+    "preTtcTitle": "Pre-TTC Mentorschap",
+    "preTtcDesc": "Twijfel je of je echt klaar bent voor een yogadocentenopleiding (TTC)? Dit voorbereidingsprogramma is speciaal gemaakt om je voorbereiding te testen. Waar de meeste scholen pas op dag één starten, beginnen wij weken eerder, online en helemaal gratis, zodat je gegrond, ontspannen en met vertrouwen arriveert.",
+    "preTtcTag": "Test vooraf je voorbereiding",
+    "postTtcBadge": "1 jaar ondersteuning na de opleiding",
+    "postTtcTitle": "Je docent blijft een jaar lang aan je zijde",
+    "postTtcDesc": "De meeste scholen zwaaien studenten uit op de diploma-uitreiking. Wij niet. Gedurende 12 maanden na je opleiding krijg je maandelijkse live sessies met ons: feedback op je lessen als je lesgeeft, begeleiding voor je eigen sadhana als je niet lesgeeft, en een docent aan wie je al je vragen kunt stellen. Dit is geen marketingtruc: studenten uit eerdere lichtingen van onze oprichter oefenen na 3, 4 of zelfs 5 jaar nog steeds online met hem. We hebben simpelweg een belofte gemaakt van wat altijd al vanzelfsprekend was.",
+    "postTtcShort": "De meeste scholen nemen afscheid op de diploma-uitreiking. Wij niet. 12 maanden lang maandelijkse live sessies...",
+    "readFullDetails": "Lees alle details ▾",
+    "postTtcDetail": "Krijg feedback op je eerste lessen als je lesgeeft, advies voor je eigen sadhana als je dat niet doet, en rechtstreeks contact met je mentor.",
+    "postTtcTag": "Belofte van doorlopende begeleiding",
+    "joinUs": "Doe mee",
+    "multiStyleBadge": "Geïntegreerd",
+    "multiStyleCategory": "Ayurveda",
+    "multiStyleTitle": "Multi-Style & Ayurveda",
+    "multiStyleDesc": "Vinyasa, Hatha, Ashtanga en Iyengar onderwezen vanuit een gedegen fundament in Ayurveda.",
+    "methodBadge": "Signatuur",
+    "methodCategory": "Methodologie",
+    "methodTitle": "Shiv-Shakti Methode",
+    "methodDesc": "Onze kenmerkende aanpak die eeuwenoude yogatheorie omzet in tastbare, levensveranderende wijsheid.",
+    "philosophyBadge": "Authentiek",
+    "philosophyCategory": "Yogische wijsheid",
+    "philosophyTitle": "Gefundeerd op filosofie",
+    "philosophyDesc": "De diepste yogafilosofie tot leven gebracht via rituelen, meditatie en satsang.",
+    "traditionBadge": "Traditioneel",
+    "traditionCategory": "Authentieke teksten",
+    "traditionTitle": "Echte traditie, helder uitgelegd",
+    "traditionDesc": "We bestuderen de klassieke teksten – Yoga Sutras, Hatha Yoga Pradipika, Bhagavad Gita – en leven de beoefening dagelijks. In duidelijk, gestructureerd en modern Engels. Traditioneel hoeft niet ingewikkeld te zijn.",
+    "smallGroupCategory": "Mentorschap",
+    "smallGroupCardTitle": "Werken in kleine groepen (8–10 studenten)",
+    "smallGroupCardDesc": "Iedere student krijgt individuele aandacht, afstemming en feedback. Niemand raakt verloren in de massa.",
+    "handsOnBadge": "Praktijkgericht",
+    "handsOnCategory": "Lesgeven",
+    "handsOnTitle": "Hands-on correcties & lesopbouw",
+    "handsOnDesc": "Leer veilige fysieke correcties, doordachte uitlijning en creatieve lesopbouw voor verschillende lichaamstypes.",
+    "manifestoBadge": "Studentenmanifest",
+    "manifestoHeading": "Ben je niet van plan om les te geven? Dan is deze school juist voor jou gemaakt.",
+    "manifestoQuote": "«Ik wil eigenlijk niet lesgeven. Ik wil gewoon de diepte in.»",
+    "manifestoIntro": "Meer dan de helft van de mensen die ons schrijven zegt dit, bijna verontschuldigend. Verontschuldig je alsjeblieft niet. In India is yoga nooit een beroepsopleiding geweest; het was een pad van zelfonderzoek. De student stond altijd centraal.",
+    "manifestoB1Title": "Jij bent de traditie:",
+    "manifestoB1Desc": "Al duizenden jaren zochten mensen een meester om één reden: zelfontdekking.",
+    "manifestoB2Title": "Praktijk op de eerste plaats:",
+    "manifestoB2Desc": "Je beleeft yoga zoals het bedoeld is: sadhana, pranayama, gezonde voeding en teksten.",
+    "manifestoB3Title": "Diepste begrip:",
+    "manifestoB3Desc": "Houdingen leren uitleggen is de beste manier om ze in je eigen lichaam werkelijk te begrijpen.",
+    "manifestoB4Title": "1 jaar Sadhana-ondersteuning:",
+    "manifestoB4Desc": "Mentorschap is er voor iedereen, niet alleen voor docenten. We steunen jouw dagelijkse beoefening.",
+    "manifestoFooter": "Kom als student. Vertrek als een diepere beoefenaar. Dat is meer dan genoeg.",
+    "manifestoPill": "Geen druk • Geen vervaldatum",
+    "seqBookBadge": "Inbegrepen",
+    "seqBookCategory": "Hulpmiddelen",
+    "seqBookTitle": "Boek met 35+ creatieve lessenseries",
+    "seqBookDesc": "Een complete praktische gids met ruim 35 direct bruikbare lesopbouwen voor Hatha, Vinyasa en zachte flows.",
+    "assistantBadge": "Praktijkervaring",
+    "assistantCategory": "Ervaring",
+    "assistantTitle": "Assistent-docent programma",
+    "assistantDesc": "Gemotiveerde afgestudeerden worden uitgenodigd om seniordocenten te assisteren bij volgende groepen voor echte leservaring.",
+    "careerBadge": "Praktisch",
+    "careerCategory": "Beroep",
+    "careerTitle": "Mentorschap voor loopbaan en yogastudio",
+    "careerDesc": "Leer hoe je workshops start, privéstudenten aantrekt, internationaal lesgeeft en je Yoga Alliance registratie voltooit.",
+    "repeatCategory": "Permanente educatie",
+    "repeatCardTitle": "Levenslang kosteloos herhalen van de opleiding",
+    "repeatCardDesc": "Keer wanneer je wilt gratis terug naar toekomstige 200-uurs groepen van YogaGarhi op Bali om je kennis op te frissen.",
+    "repeatBadge": "Levenslang herhalen",
+    "repeatTitle": "Gratis cursusherhaling",
+    "repeatDesc": "Als afgestudeerde mag je altijd gratis terugkeren om je kennis op te frissen.",
+    "communityBadge": "Community",
+    "communityTitle": "Wereldwijd netwerk",
+    "communityDesc": "Maak deel uit van een hechte, internationale familie van afgestudeerden.",
+    "lineageBadge": "Himalaya-lijn",
+    "lineageTitle": "Levende wijsheid",
+    "lineageDesc": "Leer rechtstreeks van docenten met een authentieke herkomst.",
+    "smallGroupBadge": "8–10 studenten",
+    "smallGroupTitle": "Kleine groepen",
+    "smallGroupDesc": "Gegarandeerd individuele aandacht en toewijding."
   }
 }

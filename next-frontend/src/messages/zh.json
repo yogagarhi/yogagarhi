@@ -25,7 +25,10 @@
     "beginJourney": "开启您的旅程",
     "beginYourJourney": "开启您的旅程",
     "toggleMenu": "切换菜单",
-    "tagline": "由内而外的蜕变"
+    "tagline": "由内而外的蜕变",
+    "transformWithin": "由内而外的蜕变",
+    "teachers": "名师团队",
+    "testimonials": "学员评价"
   },
   "navDropdown": {
     "aboutSchool": "学校介绍",
@@ -108,7 +111,7 @@
     "privacyPolicy": "隐私政策",
     "termsConditions": "条款与条件",
     "refundPolicy": "退款与取消政策",
-    "copyright": "All rights reserved.",
+    "copyright": "保留所有权利。",
     "authenticBali": "巴厘岛纯正传统瑜伽",
     "sutra": "瑜伽是平息意识的波动",
     "transformingLives": "以瑜伽之光启迪生命蜕变"
@@ -364,7 +367,10 @@
       "alumniDesc": "与来自世界各地的真诚修习者结下一生的同修情谊。"
     },
     "googleReviews": {
-      "readAll": "阅读所有学员的真实评价与口碑"
+      "readAll": "阅读所有学员的真实评价与口碑",
+      "heading": "谷歌学员真实评价",
+      "sub": "来自瑜伽导师培训毕业学员的真实心声",
+      "viewAllGoogle": "在 Google 上查看全部评价"
     },
     "studentStories": {
       "badge": "真实体验",
@@ -372,14 +378,23 @@
       "sub": "倾听来自世界各地毕业学员的真诚心声与蜕变历程。",
       "chatWhatsApp": "通过 WhatsApp 咨询",
       "emailUs": "发送电子邮件咨询",
-      "certifiedBadge": "Yoga Alliance 认证"
+      "certifiedBadge": "Yoga Alliance 认证",
+      "graduates": "毕业学员",
+      "countries": "覆盖国家",
+      "rating": "综合评分",
+      "wonderingTitle": "还在犹豫这趟瑜伽之旅是否适合您？",
+      "wonderingSub": "欢迎随时通过 WhatsApp 或邮件联系我们——我们将真诚为您解答"
     },
     "founder": {
       "badge": "师承渊源",
       "title": "源头智慧的引领者",
       "name": "Yash",
       "role": "YogaGarhi 创始人兼主讲导师",
-      "quote": "“瑜伽是内外的和谐。当您不仅仅是将瑜伽当作理论去讲授，而是把它活成自己的生命姿态时，世间一切美好都将自然绽放。”"
+      "quote": "“瑜伽是内外的和谐。当您不仅仅是将瑜伽当作理论去讲授，而是把它活成自己的生命姿态时，世间一切美好都将自然绽放。”",
+      "meetTeacher": "走近 YogaGarhi 创始人与导师",
+      "trainedCount": "培训超过2500名瑜伽学员",
+      "experienceYears": "18年以上深厚教学与修习经验",
+      "armyTherapy": "曾为印度陆军讲授瑜伽疗愈课程"
     },
     "dosha": {
       "badge": "量身体裁的 Sadhana",
@@ -397,7 +412,11 @@
       "title": "走进 YogaGarhi 巴厘岛的修习生活",
       "desc": "沉浸在乌布繁茂的热带生机中，感受充满冥想、充沛习练与温暖同修情谊的日常生活。",
       "shorts": "精选短片",
-      "watchAll": "观看全部静修院纪录片"
+      "watchAll": "观看全部静修院纪录片",
+      "v1Title": "晨间瑜伽流",
+      "v2Title": "颂钵疗愈时光",
+      "v3Title": "YogaGarhi家人的心声",
+      "v4Title": "巴厘岛静修院生活"
     },
     "webinar": {
       "badge": "免费在线公开课",
@@ -415,7 +434,9 @@
     "gallery": {
       "badge": "学院剪影",
       "title": "YogaGarhi 静修院的修习时光",
-      "desc": "背靠葱郁梯田与清澈溪流，我们的院落环境优美恬静，是深层自我探索的绝佳修行净土。"
+      "desc": "背靠葱郁梯田与清澈溪流，我们的院落环境优美恬静，是深层自我探索的绝佳修行净土。",
+      "practiceMeetsPurpose": "修习与初心交融之地。",
+      "exploreGallery": "浏览完整图集"
     },
     "ready": {
       "tag": "开启您的旅程",
@@ -984,6 +1005,106 @@
           "安神舒缓晚安草本茶"
         ]
       }
-    ]
+    ],
+    "videoStoriesBadge": "学员真实视频心声",
+    "videoStoriesHeading": "倾听巴厘岛毕业学员的真实分享",
+    "videoStoriesSub": "亲历 YogaGarhi 巴厘岛全日制静修培训学员的真实感悟。",
+    "verifiedGraduate": "认证毕业学员",
+    "speakTeacherTitle": "想在报名前先与核心导师面对面交流吗？",
+    "speakTeacherDesc": "15分钟一对一视频咨询，解答您关于课程目标、房间选择及开课时间的一切疑问。",
+    "helpfulGuidesBadge": "出发前必读指南",
+    "helpfulGuidesTitle": "实用攻略与行前准备文章",
+    "helpfulGuidesDesc": "阅读深度行前指南，从身心调整到行程安排，为您的巴厘岛瑜伽培训做好充足准备。",
+    "readArticle": "阅读全文",
+    "mindfulEating": "正念饮食的一天",
+    "clickToCollapse": "点击折叠",
+    "clickToExpand": "点击展开",
+    "caterDietsTitle": "满足各种健康饮食需求",
+    "caterDietsDesc": "请告知我们您的饮食偏好或过敏源，我们将为您精心安排"
+  },
+  "whyChoose": {
+    "heading": "为什么选择 YOGAGARHI",
+    "stage1": "第一阶段",
+    "stage1Title": "开课前与结课后的全方位守护",
+    "stage2": "第二阶段",
+    "stage2Title": "集训期间丰富深刻的学习体验",
+    "stage3": "第三阶段",
+    "stage3Title": "毕业后长期持续的职业与修习支持",
+    "preTtcBadge": "免费开课前准备项目",
+    "preTtcTitle": "Pre-TTC 导师伴学",
+    "preTtcDesc": "担心自己还没有准备好参加高强度的导师培训（TTC）吗？这项准备计划专为希望在开课前明确身体与心理状态的学员打造。绝大多数学校只从开学第一天开始，而我们在您出发前数周就通过完全免费的在线伴学帮助您夯实基础，让您抵步巴厘岛时心态坦然、胸有成竹。",
+    "preTtcTag": "开课前免费检验准备状态",
+    "postTtcBadge": "毕业后首年持续辅导",
+    "postTtcTitle": "毕业后整整一年，主讲导师依旧伴您同行",
+    "postTtcDesc": "几乎所有学校的联系都在毕业典礼当天戛然而止。但在我们这里截然不同。在毕业后的12个月内，我们每月都会举办线上直播答疑与指导会。对于开始授课的学员，导师会亲自批改您的课程编排；对于专注个人练习的学员，导师会针对您的 sadhana 给出指导。这绝非营销口号：创始导师过去的很多学员，在结课3年、4年甚至5年后依然在每周线上与我们共同练习。我们只是将一直以来的温暖守护明确立下了承诺。",
+    "postTtcShort": "学习不会止步于毕业典礼。12个月内每月举办线上答疑指导...",
+    "readFullDetails": "查看完整详情 ▾",
+    "postTtcDetail": "在您开始教学后可随时向主讲导师寻求课程排课建议，或就每日个人练习（sadhana）向导师提问，支持期长达一年。",
+    "postTtcTag": "长期陪伴的承诺",
+    "joinUs": "加入我们",
+    "multiStyleBadge": "整体融合教学",
+    "multiStyleCategory": "阿育吠陀",
+    "multiStyleTitle": "多流派融通与阿育吠陀",
+    "multiStyleDesc": "结合阿育吠陀古老医学智慧，融会贯通 Vinyasa、Hatha、Ashtanga 与 Iyengar。",
+    "methodBadge": "独家教学法",
+    "methodCategory": "教学法",
+    "methodTitle": "Shiv-Shakti 教学法",
+    "methodDesc": "独树一帜的教学体系，将深奥的古代瑜伽理论转化为改变日常生活的实用智慧。",
+    "philosophyBadge": "正统深邃",
+    "philosophyCategory": "瑜伽智慧",
+    "philosophyTitle": "哲学为纲的深刻引领",
+    "philosophyDesc": "通过传统仪式、冥想与萨特桑（Satsang）领悟最高境界的瑜伽原典哲学。",
+    "traditionBadge": "源头传承",
+    "traditionCategory": "古典原典",
+    "traditionTitle": "古典原典深入浅出、融会贯通",
+    "traditionDesc": "研读《瑜伽经》、《哈他瑜伽之光》与《薄伽梵歌》，并将其落实于生活。我们采用当代逻辑化语言进行拆解，让古老原典清晰易懂。",
+    "smallGroupCategory": "导师带教",
+    "smallGroupCardTitle": "小班制个性化指导（8-10人）",
+    "smallGroupCardDesc": "手把手纠正体态正位、量身定制辅导，绝不会让您淹没在人海中。",
+    "handsOnBadge": "实战能力",
+    "handsOnCategory": "教学实训",
+    "handsOnTitle": "手法辅助正位与课程编排",
+    "handsOnDesc": "掌握安全无伤的双手辅助触碰技巧、解剖学对齐原则以及根据不同体格灵活排课的能力。",
+    "manifestoBadge": "学员宣言",
+    "manifestoHeading": "即便您从未打算以此谋生授课，这也正是为您量身打造的圣殿。",
+    "manifestoQuote": "“我并不想成为一名瑜伽老师，我只是想深刻地认识自己的瑜伽。”",
+    "manifestoIntro": "超过半数前来咨询的学员，都会带着略显歉意的语气说出这句话。请千万不要感到抱歉。在印度，瑜伽从来就不是一门为了找工作的职业培训班，而是一条寻回真实自我的修行之路。在任何时代，学生内心的成长永远是第一位的。",
+    "manifestoB1Title": "您本身就是传承：",
+    "manifestoB1Desc": "数千年来，求索者跋山涉水追随明师，唯一的目的就是探索内在的自我。",
+    "manifestoB2Title": "全心沉浸于纯粹的修习：",
+    "manifestoB2Desc": "sadhana、pranayama、悦性饮食与古圣先贤的智慧，让您全方位体验瑜伽本该有的生活模样。",
+    "manifestoB3Title": "最深刻的自我领悟：",
+    "manifestoB3Desc": "当你能够将体式的核心原理清晰地教授给他人时，才是用自己的身体完全领悟它的最佳时刻。",
+    "manifestoB4Title": "长达一年的持续修习支持：",
+    "manifestoB4Desc": "我们的导师伴学不仅仅服务于职业老师，更为您的终身个人习练提供长久护航。",
+    "manifestoFooter": "带着学生的心态而来，成为一位更通透的求索者回归日常生活。这就足够美好。",
+    "manifestoPill": "无压力 • 无效期限制",
+    "seqBookBadge": "专属赠礼",
+    "seqBookCategory": "学习资料",
+    "seqBookTitle": "35+ 套实战课程编排手册",
+    "seqBookDesc": "涵盖 Hatha、Vinyasa 与疗愈流动，毕业后即可立即用于实际授课的实用宝典。",
+    "assistantBadge": "实战经验",
+    "assistantCategory": "教学实践",
+    "assistantTitle": "助教实训机会",
+    "assistantDesc": "优秀毕业生可受邀在后续班期中担任资深导师的随班助教，积累一线授课经验。",
+    "careerBadge": "职业指导",
+    "careerCategory": "商业拓展",
+    "careerTitle": "瑜伽馆创办与职业规划指导",
+    "careerDesc": "手把手传授开设工作坊、获取私教客户、全球授课以及 Yoga Alliance 注册实操流程。",
+    "repeatCategory": "终身重温",
+    "repeatCardTitle": "终身免学费复训特权",
+    "repeatCardDesc": "希望温故知新时，您可以终身免学费再次参加未来在巴厘岛举办的 YogaGarhi 200小时培训课程。",
+    "repeatBadge": "终身免学费",
+    "repeatTitle": "免费重修课程",
+    "repeatDesc": "毕业生可免费重回课堂温习知识，让修习始终保持鲜活。",
+    "communityBadge": "全球社群",
+    "communityTitle": "国际校友网络",
+    "communityDesc": "与遍布全球、志同道合且充满温暖的瑜伽大家庭紧密相连。",
+    "lineageBadge": "喜马拉雅正脉",
+    "lineageTitle": "传承活态智慧",
+    "lineageDesc": "直接师从正统喜马拉雅传承的资深明师，体悟源头教法。",
+    "smallGroupBadge": "8-10人",
+    "smallGroupTitle": "精品小班",
+    "smallGroupDesc": "确保关注到每位学员的细微状态，赋能个性化蜕变。"
   }
 }

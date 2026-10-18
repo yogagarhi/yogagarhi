@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { GoogleReview } from "@/constants/googleReviews";
 
 export function GoogleReviewCard({ review }: { review: GoogleReview }) {
+  const tCommon = useTranslations("common");
   const [expanded, setExpanded] = useState(false);
   const isLongText = review.text.length > 150;
 
@@ -45,7 +47,7 @@ export function GoogleReviewCard({ review }: { review: GoogleReview }) {
           onClick={() => setExpanded(!expanded)}
           className="text-xs text-primary hover:text-primary/80 font-medium mt-2 transition-colors"
         >
-          {expanded ? "Read less" : "Read more"}
+          {expanded ? tCommon("readLess") : tCommon("readMore")}
         </button>
       )}
     </div>

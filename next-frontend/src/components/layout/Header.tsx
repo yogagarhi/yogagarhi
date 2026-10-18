@@ -278,7 +278,7 @@ export default function Header() {
                   YOGAGARHI
                 </span>
                 <span className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase hidden sm:block">
-                  Transform Within
+                  {tNav("transformWithin")}
                 </span>
               </div>
             </Link>

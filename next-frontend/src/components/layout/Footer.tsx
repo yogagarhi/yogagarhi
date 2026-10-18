@@ -5,14 +5,6 @@ import { Instagram, Facebook, Youtube, Phone, Mail, MapPin, Sparkles } from "luc
 import { getCloudinaryImage } from "@/utils/cloudinary";
 const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
-const courses = [
-  { name: "200 Hour Yoga Teacher Training in Bali", href: "/200-hour-yoga-teacher-training-in-bali" },
-  { name: "100 Hour Yoga Teacher Training in Bali", href: "/100-hour-yoga-teacher-training-in-bali" },
-  { name: "300 Hour Yoga Teacher Training in Bali", href: "/300-hour-yoga-teacher-training-in-bali" },
-  { name: "200 Hour Yoga TTC in Rishikesh", href: "/200-hour-yoga-teacher-training-in-rishikesh" },
-  { name: "100 Hour Yoga TTC in Rishikesh", href: "/100-hour-yoga-teacher-training-in-rishikesh" },
-];
-
 // Animated Lotus SVG
 const LotusIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 100 60" fill="currentColor">
@@ -25,12 +17,21 @@ const LotusIcon = ({ className }: { className?: string }) => (
 export default function Footer() {
   const tFooter = useTranslations("footer");
   const tNav = useTranslations("nav");
+  const tNavDropdown = useTranslations("navDropdown");
   const tCommon = useTranslations("common");
+
+  const courses = [
+    { name: tNavDropdown("course200"), href: "/200-hour-yoga-teacher-training-in-bali" },
+    { name: tNavDropdown("course100"), href: "/100-hour-yoga-teacher-training-in-bali" },
+    { name: tNavDropdown("course300"), href: "/300-hour-yoga-teacher-training-in-bali" },
+    { name: "200 Hour Yoga TTC in Rishikesh", href: "/200-hour-yoga-teacher-training-in-rishikesh" },
+    { name: "100 Hour Yoga TTC in Rishikesh", href: "/100-hour-yoga-teacher-training-in-rishikesh" },
+  ];
 
   const explore = [
     { name: tNav("about") || "About School", href: "/about-school" },
-    { name: tNav("teachers") || "Teachers", href: "/teachers" },
-    { name: tNav("testimonials") || "Testimonials", href: "/testimonials" },
+    { name: tNav("teachers"), href: "/teachers" },
+    { name: tNav("testimonials"), href: "/testimonials" },
     { name: tNav("gallery") || "Gallery", href: "/gallery" },
     { name: tNav("blogs") || "Blogs", href: "/blogs" },
     { name: tNav("contact") || "Contact", href: "/contact-us" },

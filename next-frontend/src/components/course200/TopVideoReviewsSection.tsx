@@ -2,12 +2,14 @@ import React from "react";
 import { Video, Calendar, Star } from "lucide-react";
 import CourseVideoFacade from "@/components/common/CourseVideoFacade";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 interface TopVideoReviewsSectionProps {
   onBookCall: () => void;
 }
 
 export default function TopVideoReviewsSection({ onBookCall }: TopVideoReviewsSectionProps) {
+  const t = useTranslations("course200");
   const reviews = [
     {
       id: "OGmWr_aC4WA",
@@ -33,13 +35,13 @@ export default function TopVideoReviewsSection({ onBookCall }: TopVideoReviewsSe
           <div className="text-center mb-10">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-2">
               <Video className="w-3.5 h-3.5" />
-              <span>Real Student Video Stories</span>
+              <span>{t("videoStoriesBadge")}</span>
             </span>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
-              Hear Directly from Our Graduates in Bali
+              {t("videoStoriesHeading")}
             </h2>
             <p className="text-xs md:text-sm text-muted-foreground mt-2 max-w-xl mx-auto">
-              Real reflections from practitioners who embarked on this residential journey at YogaGarhi.
+              {t("videoStoriesSub")}
             </p>
           </div>
 
@@ -81,7 +83,7 @@ export default function TopVideoReviewsSection({ onBookCall }: TopVideoReviewsSe
                       </p>
                     </div>
                     <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-green-500/10 text-green-600 border border-green-500/20">
-                      Verified Graduate
+                      {t("verifiedGraduate")}
                     </span>
                   </div>
                 </div>
@@ -93,10 +95,10 @@ export default function TopVideoReviewsSection({ onBookCall }: TopVideoReviewsSe
           <div className="rounded-2xl bg-secondary/50 border border-primary/20 p-6 text-center max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-left">
               <h3 className="font-heading text-base md:text-lg font-bold text-foreground">
-                Want to speak with a lead teacher first?
+                {t("speakTeacherTitle")}
               </h3>
               <p className="text-xs text-muted-foreground mt-0.5">
-                15-minute 1-on-1 video call to discuss your goals, rooms, and dates.
+                {t("speakTeacherDesc")}
               </p>
             </div>
             <Button
@@ -105,7 +107,7 @@ export default function TopVideoReviewsSection({ onBookCall }: TopVideoReviewsSe
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-xs md:text-sm flex-shrink-0 shadow-md"
             >
               <Calendar className="w-4 h-4 mr-2" />
-              Book Free Video Call
+              {t("whyYogaGarhiBox.bookFreeCall")}
             </Button>
           </div>
         </div>
