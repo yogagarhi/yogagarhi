@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import {
   GraduationCap, RefreshCw, Users, BookOpen, Heart,
@@ -54,6 +55,7 @@ const postYTTCItems = [
 ];
 
 export default function YTTCSupportInteractiveIsland() {
+  const t = useTranslations("home.support");
   const [activeTab, setActiveTab] = useState<'pre' | 'post'>('pre');
   const [showPreYTTCDialog, setShowPreYTTCDialog] = useState(false);
   const [showThankYouDialog, setShowThankYouDialog] = useState(false);
@@ -119,8 +121,7 @@ export default function YTTCSupportInteractiveIsland() {
               <GraduationCap className={`w-5 h-5 transition-colors duration-300 ${activeTab === 'pre' ? 'text-primary' : ''}`} />
             </div>
             <div className="text-left">
-              <p className="font-heading font-bold text-lg">Before You Join</p>
-              <p className="text-xs text-muted-foreground hidden sm:block">Begin Before You Begin</p>
+              <p className="font-heading font-bold text-lg">{t("tabPre")}</p>
             </div>
           </button>
 
@@ -137,8 +138,7 @@ export default function YTTCSupportInteractiveIsland() {
               <RefreshCw className={`w-5 h-5 transition-colors duration-300 ${activeTab === 'post' ? 'text-primary' : ''}`} />
             </div>
             <div className="text-left">
-              <p className="font-heading font-bold text-lg">Life After Graduation</p>
-              <p className="text-xs text-muted-foreground hidden sm:block">Lifelong Support</p>
+              <p className="font-heading font-bold text-lg">{t("tabPost")}</p>
             </div>
           </button>
         </div>

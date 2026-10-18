@@ -1,10 +1,13 @@
 import Image from "next/image";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import WebinarButtonIsland from "./WebinarButtonIsland";
+import { getTranslations } from "next-intl/server";
 
 const webinarBackground = getCloudinaryImage("webinar-background.jpg");
 
-export default function WebinarSection() {
+export default async function WebinarSection() {
+  const t = await getTranslations("home.webinar");
+
   return (
     <section
       className="relative py-20 overflow-hidden"
@@ -24,10 +27,10 @@ export default function WebinarSection() {
 
       <div className="container mx-auto px-4 max-w-4xl text-center relative z-10">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-          Still not Sure? Join our Free Orientation Webinar
+          {t("title")}
         </h2>
         <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-          Understand the training, meet the teachers, and ask questions before deciding.
+          {t("desc")}
         </p>
 
         {/* Interactive Registration Button & Dialog Island */}

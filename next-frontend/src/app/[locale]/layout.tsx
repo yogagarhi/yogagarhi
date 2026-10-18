@@ -154,9 +154,21 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  setRequestLocale(locale);
+  const messages: any = await getMessages();
 
-  const messages = await getMessages();
+  // Pick only layout messages for root client provider to keep First Load JS & HTML payload tiny
+  const layoutMessages = {
+    nav: messages.nav,
+    navDropdown: messages.navDropdown,
+    promo: messages.promo,
+    switcher: messages.switcher,
+    common: messages.common,
+    footer: messages.footer,
+    dialogs: messages.dialogs,
+    home: {
+      ready: messages.home?.ready,
+    },
+  };
 
   return (
     <html lang={locale} className={`${cormorant.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
@@ -388,7 +400,7 @@ export default async function LocaleLayout({
 })();`
           }}
         />
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={layoutMessages}>
           <Providers>
             <MainLayout>
               {children}

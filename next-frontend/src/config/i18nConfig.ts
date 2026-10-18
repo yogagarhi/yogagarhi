@@ -5,7 +5,7 @@ export interface LocaleConfig {
   name: string;        // English name
   nativeName: string;  // Native name displayed in dropdown
   reviewed: boolean;   // Quality Gate: false = noindex, excluded from sitemap & hreflang
-  showInSwitcher: boolean; // Controls whether this locale appears in the LanguageSwitcher dropdown
+  showInSwitcher?: boolean; // Legacy/global fallback
 }
 
 export const LOCALES_CONFIG: Record<string, LocaleConfig> = {
@@ -40,11 +40,33 @@ export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 
 export const DEFAULT_LOCALE: SupportedLocale = 'en';
 
+/**
+ * Per-page translation configuration.
+ * Only pages listed here with their translated locales will show those locales in the LanguageSwitcher.
+ * Homepage ('/') and 200hr Bali page ('/200-hour-yoga-teacher-training-in-bali') have full 11-locale translations.
+ * All other routes show only English ('en').
+ */
+export const TRANSLATED_PAGES: Record<string, readonly SupportedLocale[]> = {
+  '/': SUPPORTED_LOCALES,
+  '/200-hour-yoga-teacher-training-in-bali': SUPPORTED_LOCALES,
+};
+
+export function getAvailableLocalesForPath(pathname: string): readonly SupportedLocale[] {
+  if (!pathname) return ['en'];
+  // Normalize pathname: ensure leading slash, remove trailing slash (except for '/')
+  const normalized = pathname === '/' ? '/' : pathname.replace(/\/$/, '');
+  return TRANSLATED_PAGES[normalized] || ['en'];
+}
+
 export function isLocaleReviewed(locale: string): boolean {
   return LOCALES_CONFIG[locale]?.reviewed ?? false;
 }
 
-export function isLocaleShownInSwitcher(locale: string): boolean {
+export function isLocaleShownInSwitcher(locale: string, pathname?: string): boolean {
+  if (pathname) {
+    const available = getAvailableLocalesForPath(pathname);
+    return available.includes(locale as SupportedLocale);
+  }
   return LOCALES_CONFIG[locale]?.showInSwitcher ?? false;
 }
 

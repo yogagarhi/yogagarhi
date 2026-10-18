@@ -1,8 +1,10 @@
 import React from "react";
+import { useTranslations } from "next-intl";
 import { HelpCircle, ChevronDown } from "lucide-react";
 import { COURSE_200_FAQS } from "@/constants/course200Data";
 
 export default function CourseFAQSection() {
+  const t = useTranslations("course200");
   if (!COURSE_200_FAQS || COURSE_200_FAQS.length === 0) return null;
 
   return (
@@ -13,14 +15,11 @@ export default function CourseFAQSection() {
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-3">
               <HelpCircle className="w-3.5 h-3.5" />
-              <span>Got Questions?</span>
+              <span>FAQ</span>
             </div>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Frequently Asked Questions
+              {t("faqsHeading")}
             </h2>
-            <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
-              Everything you need to know about our 200-hour residential teacher training in Gianyar, Bali.
-            </p>
           </div>
 
           {/* Accordion / Details List */}

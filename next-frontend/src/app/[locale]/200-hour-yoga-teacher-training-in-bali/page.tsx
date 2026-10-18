@@ -5,6 +5,8 @@ import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails"
 import { courseData } from "@/constants/courses";
 import { BATCHES_200_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
 import { COURSE_200_FAQS } from "@/constants/course200Data";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
 
 /* =========================
    SEO METADATA
@@ -15,11 +17,17 @@ export async function generateMetadata({
     params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
     const { locale } = await params;
-    const course = courseData["200-hour"];
+    let messages: any;
+    try {
+        messages = (await import(`@/messages/${locale}.json`)).default;
+    } catch (e) {
+        messages = (await import(`@/messages/en.json`)).default;
+    }
 
-    const title = "200 Hour Yoga Teacher Training in Bali 2027 | YogaGarhi";
+    const title = messages.course200?.metaTitle || "200 Hour Yoga Teacher Training in Bali 2027 | YogaGarhi";
 
     const description =
+        messages.course200?.metaDesc ||
         "Join residential 200-Hour Yoga Teacher Training in Bali (RYT 200). Small batches of 8–10, Himalayan lineage, all-inclusive from $999 USD.";
 
     const url =
@@ -74,7 +82,24 @@ export const revalidate = 86400; // Revalidate daily (24h) to keep batch dates f
 /* =========================
    PAGE
 ========================= */
-export default function Page() {
+export default async function Page({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+
+    const messages: any = await getMessages();
+    const courseClientMessages = {
+        course200: messages.course200,
+        common: messages.common,
+        dialogs: messages.dialogs,
+        home: {
+            whyChoose: messages.home?.whyChoose,
+        },
+    };
+
     const course = courseData["200-hour"];
     const initialBatches = filterUpcomingBatches(BATCHES_200_HOUR);
     const pageUrl =
@@ -88,8 +113,9 @@ export default function Page() {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "200 Hour Yoga Teacher Training in Bali | Yogagarhi",
-        "description": "Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation.",
+        "headline": messages.course200?.metaTitle || "200 Hour Yoga Teacher Training in Bali | Yogagarhi",
+        "description": messages.course200?.metaDesc || "Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation.",
+        "inLanguage": locale,
         "image": "https://www.yogagarhi.com/og-image.jpg",
         "author": {
             "@type": "Organization",
@@ -113,9 +139,9 @@ export default function Page() {
     const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": "200 Hour Yoga Teacher Training in Bali | Yogagarhi",
-        "description": "Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation.",
-        "inLanguage": "en",
+        "name": messages.course200?.metaTitle || "200 Hour Yoga Teacher Training in Bali | Yogagarhi",
+        "description": messages.course200?.metaDesc || "Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation.",
+        "inLanguage": locale,
         "educationalCredentialAwarded":
             "RYT 200 Yoga Alliance Certification",
         "provider": {
@@ -312,10 +338,12 @@ export default function Page() {
                 }}
             />
 
-            <Course200Hour
-                initialBatches={initialBatches}
-                syllabusSlot={<CourseSyllabusDetails courseKey="200-hour" />}
-            />
+            <NextIntlClientProvider locale={locale} messages={courseClientMessages}>
+                <Course200Hour
+                    initialBatches={initialBatches}
+                    syllabusSlot={<CourseSyllabusDetails courseKey="200-hour" />}
+                />
+            </NextIntlClientProvider>
         </>
     );
 }

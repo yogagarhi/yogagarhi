@@ -1,7 +1,10 @@
 import { Sparkles } from "lucide-react";
 import YTTCSupportInteractiveIsland from "./YTTCSupportInteractiveIsland";
+import { getTranslations } from "next-intl/server";
 
-export default function YTTCSupportSection() {
+export default async function YTTCSupportSection() {
+  const t = await getTranslations("home.support");
+
   return (
     <section
       className="py-24 bg-background relative overflow-hidden"
@@ -29,13 +32,13 @@ export default function YTTCSupportSection() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-900 dark:text-amber-200 text-sm font-bold mb-4">
             <Sparkles className="w-4 h-4" />
-            Complete Journey Support
+            {t("badge")}
           </div>
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
-            Support Before, During & After Your Teacher Training Course in Bali
+            {t("title")}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            We prepare you before the course and support you after certification so you don’t feel lost at any stage.
+            {t("desc")}
           </p>
         </div>
 

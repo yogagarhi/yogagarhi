@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import {
   Dialog,
@@ -23,6 +24,7 @@ const courses = [
 ];
 
 export default function EnrollmentModal() {
+  const t = useTranslations("dialogs");
   const { showEnrollDialog, setShowEnrollDialog } = useEnrollment();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -133,12 +135,12 @@ export default function EnrollmentModal() {
               ) : (
                 <>
                   <GraduationCap className="w-8 h-8" />
-                  Begin Your Yoga Journey
+                  {t("enrollTitle")}
                 </>
               )}
             </DialogTitle>
             {!isSubmitted && (
-              <p className="text-primary-foreground/80 text-sm">Fill in your details and we&#39;ll be in touch shortly</p>
+              <p className="text-primary-foreground/80 text-sm">{t("enrollDesc")}</p>
             )}
           </div>
         </div>
@@ -183,7 +185,7 @@ export default function EnrollmentModal() {
             <div className="px-6 sm:px-8 py-6 space-y-4 overflow-y-auto max-h-[65vh] bg-background">
               {/* Full Name */}
               <div className="space-y-1.5">
-                <Label htmlFor="enroll-name" className="text-sm font-semibold text-foreground">Full Name <span className="text-destructive">*</span></Label>
+                <Label htmlFor="enroll-name" className="text-sm font-semibold text-foreground">{t("fullName")} <span className="text-destructive">*</span></Label>
                 <Input
                   id="enroll-name"
                   placeholder="Enter your full name"
@@ -196,7 +198,7 @@ export default function EnrollmentModal() {
 
               {/* Email Address */}
               <div className="space-y-1.5">
-                <Label htmlFor="enroll-email" className="text-sm font-semibold text-foreground">Email Address <span className="text-destructive">*</span></Label>
+                <Label htmlFor="enroll-email" className="text-sm font-semibold text-foreground">{t("email")} <span className="text-destructive">*</span></Label>
                 <Input
                   id="enroll-email"
                   type="email"
@@ -210,7 +212,7 @@ export default function EnrollmentModal() {
 
               {/* Contact / WhatsApp */}
               <div className="space-y-1.5">
-                <Label htmlFor="enroll-phone" className="text-sm font-semibold text-foreground">Contact / WhatsApp <span className="text-destructive">*</span></Label>
+                <Label htmlFor="enroll-phone" className="text-sm font-semibold text-foreground">{t("phone")} <span className="text-destructive">*</span></Label>
                 <div className="flex gap-2">
                   <select
                     value={formData.countryCode}
@@ -240,7 +242,7 @@ export default function EnrollmentModal() {
               {/* Grid: Course and Date */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-1.5">
-                  <Label htmlFor="enroll-course" className="text-sm font-semibold text-foreground">Course <span className="text-destructive">*</span></Label>
+                  <Label htmlFor="enroll-course" className="text-sm font-semibold text-foreground">{t("course")} <span className="text-destructive">*</span></Label>
                   <div className="relative">
                     <select
                       id="enroll-course"
@@ -261,7 +263,7 @@ export default function EnrollmentModal() {
                 </div>
 
                 <div className="space-y-1.5">
-                  <Label htmlFor="enroll-course-date" className="text-sm font-semibold text-foreground">Date <span className="text-destructive">*</span></Label>
+                  <Label htmlFor="enroll-course-date" className="text-sm font-semibold text-foreground">{t("date")} <span className="text-destructive">*</span></Label>
                   <div className="relative">
                     <select
                       id="enroll-course-date"
@@ -291,7 +293,7 @@ export default function EnrollmentModal() {
               {/* Grid: Room and Gender */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-1.5">
-                  <Label htmlFor="enroll-accommodation" className="text-sm font-semibold text-foreground">Room <span className="text-destructive">*</span></Label>
+                  <Label htmlFor="enroll-accommodation" className="text-sm font-semibold text-foreground">{t("room")} <span className="text-destructive">*</span></Label>
                   <div className="relative">
                     <select
                       id="enroll-accommodation"
@@ -387,7 +389,7 @@ export default function EnrollmentModal() {
                 size="lg"
                 disabled={isLoading || !isFormValid}
               >
-                {isLoading ? "Submitting..." : "Submit Enrollment Request"}
+                {isLoading ? "Submitting..." : t("submitApplication")}
               </Button>
               <p className="text-center text-[10px] text-muted-foreground mt-3 flex items-center justify-center gap-1.5 uppercase tracking-wider font-medium">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500" />

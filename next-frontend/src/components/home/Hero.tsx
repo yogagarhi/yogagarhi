@@ -1,7 +1,9 @@
 import HeroCTAButtons from "./HeroCTAButtons";
 import { PROMO_OFFER } from "@/constants/offers";
+import { getTranslations } from "next-intl/server";
 
-export default function Hero() {
+export default async function Hero() {
+  const t = await getTranslations("home.hero");
   return (
     <>
       <section className="relative flex items-center justify-center overflow-hidden bg-[#1c130d] md:min-h-[90vh] pt-10 pb-12 sm:pt-14 sm:pb-16 md:pt-32 md:pb-20">
@@ -55,7 +57,7 @@ export default function Hero() {
         <div className="relative z-20 container mx-auto px-4 text-center text-primary-foreground">
           <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6 md:space-y-8">
             <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-[0.25em] sm:tracking-[0.3em] uppercase opacity-90">
-              Welcome To
+              {t("welcome")}
             </p>
             <div className="font-heading text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
               {"Yogagarh".split("").map((char, index) => (
@@ -79,10 +81,10 @@ export default function Hero() {
               </span>
             </div>
             <h1 className="text-lg sm:text-xl md:text-3xl font-heading font-medium max-w-4xl mx-auto leading-snug">
-              Yoga Alliance Certified Yoga Teacher Training in Bali & Rishikesh
+              {t("h1")}
             </h1>
             <p className="text-sm sm:text-lg md:text-xl font-light max-w-2xl mx-auto">
-              Ancient Himalayan wisdom. Authentic yoga, lived & taught.
+              {t("tagline")}
             </p>
 
             {/* Desktop-Only Stats (Inside Hero on Desktop, Shifted Right Below Hero on Mobile) */}
@@ -91,12 +93,12 @@ export default function Hero() {
               <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
                 <div className="text-center">
                   <p className="font-heading text-3xl md:text-4xl font-bold">500+</p>
-                  <p className="text-xs md:text-sm opacity-80">Graduated Students</p>
+                  <p className="text-xs md:text-sm opacity-80">{t("statStudents")}</p>
                 </div>
                 <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
                 <div className="text-center">
-                  <p className="font-heading text-3xl md:text-4xl font-bold">Multi-Style</p>
-                  <p className="text-xs md:text-sm opacity-80">Authentic Yoga</p>
+                  <p className="font-heading text-3xl md:text-4xl font-bold">{t("statStyle")}</p>
+                  <p className="text-xs md:text-sm opacity-80">{t("statStyleSub")}</p>
                 </div>
                 <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
                 <div className="text-center">
@@ -109,7 +111,7 @@ export default function Hero() {
               <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
                 <div className="text-center">
                   <p className="font-heading text-3xl md:text-4xl font-bold">Yoga Alliance</p>
-                  <p className="text-xs md:text-sm opacity-80">Certified School</p>
+                  <p className="text-xs md:text-sm opacity-80">{t("statCertSub")}</p>
                 </div>
                 <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
                 <div className="text-center">
@@ -146,11 +148,11 @@ export default function Hero() {
           <div className="grid grid-cols-3 gap-2 items-start">
             <div className="text-center">
               <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">500+</p>
-              <p className="text-[11px] min-[380px]:text-xs opacity-80">Graduated Students</p>
+              <p className="text-[11px] min-[380px]:text-xs opacity-80">{t("statStudents")}</p>
             </div>
             <div className="text-center">
-              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">Multi-Style</p>
-              <p className="text-[11px] min-[380px]:text-xs opacity-80">Authentic Yoga</p>
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">{t("statStyle")}</p>
+              <p className="text-[11px] min-[380px]:text-xs opacity-80">{t("statStyleSub")}</p>
             </div>
             <div className="text-center">
               <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">Ayurveda</p>
@@ -161,7 +163,7 @@ export default function Hero() {
           <div className="flex items-start justify-center gap-6 min-[380px]:gap-8">
             <div className="text-center">
               <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">Yoga Alliance</p>
-              <p className="text-[11px] min-[380px]:text-xs opacity-80">Certified School</p>
+              <p className="text-[11px] min-[380px]:text-xs opacity-80">{t("statCertSub")}</p>
             </div>
             <div className="text-center">
               <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">World&apos;s First</p>

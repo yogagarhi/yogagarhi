@@ -5,7 +5,10 @@ import { Button } from "@/components/ui/button";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { useBooking } from "@/components/BookingDialog";
 
+import { useTranslations } from "next-intl";
+
 export default function HeroCTAButtons() {
+  const t = useTranslations("home.hero");
   const { setShowQuickEnquiry } = useQuickEnquiry();
   const { setShowBookingDialog } = useBooking();
 
@@ -18,7 +21,7 @@ export default function HeroCTAButtons() {
         className="h-10 min-[375px]:h-11 sm:h-14 px-3.5 min-[375px]:px-5 sm:px-10 text-xs min-[375px]:text-sm sm:text-base"
         onClick={() => setShowQuickEnquiry(true)}
       >
-        Quick Enquiry
+        {t("quickEnquiry")}
       </Button>
       <Button
         type="button"
@@ -27,7 +30,7 @@ export default function HeroCTAButtons() {
         className="h-10 min-[375px]:h-11 sm:h-14 px-3.5 min-[375px]:px-5 sm:px-10 text-xs min-[375px]:text-sm sm:text-base"
         onClick={() => setShowBookingDialog(true)}
       >
-        Book an Appointment
+        {t("bookCall")}
       </Button>
     </div>
   );

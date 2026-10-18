@@ -4,55 +4,59 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Award } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import CoursesHelpButton from "./CoursesHelpButton";
+import { getTranslations } from "next-intl/server";
 
 const course100hr = getCloudinaryImage("course-100hr-new.png");
 const course200hr = getCloudinaryImage("course-200hr-new.png");
 const course300hr = getCloudinaryImage("course-300hr-v2.png");
 
-const courses = [
-  {
-    hours: "100",
-    title: "Hour YTTC",
-    tagline: "Begin Your Journey",
-    description: "Ideal for deepening practice before full teacher training.",
-    duration: "12 Days",
-    level: "Beginner",
-    price: "$599",
-    originalPrice: "$899",
-    savings: "$300",
-    href: "/100-hour-yoga-teacher-training-in-bali",
-    image: course100hr,
-  },
-  {
-    hours: "200",
-    title: "Hour YTTC",
-    tagline: "Transform Yourself",
-    description: "Best choice if you want to deepen your practice & if you want to teach yoga internationally after certification.",
-    duration: "24 Days",
-    level: "Beginner to Intermediate",
-    price: "$999",
-    originalPrice: "$1299",
-    savings: "$300",
-    href: "/200-hour-yoga-teacher-training-in-bali",
-    image: course200hr,
-    featured: true,
-  },
-  {
-    hours: "300",
-    title: "Hour YTTC",
-    tagline: "Master Your Practice",
-    description: "Advanced training to refine teaching skills and depth.",
-    duration: "28 Days",
-    level: "Intermediate to Advanced",
-    price: "$2399",
-    originalPrice: "$2999",
-    savings: "$600",
-    href: "/300-hour-yoga-teacher-training-in-bali",
-    image: course300hr,
-  },
-];
+export default async function CoursesSection() {
+  const t = await getTranslations("home.courses");
+  const tCommon = await getTranslations("common");
 
-export default function CoursesSection() {
+  const courses = [
+    {
+      hours: "100",
+      title: "Hour YTTC",
+      tagline: t("c100Tagline"),
+      description: t("c100Desc"),
+      duration: `12 ${tCommon("days")}`,
+      level: t("beginner"),
+      price: "$599",
+      originalPrice: "$899",
+      savings: "$300",
+      href: "/100-hour-yoga-teacher-training-in-bali",
+      image: course100hr,
+    },
+    {
+      hours: "200",
+      title: "Hour YTTC",
+      tagline: t("c200Tagline"),
+      description: t("c200Desc"),
+      duration: `24 ${tCommon("days")}`,
+      level: t("beginnerToIntermediate"),
+      price: "$999",
+      originalPrice: "$1299",
+      savings: "$300",
+      href: "/200-hour-yoga-teacher-training-in-bali",
+      image: course200hr,
+      featured: true,
+    },
+    {
+      hours: "300",
+      title: "Hour YTTC",
+      tagline: t("c300Tagline"),
+      description: t("c300Desc"),
+      duration: `28 ${tCommon("days")}`,
+      level: t("intermediateToAdvanced"),
+      price: "$2399",
+      originalPrice: "$2999",
+      savings: "$600",
+      href: "/300-hour-yoga-teacher-training-in-bali",
+      image: course300hr,
+    },
+  ];
+
   return (
     <section
       className="py-24 bg-background relative overflow-hidden"
@@ -67,22 +71,22 @@ export default function CoursesSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-3 mb-6">
             <div className="w-12 h-px bg-primary/40" />
-            <span className="text-primary text-sm font-medium tracking-[0.2em] uppercase">Our Programs</span>
+            <span className="text-primary text-sm font-medium tracking-[0.2em] uppercase">{t("tag")}</span>
             <div className="w-12 h-px bg-primary/40" />
           </div>
 
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-            Yoga Teacher Training
+            {t("title")}
           </h2>
           <p className="font-heading text-2xl md:text-3xl text-primary">
-            Courses in Bali, Ubud
+            {t("subtitle")}
           </p>
         </div>
 
         {/* Cards Container */}
         <div className="relative">
           <div className="flex flex-col gap-6 md:grid md:grid-cols-3">
-            {courses.map((course, index) => (
+            {courses.map((course) => (
               <div
                 key={course.hours}
                 className="w-full group"
@@ -95,7 +99,7 @@ export default function CoursesSection() {
                   {/* Featured Label */}
                   {course.featured && (
                     <div className="absolute top-0 left-0 right-0 z-20 bg-primary text-primary-foreground text-center py-2 text-xs font-bold tracking-widest uppercase">
-                      Most Popular Choice
+                      {t("popularChoice")}
                     </div>
                   )}
 
@@ -146,14 +150,14 @@ export default function CoursesSection() {
                     {/* Pricing */}
                     <div className="flex items-end justify-between mb-6">
                       <div>
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Starting from</p>
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{t("startingFrom")}</p>
                         <div className="flex items-baseline gap-2">
                           <span className="font-heading text-3xl font-bold text-foreground">{course.price}</span>
                           <span className="text-sm text-muted-foreground line-through">{course.originalPrice}</span>
                         </div>
                       </div>
                       <span className="text-xs font-semibold text-amber-900 dark:text-amber-200 bg-amber-100 dark:bg-amber-900/40 px-3 py-1.5 rounded-full">
-                        Save {course.savings}
+                        {t("save")} {course.savings}
                       </span>
                     </div>
 
@@ -167,7 +171,7 @@ export default function CoursesSection() {
                       asChild
                     >
                       <Link href={course.href} className="flex items-center justify-center gap-2">
-                        Explore Course
+                        {t("exploreCourse")}
                         <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                       </Link>
                     </Button>
@@ -180,7 +184,7 @@ export default function CoursesSection() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-14">
-          <p className="text-muted-foreground mb-3">Need help choosing the right program?</p>
+          <p className="text-muted-foreground mb-3">{t("needHelp")}</p>
           <CoursesHelpButton />
         </div>
       </div>

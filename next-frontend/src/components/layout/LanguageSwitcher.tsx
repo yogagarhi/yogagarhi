@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useTransition } from "react";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/routing";
 import { Globe, ChevronDown, Check } from "lucide-react";
-import { SUPPORTED_LOCALES, LOCALES_CONFIG, SupportedLocale } from "@/config/i18nConfig";
+import { SUPPORTED_LOCALES, LOCALES_CONFIG, SupportedLocale, getAvailableLocalesForPath } from "@/config/i18nConfig";
 
 interface LanguageSwitcherProps {
   className?: string;
@@ -97,10 +97,12 @@ export default function LanguageSwitcher({
             Languages
           </div>
           <div className="max-h-64 overflow-y-auto py-1">
-            {SUPPORTED_LOCALES.filter((loc) => LOCALES_CONFIG[loc]?.showInSwitcher || loc === locale).map((loc) => {
-              const config = LOCALES_CONFIG[loc];
-              const isActive = loc === locale;
-              return (
+            {(() => {
+              const availableLocales = getAvailableLocalesForPath(pathname);
+              return SUPPORTED_LOCALES.filter((loc) => availableLocales.includes(loc) || loc === locale).map((loc) => {
+                const config = LOCALES_CONFIG[loc];
+                const isActive = loc === locale;
+                return (
                 <button
                   key={loc}
                   role="menuitem"
@@ -127,8 +129,9 @@ export default function LanguageSwitcher({
                   )}
                 </button>
               );
-            })}
-          </div>
+            });
+          })()}
+        </div>
         </div>
       )}
     </div>

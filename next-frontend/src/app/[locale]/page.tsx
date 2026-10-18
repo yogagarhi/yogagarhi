@@ -1,38 +1,73 @@
 import { Metadata } from "next";
 import Index from "@/components/pages/Index";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
+import { applyQualityGate } from "@/utils/seoQualityGate";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi",
-  },
-  description: "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your journey!",
-  keywords: "yoga teacher training Bali, YTTC Ubud, 200 hour yoga certification, yoga alliance certified, yoga retreat Bali, yoga school Indonesia, RYT 200, yoga ashram Bali, meditation training, pranayama course, YogaGarhi",
-  alternates: {
-    canonical: "https://www.yogagarhi.com",
-  },
-  openGraph: {
-    title: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi",
-    description: "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your journey!",
-    url: "/",
-    type: "website",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "YogaGarhi - Yoga Teacher Training Bali",
-      }
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi RYT",
-    description: "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage.",
-    images: ["/opengraph-image"],
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  let messages: any;
+  try {
+    messages = (await import(`@/messages/${locale}.json`)).default;
+  } catch (e) {
+    messages = (await import(`@/messages/en.json`)).default;
+  }
 
-export default function Page() {
+  const tHero = messages.home?.hero;
+  const title = `${tHero?.h1 || "Yoga Alliance Certified Yoga Teacher Training in Bali & Rishikesh"} | YogaGarhi`;
+  const description = tHero?.tagline || "Ancient Himalayan wisdom. Authentic yoga, lived & taught.";
+
+  return applyQualityGate({
+    title: {
+      absolute: title,
+    },
+    description,
+    keywords: "yoga teacher training Bali, YTTC Ubud, 200 hour yoga certification, yoga alliance certified, yoga retreat Bali, yoga school Indonesia, RYT 200, yoga ashram Bali, meditation training, pranayama course, YogaGarhi",
+    alternates: {
+      canonical: "https://www.yogagarhi.com",
+    },
+    openGraph: {
+      title,
+      description,
+      url: "/",
+      type: "website",
+      images: [
+        {
+          url: "/opengraph-image",
+          width: 1200,
+          height: 630,
+          alt: title,
+        }
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/opengraph-image"],
+    },
+  }, locale);
+}
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const messages: any = await getMessages();
+  const pageMessages = {
+    home: messages.home,
+    common: messages.common,
+    dialogs: messages.dialogs,
+  };
+
   const homeFaqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -114,7 +149,9 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeVideoSchema) }}
       />
-      <Index />
+      <NextIntlClientProvider locale={locale} messages={pageMessages}>
+        <Index />
+      </NextIntlClientProvider>
     </>
   );
 }

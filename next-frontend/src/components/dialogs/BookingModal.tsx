@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -22,6 +23,7 @@ export default function BookingModal({
   showThankYou,
   setShowThankYou,
 }: BookingModalProps) {
+  const t = useTranslations("dialogs");
   const router = useRouter();
 
   // Calendar state
@@ -115,11 +117,11 @@ export default function BookingModal({
             <DialogHeader className="p-6 pb-0">
               <DialogTitle className="font-heading text-2xl flex items-center gap-2">
                 <Calendar className="w-6 h-6 text-primary" />
-                {step === 'calendar' ? 'Book a Call with YogaGarhi' : 'Complete Your Booking'}
+                {step === 'calendar' ? t("bookingTitle") : t("bookingTitle")}
               </DialogTitle>
               <DialogDescription className={`text-sm text-muted-foreground mt-2 ${step === 'calendar' ? 'sr-only' : ''}`}>
                 {step === 'calendar'
-                  ? 'Select a date and time for your call with us.'
+                  ? t("bookingDesc")
                   : `Scheduled for ${selectedDay} ${months[selectedMonth]} ${currentYear} at ${selectedTime}`
                 }
               </DialogDescription>
@@ -135,7 +137,7 @@ export default function BookingModal({
                   </div>
 
                   <h3 className="font-heading text-lg font-bold text-center mb-4">
-                    Select a Date
+                    {t("selectDate")}
                   </h3>
 
                   {/* Month Navigation */}
@@ -275,7 +277,7 @@ export default function BookingModal({
                 {/* Name */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    Full Name <span className="text-destructive">*</span>
+                    {t("fullName")} <span className="text-destructive">*</span>
                   </label>
                   <input
                     type="text"
@@ -289,7 +291,7 @@ export default function BookingModal({
                 {/* Email */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    Email Address <span className="text-destructive">*</span>
+                    {t("email")} <span className="text-destructive">*</span>
                   </label>
                   <input
                     type="email"
@@ -303,7 +305,7 @@ export default function BookingModal({
                 {/* Phone */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    Contact / WhatsApp Number <span className="text-destructive">*</span>
+                    {t("phone")} <span className="text-destructive">*</span>
                   </label>
                   <div className="flex gap-2">
                     <select
@@ -332,7 +334,7 @@ export default function BookingModal({
                 {/* Message */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
-                    Message (Optional)
+                    {t("message")}
                   </label>
                   <textarea
                     value={bookingForm.message}
@@ -359,7 +361,7 @@ export default function BookingModal({
                     onClick={handleSubmit}
                   >
                     <Phone className="w-4 h-4 mr-2" />
-                    {isSubmitting ? "Processing..." : "Confirm Booking"}
+                    {isSubmitting ? "Processing..." : t("confirmBooking")}
                   </Button>
                 </div>
               </div>

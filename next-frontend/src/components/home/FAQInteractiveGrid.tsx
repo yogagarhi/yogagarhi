@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { ChevronDown, MessageCircle, HelpCircle, Plane, Calendar, Clock, MapPin, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -96,9 +97,20 @@ const top5MobileFaqs: FAQItem[] = [
 ];
 
 export default function FAQInteractiveGrid() {
+  const t = useTranslations("home.faq");
   const [activeCategory, setActiveCategory] = useState("travel");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [mobileOpenIndex, setMobileOpenIndex] = useState<number | null>(0);
+
+  const getCategoryLabel = (id: string) => {
+    switch(id) {
+      case "travel": return t("tabTravel");
+      case "schedule": return t("tabSchedule");
+      case "stay": return t("tabStay");
+      case "courses": return t("tabCourses");
+      default: return id;
+    }
+  };
 
   const filteredFaqs = faqs.filter((faq) => faq.category === activeCategory);
 
@@ -112,14 +124,14 @@ export default function FAQInteractiveGrid() {
               <HelpCircle className="w-5 h-5 text-primary" />
             </div>
             <span className="text-amber-800 dark:text-amber-300 font-bold tracking-wide uppercase text-sm">
-              Got Questions?
+              {t("badge")}
             </span>
           </div>
           <h2 className="font-heading text-3xl font-bold text-foreground mb-2">
-            Frequently Asked Questions
+            {t("title")}
           </h2>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-md mx-auto">
-            Essential answers about our yoga teacher training in Bali.
+            {t("desc")}
           </p>
         </div>
 
@@ -184,16 +196,15 @@ export default function FAQInteractiveGrid() {
               <HelpCircle className="w-6 h-6 text-primary" />
             </div>
             <span className="text-amber-800 dark:text-amber-300 font-bold tracking-wide uppercase text-sm">
-              Got Questions?
+              {t("badge")}
             </span>
           </div>
 
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Frequently<br />Asked Questions
+            {t("title")}
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Everything you need to know about our yoga teacher training courses in Bali.
-            Can't find your answer? Reach out to us directly.
+            {t("desc")}
           </p>
 
           {/* Category Tabs */}
@@ -216,7 +227,7 @@ export default function FAQInteractiveGrid() {
                     activeCategory === cat.id ? "text-primary-foreground" : "text-primary"
                   }`}
                 />
-                <span className="font-medium">{cat.label}</span>
+                <span className="font-medium">{getCategoryLabel(cat.id)}</span>
                 <ChevronDown
                   className={`w-4 h-4 ml-auto transition-transform ${
                     activeCategory === cat.id ? "rotate-180" : ""

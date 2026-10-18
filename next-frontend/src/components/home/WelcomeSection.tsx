@@ -1,16 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Leaf, Sun, Mountain, Flower2, CheckCircle2, Award, MessageCircle, Mail } from "lucide-react";
 import WelcomeVideoIsland from "./WelcomeVideoIsland";
+import { getTranslations } from "next-intl/server";
 
-const highlights = [
-  { icon: Leaf, label: "Ancient Wisdom" },
-  { icon: Sun, label: "Holistic Growth" },
-  { icon: Mountain, label: "Sacred Space" },
-  { icon: Flower2, label: "Inner Peace" },
-  { icon: Award, label: "Yoga Alliance Certified" },
-];
+export default async function WelcomeSection() {
+  const t = await getTranslations("home.welcome");
 
-export default function WelcomeSection() {
+  const highlights = [
+    { icon: Leaf, label: t("highlights.ancientWisdom") },
+    { icon: Sun, label: t("highlights.holisticGrowth") },
+    { icon: Mountain, label: t("highlights.sacredSpace") },
+    { icon: Flower2, label: t("highlights.innerPeace") },
+    { icon: Award, label: t("highlights.yaCertified") },
+  ];
 
   return (
     <section
@@ -18,7 +20,6 @@ export default function WelcomeSection() {
       style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 900px' }}
     >
       {/* Decorative Background Elements */}
-
       <div className="absolute inset-0 pointer-events-none">
         {/* Lotus SVG Pattern - Top Right */}
         <svg
@@ -42,11 +43,11 @@ export default function WelcomeSection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
-            Welcome to YogaGarhi
+            {t("badge")}
           </span>
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Yoga Teacher Training
-            <span className="block text-primary mt-2">in Bali</span>
+            {t("title")}
+            <span className="block text-primary mt-2">{t("titleInBali")}</span>
           </h2>
 
           {/* Decorative Divider */}
@@ -81,16 +82,16 @@ export default function WelcomeSection() {
           <div className="space-y-6 order-1 lg:order-2">
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p className="text-lg">
-                Welcome to <strong className="text-foreground font-semibold">YogaGarhi</strong>, a sacred space where ancient wisdom meets modern living. Rooted in the timeless traditions of yoga and wellness, YogaGarhi is more than just a place to practice – it is a sanctuary for self-discovery, healing, and inner transformation.
+                {t("p1")}
               </p>
 
               <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 my-6">
-                <p className="font-heading font-bold text-foreground mb-4">In this training, you will:</p>
+                <p className="font-heading font-bold text-foreground mb-4">{t("inTrainingTitle")}</p>
                 <ul className="space-y-3">
                   {[
-                    "Learn Hatha, Ashtanga & Vinyasa with alignment and safety",
-                    "Understand yoga philosophy & Ayurveda foundations",
-                    "Practice real teaching skills, not just personal practice"
+                    t("inTraining1"),
+                    t("inTraining2"),
+                    t("inTraining3")
                   ].map((text, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm md:text-base text-muted-foreground italic">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -101,21 +102,21 @@ export default function WelcomeSection() {
               </div>
 
               <p>
-                At YogaGarhi, we believe that yoga is not only about postures but a way of life. Our approach blends the depth of classical yogic practices with contemporary insights to create a holistic journey of the body, mind, and soul.
+                {t("p2")}
               </p>
             </div>
 
             {/* Quote Block */}
             <div className="relative pl-6 py-4 border-l-4 border-primary/40 bg-primary/5 rounded-r-lg">
               <p className="text-foreground italic text-lg">
-                "Every breath is a step towards freedom, every practice a journey towards wholeness."
+                {t("quote")}
               </p>
             </div>
 
             {/* Ask Us Anything Section */}
             <div className="mt-10 p-8 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm">
               <h3 className="font-heading text-2xl font-medium text-foreground mb-6">
-                Ask Us Anything?
+                {t("askAnything")}
               </h3>
               <div className="flex flex-wrap gap-4">
                 <Button
@@ -139,7 +140,7 @@ export default function WelcomeSection() {
                 >
                   <a href="mailto:yogagarhi@gmail.com">
                     <Mail className="w-5 h-5" />
-                    Email Us
+                    {t("emailUs")}
                   </a>
                 </Button>
               </div>

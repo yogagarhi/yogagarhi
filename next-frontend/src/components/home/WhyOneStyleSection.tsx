@@ -1,5 +1,6 @@
 import { Flame, Droplets, Wind, Sparkles } from "lucide-react";
 import dynamic from "next/dynamic";
+import { getTranslations } from "next-intl/server";
 
 const PrakritiQuizIsland = dynamic(() => import("@/components/home/PrakritiQuizIsland"));
 
@@ -76,7 +77,9 @@ const MandalaPattern = ({ className }: { className?: string }) => (
   </svg>
 );
 
-export default function WhyOneStyleSection() {
+export default async function WhyOneStyleSection() {
+  const t = await getTranslations("home.dosha");
+
   return (
     <section
       id="prakriti-section"
@@ -100,16 +103,15 @@ export default function WhyOneStyleSection() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Ancient Wisdom, Personalized Practice</span>
+            <span className="text-sm font-medium text-primary">{t("badge")}</span>
           </div>
 
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Discover Your <span className="text-primary">Prakriti</span>
+            {t("title")}
           </h2>
 
           <p className="text-lg text-muted-foreground leading-relaxed">
-            In Ayurveda, your unique constitution—your <em className="text-foreground">Prakriti</em>—determines
-            which yoga practices will bring you into balance. One size never fits all.
+            {t("desc")}
           </p>
 
           {/* Decorative lotus */}
@@ -169,7 +171,7 @@ export default function WhyOneStyleSection() {
 
                 {/* Yoga recommendation */}
                 <div className="pt-4 border-t border-foreground/10 transition-all duration-500 opacity-70 group-hover:opacity-100">
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Ideal Practice</p>
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{t("idealPractice")}</p>
                   <p className="text-sm font-medium text-foreground">{dosha.yogaStyle}</p>
                 </div>
               </div>
@@ -181,14 +183,7 @@ export default function WhyOneStyleSection() {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/50 shadow-lg">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              At Yogagarhi, we teach <strong className="text-foreground">multi-style yoga</strong> not to confuse,
-              but to liberate. By understanding Hatha, Vinyasa, Ashtanga, and Iyengar as complete systems,
-              you learn to adapt yoga to the individual—not force the individual into yoga.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              Our Prakriti-based approach considers your unique constitution. As a future teacher,
-              you'll discover which practices serve different natures, making your teaching truly
-              responsive to each student.
+              {t("philosophy")}
             </p>
           </div>
         </div>

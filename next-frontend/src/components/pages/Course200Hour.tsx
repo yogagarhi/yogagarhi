@@ -1,6 +1,7 @@
 "use client";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { useState, useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -572,6 +573,9 @@ const quizQuestions = [
 ];
 
 export default function Course200Hour({ initialBatches, syllabusSlot }: { initialBatches?: CourseBatch[]; syllabusSlot?: React.ReactNode } = {}) {
+  const t = useTranslations("course200");
+  const tDialog = useTranslations("dialogs");
+  const tCommon = useTranslations("common");
   const upcomingDates = useUpcomingBatches(BATCHES_200_HOUR, initialBatches);
   const { toast } = useToast();
   const router = useRouter();
@@ -1086,19 +1090,19 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
           <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
             <div className="max-w-4xl mx-auto flex flex-col items-center">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tight opacity-0 animate-fade-in text-white leading-tight mb-8" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-                200 Hour Yoga Teacher Training in Bali
+                {t("hero.h1")}
               </h1>
 
               <div className="space-y-6 opacity-0 animate-fade-in mb-8" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
                 <p className="text-xl md:text-3xl font-medium max-w-4xl mx-auto leading-relaxed text-white/90">
-                  24-day Yoga Alliance–certified training in Ubud for aspiring teachers and serious practitioners.
+                  {t("hero.sub")}
                 </p>
               </div>
 
               {/* Trust Line & Pricing */}
               <div className="space-y-4 opacity-0 animate-fade-in mb-8" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
                 <p className="text-lg md:text-xl font-medium text-white/90">
-                  Small Groups of 8–10 • Beginner Friendly • 1-Year Mentorship
+                  {t("hero.quickBatch")} • {t("hero.quickLevel")} • {t("hero.badge")}
                 </p>
                 <div className="inline-block bg-black/30 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/10">
                   <p className="text-white font-semibold">
@@ -1122,7 +1126,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       setShowEnrollDialog(true);
                     }}
                   >
-                    Check Availability
+                    {t("hero.btnReserve")}
                   </Button>
                   <Button
                     variant="outline"
@@ -1133,7 +1137,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       setShowCalendarDialog(true);
                     }}
                   >
-                    Book a Free Video Call
+                    {t("hero.btnCounselor")}
                   </Button>
                 </div>
               </div>
@@ -1160,7 +1164,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   {/* Course Length */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Duration</p>
-                    <p className="font-heading font-semibold text-foreground">24 Days</p>
+                    <p className="font-heading font-semibold text-foreground">{t("hero.quickDuration")}</p>
                   </div>
 
                   {/* Yoga Style */}
@@ -1172,13 +1176,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   {/* Level */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Level</p>
-                    <p className="font-heading font-semibold text-foreground">Beginner - Intermediate</p>
+                    <p className="font-heading font-semibold text-foreground">{t("hero.quickLevel")}</p>
                   </div>
 
                   {/* Certification */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Certification</p>
-                    <p className="font-heading font-semibold text-foreground">Yoga Alliance RYT 200</p>
+                    <p className="font-heading font-semibold text-foreground">{t("hero.quickCert")}</p>
                   </div>
 
                   {/* Price */}
@@ -1196,7 +1200,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       </div>
                       <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform">
                         <Zap className="w-3.5 h-3.5 fill-current" />
-                        Save $300 Now
+                        {t("accommodation.save300")}
                       </div>
                     </div>
                   </div>
@@ -1417,9 +1421,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
               {/* Heading (shows first on mobile, top right on desktop) */}
               <div className="order-1 lg:col-start-2 lg:row-start-1 space-y-4 mb-2 lg:mb-0 text-left">
-                <span className="text-accent font-bold uppercase tracking-widest text-xs">Welcome to YogaGarhi</span>
+                <span className="text-accent font-bold uppercase tracking-widest text-xs">YogaGarhi</span>
                 <h2 className="font-heading text-3xl md:text-4xl font-black text-foreground leading-tight">
-                  A Transformative Journey of Self-Realization
+                  {t("overview.heading")}
                 </h2>
                 <div className="w-16 h-1 bg-accent rounded-full" />
               </div>
@@ -1433,9 +1437,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="order-3 lg:col-start-2 lg:row-start-2 space-y-6 text-muted-foreground leading-relaxed text-left">
                 {/* First 2 paragraphs - always visible */}
                 <p className="text-base sm:text-lg text-foreground/80 font-medium">
-                  Become a Yoga Alliance Registered Yoga Teacher (RYT 200) through Yogagarhi's
-                  200-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
-                  of yoga and self-realization.
+                  {t("overview.story")}
                 </p>
 
                 <p>
@@ -1496,7 +1498,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <section className="py-20 bg-background overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 979px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-              Course Syllabus
+              {t("curriculum.heading")}
             </h2>
             {/* Decorative Book/Scroll Icon */}
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -1509,7 +1511,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Comprehensive curriculum covering all aspects of yoga teacher training
+              {t("curriculum.sub")}
             </p>
 
             {/* Horizontal Scrollable Cards */}
@@ -1896,7 +1898,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
-              Daily Schedule
+              {t("schedule.heading")}
             </h2>
             {/* Decorative Sun Icon */}
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -1911,7 +1913,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
-              A typical day at YogaGarhi is designed to balance intensive learning with rest and integration.
+              {t("schedule.sub")}
             </p>
 
             <div className="max-w-3xl mx-auto">
@@ -2171,7 +2173,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   : 'bg-card text-foreground border border-border hover:bg-secondary'
                   }`}
               >
-                What's Included
+                {t("inclusions.heading")}
               </button>
               <button
                 onClick={() => setActiveInclusionTab('exclusions')}
@@ -2180,7 +2182,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   : 'bg-card text-foreground border border-border hover:bg-secondary'
                   }`}
               >
-                What's Not Included
+                {t("inclusions.notIncHeading")}
               </button>
             </div>
 
@@ -2189,7 +2191,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {activeInclusionTab === 'inclusions' ? (
                 <div className="animate-fade-in">
                   <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-10">
-                    What's Included
+                    {t("inclusions.heading")}
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {inclusions.map((item, index) => (
@@ -2234,7 +2236,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <section className="py-20 bg-background overflow-hidden">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
-              What You Will Receive in This Training
+              {t("inclusions.heading")}
             </h2>
             {/* Decorative Mandala Icon */}
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -2250,7 +2252,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
-              Everything you need to live, learn, and grow — fully supported
+              {t("inclusions.sub")}
             </p>
 
             {/* Horizontal Scrollable Flip Cards */}
@@ -2546,10 +2548,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             <div className="text-center mb-16">
               <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">Choose Your Package</p>
               <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Yoga Teaching & Room Packages
+                {t("accommodation.heading")}
               </h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Choose the package that suits you best — from tuition-only course attendance to complete residential packages with peaceful room stays.
+                {t("accommodation.sub")}
               </p>
             </div>
 
@@ -4371,9 +4373,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <Dialog open={showQuickEnquiryDialog} onOpenChange={setShowQuickEnquiryDialog}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
-              <DialogTitle className="font-heading text-2xl">Claim Your $250 Early Bird Discount</DialogTitle>
+              <DialogTitle className="font-heading text-2xl">{tDialog("enquiryTitle")}</DialogTitle>
               <DialogDescription className="text-sm text-muted-foreground">
-                Connect with us and begin your journey of transformation
+                {tDialog("enquiryDesc")}
               </DialogDescription>
             </DialogHeader>
 
@@ -4381,35 +4383,35 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Name */}
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">
-                  Name <span className="text-destructive">*</span>
+                  {tDialog("fullName")} <span className="text-destructive">*</span>
                 </label>
                 <Input
                   type="text"
                   required
                   value={quickEnquiryForm.name}
                   onChange={(e) => setQuickEnquiryForm(prev => ({ ...prev, name: e.target.value }))}
-                  placeholder="Your name"
+                  placeholder={tDialog("fullName")}
                 />
               </div>
 
               {/* Email */}
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">
-                  Email <span className="text-destructive">*</span>
+                  {tDialog("email")} <span className="text-destructive">*</span>
                 </label>
                 <Input
                   type="email"
                   required
                   value={quickEnquiryForm.email}
                   onChange={(e) => setQuickEnquiryForm(prev => ({ ...prev, email: e.target.value }))}
-                  placeholder="your@email.com"
+                  placeholder={tDialog("email")}
                 />
               </div>
 
               {/* Message */}
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">
-                  Message <span className="text-destructive">*</span>
+                  {tDialog("message")} <span className="text-destructive">*</span>
                 </label>
                 <Textarea
                   required
@@ -4421,7 +4423,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               </div>
 
               <Button type="submit" className="w-full" size="lg">
-                Submit Enquiry
+                {isSubmittingQuick ? tCommon("loading") : tCommon("submit")}
               </Button>
             </form>
           </DialogContent>
@@ -4482,37 +4484,37 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             {/* Gradient Header */}
             <div className="bg-gradient-to-br from-primary to-primary/80 px-6 pt-8 pb-6 sm:px-8 text-primary-foreground rounded-t-2xl sm:rounded-t-xl">
               <div className="pr-8">
-                <DialogTitle className="font-heading text-2xl sm:text-3xl font-bold mb-1 text-primary-foreground">Begin Your Yoga Journey</DialogTitle>
-                <p className="text-primary-foreground/80 text-sm">Fill in your details and we&#39;ll be in touch shortly</p>
+                <DialogTitle className="font-heading text-2xl sm:text-3xl font-bold mb-1 text-primary-foreground">{tDialog("enrollTitle")}</DialogTitle>
+                <p className="text-primary-foreground/80 text-sm">{tDialog("enrollDesc")}</p>
               </div>
             </div>
 
             {/* Scrollable Form Body */}
             <div className="px-6 sm:px-8 py-6 space-y-4 overflow-y-auto max-h-[60vh] sm:max-h-[65vh]">
               <div className="space-y-1.5">
-                <label className="block text-sm font-semibold text-foreground">Name <span className="text-destructive">*</span></label>
+                <label className="block text-sm font-semibold text-foreground">{tDialog("fullName")} <span className="text-destructive">*</span></label>
                 <input
                   type="text"
                   aria-label="Full Name"
                   value={enrollForm.name}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, name: e.target.value }))}
-                  placeholder="Enter your full name"
+                  placeholder={tDialog("fullName")}
                   className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                 />
               </div>
               <div className="space-y-1.5">
-                <label className="block text-sm font-semibold text-foreground">Email <span className="text-destructive">*</span></label>
+                <label className="block text-sm font-semibold text-foreground">{tDialog("email")} <span className="text-destructive">*</span></label>
                 <input
                   type="email"
                   aria-label="Email Address"
                   value={enrollForm.email}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, email: e.target.value }))}
-                  placeholder="you@example.com"
+                  placeholder={tDialog("email")}
                   className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                 />
               </div>
               <div className="space-y-1.5">
-                <label className="block text-sm font-semibold text-foreground">Contact / WhatsApp No. <span className="text-destructive">*</span></label>
+                <label className="block text-sm font-semibold text-foreground">{tDialog("phone")} <span className="text-destructive">*</span></label>
                 <div className="flex gap-2">
                   <select
                     aria-label="Country Code"
@@ -4540,7 +4542,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-1.5">
-                  <label className="block text-sm font-semibold text-foreground">Course <span className="text-destructive">*</span></label>
+                  <label className="block text-sm font-semibold text-foreground">{tDialog("course")} <span className="text-destructive">*</span></label>
                   <select
                     aria-label="Select Course"
                     value={enrollForm.courseName}
@@ -4554,7 +4556,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   </select>
                 </div>
                 <div className="space-y-1.5">
-                  <label className="block text-sm font-semibold text-foreground">Date <span className="text-destructive">*</span></label>
+                  <label className="block text-sm font-semibold text-foreground">{tDialog("date")} <span className="text-destructive">*</span></label>
                   <select
                     aria-label="Select Date"
                     value={enrollForm.courseDate}
@@ -4570,7 +4572,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-1.5">
-                  <label className="block text-sm font-semibold text-foreground">Room <span className="text-destructive">*</span></label>
+                  <label className="block text-sm font-semibold text-foreground">{tDialog("room")} <span className="text-destructive">*</span></label>
                   <select
                     aria-label="Select Room"
                     value={enrollForm.accommodation}
@@ -4645,7 +4647,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 disabled={!isEnrollFormComplete || isSubmittingEnroll}
                 onClick={handleEnrollSubmit}
               >
-                {isSubmittingEnroll ? "Submitting..." : "Submit Enrollment"}
+                {isSubmittingEnroll ? tCommon("loading") : tDialog("submitApplication")}
               </Button>
               <p className="text-center text-xs text-muted-foreground mt-2">
                 &#128274; Your information is secure and never shared

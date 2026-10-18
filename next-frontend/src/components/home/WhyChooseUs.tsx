@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { BookOpen, Leaf, Zap, Award, Users, GraduationCap, RefreshCw, Globe, MessageCircle } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
@@ -25,7 +26,10 @@ const LotusDecor = ({ className }: { className?: string }) => (
   </svg>
 );
 
+import { useTranslations } from "next-intl";
+
 export default function WhyChooseUs() {
+  const t = useTranslations("home.whyChoose");
   return (
     <section
       className="py-24 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden"
@@ -42,7 +46,7 @@ export default function WhyChooseUs() {
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-6 tracking-widest uppercase">
-            THE YOGAGARHI DIFFERENCE
+            {t("heading")}
           </h2>
           <LotusDecor className="w-16 h-10 mx-auto text-primary/40" />
         </div>
@@ -53,10 +57,10 @@ export default function WhyChooseUs() {
           <div className="space-y-8">
             <div className="flex items-center gap-4">
               <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-wider">
-                Stage 01
+                {t("stage1")}
               </span>
               <h3 className="text-sm font-bold text-foreground uppercase tracking-widest">
-                Before & After The Course
+                {t("stage1Title")}
               </h3>
               <div className="h-px bg-border flex-1" />
             </div>
@@ -68,26 +72,18 @@ export default function WhyChooseUs() {
                 <div className="flex-1 p-8 lg:p-12 flex flex-col justify-between space-y-6">
                   <div className="space-y-4">
                     <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
-                      Preparation for your YTTC Free Program
+                      {t("preTtcBadge")}
                     </div>
                     <h4 className="font-heading text-2xl lg:text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
-                      Pre-TTC Mentorship
+                      {t("preTtcTitle")}
                     </h4>
                     {/* Desktop full text */}
                     <p className="hidden md:block text-muted-foreground text-sm leading-relaxed max-w-2xl">
-                      Wondering if you are truly ready for a Yoga Teacher Training Course (TTC)? This preparatory program is designed specifically for practitioners who want to test their readiness. While most schools start on day one, we begin weeks earlier — online and completely free — helping you build a solid foundation so you arrive confident, grounded, and stress-free.
+                      {t("preTtcDesc")}
                     </p>
                     {/* Mobile accordion */}
                     <div className="md:hidden text-muted-foreground text-xs leading-relaxed">
-                      <p>Wondering if you are truly ready for a Yoga Teacher Training Course (TTC)? This preparatory program helps build your solid foundation...</p>
-                      <details className="mt-2 cursor-pointer group">
-                        <summary className="text-amber-700 dark:text-amber-400 font-bold uppercase text-[11px] tracking-wider select-none list-none outline-none hover:underline">
-                          Read full details ▾
-                        </summary>
-                        <div className="pt-2 text-xs leading-relaxed text-foreground/90">
-                          While most schools start on day one, we begin weeks earlier — online and completely free — helping you build a solid foundation so you arrive confident, grounded, and stress-free.
-                        </div>
-                      </details>
+                      <p>{t("preTtcDesc")}</p>
                     </div>
                   </div>
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
@@ -95,7 +91,7 @@ export default function WhyChooseUs() {
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                         <BookOpen className="w-5 h-5 text-primary" />
                       </div>
-                      <span className="text-xs font-bold text-foreground uppercase tracking-wider">Test Your Readiness First</span>
+                      <span className="text-xs font-bold text-foreground uppercase tracking-wider">{t("preTtcTag")}</span>
                     </div>
 
                     <a
@@ -176,10 +172,10 @@ export default function WhyChooseUs() {
           <div className="space-y-8">
             <div className="flex items-center gap-4">
               <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-wider">
-                Stage 02
+                {t("stage2")}
               </span>
               <h3 className="text-sm font-bold text-foreground uppercase tracking-widest">
-                Going Deep Into Yourself
+                {t("stage2Title")}
               </h3>
               <div className="h-px bg-border flex-1" />
             </div>
@@ -371,10 +367,10 @@ export default function WhyChooseUs() {
           <div className="space-y-8">
             <div className="flex items-center gap-4">
               <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-wider">
-                Stage 03
+                {t("stage3")}
               </span>
               <h3 className="text-sm font-bold text-foreground uppercase tracking-widest">
-                Teaching & Beyond
+                {t("stage3Title")}
               </h3>
               <div className="h-px bg-border flex-1" />
             </div>

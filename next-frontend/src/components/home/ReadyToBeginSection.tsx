@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import ReadyToBeginActionsIsland from "./ReadyToBeginActionsIsland";
+import { useTranslations } from "next-intl";
 
 const readyToBeginBg = getCloudinaryImage("ready-to-begin-bg.png");
 
 const ReadyToBeginSection = () => {
+  const t = useTranslations("home.ready");
+
   return (
     <section
       className="py-20 relative overflow-hidden"
@@ -28,13 +33,13 @@ const ReadyToBeginSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <p className="text-center text-primary-foreground/70 uppercase tracking-widest text-sm mb-4">
-          Your Journey Awaits
+          {t("tag")}
         </p>
         <h2 className="font-heading text-3xl md:text-5xl font-bold text-center text-primary-foreground mb-6">
-          Ready to Take the next step?
+          {t("title")}
         </h2>
         <p className="text-center text-primary-foreground/80 max-w-2xl mx-auto mb-12">
-          Take the first step towards becoming a certified yoga teacher
+          {t("desc")}
         </p>
 
         <ReadyToBeginActionsIsland />
