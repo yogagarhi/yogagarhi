@@ -14,86 +14,14 @@ export interface FAQItem {
 
 export interface FAQCategory {
   id: string;
-  label: string;
   icon: React.ComponentType<{ className?: string }>;
 }
 
 const faqCategories: FAQCategory[] = [
-  { id: "travel", label: "Travel & Visa", icon: Plane },
-  { id: "schedule", label: "Schedule", icon: Calendar },
-  { id: "stay", label: "Stay & Location", icon: MapPin },
-  { id: "courses", label: "Courses & Accommodation", icon: Home },
-];
-
-const faqs: FAQItem[] = [
-  {
-    category: "travel",
-    question: "What kind of visa do I need to join the course in Bali?",
-    answer: "Most students apply for a tourist visa to attend the training. We will guide you with the process once your booking is confirmed.",
-  },
-  {
-    category: "travel",
-    question: "Is Bali safe for solo travelers, especially women?",
-    answer: "Yes, Bali is generally very safe for solo travelers, including women. With friendly locals and a vibrant travel community, it's easy to explore safely by following basic precautions and local guidelines.",
-  },
-  {
-    category: "travel",
-    question: "How do I reach the school from the airport?",
-    answer: "We arrange airport pickup from Denpasar (Ngurah Rai International Airport) to make your arrival smooth and easy.",
-  },
-  {
-    category: "schedule",
-    question: "What is the best time of year to join the training?",
-    answer: "The course runs year-round, but April to October (dry season) is the most pleasant time for yoga and outdoor activities.",
-  },
-  {
-    category: "schedule",
-    question: "Will I have free time during the course?",
-    answer: "Yes, you will get short breaks between classes and free evenings. Weekends are lighter and often include excursions, giving you time to explore Bali.",
-  },
-  {
-    category: "stay",
-    question: "Can I stay longer in Bali after the course ends?",
-    answer: "Yes, many students extend their stay. Our team can guide you with local stays, travel tips, and activities.",
-  },
-  {
-    category: "stay",
-    question: "Where is the school located in Bali?",
-    answer: "Our school is located in Gianyar, Bali — surrounded by lush rice fields and peaceful nature, just a short drive from Ubud, the cultural heart of Bali.",
-  },
-  {
-    category: "stay",
-    question: "Is the location safe and accessible?",
-    answer: "Absolutely. The area is known for its tranquility and safety. Local amenities, cafes, and ATMs are within walking distance, and our staff is available 24/7 for support.",
-  },
-  {
-    category: "courses",
-    question: "What courses do you offer?",
-    answer: "We offer 100-hour, 200-hour, and 300-hour Yoga Teacher Training Courses (YTTC), all certified by Yoga Alliance. Each course covers asana, pranayama, philosophy, anatomy, and teaching methodology.",
-  },
-  {
-    category: "courses",
-    question: "What accommodation options are available?",
-    answer: "We offer three options: Private Room, Double Sharing, and Triple Sharing. All rooms have attached bathrooms with hot water, air conditioning/fans, free Wi-Fi, and daily housekeeping.",
-  },
-  {
-    category: "courses",
-    question: "Are meals included in the course fee?",
-    answer: "Yes, three healthy sattvic vegetarian meals are included daily along with herbal teas and drinking water. We cater to vegan, gluten-free, and other dietary requirements upon request.",
-  },
-  {
-    category: "courses",
-    question: "What is included in the course fee?",
-    answer: "The fee includes accommodation, meals, study materials, yoga mats and props, excursions, airport pickup, certification, and access to special workshops like Ayurveda and arm balancing.",
-  },
-];
-
-const top5MobileFaqs: FAQItem[] = [
-  faqs[0], // Visa
-  faqs[1], // Safety
-  faqs[8], // Courses
-  faqs[9], // Accommodation
-  faqs[10], // Meals
+  { id: "travel", icon: Plane },
+  { id: "schedule", icon: Calendar },
+  { id: "stay", icon: MapPin },
+  { id: "courses", icon: Home },
 ];
 
 export default function FAQInteractiveGrid() {
@@ -101,6 +29,29 @@ export default function FAQInteractiveGrid() {
   const [activeCategory, setActiveCategory] = useState("travel");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [mobileOpenIndex, setMobileOpenIndex] = useState<number | null>(0);
+
+  const faqs: FAQItem[] = [
+    { category: "travel", question: t("q1"), answer: t("a1") },
+    { category: "travel", question: t("q2"), answer: t("a2") },
+    { category: "travel", question: t("q3"), answer: t("a3") },
+    { category: "schedule", question: t("q4"), answer: t("a4") },
+    { category: "schedule", question: t("q5"), answer: t("a5") },
+    { category: "schedule", question: t("q6"), answer: t("a6") },
+    { category: "courses", question: t("q7"), answer: t("a7") },
+    { category: "courses", question: t("q8"), answer: t("a8") },
+    { category: "stay", question: t("q9"), answer: t("a9") },
+    { category: "courses", question: t("q10"), answer: t("a10") },
+    { category: "stay", question: t("q11"), answer: t("a11") },
+    { category: "courses", question: t("q12"), answer: t("a12") },
+  ];
+
+  const top5MobileFaqs: FAQItem[] = [
+    faqs[0],
+    faqs[1],
+    faqs[6],
+    faqs[7],
+    faqs[8],
+  ];
 
   const getCategoryLabel = (id: string) => {
     switch(id) {
@@ -173,13 +124,13 @@ export default function FAQInteractiveGrid() {
         </div>
 
         <div className="p-5 bg-secondary/30 rounded-xl border border-border text-center space-y-3 mt-4">
-          <p className="font-medium text-foreground text-sm">Have more questions about courses, dates, or travel?</p>
+          <p className="font-medium text-foreground text-sm">{t("moreQuestions")}</p>
           <div className="flex gap-3 justify-center">
             <Button variant="default" size="sm" asChild>
-              <Link href="/contact-us">Ask Us Directly</Link>
+              <Link href="/contact-us">{t("askDirectly")}</Link>
             </Button>
             <Button variant="outline" size="sm" asChild>
-              <a href="https://wa.me/917895350563" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+              <a href="https://wa.me/917895350563" target="_blank" rel="noopener noreferrer">{t("whatsappUs")}</a>
             </Button>
           </div>
         </div>
@@ -244,12 +195,12 @@ export default function FAQInteractiveGrid() {
                 <MessageCircle className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="font-medium text-foreground mb-1">Still have questions?</p>
+                <p className="font-medium text-foreground mb-1">{t("stillQuestions")}</p>
                 <p className="text-sm text-muted-foreground mb-3">
-                  We're here to help you on your yoga journey.
+                  {t("hereToHelp")}
                 </p>
                 <Button variant="outline" size="sm" asChild>
-                  <Link href="/contact-us">Contact Us</Link>
+                  <Link href="/contact-us">{t("contactUs")}</Link>
                 </Button>
               </div>
             </div>
@@ -320,7 +271,7 @@ export default function FAQInteractiveGrid() {
         {/* Bottom Note */}
         <div className="mt-8 flex items-center justify-center gap-3 text-sm text-muted-foreground">
           <Clock className="w-4 h-4" />
-          <span>We typically respond within 24 hours</span>
+          <span>{t("responseTiming")}</span>
         </div>
 
         {/* Unique Testimonial Card */}
@@ -396,7 +347,7 @@ export default function FAQInteractiveGrid() {
                     </div>
                   ))}
                 </div>
-                <span className="text-sm text-muted-foreground">+497 happy students</span>
+                <span className="text-sm text-muted-foreground">{t("happyStudents")}</span>
               </div>
             </div>
           </div>

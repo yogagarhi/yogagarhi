@@ -3,15 +3,17 @@
 import { MessageSquare } from "lucide-react";
 import { useQuickEnquiry } from "./QuickEnquiryDialog";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 export default function StickyContactButton() {
     const { setShowQuickEnquiry } = useQuickEnquiry();
+    const t = useTranslations("stickyContact");
 
     return (
         <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col items-end pointer-events-none">
             <button
                 onClick={() => setShowQuickEnquiry(true)}
-                aria-label="Open Quick Enquiry Contact Form"
+                aria-label={t("ariaLabel")}
                 className={cn(
                     "pointer-events-auto",
                     "bg-primary text-primary-foreground",
@@ -26,7 +28,7 @@ export default function StickyContactButton() {
                     className="text-[10px] md:text-xs font-bold tracking-[0.1em] md:tracking-[0.2em] uppercase whitespace-nowrap"
                     style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
                 >
-                    Contact Us
+                    {t("contactUs")}
                 </span>
             </button>
         </div>

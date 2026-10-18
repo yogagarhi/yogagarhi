@@ -13,18 +13,6 @@ const courses = [
   { name: "100 Hour Yoga TTC in Rishikesh", href: "/100-hour-yoga-teacher-training-in-rishikesh" },
 ];
 
-const explore = [
-  { name: "About School", href: "/about-school" },
-  { name: "Teachers", href: "/teachers" },
-  { name: "Testimonials", href: "/testimonials" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Blogs", href: "/blogs" },
-  { name: "Contact", href: "/contact-us" },
-  { name: "Apply Now", href: "/apply-now" },
-  { name: "Terms & Conditions", href: "/terms-and-conditions" },
-  { name: "Refund Policy", href: "/refund-policy" },
-];
-
 // Animated Lotus SVG
 const LotusIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 100 60" fill="currentColor">
@@ -36,6 +24,20 @@ const LotusIcon = ({ className }: { className?: string }) => (
 
 export default function Footer() {
   const tFooter = useTranslations("footer");
+  const tNav = useTranslations("nav");
+  const tCommon = useTranslations("common");
+
+  const explore = [
+    { name: tNav("about") || "About School", href: "/about-school" },
+    { name: tNav("teachers") || "Teachers", href: "/teachers" },
+    { name: tNav("testimonials") || "Testimonials", href: "/testimonials" },
+    { name: tNav("gallery") || "Gallery", href: "/gallery" },
+    { name: tNav("blogs") || "Blogs", href: "/blogs" },
+    { name: tNav("contact") || "Contact", href: "/contact-us" },
+    { name: tCommon("applyNow") || "Apply Now", href: "/apply-now" },
+    { name: tFooter("termsConditions") || "Terms & Conditions", href: "/terms-and-conditions" },
+    { name: tFooter("refundPolicy") || "Refund Policy", href: "/refund-policy" },
+  ];
   return (
     <footer className="relative bg-gradient-to-b from-primary to-primary/95 text-primary-foreground overflow-hidden">
       {/* Top Wave Decoration */}
@@ -79,7 +81,7 @@ export default function Footer() {
               <span className="w-8 h-px bg-primary-foreground/30" />
             </div>
             <p className="mt-4 text-primary-foreground/70 text-sm tracking-widest uppercase">
-              Authentic Yoga in Bali
+              {tFooter("authenticBali") || "Authentic Yoga in Bali"}
             </p>
           </div>
         </div>
@@ -184,7 +186,7 @@ export default function Footer() {
             "योगश्चित्तवृत्तिनिरोधः"
           </p>
           <p className="text-xs text-primary-foreground/30 mt-1 tracking-widest">
-            Yoga is the cessation of the fluctuations of the mind
+            {tFooter("sutra") || "Yoga is the cessation of the fluctuations of the mind"}
           </p>
         </div>
       </div>
@@ -203,7 +205,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-1">
               <Sparkles className="h-3 w-3" />
-              <span>Transforming lives through yoga</span>
+              <span>{tFooter("transformingLives") || "Transforming lives through yoga"}</span>
               <Sparkles className="h-3 w-3" />
             </div>
           </div>

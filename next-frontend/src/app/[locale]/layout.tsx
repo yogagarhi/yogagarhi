@@ -165,6 +165,7 @@ export default async function LocaleLayout({
     common: messages.common,
     footer: messages.footer,
     dialogs: messages.dialogs,
+    stickyContact: messages.stickyContact,
     home: {
       ready: messages.home?.ready,
     },

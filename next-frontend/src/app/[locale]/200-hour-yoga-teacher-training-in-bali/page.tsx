@@ -95,9 +95,16 @@ export default async function Page({
         course200: messages.course200,
         common: messages.common,
         dialogs: messages.dialogs,
-        home: {
-            whyChoose: messages.home?.whyChoose,
-        },
+        whyChoose: messages.whyChoose,
+        promo: messages.promo,
+        stickyContact: messages.stickyContact,
+        switcher: messages.switcher,
+        nav: messages.nav,
+        navDropdown: messages.navDropdown,
+        footer: messages.footer,
+        faq: messages.faq,
+        reviews: messages.reviews,
+        home: messages.home,
     };
 
     const course = courseData["200-hour"];

@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import { Users, GraduationCap, Video, RefreshCw, Sparkles, CheckCircle2 } from "lucide-react";
-import { COURSE_200_HOUR_PRICING } from "@/constants/pricing";
+import { useTranslations } from "next-intl";
 
 interface WhyYogaGarhiBoxProps {
   onCheckAvailability?: () => void;
@@ -8,30 +9,32 @@ interface WhyYogaGarhiBoxProps {
 }
 
 export default function WhyYogaGarhiBox({ onCheckAvailability, onBookCall }: WhyYogaGarhiBoxProps) {
+  const t = useTranslations("course200.whyYogaGarhiBox");
+
   const pillars = [
     {
       icon: Users,
-      title: "8–10 Students Max Per Batch",
-      description: "Intimate class sizes guarantee personal guidance, customized hands-on adjustments, and individual teacher attention.",
-      highlight: "Personalized Focus"
+      title: t("p1Title"),
+      description: t("p1Desc"),
+      highlight: t("p1Highlight")
     },
     {
       icon: Video,
-      title: "Free Pre-TTC Online Training",
-      description: "Complimentary preparatory course prior to arrival in Bali, helping you build core strength and foundational knowledge.",
-      highlight: "Prepare Confidently"
+      title: t("p2Title"),
+      description: t("p2Desc"),
+      highlight: t("p2Highlight")
     },
     {
       icon: GraduationCap,
-      title: "1-Year Post-Graduation Mentorship",
-      description: "Ongoing guidance, class sequencing advice, and career support long after you complete your residential immersion.",
-      highlight: "Lifelong Community"
+      title: t("p3Title"),
+      description: t("p3Desc"),
+      highlight: t("p3Highlight")
     },
     {
       icon: RefreshCw,
-      title: "Lifetime Free Course Repeat",
-      description: "Return to future YogaGarhi teacher trainings anytime tuition-free to refresh your knowledge and assist as an apprentice.",
-      highlight: "Tuition-Free Return"
+      title: t("p4Title"),
+      description: t("p4Desc"),
+      highlight: t("p4Highlight")
     }
   ];
 
@@ -43,13 +46,13 @@ export default function WhyYogaGarhiBox({ onCheckAvailability, onBookCall }: Why
           <div className="text-center mb-10">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-3">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Why Choose YogaGarhi</span>
+              <span>{t("badge")}</span>
             </div>
             <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
-              Authentic Himalayan Lineage in an Intimate Bali Sanctuary
+              {t("heading")}
             </h2>
             <p className="mt-2 text-sm md:text-base text-muted-foreground max-w-2xl mx-auto">
-              We focus on sincere practitioners rather than crowded factory classrooms. Here is what sets our 200-hour training apart:
+              {t("sub")}
             </p>
           </div>
 
@@ -90,19 +93,19 @@ export default function WhyYogaGarhiBox({ onCheckAvailability, onBookCall }: Why
                 <div className="flex items-center gap-2 mb-2">
                   <CheckCircle2 className="w-4 h-4 text-primary" />
                   <span className="text-xs font-bold uppercase tracking-wider text-foreground">
-                    Residential Packages (24 Days / 23 Nights) & Tuition-Only Option
+                    {t("pkgBadge")}
                   </span>
                 </div>
                 <div className="flex flex-wrap items-baseline gap-3">
                   <span className="text-2xl md:text-3xl font-extrabold font-heading text-primary">
-                    Tuition from {COURSE_200_HOUR_PRICING.shared.price} USD | Residential from {COURSE_200_HOUR_PRICING.private.price} USD
+                    {t("tuitionFrom")}
                   </span>
                   <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-green-500/10 text-green-600 border border-green-500/20">
-                    Save $300 Early-Bird
+                    {t("saveEarlyBird")}
                   </span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2">
-                  Tuition Only: {COURSE_200_HOUR_PRICING.shared.price} • Triple Sharing: {COURSE_200_HOUR_PRICING.private.price} • Double Sharing: {COURSE_200_HOUR_PRICING.deluxe.price} • Private Room: {COURSE_200_HOUR_PRICING.vip.price}
+                  {t("breakdown")}
                 </p>
               </div>
 
@@ -113,7 +116,7 @@ export default function WhyYogaGarhiBox({ onCheckAvailability, onBookCall }: Why
                     onClick={onCheckAvailability}
                     className="px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:bg-primary/90 transition-all shadow-md hover:shadow-lg"
                   >
-                    Check Availability
+                    {t("checkAvailability")}
                   </button>
                 )}
                 {onBookCall && (
@@ -122,7 +125,7 @@ export default function WhyYogaGarhiBox({ onCheckAvailability, onBookCall }: Why
                     onClick={onBookCall}
                     className="px-6 py-3 rounded-full bg-background border border-primary/40 text-foreground font-semibold text-sm hover:bg-primary/10 transition-all"
                   >
-                    Book Free Video Call
+                    {t("bookFreeCall")}
                   </button>
                 )}
               </div>

@@ -5,7 +5,8 @@ import { COURSE_200_FAQS } from "@/constants/course200Data";
 
 export default function CourseFAQSection() {
   const t = useTranslations("course200");
-  if (!COURSE_200_FAQS || COURSE_200_FAQS.length === 0) return null;
+  const faqs = (t.raw("faqs") as Array<{ question: string; answer: string }>) || COURSE_200_FAQS;
+  if (!faqs || faqs.length === 0) return null;
 
   return (
     <section className="py-20 bg-background relative overflow-hidden" id="faq">
@@ -24,7 +25,7 @@ export default function CourseFAQSection() {
 
           {/* Accordion / Details List */}
           <div className="space-y-4">
-            {COURSE_200_FAQS.map((faq, idx) => (
+            {faqs.map((faq, idx) => (
               <details
                 key={idx}
                 className="group bg-card rounded-2xl border border-border/80 shadow-sm transition-all duration-300 hover:border-primary/40 open:border-primary/50 open:bg-card/90 overflow-hidden"

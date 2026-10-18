@@ -3,9 +3,12 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Users } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 // Room Card Component with Individual State and Ref
 export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: () => void }) {
+    const tCommon = useTranslations("common");
+    const tCourse = useTranslations("course200");
     const carouselRef = useRef<HTMLDivElement>(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -127,7 +130,7 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                         <Users className="w-4 h-4" />
                         <span className="text-xs">
                             {typeof room.beds === 'number'
-                                ? `${room.beds} ${room.beds === 1 ? 'bed' : 'beds'}`
+                                ? `${room.beds} ${room.beds === 1 ? tCourse("accommodationExtra.bed1") : tCourse("accommodationExtra.bedsMore")}`
                                 : room.beds}
                         </span>
                     </div>
@@ -157,7 +160,7 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                         <p className="font-heading text-3xl md:text-4xl font-bold text-primary">{room.price}</p>
                     </div>
                     <span className="px-2.5 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md">
-                        Save 20%
+                        {tCommon("save")} 20%
                     </span>
                 </div>
 
@@ -166,7 +169,7 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                     onClick={onBookNow}
                     className={`w-full ${room.isPopular ? 'bg-primary hover:bg-primary/90' : 'bg-foreground hover:bg-foreground/90'} text-background font-semibold py-2.5`}
                 >
-                    Book Now
+                    {tCommon("bookNow")}
                 </Button>
             </div>
         </div>

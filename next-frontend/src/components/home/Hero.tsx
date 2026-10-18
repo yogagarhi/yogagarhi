@@ -4,6 +4,8 @@ import { getTranslations } from "next-intl/server";
 
 export default async function Hero() {
   const t = await getTranslations("home.hero");
+  const tCommon = await getTranslations("common");
+  const tPromo = await getTranslations("promo");
   return (
     <>
       <section className="relative flex items-center justify-center overflow-hidden bg-[#1c130d] md:min-h-[90vh] pt-10 pb-12 sm:pt-14 sm:pb-16 md:pt-32 md:pb-20">
@@ -102,8 +104,8 @@ export default async function Hero() {
                 </div>
                 <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
                 <div className="text-center">
-                  <p className="font-heading text-3xl md:text-4xl font-bold">Ayurveda</p>
-                  <p className="text-xs md:text-sm opacity-80">Strong Basis</p>
+                  <p className="font-heading text-3xl md:text-4xl font-bold">{tCommon("ayurveda")}</p>
+                  <p className="text-xs md:text-sm opacity-80">{tCommon("strongBasis")}</p>
                 </div>
               </div>
 
@@ -115,8 +117,8 @@ export default async function Hero() {
                 </div>
                 <div className="w-px h-10 bg-primary-foreground/30 hidden sm:block" />
                 <div className="text-center">
-                  <p className="font-heading text-3xl md:text-4xl font-bold">World's First</p>
-                  <p className="text-xs md:text-sm opacity-80">Pre-YTTC Support Academy</p>
+                  <p className="font-heading text-3xl md:text-4xl font-bold">{tCommon("worldsFirst")}</p>
+                  <p className="text-xs md:text-sm opacity-80">{tCommon("preYttcAcademy")}</p>
                 </div>
               </div>
             </div>
@@ -128,9 +130,9 @@ export default async function Hero() {
             <div className="flex flex-col items-center gap-4 pt-1 md:pt-2">
               <div className="bg-amber-100/95 dark:bg-amber-900/60 border border-amber-200/60 dark:border-amber-800/60 px-4 py-2.5 md:px-6 md:py-3 rounded-xl shadow-xl animate-none md:animate-bounce-subtle text-center max-w-lg mx-auto">
                 <p className="text-amber-900 dark:text-amber-100 text-xs md:text-sm font-bold leading-relaxed">
-                  {PROMO_OFFER.specialOfferBoxPrefix}{" "}
+                  {tPromo("heroSpecialOfferPrefix")}{" "}
                   <span className="text-amber-950 dark:text-amber-200 font-extrabold underline underline-offset-2">
-                    {PROMO_OFFER.specialOfferBoxHighlighted}
+                    {tPromo("heroSpecialOfferHighlight")}
                   </span>
                 </p>
               </div>
@@ -155,8 +157,8 @@ export default async function Hero() {
               <p className="text-[11px] min-[380px]:text-xs opacity-80">{t("statStyleSub")}</p>
             </div>
             <div className="text-center">
-              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">Ayurveda</p>
-              <p className="text-[11px] min-[380px]:text-xs opacity-80">Strong Basis</p>
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">{tCommon("ayurveda")}</p>
+              <p className="text-[11px] min-[380px]:text-xs opacity-80">{tCommon("strongBasis")}</p>
             </div>
           </div>
 
@@ -166,8 +168,8 @@ export default async function Hero() {
               <p className="text-[11px] min-[380px]:text-xs opacity-80">{t("statCertSub")}</p>
             </div>
             <div className="text-center">
-              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">World&apos;s First</p>
-              <p className="text-[11px] min-[380px]:text-xs opacity-80">Pre-YTTC Support Academy</p>
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">{tCommon("worldsFirst")}</p>
+              <p className="text-[11px] min-[380px]:text-xs opacity-80">{tCommon("preYttcAcademy")}</p>
             </div>
           </div>
         </div>

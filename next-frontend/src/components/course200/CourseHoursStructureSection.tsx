@@ -1,8 +1,12 @@
+"use client";
 import React from "react";
 import { Clock, BookOpen, UserCheck, Layers } from "lucide-react";
 import { HOURS_BREAKDOWN } from "@/constants/course200Data";
+import { useTranslations } from "next-intl";
 
 export default function CourseHoursStructureSection() {
+  const t = useTranslations("course200.hoursStructure");
+
   // If hours breakdown is null or not confirmed, DO NOT RENDER anything
   if (!HOURS_BREAKDOWN) {
     return null;
@@ -15,13 +19,13 @@ export default function CourseHoursStructureSection() {
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-2">
               <Clock className="w-3.5 h-3.5" />
-              <span>Training Hours</span>
+              <span>{t("badge")}</span>
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              How the 200 Hours Are Structured
+              {t("heading")}
             </h2>
             <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
-              A comprehensive distribution between direct contact hours, practical alignment, and reflective study in accordance with Yoga Alliance standards.
+              {t("sub")}
             </p>
           </div>
 
@@ -32,13 +36,13 @@ export default function CourseHoursStructureSection() {
                   <UserCheck className="w-6 h-6" />
                 </div>
                 <h3 className="font-heading text-2xl font-bold text-foreground">
-                  {HOURS_BREAKDOWN.contactHours} Hours
+                  {HOURS_BREAKDOWN.contactHours} {t("hoursUnit")}
                 </h3>
                 <p className="text-xs uppercase tracking-wider font-semibold text-primary mt-1">
-                  Contact Hours
+                  {t("contactHours")}
                 </p>
                 <p className="text-xs text-muted-foreground mt-2">
-                  Direct instruction with lead teachers in asana, alignment, anatomy, and philosophy.
+                  {t("contactHoursDesc")}
                 </p>
               </div>
             )}
@@ -49,13 +53,13 @@ export default function CourseHoursStructureSection() {
                   <BookOpen className="w-6 h-6" />
                 </div>
                 <h3 className="font-heading text-2xl font-bold text-foreground">
-                  {HOURS_BREAKDOWN.selfStudyHours} Hours
+                  {HOURS_BREAKDOWN.selfStudyHours} {t("hoursUnit")}
                 </h3>
                 <p className="text-xs uppercase tracking-wider font-semibold text-primary mt-1">
-                  Self-Study & Practicum
+                  {t("selfStudy")}
                 </p>
                 <p className="text-xs text-muted-foreground mt-2">
-                  Guided readings, journaling, peer practice, and class sequencing assignments.
+                  {t("selfStudyDesc")}
                 </p>
               </div>
             )}
@@ -65,13 +69,13 @@ export default function CourseHoursStructureSection() {
                 <Layers className="w-6 h-6" />
               </div>
               <h3 className="font-heading text-2xl font-bold text-foreground">
-                {HOURS_BREAKDOWN.totalHours || 200} Hours
+                {HOURS_BREAKDOWN.totalHours || 200} {t("hoursUnit")}
               </h3>
               <p className="text-xs uppercase tracking-wider font-semibold text-primary mt-1">
-                Total Certification
+                {t("totalCert")}
               </p>
               <p className="text-xs text-muted-foreground mt-2">
-                Meets and exceeds Yoga Alliance RYT 200 standards.
+                {t("totalCertDesc")}
               </p>
             </div>
           </div>

@@ -101,7 +101,7 @@ export default function WhyChooseUs() {
                       className="inline-flex items-center justify-center gap-2 h-10 px-6 rounded-xl bg-[#25D366] text-white hover:bg-[#20ba5a] text-sm font-bold shadow-md transition-all duration-300 w-fit self-start sm:self-auto"
                     >
                       <MessageCircle className="w-4 h-4" />
-                      Join Us
+                      {t("joinUs")}
                     </a>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export default function WhyChooseUs() {
                 <div className="lg:w-2/5 min-h-[250px] relative overflow-hidden">
                   <Image
                     src={imgPreTtc}
-                    alt="Preparation for your YTTC Free Program"
+                    alt={t("preTtcTitle")}
                     fill
                     sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -124,24 +124,24 @@ export default function WhyChooseUs() {
                 <div className="flex-1 p-8 lg:p-12 flex flex-col justify-between space-y-6">
                   <div className="space-y-4">
                     <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
-                      1-Year Post-TTC Support
+                      {t("postTtcBadge")}
                     </div>
                     <h4 className="font-heading text-2xl lg:text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
-                      Your Teacher Stays With You For One Year
+                      {t("postTtcTitle")}
                     </h4>
                     {/* Desktop full text */}
                     <p className="hidden md:block text-muted-foreground text-sm leading-relaxed max-w-2xl">
-                      Most schools say goodbye on graduation day. We don't. For 12 months after your training, you get monthly live sessions with us — feedback on your real classes if you teach, guidance on your personal practice if you don't — and a teacher you can write to when you're stuck. This isn't a new idea we invented for marketing: students from our founder's past trainings have been practicing with him online for three, four, even five years after their course ended. We simply made into a promise what was already true.
+                      {t("postTtcDesc")}
                     </p>
                     {/* Mobile accordion */}
                     <div className="md:hidden text-muted-foreground text-xs leading-relaxed">
-                      <p>Most schools say goodbye on graduation day. We don't. For 12 months after your training, you get monthly live sessions with us...</p>
+                      <p>{t("postTtcShort")}</p>
                       <details className="mt-2 cursor-pointer group">
                         <summary className="text-amber-700 dark:text-amber-400 font-bold uppercase text-[11px] tracking-wider select-none list-none outline-none hover:underline">
-                          Read full details ▾
+                          {t("readFullDetails")}
                         </summary>
                         <div className="pt-2 text-xs leading-relaxed text-foreground/90">
-                          Get feedback on your real classes if you teach, guidance on your personal practice if you don't — and a teacher you can write to when you're stuck. Students from our founder's past trainings have been practicing with him online for years after their course ended.
+                          {t("postTtcDetail")}
                         </div>
                       </details>
                     </div>
@@ -150,14 +150,14 @@ export default function WhyChooseUs() {
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                       <RefreshCw className="w-5 h-5 text-primary" />
                     </div>
-                    <span className="text-xs font-bold text-foreground uppercase tracking-wider">Continuous Guidance Promise</span>
+                    <span className="text-xs font-bold text-foreground uppercase tracking-wider">{t("postTtcTag")}</span>
                   </div>
                 </div>
                 {/* Left image */}
                 <div className="lg:w-2/5 min-h-[250px] relative overflow-hidden">
                   <Image
                     src={imgFamily}
-                    alt="1-Year Post-TTC Support"
+                    alt={t("postTtcBadge")}
                     fill
                     sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -187,25 +187,25 @@ export default function WhyChooseUs() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={imgAyurveda}
-                      alt="Multi-Style & Ayurveda"
+                      alt={t("multiStyleTitle")}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
-                      Integrated
+                      {t("multiStyleBadge")}
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <Leaf className="w-4 h-4 text-primary" />
-                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Ayurveda</span>
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t("multiStyleCategory")}</span>
                     </div>
                     <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      Multi-Style & Ayurveda
+                      {t("multiStyleTitle")}
                     </h4>
                     <p className="text-muted-foreground text-xs leading-relaxed">
-                      Vinyasa, Hatha, Ashtanga, and Iyengar taught with a strong foundation in Ayurveda.
+                      {t("multiStyleDesc")}
                     </p>
                   </div>
                 </div>
@@ -217,25 +217,25 @@ export default function WhyChooseUs() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={imgShivShakti}
-                      alt="Shiv-Shakti Method"
+                      alt={t("methodTitle")}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
-                      Signature
+                      {t("methodBadge")}
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <Zap className="w-4 h-4 text-primary" />
-                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Methodology</span>
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t("methodCategory")}</span>
                     </div>
                     <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      Shiv-Shakti Method
+                      {t("methodTitle")}
                     </h4>
                     <p className="text-muted-foreground text-xs leading-relaxed">
-                      Our signature approach that converts ancient yogic theory into practical, life-changing wisdom.
+                      {t("methodDesc")}
                     </p>
                   </div>
                 </div>
@@ -247,25 +247,25 @@ export default function WhyChooseUs() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={imgPhilosophy}
-                      alt="Philosophy-Driven"
+                      alt={t("philosophyTitle")}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
-                      Authentic
+                      {t("philosophyBadge")}
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <Award className="w-4 h-4 text-primary" />
-                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Yogic Wisdom</span>
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t("philosophyCategory")}</span>
                     </div>
                     <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      Philosophy-Driven
+                      {t("philosophyTitle")}
                     </h4>
                     <p className="text-muted-foreground text-xs leading-relaxed">
-                      Highest yogic philosophy through rituals, meditation, and satsang.
+                      {t("philosophyDesc")}
                     </p>
                   </div>
                 </div>
@@ -277,25 +277,25 @@ export default function WhyChooseUs() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={imgTradition}
-                      alt="Real tradition, taught clearly"
+                      alt={t("traditionTitle")}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
-                      Traditional
+                      {t("traditionBadge")}
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <BookOpen className="w-4 h-4 text-primary" />
-                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Authentic Texts</span>
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t("traditionCategory")}</span>
                     </div>
                     <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      Real Tradition, Taught Clearly
+                      {t("traditionTitle")}
                     </h4>
                     <p className="text-muted-foreground text-xs leading-relaxed">
-                      We study the actual texts — Yoga Sutras, Hatha Yoga Pradipika, Bhagavad Gita — and live the practice daily. Clear, structured, modern English. Traditional does not have to mean confusing.
+                      {t("traditionDesc")}
                     </p>
                   </div>
                 </div>
@@ -307,25 +307,25 @@ export default function WhyChooseUs() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={imgSmallGroup}
-                      alt="Intimate learning"
+                      alt={t("smallGroupCardTitle")}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
-                      8-10 Max
+                      {t("smallGroupBadge")}
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <Users className="w-4 h-4 text-primary" />
-                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Mentorship</span>
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t("smallGroupCategory")}</span>
                     </div>
                     <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      Intimate learning
+                      {t("smallGroupCardTitle")}
                     </h4>
                     <p className="text-muted-foreground text-xs leading-relaxed">
-                      Only 8-10 students per batch. Intimacy = real mentorship, not crowd teaching.
+                      {t("smallGroupCardDesc")}
                     </p>
                   </div>
                 </div>
@@ -337,25 +337,25 @@ export default function WhyChooseUs() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={imgAssistant}
-                      alt="Learn how to actually work as a teacher"
+                      alt={t("careerTitle")}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
-                      Career
+                      {t("careerBadge")}
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <GraduationCap className="w-4 h-4 text-primary" />
-                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Livelihood</span>
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t("careerCategory")}</span>
                     </div>
                     <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      Learn How to Work as a Teacher
+                      {t("careerTitle")}
                     </h4>
                     <p className="text-muted-foreground text-xs leading-relaxed">
-                      Before you leave, we cover the things no one teaches: how to structure your first classes, approach studios, what to charge, insurance, and online teaching. A certificate without a livelihood plan is only paper.
+                      {t("careerDesc")}
                     </p>
                   </div>
                 </div>
@@ -383,44 +383,44 @@ export default function WhyChooseUs() {
                 <div className="flex flex-col lg:flex-row gap-8 items-start relative z-10">
                   <div className="lg:w-1/3 space-y-4">
                     <div className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-semibold">
-                      Student Manifesto
+                      {t("manifestoBadge")}
                     </div>
                     <h4 className="font-heading text-xl lg:text-2xl font-black text-foreground leading-tight group-hover:text-accent transition-colors text-left">
-                      Not planning to teach? You are exactly who this school was made for.
+                      {t("manifestoHeading")}
                     </h4>
                     <p className="text-muted-foreground text-sm italic font-medium text-left">
-                      "I don't actually want to teach. I just want to go deeper."
+                      {t("manifestoQuote")}
                     </p>
                   </div>
                   
                   <div className="lg:w-2/3 space-y-6 text-left">
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      More than half the people who write to us say this, almost apologetically. Please don't apologize. In India, yoga was never a career course — it was a pathway to understand oneself. The student always came first.
+                      {t("manifestoIntro")}
                     </p>
                     
                     <ul className="grid sm:grid-cols-2 gap-4 text-xs sm:text-sm text-foreground/80 font-medium">
                       <li className="flex items-start gap-2.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                        <span><strong className="text-foreground">You Are the Tradition:</strong> For thousands of years, people came to a teacher for one reason: self-discovery.</span>
+                        <span><strong className="text-foreground">{t("manifestoB1Title")}</strong> {t("manifestoB1Desc")}</span>
                       </li>
                       <li className="flex items-start gap-2.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                        <span><strong className="text-foreground">Practice-First Classroom:</strong> You will live yoga as it was meant to be lived: sadhana, pranayama, food, and texts.</span>
+                        <span><strong className="text-foreground">{t("manifestoB2Title")}</strong> {t("manifestoB2Desc")}</span>
                       </li>
                       <li className="flex items-start gap-2.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                        <span><strong className="text-foreground">Deepest Learning:</strong> Explaining postures is job-free training to help you understand them in your own body.</span>
+                        <span><strong className="text-foreground">{t("manifestoB3Title")}</strong> {t("manifestoB3Desc")}</span>
                       </li>
                       <li className="flex items-start gap-2.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                        <span><strong className="text-foreground">1-Year Sadhana Support:</strong> Mentorship is for practitioners, not just teachers. We support your daily life sadhana.</span>
+                        <span><strong className="text-foreground">{t("manifestoB4Title")}</strong> {t("manifestoB4Desc")}</span>
                       </li>
                     </ul>
                     
                     <div className="pt-4 border-t border-border/50 text-xs text-muted-foreground flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-                      <span>Come as a student. Leave as a deeper one. That is enough.</span>
+                      <span>{t("manifestoFooter")}</span>
                       <span className="font-bold text-accent bg-accent/10 px-3 py-1 rounded-full uppercase tracking-wider text-[10px]">
-                        No Pressure • No Expiry
+                        {t("manifestoPill")}
                       </span>
                     </div>
                   </div>
@@ -433,25 +433,25 @@ export default function WhyChooseUs() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={imgSequencing}
-                      alt="35+ Sequencing Book"
+                      alt={t("seqBookTitle")}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
-                      Included
+                      {t("seqBookBadge")}
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <BookOpen className="w-4 h-4 text-primary" />
-                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Resources</span>
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t("seqBookCategory")}</span>
                     </div>
                     <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      35+ Sequencing Book
+                      {t("seqBookTitle")}
                     </h4>
                     <p className="text-muted-foreground text-xs leading-relaxed">
-                      Practical sequences you can teach from day one after graduation.
+                      {t("seqBookDesc")}
                     </p>
                   </div>
                 </div>
@@ -463,25 +463,25 @@ export default function WhyChooseUs() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={imgAssistant}
-                      alt="Assistant Teacher"
+                      alt={t("assistantTitle")}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
-                      Growth
+                      {t("assistantBadge")}
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <GraduationCap className="w-4 h-4 text-primary" />
-                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Teaching</span>
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t("assistantCategory")}</span>
                     </div>
                     <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      Assistant Teacher
+                      {t("assistantTitle")}
                     </h4>
                     <p className="text-muted-foreground text-xs leading-relaxed">
-                      Apply to become an assistant teacher in future batches and grow your authentic experience.
+                      {t("assistantDesc")}
                     </p>
                   </div>
                 </div>
@@ -493,25 +493,25 @@ export default function WhyChooseUs() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={imgRepeat}
-                      alt="Free Course Repeat"
+                      alt={t("repeatCardTitle")}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
-                      Forever
+                      {t("repeatBadge")}
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <RefreshCw className="w-4 h-4 text-primary" />
-                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Lifetime</span>
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t("repeatCategory")}</span>
                     </div>
                     <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      Free Course Repeat
+                      {t("repeatCardTitle")}
                     </h4>
                     <p className="text-muted-foreground text-xs leading-relaxed">
-                      Revisit any training whenever it runs, at absolutely no extra tuition cost.
+                      {t("repeatCardDesc")}
                     </p>
                   </div>
                 </div>
@@ -523,25 +523,25 @@ export default function WhyChooseUs() {
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={imgFamily}
-                      alt="Global Family"
+                      alt={t("communityTitle")}
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary/95 text-primary-foreground text-[10px] font-bold z-10 shadow-sm">
-                      Lifetime
+                      {t("communityBadge")}
                     </div>
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <Globe className="w-4 h-4 text-primary" />
-                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">Community</span>
+                      <span className="text-[10px] font-bold text-primary uppercase tracking-wider">{t("communityBadge")}</span>
                     </div>
                     <h4 className="font-heading text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                      Global Family
+                      {t("communityTitle")}
                     </h4>
                     <p className="text-muted-foreground text-xs leading-relaxed">
-                      Join a worldwide community that supports your growth forever.
+                      {t("communityDesc")}
                     </p>
                   </div>
                 </div>

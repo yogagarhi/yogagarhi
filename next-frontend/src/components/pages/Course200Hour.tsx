@@ -1,7 +1,7 @@
 "use client";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { useState, useEffect, useRef } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -576,6 +576,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
   const t = useTranslations("course200");
   const tDialog = useTranslations("dialogs");
   const tCommon = useTranslations("common");
+  const tPromo = useTranslations("promo");
+  const tWhy = useTranslations("whyChoose");
+  const locale = useLocale();
   const upcomingDates = useUpcomingBatches(BATCHES_200_HOUR, initialBatches);
   const { toast } = useToast();
   const router = useRouter();
@@ -811,7 +814,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(fields),
+      body: JSON.stringify({ language: locale, ...fields }),
     });
 
     if (response.ok) {
@@ -884,7 +887,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
   const handleBookingSubmit = async () => {
     setIsSubmittingBooking(true);
     const bookingDate = selectedDay && selectedMonth !== null
-      ? `${selectedDay} ${["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][selectedMonth]} 2026`
+      ? `${selectedDay} ${new Date(2026, selectedMonth, 1).toLocaleDateString(locale, { month: "long", year: "numeric" })}`
       : "";
 
     try {
@@ -1157,37 +1160,37 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 items-center">
                   {/* Course Duration */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
-                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Course</p>
-                    <p className="font-heading font-semibold text-foreground">200 Hour YTTC</p>
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.course")}</p>
+                    <p className="font-heading font-semibold text-foreground">{t("quickInfo.courseVal")}</p>
                   </div>
 
                   {/* Course Length */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
-                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Duration</p>
-                    <p className="font-heading font-semibold text-foreground">{t("hero.quickDuration")}</p>
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.duration")}</p>
+                    <p className="font-heading font-semibold text-foreground">{t("quickInfo.durationVal")}</p>
                   </div>
 
                   {/* Yoga Style */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
-                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Style</p>
-                    <p className="font-heading font-semibold text-foreground">Multi-Style Yoga</p>
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.style")}</p>
+                    <p className="font-heading font-semibold text-foreground">{t("quickInfo.styleVal")}</p>
                   </div>
 
                   {/* Level */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
-                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Level</p>
-                    <p className="font-heading font-semibold text-foreground">{t("hero.quickLevel")}</p>
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.level")}</p>
+                    <p className="font-heading font-semibold text-foreground">{t("quickInfo.levelVal")}</p>
                   </div>
 
                   {/* Certification */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
-                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Certification</p>
-                    <p className="font-heading font-semibold text-foreground">{t("hero.quickCert")}</p>
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.certification")}</p>
+                    <p className="font-heading font-semibold text-foreground">{t("quickInfo.certificationVal")}</p>
                   </div>
 
                   {/* Price */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
-                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.startingFrom")}</p>
                     <div className="flex flex-col items-center lg:items-start">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start">
                         <span className="text-base text-muted-foreground line-through opacity-60">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>
@@ -1200,7 +1203,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       </div>
                       <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform">
                         <Zap className="w-3.5 h-3.5 fill-current" />
-                        {t("accommodation.save300")}
+                        {t("quickInfo.earlyBirdDiscount")}
                       </div>
                     </div>
                   </div>
@@ -1215,7 +1218,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         setShowEnrollDialog(true);
                       }}
                     >
-                      Book Now
+                      {tCommon("bookNow")}
                     </Button>
                   </div>
                 </div>
@@ -1228,8 +1231,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         <Users className="w-4 h-4 text-primary" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-foreground">Small groups</p>
-                        <p className="text-xs text-muted-foreground">personalized attention</p>
+                        <p className="text-sm font-medium text-foreground">{t("highlights.smallGroups")}</p>
+                        <p className="text-xs text-muted-foreground">{t("highlights.smallGroupsSub")}</p>
                       </div>
                     </div>
 
@@ -1238,8 +1241,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         <BookOpen className="w-4 h-4 text-primary" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-foreground">Before You Join Support</p>
-                        <p className="text-xs text-muted-foreground">Preparation & Guidance</p>
+                        <p className="text-sm font-medium text-foreground">{t("highlights.preYttc")}</p>
+                        <p className="text-xs text-muted-foreground">{t("highlights.preYttcSub")}</p>
                       </div>
                     </div>
 
@@ -1248,8 +1251,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         <Heart className="w-4 h-4 text-primary" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-foreground">Life After Graduation Mentorship</p>
-                        <p className="text-xs text-muted-foreground">Ongoing Support</p>
+                        <p className="text-sm font-medium text-foreground">{t("highlights.mentorship")}</p>
+                        <p className="text-xs text-muted-foreground">{t("highlights.mentorshipSub")}</p>
                       </div>
                     </div>
 
@@ -1258,8 +1261,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         <Award className="w-4 h-4 text-primary" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-foreground">Complimentary Goodie Bag</p>
-                        <p className="text-xs text-muted-foreground">Yoga Essentials</p>
+                        <p className="text-sm font-medium text-foreground">{t("highlights.goodieBag")}</p>
+                        <p className="text-xs text-muted-foreground">{t("highlights.goodieBagSub")}</p>
                       </div>
                     </div>
                   </div>
@@ -1408,7 +1411,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 href="#student-stories"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-secondary hover:bg-secondary/80 text-foreground font-medium text-sm transition-all duration-300 border border-border shadow-sm group"
               >
-                <span>Watch Student Video Stories & Testimonials</span>
+                <span>{t("watchVideoStories")}</span>
                 <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
@@ -1437,13 +1440,11 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="order-3 lg:col-start-2 lg:row-start-2 space-y-6 text-muted-foreground leading-relaxed text-left">
                 {/* First 2 paragraphs - always visible */}
                 <p className="text-base sm:text-lg text-foreground/80 font-medium">
-                  {t("overview.story")}
+                  {t("storyP1")}
                 </p>
 
                 <p>
-                  Our professional course is made for both beginners and intermediate practitioners.
-                  This course covers all essential aspects of yoga, including asanas, pranayama,
-                  anatomy, and teaching methodology.
+                  {t("storyP2")}
                 </p>
 
                 {/* Expandable content */}
@@ -1452,9 +1453,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     }`}
                 >
                   <p className="pt-6">
-                    Become a part of this transformative once in a lifetime experience in the
-                    mesmerizing beauty of Bali. This holistic program prepares you to become a
-                    professional yoga teacher having expertise, skills, and confidence.
+                    {t("overview.story")}
                   </p>
                 </div>
 
@@ -1463,7 +1462,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   onClick={() => setShowWelcomeExpanded(!showWelcomeExpanded)}
                   className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors mt-2 group"
                 >
-                  {showWelcomeExpanded ? 'Read Less' : 'Read More'}
+                  {showWelcomeExpanded ? tCommon("readLess") : tCommon("readMore")}
                   <ChevronDown
                     className={`w-4 h-4 transition-transform duration-300 ${showWelcomeExpanded ? 'rotate-180' : ''
                       }`}
@@ -1473,10 +1472,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 {/* Consolidated Tour Call Card */}
                 <div className="mt-8 p-6 lg:p-8 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm text-center md:text-left">
                   <h3 className="font-heading text-xl lg:text-2xl font-medium text-foreground mb-3 lg:mb-4">
-                    Want to See Before You Book?
+                    {t("tourCall.heading")}
                   </h3>
                   <p className="text-muted-foreground text-sm mb-4 lg:mb-6">
-                    Hop on a live video call to get a personal tour of the campus, classrooms, shala, and student rooms.
+                    {t("tourCall.sub")}
                   </p>
                   <Button
                     className="w-full h-auto py-3.5 lg:py-4 bg-gradient-to-r from-primary to-accent text-white font-bold hover:opacity-95 transition-all shadow-lg text-sm md:text-base flex items-center justify-center gap-2 lg:gap-3 rounded-xl whitespace-normal"
@@ -1486,7 +1485,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     }}
                   >
                     <Video className="w-4 h-4 lg:w-5 lg:h-5 text-white flex-shrink-0" />
-                    <span className="text-center">Book a Call. See the School. See Your Room. See Your Yoga Hall.</span>
+                    <span className="text-center">{t("tourCall.cta")}</span>
                   </Button>
                 </div>
               </div>
@@ -1697,7 +1696,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       </DialogDescription>
                     </div>
                     <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground">
-                      <p>Please check your inbox (and spam folder) within the next 24 hours.</p>
+                      <p>{tDialog("inboxNotice")}</p>
                     </div>
                     <Button
                       onClick={() => {
@@ -1863,8 +1862,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <RefreshCw className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">Lifetime Free Course Repetation</h4>
-                  <p className="text-xs text-muted-foreground">Repeat same course forever at no extra tuition cost.</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2">{tWhy("a2Title")}</h4>
+                  <p className="text-xs text-muted-foreground">{tWhy("a2Desc")}</p>
                 </div>
 
                 {/* Assistant Teaching Opportunities */}
@@ -1873,8 +1872,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
                     <GraduationCap className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">Assistant Teaching Mentorship</h4>
-                  <p className="text-xs text-muted-foreground">Apply to become an assistant teacher in future batches.</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2">{tWhy("asstTitle")}</h4>
+                  <p className="text-xs text-muted-foreground">{tWhy("asstDesc")}</p>
                 </div>
 
                 {/* Global Alumni Network */}
@@ -1882,8 +1881,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <Users className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">Alumni Family</h4>
-                  <p className="text-xs text-muted-foreground">Stay connected with a global community of practitioners.</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2">{tWhy("alumniTitle")}</h4>
+                  <p className="text-xs text-muted-foreground">{tWhy("alumniDesc")}</p>
                 </div>
               </div>
             </div>
@@ -1921,7 +1920,19 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 {/* Vertical connecting line */}
                 <div className="absolute left-[calc(6rem+1.5rem+0.5rem-1px)] md:left-[calc(7rem+1.5rem+0.5rem-1px)] top-2 bottom-2 w-0.5 bg-primary/30" />
 
-                {dailySchedule.map((item, index) => (
+                {[
+                  { time: t("schedule.time1"), activity: t("schedule.act1") },
+                  { time: t("schedule.time2"), activity: t("schedule.act2") },
+                  { time: t("schedule.time3"), activity: t("schedule.act3") },
+                  { time: t("schedule.time4"), activity: t("schedule.act4") },
+                  { time: t("schedule.time5"), activity: t("schedule.act5") },
+                  { time: t("schedule.time6"), activity: t("schedule.act6") },
+                  { time: t("schedule.time7"), activity: t("schedule.act7") },
+                  { time: t("schedule.time8"), activity: t("schedule.act8") },
+                  { time: t("schedule.time9"), activity: t("schedule.act9") },
+                  { time: t("schedule.time10"), activity: t("schedule.act10") },
+                  { time: t("schedule.time11"), activity: t("schedule.act11") },
+                ].map((item, index) => (
                   <div
                     key={index}
                     className="relative flex items-center gap-6"
@@ -1948,7 +1959,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               </div>
 
               <p className="mt-12 text-center text-sm text-muted-foreground">
-                Sunday is a full day off for rest, self-study, or optional excursions.
+                {t("sunday.note")}
               </p>
 
               {/* Sunday Schedule CTA Button */}
@@ -1960,14 +1971,14 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   asChild
                 >
                   <Link href="/sunday-schedule">
-                    Explore Sunday in Bali
+                    {t("sunday.cta")}
                   </Link>
                 </Button>
 
                 {/* Special Offer Box */}
                 <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                   <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    Book your September to December YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                    {tPromo("courseSpecialOfferPrefix")} <span className="text-amber-600 dark:text-amber-400">{tPromo("specialOfferFree")}</span>
                   </p>
                 </div>
               </div>
@@ -2041,8 +2052,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
                           {/* Early Bird */}
                           <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
-                            <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                            <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                            <p className="font-heading font-bold text-foreground text-sm">{t("pricing.earlyBirdPrice")}</p>
+                            <p className="text-primary text-sm font-medium">{tCommon("save")} {item.earlyBirdSaving}</p>
                           </div>
 
                           {/* Book Button */}
@@ -2070,7 +2081,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                                 setShowEnrollDialog(true);
                               }}
                             >
-                              Book Now
+                              {tCommon("bookNow")}
                             </Button>
                           )}
                         </div>
@@ -2084,60 +2095,60 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="bg-card border border-border rounded-xl overflow-hidden sticky top-24">
                     {/* Header */}
                     <div className="bg-primary text-primary-foreground p-4 text-center">
-                      <h3 className="font-heading font-bold text-lg tracking-wide">200 HOUR YOGA TTC FEES</h3>
+                      <h3 className="font-heading font-bold text-lg tracking-wide">{t("pricing.heading")}</h3>
                     </div>
 
                     {/* Content */}
                     <div className="p-6 space-y-5">
                       <p className="text-center text-foreground font-medium border-b border-border pb-4">
-                        Course Duration: 23 Nights / 24 Days
+                        {t("pricing.residentialDuration")}
                       </p>
 
                       {/* Tuition Fees */}
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Tuition Fees</p>
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.tuitionFees")}</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.shared.price}
                         </p>
                         <p className="text-muted-foreground text-sm">
                           <span className="line-through">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
+                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
                         </p>
                       </div>
 
                       {/* Triple Sharing */}
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Triple Sharing</p>
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.tripleSharing")}</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.private.price}
                         </p>
                         <p className="text-muted-foreground text-sm">
                           <span className="line-through">{COURSE_200_HOUR_PRICING.private.originalPrice}</span>
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
+                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
                         </p>
                       </div>
 
                       {/* Double Sharing */}
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Double Sharing</p>
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.doubleSharing")}</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.deluxe.price}
                         </p>
                         <p className="text-muted-foreground text-sm">
                           <span className="line-through">{COURSE_200_HOUR_PRICING.deluxe.originalPrice}</span>
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
+                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
                         </p>
                       </div>
 
                       {/* Private Room */}
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Private Room</p>
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.privateRoom")}</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.vip.price}
                         </p>
                         <p className="text-muted-foreground text-sm">
                           <span className="line-through">{COURSE_200_HOUR_PRICING.vip.originalPrice}</span>
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
+                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
                         </p>
                       </div>
 
@@ -2150,7 +2161,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                           setShowEnrollDialog(true);
                         }}
                       >
-                        Enroll Now
+                        {tCommon("applyNow")}
                       </Button>
                     </div>
                   </div>
@@ -2194,7 +2205,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     {t("inclusions.heading")}
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {inclusions.map((item, index) => (
+                    {((t.raw("inclusionsList") as string[]) || inclusions).map((item, index) => (
                       <div
                         key={index}
                         className="flex items-center gap-4 p-5 bg-card rounded-lg shadow-sm"
@@ -2210,10 +2221,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               ) : (
                 <div className="animate-fade-in">
                   <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-10">
-                    What's Not Included
+                    {t("inclusions.notIncHeading")}
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {exclusions.map((item, index) => (
+                    {((t.raw("exclusionsList") as string[]) || exclusions).map((item, index) => (
                       <div
                         key={index}
                         className="flex items-center gap-4 p-5 bg-card rounded-lg shadow-sm"
@@ -2284,10 +2295,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                           <div className="absolute bottom-0 left-0 right-0 p-5">
                             <h3 className="font-heading text-lg font-semibold text-white text-center">
-                              {item.title}
+                              {(t.raw("whatYouWillReceiveList") as any[])?.[index]?.title || item.title}
                             </h3>
-                            <p className="text-xs text-white/70 mt-1 text-center md:hidden">Tap to see more</p>
-                            <p className="text-xs text-white/70 mt-1 text-center hidden md:block">Hover to see more</p>
+                            <p className="text-xs text-white/70 mt-1 text-center md:hidden">{t("tapHover.tap")}</p>
+                            <p className="text-xs text-white/70 mt-1 text-center hidden md:block">{t("tapHover.hover")}</p>
                           </div>
                         </div>
 
@@ -2298,10 +2309,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                               <item.icon className="w-7 h-7 text-primary" />
                             </div>
                             <h3 className="font-heading text-lg font-semibold text-foreground mb-3">
-                              {item.title}
+                              {(t.raw("whatYouWillReceiveList") as any[])?.[index]?.title || item.title}
                             </h3>
                             <p className="text-sm text-muted-foreground leading-relaxed">
-                              {item.description}
+                              {(t.raw("whatYouWillReceiveList") as any[])?.[index]?.description || item.description}
                             </p>
                           </div>
                         </div>
@@ -2323,19 +2334,19 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="lg:w-1/3 lg:sticky lg:top-24">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-4">
                   <Heart className="w-3 h-3 text-primary" fill="currentColor" />
-                  <span className="text-[10px] font-bold tracking-widest uppercase text-primary">The Takeaway</span>
+                  <span className="text-[10px] font-bold tracking-widest uppercase text-primary">{t("takeaway.badge")}</span>
                 </div>
                 <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4 leading-tight">
-                  What You'll <br />
-                  <span className="text-primary italic">Carry Home</span>
+                  {t("takeaway.heading")} <br />
+                  <span className="text-primary italic">{t("takeaway.headingItalic")}</span>
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Beyond the physical certificate, you walk away with a transformed perspective, a deeper connection to yourself, and the authentic skills to lead others.
+                  {t("takeaway.sub")}
                 </p>
                 <div className="mt-6 p-4 rounded-xl bg-primary/5 border border-primary/20 relative overflow-hidden group/box">
                   <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
                   <p className="text-xs md:text-sm text-foreground font-medium leading-relaxed relative z-10">
-                    <span className="text-primary font-bold">Career Impact:</span> After completing the 200-Hour Yoga Teacher Training, you can start teaching yoga <strong className="text-foreground">anywhere in the world</strong> in studios, online live classes, yoga retreats, or through your own independent practice.
+                    <span className="text-primary font-bold">{t("takeaway.careerImpactTitle")}</span> {t("takeaway.careerImpactDesc")}
                   </p>
                   <Globe className="absolute -bottom-2 -right-2 w-12 h-12 text-primary/10 group-hover/box:text-primary/20 transition-colors duration-500" />
                 </div>
@@ -2348,33 +2359,33 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="lg:w-2/3 grid grid-cols-2 gap-x-6 gap-y-10 md:gap-x-12">
                 {[
                   {
-                    title: "Global Certification",
-                    desc: "Yoga Alliance RYT-200 to start your career anywhere.",
+                    title: t("takeaway.card1Title"),
+                    desc: t("takeaway.card1Desc"),
                     icon: Award
                   },
                   {
-                    title: "Master the Practice",
-                    desc: "Expert guidance in Hatha, Vinyasa, Ashtanga & Iyengar.",
+                    title: t("takeaway.card2Title"),
+                    desc: t("takeaway.card2Desc"),
                     icon: Activity
                   },
                   {
-                    title: "Safety & Anatomy",
-                    desc: "Learn to teach and practice safely without injuries.",
+                    title: t("takeaway.card3Title"),
+                    desc: t("takeaway.card3Desc"),
                     icon: ShieldCheck
                   },
                   {
-                    title: "Spiritual Depth",
-                    desc: "Deep dive into Mantras, Meditation, and Philosophy.",
+                    title: t("takeaway.card4Title"),
+                    desc: t("takeaway.card4Desc"),
                     icon: Sparkles
                   },
                   {
-                    title: "Teaching Skills",
-                    desc: "Practical skills to lead, cue, and inspire students.",
+                    title: t("takeaway.card5Title"),
+                    desc: t("takeaway.card5Desc"),
                     icon: GraduationCap
                   },
                   {
-                    title: "Deep Bonds",
-                    desc: "Lifelong connections with a global yoga community.",
+                    title: t("takeaway.card6Title"),
+                    desc: t("takeaway.card6Desc"),
                     icon: Users
                   }
                 ].map((item, index) => (
@@ -2406,10 +2417,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     <BookOpen className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                    Preparation begins on signup
+                    {t("timeline.prepTitle")}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Start your journey with pre-course materials and guidance
+                    {t("timeline.prepDesc")}
                   </p>
                 </div>
 
@@ -2419,10 +2430,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                    Training: 1st – 24th of each month
+                    {t("timeline.datesTitle")}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Immersive 24-day program every month in Bali
+                    {t("timeline.datesDesc")}
                   </p>
                 </div>
 
@@ -2432,10 +2443,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     <Users className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                    Lifetime Yogagarhi community support
+                    {t("timeline.supportTitle")}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Forever connected to our global yoga family
+                    {t("timeline.supportDesc")}
                   </p>
                 </div>
               </div>
@@ -2456,12 +2467,12 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
           <div className="container mx-auto px-4 text-center relative z-10">
             {/* Main Title */}
             <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-[0.15em] uppercase mb-8">
-              Accommodation
+              {t("accommodationExtra.featuresTitle")}
             </h2>
 
             {/* Subtitle */}
             <p className="font-heading text-xl md:text-2xl text-white/90 max-w-2xl mx-auto mb-16 leading-relaxed">
-              A serene yoga retreat in the heart of Bali's sacred Ubud region
+              {t("accommodationExtra.featuresSub")}
             </p>
 
             {/* Location Features */}
@@ -2472,7 +2483,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <Droplets className="w-6 h-6 text-white" />
                 </div>
                 <p className="font-heading text-base md:text-lg text-white text-left">
-                  10 beautiful waterfalls within 10 km
+                  {t("accommodationExtra.feat1")}
                 </p>
               </div>
 
@@ -2482,7 +2493,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <Mountain className="w-6 h-6 text-white" />
                 </div>
                 <p className="font-heading text-base md:text-lg text-white text-left">
-                  Private forest with an in-house waterfall
+                  {t("accommodationExtra.feat2")}
                 </p>
               </div>
 
@@ -2492,7 +2503,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <Leaf className="w-6 h-6 text-white" />
                 </div>
                 <p className="font-heading text-base md:text-lg text-white text-left">
-                  Peaceful rice-field trekking on-site
+                  {t("accommodationExtra.feat3")}
                 </p>
               </div>
 
@@ -2502,7 +2513,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <p className="font-heading text-base md:text-lg text-white text-left">
-                  Only 15 km from central Ubud
+                  {t("accommodationExtra.feat4")}
                 </p>
               </div>
             </div>
@@ -2514,7 +2525,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <section className="py-12 bg-background border-t border-border/50">
           <div className="container mx-auto px-4">
             <h3 className="font-heading text-2xl font-bold text-center text-foreground mb-8">
-              Glimpses of Your Stay
+              {t("accommodationExtra.glimpses")}
             </h3>
 
             <div className="relative">
@@ -2546,7 +2557,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">Choose Your Package</p>
+              <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("pricing.choosePackage")}</p>
               <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
                 {t("accommodation.heading")}
               </h3>
@@ -2558,20 +2569,20 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
               {[
                 {
-                  title: "Tuition Only",
-                  beds: "Course Only",
-                  description: "Full access to classes, study materials, and certification. Accommodation and meals not included.",
+                  title: t("pricing.tuitionOnly"),
+                  beds: t("accommodationExtra.courseOnly"),
+                  description: t("pricing.tuitionOnlyDesc"),
                   originalPrice: COURSE_200_HOUR_PRICING.shared.originalPrice,
                   price: COURSE_200_HOUR_PRICING.shared.price,
                   images: [apartGroupClass, apartSeatedTalk, apartGroupPose, apartChildPose, apartMountainPose],
                   features: ["Yoga Shala", "TTC Manual", "Wi-Fi", "All Classes"],
-                  badge: "Course Only",
+                  badge: t("accommodationExtra.courseOnly"),
                   isPopular: false,
                 },
                 {
-                  title: "Triple Sharing",
+                  title: t("pricing.triple"),
                   beds: 3,
-                  description: "Share your space with two like-minded yogis. A great way to build lasting friendships.",
+                  description: t("pricing.tripleDesc"),
                   originalPrice: COURSE_200_HOUR_PRICING.private.originalPrice,
                   price: COURSE_200_HOUR_PRICING.private.price,
                   images: [tripleBalcony, tripleBathroom, tripleBedroom1, tripleBedroom2, tripleBedroom3],
@@ -2580,20 +2591,20 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   isPopular: false,
                 },
                 {
-                  title: "Double Sharing",
+                  title: t("pricing.double"),
                   beds: 2,
-                  description: "Share with one roommate. Perfect balance of community and personal space.",
+                  description: t("pricing.doubleDesc"),
                   originalPrice: COURSE_200_HOUR_PRICING.deluxe.originalPrice,
                   price: COURSE_200_HOUR_PRICING.deluxe.price,
                   images: [doubleBedroom1, doubleBedroom2, doubleBedroom3, doubleBedroom4, doubleBalcony],
                   features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
-                  badge: "Most Popular",
+                  badge: t("accommodationExtra.mostPopular"),
                   isPopular: true,
                 },
                 {
-                  title: "Private Room",
+                  title: t("pricing.private"),
                   beds: 1,
-                  description: "Your own sanctuary for complete privacy and deep personal reflection.",
+                  description: t("pricing.privateDesc"),
                   originalPrice: COURSE_200_HOUR_PRICING.vip.originalPrice,
                   price: COURSE_200_HOUR_PRICING.vip.price,
                   images: [
@@ -2608,7 +2619,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     privateBalcony,
                   ],
                   features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
-                  badge: "Premium",
+                  badge: t("accommodationExtra.premium"),
                   isPopular: false,
                 },
               ].map((room, roomIndex) => (
@@ -2626,14 +2637,14 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             {/* Common Amenities */}
             <div className="mt-16 max-w-4xl mx-auto">
               <h3 className="font-heading text-xl font-bold text-center text-foreground mb-8">
-                All Rooms Include
+                {t("accommodationExtra.allRooms")}
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
-                  { icon: Wifi, label: "Free Wi-Fi" },
-                  { icon: Droplets, label: "Hot Water" },
-                  { icon: Wind, label: "AC / Fan" },
-                  { icon: Sparkles, label: "Daily Cleaning" },
+                  { icon: Wifi, label: t("accommodationExtra.wifi") },
+                  { icon: Droplets, label: t("accommodationExtra.hotWater") },
+                  { icon: Wind, label: t("accommodationExtra.acFan") },
+                  { icon: Sparkles, label: t("accommodationExtra.cleaning") },
                 ].map((item, index) => {
                   const IconComponent = item.icon;
                   return (
@@ -2912,9 +2923,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16">
-              <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">Beyond The Mat</p>
+              <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("excursionsSection.badge")}</p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Sacred Excursions
+                {t("excursionsSection.heading")}
               </h2>
               {/* Decorative Mountain/Nature Icon */}
               <div className="flex items-center justify-center gap-2 mb-4">
@@ -2926,7 +2937,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
               </div>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                Immerse yourself in Bali's spiritual heritage through transformative experiences
+                {t("excursionsSection.sub")}
               </p>
             </div>
 
@@ -2960,10 +2971,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     {/* Content */}
                     <div className="text-center pt-4">
                       <h3 className="font-heading text-xl font-bold text-foreground mb-3">
-                        {excursion.title}
+                        {(t.raw("excursionsList") as any[])?.[index]?.title || excursion.title}
                       </h3>
                       <p className="text-sm text-muted-foreground leading-relaxed px-2">
-                        {excursion.description}
+                        {(t.raw("excursionsList") as any[])?.[index]?.description || excursion.description}
                       </p>
                     </div>
                   </div>
@@ -3145,7 +3156,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <span className="font-heading text-xl font-semibold text-foreground">Google Reviews</span>
               </div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                What Our Students Say
+                {t("ethicsExtra.reviewsHeading")}
               </h2>
 
               {/* Overall Rating */}
@@ -3158,7 +3169,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     ))}
                   </div>
                   {GOOGLE_REVIEWS_CONFIG.displayCount && !GOOGLE_REVIEWS_CONFIG.displayCount.includes("[CONFIRM]") && (
-                    <p className="text-sm text-muted-foreground">Based on {GOOGLE_REVIEWS_CONFIG.displayCount}</p>
+                    <p className="text-sm text-muted-foreground">{t("ethicsExtra.basedOnReviews")} {GOOGLE_REVIEWS_CONFIG.displayCount}</p>
                   )}
                 </div>
               </div>
@@ -3179,7 +3190,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
               >
-                View all reviews on Google
+                {t("ethicsExtra.viewAllGoogle")}
                 <ChevronDown className="w-4 h-4 -rotate-90" />
               </a>
             </div>
@@ -3198,13 +3209,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <BookOpen className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-heading text-2xl font-bold text-foreground">Code of Conduct</h3>
+                  <h3 className="font-heading text-2xl font-bold text-foreground">{t("ethics.codeOfConduct")}</h3>
                 </div>
                 <div className="flex flex-wrap gap-3">
                   {[
-                    "Punctual attendance", "No alcohol/smoking", "Vegetarian only",
-                    "Silence in class", "Modest clothing", "Respect all",
-                    "No phones in class", "Full attendance required"
+                    t("ethicsExtra.code1"), t("ethicsExtra.code2"), t("ethicsExtra.code3"),
+                    t("ethicsExtra.code4"), t("ethicsExtra.code5"), t("ethicsExtra.code6"),
+                    t("ethicsExtra.code7"), t("ethicsExtra.code8")
                   ].map((item, i) => (
                     <span key={i} className="px-3 py-1.5 bg-secondary/50 rounded-full text-sm font-medium text-foreground border border-border flex items-center gap-2">
                       <Check className="w-3 h-3 text-primary" />
@@ -3220,13 +3231,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <RefreshCw className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-heading text-2xl font-bold text-foreground">Refund & Cancellation</h3>
+                  <h3 className="font-heading text-2xl font-bold text-foreground">{t("ethics.refundCancellation")}</h3>
                 </div>
                 <div className="flex flex-wrap gap-3">
                   {[
-                    "Reschedule within 12 months", "Transfer seat allowed",
-                    "Full refund if we cancel", "Trial day policy",
-                    "No refund after Day 1"
+                    t("ethicsExtra.refund1"), t("ethicsExtra.refund2"),
+                    t("ethicsExtra.refund3"), t("ethicsExtra.refund4"),
+                    t("ethicsExtra.refund5")
                   ].map((item, i) => (
                     <span key={i} className="px-3 py-1.5 bg-secondary/50 rounded-full text-sm font-medium text-foreground border border-border flex items-center gap-2">
                       <Check className="w-3 h-3 text-primary" />
@@ -3331,7 +3342,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 </p>
               </div>
               <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground">
-                <p>Please check your inbox (and spam folder) within the next 24 hours.</p>
+                <p>{tDialog("inboxNotice")}</p>
               </div>
               <Button
                 onClick={() => {
@@ -3403,7 +3414,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   onChange={(e) => setWebinarForm(prev => ({ ...prev, timezone: e.target.value }))}
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                 >
-                  <option value="">Select your timezone</option>
+                  <option value="">{tDialog("selectTimezone")}</option>
                   <option value="UTC-12:00">(UTC-12:00) Baker Island</option>
                   <option value="UTC-11:00">(UTC-11:00) American Samoa</option>
                   <option value="UTC-10:00">(UTC-10:00) Hawaii</option>
@@ -3464,10 +3475,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   onChange={(e) => setWebinarForm(prev => ({ ...prev, time: e.target.value }))}
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                 >
-                  <option value="">Select preferred time</option>
-                  <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
-                  <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
-                  <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                  <option value="">{tDialog("selectPreferredTime")}</option>
+                  <option value="morning">{tDialog("slotMorning")}</option>
+                  <option value="afternoon">{tDialog("slotAfternoon")}</option>
+                  <option value="evening">{tDialog("slotEvening")}</option>
                 </select>
               </div>
 
@@ -3503,15 +3514,15 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               </div>
               <div>
                 <DialogTitle className="font-heading text-2xl font-bold text-primary mb-2">
-                  You're Registered! 🎉
+                  {tDialog("registeredTitle")}
                 </DialogTitle>
                 <DialogDescription className="text-muted-foreground">
                   Thank you, <span className="font-medium text-foreground">{webinarForm.name}</span>! Your webinar registration is confirmed.
                 </DialogDescription>
               </div>
               <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground space-y-2">
-                <p>📧 Confirmation sent to: <span className="font-medium text-foreground">{webinarForm.email}</span></p>
-                <p>📅 We'll send you the webinar link before your selected date.</p>
+                <p>📧 {tDialog("confirmationSentTo")} <span className="font-medium text-foreground">{webinarForm.email}</span></p>
+                <p>📅 {tDialog("webinarLinkNotice")}</p>
               </div>
               <Button
                 onClick={() => {
@@ -3765,7 +3776,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   onChange={(e) => setTourTimezone(e.target.value)}
                   className="w-full h-12 px-3 rounded-xl bg-background border border-border/80 text-foreground text-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                 >
-                  <option value="">Select your time zone</option>
+                  <option value="">{tDialog("selectTimezone")}</option>
                   {timezones.map((tz) => (
                     <option key={tz.value} value={tz.value}>
                       {tz.label}
@@ -3799,7 +3810,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 </div>
 
                 <h3 className="font-heading text-xl font-bold text-center mb-6">
-                  Meet with YogaGarhi
+                  {tDialog("meetYogaGarhi")}
                 </h3>
 
                 {/* Month Navigation */}
@@ -3823,7 +3834,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
                 {/* Calendar Grid */}
                 <div className="grid grid-cols-7 gap-1 text-center text-sm">
-                  {["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"].map(day => (
+                  {[0, 1, 2, 3, 4, 5, 6].map(i => new Date(2026, 0, 4 + i).toLocaleDateString(locale, { weekday: "short" }).toUpperCase()).map(day => (
                     <div key={day} className="py-2 text-xs font-medium text-primary-foreground/60">
                       {day}
                     </div>
@@ -3871,7 +3882,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="p-8">
                 {/* Meeting Duration */}
                 <div className="mb-8">
-                  <h4 className="font-medium text-foreground mb-3">Meeting duration</h4>
+                  <h4 className="font-medium text-foreground mb-3">{tDialog("meetingDuration")}</h4>
                   <div className="bg-secondary/50 rounded-lg p-3 text-center text-muted-foreground">
                     30 mins
                   </div>
@@ -3879,9 +3890,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
                 {/* Time Selection */}
                 <div>
-                  <h4 className="font-medium text-foreground mb-1">What time works best?</h4>
+                  <h4 className="font-medium text-foreground mb-1">{tDialog("whatTimeBest")}</h4>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Showing times for <span className="font-medium text-foreground">{selectedDay} {["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][selectedMonth]} 2026</span>
+                    {tDialog("showingTimesFor")} <span className="font-medium text-foreground">{selectedDay ? new Date(2026, selectedMonth, selectedDay).toLocaleDateString(locale, { day: "numeric", month: "long", year: "numeric" }) : ""}</span>
                   </p>
 
                   {/* Timezone Dropdown */}
@@ -3940,7 +3951,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       setShowBookingDialog(true);
                     }}
                   >
-                    Confirm Booking
+                    {tDialog("confirmBooking")}
                   </Button>
                   <Button
                     variant="ghost"
@@ -3961,7 +3972,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <Dialog open={showBookingDialog} onOpenChange={setShowBookingDialog}>
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
-              <DialogTitle className="font-heading text-xl">Complete Your Booking</DialogTitle>
+              <DialogTitle className="font-heading text-xl">{tDialog("bookingTitle")}</DialogTitle>
               <DialogDescription className="text-sm text-muted-foreground mt-2">
                 {selectedDay && selectedTime && (
                   <>Scheduled for {selectedDay} {["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][selectedMonth]} 2026 at {selectedTime}</>
@@ -3973,13 +3984,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Name */}
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">
-                  Full Name <span className="text-destructive">*</span>
+                  {tDialog("fullName")} <span className="text-destructive">*</span>
                 </label>
                 <input
                   type="text"
                   value={bookingForm.name}
                   onChange={(e) => setBookingForm(prev => ({ ...prev, name: e.target.value }))}
-                  placeholder="Enter your full name"
+                  placeholder={tDialog("fullName")}
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                 />
               </div>
@@ -3987,7 +3998,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Contact/WhatsApp */}
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">
-                  Contact / WhatsApp Number <span className="text-destructive">*</span>
+                  {tDialog("phone")} <span className="text-destructive">*</span>
                 </label>
                 <div className="flex gap-2">
                   <select
@@ -4007,7 +4018,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     type="tel"
                     value={bookingForm.contact}
                     onChange={(e) => setBookingForm(prev => ({ ...prev, contact: e.target.value }))}
-                    placeholder="Phone number"
+                    placeholder={tDialog("phone")}
                     className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                 </div>
@@ -4016,7 +4027,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Email */}
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">
-                  Email Address <span className="text-destructive">*</span>
+                  {tDialog("email")} <span className="text-destructive">*</span>
                 </label>
                 <input
                   type="email"
@@ -4030,7 +4041,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Course Selection */}
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">
-                  Which course are you joining? <span className="text-destructive">*</span>
+                  {tDialog("course")} <span className="text-destructive">*</span>
                 </label>
                 <div className="space-y-2">
                   {[
@@ -4066,7 +4077,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               disabled={!isBookingFormComplete || isSubmittingBooking}
               onClick={handleBookingSubmit}
             >
-              {isSubmittingBooking ? "Booking..." : "Submit Booking"}
+              {isSubmittingBooking ? tCommon("loading") : tDialog("confirmBooking")}
             </Button>
           </DialogContent>
         </Dialog>
@@ -4082,7 +4093,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-20">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Sachin Ji's Research on Personalized Yoga and Prakriti
+                {t("prakritiResearch.heading")}
               </h2>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />
@@ -4090,7 +4101,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="h-px w-20 bg-gradient-to-l from-transparent to-primary" />
               </div>
               <p className="font-heading text-2xl md:text-3xl text-primary font-medium italic max-w-3xl mx-auto leading-relaxed">
-                "Yoga Is Not One-Size-Fits-All Because Every Body Carries a Different Energy"
+                {t("prakritiResearch.quote")}
               </p>
             </div>
 
@@ -4098,38 +4109,38 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14 max-w-7xl mx-auto">
               {[
                 {
-                  title: "The Core Question",
-                  text: <>During our Lead Teacher's <strong className="text-foreground font-bold">Master Yoga studies</strong>, one question became impossible to ignore: Why does the same yoga practice calm some people, but leave others feeling <strong className="text-foreground font-bold">tired, restless, or mentally disturbed</strong>?</>,
+                  title: t("prakritiResearch.card1Title"),
+                  text: t("prakritiResearch.card1Text"),
                   icon: Brain,
                   color: "bg-amber-500/10 text-amber-600 border-amber-500/20"
                 },
                 {
-                  title: "Deep Investigation",
-                  text: <>This led to deep research into classical yoga texts, Ayurveda, and years of real student experience. The answer was simple, yet powerful: Every human being is born with a <strong className="text-foreground font-bold">unique Prakriti</strong>.</>,
+                  title: t("prakritiResearch.card2Title"),
+                  text: t("prakritiResearch.card2Text"),
                   icon: BookOpen,
                   color: "bg-blue-500/10 text-blue-600 border-blue-500/20"
                 },
                 {
-                  title: "The Energy Blueprint",
-                  text: <>Prakriti shapes the body, mind, emotions, and nervous system. Some people need <strong className="text-foreground font-bold">grounding</strong>, some need <strong className="text-foreground font-bold">movement</strong>, and others need <strong className="text-foreground font-bold">stillness</strong>. A fixed style for everyone can create imbalance.</>,
+                  title: t("prakritiResearch.card3Title"),
+                  text: t("prakritiResearch.card3Text"),
                   icon: Zap,
                   color: "bg-purple-500/10 text-purple-600 border-purple-500/20"
                 },
                 {
-                  title: "Quality of Practice",
-                  text: <>More than which yoga style you practice, what truly matters is <strong className="text-foreground font-bold italic">how you practice</strong>. How the <strong className="text-foreground font-bold">nervous system</strong> is approached, how the breath is guided, and how your <strong className="text-foreground font-bold">Dosha is supported</strong> rather than pushed.</>,
+                  title: t("prakritiResearch.card4Title"),
+                  text: t("prakritiResearch.card4Text"),
                   icon: Layers,
                   color: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20"
                 },
                 {
-                  title: "Shiv–Shakti Sadhana",
-                  text: <>Born from this realization, <strong className="text-foreground font-bold">Shiv–Shakti Sadhana</strong> is a balanced approach that harmonizes <strong className="text-foreground font-bold">stability and movement</strong>, awareness and energy. Asana here supports grounding and strength.</>,
+                  title: t("prakritiResearch.card5Title"),
+                  text: t("prakritiResearch.card5Text"),
                   icon: RefreshCw,
                   color: "bg-rose-500/10 text-rose-600 border-rose-500/20"
                 },
                 {
-                  title: "Back to Balance",
-                  text: <>When yoga respects your Prakriti, it becomes <strong className="text-foreground font-bold">accessible, sustainable, and deeply healing</strong>. Real yoga does not change you; it brings you back into <strong className="text-foreground font-bold">balance with yourself</strong>.</>,
+                  title: t("prakritiResearch.card6Title"),
+                  text: t("prakritiResearch.card6Text"),
                   icon: Heart,
                   color: "bg-cyan-500/10 text-cyan-600 border-cyan-500/20"
                 }
@@ -4178,10 +4189,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
                 <div className="relative z-10">
                   <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed mb-6">
-                    Our Lead Teacher observed that when practice does not respect the <strong className="text-foreground">nervous system and natural energy type</strong>, even correct postures can lead to restlessness, fatigue, or imbalance.
+                    {t("prakritiResearch.conclusion1")}
                   </p>
                   <p className="text-lg md:text-xl text-foreground/90 leading-relaxed italic border-t border-primary/20 pt-8 mb-8">
-                    "When yoga respects your Prakriti, it becomes <strong className="text-foreground">accessible, sustainable, and deeply healing</strong> for everyone. Here, yoga is not forced. It is <strong className="text-foreground">personalized, energy-aware, and deeply respectful</strong> of who you are."
+                    {t("prakritiResearch.conclusion2")}
                   </p>
 
                   <div className="flex justify-center">
@@ -4251,11 +4262,11 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     rel="noopener noreferrer"
                   >
                     <MapPin className="w-4 h-4 mr-2" />
-                    Open in Google Maps
+                    {t("ethicsExtra.openGoogleMaps")}
                   </a>
                 </Button>
                 <p className="text-sm text-muted-foreground">
-                  <span className="font-medium text-foreground">Open 24 hours</span> • Gianyar, Bali
+                  <span className="font-medium text-foreground">{t("ethicsExtra.open24Hours")}</span> • Gianyar, Bali
                 </p>
               </div>
             </div>
@@ -4435,9 +4446,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <Dialog open={showPreYttcOptions} onOpenChange={setShowPreYttcOptions}>
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
-              <DialogTitle className="font-heading text-2xl text-center">Start Your Journey</DialogTitle>
+              <DialogTitle className="font-heading text-2xl text-center">{tDialog("preYttcTitle")}</DialogTitle>
               <DialogDescription className="text-center text-muted-foreground">
-                Connect with our founders to start your Live Online Prep sessions and join the family.
+                {tDialog("preYttcDesc")}
               </DialogDescription>
             </DialogHeader>
             <div className="grid grid-cols-1 gap-4 mt-6">
@@ -4455,7 +4466,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="p-2 bg-[#25D366]/10 rounded-full group-hover:bg-white/20">
                     <MessageCircle className="w-6 h-6" />
                   </div>
-                  Continue on WhatsApp
+                  {tDialog("continueWhatsApp")}
                 </a>
               </Button>
               <Button
@@ -4467,7 +4478,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="p-2 bg-primary/10 rounded-full group-hover:bg-white/20">
                     <Mail className="w-6 h-6" />
                   </div>
-                  Send us an Email
+                  {tDialog("sendEmail")}
                 </a>
               </Button>
             </div>
@@ -4535,7 +4546,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     aria-label="Phone number"
                     value={enrollForm.contact}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))}
-                    placeholder="Phone number"
+                    placeholder={tDialog("phone")}
                     className="flex-1 px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                   />
                 </div>
@@ -4549,7 +4560,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                   >
-                    <option value="">Select</option>
+                    <option value="">{tDialog("select")}</option>
                     <option value="100 Hour Yoga Teacher Training Course in Bali">100 Hr YTTC</option>
                     <option value="200 Hour Yoga Teacher Training Course in Bali">200 Hr YTTC</option>
                     <option value="300 Hour Yoga Teacher Training Course in Bali">300 Hr YTTC</option>
@@ -4563,7 +4574,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, courseDate: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                   >
-                    <option value="">Choose</option>
+                    <option value="">{tDialog("choose")}</option>
                     {courseDates.map((date) => (
                       <option key={date} value={date}>{date}</option>
                     ))}
@@ -4579,60 +4590,60 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, accommodation: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                   >
-                    <option value="">Select</option>
-                    <option value="Private Room">Private Room</option>
-                    <option value="Double Sharing">Double Sharing</option>
-                    <option value="Triple Sharing">Triple Sharing</option>
+                    <option value="">{tDialog("select")}</option>
+                    <option value="Private Room">{t("pricing.privateRoom")}</option>
+                    <option value="Double Sharing">{t("pricing.doubleSharing")}</option>
+                    <option value="Triple Sharing">{t("pricing.tripleSharing")}</option>
                   </select>
                 </div>
                 <div className="space-y-1.5">
-                  <label className="block text-sm font-semibold text-foreground">Gender <span className="text-destructive">*</span></label>
+                  <label className="block text-sm font-semibold text-foreground">{tDialog("gender")} <span className="text-destructive">*</span></label>
                   <select
                     aria-label="Select Gender"
                     value={enrollForm.gender}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, gender: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                   >
-                    <option value="">Select</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Others">Others</option>
+                    <option value="">{tDialog("select")}</option>
+                    <option value="Male">{tDialog("male")}</option>
+                    <option value="Female">{tDialog("female")}</option>
+                    <option value="Others">{tDialog("others")}</option>
                   </select>
                 </div>
               </div>
               <div className="space-y-1.5">
-                <label className="block text-sm font-semibold text-foreground">Country <span className="text-destructive">*</span></label>
+                <label className="block text-sm font-semibold text-foreground">{tDialog("country")} <span className="text-destructive">*</span></label>
                 <input
                   type="text"
                   aria-label="Country"
                   value={enrollForm.country}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, country: e.target.value }))}
-                  placeholder="Your country"
+                  placeholder={tDialog("country")}
                   className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                 />
               </div>
               <div className="space-y-1.5">
-                <label className="block text-sm font-semibold text-foreground">How did you hear about us? <span className="text-destructive">*</span></label>
+                <label className="block text-sm font-semibold text-foreground">{tDialog("howHeard")} <span className="text-destructive">*</span></label>
                 <select
                   aria-label="How did you hear about us"
                   value={enrollForm.source}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, source: e.target.value }))}
                   className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                 >
-                  <option value="">Choose</option>
-                  <option value="Google Search">Google Search</option>
-                  <option value="Social Media">Social Media</option>
-                  <option value="Recommendation">Recommendation</option>
-                  <option value="Any other source">Any other source</option>
+                  <option value="">{tDialog("choose")}</option>
+                  <option value="Google Search">{tDialog("srcGoogle")}</option>
+                  <option value="Social Media">{tDialog("srcSocial")}</option>
+                  <option value="Recommendation">{tDialog("srcRecommendation")}</option>
+                  <option value="Any other source">{tDialog("srcOther")}</option>
                 </select>
               </div>
               <div className="space-y-1.5">
-                <label className="block text-sm font-semibold text-foreground">Message <span className="text-muted-foreground font-normal">(optional)</span></label>
+                <label className="block text-sm font-semibold text-foreground">{tDialog("messageOptional")}</label>
                 <textarea
                   aria-label="Optional message"
                   value={enrollForm.message}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, message: e.target.value }))}
-                  placeholder="Any questions or additional info..."
+                  placeholder={tDialog("placeholderMessage")}
                   rows={3}
                   className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none text-sm"
                 />
@@ -4650,7 +4661,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 {isSubmittingEnroll ? tCommon("loading") : tDialog("submitApplication")}
               </Button>
               <p className="text-center text-xs text-muted-foreground mt-2">
-                &#128274; Your information is secure and never shared
+                &#128274; {tDialog("securityNote")}
               </p>
             </div>
           </DialogContent>

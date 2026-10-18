@@ -234,7 +234,7 @@ export default function Header() {
           <div className="flex items-center justify-center gap-1.5 sm:gap-2 sm:whitespace-nowrap animate-none md:animate-pulse text-center">
             <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
             <span className="text-[11px] min-[375px]:text-xs sm:text-sm font-bold tracking-wide uppercase leading-tight">
-              {tPromo("title")} 🎉 Flat <span className="text-amber-300 font-extrabold">{tPromo("discountText")}</span> {tPromo("batchesText")}
+              {tPromo("title")} 🎉 {tPromo("flat")} <span className="text-amber-300 font-extrabold">{tPromo("discountText")}</span> {tPromo("batchesText")}
             </span>
           </div>
 

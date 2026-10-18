@@ -2,12 +2,14 @@
 import { useState, useEffect } from "react";
 import { X, Sparkles } from "lucide-react";
 import { useQuickEnquiry } from "./QuickEnquiryDialog";
-import { PROMO_OFFER } from "@/constants/offers";
+import { useTranslations } from "next-intl";
 
 const EarlyBirdPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
   const { setShowQuickEnquiry } = useQuickEnquiry();
+  const tPromo = useTranslations("promo");
+  const tCommon = useTranslations("common");
 
   // Check sessionStorage only in the browser after mount
   useEffect(() => {
@@ -57,7 +59,7 @@ const EarlyBirdPopup = () => {
         <button
           onClick={handleDismiss}
           className="absolute -right-2 -top-2 md:-right-3 md:-top-3 min-w-[44px] min-h-[44px] w-11 h-11 md:w-7 md:h-7 md:min-w-0 md:min-h-0 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center shadow-lg transition-colors z-20 cursor-pointer"
-          aria-label="Close popup"
+          aria-label={tCommon("close")}
         >
           <X className="w-5 h-5 md:w-4 md:h-4 text-white" />
         </button>
@@ -66,7 +68,7 @@ const EarlyBirdPopup = () => {
         <div className="relative overflow-hidden rounded-2xl md:rounded-r-xl md:rounded-l-none shadow-2xl border border-white/20 md:border-0">
           {/* Top Banner - "FOR" */}
           <div className="bg-primary text-primary-foreground text-center py-1 md:py-1.5 px-4 md:px-6 relative">
-            <span className="text-[11px] md:text-xs font-bold tracking-widest uppercase">For</span>
+            <span className="text-[11px] md:text-xs font-bold tracking-widest uppercase">{tPromo("popupFor")}</span>
             {/* Triangle decoration */}
             <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[8px] md:border-l-[10px] border-r-[8px] md:border-r-[10px] border-t-[6px] md:border-t-[8px] border-l-transparent border-r-transparent border-t-primary" />
           </div>
@@ -78,20 +80,20 @@ const EarlyBirdPopup = () => {
             <Sparkles className="absolute top-2 right-2 w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-300 animate-pulse" />
 
             <h3 className="text-white font-heading text-lg md:text-xl font-bold tracking-tight leading-tight">
-              {PROMO_OFFER.popupTitle}
+              {tPromo("popupTitle")}
             </h3>
 
             {/* Bird Banner */}
             <div className="relative -mx-4 md:-mx-6 my-1.5 md:my-2">
               <div className="bg-primary py-1.5 md:py-2 px-3 md:px-4 transform -rotate-1 md:-rotate-2">
                 <span className="text-primary-foreground font-heading text-sm md:text-lg font-bold">
-                  {PROMO_OFFER.popupBatches}
+                  {tPromo("popupBatches")}
                 </span>
               </div>
             </div>
 
             <p className="text-white font-heading text-base md:text-lg font-semibold">
-              {PROMO_OFFER.popupDiscount}
+              {tPromo("popupDiscount")}
             </p>
 
             {/* Decorative line */}
@@ -110,7 +112,7 @@ const EarlyBirdPopup = () => {
             }}
             className="w-full bg-amber-700 hover:bg-amber-800 text-white py-2.5 md:py-3 px-4 md:px-6 font-bold text-xs md:text-sm tracking-wide uppercase transition-colors flex items-center justify-center gap-2 group"
           >
-            <span>Contact Us</span>
+            <span>{tPromo("contactUs")}</span>
             <span className="text-base md:text-lg group-hover:translate-x-1 transition-transform">»</span>
           </button>
         </div>

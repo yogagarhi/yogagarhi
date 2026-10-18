@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 interface PromoCountdownProps {
     className?: string;
@@ -28,6 +29,7 @@ function calculateTimeLeft() {
 }
 
 const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
+    const t = useTranslations("promo");
     const daysRef = useRef<HTMLSpanElement>(null);
     const hoursRef = useRef<HTMLSpanElement>(null);
     const minsRef = useRef<HTMLSpanElement>(null);
@@ -54,28 +56,28 @@ const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
                     <div className="bg-white/10 backdrop-blur-md rounded-md sm:rounded-lg px-1.5 sm:px-2 py-0.5 sm:py-1 min-w-[1.75rem] sm:min-w-[2.5rem] shadow-inner border border-white/20 text-center">
                         <span ref={daysRef} className="text-xs sm:text-lg font-bold tracking-tighter block leading-tight">00</span>
                     </div>
-                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">Days</span>
+                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">{t("days")}</span>
                 </div>
                 <span className="text-xs sm:text-lg font-bold mb-3 sm:mb-4 opacity-50">:</span>
                 <div className="flex flex-col items-center mx-0.5 sm:mx-1.5">
                     <div className="bg-white/10 backdrop-blur-md rounded-md sm:rounded-lg px-1.5 sm:px-2 py-0.5 sm:py-1 min-w-[1.75rem] sm:min-w-[2.5rem] shadow-inner border border-white/20 text-center">
                         <span ref={hoursRef} className="text-xs sm:text-lg font-bold tracking-tighter block leading-tight">00</span>
                     </div>
-                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">Hrs</span>
+                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">{t("hrs")}</span>
                 </div>
                 <span className="text-xs sm:text-lg font-bold mb-3 sm:mb-4 opacity-50">:</span>
                 <div className="flex flex-col items-center mx-0.5 sm:mx-1.5">
                     <div className="bg-white/10 backdrop-blur-md rounded-md sm:rounded-lg px-1.5 sm:px-2 py-0.5 sm:py-1 min-w-[1.75rem] sm:min-w-[2.5rem] shadow-inner border border-white/20 text-center">
                         <span ref={minsRef} className="text-xs sm:text-lg font-bold tracking-tighter block leading-tight">00</span>
                     </div>
-                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">Mins</span>
+                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">{t("mins")}</span>
                 </div>
                 <span className="text-xs sm:text-lg font-bold mb-3 sm:mb-4 opacity-50">:</span>
                 <div className="flex flex-col items-center mx-0.5 sm:mx-1.5">
                     <div className="bg-white/10 backdrop-blur-md rounded-md sm:rounded-lg px-1.5 sm:px-2 py-0.5 sm:py-1 min-w-[1.75rem] sm:min-w-[2.5rem] shadow-inner border border-white/20 text-center">
                         <span ref={secsRef} className="text-xs sm:text-lg font-bold tracking-tighter block leading-tight">00</span>
                     </div>
-                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">Secs</span>
+                    <span className="text-[7px] sm:text-[9px] uppercase font-bold mt-0.5 sm:mt-1 opacity-80 tracking-wider sm:tracking-widest">{t("secs")}</span>
                 </div>
             </div>
         </div>

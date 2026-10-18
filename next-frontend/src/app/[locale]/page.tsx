@@ -64,8 +64,17 @@ export default async function Page({
   const messages: any = await getMessages();
   const pageMessages = {
     home: messages.home,
+    whyChoose: messages.whyChoose,
+    faq: messages.faq,
+    reviews: messages.reviews,
+    promo: messages.promo,
     common: messages.common,
     dialogs: messages.dialogs,
+    stickyContact: messages.stickyContact,
+    switcher: messages.switcher,
+    nav: messages.nav,
+    navDropdown: messages.navDropdown,
+    footer: messages.footer,
   };
 
   const homeFaqSchema = {
