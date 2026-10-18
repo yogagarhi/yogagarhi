@@ -67,8 +67,10 @@
     "contactUs": "Contact Us",
     "heroSpecialOfferPrefix": "Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities -",
     "heroSpecialOfferHighlight": "all included for free.",
-    "courseSpecialOfferPrefix": "Book your September to December YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities -",
-    "courseSpecialOfferHighlight": "all included for free."
+    "courseSpecialOfferPrefix": "Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities -",
+    "courseSpecialOfferHighlight": "all included for free.",
+    "specialOfferPrefix": "Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities -",
+    "specialOfferHighlight": "all included for free."
   },
   "stickyContact": {
     "contactUs": "Contact Us",

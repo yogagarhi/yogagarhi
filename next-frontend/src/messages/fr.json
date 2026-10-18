@@ -67,8 +67,10 @@
     "contactUs": "Contactez-nous",
     "heroSpecialOfferPrefix": "Réservez votre YTT d'avril à juillet et profitez d'une séance photo professionnelle, d'une visite des temples sacrés, du transfert aéroport et d'activités culturelles –",
     "heroSpecialOfferHighlight": "le tout inclus gratuitement.",
-    "courseSpecialOfferPrefix": "Réservez votre YTT de septembre à décembre et profitez d'une séance photo professionnelle, d'une visite des temples sacrés, du transfert aéroport et d'activités culturelles –",
-    "courseSpecialOfferHighlight": "le tout inclus gratuitement."
+    "courseSpecialOfferPrefix": "Réservez votre YTT d'avril à juillet et profitez d'une séance photo professionnelle, d'une visite des temples sacrés, du transfert aéroport et d'activités culturelles –",
+    "courseSpecialOfferHighlight": "le tout inclus gratuitement.",
+    "specialOfferPrefix": "Réservez votre YTT d'avril à juillet et profitez d'une séance photo professionnelle, d'une visite des temples sacrés, du transfert aéroport et d'activités culturelles –",
+    "specialOfferHighlight": "le tout inclus gratuitement."
   },
   "stickyContact": {
     "contactUs": "Contactez-nous",

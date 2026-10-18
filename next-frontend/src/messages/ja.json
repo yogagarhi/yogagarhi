@@ -67,8 +67,10 @@
     "contactUs": "お問い合わせ",
     "heroSpecialOfferPrefix": "4月〜7月のYTTをご予約いただくと、プロによる写真撮影、聖なる寺院ツアー、空港送迎、伝統文化体験が –",
     "heroSpecialOfferHighlight": "すべて無料で含まれます。",
-    "courseSpecialOfferPrefix": "9月〜12月のYTTをご予約いただくと、プロによる写真撮影、聖なる寺院ツアー、空港送迎、伝統文化体験が –",
-    "courseSpecialOfferHighlight": "すべて無料で含まれます。"
+    "courseSpecialOfferPrefix": "4月〜7月のYTTをご予約いただくと、プロによる写真撮影、聖なる寺院ツアー、空港送迎、伝統文化体験が –",
+    "courseSpecialOfferHighlight": "すべて無料で含まれます。",
+    "specialOfferPrefix": "4月〜7月のYTTをご予約いただくと、プロによる写真撮影、聖なる寺院ツアー、空港送迎、伝統文化体験が –",
+    "specialOfferHighlight": "すべて無料で含まれます。"
   },
   "stickyContact": {
     "contactUs": "お問い合わせ",

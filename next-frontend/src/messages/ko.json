@@ -67,8 +67,10 @@
     "contactUs": "문의하기",
     "heroSpecialOfferPrefix": "4월~7월 YTT 예약 시 전문가 사진 촬영, 성스러운 사원 투어, 공항 픽업, 전통 문화 체험이 –",
     "heroSpecialOfferHighlight": "모두 무료로 포함됩니다.",
-    "courseSpecialOfferPrefix": "9월~12월 YTT 예약 시 전문가 사진 촬영, 성스러운 사원 투어, 공항 픽업, 전통 문화 체험이 –",
-    "courseSpecialOfferHighlight": "모두 무료로 포함됩니다."
+    "courseSpecialOfferPrefix": "4월~7월 YTT 예약 시 전문가 사진 촬영, 성스러운 사원 투어, 공항 픽업, 전통 문화 체험이 –",
+    "courseSpecialOfferHighlight": "모두 무료로 포함됩니다.",
+    "specialOfferPrefix": "4월~7월 YTT 예약 시 전문가 사진 촬영, 성스러운 사원 투어, 공항 픽업, 전통 문화 체험이 –",
+    "specialOfferHighlight": "모두 무료로 포함됩니다."
   },
   "stickyContact": {
     "contactUs": "문의하기",

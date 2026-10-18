@@ -1978,7 +1978,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 {/* Special Offer Box */}
                 <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                   <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    {tPromo("courseSpecialOfferPrefix")} <span className="text-amber-600 dark:text-amber-400">{tPromo("courseSpecialOfferHighlight")}</span>
+                    {tPromo("heroSpecialOfferPrefix")} <span className="text-amber-600 dark:text-amber-400">{tPromo("heroSpecialOfferHighlight")}</span>
                   </p>
                 </div>
               </div>

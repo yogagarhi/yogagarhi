@@ -67,8 +67,10 @@
     "contactUs": "Contáctanos",
     "heroSpecialOfferPrefix": "Reserva tu formación de abril a julio y obtén una sesión de fotos profesional, tour por templos sagrados, traslado desde el aeropuerto y actividades culturales –",
     "heroSpecialOfferHighlight": "todo incluido gratis.",
-    "courseSpecialOfferPrefix": "Reserva tu formación de septiembre a diciembre y obtén una sesión de fotos profesional, tour por templos sagrados, traslado desde el aeropuerto y actividades culturales –",
-    "courseSpecialOfferHighlight": "todo incluido gratis."
+    "courseSpecialOfferPrefix": "Reserva tu formación de abril a julio y obtén una sesión de fotos profesional, tour por templos sagrados, traslado desde el aeropuerto y actividades culturales –",
+    "courseSpecialOfferHighlight": "todo incluido gratis.",
+    "specialOfferPrefix": "Reserva tu formación de abril a julio y obtén una sesión de fotos profesional, tour por templos sagrados, traslado desde el aeropuerto y actividades culturales –",
+    "specialOfferHighlight": "todo incluido gratis."
   },
   "stickyContact": {
     "contactUs": "Contáctanos",

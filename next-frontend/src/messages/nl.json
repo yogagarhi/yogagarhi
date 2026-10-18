@@ -67,8 +67,10 @@
     "contactUs": "Neem contact op",
     "heroSpecialOfferPrefix": "Boek je YTT van april t/m juli en ontvang een professionele fotoshoot, een tour langs heilige tempels, luchthaventransfers en culturele activiteiten –",
     "heroSpecialOfferHighlight": "allemaal gratis inbegrepen.",
-    "courseSpecialOfferPrefix": "Boek je YTT van september t/m december en ontvang een professionele fotoshoot, een tour langs heilige tempels, luchthaventransfers en culturele activiteiten –",
-    "courseSpecialOfferHighlight": "allemaal gratis inbegrepen."
+    "courseSpecialOfferPrefix": "Boek je YTT van april t/m juli en ontvang een professionele fotoshoot, een tour langs heilige tempels, luchthaventransfers en culturele activiteiten –",
+    "courseSpecialOfferHighlight": "allemaal gratis inbegrepen.",
+    "specialOfferPrefix": "Boek je YTT van april t/m juli en ontvang een professionele fotoshoot, een tour langs heilige tempels, luchthaventransfers en culturele activiteiten –",
+    "specialOfferHighlight": "allemaal gratis inbegrepen."
   },
   "stickyContact": {
     "contactUs": "Neem contact op",

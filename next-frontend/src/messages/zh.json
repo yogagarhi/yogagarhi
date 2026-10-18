@@ -67,8 +67,10 @@
     "contactUs": "联系我们",
     "heroSpecialOfferPrefix": "预订4月至7月 YTT 课程，免费获赠专业摄影、圣庙参访、机场接机及传统文化体验 –",
     "heroSpecialOfferHighlight": "全部免费包含在内。",
-    "courseSpecialOfferPrefix": "预订9月至12月 YTT 课程，免费获赠专业摄影、圣庙参访、机场接机及传统文化体验 –",
-    "courseSpecialOfferHighlight": "全部免费包含在内。"
+    "courseSpecialOfferPrefix": "预订4月至7月 YTT 课程，免费获赠专业摄影、圣庙参访、机场接机及传统文化体验 –",
+    "courseSpecialOfferHighlight": "全部免费包含在内。",
+    "specialOfferPrefix": "预订4月至7月 YTT 课程，免费获赠专业摄影、圣庙参访、机场接机及传统文化体验 –",
+    "specialOfferHighlight": "全部免费包含在内。"
   },
   "stickyContact": {
     "contactUs": "联系我们",

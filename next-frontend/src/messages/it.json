@@ -67,8 +67,10 @@
     "contactUs": "Contattaci",
     "heroSpecialOfferPrefix": "Prenota il tuo corso da aprile a luglio e ricevi un servizio fotografico professionale, tour dei templi sacri, trasferimento aeroportuale e attività culturali –",
     "heroSpecialOfferHighlight": "tutto incluso gratuitamente.",
-    "courseSpecialOfferPrefix": "Prenota il tuo corso da settembre a dicembre e ricevi un servizio fotografico professionale, tour dei templi sacri, trasferimento aeroportuale e attività culturali –",
-    "courseSpecialOfferHighlight": "tutto incluso gratuitamente."
+    "courseSpecialOfferPrefix": "Prenota il tuo corso da aprile a luglio e ricevi un servizio fotografico professionale, tour dei templi sacri, trasferimento aeroportuale e attività culturali –",
+    "courseSpecialOfferHighlight": "tutto incluso gratuitamente.",
+    "specialOfferPrefix": "Prenota il tuo corso da aprile a luglio e ricevi un servizio fotografico professionale, tour dei templi sacri, trasferimento aeroportuale e attività culturali –",
+    "specialOfferHighlight": "tutto incluso gratuitamente."
   },
   "stickyContact": {
     "contactUs": "Contattaci",

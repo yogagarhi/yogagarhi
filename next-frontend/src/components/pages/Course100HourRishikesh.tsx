@@ -7,6 +7,7 @@ import Layout from "@/components/layout/Layout";
 import SEO, { generateCourseSchema } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { CourseBatch, BATCHES_100_HOUR, getBatchBadge } from "@/constants/courseDates";
+import { PROMO_OFFER } from "@/constants/offers";
 import { useUpcomingBatches } from "@/hooks/useUpcomingBatches";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -1100,7 +1101,7 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
                   {/* Special Offer Box */}
                   <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                     <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                      Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                      {PROMO_OFFER.specialOfferBoxPrefix} <span className="text-amber-600 dark:text-amber-400">{PROMO_OFFER.specialOfferBoxHighlighted}</span>
                     </p>
                   </div>
                 </div>
@@ -2168,7 +2169,7 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
                 {/* Special Offer Box */}
                 <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                   <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    Book your April to July YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                    {PROMO_OFFER.specialOfferBoxPrefix} <span className="text-amber-600 dark:text-amber-400">{PROMO_OFFER.specialOfferBoxHighlighted}</span>
                   </p>
                 </div>
               </div>
