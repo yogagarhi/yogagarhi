@@ -29,7 +29,7 @@ export default function CourseVideoFacade({
         <button
           type="button"
           onClick={() => setIsPlaying(true)}
-          aria-label={`Play video: ${title}`}
+          aria-label={title}
           className="w-full h-full relative block text-left group focus:outline-none"
         >
           <Image

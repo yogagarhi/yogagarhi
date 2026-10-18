@@ -101,7 +101,10 @@
     "strongBasis": "Dasar Kuat",
     "worldsFirst": "Pertama di Dunia",
     "preYttcAcademy": "Akademi Pendukung Pra-YTTC",
-    "save": "Hemat"
+    "save": "Hemat",
+    "getFreeManual": "Panduan Gratis",
+    "revealYogicEnergy": "Temukan Energi Yogik Anda",
+    "freeWebinar": "Webinar Gratis"
   },
   "footer": {
     "tagline": "Transformasi dari Dalam",
@@ -390,7 +393,7 @@
     "founder": {
       "badge": "Silsilah Kami",
       "title": "Dibimbing oleh Kebijaksanaan Sejati",
-      "name": "Yash",
+      "name": "Yogacharya Sachin",
       "role": "Pendiri & Guru Utama, YogaGarhi",
       "quote": "«Yoga sebagai penyatuan: ketika yoga dihayati dan bukan sekadar diajarkan, ia mentransformasi segalanya.»",
       "meetTeacher": "Kenali Guru di Balik YogaGarhi",
@@ -598,7 +601,126 @@
         "iyengar": "Dasar Yoga Iyengar & Alat Bantu",
         "vinyasa": "Sekuensing Vinyasa Flow",
         "hatha": "Hatha Yoga Klasik Tradisional"
-      }
+      },
+      "detailedModules": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "items": [
+            "Seri primer lengkap Ashtanga yoga oleh K. Pattabhi Jois",
+            "Minggu 1: Pengenalan & Surya Namaskar A & B",
+            "Minggu 2: Postur berdiri & penggunaan alat peraga yoga",
+            "Minggu 3: Postur duduk & postur penutup",
+            "Minggu 4: Gaya Mysore & praktik mengajar"
+          ]
+        },
+        {
+          "title": "Filosofi Yoga",
+          "items": [
+            "Yoga Sutra lengkap karya Patanjali",
+            "Delapan anggota Ashtanga Yoga",
+            "Pancha-Vayu & Panchakosha",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Pengantar Weda",
+            "Kisah inspiratif para yogi terkemuka"
+          ]
+        },
+        {
+          "title": "Pranayama & Praktik Pernapasan",
+          "items": [
+            "Teknik pranayama lengkap",
+            "Enam praktik pembersihan Shatkarma",
+            "Pernapasan tingkat lanjut: Sheetali, Sheetkari",
+            "Kumbhaka (menahan napas)",
+            "Integrasi selaras dengan latihan asana"
+          ]
+        },
+        {
+          "title": "Lantunan Suara Suci & Mantra",
+          "items": [
+            "Koleksi lengkap mantra tradisional",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Sloka untuk Resi Patanjali)",
+            "Latihan melantunkan mantra harian"
+          ]
+        },
+        {
+          "title": "Anatomi dan Fisiologi",
+          "items": [
+            "Studi mendalam tentang sistem tubuh manusia",
+            "Fisiologi otot & persendian",
+            "Sistem pernapasan & saraf",
+            "Pola makan & sistem pencernaan",
+            "Lokakarya fungsional asana"
+          ]
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "items": [
+            "Perancangan urutan kelas yang komprehensif",
+            "Prinsip demonstrasi & pengamatan",
+            "Kesiapan mental & emosional pengajar",
+            "Perencanaan struktur kelas bertahap",
+            "Praktik mengajar & evaluasi berkala"
+          ]
+        },
+        {
+          "title": "Meditasi & Bandha",
+          "items": [
+            "Meditasi Dinamis Osho",
+            "Meditasi Nada Brahma",
+            "Antar Mouna & Ajapa Japa",
+            "Penguasaan empat Bandha utama",
+            "Penyelarasan dengan asana & pranayama"
+          ]
+        },
+        {
+          "title": "Seni Penyelarasan & Penyesuaian",
+          "items": [
+            "Biomekanika dan penyesuaian fungsional postur klasik",
+            "Petunjuk verbal dan bantuan sentuhan langsung yang aman",
+            "Memahami variasi anatomi individu",
+            "Strategi modifikasi menggunakan balok dan tali yoga"
+          ]
+        },
+        {
+          "title": "Praktik Klasik Hatha Yoga",
+          "items": [
+            "Pendalaman prinsip Hatha klasik dan penahanan postur",
+            "Penyusunan urutan Hatha: pemanasan, postur puncak, dan penyeimbang",
+            "Menyeimbangkan energi matahari (Ha) dan bulan (Tha)",
+            "Penerapan Bandha dan Mudra dalam postur statis"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Presisi Gerak",
+          "items": [
+            "Penyelarasan metodis dengan balok, tali, dan selimut",
+            "Penempatan geometris panggul, tulang belakang, dan bahu",
+            "Persiapan postur terbalik yang aman",
+            "Rangkaian restoratif dengan alat bantu"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Gerak Dinamis",
+          "items": [
+            "Struktur urutan cerdas: pemanasan, puncak, dan pendinginan",
+            "Transisi mengalir dan lompatan berirama napas",
+            "Merancang kelas tematik sesuai tingkat kemampuan",
+            "Mengatur tempo dan menjaga energi ruangan"
+          ]
+        },
+        {
+          "title": "Kelas Tambahan & Pengalaman Khas",
+          "items": [
+            "Sesi Sound Healing (terapi suara)",
+            "Latihan yoga di pantai Bali",
+            "Yin Yoga & Acro Yoga",
+            "Dasar-dasar Ayurveda",
+            "Upacara api suci Agni Hotra"
+          ]
+        }
+      ]
     },
     "syllabus": {
       "heading": "Kurikulum & Silabus",
@@ -612,7 +734,53 @@
       "hoverMore": "Arahkan kursor untuk melihat lebih banyak",
       "takeaway": "Pemahaman Utama",
       "carryHome": "Untuk Dibawa Pulang",
-      "careerImpact": "Dampak Karier:"
+      "careerImpact": "Dampak Karier:",
+      "cards": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "content": "Rangkaian lengkap seri primer Ashtanga Yoga. Peningkatan bertahap melalui Surya Namaskar A & B, postur berdiri, postur duduk, dan latihan gaya Mysore."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Seri Pawanmuktasana, variasi Surya Namaskar, postur berdiri dan duduk, lengkungan ke belakang, lipatan ke depan, inversi, dan penyusunan urutan kelas."
+        },
+        {
+          "title": "Filosofi Yoga",
+          "content": "Pengantar Yoga Sutra Patanjali, delapan pilar Ashtanga Yoga, Nadis, Cakra, Pancha-Vayus, Panchakoshas, Triguna, serta kisah teladan para yogi agung."
+        },
+        {
+          "title": "Pranayama & Pernapasan",
+          "content": "Teknik pernapasan lengkap: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, dan Sheetkari."
+        },
+        {
+          "title": "Anatomi & Fisiologi",
+          "content": "Bidang gerak tubuh, perlindungan persendian, anatomi pergelangan kaki, lutut, tulang belakang, bahu, mekanisme pernapasan, dan sistem saraf."
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "content": "Penyusunan urutan kelas, penyesuaian postur, pengelolaan berbagai tingkatan siswa, teknik intonasi suara, kesiapan mental, dan perencanaan kelas terstruktur."
+        },
+        {
+          "title": "Meditasi & Mantra",
+          "content": "Berbagai teknik meditasi, pelafalan mantra suci, Trataka, Meditasi Dinamis Osho, Nada Brahma, Antar Mouna, dan latihan keheningan batin."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga berbasis presisi anatomi menggunakan alat bantu seperti balok, tali, dan selimut guna mencapai keselarasan postur optimal serta mencegah cedera."
+        },
+        {
+          "title": "Prinsip Keselarasan",
+          "content": "Pondasi latihan yang aman: penataan sendi, pola aktivasi otot, dan biomekanika tubuh guna melindungi serta memperkuat fisik secara menyeluruh."
+        },
+        {
+          "title": "Bandhas (Kunci Energi)",
+          "content": "Kuasai Mula, Uddiyana, dan Jalandhara Bandha untuk mengalirkan energi prana, menguatkan inti tubuh, dan memperdalam kualitas meditasi."
+        },
+        {
+          "title": "Mudras (Gestur Suci)",
+          "content": "Gerakan suci tangan dan tubuh guna mengarahkan energi vital, mempertajam konsentrasi, serta terhubung dengan kesadaran yang lebih mendalam."
+        }
+      ]
     },
     "schedule": {
       "badge": "Jadwal Harian",
@@ -1022,7 +1190,50 @@
     "clickToCollapse": "Klik untuk menutup",
     "clickToExpand": "Klik untuk membuka",
     "caterDietsTitle": "Kami Melayani Semua Pola Makan",
-    "caterDietsDesc": "Beri tahu kami preferensi makanan Anda, dan kami akan menyiapkan segalanya"
+    "caterDietsDesc": "Beri tahu kami preferensi makanan Anda, dan kami akan menyiapkan segalanya",
+    "studentStories": {
+      "badge": "Kisah Siswa",
+      "heading": "Hati yang Berkelimpahan di YogaGarhi",
+      "sub": "\"Dengarkan langsung penuturan tulus dari para praktisi yang telah menjalani perjalanan transformasi ini.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Kanada",
+          "quote": "YogaGarhi memegang teguh esensi sejati yoga tradisional. Sejak awal, saya merasa dihargai dan didampingi secara personal. Para pengajar dengan tulus membimbing perkembangan Anda hingga menemukan karakter mengajar Anda sendiri.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turki",
+          "quote": "Sachin Ji adalah salah satu guru yoga paling berwawasan luas yang pernah mengajar saya. Meskipun saya seorang pemula, kesabaran dan dorongannya membuat saya memahami keselarasan asana dengan penuh percaya diri.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Pelatihan 200 jam di Bali benar-benar luar biasa. 🌺 Pengetahuan yang diajarkan sangat mendalam dan autentik. Para guru mengajar dari hati dengan penuh ketulusan dan kebijaksanaan layaknya keluarga besar yang hangat.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Kanada",
+          "quote": "Sachin Ji adalah pengajar dan pribadi yang luar biasa. Pelatihan di Bali ini menjadi awal perjalanan yoga berharga yang mengantarkan saya percaya diri mengajar di berbagai penjuru dunia.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Jerman",
+          "quote": "Saya sangat mengagumi ketenangan, keramahan, dan kehangatan Sachin Ji. Beliau sangat berilmu dan senantiasa meluangkan waktu membimbing setiap siswa secara teliti.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Pengalaman transformatif yang amat berkesan di YogaGarhi Bali. Kelompok belajar kecil memberikan manfaat maksimal, setiap koreksi postur terasa personal. Saya merasa sangat siap untuk mengajar.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
   },
   "whyChoose": {
     "heading": "KEISTIMEWAAN YOGAGARHI",

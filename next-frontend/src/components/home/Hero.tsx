@@ -42,7 +42,7 @@ export default async function Hero() {
             {/* Single Image Tag in entire DOM */}
             <img
               src="/images/hero/hero-mobile-crop-420.webp"
-              alt="Authentic Yoga Teacher Training School in Bali & Rishikesh - YogaGarhi"
+              alt={t("h1")}
               fetchPriority="high"
               decoding="sync"
               width={420}

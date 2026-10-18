@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -62,6 +62,7 @@ const quizQuestions = [
 export default function PrakritiQuizIsland() {
   const router = useRouter();
   const locale = useLocale();
+  const tCommon = useTranslations("common");
   const [showQuizDialog, setShowQuizDialog] = useState(false);
   const [quizStep, setQuizStep] = useState(0);
   const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
@@ -175,7 +176,7 @@ YogaGarhi – Bali`,
             "
           >
             <Sparkles className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-            Reveal Your Unique Yogic Energy
+            {tCommon("revealYogicEnergy")}
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
         </DialogTrigger>

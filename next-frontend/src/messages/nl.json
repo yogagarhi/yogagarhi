@@ -101,7 +101,10 @@
     "strongBasis": "Sterke basis",
     "worldsFirst": "Eerste ter wereld",
     "preYttcAcademy": "Pre-YTTC Support Academie",
-    "save": "Bespaar"
+    "save": "Bespaar",
+    "getFreeManual": "Gratis handleiding",
+    "revealYogicEnergy": "Ontdek je yogische energie",
+    "freeWebinar": "Gratis webinar"
   },
   "footer": {
     "tagline": "Transformeer van binnenuit",
@@ -390,7 +393,7 @@
     "founder": {
       "badge": "Onze traditie",
       "title": "Geleid door authentieke wijsheid",
-      "name": "Yash",
+      "name": "Yogacharya Sachin",
       "role": "Oprichter & Hoofddocent, YogaGarhi",
       "quote": "«Yoga als eenheid: wanneer yoga wordt geleefd en niet alleen onderwezen, verandert het alles.»",
       "meetTeacher": "Ontmoet de docent achter YogaGarhi",
@@ -598,7 +601,126 @@
         "iyengar": "Iyengar Yoga basis & Hulpmiddelen",
         "vinyasa": "Vinyasa Flow lesopbouw",
         "hatha": "Klassieke traditionele Hatha Yoga"
-      }
+      },
+      "detailedModules": [
+        {
+          "title": "Ashtanga Yoga Houdingen",
+          "items": [
+            "Volledige Ashtanga primary series volgens K. Pattabhi Jois",
+            "Week 1: Introductie & Zonnegroeten A & B",
+            "Week 2: Staande reeks & yogaprops",
+            "Week 3: Zittende reeks & afrondende houdingen",
+            "Week 4: Mysore-stijl & lesgeefpraktijk"
+          ]
+        },
+        {
+          "title": "Yoga Filosofie",
+          "items": [
+            "Volledige Yoga Sutra's van Patanjali",
+            "Acht ledematen van Ashtanga Yoga",
+            "Pancha-Vayus & Panchakosha's",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Introductie tot de Veda's",
+            "Inspirerende verhalen van grote yogameesters"
+          ]
+        },
+        {
+          "title": "Pranayama & Ademhalingsoefeningen",
+          "items": [
+            "Volledige pranayama-technieken",
+            "Alle zes Shatkarma reinigingsoefeningen",
+            "Gevorderde ademhaling: Sheetali, Sheetkari",
+            "Kumbhaka (ademinouding)",
+            "Integratie met asana-beoefening"
+          ]
+        },
+        {
+          "title": "Heilige Klanken & Mantra Recitatie",
+          "items": [
+            "Volledige collectie traditionele mantra's",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Shloka voor Patanjali)",
+            "Dagelijkse mantra-chanting praktijk"
+          ]
+        },
+        {
+          "title": "Anatomie en Fysiologie",
+          "items": [
+            "Complete studie van lichaamssystemen",
+            "Fysiologie van spieren & gewrichten",
+            "Ademhalings- & zenuwstelsel",
+            "Voeding & spijsvertering",
+            "Praktijkgerichte workshops over asana's"
+          ]
+        },
+        {
+          "title": "Lesmethodiek",
+          "items": [
+            "Volledige lesopbouw & sequencing",
+            "Demonstratie- & observatieprincipes",
+            "Mentale & emotionele voorbereiding",
+            "Stapsgewijze lesplanning",
+            "Praktijklessen & feedback"
+          ]
+        },
+        {
+          "title": "Meditatie & Bandha's",
+          "items": [
+            "Osho Dynamische meditatie",
+            "Nada Brahma meditatie",
+            "Antar Mouna & Ajapa Japa",
+            "Beheersing van alle vier de Bandha's",
+            "Harmonische integratie met asana & pranayama"
+          ]
+        },
+        {
+          "title": "Uitlijning & Hands-on Correcties",
+          "items": [
+            "Functionele biomechanica voor klassieke yogahoudingen",
+            "Verbale instructies en veilige hands-on aanpassingen",
+            "Begrip van individuele anatomische variaties",
+            "Modificatiestrategieën met blokken en riemen"
+          ]
+        },
+        {
+          "title": "Klassieke Hatha Yoga Praktijk",
+          "items": [
+            "Diepgaande studie van Hatha-principes en statische houdingen",
+            "Klassieke opbouw: warming-up, piekhouding en tegenhoudingen",
+            "Balans tussen zonne- (Ha) en maan- (Tha) energieën",
+            "Integratie van Bandha's en Mudra's in asana's"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Nauwkeurige Uitlijning",
+          "items": [
+            "Methodische uitlijning met blokken, riemen en dekens",
+            "Exacte positionering van bekken, wervelkolom en schouders",
+            "Veilige voorbereiding op omgekeerde houdingen",
+            "Herstellende Iyengar-series met hulpmiddelen"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Dynamische Sequencing",
+          "items": [
+            "Intelligente lesstructuur: opbouw, piek en ontspanning",
+            "Vloeiende overgangen afgestemd op de ademhaling",
+            "Thematische vinyasa-lessen voor diverse niveaus",
+            "Ritme, tempo en energetische begeleiding"
+          ]
+        },
+        {
+          "title": "Aanvullende Workshops",
+          "items": [
+            "Sound Healing klankreizen",
+            "Strandyoga op Bali",
+            "Yin Yoga & Acro Yoga",
+            "Basisprincipes van Ayurveda",
+            "Traditionele Agni Hotra vuurceremonie"
+          ]
+        }
+      ]
     },
     "syllabus": {
       "heading": "Curriculum en studieplan",
@@ -612,7 +734,53 @@
       "hoverMore": "Beweeg voor meer details",
       "takeaway": "Wat je leert",
       "carryHome": "Voor thuis",
-      "careerImpact": "Waarde voor je lessen:"
+      "careerImpact": "Waarde voor je lessen:",
+      "cards": [
+        {
+          "title": "Ashtanga Yoga Houdingen",
+          "content": "Volledige reeks van de Ashtanga Primary Series. Wekelijkse opbouw via Zonnegroet A & B, staande en zittende houdingen en authentieke Mysore-beoefening."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Pawanmuktasana-serie, Surya Namaskar-variaties, staande en zittende asana's, achteroverbuigingen, vooroverbuigingen, omgekeerde houdingen en lesopbouw."
+        },
+        {
+          "title": "Yoga Filosofie",
+          "content": "Inleiding tot de Yoga Sutra's van Patanjali, de acht ledematen van yoga, Nadis, Chakra's, Pancha-Vayus, Panchakosha's, Triguna en overleveringen van yogameesters."
+        },
+        {
+          "title": "Pranayama & Ademhaling",
+          "content": "Uitgebreide ademhalingstechnieken: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali en Sheetkari."
+        },
+        {
+          "title": "Anatomie & Fysiologie",
+          "content": "Bewegingsvlakken, gewrichtsbescherming, anatomie van enkel, knie, wervelkolom en schouders, ademhalingsmechanica, spierfysiologie en zenuwstelsel."
+        },
+        {
+          "title": "Lesmethodiek",
+          "content": "Lesopbouw, verbale instructie en handmatige correcties, omgaan met niveauverschillen, stemgebruik, mentale voorbereiding en gestructureerde lesplanning."
+        },
+        {
+          "title": "Meditatie & Mantra",
+          "content": "Diverse meditatievormen, chanten van mantra's, Trataka, Osho Dynamische meditatie, Nada Brahma, Antar Mouna en het cultiveren van innerlijke stilte."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Precisiegerichte benadering met behulp van blokken, riemen en dekens om een anatomisch zuivere uitlijning te waarborgen en blessures te voorkomen."
+        },
+        {
+          "title": "Uitlijningsprincipes",
+          "content": "Basis van een veilige beoefening: gewrichtsuitlijning, spieractivatiepatronen en biomechanica ter bescherming en versterking van het fysieke lichaam."
+        },
+        {
+          "title": "Bandhas (Energiesloten)",
+          "content": "Beheersing van Mula, Uddiyana en Jalandhara Bandha om de pranastroom te geleiden, de kern te versterken en meditatieve staten te verdiepen."
+        },
+        {
+          "title": "Mudras (Yogische Gebaren)",
+          "content": "Heilige hand- en lichaamsgebaren die levensenergie kanaliseren, de focus aanscherpen en verbinden met hogere staten van bewustzijn."
+        }
+      ]
     },
     "schedule": {
       "badge": "Dagrooster",
@@ -1022,7 +1190,50 @@
     "clickToCollapse": "Klik om in te klappen",
     "clickToExpand": "Klik om uit te vouwen",
     "caterDietsTitle": "We houden rekening met alle diëten",
-    "caterDietsDesc": "Laat ons je dieetwensen weten en wij zorgen voor de rest"
+    "caterDietsDesc": "Laat ons je dieetwensen weten en wij zorgen voor de rest",
+    "studentStories": {
+      "badge": "Ervaringen van Studenten",
+      "heading": "Getransformeerde Harten bij YogaGarhi",
+      "sub": "\"Lees de persoonlijke ervaringen van studenten die deze bijzondere transformatiereis hebben voltooid.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canada",
+          "quote": "YogaGarhi is door en door authentiek en geworteld in de ware essentie van yoga. Vanaf het allereerste moment voelde ik me oprecht gezien en ondersteund als mens. De docenten geven echt om je ontwikkeling en helpen je jouw eigen stem te vinden.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turkije",
+          "quote": "Sachin Ji is zonder twijfel een van de meest deskundige yogadocenten bij wie ik ooit heb geleerd. Hoewel ik als absolute beginner startte, was hij geduldig en bemoedigend, waardoor ik de uitlijning helder begreep.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusland",
+          "quote": "Mijn 200-urige opleiding op Bali was werkelijk magisch. 🌺 De opgedane kennis was diepgaand en puur. De docenten geven les vanuit het hart met warmte en wijsheid. Het voelt als een hechte familie.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canada",
+          "quote": "Sachin Ji is een fantastische leraar en een warm mens. Deze opleiding op Bali was de start van een prachtige yogareis waardoor ik nu met vol vertrouwen lesgeef in verschillende landen over de wereld.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Duitsland",
+          "quote": "Ik waardeer de kalme, vriendelijke en gastvrije energie van Sachin Ji enorm. Hij heeft diepe kennis en neemt de tijd voor elke student. Zijn lessen helpen je meer te bereiken dan je voor mogelijk hield.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australië",
+          "quote": "Een onvergetelijke, transformatieve ervaring bij YogaGarhi Bali. De kleine groepsgrootte maakte al het verschil: elke correctie was persoonlijk en doordacht. Ik verliet de ashram met het volste vertrouwen om les te geven.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
   },
   "whyChoose": {
     "heading": "HET YOGAGARHI VERSCHIL",

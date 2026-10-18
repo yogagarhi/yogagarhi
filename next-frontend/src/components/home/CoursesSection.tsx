@@ -17,7 +17,8 @@ export default async function CoursesSection() {
   const courses = [
     {
       hours: "100",
-      title: "Hour YTTC",
+      title: t("c100Title"),
+      badgeTitle: `${tCommon("hours")} YTTC`,
       tagline: t("c100Tagline"),
       description: t("c100Desc"),
       duration: `12 ${tCommon("days")}`,
@@ -30,7 +31,8 @@ export default async function CoursesSection() {
     },
     {
       hours: "200",
-      title: "Hour YTTC",
+      title: t("c200Title"),
+      badgeTitle: `${tCommon("hours")} YTTC`,
       tagline: t("c200Tagline"),
       description: t("c200Desc"),
       duration: `24 ${tCommon("days")}`,
@@ -44,7 +46,8 @@ export default async function CoursesSection() {
     },
     {
       hours: "300",
-      title: "Hour YTTC",
+      title: t("c300Title"),
+      badgeTitle: `${tCommon("hours")} YTTC`,
       tagline: t("c300Tagline"),
       description: t("c300Desc"),
       duration: `28 ${tCommon("days")}`,
@@ -107,7 +110,7 @@ export default async function CoursesSection() {
                   <div className={`relative h-56 md:h-64 overflow-hidden ${course.featured ? 'mt-8' : ''}`}>
                     <Image
                       src={course.image}
-                      alt={`${course.hours} Hour Yoga Teacher Training`}
+                      alt={course.title}
                       fill
                       loading="lazy"
                       sizes="(max-width: 640px) 360px, (max-width: 1024px) 50vw, 380px"
@@ -122,7 +125,7 @@ export default async function CoursesSection() {
                       <p className="text-white/70 text-xs uppercase tracking-[0.15em] mb-1">{course.tagline}</p>
                       <h3 className="font-heading text-5xl font-bold text-white">
                         {course.hours}
-                        <span className="text-lg font-normal ml-2 text-white/80">{course.title}</span>
+                        <span className="text-lg font-normal ml-2 text-white/80">{course.badgeTitle}</span>
                       </h3>
                     </div>
                   </div>

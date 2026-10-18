@@ -101,7 +101,10 @@
     "strongBasis": "Base sólida",
     "worldsFirst": "Primera del mundo",
     "preYttcAcademy": "Academia de apoyo Pre-YTTC",
-    "save": "Ahorra"
+    "save": "Ahorra",
+    "getFreeManual": "Manual gratuito",
+    "revealYogicEnergy": "Descubre tu energía yóguica",
+    "freeWebinar": "Webinario gratuito"
   },
   "footer": {
     "tagline": "Transfórmate desde adentro",
@@ -390,7 +393,7 @@
     "founder": {
       "badge": "Nuestro linaje",
       "title": "Guiados por sabiduría genuina",
-      "name": "Yash",
+      "name": "Yogacharya Sachin",
       "role": "Fundador y Maestro Principal, YogaGarhi",
       "quote": "«El yoga como unión: cuando el yoga se vive y no solo se enseña, transforma todo.»",
       "meetTeacher": "Conoce al maestro detrás de YogaGarhi",
@@ -598,7 +601,126 @@
         "iyengar": "Bases de Yoga Iyengar y soportes",
         "vinyasa": "Secuenciación de Vinyasa Flow",
         "hatha": "Hatha Yoga clásico y tradicional"
-      }
+      },
+      "detailedModules": [
+        {
+          "title": "Posturas de Ashtanga Yoga",
+          "items": [
+            "Serie primaria completa de Ashtanga por K. Pattabhi Jois",
+            "Semana 1: Introducción y Saludos al Sol A y B",
+            "Semana 2: Posturas de pie y uso de accesorios",
+            "Semana 3: Posturas sentadas y posturas finales",
+            "Semana 4: Estilo Mysore y práctica de enseñanza"
+          ]
+        },
+        {
+          "title": "Filosofía del Yoga",
+          "items": [
+            "Yoga Sutras completos de Patanjali",
+            "Las ocho ramas del Ashtanga Yoga",
+            "Pancha-Vayus y Panchakoshas",
+            "Sattva, Rajas y Tamas (Triguna)",
+            "Introducción a los Vedas",
+            "Historias inspiradoras de grandes maestros yoguis"
+          ]
+        },
+        {
+          "title": "Prácticas de Respiración Pranayama",
+          "items": [
+            "Técnicas completas de pranayama",
+            "Las seis prácticas de purificación Shatkarma",
+            "Respiración avanzada: Sheetali, Sheetkari",
+            "Kumbhaka (retención de la respiración)",
+            "Integración consciente con la práctica de asanas"
+          ]
+        },
+        {
+          "title": "Recitación de Sonidos Sagrados y Mantras",
+          "items": [
+            "Colección completa de mantras tradicionales",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Shloka a Patanjali)",
+            "Práctica diaria de canto de mantras"
+          ]
+        },
+        {
+          "title": "Anatomía y Fisiología",
+          "items": [
+            "Estudio completo de los sistemas corporales",
+            "Fisiología de músculos y articulaciones",
+            "Sistema respiratorio y nervioso",
+            "Nutrición y sistema digestivo",
+            "Talleres prácticos sobre diferentes asanas"
+          ]
+        },
+        {
+          "title": "Metodología de Enseñanza",
+          "items": [
+            "Secuenciación integral de clases de yoga",
+            "Principios de demostración y observación",
+            "Preparación mental y emocional",
+            "Planificación estructurada de sesiones de clase",
+            "Prácticas docentes y evaluaciones guiadas"
+          ]
+        },
+        {
+          "title": "Meditación y Bandhas",
+          "items": [
+            "Meditación dinámica de Osho",
+            "Meditación Nada Brahma",
+            "Antar Mouna y Ajapa Japa",
+            "Dominio de los cuatro Bandhas principales",
+            "Integración con asanas y pranayama"
+          ]
+        },
+        {
+          "title": "Arte de la Alineación y Ajustes",
+          "items": [
+            "Biomecánica y alineación funcional de posturas clásicas",
+            "Metodología de indicaciones verbales y ajustes táctiles seguros",
+            "Comprensión de variaciones anatómicas individuales",
+            "Estrategias de modificación con bloques y cinturones"
+          ]
+        },
+        {
+          "title": "Práctica Clásica de Hatha Yoga",
+          "items": [
+            "Estudio de principios tradicionales de Hatha y posturas sostenidas",
+            "Secuenciación Hatha: calentamiento, postura cumbre y contraposturas",
+            "Equilibrio de energías solar (Ha) y lunar (Tha)",
+            "Integración de Bandhas y Mudras en posturas estáticas"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga y Alineación de Precisión",
+          "items": [
+            "Alineación metódica con bloques, correas y mantas",
+            "Posicionamiento geométrico preciso de pelvis y columna",
+            "Preparación segura para posturas invertidas",
+            "Secuencias restaurativas con soportes terapéuticos"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow y Secuenciación Dinámica",
+          "items": [
+            "Estructura inteligente: calentamiento, postura pico y relajación",
+            "Transiciones fluidas y saltos en armonía con la respiración",
+            "Diseño de clases temáticas según objetivos y niveles",
+            "Ritmo, modulación del tempo y sostenimiento del espacio"
+          ]
+        },
+        {
+          "title": "Clases y Talleres Especiales",
+          "items": [
+            "Sesiones de Sanación con Sonido (Sound Healing)",
+            "Experiencia de Yoga en la playa de Bali",
+            "Yin Yoga y Acro Yoga",
+            "Fundamentos de Ayurveda",
+            "Ceremonia de fuego tradicional Agni Hotra"
+          ]
+        }
+      ]
     },
     "syllabus": {
       "heading": "Plan de estudios y temario",
@@ -612,7 +734,53 @@
       "hoverMore": "Pasa el cursor para ver más",
       "takeaway": "Lo que integras",
       "carryHome": "Para llevarte a casa",
-      "careerImpact": "Impacto en tu enseñanza:"
+      "careerImpact": "Impacto en tu enseñanza:",
+      "cards": [
+        {
+          "title": "Posturas de Ashtanga Yoga",
+          "content": "Secuencia completa de la primera serie de Ashtanga Yoga. Progresión semanal guiada por Saludos al Sol A y B, posturas de pie, sentadas y práctica estilo Mysore."
+        },
+        {
+          "title": "Hatha y Vinyasa Flow",
+          "content": "Serie Pawanmuktasana, variantes de Surya Namaskar, posturas de pie y sentadas, extensiones hacia atrás, flexiones hacia adelante, inversiones y metodología de secuenciación."
+        },
+        {
+          "title": "Filosofía del Yoga",
+          "content": "Introducción a los Yoga Sutras de Patanjali, los ocho pasos del Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna e historias inspiradoras de maestros yoguis."
+        },
+        {
+          "title": "Pranayama y Respiración",
+          "content": "Técnicas completas de respiración: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali y Sheetkari."
+        },
+        {
+          "title": "Anatomía y Fisiología",
+          "content": "Planos de movimiento, protección articular, anatomía de tobillo, rodilla, columna y hombros, biomecánica respiratoria, fisiología muscular y sistema nervioso."
+        },
+        {
+          "title": "Metodología de Enseñanza",
+          "content": "Secuenciación de clases, ajustes y correcciones, adaptación a diversos niveles, uso de la voz, preparación mental, demostración y planificación didáctica."
+        },
+        {
+          "title": "Meditación y Mantras",
+          "content": "Diversas técnicas de meditación, canto de mantras védicos, Trataka, meditación dinámica de Osho, Nada Brahma, Antar Mouna y cultivo del silencio interior."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga enfocado en la precisión anatómica y alineación mediante accesorios como bloques, cinturones y mantas para perfeccionar la postura y prevenir lesiones."
+        },
+        {
+          "title": "Principios de Alineación",
+          "content": "Bases de una práctica segura: alineación articular, patrones de activación muscular y biomecánica funcional para fortalecer y proteger el cuerpo."
+        },
+        {
+          "title": "Bandhas (Cierres Energéticos)",
+          "content": "Dominio de Mula, Uddiyana y Jalandhara Bandha para encauzar el flujo de prana, tonificar el núcleo y alcanzar una mayor profundidad meditativa."
+        },
+        {
+          "title": "Mudras (Gestos Sagrados)",
+          "content": "Gestos sagrados de manos y cuerpo que canalizan la energía vital, agudizan el enfoque y conectan con planos elevados de consciencia durante la práctica."
+        }
+      ]
     },
     "schedule": {
       "badge": "Rutina diaria",
@@ -1022,7 +1190,50 @@
     "clickToCollapse": "Clic para contraer",
     "clickToExpand": "Clic para expandir",
     "caterDietsTitle": "Nos adaptamos a todas las dietas",
-    "caterDietsDesc": "Avísanos sobre tus necesidades dietéticas y nos encargaremos de todo"
+    "caterDietsDesc": "Avísanos sobre tus necesidades dietéticas y nos encargaremos de todo",
+    "studentStories": {
+      "badge": "Historias de Alumnos",
+      "heading": "Corazones Transformados en YogaGarhi",
+      "sub": "\"Descubre los testimonios de quienes vivieron esta profunda experiencia de transformación.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canadá",
+          "quote": "YogaGarhi es auténtico y arraigado en la esencia viva del yoga. Desde el primer día me sentí escuchada y acompañada como persona, nunca como un simple número. Los maestros se comprometen genuinamente con tu evolución y te ayudan a desarrollar tu propia voz docente.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turquía",
+          "quote": "Sachin Ji es uno de los maestros de yoga más sabios con los que he aprendido. A pesar de haber llegado como principiante absoluta, su infinita paciencia y calidez me permitieron asimilar con confianza las bases de la alineación postural.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Completé mi profesorado de 200 horas en Bali y fue una experiencia mágica. 🌺 Los conocimientos impartidos fueron puros y profundos. Los profesores enseñan desde el corazón con bondad y sabiduría. Te sientes en un hogar cálido y protector.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canadá",
+          "quote": "Sachin Ji es un maestro y ser humano excepcional. Esta formación en Bali encendió un camino maravilloso que me ha brindado la seguridad y preparación para impartir clases en diversos países del mundo.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Alemania",
+          "quote": "Aprecio profundamente la serenidad, cercanía y bienvenida de Sachin Ji. Es sumamente sabio y guía a cada alumno con esmero. Sus clases te permiten superar tus propios límites con soltura y confianza.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Una experiencia enriquecedora e inolvidable en YogaGarhi Bali. El grupo reducido fue determinante: cada ajuste postural fue personalizado y consciente. Terminé la formación sintiéndome lista para enseñar.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
   },
   "whyChoose": {
     "heading": "LA DIFERENCIA YOGAGARHI",

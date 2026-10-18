@@ -1,6 +1,6 @@
 "use client";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -177,8 +177,8 @@ const sattvicDinner = getCloudinaryImage("sattvic-dinner-new.jpg");
 
 
 
-// Review Card Component with Read More functionality
 function ReviewCard({ review }: { review: { name: string; location: string; avatar: string; rating: number; date: string; text: string } }) {
+  const tCommon = useTranslations("common");
   const [expanded, setExpanded] = useState(false);
   const isLongText = review.text.length > 120;
 
@@ -226,7 +226,7 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
           onClick={() => setExpanded(!expanded)}
           className="text-sm text-primary hover:text-primary/80 font-medium mt-2 transition-colors"
         >
-          {expanded ? "Read less" : "Read more"}
+          {expanded ? tCommon("readLess") : tCommon("readMore")}
         </button>
       )}
     </div>
@@ -578,7 +578,71 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
   const tCommon = useTranslations("common");
   const tPromo = useTranslations("promo");
   const tWhy = useTranslations("whyChoose");
+  const tHome = useTranslations("home");
   const locale = useLocale();
+
+  const localizedWorkshops = useMemo(() => {
+    try {
+      const list = t.raw("workshopsList");
+      if (Array.isArray(list) && list.length > 0) {
+        return workshops.map((w, idx) => ({
+          ...w,
+          title: list[idx]?.title || w.title,
+          description: list[idx]?.description || w.description,
+        }));
+      }
+    } catch {}
+    return workshops;
+  }, [t]);
+
+  const localizedExcursions = useMemo(() => {
+    try {
+      const list = t.raw("excursionsList");
+      if (Array.isArray(list) && list.length > 0) {
+        return excursions.map((e, idx) => ({
+          ...e,
+          title: list[idx]?.title || e.title,
+          description: list[idx]?.description || e.description,
+        }));
+      }
+    } catch {}
+    return excursions;
+  }, [t]);
+
+  const localizedFoodMenu = useMemo(() => {
+    try {
+      const list = t.raw("foodMenuList");
+      if (Array.isArray(list) && list.length > 0) {
+        return foodMenu.map((m, idx) => ({
+          ...m,
+          meal: list[idx]?.meal || m.meal,
+          items: Array.isArray(list[idx]?.items) ? list[idx].items : m.items,
+        }));
+      }
+    } catch {}
+    return foodMenu;
+  }, [t]);
+
+  const roomFeatures = useMemo(() => [
+    t("accommodationExtra.hotWater"),
+    t("accommodationExtra.acFan"),
+    t("accommodationExtra.wifi"),
+    t("accommodationExtra.cleaning"),
+  ], [t]);
+
+  const localizedWhatYouWillReceive = useMemo(() => {
+    try {
+      const list = t.raw("whatYouWillReceiveList");
+      if (Array.isArray(list) && list.length > 0) {
+        return whatYouWillReceive.map((item, idx) => ({
+          ...item,
+          title: list[idx]?.title || item.title,
+          description: list[idx]?.description || item.description,
+        }));
+      }
+    } catch {}
+    return whatYouWillReceive;
+  }, [t]);
   const upcomingDates = useUpcomingBatches(BATCHES_200_HOUR, initialBatches);
   const { toast } = useToast();
   const router = useRouter();
@@ -1075,7 +1139,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Single Image Tag in entire DOM */}
               <img
                 src="/images/hero/hero-mobile-crop-420.webp"
-                alt="200 Hour Yoga Teacher Training in Bali - YogaGarhi"
+                alt={`${t("hero.title")} - YogaGarhi`}
                 fetchPriority="high"
                 loading="eager"
                 decoding="sync"
@@ -1303,13 +1367,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16">
               <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-extrabold uppercase tracking-widest mb-3">
-                Student Stories
+                {t("studentStories.badge")}
               </span>
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-black text-foreground mb-4">
-                Hearts Transformed at Yogagarhi
+                {t("studentStories.heading")}
               </h2>
               <p className="max-w-2xl mx-auto text-sm md:text-base text-muted-foreground italic">
-                "Don't take our word for it. Hear from the practitioners who lived the journey."
+                {t("studentStories.sub")}
               </p>
             </div>
 
@@ -1320,7 +1384,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background/10 to-transparent z-10 pointer-events-none" />
 
               <div className="overflow-x-auto scrollbar-hide pb-6 -mx-4 px-4 flex gap-6 snap-x snap-mandatory">
-                {[
+                {((t.raw("studentStories.stories") as any[]) || [
                   {
                     name: "Gurpreet Kaur Dhou",
                     country: "Canada",
@@ -1357,7 +1421,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     quote: "Sachin’s instruction helped my practice and asana skills develop beyond what I believed I could achieve. I learned the traditional way to practice yoga, with extensive knowledge in anatomy, traditional practice, and alignment.",
                     avatarLetter: "N"
                   }
-                ].map((t, idx) => (
+                ]).map((story, idx) => (
                   <div
                     key={idx}
                     className="w-[300px] md:w-[380px] bg-card rounded-2xl border border-border/80 p-8 shadow-sm flex flex-col justify-between flex-shrink-0 snap-align-start hover:shadow-md hover:border-primary/30 transition-all duration-300 relative group"
@@ -1377,22 +1441,22 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
                       {/* Quote text */}
                       <p className="text-muted-foreground text-sm md:text-base leading-relaxed italic relative z-10">
-                        "{t.quote}"
+                        "{story.quote}"
                       </p>
                     </div>
 
                     {/* Student Info */}
                     <div className="flex items-center gap-4 mt-8 pt-6 border-t border-border/60">
                       <div className="w-12 h-12 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-heading text-lg flex-shrink-0 border border-primary/20">
-                        {t.avatarLetter}
+                        {story.avatarLetter}
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors truncate">
-                          {t.name}
+                          {story.name}
                         </h3>
                         <div className="flex items-center gap-2">
                           <p className="text-[10px] text-muted-foreground font-medium uppercase tracking-widest">
-                            {t.country}
+                            {story.country}
                           </p>
                           <span className="text-[10px] text-primary/80 font-medium">
                             • Google Review
@@ -1433,7 +1497,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
               {/* Single YouTube Facade instance for both Mobile and Desktop */}
               <div className="relative w-full order-2 lg:col-start-1 lg:row-start-1 lg:row-span-2 mb-6 lg:mb-0 lg:sticky lg:top-24 self-start">
-                <CourseVideoFacade youtubeVideoId="U1r2mQRmWXM" title="Yoga Teacher Training in Bali - YogaGarhi Campus Tour" />
+                <CourseVideoFacade youtubeVideoId="U1r2mQRmWXM" title={`${t("hero.title")} - YogaGarhi Campus Tour`} />
               </div>
 
               {/* Text Body & Tour Call (order 3 on mobile, below heading in right column on desktop) */}
@@ -1517,94 +1581,53 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             <div className="relative">
               <div className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
                 {[
-                  {
-                    title: "Ashtanga Yoga Postures",
-                    content: "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice.",
-                    image: syllabusAshtanga
-                  },
-                  {
-                    title: "Hatha & Vinyasa Flow",
-                    content: "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology.",
-                    image: syllabusHathaVinyasa
-                  },
-                  {
-                    title: "Yoga Philosophy",
-                    content: "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis.",
-                    image: syllabus3
-                  },
-                  {
-                    title: "Pranayama & Breathing",
-                    content: "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari.",
-                    image: syllabusPranayamaBreathing
-                  },
-                  {
-                    title: "Anatomy & Physiology",
-                    content: "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system.",
-                    image: syllabusAnatomyPhysiology
-                  },
-                  {
-                    title: "Teaching Methodology",
-                    content: "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning.",
-                    image: syllabus6
-                  },
-                  {
-                    title: "Meditation & Mantra",
-                    content: "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness.",
-                    image: syllabusMeditationMantra
-                  },
-                  {
-                    title: "Iyengar Yoga",
-                    content: "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries.",
-                    image: syllabus8
-                  },
-                  {
-                    title: "Alignment Principles",
-                    content: "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body.",
-                    image: syllabus9
-                  },
-                  {
-                    title: "Bandhas (Energy Locks)",
-                    content: "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice.",
-                    image: syllabus10
-                  },
-                  {
-                    title: "Mudras (Yogic Gestures)",
-                    content: "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation.",
-                    image: syllabusMudras
-                  },
-                ].map((item, index) => (
-                  <div key={index} className="flex-shrink-0 w-[85vw] md:w-[400px] snap-center">
-                    <div className="flex flex-col h-full bg-card rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all duration-300 group">
-                      {/* Rectangular Image */}
-                      <div className="relative aspect-[4/3] overflow-hidden">
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          className="object-cover transition-transform duration-700 group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  syllabusAshtanga,
+                  syllabusHathaVinyasa,
+                  syllabus3,
+                  syllabusPranayamaBreathing,
+                  syllabusAnatomyPhysiology,
+                  syllabus6,
+                  syllabusMeditationMantra,
+                  syllabus8,
+                  syllabus9,
+                  syllabus10,
+                  syllabusMudras,
+                ].map((image, index) => {
+                  const card = (t.raw("syllabus.cards") as any[])?.[index] || {};
+                  return (
+                    <div key={index} className="flex-shrink-0 w-[85vw] md:w-[400px] snap-center">
+                      <div className="flex flex-col h-full bg-card rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all duration-300 group">
+                        {/* Rectangular Image */}
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <Image
+                            src={image}
+                            alt={card.title || ""}
+                            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className="object-cover transition-transform duration-700 group-hover:scale-110"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                        {/* Slide Counter - Mobile Friendly */}
-                        <div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-md text-primary-foreground rounded-full px-3 py-1 text-xs font-bold shadow-lg flex items-center gap-1">
-                          <span className="text-secondary">{index + 1}</span>
-                          <span className="opacity-60">/</span>
-                          <span>11</span>
+                          {/* Slide Counter - Mobile Friendly */}
+                          <div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-md text-primary-foreground rounded-full px-3 py-1 text-xs font-bold shadow-lg flex items-center gap-1">
+                            <span className="text-secondary">{index + 1}</span>
+                            <span className="opacity-60">/</span>
+                            <span>11</span>
+                          </div>
+                        </div>
+
+                        {/* Text Content */}
+                        <div className="p-6 flex flex-col flex-1">
+                          <h3 className="font-heading text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
+                            {card.title}
+                          </h3>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {card.content}
+                          </p>
                         </div>
                       </div>
-
-                      {/* Text Content */}
-                      <div className="p-6 flex flex-col flex-1">
-                        <h3 className="font-heading text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          {item.content}
-                        </p>
-                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
 
@@ -1741,7 +1764,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {workshops.map((workshop, index) => (
+              {localizedWorkshops.map((workshop, index) => (
                 <div
                   key={index}
                   className="group relative overflow-hidden rounded-2xl bg-card shadow-card hover:shadow-elevated transition-all duration-500"
@@ -2274,7 +2297,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
               <div className="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4">
                 <div className="flex gap-6" style={{ width: 'max-content' }}>
-                  {whatYouWillReceive.map((item, index) => (
+                  {localizedWhatYouWillReceive.map((item, index) => (
                     <div
                       key={index}
                       className="flip-card w-64 h-72 flex-shrink-0 cursor-pointer"
@@ -2586,7 +2609,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   originalPrice: COURSE_200_HOUR_PRICING.private.originalPrice,
                   price: COURSE_200_HOUR_PRICING.private.price,
                   images: [tripleBalcony, tripleBathroom, tripleBedroom1, tripleBedroom2, tripleBedroom3],
-                  features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
+                  features: roomFeatures,
                   badge: null,
                   isPopular: false,
                 },
@@ -2597,7 +2620,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   originalPrice: COURSE_200_HOUR_PRICING.deluxe.originalPrice,
                   price: COURSE_200_HOUR_PRICING.deluxe.price,
                   images: [doubleBedroom1, doubleBedroom2, doubleBedroom3, doubleBedroom4, doubleBalcony],
-                  features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
+                  features: roomFeatures,
                   badge: t("accommodationExtra.mostPopular"),
                   isPopular: true,
                 },
@@ -2618,7 +2641,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     privateBathroom,
                     privateBalcony,
                   ],
-                  features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
+                  features: roomFeatures,
                   badge: t("accommodationExtra.premium"),
                   isPopular: false,
                 },
@@ -2736,7 +2759,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="max-w-6xl mx-auto">
 
                     <div className="grid md:grid-cols-3 gap-8">
-                      {foodMenu.map((defaultMeal, index) => {
+                      {localizedFoodMenu.map((defaultMeal, index) => {
                         const rawList = (t.raw("foodMenuList") as any[]) || [];
                         const localizedMeal = rawList[index] || {};
                         const MealIcon = defaultMeal.icon;
@@ -2949,7 +2972,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             </div>
 
             <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-              {excursions.map((excursion, index) => {
+              {localizedExcursions.map((excursion, index) => {
                 const IconComponent = excursion.icon;
                 return (
                   <div
@@ -4218,7 +4241,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       onClick={() => setShowQuizDialog(true)}
                     >
                       <Sparkles className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-                      Reveal Your Unique Yogic Energy
+                      {tCommon("revealYogicEnergy")}
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </div>
@@ -4292,7 +4315,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
           <div className="absolute inset-0">
             <Image
               src={heroImage}
-              alt="200 Hour Yoga Teacher Training in Bali - YogaGarhi"
+              alt={`${t("hero.title")} - YogaGarhi`}
               fill sizes="100vw"
               className="object-cover"
             />
@@ -4305,13 +4328,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
           <div className="container mx-auto px-4 relative z-10">
             <p className="text-center text-primary-foreground/70 uppercase tracking-widest text-sm mb-4">
-              Your Journey Awaits
+              {tHome("ready.tag")}
             </p>
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-center text-primary-foreground mb-6">
-              Ready to Begin?
+              {tHome("ready.title")}
             </h2>
             <p className="text-center text-primary-foreground/80 max-w-2xl mx-auto mb-12">
-              Take the first step towards becoming a certified yoga teacher
+              {tHome("ready.desc")}
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
@@ -4323,7 +4346,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   setShowEnrollDialog(true);
                 }}
               >
-                Start Your Journey
+                {tCommon("applyNow")}
               </Button>
               <Button
                 size="lg"
@@ -4331,7 +4354,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 onClick={() => setShowManualDialog(true)}
               >
                 <BookOpen className="w-4 h-4 mr-2" />
-                Get Free Manual
+                {tCommon("getFreeManual")}
               </Button>
               <Button
                 size="lg"
@@ -4339,7 +4362,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 onClick={() => setShowQuizDialog(true)}
               >
                 <Sparkles className="w-4 h-4 mr-2" />
-                Reveal Your Unique Yogic Energy
+                {tCommon("revealYogicEnergy")}
               </Button>
               <Button
                 size="lg"
@@ -4347,7 +4370,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 onClick={() => setShowWebinarDialog(true)}
               >
                 <Play className="w-4 h-4 mr-2" />
-                Free Webinar
+                {tCommon("freeWebinar")}
               </Button>
               <Button
                 size="lg"
@@ -4355,7 +4378,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 onClick={() => openBookingDialog(true)}
               >
                 <Phone className="w-4 h-4 mr-2" />
-                Book a Call
+                {tCommon("bookCall")}
               </Button>
               <Button
                 size="lg"

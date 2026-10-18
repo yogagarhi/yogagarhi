@@ -1,13 +1,17 @@
 import React from "react";
 import { BookOpen, CheckCircle2, ChevronDown } from "lucide-react";
 import { courseData } from "@/constants/courses";
+import { useTranslations } from "next-intl";
 
 export default function CourseSyllabusDetails({
   courseKey = "200-hour"
 }: {
   courseKey?: keyof typeof courseData;
 }) {
-  const curriculum = courseData[courseKey]?.curriculum || [];
+  const tCurriculum = useTranslations("course200.curriculum");
+  const fallbackCurriculum = courseData[courseKey]?.curriculum || [];
+  const detailedModules = (tCurriculum.raw("detailedModules") as Array<{ title: string; items: string[] }>) || [];
+  const curriculum = (Array.isArray(detailedModules) && detailedModules.length > 0) ? detailedModules : fallbackCurriculum;
 
   if (curriculum.length === 0) return null;
 
@@ -16,13 +20,13 @@ export default function CourseSyllabusDetails({
       <div className="text-center mb-8">
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-2">
           <BookOpen className="w-3.5 h-3.5" />
-          <span>Curriculum Modules</span>
+          <span>{tCurriculum("badge")}</span>
         </span>
         <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
-          Detailed Curriculum Breakdown & Study Topics
+          {tCurriculum("heading")}
         </h3>
         <p className="text-xs md:text-sm text-muted-foreground mt-1">
-          Click any module below to explore the detailed topics, practical techniques, and theoretical foundations.
+          {tCurriculum("sub")}
         </p>
       </div>
 

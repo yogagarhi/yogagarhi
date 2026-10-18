@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useTransition } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/routing";
 import { Globe, ChevronDown, Check } from "lucide-react";
 import { SUPPORTED_LOCALES, LOCALES_CONFIG, SupportedLocale, getAvailableLocalesForPath } from "@/config/i18nConfig";
@@ -16,6 +16,7 @@ export default function LanguageSwitcher({
   align = "right",
 }: LanguageSwitcherProps) {
   const locale = useLocale() as SupportedLocale;
+  const tSwitcher = useTranslations("switcher");
   const pathname = usePathname();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -64,7 +65,7 @@ export default function LanguageSwitcher({
         onClick={() => setIsOpen((prev) => !prev)}
         aria-expanded={isOpen}
         aria-haspopup="true"
-        aria-label={`Select language. Current language: ${currentConfig.name}`}
+        aria-label={`${tSwitcher("label")}. ${tSwitcher("currentLanguage", { lang: currentConfig.nativeName })}`}
         disabled={isPending}
         className={`flex items-center justify-between gap-1.5 h-8 min-[375px]:h-9 px-2 sm:px-2.5 rounded-lg border border-border/60 bg-background/80 hover:bg-secondary/60 text-foreground text-xs sm:text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-primary/40 w-[68px] min-[375px]:w-[72px] shrink-0 ${
           isOpen ? "ring-2 ring-primary/40 border-primary" : ""
