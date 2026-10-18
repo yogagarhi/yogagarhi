@@ -265,10 +265,10 @@ export default function Header() {
                 <Image
                   src={logo}
                   alt="YogaGarhi"
-                  width={56}
-                  height={52}
+                  width={128}
+                  height={118}
                   unoptimized
-                  className="object-contain h-9 w-9 min-[375px]:h-11 min-[375px]:w-11 sm:h-14 sm:w-14"
+                  className="object-contain h-9 w-auto min-[375px]:h-11 sm:h-14 aspect-[128/118]"
                 />
                 <div className="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-300" />
               </div>

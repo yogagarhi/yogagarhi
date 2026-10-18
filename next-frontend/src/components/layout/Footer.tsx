@@ -69,7 +69,7 @@ export default function Footer() {
                 alt="YogaGarhi"
                 width={80}
                 height={74}
-                className="h-20 w-20 object-contain"
+                className="h-20 w-auto aspect-[503/465] object-contain"
               />
               <div className="absolute -inset-4 border border-primary-foreground/10 rounded-full animate-spin-slow" />
             </div>
