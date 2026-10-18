@@ -42,9 +42,36 @@ export async function POST(request: Request) {
       },
     });
 
+    const LOCALE_NAMES: Record<string, string> = {
+      en: "English",
+      de: "German",
+      fr: "French",
+      es: "Spanish",
+      it: "Italian",
+      nl: "Dutch",
+      ru: "Russian",
+      id: "Indonesian",
+      ja: "Japanese",
+      ko: "Korean",
+      zh: "Chinese",
+    };
+
+    // Ensure language is recognized and formatted prominently
+    const rawLang = remainingData.language || remainingData.locale || 'en';
+    const languageName = LOCALE_NAMES[String(rawLang).toLowerCase()] || String(rawLang);
+
+    // Filter out raw language/locale from remainingData to avoid duplicates
+    const { language: _lang, locale: _loc, ...otherData } = remainingData;
+
     // Format remaining form fields into a sanitized, styled HTML table for the admin
-    const tableRows = Object.entries(remainingData)
-      .map(([key, value]) => {
+    const tableRows = [
+      `
+        <tr>
+          <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; width: 32%; color: #555;">Language</td>
+          <td style="padding: 10px; border-bottom: 1px solid #eee; color: #222; font-weight: 600;">${escapeHtml(languageName)} (${escapeHtml(rawLang)})</td>
+        </tr>
+      `,
+      ...Object.entries(otherData).map(([key, value]) => {
         const label = escapeHtml(key.replace(/_/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase()));
         const displayValue = escapeHtml(value);
         return `
@@ -54,7 +81,7 @@ export async function POST(request: Request) {
           </tr>
         `;
       })
-      .join('');
+    ].join('');
 
     const sanitizedSubject = escapeHtml(_subject || 'New Website Submission');
 

@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
+import { useLocale } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 export default function WebinarButtonIsland() {
+  const locale = useLocale();
   const [showWebinarDialog, setShowWebinarDialog] = useState(false);
   const [showWebinarThankYou, setShowWebinarThankYou] = useState(false);
   const [webinarForm, setWebinarForm] = useState({
@@ -28,6 +30,7 @@ export default function WebinarButtonIsland() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          language: locale,
           ...webinarForm,
           _subject: `New Webinar Registration: ${webinarForm.name}`,
           _autoresponder: "Namaste! You have successfully registered for our Free Orientation Webinar. We will send you the join link and further details shortly. See you there!"

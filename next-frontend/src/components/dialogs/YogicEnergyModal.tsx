@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import {
     Dialog,
@@ -68,6 +69,7 @@ const quizQuestions = [
 ];
 
 export default function YogicEnergyModal() {
+    const locale = useLocale();
     const { showYogicEnergy, setShowYogicEnergy } = useYogicEnergy();
     const [quizStep, setQuizStep] = useState(0);
     const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
@@ -110,6 +112,7 @@ export default function YogicEnergyModal() {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
+                    language: locale,
                     name: name,
                     email: email,
                     _subject: `Yogic Energy (Prakriti) Quiz Result: ${dominantDosha.toUpperCase()}`,

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import {
   Dialog,
@@ -16,6 +17,7 @@ import { CheckCircle, GraduationCap, ArrowRight } from "lucide-react";
 import { useQuickEnquiry } from "../QuickEnquiryDialog";
 
 export default function QuickEnquiryModal() {
+  const locale = useLocale();
   const { showQuickEnquiry, setShowQuickEnquiry } = useQuickEnquiry();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -42,6 +44,7 @@ export default function QuickEnquiryModal() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          language: locale,
           ...formData,
           _subject: `New Booking Request from ${formData.name}`,
           _autoresponder: "Namaste! Thank you for your interest in our course. We have received your request and will contact you within 24 hours to assist you with the booking process. We look forward to meeting you!"

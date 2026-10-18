@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Phone, BookOpen, Sparkles, Video, Calendar, GraduationCap, Check } from "lucide-react";
@@ -10,6 +10,7 @@ import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useBooking } from "@/components/BookingDialog";
 
 export default function ReadyToBeginActionsIsland() {
+  const locale = useLocale();
   const tReady = useTranslations("home.ready");
   const tNav = useTranslations("nav");
   const tCommon = useTranslations("common");
@@ -49,6 +50,7 @@ export default function ReadyToBeginActionsIsland() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          language: locale,
           ...manualForm,
           _subject: "Free YTTC Study Manual Request",
           _autoresponder: `Namaste ${manualForm.name},
@@ -84,6 +86,7 @@ YogaGarhi Team`,
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          language: locale,
           ...webinarForm,
           _subject: "Webinar Registration",
           _autoresponder: `Namaste ${webinarForm.name},
@@ -122,6 +125,7 @@ YogaGarhi Team`,
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          language: locale,
           ...preYTTCForm,
           _subject: "Pre-YTTC Details Request",
           _autoresponder: `Namaste ${preYTTCForm.name},

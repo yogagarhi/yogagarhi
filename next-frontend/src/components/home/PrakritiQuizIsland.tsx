@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -60,6 +61,7 @@ const quizQuestions = [
 
 export default function PrakritiQuizIsland() {
   const router = useRouter();
+  const locale = useLocale();
   const [showQuizDialog, setShowQuizDialog] = useState(false);
   const [quizStep, setQuizStep] = useState(0);
   const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
@@ -106,6 +108,7 @@ export default function PrakritiQuizIsland() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          language: locale,
           email: email,
           _subject: `Prakriti Quiz Result: ${dominantDosha.toUpperCase()}`,
           _autoresponder: `Namaste,

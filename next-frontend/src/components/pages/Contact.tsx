@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,6 +13,7 @@ import Image from "next/image";
 
 export default function Contact() {
   const router = useRouter();
+  const locale = useLocale();
   const [activeCampus, setActiveCampus] = useState<"bali" | "rishikesh">("bali");
   const [formData, setFormData] = useState({
     name: "",
@@ -31,6 +33,7 @@ export default function Contact() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          language: locale,
           name: formData.name,
           email: formData.email,
           message: formData.message,

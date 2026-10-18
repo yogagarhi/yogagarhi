@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { BookOpen, ArrowRight } from "lucide-react";
 import { HELPFUL_GUIDES } from "@/constants/course200Data";
 import { useTranslations } from "next-intl";

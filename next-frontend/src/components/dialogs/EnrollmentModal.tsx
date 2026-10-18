@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import {
   Dialog,
@@ -25,6 +25,7 @@ const courses = [
 
 export default function EnrollmentModal() {
   const t = useTranslations("dialogs");
+  const locale = useLocale();
   const { showEnrollDialog, setShowEnrollDialog } = useEnrollment();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -58,6 +59,7 @@ export default function EnrollmentModal() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          language: locale,
           ...formData,
           _subject: `New Enrollment Request from ${formData.name}`,
           _autoresponder: "Namaste! Thank you for applying to YogaGarhi. We have received your enrollment request. Our admissions team will review your application and contact you within 24 hours with the next steps. We look forward to having you with us!"

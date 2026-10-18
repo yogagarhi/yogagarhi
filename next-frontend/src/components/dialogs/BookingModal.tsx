@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -24,6 +24,7 @@ export default function BookingModal({
   setShowThankYou,
 }: BookingModalProps) {
   const t = useTranslations("dialogs");
+  const locale = useLocale();
   const router = useRouter();
 
   // Calendar state
@@ -61,6 +62,7 @@ export default function BookingModal({
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          language: locale,
           _subject: `New Booking Request: ${bookingForm.name}`,
           form_type: "booking_request",
           booking_date: `${selectedDay} ${months[selectedMonth]} ${currentYear}`,

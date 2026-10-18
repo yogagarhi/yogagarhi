@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import {
   GraduationCap, RefreshCw, Users, BookOpen, Heart,
@@ -57,6 +57,7 @@ const postYTTCItems = [
 export default function YTTCSupportInteractiveIsland() {
   const t = useTranslations("home.support");
   const tCommon = useTranslations("common");
+  const locale = useLocale();
   const preTitles = [t("b1Title"), t("b2Title"), t("b3Title"), t("tabBefore")];
   const preDescs = [t("b1Desc"), t("b2Desc"), t("b3Desc"), t("subtitle")];
   const postTitles = [t("a1Title"), t("alumniTitle"), t("a3Title"), t("asstTitle")];
@@ -83,6 +84,7 @@ export default function YTTCSupportInteractiveIsland() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          language: locale,
           email: email,
           _subject: "New \"Before You Join\" Guide Request",
           _autoresponder: "Namaste! Thank you for requesting our \"Before You Join\" preparation guide. It's being sent to your email right now. We hope it helps you prepare for your life-changing journey with YogaGarhi!"
