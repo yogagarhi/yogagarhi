@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
@@ -186,6 +186,12 @@ export default function Header() {
   const [mobileOpenDropdown, setMobileOpenDropdown] = useState<string | null>(null);
   const [mobileOpenSubDropdown, setMobileOpenSubDropdown] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
+  const [useDesktopHamburger, setUseDesktopHamburger] = useState(false);
+  const [isCompactNav, setIsCompactNav] = useState(false);
+  const headerRowRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLElement>(null);
+  const logoRef = useRef<HTMLAnchorElement>(null);
+  const rightRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const { setShowEnrollDialog } = useEnrollment();
   const { setShowQuickEnquiry } = useQuickEnquiry();
@@ -210,6 +216,47 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Adaptive nav fit check: Follows strict order a -> b -> c
+  useEffect(() => {
+    const checkNavFit = () => {
+      if (typeof window === "undefined") return;
+      if (window.innerWidth < 1024) {
+        setUseDesktopHamburger(false);
+        setIsCompactNav(false);
+        return;
+      }
+      if (headerRowRef.current && logoRef.current && rightRef.current) {
+        const totalAvail = headerRowRef.current.clientWidth;
+        const logoWidth = logoRef.current.offsetWidth;
+        const rightWidth = rightRef.current.offsetWidth;
+        const navEl = navRef.current;
+        const navNeeded = navEl ? navEl.scrollWidth : 0;
+        const spaceForNav = totalAvail - logoWidth - rightWidth - 24;
+
+        if (navNeeded <= spaceForNav) {
+          // Standard full desktop nav fits comfortably
+          setUseDesktopHamburger(false);
+          setIsCompactNav(false);
+        } else {
+          // a) gaps/padding thoda kam + b) hide tagline (compact nav needs ~835px)
+          const compactNeeded = navNeeded - 220;
+          if (compactNeeded <= spaceForNav) {
+            setUseDesktopHamburger(false);
+            setIsCompactNav(true);
+          } else {
+            // c) Still doesn't fit -> desktop hamburger menu
+            setUseDesktopHamburger(true);
+            setIsCompactNav(true);
+          }
+        }
+      }
+    };
+
+    checkNavFit();
+    window.addEventListener("resize", checkNavFit);
+    return () => window.removeEventListener("resize", checkNavFit);
+  }, [navLinks]);
+
   // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false);
@@ -229,16 +276,16 @@ export default function Header() {
   return (
     <div className="fixed top-0 left-0 right-0 z-[70]">
       {/* Top Countdown Promo Bar - Visible on Mobile & Desktop */}
-      <div className="bg-[#2D7A70] text-white py-1.5 sm:py-3 shadow-sm overflow-hidden">
-        <div className="container mx-auto px-2 sm:px-4 flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-8">
-          <div className="flex items-center justify-center gap-1.5 sm:gap-2 sm:whitespace-nowrap animate-none md:animate-pulse text-center">
+      <div className="bg-[#2D7A70] text-white py-1.5 sm:py-2.5 shadow-sm overflow-hidden">
+        <div className="w-full max-w-[1920px] mx-auto px-2 sm:px-4 lg:px-6 flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-6 lg:gap-8">
+          <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-center flex-wrap sm:flex-nowrap">
             <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
             <span className="text-[11px] min-[375px]:text-xs sm:text-sm font-bold tracking-wide uppercase leading-tight">
               {tPromo("title")} 🎉 {tPromo("flat")} <span className="text-amber-300 font-extrabold">{tPromo("discountText")}</span> {tPromo("batchesText")}
             </span>
           </div>
 
-          <div className="flex items-center justify-center gap-2 sm:gap-3 bg-black/20 px-3 sm:px-4 py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 bg-black/20 px-3 sm:px-4 py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner shrink-0">
             <div className="flex items-center gap-1 sm:gap-1.5 whitespace-nowrap">
               <Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300 shrink-0" />
               <span className="text-[9px] min-[375px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest text-white/90">
@@ -256,11 +303,11 @@ export default function Header() {
           : 'bg-background'
           }`}
       >
-        <div className="container mx-auto px-3 sm:px-4">
-          <div className="flex items-center justify-between gap-3">
+        <div className="w-full max-w-[1920px] mx-auto px-3 sm:px-4 lg:px-6 2xl:px-8">
+          <div ref={headerRowRef} className="flex items-center justify-between gap-2 sm:gap-3">
 
             {/* Logo */}
-            <Link href="/" prefetch={false} className="flex items-center gap-1.5 sm:gap-2 group shrink-0">
+            <Link ref={logoRef} href="/" prefetch={false} className="flex items-center gap-1.5 sm:gap-2 group shrink-0">
               <div className="relative shrink-0">
                 <Image
                   src={logo}
@@ -277,15 +324,21 @@ export default function Header() {
                 <span className="font-heading font-bold text-primary tracking-wide text-sm min-[375px]:text-base sm:text-xl whitespace-nowrap">
                   YOGAGARHI
                 </span>
-                <span className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase hidden sm:block">
+                <span className={`text-[10px] text-muted-foreground tracking-[0.1em] uppercase ${isCompactNav || useDesktopHamburger ? 'hidden' : 'hidden 2xl:block'} whitespace-nowrap`}>
                   {tNav("transformWithin")}
                 </span>
               </div>
             </Link>
 
             {/* Desktop Navigation - Semantic & Accessible */}
-            <nav className="hidden lg:flex items-center" aria-label="Main Navigation">
-              <ul className="flex items-center bg-secondary/30 rounded-full px-2 py-1.5 list-none m-0 p-0">
+            <nav
+              ref={navRef}
+              className={`${useDesktopHamburger ? 'hidden' : 'hidden lg:flex'} items-center`}
+              aria-label="Main Navigation"
+            >
+              <ul className={`flex items-center bg-secondary/30 rounded-full list-none m-0 p-0 ${
+                isCompactNav ? 'px-1 py-1 gap-0.5' : 'px-1.5 py-1 xl:px-2 xl:py-1.5 gap-0.5 xl:gap-1'
+              }`}>
                 {navLinks.map((link) => {
                   const isDropdownActive = link.id === 'courses' ? isCoursesActive :
                     link.id === 'retreat' ? isRetreatActive :
@@ -294,7 +347,7 @@ export default function Header() {
                       link.id === 'sundaySchedule' ? isSundayActive : false;
                   const dropdownKey = link.id || link.name;
                   return (
-                    <li key={dropdownKey} className="relative list-none">
+                    <li key={dropdownKey} className="relative list-none shrink-0">
                       {link.dropdown ? (
                         <div
                           className="relative"
@@ -308,13 +361,17 @@ export default function Header() {
                             aria-expanded={openDropdown === dropdownKey}
                             aria-label={`${link.name} navigation menu`}
                             onClick={() => setOpenDropdown(openDropdown === dropdownKey ? null : dropdownKey)}
-                            className={`flex items-center gap-1 px-2.5 py-1.5 xl:px-4 xl:py-2 rounded-full text-xs xl:text-sm font-medium transition-all duration-300 ${isDropdownActive
+                            className={`flex items-center gap-1 rounded-full font-medium transition-all duration-300 whitespace-nowrap shrink-0 ${
+                              isCompactNav
+                                ? 'px-2 py-1 text-xs'
+                                : 'px-2.5 py-1.5 xl:px-3.5 xl:py-2 text-xs xl:text-sm'
+                            } ${isDropdownActive
                               ? 'bg-primary text-primary-foreground'
                               : 'text-foreground/70 hover:text-primary hover:bg-secondary/50'
                               }`}
                           >
                             {link.name}
-                            <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${openDropdown === dropdownKey ? 'rotate-180' : ''
+                            <ChevronDown className={`h-3.5 w-3.5 shrink-0 transition-transform duration-200 ${openDropdown === dropdownKey ? 'rotate-180' : ''
                               }`} />
                           </button>
 
@@ -416,7 +473,11 @@ export default function Header() {
                         <Link
                           href={link.href}
                           prefetch={false}
-                          className={`px-2.5 py-1.5 xl:px-4 xl:py-2 rounded-full text-xs xl:text-sm font-medium transition-all duration-300 ${isActive(link.href)
+                          className={`rounded-full font-medium transition-all duration-300 whitespace-nowrap shrink-0 ${
+                            isCompactNav
+                              ? 'px-2 py-1 text-xs'
+                              : 'px-2.5 py-1.5 xl:px-3.5 xl:py-2 text-xs xl:text-sm'
+                          } ${isActive(link.href)
                             ? 'bg-primary text-primary-foreground'
                             : 'text-foreground/70 hover:text-primary hover:bg-secondary/50'
                             }`}
@@ -431,15 +492,15 @@ export default function Header() {
             </nav>
 
             {/* Right Side - Switcher & CTA */}
-            <div className="flex items-center gap-1.5 min-[375px]:gap-2 sm:gap-3 shrink-0">
+            <div ref={rightRef} className="flex items-center gap-1.5 min-[375px]:gap-2 sm:gap-3 shrink-0">
               <LanguageSwitcher />
 
-              {/* Mobile CTA Button */}
+              {/* Mobile CTA Button (also used when desktop hamburger is active) */}
               <Button
                 type="button"
                 variant="default"
                 size="sm"
-                className="lg:hidden bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-2.5 min-[375px]:px-3.5 sm:px-4 h-8 min-[375px]:h-9 text-xs min-[375px]:text-sm shadow-sm transition-all whitespace-nowrap"
+                className={`${useDesktopHamburger ? 'flex' : 'lg:hidden'} bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-2.5 min-[375px]:px-3.5 sm:px-4 h-8 min-[375px]:h-9 text-xs min-[375px]:text-sm shadow-sm transition-all whitespace-nowrap shrink-0`}
                 onClick={() => setShowEnrollDialog(true)}
               >
                 {tNav("beginJourney")}
@@ -449,16 +510,16 @@ export default function Header() {
               <Button
                 type="button"
                 variant="default"
-                className="hidden lg:flex bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-3.5 py-2 xl:px-6 xl:py-2.5 text-xs xl:text-sm h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap"
+                className={`${useDesktopHamburger ? 'hidden' : 'hidden lg:flex'} bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-3.5 py-2 xl:px-5 xl:py-2.5 text-xs xl:text-sm h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap shrink-0`}
                 onClick={() => setShowEnrollDialog(true)}
               >
                 {tNav("beginJourney")}
               </Button>
 
-              {/* Mobile Menu Button */}
+              {/* Mobile / Overflow Menu Button */}
               <button
                 type="button"
-                className="lg:hidden p-1.5 min-[375px]:p-2 rounded-full hover:bg-secondary transition-colors"
+                className={`${useDesktopHamburger ? 'flex' : 'lg:hidden'} p-1.5 min-[375px]:p-2 rounded-full hover:bg-secondary transition-colors shrink-0`}
                 onClick={() => setIsOpen((prev) => !prev)}
                 aria-label={tNav("toggleMenu")}
               >
@@ -477,8 +538,8 @@ export default function Header() {
 
         {/* Mobile Menu - Slide Down (CSS transition prevents ghost click on DOM unmount) */}
         <div
-          className={`lg:hidden absolute top-full left-0 right-0 bg-background border-t border-border/50 shadow-lg transition-all duration-300 overflow-hidden ${
-            isOpen ? 'max-h-[80vh] opacity-100 pointer-events-auto overflow-y-auto' : 'max-h-0 opacity-0 pointer-events-none'
+          className={`${useDesktopHamburger ? 'block' : 'lg:hidden'} absolute top-full left-0 right-0 bg-background border-t border-border/50 shadow-lg transition-all duration-300 overflow-hidden ${
+            isOpen ? 'max-h-[85vh] opacity-100 pointer-events-auto overflow-y-auto' : 'max-h-0 opacity-0 pointer-events-none'
           }`}
         >
           <nav className="container mx-auto px-4 py-6 flex flex-col gap-1">
