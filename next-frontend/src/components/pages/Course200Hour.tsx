@@ -1862,8 +1862,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <RefreshCw className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">{tWhy("a2Title")}</h4>
-                  <p className="text-xs text-muted-foreground">{tWhy("a2Desc")}</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2">{tWhy("repeatTitle")}</h4>
+                  <p className="text-xs text-muted-foreground">{tWhy("repeatDesc")}</p>
                 </div>
 
                 {/* Assistant Teaching Opportunities */}
@@ -1872,8 +1872,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
                     <GraduationCap className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">{tWhy("asstTitle")}</h4>
-                  <p className="text-xs text-muted-foreground">{tWhy("asstDesc")}</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2">{tWhy("assistantTitle")}</h4>
+                  <p className="text-xs text-muted-foreground">{tWhy("assistantDesc")}</p>
                 </div>
 
                 {/* Global Alumni Network */}
@@ -1881,8 +1881,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <Users className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">{tWhy("alumniTitle")}</h4>
-                  <p className="text-xs text-muted-foreground">{tWhy("alumniDesc")}</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2">{tWhy("communityTitle")}</h4>
+                  <p className="text-xs text-muted-foreground">{tWhy("communityDesc")}</p>
                 </div>
               </div>
             </div>
@@ -2736,8 +2736,15 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="max-w-6xl mx-auto">
 
                     <div className="grid md:grid-cols-3 gap-8">
-                      {(((t.raw("foodMenuList") as any[]) || foodMenu)).map((meal: any, index: number) => {
-                        const MealIcon = meal.icon;
+                      {foodMenu.map((defaultMeal, index) => {
+                        const rawList = (t.raw("foodMenuList") as any[]) || [];
+                        const localizedMeal = rawList[index] || {};
+                        const MealIcon = defaultMeal.icon;
+                        const mealImage = defaultMeal.image;
+                        const mealTitle = localizedMeal.meal || defaultMeal.meal;
+                        const mealTime = localizedMeal.time || defaultMeal.time;
+                        const mealItems = localizedMeal.items || defaultMeal.items;
+
                         return (
                           <div
                             key={index}
@@ -2746,8 +2753,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                             {/* Meal Image */}
                             <div className="relative h-48 overflow-hidden">
                               <Image
-                                src={meal.image}
-                                alt={meal.meal}
+                                src={mealImage}
+                                alt={mealTitle}
                                 fill sizes="(max-width: 768px) 100vw, 33vw"
                                 className="object-cover transition-transform duration-700 group-hover:scale-110"
                               />
@@ -2756,19 +2763,19 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                               {/* Meal Badge */}
                               <div className="absolute top-4 left-4 px-3 py-1.5 bg-background/90 backdrop-blur-sm rounded-full flex items-center gap-2">
                                 <MealIcon className="w-4 h-4 text-primary" />
-                                <span className="text-sm font-medium text-foreground">{meal.time}</span>
+                                <span className="text-sm font-medium text-foreground">{mealTime}</span>
                               </div>
 
                               {/* Meal Title Overlay */}
                               <div className="absolute bottom-4 left-4">
-                                <h4 className="font-heading text-2xl font-bold text-background">{meal.meal}</h4>
+                                <h4 className="font-heading text-2xl font-bold text-background">{mealTitle}</h4>
                               </div>
                             </div>
 
                             {/* Meal Items */}
                             <div className="p-6">
                               <ul className="space-y-3">
-                                {meal.items.map((item: string, itemIndex: number) => (
+                                {mealItems.map((item: string, itemIndex: number) => (
                                   <li key={itemIndex} className="flex items-start gap-3 text-muted-foreground">
                                     <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                                     <span>{item}</span>
