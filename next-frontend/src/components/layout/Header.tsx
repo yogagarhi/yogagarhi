@@ -274,18 +274,18 @@ export default function Header() {
   const isSundayActive = pathname === "/sunday-schedule";
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[70]">
+    <div className="fixed top-0 left-0 right-0 z-[70] w-full max-w-full">
       {/* Top Countdown Promo Bar - Visible on Mobile & Desktop */}
-      <div className="bg-[#2D7A70] text-white py-1.5 sm:py-2.5 shadow-sm overflow-hidden">
-        <div className="w-full max-w-[1920px] mx-auto px-2 sm:px-4 lg:px-6 flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-6 lg:gap-8">
-          <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-center flex-wrap sm:flex-nowrap">
-            <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
-            <span className="text-[11px] min-[375px]:text-xs sm:text-sm font-bold tracking-wide uppercase leading-tight">
+      <div className="bg-[#2D7A70] text-white py-1 sm:py-2.5 shadow-sm overflow-hidden w-full max-w-full">
+        <div className="w-full max-w-[1920px] mx-auto px-2 sm:px-4 lg:px-6 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-6 lg:gap-8">
+          <div className="flex items-center justify-center gap-1 sm:gap-2 text-center flex-wrap sm:flex-nowrap min-w-0 max-w-full">
+            <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
+            <span className="text-[10px] min-[375px]:text-xs sm:text-sm font-bold tracking-tight min-[375px]:tracking-wide uppercase leading-tight break-words text-center">
               {tPromo("title")} 🎉 {tPromo("flat")} <span className="text-amber-300 font-extrabold">{tPromo("discountText")}</span> {tPromo("batchesText")}
             </span>
           </div>
 
-          <div className="flex items-center justify-center gap-2 sm:gap-3 bg-black/20 px-3 sm:px-4 py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner shrink-0">
+          <div className="flex items-center justify-center gap-1.5 sm:gap-3 bg-black/20 px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner shrink-0 scale-95 sm:scale-100">
             <div className="flex items-center gap-1 sm:gap-1.5 whitespace-nowrap">
               <Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300 shrink-0" />
               <span className="text-[9px] min-[375px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest text-white/90">
@@ -303,8 +303,8 @@ export default function Header() {
           : 'bg-background'
           }`}
       >
-        <div className="w-full max-w-[1920px] mx-auto px-3 sm:px-4 lg:px-6 2xl:px-8">
-          <div ref={headerRowRef} className="flex items-center justify-between gap-2 sm:gap-3">
+        <div className="w-full max-w-[1920px] mx-auto px-1.5 min-[375px]:px-3 sm:px-4 lg:px-6 2xl:px-8">
+          <div ref={headerRowRef} className="flex items-center justify-between gap-1 min-[375px]:gap-2 sm:gap-3 min-w-0">
 
             {/* Logo */}
             <Link ref={logoRef} href="/" prefetch={false} className="flex items-center gap-1.5 sm:gap-2 group shrink-0">
@@ -315,13 +315,13 @@ export default function Header() {
                   width={128}
                   height={118}
                   unoptimized
-                  className="object-contain h-9 w-auto min-[375px]:h-11 sm:h-14 aspect-[128/118]"
+                  className="object-contain h-8 min-[375px]:h-11 sm:h-14 w-auto aspect-[128/118]"
                 />
                 <div className="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-300" />
               </div>
 
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-primary tracking-wide text-sm min-[375px]:text-base sm:text-xl whitespace-nowrap">
+                <span className="font-heading font-bold text-primary tracking-wide text-xs min-[375px]:text-base sm:text-xl whitespace-nowrap">
                   YOGAGARHI
                 </span>
                 <span className={`text-[10px] text-muted-foreground tracking-[0.1em] uppercase ${isCompactNav || useDesktopHamburger ? 'hidden' : 'hidden 2xl:block'} whitespace-nowrap`}>
@@ -492,7 +492,7 @@ export default function Header() {
             </nav>
 
             {/* Right Side - Switcher & CTA */}
-            <div ref={rightRef} className="flex items-center gap-1.5 min-[375px]:gap-2 sm:gap-3 shrink-0">
+            <div ref={rightRef} className="flex items-center gap-1 min-[375px]:gap-2 sm:gap-3 shrink-0">
               <LanguageSwitcher />
 
               {/* Mobile CTA Button (also used when desktop hamburger is active) */}
@@ -500,7 +500,7 @@ export default function Header() {
                 type="button"
                 variant="default"
                 size="sm"
-                className={`${useDesktopHamburger ? 'flex' : 'lg:hidden'} bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-2.5 min-[375px]:px-3.5 sm:px-4 h-8 min-[375px]:h-9 text-xs min-[375px]:text-sm shadow-sm transition-all whitespace-nowrap shrink-0`}
+                className={`${useDesktopHamburger ? 'flex' : 'lg:hidden'} bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-2 min-[375px]:px-3.5 sm:px-4 h-8 min-[375px]:h-9 text-[11px] min-[375px]:text-xs sm:text-sm shadow-sm transition-all whitespace-nowrap shrink-0`}
                 onClick={() => setShowEnrollDialog(true)}
               >
                 {tNav("beginJourney")}

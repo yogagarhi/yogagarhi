@@ -129,22 +129,10 @@ export default function WhyChooseUs() {
                     <h4 className="font-heading text-2xl lg:text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
                       {t("postTtcTitle")}
                     </h4>
-                    {/* Desktop full text */}
-                    <p className="hidden md:block text-muted-foreground text-sm leading-relaxed max-w-2xl">
+                    {/* Full text on both desktop and mobile */}
+                    <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed max-w-2xl break-words">
                       {t("postTtcDesc")}
                     </p>
-                    {/* Mobile accordion */}
-                    <div className="md:hidden text-muted-foreground text-xs leading-relaxed">
-                      <p>{t("postTtcShort")}</p>
-                      <details className="mt-2 cursor-pointer group">
-                        <summary className="text-amber-700 dark:text-amber-400 font-bold uppercase text-[11px] tracking-wider select-none list-none outline-none hover:underline">
-                          {t("readFullDetails")}
-                        </summary>
-                        <div className="pt-2 text-xs leading-relaxed text-foreground/90">
-                          {t("postTtcDetail")}
-                        </div>
-                      </details>
-                    </div>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">

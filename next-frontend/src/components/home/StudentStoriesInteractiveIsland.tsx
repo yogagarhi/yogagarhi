@@ -159,7 +159,7 @@ export default function StudentStoriesInteractiveIsland({
                     {video.name}
                   </p>
                   <p className="text-sm text-muted-foreground">{video.country}</p>
-                  <p className="text-xs text-muted-foreground/70 italic mt-1 truncate">
+                  <p className="text-xs text-muted-foreground/70 italic mt-1 break-words">
                     "{video.quote}"
                   </p>
                 </div>

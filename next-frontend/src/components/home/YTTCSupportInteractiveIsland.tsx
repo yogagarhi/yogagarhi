@@ -109,44 +109,44 @@ export default function YTTCSupportInteractiveIsland() {
     <>
       {/* Interactive Tab Navigation */}
       <div className="max-w-3xl mx-auto mb-16">
-        <div className="relative bg-secondary/50 rounded-full p-2 flex">
+        <div className="relative bg-secondary/50 rounded-full p-1 sm:p-2 flex">
           {/* Sliding Background */}
           <div
-            className={`absolute top-2 bottom-2 w-1/2 bg-background rounded-full shadow-card transition-all duration-500 ease-out ${activeTab === 'post' ? 'left-[calc(50%-0.25rem)]' : 'left-2'
+            className={`absolute top-1 bottom-1 sm:top-2 sm:bottom-2 w-1/2 bg-background rounded-full shadow-card transition-all duration-500 ease-out ${activeTab === 'post' ? 'left-[calc(50%-0.125rem)]' : 'left-1 sm:left-2'
               }`}
           />
 
           {/* Pre YTTC Tab */}
           <button
             onClick={() => setActiveTab('pre')}
-            className={`relative z-10 flex-1 flex items-center justify-center gap-3 py-4 px-6 rounded-full transition-all duration-300 ${activeTab === 'pre'
+            className={`relative z-10 flex-1 flex items-center justify-center gap-1.5 sm:gap-3 py-2 sm:py-4 px-2 sm:px-6 rounded-full transition-all duration-300 min-w-0 ${activeTab === 'pre'
               ? 'text-foreground'
               : 'text-muted-foreground hover:text-foreground/80'
               }`}
           >
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${activeTab === 'pre' ? 'bg-primary/20' : 'bg-transparent'
+            <div className={`w-7 h-7 sm:w-10 sm:h-10 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${activeTab === 'pre' ? 'bg-primary/20' : 'bg-transparent'
               }`}>
-              <GraduationCap className={`w-5 h-5 transition-colors duration-300 ${activeTab === 'pre' ? 'text-primary' : ''}`} />
+              <GraduationCap className={`w-4 h-4 sm:w-5 sm:h-5 transition-colors duration-300 ${activeTab === 'pre' ? 'text-primary' : ''}`} />
             </div>
-            <div className="text-left">
-              <p className="font-heading font-bold text-lg">{t("tabPre")}</p>
+            <div className="text-left min-w-0">
+              <p className="font-heading font-bold text-xs sm:text-base md:text-lg break-words">{t("tabPre")}</p>
             </div>
           </button>
 
           {/* Post YTTC Tab */}
           <button
             onClick={() => setActiveTab('post')}
-            className={`relative z-10 flex-1 flex items-center justify-center gap-3 py-4 px-6 rounded-full transition-all duration-300 ${activeTab === 'post'
+            className={`relative z-10 flex-1 flex items-center justify-center gap-1.5 sm:gap-3 py-2 sm:py-4 px-2 sm:px-6 rounded-full transition-all duration-300 min-w-0 ${activeTab === 'post'
               ? 'text-foreground'
               : 'text-muted-foreground hover:text-foreground/80'
               }`}
           >
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${activeTab === 'post' ? 'bg-primary/20' : 'bg-transparent'
+            <div className={`w-7 h-7 sm:w-10 sm:h-10 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${activeTab === 'post' ? 'bg-primary/20' : 'bg-transparent'
               }`}>
-              <RefreshCw className={`w-5 h-5 transition-colors duration-300 ${activeTab === 'post' ? 'text-primary' : ''}`} />
+              <RefreshCw className={`w-4 h-4 sm:w-5 sm:h-5 transition-colors duration-300 ${activeTab === 'post' ? 'text-primary' : ''}`} />
             </div>
-            <div className="text-left">
-              <p className="font-heading font-bold text-lg">{t("tabPost")}</p>
+            <div className="text-left min-w-0">
+              <p className="font-heading font-bold text-xs sm:text-base md:text-lg break-words">{t("tabPost")}</p>
             </div>
           </button>
         </div>
@@ -332,12 +332,12 @@ export default function YTTCSupportInteractiveIsland() {
 
                 {/* Assistant Teaching Opportunities */}
                 <div className="group relative p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 hover:border-primary/40 hover:shadow-xl transition-all duration-500 text-center overflow-hidden">
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-bl-full translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500" />
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-bl-full opacity-60 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
                     <GraduationCap className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">{t("asstTitle")}</h4>
-                  <p className="text-xs text-muted-foreground">{t("asstDesc")}</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2 break-words hyphens-auto min-w-0">{t("asstTitle")}</h4>
+                  <p className="text-xs text-muted-foreground break-words">{t("asstDesc")}</p>
                 </div>
 
                 {/* Global Alumni Network */}

@@ -217,18 +217,9 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
       </div>
 
       {/* Review Text */}
-      <p className={`text-sm text-muted-foreground leading-relaxed ${!expanded && isLongText ? 'line-clamp-4' : ''}`}>
+      <p className="text-sm text-muted-foreground leading-relaxed break-words">
         {review.text}
       </p>
-      {isLongText && (
-        <button
-          type="button"
-          onClick={() => setExpanded(!expanded)}
-          className="text-sm text-primary hover:text-primary/80 font-medium mt-2 transition-colors"
-        >
-          {expanded ? tCommon("readLess") : tCommon("readMore")}
-        </button>
-      )}
     </div>
   );
 }
@@ -1219,44 +1210,44 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <section className="py-8 bg-secondary/50 border-b border-border/50">
           <div className="container mx-auto px-4">
             {/* Main Course Info Row - Static Border Container */}
-            <div className="relative rounded-xl border-2 border-primary/40 bg-background shadow-card p-6 md:p-8">
+            <div className="relative rounded-xl border-2 border-primary/40 bg-background shadow-card p-4 sm:p-6 md:p-8">
               <div>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 sm:gap-6 items-center min-w-0">
                   {/* Course Duration */}
-                  <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
+                  <div className="text-center lg:text-left border-b sm:border-b-0 sm:border-r border-border/30 pb-3 sm:pb-0 sm:pr-4 min-w-0 break-words">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.course")}</p>
-                    <p className="font-heading font-semibold text-foreground">{t("quickInfo.courseVal")}</p>
+                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base break-words hyphens-auto">{t("quickInfo.courseVal")}</p>
                   </div>
 
                   {/* Course Length */}
-                  <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
+                  <div className="text-center lg:text-left border-b sm:border-b-0 sm:border-r border-border/30 pb-3 sm:pb-0 sm:pr-4 min-w-0 break-words">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.duration")}</p>
-                    <p className="font-heading font-semibold text-foreground">{t("quickInfo.durationVal")}</p>
+                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base break-words hyphens-auto">{t("quickInfo.durationVal")}</p>
                   </div>
 
                   {/* Yoga Style */}
-                  <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
+                  <div className="text-center lg:text-left border-b sm:border-b-0 sm:border-r border-border/30 pb-3 sm:pb-0 sm:pr-4 min-w-0 break-words">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.style")}</p>
-                    <p className="font-heading font-semibold text-foreground">{t("quickInfo.styleVal")}</p>
+                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base break-words hyphens-auto">{t("quickInfo.styleVal")}</p>
                   </div>
 
                   {/* Level */}
-                  <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
+                  <div className="text-center lg:text-left border-b sm:border-b-0 sm:border-r border-border/30 pb-3 sm:pb-0 sm:pr-4 min-w-0 break-words">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.level")}</p>
-                    <p className="font-heading font-semibold text-foreground">{t("quickInfo.levelVal")}</p>
+                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base break-words hyphens-auto">{t("quickInfo.levelVal")}</p>
                   </div>
 
                   {/* Certification */}
-                  <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
+                  <div className="text-center lg:text-left border-b sm:border-b-0 sm:border-r border-border/30 pb-3 sm:pb-0 sm:pr-4 min-w-0 break-words">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.certification")}</p>
-                    <p className="font-heading font-semibold text-foreground">{t("quickInfo.certificationVal")}</p>
+                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base break-words hyphens-auto">{t("quickInfo.certificationVal")}</p>
                   </div>
 
                   {/* Price */}
-                  <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
+                  <div className="text-center lg:text-left border-b sm:border-b-0 sm:border-r border-border/30 pb-3 sm:pb-0 sm:pr-4 last:border-0 min-w-0 break-words">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.startingFrom")}</p>
-                    <div className="flex flex-col items-center lg:items-start">
-                      <div className="flex items-baseline gap-2 justify-center lg:justify-start">
+                    <div className="flex flex-col items-center lg:items-start min-w-0">
+                      <div className="flex items-baseline gap-2 justify-center lg:justify-start flex-wrap">
                         <span className="text-base text-muted-foreground line-through opacity-60">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
@@ -1265,15 +1256,15 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                           <div className="absolute -inset-1 bg-primary/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
                         </div>
                       </div>
-                      <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform">
-                        <Zap className="w-3.5 h-3.5 fill-current" />
-                        {t("quickInfo.earlyBirdDiscount")}
+                      <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform max-w-full break-words">
+                        <Zap className="w-3.5 h-3.5 fill-current shrink-0" />
+                        <span>{t("quickInfo.earlyBirdDiscount")}</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Book Now Button */}
-                  <div className="col-span-2 md:col-span-1 flex justify-center lg:justify-end">
+                  <div className="col-span-1 sm:col-span-2 md:col-span-1 flex justify-center lg:justify-end min-w-0 pt-2 sm:pt-0">
                     <Button
                       size="lg"
                       className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold w-full md:w-auto"
@@ -1289,44 +1280,44 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
                 {/* What's Included / Bonus Row */}
                 <div className="mt-6 pt-6 border-t border-border/30">
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div className="flex items-center gap-3">
+                  <div className="grid grid-cols-1 min-[480px]:grid-cols-2 md:grid-cols-4 gap-4 min-w-0">
+                    <div className="flex items-center gap-3 min-w-0">
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <Users className="w-4 h-4 text-primary" />
                       </div>
-                      <div>
-                        <p className="text-sm font-medium text-foreground">{t("highlights.smallGroups")}</p>
-                        <p className="text-xs text-muted-foreground">{t("highlights.smallGroupsSub")}</p>
+                      <div className="min-w-0">
+                        <p className="text-sm font-medium text-foreground break-words">{t("highlights.smallGroups")}</p>
+                        <p className="text-xs text-muted-foreground break-words">{t("highlights.smallGroupsSub")}</p>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 min-w-0">
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <BookOpen className="w-4 h-4 text-primary" />
                       </div>
-                      <div>
-                        <p className="text-sm font-medium text-foreground">{t("highlights.preYttc")}</p>
-                        <p className="text-xs text-muted-foreground">{t("highlights.preYttcSub")}</p>
+                      <div className="min-w-0">
+                        <p className="text-sm font-medium text-foreground break-words">{t("highlights.preYttc")}</p>
+                        <p className="text-xs text-muted-foreground break-words">{t("highlights.preYttcSub")}</p>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 min-w-0">
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <Heart className="w-4 h-4 text-primary" />
                       </div>
-                      <div>
-                        <p className="text-sm font-medium text-foreground">{t("highlights.mentorship")}</p>
-                        <p className="text-xs text-muted-foreground">{t("highlights.mentorshipSub")}</p>
+                      <div className="min-w-0">
+                        <p className="text-sm font-medium text-foreground break-words">{t("highlights.mentorship")}</p>
+                        <p className="text-xs text-muted-foreground break-words">{t("highlights.mentorshipSub")}</p>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 min-w-0">
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <Award className="w-4 h-4 text-primary" />
                       </div>
-                      <div>
-                        <p className="text-sm font-medium text-foreground">{t("highlights.goodieBag")}</p>
-                        <p className="text-xs text-muted-foreground">{t("highlights.goodieBagSub")}</p>
+                      <div className="min-w-0">
+                        <p className="text-sm font-medium text-foreground break-words">{t("highlights.goodieBag")}</p>
+                        <p className="text-xs text-muted-foreground break-words">{t("highlights.goodieBagSub")}</p>
                       </div>
                     </div>
                   </div>
@@ -1361,8 +1352,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         {/* ===== STUDENT TESTIMONIALS SECTION ===== */}
         <section className="py-20 bg-secondary/20 overflow-hidden relative">
           {/* Subtle background decorative shapes */}
-          <div className="absolute top-1/2 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl -translate-y-1/2 pointer-events-none" />
-          <div className="absolute top-1/2 right-10 w-72 h-72 rounded-full bg-accent/5 blur-3xl -translate-y-1/2 pointer-events-none" />
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            <div className="absolute top-1/2 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl -translate-y-1/2" />
+            <div className="absolute top-1/2 right-10 w-72 h-72 rounded-full bg-accent/5 blur-3xl -translate-y-1/2" />
+          </div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-16">
@@ -1383,7 +1376,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background/10 to-transparent z-10 pointer-events-none" />
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background/10 to-transparent z-10 pointer-events-none" />
 
-              <div className="overflow-x-auto scrollbar-hide pb-6 -mx-4 px-4 flex gap-6 snap-x snap-mandatory">
+              <div className="w-full max-w-full overflow-x-auto scrollbar-hide pb-6 px-1 flex gap-4 md:gap-6 snap-x snap-mandatory">
                 {((t.raw("studentStories.stories") as any[]) || [
                   {
                     name: "Gurpreet Kaur Dhou",
@@ -1451,7 +1444,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         {story.avatarLetter}
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h3 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors truncate">
+                        <h3 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors break-words">
                           {story.name}
                         </h3>
                         <div className="flex items-center gap-2">
@@ -1891,12 +1884,12 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
                 {/* Assistant Teaching Opportunities */}
                 <div className="group relative p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 hover:border-primary/40 hover:shadow-xl transition-all duration-500 text-center overflow-hidden">
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-bl-full translate-x-4 -translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500" />
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-primary/10 rounded-bl-full opacity-60 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                   <div className="mx-auto w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform">
                     <GraduationCap className="w-6 h-6" />
                   </div>
-                  <h4 className="font-heading font-bold text-foreground mb-2">{tWhy("assistantTitle")}</h4>
-                  <p className="text-xs text-muted-foreground">{tWhy("assistantDesc")}</p>
+                  <h4 className="font-heading font-bold text-foreground mb-2 break-words hyphens-auto min-w-0">{tWhy("assistantTitle")}</h4>
+                  <p className="text-xs text-muted-foreground break-words">{tWhy("assistantDesc")}</p>
                 </div>
 
                 {/* Global Alumni Network */}
@@ -1958,24 +1951,24 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="relative flex items-center gap-6"
+                    className="relative flex items-center gap-2.5 sm:gap-6 min-w-0"
                   >
                     {/* Time */}
-                    <div className="w-24 md:w-28 flex-shrink-0 text-right">
-                      <span className="font-heading text-lg md:text-xl font-semibold text-primary">{item.time}</span>
+                    <div className="w-20 sm:w-24 md:w-28 flex-shrink-0 text-right min-w-0">
+                      <span className="font-heading text-sm sm:text-lg md:text-xl font-semibold text-primary break-words">{item.time}</span>
                     </div>
 
                     {/* Timeline dot with pulse animation */}
                     <div className="flex-shrink-0 z-10">
                       <div
-                        className="w-4 h-4 rounded-full bg-primary animate-pulse-dot"
+                        className="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-primary animate-pulse-dot"
                         style={{ animationDelay: `${index * 0.5}s` }}
                       />
                     </div>
 
                     {/* Activity card */}
-                    <div className="flex-1 bg-card border border-border rounded-lg px-6 py-4 shadow-sm">
-                      <span className="text-foreground font-medium">{item.activity}</span>
+                    <div className="flex-1 min-w-0 bg-card border border-border rounded-lg px-3.5 sm:px-6 py-3 sm:py-4 shadow-sm">
+                      <span className="text-foreground font-medium text-xs sm:text-base break-words">{item.activity}</span>
                     </div>
                   </div>
                 ))}
@@ -4191,7 +4184,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       {card.title}
                     </h3>
 
-                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed px-4 line-clamp-6 group-hover:line-clamp-none transition-all duration-500">
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed px-4 break-words">
                       {card.text}
                     </p>
 

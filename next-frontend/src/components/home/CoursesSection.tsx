@@ -131,22 +131,22 @@ export default async function CoursesSection() {
                   </div>
 
                   {/* Content Section */}
-                  <div className="bg-muted/30 p-6">
+                  <div className="bg-muted/30 p-4 sm:p-6 min-w-0">
                     {/* Quick Info */}
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4 pb-4 border-b border-border/40">
-                      <div className="flex items-center gap-2">
-                        <Clock className="w-4 h-4 text-primary" />
-                        {course.duration}
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground mb-4 pb-4 border-b border-border/40 min-w-0">
+                      <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+                        <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary shrink-0" />
+                        <span>{course.duration}</span>
                       </div>
-                      <div className="w-px h-4 bg-border" />
-                      <div className="flex items-center gap-2">
-                        <Award className="w-4 h-4 text-primary" />
-                        {course.level}
+                      <div className="w-px h-3.5 sm:h-4 bg-border hidden min-[400px]:block" />
+                      <div className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+                        <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary shrink-0" />
+                        <span className="break-words">{course.level}</span>
                       </div>
                     </div>
 
                     {/* Course Description */}
-                    <p className="text-sm text-sidebar-foreground/80 leading-relaxed mb-6 line-clamp-2 min-h-[40px]">
+                    <p className="text-sm text-sidebar-foreground/80 leading-relaxed mb-6 min-h-[40px] break-words">
                       {course.description}
                     </p>
 

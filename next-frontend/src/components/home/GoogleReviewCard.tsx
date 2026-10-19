@@ -38,18 +38,9 @@ export function GoogleReviewCard({ review }: { review: GoogleReview }) {
       </div>
 
       {/* Review Text */}
-      <p className={`text-sm text-muted-foreground leading-relaxed ${!expanded && isLongText ? 'line-clamp-4' : ''}`}>
+      <p className="text-sm text-muted-foreground leading-relaxed break-words">
         {review.text}
       </p>
-      {isLongText && (
-        <button
-          type="button"
-          onClick={() => setExpanded(!expanded)}
-          className="text-xs text-primary hover:text-primary/80 font-medium mt-2 transition-colors"
-        >
-          {expanded ? tCommon("readLess") : tCommon("readMore")}
-        </button>
-      )}
     </div>
   );
 }

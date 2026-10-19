@@ -195,19 +195,19 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-primary-foreground/40">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-primary-foreground/40 text-center md:text-left">
             <p>© {new Date().getFullYear()} YogaGarhi. {tFooter("copyright")}</p>
-            <div className="flex items-center gap-4 text-xs">
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs text-center">
               <Link href="/privacy-policy" className="hover:text-primary-foreground transition-colors">{tFooter("privacyPolicy")}</Link>
               <span>•</span>
               <Link href="/terms-and-conditions" className="hover:text-primary-foreground transition-colors">{tFooter("termsConditions")}</Link>
               <span>•</span>
               <Link href="/refund-policy" className="hover:text-primary-foreground transition-colors">{tFooter("refundPolicy")}</Link>
             </div>
-            <div className="flex items-center gap-1">
-              <Sparkles className="h-3 w-3" />
+            <div className="flex items-center justify-center gap-1 text-center">
+              <Sparkles className="h-3 w-3 shrink-0" />
               <span>{tFooter("transformingLives") || "Transforming lives through yoga"}</span>
-              <Sparkles className="h-3 w-3" />
+              <Sparkles className="h-3 w-3 shrink-0" />
             </div>
           </div>
         </div>

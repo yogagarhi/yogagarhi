@@ -18,7 +18,7 @@ export default function HeroCTAButtons() {
         type="button"
         variant="hero"
         size="xl"
-        className="h-10 min-[375px]:h-11 sm:h-14 px-3.5 min-[375px]:px-5 sm:px-10 text-xs min-[375px]:text-sm sm:text-base"
+        className="min-h-[40px] sm:h-14 h-auto py-2 px-3.5 min-[375px]:px-5 sm:px-10 text-xs min-[375px]:text-sm sm:text-base break-words text-center leading-tight"
         onClick={() => setShowQuickEnquiry(true)}
       >
         {t("quickEnquiry")}
@@ -27,7 +27,7 @@ export default function HeroCTAButtons() {
         type="button"
         variant="heroOutline"
         size="xl"
-        className="h-10 min-[375px]:h-11 sm:h-14 px-3.5 min-[375px]:px-5 sm:px-10 text-xs min-[375px]:text-sm sm:text-base"
+        className="min-h-[40px] sm:h-14 h-auto py-2 px-3.5 min-[375px]:px-5 sm:px-10 text-xs min-[375px]:text-sm sm:text-base break-words text-center leading-tight"
         onClick={() => setShowBookingDialog(true)}
       >
         {t("bookCall")}

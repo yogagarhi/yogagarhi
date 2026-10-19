@@ -20,7 +20,7 @@ export default async function WelcomeSection() {
       style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 900px' }}
     >
       {/* Decorative Background Elements */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Lotus SVG Pattern - Top Right */}
         <svg
           className="absolute top-10 right-10 w-32 h-32 text-primary/5 animate-[spin_60s_linear_infinite]"
@@ -45,7 +45,7 @@ export default async function WelcomeSection() {
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
             {t("badge")}
           </span>
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+          <h2 className="font-heading text-2xl min-[375px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 break-words hyphens-auto">
             {t("title")}
             <span className="block text-primary mt-2">{t("titleInBali")}</span>
           </h2>
@@ -74,18 +74,18 @@ export default async function WelcomeSection() {
         </div>
 
         {/* Main Content - Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto w-full min-w-0">
           {/* Left - Video Island */}
           <WelcomeVideoIsland />
 
           {/* Right - Text Content */}
-          <div className="space-y-6 order-1 lg:order-2">
+          <div className="space-y-6 order-1 lg:order-2 w-full min-w-0">
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p className="text-lg">
                 {t("p1")}
               </p>
 
-              <div className="bg-primary/5 border border-primary/10 rounded-2xl p-6 my-6">
+              <div className="bg-primary/5 border border-primary/10 rounded-2xl p-4 sm:p-6 my-6">
                 <p className="font-heading font-bold text-foreground mb-4">{t("inTrainingTitle")}</p>
                 <ul className="space-y-3">
                   {[
@@ -114,7 +114,7 @@ export default async function WelcomeSection() {
             </div>
 
             {/* Ask Us Anything Section */}
-            <div className="mt-10 p-8 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm">
+            <div className="mt-10 p-5 sm:p-8 rounded-2xl bg-gradient-to-br from-secondary/30 to-background border border-primary/10 shadow-sm">
               <h3 className="font-heading text-2xl font-medium text-foreground mb-6">
                 {t("askAnything")}
               </h3>

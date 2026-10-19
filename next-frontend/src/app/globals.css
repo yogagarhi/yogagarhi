@@ -131,6 +131,16 @@
   h6 {
     @apply font-heading;
   }
+
+  /* Auto-hyphenation and wrapping support for long words across locales */
+  p, h1, h2, h3, h4, h5, h6, li, span, button, a {
+    overflow-wrap: break-word;
+  }
+
+  [lang="de"], [lang="nl"], [lang="ru"] {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
 }
 
 @layer utilities {

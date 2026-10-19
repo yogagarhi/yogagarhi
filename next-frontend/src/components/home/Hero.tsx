@@ -149,26 +149,26 @@ export default async function Hero() {
         <div className="max-w-md mx-auto space-y-5">
           <div className="grid grid-cols-3 gap-2 items-start">
             <div className="text-center">
-              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">500+</p>
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight break-words">500+</p>
               <p className="text-[11px] min-[380px]:text-xs opacity-80">{t("statStudents")}</p>
             </div>
             <div className="text-center">
-              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">{t("statStyle")}</p>
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight break-words">{t("statStyle")}</p>
               <p className="text-[11px] min-[380px]:text-xs opacity-80">{t("statStyleSub")}</p>
             </div>
             <div className="text-center">
-              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">{tCommon("ayurveda")}</p>
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight break-words">{tCommon("ayurveda")}</p>
               <p className="text-[11px] min-[380px]:text-xs opacity-80">{tCommon("strongBasis")}</p>
             </div>
           </div>
 
           <div className="flex items-start justify-center gap-6 min-[380px]:gap-8">
             <div className="text-center">
-              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">Yoga Alliance</p>
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight break-words">Yoga Alliance</p>
               <p className="text-[11px] min-[380px]:text-xs opacity-80">{t("statCertSub")}</p>
             </div>
             <div className="text-center">
-              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight whitespace-nowrap">{tCommon("worldsFirst")}</p>
+              <p className="font-heading text-xl min-[380px]:text-2xl font-bold leading-tight break-words">{tCommon("worldsFirst")}</p>
               <p className="text-[11px] min-[380px]:text-xs opacity-80">{tCommon("preYttcAcademy")}</p>
             </div>
           </div>
