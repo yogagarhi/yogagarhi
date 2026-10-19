@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useState, useRef, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,7 +10,9 @@ import {
   Instagram, Youtube, Sparkles, ArrowRight, Mail,
   Phone, Download, BookOpen
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 
 export default function ThankYou() {
@@ -22,30 +24,32 @@ export default function ThankYou() {
 }
 
 function ThankYouContent() {
+  const t = useTranslations("thankYou");
   const searchParams = useSearchParams();
   const type = searchParams.get('type') || 'enrollment';
 
   const [isMounted, setIsMounted] = useState(false);
   const [showConfetti, setShowConfetti] = useState(true);
   const [animationStep, setAnimationStep] = useState(0);
+  const leadFiredRef = useRef(false);
 
   const getMessage = () => {
     switch (type) {
       case 'enquiry':
-        return "We have received your enquiry. Our team will reach out to you within 24 hours with the information you need.";
+        return t("messages.enquiry");
       case 'booking':
-        return "Your call has been scheduled. Our team will reach out to you at the selected time.";
+        return t("messages.booking");
       case 'webinar':
-        return "You have successfully registered for the webinar. Check your email for the join link and details.";
+        return t("messages.webinar");
       case 'syllabus':
-        return "The syllabus guide is on its way to your inbox. Please check your email.";
+        return t("messages.syllabus");
       case 'manual':
-        return "Your free manual is being sent to your email. We hope it helps your practice!";
+        return t("messages.manual");
       case 'guide-prep':
-        return "Your \"Before You Join\" preparation guide is on its way to your inbox. Please check your email (and spam folder) within the next few minutes.";
+        return t("messages.guidePrep");
       case 'enrollment':
       default:
-        return "We have received your enrollment request. Our team will reach out to you within 24 hours with next steps.";
+        return t("messages.enrollment");
     }
   };
 
@@ -60,13 +64,20 @@ function ThankYouContent() {
       setTimeout(() => setShowConfetti(false), 5000),
     ];
     
-    // Check sessionStorage to prevent duplicate conversions
-    if (typeof window !== 'undefined') {
-      const conversionFired = sessionStorage.getItem(`conversion_${type}_fired`);
+    // Check ref and sessionStorage to prevent duplicate conversions
+    if (typeof window !== 'undefined' && !leadFiredRef.current) {
+      const storageKey = `conversion_${type}_fired`;
+      const conversionFired = sessionStorage.getItem(storageKey);
       if (!conversionFired) {
+        leadFiredRef.current = true;
         // Generate a unique transaction ID for deduplication
-        const transactionId = crypto.randomUUID ? crypto.randomUUID() : `txn_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+        const transactionId = (typeof crypto !== 'undefined' && crypto.randomUUID)
+          ? crypto.randomUUID()
+          : `txn_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
         
+        sessionStorage.setItem(storageKey, 'true');
+        sessionStorage.setItem(`conversion_${type}_txnid`, transactionId);
+
         // Push to Google Tag Manager dataLayer
         (window as any).dataLayer = (window as any).dataLayer || [];
         (window as any).dataLayer.push({ 
@@ -74,14 +85,49 @@ function ThankYouContent() {
           lead_type: type,
           transaction_id: transactionId
         });
-        
-        sessionStorage.setItem(`conversion_${type}_fired`, 'true');
-        sessionStorage.setItem(`conversion_${type}_txnid`, transactionId);
+
+        // Also fire gtag directly if present
+        if (typeof (window as any).gtag === 'function') {
+          (window as any).gtag('event', 'generate_lead', {
+            event_category: 'lead',
+            event_label: type,
+            transaction_id: transactionId
+          });
+        }
+      } else {
+        leadFiredRef.current = true;
       }
     }
 
     return () => timers.forEach(clearTimeout);
   }, [type]);
+
+  const nextSteps = [
+    {
+      icon: Mail,
+      title: t("whatNext.step1Title"),
+      description: t("whatNext.step1Desc"),
+      time: t("whatNext.step1Time")
+    },
+    {
+      icon: Phone,
+      title: t("whatNext.step2Title"),
+      description: t("whatNext.step2Desc"),
+      time: t("whatNext.step2Time")
+    },
+    {
+      icon: Download,
+      title: t("whatNext.step3Title"),
+      description: t("whatNext.step3Desc"),
+      time: t("whatNext.step3Time")
+    },
+    {
+      icon: Calendar,
+      title: t("whatNext.step4Title"),
+      description: t("whatNext.step4Desc"),
+      time: t("whatNext.step4Time")
+    },
+  ];
 
   return (
     <Layout>
@@ -156,7 +202,7 @@ function ThankYouContent() {
             className={`font-heading text-4xl md:text-6xl font-bold text-primary-foreground mb-6 transition-all duration-700 ${animationStep >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
           >
-            Namaste! 🙏
+            {t("namaste")}
           </h1>
 
           {/* Subheading */}
@@ -164,7 +210,7 @@ function ThankYouContent() {
             className={`text-xl md:text-2xl text-primary-foreground/90 mb-4 transition-all duration-700 ${animationStep >= 3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
           >
-            Your journey towards transformation has begun
+            {t("subheading")}
           </p>
 
           {/* Message */}
@@ -181,10 +227,10 @@ function ThankYouContent() {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-            What Happens Next?
+            {t("whatNext.heading")}
           </h2>
           <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
-            Here&apos;s what you can expect in the coming days
+            {t("whatNext.sub")}
           </p>
 
           <div className="max-w-4xl mx-auto">
@@ -193,32 +239,7 @@ function ThankYouContent() {
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block" />
 
               {/* Steps */}
-              {[
-                {
-                  icon: Mail,
-                  title: "Confirmation Email",
-                  description: "Check your inbox for a confirmation email with all the details of your enrollment.",
-                  time: "Within minutes"
-                },
-                {
-                  icon: Phone,
-                  title: "Personal Call",
-                  description: "Our enrollment coordinator will call you to answer any questions and discuss your goals.",
-                  time: "Within 24 hours"
-                },
-                {
-                  icon: Download,
-                  title: "Pre-Training Materials",
-                  description: "Receive your preparation guide, reading list, and everything you need before arrival.",
-                  time: "Within 48 hours"
-                },
-                {
-                  icon: Calendar,
-                  title: "Travel Planning",
-                  description: "We'll help you with visa guidance, travel tips, and airport pickup arrangements.",
-                  time: "1 week before"
-                },
-              ].map((step, index) => (
+              {nextSteps.map((step, index) => (
                 <div
                   key={index}
                   className="relative flex gap-6 mb-12 last:mb-0"
@@ -255,10 +276,10 @@ function ThankYouContent() {
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-            While You Wait...
+            {t("whileYouWait.heading")}
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            Explore more about YogaGarhi and prepare for your journey
+            {t("whileYouWait.sub")}
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -268,10 +289,10 @@ function ThankYouContent() {
                 <Instagram className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                Follow Our Journey
+                {t("whileYouWait.card1Title")}
               </h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Daily inspiration, behind-the-scenes, and student transformations
+                {t("whileYouWait.card1Desc")}
               </p>
               <a
                 href="https://instagram.com/yogagarhi"
@@ -279,7 +300,7 @@ function ThankYouContent() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
               >
-                @yogagarhi <ArrowRight className="w-4 h-4" />
+                {t("whileYouWait.card1Link")} <ArrowRight className="w-4 h-4" />
               </a>
             </div>
 
@@ -289,10 +310,10 @@ function ThankYouContent() {
                 <Youtube className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                Watch Testimonials
+                {t("whileYouWait.card2Title")}
               </h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Hear from our graduates about their life-changing experiences
+                {t("whileYouWait.card2Desc")}
               </p>
               <a
                 href="https://youtube.com/@yogagarhi"
@@ -300,7 +321,7 @@ function ThankYouContent() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
               >
-                Watch Videos <ArrowRight className="w-4 h-4" />
+                {t("whileYouWait.card2Link")} <ArrowRight className="w-4 h-4" />
               </a>
             </div>
 
@@ -310,16 +331,16 @@ function ThankYouContent() {
                 <BookOpen className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                Read Our Blog
+                {t("whileYouWait.card3Title")}
               </h3>
               <p className="text-muted-foreground text-sm mb-4">
-                Articles on yoga philosophy, practice tips, and spiritual growth
+                {t("whileYouWait.card3Desc")}
               </p>
               <Link
                 href="/blogs"
                 className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
               >
-                Explore Blog <ArrowRight className="w-4 h-4" />
+                {t("whileYouWait.card3Link")} <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
@@ -330,23 +351,23 @@ function ThankYouContent() {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading text-2xl font-bold text-foreground mb-4">
-            Questions? We&apos;re Here to Help
+            {t("help.heading")}
           </h2>
           <p className="text-muted-foreground mb-8">
-            Feel free to reach out anytime
+            {t("help.sub")}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" asChild>
               <a href="https://wa.me/917895350563">
                 <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Us
+                {t("help.whatsapp")}
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <a href="mailto:yogagarhi@gmail.com">
                 <Mail className="w-5 h-5 mr-2" />
-                Email Us
+                {t("help.email")}
               </a>
             </Button>
           </div>
@@ -354,7 +375,7 @@ function ThankYouContent() {
           <div className="mt-12">
             <Button variant="ghost" asChild>
               <Link href="/">
-                ← Back to Home
+                {t("help.backHome")}
               </Link>
             </Button>
           </div>

@@ -2865,13 +2865,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             {/* Header */}
             <div className="text-center mb-12">
               <p className="text-primary font-medium tracking-widest uppercase text-sm mb-3">
-                Behind the Scenes
+                {tCommon("instagram.badge")}
               </p>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Follow Our Journey
+                {tCommon("instagram.heading")}
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                Daily moments of transformation, wisdom, and community from Bali
+                {tCommon("instagram.sub")}
               </p>
             </div>
 
@@ -2930,7 +2930,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     @yogagarhi
                   </span>
                   <span className="text-muted-foreground group-hover:text-primary-foreground/80 transition-colors text-sm">
-                    Follow us
+                    {tCommon("instagram.followUs")}
                   </span>
                 </div>
               </a>

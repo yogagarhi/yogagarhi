@@ -104,7 +104,32 @@
     "save": "Ahorra",
     "getFreeManual": "Manual gratuito",
     "revealYogicEnergy": "Descubre tu energía yóguica",
-    "freeWebinar": "Webinario gratuito"
+    "freeWebinar": "Webinario gratuito",
+    "accommodationExtra": {
+      "featuresTitle": "Alojamiento",
+      "featuresSub": "Un sereno retiro de yoga en el corazón de la sagrada región de Ubud en Bali",
+      "feat1": "10 hermosas cascadas a menos de 10 km",
+      "feat2": "Bosque privado con cascada propia en las instalaciones",
+      "feat3": "Tranquilas caminatas entre arrozales dentro del recinto",
+      "feat4": "A solo 15 km del centro histórico de Ubud",
+      "glimpses": "Imágenes de tu estancia",
+      "allRooms": "Todas las habitaciones incluyen",
+      "wifi": "Wi-Fi gratis",
+      "hotWater": "Agua caliente",
+      "acFan": "Aire acondicionado / Ventilador",
+      "cleaning": "Limpieza diaria",
+      "bed1": "cama",
+      "bedsMore": "camas",
+      "courseOnly": "Solo curso",
+      "mostPopular": "Más popular",
+      "premium": "Premium"
+    },
+    "instagram": {
+      "badge": "Detrás de Escena",
+      "heading": "Sigue Nuestro Viaje",
+      "sub": "Momentos diarios de transformación, sabiduría y comunidad desde Bali",
+      "followUs": "Síguenos"
+    }
   },
   "footer": {
     "tagline": "Transfórmate desde adentro",
@@ -1319,5 +1344,2948 @@
     "smallGroupBadge": "8–10 alumnos",
     "smallGroupTitle": "Grupos reducidos",
     "smallGroupDesc": "Garantía de atención individualizada y cuidado constante."
+  },
+  "thankYou": {
+    "metaTitle": "Gracias | YogaGarhi",
+    "metaDesc": "Gracias por tu solicitud de inscripción en YogaGarhi.",
+    "namaste": "Namaste! 🙏",
+    "subheading": "Tu viaje de transformación ha comenzado",
+    "messages": {
+      "enquiry": "Hemos recibido tu consulta. Nuestro equipo se pondrá en contacto contigo en un plazo de 24 horas con la información que necesitas.",
+      "booking": "Tu llamada ha sido programada. Nuestro equipo se comunicará contigo en el horario seleccionado.",
+      "webinar": "Te has registrado con éxito en el seminario web. Revisa tu correo electrónico para obtener el enlace de acceso y los detalles.",
+      "syllabus": "La guía del plan de estudios está en camino a tu bandeja de entrada. Por favor, revisa tu correo electrónico.",
+      "manual": "Tu manual gratuito ha sido enviado a tu correo. ¡Esperamos que sea de gran ayuda para tu práctica!",
+      "guidePrep": "Tu guía de preparación \"Antes de unirte\" está en camino a tu bandeja de entrada. Revisa tu correo (y la carpeta de spam) en unos minutos.",
+      "enrollment": "Hemos recibido tu solicitud de inscripción. Nuestro equipo se pondrá en contacto contigo en un plazo de 24 horas con los siguientes pasos."
+    },
+    "whatNext": {
+      "heading": "¿Qué ocurre a continuación?",
+      "sub": "Esto es lo que puedes esperar en los próximos días",
+      "step1Title": "Correo de confirmación",
+      "step1Desc": "Revisa tu bandeja de entrada para ver el correo de confirmación con todos los detalles de tu inscripción.",
+      "step1Time": "En pocos minutos",
+      "step2Title": "Llamada personalizada",
+      "step2Desc": "Nuestro coordinador de admisiones te llamará para resolver dudas y conversar sobre tus objetivos.",
+      "step2Time": "En 24 horas",
+      "step3Title": "Materiales preparatorios",
+      "step3Desc": "Recibe tu guía de preparación, lecturas recomendadas y todo lo que necesitas antes de tu llegada.",
+      "step3Time": "En 48 horas",
+      "step4Title": "Planificación del viaje",
+      "step4Desc": "Te ayudaremos con orientación para visados, consejos de viaje y traslados desde el aeropuerto.",
+      "step4Time": "1 semana antes"
+    },
+    "whileYouWait": {
+      "heading": "Mientras esperas...",
+      "sub": "Descubre más sobre YogaGarhi y prepárate para tu experiencia",
+      "card1Title": "Sigue nuestro viaje",
+      "card1Desc": "Inspiración diaria, el día a día en el ashram y transformaciones de los alumnos",
+      "card1Link": "@yogagarhi",
+      "card2Title": "Ver testimonios",
+      "card2Desc": "Escucha a nuestros graduados compartir sus experiencias que cambiaron sus vidas",
+      "card2Link": "Ver vídeos",
+      "card3Title": "Leer nuestro blog",
+      "card3Desc": "Artículos sobre filosofía del yoga, consejos prácticos y crecimiento espiritual",
+      "card3Link": "Explorar blog"
+    },
+    "help": {
+      "heading": "¿Tienes preguntas? Estamos aquí para ayudarte",
+      "sub": "No dudes en contactarnos en cualquier momento",
+      "whatsapp": "Escríbenos por WhatsApp",
+      "email": "Envíanos un correo",
+      "backHome": "← Volver al inicio"
+    }
+  },
+  "course100": {
+    "metaTitle": "Formación de Profesores de Yoga de 100 Horas en Bali | Yoga Alliance",
+    "metaDesc": "Profundiza tu práctica con la Formación de Profesores de Yoga de 100 Horas en Ubud, Bali. Programa para principiantes y comidas orgánicas. ¡Reserva hoy!",
+    "heroTitle": "Formación de Profesores de Yoga de 100 Horas en Bali",
+    "heroSub": "Sumérgete en un viaje transformador de 12 días en Gianyar, Bali. Linaje del Himalaya, grupos reducidos de 8–10 alumnos, todo incluido desde $1,149 USD.",
+    "quickInfo": {
+      "course": "Curso",
+      "courseVal": "YTTC 100 Horas",
+      "duration": "Duración",
+      "durationVal": "12 Days",
+      "style": "Estilo",
+      "styleVal": "Yoga Multi-Style",
+      "level": "Nivel",
+      "levelVal": "Principiante a Intermedio",
+      "certification": "Certificación",
+      "certificationVal": "Certificado Yoga Alliance Formación Continua / Fundamentos 100H",
+      "startingFrom": "$1,149 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Ahorra",
+      "earlyBirdDiscount": "Ahorra $250 con precio anticipado"
+    },
+    "highlights": {
+      "smallGroups": "Grupos reducidos (máx. 8–10)",
+      "smallGroupsSub": "Atención individual",
+      "preYttc": "Apoyo antes de comenzar",
+      "preYttcSub": "Preparación y guía",
+      "mentorship": "Mentoría post-graduación",
+      "mentorshipSub": "1 año de apoyo continuo",
+      "goodieBag": "Kit de bienvenida de regalo",
+      "goodieBagSub": "Esenciales de yoga"
+    },
+    "storyTitle": "Transforma tu práctica en sabiduría viva",
+    "storyP1": "Nuestra formación de profesores de yoga de 200 horas en Bali es una inmersión completa orientada a practicantes que buscan profundidad genuina en lugar de posturas mecánicas. Ubicado en el tranquilo pueblo de Gianyar, a solo 15 minutos de Ubud, YogaGarhi ofrece un refugio sereno lejos del turismo masivo.",
+    "storyP2": "A lo largo de 24 días estudiarás Hatha clásico, Vinyasa Flow, la serie Ashtanga Primary y alineación de Iyengar junto con anatomía aplicada, filosofía, pranayama y meditación. Con un cupo riguroso de 8–10 alumnos, nuestros maestros del Himalaya ofrecen un acompañamiento íntimo a cada persona.",
+    "watchVideoStories": "Ver vídeos y testimonios de estudiantes",
+    "videoBannerTitle": "Reserva una llamada. Conoce la escuela. Mira tu habitación. Mira la shala.",
+    "whyYogaGarhiBox": {
+      "badge": "Por qué elegir YogaGarhi",
+      "heading": "Linaje genuino del Himalaya en un ashram íntimo en Bali",
+      "sub": "Nos dedicamos a practicantes comprometidos en vez de cursos masivos impersonales. Esto es lo que distingue nuestra formación de 200 horas:",
+      "p1Title": "Máximo 8–10 alumnos por grupo",
+      "p1Highlight": "Enfoque personalizado",
+      "p1Desc": "Grupos reducidos que aseguran atención directa, ajustes físicos adecuados y escucha permanente.",
+      "p2Title": "Entrenamiento online Pre-TTC gratuito",
+      "p2Highlight": "Prepárate con confianza",
+      "p2Desc": "Curso preparatorio antes de tu viaje a Bali para fortalecer tu cuerpo y tus bases teóricas.",
+      "p3Title": "1 año de mentoría tras la graduación",
+      "p3Highlight": "Comunidad duradera",
+      "p3Desc": "Acompañamiento continuo, asesoría en tus secuencias y apoyo profesional mucho después de terminar tu estancia.",
+      "p4Title": "Repetición del curso gratis de por vida",
+      "p4Highlight": "Regreso sin matrícula",
+      "p4Desc": "Regresa gratis a futuras formaciones de YogaGarhi para actualizar tus conocimientos o colaborar como asistente.",
+      "pkgBadge": "Paquetes con alojamiento (24 días / 23 noches) y opción de solo formación",
+      "saveEarlyBird": "Ahorra $300 con precio anticipado",
+      "tuitionFrom": "Solo formación desde $999 USD | Residencial desde $1,750 USD",
+      "breakdown": "Solo formación: $999 • Habitación triple: $1,750 • Habitación doble: $1,899 • Habitación privada: $2,499",
+      "checkAvailability": "Consultar disponibilidad",
+      "bookFreeCall": "Reservar videollamada gratuita"
+    },
+    "hoursStructure": {
+      "badge": "Horas lectivas",
+      "heading": "Cómo se estructuran las 200 horas",
+      "sub": "Una distribución equilibrada entre contacto directo, alineación práctica y estudio personal conforme a los criterios de Yoga Alliance.",
+      "contactHours": "Horas de contacto directo",
+      "contactHoursDesc": "Instrucción directa con maestros principales en asanas, alineación, anatomía y filosofía.",
+      "selfStudy": "Autoestudio y práctica",
+      "selfStudyDesc": "Lecturas recomendadas, diario reflexivo, práctica entre compañeros y diseño de clases.",
+      "totalCert": "Total de certificación",
+      "totalCertDesc": "Cumple y supera los estándares RYT 200 de Yoga Alliance.",
+      "hoursUnit": "Horas"
+    },
+    "syllabus": {
+      "heading": "Plan de estudios y temario",
+      "sub": "Un temario exigente y equilibrado que armoniza las escrituras tradicionales con la biomecánica actual.",
+      "tab1": "Hatha y Vinyasa",
+      "tab2": "Ashtanga e Iyengar",
+      "tab3": "Pranayama y Meditación",
+      "tab4": "Anatomía y Fisiología",
+      "tab5": "Filosofía y Ética",
+      "tapMore": "Toca para ver más",
+      "hoverMore": "Pasa el cursor para ver más",
+      "takeaway": "Lo que integras",
+      "carryHome": "Para llevarte a casa",
+      "careerImpact": "Impacto en tu enseñanza:",
+      "cards": [
+        {
+          "title": "Posturas de Ashtanga Yoga",
+          "content": "Secuencia completa de la primera serie de Ashtanga Yoga. Progresión semanal guiada por Saludos al Sol A y B, posturas de pie, sentadas y práctica estilo Mysore."
+        },
+        {
+          "title": "Hatha y Vinyasa Flow",
+          "content": "Serie Pawanmuktasana, variantes de Surya Namaskar, posturas de pie y sentadas, extensiones hacia atrás, flexiones hacia adelante, inversiones y metodología de secuenciación."
+        },
+        {
+          "title": "Filosofía del Yoga",
+          "content": "Introducción a los Yoga Sutras de Patanjali, los ocho pasos del Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna e historias inspiradoras de maestros yoguis."
+        },
+        {
+          "title": "Pranayama y Respiración",
+          "content": "Técnicas completas de respiración: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali y Sheetkari."
+        },
+        {
+          "title": "Anatomía y Fisiología",
+          "content": "Planos de movimiento, protección articular, anatomía de tobillo, rodilla, columna y hombros, biomecánica respiratoria, fisiología muscular y sistema nervioso."
+        },
+        {
+          "title": "Metodología de Enseñanza",
+          "content": "Secuenciación de clases, ajustes y correcciones, adaptación a diversos niveles, uso de la voz, preparación mental, demostración y planificación didáctica."
+        },
+        {
+          "title": "Meditación y Mantras",
+          "content": "Diversas técnicas de meditación, canto de mantras védicos, Trataka, meditación dinámica de Osho, Nada Brahma, Antar Mouna y cultivo del silencio interior."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga enfocado en la precisión anatómica y alineación mediante accesorios como bloques, cinturones y mantas para perfeccionar la postura y prevenir lesiones."
+        },
+        {
+          "title": "Principios de Alineación",
+          "content": "Bases de una práctica segura: alineación articular, patrones de activación muscular y biomecánica funcional para fortalecer y proteger el cuerpo."
+        },
+        {
+          "title": "Bandhas (Cierres Energéticos)",
+          "content": "Dominio de Mula, Uddiyana y Jalandhara Bandha para encauzar el flujo de prana, tonificar el núcleo y alcanzar una mayor profundidad meditativa."
+        },
+        {
+          "title": "Mudras (Gestos Sagrados)",
+          "content": "Gestos sagrados de manos y cuerpo que canalizan la energía vital, agudizan el enfoque y conectan con planos elevados de consciencia durante la práctica."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Horario diario en el ashram",
+      "sub": "Un ritmo diario armónico entre práctica intensa, estudio filosófico, comidas sanas y descanso.",
+      "time1": "06:00",
+      "act1": "Despertar y purificación matinal",
+      "time2": "06:30",
+      "act2": "Pranayama, cantos y meditación",
+      "time3": "07:30",
+      "act3": "Práctica matinal de asanas (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Desayuno sátvico nutritivo",
+      "time5": "10:00",
+      "act5": "Filosofía del yoga y estudio de textos",
+      "time6": "12:00",
+      "act6": "Almuerzo saludable y descanso",
+      "time7": "15:00",
+      "act7": "Anatomía aplicada y biomecánica",
+      "time8": "16:30",
+      "act8": "Metodología docente y taller de alineación",
+      "time9": "18:00",
+      "act9": "Práctica vespertina (Ashtanga / Yin / Restaurativo)",
+      "time10": "19:30",
+      "act10": "Cena sátvica",
+      "time11": "21:00",
+      "act11": "Estudio personal, silencio y descanso",
+      "beyondTheMat": "Más allá de la esterilla",
+      "badge": "Rutina diaria",
+      "wakeUp": "Despertar y purificación matinal",
+      "morningPranayama": "Pranayama y meditación",
+      "morningAsana": "Práctica matinal de asanas (Hatha / Vinyasa)",
+      "breakfast": "Desayuno sátvico saludable",
+      "philosophyClass": "Filosofía del yoga y estudio de textos",
+      "lunch": "Almuerzo nutritivo y descanso",
+      "anatomyClass": "Anatomía aplicada y fisiología",
+      "methodologyClass": "Metodología docente y clínica de alineación",
+      "eveningAsana": "Práctica vespertina (Ashtanga / Yin / Restaurativo)",
+      "dinner": "Cena sátvica",
+      "selfStudy": "Estudio personal, silencio y descanso"
+    },
+    "inclusions": {
+      "heading": "Qué incluye tu formación",
+      "sub": "Todo dispuesto para asegurar una experiencia profunda y libre de preocupaciones.",
+      "incAccom": "23 noches de estancia en el ashram",
+      "incMeals": "3 comidas sátvicas recién elaboradas al día (vegetariano/vegano)",
+      "incCert": "Certificado Yoga Alliance RYT 200 tras completar el curso",
+      "incManuals": "Manuales oficiales de la formación, cuadernos y materiales de estudio",
+      "incKit": "Esterilla de yoga y accesorios de apoyo incluidos en la escuela",
+      "incExcursions": "Excursiones culturales sagradas (templo del agua, arrozales, danza balinesa)",
+      "incCeremonies": "Ceremonias tradicionales de fuego de inicio y clausura (Agni Hotra)",
+      "incPickup": "Recogida en el aeropuerto de Denpasar (DPS) en la fecha oficial de llegada",
+      "incPre": "Módulo preparatorio Pre-TTC online incluido",
+      "incRepeat": "Posibilidad de repetir el curso de por vida (sin pagar matrícula)",
+      "notIncHeading": "No incluye",
+      "notIncFlights": "Billetes de avión internacionales o domésticos",
+      "notIncVisa": "Tasas de visado para Indonesia",
+      "notIncInsurance": "Seguro médico y de viaje personal"
+    },
+    "pricing": {
+      "heading": "Habitaciones y precios",
+      "sub": "Precios claros y todo incluido, sin sorpresas ni costes ocultos.",
+      "tuitionOnly": "Paquete solo formación",
+      "tuitionOnlyDesc": "Matrícula, comidas completas, material pedagógico y certificación. Alojamiento fuera del ashram.",
+      "triple": "Habitación triple compartida",
+      "tripleDesc": "Habitación amplia con aire acondicionado compartida con dos compañeros, baño privado y balcón.",
+      "double": "Habitación doble compartida",
+      "doubleDesc": "Habitación cómoda para dos personas con baño privado, aire acondicionado y vistas al jardín o piscina.",
+      "private": "Habitación privada Deluxe",
+      "privateDesc": "Espacio privado con cama matrimonial grande, baño privado, aire acondicionado y balcón exclusivo.",
+      "earlyBird": "Descuento anticipado",
+      "save300": "Ahorra $300 USD",
+      "earlyBirdPrice": "Precio anticipado",
+      "tuitionFees": "Tarifas y Habitaciones (100 Horas)",
+      "tripleSharing": "Habitación Triple ($1,149)",
+      "doubleSharing": "Habitación Doble ($1,349)",
+      "privateRoom": "Habitación Privada ($1,649)",
+      "choosePackage": "Elige tu paquete",
+      "reserveSpot": "Reserva tu plaza",
+      "saveUSD": "Ahorra $300 USD",
+      "residentialDuration": "12 días de formación residencial en Gianyar, Bali"
+    },
+    "ethics": {
+      "codeOfConduct": "Código de conducta",
+      "refundCancellation": "Reembolso y cancelación",
+      "ryt200Title": "Profesor de Yoga Registrado (RYT 200)",
+      "viewRegistry": "Consultar registro de escuelas de Yoga Alliance"
+    },
+    "faqsHeading": "Preguntas frecuentes",
+    "faqs": [
+      {
+        "question": "¿Es adecuada esta formación de yoga de 200 horas para principiantes?",
+        "answer": "Sí. El plan de estudios acompaña al practicante desde los fundamentos hasta el nivel intermedio. Además, cada estudiante inscrito recibe acceso a nuestra preparación previa online para adquirir fuerza, flexibilidad y entendimiento postural antes de viajar a Bali."
+      },
+      {
+        "question": "¿Qué estilos de yoga se imparten en este TTC de 200 horas?",
+        "answer": "Estudiarás yoga multi-style basado en la tradición genuina del Himalaya: Hatha Yoga clásico, Vinyasa Flow dinámico, serie Ashtanga Primary (según K. Pattabhi Jois) y alineación minuciosa inspirada en Iyengar."
+      },
+      {
+        "question": "¿Cuál es el horario típico de un día de formación?",
+        "answer": "Un día habitual en YogaGarhi transcurre con este orden estructurado: 06:00 Despertar; 06:30 Pranayama y meditación; 07:30 Hatha y Vinyasa; 09:00 Desayuno; 10:00 Filosofía del yoga; 12:00 Almuerzo y descanso; 15:00 Anatomía aplicada; 16:30 Alineación y metodología docente; 18:00 Ashtanga e Iyengar con yogaterapia; 19:30 Cena; 21:00 Autoestudio y descanso."
+      },
+      {
+        "question": "¿Cuántos alumnos integran cada grupo en YogaGarhi Bali?",
+        "answer": "Mantenemos un límite estricto de 8–10 alumnos como máximo por grupo. Esto asegura atención personalizada, correcciones posturales detalladas y un contacto cercano con los maestros formadores."
+      },
+      {
+        "question": "¿Qué titulación obtendré y qué validez tiene internacionalmente?",
+        "answer": "Al completar con éxito las horas lectivas y evaluaciones prácticas, obtienes el certificado de Registered Yoga Teacher (RYT 200) de Yoga Alliance, que te avala para impartir clases profesionalmente en cualquier país del mundo."
+      },
+      {
+        "question": "¿Cuáles son las modalidades de habitación y sus precios?",
+        "answer": "Contamos con cuatro opciones claras: Solo formación ($999 USD, precio anticipado frente a $1,299 habitual; comidas y habitación no incluidas), Habitación triple ($1,750 USD frente a $2,050), Habitación doble ($1,899 USD frente a $2,199) y Habitación privada ($2,499 USD frente a $2,799). Todos los paquetes residenciales contemplan 23 noches de estancia y 3 comidas diarias."
+      },
+      {
+        "question": "¿Qué servicios están contemplados en el precio del curso?",
+        "answer": "En los paquetes residenciales se incluye la estancia de 23 noches (baño privado, agua caliente, climatización, Wi-Fi), 3 comidas vegetarianas completas al día, infusiones y agua depurada, manuales oficiales, esterillas y apoyos, traslado desde el aeropuerto de DPS, masaje balinés, visitas culturales, formación preparatoria online, libro de secuencias, título Yoga Alliance RYT 200 y repetición del curso de por vida. En la modalidad solo formación ($999 USD), no se incluyen alojamiento ni manutención."
+      },
+      {
+        "question": "¿Cuál es la política aplicable a cancelaciones y reembolsos?",
+        "answer": "Puedes aplazar tu fecha sin recargo dentro de los 12 meses siguientes o transferir tu reserva a otra persona. Si la escuela anula una promoción, se reintegra el 100% abonado, existiendo además una garantía de prueba durante el Día 1. Dado el cupo limitado, los importes no son reembolsables una vez iniciado el Día 1."
+      }
+    ],
+    "hero": {
+      "badge": "Certificado Yoga Alliance RYT 200",
+      "h1": "Formación de Profesores de Yoga de 100 Horas en Bali",
+      "sub": "Una inmersión de 12 días guiada con el corazón en Gianyar, Bali. Auténtico linaje del Himalaya, corrección personalizada y vida yóguica desde $1,149 USD.",
+      "quickDuration": "12 Días",
+      "quickLevel": "Principiante a Intermedio",
+      "quickCert": "Certificado Yoga Alliance Formación Continua / Fundamentos 100H",
+      "quickLang": "Inglés",
+      "quickBatch": "8–10 alumnos",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Reservar plaza",
+      "btnBrochure": "Descargar programa",
+      "btnCounselor": "Hablar con un asesor"
+    },
+    "overview": {
+      "heading": "Bienvenido a YogaGarhi Bali",
+      "story": "Nuestra formación de profesores de yoga de 200 horas en Bali es un curso integral para niveles principiante e intermedio orientado a formar profesores seguros o a comprender el yoga para la vida diaria. YogaGarhi se encuentra en Gianyar, a unos 15 km de Ubud, en un apacible entorno natural. Durante el curso practicarás asanas a diario, aprenderás alineación anatómica, y estudiarás pranayama, meditación, filosofía y metodología docente.",
+      "p1": "Nuestra formación de yoga de 100 horas en Bali está diseñada para profundizar en la práctica en un entorno natural y sereno en Gianyar (a 15 km de Ubud).",
+      "p2": "Ideal si buscas más que clases convencionales pero aún no estás listo para 200 horas completas. Aprende alineación postural, pranayama y filosofía."
+    },
+    "curriculum": {
+      "badge": "Módulos del plan de estudios",
+      "heading": "Desglose del programa y temas de estudio",
+      "sub": "Haz clic en cada módulo para explorar temas detallados, técnicas prácticas y bases conceptuales.",
+      "modules": {
+        "asana": "Práctica de asanas y alineación",
+        "pranayama": "Pranayama y energía sutil",
+        "philosophy": "Filosofía del yoga y estilo de vida",
+        "anatomy": "Anatomía y fisiología",
+        "methodology": "Metodología docente y práctica",
+        "meditation": "Meditación y atención plena",
+        "iyengar": "Bases de Yoga Iyengar y soportes",
+        "vinyasa": "Secuenciación de Vinyasa Flow",
+        "hatha": "Hatha Yoga clásico y tradicional"
+      },
+      "detailedModules": [
+        {
+          "title": "Posturas de Ashtanga Yoga",
+          "items": [
+            "Serie primaria completa de Ashtanga por K. Pattabhi Jois",
+            "Semana 1: Introducción y Saludos al Sol A y B",
+            "Semana 2: Posturas de pie y uso de accesorios",
+            "Semana 3: Posturas sentadas y posturas finales",
+            "Semana 4: Estilo Mysore y práctica de enseñanza"
+          ]
+        },
+        {
+          "title": "Filosofía del Yoga",
+          "items": [
+            "Yoga Sutras completos de Patanjali",
+            "Las ocho ramas del Ashtanga Yoga",
+            "Pancha-Vayus y Panchakoshas",
+            "Sattva, Rajas y Tamas (Triguna)",
+            "Introducción a los Vedas",
+            "Historias inspiradoras de grandes maestros yoguis"
+          ]
+        },
+        {
+          "title": "Prácticas de Respiración Pranayama",
+          "items": [
+            "Técnicas completas de pranayama",
+            "Las seis prácticas de purificación Shatkarma",
+            "Respiración avanzada: Sheetali, Sheetkari",
+            "Kumbhaka (retención de la respiración)",
+            "Integración consciente con la práctica de asanas"
+          ]
+        },
+        {
+          "title": "Recitación de Sonidos Sagrados y Mantras",
+          "items": [
+            "Colección completa de mantras tradicionales",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Shloka a Patanjali)",
+            "Práctica diaria de canto de mantras"
+          ]
+        },
+        {
+          "title": "Anatomía y Fisiología",
+          "items": [
+            "Estudio completo de los sistemas corporales",
+            "Fisiología de músculos y articulaciones",
+            "Sistema respiratorio y nervioso",
+            "Nutrición y sistema digestivo",
+            "Talleres prácticos sobre diferentes asanas"
+          ]
+        },
+        {
+          "title": "Metodología de Enseñanza",
+          "items": [
+            "Secuenciación integral de clases de yoga",
+            "Principios de demostración y observación",
+            "Preparación mental y emocional",
+            "Planificación estructurada de sesiones de clase",
+            "Prácticas docentes y evaluaciones guiadas"
+          ]
+        },
+        {
+          "title": "Meditación y Bandhas",
+          "items": [
+            "Meditación dinámica de Osho",
+            "Meditación Nada Brahma",
+            "Antar Mouna y Ajapa Japa",
+            "Dominio de los cuatro Bandhas principales",
+            "Integración con asanas y pranayama"
+          ]
+        },
+        {
+          "title": "Arte de la Alineación y Ajustes",
+          "items": [
+            "Biomecánica y alineación funcional de posturas clásicas",
+            "Metodología de indicaciones verbales y ajustes táctiles seguros",
+            "Comprensión de variaciones anatómicas individuales",
+            "Estrategias de modificación con bloques y cinturones"
+          ]
+        },
+        {
+          "title": "Práctica Clásica de Hatha Yoga",
+          "items": [
+            "Estudio de principios tradicionales de Hatha y posturas sostenidas",
+            "Secuenciación Hatha: calentamiento, postura cumbre y contraposturas",
+            "Equilibrio de energías solar (Ha) y lunar (Tha)",
+            "Integración de Bandhas y Mudras en posturas estáticas"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga y Alineación de Precisión",
+          "items": [
+            "Alineación metódica con bloques, correas y mantas",
+            "Posicionamiento geométrico preciso de pelvis y columna",
+            "Preparación segura para posturas invertidas",
+            "Secuencias restaurativas con soportes terapéuticos"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow y Secuenciación Dinámica",
+          "items": [
+            "Estructura inteligente: calentamiento, postura pico y relajación",
+            "Transiciones fluidas y saltos en armonía con la respiración",
+            "Diseño de clases temáticas según objetivos y niveles",
+            "Ritmo, modulación del tempo y sostenimiento del espacio"
+          ]
+        },
+        {
+          "title": "Clases y Talleres Especiales",
+          "items": [
+            "Sesiones de Sanación con Sonido (Sound Healing)",
+            "Experiencia de Yoga en la playa de Bali",
+            "Yin Yoga y Acro Yoga",
+            "Fundamentos de Ayurveda",
+            "Ceremonia de fuego tradicional Agni Hotra"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Alojamiento y tarifas",
+      "sub": "Tarifas transparentes, todo incluido sin gastos imprevistos.",
+      "tuitionOnly": "Paquete solo formación",
+      "tuitionOnlyDesc": "Docencia, comidas completas, manuales y título. Alojamiento exterior.",
+      "triple": "Habitación triple compartida",
+      "tripleDesc": "Habitación climatizada con baño privado y terraza compartida entre tres personas.",
+      "double": "Habitación doble compartida",
+      "doubleDesc": "Habitación climatizada para dos personas con baño privado y vista al jardín.",
+      "private": "Habitación privada Deluxe",
+      "privateDesc": "Habitación individual con cama king, baño en suite, aire acondicionado y balcón.",
+      "earlyBird": "Precio anticipado",
+      "save300": "Ahorra $300 USD"
+    },
+    "tourCall": {
+      "heading": "¿Quieres conocer la escuela antes de reservar?",
+      "sub": "Únete a una videollamada en directo para un recorrido personalizado por el campus, las salas de clase, el shala de yoga y las habitaciones.",
+      "cta": "Reservar llamada. Ver la escuela. Ver tu habitación. Ver la sala de yoga.",
+      "bookCallLive": "Conoce la escuela, tu habitación y el shala de yoga en directo. Completa tus datos a continuación para programarlo."
+    },
+    "takeaway": {
+      "badge": "Lo que te llevas",
+      "heading": "Lo que te llevas",
+      "headingItalic": "a casa",
+      "sub": "Más allá del certificado físico, te llevas una perspectiva transformada, una conexión profunda contigo mismo y habilidades auténticas para guiar a los demás.",
+      "careerImpactTitle": "Impacto profesional:",
+      "careerImpactDesc": "Al completar el curso de profesor de yoga de 200 horas, puedes empezar a dar clases en cualquier parte del mundo: en estudios, online, retiros o en tu propio proyecto independiente.",
+      "card1Title": "Certificación global",
+      "card1Desc": "Yoga Alliance RYT-200 para comenzar tu carrera donde tú elijas.",
+      "card2Title": "Dominio de la práctica",
+      "card2Desc": "Instrucción experta en Hatha, Vinyasa, Ashtanga e Iyengar.",
+      "card3Title": "Seguridad y anatomía",
+      "card3Desc": "Aprende a enseñar y practicar con total seguridad y sin lesiones.",
+      "card4Title": "Profundidad espiritual",
+      "card4Desc": "Inmersión profunda en Mantras, meditación y filosofía clásica.",
+      "card5Title": "Metodología docente",
+      "card5Desc": "Herramientas prácticas para guiar, ajustar e inspirar a tus alumnos.",
+      "card6Title": "Vínculos para siempre",
+      "card6Desc": "Conexiones duraderas con una comunidad internacional de yoga."
+    },
+    "timeline": {
+      "prepTitle": "La preparación comienza al inscribirte",
+      "prepDesc": "Inicia tu camino con materiales previos y asesoramiento personalizado.",
+      "datesTitle": "Formación: del 1 al 24 de cada mes",
+      "datesDesc": "Programa inmersivo de 24 días cada mes en Bali.",
+      "supportTitle": "Apoyo vitalicio en YogaGarhi",
+      "supportDesc": "Conectado para siempre con nuestra familia global de yoga."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Alojamiento",
+      "featuresSub": "Un sereno retiro de yoga en el corazón de la sagrada región de Ubud en Bali",
+      "feat1": "10 hermosas cascadas a menos de 10 km",
+      "feat2": "Bosque privado con cascada propia en las instalaciones",
+      "feat3": "Tranquilas caminatas entre arrozales dentro del recinto",
+      "feat4": "A solo 15 km del centro histórico de Ubud",
+      "glimpses": "Imágenes de tu estancia",
+      "allRooms": "Todas las habitaciones incluyen",
+      "wifi": "Wi-Fi gratis",
+      "hotWater": "Agua caliente",
+      "acFan": "Aire acondicionado / Ventilador",
+      "cleaning": "Limpieza diaria",
+      "bed1": "cama",
+      "bedsMore": "camas",
+      "courseOnly": "Solo curso",
+      "mostPopular": "Más popular",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Más allá de la esterilla",
+      "heading": "Excursiones sagradas",
+      "sub": "Sumérgete en la herencia espiritual de Bali a través de vivencias transformadoras"
+    },
+    "prakritiResearch": {
+      "heading": "Investigación de Sachin Ji sobre yoga personalizado y Prakriti",
+      "quote": "«El yoga no puede ser igual para todos, porque cada cuerpo porta una energía diferente»",
+      "card1Title": "La pregunta esencial",
+      "card1Text": "Durante los estudios de Maestría en Yoga de nuestro profesor principal, surgió una pregunta ineludible: ¿Por qué la misma práctica calma a unas personas, mientras deja a otras cansadas, inquietas o agitadas?",
+      "card2Title": "Investigación profunda",
+      "card2Text": "Esto dio paso a una rigurosa investigación en textos clásicos, Ayurveda y años de práctica con estudiantes. La respuesta fue simple y contundente: cada persona nace con una Prakriti única.",
+      "card3Title": "El mapa energético",
+      "card3Text": "La Prakriti define el cuerpo, la mente, las emociones y el sistema nervioso. Unas personas necesitan enraizamiento, otras movimiento y otras quietud. Un estilo rígido puede generar desequilibrios.",
+      "card4Title": "La calidad de la práctica",
+      "card4Text": "Más allá del estilo de yoga que practiques, lo que de verdad importa es cómo lo practicas: cómo se cuida el sistema nervioso, cómo fluye la respiración y cómo se apoya a tu Dosha.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Fruto de esta comprensión nació Shiv–Shakti Sadhana: un enfoque equilibrado que armoniza estabilidad y movimiento, presencia y energía. Aquí el Asana brinda fuerza y enraizamiento.",
+      "card6Title": "Retorno al equilibrio",
+      "card6Text": "Cuando el yoga respeta tu Prakriti, se vuelve accesible, sostenible y profundamente sanador. El verdadero yoga no te cambia: te devuelve a tu propio equilibrio.",
+      "conclusion1": "Nuestro profesor principal observó que cuando la práctica no respeta el sistema nervioso ni el tipo de energía natural, incluso las posturas correctas pueden causar cansancio o inquietud.",
+      "conclusion2": "«Cuando el yoga respeta tu Prakriti, resulta accesible, sostenible y profundamente sanador para todos. Aquí el yoga no se impone: es personalizado, consciente y respetuoso de quien eres.»"
+    },
+    "ethicsExtra": {
+      "code1": "Puntualidad rigurosa",
+      "code2": "Sin alcohol ni tabaco",
+      "code3": "Dieta estrictamente vegetariana",
+      "code4": "Silencio respetado en clase",
+      "code5": "Vestimenta modesta y adecuada",
+      "code6": "Respeto mutuo absoluto",
+      "code7": "Sin teléfonos en la sala",
+      "code8": "Asistencia completa requerida",
+      "refund1": "Reprogramación válida por 12 meses",
+      "refund2": "Transferencia de plaza permitida",
+      "refund3": "Reembolso total si cancelamos nosotros",
+      "refund4": "Política de día de prueba",
+      "refund5": "Sin reembolso después del Día 1",
+      "reviewsHeading": "Lo que dicen nuestros estudiantes",
+      "viewAllGoogle": "Ver todas las opiniones en Google",
+      "basedOnReviews": "Basado en",
+      "openGoogleMaps": "Abrir en Google Maps",
+      "open24Hours": "Abierto 24 horas"
+    },
+    "sunday": {
+      "note": "El domingo es un día completo de descanso para relajación, estudio personal o excursiones opcionales.",
+      "cta": "Explorar el domingo en Bali"
+    },
+    "tapHover": {
+      "tap": "Toca para ver más",
+      "hover": "Pasa el ratón para ver más"
+    },
+    "inclusionsList": [
+      "Habitación limpia y confortable",
+      "Baño privado con agua caliente",
+      "Aire acondicionado / ventilador",
+      "Conexión Wi-Fi gratuita",
+      "Tres comidas vegetarianas saludables al día",
+      "Infusiones herbales y agua potable filtrada",
+      "Material de estudio (manuales, cuadernos, bolígrafos)",
+      "Esterillas de yoga y soportes incluidos",
+      "Excursiones al aire libre y salidas de fin de semana",
+      "Recogida en el aeropuerto a la llegada (aeropuerto más cercano)",
+      "Equipo de asistencia en el campus las 24 horas",
+      "Certificación oficial al completar el curso",
+      "Masaje balinés tradicional",
+      "Espectáculo de danza tradicional balinesa",
+      "Caminata guiada entre arrozales",
+      "Módulo de preparación online Pre-TTC incluido",
+      "Taller especializado de equilibrios sobre brazos",
+      "Taller formativo de Ayurveda",
+      "Derecho a repetición vitalicia gratuita del curso",
+      "Libro YogaGarhi de 35+ secuencias creativas"
+    ],
+    "exclusionsList": [
+      "Vuelos internacionales y gastos de traslado",
+      "Visado turístico y seguro médico de viaje",
+      "Traslado de regreso al aeropuerto",
+      "Servicio de lavandería",
+      "Compras personales y actividades adicionales"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Formación de yoga multi-estilo",
+        "description": "Aprende el yoga en su forma tradicional y probada. Nuestros profesores preservan la sabiduría de la tradición yóguica."
+      },
+      {
+        "title": "Certificado por Yoga Alliance",
+        "description": "Obtén una titulación reconocida en todo el mundo y comienza a impartir clases con plena seguridad."
+      },
+      {
+        "title": "Entorno sereno en Bali",
+        "description": "Vive el yoga inmerso en la naturaleza. Playas tranquilas y vegetación exuberante que enriquecen tu práctica."
+      },
+      {
+        "title": "Excursiones al aire libre",
+        "description": "Descubre templos sagrados, playas y senderos naturales equilibrando formación con vivencias culturales."
+      },
+      {
+        "title": "Grupos reducidos",
+        "description": "Disfruta de atención cercana y personalizada. El progreso de cada alumno es nuestra prioridad."
+      },
+      {
+        "title": "Comunidad acogedora",
+        "description": "Forma parte de una familia cálida y positiva en un entorno de aprendizaje seguro y empático."
+      },
+      {
+        "title": "Masaje balinés",
+        "description": "Terapia tradicional indonesia orientada a relajar la musculatura y favorecer un bienestar integral."
+      },
+      {
+        "title": "Danza tradicional balinesa",
+        "description": "Expresión artística ancestral cargada de espiritualidad que refleja el valioso legado cultural de Bali."
+      },
+      {
+        "title": "Comidas saludables",
+        "description": "Alimentación sátvica fresca y nutritiva diseñada para acompañar y revitalizar tu práctica diaria."
+      },
+      {
+        "title": "Práctica de meditación",
+        "description": "Cultiva la paz mental y la atención consciente a través de sesiones guiadas cada jornada."
+      },
+      {
+        "title": "Profesores experimentados",
+        "description": "Aprende de instructores certificados con una sólida trayectoria pedagógica y humana."
+      },
+      {
+        "title": "Estilo de vida yóguico",
+        "description": "Adopta hábitos yóguicos que transformarán positivamente tu cuerpo, mente y alma."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Taller de Ayurveda y cocina ayurvédica",
+        "description": "Conoce tu constitución personal (Prakriti) y equilibra tus doshas mediante la alimentación y el estilo de vida."
+      },
+      {
+        "title": "Dominio de equilibrios sobre brazos",
+        "description": "Desarrolla fuerza, técnica y seguridad para abordar posturas como el Cuervo, Cuervo lateral y Paloma voladora."
+      },
+      {
+        "title": "Taller de Handstand y equilibrio invertido",
+        "description": "Supera el miedo y alinea tu centro con ejercicios progresivos en pared y en parejas hacia el pino libre."
+      },
+      {
+        "title": "Yin Yoga y estiramiento profundo",
+        "description": "Alcanza el tejido conectivo profundo mediante posturas pasivas prolongadas para liberar tensiones acumuladas."
+      },
+      {
+        "title": "Sesión de sanación con sonido y cuencos",
+        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+      },
+      {
+        "title": "Bhakti Yoga y Kirtan",
+        "description": "Abre tu corazón con cantos sagrados y mantras devocionales conectando con la faceta espiritual del yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Espectáculo de danza balinesa",
+        "description": "Admira la danza clásica de Bali: una cautivadora manifestación de elegancia, narrativa y devoción espiritual."
+      },
+      {
+        "title": "Caminata por los arrozales",
+        "description": "Pasea por las icónicas terrazas de arroz de Ubud y conecta con el ritmo pacífico de la vida rural en la isla."
+      },
+      {
+        "title": "Visita a cascada sagrada",
+        "description": "Visita una cascada sagrada para participar en un ritual ancestral de purificación con agua pura de manantial."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Desayuno",
+        "time": "07:00",
+        "items": [
+          "Frutas tropicales frescas",
+          "Granola casera con yogur de coco",
+          "Tés herbales y zumos naturales",
+          "Gachas de arroz balinesas"
+        ]
+      },
+      {
+        "meal": "Almuerzo",
+        "time": "12:30",
+        "items": [
+          "Buddha bowls nutritivos",
+          "Preparaciones de tempeh y tofu",
+          "Ensaladas frescas de la huerta",
+          "Verduras tradicionales de Bali"
+        ]
+      },
+      {
+        "meal": "Cena",
+        "time": "18:30",
+        "items": [
+          "Sopas reconfortantes",
+          "Boles de cereales al vapor y dahl",
+          "Kitchari ayurvédico especiado",
+          "Infusiones relajantes de hierbas"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Historias en video de alumnos",
+    "videoStoriesHeading": "Escucha directamente a nuestros graduados en Bali",
+    "videoStoriesSub": "Reflexiones sinceras de practicantes que vivieron esta formación residencial en YogaGarhi.",
+    "verifiedGraduate": "Graduado verificado",
+    "speakTeacherTitle": "¿Quieres hablar primero con un maestro principal?",
+    "speakTeacherDesc": "Videollamada 1 a 1 de 15 minutos para comentar tus metas, alojamiento y fechas.",
+    "helpfulGuidesBadge": "Lectura recomendada antes de viajar",
+    "helpfulGuidesTitle": "Guías útiles y artículos de preparación",
+    "helpfulGuidesDesc": "Explora nuestras guías completas para preparar mente, cuerpo y viaje hacia tu formación en Bali.",
+    "readArticle": "Leer artículo",
+    "mindfulEating": "Un día de alimentación consciente",
+    "clickToCollapse": "Clic para contraer",
+    "clickToExpand": "Clic para expandir",
+    "caterDietsTitle": "Nos adaptamos a todas las dietas",
+    "caterDietsDesc": "Avísanos sobre tus necesidades dietéticas y nos encargaremos de todo",
+    "studentStories": {
+      "badge": "Historias de Alumnos",
+      "heading": "Corazones Transformados en YogaGarhi",
+      "sub": "\"Descubre los testimonios de quienes vivieron esta profunda experiencia de transformación.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canadá",
+          "quote": "YogaGarhi es auténtico y arraigado en la esencia viva del yoga. Desde el primer día me sentí escuchada y acompañada como persona, nunca como un simple número. Los maestros se comprometen genuinamente con tu evolución y te ayudan a desarrollar tu propia voz docente.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turquía",
+          "quote": "Sachin Ji es uno de los maestros de yoga más sabios con los que he aprendido. A pesar de haber llegado como principiante absoluta, su infinita paciencia y calidez me permitieron asimilar con confianza las bases de la alineación postural.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Completé mi profesorado de 200 horas en Bali y fue una experiencia mágica. 🌺 Los conocimientos impartidos fueron puros y profundos. Los profesores enseñan desde el corazón con bondad y sabiduría. Te sientes en un hogar cálido y protector.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canadá",
+          "quote": "Sachin Ji es un maestro y ser humano excepcional. Esta formación en Bali encendió un camino maravilloso que me ha brindado la seguridad y preparación para impartir clases en diversos países del mundo.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Alemania",
+          "quote": "Aprecio profundamente la serenidad, cercanía y bienvenida de Sachin Ji. Es sumamente sabio y guía a cada alumno con esmero. Sus clases te permiten superar tus propios límites con soltura y confianza.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Una experiencia enriquecedora e inolvidable en YogaGarhi Bali. El grupo reducido fue determinante: cada ajuste postural fue personalizado y consciente. Terminé la formación sintiéndome lista para enseñar.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
+  },
+  "course300": {
+    "metaTitle": "Formación de Profesores de Yoga de 300 Horas en Bali | YTTC Avanzado",
+    "metaDesc": "Avanza en tu enseñanza con el curso de yoga de 300 horas en Bali. Asana multiestilo, pranayama, anatomía y filosofía. ¡Asegura tu lugar!",
+    "heroTitle": "Formación de Profesores de Yoga de 300 Horas en Bali",
+    "heroSub": "Inmersión residencial avanzada de 28 días en Gianyar, Bali. Profundiza en asanas avanzadas y ajustes hacia la certificación RYT 500.",
+    "quickInfo": {
+      "course": "Curso",
+      "courseVal": "YTTC 300 Horas Avanzado",
+      "duration": "Duración",
+      "durationVal": "28 Days",
+      "style": "Estilo",
+      "styleVal": "Yoga Multi-Style",
+      "level": "Nivel",
+      "levelVal": "Avanzado (requiere RYT 200)",
+      "certification": "Certificación",
+      "certificationVal": "Certificación Yoga Alliance RYT 500",
+      "startingFrom": "$2,499 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Ahorra",
+      "earlyBirdDiscount": "Ahorra $300 con precio anticipado"
+    },
+    "highlights": {
+      "smallGroups": "Grupos reducidos (máx. 8–10)",
+      "smallGroupsSub": "Atención individual",
+      "preYttc": "Apoyo antes de comenzar",
+      "preYttcSub": "Preparación y guía",
+      "mentorship": "Mentoría post-graduación",
+      "mentorshipSub": "1 año de apoyo continuo",
+      "goodieBag": "Kit de bienvenida de regalo",
+      "goodieBagSub": "Esenciales de yoga"
+    },
+    "storyTitle": "Transforma tu práctica en sabiduría viva",
+    "storyP1": "Nuestra formación de profesores de yoga de 200 horas en Bali es una inmersión completa orientada a practicantes que buscan profundidad genuina en lugar de posturas mecánicas. Ubicado en el tranquilo pueblo de Gianyar, a solo 15 minutos de Ubud, YogaGarhi ofrece un refugio sereno lejos del turismo masivo.",
+    "storyP2": "A lo largo de 24 días estudiarás Hatha clásico, Vinyasa Flow, la serie Ashtanga Primary y alineación de Iyengar junto con anatomía aplicada, filosofía, pranayama y meditación. Con un cupo riguroso de 8–10 alumnos, nuestros maestros del Himalaya ofrecen un acompañamiento íntimo a cada persona.",
+    "watchVideoStories": "Ver vídeos y testimonios de estudiantes",
+    "videoBannerTitle": "Reserva una llamada. Conoce la escuela. Mira tu habitación. Mira la shala.",
+    "whyYogaGarhiBox": {
+      "badge": "Por qué elegir YogaGarhi",
+      "heading": "Linaje genuino del Himalaya en un ashram íntimo en Bali",
+      "sub": "Nos dedicamos a practicantes comprometidos en vez de cursos masivos impersonales. Esto es lo que distingue nuestra formación de 200 horas:",
+      "p1Title": "Máximo 8–10 alumnos por grupo",
+      "p1Highlight": "Enfoque personalizado",
+      "p1Desc": "Grupos reducidos que aseguran atención directa, ajustes físicos adecuados y escucha permanente.",
+      "p2Title": "Entrenamiento online Pre-TTC gratuito",
+      "p2Highlight": "Prepárate con confianza",
+      "p2Desc": "Curso preparatorio antes de tu viaje a Bali para fortalecer tu cuerpo y tus bases teóricas.",
+      "p3Title": "1 año de mentoría tras la graduación",
+      "p3Highlight": "Comunidad duradera",
+      "p3Desc": "Acompañamiento continuo, asesoría en tus secuencias y apoyo profesional mucho después de terminar tu estancia.",
+      "p4Title": "Repetición del curso gratis de por vida",
+      "p4Highlight": "Regreso sin matrícula",
+      "p4Desc": "Regresa gratis a futuras formaciones de YogaGarhi para actualizar tus conocimientos o colaborar como asistente.",
+      "pkgBadge": "Paquetes con alojamiento (24 días / 23 noches) y opción de solo formación",
+      "saveEarlyBird": "Ahorra $300 con precio anticipado",
+      "tuitionFrom": "Solo formación desde $999 USD | Residencial desde $1,750 USD",
+      "breakdown": "Solo formación: $999 • Habitación triple: $1,750 • Habitación doble: $1,899 • Habitación privada: $2,499",
+      "checkAvailability": "Consultar disponibilidad",
+      "bookFreeCall": "Reservar videollamada gratuita"
+    },
+    "hoursStructure": {
+      "badge": "Horas lectivas",
+      "heading": "Cómo se estructuran las 200 horas",
+      "sub": "Una distribución equilibrada entre contacto directo, alineación práctica y estudio personal conforme a los criterios de Yoga Alliance.",
+      "contactHours": "Horas de contacto directo",
+      "contactHoursDesc": "Instrucción directa con maestros principales en asanas, alineación, anatomía y filosofía.",
+      "selfStudy": "Autoestudio y práctica",
+      "selfStudyDesc": "Lecturas recomendadas, diario reflexivo, práctica entre compañeros y diseño de clases.",
+      "totalCert": "Total de certificación",
+      "totalCertDesc": "Cumple y supera los estándares RYT 200 de Yoga Alliance.",
+      "hoursUnit": "Horas"
+    },
+    "syllabus": {
+      "heading": "Plan de estudios y temario",
+      "sub": "Un temario exigente y equilibrado que armoniza las escrituras tradicionales con la biomecánica actual.",
+      "tab1": "Hatha y Vinyasa",
+      "tab2": "Ashtanga e Iyengar",
+      "tab3": "Pranayama y Meditación",
+      "tab4": "Anatomía y Fisiología",
+      "tab5": "Filosofía y Ética",
+      "tapMore": "Toca para ver más",
+      "hoverMore": "Pasa el cursor para ver más",
+      "takeaway": "Lo que integras",
+      "carryHome": "Para llevarte a casa",
+      "careerImpact": "Impacto en tu enseñanza:",
+      "cards": [
+        {
+          "title": "Posturas de Ashtanga Yoga",
+          "content": "Secuencia completa de la primera serie de Ashtanga Yoga. Progresión semanal guiada por Saludos al Sol A y B, posturas de pie, sentadas y práctica estilo Mysore."
+        },
+        {
+          "title": "Hatha y Vinyasa Flow",
+          "content": "Serie Pawanmuktasana, variantes de Surya Namaskar, posturas de pie y sentadas, extensiones hacia atrás, flexiones hacia adelante, inversiones y metodología de secuenciación."
+        },
+        {
+          "title": "Filosofía del Yoga",
+          "content": "Introducción a los Yoga Sutras de Patanjali, los ocho pasos del Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna e historias inspiradoras de maestros yoguis."
+        },
+        {
+          "title": "Pranayama y Respiración",
+          "content": "Técnicas completas de respiración: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali y Sheetkari."
+        },
+        {
+          "title": "Anatomía y Fisiología",
+          "content": "Planos de movimiento, protección articular, anatomía de tobillo, rodilla, columna y hombros, biomecánica respiratoria, fisiología muscular y sistema nervioso."
+        },
+        {
+          "title": "Metodología de Enseñanza",
+          "content": "Secuenciación de clases, ajustes y correcciones, adaptación a diversos niveles, uso de la voz, preparación mental, demostración y planificación didáctica."
+        },
+        {
+          "title": "Meditación y Mantras",
+          "content": "Diversas técnicas de meditación, canto de mantras védicos, Trataka, meditación dinámica de Osho, Nada Brahma, Antar Mouna y cultivo del silencio interior."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga enfocado en la precisión anatómica y alineación mediante accesorios como bloques, cinturones y mantas para perfeccionar la postura y prevenir lesiones."
+        },
+        {
+          "title": "Principios de Alineación",
+          "content": "Bases de una práctica segura: alineación articular, patrones de activación muscular y biomecánica funcional para fortalecer y proteger el cuerpo."
+        },
+        {
+          "title": "Bandhas (Cierres Energéticos)",
+          "content": "Dominio de Mula, Uddiyana y Jalandhara Bandha para encauzar el flujo de prana, tonificar el núcleo y alcanzar una mayor profundidad meditativa."
+        },
+        {
+          "title": "Mudras (Gestos Sagrados)",
+          "content": "Gestos sagrados de manos y cuerpo que canalizan la energía vital, agudizan el enfoque y conectan con planos elevados de consciencia durante la práctica."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Horario diario en el ashram",
+      "sub": "Un ritmo diario armónico entre práctica intensa, estudio filosófico, comidas sanas y descanso.",
+      "time1": "06:00",
+      "act1": "Despertar y purificación matinal",
+      "time2": "06:30",
+      "act2": "Pranayama, cantos y meditación",
+      "time3": "07:30",
+      "act3": "Práctica matinal de asanas (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Desayuno sátvico nutritivo",
+      "time5": "10:00",
+      "act5": "Filosofía del yoga y estudio de textos",
+      "time6": "12:00",
+      "act6": "Almuerzo saludable y descanso",
+      "time7": "15:00",
+      "act7": "Anatomía aplicada y biomecánica",
+      "time8": "16:30",
+      "act8": "Metodología docente y taller de alineación",
+      "time9": "18:00",
+      "act9": "Práctica vespertina (Ashtanga / Yin / Restaurativo)",
+      "time10": "19:30",
+      "act10": "Cena sátvica",
+      "time11": "21:00",
+      "act11": "Estudio personal, silencio y descanso",
+      "beyondTheMat": "Más allá de la esterilla",
+      "badge": "Rutina diaria",
+      "wakeUp": "Despertar y purificación matinal",
+      "morningPranayama": "Pranayama y meditación",
+      "morningAsana": "Práctica matinal de asanas (Hatha / Vinyasa)",
+      "breakfast": "Desayuno sátvico saludable",
+      "philosophyClass": "Filosofía del yoga y estudio de textos",
+      "lunch": "Almuerzo nutritivo y descanso",
+      "anatomyClass": "Anatomía aplicada y fisiología",
+      "methodologyClass": "Metodología docente y clínica de alineación",
+      "eveningAsana": "Práctica vespertina (Ashtanga / Yin / Restaurativo)",
+      "dinner": "Cena sátvica",
+      "selfStudy": "Estudio personal, silencio y descanso"
+    },
+    "inclusions": {
+      "heading": "Qué incluye tu formación",
+      "sub": "Todo dispuesto para asegurar una experiencia profunda y libre de preocupaciones.",
+      "incAccom": "23 noches de estancia en el ashram",
+      "incMeals": "3 comidas sátvicas recién elaboradas al día (vegetariano/vegano)",
+      "incCert": "Certificado Yoga Alliance RYT 200 tras completar el curso",
+      "incManuals": "Manuales oficiales de la formación, cuadernos y materiales de estudio",
+      "incKit": "Esterilla de yoga y accesorios de apoyo incluidos en la escuela",
+      "incExcursions": "Excursiones culturales sagradas (templo del agua, arrozales, danza balinesa)",
+      "incCeremonies": "Ceremonias tradicionales de fuego de inicio y clausura (Agni Hotra)",
+      "incPickup": "Recogida en el aeropuerto de Denpasar (DPS) en la fecha oficial de llegada",
+      "incPre": "Módulo preparatorio Pre-TTC online incluido",
+      "incRepeat": "Posibilidad de repetir el curso de por vida (sin pagar matrícula)",
+      "notIncHeading": "No incluye",
+      "notIncFlights": "Billetes de avión internacionales o domésticos",
+      "notIncVisa": "Tasas de visado para Indonesia",
+      "notIncInsurance": "Seguro médico y de viaje personal"
+    },
+    "pricing": {
+      "heading": "Habitaciones y precios",
+      "sub": "Precios claros y todo incluido, sin sorpresas ni costes ocultos.",
+      "tuitionOnly": "Paquete solo formación",
+      "tuitionOnlyDesc": "Matrícula, comidas completas, material pedagógico y certificación. Alojamiento fuera del ashram.",
+      "triple": "Habitación triple compartida",
+      "tripleDesc": "Habitación amplia con aire acondicionado compartida con dos compañeros, baño privado y balcón.",
+      "double": "Habitación doble compartida",
+      "doubleDesc": "Habitación cómoda para dos personas con baño privado, aire acondicionado y vistas al jardín o piscina.",
+      "private": "Habitación privada Deluxe",
+      "privateDesc": "Espacio privado con cama matrimonial grande, baño privado, aire acondicionado y balcón exclusivo.",
+      "earlyBird": "Descuento anticipado",
+      "save300": "Ahorra $300 USD",
+      "earlyBirdPrice": "Precio anticipado",
+      "tuitionFees": "Tarifas y Habitaciones (300 Horas)",
+      "tripleSharing": "Habitación Triple ($2,499)",
+      "doubleSharing": "Habitación Doble ($2,699)",
+      "privateRoom": "Habitación Privada ($3,499)",
+      "choosePackage": "Elige tu paquete",
+      "reserveSpot": "Reserva tu plaza",
+      "saveUSD": "Ahorra $300 USD",
+      "residentialDuration": "28 días de formación avanzada en Gianyar, Bali"
+    },
+    "ethics": {
+      "codeOfConduct": "Código de conducta",
+      "refundCancellation": "Reembolso y cancelación",
+      "ryt200Title": "Profesor de Yoga Registrado (RYT 200)",
+      "viewRegistry": "Consultar registro de escuelas de Yoga Alliance"
+    },
+    "faqsHeading": "Preguntas frecuentes",
+    "faqs": [
+      {
+        "question": "¿Es adecuada esta formación de yoga de 200 horas para principiantes?",
+        "answer": "Sí. El plan de estudios acompaña al practicante desde los fundamentos hasta el nivel intermedio. Además, cada estudiante inscrito recibe acceso a nuestra preparación previa online para adquirir fuerza, flexibilidad y entendimiento postural antes de viajar a Bali."
+      },
+      {
+        "question": "¿Qué estilos de yoga se imparten en este TTC de 200 horas?",
+        "answer": "Estudiarás yoga multi-style basado en la tradición genuina del Himalaya: Hatha Yoga clásico, Vinyasa Flow dinámico, serie Ashtanga Primary (según K. Pattabhi Jois) y alineación minuciosa inspirada en Iyengar."
+      },
+      {
+        "question": "¿Cuál es el horario típico de un día de formación?",
+        "answer": "Un día habitual en YogaGarhi transcurre con este orden estructurado: 06:00 Despertar; 06:30 Pranayama y meditación; 07:30 Hatha y Vinyasa; 09:00 Desayuno; 10:00 Filosofía del yoga; 12:00 Almuerzo y descanso; 15:00 Anatomía aplicada; 16:30 Alineación y metodología docente; 18:00 Ashtanga e Iyengar con yogaterapia; 19:30 Cena; 21:00 Autoestudio y descanso."
+      },
+      {
+        "question": "¿Cuántos alumnos integran cada grupo en YogaGarhi Bali?",
+        "answer": "Mantenemos un límite estricto de 8–10 alumnos como máximo por grupo. Esto asegura atención personalizada, correcciones posturales detalladas y un contacto cercano con los maestros formadores."
+      },
+      {
+        "question": "¿Qué titulación obtendré y qué validez tiene internacionalmente?",
+        "answer": "Al completar con éxito las horas lectivas y evaluaciones prácticas, obtienes el certificado de Registered Yoga Teacher (RYT 200) de Yoga Alliance, que te avala para impartir clases profesionalmente en cualquier país del mundo."
+      },
+      {
+        "question": "¿Cuáles son las modalidades de habitación y sus precios?",
+        "answer": "Contamos con cuatro opciones claras: Solo formación ($999 USD, precio anticipado frente a $1,299 habitual; comidas y habitación no incluidas), Habitación triple ($1,750 USD frente a $2,050), Habitación doble ($1,899 USD frente a $2,199) y Habitación privada ($2,499 USD frente a $2,799). Todos los paquetes residenciales contemplan 23 noches de estancia y 3 comidas diarias."
+      }
+    ],
+    "hero": {
+      "badge": "Certificado Yoga Alliance RYT 200",
+      "h1": "Formación de Profesores de Yoga de 300 Horas en Bali",
+      "sub": "Inmersión residencial avanzada de 28 días en Gianyar, Bali. Domina asanas complejas, ajustes prácticos y filosofía profunda rumbo a RYT 500.",
+      "quickDuration": "28 Días",
+      "quickLevel": "Avanzado (requiere RYT 200)",
+      "quickCert": "Certificación Yoga Alliance RYT 500",
+      "quickLang": "Inglés",
+      "quickBatch": "8–10 alumnos",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Reservar plaza",
+      "btnBrochure": "Descargar programa",
+      "btnCounselor": "Hablar con un asesor"
+    },
+    "overview": {
+      "heading": "Avanza en tu camino yóguico en YogaGarhi Bali",
+      "story": "Nuestra formación de profesores de yoga de 200 horas en Bali es un curso integral para niveles principiante e intermedio orientado a formar profesores seguros o a comprender el yoga para la vida diaria. YogaGarhi se encuentra en Gianyar, a unos 15 km de Ubud, en un apacible entorno natural. Durante el curso practicarás asanas a diario, aprenderás alineación anatómica, y estudiarás pranayama, meditación, filosofía y metodología docente.",
+      "p1": "Nuestro curso avanzado de 300 horas en Bali está dirigido a profesores dedicados y practicantes serios que ya poseen un certificado de 200 horas.",
+      "p2": "Estudia variaciones avanzadas de asana, biomecánica, ajustes manuales, pranayama profundo y anatomía aplicada para alcanzar RYT 500."
+    },
+    "curriculum": {
+      "badge": "Módulos del plan de estudios",
+      "heading": "Desglose del programa y temas de estudio",
+      "sub": "Haz clic en cada módulo para explorar temas detallados, técnicas prácticas y bases conceptuales.",
+      "modules": {
+        "asana": "Práctica de asanas y alineación",
+        "pranayama": "Pranayama y energía sutil",
+        "philosophy": "Filosofía del yoga y estilo de vida",
+        "anatomy": "Anatomía y fisiología",
+        "methodology": "Metodología docente y práctica",
+        "meditation": "Meditación y atención plena",
+        "iyengar": "Bases de Yoga Iyengar y soportes",
+        "vinyasa": "Secuenciación de Vinyasa Flow",
+        "hatha": "Hatha Yoga clásico y tradicional"
+      },
+      "detailedModules": [
+        {
+          "title": "Posturas de Ashtanga Yoga",
+          "items": [
+            "Serie primaria completa de Ashtanga por K. Pattabhi Jois",
+            "Semana 1: Introducción y Saludos al Sol A y B",
+            "Semana 2: Posturas de pie y uso de accesorios",
+            "Semana 3: Posturas sentadas y posturas finales",
+            "Semana 4: Estilo Mysore y práctica de enseñanza"
+          ]
+        },
+        {
+          "title": "Filosofía del Yoga",
+          "items": [
+            "Yoga Sutras completos de Patanjali",
+            "Las ocho ramas del Ashtanga Yoga",
+            "Pancha-Vayus y Panchakoshas",
+            "Sattva, Rajas y Tamas (Triguna)",
+            "Introducción a los Vedas",
+            "Historias inspiradoras de grandes maestros yoguis"
+          ]
+        },
+        {
+          "title": "Prácticas de Respiración Pranayama",
+          "items": [
+            "Técnicas completas de pranayama",
+            "Las seis prácticas de purificación Shatkarma",
+            "Respiración avanzada: Sheetali, Sheetkari",
+            "Kumbhaka (retención de la respiración)",
+            "Integración consciente con la práctica de asanas"
+          ]
+        },
+        {
+          "title": "Recitación de Sonidos Sagrados y Mantras",
+          "items": [
+            "Colección completa de mantras tradicionales",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Shloka a Patanjali)",
+            "Práctica diaria de canto de mantras"
+          ]
+        },
+        {
+          "title": "Anatomía y Fisiología",
+          "items": [
+            "Estudio completo de los sistemas corporales",
+            "Fisiología de músculos y articulaciones",
+            "Sistema respiratorio y nervioso",
+            "Nutrición y sistema digestivo",
+            "Talleres prácticos sobre diferentes asanas"
+          ]
+        },
+        {
+          "title": "Metodología de Enseñanza",
+          "items": [
+            "Secuenciación integral de clases de yoga",
+            "Principios de demostración y observación",
+            "Preparación mental y emocional",
+            "Planificación estructurada de sesiones de clase",
+            "Prácticas docentes y evaluaciones guiadas"
+          ]
+        },
+        {
+          "title": "Meditación y Bandhas",
+          "items": [
+            "Meditación dinámica de Osho",
+            "Meditación Nada Brahma",
+            "Antar Mouna y Ajapa Japa",
+            "Dominio de los cuatro Bandhas principales",
+            "Integración con asanas y pranayama"
+          ]
+        },
+        {
+          "title": "Arte de la Alineación y Ajustes",
+          "items": [
+            "Biomecánica y alineación funcional de posturas clásicas",
+            "Metodología de indicaciones verbales y ajustes táctiles seguros",
+            "Comprensión de variaciones anatómicas individuales",
+            "Estrategias de modificación con bloques y cinturones"
+          ]
+        },
+        {
+          "title": "Práctica Clásica de Hatha Yoga",
+          "items": [
+            "Estudio de principios tradicionales de Hatha y posturas sostenidas",
+            "Secuenciación Hatha: calentamiento, postura cumbre y contraposturas",
+            "Equilibrio de energías solar (Ha) y lunar (Tha)",
+            "Integración de Bandhas y Mudras en posturas estáticas"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga y Alineación de Precisión",
+          "items": [
+            "Alineación metódica con bloques, correas y mantas",
+            "Posicionamiento geométrico preciso de pelvis y columna",
+            "Preparación segura para posturas invertidas",
+            "Secuencias restaurativas con soportes terapéuticos"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow y Secuenciación Dinámica",
+          "items": [
+            "Estructura inteligente: calentamiento, postura pico y relajación",
+            "Transiciones fluidas y saltos en armonía con la respiración",
+            "Diseño de clases temáticas según objetivos y niveles",
+            "Ritmo, modulación del tempo y sostenimiento del espacio"
+          ]
+        },
+        {
+          "title": "Clases y Talleres Especiales",
+          "items": [
+            "Sesiones de Sanación con Sonido (Sound Healing)",
+            "Experiencia de Yoga en la playa de Bali",
+            "Yin Yoga y Acro Yoga",
+            "Fundamentos de Ayurveda",
+            "Ceremonia de fuego tradicional Agni Hotra"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Alojamiento y tarifas",
+      "sub": "Tarifas transparentes, todo incluido sin gastos imprevistos.",
+      "tuitionOnly": "Paquete solo formación",
+      "tuitionOnlyDesc": "Docencia, comidas completas, manuales y título. Alojamiento exterior.",
+      "triple": "Habitación triple compartida",
+      "tripleDesc": "Habitación climatizada con baño privado y terraza compartida entre tres personas.",
+      "double": "Habitación doble compartida",
+      "doubleDesc": "Habitación climatizada para dos personas con baño privado y vista al jardín.",
+      "private": "Habitación privada Deluxe",
+      "privateDesc": "Habitación individual con cama king, baño en suite, aire acondicionado y balcón.",
+      "earlyBird": "Precio anticipado",
+      "save300": "Ahorra $300 USD"
+    },
+    "tourCall": {
+      "heading": "¿Quieres conocer la escuela antes de reservar?",
+      "sub": "Únete a una videollamada en directo para un recorrido personalizado por el campus, las salas de clase, el shala de yoga y las habitaciones.",
+      "cta": "Reservar llamada. Ver la escuela. Ver tu habitación. Ver la sala de yoga.",
+      "bookCallLive": "Conoce la escuela, tu habitación y el shala de yoga en directo. Completa tus datos a continuación para programarlo."
+    },
+    "takeaway": {
+      "badge": "Lo que te llevas",
+      "heading": "Lo que te llevas",
+      "headingItalic": "a casa",
+      "sub": "Más allá del certificado físico, te llevas una perspectiva transformada, una conexión profunda contigo mismo y habilidades auténticas para guiar a los demás.",
+      "careerImpactTitle": "Impacto profesional:",
+      "careerImpactDesc": "Al completar el curso de profesor de yoga de 200 horas, puedes empezar a dar clases en cualquier parte del mundo: en estudios, online, retiros o en tu propio proyecto independiente.",
+      "card1Title": "Certificación global",
+      "card1Desc": "Yoga Alliance RYT-200 para comenzar tu carrera donde tú elijas.",
+      "card2Title": "Dominio de la práctica",
+      "card2Desc": "Instrucción experta en Hatha, Vinyasa, Ashtanga e Iyengar.",
+      "card3Title": "Seguridad y anatomía",
+      "card3Desc": "Aprende a enseñar y practicar con total seguridad y sin lesiones.",
+      "card4Title": "Profundidad espiritual",
+      "card4Desc": "Inmersión profunda en Mantras, meditación y filosofía clásica.",
+      "card5Title": "Metodología docente",
+      "card5Desc": "Herramientas prácticas para guiar, ajustar e inspirar a tus alumnos.",
+      "card6Title": "Vínculos para siempre",
+      "card6Desc": "Conexiones duraderas con una comunidad internacional de yoga."
+    },
+    "timeline": {
+      "prepTitle": "La preparación comienza al inscribirte",
+      "prepDesc": "Inicia tu camino con materiales previos y asesoramiento personalizado.",
+      "datesTitle": "Formación: del 1 al 24 de cada mes",
+      "datesDesc": "Programa inmersivo de 24 días cada mes en Bali.",
+      "supportTitle": "Apoyo vitalicio en YogaGarhi",
+      "supportDesc": "Conectado para siempre con nuestra familia global de yoga."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Alojamiento",
+      "featuresSub": "Un sereno retiro de yoga en el corazón de la sagrada región de Ubud en Bali",
+      "feat1": "10 hermosas cascadas a menos de 10 km",
+      "feat2": "Bosque privado con cascada propia en las instalaciones",
+      "feat3": "Tranquilas caminatas entre arrozales dentro del recinto",
+      "feat4": "A solo 15 km del centro histórico de Ubud",
+      "glimpses": "Imágenes de tu estancia",
+      "allRooms": "Todas las habitaciones incluyen",
+      "wifi": "Wi-Fi gratis",
+      "hotWater": "Agua caliente",
+      "acFan": "Aire acondicionado / Ventilador",
+      "cleaning": "Limpieza diaria",
+      "bed1": "cama",
+      "bedsMore": "camas",
+      "courseOnly": "Solo curso",
+      "mostPopular": "Más popular",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Más allá de la esterilla",
+      "heading": "Excursiones sagradas",
+      "sub": "Sumérgete en la herencia espiritual de Bali a través de vivencias transformadoras"
+    },
+    "prakritiResearch": {
+      "heading": "Investigación de Sachin Ji sobre yoga personalizado y Prakriti",
+      "quote": "«El yoga no puede ser igual para todos, porque cada cuerpo porta una energía diferente»",
+      "card1Title": "La pregunta esencial",
+      "card1Text": "Durante los estudios de Maestría en Yoga de nuestro profesor principal, surgió una pregunta ineludible: ¿Por qué la misma práctica calma a unas personas, mientras deja a otras cansadas, inquietas o agitadas?",
+      "card2Title": "Investigación profunda",
+      "card2Text": "Esto dio paso a una rigurosa investigación en textos clásicos, Ayurveda y años de práctica con estudiantes. La respuesta fue simple y contundente: cada persona nace con una Prakriti única.",
+      "card3Title": "El mapa energético",
+      "card3Text": "La Prakriti define el cuerpo, la mente, las emociones y el sistema nervioso. Unas personas necesitan enraizamiento, otras movimiento y otras quietud. Un estilo rígido puede generar desequilibrios.",
+      "card4Title": "La calidad de la práctica",
+      "card4Text": "Más allá del estilo de yoga que practiques, lo que de verdad importa es cómo lo practicas: cómo se cuida el sistema nervioso, cómo fluye la respiración y cómo se apoya a tu Dosha.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Fruto de esta comprensión nació Shiv–Shakti Sadhana: un enfoque equilibrado que armoniza estabilidad y movimiento, presencia y energía. Aquí el Asana brinda fuerza y enraizamiento.",
+      "card6Title": "Retorno al equilibrio",
+      "card6Text": "Cuando el yoga respeta tu Prakriti, se vuelve accesible, sostenible y profundamente sanador. El verdadero yoga no te cambia: te devuelve a tu propio equilibrio.",
+      "conclusion1": "Nuestro profesor principal observó que cuando la práctica no respeta el sistema nervioso ni el tipo de energía natural, incluso las posturas correctas pueden causar cansancio o inquietud.",
+      "conclusion2": "«Cuando el yoga respeta tu Prakriti, resulta accesible, sostenible y profundamente sanador para todos. Aquí el yoga no se impone: es personalizado, consciente y respetuoso de quien eres.»"
+    },
+    "ethicsExtra": {
+      "code1": "Puntualidad rigurosa",
+      "code2": "Sin alcohol ni tabaco",
+      "code3": "Dieta estrictamente vegetariana",
+      "code4": "Silencio respetado en clase",
+      "code5": "Vestimenta modesta y adecuada",
+      "code6": "Respeto mutuo absoluto",
+      "code7": "Sin teléfonos en la sala",
+      "code8": "Asistencia completa requerida",
+      "refund1": "Reprogramación válida por 12 meses",
+      "refund2": "Transferencia de plaza permitida",
+      "refund3": "Reembolso total si cancelamos nosotros",
+      "refund4": "Política de día de prueba",
+      "refund5": "Sin reembolso después del Día 1",
+      "reviewsHeading": "Lo que dicen nuestros estudiantes",
+      "viewAllGoogle": "Ver todas las opiniones en Google",
+      "basedOnReviews": "Basado en",
+      "openGoogleMaps": "Abrir en Google Maps",
+      "open24Hours": "Abierto 24 horas"
+    },
+    "sunday": {
+      "note": "El domingo es un día completo de descanso para relajación, estudio personal o excursiones opcionales.",
+      "cta": "Explorar el domingo en Bali"
+    },
+    "tapHover": {
+      "tap": "Toca para ver más",
+      "hover": "Pasa el ratón para ver más"
+    },
+    "inclusionsList": [
+      "Habitación limpia y confortable",
+      "Baño privado con agua caliente",
+      "Aire acondicionado / ventilador",
+      "Conexión Wi-Fi gratuita",
+      "Tres comidas vegetarianas saludables al día",
+      "Infusiones herbales y agua potable filtrada",
+      "Material de estudio (manuales, cuadernos, bolígrafos)",
+      "Esterillas de yoga y soportes incluidos",
+      "Excursiones al aire libre y salidas de fin de semana",
+      "Recogida en el aeropuerto a la llegada (aeropuerto más cercano)",
+      "Equipo de asistencia en el campus las 24 horas",
+      "Certificación oficial al completar el curso",
+      "Masaje balinés tradicional",
+      "Espectáculo de danza tradicional balinesa",
+      "Caminata guiada entre arrozales",
+      "Módulo de preparación online Pre-TTC incluido",
+      "Taller especializado de equilibrios sobre brazos",
+      "Taller formativo de Ayurveda",
+      "Derecho a repetición vitalicia gratuita del curso",
+      "Libro YogaGarhi de 35+ secuencias creativas"
+    ],
+    "exclusionsList": [
+      "Vuelos internacionales y gastos de traslado",
+      "Visado turístico y seguro médico de viaje",
+      "Traslado de regreso al aeropuerto",
+      "Servicio de lavandería",
+      "Compras personales y actividades adicionales"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Formación de yoga multi-estilo",
+        "description": "Aprende el yoga en su forma tradicional y probada. Nuestros profesores preservan la sabiduría de la tradición yóguica."
+      },
+      {
+        "title": "Certificado por Yoga Alliance",
+        "description": "Obtén una titulación reconocida en todo el mundo y comienza a impartir clases con plena seguridad."
+      },
+      {
+        "title": "Entorno sereno en Bali",
+        "description": "Vive el yoga inmerso en la naturaleza. Playas tranquilas y vegetación exuberante que enriquecen tu práctica."
+      },
+      {
+        "title": "Excursiones al aire libre",
+        "description": "Descubre templos sagrados, playas y senderos naturales equilibrando formación con vivencias culturales."
+      },
+      {
+        "title": "Grupos reducidos",
+        "description": "Disfruta de atención cercana y personalizada. El progreso de cada alumno es nuestra prioridad."
+      },
+      {
+        "title": "Comunidad acogedora",
+        "description": "Forma parte de una familia cálida y positiva en un entorno de aprendizaje seguro y empático."
+      },
+      {
+        "title": "Masaje balinés",
+        "description": "Terapia tradicional indonesia orientada a relajar la musculatura y favorecer un bienestar integral."
+      },
+      {
+        "title": "Danza tradicional balinesa",
+        "description": "Expresión artística ancestral cargada de espiritualidad que refleja el valioso legado cultural de Bali."
+      },
+      {
+        "title": "Comidas saludables",
+        "description": "Alimentación sátvica fresca y nutritiva diseñada para acompañar y revitalizar tu práctica diaria."
+      },
+      {
+        "title": "Práctica de meditación",
+        "description": "Cultiva la paz mental y la atención consciente a través de sesiones guiadas cada jornada."
+      },
+      {
+        "title": "Profesores experimentados",
+        "description": "Aprende de instructores certificados con una sólida trayectoria pedagógica y humana."
+      },
+      {
+        "title": "Estilo de vida yóguico",
+        "description": "Adopta hábitos yóguicos que transformarán positivamente tu cuerpo, mente y alma."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Taller de Ayurveda y cocina ayurvédica",
+        "description": "Conoce tu constitución personal (Prakriti) y equilibra tus doshas mediante la alimentación y el estilo de vida."
+      },
+      {
+        "title": "Dominio de equilibrios sobre brazos",
+        "description": "Desarrolla fuerza, técnica y seguridad para abordar posturas como el Cuervo, Cuervo lateral y Paloma voladora."
+      },
+      {
+        "title": "Taller de Handstand y equilibrio invertido",
+        "description": "Supera el miedo y alinea tu centro con ejercicios progresivos en pared y en parejas hacia el pino libre."
+      },
+      {
+        "title": "Yin Yoga y estiramiento profundo",
+        "description": "Alcanza el tejido conectivo profundo mediante posturas pasivas prolongadas para liberar tensiones acumuladas."
+      },
+      {
+        "title": "Sesión de sanación con sonido y cuencos",
+        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+      },
+      {
+        "title": "Bhakti Yoga y Kirtan",
+        "description": "Abre tu corazón con cantos sagrados y mantras devocionales conectando con la faceta espiritual del yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Espectáculo de danza balinesa",
+        "description": "Admira la danza clásica de Bali: una cautivadora manifestación de elegancia, narrativa y devoción espiritual."
+      },
+      {
+        "title": "Caminata por los arrozales",
+        "description": "Pasea por las icónicas terrazas de arroz de Ubud y conecta con el ritmo pacífico de la vida rural en la isla."
+      },
+      {
+        "title": "Visita a cascada sagrada",
+        "description": "Visita una cascada sagrada para participar en un ritual ancestral de purificación con agua pura de manantial."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Desayuno",
+        "time": "07:00",
+        "items": [
+          "Frutas tropicales frescas",
+          "Granola casera con yogur de coco",
+          "Tés herbales y zumos naturales",
+          "Gachas de arroz balinesas"
+        ]
+      },
+      {
+        "meal": "Almuerzo",
+        "time": "12:30",
+        "items": [
+          "Buddha bowls nutritivos",
+          "Preparaciones de tempeh y tofu",
+          "Ensaladas frescas de la huerta",
+          "Verduras tradicionales de Bali"
+        ]
+      },
+      {
+        "meal": "Cena",
+        "time": "18:30",
+        "items": [
+          "Sopas reconfortantes",
+          "Boles de cereales al vapor y dahl",
+          "Kitchari ayurvédico especiado",
+          "Infusiones relajantes de hierbas"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Historias en video de alumnos",
+    "videoStoriesHeading": "Escucha directamente a nuestros graduados en Bali",
+    "videoStoriesSub": "Reflexiones sinceras de practicantes que vivieron esta formación residencial en YogaGarhi.",
+    "verifiedGraduate": "Graduado verificado",
+    "speakTeacherTitle": "¿Quieres hablar primero con un maestro principal?",
+    "speakTeacherDesc": "Videollamada 1 a 1 de 15 minutos para comentar tus metas, alojamiento y fechas.",
+    "helpfulGuidesBadge": "Lectura recomendada antes de viajar",
+    "helpfulGuidesTitle": "Guías útiles y artículos de preparación",
+    "helpfulGuidesDesc": "Explora nuestras guías completas para preparar mente, cuerpo y viaje hacia tu formación en Bali.",
+    "readArticle": "Leer artículo",
+    "mindfulEating": "Un día de alimentación consciente",
+    "clickToCollapse": "Clic para contraer",
+    "clickToExpand": "Clic para expandir",
+    "caterDietsTitle": "Nos adaptamos a todas las dietas",
+    "caterDietsDesc": "Avísanos sobre tus necesidades dietéticas y nos encargaremos de todo",
+    "studentStories": {
+      "badge": "Historias de Alumnos",
+      "heading": "Corazones Transformados en YogaGarhi",
+      "sub": "\"Descubre los testimonios de quienes vivieron esta profunda experiencia de transformación.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canadá",
+          "quote": "YogaGarhi es auténtico y arraigado en la esencia viva del yoga. Desde el primer día me sentí escuchada y acompañada como persona, nunca como un simple número. Los maestros se comprometen genuinamente con tu evolución y te ayudan a desarrollar tu propia voz docente.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turquía",
+          "quote": "Sachin Ji es uno de los maestros de yoga más sabios con los que he aprendido. A pesar de haber llegado como principiante absoluta, su infinita paciencia y calidez me permitieron asimilar con confianza las bases de la alineación postural.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Completé mi profesorado de 200 horas en Bali y fue una experiencia mágica. 🌺 Los conocimientos impartidos fueron puros y profundos. Los profesores enseñan desde el corazón con bondad y sabiduría. Te sientes en un hogar cálido y protector.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canadá",
+          "quote": "Sachin Ji es un maestro y ser humano excepcional. Esta formación en Bali encendió un camino maravilloso que me ha brindado la seguridad y preparación para impartir clases en diversos países del mundo.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Alemania",
+          "quote": "Aprecio profundamente la serenidad, cercanía y bienvenida de Sachin Ji. Es sumamente sabio y guía a cada alumno con esmero. Sus clases te permiten superar tus propios límites con soltura y confianza.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Una experiencia enriquecedora e inolvidable en YogaGarhi Bali. El grupo reducido fue determinante: cada ajuste postural fue personalizado y consciente. Terminé la formación sintiéndome lista para enseñar.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
+  },
+  "course100Rishikesh": {
+    "metaTitle": "Formación de Profesores de Yoga 100 Horas en Rishikesh | India",
+    "metaDesc": "Curso residencial de 100 horas en Rishikesh, India. Maestros auténticos del Himalaya, ashram junto al sagrado Ganges y certificación.",
+    "heroTitle": "Formación de Profesores de Yoga 100 Horas en Rishikesh",
+    "heroSub": "Experimenta el yoga tradicional junto al sagrado Ganges. 12 días de formación fundamental en Rishikesh, India.",
+    "quickInfo": {
+      "course": "Curso",
+      "courseVal": "YTTC 100 Horas Rishikesh",
+      "duration": "Duración",
+      "durationVal": "12 Days",
+      "style": "Estilo",
+      "styleVal": "Yoga Multi-Style",
+      "level": "Nivel",
+      "levelVal": "Principiante a Intermedio",
+      "certification": "Certificación",
+      "certificationVal": "Certificado Yoga Alliance",
+      "startingFrom": "$1,149 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Ahorra",
+      "earlyBirdDiscount": "Ahorra $200 con precio anticipado"
+    },
+    "highlights": {
+      "smallGroups": "Grupos reducidos (máx. 8–10)",
+      "smallGroupsSub": "Atención individual",
+      "preYttc": "Apoyo antes de comenzar",
+      "preYttcSub": "Preparación y guía",
+      "mentorship": "Mentoría post-graduación",
+      "mentorshipSub": "1 año de apoyo continuo",
+      "goodieBag": "Kit de bienvenida de regalo",
+      "goodieBagSub": "Esenciales de yoga"
+    },
+    "storyTitle": "Transforma tu práctica en sabiduría viva",
+    "storyP1": "Nuestra formación de profesores de yoga de 200 horas en Bali es una inmersión completa orientada a practicantes que buscan profundidad genuina en lugar de posturas mecánicas. Ubicado en el tranquilo pueblo de Gianyar, a solo 15 minutos de Ubud, YogaGarhi ofrece un refugio sereno lejos del turismo masivo.",
+    "storyP2": "A lo largo de 24 días estudiarás Hatha clásico, Vinyasa Flow, la serie Ashtanga Primary y alineación de Iyengar junto con anatomía aplicada, filosofía, pranayama y meditación. Con un cupo riguroso de 8–10 alumnos, nuestros maestros del Himalaya ofrecen un acompañamiento íntimo a cada persona.",
+    "watchVideoStories": "Ver vídeos y testimonios de estudiantes",
+    "videoBannerTitle": "Reserva una llamada. Conoce la escuela. Mira tu habitación. Mira la shala.",
+    "whyYogaGarhiBox": {
+      "badge": "Por qué elegir YogaGarhi",
+      "heading": "Linaje genuino del Himalaya en un ashram íntimo en Bali",
+      "sub": "Nos dedicamos a practicantes comprometidos en vez de cursos masivos impersonales. Esto es lo que distingue nuestra formación de 200 horas:",
+      "p1Title": "Máximo 8–10 alumnos por grupo",
+      "p1Highlight": "Enfoque personalizado",
+      "p1Desc": "Grupos reducidos que aseguran atención directa, ajustes físicos adecuados y escucha permanente.",
+      "p2Title": "Entrenamiento online Pre-TTC gratuito",
+      "p2Highlight": "Prepárate con confianza",
+      "p2Desc": "Curso preparatorio antes de tu viaje a Bali para fortalecer tu cuerpo y tus bases teóricas.",
+      "p3Title": "1 año de mentoría tras la graduación",
+      "p3Highlight": "Comunidad duradera",
+      "p3Desc": "Acompañamiento continuo, asesoría en tus secuencias y apoyo profesional mucho después de terminar tu estancia.",
+      "p4Title": "Repetición del curso gratis de por vida",
+      "p4Highlight": "Regreso sin matrícula",
+      "p4Desc": "Regresa gratis a futuras formaciones de YogaGarhi para actualizar tus conocimientos o colaborar como asistente.",
+      "pkgBadge": "Paquetes con alojamiento (24 días / 23 noches) y opción de solo formación",
+      "saveEarlyBird": "Ahorra $300 con precio anticipado",
+      "tuitionFrom": "Solo formación desde $999 USD | Residencial desde $1,750 USD",
+      "breakdown": "Solo formación: $999 • Habitación triple: $1,750 • Habitación doble: $1,899 • Habitación privada: $2,499",
+      "checkAvailability": "Consultar disponibilidad",
+      "bookFreeCall": "Reservar videollamada gratuita"
+    },
+    "hoursStructure": {
+      "badge": "Horas lectivas",
+      "heading": "Cómo se estructuran las 200 horas",
+      "sub": "Una distribución equilibrada entre contacto directo, alineación práctica y estudio personal conforme a los criterios de Yoga Alliance.",
+      "contactHours": "Horas de contacto directo",
+      "contactHoursDesc": "Instrucción directa con maestros principales en asanas, alineación, anatomía y filosofía.",
+      "selfStudy": "Autoestudio y práctica",
+      "selfStudyDesc": "Lecturas recomendadas, diario reflexivo, práctica entre compañeros y diseño de clases.",
+      "totalCert": "Total de certificación",
+      "totalCertDesc": "Cumple y supera los estándares RYT 200 de Yoga Alliance.",
+      "hoursUnit": "Horas"
+    },
+    "syllabus": {
+      "heading": "Plan de estudios y temario",
+      "sub": "Un temario exigente y equilibrado que armoniza las escrituras tradicionales con la biomecánica actual.",
+      "tab1": "Hatha y Vinyasa",
+      "tab2": "Ashtanga e Iyengar",
+      "tab3": "Pranayama y Meditación",
+      "tab4": "Anatomía y Fisiología",
+      "tab5": "Filosofía y Ética",
+      "tapMore": "Toca para ver más",
+      "hoverMore": "Pasa el cursor para ver más",
+      "takeaway": "Lo que integras",
+      "carryHome": "Para llevarte a casa",
+      "careerImpact": "Impacto en tu enseñanza:",
+      "cards": [
+        {
+          "title": "Posturas de Ashtanga Yoga",
+          "content": "Secuencia completa de la primera serie de Ashtanga Yoga. Progresión semanal guiada por Saludos al Sol A y B, posturas de pie, sentadas y práctica estilo Mysore."
+        },
+        {
+          "title": "Hatha y Vinyasa Flow",
+          "content": "Serie Pawanmuktasana, variantes de Surya Namaskar, posturas de pie y sentadas, extensiones hacia atrás, flexiones hacia adelante, inversiones y metodología de secuenciación."
+        },
+        {
+          "title": "Filosofía del Yoga",
+          "content": "Introducción a los Yoga Sutras de Patanjali, los ocho pasos del Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna e historias inspiradoras de maestros yoguis."
+        },
+        {
+          "title": "Pranayama y Respiración",
+          "content": "Técnicas completas de respiración: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali y Sheetkari."
+        },
+        {
+          "title": "Anatomía y Fisiología",
+          "content": "Planos de movimiento, protección articular, anatomía de tobillo, rodilla, columna y hombros, biomecánica respiratoria, fisiología muscular y sistema nervioso."
+        },
+        {
+          "title": "Metodología de Enseñanza",
+          "content": "Secuenciación de clases, ajustes y correcciones, adaptación a diversos niveles, uso de la voz, preparación mental, demostración y planificación didáctica."
+        },
+        {
+          "title": "Meditación y Mantras",
+          "content": "Diversas técnicas de meditación, canto de mantras védicos, Trataka, meditación dinámica de Osho, Nada Brahma, Antar Mouna y cultivo del silencio interior."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga enfocado en la precisión anatómica y alineación mediante accesorios como bloques, cinturones y mantas para perfeccionar la postura y prevenir lesiones."
+        },
+        {
+          "title": "Principios de Alineación",
+          "content": "Bases de una práctica segura: alineación articular, patrones de activación muscular y biomecánica funcional para fortalecer y proteger el cuerpo."
+        },
+        {
+          "title": "Bandhas (Cierres Energéticos)",
+          "content": "Dominio de Mula, Uddiyana y Jalandhara Bandha para encauzar el flujo de prana, tonificar el núcleo y alcanzar una mayor profundidad meditativa."
+        },
+        {
+          "title": "Mudras (Gestos Sagrados)",
+          "content": "Gestos sagrados de manos y cuerpo que canalizan la energía vital, agudizan el enfoque y conectan con planos elevados de consciencia durante la práctica."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Horario diario en el ashram",
+      "sub": "Un ritmo diario armónico entre práctica intensa, estudio filosófico, comidas sanas y descanso.",
+      "time1": "06:00",
+      "act1": "Despertar y purificación matinal",
+      "time2": "06:30",
+      "act2": "Pranayama, cantos y meditación",
+      "time3": "07:30",
+      "act3": "Práctica matinal de asanas (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Desayuno sátvico nutritivo",
+      "time5": "10:00",
+      "act5": "Filosofía del yoga y estudio de textos",
+      "time6": "12:00",
+      "act6": "Almuerzo saludable y descanso",
+      "time7": "15:00",
+      "act7": "Anatomía aplicada y biomecánica",
+      "time8": "16:30",
+      "act8": "Metodología docente y taller de alineación",
+      "time9": "18:00",
+      "act9": "Práctica vespertina (Ashtanga / Yin / Restaurativo)",
+      "time10": "19:30",
+      "act10": "Cena sátvica",
+      "time11": "21:00",
+      "act11": "Estudio personal, silencio y descanso",
+      "beyondTheMat": "Más allá de la esterilla",
+      "badge": "Rutina diaria",
+      "wakeUp": "Despertar y purificación matinal",
+      "morningPranayama": "Pranayama y meditación",
+      "morningAsana": "Práctica matinal de asanas (Hatha / Vinyasa)",
+      "breakfast": "Desayuno sátvico saludable",
+      "philosophyClass": "Filosofía del yoga y estudio de textos",
+      "lunch": "Almuerzo nutritivo y descanso",
+      "anatomyClass": "Anatomía aplicada y fisiología",
+      "methodologyClass": "Metodología docente y clínica de alineación",
+      "eveningAsana": "Práctica vespertina (Ashtanga / Yin / Restaurativo)",
+      "dinner": "Cena sátvica",
+      "selfStudy": "Estudio personal, silencio y descanso"
+    },
+    "inclusions": {
+      "heading": "Qué incluye tu formación",
+      "sub": "Todo dispuesto para asegurar una experiencia profunda y libre de preocupaciones.",
+      "incAccom": "23 noches de estancia en el ashram",
+      "incMeals": "3 comidas sátvicas recién elaboradas al día (vegetariano/vegano)",
+      "incCert": "Certificado Yoga Alliance RYT 200 tras completar el curso",
+      "incManuals": "Manuales oficiales de la formación, cuadernos y materiales de estudio",
+      "incKit": "Esterilla de yoga y accesorios de apoyo incluidos en la escuela",
+      "incExcursions": "Excursiones culturales sagradas (templo del agua, arrozales, danza balinesa)",
+      "incCeremonies": "Ceremonias tradicionales de fuego de inicio y clausura (Agni Hotra)",
+      "incPickup": "Recogida en el aeropuerto de Denpasar (DPS) en la fecha oficial de llegada",
+      "incPre": "Módulo preparatorio Pre-TTC online incluido",
+      "incRepeat": "Posibilidad de repetir el curso de por vida (sin pagar matrícula)",
+      "notIncHeading": "No incluye",
+      "notIncFlights": "Billetes de avión internacionales o domésticos",
+      "notIncVisa": "Tasas de visado para Indonesia",
+      "notIncInsurance": "Seguro médico y de viaje personal"
+    },
+    "pricing": {
+      "heading": "Habitaciones y precios",
+      "sub": "Precios claros y todo incluido, sin sorpresas ni costes ocultos.",
+      "tuitionOnly": "Paquete solo formación",
+      "tuitionOnlyDesc": "Matrícula, comidas completas, material pedagógico y certificación. Alojamiento fuera del ashram.",
+      "triple": "Habitación triple compartida",
+      "tripleDesc": "Habitación amplia con aire acondicionado compartida con dos compañeros, baño privado y balcón.",
+      "double": "Habitación doble compartida",
+      "doubleDesc": "Habitación cómoda para dos personas con baño privado, aire acondicionado y vistas al jardín o piscina.",
+      "private": "Habitación privada Deluxe",
+      "privateDesc": "Espacio privado con cama matrimonial grande, baño privado, aire acondicionado y balcón exclusivo.",
+      "earlyBird": "Descuento anticipado",
+      "save300": "Ahorra $300 USD",
+      "earlyBirdPrice": "Precio anticipado",
+      "tuitionFees": "Tarifas y Habitaciones (100 Horas Rishikesh)",
+      "tripleSharing": "Habitación Triple ($1,149)",
+      "doubleSharing": "Habitación Doble ($1,349)",
+      "privateRoom": "Habitación Privada ($1,649)",
+      "choosePackage": "Elige tu paquete",
+      "reserveSpot": "Reserva tu plaza",
+      "saveUSD": "Ahorra $300 USD",
+      "residentialDuration": "12 días de formación residencial en Rishikesh, India"
+    },
+    "ethics": {
+      "codeOfConduct": "Código de conducta",
+      "refundCancellation": "Reembolso y cancelación",
+      "ryt200Title": "Profesor de Yoga Registrado (RYT 200)",
+      "viewRegistry": "Consultar registro de escuelas de Yoga Alliance"
+    },
+    "faqsHeading": "Preguntas frecuentes",
+    "faqs": [
+      {
+        "question": "¿Es adecuada esta formación de yoga de 200 horas para principiantes?",
+        "answer": "Sí. El plan de estudios acompaña al practicante desde los fundamentos hasta el nivel intermedio. Además, cada estudiante inscrito recibe acceso a nuestra preparación previa online para adquirir fuerza, flexibilidad y entendimiento postural antes de viajar a Bali."
+      },
+      {
+        "question": "¿Qué estilos de yoga se imparten en este TTC de 200 horas?",
+        "answer": "Estudiarás yoga multi-style basado en la tradición genuina del Himalaya: Hatha Yoga clásico, Vinyasa Flow dinámico, serie Ashtanga Primary (según K. Pattabhi Jois) y alineación minuciosa inspirada en Iyengar."
+      },
+      {
+        "question": "¿Cuál es el horario típico de un día de formación?",
+        "answer": "Un día habitual en YogaGarhi transcurre con este orden estructurado: 06:00 Despertar; 06:30 Pranayama y meditación; 07:30 Hatha y Vinyasa; 09:00 Desayuno; 10:00 Filosofía del yoga; 12:00 Almuerzo y descanso; 15:00 Anatomía aplicada; 16:30 Alineación y metodología docente; 18:00 Ashtanga e Iyengar con yogaterapia; 19:30 Cena; 21:00 Autoestudio y descanso."
+      }
+    ],
+    "hero": {
+      "badge": "Certificado Yoga Alliance RYT 200",
+      "h1": "Formación de Profesores de Yoga 100 Horas en Rishikesh",
+      "sub": "Un auténtico viaje yóguico de 12 días en Rishikesh, la capital mundial del yoga. Aprende de maestros tradicionales junto al sagrado Ganges.",
+      "quickDuration": "12 Días",
+      "quickLevel": "Principiante a Intermedio",
+      "quickCert": "Certificado Yoga Alliance",
+      "quickLang": "Inglés",
+      "quickBatch": "8–10 alumnos",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Reservar plaza",
+      "btnBrochure": "Descargar programa",
+      "btnCounselor": "Hablar con un asesor"
+    },
+    "overview": {
+      "heading": "Bienvenido a YogaGarhi Rishikesh",
+      "story": "Nuestra formación de profesores de yoga de 200 horas en Bali es un curso integral para niveles principiante e intermedio orientado a formar profesores seguros o a comprender el yoga para la vida diaria. YogaGarhi se encuentra en Gianyar, a unos 15 km de Ubud, en un apacible entorno natural. Durante el curso practicarás asanas a diario, aprenderás alineación anatómica, y estudiarás pranayama, meditación, filosofía y metodología docente.",
+      "p1": "A los pies del Himalaya y a orillas del sagrado río Ganges, nuestro curso de 100 horas ofrece una inmersión genuina en la vida de ashram.",
+      "p2": "Guiado por maestros indios cualificados, estudia Hatha, Ashtanga, pranayama, meditación y participa diariamente en el Ganga Aarti."
+    },
+    "curriculum": {
+      "badge": "Módulos del plan de estudios",
+      "heading": "Desglose del programa y temas de estudio",
+      "sub": "Haz clic en cada módulo para explorar temas detallados, técnicas prácticas y bases conceptuales.",
+      "modules": {
+        "asana": "Práctica de asanas y alineación",
+        "pranayama": "Pranayama y energía sutil",
+        "philosophy": "Filosofía del yoga y estilo de vida",
+        "anatomy": "Anatomía y fisiología",
+        "methodology": "Metodología docente y práctica",
+        "meditation": "Meditación y atención plena",
+        "iyengar": "Bases de Yoga Iyengar y soportes",
+        "vinyasa": "Secuenciación de Vinyasa Flow",
+        "hatha": "Hatha Yoga clásico y tradicional"
+      },
+      "detailedModules": [
+        {
+          "title": "Posturas de Ashtanga Yoga",
+          "items": [
+            "Serie primaria completa de Ashtanga por K. Pattabhi Jois",
+            "Semana 1: Introducción y Saludos al Sol A y B",
+            "Semana 2: Posturas de pie y uso de accesorios",
+            "Semana 3: Posturas sentadas y posturas finales",
+            "Semana 4: Estilo Mysore y práctica de enseñanza"
+          ]
+        },
+        {
+          "title": "Filosofía del Yoga",
+          "items": [
+            "Yoga Sutras completos de Patanjali",
+            "Las ocho ramas del Ashtanga Yoga",
+            "Pancha-Vayus y Panchakoshas",
+            "Sattva, Rajas y Tamas (Triguna)",
+            "Introducción a los Vedas",
+            "Historias inspiradoras de grandes maestros yoguis"
+          ]
+        },
+        {
+          "title": "Prácticas de Respiración Pranayama",
+          "items": [
+            "Técnicas completas de pranayama",
+            "Las seis prácticas de purificación Shatkarma",
+            "Respiración avanzada: Sheetali, Sheetkari",
+            "Kumbhaka (retención de la respiración)",
+            "Integración consciente con la práctica de asanas"
+          ]
+        },
+        {
+          "title": "Recitación de Sonidos Sagrados y Mantras",
+          "items": [
+            "Colección completa de mantras tradicionales",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Shloka a Patanjali)",
+            "Práctica diaria de canto de mantras"
+          ]
+        },
+        {
+          "title": "Anatomía y Fisiología",
+          "items": [
+            "Estudio completo de los sistemas corporales",
+            "Fisiología de músculos y articulaciones",
+            "Sistema respiratorio y nervioso",
+            "Nutrición y sistema digestivo",
+            "Talleres prácticos sobre diferentes asanas"
+          ]
+        },
+        {
+          "title": "Metodología de Enseñanza",
+          "items": [
+            "Secuenciación integral de clases de yoga",
+            "Principios de demostración y observación",
+            "Preparación mental y emocional",
+            "Planificación estructurada de sesiones de clase",
+            "Prácticas docentes y evaluaciones guiadas"
+          ]
+        },
+        {
+          "title": "Meditación y Bandhas",
+          "items": [
+            "Meditación dinámica de Osho",
+            "Meditación Nada Brahma",
+            "Antar Mouna y Ajapa Japa",
+            "Dominio de los cuatro Bandhas principales",
+            "Integración con asanas y pranayama"
+          ]
+        },
+        {
+          "title": "Arte de la Alineación y Ajustes",
+          "items": [
+            "Biomecánica y alineación funcional de posturas clásicas",
+            "Metodología de indicaciones verbales y ajustes táctiles seguros",
+            "Comprensión de variaciones anatómicas individuales",
+            "Estrategias de modificación con bloques y cinturones"
+          ]
+        },
+        {
+          "title": "Práctica Clásica de Hatha Yoga",
+          "items": [
+            "Estudio de principios tradicionales de Hatha y posturas sostenidas",
+            "Secuenciación Hatha: calentamiento, postura cumbre y contraposturas",
+            "Equilibrio de energías solar (Ha) y lunar (Tha)",
+            "Integración de Bandhas y Mudras en posturas estáticas"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga y Alineación de Precisión",
+          "items": [
+            "Alineación metódica con bloques, correas y mantas",
+            "Posicionamiento geométrico preciso de pelvis y columna",
+            "Preparación segura para posturas invertidas",
+            "Secuencias restaurativas con soportes terapéuticos"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow y Secuenciación Dinámica",
+          "items": [
+            "Estructura inteligente: calentamiento, postura pico y relajación",
+            "Transiciones fluidas y saltos en armonía con la respiración",
+            "Diseño de clases temáticas según objetivos y niveles",
+            "Ritmo, modulación del tempo y sostenimiento del espacio"
+          ]
+        },
+        {
+          "title": "Clases y Talleres Especiales",
+          "items": [
+            "Sesiones de Sanación con Sonido (Sound Healing)",
+            "Experiencia de Yoga en la playa de Bali",
+            "Yin Yoga y Acro Yoga",
+            "Fundamentos de Ayurveda",
+            "Ceremonia de fuego tradicional Agni Hotra"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Alojamiento y tarifas",
+      "sub": "Tarifas transparentes, todo incluido sin gastos imprevistos.",
+      "tuitionOnly": "Paquete solo formación",
+      "tuitionOnlyDesc": "Docencia, comidas completas, manuales y título. Alojamiento exterior.",
+      "triple": "Habitación triple compartida",
+      "tripleDesc": "Habitación climatizada con baño privado y terraza compartida entre tres personas.",
+      "double": "Habitación doble compartida",
+      "doubleDesc": "Habitación climatizada para dos personas con baño privado y vista al jardín.",
+      "private": "Habitación privada Deluxe",
+      "privateDesc": "Habitación individual con cama king, baño en suite, aire acondicionado y balcón.",
+      "earlyBird": "Precio anticipado",
+      "save300": "Ahorra $300 USD"
+    },
+    "tourCall": {
+      "heading": "¿Quieres conocer la escuela antes de reservar?",
+      "sub": "Únete a una videollamada en directo para un recorrido personalizado por el campus, las salas de clase, el shala de yoga y las habitaciones.",
+      "cta": "Reservar llamada. Ver la escuela. Ver tu habitación. Ver la sala de yoga.",
+      "bookCallLive": "Conoce la escuela, tu habitación y el shala de yoga en directo. Completa tus datos a continuación para programarlo."
+    },
+    "takeaway": {
+      "badge": "Lo que te llevas",
+      "heading": "Lo que te llevas",
+      "headingItalic": "a casa",
+      "sub": "Más allá del certificado físico, te llevas una perspectiva transformada, una conexión profunda contigo mismo y habilidades auténticas para guiar a los demás.",
+      "careerImpactTitle": "Impacto profesional:",
+      "careerImpactDesc": "Al completar el curso de profesor de yoga de 200 horas, puedes empezar a dar clases en cualquier parte del mundo: en estudios, online, retiros o en tu propio proyecto independiente.",
+      "card1Title": "Certificación global",
+      "card1Desc": "Yoga Alliance RYT-200 para comenzar tu carrera donde tú elijas.",
+      "card2Title": "Dominio de la práctica",
+      "card2Desc": "Instrucción experta en Hatha, Vinyasa, Ashtanga e Iyengar.",
+      "card3Title": "Seguridad y anatomía",
+      "card3Desc": "Aprende a enseñar y practicar con total seguridad y sin lesiones.",
+      "card4Title": "Profundidad espiritual",
+      "card4Desc": "Inmersión profunda en Mantras, meditación y filosofía clásica.",
+      "card5Title": "Metodología docente",
+      "card5Desc": "Herramientas prácticas para guiar, ajustar e inspirar a tus alumnos.",
+      "card6Title": "Vínculos para siempre",
+      "card6Desc": "Conexiones duraderas con una comunidad internacional de yoga."
+    },
+    "timeline": {
+      "prepTitle": "La preparación comienza al inscribirte",
+      "prepDesc": "Inicia tu camino con materiales previos y asesoramiento personalizado.",
+      "datesTitle": "Formación: del 1 al 24 de cada mes",
+      "datesDesc": "Programa inmersivo de 24 días cada mes en Bali.",
+      "supportTitle": "Apoyo vitalicio en YogaGarhi",
+      "supportDesc": "Conectado para siempre con nuestra familia global de yoga."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Alojamiento",
+      "featuresSub": "Un sereno retiro de yoga en el corazón de la sagrada región de Ubud en Bali",
+      "feat1": "10 hermosas cascadas a menos de 10 km",
+      "feat2": "Bosque privado con cascada propia en las instalaciones",
+      "feat3": "Tranquilas caminatas entre arrozales dentro del recinto",
+      "feat4": "A solo 15 km del centro histórico de Ubud",
+      "glimpses": "Imágenes de tu estancia",
+      "allRooms": "Todas las habitaciones incluyen",
+      "wifi": "Wi-Fi gratis",
+      "hotWater": "Agua caliente",
+      "acFan": "Aire acondicionado / Ventilador",
+      "cleaning": "Limpieza diaria",
+      "bed1": "cama",
+      "bedsMore": "camas",
+      "courseOnly": "Solo curso",
+      "mostPopular": "Más popular",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Más allá de la esterilla",
+      "heading": "Excursiones sagradas",
+      "sub": "Sumérgete en la herencia espiritual de Bali a través de vivencias transformadoras"
+    },
+    "prakritiResearch": {
+      "heading": "Investigación de Sachin Ji sobre yoga personalizado y Prakriti",
+      "quote": "«El yoga no puede ser igual para todos, porque cada cuerpo porta una energía diferente»",
+      "card1Title": "La pregunta esencial",
+      "card1Text": "Durante los estudios de Maestría en Yoga de nuestro profesor principal, surgió una pregunta ineludible: ¿Por qué la misma práctica calma a unas personas, mientras deja a otras cansadas, inquietas o agitadas?",
+      "card2Title": "Investigación profunda",
+      "card2Text": "Esto dio paso a una rigurosa investigación en textos clásicos, Ayurveda y años de práctica con estudiantes. La respuesta fue simple y contundente: cada persona nace con una Prakriti única.",
+      "card3Title": "El mapa energético",
+      "card3Text": "La Prakriti define el cuerpo, la mente, las emociones y el sistema nervioso. Unas personas necesitan enraizamiento, otras movimiento y otras quietud. Un estilo rígido puede generar desequilibrios.",
+      "card4Title": "La calidad de la práctica",
+      "card4Text": "Más allá del estilo de yoga que practiques, lo que de verdad importa es cómo lo practicas: cómo se cuida el sistema nervioso, cómo fluye la respiración y cómo se apoya a tu Dosha.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Fruto de esta comprensión nació Shiv–Shakti Sadhana: un enfoque equilibrado que armoniza estabilidad y movimiento, presencia y energía. Aquí el Asana brinda fuerza y enraizamiento.",
+      "card6Title": "Retorno al equilibrio",
+      "card6Text": "Cuando el yoga respeta tu Prakriti, se vuelve accesible, sostenible y profundamente sanador. El verdadero yoga no te cambia: te devuelve a tu propio equilibrio.",
+      "conclusion1": "Nuestro profesor principal observó que cuando la práctica no respeta el sistema nervioso ni el tipo de energía natural, incluso las posturas correctas pueden causar cansancio o inquietud.",
+      "conclusion2": "«Cuando el yoga respeta tu Prakriti, resulta accesible, sostenible y profundamente sanador para todos. Aquí el yoga no se impone: es personalizado, consciente y respetuoso de quien eres.»"
+    },
+    "ethicsExtra": {
+      "code1": "Puntualidad rigurosa",
+      "code2": "Sin alcohol ni tabaco",
+      "code3": "Dieta estrictamente vegetariana",
+      "code4": "Silencio respetado en clase",
+      "code5": "Vestimenta modesta y adecuada",
+      "code6": "Respeto mutuo absoluto",
+      "code7": "Sin teléfonos en la sala",
+      "code8": "Asistencia completa requerida",
+      "refund1": "Reprogramación válida por 12 meses",
+      "refund2": "Transferencia de plaza permitida",
+      "refund3": "Reembolso total si cancelamos nosotros",
+      "refund4": "Política de día de prueba",
+      "refund5": "Sin reembolso después del Día 1",
+      "reviewsHeading": "Lo que dicen nuestros estudiantes",
+      "viewAllGoogle": "Ver todas las opiniones en Google",
+      "basedOnReviews": "Basado en",
+      "openGoogleMaps": "Abrir en Google Maps",
+      "open24Hours": "Abierto 24 horas"
+    },
+    "sunday": {
+      "note": "El domingo es un día completo de descanso para relajación, estudio personal o excursiones opcionales.",
+      "cta": "Explorar el domingo en Bali"
+    },
+    "tapHover": {
+      "tap": "Toca para ver más",
+      "hover": "Pasa el ratón para ver más"
+    },
+    "inclusionsList": [
+      "Habitación limpia y confortable",
+      "Baño privado con agua caliente",
+      "Aire acondicionado / ventilador",
+      "Conexión Wi-Fi gratuita",
+      "Tres comidas vegetarianas saludables al día",
+      "Infusiones herbales y agua potable filtrada",
+      "Material de estudio (manuales, cuadernos, bolígrafos)",
+      "Esterillas de yoga y soportes incluidos",
+      "Excursiones al aire libre y salidas de fin de semana",
+      "Recogida en el aeropuerto a la llegada (aeropuerto más cercano)",
+      "Equipo de asistencia en el campus las 24 horas",
+      "Certificación oficial al completar el curso",
+      "Masaje balinés tradicional",
+      "Espectáculo de danza tradicional balinesa",
+      "Caminata guiada entre arrozales",
+      "Módulo de preparación online Pre-TTC incluido",
+      "Taller especializado de equilibrios sobre brazos",
+      "Taller formativo de Ayurveda",
+      "Derecho a repetición vitalicia gratuita del curso",
+      "Libro YogaGarhi de 35+ secuencias creativas"
+    ],
+    "exclusionsList": [
+      "Vuelos internacionales y gastos de traslado",
+      "Visado turístico y seguro médico de viaje",
+      "Traslado de regreso al aeropuerto",
+      "Servicio de lavandería",
+      "Compras personales y actividades adicionales"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Formación de yoga multi-estilo",
+        "description": "Aprende el yoga en su forma tradicional y probada. Nuestros profesores preservan la sabiduría de la tradición yóguica."
+      },
+      {
+        "title": "Certificado por Yoga Alliance",
+        "description": "Obtén una titulación reconocida en todo el mundo y comienza a impartir clases con plena seguridad."
+      },
+      {
+        "title": "Entorno sereno en Bali",
+        "description": "Vive el yoga inmerso en la naturaleza. Playas tranquilas y vegetación exuberante que enriquecen tu práctica."
+      },
+      {
+        "title": "Excursiones al aire libre",
+        "description": "Descubre templos sagrados, playas y senderos naturales equilibrando formación con vivencias culturales."
+      },
+      {
+        "title": "Grupos reducidos",
+        "description": "Disfruta de atención cercana y personalizada. El progreso de cada alumno es nuestra prioridad."
+      },
+      {
+        "title": "Comunidad acogedora",
+        "description": "Forma parte de una familia cálida y positiva en un entorno de aprendizaje seguro y empático."
+      },
+      {
+        "title": "Masaje balinés",
+        "description": "Terapia tradicional indonesia orientada a relajar la musculatura y favorecer un bienestar integral."
+      },
+      {
+        "title": "Danza tradicional balinesa",
+        "description": "Expresión artística ancestral cargada de espiritualidad que refleja el valioso legado cultural de Bali."
+      },
+      {
+        "title": "Comidas saludables",
+        "description": "Alimentación sátvica fresca y nutritiva diseñada para acompañar y revitalizar tu práctica diaria."
+      },
+      {
+        "title": "Práctica de meditación",
+        "description": "Cultiva la paz mental y la atención consciente a través de sesiones guiadas cada jornada."
+      },
+      {
+        "title": "Profesores experimentados",
+        "description": "Aprende de instructores certificados con una sólida trayectoria pedagógica y humana."
+      },
+      {
+        "title": "Estilo de vida yóguico",
+        "description": "Adopta hábitos yóguicos que transformarán positivamente tu cuerpo, mente y alma."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Taller de Ayurveda y cocina ayurvédica",
+        "description": "Conoce tu constitución personal (Prakriti) y equilibra tus doshas mediante la alimentación y el estilo de vida."
+      },
+      {
+        "title": "Dominio de equilibrios sobre brazos",
+        "description": "Desarrolla fuerza, técnica y seguridad para abordar posturas como el Cuervo, Cuervo lateral y Paloma voladora."
+      },
+      {
+        "title": "Taller de Handstand y equilibrio invertido",
+        "description": "Supera el miedo y alinea tu centro con ejercicios progresivos en pared y en parejas hacia el pino libre."
+      },
+      {
+        "title": "Yin Yoga y estiramiento profundo",
+        "description": "Alcanza el tejido conectivo profundo mediante posturas pasivas prolongadas para liberar tensiones acumuladas."
+      },
+      {
+        "title": "Sesión de sanación con sonido y cuencos",
+        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+      },
+      {
+        "title": "Bhakti Yoga y Kirtan",
+        "description": "Abre tu corazón con cantos sagrados y mantras devocionales conectando con la faceta espiritual del yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Espectáculo de danza balinesa",
+        "description": "Admira la danza clásica de Bali: una cautivadora manifestación de elegancia, narrativa y devoción espiritual."
+      },
+      {
+        "title": "Caminata por los arrozales",
+        "description": "Pasea por las icónicas terrazas de arroz de Ubud y conecta con el ritmo pacífico de la vida rural en la isla."
+      },
+      {
+        "title": "Visita a cascada sagrada",
+        "description": "Visita una cascada sagrada para participar en un ritual ancestral de purificación con agua pura de manantial."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Desayuno",
+        "time": "07:00",
+        "items": [
+          "Frutas tropicales frescas",
+          "Granola casera con yogur de coco",
+          "Tés herbales y zumos naturales",
+          "Gachas de arroz balinesas"
+        ]
+      },
+      {
+        "meal": "Almuerzo",
+        "time": "12:30",
+        "items": [
+          "Buddha bowls nutritivos",
+          "Preparaciones de tempeh y tofu",
+          "Ensaladas frescas de la huerta",
+          "Verduras tradicionales de Bali"
+        ]
+      },
+      {
+        "meal": "Cena",
+        "time": "18:30",
+        "items": [
+          "Sopas reconfortantes",
+          "Boles de cereales al vapor y dahl",
+          "Kitchari ayurvédico especiado",
+          "Infusiones relajantes de hierbas"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Historias en video de alumnos",
+    "videoStoriesHeading": "Escucha directamente a nuestros graduados en Bali",
+    "videoStoriesSub": "Reflexiones sinceras de practicantes que vivieron esta formación residencial en YogaGarhi.",
+    "verifiedGraduate": "Graduado verificado",
+    "speakTeacherTitle": "¿Quieres hablar primero con un maestro principal?",
+    "speakTeacherDesc": "Videollamada 1 a 1 de 15 minutos para comentar tus metas, alojamiento y fechas.",
+    "helpfulGuidesBadge": "Lectura recomendada antes de viajar",
+    "helpfulGuidesTitle": "Guías útiles y artículos de preparación",
+    "helpfulGuidesDesc": "Explora nuestras guías completas para preparar mente, cuerpo y viaje hacia tu formación en Bali.",
+    "readArticle": "Leer artículo",
+    "mindfulEating": "Un día de alimentación consciente",
+    "clickToCollapse": "Clic para contraer",
+    "clickToExpand": "Clic para expandir",
+    "caterDietsTitle": "Nos adaptamos a todas las dietas",
+    "caterDietsDesc": "Avísanos sobre tus necesidades dietéticas y nos encargaremos de todo",
+    "studentStories": {
+      "badge": "Historias de Alumnos",
+      "heading": "Corazones Transformados en YogaGarhi",
+      "sub": "\"Descubre los testimonios de quienes vivieron esta profunda experiencia de transformación.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canadá",
+          "quote": "YogaGarhi es auténtico y arraigado en la esencia viva del yoga. Desde el primer día me sentí escuchada y acompañada como persona, nunca como un simple número. Los maestros se comprometen genuinamente con tu evolución y te ayudan a desarrollar tu propia voz docente.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turquía",
+          "quote": "Sachin Ji es uno de los maestros de yoga más sabios con los que he aprendido. A pesar de haber llegado como principiante absoluta, su infinita paciencia y calidez me permitieron asimilar con confianza las bases de la alineación postural.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Completé mi profesorado de 200 horas en Bali y fue una experiencia mágica. 🌺 Los conocimientos impartidos fueron puros y profundos. Los profesores enseñan desde el corazón con bondad y sabiduría. Te sientes en un hogar cálido y protector.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canadá",
+          "quote": "Sachin Ji es un maestro y ser humano excepcional. Esta formación en Bali encendió un camino maravilloso que me ha brindado la seguridad y preparación para impartir clases en diversos países del mundo.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Alemania",
+          "quote": "Aprecio profundamente la serenidad, cercanía y bienvenida de Sachin Ji. Es sumamente sabio y guía a cada alumno con esmero. Sus clases te permiten superar tus propios límites con soltura y confianza.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Una experiencia enriquecedora e inolvidable en YogaGarhi Bali. El grupo reducido fue determinante: cada ajuste postural fue personalizado y consciente. Terminé la formación sintiéndome lista para enseñar.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
+  },
+  "course200Rishikesh": {
+    "metaTitle": "Formación de Profesores de Yoga 200 Horas en Rishikesh | RYT 200 India",
+    "metaDesc": "Domina el yoga auténtico con el curso de 200 horas en Rishikesh. Certificación Yoga Alliance RYT 200 junto al Ganges. ¡Inscríbete ahora!",
+    "heroTitle": "Formación de Profesores de Yoga 200 Horas en Rishikesh",
+    "heroSub": "Formación residencial de 24 días con certificación Yoga Alliance RYT 200 en la capital del yoga. Ashram en el Ganges desde $999 USD.",
+    "quickInfo": {
+      "course": "Curso",
+      "courseVal": "YTTC 200 Horas Rishikesh",
+      "duration": "Duración",
+      "durationVal": "24 Days",
+      "style": "Estilo",
+      "styleVal": "Yoga Multi-Style",
+      "level": "Nivel",
+      "levelVal": "Principiante a Intermedio",
+      "certification": "Certificación",
+      "certificationVal": "Certificación Yoga Alliance RYT 200",
+      "startingFrom": "$999 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Ahorra",
+      "earlyBirdDiscount": "Ahorra $300 con precio anticipado"
+    },
+    "highlights": {
+      "smallGroups": "Grupos reducidos (máx. 8–10)",
+      "smallGroupsSub": "Atención individual",
+      "preYttc": "Apoyo antes de comenzar",
+      "preYttcSub": "Preparación y guía",
+      "mentorship": "Mentoría post-graduación",
+      "mentorshipSub": "1 año de apoyo continuo",
+      "goodieBag": "Kit de bienvenida de regalo",
+      "goodieBagSub": "Esenciales de yoga"
+    },
+    "storyTitle": "Transforma tu práctica en sabiduría viva",
+    "storyP1": "Nuestra formación de profesores de yoga de 200 horas en Bali es una inmersión completa orientada a practicantes que buscan profundidad genuina en lugar de posturas mecánicas. Ubicado en el tranquilo pueblo de Gianyar, a solo 15 minutos de Ubud, YogaGarhi ofrece un refugio sereno lejos del turismo masivo.",
+    "storyP2": "A lo largo de 24 días estudiarás Hatha clásico, Vinyasa Flow, la serie Ashtanga Primary y alineación de Iyengar junto con anatomía aplicada, filosofía, pranayama y meditación. Con un cupo riguroso de 8–10 alumnos, nuestros maestros del Himalaya ofrecen un acompañamiento íntimo a cada persona.",
+    "watchVideoStories": "Ver vídeos y testimonios de estudiantes",
+    "videoBannerTitle": "Reserva una llamada. Conoce la escuela. Mira tu habitación. Mira la shala.",
+    "whyYogaGarhiBox": {
+      "badge": "Por qué elegir YogaGarhi",
+      "heading": "Linaje genuino del Himalaya en un ashram íntimo en Bali",
+      "sub": "Nos dedicamos a practicantes comprometidos en vez de cursos masivos impersonales. Esto es lo que distingue nuestra formación de 200 horas:",
+      "p1Title": "Máximo 8–10 alumnos por grupo",
+      "p1Highlight": "Enfoque personalizado",
+      "p1Desc": "Grupos reducidos que aseguran atención directa, ajustes físicos adecuados y escucha permanente.",
+      "p2Title": "Entrenamiento online Pre-TTC gratuito",
+      "p2Highlight": "Prepárate con confianza",
+      "p2Desc": "Curso preparatorio antes de tu viaje a Bali para fortalecer tu cuerpo y tus bases teóricas.",
+      "p3Title": "1 año de mentoría tras la graduación",
+      "p3Highlight": "Comunidad duradera",
+      "p3Desc": "Acompañamiento continuo, asesoría en tus secuencias y apoyo profesional mucho después de terminar tu estancia.",
+      "p4Title": "Repetición del curso gratis de por vida",
+      "p4Highlight": "Regreso sin matrícula",
+      "p4Desc": "Regresa gratis a futuras formaciones de YogaGarhi para actualizar tus conocimientos o colaborar como asistente.",
+      "pkgBadge": "Paquetes con alojamiento (24 días / 23 noches) y opción de solo formación",
+      "saveEarlyBird": "Ahorra $300 con precio anticipado",
+      "tuitionFrom": "Solo formación desde $999 USD | Residencial desde $1,750 USD",
+      "breakdown": "Solo formación: $999 • Habitación triple: $1,750 • Habitación doble: $1,899 • Habitación privada: $2,499",
+      "checkAvailability": "Consultar disponibilidad",
+      "bookFreeCall": "Reservar videollamada gratuita"
+    },
+    "hoursStructure": {
+      "badge": "Horas lectivas",
+      "heading": "Cómo se estructuran las 200 horas",
+      "sub": "Una distribución equilibrada entre contacto directo, alineación práctica y estudio personal conforme a los criterios de Yoga Alliance.",
+      "contactHours": "Horas de contacto directo",
+      "contactHoursDesc": "Instrucción directa con maestros principales en asanas, alineación, anatomía y filosofía.",
+      "selfStudy": "Autoestudio y práctica",
+      "selfStudyDesc": "Lecturas recomendadas, diario reflexivo, práctica entre compañeros y diseño de clases.",
+      "totalCert": "Total de certificación",
+      "totalCertDesc": "Cumple y supera los estándares RYT 200 de Yoga Alliance.",
+      "hoursUnit": "Horas"
+    },
+    "syllabus": {
+      "heading": "Plan de estudios y temario",
+      "sub": "Un temario exigente y equilibrado que armoniza las escrituras tradicionales con la biomecánica actual.",
+      "tab1": "Hatha y Vinyasa",
+      "tab2": "Ashtanga e Iyengar",
+      "tab3": "Pranayama y Meditación",
+      "tab4": "Anatomía y Fisiología",
+      "tab5": "Filosofía y Ética",
+      "tapMore": "Toca para ver más",
+      "hoverMore": "Pasa el cursor para ver más",
+      "takeaway": "Lo que integras",
+      "carryHome": "Para llevarte a casa",
+      "careerImpact": "Impacto en tu enseñanza:",
+      "cards": [
+        {
+          "title": "Posturas de Ashtanga Yoga",
+          "content": "Secuencia completa de la primera serie de Ashtanga Yoga. Progresión semanal guiada por Saludos al Sol A y B, posturas de pie, sentadas y práctica estilo Mysore."
+        },
+        {
+          "title": "Hatha y Vinyasa Flow",
+          "content": "Serie Pawanmuktasana, variantes de Surya Namaskar, posturas de pie y sentadas, extensiones hacia atrás, flexiones hacia adelante, inversiones y metodología de secuenciación."
+        },
+        {
+          "title": "Filosofía del Yoga",
+          "content": "Introducción a los Yoga Sutras de Patanjali, los ocho pasos del Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna e historias inspiradoras de maestros yoguis."
+        },
+        {
+          "title": "Pranayama y Respiración",
+          "content": "Técnicas completas de respiración: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali y Sheetkari."
+        },
+        {
+          "title": "Anatomía y Fisiología",
+          "content": "Planos de movimiento, protección articular, anatomía de tobillo, rodilla, columna y hombros, biomecánica respiratoria, fisiología muscular y sistema nervioso."
+        },
+        {
+          "title": "Metodología de Enseñanza",
+          "content": "Secuenciación de clases, ajustes y correcciones, adaptación a diversos niveles, uso de la voz, preparación mental, demostración y planificación didáctica."
+        },
+        {
+          "title": "Meditación y Mantras",
+          "content": "Diversas técnicas de meditación, canto de mantras védicos, Trataka, meditación dinámica de Osho, Nada Brahma, Antar Mouna y cultivo del silencio interior."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga enfocado en la precisión anatómica y alineación mediante accesorios como bloques, cinturones y mantas para perfeccionar la postura y prevenir lesiones."
+        },
+        {
+          "title": "Principios de Alineación",
+          "content": "Bases de una práctica segura: alineación articular, patrones de activación muscular y biomecánica funcional para fortalecer y proteger el cuerpo."
+        },
+        {
+          "title": "Bandhas (Cierres Energéticos)",
+          "content": "Dominio de Mula, Uddiyana y Jalandhara Bandha para encauzar el flujo de prana, tonificar el núcleo y alcanzar una mayor profundidad meditativa."
+        },
+        {
+          "title": "Mudras (Gestos Sagrados)",
+          "content": "Gestos sagrados de manos y cuerpo que canalizan la energía vital, agudizan el enfoque y conectan con planos elevados de consciencia durante la práctica."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Horario diario en el ashram",
+      "sub": "Un ritmo diario armónico entre práctica intensa, estudio filosófico, comidas sanas y descanso.",
+      "time1": "06:00",
+      "act1": "Despertar y purificación matinal",
+      "time2": "06:30",
+      "act2": "Pranayama, cantos y meditación",
+      "time3": "07:30",
+      "act3": "Práctica matinal de asanas (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Desayuno sátvico nutritivo",
+      "time5": "10:00",
+      "act5": "Filosofía del yoga y estudio de textos",
+      "time6": "12:00",
+      "act6": "Almuerzo saludable y descanso",
+      "time7": "15:00",
+      "act7": "Anatomía aplicada y biomecánica",
+      "time8": "16:30",
+      "act8": "Metodología docente y taller de alineación",
+      "time9": "18:00",
+      "act9": "Práctica vespertina (Ashtanga / Yin / Restaurativo)",
+      "time10": "19:30",
+      "act10": "Cena sátvica",
+      "time11": "21:00",
+      "act11": "Estudio personal, silencio y descanso",
+      "beyondTheMat": "Más allá de la esterilla",
+      "badge": "Rutina diaria",
+      "wakeUp": "Despertar y purificación matinal",
+      "morningPranayama": "Pranayama y meditación",
+      "morningAsana": "Práctica matinal de asanas (Hatha / Vinyasa)",
+      "breakfast": "Desayuno sátvico saludable",
+      "philosophyClass": "Filosofía del yoga y estudio de textos",
+      "lunch": "Almuerzo nutritivo y descanso",
+      "anatomyClass": "Anatomía aplicada y fisiología",
+      "methodologyClass": "Metodología docente y clínica de alineación",
+      "eveningAsana": "Práctica vespertina (Ashtanga / Yin / Restaurativo)",
+      "dinner": "Cena sátvica",
+      "selfStudy": "Estudio personal, silencio y descanso"
+    },
+    "inclusions": {
+      "heading": "Qué incluye tu formación",
+      "sub": "Todo dispuesto para asegurar una experiencia profunda y libre de preocupaciones.",
+      "incAccom": "23 noches de estancia en el ashram",
+      "incMeals": "3 comidas sátvicas recién elaboradas al día (vegetariano/vegano)",
+      "incCert": "Certificado Yoga Alliance RYT 200 tras completar el curso",
+      "incManuals": "Manuales oficiales de la formación, cuadernos y materiales de estudio",
+      "incKit": "Esterilla de yoga y accesorios de apoyo incluidos en la escuela",
+      "incExcursions": "Excursiones culturales sagradas (templo del agua, arrozales, danza balinesa)",
+      "incCeremonies": "Ceremonias tradicionales de fuego de inicio y clausura (Agni Hotra)",
+      "incPickup": "Recogida en el aeropuerto de Denpasar (DPS) en la fecha oficial de llegada",
+      "incPre": "Módulo preparatorio Pre-TTC online incluido",
+      "incRepeat": "Posibilidad de repetir el curso de por vida (sin pagar matrícula)",
+      "notIncHeading": "No incluye",
+      "notIncFlights": "Billetes de avión internacionales o domésticos",
+      "notIncVisa": "Tasas de visado para Indonesia",
+      "notIncInsurance": "Seguro médico y de viaje personal"
+    },
+    "pricing": {
+      "heading": "Habitaciones y precios",
+      "sub": "Precios claros y todo incluido, sin sorpresas ni costes ocultos.",
+      "tuitionOnly": "Solo curso ($999)",
+      "tuitionOnlyDesc": "Matrícula, comidas completas, material pedagógico y certificación. Alojamiento fuera del ashram.",
+      "triple": "Habitación triple compartida",
+      "tripleDesc": "Habitación amplia con aire acondicionado compartida con dos compañeros, baño privado y balcón.",
+      "double": "Habitación doble compartida",
+      "doubleDesc": "Habitación cómoda para dos personas con baño privado, aire acondicionado y vistas al jardín o piscina.",
+      "private": "Habitación privada Deluxe",
+      "privateDesc": "Espacio privado con cama matrimonial grande, baño privado, aire acondicionado y balcón exclusivo.",
+      "earlyBird": "Descuento anticipado",
+      "save300": "Ahorra $300 USD",
+      "earlyBirdPrice": "Precio anticipado",
+      "tuitionFees": "Tarifas y Habitaciones (200 Horas Rishikesh)",
+      "tripleSharing": "Habitación Triple ($1,750)",
+      "doubleSharing": "Habitación Doble ($1,899)",
+      "privateRoom": "Habitación Privada ($2,499)",
+      "choosePackage": "Elige tu paquete",
+      "reserveSpot": "Reserva tu plaza",
+      "saveUSD": "Ahorra $300 USD",
+      "residentialDuration": "24 días de formación residencial en Rishikesh, India"
+    },
+    "ethics": {
+      "codeOfConduct": "Código de conducta",
+      "refundCancellation": "Reembolso y cancelación",
+      "ryt200Title": "Profesor de Yoga Registrado (RYT 200)",
+      "viewRegistry": "Consultar registro de escuelas de Yoga Alliance"
+    },
+    "faqsHeading": "Preguntas frecuentes",
+    "faqs": [
+      {
+        "question": "¿Es adecuada esta formación de yoga de 200 horas para principiantes?",
+        "answer": "Sí. El plan de estudios acompaña al practicante desde los fundamentos hasta el nivel intermedio. Además, cada estudiante inscrito recibe acceso a nuestra preparación previa online para adquirir fuerza, flexibilidad y entendimiento postural antes de viajar a Bali."
+      },
+      {
+        "question": "¿Qué estilos de yoga se imparten en este TTC de 200 horas?",
+        "answer": "Estudiarás yoga multi-style basado en la tradición genuina del Himalaya: Hatha Yoga clásico, Vinyasa Flow dinámico, serie Ashtanga Primary (según K. Pattabhi Jois) y alineación minuciosa inspirada en Iyengar."
+      },
+      {
+        "question": "¿Cuál es el horario típico de un día de formación?",
+        "answer": "Un día habitual en YogaGarhi transcurre con este orden estructurado: 06:00 Despertar; 06:30 Pranayama y meditación; 07:30 Hatha y Vinyasa; 09:00 Desayuno; 10:00 Filosofía del yoga; 12:00 Almuerzo y descanso; 15:00 Anatomía aplicada; 16:30 Alineación y metodología docente; 18:00 Ashtanga e Iyengar con yogaterapia; 19:30 Cena; 21:00 Autoestudio y descanso."
+      }
+    ],
+    "hero": {
+      "badge": "Certificado Yoga Alliance RYT 200",
+      "h1": "Formación de Profesores de Yoga 200 Horas en Rishikesh",
+      "sub": "Una inmersión transformadora de 24 días en Rishikesh, India. Maestros del Himalaya, ritos de Ganga Aarti y certificación internacional RYT 200.",
+      "quickDuration": "24 Días",
+      "quickLevel": "Principiante a Intermedio",
+      "quickCert": "Certificación Yoga Alliance RYT 200",
+      "quickLang": "Inglés",
+      "quickBatch": "8–10 alumnos",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Reservar plaza",
+      "btnBrochure": "Descargar programa",
+      "btnCounselor": "Hablar con un asesor"
+    },
+    "overview": {
+      "heading": "Bienvenido a YogaGarhi Rishikesh",
+      "story": "Nuestra formación de profesores de yoga de 200 horas en Bali es un curso integral para niveles principiante e intermedio orientado a formar profesores seguros o a comprender el yoga para la vida diaria. YogaGarhi se encuentra en Gianyar, a unos 15 km de Ubud, en un apacible entorno natural. Durante el curso practicarás asanas a diario, aprenderás alineación anatómica, y estudiarás pranayama, meditación, filosofía y metodología docente.",
+      "p1": "Nuestro curso de 200 horas en Rishikesh ofrece una formación completa arraigada en las tradiciones clásicas del yoga de la India.",
+      "p2": "Nuestros maestros te orientarán en Hatha, Ashtanga Vinyasa, Yoga Sutras de Patanjali, anatomía y metodología para graduarte con confianza."
+    },
+    "curriculum": {
+      "badge": "Módulos del plan de estudios",
+      "heading": "Desglose del programa y temas de estudio",
+      "sub": "Haz clic en cada módulo para explorar temas detallados, técnicas prácticas y bases conceptuales.",
+      "modules": {
+        "asana": "Práctica de asanas y alineación",
+        "pranayama": "Pranayama y energía sutil",
+        "philosophy": "Filosofía del yoga y estilo de vida",
+        "anatomy": "Anatomía y fisiología",
+        "methodology": "Metodología docente y práctica",
+        "meditation": "Meditación y atención plena",
+        "iyengar": "Bases de Yoga Iyengar y soportes",
+        "vinyasa": "Secuenciación de Vinyasa Flow",
+        "hatha": "Hatha Yoga clásico y tradicional"
+      },
+      "detailedModules": [
+        {
+          "title": "Posturas de Ashtanga Yoga",
+          "items": [
+            "Serie primaria completa de Ashtanga por K. Pattabhi Jois",
+            "Semana 1: Introducción y Saludos al Sol A y B",
+            "Semana 2: Posturas de pie y uso de accesorios",
+            "Semana 3: Posturas sentadas y posturas finales",
+            "Semana 4: Estilo Mysore y práctica de enseñanza"
+          ]
+        },
+        {
+          "title": "Filosofía del Yoga",
+          "items": [
+            "Yoga Sutras completos de Patanjali",
+            "Las ocho ramas del Ashtanga Yoga",
+            "Pancha-Vayus y Panchakoshas",
+            "Sattva, Rajas y Tamas (Triguna)",
+            "Introducción a los Vedas",
+            "Historias inspiradoras de grandes maestros yoguis"
+          ]
+        },
+        {
+          "title": "Prácticas de Respiración Pranayama",
+          "items": [
+            "Técnicas completas de pranayama",
+            "Las seis prácticas de purificación Shatkarma",
+            "Respiración avanzada: Sheetali, Sheetkari",
+            "Kumbhaka (retención de la respiración)",
+            "Integración consciente con la práctica de asanas"
+          ]
+        },
+        {
+          "title": "Recitación de Sonidos Sagrados y Mantras",
+          "items": [
+            "Colección completa de mantras tradicionales",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Shloka a Patanjali)",
+            "Práctica diaria de canto de mantras"
+          ]
+        },
+        {
+          "title": "Anatomía y Fisiología",
+          "items": [
+            "Estudio completo de los sistemas corporales",
+            "Fisiología de músculos y articulaciones",
+            "Sistema respiratorio y nervioso",
+            "Nutrición y sistema digestivo",
+            "Talleres prácticos sobre diferentes asanas"
+          ]
+        },
+        {
+          "title": "Metodología de Enseñanza",
+          "items": [
+            "Secuenciación integral de clases de yoga",
+            "Principios de demostración y observación",
+            "Preparación mental y emocional",
+            "Planificación estructurada de sesiones de clase",
+            "Prácticas docentes y evaluaciones guiadas"
+          ]
+        },
+        {
+          "title": "Meditación y Bandhas",
+          "items": [
+            "Meditación dinámica de Osho",
+            "Meditación Nada Brahma",
+            "Antar Mouna y Ajapa Japa",
+            "Dominio de los cuatro Bandhas principales",
+            "Integración con asanas y pranayama"
+          ]
+        },
+        {
+          "title": "Arte de la Alineación y Ajustes",
+          "items": [
+            "Biomecánica y alineación funcional de posturas clásicas",
+            "Metodología de indicaciones verbales y ajustes táctiles seguros",
+            "Comprensión de variaciones anatómicas individuales",
+            "Estrategias de modificación con bloques y cinturones"
+          ]
+        },
+        {
+          "title": "Práctica Clásica de Hatha Yoga",
+          "items": [
+            "Estudio de principios tradicionales de Hatha y posturas sostenidas",
+            "Secuenciación Hatha: calentamiento, postura cumbre y contraposturas",
+            "Equilibrio de energías solar (Ha) y lunar (Tha)",
+            "Integración de Bandhas y Mudras en posturas estáticas"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga y Alineación de Precisión",
+          "items": [
+            "Alineación metódica con bloques, correas y mantas",
+            "Posicionamiento geométrico preciso de pelvis y columna",
+            "Preparación segura para posturas invertidas",
+            "Secuencias restaurativas con soportes terapéuticos"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow y Secuenciación Dinámica",
+          "items": [
+            "Estructura inteligente: calentamiento, postura pico y relajación",
+            "Transiciones fluidas y saltos en armonía con la respiración",
+            "Diseño de clases temáticas según objetivos y niveles",
+            "Ritmo, modulación del tempo y sostenimiento del espacio"
+          ]
+        },
+        {
+          "title": "Clases y Talleres Especiales",
+          "items": [
+            "Sesiones de Sanación con Sonido (Sound Healing)",
+            "Experiencia de Yoga en la playa de Bali",
+            "Yin Yoga y Acro Yoga",
+            "Fundamentos de Ayurveda",
+            "Ceremonia de fuego tradicional Agni Hotra"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Alojamiento y tarifas",
+      "sub": "Tarifas transparentes, todo incluido sin gastos imprevistos.",
+      "tuitionOnly": "Paquete solo formación",
+      "tuitionOnlyDesc": "Docencia, comidas completas, manuales y título. Alojamiento exterior.",
+      "triple": "Habitación triple compartida",
+      "tripleDesc": "Habitación climatizada con baño privado y terraza compartida entre tres personas.",
+      "double": "Habitación doble compartida",
+      "doubleDesc": "Habitación climatizada para dos personas con baño privado y vista al jardín.",
+      "private": "Habitación privada Deluxe",
+      "privateDesc": "Habitación individual con cama king, baño en suite, aire acondicionado y balcón.",
+      "earlyBird": "Precio anticipado",
+      "save300": "Ahorra $300 USD"
+    },
+    "tourCall": {
+      "heading": "¿Quieres conocer la escuela antes de reservar?",
+      "sub": "Únete a una videollamada en directo para un recorrido personalizado por el campus, las salas de clase, el shala de yoga y las habitaciones.",
+      "cta": "Reservar llamada. Ver la escuela. Ver tu habitación. Ver la sala de yoga.",
+      "bookCallLive": "Conoce la escuela, tu habitación y el shala de yoga en directo. Completa tus datos a continuación para programarlo."
+    },
+    "takeaway": {
+      "badge": "Lo que te llevas",
+      "heading": "Lo que te llevas",
+      "headingItalic": "a casa",
+      "sub": "Más allá del certificado físico, te llevas una perspectiva transformada, una conexión profunda contigo mismo y habilidades auténticas para guiar a los demás.",
+      "careerImpactTitle": "Impacto profesional:",
+      "careerImpactDesc": "Al completar el curso de profesor de yoga de 200 horas, puedes empezar a dar clases en cualquier parte del mundo: en estudios, online, retiros o en tu propio proyecto independiente.",
+      "card1Title": "Certificación global",
+      "card1Desc": "Yoga Alliance RYT-200 para comenzar tu carrera donde tú elijas.",
+      "card2Title": "Dominio de la práctica",
+      "card2Desc": "Instrucción experta en Hatha, Vinyasa, Ashtanga e Iyengar.",
+      "card3Title": "Seguridad y anatomía",
+      "card3Desc": "Aprende a enseñar y practicar con total seguridad y sin lesiones.",
+      "card4Title": "Profundidad espiritual",
+      "card4Desc": "Inmersión profunda en Mantras, meditación y filosofía clásica.",
+      "card5Title": "Metodología docente",
+      "card5Desc": "Herramientas prácticas para guiar, ajustar e inspirar a tus alumnos.",
+      "card6Title": "Vínculos para siempre",
+      "card6Desc": "Conexiones duraderas con una comunidad internacional de yoga."
+    },
+    "timeline": {
+      "prepTitle": "La preparación comienza al inscribirte",
+      "prepDesc": "Inicia tu camino con materiales previos y asesoramiento personalizado.",
+      "datesTitle": "Formación: del 1 al 24 de cada mes",
+      "datesDesc": "Programa inmersivo de 24 días cada mes en Bali.",
+      "supportTitle": "Apoyo vitalicio en YogaGarhi",
+      "supportDesc": "Conectado para siempre con nuestra familia global de yoga."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Alojamiento",
+      "featuresSub": "Un sereno retiro de yoga en el corazón de la sagrada región de Ubud en Bali",
+      "feat1": "10 hermosas cascadas a menos de 10 km",
+      "feat2": "Bosque privado con cascada propia en las instalaciones",
+      "feat3": "Tranquilas caminatas entre arrozales dentro del recinto",
+      "feat4": "A solo 15 km del centro histórico de Ubud",
+      "glimpses": "Imágenes de tu estancia",
+      "allRooms": "Todas las habitaciones incluyen",
+      "wifi": "Wi-Fi gratis",
+      "hotWater": "Agua caliente",
+      "acFan": "Aire acondicionado / Ventilador",
+      "cleaning": "Limpieza diaria",
+      "bed1": "cama",
+      "bedsMore": "camas",
+      "courseOnly": "Solo curso",
+      "mostPopular": "Más popular",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Más allá de la esterilla",
+      "heading": "Excursiones sagradas",
+      "sub": "Sumérgete en la herencia espiritual de Bali a través de vivencias transformadoras"
+    },
+    "prakritiResearch": {
+      "heading": "Investigación de Sachin Ji sobre yoga personalizado y Prakriti",
+      "quote": "«El yoga no puede ser igual para todos, porque cada cuerpo porta una energía diferente»",
+      "card1Title": "La pregunta esencial",
+      "card1Text": "Durante los estudios de Maestría en Yoga de nuestro profesor principal, surgió una pregunta ineludible: ¿Por qué la misma práctica calma a unas personas, mientras deja a otras cansadas, inquietas o agitadas?",
+      "card2Title": "Investigación profunda",
+      "card2Text": "Esto dio paso a una rigurosa investigación en textos clásicos, Ayurveda y años de práctica con estudiantes. La respuesta fue simple y contundente: cada persona nace con una Prakriti única.",
+      "card3Title": "El mapa energético",
+      "card3Text": "La Prakriti define el cuerpo, la mente, las emociones y el sistema nervioso. Unas personas necesitan enraizamiento, otras movimiento y otras quietud. Un estilo rígido puede generar desequilibrios.",
+      "card4Title": "La calidad de la práctica",
+      "card4Text": "Más allá del estilo de yoga que practiques, lo que de verdad importa es cómo lo practicas: cómo se cuida el sistema nervioso, cómo fluye la respiración y cómo se apoya a tu Dosha.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Fruto de esta comprensión nació Shiv–Shakti Sadhana: un enfoque equilibrado que armoniza estabilidad y movimiento, presencia y energía. Aquí el Asana brinda fuerza y enraizamiento.",
+      "card6Title": "Retorno al equilibrio",
+      "card6Text": "Cuando el yoga respeta tu Prakriti, se vuelve accesible, sostenible y profundamente sanador. El verdadero yoga no te cambia: te devuelve a tu propio equilibrio.",
+      "conclusion1": "Nuestro profesor principal observó que cuando la práctica no respeta el sistema nervioso ni el tipo de energía natural, incluso las posturas correctas pueden causar cansancio o inquietud.",
+      "conclusion2": "«Cuando el yoga respeta tu Prakriti, resulta accesible, sostenible y profundamente sanador para todos. Aquí el yoga no se impone: es personalizado, consciente y respetuoso de quien eres.»"
+    },
+    "ethicsExtra": {
+      "code1": "Puntualidad rigurosa",
+      "code2": "Sin alcohol ni tabaco",
+      "code3": "Dieta estrictamente vegetariana",
+      "code4": "Silencio respetado en clase",
+      "code5": "Vestimenta modesta y adecuada",
+      "code6": "Respeto mutuo absoluto",
+      "code7": "Sin teléfonos en la sala",
+      "code8": "Asistencia completa requerida",
+      "refund1": "Reprogramación válida por 12 meses",
+      "refund2": "Transferencia de plaza permitida",
+      "refund3": "Reembolso total si cancelamos nosotros",
+      "refund4": "Política de día de prueba",
+      "refund5": "Sin reembolso después del Día 1",
+      "reviewsHeading": "Lo que dicen nuestros estudiantes",
+      "viewAllGoogle": "Ver todas las opiniones en Google",
+      "basedOnReviews": "Basado en",
+      "openGoogleMaps": "Abrir en Google Maps",
+      "open24Hours": "Abierto 24 horas"
+    },
+    "sunday": {
+      "note": "El domingo es un día completo de descanso para relajación, estudio personal o excursiones opcionales.",
+      "cta": "Explorar el domingo en Bali"
+    },
+    "tapHover": {
+      "tap": "Toca para ver más",
+      "hover": "Pasa el ratón para ver más"
+    },
+    "inclusionsList": [
+      "Habitación limpia y confortable",
+      "Baño privado con agua caliente",
+      "Aire acondicionado / ventilador",
+      "Conexión Wi-Fi gratuita",
+      "Tres comidas vegetarianas saludables al día",
+      "Infusiones herbales y agua potable filtrada",
+      "Material de estudio (manuales, cuadernos, bolígrafos)",
+      "Esterillas de yoga y soportes incluidos",
+      "Excursiones al aire libre y salidas de fin de semana",
+      "Recogida en el aeropuerto a la llegada (aeropuerto más cercano)",
+      "Equipo de asistencia en el campus las 24 horas",
+      "Certificación oficial al completar el curso",
+      "Masaje balinés tradicional",
+      "Espectáculo de danza tradicional balinesa",
+      "Caminata guiada entre arrozales",
+      "Módulo de preparación online Pre-TTC incluido",
+      "Taller especializado de equilibrios sobre brazos",
+      "Taller formativo de Ayurveda",
+      "Derecho a repetición vitalicia gratuita del curso",
+      "Libro YogaGarhi de 35+ secuencias creativas"
+    ],
+    "exclusionsList": [
+      "Vuelos internacionales y gastos de traslado",
+      "Visado turístico y seguro médico de viaje",
+      "Traslado de regreso al aeropuerto",
+      "Servicio de lavandería",
+      "Compras personales y actividades adicionales"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Formación de yoga multi-estilo",
+        "description": "Aprende el yoga en su forma tradicional y probada. Nuestros profesores preservan la sabiduría de la tradición yóguica."
+      },
+      {
+        "title": "Certificado por Yoga Alliance",
+        "description": "Obtén una titulación reconocida en todo el mundo y comienza a impartir clases con plena seguridad."
+      },
+      {
+        "title": "Entorno sereno en Bali",
+        "description": "Vive el yoga inmerso en la naturaleza. Playas tranquilas y vegetación exuberante que enriquecen tu práctica."
+      },
+      {
+        "title": "Excursiones al aire libre",
+        "description": "Descubre templos sagrados, playas y senderos naturales equilibrando formación con vivencias culturales."
+      },
+      {
+        "title": "Grupos reducidos",
+        "description": "Disfruta de atención cercana y personalizada. El progreso de cada alumno es nuestra prioridad."
+      },
+      {
+        "title": "Comunidad acogedora",
+        "description": "Forma parte de una familia cálida y positiva en un entorno de aprendizaje seguro y empático."
+      },
+      {
+        "title": "Masaje balinés",
+        "description": "Terapia tradicional indonesia orientada a relajar la musculatura y favorecer un bienestar integral."
+      },
+      {
+        "title": "Danza tradicional balinesa",
+        "description": "Expresión artística ancestral cargada de espiritualidad que refleja el valioso legado cultural de Bali."
+      },
+      {
+        "title": "Comidas saludables",
+        "description": "Alimentación sátvica fresca y nutritiva diseñada para acompañar y revitalizar tu práctica diaria."
+      },
+      {
+        "title": "Práctica de meditación",
+        "description": "Cultiva la paz mental y la atención consciente a través de sesiones guiadas cada jornada."
+      },
+      {
+        "title": "Profesores experimentados",
+        "description": "Aprende de instructores certificados con una sólida trayectoria pedagógica y humana."
+      },
+      {
+        "title": "Estilo de vida yóguico",
+        "description": "Adopta hábitos yóguicos que transformarán positivamente tu cuerpo, mente y alma."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Taller de Ayurveda y cocina ayurvédica",
+        "description": "Conoce tu constitución personal (Prakriti) y equilibra tus doshas mediante la alimentación y el estilo de vida."
+      },
+      {
+        "title": "Dominio de equilibrios sobre brazos",
+        "description": "Desarrolla fuerza, técnica y seguridad para abordar posturas como el Cuervo, Cuervo lateral y Paloma voladora."
+      },
+      {
+        "title": "Taller de Handstand y equilibrio invertido",
+        "description": "Supera el miedo y alinea tu centro con ejercicios progresivos en pared y en parejas hacia el pino libre."
+      },
+      {
+        "title": "Yin Yoga y estiramiento profundo",
+        "description": "Alcanza el tejido conectivo profundo mediante posturas pasivas prolongadas para liberar tensiones acumuladas."
+      },
+      {
+        "title": "Sesión de sanación con sonido y cuencos",
+        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+      },
+      {
+        "title": "Bhakti Yoga y Kirtan",
+        "description": "Abre tu corazón con cantos sagrados y mantras devocionales conectando con la faceta espiritual del yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Espectáculo de danza balinesa",
+        "description": "Admira la danza clásica de Bali: una cautivadora manifestación de elegancia, narrativa y devoción espiritual."
+      },
+      {
+        "title": "Caminata por los arrozales",
+        "description": "Pasea por las icónicas terrazas de arroz de Ubud y conecta con el ritmo pacífico de la vida rural en la isla."
+      },
+      {
+        "title": "Visita a cascada sagrada",
+        "description": "Visita una cascada sagrada para participar en un ritual ancestral de purificación con agua pura de manantial."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Desayuno",
+        "time": "07:00",
+        "items": [
+          "Frutas tropicales frescas",
+          "Granola casera con yogur de coco",
+          "Tés herbales y zumos naturales",
+          "Gachas de arroz balinesas"
+        ]
+      },
+      {
+        "meal": "Almuerzo",
+        "time": "12:30",
+        "items": [
+          "Buddha bowls nutritivos",
+          "Preparaciones de tempeh y tofu",
+          "Ensaladas frescas de la huerta",
+          "Verduras tradicionales de Bali"
+        ]
+      },
+      {
+        "meal": "Cena",
+        "time": "18:30",
+        "items": [
+          "Sopas reconfortantes",
+          "Boles de cereales al vapor y dahl",
+          "Kitchari ayurvédico especiado",
+          "Infusiones relajantes de hierbas"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Historias en video de alumnos",
+    "videoStoriesHeading": "Escucha directamente a nuestros graduados en Bali",
+    "videoStoriesSub": "Reflexiones sinceras de practicantes que vivieron esta formación residencial en YogaGarhi.",
+    "verifiedGraduate": "Graduado verificado",
+    "speakTeacherTitle": "¿Quieres hablar primero con un maestro principal?",
+    "speakTeacherDesc": "Videollamada 1 a 1 de 15 minutos para comentar tus metas, alojamiento y fechas.",
+    "helpfulGuidesBadge": "Lectura recomendada antes de viajar",
+    "helpfulGuidesTitle": "Guías útiles y artículos de preparación",
+    "helpfulGuidesDesc": "Explora nuestras guías completas para preparar mente, cuerpo y viaje hacia tu formación en Bali.",
+    "readArticle": "Leer artículo",
+    "mindfulEating": "Un día de alimentación consciente",
+    "clickToCollapse": "Clic para contraer",
+    "clickToExpand": "Clic para expandir",
+    "caterDietsTitle": "Nos adaptamos a todas las dietas",
+    "caterDietsDesc": "Avísanos sobre tus necesidades dietéticas y nos encargaremos de todo",
+    "studentStories": {
+      "badge": "Historias de Alumnos",
+      "heading": "Corazones Transformados en YogaGarhi",
+      "sub": "\"Descubre los testimonios de quienes vivieron esta profunda experiencia de transformación.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canadá",
+          "quote": "YogaGarhi es auténtico y arraigado en la esencia viva del yoga. Desde el primer día me sentí escuchada y acompañada como persona, nunca como un simple número. Los maestros se comprometen genuinamente con tu evolución y te ayudan a desarrollar tu propia voz docente.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turquía",
+          "quote": "Sachin Ji es uno de los maestros de yoga más sabios con los que he aprendido. A pesar de haber llegado como principiante absoluta, su infinita paciencia y calidez me permitieron asimilar con confianza las bases de la alineación postural.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Completé mi profesorado de 200 horas en Bali y fue una experiencia mágica. 🌺 Los conocimientos impartidos fueron puros y profundos. Los profesores enseñan desde el corazón con bondad y sabiduría. Te sientes en un hogar cálido y protector.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canadá",
+          "quote": "Sachin Ji es un maestro y ser humano excepcional. Esta formación en Bali encendió un camino maravilloso que me ha brindado la seguridad y preparación para impartir clases en diversos países del mundo.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Alemania",
+          "quote": "Aprecio profundamente la serenidad, cercanía y bienvenida de Sachin Ji. Es sumamente sabio y guía a cada alumno con esmero. Sus clases te permiten superar tus propios límites con soltura y confianza.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Una experiencia enriquecedora e inolvidable en YogaGarhi Bali. El grupo reducido fue determinante: cada ajuste postural fue personalizado y consciente. Terminé la formación sintiéndome lista para enseñar.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
   }
 }

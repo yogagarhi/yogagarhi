@@ -104,7 +104,32 @@
     "save": "Hemat",
     "getFreeManual": "Panduan Gratis",
     "revealYogicEnergy": "Temukan Energi Yogik Anda",
-    "freeWebinar": "Webinar Gratis"
+    "freeWebinar": "Webinar Gratis",
+    "accommodationExtra": {
+      "featuresTitle": "Akomodasi",
+      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "feat1": "10 air terjun indah dalam radius 10 km",
+      "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
+      "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
+      "feat4": "Hanya berjarak 15 km dari pusat keramaian Ubud",
+      "glimpses": "Potret Suasana Menginap Anda",
+      "allRooms": "Semua Kamar Dilengkapi",
+      "wifi": "Wi-Fi Cepat Gratis",
+      "hotWater": "Air Hangat",
+      "acFan": "AC / Kipas Angin",
+      "cleaning": "Pembersihan Harian",
+      "bed1": "tempat tidur",
+      "bedsMore": "tempat tidur",
+      "courseOnly": "Hanya Kursus",
+      "mostPopular": "Paling Diminati",
+      "premium": "Premium"
+    },
+    "instagram": {
+      "badge": "Di Balik Layar",
+      "heading": "Ikuti Perjalanan Kami",
+      "sub": "Momen harian transformasi, kebijaksanaan, dan komunitas dari Bali",
+      "followUs": "Ikuti kami"
+    }
   },
   "footer": {
     "tagline": "Transformasi dari Dalam",
@@ -1319,5 +1344,2948 @@
     "smallGroupBadge": "8–10 Siswa",
     "smallGroupTitle": "Kelompok Kecil",
     "smallGroupDesc": "Menjamin perhatian penuh dan bimbingan mendalam untuk setiap siswa."
+  },
+  "thankYou": {
+    "metaTitle": "Terima Kasih | YogaGarhi",
+    "metaDesc": "Terima kasih atas permintaan pendaftaran Anda di YogaGarhi.",
+    "namaste": "Namaste! 🙏",
+    "subheading": "Perjalanan transformasi Anda telah dimulai",
+    "messages": {
+      "enquiry": "Kami telah menerima pertanyaan Anda. Tim kami akan menghubungi Anda dalam waktu 24 jam dengan informasi yang Anda butuhkan.",
+      "booking": "Panggilan Anda telah dijadwalkan. Tim kami akan menghubungi Anda pada waktu yang dipilih.",
+      "webinar": "Anda berhasil mendaftar untuk webinar. Periksa email Anda untuk tautan bergabung dan detailnya.",
+      "syllabus": "Panduan silabus sedang dikirim ke kotak masuk Anda. Silakan periksa email Anda.",
+      "manual": "Buku panduan gratis Anda sedang dikirim ke email Anda. Semoga bermanfaat untuk latihan Anda!",
+      "guidePrep": "Panduan persiapan \"Sebelum Anda Bergabung\" sedang dikirim ke kotak masuk Anda. Silakan periksa email (dan folder spam) dalam beberapa menit ke depan.",
+      "enrollment": "Kami telah menerima permintaan pendaftaran Anda. Tim kami akan menghubungi Anda dalam waktu 24 jam dengan langkah selanjutnya."
+    },
+    "whatNext": {
+      "heading": "Apa yang Terjadi Selanjutnya?",
+      "sub": "Inilah yang dapat Anda harapkan dalam beberapa hari mendatang",
+      "step1Title": "Email Konfirmasi",
+      "step1Desc": "Periksa kotak masuk Anda untuk email konfirmasi dengan semua rincian pendaftaran Anda.",
+      "step1Time": "Dalam beberapa menit",
+      "step2Title": "Panggilan Pribadi",
+      "step2Desc": "Koordinator pendaftaran kami akan menghubungi Anda untuk menjawab pertanyaan dan membahas tujuan Anda.",
+      "step2Time": "Dalam 24 jam",
+      "step3Title": "Materi Pra-Pelatihan",
+      "step3Desc": "Terima panduan persiapan, daftar bacaan, dan semua yang Anda butuhkan sebelum kedatangan.",
+      "step3Time": "Dalam 48 jam",
+      "step4Title": "Perencanaan Perjalanan",
+      "step4Desc": "Kami akan membantu Anda dengan panduan visa, tips perjalanan, dan pengaturan penjemputan bandara.",
+      "step4Time": "1 minggu sebelumnya"
+    },
+    "whileYouWait": {
+      "heading": "Sambil Menunggu...",
+      "sub": "Jelajahi lebih lanjut tentang YogaGarhi dan persiapkan perjalanan Anda",
+      "card1Title": "Ikuti Perjalanan Kami",
+      "card1Desc": "Inspirasi harian, di balik layar, dan transformasi murid",
+      "card1Link": "@yogagarhi",
+      "card2Title": "Tonton Testimoni",
+      "card2Desc": "Dengarkan pengalaman mengubah hidup dari para lulusan kami",
+      "card2Link": "Tonton Video",
+      "card3Title": "Baca Blog Kami",
+      "card3Desc": "Artikel tentang filosofi yoga, tips latihan, dan pertumbuhan spiritual",
+      "card3Link": "Jelajahi Blog"
+    },
+    "help": {
+      "heading": "Ada Pertanyaan? Kami Siap Membantu",
+      "sub": "Jangan ragu untuk menghubungi kami kapan saja",
+      "whatsapp": "WhatsApp Kami",
+      "email": "Kirim Email",
+      "backHome": "← Kembali ke Beranda"
+    }
+  },
+  "course100": {
+    "metaTitle": "Pelatihan Guru Yoga 100 Jam di Bali | Yoga Alliance Ubud",
+    "metaDesc": "Perdalam latihan Anda dengan Pelatihan Guru Yoga 100 Jam di Ubud, Bali. Kurikulum ramah pemula & makanan organik. Pesan tempat Anda hari ini!",
+    "heroTitle": "Pelatihan Guru Yoga 100 Jam di Bali",
+    "heroSub": "Selami perjalanan transformasi 12 hari di Gianyar, Bali. Tradisi Himalaya, kelompok kecil 8–10 siswa, serba inklusif mulai $1.149 USD.",
+    "quickInfo": {
+      "course": "Kursus",
+      "courseVal": "YTTC 100 Jam",
+      "duration": "Durasi",
+      "durationVal": "12 Days",
+      "style": "Gaya",
+      "styleVal": "Yoga Multi-Style",
+      "level": "Tingkat",
+      "levelVal": "Pemula hingga Menengah",
+      "certification": "Sertifikasi",
+      "certificationVal": "Sertifikat Yoga Alliance Pelatihan Lanjutan / Fondasi 100 Jam",
+      "startingFrom": "$1,149 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Hemat",
+      "earlyBirdDiscount": "Hemat $250 Diskon Early Bird"
+    },
+    "highlights": {
+      "smallGroups": "Grup kecil (maks 8–10)",
+      "smallGroupsSub": "Perhatian pribadi",
+      "preYttc": "Dukungan sebelum kursus",
+      "preYttcSub": "Persiapan & bimbingan",
+      "mentorship": "Mentoring pasca lulus",
+      "mentorshipSub": "1 tahun dukungan berkelanjutan",
+      "goodieBag": "Paket bingkisan gratis",
+      "goodieBagSub": "Perlengkapan yoga"
+    },
+    "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
+    "watchVideoStories": "Tonton video cerita dan testimoni siswa",
+    "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
+    "whyYogaGarhiBox": {
+      "badge": "Mengapa Memilih YogaGarhi",
+      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
+      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
+      "p1Title": "Maksimal 8–10 Siswa per Angkatan",
+      "p1Highlight": "Fokus Personal",
+      "p1Desc": "Jumlah siswa terbatas memastikan arahan personal, koreksi postur langsung, dan perhatian penuh dari guru.",
+      "p2Title": "Pelatihan Online Pra-TTC Gratis",
+      "p2Highlight": "Siap Percaya Diri",
+      "p2Desc": "Kursus persiapan cuma-cuma sebelum tiba di Bali untuk membangun kekuatan fisik dan wawasan dasar.",
+      "p3Title": "Mentoring 1 Tahun Pasca Kelulusan",
+      "p3Highlight": "Komunitas Berkelanjutan",
+      "p3Desc": "Bimbingan lanjutan, saran penyusunan sekuens kelas, dan dukungan karier jauh setelah masa pelatihan usai.",
+      "p4Title": "Mengulang Kursus Gratis Seumur Hidup",
+      "p4Highlight": "Kembali Tanpa Biaya",
+      "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
+      "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
+      "saveEarlyBird": "Hemat $300 Diskon Early Bird",
+      "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
+      "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
+      "checkAvailability": "Cek Ketersediaan",
+      "bookFreeCall": "Pesan Panggilan Video Gratis"
+    },
+    "hoursStructure": {
+      "badge": "Jam Pelatihan",
+      "heading": "Struktur Jam Belajar 200 Jam",
+      "sub": "Pembagian seimbang antara jam tatap muka langsung, penjajaran praktik, dan studi mandiri sesuai ketentuan Yoga Alliance.",
+      "contactHours": "Jam Tatap Muka",
+      "contactHoursDesc": "Instruksi langsung bersama guru utama dalam asana, penjajaran, anatomi, dan filosofi.",
+      "selfStudy": "Studi Mandiri & Praktik Mengajar",
+      "selfStudyDesc": "Bacaan terarah, jurnal, praktik bersama rekan, dan perancangan sekuens kelas.",
+      "totalCert": "Total Sertifikasi",
+      "totalCertDesc": "Memenuhi dan melampaui standar Yoga Alliance RYT 200.",
+      "hoursUnit": "Jam"
+    },
+    "syllabus": {
+      "heading": "Kurikulum & Silabus",
+      "sub": "Kurikulum terpadu dan seimbang yang menyatukan naskah yoga klasik dengan pemahaman biomekanik modern.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditasi",
+      "tab4": "Anatomi & Fisiologi",
+      "tab5": "Filosofi & Etika",
+      "tapMore": "Ketuk untuk melihat lebih banyak",
+      "hoverMore": "Arahkan kursor untuk melihat lebih banyak",
+      "takeaway": "Pemahaman Utama",
+      "carryHome": "Untuk Dibawa Pulang",
+      "careerImpact": "Dampak Karier:",
+      "cards": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "content": "Rangkaian lengkap seri primer Ashtanga Yoga. Peningkatan bertahap melalui Surya Namaskar A & B, postur berdiri, postur duduk, dan latihan gaya Mysore."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Seri Pawanmuktasana, variasi Surya Namaskar, postur berdiri dan duduk, lengkungan ke belakang, lipatan ke depan, inversi, dan penyusunan urutan kelas."
+        },
+        {
+          "title": "Filosofi Yoga",
+          "content": "Pengantar Yoga Sutra Patanjali, delapan pilar Ashtanga Yoga, Nadis, Cakra, Pancha-Vayus, Panchakoshas, Triguna, serta kisah teladan para yogi agung."
+        },
+        {
+          "title": "Pranayama & Pernapasan",
+          "content": "Teknik pernapasan lengkap: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, dan Sheetkari."
+        },
+        {
+          "title": "Anatomi & Fisiologi",
+          "content": "Bidang gerak tubuh, perlindungan persendian, anatomi pergelangan kaki, lutut, tulang belakang, bahu, mekanisme pernapasan, dan sistem saraf."
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "content": "Penyusunan urutan kelas, penyesuaian postur, pengelolaan berbagai tingkatan siswa, teknik intonasi suara, kesiapan mental, dan perencanaan kelas terstruktur."
+        },
+        {
+          "title": "Meditasi & Mantra",
+          "content": "Berbagai teknik meditasi, pelafalan mantra suci, Trataka, Meditasi Dinamis Osho, Nada Brahma, Antar Mouna, dan latihan keheningan batin."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga berbasis presisi anatomi menggunakan alat bantu seperti balok, tali, dan selimut guna mencapai keselarasan postur optimal serta mencegah cedera."
+        },
+        {
+          "title": "Prinsip Keselarasan",
+          "content": "Pondasi latihan yang aman: penataan sendi, pola aktivasi otot, dan biomekanika tubuh guna melindungi serta memperkuat fisik secara menyeluruh."
+        },
+        {
+          "title": "Bandhas (Kunci Energi)",
+          "content": "Kuasai Mula, Uddiyana, dan Jalandhara Bandha untuk mengalirkan energi prana, menguatkan inti tubuh, dan memperdalam kualitas meditasi."
+        },
+        {
+          "title": "Mudras (Gestur Suci)",
+          "content": "Gerakan suci tangan dan tubuh guna mengarahkan energi vital, mempertajam konsentrasi, serta terhubung dengan kesadaran yang lebih mendalam."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Rutinitas Harian di Ashram",
+      "sub": "Irama teratur yang memadukan latihan intensif, pendalaman filosofis, makanan sehat, dan waktu istirahat.",
+      "time1": "06:00",
+      "act1": "Bangun Pagi & Pembersihan Diri",
+      "time2": "06:30",
+      "act2": "Pranayama, Melantunkan Mantra & Meditasi",
+      "time3": "07:30",
+      "act3": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Sarapan Sattvik Bernutrisi",
+      "time5": "10:00",
+      "act5": "Filosofi Yoga & Studi Naskah Klasik",
+      "time6": "12:00",
+      "act6": "Makan Siang Sehat & Istirahat",
+      "time7": "15:00",
+      "act7": "Anatomi Terapan & Fisiologi",
+      "time8": "16:30",
+      "act8": "Metodologi Pengajaran & Klinik Penjajaran",
+      "time9": "18:00",
+      "act9": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "time10": "19:30",
+      "act10": "Makan Malam Sattvik",
+      "time11": "21:00",
+      "act11": "Belajar Mandiri, Keheningan & Waktu Istirahat",
+      "beyondTheMat": "Di Luar Matras",
+      "badge": "Jadwal Harian",
+      "wakeUp": "Bangun Pagi & Pembersihan Diri",
+      "morningPranayama": "Pranayama & Meditasi",
+      "morningAsana": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "breakfast": "Sarapan Sehat Sattvik",
+      "philosophyClass": "Filosofi Yoga & Studi Kitab Suci",
+      "lunch": "Makan Siang Bernutrisi & Istirahat",
+      "anatomyClass": "Anatomi Terapan & Biomekanik",
+      "methodologyClass": "Metodologi Mengajar & Klinik Penjajaran",
+      "eveningAsana": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "dinner": "Makan Malam Sattvik",
+      "selfStudy": "Belajar Mandiri, Keheningan & Jam Tidur"
+    },
+    "inclusions": {
+      "heading": "Apa yang Termasuk dalam Pelatihan Anda",
+      "sub": "Semua fasilitas disiapkan untuk memastikan masa tinggal yang tenang dan transformatif.",
+      "incAccom": "Akomodasi ashram selama 23 malam",
+      "incMeals": "3 kali makan bergizi sattvik (vegetarian/vegan) segar setiap hari",
+      "incCert": "Sertifikat Yoga Alliance RYT 200 setelah kelulusan",
+      "incManuals": "Buku panduan kursus resmi, buku catatan, dan bahan ajar",
+      "incKit": "Matras yoga dan alat peraga latihan disediakan di ashram",
+      "incExcursions": "Ekskursi budaya sakral (pura tirta empul, sawah terasering, tari Bali)",
+      "incCeremonies": "Upacara api pembukaan dan penutupan tradisional (Agni Hotra)",
+      "incPickup": "Penjemputan bandara dari Denpasar (DPS) pada tanggal kedatangan resmi",
+      "incPre": "Modul persiapan Pra-TTC online cuma-cuma",
+      "incRepeat": "Hak mengulang kursus seumur hidup (bebas biaya kursus)",
+      "notIncHeading": "Tidak Termasuk",
+      "notIncFlights": "Tiket penerbangan internasional dan domestik",
+      "notIncVisa": "Biaya visa Indonesia",
+      "notIncInsurance": "Asuransi perjalanan dan kesehatan pribadi"
+    },
+    "pricing": {
+      "heading": "Paket Akomodasi & Harga",
+      "sub": "Harga transparan dan all-inclusive tanpa ada biaya tersembunyi.",
+      "tuitionOnly": "Paket Hanya Biaya Kursus",
+      "tuitionOnlyDesc": "Biaya kursus, semua makanan, materi belajar, dan sertifikat. Tinggal di luar ashram.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC luas dibagi bersama dua rekan siswa, kamar mandi dalam, balkon pribadi.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD",
+      "earlyBirdPrice": "Harga Early Bird",
+      "tuitionFees": "Pilihan Kamar & Biaya (100 Jam)",
+      "tripleSharing": "Kamar Berbagi Bertiga ($1.149)",
+      "doubleSharing": "Kamar Berbagi Berdua ($1.349)",
+      "privateRoom": "Kamar Privat ($1.649)",
+      "choosePackage": "Pilih Paket Anda",
+      "reserveSpot": "Amankan Tempat Anda",
+      "saveUSD": "Hemat $300 USD",
+      "residentialDuration": "Pelatihan yoga residensial 12 hari di Gianyar, Bali"
+    },
+    "ethics": {
+      "codeOfConduct": "Kode Etik",
+      "refundCancellation": "Pengembalian Dana & Pembatalan",
+      "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+    },
+    "faqsHeading": "Pertanyaan yang Sering Diajukan",
+    "faqs": [
+      {
+        "question": "Apakah Pelatihan Guru Yoga 200 Jam ini ramah bagi pemula?",
+        "answer": "Ya. Kurikulum dirancang bertahap dari pemahaman dasar hingga menengah. Siswa yang mendaftar juga mendapatkan akses gratis ke program persiapan online Pra-TTC untuk membangun kelenturan, kekuatan, dan keselarasan postur sebelum terbang ke Bali."
+      },
+      {
+        "question": "Gaya yoga apa saja yang dipelajari dalam TTC 200 Jam ini?",
+        "answer": "Anda akan mempelajari yoga multi-style yang bersumber dari tradisi otentik Himalaya: Hatha Yoga klasik, Vinyasa Flow dinamis, Ashtanga Primary Series (menurut K. Pattabhi Jois), dan penjajaran mendetail yang terinspirasi oleh Iyengar Yoga."
+      },
+      {
+        "question": "Bagaimana jadwal harian selama pelatihan berlangsung?",
+        "answer": "Hari pelatihan di YogaGarhi mengikuti jadwal terstruktur: 06:00 Bangun; 06:30 Pranayama & Meditasi; 07:30 Hatha & Vinyasa; 09:00 Sarapan; 10:00 Filosofi Yoga; 12:00 Makan Siang & Istirahat; 15:00 Anatomi Terapan; 16:30 Penjajaran & Metodologi; 18:00 Ashtanga & Iyengar bersama terapi yoga; 19:30 Makan Malam; 21:00 Belajar Mandiri & Jam Malam."
+      },
+      {
+        "question": "Berapa banyak siswa dalam satu angkatan di YogaGarhi Bali?",
+        "answer": "Kami membatasi secara ketat maksimal 8–10 siswa per kelas. Jumlah kecil ini menjamin perhatian penuh, koreksi tubuh yang teliti, dan komunikasi yang dekat dengan para pengajar utama."
+      },
+      {
+        "question": "Sertifikat apa yang didapat dan apakah diakui secara internasional?",
+        "answer": "Setelah menuntaskan seluruh jam tatap muka dan ujian praktik, Anda menerima sertifikat Registered Yoga Teacher (RYT 200) dari Yoga Alliance yang diakui secara sah di seluruh dunia untuk mengajar profesional."
+      },
+      {
+        "question": "Pilihan kamar apa saja yang ada dan berapa biayanya?",
+        "answer": "Kami menawarkan empat pilihan transparan: Hanya Biaya Kursus ($999 USD harga early bird dibanding normal $1,299; tanpa kamar dan makan), Kamar Bertiga ($1,750 USD dibanding $2,050), Kamar Berdua ($1,899 USD dibanding $2,199), dan Kamar Pribadi ($2,499 USD dibanding $2,799). Semua paket residensial mencakup 23 malam dan 3 kali makan setiap hari."
+      },
+      {
+        "question": "Apa saja yang tercakup dalam biaya paket residensial?",
+        "answer": "Biaya mencakup menginap 23 malam (kamar mandi dalam, air panas, AC/kipas, Wi-Fi), 3 kali makan sehat vegetarian setiap hari, teh herbal dan air minum, buku panduan resmi, matras dan props, penjemputan dari bandara DPS, pijat Bali, wisata budaya, persiapan Pra-TTC online, buku 35+ sekuens, sertifikat Yoga Alliance RYT 200, dan hak mengulang gratis seumur hidup. Paket hanya biaya kursus ($999 USD) tidak termasuk kamar dan makan."
+      },
+      {
+        "question": "Bagaimana kebijakan pembatalan dan pengembalian uangnya?",
+        "answer": "Anda dapat menjadwal ulang tanggal kursus secara gratis dalam kurun 12 bulan atau mengalihkan tempat Anda kepada orang lain. Kami mengembalikan 100% dana jika pihak sekolah membatalkan kelas, disertai uji coba Hari ke-1. Mengingat kuota terbatas, pembayaran tidak dapat dikembalikan setelah Hari ke-1 dimulai."
+      }
+    ],
+    "hero": {
+      "badge": "Sertifikasi Yoga Alliance RYT 200",
+      "h1": "Pelatihan Guru Yoga 100 Jam di Bali",
+      "sub": "Pendalaman 12 hari yang penuh kehangatan di Gianyar, Bali. Ajaran autentik Himalaya, penyesuaian postur personal, dan gaya hidup yogi mulai $1.149 USD.",
+      "quickDuration": "12 Hari",
+      "quickLevel": "Pemula hingga Menengah",
+      "quickCert": "Sertifikat Yoga Alliance Pelatihan Lanjutan / Fondasi 100 Jam",
+      "quickLang": "Bahasa Inggris",
+      "quickBatch": "8–10 Siswa",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Pesan Tempat Anda",
+      "btnBrochure": "Unduh Silabus",
+      "btnCounselor": "Konsultasi"
+    },
+    "overview": {
+      "heading": "Selamat Datang di YogaGarhi Bali",
+      "story": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah kursus menyeluruh tingkat pemula hingga menengah bagi siapa saja yang ingin menjadi guru yoga percaya diri atau memperdalam yoga dalam kehidupan sehari-hari. YogaGarhi berada di Gianyar, sekitar 15 km dari Ubud, menawarkan ketenangan alam pedesaan. Selama kursus, Anda mempraktikkan asana setiap hari, mempelajari anatomi penjajaran, pranayama, meditasi, filosofi yoga, dan metode mengajar.",
+      "p1": "Pelatihan Guru Yoga 100 Jam di Bali diperuntukkan bagi siapa saja yang ingin memperdalam latihan di lingkungan yang asri dan tenang di Gianyar (15 km dari Ubud).",
+      "p2": "Format ini cocok bagi Anda yang menginginkan lebih dari kelas biasa tetapi belum siap untuk 200 jam penuh. Pelajari asana, pranayama, dan filosofi yoga."
+    },
+    "curriculum": {
+      "badge": "Modul Kurikulum",
+      "heading": "Rincian Modul & Topik Pembelajaran",
+      "sub": "Klik modul mana saja di bawah ini untuk menjelajahi rincian topik, teknik praktik, dan landasan teorinya.",
+      "modules": {
+        "asana": "Praktik Asana & Penjajaran",
+        "pranayama": "Pranayama & Energi Halus",
+        "philosophy": "Filosofi Yoga & Gaya Hidup",
+        "anatomy": "Anatomi dan Fisiologi",
+        "methodology": "Metodologi Pengajaran & Praktik",
+        "meditation": "Meditasi & Kesadaran Penuh",
+        "iyengar": "Dasar Yoga Iyengar & Alat Bantu",
+        "vinyasa": "Sekuensing Vinyasa Flow",
+        "hatha": "Hatha Yoga Klasik Tradisional"
+      },
+      "detailedModules": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "items": [
+            "Seri primer lengkap Ashtanga yoga oleh K. Pattabhi Jois",
+            "Minggu 1: Pengenalan & Surya Namaskar A & B",
+            "Minggu 2: Postur berdiri & penggunaan alat peraga yoga",
+            "Minggu 3: Postur duduk & postur penutup",
+            "Minggu 4: Gaya Mysore & praktik mengajar"
+          ]
+        },
+        {
+          "title": "Filosofi Yoga",
+          "items": [
+            "Yoga Sutra lengkap karya Patanjali",
+            "Delapan anggota Ashtanga Yoga",
+            "Pancha-Vayu & Panchakosha",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Pengantar Weda",
+            "Kisah inspiratif para yogi terkemuka"
+          ]
+        },
+        {
+          "title": "Pranayama & Praktik Pernapasan",
+          "items": [
+            "Teknik pranayama lengkap",
+            "Enam praktik pembersihan Shatkarma",
+            "Pernapasan tingkat lanjut: Sheetali, Sheetkari",
+            "Kumbhaka (menahan napas)",
+            "Integrasi selaras dengan latihan asana"
+          ]
+        },
+        {
+          "title": "Lantunan Suara Suci & Mantra",
+          "items": [
+            "Koleksi lengkap mantra tradisional",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Sloka untuk Resi Patanjali)",
+            "Latihan melantunkan mantra harian"
+          ]
+        },
+        {
+          "title": "Anatomi dan Fisiologi",
+          "items": [
+            "Studi mendalam tentang sistem tubuh manusia",
+            "Fisiologi otot & persendian",
+            "Sistem pernapasan & saraf",
+            "Pola makan & sistem pencernaan",
+            "Lokakarya fungsional asana"
+          ]
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "items": [
+            "Perancangan urutan kelas yang komprehensif",
+            "Prinsip demonstrasi & pengamatan",
+            "Kesiapan mental & emosional pengajar",
+            "Perencanaan struktur kelas bertahap",
+            "Praktik mengajar & evaluasi berkala"
+          ]
+        },
+        {
+          "title": "Meditasi & Bandha",
+          "items": [
+            "Meditasi Dinamis Osho",
+            "Meditasi Nada Brahma",
+            "Antar Mouna & Ajapa Japa",
+            "Penguasaan empat Bandha utama",
+            "Penyelarasan dengan asana & pranayama"
+          ]
+        },
+        {
+          "title": "Seni Penyelarasan & Penyesuaian",
+          "items": [
+            "Biomekanika dan penyesuaian fungsional postur klasik",
+            "Petunjuk verbal dan bantuan sentuhan langsung yang aman",
+            "Memahami variasi anatomi individu",
+            "Strategi modifikasi menggunakan balok dan tali yoga"
+          ]
+        },
+        {
+          "title": "Praktik Klasik Hatha Yoga",
+          "items": [
+            "Pendalaman prinsip Hatha klasik dan penahanan postur",
+            "Penyusunan urutan Hatha: pemanasan, postur puncak, dan penyeimbang",
+            "Menyeimbangkan energi matahari (Ha) dan bulan (Tha)",
+            "Penerapan Bandha dan Mudra dalam postur statis"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Presisi Gerak",
+          "items": [
+            "Penyelarasan metodis dengan balok, tali, dan selimut",
+            "Penempatan geometris panggul, tulang belakang, dan bahu",
+            "Persiapan postur terbalik yang aman",
+            "Rangkaian restoratif dengan alat bantu"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Gerak Dinamis",
+          "items": [
+            "Struktur urutan cerdas: pemanasan, puncak, dan pendinginan",
+            "Transisi mengalir dan lompatan berirama napas",
+            "Merancang kelas tematik sesuai tingkat kemampuan",
+            "Mengatur tempo dan menjaga energi ruangan"
+          ]
+        },
+        {
+          "title": "Kelas Tambahan & Pengalaman Khas",
+          "items": [
+            "Sesi Sound Healing (terapi suara)",
+            "Latihan yoga di pantai Bali",
+            "Yin Yoga & Acro Yoga",
+            "Dasar-dasar Ayurveda",
+            "Upacara api suci Agni Hotra"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Akomodasi & Pilihan Paket",
+      "sub": "Tarif transparan tanpa biaya tambahan tak terduga.",
+      "tuitionOnly": "Paket Hanya Biaya Kursus",
+      "tuitionOnlyDesc": "Pengajaran, makanan, materi studi, dan ijazah. Akomodasi di luar.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC untuk tiga orang dengan kamar mandi dalam dan balkon.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar ber-AC untuk dua orang dengan kamar mandi dan pemandangan asri.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Kamar tunggal ber-AC dengan kasur king, kamar mandi dalam, dan teras pribadi.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD"
+    },
+    "tourCall": {
+      "heading": "Ingin Melihat Sekolah Sebelum Mendaftar?",
+      "sub": "Bergabunglah dalam panggilan video langsung untuk tur pribadi mengelilingi kampus, ruang kelas, shala yoga, dan kamar penginapan.",
+      "cta": "Jadwalkan Panggilan. Lihat Sekolah. Lihat Kamar Anda. Lihat Aula Yoga.",
+      "bookCallLive": "Lihat suasana sekolah, kamar Anda, dan shala yoga secara langsung. Masukkan detail Anda di bawah ini untuk penjadwalan."
+    },
+    "takeaway": {
+      "badge": "Manfaat Yang Anda Bawa Pulang",
+      "heading": "Yang Akan Anda",
+      "headingItalic": "Bawa Pulang",
+      "sub": "Lebih dari sekadar sertifikat fisik, Anda pulang dengan perspektif baru, koneksi batin yang mendalam, dan keterampilan mengajar yang nyata.",
+      "careerImpactTitle": "Peluang Karier:",
+      "careerImpactDesc": "Setelah menyelesaikan Pelatihan Guru Yoga 200 Jam, Anda dapat mulai mengajar yoga di mana saja di dunia: studio, kelas privat daring, retret yoga, atau membangun komunitas mandiri.",
+      "card1Title": "Sertifikasi Global",
+      "card1Desc": "Yoga Alliance RYT-200 untuk memulai karier mengajar di negara mana pun.",
+      "card2Title": "Penguasaan Praktik",
+      "card2Desc": "Bimbingan mendalam dalam Hatha, Vinyasa, Ashtanga, dan Iyengar.",
+      "card3Title": "Keselamatan & Anatomi",
+      "card3Desc": "Pelajari cara mengajar dan berlatih dengan aman tanpa risiko cedera.",
+      "card4Title": "Kedalaman Spiritual",
+      "card4Desc": "Selami makna Mantra, meditasi, dan filosofi yoga klasik.",
+      "card5Title": "Metodologi Mengajar",
+      "card5Desc": "Keterampilan praktis dalam memandu kelas, koreksi postur, dan menginspirasi murid.",
+      "card6Title": "Persahabatan Sejati",
+      "card6Desc": "Jalinan persaudaraan seumur hidup dengan komunitas yoga internasional."
+    },
+    "timeline": {
+      "prepTitle": "Persiapan dimulai sejak pendaftaran",
+      "prepDesc": "Mulailah perjalanan Anda dengan modul persiapan dan bimbingan guru secara daring.",
+      "datesTitle": "Pelatihan: Tanggal 1 – 24 setiap bulan",
+      "datesDesc": "Program imersif 24 hari yang diselenggarakan setiap bulan di Bali.",
+      "supportTitle": "Dukungan komunitas seumur hidup di YogaGarhi",
+      "supportDesc": "Selalu terhubung dengan keluarga besar yoga dunia kami."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Akomodasi",
+      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "feat1": "10 air terjun indah dalam radius 10 km",
+      "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
+      "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
+      "feat4": "Hanya berjarak 15 km dari pusat keramaian Ubud",
+      "glimpses": "Potret Suasana Menginap Anda",
+      "allRooms": "Semua Kamar Dilengkapi",
+      "wifi": "Wi-Fi Cepat Gratis",
+      "hotWater": "Air Hangat",
+      "acFan": "AC / Kipas Angin",
+      "cleaning": "Pembersihan Harian",
+      "bed1": "tempat tidur",
+      "bedsMore": "tempat tidur",
+      "courseOnly": "Hanya Kursus",
+      "mostPopular": "Paling Diminati",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Di Luar Matras",
+      "heading": "Ekskursi Sakral",
+      "sub": "Selami warisan spiritual Bali melalui pengalaman yang sarat makna transformatif"
+    },
+    "prakritiResearch": {
+      "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
+      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "card1Title": "Pertanyaan Mendasar",
+      "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
+      "card2Title": "Penyelidikan Mendalam",
+      "card2Text": "Hal ini melahirkan riset mendalam pada naskah yoga klasik, Ayurveda, dan pengalaman nyata bersama siswa. Jawabannya nyata: setiap manusia terlahir dengan Prakriti yang unik.",
+      "card3Title": "Cetak Biru Energi",
+      "card3Text": "Prakriti membentuk fisik, pikiran, emosi, dan sistem saraf. Sebagian butuh ketenangan, sebagian butuh gerak dinamis, dan sebagian butuh keheningan. Gaya seragam bisa memicu ketidakseimbangan.",
+      "card4Title": "Kualitas Latihan",
+      "card4Text": "Lebih dari sekadar nama aliran yoga, yang terpenting adalah bagaimana Anda berlatih: bagaimana sistem saraf didekati, nafas dipandu, dan Dosha Anda dirawat tanpa dipaksakan.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Dari kesadaran ini lahirlah Shiv–Shakti Sadhana, pendekatan seimbang yang menyelaraskan stabilitas dan aliran energi. Asana di sini menjadi fondasi kekuatan yang membumi.",
+      "card6Title": "Kembali ke Keseimbangan",
+      "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
+      "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
+      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+    },
+    "ethicsExtra": {
+      "code1": "Hadir tepat waktu",
+      "code2": "Bebas alkohol dan rokok",
+      "code3": "Makanan khusus vegetarian",
+      "code4": "Menjaga keheningan di kelas",
+      "code5": "Pakaian sopan dan pantas",
+      "code6": "Saling menghargai sesama",
+      "code7": "Dilarang membawa ponsel ke dalam kelas",
+      "code8": "Wajib mengikuti seluruh rangkaian kelas",
+      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
+      "refund2": "Dapat dialihkan ke peserta lain",
+      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
+      "refund4": "Kebijakan hari percobaan",
+      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "reviewsHeading": "Apa Kata Para Siswa Kami",
+      "viewAllGoogle": "Lihat semua ulasan di Google",
+      "basedOnReviews": "Berdasarkan",
+      "openGoogleMaps": "Buka di Google Maps",
+      "open24Hours": "Buka 24 jam"
+    },
+    "sunday": {
+      "note": "Hari Minggu adalah hari istirahat penuh untuk relaksasi, belajar mandiri, atau mengikuti wisata opsional.",
+      "cta": "Jelajahi Hari Minggu di Bali"
+    },
+    "tapHover": {
+      "tap": "Ketuk untuk melihat detail",
+      "hover": "Arahkan kursor untuk melihat detail"
+    },
+    "inclusionsList": [
+      "Kamar bersih, nyaman, dan tenang",
+      "Kamar mandi dalam dengan air panas",
+      "Pendingin ruangan (AC) / kipas angin",
+      "Akses internet Wi-Fi gratis",
+      "Tiga kali makan vegetarian sehat setiap hari",
+      "Teh herbal alami dan air minum murni",
+      "Buku materi pelatihan (modul, buku catatan, pena)",
+      "Matras yoga dan perlengkapan latihan lengkap",
+      "Kunjungan alam dan kegiatan akhir pekan",
+      "Penjemputan bandara pada hari kedatangan (bandara terdekat)",
+      "Staf pendampingan kampus siaga 24 jam",
+      "Sertifikat kelulusan resmi setelah menyelesaikan kursus",
+      "Pijat relaksasi khas Bali tradisional",
+      "Pertunjukan tarian tradisional Bali",
+      "Trekking menyusuri sawah Ubud",
+      "Modul persiapan online Pre-TTC gratis",
+      "Lokakarya keseimbangan lengan (arm balance)",
+      "Lokakarya wawasan Ayurveda praktis",
+      "Hak mengulang kursus gratis seumur hidup",
+      "Buku YogaGarhi berisi 35+ variasi sekuens kreatif"
+    ],
+    "exclusionsList": [
+      "Tiket penerbangan dan transportasi pribadi",
+      "Biaya visa kunjungan dan asuransi perjalanan",
+      "Antar kembali ke bandara saat kepulangan",
+      "Layanan cuci pakaian (laundry)",
+      "Belanja pribadi dan aktivitas tambahan opsional"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Pelatihan yoga multi-gaya",
+        "description": "Pelajari yoga dengan pendekatan murni dan teruji. Guru kami menjaga kemurnian tradisi leluhur yoga."
+      },
+      {
+        "title": "Bersertifikasi Yoga Alliance",
+        "description": "Raih sertifikat yang diakui secara global untuk mulai mengajar yoga dengan penuh percaya diri."
+      },
+      {
+        "title": "Suasana damai di Bali",
+        "description": "Rasakan pengalaman yoga di tengah alam tropis yang tenang untuk memperdalam latihan harian Anda."
+      },
+      {
+        "title": "Wisata alam terbuka",
+        "description": "Kunjungi pura bersejarah, pantai, dan jalur alam yang memadukan pembelajaran dengan kebudayaan lokal."
+      },
+      {
+        "title": "Jumlah siswa per kelas terbatas",
+        "description": "Dapatkan bimbingan dan koreksi postur yang saksama. Kemajuan setiap murid adalah fokus utama kami."
+      },
+      {
+        "title": "Komunitas yang hangat",
+        "description": "Jadilah bagian dari keluarga yang suportif dan bertumbuh bersama dalam atmosfer penuh kepedulian."
+      },
+      {
+        "title": "Pijat tradisional Bali",
+        "description": "Terapi pijat tradisional untuk meredakan ketegangan otot dan memberikan relaksasi menyeluruh."
+      },
+      {
+        "title": "Pentas tari tradisional Bali",
+        "description": "Seni pertunjukan sarat makna yang mencerminkan kekayaan budaya dan spiritualitas masyarakat Bali."
+      },
+      {
+        "title": "Makanan bergizi dan bersih",
+        "description": "Nikmati santapan sattvik segar dan menyehatkan yang mendukung stamina latihan Anda sepanjang hari."
+      },
+      {
+        "title": "Praktik meditasi terbimbing",
+        "description": "Kembangkan ketenangan batin dan kejernihan pikiran lewat sesi hening setiap hari."
+      },
+      {
+        "title": "Guru berpengalaman",
+        "description": "Belajarlah langsung dari instruktur bersertifikasi dengan pengalaman mengajar nyata bertahun-tahun."
+      },
+      {
+        "title": "Gaya hidup yogik",
+        "description": "Terapkan gaya hidup selaras untuk menyatukan kesehatan raga, pikiran, dan jiwa secara utuh."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Lokakarya Ayurveda & kelas memasak sehat",
+        "description": "Pahami tipe tubuh alami Anda (Prakriti) dan cara menyeimbangkan dosha melalui pola makan dan hidup sehat."
+      },
+      {
+        "title": "Penguasaan arm balance",
+        "description": "Bangun kekuatan, teknik, dan rasa percaya diri untuk menguasai pose keseimbangan lengan secara bertahap."
+      },
+      {
+        "title": "Lokakarya Handstand (handstand mastery)",
+        "description": "Atasi rasa takut dan temukan titik keseimbangan dengan latihan terstruktur di dinding dan berpasangan."
+      },
+      {
+        "title": "Yin Yoga & peregangan dalam",
+        "description": "Jangkau jaringan ikat fasia yang dalam melalui pose pasif berdurasi panjang guna melepas ketegangan tubuh."
+      },
+      {
+        "title": "Sesi relaksasi suara & Tibetan singing bowl",
+        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Buka ruang hati Anda lewat nyanyian lantunan mantra suci dan kirtan untuk terhubung dengan esensi yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Pentas tari tradisional Bali",
+        "description": "Saksikan keelokan seni tari Bali: perpaduan gemulai, kisah epos, dan ketulusan bhakti spiritual."
+      },
+      {
+        "title": "Trekking sawah terasering",
+        "description": "Menyusuri pematang sawah khas Ubud dan rasakan keselarasan hidup masyarakat pedesaan Bali."
+      },
+      {
+        "title": "Kunjungan ke air terjun suci",
+        "description": "Menuju air terjun sakral untuk mengikuti ritual penyucian diri tradisional dengan air sumber alami."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Sarapan",
+        "time": "07:00 WITA",
+        "items": [
+          "Buah-buahan tropis segar",
+          "Granola buatan sendiri dengan yogurt kelapa",
+          "Teh herbal alami & jus segar",
+          "Bubur beras merah Bali"
+        ]
+      },
+      {
+        "meal": "Makan Siang",
+        "time": "12:30 WITA",
+        "items": [
+          "Buddha bowl kaya nutrisi",
+          "Olahan tempe dan tahu segar",
+          "Salad sayuran kebun organik",
+          "Sayuran masak khas Bali"
+        ]
+      },
+      {
+        "meal": "Makan Malam",
+        "time": "18:30 WITA",
+        "items": [
+          "Sup hangat penenang",
+          "Nasi biji-bijian kukus dan dahl",
+          "Kitchari berempah Ayurveda",
+          "Seduhan herbal menenangkan"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Kisah Video Siswa Nyata",
+    "videoStoriesHeading": "Dengarkan Langsung dari Lulusan Kami di Bali",
+    "videoStoriesSub": "Refleksi nyata dari para praktisi yang menjalani perjalanan residensial di YogaGarhi.",
+    "verifiedGraduate": "Lulusan Terverifikasi",
+    "speakTeacherTitle": "Ingin berkonsultasi dengan guru utama terlebih dahulu?",
+    "speakTeacherDesc": "Panggilan video privat 15 menit untuk membahas tujuan, kamar, dan tanggal Anda.",
+    "helpfulGuidesBadge": "Baca Sebelum Berangkat",
+    "helpfulGuidesTitle": "Panduan Bermanfaat & Artikel Persiapan",
+    "helpfulGuidesDesc": "Pelajari panduan mendalam kami untuk mempersiapkan fisik, mental, dan perjalanan pelatihan Anda di Bali.",
+    "readArticle": "Baca Artikel",
+    "mindfulEating": "Sehari Pola Makan Berkesadaran",
+    "clickToCollapse": "Klik untuk menutup",
+    "clickToExpand": "Klik untuk membuka",
+    "caterDietsTitle": "Kami Melayani Semua Pola Makan",
+    "caterDietsDesc": "Beri tahu kami preferensi makanan Anda, dan kami akan menyiapkan segalanya",
+    "studentStories": {
+      "badge": "Kisah Siswa",
+      "heading": "Hati yang Berkelimpahan di YogaGarhi",
+      "sub": "\"Dengarkan langsung penuturan tulus dari para praktisi yang telah menjalani perjalanan transformasi ini.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Kanada",
+          "quote": "YogaGarhi memegang teguh esensi sejati yoga tradisional. Sejak awal, saya merasa dihargai dan didampingi secara personal. Para pengajar dengan tulus membimbing perkembangan Anda hingga menemukan karakter mengajar Anda sendiri.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turki",
+          "quote": "Sachin Ji adalah salah satu guru yoga paling berwawasan luas yang pernah mengajar saya. Meskipun saya seorang pemula, kesabaran dan dorongannya membuat saya memahami keselarasan asana dengan penuh percaya diri.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Pelatihan 200 jam di Bali benar-benar luar biasa. 🌺 Pengetahuan yang diajarkan sangat mendalam dan autentik. Para guru mengajar dari hati dengan penuh ketulusan dan kebijaksanaan layaknya keluarga besar yang hangat.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Kanada",
+          "quote": "Sachin Ji adalah pengajar dan pribadi yang luar biasa. Pelatihan di Bali ini menjadi awal perjalanan yoga berharga yang mengantarkan saya percaya diri mengajar di berbagai penjuru dunia.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Jerman",
+          "quote": "Saya sangat mengagumi ketenangan, keramahan, dan kehangatan Sachin Ji. Beliau sangat berilmu dan senantiasa meluangkan waktu membimbing setiap siswa secara teliti.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Pengalaman transformatif yang amat berkesan di YogaGarhi Bali. Kelompok belajar kecil memberikan manfaat maksimal, setiap koreksi postur terasa personal. Saya merasa sangat siap untuk mengajar.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
+  },
+  "course300": {
+    "metaTitle": "Pelatihan Guru Yoga 300 Jam di Bali | YTTC Lanjutan 300 Jam",
+    "metaDesc": "Tingkatkan kemampuan mengajar dengan Pelatihan Yoga 300 Jam di Bali. Asana multi-style, pranayama, anatomi & filosofi. Amankan tempat Anda!",
+    "heroTitle": "Pelatihan Guru Yoga 300 Jam di Bali",
+    "heroSub": "Pelatihan residensial lanjutan 28 hari di Gianyar, Bali. Perdalam asana tingkat lanjut dan penyesuaian menuju sertifikasi RYT 500.",
+    "quickInfo": {
+      "course": "Kursus",
+      "courseVal": "YTTC 300 Jam Lanjutan",
+      "duration": "Durasi",
+      "durationVal": "28 Days",
+      "style": "Gaya",
+      "styleVal": "Yoga Multi-Style",
+      "level": "Tingkat",
+      "levelVal": "Lanjutan (memerlukan RYT 200)",
+      "certification": "Sertifikasi",
+      "certificationVal": "Sertifikasi Yoga Alliance RYT 500",
+      "startingFrom": "$2,499 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Hemat",
+      "earlyBirdDiscount": "Hemat $300 Diskon Early Bird"
+    },
+    "highlights": {
+      "smallGroups": "Grup kecil (maks 8–10)",
+      "smallGroupsSub": "Perhatian pribadi",
+      "preYttc": "Dukungan sebelum kursus",
+      "preYttcSub": "Persiapan & bimbingan",
+      "mentorship": "Mentoring pasca lulus",
+      "mentorshipSub": "1 tahun dukungan berkelanjutan",
+      "goodieBag": "Paket bingkisan gratis",
+      "goodieBagSub": "Perlengkapan yoga"
+    },
+    "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
+    "watchVideoStories": "Tonton video cerita dan testimoni siswa",
+    "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
+    "whyYogaGarhiBox": {
+      "badge": "Mengapa Memilih YogaGarhi",
+      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
+      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
+      "p1Title": "Maksimal 8–10 Siswa per Angkatan",
+      "p1Highlight": "Fokus Personal",
+      "p1Desc": "Jumlah siswa terbatas memastikan arahan personal, koreksi postur langsung, dan perhatian penuh dari guru.",
+      "p2Title": "Pelatihan Online Pra-TTC Gratis",
+      "p2Highlight": "Siap Percaya Diri",
+      "p2Desc": "Kursus persiapan cuma-cuma sebelum tiba di Bali untuk membangun kekuatan fisik dan wawasan dasar.",
+      "p3Title": "Mentoring 1 Tahun Pasca Kelulusan",
+      "p3Highlight": "Komunitas Berkelanjutan",
+      "p3Desc": "Bimbingan lanjutan, saran penyusunan sekuens kelas, dan dukungan karier jauh setelah masa pelatihan usai.",
+      "p4Title": "Mengulang Kursus Gratis Seumur Hidup",
+      "p4Highlight": "Kembali Tanpa Biaya",
+      "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
+      "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
+      "saveEarlyBird": "Hemat $300 Diskon Early Bird",
+      "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
+      "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
+      "checkAvailability": "Cek Ketersediaan",
+      "bookFreeCall": "Pesan Panggilan Video Gratis"
+    },
+    "hoursStructure": {
+      "badge": "Jam Pelatihan",
+      "heading": "Struktur Jam Belajar 200 Jam",
+      "sub": "Pembagian seimbang antara jam tatap muka langsung, penjajaran praktik, dan studi mandiri sesuai ketentuan Yoga Alliance.",
+      "contactHours": "Jam Tatap Muka",
+      "contactHoursDesc": "Instruksi langsung bersama guru utama dalam asana, penjajaran, anatomi, dan filosofi.",
+      "selfStudy": "Studi Mandiri & Praktik Mengajar",
+      "selfStudyDesc": "Bacaan terarah, jurnal, praktik bersama rekan, dan perancangan sekuens kelas.",
+      "totalCert": "Total Sertifikasi",
+      "totalCertDesc": "Memenuhi dan melampaui standar Yoga Alliance RYT 200.",
+      "hoursUnit": "Jam"
+    },
+    "syllabus": {
+      "heading": "Kurikulum & Silabus",
+      "sub": "Kurikulum terpadu dan seimbang yang menyatukan naskah yoga klasik dengan pemahaman biomekanik modern.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditasi",
+      "tab4": "Anatomi & Fisiologi",
+      "tab5": "Filosofi & Etika",
+      "tapMore": "Ketuk untuk melihat lebih banyak",
+      "hoverMore": "Arahkan kursor untuk melihat lebih banyak",
+      "takeaway": "Pemahaman Utama",
+      "carryHome": "Untuk Dibawa Pulang",
+      "careerImpact": "Dampak Karier:",
+      "cards": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "content": "Rangkaian lengkap seri primer Ashtanga Yoga. Peningkatan bertahap melalui Surya Namaskar A & B, postur berdiri, postur duduk, dan latihan gaya Mysore."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Seri Pawanmuktasana, variasi Surya Namaskar, postur berdiri dan duduk, lengkungan ke belakang, lipatan ke depan, inversi, dan penyusunan urutan kelas."
+        },
+        {
+          "title": "Filosofi Yoga",
+          "content": "Pengantar Yoga Sutra Patanjali, delapan pilar Ashtanga Yoga, Nadis, Cakra, Pancha-Vayus, Panchakoshas, Triguna, serta kisah teladan para yogi agung."
+        },
+        {
+          "title": "Pranayama & Pernapasan",
+          "content": "Teknik pernapasan lengkap: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, dan Sheetkari."
+        },
+        {
+          "title": "Anatomi & Fisiologi",
+          "content": "Bidang gerak tubuh, perlindungan persendian, anatomi pergelangan kaki, lutut, tulang belakang, bahu, mekanisme pernapasan, dan sistem saraf."
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "content": "Penyusunan urutan kelas, penyesuaian postur, pengelolaan berbagai tingkatan siswa, teknik intonasi suara, kesiapan mental, dan perencanaan kelas terstruktur."
+        },
+        {
+          "title": "Meditasi & Mantra",
+          "content": "Berbagai teknik meditasi, pelafalan mantra suci, Trataka, Meditasi Dinamis Osho, Nada Brahma, Antar Mouna, dan latihan keheningan batin."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga berbasis presisi anatomi menggunakan alat bantu seperti balok, tali, dan selimut guna mencapai keselarasan postur optimal serta mencegah cedera."
+        },
+        {
+          "title": "Prinsip Keselarasan",
+          "content": "Pondasi latihan yang aman: penataan sendi, pola aktivasi otot, dan biomekanika tubuh guna melindungi serta memperkuat fisik secara menyeluruh."
+        },
+        {
+          "title": "Bandhas (Kunci Energi)",
+          "content": "Kuasai Mula, Uddiyana, dan Jalandhara Bandha untuk mengalirkan energi prana, menguatkan inti tubuh, dan memperdalam kualitas meditasi."
+        },
+        {
+          "title": "Mudras (Gestur Suci)",
+          "content": "Gerakan suci tangan dan tubuh guna mengarahkan energi vital, mempertajam konsentrasi, serta terhubung dengan kesadaran yang lebih mendalam."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Rutinitas Harian di Ashram",
+      "sub": "Irama teratur yang memadukan latihan intensif, pendalaman filosofis, makanan sehat, dan waktu istirahat.",
+      "time1": "06:00",
+      "act1": "Bangun Pagi & Pembersihan Diri",
+      "time2": "06:30",
+      "act2": "Pranayama, Melantunkan Mantra & Meditasi",
+      "time3": "07:30",
+      "act3": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Sarapan Sattvik Bernutrisi",
+      "time5": "10:00",
+      "act5": "Filosofi Yoga & Studi Naskah Klasik",
+      "time6": "12:00",
+      "act6": "Makan Siang Sehat & Istirahat",
+      "time7": "15:00",
+      "act7": "Anatomi Terapan & Fisiologi",
+      "time8": "16:30",
+      "act8": "Metodologi Pengajaran & Klinik Penjajaran",
+      "time9": "18:00",
+      "act9": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "time10": "19:30",
+      "act10": "Makan Malam Sattvik",
+      "time11": "21:00",
+      "act11": "Belajar Mandiri, Keheningan & Waktu Istirahat",
+      "beyondTheMat": "Di Luar Matras",
+      "badge": "Jadwal Harian",
+      "wakeUp": "Bangun Pagi & Pembersihan Diri",
+      "morningPranayama": "Pranayama & Meditasi",
+      "morningAsana": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "breakfast": "Sarapan Sehat Sattvik",
+      "philosophyClass": "Filosofi Yoga & Studi Kitab Suci",
+      "lunch": "Makan Siang Bernutrisi & Istirahat",
+      "anatomyClass": "Anatomi Terapan & Biomekanik",
+      "methodologyClass": "Metodologi Mengajar & Klinik Penjajaran",
+      "eveningAsana": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "dinner": "Makan Malam Sattvik",
+      "selfStudy": "Belajar Mandiri, Keheningan & Jam Tidur"
+    },
+    "inclusions": {
+      "heading": "Apa yang Termasuk dalam Pelatihan Anda",
+      "sub": "Semua fasilitas disiapkan untuk memastikan masa tinggal yang tenang dan transformatif.",
+      "incAccom": "Akomodasi ashram selama 23 malam",
+      "incMeals": "3 kali makan bergizi sattvik (vegetarian/vegan) segar setiap hari",
+      "incCert": "Sertifikat Yoga Alliance RYT 200 setelah kelulusan",
+      "incManuals": "Buku panduan kursus resmi, buku catatan, dan bahan ajar",
+      "incKit": "Matras yoga dan alat peraga latihan disediakan di ashram",
+      "incExcursions": "Ekskursi budaya sakral (pura tirta empul, sawah terasering, tari Bali)",
+      "incCeremonies": "Upacara api pembukaan dan penutupan tradisional (Agni Hotra)",
+      "incPickup": "Penjemputan bandara dari Denpasar (DPS) pada tanggal kedatangan resmi",
+      "incPre": "Modul persiapan Pra-TTC online cuma-cuma",
+      "incRepeat": "Hak mengulang kursus seumur hidup (bebas biaya kursus)",
+      "notIncHeading": "Tidak Termasuk",
+      "notIncFlights": "Tiket penerbangan internasional dan domestik",
+      "notIncVisa": "Biaya visa Indonesia",
+      "notIncInsurance": "Asuransi perjalanan dan kesehatan pribadi"
+    },
+    "pricing": {
+      "heading": "Paket Akomodasi & Harga",
+      "sub": "Harga transparan dan all-inclusive tanpa ada biaya tersembunyi.",
+      "tuitionOnly": "Paket Hanya Biaya Kursus",
+      "tuitionOnlyDesc": "Biaya kursus, semua makanan, materi belajar, dan sertifikat. Tinggal di luar ashram.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC luas dibagi bersama dua rekan siswa, kamar mandi dalam, balkon pribadi.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD",
+      "earlyBirdPrice": "Harga Early Bird",
+      "tuitionFees": "Pilihan Kamar & Biaya (300 Jam)",
+      "tripleSharing": "Kamar Berbagi Bertiga ($2.499)",
+      "doubleSharing": "Kamar Berbagi Berdua ($2.699)",
+      "privateRoom": "Kamar Privat ($3.499)",
+      "choosePackage": "Pilih Paket Anda",
+      "reserveSpot": "Amankan Tempat Anda",
+      "saveUSD": "Hemat $300 USD",
+      "residentialDuration": "Pelatihan yoga lanjutan 28 hari di Gianyar, Bali"
+    },
+    "ethics": {
+      "codeOfConduct": "Kode Etik",
+      "refundCancellation": "Pengembalian Dana & Pembatalan",
+      "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+    },
+    "faqsHeading": "Pertanyaan yang Sering Diajukan",
+    "faqs": [
+      {
+        "question": "Apakah Pelatihan Guru Yoga 200 Jam ini ramah bagi pemula?",
+        "answer": "Ya. Kurikulum dirancang bertahap dari pemahaman dasar hingga menengah. Siswa yang mendaftar juga mendapatkan akses gratis ke program persiapan online Pra-TTC untuk membangun kelenturan, kekuatan, dan keselarasan postur sebelum terbang ke Bali."
+      },
+      {
+        "question": "Gaya yoga apa saja yang dipelajari dalam TTC 200 Jam ini?",
+        "answer": "Anda akan mempelajari yoga multi-style yang bersumber dari tradisi otentik Himalaya: Hatha Yoga klasik, Vinyasa Flow dinamis, Ashtanga Primary Series (menurut K. Pattabhi Jois), dan penjajaran mendetail yang terinspirasi oleh Iyengar Yoga."
+      },
+      {
+        "question": "Bagaimana jadwal harian selama pelatihan berlangsung?",
+        "answer": "Hari pelatihan di YogaGarhi mengikuti jadwal terstruktur: 06:00 Bangun; 06:30 Pranayama & Meditasi; 07:30 Hatha & Vinyasa; 09:00 Sarapan; 10:00 Filosofi Yoga; 12:00 Makan Siang & Istirahat; 15:00 Anatomi Terapan; 16:30 Penjajaran & Metodologi; 18:00 Ashtanga & Iyengar bersama terapi yoga; 19:30 Makan Malam; 21:00 Belajar Mandiri & Jam Malam."
+      },
+      {
+        "question": "Berapa banyak siswa dalam satu angkatan di YogaGarhi Bali?",
+        "answer": "Kami membatasi secara ketat maksimal 8–10 siswa per kelas. Jumlah kecil ini menjamin perhatian penuh, koreksi tubuh yang teliti, dan komunikasi yang dekat dengan para pengajar utama."
+      },
+      {
+        "question": "Sertifikat apa yang didapat dan apakah diakui secara internasional?",
+        "answer": "Setelah menuntaskan seluruh jam tatap muka dan ujian praktik, Anda menerima sertifikat Registered Yoga Teacher (RYT 200) dari Yoga Alliance yang diakui secara sah di seluruh dunia untuk mengajar profesional."
+      },
+      {
+        "question": "Pilihan kamar apa saja yang ada dan berapa biayanya?",
+        "answer": "Kami menawarkan empat pilihan transparan: Hanya Biaya Kursus ($999 USD harga early bird dibanding normal $1,299; tanpa kamar dan makan), Kamar Bertiga ($1,750 USD dibanding $2,050), Kamar Berdua ($1,899 USD dibanding $2,199), dan Kamar Pribadi ($2,499 USD dibanding $2,799). Semua paket residensial mencakup 23 malam dan 3 kali makan setiap hari."
+      }
+    ],
+    "hero": {
+      "badge": "Sertifikasi Yoga Alliance RYT 200",
+      "h1": "Pelatihan Guru Yoga 300 Jam di Bali",
+      "sub": "Pelatihan residensial intensif 28 hari di Gianyar, Bali. Kuasai asana tingkat lanjut, teknik penyesuaian langsung, dan filosofi mendalam menuju RYT 500.",
+      "quickDuration": "28 Hari",
+      "quickLevel": "Lanjutan (memerlukan RYT 200)",
+      "quickCert": "Sertifikasi Yoga Alliance RYT 500",
+      "quickLang": "Bahasa Inggris",
+      "quickBatch": "8–10 Siswa",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Pesan Tempat Anda",
+      "btnBrochure": "Unduh Silabus",
+      "btnCounselor": "Konsultasi"
+    },
+    "overview": {
+      "heading": "Tingkatkan Perjalanan Yoga Anda di YogaGarhi Bali",
+      "story": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah kursus menyeluruh tingkat pemula hingga menengah bagi siapa saja yang ingin menjadi guru yoga percaya diri atau memperdalam yoga dalam kehidupan sehari-hari. YogaGarhi berada di Gianyar, sekitar 15 km dari Ubud, menawarkan ketenangan alam pedesaan. Selama kursus, Anda mempraktikkan asana setiap hari, mempelajari anatomi penjajaran, pranayama, meditasi, filosofi yoga, dan metode mengajar.",
+      "p1": "Pelatihan 300 jam kami di Bali ditujukan bagi guru yoga berdedikasi dan praktisi berpengalaman yang telah memiliki sertifikat 200 jam.",
+      "p2": "Pelajari variasi asana tingkat lanjut, biomekanika, penyesuaian langsung, pranayama mendalam, dan anatomi terapan menuju kualifikasi RYT 500."
+    },
+    "curriculum": {
+      "badge": "Modul Kurikulum",
+      "heading": "Rincian Modul & Topik Pembelajaran",
+      "sub": "Klik modul mana saja di bawah ini untuk menjelajahi rincian topik, teknik praktik, dan landasan teorinya.",
+      "modules": {
+        "asana": "Praktik Asana & Penjajaran",
+        "pranayama": "Pranayama & Energi Halus",
+        "philosophy": "Filosofi Yoga & Gaya Hidup",
+        "anatomy": "Anatomi dan Fisiologi",
+        "methodology": "Metodologi Pengajaran & Praktik",
+        "meditation": "Meditasi & Kesadaran Penuh",
+        "iyengar": "Dasar Yoga Iyengar & Alat Bantu",
+        "vinyasa": "Sekuensing Vinyasa Flow",
+        "hatha": "Hatha Yoga Klasik Tradisional"
+      },
+      "detailedModules": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "items": [
+            "Seri primer lengkap Ashtanga yoga oleh K. Pattabhi Jois",
+            "Minggu 1: Pengenalan & Surya Namaskar A & B",
+            "Minggu 2: Postur berdiri & penggunaan alat peraga yoga",
+            "Minggu 3: Postur duduk & postur penutup",
+            "Minggu 4: Gaya Mysore & praktik mengajar"
+          ]
+        },
+        {
+          "title": "Filosofi Yoga",
+          "items": [
+            "Yoga Sutra lengkap karya Patanjali",
+            "Delapan anggota Ashtanga Yoga",
+            "Pancha-Vayu & Panchakosha",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Pengantar Weda",
+            "Kisah inspiratif para yogi terkemuka"
+          ]
+        },
+        {
+          "title": "Pranayama & Praktik Pernapasan",
+          "items": [
+            "Teknik pranayama lengkap",
+            "Enam praktik pembersihan Shatkarma",
+            "Pernapasan tingkat lanjut: Sheetali, Sheetkari",
+            "Kumbhaka (menahan napas)",
+            "Integrasi selaras dengan latihan asana"
+          ]
+        },
+        {
+          "title": "Lantunan Suara Suci & Mantra",
+          "items": [
+            "Koleksi lengkap mantra tradisional",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Sloka untuk Resi Patanjali)",
+            "Latihan melantunkan mantra harian"
+          ]
+        },
+        {
+          "title": "Anatomi dan Fisiologi",
+          "items": [
+            "Studi mendalam tentang sistem tubuh manusia",
+            "Fisiologi otot & persendian",
+            "Sistem pernapasan & saraf",
+            "Pola makan & sistem pencernaan",
+            "Lokakarya fungsional asana"
+          ]
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "items": [
+            "Perancangan urutan kelas yang komprehensif",
+            "Prinsip demonstrasi & pengamatan",
+            "Kesiapan mental & emosional pengajar",
+            "Perencanaan struktur kelas bertahap",
+            "Praktik mengajar & evaluasi berkala"
+          ]
+        },
+        {
+          "title": "Meditasi & Bandha",
+          "items": [
+            "Meditasi Dinamis Osho",
+            "Meditasi Nada Brahma",
+            "Antar Mouna & Ajapa Japa",
+            "Penguasaan empat Bandha utama",
+            "Penyelarasan dengan asana & pranayama"
+          ]
+        },
+        {
+          "title": "Seni Penyelarasan & Penyesuaian",
+          "items": [
+            "Biomekanika dan penyesuaian fungsional postur klasik",
+            "Petunjuk verbal dan bantuan sentuhan langsung yang aman",
+            "Memahami variasi anatomi individu",
+            "Strategi modifikasi menggunakan balok dan tali yoga"
+          ]
+        },
+        {
+          "title": "Praktik Klasik Hatha Yoga",
+          "items": [
+            "Pendalaman prinsip Hatha klasik dan penahanan postur",
+            "Penyusunan urutan Hatha: pemanasan, postur puncak, dan penyeimbang",
+            "Menyeimbangkan energi matahari (Ha) dan bulan (Tha)",
+            "Penerapan Bandha dan Mudra dalam postur statis"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Presisi Gerak",
+          "items": [
+            "Penyelarasan metodis dengan balok, tali, dan selimut",
+            "Penempatan geometris panggul, tulang belakang, dan bahu",
+            "Persiapan postur terbalik yang aman",
+            "Rangkaian restoratif dengan alat bantu"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Gerak Dinamis",
+          "items": [
+            "Struktur urutan cerdas: pemanasan, puncak, dan pendinginan",
+            "Transisi mengalir dan lompatan berirama napas",
+            "Merancang kelas tematik sesuai tingkat kemampuan",
+            "Mengatur tempo dan menjaga energi ruangan"
+          ]
+        },
+        {
+          "title": "Kelas Tambahan & Pengalaman Khas",
+          "items": [
+            "Sesi Sound Healing (terapi suara)",
+            "Latihan yoga di pantai Bali",
+            "Yin Yoga & Acro Yoga",
+            "Dasar-dasar Ayurveda",
+            "Upacara api suci Agni Hotra"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Akomodasi & Pilihan Paket",
+      "sub": "Tarif transparan tanpa biaya tambahan tak terduga.",
+      "tuitionOnly": "Paket Hanya Biaya Kursus",
+      "tuitionOnlyDesc": "Pengajaran, makanan, materi studi, dan ijazah. Akomodasi di luar.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC untuk tiga orang dengan kamar mandi dalam dan balkon.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar ber-AC untuk dua orang dengan kamar mandi dan pemandangan asri.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Kamar tunggal ber-AC dengan kasur king, kamar mandi dalam, dan teras pribadi.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD"
+    },
+    "tourCall": {
+      "heading": "Ingin Melihat Sekolah Sebelum Mendaftar?",
+      "sub": "Bergabunglah dalam panggilan video langsung untuk tur pribadi mengelilingi kampus, ruang kelas, shala yoga, dan kamar penginapan.",
+      "cta": "Jadwalkan Panggilan. Lihat Sekolah. Lihat Kamar Anda. Lihat Aula Yoga.",
+      "bookCallLive": "Lihat suasana sekolah, kamar Anda, dan shala yoga secara langsung. Masukkan detail Anda di bawah ini untuk penjadwalan."
+    },
+    "takeaway": {
+      "badge": "Manfaat Yang Anda Bawa Pulang",
+      "heading": "Yang Akan Anda",
+      "headingItalic": "Bawa Pulang",
+      "sub": "Lebih dari sekadar sertifikat fisik, Anda pulang dengan perspektif baru, koneksi batin yang mendalam, dan keterampilan mengajar yang nyata.",
+      "careerImpactTitle": "Peluang Karier:",
+      "careerImpactDesc": "Setelah menyelesaikan Pelatihan Guru Yoga 200 Jam, Anda dapat mulai mengajar yoga di mana saja di dunia: studio, kelas privat daring, retret yoga, atau membangun komunitas mandiri.",
+      "card1Title": "Sertifikasi Global",
+      "card1Desc": "Yoga Alliance RYT-200 untuk memulai karier mengajar di negara mana pun.",
+      "card2Title": "Penguasaan Praktik",
+      "card2Desc": "Bimbingan mendalam dalam Hatha, Vinyasa, Ashtanga, dan Iyengar.",
+      "card3Title": "Keselamatan & Anatomi",
+      "card3Desc": "Pelajari cara mengajar dan berlatih dengan aman tanpa risiko cedera.",
+      "card4Title": "Kedalaman Spiritual",
+      "card4Desc": "Selami makna Mantra, meditasi, dan filosofi yoga klasik.",
+      "card5Title": "Metodologi Mengajar",
+      "card5Desc": "Keterampilan praktis dalam memandu kelas, koreksi postur, dan menginspirasi murid.",
+      "card6Title": "Persahabatan Sejati",
+      "card6Desc": "Jalinan persaudaraan seumur hidup dengan komunitas yoga internasional."
+    },
+    "timeline": {
+      "prepTitle": "Persiapan dimulai sejak pendaftaran",
+      "prepDesc": "Mulailah perjalanan Anda dengan modul persiapan dan bimbingan guru secara daring.",
+      "datesTitle": "Pelatihan: Tanggal 1 – 24 setiap bulan",
+      "datesDesc": "Program imersif 24 hari yang diselenggarakan setiap bulan di Bali.",
+      "supportTitle": "Dukungan komunitas seumur hidup di YogaGarhi",
+      "supportDesc": "Selalu terhubung dengan keluarga besar yoga dunia kami."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Akomodasi",
+      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "feat1": "10 air terjun indah dalam radius 10 km",
+      "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
+      "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
+      "feat4": "Hanya berjarak 15 km dari pusat keramaian Ubud",
+      "glimpses": "Potret Suasana Menginap Anda",
+      "allRooms": "Semua Kamar Dilengkapi",
+      "wifi": "Wi-Fi Cepat Gratis",
+      "hotWater": "Air Hangat",
+      "acFan": "AC / Kipas Angin",
+      "cleaning": "Pembersihan Harian",
+      "bed1": "tempat tidur",
+      "bedsMore": "tempat tidur",
+      "courseOnly": "Hanya Kursus",
+      "mostPopular": "Paling Diminati",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Di Luar Matras",
+      "heading": "Ekskursi Sakral",
+      "sub": "Selami warisan spiritual Bali melalui pengalaman yang sarat makna transformatif"
+    },
+    "prakritiResearch": {
+      "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
+      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "card1Title": "Pertanyaan Mendasar",
+      "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
+      "card2Title": "Penyelidikan Mendalam",
+      "card2Text": "Hal ini melahirkan riset mendalam pada naskah yoga klasik, Ayurveda, dan pengalaman nyata bersama siswa. Jawabannya nyata: setiap manusia terlahir dengan Prakriti yang unik.",
+      "card3Title": "Cetak Biru Energi",
+      "card3Text": "Prakriti membentuk fisik, pikiran, emosi, dan sistem saraf. Sebagian butuh ketenangan, sebagian butuh gerak dinamis, dan sebagian butuh keheningan. Gaya seragam bisa memicu ketidakseimbangan.",
+      "card4Title": "Kualitas Latihan",
+      "card4Text": "Lebih dari sekadar nama aliran yoga, yang terpenting adalah bagaimana Anda berlatih: bagaimana sistem saraf didekati, nafas dipandu, dan Dosha Anda dirawat tanpa dipaksakan.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Dari kesadaran ini lahirlah Shiv–Shakti Sadhana, pendekatan seimbang yang menyelaraskan stabilitas dan aliran energi. Asana di sini menjadi fondasi kekuatan yang membumi.",
+      "card6Title": "Kembali ke Keseimbangan",
+      "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
+      "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
+      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+    },
+    "ethicsExtra": {
+      "code1": "Hadir tepat waktu",
+      "code2": "Bebas alkohol dan rokok",
+      "code3": "Makanan khusus vegetarian",
+      "code4": "Menjaga keheningan di kelas",
+      "code5": "Pakaian sopan dan pantas",
+      "code6": "Saling menghargai sesama",
+      "code7": "Dilarang membawa ponsel ke dalam kelas",
+      "code8": "Wajib mengikuti seluruh rangkaian kelas",
+      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
+      "refund2": "Dapat dialihkan ke peserta lain",
+      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
+      "refund4": "Kebijakan hari percobaan",
+      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "reviewsHeading": "Apa Kata Para Siswa Kami",
+      "viewAllGoogle": "Lihat semua ulasan di Google",
+      "basedOnReviews": "Berdasarkan",
+      "openGoogleMaps": "Buka di Google Maps",
+      "open24Hours": "Buka 24 jam"
+    },
+    "sunday": {
+      "note": "Hari Minggu adalah hari istirahat penuh untuk relaksasi, belajar mandiri, atau mengikuti wisata opsional.",
+      "cta": "Jelajahi Hari Minggu di Bali"
+    },
+    "tapHover": {
+      "tap": "Ketuk untuk melihat detail",
+      "hover": "Arahkan kursor untuk melihat detail"
+    },
+    "inclusionsList": [
+      "Kamar bersih, nyaman, dan tenang",
+      "Kamar mandi dalam dengan air panas",
+      "Pendingin ruangan (AC) / kipas angin",
+      "Akses internet Wi-Fi gratis",
+      "Tiga kali makan vegetarian sehat setiap hari",
+      "Teh herbal alami dan air minum murni",
+      "Buku materi pelatihan (modul, buku catatan, pena)",
+      "Matras yoga dan perlengkapan latihan lengkap",
+      "Kunjungan alam dan kegiatan akhir pekan",
+      "Penjemputan bandara pada hari kedatangan (bandara terdekat)",
+      "Staf pendampingan kampus siaga 24 jam",
+      "Sertifikat kelulusan resmi setelah menyelesaikan kursus",
+      "Pijat relaksasi khas Bali tradisional",
+      "Pertunjukan tarian tradisional Bali",
+      "Trekking menyusuri sawah Ubud",
+      "Modul persiapan online Pre-TTC gratis",
+      "Lokakarya keseimbangan lengan (arm balance)",
+      "Lokakarya wawasan Ayurveda praktis",
+      "Hak mengulang kursus gratis seumur hidup",
+      "Buku YogaGarhi berisi 35+ variasi sekuens kreatif"
+    ],
+    "exclusionsList": [
+      "Tiket penerbangan dan transportasi pribadi",
+      "Biaya visa kunjungan dan asuransi perjalanan",
+      "Antar kembali ke bandara saat kepulangan",
+      "Layanan cuci pakaian (laundry)",
+      "Belanja pribadi dan aktivitas tambahan opsional"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Pelatihan yoga multi-gaya",
+        "description": "Pelajari yoga dengan pendekatan murni dan teruji. Guru kami menjaga kemurnian tradisi leluhur yoga."
+      },
+      {
+        "title": "Bersertifikasi Yoga Alliance",
+        "description": "Raih sertifikat yang diakui secara global untuk mulai mengajar yoga dengan penuh percaya diri."
+      },
+      {
+        "title": "Suasana damai di Bali",
+        "description": "Rasakan pengalaman yoga di tengah alam tropis yang tenang untuk memperdalam latihan harian Anda."
+      },
+      {
+        "title": "Wisata alam terbuka",
+        "description": "Kunjungi pura bersejarah, pantai, dan jalur alam yang memadukan pembelajaran dengan kebudayaan lokal."
+      },
+      {
+        "title": "Jumlah siswa per kelas terbatas",
+        "description": "Dapatkan bimbingan dan koreksi postur yang saksama. Kemajuan setiap murid adalah fokus utama kami."
+      },
+      {
+        "title": "Komunitas yang hangat",
+        "description": "Jadilah bagian dari keluarga yang suportif dan bertumbuh bersama dalam atmosfer penuh kepedulian."
+      },
+      {
+        "title": "Pijat tradisional Bali",
+        "description": "Terapi pijat tradisional untuk meredakan ketegangan otot dan memberikan relaksasi menyeluruh."
+      },
+      {
+        "title": "Pentas tari tradisional Bali",
+        "description": "Seni pertunjukan sarat makna yang mencerminkan kekayaan budaya dan spiritualitas masyarakat Bali."
+      },
+      {
+        "title": "Makanan bergizi dan bersih",
+        "description": "Nikmati santapan sattvik segar dan menyehatkan yang mendukung stamina latihan Anda sepanjang hari."
+      },
+      {
+        "title": "Praktik meditasi terbimbing",
+        "description": "Kembangkan ketenangan batin dan kejernihan pikiran lewat sesi hening setiap hari."
+      },
+      {
+        "title": "Guru berpengalaman",
+        "description": "Belajarlah langsung dari instruktur bersertifikasi dengan pengalaman mengajar nyata bertahun-tahun."
+      },
+      {
+        "title": "Gaya hidup yogik",
+        "description": "Terapkan gaya hidup selaras untuk menyatukan kesehatan raga, pikiran, dan jiwa secara utuh."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Lokakarya Ayurveda & kelas memasak sehat",
+        "description": "Pahami tipe tubuh alami Anda (Prakriti) dan cara menyeimbangkan dosha melalui pola makan dan hidup sehat."
+      },
+      {
+        "title": "Penguasaan arm balance",
+        "description": "Bangun kekuatan, teknik, dan rasa percaya diri untuk menguasai pose keseimbangan lengan secara bertahap."
+      },
+      {
+        "title": "Lokakarya Handstand (handstand mastery)",
+        "description": "Atasi rasa takut dan temukan titik keseimbangan dengan latihan terstruktur di dinding dan berpasangan."
+      },
+      {
+        "title": "Yin Yoga & peregangan dalam",
+        "description": "Jangkau jaringan ikat fasia yang dalam melalui pose pasif berdurasi panjang guna melepas ketegangan tubuh."
+      },
+      {
+        "title": "Sesi relaksasi suara & Tibetan singing bowl",
+        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Buka ruang hati Anda lewat nyanyian lantunan mantra suci dan kirtan untuk terhubung dengan esensi yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Pentas tari tradisional Bali",
+        "description": "Saksikan keelokan seni tari Bali: perpaduan gemulai, kisah epos, dan ketulusan bhakti spiritual."
+      },
+      {
+        "title": "Trekking sawah terasering",
+        "description": "Menyusuri pematang sawah khas Ubud dan rasakan keselarasan hidup masyarakat pedesaan Bali."
+      },
+      {
+        "title": "Kunjungan ke air terjun suci",
+        "description": "Menuju air terjun sakral untuk mengikuti ritual penyucian diri tradisional dengan air sumber alami."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Sarapan",
+        "time": "07:00 WITA",
+        "items": [
+          "Buah-buahan tropis segar",
+          "Granola buatan sendiri dengan yogurt kelapa",
+          "Teh herbal alami & jus segar",
+          "Bubur beras merah Bali"
+        ]
+      },
+      {
+        "meal": "Makan Siang",
+        "time": "12:30 WITA",
+        "items": [
+          "Buddha bowl kaya nutrisi",
+          "Olahan tempe dan tahu segar",
+          "Salad sayuran kebun organik",
+          "Sayuran masak khas Bali"
+        ]
+      },
+      {
+        "meal": "Makan Malam",
+        "time": "18:30 WITA",
+        "items": [
+          "Sup hangat penenang",
+          "Nasi biji-bijian kukus dan dahl",
+          "Kitchari berempah Ayurveda",
+          "Seduhan herbal menenangkan"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Kisah Video Siswa Nyata",
+    "videoStoriesHeading": "Dengarkan Langsung dari Lulusan Kami di Bali",
+    "videoStoriesSub": "Refleksi nyata dari para praktisi yang menjalani perjalanan residensial di YogaGarhi.",
+    "verifiedGraduate": "Lulusan Terverifikasi",
+    "speakTeacherTitle": "Ingin berkonsultasi dengan guru utama terlebih dahulu?",
+    "speakTeacherDesc": "Panggilan video privat 15 menit untuk membahas tujuan, kamar, dan tanggal Anda.",
+    "helpfulGuidesBadge": "Baca Sebelum Berangkat",
+    "helpfulGuidesTitle": "Panduan Bermanfaat & Artikel Persiapan",
+    "helpfulGuidesDesc": "Pelajari panduan mendalam kami untuk mempersiapkan fisik, mental, dan perjalanan pelatihan Anda di Bali.",
+    "readArticle": "Baca Artikel",
+    "mindfulEating": "Sehari Pola Makan Berkesadaran",
+    "clickToCollapse": "Klik untuk menutup",
+    "clickToExpand": "Klik untuk membuka",
+    "caterDietsTitle": "Kami Melayani Semua Pola Makan",
+    "caterDietsDesc": "Beri tahu kami preferensi makanan Anda, dan kami akan menyiapkan segalanya",
+    "studentStories": {
+      "badge": "Kisah Siswa",
+      "heading": "Hati yang Berkelimpahan di YogaGarhi",
+      "sub": "\"Dengarkan langsung penuturan tulus dari para praktisi yang telah menjalani perjalanan transformasi ini.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Kanada",
+          "quote": "YogaGarhi memegang teguh esensi sejati yoga tradisional. Sejak awal, saya merasa dihargai dan didampingi secara personal. Para pengajar dengan tulus membimbing perkembangan Anda hingga menemukan karakter mengajar Anda sendiri.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turki",
+          "quote": "Sachin Ji adalah salah satu guru yoga paling berwawasan luas yang pernah mengajar saya. Meskipun saya seorang pemula, kesabaran dan dorongannya membuat saya memahami keselarasan asana dengan penuh percaya diri.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Pelatihan 200 jam di Bali benar-benar luar biasa. 🌺 Pengetahuan yang diajarkan sangat mendalam dan autentik. Para guru mengajar dari hati dengan penuh ketulusan dan kebijaksanaan layaknya keluarga besar yang hangat.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Kanada",
+          "quote": "Sachin Ji adalah pengajar dan pribadi yang luar biasa. Pelatihan di Bali ini menjadi awal perjalanan yoga berharga yang mengantarkan saya percaya diri mengajar di berbagai penjuru dunia.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Jerman",
+          "quote": "Saya sangat mengagumi ketenangan, keramahan, dan kehangatan Sachin Ji. Beliau sangat berilmu dan senantiasa meluangkan waktu membimbing setiap siswa secara teliti.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Pengalaman transformatif yang amat berkesan di YogaGarhi Bali. Kelompok belajar kecil memberikan manfaat maksimal, setiap koreksi postur terasa personal. Saya merasa sangat siap untuk mengajar.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
+  },
+  "course100Rishikesh": {
+    "metaTitle": "Pelatihan Guru Yoga 100 Jam di Rishikesh | YTTC Singkat India",
+    "metaDesc": "Pelatihan residensial 100 jam di Rishikesh, India. Guru master Himalaya asli, ashram di tepi Sungai Gangga suci, dan sertifikasi resmi.",
+    "heroTitle": "Pelatihan Guru Yoga 100 Jam di Rishikesh",
+    "heroSub": "Rasakan yoga autentik di tepi Sungai Gangga yang suci. Pelatihan dasar 12 hari di Rishikesh, India.",
+    "quickInfo": {
+      "course": "Kursus",
+      "courseVal": "YTTC 100 Jam Rishikesh",
+      "duration": "Durasi",
+      "durationVal": "12 Days",
+      "style": "Gaya",
+      "styleVal": "Yoga Multi-Style",
+      "level": "Tingkat",
+      "levelVal": "Pemula hingga Menengah",
+      "certification": "Sertifikasi",
+      "certificationVal": "Sertifikat Yoga Alliance",
+      "startingFrom": "$1,149 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Hemat",
+      "earlyBirdDiscount": "Hemat $200 Diskon Early Bird"
+    },
+    "highlights": {
+      "smallGroups": "Grup kecil (maks 8–10)",
+      "smallGroupsSub": "Perhatian pribadi",
+      "preYttc": "Dukungan sebelum kursus",
+      "preYttcSub": "Persiapan & bimbingan",
+      "mentorship": "Mentoring pasca lulus",
+      "mentorshipSub": "1 tahun dukungan berkelanjutan",
+      "goodieBag": "Paket bingkisan gratis",
+      "goodieBagSub": "Perlengkapan yoga"
+    },
+    "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
+    "watchVideoStories": "Tonton video cerita dan testimoni siswa",
+    "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
+    "whyYogaGarhiBox": {
+      "badge": "Mengapa Memilih YogaGarhi",
+      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
+      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
+      "p1Title": "Maksimal 8–10 Siswa per Angkatan",
+      "p1Highlight": "Fokus Personal",
+      "p1Desc": "Jumlah siswa terbatas memastikan arahan personal, koreksi postur langsung, dan perhatian penuh dari guru.",
+      "p2Title": "Pelatihan Online Pra-TTC Gratis",
+      "p2Highlight": "Siap Percaya Diri",
+      "p2Desc": "Kursus persiapan cuma-cuma sebelum tiba di Bali untuk membangun kekuatan fisik dan wawasan dasar.",
+      "p3Title": "Mentoring 1 Tahun Pasca Kelulusan",
+      "p3Highlight": "Komunitas Berkelanjutan",
+      "p3Desc": "Bimbingan lanjutan, saran penyusunan sekuens kelas, dan dukungan karier jauh setelah masa pelatihan usai.",
+      "p4Title": "Mengulang Kursus Gratis Seumur Hidup",
+      "p4Highlight": "Kembali Tanpa Biaya",
+      "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
+      "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
+      "saveEarlyBird": "Hemat $300 Diskon Early Bird",
+      "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
+      "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
+      "checkAvailability": "Cek Ketersediaan",
+      "bookFreeCall": "Pesan Panggilan Video Gratis"
+    },
+    "hoursStructure": {
+      "badge": "Jam Pelatihan",
+      "heading": "Struktur Jam Belajar 200 Jam",
+      "sub": "Pembagian seimbang antara jam tatap muka langsung, penjajaran praktik, dan studi mandiri sesuai ketentuan Yoga Alliance.",
+      "contactHours": "Jam Tatap Muka",
+      "contactHoursDesc": "Instruksi langsung bersama guru utama dalam asana, penjajaran, anatomi, dan filosofi.",
+      "selfStudy": "Studi Mandiri & Praktik Mengajar",
+      "selfStudyDesc": "Bacaan terarah, jurnal, praktik bersama rekan, dan perancangan sekuens kelas.",
+      "totalCert": "Total Sertifikasi",
+      "totalCertDesc": "Memenuhi dan melampaui standar Yoga Alliance RYT 200.",
+      "hoursUnit": "Jam"
+    },
+    "syllabus": {
+      "heading": "Kurikulum & Silabus",
+      "sub": "Kurikulum terpadu dan seimbang yang menyatukan naskah yoga klasik dengan pemahaman biomekanik modern.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditasi",
+      "tab4": "Anatomi & Fisiologi",
+      "tab5": "Filosofi & Etika",
+      "tapMore": "Ketuk untuk melihat lebih banyak",
+      "hoverMore": "Arahkan kursor untuk melihat lebih banyak",
+      "takeaway": "Pemahaman Utama",
+      "carryHome": "Untuk Dibawa Pulang",
+      "careerImpact": "Dampak Karier:",
+      "cards": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "content": "Rangkaian lengkap seri primer Ashtanga Yoga. Peningkatan bertahap melalui Surya Namaskar A & B, postur berdiri, postur duduk, dan latihan gaya Mysore."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Seri Pawanmuktasana, variasi Surya Namaskar, postur berdiri dan duduk, lengkungan ke belakang, lipatan ke depan, inversi, dan penyusunan urutan kelas."
+        },
+        {
+          "title": "Filosofi Yoga",
+          "content": "Pengantar Yoga Sutra Patanjali, delapan pilar Ashtanga Yoga, Nadis, Cakra, Pancha-Vayus, Panchakoshas, Triguna, serta kisah teladan para yogi agung."
+        },
+        {
+          "title": "Pranayama & Pernapasan",
+          "content": "Teknik pernapasan lengkap: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, dan Sheetkari."
+        },
+        {
+          "title": "Anatomi & Fisiologi",
+          "content": "Bidang gerak tubuh, perlindungan persendian, anatomi pergelangan kaki, lutut, tulang belakang, bahu, mekanisme pernapasan, dan sistem saraf."
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "content": "Penyusunan urutan kelas, penyesuaian postur, pengelolaan berbagai tingkatan siswa, teknik intonasi suara, kesiapan mental, dan perencanaan kelas terstruktur."
+        },
+        {
+          "title": "Meditasi & Mantra",
+          "content": "Berbagai teknik meditasi, pelafalan mantra suci, Trataka, Meditasi Dinamis Osho, Nada Brahma, Antar Mouna, dan latihan keheningan batin."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga berbasis presisi anatomi menggunakan alat bantu seperti balok, tali, dan selimut guna mencapai keselarasan postur optimal serta mencegah cedera."
+        },
+        {
+          "title": "Prinsip Keselarasan",
+          "content": "Pondasi latihan yang aman: penataan sendi, pola aktivasi otot, dan biomekanika tubuh guna melindungi serta memperkuat fisik secara menyeluruh."
+        },
+        {
+          "title": "Bandhas (Kunci Energi)",
+          "content": "Kuasai Mula, Uddiyana, dan Jalandhara Bandha untuk mengalirkan energi prana, menguatkan inti tubuh, dan memperdalam kualitas meditasi."
+        },
+        {
+          "title": "Mudras (Gestur Suci)",
+          "content": "Gerakan suci tangan dan tubuh guna mengarahkan energi vital, mempertajam konsentrasi, serta terhubung dengan kesadaran yang lebih mendalam."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Rutinitas Harian di Ashram",
+      "sub": "Irama teratur yang memadukan latihan intensif, pendalaman filosofis, makanan sehat, dan waktu istirahat.",
+      "time1": "06:00",
+      "act1": "Bangun Pagi & Pembersihan Diri",
+      "time2": "06:30",
+      "act2": "Pranayama, Melantunkan Mantra & Meditasi",
+      "time3": "07:30",
+      "act3": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Sarapan Sattvik Bernutrisi",
+      "time5": "10:00",
+      "act5": "Filosofi Yoga & Studi Naskah Klasik",
+      "time6": "12:00",
+      "act6": "Makan Siang Sehat & Istirahat",
+      "time7": "15:00",
+      "act7": "Anatomi Terapan & Fisiologi",
+      "time8": "16:30",
+      "act8": "Metodologi Pengajaran & Klinik Penjajaran",
+      "time9": "18:00",
+      "act9": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "time10": "19:30",
+      "act10": "Makan Malam Sattvik",
+      "time11": "21:00",
+      "act11": "Belajar Mandiri, Keheningan & Waktu Istirahat",
+      "beyondTheMat": "Di Luar Matras",
+      "badge": "Jadwal Harian",
+      "wakeUp": "Bangun Pagi & Pembersihan Diri",
+      "morningPranayama": "Pranayama & Meditasi",
+      "morningAsana": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "breakfast": "Sarapan Sehat Sattvik",
+      "philosophyClass": "Filosofi Yoga & Studi Kitab Suci",
+      "lunch": "Makan Siang Bernutrisi & Istirahat",
+      "anatomyClass": "Anatomi Terapan & Biomekanik",
+      "methodologyClass": "Metodologi Mengajar & Klinik Penjajaran",
+      "eveningAsana": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "dinner": "Makan Malam Sattvik",
+      "selfStudy": "Belajar Mandiri, Keheningan & Jam Tidur"
+    },
+    "inclusions": {
+      "heading": "Apa yang Termasuk dalam Pelatihan Anda",
+      "sub": "Semua fasilitas disiapkan untuk memastikan masa tinggal yang tenang dan transformatif.",
+      "incAccom": "Akomodasi ashram selama 23 malam",
+      "incMeals": "3 kali makan bergizi sattvik (vegetarian/vegan) segar setiap hari",
+      "incCert": "Sertifikat Yoga Alliance RYT 200 setelah kelulusan",
+      "incManuals": "Buku panduan kursus resmi, buku catatan, dan bahan ajar",
+      "incKit": "Matras yoga dan alat peraga latihan disediakan di ashram",
+      "incExcursions": "Ekskursi budaya sakral (pura tirta empul, sawah terasering, tari Bali)",
+      "incCeremonies": "Upacara api pembukaan dan penutupan tradisional (Agni Hotra)",
+      "incPickup": "Penjemputan bandara dari Denpasar (DPS) pada tanggal kedatangan resmi",
+      "incPre": "Modul persiapan Pra-TTC online cuma-cuma",
+      "incRepeat": "Hak mengulang kursus seumur hidup (bebas biaya kursus)",
+      "notIncHeading": "Tidak Termasuk",
+      "notIncFlights": "Tiket penerbangan internasional dan domestik",
+      "notIncVisa": "Biaya visa Indonesia",
+      "notIncInsurance": "Asuransi perjalanan dan kesehatan pribadi"
+    },
+    "pricing": {
+      "heading": "Paket Akomodasi & Harga",
+      "sub": "Harga transparan dan all-inclusive tanpa ada biaya tersembunyi.",
+      "tuitionOnly": "Paket Hanya Biaya Kursus",
+      "tuitionOnlyDesc": "Biaya kursus, semua makanan, materi belajar, dan sertifikat. Tinggal di luar ashram.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC luas dibagi bersama dua rekan siswa, kamar mandi dalam, balkon pribadi.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD",
+      "earlyBirdPrice": "Harga Early Bird",
+      "tuitionFees": "Pilihan Kamar & Biaya (100 Jam Rishikesh)",
+      "tripleSharing": "Kamar Berbagi Bertiga ($1.149)",
+      "doubleSharing": "Kamar Berbagi Berdua ($1.349)",
+      "privateRoom": "Kamar Privat ($1.649)",
+      "choosePackage": "Pilih Paket Anda",
+      "reserveSpot": "Amankan Tempat Anda",
+      "saveUSD": "Hemat $300 USD",
+      "residentialDuration": "Pelatihan yoga residensial 12 hari di Rishikesh, India"
+    },
+    "ethics": {
+      "codeOfConduct": "Kode Etik",
+      "refundCancellation": "Pengembalian Dana & Pembatalan",
+      "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+    },
+    "faqsHeading": "Pertanyaan yang Sering Diajukan",
+    "faqs": [
+      {
+        "question": "Apakah Pelatihan Guru Yoga 200 Jam ini ramah bagi pemula?",
+        "answer": "Ya. Kurikulum dirancang bertahap dari pemahaman dasar hingga menengah. Siswa yang mendaftar juga mendapatkan akses gratis ke program persiapan online Pra-TTC untuk membangun kelenturan, kekuatan, dan keselarasan postur sebelum terbang ke Bali."
+      },
+      {
+        "question": "Gaya yoga apa saja yang dipelajari dalam TTC 200 Jam ini?",
+        "answer": "Anda akan mempelajari yoga multi-style yang bersumber dari tradisi otentik Himalaya: Hatha Yoga klasik, Vinyasa Flow dinamis, Ashtanga Primary Series (menurut K. Pattabhi Jois), dan penjajaran mendetail yang terinspirasi oleh Iyengar Yoga."
+      },
+      {
+        "question": "Bagaimana jadwal harian selama pelatihan berlangsung?",
+        "answer": "Hari pelatihan di YogaGarhi mengikuti jadwal terstruktur: 06:00 Bangun; 06:30 Pranayama & Meditasi; 07:30 Hatha & Vinyasa; 09:00 Sarapan; 10:00 Filosofi Yoga; 12:00 Makan Siang & Istirahat; 15:00 Anatomi Terapan; 16:30 Penjajaran & Metodologi; 18:00 Ashtanga & Iyengar bersama terapi yoga; 19:30 Makan Malam; 21:00 Belajar Mandiri & Jam Malam."
+      }
+    ],
+    "hero": {
+      "badge": "Sertifikasi Yoga Alliance RYT 200",
+      "h1": "Pelatihan Guru Yoga 100 Jam di Rishikesh",
+      "sub": "Perjalanan yoga autentik 12 hari di Rishikesh, Ibu Kota Yoga Dunia. Belajar dari guru-guru master tradisional di tepi Sungai Gangga.",
+      "quickDuration": "12 Hari",
+      "quickLevel": "Pemula hingga Menengah",
+      "quickCert": "Sertifikat Yoga Alliance",
+      "quickLang": "Bahasa Inggris",
+      "quickBatch": "8–10 Siswa",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Pesan Tempat Anda",
+      "btnBrochure": "Unduh Silabus",
+      "btnCounselor": "Konsultasi"
+    },
+    "overview": {
+      "heading": "Selamat Datang di YogaGarhi Rishikesh",
+      "story": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah kursus menyeluruh tingkat pemula hingga menengah bagi siapa saja yang ingin menjadi guru yoga percaya diri atau memperdalam yoga dalam kehidupan sehari-hari. YogaGarhi berada di Gianyar, sekitar 15 km dari Ubud, menawarkan ketenangan alam pedesaan. Selama kursus, Anda mempraktikkan asana setiap hari, mempelajari anatomi penjajaran, pranayama, meditasi, filosofi yoga, dan metode mengajar.",
+      "p1": "Terletak di kaki bukit Himalaya di tepi Sungai Gangga, pelatihan 100 jam di Rishikesh menawarkan pengenalan mendalam tentang kehidupan ashram.",
+      "p2": "Di bawah bimbingan guru-guru India berpengalaman, Anda mempelajari Hatha, Ashtanga, pranayama, meditasi, dan menghadiri ritual harian Ganga Aarti."
+    },
+    "curriculum": {
+      "badge": "Modul Kurikulum",
+      "heading": "Rincian Modul & Topik Pembelajaran",
+      "sub": "Klik modul mana saja di bawah ini untuk menjelajahi rincian topik, teknik praktik, dan landasan teorinya.",
+      "modules": {
+        "asana": "Praktik Asana & Penjajaran",
+        "pranayama": "Pranayama & Energi Halus",
+        "philosophy": "Filosofi Yoga & Gaya Hidup",
+        "anatomy": "Anatomi dan Fisiologi",
+        "methodology": "Metodologi Pengajaran & Praktik",
+        "meditation": "Meditasi & Kesadaran Penuh",
+        "iyengar": "Dasar Yoga Iyengar & Alat Bantu",
+        "vinyasa": "Sekuensing Vinyasa Flow",
+        "hatha": "Hatha Yoga Klasik Tradisional"
+      },
+      "detailedModules": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "items": [
+            "Seri primer lengkap Ashtanga yoga oleh K. Pattabhi Jois",
+            "Minggu 1: Pengenalan & Surya Namaskar A & B",
+            "Minggu 2: Postur berdiri & penggunaan alat peraga yoga",
+            "Minggu 3: Postur duduk & postur penutup",
+            "Minggu 4: Gaya Mysore & praktik mengajar"
+          ]
+        },
+        {
+          "title": "Filosofi Yoga",
+          "items": [
+            "Yoga Sutra lengkap karya Patanjali",
+            "Delapan anggota Ashtanga Yoga",
+            "Pancha-Vayu & Panchakosha",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Pengantar Weda",
+            "Kisah inspiratif para yogi terkemuka"
+          ]
+        },
+        {
+          "title": "Pranayama & Praktik Pernapasan",
+          "items": [
+            "Teknik pranayama lengkap",
+            "Enam praktik pembersihan Shatkarma",
+            "Pernapasan tingkat lanjut: Sheetali, Sheetkari",
+            "Kumbhaka (menahan napas)",
+            "Integrasi selaras dengan latihan asana"
+          ]
+        },
+        {
+          "title": "Lantunan Suara Suci & Mantra",
+          "items": [
+            "Koleksi lengkap mantra tradisional",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Sloka untuk Resi Patanjali)",
+            "Latihan melantunkan mantra harian"
+          ]
+        },
+        {
+          "title": "Anatomi dan Fisiologi",
+          "items": [
+            "Studi mendalam tentang sistem tubuh manusia",
+            "Fisiologi otot & persendian",
+            "Sistem pernapasan & saraf",
+            "Pola makan & sistem pencernaan",
+            "Lokakarya fungsional asana"
+          ]
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "items": [
+            "Perancangan urutan kelas yang komprehensif",
+            "Prinsip demonstrasi & pengamatan",
+            "Kesiapan mental & emosional pengajar",
+            "Perencanaan struktur kelas bertahap",
+            "Praktik mengajar & evaluasi berkala"
+          ]
+        },
+        {
+          "title": "Meditasi & Bandha",
+          "items": [
+            "Meditasi Dinamis Osho",
+            "Meditasi Nada Brahma",
+            "Antar Mouna & Ajapa Japa",
+            "Penguasaan empat Bandha utama",
+            "Penyelarasan dengan asana & pranayama"
+          ]
+        },
+        {
+          "title": "Seni Penyelarasan & Penyesuaian",
+          "items": [
+            "Biomekanika dan penyesuaian fungsional postur klasik",
+            "Petunjuk verbal dan bantuan sentuhan langsung yang aman",
+            "Memahami variasi anatomi individu",
+            "Strategi modifikasi menggunakan balok dan tali yoga"
+          ]
+        },
+        {
+          "title": "Praktik Klasik Hatha Yoga",
+          "items": [
+            "Pendalaman prinsip Hatha klasik dan penahanan postur",
+            "Penyusunan urutan Hatha: pemanasan, postur puncak, dan penyeimbang",
+            "Menyeimbangkan energi matahari (Ha) dan bulan (Tha)",
+            "Penerapan Bandha dan Mudra dalam postur statis"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Presisi Gerak",
+          "items": [
+            "Penyelarasan metodis dengan balok, tali, dan selimut",
+            "Penempatan geometris panggul, tulang belakang, dan bahu",
+            "Persiapan postur terbalik yang aman",
+            "Rangkaian restoratif dengan alat bantu"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Gerak Dinamis",
+          "items": [
+            "Struktur urutan cerdas: pemanasan, puncak, dan pendinginan",
+            "Transisi mengalir dan lompatan berirama napas",
+            "Merancang kelas tematik sesuai tingkat kemampuan",
+            "Mengatur tempo dan menjaga energi ruangan"
+          ]
+        },
+        {
+          "title": "Kelas Tambahan & Pengalaman Khas",
+          "items": [
+            "Sesi Sound Healing (terapi suara)",
+            "Latihan yoga di pantai Bali",
+            "Yin Yoga & Acro Yoga",
+            "Dasar-dasar Ayurveda",
+            "Upacara api suci Agni Hotra"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Akomodasi & Pilihan Paket",
+      "sub": "Tarif transparan tanpa biaya tambahan tak terduga.",
+      "tuitionOnly": "Paket Hanya Biaya Kursus",
+      "tuitionOnlyDesc": "Pengajaran, makanan, materi studi, dan ijazah. Akomodasi di luar.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC untuk tiga orang dengan kamar mandi dalam dan balkon.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar ber-AC untuk dua orang dengan kamar mandi dan pemandangan asri.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Kamar tunggal ber-AC dengan kasur king, kamar mandi dalam, dan teras pribadi.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD"
+    },
+    "tourCall": {
+      "heading": "Ingin Melihat Sekolah Sebelum Mendaftar?",
+      "sub": "Bergabunglah dalam panggilan video langsung untuk tur pribadi mengelilingi kampus, ruang kelas, shala yoga, dan kamar penginapan.",
+      "cta": "Jadwalkan Panggilan. Lihat Sekolah. Lihat Kamar Anda. Lihat Aula Yoga.",
+      "bookCallLive": "Lihat suasana sekolah, kamar Anda, dan shala yoga secara langsung. Masukkan detail Anda di bawah ini untuk penjadwalan."
+    },
+    "takeaway": {
+      "badge": "Manfaat Yang Anda Bawa Pulang",
+      "heading": "Yang Akan Anda",
+      "headingItalic": "Bawa Pulang",
+      "sub": "Lebih dari sekadar sertifikat fisik, Anda pulang dengan perspektif baru, koneksi batin yang mendalam, dan keterampilan mengajar yang nyata.",
+      "careerImpactTitle": "Peluang Karier:",
+      "careerImpactDesc": "Setelah menyelesaikan Pelatihan Guru Yoga 200 Jam, Anda dapat mulai mengajar yoga di mana saja di dunia: studio, kelas privat daring, retret yoga, atau membangun komunitas mandiri.",
+      "card1Title": "Sertifikasi Global",
+      "card1Desc": "Yoga Alliance RYT-200 untuk memulai karier mengajar di negara mana pun.",
+      "card2Title": "Penguasaan Praktik",
+      "card2Desc": "Bimbingan mendalam dalam Hatha, Vinyasa, Ashtanga, dan Iyengar.",
+      "card3Title": "Keselamatan & Anatomi",
+      "card3Desc": "Pelajari cara mengajar dan berlatih dengan aman tanpa risiko cedera.",
+      "card4Title": "Kedalaman Spiritual",
+      "card4Desc": "Selami makna Mantra, meditasi, dan filosofi yoga klasik.",
+      "card5Title": "Metodologi Mengajar",
+      "card5Desc": "Keterampilan praktis dalam memandu kelas, koreksi postur, dan menginspirasi murid.",
+      "card6Title": "Persahabatan Sejati",
+      "card6Desc": "Jalinan persaudaraan seumur hidup dengan komunitas yoga internasional."
+    },
+    "timeline": {
+      "prepTitle": "Persiapan dimulai sejak pendaftaran",
+      "prepDesc": "Mulailah perjalanan Anda dengan modul persiapan dan bimbingan guru secara daring.",
+      "datesTitle": "Pelatihan: Tanggal 1 – 24 setiap bulan",
+      "datesDesc": "Program imersif 24 hari yang diselenggarakan setiap bulan di Bali.",
+      "supportTitle": "Dukungan komunitas seumur hidup di YogaGarhi",
+      "supportDesc": "Selalu terhubung dengan keluarga besar yoga dunia kami."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Akomodasi",
+      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "feat1": "10 air terjun indah dalam radius 10 km",
+      "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
+      "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
+      "feat4": "Hanya berjarak 15 km dari pusat keramaian Ubud",
+      "glimpses": "Potret Suasana Menginap Anda",
+      "allRooms": "Semua Kamar Dilengkapi",
+      "wifi": "Wi-Fi Cepat Gratis",
+      "hotWater": "Air Hangat",
+      "acFan": "AC / Kipas Angin",
+      "cleaning": "Pembersihan Harian",
+      "bed1": "tempat tidur",
+      "bedsMore": "tempat tidur",
+      "courseOnly": "Hanya Kursus",
+      "mostPopular": "Paling Diminati",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Di Luar Matras",
+      "heading": "Ekskursi Sakral",
+      "sub": "Selami warisan spiritual Bali melalui pengalaman yang sarat makna transformatif"
+    },
+    "prakritiResearch": {
+      "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
+      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "card1Title": "Pertanyaan Mendasar",
+      "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
+      "card2Title": "Penyelidikan Mendalam",
+      "card2Text": "Hal ini melahirkan riset mendalam pada naskah yoga klasik, Ayurveda, dan pengalaman nyata bersama siswa. Jawabannya nyata: setiap manusia terlahir dengan Prakriti yang unik.",
+      "card3Title": "Cetak Biru Energi",
+      "card3Text": "Prakriti membentuk fisik, pikiran, emosi, dan sistem saraf. Sebagian butuh ketenangan, sebagian butuh gerak dinamis, dan sebagian butuh keheningan. Gaya seragam bisa memicu ketidakseimbangan.",
+      "card4Title": "Kualitas Latihan",
+      "card4Text": "Lebih dari sekadar nama aliran yoga, yang terpenting adalah bagaimana Anda berlatih: bagaimana sistem saraf didekati, nafas dipandu, dan Dosha Anda dirawat tanpa dipaksakan.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Dari kesadaran ini lahirlah Shiv–Shakti Sadhana, pendekatan seimbang yang menyelaraskan stabilitas dan aliran energi. Asana di sini menjadi fondasi kekuatan yang membumi.",
+      "card6Title": "Kembali ke Keseimbangan",
+      "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
+      "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
+      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+    },
+    "ethicsExtra": {
+      "code1": "Hadir tepat waktu",
+      "code2": "Bebas alkohol dan rokok",
+      "code3": "Makanan khusus vegetarian",
+      "code4": "Menjaga keheningan di kelas",
+      "code5": "Pakaian sopan dan pantas",
+      "code6": "Saling menghargai sesama",
+      "code7": "Dilarang membawa ponsel ke dalam kelas",
+      "code8": "Wajib mengikuti seluruh rangkaian kelas",
+      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
+      "refund2": "Dapat dialihkan ke peserta lain",
+      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
+      "refund4": "Kebijakan hari percobaan",
+      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "reviewsHeading": "Apa Kata Para Siswa Kami",
+      "viewAllGoogle": "Lihat semua ulasan di Google",
+      "basedOnReviews": "Berdasarkan",
+      "openGoogleMaps": "Buka di Google Maps",
+      "open24Hours": "Buka 24 jam"
+    },
+    "sunday": {
+      "note": "Hari Minggu adalah hari istirahat penuh untuk relaksasi, belajar mandiri, atau mengikuti wisata opsional.",
+      "cta": "Jelajahi Hari Minggu di Bali"
+    },
+    "tapHover": {
+      "tap": "Ketuk untuk melihat detail",
+      "hover": "Arahkan kursor untuk melihat detail"
+    },
+    "inclusionsList": [
+      "Kamar bersih, nyaman, dan tenang",
+      "Kamar mandi dalam dengan air panas",
+      "Pendingin ruangan (AC) / kipas angin",
+      "Akses internet Wi-Fi gratis",
+      "Tiga kali makan vegetarian sehat setiap hari",
+      "Teh herbal alami dan air minum murni",
+      "Buku materi pelatihan (modul, buku catatan, pena)",
+      "Matras yoga dan perlengkapan latihan lengkap",
+      "Kunjungan alam dan kegiatan akhir pekan",
+      "Penjemputan bandara pada hari kedatangan (bandara terdekat)",
+      "Staf pendampingan kampus siaga 24 jam",
+      "Sertifikat kelulusan resmi setelah menyelesaikan kursus",
+      "Pijat relaksasi khas Bali tradisional",
+      "Pertunjukan tarian tradisional Bali",
+      "Trekking menyusuri sawah Ubud",
+      "Modul persiapan online Pre-TTC gratis",
+      "Lokakarya keseimbangan lengan (arm balance)",
+      "Lokakarya wawasan Ayurveda praktis",
+      "Hak mengulang kursus gratis seumur hidup",
+      "Buku YogaGarhi berisi 35+ variasi sekuens kreatif"
+    ],
+    "exclusionsList": [
+      "Tiket penerbangan dan transportasi pribadi",
+      "Biaya visa kunjungan dan asuransi perjalanan",
+      "Antar kembali ke bandara saat kepulangan",
+      "Layanan cuci pakaian (laundry)",
+      "Belanja pribadi dan aktivitas tambahan opsional"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Pelatihan yoga multi-gaya",
+        "description": "Pelajari yoga dengan pendekatan murni dan teruji. Guru kami menjaga kemurnian tradisi leluhur yoga."
+      },
+      {
+        "title": "Bersertifikasi Yoga Alliance",
+        "description": "Raih sertifikat yang diakui secara global untuk mulai mengajar yoga dengan penuh percaya diri."
+      },
+      {
+        "title": "Suasana damai di Bali",
+        "description": "Rasakan pengalaman yoga di tengah alam tropis yang tenang untuk memperdalam latihan harian Anda."
+      },
+      {
+        "title": "Wisata alam terbuka",
+        "description": "Kunjungi pura bersejarah, pantai, dan jalur alam yang memadukan pembelajaran dengan kebudayaan lokal."
+      },
+      {
+        "title": "Jumlah siswa per kelas terbatas",
+        "description": "Dapatkan bimbingan dan koreksi postur yang saksama. Kemajuan setiap murid adalah fokus utama kami."
+      },
+      {
+        "title": "Komunitas yang hangat",
+        "description": "Jadilah bagian dari keluarga yang suportif dan bertumbuh bersama dalam atmosfer penuh kepedulian."
+      },
+      {
+        "title": "Pijat tradisional Bali",
+        "description": "Terapi pijat tradisional untuk meredakan ketegangan otot dan memberikan relaksasi menyeluruh."
+      },
+      {
+        "title": "Pentas tari tradisional Bali",
+        "description": "Seni pertunjukan sarat makna yang mencerminkan kekayaan budaya dan spiritualitas masyarakat Bali."
+      },
+      {
+        "title": "Makanan bergizi dan bersih",
+        "description": "Nikmati santapan sattvik segar dan menyehatkan yang mendukung stamina latihan Anda sepanjang hari."
+      },
+      {
+        "title": "Praktik meditasi terbimbing",
+        "description": "Kembangkan ketenangan batin dan kejernihan pikiran lewat sesi hening setiap hari."
+      },
+      {
+        "title": "Guru berpengalaman",
+        "description": "Belajarlah langsung dari instruktur bersertifikasi dengan pengalaman mengajar nyata bertahun-tahun."
+      },
+      {
+        "title": "Gaya hidup yogik",
+        "description": "Terapkan gaya hidup selaras untuk menyatukan kesehatan raga, pikiran, dan jiwa secara utuh."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Lokakarya Ayurveda & kelas memasak sehat",
+        "description": "Pahami tipe tubuh alami Anda (Prakriti) dan cara menyeimbangkan dosha melalui pola makan dan hidup sehat."
+      },
+      {
+        "title": "Penguasaan arm balance",
+        "description": "Bangun kekuatan, teknik, dan rasa percaya diri untuk menguasai pose keseimbangan lengan secara bertahap."
+      },
+      {
+        "title": "Lokakarya Handstand (handstand mastery)",
+        "description": "Atasi rasa takut dan temukan titik keseimbangan dengan latihan terstruktur di dinding dan berpasangan."
+      },
+      {
+        "title": "Yin Yoga & peregangan dalam",
+        "description": "Jangkau jaringan ikat fasia yang dalam melalui pose pasif berdurasi panjang guna melepas ketegangan tubuh."
+      },
+      {
+        "title": "Sesi relaksasi suara & Tibetan singing bowl",
+        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Buka ruang hati Anda lewat nyanyian lantunan mantra suci dan kirtan untuk terhubung dengan esensi yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Pentas tari tradisional Bali",
+        "description": "Saksikan keelokan seni tari Bali: perpaduan gemulai, kisah epos, dan ketulusan bhakti spiritual."
+      },
+      {
+        "title": "Trekking sawah terasering",
+        "description": "Menyusuri pematang sawah khas Ubud dan rasakan keselarasan hidup masyarakat pedesaan Bali."
+      },
+      {
+        "title": "Kunjungan ke air terjun suci",
+        "description": "Menuju air terjun sakral untuk mengikuti ritual penyucian diri tradisional dengan air sumber alami."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Sarapan",
+        "time": "07:00 WITA",
+        "items": [
+          "Buah-buahan tropis segar",
+          "Granola buatan sendiri dengan yogurt kelapa",
+          "Teh herbal alami & jus segar",
+          "Bubur beras merah Bali"
+        ]
+      },
+      {
+        "meal": "Makan Siang",
+        "time": "12:30 WITA",
+        "items": [
+          "Buddha bowl kaya nutrisi",
+          "Olahan tempe dan tahu segar",
+          "Salad sayuran kebun organik",
+          "Sayuran masak khas Bali"
+        ]
+      },
+      {
+        "meal": "Makan Malam",
+        "time": "18:30 WITA",
+        "items": [
+          "Sup hangat penenang",
+          "Nasi biji-bijian kukus dan dahl",
+          "Kitchari berempah Ayurveda",
+          "Seduhan herbal menenangkan"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Kisah Video Siswa Nyata",
+    "videoStoriesHeading": "Dengarkan Langsung dari Lulusan Kami di Bali",
+    "videoStoriesSub": "Refleksi nyata dari para praktisi yang menjalani perjalanan residensial di YogaGarhi.",
+    "verifiedGraduate": "Lulusan Terverifikasi",
+    "speakTeacherTitle": "Ingin berkonsultasi dengan guru utama terlebih dahulu?",
+    "speakTeacherDesc": "Panggilan video privat 15 menit untuk membahas tujuan, kamar, dan tanggal Anda.",
+    "helpfulGuidesBadge": "Baca Sebelum Berangkat",
+    "helpfulGuidesTitle": "Panduan Bermanfaat & Artikel Persiapan",
+    "helpfulGuidesDesc": "Pelajari panduan mendalam kami untuk mempersiapkan fisik, mental, dan perjalanan pelatihan Anda di Bali.",
+    "readArticle": "Baca Artikel",
+    "mindfulEating": "Sehari Pola Makan Berkesadaran",
+    "clickToCollapse": "Klik untuk menutup",
+    "clickToExpand": "Klik untuk membuka",
+    "caterDietsTitle": "Kami Melayani Semua Pola Makan",
+    "caterDietsDesc": "Beri tahu kami preferensi makanan Anda, dan kami akan menyiapkan segalanya",
+    "studentStories": {
+      "badge": "Kisah Siswa",
+      "heading": "Hati yang Berkelimpahan di YogaGarhi",
+      "sub": "\"Dengarkan langsung penuturan tulus dari para praktisi yang telah menjalani perjalanan transformasi ini.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Kanada",
+          "quote": "YogaGarhi memegang teguh esensi sejati yoga tradisional. Sejak awal, saya merasa dihargai dan didampingi secara personal. Para pengajar dengan tulus membimbing perkembangan Anda hingga menemukan karakter mengajar Anda sendiri.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turki",
+          "quote": "Sachin Ji adalah salah satu guru yoga paling berwawasan luas yang pernah mengajar saya. Meskipun saya seorang pemula, kesabaran dan dorongannya membuat saya memahami keselarasan asana dengan penuh percaya diri.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Pelatihan 200 jam di Bali benar-benar luar biasa. 🌺 Pengetahuan yang diajarkan sangat mendalam dan autentik. Para guru mengajar dari hati dengan penuh ketulusan dan kebijaksanaan layaknya keluarga besar yang hangat.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Kanada",
+          "quote": "Sachin Ji adalah pengajar dan pribadi yang luar biasa. Pelatihan di Bali ini menjadi awal perjalanan yoga berharga yang mengantarkan saya percaya diri mengajar di berbagai penjuru dunia.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Jerman",
+          "quote": "Saya sangat mengagumi ketenangan, keramahan, dan kehangatan Sachin Ji. Beliau sangat berilmu dan senantiasa meluangkan waktu membimbing setiap siswa secara teliti.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Pengalaman transformatif yang amat berkesan di YogaGarhi Bali. Kelompok belajar kecil memberikan manfaat maksimal, setiap koreksi postur terasa personal. Saya merasa sangat siap untuk mengajar.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
+  },
+  "course200Rishikesh": {
+    "metaTitle": "Pelatihan Guru Yoga 200 Jam di Rishikesh | RYT 200 India",
+    "metaDesc": "Kuasai yoga autentik dengan pelatihan 200 jam di Rishikesh. Kursus residensial bersertifikat Yoga Alliance RYT 200 di tepi Sungai Gangga.",
+    "heroTitle": "Pelatihan Guru Yoga 200 Jam di Rishikesh",
+    "heroSub": "Pelatihan residensial 24 hari bersertifikasi Yoga Alliance RYT 200 di Ibu Kota Yoga Dunia. Ashram Sungai Gangga mulai $999 USD.",
+    "quickInfo": {
+      "course": "Kursus",
+      "courseVal": "YTTC 200 Jam Rishikesh",
+      "duration": "Durasi",
+      "durationVal": "24 Days",
+      "style": "Gaya",
+      "styleVal": "Yoga Multi-Style",
+      "level": "Tingkat",
+      "levelVal": "Pemula hingga Menengah",
+      "certification": "Sertifikasi",
+      "certificationVal": "Sertifikasi Yoga Alliance RYT 200",
+      "startingFrom": "$999 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Hemat",
+      "earlyBirdDiscount": "Hemat $300 Diskon Early Bird"
+    },
+    "highlights": {
+      "smallGroups": "Grup kecil (maks 8–10)",
+      "smallGroupsSub": "Perhatian pribadi",
+      "preYttc": "Dukungan sebelum kursus",
+      "preYttcSub": "Persiapan & bimbingan",
+      "mentorship": "Mentoring pasca lulus",
+      "mentorshipSub": "1 tahun dukungan berkelanjutan",
+      "goodieBag": "Paket bingkisan gratis",
+      "goodieBagSub": "Perlengkapan yoga"
+    },
+    "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
+    "watchVideoStories": "Tonton video cerita dan testimoni siswa",
+    "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
+    "whyYogaGarhiBox": {
+      "badge": "Mengapa Memilih YogaGarhi",
+      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
+      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
+      "p1Title": "Maksimal 8–10 Siswa per Angkatan",
+      "p1Highlight": "Fokus Personal",
+      "p1Desc": "Jumlah siswa terbatas memastikan arahan personal, koreksi postur langsung, dan perhatian penuh dari guru.",
+      "p2Title": "Pelatihan Online Pra-TTC Gratis",
+      "p2Highlight": "Siap Percaya Diri",
+      "p2Desc": "Kursus persiapan cuma-cuma sebelum tiba di Bali untuk membangun kekuatan fisik dan wawasan dasar.",
+      "p3Title": "Mentoring 1 Tahun Pasca Kelulusan",
+      "p3Highlight": "Komunitas Berkelanjutan",
+      "p3Desc": "Bimbingan lanjutan, saran penyusunan sekuens kelas, dan dukungan karier jauh setelah masa pelatihan usai.",
+      "p4Title": "Mengulang Kursus Gratis Seumur Hidup",
+      "p4Highlight": "Kembali Tanpa Biaya",
+      "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
+      "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
+      "saveEarlyBird": "Hemat $300 Diskon Early Bird",
+      "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
+      "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
+      "checkAvailability": "Cek Ketersediaan",
+      "bookFreeCall": "Pesan Panggilan Video Gratis"
+    },
+    "hoursStructure": {
+      "badge": "Jam Pelatihan",
+      "heading": "Struktur Jam Belajar 200 Jam",
+      "sub": "Pembagian seimbang antara jam tatap muka langsung, penjajaran praktik, dan studi mandiri sesuai ketentuan Yoga Alliance.",
+      "contactHours": "Jam Tatap Muka",
+      "contactHoursDesc": "Instruksi langsung bersama guru utama dalam asana, penjajaran, anatomi, dan filosofi.",
+      "selfStudy": "Studi Mandiri & Praktik Mengajar",
+      "selfStudyDesc": "Bacaan terarah, jurnal, praktik bersama rekan, dan perancangan sekuens kelas.",
+      "totalCert": "Total Sertifikasi",
+      "totalCertDesc": "Memenuhi dan melampaui standar Yoga Alliance RYT 200.",
+      "hoursUnit": "Jam"
+    },
+    "syllabus": {
+      "heading": "Kurikulum & Silabus",
+      "sub": "Kurikulum terpadu dan seimbang yang menyatukan naskah yoga klasik dengan pemahaman biomekanik modern.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditasi",
+      "tab4": "Anatomi & Fisiologi",
+      "tab5": "Filosofi & Etika",
+      "tapMore": "Ketuk untuk melihat lebih banyak",
+      "hoverMore": "Arahkan kursor untuk melihat lebih banyak",
+      "takeaway": "Pemahaman Utama",
+      "carryHome": "Untuk Dibawa Pulang",
+      "careerImpact": "Dampak Karier:",
+      "cards": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "content": "Rangkaian lengkap seri primer Ashtanga Yoga. Peningkatan bertahap melalui Surya Namaskar A & B, postur berdiri, postur duduk, dan latihan gaya Mysore."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Seri Pawanmuktasana, variasi Surya Namaskar, postur berdiri dan duduk, lengkungan ke belakang, lipatan ke depan, inversi, dan penyusunan urutan kelas."
+        },
+        {
+          "title": "Filosofi Yoga",
+          "content": "Pengantar Yoga Sutra Patanjali, delapan pilar Ashtanga Yoga, Nadis, Cakra, Pancha-Vayus, Panchakoshas, Triguna, serta kisah teladan para yogi agung."
+        },
+        {
+          "title": "Pranayama & Pernapasan",
+          "content": "Teknik pernapasan lengkap: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, dan Sheetkari."
+        },
+        {
+          "title": "Anatomi & Fisiologi",
+          "content": "Bidang gerak tubuh, perlindungan persendian, anatomi pergelangan kaki, lutut, tulang belakang, bahu, mekanisme pernapasan, dan sistem saraf."
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "content": "Penyusunan urutan kelas, penyesuaian postur, pengelolaan berbagai tingkatan siswa, teknik intonasi suara, kesiapan mental, dan perencanaan kelas terstruktur."
+        },
+        {
+          "title": "Meditasi & Mantra",
+          "content": "Berbagai teknik meditasi, pelafalan mantra suci, Trataka, Meditasi Dinamis Osho, Nada Brahma, Antar Mouna, dan latihan keheningan batin."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga berbasis presisi anatomi menggunakan alat bantu seperti balok, tali, dan selimut guna mencapai keselarasan postur optimal serta mencegah cedera."
+        },
+        {
+          "title": "Prinsip Keselarasan",
+          "content": "Pondasi latihan yang aman: penataan sendi, pola aktivasi otot, dan biomekanika tubuh guna melindungi serta memperkuat fisik secara menyeluruh."
+        },
+        {
+          "title": "Bandhas (Kunci Energi)",
+          "content": "Kuasai Mula, Uddiyana, dan Jalandhara Bandha untuk mengalirkan energi prana, menguatkan inti tubuh, dan memperdalam kualitas meditasi."
+        },
+        {
+          "title": "Mudras (Gestur Suci)",
+          "content": "Gerakan suci tangan dan tubuh guna mengarahkan energi vital, mempertajam konsentrasi, serta terhubung dengan kesadaran yang lebih mendalam."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Rutinitas Harian di Ashram",
+      "sub": "Irama teratur yang memadukan latihan intensif, pendalaman filosofis, makanan sehat, dan waktu istirahat.",
+      "time1": "06:00",
+      "act1": "Bangun Pagi & Pembersihan Diri",
+      "time2": "06:30",
+      "act2": "Pranayama, Melantunkan Mantra & Meditasi",
+      "time3": "07:30",
+      "act3": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Sarapan Sattvik Bernutrisi",
+      "time5": "10:00",
+      "act5": "Filosofi Yoga & Studi Naskah Klasik",
+      "time6": "12:00",
+      "act6": "Makan Siang Sehat & Istirahat",
+      "time7": "15:00",
+      "act7": "Anatomi Terapan & Fisiologi",
+      "time8": "16:30",
+      "act8": "Metodologi Pengajaran & Klinik Penjajaran",
+      "time9": "18:00",
+      "act9": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "time10": "19:30",
+      "act10": "Makan Malam Sattvik",
+      "time11": "21:00",
+      "act11": "Belajar Mandiri, Keheningan & Waktu Istirahat",
+      "beyondTheMat": "Di Luar Matras",
+      "badge": "Jadwal Harian",
+      "wakeUp": "Bangun Pagi & Pembersihan Diri",
+      "morningPranayama": "Pranayama & Meditasi",
+      "morningAsana": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "breakfast": "Sarapan Sehat Sattvik",
+      "philosophyClass": "Filosofi Yoga & Studi Kitab Suci",
+      "lunch": "Makan Siang Bernutrisi & Istirahat",
+      "anatomyClass": "Anatomi Terapan & Biomekanik",
+      "methodologyClass": "Metodologi Mengajar & Klinik Penjajaran",
+      "eveningAsana": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "dinner": "Makan Malam Sattvik",
+      "selfStudy": "Belajar Mandiri, Keheningan & Jam Tidur"
+    },
+    "inclusions": {
+      "heading": "Apa yang Termasuk dalam Pelatihan Anda",
+      "sub": "Semua fasilitas disiapkan untuk memastikan masa tinggal yang tenang dan transformatif.",
+      "incAccom": "Akomodasi ashram selama 23 malam",
+      "incMeals": "3 kali makan bergizi sattvik (vegetarian/vegan) segar setiap hari",
+      "incCert": "Sertifikat Yoga Alliance RYT 200 setelah kelulusan",
+      "incManuals": "Buku panduan kursus resmi, buku catatan, dan bahan ajar",
+      "incKit": "Matras yoga dan alat peraga latihan disediakan di ashram",
+      "incExcursions": "Ekskursi budaya sakral (pura tirta empul, sawah terasering, tari Bali)",
+      "incCeremonies": "Upacara api pembukaan dan penutupan tradisional (Agni Hotra)",
+      "incPickup": "Penjemputan bandara dari Denpasar (DPS) pada tanggal kedatangan resmi",
+      "incPre": "Modul persiapan Pra-TTC online cuma-cuma",
+      "incRepeat": "Hak mengulang kursus seumur hidup (bebas biaya kursus)",
+      "notIncHeading": "Tidak Termasuk",
+      "notIncFlights": "Tiket penerbangan internasional dan domestik",
+      "notIncVisa": "Biaya visa Indonesia",
+      "notIncInsurance": "Asuransi perjalanan dan kesehatan pribadi"
+    },
+    "pricing": {
+      "heading": "Paket Akomodasi & Harga",
+      "sub": "Harga transparan dan all-inclusive tanpa ada biaya tersembunyi.",
+      "tuitionOnly": "Hanya Kursus ($999)",
+      "tuitionOnlyDesc": "Biaya kursus, semua makanan, materi belajar, dan sertifikat. Tinggal di luar ashram.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC luas dibagi bersama dua rekan siswa, kamar mandi dalam, balkon pribadi.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD",
+      "earlyBirdPrice": "Harga Early Bird",
+      "tuitionFees": "Pilihan Kamar & Biaya (200 Jam Rishikesh)",
+      "tripleSharing": "Kamar Berbagi Bertiga ($1.750)",
+      "doubleSharing": "Kamar Berbagi Berdua ($1.899)",
+      "privateRoom": "Kamar Privat ($2.499)",
+      "choosePackage": "Pilih Paket Anda",
+      "reserveSpot": "Amankan Tempat Anda",
+      "saveUSD": "Hemat $300 USD",
+      "residentialDuration": "Pelatihan yoga residensial 24 hari di Rishikesh, India"
+    },
+    "ethics": {
+      "codeOfConduct": "Kode Etik",
+      "refundCancellation": "Pengembalian Dana & Pembatalan",
+      "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+    },
+    "faqsHeading": "Pertanyaan yang Sering Diajukan",
+    "faqs": [
+      {
+        "question": "Apakah Pelatihan Guru Yoga 200 Jam ini ramah bagi pemula?",
+        "answer": "Ya. Kurikulum dirancang bertahap dari pemahaman dasar hingga menengah. Siswa yang mendaftar juga mendapatkan akses gratis ke program persiapan online Pra-TTC untuk membangun kelenturan, kekuatan, dan keselarasan postur sebelum terbang ke Bali."
+      },
+      {
+        "question": "Gaya yoga apa saja yang dipelajari dalam TTC 200 Jam ini?",
+        "answer": "Anda akan mempelajari yoga multi-style yang bersumber dari tradisi otentik Himalaya: Hatha Yoga klasik, Vinyasa Flow dinamis, Ashtanga Primary Series (menurut K. Pattabhi Jois), dan penjajaran mendetail yang terinspirasi oleh Iyengar Yoga."
+      },
+      {
+        "question": "Bagaimana jadwal harian selama pelatihan berlangsung?",
+        "answer": "Hari pelatihan di YogaGarhi mengikuti jadwal terstruktur: 06:00 Bangun; 06:30 Pranayama & Meditasi; 07:30 Hatha & Vinyasa; 09:00 Sarapan; 10:00 Filosofi Yoga; 12:00 Makan Siang & Istirahat; 15:00 Anatomi Terapan; 16:30 Penjajaran & Metodologi; 18:00 Ashtanga & Iyengar bersama terapi yoga; 19:30 Makan Malam; 21:00 Belajar Mandiri & Jam Malam."
+      }
+    ],
+    "hero": {
+      "badge": "Sertifikasi Yoga Alliance RYT 200",
+      "h1": "Pelatihan Guru Yoga 200 Jam di Rishikesh",
+      "sub": "Pendalaman transformatif 24 hari di Rishikesh, India. Guru-guru tradisi Himalaya, ritual Ganga Aarti harian, dan sertifikasi RYT 200.",
+      "quickDuration": "24 Hari",
+      "quickLevel": "Pemula hingga Menengah",
+      "quickCert": "Sertifikasi Yoga Alliance RYT 200",
+      "quickLang": "Bahasa Inggris",
+      "quickBatch": "8–10 Siswa",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Pesan Tempat Anda",
+      "btnBrochure": "Unduh Silabus",
+      "btnCounselor": "Konsultasi"
+    },
+    "overview": {
+      "heading": "Selamat Datang di YogaGarhi Rishikesh",
+      "story": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah kursus menyeluruh tingkat pemula hingga menengah bagi siapa saja yang ingin menjadi guru yoga percaya diri atau memperdalam yoga dalam kehidupan sehari-hari. YogaGarhi berada di Gianyar, sekitar 15 km dari Ubud, menawarkan ketenangan alam pedesaan. Selama kursus, Anda mempraktikkan asana setiap hari, mempelajari anatomi penjajaran, pranayama, meditasi, filosofi yoga, dan metode mengajar.",
+      "p1": "Pelatihan 200 jam kami di Rishikesh menawarkan kurikulum komprehensif yang berakar kuat pada tradisi yoga klasik India.",
+      "p2": "Guru kami membimbing Anda dalam Hatha, Ashtanga Vinyasa, Yoga Sutra Patanjali, anatomi, dan metodologi pengajaran yang percaya diri."
+    },
+    "curriculum": {
+      "badge": "Modul Kurikulum",
+      "heading": "Rincian Modul & Topik Pembelajaran",
+      "sub": "Klik modul mana saja di bawah ini untuk menjelajahi rincian topik, teknik praktik, dan landasan teorinya.",
+      "modules": {
+        "asana": "Praktik Asana & Penjajaran",
+        "pranayama": "Pranayama & Energi Halus",
+        "philosophy": "Filosofi Yoga & Gaya Hidup",
+        "anatomy": "Anatomi dan Fisiologi",
+        "methodology": "Metodologi Pengajaran & Praktik",
+        "meditation": "Meditasi & Kesadaran Penuh",
+        "iyengar": "Dasar Yoga Iyengar & Alat Bantu",
+        "vinyasa": "Sekuensing Vinyasa Flow",
+        "hatha": "Hatha Yoga Klasik Tradisional"
+      },
+      "detailedModules": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "items": [
+            "Seri primer lengkap Ashtanga yoga oleh K. Pattabhi Jois",
+            "Minggu 1: Pengenalan & Surya Namaskar A & B",
+            "Minggu 2: Postur berdiri & penggunaan alat peraga yoga",
+            "Minggu 3: Postur duduk & postur penutup",
+            "Minggu 4: Gaya Mysore & praktik mengajar"
+          ]
+        },
+        {
+          "title": "Filosofi Yoga",
+          "items": [
+            "Yoga Sutra lengkap karya Patanjali",
+            "Delapan anggota Ashtanga Yoga",
+            "Pancha-Vayu & Panchakosha",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Pengantar Weda",
+            "Kisah inspiratif para yogi terkemuka"
+          ]
+        },
+        {
+          "title": "Pranayama & Praktik Pernapasan",
+          "items": [
+            "Teknik pranayama lengkap",
+            "Enam praktik pembersihan Shatkarma",
+            "Pernapasan tingkat lanjut: Sheetali, Sheetkari",
+            "Kumbhaka (menahan napas)",
+            "Integrasi selaras dengan latihan asana"
+          ]
+        },
+        {
+          "title": "Lantunan Suara Suci & Mantra",
+          "items": [
+            "Koleksi lengkap mantra tradisional",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Sloka untuk Resi Patanjali)",
+            "Latihan melantunkan mantra harian"
+          ]
+        },
+        {
+          "title": "Anatomi dan Fisiologi",
+          "items": [
+            "Studi mendalam tentang sistem tubuh manusia",
+            "Fisiologi otot & persendian",
+            "Sistem pernapasan & saraf",
+            "Pola makan & sistem pencernaan",
+            "Lokakarya fungsional asana"
+          ]
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "items": [
+            "Perancangan urutan kelas yang komprehensif",
+            "Prinsip demonstrasi & pengamatan",
+            "Kesiapan mental & emosional pengajar",
+            "Perencanaan struktur kelas bertahap",
+            "Praktik mengajar & evaluasi berkala"
+          ]
+        },
+        {
+          "title": "Meditasi & Bandha",
+          "items": [
+            "Meditasi Dinamis Osho",
+            "Meditasi Nada Brahma",
+            "Antar Mouna & Ajapa Japa",
+            "Penguasaan empat Bandha utama",
+            "Penyelarasan dengan asana & pranayama"
+          ]
+        },
+        {
+          "title": "Seni Penyelarasan & Penyesuaian",
+          "items": [
+            "Biomekanika dan penyesuaian fungsional postur klasik",
+            "Petunjuk verbal dan bantuan sentuhan langsung yang aman",
+            "Memahami variasi anatomi individu",
+            "Strategi modifikasi menggunakan balok dan tali yoga"
+          ]
+        },
+        {
+          "title": "Praktik Klasik Hatha Yoga",
+          "items": [
+            "Pendalaman prinsip Hatha klasik dan penahanan postur",
+            "Penyusunan urutan Hatha: pemanasan, postur puncak, dan penyeimbang",
+            "Menyeimbangkan energi matahari (Ha) dan bulan (Tha)",
+            "Penerapan Bandha dan Mudra dalam postur statis"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Presisi Gerak",
+          "items": [
+            "Penyelarasan metodis dengan balok, tali, dan selimut",
+            "Penempatan geometris panggul, tulang belakang, dan bahu",
+            "Persiapan postur terbalik yang aman",
+            "Rangkaian restoratif dengan alat bantu"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Gerak Dinamis",
+          "items": [
+            "Struktur urutan cerdas: pemanasan, puncak, dan pendinginan",
+            "Transisi mengalir dan lompatan berirama napas",
+            "Merancang kelas tematik sesuai tingkat kemampuan",
+            "Mengatur tempo dan menjaga energi ruangan"
+          ]
+        },
+        {
+          "title": "Kelas Tambahan & Pengalaman Khas",
+          "items": [
+            "Sesi Sound Healing (terapi suara)",
+            "Latihan yoga di pantai Bali",
+            "Yin Yoga & Acro Yoga",
+            "Dasar-dasar Ayurveda",
+            "Upacara api suci Agni Hotra"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Akomodasi & Pilihan Paket",
+      "sub": "Tarif transparan tanpa biaya tambahan tak terduga.",
+      "tuitionOnly": "Paket Hanya Biaya Kursus",
+      "tuitionOnlyDesc": "Pengajaran, makanan, materi studi, dan ijazah. Akomodasi di luar.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC untuk tiga orang dengan kamar mandi dalam dan balkon.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar ber-AC untuk dua orang dengan kamar mandi dan pemandangan asri.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Kamar tunggal ber-AC dengan kasur king, kamar mandi dalam, dan teras pribadi.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD"
+    },
+    "tourCall": {
+      "heading": "Ingin Melihat Sekolah Sebelum Mendaftar?",
+      "sub": "Bergabunglah dalam panggilan video langsung untuk tur pribadi mengelilingi kampus, ruang kelas, shala yoga, dan kamar penginapan.",
+      "cta": "Jadwalkan Panggilan. Lihat Sekolah. Lihat Kamar Anda. Lihat Aula Yoga.",
+      "bookCallLive": "Lihat suasana sekolah, kamar Anda, dan shala yoga secara langsung. Masukkan detail Anda di bawah ini untuk penjadwalan."
+    },
+    "takeaway": {
+      "badge": "Manfaat Yang Anda Bawa Pulang",
+      "heading": "Yang Akan Anda",
+      "headingItalic": "Bawa Pulang",
+      "sub": "Lebih dari sekadar sertifikat fisik, Anda pulang dengan perspektif baru, koneksi batin yang mendalam, dan keterampilan mengajar yang nyata.",
+      "careerImpactTitle": "Peluang Karier:",
+      "careerImpactDesc": "Setelah menyelesaikan Pelatihan Guru Yoga 200 Jam, Anda dapat mulai mengajar yoga di mana saja di dunia: studio, kelas privat daring, retret yoga, atau membangun komunitas mandiri.",
+      "card1Title": "Sertifikasi Global",
+      "card1Desc": "Yoga Alliance RYT-200 untuk memulai karier mengajar di negara mana pun.",
+      "card2Title": "Penguasaan Praktik",
+      "card2Desc": "Bimbingan mendalam dalam Hatha, Vinyasa, Ashtanga, dan Iyengar.",
+      "card3Title": "Keselamatan & Anatomi",
+      "card3Desc": "Pelajari cara mengajar dan berlatih dengan aman tanpa risiko cedera.",
+      "card4Title": "Kedalaman Spiritual",
+      "card4Desc": "Selami makna Mantra, meditasi, dan filosofi yoga klasik.",
+      "card5Title": "Metodologi Mengajar",
+      "card5Desc": "Keterampilan praktis dalam memandu kelas, koreksi postur, dan menginspirasi murid.",
+      "card6Title": "Persahabatan Sejati",
+      "card6Desc": "Jalinan persaudaraan seumur hidup dengan komunitas yoga internasional."
+    },
+    "timeline": {
+      "prepTitle": "Persiapan dimulai sejak pendaftaran",
+      "prepDesc": "Mulailah perjalanan Anda dengan modul persiapan dan bimbingan guru secara daring.",
+      "datesTitle": "Pelatihan: Tanggal 1 – 24 setiap bulan",
+      "datesDesc": "Program imersif 24 hari yang diselenggarakan setiap bulan di Bali.",
+      "supportTitle": "Dukungan komunitas seumur hidup di YogaGarhi",
+      "supportDesc": "Selalu terhubung dengan keluarga besar yoga dunia kami."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Akomodasi",
+      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "feat1": "10 air terjun indah dalam radius 10 km",
+      "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
+      "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
+      "feat4": "Hanya berjarak 15 km dari pusat keramaian Ubud",
+      "glimpses": "Potret Suasana Menginap Anda",
+      "allRooms": "Semua Kamar Dilengkapi",
+      "wifi": "Wi-Fi Cepat Gratis",
+      "hotWater": "Air Hangat",
+      "acFan": "AC / Kipas Angin",
+      "cleaning": "Pembersihan Harian",
+      "bed1": "tempat tidur",
+      "bedsMore": "tempat tidur",
+      "courseOnly": "Hanya Kursus",
+      "mostPopular": "Paling Diminati",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Di Luar Matras",
+      "heading": "Ekskursi Sakral",
+      "sub": "Selami warisan spiritual Bali melalui pengalaman yang sarat makna transformatif"
+    },
+    "prakritiResearch": {
+      "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
+      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "card1Title": "Pertanyaan Mendasar",
+      "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
+      "card2Title": "Penyelidikan Mendalam",
+      "card2Text": "Hal ini melahirkan riset mendalam pada naskah yoga klasik, Ayurveda, dan pengalaman nyata bersama siswa. Jawabannya nyata: setiap manusia terlahir dengan Prakriti yang unik.",
+      "card3Title": "Cetak Biru Energi",
+      "card3Text": "Prakriti membentuk fisik, pikiran, emosi, dan sistem saraf. Sebagian butuh ketenangan, sebagian butuh gerak dinamis, dan sebagian butuh keheningan. Gaya seragam bisa memicu ketidakseimbangan.",
+      "card4Title": "Kualitas Latihan",
+      "card4Text": "Lebih dari sekadar nama aliran yoga, yang terpenting adalah bagaimana Anda berlatih: bagaimana sistem saraf didekati, nafas dipandu, dan Dosha Anda dirawat tanpa dipaksakan.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Dari kesadaran ini lahirlah Shiv–Shakti Sadhana, pendekatan seimbang yang menyelaraskan stabilitas dan aliran energi. Asana di sini menjadi fondasi kekuatan yang membumi.",
+      "card6Title": "Kembali ke Keseimbangan",
+      "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
+      "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
+      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+    },
+    "ethicsExtra": {
+      "code1": "Hadir tepat waktu",
+      "code2": "Bebas alkohol dan rokok",
+      "code3": "Makanan khusus vegetarian",
+      "code4": "Menjaga keheningan di kelas",
+      "code5": "Pakaian sopan dan pantas",
+      "code6": "Saling menghargai sesama",
+      "code7": "Dilarang membawa ponsel ke dalam kelas",
+      "code8": "Wajib mengikuti seluruh rangkaian kelas",
+      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
+      "refund2": "Dapat dialihkan ke peserta lain",
+      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
+      "refund4": "Kebijakan hari percobaan",
+      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "reviewsHeading": "Apa Kata Para Siswa Kami",
+      "viewAllGoogle": "Lihat semua ulasan di Google",
+      "basedOnReviews": "Berdasarkan",
+      "openGoogleMaps": "Buka di Google Maps",
+      "open24Hours": "Buka 24 jam"
+    },
+    "sunday": {
+      "note": "Hari Minggu adalah hari istirahat penuh untuk relaksasi, belajar mandiri, atau mengikuti wisata opsional.",
+      "cta": "Jelajahi Hari Minggu di Bali"
+    },
+    "tapHover": {
+      "tap": "Ketuk untuk melihat detail",
+      "hover": "Arahkan kursor untuk melihat detail"
+    },
+    "inclusionsList": [
+      "Kamar bersih, nyaman, dan tenang",
+      "Kamar mandi dalam dengan air panas",
+      "Pendingin ruangan (AC) / kipas angin",
+      "Akses internet Wi-Fi gratis",
+      "Tiga kali makan vegetarian sehat setiap hari",
+      "Teh herbal alami dan air minum murni",
+      "Buku materi pelatihan (modul, buku catatan, pena)",
+      "Matras yoga dan perlengkapan latihan lengkap",
+      "Kunjungan alam dan kegiatan akhir pekan",
+      "Penjemputan bandara pada hari kedatangan (bandara terdekat)",
+      "Staf pendampingan kampus siaga 24 jam",
+      "Sertifikat kelulusan resmi setelah menyelesaikan kursus",
+      "Pijat relaksasi khas Bali tradisional",
+      "Pertunjukan tarian tradisional Bali",
+      "Trekking menyusuri sawah Ubud",
+      "Modul persiapan online Pre-TTC gratis",
+      "Lokakarya keseimbangan lengan (arm balance)",
+      "Lokakarya wawasan Ayurveda praktis",
+      "Hak mengulang kursus gratis seumur hidup",
+      "Buku YogaGarhi berisi 35+ variasi sekuens kreatif"
+    ],
+    "exclusionsList": [
+      "Tiket penerbangan dan transportasi pribadi",
+      "Biaya visa kunjungan dan asuransi perjalanan",
+      "Antar kembali ke bandara saat kepulangan",
+      "Layanan cuci pakaian (laundry)",
+      "Belanja pribadi dan aktivitas tambahan opsional"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Pelatihan yoga multi-gaya",
+        "description": "Pelajari yoga dengan pendekatan murni dan teruji. Guru kami menjaga kemurnian tradisi leluhur yoga."
+      },
+      {
+        "title": "Bersertifikasi Yoga Alliance",
+        "description": "Raih sertifikat yang diakui secara global untuk mulai mengajar yoga dengan penuh percaya diri."
+      },
+      {
+        "title": "Suasana damai di Bali",
+        "description": "Rasakan pengalaman yoga di tengah alam tropis yang tenang untuk memperdalam latihan harian Anda."
+      },
+      {
+        "title": "Wisata alam terbuka",
+        "description": "Kunjungi pura bersejarah, pantai, dan jalur alam yang memadukan pembelajaran dengan kebudayaan lokal."
+      },
+      {
+        "title": "Jumlah siswa per kelas terbatas",
+        "description": "Dapatkan bimbingan dan koreksi postur yang saksama. Kemajuan setiap murid adalah fokus utama kami."
+      },
+      {
+        "title": "Komunitas yang hangat",
+        "description": "Jadilah bagian dari keluarga yang suportif dan bertumbuh bersama dalam atmosfer penuh kepedulian."
+      },
+      {
+        "title": "Pijat tradisional Bali",
+        "description": "Terapi pijat tradisional untuk meredakan ketegangan otot dan memberikan relaksasi menyeluruh."
+      },
+      {
+        "title": "Pentas tari tradisional Bali",
+        "description": "Seni pertunjukan sarat makna yang mencerminkan kekayaan budaya dan spiritualitas masyarakat Bali."
+      },
+      {
+        "title": "Makanan bergizi dan bersih",
+        "description": "Nikmati santapan sattvik segar dan menyehatkan yang mendukung stamina latihan Anda sepanjang hari."
+      },
+      {
+        "title": "Praktik meditasi terbimbing",
+        "description": "Kembangkan ketenangan batin dan kejernihan pikiran lewat sesi hening setiap hari."
+      },
+      {
+        "title": "Guru berpengalaman",
+        "description": "Belajarlah langsung dari instruktur bersertifikasi dengan pengalaman mengajar nyata bertahun-tahun."
+      },
+      {
+        "title": "Gaya hidup yogik",
+        "description": "Terapkan gaya hidup selaras untuk menyatukan kesehatan raga, pikiran, dan jiwa secara utuh."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Lokakarya Ayurveda & kelas memasak sehat",
+        "description": "Pahami tipe tubuh alami Anda (Prakriti) dan cara menyeimbangkan dosha melalui pola makan dan hidup sehat."
+      },
+      {
+        "title": "Penguasaan arm balance",
+        "description": "Bangun kekuatan, teknik, dan rasa percaya diri untuk menguasai pose keseimbangan lengan secara bertahap."
+      },
+      {
+        "title": "Lokakarya Handstand (handstand mastery)",
+        "description": "Atasi rasa takut dan temukan titik keseimbangan dengan latihan terstruktur di dinding dan berpasangan."
+      },
+      {
+        "title": "Yin Yoga & peregangan dalam",
+        "description": "Jangkau jaringan ikat fasia yang dalam melalui pose pasif berdurasi panjang guna melepas ketegangan tubuh."
+      },
+      {
+        "title": "Sesi relaksasi suara & Tibetan singing bowl",
+        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Buka ruang hati Anda lewat nyanyian lantunan mantra suci dan kirtan untuk terhubung dengan esensi yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Pentas tari tradisional Bali",
+        "description": "Saksikan keelokan seni tari Bali: perpaduan gemulai, kisah epos, dan ketulusan bhakti spiritual."
+      },
+      {
+        "title": "Trekking sawah terasering",
+        "description": "Menyusuri pematang sawah khas Ubud dan rasakan keselarasan hidup masyarakat pedesaan Bali."
+      },
+      {
+        "title": "Kunjungan ke air terjun suci",
+        "description": "Menuju air terjun sakral untuk mengikuti ritual penyucian diri tradisional dengan air sumber alami."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Sarapan",
+        "time": "07:00 WITA",
+        "items": [
+          "Buah-buahan tropis segar",
+          "Granola buatan sendiri dengan yogurt kelapa",
+          "Teh herbal alami & jus segar",
+          "Bubur beras merah Bali"
+        ]
+      },
+      {
+        "meal": "Makan Siang",
+        "time": "12:30 WITA",
+        "items": [
+          "Buddha bowl kaya nutrisi",
+          "Olahan tempe dan tahu segar",
+          "Salad sayuran kebun organik",
+          "Sayuran masak khas Bali"
+        ]
+      },
+      {
+        "meal": "Makan Malam",
+        "time": "18:30 WITA",
+        "items": [
+          "Sup hangat penenang",
+          "Nasi biji-bijian kukus dan dahl",
+          "Kitchari berempah Ayurveda",
+          "Seduhan herbal menenangkan"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Kisah Video Siswa Nyata",
+    "videoStoriesHeading": "Dengarkan Langsung dari Lulusan Kami di Bali",
+    "videoStoriesSub": "Refleksi nyata dari para praktisi yang menjalani perjalanan residensial di YogaGarhi.",
+    "verifiedGraduate": "Lulusan Terverifikasi",
+    "speakTeacherTitle": "Ingin berkonsultasi dengan guru utama terlebih dahulu?",
+    "speakTeacherDesc": "Panggilan video privat 15 menit untuk membahas tujuan, kamar, dan tanggal Anda.",
+    "helpfulGuidesBadge": "Baca Sebelum Berangkat",
+    "helpfulGuidesTitle": "Panduan Bermanfaat & Artikel Persiapan",
+    "helpfulGuidesDesc": "Pelajari panduan mendalam kami untuk mempersiapkan fisik, mental, dan perjalanan pelatihan Anda di Bali.",
+    "readArticle": "Baca Artikel",
+    "mindfulEating": "Sehari Pola Makan Berkesadaran",
+    "clickToCollapse": "Klik untuk menutup",
+    "clickToExpand": "Klik untuk membuka",
+    "caterDietsTitle": "Kami Melayani Semua Pola Makan",
+    "caterDietsDesc": "Beri tahu kami preferensi makanan Anda, dan kami akan menyiapkan segalanya",
+    "studentStories": {
+      "badge": "Kisah Siswa",
+      "heading": "Hati yang Berkelimpahan di YogaGarhi",
+      "sub": "\"Dengarkan langsung penuturan tulus dari para praktisi yang telah menjalani perjalanan transformasi ini.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Kanada",
+          "quote": "YogaGarhi memegang teguh esensi sejati yoga tradisional. Sejak awal, saya merasa dihargai dan didampingi secara personal. Para pengajar dengan tulus membimbing perkembangan Anda hingga menemukan karakter mengajar Anda sendiri.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turki",
+          "quote": "Sachin Ji adalah salah satu guru yoga paling berwawasan luas yang pernah mengajar saya. Meskipun saya seorang pemula, kesabaran dan dorongannya membuat saya memahami keselarasan asana dengan penuh percaya diri.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Pelatihan 200 jam di Bali benar-benar luar biasa. 🌺 Pengetahuan yang diajarkan sangat mendalam dan autentik. Para guru mengajar dari hati dengan penuh ketulusan dan kebijaksanaan layaknya keluarga besar yang hangat.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Kanada",
+          "quote": "Sachin Ji adalah pengajar dan pribadi yang luar biasa. Pelatihan di Bali ini menjadi awal perjalanan yoga berharga yang mengantarkan saya percaya diri mengajar di berbagai penjuru dunia.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Jerman",
+          "quote": "Saya sangat mengagumi ketenangan, keramahan, dan kehangatan Sachin Ji. Beliau sangat berilmu dan senantiasa meluangkan waktu membimbing setiap siswa secara teliti.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Pengalaman transformatif yang amat berkesan di YogaGarhi Bali. Kelompok belajar kecil memberikan manfaat maksimal, setiap koreksi postur terasa personal. Saya merasa sangat siap untuk mengajar.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
   }
 }

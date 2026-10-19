@@ -1,9 +1,11 @@
 import { Metadata } from "next";
-import { applyQualityGate } from "@/utils/seoQualityGate";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 import Course100Hour from "@/components/pages/Course100Hour";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
 import { BATCHES_100_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
 
 /* =========================
    SEO METADATA
@@ -14,17 +16,69 @@ export async function generateMetadata({
     params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
     const { locale } = await params;
-    const course = courseData["100-hour"];
+    let messages: any;
+    try {
+        messages = (await import(`@/messages/${locale}.json`)).default;
+    } catch (e) {
+        messages = (await import(`@/messages/en.json`)).default;
+    }
 
-    const title = "100 Hour Yoga Teacher Training in Bali | Yoga Alliance Ubud";
+    if (locale === "en") {
+        const title = "100 Hour Yoga Teacher Training in Bali | Yoga Alliance Ubud";
+        const description =
+            "Deepen your practice with 100-Hour Yoga Teacher Training in Ubud, Bali. Beginner-friendly curriculum & organic meals. Reserve your spot today!";
+        return {
+            metadataBase: new URL("https://www.yogagarhi.com"),
+            title: {
+                absolute: title,
+            },
+            description,
+            keywords: [
+                "100 hour yoga teacher training in bali",
+                "100 hour yoga TTC bali",
+                "beginner yoga teacher training bali",
+                "short yoga teacher training bali",
+                "yoga certification bali",
+                "yoga training ubud"
+            ],
+            alternates: {
+                canonical: "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali",
+                languages: getReviewedHreflang("/100-hour-yoga-teacher-training-in-bali"),
+            },
+            robots: {
+                index: true,
+                follow: true,
+            },
+            openGraph: {
+                title,
+                description,
+                url: "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali",
+                type: "website",
+                images: [
+                    {
+                        url: "https://www.yogagarhi.com/og-image.jpg",
+                        width: 1200,
+                        height: 630,
+                        alt: title,
+                    },
+                ],
+            },
+            twitter: {
+                card: "summary_large_image",
+                title,
+                description,
+            },
+        };
+    }
 
+    const title = messages.course100?.metaTitle || "100 Hour Yoga Teacher Training in Bali | Yoga Alliance Ubud";
     const description =
+        messages.course100?.metaDesc ||
         "Deepen your practice with 100-Hour Yoga Teacher Training in Ubud, Bali. Beginner-friendly curriculum & organic meals. Reserve your spot today!";
-
-    const url =
-        "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali";
+    const url = `https://www.yogagarhi.com/${locale}/100-hour-yoga-teacher-training-in-bali`;
 
     return applyQualityGate({
+        metadataBase: new URL("https://www.yogagarhi.com"),
         title: {
             absolute: title,
         },
@@ -38,7 +92,8 @@ export async function generateMetadata({
             "yoga training ubud"
         ],
         alternates: {
-            canonical: "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali",
+            canonical: url,
+            languages: getReviewedHreflang("/100-hour-yoga-teacher-training-in-bali"),
         },
         robots: {
             index: true,
@@ -71,22 +126,52 @@ export async function generateMetadata({
 ========================= */
 export const revalidate = 86400;
 
-export default function Page() {
+export default async function Page({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+
+    const messages: any = await getMessages();
+    const courseClientMessages = {
+        course100: messages.course100,
+        common: messages.common,
+        dialogs: messages.dialogs,
+        whyChoose: messages.home?.whyChoose || messages.whyChoose,
+        promo: messages.promo,
+        stickyContact: messages.stickyContact,
+        switcher: messages.switcher,
+        nav: messages.nav,
+        navDropdown: messages.navDropdown,
+        footer: messages.footer,
+        faq: messages.faq,
+        reviews: messages.reviews,
+        home: messages.home,
+    };
+
     const course = courseData["100-hour"];
     const upcomingBatches = filterUpcomingBatches(BATCHES_100_HOUR);
-    const pageUrl =
-        "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali";
+    const pageUrl = locale === "en"
+        ? "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali"
+        : `https://www.yogagarhi.com/${locale}/100-hour-yoga-teacher-training-in-bali`;
 
     const fullDescription = "Our 100 Hour Yoga Teacher Training in Bali is for anyone who wants to deepen their yoga practice in a peaceful, natural space. Yoga Garhi is in Gianyar, just 15 km from Ubud, so you enjoy quiet village surroundings with easy access to Bali’s main yoga and cultural center. This short YTTC is perfect if you want more than normal classes but are not ready for a full 200 hour course. You learn asanas with safe alignment, basic pranayama, simple meditation, yoga philosophy, light anatomy, and the basics of how to guide a class. The mix of practice and theory helps you feel real changes in your body, mind, and daily life. The course suits beginners with some practice, intermediate students, and anyone curious about teaching. You do not need to be very flexible—only open to learning and following the daily routine. A typical day includes morning meditation and asana, followed by theory classes and afternoon workshops, with gentle practice and relaxation later. Yoga Garhi is run by sincere, experienced teachers who share yoga in clear, simple language. We keep groups small, give personal attention, and create a warm, non-competitive space. Our Gianyar location offers green views, fresh air, and a calm environment with Ubud’s cafes, markets, and temples nearby. By the end of your 100 hours with us, you will have a stronger, safer practice, more confidence, and practical tools to handle stress and stay balanced. This training can be a complete deepening experience on its own or the first step toward your 200 hour yoga teacher training journey with Yoga Garhi.";
 
     /* =========================
        ARTICLE SCHEMA
     ========================= */
+    const isEn = locale === "en";
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "100 Hour Yoga Teacher Training in Bali",
-        "description": fullDescription,
+        "headline": isEn
+            ? "100 Hour Yoga Teacher Training in Bali"
+            : messages.course100?.metaTitle || "100 Hour Yoga Teacher Training in Bali",
+        "description": isEn
+            ? fullDescription
+            : messages.course100?.metaDesc || fullDescription,
         "image": "https://www.yogagarhi.com/og-image.jpg",
         "author": {
             "@type": "Organization",
@@ -110,8 +195,12 @@ export default function Page() {
     const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": "100 Hour Yoga Teacher Training in Bali",
-        "description": fullDescription,
+        "name": isEn
+            ? "100 Hour Yoga Teacher Training in Bali"
+            : messages.course100?.metaTitle || "100 Hour Yoga Teacher Training in Bali",
+        "description": isEn
+            ? fullDescription
+            : messages.course100?.metaDesc || fullDescription,
         "inLanguage": "en",
         "educationalCredentialAwarded":
             "Certificate of Completion – 100 Hour Yoga Teacher Training",
@@ -295,10 +384,12 @@ export default function Page() {
             />
 
             {/* Page Content */}
-            <Course100Hour
-                initialBatches={upcomingBatches}
-                syllabusSlot={<CourseSyllabusDetails courseKey="100-hour" />}
-            />
+            <NextIntlClientProvider locale={locale} messages={courseClientMessages}>
+                <Course100Hour
+                    initialBatches={upcomingBatches}
+                    syllabusSlot={<CourseSyllabusDetails courseKey="100-hour" />}
+                />
+            </NextIntlClientProvider>
         </>
     );
 }

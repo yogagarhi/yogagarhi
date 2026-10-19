@@ -1,9 +1,11 @@
 import { Metadata } from "next";
-import { applyQualityGate } from "@/utils/seoQualityGate";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 import Course200HourRishikesh from "@/components/pages/Course200HourRishikesh";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
 import { BATCHES_200_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
 
 /* =========================
    SEO METADATA
@@ -14,18 +16,68 @@ export async function generateMetadata({
     params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
     const { locale } = await params;
-    const course = courseData["200-hour-rishikesh"];
+    let messages: any;
+    try {
+        messages = (await import(`@/messages/${locale}.json`)).default;
+    } catch (e) {
+        messages = (await import(`@/messages/en.json`)).default;
+    }
 
-    const title =
-        "200 Hour Yoga Teacher Training Rishikesh | RYT 200 India";
+    if (locale === "en") {
+        const title = "200 Hour Yoga Teacher Training Rishikesh | RYT 200 India";
+        const description =
+            "Master authentic yoga with 200-Hour Yoga TTC in Rishikesh. Yoga Alliance certified RYT 200 residential course by the Ganges. Register now!";
+        return {
+            metadataBase: new URL("https://www.yogagarhi.com"),
+            title: {
+                absolute: title,
+            },
+            description,
+            keywords: [
+                "200 hour yoga teacher training in rishikesh",
+                "200 hour yoga TTC rishikesh",
+                "ryt 200 yoga teacher training rishikesh",
+                "yoga alliance 200 hour rishikesh",
+                "yoga teacher training rishikesh"
+            ],
+            alternates: {
+                canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh",
+                languages: getReviewedHreflang("/200-hour-yoga-teacher-training-in-rishikesh"),
+            },
+            robots: {
+                index: true,
+                follow: true,
+            },
+            openGraph: {
+                title,
+                description,
+                url: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh",
+                type: "website",
+                images: [
+                    {
+                        url: "https://www.yogagarhi.com/og-image.jpg",
+                        width: 1200,
+                        height: 630,
+                        alt: title,
+                    },
+                ],
+            },
+            twitter: {
+                card: "summary_large_image",
+                title,
+                description,
+            },
+        };
+    }
 
+    const title = messages.course200Rishikesh?.metaTitle || "200 Hour Yoga Teacher Training Rishikesh | RYT 200 India";
     const description =
+        messages.course200Rishikesh?.metaDesc ||
         "Master authentic yoga with 200-Hour Yoga TTC in Rishikesh. Yoga Alliance certified RYT 200 residential course by the Ganges. Register now!";
-
-    const url =
-        "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh";
+    const url = `https://www.yogagarhi.com/${locale}/200-hour-yoga-teacher-training-in-rishikesh`;
 
     return applyQualityGate({
+        metadataBase: new URL("https://www.yogagarhi.com"),
         title: {
             absolute: title,
         },
@@ -38,7 +90,8 @@ export async function generateMetadata({
             "yoga teacher training rishikesh"
         ],
         alternates: {
-            canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh",
+            canonical: url,
+            languages: getReviewedHreflang("/200-hour-yoga-teacher-training-in-rishikesh"),
         },
         robots: {
             index: true,
@@ -71,11 +124,38 @@ export async function generateMetadata({
 ========================= */
 export const revalidate = 86400;
 
-export default function Page() {
+export default async function Page({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+
+    const messages: any = await getMessages();
+    const courseClientMessages = {
+        course200Rishikesh: messages.course200Rishikesh,
+        common: messages.common,
+        dialogs: messages.dialogs,
+        whyChoose: messages.home?.whyChoose || messages.whyChoose,
+        promo: messages.promo,
+        stickyContact: messages.stickyContact,
+        switcher: messages.switcher,
+        nav: messages.nav,
+        navDropdown: messages.navDropdown,
+        footer: messages.footer,
+        faq: messages.faq,
+        reviews: messages.reviews,
+        home: messages.home,
+    };
+
     const course = courseData["200-hour-rishikesh"];
     const upcomingBatches = filterUpcomingBatches(BATCHES_200_HOUR);
-    const pageUrl =
-        "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh";
+    const pageUrl = locale === "en"
+        ? "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh"
+        : `https://www.yogagarhi.com/${locale}/200-hour-yoga-teacher-training-in-rishikesh`;
+
+    const isEn = locale === "en";
 
     /* =========================
        COURSE SCHEMA
@@ -83,8 +163,12 @@ export default function Page() {
     const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": "200 Hour Yoga Teacher Training in Rishikesh",
-        "description": course.welcomeText,
+        "name": isEn
+            ? "200 Hour Yoga Teacher Training in Rishikesh"
+            : messages.course200Rishikesh?.metaTitle || "200 Hour Yoga Teacher Training in Rishikesh",
+        "description": isEn
+            ? course.welcomeText
+            : messages.course200Rishikesh?.metaDesc || course.welcomeText,
         "inLanguage": "en",
         "educationalCredentialAwarded":
             "RYT 200 Yoga Alliance Certification",
@@ -228,10 +312,13 @@ export default function Page() {
                 fetchPriority="high"
             />
 
-            <Course200HourRishikesh
-                initialBatches={upcomingBatches}
-                syllabusSlot={<CourseSyllabusDetails courseKey="200-hour-rishikesh" />}
-            />
+            {/* Page Content */}
+            <NextIntlClientProvider locale={locale} messages={courseClientMessages}>
+                <Course200HourRishikesh
+                    initialBatches={upcomingBatches}
+                    syllabusSlot={<CourseSyllabusDetails courseKey="200-hour-rishikesh" />}
+                />
+            </NextIntlClientProvider>
         </>
     );
 }

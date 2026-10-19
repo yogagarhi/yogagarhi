@@ -1,9 +1,11 @@
 import { Metadata } from "next";
-import { applyQualityGate } from "@/utils/seoQualityGate";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 import Course100HourRishikesh from "@/components/pages/Course100HourRishikesh";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
 import { BATCHES_100_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
 
 /* =========================
    SEO METADATA
@@ -14,18 +16,68 @@ export async function generateMetadata({
     params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
     const { locale } = await params;
-    const course = courseData["100-hour-rishikesh"];
+    let messages: any;
+    try {
+        messages = (await import(`@/messages/${locale}.json`)).default;
+    } catch (e) {
+        messages = (await import(`@/messages/en.json`)).default;
+    }
 
-    const title =
-        "100 Hour Yoga Teacher Training Rishikesh | Short Yoga TTC";
+    if (locale === "en") {
+        const title = "100 Hour Yoga Teacher Training Rishikesh | Short Yoga TTC";
+        const description =
+            "Residential 100-Hour Yoga Teacher Training in Rishikesh, India. Authentic Himalayan master teachers, sacred Ganga ashram & certification.";
+        return {
+            metadataBase: new URL("https://www.yogagarhi.com"),
+            title: {
+                absolute: title,
+            },
+            description,
+            keywords: [
+                "100 hour yoga teacher training in rishikesh",
+                "100 hour yoga TTC rishikesh",
+                "beginner yoga teacher training rishikesh",
+                "short yoga teacher training rishikesh",
+                "yoga certification rishikesh"
+            ],
+            alternates: {
+                canonical: "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh",
+                languages: getReviewedHreflang("/100-hour-yoga-teacher-training-in-rishikesh"),
+            },
+            robots: {
+                index: true,
+                follow: true,
+            },
+            openGraph: {
+                title,
+                description,
+                url: "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh",
+                type: "website",
+                images: [
+                    {
+                        url: "https://www.yogagarhi.com/og-image.jpg",
+                        width: 1200,
+                        height: 630,
+                        alt: title,
+                    },
+                ],
+            },
+            twitter: {
+                card: "summary_large_image",
+                title,
+                description,
+            },
+        };
+    }
 
+    const title = messages.course100Rishikesh?.metaTitle || "100 Hour Yoga Teacher Training Rishikesh | Short Yoga TTC";
     const description =
+        messages.course100Rishikesh?.metaDesc ||
         "Residential 100-Hour Yoga Teacher Training in Rishikesh, India. Authentic Himalayan master teachers, sacred Ganga ashram & certification.";
-
-    const url =
-        "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh";
+    const url = `https://www.yogagarhi.com/${locale}/100-hour-yoga-teacher-training-in-rishikesh`;
 
     return applyQualityGate({
+        metadataBase: new URL("https://www.yogagarhi.com"),
         title: {
             absolute: title,
         },
@@ -38,7 +90,8 @@ export async function generateMetadata({
             "yoga certification rishikesh"
         ],
         alternates: {
-            canonical: "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh",
+            canonical: url,
+            languages: getReviewedHreflang("/100-hour-yoga-teacher-training-in-rishikesh"),
         },
         robots: {
             index: true,
@@ -71,11 +124,38 @@ export async function generateMetadata({
 ========================= */
 export const revalidate = 86400;
 
-export default function Page() {
+export default async function Page({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+
+    const messages: any = await getMessages();
+    const courseClientMessages = {
+        course100Rishikesh: messages.course100Rishikesh,
+        common: messages.common,
+        dialogs: messages.dialogs,
+        whyChoose: messages.home?.whyChoose || messages.whyChoose,
+        promo: messages.promo,
+        stickyContact: messages.stickyContact,
+        switcher: messages.switcher,
+        nav: messages.nav,
+        navDropdown: messages.navDropdown,
+        footer: messages.footer,
+        faq: messages.faq,
+        reviews: messages.reviews,
+        home: messages.home,
+    };
+
     const course = courseData["100-hour-rishikesh"];
     const upcomingBatches = filterUpcomingBatches(BATCHES_100_HOUR);
-    const pageUrl =
-        "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh";
+    const pageUrl = locale === "en"
+        ? "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh"
+        : `https://www.yogagarhi.com/${locale}/100-hour-yoga-teacher-training-in-rishikesh`;
+
+    const isEn = locale === "en";
 
     /* =========================
        COURSE SCHEMA
@@ -83,8 +163,12 @@ export default function Page() {
     const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": "100 Hour Yoga Teacher Training in Rishikesh",
-        "description": course.welcomeText,
+        "name": isEn
+            ? "100 Hour Yoga Teacher Training in Rishikesh"
+            : messages.course100Rishikesh?.metaTitle || "100 Hour Yoga Teacher Training in Rishikesh",
+        "description": isEn
+            ? course.welcomeText
+            : messages.course100Rishikesh?.metaDesc || course.welcomeText,
         "inLanguage": "en",
         "educationalCredentialAwarded":
             "Certificate of Completion – 100 Hour Yoga Teacher Training",
@@ -228,10 +312,12 @@ export default function Page() {
             />
 
             {/* Page Content */}
-            <Course100HourRishikesh
-                initialBatches={upcomingBatches}
-                syllabusSlot={<CourseSyllabusDetails courseKey="100-hour-rishikesh" />}
-            />
+            <NextIntlClientProvider locale={locale} messages={courseClientMessages}>
+                <Course100HourRishikesh
+                    initialBatches={upcomingBatches}
+                    syllabusSlot={<CourseSyllabusDetails courseKey="100-hour-rishikesh" />}
+                />
+            </NextIntlClientProvider>
         </>
     );
 }

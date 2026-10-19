@@ -6,10 +6,11 @@ import { useTranslations } from "next-intl";
 interface WhyYogaGarhiBoxProps {
   onCheckAvailability?: () => void;
   onBookCall?: () => void;
+  namespace?: string;
 }
 
-export default function WhyYogaGarhiBox({ onCheckAvailability, onBookCall }: WhyYogaGarhiBoxProps) {
-  const t = useTranslations("course200.whyYogaGarhiBox");
+export default function WhyYogaGarhiBox({ onCheckAvailability, onBookCall, namespace = "course200" }: WhyYogaGarhiBoxProps) {
+  const t = useTranslations(`${namespace}.whyYogaGarhiBox` as any);
 
   const pillars = [
     {

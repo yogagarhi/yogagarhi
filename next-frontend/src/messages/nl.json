@@ -104,7 +104,32 @@
     "save": "Bespaar",
     "getFreeManual": "Gratis handleiding",
     "revealYogicEnergy": "Ontdek je yogische energie",
-    "freeWebinar": "Gratis webinar"
+    "freeWebinar": "Gratis webinar",
+    "accommodationExtra": {
+      "featuresTitle": "Accommodatie",
+      "featuresSub": "Een vredig yogaparadijs in het hart van de heilige Ubud-regio op Bali",
+      "feat1": "10 prachtige watervallen binnen een straal van 10 km",
+      "feat2": "Eigen privébos met een waterval op het terrein",
+      "feat3": "Rustgevende wandelingen door rijstvelden op het terrein",
+      "feat4": "Slechts 15 km van het centrum van Ubud",
+      "glimpses": "Een impressie van je verblijf",
+      "allRooms": "Alle kamers zijn inclusief",
+      "wifi": "Gratis wifi",
+      "hotWater": "Warm water",
+      "acFan": "Airco / Ventilator",
+      "cleaning": "Dagelijkse schoonmaak",
+      "bed1": "bed",
+      "bedsMore": "bedden",
+      "courseOnly": "Alleen cursus",
+      "mostPopular": "Meest gekozen",
+      "premium": "Premium"
+    },
+    "instagram": {
+      "badge": "Achter de Schermen",
+      "heading": "Volg Onze Reis",
+      "sub": "Dagelijkse momenten van transformatie, wijsheid en gemeenschap vanuit Bali",
+      "followUs": "Volg ons"
+    }
   },
   "footer": {
     "tagline": "Transformeer van binnenuit",
@@ -1319,5 +1344,2948 @@
     "smallGroupBadge": "8–10 studenten",
     "smallGroupTitle": "Kleine groepen",
     "smallGroupDesc": "Gegarandeerd individuele aandacht en toewijding."
+  },
+  "thankYou": {
+    "metaTitle": "Bedankt | YogaGarhi",
+    "metaDesc": "Bedankt voor je aanmelding bij YogaGarhi.",
+    "namaste": "Namaste! 🙏",
+    "subheading": "Je reis naar transformatie is begonnen",
+    "messages": {
+      "enquiry": "We hebben je vraag ontvangen. Ons team neemt binnen 24 uur contact met je op met de gewenste informatie.",
+      "booking": "Je adviesgesprek is gepland. Ons team neemt op het gekozen tijdstip contact met je op.",
+      "webinar": "Je bent succesvol ingeschreven voor het webinar. Controleer je e-mail voor de deelnamelink en details.",
+      "syllabus": "De studiegids is onderweg naar je inbox. Controleer alsjeblieft je e-mail.",
+      "manual": "Je gratis handleiding is naar je e-mail gestuurd. We hopen dat het je beoefening verrijkt!",
+      "guidePrep": "Je voorbereidingsgids \"Voordat je begint\" is onderweg naar je inbox. Controleer over enkele minuten je e-mail (ook de spammap).",
+      "enrollment": "We hebben je inschrijving ontvangen. Ons team neemt binnen 24 uur contact met je op met de volgende stappen."
+    },
+    "whatNext": {
+      "heading": "Wat gebeurt er nu?",
+      "sub": "Dit kun je de komende dagen verwachten",
+      "step1Title": "Bevestigingsmail",
+      "step1Desc": "Controleer je inbox voor een bevestigingsmail met alle details van je inschrijving.",
+      "step1Time": "Binnen enkele minuten",
+      "step2Title": "Persoonlijk gesprek",
+      "step2Desc": "Onze inschrijfcoördinator belt je om eventuele vragen te beantwoorden en je doelen te bespreken.",
+      "step2Time": "Binnen 24 uur",
+      "step3Title": "Voorbereidend materiaal",
+      "step3Desc": "Ontvang je voorbereidingsgids, leeslijst en alles wat je nodig hebt voor aankomst.",
+      "step3Time": "Binnen 48 uur",
+      "step4Title": "Reisplanning",
+      "step4Desc": "We helpen je met visumadvies, reistips en het regelen van vervoer vanaf de luchthaven.",
+      "step4Time": "1 week van tevoren"
+    },
+    "whileYouWait": {
+      "heading": "Terwijl je wacht...",
+      "sub": "Ontdek meer over YogaGarhi en bereid je voor op je reis",
+      "card1Title": "Volg onze reis",
+      "card1Desc": "Dagelijkse inspiratie, een kijkje achter de schermen en transformaties van studenten",
+      "card1Link": "@yogagarhi",
+      "card2Title": "Bekijk ervaringen",
+      "card2Desc": "Hoor van onze afgestudeerden over hun levensveranderende ervaringen",
+      "card2Link": "Bekijk video's",
+      "card3Title": "Lees onze blog",
+      "card3Desc": "Artikelen over yogafilosofie, oefentips en spirituele groei",
+      "card3Link": "Ontdek de blog"
+    },
+    "help": {
+      "heading": "Vragen? We staan voor je klaar",
+      "sub": "Neem gerust op elk moment contact op",
+      "whatsapp": "Stuur een WhatsApp",
+      "email": "Stuur een e-mail",
+      "backHome": "← Terug naar startpagina"
+    }
+  },
+  "course100": {
+    "metaTitle": "100-Uurs Yoga Docentenopleiding op Bali | Yoga Alliance Ubud",
+    "metaDesc": "Verdiep je beoefening met de 100-uurs Yoga Docentenopleiding in Ubud, Bali. Geschikt voor beginners en biologische maaltijden. Reserveer vandaag!",
+    "heroTitle": "100-Uurs Yoga Docentenopleiding op Bali",
+    "heroSub": "Dompel je onder in een transformerende 12-daagse reis in Gianyar, Bali. Himalaya-traditie, kleine groepen van 8–10, all-inclusive vanaf $1.149 USD.",
+    "quickInfo": {
+      "course": "Opleiding",
+      "courseVal": "100-Uurs Yoga TTC",
+      "duration": "Duur",
+      "durationVal": "12 Days",
+      "style": "Stijl",
+      "styleVal": "Multi-Style Yoga",
+      "level": "Niveau",
+      "levelVal": "Beginners tot Gevorderden",
+      "certification": "Certificering",
+      "certificationVal": "Yoga Alliance Certificaat / 100-Uurs Basis",
+      "startingFrom": "$1,149 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Bespaar",
+      "earlyBirdDiscount": "Bespaar $250 met vroegboekkorting"
+    },
+    "highlights": {
+      "smallGroups": "Kleine groepen (max 8–10)",
+      "smallGroupsSub": "Persoonlijke aandacht",
+      "preYttc": "Begeleiding vooraf",
+      "preYttcSub": "Voorbereiding en advies",
+      "mentorship": "Mentorschap na afstuderen",
+      "mentorshipSub": "1 jaar doorlopende ondersteuning",
+      "goodieBag": "Gratis welkomstpakket",
+      "goodieBagSub": "Yoga essentials"
+    },
+    "storyTitle": "Transformeer je beoefening in levende wijsheid",
+    "storyP1": "Onze 200 uur yogadocentenopleiding in Bali is een residentiële verdieping voor wie verlangt naar authentieke diepgang in plaats van oppervlakkige fitnesslessen. Gelegen in het rustige dorpje Gianyar, op slechts 15 minuten van Ubud, biedt YogaGarhi een vredig toevluchtsoord ver weg van de drukte.",
+    "storyP2": "Gedurende 24 dagen bestudeer je klassiek Hatha, Vinyasa Flow, de Ashtanga Primary Series en Iyengar-uitlijning naast toegepaste anatomie, filosofie, pranayama en meditatie. Met strikt 8–10 studenten per groep bieden onze ervaren docenten uit de Himalaya persoonlijke aandacht aan iedereen.",
+    "watchVideoStories": "Bekijk video's en reviews van studenten",
+    "videoBannerTitle": "Plan een gesprek. Zie de school. Zie je kamer. Zie de yogazaal.",
+    "whyYogaGarhiBox": {
+      "badge": "Waarom kiezen voor YogaGarhi",
+      "heading": "Echte Himalaya-traditie in een intiem ashram op Bali",
+      "sub": "Wij richten ons op oprechte beoefenaars in plaats van massale fabriekslessen. Dit maakt onze 200-uurs opleiding uniek:",
+      "p1Title": "Maximaal 8–10 studenten per groep",
+      "p1Highlight": "Persoonlijke focus",
+      "p1Desc": "Kleine groepen garanderen gerichte begeleiding, individuele correcties en continue aandacht van docenten.",
+      "p2Title": "Gratis online Pre-TTC training",
+      "p2Highlight": "Met vertrouwen starten",
+      "p2Desc": "Kosteloze voorbereidingscursus voorafgaand aan je komst naar Bali om kracht en basiskennis op te bouwen.",
+      "p3Title": "1 jaar mentorschap na afstuderen",
+      "p3Highlight": "Levenslange verbinding",
+      "p3Desc": "Doorlopende adviezen, feedback op je lessen en loopbaancoaching lang na afronding van je verblijf.",
+      "p4Title": "Levenslang gratis de opleiding herhalen",
+      "p4Highlight": "Kosteloos terugkeren",
+      "p4Desc": "Sluit je in de toekomst kosteloos aan bij YogaGarhi-opleidingen om je kennis op te frissen of te assisteren.",
+      "pkgBadge": "Verblijfspakketten (24 dagen / 23 nachten) & optie alleen lesgeld",
+      "saveEarlyBird": "Bespaar $300 met vroegboekkorting",
+      "tuitionFrom": "Alleen lesgeld vanaf $999 USD | Met verblijf vanaf $1,750 USD",
+      "breakdown": "Alleen lesgeld: $999 • Drie personen: $1,750 • Twee personen: $1,899 • Privékamer: $2,499",
+      "checkAvailability": "Beschikbaarheid controleren",
+      "bookFreeCall": "Gratis video-adviesgesprek plannen"
+    },
+    "hoursStructure": {
+      "badge": "Lesuren",
+      "heading": "Opbouw van de 200 studie-uren",
+      "sub": "Een evenwichtige verdeling tussen directe contacturen, praktijklessen en zelfstudie conform de Yoga Alliance richtlijnen.",
+      "contactHours": "Contacturen",
+      "contactHoursDesc": "Direct onderwijs van hoofddocenten in asana, uitlijning, anatomie en filosofie.",
+      "selfStudy": "Zelfstudie & lespraktijk",
+      "selfStudyDesc": "Gerichte literatuurstudie, journalen, oefenen met medestudenten en lessen ontwerpen.",
+      "totalCert": "Totale certificering",
+      "totalCertDesc": "Voldoet ruim aan de standaarden voor Yoga Alliance RYT 200.",
+      "hoursUnit": "Uur"
+    },
+    "syllabus": {
+      "heading": "Curriculum en studieplan",
+      "sub": "Een evenwichtig en verdiepend studieplan dat klassieke bronteksten koppelt aan moderne bewegingsleer.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditatie",
+      "tab4": "Anatomie & Fysiologie",
+      "tab5": "Filosofie & Ethiek",
+      "tapMore": "Tik voor meer details",
+      "hoverMore": "Beweeg voor meer details",
+      "takeaway": "Wat je leert",
+      "carryHome": "Voor thuis",
+      "careerImpact": "Waarde voor je lessen:",
+      "cards": [
+        {
+          "title": "Ashtanga Yoga Houdingen",
+          "content": "Volledige reeks van de Ashtanga Primary Series. Wekelijkse opbouw via Zonnegroet A & B, staande en zittende houdingen en authentieke Mysore-beoefening."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Pawanmuktasana-serie, Surya Namaskar-variaties, staande en zittende asana's, achteroverbuigingen, vooroverbuigingen, omgekeerde houdingen en lesopbouw."
+        },
+        {
+          "title": "Yoga Filosofie",
+          "content": "Inleiding tot de Yoga Sutra's van Patanjali, de acht ledematen van yoga, Nadis, Chakra's, Pancha-Vayus, Panchakosha's, Triguna en overleveringen van yogameesters."
+        },
+        {
+          "title": "Pranayama & Ademhaling",
+          "content": "Uitgebreide ademhalingstechnieken: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali en Sheetkari."
+        },
+        {
+          "title": "Anatomie & Fysiologie",
+          "content": "Bewegingsvlakken, gewrichtsbescherming, anatomie van enkel, knie, wervelkolom en schouders, ademhalingsmechanica, spierfysiologie en zenuwstelsel."
+        },
+        {
+          "title": "Lesmethodiek",
+          "content": "Lesopbouw, verbale instructie en handmatige correcties, omgaan met niveauverschillen, stemgebruik, mentale voorbereiding en gestructureerde lesplanning."
+        },
+        {
+          "title": "Meditatie & Mantra",
+          "content": "Diverse meditatievormen, chanten van mantra's, Trataka, Osho Dynamische meditatie, Nada Brahma, Antar Mouna en het cultiveren van innerlijke stilte."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Precisiegerichte benadering met behulp van blokken, riemen en dekens om een anatomisch zuivere uitlijning te waarborgen en blessures te voorkomen."
+        },
+        {
+          "title": "Uitlijningsprincipes",
+          "content": "Basis van een veilige beoefening: gewrichtsuitlijning, spieractivatiepatronen en biomechanica ter bescherming en versterking van het fysieke lichaam."
+        },
+        {
+          "title": "Bandhas (Energiesloten)",
+          "content": "Beheersing van Mula, Uddiyana en Jalandhara Bandha om de pranastroom te geleiden, de kern te versterken en meditatieve staten te verdiepen."
+        },
+        {
+          "title": "Mudras (Yogische Gebaren)",
+          "content": "Heilige hand- en lichaamsgebaren die levensenergie kanaliseren, de focus aanscherpen en verbinden met hogere staten van bewustzijn."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Dagritme in de ashram",
+      "sub": "Een harmonieuze afwisseling van intensieve beoefening, filosofie, gezonde voeding en rust.",
+      "time1": "06:00",
+      "act1": "Opstaan & ochtendzuivering",
+      "time2": "06:30",
+      "act2": "Pranayama, chanten & meditatie",
+      "time3": "07:30",
+      "act3": "Ochtendasana's (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Gezond sattvisch ontbijt",
+      "time5": "10:00",
+      "act5": "Yogafilosofie & tekststudie",
+      "time6": "12:00",
+      "act6": "Voedzame lunch & pauze",
+      "time7": "15:00",
+      "act7": "Toegepaste anatomie & biomechanica",
+      "time8": "16:30",
+      "act8": "Didactiek & uitlijningskliniek",
+      "time9": "18:00",
+      "act9": "Avondyoga (Ashtanga / Yin / Herstellend)",
+      "time10": "19:30",
+      "act10": "Sattvisch diner",
+      "time11": "21:00",
+      "act11": "Zelfstudie, stilte & rust",
+      "beyondTheMat": "Buiten de mat",
+      "badge": "Dagrooster",
+      "wakeUp": "Opstaan & ochtendzuivering",
+      "morningPranayama": "Pranayama & meditatie",
+      "morningAsana": "Ochtendasana's (Hatha / Vinyasa)",
+      "breakfast": "Gezond Ayurvedisch ontbijt",
+      "philosophyClass": "Yogafilosofie & tekststudie",
+      "lunch": "Voedzame lunch & rusttijd",
+      "anatomyClass": "Toegepaste anatomie & fysiologie",
+      "methodologyClass": "Didactiek & uitlijningskliniek",
+      "eveningAsana": "Avondsessie (Ashtanga / Yin / Herstellend)",
+      "dinner": "Sattvisch diner",
+      "selfStudy": "Zelfstudie, stilte & nachtrust"
+    },
+    "inclusions": {
+      "heading": "Wat is inbegrepen in je opleiding",
+      "sub": "Alles geregeld voor een zorgeloos en diepgaand verblijf.",
+      "incAccom": "23 nachten verblijf in de ashram",
+      "incMeals": "Dagelijks 3 vers bereide sattvische maaltijden (vegetarisch/veganistisch)",
+      "incCert": "Yoga Alliance RYT 200 certificaat na voltooiing",
+      "incManuals": "Officiële lesboeken, notitieblokken en studiemateriaal",
+      "incKit": "Yogamat en alle benodigde props op locatie aanwezig",
+      "incExcursions": "Heilige culturele excursies (watertempel, rijstvelden, Balinese dans)",
+      "incCeremonies": "Traditionele openings- en afsluitende vuurceremonies (Agni Hotra)",
+      "incPickup": "Ophaalservice vanaf vliegveld Denpasar (DPS) op de officiële aankomstdag",
+      "incPre": "Gratis online Pre-TTC voorbereidingscursus",
+      "incRepeat": "Levenslang het recht om gratis aan te schuiven bij latere edities",
+      "notIncHeading": "Niet inbegrepen",
+      "notIncFlights": "Internationale en binnenlandse vliegtickets",
+      "notIncVisa": "Kosten voor het Indonesische visum",
+      "notIncInsurance": "Persoonlijke reis- en ziektekostenverzekering"
+    },
+    "pricing": {
+      "heading": "Kamers & Prijzen",
+      "sub": "Volledig transparante all-in tarieven zonder verborgen kosten.",
+      "tuitionOnly": "Alleen lesgeld",
+      "tuitionOnlyDesc": "Lessen, alle maaltijden, lesmateriaal en certificaat. Verblijf buiten de ashram.",
+      "triple": "Gedeelde driepersoonskamer",
+      "tripleDesc": "Ruime kamer met airco gedeeld met twee medestudenten, eigen badkamer en balkon.",
+      "double": "Gedeelde tweepersoonskamer",
+      "doubleDesc": "Comfortabele kamer voor twee personen met eigen badkamer, airco en uitzicht op tuin of zwembad.",
+      "private": "Deluxe privékamer",
+      "privateDesc": "Eigen toevluchtsoord met groot tweepersoonsbed, eigen badkamer, airco en privébalkon.",
+      "earlyBird": "Vroegboekkorting",
+      "save300": "Bespaar $300 USD",
+      "earlyBirdPrice": "Vroegboekprijs",
+      "tuitionFees": "Tarieven & Kamers (100 Uur)",
+      "tripleSharing": "Driepersoonskamer ($1.149)",
+      "doubleSharing": "Tweepersoonskamer ($1.349)",
+      "privateRoom": "Privékamer ($1.649)",
+      "choosePackage": "Kies je pakket",
+      "reserveSpot": "Reserveer je plek",
+      "saveUSD": "Bespaar $300 USD",
+      "residentialDuration": "12 dagen residentiële yoga-opleiding in Gianyar, Bali"
+    },
+    "ethics": {
+      "codeOfConduct": "Gedragscode",
+      "refundCancellation": "Restitutie & Annulering",
+      "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+    },
+    "faqsHeading": "Veelgestelde vragen",
+    "faqs": [
+      {
+        "question": "Is deze 200 uur yogadocentenopleiding geschikt voor beginners?",
+        "answer": "Ja. Het lesprogramma bouwt zorgvuldig op van de basisprincipes tot een gemiddeld niveau. Bovendien krijgt elke student toegang tot onze gratis online voorbereidingscursus om vooraf souplesse, kracht en uitlijning op te bouwen."
+      },
+      {
+        "question": "Welke yogastijlen komen aan bod tijdens deze 200 uur TTC?",
+        "answer": "Je leert multi-style yoga vanuit de authentieke Himalaya-traditie: klassieke Hatha Yoga, dynamische Vinyasa Flow, de Ashtanga Primary Series (volgens K. Pattabhi Jois) en doordachte uitlijning geïnspireerd door Iyengar Yoga."
+      },
+      {
+        "question": "Hoe ziet een gemiddelde opleidingsdag eruit?",
+        "answer": "Een reguliere opleidingsdag bij YogaGarhi kent een vast ritme: 06:00 Opstaan; 06:30 Pranayama & meditatie; 07:30 Hatha & Vinyasa; 09:00 Ontbijt; 10:00 Yogafilosofie; 12:00 Lunch & rust; 15:00 Toegepaste anatomie; 16:30 Didactiek & uitlijning; 18:00 Ashtanga & Iyengar met yogatherapie; 19:30 Diner; 21:00 Zelfstudie & nachtrust."
+      },
+      {
+        "question": "Wat is de groepsgrootte bij YogaGarhi Bali?",
+        "answer": "We hanteren een strikte limiet van maximaal 8–10 studenten per groep. Dit waarborgt individuele correcties, gerichte feedback en nauw contact met onze ervaren hoofddocenten."
+      },
+      {
+        "question": "Welk diploma ontvang ik en is dit wereldwijd erkend?",
+        "answer": "Na succesvolle afronding van alle contacturen en praktijktoetsen ontvang je het internationaal erkende certificaat van Registered Yoga Teacher (RYT 200) van Yoga Alliance, waarmee je overal ter wereld mag lesgeven."
+      },
+      {
+        "question": "Welke kamers en prijzen zijn er beschikbaar?",
+        "answer": "We bieden vier duidelijke opties: Alleen lesgeld ($999 USD vroegboekprijs i.p.v. $1,299; zonder kamer en maaltijden), Drie personen ($1,750 USD i.p.v. $2,050), Twee personen ($1,899 USD i.p.v. $2,199) en Privékamer ($2,499 USD i.p.v. $2,799). Alle residentiële pakketten omvatten 23 overnachtingen en 3 dagelijkse maaltijden."
+      },
+      {
+        "question": "Wat is er allemaal inbegrepen in de cursusprijs?",
+        "answer": "Bij de pakketten met verblijf is inbegrepen: 23 nachten accommodatie (eigen badkamer, warm water, airco/ventilator, wifi), dagelijks 3 gezonde maaltijden, kruidenthee en drinkwater, officiële lesboeken, yogamatten en props, luchthaventransfer vanaf DPS, Balinese massage, culturele uitstapjes, online voorbereidingscursus, boek met lessenseries, Yoga Alliance certificaat en levenslang gratis herhalen. Bij het pakket 'Alleen lesgeld' ($999 USD) zijn verblijf en maaltijden niet inbegrepen."
+      },
+      {
+        "question": "Wat is het annulerings- en restitutiebeleid?",
+        "answer": "Je kunt je startdatum binnen 12 maanden kosteloos verplaatsen of overdragen aan een andere beoefenaar. Mocht de school een groep annuleren, dan restitueren we 100% van het bedrag, aangevuld met een Dag 1 proefgarantie. Vanwege de beperkte capaciteit zijn boekingen niet meer restitueerbaar zodra Dag 1 is gestart."
+      }
+    ],
+    "hero": {
+      "badge": "Yoga Alliance gecertificeerd RYT 200",
+      "h1": "100-Uurs Yoga Docentenopleiding op Bali",
+      "sub": "Een inspirerende 12-daagse onderdompeling in Gianyar, Bali. Authentieke Himalaya-traditie, persoonlijke uitlijning en bewuste levensstijl vanaf $1.149 USD.",
+      "quickDuration": "12 Dagen",
+      "quickLevel": "Beginners tot Gevorderden",
+      "quickCert": "Yoga Alliance Certificaat / 100-Uurs Basis",
+      "quickLang": "Engels",
+      "quickBatch": "8–10 studenten",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Plek reserveren",
+      "btnBrochure": "Lesprogramma downloaden",
+      "btnCounselor": "Praat met een adviseur"
+    },
+    "overview": {
+      "heading": "Welkom bij YogaGarhi Bali",
+      "story": "Onze 200 uur yogadocentenopleiding op Bali is een grondig basisprogramma voor wie zelfverzekerd yogales wil geven of yoga diep wil integreren in het eigen leven. YogaGarhi bevindt zich in Gianyar, op circa 15 km van Ubud, te midden van rustgevende natuur. Tijdens de opleiding beoefen je dagelijks asana's, verdiep je je in uitlijning en bestudeer je pranayama, meditatie, filosofie en didactiek.",
+      "p1": "Onze 100-uurs yoga docentenopleiding op Bali is voor iedereen die zijn yogabeoefening wil verdiepen in een rustige, natuurlijke omgeving nabij Ubud.",
+      "p2": "Dit korte format is perfect als je meer wilt dan reguliere lessen, maar nog niet toe bent aan 200 uur. Leer veilige asana-uitlijning, pranayama en meditatie."
+    },
+    "curriculum": {
+      "badge": "Lesmodules",
+      "heading": "Overzicht van het lesprogramma",
+      "sub": "Klik op een module om specifieke onderwerpen, praktische technieken en theorie te bekijken.",
+      "modules": {
+        "asana": "Asanabeoefening & Uitlijning",
+        "pranayama": "Pranayama & Subtiele energie",
+        "philosophy": "Yogafilosofie & Levensstijl",
+        "anatomy": "Anatomie & Fysiologie",
+        "methodology": "Didactiek & Lespraktijk",
+        "meditation": "Meditatie & Mindfulness",
+        "iyengar": "Iyengar Yoga basis & Hulpmiddelen",
+        "vinyasa": "Vinyasa Flow lesopbouw",
+        "hatha": "Klassieke traditionele Hatha Yoga"
+      },
+      "detailedModules": [
+        {
+          "title": "Ashtanga Yoga Houdingen",
+          "items": [
+            "Volledige Ashtanga primary series volgens K. Pattabhi Jois",
+            "Week 1: Introductie & Zonnegroeten A & B",
+            "Week 2: Staande reeks & yogaprops",
+            "Week 3: Zittende reeks & afrondende houdingen",
+            "Week 4: Mysore-stijl & lesgeefpraktijk"
+          ]
+        },
+        {
+          "title": "Yoga Filosofie",
+          "items": [
+            "Volledige Yoga Sutra's van Patanjali",
+            "Acht ledematen van Ashtanga Yoga",
+            "Pancha-Vayus & Panchakosha's",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Introductie tot de Veda's",
+            "Inspirerende verhalen van grote yogameesters"
+          ]
+        },
+        {
+          "title": "Pranayama & Ademhalingsoefeningen",
+          "items": [
+            "Volledige pranayama-technieken",
+            "Alle zes Shatkarma reinigingsoefeningen",
+            "Gevorderde ademhaling: Sheetali, Sheetkari",
+            "Kumbhaka (ademinouding)",
+            "Integratie met asana-beoefening"
+          ]
+        },
+        {
+          "title": "Heilige Klanken & Mantra Recitatie",
+          "items": [
+            "Volledige collectie traditionele mantra's",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Shloka voor Patanjali)",
+            "Dagelijkse mantra-chanting praktijk"
+          ]
+        },
+        {
+          "title": "Anatomie en Fysiologie",
+          "items": [
+            "Complete studie van lichaamssystemen",
+            "Fysiologie van spieren & gewrichten",
+            "Ademhalings- & zenuwstelsel",
+            "Voeding & spijsvertering",
+            "Praktijkgerichte workshops over asana's"
+          ]
+        },
+        {
+          "title": "Lesmethodiek",
+          "items": [
+            "Volledige lesopbouw & sequencing",
+            "Demonstratie- & observatieprincipes",
+            "Mentale & emotionele voorbereiding",
+            "Stapsgewijze lesplanning",
+            "Praktijklessen & feedback"
+          ]
+        },
+        {
+          "title": "Meditatie & Bandha's",
+          "items": [
+            "Osho Dynamische meditatie",
+            "Nada Brahma meditatie",
+            "Antar Mouna & Ajapa Japa",
+            "Beheersing van alle vier de Bandha's",
+            "Harmonische integratie met asana & pranayama"
+          ]
+        },
+        {
+          "title": "Uitlijning & Hands-on Correcties",
+          "items": [
+            "Functionele biomechanica voor klassieke yogahoudingen",
+            "Verbale instructies en veilige hands-on aanpassingen",
+            "Begrip van individuele anatomische variaties",
+            "Modificatiestrategieën met blokken en riemen"
+          ]
+        },
+        {
+          "title": "Klassieke Hatha Yoga Praktijk",
+          "items": [
+            "Diepgaande studie van Hatha-principes en statische houdingen",
+            "Klassieke opbouw: warming-up, piekhouding en tegenhoudingen",
+            "Balans tussen zonne- (Ha) en maan- (Tha) energieën",
+            "Integratie van Bandha's en Mudra's in asana's"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Nauwkeurige Uitlijning",
+          "items": [
+            "Methodische uitlijning met blokken, riemen en dekens",
+            "Exacte positionering van bekken, wervelkolom en schouders",
+            "Veilige voorbereiding op omgekeerde houdingen",
+            "Herstellende Iyengar-series met hulpmiddelen"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Dynamische Sequencing",
+          "items": [
+            "Intelligente lesstructuur: opbouw, piek en ontspanning",
+            "Vloeiende overgangen afgestemd op de ademhaling",
+            "Thematische vinyasa-lessen voor diverse niveaus",
+            "Ritme, tempo en energetische begeleiding"
+          ]
+        },
+        {
+          "title": "Aanvullende Workshops",
+          "items": [
+            "Sound Healing klankreizen",
+            "Strandyoga op Bali",
+            "Yin Yoga & Acro Yoga",
+            "Basisprincipes van Ayurveda",
+            "Traditionele Agni Hotra vuurceremonie"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Accommodatie & Tarieven",
+      "sub": "Duidelijke all-inclusive tarieven zonder onverwachte kosten.",
+      "tuitionOnly": "Alleen lesgeld pakket",
+      "tuitionOnlyDesc": "Lessen, maaltijden, studiemateriaal en certificering. Zonder verblijf.",
+      "triple": "Gedeelde driepersoonskamer",
+      "tripleDesc": "Gekoelde kamer voor drie personen met eigen badkamer en balkon.",
+      "double": "Gedeelde tweepersoonskamer",
+      "doubleDesc": "Fijne kamer voor twee personen met badkamer, airconditioning en tuinzicht.",
+      "private": "Luxe privékamer",
+      "privateDesc": "Privékamer met groot bed, badkamer ensuite, airco en eigen balkon.",
+      "earlyBird": "Vroegboekkorting",
+      "save300": "Bespaar $300 USD"
+    },
+    "tourCall": {
+      "heading": "Wil je de school bekijken voor je boekt?",
+      "sub": "Neem deel aan een live videogesprek voor een persoonlijke rondleiding over de campus, lesruimtes, yoga shala en kamers.",
+      "cta": "Gesprek boeken. Zie de school. Zie je kamer. Zie de yogazaal.",
+      "bookCallLive": "Bekijk de school, je kamer en de yoga shala live. Vul hieronder je gegevens in om een afspraak te plannen."
+    },
+    "takeaway": {
+      "badge": "Wat je meeneemt",
+      "heading": "Wat je meeneemt",
+      "headingItalic": "naar huis",
+      "sub": "Naast het officiële certificaat vertrek je met een getransformeerd perspectief, een diepere verbinding met jezelf en authentieke vaardigheden om anderen te begeleiden.",
+      "careerImpactTitle": "Carrièreperspectief:",
+      "careerImpactDesc": "Na afronding van de 200-urige yogadocentenopleiding kun je wereldwijd lesgeven in studio's, online live-lessen verzorgen, retreats leiden of je eigen zelfstandige praktijk starten.",
+      "card1Title": "Wereldwijde certificering",
+      "card1Desc": "Yoga Alliance RYT-200 om overal jouw carrière te starten.",
+      "card2Title": "Beheers de beoefening",
+      "card2Desc": "Gedegen begeleiding in Hatha, Vinyasa, Ashtanga en Iyengar.",
+      "card3Title": "Veiligheid & anatomie",
+      "card3Desc": "Leer veilig en blessurevrij lesgeven en praktiseren.",
+      "card4Title": "Spirituele verdieping",
+      "card4Desc": "Duik diep in Mantra's, meditatie en filosofie.",
+      "card5Title": "Lesmethodiek",
+      "card5Desc": "Praktische vaardigheden om leerlingen helder te instrueren en inspireren.",
+      "card6Title": "Hechte vriendschappen",
+      "card6Desc": "Levenslange verbindingen met een wereldwijde yogagemeenschap."
+    },
+    "timeline": {
+      "prepTitle": "Voorbereiding begint bij inschrijving",
+      "prepDesc": "Begin je reis met voorbereidende lesstof en persoonlijke begeleiding.",
+      "datesTitle": "Opleiding: 1e t/m 24e van elke maand",
+      "datesDesc": "Intensief 24-daags programma iedere maand op Bali.",
+      "supportTitle": "Levenslange YogaGarhi-gemeenschap",
+      "supportDesc": "Voor altijd verbonden met onze wereldwijde yogafamilie."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Accommodatie",
+      "featuresSub": "Een vredig yogaparadijs in het hart van de heilige Ubud-regio op Bali",
+      "feat1": "10 prachtige watervallen binnen een straal van 10 km",
+      "feat2": "Eigen privébos met een waterval op het terrein",
+      "feat3": "Rustgevende wandelingen door rijstvelden op het terrein",
+      "feat4": "Slechts 15 km van het centrum van Ubud",
+      "glimpses": "Een impressie van je verblijf",
+      "allRooms": "Alle kamers zijn inclusief",
+      "wifi": "Gratis wifi",
+      "hotWater": "Warm water",
+      "acFan": "Airco / Ventilator",
+      "cleaning": "Dagelijkse schoonmaak",
+      "bed1": "bed",
+      "bedsMore": "bedden",
+      "courseOnly": "Alleen cursus",
+      "mostPopular": "Meest gekozen",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Voorbij de mat",
+      "heading": "Heilige excursies",
+      "sub": "Dompel jezelf onder in het spirituele erfgoed van Bali via transformerende ervaringen"
+    },
+    "prakritiResearch": {
+      "heading": "Sachin Ji's onderzoek naar gepersonaliseerde yoga en Prakriti",
+      "quote": "„Yoga is geen standaardformule, want ieder lichaam draagt een unieke energie”",
+      "card1Title": "De kernvraag",
+      "card1Text": "Tijdens de Master Yoga studies van onze hoofddocent rees een onvermijdelijke vraag: Waarom brengt dezelfde yogasessie sommigen tot rust, terwijl anderen zich moe, onrustig of gespannen voelen?",
+      "card2Title": "Diepgaand onderzoek",
+      "card2Text": "Dit leidde tot intensieve studie van klassieke teksten, Ayurveda en jarenlange ervaring met cursisten. Het antwoord was even eenvoudig als krachtig: ieder mens wordt geboren met een unieke Prakriti.",
+      "card3Title": "De energie-blauwdruk",
+      "card3Text": "Prakriti vormt het lichaam, de geest, emoties en het zenuwstelsel. De een heeft aarding nodig, de ander beweging en weer een ander stilte. Eén uniforme stijl kan disbalans veroorzaken.",
+      "card4Title": "Kwaliteit van de beoefening",
+      "card4Text": "Belangrijker dan welke yogastijl je beoefent, is hoe je beoefent: hoe het zenuwstelsel wordt gerespecteerd, hoe de ademhaling vloeit en hoe je Dosha wordt ondersteund in plaats van geforceerd.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Hieruit ontstond Shiv–Shakti Sadhana: een evenwichtige benadering die stabiliteit en stroming, bewustzijn en vitaliteit verenigt. Asana biedt hier stevige aarding en veerkracht.",
+      "card6Title": "Terug naar balans",
+      "card6Text": "Wanneer yoga jouw Prakriti respecteert, wordt het toegankelijk, duurzaam en diep herstellend. Echte yoga verandert je niet; het brengt je terug in balans met jezelf.",
+      "conclusion1": "Onze hoofddocent merkte dat wanneer de les geen rekening houdt met het zenuwstelsel en het natuurlijke energietype, zelfs correcte houdingen tot vermoeidheid of rusteloosheid kunnen leiden.",
+      "conclusion2": "„Wanneer yoga jouw Prakriti eert, wordt het voor iedereen toegankelijk, duurzaam en helend. Hier wordt yoga nooit opgedrongen: het is persoonlijk, bewust en respectvol voor wie je bent.”"
+    },
+    "ethicsExtra": {
+      "code1": "Stipt op tijd aanwezig",
+      "code2": "Geen alcohol of roken",
+      "code3": "Uitsluitend vegetarisch eten",
+      "code4": "Stilte bewaren in de les",
+      "code5": "Gepaste en respectvolle kleding",
+      "code6": "Wederzijds respect voor iedereen",
+      "code7": "Geen telefoons in de lesruimte",
+      "code8": "Volledige aanwezigheid verplicht",
+      "refund1": "Omboeken mogelijk binnen 12 maanden",
+      "refund2": "Plek overdragen toegestaan",
+      "refund3": "Volledige terugbetaling bij annulering door ons",
+      "refund4": "Proefdag-voorwaarde van toepassing",
+      "refund5": "Geen restitutie na Dag 1",
+      "reviewsHeading": "Ervaringen van onze studenten",
+      "viewAllGoogle": "Bekijk alle recensies op Google",
+      "basedOnReviews": "Gebaseerd op",
+      "openGoogleMaps": "Openen in Google Maps",
+      "open24Hours": "24 uur geopend"
+    },
+    "sunday": {
+      "note": "Zondag is een volledige rustdag voor ontspanning, zelfstudie of optionele uitstapjes.",
+      "cta": "Ontdek zondag op Bali"
+    },
+    "tapHover": {
+      "tap": "Tik voor meer",
+      "hover": "Beweeg erover voor meer"
+    },
+    "inclusionsList": [
+      "Schone en comfortabele kamer",
+      "Eigen badkamer met warm water",
+      "Airconditioning / ventilator",
+      "Gratis snelle wifi",
+      "Drie gezonde vegetarische maaltijden per dag",
+      "Kruidenthee en gefilterd drinkwater",
+      "Studiemateriaal (handboeken, notitieboeken, pennen)",
+      "Yogamatten en hulpmiddelen aanwezig",
+      "Buitengeheven excursies en weekendtrips",
+      "Luchthaventransfer bij aankomst (dichtstbijzijnde luchthaven)",
+      "24/7 ondersteuningsteam op de campus",
+      "Officieel certificaat na succesvolle afronding",
+      "Traditionele Balinese massage",
+      "Balinese culturele dansvoorstelling",
+      "Wandeling door de rijstvelden",
+      "Online Pre-TTC voorbereidingscursus inbegrepen",
+      "Arm-balance workshop",
+      "Ayurveda workshop",
+      "Levenslange gratis cursusherhaling inbegrepen",
+      "YogaGarhi boek met 35+ creatieve lessenseries"
+    ],
+    "exclusionsList": [
+      "Vliegtickets en reiskosten",
+      "Visum en reisverzekering",
+      "Transfer terug naar de luchthaven",
+      "Wasservice",
+      "Persoonlijke uitgaven & extra activiteiten"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Multi-Style yogaopleiding",
+        "description": "Leer yoga op een authentieke, beproefde wijze. Onze docenten dragen eeuwenoude wijsheid over."
+      },
+      {
+        "title": "Yoga Alliance gecertificeerd",
+        "description": "Behaal een internationaal erkend diploma en start vol zelfvertrouwen met lesgeven."
+      },
+      {
+        "title": "Vreedzame omgeving op Bali",
+        "description": "Ervaar yoga midden in ongerepte natuur. Rustgevende stranden en groen die je verdiepen."
+      },
+      {
+        "title": "Buitenexcursies",
+        "description": "Verken tempels, stranden en natuurpaden en combineer studie met inspirerende cultuur."
+      },
+      {
+        "title": "Kleine lesgroepen",
+        "description": "Krijg persoonlijke aandacht en precieze aanwijzingen. Jouw groei staat bij ons voorop."
+      },
+      {
+        "title": "Warme gemeenschap",
+        "description": "Maak deel uit van een hechte, positieve yogafamilie en groei in een veilige omgeving."
+      },
+      {
+        "title": "Balinese massage",
+        "description": "Traditionele Indonesische lichaamsbehandeling om spierspanning te verlichten en diep te ontspannen."
+      },
+      {
+        "title": "Balinese dansvoorstelling",
+        "description": "Eeuwenoude, expressieve danskunst die het rijke spirituele erfgoed van Bali toont."
+      },
+      {
+        "title": "Gezonde maaltijden",
+        "description": "Geniet van verse sattvische voeding die jouw dagelijkse yogapraktijk optimaal ondersteunt."
+      },
+      {
+        "title": "Meditatiebeoefening",
+        "description": "Versterk innerlijke rust en opmerkzaamheid dankzij dagelijkse begeleide sessies."
+      },
+      {
+        "title": "Ervaren docenten",
+        "description": "Leer van gecertificeerde meesters met jarenlange praktische leservaring."
+      },
+      {
+        "title": "Yogische levenswijze",
+        "description": "Maak de yogische manier van leven eigen voor een gezonde balans van lichaam en geest."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Workshop Ayurveda & Ayurvedisch koken",
+        "description": "Begrijp jouw persoonlijke constitutie (Prakriti) en leer dosha's in evenwicht brengen met voeding."
+      },
+      {
+        "title": "Meesterschap in arm-balances",
+        "description": "Bouw kracht en techniek op voor houdingen zoals de Kraai, Zijkraai en Vliegende Duif."
+      },
+      {
+        "title": "Handstand-workshop",
+        "description": "Overwin twijfel en vind je balanspunt met methodische oefeningen tegen de muur en met partners."
+      },
+      {
+        "title": "Yin Yoga & diepe stretches",
+        "description": "Bereik dieper bindweefsel met lang aangehouden houdingen om opgebouwde spanning los te laten."
+      },
+      {
+        "title": "Klankbad & sound healing sessie",
+        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Open je hart met devotionele gezangen en kirtan om contact te maken met de spirituele essentie van yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Balinese dansvoorstelling",
+        "description": "Bewonder de traditionele dans van Bali: een samenspel van gratie, mythes en toewijding."
+      },
+      {
+        "title": "Wandeling door de rijstvelden",
+        "description": "Wandel door de beroemde rijstterrassen van Ubud en ervaar de serene rust van het platteland."
+      },
+      {
+        "title": "Bezoek aan heilige waterval",
+        "description": "Maak een tocht naar een heilige waterval voor een reinigingsritueel met zuiver bronwater."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Ontbijt",
+        "time": "07:00 uur",
+        "items": [
+          "Vers tropisch fruit",
+          "Huisgemaakte granola met kokosyoghurt",
+          "Kruidenthee & verse sappen",
+          "Balinese rijstepap"
+        ]
+      },
+      {
+        "meal": "Lunch",
+        "time": "12:30 uur",
+        "items": [
+          "Voedzame Buddha bowls",
+          "Gerechten met tempeh en tofu",
+          "Knapperige verse tuinsalades",
+          "Traditionele Balinese groenten"
+        ]
+      },
+      {
+        "meal": "Diner",
+        "time": "18:30 uur",
+        "items": [
+          "Verwarmende soepen",
+          "Gestoomde graanbowls met dahl",
+          "Ayurvedische kruidige kitchari",
+          "Rustgevende avondkruidenthee"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Video-ervaringen van studenten",
+    "videoStoriesHeading": "Hoor het direct van onze afgestudeerden in Bali",
+    "videoStoriesSub": "Eerlijke verhalen van cursisten die deze residentiële reis bij YogaGarhi hebben gemaakt.",
+    "verifiedGraduate": "Geverifieerde afgestudeerde",
+    "speakTeacherTitle": "Wil je eerst met een hoofddocent praten?",
+    "speakTeacherDesc": "15 minuten 1-op-1 videogesprek om je doelen, kamer en data te bespreken.",
+    "helpfulGuidesBadge": "Lees voor vertrek",
+    "helpfulGuidesTitle": "Handige gidsen & voorbereidingstips",
+    "helpfulGuidesDesc": "Ontdek onze uitgebreide gidsen om lichaam, geest en reis voor te bereiden op je YTT in Bali.",
+    "readArticle": "Lees artikel",
+    "mindfulEating": "Een dag van bewuste voeding",
+    "clickToCollapse": "Klik om in te klappen",
+    "clickToExpand": "Klik om uit te vouwen",
+    "caterDietsTitle": "We houden rekening met alle diëten",
+    "caterDietsDesc": "Laat ons je dieetwensen weten en wij zorgen voor de rest",
+    "studentStories": {
+      "badge": "Ervaringen van Studenten",
+      "heading": "Getransformeerde Harten bij YogaGarhi",
+      "sub": "\"Lees de persoonlijke ervaringen van studenten die deze bijzondere transformatiereis hebben voltooid.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canada",
+          "quote": "YogaGarhi is door en door authentiek en geworteld in de ware essentie van yoga. Vanaf het allereerste moment voelde ik me oprecht gezien en ondersteund als mens. De docenten geven echt om je ontwikkeling en helpen je jouw eigen stem te vinden.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turkije",
+          "quote": "Sachin Ji is zonder twijfel een van de meest deskundige yogadocenten bij wie ik ooit heb geleerd. Hoewel ik als absolute beginner startte, was hij geduldig en bemoedigend, waardoor ik de uitlijning helder begreep.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusland",
+          "quote": "Mijn 200-urige opleiding op Bali was werkelijk magisch. 🌺 De opgedane kennis was diepgaand en puur. De docenten geven les vanuit het hart met warmte en wijsheid. Het voelt als een hechte familie.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canada",
+          "quote": "Sachin Ji is een fantastische leraar en een warm mens. Deze opleiding op Bali was de start van een prachtige yogareis waardoor ik nu met vol vertrouwen lesgeef in verschillende landen over de wereld.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Duitsland",
+          "quote": "Ik waardeer de kalme, vriendelijke en gastvrije energie van Sachin Ji enorm. Hij heeft diepe kennis en neemt de tijd voor elke student. Zijn lessen helpen je meer te bereiken dan je voor mogelijk hield.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australië",
+          "quote": "Een onvergetelijke, transformatieve ervaring bij YogaGarhi Bali. De kleine groepsgrootte maakte al het verschil: elke correctie was persoonlijk en doordacht. Ik verliet de ashram met het volste vertrouwen om les te geven.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
+  },
+  "course300": {
+    "metaTitle": "300-Uurs Yoga Docentenopleiding op Bali | Gevorderde 300-Uurs YTTC",
+    "metaDesc": "Verbeter je docentschap met de 300-uurs Yoga TTC op Bali. Multi-stijl asana, pranayama, anatomie en filosofie. Verzeker je plek nu!",
+    "heroTitle": "300-Uurs Yoga Docentenopleiding op Bali",
+    "heroSub": "Gevorderde residentiële onderdompeling van 28 dagen in Gianyar, Bali. Verdiep je in geavanceerde asana's en aanpassingen naar RYT 500.",
+    "quickInfo": {
+      "course": "Opleiding",
+      "courseVal": "300-Uurs Gevorderde Yoga TTC",
+      "duration": "Duur",
+      "durationVal": "28 Days",
+      "style": "Stijl",
+      "styleVal": "Multi-Style Yoga",
+      "level": "Niveau",
+      "levelVal": "Gevorderd (RYT 200 vereist)",
+      "certification": "Certificering",
+      "certificationVal": "Yoga Alliance RYT 500 Certificering",
+      "startingFrom": "$2,499 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Bespaar",
+      "earlyBirdDiscount": "Bespaar $300 met vroegboekkorting"
+    },
+    "highlights": {
+      "smallGroups": "Kleine groepen (max 8–10)",
+      "smallGroupsSub": "Persoonlijke aandacht",
+      "preYttc": "Begeleiding vooraf",
+      "preYttcSub": "Voorbereiding en advies",
+      "mentorship": "Mentorschap na afstuderen",
+      "mentorshipSub": "1 jaar doorlopende ondersteuning",
+      "goodieBag": "Gratis welkomstpakket",
+      "goodieBagSub": "Yoga essentials"
+    },
+    "storyTitle": "Transformeer je beoefening in levende wijsheid",
+    "storyP1": "Onze 200 uur yogadocentenopleiding in Bali is een residentiële verdieping voor wie verlangt naar authentieke diepgang in plaats van oppervlakkige fitnesslessen. Gelegen in het rustige dorpje Gianyar, op slechts 15 minuten van Ubud, biedt YogaGarhi een vredig toevluchtsoord ver weg van de drukte.",
+    "storyP2": "Gedurende 24 dagen bestudeer je klassiek Hatha, Vinyasa Flow, de Ashtanga Primary Series en Iyengar-uitlijning naast toegepaste anatomie, filosofie, pranayama en meditatie. Met strikt 8–10 studenten per groep bieden onze ervaren docenten uit de Himalaya persoonlijke aandacht aan iedereen.",
+    "watchVideoStories": "Bekijk video's en reviews van studenten",
+    "videoBannerTitle": "Plan een gesprek. Zie de school. Zie je kamer. Zie de yogazaal.",
+    "whyYogaGarhiBox": {
+      "badge": "Waarom kiezen voor YogaGarhi",
+      "heading": "Echte Himalaya-traditie in een intiem ashram op Bali",
+      "sub": "Wij richten ons op oprechte beoefenaars in plaats van massale fabriekslessen. Dit maakt onze 200-uurs opleiding uniek:",
+      "p1Title": "Maximaal 8–10 studenten per groep",
+      "p1Highlight": "Persoonlijke focus",
+      "p1Desc": "Kleine groepen garanderen gerichte begeleiding, individuele correcties en continue aandacht van docenten.",
+      "p2Title": "Gratis online Pre-TTC training",
+      "p2Highlight": "Met vertrouwen starten",
+      "p2Desc": "Kosteloze voorbereidingscursus voorafgaand aan je komst naar Bali om kracht en basiskennis op te bouwen.",
+      "p3Title": "1 jaar mentorschap na afstuderen",
+      "p3Highlight": "Levenslange verbinding",
+      "p3Desc": "Doorlopende adviezen, feedback op je lessen en loopbaancoaching lang na afronding van je verblijf.",
+      "p4Title": "Levenslang gratis de opleiding herhalen",
+      "p4Highlight": "Kosteloos terugkeren",
+      "p4Desc": "Sluit je in de toekomst kosteloos aan bij YogaGarhi-opleidingen om je kennis op te frissen of te assisteren.",
+      "pkgBadge": "Verblijfspakketten (24 dagen / 23 nachten) & optie alleen lesgeld",
+      "saveEarlyBird": "Bespaar $300 met vroegboekkorting",
+      "tuitionFrom": "Alleen lesgeld vanaf $999 USD | Met verblijf vanaf $1,750 USD",
+      "breakdown": "Alleen lesgeld: $999 • Drie personen: $1,750 • Twee personen: $1,899 • Privékamer: $2,499",
+      "checkAvailability": "Beschikbaarheid controleren",
+      "bookFreeCall": "Gratis video-adviesgesprek plannen"
+    },
+    "hoursStructure": {
+      "badge": "Lesuren",
+      "heading": "Opbouw van de 200 studie-uren",
+      "sub": "Een evenwichtige verdeling tussen directe contacturen, praktijklessen en zelfstudie conform de Yoga Alliance richtlijnen.",
+      "contactHours": "Contacturen",
+      "contactHoursDesc": "Direct onderwijs van hoofddocenten in asana, uitlijning, anatomie en filosofie.",
+      "selfStudy": "Zelfstudie & lespraktijk",
+      "selfStudyDesc": "Gerichte literatuurstudie, journalen, oefenen met medestudenten en lessen ontwerpen.",
+      "totalCert": "Totale certificering",
+      "totalCertDesc": "Voldoet ruim aan de standaarden voor Yoga Alliance RYT 200.",
+      "hoursUnit": "Uur"
+    },
+    "syllabus": {
+      "heading": "Curriculum en studieplan",
+      "sub": "Een evenwichtig en verdiepend studieplan dat klassieke bronteksten koppelt aan moderne bewegingsleer.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditatie",
+      "tab4": "Anatomie & Fysiologie",
+      "tab5": "Filosofie & Ethiek",
+      "tapMore": "Tik voor meer details",
+      "hoverMore": "Beweeg voor meer details",
+      "takeaway": "Wat je leert",
+      "carryHome": "Voor thuis",
+      "careerImpact": "Waarde voor je lessen:",
+      "cards": [
+        {
+          "title": "Ashtanga Yoga Houdingen",
+          "content": "Volledige reeks van de Ashtanga Primary Series. Wekelijkse opbouw via Zonnegroet A & B, staande en zittende houdingen en authentieke Mysore-beoefening."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Pawanmuktasana-serie, Surya Namaskar-variaties, staande en zittende asana's, achteroverbuigingen, vooroverbuigingen, omgekeerde houdingen en lesopbouw."
+        },
+        {
+          "title": "Yoga Filosofie",
+          "content": "Inleiding tot de Yoga Sutra's van Patanjali, de acht ledematen van yoga, Nadis, Chakra's, Pancha-Vayus, Panchakosha's, Triguna en overleveringen van yogameesters."
+        },
+        {
+          "title": "Pranayama & Ademhaling",
+          "content": "Uitgebreide ademhalingstechnieken: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali en Sheetkari."
+        },
+        {
+          "title": "Anatomie & Fysiologie",
+          "content": "Bewegingsvlakken, gewrichtsbescherming, anatomie van enkel, knie, wervelkolom en schouders, ademhalingsmechanica, spierfysiologie en zenuwstelsel."
+        },
+        {
+          "title": "Lesmethodiek",
+          "content": "Lesopbouw, verbale instructie en handmatige correcties, omgaan met niveauverschillen, stemgebruik, mentale voorbereiding en gestructureerde lesplanning."
+        },
+        {
+          "title": "Meditatie & Mantra",
+          "content": "Diverse meditatievormen, chanten van mantra's, Trataka, Osho Dynamische meditatie, Nada Brahma, Antar Mouna en het cultiveren van innerlijke stilte."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Precisiegerichte benadering met behulp van blokken, riemen en dekens om een anatomisch zuivere uitlijning te waarborgen en blessures te voorkomen."
+        },
+        {
+          "title": "Uitlijningsprincipes",
+          "content": "Basis van een veilige beoefening: gewrichtsuitlijning, spieractivatiepatronen en biomechanica ter bescherming en versterking van het fysieke lichaam."
+        },
+        {
+          "title": "Bandhas (Energiesloten)",
+          "content": "Beheersing van Mula, Uddiyana en Jalandhara Bandha om de pranastroom te geleiden, de kern te versterken en meditatieve staten te verdiepen."
+        },
+        {
+          "title": "Mudras (Yogische Gebaren)",
+          "content": "Heilige hand- en lichaamsgebaren die levensenergie kanaliseren, de focus aanscherpen en verbinden met hogere staten van bewustzijn."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Dagritme in de ashram",
+      "sub": "Een harmonieuze afwisseling van intensieve beoefening, filosofie, gezonde voeding en rust.",
+      "time1": "06:00",
+      "act1": "Opstaan & ochtendzuivering",
+      "time2": "06:30",
+      "act2": "Pranayama, chanten & meditatie",
+      "time3": "07:30",
+      "act3": "Ochtendasana's (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Gezond sattvisch ontbijt",
+      "time5": "10:00",
+      "act5": "Yogafilosofie & tekststudie",
+      "time6": "12:00",
+      "act6": "Voedzame lunch & pauze",
+      "time7": "15:00",
+      "act7": "Toegepaste anatomie & biomechanica",
+      "time8": "16:30",
+      "act8": "Didactiek & uitlijningskliniek",
+      "time9": "18:00",
+      "act9": "Avondyoga (Ashtanga / Yin / Herstellend)",
+      "time10": "19:30",
+      "act10": "Sattvisch diner",
+      "time11": "21:00",
+      "act11": "Zelfstudie, stilte & rust",
+      "beyondTheMat": "Buiten de mat",
+      "badge": "Dagrooster",
+      "wakeUp": "Opstaan & ochtendzuivering",
+      "morningPranayama": "Pranayama & meditatie",
+      "morningAsana": "Ochtendasana's (Hatha / Vinyasa)",
+      "breakfast": "Gezond Ayurvedisch ontbijt",
+      "philosophyClass": "Yogafilosofie & tekststudie",
+      "lunch": "Voedzame lunch & rusttijd",
+      "anatomyClass": "Toegepaste anatomie & fysiologie",
+      "methodologyClass": "Didactiek & uitlijningskliniek",
+      "eveningAsana": "Avondsessie (Ashtanga / Yin / Herstellend)",
+      "dinner": "Sattvisch diner",
+      "selfStudy": "Zelfstudie, stilte & nachtrust"
+    },
+    "inclusions": {
+      "heading": "Wat is inbegrepen in je opleiding",
+      "sub": "Alles geregeld voor een zorgeloos en diepgaand verblijf.",
+      "incAccom": "23 nachten verblijf in de ashram",
+      "incMeals": "Dagelijks 3 vers bereide sattvische maaltijden (vegetarisch/veganistisch)",
+      "incCert": "Yoga Alliance RYT 200 certificaat na voltooiing",
+      "incManuals": "Officiële lesboeken, notitieblokken en studiemateriaal",
+      "incKit": "Yogamat en alle benodigde props op locatie aanwezig",
+      "incExcursions": "Heilige culturele excursies (watertempel, rijstvelden, Balinese dans)",
+      "incCeremonies": "Traditionele openings- en afsluitende vuurceremonies (Agni Hotra)",
+      "incPickup": "Ophaalservice vanaf vliegveld Denpasar (DPS) op de officiële aankomstdag",
+      "incPre": "Gratis online Pre-TTC voorbereidingscursus",
+      "incRepeat": "Levenslang het recht om gratis aan te schuiven bij latere edities",
+      "notIncHeading": "Niet inbegrepen",
+      "notIncFlights": "Internationale en binnenlandse vliegtickets",
+      "notIncVisa": "Kosten voor het Indonesische visum",
+      "notIncInsurance": "Persoonlijke reis- en ziektekostenverzekering"
+    },
+    "pricing": {
+      "heading": "Kamers & Prijzen",
+      "sub": "Volledig transparante all-in tarieven zonder verborgen kosten.",
+      "tuitionOnly": "Alleen lesgeld",
+      "tuitionOnlyDesc": "Lessen, alle maaltijden, lesmateriaal en certificaat. Verblijf buiten de ashram.",
+      "triple": "Gedeelde driepersoonskamer",
+      "tripleDesc": "Ruime kamer met airco gedeeld met twee medestudenten, eigen badkamer en balkon.",
+      "double": "Gedeelde tweepersoonskamer",
+      "doubleDesc": "Comfortabele kamer voor twee personen met eigen badkamer, airco en uitzicht op tuin of zwembad.",
+      "private": "Deluxe privékamer",
+      "privateDesc": "Eigen toevluchtsoord met groot tweepersoonsbed, eigen badkamer, airco en privébalkon.",
+      "earlyBird": "Vroegboekkorting",
+      "save300": "Bespaar $300 USD",
+      "earlyBirdPrice": "Vroegboekprijs",
+      "tuitionFees": "Tarieven & Kamers (300 Uur)",
+      "tripleSharing": "Driepersoonskamer ($2.499)",
+      "doubleSharing": "Tweepersoonskamer ($2.699)",
+      "privateRoom": "Privékamer ($3.499)",
+      "choosePackage": "Kies je pakket",
+      "reserveSpot": "Reserveer je plek",
+      "saveUSD": "Bespaar $300 USD",
+      "residentialDuration": "28 dagen residentiële yoga-opleiding in Gianyar, Bali"
+    },
+    "ethics": {
+      "codeOfConduct": "Gedragscode",
+      "refundCancellation": "Restitutie & Annulering",
+      "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+    },
+    "faqsHeading": "Veelgestelde vragen",
+    "faqs": [
+      {
+        "question": "Is deze 200 uur yogadocentenopleiding geschikt voor beginners?",
+        "answer": "Ja. Het lesprogramma bouwt zorgvuldig op van de basisprincipes tot een gemiddeld niveau. Bovendien krijgt elke student toegang tot onze gratis online voorbereidingscursus om vooraf souplesse, kracht en uitlijning op te bouwen."
+      },
+      {
+        "question": "Welke yogastijlen komen aan bod tijdens deze 200 uur TTC?",
+        "answer": "Je leert multi-style yoga vanuit de authentieke Himalaya-traditie: klassieke Hatha Yoga, dynamische Vinyasa Flow, de Ashtanga Primary Series (volgens K. Pattabhi Jois) en doordachte uitlijning geïnspireerd door Iyengar Yoga."
+      },
+      {
+        "question": "Hoe ziet een gemiddelde opleidingsdag eruit?",
+        "answer": "Een reguliere opleidingsdag bij YogaGarhi kent een vast ritme: 06:00 Opstaan; 06:30 Pranayama & meditatie; 07:30 Hatha & Vinyasa; 09:00 Ontbijt; 10:00 Yogafilosofie; 12:00 Lunch & rust; 15:00 Toegepaste anatomie; 16:30 Didactiek & uitlijning; 18:00 Ashtanga & Iyengar met yogatherapie; 19:30 Diner; 21:00 Zelfstudie & nachtrust."
+      },
+      {
+        "question": "Wat is de groepsgrootte bij YogaGarhi Bali?",
+        "answer": "We hanteren een strikte limiet van maximaal 8–10 studenten per groep. Dit waarborgt individuele correcties, gerichte feedback en nauw contact met onze ervaren hoofddocenten."
+      },
+      {
+        "question": "Welk diploma ontvang ik en is dit wereldwijd erkend?",
+        "answer": "Na succesvolle afronding van alle contacturen en praktijktoetsen ontvang je het internationaal erkende certificaat van Registered Yoga Teacher (RYT 200) van Yoga Alliance, waarmee je overal ter wereld mag lesgeven."
+      },
+      {
+        "question": "Welke kamers en prijzen zijn er beschikbaar?",
+        "answer": "We bieden vier duidelijke opties: Alleen lesgeld ($999 USD vroegboekprijs i.p.v. $1,299; zonder kamer en maaltijden), Drie personen ($1,750 USD i.p.v. $2,050), Twee personen ($1,899 USD i.p.v. $2,199) en Privékamer ($2,499 USD i.p.v. $2,799). Alle residentiële pakketten omvatten 23 overnachtingen en 3 dagelijkse maaltijden."
+      }
+    ],
+    "hero": {
+      "badge": "Yoga Alliance gecertificeerd RYT 200",
+      "h1": "300-Uurs Yoga Docentenopleiding op Bali",
+      "sub": "Gevorderde residentiële 28-daagse intensieve cursus in Gianyar, Bali. Beheers complexe asana's, hands-on assists en yogafilosofie naar RYT 500.",
+      "quickDuration": "28 Dagen",
+      "quickLevel": "Gevorderd (RYT 200 vereist)",
+      "quickCert": "Yoga Alliance RYT 500 Certificering",
+      "quickLang": "Engels",
+      "quickBatch": "8–10 studenten",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Plek reserveren",
+      "btnBrochure": "Lesprogramma downloaden",
+      "btnCounselor": "Praat met een adviseur"
+    },
+    "overview": {
+      "heading": "Verdiep je yogapad bij YogaGarhi Bali",
+      "story": "Onze 200 uur yogadocentenopleiding op Bali is een grondig basisprogramma voor wie zelfverzekerd yogales wil geven of yoga diep wil integreren in het eigen leven. YogaGarhi bevindt zich in Gianyar, op circa 15 km van Ubud, te midden van rustgevende natuur. Tijdens de opleiding beoefen je dagelijks asana's, verdiep je je in uitlijning en bestudeer je pranayama, meditatie, filosofie en didactiek.",
+      "p1": "Onze 300-uurs opleiding op Bali is ontworpen voor toegewijde docenten en ervaren beoefenaars die al een 200-uurs basis hebben afgerond.",
+      "p2": "Bestudeer geavanceerde asana-variaties, biomechanica, uitlijningscorrecties, diepe pranayama en toegepaste anatomie richting RYT 500."
+    },
+    "curriculum": {
+      "badge": "Lesmodules",
+      "heading": "Overzicht van het lesprogramma",
+      "sub": "Klik op een module om specifieke onderwerpen, praktische technieken en theorie te bekijken.",
+      "modules": {
+        "asana": "Asanabeoefening & Uitlijning",
+        "pranayama": "Pranayama & Subtiele energie",
+        "philosophy": "Yogafilosofie & Levensstijl",
+        "anatomy": "Anatomie & Fysiologie",
+        "methodology": "Didactiek & Lespraktijk",
+        "meditation": "Meditatie & Mindfulness",
+        "iyengar": "Iyengar Yoga basis & Hulpmiddelen",
+        "vinyasa": "Vinyasa Flow lesopbouw",
+        "hatha": "Klassieke traditionele Hatha Yoga"
+      },
+      "detailedModules": [
+        {
+          "title": "Ashtanga Yoga Houdingen",
+          "items": [
+            "Volledige Ashtanga primary series volgens K. Pattabhi Jois",
+            "Week 1: Introductie & Zonnegroeten A & B",
+            "Week 2: Staande reeks & yogaprops",
+            "Week 3: Zittende reeks & afrondende houdingen",
+            "Week 4: Mysore-stijl & lesgeefpraktijk"
+          ]
+        },
+        {
+          "title": "Yoga Filosofie",
+          "items": [
+            "Volledige Yoga Sutra's van Patanjali",
+            "Acht ledematen van Ashtanga Yoga",
+            "Pancha-Vayus & Panchakosha's",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Introductie tot de Veda's",
+            "Inspirerende verhalen van grote yogameesters"
+          ]
+        },
+        {
+          "title": "Pranayama & Ademhalingsoefeningen",
+          "items": [
+            "Volledige pranayama-technieken",
+            "Alle zes Shatkarma reinigingsoefeningen",
+            "Gevorderde ademhaling: Sheetali, Sheetkari",
+            "Kumbhaka (ademinouding)",
+            "Integratie met asana-beoefening"
+          ]
+        },
+        {
+          "title": "Heilige Klanken & Mantra Recitatie",
+          "items": [
+            "Volledige collectie traditionele mantra's",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Shloka voor Patanjali)",
+            "Dagelijkse mantra-chanting praktijk"
+          ]
+        },
+        {
+          "title": "Anatomie en Fysiologie",
+          "items": [
+            "Complete studie van lichaamssystemen",
+            "Fysiologie van spieren & gewrichten",
+            "Ademhalings- & zenuwstelsel",
+            "Voeding & spijsvertering",
+            "Praktijkgerichte workshops over asana's"
+          ]
+        },
+        {
+          "title": "Lesmethodiek",
+          "items": [
+            "Volledige lesopbouw & sequencing",
+            "Demonstratie- & observatieprincipes",
+            "Mentale & emotionele voorbereiding",
+            "Stapsgewijze lesplanning",
+            "Praktijklessen & feedback"
+          ]
+        },
+        {
+          "title": "Meditatie & Bandha's",
+          "items": [
+            "Osho Dynamische meditatie",
+            "Nada Brahma meditatie",
+            "Antar Mouna & Ajapa Japa",
+            "Beheersing van alle vier de Bandha's",
+            "Harmonische integratie met asana & pranayama"
+          ]
+        },
+        {
+          "title": "Uitlijning & Hands-on Correcties",
+          "items": [
+            "Functionele biomechanica voor klassieke yogahoudingen",
+            "Verbale instructies en veilige hands-on aanpassingen",
+            "Begrip van individuele anatomische variaties",
+            "Modificatiestrategieën met blokken en riemen"
+          ]
+        },
+        {
+          "title": "Klassieke Hatha Yoga Praktijk",
+          "items": [
+            "Diepgaande studie van Hatha-principes en statische houdingen",
+            "Klassieke opbouw: warming-up, piekhouding en tegenhoudingen",
+            "Balans tussen zonne- (Ha) en maan- (Tha) energieën",
+            "Integratie van Bandha's en Mudra's in asana's"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Nauwkeurige Uitlijning",
+          "items": [
+            "Methodische uitlijning met blokken, riemen en dekens",
+            "Exacte positionering van bekken, wervelkolom en schouders",
+            "Veilige voorbereiding op omgekeerde houdingen",
+            "Herstellende Iyengar-series met hulpmiddelen"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Dynamische Sequencing",
+          "items": [
+            "Intelligente lesstructuur: opbouw, piek en ontspanning",
+            "Vloeiende overgangen afgestemd op de ademhaling",
+            "Thematische vinyasa-lessen voor diverse niveaus",
+            "Ritme, tempo en energetische begeleiding"
+          ]
+        },
+        {
+          "title": "Aanvullende Workshops",
+          "items": [
+            "Sound Healing klankreizen",
+            "Strandyoga op Bali",
+            "Yin Yoga & Acro Yoga",
+            "Basisprincipes van Ayurveda",
+            "Traditionele Agni Hotra vuurceremonie"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Accommodatie & Tarieven",
+      "sub": "Duidelijke all-inclusive tarieven zonder onverwachte kosten.",
+      "tuitionOnly": "Alleen lesgeld pakket",
+      "tuitionOnlyDesc": "Lessen, maaltijden, studiemateriaal en certificering. Zonder verblijf.",
+      "triple": "Gedeelde driepersoonskamer",
+      "tripleDesc": "Gekoelde kamer voor drie personen met eigen badkamer en balkon.",
+      "double": "Gedeelde tweepersoonskamer",
+      "doubleDesc": "Fijne kamer voor twee personen met badkamer, airconditioning en tuinzicht.",
+      "private": "Luxe privékamer",
+      "privateDesc": "Privékamer met groot bed, badkamer ensuite, airco en eigen balkon.",
+      "earlyBird": "Vroegboekkorting",
+      "save300": "Bespaar $300 USD"
+    },
+    "tourCall": {
+      "heading": "Wil je de school bekijken voor je boekt?",
+      "sub": "Neem deel aan een live videogesprek voor een persoonlijke rondleiding over de campus, lesruimtes, yoga shala en kamers.",
+      "cta": "Gesprek boeken. Zie de school. Zie je kamer. Zie de yogazaal.",
+      "bookCallLive": "Bekijk de school, je kamer en de yoga shala live. Vul hieronder je gegevens in om een afspraak te plannen."
+    },
+    "takeaway": {
+      "badge": "Wat je meeneemt",
+      "heading": "Wat je meeneemt",
+      "headingItalic": "naar huis",
+      "sub": "Naast het officiële certificaat vertrek je met een getransformeerd perspectief, een diepere verbinding met jezelf en authentieke vaardigheden om anderen te begeleiden.",
+      "careerImpactTitle": "Carrièreperspectief:",
+      "careerImpactDesc": "Na afronding van de 200-urige yogadocentenopleiding kun je wereldwijd lesgeven in studio's, online live-lessen verzorgen, retreats leiden of je eigen zelfstandige praktijk starten.",
+      "card1Title": "Wereldwijde certificering",
+      "card1Desc": "Yoga Alliance RYT-200 om overal jouw carrière te starten.",
+      "card2Title": "Beheers de beoefening",
+      "card2Desc": "Gedegen begeleiding in Hatha, Vinyasa, Ashtanga en Iyengar.",
+      "card3Title": "Veiligheid & anatomie",
+      "card3Desc": "Leer veilig en blessurevrij lesgeven en praktiseren.",
+      "card4Title": "Spirituele verdieping",
+      "card4Desc": "Duik diep in Mantra's, meditatie en filosofie.",
+      "card5Title": "Lesmethodiek",
+      "card5Desc": "Praktische vaardigheden om leerlingen helder te instrueren en inspireren.",
+      "card6Title": "Hechte vriendschappen",
+      "card6Desc": "Levenslange verbindingen met een wereldwijde yogagemeenschap."
+    },
+    "timeline": {
+      "prepTitle": "Voorbereiding begint bij inschrijving",
+      "prepDesc": "Begin je reis met voorbereidende lesstof en persoonlijke begeleiding.",
+      "datesTitle": "Opleiding: 1e t/m 24e van elke maand",
+      "datesDesc": "Intensief 24-daags programma iedere maand op Bali.",
+      "supportTitle": "Levenslange YogaGarhi-gemeenschap",
+      "supportDesc": "Voor altijd verbonden met onze wereldwijde yogafamilie."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Accommodatie",
+      "featuresSub": "Een vredig yogaparadijs in het hart van de heilige Ubud-regio op Bali",
+      "feat1": "10 prachtige watervallen binnen een straal van 10 km",
+      "feat2": "Eigen privébos met een waterval op het terrein",
+      "feat3": "Rustgevende wandelingen door rijstvelden op het terrein",
+      "feat4": "Slechts 15 km van het centrum van Ubud",
+      "glimpses": "Een impressie van je verblijf",
+      "allRooms": "Alle kamers zijn inclusief",
+      "wifi": "Gratis wifi",
+      "hotWater": "Warm water",
+      "acFan": "Airco / Ventilator",
+      "cleaning": "Dagelijkse schoonmaak",
+      "bed1": "bed",
+      "bedsMore": "bedden",
+      "courseOnly": "Alleen cursus",
+      "mostPopular": "Meest gekozen",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Voorbij de mat",
+      "heading": "Heilige excursies",
+      "sub": "Dompel jezelf onder in het spirituele erfgoed van Bali via transformerende ervaringen"
+    },
+    "prakritiResearch": {
+      "heading": "Sachin Ji's onderzoek naar gepersonaliseerde yoga en Prakriti",
+      "quote": "„Yoga is geen standaardformule, want ieder lichaam draagt een unieke energie”",
+      "card1Title": "De kernvraag",
+      "card1Text": "Tijdens de Master Yoga studies van onze hoofddocent rees een onvermijdelijke vraag: Waarom brengt dezelfde yogasessie sommigen tot rust, terwijl anderen zich moe, onrustig of gespannen voelen?",
+      "card2Title": "Diepgaand onderzoek",
+      "card2Text": "Dit leidde tot intensieve studie van klassieke teksten, Ayurveda en jarenlange ervaring met cursisten. Het antwoord was even eenvoudig als krachtig: ieder mens wordt geboren met een unieke Prakriti.",
+      "card3Title": "De energie-blauwdruk",
+      "card3Text": "Prakriti vormt het lichaam, de geest, emoties en het zenuwstelsel. De een heeft aarding nodig, de ander beweging en weer een ander stilte. Eén uniforme stijl kan disbalans veroorzaken.",
+      "card4Title": "Kwaliteit van de beoefening",
+      "card4Text": "Belangrijker dan welke yogastijl je beoefent, is hoe je beoefent: hoe het zenuwstelsel wordt gerespecteerd, hoe de ademhaling vloeit en hoe je Dosha wordt ondersteund in plaats van geforceerd.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Hieruit ontstond Shiv–Shakti Sadhana: een evenwichtige benadering die stabiliteit en stroming, bewustzijn en vitaliteit verenigt. Asana biedt hier stevige aarding en veerkracht.",
+      "card6Title": "Terug naar balans",
+      "card6Text": "Wanneer yoga jouw Prakriti respecteert, wordt het toegankelijk, duurzaam en diep herstellend. Echte yoga verandert je niet; het brengt je terug in balans met jezelf.",
+      "conclusion1": "Onze hoofddocent merkte dat wanneer de les geen rekening houdt met het zenuwstelsel en het natuurlijke energietype, zelfs correcte houdingen tot vermoeidheid of rusteloosheid kunnen leiden.",
+      "conclusion2": "„Wanneer yoga jouw Prakriti eert, wordt het voor iedereen toegankelijk, duurzaam en helend. Hier wordt yoga nooit opgedrongen: het is persoonlijk, bewust en respectvol voor wie je bent.”"
+    },
+    "ethicsExtra": {
+      "code1": "Stipt op tijd aanwezig",
+      "code2": "Geen alcohol of roken",
+      "code3": "Uitsluitend vegetarisch eten",
+      "code4": "Stilte bewaren in de les",
+      "code5": "Gepaste en respectvolle kleding",
+      "code6": "Wederzijds respect voor iedereen",
+      "code7": "Geen telefoons in de lesruimte",
+      "code8": "Volledige aanwezigheid verplicht",
+      "refund1": "Omboeken mogelijk binnen 12 maanden",
+      "refund2": "Plek overdragen toegestaan",
+      "refund3": "Volledige terugbetaling bij annulering door ons",
+      "refund4": "Proefdag-voorwaarde van toepassing",
+      "refund5": "Geen restitutie na Dag 1",
+      "reviewsHeading": "Ervaringen van onze studenten",
+      "viewAllGoogle": "Bekijk alle recensies op Google",
+      "basedOnReviews": "Gebaseerd op",
+      "openGoogleMaps": "Openen in Google Maps",
+      "open24Hours": "24 uur geopend"
+    },
+    "sunday": {
+      "note": "Zondag is een volledige rustdag voor ontspanning, zelfstudie of optionele uitstapjes.",
+      "cta": "Ontdek zondag op Bali"
+    },
+    "tapHover": {
+      "tap": "Tik voor meer",
+      "hover": "Beweeg erover voor meer"
+    },
+    "inclusionsList": [
+      "Schone en comfortabele kamer",
+      "Eigen badkamer met warm water",
+      "Airconditioning / ventilator",
+      "Gratis snelle wifi",
+      "Drie gezonde vegetarische maaltijden per dag",
+      "Kruidenthee en gefilterd drinkwater",
+      "Studiemateriaal (handboeken, notitieboeken, pennen)",
+      "Yogamatten en hulpmiddelen aanwezig",
+      "Buitengeheven excursies en weekendtrips",
+      "Luchthaventransfer bij aankomst (dichtstbijzijnde luchthaven)",
+      "24/7 ondersteuningsteam op de campus",
+      "Officieel certificaat na succesvolle afronding",
+      "Traditionele Balinese massage",
+      "Balinese culturele dansvoorstelling",
+      "Wandeling door de rijstvelden",
+      "Online Pre-TTC voorbereidingscursus inbegrepen",
+      "Arm-balance workshop",
+      "Ayurveda workshop",
+      "Levenslange gratis cursusherhaling inbegrepen",
+      "YogaGarhi boek met 35+ creatieve lessenseries"
+    ],
+    "exclusionsList": [
+      "Vliegtickets en reiskosten",
+      "Visum en reisverzekering",
+      "Transfer terug naar de luchthaven",
+      "Wasservice",
+      "Persoonlijke uitgaven & extra activiteiten"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Multi-Style yogaopleiding",
+        "description": "Leer yoga op een authentieke, beproefde wijze. Onze docenten dragen eeuwenoude wijsheid over."
+      },
+      {
+        "title": "Yoga Alliance gecertificeerd",
+        "description": "Behaal een internationaal erkend diploma en start vol zelfvertrouwen met lesgeven."
+      },
+      {
+        "title": "Vreedzame omgeving op Bali",
+        "description": "Ervaar yoga midden in ongerepte natuur. Rustgevende stranden en groen die je verdiepen."
+      },
+      {
+        "title": "Buitenexcursies",
+        "description": "Verken tempels, stranden en natuurpaden en combineer studie met inspirerende cultuur."
+      },
+      {
+        "title": "Kleine lesgroepen",
+        "description": "Krijg persoonlijke aandacht en precieze aanwijzingen. Jouw groei staat bij ons voorop."
+      },
+      {
+        "title": "Warme gemeenschap",
+        "description": "Maak deel uit van een hechte, positieve yogafamilie en groei in een veilige omgeving."
+      },
+      {
+        "title": "Balinese massage",
+        "description": "Traditionele Indonesische lichaamsbehandeling om spierspanning te verlichten en diep te ontspannen."
+      },
+      {
+        "title": "Balinese dansvoorstelling",
+        "description": "Eeuwenoude, expressieve danskunst die het rijke spirituele erfgoed van Bali toont."
+      },
+      {
+        "title": "Gezonde maaltijden",
+        "description": "Geniet van verse sattvische voeding die jouw dagelijkse yogapraktijk optimaal ondersteunt."
+      },
+      {
+        "title": "Meditatiebeoefening",
+        "description": "Versterk innerlijke rust en opmerkzaamheid dankzij dagelijkse begeleide sessies."
+      },
+      {
+        "title": "Ervaren docenten",
+        "description": "Leer van gecertificeerde meesters met jarenlange praktische leservaring."
+      },
+      {
+        "title": "Yogische levenswijze",
+        "description": "Maak de yogische manier van leven eigen voor een gezonde balans van lichaam en geest."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Workshop Ayurveda & Ayurvedisch koken",
+        "description": "Begrijp jouw persoonlijke constitutie (Prakriti) en leer dosha's in evenwicht brengen met voeding."
+      },
+      {
+        "title": "Meesterschap in arm-balances",
+        "description": "Bouw kracht en techniek op voor houdingen zoals de Kraai, Zijkraai en Vliegende Duif."
+      },
+      {
+        "title": "Handstand-workshop",
+        "description": "Overwin twijfel en vind je balanspunt met methodische oefeningen tegen de muur en met partners."
+      },
+      {
+        "title": "Yin Yoga & diepe stretches",
+        "description": "Bereik dieper bindweefsel met lang aangehouden houdingen om opgebouwde spanning los te laten."
+      },
+      {
+        "title": "Klankbad & sound healing sessie",
+        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Open je hart met devotionele gezangen en kirtan om contact te maken met de spirituele essentie van yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Balinese dansvoorstelling",
+        "description": "Bewonder de traditionele dans van Bali: een samenspel van gratie, mythes en toewijding."
+      },
+      {
+        "title": "Wandeling door de rijstvelden",
+        "description": "Wandel door de beroemde rijstterrassen van Ubud en ervaar de serene rust van het platteland."
+      },
+      {
+        "title": "Bezoek aan heilige waterval",
+        "description": "Maak een tocht naar een heilige waterval voor een reinigingsritueel met zuiver bronwater."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Ontbijt",
+        "time": "07:00 uur",
+        "items": [
+          "Vers tropisch fruit",
+          "Huisgemaakte granola met kokosyoghurt",
+          "Kruidenthee & verse sappen",
+          "Balinese rijstepap"
+        ]
+      },
+      {
+        "meal": "Lunch",
+        "time": "12:30 uur",
+        "items": [
+          "Voedzame Buddha bowls",
+          "Gerechten met tempeh en tofu",
+          "Knapperige verse tuinsalades",
+          "Traditionele Balinese groenten"
+        ]
+      },
+      {
+        "meal": "Diner",
+        "time": "18:30 uur",
+        "items": [
+          "Verwarmende soepen",
+          "Gestoomde graanbowls met dahl",
+          "Ayurvedische kruidige kitchari",
+          "Rustgevende avondkruidenthee"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Video-ervaringen van studenten",
+    "videoStoriesHeading": "Hoor het direct van onze afgestudeerden in Bali",
+    "videoStoriesSub": "Eerlijke verhalen van cursisten die deze residentiële reis bij YogaGarhi hebben gemaakt.",
+    "verifiedGraduate": "Geverifieerde afgestudeerde",
+    "speakTeacherTitle": "Wil je eerst met een hoofddocent praten?",
+    "speakTeacherDesc": "15 minuten 1-op-1 videogesprek om je doelen, kamer en data te bespreken.",
+    "helpfulGuidesBadge": "Lees voor vertrek",
+    "helpfulGuidesTitle": "Handige gidsen & voorbereidingstips",
+    "helpfulGuidesDesc": "Ontdek onze uitgebreide gidsen om lichaam, geest en reis voor te bereiden op je YTT in Bali.",
+    "readArticle": "Lees artikel",
+    "mindfulEating": "Een dag van bewuste voeding",
+    "clickToCollapse": "Klik om in te klappen",
+    "clickToExpand": "Klik om uit te vouwen",
+    "caterDietsTitle": "We houden rekening met alle diëten",
+    "caterDietsDesc": "Laat ons je dieetwensen weten en wij zorgen voor de rest",
+    "studentStories": {
+      "badge": "Ervaringen van Studenten",
+      "heading": "Getransformeerde Harten bij YogaGarhi",
+      "sub": "\"Lees de persoonlijke ervaringen van studenten die deze bijzondere transformatiereis hebben voltooid.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canada",
+          "quote": "YogaGarhi is door en door authentiek en geworteld in de ware essentie van yoga. Vanaf het allereerste moment voelde ik me oprecht gezien en ondersteund als mens. De docenten geven echt om je ontwikkeling en helpen je jouw eigen stem te vinden.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turkije",
+          "quote": "Sachin Ji is zonder twijfel een van de meest deskundige yogadocenten bij wie ik ooit heb geleerd. Hoewel ik als absolute beginner startte, was hij geduldig en bemoedigend, waardoor ik de uitlijning helder begreep.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusland",
+          "quote": "Mijn 200-urige opleiding op Bali was werkelijk magisch. 🌺 De opgedane kennis was diepgaand en puur. De docenten geven les vanuit het hart met warmte en wijsheid. Het voelt als een hechte familie.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canada",
+          "quote": "Sachin Ji is een fantastische leraar en een warm mens. Deze opleiding op Bali was de start van een prachtige yogareis waardoor ik nu met vol vertrouwen lesgeef in verschillende landen over de wereld.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Duitsland",
+          "quote": "Ik waardeer de kalme, vriendelijke en gastvrije energie van Sachin Ji enorm. Hij heeft diepe kennis en neemt de tijd voor elke student. Zijn lessen helpen je meer te bereiken dan je voor mogelijk hield.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australië",
+          "quote": "Een onvergetelijke, transformatieve ervaring bij YogaGarhi Bali. De kleine groepsgrootte maakte al het verschil: elke correctie was persoonlijk en doordacht. Ik verliet de ashram met het volste vertrouwen om les te geven.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
+  },
+  "course100Rishikesh": {
+    "metaTitle": "100-Uurs Yoga Docentenopleiding in Rishikesh | Korte Yoga TTC",
+    "metaDesc": "Residentiële 100-uurs yoga-opleiding in Rishikesh, India. Authentieke Himalaya-meesters, ashram aan de Ganga en certificering.",
+    "heroTitle": "100-Uurs Yoga Docentenopleiding in Rishikesh",
+    "heroSub": "Ervaar authentieke yoga aan de heilige Ganges. 12-daagse basisopleiding in Rishikesh, India.",
+    "quickInfo": {
+      "course": "Opleiding",
+      "courseVal": "100-Uurs Rishikesh TTC",
+      "duration": "Duur",
+      "durationVal": "12 Days",
+      "style": "Stijl",
+      "styleVal": "Multi-Style Yoga",
+      "level": "Niveau",
+      "levelVal": "Beginners tot Gevorderden",
+      "certification": "Certificering",
+      "certificationVal": "Yoga Alliance Certificaat",
+      "startingFrom": "$1,149 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Bespaar",
+      "earlyBirdDiscount": "Bespaar $200 met vroegboekkorting"
+    },
+    "highlights": {
+      "smallGroups": "Kleine groepen (max 8–10)",
+      "smallGroupsSub": "Persoonlijke aandacht",
+      "preYttc": "Begeleiding vooraf",
+      "preYttcSub": "Voorbereiding en advies",
+      "mentorship": "Mentorschap na afstuderen",
+      "mentorshipSub": "1 jaar doorlopende ondersteuning",
+      "goodieBag": "Gratis welkomstpakket",
+      "goodieBagSub": "Yoga essentials"
+    },
+    "storyTitle": "Transformeer je beoefening in levende wijsheid",
+    "storyP1": "Onze 200 uur yogadocentenopleiding in Bali is een residentiële verdieping voor wie verlangt naar authentieke diepgang in plaats van oppervlakkige fitnesslessen. Gelegen in het rustige dorpje Gianyar, op slechts 15 minuten van Ubud, biedt YogaGarhi een vredig toevluchtsoord ver weg van de drukte.",
+    "storyP2": "Gedurende 24 dagen bestudeer je klassiek Hatha, Vinyasa Flow, de Ashtanga Primary Series en Iyengar-uitlijning naast toegepaste anatomie, filosofie, pranayama en meditatie. Met strikt 8–10 studenten per groep bieden onze ervaren docenten uit de Himalaya persoonlijke aandacht aan iedereen.",
+    "watchVideoStories": "Bekijk video's en reviews van studenten",
+    "videoBannerTitle": "Plan een gesprek. Zie de school. Zie je kamer. Zie de yogazaal.",
+    "whyYogaGarhiBox": {
+      "badge": "Waarom kiezen voor YogaGarhi",
+      "heading": "Echte Himalaya-traditie in een intiem ashram op Bali",
+      "sub": "Wij richten ons op oprechte beoefenaars in plaats van massale fabriekslessen. Dit maakt onze 200-uurs opleiding uniek:",
+      "p1Title": "Maximaal 8–10 studenten per groep",
+      "p1Highlight": "Persoonlijke focus",
+      "p1Desc": "Kleine groepen garanderen gerichte begeleiding, individuele correcties en continue aandacht van docenten.",
+      "p2Title": "Gratis online Pre-TTC training",
+      "p2Highlight": "Met vertrouwen starten",
+      "p2Desc": "Kosteloze voorbereidingscursus voorafgaand aan je komst naar Bali om kracht en basiskennis op te bouwen.",
+      "p3Title": "1 jaar mentorschap na afstuderen",
+      "p3Highlight": "Levenslange verbinding",
+      "p3Desc": "Doorlopende adviezen, feedback op je lessen en loopbaancoaching lang na afronding van je verblijf.",
+      "p4Title": "Levenslang gratis de opleiding herhalen",
+      "p4Highlight": "Kosteloos terugkeren",
+      "p4Desc": "Sluit je in de toekomst kosteloos aan bij YogaGarhi-opleidingen om je kennis op te frissen of te assisteren.",
+      "pkgBadge": "Verblijfspakketten (24 dagen / 23 nachten) & optie alleen lesgeld",
+      "saveEarlyBird": "Bespaar $300 met vroegboekkorting",
+      "tuitionFrom": "Alleen lesgeld vanaf $999 USD | Met verblijf vanaf $1,750 USD",
+      "breakdown": "Alleen lesgeld: $999 • Drie personen: $1,750 • Twee personen: $1,899 • Privékamer: $2,499",
+      "checkAvailability": "Beschikbaarheid controleren",
+      "bookFreeCall": "Gratis video-adviesgesprek plannen"
+    },
+    "hoursStructure": {
+      "badge": "Lesuren",
+      "heading": "Opbouw van de 200 studie-uren",
+      "sub": "Een evenwichtige verdeling tussen directe contacturen, praktijklessen en zelfstudie conform de Yoga Alliance richtlijnen.",
+      "contactHours": "Contacturen",
+      "contactHoursDesc": "Direct onderwijs van hoofddocenten in asana, uitlijning, anatomie en filosofie.",
+      "selfStudy": "Zelfstudie & lespraktijk",
+      "selfStudyDesc": "Gerichte literatuurstudie, journalen, oefenen met medestudenten en lessen ontwerpen.",
+      "totalCert": "Totale certificering",
+      "totalCertDesc": "Voldoet ruim aan de standaarden voor Yoga Alliance RYT 200.",
+      "hoursUnit": "Uur"
+    },
+    "syllabus": {
+      "heading": "Curriculum en studieplan",
+      "sub": "Een evenwichtig en verdiepend studieplan dat klassieke bronteksten koppelt aan moderne bewegingsleer.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditatie",
+      "tab4": "Anatomie & Fysiologie",
+      "tab5": "Filosofie & Ethiek",
+      "tapMore": "Tik voor meer details",
+      "hoverMore": "Beweeg voor meer details",
+      "takeaway": "Wat je leert",
+      "carryHome": "Voor thuis",
+      "careerImpact": "Waarde voor je lessen:",
+      "cards": [
+        {
+          "title": "Ashtanga Yoga Houdingen",
+          "content": "Volledige reeks van de Ashtanga Primary Series. Wekelijkse opbouw via Zonnegroet A & B, staande en zittende houdingen en authentieke Mysore-beoefening."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Pawanmuktasana-serie, Surya Namaskar-variaties, staande en zittende asana's, achteroverbuigingen, vooroverbuigingen, omgekeerde houdingen en lesopbouw."
+        },
+        {
+          "title": "Yoga Filosofie",
+          "content": "Inleiding tot de Yoga Sutra's van Patanjali, de acht ledematen van yoga, Nadis, Chakra's, Pancha-Vayus, Panchakosha's, Triguna en overleveringen van yogameesters."
+        },
+        {
+          "title": "Pranayama & Ademhaling",
+          "content": "Uitgebreide ademhalingstechnieken: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali en Sheetkari."
+        },
+        {
+          "title": "Anatomie & Fysiologie",
+          "content": "Bewegingsvlakken, gewrichtsbescherming, anatomie van enkel, knie, wervelkolom en schouders, ademhalingsmechanica, spierfysiologie en zenuwstelsel."
+        },
+        {
+          "title": "Lesmethodiek",
+          "content": "Lesopbouw, verbale instructie en handmatige correcties, omgaan met niveauverschillen, stemgebruik, mentale voorbereiding en gestructureerde lesplanning."
+        },
+        {
+          "title": "Meditatie & Mantra",
+          "content": "Diverse meditatievormen, chanten van mantra's, Trataka, Osho Dynamische meditatie, Nada Brahma, Antar Mouna en het cultiveren van innerlijke stilte."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Precisiegerichte benadering met behulp van blokken, riemen en dekens om een anatomisch zuivere uitlijning te waarborgen en blessures te voorkomen."
+        },
+        {
+          "title": "Uitlijningsprincipes",
+          "content": "Basis van een veilige beoefening: gewrichtsuitlijning, spieractivatiepatronen en biomechanica ter bescherming en versterking van het fysieke lichaam."
+        },
+        {
+          "title": "Bandhas (Energiesloten)",
+          "content": "Beheersing van Mula, Uddiyana en Jalandhara Bandha om de pranastroom te geleiden, de kern te versterken en meditatieve staten te verdiepen."
+        },
+        {
+          "title": "Mudras (Yogische Gebaren)",
+          "content": "Heilige hand- en lichaamsgebaren die levensenergie kanaliseren, de focus aanscherpen en verbinden met hogere staten van bewustzijn."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Dagritme in de ashram",
+      "sub": "Een harmonieuze afwisseling van intensieve beoefening, filosofie, gezonde voeding en rust.",
+      "time1": "06:00",
+      "act1": "Opstaan & ochtendzuivering",
+      "time2": "06:30",
+      "act2": "Pranayama, chanten & meditatie",
+      "time3": "07:30",
+      "act3": "Ochtendasana's (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Gezond sattvisch ontbijt",
+      "time5": "10:00",
+      "act5": "Yogafilosofie & tekststudie",
+      "time6": "12:00",
+      "act6": "Voedzame lunch & pauze",
+      "time7": "15:00",
+      "act7": "Toegepaste anatomie & biomechanica",
+      "time8": "16:30",
+      "act8": "Didactiek & uitlijningskliniek",
+      "time9": "18:00",
+      "act9": "Avondyoga (Ashtanga / Yin / Herstellend)",
+      "time10": "19:30",
+      "act10": "Sattvisch diner",
+      "time11": "21:00",
+      "act11": "Zelfstudie, stilte & rust",
+      "beyondTheMat": "Buiten de mat",
+      "badge": "Dagrooster",
+      "wakeUp": "Opstaan & ochtendzuivering",
+      "morningPranayama": "Pranayama & meditatie",
+      "morningAsana": "Ochtendasana's (Hatha / Vinyasa)",
+      "breakfast": "Gezond Ayurvedisch ontbijt",
+      "philosophyClass": "Yogafilosofie & tekststudie",
+      "lunch": "Voedzame lunch & rusttijd",
+      "anatomyClass": "Toegepaste anatomie & fysiologie",
+      "methodologyClass": "Didactiek & uitlijningskliniek",
+      "eveningAsana": "Avondsessie (Ashtanga / Yin / Herstellend)",
+      "dinner": "Sattvisch diner",
+      "selfStudy": "Zelfstudie, stilte & nachtrust"
+    },
+    "inclusions": {
+      "heading": "Wat is inbegrepen in je opleiding",
+      "sub": "Alles geregeld voor een zorgeloos en diepgaand verblijf.",
+      "incAccom": "23 nachten verblijf in de ashram",
+      "incMeals": "Dagelijks 3 vers bereide sattvische maaltijden (vegetarisch/veganistisch)",
+      "incCert": "Yoga Alliance RYT 200 certificaat na voltooiing",
+      "incManuals": "Officiële lesboeken, notitieblokken en studiemateriaal",
+      "incKit": "Yogamat en alle benodigde props op locatie aanwezig",
+      "incExcursions": "Heilige culturele excursies (watertempel, rijstvelden, Balinese dans)",
+      "incCeremonies": "Traditionele openings- en afsluitende vuurceremonies (Agni Hotra)",
+      "incPickup": "Ophaalservice vanaf vliegveld Denpasar (DPS) op de officiële aankomstdag",
+      "incPre": "Gratis online Pre-TTC voorbereidingscursus",
+      "incRepeat": "Levenslang het recht om gratis aan te schuiven bij latere edities",
+      "notIncHeading": "Niet inbegrepen",
+      "notIncFlights": "Internationale en binnenlandse vliegtickets",
+      "notIncVisa": "Kosten voor het Indonesische visum",
+      "notIncInsurance": "Persoonlijke reis- en ziektekostenverzekering"
+    },
+    "pricing": {
+      "heading": "Kamers & Prijzen",
+      "sub": "Volledig transparante all-in tarieven zonder verborgen kosten.",
+      "tuitionOnly": "Alleen lesgeld",
+      "tuitionOnlyDesc": "Lessen, alle maaltijden, lesmateriaal en certificaat. Verblijf buiten de ashram.",
+      "triple": "Gedeelde driepersoonskamer",
+      "tripleDesc": "Ruime kamer met airco gedeeld met twee medestudenten, eigen badkamer en balkon.",
+      "double": "Gedeelde tweepersoonskamer",
+      "doubleDesc": "Comfortabele kamer voor twee personen met eigen badkamer, airco en uitzicht op tuin of zwembad.",
+      "private": "Deluxe privékamer",
+      "privateDesc": "Eigen toevluchtsoord met groot tweepersoonsbed, eigen badkamer, airco en privébalkon.",
+      "earlyBird": "Vroegboekkorting",
+      "save300": "Bespaar $300 USD",
+      "earlyBirdPrice": "Vroegboekprijs",
+      "tuitionFees": "Tarieven & Kamers (100 Uur Rishikesh)",
+      "tripleSharing": "Driepersoonskamer ($1.149)",
+      "doubleSharing": "Tweepersoonskamer ($1.349)",
+      "privateRoom": "Privékamer ($1.649)",
+      "choosePackage": "Kies je pakket",
+      "reserveSpot": "Reserveer je plek",
+      "saveUSD": "Bespaar $300 USD",
+      "residentialDuration": "12 dagen residentiële yoga-opleiding in Rishikesh, India"
+    },
+    "ethics": {
+      "codeOfConduct": "Gedragscode",
+      "refundCancellation": "Restitutie & Annulering",
+      "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+    },
+    "faqsHeading": "Veelgestelde vragen",
+    "faqs": [
+      {
+        "question": "Is deze 200 uur yogadocentenopleiding geschikt voor beginners?",
+        "answer": "Ja. Het lesprogramma bouwt zorgvuldig op van de basisprincipes tot een gemiddeld niveau. Bovendien krijgt elke student toegang tot onze gratis online voorbereidingscursus om vooraf souplesse, kracht en uitlijning op te bouwen."
+      },
+      {
+        "question": "Welke yogastijlen komen aan bod tijdens deze 200 uur TTC?",
+        "answer": "Je leert multi-style yoga vanuit de authentieke Himalaya-traditie: klassieke Hatha Yoga, dynamische Vinyasa Flow, de Ashtanga Primary Series (volgens K. Pattabhi Jois) en doordachte uitlijning geïnspireerd door Iyengar Yoga."
+      },
+      {
+        "question": "Hoe ziet een gemiddelde opleidingsdag eruit?",
+        "answer": "Een reguliere opleidingsdag bij YogaGarhi kent een vast ritme: 06:00 Opstaan; 06:30 Pranayama & meditatie; 07:30 Hatha & Vinyasa; 09:00 Ontbijt; 10:00 Yogafilosofie; 12:00 Lunch & rust; 15:00 Toegepaste anatomie; 16:30 Didactiek & uitlijning; 18:00 Ashtanga & Iyengar met yogatherapie; 19:30 Diner; 21:00 Zelfstudie & nachtrust."
+      }
+    ],
+    "hero": {
+      "badge": "Yoga Alliance gecertificeerd RYT 200",
+      "h1": "100-Uurs Yoga Docentenopleiding in Rishikesh",
+      "sub": "Een authentieke 12-daagse yogareis in Rishikesh, de yogahoofdstad van de wereld. Leer van traditionele meesters aan de Ganges.",
+      "quickDuration": "12 Dagen",
+      "quickLevel": "Beginners tot Gevorderden",
+      "quickCert": "Yoga Alliance Certificaat",
+      "quickLang": "Engels",
+      "quickBatch": "8–10 studenten",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Plek reserveren",
+      "btnBrochure": "Lesprogramma downloaden",
+      "btnCounselor": "Praat met een adviseur"
+    },
+    "overview": {
+      "heading": "Welkom bij YogaGarhi Rishikesh",
+      "story": "Onze 200 uur yogadocentenopleiding op Bali is een grondig basisprogramma voor wie zelfverzekerd yogales wil geven of yoga diep wil integreren in het eigen leven. YogaGarhi bevindt zich in Gianyar, op circa 15 km van Ubud, te midden van rustgevende natuur. Tijdens de opleiding beoefen je dagelijks asana's, verdiep je je in uitlijning en bestudeer je pranayama, meditatie, filosofie en didactiek.",
+      "p1": "Gelegen in de uitlopers van de Himalaya aan de oever van de heilige Ganges biedt onze 100-uurs opleiding een diepe duik in het ashramleven.",
+      "p2": "Onder leiding van ervaren meesters beoefen je Hatha, Ashtanga, pranayama en meditatie, en woon je dagelijks Ganga Aarti bij."
+    },
+    "curriculum": {
+      "badge": "Lesmodules",
+      "heading": "Overzicht van het lesprogramma",
+      "sub": "Klik op een module om specifieke onderwerpen, praktische technieken en theorie te bekijken.",
+      "modules": {
+        "asana": "Asanabeoefening & Uitlijning",
+        "pranayama": "Pranayama & Subtiele energie",
+        "philosophy": "Yogafilosofie & Levensstijl",
+        "anatomy": "Anatomie & Fysiologie",
+        "methodology": "Didactiek & Lespraktijk",
+        "meditation": "Meditatie & Mindfulness",
+        "iyengar": "Iyengar Yoga basis & Hulpmiddelen",
+        "vinyasa": "Vinyasa Flow lesopbouw",
+        "hatha": "Klassieke traditionele Hatha Yoga"
+      },
+      "detailedModules": [
+        {
+          "title": "Ashtanga Yoga Houdingen",
+          "items": [
+            "Volledige Ashtanga primary series volgens K. Pattabhi Jois",
+            "Week 1: Introductie & Zonnegroeten A & B",
+            "Week 2: Staande reeks & yogaprops",
+            "Week 3: Zittende reeks & afrondende houdingen",
+            "Week 4: Mysore-stijl & lesgeefpraktijk"
+          ]
+        },
+        {
+          "title": "Yoga Filosofie",
+          "items": [
+            "Volledige Yoga Sutra's van Patanjali",
+            "Acht ledematen van Ashtanga Yoga",
+            "Pancha-Vayus & Panchakosha's",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Introductie tot de Veda's",
+            "Inspirerende verhalen van grote yogameesters"
+          ]
+        },
+        {
+          "title": "Pranayama & Ademhalingsoefeningen",
+          "items": [
+            "Volledige pranayama-technieken",
+            "Alle zes Shatkarma reinigingsoefeningen",
+            "Gevorderde ademhaling: Sheetali, Sheetkari",
+            "Kumbhaka (ademinouding)",
+            "Integratie met asana-beoefening"
+          ]
+        },
+        {
+          "title": "Heilige Klanken & Mantra Recitatie",
+          "items": [
+            "Volledige collectie traditionele mantra's",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Shloka voor Patanjali)",
+            "Dagelijkse mantra-chanting praktijk"
+          ]
+        },
+        {
+          "title": "Anatomie en Fysiologie",
+          "items": [
+            "Complete studie van lichaamssystemen",
+            "Fysiologie van spieren & gewrichten",
+            "Ademhalings- & zenuwstelsel",
+            "Voeding & spijsvertering",
+            "Praktijkgerichte workshops over asana's"
+          ]
+        },
+        {
+          "title": "Lesmethodiek",
+          "items": [
+            "Volledige lesopbouw & sequencing",
+            "Demonstratie- & observatieprincipes",
+            "Mentale & emotionele voorbereiding",
+            "Stapsgewijze lesplanning",
+            "Praktijklessen & feedback"
+          ]
+        },
+        {
+          "title": "Meditatie & Bandha's",
+          "items": [
+            "Osho Dynamische meditatie",
+            "Nada Brahma meditatie",
+            "Antar Mouna & Ajapa Japa",
+            "Beheersing van alle vier de Bandha's",
+            "Harmonische integratie met asana & pranayama"
+          ]
+        },
+        {
+          "title": "Uitlijning & Hands-on Correcties",
+          "items": [
+            "Functionele biomechanica voor klassieke yogahoudingen",
+            "Verbale instructies en veilige hands-on aanpassingen",
+            "Begrip van individuele anatomische variaties",
+            "Modificatiestrategieën met blokken en riemen"
+          ]
+        },
+        {
+          "title": "Klassieke Hatha Yoga Praktijk",
+          "items": [
+            "Diepgaande studie van Hatha-principes en statische houdingen",
+            "Klassieke opbouw: warming-up, piekhouding en tegenhoudingen",
+            "Balans tussen zonne- (Ha) en maan- (Tha) energieën",
+            "Integratie van Bandha's en Mudra's in asana's"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Nauwkeurige Uitlijning",
+          "items": [
+            "Methodische uitlijning met blokken, riemen en dekens",
+            "Exacte positionering van bekken, wervelkolom en schouders",
+            "Veilige voorbereiding op omgekeerde houdingen",
+            "Herstellende Iyengar-series met hulpmiddelen"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Dynamische Sequencing",
+          "items": [
+            "Intelligente lesstructuur: opbouw, piek en ontspanning",
+            "Vloeiende overgangen afgestemd op de ademhaling",
+            "Thematische vinyasa-lessen voor diverse niveaus",
+            "Ritme, tempo en energetische begeleiding"
+          ]
+        },
+        {
+          "title": "Aanvullende Workshops",
+          "items": [
+            "Sound Healing klankreizen",
+            "Strandyoga op Bali",
+            "Yin Yoga & Acro Yoga",
+            "Basisprincipes van Ayurveda",
+            "Traditionele Agni Hotra vuurceremonie"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Accommodatie & Tarieven",
+      "sub": "Duidelijke all-inclusive tarieven zonder onverwachte kosten.",
+      "tuitionOnly": "Alleen lesgeld pakket",
+      "tuitionOnlyDesc": "Lessen, maaltijden, studiemateriaal en certificering. Zonder verblijf.",
+      "triple": "Gedeelde driepersoonskamer",
+      "tripleDesc": "Gekoelde kamer voor drie personen met eigen badkamer en balkon.",
+      "double": "Gedeelde tweepersoonskamer",
+      "doubleDesc": "Fijne kamer voor twee personen met badkamer, airconditioning en tuinzicht.",
+      "private": "Luxe privékamer",
+      "privateDesc": "Privékamer met groot bed, badkamer ensuite, airco en eigen balkon.",
+      "earlyBird": "Vroegboekkorting",
+      "save300": "Bespaar $300 USD"
+    },
+    "tourCall": {
+      "heading": "Wil je de school bekijken voor je boekt?",
+      "sub": "Neem deel aan een live videogesprek voor een persoonlijke rondleiding over de campus, lesruimtes, yoga shala en kamers.",
+      "cta": "Gesprek boeken. Zie de school. Zie je kamer. Zie de yogazaal.",
+      "bookCallLive": "Bekijk de school, je kamer en de yoga shala live. Vul hieronder je gegevens in om een afspraak te plannen."
+    },
+    "takeaway": {
+      "badge": "Wat je meeneemt",
+      "heading": "Wat je meeneemt",
+      "headingItalic": "naar huis",
+      "sub": "Naast het officiële certificaat vertrek je met een getransformeerd perspectief, een diepere verbinding met jezelf en authentieke vaardigheden om anderen te begeleiden.",
+      "careerImpactTitle": "Carrièreperspectief:",
+      "careerImpactDesc": "Na afronding van de 200-urige yogadocentenopleiding kun je wereldwijd lesgeven in studio's, online live-lessen verzorgen, retreats leiden of je eigen zelfstandige praktijk starten.",
+      "card1Title": "Wereldwijde certificering",
+      "card1Desc": "Yoga Alliance RYT-200 om overal jouw carrière te starten.",
+      "card2Title": "Beheers de beoefening",
+      "card2Desc": "Gedegen begeleiding in Hatha, Vinyasa, Ashtanga en Iyengar.",
+      "card3Title": "Veiligheid & anatomie",
+      "card3Desc": "Leer veilig en blessurevrij lesgeven en praktiseren.",
+      "card4Title": "Spirituele verdieping",
+      "card4Desc": "Duik diep in Mantra's, meditatie en filosofie.",
+      "card5Title": "Lesmethodiek",
+      "card5Desc": "Praktische vaardigheden om leerlingen helder te instrueren en inspireren.",
+      "card6Title": "Hechte vriendschappen",
+      "card6Desc": "Levenslange verbindingen met een wereldwijde yogagemeenschap."
+    },
+    "timeline": {
+      "prepTitle": "Voorbereiding begint bij inschrijving",
+      "prepDesc": "Begin je reis met voorbereidende lesstof en persoonlijke begeleiding.",
+      "datesTitle": "Opleiding: 1e t/m 24e van elke maand",
+      "datesDesc": "Intensief 24-daags programma iedere maand op Bali.",
+      "supportTitle": "Levenslange YogaGarhi-gemeenschap",
+      "supportDesc": "Voor altijd verbonden met onze wereldwijde yogafamilie."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Accommodatie",
+      "featuresSub": "Een vredig yogaparadijs in het hart van de heilige Ubud-regio op Bali",
+      "feat1": "10 prachtige watervallen binnen een straal van 10 km",
+      "feat2": "Eigen privébos met een waterval op het terrein",
+      "feat3": "Rustgevende wandelingen door rijstvelden op het terrein",
+      "feat4": "Slechts 15 km van het centrum van Ubud",
+      "glimpses": "Een impressie van je verblijf",
+      "allRooms": "Alle kamers zijn inclusief",
+      "wifi": "Gratis wifi",
+      "hotWater": "Warm water",
+      "acFan": "Airco / Ventilator",
+      "cleaning": "Dagelijkse schoonmaak",
+      "bed1": "bed",
+      "bedsMore": "bedden",
+      "courseOnly": "Alleen cursus",
+      "mostPopular": "Meest gekozen",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Voorbij de mat",
+      "heading": "Heilige excursies",
+      "sub": "Dompel jezelf onder in het spirituele erfgoed van Bali via transformerende ervaringen"
+    },
+    "prakritiResearch": {
+      "heading": "Sachin Ji's onderzoek naar gepersonaliseerde yoga en Prakriti",
+      "quote": "„Yoga is geen standaardformule, want ieder lichaam draagt een unieke energie”",
+      "card1Title": "De kernvraag",
+      "card1Text": "Tijdens de Master Yoga studies van onze hoofddocent rees een onvermijdelijke vraag: Waarom brengt dezelfde yogasessie sommigen tot rust, terwijl anderen zich moe, onrustig of gespannen voelen?",
+      "card2Title": "Diepgaand onderzoek",
+      "card2Text": "Dit leidde tot intensieve studie van klassieke teksten, Ayurveda en jarenlange ervaring met cursisten. Het antwoord was even eenvoudig als krachtig: ieder mens wordt geboren met een unieke Prakriti.",
+      "card3Title": "De energie-blauwdruk",
+      "card3Text": "Prakriti vormt het lichaam, de geest, emoties en het zenuwstelsel. De een heeft aarding nodig, de ander beweging en weer een ander stilte. Eén uniforme stijl kan disbalans veroorzaken.",
+      "card4Title": "Kwaliteit van de beoefening",
+      "card4Text": "Belangrijker dan welke yogastijl je beoefent, is hoe je beoefent: hoe het zenuwstelsel wordt gerespecteerd, hoe de ademhaling vloeit en hoe je Dosha wordt ondersteund in plaats van geforceerd.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Hieruit ontstond Shiv–Shakti Sadhana: een evenwichtige benadering die stabiliteit en stroming, bewustzijn en vitaliteit verenigt. Asana biedt hier stevige aarding en veerkracht.",
+      "card6Title": "Terug naar balans",
+      "card6Text": "Wanneer yoga jouw Prakriti respecteert, wordt het toegankelijk, duurzaam en diep herstellend. Echte yoga verandert je niet; het brengt je terug in balans met jezelf.",
+      "conclusion1": "Onze hoofddocent merkte dat wanneer de les geen rekening houdt met het zenuwstelsel en het natuurlijke energietype, zelfs correcte houdingen tot vermoeidheid of rusteloosheid kunnen leiden.",
+      "conclusion2": "„Wanneer yoga jouw Prakriti eert, wordt het voor iedereen toegankelijk, duurzaam en helend. Hier wordt yoga nooit opgedrongen: het is persoonlijk, bewust en respectvol voor wie je bent.”"
+    },
+    "ethicsExtra": {
+      "code1": "Stipt op tijd aanwezig",
+      "code2": "Geen alcohol of roken",
+      "code3": "Uitsluitend vegetarisch eten",
+      "code4": "Stilte bewaren in de les",
+      "code5": "Gepaste en respectvolle kleding",
+      "code6": "Wederzijds respect voor iedereen",
+      "code7": "Geen telefoons in de lesruimte",
+      "code8": "Volledige aanwezigheid verplicht",
+      "refund1": "Omboeken mogelijk binnen 12 maanden",
+      "refund2": "Plek overdragen toegestaan",
+      "refund3": "Volledige terugbetaling bij annulering door ons",
+      "refund4": "Proefdag-voorwaarde van toepassing",
+      "refund5": "Geen restitutie na Dag 1",
+      "reviewsHeading": "Ervaringen van onze studenten",
+      "viewAllGoogle": "Bekijk alle recensies op Google",
+      "basedOnReviews": "Gebaseerd op",
+      "openGoogleMaps": "Openen in Google Maps",
+      "open24Hours": "24 uur geopend"
+    },
+    "sunday": {
+      "note": "Zondag is een volledige rustdag voor ontspanning, zelfstudie of optionele uitstapjes.",
+      "cta": "Ontdek zondag op Bali"
+    },
+    "tapHover": {
+      "tap": "Tik voor meer",
+      "hover": "Beweeg erover voor meer"
+    },
+    "inclusionsList": [
+      "Schone en comfortabele kamer",
+      "Eigen badkamer met warm water",
+      "Airconditioning / ventilator",
+      "Gratis snelle wifi",
+      "Drie gezonde vegetarische maaltijden per dag",
+      "Kruidenthee en gefilterd drinkwater",
+      "Studiemateriaal (handboeken, notitieboeken, pennen)",
+      "Yogamatten en hulpmiddelen aanwezig",
+      "Buitengeheven excursies en weekendtrips",
+      "Luchthaventransfer bij aankomst (dichtstbijzijnde luchthaven)",
+      "24/7 ondersteuningsteam op de campus",
+      "Officieel certificaat na succesvolle afronding",
+      "Traditionele Balinese massage",
+      "Balinese culturele dansvoorstelling",
+      "Wandeling door de rijstvelden",
+      "Online Pre-TTC voorbereidingscursus inbegrepen",
+      "Arm-balance workshop",
+      "Ayurveda workshop",
+      "Levenslange gratis cursusherhaling inbegrepen",
+      "YogaGarhi boek met 35+ creatieve lessenseries"
+    ],
+    "exclusionsList": [
+      "Vliegtickets en reiskosten",
+      "Visum en reisverzekering",
+      "Transfer terug naar de luchthaven",
+      "Wasservice",
+      "Persoonlijke uitgaven & extra activiteiten"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Multi-Style yogaopleiding",
+        "description": "Leer yoga op een authentieke, beproefde wijze. Onze docenten dragen eeuwenoude wijsheid over."
+      },
+      {
+        "title": "Yoga Alliance gecertificeerd",
+        "description": "Behaal een internationaal erkend diploma en start vol zelfvertrouwen met lesgeven."
+      },
+      {
+        "title": "Vreedzame omgeving op Bali",
+        "description": "Ervaar yoga midden in ongerepte natuur. Rustgevende stranden en groen die je verdiepen."
+      },
+      {
+        "title": "Buitenexcursies",
+        "description": "Verken tempels, stranden en natuurpaden en combineer studie met inspirerende cultuur."
+      },
+      {
+        "title": "Kleine lesgroepen",
+        "description": "Krijg persoonlijke aandacht en precieze aanwijzingen. Jouw groei staat bij ons voorop."
+      },
+      {
+        "title": "Warme gemeenschap",
+        "description": "Maak deel uit van een hechte, positieve yogafamilie en groei in een veilige omgeving."
+      },
+      {
+        "title": "Balinese massage",
+        "description": "Traditionele Indonesische lichaamsbehandeling om spierspanning te verlichten en diep te ontspannen."
+      },
+      {
+        "title": "Balinese dansvoorstelling",
+        "description": "Eeuwenoude, expressieve danskunst die het rijke spirituele erfgoed van Bali toont."
+      },
+      {
+        "title": "Gezonde maaltijden",
+        "description": "Geniet van verse sattvische voeding die jouw dagelijkse yogapraktijk optimaal ondersteunt."
+      },
+      {
+        "title": "Meditatiebeoefening",
+        "description": "Versterk innerlijke rust en opmerkzaamheid dankzij dagelijkse begeleide sessies."
+      },
+      {
+        "title": "Ervaren docenten",
+        "description": "Leer van gecertificeerde meesters met jarenlange praktische leservaring."
+      },
+      {
+        "title": "Yogische levenswijze",
+        "description": "Maak de yogische manier van leven eigen voor een gezonde balans van lichaam en geest."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Workshop Ayurveda & Ayurvedisch koken",
+        "description": "Begrijp jouw persoonlijke constitutie (Prakriti) en leer dosha's in evenwicht brengen met voeding."
+      },
+      {
+        "title": "Meesterschap in arm-balances",
+        "description": "Bouw kracht en techniek op voor houdingen zoals de Kraai, Zijkraai en Vliegende Duif."
+      },
+      {
+        "title": "Handstand-workshop",
+        "description": "Overwin twijfel en vind je balanspunt met methodische oefeningen tegen de muur en met partners."
+      },
+      {
+        "title": "Yin Yoga & diepe stretches",
+        "description": "Bereik dieper bindweefsel met lang aangehouden houdingen om opgebouwde spanning los te laten."
+      },
+      {
+        "title": "Klankbad & sound healing sessie",
+        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Open je hart met devotionele gezangen en kirtan om contact te maken met de spirituele essentie van yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Balinese dansvoorstelling",
+        "description": "Bewonder de traditionele dans van Bali: een samenspel van gratie, mythes en toewijding."
+      },
+      {
+        "title": "Wandeling door de rijstvelden",
+        "description": "Wandel door de beroemde rijstterrassen van Ubud en ervaar de serene rust van het platteland."
+      },
+      {
+        "title": "Bezoek aan heilige waterval",
+        "description": "Maak een tocht naar een heilige waterval voor een reinigingsritueel met zuiver bronwater."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Ontbijt",
+        "time": "07:00 uur",
+        "items": [
+          "Vers tropisch fruit",
+          "Huisgemaakte granola met kokosyoghurt",
+          "Kruidenthee & verse sappen",
+          "Balinese rijstepap"
+        ]
+      },
+      {
+        "meal": "Lunch",
+        "time": "12:30 uur",
+        "items": [
+          "Voedzame Buddha bowls",
+          "Gerechten met tempeh en tofu",
+          "Knapperige verse tuinsalades",
+          "Traditionele Balinese groenten"
+        ]
+      },
+      {
+        "meal": "Diner",
+        "time": "18:30 uur",
+        "items": [
+          "Verwarmende soepen",
+          "Gestoomde graanbowls met dahl",
+          "Ayurvedische kruidige kitchari",
+          "Rustgevende avondkruidenthee"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Video-ervaringen van studenten",
+    "videoStoriesHeading": "Hoor het direct van onze afgestudeerden in Bali",
+    "videoStoriesSub": "Eerlijke verhalen van cursisten die deze residentiële reis bij YogaGarhi hebben gemaakt.",
+    "verifiedGraduate": "Geverifieerde afgestudeerde",
+    "speakTeacherTitle": "Wil je eerst met een hoofddocent praten?",
+    "speakTeacherDesc": "15 minuten 1-op-1 videogesprek om je doelen, kamer en data te bespreken.",
+    "helpfulGuidesBadge": "Lees voor vertrek",
+    "helpfulGuidesTitle": "Handige gidsen & voorbereidingstips",
+    "helpfulGuidesDesc": "Ontdek onze uitgebreide gidsen om lichaam, geest en reis voor te bereiden op je YTT in Bali.",
+    "readArticle": "Lees artikel",
+    "mindfulEating": "Een dag van bewuste voeding",
+    "clickToCollapse": "Klik om in te klappen",
+    "clickToExpand": "Klik om uit te vouwen",
+    "caterDietsTitle": "We houden rekening met alle diëten",
+    "caterDietsDesc": "Laat ons je dieetwensen weten en wij zorgen voor de rest",
+    "studentStories": {
+      "badge": "Ervaringen van Studenten",
+      "heading": "Getransformeerde Harten bij YogaGarhi",
+      "sub": "\"Lees de persoonlijke ervaringen van studenten die deze bijzondere transformatiereis hebben voltooid.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canada",
+          "quote": "YogaGarhi is door en door authentiek en geworteld in de ware essentie van yoga. Vanaf het allereerste moment voelde ik me oprecht gezien en ondersteund als mens. De docenten geven echt om je ontwikkeling en helpen je jouw eigen stem te vinden.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turkije",
+          "quote": "Sachin Ji is zonder twijfel een van de meest deskundige yogadocenten bij wie ik ooit heb geleerd. Hoewel ik als absolute beginner startte, was hij geduldig en bemoedigend, waardoor ik de uitlijning helder begreep.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusland",
+          "quote": "Mijn 200-urige opleiding op Bali was werkelijk magisch. 🌺 De opgedane kennis was diepgaand en puur. De docenten geven les vanuit het hart met warmte en wijsheid. Het voelt als een hechte familie.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canada",
+          "quote": "Sachin Ji is een fantastische leraar en een warm mens. Deze opleiding op Bali was de start van een prachtige yogareis waardoor ik nu met vol vertrouwen lesgeef in verschillende landen over de wereld.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Duitsland",
+          "quote": "Ik waardeer de kalme, vriendelijke en gastvrije energie van Sachin Ji enorm. Hij heeft diepe kennis en neemt de tijd voor elke student. Zijn lessen helpen je meer te bereiken dan je voor mogelijk hield.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australië",
+          "quote": "Een onvergetelijke, transformatieve ervaring bij YogaGarhi Bali. De kleine groepsgrootte maakte al het verschil: elke correctie was persoonlijk en doordacht. Ik verliet de ashram met het volste vertrouwen om les te geven.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
+  },
+  "course200Rishikesh": {
+    "metaTitle": "200-Uurs Yoga Docentenopleiding in Rishikesh | RYT 200 India",
+    "metaDesc": "Beheers authentieke yoga met de 200-uurs Yoga TTC in Rishikesh. Yoga Alliance RYT 200 residentiële cursus aan de Ganges. Meld je aan!",
+    "heroTitle": "200-Uurs Yoga Docentenopleiding in Rishikesh",
+    "heroSub": "24-daagse Yoga Alliance RYT 200 opleiding in de yogahoofdstad van de wereld. Himalaya-traditie, Ganga ashram vanaf $999 USD.",
+    "quickInfo": {
+      "course": "Opleiding",
+      "courseVal": "200-Uurs Rishikesh TTC",
+      "duration": "Duur",
+      "durationVal": "24 Days",
+      "style": "Stijl",
+      "styleVal": "Multi-Style Yoga",
+      "level": "Niveau",
+      "levelVal": "Beginners tot Gevorderden",
+      "certification": "Certificering",
+      "certificationVal": "Yoga Alliance RYT 200 Certificering",
+      "startingFrom": "$999 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Bespaar",
+      "earlyBirdDiscount": "Bespaar $300 met vroegboekkorting"
+    },
+    "highlights": {
+      "smallGroups": "Kleine groepen (max 8–10)",
+      "smallGroupsSub": "Persoonlijke aandacht",
+      "preYttc": "Begeleiding vooraf",
+      "preYttcSub": "Voorbereiding en advies",
+      "mentorship": "Mentorschap na afstuderen",
+      "mentorshipSub": "1 jaar doorlopende ondersteuning",
+      "goodieBag": "Gratis welkomstpakket",
+      "goodieBagSub": "Yoga essentials"
+    },
+    "storyTitle": "Transformeer je beoefening in levende wijsheid",
+    "storyP1": "Onze 200 uur yogadocentenopleiding in Bali is een residentiële verdieping voor wie verlangt naar authentieke diepgang in plaats van oppervlakkige fitnesslessen. Gelegen in het rustige dorpje Gianyar, op slechts 15 minuten van Ubud, biedt YogaGarhi een vredig toevluchtsoord ver weg van de drukte.",
+    "storyP2": "Gedurende 24 dagen bestudeer je klassiek Hatha, Vinyasa Flow, de Ashtanga Primary Series en Iyengar-uitlijning naast toegepaste anatomie, filosofie, pranayama en meditatie. Met strikt 8–10 studenten per groep bieden onze ervaren docenten uit de Himalaya persoonlijke aandacht aan iedereen.",
+    "watchVideoStories": "Bekijk video's en reviews van studenten",
+    "videoBannerTitle": "Plan een gesprek. Zie de school. Zie je kamer. Zie de yogazaal.",
+    "whyYogaGarhiBox": {
+      "badge": "Waarom kiezen voor YogaGarhi",
+      "heading": "Echte Himalaya-traditie in een intiem ashram op Bali",
+      "sub": "Wij richten ons op oprechte beoefenaars in plaats van massale fabriekslessen. Dit maakt onze 200-uurs opleiding uniek:",
+      "p1Title": "Maximaal 8–10 studenten per groep",
+      "p1Highlight": "Persoonlijke focus",
+      "p1Desc": "Kleine groepen garanderen gerichte begeleiding, individuele correcties en continue aandacht van docenten.",
+      "p2Title": "Gratis online Pre-TTC training",
+      "p2Highlight": "Met vertrouwen starten",
+      "p2Desc": "Kosteloze voorbereidingscursus voorafgaand aan je komst naar Bali om kracht en basiskennis op te bouwen.",
+      "p3Title": "1 jaar mentorschap na afstuderen",
+      "p3Highlight": "Levenslange verbinding",
+      "p3Desc": "Doorlopende adviezen, feedback op je lessen en loopbaancoaching lang na afronding van je verblijf.",
+      "p4Title": "Levenslang gratis de opleiding herhalen",
+      "p4Highlight": "Kosteloos terugkeren",
+      "p4Desc": "Sluit je in de toekomst kosteloos aan bij YogaGarhi-opleidingen om je kennis op te frissen of te assisteren.",
+      "pkgBadge": "Verblijfspakketten (24 dagen / 23 nachten) & optie alleen lesgeld",
+      "saveEarlyBird": "Bespaar $300 met vroegboekkorting",
+      "tuitionFrom": "Alleen lesgeld vanaf $999 USD | Met verblijf vanaf $1,750 USD",
+      "breakdown": "Alleen lesgeld: $999 • Drie personen: $1,750 • Twee personen: $1,899 • Privékamer: $2,499",
+      "checkAvailability": "Beschikbaarheid controleren",
+      "bookFreeCall": "Gratis video-adviesgesprek plannen"
+    },
+    "hoursStructure": {
+      "badge": "Lesuren",
+      "heading": "Opbouw van de 200 studie-uren",
+      "sub": "Een evenwichtige verdeling tussen directe contacturen, praktijklessen en zelfstudie conform de Yoga Alliance richtlijnen.",
+      "contactHours": "Contacturen",
+      "contactHoursDesc": "Direct onderwijs van hoofddocenten in asana, uitlijning, anatomie en filosofie.",
+      "selfStudy": "Zelfstudie & lespraktijk",
+      "selfStudyDesc": "Gerichte literatuurstudie, journalen, oefenen met medestudenten en lessen ontwerpen.",
+      "totalCert": "Totale certificering",
+      "totalCertDesc": "Voldoet ruim aan de standaarden voor Yoga Alliance RYT 200.",
+      "hoursUnit": "Uur"
+    },
+    "syllabus": {
+      "heading": "Curriculum en studieplan",
+      "sub": "Een evenwichtig en verdiepend studieplan dat klassieke bronteksten koppelt aan moderne bewegingsleer.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditatie",
+      "tab4": "Anatomie & Fysiologie",
+      "tab5": "Filosofie & Ethiek",
+      "tapMore": "Tik voor meer details",
+      "hoverMore": "Beweeg voor meer details",
+      "takeaway": "Wat je leert",
+      "carryHome": "Voor thuis",
+      "careerImpact": "Waarde voor je lessen:",
+      "cards": [
+        {
+          "title": "Ashtanga Yoga Houdingen",
+          "content": "Volledige reeks van de Ashtanga Primary Series. Wekelijkse opbouw via Zonnegroet A & B, staande en zittende houdingen en authentieke Mysore-beoefening."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Pawanmuktasana-serie, Surya Namaskar-variaties, staande en zittende asana's, achteroverbuigingen, vooroverbuigingen, omgekeerde houdingen en lesopbouw."
+        },
+        {
+          "title": "Yoga Filosofie",
+          "content": "Inleiding tot de Yoga Sutra's van Patanjali, de acht ledematen van yoga, Nadis, Chakra's, Pancha-Vayus, Panchakosha's, Triguna en overleveringen van yogameesters."
+        },
+        {
+          "title": "Pranayama & Ademhaling",
+          "content": "Uitgebreide ademhalingstechnieken: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali en Sheetkari."
+        },
+        {
+          "title": "Anatomie & Fysiologie",
+          "content": "Bewegingsvlakken, gewrichtsbescherming, anatomie van enkel, knie, wervelkolom en schouders, ademhalingsmechanica, spierfysiologie en zenuwstelsel."
+        },
+        {
+          "title": "Lesmethodiek",
+          "content": "Lesopbouw, verbale instructie en handmatige correcties, omgaan met niveauverschillen, stemgebruik, mentale voorbereiding en gestructureerde lesplanning."
+        },
+        {
+          "title": "Meditatie & Mantra",
+          "content": "Diverse meditatievormen, chanten van mantra's, Trataka, Osho Dynamische meditatie, Nada Brahma, Antar Mouna en het cultiveren van innerlijke stilte."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Precisiegerichte benadering met behulp van blokken, riemen en dekens om een anatomisch zuivere uitlijning te waarborgen en blessures te voorkomen."
+        },
+        {
+          "title": "Uitlijningsprincipes",
+          "content": "Basis van een veilige beoefening: gewrichtsuitlijning, spieractivatiepatronen en biomechanica ter bescherming en versterking van het fysieke lichaam."
+        },
+        {
+          "title": "Bandhas (Energiesloten)",
+          "content": "Beheersing van Mula, Uddiyana en Jalandhara Bandha om de pranastroom te geleiden, de kern te versterken en meditatieve staten te verdiepen."
+        },
+        {
+          "title": "Mudras (Yogische Gebaren)",
+          "content": "Heilige hand- en lichaamsgebaren die levensenergie kanaliseren, de focus aanscherpen en verbinden met hogere staten van bewustzijn."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Dagritme in de ashram",
+      "sub": "Een harmonieuze afwisseling van intensieve beoefening, filosofie, gezonde voeding en rust.",
+      "time1": "06:00",
+      "act1": "Opstaan & ochtendzuivering",
+      "time2": "06:30",
+      "act2": "Pranayama, chanten & meditatie",
+      "time3": "07:30",
+      "act3": "Ochtendasana's (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Gezond sattvisch ontbijt",
+      "time5": "10:00",
+      "act5": "Yogafilosofie & tekststudie",
+      "time6": "12:00",
+      "act6": "Voedzame lunch & pauze",
+      "time7": "15:00",
+      "act7": "Toegepaste anatomie & biomechanica",
+      "time8": "16:30",
+      "act8": "Didactiek & uitlijningskliniek",
+      "time9": "18:00",
+      "act9": "Avondyoga (Ashtanga / Yin / Herstellend)",
+      "time10": "19:30",
+      "act10": "Sattvisch diner",
+      "time11": "21:00",
+      "act11": "Zelfstudie, stilte & rust",
+      "beyondTheMat": "Buiten de mat",
+      "badge": "Dagrooster",
+      "wakeUp": "Opstaan & ochtendzuivering",
+      "morningPranayama": "Pranayama & meditatie",
+      "morningAsana": "Ochtendasana's (Hatha / Vinyasa)",
+      "breakfast": "Gezond Ayurvedisch ontbijt",
+      "philosophyClass": "Yogafilosofie & tekststudie",
+      "lunch": "Voedzame lunch & rusttijd",
+      "anatomyClass": "Toegepaste anatomie & fysiologie",
+      "methodologyClass": "Didactiek & uitlijningskliniek",
+      "eveningAsana": "Avondsessie (Ashtanga / Yin / Herstellend)",
+      "dinner": "Sattvisch diner",
+      "selfStudy": "Zelfstudie, stilte & nachtrust"
+    },
+    "inclusions": {
+      "heading": "Wat is inbegrepen in je opleiding",
+      "sub": "Alles geregeld voor een zorgeloos en diepgaand verblijf.",
+      "incAccom": "23 nachten verblijf in de ashram",
+      "incMeals": "Dagelijks 3 vers bereide sattvische maaltijden (vegetarisch/veganistisch)",
+      "incCert": "Yoga Alliance RYT 200 certificaat na voltooiing",
+      "incManuals": "Officiële lesboeken, notitieblokken en studiemateriaal",
+      "incKit": "Yogamat en alle benodigde props op locatie aanwezig",
+      "incExcursions": "Heilige culturele excursies (watertempel, rijstvelden, Balinese dans)",
+      "incCeremonies": "Traditionele openings- en afsluitende vuurceremonies (Agni Hotra)",
+      "incPickup": "Ophaalservice vanaf vliegveld Denpasar (DPS) op de officiële aankomstdag",
+      "incPre": "Gratis online Pre-TTC voorbereidingscursus",
+      "incRepeat": "Levenslang het recht om gratis aan te schuiven bij latere edities",
+      "notIncHeading": "Niet inbegrepen",
+      "notIncFlights": "Internationale en binnenlandse vliegtickets",
+      "notIncVisa": "Kosten voor het Indonesische visum",
+      "notIncInsurance": "Persoonlijke reis- en ziektekostenverzekering"
+    },
+    "pricing": {
+      "heading": "Kamers & Prijzen",
+      "sub": "Volledig transparante all-in tarieven zonder verborgen kosten.",
+      "tuitionOnly": "Alleen cursus ($999)",
+      "tuitionOnlyDesc": "Lessen, alle maaltijden, lesmateriaal en certificaat. Verblijf buiten de ashram.",
+      "triple": "Gedeelde driepersoonskamer",
+      "tripleDesc": "Ruime kamer met airco gedeeld met twee medestudenten, eigen badkamer en balkon.",
+      "double": "Gedeelde tweepersoonskamer",
+      "doubleDesc": "Comfortabele kamer voor twee personen met eigen badkamer, airco en uitzicht op tuin of zwembad.",
+      "private": "Deluxe privékamer",
+      "privateDesc": "Eigen toevluchtsoord met groot tweepersoonsbed, eigen badkamer, airco en privébalkon.",
+      "earlyBird": "Vroegboekkorting",
+      "save300": "Bespaar $300 USD",
+      "earlyBirdPrice": "Vroegboekprijs",
+      "tuitionFees": "Tarieven & Kamers (200 Uur Rishikesh)",
+      "tripleSharing": "Driepersoonskamer ($1.750)",
+      "doubleSharing": "Tweepersoonskamer ($1.899)",
+      "privateRoom": "Privékamer ($2.499)",
+      "choosePackage": "Kies je pakket",
+      "reserveSpot": "Reserveer je plek",
+      "saveUSD": "Bespaar $300 USD",
+      "residentialDuration": "24 dagen residentiële yoga-opleiding in Rishikesh, India"
+    },
+    "ethics": {
+      "codeOfConduct": "Gedragscode",
+      "refundCancellation": "Restitutie & Annulering",
+      "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+    },
+    "faqsHeading": "Veelgestelde vragen",
+    "faqs": [
+      {
+        "question": "Is deze 200 uur yogadocentenopleiding geschikt voor beginners?",
+        "answer": "Ja. Het lesprogramma bouwt zorgvuldig op van de basisprincipes tot een gemiddeld niveau. Bovendien krijgt elke student toegang tot onze gratis online voorbereidingscursus om vooraf souplesse, kracht en uitlijning op te bouwen."
+      },
+      {
+        "question": "Welke yogastijlen komen aan bod tijdens deze 200 uur TTC?",
+        "answer": "Je leert multi-style yoga vanuit de authentieke Himalaya-traditie: klassieke Hatha Yoga, dynamische Vinyasa Flow, de Ashtanga Primary Series (volgens K. Pattabhi Jois) en doordachte uitlijning geïnspireerd door Iyengar Yoga."
+      },
+      {
+        "question": "Hoe ziet een gemiddelde opleidingsdag eruit?",
+        "answer": "Een reguliere opleidingsdag bij YogaGarhi kent een vast ritme: 06:00 Opstaan; 06:30 Pranayama & meditatie; 07:30 Hatha & Vinyasa; 09:00 Ontbijt; 10:00 Yogafilosofie; 12:00 Lunch & rust; 15:00 Toegepaste anatomie; 16:30 Didactiek & uitlijning; 18:00 Ashtanga & Iyengar met yogatherapie; 19:30 Diner; 21:00 Zelfstudie & nachtrust."
+      }
+    ],
+    "hero": {
+      "badge": "Yoga Alliance gecertificeerd RYT 200",
+      "h1": "200-Uurs Yoga Docentenopleiding in Rishikesh",
+      "sub": "Een transformerende 24-daagse onderdompeling in Rishikesh, India. Himalaya-meesters, Ganga Aarti en RYT 200 certificering.",
+      "quickDuration": "24 Dagen",
+      "quickLevel": "Beginners tot Gevorderden",
+      "quickCert": "Yoga Alliance RYT 200 Certificering",
+      "quickLang": "Engels",
+      "quickBatch": "8–10 studenten",
+      "quickLocation": "Gianyar, Bali",
+      "btnReserve": "Plek reserveren",
+      "btnBrochure": "Lesprogramma downloaden",
+      "btnCounselor": "Praat met een adviseur"
+    },
+    "overview": {
+      "heading": "Welkom bij YogaGarhi Rishikesh",
+      "story": "Onze 200 uur yogadocentenopleiding op Bali is een grondig basisprogramma voor wie zelfverzekerd yogales wil geven of yoga diep wil integreren in het eigen leven. YogaGarhi bevindt zich in Gianyar, op circa 15 km van Ubud, te midden van rustgevende natuur. Tijdens de opleiding beoefen je dagelijks asana's, verdiep je je in uitlijning en bestudeer je pranayama, meditatie, filosofie en didactiek.",
+      "p1": "Onze 200-uurs opleiding in Rishikesh biedt een grondige en traditionele vorming in de yogahoofdstad van de wereld.",
+      "p2": "Onze meesters begeleiden je in Hatha, Ashtanga Vinyasa, Patanjali yoga sutra's, anatomie en didactiek."
+    },
+    "curriculum": {
+      "badge": "Lesmodules",
+      "heading": "Overzicht van het lesprogramma",
+      "sub": "Klik op een module om specifieke onderwerpen, praktische technieken en theorie te bekijken.",
+      "modules": {
+        "asana": "Asanabeoefening & Uitlijning",
+        "pranayama": "Pranayama & Subtiele energie",
+        "philosophy": "Yogafilosofie & Levensstijl",
+        "anatomy": "Anatomie & Fysiologie",
+        "methodology": "Didactiek & Lespraktijk",
+        "meditation": "Meditatie & Mindfulness",
+        "iyengar": "Iyengar Yoga basis & Hulpmiddelen",
+        "vinyasa": "Vinyasa Flow lesopbouw",
+        "hatha": "Klassieke traditionele Hatha Yoga"
+      },
+      "detailedModules": [
+        {
+          "title": "Ashtanga Yoga Houdingen",
+          "items": [
+            "Volledige Ashtanga primary series volgens K. Pattabhi Jois",
+            "Week 1: Introductie & Zonnegroeten A & B",
+            "Week 2: Staande reeks & yogaprops",
+            "Week 3: Zittende reeks & afrondende houdingen",
+            "Week 4: Mysore-stijl & lesgeefpraktijk"
+          ]
+        },
+        {
+          "title": "Yoga Filosofie",
+          "items": [
+            "Volledige Yoga Sutra's van Patanjali",
+            "Acht ledematen van Ashtanga Yoga",
+            "Pancha-Vayus & Panchakosha's",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Introductie tot de Veda's",
+            "Inspirerende verhalen van grote yogameesters"
+          ]
+        },
+        {
+          "title": "Pranayama & Ademhalingsoefeningen",
+          "items": [
+            "Volledige pranayama-technieken",
+            "Alle zes Shatkarma reinigingsoefeningen",
+            "Gevorderde ademhaling: Sheetali, Sheetkari",
+            "Kumbhaka (ademinouding)",
+            "Integratie met asana-beoefening"
+          ]
+        },
+        {
+          "title": "Heilige Klanken & Mantra Recitatie",
+          "items": [
+            "Volledige collectie traditionele mantra's",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Shloka voor Patanjali)",
+            "Dagelijkse mantra-chanting praktijk"
+          ]
+        },
+        {
+          "title": "Anatomie en Fysiologie",
+          "items": [
+            "Complete studie van lichaamssystemen",
+            "Fysiologie van spieren & gewrichten",
+            "Ademhalings- & zenuwstelsel",
+            "Voeding & spijsvertering",
+            "Praktijkgerichte workshops over asana's"
+          ]
+        },
+        {
+          "title": "Lesmethodiek",
+          "items": [
+            "Volledige lesopbouw & sequencing",
+            "Demonstratie- & observatieprincipes",
+            "Mentale & emotionele voorbereiding",
+            "Stapsgewijze lesplanning",
+            "Praktijklessen & feedback"
+          ]
+        },
+        {
+          "title": "Meditatie & Bandha's",
+          "items": [
+            "Osho Dynamische meditatie",
+            "Nada Brahma meditatie",
+            "Antar Mouna & Ajapa Japa",
+            "Beheersing van alle vier de Bandha's",
+            "Harmonische integratie met asana & pranayama"
+          ]
+        },
+        {
+          "title": "Uitlijning & Hands-on Correcties",
+          "items": [
+            "Functionele biomechanica voor klassieke yogahoudingen",
+            "Verbale instructies en veilige hands-on aanpassingen",
+            "Begrip van individuele anatomische variaties",
+            "Modificatiestrategieën met blokken en riemen"
+          ]
+        },
+        {
+          "title": "Klassieke Hatha Yoga Praktijk",
+          "items": [
+            "Diepgaande studie van Hatha-principes en statische houdingen",
+            "Klassieke opbouw: warming-up, piekhouding en tegenhoudingen",
+            "Balans tussen zonne- (Ha) en maan- (Tha) energieën",
+            "Integratie van Bandha's en Mudra's in asana's"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Nauwkeurige Uitlijning",
+          "items": [
+            "Methodische uitlijning met blokken, riemen en dekens",
+            "Exacte positionering van bekken, wervelkolom en schouders",
+            "Veilige voorbereiding op omgekeerde houdingen",
+            "Herstellende Iyengar-series met hulpmiddelen"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Dynamische Sequencing",
+          "items": [
+            "Intelligente lesstructuur: opbouw, piek en ontspanning",
+            "Vloeiende overgangen afgestemd op de ademhaling",
+            "Thematische vinyasa-lessen voor diverse niveaus",
+            "Ritme, tempo en energetische begeleiding"
+          ]
+        },
+        {
+          "title": "Aanvullende Workshops",
+          "items": [
+            "Sound Healing klankreizen",
+            "Strandyoga op Bali",
+            "Yin Yoga & Acro Yoga",
+            "Basisprincipes van Ayurveda",
+            "Traditionele Agni Hotra vuurceremonie"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Accommodatie & Tarieven",
+      "sub": "Duidelijke all-inclusive tarieven zonder onverwachte kosten.",
+      "tuitionOnly": "Alleen lesgeld pakket",
+      "tuitionOnlyDesc": "Lessen, maaltijden, studiemateriaal en certificering. Zonder verblijf.",
+      "triple": "Gedeelde driepersoonskamer",
+      "tripleDesc": "Gekoelde kamer voor drie personen met eigen badkamer en balkon.",
+      "double": "Gedeelde tweepersoonskamer",
+      "doubleDesc": "Fijne kamer voor twee personen met badkamer, airconditioning en tuinzicht.",
+      "private": "Luxe privékamer",
+      "privateDesc": "Privékamer met groot bed, badkamer ensuite, airco en eigen balkon.",
+      "earlyBird": "Vroegboekkorting",
+      "save300": "Bespaar $300 USD"
+    },
+    "tourCall": {
+      "heading": "Wil je de school bekijken voor je boekt?",
+      "sub": "Neem deel aan een live videogesprek voor een persoonlijke rondleiding over de campus, lesruimtes, yoga shala en kamers.",
+      "cta": "Gesprek boeken. Zie de school. Zie je kamer. Zie de yogazaal.",
+      "bookCallLive": "Bekijk de school, je kamer en de yoga shala live. Vul hieronder je gegevens in om een afspraak te plannen."
+    },
+    "takeaway": {
+      "badge": "Wat je meeneemt",
+      "heading": "Wat je meeneemt",
+      "headingItalic": "naar huis",
+      "sub": "Naast het officiële certificaat vertrek je met een getransformeerd perspectief, een diepere verbinding met jezelf en authentieke vaardigheden om anderen te begeleiden.",
+      "careerImpactTitle": "Carrièreperspectief:",
+      "careerImpactDesc": "Na afronding van de 200-urige yogadocentenopleiding kun je wereldwijd lesgeven in studio's, online live-lessen verzorgen, retreats leiden of je eigen zelfstandige praktijk starten.",
+      "card1Title": "Wereldwijde certificering",
+      "card1Desc": "Yoga Alliance RYT-200 om overal jouw carrière te starten.",
+      "card2Title": "Beheers de beoefening",
+      "card2Desc": "Gedegen begeleiding in Hatha, Vinyasa, Ashtanga en Iyengar.",
+      "card3Title": "Veiligheid & anatomie",
+      "card3Desc": "Leer veilig en blessurevrij lesgeven en praktiseren.",
+      "card4Title": "Spirituele verdieping",
+      "card4Desc": "Duik diep in Mantra's, meditatie en filosofie.",
+      "card5Title": "Lesmethodiek",
+      "card5Desc": "Praktische vaardigheden om leerlingen helder te instrueren en inspireren.",
+      "card6Title": "Hechte vriendschappen",
+      "card6Desc": "Levenslange verbindingen met een wereldwijde yogagemeenschap."
+    },
+    "timeline": {
+      "prepTitle": "Voorbereiding begint bij inschrijving",
+      "prepDesc": "Begin je reis met voorbereidende lesstof en persoonlijke begeleiding.",
+      "datesTitle": "Opleiding: 1e t/m 24e van elke maand",
+      "datesDesc": "Intensief 24-daags programma iedere maand op Bali.",
+      "supportTitle": "Levenslange YogaGarhi-gemeenschap",
+      "supportDesc": "Voor altijd verbonden met onze wereldwijde yogafamilie."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Accommodatie",
+      "featuresSub": "Een vredig yogaparadijs in het hart van de heilige Ubud-regio op Bali",
+      "feat1": "10 prachtige watervallen binnen een straal van 10 km",
+      "feat2": "Eigen privébos met een waterval op het terrein",
+      "feat3": "Rustgevende wandelingen door rijstvelden op het terrein",
+      "feat4": "Slechts 15 km van het centrum van Ubud",
+      "glimpses": "Een impressie van je verblijf",
+      "allRooms": "Alle kamers zijn inclusief",
+      "wifi": "Gratis wifi",
+      "hotWater": "Warm water",
+      "acFan": "Airco / Ventilator",
+      "cleaning": "Dagelijkse schoonmaak",
+      "bed1": "bed",
+      "bedsMore": "bedden",
+      "courseOnly": "Alleen cursus",
+      "mostPopular": "Meest gekozen",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Voorbij de mat",
+      "heading": "Heilige excursies",
+      "sub": "Dompel jezelf onder in het spirituele erfgoed van Bali via transformerende ervaringen"
+    },
+    "prakritiResearch": {
+      "heading": "Sachin Ji's onderzoek naar gepersonaliseerde yoga en Prakriti",
+      "quote": "„Yoga is geen standaardformule, want ieder lichaam draagt een unieke energie”",
+      "card1Title": "De kernvraag",
+      "card1Text": "Tijdens de Master Yoga studies van onze hoofddocent rees een onvermijdelijke vraag: Waarom brengt dezelfde yogasessie sommigen tot rust, terwijl anderen zich moe, onrustig of gespannen voelen?",
+      "card2Title": "Diepgaand onderzoek",
+      "card2Text": "Dit leidde tot intensieve studie van klassieke teksten, Ayurveda en jarenlange ervaring met cursisten. Het antwoord was even eenvoudig als krachtig: ieder mens wordt geboren met een unieke Prakriti.",
+      "card3Title": "De energie-blauwdruk",
+      "card3Text": "Prakriti vormt het lichaam, de geest, emoties en het zenuwstelsel. De een heeft aarding nodig, de ander beweging en weer een ander stilte. Eén uniforme stijl kan disbalans veroorzaken.",
+      "card4Title": "Kwaliteit van de beoefening",
+      "card4Text": "Belangrijker dan welke yogastijl je beoefent, is hoe je beoefent: hoe het zenuwstelsel wordt gerespecteerd, hoe de ademhaling vloeit en hoe je Dosha wordt ondersteund in plaats van geforceerd.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Hieruit ontstond Shiv–Shakti Sadhana: een evenwichtige benadering die stabiliteit en stroming, bewustzijn en vitaliteit verenigt. Asana biedt hier stevige aarding en veerkracht.",
+      "card6Title": "Terug naar balans",
+      "card6Text": "Wanneer yoga jouw Prakriti respecteert, wordt het toegankelijk, duurzaam en diep herstellend. Echte yoga verandert je niet; het brengt je terug in balans met jezelf.",
+      "conclusion1": "Onze hoofddocent merkte dat wanneer de les geen rekening houdt met het zenuwstelsel en het natuurlijke energietype, zelfs correcte houdingen tot vermoeidheid of rusteloosheid kunnen leiden.",
+      "conclusion2": "„Wanneer yoga jouw Prakriti eert, wordt het voor iedereen toegankelijk, duurzaam en helend. Hier wordt yoga nooit opgedrongen: het is persoonlijk, bewust en respectvol voor wie je bent.”"
+    },
+    "ethicsExtra": {
+      "code1": "Stipt op tijd aanwezig",
+      "code2": "Geen alcohol of roken",
+      "code3": "Uitsluitend vegetarisch eten",
+      "code4": "Stilte bewaren in de les",
+      "code5": "Gepaste en respectvolle kleding",
+      "code6": "Wederzijds respect voor iedereen",
+      "code7": "Geen telefoons in de lesruimte",
+      "code8": "Volledige aanwezigheid verplicht",
+      "refund1": "Omboeken mogelijk binnen 12 maanden",
+      "refund2": "Plek overdragen toegestaan",
+      "refund3": "Volledige terugbetaling bij annulering door ons",
+      "refund4": "Proefdag-voorwaarde van toepassing",
+      "refund5": "Geen restitutie na Dag 1",
+      "reviewsHeading": "Ervaringen van onze studenten",
+      "viewAllGoogle": "Bekijk alle recensies op Google",
+      "basedOnReviews": "Gebaseerd op",
+      "openGoogleMaps": "Openen in Google Maps",
+      "open24Hours": "24 uur geopend"
+    },
+    "sunday": {
+      "note": "Zondag is een volledige rustdag voor ontspanning, zelfstudie of optionele uitstapjes.",
+      "cta": "Ontdek zondag op Bali"
+    },
+    "tapHover": {
+      "tap": "Tik voor meer",
+      "hover": "Beweeg erover voor meer"
+    },
+    "inclusionsList": [
+      "Schone en comfortabele kamer",
+      "Eigen badkamer met warm water",
+      "Airconditioning / ventilator",
+      "Gratis snelle wifi",
+      "Drie gezonde vegetarische maaltijden per dag",
+      "Kruidenthee en gefilterd drinkwater",
+      "Studiemateriaal (handboeken, notitieboeken, pennen)",
+      "Yogamatten en hulpmiddelen aanwezig",
+      "Buitengeheven excursies en weekendtrips",
+      "Luchthaventransfer bij aankomst (dichtstbijzijnde luchthaven)",
+      "24/7 ondersteuningsteam op de campus",
+      "Officieel certificaat na succesvolle afronding",
+      "Traditionele Balinese massage",
+      "Balinese culturele dansvoorstelling",
+      "Wandeling door de rijstvelden",
+      "Online Pre-TTC voorbereidingscursus inbegrepen",
+      "Arm-balance workshop",
+      "Ayurveda workshop",
+      "Levenslange gratis cursusherhaling inbegrepen",
+      "YogaGarhi boek met 35+ creatieve lessenseries"
+    ],
+    "exclusionsList": [
+      "Vliegtickets en reiskosten",
+      "Visum en reisverzekering",
+      "Transfer terug naar de luchthaven",
+      "Wasservice",
+      "Persoonlijke uitgaven & extra activiteiten"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Multi-Style yogaopleiding",
+        "description": "Leer yoga op een authentieke, beproefde wijze. Onze docenten dragen eeuwenoude wijsheid over."
+      },
+      {
+        "title": "Yoga Alliance gecertificeerd",
+        "description": "Behaal een internationaal erkend diploma en start vol zelfvertrouwen met lesgeven."
+      },
+      {
+        "title": "Vreedzame omgeving op Bali",
+        "description": "Ervaar yoga midden in ongerepte natuur. Rustgevende stranden en groen die je verdiepen."
+      },
+      {
+        "title": "Buitenexcursies",
+        "description": "Verken tempels, stranden en natuurpaden en combineer studie met inspirerende cultuur."
+      },
+      {
+        "title": "Kleine lesgroepen",
+        "description": "Krijg persoonlijke aandacht en precieze aanwijzingen. Jouw groei staat bij ons voorop."
+      },
+      {
+        "title": "Warme gemeenschap",
+        "description": "Maak deel uit van een hechte, positieve yogafamilie en groei in een veilige omgeving."
+      },
+      {
+        "title": "Balinese massage",
+        "description": "Traditionele Indonesische lichaamsbehandeling om spierspanning te verlichten en diep te ontspannen."
+      },
+      {
+        "title": "Balinese dansvoorstelling",
+        "description": "Eeuwenoude, expressieve danskunst die het rijke spirituele erfgoed van Bali toont."
+      },
+      {
+        "title": "Gezonde maaltijden",
+        "description": "Geniet van verse sattvische voeding die jouw dagelijkse yogapraktijk optimaal ondersteunt."
+      },
+      {
+        "title": "Meditatiebeoefening",
+        "description": "Versterk innerlijke rust en opmerkzaamheid dankzij dagelijkse begeleide sessies."
+      },
+      {
+        "title": "Ervaren docenten",
+        "description": "Leer van gecertificeerde meesters met jarenlange praktische leservaring."
+      },
+      {
+        "title": "Yogische levenswijze",
+        "description": "Maak de yogische manier van leven eigen voor een gezonde balans van lichaam en geest."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Workshop Ayurveda & Ayurvedisch koken",
+        "description": "Begrijp jouw persoonlijke constitutie (Prakriti) en leer dosha's in evenwicht brengen met voeding."
+      },
+      {
+        "title": "Meesterschap in arm-balances",
+        "description": "Bouw kracht en techniek op voor houdingen zoals de Kraai, Zijkraai en Vliegende Duif."
+      },
+      {
+        "title": "Handstand-workshop",
+        "description": "Overwin twijfel en vind je balanspunt met methodische oefeningen tegen de muur en met partners."
+      },
+      {
+        "title": "Yin Yoga & diepe stretches",
+        "description": "Bereik dieper bindweefsel met lang aangehouden houdingen om opgebouwde spanning los te laten."
+      },
+      {
+        "title": "Klankbad & sound healing sessie",
+        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Open je hart met devotionele gezangen en kirtan om contact te maken met de spirituele essentie van yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Balinese dansvoorstelling",
+        "description": "Bewonder de traditionele dans van Bali: een samenspel van gratie, mythes en toewijding."
+      },
+      {
+        "title": "Wandeling door de rijstvelden",
+        "description": "Wandel door de beroemde rijstterrassen van Ubud en ervaar de serene rust van het platteland."
+      },
+      {
+        "title": "Bezoek aan heilige waterval",
+        "description": "Maak een tocht naar een heilige waterval voor een reinigingsritueel met zuiver bronwater."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Ontbijt",
+        "time": "07:00 uur",
+        "items": [
+          "Vers tropisch fruit",
+          "Huisgemaakte granola met kokosyoghurt",
+          "Kruidenthee & verse sappen",
+          "Balinese rijstepap"
+        ]
+      },
+      {
+        "meal": "Lunch",
+        "time": "12:30 uur",
+        "items": [
+          "Voedzame Buddha bowls",
+          "Gerechten met tempeh en tofu",
+          "Knapperige verse tuinsalades",
+          "Traditionele Balinese groenten"
+        ]
+      },
+      {
+        "meal": "Diner",
+        "time": "18:30 uur",
+        "items": [
+          "Verwarmende soepen",
+          "Gestoomde graanbowls met dahl",
+          "Ayurvedische kruidige kitchari",
+          "Rustgevende avondkruidenthee"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Video-ervaringen van studenten",
+    "videoStoriesHeading": "Hoor het direct van onze afgestudeerden in Bali",
+    "videoStoriesSub": "Eerlijke verhalen van cursisten die deze residentiële reis bij YogaGarhi hebben gemaakt.",
+    "verifiedGraduate": "Geverifieerde afgestudeerde",
+    "speakTeacherTitle": "Wil je eerst met een hoofddocent praten?",
+    "speakTeacherDesc": "15 minuten 1-op-1 videogesprek om je doelen, kamer en data te bespreken.",
+    "helpfulGuidesBadge": "Lees voor vertrek",
+    "helpfulGuidesTitle": "Handige gidsen & voorbereidingstips",
+    "helpfulGuidesDesc": "Ontdek onze uitgebreide gidsen om lichaam, geest en reis voor te bereiden op je YTT in Bali.",
+    "readArticle": "Lees artikel",
+    "mindfulEating": "Een dag van bewuste voeding",
+    "clickToCollapse": "Klik om in te klappen",
+    "clickToExpand": "Klik om uit te vouwen",
+    "caterDietsTitle": "We houden rekening met alle diëten",
+    "caterDietsDesc": "Laat ons je dieetwensen weten en wij zorgen voor de rest",
+    "studentStories": {
+      "badge": "Ervaringen van Studenten",
+      "heading": "Getransformeerde Harten bij YogaGarhi",
+      "sub": "\"Lees de persoonlijke ervaringen van studenten die deze bijzondere transformatiereis hebben voltooid.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canada",
+          "quote": "YogaGarhi is door en door authentiek en geworteld in de ware essentie van yoga. Vanaf het allereerste moment voelde ik me oprecht gezien en ondersteund als mens. De docenten geven echt om je ontwikkeling en helpen je jouw eigen stem te vinden.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turkije",
+          "quote": "Sachin Ji is zonder twijfel een van de meest deskundige yogadocenten bij wie ik ooit heb geleerd. Hoewel ik als absolute beginner startte, was hij geduldig en bemoedigend, waardoor ik de uitlijning helder begreep.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusland",
+          "quote": "Mijn 200-urige opleiding op Bali was werkelijk magisch. 🌺 De opgedane kennis was diepgaand en puur. De docenten geven les vanuit het hart met warmte en wijsheid. Het voelt als een hechte familie.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canada",
+          "quote": "Sachin Ji is een fantastische leraar en een warm mens. Deze opleiding op Bali was de start van een prachtige yogareis waardoor ik nu met vol vertrouwen lesgeef in verschillende landen over de wereld.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Duitsland",
+          "quote": "Ik waardeer de kalme, vriendelijke en gastvrije energie van Sachin Ji enorm. Hij heeft diepe kennis en neemt de tijd voor elke student. Zijn lessen helpen je meer te bereiken dan je voor mogelijk hield.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australië",
+          "quote": "Een onvergetelijke, transformatieve ervaring bij YogaGarhi Bali. De kleine groepsgrootte maakte al het verschil: elke correctie was persoonlijk en doordacht. Ik verliet de ashram met het volste vertrouwen om les te geven.",
+          "avatarLetter": "N"
+        }
+      ]
+    }
   }
 }

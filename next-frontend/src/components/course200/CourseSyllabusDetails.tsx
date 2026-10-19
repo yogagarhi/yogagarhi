@@ -4,13 +4,20 @@ import { courseData } from "@/constants/courses";
 import { useTranslations } from "next-intl";
 
 export default function CourseSyllabusDetails({
-  courseKey = "200-hour"
+  courseKey = "200-hour",
+  namespace = "course200"
 }: {
   courseKey?: keyof typeof courseData;
+  namespace?: string;
 }) {
-  const tCurriculum = useTranslations("course200.curriculum");
+  const tCurriculum = useTranslations(`${namespace}.curriculum` as any);
   const fallbackCurriculum = courseData[courseKey]?.curriculum || [];
-  const detailedModules = (tCurriculum.raw("detailedModules") as Array<{ title: string; items: string[] }>) || [];
+  let detailedModules: any[] = [];
+  try {
+    detailedModules = (tCurriculum.raw("detailedModules") as Array<{ title: string; items: string[] }>) || [];
+  } catch (e) {
+    detailedModules = [];
+  }
   const curriculum = (Array.isArray(detailedModules) && detailedModules.length > 0) ? detailedModules : fallbackCurriculum;
 
   if (curriculum.length === 0) return null;
@@ -31,7 +38,7 @@ export default function CourseSyllabusDetails({
       </div>
 
       <div className="space-y-3">
-        {curriculum.map((module, idx) => (
+        {curriculum.map((module: any, idx: number) => (
           <details
             key={idx}
             className="group bg-card rounded-xl border border-border/70 hover:border-primary/40 open:border-primary/50 transition-all duration-300 overflow-hidden"
@@ -51,7 +58,7 @@ export default function CourseSyllabusDetails({
             </summary>
             <div className="px-5 pb-5 pt-2 border-t border-border/40 bg-secondary/10">
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2.5 pt-2">
-                {module.items.map((item, itemIdx) => (
+                {module.items?.map((item: string, itemIdx: number) => (
                   <li key={itemIdx} className="flex items-start gap-2 text-xs md:text-sm text-muted-foreground">
                     <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                     <span>{item}</span>

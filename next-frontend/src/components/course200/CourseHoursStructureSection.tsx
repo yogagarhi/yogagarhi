@@ -4,8 +4,8 @@ import { Clock, BookOpen, UserCheck, Layers } from "lucide-react";
 import { HOURS_BREAKDOWN } from "@/constants/course200Data";
 import { useTranslations } from "next-intl";
 
-export default function CourseHoursStructureSection() {
-  const t = useTranslations("course200.hoursStructure");
+export default function CourseHoursStructureSection({ namespace = "course200" }: { namespace?: string } = {}) {
+  const t = useTranslations(`${namespace}.hoursStructure` as any);
 
   // If hours breakdown is null or not confirmed, DO NOT RENDER anything
   if (!HOURS_BREAKDOWN) {

@@ -3,9 +3,15 @@ import { useTranslations } from "next-intl";
 import { HelpCircle, ChevronDown } from "lucide-react";
 import { COURSE_200_FAQS } from "@/constants/course200Data";
 
-export default function CourseFAQSection() {
-  const t = useTranslations("course200");
-  const faqs = (t.raw("faqs") as Array<{ question: string; answer: string }>) || COURSE_200_FAQS;
+export default function CourseFAQSection({
+  namespace = "course200",
+  fallbackFaqs = COURSE_200_FAQS
+}: {
+  namespace?: string;
+  fallbackFaqs?: Array<{ question: string; answer: string }>;
+} = {}) {
+  const t = useTranslations(namespace as any);
+  const faqs = (t.raw("faqs") as Array<{ question: string; answer: string }>) || fallbackFaqs;
   if (!faqs || faqs.length === 0) return null;
 
   return (
