@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Index from "@/components/pages/Index";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
-import { applyQualityGate } from "@/utils/seoQualityGate";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 import { routing } from "@/i18n/routing";
 
 export async function generateMetadata({
@@ -30,10 +30,7 @@ export async function generateMetadata({
         "yoga teacher training Bali, YTTC Ubud, 200 hour yoga certification, yoga alliance certified, yoga retreat Bali, yoga school Indonesia, RYT 200, yoga ashram Bali, meditation training, pranayama course, YogaGarhi",
       alternates: {
         canonical: "https://www.yogagarhi.com",
-        languages: {
-          ...Object.fromEntries(routing.locales.map((loc) => [loc, loc === "en" ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${loc}`])),
-          "x-default": "https://www.yogagarhi.com",
-        },
+        languages: getReviewedHreflang(""),
       },
       openGraph: {
         title: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi",
@@ -73,10 +70,7 @@ export async function generateMetadata({
     keywords: "yoga teacher training Bali, YTTC Ubud, 200 hour yoga certification, yoga alliance certified, yoga retreat Bali, yoga school Indonesia, RYT 200, yoga ashram Bali, meditation training, pranayama course, YogaGarhi",
     alternates: {
       canonical: `https://www.yogagarhi.com/${locale}`,
-      languages: {
-        ...Object.fromEntries(routing.locales.map((loc) => [loc, loc === "en" ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${loc}`])),
-        "x-default": "https://www.yogagarhi.com",
-      },
+      languages: getReviewedHreflang(""),
     },
     openGraph: {
       title,

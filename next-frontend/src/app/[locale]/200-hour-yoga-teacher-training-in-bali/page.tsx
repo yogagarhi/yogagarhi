@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { applyQualityGate } from "@/utils/seoQualityGate";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 import Course200Hour from "@/components/pages/Course200Hour";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
@@ -44,15 +44,7 @@ export async function generateMetadata({
             ],
             alternates: {
                 canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
-                languages: {
-                    ...Object.fromEntries(routing.locales.map((loc) => [
-                        loc,
-                        loc === "en"
-                            ? "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali"
-                            : `https://www.yogagarhi.com/${loc}/200-hour-yoga-teacher-training-in-bali`
-                    ])),
-                    "x-default": "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
-                },
+                languages: getReviewedHreflang("/200-hour-yoga-teacher-training-in-bali"),
             },
             robots: {
                 index: true,
@@ -103,15 +95,7 @@ export async function generateMetadata({
         ],
         alternates: {
             canonical: `https://www.yogagarhi.com/${locale}/200-hour-yoga-teacher-training-in-bali`,
-            languages: {
-                ...Object.fromEntries(routing.locales.map((loc) => [
-                    loc,
-                    loc === "en"
-                        ? "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali"
-                        : `https://www.yogagarhi.com/${loc}/200-hour-yoga-teacher-training-in-bali`
-                ])),
-                "x-default": "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
-            },
+            languages: getReviewedHreflang("/200-hour-yoga-teacher-training-in-bali"),
         },
         robots: {
             index: true,

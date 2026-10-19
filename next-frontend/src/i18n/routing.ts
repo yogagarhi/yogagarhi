@@ -10,6 +10,7 @@ export const routing = defineRouting({
   defaultLocale: DEFAULT_LOCALE,
   localePrefix: 'as-needed',
   localeDetection: false, // Strict requirement: No automatic browser/IP redirects. Language changes ONLY via switcher.
+  alternateLinks: false, // Strict Quality Gate: Disable automatic next-intl HTTP Link header; hreflang alternates are managed strictly via Quality Gate HTML metadata and sitemap
 });
 
 export type Locale = (typeof routing.locales)[number];

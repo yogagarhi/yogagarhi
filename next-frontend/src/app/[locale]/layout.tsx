@@ -12,6 +12,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { isLocaleReviewed } from "@/config/i18nConfig";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -48,10 +49,7 @@ export async function generateMetadata({
     },
     alternates: {
       canonical: locale === "en" ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${locale}`,
-      languages: {
-        ...Object.fromEntries(routing.locales.map((loc) => [loc, loc === "en" ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${loc}`])),
-        "x-default": "https://www.yogagarhi.com",
-      },
+      languages: isReviewed ? getReviewedHreflang("") : undefined,
     },
     description:
       "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.",

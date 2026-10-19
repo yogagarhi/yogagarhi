@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
+import { SUPPORTED_LOCALES, isLocaleReviewed, TRANSLATED_PAGES } from '@/config/i18nConfig'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    return [
+    const baseUrls: MetadataRoute.Sitemap = [
         {
             url: 'https://www.yogagarhi.com',
             lastModified: new Date(),
@@ -216,6 +217,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 0.9,
         },
-    ]
+    ];
+
+    // Dynamic inclusion of reviewed non-English locales
+    // Only locales with reviewed: true are eligible for sitemap inclusion
+    const reviewedNonEnLocales = SUPPORTED_LOCALES.filter(
+        (loc) => loc !== 'en' && isLocaleReviewed(loc)
+    );
+
+    const localizedUrls: MetadataRoute.Sitemap = [];
+
+    for (const loc of reviewedNonEnLocales) {
+        for (const [pagePath] of Object.entries(TRANSLATED_PAGES)) {
+            const normalized = pagePath === '/' ? '' : pagePath;
+            localizedUrls.push({
+                url: `https://www.yogagarhi.com/${loc}${normalized}`,
+                lastModified: new Date(),
+                changeFrequency: 'weekly',
+                priority: pagePath === '/' || pagePath === '/200-hour-yoga-teacher-training-in-bali' ? 0.9 : 0.7,
+            });
+        }
+    }
+
+    return [...baseUrls, ...localizedUrls];
 }
 

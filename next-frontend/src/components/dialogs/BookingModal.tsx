@@ -28,8 +28,9 @@ export default function BookingModal({
   const locale = useLocale();
   const router = useRouter();
 
-  // Calendar state
-  const [selectedMonth, setSelectedMonth] = useState(0);
+  // Calendar state: initialize dynamically to current month and year
+  const [selectedYear, setSelectedYear] = useState(() => new Date().getFullYear());
+  const [selectedMonth, setSelectedMonth] = useState(() => new Date().getMonth());
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [selectedTimezone, setSelectedTimezone] = useState("UTC +05:30 New Delhi, Mumbai");
@@ -48,8 +49,29 @@ export default function BookingModal({
   const isFormComplete = bookingForm.name.trim() && bookingForm.email.trim() && bookingForm.phone.trim() && bookingForm.countryCode;
   const canProceedToForm = selectedDay && selectedTime;
 
-  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const currentYear = 2026;
+  const isCurrentMonthOrPast = () => {
+    const today = new Date();
+    return selectedYear < today.getFullYear() || (selectedYear === today.getFullYear() && selectedMonth <= today.getMonth());
+  };
+
+  const handlePrevMonth = () => {
+    if (isCurrentMonthOrPast()) return;
+    if (selectedMonth === 0) {
+      setSelectedMonth(11);
+      setSelectedYear(prev => prev - 1);
+    } else {
+      setSelectedMonth(prev => prev - 1);
+    }
+  };
+
+  const handleNextMonth = () => {
+    if (selectedMonth === 11) {
+      setSelectedMonth(0);
+      setSelectedYear(prev => prev + 1);
+    } else {
+      setSelectedMonth(prev => prev + 1);
+    }
+  };
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -57,6 +79,7 @@ export default function BookingModal({
     setIsSubmitting(true);
 
     try {
+      const formattedBookingDate = `${selectedDay} ${new Intl.DateTimeFormat('en-US', { month: 'long' }).format(new Date(selectedYear, selectedMonth, selectedDay || 1))} ${selectedYear}`;
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
@@ -66,7 +89,7 @@ export default function BookingModal({
           language: locale,
           _subject: `New Booking Request: ${bookingForm.name}`,
           form_type: "booking_request",
-          booking_date: `${selectedDay} ${months[selectedMonth]} ${currentYear}`,
+          booking_date: formattedBookingDate,
           booking_time: selectedTime || "",
           timezone: selectedTimezone,
           ...bookingForm,
@@ -87,9 +110,13 @@ export default function BookingModal({
   };
 
   const resetForm = () => {
+    const today = new Date();
+    setSelectedYear(today.getFullYear());
+    setSelectedMonth(today.getMonth());
     setStep('calendar');
     setSelectedDay(null);
     setSelectedTime(null);
+    setShowTimezoneDropdown(false);
     setBookingForm({ name: '', email: '', countryCode: '', phone: '', message: '' });
   };
 
@@ -108,8 +135,8 @@ export default function BookingModal({
   };
 
   // Get days in selected month
-  const daysInMonth = new Date(currentYear, selectedMonth + 1, 0).getDate();
-  const firstDayOfMonth = new Date(currentYear, selectedMonth, 1).getDay();
+  const daysInMonth = new Date(selectedYear, selectedMonth + 1, 0).getDate();
+  const firstDayOfMonth = new Date(selectedYear, selectedMonth, 1).getDay();
 
   return (
     <>
@@ -125,7 +152,7 @@ export default function BookingModal({
               <DialogDescription className={`text-sm text-muted-foreground mt-2 ${step === 'calendar' ? 'sr-only' : ''}`}>
                 {step === 'calendar'
                   ? t("bookingDesc")
-                  : `Scheduled for ${selectedDay} ${months[selectedMonth]} ${currentYear} at ${selectedTime}`
+                  : `Scheduled for ${selectedDay} ${new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' }).format(new Date(selectedYear, selectedMonth, 1))} at ${selectedTime}`
                 }
               </DialogDescription>
             </DialogHeader>
@@ -146,17 +173,18 @@ export default function BookingModal({
                   {/* Month Navigation */}
                   <div className="flex items-center justify-center gap-4 mb-4">
                     <button
-                      onClick={() => setSelectedMonth(prev => prev > 0 ? prev - 1 : 11)}
-                      className="p-1 hover:bg-primary-foreground/10 rounded transition-colors"
+                      onClick={handlePrevMonth}
+                      disabled={isCurrentMonthOrPast()}
+                      className={`p-1 rounded transition-colors ${isCurrentMonthOrPast() ? 'opacity-20 cursor-not-allowed' : 'hover:bg-primary-foreground/10'}`}
                       aria-label={t("prevMonth") || "Previous month"}
                     >
                       <ChevronDown className="w-5 h-5 rotate-90" />
                     </button>
                     <span className="font-heading font-bold text-base min-w-[120px] text-center capitalize">
-                      {new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' }).format(new Date(currentYear, selectedMonth, 1))}
+                      {new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' }).format(new Date(selectedYear, selectedMonth, 1))}
                     </span>
                     <button
-                      onClick={() => setSelectedMonth(prev => prev < 11 ? prev + 1 : 0)}
+                      onClick={handleNextMonth}
                       className="p-1 hover:bg-primary-foreground/10 rounded transition-colors"
                       aria-label={t("nextMonth") || "Next month"}
                     >
@@ -180,8 +208,10 @@ export default function BookingModal({
                       const day = i + 1;
                       const isSelected = selectedDay === day;
                       const today = new Date();
-                      const calendarDate = new Date(currentYear, selectedMonth, day);
-                      const isUpcoming = calendarDate >= new Date(today.getFullYear(), today.getMonth(), today.getDate());
+                      today.setHours(0, 0, 0, 0);
+                      const calendarDate = new Date(selectedYear, selectedMonth, day);
+                      calendarDate.setHours(0, 0, 0, 0);
+                      const isUpcoming = calendarDate >= today;
 
                       return (
                         <button
@@ -192,7 +222,7 @@ export default function BookingModal({
                             ? "bg-primary text-primary-foreground"
                             : isUpcoming
                               ? "text-primary-foreground hover:bg-primary-foreground/10"
-                              : "text-primary-foreground/30 cursor-not-allowed"
+                              : "text-primary-foreground/30 cursor-not-allowed line-through opacity-40"
                             }`}
                         >
                           {day}
@@ -214,8 +244,8 @@ export default function BookingModal({
                   <div>
                     <h4 className="font-medium text-foreground mb-1 text-sm">{t("whatTimeBest")}</h4>
                     {selectedDay && (
-                      <p className="text-xs text-muted-foreground mb-3">
-                        {selectedDay} {months[selectedMonth]} {currentYear}
+                      <p className="text-xs text-muted-foreground mb-3 font-medium">
+                        {selectedDay} {new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' }).format(new Date(selectedYear, selectedMonth, 1))}
                       </p>
                     )}
 
@@ -392,7 +422,7 @@ export default function BookingModal({
                 </DialogDescription>
               </div>
               <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground space-y-2">
-                <p>📅 <span className="font-medium text-foreground">{selectedDay} {months[selectedMonth]} {currentYear}</span> at <span className="font-medium text-foreground">{selectedTime}</span></p>
+                <p>📅 <span className="font-medium text-foreground">{selectedDay} {new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' }).format(new Date(selectedYear, selectedMonth, 1))}</span> at <span className="font-medium text-foreground">{selectedTime}</span></p>
                 <p>📧 <span className="font-medium text-foreground">{bookingForm.email}</span></p>
                 <p>📱 <span className="font-medium text-foreground">{bookingForm.countryCode} {bookingForm.phone}</span></p>
               </div>
