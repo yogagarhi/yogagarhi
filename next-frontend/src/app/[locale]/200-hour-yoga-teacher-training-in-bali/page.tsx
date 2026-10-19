@@ -7,6 +7,7 @@ import { BATCHES_200_HOUR, filterUpcomingBatches } from "@/constants/courseDates
 import { COURSE_200_FAQS } from "@/constants/course200Data";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 
 /* =========================
    SEO METADATA
@@ -43,6 +44,15 @@ export async function generateMetadata({
             ],
             alternates: {
                 canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
+                languages: {
+                    ...Object.fromEntries(routing.locales.map((loc) => [
+                        loc,
+                        loc === "en"
+                            ? "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali"
+                            : `https://www.yogagarhi.com/${loc}/200-hour-yoga-teacher-training-in-bali`
+                    ])),
+                    "x-default": "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
+                },
             },
             robots: {
                 index: true,
@@ -76,8 +86,7 @@ export async function generateMetadata({
         messages.course200?.metaDesc ||
         "Join residential 200-Hour Yoga Teacher Training in Bali (RYT 200). Small batches of 8–10, Himalayan lineage, all-inclusive from $999 USD.";
 
-    const url =
-        "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali";
+    const url = `https://www.yogagarhi.com/${locale}/200-hour-yoga-teacher-training-in-bali`;
 
     return applyQualityGate({
         metadataBase: new URL("https://www.yogagarhi.com"),
@@ -93,7 +102,16 @@ export async function generateMetadata({
             "yoga teacher training bali 2027"
         ],
         alternates: {
-            canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
+            canonical: `https://www.yogagarhi.com/${locale}/200-hour-yoga-teacher-training-in-bali`,
+            languages: {
+                ...Object.fromEntries(routing.locales.map((loc) => [
+                    loc,
+                    loc === "en"
+                        ? "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali"
+                        : `https://www.yogagarhi.com/${loc}/200-hour-yoga-teacher-training-in-bali`
+                ])),
+                "x-default": "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
+            },
         },
         robots: {
             index: true,
@@ -156,8 +174,9 @@ export default async function Page({
 
     const course = courseData["200-hour"];
     const initialBatches = filterUpcomingBatches(BATCHES_200_HOUR);
-    const pageUrl =
-        "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali";
+    const pageUrl = locale === "en"
+        ? "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali"
+        : `https://www.yogagarhi.com/${locale}/200-hour-yoga-teacher-training-in-bali`;
 
     const fullDescription = "Our 200 Hour Yoga Teacher Training in Bali is a full, beginner-to-intermediate level course for students who want to become confident yoga teachers or deeply understand yoga for their own life. Yoga Garhi is in Gianyar, only about 15 km from Ubud, so you enjoy a peaceful, green village setting close to nature with easy access to Bali’s main yoga and culture center. During the training, you practice asanas every day, learn correct alignment, study pranayama, meditation, yoga philosophy, anatomy, and full teaching methodology. Step by step, you build strength in your body, clarity in your mind, and the skills to guide safe and meaningful classes for others. Bali is one of the most loved places in the world for yoga, with rice fields, temples, daily prayers, and a gentle, spiritual feeling in the air. In Gianyar, you stay away from the crowded tourist areas but you can still visit Ubud’s cafes, markets, and healing centers in your free time. A typical day at Yoga Garhi starts with silence, pranayama, and meditation, followed by strong asana practice, then classes on philosophy or anatomy, and afternoon teaching practice or workshops. Evenings usually include gentle yoga, relaxation, chanting, or group sharing. This daily rhythm helps you live the yogic lifestyle, not just do yoga for one hour. Yoga Garhi is a heart-led school created by sincere yoga practitioners and teachers who truly live what they teach. We share yoga in a traditional yet simple way, using clear language and practical examples so you really understand. Our school in Gianyar has a calm, natural atmosphere with fresh air and village life around. We keep our groups small so every student gets personal guidance, alignment corrections, and support in their teaching practice. Our teachers are experienced and caring; they are patient with beginners, honest with feedback, and always open to questions. We believe yoga is not about perfect poses or performance. It is about awareness, kindness, balance, and connection with yourself and others. At Yoga Garhi, you will find discipline but also warmth, structure but also space to be yourself. Many students say our school feels like a home away from home where they feel safe to grow, release, and transform. By the end of your 200 hours, you will feel stronger, more centered, and ready to share yoga with others if you wish. If you are not ready for a full 200 hour course, or you prefer to study in parts, Yoga Garhi is also a great place for your 100 hour YTTC. Our 100 hour training offers the same peaceful location, small groups, and clear teaching in a shorter format. You can start with 100 hours to deepen your practice and sample training life.Then you can return later for another 100 hours.This will complete your 200-hour journey with teachers and a school you trust. Choosing Yoga Garhi—whether for 100 or 200 hours—means choosing a school that values authenticity, simplicity, and heart, and that truly cares about your growth as a practitioner and as a human being.";
 

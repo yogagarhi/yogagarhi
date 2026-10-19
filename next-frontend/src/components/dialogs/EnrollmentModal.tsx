@@ -25,6 +25,8 @@ const courses = [
 
 export default function EnrollmentModal() {
   const t = useTranslations("dialogs");
+  const tCommon = useTranslations("common");
+  const tPricing = useTranslations("course200.pricing");
   const locale = useLocale();
   const { showEnrollDialog, setShowEnrollDialog } = useEnrollment();
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -133,7 +135,7 @@ export default function EnrollmentModal() {
           <div className="pr-8">
             <DialogTitle className="font-heading text-2xl sm:text-3xl font-bold mb-1 text-primary-foreground flex items-center gap-3">
               {isSubmitted ? (
-                "Enrollment Successful!"
+                t("toastSuccess") || "Enrollment Successful!"
               ) : (
                 <>
                   <GraduationCap className="w-8 h-8" />
@@ -154,31 +156,31 @@ export default function EnrollmentModal() {
             </div>
             <div className="text-center space-y-2">
               <h3 className="font-heading text-xl font-bold text-foreground">
-                Welcome to the YogaGarhi family, {formData.name}!
+                {t("toastSuccess")}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                We&#39;ve received your enrollment request and our team will contact you within 24 hours to guide you through the next steps.
+                {t("inboxNotice")}
               </p>
             </div>
             <div className="bg-secondary/50 rounded-2xl p-6 text-sm text-muted-foreground w-full border border-border space-y-2">
               <p className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-primary" />
-                📧 Confirmation: <span className="font-semibold text-foreground">{formData.email}</span>
+                📧 <span className="font-semibold text-foreground">{formData.email}</span>
               </p>
               <p className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-primary" />
-                📱 Phone: <span className="font-semibold text-foreground">{formData.countryCode} {formData.phone}</span>
+                📱 <span className="font-semibold text-foreground">{formData.countryCode} {formData.phone}</span>
               </p>
               <p className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-primary" />
-                🎓 Course: <span className="font-semibold text-foreground">{courses.find(c => c.value === formData.course)?.label}</span>
+                🎓 <span className="font-semibold text-foreground">{courses.find(c => c.value === formData.course)?.label}</span>
               </p>
             </div>
             <Button 
               onClick={() => handleOpenChange(false)}
               className="w-full h-12 rounded-xl font-bold"
             >
-              Continue Exploring
+              {tCommon("continueExploring") || "Continue Exploring"}
             </Button>
           </div>
         ) : (
@@ -190,7 +192,7 @@ export default function EnrollmentModal() {
                 <Label htmlFor="enroll-name" className="text-sm font-semibold text-foreground">{t("fullName")} <span className="text-destructive">*</span></Label>
                 <Input
                   id="enroll-name"
-                  placeholder="Enter your full name"
+                  placeholder={t("fullName")}
                   value={formData.name}
                   onChange={(e) => handleChange("name", e.target.value)}
                   className="h-12 rounded-xl border-2 border-border bg-background text-foreground placeholder:text-muted-foreground focus:border-primary focus-visible:ring-0 transition-colors"
@@ -222,7 +224,7 @@ export default function EnrollmentModal() {
                     className="w-28 px-2 h-12 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm cursor-pointer"
                     required
                   >
-                    <option value="" disabled>Code</option>
+                    <option value="" disabled>{locale === 'de' ? 'Vorwahl' : locale === 'fr' ? 'Indicatif' : locale === 'ja' ? '国番号' : 'Code'}</option>
                     {countryCodes.map((country) => (
                       <option key={`${country.code}-${country.country}`} value={country.code}>
                         {country.flag} {country.code}
@@ -232,7 +234,7 @@ export default function EnrollmentModal() {
                   <Input
                     id="enroll-phone"
                     type="tel"
-                    placeholder="Phone number"
+                    placeholder={t("phone")}
                     value={formData.phone}
                     onChange={(e) => handleChange("phone", e.target.value)}
                     className="flex-1 h-12 rounded-xl border-2 border-border bg-background text-foreground focus:border-primary focus-visible:ring-0 transition-colors"
@@ -253,7 +255,7 @@ export default function EnrollmentModal() {
                       className="w-full h-12 px-4 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer text-sm"
                       required
                     >
-                      <option value="">Select Course</option>
+                      <option value="">{t("select")} {t("course")}</option>
                       {courses.map((course) => (
                         <option key={course.value} value={course.value}>
                           {course.label}
@@ -274,7 +276,7 @@ export default function EnrollmentModal() {
                       className="w-full h-12 px-4 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer text-sm"
                       required
                     >
-                      <option value="">Choose</option>
+                      <option value="">{t("choose")}</option>
                       <option value="February 2026">Feb 2026</option>
                       <option value="March 2026">Mar 2026</option>
                       <option value="April 2026">Apr 2026</option>
@@ -304,17 +306,17 @@ export default function EnrollmentModal() {
                       className="w-full h-12 px-4 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer text-sm"
                       required
                     >
-                      <option value="">Select</option>
-                      <option value="Triple Sharing">Triple Sharing</option>
-                      <option value="Double Sharing">Double Sharing</option>
-                      <option value="Private Room">Private Room</option>
+                      <option value="">{t("select")}</option>
+                      <option value="Triple Sharing">{tPricing("tripleSharing") || "Triple Sharing"}</option>
+                      <option value="Double Sharing">{tPricing("doubleSharing") || "Double Sharing"}</option>
+                      <option value="Private Room">{tPricing("privateRoom") || "Private Room"}</option>
                     </select>
                     <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
                   </div>
                 </div>
 
                 <div className="space-y-1.5">
-                  <Label htmlFor="enroll-gender" className="text-sm font-semibold text-foreground">Gender <span className="text-destructive">*</span></Label>
+                  <Label htmlFor="enroll-gender" className="text-sm font-semibold text-foreground">{t("gender")} <span className="text-destructive">*</span></Label>
                   <div className="relative">
                     <select
                       id="enroll-gender"
@@ -323,10 +325,10 @@ export default function EnrollmentModal() {
                       className="w-full h-12 px-4 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer text-sm"
                       required
                     >
-                      <option value="">Select</option>
-                      <option value="Male">Male</option>
-                      <option value="Female">Female</option>
-                      <option value="Other">Other</option>
+                      <option value="">{t("select")}</option>
+                      <option value="Male">{t("male")}</option>
+                      <option value="Female">{t("female")}</option>
+                      <option value="Other">{t("others")}</option>
                     </select>
                     <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
                   </div>
@@ -335,10 +337,10 @@ export default function EnrollmentModal() {
 
               {/* Country Input */}
               <div className="space-y-1.5">
-                <Label htmlFor="enroll-country" className="text-sm font-semibold text-foreground">Country <span className="text-destructive">*</span></Label>
+                <Label htmlFor="enroll-country" className="text-sm font-semibold text-foreground">{t("country")} <span className="text-destructive">*</span></Label>
                 <Input
                   id="enroll-country"
-                  placeholder="Enter your country"
+                  placeholder={t("country")}
                   value={formData.country}
                   onChange={(e) => handleChange("country", e.target.value)}
                   className="h-12 rounded-xl border-2 border-border bg-background text-foreground focus:border-primary focus-visible:ring-0 transition-colors"
@@ -348,7 +350,7 @@ export default function EnrollmentModal() {
 
               {/* Referral Source */}
               <div className="space-y-1.5">
-                <Label htmlFor="enroll-referral" className="text-sm font-semibold text-foreground">How did you hear about us? <span className="text-destructive">*</span></Label>
+                <Label htmlFor="enroll-referral" className="text-sm font-semibold text-foreground">{t("howHeard")} <span className="text-destructive">*</span></Label>
                 <div className="relative">
                   <select
                     id="enroll-referral"
@@ -357,13 +359,13 @@ export default function EnrollmentModal() {
                     className="w-full h-12 px-4 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer text-sm"
                     required
                   >
-                    <option value="">Select...</option>
-                    <option value="Google Search">Google Search</option>
+                    <option value="">{t("select")}</option>
+                    <option value="Google Search">{t("srcGoogle")}</option>
                     <option value="Instagram">Instagram</option>
                     <option value="Facebook">Facebook</option>
                     <option value="YouTube">YouTube</option>
-                    <option value="Friend/Family Referral">Friend/Family</option>
-                    <option value="Other">Other</option>
+                    <option value="Friend/Family Referral">{t("srcRecommendation")}</option>
+                    <option value="Other">{t("srcOther")}</option>
                   </select>
                   <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
                 </div>
@@ -371,10 +373,10 @@ export default function EnrollmentModal() {
 
               {/* Message Body */}
               <div className="space-y-1.5">
-                <Label htmlFor="enroll-message" className="text-sm font-semibold text-foreground">Message (Optional)</Label>
+                <Label htmlFor="enroll-message" className="text-sm font-semibold text-foreground">{t("messageOptional") || t("message")}</Label>
                 <Textarea
                   id="enroll-message"
-                  placeholder="Any questions or specific requirements..."
+                  placeholder={t("placeholderMessage")}
                   value={formData.message}
                   onChange={(e) => handleChange("message", e.target.value)}
                   className="rounded-xl border-2 border-border focus:border-primary focus-visible:ring-0 transition-colors resize-none"
@@ -391,11 +393,11 @@ export default function EnrollmentModal() {
                 size="lg"
                 disabled={isLoading || !isFormValid}
               >
-                {isLoading ? "Submitting..." : t("submitApplication")}
+                {isLoading ? (tCommon("loading") || "Submitting...") : t("submitApplication")}
               </Button>
               <p className="text-center text-[10px] text-muted-foreground mt-3 flex items-center justify-center gap-1.5 uppercase tracking-wider font-medium">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
-                Your information is secure and never shared
+                {t("securityNote")}
               </p>
             </div>
           </>

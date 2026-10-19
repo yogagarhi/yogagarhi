@@ -24,6 +24,7 @@ export default function BookingModal({
   setShowThankYou,
 }: BookingModalProps) {
   const t = useTranslations("dialogs");
+  const tCommon = useTranslations("common");
   const locale = useLocale();
   const router = useRouter();
 
@@ -147,15 +148,17 @@ export default function BookingModal({
                     <button
                       onClick={() => setSelectedMonth(prev => prev > 0 ? prev - 1 : 11)}
                       className="p-1 hover:bg-primary-foreground/10 rounded transition-colors"
+                      aria-label={t("prevMonth") || "Previous month"}
                     >
                       <ChevronDown className="w-5 h-5 rotate-90" />
                     </button>
-                    <span className="font-heading font-bold text-base min-w-[120px] text-center">
-                      {months[selectedMonth]} {currentYear}
+                    <span className="font-heading font-bold text-base min-w-[120px] text-center capitalize">
+                      {new Intl.DateTimeFormat(locale, { month: 'long', year: 'numeric' }).format(new Date(currentYear, selectedMonth, 1))}
                     </span>
                     <button
                       onClick={() => setSelectedMonth(prev => prev < 11 ? prev + 1 : 0)}
                       className="p-1 hover:bg-primary-foreground/10 rounded transition-colors"
+                      aria-label={t("nextMonth") || "Next month"}
                     >
                       <ChevronDown className="w-5 h-5 -rotate-90" />
                     </button>
@@ -202,14 +205,14 @@ export default function BookingModal({
                 {/* Right: Time Slots */}
                 <div className="p-6 bg-background">
                   <div className="mb-4">
-                    <h4 className="font-medium text-foreground mb-2 text-sm">Meeting duration</h4>
-                    <div className="bg-secondary/50 rounded-lg p-2.5 text-center text-muted-foreground text-sm">
-                      30 mins
+                    <h4 className="font-medium text-foreground mb-2 text-sm">{t("meetingDuration")}</h4>
+                    <div className="bg-secondary/50 rounded-lg p-2.5 text-center text-muted-foreground text-sm font-medium">
+                      {locale === 'de' ? '20 - 30 Min.' : locale === 'fr' ? '20 - 30 min' : locale === 'ja' ? '20〜30分' : locale === 'ko' ? '20 - 30분' : locale === 'zh' ? '20 - 30分钟' : locale === 'ru' ? '20 - 30 мин.' : '20 - 30 mins'}
                     </div>
                   </div>
 
                   <div>
-                    <h4 className="font-medium text-foreground mb-1 text-sm">What time works best?</h4>
+                    <h4 className="font-medium text-foreground mb-1 text-sm">{t("whatTimeBest")}</h4>
                     {selectedDay && (
                       <p className="text-xs text-muted-foreground mb-3">
                         {selectedDay} {months[selectedMonth]} {currentYear}
@@ -269,7 +272,7 @@ export default function BookingModal({
                       disabled={!canProceedToForm}
                       onClick={() => setStep('form')}
                     >
-                      Continue
+                      {locale === 'de' ? 'Weiter' : locale === 'fr' ? 'Continuer' : locale === 'ja' ? '次へ' : locale === 'es' ? 'Continuar' : locale === 'it' ? 'Continua' : locale === 'nl' ? 'Doorgaan' : locale === 'ru' ? 'Продолжить' : locale === 'ko' ? '다음' : locale === 'zh' ? '下一步' : locale === 'id' ? 'Lanjutkan' : 'Continue'}
                     </Button>
                   </div>
                 </div>
@@ -285,7 +288,7 @@ export default function BookingModal({
                     type="text"
                     value={bookingForm.name}
                     onChange={(e) => setBookingForm(prev => ({ ...prev, name: e.target.value }))}
-                    placeholder="Enter your full name"
+                    placeholder={t("fullName")}
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                 </div>
@@ -316,7 +319,7 @@ export default function BookingModal({
                       className="w-24 px-2 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm"
                       required
                     >
-                      <option value="" disabled>Code</option>
+                      <option value="" disabled>{locale === 'de' ? 'Vorwahl' : locale === 'fr' ? 'Indicatif' : locale === 'ja' ? '国番号' : 'Code'}</option>
                       {countryCodes.map((country) => (
                         <option key={`${country.country}-${country.code}`} value={country.code}>
                           {country.flag} {country.code}
@@ -327,7 +330,7 @@ export default function BookingModal({
                       type="tel"
                       value={bookingForm.phone}
                       onChange={(e) => setBookingForm(prev => ({ ...prev, phone: e.target.value }))}
-                      placeholder="Phone number"
+                      placeholder={t("phone")}
                       className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
                     />
                   </div>
@@ -341,7 +344,7 @@ export default function BookingModal({
                   <textarea
                     value={bookingForm.message}
                     onChange={(e) => setBookingForm(prev => ({ ...prev, message: e.target.value }))}
-                    placeholder="Any questions or topics you'd like to discuss..."
+                    placeholder={t("placeholderMessage")}
                     rows={3}
                     className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
                   />
@@ -354,7 +357,7 @@ export default function BookingModal({
                     className="flex-1"
                     onClick={() => setStep('calendar')}
                   >
-                    Back
+                    {tCommon("back") || "Back"}
                   </Button>
                   <Button
                     className="flex-1"
@@ -363,7 +366,7 @@ export default function BookingModal({
                     onClick={handleSubmit}
                   >
                     <Phone className="w-4 h-4 mr-2" />
-                    {isSubmitting ? "Processing..." : t("confirmBooking")}
+                    {isSubmitting ? (tCommon("loading") || "Processing...") : t("confirmBooking")}
                   </Button>
                 </div>
               </div>
@@ -382,22 +385,22 @@ export default function BookingModal({
               </div>
               <div>
                 <DialogTitle className="font-heading text-2xl font-bold text-primary mb-2">
-                  Call Booked! 🎉
+                  {t("registeredTitle") || "Call Booked! 🎉"}
                 </DialogTitle>
                 <DialogDescription className="text-muted-foreground">
-                  Thank you, <span className="font-medium text-foreground">{bookingForm.name}</span>! Your call has been scheduled.
+                  {t("toastSuccess")}
                 </DialogDescription>
               </div>
               <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground space-y-2">
                 <p>📅 <span className="font-medium text-foreground">{selectedDay} {months[selectedMonth]} {currentYear}</span> at <span className="font-medium text-foreground">{selectedTime}</span></p>
-                <p>📧 Confirmation sent to: <span className="font-medium text-foreground">{bookingForm.email}</span></p>
-                <p>📱 We'll contact you at: <span className="font-medium text-foreground">{bookingForm.countryCode} {bookingForm.phone}</span></p>
+                <p>📧 <span className="font-medium text-foreground">{bookingForm.email}</span></p>
+                <p>📱 <span className="font-medium text-foreground">{bookingForm.countryCode} {bookingForm.phone}</span></p>
               </div>
               <Button
                 onClick={() => handleThankYouClose(false)}
                 className="w-full"
               >
-                Close
+                {tCommon("close") || "Close"}
               </Button>
             </div>
           </DialogContent>

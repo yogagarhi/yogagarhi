@@ -47,7 +47,11 @@ export async function generateMetadata({
       template: "%s | YogaGarhi",
     },
     alternates: {
-      canonical: "https://www.yogagarhi.com",
+      canonical: locale === "en" ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${locale}`,
+      languages: {
+        ...Object.fromEntries(routing.locales.map((loc) => [loc, loc === "en" ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${loc}`])),
+        "x-default": "https://www.yogagarhi.com",
+      },
     },
     description:
       "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.",
@@ -86,7 +90,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: locale === "en" ? "en_US" : locale,
-      url: "https://www.yogagarhi.com",
+      url: locale === "en" ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${locale}`,
       siteName: "YogaGarhi",
       title: "YogaGarhi - Yoga Teacher Training in Bali, Ubud",
       description:

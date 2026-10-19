@@ -3,6 +3,7 @@ import Index from "@/components/pages/Index";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { applyQualityGate } from "@/utils/seoQualityGate";
+import { routing } from "@/i18n/routing";
 
 export async function generateMetadata({
   params,
@@ -29,12 +30,16 @@ export async function generateMetadata({
         "yoga teacher training Bali, YTTC Ubud, 200 hour yoga certification, yoga alliance certified, yoga retreat Bali, yoga school Indonesia, RYT 200, yoga ashram Bali, meditation training, pranayama course, YogaGarhi",
       alternates: {
         canonical: "https://www.yogagarhi.com",
+        languages: {
+          ...Object.fromEntries(routing.locales.map((loc) => [loc, loc === "en" ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${loc}`])),
+          "x-default": "https://www.yogagarhi.com",
+        },
       },
       openGraph: {
         title: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi",
         description:
           "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your journey!",
-        url: "/",
+        url: "https://www.yogagarhi.com",
         type: "website",
         images: [
           {
@@ -67,12 +72,16 @@ export async function generateMetadata({
     description,
     keywords: "yoga teacher training Bali, YTTC Ubud, 200 hour yoga certification, yoga alliance certified, yoga retreat Bali, yoga school Indonesia, RYT 200, yoga ashram Bali, meditation training, pranayama course, YogaGarhi",
     alternates: {
-      canonical: "https://www.yogagarhi.com",
+      canonical: `https://www.yogagarhi.com/${locale}`,
+      languages: {
+        ...Object.fromEntries(routing.locales.map((loc) => [loc, loc === "en" ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${loc}`])),
+        "x-default": "https://www.yogagarhi.com",
+      },
     },
     openGraph: {
       title,
       description,
-      url: "/",
+      url: `https://www.yogagarhi.com/${locale}`,
       type: "website",
       images: [
         {

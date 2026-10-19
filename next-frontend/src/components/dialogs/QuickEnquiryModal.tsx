@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import {
   Dialog,
@@ -18,6 +18,8 @@ import { useQuickEnquiry } from "../QuickEnquiryDialog";
 
 export default function QuickEnquiryModal() {
   const locale = useLocale();
+  const t = useTranslations("dialogs");
+  const tCommon = useTranslations("common");
   const { showQuickEnquiry, setShowQuickEnquiry } = useQuickEnquiry();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -97,11 +99,11 @@ export default function QuickEnquiryModal() {
               <GraduationCap className="w-10 h-10 text-white" />
             </div>
             <DialogTitle className="font-heading text-3xl sm:text-4xl font-bold mb-2 text-white">
-              {isSubmitted ? "Thank You!" : "Book Now"}
+              {isSubmitted ? t("toastSuccess") : t("enquiryTitle")}
             </DialogTitle>
             {!isSubmitted && (
               <p className="text-white/80 text-sm max-w-[280px] mx-auto leading-relaxed font-medium">
-                Experience our authentic yoga path. Fill the form to book your spot in the course.
+                {t("enquiryDesc")}
               </p>
             )}
           </div>
@@ -114,17 +116,17 @@ export default function QuickEnquiryModal() {
             </div>
             <div className="space-y-3">
               <h3 className="font-heading text-2xl font-bold text-[#2D7A70]">
-                Inquiry Received!
+                {t("toastSuccess")}
               </h3>
               <p className="text-muted-foreground leading-relaxed max-w-sm">
-                Namaste! We&#39;ve received your request. Our team will contact you within 24 hours to help you complete your booking.
+                {t("inboxNotice")}
               </p>
             </div>
             <Button
               onClick={() => handleOpenChange(false)}
               className="w-full h-14 rounded-2xl font-bold bg-[#2D7A70] hover:bg-[#1a4d46] transition-all shadow-lg"
             >
-              Continue Exploring
+              {tCommon("continueExploring") || "Continue Exploring"}
             </Button>
           </div>
         ) : (
@@ -134,10 +136,10 @@ export default function QuickEnquiryModal() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {/* Name */}
                 <div className="space-y-2">
-                  <Label htmlFor="q-name" className="text-sm font-bold text-gray-700 ml-1">Full Name</Label>
+                  <Label htmlFor="q-name" className="text-sm font-bold text-gray-700 ml-1">{t("fullName")}</Label>
                   <Input
                     id="q-name"
-                    placeholder="Enter your name"
+                    placeholder={t("fullName")}
                     value={formData.name}
                     onChange={(e) => handleChange("name", e.target.value)}
                     required
@@ -147,7 +149,7 @@ export default function QuickEnquiryModal() {
 
                 {/* Email */}
                 <div className="space-y-2">
-                  <Label htmlFor="q-email" className="text-sm font-bold text-gray-700 ml-1">Email Address</Label>
+                  <Label htmlFor="q-email" className="text-sm font-bold text-gray-700 ml-1">{t("email")}</Label>
                   <Input
                     id="q-email"
                     type="email"
@@ -162,10 +164,10 @@ export default function QuickEnquiryModal() {
 
               {/* Message */}
               <div className="space-y-2">
-                <Label htmlFor="q-message" className="text-sm font-bold text-gray-700 ml-1">Message (Optional)</Label>
+                <Label htmlFor="q-message" className="text-sm font-bold text-gray-700 ml-1">{t("messageOptional") || t("message")}</Label>
                 <Textarea
                   id="q-message"
-                  placeholder="Tell us any questions or messages you have..."
+                  placeholder={t("placeholderMessage")}
                   value={formData.message}
                   onChange={(e) => handleChange("message", e.target.value)}
                   rows={3}
@@ -186,17 +188,17 @@ export default function QuickEnquiryModal() {
                 disabled={isLoading || !formData.name || !formData.email}
               >
                 {isLoading ? (
-                  "Sending Inquiry..."
+                  tCommon("loading") || "Sending..."
                 ) : (
                   <>
-                    Book Now
+                    {t("confirmBooking") || "Book Now"}
                     <ArrowRight className="w-5 h-5" />
                   </>
                 )}
               </Button>
               <div className="mt-5 flex items-center justify-center gap-2 text-[10px] text-gray-400 uppercase tracking-[0.2em] font-bold">
                 <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                Secure Your Spot Today
+                {t("securityNote")}
               </div>
             </div>
           </>
