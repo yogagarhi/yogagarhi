@@ -95,7 +95,7 @@ Below is the complete inventory of all **911** translated strings across the Yog
 | Navigation & Header | 300 Hour YTTC | 300-Stunden YTTC | 300 Hour YTTC | Preserves official Yoga Alliance accreditation credentials and international recognition standards. |
 | Navigation & Header | Bali | Bali | Bali | Universal proper noun or standard cross-language loan word. |
 | Navigation & Header | Rishikesh | Rishikesh | Rishikesh | Universal proper noun or standard cross-language loan word. |
-| Navigation & Header | Warkala | Warkala | Warkala | Universal proper noun or standard cross-language loan word. |
+| Navigation & Header | Varkala | Varkala | Varkala | Universal proper noun or standard cross-language loan word. |
 | Navigation & Header | 3 Days Retreat | 3-Tage-Retreat | 3 Days Retreat | Verified accurate. Natural native phrasing. |
 | Navigation & Header | 7 Days Retreat | 7-Tage-Retreat | 7 Days Retreat | Verified accurate. Natural native phrasing. |
 | Navigation & Header | 14 Days Retreat | 14-Tage-Retreat | 14 Days Retreat | Verified accurate. Natural native phrasing. |

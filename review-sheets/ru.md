@@ -95,7 +95,7 @@ Below is the complete inventory of all **911** translated strings across the Yog
 | Navigation & Header | 300 Hour YTTC | 300 часов YTTC | 300 Hour YTTC | Preserves official Yoga Alliance accreditation credentials and international recognition standards. |
 | Navigation & Header | Bali | Бали | Bali | Verified accurate. Natural native phrasing. |
 | Navigation & Header | Rishikesh | Ришикеш | Rishikesh | Verified accurate. Natural native phrasing. |
-| Navigation & Header | Warkala | Варкала | Warkala | Verified accurate. Natural native phrasing. |
+| Navigation & Header | Varkala | Варкала | Varkala | Verified accurate. Natural native phrasing. |
 | Navigation & Header | 3 Days Retreat | Ретрит 3 дня | 3 Days Retreat | Verified accurate. Natural native phrasing. |
 | Navigation & Header | 7 Days Retreat | Ретрит 7 дней | 7 Days Retreat | Verified accurate. Natural native phrasing. |
 | Navigation & Header | 14 Days Retreat | Ретрит 14 дней | 14 Days Retreat | Verified accurate. Natural native phrasing. |

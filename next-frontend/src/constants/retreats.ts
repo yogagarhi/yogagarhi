@@ -31,7 +31,7 @@ export interface RetreatTeacher {
 export interface RetreatPackage {
   slug: string;
   durationKey: '3-days' | '7-days' | '14-days';
-  locationKey: 'bali' | 'rishikesh' | 'warkala';
+  locationKey: 'bali' | 'rishikesh' | 'varkala';
   locationName: string;
   locationStateOrCountry: string;
   durationDays: number;
@@ -75,7 +75,7 @@ export interface RetreatPackage {
 }
 
 export interface LocationInfo {
-  key: 'bali' | 'rishikesh' | 'warkala';
+  key: 'bali' | 'rishikesh' | 'varkala';
   name: string;
   fullName: string;
   country: string;
@@ -86,7 +86,7 @@ export interface LocationInfo {
   nearestAirport: string;
 }
 
-export const RETREAT_LOCATIONS: Record<'bali' | 'rishikesh' | 'warkala', LocationInfo> = {
+export const RETREAT_LOCATIONS: Record<'bali' | 'rishikesh' | 'varkala', LocationInfo> = {
   bali: {
     key: 'bali',
     name: 'Bali',
@@ -109,10 +109,10 @@ export const RETREAT_LOCATIONS: Record<'bali' | 'rishikesh' | 'warkala', Locatio
     bestTimeToVisit: 'September through April for pleasant mountain breezes.',
     nearestAirport: 'Dehradun Airport (DED) / Indira Gandhi Intl Airport (DEL)',
   },
-  warkala: {
-    key: 'warkala',
-    name: 'Warkala',
-    fullName: 'Warkala Beach & Cliff, Kerala, India',
+  varkala: {
+    key: 'varkala',
+    name: 'Varkala',
+    fullName: 'Varkala Beach & Cliff, Kerala, India',
     country: 'India',
     heroSubtitle: 'Red Cliffs, Arabian Sea Breeze & Authentic Ayurveda',
     description: 'Experience dramatic laterite cliffs overlooking pristine Arabian Sea beaches coupled with authentic Kerala Ayurveda healing therapies.',
@@ -961,28 +961,28 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
     ]
   },
 
-  // ==================== WARKALA ====================
-  'warkala-3-days': {
+  // ==================== VARKALA ====================
+  'varkala-3-days': {
     slug: '3-days',
     durationKey: '3-days',
-    locationKey: 'warkala',
-    locationName: 'Warkala',
+    locationKey: 'varkala',
+    locationName: 'Varkala',
     locationStateOrCountry: 'Kerala, India',
     durationDays: 3,
     durationNights: 2,
-    title: '3 Day Ocean Breeze Yoga Retreat in Warkala',
-    tagline: 'A revitalizing coastal weekend retreat perched above the dramatic red cliffs of Warkala, Kerala.',
+    title: '3 Day Ocean Breeze Yoga Retreat in Varkala',
+    tagline: 'A revitalizing coastal weekend retreat perched above the dramatic red cliffs of Varkala, Kerala.',
     badge: 'Quick Reset',
-    seoTitle: '3-Day Warkala Kerala Beach Yoga Retreat | YogaGarhi',
-    seoDescription: '3-Day Ocean Breeze Yoga Retreat in Warkala, Kerala. Enjoy cliffside sunrise yoga, soothing ocean waves, Ayurvedic massage & fresh food.',
-    keywords: ['3 day yoga retreat warkala', 'varkala yoga retreat', 'weekend yoga retreat kerala', 'cliff yoga retreat warkala', 'beach yoga retreat kerala'],
+    seoTitle: '3-Day Varkala Kerala Beach Yoga Retreat | YogaGarhi',
+    seoDescription: '3-Day Ocean Breeze Yoga Retreat in Varkala, Kerala. Enjoy cliffside sunrise yoga, soothing ocean waves, Ayurvedic massage & fresh food.',
+    keywords: ['3 day yoga retreat varkala', 'varkala yoga retreat', 'weekend yoga retreat kerala', 'cliff yoga retreat varkala', 'beach yoga retreat kerala'],
     heroImage: 'https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=1200&q=80',
-    heroImageAlt: 'Stunning red cliffs and ocean sunset in Warkala Kerala',
+    heroImageAlt: 'Stunning red cliffs and ocean sunset in Varkala Kerala',
     priceShared: '$220',
     pricePrivate: '$320',
     earlyBirdSaving: '$40',
     overview: [
-      'Perched along the stunning red laterite cliffs of the Arabian Sea, Warkala (Varkala) is one of India’s most breathtaking natural wellness sanctuaries. Here, the fresh salty ocean breeze and tropical coconut groves create the ideal environment to release stress and recalibrate your senses.',
+      'Perched along the stunning red laterite cliffs of the Arabian Sea, Varkala is one of India’s most breathtaking natural wellness sanctuaries. Here, the fresh salty ocean breeze and tropical coconut groves create the ideal environment to release stress and recalibrate your senses.',
       'Our 3-day weekend retreat combines morning sunrise yoga facing the ocean, gentle sunset Yin yoga, one authentic Kerala Ayurvedic oil massage, and mouthwatering South Indian vegetarian delicacies.'
     ],
     highlights: [
@@ -1017,7 +1017,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       'Personal beach activities and boat rides'
     ],
     accommodation: {
-      title: 'Boutique Coastal Retreat near Warkala Cliff',
+      title: 'Boutique Coastal Retreat near Varkala Cliff',
       description: 'Nestled amidst swaying palm trees just a short stroll from the main cliff, our rooms provide air conditioning, private balconies, clean ensuite bathrooms, and serene sea breeze.',
       features: ['Air conditioning and ceiling fan', 'Private veranda with garden or sea view', 'Ensuite bathroom with modern fittings', 'Swimming pool & shaded hammocks']
     },
@@ -1028,31 +1028,31 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
     },
     faqs: [
       { question: 'Why is Papanasam Beach famous?', answer: 'Papanasam means "cleansing of sins". The natural mineral water springs and sea waters are revered for their therapeutic and purifying properties.' },
-      { question: 'What is the nearest airport to Warkala?', answer: 'Trivandrum International Airport (TRV) is only 45 km away (about an hour drive). We can arrange a smooth private pickup.' }
+      { question: 'What is the nearest airport to Varkala?', answer: 'Trivandrum International Airport (TRV) is only 45 km away (about an hour drive). We can arrange a smooth private pickup.' }
     ]
   },
 
-  'warkala-7-days': {
+  'varkala-7-days': {
     slug: '7-days',
     durationKey: '7-days',
-    locationKey: 'warkala',
-    locationName: 'Warkala',
+    locationKey: 'varkala',
+    locationName: 'Varkala',
     locationStateOrCountry: 'Kerala, India',
     durationDays: 7,
     durationNights: 6,
-    title: '7 Day Ayurveda & Beach Yoga Retreat in Warkala, Kerala',
+    title: '7 Day Ayurveda & Beach Yoga Retreat in Varkala, Kerala',
     tagline: 'Harmonize your doshas with authentic Kerala Ayurveda, cliffside yoga, and ocean tranquility.',
     badge: 'Most Popular',
-    seoTitle: '7-Day Warkala Kerala Ayurveda Retreat | YogaGarhi',
-    seoDescription: '7-Day Yoga & Ayurveda Retreat in Warkala, Kerala. Authentic Kerala massages, cliffside yoga, backwater boat cruise, and Sattvic food.',
-    keywords: ['7 day yoga retreat warkala', 'varkala ayurveda yoga retreat', '1 week yoga retreat kerala', 'kerala wellness holiday', 'ayurvedic retreat warkala'],
+    seoTitle: '7-Day Varkala Kerala Ayurveda Retreat | YogaGarhi',
+    seoDescription: '7-Day Yoga & Ayurveda Retreat in Varkala, Kerala. Authentic Kerala massages, cliffside yoga, backwater boat cruise, and Sattvic food.',
+    keywords: ['7 day yoga retreat varkala', 'varkala ayurveda yoga retreat', '1 week yoga retreat kerala', 'kerala wellness holiday', 'ayurvedic retreat varkala'],
     heroImage: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1200&q=80',
-    heroImageAlt: 'Yoga practice on the cliff overlooking the sea in Warkala Kerala',
+    heroImageAlt: 'Yoga practice on the cliff overlooking the sea in Varkala Kerala',
     priceShared: '$490',
     pricePrivate: '$690',
     earlyBirdSaving: '$80',
     overview: [
-      'Kerala is globally renowned as the authentic birthplace of Ayurveda. Our 7-day retreat in Warkala merges the timeless wisdom of traditional yoga with classical Kerala Ayurvedic therapies to rejuvenate your entire being.',
+      'Kerala is globally renowned as the authentic birthplace of Ayurveda. Our 7-day retreat in Varkala merges the timeless wisdom of traditional yoga with classical Kerala Ayurvedic therapies to rejuvenate your entire being.',
       'Wake up to the sound of crashing waves, practice invigorating multi-style asana and breathwork on our oceanview deck, receive personalized Ayurvedic body therapies, and take a peaceful canoe tour through Kerala’s famous emerald backwaters.'
     ],
     highlights: [
@@ -1061,7 +1061,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       '3x Traditional Ayurvedic therapies (Abhyanga, Kizhi herbal pouch, and Shirodhara)',
       'Sunset country boat cruise through the tranquil Kerala backwaters',
       'Visit to ancient Janardhana Swamy Temple and natural mineral springs',
-      '6 nights stay in a tranquil resort steps away from Warkala cliff',
+      '6 nights stay in a tranquil resort steps away from Varkala cliff',
       'All nourishing, chef-prepared Ayurvedic vegetarian and vegan meals'
     ],
     schedule: [
@@ -1075,7 +1075,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { time: '07:30 PM', activity: 'Gourmet Dinner & Beach Stroll', description: 'Warm comforting dinner and optional moonlit walk along the cliff.' }
     ],
     included: [
-      '6 Nights accommodation in a boutique resort near Warkala cliff',
+      '6 Nights accommodation in a boutique resort near Varkala cliff',
       '3 Daily authentic Ayurvedic vegetarian meals',
       'Daily morning and afternoon yoga and meditation sessions',
       'Ayurvedic doctor consultation with custom dosha assessment',
@@ -1101,31 +1101,31 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
     },
     faqs: [
       { question: 'What is Kizhi treatment?', answer: 'Kizhi is a traditional Ayurvedic therapy using warm pouches filled with therapeutic herbs and medicated oils pounded gently over the body to relieve joint pain and tension.' },
-      { question: 'Is Warkala crowded like other tourist beaches?', answer: 'No, Warkala is famous for its serene, bohemian, and spiritual atmosphere, making it a peaceful retreat destination.' }
+      { question: 'Is Varkala crowded like other tourist beaches?', answer: 'No, Varkala is famous for its serene, bohemian, and spiritual atmosphere, making it a peaceful retreat destination.' }
     ]
   },
 
-  'warkala-14-days': {
+  'varkala-14-days': {
     slug: '14-days',
     durationKey: '14-days',
-    locationKey: 'warkala',
-    locationName: 'Warkala',
+    locationKey: 'varkala',
+    locationName: 'Varkala',
     locationStateOrCountry: 'Kerala, India',
     durationDays: 14,
     durationNights: 13,
-    title: '14 Day Complete Ayurvedic Healing & Yoga Immersion in Warkala',
+    title: '14 Day Complete Ayurvedic Healing & Yoga Immersion in Varkala',
     tagline: 'A comprehensive two-week body transformation, detox, and yogic reset on Kerala’s sacred coast.',
     badge: 'Deep Immersion',
-    seoTitle: '14-Day Warkala Kerala Ayurveda Retreat | YogaGarhi',
-    seoDescription: '14-Day Yoga & Ayurvedic Retreat in Warkala, Kerala. Complete panchakarma-inspired bodywork, daily yoga, and coastal serenity. Book now!',
-    keywords: ['14 day yoga retreat warkala', '2 week ayurveda retreat kerala', 'panchakarma retreat warkala', 'complete healing retreat kerala', 'long term yoga retreat warkala'],
+    seoTitle: '14-Day Varkala Kerala Ayurveda Retreat | YogaGarhi',
+    seoDescription: '14-Day Yoga & Ayurvedic Retreat in Varkala, Kerala. Complete panchakarma-inspired bodywork, daily yoga, and coastal serenity. Book now!',
+    keywords: ['14 day yoga retreat varkala', '2 week ayurveda retreat kerala', 'panchakarma retreat varkala', 'complete healing retreat kerala', 'long term yoga retreat varkala'],
     heroImage: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80',
-    heroImageAlt: 'Woman practicing yoga at sunset on the beach in Warkala Kerala',
+    heroImageAlt: 'Woman practicing yoga at sunset on the beach in Varkala Kerala',
     priceShared: '$890',
     pricePrivate: '$1,290',
     earlyBirdSaving: '$180',
     overview: [
-      'Two weeks in Warkala provides the ideal timeframe for authentic Ayurvedic rejuvenation and deep yogic transformation. When bodywork and mindful movement are practiced consistently over 14 days, the body naturally releases deep-seated stress and resets metabolic harmony.',
+      'Two weeks in Varkala provides the ideal timeframe for authentic Ayurvedic rejuvenation and deep yogic transformation. When bodywork and mindful movement are practiced consistently over 14 days, the body naturally releases deep-seated stress and resets metabolic harmony.',
       'This immersion includes continuous monitoring by an Ayurvedic physician, 6 specialized healing treatments, daily classical yoga classes, breath mastery, backwater canoe trips, and pure coastal living.'
     ],
     highlights: [

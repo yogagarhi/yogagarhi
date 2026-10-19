@@ -17,31 +17,31 @@ export async function generateStaticParams() {
   return [
     { location: "bali" },
     { location: "rishikesh" },
-    { location: "warkala" },
+    { location: "varkala" },
   ];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { location } = await params;
-  const loc = RETREAT_LOCATIONS[location as 'bali' | 'rishikesh' | 'warkala'];
+  const loc = RETREAT_LOCATIONS[location as 'bali' | 'rishikesh' | 'varkala'];
 
   if (!loc) {
     return {
       title: "Yoga Retreats | YogaGarhi",
-      description: "Explore yoga retreats in Bali, Rishikesh, and Warkala.",
+      description: "Explore yoga retreats in Bali, Rishikesh, and Varkala.",
     };
   }
 
   const titles: Record<string, string> = {
     bali: "Yoga Retreats in Bali | Ubud Wellness | YogaGarhi",
     rishikesh: "Yoga Retreats in Rishikesh | Himalayas | YogaGarhi",
-    warkala: "Yoga Retreats in Warkala | Kerala Beach | YogaGarhi",
+    varkala: "Yoga Retreats in Varkala | Kerala Beach | YogaGarhi",
   };
 
   const descriptions: Record<string, string> = {
     bali: "Escape to Ubud with 3, 7 & 14-day yoga retreats in Bali. Daily Balinese massage, sound baths, yoga & vegan dining. Check dates & rates!",
     rishikesh: "Experience yoga retreats in Rishikesh along the Ganges. Daily meditation, Ayurvedic therapy & Sattvic meals. View dates and book online!",
-    warkala: "Oceanfront yoga retreats in Warkala, Kerala. Authentic Ayurvedic healing, beach yoga sessions & sunset meditation. Book your holiday now!",
+    varkala: "Oceanfront yoga retreats in Varkala, Kerala. Authentic Ayurvedic healing, beach yoga sessions & sunset meditation. Book your holiday now!",
   };
 
   const title = titles[loc.key] || `${loc.name} Yoga Retreats | YogaGarhi`;
@@ -68,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function RetreatLocationPage({ params }: Props) {
   const { location } = await params;
-  const loc = RETREAT_LOCATIONS[location as 'bali' | 'rishikesh' | 'warkala'];
+  const loc = RETREAT_LOCATIONS[location as 'bali' | 'rishikesh' | 'varkala'];
 
   if (!loc) {
     notFound();

@@ -147,14 +147,14 @@ const getRetreats = (t: any): NavDropdownItem[] => [
     ]
   },
   {
-    id: "warkala",
-    name: t("retreatWarkala"),
-    href: "/retreat/warkala/7-days",
+    id: "varkala",
+    name: t("retreatVarkala"),
+    href: "/retreat/varkala/7-days",
     icon: Waves,
     subItems: [
-      { id: "retreat3Days", name: t("retreat3Days"), href: "/retreat/warkala/3-days" },
-      { id: "retreat7Days", name: t("retreat7Days"), href: "/retreat/warkala/7-days" },
-      { id: "retreat14Days", name: t("retreat14Days"), href: "/retreat/warkala/14-days" },
+      { id: "retreat3Days", name: t("retreat3Days"), href: "/retreat/varkala/3-days" },
+      { id: "retreat7Days", name: t("retreat7Days"), href: "/retreat/varkala/7-days" },
+      { id: "retreat14Days", name: t("retreat14Days"), href: "/retreat/varkala/14-days" },
     ]
   },
 ];

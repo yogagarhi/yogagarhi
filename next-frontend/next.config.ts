@@ -30,6 +30,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/retreat/warkala/:path*',
+        destination: '/retreat/varkala/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/retreat/warkala/:path*',
+        destination: '/:locale/retreat/varkala/:path*',
+        permanent: true,
+      },
+      {
         source: '/courses/100-hour',
         destination: '/100-hour-yoga-teacher-training-in-bali',
         permanent: true,

@@ -8,15 +8,15 @@ import { RETREAT_LOCATIONS, RETREATS_DATA } from "@/constants/retreats";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Yoga Retreats in Bali, Rishikesh & Warkala | YogaGarhi",
+    absolute: "Yoga Retreats in Bali, Rishikesh & Varkala | YogaGarhi",
   },
-  description: "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Warkala beach. Daily yoga, sound healing and organic meals. Book now!",
+  description: "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Varkala beach. Daily yoga, sound healing and organic meals. Book now!",
   alternates: {
     canonical: "https://www.yogagarhi.com/retreat",
   },
   openGraph: {
-    title: "Yoga Retreats in Bali, Rishikesh & Warkala | YogaGarhi",
-    description: "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Warkala beach. Daily yoga, sound healing and organic meals. Book now!",
+    title: "Yoga Retreats in Bali, Rishikesh & Varkala | YogaGarhi",
+    description: "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Varkala beach. Daily yoga, sound healing and organic meals. Book now!",
     url: "https://www.yogagarhi.com/retreat",
     type: "website",
     siteName: "YogaGarhi",
@@ -54,7 +54,7 @@ export default function RetreatsHubPage() {
         "name": "What durations are available for YogaGarhi yoga retreats?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We offer 3-day weekend resets, 7-day rejuvenation retreats, and 14-day deep healing wellness holidays across Ubud Bali, Rishikesh, and Warkala."
+          "text": "We offer 3-day weekend resets, 7-day rejuvenation retreats, and 14-day deep healing wellness holidays across Ubud Bali, Rishikesh, and Varkala."
         }
       },
       {
@@ -109,7 +109,7 @@ export default function RetreatsHubPage() {
             Transformative Yoga Retreats
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
-            Escape the ordinary and immerse in healing practices, Sattvic nutrition, and spiritual nature across our three handpicked destinations in Bali, Rishikesh, and Warkala.
+            Escape the ordinary and immerse in healing practices, Sattvic nutrition, and spiritual nature across our three handpicked destinations in Bali, Rishikesh, and Varkala.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">

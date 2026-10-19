@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!retreat) {
     return {
       title: "Retreat Not Found | YogaGarhi",
-      description: "Discover transformative yoga retreats in Bali, Rishikesh, and Warkala with YogaGarhi.",
+      description: "Discover transformative yoga retreats in Bali, Rishikesh, and Varkala with YogaGarhi.",
     };
   }
 
