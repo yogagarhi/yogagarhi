@@ -64,19 +64,41 @@ function ThankYouContent() {
       setTimeout(() => setShowConfetti(false), 5000),
     ];
     
-    // Check ref and sessionStorage to prevent duplicate conversions
+    // Deduplicate lead conversions: prevent duplicate firing on page reload (F5),
+    // but ALLOW second genuine form submission in the same session.
     if (typeof window !== 'undefined' && !leadFiredRef.current) {
-      const storageKey = `conversion_${type}_fired`;
-      const conversionFired = sessionStorage.getItem(storageKey);
-      if (!conversionFired) {
+      let isReload = false;
+      try {
+        const navEntries = performance.getEntriesByType('navigation');
+        if (navEntries && navEntries.length > 0) {
+          isReload = (navEntries[0] as PerformanceNavigationTiming).type === 'reload';
+        } else if ((window.performance as any)?.navigation) {
+          isReload = (window.performance as any).navigation.type === 1;
+        }
+      } catch (e) {
+        // Fallback to false
+      }
+
+      const hasHistoryFired = Boolean(window.history?.state?.__yg_lead_fired);
+
+      if (!isReload && !hasHistoryFired) {
         leadFiredRef.current = true;
         // Generate a unique transaction ID for deduplication
         const transactionId = (typeof crypto !== 'undefined' && crypto.randomUUID)
           ? crypto.randomUUID()
           : `txn_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
-        
-        sessionStorage.setItem(storageKey, 'true');
-        sessionStorage.setItem(`conversion_${type}_txnid`, transactionId);
+
+        // Stamp history state to prevent firing on reload/refresh
+        try {
+          if (window.history && window.history.replaceState) {
+            const currentState = window.history.state || {};
+            window.history.replaceState({
+              ...currentState,
+              __yg_lead_fired: true,
+              __yg_txn_id: transactionId
+            }, '');
+          }
+        } catch (e) {}
 
         // Push to Google Tag Manager dataLayer
         (window as any).dataLayer = (window as any).dataLayer || [];
@@ -91,6 +113,7 @@ function ThankYouContent() {
           (window as any).gtag('event', 'generate_lead', {
             event_category: 'lead',
             event_label: type,
+            lead_type: type,
             transaction_id: transactionId
           });
         }

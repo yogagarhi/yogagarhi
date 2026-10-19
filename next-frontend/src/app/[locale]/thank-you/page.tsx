@@ -17,8 +17,23 @@ export async function generateMetadata({
     messages = (await import(`@/messages/en.json`)).default;
   }
 
+  if (locale === "en") {
+    return {
+      metadataBase: new URL("https://www.yogagarhi.com"),
+      title: "Thank You",
+      description: "Thank you for your enrollment request.",
+      robots: {
+        index: false,
+        follow: false,
+      },
+      alternates: {
+        canonical: "https://www.yogagarhi.com/thank-you",
+      },
+    };
+  }
+
   const title = messages.thankYou?.metaTitle || "Thank You | YogaGarhi";
-  const description = messages.thankYou?.metaDesc || "Thank you for your enrollment request with YogaGarhi.";
+  const description = messages.thankYou?.metaDesc || "Thank you for your enrollment request.";
 
   return applyQualityGate({
     metadataBase: new URL("https://www.yogagarhi.com"),

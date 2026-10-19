@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
+import { useLocale } from "next-intl";
 import CoursePageTemplate from "./CoursePageTemplate";
 import { BATCHES_100_HOUR, CourseBatch } from "@/constants/courseDates";
+import Course100HourRishikeshEnglish from "./Course100HourRishikeshEnglish";
 
 export default function Course100HourRishikesh({
   initialBatches,
@@ -10,6 +12,17 @@ export default function Course100HourRishikesh({
   initialBatches?: CourseBatch[];
   syllabusSlot?: React.ReactNode;
 } = {}) {
+  const locale = useLocale();
+
+  if (locale === "en") {
+    return (
+      <Course100HourRishikeshEnglish
+        initialBatches={initialBatches}
+        syllabusSlot={syllabusSlot}
+      />
+    );
+  }
+
   return (
     <CoursePageTemplate
       namespace="course100Rishikesh"
