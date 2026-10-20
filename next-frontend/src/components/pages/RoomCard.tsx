@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 // Room Card Component with Individual State and Ref
 export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: () => void }) {
     const tCommon = useTranslations("common");
-    const tCourse = useTranslations("course200");
+    const tAcc = useTranslations("common.accommodationExtra");
     const carouselRef = useRef<HTMLDivElement>(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -130,7 +130,7 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                         <Users className="w-4 h-4" />
                         <span className="text-xs">
                             {typeof room.beds === 'number'
-                                ? `${room.beds} ${room.beds === 1 ? tCourse("accommodationExtra.bed1") : tCourse("accommodationExtra.bedsMore")}`
+                                ? `${room.beds} ${room.beds === 1 ? (tAcc?.("bed1") || 'bed') : (tAcc?.("bedsMore") || 'beds')}`
                                 : room.beds}
                         </span>
                     </div>

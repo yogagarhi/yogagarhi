@@ -104,7 +104,27 @@
     "save": "Save",
     "getFreeManual": "Get Free Manual",
     "revealYogicEnergy": "Reveal Your Unique Yogic Energy",
-    "freeWebinar": "Free Webinar"
+    "freeWebinar": "Free Webinar",
+    "accommodationExtra": {
+      "featuresTitle": "Accommodation",
+      "featuresSub": "A serene yoga retreat in the heart of Bali's sacred Ubud region",
+      "feat1": "10 beautiful waterfalls within 10 km",
+      "feat2": "Private forest with an in-house waterfall",
+      "feat3": "Peaceful rice-field trekking on-site",
+      "feat4": "Only 15 km from central Ubud",
+      "glimpses": "Glimpses of Your Stay",
+      "allRooms": "All Rooms Include",
+      "wifi": "Free Wi-Fi",
+      "hotWater": "Hot Water",
+      "acFan": "AC / Fan",
+      "cleaning": "Daily Cleaning",
+      "bed1": "bed",
+      "bedsMore": "beds",
+      "courseOnly": "Course Only",
+      "mostPopular": "Most Popular",
+      "premium": "Premium"
+    },
+    "hours": "Hour"
   },
   "footer": {
     "tagline": "Transform Within",
@@ -766,7 +786,8 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnCounselor": "Talk to Counselor",
+      "title": "200-Hour Yoga Teacher Training in Bali"
     },
     "overview": {
       "heading": "Course Overview & Ashram Experience",

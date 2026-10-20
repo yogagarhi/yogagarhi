@@ -104,7 +104,27 @@
     "save": "割引",
     "getFreeManual": "無料マニュアルを入手",
     "revealYogicEnergy": "独自のヨガエネルギーを発見",
-    "freeWebinar": "無料ウェビナー"
+    "freeWebinar": "無料ウェビナー",
+    "accommodationExtra": {
+      "featuresTitle": "宿泊環境",
+      "featuresSub": "バリ島ウブドの聖なる自然に抱かれた心安らぐヨガアシュラム",
+      "feat1": "半径10km圏内に10箇所の美しい滝",
+      "feat2": "敷地内に専用のプライベート滝と原生林を完備",
+      "feat3": "敷地内でゆったりと楽しめるライステラス散策",
+      "feat4": "ウブド中心部からわずか15kmの静寂な環境",
+      "glimpses": "滞在の風景",
+      "allRooms": "すべてのお部屋に含まれる設備",
+      "wifi": "無料Wi-Fi",
+      "hotWater": "温水シャワー",
+      "acFan": "エアコン / 扇風機",
+      "cleaning": "毎日の清掃",
+      "bed1": "ベッド",
+      "bedsMore": "ベッド",
+      "courseOnly": "受講のみ",
+      "mostPopular": "一番人気",
+      "premium": "プレミアム"
+    },
+    "hours": "時間"
   },
   "footer": {
     "tagline": "内なる変容",
@@ -515,7 +535,8 @@
       "quickLocation": "バリ島ギャニャール",
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
-      "btnCounselor": "カウンセラーに相談"
+      "btnCounselor": "カウンセラーに相談",
+      "title": "バリ島200時間ヨガ指導者養成講座"
     },
     "quickInfo": {
       "course": "コース",

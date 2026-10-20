@@ -104,7 +104,27 @@
     "save": "Bespaar",
     "getFreeManual": "Gratis handleiding",
     "revealYogicEnergy": "Ontdek je yogische energie",
-    "freeWebinar": "Gratis webinar"
+    "freeWebinar": "Gratis webinar",
+    "accommodationExtra": {
+      "featuresTitle": "Accommodatie",
+      "featuresSub": "Een vredig yogaparadijs in het hart van de heilige Ubud-regio op Bali",
+      "feat1": "10 prachtige watervallen binnen een straal van 10 km",
+      "feat2": "Eigen privébos met een waterval op het terrein",
+      "feat3": "Rustgevende wandelingen door rijstvelden op het terrein",
+      "feat4": "Slechts 15 km van het centrum van Ubud",
+      "glimpses": "Een impressie van je verblijf",
+      "allRooms": "Alle kamers zijn inclusief",
+      "wifi": "Gratis wifi",
+      "hotWater": "Warm water",
+      "acFan": "Airco / Ventilator",
+      "cleaning": "Dagelijkse schoonmaak",
+      "bed1": "bed",
+      "bedsMore": "bedden",
+      "courseOnly": "Alleen cursus",
+      "mostPopular": "Meest gekozen",
+      "premium": "Premium"
+    },
+    "hours": "Uur"
   },
   "footer": {
     "tagline": "Transformeer van binnenuit",
@@ -515,7 +535,8 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
-      "btnCounselor": "Praat met een adviseur"
+      "btnCounselor": "Praat met een adviseur",
+      "title": "200 Uur Yogadocentenopleiding in Bali"
     },
     "quickInfo": {
       "course": "Opleiding",

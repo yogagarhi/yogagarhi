@@ -104,7 +104,27 @@
     "save": "优惠",
     "getFreeManual": "获取免费教材",
     "revealYogicEnergy": "探索您独特的瑜伽能量",
-    "freeWebinar": "免费线上讲座"
+    "freeWebinar": "免费线上讲座",
+    "accommodationExtra": {
+      "featuresTitle": "食宿环境",
+      "featuresSub": "坐落于巴厘岛乌布圣境之心的静谧瑜伽修道院（Ashram）",
+      "feat1": "方圆10公里内环绕10座壮丽的天然瀑布",
+      "feat2": "园区内私享专属自然森林与静谧瀑布景观",
+      "feat3": "步出房门即可漫步于梯田稻浪之间",
+      "feat4": "距乌布文化艺术核心区仅15公里",
+      "glimpses": "静修生活剪影",
+      "allRooms": "所有房型均配备",
+      "wifi": "高速免费无线网络",
+      "hotWater": "全天候热水沐浴",
+      "acFan": "独立空调 / 静音吊扇",
+      "cleaning": "每日专业客房保洁",
+      "bed1": "张床",
+      "bedsMore": "张床",
+      "courseOnly": "纯课程培训",
+      "mostPopular": "最受欢迎",
+      "premium": "尊享单间"
+    },
+    "hours": "小时"
   },
   "footer": {
     "tagline": "由内而外的蜕变",
@@ -515,7 +535,8 @@
       "quickLocation": "巴厘岛吉安雅",
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
-      "btnCounselor": "与课程顾问沟通"
+      "btnCounselor": "与课程顾问沟通",
+      "title": "巴厘岛200小时瑜伽导师培训"
     },
     "quickInfo": {
       "course": "培训课程",

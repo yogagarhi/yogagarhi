@@ -104,7 +104,27 @@
     "save": "Sparen",
     "getFreeManual": "Kostenloses Handbuch",
     "revealYogicEnergy": "Entdecke deine yogische Energie",
-    "freeWebinar": "Kostenloses Webinar"
+    "freeWebinar": "Kostenloses Webinar",
+    "accommodationExtra": {
+      "featuresTitle": "Unterkunft",
+      "featuresSub": "Ein friedvoller Yoga-Rückzugsort im Herzen der heiligen Ubud-Region auf Bali",
+      "feat1": "10 wunderschöne Wasserfälle im Umkreis von 10 km",
+      "feat2": "Eigener Wald mit hauseigenem Wasserfall",
+      "feat3": "Ruhige Reisfeld-Wanderungen direkt vor Ort",
+      "feat4": "Nur 15 km vom Zentrum Ubuds entfernt",
+      "glimpses": "Einblicke in deinen Aufenthalt",
+      "allRooms": "Alle Zimmer beinhalten",
+      "wifi": "Kostenloses WLAN",
+      "hotWater": "Warmwasser",
+      "acFan": "Klimaanlage / Ventilator",
+      "cleaning": "Tägliche Reinigung",
+      "bed1": "Bett",
+      "bedsMore": "Betten",
+      "courseOnly": "Nur Kurs",
+      "mostPopular": "Am beliebtesten",
+      "premium": "Premium"
+    },
+    "hours": "Stunden"
   },
   "footer": {
     "tagline": "Verändere dich von innen",
@@ -515,7 +535,8 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Platz reservieren",
       "btnBrochure": "Lehrplan herunterladen",
-      "btnCounselor": "Mit Berater sprechen"
+      "btnCounselor": "Mit Berater sprechen",
+      "title": "200-Stunden Yogalehrer-Ausbildung in Bali"
     },
     "quickInfo": {
       "course": "Kurs",

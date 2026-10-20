@@ -104,7 +104,27 @@
     "save": "Risparmia",
     "getFreeManual": "Manuale gratuito",
     "revealYogicEnergy": "Scopri la tua energia yogica",
-    "freeWebinar": "Webinar gratuito"
+    "freeWebinar": "Webinar gratuito",
+    "accommodationExtra": {
+      "featuresTitle": "Alloggio",
+      "featuresSub": "Un rifugio yoga di pace nel cuore della sacra regione di Ubud a Bali",
+      "feat1": "10 magnifiche cascate nel raggio di 10 km",
+      "feat2": "Foresta privata con cascata naturale all'interno del resort",
+      "feat3": "Passeggiate tranquille tra le risaie all'interno della struttura",
+      "feat4": "A soli 15 km dal centro di Ubud",
+      "glimpses": "Uno sguardo al tuo soggiorno",
+      "allRooms": "Tutte le camere includono",
+      "wifi": "Wi-Fi gratuito",
+      "hotWater": "Acqua calda",
+      "acFan": "Aria condizionata / Ventilatore",
+      "cleaning": "Pulizia giornaliera",
+      "bed1": "letto",
+      "bedsMore": "letti",
+      "courseOnly": "Solo corso",
+      "mostPopular": "Più scelto",
+      "premium": "Premium"
+    },
+    "hours": "Ore"
   },
   "footer": {
     "tagline": "Trasformati dall'interno",
@@ -515,7 +535,8 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Prenota il tuo posto",
       "btnBrochure": "Scarica il programma",
-      "btnCounselor": "Parla con un consulente"
+      "btnCounselor": "Parla con un consulente",
+      "title": "Corso di formazione insegnanti yoga 200 ore a Bali"
     },
     "quickInfo": {
       "course": "Corso",

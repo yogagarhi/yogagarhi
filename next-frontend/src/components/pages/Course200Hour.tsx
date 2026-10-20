@@ -1130,7 +1130,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Single Image Tag in entire DOM */}
               <img
                 src="/images/hero/hero-mobile-crop-420.webp"
-                alt={`${t("hero.title")} - YogaGarhi`}
+                alt={`${t("heroTitle")} - YogaGarhi`}
                 fetchPriority="high"
                 loading="eager"
                 decoding="sync"
@@ -1490,7 +1490,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
               {/* Single YouTube Facade instance for both Mobile and Desktop */}
               <div className="relative w-full order-2 lg:col-start-1 lg:row-start-1 lg:row-span-2 mb-6 lg:mb-0 lg:sticky lg:top-24 self-start">
-                <CourseVideoFacade youtubeVideoId="U1r2mQRmWXM" title={`${t("hero.title")} - YogaGarhi Campus Tour`} />
+                <CourseVideoFacade youtubeVideoId="U1r2mQRmWXM" title={`${t("heroTitle")} - YogaGarhi Campus Tour`} />
               </div>
 
               {/* Text Body & Tour Call (order 3 on mobile, below heading in right column on desktop) */}
@@ -4308,7 +4308,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
           <div className="absolute inset-0">
             <Image
               src={heroImage}
-              alt={`${t("hero.title")} - YogaGarhi`}
+              alt={`${t("heroTitle")} - YogaGarhi`}
               fill sizes="100vw"
               className="object-cover"
             />
