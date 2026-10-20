@@ -147,6 +147,10 @@ const nextConfig: NextConfig = {
     ];
   },
   async headers() {
+    const isProduction = process.env.VERCEL_ENV === 'production';
+    const vercelLiveCsp = isProduction ? '' : ' https://vercel.live';
+    const cspValue = `default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://connect.facebook.net https://www.google-analytics.com https://www.youtube.com https://s.ytimg.com https://scripts.clarity.ms${vercelLiveCsp}; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; media-src 'self' https:; connect-src 'self' https:${vercelLiveCsp}; frame-src 'self' https://www.youtube.com https://www.google.com${vercelLiveCsp};`;
+
     return [
       {
         source: '/:path*',
@@ -155,7 +159,7 @@ const nextConfig: NextConfig = {
           // Policy violations are logged to the browser developer console only and will not block resources or scripts.
           {
             key: 'Content-Security-Policy-Report-Only',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://connect.facebook.net https://www.google-analytics.com https://www.youtube.com https://s.ytimg.com https://scripts.clarity.ms https://vercel.live; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; media-src 'self' https:; connect-src 'self' https: https://vercel.live; frame-src 'self' https://www.youtube.com https://www.google.com https://vercel.live;",
+            value: cspValue,
           },
           {
             key: 'X-Content-Type-Options',

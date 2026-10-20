@@ -130,7 +130,7 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                         <Users className="w-4 h-4" />
                         <span className="text-xs">
                             {typeof room.beds === 'number'
-                                ? `${room.beds} ${room.beds === 1 ? tAcc("bed1") : tAcc("bedsMore")}`
+                                ? `${room.beds} ${room.beds === 1 ? (tAcc?.("bed1") || 'bed') : (tAcc?.("bedsMore") || 'beds')}`
                                 : room.beds}
                         </span>
                     </div>

@@ -124,6 +124,7 @@
       "mostPopular": "Am beliebtesten",
       "premium": "Premium"
     },
+    "hours": "Stunden",
     "instagram": {
       "badge": "Hinter den Kulissen",
       "heading": "Folgen Sie unserer Reise",
@@ -540,7 +541,8 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Platz reservieren",
       "btnBrochure": "Lehrplan herunterladen",
-      "btnCounselor": "Mit Berater sprechen"
+      "btnCounselor": "Mit Berater sprechen",
+      "title": "200-Stunden Yogalehrer-Ausbildung in Bali"
     },
     "quickInfo": {
       "course": "Kurs",

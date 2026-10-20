@@ -124,6 +124,7 @@
       "mostPopular": "Più scelto",
       "premium": "Premium"
     },
+    "hours": "Ore",
     "instagram": {
       "badge": "Dietro le Quinte",
       "heading": "Segui il Nostro Viaggio",
@@ -540,7 +541,8 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Prenota il tuo posto",
       "btnBrochure": "Scarica il programma",
-      "btnCounselor": "Parla con un consulente"
+      "btnCounselor": "Parla con un consulente",
+      "title": "Corso di formazione insegnanti yoga 200 ore a Bali"
     },
     "quickInfo": {
       "course": "Corso",

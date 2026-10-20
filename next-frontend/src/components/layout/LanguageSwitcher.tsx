@@ -56,6 +56,14 @@ export default function LanguageSwitcher({
     });
   };
 
+  const availableLocales = getAvailableLocalesForPath(pathname);
+  const switchableLocales = availableLocales.filter((loc) => LOCALES_CONFIG[loc]?.showInSwitcher);
+
+  // Hide switcher button if current page does not have 2 or more switchable languages
+  if (switchableLocales.length < 2) {
+    return null;
+  }
+
   const currentConfig = LOCALES_CONFIG[locale] || LOCALES_CONFIG.en;
 
   return (

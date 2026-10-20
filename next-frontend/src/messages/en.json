@@ -124,6 +124,7 @@
       "mostPopular": "Most Popular",
       "premium": "Premium"
     },
+    "hours": "Hour",
     "instagram": {
       "badge": "Behind the Scenes",
       "heading": "Follow Our Journey",
@@ -791,7 +792,8 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnCounselor": "Talk to Counselor",
+      "title": "200-Hour Yoga Teacher Training in Bali"
     },
     "overview": {
       "heading": "Course Overview & Ashram Experience",

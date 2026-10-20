@@ -124,6 +124,7 @@
       "mostPopular": "가장 인기",
       "premium": "프리미엄"
     },
+    "hours": "시간",
     "instagram": {
       "badge": "생생한 현장 이야기",
       "heading": "우리의 여정을 함께하세요",
@@ -540,7 +541,8 @@
       "quickLocation": "발리 기안야르",
       "btnReserve": "예약하기",
       "btnBrochure": "상세 강의계획서 다운로드",
-      "btnCounselor": "상담원과 대화하기"
+      "btnCounselor": "상담원과 대화하기",
+      "title": "발리 200시간 요가 지도자 과정"
     },
     "quickInfo": {
       "course": "과정명",

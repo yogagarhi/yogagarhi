@@ -124,6 +124,7 @@
       "mostPopular": "Más popular",
       "premium": "Premium"
     },
+    "hours": "Horas",
     "instagram": {
       "badge": "Detrás de Escena",
       "heading": "Sigue Nuestro Viaje",
@@ -540,7 +541,8 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Reservar plaza",
       "btnBrochure": "Descargar programa",
-      "btnCounselor": "Hablar con un asesor"
+      "btnCounselor": "Hablar con un asesor",
+      "title": "Formación de Profesores de Yoga de 200 Horas en Bali"
     },
     "quickInfo": {
       "course": "Curso",

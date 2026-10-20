@@ -124,6 +124,7 @@
       "mostPopular": "Paling Diminati",
       "premium": "Premium"
     },
+    "hours": "Jam",
     "instagram": {
       "badge": "Di Balik Layar",
       "heading": "Ikuti Perjalanan Kami",
@@ -540,7 +541,8 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
-      "btnCounselor": "Konsultasi"
+      "btnCounselor": "Konsultasi",
+      "title": "Pelatihan Guru Yoga 200 Jam di Bali"
     },
     "quickInfo": {
       "course": "Kursus",

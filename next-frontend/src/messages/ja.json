@@ -124,6 +124,7 @@
       "mostPopular": "一番人気",
       "premium": "プレミアム"
     },
+    "hours": "時間",
     "instagram": {
       "badge": "舞台裏の様子",
       "heading": "私たちの旅をフォロー",
@@ -540,7 +541,8 @@
       "quickLocation": "バリ島ギャニャール",
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
-      "btnCounselor": "カウンセラーに相談"
+      "btnCounselor": "カウンセラーに相談",
+      "title": "バリ島200時間ヨガ指導者養成講座"
     },
     "quickInfo": {
       "course": "コース",

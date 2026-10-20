@@ -124,6 +124,7 @@
       "mostPopular": "最受欢迎",
       "premium": "尊享单间"
     },
+    "hours": "小时",
     "instagram": {
       "badge": "精彩幕后",
       "heading": "关注我们的旅程",
@@ -540,7 +541,8 @@
       "quickLocation": "巴厘岛吉安雅",
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
-      "btnCounselor": "与课程顾问沟通"
+      "btnCounselor": "与课程顾问沟通",
+      "title": "巴厘岛200小时瑜伽导师培训"
     },
     "quickInfo": {
       "course": "培训课程",

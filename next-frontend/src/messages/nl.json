@@ -124,6 +124,7 @@
       "mostPopular": "Meest gekozen",
       "premium": "Premium"
     },
+    "hours": "Uur",
     "instagram": {
       "badge": "Achter de Schermen",
       "heading": "Volg Onze Reis",
@@ -540,7 +541,8 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
-      "btnCounselor": "Praat met een adviseur"
+      "btnCounselor": "Praat met een adviseur",
+      "title": "200 Uur Yogadocentenopleiding in Bali"
     },
     "quickInfo": {
       "course": "Opleiding",
