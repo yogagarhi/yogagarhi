@@ -51,7 +51,7 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
     };
 
     return (
-        <div className={`group bg-card rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-elevated ${room.isPopular ? 'border-primary shadow-lg' : 'border-border shadow-card'}`}>
+        <div data-room-card="true" className={`group bg-card rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-elevated ${room.isPopular ? 'border-primary shadow-lg' : 'border-border shadow-card'}`}>
             {/* Image Carousel */}
             <div className="relative h-52 overflow-hidden group/carousel">
                 <div

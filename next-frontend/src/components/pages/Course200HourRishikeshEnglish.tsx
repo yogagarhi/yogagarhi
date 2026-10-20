@@ -1167,7 +1167,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                   {/* Course Length */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Duration</p>
-                    <p className="font-heading font-semibold text-foreground">24 Days</p>
+                    <p data-course-duration className="font-heading font-semibold text-foreground">24 Days</p>
                   </div>
 
                   {/* Yoga Style */}

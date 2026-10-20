@@ -1222,7 +1222,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   {/* Course Length */}
                   <div className="text-center lg:text-left border-b sm:border-b-0 sm:border-r border-border/30 pb-3 sm:pb-0 sm:pr-4 min-w-0 break-words">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.duration")}</p>
-                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base break-words hyphens-auto">{t("quickInfo.durationVal")}</p>
+                    <p data-course-duration className="font-heading font-semibold text-foreground text-sm sm:text-base break-words hyphens-auto">{t("quickInfo.durationVal")}</p>
                   </div>
 
                   {/* Yoga Style */}

@@ -563,6 +563,11 @@ const quizQuestions = [
   },
 ];
 
+export interface CoursePricingTier {
+  originalPrice: string;
+  price: string;
+}
+
 export interface CoursePageTemplateProps {
   namespace?: string;
   courseKey?: string;
@@ -570,10 +575,17 @@ export interface CoursePageTemplateProps {
   initialBatches?: CourseBatch[];
   syllabusSlot?: React.ReactNode;
   pricingConfig?: {
-    tuition?: { originalPrice: string; price: string };
-    triple: { originalPrice: string; price: string };
-    double: { originalPrice: string; price: string };
-    private: { originalPrice: string; price: string };
+    tuition?: CoursePricingTier;
+    triple: CoursePricingTier;
+    double: CoursePricingTier;
+    private: CoursePricingTier;
+    heroStartingPrice?: CoursePricingTier;
+    datesCard?: {
+      tuition?: CoursePricingTier;
+      triple: CoursePricingTier;
+      double: CoursePricingTier;
+      private: CoursePricingTier;
+    };
   };
 }
 
@@ -598,7 +610,8 @@ export default function CoursePageTemplate({
   const tWhy = useTranslations("whyChoose");
   const tHome = useTranslations("home");
   const locale = useLocale();
-  const startingPrice = pricingConfig.tuition || pricingConfig.triple;
+  const startingPrice = pricingConfig.heroStartingPrice || pricingConfig.tuition || pricingConfig.triple;
+  const datesPricing = pricingConfig.datesCard || pricingConfig;
 
   const localizedWorkshops = useMemo(() => {
     try {
@@ -1190,14 +1203,16 @@ export default function CoursePageTemplate({
                 <p className="text-lg md:text-xl font-medium text-white/90">
                   {t("hero.quickBatch")} • {t("hero.quickLevel")} • {t("hero.badge")}
                 </p>
-                <div className="inline-block bg-black/30 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/10">
-                  <p className="text-white font-semibold">
-                    Tuition only from {COURSE_200_HOUR_PRICING.shared.price} | Residential packages from {COURSE_200_HOUR_PRICING.private.price}
-                  </p>
-                  <p className="text-white/80 text-sm mt-1">
-                    Next available training: <span suppressHydrationWarning>{upcomingDates[0]?.date || initialBatches?.[0]?.date || BATCHES_200_HOUR[0].date}</span>
-                  </p>
-                </div>
+                {courseKey === "200-hour" && (
+                  <div className="inline-block bg-black/30 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/10">
+                    <p className="text-white font-semibold">
+                      Tuition only from {COURSE_200_HOUR_PRICING.shared.price} | Residential packages from {COURSE_200_HOUR_PRICING.private.price}
+                    </p>
+                    <p className="text-white/80 text-sm mt-1">
+                      Next available training: <span suppressHydrationWarning>{upcomingDates[0]?.date || initialBatches?.[0]?.date || BATCHES_200_HOUR[0].date}</span>
+                    </p>
+                  </div>
+                )}
               </div>
 
               {/* CTA Buttons */}
@@ -1250,7 +1265,7 @@ export default function CoursePageTemplate({
                   {/* Course Length */}
                   <div className="text-center lg:text-left border-b sm:border-b-0 sm:border-r border-border/30 pb-3 sm:pb-0 sm:pr-4 min-w-0 break-words">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.duration")}</p>
-                    <p className="font-heading font-semibold text-foreground text-sm sm:text-base break-words hyphens-auto">{t("quickInfo.durationVal")}</p>
+                    <p data-course-duration className="font-heading font-semibold text-foreground text-sm sm:text-base break-words hyphens-auto">{t("quickInfo.durationVal")}</p>
                   </div>
 
                   {/* Yoga Style */}
@@ -1356,24 +1371,28 @@ export default function CoursePageTemplate({
         </section>
 
         {/* ===== WHY YOGAGARHI HIGHLIGHT BOX ===== */}
-        <WhyYogaGarhiBox namespace={namespace}
-          onCheckAvailability={() => {
-            trackEvent("enroll_click", { course: "200-hour-bali", section: "why_yogagarhi" });
-            setShowEnrollDialog(true);
-          }}
-          onBookCall={() => {
-            trackEvent("video_call_click", { course: "200-hour-bali", section: "why_yogagarhi" });
-            setShowCalendarDialog(true);
-          }}
-        />
+        {courseKey !== "200-hour-rishikesh" && (
+          <WhyYogaGarhiBox namespace={namespace}
+            onCheckAvailability={() => {
+              trackEvent("enroll_click", { course: courseKey, section: "why_yogagarhi" });
+              setShowEnrollDialog(true);
+            }}
+            onBookCall={() => {
+              trackEvent("video_call_click", { course: courseKey, section: "why_yogagarhi" });
+              setShowCalendarDialog(true);
+            }}
+          />
+        )}
 
         {/* ===== REAL STUDENT VIDEO REVIEWS & BOOK CALL (HIGH CONVERSION) ===== */}
-        <TopVideoReviewsSection
-          onBookCall={() => {
-            trackEvent("video_call_click", { course: "200-hour-bali", section: "top_video_reviews" });
-            setShowCalendarDialog(true);
-          }}
-        />
+        {courseKey !== "200-hour-rishikesh" && (
+          <TopVideoReviewsSection
+            onBookCall={() => {
+              trackEvent("video_call_click", { course: courseKey, section: "top_video_reviews" });
+              setShowCalendarDialog(true);
+            }}
+          />
+        )}
 
         <WhyChooseUs />
 
@@ -2037,7 +2056,7 @@ export default function CoursePageTemplate({
         <section id="book-now" className="py-20 bg-background scroll-mt-24" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2932px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-2">
-              200 Hour Yoga Teacher Training
+              {courseKey.includes("100") ? "100" : courseKey.includes("300") ? "300" : "200"} Hour Yoga Teacher Training
             </h2>
             <p className="text-center text-primary font-heading text-lg tracking-[0.3em] uppercase mb-2">
               Upcoming Dates
@@ -2149,52 +2168,60 @@ export default function CoursePageTemplate({
                       </p>
 
                       {/* Tuition Fees */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.tuitionFees")}</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          {COURSE_200_HOUR_PRICING.shared.price}
-                        </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>
-                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                        </p>
-                      </div>
+                      {datesPricing.tuition && (
+                        <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                          <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.tuitionFees")}</p>
+                          <p className="font-heading text-2xl font-bold text-foreground">
+                            {datesPricing.tuition.price}
+                          </p>
+                          <p className="text-muted-foreground text-sm">
+                            <span className="line-through">{datesPricing.tuition.originalPrice}</span>
+                            <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
+                          </p>
+                        </div>
+                      )}
 
                       {/* Triple Sharing */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.tripleSharing")}</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          {COURSE_200_HOUR_PRICING.private.price}
-                        </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">{COURSE_200_HOUR_PRICING.private.originalPrice}</span>
-                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                        </p>
-                      </div>
+                      {datesPricing.triple && (
+                        <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                          <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.tripleSharing")}</p>
+                          <p className="font-heading text-2xl font-bold text-foreground">
+                            {datesPricing.triple.price}
+                          </p>
+                          <p className="text-muted-foreground text-sm">
+                            <span className="line-through">{datesPricing.triple.originalPrice}</span>
+                            <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
+                          </p>
+                        </div>
+                      )}
 
                       {/* Double Sharing */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.doubleSharing")}</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          {COURSE_200_HOUR_PRICING.deluxe.price}
-                        </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">{COURSE_200_HOUR_PRICING.deluxe.originalPrice}</span>
-                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                        </p>
-                      </div>
+                      {datesPricing.double && (
+                        <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                          <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.doubleSharing")}</p>
+                          <p className="font-heading text-2xl font-bold text-foreground">
+                            {datesPricing.double.price}
+                          </p>
+                          <p className="text-muted-foreground text-sm">
+                            <span className="line-through">{datesPricing.double.originalPrice}</span>
+                            <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
+                          </p>
+                        </div>
+                      )}
 
                       {/* Private Room */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.privateRoom")}</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          {COURSE_200_HOUR_PRICING.vip.price}
-                        </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">{COURSE_200_HOUR_PRICING.vip.originalPrice}</span>
-                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                        </p>
-                      </div>
+                      {datesPricing.private && (
+                        <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                          <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.privateRoom")}</p>
+                          <p className="font-heading text-2xl font-bold text-foreground">
+                            {datesPricing.private.price}
+                          </p>
+                          <p className="text-muted-foreground text-sm">
+                            <span className="line-through">{datesPricing.private.originalPrice}</span>
+                            <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
+                          </p>
+                        </div>
+                      )}
 
                       {/* CTA */}
                       <Button
@@ -4325,10 +4352,14 @@ export default function CoursePageTemplate({
         </section>
 
         {/* ===== HELPFUL GUIDES SECTION ===== */}
-        <HelpfulGuidesSection />
+        {courseKey !== "200-hour-rishikesh" && (
+          <HelpfulGuidesSection />
+        )}
 
         {/* ===== FREQUENTLY ASKED QUESTIONS ===== */}
-        <CourseFAQSection namespace={namespace} />
+        {courseKey === "200-hour" && (
+          <CourseFAQSection namespace={namespace} />
+        )}
 
         {/* ===== FINAL CONVERSION HUB ===== */}
         <section className="py-20 relative overflow-hidden">

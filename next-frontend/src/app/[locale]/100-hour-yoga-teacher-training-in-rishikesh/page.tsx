@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
+
 import Course100HourRishikesh from "@/components/pages/Course100HourRishikesh";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
@@ -314,6 +315,7 @@ export default async function Page({
             {/* Page Content */}
             <NextIntlClientProvider locale={locale} messages={courseClientMessages}>
                 <Course100HourRishikesh
+                    locale={locale}
                     initialBatches={upcomingBatches}
                     syllabusSlot={<CourseSyllabusDetails courseKey="100-hour-rishikesh" />}
                 />

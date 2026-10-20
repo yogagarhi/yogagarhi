@@ -1,20 +1,16 @@
-"use client";
-import React from "react";
-import { useLocale } from "next-intl";
-import CoursePageTemplate from "./CoursePageTemplate";
 import { BATCHES_100_HOUR, CourseBatch } from "@/constants/courseDates";
-import Course100HourRishikeshEnglish from "./Course100HourRishikeshEnglish";
 
-export default function Course100HourRishikesh({
+export default async function Course100HourRishikesh({
+  locale = "en",
   initialBatches,
   syllabusSlot
 }: {
+  locale?: string;
   initialBatches?: CourseBatch[];
   syllabusSlot?: React.ReactNode;
 } = {}) {
-  const locale = useLocale();
-
   if (locale === "en") {
+    const Course100HourRishikeshEnglish = (await import("./Course100HourRishikeshEnglish")).default;
     return (
       <Course100HourRishikeshEnglish
         initialBatches={initialBatches}
@@ -23,6 +19,7 @@ export default function Course100HourRishikesh({
     );
   }
 
+  const CoursePageTemplate = (await import("./CoursePageTemplate")).default;
   return (
     <CoursePageTemplate
       namespace="course100Rishikesh"
@@ -31,9 +28,16 @@ export default function Course100HourRishikesh({
       initialBatches={initialBatches}
       syllabusSlot={syllabusSlot}
       pricingConfig={{
+        heroStartingPrice: { originalPrice: "$899", price: "$599" },
         triple: { originalPrice: "$1,399", price: "$1,149" },
         double: { originalPrice: "$1,649", price: "$1,349" },
         private: { originalPrice: "$1,999", price: "$1,649" },
+        datesCard: {
+          tuition: { originalPrice: "$899", price: "$599" },
+          triple: { originalPrice: "$1,449", price: "$1,149" },
+          double: { originalPrice: "$1,649", price: "$1,349" },
+          private: { originalPrice: "$1,949", price: "$1,649" },
+        }
       }}
     />
   );

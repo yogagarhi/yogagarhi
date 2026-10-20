@@ -1136,7 +1136,7 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
                   {/* Course Length */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Duration</p>
-                    <p className="font-heading font-semibold text-foreground">28 Days</p>
+                    <p data-course-duration className="font-heading font-semibold text-foreground">28 Days</p>
                   </div>
 
                   {/* Yoga Style */}

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check:i18n-facts": "node ../scripts/check-i18n-facts.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

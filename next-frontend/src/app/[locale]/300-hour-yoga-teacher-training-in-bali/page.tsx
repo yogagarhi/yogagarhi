@@ -324,8 +324,10 @@ export default async function Page({
                 fetchPriority="high"
             />
 
+            {/* Page Content */}
             <NextIntlClientProvider locale={locale} messages={courseClientMessages}>
                 <Course300Hour
+                    locale={locale}
                     initialBatches={upcomingBatches}
                     syllabusSlot={<CourseSyllabusDetails courseKey="300-hour" />}
                 />

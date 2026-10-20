@@ -71,3 +71,45 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+---
+
+## Course Page Content Editing Guide (i18n & English)
+
+Jab bhi kisi Course Page ka content (prices, batch dates, curriculum, FAQs, photos) badalna ho, toh kin-kin files mein changes karne hain:
+
+### 1. 100-Hour Yoga Teacher Training Bali (`/100-hour-yoga-teacher-training-in-bali`)
+* **English visible content:** `next-frontend/src/components/pages/Course100HourEnglish.tsx`
+* **Translated content:** `next-frontend/src/messages/[locale].json` (namespace: `"course100"`)
+* **SEO Metadata & Schemas:** `next-frontend/src/app/[locale]/100-hour-yoga-teacher-training-in-bali/page.tsx`
+* **Prices:** English in `Course100HourEnglish.tsx`, Translations in `Course100Hour.tsx` (`pricingConfig`)
+* **Batch Dates:** `next-frontend/src/constants/courseDates.ts` (`BATCHES_100_HOUR`)
+
+### 2. 300-Hour Yoga Teacher Training Bali (`/300-hour-yoga-teacher-training-in-bali`)
+* **English visible content:** `next-frontend/src/components/pages/Course300HourEnglish.tsx`
+* **Translated content:** `next-frontend/src/messages/[locale].json` (namespace: `"course300"`)
+* **SEO Metadata & Schemas:** `next-frontend/src/app/[locale]/300-hour-yoga-teacher-training-in-bali/page.tsx`
+* **Prices:** English in `Course300HourEnglish.tsx`, Translations in `Course300Hour.tsx` (`pricingConfig`)
+* **Batch Dates:** `next-frontend/src/constants/courseDates.ts` (`BATCHES_300_HOUR`)
+
+### 3. 100-Hour Yoga Teacher Training Rishikesh (`/100-hour-yoga-teacher-training-in-rishikesh`)
+* **English visible content:** `next-frontend/src/components/pages/Course100HourRishikeshEnglish.tsx`
+* **Translated content:** `next-frontend/src/messages/[locale].json` (namespace: `"course100Rishikesh"`)
+* **SEO Metadata & Schemas:** `next-frontend/src/app/[locale]/100-hour-yoga-teacher-training-in-rishikesh/page.tsx`
+* **Prices:** English in `Course100HourRishikeshEnglish.tsx`, Translations in `Course100HourRishikesh.tsx` (`pricingConfig`)
+* **Batch Dates:** `next-frontend/src/constants/courseDates.ts` (`BATCHES_100_HOUR`)
+
+### 4. 200-Hour Yoga Teacher Training Rishikesh (`/200-hour-yoga-teacher-training-in-rishikesh`)
+* **English visible content:** `next-frontend/src/components/pages/Course200HourRishikeshEnglish.tsx`
+* **Translated content:** `next-frontend/src/messages/[locale].json` (namespace: `"course200Rishikesh"`)
+* **SEO Metadata & Schemas:** `next-frontend/src/app/[locale]/200-hour-yoga-teacher-training-in-rishikesh/page.tsx`
+* **Prices:** English in `Course200HourRishikeshEnglish.tsx`, Translations in `Course200HourRishikesh.tsx` (`pricingConfig`)
+* **Batch Dates:** `next-frontend/src/constants/courseDates.ts` (`BATCHES_200_HOUR`)
+
+### Automated Parity Check
+Content badalne ke baad run karein:
+```bash
+npm run check:i18n-facts
+```
+Detailed guide: see `docs/content-editing-guide.md`.
+
