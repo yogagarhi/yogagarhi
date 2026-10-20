@@ -168,7 +168,17 @@ export default async function LocaleLayout({
     footer: messages.footer,
     dialogs: messages.dialogs,
     stickyContact: messages.stickyContact,
-    home: messages.home,
+    home: {
+      ready: messages.home?.ready,
+      dosha: messages.home?.dosha,
+      webinar: messages.home?.webinar,
+      support: messages.home?.support,
+      whyChoose: messages.home?.whyChoose,
+      founder: messages.home?.founder,
+      gallery: messages.home?.gallery,
+      videoGallery: messages.home?.videoGallery,
+      studentStories: messages.home?.studentStories,
+    },
   };
 
   return (
