@@ -3,14 +3,23 @@ import { BookOpen, CheckCircle2, ChevronDown } from "lucide-react";
 import { courseData } from "@/constants/courses";
 import { useTranslations } from "next-intl";
 
+const courseKeyToNamespace: Record<string, string> = {
+  "100-hour": "course100",
+  "300-hour": "course300",
+  "100-hour-rishikesh": "course100Rishikesh",
+  "200-hour-rishikesh": "course200Rishikesh",
+  "200-hour": "course200",
+};
+
 export default function CourseSyllabusDetails({
   courseKey = "200-hour",
-  namespace = "course200"
+  namespace
 }: {
   courseKey?: keyof typeof courseData;
   namespace?: string;
 }) {
-  const tCurriculum = useTranslations(`${namespace}.curriculum` as any);
+  const targetNamespace = namespace || courseKeyToNamespace[courseKey] || "course200";
+  const tCurriculum = useTranslations(`${targetNamespace}.curriculum` as any);
   const fallbackCurriculum = courseData[courseKey]?.curriculum || [];
   let detailedModules: any[] = [];
   try {

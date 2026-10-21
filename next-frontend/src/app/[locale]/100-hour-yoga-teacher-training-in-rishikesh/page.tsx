@@ -134,9 +134,37 @@ export default async function Page({
     setRequestLocale(locale);
 
     const messages: any = await getMessages();
+    const course200Shared = locale === "en" ? undefined : {
+        videoStoriesBadge: messages.course200?.videoStoriesBadge,
+        videoStoriesHeading: messages.course200?.videoStoriesHeading,
+        videoStoriesSub: messages.course200?.videoStoriesSub,
+        verifiedGraduate: messages.course200?.verifiedGraduate,
+        speakTeacherTitle: messages.course200?.speakTeacherTitle,
+        speakTeacherDesc: messages.course200?.speakTeacherDesc,
+        whyYogaGarhiBox: {
+            bookFreeCall: messages.course200?.whyYogaGarhiBox?.bookFreeCall,
+        },
+        helpfulGuidesBadge: messages.course200?.helpfulGuidesBadge,
+        helpfulGuidesTitle: messages.course200?.helpfulGuidesTitle,
+        helpfulGuidesDesc: messages.course200?.helpfulGuidesDesc,
+        readArticle: messages.course200?.readArticle,
+    };
+
+    const homeTrimmed = messages.home ? {
+        ready: messages.home.ready,
+        dosha: messages.home.dosha,
+        webinar: messages.home.webinar,
+        support: messages.home.support,
+        whyChoose: messages.home.whyChoose,
+        founder: messages.home.founder,
+        gallery: messages.home.gallery,
+        videoGallery: messages.home.videoGallery,
+        studentStories: messages.home.studentStories,
+    } : undefined;
+
     const courseClientMessages = {
         course100Rishikesh: messages.course100Rishikesh,
-        course200: messages.course200,
+        course200: course200Shared,
         common: messages.common,
         dialogs: messages.dialogs,
         whyChoose: messages.home?.whyChoose || messages.whyChoose,
@@ -148,7 +176,7 @@ export default async function Page({
         footer: messages.footer,
         faq: messages.faq,
         reviews: messages.reviews,
-        home: messages.home,
+        home: homeTrimmed,
     };
 
     const course = courseData["100-hour-rishikesh"];

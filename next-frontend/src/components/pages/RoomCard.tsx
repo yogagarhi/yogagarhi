@@ -57,7 +57,10 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                 <div
                     ref={carouselRef}
                     onScroll={onScroll}
-                    className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide h-full cursor-grab active:cursor-grabbing"
+                    tabIndex={0}
+                    role="region"
+                    aria-label={`${room.title} images`}
+                    className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide h-full cursor-grab active:cursor-grabbing focus:outline-none"
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
                     {room.images.map((img: any, idx: number) => (

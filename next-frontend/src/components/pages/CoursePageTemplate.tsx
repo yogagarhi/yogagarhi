@@ -1619,7 +1619,7 @@ export default function CoursePageTemplate({
 
             {/* Horizontal Scrollable Cards */}
             <div className="relative">
-              <div className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+              <div tabIndex={0} role="region" aria-label="Course schedule and activities" className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 focus:outline-none">
                 {[
                   syllabusAshtanga,
                   syllabusHathaVinyasa,
@@ -2343,7 +2343,7 @@ export default function CoursePageTemplate({
               <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
               <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
-              <div className="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4">
+              <div tabIndex={0} role="region" aria-label="What you will receive" className="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4 focus:outline-none">
                 <div className="flex gap-6" style={{ width: 'max-content' }}>
                   {localizedWhatYouWillReceive.map((item, index) => (
                     <div
@@ -2601,7 +2601,7 @@ export default function CoursePageTemplate({
 
             <div className="relative">
               {/* Horizontal Scroll Container */}
-              <div className="flex overflow-x-auto gap-4 pb-6 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+              <div tabIndex={0} role="region" aria-label="Special workshops" className="flex overflow-x-auto gap-4 pb-6 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 focus:outline-none">
                 {[
                   apartGallery1, apartGallery2, apartGallery3, apartGallery4, apartGallery5,
                   apartGallery6, apartGallery7, apartGallery8, apartGallery9, apartGallery10
@@ -2788,7 +2788,7 @@ export default function CoursePageTemplate({
             <Collapsible open={isFoodSectionOpen} onOpenChange={handleFoodSectionToggle}>
               {/* Collapse Trigger */}
               <CollapsibleTrigger asChild>
-                <div ref={foodTriggerRef} className="text-center mb-10 cursor-pointer group scroll-mt-24">
+                <button type="button" ref={foodTriggerRef as any} className="text-center mb-10 cursor-pointer group scroll-mt-24 w-full bg-transparent border-0 p-0 block focus:outline-none">
                   <div className="inline-flex items-center gap-3 px-6 py-3 bg-background rounded-full border border-border hover:border-primary/40 transition-all duration-300 shadow-sm hover:shadow-card">
                     <h3 className="font-heading text-xl font-bold text-foreground">
                       {t("mindfulEating")}
@@ -2798,7 +2798,7 @@ export default function CoursePageTemplate({
                   <p className="text-primary/70 text-sm mt-3 group-hover:text-primary transition-colors">
                     {isFoodSectionOpen ? t('clickToCollapse') : t('clickToExpand')}
                   </p>
-                </div>
+                </button>
               </CollapsibleTrigger>
 
               <CollapsibleContent className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
@@ -3895,7 +3895,7 @@ export default function CoursePageTemplate({
                 <div className="flex items-center justify-center gap-4 mb-6">
                   <button
                     onClick={() => setSelectedMonth(prev => prev > 0 ? prev - 1 : 11)}
-                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors"
+                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors" aria-label="Previous month"
                   >
                     <ChevronDown className="w-5 h-5 rotate-90" />
                   </button>
@@ -3904,7 +3904,7 @@ export default function CoursePageTemplate({
                   </span>
                   <button
                     onClick={() => setSelectedMonth(prev => prev < 11 ? prev + 1 : 0)}
-                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors"
+                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors" aria-label="Next month"
                   >
                     <ChevronDown className="w-5 h-5 -rotate-90" />
                   </button>

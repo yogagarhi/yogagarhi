@@ -1294,9 +1294,9 @@ export default function Course100Hour({ initialBatches, syllabusSlot }: { initia
                     {showWelcomeExpanded ? 'Read Less' : 'Read More'}
                     <ChevronDown
                       className={`w-4 h-4 transition-transform duration-300 ${showWelcomeExpanded ? 'rotate-180' : ''
-                        }`}
-                    />
-                  </button>
+                      }`}
+                  />
+                </button>
                 </div>
 
                 {/* Mobile-only Pre-YTTC Section */}
@@ -1593,7 +1593,7 @@ export default function Course100Hour({ initialBatches, syllabusSlot }: { initia
               <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
               <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
-              <div className="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4">
+              <div tabIndex={0} role="region" aria-label="What you will receive" className="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4 focus:outline-none">
                 <div className="flex gap-6" style={{ width: 'max-content' }}>
                   {whatYouWillReceive.map((item, index) => (
                     <div
@@ -2519,7 +2519,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
 
 
         {/* ===== INCLUSIONS / EXCLUSIONS ===== */}
-        <section className="py-20 bg-secondary/30">
+        <section className="py-20 bg-secondary/30" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1006px" }}>
           <div className="container mx-auto px-4">
             {/* Tab Buttons */}
             <div className="flex justify-center gap-4 mb-12">
@@ -3416,7 +3416,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
         </section>
 
         {/* ===== SATTVIC FOOD ===== */}
-        <section className="py-20 bg-secondary/20 relative overflow-hidden">
+        <section className="py-20 bg-secondary/20 relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1836px" }}>
           {/* Decorative Background */}
           <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-primary/5 -translate-y-1/2 translate-x-1/2" />
           <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-accent/5 translate-y-1/2 -translate-x-1/2" />
@@ -3469,7 +3469,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             <Collapsible open={isFoodSectionOpen} onOpenChange={handleFoodSectionToggle}>
               {/* Collapse Trigger */}
               <CollapsibleTrigger asChild>
-                <div ref={foodTriggerRef} className="text-center mb-10 cursor-pointer group scroll-mt-24">
+                <button type="button" ref={foodTriggerRef as any} className="text-center mb-10 cursor-pointer group scroll-mt-24 w-full bg-transparent border-0 p-0 block focus:outline-none">
                   <div className="inline-flex items-center gap-3 px-6 py-3 bg-background rounded-full border border-border hover:border-primary/40 transition-all duration-300 shadow-sm hover:shadow-card">
                     <h3 className="font-heading text-xl font-bold text-foreground">
                       A Day of Mindful Eating
@@ -3479,7 +3479,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                   <p className="text-primary/70 text-sm mt-3 group-hover:text-primary transition-colors">
                     {isFoodSectionOpen ? 'Click to collapse' : 'Click to expand'}
                   </p>
-                </div>
+                </button>
               </CollapsibleTrigger>
 
               <CollapsibleContent className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
@@ -3589,7 +3589,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
         </section>
 
         {/* ===== UPCOMING DATES ===== */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-background" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1485px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-2">
               100 Hour Yoga Teacher Training
@@ -3764,7 +3764,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
         </section>
 
         {/* ===== GOOGLE REVIEWS ===== */}
-        <section className="py-20 bg-secondary/30 relative overflow-hidden">
+        <section className="py-20 bg-secondary/30 relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 958px" }}>
           {/* Yoga-themed Background Art */}
           <div className="absolute inset-0 pointer-events-none">
             {/* Sri Yantra Pattern - Top Left */}
@@ -3876,7 +3876,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
 
 
         {/* ===== BOOK A CALL ===== */}
-        <section id="book-call" className="py-20 bg-secondary/20 relative overflow-hidden">
+        <section id="book-call" className="py-20 bg-secondary/20 relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 990px" }}>
           {/* Decorative Background */}
           <div className="absolute top-0 left-0 w-[300px] h-[300px] rounded-full bg-primary/5 -translate-x-1/2 -translate-y-1/2" />
           <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-primary/5 translate-x-1/2 translate-y-1/2" />
@@ -3903,7 +3903,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                   <div className="flex items-center justify-center gap-4 mb-6">
                     <button
                       onClick={() => setSelectedMonth(prev => prev > 0 ? prev - 1 : 11)}
-                      className="p-1 hover:bg-primary-foreground/10 rounded transition-colors"
+                      className="p-1 hover:bg-primary-foreground/10 rounded transition-colors" aria-label="Previous month"
                     >
                       <ChevronDown className="w-5 h-5 rotate-90" />
                     </button>
@@ -3912,7 +3912,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                     </span>
                     <button
                       onClick={() => setSelectedMonth(prev => prev < 11 ? prev + 1 : 0)}
-                      className="p-1 hover:bg-primary-foreground/10 rounded transition-colors"
+                      className="p-1 hover:bg-primary-foreground/10 rounded transition-colors" aria-label="Next month"
                     >
                       <ChevronDown className="w-5 h-5 -rotate-90" />
                     </button>
@@ -4177,7 +4177,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
         </section>
 
         {/* ===== SACHIN JI'S RESEARCH & PRAKRITI SECTION ===== */}
-        <section id="sachinji-research" className="py-24 bg-background relative overflow-hidden">
+        <section id="sachinji-research" className="py-24 bg-background relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1913px" }}>
           {/* Decorative background elements */}
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />

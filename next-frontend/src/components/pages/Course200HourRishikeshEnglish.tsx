@@ -1298,7 +1298,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
               <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background/10 to-transparent z-10 pointer-events-none" />
               <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background/10 to-transparent z-10 pointer-events-none" />
 
-              <div className="overflow-x-auto scrollbar-hide pb-6 -mx-4 px-4 flex gap-6 snap-x snap-mandatory">
+              <div tabIndex={0} role="region" aria-label="Course highlights" className="overflow-x-auto scrollbar-hide pb-6 -mx-4 px-4 flex gap-6 snap-x snap-mandatory focus:outline-none">
                 {[
                   {
                     name: "Sarah Jenkins",
@@ -1452,9 +1452,9 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                     {showWelcomeExpanded ? 'Read Less' : 'Read More'}
                     <ChevronDown
                       className={`w-4 h-4 transition-transform duration-300 ${showWelcomeExpanded ? 'rotate-180' : ''
-                        }`}
-                    />
-                  </button>
+                      }`}
+                  />
+                </button>
                     {/* Mobile-only Pre-YTTC Section */}
                 <div className="mb-10 p-6 rounded-2xl bg-primary/10 border-2 border-primary/20 lg:hidden group shadow-sm">
                   <h3 className="font-heading text-xl font-extrabold text-foreground mb-3 flex items-start gap-2">
@@ -1611,7 +1611,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
 
             {/* Horizontal Scrollable Cards */}
             <div className="relative">
-              <div className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+              <div tabIndex={0} role="region" aria-label="Course schedule and activities" className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 focus:outline-none">
                 {[
                   {
                     title: "Ashtanga Yoga Postures",
@@ -1985,7 +1985,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
         <StudentStoriesSection />
 
         {/* ===== DAILY SCHEDULE ===== */}
-        <section className="py-20 bg-secondary/30">
+        <section className="py-20 bg-secondary/30" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1444px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
               Daily Schedule
@@ -2069,7 +2069,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
 
 
         {/* ===== UPCOMING DATES ===== */}
-        <section id="book-now" className="py-20 bg-background scroll-mt-24">
+        <section id="book-now" className="py-20 bg-background scroll-mt-24" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1485px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-2">
               200 Hour Yoga Teacher Training
@@ -2345,7 +2345,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
               <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
               <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
-              <div className="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4">
+              <div tabIndex={0} role="region" aria-label="What you will receive" className="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4 focus:outline-none">
                 <div className="flex gap-6" style={{ width: 'max-content' }}>
                   {whatYouWillReceive.map((item, index) => (
                     <div
@@ -2612,7 +2612,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
 
             <div className="relative">
               {/* Horizontal Scroll Container */}
-              <div className="flex overflow-x-auto gap-4 pb-6 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+              <div tabIndex={0} role="region" aria-label="Special workshops" className="flex overflow-x-auto gap-4 pb-6 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 focus:outline-none">
                 {[
                   apartGallery1, apartGallery2, apartGallery3, apartGallery4, apartGallery5,
                   apartGallery6, apartGallery7, apartGallery8, apartGallery9, apartGallery10
@@ -2743,7 +2743,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
 
 
         {/* ===== SATTVIC FOOD ===== */}
-        <section className="py-20 bg-secondary/20 relative overflow-hidden">
+        <section className="py-20 bg-secondary/20 relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1836px" }}>
           {/* Decorative Background */}
           <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-primary/5 -translate-y-1/2 translate-x-1/2" />
           <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-accent/5 translate-y-1/2 -translate-x-1/2" />
@@ -2796,7 +2796,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
             <Collapsible open={isFoodSectionOpen} onOpenChange={handleFoodSectionToggle}>
               {/* Collapse Trigger */}
               <CollapsibleTrigger asChild>
-                <div ref={foodTriggerRef} className="text-center mb-10 cursor-pointer group scroll-mt-24">
+                <button type="button" ref={foodTriggerRef as any} className="text-center mb-10 cursor-pointer group scroll-mt-24 w-full bg-transparent border-0 p-0 block focus:outline-none">
                   <div className="inline-flex items-center gap-3 px-6 py-3 bg-background rounded-full border border-border hover:border-primary/40 transition-all duration-300 shadow-sm hover:shadow-card">
                     <h3 className="font-heading text-xl font-bold text-foreground">
                       A Day of Mindful Eating
@@ -2806,7 +2806,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                   <p className="text-primary/70 text-sm mt-3 group-hover:text-primary transition-colors">
                     {isFoodSectionOpen ? 'Click to collapse' : 'Click to expand'}
                   </p>
-                </div>
+                </button>
               </CollapsibleTrigger>
 
               <CollapsibleContent className="overflow-hidden data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
@@ -3128,7 +3128,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
 
 
         {/* ===== GOOGLE REVIEWS ===== */}
-        <section className="py-20 bg-secondary/30 relative overflow-hidden">
+        <section className="py-20 bg-secondary/30 relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 958px" }}>
           {/* Yoga-themed Background Art */}
           <div className="absolute inset-0 pointer-events-none">
             {/* Sri Yantra Pattern - Top Left */}
@@ -3870,7 +3870,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                 <div className="flex items-center justify-center gap-4 mb-6">
                   <button
                     onClick={() => setSelectedMonth(prev => prev > 0 ? prev - 1 : 11)}
-                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors"
+                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors" aria-label="Previous month"
                   >
                     <ChevronDown className="w-5 h-5 rotate-90" />
                   </button>
@@ -3879,7 +3879,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                   </span>
                   <button
                     onClick={() => setSelectedMonth(prev => prev < 11 ? prev + 1 : 0)}
-                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors"
+                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors" aria-label="Next month"
                   >
                     <ChevronDown className="w-5 h-5 -rotate-90" />
                   </button>
@@ -4134,7 +4134,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
         </Dialog>
 
         {/* ===== SACHIN JI'S RESEARCH & PRAKRITI SECTION ===== */}
-        <section id="sachinji-research" className="py-24 bg-background relative overflow-hidden">
+        <section id="sachinji-research" className="py-24 bg-background relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1913px" }}>
           {/* Decorative background elements */}
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
