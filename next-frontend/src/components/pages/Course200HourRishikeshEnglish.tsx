@@ -1032,14 +1032,14 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
               {/* Mobile smart-cropped responsive sources (WebP first for ultra-fast mobile decode) */}
               <source
                 media="(max-width: 768px)"
-                type="image/webp"
-                srcSet="/images/hero/hero-mobile-crop-360.webp 360w, /images/hero/hero-mobile-crop-420.webp 420w"
+                type="image/avif"
+                srcSet="/images/hero/hero-mobile-crop-360.avif 360w, /images/hero/hero-mobile-crop-420.avif 420w"
                 sizes="100vw"
               />
               <source
                 media="(max-width: 768px)"
-                type="image/avif"
-                srcSet="/images/hero/hero-mobile-crop-360.avif 360w, /images/hero/hero-mobile-crop-420.avif 420w"
+                type="image/webp"
+                srcSet="/images/hero/hero-mobile-crop-360.webp 360w, /images/hero/hero-mobile-crop-420.webp 420w"
                 sizes="100vw"
               />
               {/* Desktop responsive sources (AVIF with WebP fallback) */}

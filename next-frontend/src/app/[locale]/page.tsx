@@ -175,9 +175,9 @@ export default async function Page({
       <link
         rel="preload"
         as="image"
-        type="image/webp"
-        href="/images/hero/hero-mobile-crop-420.webp"
-        imageSrcSet="/images/hero/hero-mobile-crop-360.webp 360w, /images/hero/hero-mobile-crop-420.webp 420w"
+        type="image/avif"
+        href="/images/hero/hero-mobile-crop-420.avif"
+        imageSrcSet="/images/hero/hero-mobile-crop-360.avif 360w, /images/hero/hero-mobile-crop-420.avif 420w"
         imageSizes="100vw"
         media="(max-width: 768px)"
         fetchPriority="high"

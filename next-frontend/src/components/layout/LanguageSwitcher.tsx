@@ -107,8 +107,7 @@ export default function LanguageSwitcher({
           </div>
           <div className="max-h-64 overflow-y-auto py-1">
             {(() => {
-              const availableLocales = getAvailableLocalesForPath(pathname);
-              return SUPPORTED_LOCALES.filter((loc) => availableLocales.includes(loc) || loc === locale).map((loc) => {
+              return SUPPORTED_LOCALES.filter((loc) => switchableLocales.includes(loc) || loc === locale).map((loc) => {
                 const config = LOCALES_CONFIG[loc];
                 const isActive = loc === locale;
                 return (

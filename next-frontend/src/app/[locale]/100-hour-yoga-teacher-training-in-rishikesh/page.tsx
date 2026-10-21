@@ -169,11 +169,6 @@ export default async function Page({
         dialogs: messages.dialogs,
         whyChoose: messages.home?.whyChoose || messages.whyChoose,
         promo: messages.promo,
-        stickyContact: messages.stickyContact,
-        switcher: messages.switcher,
-        nav: messages.nav,
-        navDropdown: messages.navDropdown,
-        footer: messages.footer,
         faq: messages.faq,
         reviews: messages.reviews,
         home: homeTrimmed,
@@ -320,12 +315,7 @@ export default async function Page({
             />
 
             {/* Preload Hero image for instant browser scanner discovery */}
-            <link
-                rel="preload"
-                as="image"
-                type="image/webp"
-                href="/images/hero/hero-mobile-crop-420.webp"
-                imageSrcSet="/images/hero/hero-mobile-crop-360.webp 360w, /images/hero/hero-mobile-crop-420.webp 420w"
+            <link rel="preload" as="image" type="image/avif" href="/images/hero/hero-mobile-crop-420.avif" imageSrcSet="/images/hero/hero-mobile-crop-360.avif 360w, /images/hero/hero-mobile-crop-420.avif 420w"
                 imageSizes="100vw"
                 media="(max-width: 768px)"
                 fetchPriority="high"
