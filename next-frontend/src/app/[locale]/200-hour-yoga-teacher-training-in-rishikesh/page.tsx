@@ -136,6 +136,7 @@ export default async function Page({
     const messages: any = await getMessages();
     const courseClientMessages = {
         course200Rishikesh: messages.course200Rishikesh,
+        course200: messages.course200,
         common: messages.common,
         dialogs: messages.dialogs,
         whyChoose: messages.home?.whyChoose || messages.whyChoose,
