@@ -130,7 +130,7 @@ function TestimonialCard({ review, index, t }: { review: GoogleReview; index: nu
         <Quote className="w-8 h-8 text-primary/20 mb-4 flex-shrink-0" />
         <div className="flex-1 mb-6">
           <p className={`text-foreground/80 leading-relaxed italic ${!expanded ? 'line-clamp-6 md:line-clamp-none' : ''}`}>
-            &ldquo;{review.text}&rdquo;
+            "{review.text}"
           </p>
           <button
             type="button"

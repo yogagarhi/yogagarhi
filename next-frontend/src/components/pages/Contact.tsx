@@ -121,7 +121,9 @@ export default function Contact() {
                 <Mail className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
               </div>
               <p className="font-semibold text-foreground text-sm">yogagarhi@gmail.com</p>
-              <p className="text-xs text-muted-foreground mt-1">{t("emailLabel")}</p>
+              <p className="text-xs text-muted-foreground mt-1">
+                {locale === "en" ? "Admissions Desk" : t("emailLabel")}
+              </p>
             </a>
 
             {/* Hours */}
@@ -140,12 +142,23 @@ export default function Contact() {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block mb-3">
-              {t("campusBadge")}
-            </span>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-              {t("campusTitle")}
-            </h2>
+            {locale === "en" ? (
+              <>
+                <span className="text-xs uppercase tracking-widest text-primary font-bold">Our Global Ashram Locations</span>
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2">
+                  Visit Our Sacred Spaces
+                </h2>
+              </>
+            ) : (
+              <>
+                <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block mb-3">
+                  {t("campusBadge")}
+                </span>
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
+                  {t("campusTitle")}
+                </h2>
+              </>
+            )}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -242,24 +255,24 @@ export default function Contact() {
               <button
                 type="button"
                 onClick={() => setActiveCampus("bali")}
-                className={`px-5 py-2.5 rounded-lg text-xs font-semibold transition-all ${
+                className={`px-6 py-2.5 rounded-lg text-sm font-bold transition-all ${
                   activeCampus === "bali"
-                    ? "bg-primary text-primary-foreground shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
+                    ? "bg-primary text-white shadow-md"
+                    : "text-foreground/70 hover:text-foreground"
                 }`}
               >
-                {t("tabBali")}
+                {locale === "en" ? "🌴 Bali Ashram (Gianyar/Ubud)" : t("tabBali")}
               </button>
               <button
                 type="button"
                 onClick={() => setActiveCampus("rishikesh")}
-                className={`px-5 py-2.5 rounded-lg text-xs font-semibold transition-all ${
+                className={`px-6 py-2.5 rounded-lg text-sm font-bold transition-all ${
                   activeCampus === "rishikesh"
-                    ? "bg-primary text-primary-foreground shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
+                    ? "bg-primary text-white shadow-md"
+                    : "text-foreground/70 hover:text-foreground"
                 }`}
               >
-                {t("tabRishikesh")}
+                {locale === "en" ? "⛰️ Rishikesh Campus (Tapovan)" : t("tabRishikesh")}
               </button>
             </div>
           </div>

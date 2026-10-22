@@ -537,7 +537,7 @@ export default function AboutAshram() {
                 </p>
                 <p className="text-lg md:text-xl text-foreground/90 leading-relaxed italic border-t border-primary/20 pt-8 mb-8">
                   {locale === "en" ? (
-                    <>&ldquo;When yoga respects your Prakriti, it becomes <strong className="text-foreground">accessible, sustainable, and deeply healing</strong> for everyone. Here, yoga is not forced. It is <strong className="text-foreground">personalized, energy-aware, and deeply respectful</strong> of who you are.&rdquo;</>
+                    <>"When yoga respects your Prakriti, it becomes <strong className="text-foreground">accessible, sustainable, and deeply healing</strong> for everyone. Here, yoga is not forced. It is <strong className="text-foreground">personalized, energy-aware, and deeply respectful</strong> of who you are."</>
                   ) : (
                     t("researchConclusionP2")
                   )}

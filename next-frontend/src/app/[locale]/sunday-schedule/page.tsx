@@ -24,7 +24,7 @@ export async function generateMetadata({
     const metadata: Metadata = {
         metadataBase: new URL("https://www.yogagarhi.com"),
         title: {
-            absolute: title,
+            absolute: `${title} | YogaGarhi`,
         },
         description,
         keywords: "Sunday yoga schedule, Bali excursions, Monkey Forest, Beach Yoga Bali, Yogagarhi activities",

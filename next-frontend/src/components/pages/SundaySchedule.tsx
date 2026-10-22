@@ -188,7 +188,7 @@ export default function SundaySchedule() {
                                             {sunday.title}
                                         </h2>
                                         <p className="text-xl font-medium text-primary/80 italic">
-                                            &ldquo;{sunday.subtitle}&rdquo;
+                                            "{sunday.subtitle}"
                                         </p>
                                     </div>
 

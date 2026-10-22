@@ -24,7 +24,7 @@ export async function generateMetadata({
     const metadata: Metadata = {
         metadataBase: new URL("https://www.yogagarhi.com"),
         title: {
-            absolute: title,
+            absolute: `${title} | YogaGarhi`,
         },
         description,
         keywords: "yoga teachers Bali, yoga masters, YogaGarhi instructors, Sachin Ji, yoga teacher training faculty",
