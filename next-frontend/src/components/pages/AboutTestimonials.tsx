@@ -10,9 +10,11 @@ import { getCloudinaryImage } from "@/utils/cloudinary";
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 import Image from "next/image";
 import { googleReviews, GoogleReview } from "@/constants/googleReviews";
+import { useTranslations } from "next-intl";
 
 export default function AboutTestimonials() {
   const { setShowEnrollDialog } = useEnrollment();
+  const t = useTranslations("testimonials");
 
   return (
     <>
@@ -31,14 +33,14 @@ export default function AboutTestimonials() {
         <div className="relative z-10 text-center text-primary-foreground px-4">
           <div className="inline-flex items-center gap-3 mb-4">
             <div className="w-8 h-px bg-primary-foreground/40" />
-            <span className="text-sm font-medium tracking-[0.2em] uppercase opacity-80">Hear Their Stories</span>
+            <span className="text-sm font-medium tracking-[0.2em] uppercase opacity-80">{t("heroBadge")}</span>
             <div className="w-8 h-px bg-primary-foreground/40" />
           </div>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            Voice from our Yogagarhi Family
+            {t("heroHeading")}
           </h1>
           <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
-            Real experiences from our global community of graduates
+            {t("heroSub")}
           </p>
         </div>
       </section>
@@ -52,19 +54,19 @@ export default function AboutTestimonials() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-center">
             <div>
               <div className="font-heading text-4xl md:text-5xl font-bold text-primary mb-2">500+</div>
-              <p className="text-muted-foreground text-sm">Graduates Worldwide</p>
+              <p className="text-muted-foreground text-sm">{t("statsGraduates")}</p>
             </div>
             <div>
               <div className="font-heading text-4xl md:text-5xl font-bold text-primary mb-2">50+</div>
-              <p className="text-muted-foreground text-sm">Countries Represented</p>
+              <p className="text-muted-foreground text-sm">{t("statsCountries")}</p>
             </div>
             <div>
               <div className="font-heading text-4xl md:text-5xl font-bold text-primary mb-2">5.0</div>
-              <p className="text-muted-foreground text-sm">Google Rating</p>
+              <p className="text-muted-foreground text-sm">{t("statsRating")}</p>
             </div>
             <div>
               <div className="font-heading text-4xl md:text-5xl font-bold text-primary mb-2">100%</div>
-              <p className="text-muted-foreground text-sm">Recommend Us</p>
+              <p className="text-muted-foreground text-sm">{t("statsRecommend")}</p>
             </div>
           </div>
         </div>
@@ -76,17 +78,17 @@ export default function AboutTestimonials() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="w-8 h-px bg-primary/40" />
-              <span className="text-primary text-sm font-medium tracking-[0.2em] uppercase">Student Stories</span>
+              <span className="text-primary text-sm font-medium tracking-[0.2em] uppercase">{t("gridBadge")}</span>
               <div className="w-8 h-px bg-primary/40" />
             </div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-              From Our Global Community
+              {t("gridHeading")}
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {googleReviews.map((review, index) => (
-              <TestimonialCard key={review.name} review={review} index={index} />
+              <TestimonialCard key={review.name} review={review} index={index} t={t} />
             ))}
           </div>
 
@@ -97,7 +99,7 @@ export default function AboutTestimonials() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
             >
-              View all 100+ reviews on Google
+              {t("viewAllGoogle")}
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -110,7 +112,7 @@ export default function AboutTestimonials() {
   );
 }
 
-function TestimonialCard({ review, index }: { review: GoogleReview; index: number }) {
+function TestimonialCard({ review, index, t }: { review: GoogleReview; index: number; t: any }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -121,21 +123,21 @@ function TestimonialCard({ review, index }: { review: GoogleReview; index: numbe
     >
       {index === 0 && (
         <div className="bg-primary text-primary-foreground text-center py-2 text-xs font-bold tracking-widest uppercase">
-          Featured Story
+          {t("featuredStory")}
         </div>
       )}
       <div className="bg-muted/30 p-6 flex flex-col flex-1">
         <Quote className="w-8 h-8 text-primary/20 mb-4 flex-shrink-0" />
         <div className="flex-1 mb-6">
           <p className={`text-foreground/80 leading-relaxed italic ${!expanded ? 'line-clamp-6 md:line-clamp-none' : ''}`}>
-            "{review.text}"
+            &ldquo;{review.text}&rdquo;
           </p>
           <button
             type="button"
             onClick={() => setExpanded(!expanded)}
             className="text-xs text-primary hover:text-primary/80 font-medium mt-2 md:hidden"
           >
-            {expanded ? "Read less" : "Read more"}
+            {expanded ? t("readLess") : t("readMore")}
           </button>
         </div>
         <div className="pt-4 border-t border-border/40 mt-auto">

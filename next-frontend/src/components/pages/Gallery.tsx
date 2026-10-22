@@ -6,6 +6,7 @@ import ReadyToBeginSection from "@/components/home/ReadyToBeginSection";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import { getCloudinaryImage } from "@/utils/cloudinary";
 
@@ -25,23 +26,6 @@ const seatedMeditation = getCloudinaryImage("seated-meditation.png");
 const partnerAssist = getCloudinaryImage("partner-assist.png");
 const groupClass = getCloudinaryImage("group-class.png");
 
-const galleryImages = [
-  { src: yogaRiver, alt: "Yoga by the river" },
-  { src: anatomyClass, alt: "Anatomy class" },
-  { src: outdoorSession, alt: "Outdoor session" },
-  { src: acroYoga, alt: "Acro yoga practice" },
-  { src: groupStudy, alt: "Group study" },
-  { src: adjustment, alt: "Hands-on adjustment" },
-  { src: backbend, alt: "Backbend practice" },
-  { src: seatedTwist, alt: "Seated twist" },
-  { src: communityMeal, alt: "Community meal" },
-  { src: teachingPractice, alt: "Teaching practice" },
-  { src: savasana, alt: "Savasana relaxation" },
-  { src: seatedMeditation, alt: "Seated meditation" },
-  { src: partnerAssist, alt: "Partner assistance" },
-  { src: groupClass, alt: "Group yoga class" },
-];
-
 // Large decorative Mandala SVG component
 const MandalaBackground = () => (
   <svg
@@ -58,7 +42,7 @@ const MandalaBackground = () => (
     <circle cx="200" cy="200" r="110" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
     <circle cx="200" cy="200" r="90" stroke="currentColor" strokeWidth="1" className="text-primary" />
     <circle cx="200" cy="200" r="70" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
-    <circle cx="200" cy="200" r="50" stroke="currentColor" strokeWidth="1" className="text-primary" />
+    <circle cx="200" cy="200" r="50" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
     <circle cx="200" cy="200" r="30" stroke="currentColor" strokeWidth="1.5" className="text-primary" />
 
     {/* Lotus petals - outer layer */}
@@ -180,8 +164,26 @@ const MandalaBackground = () => (
 import HomeVideoGallerySection from "@/components/home/HomeVideoGallerySection";
 
 export default function Gallery() {
+  const t = useTranslations("gallery");
   const [currentIndex, setCurrentIndex] = useState(0);
   const { setShowEnrollDialog } = useEnrollment();
+
+  const galleryImages = [
+    { src: yogaRiver, alt: t("alts.yogaRiver") },
+    { src: anatomyClass, alt: t("alts.anatomyClass") },
+    { src: outdoorSession, alt: t("alts.outdoorSession") },
+    { src: acroYoga, alt: t("alts.acroYoga") },
+    { src: groupStudy, alt: t("alts.groupStudy") },
+    { src: adjustment, alt: t("alts.adjustment") },
+    { src: backbend, alt: t("alts.backbend") },
+    { src: seatedTwist, alt: t("alts.seatedTwist") },
+    { src: communityMeal, alt: t("alts.communityMeal") },
+    { src: teachingPractice, alt: t("alts.teachingPractice") },
+    { src: savasana, alt: t("alts.savasana") },
+    { src: seatedMeditation, alt: t("alts.seatedMeditation") },
+    { src: partnerAssist, alt: t("alts.partnerAssist") },
+    { src: groupClass, alt: t("alts.groupClass") },
+  ];
 
   const goToPrevious = () => {
     setCurrentIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
@@ -193,16 +195,16 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="pt-20"> {/* Add padding top for fixed header if needed, but standard Layout handles mainly. Here just wrapping content */}
+      <div className="pt-20">
         {/* Mandala Gallery Section */}
         <section className="py-16 md:py-24 bg-background relative overflow-hidden min-h-screen">
           {/* Header */}
           <div className="container mx-auto px-4 text-center mb-12">
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
-              Our Gallery
+              {t("heading")}
             </h1>
             <p className="text-xl text-muted-foreground">
-              Glimpses of life at YogaGarhi
+              {t("subheading")}
             </p>
           </div>
 
@@ -272,7 +274,7 @@ export default function Gallery() {
                     <button
                       onClick={goToPrevious}
                       className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-background/90 border border-primary/30 shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
-                      aria-label="Previous image"
+                      aria-label={t("prevImage")}
                     >
                       <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                     </button>
@@ -280,7 +282,7 @@ export default function Gallery() {
                     <button
                       onClick={goToNext}
                       className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-background/90 border border-primary/30 shadow-lg flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
-                      aria-label="Next image"
+                      aria-label={t("nextImage")}
                     >
                       <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                     </button>
@@ -302,7 +304,7 @@ export default function Gallery() {
                             ? 'bg-primary w-4'
                             : 'bg-primary/30 hover:bg-primary/50'
                             }`}
-                          aria-label={`Go to image ${index + 1}`}
+                          aria-label={t("goToImage", { n: index + 1 })}
                         />
                       ))}
                     </div>
@@ -314,17 +316,17 @@ export default function Gallery() {
             {/* Description below */}
             <div className="text-center mt-20 md:mt-24">
               <p className="font-heading text-xl md:text-2xl text-foreground/80 leading-relaxed mb-4">
-                Where practice meets purpose.
+                {t("quoteTitle")}
               </p>
               <p className="text-muted-foreground leading-relaxed max-w-xl mx-auto mb-8">
-                Every moment at Yogagarhi is a step toward inner awakening. From sunrise practice to community meals, we cherish each experience on this transformative journey.
+                {t("quoteDesc")}
               </p>
 
               <Button
                 onClick={() => setShowEnrollDialog(true)}
                 className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-6 py-3 rounded-full transition-all group"
               >
-                Enroll Now
+                {t("enrollButton")}
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>

@@ -7,6 +7,7 @@ import { Shield, Heart, Users, BookOpen, Sparkles, Mountain, ArrowRight, Leaf, S
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import ReadyToBeginSection from "@/components/home/ReadyToBeginSection";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import { useLocale, useTranslations } from "next-intl";
 
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 const gallery1 = getCloudinaryImage("gallery-1.png");
@@ -20,21 +21,6 @@ const aboutYoga1 = getCloudinaryImage("about-yoga-1.jpg");
 const aboutYoga2 = getCloudinaryImage("about-yoga-2.jpg");
 const aboutYoga3 = getCloudinaryImage("about-yoga-3.jpg");
 
-const whyChooseUs = [
-  { title: "The Unique Shivshakti Method", desc: "Our Signature Approach converts yogic theory into practical wisdom.", highlight: "Signature" },
-  { title: "Real Teaching Skills", desc: "Micro-teaching, with short sessions and fewer students, builds trust and shapes practitioners into future teachers.", highlight: "Practical" },
-  { title: "Post-TTC Mentorship", desc: "Include Yoga business modules, teaching set up, authentic marketing, retreat, workshops, and alumni community to support your career.", highlight: "Lifetime" },
-  { title: "Small Learning Groups", desc: "Only 10-15 students per batch for personalized attention. We make sure everyone learns.", highlight: "8-15 Max" },
-  { title: "Philosophy-driven Approach", desc: "Brings highest philosophy into practice through rituals, meditation, satsang and many more.", highlight: "Authentic" },
-  { title: "Technical Expertise", desc: "We teach you anatomy and biomechanics on the mat. You learn alignment, sequencing, adjustments in detail.", highlight: "Expert" },
-];
-
-const experiences = [
-  { icon: Leaf, title: "Simple, yet profound", desc: "Because truth doesn't need complexity to be felt." },
-  { icon: Heart, title: "Scientific, yet spiritual", desc: "Where ancient wisdom meets modern understanding." },
-  { icon: Flame, title: "Practical, yet sacred", desc: "Grounded in daily life, yet rooted in timeless depth." },
-];
-
 // Lotus SVG for decorative purposes
 const LotusDecor = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 100 60" fill="none" stroke="currentColor" strokeWidth="1">
@@ -46,20 +32,10 @@ const LotusDecor = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const lifetimeExperiences = [
-  "Nature walks",
-  "Evening meditation",
-  "Morning silence",
-  "Fire rituals",
-  "Ayurveda sessions",
-  "Reflection sessions",
-  "Yoga community",
-  "Certification"
-];
-
 function WhyChooseSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const t = useTranslations("aboutSchool");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -78,6 +54,15 @@ function WhyChooseSection() {
     return () => observer.disconnect();
   }, []);
 
+  const whyChooseUs = [
+    { title: t("why1Title"), desc: t("why1Desc"), highlight: t("why1Highlight") },
+    { title: t("why2Title"), desc: t("why2Desc"), highlight: t("why2Highlight") },
+    { title: t("why3Title"), desc: t("why3Desc"), highlight: t("why3Highlight") },
+    { title: t("why4Title"), desc: t("why4Desc"), highlight: t("why4Highlight") },
+    { title: t("why5Title"), desc: t("why5Desc"), highlight: t("why5Highlight") },
+    { title: t("why6Title"), desc: t("why6Desc"), highlight: t("why6Highlight") },
+  ];
+
   return (
     <section ref={sectionRef} className="py-24 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden">
       {/* Subtle background pattern */}
@@ -91,10 +76,10 @@ function WhyChooseSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block text-sm font-medium tracking-widest text-primary/70 uppercase mb-3">
-            The Yogagarhi Difference
+            {t("whyBadge")}
           </span>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Why Choose Us
+            {t("whyHeading")}
           </h2>
           <LotusDecor className="w-16 h-10 mx-auto text-primary/40" />
         </div>
@@ -177,13 +162,13 @@ function WhyChooseSection() {
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
                   <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-3">
-                    Forever
+                    {t("repeatBadge")}
                   </div>
                   <h3 className="font-heading text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    Free Course Repeat
+                    {t("repeatTitle")}
                   </h3>
                   <p className="text-muted-foreground text-sm">
-                    Revisit any training whenever it runs, at absolutely no extra cost.
+                    {t("repeatDesc")}
                   </p>
                 </div>
                 <div className="flex-shrink-0">
@@ -206,13 +191,13 @@ function WhyChooseSection() {
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1">
                   <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-3">
-                    Growth
+                    {t("assistantBadge")}
                   </div>
                   <h3 className="font-heading text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                    Assistant Teacher Opportunity
+                    {t("assistantTitle")}
                   </h3>
                   <p className="text-muted-foreground text-sm">
-                    Get the chance to become an assistant teacher in future batches and grow your teaching experience.
+                    {t("assistantDesc")}
                   </p>
                 </div>
                 <div className="flex-shrink-0">
@@ -238,6 +223,76 @@ function WhyChooseSection() {
 
 export default function AboutAshram() {
   const { setShowEnrollDialog } = useEnrollment();
+  const t = useTranslations("aboutSchool");
+  const locale = useLocale();
+
+  const experiences = [
+    { icon: Leaf, title: t("exp1Title"), desc: t("exp1Desc") },
+    { icon: Heart, title: t("exp2Title"), desc: t("exp2Desc") },
+    { icon: Flame, title: t("exp3Title"), desc: t("exp3Desc") },
+  ];
+
+  const lifetimeExperiences = [
+    t("ltWalks"),
+    t("ltMeditation"),
+    t("ltSilence"),
+    t("ltRituals"),
+    t("ltAyurveda"),
+    t("ltReflection"),
+    t("ltCommunity"),
+    t("ltCert")
+  ];
+
+  const researchCards = [
+    {
+      title: t("rc1Title"),
+      text: locale === "en" ? (
+        <>During our Lead Teacher’s <strong className="text-foreground font-bold">Master Yoga studies</strong>, one question became impossible to ignore: Why does the same yoga practice calm some people, but leave others feeling <strong className="text-foreground font-bold">tired, restless, or mentally disturbed</strong>?</>
+      ) : t("rc1Text"),
+      icon: Brain,
+      color: "bg-amber-500/10 text-amber-600 border-amber-500/20"
+    },
+    {
+      title: t("rc2Title"),
+      text: locale === "en" ? (
+        <>This led to deep research into classical yoga texts, Ayurveda, and years of real student experience. The answer was simple, yet powerful: Every human being is born with a <strong className="text-foreground font-bold">unique Prakriti</strong>.</>
+      ) : t("rc2Text"),
+      icon: BookOpen,
+      color: "bg-blue-500/10 text-blue-600 border-blue-500/20"
+    },
+    {
+      title: t("rc3Title"),
+      text: locale === "en" ? (
+        <>Prakriti shapes the body, mind, emotions, and nervous system. Some people need <strong className="text-foreground font-bold">grounding</strong>, some need <strong className="text-foreground font-bold">movement</strong>, and others need <strong className="text-foreground font-bold">stillness</strong>. A fixed style for everyone can create imbalance.</>
+      ) : t("rc3Text"),
+      icon: Zap,
+      color: "bg-purple-500/10 text-purple-600 border-purple-500/20"
+    },
+    {
+      title: t("rc4Title"),
+      text: locale === "en" ? (
+        <>More than which yoga style you practice, what truly matters is <strong className="text-foreground font-bold italic">how you practice</strong>. How the <strong className="text-foreground font-bold">nervous system</strong> is approached, how the breath is guided, and how your <strong className="text-foreground font-bold">Dosha is supported</strong> rather than pushed.</>
+      ) : t("rc4Text"),
+      icon: Layers,
+      color: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20"
+    },
+    {
+      title: t("rc5Title"),
+      text: locale === "en" ? (
+        <>Born from this realization, <strong className="text-foreground font-bold">Shiv–Shakti Sadhana</strong> is a balanced approach that harmonizes <strong className="text-foreground font-bold">stability and movement</strong>, awareness and energy. Asana here supports grounding and strength.</>
+      ) : t("rc5Text"),
+      icon: RefreshCw,
+      color: "bg-rose-500/10 text-rose-600 border-rose-500/20"
+    },
+    {
+      title: t("rc6Title"),
+      text: locale === "en" ? (
+        <>When yoga respects your Prakriti, it becomes <strong className="text-foreground font-bold">accessible, sustainable, and deeply healing</strong>. Real yoga does not change you; it brings you back into <strong className="text-foreground font-bold">balance with yourself</strong>.</>
+      ) : t("rc6Text"),
+      icon: Heart,
+      color: "bg-cyan-500/10 text-cyan-600 border-cyan-500/20"
+    }
+  ];
 
   return (
     <>
@@ -256,14 +311,14 @@ export default function AboutAshram() {
         <div className="relative z-10 text-center text-primary-foreground px-4">
           <div className="inline-flex items-center gap-3 mb-4">
             <div className="w-8 h-px bg-primary-foreground/40" />
-            <span className="text-sm font-medium tracking-[0.2em] uppercase opacity-80">About YogaGarhi</span>
+            <span className="text-sm font-medium tracking-[0.2em] uppercase opacity-80">{t("heroBadge")}</span>
             <div className="w-8 h-px bg-primary-foreground/40" />
           </div>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            A Fortress of Wisdom
+            {t("heroHeading")}
           </h1>
           <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
-            Where the timeless wisdom of yoga is preserved and passed on with utmost care
+            {t("heroSub")}
           </p>
         </div>
       </section>
@@ -293,26 +348,38 @@ export default function AboutAshram() {
             <div>
               <div className="inline-flex items-center gap-2 mb-4">
                 <Shield className="w-6 h-6 text-primary" />
-                <span className="text-primary text-sm font-medium tracking-[0.15em] uppercase">The Meaning</span>
+                <span className="text-primary text-sm font-medium tracking-[0.15em] uppercase">{t("meaningBadge")}</span>
               </div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-                What is <span className="text-primary">YogaGarhi</span>?
+                {locale === "en" ? (
+                  <>What is <span className="text-primary">YogaGarhi</span>?</>
+                ) : (
+                  t("whatIsYogaGarhi")
+                )}
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Yogagarhi is made up of two words: <strong className="text-foreground">yoga</strong> and <strong className="text-foreground">garhi</strong>. Yoga means union, and garhi means fortress. Yes, a fort, that's what we are.
+                {locale === "en" ? (
+                  <>Yogagarhi is made up of two words: <strong className="text-foreground">yoga</strong> and <strong className="text-foreground">garhi</strong>. Yoga means union, and garhi means fortress. Yes, a fort, that&apos;s what we are.</>
+                ) : (
+                  t("fortressP1")
+                )}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We are a fortress that protects the true essence of yoga from outside influences, distortions, and dilution. It is a place where the timeless wisdom contained in the authentic principles of yoga is preserved and passed on with utmost care.
+                {t("fortressP2")}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                A fort is situated at a much higher altitude than its surroundings. For us, the true foundation or essence of Yoga lies in the highest philosophy of <strong className="text-foreground">Advaita or non-duality</strong>. Yogagarhi isn't just a yoga school. It's a fortress of wisdom, awareness, and inner freedom.
+                {locale === "en" ? (
+                  <>A fort is situated at a much higher altitude than its surroundings. For us, the true foundation or essence of Yoga lies in the highest philosophy of <strong className="text-foreground">Advaita or non-duality</strong>. Yogagarhi isn&apos;t just a yoga school. It&apos;s a fortress of wisdom, awareness, and inner freedom.</>
+                ) : (
+                  t("fortressP3")
+                )}
               </p>
               <Button
                 variant="cta"
                 size="lg"
                 onClick={() => setShowEnrollDialog(true)}
               >
-                Begin Your Journey
+                {t("fortressCta")}
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </div>
@@ -332,8 +399,8 @@ export default function AboutAshram() {
                     <Image src={founderImage} alt="Yogacharya Sachin" fill sizes="(max-width: 1024px) 100vw, 50vw"  className="object-cover" />
                   </div>
                   <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-xl">
-                    <p className="font-semibold">Yogacharya Sachin</p>
-                    <p className="text-sm opacity-80">Founder</p>
+                    <p className="font-semibold">{t("founderCardTitle")}</p>
+                    <p className="text-sm opacity-80">{t("founderCardSub")}</p>
                   </div>
                 </div>
               </div>
@@ -342,46 +409,49 @@ export default function AboutAshram() {
               <div className="order-1 lg:order-2">
                 <span className="inline-flex items-center gap-2 text-primary/80 text-sm font-medium tracking-widest uppercase mb-4">
                   <Heart className="w-4 h-4" fill="currentColor" />
-                  Our Story
+                  {t("storyBadge")}
                 </span>
 
                 <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-2">
-                  Yogacharya Sachin
+                  {t("storyHeading")}
                 </h2>
-                <p className="text-primary font-medium text-lg mb-6">Founder & Lead Teacher, YogaGarhi</p>
+                <p className="text-primary font-medium text-lg mb-6">{t("storyTitle")}</p>
 
                 <div className="space-y-5 text-muted-foreground leading-relaxed mb-8">
                   <p>
-                    A fearless child, a curious teen, and a heart that kept seeking. This journey
-                    gradually shaped a revolutionary man, <em className="text-foreground font-medium">not driven by rebellion,
-                      but by awareness</em>. What began as exploration unfolded into a life devoted to
-                    practice, discipline, teaching, and service.
+                    {locale === "en" ? (
+                      <>A fearless child, a curious teen, and a heart that kept seeking. This journey gradually shaped a revolutionary man, <em className="text-foreground font-medium">not driven by rebellion, but by awareness</em>. What began as exploration unfolded into a life devoted to practice, discipline, teaching, and service.</>
+                    ) : (
+                      t("storyP1")
+                    )}
                   </p>
 
                   <p className="text-foreground/90 border-l-2 border-primary/50 pl-4 italic">
-                    "Yoga was not found in a single moment; it revealed itself slowly, through experience,
-                    inquiry, inner silence, and lived understanding."
+                    {t("storyQuote")}
                   </p>
 
                   <p>
-                    Even after teaching yoga for seven years at a reputed yoga teacher training school,
-                    there was still <em className="text-foreground font-medium">a sense of incompleteness</em> within me.
-                    I felt something was missing. We were teaching anatomy, demonstrating postures,
-                    teaching alignment, and giving certificates, but <strong className="text-foreground">something deeper was absent</strong>.
+                    {locale === "en" ? (
+                      <>Even after teaching yoga for seven years at a reputed yoga teacher training school, there was still <em className="text-foreground font-medium">a sense of incompleteness</em> within me. I felt something was missing. We were teaching anatomy, demonstrating postures, teaching alignment, and giving certificates, but <strong className="text-foreground">something deeper was absent</strong>.</>
+                    ) : (
+                      t("storyP2")
+                    )}
                   </p>
 
                   <p>
-                    After a long period of observation, I realized that we live in duality: I and the world,
-                    day and night, pleasure and pain. The sages have said that <strong className="text-foreground">this duality
-                      is the cause of all human suffering</strong>. Therefore, life is a journey from
-                    <em className="text-foreground font-medium"> duality (dwaita)</em> to
-                    <em className="text-foreground font-medium"> non-duality (Advaita)</em>.
+                    {locale === "en" ? (
+                      <>After a long period of observation, I realized that we live in duality: I and the world, day and night, pleasure and pain. The sages have said that <strong className="text-foreground">this duality is the cause of all human suffering</strong>. Therefore, life is a journey from <em className="text-foreground font-medium">duality (dwaita)</em> to <em className="text-foreground font-medium">non-duality (Advaita)</em>.</>
+                    ) : (
+                      t("storyP3")
+                    )}
                   </p>
 
                   <p>
-                    From this understanding, <strong className="text-foreground">YogaGarhi</strong> was born.
-                    A fortress where <em className="text-foreground font-medium">yoga is lived, not merely taught</em>;
-                    rooted in awareness, inner silence, and the timeless wisdom of the ancient sages.
+                    {locale === "en" ? (
+                      <>From this understanding, <strong className="text-foreground">YogaGarhi</strong> was born. A fortress where <em className="text-foreground font-medium">yoga is lived, not merely taught</em>; rooted in awareness, inner silence, and the timeless wisdom of the ancient sages.</>
+                    ) : (
+                      t("storyP4")
+                    )}
                   </p>
                 </div>
               </div>
@@ -400,7 +470,7 @@ export default function AboutAshram() {
           {/* Section Header */}
           <div className="max-w-4xl mx-auto text-center mb-20">
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              Sachin Ji’s Research on Personalized Yoga and Prakriti
+              {t("researchHeading")}
             </h2>
             <div className="flex items-center justify-center gap-3 mb-8">
               <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />
@@ -408,50 +478,13 @@ export default function AboutAshram() {
               <div className="h-px w-20 bg-gradient-to-l from-transparent to-primary" />
             </div>
             <p className="font-heading text-2xl md:text-3xl text-primary font-medium italic max-w-3xl mx-auto leading-relaxed">
-              "Yoga Is Not One-Size-Fits-All Because Every Body Carries a Different Energy"
+              {t("researchQuote")}
             </p>
           </div>
 
           {/* Research Journey - Circular Cards Layout */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14 max-w-7xl mx-auto">
-            {[
-              {
-                title: "The Core Question",
-                text: <>During our Lead Teacher’s <strong className="text-foreground font-bold">Master Yoga studies</strong>, one question became impossible to ignore: Why does the same yoga practice calm some people, but leave others feeling <strong className="text-foreground font-bold">tired, restless, or mentally disturbed</strong>?</>,
-                icon: Brain,
-                color: "bg-amber-500/10 text-amber-600 border-amber-500/20"
-              },
-              {
-                title: "Deep Investigation",
-                text: <>This led to deep research into classical yoga texts, Ayurveda, and years of real student experience. The answer was simple, yet powerful: Every human being is born with a <strong className="text-foreground font-bold">unique Prakriti</strong>.</>,
-                icon: BookOpen,
-                color: "bg-blue-500/10 text-blue-600 border-blue-500/20"
-              },
-              {
-                title: "The Energy Blueprint",
-                text: <>Prakriti shapes the body, mind, emotions, and nervous system. Some people need <strong className="text-foreground font-bold">grounding</strong>, some need <strong className="text-foreground font-bold">movement</strong>, and others need <strong className="text-foreground font-bold">stillness</strong>. A fixed style for everyone can create imbalance.</>,
-                icon: Zap,
-                color: "bg-purple-500/10 text-purple-600 border-purple-500/20"
-              },
-              {
-                title: "Quality of Practice",
-                text: <>More than which yoga style you practice, what truly matters is <strong className="text-foreground font-bold italic">how you practice</strong>. How the <strong className="text-foreground font-bold">nervous system</strong> is approached, how the breath is guided, and how your <strong className="text-foreground font-bold">Dosha is supported</strong> rather than pushed.</>,
-                icon: Layers,
-                color: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20"
-              },
-              {
-                title: "Shiv–Shakti Sadhana",
-                text: <>Born from this realization, <strong className="text-foreground font-bold">Shiv–Shakti Sadhana</strong> is a balanced approach that harmonizes <strong className="text-foreground font-bold">stability and movement</strong>, awareness and energy. Asana here supports grounding and strength.</>,
-                icon: RefreshCw,
-                color: "bg-rose-500/10 text-rose-600 border-rose-500/20"
-              },
-              {
-                title: "Back to Balance",
-                text: <>When yoga respects your Prakriti, it becomes <strong className="text-foreground font-bold">accessible, sustainable, and deeply healing</strong>. Real yoga does not change you; it brings you back into <strong className="text-foreground font-bold">balance with yourself</strong>.</>,
-                icon: Heart,
-                color: "bg-cyan-500/10 text-cyan-600 border-cyan-500/20"
-              }
-            ].map((card, index) => (
+            {researchCards.map((card, index) => (
               <div key={index} className="group relative">
                 {/* Decorative orbital line for mobile/desktop staggered effect */}
                 <div className="absolute inset-0 border-2 border-dashed border-primary/10 rounded-full group-hover:border-primary/30 transition-all duration-500 -m-4 scale-95 opacity-0 group-hover:opacity-100 group-hover:scale-105" />
@@ -496,10 +529,18 @@ export default function AboutAshram() {
 
               <div className="relative z-10">
                 <p className="text-lg md:text-xl text-foreground font-medium leading-relaxed mb-6">
-                  Our Lead Teacher observed that when practice does not respect the <strong className="text-foreground">nervous system and natural energy type</strong>, even correct postures can lead to restlessness, fatigue, or imbalance.
+                  {locale === "en" ? (
+                    <>Our Lead Teacher observed that when practice does not respect the <strong className="text-foreground">nervous system and natural energy type</strong>, even correct postures can lead to restlessness, fatigue, or imbalance.</>
+                  ) : (
+                    t("researchConclusionP1")
+                  )}
                 </p>
                 <p className="text-lg md:text-xl text-foreground/90 leading-relaxed italic border-t border-primary/20 pt-8 mb-8">
-                  "When yoga respects your Prakriti, it becomes <strong className="text-foreground">accessible, sustainable, and deeply healing</strong> for everyone. Here, yoga is not forced. It is <strong className="text-foreground">personalized, energy-aware, and deeply respectful</strong> of who you are."
+                  {locale === "en" ? (
+                    <>&ldquo;When yoga respects your Prakriti, it becomes <strong className="text-foreground">accessible, sustainable, and deeply healing</strong> for everyone. Here, yoga is not forced. It is <strong className="text-foreground">personalized, energy-aware, and deeply respectful</strong> of who you are.&rdquo;</>
+                  ) : (
+                    t("researchConclusionP2")
+                  )}
                 </p>
 
                 <div className="flex justify-center">
@@ -519,7 +560,7 @@ export default function AboutAshram() {
                   >
                     <Link href="/200-hour-yoga-teacher-training-in-bali#prakriti-section">
                       <Sparkles className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-                      Reveal Your Unique Yogic Energy
+                      {t("revealEnergy")}
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
@@ -536,20 +577,28 @@ export default function AboutAshram() {
           <div className="text-center mb-12 max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="w-8 h-px bg-primary/40" />
-              <span className="text-primary text-sm font-medium tracking-[0.2em] uppercase">Our Purpose</span>
+              <span className="text-primary text-sm font-medium tracking-[0.2em] uppercase">{t("visionBadge")}</span>
               <div className="w-8 h-px bg-primary/40" />
             </div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-              The Purpose of YogaGarhi
+              {t("purposeHeading")}
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The idea behind Yogagarghi was to create a space where yoga is not just taught, but <strong className="text-foreground">lived as a way of life</strong>. Over the years, we have understood one simple fact—people don't want just information, they desire <strong className="text-foreground">transformation</strong>.
+              {locale === "en" ? (
+                <>The idea behind Yogagarghi was to create a space where yoga is not just taught, but <strong className="text-foreground">lived as a way of life</strong>. Over the years, we have understood one simple fact—people don&apos;t want just information, they desire <strong className="text-foreground">transformation</strong>.</>
+              ) : (
+                t("purposeLead")
+              )}
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
             <p className="text-center text-muted-foreground leading-relaxed mb-12">
-              That's why our focus is not on how to "do" yoga, but on <strong className="text-foreground">how to be a yogi</strong>. The path we take is simple but deep and scientific yet spiritual. For us, yoga is not something to be just performed physically. It is a way to live, to breathe, to reflect, to spread, and ultimately—to become.
+              {locale === "en" ? (
+                <>That&apos;s why our focus is not on how to &quot;do&quot; yoga, but on <strong className="text-foreground">how to be a yogi</strong>. The path we take is simple but deep and scientific yet spiritual. For us, yoga is not something to be just performed physically. It is a way to live, to breathe, to reflect, to spread, and ultimately—to become.</>
+              ) : (
+                t("purposeDesc")
+              )}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -579,11 +628,11 @@ export default function AboutAshram() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="w-8 h-px bg-primary/40" />
-              <span className="text-primary text-sm font-medium tracking-[0.2em] uppercase">Beyond Training</span>
+              <span className="text-primary text-sm font-medium tracking-[0.2em] uppercase">{t("lifetimeBadge")}</span>
               <div className="w-8 h-px bg-primary/40" />
             </div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-              A Lifetime Experience
+              {t("lifetimeHeading")}
             </h2>
           </div>
 
@@ -617,7 +666,7 @@ export default function AboutAshram() {
           <div className="text-center mt-8">
             <Button variant="outline" size="lg" asChild>
               <Link href="/gallery">
-                View Full Gallery
+                {t("viewGallery")}
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>

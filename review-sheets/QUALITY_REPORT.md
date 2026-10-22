@@ -1,7 +1,7 @@
 # Internationalization (i18n) Quality & Verification Master Report
 
 **Project**: YogaGarhi Platform Internationalization (`feat/i18n`)  
-**Date**: 2026-10-19  
+**Date**: 2026-10-22  
 **Status**: Verified & Production-Ready (SEO Gate `reviewed: false` active)  
 
 ---
@@ -21,16 +21,16 @@ This comprehensive quality report details the complete localization and verifica
 
 | Locale Code | Language | Flag | Units | Review Sheet (.md) | Review Sheet (.csv) | Audit Status |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| `de` | **German (Deutsch)** | 🇩🇪 | 2863 | [de.md](./de.md) (733.0 KB) | [de.csv](./de.csv) (720.2 KB) | **PASS (0 English Leaks)** |
-| `fr` | **French (Français)** | 🇫🇷 | 2863 | [fr.md](./fr.md) (739.4 KB) | [fr.csv](./fr.csv) (726.5 KB) | **PASS (0 English Leaks)** |
-| `es` | **Spanish (Español)** | 🇪🇸 | 2863 | [es.md](./es.md) (736.5 KB) | [es.csv](./es.csv) (723.8 KB) | **PASS (0 English Leaks)** |
-| `it` | **Italian (Italiano)** | 🇮🇹 | 2863 | [it.md](./it.md) (735.4 KB) | [it.csv](./it.csv) (722.7 KB) | **PASS (0 English Leaks)** |
-| `nl` | **Dutch (Nederlands)** | 🇳🇱 | 2863 | [nl.md](./nl.md) (726.5 KB) | [nl.csv](./nl.csv) (713.8 KB) | **PASS (0 English Leaks)** |
-| `ru` | **Russian (Русский)** | 🇷🇺 | 2863 | [ru.md](./ru.md) (722.4 KB) | [ru.csv](./ru.csv) (709.7 KB) | **PASS (0 English Leaks)** |
-| `id` | **Indonesian (Bahasa Indonesia)** | 🇮🇩 | 2863 | [id.md](./id.md) (730.5 KB) | [id.csv](./id.csv) (717.7 KB) | **PASS (0 English Leaks)** |
-| `ja` | **Japanese (日本語)** | 🇯🇵 | 2863 | [ja.md](./ja.md) (647.4 KB) | [ja.csv](./ja.csv) (635.3 KB) | **PASS (0 English Leaks)** |
-| `ko` | **Korean (한국어)** | 🇰🇷 | 2863 | [ko.md](./ko.md) (657.5 KB) | [ko.csv](./ko.csv) (645.2 KB) | **PASS (0 English Leaks)** |
-| `zh` | **Simplified Chinese (简体中文)** | 🇨🇳 | 2863 | [zh.md](./zh.md) (637.7 KB) | [zh.csv](./zh.csv) (625.6 KB) | **PASS (0 English Leaks)** |
+| `de` | **German (Deutsch)** | 🇩🇪 | 3206 | [de.md](./de.md) (831.0 KB) | [de.csv](./de.csv) (817.4 KB) | **PASS (0 English Leaks)** |
+| `fr` | **French (Français)** | 🇫🇷 | 3206 | [fr.md](./fr.md) (835.3 KB) | [fr.csv](./fr.csv) (821.6 KB) | **PASS (0 English Leaks)** |
+| `es` | **Spanish (Español)** | 🇪🇸 | 3206 | [es.md](./es.md) (833.9 KB) | [es.csv](./es.csv) (820.4 KB) | **PASS (0 English Leaks)** |
+| `it` | **Italian (Italiano)** | 🇮🇹 | 3206 | [it.md](./it.md) (827.8 KB) | [it.csv](./it.csv) (814.3 KB) | **PASS (0 English Leaks)** |
+| `nl` | **Dutch (Nederlands)** | 🇳🇱 | 3206 | [nl.md](./nl.md) (816.4 KB) | [nl.csv](./nl.csv) (802.9 KB) | **PASS (0 English Leaks)** |
+| `ru` | **Russian (Русский)** | 🇷🇺 | 3206 | [ru.md](./ru.md) (812.4 KB) | [ru.csv](./ru.csv) (799.0 KB) | **PASS (0 English Leaks)** |
+| `id` | **Indonesian (Bahasa Indonesia)** | 🇮🇩 | 3206 | [id.md](./id.md) (822.9 KB) | [id.csv](./id.csv) (809.4 KB) | **PASS (0 English Leaks)** |
+| `ja` | **Japanese (日本語)** | 🇯🇵 | 3206 | [ja.md](./ja.md) (729.1 KB) | [ja.csv](./ja.csv) (716.2 KB) | **PASS (0 English Leaks)** |
+| `ko` | **Korean (한국어)** | 🇰🇷 | 3206 | [ko.md](./ko.md) (740.2 KB) | [ko.csv](./ko.csv) (727.2 KB) | **PASS (0 English Leaks)** |
+| `zh` | **Simplified Chinese (简体中文)** | 🇨🇳 | 3206 | [zh.md](./zh.md) (717.7 KB) | [zh.csv](./zh.csv) (704.8 KB) | **PASS (0 English Leaks)** |
 
 ---
 

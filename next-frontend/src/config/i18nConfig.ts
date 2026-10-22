@@ -54,6 +54,13 @@ export const TRANSLATED_PAGES: Record<string, readonly SupportedLocale[]> = {
   '/100-hour-yoga-teacher-training-in-rishikesh': SUPPORTED_LOCALES,
   '/200-hour-yoga-teacher-training-in-rishikesh': SUPPORTED_LOCALES,
   '/thank-you': SUPPORTED_LOCALES,
+  '/about-school': SUPPORTED_LOCALES,
+  '/teachers': SUPPORTED_LOCALES,
+  '/testimonials': SUPPORTED_LOCALES,
+  '/gallery': SUPPORTED_LOCALES,
+  '/contact-us': SUPPORTED_LOCALES,
+  '/apply-now': SUPPORTED_LOCALES,
+  '/sunday-schedule': SUPPORTED_LOCALES,
 };
 
 export function getAvailableLocalesForPath(pathname: string): readonly SupportedLocale[] {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,6 +14,7 @@ import Image from "next/image";
 export default function Contact() {
   const router = useRouter();
   const locale = useLocale();
+  const t = useTranslations("contactUs");
   const [activeCampus, setActiveCampus] = useState<"bali" | "rishikesh">("bali");
   const [formData, setFormData] = useState({
     name: "",
@@ -38,18 +39,19 @@ export default function Contact() {
           email: formData.email,
           message: formData.message,
           _subject: `New Contact Form Enquiry: ${formData.name}`,
-          _autoresponder: "Namaste! Thank you for reaching out to YogaGarhi. We have received your message and will get back to you within 24 hours. Have a beautiful day!"
+          _autoresponder: t('autoresponder'),
         }),
       });
 
       if (response.ok) {
-        router.push('/thank-you?type=enquiry');
+        const thankYouUrl = locale === 'en' ? '/thank-you?type=enquiry' : `/${locale}/thank-you?type=enquiry`;
+        router.push(thankYouUrl);
       } else {
         throw new Error('Failed to send enquiry');
       }
     } catch (error) {
       console.error(error);
-      alert("Something went wrong. Please try again.");
+      alert(t('errorMessage'));
       setIsSubmitting(false);
     }
   };
@@ -70,10 +72,10 @@ export default function Contact() {
         </div>
         <div className="relative z-10 text-center text-primary-foreground px-4">
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            Contact YogaGarhi
+            {t("heroHeading")}
           </h1>
           <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
-            Connect with our spiritual ashrams in Bali & Rishikesh. We are here to guide your yogic path.
+            {t("heroSub")}
           </p>
         </div>
       </section>
@@ -84,7 +86,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {/* WhatsApp */}
             <a
-              href="https://wa.me/917895350563"
+              href={`https://wa.me/917895350563?text=${encodeURIComponent(t("whatsappMessage"))}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center text-center p-6 bg-card rounded-2xl shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-1 group border border-border/60"
@@ -95,7 +97,7 @@ export default function Contact() {
                 </svg>
               </div>
               <p className="font-semibold text-foreground text-sm">+91-7895350563</p>
-              <p className="text-xs text-muted-foreground mt-1">24/7 WhatsApp Chat</p>
+              <p className="text-xs text-muted-foreground mt-1">{t("whatsappLabel")}</p>
             </a>
 
             {/* Call */}
@@ -107,7 +109,7 @@ export default function Contact() {
                 <Phone className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
               </div>
               <p className="font-semibold text-foreground text-sm">+91-7895350563</p>
-              <p className="text-xs text-muted-foreground mt-1">Direct Phone Call</p>
+              <p className="text-xs text-muted-foreground mt-1">{t("phoneLabel")}</p>
             </a>
 
             {/* Email */}
@@ -119,7 +121,7 @@ export default function Contact() {
                 <Mail className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
               </div>
               <p className="font-semibold text-foreground text-sm">yogagarhi@gmail.com</p>
-              <p className="text-xs text-muted-foreground mt-1">Admissions Desk</p>
+              <p className="text-xs text-muted-foreground mt-1">{t("emailLabel")}</p>
             </a>
 
             {/* Hours */}
@@ -127,20 +129,22 @@ export default function Contact() {
               <div className="w-14 h-14 bg-amber-500/10 rounded-full flex items-center justify-center mb-3">
                 <Clock className="w-7 h-7 text-amber-600" />
               </div>
-              <p className="font-semibold text-foreground text-sm">08:00 AM – 08:00 PM</p>
-              <p className="text-xs text-muted-foreground mt-1">Daily Support (WITA / IST)</p>
+              <p className="font-semibold text-foreground text-sm">{t("hoursTime")}</p>
+              <p className="text-xs text-muted-foreground mt-1">{t("hoursLabel")}</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Dual Campus Details (NAP Cards) */}
+      {/* Dual Global Campuses Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs uppercase tracking-widest text-primary font-bold">Our Global Ashram Locations</span>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2">
-              Visit Our Sacred Spaces
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full inline-block mb-3">
+              {t("campusBadge")}
+            </span>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
+              {t("campusTitle")}
             </h2>
           </div>
 
@@ -150,26 +154,26 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="px-3 py-1 rounded-full text-xs font-bold bg-primary/10 text-primary uppercase">
-                    Headquarters & Main Ashram
+                    {t("baliBadge")}
                   </span>
                   <Sparkles className="w-5 h-5 text-amber-500" />
                 </div>
                 <h3 className="font-heading text-2xl font-bold text-foreground">
-                  YogaGarhi Bali Ashram
+                  {t("baliTitle")}
                 </h3>
                 <div className="flex items-start gap-3 text-muted-foreground text-sm">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                   <p>
-                    Ds madangan kaja, Desa petak, Petak kaja, Kec. Gianyar, Kabupaten Gianyar, Bali 80515, Indonesia
+                    {t("baliAddress")}
                   </p>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Located in the serene tropical jungle highlands near Ubud, surrounded by rice terraces and sacred spring water temples.
+                  {t("baliDesc")}
                 </p>
               </div>
 
               <div className="mt-6 pt-6 border-t border-border/80 flex items-center justify-between">
-                <span className="text-xs font-medium text-foreground">Open Daily: 24 Hours</span>
+                <span className="text-xs font-medium text-foreground">{t("baliOpen")}</span>
                 <a
                   href="https://maps.google.com/?q=Ds+madangan+kaja,+Desa+petak,+Petak+kaja,+Kec.+Gianyar,+Kabupaten+Gianyar,+Bali+80515,+Indonesia"
                   target="_blank"
@@ -177,7 +181,7 @@ export default function Contact() {
                   className="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1"
                 >
                   <Navigation className="w-3.5 h-3.5" />
-                  Get Bali Directions
+                  {t("baliDirections")}
                 </a>
               </div>
             </div>
@@ -187,26 +191,26 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-700 uppercase">
-                    Himalayan Campus
+                    {t("rishikeshBadge")}
                   </span>
                   <Sparkles className="w-5 h-5 text-amber-500" />
                 </div>
                 <h3 className="font-heading text-2xl font-bold text-foreground">
-                  YogaGarhi Rishikesh Center
+                  {t("rishikeshTitle")}
                 </h3>
                 <div className="flex items-start gap-3 text-muted-foreground text-sm">
                   <MapPin className="w-5 h-5 text-amber-600 flex-shrink-0 mt-1" />
                   <p>
-                    Tapovan, Badrinath Road, Rishikesh, Uttarakhand 249192, India
+                    {t("rishikeshAddress")}
                   </p>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Nestled at the foothills of the Himalayas along the sacred Ganges river, the global yoga capital of the world.
+                  {t("rishikeshDesc")}
                 </p>
               </div>
 
               <div className="mt-6 pt-6 border-t border-border/80 flex items-center justify-between">
-                <span className="text-xs font-medium text-foreground">Open Daily: 24 Hours</span>
+                <span className="text-xs font-medium text-foreground">{t("rishikeshOpen")}</span>
                 <a
                   href="https://maps.google.com/?q=Tapovan,+Rishikesh,+Uttarakhand+249192,+India"
                   target="_blank"
@@ -214,7 +218,7 @@ export default function Contact() {
                   className="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1"
                 >
                   <Navigation className="w-3.5 h-3.5" />
-                  Get Rishikesh Directions
+                  {t("rishikeshDirections")}
                 </a>
               </div>
             </div>
@@ -227,10 +231,10 @@ export default function Contact() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center max-w-2xl mx-auto mb-8">
             <h2 className="font-heading text-3xl font-bold text-foreground">
-              Interactive Ashram Map
+              {t("mapTitle")}
             </h2>
             <p className="text-sm text-muted-foreground mt-2">
-              Select a campus to explore location coordinates and nearby landmarks
+              {t("mapSub")}
             </p>
 
             {/* Campus Toggle Buttons */}
@@ -238,34 +242,34 @@ export default function Contact() {
               <button
                 type="button"
                 onClick={() => setActiveCampus("bali")}
-                className={`px-6 py-2.5 rounded-lg text-sm font-bold transition-all ${
+                className={`px-5 py-2.5 rounded-lg text-xs font-semibold transition-all ${
                   activeCampus === "bali"
-                    ? "bg-primary text-white shadow-md"
-                    : "text-foreground/70 hover:text-foreground"
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                🌴 Bali Ashram (Gianyar/Ubud)
+                {t("tabBali")}
               </button>
               <button
                 type="button"
                 onClick={() => setActiveCampus("rishikesh")}
-                className={`px-6 py-2.5 rounded-lg text-sm font-bold transition-all ${
+                className={`px-5 py-2.5 rounded-lg text-xs font-semibold transition-all ${
                   activeCampus === "rishikesh"
-                    ? "bg-primary text-white shadow-md"
-                    : "text-foreground/70 hover:text-foreground"
+                    ? "bg-primary text-primary-foreground shadow-sm"
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                ⛰️ Rishikesh Campus (Tapovan)
+                {t("tabRishikesh")}
               </button>
             </div>
           </div>
 
-          {/* Map Container */}
-          <div className="rounded-3xl overflow-hidden shadow-card border border-border bg-card h-[420px] w-full relative">
+          {/* Map Frame Container */}
+          <div className="w-full h-[400px] md:h-[480px] rounded-3xl overflow-hidden border border-border shadow-elevated relative bg-muted">
             {activeCampus === "bali" ? (
               <iframe
                 title="YogaGarhi Bali Ashram Map"
-                src="https://maps.google.com/maps?q=-8.4649127,115.3258379&hl=en&z=14&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.208753238713!2d115.32564227589578!3d-8.465033485596487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd219e70aa3e43d%3A0x281930517f104591!2sYoga%20Teacher%20Training%20in%20Bali%20-%20Yogagarhi!5e0!3m2!1sen!2sid!4v1711200000000!5m2!1sen!2sid"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -276,8 +280,8 @@ export default function Contact() {
               />
             ) : (
               <iframe
-                title="YogaGarhi Rishikesh Center Map"
-                src="https://maps.google.com/maps?q=30.1313,78.3245&hl=en&z=14&output=embed"
+                title="YogaGarhi Rishikesh Himalayan Campus Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13816.29427011406!2d78.31422473453883!3d30.130722123280053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909163e76a6e9a7%3A0xb30e84b72618b108!2sTapovan%2C%20Rishikesh%2C%20Uttarakhand%20249192!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -289,17 +293,18 @@ export default function Contact() {
             )}
           </div>
 
-          {/* Transit & Airport Transfer Information */}
+          {/* Transit Advice Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-2xl bg-card border border-border flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
                 <Plane className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-heading text-lg font-bold text-foreground">Getting to Bali Ashram</h3>
-                <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
-                  Fly into <strong>Ngurah Rai International Airport (DPS)</strong> in Denpasar. Our ashram is approximately 60–75 minutes by car. We provide private airport pickup for all residential YTTC students.
-                </p>
+                <h3 className="font-heading text-lg font-bold text-foreground">{t("travelBaliTitle")}</h3>
+                <p 
+                  className="text-xs text-muted-foreground mt-1 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: t("travelBaliText") }}
+                />
               </div>
             </div>
 
@@ -308,10 +313,11 @@ export default function Contact() {
                 <Plane className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="font-heading text-lg font-bold text-foreground">Getting to Rishikesh Center</h3>
-                <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
-                  Fly into <strong>Dehradun Jolly Grant Airport (DED)</strong> (35 mins away) or take a direct train from New Delhi (DEL) to Haridwar/Rishikesh. Dedicated campus transfers are arranged upon arrival.
-                </p>
+                <h3 className="font-heading text-lg font-bold text-foreground">{t("travelRishikeshTitle")}</h3>
+                <p 
+                  className="text-xs text-muted-foreground mt-1 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: t("travelRishikeshText") }}
+                />
               </div>
             </div>
           </div>
@@ -325,22 +331,22 @@ export default function Contact() {
             {/* Form Info */}
             <div className="space-y-6">
               <span className="px-3 py-1 bg-amber-500/10 text-amber-800 rounded-full text-xs font-bold uppercase tracking-wider">
-                Special Seasonal Offer 🎉 Flat $300 OFF
+                {t("offerBadge")}
               </span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground leading-tight">
-                Send Us a Message & Begin Your Transformation
+                {t("formHeading")}
               </h2>
 
               <p className="text-base text-muted-foreground leading-relaxed">
-                Whether you have questions regarding syllabus modules, Yoga Alliance accreditation, accommodation choices, or upcoming batch availability, our admissions advisors are ready to assist.
+                {t("formSub")}
               </p>
 
               <div className="p-4 rounded-xl bg-background/80 border border-border text-xs text-muted-foreground space-y-2">
                 <p className="flex items-center gap-2 font-medium text-foreground">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  Typical response time: under 2 hours
+                  {t("responseTime")}
                 </p>
-                <p>All enquiries receive a free 2026 Yoga Teacher Training Prospectus & Syllabus Guide via email.</p>
+                <p>{t("syllabusNote")}</p>
               </div>
             </div>
 
@@ -349,50 +355,50 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
-                    Full Name <span className="text-destructive">*</span>
+                    {t("nameLabel")} <span className="text-destructive">*</span>
                   </label>
                   <Input
                     id="name"
                     type="text"
                     required
-                    aria-label="Full Name"
+                    aria-label={t("nameLabel")}
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full"
-                    placeholder="Enter your full name"
+                    placeholder={t("namePlaceholder")}
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1.5">
-                    Email Address <span className="text-destructive">*</span>
+                    {t("emailLabel")} <span className="text-destructive">*</span>
                   </label>
                   <Input
                     id="email"
                     type="email"
                     required
-                    aria-label="Email Address"
+                    aria-label={t("emailLabel")}
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full"
-                    placeholder="you@example.com"
+                    placeholder={t("emailPlaceholder")}
                   />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1.5">
-                    Your Question / Message <span className="text-destructive">*</span>
+                    {t("messageLabel")} <span className="text-destructive">*</span>
                   </label>
                   <Textarea
                     id="message"
                     required
-                    aria-label="Message"
+                    aria-label={t("messageLabel")}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full min-h-[140px]"
-                    placeholder="Tell us about your yoga journey and preferred course or location..."
+                    placeholder={t("messagePlaceholder")}
                   />
                 </div>
                 <Button variant="cta" size="xl" type="submit" className="w-full font-bold" disabled={isSubmitting}>
-                  {isSubmitting ? "Sending..." : "Submit Enquiry"}
+                  {isSubmitting ? t("submittingButton") : t("submitButton")}
                 </Button>
               </form>
             </div>

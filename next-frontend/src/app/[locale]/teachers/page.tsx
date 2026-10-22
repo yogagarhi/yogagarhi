@@ -1,16 +1,66 @@
 import { Metadata } from "next";
 import AboutTeachers from "@/components/pages/AboutTeachers";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-    title: "Our Teachers - Experienced Yoga Masters",
-    description: "Meet our experienced yoga teachers at YogaGarhi. Learn from Yogacharya Sachin and our expert faculty with decades of combined teaching experience.",
-    keywords: "yoga teachers Bali, yoga masters, YogaGarhi instructors, Sachin Ji, yoga teacher training faculty",
-    alternates: {
-        canonical: "https://www.yogagarhi.com/teachers",
-    },
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    let messages: any;
+    try {
+        messages = (await import(`@/messages/${locale}.json`)).default;
+    } catch (e) {
+        messages = (await import(`@/messages/en.json`)).default;
+    }
 
-export default function AboutTeachersPage() {
+    const title = locale === "en" ? "Our Teachers - Experienced Yoga Masters" : (messages.teachers?.metaTitle || "Our Teachers - Experienced Yoga Masters");
+    const description = locale === "en" ? "Meet our experienced yoga teachers at YogaGarhi. Learn from Yogacharya Sachin and our expert faculty with decades of combined teaching experience." : (messages.teachers?.metaDesc || "Meet our experienced yoga teachers at YogaGarhi. Learn from Yogacharya Sachin and our expert faculty with decades of combined teaching experience.");
+    const url = locale === "en" ? "https://www.yogagarhi.com/teachers" : `https://www.yogagarhi.com/${locale}/teachers`;
+
+    const metadata: Metadata = {
+        metadataBase: new URL("https://www.yogagarhi.com"),
+        title: {
+            absolute: title,
+        },
+        description,
+        keywords: "yoga teachers Bali, yoga masters, YogaGarhi instructors, Sachin Ji, yoga teacher training faculty",
+        alternates: {
+            canonical: url,
+            languages: getReviewedHreflang("/teachers"),
+        },
+        openGraph: {
+            title,
+            description,
+            url,
+            type: "website",
+        },
+    };
+
+    return locale === "en" ? metadata : applyQualityGate(metadata, locale);
+}
+
+export const revalidate = 86400;
+
+export default async function AboutTeachersPage({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+
+    const messages: any = await getMessages();
+    const clientMessages = {
+        teachers: messages.teachers,
+        home: {
+            ready: messages.home?.ready,
+        },
+    };
+
     const teachersListSchema = {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -177,8 +227,9 @@ export default function AboutTeachersPage() {
                     __html: JSON.stringify(teachersListSchema)
                 }}
             />
-            <AboutTeachers />
+            <NextIntlClientProvider locale={locale} messages={clientMessages}>
+                <AboutTeachers />
+            </NextIntlClientProvider>
         </>
     );
 }
-

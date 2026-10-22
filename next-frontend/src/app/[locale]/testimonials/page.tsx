@@ -1,17 +1,68 @@
 import { Metadata } from "next";
 import AboutTestimonials from "@/components/pages/AboutTestimonials";
 import { googleReviews } from "@/constants/googleReviews";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-    title: "Reviews & Testimonials - Student Stories",
-    description: "Read reviews and testimonials from our yoga teacher training graduates. Discover how YogaGarhi has transformed lives through authentic yoga education.",
-    keywords: "yoga teacher training reviews, YogaGarhi testimonials, yoga school reviews Bali, student stories, yoga certification reviews",
-    alternates: {
-        canonical: "https://www.yogagarhi.com/testimonials",
-    },
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    let messages: any;
+    try {
+        messages = (await import(`@/messages/${locale}.json`)).default;
+    } catch (e) {
+        messages = (await import(`@/messages/en.json`)).default;
+    }
 
-export default function AboutTestimonialsPage() {
+    const title = locale === "en" ? "Reviews & Testimonials - Student Stories" : (messages.testimonials?.metaTitle || "Reviews & Testimonials - Student Stories");
+    const description = locale === "en" ? "Read reviews and testimonials from our yoga teacher training graduates. Discover how YogaGarhi has transformed lives through authentic yoga education." : (messages.testimonials?.metaDesc || "Read reviews and testimonials from our yoga teacher training graduates. Discover how YogaGarhi has transformed lives through authentic yoga education.");
+    const url = locale === "en" ? "https://www.yogagarhi.com/testimonials" : `https://www.yogagarhi.com/${locale}/testimonials`;
+
+    const metadata: Metadata = {
+        metadataBase: new URL("https://www.yogagarhi.com"),
+        title: {
+            absolute: title,
+        },
+        description,
+        keywords: "yoga teacher training reviews, YogaGarhi testimonials, yoga school reviews Bali, student stories, yoga certification reviews",
+        alternates: {
+            canonical: url,
+            languages: getReviewedHreflang("/testimonials"),
+        },
+        openGraph: {
+            title,
+            description,
+            url,
+            type: "website",
+        },
+    };
+
+    return locale === "en" ? metadata : applyQualityGate(metadata, locale);
+}
+
+export const revalidate = 86400;
+
+export default async function AboutTestimonialsPage({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+
+    const messages: any = await getMessages();
+    const clientMessages = {
+        testimonials: messages.testimonials,
+        home: {
+            studentStories: messages.home?.studentStories,
+            ready: messages.home?.ready,
+        },
+    };
+
     return (
         <>
             <script
@@ -61,8 +112,9 @@ export default function AboutTestimonialsPage() {
                     })
                 }}
             />
-            <AboutTestimonials />
+            <NextIntlClientProvider locale={locale} messages={clientMessages}>
+                <AboutTestimonials />
+            </NextIntlClientProvider>
         </>
     );
 }
-

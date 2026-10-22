@@ -19,7 +19,7 @@ function normalizePrice(p) {
   return p.replace(/[\$,\s]/g, '').trim();
 }
 
-async function extractFactsFromPage(page, url) {
+async function extractFactsFromCoursePage(page, url) {
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 35000 });
   await new Promise(r => setTimeout(r, 600));
 
@@ -29,7 +29,6 @@ async function extractFactsFromPage(page, url) {
     // 1. Prices: match pattern like $1,149, $999, etc.
     const allPriceMatches = [];
     document.querySelectorAll('*').forEach(el => {
-      // Only check leaf or near-leaf elements
       if (el.children.length === 0 || (el.children.length === 1 && el.firstElementChild.tagName === 'SPAN')) {
         const t = el.textContent.trim();
         if (/^\$[0-9]{1,3}(?:,[0-9]{3})*$/.test(t)) {
@@ -63,8 +62,8 @@ async function extractFactsFromPage(page, url) {
     const primaryDuration = durationEl ? durationEl.textContent.match(/\d{1,2}/)?.[0] : null;
 
     // 5. Student Count range (e.g. "8-10" or "8–10" or "10-12")
-    const studentMatch = fullText.match(/\b(8\s*[-–]\s*10|10\s*[-–]\s*12|8\s*to\s*10)\b/i);
-    const studentCount = studentMatch ? studentMatch[1].replace(/[\s\u2013\u2014]/g, '-').replace('to', '-') : null;
+    const studentMatch = fullText.match(/\b(8\s*[-–—〜àto]\s*10|10\s*[-–]\s*12)\b/i);
+    const studentCount = studentMatch ? studentMatch[1].replace(/[\s\u2013\u2014〜à]/g, '-').replace('to', '-') : null;
 
     // 6. Refund Policy points count
     const refundSection = Array.from(document.querySelectorAll('section, div')).find(s => 
@@ -73,10 +72,10 @@ async function extractFactsFromPage(page, url) {
     );
     const refundPointsCount = refundSection ? refundSection.querySelectorAll('li').length : 0;
 
-    // 7. Offer text months (e.g. April/July or September/December)
+    // 7. Offer text months
     const hasOfferMonths = /April|July|September|December|Dezember|Desember|Juli|Juillet|Avril|Luglio|Aprile|Septembre|Décembre|Diciembre|Julio|Settembre|Dicembre|Сентябр|Декабр|Апрел|Июл|4月|7月|9月|12月|(?:4|7|9|12)월/i.test(fullText);
 
-    // 8. FAQ count (Accordion items inside FAQ section)
+    // 8. FAQ count
     const faqSection = Array.from(document.querySelectorAll('section, div')).find(s => {
       const h = s.querySelector('h2, h3');
       return h && /FAQ|Frequently Asked|Häufig gestellte|Questions fréquemment|Domande frequenti|Preguntas frecuentes|Veelgestelde vragen|Часто задаваемые|Pertanyaan Umum|よくある質問|자주 묻는 질문|常见问题/i.test(h.textContent);
@@ -102,12 +101,112 @@ async function extractFactsFromPage(page, url) {
   });
 }
 
+async function extractFactsFromApplyNowPage(page, url) {
+  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 35000 });
+  await new Promise(r => setTimeout(r, 600));
+
+  return await page.evaluate(() => {
+    const fullText = document.body.innerText;
+    
+    // Check durations: 24, 23, 12, 11, 28, 27
+    const has24Days = fullText.includes('24');
+    const has23Nights = fullText.includes('23');
+    const has12Days = fullText.includes('12');
+    const has11Nights = fullText.includes('11');
+    const has28Days = fullText.includes('28');
+    const has27Nights = fullText.includes('27');
+
+    // Student count range (8-10)
+    const has8to10 = /8\s*[-–—〜àto]\s*10/.test(fullText);
+
+    // WhatsApp phone link
+    const waLink = Array.from(document.querySelectorAll('a[href*="wa.me"]')).find(a => a.href.includes('917895350563'));
+    const hasValidWhatsApp = !!waLink;
+
+    // Number of course cards (should be 3: 200hr, 100hr, 300hr)
+    const courseCardLinks = Array.from(document.querySelectorAll('a[href*="yoga-teacher-training"]'));
+    const hasCourseCards = courseCardLinks.length >= 3;
+
+    // Number of FAQs (5)
+    const h3Elements = Array.from(document.querySelectorAll('h3')).map(h => h.textContent.trim());
+    const faqCount = h3Elements.filter(h => /\?|？/.test(h)).length;
+
+    return {
+      has24Days,
+      has23Nights,
+      has12Days,
+      has11Nights,
+      has28Days,
+      has27Nights,
+      has8to10,
+      hasValidWhatsApp,
+      hasCourseCards,
+      faqCount
+    };
+  });
+}
+
+async function extractFactsFromAboutSchoolPage(page, url) {
+  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 35000 });
+  await new Promise(r => setTimeout(r, 600));
+
+  return await page.evaluate(() => {
+    const fullText = document.body.innerText;
+
+    // Founder Sachin Ji mentioned
+    const mentionsSachin = /Sachin/.test(fullText);
+    // 7 years teaching experience mentioned
+    const mentionsSevenYears = /(?:7|seven|sieben|sept|siete|sette|zeven|семь|tujuh|七)\s*(?:years?|jahre|ans|años|anni|jaar|лет|tahun|年間?|년간?|年)/i.test(fullText);
+    // Founder image present
+    const hasFounderImage = !!document.querySelector('img[alt*="Sachin"], img[src*="founder"]');
+    // Research / Prakriti items (6 cards)
+    const cardHeaders = Array.from(document.querySelectorAll('h3')).map(h => h.textContent.trim());
+
+    return {
+      mentionsSachin,
+      mentionsSevenYears,
+      hasFounderImage,
+      h3Count: cardHeaders.length
+    };
+  });
+}
+
+async function extractFactsFromTeachersPage(page, url) {
+  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 35000 });
+  await new Promise(r => setTimeout(r, 600));
+
+  return await page.evaluate(() => {
+    const fullText = document.body.innerText;
+
+    // 2500+ students trained
+    const has2500 = /2500\+?/.test(fullText);
+    // 8+ years teaching
+    const has8Years = /8\+?\s*(?:Years?|Jahre|Années?|Años|Anni|Jaar|Лет|Tahun|年|년)/i.test(fullText);
+    // 8-10 students batch
+    const has8to10 = /8\s*[-–—〜àto]\s*10/.test(fullText);
+    // Teacher names preserved
+    const names = ['Sachin Ji', 'Chanda Ji', 'Rahul Ji', 'Rohit Ji', 'Abhishek Ji', 'Ankit Ji'];
+    const missingNames = names.filter(n => !fullText.includes(n));
+    // Qualifications preserved
+    const hasERYT = fullText.includes('E-RYT 500');
+
+    return {
+      has2500,
+      has8Years,
+      has8to10,
+      missingNames,
+      hasERYT
+    };
+  });
+}
+
 async function runParityCheck() {
   console.log(`\n======================================================`);
   console.log(`  STARTING AUTOMATED i18n FACTS PARITY AUDIT`);
   console.log(`  Base URL: ${BASE_URL}`);
   console.log(`  Courses to check: ${COURSES.length}`);
-  console.log(`  Locales to check per course: 1 English + ${LOCALES.length} Non-English`);
+  console.log(`  Batch 2 Pages to check: apply-now, about-school, teachers`);
+  console.log(`  Locales to check: 1 English + ${LOCALES.length} Non-English`);
   console.log(`======================================================\n`);
 
   const browser = await puppeteer.launch({
@@ -120,16 +219,18 @@ async function runParityCheck() {
   let totalErrors = 0;
   const failureReport = [];
 
+  // ==========================================
+  // SECTION 1: COURSE PAGES
+  // ==========================================
   for (const courseSlug of COURSES) {
     console.log(`\n------------------------------------------------------`);
     console.log(`[AUDIT COURSE] ${courseSlug}`);
     console.log(`------------------------------------------------------`);
 
-    // 1. Fetch English baseline facts
     const enUrl = `${BASE_URL}/${courseSlug}`;
     let enFacts;
     try {
-      enFacts = await extractFactsFromPage(page, enUrl);
+      enFacts = await extractFactsFromCoursePage(page, enUrl);
       console.log(`  [EN Baseline] Prices: [$${enFacts.uniquePrices.join(', $')}] | Strike: [$${enFacts.strikePrices.join(', $')}] | Rooms: ${enFacts.roomTypeCount} | Duration: ${enFacts.primaryDuration}d | FAQs: ${enFacts.faqCount} | Sections (H2): ${enFacts.sectionCount}`);
     } catch (e) {
       console.error(`  [FATAL] Failed to load English baseline: ${enUrl}: ${e.message}`);
@@ -137,12 +238,11 @@ async function runParityCheck() {
       continue;
     }
 
-    // 2. Compare against every locale
     for (const locale of LOCALES) {
       const locUrl = `${BASE_URL}/${locale}/${courseSlug}`;
       let locFacts;
       try {
-        locFacts = await extractFactsFromPage(page, locUrl);
+        locFacts = await extractFactsFromCoursePage(page, locUrl);
       } catch (e) {
         console.error(`  [FAIL ${locale.toUpperCase()}] Could not load ${locUrl}: ${e.message}`);
         totalErrors++;
@@ -152,44 +252,36 @@ async function runParityCheck() {
 
       const issues = [];
 
-      // Check prices: all English prices must be present in locale
       const missingPrices = enFacts.uniquePrices.filter(p => !locFacts.uniquePrices.includes(p));
       if (missingPrices.length > 0) {
         issues.push(`Missing prices: $${missingPrices.join(', $')} (Locale had: $${locFacts.uniquePrices.join(', $')})`);
       }
 
-      // Check strike prices
       const missingStrikes = enFacts.strikePrices.filter(p => !locFacts.strikePrices.includes(p));
       if (missingStrikes.length > 0) {
         issues.push(`Missing strike prices: $${missingStrikes.join(', $')} (Locale had: $${locFacts.strikePrices.join(', $')})`);
       }
 
-      // Check room type count
       if (enFacts.roomTypeCount > 0 && locFacts.roomTypeCount !== enFacts.roomTypeCount) {
         issues.push(`Room types count mismatch: EN=${enFacts.roomTypeCount} vs ${locale}=${locFacts.roomTypeCount}`);
       }
 
-      // Check primary duration
       if (enFacts.primaryDuration && locFacts.primaryDuration !== enFacts.primaryDuration) {
         issues.push(`Duration mismatch: EN=${enFacts.primaryDuration} vs ${locale}=${locFacts.primaryDuration}`);
       }
 
-      // Check student count range
       if (enFacts.studentCount && locFacts.studentCount && locFacts.studentCount !== enFacts.studentCount) {
         issues.push(`Student count mismatch: EN=${enFacts.studentCount} vs ${locale}=${locFacts.studentCount}`);
       }
 
-      // Check offer months
       if (enFacts.hasOfferMonths && !locFacts.hasOfferMonths) {
         issues.push(`Offer text months missing in ${locale}`);
       }
 
-      // Check FAQ count (if English has an accordion FAQ section)
       if (enFacts.faqCount > 0 && locFacts.faqCount !== enFacts.faqCount) {
         issues.push(`FAQ count mismatch: EN=${enFacts.faqCount} vs ${locale}=${locFacts.faqCount}`);
       }
 
-      // Check Section count (H2 headings) - allow at most 2 diff for layout wrappers
       if (Math.abs(enFacts.sectionCount - locFacts.sectionCount) > 2) {
         issues.push(`Section (H2) count mismatch: EN=${enFacts.sectionCount} vs ${locale}=${locFacts.sectionCount}`);
       }
@@ -200,8 +292,104 @@ async function runParityCheck() {
         issues.forEach(iss => console.error(`       • ${iss}`));
         failureReport.push({ course: courseSlug, locale, issues });
       } else {
-        console.log(`  ✅ [PASS ${locale.toUpperCase()}] All 10 facts match English baseline`);
+        console.log(`  ✅ [PASS ${locale.toUpperCase()}] All facts match English baseline`);
       }
+    }
+  }
+
+  // ==========================================
+  // SECTION 2: APPLY-NOW
+  // ==========================================
+  console.log(`\n------------------------------------------------------`);
+  console.log(`[AUDIT BATCH 2] /apply-now (Durations, Cohorts, WhatsApp, FAQs)`);
+  console.log(`------------------------------------------------------`);
+  for (const locale of ['en', ...LOCALES]) {
+    const url = locale === 'en' ? `${BASE_URL}/apply-now` : `${BASE_URL}/${locale}/apply-now`;
+    try {
+      const facts = await extractFactsFromApplyNowPage(page, url);
+      const issues = [];
+      if (!facts.has24Days || !facts.has23Nights) issues.push('Missing 24 Days / 23 Nights duration');
+      if (!facts.has12Days || !facts.has11Nights) issues.push('Missing 12 Days / 11 Nights duration');
+      if (!facts.has28Days || !facts.has27Nights) issues.push('Missing 28 Days / 27 Nights duration');
+      if (!facts.has8to10) issues.push('Missing 8-10 students cohort fact');
+      if (!facts.hasValidWhatsApp) issues.push('Missing or invalid WhatsApp +91 7895350563 link');
+      if (!facts.hasCourseCards) issues.push('Missing course cards with links');
+      if (facts.faqCount < 5) issues.push(`Expected 5 FAQs, found ${facts.faqCount}`);
+
+      if (issues.length > 0) {
+        totalErrors++;
+        console.error(`  ❌ [FAIL ${locale.toUpperCase()}] ${url}`);
+        issues.forEach(iss => console.error(`       • ${iss}`));
+        failureReport.push({ page: 'apply-now', locale, issues });
+      } else {
+        console.log(`  ✅ [PASS ${locale.toUpperCase()}] /apply-now facts verified`);
+      }
+    } catch (e) {
+      console.error(`  ❌ [FATAL ${locale.toUpperCase()}] /apply-now failed: ${e.message}`);
+      totalErrors++;
+      failureReport.push({ page: 'apply-now', locale, error: e.message });
+    }
+  }
+
+  // ==========================================
+  // SECTION 3: ABOUT-SCHOOL
+  // ==========================================
+  console.log(`\n------------------------------------------------------`);
+  console.log(`[AUDIT BATCH 2] /about-school (Founder, 7 Years, Image)`);
+  console.log(`------------------------------------------------------`);
+  for (const locale of ['en', ...LOCALES]) {
+    const url = locale === 'en' ? `${BASE_URL}/about-school` : `${BASE_URL}/${locale}/about-school`;
+    try {
+      const facts = await extractFactsFromAboutSchoolPage(page, url);
+      const issues = [];
+      if (!facts.mentionsSachin) issues.push('Founder name Sachin Ji missing');
+      if (!facts.mentionsSevenYears) issues.push('7 years teaching experience fact missing');
+      if (!facts.hasFounderImage) issues.push('Founder image missing or alt tag altered');
+
+      if (issues.length > 0) {
+        totalErrors++;
+        console.error(`  ❌ [FAIL ${locale.toUpperCase()}] ${url}`);
+        issues.forEach(iss => console.error(`       • ${iss}`));
+        failureReport.push({ page: 'about-school', locale, issues });
+      } else {
+        console.log(`  ✅ [PASS ${locale.toUpperCase()}] /about-school facts verified`);
+      }
+    } catch (e) {
+      console.error(`  ❌ [FATAL ${locale.toUpperCase()}] /about-school failed: ${e.message}`);
+      totalErrors++;
+      failureReport.push({ page: 'about-school', locale, error: e.message });
+    }
+  }
+
+  // ==========================================
+  // SECTION 4: TEACHERS
+  // ==========================================
+  console.log(`\n------------------------------------------------------`);
+  console.log(`[AUDIT BATCH 2] /teachers (2500+, 8+ Years, 8-10, Names, E-RYT 500)`);
+  console.log(`------------------------------------------------------`);
+  for (const locale of ['en', ...LOCALES]) {
+    const url = locale === 'en' ? `${BASE_URL}/teachers` : `${BASE_URL}/${locale}/teachers`;
+    try {
+      const facts = await extractFactsFromTeachersPage(page, url);
+      const issues = [];
+      if (!facts.has2500) issues.push('2500+ students trained fact missing');
+      if (!facts.has8Years) issues.push('8+ years teaching fact missing');
+      if (!facts.has8to10) issues.push('8-10 students batch size fact missing');
+      if (facts.missingNames.length > 0) issues.push(`Missing teacher names: ${facts.missingNames.join(', ')}`);
+      if (!facts.hasERYT) issues.push('E-RYT 500 qualification missing');
+
+      if (issues.length > 0) {
+        totalErrors++;
+        console.error(`  ❌ [FAIL ${locale.toUpperCase()}] ${url}`);
+        issues.forEach(iss => console.error(`       • ${iss}`));
+        failureReport.push({ page: 'teachers', locale, issues });
+      } else {
+        console.log(`  ✅ [PASS ${locale.toUpperCase()}] /teachers facts verified`);
+      }
+    } catch (e) {
+      console.error(`  ❌ [FATAL ${locale.toUpperCase()}] /teachers failed: ${e.message}`);
+      totalErrors++;
+      failureReport.push({ page: 'teachers', locale, error: e.message });
     }
   }
 
@@ -220,10 +408,10 @@ async function runParityCheck() {
   console.log(`Total Mismatches Found: ${totalErrors}`);
 
   if (totalErrors === 0) {
-    console.log(`🎉 100% PARITY! ALL LOCALE COURSE PAGES EXACTLY MATCH ENGLISH FACTS!`);
+    console.log(`🎉 100% PARITY! ALL LOCALE COURSE & BATCH 2 PAGES EXACTLY MATCH FACTS!`);
     process.exit(0);
   } else {
-    console.error(`❌ FAILED! ${totalErrors} fact mismatches found across courses.`);
+    console.error(`❌ FAILED! ${totalErrors} fact mismatches found across audited pages.`);
     process.exit(1);
   }
 }

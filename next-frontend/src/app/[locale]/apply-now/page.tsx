@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { 
     CheckCircle2, 
     Calendar, 
@@ -14,124 +14,160 @@ import {
     Award
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 
-export const metadata: Metadata = {
-    title: {
-        absolute: "Apply for Yoga Teacher Training | YogaGarhi",
-    },
-    description: "Apply for Yoga Alliance certified 100, 200 & 300-hour yoga teacher training courses in Bali and Rishikesh. Admissions, prerequisites & dates.",
-    alternates: {
-        canonical: "https://www.yogagarhi.com/apply-now",
-    },
-    openGraph: {
-        title: "Apply for Yoga Teacher Training | YogaGarhi",
-        description: "Apply for Yoga Alliance certified 100, 200, and 300-hour yoga teacher training courses in Bali and Rishikesh. Step-by-step admissions, prerequisites, and dates.",
-        url: "https://www.yogagarhi.com/apply-now",
-        type: "website",
-    },
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    let messages: any;
+    try {
+        messages = (await import(`@/messages/${locale}.json`)).default;
+    } catch (e) {
+        messages = (await import(`@/messages/en.json`)).default;
+    }
 
-export default function ApplyNowPage() {
+    const title = locale === "en" ? "Apply for Yoga Teacher Training | YogaGarhi" : (messages.applyNow?.metaTitle || "Apply for Yoga Teacher Training | YogaGarhi");
+    const description = locale === "en" ? "Apply for Yoga Alliance certified 100, 200 & 300-hour yoga teacher training courses in Bali and Rishikesh. Admissions, prerequisites & dates." : (messages.applyNow?.metaDesc || "Apply for Yoga Alliance certified 100, 200 & 300-hour yoga teacher training courses in Bali and Rishikesh. Admissions, prerequisites & dates.");
+    const url = locale === "en" ? "https://www.yogagarhi.com/apply-now" : `https://www.yogagarhi.com/${locale}/apply-now`;
+
+    const metadata: Metadata = {
+        metadataBase: new URL("https://www.yogagarhi.com"),
+        title: {
+            absolute: title,
+        },
+        description,
+        alternates: {
+            canonical: url,
+            languages: getReviewedHreflang("/apply-now"),
+        },
+        openGraph: {
+            title,
+            description,
+            url,
+            type: "website",
+        },
+    };
+
+    return locale === "en" ? metadata : applyQualityGate(metadata, locale);
+}
+
+export const revalidate = 86400;
+
+export default async function ApplyNowPage({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations({ locale, namespace: "applyNow" });
+
     const admissionsSteps = [
         {
             step: "01",
-            title: "Select Your Course & Destination",
-            description: "Choose between 100-Hr, 200-Hr, or 300-Hr teacher training programs in Ubud, Bali or Rishikesh, Himalayas based on your learning goals.",
+            title: t("s1Title"),
+            description: t("s1Desc"),
             icon: GraduationCap,
         },
         {
             step: "02",
-            title: "Check Prerequisites & Eligibility",
-            description: "100-Hr & 200-Hr are open to dedicated beginners and experienced practitioners alike. 300-Hr requires a certified 200-Hour RYT certificate.",
+            title: t("s2Title"),
+            description: t("s2Desc"),
             icon: CheckCircle2,
         },
         {
             step: "03",
-            title: "Reserve Your Seat",
-            description: "Lock in your preferred dates and room tier. Protected by our flexible booking and rescheduling policy.",
+            title: t("s3Title"),
+            description: t("s3Desc"),
             icon: ShieldCheck,
         },
         {
             step: "04",
-            title: "Immediate Pre-YTTC Online Access",
-            description: "Receive your YogaGarhi Welcome Guide and instant access to our Pre-YTTC online preparation video modules and anatomy foundations.",
+            title: t("s4Title"),
+            description: t("s4Desc"),
             icon: BookOpen,
         },
         {
             step: "05",
-            title: "Arrive on Campus & Immerse",
-            description: "Small cohorts strictly capped at 8–10 students ensure personal mentorship, 1-on-1 alignment corrections, and authentic ashram immersion.",
+            title: t("s5Title"),
+            description: t("s5Desc"),
             icon: Users,
         },
     ];
 
     const courses = [
         {
-            title: "200-Hour Yoga Teacher Training",
-            tag: "Most Popular • Yoga Alliance RYT 200",
-            duration: "24 Days / 23 Nights",
-            description: "The complete foundational certification covering classical Hatha, Ashtanga Vinyasa, alignment, biomechanics, philosophy, and practical teaching.",
+            title: t("course200Title"),
+            tag: t("course200Tag"),
+            duration: t("course200Duration"),
+            description: t("course200Desc"),
             baliLink: "/200-hour-yoga-teacher-training-in-bali",
             rishikeshLink: "/200-hour-yoga-teacher-training-in-rishikesh",
             features: [
-                "Worldwide Yoga Alliance RYT 200 Certification",
-                "Full Hatha, Ashtanga & Vinyasa teaching methodology",
-                "23 nights accommodation & 3 daily Sattvic meals (residential)",
-                "Pre-YTTC online study materials included immediately",
+                t("course200F1"),
+                t("course200F2"),
+                t("course200F3"),
+                t("course200F4"),
             ],
         },
         {
-            title: "100-Hour Yoga Teacher Training",
-            tag: "Foundational Reset • Continuing Education",
-            duration: "12 Days / 11 Nights",
-            description: "An intensive immersion ideal for practitioners seeking deep personal transformation, or those wanting to complete Part 1 of the 200-Hour TTC.",
+            title: t("course100Title"),
+            tag: t("course100Tag"),
+            duration: t("course100Duration"),
+            description: t("course100Desc"),
             baliLink: "/100-hour-yoga-teacher-training-in-bali",
             rishikeshLink: "/100-hour-yoga-teacher-training-in-rishikesh",
             features: [
-                "Yoga Alliance 100-Hour Continuing Education credits",
-                "Core pranayama, meditation, and posture alignment",
-                "11 nights stay with healthy plant-based meals",
-                "Option to complete remaining 100 hours within 12 months",
+                t("course100F1"),
+                t("course100F2"),
+                t("course100F3"),
+                t("course100F4"),
             ],
         },
         {
-            title: "300-Hour Advanced Teacher Training",
-            tag: "Advanced Mastery • Pathway to RYT 500",
-            duration: "28 Days / 27 Nights",
-            description: "Designed exclusively for 200-Hour graduates ready to master advanced adjustments, hands-on assists, advanced biomechanics, and subtle yogic energy.",
+            title: t("course300Title"),
+            tag: t("course300Tag"),
+            duration: t("course300Duration"),
+            description: t("course300Desc"),
             baliLink: "/300-hour-yoga-teacher-training-in-bali",
             rishikeshLink: null,
             features: [
-                "Advanced 300-Hour training towards Yoga Alliance RYT 500",
-                "Advanced sequencing, therapeutic alignment & biomechanics",
-                "27 nights accommodation & nourishing meals in Ubud",
-                "Subtle body, chakras, and advanced teaching practicum",
+                t("course300F1"),
+                t("course300F2"),
+                t("course300F3"),
+                t("course300F4"),
             ],
         },
     ];
 
     const faqs = [
         {
-            q: "Do I need to be advanced or flexible to apply for the 200-Hour TTC?",
-            a: "No. Our 200-Hour curriculum is structured from foundational roots to advanced applications. We welcome passionate practitioners of all ages, backgrounds, and flexibility levels. What matters most is dedication, openness, and sincere curiosity.",
+            q: t("q1"),
+            a: t("a1"),
         },
         {
-            q: "How do I secure my seat and what are the payment terms?",
-            a: "A registration deposit reserves your seat and confirms your enrollment. Complete details regarding payment schedules and accepted methods are provided during the application process.",
+            q: t("q2"),
+            a: t("a2"),
         },
         {
-            q: "What if my travel dates or schedule change?",
-            a: "We offer flexible rescheduling options for our upcoming batches. Contact our admissions team in advance if you need to adjust your dates.",
+            q: t("q3"),
+            a: t("a3"),
         },
         {
-            q: "What is included with my enrollment?",
-            a: "Residential packages include full tuition, Yoga Alliance accredited certificate, printed training manual, accommodation for the full course duration, 3 daily nourishing Sattvic/vegetarian meals, weekend excursions, and immediate access to the Pre-YTTC online prep portal. Tuition-only options are also available.",
+            q: t("q4"),
+            a: t("a4"),
         },
         {
-            q: "How many students are in each cohort?",
-            a: "To ensure personal attention, individual alignment feedback, and deep learning, our cohorts maintain intimate class sizes with dedicated teacher mentorship.",
+            q: t("q5"),
+            a: t("a5"),
         },
     ];
+
+    const whatsappUrl = `https://wa.me/917895350563?text=${encodeURIComponent(t("whatsappMessage"))}`;
 
     return (
         <div className="bg-background min-h-screen">
@@ -140,26 +176,26 @@ export default function ApplyNowPage() {
                 <div className="container mx-auto px-4 text-center max-w-4xl">
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs md:text-sm font-medium mb-6">
                         <Sparkles className="w-4 h-4" />
-                        <span>Yoga Alliance RYS Registered School • Admissions Open 2026–2027</span>
+                        <span>{t("badge")}</span>
                     </div>
                     <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-                        Apply for Yoga Teacher Training
+                        {t("heroHeading")}
                     </h1>
                     <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-                        Begin your journey to becoming an authentic, certified yoga teacher. Select your program, explore prerequisites, and reserve your seat in our intimate cohorts.
+                        {t("heroSub")}
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
                         <div className="flex items-center gap-1.5">
                             <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                            <span>8–10 Student Small Cohorts</span>
+                            <span>{t("smallCohorts")}</span>
                         </div>
                         <div className="flex items-center gap-1.5">
                             <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                            <span>Flexible Rescheduling</span>
+                            <span>{t("flexibleRescheduling")}</span>
                         </div>
                         <div className="flex items-center gap-1.5">
                             <Award className="w-4 h-4 text-emerald-600" />
-                            <span>Yoga Alliance RYT Certification</span>
+                            <span>{t("rytCertification")}</span>
                         </div>
                     </div>
                 </div>
@@ -169,10 +205,10 @@ export default function ApplyNowPage() {
             <section className="py-16 md:py-20 container mx-auto px-4 max-w-6xl">
                 <div className="text-center mb-12">
                     <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3">
-                        Step 1: Choose Your Course
+                        {t("chooseHeading")}
                     </h2>
                     <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
-                        Select the teacher training that aligns with your current practice and career aspirations.
+                        {t("chooseSub")}
                     </p>
                 </div>
 
@@ -209,14 +245,14 @@ export default function ApplyNowPage() {
                             <div className="space-y-2 pt-4 border-t border-border/50">
                                 <Link href={course.baliLink} className="block">
                                     <Button className="w-full justify-between group">
-                                        <span>Apply in Bali</span>
+                                        <span>{t("applyBali")}</span>
                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </Button>
                                 </Link>
                                 {course.rishikeshLink && (
                                     <Link href={course.rishikeshLink} className="block">
                                         <Button variant="outline" className="w-full justify-between">
-                                            <span>Apply in Rishikesh</span>
+                                            <span>{t("applyRishikesh")}</span>
                                             <ArrowRight className="w-4 h-4" />
                                         </Button>
                                     </Link>
@@ -232,10 +268,10 @@ export default function ApplyNowPage() {
                 <div className="container mx-auto px-4 max-w-5xl">
                     <div className="text-center mb-12">
                         <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3">
-                            The Admissions & Enrollment Process
+                            {t("stepsHeading")}
                         </h2>
                         <p className="text-muted-foreground max-w-xl mx-auto text-sm md:text-base">
-                            From application to on-campus arrival, our enrollment process is simple, clear, and fully supportive.
+                            {t("stepsSub")}
                         </p>
                     </div>
 
@@ -272,10 +308,10 @@ export default function ApplyNowPage() {
             <section className="py-16 md:py-20 container mx-auto px-4 max-w-4xl">
                 <div className="text-center mb-12">
                     <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3">
-                        Frequently Asked Questions
+                        {t("faqHeading")}
                     </h2>
                     <p className="text-muted-foreground text-sm md:text-base">
-                        Everything you need to know about applying and securing your training place.
+                        {t("faqSub")}
                     </p>
                 </div>
 
@@ -300,14 +336,14 @@ export default function ApplyNowPage() {
             <section className="py-16 bg-primary text-primary-foreground">
                 <div className="container mx-auto px-4 text-center max-w-3xl">
                     <h2 className="font-heading text-2xl md:text-4xl font-bold mb-4">
-                        Need Guidance Choosing the Right Training?
+                        {t("ctaHeading")}
                     </h2>
                     <p className="text-primary-foreground/90 text-sm md:text-base mb-8 max-w-xl mx-auto leading-relaxed">
-                        Our admissions team is available to assist you with questions regarding course syllabi, travel arrangements, room choices, and prerequisites.
+                        {t("ctaSub")}
                     </p>
                     <div className="flex flex-wrap items-center justify-center gap-4">
                         <a 
-                            href="https://wa.me/917895350563" 
+                            href={whatsappUrl} 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
@@ -317,7 +353,7 @@ export default function ApplyNowPage() {
                                 className="font-semibold gap-2 shadow-md"
                             >
                                 <MessageCircle className="w-5 h-5" />
-                                <span>Chat on WhatsApp</span>
+                                <span>{t("whatsappButton")}</span>
                             </Button>
                         </a>
                         <Link href="/contact-us">
@@ -326,7 +362,7 @@ export default function ApplyNowPage() {
                                 variant="outline" 
                                 className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 font-semibold"
                             >
-                                <span>Book Video Consultation</span>
+                                <span>{t("consultationButton")}</span>
                             </Button>
                         </Link>
                     </div>
