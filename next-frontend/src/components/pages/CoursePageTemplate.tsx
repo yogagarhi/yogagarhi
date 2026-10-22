@@ -1957,7 +1957,7 @@ export default function CoursePageTemplate({
         <StudentStoriesSection />
 
         {/* ===== DAILY SCHEDULE ===== */}
-        <section className="py-20 bg-secondary/30">
+        <section className="py-20 bg-secondary/30" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1467px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
               {t("schedule.heading")}
@@ -2625,7 +2625,7 @@ export default function CoursePageTemplate({
         </section>
 
         {/* Room Types Section */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-background" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2374px" }}>
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">{t("pricing.choosePackage")}</p>
@@ -3163,7 +3163,7 @@ export default function CoursePageTemplate({
 
 
         {/* ===== GOOGLE REVIEWS ===== */}
-        <section className="py-20 bg-secondary/30 relative overflow-hidden">
+        <section className="py-20 bg-secondary/30 relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1118px" }}>
           {/* Yoga-themed Background Art */}
           <div className="absolute inset-0 pointer-events-none">
             {/* Sri Yantra Pattern - Top Left */}

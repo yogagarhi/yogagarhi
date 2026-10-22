@@ -1590,7 +1590,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
         </section>
 
         {/* ===== COURSE SYLLABUS ===== */}
-        <section className="py-20 bg-background overflow-hidden">
+        <section className="py-20 bg-background overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2095px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
               Course Syllabus
@@ -2636,7 +2636,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
         </section>
 
         {/* Room Types Section */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-background" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2917px" }}>
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">Choose Your Package</p>

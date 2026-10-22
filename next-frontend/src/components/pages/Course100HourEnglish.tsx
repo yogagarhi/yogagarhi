@@ -1691,7 +1691,7 @@ export default function Course100Hour({ initialBatches, syllabusSlot }: { initia
         </section >
 
         {/* ===== COURSE SYLLABUS ===== */}
-        < section className="py-20 bg-background overflow-hidden" >
+        <section className="py-20 bg-background overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2065px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
               Course Syllabus
@@ -2104,7 +2104,7 @@ export default function Course100Hour({ initialBatches, syllabusSlot }: { initia
 
 
         {/* ===== DAILY SCHEDULE ===== */}
-        <section className="py-20 bg-secondary/30">
+        <section className="py-20 bg-secondary/30" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1675px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
               Daily Schedule
@@ -3322,7 +3322,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
         </section>
 
         {/* Room Types Section */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-background" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2278px" }}>
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">Choose Your Stay</p>
