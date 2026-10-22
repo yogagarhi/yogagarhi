@@ -17,7 +17,13 @@ export async function POST(request: Request) {
   try {
     const data = await request.json();
     console.log('API Route (/api/send-email): Received form data:', data);
-    const { email, _subject, _autoresponder, ...remainingData } = data;
+    const { email, _subject, _autoresponder, isTest, ...remainingData } = data;
+
+    // Safety guard: Mock delivery for test runs to prevent test emails reaching real inbox
+    if (isTest || email?.endsWith('@example.com') || process.env.MOCK_EMAIL === 'true') {
+      console.log('API Route (/api/send-email): Test flag / mock detected. Skipping SMTP send.');
+      return NextResponse.json({ success: true, message: 'Test email mocked successfully. No email sent.' });
+    }
 
     // Check for SMTP configuration
     if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
