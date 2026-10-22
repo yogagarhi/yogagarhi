@@ -55,7 +55,8 @@ export default function QuickEnquiryModal() {
 
       if (response.ok) {
         setIsSubmitted(true);
-        router.push('/thank-you?type=inquiry');
+        const thankYouUrl = locale === 'en' ? '/thank-you?type=inquiry' : `/${locale}/thank-you?type=inquiry`;
+        router.push(thankYouUrl);
         setShowQuickEnquiry(false);
       } else {
         throw new Error('Failed to send inquiry');

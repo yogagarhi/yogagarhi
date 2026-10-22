@@ -69,7 +69,8 @@ YogaGarhi Team`,
       });
       if (response.ok) {
         setShowManualDialog(false);
-        router.push(`/thank-you?type=manual&name=${manualForm.name}`);
+        const thankYouBase = locale === "en" ? "/thank-you" : `/${locale}/thank-you`;
+        router.push(`${thankYouBase}?type=manual&name=${encodeURIComponent(manualForm.name)}`);
       }
     } catch (error) {
       console.error(error);
@@ -108,7 +109,8 @@ YogaGarhi Team`,
       });
       if (response.ok) {
         setShowWebinarDialog(false);
-        router.push(`/thank-you?type=webinar&name=${webinarForm.name}`);
+        const thankYouBase = locale === "en" ? "/thank-you" : `/${locale}/thank-you`;
+        router.push(`${thankYouBase}?type=webinar&name=${encodeURIComponent(webinarForm.name)}`);
       }
     } catch (error) {
       console.error(error);
@@ -144,7 +146,8 @@ YogaGarhi Team`,
       });
       if (response.ok) {
         setShowPreYTTCDialog(false);
-        router.push(`/thank-you?type=pre-yttc&name=${preYTTCForm.name}`);
+        const thankYouBase = locale === "en" ? "/thank-you" : `/${locale}/thank-you`;
+        router.push(`${thankYouBase}?type=pre-yttc&name=${encodeURIComponent(preYTTCForm.name)}`);
       }
     } catch (error) {
       console.error(error);

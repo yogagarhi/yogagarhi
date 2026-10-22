@@ -72,7 +72,8 @@ export default function EnrollmentModal() {
         setIsSubmitted(true);
         // Small delay to allow the success UI to be seen before redirect
         setTimeout(() => {
-          router.push('/thank-you?type=enrollment');
+          const thankYouUrl = locale === 'en' ? '/thank-you?type=enrollment' : `/${locale}/thank-you?type=enrollment`;
+          router.push(thankYouUrl);
         }, 1500);
       } else {
         const errorData = await response.json().catch(() => ({}));

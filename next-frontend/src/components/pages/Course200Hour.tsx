@@ -864,6 +864,12 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
   const [isSubmittingQuick, setIsSubmittingQuick] = useState(false);
 
   const submitToFormSubmit = async (fields: Record<string, any>) => {
+    const thankYouBase = locale === 'en' ? '' : `/${locale}`;
+    let nextUrl = fields._next;
+    if (nextUrl && !nextUrl.includes(`/${locale}/thank-you`) && locale !== 'en') {
+      nextUrl = nextUrl.replace('/thank-you', `${thankYouBase}/thank-you`);
+    }
+
     const response = await fetch('/api/send-email', {
       method: 'POST',
       headers: {
@@ -873,8 +879,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
     });
 
     if (response.ok) {
-      if (fields._next) {
-        window.location.href = fields._next;
+      if (nextUrl) {
+        window.location.href = nextUrl;
       }
     } else {
       throw new Error('Failed to send form');

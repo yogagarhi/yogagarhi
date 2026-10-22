@@ -98,7 +98,8 @@ export default function BookingModal({
       });
 
       if (response.ok) {
-        router.push('/thank-you?type=booking');
+        const thankYouUrl = locale === 'en' ? '/thank-you?type=booking' : `/${locale}/thank-you?type=booking`;
+        router.push(thankYouUrl);
       } else {
         throw new Error('Failed to send booking');
       }
