@@ -56,9 +56,15 @@ export default async function GalleryPage({
     const messages: any = await getMessages();
     const clientMessages = {
         gallery: messages.gallery,
+        common: messages.common,
+        nav: messages.nav,
+        dialogs: messages.dialogs,
         home: {
             videoGallery: messages.home?.videoGallery,
             ready: messages.home?.ready,
+            dosha: messages.home?.dosha,
+            webinar: messages.home?.webinar,
+            support: messages.home?.support,
         },
     };
 

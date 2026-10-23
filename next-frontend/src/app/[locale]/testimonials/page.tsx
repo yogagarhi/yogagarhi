@@ -57,9 +57,15 @@ export default async function AboutTestimonialsPage({
     const messages: any = await getMessages();
     const clientMessages = {
         testimonials: messages.testimonials,
+        common: messages.common,
+        nav: messages.nav,
+        dialogs: messages.dialogs,
         home: {
             studentStories: messages.home?.studentStories,
             ready: messages.home?.ready,
+            dosha: messages.home?.dosha,
+            webinar: messages.home?.webinar,
+            support: messages.home?.support,
         },
     };
 

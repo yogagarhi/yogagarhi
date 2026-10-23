@@ -56,8 +56,14 @@ export default async function AboutTeachersPage({
     const messages: any = await getMessages();
     const clientMessages = {
         teachers: messages.teachers,
+        common: messages.common,
+        nav: messages.nav,
+        dialogs: messages.dialogs,
         home: {
             ready: messages.home?.ready,
+            dosha: messages.home?.dosha,
+            webinar: messages.home?.webinar,
+            support: messages.home?.support,
         },
     };
 
