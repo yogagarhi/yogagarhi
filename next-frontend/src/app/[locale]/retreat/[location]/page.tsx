@@ -6,9 +6,13 @@ import { MapPin, Clock, ArrowRight, Sparkles, Check, Phone, CheckCircle2 } from 
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { RETREAT_LOCATIONS, RETREATS_DATA } from "@/constants/retreats";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getLocalizedLocationName } from "../page";
 
 interface Props {
   params: Promise<{
+    locale: string;
     location: string;
   }>;
 }
@@ -22,7 +26,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { location } = await params;
+  const { locale, location } = await params;
   const loc = RETREAT_LOCATIONS[location as 'bali' | 'rishikesh' | 'varkala'];
 
   if (!loc) {
@@ -46,38 +50,67 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = titles[loc.key] || `${loc.name} Yoga Retreats | YogaGarhi`;
   const description = descriptions[loc.key] || `Find the best Yoga Retreat in ${loc.fullName} with YogaGarhi.`;
-  const canonicalUrl = `https://www.yogagarhi.com/retreat/${loc.key}`;
 
-  return {
+  if (locale === "en") {
+    return {
+      title: {
+        absolute: title,
+      },
+      description,
+      alternates: {
+        canonical: `https://www.yogagarhi.com/retreat/${loc.key}`,
+      },
+      openGraph: {
+        title,
+        description,
+        url: `https://www.yogagarhi.com/retreat/${loc.key}`,
+        type: "website",
+        siteName: "YogaGarhi",
+      },
+    };
+  }
+
+  const localizedCanonical = `https://www.yogagarhi.com/${locale}/retreat/${loc.key}`;
+
+  return applyQualityGate({
     title: {
       absolute: title,
     },
     description,
     alternates: {
-      canonical: canonicalUrl,
+      canonical: localizedCanonical,
+      languages: getReviewedHreflang(`/retreat/${loc.key}`),
     },
     openGraph: {
       title,
       description,
-      url: canonicalUrl,
+      url: localizedCanonical,
       type: "website",
       siteName: "YogaGarhi",
     },
-  };
+  }, locale);
 }
 
 export default async function RetreatLocationPage({ params }: Props) {
-  const { location } = await params;
+  const { locale, location } = await params;
+  setRequestLocale(locale);
+
   const loc = RETREAT_LOCATIONS[location as 'bali' | 'rishikesh' | 'varkala'];
 
   if (!loc) {
     notFound();
   }
 
+  const isEn = locale === "en";
+  const t = await getTranslations({ locale, namespace: "retreatLocation" });
+  const tHub = await getTranslations({ locale, namespace: "retreatHub" });
+
   const isBali = loc.key === "bali";
   const locationRetreats = Object.values(RETREATS_DATA).filter(
     (r) => r.locationKey === loc.key
   );
+
+  const displayName = getLocalizedLocationName(loc.key, loc.name, locale);
 
   const whatsappUrl = `https://wa.me/918279705844?text=${encodeURIComponent(
     `Hello YogaGarhi! I am interested in exploring yoga retreats in ${loc.name}. Please share available dates and seasonal offers.`
@@ -90,10 +123,13 @@ export default async function RetreatLocationPage({ params }: Props) {
         <aside aria-label="Limited Time Special Offer" className="bg-[#460e40] text-white py-2.5 px-4 text-center text-xs md:text-sm font-medium tracking-wide">
           <div className="container mx-auto flex items-center justify-center gap-3 flex-wrap">
             <span className="bg-amber-400 text-stone-900 text-[11px] font-bold px-2 py-0.5 rounded-full uppercase">
-              Limited Time Special Offer
+              {isEn ? "Limited Time Special Offer" : t("limitedOfferBadge")}
             </span>
             <span>
-              Save up to <strong>$200 USD</strong> on all upcoming Bali retreat bookings!
+              {isEn 
+                ? <>Save up to <strong>$200 USD</strong> on all upcoming Bali retreat bookings!</>
+                : t("limitedOfferText")
+              }
             </span>
             <a
               href={whatsappUrl}
@@ -101,7 +137,7 @@ export default async function RetreatLocationPage({ params }: Props) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-semibold text-amber-300 hover:text-white underline underline-offset-2 transition-colors ml-1"
             >
-              WhatsApp for Fast Booking →
+              {isEn ? "WhatsApp for Fast Booking →" : t("whatsappFastBooking")}
             </a>
           </div>
         </aside>
@@ -117,14 +153,20 @@ export default async function RetreatLocationPage({ params }: Props) {
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-2 text-xs md:text-sm text-stone-500">
               <li>
-                <Link href="/" className="hover:text-amber-800 transition-colors">Home</Link>
+                <Link href={isEn ? "/" : `/${locale}`} className="hover:text-amber-800 transition-colors">
+                  {isEn ? "Home" : "Home"}
+                </Link>
               </li>
               <li>/</li>
               <li>
-                <Link href="/retreat" className="hover:text-amber-800 transition-colors">Retreats</Link>
+                <Link href={isEn ? "/retreat" : `/${locale}/retreat`} className="hover:text-amber-800 transition-colors">
+                  {isEn ? "Retreats" : t("breadcrumbRetreats")}
+                </Link>
               </li>
               <li>/</li>
-              <li className="text-stone-900 font-semibold" aria-current="page">{loc.name}</li>
+              <li className="text-stone-900 font-semibold" aria-current="page">
+                {displayName}
+              </li>
             </ol>
           </nav>
 
@@ -139,11 +181,11 @@ export default async function RetreatLocationPage({ params }: Props) {
           <h1 className={`font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold uppercase tracking-tight leading-tight mb-4 ${
             isBali ? "text-amber-950" : "text-foreground"
           }`}>
-            Yoga Retreat in {loc.name}
+            {isEn ? `Yoga Retreat in ${loc.name}` : t("heroTitle", { loc: displayName })}
           </h1>
 
           <p className="text-base md:text-lg text-stone-700 max-w-3xl leading-relaxed mb-6 font-serif">
-            {loc.description} Step into your zen zone amidst tranquil nature and immerse in daily multi-style yoga, restorative Balinese massages, sound healing, and Ahimsa plant-based dining.
+            {isEn ? loc.description : (t("heroSub") || loc.description)}
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
@@ -154,7 +196,7 @@ export default async function RetreatLocationPage({ params }: Props) {
               className="inline-flex items-center gap-2 bg-[#25d366] hover:bg-[#128c7e] text-white font-bold px-5 py-3 rounded-xl text-sm shadow-sm transition-colors"
             >
               <Phone className="w-4 h-4" />
-              WhatsApp Inquiry: +91 8279705844
+              {isEn ? "WhatsApp Inquiry: +91 8279705844" : t("whatsappInquiry")}
             </a>
           </div>
         </div>
@@ -164,13 +206,16 @@ export default async function RetreatLocationPage({ params }: Props) {
         <section className="container mx-auto px-4 max-w-6xl">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="text-xs uppercase font-bold tracking-widest text-amber-800">
-              Select Your Duration
+              {isEn ? "Select Your Duration" : t("selectDuration")}
             </span>
             <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-              {loc.name} Yoga Retreat Packages
+              {isEn ? `${loc.name} Yoga Retreat Packages` : t("packagesTitle", { loc: displayName })}
             </h2>
             <p className="text-stone-600 text-sm sm:text-base mt-2">
-              Available year-round with flexible arrival dates. Choose between 3 days, 7 days, or 14 days of rejuvenation.
+              {isEn 
+                ? "Available year-round with flexible arrival dates. Choose between 3 days, 7 days, or 14 days of rejuvenation."
+                : t("packagesSub")
+              }
             </p>
           </div>
 
@@ -191,12 +236,15 @@ export default async function RetreatLocationPage({ params }: Props) {
                     />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-stone-900/80 backdrop-blur-md text-white text-xs font-semibold rounded-lg">
-                        {retreat.durationDays} Days / {retreat.durationNights} Nights
+                        {isEn 
+                          ? `${retreat.durationDays} Days / ${retreat.durationNights} Nights`
+                          : tHub("daysNights", { days: retreat.durationDays, nights: retreat.durationNights })
+                        }
                       </span>
                     </div>
                     <div className="absolute top-4 right-4">
                       <span className="px-3 py-1 bg-[#b40000] text-white text-xs font-bold rounded-lg shadow-sm">
-                        Save {retreat.earlyBirdSaving}
+                        {isEn ? `Save ${retreat.earlyBirdSaving}` : tHub("save", { amount: retreat.earlyBirdSaving })}
                       </span>
                     </div>
                   </div>
@@ -226,22 +274,22 @@ export default async function RetreatLocationPage({ params }: Props) {
                 <div className="p-6 pt-0 border-t border-stone-100 mt-2">
                   <div className="flex items-baseline justify-between mb-4 pt-4">
                     <div>
-                      <span className="text-[11px] text-stone-500 uppercase">From</span>
+                      <span className="text-[11px] text-stone-500 uppercase">{isEn ? "From" : tHub("from")}</span>
                       <div className="text-2xl font-extrabold text-[#b40000]">
                         {retreat.priceShared} <span className="text-xs font-normal text-stone-500">USD</span>
                       </div>
                     </div>
                     <div className="text-right">
-                      <span className="text-[11px] text-stone-500 uppercase">Private Villa</span>
+                      <span className="text-[11px] text-stone-500 uppercase">{isEn ? "Private Villa" : tHub("privateVilla")}</span>
                       <div className="text-base font-bold text-stone-800">
                         {retreat.pricePrivate} USD
                       </div>
                     </div>
                   </div>
 
-                  <Link href={`/retreat/${loc.key}/${retreat.slug}`} className="block">
+                  <Link href={isEn ? `/retreat/${loc.key}/${retreat.slug}` : `/${locale}/retreat/${loc.key}/${retreat.slug}`} className="block">
                     <Button className="w-full bg-amber-800 hover:bg-amber-900 text-white font-bold py-5 rounded-xl text-sm">
-                      View Retreat Details & Schedule →
+                      {isEn ? "View Retreat Details & Schedule →" : t("viewDetailsSchedule")}
                     </Button>
                   </Link>
                 </div>

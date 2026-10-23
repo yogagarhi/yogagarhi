@@ -2,7 +2,8 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getRetreat, RETREATS_DATA } from "@/constants/retreats";
 import RetreatDetail from "@/components/pages/RetreatDetail";
-import { applyQualityGate } from "@/utils/seoQualityGate";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
+import { setRequestLocale } from "next-intl/server";
 
 interface Props {
   params: Promise<{
@@ -36,9 +37,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const canonicalUrl = `https://www.yogagarhi.com/retreat/${retreat.locationKey}/${retreat.slug}`;
+  const isEn = !locale || locale === "en";
+  const canonicalUrl = isEn
+    ? `https://www.yogagarhi.com/retreat/${retreat.locationKey}/${retreat.slug}`
+    : `https://www.yogagarhi.com/${locale}/retreat/${retreat.locationKey}/${retreat.slug}`;
 
-  return applyQualityGate({
+  const baseMeta: Metadata = {
     title: {
       absolute: retreat.seoTitle,
     },
@@ -46,6 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: retreat.keywords,
     alternates: {
       canonical: canonicalUrl,
+      languages: isEn ? getReviewedHreflang(`/retreat/${retreat.locationKey}/${retreat.slug}`) : undefined,
     },
     robots: {
       index: true,
@@ -80,16 +85,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [retreat.heroImage],
       creator: "@YogaGarhi",
     },
-  }, locale);
+  };
+
+  return isEn ? baseMeta : applyQualityGate(baseMeta, locale);
 }
 
 export default async function RetreatDetailPage({ params }: Props) {
-  const { location, duration } = await params;
+  const { locale, location, duration } = await params;
+  const currentLocale = locale || "en";
+  setRequestLocale(currentLocale);
+
   const retreat = getRetreat(location, duration);
 
   if (!retreat) {
     notFound();
   }
 
-  return <RetreatDetail retreat={retreat} />;
+  let messages: any = {};
+  if (currentLocale !== "en") {
+    try {
+      messages = (await import(`@/messages/${currentLocale}.json`)).default.retreatDetail || {};
+    } catch (e) {}
+  }
+
+  return <RetreatDetail retreat={retreat} locale={currentLocale} messages={messages} />;
 }

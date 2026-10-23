@@ -393,6 +393,147 @@ async function runParityCheck() {
     }
   }
 
+  // ==========================================
+  // SECTION 5: RETREATS (BATCH 3)
+  // ==========================================
+  console.log(`\n------------------------------------------------------`);
+  console.log(`[AUDIT BATCH 3] /retreat, locations & 9 detail pages`);
+  console.log(`------------------------------------------------------`);
+
+  const VARKALA_LOCAL = {
+    ru: 'Варкала',
+    ja: 'ヴァルカラ',
+    ko: '바르칼라',
+    zh: '瓦尔卡拉'
+  };
+
+  // 5.1 Retreat Hub
+  for (const locale of ['en', ...LOCALES]) {
+    const url = locale === 'en' ? `${BASE_URL}/retreat` : `${BASE_URL}/${locale}/retreat`;
+    try {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 35000 });
+      const text = await page.evaluate(() => document.body.innerText);
+      const expectedVarkala = VARKALA_LOCAL[locale] || 'Varkala';
+      const issues = [];
+      if (!text.includes(expectedVarkala)) issues.push(`Missing Varkala local spelling: ${expectedVarkala}`);
+      if (!text.includes('Bali') || !text.includes('Rishikesh')) issues.push('Missing Bali or Rishikesh');
+
+      if (issues.length > 0) {
+        totalErrors++;
+        console.error(`  ❌ [FAIL ${locale.toUpperCase()}] ${url}`);
+        issues.forEach(iss => console.error(`       • ${iss}`));
+        failureReport.push({ page: 'retreat-hub', locale, issues });
+      } else {
+        console.log(`  ✅ [PASS ${locale.toUpperCase()}] /retreat hub verified`);
+      }
+    } catch (e) {
+      console.error(`  ❌ [FATAL ${locale.toUpperCase()}] /retreat hub failed: ${e.message}`);
+      totalErrors++;
+      failureReport.push({ page: 'retreat-hub', locale, error: e.message });
+    }
+  }
+
+  // 5.2 Retreat Location Pages
+  for (const location of ['bali', 'rishikesh', 'varkala']) {
+    for (const locale of ['en', ...LOCALES]) {
+      const url = locale === 'en' ? `${BASE_URL}/retreat/${location}` : `${BASE_URL}/${locale}/retreat/${location}`;
+      try {
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 35000 });
+        const text = await page.evaluate(() => document.body.innerText);
+        const issues = [];
+        if (location === 'varkala') {
+          const expected = VARKALA_LOCAL[locale] || 'Varkala';
+          if (!text.includes(expected)) issues.push(`Missing Varkala local spelling: ${expected}`);
+        }
+        if (!/3\s*(?:Days?|Tage|Jours?|Días|Giorni|Dagen|Дней|Дня|Hari|日|天)/i.test(text)) {
+          issues.push('Missing 3 Days package mention');
+        }
+
+        if (issues.length > 0) {
+          totalErrors++;
+          console.error(`  ❌ [FAIL ${locale.toUpperCase()}] ${url}`);
+          issues.forEach(iss => console.error(`       • ${iss}`));
+          failureReport.push({ page: `retreat-${location}`, locale, issues });
+        } else {
+          console.log(`  ✅ [PASS ${locale.toUpperCase()}] /retreat/${location} verified`);
+        }
+      } catch (e) {
+        console.error(`  ❌ [FATAL ${locale.toUpperCase()}] /retreat/${location} failed: ${e.message}`);
+        totalErrors++;
+        failureReport.push({ page: `retreat-${location}`, locale, error: e.message });
+      }
+    }
+  }
+
+  // 5.3 Retreat Detail Pages
+  const detailPackages = [
+    { locKey: 'bali', dur: '3-days', priceShared: '$299', pricePrivate: '$390' },
+    { locKey: 'bali', dur: '7-days', priceShared: '$650', pricePrivate: '$800' },
+    { locKey: 'bali', dur: '14-days', priceShared: '$1,250', pricePrivate: '$1,590' },
+    { locKey: 'rishikesh', dur: '3-days', priceShared: '$180', pricePrivate: '$260' },
+    { locKey: 'rishikesh', dur: '7-days', priceShared: '$390', pricePrivate: '$550' },
+    { locKey: 'rishikesh', dur: '14-days', priceShared: '$750', pricePrivate: '$1,050' },
+    { locKey: 'varkala', dur: '3-days', priceShared: '$220', pricePrivate: '$320' },
+    { locKey: 'varkala', dur: '7-days', priceShared: '$490', pricePrivate: '$690' },
+    { locKey: 'varkala', dur: '14-days', priceShared: '$890', pricePrivate: '$1,290' }
+  ];
+
+  for (const pkg of detailPackages) {
+    for (const locale of ['en', ...LOCALES]) {
+      const url = locale === 'en' 
+        ? `${BASE_URL}/retreat/${pkg.locKey}/${pkg.dur}` 
+        : `${BASE_URL}/${locale}/retreat/${pkg.locKey}/${pkg.dur}`;
+      try {
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 35000 });
+        const text = await page.evaluate(() => document.body.innerText);
+        const issues = [];
+        if (!text.includes(pkg.priceShared)) issues.push(`Missing priceShared ${pkg.priceShared}`);
+        if (!text.includes(pkg.pricePrivate)) issues.push(`Missing pricePrivate ${pkg.pricePrivate}`);
+        if (!/\b12\b/.test(text)) issues.push('Missing group size 12');
+        if (pkg.locKey === 'varkala') {
+          const expected = VARKALA_LOCAL[locale] || 'Varkala';
+          if (!text.includes(expected)) issues.push(`Missing Varkala local spelling: ${expected}`);
+        }
+
+        if (issues.length > 0) {
+          totalErrors++;
+          console.error(`  ❌ [FAIL ${locale.toUpperCase()}] ${url}`);
+          issues.forEach(iss => console.error(`       • ${iss}`));
+          failureReport.push({ page: `retreat-${pkg.locKey}-${pkg.dur}`, locale, issues });
+        } else {
+          console.log(`  ✅ [PASS ${locale.toUpperCase()}] /retreat/${pkg.locKey}/${pkg.dur} facts verified`);
+        }
+      } catch (e) {
+        console.error(`  ❌ [FATAL ${locale.toUpperCase()}] /retreat/${pkg.locKey}/${pkg.dur} failed: ${e.message}`);
+        totalErrors++;
+        failureReport.push({ page: `retreat-${pkg.locKey}-${pkg.dur}`, locale, error: e.message });
+      }
+    }
+  }
+
+  // 5.4 308 Redirects
+  console.log(`\n------------------------------------------------------`);
+  console.log(`[AUDIT BATCH 3] /retreat/warkala* 308 Redirects`);
+  console.log(`------------------------------------------------------`);
+  for (const redirectPath of ['/retreat/warkala', '/retreat/warkala/3-days', '/retreat/warkala/7-days', '/retreat/warkala/14-days']) {
+    try {
+      const res = await fetch(`${BASE_URL}${redirectPath}`, { redirect: 'manual' });
+      const location = res.headers.get('location');
+      const expected = redirectPath.replace('/warkala', '/varkala');
+      if (res.status !== 308 || location !== expected) {
+        totalErrors++;
+        console.error(`  ❌ [FAIL REDIRECT] ${redirectPath} -> status ${res.status}, location: ${location} (expected 308 to ${expected})`);
+        failureReport.push({ page: redirectPath, type: 'redirect', status: res.status, location });
+      } else {
+        console.log(`  ✅ [PASS REDIRECT 308] ${redirectPath} -> ${location}`);
+      }
+    } catch (e) {
+      totalErrors++;
+      console.error(`  ❌ [FATAL REDIRECT] ${redirectPath}: ${e.message}`);
+      failureReport.push({ page: redirectPath, type: 'redirect', error: e.message });
+    }
+  }
+
   await browser.close();
 
   const reportPath = path.resolve(__dirname, '../scratch/facts-parity-report.json');

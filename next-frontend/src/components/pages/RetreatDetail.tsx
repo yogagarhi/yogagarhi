@@ -39,6 +39,21 @@ import { getCloudinaryUrl } from "@/utils/cloudinary";
 
 interface RetreatDetailProps {
   retreat: RetreatPackage;
+  locale?: string;
+  messages?: any;
+}
+
+function getLocalizedLocName(locKey: string, locName: string, locale: string) {
+  if (locKey === 'varkala') {
+    switch (locale) {
+      case 'ru': return 'Варкала';
+      case 'ja': return 'ヴァルカラ';
+      case 'ko': return '바르칼라';
+      case 'zh': return '瓦尔卡拉';
+      default: return 'Varkala';
+    }
+  }
+  return locName;
 }
 
 // Teacher profiles for the retreat faculty section
@@ -111,7 +126,12 @@ const CAMPUS_GALLERY = [
   }
 ];
 
-export default function RetreatDetail({ retreat }: RetreatDetailProps) {
+export default function RetreatDetail({ retreat, locale = "en", messages = {} }: RetreatDetailProps) {
+  const currentLocale = locale || "en";
+  const isEn = currentLocale === "en";
+  const displayName = getLocalizedLocName(retreat.locationKey, retreat.locationName, currentLocale);
+  const linkPrefix = isEn ? "" : `/${currentLocale}`;
+
   const { setShowEnrollDialog } = useEnrollment();
   const { setShowQuickEnquiry } = useQuickEnquiry();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -166,25 +186,25 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://www.yogagarhi.com"
+            "item": isEn ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${currentLocale}`
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Retreats",
-            "item": "https://www.yogagarhi.com/retreat"
+            "item": isEn ? "https://www.yogagarhi.com/retreat" : `https://www.yogagarhi.com/${currentLocale}/retreat`
           },
           {
             "@type": "ListItem",
             "position": 3,
-            "name": retreat.locationName,
-            "item": `https://www.yogagarhi.com/retreat/${retreat.locationKey}`
+            "name": isEn ? retreat.locationName : displayName,
+            "item": isEn ? `https://www.yogagarhi.com/retreat/${retreat.locationKey}` : `https://www.yogagarhi.com/${currentLocale}/retreat/${retreat.locationKey}`
           },
           {
             "@type": "ListItem",
             "position": 4,
             "name": `${retreat.durationDays} Days`,
-            "item": `https://www.yogagarhi.com/retreat/${retreat.locationKey}/${retreat.slug}`
+            "item": isEn ? `https://www.yogagarhi.com/retreat/${retreat.locationKey}/${retreat.slug}` : `https://www.yogagarhi.com/${currentLocale}/retreat/${retreat.locationKey}/${retreat.slug}`
           }
         ]
       },
@@ -216,10 +236,12 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
       <aside aria-label="Special Offer" className="bg-[#460e40] text-white py-2.5 px-4 text-center text-xs md:text-sm font-medium tracking-wide">
         <div className="container mx-auto flex items-center justify-center gap-3 flex-wrap">
           <span className="bg-amber-400 text-stone-900 text-[11px] font-bold px-2 py-0.5 rounded-full uppercase">
-            Limited Time Offer
+            {isEn ? "Limited Time Offer" : (messages?.limitedOfferBadge || "Limited Time Offer")}
           </span>
           <span>
-            Save up to <strong>${retreat.earlyBirdSaving} USD</strong> on all upcoming {retreat.locationName} retreat dates!
+            {isEn
+              ? <>Save up to <strong>${retreat.earlyBirdSaving} USD</strong> on all upcoming {retreat.locationName} retreat dates!</>
+              : (messages?.limitedOfferText || `Save up to $${retreat.earlyBirdSaving} USD on all upcoming dates!`)}
           </span>
           <a
             href={whatsappUrl}
@@ -227,7 +249,7 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 font-semibold text-amber-300 hover:text-white underline underline-offset-2 transition-colors ml-1"
           >
-            WhatsApp for Quick Booking →
+            {isEn ? "WhatsApp for Quick Booking →" : (messages?.whatsappNow || "WhatsApp for Quick Booking →")}
           </a>
         </div>
       </aside>
@@ -241,16 +263,18 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-2 text-xs md:text-sm text-stone-500 flex-wrap">
               <li>
-                <Link href="/" className="hover:text-amber-800 transition-colors">Home</Link>
+                <Link href={`${linkPrefix}/`} className="hover:text-amber-800 transition-colors">Home</Link>
               </li>
               <li>/</li>
               <li>
-                <Link href="/retreat" className="hover:text-amber-800 transition-colors">Retreats</Link>
+                <Link href={`${linkPrefix}/retreat`} className="hover:text-amber-800 transition-colors">
+                  {isEn ? "Retreats" : (messages?.breadcrumbRetreats || "Retreats")}
+                </Link>
               </li>
               <li>/</li>
               <li>
-                <Link href={`/retreat/${retreat.locationKey}`} className="hover:text-amber-800 transition-colors">
-                  {retreat.locationName}
+                <Link href={`${linkPrefix}/retreat/${retreat.locationKey}`} className="hover:text-amber-800 transition-colors">
+                  {isEn ? retreat.locationName : displayName}
                 </Link>
               </li>
               <li>/</li>
@@ -380,7 +404,7 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
                 Ubud Sanctuary Immersion
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-                {retreat.durationDays} Days & {retreat.durationNights} Nights Yoga Retreat in {retreat.locationName}
+                {retreat.durationDays} Days & {retreat.durationNights} Nights Yoga Retreat in {isEn ? retreat.locationName : displayName}
               </h2>
             </div>
             <div className="space-y-4 text-stone-700 text-base md:text-lg leading-[1.85]">
@@ -1075,14 +1099,14 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
                 Flexible Durations
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl font-bold uppercase mt-1 mb-3">
-                Explore Other Bali Retreat Options
+                Explore Other {isEn ? retreat.locationName : displayName} Retreat Options
               </h2>
               <p className="text-amber-100 text-sm sm:text-base mb-6">
                 Choose the timeframe that matches your life. Whether a quick 3-day weekend reset, our signature 7-day rejuvenation, or an immersive 14-day transformation.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="/retreat/bali/3-days"
+                  href={`${linkPrefix}/retreat/${retreat.locationKey}/3-days`}
                   className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all ${
                     retreat.durationKey === "3-days"
                       ? "bg-amber-400 text-stone-950 shadow-md"
@@ -1092,7 +1116,7 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
                   3 Days Weekend Reset
                 </Link>
                 <Link
-                  href="/retreat/bali/7-days"
+                  href={`${linkPrefix}/retreat/${retreat.locationKey}/7-days`}
                   className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all ${
                     retreat.durationKey === "7-days"
                       ? "bg-amber-400 text-stone-950 shadow-md"
@@ -1102,7 +1126,7 @@ export default function RetreatDetail({ retreat }: RetreatDetailProps) {
                   7 Days Signature Renewal
                 </Link>
                 <Link
-                  href="/retreat/bali/14-days"
+                  href={`${linkPrefix}/retreat/${retreat.locationKey}/14-days`}
                   className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all ${
                     retreat.durationKey === "14-days"
                       ? "bg-amber-400 text-stone-950 shadow-md"

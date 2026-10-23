@@ -61,6 +61,19 @@ export const TRANSLATED_PAGES: Record<string, readonly SupportedLocale[]> = {
   '/contact-us': SUPPORTED_LOCALES,
   '/apply-now': SUPPORTED_LOCALES,
   '/sunday-schedule': SUPPORTED_LOCALES,
+  '/retreat': SUPPORTED_LOCALES,
+  '/retreat/bali': SUPPORTED_LOCALES,
+  '/retreat/rishikesh': SUPPORTED_LOCALES,
+  '/retreat/varkala': SUPPORTED_LOCALES,
+  '/retreat/bali/3-days': SUPPORTED_LOCALES,
+  '/retreat/bali/7-days': SUPPORTED_LOCALES,
+  '/retreat/bali/14-days': SUPPORTED_LOCALES,
+  '/retreat/rishikesh/3-days': SUPPORTED_LOCALES,
+  '/retreat/rishikesh/7-days': SUPPORTED_LOCALES,
+  '/retreat/rishikesh/14-days': SUPPORTED_LOCALES,
+  '/retreat/varkala/3-days': SUPPORTED_LOCALES,
+  '/retreat/varkala/7-days': SUPPORTED_LOCALES,
+  '/retreat/varkala/14-days': SUPPORTED_LOCALES,
 };
 
 export function getAvailableLocalesForPath(pathname: string): readonly SupportedLocale[] {

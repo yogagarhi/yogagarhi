@@ -1,30 +1,94 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, ArrowRight, Sparkles, Check, Heart, ShieldCheck } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { RETREAT_LOCATIONS, RETREATS_DATA } from "@/constants/retreats";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: {
-    absolute: "Yoga Retreats in Bali, Rishikesh & Varkala | YogaGarhi",
-  },
-  description: "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Varkala beach. Daily yoga, sound healing and organic meals. Book now!",
-  alternates: {
-    canonical: "https://www.yogagarhi.com/retreat",
-  },
-  openGraph: {
-    title: "Yoga Retreats in Bali, Rishikesh & Varkala | YogaGarhi",
-    description: "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Varkala beach. Daily yoga, sound healing and organic meals. Book now!",
-    url: "https://www.yogagarhi.com/retreat",
-    type: "website",
-    siteName: "YogaGarhi",
-  },
-};
+interface Props {
+  params: Promise<{
+    locale: string;
+  }>;
+}
 
-export default function RetreatsHubPage() {
+export function getLocalizedLocationName(locKey: string, locName: string, locale: string): string {
+  if (locKey === 'varkala') {
+    switch (locale) {
+      case 'ru': return 'Варкала';
+      case 'ja': return 'ヴァルカラ';
+      case 'ko': return '바르칼라';
+      case 'zh': return '瓦尔卡拉';
+      default: return 'Varkala';
+    }
+  }
+  return locName;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+
+  if (locale === "en") {
+    return {
+      title: {
+        absolute: "Yoga Retreats in Bali, Rishikesh & Varkala | YogaGarhi",
+      },
+      description: "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Varkala beach. Daily yoga, sound healing and organic meals. Book now!",
+      alternates: {
+        canonical: "https://www.yogagarhi.com/retreat",
+      },
+      openGraph: {
+        title: "Yoga Retreats in Bali, Rishikesh & Varkala | YogaGarhi",
+        description: "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Varkala beach. Daily yoga, sound healing and organic meals. Book now!",
+        url: "https://www.yogagarhi.com/retreat",
+        type: "website",
+        siteName: "YogaGarhi",
+      },
+    };
+  }
+
+  let messages: any;
+  try {
+    messages = (await import(`@/messages/${locale}.json`)).default;
+  } catch (e) {
+    messages = (await import(`@/messages/en.json`)).default;
+  }
+
+  const title = messages.retreatHub?.metaTitle || "Yoga Retreats in Bali, Rishikesh & Varkala | YogaGarhi";
+  const description = messages.retreatHub?.metaDesc || "Rejuvenate with 3, 7 and 14-day yoga retreats in Ubud Bali, Rishikesh and Varkala beach. Daily yoga, sound healing and organic meals. Book now!";
+  const url = `https://www.yogagarhi.com/${locale}/retreat`;
+
+  return applyQualityGate({
+    title: {
+      absolute: title,
+    },
+    description,
+    alternates: {
+      canonical: url,
+      languages: getReviewedHreflang("/retreat"),
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      siteName: "YogaGarhi",
+    },
+  }, locale);
+}
+
+export default async function RetreatsHubPage({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const isEn = locale === "en";
+  const t = await getTranslations({ locale, namespace: "retreatHub" });
   const locations = Object.values(RETREAT_LOCATIONS);
+
+  const homeUrl = isEn ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${locale}`;
+  const retreatUrl = isEn ? "https://www.yogagarhi.com/retreat" : `https://www.yogagarhi.com/${locale}/retreat`;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -33,14 +97,14 @@ export default function RetreatsHubPage() {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Home",
-        "item": "https://www.yogagarhi.com"
+        "name": isEn ? "Home" : "Home",
+        "item": homeUrl
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Yoga Retreats",
-        "item": "https://www.yogagarhi.com/retreat"
+        "name": isEn ? "Yoga Retreats" : t("retreatsHeading"),
+        "item": retreatUrl
       }
     ]
   };
@@ -51,26 +115,32 @@ export default function RetreatsHubPage() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What durations are available for YogaGarhi yoga retreats?",
+        "name": isEn ? "What durations are available for YogaGarhi yoga retreats?" : t("faqQ1"),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We offer 3-day weekend resets, 7-day rejuvenation retreats, and 14-day deep healing wellness holidays across Ubud Bali, Rishikesh, and Varkala."
+          "text": isEn 
+            ? "We offer 3-day weekend resets, 7-day rejuvenation retreats, and 14-day deep healing wellness holidays across Ubud Bali, Rishikesh, and Varkala."
+            : t("faqA1")
         }
       },
       {
         "@type": "Question",
-        "name": "Are retreats suitable for complete beginners?",
+        "name": isEn ? "Are retreats suitable for complete beginners?" : t("faqQ2"),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, our retreats are designed for all levels from beginners to regular practitioners looking to rest, rejuvenate, and experience authentic yoga."
+          "text": isEn
+            ? "Yes, our retreats are designed for all levels from beginners to regular practitioners looking to rest, rejuvenate, and experience authentic yoga."
+            : t("faqA2")
         }
       },
       {
         "@type": "Question",
-        "name": "What is included in the retreat packages?",
+        "name": isEn ? "What is included in the retreat packages?" : t("faqQ3"),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "All packages include daily multi-style yoga, meditation, Balinese or Ayurvedic massages, 3 organic vegetarian/vegan meals daily, cultural excursions, and comfortable accommodation."
+          "text": isEn
+            ? "All packages include daily multi-style yoga, meditation, Balinese or Ayurvedic massages, 3 organic vegetarian/vegan meals daily, cultural excursions, and comfortable accommodation."
+            : t("faqA3")
         }
       }
     ]
@@ -95,33 +165,43 @@ export default function RetreatsHubPage() {
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center justify-center gap-2 text-xs md:text-sm text-muted-foreground">
               <li>
-                <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                <Link href={isEn ? "/" : `/${locale}`} className="hover:text-primary transition-colors">
+                  {isEn ? "Home" : "Home"}
+                </Link>
               </li>
               <li>/</li>
-              <li className="text-foreground font-semibold" aria-current="page">Yoga Retreats</li>
+              <li className="text-foreground font-semibold" aria-current="page">
+                {isEn ? "Yoga Retreats" : t("retreatsHeading")}
+              </li>
             </ol>
           </nav>
 
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-semibold uppercase tracking-wider mb-6">
-            ✦ Sacred Wellness Sanctuaries
+            {isEn ? "✦ Sacred Wellness Sanctuaries" : t("badge")}
           </span>
           <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl font-bold text-foreground leading-[1.15] mb-6">
-            Transformative Yoga Retreats
+            {isEn ? "Transformative Yoga Retreats" : t("heroHeading")}
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-8">
-            Escape the ordinary and immerse in healing practices, Sattvic nutrition, and spiritual nature across our three handpicked destinations in Bali, Rishikesh, and Varkala.
+            {isEn 
+              ? "Escape the ordinary and immerse in healing practices, Sattvic nutrition, and spiritual nature across our three handpicked destinations in Bali, Rishikesh, and Varkala."
+              : t("heroSub")
+            }
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
-            {locations.map((loc) => (
-              <a
-                key={loc.key}
-                href={`#${loc.key}`}
-                className="px-5 py-2 rounded-full border border-border bg-card text-foreground text-sm font-semibold hover:border-primary hover:text-primary transition-colors"
-              >
-                {loc.name} Packages ↓
-              </a>
-            ))}
+            {locations.map((loc) => {
+              const displayName = getLocalizedLocationName(loc.key, loc.name, locale);
+              return (
+                <a
+                  key={loc.key}
+                  href={`#${loc.key}`}
+                  className="px-5 py-2 rounded-full border border-border bg-card text-foreground text-sm font-semibold hover:border-primary hover:text-primary transition-colors"
+                >
+                  {isEn ? `${loc.name} Packages ↓` : `${displayName} ${t("packagesDown")}`}
+                </a>
+              );
+            })}
           </div>
         </div>
       </header>
@@ -132,22 +212,25 @@ export default function RetreatsHubPage() {
           const retreats = Object.values(RETREATS_DATA).filter(
             (r) => r.locationKey === loc.key
           );
+          const displayName = getLocalizedLocationName(loc.key, loc.name, locale);
 
           return (
             <section key={loc.key} id={loc.key} className="container mx-auto px-4 max-w-6xl scroll-mt-28">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-border/60 gap-4">
                 <div>
-                  <span className="text-xs uppercase font-bold tracking-widest text-primary">Destination</span>
+                  <span className="text-xs uppercase font-bold tracking-widest text-primary">
+                    {isEn ? "Destination" : t("destination")}
+                  </span>
                   <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-1">
-                    {loc.name} Yoga Retreats
+                    {isEn ? `${loc.name} Yoga Retreats` : `${displayName} ${t("retreatsHeading")}`}
                   </h2>
                   <p className="text-muted-foreground text-sm md:text-base mt-1">
                     {loc.description}
                   </p>
                 </div>
                 <Button asChild variant="outline" className="rounded-full w-fit">
-                  <Link href={`/retreat/${loc.key}`}>
-                    Explore All {loc.name} Packages
+                  <Link href={isEn ? `/retreat/${loc.key}` : `/${locale}/retreat/${loc.key}`}>
+                    {isEn ? `Explore All ${loc.name} Packages` : t("exploreAll", { loc: displayName })}
                     <ArrowRight className="w-4 h-4 ml-1" />
                   </Link>
                 </Button>
@@ -170,12 +253,15 @@ export default function RetreatsHubPage() {
                         />
                         <div className="absolute top-4 left-4">
                           <span className="px-3 py-1 bg-black/60 backdrop-blur-md text-white text-xs font-semibold rounded-full">
-                            {retreat.durationDays} Days / {retreat.durationNights} Nights
+                            {isEn 
+                              ? `${retreat.durationDays} Days / ${retreat.durationNights} Nights`
+                              : t("daysNights", { days: retreat.durationDays, nights: retreat.durationNights })
+                            }
                           </span>
                         </div>
                         <div className="absolute top-4 right-4">
                           <span className="px-3 py-1 bg-primary text-primary-foreground text-xs font-semibold rounded-full shadow-sm">
-                            Save {retreat.earlyBirdSaving}
+                            {isEn ? `Save ${retreat.earlyBirdSaving}` : t("save", { amount: retreat.earlyBirdSaving })}
                           </span>
                         </div>
                       </div>
@@ -203,12 +289,12 @@ export default function RetreatsHubPage() {
 
                     <div className="p-6 pt-0 border-t border-border/40 mt-auto flex items-center justify-between">
                       <div>
-                        <span className="text-xs text-muted-foreground">From</span>
+                        <span className="text-xs text-muted-foreground">{isEn ? "From" : t("from")}</span>
                         <p className="font-heading font-bold text-xl text-primary">{retreat.priceShared}</p>
                       </div>
                       <Button asChild className="rounded-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                        <Link href={`/retreat/${loc.key}/${retreat.slug}`}>
-                          View Package
+                        <Link href={isEn ? `/retreat/${loc.key}/${retreat.slug}` : `/${locale}/retreat/${loc.key}/${retreat.slug}`}>
+                          {isEn ? "View Package" : t("viewPackage")}
                           <ArrowRight className="w-4 h-4 ml-1" />
                         </Link>
                       </Button>
