@@ -1,8 +1,12 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { Calendar, ArrowRight } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import { useLocale, useTranslations } from "next-intl";
+
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 
 const blogPosts = [
@@ -39,7 +43,27 @@ const blogPosts = [
   },
 ];
 
-export default function Blog() {
+interface BlogProps {
+  locale?: string;
+}
+
+export default function Blog({ locale: propLocale }: BlogProps) {
+  let activeLocale = propLocale;
+  try {
+    const hookLocale = useLocale();
+    if (!activeLocale) activeLocale = hookLocale;
+  } catch {
+    if (!activeLocale) activeLocale = "en";
+  }
+
+  const isEn = activeLocale === "en";
+  let t = (key: string, _params?: any) => key;
+  try {
+    t = useTranslations("blogsListing");
+  } catch {
+    // fallback if no provider
+  }
+
   return (
     <>
       {/* Hero Section */}
@@ -56,10 +80,10 @@ export default function Blog() {
         </div>
         <div className="relative z-10 text-center text-primary-foreground">
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            Our Blog
+            {isEn ? "Our Blog" : t("heroTitle")}
           </h1>
           <p className="text-xl opacity-90">
-            Insights, stories, and wisdom from YogaGarhi
+            {isEn ? "Insights, stories, and wisdom from YogaGarhi" : t("heroSubtitle")}
           </p>
         </div>
       </section>
@@ -93,8 +117,11 @@ export default function Blog() {
                     {post.excerpt}
                   </p>
                   <Button variant="link" className="p-0 h-auto text-primary" asChild>
-                    <Link href={`/blogs/${post.slug}`} aria-label={`Read full guide: ${post.title}`}>
-                      Read More <ArrowRight className="w-4 h-4 ml-1" />
+                    <Link
+                      href={`/blogs/${post.slug}`}
+                      aria-label={isEn ? `Read full guide: ${post.title}` : t("guideAria", { title: post.title })}
+                    >
+                      {isEn ? "Read More" : t("readMore")} <ArrowRight className="w-4 h-4 ml-1" />
                     </Link>
                   </Button>
                 </div>

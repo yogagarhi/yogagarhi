@@ -5217,5 +5217,78 @@
       "author": "YogaGarhi Leadership Team",
       "location": "Bali, Indonesia"
     }
+  },
+  "blogsListing": {
+    "heroTitle": "Ons Blog",
+    "heroSubtitle": "Inzichten, verhalen en wijsheid van YogaGarhi",
+    "readMore": "Lees Meer",
+    "guideAria": "Lees de volledige gids: {title}",
+    "metaTitle": "Yoga Artikelen & Wijsheidsblog | YogaGarhi",
+    "metaDesc": "Ontdek authentieke artikelen over yogafilosofie, docentenopleidingen, asana-uitlijning en het ashramleven in Bali & Rishikesh."
+  },
+  "legalCommon": {
+    "disclaimerTitle": "Kennisgeving",
+    "disclaimerNotice": "Dit is een vertaling ter informatie. In geval van discrepanties is de Engelse versie doorslaggevend."
+  },
+  "privacyPolicy": {
+    "metaTitle": "Privacybeleid | YogaGarhi",
+    "metaDesc": "Lees het privacybeleid van YogaGarhi. Ontdek hoe wij jouw persoonlijke gegevens beschermen bij aanvragen en inschrijvingen voor onze opleidingen.",
+    "title": "Privacybeleid",
+    "intro": "Bij YogaGarhi hechten wij veel waarde aan jouw privacy. Dit beleid beschrijft hoe wij omgaan met gegevens die je via onze website verstrekt. Wij verzamelen uitsluitend gegevens die noodzakelijk zijn voor het verwerken van jouw opleidingsaanvragen, jouw inschrijving en het leveren van onze holistische yogadiensten.",
+    "section1Title": "Welke Gegevens Wij Verzamelen",
+    "section1Text": "Informatie zoals je naam, e-mailadres en telefoonnummer wanneer je contact- of inschrijfformulieren invult.",
+    "section2Title": "Hoe Wij Jouw Gegevens Gebruiken",
+    "section2Text": "Om met je te communiceren over de gewenste opleiding, updates te sturen over de gekozen groep en relevant ashramnieuws te delen.",
+    "section3Title": "Toestemming",
+    "section3Text": "Door onze website te gebruiken, stem je in met ons privacybeleid. Neem bij vragen gerust contact met ons op via {email}."
+  },
+  "termsConditions": {
+    "metaTitle": "Algemene Voorwaarden | YogaGarhi Ashram",
+    "metaDesc": "Bekijk de algemene voorwaarden van YogaGarhi, ashramregels, de gedragscode en de richtlijnen voor Yoga Alliance-certificering.",
+    "badge": "Ashramrichtlijnen & Studentenovereenkomst",
+    "title": "Algemene Voorwaarden",
+    "intro": "Welkom bij YogaGarhi. Door je in te schrijven voor onze opleidingen, retraites of online programma's stem je ermee in om onze ashramethos, gedragscode en gemeenschapsrichtlijnen na te leven.",
+    "section1Title": "1. Gedragscode van de Ashram (Yama & Niyama)",
+    "section1Intro": "YogaGarhi is een gewijde plek voor spirituele verdieping. Uit eerbied voor de yogische traditie zijn alle studenten en gasten verplicht het volgende na te leven:",
+    "section1Point1Title": "Middelvrije Omgeving:",
+    "section1Point1Text": "Alcohol, verdovende middelen en roken zijn op het gehele terrein van de ashram strikt verboden.",
+    "section1Point2Title": "Puur Sattvisch Dieet:",
+    "section1Point2Text": "Alle maaltijden zijn 100% vegetarisch, ayurvedisch en vers bereid. Niet-vegetarisch eten is niet toegestaan op de kamers.",
+    "section1Point3Title": "Aandachtig Respect:",
+    "section1Point3Text": "Respectvolle omgang met medesadhaka's (studenten), monastieke meesters en de lokale gewoonten in Bali en Rishikesh.",
+    "section1Point4Title": "Stilteperiodes (Mauna):",
+    "section1Point4Text": "Naleving van de vastgestelde ochtendstilte tijdens meditatie om innerlijke rust en gewaarwording te verdiepen.",
+    "section2Title": "2. Yoga Alliance Certificeringsvereisten",
+    "section2Intro": "Om te slagen en je Yoga Alliance RYT-certificaat (100, 200 of 300 Uur) te ontvangen, dienen studenten te voldoen aan:",
+    "section2Point1": "Minimaal 90% aanwezigheid bij de praktijkuren van asana, pranayama, anatomie en filosofie.",
+    "section2Point2": "Succesvolle afronding van de lespraktijk, uitlijningsdemonstraties en het eindexamen.",
+    "section2Point3": "Volledige doorneming van de voorbereidende studiemanual voorafgaand aan de start.",
+    "section3Title": "3. Gezondheid, Welzijn en Aansprakelijkheid",
+    "section3Text": "Studenten wordt geadviseerd een arts te raadplegen alvorens aan een intensieve fysieke yogatraining deel te nemen. Breng ons docententeam op de hoogte van eventuele medische aandoeningen of blessures, zodat houdingsaanpassingen kunnen worden geboden. Deelname vindt geheel vrijwillig en op eigen tempo plaats.",
+    "section4Title": "4. Toepasselijk Recht & Vragen",
+    "section4Text": "Voor verduidelijking over ashramregels of certificeringscriteria kun je contact opnemen met onze administratie via {email}.",
+    "contactBtn": "Neem Contact Op met Ons Team"
+  },
+  "refundPolicy": {
+    "metaTitle": "Restitutie- & Annuleringsbeleid | YogaGarhi",
+    "metaDesc": "Transparant restitutie-, aanbetalings- en omboekingsbeleid van YogaGarhi voor yogadocentenopleidingen en retraites in Bali en Rishikesh.",
+    "badge": "Zekerheids- & Flexibiliteitsgarantie",
+    "title": "Restitutie- & Omboekingsbeleid",
+    "intro": "Wij begrijpen dat levensomstandigheden onverwacht kunnen wijzigen. Bij YogaGarhi hanteren we heldere, flexibele voorwaarden om jouw investering in je spirituele reis te waarborgen.",
+    "highlight1Title": "100% Overdraagbaar",
+    "highlight1Text": "Jouw aanbetaling is binnen 12 maanden 100% overdraagbaar naar een toekomstige groep of andere locatie (Bali / Rishikesh).",
+    "highlight2Title": "12 Maanden Geldigheid",
+    "highlight2Text": "Moet je jouw data verzetten? Je hebt vanaf de oorspronkelijke datum 1 vol jaar om deel te nemen aan jouw opleiding of retraite.",
+    "highlight3Title": "Medische Noodgevallen",
+    "highlight3Text": "Bij aantoonbare medische of reisnoodsituaties wordt voorrang gegeven aan kosteloze omboeking.",
+    "section1Title": "1. Aanbetaling & Plaatsreservering",
+    "section1Text": "Om jouw opleidingsplek en accommodatie te garanderen, is bij aanmelding een aanbetaling van $250 USD (of equivalent) vereist. Hierdoor kan onze ashram jouw kamer reserveren, lesmateriaal voorbereiden en docentenmentoren toewijzen.",
+    "section2Title": "2. Verplaatsen van Data & Groepen",
+    "section2Text": "Mocht je verhinderd zijn voor jouw startdatum, dan kun je kosteloos omboeken naar een latere groep binnen 12 maanden, mits je onze toelatingsafdeling minimaal 15 dagen voor aanvang op de hoogte stelt.",
+    "section3Title": "3. Betalingsvoorwaarden Restantbedrag",
+    "section3Text": "Het resterende opleidingsbedrag dient bij aankomst op de ashram tijdens de introductiedag te worden voldaan (of vooraf via bankoverschrijving / creditcardlink). Zodra een opleiding is gestart en de student is ingecheckt, zijn lesgelden en verblijfskosten niet-restitueerbaar, aangezien middelen en kamers definitief zijn vastgelegd.",
+    "section4Title": "4. Vragen & Ondersteuning bij Toelating",
+    "section4Text": "Voor vragen over het verplaatsen van data of betalingsregelingen is ons toelatingsteam dagelijks bereikbaar via {email} of WhatsApp op {phone}.",
+    "contactBtn": "Contacteer Toelatingsdesk"
   }
 }

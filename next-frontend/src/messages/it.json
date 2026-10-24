@@ -5217,5 +5217,78 @@
       "author": "YogaGarhi Leadership Team",
       "location": "Bali, Indonesia"
     }
+  },
+  "blogsListing": {
+    "heroTitle": "Il Nostro Blog",
+    "heroSubtitle": "Intuizioni, storie e saggezza da YogaGarhi",
+    "readMore": "Leggi di Più",
+    "guideAria": "Leggi la guida completa: {title}",
+    "metaTitle": "Articoli di Yoga & Blog di Saggezza | YogaGarhi",
+    "metaDesc": "Esplora articoli autentici sulla filosofia dello yoga, formazione insegnanti, allineamento asana e vita in ashram a Bali e Rishikesh."
+  },
+  "legalCommon": {
+    "disclaimerTitle": "Avviso Importante",
+    "disclaimerNotice": "Questa è una traduzione fornita per comodità. In caso di discrepanze, prevarrà la versione inglese."
+  },
+  "privacyPolicy": {
+    "metaTitle": "Informativa sulla Privacy | YogaGarhi",
+    "metaDesc": "Leggi l'informativa sulla privacy di YogaGarhi. Scopri come proteggiamo i tuoi dati personali durante le richieste e le iscrizioni ai corsi.",
+    "title": "Informativa sulla Privacy",
+    "intro": "A YogaGarhi, la tutela della tua privacy è fondamentale. La presente informativa descrive come gestiamo le informazioni fornite tramite il nostro sito web. Raccogliamo esclusivamente i dati necessari per gestire le tue richieste di informazioni, formalizzare l'iscrizione ed erogare i nostri servizi olistici di yoga.",
+    "section1Title": "Quali Dati Raccogliamo",
+    "section1Text": "Dati personali quali nome, indirizzo email e numero telefonico forniti al momento della compilazione dei moduli di contatto o prenotazione.",
+    "section2Title": "Come Li Utilizziamo",
+    "section2Text": "Per comunicare con te in merito al percorso formativo richiesto, fornirti aggiornamenti sulla sessione selezionata e condividere le notizie rilevanti dall'ashram.",
+    "section3Title": "Consenso",
+    "section3Text": "Utilizzando il nostro sito web, acconsenti alla nostra informativa sulla privacy. Per qualsiasi domanda, contattaci all'indirizzo {email}."
+  },
+  "termsConditions": {
+    "metaTitle": "Termini e Condizioni | Ashram YogaGarhi",
+    "metaDesc": "Consulta i termini e condizioni di YogaGarhi, il regolamento dell'ashram, il codice etico e le linee guida per la certificazione Yoga Alliance.",
+    "badge": "Linee Guida dell'Ashram & Accordo dello Studente",
+    "title": "Termini e Condizioni",
+    "intro": "Benvenuto a YogaGarhi. Con l'iscrizione ai nostri corsi, ritiri o programmi online, ti impegni a rispettare i valori del nostro ashram, il codice di condotta e le linee guida della nostra comunità.",
+    "section1Title": "1. Codice di Condotta dell'Ashram (Yama & Niyama)",
+    "section1Intro": "YogaGarhi è un santuario consacrato all'apprendimento spirituale. In segno di profondo rispetto per la tradizione yogica, tutti gli studenti e gli ospiti sono tenuti a osservare:",
+    "section1Point1Title": "Ambiente Senza Sostanze:",
+    "section1Point1Text": "Alcol, sostanze stupefacenti e fumo sono severamente vietati all'interno di tutti gli spazi dell'ashram.",
+    "section1Point2Title": "Alimentazione Satvica Pura:",
+    "section1Point2Text": "Tutti i pasti serviti sono al 100% vegetariani, ayurvedici e preparati freschi ogni giorno. Non è consentito introdurre cibi non vegetariani nelle camere.",
+    "section1Point3Title": "Rispetto Consapevole:",
+    "section1Point3Text": "Interazione rispettosa e garbata con i compagni sadhaka (studenti), i maestri monastici e le tradizioni delle comunità locali di Bali e Rishikesh.",
+    "section1Point4Title": "Periodi di Silenzio (Mauna):",
+    "section1Point4Text": "Osservanza delle ore mattutine di meditazione nel silenzio per favorire il raccoglimento interiore.",
+    "section2Title": "2. Requisiti di Certificazione Yoga Alliance",
+    "section2Intro": "Per conseguire il diploma e ricevere il Certificato Yoga Alliance RYT (Registered Yoga Teacher) (100, 200 o 300 Ore), gli studenti devono soddisfare:",
+    "section2Point1": "Frequenza minima del 90% delle ore di contatto pratiche di asana, pranayama, anatomia e filosofia.",
+    "section2Point2": "Superamento del tirocinio di insegnamento, delle dimostrazioni di allineamento e della valutazione finale.",
+    "section2Point3": "Lettura completa del manuale di studio preparatorio prima dell'avvio del corso.",
+    "section3Title": "3. Salute, Benessere e Responsabilità",
+    "section3Text": "Si raccomanda agli studenti di consultare il proprio medico prima di intraprendere una formazione fisica intensiva di yoga. Si prega di informare il corpo docente in merito a condizioni mediche pregresse o lesioni, consentendo l'adattamento delle posture. Gli studenti partecipano volontariamente e secondo il proprio ritmo fisico.",
+    "section4Title": "4. Legge Applicabile e Informazioni",
+    "section4Text": "Per qualsiasi chiarimento in merito al regolamento dell'ashram o ai requisiti di certificazione, il nostro team amministrativo è disponibile all'indirizzo {email}.",
+    "contactBtn": "Contatta il Nostro Team"
+  },
+  "refundPolicy": {
+    "metaTitle": "Politica di Rimborso e Cancellazione | YogaGarhi",
+    "metaDesc": "Politica trasparente di rimborso, acconto di prenotazione e trasferimento sessione per corsi di formazione insegnanti yoga e ritiri a Bali e Rishikesh.",
+    "badge": "Garanzia di Serenità e Flessibilità",
+    "title": "Politica di Rimborso e Trasferimento Sessione",
+    "intro": "Sappiamo che gli imprevisti della vita possono accadere. A YogaGarhi offriamo condizioni di prenotazione trasparenti e flessibili, studiate per tutelare il tuo investimento nel tuo cammino spirituale.",
+    "highlight1Title": "100% Trasferibile",
+    "highlight1Text": "Il tuo acconto è trasferibile al 100% a qualsiasi sessione futura o a un'altra sede (Bali / Rishikesh) nell'arco di 12 mesi.",
+    "highlight2Title": "Validità 12 Mesi",
+    "highlight2Text": "Hai bisogno di riprogrammare? Hai a disposizione 1 anno intero dalla data originaria per partecipare al tuo corso o ritiro.",
+    "highlight3Title": "Emergenze Mediche",
+    "highlight3Text": "In presenza di documentate emergenze sanitarie o di viaggio impreviste, viene garantita la riprogrammazione prioritaria senza alcun costo aggiuntivo.",
+    "section1Title": "1. Acconto di Prenotazione e Assegnazione del Posto",
+    "section1Text": "Per confermare il tuo posto e l'alloggio nel Corso di Formazione Insegnanti Yoga o Ritiro prescelto, è richiesto un acconto di $250 USD (o importo equivalente) al momento dell'iscrizione. Ciò consente al nostro ashram di riservare la camera, predisporre i materiali didattici e assegnare i mentori docenti.",
+    "section2Title": "2. Spostamento Date e Riprogrammazione Sessione",
+    "section2Text": "Se non puoi partecipare nella data programmata, puoi posticipare la partecipazione a qualsiasi sessione futura entro 12 mesi senza alcuna penale, comunicandolo alla segreteria ammissioni almeno 15 giorni prima dell'inizio del corso.",
+    "section3Title": "3. Modalità di Saldo della Quota",
+    "section3Text": "Il saldo residuo della quota di partecipazione è dovuto all'arrivo presso l'ashram durante la giornata di orientamento (o anticipatamente tramite bonifico bancario / link con carta). Una volta iniziato il corso ed effettuato il check-in, i costi di iscrizione e vitto/alloggio non sono rimborsabili in quanto le risorse e le stanze sono state irrevocabilmente impegnate.",
+    "section4Title": "4. Domande e Supporto Ammissioni",
+    "section4Text": "Per qualsiasi dubbio in merito a cambi sessione o rateizzazioni personalizzate, il nostro ufficio ammissioni è a disposizione quotidianamente via email a {email} o tramite WhatsApp al {phone}.",
+    "contactBtn": "Contatta l'Ufficio Ammissioni"
   }
 }

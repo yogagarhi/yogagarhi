@@ -5217,5 +5217,78 @@
       "author": "YogaGarhi Leadership Team",
       "location": "Bali, Indonesia"
     }
+  },
+  "blogsListing": {
+    "heroTitle": "Notre Blog",
+    "heroSubtitle": "Perspectives, récits et sagesse de YogaGarhi",
+    "readMore": "Lire la Suite",
+    "guideAria": "Lire le guide complet : {title}",
+    "metaTitle": "Articles de Yoga & Blog de Sagesse | YogaGarhi",
+    "metaDesc": "Découvrez des articles authentiques sur la philosophie du yoga, la formation de professeurs, l'alignement des asanas et la vie en ashram à Bali & Rishikesh."
+  },
+  "legalCommon": {
+    "disclaimerTitle": "Avis Important",
+    "disclaimerNotice": "Ceci est une traduction fournie à titre indicatif. En cas de divergence, la version anglaise prévaudra."
+  },
+  "privacyPolicy": {
+    "metaTitle": "Politique de Confidentialité | YogaGarhi",
+    "metaDesc": "Consultez la politique de confidentialité de YogaGarhi. Découvrez comment nous protégeons vos données personnelles lors de vos demandes et inscriptions.",
+    "title": "Politique de Confidentialité",
+    "intro": "Chez YogaGarhi, la protection de votre vie privée est essentielle. La présente politique décrit la manière dont nous traitons les informations que vous nous transmettez via notre site internet. Nous ne recueillons que les données nécessaires au traitement de vos demandes de formation, à votre inscription et à la fourniture de nos services holistiques de yoga.",
+    "section1Title": "Données Recueillies",
+    "section1Text": "Des informations telles que votre nom, votre adresse e-mail et votre numéro de téléphone lorsque vous remplissez nos formulaires de contact ou de réservation.",
+    "section2Title": "Utilisation des Données",
+    "section2Text": "Pour échanger avec vous au sujet de la formation souhaitée, vous transmettre les informations relatives à votre session et vous communiquer les actualités de l'ashram.",
+    "section3Title": "Consentement",
+    "section3Text": "En navigant sur notre site, vous consentez à notre politique de confidentialité. Pour toute question, veuillez nous contacter à l'adresse {email}."
+  },
+  "termsConditions": {
+    "metaTitle": "Conditions Générales | Ashram YogaGarhi",
+    "metaDesc": "Consultez les conditions générales de YogaGarhi, les règles de vie à l'ashram, le code de conduite et les critères de certification Yoga Alliance.",
+    "badge": "Règlement de l'Ashram & Engagement de l'Élève",
+    "title": "Conditions Générales",
+    "intro": "Bienvenue chez YogaGarhi. En vous inscrivant à nos formations, retraites ou cursus en ligne, vous vous engagez à respecter l'éthique de notre ashram, son code de conduite et les règles de vie collective.",
+    "section1Title": "1. Code de Conduite de l'Ashram (Yama & Niyama)",
+    "section1Intro": "YogaGarhi est un sanctuaire consacré à l'apprentissage spirituel. Dans le respect des nobles traditions du yoga, l'ensemble des élèves et résidents sont tenus de respecter :",
+    "section1Point1Title": "Environnement Sans Substance :",
+    "section1Point1Text": "L'alcool, les drogues et le tabac sont rigoureusement interdits dans toute l'enceinte de l'ashram.",
+    "section1Point2Title": "Alimentation Satvique Pure :",
+    "section1Point2Text": "Tous les repas servis sont 100% végétariens, ayurvédiques et préparés avec des produits frais. Aucune denrée non végétarienne n'est admise dans les chambres.",
+    "section1Point3Title": "Respect Bienveillant :",
+    "section1Point3Text": "Une attitude courtoise et attentive envers les condisciples sadhakas (élèves), les maîtres enseignants et les traditions des communautés locales de Bali et Rishikesh.",
+    "section1Point4Title": "Périodes de Silence (Mauna) :",
+    "section1Point4Text": "Le respect des plages horaires de méditation silencieuse matinale prescrites pour approfondir le recueillement intérieur.",
+    "section2Title": "2. Exigences de Certification Yoga Alliance",
+    "section2Intro": "Pour obtenir votre diplôme et recevoir votre certificat Yoga Alliance RYT (Registered Yoga Teacher) (100, 200 ou 300 Heures), les conditions suivantes doivent être satisfaites :",
+    "section2Point1": "Une présence minimale de 90% aux heures de cours effectives d'asana, pranayama, anatomie et philosophie.",
+    "section2Point2": "La validation de l'épreuve pratique d'enseignement, des démonstrations d'alignement et de l'évaluation terminale.",
+    "section2Point3": "La lecture intégrale du manuel d'études préparatoires fourni en amont de la formation.",
+    "section3Title": "3. Santé, Bien-Être et Responsabilité",
+    "section3Text": "Il est vivement conseillé aux élèves de solliciter un avis médical avant d'entamer une pratique physique intensive de yoga. Merci de signaler à l'équipe pédagogique tout antécédent médical ou traumatisme afin que des variations adaptées puissent vous être proposées. Chaque élève pratique de manière volontaire et à l'écoute de son propre rythme physique.",
+    "section4Title": "4. Droit Applicable et Renseignements",
+    "section4Text": "Pour toute précision concernant le règlement de l'ashram ou les modalités d'évaluation, veuillez vous rapprocher de notre service administratif par e-mail à {email}.",
+    "contactBtn": "Contacter Notre Équipe"
+  },
+  "refundPolicy": {
+    "metaTitle": "Politique de Remboursement et d'Annulation | YogaGarhi",
+    "metaDesc": "Conditions transparentes de remboursement, d'acompte de réservation et de report de session pour les formations de yoga et retraites à Bali et Rishikesh.",
+    "badge": "Garantie de Sérénité et de Flexibilité",
+    "title": "Politique de Remboursement et de Report de Session",
+    "intro": "Nous savons que les aléas de l'existence peuvent survenir à tout moment. Chez YogaGarhi, nous proposons des conditions de réservation transparentes et souples, conçues pour préserver votre investissement dans votre cheminement spirituel.",
+    "highlight1Title": "100% Transférable",
+    "highlight1Text": "Votre acompte est transférable à 100% sur toute session ultérieure ou sur un autre lieu de formation (Bali / Rishikesh) dans un délai de 12 mois.",
+    "highlight2Title": "Validité de 12 Mois",
+    "highlight2Text": "Besoin de reporter ? Vous disposez d'une année complète à compter de la date initiale pour effectuer votre formation ou votre retraite.",
+    "highlight3Title": "Urgences Médicales",
+    "highlight3Text": "En présence d'un cas de force majeure médicale ou de voyage dûment attesté, une reprogrammation prioritaire est offerte sans aucun frais.",
+    "section1Title": "1. Acompte de Réservation et Attribution de Place",
+    "section1Text": "Afin de garantir votre place et votre hébergement au sein de la formation de professeur ou de la retraite choisie, un acompte de $250 USD (ou contre-valeur) est requis lors de l'inscription. Cela permet à notre ashram de bloquer votre chambre, de préparer vos supports pédagogiques et de vous assigner un tuteur référent.",
+    "section2Title": "2. Report de Session et Modification de Dates",
+    "section2Text": "Si vous ne pouvez vous joindre à la promotion prévue, vous avez la possibilité de reporter votre venue sur n'importe quelle session dans les 12 mois sans pénalité, sous réserve d'en avertir notre bureau des admissions au minimum 15 jours avant l'ouverture du cursus.",
+    "section3Title": "3. Modalités de Règlements du Solde",
+    "section3Text": "Le reliquat des frais de formation est exigible à l'arrivée à l'ashram lors de la journée d'orientation (ou en amont par virement bancaire / lien sécurisé de carte bancaire). Dès lors que la formation a débuté et que l'élève a pris possession de sa chambre, les droits d'enseignement et l'hébergement ne font l'objet d'aucun remboursement, les ressources et logements ayant été définitivement engagés.",
+    "section4Title": "4. Questions et Assistance Inscriptions",
+    "section4Text": "Pour toute question relative aux reports de session ou aux facilités de paiement, notre équipe des admissions est joignable au quotidien par e-mail à {email} ou par WhatsApp au {phone}.",
+    "contactBtn": "Joindre les Admissions"
   }
 }

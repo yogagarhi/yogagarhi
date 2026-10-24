@@ -5217,5 +5217,78 @@
       "author": "YogaGarhi Leadership Team",
       "location": "Bali, Indonesia"
     }
+  },
+  "blogsListing": {
+    "heroTitle": "官方博客",
+    "heroSubtitle": "来自YogaGarhi的瑜伽智慧与真实故事",
+    "readMore": "阅读全文",
+    "guideAria": "阅读完整指南: {title}",
+    "metaTitle": "瑜伽文章与智慧博客 | YogaGarhi",
+    "metaDesc": "探索有关瑜伽哲学、导师培训、体式正位以及巴厘岛和瑞诗凯诗静修中心生活的深度文章。"
+  },
+  "legalCommon": {
+    "disclaimerTitle": "重要声明",
+    "disclaimerNotice": "本译文仅供参考。如有任何歧义或不一致，概以英文版本为准。"
+  },
+  "privacyPolicy": {
+    "metaTitle": "隐私政策 | YogaGarhi",
+    "metaDesc": "了解YogaGarhi的隐私政策。了解我们在您咨询或报名参加瑜伽导师培训课程时如何保护您的个人信息。",
+    "title": "隐私政策",
+    "intro": "在YogaGarhi，保护您的个人隐私是我们的核心承诺。本政策阐明了我们如何处理您通过本网站提供的信息。我们仅收集处理课程咨询、入学注册及提供整体瑜伽教学服务所必需的资料。",
+    "section1Title": "我们收集的信息",
+    "section1Text": "当您填写咨询或预订表单时提供的姓名、电子邮箱及联系电话等个人资料。",
+    "section2Title": "信息的使用方式",
+    "section2Text": "用于就您所咨询的培训课程进行沟通、提供所选班级的最新开课信息，以及分享静修中心的最新动态。",
+    "section3Title": "用户同意与咨询",
+    "section3Text": "使用本网站即表示您同意我们的隐私政策。如有任何疑问，请随时通过 {email} 与我们联系。"
+  },
+  "termsConditions": {
+    "metaTitle": "条款与细则 | YogaGarhi 静修中心",
+    "metaDesc": "查阅YogaGarhi条款与细则、静修中心规程、行为准则及Yoga Alliance认证毕业指南。",
+    "badge": "静修中心守则 ＆ 学员协议",
+    "title": "条款与细则",
+    "intro": "欢迎来到YogaGarhi。报名参加我们的课程、静修营或在线项目，即表示您同意遵守我们静修中心的核心精神、行为规范及社区公约。",
+    "section1Title": "1. 静修中心行为准则 (Yama & Niyama)",
+    "section1Intro": "YogaGarhi是一座神圣的心灵求知圣所。为尊重古老纯正的瑜伽传统，所有学员及访客均须严格遵守以下规约：",
+    "section1Point1Title": "无烟无酒纯净环境：",
+    "section1Point1Text": "静修中心全域范围内严禁饮酒、吸烟及使用任何违禁药物。",
+    "section1Point2Title": "纯正悦性饮食 (Satvic)：",
+    "section1Point2Text": "每日供应的所有餐食均为100%纯素阿育吠陀新鲜料理。客房内严禁携带非素食食品。",
+    "section1Point3Title": "真诚正念互敬：",
+    "section1Point3Text": "以谦逊尊重之心对待同修学友 (Sadhakas)、授课导师，并尊重巴厘岛与瑞诗凯诗当地的民俗信仰。",
+    "section1Point4Title": "静默修习时段 (Mauna)：",
+    "section1Point4Text": "严格遵守每日晨间冥想的禁语守默时间，以深化内在觉知。",
+    "section2Title": "2. Yoga Alliance 全球认证毕业标准",
+    "section2Intro": "顺利结业并获得 Yoga Alliance RYT (注册瑜伽教师) 证书（100、200或300小时），学员必须达成：",
+    "section2Point1": "在体式、呼吸控制法、解剖学与哲学实践课中出勤率不低于90%。",
+    "section2Point2": "顺利完成教学实习试讲、正位手法展示及终期考核。",
+    "section2Point3": "在开课前完整阅读并掌握基础预备教材内容。",
+    "section3Title": "3. 健康安全与自身责任",
+    "section3Text": "鉴于导师培训的高强度体能训练，建议学员在开课前咨询医师。如有既往病史或运动损伤，请务必提前告知导师团队，以便为您定制安全的体式变体。修习须本着量力而行、自我负责的原则进行。",
+    "section4Title": "4. 适用准则与联系支持",
+    "section4Text": "如对静修中心院规或认证要求有任何疑问，请随时联系教务管理团队：{email}。",
+    "contactBtn": "联系教务团队"
+  },
+  "refundPolicy": {
+    "metaTitle": "退款与改期政策 | YogaGarhi",
+    "metaDesc": "YogaGarhi为巴厘岛和瑞诗凯诗瑜伽导师培训及静修营提供透明、灵活的定金与转班政策。",
+    "badge": "安心保障 ＆ 灵活改期承诺",
+    "title": "退款与班期调换政策",
+    "intro": "我们深知生活中难免出现不可预见的变动。在YogaGarhi，我们提供透明而灵活的预订条款，全方位守护您对心灵成长之旅的投入。",
+    "highlight1Title": "100%支持名额顺延",
+    "highlight1Text": "您支付的定金在12个月内100%有效，可自由顺延至未来任意班期或调换校区（巴厘岛 / 瑞诗凯诗）。",
+    "highlight2Title": "12个月超长有效期",
+    "highlight2Text": "需要调整行程？自原定开课日起，您整整拥有1年时间安排入学参加培训或静修。",
+    "highlight3Title": "医疗紧急情况保障",
+    "highlight3Text": "如遇有医疗凭证或行程受阻的突发不可抗力，我们提供零手续费优先改期支持。",
+    "section1Title": "1. 预订定金与名额席位锁定",
+    "section1Text": "为确保您在所选导师培训课程或静修营中的教学席位与专属客房，报名时需支付 $250 USD（或等值货币）定金。此费用用于静修中心提前保留房间、印制教学手册及分配专属教学导师。",
+    "section2Title": "2. 班期调整与开课改期",
+    "section2Text": "若您无法按原计划报到，只需在开课前至少15天通知招生办公室，即可在12个月内免费改期至后续任意班次，无需承担任何违约罚金。",
+    "section3Title": "3. 尾款支付与退改细则",
+    "section3Text": "课程尾款于开学迎新日当天在静修中心现场支付（或提前通过银行电汇 / 信用卡链接结清）。一旦课程开班且学员完成入住，由于房间及教学师资资源已完成锁定，学费及住宿费恕不退还。",
+    "section4Title": "4. 疑问咨询与招生支持",
+    "section4Text": "有关改期安排或个性化分期方案，我们的招生顾问每日均可通过电邮 {email} 或 WhatsApp {phone} 为您提供贴心解答。",
+    "contactBtn": "联系招生办公室"
   }
 }

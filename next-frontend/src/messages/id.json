@@ -5217,5 +5217,78 @@
       "author": "YogaGarhi Leadership Team",
       "location": "Bali, Indonesia"
     }
+  },
+  "blogsListing": {
+    "heroTitle": "Blog Kami",
+    "heroSubtitle": "Wawasan, kisah, dan kearifan dari YogaGarhi",
+    "readMore": "Baca Selengkapnya",
+    "guideAria": "Baca panduan lengkap: {title}",
+    "metaTitle": "Artikel Yoga & Blog Kearifan | YogaGarhi",
+    "metaDesc": "Jelajahi artikel otentik tentang filosofi yoga, pelatihan guru, alignment asana, dan kehidupan ashram di Bali & Rishikesh."
+  },
+  "legalCommon": {
+    "disclaimerTitle": "Pemberitahuan",
+    "disclaimerNotice": "Ini adalah terjemahan untuk kemudahan informasi. Jika terdapat ketidaksesuaian, versi bahasa Inggris yang berlaku."
+  },
+  "privacyPolicy": {
+    "metaTitle": "Kebijakan Privasi | YogaGarhi",
+    "metaDesc": "Baca kebijakan privasi YogaGarhi. Pelajari bagaimana kami melindungi data pribadi Anda saat mendaftar program pelatihan yoga kami.",
+    "title": "Kebijakan Privasi",
+    "intro": "Di YogaGarhi, privasi Anda sangat penting bagi kami. Kebijakan ini menjelaskan bagaimana kami mengelola informasi yang Anda berikan melalui situs web kami. Kami hanya mengumpulkan data yang diperlukan untuk memproses pertanyaan kursus, pendaftaran, dan penyediaan layanan yoga holistik kami.",
+    "section1Title": "Data yang Kami Kumpulkan",
+    "section1Text": "Informasi seperti nama, alamat email, dan nomor telepon Anda saat mengisi formulir kontak atau pemesanan.",
+    "section2Title": "Cara Kami Menggunakannya",
+    "section2Text": "Untuk berkomunikasi dengan Anda mengenai pelatihan yang diminta, pembaruan angkatan yang Anda pilih, dan kabar relevan dari ashram.",
+    "section3Title": "Persetujuan",
+    "section3Text": "Dengan menggunakan situs kami, Anda menyetujui kebijakan privasi kami. Jika Anda memiliki pertanyaan, silakan hubungi kami di {email}."
+  },
+  "termsConditions": {
+    "metaTitle": "Syarat & Ketentuan | Ashram YogaGarhi",
+    "metaDesc": "Tinjau syarat dan ketentuan YogaGarhi, peraturan ashram, kode etik, dan panduan kelulusan sertifikasi Yoga Alliance.",
+    "badge": "Panduan Ashram & Perjanjian Siswa",
+    "title": "Syarat & Ketentuan",
+    "intro": "Selamat datang di YogaGarhi. Dengan mendaftar di kursus, retreat, atau program online kami, Anda setuju untuk menjunjung tinggi etos ashram, kode etik, dan panduan komunitas kami.",
+    "section1Title": "1. Kode Etik Ashram (Yama & Niyama)",
+    "section1Intro": "YogaGarhi adalah tempat suci pembelajaran spiritual. Untuk menghormati tradisi yogik, seluruh siswa dan tamu diwajibkan mematuhi:",
+    "section1Point1Title": "Lingkungan Bebas Zat Berbahaya:",
+    "section1Point1Text": "Alkohol, obat-obatan terlarang, dan merokok dilarang keras di seluruh area ashram.",
+    "section1Point2Title": "Diet Satvik Murni:",
+    "section1Point2Text": "Semua makanan yang disajikan 100% vegetarian, berbasis Ayurveda, dan disiapkan segar. Makanan non-vegetarian tidak diperkenankan di dalam kamar.",
+    "section1Point3Title": "Rasa Hormat Penuh Kesadaran:",
+    "section1Point3Text": "Interaksi yang penuh hormat dengan sesama sadhaka (siswa), guru monastik, dan adat istiadat masyarakat lokal di Bali dan Rishikesh.",
+    "section1Point4Title": "Periode Keheningan (Mauna):",
+    "section1Point4Text": "Menjalankan jam-jam keheningan meditasi pagi yang telah ditentukan untuk memperdalam kesadaran batin.",
+    "section2Title": "2. Persyaratan Sertifikasi Yoga Alliance",
+    "section2Intro": "Untuk lulus dan menerima Sertifikat Yoga Alliance RYT (Registered Yoga Teacher) (100, 200, atau 300 Jam), siswa harus memenuhi:",
+    "section2Point1": "Kehadiran minimal 90% pada jam kontak praktis asana, pranayama, anatomi, dan filosofi.",
+    "section2Point2": "Menyelesaikan praktikum mengajar, demonstrasi alignment, dan evaluasi akhir.",
+    "section2Point3": "Menyelesaikan bacaan buku panduan studi persiapan sebelum kursus dimulai.",
+    "section3Title": "3. Kesehatan, Kebugaran & Tanggung Jawab",
+    "section3Text": "Siswa disarankan untuk berkonsultasi dengan dokter sebelum menjalani pelatihan fisik yoga yang intensif. Harap beri tahu tim pengajar kami mengenai kondisi medis atau cedera yang sudah ada sebelumnya agar modifikasi postur yang tepat dapat diberikan. Siswa berpartisipasi secara sukarela sesuai kemampuan fisik masing-masing.",
+    "section4Title": "4. Hukum yang Mengatur & Pertanyaan",
+    "section4Text": "Untuk klarifikasi mengenai peraturan ashram atau kriteria sertifikasi, silakan hubungi tim administrasi kami di {email}.",
+    "contactBtn": "Hubungi Tim Kami"
+  },
+  "refundPolicy": {
+    "metaTitle": "Kebijakan Pengembalian Dana & Pembatalan | YogaGarhi",
+    "metaDesc": "Kebijakan pengembalian dana, deposit, dan pemindahan angkatan yang transparan dari YogaGarhi untuk kursus guru yoga dan retreat di Bali dan Rishikesh.",
+    "badge": "Jaminan Ketenangan & Fleksibilitas",
+    "title": "Kebijakan Pengembalian Dana & Pemindahan Angkatan",
+    "intro": "Kami memahami bahwa keadaan hidup dapat berubah. Di YogaGarhi, kami menawarkan ketentuan pemesanan yang transparan dan fleksibel untuk melindungi investasi perjalanan spiritual Anda.",
+    "highlight1Title": "100% Dapat Dipindahtangankan",
+    "highlight1Text": "Deposit Anda 100% dapat dipindahkan ke angkatan mendatang atau lokasi lain (Bali / Rishikesh) dalam kurun waktu 12 bulan.",
+    "highlight2Title": "Masa Berlaku 12 Bulan",
+    "highlight2Text": "Perlu menjadwalkan ulang? Anda memiliki waktu 1 tahun penuh dari tanggal awal untuk menghadiri pelatihan atau retreat Anda.",
+    "highlight3Title": "Keadaan Darurat Medis",
+    "highlight3Text": "Dalam kasus darurat kesehatan atau perjalanan yang tidak terduga dengan bukti dokumen, penjadwalan ulang prioritas diberikan tanpa biaya tambahan.",
+    "section1Title": "1. Deposit Pemesanan & Reservasi Tempat",
+    "section1Text": "Untuk mengamankan tempat dan akomodasi Anda dalam Pelatihan Guru Yoga atau Retreat pilihan Anda, deposit sebesar $250 USD (atau setara) diperlukan pada saat pendaftaran. Ini memungkinkan ashram kami memesan kamar Anda, menyiapkan materi pembelajaran, dan menugaskan mentor pengajar.",
+    "section2Title": "2. Penjadwalan Ulang Angkatan & Perubahan Tanggal",
+    "section2Text": "Jika Anda tidak dapat bergabung pada tanggal mulai yang dijadwalkan, Anda dapat menjadwalkan ulang ke angkatan berikutnya dalam waktu 12 bulan tanpa penalti, asalkan Anda memberi tahu kantor penerimaan kami setidaknya 15 hari sebelum tanggal mulai kursus.",
+    "section3Title": "3. Ketentuan Pembayaran Sisa Biaya",
+    "section3Text": "Sisa biaya kursus harus dibayarkan setibanya di ashram pada hari orientasi (atau melalui transfer bank / tautan kartu kredit sebelum kedatangan). Setelah kursus dimulai dan siswa melakukan check-in, biaya pelatihan dan akomodasi tidak dapat dikembalikan karena alokasi sumber daya dan kamar telah dikomitmenkan.",
+    "section4Title": "4. Pertanyaan & Layanan Pendaftaran",
+    "section4Text": "Untuk pertanyaan mengenai penjadwalan ulang angkatan atau rencana pembayaran khusus, tim pendaftaran kami siap membantu setiap hari melalui email di {email} atau WhatsApp di {phone}.",
+    "contactBtn": "Hubungi Meja Pendaftaran"
   }
 }

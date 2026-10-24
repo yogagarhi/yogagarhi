@@ -5217,5 +5217,78 @@
       "author": "YogaGarhi Leadership Team",
       "location": "Bali, Indonesia"
     }
+  },
+  "blogsListing": {
+    "heroTitle": "Our Blog",
+    "heroSubtitle": "Insights, stories, and wisdom from YogaGarhi",
+    "readMore": "Read More",
+    "guideAria": "Read full guide: {title}",
+    "metaTitle": "Yoga Articles & Wisdom Blog",
+    "metaDesc": "Explore authentic articles on yoga philosophy, teacher training, asana alignment, and ashram life in Bali & Rishikesh. Read our latest insights!"
+  },
+  "legalCommon": {
+    "disclaimerTitle": "Notice",
+    "disclaimerNotice": "This is a translation for convenience. In case of any discrepancy, the English version shall prevail."
+  },
+  "privacyPolicy": {
+    "metaTitle": "Privacy Policy | YogaGarhi",
+    "metaDesc": "Read YogaGarhi's privacy policy. Learn how we protect your personal information when you inquire or enroll in our yoga training courses.",
+    "title": "Privacy Policy",
+    "intro": "At YogaGarhi, your privacy is important to us. This policy describes how we handle any information you provide through our website. We only collect data that is necessary for processing your course inquiries, enrollment, and providing our holistic yoga services.",
+    "section1Title": "What Data We Collect",
+    "section1Text": "Information such as your name, email address, and phone number when you fill out contact or booking forms.",
+    "section2Title": "How We Use It",
+    "section2Text": "To communicate with you about your requested training, updates on your chosen batch, and relevant ashram news.",
+    "section3Title": "Consent",
+    "section3Text": "By using our site, you consent to our privacy policy. If you have any questions, please contact us at {email}."
+  },
+  "termsConditions": {
+    "metaTitle": "Terms & Conditions | YogaGarhi Ashram",
+    "metaDesc": "Review YogaGarhi terms and conditions, ashram rules, code of conduct, and Yoga Alliance certification graduation guidelines.",
+    "badge": "Ashram Guidelines & Student Agreement",
+    "title": "Terms & Conditions",
+    "intro": "Welcome to YogaGarhi. By enrolling in our courses, retreats, or online programs, you agree to uphold our ashram ethos, code of conduct, and community guidelines.",
+    "section1Title": "1. Ashram Code of Conduct (Yama & Niyama)",
+    "section1Intro": "YogaGarhi is a consecrated spiritual learning sanctuary. In reverence to yogic traditions, all students and guests are required to observe:",
+    "section1Point1Title": "Substance-Free Environment:",
+    "section1Point1Text": "Alcohol, recreational drugs, and smoking are strictly prohibited within ashram premises.",
+    "section1Point2Title": "Pure Satvic Diet:",
+    "section1Point2Text": "All meals served are 100% vegetarian, Ayurvedic, and freshly prepared. Non-vegetarian food is not permitted in rooms.",
+    "section1Point3Title": "Mindful Respect:",
+    "section1Point3Text": "Respectful interaction with fellow sadhakas (students), monastic masters, and local community customs in Bali and Rishikesh.",
+    "section1Point4Title": "Silence Periods (Mauna):",
+    "section1Point4Text": "Observance of designated morning meditation silence hours to deepen inward awareness.",
+    "section2Title": "2. Yoga Alliance Certification Requirements",
+    "section2Intro": "To graduate and receive your Yoga Alliance RYT (Registered Yoga Teacher) Certificate (100, 200, or 300 Hour), students must satisfy:",
+    "section2Point1": "Minimum 90% attendance across practical asana, pranayama, anatomy, and philosophy contact hours.",
+    "section2Point2": "Completion of teaching practicum, alignment demonstrations, and final assessment.",
+    "section2Point3": "Completion of foundational pre-course study manual readings.",
+    "section3Title": "3. Health, Wellness & Liability",
+    "section3Text": "Students are advised to consult their medical practitioner prior to undertaking intensive physical yoga training. Please inform our teaching team of any pre-existing medical conditions or injuries so appropriate posture modifications can be provided. Students participate willingly at their own physical pace.",
+    "section4Title": "4. Governing Law & Inquiries",
+    "section4Text": "For any clarification regarding ashram rules or certification criteria, please reach out to our administration team at {email}.",
+    "contactBtn": "Contact Our Team"
+  },
+  "refundPolicy": {
+    "metaTitle": "Refund & Cancellation Policy | YogaGarhi",
+    "metaDesc": "YogaGarhi transparent refund, booking deposit, and batch transfer policy for Yoga Teacher Training courses and retreats in Bali and Rishikesh.",
+    "badge": "Confidence & Flexibility Guarantee",
+    "title": "Refund & Batch Transfer Policy",
+    "intro": "We understand that life circumstances change. At YogaGarhi, we offer transparent, flexible booking terms designed to protect your investment in your spiritual journey.",
+    "highlight1Title": "100% Transferable",
+    "highlight1Text": "Your deposit is 100% transferable to any future batch or different location (Bali / Rishikesh) within 12 months.",
+    "highlight2Title": "12-Month Validity",
+    "highlight2Text": "Need to reschedule? You have 1 full year from your original date to attend your teacher training or retreat.",
+    "highlight3Title": "Medical Emergencies",
+    "highlight3Text": "In cases of unforeseen health or travel emergencies with documentation, priority batch rebooking is provided at zero fee.",
+    "section1Title": "1. Booking Deposit & Seat Reservation",
+    "section1Text": "To guarantee your spot and accommodation in your chosen Yoga Teacher Training Course or Retreat, a deposit of $250 USD (or equivalent) is required at the time of enrollment. This allows our ashram to reserve your room, prepare educational materials, and assign dedicated faculty mentors.",
+    "section2Title": "2. Batch Rescheduling & Date Changes",
+    "section2Text": "If you are unable to join your scheduled start date, you may reschedule to any upcoming batch within 12 months at zero penalty, provided you inform our admissions office at least 15 days prior to the course start date.",
+    "section3Title": "3. Balance Payment Terms",
+    "section3Text": "The remaining course fee balance is payable upon arrival at the ashram on orientation day (or via bank transfer / credit card link prior to arrival). Once a course has commenced and student has checked in, tuition fees and accommodation costs are non-refundable as resources and room allocations have been committed.",
+    "section4Title": "4. Questions & Admissions Support",
+    "section4Text": "For any questions regarding batch rescheduling or custom payment plans, our admissions team is available daily via email at {email} or WhatsApp at {phone}.",
+    "contactBtn": "Contact Admissions Desk"
   }
 }

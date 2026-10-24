@@ -5217,5 +5217,78 @@
       "author": "YogaGarhi Leadership Team",
       "location": "Bali, Indonesia"
     }
+  },
+  "blogsListing": {
+    "heroTitle": "Unser Blog",
+    "heroSubtitle": "Einblicke, Geschichten und Weisheit von YogaGarhi",
+    "readMore": "Weiterlesen",
+    "guideAria": "Vollständigen Leitfaden lesen: {title}",
+    "metaTitle": "Yoga Artikel & Weisheits-Blog | YogaGarhi",
+    "metaDesc": "Entdecke authentische Artikel über Yoga-Philosophie, Lehrerausbildung, Asana-Ausrichtung und Ashram-Leben in Bali & Rishikesh."
+  },
+  "legalCommon": {
+    "disclaimerTitle": "Hinweis",
+    "disclaimerNotice": "Dies ist eine Übersetzung zu Informationszwecken. Im Falle von Abweichungen ist die englische Version maßgeblich."
+  },
+  "privacyPolicy": {
+    "metaTitle": "Datenschutzerklärung | YogaGarhi",
+    "metaDesc": "Erfahre mehr über die Datenschutzerklärung von YogaGarhi und wie wir Deine persönlichen Daten bei Anfragen und Kursanmeldungen schützen.",
+    "title": "Datenschutzerklärung",
+    "intro": "Bei YogaGarhi ist uns Deine Privatsphäre ein wichtiges Anliegen. Diese Richtlinie beschreibt, wie wir mit Informationen umgehen, die Du uns über unsere Website zur Verfügung stellst. Wir erfassen ausschließlich Daten, die für die Bearbeitung Deiner Kursanfragen, Deine Anmeldung und die Bereitstellung unserer ganzheitlichen Yoga-Dienstleistungen erforderlich sind.",
+    "section1Title": "Welche Daten Wir Erfassen",
+    "section1Text": "Informationen wie Dein Name, Deine E-Mail-Adresse und Telefonnummer, wenn Du Kontakt- oder Buchungsformulare ausfüllst.",
+    "section2Title": "Wie Wir Deine Daten Verwenden",
+    "section2Text": "Um mit Dir über Deine gewünschte Ausbildung zu kommunizieren, Dir Updates zu Deinem gewählten Ausbildungsjahrgang zukommen zu lassen und relevante Neuigkeiten aus dem Ashram zu teilen.",
+    "section3Title": "Einwilligung",
+    "section3Text": "Durch die Nutzung unserer Website stimmst Du unserer Datenschutzerklärung zu. Wenn Du Fragen hast, wende Dich bitte per E-Mail an uns unter {email}."
+  },
+  "termsConditions": {
+    "metaTitle": "Allgemeine Geschäftsbedingungen | YogaGarhi Ashram",
+    "metaDesc": "Allgemeine Geschäftsbedingungen, Ashram-Regeln, Verhaltenskodex und Richtlinien zur Zertifizierung der Yoga Alliance bei YogaGarhi.",
+    "badge": "Ashram-Richtlinien & Teilnehmervereinbarung",
+    "title": "Allgemeine Geschäftsbedingungen",
+    "intro": "Willkommen bei YogaGarhi. Mit der Anmeldung zu unseren Kursen, Retreats oder Online-Programmen erklärst Du Dich damit einverstanden, unser Ashram-Ethos, den Verhaltenskodex und unsere Gemeinschaftsrichtlinien einzuhalten.",
+    "section1Title": "1. Ashram-Verhaltenskodex (Yama & Niyama)",
+    "section1Intro": "YogaGarhi ist ein geweihter Raum des spirituellen Lernens. Aus Respekt vor den yogischen Traditionen sind alle Schüler und Gäste verpflichtet, Folgendes zu beachten:",
+    "section1Point1Title": "Substanzfreie Umgebung:",
+    "section1Point1Text": "Alkohol, Freizeitdrogen und Rauchen sind auf dem gesamten Ashram-Gelände strengstens verboten.",
+    "section1Point2Title": "Reine satvische Ernährung:",
+    "section1Point2Text": "Alle servierten Mahlzeiten sind 100% vegetarisch, ayurvedisch und frisch zubereitet. Nicht-vegetarische Lebensmittel sind auf den Zimmern nicht gestattet.",
+    "section1Point3Title": "Achtsamer Respekt:",
+    "section1Point3Text": "Respektvoller Umgang mit Mit-Sadhakas (Schülern), monastischen Meistern und den lokalen Bräuchen der Gemeinschaften in Bali und Rishikesh.",
+    "section1Point4Title": "Schweigephasen (Mauna):",
+    "section1Point4Text": "Einhaltung der festgelegten morgendlichen Meditations-Schweigezeiten zur Vertiefung der inneren Einkehr.",
+    "section2Title": "2. Zertifizierungsanforderungen der Yoga Alliance",
+    "section2Intro": "Um den Abschluss zu erlangen und Dein Yoga Alliance RYT-Zertifikat (100, 200 oder 300 Stunden) zu erhalten, müssen folgende Kriterien erfüllt sein:",
+    "section2Point1": "Mindestens 90% Anwesenheit in den praktischen Asana-, Pranayama-, Anatomie- und Philosophie-Kontaktstunden.",
+    "section2Point2": "Erfolgreicher Abschluss des Lehrpraktikums, der Ausrichtungsdemonstrationen und der Abschlussprüfung.",
+    "section2Point3": "Vollständiges Durcharbeiten des vorbereitenden Studienhandbuchs vor Kursbeginn.",
+    "section3Title": "3. Gesundheit, Wohlbefinden & Haftung",
+    "section3Text": "Teilnehmern wird empfohlen, vor Beginn einer intensiven körperlichen Yoga-Ausbildung einen Arzt zu konsultieren. Bitte informiere unser Dozententeam über bestehende gesundheitliche Einschränkungen oder Verletzungen, damit passende Haltungsanpassungen vorgenommen werden können. Die Teilnahme erfolgt freiwillig und im eigenen körperlichen Ermessen.",
+    "section4Title": "4. Anwendbares Recht & Anfragen",
+    "section4Text": "Bei Fragen zu den Ashram-Regeln oder Zertifizierungskriterien steht Dir unser Verwaltungsteam gerne per E-Mail unter {email} zur Verfügung.",
+    "contactBtn": "Unser Team Kontaktieren"
+  },
+  "refundPolicy": {
+    "metaTitle": "Rückerstattungs- & Stornierungsrichtlinie | YogaGarhi",
+    "metaDesc": "Transparente Rückerstattungs-, Anzahlungs- und Umbuchungsrichtlinien für Yoga-Lehrerausbildungen und Retreats in Bali und Rishikesh bei YogaGarhi.",
+    "badge": "Garantie für Sicherheit & Flexibilität",
+    "title": "Rückerstattungs- & Umbuchungsrichtlinie",
+    "intro": "Wir wissen, dass sich Lebensumstände unvorhergesehen ändern können. Bei YogaGarhi bieten wir transparente und flexible Buchungsbedingungen, die Deine Investition in Deine spirituelle Reise schützen.",
+    "highlight1Title": "100% Übertragbar",
+    "highlight1Text": "Deine Anzahlung ist innerhalb von 12 Monaten zu 100% auf jeden zukünftigen Ausbildungsjahrgang oder Standort (Bali / Rishikesh) übertragbar.",
+    "highlight2Title": "12 Monate Gültigkeit",
+    "highlight2Text": "Musst Du Deinen Termin verschieben? Du hast ab Deinem ursprünglichen Datum ein ganzes Jahr Zeit, um an Deiner Ausbildung oder Deinem Retreat teilzunehmen.",
+    "highlight3Title": "Medizinische Notfälle",
+    "highlight3Text": "Bei nachgewiesenen unvorhergesehenen gesundheitlichen oder reisebezogenen Notfällen bieten wir eine prioritäre Umbuchung ohne jegliche Gebühren an.",
+    "section1Title": "1. Buchungsanzahlung & Platzreservierung",
+    "section1Text": "Um Deinen Ausbildungs- und Unterbringungsplatz in Deinem gewählten Kurs oder Retreat verbindlich zu sichern, ist bei der Anmeldung eine Anzahlung von $250 USD (oder der entsprechende Gegenwert) erforderlich. Dies ermöglicht unserem Ashram, Dein Zimmer zu reservieren, Unterrichtsmaterialien vorzubereiten und persönliche Mentoren zuzuweisen.",
+    "section2Title": "2. Terminumbuchung & Datumsänderungen",
+    "section2Text": "Falls Du an Deinem geplanten Starttermin verhindert bist, kannst Du innerhalb von 12 Monaten gebührenfrei auf einen späteren Jahrgang umbuchen, sofern Du unser Zulassungsbüro mindestens 15 Tage vor Kursbeginn informierst.",
+    "section3Title": "3. Restzahlungsbedingungen",
+    "section3Text": "Der verbleibende Restbetrag der Kursgebühr ist bei Ankunft im Ashram am Orientierungstag fällig (oder vorab per Banküberweisung / Kreditkarten-Link). Sobald ein Kurs begonnen hat und der Schüler eingecheckt hat, sind Studiengebühren und Unterkunftskosten nicht erstattungsfähig, da Ressourcen und Zimmerkontingente verbindlich gebunden sind.",
+    "section4Title": "4. Fragen & Beratung zur Zulassung",
+    "section4Text": "Bei Fragen zur Terminverschiebung oder zu individuellen Zahlungsplänen ist unser Zulassungsteam täglich per E-Mail unter {email} oder per WhatsApp unter {phone} erreichbar.",
+    "contactBtn": "Zulassungsbüro Kontaktieren"
   }
 }

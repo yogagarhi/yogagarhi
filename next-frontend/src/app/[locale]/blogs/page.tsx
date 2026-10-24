@@ -1,16 +1,66 @@
 import { Metadata } from "next";
 import Blog from "@/components/pages/Blog";
+import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-    title: "Yoga Articles & Wisdom Blog",
-    description: "Explore authentic articles on yoga philosophy, teacher training, asana alignment, and ashram life in Bali & Rishikesh. Read our latest insights!",
-    keywords: "yoga blog, yoga articles, yoga philosophy, yoga teacher training tips, YogaGarhi blog",
-    alternates: {
-        canonical: "https://www.yogagarhi.com/blogs",
-    },
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    let messages: any;
+    try {
+        messages = (await import(`@/messages/${locale}.json`)).default;
+    } catch {
+        messages = (await import(`@/messages/en.json`)).default;
+    }
 
-export default function BlogPage() {
+    const title = locale === "en" ? "Yoga Articles & Wisdom Blog" : (messages.blogsListing?.metaTitle || "Yoga Articles & Wisdom Blog");
+    const description = locale === "en" ? "Explore authentic articles on yoga philosophy, teacher training, asana alignment, and ashram life in Bali & Rishikesh. Read our latest insights!" : (messages.blogsListing?.metaDesc || "Explore authentic articles on yoga philosophy, teacher training, asana alignment, and ashram life in Bali & Rishikesh. Read our latest insights!");
+    const url = locale === "en" ? "https://www.yogagarhi.com/blogs" : `https://www.yogagarhi.com/${locale}/blogs`;
+
+    const metadata: Metadata = {
+        metadataBase: new URL("https://www.yogagarhi.com"),
+        title: {
+            default: title,
+            template: "%s | YogaGarhi",
+        },
+        description,
+        keywords: "yoga blog, yoga articles, yoga philosophy, yoga teacher training tips, YogaGarhi blog",
+        alternates: {
+            canonical: url,
+            languages: getReviewedHreflang("/blogs"),
+        },
+        robots: {
+            index: true,
+            follow: true,
+        },
+        openGraph: {
+            title,
+            description,
+            url,
+            type: "website",
+        },
+    };
+
+    return locale === "en" ? metadata : applyQualityGate(metadata, locale);
+}
+
+export default async function BlogPage({
+    params,
+}: {
+    params: Promise<{ locale: string }>;
+}) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+
+    const messages: any = await getMessages();
+    const blogMessages = {
+        blogsListing: messages.blogsListing,
+    };
+
     return (
         <>
             <script
@@ -36,8 +86,9 @@ export default function BlogPage() {
                     })
                 }}
             />
-            <Blog />
+            <NextIntlClientProvider locale={locale} messages={blogMessages}>
+                <Blog locale={locale} />
+            </NextIntlClientProvider>
         </>
     );
 }
-

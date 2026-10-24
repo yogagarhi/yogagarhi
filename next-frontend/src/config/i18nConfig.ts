@@ -77,6 +77,10 @@ export const TRANSLATED_PAGES: Record<string, readonly SupportedLocale[]> = {
   '/yogic-energy': SUPPORTED_LOCALES,
   '/teacher-training-foundation': SUPPORTED_LOCALES,
   '/pre-yttc-prep': SUPPORTED_LOCALES,
+  '/blogs': SUPPORTED_LOCALES,
+  '/privacy-policy': SUPPORTED_LOCALES,
+  '/terms-and-conditions': SUPPORTED_LOCALES,
+  '/refund-policy': SUPPORTED_LOCALES,
 };
 
 export function getAvailableLocalesForPath(pathname: string): readonly SupportedLocale[] {
