@@ -67,7 +67,7 @@ export default function LanguageSwitcher({
   const currentConfig = LOCALES_CONFIG[locale] || LOCALES_CONFIG.en;
 
   return (
-    <div ref={containerRef} className={`relative inline-block text-left ${className}`}>
+    <div ref={containerRef} data-language-switcher="true" className={`relative inline-block text-left ${className}`}>
       <button
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}

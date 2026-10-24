@@ -4736,5 +4736,486 @@
     "guidanceSub": "Ons team helpt je graag met vluchten, visa en ideale reisdata.",
     "reschedulePolicyTitle": "Voorwaarden voor omboeken",
     "reschedulePolicyText": "Flexibele omboeking binnen 12 maanden mogelijk. Geen restitutie na Dag 1."
+  },
+  "yogicEnergy": {
+    "metaTitle": "Ontdek Je Unieke Yogische Energie",
+    "metaDesc": "Doe onze 6-vragen Prakriti-quiz en ontdek of je Vata, Pitta of Kapha bent — en welke yogapraktijk je leven werkelijk zal transformeren.",
+    "ogTitle": "Wat Is Jouw Yogische Energietype?",
+    "ogDesc": "Ontdek je unieke Dosha-constitutie met deze gratis 6-vragen Prakriti-quiz van YogaGarhi.",
+    "tagline": "Authentieke Yogaschool op Bali",
+    "heroBadge": "Gratis Prakriti-Quiz — Duurt 30 Seconden",
+    "heroTitle": "Wat Is Jouw",
+    "heroTitleHighlight": "Unieke Yogische Energie?",
+    "heroDescPart1": "Beantwoord 6 eenvoudige vragen om je Dosha te ontdekken — en de exacte yogapraktijk die",
+    "heroDescBold": "je lichaam transformeert, je geest kalmeert",
+    "heroDescPart2": " en je ware aard ontwaakt.",
+    "doshaPreview": {
+      "vata": "Vata",
+      "pitta": "Pitta",
+      "kapha": "Kapha"
+    },
+    "ctaReveal": "Onthul Mijn Yogische Energietype",
+    "ctaSub": "Gratis · Geen creditcard nodig · Vertrouwd door 500+ yogastudenten wereldwijd",
+    "trust": {
+      "accreditation": "Yoga Alliance",
+      "accreditationSub": "Gecertificeerde School",
+      "graduates": "500+ Afgestudeerden",
+      "graduatesSub": "Wereldwijd",
+      "rating": "5★ Beoordeling",
+      "ratingSub": "Op Google"
+    },
+    "quiz": {
+      "questionOf": "Vraag {current} van {total}",
+      "percentComplete": "{percent}% voltooid",
+      "goBack": "Terug",
+      "questions": [
+        {
+          "question": "Hoe voelt je lichaam 's ochtends doorgaans aan?",
+          "options": [
+            "Licht en energiek — Klaar om te bewegen",
+            "Warm en gedreven — Laten we beginnen",
+            "Zwaar en traag op gang — Ik heb tijd nodig"
+          ]
+        },
+        {
+          "question": "Wat beschrijft jouw denkpatroon onder stress?",
+          "options": [
+            "Drukke gedachten en onrust",
+            "Prikkelbaarheid en intense focus",
+            "Terugtrekking en lage motivatie"
+          ]
+        },
+        {
+          "question": "Hoe zou je jouw natuurlijke energieritme omschrijven?",
+          "options": [
+            "Veranderlijk — Ik werk in creatieve golven",
+            "Gefocust en consistent met duidelijke doelen",
+            "Rustig, stabiel en zeer volhardend"
+          ]
+        },
+        {
+          "question": "Wat is jouw relatie met warmte?",
+          "options": [
+            "Ik houd van warmte en heb een hekel aan kou",
+            "Ik heb het snel warm en geef de voorkeur aan koele ruimtes",
+            "Ik ben neutraal en pas me makkelijk aan de temperatuur aan"
+          ]
+        },
+        {
+          "question": "Hoe verwerk je emoties meestal?",
+          "options": [
+            "Snel gevoeld, snel weer losgelaten",
+            "Intense gevoelens die een diepe indruk achterlaten",
+            "Diepe, trage verwerking — Ik houd lang vast"
+          ]
+        },
+        {
+          "question": "Wat omschrijft jouw levensstijl het best?",
+          "options": [
+            "Ik verlang naar beweging, verandering en afwisseling",
+            "Ik floreer bij prestaties, structuur en duidelijke doelen",
+            "Ik hecht veel waarde aan routine, stabiliteit en comfort"
+          ]
+        }
+      ]
+    },
+    "results": {
+      "vata": {
+        "name": "Vata",
+        "element": "Lucht & Ether",
+        "badge": "🌬️ Lucht-Type",
+        "headline": "Je bent een Vata-ziel — Creatief, Vrij & Verfijnd",
+        "description": "Je geest beweegt als de wind: snel, fantasierijk en vol ideeën. Je bent gezegend met creativiteit en een open hart, maar hebt aardende oefeningen nodig om je energie stabiel te kanaliseren.",
+        "practice": "Aardende Hatha Yoga, rustige Vinyasa-flows en diepe Pranayama om je drukke geest tot bedaren te brengen."
+      },
+      "pitta": {
+        "name": "Pitta",
+        "element": "Vuur & Water",
+        "badge": "🔥 Vuur-Type",
+        "headline": "Je bent een Pitta-ziel — Doelgericht, Krachtig & Gepassioneerd",
+        "description": "Je bent een natuurlijke leider met een scherpe geest en gezonde ambitie. Jouw vuur stuurt transformatie. Je yogapraktijk moet je intensiteit verkoelen en harmoniseren.",
+        "practice": "Verkoelende Yin Yoga, evenwichtige Vinyasa-flows en Sitali-ademhaling om je innerlijke vuur te balanceren."
+      },
+      "kapha": {
+        "name": "Kapha",
+        "element": "Aarde & Water",
+        "badge": "🌊 Aarde-Type",
+        "headline": "Je bent een Kapha-ziel — Standvastig, Zorgzaam & Diepzinnig",
+        "description": "Jij bent het betrouwbare fundament waar anderen op steunen: geduldig, warm en liefdevol. Je beoefening moet je rustige aard verkwikken en in beweging brengen.",
+        "practice": "Dynamische Ashtanga, energieke Vinyasa-flows en Kapalabhati-ademhaling om je vitaliteit te ontsteken."
+      }
+    },
+    "capture": {
+      "title": "Je uitslag staat klaar! ✨",
+      "description": "Vul je gegevens in en we tonen je direct jouw unieke yogische energietype — inclusief een op maat gemaakt advies voor jouw praktijk.",
+      "nameLabel": "Je Naam *",
+      "namePlaceholder": "Vul je volledige naam in",
+      "emailLabel": "E-mailadres *",
+      "emailPlaceholder": "Vul je e-mailadres in",
+      "submitBtn": "Onthul Mijn Energietype →",
+      "submitting": "Bezig met onthullen...",
+      "privacyNote": "Wij respecteren je privacy. Geen spam. Uitschrijven kan altijd.",
+      "errorRequired": "Vul alsjeblieft je naam en e-mailadres in.",
+      "errorInvalidEmail": "Vul alsjeblieft een geldig e-mailadres in.",
+      "errorGeneral": "Er ging iets mis. Probeer het opnieuw."
+    },
+    "testimonials": {
+      "heading": "Wat Onze Studenten Zeggen"
+    },
+    "ctaBottom": {
+      "button": "Doe Mee aan de Gratis 2-Daagse Yoga Docentenopleiding",
+      "sticky": "Doe Mee aan de Gratis 2-Daagse Opleiding"
+    },
+    "footer": {
+      "privacy": "Privacy",
+      "contact": "Contact"
+    }
+  },
+  "foundation": {
+    "metaTitle": "2-Daagse Yoga Docenten Fundament Cursus",
+    "metaDesc": "Doe mee aan YogaGarhi's gratis 2-daagse Yoga Docenten Fundament Masterclass. Ontdek hoe je gecertificeerd docent wordt en een betekenisvolle carrière start.",
+    "ogTitle": "2-Daags Yoga Docenten Fundament | Start Je Carrière",
+    "ogDesc": "Doe mee aan YogaGarhi's gratis 2-daagse Yoga Docenten Fundament Masterclass. Zet de stap naar je internationaal erkende Yoga Alliance certificering.",
+    "tagline": "Authentieke Yogaschool op Bali",
+    "batchNotice": {
+      "prefix": "Volgende Groep:",
+      "schedule": "10:00 AM CET (Nederlandse Tijd) | 5:00 PM (Singapore) | 6:00 PM (Zuid-Korea)"
+    },
+    "hero": {
+      "subtitlePrefix": "Twijfel je welke YTTC te vertrouwen?",
+      "subtitleHighlight": "Ervaar Het Eerst Zelf",
+      "title": "Gratis 2-Daagse Yoga Docentenopleiding Fundament Masterclass",
+      "descPara1": "Bij YogaGarhi begrijpen we dat de keuze voor een YTTC om veel meer draait dan enkel een certificaat.",
+      "descPara2Part1": "Het gaat om",
+      "descPara2Safe": "je veilig voelen",
+      "descPara2Part2": ", het gaat om",
+      "descPara2Guided": "goed begeleid worden",
+      "descPara2Part3": ", en de geruststelling dat je eindelijk in de",
+      "descPara2Hands": "juiste handen",
+      "descPara3": "bent. Daarom houden we alles eenvoudig, eerlijk en transparant.",
+      "badgeSeatsLeft": "NOG SLECHTS 12 PLEKKEN BESCHIKBAAR",
+      "priceFree": "FREE",
+      "priceRegular": "Reguliere Prijs $99",
+      "ctaButton": "CLAIM NU MIJN GRATIS PLEK",
+      "statStudents": "2,500+",
+      "statStudentsLabel": "Studenten",
+      "statRating": "5/5",
+      "statRatingLabel": "Beoordeling"
+    },
+    "transformation": {
+      "tag": "Jouw Pad Vooruit",
+      "heading": "Wat Deze 2-Daagse Ervaring Voor Jou Kan Betekenen",
+      "beforeCard": {
+        "label": "Voor Je Deelname",
+        "title": "Misschien Herken Je Dit...",
+        "items": [
+          "\"Wat als ik de verkeerde yogaschool kies?\"",
+          "\"Ben ik wel lenig of ervaren genoeg om mee te doen?\"",
+          "\"Kan ik wat ik online zie wel echt vertrouwen?\"",
+          "\"Ik wil iets doen met meer betekenis — iets waarmee ik anderen help.\"",
+          "\"Yoga heeft mij persoonlijk veranderd… misschien is het tijd dit te delen.\"",
+          "\"Ik heb altijd al willen lesgeven, maar weet niet waar te beginnen.\"",
+          "\"Ik zoek een pad dat zowel bezieling als onafhankelijkheid biedt.\""
+        ]
+      },
+      "afterCard": {
+        "label": "Na Afronding",
+        "title": "Dit Neem Je Mee Naar Huis...",
+        "items": [
+          "Ontdek jouw unieke yogische energie vanuit eeuwenoude Ayurvedische wijsheid",
+          "Krijg inzicht in hoe een TTC-certificering echte wegen opent naar lesgeven en inkomen",
+          "Krijg helderheid over de overstap naar een betekenisvol beroep",
+          "Leer de eerste concrete stappen om gecertificeerd yogadocent te worden",
+          "Vertrek met richting, zelfvertrouwen en een sterk gevoel van roeping"
+        ]
+      },
+      "ctaButton": "JA, IK WIL DIT CURRICULUM"
+    },
+    "curriculum": {
+      "tag": "JOUW CURRICULUM",
+      "heading": "Dit Ga Je Leren",
+      "subheading": "Een gestructureerde 2-daagse reis van yogafundamenten naar professionele helderheid",
+      "day1": {
+        "tag": "Dag 1",
+        "title": "De Fundamenten van Yoga",
+        "items": [
+          "Leer de kernprincipes van alignment voor een veilige en effectieve praktijk",
+          "Ontdek je unieke yogische energie vanuit klassieke Ayurvedische kennis",
+          "Wat betekent Yoga doceren, voorbij enkel Asanas?",
+          "8 Klassieke leefprincipes van yoga voor het dagelijks leven",
+          "Hoe yogadocenten echte transformatie teweegbrengen bij leerlingen",
+          "De rol van discipline, adem en leefstijl bij het lesgeven",
+          "Waarom yogalesgeven uitgroeit tot een toekomstbestendig en betekenisvol beroep"
+        ]
+      },
+      "day2": {
+        "tag": "Dag 2",
+        "title": "Van Yoga Je Beroep Maken",
+        "items": [
+          "Ervaar een begeleide yogapraktijk van 30 minuten",
+          "Verdiep je in de basisprincipes van de yogafilosofie",
+          "Hoe een TTC-certificering modern yogalesgeven vormgeeft",
+          "Didactische vaardigheden: opbouw, duidelijke cues, veiligheid en aanwezigheid",
+          "Het werkveld van vandaag: studio's, bedrijven, online cursussen",
+          "Hoe je een duurzame lespraktijk met bewuste inkomsten opbouwt",
+          "Yoga doceren met een gezond verdienmodel zonder verlies van authenticiteit"
+        ]
+      },
+      "ctaButton": "JA, IK WIL DIT CURRICULUM"
+    },
+    "bonuses": {
+      "tag": "💥 EXCLUSIEVE BONUSSEN ($120+ WAARDE) — FREE",
+      "heading": "Ontvang Deze Bonussen",
+      "headingHighlight": "Wanneer Je Nu Registreert",
+      "items": [
+        {
+          "title": "2 Interactieve Vraag-en-Antwoordsessies",
+          "value": "$45",
+          "desc": "Krijg direct antwoord op jouw persoonlijke vragen van ervaren docenten."
+        },
+        {
+          "title": "Begeleide Lessimulatie",
+          "value": "$60",
+          "desc": "Ervaar de eerste stappen van het lesgeven in een veilige en vertrouwde omgeving."
+        },
+        {
+          "title": "Deelnamecertificaat",
+          "value": "$20",
+          "desc": "Een officieel bewijs van jouw eerste stap op dit opleidingstraject."
+        }
+      ],
+      "boxTitle": "Totale Waarde: $120+ • Vandaag gratis van jou voor FREE",
+      "timerLabels": {
+        "hrs": "Uur",
+        "min": "Min",
+        "sec": "Sec"
+      },
+      "ctaButton": "CLAIM MIJN GRATIS PLEK",
+      "timerDisclaimer": "*Bonussen vervallen zodra de timer op nul staat"
+    },
+    "legacy": {
+      "quote": "\"Onze missie is om mensen terug te brengen naar de wortels van Yoga, waar elke ademhaling een toegangspoort wordt tot innerlijke stilte.\"",
+      "founder": "Sachin Ji",
+      "role": "Oprichter, YogaGarhi",
+      "heading": "Waarom Deelnemen Aan Dit Fundament?",
+      "desc": "YogaGarhi vertegenwoordigt een authentieke Himalaya-traditie. We onderwijzen niet slechts asana's; we reiken een manier van leven aan die al duizenden levens heeft verrijkt.",
+      "features": [
+        {
+          "title": "Authentieke Traditielijn",
+          "desc": "Geworteld in klassieke Himalaya-kennis, ver van commerciële rages."
+        },
+        {
+          "title": "Bewezen Resultaten",
+          "desc": "Sluit je aan bij 2,500+ cursisten die hun reis bij ons zijn begonnen."
+        },
+        {
+          "title": "TTC Doorgroeipad",
+          "desc": "De ideale brug naar onze internationaal erkende Yoga Alliance opleidingen."
+        }
+      ]
+    },
+    "faq": {
+      "heading": "Veelgestelde Vragen",
+      "subheading": "Alles wat je vooraf wilt weten over deelname.",
+      "items": [
+        {
+          "q": "Is deze 2-daagse cursus een volledige certificering?",
+          "a": "Nee. Het is een oriënterende ervaring ontworpen om je helderheid, vertrouwen en een leidraad te bieden richting de 200-Hour TTC certificering."
+        },
+        {
+          "q": "Heb ik voorafgaande yoga-ervaring nodig?",
+          "a": "Ervaring met lesgeven is absoluut niet nodig — enkel nieuwsgierigheid en de wens om het pad van yoga te verkennen."
+        },
+        {
+          "q": "Ontvang ik een certificaat?",
+          "a": "Ja — een officieel Deelnamecertificaat dat bevestigt dat je de masterclass bij YogaGarhi hebt voltooid."
+        },
+        {
+          "q": "Garandeert dit toelating tot de TTC?",
+          "a": "Het biedt je voorrang in helderheid en voorbereiding; de aanmelding voor onze volledige opleidingen verloopt via een apart proces."
+        }
+      ]
+    },
+    "reviews": {
+      "heading": "Geverifieerde Google Reviews",
+      "ratingText": "5.0/5 Sterren Score",
+      "storiesText": "• Verhalen over transformatie van over de hele wereld"
+    },
+    "schedule": {
+      "tag": "Wereldwijde Begeleiding",
+      "heading": "Rooster voor Live Sessies & Vragen",
+      "subheading": "Praat live met onze oprichters en hoofddocenten om al je vragen te stellen. Kies de sessie die aansluit bij jouw tijdzone.",
+      "sessions": [
+        {
+          "tag": "Sessie A",
+          "badge": "APAC Tijdzone",
+          "title": "Geschikt voor Azië-Pacific",
+          "dayLabel": "Dag:",
+          "day": "Dinsdag",
+          "timeLabel": "Tijd (Bali):",
+          "time": "5:00 PM WITA",
+          "timeSydney": "• Sydney: 7:00 PM AEST",
+          "timeUsEast": "• Amerikaanse Oostkust: 7:00 AM EDT",
+          "bestForLabel": "Ideaal voor:",
+          "bestForDesc": "Australië, Nieuw-Zeeland en vroege vogels aan de Amerikaanse oostkust."
+        },
+        {
+          "tag": "Sessie B",
+          "badge": "Europa Tijdzone",
+          "title": "Geschikt voor Europa",
+          "dayLabel": "Dag:",
+          "day": "Donderdag",
+          "timeLabel": "Tijd (Bali):",
+          "time": "7:00 PM WITA",
+          "timeUk": "• Verenigd Koninkrijk: 12:00 PM BST",
+          "timeGermany": "• Nederland / Duitsland: 1:00 PM CEST",
+          "bestForLabel": "Ideaal voor:",
+          "bestForDesc": "Nederland, België, het VK, Duitsland en de rest van Europa."
+        },
+        {
+          "tag": "Sessie C",
+          "badge": "Amerika Tijdzone",
+          "title": "Geschikt voor Amerika",
+          "dayLabel": "Dag:",
+          "day": "Zaterdag",
+          "timeLabel": "Tijd (Bali):",
+          "time": "9:00 AM WITA",
+          "timeUsWest": "• Amerikaanse Westkust: 7:00 PM (Vrijdag)",
+          "timeUsEast": "• Amerikaanse Oostkust: 10:00 PM (Vrijdag)",
+          "bestForLabel": "Ideaal voor:",
+          "bestForDesc": "De Verenigde Staten en Canada."
+        }
+      ],
+      "table": {
+        "heading": "Snel Overzicht Tijdzones",
+        "colRegion": "Regio",
+        "colTimezone": "Tijdzone",
+        "colLocalTime": "Jouw Lokale Tijd",
+        "colBaliTime": "Bali Tijd (Basis)",
+        "rows": [
+          {
+            "region": "Australië (Sydney/Melbourne)",
+            "tz": "AEST (UTC+10/+11)",
+            "local": "7:00 – 8:00 PM",
+            "base": "5:00 – 6:00 PM"
+          },
+          {
+            "region": "Verenigd Koninkrijk (Londen)",
+            "tz": "BST/GMT (UTC+0/+1)",
+            "local": "12:00 – 1:00 PM",
+            "base": "7:00 – 8:00 PM"
+          },
+          {
+            "region": "Nederland / Duitsland (Amsterdam/Berlijn)",
+            "tz": "CEST (UTC+1/+2)",
+            "local": "7:00 – 8:00 PM",
+            "base": "1:00 – 2:00 AM"
+          },
+          {
+            "region": "Amerikaanse Oostkust (New York)",
+            "tz": "EDT (UTC-4)",
+            "local": "7:00 – 8:00 PM",
+            "base": "6:00 – 7:00 AM"
+          },
+          {
+            "region": "Amerikaanse Westkust (Los Angeles)",
+            "tz": "PDT (UTC-7)",
+            "local": "7:00 – 8:00 PM",
+            "base": "9:00 – 10:00 AM"
+          }
+        ]
+      }
+    },
+    "finalCta": {
+      "heading": "Klaar Om Jouw Pad Als Yogadocent Te Beginnen?",
+      "subParaPart1": "Verzeker je van een plek in onze komende 2-Daagse Fundament Masterclass geheel",
+      "subParaFree": "Gratis",
+      "subParaPart2": "(Zeer beperkt aantal plaatsen).",
+      "ctaButton": "JA, LATEN WE GRATIS BEGINNEN",
+      "contactText": "Heb je vragen? Praat met ons"
+    },
+    "stickyBar": {
+      "priceFree": "FREE",
+      "priceRegular": "$99",
+      "badgeSeatsLeft": "NOG SLECHTS 12 PLEKKEN BESCHIKBAAR",
+      "button": "Doe Nu Mee"
+    },
+    "dialog": {
+      "title": "Claim Je Gratis Plek",
+      "desc": "Vul hieronder je gegevens in om direct toegang te krijgen tot de Fundament Masterclass.",
+      "nameLabel": "Volledige Naam",
+      "namePlaceholder": "Vul je naam in",
+      "emailLabel": "E-mailadres",
+      "emailPlaceholder": "Vul je e-mailadres in",
+      "submitButton": "Bevestig Mijn Gratis Plek",
+      "submitting": "Bezig met inschrijven...",
+      "trustNote": "100% Gratis · Geen creditcard vereist · Direct toegang",
+      "toastSuccessTitle": "Inschrijving Geslaagd!",
+      "toastSuccessDesc": "Namaste! We hebben je gegevens goed ontvangen.",
+      "toastErrorTitle": "Er ging iets mis",
+      "toastErrorDesc": "Probeer het alsjeblieft opnieuw of neem contact op."
+    }
+  },
+  "preYttc": {
+    "metaTitle": "Begin Voor Je Begint | Pre-YTTC Begeleiding",
+    "metaDesc": "Bereid je in alle rust voor op transformatie. Ontdek ons exclusieve 'Voor Je Vertrek' voorbereidingsprogramma voor de yoga docentenopleiding op Bali.",
+    "nav": {
+      "transformWithin": "Transform Within",
+      "courses": "Opleidingen",
+      "contact": "Contact"
+    },
+    "hero": {
+      "badge": "Vernieuwende Pre-YTTC Begeleiding",
+      "titlePart1": "Duik Er Niet Onvoorbereid In —",
+      "titleHighlight": "Laat Je In Alle Rust Voorbereiden",
+      "description": "Bij YogaGarhi geloven we dat jouw reis al ver voor aankomst op Bali begint. Ons programma 'Voor Je Vertrek' zorgt ervoor dat je ontspannen, vol zelfvertrouwen en klaar voor verdieping landt.",
+      "form": {
+        "emailPlaceholder": "Vul je e-mailadres in voor de gids",
+        "submitBtn": "Ontvang de Gratis Gids",
+        "submitting": "Bezig met verzenden...",
+        "limitedSpots": "Beperkt aantal plekken voor de opleidingen in 2026"
+      }
+    },
+    "card": {
+      "badge": "EERSTE PRE-YTTC SCHOOL TER WERELD",
+      "title": "Begin Voor Je Begint",
+      "descPart1": "Deze",
+      "descBadge": "Gratis & Vrijblijvende Online Voorbereiding",
+      "descPart2": "is ontworpen voor iedereen die met een 100% rustig en voorbereid gevoel wil aankomen.",
+      "items": [
+        {
+          "title": "Bereid Je Lichaam Voor",
+          "desc": "Start met zachte oefeningen om fysiek soepel te wennen"
+        },
+        {
+          "title": "Raak Vertrouwd met de Lesstof",
+          "desc": "Bekijk de vakken en leermethoden alvast van tevoren"
+        },
+        {
+          "title": "Begrijp Basisconcepten",
+          "desc": "Maak kennis met fundamentele yogische principes"
+        },
+        {
+          "title": "Voel Je Zeker & Kalm",
+          "desc": "Kom gegrond en rustig aan, zonder overspoeld te raken"
+        }
+      ]
+    },
+    "content": {
+      "badge": "Gratis & Vrijblijvend",
+      "headingPart1": "Start Jouw Transformatie",
+      "headingToday": "Vandaag",
+      "headingPart2": ", Niet Pas op Bali.",
+      "para1": "De meeste yogascholen laten je direct in een intensief schema duiken. Bij YogaGarhi kiezen we voor een rustigere, zorgzame aanpak.",
+      "para2Part1": "We bieden een compleet online voorbereidingsprogramma zodat je bij de start van de training",
+      "para2Panic": "geen stress of paniek ervaart",
+      "para2Part2": ".",
+      "para3": "Je arriveert ontspannen. Je arriveert met overzicht. Je bent volledig klaar om de bijzondere ervaring te omarmen."
+    },
+    "quote": {
+      "text": "\"De diepgang van transformatie hangt af van de kwaliteit van de voorbereiding. Onze missie is om je bij elke stap bij te staan—nog voor je op Bali de yogamat betreedt.\"",
+      "author": "YogaGarhi Leadership Team",
+      "location": "Bali, Indonesia"
+    }
   }
 }

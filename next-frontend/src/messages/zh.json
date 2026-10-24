@@ -4736,5 +4736,486 @@
     "guidanceSub": "我们的顾问团队随时协助您办理机票接驳、签证及行程定制。",
     "reschedulePolicyTitle": "改期与退订条款",
     "reschedulePolicyText": "可在12个月内灵活改期。第1天课程开始后概不退费。"
+  },
+  "yogicEnergy": {
+    "metaTitle": "探索您独特的瑜伽能量类型",
+    "metaDesc": "参与我们的6道题Prakriti体质测试，了解您属于Vata、Pitta还是Kapha — 并找到真正能彻底改变您生活的瑜伽练习方式。",
+    "ogTitle": "您的瑜伽能量类型是什么？",
+    "ogDesc": "通过YogaGarhi提供的免费6题Prakriti测试，测测您独一无二的Dosha体质。",
+    "tagline": "巴厘岛正统瑜伽学校",
+    "heroBadge": "免费Prakriti体质测试 — 仅需30秒",
+    "heroTitle": "什么是您独一无二的",
+    "heroTitleHighlight": "瑜伽能量类型？",
+    "heroDescPart1": "回答6个简单问题，揭示您的Dosha体质 — 并获得专属于您的瑜伽练习方案，",
+    "heroDescBold": "蜕变身心、平静心智",
+    "heroDescPart2": "，唤醒您真实的内在本质。",
+    "doshaPreview": {
+      "vata": "Vata",
+      "pitta": "Pitta",
+      "kapha": "Kapha"
+    },
+    "ctaReveal": "测测我的瑜伽能量类型",
+    "ctaSub": "完全免费 · 无需信用卡 · 获得全球500+位瑜伽学员的信赖",
+    "trust": {
+      "accreditation": "Yoga Alliance",
+      "accreditationSub": "认证学校",
+      "graduates": "500+ 毕业学员",
+      "graduatesSub": "遍布全球",
+      "rating": "5★ 好评",
+      "ratingSub": "Google评价"
+    },
+    "quiz": {
+      "questionOf": "第 {current} 题，共 {total} 题",
+      "percentComplete": "已完成 {percent}%",
+      "goBack": "返回上一题",
+      "questions": [
+        {
+          "question": "早晨醒来时，您的身体通常感觉如何？",
+          "options": [
+            "轻盈且精力充沛 — 随时准备好动起来",
+            "温热且动力十足 — 迫不及待开始新一天",
+            "沉重且进入状态较慢 — 我需要一些时间"
+          ]
+        },
+        {
+          "question": "在面临压力时，您的心智通常表现为？",
+          "options": [
+            "思绪飞快，容易产生焦虑",
+            "容易烦躁，但目标极其聚焦",
+            "退缩自我，动力明显下降"
+          ]
+        },
+        {
+          "question": "您如何形容自己天生的能量节律？",
+          "options": [
+            "多变 — 依靠灵感突发的高效创作",
+            "专注且稳定，拥有清晰明确的目标",
+            "平和沉稳，拥有很强的持久耐力"
+          ]
+        },
+        {
+          "question": "您对气温与冷热的适应情况是怎样的？",
+          "options": [
+            "非常喜欢温暖，比较抗拒寒冷",
+            "体热较旺，更偏爱凉爽的环境",
+            "比较中和，能轻松适应各种气候"
+          ]
+        },
+        {
+          "question": "您通常如何处理和消化情绪？",
+          "options": [
+            "感知敏锐快速，释放也很迅速",
+            "情绪强烈深刻，往往留下持久印象",
+            "消化深层且缓慢 — 习惯长久留存"
+          ]
+        },
+        {
+          "question": "哪项最符合您的生活方式倾向？",
+          "options": [
+            "渴望多变、运动和新鲜感",
+            "在成就感、清晰结构与目标中如鱼得水",
+            "重视规律常规、稳定性与生活舒适感"
+          ]
+        }
+      ]
+    },
+    "results": {
+      "vata": {
+        "name": "Vata",
+        "element": "风 & 空",
+        "badge": "🌬️ 风型特质",
+        "headline": "您是富有灵感与自由的Vata灵魂",
+        "description": "您的心智敏锐如同轻风 — 充满无尽的想象力与新创意。您天生富有创造力且胸怀宽广，但需要扎根稳固的练习，使充沛的灵感能够稳定持久地流动。",
+        "practice": "注重扎根的Hatha Yoga、舒缓平稳的Vinyasa流动，以及深度Pranayama呼吸，以安抚奔流不息的思绪。"
+      },
+      "pitta": {
+        "name": "Pitta",
+        "element": "火 & 水",
+        "badge": "🔥 火型特质",
+        "headline": "您是果敢专注且充满热忱的Pitta灵魂",
+        "description": "您是天生的领导者，思维敏锐且抱负远大。您内心的火焰是蜕变的源泉。您的瑜伽练习应以清凉安抚为主，平衡内在的热能，而不使其过度炽烈。",
+        "practice": "清凉平和的Yin Yoga、适度的Vinyasa流动，以及Sitali清凉呼吸法，平衡内心的炽热火焰。"
+      },
+      "kapha": {
+        "name": "Kapha",
+        "element": "土 & 水",
+        "badge": "🌊 土型特质",
+        "headline": "您是沉稳温厚且富有包容力的Kapha灵魂",
+        "description": "您是身旁人最信赖的坚实靠山 — 耐心、温厚且深具爱心。您的练习需要唤醒和激发您沉稳的天性，助您在人生的变化中更加自如地顺畅流动。",
+        "practice": "充满动态活力的Ashtanga、焕发能量的Vinyasa流，以及Kapalabhati清洁呼吸法，激发内在生命活力。"
+      }
+    },
+    "capture": {
+      "title": "您的测试结果已生成！ ✨",
+      "description": "填写您的联系信息，我们将立即揭晓您独特的瑜伽能量类型，并附赠量身定制的专属练习建议。",
+      "nameLabel": "您的姓名 *",
+      "namePlaceholder": "请输入您的姓名",
+      "emailLabel": "电子邮箱 *",
+      "emailPlaceholder": "请输入您的常用邮箱",
+      "submitBtn": "立即揭晓我的能量类型 →",
+      "submitting": "正在生成结果...",
+      "privacyNote": "我们严格尊重您的隐私。绝无垃圾邮件。可随时取消订阅。",
+      "errorRequired": "请完整填写您的姓名与邮箱。",
+      "errorInvalidEmail": "请输入有效的电子邮箱地址。",
+      "errorGeneral": "发生错误，请稍后重试。"
+    },
+    "testimonials": {
+      "heading": "学员真实心声"
+    },
+    "ctaBottom": {
+      "button": "加入2天免费瑜伽导师启蒙工作坊",
+      "sticky": "加入2天免费导师启蒙"
+    },
+    "footer": {
+      "privacy": "隐私政策",
+      "contact": "联系我们"
+    }
+  },
+  "foundation": {
+    "metaTitle": "2天瑜伽导师基础启蒙课程",
+    "metaDesc": "参加YogaGarhi举办的2天免费瑜伽导师基础大师班。了解如何成为国际认证瑜伽老师，开启一份充满使命感的事业。",
+    "ogTitle": "2天瑜伽导师基础课程 | 开启您的导师生涯",
+    "ogDesc": "参加YogaGarhi举办的2天免费瑜伽导师基础大师班。探索通往国际权威Yoga Alliance认证的清晰路径。",
+    "tagline": "巴厘岛正统瑜伽学校",
+    "batchNotice": {
+      "prefix": "下一期开课时间：",
+      "schedule": "10:00 AM CET (欧洲时间) | 5:00 PM (新加坡时间) | 6:00 PM (北京/东京时间)"
+    },
+    "hero": {
+      "subtitlePrefix": "面对众多YTTC培训不知如何选择？",
+      "subtitleHighlight": "先亲自亲历体验",
+      "title": "免费2天 瑜伽导师培训基础启蒙大师班",
+      "descPara1": "在YogaGarhi，我们深知选择一所瑜伽导师学院远非仅仅为了获得一张证书。",
+      "descPara2Part1": "这关乎",
+      "descPara2Safe": "内心的安心与踏实",
+      "descPara2Part2": "，关乎得到",
+      "descPara2Guided": "悉心的指引与启迪",
+      "descPara2Part3": "，更关乎确信自己终于置身于",
+      "descPara2Hands": "真正值得托付的良师之手",
+      "descPara3": "。正因如此，我们始终保持真诚、透彻与完全公开。",
+      "badgeSeatsLeft": "仅余12个名额",
+      "priceFree": "FREE",
+      "priceRegular": "原价 $99",
+      "ctaButton": "立即锁定我的免费席位",
+      "statStudents": "2,500+",
+      "statStudentsLabel": "毕业学员",
+      "statRating": "5/5",
+      "statRatingLabel": "好评率"
+    },
+    "transformation": {
+      "tag": "前进之路",
+      "heading": "这2天的沉浸体验能为您带来什么",
+      "beforeCard": {
+        "label": "参加之前",
+        "title": "或许您正心存顾虑...",
+        "items": [
+          "“如果选错了瑜伽学校该怎么办？”",
+          "“我的柔韧度和经验真的足够参加导师班吗？”",
+          "“网上各种宣传铺天盖地，究竟能不能相信？”",
+          "“我想做更有意义的事 — 能真正帮助和疗愈他人的事。”",
+          "“瑜伽改变了我的人生…也许是时候把这份美好分享出去了。”",
+          "“一直渴望走上教学之路，却不知道该如何迈出第一步。”",
+          "“我想要一条既能带来内在满足、又能实现独立自由的发展之路。”"
+        ]
+      },
+      "afterCard": {
+        "label": "完成课程后",
+        "title": "您将收获满满...",
+        "items": [
+          "深入探索源自古老阿育吠陀智慧的独家瑜伽能量认知",
+          "透彻理解TTC认证如何转化为教学机会与可持续收入的实际途径",
+          "清晰规划向全职或兼职瑜伽导师转型的可行发展路径",
+          "系统掌握成为国际认证瑜伽老师的坚实起步要素",
+          "带着清晰明确的方向、充沛的自信与发自内心的使命感启程"
+        ]
+      },
+      "ctaButton": "是的，我想学习这套课程"
+    },
+    "curriculum": {
+      "tag": "核心教学大纲",
+      "heading": "课程重点学习内容",
+      "subheading": "为期2天结构严密的系统旅程：从瑜伽精髓基础到职业发展明晰化",
+      "day1": {
+        "tag": "第1天",
+        "title": "瑜伽基石与根基",
+        "items": [
+          "掌握安全且高效练习的核心身体顺位（Alignment）基础法则",
+          "探寻源自古印度阿育吠陀的个体瑜伽体质能量分类",
+          "体式（Asanas）之外，瑜伽教学的深层内涵与灵魂所在",
+          "融入日常生活的经典瑜伽8大生活实践基石",
+          "瑜伽导师如何在真实生命中激发深刻的身心蜕变",
+          "自律、呼吸与生活方式在教学传授中的决定性角色",
+          "为何瑜伽教学正成为兼具精神追求与长远前景的理想职业"
+        ]
+      },
+      "day2": {
+        "tag": "第2天",
+        "title": "将热爱转化为终身事业",
+        "items": [
+          "体验30分钟沉浸式专业瑜伽引导练习",
+          "探索瑜伽哲学的核心脉络与现代应用",
+          "TTC权威国际认证如何塑造当代瑜伽教学格局",
+          "核心教学技巧：课程编排、指令传达、安全防护与导师气场",
+          "现代瑜伽经济全景：馆内任教、企业课、线上平台与私人定制",
+          "如何建立一份拥有良性收入且深具意义的长青教学事业",
+          "在保有传统教学纯粹性的同时实现教学商业价值"
+        ]
+      },
+      "ctaButton": "是的，我想学习这套课程"
+    },
+    "bonuses": {
+      "tag": "💥 独家专享福利（价值 $120+） — FREE",
+      "heading": "立即注册",
+      "headingHighlight": "免费尊享以下丰厚福利",
+      "items": [
+        {
+          "title": "2场实时在线答疑解惑互动",
+          "value": "$45",
+          "desc": "由经验丰富的大师级资深导师在线面对面为您解答具体疑问。"
+        },
+        {
+          "title": "沉浸式带课模拟体验",
+          "value": "$60",
+          "desc": "在包容与支持的安全环境中，体验走上讲台授课的第一步。"
+        },
+        {
+          "title": "官方参与证书",
+          "value": "$20",
+          "desc": "象征您正式开启瑜伽导师系统研习之路的权威参与证明。"
+        }
+      ],
+      "boxTitle": "总价值：$120+ • 今日报名享 FREE 免费赠送",
+      "timerLabels": {
+        "hrs": "小时",
+        "min": "分",
+        "sec": "秒"
+      },
+      "ctaButton": "立即锁定我的免费名额",
+      "timerDisclaimer": "*倒计时归零后，本项专属福利即刻失效"
+    },
+    "legacy": {
+      "quote": "“我们的初心与使命，是引领每一个人回归瑜伽的原初本源，让每一次呼吸都成为通往内心宁静的大门。”",
+      "founder": "Sachin Ji",
+      "role": "YogaGarhi 创始人",
+      "heading": "为什么选择参加本启蒙课程？",
+      "desc": "YogaGarhi承袭纯正古老的喜马拉雅传承脉络。我们传授的远不仅是体式技巧，而是一整套真正改变了成千上万人生轨迹的生活智慧。",
+      "features": [
+        {
+          "title": "正统传承体系",
+          "desc": "深深扎根于传统喜马拉雅智慧，摒弃一切浮躁的商业噱头。"
+        },
+        {
+          "title": "卓著的育人成果",
+          "desc": "与全球2,500多位在我们学院开启瑜伽生涯的专业同侪同行。"
+        },
+        {
+          "title": "直通TTC国际认证",
+          "desc": "迈向全球广泛认可的Yoga Alliance认证课程的理想阶梯。"
+        }
+      ]
+    },
+    "faq": {
+      "heading": "常见问题解答 (FAQ)",
+      "subheading": "关于课程，您可能关心的所有细节。",
+      "items": [
+        {
+          "q": "这2天的启蒙课程是一次完整的资格认证吗？",
+          "a": "不是。这是一门预备沉浸体验课，旨在帮助您在踏上200-Hour TTC全阶段认证之旅前，收获充足的信心、洞察与明确路线图。"
+        },
+        {
+          "q": "我需要具备很高的瑜伽经验吗？",
+          "a": "完全不需要教学经验 — 只要您抱有求知欲和探索瑜伽之路的真诚愿望即可。"
+        },
+        {
+          "q": "课程结束后会颁发证书吗？",
+          "a": "是的 — 将为您颁发专属的参与证书，证明您圆满完成了YogaGarhi的基础启蒙大师课。"
+        },
+        {
+          "q": "这能直接保证正式TTC课程的录取吗？",
+          "a": "这能为您提供优先辅导与准备优势；我们全日制TTC的正式报名仍依照正规申请流程进行。"
+        }
+      ]
+    },
+    "reviews": {
+      "heading": "Google 权威认证好评",
+      "ratingText": "5.0/5 满分好评",
+      "storiesText": "• 来自世界各地学员的真实蜕变分享"
+    },
+    "schedule": {
+      "tag": "全球时区支持",
+      "heading": "实时答疑与互动支持时间表",
+      "subheading": "与学校创办人及资深主教老师实时连线，全面解答您的疑问。请根据您所处的本地时区挑选最适宜的场次。",
+      "sessions": [
+        {
+          "tag": "场次 A",
+          "badge": "亚太时区友好",
+          "title": "适合亚太地区学员",
+          "dayLabel": "星期：",
+          "day": "周二",
+          "timeLabel": "时间 (巴厘岛)：",
+          "time": "5:00 PM WITA",
+          "timeSydney": "• 悉尼：7:00 PM AEST",
+          "timeUsEast": "• 美东：7:00 AM EDT",
+          "bestForLabel": "特别适合：",
+          "bestForDesc": "澳大利亚、新西兰、中国、新加坡及美东早起学员。"
+        },
+        {
+          "tag": "场次 B",
+          "badge": "欧洲时区友好",
+          "title": "适合欧洲地区学员",
+          "dayLabel": "星期：",
+          "day": "周四",
+          "timeLabel": "时间 (巴厘岛)：",
+          "time": "7:00 PM WITA",
+          "timeUk": "• 英国：12:00 PM BST",
+          "timeGermany": "• 德国/法国：1:00 PM CEST",
+          "bestForLabel": "特别适合：",
+          "bestForDesc": "英国、德国、法国及整个欧洲大陆学员。"
+        },
+        {
+          "tag": "场次 C",
+          "badge": "美洲时区友好",
+          "title": "适合美洲地区学员",
+          "dayLabel": "星期：",
+          "day": "周六",
+          "timeLabel": "时间 (巴厘岛)：",
+          "time": "9:00 AM WITA",
+          "timeUsWest": "• 美西：7:00 PM (周五)",
+          "timeUsEast": "• 美东：10:00 PM (周五)",
+          "bestForLabel": "特别适合：",
+          "bestForDesc": "美国及加拿大地区学员。"
+        }
+      ],
+      "table": {
+        "heading": "全球时区换算速查表",
+        "colRegion": "地区",
+        "colTimezone": "时区代码",
+        "colLocalTime": "您的当地时间",
+        "colBaliTime": "巴厘岛时间 (基准)",
+        "rows": [
+          {
+            "region": "澳大利亚 (悉尼/墨尔本)",
+            "tz": "AEST (UTC+10/+11)",
+            "local": "7:00 – 8:00 PM",
+            "base": "5:00 – 6:00 PM"
+          },
+          {
+            "region": "英国 (伦敦)",
+            "tz": "BST/GMT (UTC+0/+1)",
+            "local": "12:00 – 1:00 PM",
+            "base": "7:00 – 8:00 PM"
+          },
+          {
+            "region": "德国/法国 (柏林/巴黎)",
+            "tz": "CEST (UTC+1/+2)",
+            "local": "7:00 – 8:00 PM",
+            "base": "1:00 – 2:00 AM"
+          },
+          {
+            "region": "美国东海岸 (纽约)",
+            "tz": "EDT (UTC-4)",
+            "local": "7:00 – 8:00 PM",
+            "base": "6:00 – 7:00 AM"
+          },
+          {
+            "region": "美国西海岸 (洛杉矶)",
+            "tz": "PDT (UTC-7)",
+            "local": "7:00 – 8:00 PM",
+            "base": "9:00 – 10:00 AM"
+          }
+        ]
+      }
+    },
+    "finalCta": {
+      "heading": "准备好开启您的瑜伽导师生涯了吗？",
+      "subParaPart1": "即刻免费锁定下一期2天基础大师班的席位",
+      "subParaFree": "免费",
+      "subParaPart2": "（每期名额极其有限）。",
+      "ctaButton": "是的，立即免费开始",
+      "contactText": "还有疑问？随时与我们交流"
+    },
+    "stickyBar": {
+      "priceFree": "FREE",
+      "priceRegular": "$99",
+      "badgeSeatsLeft": "仅余12个名额",
+      "button": "立即加入"
+    },
+    "dialog": {
+      "title": "锁定您的免费名额",
+      "desc": "请在下方填写您的信息，以便即刻获取基础大师班的全部访问指引。",
+      "nameLabel": "您的姓名",
+      "namePlaceholder": "请输入您的姓名",
+      "emailLabel": "电子邮箱",
+      "emailPlaceholder": "请输入您的常用邮箱",
+      "submitButton": "确认我的免费席位",
+      "submitting": "正在确认...",
+      "trustNote": "100% 免费 · 无需信用卡 · 立即发送访问指南",
+      "toastSuccessTitle": "报名成功！",
+      "toastSuccessDesc": "Namaste！我们已收到您的报名信息。",
+      "toastErrorTitle": "发生错误",
+      "toastErrorDesc": "请重试或直接通过邮件与我们联系。"
+    }
+  },
+  "preYttc": {
+    "metaTitle": "在启程前准备就绪 | Pre-YTTC 预备支持计划",
+    "metaDesc": "温和从容地迎接深刻蜕变。探索专为巴厘岛瑜伽导师培训定制的独家「入学前准备」支持计划。",
+    "nav": {
+      "transformWithin": "Transform Within",
+      "courses": "精选课程",
+      "contact": "联系我们"
+    },
+    "hero": {
+      "badge": "首创性 Pre-YTTC 支持体系",
+      "titlePart1": "不必仓促跳入蜕变之旅 —",
+      "titleHighlight": "以从容优雅的姿态准备就绪",
+      "description": "在YogaGarhi，我们坚信您的成长旅程早在踏上巴厘岛之前就已经开始。独家「入学前准备」在线辅导，确保您在抵达时充满宁静与笃定，全心拥抱深度蜕变。",
+      "form": {
+        "emailPlaceholder": "输入您的邮箱以获取指南",
+        "submitBtn": "免费获取预备指南",
+        "submitting": "正在发送...",
+        "limitedSpots": "2026年度各期班席位有限"
+      }
+    },
+    "card": {
+      "badge": "全球首家 PRE-YTTC 瑜伽学校",
+      "title": "在启程前准备就绪",
+      "descPart1": "这项",
+      "descBadge": "完全免费且自主自选的在线预习",
+      "descPart2": "专为希望在开学第一天带着100%充足准备而来的学员精心打造。",
+      "items": [
+        {
+          "title": "温和调理身心",
+          "desc": "从舒缓温和的基础练习开启，帮助身体逐步适应"
+        },
+        {
+          "title": "提前熟悉教学大纲",
+          "desc": "先行了解各项课程模块、教学内容与方法"
+        },
+        {
+          "title": "理解核心哲学概念",
+          "desc": "提前掌握入门阶段至关重要的瑜伽哲学原则"
+        },
+        {
+          "title": "建立从容自信心境",
+          "desc": "带着充沛的定力与笃定抵达，告别一切焦虑迷茫"
+        }
+      ]
+    },
+    "content": {
+      "badge": "免费提供 & 自主选择",
+      "headingPart1": "蜕变之旅",
+      "headingToday": "始于当下",
+      "headingPart2": "，不仅在抵达巴厘岛之后。",
+      "para1": "绝大多数瑜伽学校会让学员直接扎入高强度的严苛课表中。在YogaGarhi，我们选择了一种更有温度的方式。",
+      "para2Part1": "我们提供完备详实的「入学前准备」在线预习系统，确保在正式训练拉开帷幕时，",
+      "para2Panic": "您不会产生任何慌乱与不知所措",
+      "para2Part2": "。",
+      "para3": "您将扎根稳固地抵达。您将心智清明地抵达。您已准备万全，去全然拥抱那段即将重塑生命的奇妙经历。"
+    },
+    "quote": {
+      "text": "“蜕变的深浅，完全取决于准备的用心。我们的使命就是在每一步陪伴您、赋能您 — 甚至在您踏上巴厘岛的瑜伽垫之前。”",
+      "author": "YogaGarhi Leadership Team",
+      "location": "Bali, Indonesia"
+    }
   }
 }

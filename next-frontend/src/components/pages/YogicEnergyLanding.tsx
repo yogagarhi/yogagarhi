@@ -3,16 +3,18 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import {
     Sparkles, ArrowRight, ArrowLeft, Check, Star,
-    Wind, Flame, Droplets, ChevronDown, Shield, Users, Award
+    Wind, Flame, Droplets, ChevronDown, Users, Award
 } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 
 const logoSrc = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
-// ─── Quiz Data ───────────────────────────────────────────────────────────────
-const quizQuestions = [
+// ─── Quiz Data (English default / baseline) ──────────────────────────────────
+const quizQuestionsEn = [
     {
         question: "How does your body typically feel in the morning?",
         emoji: "🌅",
@@ -70,7 +72,7 @@ const quizQuestions = [
 ];
 
 // ─── Dosha Results ────────────────────────────────────────────────────────────
-const doshaResults: Record<string, { name: string; element: string; icon: React.FC<{ className?: string }>; color: string; gradient: string; border: string; headline: string; description: string; practice: string; badge: string }> = {
+const doshaResultsEn: Record<string, { name: string; element: string; icon: React.FC<{ className?: string }>; color: string; gradient: string; border: string; headline: string; description: string; practice: string; badge: string }> = {
     vata: {
         name: "Vata",
         element: "Air & Ether",
@@ -134,10 +136,18 @@ const testimonials = [
     },
 ];
 
-// ─── Component ────────────────────────────────────────────────────────────────
-export default function YogicEnergyLanding() {
+interface YogicEnergyLandingProps {
+    locale?: string;
+}
+
+export default function YogicEnergyLanding({ locale: propLocale }: YogicEnergyLandingProps) {
+    const hookLocale = useLocale();
+    const locale = propLocale || hookLocale || "en";
+    const isEn = locale === "en";
+    const t = useTranslations("yogicEnergy");
+
     const router = useRouter();
-    const [step, setStep] = useState<number>(0); // 0 = intro, 1-6 = questions, 7 = capture, 8 = done
+    const [step, setStep] = useState<number>(0);
     const [answers, setAnswers] = useState<string[]>([]);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -160,14 +170,44 @@ export default function YogicEnergyLanding() {
         }
     };
 
+    // Build question options based on locale
+    let quizQuestions = quizQuestionsEn;
+    if (!isEn) {
+        try {
+            const rawQuiz = t.raw("quiz.questions");
+            if (Array.isArray(rawQuiz) && rawQuiz.length === 6) {
+                quizQuestions = quizQuestionsEn.map((q, idx) => ({
+                    ...q,
+                    question: rawQuiz[idx].question || q.question,
+                    options: q.options.map((opt, optIdx) => ({
+                        ...opt,
+                        text: (rawQuiz[idx].options && rawQuiz[idx].options[optIdx]) || opt.text,
+                    })),
+                }));
+            }
+        } catch (e) {
+            quizQuestions = quizQuestionsEn;
+        }
+    }
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (!name.trim() || !email.trim()) { setError("Please enter your name and email."); return; }
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError("Please enter a valid email."); return; }
+        if (!name.trim() || !email.trim()) { 
+            setError(isEn ? "Please enter your name and email." : (t("capture.errorRequired") || "Please enter your name and email.")); 
+            return; 
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { 
+            setError(isEn ? "Please enter a valid email." : (t("capture.errorInvalidEmail") || "Please enter a valid email.")); 
+            return; 
+        }
         setError("");
         setIsSubmitting(true);
         const dosha = getDominantDosha();
-        const result = doshaResults[dosha];
+        const result = doshaResultsEn[dosha];
+
+        const localizedDesc = !isEn ? (t(`results.${dosha}.description`) || result.description) : result.description;
+        const localizedPractice = !isEn ? (t(`results.${dosha}.practice`) || result.practice) : result.practice;
+
         try {
             await fetch("/api/send-email", {
                 method: "POST",
@@ -175,17 +215,19 @@ export default function YogicEnergyLanding() {
                 body: JSON.stringify({
                     name,
                     email,
+                    language: locale,
                     _subject: `Yogic Energy Quiz Result: ${result.name.toUpperCase()} — ${name}`,
                     source: "Yogic Energy Landing Page — Meta Ad",
                     form_type: "prakriti_quiz_landing",
                     dominant_dosha: dosha,
                     answers: answers.join(", "),
-                    _autoresponder: `Namaste ${name},\n\nYou are a ${result.name} type — ${result.element}.\n\n${result.description}\n\nYOUR IDEAL YOGA PRACTICE:\n${result.practice}\n\nOur teachers will reach out within 24 hours with a personalised yoga plan for your energy type.\n\nWith respect,\nYogaGarhi — Bali & Rishikesh`,
+                    _autoresponder: `Namaste ${name},\n\nYou are a ${result.name} type — ${result.element}.\n\n${localizedDesc}\n\nYOUR IDEAL YOGA PRACTICE:\n${localizedPractice}\n\nOur teachers will reach out within 24 hours with a personalised yoga plan for your energy type.\n\nWith respect,\nYogaGarhi — Bali & Rishikesh`,
                 }),
             });
-            router.push(`/thank-you?type=quiz&name=${dosha}`);
+            const redirectUrl = isEn ? `/thank-you?type=quiz&name=${dosha}` : `/${locale}/thank-you?type=quiz&name=${dosha}`;
+            router.push(redirectUrl);
         } catch {
-            setError("Something went wrong. Please try again.");
+            setError(isEn ? "Something went wrong. Please try again." : (t("capture.errorGeneral") || "Something went wrong. Please try again."));
         } finally {
             setIsSubmitting(false);
         }
@@ -194,10 +236,19 @@ export default function YogicEnergyLanding() {
     const currentQuestion = step >= 1 && step <= 6 ? quizQuestions[step - 1] : null;
     const progress = step === 0 ? 0 : Math.min((step / 6) * 100, 100);
 
+    const foundationLink = isEn ? "/teacher-training-foundation" : `/${locale}/teacher-training-foundation`;
+    const privacyLink = isEn ? "/privacy-policy" : `/${locale}/privacy-policy`;
+    const contactLink = isEn ? "/contact-us" : `/${locale}/contact-us`;
+
     return (
         <div className="min-h-screen bg-[#FBF8F3] flex flex-col">
             {/* ── Logo at Top ── */}
-            <div className="w-full flex justify-center bg-[#FBF8F3] py-8">
+            <div className="w-full relative flex justify-center bg-[#FBF8F3] py-8">
+                {/* Switcher */}
+                <div className="absolute top-4 right-4 sm:top-6 sm:right-8 z-20">
+                    <LanguageSwitcher />
+                </div>
+
                 <div className="flex flex-col items-center gap-1">
                     {/* Spiral icon */}
                     <Image
@@ -216,7 +267,7 @@ export default function YogicEnergyLanding() {
                     <div className="flex items-center gap-3 mt-0.5">
                         <span className="block w-8 h-px bg-[#2D7A70]/40" />
                         <span className="text-[10px] text-muted-foreground tracking-[0.22em] uppercase font-medium">
-                            Authentic Yoga School in Bali
+                            {isEn ? "Authentic Yoga School in Bali" : t("tagline")}
                         </span>
                         <span className="block w-8 h-px bg-[#2D7A70]/40" />
                     </div>
@@ -232,25 +283,34 @@ export default function YogicEnergyLanding() {
                         {/* Hero Badge */}
                         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200 mb-6">
                             <Sparkles className="w-4 h-4 text-amber-500 animate-pulse" />
-                            <span className="text-sm font-semibold text-amber-700">Free Prakriti Quiz — Takes 30 Seconds</span>
+                            <span className="text-sm font-semibold text-amber-700">
+                                {isEn ? "Free Prakriti Quiz — Takes 30 Seconds" : t("heroBadge")}
+                            </span>
                         </div>
 
                         {/* Headline */}
                         <h1 className="font-heading text-4xl sm:text-5xl font-bold text-[#1A4D45] leading-tight mb-4">
-                            What Is Your <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 bg-clip-text text-transparent">Unique Yogic Energy?</span>
+                            {isEn ? "What Is Your " : `${t("heroTitle")} `}
+                            <span className="bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 bg-clip-text text-transparent">
+                                {isEn ? "Unique Yogic Energy?" : t("heroTitleHighlight")}
+                            </span>
                         </h1>
                         <p className="text-lg text-[#1A4D45]/70 max-w-lg leading-relaxed mb-8">
-                            Answer 6 simple questions to discover your Dosha — and the exact yoga practice that will <strong className="text-[#1A4D45]">transform your body, calm your mind</strong>, and awaken your true nature.
+                            {isEn ? "Answer 6 simple questions to discover your Dosha — and the exact yoga practice that will " : `${t("heroDescPart1")} `}
+                            <strong className="text-[#1A4D45]">
+                                {isEn ? "transform your body, calm your mind" : t("heroDescBold")}
+                            </strong>
+                            {isEn ? ", and awaken your true nature." : t("heroDescPart2")}
                         </p>
 
                         {/* Visual energy types preview */}
                         <div className="flex items-center justify-center gap-4 mb-10 w-full max-w-sm">
                             {[
-                                { label: "Vata", emoji: "🌬️", color: "bg-sky-50 border-sky-200 text-sky-700" },
-                                { label: "Pitta", emoji: "🔥", color: "bg-orange-50 border-orange-200 text-orange-700" },
-                                { label: "Kapha", emoji: "🌊", color: "bg-emerald-50 border-emerald-200 text-emerald-700" },
+                                { key: "vata", label: isEn ? "Vata" : t("doshaPreview.vata"), emoji: "🌬️", color: "bg-sky-50 border-sky-200 text-sky-700" },
+                                { key: "pitta", label: isEn ? "Pitta" : t("doshaPreview.pitta"), emoji: "🔥", color: "bg-orange-50 border-orange-200 text-orange-700" },
+                                { key: "kapha", label: isEn ? "Kapha" : t("doshaPreview.kapha"), emoji: "🌊", color: "bg-emerald-50 border-emerald-200 text-emerald-700" },
                             ].map((d) => (
-                                <div key={d.label} className={`flex-1 flex flex-col items-center gap-1 py-3 px-2 rounded-2xl border ${d.color} text-sm font-semibold`}>
+                                <div key={d.key} className={`flex-1 flex flex-col items-center gap-1 py-3 px-2 rounded-2xl border ${d.color} text-sm font-semibold`}>
                                     <span className="text-2xl">{d.emoji}</span>
                                     {d.label}
                                 </div>
@@ -268,14 +328,14 @@ export default function YogicEnergyLanding() {
                         >
                             <span className="relative z-10 flex items-center justify-center gap-2">
                                 <Sparkles className="w-5 h-5" />
-                                Reveal My Yogic Energy Type
+                                {isEn ? "Reveal My Yogic Energy Type" : t("ctaReveal")}
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </span>
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                         </button>
 
                         <p className="mt-4 text-sm text-[#1A4D45]/50">
-                            Free · No credit card · Trusted by 500+ yoga students worldwide
+                            {isEn ? "Free · No credit card · Trusted by 500+ yoga students worldwide" : t("ctaSub")}
                         </p>
 
                         {/* Scroll cue */}
@@ -284,9 +344,9 @@ export default function YogicEnergyLanding() {
                         {/* Trust strip */}
                         <div className="mt-10 w-full grid grid-cols-3 gap-3 text-center">
                             {[
-                                { icon: Award, label: "Yoga Alliance", sub: "Certified School" },
-                                { icon: Users, label: "500+ Graduates", sub: "Worldwide" },
-                                { icon: Star, label: "5★ Rated", sub: "On Google" },
+                                { icon: Award, label: "Yoga Alliance", sub: isEn ? "Certified School" : t("trust.accreditationSub") },
+                                { icon: Users, label: isEn ? "500+ Graduates" : t("trust.graduates"), sub: isEn ? "Worldwide" : t("trust.graduatesSub") },
+                                { icon: Star, label: isEn ? "5★ Rated" : t("trust.rating"), sub: isEn ? "On Google" : t("trust.ratingSub") },
                             ].map(({ icon: Icon, label, sub }) => (
                                 <div key={label} className="flex flex-col items-center gap-1 py-4 rounded-2xl bg-white border border-[#2D7A70]/10">
                                     <Icon className="w-5 h-5 text-[#2D7A70]" />
@@ -305,8 +365,12 @@ export default function YogicEnergyLanding() {
                         {/* Progress */}
                         <div className="space-y-2">
                             <div className="flex justify-between text-xs text-[#1A4D45]/60 font-medium px-1">
-                                <span>Question {step} of 6</span>
-                                <span>{Math.round(progress)}% complete</span>
+                                <span>
+                                    {isEn ? `Question ${step} of 6` : t("quiz.questionOf", { current: step, total: 6 })}
+                                </span>
+                                <span>
+                                    {isEn ? `${Math.round(progress)}% complete` : t("quiz.percentComplete", { percent: Math.round(progress) })}
+                                </span>
                             </div>
                             <div className="h-2 bg-[#2D7A70]/10 rounded-full overflow-hidden">
                                 <div
@@ -349,7 +413,7 @@ export default function YogicEnergyLanding() {
                                 onClick={() => { setAnswers(answers.slice(0, -1)); setStep(step - 1); }}
                                 className="flex items-center gap-1.5 text-sm text-[#1A4D45]/50 hover:text-[#1A4D45] transition-colors self-start"
                             >
-                                <ArrowLeft className="w-4 h-4" /> Go back
+                                <ArrowLeft className="w-4 h-4" /> {isEn ? "Go back" : t("quiz.goBack")}
                             </button>
                         )}
                     </div>
@@ -366,18 +430,20 @@ export default function YogicEnergyLanding() {
                             </div>
 
                             <h2 className="font-heading text-2xl font-bold text-[#1A4D45] mb-2">
-                                Your result is ready! ✨
+                                {isEn ? "Your result is ready! ✨" : t("capture.title")}
                             </h2>
                             <p className="text-[#1A4D45]/70 mb-8 leading-relaxed">
-                                Enter your details and we'll instantly reveal your unique yogic energy type — along with a personalised yoga practice recommendation.
+                                {isEn ? "Enter your details and we'll instantly reveal your unique yogic energy type — along with a personalised yoga practice recommendation." : t("capture.description")}
                             </p>
 
                             <form onSubmit={handleSubmit} className="flex flex-col gap-4 text-left">
                                 <div>
-                                    <label className="text-sm font-semibold text-[#1A4D45] block mb-1.5">Your Name *</label>
+                                    <label className="text-sm font-semibold text-[#1A4D45] block mb-1.5">
+                                        {isEn ? "Your Name *" : t("capture.nameLabel")}
+                                    </label>
                                     <input
                                         type="text"
-                                        placeholder="Enter your full name"
+                                        placeholder={isEn ? "Enter your full name" : t("capture.namePlaceholder")}
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
                                         required
@@ -385,10 +451,12 @@ export default function YogicEnergyLanding() {
                                     />
                                 </div>
                                 <div>
-                                    <label className="text-sm font-semibold text-[#1A4D45] block mb-1.5">Email Address *</label>
+                                    <label className="text-sm font-semibold text-[#1A4D45] block mb-1.5">
+                                        {isEn ? "Email Address *" : t("capture.emailLabel")}
+                                    </label>
                                     <input
                                         type="email"
-                                        placeholder="Enter your email"
+                                        placeholder={isEn ? "Enter your email" : t("capture.emailPlaceholder")}
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         required
@@ -409,10 +477,10 @@ export default function YogicEnergyLanding() {
                     transition-all duration-300 mt-2"
                                 >
                                     <span className="relative z-10 flex items-center justify-center gap-2">
-                                        {isSubmitting ? "Revealing..." : (
+                                        {isSubmitting ? (isEn ? "Revealing..." : t("capture.submitting")) : (
                                             <>
                                                 <Sparkles className="w-5 h-5" />
-                                                Reveal My Energy Type →
+                                                {isEn ? "Reveal My Energy Type →" : t("capture.submitBtn")}
                                             </>
                                         )}
                                     </span>
@@ -420,7 +488,7 @@ export default function YogicEnergyLanding() {
                                 </button>
 
                                 <p className="text-xs text-center text-[#1A4D45]/40">
-                                    We respect your privacy. No spam, ever. Unsubscribe anytime.
+                                    {isEn ? "We respect your privacy. No spam, ever. Unsubscribe anytime." : t("capture.privacyNote")}
                                 </p>
                             </form>
                         </div>
@@ -431,24 +499,24 @@ export default function YogicEnergyLanding() {
                 {step === 0 && (
                     <div className="w-full max-w-2xl mt-12">
                         <h2 className="font-heading text-2xl font-bold text-center text-[#1A4D45] mb-6">
-                            What Our Students Say
+                            {isEn ? "What Our Students Say" : t("testimonials.heading")}
                         </h2>
                         <div className="flex flex-col gap-4">
-                            {testimonials.map((t, i) => (
+                            {testimonials.map((tItem, i) => (
                                 <div key={i} className="bg-white rounded-2xl p-6 border border-[#2D7A70]/10 shadow-sm">
                                     <div className="flex items-center gap-0.5 mb-3">
                                         {[...Array(5)].map((_, j) => (
                                             <Star key={j} className="w-4 h-4 fill-amber-400 text-amber-400" />
                                         ))}
                                     </div>
-                                    <p className="text-[#1A4D45]/80 text-sm leading-relaxed mb-4 italic">"{t.text}"</p>
+                                    <p className="text-[#1A4D45]/80 text-sm leading-relaxed mb-4 italic">"{tItem.text}"</p>
                                     <div className="flex items-center gap-3">
                                         <div className="w-9 h-9 rounded-full bg-[#2D7A70]/10 flex items-center justify-center font-bold text-[#2D7A70] text-sm">
-                                            {t.avatar}
+                                            {tItem.avatar}
                                         </div>
                                         <div>
-                                            <p className="text-sm font-semibold text-[#1A4D45]">{t.name}</p>
-                                            <p className="text-xs text-[#1A4D45]/50">{t.location}</p>
+                                            <p className="text-sm font-semibold text-[#1A4D45]">{tItem.name}</p>
+                                            <p className="text-xs text-[#1A4D45]/50">{tItem.location}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -458,7 +526,7 @@ export default function YogicEnergyLanding() {
                         {/* Bottom CTA — 2 Days Free Program */}
                         <div className="mt-8 text-center">
                             <Link
-                                href="/teacher-training-foundation"
+                                href={foundationLink}
                                 className="relative w-full max-w-md h-16 text-lg font-bold rounded-2xl overflow-hidden group
                   bg-gradient-to-r from-amber-400 via-orange-500 to-rose-500
                   text-white shadow-2xl shadow-orange-500/40
@@ -467,7 +535,7 @@ export default function YogicEnergyLanding() {
                             >
                                 <span className="relative z-10 flex items-center justify-center gap-2">
                                     <Sparkles className="w-5 h-5" />
-                                    Join 2 Days Free Yoga Teacher Training
+                                    {isEn ? "Join 2 Days Free Yoga Teacher Training" : t("ctaBottom.button")}
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </span>
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
@@ -482,13 +550,13 @@ export default function YogicEnergyLanding() {
             {step === 0 && (
                 <div className="fixed bottom-0 left-0 right-0 p-4 bg-white/95 backdrop-blur-md border-t border-[#2D7A70]/10 shadow-lg z-40 sm:hidden">
                     <Link
-                        href="/teacher-training-foundation"
+                        href={foundationLink}
                         className="w-full h-14 text-base font-bold rounded-2xl
               bg-gradient-to-r from-amber-400 via-orange-500 to-rose-500
               text-white shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
                     >
                         <Sparkles className="w-4 h-4" />
-                        Join 2 Days Free Training
+                        {isEn ? "Join 2 Days Free Training" : t("ctaBottom.sticky")}
                     </Link>
                 </div>
             )}
@@ -496,8 +564,12 @@ export default function YogicEnergyLanding() {
             {/* ── Footer ── */}
             <footer className="text-center py-6 text-xs text-[#1A4D45]/40 border-t border-[#2D7A70]/10">
                 © {new Date().getFullYear()} YogaGarhi · Bali & Rishikesh ·{" "}
-                <a href="/privacy-policy" className="hover:text-[#2D7A70] underline">Privacy</a> ·{" "}
-                <a href="/contact-us" className="hover:text-[#2D7A70] underline">Contact</a>
+                <Link href={privacyLink} className="hover:text-[#2D7A70] underline">
+                    {isEn ? "Privacy" : t("footer.privacy")}
+                </Link> ·{" "}
+                <Link href={contactLink} className="hover:text-[#2D7A70] underline">
+                    {isEn ? "Contact" : t("footer.contact")}
+                </Link>
             </footer>
         </div>
     );

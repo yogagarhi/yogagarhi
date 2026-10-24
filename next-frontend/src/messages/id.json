@@ -4736,5 +4736,486 @@
     "guidanceSub": "Tim kami siap membantu terkait penerbangan, visa, dan penyesuaian tanggal perjalanan Anda.",
     "reschedulePolicyTitle": "Kebijakan Penjadwalan Ulang",
     "reschedulePolicyText": "Jadwal dapat diubah dalam kurun waktu 12 bulan. Tidak ada pengembalian dana setelah Hari ke-1."
+  },
+  "yogicEnergy": {
+    "metaTitle": "Temukan Energi Yogik Unik Anda",
+    "metaDesc": "Ikuti kuis Prakriti 6 pertanyaan kami dan temukan apakah Anda Vata, Pitta, atau Kapha — serta latihan yoga mana yang benar-benar akan mengubah hidup Anda.",
+    "ogTitle": "Apa Tipe Energi Yogik Anda?",
+    "ogDesc": "Temukan konstitusi Dosha unik Anda dengan kuis Prakriti 6 pertanyaan gratis dari YogaGarhi.",
+    "tagline": "Sekolah Yoga Otentik di Bali",
+    "heroBadge": "Kuis Prakriti Gratis — Hanya 30 Detik",
+    "heroTitle": "Apa",
+    "heroTitleHighlight": "Energi Yogik Unik Anda?",
+    "heroDescPart1": "Jawab 6 pertanyaan sederhana untuk menemukan Dosha Anda — dan latihan yoga tepat yang akan",
+    "heroDescBold": "mengubah tubuh Anda, menenangkan pikiran Anda",
+    "heroDescPart2": ", dan membangkitkan jati diri sejati Anda.",
+    "doshaPreview": {
+      "vata": "Vata",
+      "pitta": "Pitta",
+      "kapha": "Kapha"
+    },
+    "ctaReveal": "Ungkap Tipe Energi Yogik Saya",
+    "ctaSub": "Gratis · Tanpa kartu kredit · Dipercaya oleh 500+ siswa yoga di seluruh dunia",
+    "trust": {
+      "accreditation": "Yoga Alliance",
+      "accreditationSub": "Sekolah Bersertifikat",
+      "graduates": "500+ Lulusan",
+      "graduatesSub": "Di Seluruh Dunia",
+      "rating": "Rating 5★",
+      "ratingSub": "Di Google"
+    },
+    "quiz": {
+      "questionOf": "Pertanyaan {current} dari {total}",
+      "percentComplete": "{percent}% selesai",
+      "goBack": "Kembali",
+      "questions": [
+        {
+          "question": "Bagaimana tubuh Anda biasanya terasa di pagi hari?",
+          "options": [
+            "Ringan dan berenergi — Saya siap bergerak",
+            "Hangat dan bersemangat — Mari kita mulai",
+            "Berat dan lambat untuk memulai — Saya butuh waktu"
+          ]
+        },
+        {
+          "question": "Apa yang menggambarkan pola mental Anda saat stres?",
+          "options": [
+            "Pikiran berpacu dan rasa cemas",
+            "Mudah tersinggung dan fokus yang intens",
+            "Menarik diri dan motivasi rendah"
+          ]
+        },
+        {
+          "question": "Bagaimana Anda menggambarkan ritme energi alami Anda?",
+          "options": [
+            "Berubah-ubah — Saya bekerja dalam lonjakan kreatif",
+            "Fokus dan konsisten dengan tujuan yang jelas",
+            "Tenang, mantap, dan sangat bertahan lama"
+          ]
+        },
+        {
+          "question": "Bagaimana hubungan Anda dengan panas?",
+          "options": [
+            "Saya menyukai kehangatan dan tidak suka dingin",
+            "Tubuh saya cenderung hangat dan lebih suka lingkungan sejuk",
+            "Saya netral dan mudah beradaptasi dengan suhu"
+          ]
+        },
+        {
+          "question": "Bagaimana Anda biasanya memproses emosi?",
+          "options": [
+            "Cepat merasakan, cepat melepaskan",
+            "Perasaan intens yang meninggalkan kesan mendalam",
+            "Pemrosesan mendalam dan lambat — Saya cenderung menahan"
+          ]
+        },
+        {
+          "question": "Apa yang paling menggambarkan kecenderungan gaya hidup Anda?",
+          "options": [
+            "Saya mendambakan pergerakan, perubahan, dan variasi",
+            "Saya berkembang dalam pencapaian, struktur, dan tujuan",
+            "Saya menghargai rutinitas, stabilitas, dan kenyamanan"
+          ]
+        }
+      ]
+    },
+    "results": {
+      "vata": {
+        "name": "Vata",
+        "element": "Udara & Eter",
+        "badge": "🌬️ Tipe Udara",
+        "headline": "Anda adalah jiwa Vata — Kreatif, Bebas & Halus",
+        "description": "Pikiran Anda bergerak seperti angin — cepat, imajinatif, dan penuh ide. Anda diberkati dengan kreativitas dan hati yang terbuka, namun Anda memerlukan latihan grounding untuk menyalurkan energi Anda secara konsisten.",
+        "practice": "Grounding Hatha Yoga, Vinyasa flows yang lambat, dan Pranayama mendalam untuk menenangkan pikiran yang sibuk."
+      },
+      "pitta": {
+        "name": "Pitta",
+        "element": "Api & Air",
+        "badge": "🔥 Tipe Api",
+        "headline": "Anda adalah jiwa Pitta — Berfokus, Tangguh & Penuh Gairah",
+        "description": "Anda adalah pemimpin alami dengan kecerdasan tajam dan ambisi membara. Api Anda mendorong transformasi — dalam diri Anda dan orang lain. Latihan yoga Anda harus menyeimbangkan, bukan memperkuat, intensitas Anda.",
+        "practice": "Yin Yoga yang menyejukkan, Vinyasa flows moderat, dan pernapasan Sitali untuk menyeimbangkan api dalam diri Anda."
+      },
+      "kapha": {
+        "name": "Kapha",
+        "element": "Bumi & Air",
+        "badge": "🌊 Tipe Bumi",
+        "headline": "Anda adalah jiwa Kapha — Mantap, Mengayomi & Mendalam",
+        "description": "Anda adalah fondasi yang diandalkan orang lain — sabar, hangat, dan penuh kasih mendalam. Latihan Anda perlu membangkitkan dan menyegarkan sifat mantap Anda, membantu Anda mengalir lebih bebas melalui transformasi.",
+        "practice": "Ashtanga dinamis, Vinyasa flows yang membangkitkan energi, dan pernapasan Kapalabhati untuk menyalakan vitalitas batin Anda."
+      }
+    },
+    "capture": {
+      "title": "Hasil Anda sudah siap! ✨",
+      "description": "Masukkan detail Anda dan kami akan langsung mengungkap tipe energi yogik unik Anda — bersama dengan rekomendasi latihan yoga yang dipersonalisasi.",
+      "nameLabel": "Nama Anda *",
+      "namePlaceholder": "Masukkan nama lengkap Anda",
+      "emailLabel": "Alamat Email *",
+      "emailPlaceholder": "Masukkan email Anda",
+      "submitBtn": "Ungkap Tipe Energi Saya →",
+      "submitting": "Mengungkap...",
+      "privacyNote": "Kami menghormati privasi Anda. Tanpa spam. Berhenti berlangganan kapan saja.",
+      "errorRequired": "Silakan masukkan nama dan email Anda.",
+      "errorInvalidEmail": "Silakan masukkan email yang valid.",
+      "errorGeneral": "Terjadi kesalahan. Silakan coba lagi."
+    },
+    "testimonials": {
+      "heading": "Apa Kata Siswa Kami"
+    },
+    "ctaBottom": {
+      "button": "Gabung Pelatihan Guru Yoga 2 Hari Gratis",
+      "sticky": "Gabung Pelatihan 2 Hari Gratis"
+    },
+    "footer": {
+      "privacy": "Privasi",
+      "contact": "Kontak"
+    }
+  },
+  "foundation": {
+    "metaTitle": "Kursus Fondasi Guru Yoga 2 Hari",
+    "metaDesc": "Ikuti Masterclass Fondasi Guru Yoga 2 Hari dari YogaGarhi. Temukan cara menjadi guru bersertifikat dan memulai karier yang bermakna.",
+    "ogTitle": "Fondasi Guru Yoga 2 Hari | Mulai Karier Anda",
+    "ogDesc": "Ikuti Masterclass Fondasi Guru Yoga 2 Hari dari YogaGarhi. Temukan jalan menjadi guru yoga bersertifikat dan bangun karier yang penuh tujuan.",
+    "tagline": "Sekolah Yoga Otentik di Bali",
+    "batchNotice": {
+      "prefix": "Angkatan Berikutnya:",
+      "schedule": "10:00 AM CET (Waktu Jerman) | 5:00 PM (Singapura) | 6:00 PM (Korea Selatan)"
+    },
+    "hero": {
+      "subtitlePrefix": "Ragu Memilih YTTC yang Tepat?",
+      "subtitleHighlight": "Rasakan Terlebih Dahulu",
+      "title": "Masterclass Fondasi Pelatihan Guru Yoga 2 Hari Gratis",
+      "descPara1": "Di YogaGarhi, kami memahami bahwa memilih YTTC jauh lebih bermakna daripada sekadar sertifikat.",
+      "descPara2Part1": "Ini tentang",
+      "descPara2Safe": "merasa aman",
+      "descPara2Part2": ", ini tentang",
+      "descPara2Guided": "merasa dibimbing",
+      "descPara2Part3": ", dan tentang mengetahui bahwa Anda berada di",
+      "descPara2Hands": "tangan yang tepat",
+      "descPara3": "Itulah mengapa kami menjaga segalanya tetap sederhana dan transparan.",
+      "badgeSeatsLeft": "HANYA TERSISA 12 TEMPAT",
+      "priceFree": "FREE",
+      "priceRegular": "Harga Reguler $99",
+      "ctaButton": "RESERVASI TEMPAT GRATIS SAYA SEKARANG",
+      "statStudents": "2,500+",
+      "statStudentsLabel": "Siswa",
+      "statRating": "5/5",
+      "statRatingLabel": "Rating"
+    },
+    "transformation": {
+      "tag": "Langkah Maju Anda",
+      "heading": "Manfaat Pengalaman 2 Hari Ini untuk Anda",
+      "beforeCard": {
+        "label": "Sebelum Bergabung",
+        "title": "Anda Mungkin Merasakan...",
+        "items": [
+          "\"Bagaimana jika saya memilih sekolah yoga yang salah?\"",
+          "\"Apakah saya cukup fleksibel atau mahir untuk bergabung?\"",
+          "\"Bisakah saya benar-benar mempercayai apa yang saya lihat secara online?\"",
+          "\"Saya ingin melakukan sesuatu yang lebih bermakna — sesuatu yang membantu orang lain.\"",
+          "\"Yoga telah mengubah saya secara pribadi… mungkin saatnya membagikannya.\"",
+          "\"Saya selalu ingin mengajar, tetapi saya tidak tahu bagaimana memulainya.\"",
+          "\"Saya mencari jalan yang memberi tujuan hidup sekaligus kemandirian.\""
+        ]
+      },
+      "afterCard": {
+        "label": "Setelah Menyelesaikan",
+        "title": "Anda Akan Mendapatkan...",
+        "items": [
+          "Temukan energi yogik unik Anda yang berakar pada kearifan Ayurveda kuno",
+          "Pahami bagaimana sertifikasi TTC membuka jalur nyata untuk mengajar & berpenghasilan",
+          "Dapatkan kejelasan tentang transisi menuju karier yang bermakna",
+          "Pelajari langkah-langkah awal untuk menjadi guru yoga bersertifikat",
+          "Berangkat dengan arahan, rasa percaya diri, dan panggilan jiwa yang kuat"
+        ]
+      },
+      "ctaButton": "YA, SAYA INGIN KURIKULUM INI"
+    },
+    "curriculum": {
+      "tag": "KURIKULUM ANDA",
+      "heading": "Inilah yang Akan Anda Pelajari",
+      "subheading": "Perjalanan terstruktur 2 hari dari fondasi yoga hingga kejelasan karier",
+      "day1": {
+        "tag": "Hari 1",
+        "title": "Fondasi Yoga",
+        "items": [
+          "Pelajari dasar-dasar alignment untuk latihan yang aman dan efektif",
+          "Temukan energi yogik unik Anda yang berakar pada kearifan Ayurveda kuno",
+          "Apa itu Pengajaran Yoga, melampaui Asanas?",
+          "8 Fondasi Perumah Tangga dari Yoga Klasik",
+          "Bagaimana Guru Yoga Menciptakan Transformasi Nyata pada Manusia",
+          "Peran Disiplin, Napas & Gaya Hidup dalam Mengajar",
+          "Mengapa Mengajar Yoga Menjadi Jalur Karier yang Penuh Makna"
+        ]
+      },
+      "day2": {
+        "tag": "Hari 2",
+        "title": "Mengubah Yoga Menjadi Karier",
+        "items": [
+          "Rasakan latihan yoga terpandu selama 30 menit",
+          "Jelajahi prinsip-prinsip dasar filosofi yoga",
+          "Bagaimana Sertifikasi TTC Membentuk Pengajaran Yoga Modern",
+          "Keterampilan Mengajar: Sequencing, Cues, Keselamatan & Kehadiran",
+          "Ekonomi Pengajaran Yoga Modern: Studio, Perusahaan, Online",
+          "Cara Membangun Karier Mengajar yang Bermakna dengan Penghasilan Selaras",
+          "Cara Memonetisasi Pengajaran Yoga Tanpa Kehilangan Otentisitas"
+        ]
+      },
+      "ctaButton": "YA, SAYA INGIN KURIKULUM INI"
+    },
+    "bonuses": {
+      "tag": "💥 BONUS EKSKLUSIF (NILAI $120+) — FREE",
+      "heading": "Dapatkan Bonus Ini",
+      "headingHighlight": "Saat Anda Mendaftar Sekarang",
+      "items": [
+        {
+          "title": "2 Sesi Tanya Jawab Interaktif",
+          "value": "$45",
+          "desc": "Dapatkan jawaban atas pertanyaan spesifik Anda langsung dari guru master."
+        },
+        {
+          "title": "Simulasi Latihan Terpandu",
+          "value": "$60",
+          "desc": "Rasakan langkah pertama memimpin kelas dalam lingkungan yang aman."
+        },
+        {
+          "title": "Sertifikat Partisipasi",
+          "value": "$20",
+          "desc": "Tanda langkah awal Anda dalam menapaki jalur fondasi ini."
+        }
+      ],
+      "boxTitle": "Total Nilai: $120+ • Hari ini milik Anda secara FREE",
+      "timerLabels": {
+        "hrs": "Jam",
+        "min": "Mnt",
+        "sec": "Dtk"
+      },
+      "ctaButton": "RESERVASI TEMPAT GRATIS SAYA",
+      "timerDisclaimer": "*Bonus berakhir saat penghitung waktu mencapai angka nol"
+    },
+    "legacy": {
+      "quote": "\"Misi kami adalah membawa kembali setiap orang ke akar Yoga, di mana setiap napas menjadi pintu gerbang menuju ketenangan batin.\"",
+      "founder": "Sachin Ji",
+      "role": "Pendiri, YogaGarhi",
+      "heading": "Mengapa Mengikuti Fondasi Ini?",
+      "desc": "YogaGarhi mewakili silsilah Himalaya yang otentik. Kami tidak hanya mengajarkan asana; kami menyediakan cara hidup yang telah mengubah ribuan kehidupan.",
+      "features": [
+        {
+          "title": "Silsilah Otentik",
+          "desc": "Berakar pada kearifan tradisional Himalaya, bukan tren komersial."
+        },
+        {
+          "title": "Hasil Terbukti",
+          "desc": "Bergabunglah dengan 2,500+ profesional yang memulai perjalanan bersama kami."
+        },
+        {
+          "title": "Jalur TTC",
+          "desc": "Jembatan sempurna menuju sertifikasi Yoga Alliance kami yang diakui secara global."
+        }
+      ]
+    },
+    "faq": {
+      "heading": "Pertanyaan yang Sering Diajukan",
+      "subheading": "Segala hal yang perlu Anda ketahui sebelum bergabung.",
+      "items": [
+        {
+          "q": "Apakah fondasi 2 Hari ini merupakan sertifikasi penuh?",
+          "a": "Tidak. Ini adalah pengalaman persiapan yang dirancang untuk memberi Anda kejelasan, kepercayaan diri, dan peta jalan menuju sertifikasi 200-Hour TTC."
+        },
+        {
+          "q": "Apakah saya memerlukan pengalaman yoga sebelumnya?",
+          "a": "Tidak diperlukan pengalaman mengajar sebelumnya — hanya rasa ingin tahu dan kesediaan untuk belajar tentang jalan yoga."
+        },
+        {
+          "q": "Apakah saya akan mendapatkan sertifikat?",
+          "a": "Ya — Sertifikat Partisipasi yang menunjukkan Anda telah menyelesaikan pengalaman fondasi di YogaGarhi."
+        },
+        {
+          "q": "Apakah ini menjamin penerimaan di TTC?",
+          "a": "Ini memberi Anda kejelasan dan persiapan prioritas — penerimaan untuk program TTC penuh kami tetap merupakan proses terpisah."
+        }
+      ]
+    },
+    "reviews": {
+      "heading": "Ulasan Google Terverifikasi",
+      "ratingText": "Rating 5.0/5 Bintang",
+      "storiesText": "• Kisah transformasi dari seluruh penjuru dunia"
+    },
+    "schedule": {
+      "tag": "Dukungan Global",
+      "heading": "Jadwal Dukungan & Tanya Jawab Langsung",
+      "subheading": "Terhubung langsung dengan pendiri dan guru utama kami untuk mendapatkan jawaban atas pertanyaan kursus Anda. Pilih sesi yang paling sesuai dengan zona waktu lokal Anda.",
+      "sessions": [
+        {
+          "tag": "Sesi A",
+          "badge": "Ramah APAC",
+          "title": "Ramah Asia-Pasifik",
+          "dayLabel": "Hari:",
+          "day": "Selasa",
+          "timeLabel": "Waktu (Bali):",
+          "time": "5:00 PM WITA",
+          "timeSydney": "• Sydney: 7:00 PM AEST",
+          "timeUsEast": "• US East: 7:00 AM EDT",
+          "bestForLabel": "Terbaik untuk:",
+          "bestForDesc": "Australia, Selandia Baru, dan peserta Pantai Timur AS yang bangun pagi."
+        },
+        {
+          "tag": "Sesi B",
+          "badge": "Ramah Eropa",
+          "title": "Ramah Eropa",
+          "dayLabel": "Hari:",
+          "day": "Kamis",
+          "timeLabel": "Waktu (Bali):",
+          "time": "7:00 PM WITA",
+          "timeUk": "• Inggris: 12:00 PM BST",
+          "timeGermany": "• Jerman: 1:00 PM CEST",
+          "bestForLabel": "Terbaik untuk:",
+          "bestForDesc": "Inggris Raya, Jerman, dan seluruh Eropa."
+        },
+        {
+          "tag": "Sesi C",
+          "badge": "Ramah Amerika",
+          "title": "Ramah Amerika",
+          "dayLabel": "Hari:",
+          "day": "Sabtu",
+          "timeLabel": "Waktu (Bali):",
+          "time": "9:00 AM WITA",
+          "timeUsWest": "• US Pantai Barat: 7:00 PM (Jumat)",
+          "timeUsEast": "• US Pantai Timur: 10:00 PM (Jumat)",
+          "bestForLabel": "Terbaik untuk:",
+          "bestForDesc": "Amerika Serikat dan Kanada."
+        }
+      ],
+      "table": {
+        "heading": "Tabel Konversi Zona Waktu Cepat",
+        "colRegion": "Wilayah",
+        "colTimezone": "Zona Waktu",
+        "colLocalTime": "Waktu Lokal Anda",
+        "colBaliTime": "Waktu Bali (Dasar)",
+        "rows": [
+          {
+            "region": "Australia (Sydney/Melbourne)",
+            "tz": "AEST (UTC+10/+11)",
+            "local": "7:00 – 8:00 PM",
+            "base": "5:00 – 6:00 PM"
+          },
+          {
+            "region": "Inggris Raya (London)",
+            "tz": "BST/GMT (UTC+0/+1)",
+            "local": "12:00 – 1:00 PM",
+            "base": "7:00 – 8:00 PM"
+          },
+          {
+            "region": "Jerman (Berlin)",
+            "tz": "CEST (UTC+1/+2)",
+            "local": "7:00 – 8:00 PM",
+            "base": "1:00 – 2:00 AM"
+          },
+          {
+            "region": "US Pantai Timur (New York)",
+            "tz": "EDT (UTC-4)",
+            "local": "7:00 – 8:00 PM",
+            "base": "6:00 – 7:00 AM"
+          },
+          {
+            "region": "US Pantai Barat (Los Angeles)",
+            "tz": "PDT (UTC-7)",
+            "local": "7:00 – 8:00 PM",
+            "base": "9:00 – 10:00 AM"
+          }
+        ]
+      }
+    },
+    "finalCta": {
+      "heading": "Siap Memulai Jalur Pengajaran Yoga Anda?",
+      "subParaPart1": "Amankan tempat Anda di Masterclass Fondasi 2 Hari kami berikutnya secara",
+      "subParaFree": "Gratis",
+      "subParaPart2": "(Tempat Sangat Terbatas).",
+      "ctaButton": "YA, MARI MULAI SECARA GRATIS",
+      "contactText": "Punya pertanyaan? Bicaralah dengan kami"
+    },
+    "stickyBar": {
+      "priceFree": "FREE",
+      "priceRegular": "$99",
+      "badgeSeatsLeft": "HANYA TERSISA 12 TEMPAT",
+      "button": "Gabung Sekarang"
+    },
+    "dialog": {
+      "title": "Klaim Tempat Gratis Anda",
+      "desc": "Masukkan detail Anda di bawah ini untuk mendapatkan akses instan ke Masterclass Fondasi.",
+      "nameLabel": "Nama Lengkap",
+      "namePlaceholder": "Masukkan nama Anda",
+      "emailLabel": "Alamat Email",
+      "emailPlaceholder": "Masukkan email Anda",
+      "submitButton": "Konfirmasi Tempat Gratis Saya",
+      "submitting": "Mendaftarkan...",
+      "trustNote": "100% Gratis · Tanpa perlu kartu kredit · Detail akses instan",
+      "toastSuccessTitle": "Pendaftaran Berhasil!",
+      "toastSuccessDesc": "Namaste! Kami telah menerima detail Anda.",
+      "toastErrorTitle": "Terjadi kesalahan",
+      "toastErrorDesc": "Silakan coba lagi atau hubungi kami langsung."
+    }
+  },
+  "preYttc": {
+    "metaTitle": "Mulai Sebelum Anda Memulai | Dukungan Pre-YTTC",
+    "metaDesc": "Bersiaplah dengan lembut untuk transformasi. Temukan program persiapan eksklusif 'Sebelum Anda Bergabung' untuk pelatihan guru yoga di Bali.",
+    "nav": {
+      "transformWithin": "Transform Within",
+      "courses": "Kursus",
+      "contact": "Kontak"
+    },
+    "hero": {
+      "badge": "Dukungan Pre-YTTC Revolusioner",
+      "titlePart1": "Jangan Langsung Melompat ke Transformasi —",
+      "titleHighlight": "Bersiaplah dengan Lembut Untuknya",
+      "description": "Di YogaGarhi, kami percaya perjalanan Anda dimulai jauh sebelum Anda tiba di Bali. Program eksklusif \"Sebelum Anda Bergabung\" kami memastikan Anda tiba dengan tenang, percaya diri, dan siap untuk transformasi mendalam.",
+      "form": {
+        "emailPlaceholder": "Masukkan email Anda untuk panduan",
+        "submitBtn": "Dapatkan Panduan Persiapan Gratis",
+        "submitting": "Mengirimkan...",
+        "limitedSpots": "Tempat terbatas tersedia untuk angkatan 2026"
+      }
+    },
+    "card": {
+      "badge": "SEKOLAH PRE-YTTC PERTAMA DI DUNIA",
+      "title": "Mulai Sebelum Anda Memulai",
+      "descPart1": "Persiapan",
+      "descBadge": "Online Gratis & Opsional",
+      "descPart2": "ini dirancang bagi mereka yang ingin tiba dengan perasaan 100% siap.",
+      "items": [
+        {
+          "title": "Persiapkan Tubuh Anda",
+          "desc": "Mulai dengan latihan lembut untuk mempersiapkan fisik"
+        },
+        {
+          "title": "Pahami Kurikulum",
+          "desc": "Tinjau mata pelajaran dan metodologi pengajaran"
+        },
+        {
+          "title": "Pahami Konsep Dasar",
+          "desc": "Pelajari prinsip-prinsip yogik mendasar"
+        },
+        {
+          "title": "Merasa Percaya Diri & Jelas",
+          "desc": "Tiba dengan tenang, tidak kewalahan"
+        }
+      ]
+    },
+    "content": {
+      "badge": "Gratis & Opsional",
+      "headingPart1": "Mulai Transformasi Anda",
+      "headingToday": "Hari Ini",
+      "headingPart2": ", Bukan Hanya di Bali.",
+      "para1": "Sebagian besar sekolah yoga langsung membawa Anda ke jadwal intensif. Di YogaGarhi, kami melakukan sesuatu yang berbeda.",
+      "para2Part1": "Kami menawarkan Program Persiapan Online \"Sebelum Anda Bergabung\" yang komprehensif sehingga saat pelatihan dimulai,",
+      "para2Panic": "Anda tidak merasa panik",
+      "para2Part2": ".",
+      "para3": "Anda tiba dengan tenang. Anda tiba dengan pemahaman jelas. Anda tiba siap menyambut pengalaman yang mengubah hidup yang menanti Anda."
+    },
+    "quote": {
+      "text": "\"Kedalaman transformasi bergantung pada kualitas persiapan. Misi kami adalah mendukung Anda di setiap langkah—bahkan sebelum Anda menginjakkan kaki di atas matras di Bali.\"",
+      "author": "YogaGarhi Leadership Team",
+      "location": "Bali, Indonesia"
+    }
   }
 }

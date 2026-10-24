@@ -4736,5 +4736,486 @@
     "guidanceSub": "Notre équipe vous conseille pour vos vols, visas et l'organisation de votre séjour.",
     "reschedulePolicyTitle": "Conditions de report de formation",
     "reschedulePolicyText": "Report flexible possible sous 12 mois. Aucun remboursement après le Jour 1."
+  },
+  "yogicEnergy": {
+    "metaTitle": "Révélez Votre Énergie Yogique Unique",
+    "metaDesc": "Faites notre quiz Prakriti en 6 questions et découvrez si vous êtes Vata, Pitta ou Kapha — et quelle pratique de yoga transformera réellement votre vie.",
+    "ogTitle": "Quel Est Votre Type d'Énergie Yogique ?",
+    "ogDesc": "Découvrez votre constitution Dosha unique grâce au quiz Prakriti gratuit en 6 questions de YogaGarhi.",
+    "tagline": "École de Yoga Authentique à Bali",
+    "heroBadge": "Quiz Prakriti Gratuit — Seulement 30 Secondes",
+    "heroTitle": "Quelle Est Votre",
+    "heroTitleHighlight": "Énergie Yogique Unique ?",
+    "heroDescPart1": "Répondez à 6 questions simples pour découvrir votre Dosha — et la pratique de yoga exacte qui",
+    "heroDescBold": "transformera votre corps, apaisera votre esprit",
+    "heroDescPart2": " et éveillera votre véritable nature.",
+    "doshaPreview": {
+      "vata": "Vata",
+      "pitta": "Pitta",
+      "kapha": "Kapha"
+    },
+    "ctaReveal": "Révéler Mon Type d'Énergie Yogique",
+    "ctaSub": "Gratuit · Sans carte bancaire · Recommandé par plus de 500+ élèves de yoga dans le monde",
+    "trust": {
+      "accreditation": "Yoga Alliance",
+      "accreditationSub": "École Certifiée",
+      "graduates": "500+ Diplômés",
+      "graduatesSub": "Dans le Monde",
+      "rating": "Note 5★",
+      "ratingSub": "Sur Google"
+    },
+    "quiz": {
+      "questionOf": "Question {current} sur {total}",
+      "percentComplete": "{percent}% complété",
+      "goBack": "Retour",
+      "questions": [
+        {
+          "question": "Comment votre corps se sent-il généralement le matin ?",
+          "options": [
+            "Léger et plein d'énergie — Prêt à bouger",
+            "Chaud et dynamique — Allons-y sans attendre",
+            "Lourd et lent au démarrage — J'ai besoin de temps"
+          ]
+        },
+        {
+          "question": "Qu'est-ce qui décrit votre état d'esprit sous pression ?",
+          "options": [
+            "Pensées incessantes et agitation",
+            "Irritabilité et concentration intense",
+            "Repli sur soi et baisse de motivation"
+          ]
+        },
+        {
+          "question": "Comment décririez-vous votre rythme naturel d'énergie ?",
+          "options": [
+            "Fluctuant — Je fonctionne par élans créatifs",
+            "Focalisé et constant avec des objectifs précis",
+            "Calme, régulier et très endurant"
+          ]
+        },
+        {
+          "question": "Quelle est votre relation avec la chaleur ?",
+          "options": [
+            "J'aime la chaleur et j'évite le froid",
+            "J'ai souvent chaud et préfère les lieux frais",
+            "Je suis neutre et m'adapte facilement à la température"
+          ]
+        },
+        {
+          "question": "Comment vivez-vous généralement vos émotions ?",
+          "options": [
+            "Vite ressenties, vite libérées",
+            "Sentiments intenses qui marquent durablement",
+            "Intégration lente et profonde — Je garde en moi"
+          ]
+        },
+        {
+          "question": "Qu'est-ce qui décrit le mieux votre mode de vie ?",
+          "options": [
+            "J'ai besoin de mouvement, de nouveauté et de variété",
+            "Je m'épanouis dans la réussite, la structure et les objectifs",
+            "J'apprécie la routine, la stabilité et le confort"
+          ]
+        }
+      ]
+    },
+    "results": {
+      "vata": {
+        "name": "Vata",
+        "element": "Air & Éther",
+        "badge": "🌬️ Type Air",
+        "headline": "Vous êtes une âme Vata — Créative, Libre & Éthérée",
+        "description": "Votre esprit se déplace comme le vent : vif, inspiré et bouillonnant d'idées. Vous possédez le don de la créativité et un cœur ouvert, mais vous avez besoin de pratiques d'ancrage pour canaliser votre énergie avec stabilité.",
+        "practice": "Hatha Yoga d'ancrage, Vinyasa fluide et doux, et Pranayama profond pour apaiser votre esprit en effervescence."
+      },
+      "pitta": {
+        "name": "Pitta",
+        "element": "Feu & Eau",
+        "badge": "🔥 Type Feu",
+        "headline": "Vous êtes une âme Pitta — Déterminée, Vive & Passionnée",
+        "description": "Leader né doté d'une intelligence vive et d'une passion ardente. Votre feu intérieur est moteur de transformation. Votre pratique doit apaiser et équilibrer cette intensité sans la surchauffer.",
+        "practice": "Yin Yoga rafraîchissant, Vinyasa modéré et respiration Sitali pour équilibrer votre feu intérieur."
+      },
+      "kapha": {
+        "name": "Kapha",
+        "element": "Terre & Eau",
+        "badge": "🌊 Type Terre",
+        "headline": "Vous êtes une âme Kapha — Stable, Bienveillante & Profonde",
+        "description": "Vous êtes le socle sur lequel les autres s'appuient : patient, chaleureux et profondément aimant. Votre pratique doit stimuler et revigorer votre nature posée pour fluidifier votre élan.",
+        "practice": "Ashtanga dynamique, Vinyasa énergisant et respiration Kapalabhati pour éveiller votre vitalité intérieure."
+      }
+    },
+    "capture": {
+      "title": "Votre résultat est prêt ! ✨",
+      "description": "Saisissez vos coordonnées pour découvrir immédiatement votre type d'énergie yogique, accompagné d'une recommandation personnalisée.",
+      "nameLabel": "Votre Nom *",
+      "namePlaceholder": "Indiquez votre nom complet",
+      "emailLabel": "Adresse E-mail *",
+      "emailPlaceholder": "Indiquez votre e-mail",
+      "submitBtn": "Révéler Mon Énergie Yogique →",
+      "submitting": "Révélation en cours...",
+      "privacyNote": "Nous respectons votre vie privée. Aucun spam. Désinscription à tout moment.",
+      "errorRequired": "Veuillez renseigner votre nom et votre adresse e-mail.",
+      "errorInvalidEmail": "Veuillez entrer une adresse e-mail valide.",
+      "errorGeneral": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "testimonials": {
+      "heading": "Ce Que Disent Nos Élèves"
+    },
+    "ctaBottom": {
+      "button": "Rejoindre la Formation de Professeur de Yoga Gratuite de 2 Jours",
+      "sticky": "Rejoindre la Formation Gratuite de 2 Jours"
+    },
+    "footer": {
+      "privacy": "Confidentialité",
+      "contact": "Contact"
+    }
+  },
+  "foundation": {
+    "metaTitle": "Cours Fondamental de Formation de Professeur de Yoga en 2 Jours",
+    "metaDesc": "Participez à la Masterclass fondamentale gratuite de 2 jours de YogaGarhi. Découvrez comment devenir professeur certifié et débuter une voie inspirante.",
+    "ogTitle": "Fondamentaux de Formation de Professeur en 2 Jours | Débutez Votre Voie",
+    "ogDesc": "Participez à la Masterclass fondamentale gratuite de 2 jours de YogaGarhi. Tracez votre chemin vers une certification internationale Yoga Alliance.",
+    "tagline": "École de Yoga Authentique à Bali",
+    "batchNotice": {
+      "prefix": "Prochaine Session :",
+      "schedule": "10:00 AM CET (Heure de Paris/Berlin) | 5:00 PM (Singapour) | 6:00 PM (Corée du Sud)"
+    },
+    "hero": {
+      "subtitlePrefix": "Hésitant sur le choix de votre YTTC ?",
+      "subtitleHighlight": "Faites-en l'Expérience d'Abord",
+      "title": "Masterclass Gratuite de 2 Jours : Fondamentaux de la Formation de Professeur de Yoga",
+      "descPara1": "Chez YogaGarhi, nous savons que choisir un YTTC dépasse de loin la simple obtention d'un diplôme.",
+      "descPara2Part1": "Il s'agit de",
+      "descPara2Safe": "se sentir en sécurité",
+      "descPara2Part2": ", il s'agit d'être",
+      "descPara2Guided": "guidé avec soin",
+      "descPara2Part3": ", et d'avoir la certitude d'être enfin entre de",
+      "descPara2Hands": "bonnes mains",
+      "descPara3": "C'est pourquoi nous privilégions la clarté et la transparence totale.",
+      "badgeSeatsLeft": "PLUS QUE 12 PLACES DISPONIBLES",
+      "priceFree": "FREE",
+      "priceRegular": "Prix Habituel $99",
+      "ctaButton": "RÉSERVER MA PLACE GRATUITE DÈS MAINTENANT",
+      "statStudents": "2,500+",
+      "statStudentsLabel": "Élèves",
+      "statRating": "5/5",
+      "statRatingLabel": "Avis"
+    },
+    "transformation": {
+      "tag": "Votre Chemin d'Évolution",
+      "heading": "Ce Que Cette Expérience de 2 Jours Vous Apportera",
+      "beforeCard": {
+        "label": "Avant de Nous Rejoindre",
+        "title": "Vous Vous Dites Peut-être...",
+        "items": [
+          "« Et si je choisissais la mauvaise école de yoga ? »",
+          "« Suis-je assez souple ou expérimenté pour franchir le pas ? »",
+          "« Puis-je vraiment faire confiance à ce que je vois en ligne ? »",
+          "« J'ai envie d'une activité qui ait du sens et qui aide les autres. »",
+          "« Le yoga m'a transformé… le moment est peut-être venu de transmettre. »",
+          "« J'ai toujours souhaité enseigner, mais je ne sais pas comment débuter. »",
+          "« Je cherche une voie alliant épanouissement personnel et indépendance. »"
+        ]
+      },
+      "afterCard": {
+        "label": "À l'Issue du Programme",
+        "title": "Vous Repartirez Avec...",
+        "items": [
+          "La découverte de votre énergie yogique unique issue de la sagesse ayurvédique",
+          "Une vision claire des opportunités réelles d'enseignement et de rémunération via le TTC",
+          "Une clarté rassurante sur la transition vers une carrière alignée avec vos valeurs",
+          "Les premières étapes concrètes pour devenir professeur de yoga certifié",
+          "Une orientation précise, une confiance affirmée et un sentiment profond de vocation"
+        ]
+      },
+      "ctaButton": "OUI, JE VEUX DÉCOUVRIR CE PROGRAMME"
+    },
+    "curriculum": {
+      "tag": "VOTRE CURRICULUM",
+      "heading": "Ce Que Vous Allez Apprendre",
+      "subheading": "Un voyage structuré de 2 jours, des fondements du yoga jusqu'à la concrétisation professionnelle",
+      "day1": {
+        "tag": "Jour 1",
+        "title": "Les Fondements du Yoga",
+        "items": [
+          "Maîtrisez les principes clés d'alignement pour une pratique sûre et efficace",
+          "Découvrez votre énergie yogique unique ancrée dans la sagesse ayurvédique",
+          "Qu'est-ce que l'enseignement du yoga au-delà des Asanas ?",
+          "Les 8 fondements traditionnels du yoga classique pour la vie quotidienne",
+          "Comment les professeurs de yoga créent une transformation réelle chez leurs élèves",
+          "Le rôle de la discipline, du souffle et de l'hygiène de vie dans la transmission",
+          "Pourquoi l'enseignement du yoga devient une vocation professionnelle d'avenir"
+        ]
+      },
+      "day2": {
+        "tag": "Jour 2",
+        "title": "Faire du Yoga Votre Métier",
+        "items": [
+          "Vivez une pratique guidée de yoga de 30 minutes",
+          "Explorez les principes fondamentaux de la philosophie yogique",
+          "Comment la certification TTC façonne l'enseignement contemporain du yoga",
+          "Les compétences pédagogiques : séquençage, guidage vocal, sécurité et présence",
+          "Le marché actuel du yoga : studios, entreprises, cours en ligne",
+          "Comment bâtir une activité pérenne avec des revenus conscients",
+          "Comment professionnaliser son enseignement tout en préservant son authenticité"
+        ]
+      },
+      "ctaButton": "OUI, JE VEUX DÉCOUVRIR CE PROGRAMME"
+    },
+    "bonuses": {
+      "tag": "💥 BONUS EXCLUSIFS (VALEUR DE $120+) — FREE",
+      "heading": "Recevez Ces Bonus Offerts",
+      "headingHighlight": "En Vous Inscrivant Maintenant",
+      "items": [
+        {
+          "title": "2 Sessions Interactives de Questions-Réponses",
+          "value": "$45",
+          "desc": "Posez toutes vos questions en direct à des maîtres enseignants expérimentés."
+        },
+        {
+          "title": "Simulation d'Enseignement Guidée",
+          "value": "$60",
+          "desc": "Faites l'expérience des premiers pas de transmission dans un cadre bienveillant."
+        },
+        {
+          "title": "Certificat de Participation",
+          "value": "$20",
+          "desc": "Une attestation officielle marquant votre première étape dans la formation."
+        }
+      ],
+      "boxTitle": "Valeur Totale : $120+ • Aujourd'hui à vous pour FREE",
+      "timerLabels": {
+        "hrs": "H",
+        "min": "Min",
+        "sec": "Sec"
+      },
+      "ctaButton": "RÉSERVER MA PLACE GRATUITE",
+      "timerDisclaimer": "*Les bonus expirent dès la fin du compte à rebours"
+    },
+    "legacy": {
+      "quote": "\"Notre vocation est de ramener chacun aux racines véritables du Yoga, où chaque souffle ouvre une porte sur le silence intérieur.\"",
+      "founder": "Sachin Ji",
+      "role": "Fondateur, YogaGarhi",
+      "heading": "Pourquoi Rejoindre Ces Fondamentaux ?",
+      "desc": "YogaGarhi perpétue une lignée himalayenne authentique. Nous ne transmettons pas seulement des asanas ; nous partageons un art de vivre qui a guidé des milliers de vies.",
+      "features": [
+        {
+          "title": "Lignée Authentique",
+          "desc": "Ancrée dans la tradition himalayenne, loin des tendances éphémères."
+        },
+        {
+          "title": "Résultats Éprouvés",
+          "desc": "Rejoignez plus de 2,500+ pratiquants qui ont franchi le pas avec nous."
+        },
+        {
+          "title": "Passerelle vers le TTC",
+          "desc": "Le tremplin parfait vers nos formations complètes certifiées Yoga Alliance."
+        }
+      ]
+    },
+    "faq": {
+      "heading": "Questions Fréquentes",
+      "subheading": "Tout ce qu'il faut savoir avant de nous rejoindre.",
+      "items": [
+        {
+          "q": "Cette initiation de 2 jours constitue-t-elle une certification complète ?",
+          "a": "Non. Il s'agit d'une immersion préparatoire pensée pour vous offrir clarté, sérénité et une feuille de route solide vers le 200-Hour TTC."
+        },
+        {
+          "q": "Faut-il une expérience préalable en yoga ?",
+          "a": "Aucune expérience préalable dans l'enseignement n'est requise : seules la curiosité et l'envie d'apprendre sont nécessaires."
+        },
+        {
+          "q": "Vais-je recevoir une attestation ?",
+          "a": "Oui, une attestation de participation confirmant votre suivi de cette masterclass d'introduction chez YogaGarhi."
+        },
+        {
+          "q": "Est-ce une garantie d'admission au TTC ?",
+          "a": "Cela vous accorde un avantage de préparation et d'orientation ; l'inscription aux cursus complets reste un processus dédié."
+        }
+      ]
+    },
+    "reviews": {
+      "heading": "Avis Vérifiés sur Google",
+      "ratingText": "Note de 5.0/5 Étoiles",
+      "storiesText": "• Retours d'expérience d'élèves venus du monde entier"
+    },
+    "schedule": {
+      "tag": "Accompagnement Mondial",
+      "heading": "Planning des Sessions d'Échange en Direct",
+      "subheading": "Échangez en direct avec nos fondateurs et formateurs principaux. Sélectionnez la session correspondant le mieux à votre fuseau horaire.",
+      "sessions": [
+        {
+          "tag": "Session A",
+          "badge": "Fuseau Asie-Pacifique",
+          "title": "Idéal Asie-Pacifique",
+          "dayLabel": "Jour :",
+          "day": "Mardi",
+          "timeLabel": "Heure (Bali) :",
+          "time": "5:00 PM WITA",
+          "timeSydney": "• Sydney : 7:00 PM AEST",
+          "timeUsEast": "• Côte Est USA : 7:00 AM EDT",
+          "bestForLabel": "Recommandé pour :",
+          "bestForDesc": "Australie, Nouvelle-Zélande et matinaux de la côte est américaine."
+        },
+        {
+          "tag": "Session B",
+          "badge": "Fuseau Europe",
+          "title": "Idéal Europe",
+          "dayLabel": "Jour :",
+          "day": "Jeudi",
+          "timeLabel": "Heure (Bali) :",
+          "time": "7:00 PM WITA",
+          "timeUk": "• Royaume-Uni : 12:00 PM BST",
+          "timeGermany": "• France / Allemagne : 1:00 PM CEST",
+          "bestForLabel": "Recommandé pour :",
+          "bestForDesc": "France, Royaume-Uni, Allemagne et toute l'Europe."
+        },
+        {
+          "tag": "Session C",
+          "badge": "Fuseau Amériques",
+          "title": "Idéal Amériques",
+          "dayLabel": "Jour :",
+          "day": "Samedi",
+          "timeLabel": "Heure (Bali) :",
+          "time": "9:00 AM WITA",
+          "timeUsWest": "• Côte Ouest USA : 7:00 PM (Vendredi)",
+          "timeUsEast": "• Côte Est USA : 10:00 PM (Vendredi)",
+          "bestForLabel": "Recommandé pour :",
+          "bestForDesc": "États-Unis et Canada."
+        }
+      ],
+      "table": {
+        "heading": "Tableau de Correspondance des Fuseaux Horaires",
+        "colRegion": "Région",
+        "colTimezone": "Fuseau",
+        "colLocalTime": "Votre Heure Locale",
+        "colBaliTime": "Heure de Bali (Base)",
+        "rows": [
+          {
+            "region": "Australie (Sydney/Melbourne)",
+            "tz": "AEST (UTC+10/+11)",
+            "local": "7:00 – 8:00 PM",
+            "base": "5:00 – 6:00 PM"
+          },
+          {
+            "region": "Royaume-Uni (Londres)",
+            "tz": "BST/GMT (UTC+0/+1)",
+            "local": "12:00 – 1:00 PM",
+            "base": "7:00 – 8:00 PM"
+          },
+          {
+            "region": "France / Allemagne (Paris/Berlin)",
+            "tz": "CEST (UTC+1/+2)",
+            "local": "7:00 – 8:00 PM",
+            "base": "1:00 – 2:00 AM"
+          },
+          {
+            "region": "Côte Est USA (New York)",
+            "tz": "EDT (UTC-4)",
+            "local": "7:00 – 8:00 PM",
+            "base": "6:00 – 7:00 AM"
+          },
+          {
+            "region": "Côte Ouest USA (Los Angeles)",
+            "tz": "PDT (UTC-7)",
+            "local": "7:00 – 8:00 PM",
+            "base": "9:00 – 10:00 AM"
+          }
+        ]
+      }
+    },
+    "finalCta": {
+      "heading": "Prêt à Vous Engager Sur la Voie de l'Enseignement ?",
+      "subParaPart1": "Réservez votre place pour notre prochaine Masterclass Fondamentale de 2 Jours tout à fait",
+      "subParaFree": "Gratuitement",
+      "subParaPart2": "(Nombre de places strictement restreint).",
+      "ctaButton": "OUI, COMMENÇONS GRATUITEMENT",
+      "contactText": "Une question ? Échangeons ensemble"
+    },
+    "stickyBar": {
+      "priceFree": "FREE",
+      "priceRegular": "$99",
+      "badgeSeatsLeft": "PLUS QUE 12 PLACES DISPONIBLES",
+      "button": "Participer"
+    },
+    "dialog": {
+      "title": "Réservez Votre Place Gratuite",
+      "desc": "Indiquez vos coordonnées pour accéder immédiatement à la Masterclass Fondamentale.",
+      "nameLabel": "Nom Complet",
+      "namePlaceholder": "Indiquez votre nom",
+      "emailLabel": "Adresse E-mail",
+      "emailPlaceholder": "Indiquez votre e-mail",
+      "submitButton": "Confirmer Ma Place Gratuite",
+      "submitting": "Inscription en cours...",
+      "trustNote": "100% Gratuit · Sans carte bancaire · Accès immédiat",
+      "toastSuccessTitle": "Inscription Réussie !",
+      "toastSuccessDesc": "Namaste. Nous avons bien reçu vos coordonnées.",
+      "toastErrorTitle": "Une erreur est survenue",
+      "toastErrorDesc": "Veuillez réessayer ou nous écrire directement."
+    }
+  },
+  "preYttc": {
+    "metaTitle": "Commencez Avant de Commencer | Préparation Pre-YTTC",
+    "metaDesc": "Préparez votre transformation en douceur. Découvrez notre programme exclusif 'Avant Votre Arrivée' pour la formation de professeur de yoga à Bali.",
+    "nav": {
+      "transformWithin": "Transform Within",
+      "courses": "Formations",
+      "contact": "Contact"
+    },
+    "hero": {
+      "badge": "Accompagnement Pre-YTTC Innovant",
+      "titlePart1": "Ne Plongez Pas Sans Préparation —",
+      "titleHighlight": "Préparez-Vous Tout en Douceur",
+      "description": "Chez YogaGarhi, nous pensons que votre aventure commence bien avant votre atterrissage à Bali. Notre programme exclusif 'Avant Votre Arrivée' vous assure de débuter serein, confiant et prêt pour une immersion en profondeur.",
+      "form": {
+        "emailPlaceholder": "Indiquez votre e-mail pour recevoir le guide",
+        "submitBtn": "Recevoir le Guide Gratuit",
+        "submitting": "Envoi en cours...",
+        "limitedSpots": "Places limitées pour les sessions 2026"
+      }
+    },
+    "card": {
+      "badge": "PREMIÈRE ÉCOLE PRE-YTTC AU MONDE",
+      "title": "Commencez Avant de Commencer",
+      "descPart1": "Cette préparation",
+      "descBadge": "En Ligne Gratuite & Optionnelle",
+      "descPart2": "a été conçue pour tous ceux qui souhaitent aborder leur formation 100% sereins.",
+      "items": [
+        {
+          "title": "Préparez Votre Corps",
+          "desc": "Débutez par des pratiques douces pour vous éveiller corporellement"
+        },
+        {
+          "title": "Familiarisez-Vous avec le Programme",
+          "desc": "Découvrez en avance les modules d'études et la méthodologie"
+        },
+        {
+          "title": "Comprenez les Notions Clés",
+          "desc": "Intégrez les principes yogiques essentiels avant le départ"
+        },
+        {
+          "title": "Soyez Serein et Confiant",
+          "desc": "Arrivez posé et détendu, sans stress inutile"
+        }
+      ]
+    },
+    "content": {
+      "badge": "Gratuit & Optionnel",
+      "headingPart1": "Commencez Votre Évolution",
+      "headingToday": "Dès Aujourd'hui",
+      "headingPart2": ", Pas Seulement à Bali.",
+      "para1": "La plupart des écoles vous immergent d'emblée dans un rythme intense. Chez YogaGarhi, nous privilégions la bienveillance.",
+      "para2Part1": "Nous proposons un programme préparatoire en ligne complet pour qu'au lancement de la formation,",
+      "para2Panic": "vous ne ressentiez aucune panique",
+      "para2Part2": ".",
+      "para3": "Vous arrivez ancré. Vous arrivez éclairé. Vous êtes fin prêt à vivre l'expérience transformatrice qui vous attend."
+    },
+    "quote": {
+      "text": "\"La profondeur d'une transformation dépend de la qualité de sa préparation. Notre mission est de vous accompagner à chaque étape—avant même de poser le pied sur le tapis à Bali.\"",
+      "author": "YogaGarhi Leadership Team",
+      "location": "Bali, Indonesia"
+    }
   }
 }

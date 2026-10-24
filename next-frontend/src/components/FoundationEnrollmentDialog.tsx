@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import {
     Dialog,
     DialogContent,
@@ -17,9 +18,15 @@ import { Loader2, Sparkles } from "lucide-react";
 interface FoundationEnrollmentDialogProps {
     open: boolean;
     onOpenChange: (open: boolean) => void;
+    locale?: string;
 }
 
-export default function FoundationEnrollmentDialog({ open, onOpenChange }: FoundationEnrollmentDialogProps) {
+export default function FoundationEnrollmentDialog({ open, onOpenChange, locale: propLocale }: FoundationEnrollmentDialogProps) {
+    const hookLocale = useLocale();
+    const locale = propLocale || hookLocale || "en";
+    const isEn = locale === "en";
+    const t = useTranslations("foundation.dialog");
+
     const [isLoading, setIsLoading] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
@@ -42,6 +49,7 @@ export default function FoundationEnrollmentDialog({ open, onOpenChange }: Found
                     name: formData.name,
                     email: formData.email,
                     course: "2-Day Foundation Workshop (Free)",
+                    language: locale,
                     _subject: `New Free Workshop Registration from ${formData.name}`,
                     _autoresponder: `Namaste ${formData.name}! 
 
@@ -58,18 +66,19 @@ YogaGarhi Team`
 
             if (response.ok) {
                 toast({
-                    title: "Registration Successful!",
-                    description: "Namaste! We've received your details.",
+                    title: isEn ? "Registration Successful!" : (t("toastSuccessTitle") || "Registration Successful!"),
+                    description: isEn ? "Namaste! We've received your details." : (t("toastSuccessDesc") || "Namaste! We've received your details."),
                 });
                 onOpenChange(false);
-                router.push('/thank-you?type=foundation');
+                const redirectPath = isEn ? '/thank-you?type=foundation' : `/${locale}/thank-you?type=foundation`;
+                router.push(redirectPath);
             } else {
                 throw new Error('Failed to submit');
             }
         } catch (error) {
             toast({
-                title: "Something went wrong",
-                description: "Please try again or contact us directly.",
+                title: isEn ? "Something went wrong" : (t("toastErrorTitle") || "Something went wrong"),
+                description: isEn ? "Please try again or contact us directly." : (t("toastErrorDesc") || "Please try again or contact us directly."),
                 variant: "destructive",
             });
         } finally {
@@ -84,18 +93,22 @@ YogaGarhi Team`
                     <div className="mx-auto w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                         <Sparkles className="w-6 h-6 text-primary" />
                     </div>
-                    <DialogTitle className="font-heading text-2xl font-bold">Claim Your Free Spot</DialogTitle>
+                    <DialogTitle className="font-heading text-2xl font-bold">
+                        {isEn ? "Claim Your Free Spot" : t("title")}
+                    </DialogTitle>
                     <DialogDescription className="text-muted-foreground mt-2">
-                        Enter your details below to get instant access to the Foundation Masterclass.
+                        {isEn ? "Enter your details below to get instant access to the Foundation Masterclass." : t("desc")}
                     </DialogDescription>
                 </DialogHeader>
 
                 <form onSubmit={handleSubmit} className="space-y-6 mt-4">
                     <div className="space-y-2">
-                        <Label htmlFor="foundation-name" className="text-sm font-semibold">Full Name</Label>
+                        <Label htmlFor="foundation-name" className="text-sm font-semibold">
+                            {isEn ? "Full Name" : t("nameLabel")}
+                        </Label>
                         <Input
                             id="foundation-name"
-                            placeholder="Enter your name"
+                            placeholder={isEn ? "Enter your name" : t("namePlaceholder")}
                             required
                             className="h-12 border-border/50 focus:ring-primary"
                             value={formData.name}
@@ -103,11 +116,13 @@ YogaGarhi Team`
                         />
                     </div>
                     <div className="space-y-2">
-                        <Label htmlFor="foundation-email" className="text-sm font-semibold">Email Address</Label>
+                        <Label htmlFor="foundation-email" className="text-sm font-semibold">
+                            {isEn ? "Email Address" : t("emailLabel")}
+                        </Label>
                         <Input
                             id="foundation-email"
                             type="email"
-                            placeholder="you@example.com"
+                            placeholder={isEn ? "you@example.com" : t("emailPlaceholder")}
                             required
                             className="h-12 border-border/50 focus:ring-primary"
                             value={formData.email}
@@ -122,14 +137,14 @@ YogaGarhi Team`
                         {isLoading ? (
                             <>
                                 <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                                Reserving...
+                                {isEn ? "Reserving..." : t("submitting")}
                             </>
                         ) : (
-                            "RESERVE MY FREE SPOT NOW"
+                            isEn ? "RESERVE MY FREE SPOT NOW" : t("submitButton")
                         )}
                     </Button>
                     <p className="text-[10px] text-center text-muted-foreground italic">
-                        By signing up, you agree to receive workshop details via email.
+                        {isEn ? "By signing up, you agree to receive workshop details via email." : t("trustNote")}
                     </p>
                 </form>
             </DialogContent>

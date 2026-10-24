@@ -212,6 +212,7 @@ async function runParityCheck() {
   const browser = await puppeteer.launch({
     executablePath: chromePath,
     headless: true,
+    protocolTimeout: 60000,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
 

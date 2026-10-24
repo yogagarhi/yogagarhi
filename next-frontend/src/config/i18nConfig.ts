@@ -74,6 +74,9 @@ export const TRANSLATED_PAGES: Record<string, readonly SupportedLocale[]> = {
   '/retreat/varkala/3-days': SUPPORTED_LOCALES,
   '/retreat/varkala/7-days': SUPPORTED_LOCALES,
   '/retreat/varkala/14-days': SUPPORTED_LOCALES,
+  '/yogic-energy': SUPPORTED_LOCALES,
+  '/teacher-training-foundation': SUPPORTED_LOCALES,
+  '/pre-yttc-prep': SUPPORTED_LOCALES,
 };
 
 export function getAvailableLocalesForPath(pathname: string): readonly SupportedLocale[] {

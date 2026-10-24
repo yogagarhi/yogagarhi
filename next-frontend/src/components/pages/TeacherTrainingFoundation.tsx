@@ -3,6 +3,7 @@ import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,22 +11,15 @@ import {
     Gift,
     MessageCircle,
     Award,
-    Clock,
     Users,
     Sparkles,
     ArrowRight,
     Star,
     Zap,
-    Target,
-    Heart,
-    ChevronDown,
-    Plus,
-    Minus,
-    BookOpen,
     X,
     ChevronLeft,
     ChevronRight,
-    Calendar
+    BookOpen
 } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -164,7 +158,16 @@ const testimonials = [
     }
 ];
 
-export default function TeacherTrainingFoundation() {
+interface TeacherTrainingFoundationProps {
+    locale?: string;
+}
+
+export default function TeacherTrainingFoundation({ locale: propLocale }: TeacherTrainingFoundationProps = {}) {
+    const hookLocale = useLocale();
+    const locale = propLocale || hookLocale || "en";
+    const isEn = locale === "en";
+    const t = useTranslations("foundation");
+
     const [showFoundationForm, setShowFoundationForm] = useState(false);
     const [expandedReview, setExpandedReview] = useState<number | null>(null);
     const [scrollProgress, setScrollProgress] = useState(0);
@@ -197,10 +200,64 @@ export default function TeacherTrainingFoundation() {
         };
 
         container.addEventListener('scroll', handleScroll);
-        // Initial call
         handleScroll();
         return () => container.removeEventListener('scroll', handleScroll);
     }, []);
+
+    // Transformation cards
+    let localizedBeforeItems = curriculum[0].items;
+    let localizedAfterItems = curriculum[1].items;
+    if (!isEn) {
+        try {
+            const b = t.raw("transformation.beforeCard.items");
+            if (Array.isArray(b)) localizedBeforeItems = b;
+            const a = t.raw("transformation.afterCard.items");
+            if (Array.isArray(a)) localizedAfterItems = a;
+        } catch (e) {}
+    }
+
+    // Detailed curriculum items
+    let localizedDay1Items = detailedCurriculum[0].items;
+    let localizedDay2Items = detailedCurriculum[1].items;
+    if (!isEn) {
+        try {
+            const d1 = t.raw("curriculum.day1.items");
+            if (Array.isArray(d1)) localizedDay1Items = d1;
+            const d2 = t.raw("curriculum.day2.items");
+            if (Array.isArray(d2)) localizedDay2Items = d2;
+        } catch (e) {}
+    }
+
+    // Bonuses
+    let localizedBonuses = bonuses;
+    if (!isEn) {
+        try {
+            const bList = t.raw("bonuses.items");
+            if (Array.isArray(bList) && bList.length === 3) {
+                localizedBonuses = bonuses.map((b, idx) => ({
+                    ...b,
+                    title: bList[idx].title || b.title,
+                    desc: bList[idx].desc || b.desc,
+                }));
+            }
+        } catch (e) {}
+    }
+
+    // FAQs
+    let localizedFaqs = faqs;
+    if (!isEn) {
+        try {
+            const fList = t.raw("faq.items");
+            if (Array.isArray(fList) && fList.length === 4) {
+                localizedFaqs = faqs.map((f, idx) => ({
+                    question: fList[idx].q || f.question,
+                    answer: fList[idx].a || f.answer,
+                }));
+            }
+        } catch (e) {}
+    }
+
+    const contactLink = isEn ? "/contact-us" : `/${locale}/contact-us`;
 
     return (
         <Layout>
@@ -234,7 +291,7 @@ export default function TeacherTrainingFoundation() {
                                 <div className="flex items-center gap-3 mt-2">
                                     <span className="w-6 h-px bg-primary/20" />
                                     <span className="text-[10px] text-muted-foreground tracking-[0.2em] uppercase whitespace-nowrap">
-                                        Authentic Yoga School in Bali
+                                        {isEn ? "Authentic Yoga School in Bali" : t("tagline")}
                                     </span>
                                     <span className="w-6 h-px bg-primary/20" />
                                 </div>
@@ -244,31 +301,33 @@ export default function TeacherTrainingFoundation() {
                     <div className="max-w-4xl mx-auto text-center mb-12">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground text-sm font-bold mb-6 shadow-md">
                             <Sparkles className="w-4 h-4 fill-current" />
-                            Next Batch: <DynamicBatchDate /> | 10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)
+                            {isEn ? "Next Batch: " : `${t("batchNotice.prefix")} `}<DynamicBatchDate />{isEn ? " | 10:00 AM CET (German Time) | 5:00 PM (Singapore) | 6:00 PM (South Korea)" : ` | ${t("batchNotice.schedule")}`}
                         </div>
                         <p className="text-lg md:text-2xl font-semibold text-muted-foreground mb-3">
-                            Not Sure Which YTTC to Trust? <span className="text-primary italic font-bold">Experience It First</span>
+                            {isEn ? "Not Sure Which YTTC to Trust? " : `${t("hero.subtitlePrefix")} `}<span className="text-primary italic font-bold">{isEn ? "Experience It First" : t("hero.subtitleHighlight")}</span>
                         </p>
                         <h1 className="font-heading text-3xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 md:mb-6 leading-[1.2] md:leading-[1.1]">
-                            Free 2-Day Yoga Teacher Training Foundation Masterclass
+                            {isEn ? "Free 2-Day Yoga Teacher Training Foundation Masterclass" : t("hero.title")}
                         </h1>
                         <div className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8 md:mb-10">
-                            <p className="mb-4">At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate.</p>
+                            <p className="mb-4">{isEn ? "At Yogagarhi, we understand that choosing a YTTC is about much more than just a certificate." : t("hero.descPara1")}</p>
                             <p className="text-foreground/90 font-medium text-lg md:text-xl italic">
-                                It’s about <span className="text-primary not-italic">feeling safe</span>, it’s about <span className="text-primary not-italic">feeling guided</span>, and it’s about knowing you are finally in the <span className="text-primary not-italic">right hands</span>.
+                                {isEn ? "It’s about " : `${t("hero.descPara2Part1")} `}<span className="text-primary not-italic">{isEn ? "feeling safe" : t("hero.descPara2Safe")}</span>{isEn ? ", it’s about " : `${t("hero.descPara2Part2")} `}<span className="text-primary not-italic">{isEn ? "feeling guided" : t("hero.descPara2Guided")}</span>{isEn ? ", and it’s about knowing you are finally in the " : `${t("hero.descPara2Part3")} `}<span className="text-primary not-italic">{isEn ? "right hands" : t("hero.descPara2Hands")}</span>.
                             </p>
-                            <p className="mt-6 font-semibold text-accent uppercase tracking-wider text-sm">That’s why we keep things simple and transparent.</p>
+                            <p className="mt-6 font-semibold text-accent uppercase tracking-wider text-sm">{isEn ? "That’s why we keep things simple and transparent." : t("hero.descPara3")}</p>
                         </div>
 
                         <div className="bg-card shadow-elevated rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-12 max-w-lg mx-auto border border-border/50 relative">
                             {/* "Only 12 Seats Left" Badge */}
                             <div className="absolute -top-3 md:-top-4 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 md:px-6 py-1 rounded-full text-[10px] md:text-xs font-bold shadow-lg animate-pulse whitespace-nowrap">
-                                ONLY 12 SEATS LEFT
+                                {isEn ? "ONLY 12 SEATS LEFT" : t("hero.badgeSeatsLeft")}
                             </div>
 
                             <div className="flex flex-col items-center gap-1 md:gap-2 mb-6 md:mb-8">
                                 <span className="text-5xl md:text-7xl font-bold text-foreground tracking-tight">FREE</span>
-                                <span className="text-lg md:text-xl text-muted-foreground line-through opacity-70">Regular Price $99</span>
+                                <span className="text-lg md:text-xl text-muted-foreground line-through opacity-70">
+                                    {isEn ? "Regular Price $99" : t("hero.priceRegular")}
+                                </span>
                             </div>
 
                             <Button
@@ -277,19 +336,23 @@ export default function TeacherTrainingFoundation() {
                                 className="w-full text-base md:text-lg shadow-elevated hover:scale-[1.02] transition-all py-6 md:py-7"
                                 onClick={() => setShowFoundationForm(true)}
                             >
-                                RESERVE MY FREE SPOT NOW
+                                {isEn ? "RESERVE MY FREE SPOT NOW" : t("hero.ctaButton")}
                                 <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
                             </Button>
 
                             <div className="mt-6 md:mt-8 flex items-center justify-center gap-4 md:gap-8">
                                 <div className="flex flex-col items-center">
                                     <span className="text-primary font-bold text-lg md:text-xl">2,500+</span>
-                                    <span className="text-[10px] text-muted-foreground uppercase tracking-widest leading-tight">Students</span>
+                                    <span className="text-[10px] text-muted-foreground uppercase tracking-widest leading-tight">
+                                        {isEn ? "Students" : t("hero.statStudentsLabel")}
+                                    </span>
                                 </div>
                                 <div className="w-px h-8 md:h-10 bg-border/50" />
                                 <div className="flex flex-col items-center">
                                     <span className="text-primary font-bold text-lg md:text-xl">5/5</span>
-                                    <span className="text-[10px] text-muted-foreground uppercase tracking-widest leading-tight">Rating</span>
+                                    <span className="text-[10px] text-muted-foreground uppercase tracking-widest leading-tight">
+                                        {isEn ? "Rating" : t("hero.statRatingLabel")}
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -297,44 +360,63 @@ export default function TeacherTrainingFoundation() {
                 </div>
             </section>
 
-
-
             <section className="py-24 bg-background">
                 <div className="container mx-auto px-4">
                     <div className="max-w-5xl mx-auto">
                         <div className="text-center mb-16">
-                            <span className="text-sm font-bold tracking-[0.2em] uppercase text-primary mb-4 block">Your Path Forward</span>
-                            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">What This 2-Day Experience Can Do for You</h2>
+                            <span className="text-sm font-bold tracking-[0.2em] uppercase text-primary mb-4 block">
+                                {isEn ? "Your Path Forward" : t("transformation.tag")}
+                            </span>
+                            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">
+                                {isEn ? "What This 2-Day Experience Can Do for You" : t("transformation.heading")}
+                            </h2>
                         </div>
 
                         <div className="grid lg:grid-cols-2 gap-8">
-                            {curriculum.map((item, idx) => (
-                                <div key={idx} className="bg-card rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 border border-border shadow-soft group hover:border-primary/30 transition-all">
-                                    <div className="inline-block px-5 md:px-6 py-1.5 md:py-2 bg-primary text-primary-foreground font-bold rounded-full text-xs md:text-sm mb-6 md:mb-8 shadow-sm">
-                                        {item.label}
-                                    </div>
-                                    <h3 className="font-heading text-xl md:text-2xl font-bold mb-6 md:mb-8 text-foreground">{item.title}</h3>
-                                    <ul className="space-y-4 md:space-y-5">
-                                        {item.items.map((point, pointIdx) => (
-                                            <li key={pointIdx} className="flex items-start gap-3 md:gap-4">
-                                                <div className={`mt-1 rounded-full p-1.5 flex-shrink-0 ${idx === 0 ? 'bg-destructive/10' : 'bg-primary/10'}`}>
-                                                    {idx === 0 ? (
-                                                        <X className="w-3 h-3 md:w-3.5 md:h-3.5 text-destructive" />
-                                                    ) : (
-                                                        <Check className="w-3 h-3 md:w-3.5 md:h-3.5 text-primary" />
-                                                    )}
-                                                </div>
-                                                <span className="text-sm md:text-base text-foreground/80 leading-relaxed font-medium">{point}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
+                            {/* Before Card */}
+                            <div className="bg-card rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 border border-border shadow-soft group hover:border-primary/30 transition-all">
+                                <div className="inline-block px-5 md:px-6 py-1.5 md:py-2 bg-primary text-primary-foreground font-bold rounded-full text-xs md:text-sm mb-6 md:mb-8 shadow-sm">
+                                    {isEn ? curriculum[0].label : t("transformation.beforeCard.label")}
                                 </div>
-                            ))}
+                                <h3 className="font-heading text-xl md:text-2xl font-bold mb-6 md:mb-8 text-foreground">
+                                    {isEn ? curriculum[0].title : t("transformation.beforeCard.title")}
+                                </h3>
+                                <ul className="space-y-4 md:space-y-5">
+                                    {localizedBeforeItems.map((point, pointIdx) => (
+                                        <li key={pointIdx} className="flex items-start gap-3 md:gap-4">
+                                            <div className="mt-1 rounded-full p-1.5 flex-shrink-0 bg-destructive/10">
+                                                <X className="w-3 h-3 md:w-3.5 md:h-3.5 text-destructive" />
+                                            </div>
+                                            <span className="text-sm md:text-base text-foreground/80 leading-relaxed font-medium">{point}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            {/* After Card */}
+                            <div className="bg-card rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 border border-border shadow-soft group hover:border-primary/30 transition-all">
+                                <div className="inline-block px-5 md:px-6 py-1.5 md:py-2 bg-primary text-primary-foreground font-bold rounded-full text-xs md:text-sm mb-6 md:mb-8 shadow-sm">
+                                    {isEn ? curriculum[1].label : t("transformation.afterCard.label")}
+                                </div>
+                                <h3 className="font-heading text-xl md:text-2xl font-bold mb-6 md:mb-8 text-foreground">
+                                    {isEn ? curriculum[1].title : t("transformation.afterCard.title")}
+                                </h3>
+                                <ul className="space-y-4 md:space-y-5">
+                                    {localizedAfterItems.map((point, pointIdx) => (
+                                        <li key={pointIdx} className="flex items-start gap-3 md:gap-4">
+                                            <div className="mt-1 rounded-full p-1.5 flex-shrink-0 bg-primary/10">
+                                                <Check className="w-3 h-3 md:w-3.5 md:h-3.5 text-primary" />
+                                            </div>
+                                            <span className="text-sm md:text-base text-foreground/80 leading-relaxed font-medium">{point}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
 
                         <div className="text-center mt-16">
                             <Button variant="cta" size="xl" onClick={() => setShowFoundationForm(true)} className="shadow-elevated">
-                                YES, I WANT THIS CURRICULUM
+                                {isEn ? "YES, I WANT THIS CURRICULUM" : t("transformation.ctaButton")}
                             </Button>
                         </div>
                     </div>
@@ -346,9 +428,15 @@ export default function TeacherTrainingFoundation() {
                 <div className="container mx-auto px-4">
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-16">
-                            <span className="text-sm font-bold tracking-[0.2em] uppercase text-primary mb-4 block">Your CURRICULUM</span>
-                            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">Here's What You Will Learn</h2>
-                            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">A structured 2-day journey from yoga foundations to career clarity</p>
+                            <span className="text-sm font-bold tracking-[0.2em] uppercase text-primary mb-4 block">
+                                {isEn ? "Your CURRICULUM" : t("curriculum.tag")}
+                            </span>
+                            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
+                                {isEn ? "Here's What You Will Learn" : t("curriculum.heading")}
+                            </h2>
+                            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                                {isEn ? "A structured 2-day journey from yoga foundations to career clarity" : t("curriculum.subheading")}
+                            </p>
                         </div>
 
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -366,29 +454,51 @@ export default function TeacherTrainingFoundation() {
                             </div>
 
                             <div className="space-y-8 md:space-y-10">
-                                {detailedCurriculum.map((dayItem, idx) => (
-                                    <div key={idx} className="relative pl-8 md:pl-10 border-l-2 border-primary/20">
-                                        <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-lg border-2 border-white" />
-
-                                        <div className="mb-4">
-                                            <span className="text-primary font-bold text-xs uppercase tracking-widest bg-primary/10 px-3 py-1 rounded-full">{dayItem.day}</span>
-                                            <h3 className="font-heading text-2xl md:text-3xl font-bold mt-3 text-foreground">{dayItem.title}</h3>
-                                        </div>
-
-                                        <ul className="space-y-3 md:space-y-4">
-                                            {dayItem.items.map((point, pointIdx) => (
-                                                <li key={pointIdx} className="flex items-start gap-3">
-                                                    <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                                                    <span className="text-foreground/80 font-medium text-sm md:text-base">{point}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                {/* Day 1 */}
+                                <div className="relative pl-8 md:pl-10 border-l-2 border-primary/20">
+                                    <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-lg border-2 border-white" />
+                                    <div className="mb-4">
+                                        <span className="text-primary font-bold text-xs uppercase tracking-widest bg-primary/10 px-3 py-1 rounded-full">
+                                            {isEn ? detailedCurriculum[0].day : t("curriculum.day1.tag")}
+                                        </span>
+                                        <h3 className="font-heading text-2xl md:text-3xl font-bold mt-3 text-foreground">
+                                            {isEn ? detailedCurriculum[0].title : t("curriculum.day1.title")}
+                                        </h3>
                                     </div>
-                                ))}
+                                    <ul className="space-y-3 md:space-y-4">
+                                        {localizedDay1Items.map((point, pointIdx) => (
+                                            <li key={pointIdx} className="flex items-start gap-3">
+                                                <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                                                <span className="text-foreground/80 font-medium text-sm md:text-base">{point}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+
+                                {/* Day 2 */}
+                                <div className="relative pl-8 md:pl-10 border-l-2 border-primary/20">
+                                    <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-lg border-2 border-white" />
+                                    <div className="mb-4">
+                                        <span className="text-primary font-bold text-xs uppercase tracking-widest bg-primary/10 px-3 py-1 rounded-full">
+                                            {isEn ? detailedCurriculum[1].day : t("curriculum.day2.tag")}
+                                        </span>
+                                        <h3 className="font-heading text-2xl md:text-3xl font-bold mt-3 text-foreground">
+                                            {isEn ? detailedCurriculum[1].title : t("curriculum.day2.title")}
+                                        </h3>
+                                    </div>
+                                    <ul className="space-y-3 md:space-y-4">
+                                        {localizedDay2Items.map((point, pointIdx) => (
+                                            <li key={pointIdx} className="flex items-start gap-3">
+                                                <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                                                <span className="text-foreground/80 font-medium text-sm md:text-base">{point}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
 
                                 <div className="pt-6">
                                     <Button variant="cta" size="xl" onClick={() => setShowFoundationForm(true)} className="w-full md:w-auto shadow-elevated">
-                                        YES, I WANT THIS CURRICULUM
+                                        {isEn ? "YES, I WANT THIS CURRICULUM" : t("curriculum.ctaButton")}
                                     </Button>
                                 </div>
                             </div>
@@ -410,18 +520,25 @@ export default function TeacherTrainingFoundation() {
                             <div className="relative z-10 text-center md:text-left">
                                 <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-accent text-accent-foreground text-sm font-bold mb-8 shadow-sm">
                                     <Zap className="w-4 h-4 fill-current" />
-                                    💥 EXCLUSIVE BONUSES ($120+ VALUE) — FREE
+                                    {isEn ? "💥 EXCLUSIVE BONUSES ($120+ VALUE) — FREE" : t("bonuses.tag")}
                                 </div>
-                                <h2 className="font-heading text-4xl md:text-5xl font-bold mb-12 text-foreground">Get These Bonuses <span className="text-primary underline decoration-primary/20">When You Register Now</span></h2>
+                                <h2 className="font-heading text-4xl md:text-5xl font-bold mb-12 text-foreground">
+                                    {isEn ? "Get These Bonuses " : `${t("bonuses.heading")} `}
+                                    <span className="text-primary underline decoration-primary/20">
+                                        {isEn ? "When You Register Now" : t("bonuses.headingHighlight")}
+                                    </span>
+                                </h2>
 
                                 <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-                                    {bonuses.map((bonus, idx) => (
+                                    {localizedBonuses.map((bonus, idx) => (
                                         <div key={idx} className="bg-background rounded-2xl p-6 md:p-8 shadow-soft border border-border/50 hover:border-accent/30 transition-all group">
                                             <div className="flex justify-between items-start mb-4 md:mb-6">
                                                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-all">
                                                     <Check className="w-5 h-5 md:w-6 md:h-6" />
                                                 </div>
-                                                <span className="text-primary font-bold text-[10px] md:text-xs uppercase tracking-widest bg-primary/10 px-2.5 md:px-3 py-1 rounded-full whitespace-nowrap">Worth {bonus.value}</span>
+                                                <span className="text-primary font-bold text-[10px] md:text-xs uppercase tracking-widest bg-primary/10 px-2.5 md:px-3 py-1 rounded-full whitespace-nowrap">
+                                                    Worth {bonus.value}
+                                                </span>
                                             </div>
                                             <h3 className="font-heading text-lg md:text-xl font-bold mb-2 md:mb-3 text-foreground">{bonus.title}</h3>
                                             <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">{bonus.desc}</p>
@@ -430,7 +547,9 @@ export default function TeacherTrainingFoundation() {
                                 </div>
 
                                 <div className="mt-12 md:mt-16 p-6 md:p-8 bg-primary rounded-[2rem] md:rounded-3xl text-primary-foreground text-center shadow-lg">
-                                    <p className="font-bold text-lg md:text-xl mb-4 leading-relaxed">Total Worth: $120+ • Today it’s yours for FREE</p>
+                                    <p className="font-bold text-lg md:text-xl mb-4 leading-relaxed">
+                                        {isEn ? "Total Worth: $120+ • Today it’s yours for FREE" : t("bonuses.boxTitle")}
+                                    </p>
 
                                     {/* Countdown Timer */}
                                     <div className="flex items-center justify-center gap-3 md:gap-4 mb-8">
@@ -438,28 +557,36 @@ export default function TeacherTrainingFoundation() {
                                             <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 md:px-4 md:py-3 min-w-[50px] md:min-w-[60px] border border-white/20">
                                                 <span className="text-xl md:text-2xl font-bold font-mono">{String(timeLeft.hours).padStart(2, '0')}</span>
                                             </div>
-                                            <span className="text-[10px] uppercase tracking-widest mt-1 opacity-70">Hrs</span>
+                                            <span className="text-[10px] uppercase tracking-widest mt-1 opacity-70">
+                                                {isEn ? "Hrs" : t("bonuses.timerLabels.hrs")}
+                                            </span>
                                         </div>
                                         <span className="text-xl md:text-2xl font-bold -mt-6">:</span>
                                         <div className="flex flex-col items-center">
                                             <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 md:px-4 md:py-3 min-w-[50px] md:min-w-[60px] border border-white/20">
                                                 <span className="text-xl md:text-2xl font-bold font-mono">{String(timeLeft.minutes).padStart(2, '0')}</span>
                                             </div>
-                                            <span className="text-[10px] uppercase tracking-widest mt-1 opacity-70">Min</span>
+                                            <span className="text-[10px] uppercase tracking-widest mt-1 opacity-70">
+                                                {isEn ? "Min" : t("bonuses.timerLabels.min")}
+                                            </span>
                                         </div>
                                         <span className="text-xl md:text-2xl font-bold -mt-6">:</span>
                                         <div className="flex flex-col items-center">
                                             <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 md:px-4 md:py-3 min-w-[50px] md:min-w-[60px] border border-white/20">
                                                 <span className="text-xl md:text-2xl font-bold font-mono font-variant-numeric:tabular-nums">{String(timeLeft.seconds).padStart(2, '0')}</span>
                                             </div>
-                                            <span className="text-[10px] uppercase tracking-widest mt-1 opacity-70">Sec</span>
+                                            <span className="text-[10px] uppercase tracking-widest mt-1 opacity-70">
+                                                {isEn ? "Sec" : t("bonuses.timerLabels.sec")}
+                                            </span>
                                         </div>
                                     </div>
 
                                     <Button variant="hero" size="lg" className="w-full md:w-auto bg-white text-primary hover:bg-white/90 shadow-xl px-12 py-6 md:py-7 text-lg font-bold" onClick={() => setShowFoundationForm(true)}>
-                                        RESERVE MY FREE SPOT
+                                        {isEn ? "RESERVE MY FREE SPOT" : t("bonuses.ctaButton")}
                                     </Button>
-                                    <p className="mt-4 text-xs opacity-70 italic">*Bonuses expire when the timer hits zero</p>
+                                    <p className="mt-4 text-xs opacity-70 italic">
+                                        {isEn ? "*Bonuses expire when the timer hits zero" : t("bonuses.timerDisclaimer")}
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -486,15 +613,21 @@ export default function TeacherTrainingFoundation() {
                                     <div className="flex gap-1 text-amber-500 mb-2">
                                         {[...Array(5)].map((_, i) => <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-current" />)}
                                     </div>
-                                    <p className="text-[10px] md:text-sm italic text-muted-foreground mb-3 md:mb-4">"Our mission is to bring people back to the roots of Yoga, where every breath becomes a doorway to inner stillness."</p>
+                                    <p className="text-[10px] md:text-sm italic text-muted-foreground mb-3 md:mb-4">
+                                        {isEn ? "\"Our mission is to bring people back to the roots of Yoga, where every breath becomes a doorway to inner stillness.\"" : t("legacy.quote")}
+                                    </p>
                                     <p className="font-bold text-xs md:text-base text-foreground">Sachin Ji</p>
                                     <p className="text-[10px] md:text-xs text-muted-foreground">Founder, YogaGarhi</p>
                                 </div>
                             </div>
 
                             <div className="space-y-8">
-                                <h2 className="font-heading text-4xl md:text-5xl font-bold">Why Join This Foundation?</h2>
-                                <p className="text-lg text-muted-foreground leading-relaxed">YogaGarhi represents an authentic Himalayan lineage. We don't just teach asanas; we provide a way of living that has transformed thousands of lives.</p>
+                                <h2 className="font-heading text-4xl md:text-5xl font-bold">
+                                    {isEn ? "Why Join This Foundation?" : t("legacy.heading")}
+                                </h2>
+                                <p className="text-lg text-muted-foreground leading-relaxed">
+                                    {isEn ? "YogaGarhi represents an authentic Himalayan lineage. We don't just teach asanas; we provide a way of living that has transformed thousands of lives." : t("legacy.desc")}
+                                </p>
 
                                 <div className="space-y-6">
                                     <div className="flex gap-4">
@@ -502,8 +635,12 @@ export default function TeacherTrainingFoundation() {
                                             <Award className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h3 className="font-bold text-lg mb-1">Authentic Lineage</h3>
-                                            <p className="text-muted-foreground">Rooted in traditional Himalayan wisdom, not commercial trends.</p>
+                                            <h3 className="font-bold text-lg mb-1">
+                                                {isEn ? "Authentic Lineage" : t("legacy.features.0.title")}
+                                            </h3>
+                                            <p className="text-muted-foreground">
+                                                {isEn ? "Rooted in traditional Himalayan wisdom, not commercial trends." : t("legacy.features.0.desc")}
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
@@ -511,8 +648,12 @@ export default function TeacherTrainingFoundation() {
                                             <Users className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h3 className="font-bold text-lg mb-1">Proven Results</h3>
-                                            <p className="text-muted-foreground">Join 2,500+ professionals who started their journey with us.</p>
+                                            <h3 className="font-bold text-lg mb-1">
+                                                {isEn ? "Proven Results" : t("legacy.features.1.title")}
+                                            </h3>
+                                            <p className="text-muted-foreground">
+                                                {isEn ? "Join 2,500+ professionals who started their journey with us." : t("legacy.features.1.desc")}
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
@@ -520,8 +661,12 @@ export default function TeacherTrainingFoundation() {
                                             <BookOpen className="w-6 h-6 text-primary" />
                                         </div>
                                         <div>
-                                            <h3 className="font-bold text-lg mb-1">TTC Pathway</h3>
-                                            <p className="text-muted-foreground">The perfect bridge to our globally recognized Yoga Alliance certifications.</p>
+                                            <h3 className="font-bold text-lg mb-1">
+                                                {isEn ? "TTC Pathway" : t("legacy.features.2.title")}
+                                            </h3>
+                                            <p className="text-muted-foreground">
+                                                {isEn ? "The perfect bridge to our globally recognized Yoga Alliance certifications." : t("legacy.features.2.desc")}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -535,12 +680,16 @@ export default function TeacherTrainingFoundation() {
             <section className="py-24 bg-background">
                 <div className="container mx-auto px-4 max-w-4xl">
                     <div className="text-center mb-16">
-                        <h2 className="font-heading text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-                        <p className="text-muted-foreground text-lg">Everything you need to know before joining.</p>
+                        <h2 className="font-heading text-4xl font-bold mb-4">
+                            {isEn ? "Frequently Asked Questions" : t("faq.heading")}
+                        </h2>
+                        <p className="text-muted-foreground text-lg">
+                            {isEn ? "Everything you need to know before joining." : t("faq.subheading")}
+                        </p>
                     </div>
 
                     <Accordion type="single" collapsible className="space-y-4">
-                        {faqs.map((faq, idx) => (
+                        {localizedFaqs.map((faq, idx) => (
                             <AccordionItem key={idx} value={`item-${idx}`} className="bg-secondary/50 rounded-2xl border border-border px-6 py-2">
                                 <AccordionTrigger className="font-heading text-lg font-bold hover:no-underline">{faq.question}</AccordionTrigger>
                                 <AccordionContent className="text-muted-foreground text-base leading-relaxed">
@@ -557,12 +706,16 @@ export default function TeacherTrainingFoundation() {
                 <div className="container mx-auto px-4">
                     <div className="flex justify-between items-end mb-16">
                         <div className="text-left">
-                            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 italic">Verified Google Reviews</h2>
+                            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 italic">
+                                {isEn ? "Verified Google Reviews" : t("reviews.heading")}
+                            </h2>
                             <p className="text-muted-foreground flex items-center gap-2">
                                 <span className="flex text-amber-500">
                                     {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current shadow-sm" />)}
                                 </span>
-                                <span className="font-bold text-foreground">5.0/5 Star Rating</span> • Transformation stories from around the world
+                                <span className="font-bold text-foreground">
+                                    {isEn ? "5.0/5 Star Rating" : t("reviews.ratingText")}
+                                </span> {isEn ? "• Transformation stories from around the world" : t("reviews.storiesText")}
                             </p>
                         </div>
                         <div className="flex gap-4 mb-2">
@@ -596,10 +749,10 @@ export default function TeacherTrainingFoundation() {
                         className="flex gap-6 md:gap-8 overflow-x-auto pb-12 cursor-grab active:cursor-grabbing snap-x snap-mandatory no-scrollbar scroll-smooth"
                         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                     >
-                        {testimonials.map((t, idx) => {
+                        {testimonials.map((tItem, idx) => {
                             const isExpanded = expandedReview === idx;
-                            const isLong = t.text.length > 200;
-                            const displayText = isLong && !isExpanded ? t.text.slice(0, 200) + "..." : t.text;
+                            const isLong = tItem.text.length > 200;
+                            const displayText = isLong && !isExpanded ? tItem.text.slice(0, 200) + "..." : tItem.text;
 
                             return (
                                 <div
@@ -620,8 +773,8 @@ export default function TeacherTrainingFoundation() {
                                         )}
                                     </div>
                                     <div className="mt-auto pt-6 border-t border-border/50">
-                                        <p className="font-bold text-sm md:text-base text-foreground not-italic">{t.name}</p>
-                                        <p className="text-[10px] md:text-sm text-muted-foreground not-italic">{t.role}</p>
+                                        <p className="font-bold text-sm md:text-base text-foreground not-italic">{tItem.name}</p>
+                                        <p className="text-[10px] md:text-sm text-muted-foreground not-italic">{tItem.role}</p>
                                     </div>
                                 </div>
                             );
@@ -640,7 +793,6 @@ export default function TeacherTrainingFoundation() {
                 </div>
             </section>
 
-
             {/* ===== LIVE Q&A SESSIONS ===== */}
             <section className="py-20 bg-background relative overflow-hidden border-t border-border/30">
               <div className="absolute top-1/4 -left-64 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
@@ -649,13 +801,13 @@ export default function TeacherTrainingFoundation() {
               <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                   <span className="text-primary font-heading text-xs font-bold tracking-widest uppercase bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
-                    Global Support
+                    {isEn ? "Global Support" : t("schedule.tag")}
                   </span>
                   <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mt-4 mb-4 leading-tight">
-                    Live Support & Q&A Schedule
+                    {isEn ? "Live Support & Q&A Schedule" : t("schedule.heading")}
                   </h2>
                   <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                    Connect with our founders and lead teachers live to get answers to all your course-related questions. Select the session that best matches your local timezone.
+                    {isEn ? "Connect with our founders and lead teachers live to get answers to all your course-related questions. Select the session that best matches your local timezone." : t("schedule.subheading")}
                   </p>
                 </div>
 
@@ -667,33 +819,33 @@ export default function TeacherTrainingFoundation() {
                     <div>
                       <div className="flex justify-between items-start mb-6">
                         <span className="text-xs font-bold text-primary tracking-widest uppercase bg-primary/10 px-2.5 py-1 rounded-md border border-primary/20">
-                          Session A
+                          {isEn ? "Session A" : t("schedule.sessions.0.tag")}
                         </span>
                         <span className="text-xs text-emerald-600 dark:text-emerald-400 font-semibold bg-emerald-500/10 px-2.5 py-1 rounded-md">
-                          APAC Friendly
+                          {isEn ? "APAC Friendly" : t("schedule.sessions.0.badge")}
                         </span>
                       </div>
                       <h3 className="font-heading text-xl font-bold text-foreground mb-4">
-                        Asia-Pacific Friendly
+                        {isEn ? "Asia-Pacific Friendly" : t("schedule.sessions.0.title")}
                       </h3>
                       <ul className="space-y-3.5 mb-8">
                         <li className="flex items-center gap-3 text-sm text-foreground/90">
                           <span className="w-2 h-2 rounded-full bg-primary" />
-                          <strong>Day:</strong> Tuesday
+                          <strong>{isEn ? "Day:" : t("schedule.sessions.0.dayLabel")}</strong> {isEn ? "Tuesday" : t("schedule.sessions.0.day")}
                         </li>
                         <li className="flex items-center gap-3 text-sm text-foreground/90">
                           <span className="w-2 h-2 rounded-full bg-primary" />
-                          <strong>Time (Bali):</strong> 5:00 PM WITA
+                          <strong>{isEn ? "Time (Bali):" : t("schedule.sessions.0.timeLabel")}</strong> {isEn ? "5:00 PM WITA" : t("schedule.sessions.0.time")}
                         </li>
                         <li className="flex flex-col gap-1 text-xs text-muted-foreground pl-5 border-l border-border/60">
-                          <span>• Sydney: 7:00 PM AEST</span>
-                          <span>• US East: 7:00 AM EDT</span>
+                          <span>{isEn ? "• Sydney: 7:00 PM AEST" : t("schedule.sessions.0.timeSydney")}</span>
+                          <span>{isEn ? "• US East: 7:00 AM EDT" : t("schedule.sessions.0.timeUsEast")}</span>
                         </li>
                       </ul>
                     </div>
                     <div className="pt-4 border-t border-border/40">
                       <p className="text-xs text-muted-foreground leading-relaxed">
-                        <strong className="text-foreground">Best for:</strong> Australia, New Zealand, and early-rising US East Coast prospects.
+                        <strong className="text-foreground">{isEn ? "Best for:" : t("schedule.sessions.0.bestForLabel")}</strong> {isEn ? "Australia, New Zealand, and early-rising US East Coast prospects." : t("schedule.sessions.0.bestForDesc")}
                       </p>
                     </div>
                   </div>
@@ -704,33 +856,33 @@ export default function TeacherTrainingFoundation() {
                     <div>
                       <div className="flex justify-between items-start mb-6">
                         <span className="text-xs font-bold text-primary tracking-widest uppercase bg-primary/10 px-2.5 py-1 rounded-md border border-primary/20">
-                          Session B
+                          {isEn ? "Session B" : t("schedule.sessions.1.tag")}
                         </span>
                         <span className="text-xs text-blue-600 dark:text-blue-400 font-semibold bg-blue-500/10 px-2.5 py-1 rounded-md">
-                          Europe Friendly
+                          {isEn ? "Europe Friendly" : t("schedule.sessions.1.badge")}
                         </span>
                       </div>
                       <h3 className="font-heading text-xl font-bold text-foreground mb-4">
-                        Europe Friendly
+                        {isEn ? "Europe Friendly" : t("schedule.sessions.1.title")}
                       </h3>
                       <ul className="space-y-3.5 mb-8">
                         <li className="flex items-center gap-3 text-sm text-foreground/90">
                           <span className="w-2 h-2 rounded-full bg-primary" />
-                          <strong>Day:</strong> Thursday
+                          <strong>{isEn ? "Day:" : t("schedule.sessions.1.dayLabel")}</strong> {isEn ? "Thursday" : t("schedule.sessions.1.day")}
                         </li>
                         <li className="flex items-center gap-3 text-sm text-foreground/90">
                           <span className="w-2 h-2 rounded-full bg-primary" />
-                          <strong>Time (Bali):</strong> 7:00 PM WITA
+                          <strong>{isEn ? "Time (Bali):" : t("schedule.sessions.1.timeLabel")}</strong> {isEn ? "7:00 PM WITA" : t("schedule.sessions.1.time")}
                         </li>
                         <li className="flex flex-col gap-1 text-xs text-muted-foreground pl-5 border-l border-border/60">
-                          <span>• United Kingdom: 12:00 PM BST</span>
-                          <span>• Germany: 1:00 PM CEST</span>
+                          <span>{isEn ? "• United Kingdom: 12:00 PM BST" : t("schedule.sessions.1.timeUk")}</span>
+                          <span>{isEn ? "• Germany: 1:00 PM CEST" : t("schedule.sessions.1.timeGermany")}</span>
                         </li>
                       </ul>
                     </div>
                     <div className="pt-4 border-t border-border/40">
                       <p className="text-xs text-muted-foreground leading-relaxed">
-                        <strong className="text-foreground">Best for:</strong> UK, Germany, and the rest of Europe.
+                        <strong className="text-foreground">{isEn ? "Best for:" : t("schedule.sessions.1.bestForLabel")}</strong> {isEn ? "UK, Germany, and the rest of Europe." : t("schedule.sessions.1.bestForDesc")}
                       </p>
                     </div>
                   </div>
@@ -741,33 +893,33 @@ export default function TeacherTrainingFoundation() {
                     <div>
                       <div className="flex justify-between items-start mb-6">
                         <span className="text-xs font-bold text-primary tracking-widest uppercase bg-primary/10 px-2.5 py-1 rounded-md border border-primary/20">
-                          Session C
+                          {isEn ? "Session C" : t("schedule.sessions.2.tag")}
                         </span>
                         <span className="text-xs text-amber-600 dark:text-amber-400 font-semibold bg-amber-500/10 px-2.5 py-1 rounded-md">
-                          Americas Friendly
+                          {isEn ? "Americas Friendly" : t("schedule.sessions.2.badge")}
                         </span>
                       </div>
                       <h3 className="font-heading text-xl font-bold text-foreground mb-4">
-                        Americas Friendly
+                        {isEn ? "Americas Friendly" : t("schedule.sessions.2.title")}
                       </h3>
                       <ul className="space-y-3.5 mb-8">
                         <li className="flex items-center gap-3 text-sm text-foreground/90">
                           <span className="w-2 h-2 rounded-full bg-primary" />
-                          <strong>Day:</strong> Saturday
+                          <strong>{isEn ? "Day:" : t("schedule.sessions.2.dayLabel")}</strong> {isEn ? "Saturday" : t("schedule.sessions.2.day")}
                         </li>
                         <li className="flex items-center gap-3 text-sm text-foreground/90">
                           <span className="w-2 h-2 rounded-full bg-primary" />
-                          <strong>Time (Bali):</strong> 9:00 AM WITA
+                          <strong>{isEn ? "Time (Bali):" : t("schedule.sessions.2.timeLabel")}</strong> {isEn ? "9:00 AM WITA" : t("schedule.sessions.2.time")}
                         </li>
                         <li className="flex flex-col gap-1 text-xs text-muted-foreground pl-5 border-l border-border/60">
-                          <span>• US West Coast: 7:00 PM (Friday)</span>
-                          <span>• US East Coast: 10:00 PM (Friday)</span>
+                          <span>{isEn ? "• US West Coast: 7:00 PM (Friday)" : t("schedule.sessions.2.timeUsWest")}</span>
+                          <span>{isEn ? "• US East Coast: 10:00 PM (Friday)" : t("schedule.sessions.2.timeUsEast")}</span>
                         </li>
                       </ul>
                     </div>
                     <div className="pt-4 border-t border-border/40">
                       <p className="text-xs text-muted-foreground leading-relaxed">
-                        <strong className="text-foreground">Best for:</strong> United States and Canada.
+                        <strong className="text-foreground">{isEn ? "Best for:" : t("schedule.sessions.2.bestForLabel")}</strong> {isEn ? "United States and Canada." : t("schedule.sessions.2.bestForDesc")}
                       </p>
                     </div>
                   </div>
@@ -777,47 +929,55 @@ export default function TeacherTrainingFoundation() {
                 <div className="max-w-4xl mx-auto">
                   <div className="bg-card/40 border border-border/60 rounded-2xl p-6 md:p-8 shadow-inner backdrop-blur-sm">
                     <h4 className="font-heading text-lg font-bold text-foreground mb-6 text-center">
-                      Quick Timezone Translation Table
+                      {isEn ? "Quick Timezone Translation Table" : t("schedule.table.heading")}
                     </h4>
                     <div className="overflow-x-auto">
                       <table className="w-full text-left border-collapse">
                         <thead>
                           <tr className="border-b border-border/40 text-xs tracking-wider text-muted-foreground uppercase">
-                            <th className="py-3 px-4">Region</th>
-                            <th className="py-3 px-4">Timezone</th>
-                            <th className="py-3 px-4">Your Local Time</th>
-                            <th className="py-3 px-4 text-right">Bali Time (Base)</th>
+                            <th className="py-3 px-4">{isEn ? "Region" : t("schedule.table.colRegion")}</th>
+                            <th className="py-3 px-4">{isEn ? "Timezone" : t("schedule.table.colTimezone")}</th>
+                            <th className="py-3 px-4">{isEn ? "Your Local Time" : t("schedule.table.colLocalTime")}</th>
+                            <th className="py-3 px-4 text-right">{isEn ? "Bali Time (Base)" : t("schedule.table.colBaliTime")}</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-border/20 text-sm">
                           <tr className="hover:bg-primary/5 transition-colors">
-                            <td className="py-3.5 px-4 font-medium text-foreground">Australia (Sydney/Melbourne)</td>
+                            <td className="py-3.5 px-4 font-medium text-foreground">
+                              {isEn ? "Australia (Sydney/Melbourne)" : (t("schedule.table.rows.0.region") || "Australia (Sydney/Melbourne)")}
+                            </td>
                             <td className="py-3.5 px-4 text-muted-foreground">AEST (UTC+10/+11)</td>
                             <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
                             <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">5:00 – 6:00 PM</td>
                           </tr>
                           <tr className="hover:bg-primary/5 transition-colors">
-                            <td className="py-3.5 px-4 font-medium text-foreground">United Kingdom (London)</td>
+                            <td className="py-3.5 px-4 font-medium text-foreground">
+                              {isEn ? "United Kingdom (London)" : (t("schedule.table.rows.1.region") || "United Kingdom (London)")}
+                            </td>
                             <td className="py-3.5 px-4 text-muted-foreground">BST/GMT (UTC+0/+1)</td>
                             <td className="py-3.5 px-4 text-primary font-semibold">12:00 – 1:00 PM</td>
                             <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">7:00 – 8:00 PM</td>
                           </tr>
                           <tr className="hover:bg-primary/5 transition-colors">
                             <td className="py-3.5 px-4 font-medium text-foreground">
-                              Germany (Berlin)
+                              {isEn ? "Germany (Berlin)" : (t("schedule.table.rows.2.region") || "Germany (Berlin)")}
                             </td>
                             <td className="py-3.5 px-4 text-muted-foreground">CEST (UTC+1/+2)</td>
                             <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
                             <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">1:00 – 2:00 AM</td>
                           </tr>
                           <tr className="hover:bg-primary/5 transition-colors">
-                            <td className="py-3.5 px-4 font-medium text-foreground">US East Coast (New York)</td>
+                            <td className="py-3.5 px-4 font-medium text-foreground">
+                              {isEn ? "US East Coast (New York)" : (t("schedule.table.rows.3.region") || "US East Coast (New York)")}
+                            </td>
                             <td className="py-3.5 px-4 text-muted-foreground">EDT (UTC-4)</td>
                             <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
                             <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">6:00 – 7:00 AM</td>
                           </tr>
                           <tr className="hover:bg-primary/5 transition-colors">
-                            <td className="py-3.5 px-4 font-medium text-foreground">US West Coast (Los Angeles)</td>
+                            <td className="py-3.5 px-4 font-medium text-foreground">
+                              {isEn ? "US West Coast (Los Angeles)" : (t("schedule.table.rows.4.region") || "US West Coast (Los Angeles)")}
+                            </td>
                             <td className="py-3.5 px-4 text-muted-foreground">PDT (UTC-7)</td>
                             <td className="py-3.5 px-4 text-primary font-semibold">7:00 – 8:00 PM</td>
                             <td className="py-3.5 px-4 text-right text-muted-foreground font-mono">9:00 – 10:00 AM</td>
@@ -836,15 +996,23 @@ export default function TeacherTrainingFoundation() {
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
 
                 <div className="container mx-auto px-4 relative z-10 text-center">
-                    <h2 className="font-heading text-4xl md:text-6xl font-bold text-primary-foreground mb-8 max-w-4xl mx-auto">Ready to Begin Your Yoga Teaching Path?</h2>
-                    <p className="text-xl text-primary-foreground/80 mb-12 max-w-2xl mx-auto">Secure your spot in our next 2-Day Foundation Masterclass for <span className="text-accent underline decoration-accent/30 font-bold uppercase">Free</span> (Limited Spots Available).</p>
+                    <h2 className="font-heading text-4xl md:text-6xl font-bold text-primary-foreground mb-8 max-w-4xl mx-auto">
+                        {isEn ? "Ready to Begin Your Yoga Teaching Path?" : t("finalCta.heading")}
+                    </h2>
+                    <p className="text-xl text-primary-foreground/80 mb-12 max-w-2xl mx-auto">
+                        {isEn ? "Secure your spot in our next 2-Day Foundation Masterclass for " : `${t("finalCta.subParaPart1")} `}
+                        <span className="text-accent underline decoration-accent/30 font-bold uppercase">
+                            {isEn ? "Free" : t("finalCta.subParaFree")}
+                        </span>
+                        {isEn ? " (Limited Spots Available)." : ` ${t("finalCta.subParaPart2")}`}
+                    </p>
 
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                         <Button variant="cta" size="xl" onClick={() => setShowFoundationForm(true)} className="bg-accent text-accent-foreground hover:bg-accent/90 px-12">
-                            YES, LET'S BEGIN FOR FREE
+                            {isEn ? "YES, LET'S BEGIN FOR FREE" : t("finalCta.ctaButton")}
                         </Button>
-                        <Link href="/contact-us" className="text-primary-foreground font-semibold flex items-center gap-2 hover:opacity-80 transition-opacity">
-                            Have questions? Talk to us <MessageCircle className="w-5 h-5" />
+                        <Link href={contactLink} className="text-primary-foreground font-semibold flex items-center gap-2 hover:opacity-80 transition-opacity">
+                            {isEn ? "Have questions? Talk to us " : `${t("finalCta.contactText")} `}<MessageCircle className="w-5 h-5" />
                         </Link>
                     </div>
                 </div>
@@ -858,7 +1026,9 @@ export default function TeacherTrainingFoundation() {
                             <span className="text-xl md:text-3xl font-bold text-foreground">FREE</span>
                             <span className="text-sm md:text-lg text-muted-foreground/60 line-through">$99</span>
                         </div>
-                        <span className="text-[10px] md:text-xs text-red-500 font-bold tracking-tight md:tracking-normal animate-pulse">ONLY 12 SEATS LEFT</span>
+                        <span className="text-[10px] md:text-xs text-red-500 font-bold tracking-tight md:tracking-normal animate-pulse">
+                            {isEn ? "ONLY 12 SEATS LEFT" : t("stickyBar.badgeSeatsLeft")}
+                        </span>
                     </div>
 
                     <Button
@@ -867,7 +1037,7 @@ export default function TeacherTrainingFoundation() {
                         onClick={() => setShowFoundationForm(true)}
                         className="bg-accent text-accent-foreground hover:bg-accent/90 px-6 md:px-10 py-5 md:py-7 rounded-xl md:rounded-2xl shadow-lg transform active:scale-95 transition-all text-sm md:text-lg font-bold group"
                     >
-                        Join Now <ArrowRight className="ml-2 w-4 h-4 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform" />
+                        {isEn ? "Join Now" : t("stickyBar.button")} <ArrowRight className="ml-2 w-4 h-4 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform" />
                     </Button>
                 </div>
             </div>
@@ -875,6 +1045,7 @@ export default function TeacherTrainingFoundation() {
             <FoundationEnrollmentDialog
                 open={showFoundationForm}
                 onOpenChange={setShowFoundationForm}
+                locale={locale}
             />
         </Layout>
     );
