@@ -3859,7 +3859,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             {/* View All Reviews Link */}
             <div className="text-center mt-10">
               <a
-                href="https://www.google.com/maps/place/Yoga+Teacher+Training+in+Bali+-+Yogagarhi/@-8.4982,115.3051,17z/data=!4m6!3m5!1s0x2dd219e70aa3e43d:0x281930517f104591!8m2!3d-8.4982!4d115.3051"
+                href="https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
@@ -4411,7 +4411,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
               <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button variant="outline" asChild>
                   <a
-                    href="https://maps.google.com/?q=-8.4982,115.3051"
+                    href="https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

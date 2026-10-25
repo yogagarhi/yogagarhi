@@ -4286,7 +4286,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button variant="outline" asChild>
                   <a
-                    href="https://maps.google.com/?q=-8.4982,115.3051"
+                    href="https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

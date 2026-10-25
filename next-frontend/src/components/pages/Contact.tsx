@@ -188,7 +188,7 @@ export default function Contact() {
               <div className="mt-6 pt-6 border-t border-border/80 flex items-center justify-between">
                 <span className="text-xs font-medium text-foreground">{t("baliOpen")}</span>
                 <a
-                  href="https://maps.google.com/?q=-8.4982,115.3051"
+                  href="https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1"

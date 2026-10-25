@@ -4355,7 +4355,7 @@ export default function CoursePageTemplate({
                     href={
                       isRishikesh
                         ? "https://maps.google.com/?q=30.1312,78.3245"
-                        : "https://maps.google.com/?q=-8.4982,115.3051"
+                        : "https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
                     }
                     target="_blank"
                     rel="noopener noreferrer"

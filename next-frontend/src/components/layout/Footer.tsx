@@ -133,7 +133,7 @@ export default function Footer() {
             <span>yogagarhi@gmail.com</span>
           </a>
           <a
-            href="https://maps.google.com/?q=-8.4982,115.3051"
+            href="https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-primary-foreground transition-colors"

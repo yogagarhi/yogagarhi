@@ -58,7 +58,7 @@ export default function GoogleReviewsSection() {
         {/* View All CTA */}
         <div className="text-center mt-8">
           <a
-            href="https://www.google.com/maps/place/Yoga+Teacher+Training+in+Bali+-+Yogagarhi/@-8.4982,115.3051,17z/data=!4m6!3m5!1s0x2dd219e70aa3e43d:0x281930517f104591!8m2!3d-8.4982!4d115.3051"
+            href="https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 bg-white border-2 border-gray-200 hover:border-blue-500 rounded-full px-6 py-3 shadow-md hover:shadow-lg transition-all duration-300"
