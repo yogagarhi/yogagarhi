@@ -188,7 +188,7 @@ export default function Contact() {
               <div className="mt-6 pt-6 border-t border-border/80 flex items-center justify-between">
                 <span className="text-xs font-medium text-foreground">{t("baliOpen")}</span>
                 <a
-                  href="https://maps.google.com/?q=Ds+madangan+kaja,+Desa+petak,+Petak+kaja,+Kec.+Gianyar,+Kabupaten+Gianyar,+Bali+80515,+Indonesia"
+                  href="https://maps.google.com/?q=-8.4982,115.3051"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1"
@@ -225,7 +225,7 @@ export default function Contact() {
               <div className="mt-6 pt-6 border-t border-border/80 flex items-center justify-between">
                 <span className="text-xs font-medium text-foreground">{t("rishikeshOpen")}</span>
                 <a
-                  href="https://maps.google.com/?q=Tapovan,+Rishikesh,+Uttarakhand+249192,+India"
+                  href="https://maps.google.com/?q=30.1312,78.3245"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-bold text-primary hover:underline inline-flex items-center gap-1"
@@ -282,7 +282,7 @@ export default function Contact() {
             {activeCampus === "bali" ? (
               <iframe
                 title="YogaGarhi Bali Ashram Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.208753238713!2d115.32564227589578!3d-8.465033485596487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd219e70aa3e43d%3A0x281930517f104591!2sYoga%20Teacher%20Training%20in%20Bali%20-%20Yogagarhi!5e0!3m2!1sen!2sid!4v1711200000000!5m2!1sen!2sid"
+                src="https://maps.google.com/maps?q=-8.4982,115.3051&hl=en&z=15&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -294,7 +294,7 @@ export default function Contact() {
             ) : (
               <iframe
                 title="YogaGarhi Rishikesh Himalayan Campus Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13816.29427011406!2d78.31422473453883!3d30.130722123280053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909163e76a6e9a7%3A0xb30e84b72618b108!2sTapovan%2C%20Rishikesh%2C%20Uttarakhand%20249192!5e0!3m2!1sen!2sin!4v1711200000000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=30.1312,78.3245&hl=en&z=15&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

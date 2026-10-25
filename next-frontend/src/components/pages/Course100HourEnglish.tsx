@@ -3862,7 +3862,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             {/* View All Reviews Link */}
             <div className="text-center mt-10">
               <a
-                href="https://www.google.com/maps/place/Yoga+Teacher+Training+in+Bali+-+Yogagarhi/@-8.4645426,115.3278308,18z/data=!4m6!3m5!1s0x2dd219e70aa3e43d:0x281930517f104591!8m2!3d-8.4649127!4d115.3258379!16s%2Fg%2F11xywjhmnz?entry=ttu&g_ep=EgoyMDI2MDExMS4wIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/Yoga+Teacher+Training+in+Bali+-+Yogagarhi/@-8.4982,115.3051,17z/data=!4m6!3m5!1s0x2dd219e70aa3e43d:0x281930517f104591!8m2!3d-8.4982!4d115.3051"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
@@ -4393,13 +4393,13 @@ This is not a transactional relationship — it is a lifelong connection.`}
               Location
             </h2>
             <p className="text-center text-muted-foreground mb-12">
-              Ds Madangan Kaja, Desa Petak, Petak Kaja, Kec. Gianyar, Kabupaten Gianyar, Bali 80515, Indonesia
+              YogaGarhi, Gianyar, Bali 80515, Indonesia
             </p>
 
             <div className="max-w-4xl mx-auto">
               <div className="aspect-video rounded-lg overflow-hidden bg-muted shadow-elevated">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.5!2d115.3!3d-8.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd217a4e2d26eaf%3A0x5b5a8f3b5f9b9c0a!2sYoga%20Teacher%20Training%20in%20Bali%20-%20Yogagarhi!5e0!3m2!1sen!2sin!4v1704067200000!5m2!1sen!2sin"
+                  src="https://maps.google.com/maps?q=-8.4982,115.3051&hl=en&z=15&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -4414,7 +4414,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
               <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button variant="outline" asChild>
                   <a
-                    href="https://maps.app.goo.gl/u6pCMseX1a6ADLCA8"
+                    href="https://maps.google.com/?q=-8.4982,115.3051"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

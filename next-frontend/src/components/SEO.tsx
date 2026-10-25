@@ -41,7 +41,7 @@ export default function SEO({
     email: 'yogagarhi@gmail.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Ds madangan kaja, Desa petak, Petak kaja',
+      streetAddress: 'Gianyar',
       addressLocality: 'Gianyar',
       addressRegion: 'Bali',
       postalCode: '80515',
@@ -119,8 +119,8 @@ export default function SEO({
       {/* Additional SEO Tags */}
       <meta name="geo.region" content="ID-BA" />
       <meta name="geo.placename" content="Gianyar, Bali" />
-      <meta name="geo.position" content="-8.4095;115.3125" />
-      <meta name="ICBM" content="-8.4095, 115.3125" />
+      <meta name="geo.position" content="-8.4982;115.3051" />
+      <meta name="ICBM" content="-8.4982, 115.3051" />
 
       {/* Language */}
       <meta httpEquiv="content-language" content="en" />

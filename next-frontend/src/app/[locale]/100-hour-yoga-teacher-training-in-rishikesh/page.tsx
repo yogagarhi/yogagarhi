@@ -218,9 +218,16 @@ export default async function Page({
                 "name": "YogaGarhi Ashram",
                 "address": {
                     "@type": "PostalAddress",
+                    "streetAddress": "Tapovan",
                     "addressLocality": "Rishikesh",
                     "addressRegion": "Uttarakhand",
+                    "postalCode": "249192",
                     "addressCountry": "India"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 30.1312,
+                    "longitude": 78.3245
                 }
             }
         })),

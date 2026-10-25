@@ -232,9 +232,16 @@ export default async function Page({
                 "name": "YogaGarhi Ashram",
                 "address": {
                     "@type": "PostalAddress",
+                    "streetAddress": "Gianyar",
                     "addressLocality": "Gianyar",
                     "addressRegion": "Bali",
+                    "postalCode": "80515",
                     "addressCountry": "Indonesia"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -8.4982,
+                    "longitude": 115.3051
                 }
             }
         })),
@@ -327,7 +334,7 @@ export default async function Page({
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Ds Madangan Kaja, Desa Petak, Petak Kaja",
+            "streetAddress": "Gianyar",
             "addressLocality": "Gianyar",
             "addressRegion": "Bali",
             "postalCode": "80515",
@@ -335,8 +342,8 @@ export default async function Page({
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": -8.5085186,
-            "longitude": 115.2635395
+            "latitude": -8.4982,
+            "longitude": 115.3051
         }
     };
 

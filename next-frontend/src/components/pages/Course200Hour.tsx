@@ -4265,13 +4265,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               Location
             </h2>
             <p className="text-center text-muted-foreground mb-12">
-              Ds Madangan Kaja, Desa Petak, Petak Kaja, Kec. Gianyar, Kabupaten Gianyar, Bali 80515, Indonesia
+              YogaGarhi, Gianyar, Bali 80515, Indonesia
             </p>
 
             <div className="max-w-4xl mx-auto">
               <div className="aspect-video rounded-lg overflow-hidden bg-muted shadow-elevated">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15777.6219356346!2d115.2635395!3d-8.5085186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d7f1d4b6841%3A0x6b74cf560b4cb9a6!2sYogagarhi!5e0!3m2!1sen!2sin!4v1709623847291!5m2!1sen!2sin"
+                  src="https://maps.google.com/maps?q=-8.4982,115.3051&hl=en&z=15&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -4286,7 +4286,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button variant="outline" asChild>
                   <a
-                    href="https://maps.app.goo.gl/u6pCMseX1a6ADLCA8"
+                    href="https://maps.google.com/?q=-8.4982,115.3051"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

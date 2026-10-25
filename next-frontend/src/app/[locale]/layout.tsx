@@ -211,7 +211,7 @@ export default async function LocaleLayout({
                   "priceRange": "$$",
                   "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Ds madangan kaja, Desa petak, Petak kaja, Kec. Gianyar",
+                    "streetAddress": "Gianyar",
                     "addressLocality": "Gianyar",
                     "addressRegion": "Bali",
                     "postalCode": "80515",
@@ -219,8 +219,8 @@ export default async function LocaleLayout({
                   },
                   "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": 8.4649127,
-                    "longitude": 115.3258379
+                    "latitude": -8.4982,
+                    "longitude": 115.3051
                   },
                   "aggregateRating": {
                     "@type": "AggregateRating",
@@ -261,7 +261,7 @@ export default async function LocaleLayout({
                   "priceRange": "$$",
                   "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Ds madangan kaja, Desa petak, Petak kaja, Kec. Gianyar",
+                    "streetAddress": "Gianyar",
                     "addressLocality": "Gianyar",
                     "addressRegion": "Bali",
                     "postalCode": "80515",
@@ -269,8 +269,8 @@ export default async function LocaleLayout({
                   },
                   "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": 8.4649127,
-                    "longitude": 115.3258379
+                    "latitude": -8.4982,
+                    "longitude": 115.3051
                   },
                   "openingHoursSpecification": {
                     "@type": "OpeningHoursSpecification",
@@ -303,7 +303,7 @@ export default async function LocaleLayout({
                   "priceRange": "$$",
                   "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Tapovan, Badrinath Rd",
+                    "streetAddress": "Tapovan",
                     "addressLocality": "Rishikesh",
                     "addressRegion": "Uttarakhand",
                     "postalCode": "249192",
@@ -311,7 +311,7 @@ export default async function LocaleLayout({
                   },
                   "geo": {
                     "@type": "GeoCoordinates",
-                    "latitude": 30.1313,
+                    "latitude": 30.1312,
                     "longitude": 78.3245
                   },
                   "openingHoursSpecification": {

@@ -249,9 +249,16 @@ export default async function Page({
                 "name": "YogaGarhi Ashram",
                 "address": {
                     "@type": "PostalAddress",
+                    "streetAddress": "Gianyar",
                     "addressLocality": "Gianyar",
                     "addressRegion": "Bali",
+                    "postalCode": "80515",
                     "addressCountry": "Indonesia"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -8.4982,
+                    "longitude": 115.3051
                 }
             }
         })),
