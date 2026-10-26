@@ -3038,7 +3038,7 @@
       "incCert": "顺利毕业颁发的 Yoga Alliance RYT 200 国际认证执照",
       "incManuals": "全套官方培训教材、随堂讲义与研习笔记",
       "incKit": "高品质专业瑜伽垫及全套辅具免费使用",
-      "incExcursions": "圣迹文化采风（圣泉寺参访、梯田游览及传统巴厘舞蹈）",
+      "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "传统开学与结业神圣火祭（Agni Hotra）",
       "incPickup": "开学报到日登巴萨机场（DPS）免费专车接机",
       "incPre": "免费 Pre-TTC 线上行前预科学堂",
@@ -3316,8 +3316,8 @@
     },
     "excursionsSection": {
       "badge": "瑜伽垫之外",
-      "heading": "圣境文化探访",
-      "sub": "沉浸于巴厘岛悠久的灵性传承之中，开启唤醒身心的蜕变之旅"
+      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
+      "sub": "Immerse yourself in Rishikesh's sacred spiritual heritage through transformative Himalayan excursions"
     },
     "prakritiResearch": {
       "heading": "Sachin Ji 关于定制化瑜伽与体质（Prakriti）的独创研究",
@@ -3366,26 +3366,27 @@
       "hover": "悬停查看详情"
     },
     "inclusionsList": [
-      "整洁舒适的静修客房",
-      "配有恒温热水的独立卫浴",
-      "空调与静音吊扇设施",
-      "园区免费高速无线网络",
-      "每日三餐健康纯净素食",
-      "草本养生茶与纯净饮用水",
-      "全套原版教材（手册、笔记本、用笔）",
-      "专业瑜伽垫及辅助辅具",
-      "户外文化采风与周末短途游",
-      "开课当日接机服务（最近的登巴萨机场）",
-      "校园全天候管家服务团队",
-      "考核通过后颁发国际认证证书",
-      "巴厘岛传统经典疗愈按摩",
-      "传统巴厘岛祈福舞蹈表演",
-      "乌布田园梯田自然徒步",
-      "免费赠送线上 Pre-TTC 预备课程",
-      "手臂支撑与倒立进阶专题工作坊",
-      "阿育吠陀养生专题工作坊",
-      "享终身免费重温复训特权",
-      "YogaGarhi 35+ 原创流瑜伽编排专著"
+      "Clean and comfortable ashram room in Tapovan",
+      "Attached private bathroom with 24/7 hot water",
+      "Air conditioning / heating & ceiling fan",
+      "Free high-speed Wi-Fi access",
+      "Three healthy organic vegetarian meals daily",
+      "Herbal teas and purified drinking water",
+      "Study material (manuals, notebooks, pens)",
+      "Yoga mats and props provided",
+      "Sacred Ganga Aarti & Himalayan excursions",
+      "Airport pickup assistance (Dehradun DED airport)",
+      "24/7 on-campus ashram support team",
+      "Yoga Alliance accredited RYT certification",
+      "Rejuvenating Ayurvedic Abhyanga massage",
+      "Ganga Aarti ceremony at Parmarth Niketan",
+      "Kunjapuri Himalayan sunrise meditation trek",
+      "Vashistha Cave meditation excursion",
+      "Pre-TTC online preparation modules",
+      "Arm balance & alignment workshops",
+      "Ayurveda lifestyle & nutrition workshop",
+      "Lifetime free course re-attendance included",
+      "Yogagarhi 35+ creative sequencing book"
     ],
     "exclusionsList": [
       "往返国际机票与差旅交通费用",
@@ -3396,52 +3397,52 @@
     ],
     "whatYouWillReceiveList": [
       {
-        "title": "多流派融合系统培训",
-        "description": "沿袭纯正传统的传承之法研习瑜伽，导师忠实守护着千百年来的古印度身心智慧。"
+        "title": "Multi-Style Yoga Mastery",
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
       },
       {
-        "title": "全美瑜伽联盟权威认证",
-        "description": "斩获全球通用的专业教师认证，满怀信心开启属于您的专业教学之路。"
+        "title": "Yoga Alliance RYT Certification",
+        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
       },
       {
-        "title": "巴厘岛世外桃源秘境",
-        "description": "在葱郁的热带雨林与自然怀抱中练习瑜伽，让清新的空气与海风深化您的修行。"
+        "title": "Peaceful Tapovan Ashram Surroundings",
+        "description": "Practice in the serene Himalayan foothills overlooking the sacred Ganges away from tourist crowds."
       },
       {
-        "title": "户外人文圣境采风",
-        "description": "探访古老神庙、海滩与灵性步道，让深度学习与巴厘岛风土民情完美融合。"
+        "title": "Sacred Spiritual Excursions",
+        "description": "Explore holy Ganga river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
       },
       {
-        "title": "精品小班个性教学",
-        "description": "享受老师悉心的针对性指导与精准手法调整，每一位学员的成长都是我们的核心关切。"
+        "title": "Small Batch Sizes (8–10 Max)",
+        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
       },
       {
-        "title": "充满温情的同修大家庭",
-        "description": "结识来自世界各地的良师益友，在包容、支持与正能量的氛围中共同蜕变。"
+        "title": "Supportive Ashram Community",
+        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
       },
       {
-        "title": "传统巴厘岛身体按摩",
-        "description": "纯正印尼手法舒缓紧绷肌肉，让身心进入深层次的彻底放松与能量充盈。"
+        "title": "Ayurvedic Abhyanga Massage",
+        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
       },
       {
-        "title": "神圣巴厘岛祈福舞蹈",
-        "description": "观赏富有表现力的古老舞蹈艺术，领略巴厘岛深邃的精神世界与神话传说。"
+        "title": "Ganga Aarti & Vedic Chanting",
+        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Ganga."
       },
       {
-        "title": "纯净高能悦性饮食",
-        "description": "尽享每日新鲜烹调的悦性蔬食（Sattvic），为密集修习提供温和纯净的身体养分。"
+        "title": "Sattvic Ayurvedic Cuisine",
+        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
       },
       {
-        "title": "正念冥想实修",
-        "description": "在每日静心引导中涤除杂念，培养敏锐的觉察力与持久的内心安宁。"
+        "title": "Meditation & Yoga Nidra",
+        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
       },
       {
-        "title": "资深名师亲自执教",
-        "description": "师从兼具丰厚教学积淀与实证功底的认证导师，汲取最真实的教学精髓。"
+        "title": "E-RYT 500 Master Instructors",
+        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
       },
       {
-        "title": "瑜伽修身之道",
-        "description": "将瑜伽哲学融入日常饮食起居，实现身体、心智与心灵的全面和谐。"
+        "title": "Living Yogic Philosophy",
+        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
       }
     ],
     "workshopsList": [
@@ -3472,47 +3473,47 @@
     ],
     "excursionsList": [
       {
-        "title": "传统巴厘岛神话舞蹈演出",
-        "description": "亲临震撼人心的巴厘岛古典舞蹈现场，感受优雅身姿、动人神话与虔诚敬畏的交融。"
+        "title": "Parmarth Niketan & Triveni Ghat Ganga Aarti",
+        "description": "Witness the sacred evening Ganga Aarti on the holy banks of the Ganges — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
       },
       {
-        "title": "乌布德格拉朗梯田徒步",
-        "description": "漫步于世界闻名的阶梯稻田绿海，感受岛屿乡村宁静祥和的自然节律。"
+        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
+        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
       },
       {
-        "title": "神圣泉瀑圣水净身仪式",
-        "description": "前往古老的隐秘天然瀑布，在清凉甘甜的泉水洗礼中洗涤尘劳、焕发新生。"
+        "title": "Vashistha Cave Meditation & White Sand Ganga Beach",
+        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Ganga, renowned for centuries of sadhana."
       }
     ],
     "foodMenuList": [
       {
-        "meal": "早餐",
-        "time": "07:00",
+        "meal": "Breakfast",
+        "time": "9:15 AM",
         "items": [
-          "新鲜时令热带水果拼盘",
-          "手工自制坚果燕麦搭椰子酸奶",
-          "天然草本热茶与鲜榨果汁",
-          "巴厘岛风味滋养米粥"
+          "Fresh seasonal Himalayan fruits & papaya",
+          "Nutritious Ayurvedic grain porridge & oats",
+          "Herbal digestive infusions & mountain chai",
+          "Sprouted moong & wholesome nuts"
         ]
       },
       {
-        "meal": "午餐",
-        "time": "12:30",
+        "meal": "Lunch",
+        "time": "12:00 PM",
         "items": [
-          "高营养全素能量碗（Buddha Bowl）",
-          "香煎印尼天贝与新鲜豆腐料理",
-          "有机农庄脆爽田园沙拉",
-          "巴厘岛传统热炒时蔬"
+          "Organic Himalayan khichdi & wholesome lentils",
+          "Freshly baked whole wheat rotis & basmati rice",
+          "Tridosha-balancing seasonal vegetable sabzi",
+          "Crisp organic garden salads"
         ]
       },
       {
-        "meal": "晚餐",
-        "time": "18:30",
+        "meal": "Dinner",
+        "time": "7:30 PM",
         "items": [
-          "温润养胃的药膳浓汤",
-          "精选蒸杂粮谷物配扁豆糊（Dahl）",
-          "阿育吠陀经典香料烩饭（Kitchari）",
-          "安神舒缓晚安草本茶"
+          "Light nourishing Ayurvedic vegetable soups",
+          "Steamed seasonal mountain greens & lentils",
+          "Digestive herbal broths & wholesome grains",
+          "Golden turmeric almond milk"
         ]
       }
     ],
@@ -3753,7 +3754,7 @@
       "incCert": "顺利毕业颁发的 Yoga Alliance RYT 200 国际认证执照",
       "incManuals": "全套官方培训教材、随堂讲义与研习笔记",
       "incKit": "高品质专业瑜伽垫及全套辅具免费使用",
-      "incExcursions": "圣迹文化采风（圣泉寺参访、梯田游览及传统巴厘舞蹈）",
+      "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "传统开学与结业神圣火祭（Agni Hotra）",
       "incPickup": "开学报到日登巴萨机场（DPS）免费专车接机",
       "incPre": "免费 Pre-TTC 线上行前预科学堂",
@@ -4031,8 +4032,8 @@
     },
     "excursionsSection": {
       "badge": "瑜伽垫之外",
-      "heading": "圣境文化探访",
-      "sub": "沉浸于巴厘岛悠久的灵性传承之中，开启唤醒身心的蜕变之旅"
+      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
+      "sub": "Immerse yourself in Rishikesh's sacred spiritual heritage through transformative Himalayan excursions"
     },
     "prakritiResearch": {
       "heading": "Sachin Ji 关于定制化瑜伽与体质（Prakriti）的独创研究",
@@ -4081,26 +4082,27 @@
       "hover": "悬停查看详情"
     },
     "inclusionsList": [
-      "整洁舒适的静修客房",
-      "配有恒温热水的独立卫浴",
-      "空调与静音吊扇设施",
-      "园区免费高速无线网络",
-      "每日三餐健康纯净素食",
-      "草本养生茶与纯净饮用水",
-      "全套原版教材（手册、笔记本、用笔）",
-      "专业瑜伽垫及辅助辅具",
-      "户外文化采风与周末短途游",
-      "开课当日接机服务（最近的登巴萨机场）",
-      "校园全天候管家服务团队",
-      "考核通过后颁发国际认证证书",
-      "巴厘岛传统经典疗愈按摩",
-      "传统巴厘岛祈福舞蹈表演",
-      "乌布田园梯田自然徒步",
-      "免费赠送线上 Pre-TTC 预备课程",
-      "手臂支撑与倒立进阶专题工作坊",
-      "阿育吠陀养生专题工作坊",
-      "享终身免费重温复训特权",
-      "YogaGarhi 35+ 原创流瑜伽编排专著"
+      "Clean and comfortable ashram room in Tapovan",
+      "Attached private bathroom with 24/7 hot water",
+      "Air conditioning / heating & ceiling fan",
+      "Free high-speed Wi-Fi access",
+      "Three healthy organic vegetarian meals daily",
+      "Herbal teas and purified drinking water",
+      "Study material (manuals, notebooks, pens)",
+      "Yoga mats and props provided",
+      "Sacred Ganga Aarti & Himalayan excursions",
+      "Airport pickup assistance (Dehradun DED airport)",
+      "24/7 on-campus ashram support team",
+      "Yoga Alliance accredited RYT certification",
+      "Rejuvenating Ayurvedic Abhyanga massage",
+      "Ganga Aarti ceremony at Parmarth Niketan",
+      "Kunjapuri Himalayan sunrise meditation trek",
+      "Vashistha Cave meditation excursion",
+      "Pre-TTC online preparation modules",
+      "Arm balance & alignment workshops",
+      "Ayurveda lifestyle & nutrition workshop",
+      "Lifetime free course re-attendance included",
+      "Yogagarhi 35+ creative sequencing book"
     ],
     "exclusionsList": [
       "往返国际机票与差旅交通费用",
@@ -4111,52 +4113,52 @@
     ],
     "whatYouWillReceiveList": [
       {
-        "title": "多流派融合系统培训",
-        "description": "沿袭纯正传统的传承之法研习瑜伽，导师忠实守护着千百年来的古印度身心智慧。"
+        "title": "Multi-Style Yoga Mastery",
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
       },
       {
-        "title": "全美瑜伽联盟权威认证",
-        "description": "斩获全球通用的专业教师认证，满怀信心开启属于您的专业教学之路。"
+        "title": "Yoga Alliance RYT Certification",
+        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
       },
       {
-        "title": "巴厘岛世外桃源秘境",
-        "description": "在葱郁的热带雨林与自然怀抱中练习瑜伽，让清新的空气与海风深化您的修行。"
+        "title": "Peaceful Tapovan Ashram Surroundings",
+        "description": "Practice in the serene Himalayan foothills overlooking the sacred Ganges away from tourist crowds."
       },
       {
-        "title": "户外人文圣境采风",
-        "description": "探访古老神庙、海滩与灵性步道，让深度学习与巴厘岛风土民情完美融合。"
+        "title": "Sacred Spiritual Excursions",
+        "description": "Explore holy Ganga river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
       },
       {
-        "title": "精品小班个性教学",
-        "description": "享受老师悉心的针对性指导与精准手法调整，每一位学员的成长都是我们的核心关切。"
+        "title": "Small Batch Sizes (8–10 Max)",
+        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
       },
       {
-        "title": "充满温情的同修大家庭",
-        "description": "结识来自世界各地的良师益友，在包容、支持与正能量的氛围中共同蜕变。"
+        "title": "Supportive Ashram Community",
+        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
       },
       {
-        "title": "传统巴厘岛身体按摩",
-        "description": "纯正印尼手法舒缓紧绷肌肉，让身心进入深层次的彻底放松与能量充盈。"
+        "title": "Ayurvedic Abhyanga Massage",
+        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
       },
       {
-        "title": "神圣巴厘岛祈福舞蹈",
-        "description": "观赏富有表现力的古老舞蹈艺术，领略巴厘岛深邃的精神世界与神话传说。"
+        "title": "Ganga Aarti & Vedic Chanting",
+        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Ganga."
       },
       {
-        "title": "纯净高能悦性饮食",
-        "description": "尽享每日新鲜烹调的悦性蔬食（Sattvic），为密集修习提供温和纯净的身体养分。"
+        "title": "Sattvic Ayurvedic Cuisine",
+        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
       },
       {
-        "title": "正念冥想实修",
-        "description": "在每日静心引导中涤除杂念，培养敏锐的觉察力与持久的内心安宁。"
+        "title": "Meditation & Yoga Nidra",
+        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
       },
       {
-        "title": "资深名师亲自执教",
-        "description": "师从兼具丰厚教学积淀与实证功底的认证导师，汲取最真实的教学精髓。"
+        "title": "E-RYT 500 Master Instructors",
+        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
       },
       {
-        "title": "瑜伽修身之道",
-        "description": "将瑜伽哲学融入日常饮食起居，实现身体、心智与心灵的全面和谐。"
+        "title": "Living Yogic Philosophy",
+        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
       }
     ],
     "workshopsList": [
@@ -4187,47 +4189,47 @@
     ],
     "excursionsList": [
       {
-        "title": "传统巴厘岛神话舞蹈演出",
-        "description": "亲临震撼人心的巴厘岛古典舞蹈现场，感受优雅身姿、动人神话与虔诚敬畏的交融。"
+        "title": "Parmarth Niketan & Triveni Ghat Ganga Aarti",
+        "description": "Witness the sacred evening Ganga Aarti on the holy banks of the Ganges — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
       },
       {
-        "title": "乌布德格拉朗梯田徒步",
-        "description": "漫步于世界闻名的阶梯稻田绿海，感受岛屿乡村宁静祥和的自然节律。"
+        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
+        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
       },
       {
-        "title": "神圣泉瀑圣水净身仪式",
-        "description": "前往古老的隐秘天然瀑布，在清凉甘甜的泉水洗礼中洗涤尘劳、焕发新生。"
+        "title": "Vashistha Cave Meditation & White Sand Ganga Beach",
+        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Ganga, renowned for centuries of sadhana."
       }
     ],
     "foodMenuList": [
       {
-        "meal": "早餐",
-        "time": "07:00",
+        "meal": "Breakfast",
+        "time": "9:15 AM",
         "items": [
-          "新鲜时令热带水果拼盘",
-          "手工自制坚果燕麦搭椰子酸奶",
-          "天然草本热茶与鲜榨果汁",
-          "巴厘岛风味滋养米粥"
+          "Fresh seasonal Himalayan fruits & papaya",
+          "Nutritious Ayurvedic grain porridge & oats",
+          "Herbal digestive infusions & mountain chai",
+          "Sprouted moong & wholesome nuts"
         ]
       },
       {
-        "meal": "午餐",
-        "time": "12:30",
+        "meal": "Lunch",
+        "time": "12:00 PM",
         "items": [
-          "高营养全素能量碗（Buddha Bowl）",
-          "香煎印尼天贝与新鲜豆腐料理",
-          "有机农庄脆爽田园沙拉",
-          "巴厘岛传统热炒时蔬"
+          "Organic Himalayan khichdi & wholesome lentils",
+          "Freshly baked whole wheat rotis & basmati rice",
+          "Tridosha-balancing seasonal vegetable sabzi",
+          "Crisp organic garden salads"
         ]
       },
       {
-        "meal": "晚餐",
-        "time": "18:30",
+        "meal": "Dinner",
+        "time": "7:30 PM",
         "items": [
-          "温润养胃的药膳浓汤",
-          "精选蒸杂粮谷物配扁豆糊（Dahl）",
-          "阿育吠陀经典香料烩饭（Kitchari）",
-          "安神舒缓晚安草本茶"
+          "Light nourishing Ayurvedic vegetable soups",
+          "Steamed seasonal mountain greens & lentils",
+          "Digestive herbal broths & wholesome grains",
+          "Golden turmeric almond milk"
         ]
       }
     ],
@@ -5469,7 +5471,7 @@
       "incCert": "Yoga Alliance RYT 200 Certificate upon graduation",
       "incManuals": "Official course manuals, notebooks, and study materials",
       "incKit": "Yoga mat and practice props provided",
-      "incExcursions": "Sacred cultural excursions (water temple, rice fields, Balinese dance)",
+      "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
       "incPickup": "Airport pickup from Denpasar (DPS) on course arrival date",
       "incPre": "Complimentary online Pre-TTC preparation module",
@@ -5767,8 +5769,8 @@
     },
     "excursionsSection": {
       "badge": "Beyond The Mat",
-      "heading": "Sacred Excursions",
-      "sub": "Immerse yourself in Rishikesh's sacred spiritual heritage through transformative excursions"
+      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
+      "sub": "Immerse yourself in Rishikesh's sacred spiritual heritage through transformative Himalayan excursions"
     },
     "prakritiResearch": {
       "heading": "Sachin Ji's Research on Personalized Yoga and Prakriti",
@@ -5817,25 +5819,26 @@
       "hover": "Hover to see more"
     },
     "inclusionsList": [
-      "Clean and comfortable room",
-      "Attached bathroom with hot water",
-      "Air conditioning / fan",
-      "Free Wi-Fi access",
-      "Three healthy vegetarian meals daily",
-      "Herbal teas and drinking water",
+      "Clean and comfortable ashram room in Tapovan",
+      "Attached private bathroom with 24/7 hot water",
+      "Air conditioning / heating & ceiling fan",
+      "Free high-speed Wi-Fi access",
+      "Three healthy organic vegetarian meals daily",
+      "Herbal teas and purified drinking water",
       "Study material (manuals, notebooks, pens)",
-      "Yoga mats and props",
-      "Outdoor excursions / weekend trips",
-      "Airport pickup (nearest airport)",
-      "24/7 campus support team",
-      "Certification upon completion",
-      "Balinese massage",
-      "Balinese dance show",
-      "Rice field trek",
-      "Pre-TTC preparation",
-      "Arm balance workshop",
-      "Ayurveda workshop",
-      "Course repetition included",
+      "Yoga mats and props provided",
+      "Sacred Ganga Aarti & Himalayan excursions",
+      "Airport pickup assistance (Dehradun DED airport)",
+      "24/7 on-campus ashram support team",
+      "Yoga Alliance accredited RYT certification",
+      "Rejuvenating Ayurvedic Abhyanga massage",
+      "Ganga Aarti ceremony at Parmarth Niketan",
+      "Kunjapuri Himalayan sunrise meditation trek",
+      "Vashistha Cave meditation excursion",
+      "Pre-TTC online preparation modules",
+      "Arm balance & alignment workshops",
+      "Ayurveda lifestyle & nutrition workshop",
+      "Lifetime free course re-attendance included",
       "Yogagarhi 35+ creative sequencing book"
     ],
     "exclusionsList": [
@@ -5847,52 +5850,52 @@
     ],
     "whatYouWillReceiveList": [
       {
-        "title": "Multi Style Yoga Training",
-        "description": "Learn yoga in its authentic, time-tested way. Our teachers preserve the wisdom of yogic tradition."
+        "title": "Multi-Style Yoga Mastery",
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
       },
       {
-        "title": "Yoga Alliance Certified",
-        "description": "Receive globally recognized certification. Begin teaching yoga with confidence worldwide."
+        "title": "Yoga Alliance RYT Certification",
+        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
       },
       {
-        "title": "Peaceful Bali Surroundings",
-        "description": "Experience yoga in the lap of nature. Calm beaches and greenery deepen your practice."
+        "title": "Peaceful Tapovan Ashram Surroundings",
+        "description": "Practice in the serene Himalayan foothills overlooking the sacred Ganges away from tourist crowds."
       },
       {
-        "title": "Outdoor Excursions",
-        "description": "Explore temples, beaches, and nature walks. Balance learning with adventure and culture."
+        "title": "Sacred Spiritual Excursions",
+        "description": "Explore holy Ganga river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
       },
       {
-        "title": "Small Batch Sizes",
-        "description": "Get personal attention and guidance. Every student's growth matters to us."
+        "title": "Small Batch Sizes (8–10 Max)",
+        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
       },
       {
-        "title": "Supportive Community",
-        "description": "Be part of a warm and positive family. Grow together in a caring environment."
+        "title": "Supportive Ashram Community",
+        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
       },
       {
-        "title": "Balinese Massage",
-        "description": "Traditional Indonesian therapy to relieve muscle tension. Promotes deep relaxation and holistic healing."
+        "title": "Ayurvedic Abhyanga Massage",
+        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
       },
       {
-        "title": "Balinese Dance Performance",
-        "description": "Ancient, dynamic and highly expressive dance form that reflects Bali's rich cultural heritage."
+        "title": "Ganga Aarti & Vedic Chanting",
+        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Ganga."
       },
       {
-        "title": "Healthy Meals",
-        "description": "Enjoy sattvic and healthy meals supporting your practice."
+        "title": "Sattvic Ayurvedic Cuisine",
+        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
       },
       {
-        "title": "Meditation Practice",
-        "description": "Deepen inner peace and mindfulness with guided sessions."
+        "title": "Meditation & Yoga Nidra",
+        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
       },
       {
-        "title": "Experienced Instructors",
-        "description": "Learn from certified teachers with years of expertise."
+        "title": "E-RYT 500 Master Instructors",
+        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
       },
       {
-        "title": "Yoga Lifestyle",
-        "description": "Adopt the yogic way of living for body, mind, and spirit."
+        "title": "Living Yogic Philosophy",
+        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
       }
     ],
     "workshopsList": [
@@ -5923,47 +5926,47 @@
     ],
     "excursionsList": [
       {
-        "title": "Balinese Dance Performance",
-        "description": "Witness the ancient art of Balinese dance — a mesmerizing display of grace, storytelling, and spiritual devotion passed down through generations."
+        "title": "Parmarth Niketan & Triveni Ghat Ganga Aarti",
+        "description": "Witness the sacred evening Ganga Aarti on the holy banks of the Ganges — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
       },
       {
-        "title": "Rice Field Trek",
-        "description": "Walk through Ubud's iconic terraced rice paddies. Experience the harmony of nature, traditional farming, and the peaceful rhythm of rural Bali."
+        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
+        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
       },
       {
-        "title": "Sacred Waterfall Visit",
-        "description": "Journey to a sacred waterfall for a traditional cleansing ritual. Let the pure waters wash away what no longer serves you."
+        "title": "Vashistha Cave Meditation & White Sand Ganga Beach",
+        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Ganga, renowned for centuries of sadhana."
       }
     ],
     "foodMenuList": [
       {
         "meal": "Breakfast",
-        "time": "7:00 AM",
+        "time": "9:15 AM",
         "items": [
-          "Fresh tropical fruits",
-          "Homemade granola with coconut yogurt",
-          "Herbal teas & fresh juices",
-          "Balinese rice porridge"
+          "Fresh seasonal Himalayan fruits & papaya",
+          "Nutritious Ayurvedic grain porridge & oats",
+          "Herbal digestive infusions & mountain chai",
+          "Sprouted moong & wholesome nuts"
         ]
       },
       {
         "meal": "Lunch",
-        "time": "12:30 PM",
+        "time": "12:00 PM",
         "items": [
-          "Nourishing Buddha bowls",
-          "Tempeh & tofu preparations",
-          "Fresh garden salads",
-          "Traditional Balinese vegetables"
+          "Organic Himalayan khichdi & wholesome lentils",
+          "Freshly baked whole wheat rotis & basmati rice",
+          "Tridosha-balancing seasonal vegetable sabzi",
+          "Crisp organic garden salads"
         ]
       },
       {
         "meal": "Dinner",
-        "time": "6:30 PM",
+        "time": "7:30 PM",
         "items": [
-          "Warm nourishing soups",
-          "Steamed grain bowls & dahl",
-          "Ayurvedic herbal kitchari",
-          "Calming herbal infusions"
+          "Light nourishing Ayurvedic vegetable soups",
+          "Steamed seasonal mountain greens & lentils",
+          "Digestive herbal broths & wholesome grains",
+          "Golden turmeric almond milk"
         ]
       }
     ],

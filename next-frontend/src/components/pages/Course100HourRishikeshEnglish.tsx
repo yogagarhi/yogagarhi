@@ -147,6 +147,7 @@ const privateNew3 = getCloudinaryImage("private-new-3.png");
 const privateNew4 = getCloudinaryImage("private-new-4.png");
 const privateNew5 = getCloudinaryImage("private-new-5.png");
 const sattvicBreakfast = getCloudinaryImage("sattvic-breakfast.jpg");
+const sattvicDinner = getCloudinaryImage("sattvic-dinner-new.jpg");
 
 // Custom scroll-aware header component
 
@@ -308,25 +309,26 @@ const curriculum = [
 
 // Inclusions/Exclusions
 const inclusions = [
-  "Clean and comfortable room",
-  "Attached bathroom with hot water",
-  "Air conditioning / fan",
-  "Free Wi-Fi access",
-  "Three healthy vegetarian meals daily",
-  "Herbal teas and drinking water",
+  "Clean and comfortable ashram room in Tapovan",
+  "Attached private bathroom with 24/7 hot water",
+  "Air conditioning / heating & ceiling fan",
+  "Free high-speed Wi-Fi access",
+  "Three healthy organic vegetarian meals daily",
+  "Herbal teas and purified drinking water",
   "Study material (manuals, notebooks, pens)",
-  "Yoga mats and props",
-  "Outdoor excursions / weekend trips",
-  "Airport pickup (nearest airport)",
-  "24/7 campus support team",
-  "Certification upon completion",
-  "Rishikesh massage",
-  "Rishikesh dance show",
-  "Rice field trek",
-  "Pre-TTC preparation",
-  "Arm balance workshop",
-  "Ayurveda workshop",
-  "Course repetition included",
+  "Yoga mats and props provided",
+  "Sacred Ganga Aarti & Himalayan excursions",
+  "Airport pickup assistance (Dehradun DED airport)",
+  "24/7 on-campus ashram support team",
+  "Yoga Alliance accredited RYT certification",
+  "Rejuvenating Ayurvedic Abhyanga massage",
+  "Ganga Aarti ceremony at Parmarth Niketan",
+  "Kunjapuri Himalayan sunrise meditation trek",
+  "Vashistha Cave meditation excursion",
+  "Pre-TTC online preparation modules",
+  "Arm balance & alignment workshops",
+  "Ayurveda lifestyle & nutrition workshop",
+  "Lifetime free course re-attendance included",
   "Yogagarhi 35+ creative sequencing book",
 ];
 
@@ -353,40 +355,40 @@ const whatYouWillReceive = [
     image: apartYogaAllianceGraduates
   },
   {
-    title: "Peaceful Rishikesh Surroundings",
-    description: "Experience yoga in the lap of nature. Calm beaches and greenery deepen your practice.",
+    title: "Peaceful Tapovan Ashram Surroundings",
+    description: "Practice in the serene Himalayan foothills overlooking the sacred Ganges away from tourist crowds.",
     icon: Mountain,
     image: apartRishikeshSurroundings
   },
   {
-    title: "Outdoor Excursions",
-    description: "Explore temples, beaches, and nature walks. Balance learning with adventure and culture.",
+    title: "Sacred Spiritual Excursions",
+    description: "Explore holy Ganga river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves.",
     icon: MapPin,
     image: apartWaterTemple
   },
   {
-    title: "Small Batch Sizes",
-    description: "Get personal attention and guidance. Every student's growth matters to us.",
+    title: "Small Batch Sizes (8–10 Max)",
+    description: "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback.",
     icon: Users,
     image: apartGroupClass
   },
   {
-    title: "Supportive Community",
-    description: "Be part of a warm and positive family. Grow together in a caring environment.",
+    title: "Supportive Ashram Community",
+    description: "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment.",
     icon: Heart,
     image: apartCommunityBeach
   },
   {
-    title: "Rishikesh Massage",
-    description: "Traditional Indian therapy to relieve muscle tension. Promotes deep relaxation and holistic healing.",
+    title: "Ayurvedic Abhyanga Massage",
+    description: "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation.",
     icon: Sparkles,
     image: apartRishikeshMassage
   },
   {
-    title: "Rishikesh Dance Performance",
-    description: "Ancient, dynamic and highly expressive dance form that reflects India's rich cultural heritage.",
+    title: "Ganga Aarti & Vedic Chanting",
+    description: "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Ganga.",
     icon: Star,
-    image: apartKecakDance
+    image: apartCeremony
   },
   {
     title: "Healthy Meals",
@@ -448,24 +450,24 @@ const workshops = [
   },
 ];
 
-// Excursions
+// Excursions - using authentic Rishikesh photos & landmarks
 const excursions = [
   {
-    title: "Rishikesh Dance Performance",
-    description: "Witness the ancient art of Indian dance — a mesmerizing display of grace, storytelling, and spiritual devotion passed down through generations.",
-    image: apartKecakDance,
-    icon: Star
+    title: "Ganga Aarti at Parmarth Niketan",
+    description: "Witness the sacred evening Ganga Aarti on the holy banks of the Ganges — a mesmerizing ceremony of light, Vedic chanting, and deep spiritual devotion.",
+    image: apartCeremony,
+    icon: Sparkles
   },
   {
-    title: "Rice Field Trek",
-    description: "Walk through Rishikesh's iconic terraced rice paddies. Experience the harmony of nature, traditional farming, and the peaceful rhythm of rural Rishikesh.",
-    image: apartRiceFieldTrek,
-    icon: Leaf
+    title: "Kunjapuri Himalayan Sunrise Trek",
+    description: "Experience breathtaking sunrise views of snow-capped Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in the serene mountain air overlooking the sacred valley.",
+    image: apartMountainPose,
+    icon: Mountain
   },
   {
-    title: "Sacred Waterfall Visit",
-    description: "Journey to a sacred waterfall for a traditional cleansing ritual. Let the pure waters wash away what no longer serves you.",
-    image: activityWaterfall,
+    title: "Vashistha Cave Meditation",
+    description: "Meditate in the ancient subterranean cave of Sage Vashistha along the sacred white-sand banks of the Ganges, renowned for profound stillness.",
+    image: apartMeditationPractice,
     icon: Sparkles
   },
 ];
@@ -475,24 +477,24 @@ const excursions = [
 const foodMenu = [
   {
     meal: "Breakfast",
-    time: "7:00 AM",
+    time: "9:15 AM",
     icon: Coffee,
-    items: ["Fresh tropical fruits", "Homemade granola with coconut yogurt", "Herbal teas & fresh juices", "Rishikesh style rice porridge"],
+    items: ["Fresh Himalayan fruits & papaya", "Nutritious Ayurvedic porridge & oats", "Herbal digestive infusions & chai", "Sprouted moong & wholesome nuts"],
     image: sattvicBreakfast
   },
   {
     meal: "Lunch",
-    time: "12:30 PM",
+    time: "12:00 PM",
     icon: Salad,
-    items: ["Nourishing Buddha bowls", "Tempeh & tofu preparations", "Fresh garden salads", "Traditional Indian vegetables"],
+    items: ["Organic Himalayan khichdi & dals", "Freshly baked whole wheat rotis", "Tridosha-balancing seasonal sabzi", "Crisp organic garden salads"],
     image: healthyMeals
   },
   {
     meal: "Dinner",
-    time: "6:30 PM",
+    time: "7:30 PM",
     icon: Soup,
-    items: ["Light sattvic soups", "Wholesome grain dishes", "Steamed vegetables", "Healing Ayurvedic preparations"],
-    image: apartAyurvedicMeals
+    items: ["Light nourishing Ayurvedic soups", "Steamed mountain greens & lentils", "Digestive herbal broths & grains", "Golden turmeric almond milk"],
+    image: sattvicDinner
   },
 ];
 

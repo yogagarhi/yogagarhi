@@ -3038,7 +3038,7 @@
       "incCert": "Сертификат Yoga Alliance RYT 200 по окончании обучения",
       "incManuals": "Официальные учебные пособия, тетради и материалы",
       "incKit": "Коврик для йоги и все необходимые пропсы",
-      "incExcursions": "Священные культурные экскурсии (храм воды, рисовые поля, балийские танцы)",
+      "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Традиционные огненные церемонии открытия и закрытия (Agni Hotra)",
       "incPickup": "Трансфер из аэропорта Денпасара (DPS) в день заезда",
       "incPre": "Бесплатный онлайн-модуль подготовки Pre-TTC",
@@ -3316,8 +3316,8 @@
     },
     "excursionsSection": {
       "badge": "За пределами коврика",
-      "heading": "Духовные экскурсии",
-      "sub": "Погрузитесь в сакральное наследие Бали через наполняющие впечатления"
+      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
+      "sub": "Immerse yourself in Rishikesh's sacred spiritual heritage through transformative Himalayan excursions"
     },
     "prakritiResearch": {
       "heading": "Исследование Сачин Джи: Индивидуальная йога и Пракрити",
@@ -3366,26 +3366,27 @@
       "hover": "Наведите для подробностей"
     },
     "inclusionsList": [
-      "Чистый и комфортный номер",
-      "Индивидуальная ванная комната с горячей водой",
-      "Кондиционер / вентилятор",
-      "Бесплатный доступ к Wi-Fi",
-      "Трехразовое здоровое вегетарианское питание",
-      "Травяные чаи и чистая питьевая вода",
-      "Учебные материалы (руководства, тетради, ручки)",
-      "Коврики для йоги и опорные блоки",
-      "Выездные экскурсии и поездки выходного дня",
-      "Встреча в аэропорту по прибытии (ближайший аэропорт)",
-      "Круглосуточная служба заботы на кампусе",
-      "Международный сертификат после завершения курса",
-      "Традиционный балийский массаж",
-      "Балийское танцевальное представление",
-      "Пешая прогулка по рисовым террасам",
-      "Бесплатный онлайн-курс подготовки Pre-TTC",
-      "Мастер-класс по балансам на руках",
-      "Практический семинар по Аюрведе",
-      "Право пожизненного бесплатного повторения курса",
-      "Книга YogaGarhi: 35+ авторских последовательностей"
+      "Clean and comfortable ashram room in Tapovan",
+      "Attached private bathroom with 24/7 hot water",
+      "Air conditioning / heating & ceiling fan",
+      "Free high-speed Wi-Fi access",
+      "Three healthy organic vegetarian meals daily",
+      "Herbal teas and purified drinking water",
+      "Study material (manuals, notebooks, pens)",
+      "Yoga mats and props provided",
+      "Sacred Ganga Aarti & Himalayan excursions",
+      "Airport pickup assistance (Dehradun DED airport)",
+      "24/7 on-campus ashram support team",
+      "Yoga Alliance accredited RYT certification",
+      "Rejuvenating Ayurvedic Abhyanga massage",
+      "Ganga Aarti ceremony at Parmarth Niketan",
+      "Kunjapuri Himalayan sunrise meditation trek",
+      "Vashistha Cave meditation excursion",
+      "Pre-TTC online preparation modules",
+      "Arm balance & alignment workshops",
+      "Ayurveda lifestyle & nutrition workshop",
+      "Lifetime free course re-attendance included",
+      "Yogagarhi 35+ creative sequencing book"
     ],
     "exclusionsList": [
       "Авиабилеты и транспортные расходы",
@@ -3396,52 +3397,52 @@
     ],
     "whatYouWillReceiveList": [
       {
-        "title": "Обучение нескольким стилям йоги",
-        "description": "Изучайте традиционную йогу в ее первозданном виде. Преподаватели передают аутентичные знания предков."
+        "title": "Multi-Style Yoga Mastery",
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
       },
       {
-        "title": "Сертификация Yoga Alliance",
-        "description": "Получите всемирно признанный сертификат и уверенно начните преподавать в любой точке планеты."
+        "title": "Yoga Alliance RYT Certification",
+        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
       },
       {
-        "title": "Безмятежная природа Бали",
-        "description": "Практикуйте йогу в окружении тропической зелени и шума океана, углубляя внутреннее состояние."
+        "title": "Peaceful Tapovan Ashram Surroundings",
+        "description": "Practice in the serene Himalayan foothills overlooking the sacred Ganges away from tourist crowds."
       },
       {
-        "title": "Выездные экскурсии",
-        "description": "Посещайте древние храмы, водопады и природные тропы, соединяя учебу с культурным погружением."
+        "title": "Sacred Spiritual Excursions",
+        "description": "Explore holy Ganga river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
       },
       {
-        "title": "Малые группы",
-        "description": "Индивидуальный подход и детальные правки. Рост каждого студента важен для нас."
+        "title": "Small Batch Sizes (8–10 Max)",
+        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
       },
       {
-        "title": "Теплое сообщество",
-        "description": "Станьте частью доброжелательной семьи, развиваясь в атмосфере искренней поддержки."
+        "title": "Supportive Ashram Community",
+        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
       },
       {
-        "title": "Балийский массаж",
-        "description": "Традиционная телесная терапия для снятия мышечного напряжения и глубокого расслабления."
+        "title": "Ayurvedic Abhyanga Massage",
+        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
       },
       {
-        "title": "Балийский священный танец",
-        "description": "Древнее искусство, раскрывающее богатое культурное и духовное наследие острова."
+        "title": "Ganga Aarti & Vedic Chanting",
+        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Ganga."
       },
       {
-        "title": "Полезное питание",
-        "description": "Саттвические свежие блюда, восстанавливающие силы и поддерживающие вашу ежедневную практику."
+        "title": "Sattvic Ayurvedic Cuisine",
+        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
       },
       {
-        "title": "Медитативные практики",
-        "description": "Развивайте внутреннее спокойствие и ясность ума на ежедневных направляемых медитациях."
+        "title": "Meditation & Yoga Nidra",
+        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
       },
       {
-        "title": "Опытные наставники",
-        "description": "Обучайтесь у дипломированных мастеров с многолетним педагогическим стажем."
+        "title": "E-RYT 500 Master Instructors",
+        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
       },
       {
-        "title": "Йогический образ жизни",
-        "description": "Интегрируйте принципы йоги в повседневную жизнь для баланса тела, ума и духа."
+        "title": "Living Yogic Philosophy",
+        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
       }
     ],
     "workshopsList": [
@@ -3472,47 +3473,47 @@
     ],
     "excursionsList": [
       {
-        "title": "Балийский традиционный танец",
-        "description": "Узнайте древнее искусство балийского танца — завораживающий союз грации, мифов и преданности."
+        "title": "Parmarth Niketan & Triveni Ghat Ganga Aarti",
+        "description": "Witness the sacred evening Ganga Aarti on the holy banks of the Ganges — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
       },
       {
-        "title": "Прогулка по рисовым террасам",
-        "description": "Пройдитесь по знаменитым террасам Убуда, ощущая размеренный уклад сельской жизни острова."
+        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
+        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
       },
       {
-        "title": "Священный водопад и очищение",
-        "description": "Поездка к священному источнику для участия в традиционном обряде очищения живой водой."
+        "title": "Vashistha Cave Meditation & White Sand Ganga Beach",
+        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Ganga, renowned for centuries of sadhana."
       }
     ],
     "foodMenuList": [
       {
-        "meal": "Завтрак",
-        "time": "07:00",
+        "meal": "Breakfast",
+        "time": "9:15 AM",
         "items": [
-          "Свежие тропические фрукты",
-          "Домашняя гранола с кокосовым йогуртом",
-          "Травяные чаи и свежие соки",
-          "Балийская рисовая каша"
+          "Fresh seasonal Himalayan fruits & papaya",
+          "Nutritious Ayurvedic grain porridge & oats",
+          "Herbal digestive infusions & mountain chai",
+          "Sprouted moong & wholesome nuts"
         ]
       },
       {
-        "meal": "Обед",
-        "time": "12:30",
+        "meal": "Lunch",
+        "time": "12:00 PM",
         "items": [
-          "Питательные боулы Будды",
-          "Блюда из свежего темпе и тофу",
-          "Овощные салаты из местных трав",
-          "Традиционные балийские овощи"
+          "Organic Himalayan khichdi & wholesome lentils",
+          "Freshly baked whole wheat rotis & basmati rice",
+          "Tridosha-balancing seasonal vegetable sabzi",
+          "Crisp organic garden salads"
         ]
       },
       {
-        "meal": "Ужин",
-        "time": "18:30",
+        "meal": "Dinner",
+        "time": "7:30 PM",
         "items": [
-          "Легкие согревающие супы",
-          "Паровые злаковые блюда и дал",
-          "Аюрведический кичари с травами",
-          "Успокаивающие травяные настои"
+          "Light nourishing Ayurvedic vegetable soups",
+          "Steamed seasonal mountain greens & lentils",
+          "Digestive herbal broths & wholesome grains",
+          "Golden turmeric almond milk"
         ]
       }
     ],
@@ -3753,7 +3754,7 @@
       "incCert": "Сертификат Yoga Alliance RYT 200 по окончании обучения",
       "incManuals": "Официальные учебные пособия, тетради и материалы",
       "incKit": "Коврик для йоги и все необходимые пропсы",
-      "incExcursions": "Священные культурные экскурсии (храм воды, рисовые поля, балийские танцы)",
+      "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Традиционные огненные церемонии открытия и закрытия (Agni Hotra)",
       "incPickup": "Трансфер из аэропорта Денпасара (DPS) в день заезда",
       "incPre": "Бесплатный онлайн-модуль подготовки Pre-TTC",
@@ -4031,8 +4032,8 @@
     },
     "excursionsSection": {
       "badge": "За пределами коврика",
-      "heading": "Духовные экскурсии",
-      "sub": "Погрузитесь в сакральное наследие Бали через наполняющие впечатления"
+      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
+      "sub": "Immerse yourself in Rishikesh's sacred spiritual heritage through transformative Himalayan excursions"
     },
     "prakritiResearch": {
       "heading": "Исследование Сачин Джи: Индивидуальная йога и Пракрити",
@@ -4081,26 +4082,27 @@
       "hover": "Наведите для подробностей"
     },
     "inclusionsList": [
-      "Чистый и комфортный номер",
-      "Индивидуальная ванная комната с горячей водой",
-      "Кондиционер / вентилятор",
-      "Бесплатный доступ к Wi-Fi",
-      "Трехразовое здоровое вегетарианское питание",
-      "Травяные чаи и чистая питьевая вода",
-      "Учебные материалы (руководства, тетради, ручки)",
-      "Коврики для йоги и опорные блоки",
-      "Выездные экскурсии и поездки выходного дня",
-      "Встреча в аэропорту по прибытии (ближайший аэропорт)",
-      "Круглосуточная служба заботы на кампусе",
-      "Международный сертификат после завершения курса",
-      "Традиционный балийский массаж",
-      "Балийское танцевальное представление",
-      "Пешая прогулка по рисовым террасам",
-      "Бесплатный онлайн-курс подготовки Pre-TTC",
-      "Мастер-класс по балансам на руках",
-      "Практический семинар по Аюрведе",
-      "Право пожизненного бесплатного повторения курса",
-      "Книга YogaGarhi: 35+ авторских последовательностей"
+      "Clean and comfortable ashram room in Tapovan",
+      "Attached private bathroom with 24/7 hot water",
+      "Air conditioning / heating & ceiling fan",
+      "Free high-speed Wi-Fi access",
+      "Three healthy organic vegetarian meals daily",
+      "Herbal teas and purified drinking water",
+      "Study material (manuals, notebooks, pens)",
+      "Yoga mats and props provided",
+      "Sacred Ganga Aarti & Himalayan excursions",
+      "Airport pickup assistance (Dehradun DED airport)",
+      "24/7 on-campus ashram support team",
+      "Yoga Alliance accredited RYT certification",
+      "Rejuvenating Ayurvedic Abhyanga massage",
+      "Ganga Aarti ceremony at Parmarth Niketan",
+      "Kunjapuri Himalayan sunrise meditation trek",
+      "Vashistha Cave meditation excursion",
+      "Pre-TTC online preparation modules",
+      "Arm balance & alignment workshops",
+      "Ayurveda lifestyle & nutrition workshop",
+      "Lifetime free course re-attendance included",
+      "Yogagarhi 35+ creative sequencing book"
     ],
     "exclusionsList": [
       "Авиабилеты и транспортные расходы",
@@ -4111,52 +4113,52 @@
     ],
     "whatYouWillReceiveList": [
       {
-        "title": "Обучение нескольким стилям йоги",
-        "description": "Изучайте традиционную йогу в ее первозданном виде. Преподаватели передают аутентичные знания предков."
+        "title": "Multi-Style Yoga Mastery",
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
       },
       {
-        "title": "Сертификация Yoga Alliance",
-        "description": "Получите всемирно признанный сертификат и уверенно начните преподавать в любой точке планеты."
+        "title": "Yoga Alliance RYT Certification",
+        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
       },
       {
-        "title": "Безмятежная природа Бали",
-        "description": "Практикуйте йогу в окружении тропической зелени и шума океана, углубляя внутреннее состояние."
+        "title": "Peaceful Tapovan Ashram Surroundings",
+        "description": "Practice in the serene Himalayan foothills overlooking the sacred Ganges away from tourist crowds."
       },
       {
-        "title": "Выездные экскурсии",
-        "description": "Посещайте древние храмы, водопады и природные тропы, соединяя учебу с культурным погружением."
+        "title": "Sacred Spiritual Excursions",
+        "description": "Explore holy Ganga river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
       },
       {
-        "title": "Малые группы",
-        "description": "Индивидуальный подход и детальные правки. Рост каждого студента важен для нас."
+        "title": "Small Batch Sizes (8–10 Max)",
+        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
       },
       {
-        "title": "Теплое сообщество",
-        "description": "Станьте частью доброжелательной семьи, развиваясь в атмосфере искренней поддержки."
+        "title": "Supportive Ashram Community",
+        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
       },
       {
-        "title": "Балийский массаж",
-        "description": "Традиционная телесная терапия для снятия мышечного напряжения и глубокого расслабления."
+        "title": "Ayurvedic Abhyanga Massage",
+        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
       },
       {
-        "title": "Балийский священный танец",
-        "description": "Древнее искусство, раскрывающее богатое культурное и духовное наследие острова."
+        "title": "Ganga Aarti & Vedic Chanting",
+        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Ganga."
       },
       {
-        "title": "Полезное питание",
-        "description": "Саттвические свежие блюда, восстанавливающие силы и поддерживающие вашу ежедневную практику."
+        "title": "Sattvic Ayurvedic Cuisine",
+        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
       },
       {
-        "title": "Медитативные практики",
-        "description": "Развивайте внутреннее спокойствие и ясность ума на ежедневных направляемых медитациях."
+        "title": "Meditation & Yoga Nidra",
+        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
       },
       {
-        "title": "Опытные наставники",
-        "description": "Обучайтесь у дипломированных мастеров с многолетним педагогическим стажем."
+        "title": "E-RYT 500 Master Instructors",
+        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
       },
       {
-        "title": "Йогический образ жизни",
-        "description": "Интегрируйте принципы йоги в повседневную жизнь для баланса тела, ума и духа."
+        "title": "Living Yogic Philosophy",
+        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
       }
     ],
     "workshopsList": [
@@ -4187,47 +4189,47 @@
     ],
     "excursionsList": [
       {
-        "title": "Балийский традиционный танец",
-        "description": "Узнайте древнее искусство балийского танца — завораживающий союз грации, мифов и преданности."
+        "title": "Parmarth Niketan & Triveni Ghat Ganga Aarti",
+        "description": "Witness the sacred evening Ganga Aarti on the holy banks of the Ganges — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
       },
       {
-        "title": "Прогулка по рисовым террасам",
-        "description": "Пройдитесь по знаменитым террасам Убуда, ощущая размеренный уклад сельской жизни острова."
+        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
+        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
       },
       {
-        "title": "Священный водопад и очищение",
-        "description": "Поездка к священному источнику для участия в традиционном обряде очищения живой водой."
+        "title": "Vashistha Cave Meditation & White Sand Ganga Beach",
+        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Ganga, renowned for centuries of sadhana."
       }
     ],
     "foodMenuList": [
       {
-        "meal": "Завтрак",
-        "time": "07:00",
+        "meal": "Breakfast",
+        "time": "9:15 AM",
         "items": [
-          "Свежие тропические фрукты",
-          "Домашняя гранола с кокосовым йогуртом",
-          "Травяные чаи и свежие соки",
-          "Балийская рисовая каша"
+          "Fresh seasonal Himalayan fruits & papaya",
+          "Nutritious Ayurvedic grain porridge & oats",
+          "Herbal digestive infusions & mountain chai",
+          "Sprouted moong & wholesome nuts"
         ]
       },
       {
-        "meal": "Обед",
-        "time": "12:30",
+        "meal": "Lunch",
+        "time": "12:00 PM",
         "items": [
-          "Питательные боулы Будды",
-          "Блюда из свежего темпе и тофу",
-          "Овощные салаты из местных трав",
-          "Традиционные балийские овощи"
+          "Organic Himalayan khichdi & wholesome lentils",
+          "Freshly baked whole wheat rotis & basmati rice",
+          "Tridosha-balancing seasonal vegetable sabzi",
+          "Crisp organic garden salads"
         ]
       },
       {
-        "meal": "Ужин",
-        "time": "18:30",
+        "meal": "Dinner",
+        "time": "7:30 PM",
         "items": [
-          "Легкие согревающие супы",
-          "Паровые злаковые блюда и дал",
-          "Аюрведический кичари с травами",
-          "Успокаивающие травяные настои"
+          "Light nourishing Ayurvedic vegetable soups",
+          "Steamed seasonal mountain greens & lentils",
+          "Digestive herbal broths & wholesome grains",
+          "Golden turmeric almond milk"
         ]
       }
     ],
@@ -5469,7 +5471,7 @@
       "incCert": "Yoga Alliance RYT 200 Certificate upon graduation",
       "incManuals": "Official course manuals, notebooks, and study materials",
       "incKit": "Yoga mat and practice props provided",
-      "incExcursions": "Sacred cultural excursions (water temple, rice fields, Balinese dance)",
+      "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
       "incPickup": "Airport pickup from Denpasar (DPS) on course arrival date",
       "incPre": "Complimentary online Pre-TTC preparation module",
@@ -5767,8 +5769,8 @@
     },
     "excursionsSection": {
       "badge": "Beyond The Mat",
-      "heading": "Sacred Excursions",
-      "sub": "Immerse yourself in Rishikesh's sacred spiritual heritage through transformative excursions"
+      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
+      "sub": "Immerse yourself in Rishikesh's sacred spiritual heritage through transformative Himalayan excursions"
     },
     "prakritiResearch": {
       "heading": "Sachin Ji's Research on Personalized Yoga and Prakriti",
@@ -5817,25 +5819,26 @@
       "hover": "Hover to see more"
     },
     "inclusionsList": [
-      "Clean and comfortable room",
-      "Attached bathroom with hot water",
-      "Air conditioning / fan",
-      "Free Wi-Fi access",
-      "Three healthy vegetarian meals daily",
-      "Herbal teas and drinking water",
+      "Clean and comfortable ashram room in Tapovan",
+      "Attached private bathroom with 24/7 hot water",
+      "Air conditioning / heating & ceiling fan",
+      "Free high-speed Wi-Fi access",
+      "Three healthy organic vegetarian meals daily",
+      "Herbal teas and purified drinking water",
       "Study material (manuals, notebooks, pens)",
-      "Yoga mats and props",
-      "Outdoor excursions / weekend trips",
-      "Airport pickup (nearest airport)",
-      "24/7 campus support team",
-      "Certification upon completion",
-      "Balinese massage",
-      "Balinese dance show",
-      "Rice field trek",
-      "Pre-TTC preparation",
-      "Arm balance workshop",
-      "Ayurveda workshop",
-      "Course repetition included",
+      "Yoga mats and props provided",
+      "Sacred Ganga Aarti & Himalayan excursions",
+      "Airport pickup assistance (Dehradun DED airport)",
+      "24/7 on-campus ashram support team",
+      "Yoga Alliance accredited RYT certification",
+      "Rejuvenating Ayurvedic Abhyanga massage",
+      "Ganga Aarti ceremony at Parmarth Niketan",
+      "Kunjapuri Himalayan sunrise meditation trek",
+      "Vashistha Cave meditation excursion",
+      "Pre-TTC online preparation modules",
+      "Arm balance & alignment workshops",
+      "Ayurveda lifestyle & nutrition workshop",
+      "Lifetime free course re-attendance included",
       "Yogagarhi 35+ creative sequencing book"
     ],
     "exclusionsList": [
@@ -5847,52 +5850,52 @@
     ],
     "whatYouWillReceiveList": [
       {
-        "title": "Multi Style Yoga Training",
-        "description": "Learn yoga in its authentic, time-tested way. Our teachers preserve the wisdom of yogic tradition."
+        "title": "Multi-Style Yoga Mastery",
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
       },
       {
-        "title": "Yoga Alliance Certified",
-        "description": "Receive globally recognized certification. Begin teaching yoga with confidence worldwide."
+        "title": "Yoga Alliance RYT Certification",
+        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
       },
       {
-        "title": "Peaceful Bali Surroundings",
-        "description": "Experience yoga in the lap of nature. Calm beaches and greenery deepen your practice."
+        "title": "Peaceful Tapovan Ashram Surroundings",
+        "description": "Practice in the serene Himalayan foothills overlooking the sacred Ganges away from tourist crowds."
       },
       {
-        "title": "Outdoor Excursions",
-        "description": "Explore temples, beaches, and nature walks. Balance learning with adventure and culture."
+        "title": "Sacred Spiritual Excursions",
+        "description": "Explore holy Ganga river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
       },
       {
-        "title": "Small Batch Sizes",
-        "description": "Get personal attention and guidance. Every student's growth matters to us."
+        "title": "Small Batch Sizes (8–10 Max)",
+        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
       },
       {
-        "title": "Supportive Community",
-        "description": "Be part of a warm and positive family. Grow together in a caring environment."
+        "title": "Supportive Ashram Community",
+        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
       },
       {
-        "title": "Balinese Massage",
-        "description": "Traditional Indonesian therapy to relieve muscle tension. Promotes deep relaxation and holistic healing."
+        "title": "Ayurvedic Abhyanga Massage",
+        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
       },
       {
-        "title": "Balinese Dance Performance",
-        "description": "Ancient, dynamic and highly expressive dance form that reflects Bali's rich cultural heritage."
+        "title": "Ganga Aarti & Vedic Chanting",
+        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Ganga."
       },
       {
-        "title": "Healthy Meals",
-        "description": "Enjoy sattvic and healthy meals supporting your practice."
+        "title": "Sattvic Ayurvedic Cuisine",
+        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
       },
       {
-        "title": "Meditation Practice",
-        "description": "Deepen inner peace and mindfulness with guided sessions."
+        "title": "Meditation & Yoga Nidra",
+        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
       },
       {
-        "title": "Experienced Instructors",
-        "description": "Learn from certified teachers with years of expertise."
+        "title": "E-RYT 500 Master Instructors",
+        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
       },
       {
-        "title": "Yoga Lifestyle",
-        "description": "Adopt the yogic way of living for body, mind, and spirit."
+        "title": "Living Yogic Philosophy",
+        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
       }
     ],
     "workshopsList": [
@@ -5923,47 +5926,47 @@
     ],
     "excursionsList": [
       {
-        "title": "Balinese Dance Performance",
-        "description": "Witness the ancient art of Balinese dance — a mesmerizing display of grace, storytelling, and spiritual devotion passed down through generations."
+        "title": "Parmarth Niketan & Triveni Ghat Ganga Aarti",
+        "description": "Witness the sacred evening Ganga Aarti on the holy banks of the Ganges — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
       },
       {
-        "title": "Rice Field Trek",
-        "description": "Walk through Ubud's iconic terraced rice paddies. Experience the harmony of nature, traditional farming, and the peaceful rhythm of rural Bali."
+        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
+        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
       },
       {
-        "title": "Sacred Waterfall Visit",
-        "description": "Journey to a sacred waterfall for a traditional cleansing ritual. Let the pure waters wash away what no longer serves you."
+        "title": "Vashistha Cave Meditation & White Sand Ganga Beach",
+        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Ganga, renowned for centuries of sadhana."
       }
     ],
     "foodMenuList": [
       {
         "meal": "Breakfast",
-        "time": "7:00 AM",
+        "time": "9:15 AM",
         "items": [
-          "Fresh tropical fruits",
-          "Homemade granola with coconut yogurt",
-          "Herbal teas & fresh juices",
-          "Balinese rice porridge"
+          "Fresh seasonal Himalayan fruits & papaya",
+          "Nutritious Ayurvedic grain porridge & oats",
+          "Herbal digestive infusions & mountain chai",
+          "Sprouted moong & wholesome nuts"
         ]
       },
       {
         "meal": "Lunch",
-        "time": "12:30 PM",
+        "time": "12:00 PM",
         "items": [
-          "Nourishing Buddha bowls",
-          "Tempeh & tofu preparations",
-          "Fresh garden salads",
-          "Traditional Balinese vegetables"
+          "Organic Himalayan khichdi & wholesome lentils",
+          "Freshly baked whole wheat rotis & basmati rice",
+          "Tridosha-balancing seasonal vegetable sabzi",
+          "Crisp organic garden salads"
         ]
       },
       {
         "meal": "Dinner",
-        "time": "6:30 PM",
+        "time": "7:30 PM",
         "items": [
-          "Warm nourishing soups",
-          "Steamed grain bowls & dahl",
-          "Ayurvedic herbal kitchari",
-          "Calming herbal infusions"
+          "Light nourishing Ayurvedic vegetable soups",
+          "Steamed seasonal mountain greens & lentils",
+          "Digestive herbal broths & wholesome grains",
+          "Golden turmeric almond milk"
         ]
       }
     ],
