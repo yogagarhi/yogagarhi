@@ -228,7 +228,9 @@ export default function YogaAnatomyMasterclass() {
       return;
     }
 
+    const isTestParam = typeof window !== 'undefined' && window.location.search.includes('test=true');
     const razorpayKey =
+      (isTestParam && (process.env.NEXT_PUBLIC_RAZORPAY_TEST_KEY_ID || (window as any).__RAZORPAY_TEST_KEY__)) ||
       process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID ||
       process.env.VITE_RAZORPAY_KEY_ID ||
       "rzp_live_TiX95mBO2U2F1q";
@@ -263,7 +265,37 @@ export default function YogaAnatomyMasterclass() {
         setPaymentId(pId);
         setBookingStep("success");
 
-        // Payload for Masterclass Confirmation API
+        // 1. Google Analytics & GTM Tracking (generate_lead event)
+        try {
+          (window as any).dataLayer = (window as any).dataLayer || [];
+          (window as any).dataLayer.push({
+            event: 'generate_lead',
+            lead_type: 'masterclass',
+            transaction_id: pId,
+            value: 99,
+            currency: 'INR'
+          });
+
+          if (typeof (window as any).gtag === 'function') {
+            (window as any).gtag('event', 'generate_lead', {
+              event_category: 'lead',
+              event_label: 'masterclass',
+              lead_type: 'masterclass',
+              transaction_id: pId,
+              value: 99,
+              currency: 'INR'
+            });
+          }
+        } catch (trackErr) {
+          console.error("Masterclass tracking error:", trackErr);
+        }
+
+        // 2. Payload for Masterclass Confirmation API
+        const isMockTest = Boolean(
+          formData.email.endsWith('@example.com') ||
+          String(pId).startsWith('test_')
+        );
+
         const confirmPayload = {
           name: formData.name,
           email: formData.email,
@@ -274,20 +306,52 @@ export default function YogaAnatomyMasterclass() {
           razorpay_order_id: response.razorpay_order_id,
           razorpay_signature: response.razorpay_signature,
           workshop_date: `${sundayInfo.fullDate} at 11:00 AM – 1:00 PM IST (2-Hour Live Workshop)`,
+          isTest: isMockTest,
         };
 
-        // Dispatch to dedicated Masterclass confirmation route
+        // 3. Dispatch to dedicated Masterclass confirmation route
         try {
-          await fetch("/api/masterclass-confirm", {
+          const res = await fetch("/api/masterclass-confirm", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(confirmPayload),
           });
+
+          if (!res.ok) {
+            console.warn("Primary /api/masterclass-confirm returned non-200, dispatching fallback lead email...");
+            await fetch("/api/send-email", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                phone: formData.whatsapp,
+                whatsapp: formData.whatsapp,
+                course: "Applied Yoga Anatomy & Biomechanics Masterclass",
+                amount: "₹99.00",
+                payment_id: pId,
+                lead_type: "masterclass",
+                workshop_date: confirmPayload.workshop_date,
+                _subject: `🎉 Masterclass Payment Received: ${formData.name} (₹99 - ${pId})`,
+                isTest: isMockTest,
+              }),
+            });
+          }
         } catch (err) {
           console.error("Masterclass email dispatch error:", err);
         }
       },
     };
+
+    // Support testing in automation/headless environments
+    if (typeof window !== 'undefined' && (window as any).__MOCK_RAZORPAY__) {
+      await options.handler({
+        razorpay_payment_id: "pay_test_" + Date.now(),
+        razorpay_order_id: "order_test_99",
+        razorpay_signature: "mock_signature_test",
+      });
+      return;
+    }
 
     try {
       const rzp = new (window as any).Razorpay(options);
