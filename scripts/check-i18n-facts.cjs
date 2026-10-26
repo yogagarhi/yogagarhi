@@ -8,6 +8,7 @@ const COURSES = [
   '300-hour-yoga-teacher-training-in-bali',
   '100-hour-yoga-teacher-training-in-rishikesh',
   '200-hour-yoga-teacher-training-in-rishikesh',
+  '300-hour-yoga-teacher-training-in-rishikesh',
   '200-hour-yoga-teacher-training-in-bali'
 ];
 

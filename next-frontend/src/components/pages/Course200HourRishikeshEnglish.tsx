@@ -1083,7 +1083,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
               </div>
 
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold tracking-tight text-white leading-tight mb-8 text-center drop-shadow-lg">
-                200 Hour Yoga Teacher Training in Rishikesh
+                200 Hour Yoga Teacher Training in Rishikesh, India
               </h1>
 
               <p className="text-2xl md:text-3xl lg:text-4xl font-heading font-medium tracking-tight text-white/95 leading-tight mb-8 max-w-5xl mx-auto drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
@@ -1130,9 +1130,9 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                       variant="default"
                       size="lg"
                       className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                      onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
+                      onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Rishikesh%20Explorer%20Gift.", "_blank")}
                     >
-                      Claim $450 Bali Explorer Gift
+                      Claim $450 Rishikesh Explorer Gift
                     </Button>
                   </div>
 
@@ -4460,9 +4460,9 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                   <label className="block text-sm font-semibold text-foreground">Course <span className="text-destructive">*</span></label>
                   <select aria-label="Select Course" value={enrollForm.courseName} onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
                     <option value="">Select</option>
-                    <option value="100 Hour Yoga Teacher Training Course in Bali">100 Hr YTTC</option>
-                    <option value="200 Hour Yoga Teacher Training Course in Bali">200 Hr YTTC</option>
-                    <option value="300 Hour Yoga Teacher Training Course in Bali">300 Hr YTTC</option>
+                    <option value="100 Hour Yoga Teacher Training Course in Rishikesh">100 Hr YTTC</option>
+                    <option value="200 Hour Yoga Teacher Training Course in Rishikesh">200 Hr YTTC</option>
+                    <option value="300 Hour Yoga Teacher Training Course in Rishikesh">300 Hr YTTC</option>
                   </select>
                 </div>
                 <div className="space-y-1.5">

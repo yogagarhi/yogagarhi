@@ -25,9 +25,9 @@ export async function generateMetadata({
     }
 
     if (locale === "en") {
-        const title = "200 Hour Yoga Teacher Training Rishikesh | RYT 200 India";
+        const title = "200 Hour Yoga Teacher Training in Rishikesh | YogaGarhi";
         const description =
-            "Master authentic yoga with 200-Hour Yoga TTC in Rishikesh. Yoga Alliance certified RYT 200 residential course by the Ganges. Register now!";
+            "Yoga Alliance certified 200 hour yoga teacher training in Rishikesh, India. Small batches 8-10, E-RYT 500 teachers, Himalayan ashram. Enroll from $999.";
         return {
             metadataBase: new URL("https://www.yogagarhi.com"),
             title: {
@@ -36,10 +36,9 @@ export async function generateMetadata({
             description,
             keywords: [
                 "200 hour yoga teacher training in rishikesh",
-                "200 hour yoga TTC rishikesh",
-                "ryt 200 yoga teacher training rishikesh",
-                "yoga alliance 200 hour rishikesh",
-                "yoga teacher training rishikesh"
+                "200 hour yoga teacher training rishikesh india",
+                "yoga teacher training rishikesh",
+                "yttc rishikesh"
             ],
             alternates: {
                 canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh",

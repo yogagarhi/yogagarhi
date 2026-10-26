@@ -8,6 +8,7 @@ const courseKeyToNamespace: Record<string, string> = {
   "300-hour": "course300",
   "100-hour-rishikesh": "course100Rishikesh",
   "200-hour-rishikesh": "course200Rishikesh",
+  "300-hour-rishikesh": "course300Rishikesh",
   "200-hour": "course200",
 };
 

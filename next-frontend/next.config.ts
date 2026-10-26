@@ -130,11 +130,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/300-hour-yoga-teacher-training-in-rishikesh',
-        destination: '/',
-        permanent: true,
-      },
-      {
         source: '/free-yoga-training',
         destination: '/',
         permanent: true,

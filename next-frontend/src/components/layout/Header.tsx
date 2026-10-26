@@ -119,6 +119,7 @@ const getCourses = (t: any): NavDropdownItem[] => [
     subItems: [
       { id: "course100", name: t("course100"), href: "/100-hour-yoga-teacher-training-in-rishikesh" },
       { id: "course200", name: t("course200"), href: "/200-hour-yoga-teacher-training-in-rishikesh" },
+      { id: "course300", name: t("course300"), href: "/300-hour-yoga-teacher-training-in-rishikesh" },
     ]
   },
 ];

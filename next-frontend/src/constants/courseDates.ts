@@ -73,6 +73,28 @@ export const BATCHES_300_HOUR: CourseBatch[] = [
   { startDate: "2027-12-01", endDate: "2027-12-28", date: "1 Dec - 28 Dec 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
 ];
 
+// 300 Hour Yoga Teacher Training Batches (28 Days) - Rishikesh
+export const BATCHES_300_HOUR_RISHIKESH: CourseBatch[] = [
+  // Existing batches (Sept 2026 - Feb 2027)
+  { startDate: "2026-09-01", endDate: "2026-09-28", date: "1 Sept - 28 Sept 2026", spotsLeft: 1, spotsText: "Only 1 spots left", earlyBirdSaving: "$200" },
+  { startDate: "2026-10-01", endDate: "2026-10-28", date: "1 Oct - 28 Oct 2026", spotsLeft: 2, spotsText: "Only 2 spots left", earlyBirdSaving: "$200" },
+  { startDate: "2026-11-01", endDate: "2026-11-28", date: "1 Nov - 28 Nov 2026", spotsLeft: 3, spotsText: "Only 3 spots left", earlyBirdSaving: "$200" },
+  { startDate: "2026-12-01", endDate: "2026-12-28", date: "1 Dec - 28 Dec 2026", spotsLeft: 4, spotsText: "Only 4 spots left", earlyBirdSaving: "$200" },
+  { startDate: "2027-01-01", endDate: "2027-01-28", date: "1 Jan - 28 Jan 2027", spotsLeft: 6, spotsText: "Only 6 spots left", earlyBirdSaving: "$200" },
+  { startDate: "2027-02-01", endDate: "2027-02-28", date: "1 Feb - 28 Feb 2027", spotsLeft: 8, spotsText: "Only 8 spots left", earlyBirdSaving: "$200" },
+  // Extended batches (March 2027 - December 2027)
+  { startDate: "2027-03-01", endDate: "2027-03-28", date: "1 Mar - 28 Mar 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2027-04-01", endDate: "2027-04-28", date: "1 Apr - 28 Apr 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2027-05-01", endDate: "2027-05-28", date: "1 May - 28 May 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2027-06-01", endDate: "2027-06-28", date: "1 Jun - 28 Jun 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2027-07-01", endDate: "2027-07-28", date: "1 Jul - 28 Jul 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2027-08-01", endDate: "2027-08-28", date: "1 Aug - 28 Aug 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2027-09-01", endDate: "2027-09-28", date: "1 Sept - 28 Sept 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2027-10-01", endDate: "2027-10-28", date: "1 Oct - 28 Oct 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2027-11-01", endDate: "2027-11-28", date: "1 Nov - 28 Nov 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2027-12-01", endDate: "2027-12-28", date: "1 Dec - 28 Dec 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+];
+
 /**
  * Checks whether a batch's start date has not passed yet.
  * Returns true if the batch start date is today or in the future.

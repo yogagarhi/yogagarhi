@@ -25,9 +25,9 @@ export async function generateMetadata({
     }
 
     if (locale === "en") {
-        const title = "100 Hour Yoga Teacher Training Rishikesh | Short Yoga TTC";
+        const title = "100 Hour Yoga Teacher Training in Rishikesh | YogaGarhi";
         const description =
-            "Residential 100-Hour Yoga Teacher Training in Rishikesh, India. Authentic Himalayan master teachers, sacred Ganga ashram & certification.";
+            "Start your yoga journey with Yoga Alliance certified 100 hour yoga teacher training in Rishikesh. 12-day intensive, small group, Himalayan ashram. Apply today.";
         return {
             metadataBase: new URL("https://www.yogagarhi.com"),
             title: {
@@ -36,10 +36,7 @@ export async function generateMetadata({
             description,
             keywords: [
                 "100 hour yoga teacher training in rishikesh",
-                "100 hour yoga TTC rishikesh",
-                "beginner yoga teacher training rishikesh",
-                "short yoga teacher training rishikesh",
-                "yoga certification rishikesh"
+                "short yoga course rishikesh"
             ],
             alternates: {
                 canonical: "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh",

@@ -26,6 +26,7 @@ export default function Footer() {
     { name: tNavDropdown("course300"), href: "/300-hour-yoga-teacher-training-in-bali" },
     { name: "200 Hour Yoga TTC in Rishikesh", href: "/200-hour-yoga-teacher-training-in-rishikesh" },
     { name: "100 Hour Yoga TTC in Rishikesh", href: "/100-hour-yoga-teacher-training-in-rishikesh" },
+    { name: "300 Hour Yoga TTC in Rishikesh", href: "/300-hour-yoga-teacher-training-in-rishikesh" },
   ];
 
   const explore = [

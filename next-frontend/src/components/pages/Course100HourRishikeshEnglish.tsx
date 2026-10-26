@@ -1016,7 +1016,7 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
               </div>
 
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tight opacity-0 animate-fade-in text-primary-foreground/95 leading-tight mb-8" style={{ animationDelay: '1.2s', animationFillMode: 'forwards' }}>
-                100 Hour Yoga Teacher Training in Rishikesh
+                100 Hour Yoga Teacher Training in Rishikesh, India
               </h1>
 
               <div className="space-y-10 opacity-0 animate-fade-in mb-12" style={{ animationDelay: '1.4s', animationFillMode: 'forwards' }}>
@@ -1092,9 +1092,9 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
                       variant="default"
                       size="lg"
                       className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                      onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
+                      onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Rishikesh%20Explorer%20Gift.", "_blank")}
                     >
-                      Claim $450 Bali Explorer Gift
+                      Claim $450 Rishikesh Explorer Gift
                     </Button>
                   </div>
 
@@ -2161,9 +2161,9 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
                   variant="default"
                   size="lg"
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold shadow-lg"
-                  onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Bali%20Explorer%20Gift.", "_blank")}
+                  onClick={() => window.open("https://wa.me/917895350563?text=Namaste!%20I'd%20like%20to%20claim%20the%20$450%20Rishikesh%20Explorer%20Gift.", "_blank")}
                 >
-                  Claim $450 Bali Explorer Gift
+                  Claim $450 Rishikesh Explorer Gift
                 </Button>
 
                 {/* Special Offer Box */}
@@ -4644,9 +4644,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
                   <label className="block text-sm font-semibold text-foreground">Course <span className="text-destructive">*</span></label>
                   <select aria-label="Select Course" value={enrollForm.courseName} onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))} className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm">
                     <option value="">Select</option>
-                    <option value="100 Hour Yoga Teacher Training Course in Bali">100 Hr YTTC</option>
-                    <option value="200 Hour Yoga Teacher Training Course in Bali">200 Hr YTTC</option>
-                    <option value="300 Hour Yoga Teacher Training Course in Bali">300 Hr YTTC</option>
+                    <option value="100 Hour Yoga Teacher Training Course in Rishikesh">100 Hr YTTC</option>
+                    <option value="200 Hour Yoga Teacher Training Course in Rishikesh">200 Hr YTTC</option>
+                    <option value="300 Hour Yoga Teacher Training Course in Rishikesh">300 Hr YTTC</option>
                   </select>
                 </div>
                 <div className="space-y-1.5">

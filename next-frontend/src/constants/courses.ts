@@ -898,4 +898,124 @@ export const courseData = {
             "Lifetime re-attendance opportunity",
         ],
     },
+    "300-hour-rishikesh": {
+        title: "300 HOUR YOGA",
+        subtitle: "TEACHER TRAINING COURSE IN RISHIKESH",
+        duration: "28 Days",
+        location: "YogaGarhi Ashram in Rishikesh India",
+        level: "Intermediate to Advanced",
+        prerequisite: "200-Hour Yoga Teacher Training (RYT 200) required",
+        originalPrice: "$1299",
+        price: "$1099",
+        certification: "Yoga Alliance RYT-500 Certification (Pathway)",
+        meals: "Delicious and Nutritious Vegan & Vegetarian Dishes",
+        bonus: "Get a bonus 1 month access of live class, an ancient yoga textbook, and a non-slip yoga mat to elevate your practice.",
+        welcomeTitle: "Welcome to Yogagarhi",
+        welcomeText: "Advance your teaching with our Yoga Alliance certified 300-Hour Yoga Teacher Training in Rishikesh, India. Designed exclusively for certified 200-Hour graduates, this intensive 28-day residential immersion deepens your mastery of multi-style asana, sequencing, therapeutic alignment, pranayama, and Himalayan philosophy along the sacred banks of the Ganges.",
+        welcomeText2: "Rooted in authentic Himalayan lineage, our RYT 500 pathway bridges traditional wisdom with modern biomechanics. Train with master E-RYT 500 teachers in intimate batches of 8–10 students, ensuring personalized feedback, master-level adjustment techniques, and the confidence to lead international workshops, retreats, and teacher trainings.",
+        features: [
+            { title: "Advanced Multi-style Teaching", description: "Master advanced Hatha, Ashtanga Vinyasa, Yin, and therapeutic sequencing with biomechanical precision." },
+            { title: "Yoga Alliance RYT-500 Pathway", description: "Combine with your 200-Hour certification to register as a globally credentialed RYT 500 instructor." },
+            { title: "Sacred Himalayan Setting", description: "Practice in the spiritual yoga capital of the world, bathed in the spiritual vibration of the Ganges and Himalayan foothills." },
+            { title: "Spiritual Excursions", description: "Explore sacred caves, sunrise meditation at Kunjapuri Temple, and evening Ganga Aarti ceremonies." },
+            { title: "Intimate Batch Size (8–10)", description: "Experience direct, personalized mentorship with our master gurus in small, dedicated cohorts." },
+            { title: "Therapeutic Alignment & Adjustments", description: "Learn safe hands-on assists, injury prevention, prop mechanics, and specialized restorative modifications." },
+            { title: "Ayurvedic Massages Included", description: "Traditional Ayurvedic therapies to rejuvenate your body and accelerate recovery between intensive practices." },
+            { title: "Advanced Pranayama & Kundalini", description: "Master bandhas, mudras, kriyas, and classical pranayama practices rooted in Hatha Yoga Pradipika." },
+            { title: "Teaching Practicum & Mentorship", description: "Lead daily peer-teaching sessions with constructive feedback from E-RYT 500 faculty to refine your authentic voice." },
+            { title: "Nutritious Sattvic Meals", description: "Three fresh, chef-prepared organic vegetarian and vegan meals daily, designed to balance doshas." },
+            { title: "Yoga Philosophy & Upanishads", description: "Deep study of the Bhagavad Gita, Patanjali Yoga Sutras, Samkhya philosophy, and Tantric energy systems." },
+            { title: "Lifetime Re-Attendance", description: "Return to future YogaGarhi teacher trainings worldwide to refresh your skills and assist as a guest mentor." },
+        ],
+        curriculum: [
+            {
+                title: "Advanced Asana Mastery & Alignment",
+                items: [
+                    "Advanced Ashtanga Primary & Intermediate series breakdowns",
+                    "Arm balances, deep backbends, and inversion progression mechanics",
+                    "Hands-on adjustments and intelligent touch methodology",
+                    "Therapeutic posture modifications and prop biomechanics"
+                ]
+            },
+            {
+                title: "Advanced Pranayama, Bandhas & Kriyas",
+                items: [
+                    "Shatkarma purification practices (Neti, Dhauti, Nauli, Trataka)",
+                    "Classical Kumbhaka retention practices and energy lock (Bandha) mastery",
+                    "Nadi Shodhana, Bhastrika, Kapalabhati, and Sheetali progressions",
+                    "Pranic energy channels, Kundalini awakening principles, and micro-cosmic orbit"
+                ]
+            },
+            {
+                title: "Yoga Philosophy, Sutras & Sacred Texts",
+                items: [
+                    "In-depth commentary on Patanjali Yoga Sutras (Samadhi and Sadhana Padas)",
+                    "Bhagavad Gita core teachings on Karma, Bhakti, Jnana, and Raja Yoga",
+                    "Upanishadic wisdom and Advaita Vedanta non-dual philosophy",
+                    "Ethics of yoga teaching, teacher-student relationship, and spiritual code of conduct"
+                ]
+            },
+            {
+                title: "Functional Anatomy & Biomechanics",
+                items: [
+                    "Musculoskeletal analysis of complex asanas and spinal mechanics",
+                    "Fascia, nervous system regulation, and neuromuscular re-education",
+                    "Preventing and rehabilitating common yoga injuries (lumbar, SI joint, shoulder, wrist)",
+                    "Subtle anatomy: Chakras, Nadis, Vayus, and Koshas mapped to the physical body"
+                ]
+            },
+            {
+                title: "Advanced Sequencing & Teaching Methodology",
+                items: [
+                    "Vinyasa Krama: Intelligent peak pose class architecture",
+                    "Thematic sequencing for stress relief, energetic balancing, and physical strength",
+                    "Voice projection, classroom psychology, holding space, and inclusive adjustments",
+                    "Designing workshops, specialty series, and weekend intensive retreats"
+                ]
+            },
+            {
+                title: "Meditation, Yoga Nidra & Sound Healing",
+                items: [
+                    "Vipassana, Antar Mouna, and active dynamic meditation practices",
+                    "Yoga Nidra script design and nervous system down-regulation",
+                    "Vedic mantra chanting, Japa meditation, and sound healing frequencies",
+                    "Evening Satsang, Kirtan, and contemplative self-inquiry (Swadhyaya)"
+                ]
+            }
+        ],
+        dailySchedule: [
+            { time: "06:00 AM", activity: "Wake Up & Herbal Tea Cleansing" },
+            { time: "06:30 AM", activity: "Shatkarma, Pranayama & Meditation" },
+            { time: "07:30 AM", activity: "Advanced Asana Practice (Ashtanga / Hatha Vinyasa)" },
+            { time: "09:15 AM", activity: "Sattvic Ayurvedic Breakfast" },
+            { time: "10:30 AM", activity: "Advanced Anatomy, Biomechanics & Injury Prevention" },
+            { time: "12:00 PM", activity: "Nutritious Vegetarian / Vegan Lunch & Rest" },
+            { time: "03:00 PM", activity: "Yoga Philosophy, Sutras & Ethics" },
+            { time: "04:30 PM", activity: "Teaching Practicum, Alignment & Adjustments Lab" },
+            { time: "06:00 PM", activity: "Gentle Yin Yoga, Yoga Nidra & Meditation" },
+            { time: "07:30 PM", activity: "Ayurvedic Dinner" },
+            { time: "08:30 PM", activity: "Evening Satsang, Kirtan, or Silent Reflection" },
+        ],
+        whatSetsApart: [
+            { title: "World's First Pre-YTTC School", description: "Get complimentary access to our online Pre-YTTC course before you arrive so you start Day 1 confident and ready." },
+            { title: "True 8–10 Student Batch Size", description: "Strict cap on class sizes ensuring direct daily feedback from senior E-RYT 500 teachers, never overcrowded halls." },
+            { title: "Pathway to Yoga Alliance RYT 500", description: "Fully certified curriculum allowing you to graduate as an internationally accredited 500-hour master instructor." },
+            { title: "Tapovan Spiritual Ashram Setting", description: "Immerse in peaceful Tapovan near the sacred Ganges, walking distance from Laxman Jhula and tranquil Himalayan forest trails." },
+            { title: "Lifetime Re-Attendance Privilege", description: "Graduates are welcomed back to repeat future training modules free of tuition at any YogaGarhi global campus." },
+            { title: "Comprehensive Holistic Living", description: "Organic Ayurvedic cuisine, private/shared Himalayan-view rooms, and rejuvenating Ayurvedic massages included." },
+        ],
+        includes: [
+            "27 nights accommodation in Tapovan ashram",
+            "3 organic vegetarian and vegan meals daily",
+            "Yoga Alliance accredited 300-Hour RYT Certificate",
+            "Comprehensive 300-Hour Course Manual & Textbook",
+            "Complimentary airport pickup from Dehradun (DED)",
+            "Kunjapuri Himalayan sunrise & Ganga Aarti excursions",
+            "2 Ayurvedic massages for physical rejuvenation",
+            "Yoga prop kit including premium non-slip yoga mat",
+            "1-month complimentary access to live online alumni classes",
+            "Pre-YTTC online preparation course",
+            "Lifetime re-attendance opportunity",
+        ],
+    },
 };
