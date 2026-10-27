@@ -41,6 +41,15 @@ import FounderSection from "@/components/home/FounderSection";
 import HomeGallerySection from "@/components/home/HomeGallerySection";
 import RoomCard from "./RoomCard";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import TrustBadgesRow from "@/components/course-rishikesh/TrustBadgesRow";
+import WhyRishikeshSection from "@/components/course-rishikesh/WhyRishikeshSection";
+import YogaGarhiDifferenceSection from "@/components/course-rishikesh/YogaGarhiDifferenceSection";
+import HowToReachRishikeshSection from "@/components/course-rishikesh/HowToReachRishikeshSection";
+import BestTimeToVisitRishikeshSection from "@/components/course-rishikesh/BestTimeToVisitRishikeshSection";
+import RishikeshFAQSection from "@/components/course-rishikesh/RishikeshFAQSection";
+import CompareCoursesTable from "@/components/course-rishikesh/CompareCoursesTable";
+import ExploreMoreCoursesSection from "@/components/course-rishikesh/ExploreMoreCoursesSection";
+import RishikeshCourseStudyGuide from "@/components/course-rishikesh/RishikeshCourseStudyGuide";
 
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 const preYttcOnline = getCloudinaryImage("pre-yttc-online.png");
@@ -1270,7 +1279,14 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
           </div>
         </section>
 
+        {/* ===== TRUST BADGES ROW ===== */}
+        <TrustBadgesRow />
 
+        {/* ===== WHY CHOOSE RISHIKESH ===== */}
+        <WhyRishikeshSection />
+
+        {/* ===== THE YOGAGARHI DIFFERENCE ===== */}
+        <YogaGarhiDifferenceSection />
 
         <WhyChooseUs />
 
@@ -1707,6 +1723,9 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
 
             {/* Expandable Detailed Syllabus (Semantic HTML) */}
             {syllabusSlot}
+
+            {/* Comprehensive Curriculum & Academic Modules */}
+            <RishikeshCourseStudyGuide />
 
             <div className="text-center mt-12">
               <Dialog open={showSyllabusDialog} onOpenChange={setShowSyllabusDialog}>
@@ -4277,49 +4296,20 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
 
 
 
-        {/* ===== LOCATION & MAP ===== */}
-        <section className="py-20 bg-secondary/30">
-          <div className="container mx-auto px-4">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-              Location
-            </h2>
-            <p className="text-center text-muted-foreground mb-12">
-              YogaGarhi, Tapovan, Rishikesh 249192, Uttarakhand, India
-            </p>
+        {/* ===== HOW TO REACH & TRAVEL ===== */}
+        <HowToReachRishikeshSection />
 
-            <div className="max-w-4xl mx-auto">
-              <div className="aspect-video rounded-lg overflow-hidden bg-muted shadow-elevated">
-                <iframe
-                  src="https://maps.google.com/maps?q=30.1312,78.3245&hl=en&z=15&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Yogagarhi Location - Tapovan, Rishikesh"
-                />
-              </div>
+        {/* ===== BEST TIME TO VISIT ===== */}
+        <BestTimeToVisitRishikeshSection />
 
-              {/* Location Details */}
-              <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button variant="outline" asChild>
-                  <a
-                    href="https://maps.google.com/?q=30.1312,78.3245"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MapPin className="w-4 h-4 mr-2" />
-                    Open in Google Maps
-                  </a>
-                </Button>
-                <p className="text-sm text-muted-foreground">
-                  <span className="font-medium text-foreground">Open 24 hours</span> • Tapovan, Rishikesh
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* ===== FREQUENTLY ASKED QUESTIONS ===== */}
+        <RishikeshFAQSection courseHours="200" />
+
+        {/* ===== PROGRAM COMPARISON TABLE ===== */}
+        <CompareCoursesTable />
+
+        {/* ===== EXPLORE MORE COURSES ===== */}
+        <ExploreMoreCoursesSection currentCourse="200-rishikesh" />
 
         {/* ===== FINAL CONVERSION HUB ===== */}
         <section className="py-20 relative overflow-hidden">

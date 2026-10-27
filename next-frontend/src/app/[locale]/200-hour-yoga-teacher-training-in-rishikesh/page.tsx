@@ -5,6 +5,7 @@ import Course200HourRishikesh from "@/components/pages/Course200HourRishikesh";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
 import { BATCHES_200_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
+import { RISHIKESH_FAQS_200_HOUR } from "@/constants/rishikeshCourseData";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 
@@ -248,29 +249,19 @@ export default async function Page({
     };
 
     /* =========================
-       FAQ SCHEMA
+       FAQ SCHEMA (16 Comprehensive Questions)
     ========================= */
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Is this 200 Hour YTTC in Rishikesh certified with Yoga Alliance?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, our 200 Hour Yoga Teacher Training in Rishikesh is fully certified with Yoga Alliance USA (RYT 200). Upon completion, you can register as a certified yoga teacher internationally."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is included in the 200 Hour Rishikesh course?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The course includes 24 days residential stay, 3 daily Ayurvedic vegetarian meals, course manual, Yoga Alliance certification, Ganga excursions, and full instruction in Hatha, Ashtanga, Anatomy, and Philosophy."
-                }
+        "mainEntity": RISHIKESH_FAQS_200_HOUR.map((faq) => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
             }
-        ]
+        }))
     };
 
     /* =========================

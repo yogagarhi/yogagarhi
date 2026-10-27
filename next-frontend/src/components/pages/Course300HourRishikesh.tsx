@@ -10,6 +10,16 @@ export default async function Course300HourRishikesh({
   initialBatches?: CourseBatch[];
   syllabusSlot?: React.ReactNode;
 } = {}) {
+  if (locale === "en") {
+    const Course300HourRishikeshEnglish = (await import("./Course300HourRishikeshEnglish")).default;
+    return (
+      <Course300HourRishikeshEnglish
+        initialBatches={initialBatches}
+        syllabusSlot={syllabusSlot}
+      />
+    );
+  }
+
   const CoursePageTemplate = (await import("./CoursePageTemplate")).default;
   return (
     <CoursePageTemplate

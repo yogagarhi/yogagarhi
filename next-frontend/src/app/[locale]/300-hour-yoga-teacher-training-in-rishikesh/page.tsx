@@ -4,6 +4,7 @@ import Course300HourRishikesh from "@/components/pages/Course300HourRishikesh";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
 import { BATCHES_300_HOUR_RISHIKESH, filterUpcomingBatches } from "@/constants/courseDates";
+import { RISHIKESH_FAQS_300_HOUR } from "@/constants/rishikeshCourseData";
 import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
@@ -236,35 +237,20 @@ export default async function Page({
         "educationalCredentialAwarded": "RYT-500 Yoga Alliance Certification"
     };
 
+    /* =========================
+       FAQ SCHEMA (16 Comprehensive Questions)
+    ========================= */
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Is this 300 Hour YTTC in Rishikesh certified with Yoga Alliance?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, our 300 Hour Yoga Teacher Training in Rishikesh is fully certified with Yoga Alliance USA. Completing this course after your 200-Hour certification qualifies you to register as an RYT 500 advanced yoga instructor."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the prerequisite for the 300 Hour course in Rishikesh?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "You must have completed a Yoga Alliance approved 200-Hour Yoga Teacher Training (from YogaGarhi or any recognized yoga school) before enrolling in the 300-Hour course."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is included in the 300-Hour Rishikesh training?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The course includes 28 days (27 nights) ashram accommodation in Tapovan, 3 daily organic Ayurvedic vegetarian/vegan meals, advanced course manual, Yoga Alliance certification, Ganga excursions, and instruction by senior E-RYT 500 Himalayan masters."
-                }
+        "mainEntity": RISHIKESH_FAQS_300_HOUR.map((faq) => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
             }
-        ]
+        }))
     };
 
     const breadcrumbSchema = {

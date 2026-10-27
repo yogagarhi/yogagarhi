@@ -5,6 +5,7 @@ import Course100HourRishikesh from "@/components/pages/Course100HourRishikesh";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
 import { BATCHES_100_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
+import { RISHIKESH_FAQS_100_HOUR } from "@/constants/rishikeshCourseData";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 
@@ -245,29 +246,19 @@ export default async function Page({
     };
 
     /* =========================
-       FAQ SCHEMA
+       FAQ SCHEMA (13 Comprehensive Questions)
     ========================= */
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Why choose a 100 Hour Yoga Teacher Training in Rishikesh?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Rishikesh is the Yoga Capital of the World. Our 100-hour course offers authentic Himalayan teachings, daily Ganga Aarti, and foundational yoga discipline in an intensive residential format."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is this 100-hour training suitable for beginners?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, it is designed for students of all levels wanting to deepen their personal practice, learn proper alignment, pranayama, and meditation."
-                }
+        "mainEntity": RISHIKESH_FAQS_100_HOUR.map((faq) => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
             }
-        ]
+        }))
     };
 
     /* =========================

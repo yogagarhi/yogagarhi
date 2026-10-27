@@ -53,6 +53,16 @@ import TopVideoReviewsSection from "@/components/course200/TopVideoReviewsSectio
 import { YOGA_ALLIANCE_PROFILE } from "@/constants/course200Data";
 import { trackEvent } from "@/utils/analytics";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import TrustBadgesRow from "@/components/course-rishikesh/TrustBadgesRow";
+import WhyRishikeshSection from "@/components/course-rishikesh/WhyRishikeshSection";
+import YogaGarhiDifferenceSection from "@/components/course-rishikesh/YogaGarhiDifferenceSection";
+import HowToReachRishikeshSection from "@/components/course-rishikesh/HowToReachRishikeshSection";
+import BestTimeToVisitRishikeshSection from "@/components/course-rishikesh/BestTimeToVisitRishikeshSection";
+import RishikeshFAQSection from "@/components/course-rishikesh/RishikeshFAQSection";
+import CompareCoursesTable from "@/components/course-rishikesh/CompareCoursesTable";
+import ExploreMoreCoursesSection from "@/components/course-rishikesh/ExploreMoreCoursesSection";
+import AlsoAvailableInRishikeshSection from "@/components/course-rishikesh/AlsoAvailableInRishikeshSection";
+import RishikeshCourseStudyGuide from "@/components/course-rishikesh/RishikeshCourseStudyGuide";
 
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 const preYttcOnline = getCloudinaryImage("pre-yttc-online.png");
@@ -1377,18 +1387,26 @@ export default function CoursePageTemplate({
           </div>
         </section>
 
-        {/* ===== WHY YOGAGARHI HIGHLIGHT BOX ===== */}
-        {courseKey !== "200-hour-rishikesh" && (
-          <WhyYogaGarhiBox namespace={namespace}
-            onCheckAvailability={() => {
-              trackEvent("enroll_click", { course: courseKey, section: "why_yogagarhi" });
-              setShowEnrollDialog(true);
-            }}
-            onBookCall={() => {
-              trackEvent("video_call_click", { course: courseKey, section: "why_yogagarhi" });
-              setShowCalendarDialog(true);
-            }}
-          />
+        {/* ===== WHY YOGAGARHI HIGHLIGHT BOX & RISHIKESH SECTIONS ===== */}
+        {isRishikesh ? (
+          <>
+            <TrustBadgesRow />
+            <WhyRishikeshSection />
+            <YogaGarhiDifferenceSection />
+          </>
+        ) : (
+          courseKey !== "200-hour-rishikesh" && (
+            <WhyYogaGarhiBox namespace={namespace}
+              onCheckAvailability={() => {
+                trackEvent("enroll_click", { course: courseKey, section: "why_yogagarhi" });
+                setShowEnrollDialog(true);
+              }}
+              onBookCall={() => {
+                trackEvent("video_call_click", { course: courseKey, section: "why_yogagarhi" });
+                setShowCalendarDialog(true);
+              }}
+            />
+          )
         )}
 
         {/* ===== REAL STUDENT VIDEO REVIEWS & BOOK CALL (HIGH CONVERSION) ===== */}
@@ -1680,6 +1698,9 @@ export default function CoursePageTemplate({
 
             {/* Expandable Detailed Syllabus (Semantic HTML) */}
             {syllabusSlot}
+
+            {/* Comprehensive Curriculum & Academic Modules */}
+            {isRishikesh && <RishikeshCourseStudyGuide />}
 
             <div className="text-center mt-12">
               <Dialog open={showSyllabusDialog} onOpenChange={setShowSyllabusDialog}>
@@ -4311,76 +4332,74 @@ export default function CoursePageTemplate({
 
 
 
-        {/* ===== HOW TO REACH SECTION (CONDITIONAL) ===== */}
-        <HowToReachSection />
+        {isRishikesh ? (
+          <>
+            <HowToReachRishikeshSection />
+            <BestTimeToVisitRishikeshSection />
+            <RishikeshFAQSection courseHours={courseKey?.includes("100") ? "100" : courseKey?.includes("300") ? "300" : "200"} />
+            <CompareCoursesTable />
+            <ExploreMoreCoursesSection currentCourse={courseKey?.includes("100") ? "100-rishikesh" : courseKey?.includes("300") ? "300-rishikesh" : "200-rishikesh"} />
+          </>
+        ) : (
+          <>
+            {/* ===== HOW TO REACH SECTION (CONDITIONAL) ===== */}
+            <HowToReachSection />
 
-        {/* ===== LOCATION & MAP ===== */}
-        <section className="py-20 bg-secondary/30">
-          <div className="container mx-auto px-4">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-              Location
-            </h2>
-            <p className="text-center text-muted-foreground mb-12">
-              {isRishikesh
-                ? "YogaGarhi, Tapovan, Rishikesh 249192, Uttarakhand, India"
-                : "YogaGarhi, Gianyar, Bali 80515, Indonesia"}
-            </p>
-
-            <div className="max-w-4xl mx-auto">
-              <div className="aspect-video rounded-lg overflow-hidden bg-muted shadow-elevated">
-                <iframe
-                  src={
-                    isRishikesh
-                      ? "https://maps.google.com/maps?q=30.1312,78.3245&hl=en&z=15&output=embed"
-                      : "https://maps.google.com/maps?q=-8.4982,115.3051&hl=en&z=15&output=embed"
-                  }
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title={
-                    isRishikesh
-                      ? "Yogagarhi Location - Tapovan, Rishikesh"
-                      : "Yogagarhi Location - Gianyar, Bali"
-                  }
-                />
-              </div>
-
-              {/* Location Details */}
-              <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button variant="outline" asChild>
-                  <a
-                    href={
-                      isRishikesh
-                        ? "https://maps.google.com/?q=30.1312,78.3245"
-                        : "https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MapPin className="w-4 h-4 mr-2" />
-                    {t("ethicsExtra.openGoogleMaps")}
-                  </a>
-                </Button>
-                <p className="text-sm text-muted-foreground">
-                  <span className="font-medium text-foreground">{t("ethicsExtra.open24Hours")}</span> •{" "}
-                  {isRishikesh ? "Tapovan, Rishikesh" : "Gianyar, Bali"}
+            {/* ===== LOCATION & MAP ===== */}
+            <section className="py-20 bg-secondary/30">
+              <div className="container mx-auto px-4">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
+                  Location
+                </h2>
+                <p className="text-center text-muted-foreground mb-12">
+                  YogaGarhi, Gianyar, Bali 80515, Indonesia
                 </p>
+
+                <div className="max-w-4xl mx-auto">
+                  <div className="aspect-video rounded-lg overflow-hidden bg-muted shadow-elevated">
+                    <iframe
+                      src="https://maps.google.com/maps?q=-8.4982,115.3051&hl=en&z=15&output=embed"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Yogagarhi Location - Gianyar, Bali"
+                    />
+                  </div>
+
+                  {/* Location Details */}
+                  <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <Button variant="outline" asChild>
+                      <a
+                        href="https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <MapPin className="w-4 h-4 mr-2" />
+                        {t("ethicsExtra.openGoogleMaps")}
+                      </a>
+                    </Button>
+                    <p className="text-sm text-muted-foreground">
+                      <span className="font-medium text-foreground">{t("ethicsExtra.open24Hours")}</span> • Gianyar, Bali
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
+            </section>
 
-        {/* ===== HELPFUL GUIDES SECTION ===== */}
-        {courseKey !== "200-hour-rishikesh" && (
-          <HelpfulGuidesSection />
-        )}
+            {/* ===== HELPFUL GUIDES SECTION ===== */}
+            <HelpfulGuidesSection />
 
-        {/* ===== FREQUENTLY ASKED QUESTIONS ===== */}
-        {courseKey === "200-hour" && (
-          <CourseFAQSection namespace={namespace} />
+            {/* ===== FREQUENTLY ASKED QUESTIONS ===== */}
+            {courseKey === "200-hour" && (
+              <CourseFAQSection namespace={namespace} />
+            )}
+
+            {/* ===== ALSO AVAILABLE IN RISHIKESH ===== */}
+            <AlsoAvailableInRishikeshSection />
+          </>
         )}
 
         {/* ===== FINAL CONVERSION HUB ===== */}

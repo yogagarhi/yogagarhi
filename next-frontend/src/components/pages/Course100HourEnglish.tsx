@@ -41,6 +41,7 @@ import FounderSection from "@/components/home/FounderSection";
 import HomeGallerySection from "@/components/home/HomeGallerySection";
 import RoomCard from "./RoomCard";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import AlsoAvailableInRishikeshSection from "@/components/course-rishikesh/AlsoAvailableInRishikeshSection";
 
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 const preYttcOnline = getCloudinaryImage("pre-yttc-online.png");
@@ -4429,6 +4430,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
             </div>
           </div>
         </section>
+
+        {/* ===== ALSO AVAILABLE IN RISHIKESH ===== */}
+        <AlsoAvailableInRishikeshSection />
 
         {/* ===== FINAL CONVERSION HUB ===== */}
         <section className="py-20 relative overflow-hidden">
