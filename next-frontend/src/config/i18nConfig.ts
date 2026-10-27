@@ -53,6 +53,7 @@ export const TRANSLATED_PAGES: Record<string, readonly SupportedLocale[]> = {
   '/300-hour-yoga-teacher-training-in-bali': SUPPORTED_LOCALES,
   '/100-hour-yoga-teacher-training-in-rishikesh': SUPPORTED_LOCALES,
   '/200-hour-yoga-teacher-training-in-rishikesh': SUPPORTED_LOCALES,
+  '/300-hour-yoga-teacher-training-in-rishikesh': SUPPORTED_LOCALES,
   '/thank-you': SUPPORTED_LOCALES,
   '/about-school': SUPPORTED_LOCALES,
   '/teachers': SUPPORTED_LOCALES,

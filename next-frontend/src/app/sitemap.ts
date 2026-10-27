@@ -128,6 +128,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: 'https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-rishikesh',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
             url: 'https://www.yogagarhi.com/apply-now',
             lastModified: new Date(),
             changeFrequency: 'monthly',
