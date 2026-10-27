@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: retreat.keywords,
     alternates: {
       canonical: canonicalUrl,
-      languages: isEn ? getReviewedHreflang(`/retreat/${retreat.locationKey}/${retreat.slug}`) : undefined,
+      languages: getReviewedHreflang(`/retreat/${retreat.locationKey}/${retreat.slug}`),
     },
     robots: {
       index: true,

@@ -2054,9 +2054,9 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4 italic">
+            <h3 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4 italic">
               Choosing a Teacher Training Is Deeply Personal
-            </h2>
+            </h3>
             {/* Decorative Lotus Icon */}
             <div className="flex items-center justify-center gap-2 mb-4">
               <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
@@ -2209,9 +2209,9 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
               <p className="font-body uppercase tracking-[0.2em] text-sm text-primary mb-4">
                 What Makes Us Different
               </p>
-              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+              <h3 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
                 What Sets YogaGarhi Apart
-              </h2>
+              </h3>
               {/* Decorative Om Symbol */}
               <div className="flex items-center justify-center gap-2 mt-4">
                 <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
@@ -2396,9 +2396,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
           {/* Content - Scrollable on mobile */}
           <div className="relative z-10 min-h-screen md:min-h-0 flex items-center py-20">
             <div className="container mx-auto px-4 max-w-4xl">
-              <h2 className="font-heading text-4xl md:text-6xl font-bold text-center text-white mb-8 tracking-tight">
+              <h3 className="font-heading text-4xl md:text-6xl font-bold text-center text-white mb-8 tracking-tight">
                 Why One Style Does Not Fit All
-              </h2>
+              </h3>
               <p className="font-heading text-xl md:text-3xl text-center text-primary-foreground/90 mb-12 italic">
                 Why We Teach Authentic Multi-Style & Prakriti-Based Yoga
               </p>
@@ -2621,9 +2621,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
           </div>
 
           <div className="container mx-auto px-4 max-w-4xl text-center relative z-10">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+            <h3 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
               Free Orientation Webinar
-            </h2>
+            </h3>
             <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
               Join our live webinar to learn more about the training, ask questions,
               and connect with our teachers before making your decision.
@@ -2982,9 +2982,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
         {/* ===== WHY CHOOSE YOGAGARHI (USPs) ===== */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
+            <h3 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
               Why Choose Yogagarhi
-            </h2>
+            </h3>
             {/* Decorative Chakra Icon */}
             <div className="flex items-center justify-center gap-2 mb-8">
               <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/60" />
@@ -3900,9 +3900,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
           <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-primary/5 translate-x-1/2 translate-y-1/2" />
 
           <div className="container mx-auto px-4 relative z-10">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
+            <h3 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-12">
               Do you have any questions?
-            </h2>
+            </h3>
 
             <div className="max-w-5xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-8 bg-card rounded-2xl overflow-hidden shadow-elevated border border-border">

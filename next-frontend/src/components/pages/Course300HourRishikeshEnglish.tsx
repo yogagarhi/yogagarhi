@@ -231,12 +231,12 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
 
 // Icon Highlights Section
 const iconHighlights = [
-  { icon: Award, title: "Yoga Alliance Certified", subtitle: "RYS 200" },
+  { icon: Award, title: "Yoga Alliance Certified", subtitle: "RYT 500 Pathway" },
   { icon: Leaf, title: "Multi-Style Yoga", subtitle: "Authentic Teaching" },
   { icon: Heart, title: "Prakriti-Based", subtitle: "Personalized Learning" },
   { icon: Users, title: "Small Batch", subtitle: "8-10 Students" },
   { icon: BookOpen, title: "Traditional + Practical", subtitle: "Complete System" },
-  { icon: MapPin, title: "Rishikesh Immersion", subtitle: "24-Day Retreat" },
+  { icon: MapPin, title: "Rishikesh Immersion", subtitle: "28-Day Retreat" },
 ];
 
 // What Sets Apart Data
@@ -1171,13 +1171,13 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                   {/* Course Duration */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Course</p>
-                    <p className="font-heading font-semibold text-foreground">200 Hour YTTC</p>
+                    <p className="font-heading font-semibold text-foreground">300 Hour YTTC</p>
                   </div>
 
                   {/* Course Length */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Duration</p>
-                    <p data-course-duration className="font-heading font-semibold text-foreground">24 Days</p>
+                    <p data-course-duration className="font-heading font-semibold text-foreground">28 Days</p>
                   </div>
 
                   {/* Yoga Style */}
@@ -1189,7 +1189,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                   {/* Level */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Level</p>
-                    <p className="font-heading font-semibold text-foreground">Beginner - Intermediate</p>
+                    <p className="font-heading font-semibold text-foreground">Intermediate - Advanced</p>
                   </div>
 
                   {/* Certification */}
@@ -1203,7 +1203,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
                     <div className="flex flex-col items-center lg:items-start">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                        <span className="text-base text-muted-foreground line-through opacity-60">$1299</span>
+                        <span className="text-base text-muted-foreground line-through opacity-60">$1,299</span>
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
                             $1,099
@@ -1213,7 +1213,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                       </div>
                       <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform">
                         <Zap className="w-3.5 h-3.5 fill-current" />
-                        Save $300 Now
+                        Save $200 Now
                       </div>
                     </div>
                   </div>
@@ -2092,7 +2092,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
         <section id="book-now" className="py-20 bg-background scroll-mt-24" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1485px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-2">
-              200 Hour Yoga Teacher Training
+              300 Hour Yoga Teacher Training
             </h2>
             <p className="text-center text-primary font-heading text-lg tracking-[0.3em] uppercase mb-2">
               Upcoming Dates
@@ -2191,13 +2191,13 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                   <div className="bg-card border border-border rounded-xl overflow-hidden sticky top-24">
                     {/* Header */}
                     <div className="bg-primary text-primary-foreground p-4 text-center">
-                      <h3 className="font-heading font-bold text-lg tracking-wide">200 HOUR YOGA TTC FEES</h3>
+                      <h3 className="font-heading font-bold text-lg tracking-wide">300 HOUR YOGA TTC FEES</h3>
                     </div>
 
                     {/* Content */}
                     <div className="p-6 space-y-5">
                       <p className="text-center text-foreground font-medium border-b border-border pb-4">
-                        Course Duration: 23 Nights / 24 Days
+                        Course Duration: 27 Nights / 28 Days
                       </p>
 
                       {/* Tuition Fees */}
@@ -2208,19 +2208,19 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                         </p>
                         <p className="text-muted-foreground text-sm">
                           <span className="line-through">$1,299</span>
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
+                          <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
                         </p>
                       </div>
 
-                      {/* Triple Sharing */}
+                      {/* Shared Room */}
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Triple Sharing</p>
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Shared Room</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,750
+                          $1,399
                         </p>
                         <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$2,050</span>
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
+                          <span className="line-through">$1,599</span>
+                          <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
                         </p>
                       </div>
 
@@ -2228,11 +2228,11 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Double Sharing</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,899
+                          $1,699
                         </p>
                         <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$2,199</span>
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
+                          <span className="line-through">$1,899</span>
+                          <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
                         </p>
                       </div>
 
@@ -2240,11 +2240,11 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Private Room</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          $2,499
+                          $1,999
                         </p>
                         <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$2,799</span>
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
+                          <span className="line-through">$2,199</span>
+                          <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
                         </p>
                       </div>
 
@@ -2674,7 +2674,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                   title: "Tuition Only",
                   beds: "Course Only",
                   description: "Full access to classes, study materials, and certification. Accommodation and meals not included.",
-                  originalPrice: "$1,399",
+                  originalPrice: "$1,299",
                   price: "$1,099",
                   images: [apartGroupClass, apartSeatedTalk, apartGroupPose, apartChildPose, apartMountainPose],
                   features: ["Yoga Shala", "TTC Manual", "Wi-Fi", "All Classes"],
@@ -2682,11 +2682,11 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                   isPopular: false,
                 },
                 {
-                  title: "Triple Sharing",
-                  beds: 3,
-                  description: "Share your space with two like-minded yogis. A great way to build lasting friendships.",
-                  originalPrice: "$2,187",
-                  price: "$1,750",
+                  title: "Shared Room",
+                  beds: 4,
+                  description: "Share your space with like-minded yogis. A great way to build lasting friendships.",
+                  originalPrice: "$1,599",
+                  price: "$1,399",
                   images: [tripleBalcony, tripleBathroom, tripleBedroom1, tripleBedroom2, tripleBedroom3],
                   features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
                   badge: null,
@@ -2696,8 +2696,8 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                   title: "Double Sharing",
                   beds: 2,
                   description: "Share with one roommate. Perfect balance of community and personal space.",
-                  originalPrice: "$2,370",
-                  price: "$1,899",
+                  originalPrice: "$1,899",
+                  price: "$1,699",
                   images: [doubleBedroom1, doubleBedroom2, doubleBedroom3, doubleBedroom4, doubleBalcony],
                   features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
                   badge: "Most Popular",
@@ -2707,8 +2707,8 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                   title: "Private Room",
                   beds: 1,
                   description: "Your own sanctuary for complete privacy and deep personal reflection.",
-                  originalPrice: "$3,125",
-                  price: "$2,499",
+                  originalPrice: "$2,199",
+                  price: "$1,999",
                   images: [
                     privateNew2,
                     privateNew3,

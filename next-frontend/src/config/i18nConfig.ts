@@ -10,16 +10,16 @@ export interface LocaleConfig {
 
 export const LOCALES_CONFIG: Record<string, LocaleConfig> = {
   en: { code: 'en', name: 'English', nativeName: 'English', reviewed: true, showInSwitcher: true },
-  id: { code: 'id', name: 'Indonesian', nativeName: 'Bahasa Indonesia', reviewed: false, showInSwitcher: true },
-  de: { code: 'de', name: 'German', nativeName: 'Deutsch', reviewed: false, showInSwitcher: true },
-  ko: { code: 'ko', name: 'Korean', nativeName: '한국어', reviewed: false, showInSwitcher: true },
-  ja: { code: 'ja', name: 'Japanese', nativeName: '日本語', reviewed: false, showInSwitcher: true },
-  zh: { code: 'zh', name: 'Chinese', nativeName: '简体中文', reviewed: false, showInSwitcher: true },
-  nl: { code: 'nl', name: 'Dutch', nativeName: 'Nederlands', reviewed: false, showInSwitcher: true },
-  ru: { code: 'ru', name: 'Russian', nativeName: 'Русский', reviewed: false, showInSwitcher: true },
-  it: { code: 'it', name: 'Italian', nativeName: 'Italiano', reviewed: false, showInSwitcher: true },
-  es: { code: 'es', name: 'Spanish', nativeName: 'Español', reviewed: false, showInSwitcher: true },
-  fr: { code: 'fr', name: 'French', nativeName: 'Français', reviewed: false, showInSwitcher: true },
+  id: { code: 'id', name: 'Indonesian', nativeName: 'Bahasa Indonesia', reviewed: true, showInSwitcher: true },
+  de: { code: 'de', name: 'German', nativeName: 'Deutsch', reviewed: true, showInSwitcher: true },
+  ko: { code: 'ko', name: 'Korean', nativeName: '한국어', reviewed: true, showInSwitcher: true },
+  ja: { code: 'ja', name: 'Japanese', nativeName: '日本語', reviewed: true, showInSwitcher: true },
+  zh: { code: 'zh', name: 'Chinese', nativeName: '简体中文', reviewed: true, showInSwitcher: true },
+  nl: { code: 'nl', name: 'Dutch', nativeName: 'Nederlands', reviewed: true, showInSwitcher: true },
+  ru: { code: 'ru', name: 'Russian', nativeName: 'Русский', reviewed: true, showInSwitcher: true },
+  it: { code: 'it', name: 'Italian', nativeName: 'Italiano', reviewed: true, showInSwitcher: true },
+  es: { code: 'es', name: 'Spanish', nativeName: 'Español', reviewed: true, showInSwitcher: true },
+  fr: { code: 'fr', name: 'French', nativeName: 'Français', reviewed: true, showInSwitcher: true },
 };
 
 export const SUPPORTED_LOCALES = [

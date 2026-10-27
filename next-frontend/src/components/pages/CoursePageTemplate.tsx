@@ -1410,7 +1410,7 @@ export default function CoursePageTemplate({
         )}
 
         {/* ===== REAL STUDENT VIDEO REVIEWS & BOOK CALL (HIGH CONVERSION) ===== */}
-        {courseKey !== "200-hour-rishikesh" && (
+        {!isRishikesh && (
           <TopVideoReviewsSection
             onBookCall={() => {
               trackEvent("video_call_click", { course: courseKey, section: "top_video_reviews" });
