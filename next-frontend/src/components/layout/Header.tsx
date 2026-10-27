@@ -122,6 +122,17 @@ const getCourses = (t: any): NavDropdownItem[] => [
       { id: "course300", name: t("course300"), href: "/300-hour-yoga-teacher-training-in-rishikesh" },
     ]
   },
+  {
+    id: "varkala",
+    name: t("varkalaLocation"),
+    href: "#",
+    icon: Waves,
+    subItems: [
+      { id: "course100", name: t("course100"), href: "/100-hour-yoga-teacher-training-in-varkala" },
+      { id: "course200", name: t("course200"), href: "/200-hour-yoga-teacher-training-in-varkala" },
+      { id: "course300", name: t("course300"), href: "/300-hour-yoga-teacher-training-in-varkala" },
+    ]
+  },
 ];
 
 const getRetreats = (t: any): NavDropdownItem[] => [
@@ -268,7 +279,7 @@ export default function Header() {
   }, [pathname]);
 
   const isActive = (href: string) => pathname === href;
-  const isCoursesActive = pathname.includes("-hour-yoga-teacher-training-in-bali");
+  const isCoursesActive = pathname.includes("-hour-yoga-teacher-training");
   const isRetreatActive = pathname.startsWith("/retreat");
   const isOnlineCoursesActive = pathname === "/yoga-anatomy-masterclass";
   const isAboutActive = pathname === "/about-school" || pathname === "/teachers" || pathname === "/testimonials";

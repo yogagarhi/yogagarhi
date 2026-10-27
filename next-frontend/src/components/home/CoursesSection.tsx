@@ -185,6 +185,25 @@ export default async function CoursesSection() {
           </div>
         </div>
 
+        {/* Campus Exploration Strip */}
+        <div className="mt-12 p-6 rounded-2xl bg-secondary/30 border border-border/60 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div>
+            <p className="text-sm font-bold text-foreground">Explore Our Global Training Campuses</p>
+            <p className="text-xs text-muted-foreground">Yoga Alliance certified residential courses in Bali, Rishikesh & Varkala (Kerala)</p>
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <Link href="/200-hour-yoga-teacher-training-in-bali" className="px-3.5 py-1.5 rounded-lg bg-background border border-border text-xs font-semibold hover:border-primary transition-colors">
+              🌴 Bali Campus
+            </Link>
+            <Link href="/200-hour-yoga-teacher-training-in-rishikesh" className="px-3.5 py-1.5 rounded-lg bg-background border border-border text-xs font-semibold hover:border-primary transition-colors">
+              ⛰️ Rishikesh Campus
+            </Link>
+            <Link href="/200-hour-yoga-teacher-training-in-varkala" className="px-3.5 py-1.5 rounded-lg bg-primary text-primary-foreground text-xs font-semibold hover:opacity-90 transition-opacity">
+              🌊 Varkala (Kerala) Campus
+            </Link>
+          </div>
+        </div>
+
         {/* Bottom CTA */}
         <div className="text-center mt-14">
           <p className="text-muted-foreground mb-3">{t("needHelp")}</p>

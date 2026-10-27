@@ -5,11 +5,14 @@ const path = require('path');
 
 const COURSES = [
   '100-hour-yoga-teacher-training-in-bali',
+  '200-hour-yoga-teacher-training-in-bali',
   '300-hour-yoga-teacher-training-in-bali',
   '100-hour-yoga-teacher-training-in-rishikesh',
   '200-hour-yoga-teacher-training-in-rishikesh',
   '300-hour-yoga-teacher-training-in-rishikesh',
-  '200-hour-yoga-teacher-training-in-bali'
+  '100-hour-yoga-teacher-training-in-varkala',
+  '200-hour-yoga-teacher-training-in-varkala',
+  '300-hour-yoga-teacher-training-in-varkala'
 ];
 
 const LOCALES = ['de', 'es', 'fr', 'it', 'nl', 'ru', 'id', 'ja', 'ko', 'zh'];

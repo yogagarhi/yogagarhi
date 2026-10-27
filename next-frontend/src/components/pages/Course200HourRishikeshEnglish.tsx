@@ -49,6 +49,7 @@ import BestTimeToVisitRishikeshSection from "@/components/course-rishikesh/BestT
 import RishikeshFAQSection from "@/components/course-rishikesh/RishikeshFAQSection";
 import CompareCoursesTable from "@/components/course-rishikesh/CompareCoursesTable";
 import ExploreMoreCoursesSection from "@/components/course-rishikesh/ExploreMoreCoursesSection";
+import AlsoAvailableInVarkalaSection from "@/components/course-varkala/AlsoAvailableInVarkalaSection";
 import RishikeshCourseStudyGuide from "@/components/course-rishikesh/RishikeshCourseStudyGuide";
 
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
@@ -4310,6 +4311,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
 
         {/* ===== EXPLORE MORE COURSES ===== */}
         <ExploreMoreCoursesSection currentCourse="200-rishikesh" />
+        <AlsoAvailableInVarkalaSection />
 
         {/* ===== FINAL CONVERSION HUB ===== */}
         <section className="py-20 relative overflow-hidden">

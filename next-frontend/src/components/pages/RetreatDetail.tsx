@@ -1139,6 +1139,108 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
             </div>
           </section>
 
+          {/* ========================================================
+              CROSS-LINK: YOGA TEACHER TRAINING IN THIS LOCATION
+          ======================================================== */}
+          <section className="py-16 bg-stone-100 dark:bg-stone-900 border-t border-border">
+            <div className="container mx-auto px-4 max-w-5xl text-center">
+              <span className="text-xs font-bold uppercase tracking-wider text-primary block mb-2">
+                Yoga Alliance Certified Programs
+              </span>
+              <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">
+                {retreat.locationKey === 'varkala'
+                  ? 'Looking to Become a Certified Yoga Teacher in Varkala?'
+                  : `Looking to Become a Certified Yoga Teacher in ${retreat.locationName}?`}
+              </h3>
+              <p className="text-muted-foreground text-sm max-w-2xl mx-auto mb-8">
+                {retreat.locationKey === 'varkala'
+                  ? 'Deepen your personal practice with our 100-Hour, 200-Hour, and 300-Hour Yoga Alliance certified residential teacher training courses in Varkala, Kerala.'
+                  : `Explore our internationally accredited Yoga Alliance teacher training immersions in ${retreat.locationName}.`}
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                {retreat.locationKey === 'varkala' ? (
+                  <>
+                    <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
+                      <div>
+                        <span className="text-xs font-bold text-primary">12 Days</span>
+                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">100-Hour YTT Varkala</h4>
+                        <p className="text-xs text-muted-foreground mb-4">Beachside beginner immersion with foundational Kerala Ayurveda.</p>
+                      </div>
+                      <Link href={`${linkPrefix}/100-hour-yoga-teacher-training-in-varkala`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                        <span>From $599 • Learn More</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+
+                    <div className="p-5 rounded-2xl bg-card border-2 border-primary shadow-md flex flex-col justify-between relative">
+                      <span className="absolute -top-2.5 right-4 px-2 py-0.5 rounded-full bg-primary text-primary-foreground text-[10px] font-bold">Most Popular</span>
+                      <div>
+                        <span className="text-xs font-bold text-primary">28 Days</span>
+                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">200-Hour YTT Varkala</h4>
+                        <p className="text-xs text-muted-foreground mb-4">Yoga Alliance RYT 200 certification with Ayurvedic immersion.</p>
+                      </div>
+                      <Link href={`${linkPrefix}/200-hour-yoga-teacher-training-in-varkala`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                        <span>From $999 • Learn More</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+
+                    <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
+                      <div>
+                        <span className="text-xs font-bold text-primary">28 Days</span>
+                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">300-Hour YTT Varkala</h4>
+                        <p className="text-xs text-muted-foreground mb-4">Advanced master training leading to RYT 500 credential.</p>
+                      </div>
+                      <Link href={`${linkPrefix}/300-hour-yoga-teacher-training-in-varkala`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                        <span>From $1,099 • Learn More</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
+                      <div>
+                        <span className="text-xs font-bold text-primary">12 Days</span>
+                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">100-Hour YTT</h4>
+                        <p className="text-xs text-muted-foreground mb-4">Comprehensive foundation training for dedicated practitioners.</p>
+                      </div>
+                      <Link href={`${linkPrefix}/100-hour-yoga-teacher-training-in-${retreat.locationKey}`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                        <span>Learn More</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+
+                    <div className="p-5 rounded-2xl bg-card border-2 border-primary shadow-md flex flex-col justify-between">
+                      <div>
+                        <span className="text-xs font-bold text-primary">28 Days</span>
+                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">200-Hour YTT</h4>
+                        <p className="text-xs text-muted-foreground mb-4">Our flagship Yoga Alliance accredited teacher training.</p>
+                      </div>
+                      <Link href={`${linkPrefix}/200-hour-yoga-teacher-training-in-${retreat.locationKey}`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                        <span>Learn More</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+
+                    <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
+                      <div>
+                        <span className="text-xs font-bold text-primary">28 Days</span>
+                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">300-Hour YTT</h4>
+                        <p className="text-xs text-muted-foreground mb-4">Advanced teacher training pathway to RYT 500 credential.</p>
+                      </div>
+                      <Link href={`${linkPrefix}/300-hour-yoga-teacher-training-in-${retreat.locationKey}`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                        <span>Learn More</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          </section>
+
         </article>
       </main>
 

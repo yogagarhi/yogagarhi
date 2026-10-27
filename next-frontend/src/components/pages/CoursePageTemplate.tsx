@@ -63,6 +63,16 @@ import CompareCoursesTable from "@/components/course-rishikesh/CompareCoursesTab
 import ExploreMoreCoursesSection from "@/components/course-rishikesh/ExploreMoreCoursesSection";
 import AlsoAvailableInRishikeshSection from "@/components/course-rishikesh/AlsoAvailableInRishikeshSection";
 import RishikeshCourseStudyGuide from "@/components/course-rishikesh/RishikeshCourseStudyGuide";
+import TrustBadgesRowVarkala from "@/components/course-varkala/TrustBadgesRow";
+import WhyVarkalaSection from "@/components/course-varkala/WhyVarkalaSection";
+import YogaGarhiDifferenceVarkalaSection from "@/components/course-varkala/YogaGarhiDifferenceVarkalaSection";
+import HowToReachVarkalaSection from "@/components/course-varkala/HowToReachVarkalaSection";
+import BestTimeToVisitVarkalaSection from "@/components/course-varkala/BestTimeToVisitVarkalaSection";
+import VarkalaFAQSection from "@/components/course-varkala/VarkalaFAQSection";
+import CompareVarkalaCoursesTable from "@/components/course-varkala/CompareVarkalaCoursesTable";
+import ExploreMoreVarkalaCoursesSection from "@/components/course-varkala/ExploreMoreVarkalaCoursesSection";
+import AlsoAvailableInVarkalaSection from "@/components/course-varkala/AlsoAvailableInVarkalaSection";
+import VarkalaCourseStudyGuide from "@/components/course-varkala/VarkalaCourseStudyGuide";
 
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 const preYttcOnline = getCloudinaryImage("pre-yttc-online.png");
@@ -623,6 +633,7 @@ export default function CoursePageTemplate({
   const startingPrice = pricingConfig.heroStartingPrice || pricingConfig.tuition || pricingConfig.triple;
   const datesPricing = pricingConfig.datesCard || pricingConfig;
   const isRishikesh = courseKey?.includes("rishikesh") || namespace?.includes("rishikesh");
+  const isVarkala = courseKey?.includes("varkala") || namespace?.includes("varkala");
 
   const localizedWorkshops = useMemo(() => {
     try {
@@ -1387,12 +1398,18 @@ export default function CoursePageTemplate({
           </div>
         </section>
 
-        {/* ===== WHY YOGAGARHI HIGHLIGHT BOX & RISHIKESH SECTIONS ===== */}
+        {/* ===== WHY YOGAGARHI HIGHLIGHT BOX & RISHIKESH / VARKALA SECTIONS ===== */}
         {isRishikesh ? (
           <>
             <TrustBadgesRow />
             <WhyRishikeshSection />
             <YogaGarhiDifferenceSection />
+          </>
+        ) : isVarkala ? (
+          <>
+            <TrustBadgesRowVarkala />
+            <WhyVarkalaSection />
+            <YogaGarhiDifferenceVarkalaSection />
           </>
         ) : (
           courseKey !== "200-hour-rishikesh" && (
@@ -1410,7 +1427,7 @@ export default function CoursePageTemplate({
         )}
 
         {/* ===== REAL STUDENT VIDEO REVIEWS & BOOK CALL (HIGH CONVERSION) ===== */}
-        {!isRishikesh && (
+        {!isRishikesh && !isVarkala && (
           <TopVideoReviewsSection
             onBookCall={() => {
               trackEvent("video_call_click", { course: courseKey, section: "top_video_reviews" });
@@ -1701,6 +1718,7 @@ export default function CoursePageTemplate({
 
             {/* Comprehensive Curriculum & Academic Modules */}
             {isRishikesh && <RishikeshCourseStudyGuide />}
+            {isVarkala && <VarkalaCourseStudyGuide />}
 
             <div className="text-center mt-12">
               <Dialog open={showSyllabusDialog} onOpenChange={setShowSyllabusDialog}>
@@ -4339,6 +4357,16 @@ export default function CoursePageTemplate({
             <RishikeshFAQSection courseHours={courseKey?.includes("100") ? "100" : courseKey?.includes("300") ? "300" : "200"} />
             <CompareCoursesTable />
             <ExploreMoreCoursesSection currentCourse={courseKey?.includes("100") ? "100-rishikesh" : courseKey?.includes("300") ? "300-rishikesh" : "200-rishikesh"} />
+            <AlsoAvailableInVarkalaSection />
+          </>
+        ) : isVarkala ? (
+          <>
+            <HowToReachVarkalaSection />
+            <BestTimeToVisitVarkalaSection />
+            <VarkalaFAQSection courseHours={courseKey?.includes("100") ? "100" : courseKey?.includes("300") ? "300" : "200"} />
+            <CompareVarkalaCoursesTable />
+            <ExploreMoreVarkalaCoursesSection currentCourse={courseKey?.includes("100") ? "100-varkala" : courseKey?.includes("300") ? "300-varkala" : "200-varkala"} />
+            <AlsoAvailableInRishikeshSection />
           </>
         ) : (
           <>
@@ -4397,8 +4425,9 @@ export default function CoursePageTemplate({
               <CourseFAQSection namespace={namespace} />
             )}
 
-            {/* ===== ALSO AVAILABLE IN RISHIKESH ===== */}
+            {/* ===== ALSO AVAILABLE IN RISHIKESH & VARKALA ===== */}
             <AlsoAvailableInRishikeshSection />
+            <AlsoAvailableInVarkalaSection />
           </>
         )}
 

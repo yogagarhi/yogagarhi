@@ -48,7 +48,8 @@
     "retreatVarkala": "Varkala",
     "retreat3Days": "Retret 3 Hari",
     "retreat7Days": "Retret 7 Hari",
-    "retreat14Days": "Retret 14 Hari"
+    "retreat14Days": "Retret 14 Hari",
+    "varkalaLocation": "Varkala, Kerala"
   },
   "promo": {
     "title": "Promo Tahun Baru",
@@ -6172,6 +6173,2316 @@
     "howToReachTitle": "How to Reach YogaGarhi Rishikesh",
     "bestTimeTitle": "Best Time to Visit Rishikesh for Yoga Training",
     "compareCoursesTitle": "Compare Rishikesh Yoga Teacher Trainings",
+    "exploreMoreTitle": "Explore More Yoga Teacher Training Courses"
+  },
+  "course100Varkala": {
+    "metaTitle": "Pelatihan Guru Yoga 100 Jam di Varkala | YTTC Singkat India",
+    "metaDesc": "Pelatihan residensial 100 jam di Varkala, India. Guru master Himalaya asli, ashram di tepi Sungai Gangga suci, dan sertifikasi resmi.",
+    "heroTitle": "Pelatihan Guru Yoga 100 Jam di Varkala",
+    "heroSub": "Rasakan yoga autentik di tepi Sungai Gangga yang suci. Pelatihan dasar 12 hari di Varkala, India.",
+    "quickInfo": {
+      "course": "Kursus",
+      "courseVal": "YTTC 100 Jam Varkala",
+      "duration": "Durasi",
+      "durationVal": "12 Days",
+      "style": "Gaya",
+      "styleVal": "Yoga Multi-Style",
+      "level": "Tingkat",
+      "levelVal": "Pemula hingga Menengah",
+      "certification": "Sertifikasi",
+      "certificationVal": "Sertifikat Yoga Alliance",
+      "startingFrom": "$1,149 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Hemat",
+      "earlyBirdDiscount": "Hemat $200 Diskon Early Bird"
+    },
+    "highlights": {
+      "smallGroups": "Grup kecil (maks 8–10)",
+      "smallGroupsSub": "Perhatian pribadi",
+      "preYttc": "Dukungan sebelum kursus",
+      "preYttcSub": "Persiapan & bimbingan",
+      "mentorship": "Mentoring pasca lulus",
+      "mentorshipSub": "1 tahun dukungan berkelanjutan",
+      "goodieBag": "Paket bingkisan gratis",
+      "goodieBagSub": "Perlengkapan yoga"
+    },
+    "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
+    "watchVideoStories": "Tonton video cerita dan testimoni siswa",
+    "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
+    "whyYogaGarhiBox": {
+      "badge": "Mengapa Memilih YogaGarhi",
+      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
+      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
+      "p1Title": "Maksimal 8–10 Siswa per Angkatan",
+      "p1Highlight": "Fokus Personal",
+      "p1Desc": "Jumlah siswa terbatas memastikan arahan personal, koreksi postur langsung, dan perhatian penuh dari guru.",
+      "p2Title": "Pelatihan Online Pra-TTC Gratis",
+      "p2Highlight": "Siap Percaya Diri",
+      "p2Desc": "Kursus persiapan cuma-cuma sebelum tiba di Bali untuk membangun kekuatan fisik dan wawasan dasar.",
+      "p3Title": "Mentoring 1 Tahun Pasca Kelulusan",
+      "p3Highlight": "Komunitas Berkelanjutan",
+      "p3Desc": "Bimbingan lanjutan, saran penyusunan sekuens kelas, dan dukungan karier jauh setelah masa pelatihan usai.",
+      "p4Title": "Mengulang Kursus Gratis Seumur Hidup",
+      "p4Highlight": "Kembali Tanpa Biaya",
+      "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
+      "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
+      "saveEarlyBird": "Hemat $300 Diskon Early Bird",
+      "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
+      "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
+      "checkAvailability": "Cek Ketersediaan",
+      "bookFreeCall": "Pesan Panggilan Video Gratis"
+    },
+    "hoursStructure": {
+      "badge": "Jam Pelatihan",
+      "heading": "Struktur Jam Belajar 200 Jam",
+      "sub": "Pembagian seimbang antara jam tatap muka langsung, penjajaran praktik, dan studi mandiri sesuai ketentuan Yoga Alliance.",
+      "contactHours": "Jam Tatap Muka",
+      "contactHoursDesc": "Instruksi langsung bersama guru utama dalam asana, penjajaran, anatomi, dan filosofi.",
+      "selfStudy": "Studi Mandiri & Praktik Mengajar",
+      "selfStudyDesc": "Bacaan terarah, jurnal, praktik bersama rekan, dan perancangan sekuens kelas.",
+      "totalCert": "Total Sertifikasi",
+      "totalCertDesc": "Memenuhi dan melampaui standar Yoga Alliance RYT 200.",
+      "hoursUnit": "Jam"
+    },
+    "syllabus": {
+      "heading": "Kurikulum & Silabus",
+      "sub": "Kurikulum terpadu dan seimbang yang menyatukan naskah yoga klasik dengan pemahaman biomekanik modern.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditasi",
+      "tab4": "Anatomi & Fisiologi",
+      "tab5": "Filosofi & Etika",
+      "tapMore": "Ketuk untuk melihat lebih banyak",
+      "hoverMore": "Arahkan kursor untuk melihat lebih banyak",
+      "takeaway": "Pemahaman Utama",
+      "carryHome": "Untuk Dibawa Pulang",
+      "careerImpact": "Dampak Karier:",
+      "cards": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "content": "Rangkaian lengkap seri primer Ashtanga Yoga. Peningkatan bertahap melalui Surya Namaskar A & B, postur berdiri, postur duduk, dan latihan gaya Mysore."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Seri Pawanmuktasana, variasi Surya Namaskar, postur berdiri dan duduk, lengkungan ke belakang, lipatan ke depan, inversi, dan penyusunan urutan kelas."
+        },
+        {
+          "title": "Filosofi Yoga",
+          "content": "Pengantar Yoga Sutra Patanjali, delapan pilar Ashtanga Yoga, Nadis, Cakra, Pancha-Vayus, Panchakoshas, Triguna, serta kisah teladan para yogi agung."
+        },
+        {
+          "title": "Pranayama & Pernapasan",
+          "content": "Teknik pernapasan lengkap: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, dan Sheetkari."
+        },
+        {
+          "title": "Anatomi & Fisiologi",
+          "content": "Bidang gerak tubuh, perlindungan persendian, anatomi pergelangan kaki, lutut, tulang belakang, bahu, mekanisme pernapasan, dan sistem saraf."
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "content": "Penyusunan urutan kelas, penyesuaian postur, pengelolaan berbagai tingkatan siswa, teknik intonasi suara, kesiapan mental, dan perencanaan kelas terstruktur."
+        },
+        {
+          "title": "Meditasi & Mantra",
+          "content": "Berbagai teknik meditasi, pelafalan mantra suci, Trataka, Meditasi Dinamis Osho, Nada Brahma, Antar Mouna, dan latihan keheningan batin."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga berbasis presisi anatomi menggunakan alat bantu seperti balok, tali, dan selimut guna mencapai keselarasan postur optimal serta mencegah cedera."
+        },
+        {
+          "title": "Prinsip Keselarasan",
+          "content": "Pondasi latihan yang aman: penataan sendi, pola aktivasi otot, dan biomekanika tubuh guna melindungi serta memperkuat fisik secara menyeluruh."
+        },
+        {
+          "title": "Bandhas (Kunci Energi)",
+          "content": "Kuasai Mula, Uddiyana, dan Jalandhara Bandha untuk mengalirkan energi prana, menguatkan inti tubuh, dan memperdalam kualitas meditasi."
+        },
+        {
+          "title": "Mudras (Gestur Suci)",
+          "content": "Gerakan suci tangan dan tubuh guna mengarahkan energi vital, mempertajam konsentrasi, serta terhubung dengan kesadaran yang lebih mendalam."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Rutinitas Harian di Ashram",
+      "sub": "Irama teratur yang memadukan latihan intensif, pendalaman filosofis, makanan sehat, dan waktu istirahat.",
+      "time1": "06:00",
+      "act1": "Bangun Pagi & Pembersihan Diri",
+      "time2": "06:30",
+      "act2": "Pranayama, Melantunkan Mantra & Meditasi",
+      "time3": "07:30",
+      "act3": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Sarapan Sattvik Bernutrisi",
+      "time5": "10:00",
+      "act5": "Filosofi Yoga & Studi Naskah Klasik",
+      "time6": "12:00",
+      "act6": "Makan Siang Sehat & Istirahat",
+      "time7": "15:00",
+      "act7": "Anatomi Terapan & Fisiologi",
+      "time8": "16:30",
+      "act8": "Metodologi Pengajaran & Klinik Penjajaran",
+      "time9": "18:00",
+      "act9": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "time10": "19:30",
+      "act10": "Makan Malam Sattvik",
+      "time11": "21:00",
+      "act11": "Belajar Mandiri, Keheningan & Waktu Istirahat",
+      "beyondTheMat": "Di Luar Matras",
+      "badge": "Jadwal Harian",
+      "wakeUp": "Bangun Pagi & Pembersihan Diri",
+      "morningPranayama": "Pranayama & Meditasi",
+      "morningAsana": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "breakfast": "Sarapan Sehat Sattvik",
+      "philosophyClass": "Filosofi Yoga & Studi Kitab Suci",
+      "lunch": "Makan Siang Bernutrisi & Istirahat",
+      "anatomyClass": "Anatomi Terapan & Biomekanik",
+      "methodologyClass": "Metodologi Mengajar & Klinik Penjajaran",
+      "eveningAsana": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "dinner": "Makan Malam Sattvik",
+      "selfStudy": "Belajar Mandiri, Keheningan & Jam Tidur"
+    },
+    "inclusions": {
+      "heading": "Apa yang Termasuk dalam Pelatihan Anda",
+      "sub": "Semua fasilitas disiapkan untuk memastikan masa tinggal yang tenang dan transformatif.",
+      "incAccom": "Akomodasi ashram selama 23 malam",
+      "incMeals": "3 kali makan bergizi sattvik (vegetarian/vegan) segar setiap hari",
+      "incCert": "Sertifikat Yoga Alliance RYT 200 setelah kelulusan",
+      "incManuals": "Buku panduan kursus resmi, buku catatan, dan bahan ajar",
+      "incKit": "Matras yoga dan alat peraga latihan disediakan di ashram",
+      "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
+      "incCeremonies": "Upacara api pembukaan dan penutupan tradisional (Agni Hotra)",
+      "incPickup": "Penjemputan bandara dari Denpasar (DPS) pada tanggal kedatangan resmi",
+      "incPre": "Modul persiapan Pra-TTC online cuma-cuma",
+      "incRepeat": "Hak mengulang kursus seumur hidup (bebas biaya kursus)",
+      "notIncHeading": "Tidak Termasuk",
+      "notIncFlights": "Tiket penerbangan internasional dan domestik",
+      "notIncVisa": "Biaya visa Indonesia",
+      "notIncInsurance": "Asuransi perjalanan dan kesehatan pribadi"
+    },
+    "pricing": {
+      "heading": "Paket Akomodasi & Harga",
+      "sub": "Harga transparan dan all-inclusive tanpa ada biaya tersembunyi.",
+      "tuitionOnly": "Paket Hanya Biaya Kursus",
+      "tuitionOnlyDesc": "Biaya kursus, semua makanan, materi belajar, dan sertifikat. Tinggal di luar ashram.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC luas dibagi bersama dua rekan siswa, kamar mandi dalam, balkon pribadi.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD",
+      "earlyBirdPrice": "Harga Early Bird",
+      "tuitionFees": "Pilihan Kamar & Biaya (100 Jam Varkala)",
+      "tripleSharing": "Kamar Berbagi Bertiga ($1.149)",
+      "doubleSharing": "Kamar Berbagi Berdua ($1.349)",
+      "privateRoom": "Kamar Privat ($1.649)",
+      "choosePackage": "Pilih Paket Anda",
+      "reserveSpot": "Amankan Tempat Anda",
+      "saveUSD": "Hemat $300 USD",
+      "residentialDuration": "Pelatihan yoga residensial 12 hari di Varkala, India"
+    },
+    "ethics": {
+      "codeOfConduct": "Kode Etik",
+      "refundCancellation": "Pengembalian Dana & Pembatalan",
+      "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+    },
+    "faqsHeading": "Pertanyaan yang Sering Diajukan",
+    "faqs": [
+      {
+        "question": "What is the cost of the 100-Hour Yoga Teacher Training in Varkala?",
+        "answer": "The 100-Hour Yoga Teacher Training in Varkala starts from $599 for tuition-only, $799 for a shared quad room, $999 for a double room, and $1,199 for a private room with attached private bath. All residential packages include your ashram room in Varkala Cliff, three daily Sattvic meals, study materials, sacred Arabian Sea Aarti excursions, and airport transfer support."
+      },
+      {
+        "question": "Is the 100-Hour course suitable for beginners?",
+        "answer": "Yes, the 100-Hour course is specifically crafted for beginner yogis, busy professionals, and dedicated practitioners who wish to experience authentic ashram life and deepen their personal practice without committing to the full 28-day schedule. No prior certifications or intense flexibility are required."
+      },
+      {
+        "question": "Can I convert my 100-Hour training into a 200-Hour RYT later?",
+        "answer": "Yes! The 100-Hour curriculum covers the complete first half (Part 1) of our full 200-Hour syllabus. You can complete your second 100 hours within 12 to 24 months at either our Varkala or Bali ashram to receive your full Yoga Alliance RYT 200 certification without repeating any modules."
+      },
+      {
+        "question": "What certification do I receive upon finishing the 100-Hour course?",
+        "answer": "Upon successful completion of the 12-day program, you will receive a YogaGarhi 100-Hour Foundation Yoga Immersion Certificate. While the 100-Hour certificate does not grant full RYT 200 status on its own, it provides certified continuing education and official academic credits toward your complete 200-Hour credential."
+      },
+      {
+        "question": "How long is the 100-Hour training?",
+        "answer": "The 100-Hour course runs over 12 days and 11 nights, starting on the 1st of every month. The program provides an intensive, transformative experience covering traditional Hatha, Ashtanga, pranayama, meditation, philosophy, and basic anatomy."
+      },
+      {
+        "question": "Is Varkala safe for solo travelers?",
+        "answer": "Varkala is one of the safest pilgrimage towns in northern India. Our ashram is situated in the peaceful, elevated sanctuary of Varkala Cliff, offering 24/7 security, dedicated student care, and a safe, nurturing environment for solo travelers from across the globe."
+      },
+      {
+        "question": "How do I reach the ashram from Delhi?",
+        "answer": "You can take a 45-minute direct flight from Delhi (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Haridwar (4.5 hours). Private taxi pickups directly from Delhi Airport to our ashram gate can also be arranged."
+      },
+      {
+        "question": "Can I pay in installments?",
+        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+      },
+      {
+        "question": "What is the refund policy?",
+        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months, provided you notify us at least 14 days in advance."
+      },
+      {
+        "question": "What is the best time of year to visit Varkala?",
+        "answer": "October through March offers the most pleasant weather (15–25°C) with clear skies and brisk morning mountain air. April to June is warmer with vibrant river activities, while July to September brings serene monsoon greenery and deep contemplative study."
+      },
+      {
+        "question": "What meals are provided during the course?",
+        "answer": "You will enjoy three freshly prepared, organic vegetarian Sattvic meals daily, tailored to Ayurvedic guidelines to nourish your body, calm the nervous system, and support rigorous daily physical asana practice."
+      },
+      {
+        "question": "What is the batch size for the 100-Hour course?",
+        "answer": "We maintain an intimate batch size of 8–10 students to guarantee personalized attention, postural adjustments, and meaningful direct engagement with our experienced Himalayan masters."
+      },
+      {
+        "question": "Do you provide airport pickup?",
+        "answer": "Yes, our team can arrange direct airport pickup from Dehradun Jolly Grant Airport (DED) or New Delhi International Airport (DEL) right to our ashram doorstep in Varkala Cliff."
+      }
+    ],
+    "hero": {
+      "badge": "Sertifikasi Yoga Alliance RYT 200",
+      "h1": "Pelatihan Guru Yoga 100 Jam di Varkala",
+      "sub": "Perjalanan yoga autentik 12 hari di Varkala, Ibu Kota Yoga Dunia. Belajar dari guru-guru master tradisional di tepi Sungai Gangga.",
+      "quickDuration": "12 Hari",
+      "quickLevel": "Pemula hingga Menengah",
+      "quickCert": "Sertifikat Yoga Alliance",
+      "quickLang": "Bahasa Inggris",
+      "quickBatch": "8–10 Siswa",
+      "quickLocation": "Varkala Cliff, Varkala",
+      "btnReserve": "Pesan Tempat Anda",
+      "btnBrochure": "Unduh Silabus",
+      "btnCounselor": "Konsultasi"
+    },
+    "overview": {
+      "heading": "Selamat Datang di YogaGarhi Varkala",
+      "story": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah kursus menyeluruh tingkat pemula hingga menengah bagi siapa saja yang ingin menjadi guru yoga percaya diri atau memperdalam yoga dalam kehidupan sehari-hari. YogaGarhi berada di Gianyar, sekitar 15 km dari Ubud, menawarkan ketenangan alam pedesaan. Selama kursus, Anda mempraktikkan asana setiap hari, mempelajari anatomi penjajaran, pranayama, meditasi, filosofi yoga, dan metode mengajar.",
+      "p1": "Terletak di kaki bukit Himalaya di tepi Sungai Gangga, pelatihan 100 jam di Varkala menawarkan pengenalan mendalam tentang kehidupan ashram.",
+      "p2": "Di bawah bimbingan guru-guru India berpengalaman, Anda mempelajari Hatha, Ashtanga, pranayama, meditasi, dan menghadiri ritual harian Arabian Sea Aarti."
+    },
+    "curriculum": {
+      "badge": "Modul Kurikulum",
+      "heading": "Rincian Modul & Topik Pembelajaran",
+      "sub": "Klik modul mana saja di bawah ini untuk menjelajahi rincian topik, teknik praktik, dan landasan teorinya.",
+      "modules": {
+        "asana": "Praktik Asana & Penjajaran",
+        "pranayama": "Pranayama & Energi Halus",
+        "philosophy": "Filosofi Yoga & Gaya Hidup",
+        "anatomy": "Anatomi dan Fisiologi",
+        "methodology": "Metodologi Pengajaran & Praktik",
+        "meditation": "Meditasi & Kesadaran Penuh",
+        "iyengar": "Dasar Yoga Iyengar & Alat Bantu",
+        "vinyasa": "Sekuensing Vinyasa Flow",
+        "hatha": "Hatha Yoga Klasik Tradisional"
+      },
+      "detailedModules": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "items": [
+            "Seri primer lengkap Ashtanga yoga oleh K. Pattabhi Jois",
+            "Minggu 1: Pengenalan & Surya Namaskar A & B",
+            "Minggu 2: Postur berdiri & penggunaan alat peraga yoga",
+            "Minggu 3: Postur duduk & postur penutup",
+            "Minggu 4: Gaya Mysore & praktik mengajar"
+          ]
+        },
+        {
+          "title": "Filosofi Yoga",
+          "items": [
+            "Yoga Sutra lengkap karya Patanjali",
+            "Delapan anggota Ashtanga Yoga",
+            "Pancha-Vayu & Panchakosha",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Pengantar Weda",
+            "Kisah inspiratif para yogi terkemuka"
+          ]
+        },
+        {
+          "title": "Pranayama & Praktik Pernapasan",
+          "items": [
+            "Teknik pranayama lengkap",
+            "Enam praktik pembersihan Shatkarma",
+            "Pernapasan tingkat lanjut: Sheetali, Sheetkari",
+            "Kumbhaka (menahan napas)",
+            "Integrasi selaras dengan latihan asana"
+          ]
+        },
+        {
+          "title": "Lantunan Suara Suci & Mantra",
+          "items": [
+            "Koleksi lengkap mantra tradisional",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Sloka untuk Resi Patanjali)",
+            "Latihan melantunkan mantra harian"
+          ]
+        },
+        {
+          "title": "Anatomi dan Fisiologi",
+          "items": [
+            "Studi mendalam tentang sistem tubuh manusia",
+            "Fisiologi otot & persendian",
+            "Sistem pernapasan & saraf",
+            "Pola makan & sistem pencernaan",
+            "Lokakarya fungsional asana"
+          ]
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "items": [
+            "Perancangan urutan kelas yang komprehensif",
+            "Prinsip demonstrasi & pengamatan",
+            "Kesiapan mental & emosional pengajar",
+            "Perencanaan struktur kelas bertahap",
+            "Praktik mengajar & evaluasi berkala"
+          ]
+        },
+        {
+          "title": "Meditasi & Bandha",
+          "items": [
+            "Meditasi Dinamis Osho",
+            "Meditasi Nada Brahma",
+            "Antar Mouna & Ajapa Japa",
+            "Penguasaan empat Bandha utama",
+            "Penyelarasan dengan asana & pranayama"
+          ]
+        },
+        {
+          "title": "Seni Penyelarasan & Penyesuaian",
+          "items": [
+            "Biomekanika dan penyesuaian fungsional postur klasik",
+            "Petunjuk verbal dan bantuan sentuhan langsung yang aman",
+            "Memahami variasi anatomi individu",
+            "Strategi modifikasi menggunakan balok dan tali yoga"
+          ]
+        },
+        {
+          "title": "Praktik Klasik Hatha Yoga",
+          "items": [
+            "Pendalaman prinsip Hatha klasik dan penahanan postur",
+            "Penyusunan urutan Hatha: pemanasan, postur puncak, dan penyeimbang",
+            "Menyeimbangkan energi matahari (Ha) dan bulan (Tha)",
+            "Penerapan Bandha dan Mudra dalam postur statis"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Presisi Gerak",
+          "items": [
+            "Penyelarasan metodis dengan balok, tali, dan selimut",
+            "Penempatan geometris panggul, tulang belakang, dan bahu",
+            "Persiapan postur terbalik yang aman",
+            "Rangkaian restoratif dengan alat bantu"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Gerak Dinamis",
+          "items": [
+            "Struktur urutan cerdas: pemanasan, puncak, dan pendinginan",
+            "Transisi mengalir dan lompatan berirama napas",
+            "Merancang kelas tematik sesuai tingkat kemampuan",
+            "Mengatur tempo dan menjaga energi ruangan"
+          ]
+        },
+        {
+          "title": "Kelas Tambahan & Pengalaman Khas",
+          "items": [
+            "Sesi Sound Healing (terapi suara)",
+            "Latihan yoga di pantai Bali",
+            "Yin Yoga & Acro Yoga",
+            "Dasar-dasar Ayurveda",
+            "Upacara api suci Agni Hotra"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Akomodasi & Pilihan Paket",
+      "sub": "Tarif transparan tanpa biaya tambahan tak terduga.",
+      "tuitionOnly": "Paket Hanya Biaya Kursus",
+      "tuitionOnlyDesc": "Pengajaran, makanan, materi studi, dan ijazah. Akomodasi di luar.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC untuk tiga orang dengan kamar mandi dalam dan balkon.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar ber-AC untuk dua orang dengan kamar mandi dan pemandangan asri.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Kamar tunggal ber-AC dengan kasur king, kamar mandi dalam, dan teras pribadi.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD"
+    },
+    "tourCall": {
+      "heading": "Ingin Melihat Sekolah Sebelum Mendaftar?",
+      "sub": "Bergabunglah dalam panggilan video langsung untuk tur pribadi mengelilingi kampus, ruang kelas, shala yoga, dan kamar penginapan.",
+      "cta": "Jadwalkan Panggilan. Lihat Sekolah. Lihat Kamar Anda. Lihat Aula Yoga.",
+      "bookCallLive": "Lihat suasana sekolah, kamar Anda, dan shala yoga secara langsung. Masukkan detail Anda di bawah ini untuk penjadwalan."
+    },
+    "takeaway": {
+      "badge": "Manfaat Yang Anda Bawa Pulang",
+      "heading": "Yang Akan Anda",
+      "headingItalic": "Bawa Pulang",
+      "sub": "Lebih dari sekadar sertifikat fisik, Anda pulang dengan perspektif baru, koneksi batin yang mendalam, dan keterampilan mengajar yang nyata.",
+      "careerImpactTitle": "Peluang Karier:",
+      "careerImpactDesc": "Setelah menyelesaikan Pelatihan Guru Yoga 200 Jam, Anda dapat mulai mengajar yoga di mana saja di dunia: studio, kelas privat daring, retret yoga, atau membangun komunitas mandiri.",
+      "card1Title": "Sertifikasi Global",
+      "card1Desc": "Yoga Alliance RYT-200 untuk memulai karier mengajar di negara mana pun.",
+      "card2Title": "Penguasaan Praktik",
+      "card2Desc": "Bimbingan mendalam dalam Hatha, Vinyasa, Ashtanga, dan Iyengar.",
+      "card3Title": "Keselamatan & Anatomi",
+      "card3Desc": "Pelajari cara mengajar dan berlatih dengan aman tanpa risiko cedera.",
+      "card4Title": "Kedalaman Spiritual",
+      "card4Desc": "Selami makna Mantra, meditasi, dan filosofi yoga klasik.",
+      "card5Title": "Metodologi Mengajar",
+      "card5Desc": "Keterampilan praktis dalam memandu kelas, koreksi postur, dan menginspirasi murid.",
+      "card6Title": "Persahabatan Sejati",
+      "card6Desc": "Jalinan persaudaraan seumur hidup dengan komunitas yoga internasional."
+    },
+    "timeline": {
+      "prepTitle": "Persiapan dimulai sejak pendaftaran",
+      "prepDesc": "Mulailah perjalanan Anda dengan modul persiapan dan bimbingan guru secara daring.",
+      "datesTitle": "Pelatihan: Tanggal 1 – 24 setiap bulan",
+      "datesDesc": "Program imersif 24 hari yang diselenggarakan setiap bulan di Bali.",
+      "supportTitle": "Dukungan komunitas seumur hidup di YogaGarhi",
+      "supportDesc": "Selalu terhubung dengan keluarga besar yoga dunia kami."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Akomodasi",
+      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "feat1": "10 air terjun indah dalam radius 10 km",
+      "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
+      "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
+      "feat4": "Hanya berjarak 15 km dari pusat keramaian Ubud",
+      "glimpses": "Potret Suasana Menginap Anda",
+      "allRooms": "Semua Kamar Dilengkapi",
+      "wifi": "Wi-Fi Cepat Gratis",
+      "hotWater": "Air Hangat",
+      "acFan": "AC / Kipas Angin",
+      "cleaning": "Pembersihan Harian",
+      "bed1": "tempat tidur",
+      "bedsMore": "tempat tidur",
+      "courseOnly": "Hanya Kursus",
+      "mostPopular": "Paling Diminati",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Di Luar Matras",
+      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
+      "sub": "Immerse yourself in Varkala's sacred spiritual heritage through transformative Himalayan excursions"
+    },
+    "prakritiResearch": {
+      "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
+      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "card1Title": "Pertanyaan Mendasar",
+      "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
+      "card2Title": "Penyelidikan Mendalam",
+      "card2Text": "Hal ini melahirkan riset mendalam pada naskah yoga klasik, Ayurveda, dan pengalaman nyata bersama siswa. Jawabannya nyata: setiap manusia terlahir dengan Prakriti yang unik.",
+      "card3Title": "Cetak Biru Energi",
+      "card3Text": "Prakriti membentuk fisik, pikiran, emosi, dan sistem saraf. Sebagian butuh ketenangan, sebagian butuh gerak dinamis, dan sebagian butuh keheningan. Gaya seragam bisa memicu ketidakseimbangan.",
+      "card4Title": "Kualitas Latihan",
+      "card4Text": "Lebih dari sekadar nama aliran yoga, yang terpenting adalah bagaimana Anda berlatih: bagaimana sistem saraf didekati, nafas dipandu, dan Dosha Anda dirawat tanpa dipaksakan.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Dari kesadaran ini lahirlah Shiv–Shakti Sadhana, pendekatan seimbang yang menyelaraskan stabilitas dan aliran energi. Asana di sini menjadi fondasi kekuatan yang membumi.",
+      "card6Title": "Kembali ke Keseimbangan",
+      "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
+      "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
+      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+    },
+    "ethicsExtra": {
+      "code1": "Hadir tepat waktu",
+      "code2": "Bebas alkohol dan rokok",
+      "code3": "Makanan khusus vegetarian",
+      "code4": "Menjaga keheningan di kelas",
+      "code5": "Pakaian sopan dan pantas",
+      "code6": "Saling menghargai sesama",
+      "code7": "Dilarang membawa ponsel ke dalam kelas",
+      "code8": "Wajib mengikuti seluruh rangkaian kelas",
+      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
+      "refund2": "Dapat dialihkan ke peserta lain",
+      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
+      "refund4": "Kebijakan hari percobaan",
+      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "reviewsHeading": "Apa Kata Para Siswa Kami",
+      "viewAllGoogle": "Lihat semua ulasan di Google",
+      "basedOnReviews": "Berdasarkan",
+      "openGoogleMaps": "Buka di Google Maps",
+      "open24Hours": "Buka 24 jam"
+    },
+    "sunday": {
+      "note": "Hari Minggu adalah hari istirahat penuh untuk relaksasi, belajar mandiri, atau mengikuti wisata opsional.",
+      "cta": "Jelajahi Hari Minggu di Bali"
+    },
+    "tapHover": {
+      "tap": "Ketuk untuk melihat detail",
+      "hover": "Arahkan kursor untuk melihat detail"
+    },
+    "inclusionsList": [
+      "Clean and comfortable ashram room in Varkala Cliff",
+      "Attached private bathroom with 24/7 hot water",
+      "Air conditioning / heating & ceiling fan",
+      "Free high-speed Wi-Fi access",
+      "Three healthy organic vegetarian meals daily",
+      "Herbal teas and purified drinking water",
+      "Study material (manuals, notebooks, pens)",
+      "Yoga mats and props provided",
+      "Sacred Arabian Sea Aarti & Himalayan excursions",
+      "Airport pickup assistance (Dehradun DED airport)",
+      "24/7 on-campus ashram support team",
+      "Yoga Alliance accredited RYT certification",
+      "Rejuvenating Ayurvedic Abhyanga massage",
+      "Arabian Sea Aarti ceremony at Parmarth Niketan",
+      "Kunjapuri Himalayan sunrise meditation trek",
+      "Vashistha Cave meditation excursion",
+      "Pre-TTC online preparation modules",
+      "Arm balance & alignment workshops",
+      "Ayurveda lifestyle & nutrition workshop",
+      "Lifetime free course re-attendance included",
+      "Yogagarhi 35+ creative sequencing book"
+    ],
+    "exclusionsList": [
+      "Tiket penerbangan dan transportasi pribadi",
+      "Biaya visa kunjungan dan asuransi perjalanan",
+      "Antar kembali ke bandara saat kepulangan",
+      "Layanan cuci pakaian (laundry)",
+      "Belanja pribadi dan aktivitas tambahan opsional"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Multi-Style Yoga Mastery",
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
+      },
+      {
+        "title": "Yoga Alliance RYT Certification",
+        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
+      },
+      {
+        "title": "Peaceful Varkala Cliff Ashram Surroundings",
+        "description": "Practice in the serene Himalayan foothills overlooking the sacred Arabian Sea away from tourist crowds."
+      },
+      {
+        "title": "Sacred Spiritual Excursions",
+        "description": "Explore holy Arabian Sea river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
+      },
+      {
+        "title": "Small Batch Sizes (8–10 Max)",
+        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
+      },
+      {
+        "title": "Supportive Ashram Community",
+        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
+      },
+      {
+        "title": "Ayurvedic Abhyanga Massage",
+        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
+      },
+      {
+        "title": "Arabian Sea Aarti & Vedic Chanting",
+        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Arabian Sea."
+      },
+      {
+        "title": "Sattvic Ayurvedic Cuisine",
+        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
+      },
+      {
+        "title": "Meditation & Yoga Nidra",
+        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
+      },
+      {
+        "title": "E-RYT 500 Master Instructors",
+        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
+      },
+      {
+        "title": "Living Yogic Philosophy",
+        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Lokakarya Ayurveda & kelas memasak sehat",
+        "description": "Pahami tipe tubuh alami Anda (Prakriti) dan cara menyeimbangkan dosha melalui pola makan dan hidup sehat."
+      },
+      {
+        "title": "Penguasaan arm balance",
+        "description": "Bangun kekuatan, teknik, dan rasa percaya diri untuk menguasai pose keseimbangan lengan secara bertahap."
+      },
+      {
+        "title": "Lokakarya Handstand (handstand mastery)",
+        "description": "Atasi rasa takut dan temukan titik keseimbangan dengan latihan terstruktur di dinding dan berpasangan."
+      },
+      {
+        "title": "Yin Yoga & peregangan dalam",
+        "description": "Jangkau jaringan ikat fasia yang dalam melalui pose pasif berdurasi panjang guna melepas ketegangan tubuh."
+      },
+      {
+        "title": "Sesi relaksasi suara & Tibetan singing bowl",
+        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Buka ruang hati Anda lewat nyanyian lantunan mantra suci dan kirtan untuk terhubung dengan esensi yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Parmarth Niketan & Triveni Ghat Arabian Sea Aarti",
+        "description": "Witness the sacred evening Arabian Sea Aarti on the holy banks of the Arabian Sea — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
+      },
+      {
+        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
+        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
+      },
+      {
+        "title": "Vashistha Cave Meditation & White Sand Arabian Sea Beach",
+        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Arabian Sea, renowned for centuries of sadhana."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Breakfast",
+        "time": "9:15 AM",
+        "items": [
+          "Fresh seasonal Himalayan fruits & papaya",
+          "Nutritious Ayurvedic grain porridge & oats",
+          "Herbal digestive infusions & mountain chai",
+          "Sprouted moong & wholesome nuts"
+        ]
+      },
+      {
+        "meal": "Lunch",
+        "time": "12:00 PM",
+        "items": [
+          "Organic Himalayan khichdi & wholesome lentils",
+          "Freshly baked whole wheat rotis & basmati rice",
+          "Tridosha-balancing seasonal vegetable sabzi",
+          "Crisp organic garden salads"
+        ]
+      },
+      {
+        "meal": "Dinner",
+        "time": "7:30 PM",
+        "items": [
+          "Light nourishing Ayurvedic vegetable soups",
+          "Steamed seasonal mountain greens & lentils",
+          "Digestive herbal broths & wholesome grains",
+          "Golden turmeric almond milk"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Kisah Video Siswa Nyata",
+    "videoStoriesHeading": "Dengarkan Langsung dari Lulusan Kami di Bali",
+    "videoStoriesSub": "Refleksi nyata dari para praktisi yang menjalani perjalanan residensial di YogaGarhi.",
+    "verifiedGraduate": "Lulusan Terverifikasi",
+    "speakTeacherTitle": "Ingin berkonsultasi dengan guru utama terlebih dahulu?",
+    "speakTeacherDesc": "Panggilan video privat 15 menit untuk membahas tujuan, kamar, dan tanggal Anda.",
+    "helpfulGuidesBadge": "Baca Sebelum Berangkat",
+    "helpfulGuidesTitle": "Panduan Bermanfaat & Artikel Persiapan",
+    "helpfulGuidesDesc": "Pelajari panduan mendalam kami untuk mempersiapkan fisik, mental, dan perjalanan pelatihan Anda di Bali.",
+    "readArticle": "Baca Artikel",
+    "mindfulEating": "Sehari Pola Makan Berkesadaran",
+    "clickToCollapse": "Klik untuk menutup",
+    "clickToExpand": "Klik untuk membuka",
+    "caterDietsTitle": "Kami Melayani Semua Pola Makan",
+    "caterDietsDesc": "Beri tahu kami preferensi makanan Anda, dan kami akan menyiapkan segalanya",
+    "studentStories": {
+      "badge": "Kisah Siswa",
+      "heading": "Hati yang Berkelimpahan di YogaGarhi",
+      "sub": "\"Dengarkan langsung penuturan tulus dari para praktisi yang telah menjalani perjalanan transformasi ini.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Kanada",
+          "quote": "YogaGarhi memegang teguh esensi sejati yoga tradisional. Sejak awal, saya merasa dihargai dan didampingi secara personal. Para pengajar dengan tulus membimbing perkembangan Anda hingga menemukan karakter mengajar Anda sendiri.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turki",
+          "quote": "Sachin Ji adalah salah satu guru yoga paling berwawasan luas yang pernah mengajar saya. Meskipun saya seorang pemula, kesabaran dan dorongannya membuat saya memahami keselarasan asana dengan penuh percaya diri.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Pelatihan 200 jam di Bali benar-benar luar biasa. 🌺 Pengetahuan yang diajarkan sangat mendalam dan autentik. Para guru mengajar dari hati dengan penuh ketulusan dan kebijaksanaan layaknya keluarga besar yang hangat.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Kanada",
+          "quote": "Sachin Ji adalah pengajar dan pribadi yang luar biasa. Pelatihan di Bali ini menjadi awal perjalanan yoga berharga yang mengantarkan saya percaya diri mengajar di berbagai penjuru dunia.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Jerman",
+          "quote": "Saya sangat mengagumi ketenangan, keramahan, dan kehangatan Sachin Ji. Beliau sangat berilmu dan senantiasa meluangkan waktu membimbing setiap siswa secara teliti.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Pengalaman transformatif yang amat berkesan di YogaGarhi Bali. Kelompok belajar kecil memberikan manfaat maksimal, setiap koreksi postur terasa personal. Saya merasa sangat siap untuk mengajar.",
+          "avatarLetter": "N"
+        }
+      ]
+    },
+    "whyVarkalaTitle": "Why Choose Varkala for Yoga Teacher Training",
+    "differenceTitle": "The YogaGarhi Difference",
+    "howToReachTitle": "How to Reach YogaGarhi Varkala",
+    "bestTimeTitle": "Best Time to Visit Varkala for Yoga Training",
+    "compareCoursesTitle": "Compare Varkala Yoga Teacher Trainings",
+    "exploreMoreTitle": "Explore More Yoga Teacher Training Courses"
+  },
+  "course200Varkala": {
+    "metaTitle": "Pelatihan Guru Yoga 200 Jam di Varkala | RYT 200 India",
+    "metaDesc": "Kuasai yoga autentik dengan pelatihan 200 jam di Varkala. Kursus residensial bersertifikat Yoga Alliance RYT 200 di tepi Sungai Gangga.",
+    "heroTitle": "Pelatihan Guru Yoga 200 Jam di Varkala",
+    "heroSub": "Pelatihan residensial 24 hari bersertifikasi Yoga Alliance RYT 200 di Ibu Kota Yoga Dunia. Ashram Sungai Gangga mulai $999 USD.",
+    "quickInfo": {
+      "course": "Kursus",
+      "courseVal": "YTTC 200 Jam Varkala",
+      "duration": "Durasi",
+      "durationVal": "28 Hari",
+      "style": "Gaya",
+      "styleVal": "Yoga Multi-Style",
+      "level": "Tingkat",
+      "levelVal": "Pemula hingga Menengah",
+      "certification": "Sertifikasi",
+      "certificationVal": "Sertifikasi Yoga Alliance RYT 200",
+      "startingFrom": "$999 USD",
+      "startingFromVal": "$999 USD",
+      "save": "Hemat",
+      "earlyBirdDiscount": "Hemat $300 Diskon Early Bird"
+    },
+    "highlights": {
+      "smallGroups": "Grup kecil (maks 8–10)",
+      "smallGroupsSub": "Perhatian pribadi",
+      "preYttc": "Dukungan sebelum kursus",
+      "preYttcSub": "Persiapan & bimbingan",
+      "mentorship": "Mentoring pasca lulus",
+      "mentorshipSub": "1 tahun dukungan berkelanjutan",
+      "goodieBag": "Paket bingkisan gratis",
+      "goodieBagSub": "Perlengkapan yoga"
+    },
+    "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
+    "watchVideoStories": "Tonton video cerita dan testimoni siswa",
+    "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
+    "whyYogaGarhiBox": {
+      "badge": "Mengapa Memilih YogaGarhi",
+      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
+      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
+      "p1Title": "Maksimal 8–10 Siswa per Angkatan",
+      "p1Highlight": "Fokus Personal",
+      "p1Desc": "Jumlah siswa terbatas memastikan arahan personal, koreksi postur langsung, dan perhatian penuh dari guru.",
+      "p2Title": "Pelatihan Online Pra-TTC Gratis",
+      "p2Highlight": "Siap Percaya Diri",
+      "p2Desc": "Kursus persiapan cuma-cuma sebelum tiba di Bali untuk membangun kekuatan fisik dan wawasan dasar.",
+      "p3Title": "Mentoring 1 Tahun Pasca Kelulusan",
+      "p3Highlight": "Komunitas Berkelanjutan",
+      "p3Desc": "Bimbingan lanjutan, saran penyusunan sekuens kelas, dan dukungan karier jauh setelah masa pelatihan usai.",
+      "p4Title": "Mengulang Kursus Gratis Seumur Hidup",
+      "p4Highlight": "Kembali Tanpa Biaya",
+      "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
+      "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
+      "saveEarlyBird": "Hemat $300 Diskon Early Bird",
+      "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
+      "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
+      "checkAvailability": "Cek Ketersediaan",
+      "bookFreeCall": "Pesan Panggilan Video Gratis"
+    },
+    "hoursStructure": {
+      "badge": "Jam Pelatihan",
+      "heading": "Struktur Jam Belajar 200 Jam",
+      "sub": "Pembagian seimbang antara jam tatap muka langsung, penjajaran praktik, dan studi mandiri sesuai ketentuan Yoga Alliance.",
+      "contactHours": "Jam Tatap Muka",
+      "contactHoursDesc": "Instruksi langsung bersama guru utama dalam asana, penjajaran, anatomi, dan filosofi.",
+      "selfStudy": "Studi Mandiri & Praktik Mengajar",
+      "selfStudyDesc": "Bacaan terarah, jurnal, praktik bersama rekan, dan perancangan sekuens kelas.",
+      "totalCert": "Total Sertifikasi",
+      "totalCertDesc": "Memenuhi dan melampaui standar Yoga Alliance RYT 200.",
+      "hoursUnit": "Jam"
+    },
+    "syllabus": {
+      "heading": "Kurikulum & Silabus",
+      "sub": "Kurikulum terpadu dan seimbang yang menyatukan naskah yoga klasik dengan pemahaman biomekanik modern.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditasi",
+      "tab4": "Anatomi & Fisiologi",
+      "tab5": "Filosofi & Etika",
+      "tapMore": "Ketuk untuk melihat lebih banyak",
+      "hoverMore": "Arahkan kursor untuk melihat lebih banyak",
+      "takeaway": "Pemahaman Utama",
+      "carryHome": "Untuk Dibawa Pulang",
+      "careerImpact": "Dampak Karier:",
+      "cards": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "content": "Rangkaian lengkap seri primer Ashtanga Yoga. Peningkatan bertahap melalui Surya Namaskar A & B, postur berdiri, postur duduk, dan latihan gaya Mysore."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Seri Pawanmuktasana, variasi Surya Namaskar, postur berdiri dan duduk, lengkungan ke belakang, lipatan ke depan, inversi, dan penyusunan urutan kelas."
+        },
+        {
+          "title": "Filosofi Yoga",
+          "content": "Pengantar Yoga Sutra Patanjali, delapan pilar Ashtanga Yoga, Nadis, Cakra, Pancha-Vayus, Panchakoshas, Triguna, serta kisah teladan para yogi agung."
+        },
+        {
+          "title": "Pranayama & Pernapasan",
+          "content": "Teknik pernapasan lengkap: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, dan Sheetkari."
+        },
+        {
+          "title": "Anatomi & Fisiologi",
+          "content": "Bidang gerak tubuh, perlindungan persendian, anatomi pergelangan kaki, lutut, tulang belakang, bahu, mekanisme pernapasan, dan sistem saraf."
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "content": "Penyusunan urutan kelas, penyesuaian postur, pengelolaan berbagai tingkatan siswa, teknik intonasi suara, kesiapan mental, dan perencanaan kelas terstruktur."
+        },
+        {
+          "title": "Meditasi & Mantra",
+          "content": "Berbagai teknik meditasi, pelafalan mantra suci, Trataka, Meditasi Dinamis Osho, Nada Brahma, Antar Mouna, dan latihan keheningan batin."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Yoga berbasis presisi anatomi menggunakan alat bantu seperti balok, tali, dan selimut guna mencapai keselarasan postur optimal serta mencegah cedera."
+        },
+        {
+          "title": "Prinsip Keselarasan",
+          "content": "Pondasi latihan yang aman: penataan sendi, pola aktivasi otot, dan biomekanika tubuh guna melindungi serta memperkuat fisik secara menyeluruh."
+        },
+        {
+          "title": "Bandhas (Kunci Energi)",
+          "content": "Kuasai Mula, Uddiyana, dan Jalandhara Bandha untuk mengalirkan energi prana, menguatkan inti tubuh, dan memperdalam kualitas meditasi."
+        },
+        {
+          "title": "Mudras (Gestur Suci)",
+          "content": "Gerakan suci tangan dan tubuh guna mengarahkan energi vital, mempertajam konsentrasi, serta terhubung dengan kesadaran yang lebih mendalam."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "Rutinitas Harian di Ashram",
+      "sub": "Irama teratur yang memadukan latihan intensif, pendalaman filosofis, makanan sehat, dan waktu istirahat.",
+      "time1": "06:00",
+      "act1": "Bangun Pagi & Pembersihan Diri",
+      "time2": "06:30",
+      "act2": "Pranayama, Melantunkan Mantra & Meditasi",
+      "time3": "07:30",
+      "act3": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "time4": "09:00",
+      "act4": "Sarapan Sattvik Bernutrisi",
+      "time5": "10:00",
+      "act5": "Filosofi Yoga & Studi Naskah Klasik",
+      "time6": "12:00",
+      "act6": "Makan Siang Sehat & Istirahat",
+      "time7": "15:00",
+      "act7": "Anatomi Terapan & Fisiologi",
+      "time8": "16:30",
+      "act8": "Metodologi Pengajaran & Klinik Penjajaran",
+      "time9": "18:00",
+      "act9": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "time10": "19:30",
+      "act10": "Makan Malam Sattvik",
+      "time11": "21:00",
+      "act11": "Belajar Mandiri, Keheningan & Waktu Istirahat",
+      "beyondTheMat": "Di Luar Matras",
+      "badge": "Jadwal Harian",
+      "wakeUp": "Bangun Pagi & Pembersihan Diri",
+      "morningPranayama": "Pranayama & Meditasi",
+      "morningAsana": "Latihan Asana Pagi (Hatha / Vinyasa)",
+      "breakfast": "Sarapan Sehat Sattvik",
+      "philosophyClass": "Filosofi Yoga & Studi Kitab Suci",
+      "lunch": "Makan Siang Bernutrisi & Istirahat",
+      "anatomyClass": "Anatomi Terapan & Biomekanik",
+      "methodologyClass": "Metodologi Mengajar & Klinik Penjajaran",
+      "eveningAsana": "Latihan Sore (Ashtanga / Yin / Restoratif)",
+      "dinner": "Makan Malam Sattvik",
+      "selfStudy": "Belajar Mandiri, Keheningan & Jam Tidur"
+    },
+    "inclusions": {
+      "heading": "Apa yang Termasuk dalam Pelatihan Anda",
+      "sub": "Semua fasilitas disiapkan untuk memastikan masa tinggal yang tenang dan transformatif.",
+      "incAccom": "Akomodasi ashram selama 23 malam",
+      "incMeals": "3 kali makan bergizi sattvik (vegetarian/vegan) segar setiap hari",
+      "incCert": "Sertifikat Yoga Alliance RYT 200 setelah kelulusan",
+      "incManuals": "Buku panduan kursus resmi, buku catatan, dan bahan ajar",
+      "incKit": "Matras yoga dan alat peraga latihan disediakan di ashram",
+      "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
+      "incCeremonies": "Upacara api pembukaan dan penutupan tradisional (Agni Hotra)",
+      "incPickup": "Penjemputan bandara dari Denpasar (DPS) pada tanggal kedatangan resmi",
+      "incPre": "Modul persiapan Pra-TTC online cuma-cuma",
+      "incRepeat": "Hak mengulang kursus seumur hidup (bebas biaya kursus)",
+      "notIncHeading": "Tidak Termasuk",
+      "notIncFlights": "Tiket penerbangan internasional dan domestik",
+      "notIncVisa": "Biaya visa Indonesia",
+      "notIncInsurance": "Asuransi perjalanan dan kesehatan pribadi"
+    },
+    "pricing": {
+      "heading": "Paket Akomodasi & Harga",
+      "sub": "Harga transparan dan all-inclusive tanpa ada biaya tersembunyi.",
+      "tuitionOnly": "Hanya Kursus ($999)",
+      "tuitionOnlyDesc": "Biaya kursus, semua makanan, materi belajar, dan sertifikat. Tinggal di luar ashram.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC luas dibagi bersama dua rekan siswa, kamar mandi dalam, balkon pribadi.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD",
+      "earlyBirdPrice": "Harga Early Bird",
+      "tuitionFees": "Pilihan Kamar & Biaya (200 Jam Varkala)",
+      "tripleSharing": "Kamar Berbagi Bertiga ($1.750)",
+      "doubleSharing": "Kamar Berbagi Berdua ($1.899)",
+      "privateRoom": "Kamar Privat ($2.499)",
+      "choosePackage": "Pilih Paket Anda",
+      "reserveSpot": "Amankan Tempat Anda",
+      "saveUSD": "Hemat $300 USD",
+      "residentialDuration": "Pelatihan yoga residensial 28 hari di Varkala, India"
+    },
+    "ethics": {
+      "codeOfConduct": "Kode Etik",
+      "refundCancellation": "Pengembalian Dana & Pembatalan",
+      "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+    },
+    "faqsHeading": "Pertanyaan yang Sering Diajukan",
+    "faqs": [
+      {
+        "question": "What is the cost of 200-Hour Yoga Teacher Training in Varkala?",
+        "answer": "The 200-Hour Yoga Teacher Training in Varkala starts from $999 for tuition-only, $1,299 for a shared quad room, $1,499 for a twin-sharing double room, and $1,799 for a private room with attached bathroom. All residential packages include your room in Varkala Cliff, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Arabian Sea excursions, and complimentary airport pickup assistance."
+      },
+      {
+        "question": "Is Varkala good for yoga teacher training?",
+        "answer": "Varkala is internationally recognized as the Birthplace and World Capital of Yoga. Nestled in the Himalayan foothills along the sacred Arabian Sea river, Varkala has maintained an unbroken 5,000-year yogic lineage. Studying here immerses you in a high-vibrational spiritual atmosphere filled with historic ashrams, chanting masters, and evening Arabian Sea Aarti ceremonies that cannot be replicated anywhere else in the world."
+      },
+      {
+        "question": "Do I need prior yoga experience to join the 200-Hour YTT?",
+        "answer": "No prior teaching experience or advanced flexibility is required. Our 200-Hour curriculum is designed to systematically build your practice from foundational principles to intermediate mastery. Furthermore, every enrolled student receives immediate access to our complimentary Pre-YTTC online preparation modules so you can build strength, mobility, and Sanskrit familiarity before arriving at the ashram."
+      },
+      {
+        "question": "Is the 200-Hour certification internationally recognized by Yoga Alliance?",
+        "answer": "Yes, YogaGarhi is a registered Yoga Alliance school (RYS 200, RYS 300, RYS 500). Upon successful completion of our 200-Hour training in Varkala, you will receive an internationally accredited certificate that qualifies you to register as a Registered Yoga Teacher (RYT 200) and teach legally in any country worldwide."
+      },
+      {
+        "question": "How do I get to the YogaGarhi ashram from Delhi?",
+        "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
+      },
+      {
+        "question": "Can I pay my course fees in installments?",
+        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+      },
+      {
+        "question": "What is the refund and cancellation policy?",
+        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+      },
+      {
+        "question": "What is the best time of year to visit Varkala for yoga training?",
+        "answer": "The ideal season to undertake your yoga training in Varkala is between October and March, when daytime temperatures average 15°C to 25°C with crisp Himalayan air, bright sunshine, and cool evenings. April to June brings warm sunshine and vibrant river energy, while July to September features the sacred monsoon season with lush green mountains and peaceful introspective study."
+      },
+      {
+        "question": "What is the difference between 100-Hour, 200-Hour, and 300-Hour YTT?",
+        "answer": "The 100-Hour course (12 days) is an introductory immersion designed for beginners or time-constrained practitioners seeking deep personal transformation without full teaching credentials. The 200-Hour course (28 days) is the foundational international benchmark that qualifies you to teach as an RYT 200. The 300-Hour course (28 days) is an advanced master-level training for existing 200-Hour graduates aiming for the elite RYT 500 credential."
+      },
+      {
+        "question": "What styles of yoga are taught during the 200-Hour training?",
+        "answer": "Our comprehensive multi-style curriculum covers Classical Hatha Yoga, dynamic Ashtanga Vinyasa (Primary Series), modern Vinyasa Flow, and alignment principles inspired by B.K.S. Iyengar. You will also study pranayama breathwork, traditional meditation, Patanjali's Yoga Sutras, applied biomechanics, and hands-on postural adjustments."
+      },
+      {
+        "question": "What is the daily schedule like at the Varkala ashram?",
+        "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
+      },
+      {
+        "question": "Is Varkala safe for solo female travelers?",
+        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+      },
+      {
+        "question": "What kind of accommodation and food is provided?",
+        "answer": "Students stay in clean, comfortable rooms located within our Varkala Cliff ashram, featuring attached private bathrooms with 24/7 hot water, high-speed Wi-Fi, and air conditioning/heating. We serve three fresh, organic vegetarian and vegan Sattvic meals daily, prepared according to Ayurvedic principles with wholesome seasonal ingredients, digestive herbs, and herbal teas."
+      },
+      {
+        "question": "What should I pack for my yoga teacher training in Varkala?",
+        "answer": "We recommend comfortable, breathable yoga clothing made from natural fibers, a light shawl or sweater for morning and evening meditation, slip-on shoes or sandals for ashram grounds, a refillable water bottle, personal toiletries, and an open heart. Modest clothing covering shoulders and knees is recommended when visiting temples or walking along the holy Arabian Sea."
+      },
+      {
+        "question": "What is the batch size at YogaGarhi Varkala?",
+        "answer": "We strictly limit our batches to 8–10 students maximum per cohort. While many commercial schools in Varkala accommodate 30 to 40 students per class, our intimate group size guarantees personalized attention, customized anatomical alignment feedback, and genuine mentorship from our master teachers."
+      },
+      {
+        "question": "What is YogaGarhi's Lifetime Free Re-attendance policy?",
+        "answer": "Once you graduate from YogaGarhi, you are a member of our spiritual family for life. You can return to re-attend future batches of your completed course at either our Varkala or Bali campus completely tuition-free anytime in the future to refresh your knowledge and deepen your practice."
+      }
+    ],
+    "hero": {
+      "badge": "Sertifikasi Yoga Alliance RYT 200",
+      "h1": "Pelatihan Guru Yoga 200 Jam di Varkala",
+      "sub": "Pendalaman transformatif 24 hari di Varkala, India. Guru-guru tradisi Himalaya, ritual Arabian Sea Aarti harian, dan sertifikasi RYT 200.",
+      "quickDuration": "24 Hari",
+      "quickLevel": "Pemula hingga Menengah",
+      "quickCert": "Sertifikasi Yoga Alliance RYT 200",
+      "quickLang": "Bahasa Inggris",
+      "quickBatch": "8–10 Siswa",
+      "quickLocation": "Varkala Cliff, Varkala",
+      "btnReserve": "Pesan Tempat Anda",
+      "btnBrochure": "Unduh Silabus",
+      "btnCounselor": "Konsultasi"
+    },
+    "overview": {
+      "heading": "Selamat Datang di YogaGarhi Varkala",
+      "story": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah kursus menyeluruh tingkat pemula hingga menengah bagi siapa saja yang ingin menjadi guru yoga percaya diri atau memperdalam yoga dalam kehidupan sehari-hari. YogaGarhi berada di Gianyar, sekitar 15 km dari Ubud, menawarkan ketenangan alam pedesaan. Selama kursus, Anda mempraktikkan asana setiap hari, mempelajari anatomi penjajaran, pranayama, meditasi, filosofi yoga, dan metode mengajar.",
+      "p1": "Pelatihan 200 jam kami di Varkala menawarkan kurikulum komprehensif yang berakar kuat pada tradisi yoga klasik India.",
+      "p2": "Guru kami membimbing Anda dalam Hatha, Ashtanga Vinyasa, Yoga Sutra Patanjali, anatomi, dan metodologi pengajaran yang percaya diri."
+    },
+    "curriculum": {
+      "badge": "Modul Kurikulum",
+      "heading": "Rincian Modul & Topik Pembelajaran",
+      "sub": "Klik modul mana saja di bawah ini untuk menjelajahi rincian topik, teknik praktik, dan landasan teorinya.",
+      "modules": {
+        "asana": "Praktik Asana & Penjajaran",
+        "pranayama": "Pranayama & Energi Halus",
+        "philosophy": "Filosofi Yoga & Gaya Hidup",
+        "anatomy": "Anatomi dan Fisiologi",
+        "methodology": "Metodologi Pengajaran & Praktik",
+        "meditation": "Meditasi & Kesadaran Penuh",
+        "iyengar": "Dasar Yoga Iyengar & Alat Bantu",
+        "vinyasa": "Sekuensing Vinyasa Flow",
+        "hatha": "Hatha Yoga Klasik Tradisional"
+      },
+      "detailedModules": [
+        {
+          "title": "Postur Ashtanga Yoga",
+          "items": [
+            "Seri primer lengkap Ashtanga yoga oleh K. Pattabhi Jois",
+            "Minggu 1: Pengenalan & Surya Namaskar A & B",
+            "Minggu 2: Postur berdiri & penggunaan alat peraga yoga",
+            "Minggu 3: Postur duduk & postur penutup",
+            "Minggu 4: Gaya Mysore & praktik mengajar"
+          ]
+        },
+        {
+          "title": "Filosofi Yoga",
+          "items": [
+            "Yoga Sutra lengkap karya Patanjali",
+            "Delapan anggota Ashtanga Yoga",
+            "Pancha-Vayu & Panchakosha",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Pengantar Weda",
+            "Kisah inspiratif para yogi terkemuka"
+          ]
+        },
+        {
+          "title": "Pranayama & Praktik Pernapasan",
+          "items": [
+            "Teknik pranayama lengkap",
+            "Enam praktik pembersihan Shatkarma",
+            "Pernapasan tingkat lanjut: Sheetali, Sheetkari",
+            "Kumbhaka (menahan napas)",
+            "Integrasi selaras dengan latihan asana"
+          ]
+        },
+        {
+          "title": "Lantunan Suara Suci & Mantra",
+          "items": [
+            "Koleksi lengkap mantra tradisional",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Sloka untuk Resi Patanjali)",
+            "Latihan melantunkan mantra harian"
+          ]
+        },
+        {
+          "title": "Anatomi dan Fisiologi",
+          "items": [
+            "Studi mendalam tentang sistem tubuh manusia",
+            "Fisiologi otot & persendian",
+            "Sistem pernapasan & saraf",
+            "Pola makan & sistem pencernaan",
+            "Lokakarya fungsional asana"
+          ]
+        },
+        {
+          "title": "Metodologi Pengajaran",
+          "items": [
+            "Perancangan urutan kelas yang komprehensif",
+            "Prinsip demonstrasi & pengamatan",
+            "Kesiapan mental & emosional pengajar",
+            "Perencanaan struktur kelas bertahap",
+            "Praktik mengajar & evaluasi berkala"
+          ]
+        },
+        {
+          "title": "Meditasi & Bandha",
+          "items": [
+            "Meditasi Dinamis Osho",
+            "Meditasi Nada Brahma",
+            "Antar Mouna & Ajapa Japa",
+            "Penguasaan empat Bandha utama",
+            "Penyelarasan dengan asana & pranayama"
+          ]
+        },
+        {
+          "title": "Seni Penyelarasan & Penyesuaian",
+          "items": [
+            "Biomekanika dan penyesuaian fungsional postur klasik",
+            "Petunjuk verbal dan bantuan sentuhan langsung yang aman",
+            "Memahami variasi anatomi individu",
+            "Strategi modifikasi menggunakan balok dan tali yoga"
+          ]
+        },
+        {
+          "title": "Praktik Klasik Hatha Yoga",
+          "items": [
+            "Pendalaman prinsip Hatha klasik dan penahanan postur",
+            "Penyusunan urutan Hatha: pemanasan, postur puncak, dan penyeimbang",
+            "Menyeimbangkan energi matahari (Ha) dan bulan (Tha)",
+            "Penerapan Bandha dan Mudra dalam postur statis"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Presisi Gerak",
+          "items": [
+            "Penyelarasan metodis dengan balok, tali, dan selimut",
+            "Penempatan geometris panggul, tulang belakang, dan bahu",
+            "Persiapan postur terbalik yang aman",
+            "Rangkaian restoratif dengan alat bantu"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Gerak Dinamis",
+          "items": [
+            "Struktur urutan cerdas: pemanasan, puncak, dan pendinginan",
+            "Transisi mengalir dan lompatan berirama napas",
+            "Merancang kelas tematik sesuai tingkat kemampuan",
+            "Mengatur tempo dan menjaga energi ruangan"
+          ]
+        },
+        {
+          "title": "Kelas Tambahan & Pengalaman Khas",
+          "items": [
+            "Sesi Sound Healing (terapi suara)",
+            "Latihan yoga di pantai Bali",
+            "Yin Yoga & Acro Yoga",
+            "Dasar-dasar Ayurveda",
+            "Upacara api suci Agni Hotra"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Akomodasi & Pilihan Paket",
+      "sub": "Tarif transparan tanpa biaya tambahan tak terduga.",
+      "tuitionOnly": "Paket Hanya Biaya Kursus",
+      "tuitionOnlyDesc": "Pengajaran, makanan, materi studi, dan ijazah. Akomodasi di luar.",
+      "triple": "Kamar Bertiga (Triple)",
+      "tripleDesc": "Kamar ber-AC untuk tiga orang dengan kamar mandi dalam dan balkon.",
+      "double": "Kamar Berdua (Double)",
+      "doubleDesc": "Kamar ber-AC untuk dua orang dengan kamar mandi dan pemandangan asri.",
+      "private": "Kamar Pribadi Deluxe",
+      "privateDesc": "Kamar tunggal ber-AC dengan kasur king, kamar mandi dalam, dan teras pribadi.",
+      "earlyBird": "Diskon Early Bird",
+      "save300": "Hemat $300 USD"
+    },
+    "tourCall": {
+      "heading": "Ingin Melihat Sekolah Sebelum Mendaftar?",
+      "sub": "Bergabunglah dalam panggilan video langsung untuk tur pribadi mengelilingi kampus, ruang kelas, shala yoga, dan kamar penginapan.",
+      "cta": "Jadwalkan Panggilan. Lihat Sekolah. Lihat Kamar Anda. Lihat Aula Yoga.",
+      "bookCallLive": "Lihat suasana sekolah, kamar Anda, dan shala yoga secara langsung. Masukkan detail Anda di bawah ini untuk penjadwalan."
+    },
+    "takeaway": {
+      "badge": "Manfaat Yang Anda Bawa Pulang",
+      "heading": "Yang Akan Anda",
+      "headingItalic": "Bawa Pulang",
+      "sub": "Lebih dari sekadar sertifikat fisik, Anda pulang dengan perspektif baru, koneksi batin yang mendalam, dan keterampilan mengajar yang nyata.",
+      "careerImpactTitle": "Peluang Karier:",
+      "careerImpactDesc": "Setelah menyelesaikan Pelatihan Guru Yoga 200 Jam, Anda dapat mulai mengajar yoga di mana saja di dunia: studio, kelas privat daring, retret yoga, atau membangun komunitas mandiri.",
+      "card1Title": "Sertifikasi Global",
+      "card1Desc": "Yoga Alliance RYT-200 untuk memulai karier mengajar di negara mana pun.",
+      "card2Title": "Penguasaan Praktik",
+      "card2Desc": "Bimbingan mendalam dalam Hatha, Vinyasa, Ashtanga, dan Iyengar.",
+      "card3Title": "Keselamatan & Anatomi",
+      "card3Desc": "Pelajari cara mengajar dan berlatih dengan aman tanpa risiko cedera.",
+      "card4Title": "Kedalaman Spiritual",
+      "card4Desc": "Selami makna Mantra, meditasi, dan filosofi yoga klasik.",
+      "card5Title": "Metodologi Mengajar",
+      "card5Desc": "Keterampilan praktis dalam memandu kelas, koreksi postur, dan menginspirasi murid.",
+      "card6Title": "Persahabatan Sejati",
+      "card6Desc": "Jalinan persaudaraan seumur hidup dengan komunitas yoga internasional."
+    },
+    "timeline": {
+      "prepTitle": "Persiapan dimulai sejak pendaftaran",
+      "prepDesc": "Mulailah perjalanan Anda dengan modul persiapan dan bimbingan guru secara daring.",
+      "datesTitle": "Pelatihan: Tanggal 1 – 24 setiap bulan",
+      "datesDesc": "Program imersif 24 hari yang diselenggarakan setiap bulan di Bali.",
+      "supportTitle": "Dukungan komunitas seumur hidup di YogaGarhi",
+      "supportDesc": "Selalu terhubung dengan keluarga besar yoga dunia kami."
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Akomodasi",
+      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "feat1": "10 air terjun indah dalam radius 10 km",
+      "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
+      "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
+      "feat4": "Hanya berjarak 15 km dari pusat keramaian Ubud",
+      "glimpses": "Potret Suasana Menginap Anda",
+      "allRooms": "Semua Kamar Dilengkapi",
+      "wifi": "Wi-Fi Cepat Gratis",
+      "hotWater": "Air Hangat",
+      "acFan": "AC / Kipas Angin",
+      "cleaning": "Pembersihan Harian",
+      "bed1": "tempat tidur",
+      "bedsMore": "tempat tidur",
+      "courseOnly": "Hanya Kursus",
+      "mostPopular": "Paling Diminati",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Di Luar Matras",
+      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
+      "sub": "Immerse yourself in Varkala's sacred spiritual heritage through transformative Himalayan excursions"
+    },
+    "prakritiResearch": {
+      "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
+      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "card1Title": "Pertanyaan Mendasar",
+      "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
+      "card2Title": "Penyelidikan Mendalam",
+      "card2Text": "Hal ini melahirkan riset mendalam pada naskah yoga klasik, Ayurveda, dan pengalaman nyata bersama siswa. Jawabannya nyata: setiap manusia terlahir dengan Prakriti yang unik.",
+      "card3Title": "Cetak Biru Energi",
+      "card3Text": "Prakriti membentuk fisik, pikiran, emosi, dan sistem saraf. Sebagian butuh ketenangan, sebagian butuh gerak dinamis, dan sebagian butuh keheningan. Gaya seragam bisa memicu ketidakseimbangan.",
+      "card4Title": "Kualitas Latihan",
+      "card4Text": "Lebih dari sekadar nama aliran yoga, yang terpenting adalah bagaimana Anda berlatih: bagaimana sistem saraf didekati, nafas dipandu, dan Dosha Anda dirawat tanpa dipaksakan.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Dari kesadaran ini lahirlah Shiv–Shakti Sadhana, pendekatan seimbang yang menyelaraskan stabilitas dan aliran energi. Asana di sini menjadi fondasi kekuatan yang membumi.",
+      "card6Title": "Kembali ke Keseimbangan",
+      "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
+      "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
+      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+    },
+    "ethicsExtra": {
+      "code1": "Hadir tepat waktu",
+      "code2": "Bebas alkohol dan rokok",
+      "code3": "Makanan khusus vegetarian",
+      "code4": "Menjaga keheningan di kelas",
+      "code5": "Pakaian sopan dan pantas",
+      "code6": "Saling menghargai sesama",
+      "code7": "Dilarang membawa ponsel ke dalam kelas",
+      "code8": "Wajib mengikuti seluruh rangkaian kelas",
+      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
+      "refund2": "Dapat dialihkan ke peserta lain",
+      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
+      "refund4": "Kebijakan hari percobaan",
+      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "reviewsHeading": "Apa Kata Para Siswa Kami",
+      "viewAllGoogle": "Lihat semua ulasan di Google",
+      "basedOnReviews": "Berdasarkan",
+      "openGoogleMaps": "Buka di Google Maps",
+      "open24Hours": "Buka 24 jam"
+    },
+    "sunday": {
+      "note": "Hari Minggu adalah hari istirahat penuh untuk relaksasi, belajar mandiri, atau mengikuti wisata opsional.",
+      "cta": "Jelajahi Hari Minggu di Bali"
+    },
+    "tapHover": {
+      "tap": "Ketuk untuk melihat detail",
+      "hover": "Arahkan kursor untuk melihat detail"
+    },
+    "inclusionsList": [
+      "Clean and comfortable ashram room in Varkala Cliff",
+      "Attached private bathroom with 24/7 hot water",
+      "Air conditioning / heating & ceiling fan",
+      "Free high-speed Wi-Fi access",
+      "Three healthy organic vegetarian meals daily",
+      "Herbal teas and purified drinking water",
+      "Study material (manuals, notebooks, pens)",
+      "Yoga mats and props provided",
+      "Sacred Arabian Sea Aarti & Himalayan excursions",
+      "Airport pickup assistance (Dehradun DED airport)",
+      "24/7 on-campus ashram support team",
+      "Yoga Alliance accredited RYT certification",
+      "Rejuvenating Ayurvedic Abhyanga massage",
+      "Arabian Sea Aarti ceremony at Parmarth Niketan",
+      "Kunjapuri Himalayan sunrise meditation trek",
+      "Vashistha Cave meditation excursion",
+      "Pre-TTC online preparation modules",
+      "Arm balance & alignment workshops",
+      "Ayurveda lifestyle & nutrition workshop",
+      "Lifetime free course re-attendance included",
+      "Yogagarhi 35+ creative sequencing book"
+    ],
+    "exclusionsList": [
+      "Tiket penerbangan dan transportasi pribadi",
+      "Biaya visa kunjungan dan asuransi perjalanan",
+      "Antar kembali ke bandara saat kepulangan",
+      "Layanan cuci pakaian (laundry)",
+      "Belanja pribadi dan aktivitas tambahan opsional"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Multi-Style Yoga Mastery",
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
+      },
+      {
+        "title": "Yoga Alliance RYT Certification",
+        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
+      },
+      {
+        "title": "Peaceful Varkala Cliff Ashram Surroundings",
+        "description": "Practice in the serene Himalayan foothills overlooking the sacred Arabian Sea away from tourist crowds."
+      },
+      {
+        "title": "Sacred Spiritual Excursions",
+        "description": "Explore holy Arabian Sea river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
+      },
+      {
+        "title": "Small Batch Sizes (8–10 Max)",
+        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
+      },
+      {
+        "title": "Supportive Ashram Community",
+        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
+      },
+      {
+        "title": "Ayurvedic Abhyanga Massage",
+        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
+      },
+      {
+        "title": "Arabian Sea Aarti & Vedic Chanting",
+        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Arabian Sea."
+      },
+      {
+        "title": "Sattvic Ayurvedic Cuisine",
+        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
+      },
+      {
+        "title": "Meditation & Yoga Nidra",
+        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
+      },
+      {
+        "title": "E-RYT 500 Master Instructors",
+        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
+      },
+      {
+        "title": "Living Yogic Philosophy",
+        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Lokakarya Ayurveda & kelas memasak sehat",
+        "description": "Pahami tipe tubuh alami Anda (Prakriti) dan cara menyeimbangkan dosha melalui pola makan dan hidup sehat."
+      },
+      {
+        "title": "Penguasaan arm balance",
+        "description": "Bangun kekuatan, teknik, dan rasa percaya diri untuk menguasai pose keseimbangan lengan secara bertahap."
+      },
+      {
+        "title": "Lokakarya Handstand (handstand mastery)",
+        "description": "Atasi rasa takut dan temukan titik keseimbangan dengan latihan terstruktur di dinding dan berpasangan."
+      },
+      {
+        "title": "Yin Yoga & peregangan dalam",
+        "description": "Jangkau jaringan ikat fasia yang dalam melalui pose pasif berdurasi panjang guna melepas ketegangan tubuh."
+      },
+      {
+        "title": "Sesi relaksasi suara & Tibetan singing bowl",
+        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Buka ruang hati Anda lewat nyanyian lantunan mantra suci dan kirtan untuk terhubung dengan esensi yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Parmarth Niketan & Triveni Ghat Arabian Sea Aarti",
+        "description": "Witness the sacred evening Arabian Sea Aarti on the holy banks of the Arabian Sea — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
+      },
+      {
+        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
+        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
+      },
+      {
+        "title": "Vashistha Cave Meditation & White Sand Arabian Sea Beach",
+        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Arabian Sea, renowned for centuries of sadhana."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Breakfast",
+        "time": "9:15 AM",
+        "items": [
+          "Fresh seasonal Himalayan fruits & papaya",
+          "Nutritious Ayurvedic grain porridge & oats",
+          "Herbal digestive infusions & mountain chai",
+          "Sprouted moong & wholesome nuts"
+        ]
+      },
+      {
+        "meal": "Lunch",
+        "time": "12:00 PM",
+        "items": [
+          "Organic Himalayan khichdi & wholesome lentils",
+          "Freshly baked whole wheat rotis & basmati rice",
+          "Tridosha-balancing seasonal vegetable sabzi",
+          "Crisp organic garden salads"
+        ]
+      },
+      {
+        "meal": "Dinner",
+        "time": "7:30 PM",
+        "items": [
+          "Light nourishing Ayurvedic vegetable soups",
+          "Steamed seasonal mountain greens & lentils",
+          "Digestive herbal broths & wholesome grains",
+          "Golden turmeric almond milk"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Kisah Video Siswa Nyata",
+    "videoStoriesHeading": "Dengarkan Langsung dari Lulusan Kami di Bali",
+    "videoStoriesSub": "Refleksi nyata dari para praktisi yang menjalani perjalanan residensial di YogaGarhi.",
+    "verifiedGraduate": "Lulusan Terverifikasi",
+    "speakTeacherTitle": "Ingin berkonsultasi dengan guru utama terlebih dahulu?",
+    "speakTeacherDesc": "Panggilan video privat 15 menit untuk membahas tujuan, kamar, dan tanggal Anda.",
+    "helpfulGuidesBadge": "Baca Sebelum Berangkat",
+    "helpfulGuidesTitle": "Panduan Bermanfaat & Artikel Persiapan",
+    "helpfulGuidesDesc": "Pelajari panduan mendalam kami untuk mempersiapkan fisik, mental, dan perjalanan pelatihan Anda di Bali.",
+    "readArticle": "Baca Artikel",
+    "mindfulEating": "Sehari Pola Makan Berkesadaran",
+    "clickToCollapse": "Klik untuk menutup",
+    "clickToExpand": "Klik untuk membuka",
+    "caterDietsTitle": "Kami Melayani Semua Pola Makan",
+    "caterDietsDesc": "Beri tahu kami preferensi makanan Anda, dan kami akan menyiapkan segalanya",
+    "studentStories": {
+      "badge": "Kisah Siswa",
+      "heading": "Hati yang Berkelimpahan di YogaGarhi",
+      "sub": "\"Dengarkan langsung penuturan tulus dari para praktisi yang telah menjalani perjalanan transformasi ini.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Kanada",
+          "quote": "YogaGarhi memegang teguh esensi sejati yoga tradisional. Sejak awal, saya merasa dihargai dan didampingi secara personal. Para pengajar dengan tulus membimbing perkembangan Anda hingga menemukan karakter mengajar Anda sendiri.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turki",
+          "quote": "Sachin Ji adalah salah satu guru yoga paling berwawasan luas yang pernah mengajar saya. Meskipun saya seorang pemula, kesabaran dan dorongannya membuat saya memahami keselarasan asana dengan penuh percaya diri.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Rusia",
+          "quote": "Pelatihan 200 jam di Bali benar-benar luar biasa. 🌺 Pengetahuan yang diajarkan sangat mendalam dan autentik. Para guru mengajar dari hati dengan penuh ketulusan dan kebijaksanaan layaknya keluarga besar yang hangat.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Kanada",
+          "quote": "Sachin Ji adalah pengajar dan pribadi yang luar biasa. Pelatihan di Bali ini menjadi awal perjalanan yoga berharga yang mengantarkan saya percaya diri mengajar di berbagai penjuru dunia.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Jerman",
+          "quote": "Saya sangat mengagumi ketenangan, keramahan, dan kehangatan Sachin Ji. Beliau sangat berilmu dan senantiasa meluangkan waktu membimbing setiap siswa secara teliti.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "Pengalaman transformatif yang amat berkesan di YogaGarhi Bali. Kelompok belajar kecil memberikan manfaat maksimal, setiap koreksi postur terasa personal. Saya merasa sangat siap untuk mengajar.",
+          "avatarLetter": "N"
+        }
+      ]
+    },
+    "whyVarkalaTitle": "Why Choose Varkala for Yoga Teacher Training",
+    "differenceTitle": "The YogaGarhi Difference",
+    "howToReachTitle": "How to Reach YogaGarhi Varkala",
+    "bestTimeTitle": "Best Time to Visit Varkala for Yoga Training",
+    "compareCoursesTitle": "Compare Varkala Yoga Teacher Trainings",
+    "exploreMoreTitle": "Explore More Yoga Teacher Training Courses"
+  },
+  "course300Varkala": {
+    "metaTitle": "300 Hour Yoga Teacher Training in Varkala | YogaGarhi",
+    "metaDesc": "Advance your teaching with Yoga Alliance certified 300 hour yoga teacher training in Varkala. Pathway to RYT 500, E-RYT 500 faculty. Enroll now.",
+    "heroTitle": "300 Hour Yoga Teacher Training in Varkala, India",
+    "heroSub": "28-day residential Yoga Alliance certified 300-hour training in Varkala Cliff, Varkala. Pathway to RYT 500 with E-RYT 500 masters from $1,099 USD.",
+    "quickInfo": {
+      "course": "Course",
+      "courseVal": "300-Hour Advanced YTTC Varkala",
+      "duration": "Duration",
+      "durationVal": "28 Days",
+      "style": "Style",
+      "styleVal": "Multi-Style & Advanced Sequencing",
+      "level": "Level",
+      "levelVal": "Advanced (Prerequisite: 200hr YTT)",
+      "certification": "Certification",
+      "certificationVal": "RYT 500 Pathway (200hr + 300hr)",
+      "startingFrom": "$1,099 USD",
+      "startingFromVal": "$1,099 USD",
+      "save": "Save",
+      "earlyBirdDiscount": "Early Bird: Save $200"
+    },
+    "highlights": {
+      "smallGroups": "Small groups (8–10 max)",
+      "smallGroupsSub": "Master-level mentorship",
+      "preYttc": "Advanced Prep Modules",
+      "preYttcSub": "Sequencing & Adjustments",
+      "mentorship": "1-Year Master Mentorship",
+      "mentorshipSub": "Career & Studio Support",
+      "goodieBag": "Deluxe Teacher Goodie Bag",
+      "goodieBagSub": "Props & Manuals Included"
+    },
+    "storyTitle": "Elevate Your Teaching to Master Level in the Himalayan Capital of Yoga",
+    "storyP1": "Our 300 Hour Yoga Teacher Training in Varkala is a 28-day advanced residential immersion designed for 200-hour certified teachers who are ready to step into master-level teaching. Located in peaceful Varkala Cliff, Varkala, overlooking the sacred Arabian Sea and Himalayan foothills, YogaGarhi provides the ultimate environment for deep sadhana and professional elevation.",
+    "storyP2": "Over 28 days, you will delve deeply into advanced Ashtanga Vinyasa, complex alignment & hands-on adjustments, yoga therapy, subtle body pranayama, Kundalini awakening, and deep philosophical treatises including Patanjali's Yoga Sutras and the Bhagavad Gita. With cohorts strictly capped at 8–10 students, our E-RYT 500 Himalayan masters provide personalized feedback and apprenticeships.",
+    "watchVideoStories": "Watch Student Video Stories & Testimonials",
+    "videoBannerTitle": "Book a Call. See the School. See Your Room. See Your Yoga Hall.",
+    "whyYogaGarhiBox": {
+      "badge": "Why Choose YogaGarhi Varkala",
+      "heading": "Master-Level Training in an Intimate Himalayan Ashram",
+      "sub": "We prioritize serious practitioners over crowded commercial schools. Here is what sets our 300-hour training apart:",
+      "p1Title": "8–10 Students Max Per Batch",
+      "p1Highlight": "Master-Level Mentorship",
+      "p1Desc": "Strictly capped cohorts ensure lead faculty observe every adjustment, cue, and sequence you teach.",
+      "p2Title": "Free Pre-TTC Advanced Prep",
+      "p2Highlight": "Arrive Ready",
+      "p2Desc": "Complimentary advanced preparatory modules prior to arrival in Varkala to prime your anatomy and sequencing foundations.",
+      "p3Title": "1-Year Ongoing Master Mentorship",
+      "p3Highlight": "Global Community",
+      "p3Desc": "Ongoing guidance on workshop design, retreat hosting, and studio ownership after you graduate.",
+      "p4Title": "Lifetime Free Course Re-Attendance",
+      "p4Highlight": "Tuition-Free Return",
+      "p4Desc": "Return to future YogaGarhi 300-hour trainings anytime tuition-free to refresh your knowledge and assist as a mentor.",
+      "pkgBadge": "Residential Packages (28 Days / 27 Nights) & Tuition-Only Option",
+      "saveEarlyBird": "Save $200 Early-Bird",
+      "tuitionFrom": "Tuition from $1,099 USD | Residential from $1,399 USD",
+      "breakdown": "Tuition Only: $1,099 • Shared Room (4): $1,399 • Double Room (2): $1,699 • Private Room: $1,999",
+      "checkAvailability": "Check Availability",
+      "bookFreeCall": "Book Free Video Call"
+    },
+    "hoursStructure": {
+      "badge": "Training Hours",
+      "heading": "How the 300 Hours Are Structured",
+      "sub": "Structured to Yoga Alliance standards to bridge 200hr RYT to the prestigious 500hr RYT designation.",
+      "contactHours": "Contact Hours",
+      "contactHoursDesc": "270 direct contact hours with E-RYT 500 lead masters in advanced asana, hands-on adjustments, and philosophy.",
+      "selfStudy": "Practicum & Mentorship",
+      "selfStudyDesc": "30 hours of advanced sequencing practicum, student teaching labs, and peer evaluations.",
+      "totalCert": "Total Certification",
+      "totalCertDesc": "Completes full Yoga Alliance RYT 500 pathway credentials.",
+      "hoursUnit": "Hours"
+    },
+    "syllabus": {
+      "heading": "Curriculum & Syllabus",
+      "sub": "A rigorous, balanced curriculum combining classical yogic scriptures with modern biomechanics.",
+      "tab1": "Hatha & Vinyasa",
+      "tab2": "Ashtanga & Iyengar",
+      "tab3": "Pranayama & Meditation",
+      "tab4": "Anatomy & Physiology",
+      "tab5": "Philosophy & Ethics",
+      "tapMore": "Tap to see more",
+      "hoverMore": "Hover to see more",
+      "takeaway": "The Takeaway",
+      "carryHome": "Carry Home",
+      "careerImpact": "Career Impact:",
+      "cards": [
+        {
+          "title": "Ashtanga Yoga Postures",
+          "content": "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice."
+        },
+        {
+          "title": "Hatha & Vinyasa Flow",
+          "content": "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology."
+        },
+        {
+          "title": "Yoga Philosophy",
+          "content": "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis."
+        },
+        {
+          "title": "Pranayama & Breathing",
+          "content": "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari."
+        },
+        {
+          "title": "Anatomy & Physiology",
+          "content": "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system."
+        },
+        {
+          "title": "Teaching Methodology",
+          "content": "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning."
+        },
+        {
+          "title": "Meditation & Mantra",
+          "content": "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness."
+        },
+        {
+          "title": "Iyengar Yoga",
+          "content": "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries."
+        },
+        {
+          "title": "Alignment Principles",
+          "content": "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body."
+        },
+        {
+          "title": "Bandhas (Energy Locks)",
+          "content": "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice."
+        },
+        {
+          "title": "Mudras (Yogic Gestures)",
+          "content": "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation."
+        }
+      ]
+    },
+    "schedule": {
+      "heading": "A Day at YogaGarhi Ashram",
+      "sub": "A balanced daily rhythm of practice, study, nourishment, and reflection.",
+      "time1": "06:00 AM",
+      "act1": "Wake Up & Morning Cleansing",
+      "time2": "06:30 AM",
+      "act2": "Pranayama, Chanting & Meditation",
+      "time3": "07:30 AM",
+      "act3": "Morning Asana Practice (Hatha / Vinyasa)",
+      "time4": "09:00 AM",
+      "act4": "Healthy Sattvic Breakfast",
+      "time5": "10:00 AM",
+      "act5": "Yoga Philosophy & Scripture Study",
+      "time6": "12:00 PM",
+      "act6": "Nutritious Lunch & Rest",
+      "time7": "03:00 PM",
+      "act7": "Applied Anatomy & Physiology",
+      "time8": "04:30 PM",
+      "act8": "Teaching Methodology & Alignment Clinic",
+      "time9": "06:00 PM",
+      "act9": "Evening Practice (Ashtanga / Yin / Restorative)",
+      "time10": "07:30 PM",
+      "act10": "Sattvic Dinner",
+      "time11": "09:00 PM",
+      "act11": "Self-Study, Silence & Lights Off",
+      "beyondTheMat": "Beyond The Mat",
+      "badge": "Daily Routine",
+      "wakeUp": "Wake Up & Morning Cleansing",
+      "morningPranayama": "Pranayama & Meditation",
+      "morningAsana": "Hatha & Vinyasa Practice",
+      "breakfast": "Sattvic Ayurvedic Breakfast",
+      "philosophyClass": "Yoga Philosophy & Sacred Texts",
+      "lunch": "Sattvic Lunch & Personal Rest",
+      "anatomyClass": "Applied Anatomy & Biomechanics",
+      "methodologyClass": "Alignment, Adjustments & Teaching Practice",
+      "eveningAsana": "Ashtanga & Alignment with Props",
+      "dinner": "Nourishing Dinner",
+      "selfStudy": "Self-Study / Silence & Rest"
+    },
+    "inclusions": {
+      "heading": "What's Included in Your Training",
+      "sub": "Everything provided to ensure a worry-free, deeply transformative stay.",
+      "incAccom": "23 Nights residential accommodation",
+      "incMeals": "3 Freshly prepared sattvic vegetarian/vegan meals daily",
+      "incCert": "Yoga Alliance RYT 200 Certificate upon graduation",
+      "incManuals": "Official course manuals, notebooks, and study materials",
+      "incKit": "Yoga mat and practice props provided",
+      "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
+      "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
+      "incPickup": "Airport pickup from Denpasar (DPS) on course arrival date",
+      "incPre": "Complimentary online Pre-TTC preparation module",
+      "incRepeat": "Lifetime course repetition privilege (tuition-free)",
+      "notIncHeading": "Not Included",
+      "notIncFlights": "International and domestic flight tickets",
+      "notIncVisa": "Indonesian visa fees",
+      "notIncInsurance": "Personal travel and medical insurance"
+    },
+    "pricing": {
+      "heading": "Accommodation & Pricing Packages",
+      "sub": "Transparent, all-inclusive pricing with zero hidden charges.",
+      "tuitionOnly": "Tuition Only ($999)",
+      "tuitionOnlyDesc": "Complete 200-hour training curriculum, course manual, and Yoga Alliance RYT 200 certificate (without room and meals).",
+      "triple": "Triple Sharing Room",
+      "tripleDesc": "Shared room with 3 single beds, attached bathroom, hot water, Wi-Fi, and 3 daily Ayurvedic meals.",
+      "double": "Double Sharing Room",
+      "doubleDesc": "Shared twin room with 2 beds, attached bathroom, hot water, balcony, and 3 daily Ayurvedic meals.",
+      "private": "Private Deluxe Room",
+      "privateDesc": "Private room with private bathroom, hot water, study area, and 3 daily Ayurvedic meals.",
+      "earlyBird": "Early Bird Discount",
+      "save300": "Save $300 USD",
+      "earlyBirdPrice": "Early Bird Price",
+      "tuitionFees": "Tuition & Packages (200-Hour Varkala)",
+      "tripleSharing": "Triple Sharing ($1,750)",
+      "doubleSharing": "Double Sharing ($1,899)",
+      "privateRoom": "Private Room ($2,499)",
+      "choosePackage": "Choose Your Package",
+      "reserveSpot": "Reserve Your Spot",
+      "saveUSD": "Save $300 USD",
+      "residentialDuration": "24 Days Residential YTTC in Varkala, India"
+    },
+    "ethics": {
+      "codeOfConduct": "Code of Conduct",
+      "refundCancellation": "Refund & Cancellation",
+      "ryt200Title": "Registered Yoga Teacher (RYT 200)",
+      "viewRegistry": "View Yoga Alliance School Registry"
+    },
+    "faqsHeading": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "What is the cost of 300-Hour Yoga Teacher Training in Varkala?",
+        "answer": "The 300-Hour Advanced Yoga Teacher Training in Varkala starts from $1,099 for tuition-only, $1,399 for a shared quad room, $1,699 for a twin double room, and $1,999 for a private room with private en-suite bath. All packages include your 28-day ashram stay in Varkala Cliff, 3 daily organic Sattvic meals, advanced manuals, Yoga Alliance RYT 500 pathway certification, and excursions."
+      },
+      {
+        "question": "Do I need to complete a 200-Hour YTT before joining the 300-Hour course?",
+        "answer": "Yes, a completed 200-Hour Yoga Teacher Training from a recognized Yoga Alliance school (or equivalent registered school) is a mandatory prerequisite for joining the 300-Hour training. You will be asked to submit a copy of your 200-Hour certificate upon enrollment."
+      },
+      {
+        "question": "What is the RYT 500 pathway and how does this course certify me?",
+        "answer": "When you combine your existing 200-Hour certification with our Yoga Alliance accredited 300-Hour training (200 + 300 = 500 Hours), you qualify to register with Yoga Alliance USA as a Registered Yoga Teacher 500 (RYT 500)—the highest international standard of professional yoga teaching credentials."
+      },
+      {
+        "question": "What advanced topics are covered in the 300-Hour curriculum?",
+        "answer": "The 300-Hour curriculum goes far beyond the basics, diving into advanced Ashtanga Vinyasa Second Series (Nadi Shodhana), multi-style creative sequencing, hands-on therapeutic adjustments, functional fascial anatomy, Ayurvedic Prakriti evaluation, traditional Yoga Therapy applications, subtle body energetics (Chakras, Nadis, Kundalini), and the profound philosophy of Patanjali's Yoga Sutras and the Bhagavad Gita."
+      },
+      {
+        "question": "Is Varkala the best place for advanced 300-Hour training?",
+        "answer": "Undoubtedly. An advanced 300-hour sadhana requires deep pranic purity and unbroken spiritual lineage. Training along the holy banks of Mother Arabian Sea in Varkala Cliff, Varkala immerses you in the sacred energy of Himalayan sages, ancient temples, and true Vedic scholarship that elevate your teaching to mastery level."
+      },
+      {
+        "question": "How do I get to the ashram from Delhi?",
+        "answer": "From New Delhi, you can take a 45-minute flight to Dehradun Airport (DED), located 35 km from our Varkala Cliff ashram, or board the high-speed Vande Bharat train to Haridwar (4.5 hours). Private taxi transfer directly from Delhi Airport to our ashram gate (5 hours) can also be coordinated upon request."
+      },
+      {
+        "question": "Can I pay in installments?",
+        "answer": "Yes, you can secure your reservation with a $200–$300 registration deposit, and clear the remaining course balance in convenient installments prior to arrival or in person upon checking into the ashram."
+      },
+      {
+        "question": "What is the refund and rescheduling policy?",
+        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months with at least 14 days advance written notice."
+      },
+      {
+        "question": "What is the best time of year to take the 300-Hour training?",
+        "answer": "October to March is ideal with clear, temperate Himalayan weather (15–25°C), allowing for rigorous physical asana and tranquil outdoor meditation. April to June offers warm tapasya energy, and July to September provides quiet monsoon retreat conditions."
+      },
+      {
+        "question": "What is the batch size for the 300-Hour master training?",
+        "answer": "To ensure rigorous master-level instruction and deep mentorship, we strictly cap our 300-Hour cohorts at 8–10 students. This guarantees extensive 1-on-1 teaching practicum critique, individualized alignment clinics, and personal spiritual guidance."
+      },
+      {
+        "question": "What kind of accommodation and food is included?",
+        "answer": "You will enjoy a peaceful, private or shared room in our Varkala Cliff ashram featuring an attached bathroom with 24/7 hot water, high-speed Wi-Fi, and air conditioning/heating. Three wholesome, tridosha-balancing Sattvic Ayurvedic meals are prepared fresh daily using local organic produce."
+      },
+      {
+        "question": "Is Varkala safe for international solo travelers?",
+        "answer": "Yes, Varkala is recognized as one of the safest pilgrimage cities in India. Our ashram maintains 24/7 on-campus security and a supportive community to ensure every international practitioner feels completely safe, respected, and at home."
+      },
+      {
+        "question": "What excursions are included in the 300-Hour training?",
+        "answer": "You will participate in sacred spiritual excursions including the evening Arabian Sea Aarti ceremony at Parmarth Niketan, a Himalayan sunrise meditation trek at Kunjapuri Temple (1,676m), and deep silent meditation inside Sage Vashistha's ancient subterranean cave along the Arabian Sea."
+      },
+      {
+        "question": "Do you offer Lifetime Free Re-attendance for the 300-Hour course?",
+        "answer": "Yes! All YogaGarhi graduates are entitled to our lifetime re-attendance privilege. You can return in future years to re-sit the 300-Hour course at either our Varkala or Bali campus entirely tuition-free to refine your teaching skills."
+      },
+      {
+        "question": "What styles will I be certified to teach after graduation?",
+        "answer": "You will graduate with advanced mastery to teach Classical Hatha Yoga, Ashtanga Vinyasa (Primary & Intermediate Series), Dynamic Vinyasa Flow, Yin & Restorative Yoga, and specialized Therapeutic Alignment classes for varied student demographics."
+      },
+      {
+        "question": "What should I pack for my 300-Hour stay?",
+        "answer": "Pack comfortable yoga wear, warm layers for early morning and evening meditation, walking shoes for excursions, personal toiletries, an open journal, and your official 200-Hour completion certificate."
+      }
+    ],
+    "hero": {
+      "badge": "Yoga Alliance Certified RYT 500 Pathway",
+      "h1": "300 Hour Yoga Teacher Training in Varkala, India",
+      "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Varkala Cliff, Varkala. Study with master teachers by the sacred Arabian Sea.",
+      "quickDuration": "28 Days",
+      "quickLevel": "Advanced (200-Hour YTT required)",
+      "quickCert": "Yoga Alliance RYT 500 Pathway",
+      "quickLang": "English",
+      "quickBatch": "8–10 Students",
+      "quickLocation": "Varkala Cliff, Varkala",
+      "btnReserve": "Reserve Your Spot",
+      "btnBrochure": "Download Syllabus",
+      "btnCounselor": "Talk to Counselor"
+    },
+    "overview": {
+      "heading": "Welcome to YogaGarhi Varkala",
+      "story": "Our 300 Hour Yoga Teacher Training in Varkala is a transformative 28-day advanced residential program for teachers who hold a 200-hour certification. Located in Varkala Cliff, Varkala, the world's epicentre of yoga, this program deepens your practice across advanced asanas, pranayama, meditation, therapeutics, and traditional philosophy.",
+      "p1": "Our 200-Hour Yoga Teacher Training in Varkala provides comprehensive, authentic training rooted in classical Indian yogic traditions. Live and study in the heart of the Yoga Capital of the World, beside the sacred Arabian Sea river.",
+      "p2": "Our Himalayan master teachers guide you through traditional Hatha and Ashtanga Vinyasa, alignment, adjustments, Patanjali yoga sutras, anatomy, and practical teaching methodology to graduate as a confident, certified teacher."
+    },
+    "curriculum": {
+      "badge": "Curriculum Modules",
+      "heading": "Detailed Curriculum Breakdown & Study Topics",
+      "sub": "Click any module below to explore the detailed topics, practical techniques, and theoretical foundations.",
+      "modules": {
+        "asana": "Asana Practice & Alignment",
+        "pranayama": "Pranayama & Subtle Energy",
+        "philosophy": "Yoga Philosophy & Yogic Lifestyle",
+        "anatomy": "Anatomy and Physiology",
+        "methodology": "Teaching Methodology & Practicum",
+        "meditation": "Meditation & Mindfulness",
+        "iyengar": "Iyengar Yoga Foundations & Props",
+        "vinyasa": "Vinyasa Flow Sequencing",
+        "hatha": "Traditional Classical Hatha Yoga"
+      },
+      "detailedModules": [
+        {
+          "title": "Ashtanga Yoga Postures",
+          "items": [
+            "Complete Ashtanga yoga primary series by K. Pattabhi Jois",
+            "Week 1: Introduction & Sun salutation A & B",
+            "Week 2: Standing sequence postures & yoga props",
+            "Week 3: Seated sequence & Finishing postures",
+            "Week 4: Mysore style & Teaching practice"
+          ]
+        },
+        {
+          "title": "Yoga Philosophy",
+          "items": [
+            "Complete yoga sutras of Patanjali",
+            "Eight limbs of Ashtanga Yoga",
+            "Pancha-Vayus & Panchakoshas",
+            "Sattva, Rajas & Tamas (Triguna)",
+            "Introduction to Vedas",
+            "Lives of yogis (Inspiring stories)"
+          ]
+        },
+        {
+          "title": "Pranayama Breathing Practices",
+          "items": [
+            "Complete pranayama techniques",
+            "All six Shatkarma cleansing practices",
+            "Advanced breathing: Sheetali, Sheetkari",
+            "Kumbhaka (breath retention)",
+            "Integration with asana practice"
+          ]
+        },
+        {
+          "title": "Recitation of Sacred Sound",
+          "items": [
+            "Complete mantra collection",
+            "Om Tryambakam Yajamahe",
+            "Hare Rama, Hare Krishna (Maha mantra)",
+            "Yogena Cittasya (Sloka on Sage Patanjali)",
+            "Daily mantra chanting practice"
+          ]
+        },
+        {
+          "title": "Anatomy and Physiology",
+          "items": [
+            "Complete body systems study",
+            "Physiology of muscles & joints",
+            "Respiratory & Nervous system",
+            "Food & Digestive System",
+            "Workshop on different Asanas"
+          ]
+        },
+        {
+          "title": "Teaching Methodology",
+          "items": [
+            "Complete class sequencing",
+            "Demonstration & observation principles",
+            "Mental & emotional preparation",
+            "Step by step class structure planning",
+            "Practicum & teaching evaluations"
+          ]
+        },
+        {
+          "title": "Meditation & Bandhas",
+          "items": [
+            "Osho Dynamic meditation",
+            "Nada Brahma Meditation",
+            "Antar Mouna & Ajapa Japa",
+            "All four Bandhas mastery",
+            "Integration with asana & pranayama"
+          ]
+        },
+        {
+          "title": "Art of Alignment & Hands-on Adjustments",
+          "items": [
+            "Comprehensive biomechanics and functional alignment for classical yoga postures",
+            "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
+            "Understanding individual anatomical variations, skeletal compression vs tension",
+            "Modification strategies using props and stance adjustments for diverse student flexibility"
+          ]
+        },
+        {
+          "title": "Classical Hatha Yoga Practice",
+          "items": [
+            "In-depth study of classical Hatha asana principles and sustained holds",
+            "Complete Hatha sequencing: preparatory warming, peak postures, and counter-poses",
+            "Balancing solar (Ha) and lunar (Tha) energies through mindful posture practice",
+            "Integration of Bandhas and Mudras within traditional Hatha asana holding"
+          ]
+        },
+        {
+          "title": "Iyengar Yoga & Precision Alignment",
+          "items": [
+            "Methodical alignment utilizing blocks, straps, blankets, and props",
+            "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
+            "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
+            "Restorative Iyengar prop setups for supported holding and quiet focus"
+          ]
+        },
+        {
+          "title": "Vinyasa Flow & Dynamic Sequencing",
+          "items": [
+            "Intelligent sequencing architecture: progressive warm-up, peak pose, and cool down",
+            "Dynamic transitions, jump-backs, and jump-throughs with breath awareness",
+            "Creating thematic vinyasa classes for varying student levels and intentions",
+            "Pacing, tempo modulation, and holding space during energetic flowing sequences"
+          ]
+        },
+        {
+          "title": "Additional Classes",
+          "items": [
+            "Sound Healing sessions",
+            "Beach Yoga experience",
+            "Yin Yoga & Acro Yoga",
+            "Ayurveda fundamentals",
+            "Agni Hotra (Fire ceremony)"
+          ]
+        }
+      ]
+    },
+    "accommodation": {
+      "heading": "Accommodation & Pricing Packages",
+      "sub": "Transparent, all-inclusive pricing with zero hidden charges.",
+      "tuitionOnly": "Tuition Only Package",
+      "tuitionOnlyDesc": "Course tuition, all meals, study materials, and certification. Accommodation off-campus.",
+      "triple": "Triple Sharing Room",
+      "tripleDesc": "Spacious air-conditioned room shared with two fellow students, ensuite bathroom, private balcony.",
+      "double": "Double Sharing Room",
+      "doubleDesc": "Comfortable room shared with one companion, ensuite bathroom, AC, garden/pool view.",
+      "private": "Private Deluxe Room",
+      "privateDesc": "Private sanctuary with king/queen bed, ensuite bathroom, air conditioning, private balcony.",
+      "earlyBird": "Early Bird Discount",
+      "save300": "Save $300 USD"
+    },
+    "tourCall": {
+      "heading": "Want to See Before You Book?",
+      "sub": "Hop on a live video call to get a personal tour of the campus, classrooms, shala, and student rooms.",
+      "cta": "Book a Call. See the School. See Your Room. See Your Yoga Hall.",
+      "bookCallLive": "See the school, your room, and the yoga shala live. Fill in your details below to schedule."
+    },
+    "takeaway": {
+      "badge": "The Takeaway",
+      "heading": "What You'll",
+      "headingItalic": "Carry Home",
+      "sub": "Beyond the physical certificate, you walk away with a transformed perspective, a deeper connection to yourself, and the authentic skills to lead others.",
+      "careerImpactTitle": "Career Impact:",
+      "careerImpactDesc": "After completing the 200-Hour Yoga Teacher Training, you can start teaching yoga anywhere in the world in studios, online live classes, yoga retreats, or through your own independent practice.",
+      "card1Title": "Global Certification",
+      "card1Desc": "Yoga Alliance RYT-200 to start your career anywhere.",
+      "card2Title": "Master the Practice",
+      "card2Desc": "Expert guidance in Hatha, Vinyasa, Ashtanga & Iyengar.",
+      "card3Title": "Safety & Anatomy",
+      "card3Desc": "Learn to teach and practice safely without injuries.",
+      "card4Title": "Spiritual Depth",
+      "card4Desc": "Deep dive into Mantras, Meditation, and Philosophy.",
+      "card5Title": "Teaching Skills",
+      "card5Desc": "Practical skills to lead, cue, and inspire students.",
+      "card6Title": "Deep Bonds",
+      "card6Desc": "Lifelong connections with a global yoga community."
+    },
+    "timeline": {
+      "prepTitle": "Preparation begins on signup",
+      "prepDesc": "Start your journey with pre-course materials and guidance",
+      "datesTitle": "Training: 1st – 24th of each month",
+      "datesDesc": "Immersive 28-day program starting 1st of every month in Varkala",
+      "supportTitle": "Lifetime Yogagarhi community support",
+      "supportDesc": "Forever connected to our global yoga family"
+    },
+    "accommodationExtra": {
+      "featuresTitle": "Accommodation",
+      "featuresSub": "A serene yoga ashram in the heart of Varkala Cliff, Varkala",
+      "feat1": "10 beautiful waterfalls within 10 km",
+      "feat2": "Private forest with an in-house waterfall",
+      "feat3": "Peaceful rice-field trekking on-site",
+      "feat4": "Overlooking the sacred Arabian Sea and Himalayan foothills",
+      "glimpses": "Glimpses of Your Stay",
+      "allRooms": "All Rooms Include",
+      "wifi": "Free Wi-Fi",
+      "hotWater": "Hot Water",
+      "acFan": "AC / Fan",
+      "cleaning": "Daily Cleaning",
+      "bed1": "bed",
+      "bedsMore": "beds",
+      "courseOnly": "Course Only",
+      "mostPopular": "Most Popular",
+      "premium": "Premium"
+    },
+    "excursionsSection": {
+      "badge": "Beyond The Mat",
+      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
+      "sub": "Immerse yourself in Varkala's sacred spiritual heritage through transformative Himalayan excursions"
+    },
+    "prakritiResearch": {
+      "heading": "Sachin Ji's Research on Personalized Yoga and Prakriti",
+      "quote": "\"Yoga Is Not One-Size-Fits-All Because Every Body Carries a Different Energy\"",
+      "card1Title": "The Core Question",
+      "card1Text": "During our Lead Teacher's Master Yoga studies, one question became impossible to ignore: Why does the same yoga practice calm some people, but leave others feeling tired, restless, or mentally disturbed?",
+      "card2Title": "Deep Investigation",
+      "card2Text": "This led to deep research into classical yoga texts, Ayurveda, and years of real student experience. The answer was simple, yet powerful: Every human being is born with a unique Prakriti.",
+      "card3Title": "The Energy Blueprint",
+      "card3Text": "Prakriti shapes the body, mind, emotions, and nervous system. Some people need grounding, some need movement, and others need stillness. A fixed style for everyone can create imbalance.",
+      "card4Title": "Quality of Practice",
+      "card4Text": "More than which yoga style you practice, what truly matters is how you practice. How the nervous system is approached, how the breath is guided, and how your Dosha is supported rather than pushed.",
+      "card5Title": "Shiv–Shakti Sadhana",
+      "card5Text": "Born from this realization, Shiv–Shakti Sadhana is a balanced approach that harmonizes stability and movement, awareness and energy. Asana here supports grounding and strength.",
+      "card6Title": "Back to Balance",
+      "card6Text": "When yoga respects your Prakriti, it becomes accessible, sustainable, and deeply healing. Real yoga does not change you; it brings you back into balance with yourself.",
+      "conclusion1": "Our Lead Teacher observed that when practice does not respect the nervous system and natural energy type, even correct postures can lead to restlessness, fatigue, or imbalance.",
+      "conclusion2": "\"When yoga respects your Prakriti, it becomes accessible, sustainable, and deeply healing for everyone. Here, yoga is not forced. It is personalized, energy-aware, and deeply respectful of who you are.\""
+    },
+    "ethicsExtra": {
+      "code1": "Punctual attendance",
+      "code2": "No alcohol/smoking",
+      "code3": "Vegetarian only",
+      "code4": "Silence in class",
+      "code5": "Modest clothing",
+      "code6": "Respect all",
+      "code7": "No phones in class",
+      "code8": "Full attendance required",
+      "refund1": "Reschedule within 12 months",
+      "refund2": "Transfer seat allowed",
+      "refund3": "Full refund if we cancel",
+      "refund4": "Trial day policy",
+      "refund5": "No refund after Day 1",
+      "reviewsHeading": "What Our Students Say",
+      "viewAllGoogle": "View all reviews on Google",
+      "basedOnReviews": "Based on",
+      "openGoogleMaps": "Open in Google Maps",
+      "open24Hours": "Open 24 hours"
+    },
+    "sunday": {
+      "note": "Sunday is a full day off for rest, self-study, or optional excursions.",
+      "cta": "Explore Sunday in Varkala"
+    },
+    "tapHover": {
+      "tap": "Tap to see more",
+      "hover": "Hover to see more"
+    },
+    "inclusionsList": [
+      "Clean and comfortable ashram room in Varkala Cliff",
+      "Attached private bathroom with 24/7 hot water",
+      "Air conditioning / heating & ceiling fan",
+      "Free high-speed Wi-Fi access",
+      "Three healthy organic vegetarian meals daily",
+      "Herbal teas and purified drinking water",
+      "Study material (manuals, notebooks, pens)",
+      "Yoga mats and props provided",
+      "Sacred Arabian Sea Aarti & Himalayan excursions",
+      "Airport pickup assistance (Dehradun DED airport)",
+      "24/7 on-campus ashram support team",
+      "Yoga Alliance accredited RYT certification",
+      "Rejuvenating Ayurvedic Abhyanga massage",
+      "Arabian Sea Aarti ceremony at Parmarth Niketan",
+      "Kunjapuri Himalayan sunrise meditation trek",
+      "Vashistha Cave meditation excursion",
+      "Pre-TTC online preparation modules",
+      "Arm balance & alignment workshops",
+      "Ayurveda lifestyle & nutrition workshop",
+      "Lifetime free course re-attendance included",
+      "Yogagarhi 35+ creative sequencing book"
+    ],
+    "exclusionsList": [
+      "Airfare and travel expenses",
+      "Visa and travel insurance",
+      "Airport drop",
+      "Laundry service",
+      "Personal shopping & extra activities"
+    ],
+    "whatYouWillReceiveList": [
+      {
+        "title": "Multi-Style Yoga Mastery",
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
+      },
+      {
+        "title": "Yoga Alliance RYT Certification",
+        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
+      },
+      {
+        "title": "Peaceful Varkala Cliff Ashram Surroundings",
+        "description": "Practice in the serene Himalayan foothills overlooking the sacred Arabian Sea away from tourist crowds."
+      },
+      {
+        "title": "Sacred Spiritual Excursions",
+        "description": "Explore holy Arabian Sea river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
+      },
+      {
+        "title": "Small Batch Sizes (8–10 Max)",
+        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
+      },
+      {
+        "title": "Supportive Ashram Community",
+        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
+      },
+      {
+        "title": "Ayurvedic Abhyanga Massage",
+        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
+      },
+      {
+        "title": "Arabian Sea Aarti & Vedic Chanting",
+        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Arabian Sea."
+      },
+      {
+        "title": "Sattvic Ayurvedic Cuisine",
+        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
+      },
+      {
+        "title": "Meditation & Yoga Nidra",
+        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
+      },
+      {
+        "title": "E-RYT 500 Master Instructors",
+        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
+      },
+      {
+        "title": "Living Yogic Philosophy",
+        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
+      }
+    ],
+    "workshopsList": [
+      {
+        "title": "Ayurveda Workshop & Ayurveda Cooking Workshop",
+        "description": "Understand your unique constitution (Prakriti) and learn how to balance your doshas through diet, lifestyle, and yogic practices for optimal health."
+      },
+      {
+        "title": "Arm Balance Mastery",
+        "description": "Build the strength, technique and confidence needed to master arm balances like Crow, Side Crow, and Flying Pigeon with proper alignment."
+      },
+      {
+        "title": "Handstand Workshop",
+        "description": "Overcome fear and find your center through progressive drills, wall work, and partner exercises to achieve a confident freestanding handstand."
+      },
+      {
+        "title": "Yin Yoga Deep Stretch",
+        "description": "Access deeper connective tissue layers through long-held passive poses. Release tension, increase flexibility, and cultivate inner stillness."
+      },
+      {
+        "title": "Sound Healing Session",
+        "description": "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm."
+      },
+      {
+        "title": "Bhakti Yoga & Kirtan",
+        "description": "Open your heart through devotional practice. Learn sacred chants, mantras, and kirtan to connect with the spiritual essence of yoga."
+      }
+    ],
+    "excursionsList": [
+      {
+        "title": "Parmarth Niketan & Triveni Ghat Arabian Sea Aarti",
+        "description": "Witness the sacred evening Arabian Sea Aarti on the holy banks of the Arabian Sea — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
+      },
+      {
+        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
+        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
+      },
+      {
+        "title": "Vashistha Cave Meditation & White Sand Arabian Sea Beach",
+        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Arabian Sea, renowned for centuries of sadhana."
+      }
+    ],
+    "foodMenuList": [
+      {
+        "meal": "Breakfast",
+        "time": "9:15 AM",
+        "items": [
+          "Fresh seasonal Himalayan fruits & papaya",
+          "Nutritious Ayurvedic grain porridge & oats",
+          "Herbal digestive infusions & mountain chai",
+          "Sprouted moong & wholesome nuts"
+        ]
+      },
+      {
+        "meal": "Lunch",
+        "time": "12:00 PM",
+        "items": [
+          "Organic Himalayan khichdi & wholesome lentils",
+          "Freshly baked whole wheat rotis & basmati rice",
+          "Tridosha-balancing seasonal vegetable sabzi",
+          "Crisp organic garden salads"
+        ]
+      },
+      {
+        "meal": "Dinner",
+        "time": "7:30 PM",
+        "items": [
+          "Light nourishing Ayurvedic vegetable soups",
+          "Steamed seasonal mountain greens & lentils",
+          "Digestive herbal broths & wholesome grains",
+          "Golden turmeric almond milk"
+        ]
+      }
+    ],
+    "videoStoriesBadge": "Real Student Video Stories",
+    "videoStoriesHeading": "Hear Directly from Our Graduates in Varkala",
+    "videoStoriesSub": "Real reflections from practitioners who embarked on this residential journey at YogaGarhi.",
+    "verifiedGraduate": "Verified Graduate",
+    "speakTeacherTitle": "Want to speak with a lead teacher first?",
+    "speakTeacherDesc": "15-minute 1-on-1 video call to discuss your goals, rooms, and dates.",
+    "helpfulGuidesBadge": "Read Before You Fly",
+    "helpfulGuidesTitle": "Helpful Guides & Preparation Articles",
+    "helpfulGuidesDesc": "Explore our in-depth guides to prepare your mind, body, and travel arrangements for your Varkala yoga teacher training.",
+    "readArticle": "Read Article",
+    "mindfulEating": "A Day of Mindful Eating",
+    "clickToCollapse": "Click to collapse",
+    "clickToExpand": "Click to expand",
+    "caterDietsTitle": "We Cater To All Diets",
+    "caterDietsDesc": "Let us know your dietary requirements and we'll take care of everything",
+    "studentStories": {
+      "badge": "Student Stories",
+      "heading": "Hearts Transformed at Yogagarhi",
+      "sub": "\"Don't take our word for it. Hear from the practitioners who lived the journey.\"",
+      "stories": [
+        {
+          "name": "Gurpreet Kaur Dhou",
+          "country": "Canada",
+          "quote": "YogaGhari is truly authentic and deeply rooted in the real essence of yoga. From the very beginning, I felt seen and supported as a person, not treated as just another number. The teachers genuinely care about your growth and help you build confidence in your own voice.",
+          "avatarLetter": "G"
+        },
+        {
+          "name": "Ilksen Doğan",
+          "country": "Turkey",
+          "quote": "Sachin is hands down one of the most knowledgeable yoga teachers I have been taught by. Despite me being an absolute beginner, he was patient and encouraging. I was able to confidently understand the foundations of asana alignment.",
+          "avatarLetter": "I"
+        },
+        {
+          "name": "Aleksandra Dyachenko",
+          "country": "Russia",
+          "quote": "I completed my 200-hour yoga teacher training in Bali, and it was truly magical. 🌺 The knowledge I gained was deep and authentic. The teachers are real mentors who teach from the heart with kindness and wisdom. Felt like being part of a big, warm family.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Amy Letourneau",
+          "country": "Canada",
+          "quote": "Sachin is such an amazing teacher and human. The training I did here in Bali was the start of a beautiful yoga journey, which has now led me to be confident enough to teach in multiple countries around the world.",
+          "avatarLetter": "A"
+        },
+        {
+          "name": "Lisa Beltman",
+          "country": "Germany",
+          "quote": "I really appreciate Sachin Ji’s calm, friendly, and welcoming energy. He is knowledgeable and takes the time to guide each student with care. His classes are structured in such a way that you find yourself doing more than you thought you could.",
+          "avatarLetter": "L"
+        },
+        {
+          "name": "Nicole Drake",
+          "country": "Australia",
+          "quote": "I had such a wonderful and transformative experience at Yogagarhi Bali. The small group setting made all the difference — every posture adjustment felt tailored and thoughtful. I left feeling fully prepared to teach.",
+          "avatarLetter": "N"
+        }
+      ]
+    },
+    "whyVarkalaTitle": "Why Choose Varkala for Yoga Teacher Training",
+    "differenceTitle": "The YogaGarhi Difference",
+    "howToReachTitle": "How to Reach YogaGarhi Varkala",
+    "bestTimeTitle": "Best Time to Visit Varkala for Yoga Training",
+    "compareCoursesTitle": "Compare Varkala Yoga Teacher Trainings",
     "exploreMoreTitle": "Explore More Yoga Teacher Training Courses"
   }
 }

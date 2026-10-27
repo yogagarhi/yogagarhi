@@ -54,6 +54,7 @@ import { YOGA_ALLIANCE_PROFILE } from "@/constants/course200Data";
 import { trackEvent } from "@/utils/analytics";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import AlsoAvailableInRishikeshSection from "@/components/course-rishikesh/AlsoAvailableInRishikeshSection";
+import AlsoAvailableInVarkalaSection from "@/components/course-varkala/AlsoAvailableInVarkalaSection";
 
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 const preYttcOnline = getCloudinaryImage("pre-yttc-online.png");
@@ -4309,8 +4310,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         {/* ===== FREQUENTLY ASKED QUESTIONS ===== */}
         <CourseFAQSection />
 
-        {/* ===== ALSO AVAILABLE IN RISHIKESH ===== */}
+        {/* ===== ALSO AVAILABLE IN RISHIKESH & VARKALA ===== */}
         <AlsoAvailableInRishikeshSection />
+        <AlsoAvailableInVarkalaSection />
 
         {/* ===== FINAL CONVERSION HUB ===== */}
         <section className="py-20 relative overflow-hidden">

@@ -49,6 +49,7 @@ import BestTimeToVisitRishikeshSection from "@/components/course-rishikesh/BestT
 import RishikeshFAQSection from "@/components/course-rishikesh/RishikeshFAQSection";
 import CompareCoursesTable from "@/components/course-rishikesh/CompareCoursesTable";
 import ExploreMoreCoursesSection from "@/components/course-rishikesh/ExploreMoreCoursesSection";
+import AlsoAvailableInVarkalaSection from "@/components/course-varkala/AlsoAvailableInVarkalaSection";
 import RishikeshCourseStudyGuide from "@/components/course-rishikesh/RishikeshCourseStudyGuide";
 
 const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
@@ -4418,6 +4419,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
 
         {/* ===== EXPLORE MORE COURSES ===== */}
         <ExploreMoreCoursesSection currentCourse="100-rishikesh" />
+        <AlsoAvailableInVarkalaSection />
 
         {/* ===== FINAL CONVERSION HUB ===== */}
         <section className="py-20 relative overflow-hidden">
