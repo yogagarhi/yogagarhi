@@ -8765,5 +8765,181 @@
     "bestTimeTitle": "Best Time to Visit Varkala for Yoga Training",
     "compareCoursesTitle": "Compare Varkala Yoga Teacher Trainings",
     "exploreMoreTitle": "Explore More Yoga Teacher Training Courses"
+  },
+  "yogaGarhiDifference": {
+    "badge": "Eccellenza Distintiva",
+    "title": "La Differenza YogaGarhi",
+    "subtitle": "Come la nostra filosofia didattica consapevole, i rigidi limiti di classe, i metodi diagnostici ayurvedici e la tradizione himalayana si distinguono nettamente dai corsi commerciali di massa.",
+    "guaranteed": "Standard YogaGarhi Garantito",
+    "pillars": [
+      {
+        "badge": "MENTORATO PERSONALIZZATO",
+        "title": "Piccoli Gruppi: Massimo 8–10 Studenti",
+        "description": "Mentre la maggior parte delle scuole commerciali di Rishikesh accoglie da 25 a 35 studenti in un'unica sala, YogaGarhi limita rigorosamente ogni corso a 8-10 praticanti. Questo ambiente raccolto consente ai nostri maestri di osservare la respirazione, l'allineamento scheletrico e l'ingaggio muscolare di ciascuno in ogni asana. Riceverai quotidianamente correzioni personalizzate in base alla tua conformazione corporea e risposte dirette ai tuoi quesiti filosofici. Non sarai mai un numero anonimo nell'ultima fila."
+      },
+      {
+        "badge": "ESCLUSIVO PER YOGAGARHI",
+        "title": "Yoga Personalizzato Basato su Prakriti",
+        "description": "Rifiutiamo sequenze rigide e standardizzate che rischiano di causare infortuni. Attingendo direttamente all'Ayurveda tradizionale e alla yogaterapia, i nostri docenti valutano la tua Prakriti individuale: l'equilibrio innato dei dosha Vata, Pitta e Kapha. Imparerai ad adattare asana, pranayama e meditazione per armonizzare la tua costituzione. Ti diplomerai con la rara capacità di creare sequenze terapeutiche su misura per ogni allievo."
+      },
+      {
+        "badge": "TRADIZIONE AUTENTICA",
+        "title": "Maestri Himalayani E-RYT 500",
+        "description": "A YogaGarhi studi direttamente con maestri himalayani guidati da Sachin Ji e dalla nostra facoltà senior. Insegnanti E-RYT 500 con lauree universitarie in Scienze dello Yoga e decenni di vita monastica gurukul, che incarnano l'umiltà e i principi etici dei sadhaka tradizionali. Unendo le radici antiche con l'anatomia funzionale e la biomeccanica moderna, ti trasmettono autorevolezza autentica."
+      },
+      {
+        "badge": "ACCESSO IMMEDIATO A VITA",
+        "title": "Preparazione Online Pre-YTTC",
+        "description": "Il tuo percorso di trasformazione inizia subito dopo la conferma dell'iscrizione. Ricevi accesso a vita al nostro portale video di preparazione online Pre-YTTC. Con moduli creati dai nostri insegnanti guida su pronuncia sanscrita, allineamenti base, tecniche respiratorie e mobilità articolare. Arriverai al nostro ashram di Tapovan già preparato sul piano fisico e mentale, pronto per immergerti nello studio."
+      },
+      {
+        "badge": "COMMUNITY A VITA",
+        "title": "Ripetizione Gratuita a Vita",
+        "description": "Il nostro legame non si esaurisce con la consegna del diploma. Come allievo YogaGarhi fai parte della nostra sangha mondiale a vita. Offriamo la garanzia di ripetere il corso gratuitamente: puoi tornare a frequentare le future edizioni del tuo percorso a Rishikesh o a Bali senza alcun costo di iscrizione. Per rinfrescare le sequenze o ricaricare lo spirito nell'ashram, le nostre porte sono sempre aperte."
+      }
+    ]
+  },
+  "yogaGarhiDifferenceVarkala": {
+    "badge": "Eccellenza Distintiva",
+    "title": "La Differenza YogaGarhi a Varkala",
+    "subtitle": "Come i nostri corsi a numero chiuso, la valutazione ayurvedica della Prakriti, le shala vista oceano e il supporto a vita valorizzano il tuo percorso.",
+    "guaranteed": "Standard YogaGarhi Garantito",
+    "pillars": [
+      {
+        "badge": "MENTORATO PERSONALIZZATO",
+        "title": "Piccoli Gruppi: Massimo 8–10 Studenti",
+        "description": "Mentre la maggior parte delle scuole commerciali di Rishikesh accoglie da 25 a 35 studenti in un'unica sala, YogaGarhi limita rigorosamente ogni corso a 8-10 praticanti. Questo ambiente raccolto consente ai nostri maestri di osservare la respirazione, l'allineamento scheletrico e l'ingaggio muscolare di ciascuno in ogni asana. Riceverai quotidianamente correzioni personalizzate in base alla tua conformazione corporea e risposte dirette ai tuoi quesiti filosofici. Non sarai mai un numero anonimo nell'ultima fila."
+      },
+      {
+        "badge": "ESCLUSIVO PER YOGAGARHI",
+        "title": "Yoga Personalizzato Basato su Prakriti",
+        "description": "Rifiutiamo sequenze rigide e standardizzate che rischiano di causare infortuni. Attingendo direttamente all'Ayurveda tradizionale e alla yogaterapia, i nostri docenti valutano la tua Prakriti individuale: l'equilibrio innato dei dosha Vata, Pitta e Kapha. Imparerai ad adattare asana, pranayama e meditazione per armonizzare la tua costituzione. Ti diplomerai con la rara capacità di creare sequenze terapeutiche su misura per ogni allievo."
+      },
+      {
+        "badge": "PRATICA VISTA MARE",
+        "title": "Shala sulla Scogliera con Prana Oceanico",
+        "description": "Le nostre shala si affacciano sul Mar Arabico tra le palme, con il suono ritmico delle onde a scandire la pratica. Gli ioni marini purificano la respirazione, intensificano il pranayama e calmano il sistema nervoso. Dai saluti al sole all'alba sulla scogliera alle meditazioni a piedi nudi sulla spiaggia di Papanasam, la natura arricchisce ogni respiro."
+      },
+      {
+        "badge": "TRADIZIONE AYURVEDICA",
+        "title": "Immersione nell'Ayurveda del Kerala & Panchakarma",
+        "description": "Nella culla storica dell'Ayurveda, il nostro percorso approfondisce la medicina tradizionale indiana. Imparerai Dinacharya (rituali quotidiani), Ritucharya (ritmi stagionali), la diagnosi del polso e l'impiego delle erbe curative del Kerala. Include trattamenti autentici come Abhyanga e impacchi Kizhi eseguiti da professionisti tradizionali."
+      },
+      {
+        "badge": "COMMUNITY A VITA",
+        "title": "Ripetizione Gratuita a Vita",
+        "description": "Il nostro legame non si esaurisce con la consegna del diploma. Come allievo YogaGarhi fai parte della nostra sangha mondiale a vita. Offriamo la garanzia di ripetere il corso gratuitamente: puoi tornare a frequentare le future edizioni del tuo percorso a Rishikesh o a Bali senza alcun costo di iscrizione. Per rinfrescare le sequenze o ricaricare lo spirito nell'ashram, le nostre porte sono sempre aperte."
+      }
+    ]
+  },
+  "trustBadges": {
+    "rishikesh": [
+      {
+        "tag": "Yoga Alliance",
+        "title": "RYS 200, 300 & 500"
+      },
+      {
+        "tag": "Piccoli Gruppi",
+        "title": "Max. 8–10 Studenti"
+      },
+      {
+        "tag": "Tradizione Himalayana",
+        "title": "15+ Anni di Esperienza"
+      },
+      {
+        "tag": "Ashram di Tapovan",
+        "title": "Vita 100% Sattvica"
+      }
+    ],
+    "varkala": [
+      {
+        "tag": "Yoga Alliance",
+        "title": "RYS 200, 300 & 500"
+      },
+      {
+        "tag": "Piccoli Gruppi",
+        "title": "Max. 8–10 Studenti"
+      },
+      {
+        "tag": "Valutato 4.9★",
+        "title": "500+ Diplomati nel Mondo"
+      },
+      {
+        "tag": "100% Completamento",
+        "title": "Percorso Accreditato"
+      }
+    ]
+  },
+  "compareCourses": {
+    "badge": "Confronto dei Programmi",
+    "titleRishikesh": "Confronta i Corsi di Formazione Yoga a Rishikesh",
+    "titleVarkala": "Confronta i Corsi di Formazione Yoga a Varkala",
+    "subtitle": "Scegli il percorso che rispecchia il tuo cammino spirituale, i tuoi orari e i tuoi obiettivi professionali.",
+    "keyFeatures": "Caratteristiche Principali",
+    "immersion": "Immersione",
+    "mostPopular": "Più Popolare",
+    "masterLevel": "Livello Avanzato",
+    "viewDetails": "Vedi Dettagli Corso",
+    "c100Btn": "Corso 100 Ore",
+    "c200Btn": "Corso 200 Ore",
+    "c300Btn": "Corso 300 Ore",
+    "explore100": "Scopri 100 Ore",
+    "explore200": "Scopri 200 Ore",
+    "explore300": "Scopri 300 Ore",
+    "from": "Da",
+    "f_duration": "Durata",
+    "f_level": "Livello di Esperienza",
+    "f_prereq": "Prerequisiti",
+    "f_cert": "Certificazione",
+    "f_focus": "Focus Principale",
+    "f_batch": "Dimensione del Gruppo",
+    "f_price": "Prezzo a partire da"
+  },
+  "exploreMoreCourses": {
+    "badge": "Continua a Crescere",
+    "title": "Esplora Altri Corsi per Insegnanti di Yoga",
+    "subtitle": "Scopri la nostra gamma completa di corsi accreditati Yoga Alliance a Rishikesh e Bali.",
+    "exploreCourse": "Scopri il Corso"
+  },
+  "bestTimeToVisit": {
+    "badgeRishikesh": "Clima Stagionale",
+    "badgeVarkala": "Clima Costiero",
+    "titleRishikesh": "Il Periodo Migliore per la Formazione Yoga a Rishikesh",
+    "titleVarkala": "Il Periodo Migliore per la Formazione Yoga a Varkala",
+    "subtitleRishikesh": "Pianifica il soggiorno in base al clima himalayano e ai tuoi traguardi personali.",
+    "subtitleVarkala": "Pianifica il soggiorno in base alle stagioni tropicali del Kerala.",
+    "monthlyStart": "Inizio il 1° di ogni mese"
+  },
+  "howToReach": {
+    "badge": "Guida al Viaggio e Arrivo",
+    "titleRishikesh": "Come Raggiungere YogaGarhi Rishikesh",
+    "titleVarkala": "Come Raggiungere YogaGarhi Varkala",
+    "titleBali": "Come Raggiungere YogaGarhi Bali",
+    "subtitleRishikesh": "Percorsi chiari, trasferimenti aeroportuali e tariffe taxi per raggiungere senza stress il nostro ashram a Tapovan.",
+    "subtitleVarkala": "Tutti i percorsi, i voli e i treni per raggiungere la nostra shala sulle scogliere in Kerala.",
+    "subtitleBali": "Organizza il viaggio verso il nostro rilassante ashram a Gianyar, Bali.",
+    "byAir": "In Aereo",
+    "byTrain": "In Treno",
+    "byRoad": "Su Strada",
+    "airportTransfers": "Aeroporto e Trasferimenti",
+    "checkInOut": "Check-In e Check-Out"
+  },
+  "faqsHeader": {
+    "badge": "Domande?",
+    "title": "Domande Frequenti",
+    "subtitleRishikesh": "Tutto quello che c'è da sapere sul nostro corso per insegnanti di yoga da {courseHours} ore a Tapovan, Rishikesh.",
+    "subtitleVarkala": "Tutto quello che c'è da sapere sul nostro corso per insegnanti di yoga da {courseHours} ore a Varkala, Kerala."
+  },
+  "partnerships": {
+    "title": "Riconosciuto e Apprezzato in Tutto il Mondo"
+  },
+  "retreatExtra": {
+    "howToArriveTitle": "Come Arrivare a YogaGarhi {loc}",
+    "howToArriveDesc": "Il modo più comodo per raggiungere YogaGarhi {loc} è volare all'aeroporto più vicino. Su richiesta organizziamo transfer privati.",
+    "exploreOtherTitle": "Esplora Altri Ritiri a {loc}",
+    "galleryTitle": "Galleria YogaGarhi {loc}",
+    "galleryDesc": "Uno sguardo alla vita nel nostro rifugio di pace a {loc}, tra piscine immerse nel verde e workshop spirituali.",
+    "teacherTrainingTitle": "Vuoi Diventare un Insegnante di Yoga Certificato a {loc}?",
+    "teacherTrainingDesc": "Approfondisci la tua pratica con i nostri percorsi per insegnanti accreditati Yoga Alliance a {loc}."
   }
 }

@@ -1,8 +1,24 @@
+"use client";
 import React from "react";
 import { Plane, Clock, MapPin } from "lucide-react";
 import { HOW_TO_REACH } from "@/constants/course200Data";
+import { useLocale } from "next-intl";
+import { HOW_TO_REACH_UI } from "@/constants/courseSectionsTranslations";
 
-export default function HowToReachSection() {
+interface HowToReachSectionProps {
+  locale?: string;
+}
+
+export default function HowToReachSection({ locale }: HowToReachSectionProps = {}) {
+  let activeLocale = locale;
+  try {
+    const intlLoc = useLocale();
+    if (!activeLocale) activeLocale = intlLoc;
+  } catch (e) {}
+
+  const isEn = !activeLocale || activeLocale === "en";
+  const ui = (isEn ? null : HOW_TO_REACH_UI[activeLocale || "en"]) || HOW_TO_REACH_UI.en;
+
   // If how to reach is null or unconfirmed, DO NOT RENDER anything
   if (!HOW_TO_REACH) {
     return null;
@@ -15,13 +31,13 @@ export default function HowToReachSection() {
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-2">
               <MapPin className="w-3.5 h-3.5" />
-              <span>Travel & Arrival</span>
+              <span>{ui.badge}</span>
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              How to Reach YogaGarhi Bali
+              {ui.titleBali}
             </h2>
             <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
-              Plan your travel smoothly to our peaceful ashram sanctuary in Gianyar, Bali.
+              {ui.subtitleBali}
             </p>
           </div>
 
@@ -33,7 +49,7 @@ export default function HowToReachSection() {
                 </div>
                 <div>
                   <h3 className="font-heading text-lg font-bold text-foreground">
-                    Airport & Transfers
+                    {ui.airportTransfers}
                   </h3>
                   <p className="text-xs text-primary font-semibold uppercase tracking-wider mt-0.5">
                     {HOW_TO_REACH.nearestAirport}
@@ -55,7 +71,7 @@ export default function HowToReachSection() {
                 </div>
                 <div>
                   <h3 className="font-heading text-lg font-bold text-foreground">
-                    Check-In & Check-Out
+                    {ui.checkInOut}
                   </h3>
                   <p className="text-xs text-muted-foreground mt-2 leading-relaxed">
                     {HOW_TO_REACH.checkInTime && `Check-in: ${HOW_TO_REACH.checkInTime}`}

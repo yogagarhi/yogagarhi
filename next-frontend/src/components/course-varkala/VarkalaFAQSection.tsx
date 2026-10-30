@@ -7,13 +7,24 @@ import {
   VARKALA_FAQS_100_HOUR,
   VARKALA_FAQS_300_HOUR
 } from "@/constants/varkalaCourseData";
+import { useLocale } from "next-intl";
+import { FAQS_HEADER_UI } from "@/constants/courseSectionsTranslations";
 
 interface VarkalaFAQSectionProps {
   courseHours?: "100" | "200" | "300";
+  locale?: string;
 }
 
-export default function VarkalaFAQSection({ courseHours = "200" }: VarkalaFAQSectionProps) {
+export default function VarkalaFAQSection({ courseHours = "200", locale }: VarkalaFAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  let activeLocale = locale;
+  try {
+    const intlLoc = useLocale();
+    if (!activeLocale) activeLocale = intlLoc;
+  } catch (e) {}
+
+  const isEn = !activeLocale || activeLocale === "en";
+  const ui = (isEn ? null : FAQS_HEADER_UI[activeLocale || "en"]) || FAQS_HEADER_UI.en;
 
   const faqs: FAQItem[] =
     courseHours === "100"
@@ -34,13 +45,13 @@ export default function VarkalaFAQSection({ courseHours = "200" }: VarkalaFAQSec
           <div className="text-center mb-16">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-3">
               <HelpCircle className="w-3.5 h-3.5" />
-              <span>Got Questions?</span>
+              <span>{ui.badge}</span>
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Frequently Asked Questions
+              {ui.title}
             </h2>
             <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
-              Everything you need to know about our {courseHours}-Hour Yoga Teacher Training in Varkala, Kerala.
+              {ui.subtitleVarkala.replace("{courseHours}", courseHours)}
             </p>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>

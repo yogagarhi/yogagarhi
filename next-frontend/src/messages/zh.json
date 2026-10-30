@@ -8765,5 +8765,181 @@
     "bestTimeTitle": "Best Time to Visit Varkala for Yoga Training",
     "compareCoursesTitle": "Compare Varkala Yoga Teacher Trainings",
     "exploreMoreTitle": "Explore More Yoga Teacher Training Courses"
+  },
+  "yogaGarhiDifference": {
+    "badge": "卓越的独特性",
+    "title": "YogaGarhi独特优势",
+    "subtitle": "了解我们严谨的教学哲学、严格的精品小班制、阿育吠陀体质诊断以及正统喜马拉雅传承，如何使我们与商业化流水线培训形成鲜明对比。",
+    "guaranteed": "YogaGarhi标准保证",
+    "pillars": [
+      {
+        "badge": "悉心导师制",
+        "title": "精品小班：最多8-10名学员",
+        "description": "在瑞诗凯诗，大多数商业化瑜伽学院常在一间大厅里招收25到35名学生，而YogaGarhi严格将每期班级限制在8到10名学员以内。这种精品小班环境让我们的资深导师能够在每个体式中细致观察每位学员的呼吸、骨骼正位与肌肉发力。你将每天获得针对个人身体结构的一对一解剖学反馈与正位调整，确保你绝不会成为后排被忽视的背景。"
+      },
+      {
+        "badge": "YogaGarhi独家专享",
+        "title": "基于Prakriti体质的定制瑜伽",
+        "description": "我们拒绝机械千篇一律、容易导致学员受伤的练习套路。依托经典阿育吠陀与瑜伽疗愈学，资深导师将细致评估每位学员独特的Prakriti（风、火、水三种Dosha的先天体质平衡）。在课程中，你将学会如何调整体式、调息比例与日常冥想，以平衡自身能量。更重要的是，你将掌握为不同年龄、体质与健康状况的学生量身定制安全疗愈瑜伽序列的宝贵诊断技能。"
+      },
+      {
+        "badge": "正统传承",
+        "title": "E-RYT 500 喜马拉雅大师团队",
+        "description": "在YogaGarhi，你将直接师从以Sachin Ji为首的正统喜马拉雅导师团队。我们的老师均持有E-RYT 500资深认证，具备瑜伽科学研究生学位及数十年传统古鲁库尔修习经历。他们将喜马拉雅古老传承与现代功能解剖学、生物力学紧密结合，赋予你深厚的内在智慧与权威的专业资质。"
+      },
+      {
+        "badge": "即刻开通终身访问",
+        "title": "开营前在线预科系统 (Pre-YTTC)",
+        "description": "确认报名的那一刻起，你的蜕变旅程便已启航。你将立即获得Pre-YTTC在线视频预科学习系统的终身访问权限。由首席导师精心录制的模块涵盖梵文发音、核心体式正位、基础呼吸控制法与关节激活练习。在飞抵印度之前便建立起规律的每日Sadhana习练，让你在抵达塔波万修道院首日即具备充分的体能储备与学习自信。"
+      },
+      {
+        "badge": "终身相伴的全球社群",
+        "title": "终身免费重修保障",
+        "description": "毕业典礼上领受证书并非我们缘分的终点。作为YogaGarhi校友，你将终身归属于我们的全球精神僧团（Sangha）。我们提供卓越的终身免费重修保障：未来任何时候，你均可回到瑞诗凯诗或巴厘岛校区，完全免学费重温修习已完成的课程批次。无论为了巩固编排技能还是回到修道院疗愈身心，我们的大门永远为你敞开。"
+      }
+    ]
+  },
+  "yogaGarhiDifferenceVarkala": {
+    "badge": "卓越的独特性",
+    "title": "YogaGarhi瓦尔卡拉独特优势",
+    "subtitle": "严格的精品班级名额、个性化阿育吠陀体质评估、一线海景瑜伽馆与终身发展支持，带给你超越商业考证的纯正修行。",
+    "guaranteed": "YogaGarhi标准保证",
+    "pillars": [
+      {
+        "badge": "悉心导师制",
+        "title": "精品小班：最多8-10名学员",
+        "description": "在瑞诗凯诗，大多数商业化瑜伽学院常在一间大厅里招收25到35名学生，而YogaGarhi严格将每期班级限制在8到10名学员以内。这种精品小班环境让我们的资深导师能够在每个体式中细致观察每位学员的呼吸、骨骼正位与肌肉发力。你将每天获得针对个人身体结构的一对一解剖学反馈与正位调整，确保你绝不会成为后排被忽视的背景。"
+      },
+      {
+        "badge": "YogaGarhi独家专享",
+        "title": "基于Prakriti体质的定制瑜伽",
+        "description": "我们拒绝机械千篇一律、容易导致学员受伤的练习套路。依托经典阿育吠陀与瑜伽疗愈学，资深导师将细致评估每位学员独特的Prakriti（风、火、水三种Dosha的先天体质平衡）。在课程中，你将学会如何调整体式、调息比例与日常冥想，以平衡自身能量。更重要的是，你将掌握为不同年龄、体质与健康状况的学生量身定制安全疗愈瑜伽序列的宝贵诊断技能。"
+      },
+      {
+        "badge": "一线海景修习",
+        "title": "悬崖与海滩之上的海风Prana瑜伽馆",
+        "description": "我们的瑜伽馆高居阿拉伯海悬崖之上，掩映于摇曳棕榈树间，海浪声成为天然的节拍器。富含负离子的海风净化呼吸系统、深化调息并平抚神经。从悬崖甲板上的日出拜日式，到神圣Papanasam海滩上的赤足扎根冥想，大自然为你注入深邃能量。"
+      },
+      {
+        "badge": "喀拉拉阿育吠陀正统",
+        "title": "喀拉拉阿育吠陀深度浸润与排毒疗愈",
+        "description": "坐落于阿育吠陀的发祥地，课程深度融入经典阿育吠陀医学体系。研习Dinacharya（日常养生法）、Ritucharya（顺时养生法）、脉诊基础及传统草本应用，并在专业理疗师施治下体验正宗的Abhyanga精油按摩与Kizhi草药热敷理疗。"
+      },
+      {
+        "badge": "终身相伴的全球社群",
+        "title": "终身免费重修保障",
+        "description": "毕业典礼上领受证书并非我们缘分的终点。作为YogaGarhi校友，你将终身归属于我们的全球精神僧团（Sangha）。我们提供卓越的终身免费重修保障：未来任何时候，你均可回到瑞诗凯诗或巴厘岛校区，完全免学费重温修习已完成的课程批次。无论为了巩固编排技能还是回到修道院疗愈身心，我们的大门永远为你敞开。"
+      }
+    ]
+  },
+  "trustBadges": {
+    "rishikesh": [
+      {
+        "tag": "Yoga Alliance",
+        "title": "RYS 200, 300 & 500"
+      },
+      {
+        "tag": "精品小班",
+        "title": "最多8-10名学员"
+      },
+      {
+        "tag": "喜马拉雅传承",
+        "title": "15年以上教学经验"
+      },
+      {
+        "tag": "塔波万修道院",
+        "title": "100%萨埵纯净生活"
+      }
+    ],
+    "varkala": [
+      {
+        "tag": "Yoga Alliance",
+        "title": "RYS 200, 300 & 500"
+      },
+      {
+        "tag": "精品小班",
+        "title": "最多8-10名学员"
+      },
+      {
+        "tag": "4.9★ 高分好评",
+        "title": "500多位全球毕业生"
+      },
+      {
+        "tag": "100%结业率",
+        "title": "国际认证专业通道"
+      }
+    ]
+  },
+  "compareCourses": {
+    "badge": "课程对比",
+    "titleRishikesh": "对比瑞诗凯诗瑜伽教师培训课程",
+    "titleVarkala": "对比瓦尔卡拉瑜伽教师培训课程",
+    "subtitle": "选择与你的灵性追求、时间安排以及专业认证目标最契合的培训项目。",
+    "keyFeatures": "核心特色",
+    "immersion": "入门精修",
+    "mostPopular": "最受欢迎",
+    "masterLevel": "导师大师级",
+    "viewDetails": "查看课程详情",
+    "c100Btn": "100小时课程",
+    "c200Btn": "200小时课程",
+    "c300Btn": "300小时课程",
+    "explore100": "探索100小时",
+    "explore200": "探索200小时",
+    "explore300": "探索300小时",
+    "from": "起",
+    "f_duration": "时长",
+    "f_level": "经验水平",
+    "f_prereq": "先决条件",
+    "f_cert": "国际认证",
+    "f_focus": "核心重点",
+    "f_batch": "班级规模",
+    "f_price": "起步学费"
+  },
+  "exploreMoreCourses": {
+    "badge": "持续深造进阶",
+    "title": "探索更多瑜伽教师培训课程",
+    "subtitle": "探索我们在瑞诗凯诗与巴厘岛开设的全方位瑜伽联盟认证教师培训课程。",
+    "exploreCourse": "了解课程"
+  },
+  "bestTimeToVisit": {
+    "badgeRishikesh": "季节气候",
+    "badgeVarkala": "海滨气候",
+    "titleRishikesh": "前往瑞诗凯诗修习瑜伽的最佳时节",
+    "titleVarkala": "前往瓦尔卡拉修习瑜伽的最佳时节",
+    "subtitleRishikesh": "根据喜马拉雅的气候变化与个人的修习目标，规划你的灵性之旅。",
+    "subtitleVarkala": "根据喀拉拉的热带季节特征，规划你的海滨修习之旅。",
+    "monthlyStart": "每月1日开营"
+  },
+  "howToReach": {
+    "badge": "交通与到达指南",
+    "titleRishikesh": "如何前往YogaGarhi瑞诗凯诗校区",
+    "titleVarkala": "如何前往YogaGarhi瓦尔卡拉校区",
+    "titleBali": "如何前往YogaGarhi巴厘岛校区",
+    "subtitleRishikesh": "详尽清晰的交通路线、机场接送指南与出租车参考资费，助你顺利抵达塔波万修道院。",
+    "subtitleVarkala": "便捷明了的交通换乘路线与火车航班信息，助你顺利前往喀拉拉悬崖瑜伽馆。",
+    "subtitleBali": "轻松规划前往巴厘岛吉安雅静谧修道院的行程与接送。",
+    "byAir": "飞机直达",
+    "byTrain": "火车铁路",
+    "byRoad": "公路巴士",
+    "airportTransfers": "机场与接送机",
+    "checkInOut": "入住与退房"
+  },
+  "faqsHeader": {
+    "badge": "常见疑问",
+    "title": "常见问题解答",
+    "subtitleRishikesh": "关于我们在瑞诗凯诗塔波万举办的{courseHours}小时瑜伽教师培训课程所需了解的一切。",
+    "subtitleVarkala": "关于我们在喀拉拉瓦尔卡拉举办的{courseHours}小时瑜伽教师培训课程所需了解的一切。"
+  },
+  "partnerships": {
+    "title": "享誉全球的权威认证与信赖"
+  },
+  "retreatExtra": {
+    "howToArriveTitle": "如何抵达YogaGarhi {loc}修道院",
+    "howToArriveDesc": "前往YogaGarhi {loc}修道院最便捷的方式是搭乘航班飞抵最近的机场。我们可根据需求为你安排专车接送。",
+    "exploreOtherTitle": "探索{loc}的其他静修之旅",
+    "galleryTitle": "YogaGarhi {loc} 实景相册",
+    "galleryDesc": "领略我们在{loc}静谧修道院的日常修习、热带泳池庭院与灵性工作坊的温馨点滴。",
+    "teacherTrainingTitle": "渴望在{loc}成为国际认证的专业瑜伽导师吗？",
+    "teacherTrainingDesc": "探索我们在{loc}开设的经由全美瑜伽联盟权威认证的专业教师培训项目。"
   }
 }

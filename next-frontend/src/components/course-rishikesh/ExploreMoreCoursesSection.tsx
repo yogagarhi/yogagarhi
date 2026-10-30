@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Clock, Award, MapPin, Sparkles } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import { useLocale } from "next-intl";
+import { EXPLORE_MORE_COURSES_UI } from "@/constants/courseSectionsTranslations";
 
 const rishikeshSurroundings = getCloudinaryImage("rishikesh-surroundings.png");
 const groupPose = getCloudinaryImage("group-pose.png");
@@ -12,9 +14,19 @@ const heroBali = getCloudinaryImage("hero-yoga-bali.jpg");
 
 interface ExploreMoreCoursesSectionProps {
   currentCourse?: "100-rishikesh" | "200-rishikesh" | "300-rishikesh";
+  locale?: string;
 }
 
-export default function ExploreMoreCoursesSection({ currentCourse = "200-rishikesh" }: ExploreMoreCoursesSectionProps) {
+export default function ExploreMoreCoursesSection({ currentCourse = "200-rishikesh", locale }: ExploreMoreCoursesSectionProps) {
+  let activeLocale = locale;
+  try {
+    const intlLoc = useLocale();
+    if (!activeLocale) activeLocale = intlLoc;
+  } catch (e) {}
+
+  const isEn = !activeLocale || activeLocale === "en";
+  const ui = (isEn ? null : EXPLORE_MORE_COURSES_UI[activeLocale || "en"]) || EXPLORE_MORE_COURSES_UI.en;
+
   const allCourses = [
     {
       id: "100-rishikesh",
@@ -62,8 +74,12 @@ export default function ExploreMoreCoursesSection({ currentCourse = "200-rishike
     }
   ];
 
-  // Filter out the current course so user sees the other 3
   const displayCourses = allCourses.filter((c) => c.id !== currentCourse);
+
+  const getHref = (path: string) => {
+    if (isEn) return path;
+    return `/${activeLocale}${path}`;
+  };
 
   return (
     <section className="py-20 bg-background relative overflow-hidden" id="explore-more-courses" style={{ contentVisibility: "auto", containIntrinsicSize: "850px" }}>
@@ -73,13 +89,13 @@ export default function ExploreMoreCoursesSection({ currentCourse = "200-rishike
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-3">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Continue Your Growth</span>
+              <span>{ui.badge}</span>
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Explore More Yoga Teacher Training Courses
+              {ui.title}
             </h2>
             <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
-              Discover our full spectrum of Yoga Alliance accredited trainings across Rishikesh and Bali.
+              {ui.subtitle}
             </p>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>
@@ -99,48 +115,50 @@ export default function ExploreMoreCoursesSection({ currentCourse = "200-rishike
                       alt={course.title}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, 33vw"
                     />
-                    <div className="absolute top-3 right-3 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-white text-xs font-bold">
-                      From {course.price}
-                    </div>
-                    <div className="absolute bottom-3 left-3 px-2.5 py-1 rounded-lg bg-primary/90 text-primary-foreground text-[11px] font-bold flex items-center gap-1">
-                      <MapPin className="w-3 h-3" />
-                      <span>{course.location}</span>
+                    <div className="absolute top-3 right-3 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-primary shadow-sm">
+                      {course.price}
                     </div>
                   </div>
 
-                  {/* Body */}
+                  {/* Body Content */}
                   <div className="p-6">
-                    <div className="flex items-center gap-4 text-xs text-muted-foreground mb-2">
+                    <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3 flex-wrap">
+                      <span className="flex items-center gap-1">
+                        <MapPin className="w-3.5 h-3.5 text-primary" />
+                        {course.location.split(",")[0]}
+                      </span>
+                      <span>•</span>
                       <span className="flex items-center gap-1">
                         <Clock className="w-3.5 h-3.5 text-primary" />
-                        {course.duration}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Award className="w-3.5 h-3.5 text-primary" />
-                        {course.certification}
+                        {course.duration.split("(")[0]}
                       </span>
                     </div>
 
-                    <h3 className="font-heading text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="font-heading text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
                       {course.title}
                     </h3>
 
-                    <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-xs font-semibold text-primary uppercase tracking-wider mb-3 flex items-center gap-1">
+                      <Award className="w-3.5 h-3.5" />
+                      {course.certification}
+                    </p>
+
+                    <p className="text-sm text-muted-foreground line-clamp-3 leading-relaxed">
                       {course.description}
                     </p>
                   </div>
                 </div>
 
-                {/* Footer Link */}
+                {/* Footer CTA */}
                 <div className="p-6 pt-0">
                   <Link
-                    href={course.href}
-                    className="w-full py-3 px-4 rounded-xl bg-secondary hover:bg-primary hover:text-primary-foreground text-foreground text-xs md:text-sm font-bold flex items-center justify-center gap-2 transition-all"
+                    href={getHref(course.href)}
+                    className="w-full py-3 px-4 rounded-xl bg-secondary text-foreground text-xs font-bold flex items-center justify-center gap-2 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
                   >
-                    <span>View Course Details</span>
-                    <ArrowRight className="w-4 h-4" />
+                    <span>{ui.exploreCourse}</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
               </div>

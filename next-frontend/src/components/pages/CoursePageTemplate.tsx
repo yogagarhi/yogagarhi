@@ -1401,15 +1401,15 @@ export default function CoursePageTemplate({
         {/* ===== WHY YOGAGARHI HIGHLIGHT BOX & RISHIKESH / VARKALA SECTIONS ===== */}
         {isRishikesh ? (
           <>
-            <TrustBadgesRow />
-            <WhyRishikeshSection />
-            <YogaGarhiDifferenceSection />
+            <TrustBadgesRow locale={locale} />
+            <WhyRishikeshSection locale={locale} />
+            <YogaGarhiDifferenceSection locale={locale} />
           </>
         ) : isVarkala ? (
           <>
-            <TrustBadgesRowVarkala />
-            <WhyVarkalaSection />
-            <YogaGarhiDifferenceVarkalaSection />
+            <TrustBadgesRowVarkala locale={locale} />
+            <WhyVarkalaSection locale={locale} />
+            <YogaGarhiDifferenceVarkalaSection locale={locale} />
           </>
         ) : (
           courseKey !== "200-hour-rishikesh" && (
@@ -4352,26 +4352,26 @@ export default function CoursePageTemplate({
 
         {isRishikesh ? (
           <>
-            <HowToReachRishikeshSection />
-            <BestTimeToVisitRishikeshSection />
-            <RishikeshFAQSection courseHours={courseKey?.includes("100") ? "100" : courseKey?.includes("300") ? "300" : "200"} />
-            <CompareCoursesTable />
-            <ExploreMoreCoursesSection currentCourse={courseKey?.includes("100") ? "100-rishikesh" : courseKey?.includes("300") ? "300-rishikesh" : "200-rishikesh"} />
+            <HowToReachRishikeshSection locale={locale} />
+            <BestTimeToVisitRishikeshSection locale={locale} />
+            <RishikeshFAQSection courseHours={courseKey?.includes("100") ? "100" : courseKey?.includes("300") ? "300" : "200"} locale={locale} />
+            <CompareCoursesTable locale={locale} />
+            <ExploreMoreCoursesSection currentCourse={courseKey?.includes("100") ? "100-rishikesh" : courseKey?.includes("300") ? "300-rishikesh" : "200-rishikesh"} locale={locale} />
             <AlsoAvailableInVarkalaSection />
           </>
         ) : isVarkala ? (
           <>
-            <HowToReachVarkalaSection />
-            <BestTimeToVisitVarkalaSection />
-            <VarkalaFAQSection courseHours={courseKey?.includes("100") ? "100" : courseKey?.includes("300") ? "300" : "200"} />
-            <CompareVarkalaCoursesTable />
-            <ExploreMoreVarkalaCoursesSection currentCourse={courseKey?.includes("100") ? "100-varkala" : courseKey?.includes("300") ? "300-varkala" : "200-varkala"} />
+            <HowToReachVarkalaSection locale={locale} />
+            <BestTimeToVisitVarkalaSection locale={locale} />
+            <VarkalaFAQSection courseHours={courseKey?.includes("100") ? "100" : courseKey?.includes("300") ? "300" : "200"} locale={locale} />
+            <CompareVarkalaCoursesTable locale={locale} />
+            <ExploreMoreVarkalaCoursesSection currentCourse={courseKey?.includes("100") ? "100-varkala" : courseKey?.includes("300") ? "300-varkala" : "200-varkala"} locale={locale} />
             <AlsoAvailableInRishikeshSection />
           </>
         ) : (
           <>
             {/* ===== HOW TO REACH SECTION (CONDITIONAL) ===== */}
-            <HowToReachSection />
+            <HowToReachSection locale={locale} />
 
             {/* ===== LOCATION & MAP ===== */}
             <section className="py-20 bg-secondary/30">

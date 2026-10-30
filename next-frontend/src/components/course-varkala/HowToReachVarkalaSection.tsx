@@ -2,9 +2,23 @@
 import React, { useState } from "react";
 import { Plane, Train, Bus, MapPin, Car, PhoneCall, Check, ExternalLink, FileText, CheckCircle2 } from "lucide-react";
 import { VARKALA_HOW_TO_REACH_INFO } from "@/constants/varkalaCourseData";
+import { useLocale } from "next-intl";
+import { HOW_TO_REACH_UI } from "@/constants/courseSectionsTranslations";
 
-export default function HowToReachVarkalaSection() {
+interface HowToReachVarkalaSectionProps {
+  locale?: string;
+}
+
+export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSectionProps = {}) {
   const [activeTab, setActiveTab] = useState<"air" | "train" | "road">("air");
+  let activeLocale = locale;
+  try {
+    const intlLoc = useLocale();
+    if (!activeLocale) activeLocale = intlLoc;
+  } catch (e) {}
+
+  const isEn = !activeLocale || activeLocale === "en";
+  const ui = (isEn ? null : HOW_TO_REACH_UI[activeLocale || "en"]) || HOW_TO_REACH_UI.en;
 
   return (
     <section className="py-20 bg-secondary/30 relative overflow-hidden" id="how-to-reach" style={{ contentVisibility: "auto", containIntrinsicSize: "1100px" }}>
@@ -14,13 +28,13 @@ export default function HowToReachVarkalaSection() {
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-3">
               <MapPin className="w-3.5 h-3.5" />
-              <span>Travel & Arrival Guide</span>
+              <span>{ui.badge}</span>
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              How to Reach YogaGarhi Varkala
+              {ui.titleVarkala}
             </h2>
             <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
-              Clear travel routes, nearest international airports, railway links, and pre-negotiated taxi fares to arrive smoothly at our coastal sanctuary.
+              {ui.subtitleVarkala}
             </p>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>
@@ -37,7 +51,7 @@ export default function HowToReachVarkalaSection() {
                 }`}
               >
                 <Plane className="w-4 h-4" />
-                <span>By Air</span>
+                <span>{ui.byAir}</span>
               </button>
 
               <button
@@ -49,7 +63,7 @@ export default function HowToReachVarkalaSection() {
                 }`}
               >
                 <Train className="w-4 h-4" />
-                <span>By Train</span>
+                <span>{ui.byTrain}</span>
               </button>
 
               <button
@@ -61,7 +75,7 @@ export default function HowToReachVarkalaSection() {
                 }`}
               >
                 <Bus className="w-4 h-4" />
-                <span>By Road</span>
+                <span>{ui.byRoad}</span>
               </button>
             </div>
           </div>

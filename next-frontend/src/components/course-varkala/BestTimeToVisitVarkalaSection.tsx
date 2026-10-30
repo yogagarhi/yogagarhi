@@ -1,9 +1,24 @@
 "use client";
 import React from "react";
-import { Calendar, Sparkles, Thermometer } from "lucide-react";
+import { Calendar, Sun, CloudRain, Sparkles, Thermometer } from "lucide-react";
 import { VARKALA_SEASONS } from "@/constants/varkalaCourseData";
+import { useLocale } from "next-intl";
+import { BEST_TIME_TO_VISIT_UI } from "@/constants/courseSectionsTranslations";
 
-export default function BestTimeToVisitVarkalaSection() {
+interface BestTimeToVisitVarkalaSectionProps {
+  locale?: string;
+}
+
+export default function BestTimeToVisitVarkalaSection({ locale }: BestTimeToVisitVarkalaSectionProps = {}) {
+  let activeLocale = locale;
+  try {
+    const intlLoc = useLocale();
+    if (!activeLocale) activeLocale = intlLoc;
+  } catch (e) {}
+
+  const isEn = !activeLocale || activeLocale === "en";
+  const ui = (isEn ? null : BEST_TIME_TO_VISIT_UI[activeLocale || "en"]) || BEST_TIME_TO_VISIT_UI.en;
+
   return (
     <section className="py-20 bg-background relative overflow-hidden" id="best-time-to-visit" style={{ contentVisibility: "auto", containIntrinsicSize: "600px" }}>
       <div className="container mx-auto px-4 relative z-10">
@@ -12,13 +27,13 @@ export default function BestTimeToVisitVarkalaSection() {
           <div className="text-center mb-14">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-3">
               <Calendar className="w-3.5 h-3.5" />
-              <span>Coastal Climate & Seasons</span>
+              <span>{ui.badgeVarkala}</span>
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Best Time to Visit Varkala for Yoga Training
+              {ui.titleVarkala}
             </h2>
             <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
-              Plan your coastal training and Ayurvedic healing according to seasonal Kerala weather patterns and personal retreat goals.
+              {ui.subtitleVarkala}
             </p>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>
@@ -55,7 +70,7 @@ export default function BestTimeToVisitVarkalaSection() {
 
                 <div className="mt-6 pt-4 border-t border-border/60 text-xs font-semibold text-foreground/80 flex items-center gap-2">
                   <Sparkles className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span>Monthly 1st start date</span>
+                  <span>{ui.monthlyStart}</span>
                 </div>
               </div>
             ))}

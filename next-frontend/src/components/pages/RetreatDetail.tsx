@@ -36,6 +36,7 @@ import { RetreatPackage, RETREAT_LOCATIONS } from "@/constants/retreats";
 import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
+import { RETREAT_EXTRA_UI } from "@/constants/courseSectionsTranslations";
 
 interface RetreatDetailProps {
   retreat: RetreatPackage;
@@ -131,6 +132,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
   const isEn = currentLocale === "en";
   const displayName = getLocalizedLocName(retreat.locationKey, retreat.locationName, currentLocale);
   const linkPrefix = isEn ? "" : `/${currentLocale}`;
+  const extraUI = isEn ? RETREAT_EXTRA_UI.en : (RETREAT_EXTRA_UI[currentLocale] || RETREAT_EXTRA_UI.en);
 
   const retreatKey = `${retreat.locationKey}-${retreat.slug}`;
   const pkg = !isEn && messages?.packages ? messages.packages[retreatKey] : null;
@@ -419,6 +421,24 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                   ? `${retreat.durationDays} Days & ${retreat.durationNights} Nights Yoga Retreat in ${retreat.locationName}`
                   : (currentLocale === 'nl'
                       ? `${retreat.durationDays} Dagen & ${retreat.durationNights} Nachten Yoga Retraite in ${displayName}`
+                      : currentLocale === 'de'
+                      ? `${retreat.durationDays} Tage & ${retreat.durationNights} Nächte Yoga Retreat in ${displayName}`
+                      : currentLocale === 'fr'
+                      ? `${retreat.durationDays} Jours & ${retreat.durationNights} Nuits Retraite de Yoga à ${displayName}`
+                      : currentLocale === 'es'
+                      ? `${retreat.durationDays} Días y ${retreat.durationNights} Noches Retiro de Yoga en ${displayName}`
+                      : currentLocale === 'it'
+                      ? `${retreat.durationDays} Giorni e ${retreat.durationNights} Notti Ritiro di Yoga a ${displayName}`
+                      : currentLocale === 'ru'
+                      ? `${retreat.durationDays} Дней и ${retreat.durationNights} Ночей Ретрит Йоги в ${displayName}`
+                      : currentLocale === 'id'
+                      ? `${retreat.durationDays} Hari & ${retreat.durationNights} Malam Retret Yoga di ${displayName}`
+                      : currentLocale === 'ja'
+                      ? `${displayName} ${retreat.durationDays}日間＆${retreat.durationNights}泊 ヨガリトリート`
+                      : currentLocale === 'ko'
+                      ? `${displayName} ${retreat.durationDays}일 ${retreat.durationNights}박 요가 리트리트`
+                      : currentLocale === 'zh'
+                      ? `${displayName} ${retreat.durationDays}天${retreat.durationNights}晚 瑜伽静修`
                       : `${retreat.durationDays} Days & ${retreat.durationNights} Nights Yoga Retreat in ${displayName}`)}
               </h2>
             </div>
@@ -998,17 +1018,15 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           <section id="gallery">
             <div className="text-center max-w-3xl mx-auto mb-10">
               <span className="text-xs uppercase font-bold tracking-widest text-amber-800">
-                {isEn ? "Visual Tour" : (currentLocale === 'nl' ? "Foto-impressie" : "Visual Tour")}
+                {isEn ? "Visual Tour" : (currentLocale === 'nl' ? "Foto-impressie" : currentLocale === 'fr' ? "Visite Virtuelle" : currentLocale === 'de' ? "Bildergalerie" : currentLocale === 'es' ? "Tour Visual" : currentLocale === 'it' ? "Tour Fotografico" : currentLocale === 'ja' ? "写真ツアー" : currentLocale === 'ko' ? "사진 투어" : currentLocale === 'zh' ? "实景导览" : currentLocale === 'ru' ? "Фотогалерея" : currentLocale === 'id' ? "Tur Visual" : "Visual Tour")}
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-                {isEn ? `YogaGarhi ${retreat.locationName} Gallery` : (currentLocale === 'nl' ? `Foto-impressie YogaGarhi ${displayName}` : `YogaGarhi ${displayName} Gallery`)}
+                {isEn ? `YogaGarhi ${retreat.locationName} Gallery` : extraUI.galleryTitle.replace('{loc}', displayName)}
               </h2>
               <p className="text-stone-600 text-sm sm:text-base mt-2">
                 {isEn
                   ? `Glimpses of life inside our peaceful ${retreat.locationName} sanctuary, lush tropical pools, and spiritual workshops.`
-                  : (currentLocale === 'nl'
-                      ? `Een impressie van onze vredige ashram in ${displayName}, weelderige zwembaden en spirituele workshops.`
-                      : `Glimpses of life inside our peaceful ${displayName} sanctuary, lush tropical pools, and spiritual workshops.`)}
+                  : extraUI.galleryDesc.replace('{loc}', displayName)}
               </p>
             </div>
 
@@ -1063,15 +1081,13 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               <div className="flex items-center gap-3 mb-4">
                 <Compass className="w-6 h-6 text-amber-800 flex-shrink-0" />
                 <h2 className="font-heading text-lg sm:text-xl font-bold text-amber-950 uppercase">
-                  {isEn ? `How to Arrive at YogaGarhi ${retreat.locationName}` : (currentLocale === 'nl' ? `Routebeschrijving naar YogaGarhi ${displayName}` : `How to Arrive at YogaGarhi ${displayName}`)}
+                  {isEn ? `How to Arrive at YogaGarhi ${retreat.locationName}` : extraUI.howToArriveTitle.replace('{loc}', displayName)}
                 </h2>
               </div>
               <p className="text-stone-700 text-sm sm:text-base leading-relaxed mb-4">
                 {isEn
                   ? (retreat.policy?.airportGuide || "The best and most convenient way to travel to YogaGarhi is to take a flight to the nearest airport. We arrange comfortable transfers.")
-                  : (currentLocale === 'nl'
-                      ? `De meest comfortabele manier om naar YogaGarhi ${displayName} te reizen is per vliegtuig naar de dichtstbijzijnde luchthaven. Wij verzorgen op verzoek privé-transfers.`
-                      : (retreat.policy?.airportGuide || "We arrange comfortable transfers."))}
+                  : extraUI.howToArriveDesc.replace('{loc}', displayName)}
               </p>
               <div className="text-xs text-stone-600 bg-white p-4 rounded-xl border border-stone-200">
                 🚕 <strong>{isEn ? "Private Airport Pickup:" : (currentLocale === 'nl' ? "Luchthaventransfer:" : "Private Airport Pickup:")}</strong> {isEn ? "We arrange reliable, air-conditioned private taxi transfers directly from airport arrivals to our campus reception." : (currentLocale === 'nl' ? "Wij verzorgen betrouwbare transfers met airconditioning vanaf de luchthaven direct naar de receptie." : "We arrange reliable taxi transfers from airport arrivals.")}
@@ -1129,16 +1145,34 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-amber-900 to-amber-950 text-white shadow-xl">
             <div className="max-w-3xl">
               <span className="text-amber-300 text-xs uppercase font-bold tracking-widest">
-                {isEn ? "Flexible Durations" : (currentLocale === 'nl' ? "Flexibele Verblijfsduur" : "Flexible Durations")}
+                {isEn ? "Flexible Durations" : (currentLocale === 'nl' ? "Flexibele Verblijfsduur" : currentLocale === 'de' ? "Flexible Reisedauer" : currentLocale === 'fr' ? "Durées Flexibles" : currentLocale === 'es' ? "Duraciones Flexibles" : currentLocale === 'it' ? "Durate Flessibili" : currentLocale === 'ja' ? "選べる滞在期間" : currentLocale === 'ko' ? "유연한 일정 선택" : currentLocale === 'zh' ? "灵活行程选择" : currentLocale === 'ru' ? "Гибкие сроки" : currentLocale === 'id' ? "Durasi Fleksibel" : "Flexible Durations")}
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl font-bold uppercase mt-1 mb-3">
-                {isEn ? `Explore Other ${retreat.locationName} Retreat Options` : (currentLocale === 'nl' ? `Ontdek Andere Retraiteopties in ${displayName}` : `Explore Other ${displayName} Retreat Options`)}
+                {isEn ? `Explore Other ${retreat.locationName} Retreat Options` : extraUI.exploreOtherTitle.replace('{loc}', displayName)}
               </h2>
               <p className="text-amber-100 text-sm sm:text-base mb-6">
                 {isEn
                   ? "Choose the timeframe that matches your life. Whether a quick 3-day weekend reset, our signature 7-day rejuvenation, or an immersive 14-day transformation."
                   : (currentLocale === 'nl'
                       ? "Kies de duur die past bij jouw plannen: een 3-daagse weekend reset, onze 7-daagse verjongingsretraite, of een 14-daagse diepe transformatie."
+                      : currentLocale === 'de'
+                      ? "Wählen Sie den Zeitraum, der zu Ihnen passt: Ein 3-Tage-Wochenend-Reset, unser 7-Tage-Regenerations-Retreat oder eine 14-Tage-Transformation."
+                      : currentLocale === 'fr'
+                      ? "Choisissez la formule idéale : un week-end ressourçant de 3 jours, notre retraite phare de 7 jours ou une transformation profonde de 14 jours."
+                      : currentLocale === 'es'
+                      ? "Elige la duración que mejor se adapte a ti: una escapada de 3 días, nuestro retiro insignia de 7 días o una transformación de 14 días."
+                      : currentLocale === 'it'
+                      ? "Scegli la durata ideale: un reset di 3 giorni, il nostro ritiro rigenerante di 7 giorni o una trasformazione profonda di 14 giorni."
+                      : currentLocale === 'ja'
+                      ? "3日間の週末リセット、7日間のリフレッシュ、14日間の深い変容プログラムからお選びいただけます。"
+                      : currentLocale === 'ko'
+                      ? "3일 주말 리셋, 7일 시그니처 힐링, 14일 딥 트랜스포메이션 중 나에게 맞는 일정을 선택하세요."
+                      : currentLocale === 'zh'
+                      ? "无论是3天周末焕活、7天招牌身心疗愈，还是14天深度蜕变，均可随心选择。"
+                      : currentLocale === 'ru'
+                      ? "Выберите подходящую продолжительность: 3-дневная перезагрузка, фирменный 7-дневный ретрит или глубокая 14-дневная трансформация."
+                      : currentLocale === 'id'
+                      ? "Pilih durasi yang sesuai: reset akhir pekan 3 hari, peremajaan 7 hari, atau transformasi mendalam 14 hari."
                       : "Choose the timeframe that matches your life. Whether a quick 3-day weekend reset, our signature 7-day rejuvenation, or an immersive 14-day transformation.")}
               </p>
               <div className="flex flex-wrap gap-3">
@@ -1189,18 +1223,14 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                   ? (retreat.locationKey === 'varkala'
                       ? 'Looking to Become a Certified Yoga Teacher in Varkala?'
                       : `Looking to Become a Certified Yoga Teacher in ${retreat.locationName}?`)
-                  : (currentLocale === 'nl'
-                      ? `Wil je een gecertificeerd yogadocent worden in ${displayName}?`
-                      : `Looking to Become a Certified Yoga Teacher in ${displayName}?`)}
+                  : extraUI.teacherTrainingTitle.replace('{loc}', displayName)}
               </h3>
               <p className="text-muted-foreground text-sm max-w-2xl mx-auto mb-8">
                 {isEn
                   ? (retreat.locationKey === 'varkala'
                       ? 'Deepen your personal practice with our 100-Hour, 200-Hour, and 300-Hour Yoga Alliance certified residential teacher training courses in Varkala, Kerala.'
                       : `Explore our internationally accredited Yoga Alliance teacher training immersions in ${retreat.locationName}.`)
-                  : (currentLocale === 'nl'
-                      ? `Verdiep je beoefening met onze Yoga Alliance gecertificeerde opleidingen (100, 200 en 300 uur) in ${displayName}.`
-                      : `Explore our internationally accredited Yoga Alliance teacher training immersions in ${displayName}.`)}
+                  : extraUI.teacherTrainingDesc.replace('{loc}', displayName)}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">

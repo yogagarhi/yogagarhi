@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import { useLocale } from "next-intl";
+import { PARTNERSHIPS_UI } from "@/constants/courseSectionsTranslations";
 
 const yogaAllianceLogo = getCloudinaryImage("yoga-alliance-official.png");
 
@@ -103,6 +105,15 @@ const partnerships = [
 ];
 
 export default function PartnershipsSection() {
+    let activeLocale = 'en';
+    try {
+        const intlLoc = useLocale();
+        if (intlLoc) activeLocale = intlLoc;
+    } catch (e) {}
+
+    const isEn = !activeLocale || activeLocale === 'en';
+    const sectionTitle = (isEn ? null : PARTNERSHIPS_UI[activeLocale]) || PARTNERSHIPS_UI.en;
+
     // Duplicate for seamless marquee
     const items = [...partnerships, ...partnerships, ...partnerships];
 
@@ -114,7 +125,7 @@ export default function PartnershipsSection() {
             <div className="container mx-auto px-4 mb-4">
                 <div className="text-center">
                     <h2 className="font-heading text-lg md:text-xl font-bold text-muted-foreground uppercase tracking-widest">
-                        Recognized & Trusted Worldwide
+                        {sectionTitle}
                     </h2>
                 </div>
             </div>

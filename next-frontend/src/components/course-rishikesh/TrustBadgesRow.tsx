@@ -1,12 +1,23 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { Award, Users, GraduationCap, ShieldCheck } from "lucide-react";
-import { getCloudinaryImage } from "@/utils/cloudinary";
+import { useLocale } from "next-intl";
+import { TRUST_BADGES_RISHIKESH } from "@/constants/courseSectionsTranslations";
 
-const yaRys200 = getCloudinaryImage("ya-rys-200.jpg");
+interface TrustBadgesRowProps {
+  locale?: string;
+}
 
-export default function TrustBadgesRow() {
+export default function TrustBadgesRow({ locale }: TrustBadgesRowProps = {}) {
+  let activeLocale = locale;
+  try {
+    const intlLoc = useLocale();
+    if (!activeLocale) activeLocale = intlLoc;
+  } catch (e) {}
+
+  const isEn = !activeLocale || activeLocale === "en";
+  const badges = (isEn ? null : TRUST_BADGES_RISHIKESH[activeLocale || "en"]) || TRUST_BADGES_RISHIKESH.en;
+
   return (
     <section className="py-6 bg-secondary/40 border-y border-border/60">
       <div className="container mx-auto px-4">
@@ -18,10 +29,10 @@ export default function TrustBadgesRow() {
             </div>
             <div>
               <p className="text-xs font-black uppercase tracking-wider text-amber-600 dark:text-amber-400">
-                Yoga Alliance
+                {badges[0].tag}
               </p>
               <p className="text-xs font-bold text-foreground">
-                RYS 200, 300 & 500
+                {badges[0].title}
               </p>
             </div>
           </div>
@@ -33,10 +44,10 @@ export default function TrustBadgesRow() {
             </div>
             <div>
               <p className="text-xs font-black uppercase tracking-wider text-primary">
-                Small Batches
+                {badges[1].tag}
               </p>
               <p className="text-xs font-bold text-foreground">
-                8–10 Students Max
+                {badges[1].title}
               </p>
             </div>
           </div>
@@ -48,10 +59,10 @@ export default function TrustBadgesRow() {
             </div>
             <div>
               <p className="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-                Himalayan Lineage
+                {badges[2].tag}
               </p>
               <p className="text-xs font-bold text-foreground">
-                15+ Years Experience
+                {badges[2].title}
               </p>
             </div>
           </div>
@@ -63,10 +74,10 @@ export default function TrustBadgesRow() {
             </div>
             <div>
               <p className="text-xs font-black uppercase tracking-wider text-orange-600 dark:text-orange-400">
-                Tapovan Ashram
+                {badges[3].tag}
               </p>
               <p className="text-xs font-bold text-foreground">
-                100% Sattvic Living
+                {badges[3].title}
               </p>
             </div>
           </div>
