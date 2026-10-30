@@ -132,6 +132,13 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
   const displayName = getLocalizedLocName(retreat.locationKey, retreat.locationName, currentLocale);
   const linkPrefix = isEn ? "" : `/${currentLocale}`;
 
+  const retreatKey = `${retreat.locationKey}-${retreat.slug}`;
+  const pkg = !isEn && messages?.packages ? messages.packages[retreatKey] : null;
+  const displayTitle = (isEn || !pkg?.title) ? retreat.title : pkg.title;
+  const displayIncluded = (isEn || !pkg?.included) ? retreat.included : pkg.included;
+  const displayNotIncluded = (isEn || !pkg?.notIncluded) ? retreat.notIncluded : pkg.notIncluded;
+  const displayFaqs = (isEn || !pkg?.faqs) ? retreat.faqs : pkg.faqs;
+
   const { setShowEnrollDialog } = useEnrollment();
   const { setShowQuickEnquiry } = useQuickEnquiry();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -239,9 +246,13 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
             {isEn ? "Limited Time Offer" : (messages?.limitedOfferBadge || "Limited Time Offer")}
           </span>
           <span>
-            {isEn
-              ? <>Save up to <strong>${retreat.earlyBirdSaving} USD</strong> on all upcoming {retreat.locationName} retreat dates!</>
-              : (messages?.limitedOfferText || `Save up to $${retreat.earlyBirdSaving} USD on all upcoming dates!`)}
+            {isEn ? (
+              <>Save up to <strong>${retreat.earlyBirdSaving} USD</strong> on all upcoming {retreat.locationName} retreat dates!</>
+            ) : (
+              messages?.limitedOfferText
+                ? messages.limitedOfferText.replace(/(\$?[0-9,]+\s*(USD|米ドル|美元)?)/i, `$${retreat.earlyBirdSaving} USD`)
+                : `Save up to $${retreat.earlyBirdSaving} USD on all upcoming dates!`
+            )}
           </span>
           <a
             href={whatsappUrl}
@@ -301,7 +312,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
 
           {/* Main Title - Bali Yoga School Uppercase Serif Style */}
           <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold text-amber-950 uppercase tracking-tight leading-[1.2] mb-5 max-w-4xl">
-            {retreat.title}
+            {displayTitle}
           </h1>
 
           {/* Zen Zone Statement / Tagline */}
@@ -312,25 +323,25 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           {/* Quick Metrics Bar */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 md:p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm mb-8 max-w-4xl">
             <div>
-              <span className="text-xs text-stone-500 uppercase font-semibold tracking-wider">Duration</span>
+              <span className="text-xs text-stone-500 uppercase font-semibold tracking-wider">{isEn ? "Duration" : (messages?.duration || "Duration")}</span>
               <p className="font-heading font-bold text-base sm:text-lg text-amber-950 mt-0.5">
                 {retreat.durationDays} Days / {retreat.durationNights} Nights
               </p>
             </div>
             <div>
-              <span className="text-xs text-stone-500 uppercase font-semibold tracking-wider">Yoga Style</span>
+              <span className="text-xs text-stone-500 uppercase font-semibold tracking-wider">{isEn ? "Yoga Style" : (messages?.yogaStyle || "Yoga Style")}</span>
               <p className="font-heading font-bold text-base sm:text-lg text-amber-950 mt-0.5">
                 Hatha & Vinyasa Flow
               </p>
             </div>
             <div>
-              <span className="text-xs text-stone-500 uppercase font-semibold tracking-wider">Skill Level</span>
+              <span className="text-xs text-stone-500 uppercase font-semibold tracking-wider">{isEn ? "Skill Level" : (messages?.skillLevel || "Skill Level")}</span>
               <p className="font-heading font-bold text-base sm:text-lg text-amber-950 mt-0.5">
-                Beginner to Advanced
+                {isEn ? "Beginner to Advanced" : (messages?.skillLevelVal || "Beginner to Advanced")}
               </p>
             </div>
             <div>
-              <span className="text-xs text-stone-500 uppercase font-semibold tracking-wider">Starting From</span>
+              <span className="text-xs text-stone-500 uppercase font-semibold tracking-wider">{isEn ? "Starting From" : (messages?.startingFrom || "Starting From")}</span>
               <p className="font-heading font-bold text-lg sm:text-xl text-amber-800 mt-0.5">
                 {retreat.priceShared} USD
               </p>
@@ -344,7 +355,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               className="bg-amber-800 hover:bg-amber-900 text-white font-bold px-7 py-6 text-sm sm:text-base rounded-xl shadow-md transition-transform active:scale-95"
               onClick={() => setShowEnrollDialog(true)}
             >
-              Book Your Retreat Now
+              {isEn ? "Book Your Retreat Now" : (messages?.bookNow || "Book Your Retreat Now")}
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
             <a
@@ -354,7 +365,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               className="inline-flex items-center justify-center gap-2 bg-[#25d366] hover:bg-[#128c7e] text-white font-bold px-6 py-3.5 rounded-xl text-sm sm:text-base shadow-sm transition-colors"
             >
               <Phone className="w-4 h-4" />
-              Book via WhatsApp
+              {isEn ? "Book via WhatsApp" : (messages?.whatsappNow || "Book via WhatsApp")}
             </a>
             <Button
               variant="outline"
@@ -362,7 +373,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               className="rounded-xl px-5 py-6 text-sm sm:text-base border-stone-300 text-stone-700 hover:bg-stone-100"
               onClick={() => setShowQuickEnquiry(true)}
             >
-              Ask a Question
+              {isEn ? "Ask a Question" : (messages?.talkCounselor || "Ask a Question")}
             </Button>
           </div>
 
@@ -401,10 +412,14 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           <section id="overview" className="max-w-4xl">
             <div className="text-center sm:text-left mb-6">
               <span className="text-xs uppercase font-bold tracking-widest text-amber-800">
-                Ubud Sanctuary Immersion
+                {isBali ? (isEn ? "Ubud Sanctuary Immersion" : (currentLocale === 'nl' ? "Oase van Rust in Ubud" : "Ubud Sanctuary Immersion")) : (isEn ? "Sanctuary Immersion" : (currentLocale === 'nl' ? "Oase van Rust" : "Sanctuary Immersion"))}
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-                {retreat.durationDays} Days & {retreat.durationNights} Nights Yoga Retreat in {isEn ? retreat.locationName : displayName}
+                {isEn
+                  ? `${retreat.durationDays} Days & ${retreat.durationNights} Nights Yoga Retreat in ${retreat.locationName}`
+                  : (currentLocale === 'nl'
+                      ? `${retreat.durationDays} Dagen & ${retreat.durationNights} Nachten Yoga Retraite in ${displayName}`
+                      : `${retreat.durationDays} Days & ${retreat.durationNights} Nights Yoga Retreat in ${displayName}`)}
               </h2>
             </div>
             <div className="space-y-4 text-stone-700 text-base md:text-lg leading-[1.85]">
@@ -420,10 +435,10 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           <section id="offers" className="p-8 sm:p-10 rounded-3xl bg-[#FAF6F0] border border-amber-900/10">
             <div className="text-center max-w-3xl mx-auto mb-10">
               <span className="text-xs uppercase font-bold tracking-widest text-amber-800">
-                Signature Experience
+                {isEn ? "Signature Experience" : (currentLocale === 'nl' ? "Kenmerkende Ervaring" : "Signature Experience")}
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-                YogaGarhi Offers
+                {isEn ? "YogaGarhi Offers" : (messages?.retreatHighlights || (currentLocale === 'nl' ? "Wat YogaGarhi Biedt" : "YogaGarhi Offers"))}
               </h2>
               <p className="text-stone-600 mt-2 text-sm sm:text-base">
                 An all-inclusive transformative wellness retreat where ancient yogic lineage meets the healing energy of Bali.
@@ -520,7 +535,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                 Transparent Pricing
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-                Retreat Fees & Dates
+                {isEn ? "Retreat Fees & Dates" : (messages?.pricingTitle || "Retreat Fees & Dates")}
               </h2>
               <p className="text-stone-600 mt-2 text-sm sm:text-base">
                 Choose the accommodation style that suits your journey. All packages include daily yoga, treatments, meals, and full campus access.
@@ -533,10 +548,14 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                 <Calendar className="w-5 h-5 text-amber-800 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-amber-950 text-sm sm:text-base">
-                    Retreat Dates – Year-Round Availability
+                    {isEn ? "Retreat Dates – Year-Round Availability" : (currentLocale === 'nl' ? "Retraitedata – Het hele jaar door beschikbaar" : "Retreat Dates – Year-Round Availability")}
                   </h3>
                   <p className="text-stone-700 text-xs sm:text-sm">
-                    We offer yoga retreats year-round. You can start on any day of the week based on your travel schedule.
+                    {isEn
+                      ? "We offer yoga retreats year-round. You can start on any day of the week based on your travel schedule."
+                      : (currentLocale === 'nl'
+                          ? "Onze yoga retraites zijn het hele jaar geopend. Je kunt op elke gewenste dag van de week starten."
+                          : "We offer yoga retreats year-round. You can start on any day of the week based on your travel schedule.")}
                   </p>
                 </div>
               </div>
@@ -546,7 +565,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                 rel="noopener noreferrer"
                 className="flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-800 hover:bg-amber-900 text-white text-xs sm:text-sm font-bold shadow-sm transition-colors"
               >
-                Check Date Availability →
+                {isEn ? "Check Date Availability →" : (currentLocale === 'nl' ? "Beschikbaarheid controleren →" : "Check Date Availability →")}
               </a>
             </div>
 
@@ -607,7 +626,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                         }`}
                         onClick={() => setShowEnrollDialog(true)}
                       >
-                        Enroll in this Room
+                        {isEn ? "Enroll in this Room" : (messages?.bookNow || "Enroll in this Room")}
                       </Button>
                       <a
                         href={whatsappUrl}
@@ -616,7 +635,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                         className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl border border-stone-300 text-stone-700 hover:bg-stone-50 text-xs font-semibold transition-colors"
                       >
                         <Phone className="w-3.5 h-3.5 text-emerald-600" />
-                        Inquire via WhatsApp
+                        {isEn ? "Inquire via WhatsApp" : (messages?.whatsappNow || "Inquire via WhatsApp")}
                       </a>
                     </div>
                   </div>
@@ -633,7 +652,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                     <p className="text-sm text-stone-600">Shared with another retreat participant. Separate beds.</p>
                   </div>
                   <Button className="mt-6 bg-stone-900 text-white" onClick={() => setShowEnrollDialog(true)}>
-                    Book Shared
+                    {isEn ? "Book Shared" : (messages?.reserveMat || "Book Shared")}
                   </Button>
                 </div>
                 <div className="p-7 rounded-3xl bg-white border border-amber-800 shadow-md flex flex-col justify-between">
@@ -644,7 +663,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                     <p className="text-sm text-stone-600">Complete privacy with king bed and private terrace.</p>
                   </div>
                   <Button className="mt-6 bg-amber-800 text-white" onClick={() => setShowEnrollDialog(true)}>
-                    Book Private
+                    {isEn ? "Book Private" : (messages?.reserveMat || "Book Private")}
                   </Button>
                 </div>
               </div>
@@ -662,11 +681,11 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                   <Check className="w-5 h-5" />
                 </div>
                 <h2 className="font-heading text-xl sm:text-2xl font-extrabold text-amber-950 uppercase tracking-tight">
-                  What is included in the Retreat Fees?
+                  {isEn ? "What is included in the Retreat Fees?" : (messages?.whatIsIncluded || "What is included in the Retreat Fees?")}
                 </h2>
               </div>
               <ul className="space-y-3.5 text-stone-700 text-sm sm:text-base">
-                {retreat.included.map((item, idx) => (
+                {displayIncluded.map((item: string, idx: number) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
@@ -682,11 +701,11 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                   <X className="w-5 h-5" />
                 </div>
                 <h2 className="font-heading text-xl sm:text-2xl font-extrabold text-amber-950 uppercase tracking-tight">
-                  What is Not Included
+                  {isEn ? "What is Not Included" : (messages?.whatIsNotIncluded || "What is Not Included")}
                 </h2>
               </div>
               <ul className="space-y-3.5 text-stone-700 text-sm sm:text-base">
-                {retreat.notIncluded.map((item, idx) => (
+                {displayNotIncluded.map((item: string, idx: number) => (
                   <li key={idx} className="flex items-start gap-3">
                     <X className="w-5 h-5 text-rose-500 flex-shrink-0 mt-0.5" />
                     <span>{item}</span>
@@ -777,13 +796,13 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
             <div className="max-w-4xl">
               <div className="mb-6">
                 <span className="text-xs uppercase font-bold tracking-widest text-amber-800">
-                  Daily Itinerary
+                  {isEn ? "Daily Itinerary" : (currentLocale === 'nl' ? "Dagprogramma" : "Daily Itinerary")}
                 </span>
                 <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-                  Day-by-Day Schedule
+                  {isEn ? "Day-by-Day Schedule" : (messages?.dailyRhythm || (currentLocale === 'nl' ? "Dagelijks Programma" : "Day-by-Day Schedule"))}
                 </h2>
                 <p className="text-stone-600 text-sm sm:text-base mt-1">
-                  Click on each day below to see the precise schedule from morning awakening to evening silence.
+                  {isEn ? "Click on each day below to see the precise schedule from morning awakening to evening silence." : (currentLocale === 'nl' ? "Klik hieronder op elke dag om het volledige programma van ochtend tot avond te bekijken." : "Click on each day below to see the precise schedule from morning awakening to evening silence.")}
                 </p>
               </div>
 
@@ -801,7 +820,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                             : "bg-stone-100 hover:bg-stone-200 text-stone-700"
                         }`}
                       >
-                        {day.dayLabel}
+                        {isEn ? day.dayLabel : (currentLocale === 'nl' ? day.dayLabel.replace(/Day/gi, 'Dag') : day.dayLabel)}
                       </button>
                     ))}
                   </div>
@@ -921,13 +940,17 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           <section id="teachers" className="scroll-mt-20">
             <div className="text-center max-w-3xl mx-auto mb-10">
               <span className="text-xs uppercase font-bold tracking-widest text-amber-800">
-                Authentic Mentorship
+                {isEn ? "Authentic Mentorship" : (currentLocale === 'nl' ? "Authentieke Begeleiding" : "Authentic Mentorship")}
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-                Our Yoga Teachers
+                {isEn ? "Our Yoga Teachers" : (messages?.leadTeachers || (currentLocale === 'nl' ? "Onze Yogadocenten" : "Our Yoga Teachers"))}
               </h2>
               <p className="text-stone-600 text-sm sm:text-base mt-2">
-                Learn under authentic Himalayan-trained yogacharyas and master teachers with decades of dedicated teaching experience.
+                {isEn
+                  ? "Learn under authentic Himalayan-trained yogacharyas and master teachers with decades of dedicated teaching experience."
+                  : (currentLocale === 'nl'
+                      ? "Leer van authentieke, in de Himalaya opgeleide meesters en ervaren yogadocenten."
+                      : "Learn under authentic Himalayan-trained yogacharyas and master teachers with decades of dedicated teaching experience.")}
               </p>
             </div>
 
@@ -975,13 +998,17 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           <section id="gallery">
             <div className="text-center max-w-3xl mx-auto mb-10">
               <span className="text-xs uppercase font-bold tracking-widest text-amber-800">
-                Visual Tour
+                {isEn ? "Visual Tour" : (currentLocale === 'nl' ? "Foto-impressie" : "Visual Tour")}
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-                YogaGarhi Bali Gallery
+                {isEn ? `YogaGarhi ${retreat.locationName} Gallery` : (currentLocale === 'nl' ? `Foto-impressie YogaGarhi ${displayName}` : `YogaGarhi ${displayName} Gallery`)}
               </h2>
               <p className="text-stone-600 text-sm sm:text-base mt-2">
-                Glimpses of life inside our peaceful Ubud sanctuary, lush tropical pools, and spiritual workshops.
+                {isEn
+                  ? `Glimpses of life inside our peaceful ${retreat.locationName} sanctuary, lush tropical pools, and spiritual workshops.`
+                  : (currentLocale === 'nl'
+                      ? `Een impressie van onze vredige ashram in ${displayName}, weelderige zwembaden en spirituele workshops.`
+                      : `Glimpses of life inside our peaceful ${displayName} sanctuary, lush tropical pools, and spiritual workshops.`)}
               </p>
             </div>
 
@@ -1016,15 +1043,18 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               <div className="flex items-center gap-3 mb-4">
                 <ShieldCheck className="w-6 h-6 text-amber-800 flex-shrink-0" />
                 <h2 className="font-heading text-lg sm:text-xl font-bold text-amber-950 uppercase">
-                  Course Reschedule Terms & Conditions
+                  {isEn ? "Course Reschedule Terms & Conditions" : (messages?.reschedulePolicyTitle || (currentLocale === 'nl' ? "Herboekingsvoorwaarden" : "Course Reschedule Terms & Conditions"))}
                 </h2>
               </div>
               <p className="text-stone-700 text-sm sm:text-base leading-relaxed mb-4">
-                {retreat.policy?.reschedule ||
-                  "Each student is eligible for one course reschedule free of charge. Once the course has been rescheduled, no further changes to the course dates will be permitted."}
+                {isEn
+                  ? (retreat.policy?.reschedule || "Each student is eligible for one course reschedule free of charge. Once the course has been rescheduled, no further changes to the course dates will be permitted.")
+                  : (currentLocale === 'nl'
+                      ? "Elke deelnemer heeft recht op één kosteloze herboeking van de cursusdata bij melding tot 15 dagen voor aanvang."
+                      : (retreat.policy?.reschedule || "Each student is eligible for one course reschedule free of charge."))}
               </p>
               <div className="text-xs text-stone-600 bg-white p-4 rounded-xl border border-stone-200">
-                🔒 <strong>Student-First Guarantee:</strong> We understand travel circumstances change. Your retreat deposit remains protected with one free date reschedule with 15 days notice.
+                🔒 <strong>{isEn ? "Student-First Guarantee:" : (currentLocale === 'nl' ? "Studentengarantie:" : "Student-First Guarantee:")}</strong> {isEn ? "We understand travel circumstances change. Your retreat deposit remains protected with one free date reschedule with 15 days notice." : (currentLocale === 'nl' ? "We begrijpen dat reisplannen kunnen veranderen. Je aanbetaling blijft beschermd met één gratis herboeking." : "Your retreat deposit remains protected with one free date reschedule with 15 days notice.")}
               </div>
             </div>
 
@@ -1033,15 +1063,18 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               <div className="flex items-center gap-3 mb-4">
                 <Compass className="w-6 h-6 text-amber-800 flex-shrink-0" />
                 <h2 className="font-heading text-lg sm:text-xl font-bold text-amber-950 uppercase">
-                  How to Arrive at YogaGarhi Bali
+                  {isEn ? `How to Arrive at YogaGarhi ${retreat.locationName}` : (currentLocale === 'nl' ? `Routebeschrijving naar YogaGarhi ${displayName}` : `How to Arrive at YogaGarhi ${displayName}`)}
                 </h2>
               </div>
               <p className="text-stone-700 text-sm sm:text-base leading-relaxed mb-4">
-                {retreat.policy?.airportGuide ||
-                  "The best and most convenient way to travel to YogaGarhi Bali is to take a flight to Denpasar Bali Airport (DPS). Denpasar Airport is merely 38 km away from our Ubud campus."}
+                {isEn
+                  ? (retreat.policy?.airportGuide || "The best and most convenient way to travel to YogaGarhi is to take a flight to the nearest airport. We arrange comfortable transfers.")
+                  : (currentLocale === 'nl'
+                      ? `De meest comfortabele manier om naar YogaGarhi ${displayName} te reizen is per vliegtuig naar de dichtstbijzijnde luchthaven. Wij verzorgen op verzoek privé-transfers.`
+                      : (retreat.policy?.airportGuide || "We arrange comfortable transfers."))}
               </p>
               <div className="text-xs text-stone-600 bg-white p-4 rounded-xl border border-stone-200">
-                🚕 <strong>Private Airport Pickup:</strong> We arrange reliable, air-conditioned private taxi transfers directly from DPS airport arrivals to our campus reception.
+                🚕 <strong>{isEn ? "Private Airport Pickup:" : (currentLocale === 'nl' ? "Luchthaventransfer:" : "Private Airport Pickup:")}</strong> {isEn ? "We arrange reliable, air-conditioned private taxi transfers directly from airport arrivals to our campus reception." : (currentLocale === 'nl' ? "Wij verzorgen betrouwbare transfers met airconditioning vanaf de luchthaven direct naar de receptie." : "We arrange reliable taxi transfers from airport arrivals.")}
               </div>
             </div>
           </section>
@@ -1055,12 +1088,12 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                 Got Questions?
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-                Frequently Asked Questions
+                {isEn ? "Frequently Asked Questions" : (messages?.faqTitle || "Frequently Asked Questions")}
               </h2>
             </div>
 
             <div className="space-y-3">
-              {retreat.faqs.map((faq, idx) => {
+              {displayFaqs.map((faq: { question: string; answer: string }, idx: number) => {
                 const isOpen = openFaq === idx;
                 return (
                   <div
@@ -1096,13 +1129,17 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           <section className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-amber-900 to-amber-950 text-white shadow-xl">
             <div className="max-w-3xl">
               <span className="text-amber-300 text-xs uppercase font-bold tracking-widest">
-                Flexible Durations
+                {isEn ? "Flexible Durations" : (currentLocale === 'nl' ? "Flexibele Verblijfsduur" : "Flexible Durations")}
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl font-bold uppercase mt-1 mb-3">
-                Explore Other {isEn ? retreat.locationName : displayName} Retreat Options
+                {isEn ? `Explore Other ${retreat.locationName} Retreat Options` : (currentLocale === 'nl' ? `Ontdek Andere Retraiteopties in ${displayName}` : `Explore Other ${displayName} Retreat Options`)}
               </h2>
               <p className="text-amber-100 text-sm sm:text-base mb-6">
-                Choose the timeframe that matches your life. Whether a quick 3-day weekend reset, our signature 7-day rejuvenation, or an immersive 14-day transformation.
+                {isEn
+                  ? "Choose the timeframe that matches your life. Whether a quick 3-day weekend reset, our signature 7-day rejuvenation, or an immersive 14-day transformation."
+                  : (currentLocale === 'nl'
+                      ? "Kies de duur die past bij jouw plannen: een 3-daagse weekend reset, onze 7-daagse verjongingsretraite, of een 14-daagse diepe transformatie."
+                      : "Choose the timeframe that matches your life. Whether a quick 3-day weekend reset, our signature 7-day rejuvenation, or an immersive 14-day transformation.")}
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
@@ -1113,7 +1150,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                       : "bg-white/10 hover:bg-white/20 text-white"
                   }`}
                 >
-                  3 Days Weekend Reset
+                  {isEn ? "3 Days Weekend Reset" : (currentLocale === 'nl' ? "3 Dagen Weekend Reset" : "3 Days Weekend Reset")}
                 </Link>
                 <Link
                   href={`${linkPrefix}/retreat/${retreat.locationKey}/7-days`}
@@ -1123,7 +1160,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                       : "bg-white/10 hover:bg-white/20 text-white"
                   }`}
                 >
-                  7 Days Signature Renewal
+                  {isEn ? "7 Days Signature Renewal" : (currentLocale === 'nl' ? "7 Dagen Rejuvenatie" : "7 Days Signature Renewal")}
                 </Link>
                 <Link
                   href={`${linkPrefix}/retreat/${retreat.locationKey}/14-days`}
@@ -1133,7 +1170,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                       : "bg-white/10 hover:bg-white/20 text-white"
                   }`}
                 >
-                  14 Days Deep Transformation
+                  {isEn ? "14 Days Deep Transformation" : (currentLocale === 'nl' ? "14 Dagen Diepe Transformatie" : "14 Days Deep Transformation")}
                 </Link>
               </div>
             </div>
@@ -1145,17 +1182,25 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           <section className="py-16 bg-stone-100 dark:bg-stone-900 border-t border-border">
             <div className="container mx-auto px-4 max-w-5xl text-center">
               <span className="text-xs font-bold uppercase tracking-wider text-primary block mb-2">
-                Yoga Alliance Certified Programs
+                {isEn ? "Yoga Alliance Certified Programs" : (currentLocale === 'nl' ? "Yoga Alliance Gecertificeerde Opleidingen" : "Yoga Alliance Certified Programs")}
               </span>
               <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-4">
-                {retreat.locationKey === 'varkala'
-                  ? 'Looking to Become a Certified Yoga Teacher in Varkala?'
-                  : `Looking to Become a Certified Yoga Teacher in ${retreat.locationName}?`}
+                {isEn
+                  ? (retreat.locationKey === 'varkala'
+                      ? 'Looking to Become a Certified Yoga Teacher in Varkala?'
+                      : `Looking to Become a Certified Yoga Teacher in ${retreat.locationName}?`)
+                  : (currentLocale === 'nl'
+                      ? `Wil je een gecertificeerd yogadocent worden in ${displayName}?`
+                      : `Looking to Become a Certified Yoga Teacher in ${displayName}?`)}
               </h3>
               <p className="text-muted-foreground text-sm max-w-2xl mx-auto mb-8">
-                {retreat.locationKey === 'varkala'
-                  ? 'Deepen your personal practice with our 100-Hour, 200-Hour, and 300-Hour Yoga Alliance certified residential teacher training courses in Varkala, Kerala.'
-                  : `Explore our internationally accredited Yoga Alliance teacher training immersions in ${retreat.locationName}.`}
+                {isEn
+                  ? (retreat.locationKey === 'varkala'
+                      ? 'Deepen your personal practice with our 100-Hour, 200-Hour, and 300-Hour Yoga Alliance certified residential teacher training courses in Varkala, Kerala.'
+                      : `Explore our internationally accredited Yoga Alliance teacher training immersions in ${retreat.locationName}.`)
+                  : (currentLocale === 'nl'
+                      ? `Verdiep je beoefening met onze Yoga Alliance gecertificeerde opleidingen (100, 200 en 300 uur) in ${displayName}.`
+                      : `Explore our internationally accredited Yoga Alliance teacher training immersions in ${displayName}.`)}
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
@@ -1263,7 +1308,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
             </span>
           </div>
           <span className="font-bold text-sm hidden sm:inline-block">
-            Chat on WhatsApp
+            {isEn ? "Chat on WhatsApp" : (messages?.whatsappNow || "Chat on WhatsApp")}
           </span>
         </a>
       </aside>

@@ -4845,7 +4845,288 @@
     "needGuidance": "Butuh Bantuan Memilih Paket Retret?",
     "guidanceSub": "Tim kami siap membantu terkait penerbangan, visa, dan penyesuaian tanggal perjalanan Anda.",
     "reschedulePolicyTitle": "Kebijakan Penjadwalan Ulang",
-    "reschedulePolicyText": "Jadwal dapat diubah dalam kurun waktu 12 bulan. Tidak ada pengembalian dana setelah Hari ke-1."
+    "reschedulePolicyText": "Jadwal dapat diubah dalam kurun waktu 12 bulan. Tidak ada pengembalian dana setelah Hari ke-1.",
+    "packages": {
+      "bali-3-days": {
+        "title": "RETREAT YOGA 3 HARI & 2 MALAM DI UBUD BALI",
+        "included": [
+          "Akomodasi pilihan (Kampus-I atau Kampus-II)",
+          "3 kali sehari makanan vegan/vegetarian bernutrisi dan lezat",
+          "Kelas yoga harian terjadwal (Hatha & Vinyasa)",
+          "Akses kolam renang pukul 10:00 hingga 20:00",
+          "Wi-Fi berkecepatan tinggi gratis di seluruh area kampus",
+          "2 kali sesi pijat tradisional Bali seluruh tubuh gratis",
+          "Sesi terapi suara mangkuk bernyanyi Tibet (Sound Healing)",
+          "Semua perlengkapan dan properti yoga lengkap di yoga shala",
+          "Air minum murni dan teh herbal segar tanpa batas"
+        ],
+        "notIncluded": [
+          "Tiket pesawat ke/dari Denpasar Bali (DPS)",
+          "Transfer keberangkatan ke bandara (dapat dipesan seharga $25–$30)",
+          "Pengeluaran pribadi dan belanja"
+        ],
+        "faqs": [
+          {
+            "question": "Jam berapa waktu check-in dan check-out?",
+            "answer": "Check-in pada pukul 12:00 di Hari ke-1, dan check-out pukul 12:00 di Hari ke-3."
+          },
+          {
+            "question": "Apakah pemula bisa mengikuti retreat 3 hari ini?",
+            "answer": "Tentu saja! Semua kelas disesuaikan dengan variasi gerakan untuk pemula hingga tingkat menengah."
+          },
+          {
+            "question": "Apakah pijat Bali benar-benar gratis?",
+            "answer": "Ya, 2 sesi pijat tradisional Bali 60 menit sudah termasuk dalam biaya retreat Anda."
+          },
+          {
+            "question": "Bagaimana cara menuju kampus dari bandara?",
+            "answer": "Bandara Internasional Denpasar (DPS) berjarak sekitar 38 km. Kami menyediakan taksi pribadi berdasarkan permintaan."
+          }
+        ]
+      },
+      "bali-7-days": {
+        "title": "RETREAT YOGA 7 HARI & 6 MALAM DI UBUD BALI",
+        "included": [
+          "6 malam menginap di Kampus-I (Garden Suite) atau Kampus-II (Pool Villa)",
+          "3 kali makan organik vegan/vegetarian segar harian dari koki",
+          "Latihan Hatha/Vinyasa pagi dan meditasi relaksasi malam setiap hari",
+          "Pijat tradisional Bali harian (total 6 sesi)",
+          "Upacara penyucian air suci Melukat di Pura Tirta Empul",
+          "Sesi terapi suara mangkuk Tibet di shala bambu terbuka",
+          "Lokakarya pernapasan Himalaya (pranayama) dan penyelarasan cakra",
+          "Akses kolam renang 10:00–20:00 & Wi-Fi cepat di seluruh kampus",
+          "Air mineral tanpa batas, air detoks, dan teh herbal",
+          "Paket selamat datang: Matras yoga katun YogaGarhi dan tas",
+          "Antar-jemput kedatangan gratis dari Bandara Denpasar (DPS)"
+        ],
+        "notIncluded": [
+          "Tiket pesawat menuju Bali (DPS)",
+          "Transfer kembali ke bandara (dapat diatur seharga $25–$30)",
+          "Pengeluaran pribadi dan oleh-oleh"
+        ],
+        "faqs": [
+          {
+            "question": "Apakah pijat Bali benar-benar diberikan setiap hari?",
+            "answer": "Ya, setiap hari menginap mencakup 60 menit pijat tradisional Bali seluruh tubuh."
+          },
+          {
+            "question": "Apa itu upacara Melukat?",
+            "answer": "Upacara penyucian air suci tradisional Bali di Pura Tirta Empul yang dipimpin oleh pemangku lokal untuk membasuh stres."
+          },
+          {
+            "question": "Bagaimana kebijakan penjadwalan ulang?",
+            "answer": "Setiap peserta berhak atas satu kali penjadwalan ulang gratis dengan pemberitahuan 15 hari sebelumnya."
+          },
+          {
+            "question": "Bagaimana dengan penjemputan bandara?",
+            "answer": "Kami menyediakan penjemputan taksi pribadi gratis dari Bandara DPS ke kampus Ubud."
+          },
+          {
+            "question": "Apakah aman untuk pelancong solo?",
+            "answer": "Lebih dari 80% tamu kami datang sendiri. Komunitas kampus sangat ramah, hangat, dan aman."
+          }
+        ]
+      },
+      "bali-14-days": {
+        "title": "RETREAT YOGA 14 HARI & 13 MALAM DI UBUD BALI",
+        "included": [
+          "13 malam menginap di Kampus-I atau Kampus-II",
+          "3 kali makan organik harian dari bahan pertanian lokal segar",
+          "2 sesi yoga setiap hari (sesi pagi dinamis dan sesi malam restoratif)",
+          "12 sesi pijat tradisional Bali seluruh tubuh",
+          "2 sesi terapi suara mangkuk Tibet",
+          "Upacara penyucian suci Melukat di Tirta Empul",
+          "Kelas memasak nabati khas Bali",
+          "Layanan antar-jemput bandara DPS pulang-pergi lengkap",
+          "Akses penuh ke kolam renang, Wi-Fi, dan teh herbal segar",
+          "Sesi konsultasi gaya hidup dan bimbingan yoga pribadi"
+        ],
+        "notIncluded": [
+          "Tiket pesawat internasional ke Bali",
+          "Biaya laundry dan pengeluaran pribadi"
+        ],
+        "faqs": [
+          {
+            "question": "Berapa banyak sesi pijat yang termasuk dalam 14 hari?",
+            "answer": "Termasuk 12 sesi pijat tradisional Bali 60 menit lengkap."
+          },
+          {
+            "question": "Apakah antar-jemput bandara pulang-pergi termasuk?",
+            "answer": "Ya, untuk retreat 14 hari, penjemputan dan pengantaran bandara sudah termasuk sepenuhnya."
+          },
+          {
+            "question": "Bisakah saya mulai di hari apa saja?",
+            "answer": "Ya, program tersedia sepanjang tahun dan Anda dapat mulai pada hari apa saja."
+          },
+          {
+            "question": "Apakah perlu pengalaman yoga sebelumnya?",
+            "answer": "Tidak perlu. Guru-guru kami membimbing setiap tingkatan dengan penuh perhatian."
+          }
+        ]
+      },
+      "rishikesh-3-days": {
+        "title": "Retreat Yoga Akhir Pekan Himalaya 3 Hari di Rishikesh",
+        "included": [
+          "2 malam akomodasi nyaman di ashram Tapovan, Rishikesh",
+          "3 kali makan vegetarian/vegan sattvic ayurveda harian yang murni",
+          "Latihan Hatha dan Vinyasa pagi dan sore setiap hari",
+          "Menghadiri upacara suci Ganga Aarti di tepi Sungai Gangga saat senja",
+          "Sesi pranayama dan meditasi matahari terbenam menghadap Sungai Gangga",
+          "Teh herbal dan air mata air pegunungan murni tanpa batas"
+        ],
+        "notIncluded": [
+          "Transportasi menuju/dari Rishikesh",
+          "Transfer Bandara Dehradun (DED) atau Delhi (tersedia sesuai permintaan)",
+          "Belanja pribadi dan cinderamata"
+        ],
+        "faqs": [
+          {
+            "question": "Bagaimana cara menuju Rishikesh?",
+            "answer": "Bandara terdekat adalah Dehradun (DED) berjarak 35 menit. Anda juga dapat naik kereta atau taksi dari Delhi (4-5 jam)."
+          },
+          {
+            "question": "Apakah aman untuk pelancong wanita solo?",
+            "answer": "Sangat aman. Ashram kami dijaga 24 jam dan mayoritas peserta adalah wanita yang bepergian sendiri."
+          }
+        ]
+      },
+      "rishikesh-7-days": {
+        "title": "Retreat Yoga & Meditasi Sungai Gangga Suci 7 Hari di Rishikesh",
+        "included": [
+          "6 malam menginap di kamar tenang berpemandangan pegunungan Himalaya",
+          "3 kali makan ayurveda sattvic bergizi per hari",
+          "Kelas harian Hatha, Ashtanga, dan Yin yoga restoratif",
+          "Sesi pranayama, meditasi mantra, dan filsafat yoga",
+          "1 sesi terapi ayurveda tradisional Abhyanga dan Shirodhara",
+          "Wisata mendaki matahari terbit ke Kuil Kunjapuri dengan panorama salju",
+          "Penjemputan satu arah dari Bandara Dehradun (DED)"
+        ],
+        "notIncluded": [
+          "Tiket pesawat ke India / Dehradun",
+          "Biaya visa India",
+          "Pengeluaran pribadi dan tip"
+        ],
+        "faqs": [
+          {
+            "question": "Apa itu terapi Shirodhara?",
+            "answer": "Terapi ayurveda yang sangat menenangkan di mana minyak herbal hangat dialirkan secara ritmis ke dahi untuk meredakan ketegangan."
+          },
+          {
+            "question": "Bolehkah ikut jika belum paham filsafat yoga?",
+            "answer": "Tentu saja! Pengajar menjelaskan konsep dasar dengan bahasa yang mudah dipahami."
+          }
+        ]
+      },
+      "rishikesh-14-days": {
+        "title": "Retreat Yoga & Sadhana Ashram Himalaya 14 Hari di Rishikesh",
+        "included": [
+          "13 malam menginap di lingkungan ashram tradisional",
+          "3 kali makan organik ayurveda seimbang harian",
+          "Latihan yoga mendalam, pranayama, dan meditasi hening setiap hari",
+          "Konsultasi kesehatan nadi dengan dokter ayurveda",
+          "3 kali perawatan ayurveda khusus (Abhyanga, Shirodhara, mandi uap herbal)",
+          "Kunjungan meditasi ke gua suci kuno Vashistha Guha di tepi Sungai Gangga",
+          "Layanan antar-jemput pulang-pergi penuh dari Bandara Dehradun (DED)"
+        ],
+        "notIncluded": [
+          "Tiket penerbangan internasional",
+          "Biaya visa India",
+          "Laundry dan belanja pribadi"
+        ],
+        "faqs": [
+          {
+            "question": "Apa itu Vashistha Guha?",
+            "answer": "Gua kuno yang sangat sakral di tepi Sungai Gangga tempat para resi bermeditasi selama ribuan tahun."
+          },
+          {
+            "question": "Apakah saya bisa melanjutkan latihan ini di rumah?",
+            "answer": "Ya, Anda akan menerima panduan sadhana harian pribadi yang dapat dipraktikkan di rumah."
+          }
+        ]
+      },
+      "varkala-3-days": {
+        "title": "Retreat Yoga Semilir Angin Laut 3 Hari di Varkala",
+        "included": [
+          "2 malam menginap di resor tepi pantai menghadap Laut Arab",
+          "3 kali makan ayurveda vegetarian khas Kerala yang segar per hari",
+          "Yoga pagi di tebing dengan semilir angin laut dan meditasi senja",
+          "1 sesi pijat tradisional Kerala dengan minyak herbal hangat",
+          "Jalan meditasi matahari terbenam di Pantai Papanasam",
+          "Air minum murni dan teh herbal khas Kerala"
+        ],
+        "notIncluded": [
+          "Tiket penerbangan ke Bandara Trivandrum (TRV)",
+          "Taksi bandara (tersedia sekitar $35)",
+          "Aktivitas pantai pribadi dan perahu"
+        ],
+        "faqs": [
+          {
+            "question": "Mengapa Pantai Papanasam terkenal?",
+            "answer": "Mata air mineral alami dan perairan sucinya diyakini dapat menyucikan energi negatif dan menyegarkan jiwa."
+          },
+          {
+            "question": "Bandara terdekat ke Varkala apa?",
+            "answer": "Bandara Internasional Trivandrum (TRV), hanya berjarak 45 km (sekitar 1 jam perjalanan dengan taksi)."
+          }
+        ]
+      },
+      "varkala-7-days": {
+        "title": "Retreat Yoga Pantai & Ayurveda 7 Hari di Varkala, Kerala",
+        "included": [
+          "6 malam menginap di kamar tepi pantai dekat tebing Varkala",
+          "3 kali makan organik ayurveda Kerala tradisional setiap hari",
+          "Yoga pantai pagi dan meditasi restoratif sore setiap hari",
+          "Konsultasi tipe tubuh (Dosha) dengan dokter ayurveda",
+          "3 terapi ayurveda tradisional (Abhyanga, Kizhi, Shirodhara)",
+          "Tur perahu menyusuri backwaters Kerala yang asri",
+          "Penjemputan kedatangan dari Bandara Trivandrum (TRV)",
+          "Paket selamat datang, matras yoga, dan panduan herbal pribadi"
+        ],
+        "notIncluded": [
+          "Tiket pesawat ke Trivandrum",
+          "Transfer pengantaran kembali ke bandara (sekitar $35)",
+          "Belanja dan pengeluaran pribadi"
+        ],
+        "faqs": [
+          {
+            "question": "Apa itu perawatan Kizhi?",
+            "answer": "Pijat tradisional menggunakan kantung herbal hangat yang ditepuk lembut untuk meredakan nyeri sendi dan kekakuan otot."
+          },
+          {
+            "question": "Apakah Varkala terlalu ramai wisatawan?",
+            "answer": "Tidak, Varkala dikenal dengan suasananya yang damai, santai, dan sarat nilai spiritual."
+          }
+        ]
+      },
+      "varkala-14-days": {
+        "title": "Imersi Penyembuhan Ayurveda & Yoga Lengkap 14 Hari di Varkala",
+        "included": [
+          "13 malam menginap di butik resor tepi pantai",
+          "3 kali makan organik ayurveda per hari + jus kesehatan segar",
+          "Sesi yoga dan meditasi pagi dan sore setiap hari",
+          "Konsultasi awal dan akhir dengan dokter ayurveda",
+          "6 sesi perawatan terapi ayurveda mendalam",
+          "Tur perahu Pulau Munroe dan kunjungan kuil lokal",
+          "Antar-jemput pulang-pergi dari Bandara Trivandrum (TRV)",
+          "Lokakarya memasak ayurveda lengkap dengan buku resep untuk di rumah"
+        ],
+        "notIncluded": [
+          "Tiket penerbangan internasional dan domestik",
+          "Biaya visa India",
+          "Belanja pribadi dan laundry"
+        ],
+        "faqs": [
+          {
+            "question": "Kondisi apa saja yang dapat dibantu oleh retreat ini?",
+            "answer": "Banyak tamu merasakan perbaikan nyata pada stres kronis, kelelahan, gangguan pencernaan, dan kekakuan sendi."
+          },
+          {
+            "question": "Bisakah mengakomodasi kebutuhan diet khusus?",
+            "answer": "Tentu saja! Koki kami dengan senang hati menyajikan menu vegan, bebas gluten, dan sesuai dosha Anda."
+          }
+        ]
+      }
+    }
   },
   "yogicEnergy": {
     "metaTitle": "Temukan Energi Yogik Unik Anda",
@@ -5687,7 +5968,7 @@
     ],
     "hero": {
       "badge": "Yoga Alliance Certified RYT 500 Pathway",
-      "h1": "300 Hour Yoga Teacher Training in Rishikesh, India",
+      "h1": "Pelatihan Guru Yoga 300 Jam di Rishikesh",
       "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Tapovan, Rishikesh. Study with master teachers by the sacred Ganges.",
       "quickDuration": "28 Days",
       "quickLevel": "Advanced (200-Hour YTT required)",
@@ -5695,9 +5976,9 @@
       "quickLang": "English",
       "quickBatch": "8–10 Students",
       "quickLocation": "Tapovan, Rishikesh",
-      "btnReserve": "Reserve Your Spot",
-      "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnReserve": "Pesan Tempat Anda",
+      "btnBrochure": "Unduh Silabus",
+      "btnCounselor": "Bicara dengan Konselor"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Rishikesh",
@@ -7997,7 +8278,7 @@
     ],
     "hero": {
       "badge": "Yoga Alliance Certified RYT 500 Pathway",
-      "h1": "300 Hour Yoga Teacher Training in Varkala, India",
+      "h1": "Pelatihan Guru Yoga 300 Jam di Varkala",
       "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Varkala Cliff, Varkala. Study with master teachers by the sacred Arabian Sea.",
       "quickDuration": "28 Days",
       "quickLevel": "Advanced (200-Hour YTT required)",
@@ -8005,9 +8286,9 @@
       "quickLang": "English",
       "quickBatch": "8–10 Students",
       "quickLocation": "Varkala Cliff, Varkala",
-      "btnReserve": "Reserve Your Spot",
-      "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnReserve": "Pesan Tempat Anda",
+      "btnBrochure": "Unduh Silabus",
+      "btnCounselor": "Bicara dengan Konselor"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Varkala",

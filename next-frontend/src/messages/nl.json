@@ -4794,7 +4794,7 @@
     "limitedOfferText": "Bespaar tot $200 USD op alle komende Bali retreat boekingen!",
     "whatsappFastBooking": "WhatsApp voor snelle boeking →",
     "breadcrumbRetreats": "Retreats",
-    "heroTitle": "Yoga Retreat in {loc}",
+    "heroTitle": "Yoga Retraite in {loc}",
     "heroSub": "Vind rust in de weelderige natuur met dagelijkse yoga, herstellende massages, klankheling en gezonde plantaardige maaltijden.",
     "whatsappInquiry": "WhatsApp vraag: +91 8279705844",
     "selectDuration": "Kies je verblijfsduur",
@@ -4845,7 +4845,288 @@
     "needGuidance": "Hulp nodig bij het kiezen van je retreat?",
     "guidanceSub": "Ons team helpt je graag met vluchten, visa en ideale reisdata.",
     "reschedulePolicyTitle": "Voorwaarden voor omboeken",
-    "reschedulePolicyText": "Flexibele omboeking binnen 12 maanden mogelijk. Geen restitutie na Dag 1."
+    "reschedulePolicyText": "Flexibele omboeking binnen 12 maanden mogelijk. Geen restitutie na Dag 1.",
+    "packages": {
+      "bali-3-days": {
+        "title": "3 DAGEN & 2 NACHTEN YOGA RETRAITE IN UBUD BALI",
+        "included": [
+          "Gekozen accommodatie (Campus-I of Campus-II)",
+          "3 voedzame en heerlijke veganistische/vegetarische maaltijden per dag",
+          "Dagelijkse yogalessen volgens programma (Hatha & Vinyasa)",
+          "Toegang tot het zwembad van 10:00 tot 20:00 uur",
+          "Gratis snelle wifi op de gehele campus",
+          "2 gratis volledige lichaamsmassages in Balinese stijl",
+          "Klankheling en Tibetaanse klankschalensessie",
+          "Alle benodigde yogamaterialen aanwezig in de yoga shala",
+          "Onbeperkt gezuiverd drinkwater en verse kruidenthee"
+        ],
+        "notIncluded": [
+          "Vliegtickets naar/van Denpasar Bali (DPS)",
+          "Luchthaventransfer bij vertrek (eenvoudig te boeken voor $25–$30)",
+          "Persoonlijke uitgaven en winkelen"
+        ],
+        "faqs": [
+          {
+            "question": "Wat zijn de in- en uitchecktijden?",
+            "answer": "Inchecken kan vanaf 12:00 uur op Dag 1, uitchecken is om 12:00 uur op Dag 3."
+          },
+          {
+            "question": "Zijn beginners welkom op deze 3-daagse retraite?",
+            "answer": "Zeker! Alle lessen bieden aanpassingen voor zowel beginners als gevorderden."
+          },
+          {
+            "question": "Zijn de Balinese massages echt inbegrepen?",
+            "answer": "Ja, 2 volledige Balinese lichaamsmassages zijn volledig inbegrepen in de prijs."
+          },
+          {
+            "question": "Hoe bereik ik de campus vanaf de luchthaven?",
+            "answer": "Denpasar International Airport (DPS) ligt op 38 km afstand. We regelen graag een privé-taxi."
+          }
+        ]
+      },
+      "bali-7-days": {
+        "title": "7 DAGEN & 6 NACHTEN YOGA RETRAITE IN UBUD BALI",
+        "included": [
+          "Gekozen accommodatie (Campus-I of Campus-II)",
+          "3 gezonde veganistische/vegetarische maaltijden per dag",
+          "Dagelijkse yogalessen (Hatha & Vinyasa Flow)",
+          "Toegang tot het zwembad van 10:00 tot 20:00 uur",
+          "Gratis snelle wifi op de hele campus",
+          "6 gratis Balinese massages (1 per dag)",
+          "Klankschalensessie en sound healing",
+          "Reiki energieheling & chakra-uitlijning",
+          "Heilige Melukat waterreinigingsceremonie bij Tirta Empul",
+          "Alle benodigdheden voor de lessen in de shala",
+          "Onbeperkt zuiver drinkwater en detox-kruidenthee"
+        ],
+        "notIncluded": [
+          "Vliegtickets naar/van Denpasar Bali (DPS)",
+          "Transfer terug naar de luchthaven (te regelen voor $25–$30)",
+          "Persoonlijke was en winkelen"
+        ],
+        "faqs": [
+          {
+            "question": "Wat zijn de in- en uitchecktijden?",
+            "answer": "Inchecken om 12:00 uur op Dag 1, uitchecken om 12:00 uur op Dag 7."
+          },
+          {
+            "question": "Is de dagelijkse Balinese massage gegarandeerd?",
+            "answer": "Ja! Je ontvangt 6 volledige Balinese massages gedurende je weekverblijf."
+          },
+          {
+            "question": "Wat houdt de Melukat waterceremonie in?",
+            "answer": "Melukat is een traditioneel Balinees reinigingsritueel bij de heilige bronnen van Tirta Empul onder leiding van een priester."
+          },
+          {
+            "question": "Wat is het herboekingsbeleid?",
+            "answer": "Elke deelnemer mag zijn verblijfsdata eenmaal kosteloos verzetten bij tijdige melding."
+          },
+          {
+            "question": "Hoe kom ik vanaf de luchthaven?",
+            "answer": "Vlieg naar Denpasar (DPS) op 38 km. We sturen een betrouwbare privéchauffeur rechtstreeks naar Ubud."
+          }
+        ]
+      },
+      "bali-14-days": {
+        "title": "14 DAGEN & 13 NACHTEN YOGA RETRAITE IN UBUD BALI",
+        "included": [
+          "Gekozen accommodatie (Campus-I of Campus-II)",
+          "3 voedzame vegetarische/veganistische maaltijden per dag",
+          "Dagelijkse verdiepende yogalessen gedurende 14 dagen",
+          "Toegang tot het zwembad van 10:00 tot 20:00 uur",
+          "Gratis wifi op de gehele campus",
+          "12 gratis Balinese lichaamsmassages",
+          "Meerdere sessies sound healing en Reiki",
+          "Twee culturele excursies (watertempel en junglewaterval)",
+          "Alle yogamaterialen en kussens aanwezig",
+          "Inclusief retourtransfers van en naar de luchthaven"
+        ],
+        "notIncluded": [
+          "Vliegtickets naar/van Denpasar Bali (DPS)",
+          "Persoonlijke uitgaven en wasservice"
+        ],
+        "faqs": [
+          {
+            "question": "Wat zijn de in- en uitchecktijden?",
+            "answer": "Inchecken om 12:00 uur op Dag 1, uitchecken om 12:00 uur op Dag 14."
+          },
+          {
+            "question": "Hoeveel massages zijn inbegrepen in 14 dagen?",
+            "answer": "Je ontvangt 12 volledige Balinese massages tijdens je verblijf van twee weken."
+          },
+          {
+            "question": "Is de retourtransfer inbegrepen?",
+            "answer": "Ja, voor de 14-daagse retraite is zowel ophalen als terugbrengen naar Denpasar (DPS) inbegrepen."
+          },
+          {
+            "question": "Kan ik mijn data aanpassen?",
+            "answer": "Ja, je kunt je data eenmalig kosteloos wijzigen met voorafgaande kennisgeving."
+          }
+        ]
+      },
+      "rishikesh-3-days": {
+        "title": "3 Dagen Himalaya Weekend Yoga Retraite in Rishikesh",
+        "included": [
+          "2 Nachten verblijf in Tapovan, Rishikesh",
+          "3 dagelijkse gezonde ayurvedische vegetarische/vegan maaltijden",
+          "Alle yoga-, pranayama- en meditatielessen",
+          "1x 60 minuten traditionele ayurvedische Abhyanga massage",
+          "Begeleid bezoek aan de heilige Ganga Aarti avondceremonie",
+          "Gefilterd drinkwater en kruidenthee 24/7"
+        ],
+        "notIncluded": [
+          "Vluchten naar India / Dehradun (DED)",
+          "Visumkosten voor India",
+          "Persoonlijke uitgaven en fooien"
+        ],
+        "faqs": [
+          {
+            "question": "Hoe reis ik naar Rishikesh?",
+            "answer": "Vlieg naar Dehradun Airport (DED) op slechts 35 minuten van de ashram, of neem de trein naar Haridwar."
+          },
+          {
+            "question": "Is de Ganga Aarti ceremonie inbegrepen?",
+            "answer": "Ja, een van onze leraren begeleidt je naar de indrukwekkende ceremonie aan de oevers van de Ganges."
+          }
+        ]
+      },
+      "rishikesh-7-days": {
+        "title": "7 Dagen Heilige Ganges Yoga & Meditatie Retraite in Rishikesh",
+        "included": [
+          "6 Nachten verblijf in Tapovan, Rishikesh",
+          "3 dagelijkse vers bereide ayurvedische maaltijden",
+          "Alle yoga-, ademhalings- en meditatiesessies",
+          "Zonsopgangexcursie naar de Kunjapuri tempel in de Himalaya",
+          "2x ayurvedische therapieën (Abhyanga massage & Shirodhara)",
+          "Ophaalservice vanaf Dehradun Airport (DED)",
+          "Yoga set: mat, meditatiekussen en neti potje"
+        ],
+        "notIncluded": [
+          "Vliegtickets naar India / Dehradun",
+          "Kosten voor Indiaas visum",
+          "Persoonlijke uitgaven"
+        ],
+        "faqs": [
+          {
+            "question": "Wat is Shirodhara?",
+            "answer": "Een klassieke ayurvedische behandeling waarbij warme kruidenolie zacht over het voorhoofd vloeit om mentale rust en ontspanning te brengen."
+          },
+          {
+            "question": "Kan ik deelnemen zonder kennis van yogafilosofie?",
+            "answer": "Zeker, onze leraren leggen de traditionele filosofie helder en praktisch uit voor het dagelijks leven."
+          }
+        ]
+      },
+      "rishikesh-14-days": {
+        "title": "14 Dagen Diepe Himalaya Ashram Sadhana & Yoga Retraite in Rishikesh",
+        "included": [
+          "13 Nachten verblijf in rustgevende ashram in Tapovan",
+          "3 voedzame ayurvedische maaltijden per dag + verse sappen en thee",
+          "Dagelijkse yoga-, pranayama-, kriya- en meditatiesessies",
+          "4 complete ayurvedische lichaamsbehandelingen",
+          "Excursies naar de Vashistha grot, Beatles Ashram en Kunjapuri",
+          "Retourtransfers vanaf Dehradun Airport (DED)",
+          "Uitgebreid retraitehandboek en persoonlijk oefenschema"
+        ],
+        "notIncluded": [
+          "Internationale vluchten naar Delhi / Dehradun",
+          "Visum voor India",
+          "Persoonlijke aankopen en wasservice"
+        ],
+        "faqs": [
+          {
+            "question": "Wat is de Vashistha grot (Vashistha Guha)?",
+            "answer": "Een eeuwenoude rotsgrot direct aan de Ganges waar wijzen mediteerden, bekend om zijn intense serene stilte."
+          },
+          {
+            "question": "Kan ik mijn oefeningen thuis voortzetten?",
+            "answer": "Ja, in de laatste dagen stellen onze hoofddocenten een op maat gemaakt dagelijks schema voor je op."
+          }
+        ]
+      },
+      "varkala-3-days": {
+        "title": "3 Dagen Zeebries Yoga Retraite in Varkala",
+        "included": [
+          "2 Nachten in een boetiekresort op de kliffen van Varkala",
+          "3 dagelijkse heerlijke Kerala ayurvedische vegetarische maaltijden",
+          "Alle dagelijkse yoga-, adem- en meditatielessen",
+          "1x 60 minuten traditionele Kerala Abhyanga massage",
+          "Drinkwater, vers kokoswater en kruidentheeën",
+          "Yogamatten en hulpmiddelen aanwezig"
+        ],
+        "notIncluded": [
+          "Vluchten naar Trivandrum (TRV) Airport",
+          "Taxitransfer (beschikbaar voor ca. $35)",
+          "Persoonlijke strandactiviteiten en boottochten"
+        ],
+        "faqs": [
+          {
+            "question": "Waarom is Papanasam Beach zo bekend?",
+            "answer": "Papanasam betekent 'zuivering van zonden'. De minerale bronnen en zeewater staan bekend om hun heilzame werking."
+          },
+          {
+            "question": "Wat is de dichtstbijzijnde luchthaven bij Varkala?",
+            "answer": "Trivandrum International Airport (TRV) ligt op slechts 45 km (ca. 1 uur rijden). We regelen graag een privé-taxi."
+          }
+        ]
+      },
+      "varkala-7-days": {
+        "title": "7 Dagen Ayurveda & Strand Yoga Retraite in Varkala, Kerala",
+        "included": [
+          "6 Nachten verblijf in boetiekresort bij de Varkala klif",
+          "3 dagelijkse authentieke ayurvedische vegetarische maaltijden",
+          "Ochtend- en middagsessies yoga en meditatie",
+          "Consult met ayurvedische arts en dosha-bepaling",
+          "3 traditionele ayurvedische kuren (Abhyanga, Kizhi, Shirodhara)",
+          "Boottocht door de schilderachtige Kerala backwaters",
+          "Ophaalservice vanaf Trivandrum (TRV) Airport",
+          "Welkomstpakket, yogamat en persoonlijk kruidenadvies"
+        ],
+        "notIncluded": [
+          "Vliegtickets naar Trivandrum",
+          "Transfer terug naar het vliegveld (ca. $35)",
+          "Persoonlijke uitgaven en winkelen"
+        ],
+        "faqs": [
+          {
+            "question": "Wat is een Kizhi behandeling?",
+            "answer": "Een ayurvedische massage met warme kruidenbuideltjes om gewrichtspijn te verlichten en spierstijfheid op te lossen."
+          },
+          {
+            "question": "Is Varkala erg druk?",
+            "answer": "Nee, Varkala staat juist bekend om haar rustige, ontspannen en spirituele kustsfeer."
+          }
+        ]
+      },
+      "varkala-14-days": {
+        "title": "14 Dagen Complete Ayurvedische Genezing & Yoga Onderdompeling in Varkala",
+        "included": [
+          "13 Nachten verblijf in kleinschalig resort aan de kust",
+          "3 biologische ayurvedische maaltijden per dag + gezonde sappen",
+          "Ochtend- en avondsessies yoga en meditatie",
+          "Intake en eindconsult met de ayurvedische arts",
+          "6 gespecialiseerde ayurvedische kuren",
+          "Boottocht over Munroe Island en tempeluitstapjes",
+          "Retourtransfers vanaf Trivandrum (TRV) Airport",
+          "Ayurvedische kookworkshop met receptenboek voor thuis"
+        ],
+        "notIncluded": [
+          "Internationale en binnenlandse vliegtickets",
+          "Visum voor India",
+          "Persoonlijke uitgaven en wasservice"
+        ],
+        "faqs": [
+          {
+            "question": "Welke klachten kan deze retraite verminderen?",
+            "answer": "Deelnemers ervaren veel verlichting bij stress, vermoeidheid, spijsverteringsproblemen en gewrichtsklachten."
+          },
+          {
+            "question": "Kunnen dieetwensen worden doorgegeven?",
+            "answer": "Zeker! Onze chef-koks koken moeiteloos veganistisch, glutenvrij en afgestemd op jouw dosha."
+          }
+        ]
+      }
+    }
   },
   "yogicEnergy": {
     "metaTitle": "Ontdek Je Unieke Yogische Energie",
@@ -5687,7 +5968,7 @@
     ],
     "hero": {
       "badge": "Yoga Alliance Certified RYT 500 Pathway",
-      "h1": "300 Hour Yoga Teacher Training in Rishikesh, India",
+      "h1": "300-Uurs Yoga Docentenopleiding in Rishikesh",
       "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Tapovan, Rishikesh. Study with master teachers by the sacred Ganges.",
       "quickDuration": "28 Days",
       "quickLevel": "Advanced (200-Hour YTT required)",
@@ -5695,9 +5976,9 @@
       "quickLang": "English",
       "quickBatch": "8–10 Students",
       "quickLocation": "Tapovan, Rishikesh",
-      "btnReserve": "Reserve Your Spot",
-      "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnReserve": "Plek reserveren",
+      "btnBrochure": "Lesprogramma downloaden",
+      "btnCounselor": "Praat met een adviseur"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Rishikesh",
@@ -7997,7 +8278,7 @@
     ],
     "hero": {
       "badge": "Yoga Alliance Certified RYT 500 Pathway",
-      "h1": "300 Hour Yoga Teacher Training in Varkala, India",
+      "h1": "300-Uurs Yoga Docentenopleiding in Varkala",
       "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Varkala Cliff, Varkala. Study with master teachers by the sacred Arabian Sea.",
       "quickDuration": "28 Days",
       "quickLevel": "Advanced (200-Hour YTT required)",
@@ -8005,9 +8286,9 @@
       "quickLang": "English",
       "quickBatch": "8–10 Students",
       "quickLocation": "Varkala Cliff, Varkala",
-      "btnReserve": "Reserve Your Spot",
-      "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnReserve": "Plek reserveren",
+      "btnBrochure": "Lesprogramma downloaden",
+      "btnCounselor": "Praat met een adviseur"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Varkala",

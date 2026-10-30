@@ -1,14 +1,29 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Mountain, Sparkles, MapPin, Compass, Landmark, Waves, Sun, ShieldCheck } from "lucide-react";
+import { Mountain, Compass } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import { WHY_RISHIKESH_TRANSLATIONS } from "@/constants/whyLocationTranslations";
+import { useLocale } from "next-intl";
 
 const rishikeshSurroundings = getCloudinaryImage("rishikesh-surroundings.png");
 const gangaCeremony = getCloudinaryImage("ceremony.png");
 const himalayanMountain = getCloudinaryImage("mountain-pose.png");
 
-export default function WhyRishikeshSection() {
+interface WhyRishikeshSectionProps {
+  locale?: string;
+}
+
+export default function WhyRishikeshSection({ locale }: WhyRishikeshSectionProps = {}) {
+  let activeLocale = locale;
+  try {
+    const intlLoc = useLocale();
+    if (!activeLocale) activeLocale = intlLoc;
+  } catch (e) {}
+
+  const isEn = !activeLocale || activeLocale === "en";
+  const data = (isEn ? null : WHY_RISHIKESH_TRANSLATIONS[activeLocale || "en"]) || WHY_RISHIKESH_TRANSLATIONS.en;
+
   return (
     <section className="py-20 bg-background relative overflow-hidden" id="why-rishikesh" style={{ contentVisibility: "auto", containIntrinsicSize: "950px" }}>
       <div className="container mx-auto px-4 relative z-10">
@@ -17,40 +32,24 @@ export default function WhyRishikeshSection() {
           <div className="text-center mb-16">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-3">
               <Compass className="w-3.5 h-3.5" />
-              <span>Spiritual Epicenter</span>
+              <span>{data.badge}</span>
             </span>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 leading-tight">
-              Why Choose Rishikesh for Yoga Teacher Training
+              {data.title}
             </h2>
             <p className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto">
-              Immerse in the timeless energy of the world capital of yoga, where five millennia of sacred Vedic wisdom meets the pristine Himalayan foothills.
+              {data.subtitle}
             </p>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
           </div>
 
           {/* Grid Layout: Content + Visuals */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Left Column: Authoritative Text (450+ words) */}
+            {/* Left Column: Authoritative Text */}
             <div className="lg:col-span-7 space-y-6 text-foreground/90 leading-relaxed text-base md:text-lg">
-              <p>
-                Nestled gracefully where the sacred Himalayan mountains open into the lush northern plains, <strong>Rishikesh is internationally revered as the Yoga Capital of the World</strong>. For over five millennia, legendary Vedic rishis, enlightened sages, and classical yoga masters have undertaken deep spiritual sadhana along these riverbanks. Walking through this sacred valley, you are not merely attending a contemporary training course—you are actively stepping into an unbroken, living stream of ancient yogic consciousness.
-              </p>
-
-              <p>
-                The spiritual geography of Rishikesh is unmatched anywhere on Earth. As the holy River Ganga descends directly from high glacial peaks, her fast-flowing emerald waters saturate the surrounding atmosphere with high negative ions and pristine Himalayan prana. This unique natural ecosystem exerts a scientifically verified calming effect upon the human central nervous system, naturally quieting mental chatter and allowing students to effortlessly access deeper states of dharana (concentration) and dhyana (meditation).
-              </p>
-
-              <p>
-                Unlike commercial Western retreat centers, every aspect of life in Rishikesh is tuned to spiritual awakening. At sunset, the valley vibrates with the celestial resonance of Sanskrit chanting, traditional temple bells, and the hypnotic Vedic fire ceremonies of the <strong>Parmarth Niketan and Triveni Ghat Ganga Aarti</strong>. Immersing your daily routine in this sacred environment bridges physical asana practice with profound inner philosophy, transforming personal exercise into a genuine journey of soul realization.
-              </p>
-
-              <p>
-                Our ashram sanctuary is nestled in <strong>Tapovan</strong>—an elevated, serene enclave whose very name translates to "the forest of penance." Historically the quiet dwelling place of wandering yogis, Tapovan sits comfortably above the busier market streets, surrounded by green Himalayan ridges while remaining just a short, pleasant walk from the sacred river and Lakshman Jhula. Here, away from noise and urban distraction, you experience the peaceful sanctuary essential for serious, life-transforming yogic study.
-              </p>
-
-              <p>
-                From exploring the ancient subterranean meditation cave of Sage Vashistha along the river's white-sand shores to meditating at the 1,676-meter summit of Kunjapuri Temple as the dawn sun illuminates snow-capped Himalayan summits, training with YogaGarhi in Rishikesh provides an authentic immersion that will forever ground your teaching in genuine spiritual authority.
-              </p>
+              {data.paragraphs.map((p, idx) => (
+                <p key={idx}>{p}</p>
+              ))}
             </div>
 
             {/* Right Column: 3 Authentic Photos */}
@@ -67,7 +66,7 @@ export default function WhyRishikeshSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent flex items-end p-4">
                   <p className="text-white text-xs md:text-sm font-semibold flex items-center gap-1.5">
                     <Mountain className="w-4 h-4 text-primary shrink-0" />
-                    <span>Himalayan Foothills & Holy Ganga River</span>
+                    <span>{data.photoCaptions.main}</span>
                   </p>
                 </div>
               </div>
@@ -84,7 +83,7 @@ export default function WhyRishikeshSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3">
                     <p className="text-white text-[11px] font-medium leading-tight">
-                      Sacred Ganga Aarti
+                      {data.photoCaptions.sub1}
                     </p>
                   </div>
                 </div>
@@ -100,7 +99,7 @@ export default function WhyRishikeshSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3">
                     <p className="text-white text-[11px] font-medium leading-tight">
-                      Kunjapuri Sunrise Trek
+                      {data.photoCaptions.sub2}
                     </p>
                   </div>
                 </div>

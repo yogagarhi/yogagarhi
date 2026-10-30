@@ -4845,7 +4845,288 @@
     "needGuidance": "¿Necesitas ayuda para elegir tu retiro?",
     "guidanceSub": "Nuestro equipo te orientará sobre vuelos, visados y fechas ideales.",
     "reschedulePolicyTitle": "Política de cambio de fechas",
-    "reschedulePolicyText": "Reprogramación flexible válida por 12 meses. Sin reembolsos tras el Día 1."
+    "reschedulePolicyText": "Reprogramación flexible válida por 12 meses. Sin reembolsos tras el Día 1.",
+    "packages": {
+      "bali-3-days": {
+        "title": "3 DÍAS Y 2 NOCHES RETIRO DE YOGA EN UBUD BALI",
+        "included": [
+          "Alojamiento seleccionado (Campus-I o Campus-II)",
+          "3 comidas nutritivas y deliciosas veganas/vegetarianas al día",
+          "Clases diarias de yoga según el programa (Hatha y Vinyasa)",
+          "Acceso a la piscina de 10:00 a 20:00",
+          "Wi-Fi de alta velocidad gratuito en todo el campus",
+          "2 masajes balineses corporales completos de cortesía",
+          "Sesión de sanación con sonido y cuencos tibetanos",
+          "Todos los accesorios y esterillas disponibles en la shala",
+          "Agua purificada y tés herbales ilimitados"
+        ],
+        "notIncluded": [
+          "Vuelos hacia/desde Denpasar Bali (DPS)",
+          "Traslado de salida al aeropuerto (fácilmente reservable por $25–$30)",
+          "Gastos personales y compras"
+        ],
+        "faqs": [
+          {
+            "question": "¿Cuáles son los horarios de entrada y salida?",
+            "answer": "El check-in es a las 12:00 del Día 1 y el check-out a las 12:00 del Día 3."
+          },
+          {
+            "question": "¿Son bienvenidos los principiantes?",
+            "answer": "¡Sí! Todas las clases se adaptan tanto para principiantes absolutos como para practicantes habituales."
+          },
+          {
+            "question": "¿Están realmente incluidos los masajes balineses?",
+            "answer": "Sí, 2 masajes balineses de cuerpo completo están completamente incluidos en tu tarifa."
+          },
+          {
+            "question": "¿Cómo llego desde el aeropuerto?",
+            "answer": "El aeropuerto de Denpasar (DPS) está a 38 km. Coordinamos taxis privados bajo petición."
+          }
+        ]
+      },
+      "bali-7-days": {
+        "title": "7 DÍAS Y 6 NOCHES RETIRO DE YOGA EN UBUD BALI",
+        "included": [
+          "Alojamiento seleccionado (Campus-I o Campus-II)",
+          "3 comidas saludables veganas/vegetarianas al día",
+          "Clases diarias de yoga (Hatha y Vinyasa Flow)",
+          "Acceso a la piscina de 10:00 a 20:00",
+          "Wi-Fi de alta velocidad gratuito en todo el campus",
+          "6 masajes balineses de cortesía (1 por día de estancia)",
+          "Sesión de terapia de sonido con cuencos tibetanos",
+          "Sesión de sanación Reiki y alineación de chakras",
+          "Ceremonia sagrada de purificación con agua Melukat (Tirta Empul)",
+          "Todos los accesorios y esterillas para la práctica en la shala",
+          "Agua mineral purificada e infusiones naturales ilimitadas"
+        ],
+        "notIncluded": [
+          "Billetes de avión hacia/desde Denpasar Bali (DPS)",
+          "Traslado de salida al aeropuerto (gestionable por $25–$30)",
+          "Lavandería y compras personales"
+        ],
+        "faqs": [
+          {
+            "question": "¿Cuáles son los horarios de check-in y check-out?",
+            "answer": "Check-in a las 12:00 del Día 1 y check-out a las 12:00 del Día 7."
+          },
+          {
+            "question": "¿El masaje balinés está incluido todos los días?",
+            "answer": "¡Sí! Recibes 6 masajes balineses corporales completos durante tu estancia de una semana."
+          },
+          {
+            "question": "¿Qué es la ceremonia Melukat?",
+            "answer": "Melukat es un antiguo ritual de purificación en el templo de manantiales sagrados Tirta Empul, guiado por un sacerdote balinés."
+          },
+          {
+            "question": "¿Cuál es la política de reprogramación?",
+            "answer": "Cada participante tiene derecho a una reprogramación gratuita de fechas avisando con antelación."
+          },
+          {
+            "question": "¿Cómo llego desde el aeropuerto?",
+            "answer": "Vuela al aeropuerto de Denpasar (DPS), situado a 38 km. Organizamos traslados privados directos a Ubud."
+          }
+        ]
+      },
+      "bali-14-days": {
+        "title": "14 DÍAS Y 13 NOCHES RETIRO DE YOGA EN UBUD BALI",
+        "included": [
+          "Alojamiento seleccionado (Campus-I o Campus-II)",
+          "3 comidas deliciosas y nutritivas vegetarianas/veganas diarias",
+          "Clases diarias de yoga durante los 14 días",
+          "Acceso a la piscina de 10:00 a 20:00",
+          "Wi-Fi de alta velocidad en todo el recinto",
+          "12 masajes balineses corporales de cortesía",
+          "Múltiples sesiones de sanación con sonido y energía Reiki",
+          "Dos excursiones culturales (Templo del agua y cascadas en la jungla)",
+          "Todos los materiales y apoyos de yoga disponibles",
+          "Traslados de ida y vuelta al aeropuerto incluidos"
+        ],
+        "notIncluded": [
+          "Billetes de avión hacia/desde Denpasar Bali (DPS)",
+          "Gastos personales y compras"
+        ],
+        "faqs": [
+          {
+            "question": "¿Cuáles son los horarios de entrada y salida?",
+            "answer": "Check-in a las 12:00 del Día 1 y check-out a las 12:00 del Día 14."
+          },
+          {
+            "question": "¿Cuántos masajes están incluidos en 14 días?",
+            "answer": "Recibes 12 masajes balineses corporales completos a lo largo de las dos semanas."
+          },
+          {
+            "question": "¿Están incluidos ambos traslados al aeropuerto?",
+            "answer": "Sí, para el retiro de 14 días, la recogida y el traslado de vuelta a Denpasar (DPS) están incluidos."
+          },
+          {
+            "question": "¿Cómo funciona la reprogramación?",
+            "answer": "Puedes reprogramar tus fechas una vez de forma gratuita con aviso previo."
+          }
+        ]
+      },
+      "rishikesh-3-days": {
+        "title": "3 Días Retiro de Fin de Semana de Yoga en el Himalaya en Rishikesh",
+        "included": [
+          "2 Noches de alojamiento en Tapovan, Rishikesh",
+          "3 Comidas diarias saludables ayurvédicas vegetarianas/veganas",
+          "Todas las sesiones de yoga, pranayama y meditación",
+          "1 Masaje ayurvédico Abhyanga tradicional de 60 minutos",
+          "Asistencia guiada a la sagrada ceremonia de Ganga Aarti",
+          "Agua potable filtrada e infusiones 24/7"
+        ],
+        "notIncluded": [
+          "Vuelos a la India / Dehradun (DED)",
+          "Tasas de visado para la India",
+          "Gastos personales y propinas"
+        ],
+        "faqs": [
+          {
+            "question": "¿Cómo llegar a Rishikesh?",
+            "answer": "Vuela al aeropuerto de Dehradun (DED), a 35 minutos del ashram, o toma un tren hasta Haridwar/Rishikesh."
+          },
+          {
+            "question": "¿Está incluida la ceremonia Ganga Aarti?",
+            "answer": "Sí, nuestro maestro te acompaña a la hermosa ceremonia nocturna a orillas del sagrado río Ganges."
+          }
+        ]
+      },
+      "rishikesh-7-days": {
+        "title": "7 Días Retiro Sagrado de Yoga y Meditación en el Ganges en Rishikesh",
+        "included": [
+          "6 Noches de alojamiento en Tapovan, Rishikesh",
+          "3 Comidas recién elaboradas vegetarianas y veganas al día",
+          "Todas las clases de yoga, trabajo de respiración y meditación",
+          "Excursión al templo Kunjapuri en el Himalaya para ver el amanecer",
+          "2 Terapias ayurvédicas completas (masaje Abhyanga y Shirodhara)",
+          "Recogida en el aeropuerto de Dehradun (DED)",
+          "Kit de yoga: esterilla, cojín de meditación y lote neti"
+        ],
+        "notIncluded": [
+          "Vuelos a la India / Dehradun",
+          "Costes de visado indio",
+          "Gastos personales y compras"
+        ],
+        "faqs": [
+          {
+            "question": "¿Qué es Shirodhara?",
+            "answer": "Una terapia clásica ayurvédica donde un flujo constante de aceite templado cae sobre el entrecejo para calmar la mente y disolver tensiones."
+          },
+          {
+            "question": "¿Puedo participar sin experiencia previa en filosofía?",
+            "answer": "Sí, nuestros profesores explican la filosofía ancestral con ejemplos sencillos y aplicables a la vida diaria."
+          }
+        ]
+      },
+      "rishikesh-14-days": {
+        "title": "14 Días Retiro Profundo de Sadhana y Yoga en Ashram en Rishikesh",
+        "included": [
+          "13 Noches de alojamiento en nuestro sereno ashram de Tapovan",
+          "3 Comidas ayurvédicas al día + zumos frescos e infusiones",
+          "Prácticas diarias de yoga, pranayama, kriya y meditación",
+          "4 Terapias corporales ayurvédicas completas",
+          "Excursiones guiadas a la Cueva de Vashistha, Ashram de los Beatles y Kunjapuri",
+          "Traslados de ida y vuelta al aeropuerto de Dehradun (DED)",
+          "Manual completo del retiro y rutina personalizada de práctica"
+        ],
+        "notIncluded": [
+          "Vuelos internacionales a Delhi / Dehradun",
+          "Tasas de visado para la India",
+          "Compras y lavandería"
+        ],
+        "faqs": [
+          {
+            "question": "¿Qué es la Cueva de Vashistha (Vashistha Guha)?",
+            "answer": "Una gruta sagrada junto al río Ganges donde los grandes sabios meditaban, conocida por su incomparable calma espiritual."
+          },
+          {
+            "question": "¿Podré mantener mi rutina en casa?",
+            "answer": "Sí, en los últimos días diseñamos un plan de práctica personal adaptado a tu estilo de vida y horarios."
+          }
+        ]
+      },
+      "varkala-3-days": {
+        "title": "3 Días Retiro de Yoga Brisa Marina en Varkala",
+        "included": [
+          "2 Noches de alojamiento en resort boutique en el acantilado",
+          "3 Comidas ayurvédicas vegetarianas de Kerala al día",
+          "Todas las sesiones diarias de yoga, pranayama y meditación",
+          "1 Masaje tradicional Kerala Abhyanga de 60 minutos",
+          "Agua mineral, agua de coco fresca y tés herbales",
+          "Esterillas y accesorios de yoga incluidos"
+        ],
+        "notIncluded": [
+          "Vuelos al aeropuerto de Trivandrum (TRV)",
+          "Traslado en taxi (disponible por aprox. $35)",
+          "Paseos en barco y actividades personales"
+        ],
+        "faqs": [
+          {
+            "question": "¿Por qué es famosa la playa de Papanasam?",
+            "answer": "Papanasam significa 'limpieza de impurezas'. Sus aguas y manantiales minerales son venerados por sus propiedades regeneradoras."
+          },
+          {
+            "question": "¿Cuál es el aeropuerto más cercano a Varkala?",
+            "answer": "El aeropuerto internacional de Trivandrum (TRV) está a solo 45 km (1 hora en coche). Podemos enviar un conductor a recogerte."
+          }
+        ]
+      },
+      "varkala-7-days": {
+        "title": "7 Días Retiro de Yoga y Ayurveda en la Playa en Varkala, Kerala",
+        "included": [
+          "6 Noches en un resort boutique cerca del acantilado de Varkala",
+          "3 Comidas tradicionales ayurvédicas vegetarianas al día",
+          "Sesiones diarias de yoga y meditación de mañana y tarde",
+          "Consulta con médico ayurvédico y evaluación personalizada de doshas",
+          "3 Terapias tradicionales ayurvédicas (Abhyanga, Kizhi, Shirodhara)",
+          "Paseo en barco por los hermosos remansos (backwaters) de Kerala",
+          "Recogida en el aeropuerto de Trivandrum (TRV)",
+          "Pack de bienvenida, esterilla de yoga y prescripción herbal"
+        ],
+        "notIncluded": [
+          "Vuelos a Trivandrum",
+          "Traslado de regreso al aeropuerto (aprox. $35)",
+          "Gastos personales y compras"
+        ],
+        "faqs": [
+          {
+            "question": "¿Qué es la terapia Kizhi?",
+            "answer": "Un tratamiento ayurvédico con saquitos de hierbas calientes aplicados sobre el cuerpo para calmar dolores y aliviar la rigidez."
+          },
+          {
+            "question": "¿Está Varkala concurrida?",
+            "answer": "No, Varkala destaca por su atmósfera relajada, espiritual y tranquila, perfecta para desconectar y descansar."
+          }
+        ]
+      },
+      "varkala-14-days": {
+        "title": "14 Días Inmersión Total de Sanación Ayurvédica y Yoga en Varkala",
+        "included": [
+          "13 Noches de estancia en resort boutique costero",
+          "3 Comidas biológicas ayurvédicas al día + zumos saludables",
+          "Prácticas de yoga y meditación por la mañana y tarde",
+          "Consultas inicial y final con doctor ayurvédico",
+          "6 Terapias ayurvédicas especializadas",
+          "Paseo en barco por la isla Munroe y visita a templos locales",
+          "Traslados de ida y vuelta al aeropuerto de Trivandrum (TRV)",
+          "Taller de cocina ayurvédica y recetario para llevar a casa"
+        ],
+        "notIncluded": [
+          "Billetes de avión internacionales o nacionales",
+          "Visado para la India",
+          "Compras personales y lavandería"
+        ],
+        "faqs": [
+          {
+            "question": "¿Qué problemas de salud ayuda a aliviar este retiro?",
+            "answer": "Los participantes experimentan gran alivio del estrés crónico, cansancio, dificultades digestivas y dolores articulares."
+          },
+          {
+            "question": "¿Se adaptan dietas especiales?",
+            "answer": "¡Por supuesto! Preparamos opciones veganas, sin gluten y recetas específicas para equilibrar tus doshas."
+          }
+        ]
+      }
+    }
   },
   "yogicEnergy": {
     "metaTitle": "Descubre Tu Energía Yóguica Única",
@@ -5687,7 +5968,7 @@
     ],
     "hero": {
       "badge": "Yoga Alliance Certified RYT 500 Pathway",
-      "h1": "300 Hour Yoga Teacher Training in Rishikesh, India",
+      "h1": "Formación de Profesores de Yoga 300 Horas en Rishikesh",
       "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Tapovan, Rishikesh. Study with master teachers by the sacred Ganges.",
       "quickDuration": "28 Days",
       "quickLevel": "Advanced (200-Hour YTT required)",
@@ -5695,9 +5976,9 @@
       "quickLang": "English",
       "quickBatch": "8–10 Students",
       "quickLocation": "Tapovan, Rishikesh",
-      "btnReserve": "Reserve Your Spot",
-      "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnReserve": "Reserva tu plaza",
+      "btnBrochure": "Descargar programa",
+      "btnCounselor": "Habla con un asesor"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Rishikesh",
@@ -7997,7 +8278,7 @@
     ],
     "hero": {
       "badge": "Yoga Alliance Certified RYT 500 Pathway",
-      "h1": "300 Hour Yoga Teacher Training in Varkala, India",
+      "h1": "Formación de Profesores de Yoga 300 Horas en Varkala",
       "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Varkala Cliff, Varkala. Study with master teachers by the sacred Arabian Sea.",
       "quickDuration": "28 Days",
       "quickLevel": "Advanced (200-Hour YTT required)",
@@ -8005,9 +8286,9 @@
       "quickLang": "English",
       "quickBatch": "8–10 Students",
       "quickLocation": "Varkala Cliff, Varkala",
-      "btnReserve": "Reserve Your Spot",
-      "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnReserve": "Reserva tu plaza",
+      "btnBrochure": "Descargar programa",
+      "btnCounselor": "Habla con un asesor"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Varkala",

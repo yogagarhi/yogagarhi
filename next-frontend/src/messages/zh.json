@@ -4845,7 +4845,288 @@
     "needGuidance": "需要帮助挑选合适的静修营吗？",
     "guidanceSub": "我们的顾问团队随时协助您办理机票接驳、签证及行程定制。",
     "reschedulePolicyTitle": "改期与退订条款",
-    "reschedulePolicyText": "可在12个月内灵活改期。第1天课程开始后概不退费。"
+    "reschedulePolicyText": "可在12个月内灵活改期。第1天课程开始后概不退费。",
+    "packages": {
+      "bali-3-days": {
+        "title": "巴厘岛乌布 3天2晚 瑜伽静修营",
+        "included": [
+          "精选住宿（校区一或校区二）",
+          "每日3餐营养美味的纯素／素食膳食",
+          "每日指定瑜伽课程（哈他与流瑜伽）",
+          "10:00至20:00游泳池免费使用",
+          "全园区覆盖免费高速Wi-Fi",
+          "免费赠送2次正宗巴厘岛全身按摩",
+          "西藏颂钵音疗与深度冥想体验",
+          "瑜伽馆内所有瑜伽辅具及垫子免费使用",
+          "无限量纯净饮用水和新鲜草本茶"
+        ],
+        "notIncluded": [
+          "往返登巴萨巴厘岛（DPS）机票",
+          "送机服务（可协助预订，约$25–$30美元）",
+          "个人消费与购物费用"
+        ],
+        "faqs": [
+          {
+            "question": "入住和退房时间是几点？",
+            "answer": "第一天中午12:00入住，第三天中午12:00退房。"
+          },
+          {
+            "question": "瑜伽初学者可以参加这个3天静修营吗？",
+            "answer": "当然可以！所有课程均针对零基础到中高级练习者提供针对性的变体动作指导。"
+          },
+          {
+            "question": "巴厘岛按摩真的是免费包含的吗？",
+            "answer": "是的，两次60分钟的正宗巴厘岛全身按摩已全额包含在静修营费用中。"
+          },
+          {
+            "question": "如何从机场到达静修园区？",
+            "answer": "登巴萨国际机场（DPS）距离园区约38公里。如需接机，我们可协助安排舒适的专属出租车。"
+          }
+        ]
+      },
+      "bali-7-days": {
+        "title": "巴厘岛乌布 7天6晚 瑜伽静修营",
+        "included": [
+          "6晚住宿（花园套房或泳池别墅）",
+          "主厨每日精制3餐有机纯素/素食盛宴",
+          "每日清晨哈他/流瑜伽练习与傍晚放松冥想",
+          "每日正宗巴厘岛全身按摩（共包含6次）",
+          "圣泉寺（Tirta Empul）神圣圣水洗礼（Melukat）净化仪式",
+          "在开放式竹韵瑜伽馆体验西藏颂钵音疗",
+          "喜马拉雅传统调息法（Pranayama）与脉轮疗愈工坊",
+          "泳池全天使用（10:00-20:00）及全区高速Wi-Fi",
+          "无限量纯净矿泉水和排毒草本茶",
+          "欢迎礼包：YogaGarhi纯棉瑜伽垫与专属背包",
+          "登巴萨机场（DPS）免费单程接机服务"
+        ],
+        "notIncluded": [
+          "飞往巴厘岛的往返机票",
+          "送机服务（约$25–$30美元即可轻松安排）",
+          "个人购物与纪念品费用"
+        ],
+        "faqs": [
+          {
+            "question": "每日按摩真的每天都有吗？",
+            "answer": "是的，入住期间每天均包含一次60分钟的传统巴厘岛全身舒缓按摩。"
+          },
+          {
+            "question": "什么是圣水洗礼（Melukat）仪式？",
+            "answer": "这是巴厘岛神圣的水净化传统，由当地祭司引导，在圣泉寺洗净身心压力与浊气。"
+          },
+          {
+            "question": "改期政策是怎样的？",
+            "answer": "提前15天通知，每位学员均享有一次免费更改日期的权利。"
+          },
+          {
+            "question": "机场交通如何安排？",
+            "answer": "我们提供从DPS机场直达乌布园区的免费专车接机服务。"
+          },
+          {
+            "question": "独自一人参加方便吗？",
+            "answer": "超过80%的学员都是独自前来。园区氛围温馨友善，非常安全。"
+          }
+        ]
+      },
+      "bali-14-days": {
+        "title": "巴厘岛乌布 14天13晚 瑜伽静修营",
+        "included": [
+          "13晚精选住宿（校区一或校区二）",
+          "采用新鲜有机农场食材制作的每日3餐纯素美食",
+          "每日2次瑜伽练习（清晨活力体式与傍晚深度修复）",
+          "共12次巴厘岛传统全身芳香按摩",
+          "2次西藏颂钵深度音疗能量疗愈",
+          "圣泉寺神圣圣水洗礼与祈福仪式",
+          "巴厘岛传统植物性健康烹饪工坊",
+          "DPS机场全程往返专属专车接送",
+          "游泳池、Wi-Fi与草本茶全天候免费享用",
+          "个人生活方式与瑜伽导师1对1指导交流"
+        ],
+        "notIncluded": [
+          "国际往返机票",
+          "个人洗衣及日常零用开销"
+        ],
+        "faqs": [
+          {
+            "question": "14天包含多少次按摩？",
+            "answer": "共包含12次完整的60分钟巴厘岛全身按摩护理。"
+          },
+          {
+            "question": "往返接送机都包含在内吗？",
+            "answer": "是的，14天静修营包含DPS机场的往返双向免费接送。"
+          },
+          {
+            "question": "可以在任意日期开始吗？",
+            "answer": "是的，全年开放，您可以根据您的行程在任意一天开始。"
+          },
+          {
+            "question": "需要提前具备瑜伽功底吗？",
+            "answer": "不需要，导师会根据每位学员的身体柔韧度与体能给予个性化指导。"
+          }
+        ]
+      },
+      "rishikesh-3-days": {
+        "title": "瑞诗凯诗 喜马拉雅周末 3天 瑜伽静修营",
+        "included": [
+          "瑞诗凯诗Tapovan静修院2晚舒适住宿",
+          "每日3餐纯净萨埵（Sattvic）阿育吠陀素食",
+          "每日早晚经典哈他与流瑜伽体式精进",
+          "参与恒河边神圣肃穆的日落恒河祈祷（Ganga Aarti）",
+          "俯瞰恒河的日落调息与静心冥想",
+          "无限量特调草本茶与过滤天然泉水"
+        ],
+        "notIncluded": [
+          "前往瑞诗凯诗的往返大交通",
+          "德拉敦机场（DED）或德里机场接送（可按需协助安排）",
+          "个人购物与随身开支"
+        ],
+        "faqs": [
+          {
+            "question": "如何抵达瑞诗凯诗？",
+            "answer": "最近的德拉敦机场（DED）车程仅约35分钟。从德里乘坐火车或出租车也很便捷。"
+          },
+          {
+            "question": "女性独自前往安全吗？",
+            "answer": "十分安全。静修院配备24小时安保，大部分学员均为独自前来的女性。"
+          }
+        ]
+      },
+      "rishikesh-7-days": {
+        "title": "瑞诗凯诗 神圣恒河 7天 瑜伽与冥想静修营",
+        "included": [
+          "6晚坐拥喜马拉雅壮丽景致的静谧客房住宿",
+          "每日3餐阿育吠陀营养萨埵餐",
+          "每日哈他、阿斯汤加与阴瑜伽练习",
+          "调息法（Pranayama）、曼陀罗唱诵与瑜伽哲学讲解",
+          "1次正统阿育吠陀全身草本油按摩（Abhyanga）与滴油疗法（Shirodhara）",
+          "Kunjapuri神庙日出远足，俯瞰雪山全景",
+          "德拉敦机场（DED）单程接机"
+        ],
+        "notIncluded": [
+          "前往印度／德拉敦的机票",
+          "印度签证申请费用",
+          "个人小费与消费"
+        ],
+        "faqs": [
+          {
+            "question": "什么是滴油疗法（Shirodhara）？",
+            "answer": "这是一种将温热药草精油轻柔滴注于额头印堂穴（第三眼）的疗法，能深度放松神经系统并消除焦虑。"
+          },
+          {
+            "question": "没有哲学基础可以学懂吗？",
+            "answer": "当然可以，老师会用深入浅出的生活化语言阐释瑜伽经典智慧。"
+          }
+        ]
+      },
+      "rishikesh-14-days": {
+        "title": "瑞诗凯诗 喜马拉雅修道院 14天 深度瑜伽修行静修营",
+        "included": [
+          "13晚传统修道院环境住宿体验",
+          "每日3餐营养均衡的有机阿育吠陀膳食",
+          "每日深入体式、调息与专注冥想精修",
+          "阿育吠陀资深医师脉诊与一对一健康评估",
+          "3次阿育吠陀理疗护理（含草本油疗、滴油疗法与草药蒸汽）",
+          "探访恒河畔古圣人瓦西斯塔岩洞（Vashistha Guha）静坐冥想",
+          "德拉敦机场（DED）往返专属接送机"
+        ],
+        "notIncluded": [
+          "国际往返机票",
+          "印度签证费",
+          "个人洗衣及日常开销"
+        ],
+        "faqs": [
+          {
+            "question": "瓦西斯塔岩洞（Vashistha Guha）有何特别之处？",
+            "answer": "这是喜马拉雅数千年来圣人隐修的极具灵性能量的古老岩洞，静谧非凡。"
+          },
+          {
+            "question": "课程结束后能在家坚持练习吗？",
+            "answer": "可以，结营时老师会为你量身定制一份适合在日常生活中持续修行的个人习练计划。"
+          }
+        ]
+      },
+      "varkala-3-days": {
+        "title": "瓦尔卡拉 海风 3天 瑜伽静修营",
+        "included": [
+          "2晚面朝阿拉伯海的海滨度假客房住宿",
+          "每日3餐新鲜喀拉拉传统阿育吠陀素食",
+          "伴着海风的悬崖清晨瑜伽与黄昏日落冥想",
+          "1次传统喀拉拉温热草本精油全身调理",
+          "Papanasam神圣海滩日落漫步冥想",
+          "纯净饮用水与喀拉拉特色草本养生茶"
+        ],
+        "notIncluded": [
+          "飞往特里凡得琅（TRV）机场的机票",
+          "机场接送出租车（单程约$35美元可协助预订）",
+          "个人水上运动与乘船费用"
+        ],
+        "faqs": [
+          {
+            "question": "Papanasam海滩为何如此闻名？",
+            "answer": "这里拥有天然药用矿泉，传说在神圣海水中沐浴能洗涤身心浊气、重获身心活力。"
+          },
+          {
+            "question": "瓦尔卡拉最近的机场是哪一个？",
+            "answer": "特里凡得琅国际机场（TRV），车程约45公里（乘坐出租车约1小时）。"
+          }
+        ]
+      },
+      "varkala-7-days": {
+        "title": "喀拉拉邦瓦尔卡拉 7天 阿育吠陀与海滩瑜伽静修营",
+        "included": [
+          "6晚紧邻著名瓦尔卡拉红岩悬崖的海滨客房住宿",
+          "每日3餐喀拉拉纯正有机阿育吠陀调理饮食",
+          "每日海滩日出瑜伽与日落舒缓修复练习",
+          "阿育吠陀医师体质（Dosha）诊断评估",
+          "3次传统阿育吠陀专享疗程（Abhyanga、Kizhi草药包与Shirodhara滴油）",
+          "喀拉拉著名内陆水乡（Backwaters）游船探索",
+          "特里凡得琅机场（TRV）免费接机服务",
+          "专属欢迎礼包、瑜伽垫与体质个性化草本养生建议"
+        ],
+        "notIncluded": [
+          "往返特里凡得琅机票",
+          "送机服务（单程约$35美元即可轻松安排）",
+          "个人购物与自由活动费用"
+        ],
+        "faqs": [
+          {
+            "question": "什么是Kizhi草药包疗法？",
+            "answer": "这是一种使用温热草药包在全身节奏性轻拍按压的传统疗法，能有效缓解关节酸痛和肌肉僵硬。"
+          },
+          {
+            "question": "瓦尔卡拉会像其他旅游海滩那样喧闹吗？",
+            "answer": "不会，瓦尔卡拉以宁静、祥和且富有灵性氛围而著称，非常适合深度身心休养。"
+          }
+        ]
+      },
+      "varkala-14-days": {
+        "title": "瓦尔卡拉 14天 阿育吠陀全效疗愈与瑜伽沉浸静修营",
+        "included": [
+          "13晚海滨精品度假村静养住宿",
+          "每日3餐有机阿育吠陀调理餐配新鲜活力果蔬汁",
+          "每日早晚瑜伽体式与深层静心修习",
+          "阿育吠陀医师初诊与结营健康复诊",
+          "6次专业阿育吠陀深度理疗调理",
+          "Munroe岛水乡漫游与古寺朝圣之旅",
+          "特里凡得琅机场（TRV）全程往返接送机",
+          "阿育吠陀养生烹饪课及实用居家食谱手册"
+        ],
+        "notIncluded": [
+          "国际与国内往返机票",
+          "印度签证申请费用",
+          "个人日常洗衣与消费"
+        ],
+        "faqs": [
+          {
+            "question": "这个静修营对哪些身体状况有帮助？",
+            "answer": "学员普遍反馈在缓解长期慢性压力、疲惫、消化系统紊乱及关节劳损方面有显著改善。"
+          },
+          {
+            "question": "是否支持特殊饮食需求？",
+            "answer": "支持！我们的厨师团队能精心定制纯素、无麸质及针对个人体质平衡的餐食。"
+          }
+        ]
+      }
+    }
   },
   "yogicEnergy": {
     "metaTitle": "探索您独特的瑜伽能量类型",
@@ -5687,7 +5968,7 @@
     ],
     "hero": {
       "badge": "Yoga Alliance Certified RYT 500 Pathway",
-      "h1": "300 Hour Yoga Teacher Training in Rishikesh, India",
+      "h1": "瑞诗凯诗300小时瑜伽教师培训",
       "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Tapovan, Rishikesh. Study with master teachers by the sacred Ganges.",
       "quickDuration": "28 Days",
       "quickLevel": "Advanced (200-Hour YTT required)",
@@ -5695,9 +5976,9 @@
       "quickLang": "English",
       "quickBatch": "8–10 Students",
       "quickLocation": "Tapovan, Rishikesh",
-      "btnReserve": "Reserve Your Spot",
-      "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnReserve": "预订您的席位",
+      "btnBrochure": "下载教学大纲",
+      "btnCounselor": "咨询课程顾问"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Rishikesh",
@@ -7997,7 +8278,7 @@
     ],
     "hero": {
       "badge": "Yoga Alliance Certified RYT 500 Pathway",
-      "h1": "300 Hour Yoga Teacher Training in Varkala, India",
+      "h1": "瓦尔卡拉300小时瑜伽教师培训",
       "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Varkala Cliff, Varkala. Study with master teachers by the sacred Arabian Sea.",
       "quickDuration": "28 Days",
       "quickLevel": "Advanced (200-Hour YTT required)",
@@ -8005,9 +8286,9 @@
       "quickLang": "English",
       "quickBatch": "8–10 Students",
       "quickLocation": "Varkala Cliff, Varkala",
-      "btnReserve": "Reserve Your Spot",
-      "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnReserve": "预订您的席位",
+      "btnBrochure": "下载教学大纲",
+      "btnCounselor": "咨询课程顾问"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Varkala",

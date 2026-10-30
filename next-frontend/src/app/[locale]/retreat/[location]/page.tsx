@@ -181,7 +181,11 @@ export default async function RetreatLocationPage({ params }: Props) {
           <h1 className={`font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold uppercase tracking-tight leading-tight mb-4 ${
             isBali ? "text-amber-950" : "text-foreground"
           }`}>
-            {isEn ? `Yoga Retreat in ${loc.name}` : t("heroTitle", { loc: displayName })}
+            {isEn
+              ? `Yoga Retreat in ${loc.name}`
+              : (locale === 'nl' && loc.key === 'bali'
+                  ? "Yoga Retraite op Bali"
+                  : t("heroTitle", { loc: displayName }))}
           </h1>
 
           <p className="text-base md:text-lg text-stone-700 max-w-3xl leading-relaxed mb-6 font-serif">
