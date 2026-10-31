@@ -1,4 +1,5 @@
 "use client";
+import { HOW_TO_REACH_UI } from "@/constants/courseSectionsTranslations";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useTranslations, useLocale } from "next-intl";
@@ -858,6 +859,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
   /* Form Submission States */
   const [isSubmittingManual, setIsSubmittingManual] = useState(false);
   const [isSubmittingSyllabus, setIsSubmittingSyllabus] = useState(false);
+  const syllabusUI = (locale && locale !== "en" && HOW_TO_REACH_UI[locale]) ? HOW_TO_REACH_UI[locale] : HOW_TO_REACH_UI.en;
   const [isSubmittingWebinar, setIsSubmittingWebinar] = useState(false);
   const [isSubmittingPreYTTC, setIsSubmittingPreYTTC] = useState(false);
   const [isSubmittingQuiz, setIsSubmittingQuiz] = useState(false);
@@ -1644,7 +1646,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   >
                     <span className="relative z-10 flex items-center gap-2">
                       <Download className="w-5 h-5" />
-                      Download Detailed Syllabus
+                      {syllabusUI.syllabusBtn || "Download Detailed Syllabus"}
                     </span>
                     <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-500 ease-in-out" />
                   </Button>
@@ -1652,10 +1654,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <DialogContent className="sm:max-w-md">
                   <DialogHeader>
                     <DialogTitle className="font-heading text-2xl text-center">
-                      Download Syllabus
+                      {syllabusUI.syllabusTitle || "Download Syllabus"}
                     </DialogTitle>
                     <DialogDescription className="text-center text-muted-foreground text-sm">
-                      Select your course and enter email to receive the detailed syllabus.
+                      {syllabusUI.syllabusDesc || "Select your course and enter email to receive the detailed syllabus."}
                     </DialogDescription>
                   </DialogHeader>
                   <form onSubmit={handleSyllabusSubmit} className="space-y-4 pt-4">
@@ -1670,7 +1672,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     </select>
                     <input
                       type="email"
-                      placeholder="Your email address"
+                      placeholder={syllabusUI.syllabusEmailPlaceholder || "Your email address"}
                       value={syllabusEmail}
                       onChange={(e) => {
                         setSyllabusEmail(e.target.value);
@@ -1687,7 +1689,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       size="lg"
                       disabled={isSubmittingSyllabus}
                     >
-                      {isSubmittingSyllabus ? "Sending..." : "Send Syllabus"}
+                      {isSubmittingSyllabus ? (syllabusUI.syllabusSending || "Sending...") : (syllabusUI.syllabusSend || "Send Syllabus")}
                     </Button>
                   </form>
                 </DialogContent>
@@ -4311,8 +4313,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <CourseFAQSection />
 
         {/* ===== ALSO AVAILABLE IN RISHIKESH & VARKALA ===== */}
-        <AlsoAvailableInRishikeshSection />
-        <AlsoAvailableInVarkalaSection />
+        <AlsoAvailableInRishikeshSection locale={locale} />
+        <AlsoAvailableInVarkalaSection locale={locale} />
 
         {/* ===== FINAL CONVERSION HUB ===== */}
         <section className="py-20 relative overflow-hidden">

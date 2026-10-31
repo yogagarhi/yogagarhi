@@ -19,6 +19,22 @@ export interface TrustBadge {
   title: string;
 }
 
+export interface SeasonCard {
+  badge: string;
+  badgeColor?: string;
+  temp: string;
+  period: string;
+  climate: string;
+  description: string;
+}
+
+export interface CompareRow {
+  feature?: string;
+  c100: string;
+  c200: string;
+  c300: string;
+}
+
 export interface CompareCoursesUIData {
   badge: string;
   titleRishikesh: string;
@@ -43,6 +59,8 @@ export interface CompareCoursesUIData {
   f_focus: string;
   f_batch: string;
   f_price: string;
+  rowsRishikesh?: CompareRow[];
+  rowsVarkala?: CompareRow[];
 }
 
 export interface ExploreMoreCoursesUIData {
@@ -60,6 +78,8 @@ export interface BestTimeToVisitUIData {
   subtitleRishikesh: string;
   subtitleVarkala: string;
   monthlyStart: string;
+  seasonsRishikesh?: SeasonCard[];
+  seasonsVarkala?: SeasonCard[];
 }
 
 export interface HowToReachUIData {
@@ -75,6 +95,43 @@ export interface HowToReachUIData {
   byRoad: string;
   airportTransfers: string;
   checkInOut: string;
+  taxiTitleRishikesh?: string;
+  taxiTitleVarkala?: string;
+  taxiSubRishikesh?: string;
+  taxiSubVarkala?: string;
+  thRoute?: string;
+  thCostUsd?: string;
+  thCostInr?: string;
+  pickupStrong?: string;
+  pickupTextRishikesh?: string;
+  pickupTextVarkala?: string;
+  pickupBtn?: string;
+  visaTitle?: string;
+  visaSub?: string;
+  visaB1Title?: string;
+  visaB1Text?: string;
+  visaB2Title?: string;
+  visaB2Text?: string;
+  visaB3Title?: string;
+  visaB3Text?: string;
+  visaB4Title?: string;
+  visaB4Text?: string;
+  airItemsRishikesh?: any[];
+  trainItemsRishikesh?: any[];
+  roadItemsRishikesh?: any[];
+  airItemsVarkala?: any[];
+  trainItemsVarkala?: any[];
+  roadItemsVarkala?: any[];
+  taxiFaresRishikesh?: any[];
+  taxiFaresVarkala?: any[];
+  openInMaps?: string;
+  syllabusBtn?: string;
+  syllabusTitle?: string;
+  syllabusDesc?: string;
+  syllabusEmailPlaceholder?: string;
+  syllabusSend?: string;
+  syllabusSending?: string;
+  syllabusPrompt?: string;
 }
 
 export interface FAQsHeaderUIData {
@@ -82,6 +139,10 @@ export interface FAQsHeaderUIData {
   title: string;
   subtitleRishikesh: string;
   subtitleVarkala: string;
+  chatWhatsApp?: string;
+  helpDeskTitleRishikesh?: string;
+  helpDeskTitleVarkala?: string;
+  helpDeskSub?: string;
 }
 
 export interface RetreatExtraUIData {
@@ -1252,7 +1313,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "Certification",
     "f_focus": "Core Focus",
     "f_batch": "Batch Size",
-    "f_price": "Starting Price"
+    "f_price": "Starting Price",
+    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsVarkala": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "nl": {
     "badge": "Programma Vergelijking",
@@ -1277,7 +1340,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "Certificering",
     "f_focus": "Kernfocus",
     "f_batch": "Groepsgrootte",
-    "f_price": "Vanaf-prijs"
+    "f_price": "Vanaf-prijs",
+    "rowsRishikesh": [{"c100": "12 Dagen (11 Nachten)", "c200": "28 Dagen (27 Nachten)", "c300": "28 Dagen (27 Nachten)"}, {"c100": "Beginners & Zoekers", "c200": "Beginner tot Halfgevorderd", "c300": "Halfgevorderd tot Gevorderd"}, {"c100": "Geen (Open Geest)", "c200": "Regelmatige eigen beoefening", "c300": "200-Uurs Certificaat"}, {"c100": "Basis Certificaat", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Basis & Eigen Beoefening", "c200": "Lesvaardigheden & Anatomie", "c300": "Gevorderde Sequenties & Verdieping"}, {"c100": "Max. 8–10 Studenten", "c200": "Max. 8–10 Studenten", "c300": "Max. 8–10 Studenten"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1.099 USD"}],
+    "rowsVarkala": [{"c100": "12 Dagen (11 Nachten)", "c200": "28 Dagen (27 Nachten)", "c300": "28 Dagen (27 Nachten)"}, {"c100": "Beginners & Zoekers", "c200": "Beginner tot Halfgevorderd", "c300": "Halfgevorderd tot Gevorderd"}, {"c100": "Geen (Open Geest)", "c200": "Regelmatige eigen beoefening", "c300": "200-Uurs Certificaat"}, {"c100": "Basis Certificaat", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Basis & Eigen Beoefening", "c200": "Lesvaardigheden & Anatomie", "c300": "Gevorderde Sequenties & Verdieping"}, {"c100": "Max. 8–10 Studenten", "c200": "Max. 8–10 Studenten", "c300": "Max. 8–10 Studenten"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1.099 USD"}]
   },
   "de": {
     "badge": "Programmvergleich",
@@ -1302,7 +1367,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "Zertifizierung",
     "f_focus": "Hauptfokus",
     "f_batch": "Gruppengröße",
-    "f_price": "Startpreis"
+    "f_price": "Startpreis",
+    "rowsRishikesh": [{"c100": "12 Tage (11 Nächte)", "c200": "28 Tage (27 Nächte)", "c300": "28 Tage (27 Nächte)"}, {"c100": "Anfänger & Suchende", "c200": "Anfänger bis Mittelstufe", "c300": "Mittelstufe bis Fortgeschritten"}, {"c100": "Keine (Offener Geist)", "c200": "Regelmäßige eigene Praxis", "c300": "200-Std. Zertifikat"}, {"c100": "Grundlagenzertifikat", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Grundlagen & Eigenpraxis", "c200": "Didaktik, Anatomie & Praxis", "c300": "Meisterkurs & Vertiefung"}, {"c100": "Max. 8–10 Schüler", "c200": "Max. 8–10 Schüler", "c300": "Max. 8–10 Schüler"}, {"c100": "599 $ USD", "c200": "999 $ USD", "c300": "1.099 $ USD"}],
+    "rowsVarkala": [{"c100": "12 Tage (11 Nächte)", "c200": "28 Tage (27 Nächte)", "c300": "28 Tage (27 Nächte)"}, {"c100": "Anfänger & Suchende", "c200": "Anfänger bis Mittelstufe", "c300": "Mittelstufe bis Fortgeschritten"}, {"c100": "Keine (Offener Geist)", "c200": "Regelmäßige eigene Praxis", "c300": "200-Std. Zertifikat"}, {"c100": "Grundlagenzertifikat", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Grundlagen & Eigenpraxis", "c200": "Didaktik, Anatomie & Praxis", "c300": "Meisterkurs & Vertiefung"}, {"c100": "Max. 8–10 Schüler", "c200": "Max. 8–10 Schüler", "c300": "Max. 8–10 Schüler"}, {"c100": "599 $ USD", "c200": "999 $ USD", "c300": "1.099 $ USD"}]
   },
   "fr": {
     "badge": "Comparatif des Programmes",
@@ -1327,7 +1394,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "Certification",
     "f_focus": "Objectif Principal",
     "f_batch": "Taille du Groupe",
-    "f_price": "Tarif à partir de"
+    "f_price": "Tarif à partir de",
+    "rowsRishikesh": [{"c100": "12 Jours (11 Nuits)", "c200": "28 Jours (27 Nuits)", "c300": "28 Jours (27 Nuits)"}, {"c100": "Débutants & Passionnés", "c200": "Débutant à Intermédiaire", "c300": "Intermédiaire à Avancé"}, {"c100": "Aucun (Esprit Ouvert)", "c200": "Pratique personnelle régulière", "c300": "Certification 200 Heures"}, {"c100": "Certificat d'Immersion", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Bases & Pratique Personnelle", "c200": "Pédagogie & Anatomie", "c300": "Séquençage Avancé & Maîtrise"}, {"c100": "8–10 Élèves Max", "c200": "8–10 Élèves Max", "c300": "8–10 Élèves Max"}, {"c100": "599 $ USD", "c200": "999 $ USD", "c300": "1 099 $ USD"}],
+    "rowsVarkala": [{"c100": "12 Jours (11 Nuits)", "c200": "28 Jours (27 Nuits)", "c300": "28 Jours (27 Nuits)"}, {"c100": "Débutants & Passionnés", "c200": "Débutant à Intermédiaire", "c300": "Intermédiaire à Avancé"}, {"c100": "Aucun (Esprit Ouvert)", "c200": "Pratique personnelle régulière", "c300": "Certification 200 Heures"}, {"c100": "Certificat d'Immersion", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Bases & Pratique Personnelle", "c200": "Pédagogie & Anatomie", "c300": "Séquençage Avancé & Maîtrise"}, {"c100": "8–10 Élèves Max", "c200": "8–10 Élèves Max", "c300": "8–10 Élèves Max"}, {"c100": "599 $ USD", "c200": "999 $ USD", "c300": "1 099 $ USD"}]
   },
   "es": {
     "badge": "Comparación de Programas",
@@ -1352,7 +1421,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "Certificación",
     "f_focus": "Enfoque Principal",
     "f_batch": "Tamaño del Grupo",
-    "f_price": "Precio desde"
+    "f_price": "Precio desde",
+    "rowsRishikesh": [{"c100": "12 Días (11 Noches)", "c200": "28 Días (27 Noches)", "c300": "28 Días (27 Noches)"}, {"c100": "Principiantes y Buscadores", "c200": "Principiante a Intermedio", "c300": "Intermedio a Avanzado"}, {"c100": "Ninguno (Mente Abierta)", "c200": "Práctica personal regular", "c300": "Certificación de 200 Horas"}, {"c100": "Certificado de Inmersión", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Fundamentos y Autopráctica", "c200": "Habilidades Pedagógicas y Anatomía", "c300": "Secuenciación Avanzada y Maestría"}, {"c100": "Máx. 8–10 Alumnos", "c200": "Máx. 8–10 Alumnos", "c300": "Máx. 8–10 Alumnos"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1.099 USD"}],
+    "rowsVarkala": [{"c100": "12 Días (11 Noches)", "c200": "28 Días (27 Noches)", "c300": "28 Días (27 Noches)"}, {"c100": "Principiantes y Buscadores", "c200": "Principiante a Intermedio", "c300": "Intermedio a Avanzado"}, {"c100": "Ninguno (Mente Abierta)", "c200": "Práctica personal regular", "c300": "Certificación de 200 Horas"}, {"c100": "Certificado de Inmersión", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Fundamentos y Autopráctica", "c200": "Habilidades Pedagógicas y Anatomía", "c300": "Secuenciación Avanzada y Maestría"}, {"c100": "Máx. 8–10 Alumnos", "c200": "Máx. 8–10 Alumnos", "c300": "Máx. 8–10 Alumnos"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1.099 USD"}]
   },
   "it": {
     "badge": "Confronto dei Programmi",
@@ -1377,7 +1448,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "Certificazione",
     "f_focus": "Focus Principale",
     "f_batch": "Dimensione del Gruppo",
-    "f_price": "Prezzo a partire da"
+    "f_price": "Prezzo a partire da",
+    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsVarkala": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "ru": {
     "badge": "Сравнение программ",
@@ -1402,7 +1475,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "Сертификация",
     "f_focus": "Ключевой фокус",
     "f_batch": "Размер группы",
-    "f_price": "Стоимость от"
+    "f_price": "Стоимость от",
+    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsVarkala": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "id": {
     "badge": "Perbandingan Program",
@@ -1427,7 +1502,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "Sertifikasi",
     "f_focus": "Fokus Utama",
     "f_batch": "Ukuran Grup",
-    "f_price": "Mulai dari"
+    "f_price": "Mulai dari",
+    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsVarkala": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "ja": {
     "badge": "プログラム比較",
@@ -1452,7 +1529,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "取得資格",
     "f_focus": "学習の重点",
     "f_batch": "定員",
-    "f_price": "最低受講料"
+    "f_price": "最低受講料",
+    "rowsRishikesh": [{"c100": "12日間（11泊）", "c200": "28日間（27泊）", "c300": "28日間（27泊）"}, {"c100": "初級者・ヨガ探求者", "c200": "初級〜中級者", "c300": "中級〜上級者"}, {"c100": "不問（素直な探求心）", "c200": "定期的な自主練習", "c300": "200時間修了資格"}, {"c100": "基礎修了証", "c200": "全米ヨガアライアンス RYT 200", "c300": "全米ヨガアライアンス RYT 500"}, {"c100": "基礎知識と自己鍛錬", "c200": "指導法・解剖学・アライメント", "c300": "高度なシークエンスと指導の極意"}, {"c100": "8〜10名の少人数制", "c200": "8〜10名の少人数制", "c300": "8〜10名の少人数制"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsVarkala": [{"c100": "12日間（11泊）", "c200": "28日間（27泊）", "c300": "28日間（27泊）"}, {"c100": "初級者・ヨガ探求者", "c200": "初級〜中級者", "c300": "中級〜上級者"}, {"c100": "不問（素直な探求心）", "c200": "定期的な自主練習", "c300": "200時間修了資格"}, {"c100": "基礎修了証", "c200": "全米ヨガアライアンス RYT 200", "c300": "全米ヨガアライアンス RYT 500"}, {"c100": "基礎知識と自己鍛錬", "c200": "指導法・解剖学・アライメント", "c300": "高度なシークエンスと指導の極意"}, {"c100": "8〜10名の少人数制", "c200": "8〜10名の少人数制", "c300": "8〜10名の少人数制"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "ko": {
     "badge": "프로그램 비교",
@@ -1477,7 +1556,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "취득 자격증",
     "f_focus": "핵심 커리큘럼",
     "f_batch": "정원",
-    "f_price": "시작 가격"
+    "f_price": "시작 가격",
+    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsVarkala": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "zh": {
     "badge": "课程对比",
@@ -1502,7 +1583,9 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_cert": "国际认证",
     "f_focus": "核心重点",
     "f_batch": "班级规模",
-    "f_price": "起步学费"
+    "f_price": "起步学费",
+    "rowsRishikesh": [{"c100": "12天（11晚）", "c200": "28天（27晚）", "c300": "28天（27晚）"}, {"c100": "初学者与灵性探索者", "c200": "初级至中级修习者", "c300": "中级至资深导师"}, {"c100": "无需先修（持开放心态）", "c200": "规律的自我修习习惯", "c300": "具备200小时认证资质"}, {"c100": "基础沉浸修学证书", "c200": "全美瑜伽联盟 RYT 200", "c300": "全美瑜伽联盟 RYT 500"}, {"c100": "基础体式与自我修行", "c200": "教学技能与应用解剖学", "c300": "高阶体式编排与大师之道"}, {"c100": "8–10人小班授课", "c200": "8–10人小班授课", "c300": "8–10人小班授课"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsVarkala": [{"c100": "12天（11晚）", "c200": "28天（27晚）", "c300": "28天（27晚）"}, {"c100": "初学者与灵性探索者", "c200": "初级至中级修习者", "c300": "中级至资深导师"}, {"c100": "无需先修（持开放心态）", "c200": "规律的自我修习习惯", "c300": "具备200小时认证资质"}, {"c100": "基础沉浸修学证书", "c200": "全美瑜伽联盟 RYT 200", "c300": "全美瑜伽联盟 RYT 500"}, {"c100": "基础体式与自我修行", "c200": "教学技能与应用解剖学", "c300": "高阶体式编排与大师之道"}, {"c100": "8–10人小班授课", "c200": "8–10人小班授课", "c300": "8–10人小班授课"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   }
 };
 
@@ -1583,7 +1666,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "Best Time to Visit Varkala for Yoga Training",
     "subtitleRishikesh": "Plan your spiritual immersion according to the Himalayan weather patterns and personal practice goals.",
     "subtitleVarkala": "Plan your seaside training according to Kerala's tropical seasons and ocean conditions.",
-    "monthlyStart": "Monthly 1st start date"
+    "monthlyStart": "Monthly 1st start date",
+    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "nl": {
     "badgeRishikesh": "Seizoensklimaat",
@@ -1592,7 +1677,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "Beste Reistijd naar Varkala voor Yoga Opleiding",
     "subtitleRishikesh": "Plan je spirituele verdieping aan de hand van het weer in de Himalaya en je persoonlijke doelen.",
     "subtitleVarkala": "Plan je training aan zee aan de hand van de tropische seizoenen en het klimaat in Kerala.",
-    "monthlyStart": "Start elke 1e van de maand"
+    "monthlyStart": "Start elke 1e van de maand",
+    "seasonsRishikesh": [{"badge": "Beste Seizoen", "temp": "18°C – 28°C", "period": "Oktober – Maart", "climate": "Zonnig, Helder & Aangenaam", "description": "Milde winter en strakblauwe luchten. Ideaal voor intensieve asana's, buitenmeditatie aan de Ganges en bergwandelingen."}, {"badge": "Warm Seizoen", "temp": "24°C – 35°C", "period": "April – Juni", "climate": "Warm & Rijk aan Prana", "description": "Warme temperaturen bevorderen soepelheid van gewrichten en spieren. Ideaal voor ochtendduiken in de Ganges."}, {"badge": "Moesson Seizoen", "temp": "22°C – 30°C", "period": "Juli – September", "climate": "Weelderig & Meditatief", "description": "Heilige Shravan-tijd met groene nevelige heuvels, watervallen en diepe stilte voor zelfstudie."}],
+    "seasonsVarkala": [{"badge": "Beste Seizoen", "temp": "24°C – 31°C", "period": "Oktober – Maart", "climate": "Zonnig, Luchtig & Droog", "description": "Zachte bries van de Arabische Zee en heldere dagen. Perfect voor klifwandelingen en strand-yoga."}, {"badge": "Warm Seizoen", "temp": "26°C – 33°C", "period": "April – Mei", "climate": "Zonnig & Genezend", "description": "Heerlijke zonnige dagen die de soepelheid vergroten en ideaal zijn voor ontspannende Ayurvedische behandelingen."}, {"badge": "Moesson Seizoen", "temp": "23°C – 29°C", "period": "Juni – September", "climate": "Regenererend & Weelderig Groen", "description": "Traditioneel Ayurvedisch herstel-seizoen (Karkidaka) waarin kruidentherapieën optimaal door het lichaam worden opgenomen."}]
   },
   "de": {
     "badgeRishikesh": "Saisonales Klima",
@@ -1601,7 +1688,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "Beste Reisezeit für Yoga in Varkala",
     "subtitleRishikesh": "Planen Sie Ihre Reise abgestimmt auf das Klima im Himalaya und Ihre Übungsziele.",
     "subtitleVarkala": "Planen Sie Ihre Ausbildung am Meer abgestimmt auf Keralas Tropenklima.",
-    "monthlyStart": "Beginn jeden 1. des Monats"
+    "monthlyStart": "Beginn jeden 1. des Monats",
+    "seasonsRishikesh": [{"badge": "Beste Reisezeit", "temp": "18°C – 28°C", "period": "Oktober – März", "climate": "Sonnig, klar & angenehm", "description": "Milder Winter und strahlend blauer Himmel. Perfekt für intensive Asanas, Meditation am Fluss und Himalaya-Wanderungen."}, {"badge": "Warme Jahreszeit", "temp": "24°C – 35°C", "period": "April – Juni", "climate": "Warm & prall gefüllt mit Prana", "description": "Warme Temperaturen fördern die Muskelentspannung und Flexibilität. Ideal für frühe Morgenstunden an der Ganga."}, {"badge": "Monsunzeit", "temp": "22°C – 30°C", "period": "Juli – September", "climate": "Üppig grün & meditativ", "description": "Heilige Shravan-Zeit mit grünem Nebel, Wasserfällen und tiefer Stille für konzentriertes Selbststudium."}],
+    "seasonsVarkala": [{"badge": "Beste Reisezeit", "temp": "24°C – 31°C", "period": "Oktober – März", "climate": "Sonnig, luftig & trocken", "description": "Angenehme Meeresbrise und klare Tage. Ideal für Klippenwanderungen, Strand-Yoga und Ayurveda."}, {"badge": "Warme Jahreszeit", "temp": "26°C – 33°C", "period": "April – Mai", "climate": "Sonnig & heilsam", "description": "Sonnige Tage unterstützen die Gelenkbeweglichkeit und kühlende ayurvedische Kuranwendungen."}, {"badge": "Monsunzeit", "temp": "23°C – 29°C", "period": "Juni – September", "climate": "Regenerierend & tropisch grün", "description": "Klassische Ayurveda-Saison (Karkidaka) mit angenehmer Kühle, hoher Luftfeuchtigkeit und bester Wirksamkeit."}]
   },
   "fr": {
     "badgeRishikesh": "Climat Saisonnier",
@@ -1610,7 +1699,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "Meilleure Période pour Se Former au Yoga à Varkala",
     "subtitleRishikesh": "Planifiez votre formation selon le climat himalayen et vos objectifs personnels.",
     "subtitleVarkala": "Planifiez votre séjour selon les saisons tropicales du Kerala.",
-    "monthlyStart": "Début le 1er de chaque mois"
+    "monthlyStart": "Début le 1er de chaque mois",
+    "seasonsRishikesh": [{"badge": "Meilleure Saison", "temp": "18°C – 28°C", "period": "Octobre – Mars", "climate": "Ensoleillé, Frais & Paisible", "description": "Hiver doux et ciel limpide. Conditions idéales pour les asanas quotidiens et les méditations au bord du Gange."}, {"badge": "Saison Chaude", "temp": "24°C – 35°C", "period": "Avril – Juin", "climate": "Chaud & Riche en Prana", "description": "Chaleur propice à la souplesse articulaire et musculaire, baignades matinales dans le Gange et satsangs en terrasse."}, {"badge": "Saison de la Mousson", "temp": "22°C – 30°C", "period": "Juillet – Septembre", "climate": "Verdoyant & Méditatif", "description": "Période sacrée de Shravan où la brume himalayenne et les cascades invitent au recueillement et à l'étude intérieure."}],
+    "seasonsVarkala": [{"badge": "Meilleure Saison", "temp": "24°C – 31°C", "period": "Octobre – Mars", "climate": "Ensoleillé, Aéré & Sec", "description": "Douce brise de la mer d'Oman et journées ensoleillées. Idéal pour les promenades sur les falaises et le yoga en plein air."}, {"badge": "Saison Chaude", "temp": "26°C – 33°C", "period": "Avril – Mai", "climate": "Chaud & Régénérant", "description": "Journées lumineuses parfaites pour assouplir le corps, nager au coucher du soleil et recevoir des soins ayurvédiques."}, {"badge": "Saison de la Mousson", "temp": "23°C – 29°C", "period": "Juin – Septembre", "climate": "Régénération & Végétation", "description": "Saison traditionnelle de régénération ayurvédique (Karkidaka) où le corps assimile au mieux les soins thérapeutiques."}]
   },
   "es": {
     "badgeRishikesh": "Clima Estacional",
@@ -1619,7 +1710,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "Mejor Época para Formarse en Yoga en Varkala",
     "subtitleRishikesh": "Planifica tu viaje según las estaciones del Himalaya y tus metas de práctica.",
     "subtitleVarkala": "Planifica tu formación según las temporadas tropicales de Kerala.",
-    "monthlyStart": "Inicio el día 1 de cada mes"
+    "monthlyStart": "Inicio el día 1 de cada mes",
+    "seasonsRishikesh": [{"badge": "Mejor Temporada", "temp": "18°C – 28°C", "period": "Octubre – Marzo", "climate": "Soleado, Fresco y Sereno", "description": "Invierno suave y cielo despejado. Ideal para la práctica diaria de asanas y meditación junto al Ganges."}, {"badge": "Temporada Cálida", "temp": "24°C – 35°C", "period": "Abril – Junio", "climate": "Cálido y con Alto Prana", "description": "Temperaturas cálidas que facilitan la flexibilidad corporal y baños matutinos en las aguas del río."}, {"badge": "Temporada de Monzón", "temp": "22°C – 30°C", "period": "Julio – Septiembre", "climate": "Verde y Meditativo", "description": "Época sagrada de Shravan con niebla mística en las colinas, cascadas y un recogimiento propicio para el estudio."}],
+    "seasonsVarkala": [{"badge": "Mejor Temporada", "temp": "24°C – 31°C", "period": "Octubre – Marzo", "climate": "Soleado, Brisa y Seco", "description": "Brisa agradable del Mar Arábigo y cielos azules. Perfecto para paseos por el acantilado y yoga en la playa."}, {"badge": "Temporada Cálida", "temp": "26°C – 33°C", "period": "Abril – Mayo", "climate": "Soleado y Sanador", "description": "Días cálidos idóneos para soltar articulaciones, nadar en el mar y recibir masajes ayurvédicos."}, {"badge": "Temporada de Monzón", "temp": "23°C – 29°C", "period": "Junio – Septiembre", "climate": "Regenerador y Tropical", "description": "Temporada clásica de sanación ayurvédica (Karkidaka) con mayor efectividad en las terapias naturales."}]
   },
   "it": {
     "badgeRishikesh": "Clima Stagionale",
@@ -1628,7 +1721,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "Il Periodo Migliore per la Formazione Yoga a Varkala",
     "subtitleRishikesh": "Pianifica il soggiorno in base al clima himalayano e ai tuoi traguardi personali.",
     "subtitleVarkala": "Pianifica il soggiorno in base alle stagioni tropicali del Kerala.",
-    "monthlyStart": "Inizio il 1° di ogni mese"
+    "monthlyStart": "Inizio il 1° di ogni mese",
+    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "ru": {
     "badgeRishikesh": "Сезонный климат",
@@ -1637,7 +1732,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "Лучшее время для обучения йоге в Варкале",
     "subtitleRishikesh": "Планируйте поездку с учетом климатических особенностей Гималаев и личных целей.",
     "subtitleVarkala": "Планируйте поездку с учетом тропического климата Кералы.",
-    "monthlyStart": "Начало 1-го числа каждого месяца"
+    "monthlyStart": "Начало 1-го числа каждого месяца",
+    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "id": {
     "badgeRishikesh": "Iklim Musiman",
@@ -1646,7 +1743,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "Waktu Terbaik Mengikuti Pelatihan Yoga di Varkala",
     "subtitleRishikesh": "Rencanakan perjalanan Anda sesuai dengan pola cuaca Himalaya dan tujuan latihan Anda.",
     "subtitleVarkala": "Rencanakan pelatihan tepi pantai Anda sesuai musim tropis Kerala.",
-    "monthlyStart": "Mulai setiap tanggal 1 tiap bulan"
+    "monthlyStart": "Mulai setiap tanggal 1 tiap bulan",
+    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "ja": {
     "badgeRishikesh": "季節と気候",
@@ -1655,7 +1754,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "バルカラでのヨガ受講に最適な時期",
     "subtitleRishikesh": "ヒマラヤの気候サイクルとご自身の修練目的に合わせて最適な時期をご検討ください。",
     "subtitleVarkala": "ケララの熱帯気候と海の状況に合わせて受講時期をご検討ください。",
-    "monthlyStart": "毎月1日開講"
+    "monthlyStart": "毎月1日開講",
+    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "ko": {
     "badgeRishikesh": "계절별 기후",
@@ -1664,7 +1765,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "바르칼라 요가 유학에 가장 좋은 시기",
     "subtitleRishikesh": "히말라야의 계절 변화와 개인 수련 목적에 맞춰 일정을 계획하세요.",
     "subtitleVarkala": "케랄라의 열대 계절과 기후 조건에 맞춰 일정을 계획하세요.",
-    "monthlyStart": "매월 1일 개강"
+    "monthlyStart": "매월 1일 개강",
+    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "zh": {
     "badgeRishikesh": "季节气候",
@@ -1673,7 +1776,9 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "titleVarkala": "前往瓦尔卡拉修习瑜伽的最佳时节",
     "subtitleRishikesh": "根据喜马拉雅的气候变化与个人的修习目标，规划你的灵性之旅。",
     "subtitleVarkala": "根据喀拉拉的热带季节特征，规划你的海滨修习之旅。",
-    "monthlyStart": "每月1日开营"
+    "monthlyStart": "每月1日开营",
+    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   }
 };
 
@@ -1690,7 +1795,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "By Train",
     "byRoad": "By Road",
     "airportTransfers": "Airport & Transfers",
-    "checkInOut": "Check-In & Check-Out"
+    "checkInOut": "Check-In & Check-Out",
+    "taxiTitleRishikesh": "前往里希开诗 YogaGarhi 静修院的预计出租车费用",
+    "taxiTitleVarkala": "前往瓦尔卡拉 YogaGarhi 瑜伽院的预计出租车费用",
+    "taxiSubRishikesh": "前往塔波万(Tapovan)的预先商定标准司机价格",
+    "taxiSubVarkala": "前往北悬崖(North Cliff)的预先商定标准价格",
+    "thRoute": "交通路线",
+    "thCostUsd": "预估费用 (USD)",
+    "thCostInr": "预估费用 (INR)",
+    "pickupStrong": "我们安排机场接机服务：",
+    "pickupTextRishikesh": "请将您的航班或火车时刻表告知我们的招生团队，我们值得信赖的静修院专属司机将手持写有您姓名的接机牌在此等候。",
+    "pickupTextVarkala": "请分享您抵达特里凡得琅或科钦的时间，我们的专属司机会将您安全舒适地送达瓦尔卡拉瑜伽院。",
+    "pickupBtn": "预约接机服务",
+    "visaTitle": "国际学员印度签证及入境实用指南",
+    "visaSub": "确保入境顺利的核心注意事项",
+    "visaB1Title": "印度电子旅游签证 (e-Visa)：",
+    "visaB1Text": "来自160多个国家和地区的公民可在行前通过印度政府官方网站便捷申请电子旅游签证。",
+    "visaB2Title": "有效期：",
+    "visaB2Text": "建议在计划出发日期前至少2周申请30天或1年多次往返的电子旅游签证。",
+    "visaB3Title": "货币与本地手机卡：",
+    "visaB3Text": "当地法定货币为印度卢比 (INR)。周边ATM取款便利，静修院前台可协助办理当地高速5G上网卡。",
+    "visaB4Title": "入住时间：",
+    "visaB4Text": "静修院官方入住时间为每期1日中午12:00起，傍晚将举行新生说明会与开幕火祭典礼 (Havan)。",
+    "airItemsRishikesh": [{"title": "Jolly Grant Airport, Dehradun (DED)", "distance": "35 km (~45 min drive to ashram)", "description": "Nearest domestic airport. Frequent daily flights from New Delhi (DEL, 45 min flight), Mumbai, Bengaluru, and Hyderabad."}, {"title": "Indira Gandhi International Airport, Delhi (DEL)", "distance": "250 km (~5–6 hrs drive or connecting flight)", "description": "Primary international gateway for overseas students. Connects directly to Dehradun (DED) via multiple 45-min domestic hops daily, or take a scenic expressway taxi."}],
+    "trainItemsRishikesh": [{"title": "Yog Nagari Rishikesh Railway Station (YNRK)", "distance": "6 km (~15 min drive)", "description": "Modern railway terminal in Rishikesh city with connections to major northern Indian rail hubs."}, {"title": "Haridwar Junction (HW)", "distance": "25 km (~50 min drive)", "description": "Major railway junction with frequent high-speed trains including the Vande Bharat Express and New Delhi Shatabdi Express (approx. 4.5 hrs from Delhi)."}],
+    "roadItemsRishikesh": [{"title": "Delhi ISBT Kashmiri Gate to Rishikesh", "distance": "240 km (~5 hrs via Meerut Expressway)", "description": "Frequent 24/7 Volvo AC sleeper and luxury interstate buses depart hourly from Delhi to Rishikesh bus station."}, {"title": "Dehradun to Rishikesh", "distance": "45 km (~1 hr)", "description": "Well-connected state highway with regular local transit, shared taxis, and direct private cabs available round the clock."}],
+    "airItemsVarkala": [{"title": "Trivandrum International Airport (TRV)", "distance": "45 km (~1 hr drive)", "description": "Nearest domestic and international airport. Frequent direct daily flights from Delhi, Mumbai, Bengaluru, Chennai, and Middle East / Southeast Asian hubs."}, {"title": "Cochin International Airport (COK)", "distance": "190 km (~4.5 hrs drive)", "description": "Major international gateway for long-haul international flights. Connects to Varkala via coastal highway NH 66 or express trains."}],
+    "trainItemsVarkala": [{"title": "Varkala Sivagiri Railway Station (VAK)", "distance": "3 km (~10 min auto-rickshaw)", "description": "Convenient local station right in town. Connects directly to major Indian rail corridors with daily express trains to Trivandrum, Kochi, Mumbai, and Delhi."}, {"title": "Kollam Junction (QLN)", "distance": "28 km (~45 min drive)", "description": "Major regional rail terminal served by high-speed express trains from across the country."}],
+    "roadItemsVarkala": [{"title": "Trivandrum to Varkala Cliff", "distance": "45 km (~1 hr via NH 66)", "description": "Smooth highway drive with coastal scenery. Frequent KSRTC buses and private cabs run continuously throughout the day."}, {"title": "Kochi to Varkala", "distance": "165 km (~4 hrs via NH 66)", "description": "Scenic drive along Kerala's coastline with multiple comfortable stopover spots along the highway."}],
+    "taxiFaresRishikesh": [{"route": "Dehradun Airport (DED) → YogaGarhi Ashram", "costUsd": "$20", "costInr": "₹1,600"}, {"route": "Delhi Airport (DEL) → YogaGarhi Ashram", "costUsd": "$65", "costInr": "₹5,500"}, {"route": "Haridwar Railway Station → YogaGarhi Ashram", "costUsd": "$15", "costInr": "₹1,200"}, {"route": "Rishikesh Railway Station (YNRK) → Ashram", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "Trivandrum Airport (TRV) → YogaGarhi Varkala", "costUsd": "$25", "costInr": "₹2,000"}, {"route": "Cochin Airport (COK) → YogaGarhi Varkala", "costUsd": "$65", "costInr": "₹5,500"}, {"route": "Varkala Sivagiri Station (VAK) → Ashram", "costUsd": "$3", "costInr": "₹250"}, {"route": "Kollam Junction (QLN) → YogaGarhi Varkala", "costUsd": "$15", "costInr": "₹1,200"}],
+    "openInMaps": "Open in Google Maps",
+    "syllabusBtn": "Download Detailed Syllabus",
+    "syllabusTitle": "Download Syllabus",
+    "syllabusDesc": "Select your course and enter email to receive the detailed syllabus.",
+    "syllabusEmailPlaceholder": "Your email address",
+    "syllabusSend": "Send Syllabus",
+    "syllabusSending": "Sending...",
+    "syllabusPrompt": "Want to see the hour-by-hour breakdown and reading list?"
   },
   "nl": {
     "badge": "Reis- en Aankomstgids",
@@ -1704,7 +1846,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "Per Trein",
     "byRoad": "Over de Weg",
     "airportTransfers": "Luchthaven & Transfers",
-    "checkInOut": "Inchecken & Uitchecken"
+    "checkInOut": "Inchecken & Uitchecken",
+    "taxiTitleRishikesh": "Geschatte Taxitarieven naar YogaGarhi Ashram",
+    "taxiTitleVarkala": "Geschatte Taxitarieven naar YogaGarhi Varkala Ashram",
+    "taxiSubRishikesh": "Vooraf afgesproken vaste chauffeurskosten naar Tapovan",
+    "taxiSubVarkala": "Vaste tarieven naar de noordelijke kliffen van Varkala",
+    "thRoute": "Reisroute",
+    "thCostUsd": "Geschatte Kosten (USD)",
+    "thCostInr": "Geschatte Kosten (INR)",
+    "pickupStrong": "Wij regelen je luchthaven ophaalservice:",
+    "pickupTextRishikesh": "Deel je vlucht- of treingegevens met ons team; onze chauffeur staat klaar met een naambordje bij de uitgang.",
+    "pickupTextVarkala": "Deel je vluchtschema; onze chauffeur verwelkomt je op de luchthaven van Trivandrum (TRV).",
+    "pickupBtn": "Ophaalservice Aanvragen",
+    "visaTitle": "India Visum & Aankomstadvies voor Internationale Studenten",
+    "visaSub": "Belangrijke richtlijnen voor een vlotte immigratieprocedure",
+    "visaB1Title": "Indiaas e-Toeristenvisum:",
+    "visaB1Text": "Burgers van meer dan 160 landen kunnen eenvoudig vooraf online een e-toeristenvisum (e-Visa) aanvragen.",
+    "visaB2Title": "Aanbevolen geldigheid:",
+    "visaB2Text": "We raden aan om je visum minimaal 2 weken voor de geplande vertrekdatum aan te vragen.",
+    "visaB3Title": "Paspoortvereisten:",
+    "visaB3Text": "Je paspoort moet nog minstens 6 maanden geldig zijn vanaf de datum van aankomst en 2 lege pagina's bevatten.",
+    "visaB4Title": "Registratie in de ashram:",
+    "visaB4Text": "Bij aankomst helpt onze receptie je met de verplichte Form-C registratie voor buitenlandse gasten.",
+    "airItemsRishikesh": [{"title": "Luchthaven Jolly Grant, Dehradun (DED)", "distance": "35 km (~45 min rijden naar ashram)", "description": "Dichtstbijzijnde binnenlandse luchthaven. Regelmatige dagelijkse vluchten vanuit New Delhi (DEL, 45 min vlucht), Mumbai, Bengaluru en Hyderabad."}, {"title": "Internationale Luchthaven Indira Gandhi, Delhi (DEL)", "distance": "250 km (~5–6 uur rijden of aansluitende vlucht)", "description": "Belangrijkste internationale toegangspoort voor buitenlandse studenten. Sluit direct aan op Dehradun via meerdere binnenlandse vluchten per dag, of neem een comfortabele snelwegtaxi."}],
+    "trainItemsRishikesh": [{"title": "Treinstation Yog Nagari Rishikesh (YNRK)", "distance": "6 km (~15 min rijden)", "description": "Modern spoorwegstation in Rishikesh met directe verbindingen naar grote Noord-Indiase knooppunten."}, {"title": "Haridwar Junction (HW)", "distance": "25 km (~50 min rijden)", "description": "Groot spoorwegknooppunt met regelmatige hogesnelheidstreinen, waaronder de Vande Bharat Express en New Delhi Shatabdi Express (ongeveer 4,5 uur vanaf Delhi)."}],
+    "roadItemsRishikesh": [{"title": "Delhi ISBT Kashmiri Gate naar Rishikesh", "distance": "240 km (~5 uur via snelweg)", "description": "Luxe interstate bussen met airconditioning vertrekken 24/7 elk uur van Delhi naar het busstation van Rishikesh."}, {"title": "Dehradun naar Rishikesh", "distance": "45 km (~1 uur)", "description": "Uitstekend verbonden provinciale weg met frequente lokale bussen, deeltaxi's en privétaxi's die 24 uur per dag beschikbaar zijn."}],
+    "airItemsVarkala": [{"title": "Internationale Luchthaven Trivandrum (TRV)", "distance": "45 km (~1 uur rijden)", "description": "Dichtstbijzijnde luchthaven. Regelmatige rechtstreekse dagelijkse vluchten vanuit Delhi, Mumbai, Bengaluru, Chennai en internationale knooppunten in het Midden-Oosten en Zuidoost-Azië."}, {"title": "Internationale Luchthaven Cochin (COK)", "distance": "190 km (~4,5 uur rijden)", "description": "Belangrijke internationale hub voor langeafstandsvluchten. Verbonden met Varkala via kustsnelweg NH 66 of sneltreinen."}],
+    "trainItemsVarkala": [{"title": "Treinstation Varkala Sivagiri (VAK)", "distance": "3 km (~10 min tuktuk)", "description": "Handig lokaal station midden in de stad. Direct verbonden met de belangrijkste Indiase spoorlijnen met dagelijkse treinen naar Trivandrum, Kochi, Mumbai en Delhi."}, {"title": "Kollam Junction (QLN)", "distance": "28 km (~45 min rijden)", "description": "Belangrijk regionaal treinstation met frequente sneltreinen uit het hele land."}],
+    "roadItemsVarkala": [{"title": "Trivandrum naar Varkala Cliff", "distance": "45 km (~1 uur via NH 66)", "description": "Comfortabele snelwegrit langs de kust. Regelmatige KSRTC-bussen en privétaxi's rijden de hele dag door."}, {"title": "Kochi naar Varkala", "distance": "165 km (~4 uur via NH 66)", "description": "Schilderachtige rit langs de kustlijn van Kerala met comfortabele tussenstops langs de snelweg."}],
+    "taxiFaresRishikesh": [{"route": "Luchthaven Dehradun (DED) → YogaGarhi Ashram", "costUsd": "$20", "costInr": "₹1.600"}, {"route": "Luchthaven Delhi (DEL) → YogaGarhi Ashram", "costUsd": "$65", "costInr": "₹5.500"}, {"route": "Treinstation Haridwar → YogaGarhi Ashram", "costUsd": "$15", "costInr": "₹1.200"}, {"route": "Treinstation Rishikesh (YNRK) → Ashram", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "Luchthaven Trivandrum (TRV) → YogaGarhi Varkala", "costUsd": "$25", "costInr": "₹2.000"}, {"route": "Luchthaven Cochin (COK) → YogaGarhi Varkala", "costUsd": "$65", "costInr": "₹5.500"}, {"route": "Treinstation Varkala Sivagiri (VAK) → Ashram", "costUsd": "$3", "costInr": "₹250"}, {"route": "Kollam Junction (QLN) → YogaGarhi Varkala", "costUsd": "$15", "costInr": "₹1.200"}],
+    "openInMaps": "Open in Google Maps",
+    "syllabusBtn": "Download Gedetailleerd Lesprogramma",
+    "syllabusTitle": "Download Lesprogramma",
+    "syllabusDesc": "Selecteer je opleiding en vul je e-mailadres in om het gedetailleerde lesprogramma te ontvangen.",
+    "syllabusEmailPlaceholder": "Je e-mailadres",
+    "syllabusSend": "Lesprogramma Verzenden",
+    "syllabusSending": "Verzenden...",
+    "syllabusPrompt": "Wil je het gedetailleerde uurrooster en de literatuurlijst bekijken?"
   },
   "de": {
     "badge": "Anreise & Ankunft",
@@ -1718,7 +1897,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "Mit dem Zug",
     "byRoad": "Über Land / Bus",
     "airportTransfers": "Flughafen & Transfers",
-    "checkInOut": "Check-in & Check-out"
+    "checkInOut": "Check-in & Check-out",
+    "taxiTitleRishikesh": "Geschätzte Taxipreise zum YogaGarhi Ashram",
+    "taxiTitleVarkala": "Geschätzte Taxipreise zum YogaGarhi Varkala Ashram",
+    "taxiSubRishikesh": "Vorab vereinbarte Standardpreise nach Tapovan",
+    "taxiSubVarkala": "Feste Fahrerpreise zur Klippe von Varkala",
+    "thRoute": "Reiseroute",
+    "thCostUsd": "Ca. Kosten (USD)",
+    "thCostInr": "Ca. Kosten (INR)",
+    "pickupStrong": "Wir organisieren die Flughafenabholung:",
+    "pickupTextRishikesh": "Teilen Sie uns Ihre Flug- oder Zugdaten mit. Unser Fahrer erwartet Sie mit einem persönlichen Namensschild am Ausgang.",
+    "pickupTextVarkala": "Teilen Sie uns Ihre Flugdaten mit. Unser Fahrer holt Sie direkt am Flughafen Trivandrum (TRV) ab.",
+    "pickupBtn": "Abholung anfragen",
+    "visaTitle": "Indien-Visum & Einreisehinweise für internationale Teilnehmer",
+    "visaSub": "Wichtige Leitlinien für eine reibungslose Einreise",
+    "visaB1Title": "Indisches e-Touristenvisum:",
+    "visaB1Text": "Bürger aus über 160 Ländern können das elektronische Touristenvisum (e-Visa) bequem online vor der Abreise beantragen.",
+    "visaB2Title": "Gültigkeit:",
+    "visaB2Text": "Wir empfehlen, das 30-Tage- oder 1-Jahres-Visum mindestens 2 Wochen vor dem Abflugdatum zu beantragen.",
+    "visaB3Title": "Reisepass-Anforderungen:",
+    "visaB3Text": "Ihr Reisepass muss bei Einreise noch mindestens 6 Monate gültig sein und mindestens zwei freie Seiten aufweisen.",
+    "visaB4Title": "Ashram-Registrierung:",
+    "visaB4Text": "Bei Ihrer Ankunft unterstützt Sie unser Team bei der behördlichen Form-C Registrierung für ausländische Gäste.",
+    "airItemsRishikesh": [{"title": "Flughafen Dehradun Jolly Grant (DED)", "distance": "35 km (~45 Min. Fahrt zum Ashram)", "description": "Nächstgelegener Inlandsflughafen. Tägliche Flüge ab Neu-Delhi (DEL, 45 Min. Flug), Mumbai, Bengaluru und Hyderabad."}, {"title": "Internationaler Flughafen Neu-Delhi Indira Gandhi (DEL)", "distance": "250 km (~5–6 Std. Fahrt oder Anschlussflug)", "description": "Wichtigstes internationales Drehkreuz für ausländische Schüler. Täglich mehrere Anschlussflüge nach Dehradun (DED) oder bequemes Autobahn-Taxi."}],
+    "trainItemsRishikesh": [{"title": "Bahnhof Yog Nagari Rishikesh (YNRK)", "distance": "6 km (~15 Min. Fahrt)", "description": "Moderner Hauptbahnhof in Rishikesh mit erstklassigen Verbindungen zu nordindischen Knotenpunkten."}, {"title": "Haridwar Junction (HW)", "distance": "25 km (~50 Min. Fahrt)", "description": "Großer Eisenbahnknotenpunkt mit schnellen Expresszügen wie Vande Bharat und Shatabdi Express (ca. 4,5 Std. ab Delhi)."}],
+    "roadItemsRishikesh": [{"title": "Delhi ISBT Kashmiri Gate nach Rishikesh", "distance": "240 km (~5 Std. über Schnellstraße)", "description": "Rund um die Uhr stündlich verkehrende klimatisierte Luxus-Reisebusse von Delhi nach Rishikesh."}, {"title": "Dehradun nach Rishikesh", "distance": "45 km (~1 Std.)", "description": "Gut ausgebaute Landstraße mit regelmäßigen Bussen und privaten Taxis Tag und Nacht."}],
+    "airItemsVarkala": [{"title": "Internationaler Flughafen Trivandrum (TRV)", "distance": "45 km (~1 Std. Fahrt)", "description": "Nächster Flughafen mit Inlands- und Direktverbindungen aus dem Nahen Osten, Südostasien sowie Großstädten Indiens."}, {"title": "Internationaler Flughafen Cochin (COK)", "distance": "190 km (~4,5 Std. Fahrt)", "description": "Bedeutendes internationales Drehkreuz für Langstreckenflüge. Anbindung nach Varkala über NH 66 oder Expresszüge."}],
+    "trainItemsVarkala": [{"title": "Bahnhof Varkala Sivagiri (VAK)", "distance": "3 km (~10 Min. Rikscha)", "description": "Zentraler Bahnhof im Ort mit täglichen Direktverbindungen nach Trivandrum, Kochi, Mumbai und Delhi."}, {"title": "Kollam Junction (QLN)", "distance": "28 km (~45 Min. Fahrt)", "description": "Großer Fernbahnhof mit Anschluss an alle überregionalen Expresszüge."}],
+    "roadItemsVarkala": [{"title": "Trivandrum zur Varkala-Klippe", "distance": "45 km (~1 Std. über NH 66)", "description": "Bequeme Fahrt entlang der Küstenstraße mit regelmäßigen Bussen und Taxis."}, {"title": "Kochi nach Varkala", "distance": "165 km (~4 Std. über NH 66)", "description": "Malerische Küstenfahrt durch Kerala mit guten Einkehrmöglichkeiten."}],
+    "taxiFaresRishikesh": [{"route": "Flughafen Dehradun (DED) → YogaGarhi Ashram", "costUsd": "$20", "costInr": "₹1.600"}, {"route": "Flughafen Delhi (DEL) → YogaGarhi Ashram", "costUsd": "$65", "costInr": "₹5.500"}, {"route": "Bahnhof Haridwar → YogaGarhi Ashram", "costUsd": "$15", "costInr": "₹1.200"}, {"route": "Bahnhof Rishikesh (YNRK) → Ashram", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "Flughafen Trivandrum (TRV) → YogaGarhi Varkala", "costUsd": "$25", "costInr": "₹2.000"}, {"route": "Flughafen Cochin (COK) → YogaGarhi Varkala", "costUsd": "$65", "costInr": "₹5.500"}, {"route": "Bahnhof Varkala Sivagiri (VAK) → Ashram", "costUsd": "$3", "costInr": "₹250"}, {"route": "Bahnhof Kollam Junction (QLN) → YogaGarhi Varkala", "costUsd": "$15", "costInr": "₹1.200"}],
+    "openInMaps": "In Google Maps öffnen",
+    "syllabusBtn": "Detaillierten Lehrplan herunterladen",
+    "syllabusTitle": "Lehrplan herunterladen",
+    "syllabusDesc": "Wählen Sie Ihren Kurs und geben Sie Ihre E-Mail-Adresse ein, um den vollständigen Lehrplan zu erhalten.",
+    "syllabusEmailPlaceholder": "Ihre E-Mail-Adresse",
+    "syllabusSend": "Lehrplan anfordern",
+    "syllabusSending": "Wird gesendet...",
+    "syllabusPrompt": "Möchten Sie den stundenweisen Ablauf und die Literaturliste einsehen?"
   },
   "fr": {
     "badge": "Guide de Voyage et Arrivée",
@@ -1732,7 +1948,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "En Train",
     "byRoad": "Par la Route",
     "airportTransfers": "Aéroport & Transferts",
-    "checkInOut": "Arrivée & Départ"
+    "checkInOut": "Arrivée & Départ",
+    "taxiTitleRishikesh": "Tarifs Estimés des Taxis vers l'Ashram YogaGarhi",
+    "taxiTitleVarkala": "Tarifs Estimés des Taxis vers l'Ashram de Varkala",
+    "taxiSubRishikesh": "Tarifs négociés pour les transferts vers Tapovan",
+    "taxiSubVarkala": "Tarifs fixes pour les transferts vers la falaise de Varkala",
+    "thRoute": "Itinéraire",
+    "thCostUsd": "Coût Approx. (USD)",
+    "thCostInr": "Coût Approx. (INR)",
+    "pickupStrong": "Nous organisons votre transfert aéroport :",
+    "pickupTextRishikesh": "Transmettez votre numéro de vol ou d'arrivée en train à notre équipe, un chauffeur vous attendra avec un panneau nominatif.",
+    "pickupTextVarkala": "Transmettez vos détails de vol, notre chauffeur vous accueillera dès votre arrivée à l'aéroport de Trivandrum (TRV).",
+    "pickupBtn": "Demander un Chauffeur",
+    "visaTitle": "Visa Indien & Conseils d'Arrivée pour les Étudiants Internationaux",
+    "visaSub": "Directives indispensables pour une arrivée sereine en Inde",
+    "visaB1Title": "e-Visa Touriste Indien :",
+    "visaB1Text": "Les ressortissants de plus de 160 pays peuvent obtenir un visa électronique touristique (e-Visa) en ligne avant le départ.",
+    "visaB2Title": "Validité recommandée :",
+    "visaB2Text": "Nous vous conseillons de demander votre e-Visa au moins 2 semaines avant votre départ.",
+    "visaB3Title": "Validité du passeport :",
+    "visaB3Text": "Votre passeport doit être valide au moins 6 mois après votre date d'arrivée et disposer de 2 pages vierges.",
+    "visaB4Title": "Enregistrement à l'ashram :",
+    "visaB4Text": "À votre arrivée, nous nous chargeons de votre enregistrement légal Form-C auprès des autorités indiennes.",
+    "airItemsRishikesh": [{"title": "Aéroport Jolly Grant, Dehradun (DED)", "distance": "35 km (~45 min en voiture jusqu'à l'ashram)", "description": "Aéroport domestique le plus proche. Vols quotidiens fréquents depuis New Delhi (DEL, 45 min de vol), Mumbai, Bengaluru et Hyderabad."}, {"title": "Aéroport International Indira Gandhi, Delhi (DEL)", "distance": "250 km (~5–6 h en voiture ou vol de correspondance)", "description": "Principale porte d'entrée internationale. Correspondances quotidiennes vers Dehradun (DED) ou taxi direct par autoroute."}],
+    "trainItemsRishikesh": [{"title": "Gare de Yog Nagari Rishikesh (YNRK)", "distance": "6 km (~15 min en voiture)", "description": "Gare ferroviaire moderne de Rishikesh reliée aux grandes lignes du nord de l'Inde."}, {"title": "Haridwar Junction (HW)", "distance": "25 km (~50 min en voiture)", "description": "Grande gare ferroviaire avec trains express réguliers dont le Vande Bharat et le Shatabdi Express (environ 4h30 depuis Delhi)."}],
+    "roadItemsRishikesh": [{"title": "Delhi ISBT Kashmiri Gate vers Rishikesh", "distance": "240 km (~5 h via autoroute)", "description": "Autocars de luxe climatisés 24h/24 au départ de Delhi chaque heure vers Rishikesh."}, {"title": "Dehradun vers Rishikesh", "distance": "45 km (~1 h)", "description": "Route régionale rapide avec bus locaux et taxis privés disponibles jour et nuit."}],
+    "airItemsVarkala": [{"title": "Aéroport International de Trivandrum (TRV)", "distance": "45 km (~1 h de route)", "description": "Aéroport le plus proche avec vols directs réguliers depuis les grandes métropoles indiennes et hubs internationaux."}, {"title": "Aéroport International de Cochin (COK)", "distance": "190 km (~4,5 h de route)", "description": "Grand hub international pour les vols long-courriers. Accès facile à Varkala via la NH 66 ou train express."}],
+    "trainItemsVarkala": [{"title": "Gare de Varkala Sivagiri (VAK)", "distance": "3 km (~10 min en rickshaw)", "description": "Gare centrale au cœur de la ville avec liaisons directes quotidiennes vers Trivandrum, Kochi, Mumbai et Delhi."}, {"title": "Kollam Junction (QLN)", "distance": "28 km (~45 min de route)", "description": "Gare régionale majeure desservie par de nombreux trains express interurbains."}],
+    "roadItemsVarkala": [{"title": "Trivandrum à la falaise de Varkala", "distance": "45 km (~1 h via NH 66)", "description": "Trajet agréable le long de la côte avec bus réguliers et taxis privés."}, {"title": "Kochi à Varkala", "distance": "165 km (~4 h via NH 66)", "description": "Route côtière pittoresque à travers le Kerala avec arrêts confortables."}],
+    "taxiFaresRishikesh": [{"route": "Aéroport de Dehradun (DED) → Ashram YogaGarhi", "costUsd": "$20", "costInr": "₹1 600"}, {"route": "Aéroport de Delhi (DEL) → Ashram YogaGarhi", "costUsd": "$65", "costInr": "₹5 500"}, {"route": "Gare de Haridwar → Ashram YogaGarhi", "costUsd": "$15", "costInr": "₹1 200"}, {"route": "Gare de Rishikesh (YNRK) → Ashram YogaGarhi", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "Aéroport de Trivandrum (TRV) → YogaGarhi Varkala", "costUsd": "$25", "costInr": "₹2 000"}, {"route": "Aéroport de Cochin (COK) → YogaGarhi Varkala", "costUsd": "$65", "costInr": "₹5 500"}, {"route": "Gare de Varkala Sivagiri (VAK) → Ashram", "costUsd": "$3", "costInr": "₹250"}, {"route": "Gare de Kollam Junction (QLN) → YogaGarhi Varkala", "costUsd": "$15", "costInr": "₹1 200"}],
+    "openInMaps": "Ouvrir dans Google Maps",
+    "syllabusBtn": "Télécharger le programme détaillé",
+    "syllabusTitle": "Télécharger le programme",
+    "syllabusDesc": "Sélectionnez votre formation et entrez votre e-mail pour recevoir le programme complet.",
+    "syllabusEmailPlaceholder": "Votre adresse e-mail",
+    "syllabusSend": "Envoyer le programme",
+    "syllabusSending": "Envoi en cours...",
+    "syllabusPrompt": "Souhaitez-vous voir la répartition heure par heure et la bibliographie ?"
   },
   "es": {
     "badge": "Guía de Viaje y Llegada",
@@ -1746,7 +1999,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "En Tren",
     "byRoad": "Por Carretera",
     "airportTransfers": "Aeropuerto y Traslados",
-    "checkInOut": "Llegada y Salida"
+    "checkInOut": "Llegada y Salida",
+    "taxiTitleRishikesh": "Tarifas Estimadas de Taxi al Ashram YogaGarhi",
+    "taxiTitleVarkala": "Tarifas Estimadas de Taxi al Ashram de Varkala",
+    "taxiSubRishikesh": "Precios acordados para traslados a Tapovan",
+    "taxiSubVarkala": "Precios cerrados para traslados al acantilado de Varkala",
+    "thRoute": "Ruta de Viaje",
+    "thCostUsd": "Coste Aprox. (USD)",
+    "thCostInr": "Coste Aprox. (INR)",
+    "pickupStrong": "Organizamos tu recogida en el aeropuerto:",
+    "pickupTextRishikesh": "Comparte tus datos de vuelo o tren con nuestro equipo; un chófer de confianza te esperará con un cartel con tu nombre.",
+    "pickupTextVarkala": "Comparte los detalles de tu vuelo y nuestro chófer te recibirá en el aeropuerto de Trivandrum (TRV).",
+    "pickupBtn": "Solicitar Traslado",
+    "visaTitle": "Visado de la India y Consejos de Viaje para Estudiantes",
+    "visaSub": "Información esencial para una entrada tranquila a la India",
+    "visaB1Title": "e-Visa Turística para India:",
+    "visaB1Text": "Los ciudadanos de más de 160 países pueden tramitar fácilmente su visado electrónico de turista online antes del viaje.",
+    "visaB2Title": "Validez recomendada:",
+    "visaB2Text": "Recomendamos solicitar el visado con al menos 2 semanas de antelación respecto a tu fecha de vuelo.",
+    "visaB3Title": "Requisitos del pasaporte:",
+    "visaB3Text": "Tu pasaporte debe tener al menos 6 meses de vigencia a partir de la llegada y dos páginas en blanco.",
+    "visaB4Title": "Registro en el ashram:",
+    "visaB4Text": "Al llegar te ayudaremos a cumplimentar el formulario obligatorio Form-C ante las autoridades gubernamentales.",
+    "airItemsRishikesh": [{"title": "Aeropuerto Jolly Grant, Dehradun (DED)", "distance": "35 km (~45 min en coche al ashram)", "description": "Aeropuerto nacional más cercano. Vuelos diarios frecuentes desde Nueva Delhi (DEL, 45 min de vuelo), Bombay, Bengaluru y Hyderabad."}, {"title": "Aeropuerto Internacional Indira Gandhi, Delhi (DEL)", "distance": "250 km (~5–6 h en coche o vuelo de conexión)", "description": "Principal puerta de entrada internacional para estudiantes del extranjero. Conexiones diarias a Dehradun o taxi directo por autopista."}],
+    "trainItemsRishikesh": [{"title": "Estación de Tren Yog Nagari Rishikesh (YNRK)", "distance": "6 km (~15 min en coche)", "description": "Terminal ferroviaria moderna en Rishikesh con conexiones a las principales ciudades del norte de la India."}, {"title": "Haridwar Junction (HW)", "distance": "25 km (~50 min en coche)", "description": "Gran nudo ferroviario con trenes de alta velocidad frecuentes como el Vande Bharat y Shatabdi Express (aprox. 4,5 h desde Delhi)."}],
+    "roadItemsRishikesh": [{"title": "Delhi ISBT Kashmiri Gate a Rishikesh", "distance": "240 km (~5 h por autopista)", "description": "Autobuses de lujo climatizados con salidas cada hora las 24 horas del día entre Delhi y Rishikesh."}, {"title": "Dehradun a Rishikesh", "distance": "45 km (~1 h)", "description": "Carretera bien comunicada con transporte local frecuente y taxis privados disponibles las 24 horas."}],
+    "airItemsVarkala": [{"title": "Aeropuerto Internacional de Trivandrum (TRV)", "distance": "45 km (~1 h en coche)", "description": "Aeropuerto más cercano con vuelos diarios desde las principales ciudades indias y conexiones internacionales."}, {"title": "Aeropuerto Internacional de Cochin (COK)", "distance": "190 km (~4,5 h en coche)", "description": "Importante centro internacional para vuelos transcontinentales. Conectado a Varkala por carretera costera o tren."}],
+    "trainItemsVarkala": [{"title": "Estación de Tren Varkala Sivagiri (VAK)", "distance": "3 km (~10 min en tuk-tuk)", "description": "Estación céntrica en el pueblo con trenes directos diarios a Trivandrum, Kochi, Bombay y Delhi."}, {"title": "Kollam Junction (QLN)", "distance": "28 km (~45 min en coche)", "description": "Gran estación ferroviaria regional con servicio de trenes exprés de todo el país."}],
+    "roadItemsVarkala": [{"title": "Trivandrum al acantilado de Varkala", "distance": "45 km (~1 h por NH 66)", "description": "Cómodo trayecto por carretera costera con autobuses frecuentes y taxis privados."}, {"title": "Kochi a Varkala", "distance": "165 km (~4 h por NH 66)", "description": "Pintoresca ruta por la costa de Kerala con cómodas paradas en el camino."}],
+    "taxiFaresRishikesh": [{"route": "Aeropuerto de Dehradun (DED) → Ashram YogaGarhi", "costUsd": "$20", "costInr": "₹1.600"}, {"route": "Aeropuerto de Delhi (DEL) → Ashram YogaGarhi", "costUsd": "$65", "costInr": "₹5.500"}, {"route": "Estación de Haridwar → Ashram YogaGarhi", "costUsd": "$15", "costInr": "₹1.200"}, {"route": "Estación de Rishikesh (YNRK) → Ashram YogaGarhi", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "Aeropuerto de Trivandrum (TRV) → YogaGarhi Varkala", "costUsd": "$25", "costInr": "₹2.000"}, {"route": "Aeropuerto de Cochin (COK) → YogaGarhi Varkala", "costUsd": "$65", "costInr": "₹5.500"}, {"route": "Estación de Varkala Sivagiri (VAK) → Ashram", "costUsd": "$3", "costInr": "₹250"}, {"route": "Estación de Kollam Junction (QLN) → YogaGarhi Varkala", "costUsd": "$15", "costInr": "₹1.200"}],
+    "openInMaps": "Abrir en Google Maps",
+    "syllabusBtn": "Descargar plan de estudios detallado",
+    "syllabusTitle": "Descargar plan de estudios",
+    "syllabusDesc": "Selecciona tu curso e introduce tu correo electrónico para recibir el temario completo.",
+    "syllabusEmailPlaceholder": "Tu correo electrónico",
+    "syllabusSend": "Enviar plan de estudios",
+    "syllabusSending": "Enviando...",
+    "syllabusPrompt": "¿Quieres ver el desglose hora por hora y la bibliografía recomendada?"
   },
   "it": {
     "badge": "Guida al Viaggio e Arrivo",
@@ -1760,7 +2050,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "In Treno",
     "byRoad": "Su Strada",
     "airportTransfers": "Aeroporto e Trasferimenti",
-    "checkInOut": "Check-In e Check-Out"
+    "checkInOut": "Check-In e Check-Out",
+    "taxiTitleRishikesh": "Tariffe taxi stimate per l'ashram YogaGarhi a Rishikesh",
+    "taxiTitleVarkala": "Tariffe taxi stimate per YogaGarhi a Varkala",
+    "taxiSubRishikesh": "Tariffe standard concordate con autisti per Tapovan",
+    "taxiSubVarkala": "Tariffe standard concordate per la North Cliff",
+    "thRoute": "Itinerario di viaggio",
+    "thCostUsd": "Costo approssimativo (USD)",
+    "thCostInr": "Costo approssimativo (INR)",
+    "pickupStrong": "Organizziamo il servizio transfer dall'aeroporto:",
+    "pickupTextRishikesh": "Condividi il tuo piano di volo o treno con il nostro team, e il nostro autista di fiducia ti aspetterà con un cartello personalizzato con il tuo nome.",
+    "pickupTextVarkala": "Condividi i dettagli del tuo arrivo a Trivandrum o Cochin e il nostro autista ti condurrà comodamente a Varkala.",
+    "pickupBtn": "Richiedi transfer",
+    "visaTitle": "Visto per l'India e consigli sull'arrivo per studenti internazionali",
+    "visaSub": "Linee guida essenziali per un'esperienza d'immigrazione senza intoppi",
+    "visaB1Title": "Visto turistico elettronico per l'India (e-Visa):",
+    "visaB1Text": "I cittadini di oltre 160 paesi possono ottenere facilmente un visto turistico elettronico online prima della partenza tramite il portale ufficiale del governo indiano.",
+    "visaB2Title": "Validità:",
+    "visaB2Text": "Consigliamo di richiedere un visto turistico da 30 giorni o a ingressi multipli per 1 anno almeno 2 settimane prima della partenza.",
+    "visaB3Title": "Valuta e schede SIM:",
+    "visaB3Text": "La valuta locale è la rupia indiana (INR). I bancomat sono ampiamente disponibili e la nostra reception può aiutarti ad acquistare una scheda SIM 5G locale.",
+    "visaB4Title": "Orari di check-in:",
+    "visaB4Text": "Il check-in ufficiale in ashram è dalle 12:00 del 1° giorno del corso, seguito da un incontro di orientamento serale e dalla cerimonia del fuoco (Havan).",
+    "airItemsRishikesh": [{"title": "Aeroporto Jolly Grant, Dehradun (DED)", "distance": "35 km (~45 min di auto per l'ashram)", "description": "Aeroporto nazionale più vicino. Voli giornalieri frequenti da Nuova Delhi (DEL, 45 min di volo), Mumbai, Bengaluru e Hyderabad."}, {"title": "Aeroporto Internazionale Indira Gandhi, Delhi (DEL)", "distance": "250 km (~5–6 ore di auto o volo coincidente)", "description": "Principale punto di arrivo internazionale. Voli di coincidenza giornalieri per Dehradun o comodo taxi autostradale."}],
+    "trainItemsRishikesh": [{"title": "Stazione Ferroviaria Yog Nagari Rishikesh (YNRK)", "distance": "6 km (~15 min di auto)", "description": "Nuovo terminal ferroviario a Rishikesh collegato con i maggiori nodi del nord dell'India."}, {"title": "Haridwar Junction (HW)", "distance": "25 km (~50 min di auto)", "description": "Importante snodo ferroviario servito da treni ad alta velocità inclusi Vande Bharat e Shatabdi Express (circa 4,5 ore da Delhi)."}],
+    "roadItemsRishikesh": [{"title": "Delhi ISBT Kashmiri Gate a Rishikesh", "distance": "240 km (~5 ore via autostrada)", "description": "Pullman di lusso con aria condizionata e cuccette in partenza ogni ora giorno e notte da Delhi a Rishikesh."}, {"title": "Dehradun a Rishikesh", "distance": "45 km (~1 ora)", "description": "Strada statale comoda con frequenti autobus locali e taxi privati disponibili 24 ore su 24."}],
+    "airItemsVarkala": [{"title": "Aeroporto Internazionale di Trivandrum (TRV)", "distance": "45 km (~1 ora di auto)", "description": "Aeroporto più vicino con voli diretti dalle città indiane e dai principali hub internazionali."}, {"title": "Aeroporto Internazionale di Cochin (COK)", "distance": "190 km (~4,5 ore di auto)", "description": "Importante gateway per voli internazionali a lungo raggio. Collegato a Varkala via strada costiera o treno."}],
+    "trainItemsVarkala": [{"title": "Stazione Ferroviaria Varkala Sivagiri (VAK)", "distance": "3 km (~10 min in tuk-tuk)", "description": "Comoda stazione centrale cittadina con treni espressi giornalieri per Trivandrum, Kochi, Mumbai e Delhi."}, {"title": "Kollam Junction (QLN)", "distance": "28 km (~45 min di auto)", "description": "Grande stazione regionale con frequenti collegamenti espressi da tutto il paese."}],
+    "roadItemsVarkala": [{"title": "Trivandrum alla scogliera di Varkala", "distance": "45 km (~1 ora via NH 66)", "description": "Percorso agevole lungo la costa con frequenti corse di autobus e taxi privati."}, {"title": "Kochi a Varkala", "distance": "165 km (~4 ore via NH 66)", "description": "Viaggio suggestivo lungo la costa del Kerala con comode aree di sosta."}],
+    "taxiFaresRishikesh": [{"route": "Aeroporto di Dehradun (DED) → Ashram YogaGarhi", "costUsd": "$20", "costInr": "₹1.600"}, {"route": "Aeroporto di Delhi (DEL) → Ashram YogaGarhi", "costUsd": "$65", "costInr": "₹5.500"}, {"route": "Stazione di Haridwar → Ashram YogaGarhi", "costUsd": "$15", "costInr": "₹1.200"}, {"route": "Stazione di Rishikesh (YNRK) → Ashram YogaGarhi", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "Aeroporto di Trivandrum (TRV) → YogaGarhi Varkala", "costUsd": "$25", "costInr": "₹2.000"}, {"route": "Aeroporto di Cochin (COK) → YogaGarhi Varkala", "costUsd": "$65", "costInr": "₹5.500"}, {"route": "Stazione di Varkala Sivagiri (VAK) → Ashram", "costUsd": "$3", "costInr": "₹250"}, {"route": "Stazione di Kollam Junction (QLN) → YogaGarhi Varkala", "costUsd": "$15", "costInr": "₹1.200"}],
+    "openInMaps": "Apri in Google Maps",
+    "syllabusBtn": "Scarica il programma dettagliato",
+    "syllabusTitle": "Scarica il programma",
+    "syllabusDesc": "Seleziona il tuo corso e inserisci la tua email per ricevere il programma completo.",
+    "syllabusEmailPlaceholder": "Il tuo indirizzo email",
+    "syllabusSend": "Invia programma",
+    "syllabusSending": "Invio in corso...",
+    "syllabusPrompt": "Vuoi consultare la suddivisione oraria e l'elenco dei testi consigliati?"
   },
   "ru": {
     "badge": "Как добраться",
@@ -1774,7 +2101,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "Поездом",
     "byRoad": "Автобусом / Авто",
     "airportTransfers": "Аэропорт и трансферы",
-    "checkInOut": "Заезд и выезд"
+    "checkInOut": "Заезд и выезд",
+    "taxiTitleRishikesh": "Примерная стоимость такси до ашрама YogaGarhi в Ришикеше",
+    "taxiTitleVarkala": "Примерная стоимость такси до YogaGarhi в Варкале",
+    "taxiSubRishikesh": "Фиксированные стандартные тарифы до Тапована",
+    "taxiSubVarkala": "Фиксированные стандартные тарифы до Северного клифа",
+    "thRoute": "Маршрут поездки",
+    "thCostUsd": "Примерная стоимость (USD)",
+    "thCostInr": "Примерная стоимость (INR)",
+    "pickupStrong": "Мы организуем встречу в аэропорту:",
+    "pickupTextRishikesh": "Сообщите расписание вашего рейса или поезда нашей команде, и надежный водитель ашрама встретит вас с персональной табличкой с вашим именем.",
+    "pickupTextVarkala": "Сообщите данные вашего рейса в Тривандрум или Кочин, и водитель комфортно доставит вас прямо в Варкалу.",
+    "pickupBtn": "Заказать трансфер",
+    "visaTitle": "Индийская виза и рекомендации по прибытию для иностранных студентов",
+    "visaSub": "Важные рекомендации для комфортного прохождения паспортного контроля",
+    "visaB1Title": "Индийская электронная туристическая виза (e-Visa):",
+    "visaB1Text": "Граждане более чем 160 стран могут легко оформить электронную визу онлайн на официальном портале правительства Индии перед вылетом.",
+    "visaB2Title": "Срок действия:",
+    "visaB2Text": "Мы рекомендуем подавать заявление на 30-дневную или годовую многократную туристическую визу как минимум за 2 недели до даты поездки.",
+    "visaB3Title": "Валюта и SIM-карты:",
+    "visaB3Text": "Местная валюта — индийская рупия (INR). Банкоматы доступны повсюду в Таповане, а наша команда поможет вам приобрести местную 5G SIM-карту.",
+    "visaB4Title": "Время заезда:",
+    "visaB4Text": "Официальный заезд в ашрам — с 12:00 в первый день каждого курса, вечером проводится ориентационная встреча и священная церемония Хаван.",
+    "airItemsRishikesh": [{"title": "Аэропорт Джолли Грант, Дехрадун (DED)", "distance": "35 км (~45 мин на машине до ашрама)", "description": "Ближайший внутренний аэропорт. Регулярные рейсы из Нью-Дели (DEL, перелет 45 мин), Мумбаи, Бангалора и Хайдарабада."}, {"title": "Международный аэропорт Индиры Ганди, Дели (DEL)", "distance": "250 км (~5–6 часов на машине или стыковочный рейс)", "description": "Главные международные ворота для иностранных студентов. Стыковочные рейсы до Дехрадуна или комфортабельное такси по шоссе."}],
+    "trainItemsRishikesh": [{"title": "Железнодорожный вокзал Йог Нагари Ришикеш (YNRK)", "distance": "6 км (~15 мин на машине)", "description": "Современный вокзал в черте Ришикеша с прямым сообщением с узловыми станциями северной Индии."}, {"title": "Хардвар Джанкшен (HW)", "distance": "25 км (~50 мин на машине)", "description": "Крупнейший железнодорожный узел со скоростными поездами Ванде Бхарат и Шатабди Экспресс (~4,5 часа от Дели)."}],
+    "roadItemsRishikesh": [{"title": "Дели ISBT Кашмирские ворота — Ришикеш", "distance": "240 км (~5 часов по скоростному шоссе)", "description": "Круглосуточные комфортабельные автобусы со спальными местами и кондиционером отправляются каждый час."}, {"title": "Дехрадун — Ришикеш", "distance": "45 км (~1 час)", "description": "Удобная автодорога с постоянным движением рейсовых автобусов и доступными круглосуточно такси."}],
+    "airItemsVarkala": [{"title": "Международный аэропорт Тривандрум (TRV)", "distance": "45 км (~1 час на машине)", "description": "Ближайший аэропорт с прямыми рейсами из городов Индии и международных хабов Ближнего Востока и Азии."}, {"title": "Международный аэропорт Кочин (COK)", "distance": "190 км (~4,5 часа на машине)", "description": "Крупнейший международный хаб для дальнемагистральных рейсов. До Варкалы ведет шоссе NH 66 или экспресс-поезда."}],
+    "trainItemsVarkala": [{"title": "Вокзал Варкала Шивагири (VAK)", "distance": "3 км (~10 мин на рикше)", "description": "Удобная станция в черте города с ежедневными поездами до Тривандрума, Кочи, Мумбаи и Дели."}, {"title": "Коллам Джанкшен (QLN)", "distance": "28 км (~45 мин на машине)", "description": "Крупный вокзал, принимающий скоростные поезда со всей страны."}],
+    "roadItemsVarkala": [{"title": "Тривандрум — утес Варкалы", "distance": "45 км (~1 час по NH 66)", "description": "Приятная поездка по прибрежному шоссе с регулярным автобусным сообщением и такси."}, {"title": "Кочи — Варкала", "distance": "165 км (~4 часа по NH 66)", "description": "Живописная дорога вдоль побережья Кералы с комфортными остановками."}],
+    "taxiFaresRishikesh": [{"route": "Аэропорт Дехрадун (DED) → Ашрам YogaGarhi", "costUsd": "$20", "costInr": "₹1 600"}, {"route": "Аэропорт Дели (DEL) → Ашрам YogaGarhi", "costUsd": "$65", "costInr": "₹5 500"}, {"route": "Вокзал Хардвар → Ашрам YogaGarhi", "costUsd": "$15", "costInr": "₹1 200"}, {"route": "Вокзал Ришикеш (YNRK) → Ашрам YogaGarhi", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "Аэропорт Тривандрум (TRV) → YogaGarhi Варкала", "costUsd": "$25", "costInr": "₹2 000"}, {"route": "Аэропорт Кочин (COK) → YogaGarhi Варкала", "costUsd": "$65", "costInr": "₹5 500"}, {"route": "Вокзал Варкала Шивагири (VAK) → Ашрам", "costUsd": "$3", "costInr": "₹250"}, {"route": "Вокзал Коллам (QLN) → YogaGarhi Варкала", "costUsd": "$15", "costInr": "₹1 200"}],
+    "openInMaps": "Открыть на Google Maps",
+    "syllabusBtn": "Скачать подробную программу",
+    "syllabusTitle": "Скачать учебную программу",
+    "syllabusDesc": "Выберите курс и укажите ваш e-mail, чтобы получить полный учебный план.",
+    "syllabusEmailPlaceholder": "Ваш адрес электронной почты",
+    "syllabusSend": "Отправить программу",
+    "syllabusSending": "Отправка...",
+    "syllabusPrompt": "Хотите ознакомиться с почасовым расписанием и списком рекомендуемой литературы?"
   },
   "id": {
     "badge": "Panduan Perjalanan & Kedatangan",
@@ -1788,7 +2152,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "Kereta Api",
     "byRoad": "Jalur Darat",
     "airportTransfers": "Bandara & Antar-Jemput",
-    "checkInOut": "Check-In & Check-Out"
+    "checkInOut": "Check-In & Check-Out",
+    "taxiTitleRishikesh": "Perkiraan Tarif Taksi ke Ashram YogaGarhi Rishikesh",
+    "taxiTitleVarkala": "Perkiraan Tarif Taksi ke YogaGarhi Varkala",
+    "taxiSubRishikesh": "Tarif standar pengemudi yang telah disepakati ke Tapovan",
+    "taxiSubVarkala": "Tarif standar yang telah disepakati ke North Cliff",
+    "thRoute": "Rute Perjalanan",
+    "thCostUsd": "Perkiraan Biaya (USD)",
+    "thCostInr": "Perkiraan Biaya (INR)",
+    "pickupStrong": "Kami Menyediakan Penjemputan Bandara:",
+    "pickupTextRishikesh": "Bagikan jadwal penerbangan atau kereta Anda dengan tim kami, dan pengemudi tepercaya kami akan menunggu Anda dengan papan nama pribadi.",
+    "pickupTextVarkala": "Bagikan jadwal kedatangan Anda di Trivandrum atau Cochin, dan pengemudi kami akan mengantar Anda dengan nyaman ke Varkala.",
+    "pickupBtn": "Pesan Penjemputan",
+    "visaTitle": "Panduan Visa India & Kedatangan untuk Siswa Internasional",
+    "visaSub": "Panduan penting untuk kelancaran proses imigrasi",
+    "visaB1Title": "Visa Turis Elektronik India (e-Visa):",
+    "visaB1Text": "Warga dari lebih dari 160 negara dapat dengan mudah memperoleh e-Visa secara daring sebelum keberangkatan melalui portal resmi Pemerintah India.",
+    "visaB2Title": "Masa Berlaku:",
+    "visaB2Text": "Kami menyarankan untuk mengajukan e-Visa 30 hari atau 1 tahun beberapa kali masuk minimal 2 minggu sebelum keberangkatan.",
+    "visaB3Title": "Mata Uang & Kartu SIM:",
+    "visaB3Text": "Mata uang lokal adalah Rupee India (INR). ATM tersedia luas, dan tim resepsionis kami siap membantu Anda memperoleh kartu SIM data 5G lokal.",
+    "visaB4Title": "Waktu Check-in:",
+    "visaB4Text": "Check-in resmi ashram dimulai pukul 12:00 pada tanggal 1 setiap angkatan, dilanjutkan dengan lingkaran orientasi malam dan upacara api suci (Havan).",
+    "airItemsRishikesh": [{"title": "Bandara Jolly Grant, Dehradun (DED)", "distance": "35 km (~45 mnt perjalanan ke ashram)", "description": "Bandara domestik terdekat. Penerbangan harian reguler dari New Delhi (DEL, 45 mnt penerbangan), Mumbai, Bengaluru, dan Hyderabad."}, {"title": "Bandara Internasional Indira Gandhi, Delhi (DEL)", "distance": "250 km (~5–6 jam perjalanan atau penerbangan lanjutan)", "description": "Gerbang internasional utama bagi siswa mancanegara. Terhubung ke Dehradun (DED) via penerbangan domestik harian atau taksi jalan tol."}],
+    "trainItemsRishikesh": [{"title": "Stasiun Kereta Yog Nagari Rishikesh (YNRK)", "distance": "6 km (~15 mnt perjalanan)", "description": "Terminal kereta api modern di kota Rishikesh dengan akses ke jaringan kereta utama India Utara."}, {"title": "Haridwar Junction (HW)", "distance": "25 km (~50 mnt perjalanan)", "description": "Stasiun persimpangan besar dengan kereta ekspres cepat termasuk Vande Bharat dan Shatabdi Express (sekitar 4,5 jam dari Delhi)."}],
+    "roadItemsRishikesh": [{"title": "Delhi ISBT Kashmiri Gate ke Rishikesh", "distance": "240 km (~5 jam via jalan tol)", "description": "Bus antar-kota ber-AC mewah dengan tempat tidur berangkat setiap jam 24/7 dari Delhi ke Rishikesh."}, {"title": "Dehradun ke Rishikesh", "distance": "45 km (~1 jam)", "description": "Jalan raya provinsi yang mulus dengan transportasi umum dan taksi privat tersedia sepanjang waktu."}],
+    "airItemsVarkala": [{"title": "Bandara Internasional Trivandrum (TRV)", "distance": "45 km (~1 jam perjalanan)", "description": "Bandara terdekat dengan penerbangan langsung harian dari kota-kota utama India serta hub Timur Tengah dan Asia Tenggara."}, {"title": "Bandara Internasional Cochin (COK)", "distance": "190 km (~4,5 jam perjalanan)", "description": "Pintu gerbang internasional utama untuk penerbangan jarak jauh. Terhubung ke Varkala melalui jalan raya pesisir atau kereta ekspres."}],
+    "trainItemsVarkala": [{"title": "Stasiun Kereta Varkala Sivagiri (VAK)", "distance": "3 km (~10 mnt naik bajaj/autorickshaw)", "description": "Stasiun lokal yang nyaman di pusat kota dengan kereta ekspres harian ke Trivandrum, Kochi, Mumbai, dan Delhi."}, {"title": "Kollam Junction (QLN)", "distance": "28 km (~45 mnt perjalanan)", "description": "Terminal kereta regional utama yang dilayani oleh kereta ekspres dari berbagai penjuru negeri."}],
+    "roadItemsVarkala": [{"title": "Trivandrum ke Tebing Varkala", "distance": "45 km (~1 jam via NH 66)", "description": "Perjalanan mulus menyusuri pantai dengan bus reguler dan taksi pribadi yang beroperasi sepanjang hari."}, {"title": "Kochi ke Varkala", "distance": "165 km (~4 jam via NH 66)", "description": "Perjalanan indah menyusuri pesisir Kerala dengan banyak tempat peristirahatan yang nyaman."}],
+    "taxiFaresRishikesh": [{"route": "Bandara Dehradun (DED) → Ashram YogaGarhi", "costUsd": "$20", "costInr": "₹1.600"}, {"route": "Bandara Delhi (DEL) → Ashram YogaGarhi", "costUsd": "$65", "costInr": "₹5.500"}, {"route": "Stasiun Haridwar → Ashram YogaGarhi", "costUsd": "$15", "costInr": "₹1.200"}, {"route": "Stasiun Rishikesh (YNRK) → Ashram YogaGarhi", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "Bandara Trivandrum (TRV) → YogaGarhi Varkala", "costUsd": "$25", "costInr": "₹2.000"}, {"route": "Bandara Cochin (COK) → YogaGarhi Varkala", "costUsd": "$65", "costInr": "₹5.500"}, {"route": "Stasiun Varkala Sivagiri (VAK) → Ashram", "costUsd": "$3", "costInr": "₹250"}, {"route": "Stasiun Kollam Junction (QLN) → YogaGarhi Varkala", "costUsd": "$15", "costInr": "₹1.200"}],
+    "openInMaps": "Buka di Google Maps",
+    "syllabusBtn": "Unduh Silabus Rinci",
+    "syllabusTitle": "Unduh Silabus",
+    "syllabusDesc": "Pilih kursus Anda dan masukkan email untuk menerima silabus lengkap secara rinci.",
+    "syllabusEmailPlaceholder": "Alamat email Anda",
+    "syllabusSend": "Kirim Silabus",
+    "syllabusSending": "Mengirim...",
+    "syllabusPrompt": "Ingin melihat rincian jam demi jam dan daftar bacaan wajib?"
   },
   "ja": {
     "badge": "アクセス・到着案内",
@@ -1802,7 +2203,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "列車で",
     "byRoad": "車・バスで",
     "airportTransfers": "空港・送迎サービス",
-    "checkInOut": "チェックイン・チェックアウト"
+    "checkInOut": "チェックイン・チェックアウト",
+    "taxiTitleRishikesh": "YogaGarhiアシュラムへのタクシー運賃目安",
+    "taxiTitleVarkala": "YogaGarhiヴァルカラ校へのタクシー運賃目安",
+    "taxiSubRishikesh": "タポヴァンまでの事前取り決め済み標準料金",
+    "taxiSubVarkala": "ノースクリフまでの事前取り決め済み定額料金",
+    "thRoute": "移動ルート",
+    "thCostUsd": "概算運賃 (USD)",
+    "thCostInr": "概算運賃 (INR)",
+    "pickupStrong": "空港送迎の手配について：",
+    "pickupTextRishikesh": "フライトまたは電車の到着情報を事前にお知らせください。ドライバーがお名前を書いたボードを持ってお待ちします。",
+    "pickupTextVarkala": "フライト情報をお知らせください。トリバンドラム（TRV）空港でお出迎えいたします。",
+    "pickupBtn": "送迎を申し込む",
+    "visaTitle": "インド渡航ビザ＆入国ガイド",
+    "visaSub": "スムーズな入国審査のための重要ポイント",
+    "visaB1Title": "インドe-Touristビザ：",
+    "visaB1Text": "日本国籍の方は出発前にオンラインで電子観光ビザ（e-Visa）を申請・取得いただけます。",
+    "visaB2Title": "推奨申請時期：",
+    "visaB2Text": "渡航予定日の2週間前までに申請手続きを完了することをお勧めします。",
+    "visaB3Title": "パスポート要件：",
+    "visaB3Text": "入国時に残存有効期間が6ヶ月以上あり、2ページ以上の空白ページが必要です。",
+    "visaB4Title": "アシュラムでの滞在登録：",
+    "visaB4Text": "到着後、アシュラム受付にてインド政府指定の外国人登録（Form-C）手続きをサポートいたします。",
+    "airItemsRishikesh": [{"title": "ジョリー・グラント空港、デヘラードゥーン (DED)", "distance": "35 km (アシュラムまで車で約45分)", "description": "最も近い国内線空港。ニューデリー (DEL、フライト45分)、ムンバイ、ベンガルールから毎日多数運航。"}, {"title": "インディラ・ガンディー国際空港、デリー (DEL)", "distance": "250 km (車で約5〜6時間、または国内線接続)", "description": "海外からの受講生のための主要国際線ゲートウェイ。デヘラードゥーン行きの国内線または高速道路タクシーで直結。"}],
+    "trainItemsRishikesh": [{"title": "ヨグ・ナガリ・リシケシ駅 (YNRK)", "distance": "6 km (車で約15分)", "description": "北インドの主要都市と結ばれたリシケシ市内の最新鉄道ターミナル。"}, {"title": "ハリドワール・ジャンクション駅 (HW)", "distance": "25 km (車で約50分)", "description": "ヴァンデ・バーラト急行やシャタブディ急行など高速列車が頻発する大ターミナル (デリーから約4.5時間)。"}],
+    "roadItemsRishikesh": [{"title": "デリー ISBT カシミール・ゲートからリシケシ", "distance": "240 km (高速道路経由で約5時間)", "description": "エアコン完備の快適な寝台バスや長距離バスが24時間、毎時間デリーから運行。"}, {"title": "デヘラードゥーンからリシケシ", "distance": "45 km (約1時間)", "description": "路線バス、乗り合いタクシー、専用タクシーが24時間利用可能な整備された道路。"}],
+    "airItemsVarkala": [{"title": "トリバンドラム国際空港 (TRV)", "distance": "45 km (車で約1時間)", "description": "最寄りの国際・国内線空港。デリー、ムンバイ、中東、東南アジアからの直行便が多数発着。"}, {"title": "コーチン国際空港 (COK)", "distance": "190 km (車で約4.5時間)", "description": "長距離国際線の主要ゲートウェイ。NH66沿岸高速道路または急行列車でヴァルカラへ直結。"}],
+    "trainItemsVarkala": [{"title": "ヴァルカラ・シヴァギリ駅 (VAK)", "distance": "3 km (オートリキシャで約10分)", "description": "町中にある便利な駅。トリバンドラム、コーチ、ムンバイ、デリーへの直通急行列車が毎日運行。"}, {"title": "コッラム・ジャンクション駅 (QLN)", "distance": "28 km (車で約45分)", "description": "インド全土からの高速急行列車が停車する地域の主要ターミナル。"}],
+    "roadItemsVarkala": [{"title": "トリバンドラムからヴァルカラ・クリフ", "distance": "45 km (NH66経由で約1時間)", "description": "快適な海沿いのドライブ。路線バスや専用タクシーが終日運行。"}, {"title": "コーチからヴァルカラ", "distance": "165 km (NH66経由で約4時間)", "description": "ケーララ州の海岸線を通る美しいルートで、途中に快適な休憩スポット多数。"}],
+    "taxiFaresRishikesh": [{"route": "デヘラードゥーン空港 (DED) → ヨガガルヒ・アシュラム", "costUsd": "$20", "costInr": "₹1,600"}, {"route": "デリー空港 (DEL) → ヨガガルヒ・アシュラム", "costUsd": "$65", "costInr": "₹5,500"}, {"route": "ハリドワール駅 → ヨガガルヒ・アシュラム", "costUsd": "$15", "costInr": "₹1,200"}, {"route": "リシケシ駅 (YNRK) → アシュラム", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "トリバンドラム空港 (TRV) → ヨガガルヒ・ヴァルカラ", "costUsd": "$25", "costInr": "₹2,000"}, {"route": "コーチン空港 (COK) → ヨガガルヒ・ヴァルカラ", "costUsd": "$65", "costInr": "₹5,500"}, {"route": "ヴァルカラ・シヴァギリ駅 (VAK) → アシュラム", "costUsd": "$3", "costInr": "₹250"}, {"route": "コッラム・ジャンクション駅 (QLN) → ヨガガルヒ・ヴァルカラ", "costUsd": "$15", "costInr": "₹1,200"}],
+    "openInMaps": "Googleマップで開く",
+    "syllabusBtn": "詳細なシラバスをダウンロード",
+    "syllabusTitle": "シラバスをダウンロード",
+    "syllabusDesc": "コースを選択しメールアドレスを入力すると、詳細なシラバスをお送りします。",
+    "syllabusEmailPlaceholder": "メールアドレス",
+    "syllabusSend": "シラバスを送信",
+    "syllabusSending": "送信中...",
+    "syllabusPrompt": "時間ごとの詳細なスケジュールと推薦図書リストをご覧になりたいですか？"
   },
   "ko": {
     "badge": "교통 및 오시는 길 안내",
@@ -1816,7 +2254,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "기차편",
     "byRoad": "도로 / 버스",
     "airportTransfers": "공항 및 픽업 안내",
-    "checkInOut": "체크인 및 체크아웃"
+    "checkInOut": "체크인 및 체크아웃",
+    "taxiTitleRishikesh": "YogaGarhi 리시케시 아슈람 예상 택시 요금",
+    "taxiTitleVarkala": "YogaGarhi 바르칼라 아슈람 예상 택시 요금",
+    "taxiSubRishikesh": "타포반까지의 사전 협의된 표준 기사 요금",
+    "taxiSubVarkala": "노스 클리프까지의 사전 협의된 표준 요금",
+    "thRoute": "이동 경로",
+    "thCostUsd": "예상 비용 (USD)",
+    "thCostInr": "예상 비용 (INR)",
+    "pickupStrong": "공항 픽업을 준비해 드립니다:",
+    "pickupTextRishikesh": "항공편 또는 기차 일정을 입학팀에 공유해 주시면, 신뢰할 수 있는 아슈람 전담 기사가 개인 이름표를 들고 대기합니다.",
+    "pickupTextVarkala": "도착 일정을 공유해 주시면, 안전한 전담 기사가 바르칼라 샬라까지 편안하게 모십니다.",
+    "pickupBtn": "픽업 신청하기",
+    "visaTitle": "외국인 수강생을 위한 인도 비자 및 입국 안내",
+    "visaSub": "원활한 입국 심사를 위한 필수 안내 사항",
+    "visaB1Title": "인도 전자 관광 비자 (e-Visa):",
+    "visaB1Text": "160개국 이상의 시민권자는 출국 전 공식 인도 정부 포털을 통해 간편하게 전자 관광 비자를 발급받을 수 있습니다.",
+    "visaB2Title": "유효 기간:",
+    "visaB2Text": "예정된 출국일로부터 최소 2주 전에 30일 또는 1년 복수 입국 e-Tourist 비자를 신청하시는 것을 권장합니다.",
+    "visaB3Title": "통화 및 현지 SIM 카드:",
+    "visaB3Text": "현지 통화는 인도 루피(INR)입니다. 타포반 곳곳에 ATM이 있으며, 리셉션 팀에서 5G 선불 SIM 카드 구매를 도와드립니다.",
+    "visaB4Title": "체크인 시간:",
+    "visaB4Text": "공식 아슈람 입소는 매 기수 1일 낮 12:00부터 시작되며, 저녁에는 오리엔테이션 및 하반(Havan) 개원 의식이 진행됩니다.",
+    "airItemsRishikesh": [{"title": "데라둔 졸리 그랜트 공항 (DED)", "distance": "35 km (아슈람까지 차로 약 45분)", "description": "가장 가까운 국내선 공항. 뉴델리(DEL, 45분 비행), 뭄바이, 벵갈루루에서 매일 정기 항공편 운항."}, {"title": "델리 인디라 간디 국제공항 (DEL)", "distance": "250 km (차로 약 5~6시간 또는 국내선 연결)", "description": "해외 수강생을 위한 주요 국제 관문. 데라둔행 국내선 또는 고속도로 택시로 편리하게 연결."}],
+    "trainItemsRishikesh": [{"title": "요그 나가리 리시케시 기차역 (YNRK)", "distance": "6 km (차로 약 15분)", "description": "인도 북부 주요 도시와 바로 연결되는 리시케시 시내의 현대적인 철도 터미널."}, {"title": "하리드와르 정션 (HW)", "distance": "25 km (차로 약 50분)", "description": "반데 바라트 급행 및 샤탑디 급행 등 고속 열차가 정차하는 대형 철도 허브(델리에서 약 4.5시간)."}],
+    "roadItemsRishikesh": [{"title": "델리 ISBT 카시미르 게이트에서 리시케시", "distance": "240 km (고속도로 경유 약 5시간)", "description": "에어컨과 침대가 완비된 고급 고속버스가 델리에서 매시간 24시간 운행."}, {"title": "데라둔에서 리시케시", "distance": "45 km (약 1시간)", "description": "시내버스, 합승 택시 및 전용 택시가 24시간 내내 원활히 연결된 도로."}],
+    "airItemsVarkala": [{"title": "트리반드룸 국제공항 (TRV)", "distance": "45 km (차로 약 1시간)", "description": "가장 가까운 공항. 델리, 뭄바이 및 중동, 동남아 주요 도시에서 매일 직항편 운항."}, {"title": "코친 국제공항 (COK)", "distance": "190 km (차로 약 4.5시간)", "description": "장거리 국제선을 위한 주요 국제 허브. 해안 고속도로 NH 66 또는 급행열차로 연결."}],
+    "trainItemsVarkala": [{"title": "바르칼라 시바기리 기차역 (VAK)", "distance": "3 km (오토릭샤로 약 10분)", "description": "마을 중심의 편리한 역. 트리반드룸, 코치, 뭄바이, 델리로 가는 직통 열차 매일 운행."}, {"title": "콜람 정션 (QLN)", "distance": "28 km (차로 약 45분)", "description": "전국 각지의 고속 열차가 정차하는 주요 지역 철도 터미널."}],
+    "roadItemsVarkala": [{"title": "트리반드룸에서 바르칼라 절벽", "distance": "45 km (NH 66 경유 약 1시간)", "description": "해안선을 따라 이어지는 편안한 고속도로. 정기 버스와 택시가 하루 종일 운행."}, {"title": "코치에서 바르칼라", "distance": "165 km (NH 66 경유 약 4시간)", "description": "케랄라 해안을 따라 이어지는 경치 좋은 도로로 중간 휴게소가 잘 갖춰져 있음."}],
+    "taxiFaresRishikesh": [{"route": "데라둔 공항 (DED) → 요가가르히 아슈람", "costUsd": "$20", "costInr": "₹1,600"}, {"route": "델리 공항 (DEL) → 요가가르히 아슈람", "costUsd": "$65", "costInr": "₹5,500"}, {"route": "하리드와르 역 → 요가가르히 아슈람", "costUsd": "$15", "costInr": "₹1,200"}, {"route": "리시케시 역 (YNRK) → 아슈람", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "트리반드룸 공항 (TRV) → 요가가르히 바르칼라", "costUsd": "$25", "costInr": "₹2,000"}, {"route": "코친 공항 (COK) → 요가가르히 바르칼라", "costUsd": "$65", "costInr": "₹5,500"}, {"route": "바르칼라 시바기리 역 (VAK) → 아슈람", "costUsd": "$3", "costInr": "₹250"}, {"route": "콜람 정션 (QLN) → 요가가르히 바르칼라", "costUsd": "$15", "costInr": "₹1,200"}],
+    "openInMaps": "Google 지도에서 열기",
+    "syllabusBtn": "상세 커리큘럼 다운로드",
+    "syllabusTitle": "커리큘럼 다운로드",
+    "syllabusDesc": "과정을 선택하고 이메일을 입력하시면 상세 커리큘럼을 보내드립니다.",
+    "syllabusEmailPlaceholder": "이메일 주소",
+    "syllabusSend": "커리큘럼 받기",
+    "syllabusSending": "전송 중...",
+    "syllabusPrompt": "시간대별 세부 일정과 추천 도서 목록을 확인하시겠습니까?"
   },
   "zh": {
     "badge": "交通与到达指南",
@@ -1830,7 +2305,44 @@ export const HOW_TO_REACH_UI: Record<string, HowToReachUIData> = {
     "byTrain": "火车铁路",
     "byRoad": "公路巴士",
     "airportTransfers": "机场与接送机",
-    "checkInOut": "入住与退房"
+    "checkInOut": "入住与退房",
+    "taxiTitleRishikesh": "前往YogaGarhi静修院预估出租车费用",
+    "taxiTitleVarkala": "前往YogaGarhi瓦尔卡拉校区出租车预估费用",
+    "taxiSubRishikesh": "直达塔波万校区的协议标准司机运价",
+    "taxiSubVarkala": "直达瓦尔卡拉悬崖校区的标准接机费用",
+    "thRoute": "行程路线",
+    "thCostUsd": "预估费用 (USD)",
+    "thCostInr": "预估费用 (INR)",
+    "pickupStrong": "我们提供专车接机服务：",
+    "pickupTextRishikesh": "请向招生团队提供您的航班或火车车次信息，专属司机将持印有您姓名的接机牌在出站口迎候。",
+    "pickupTextVarkala": "请提供您的航班信息，专属司机将在特里凡得琅（TRV）机场出站口静候您的到来。",
+    "pickupBtn": "预约接机服务",
+    "visaTitle": "国际学员印度签证及入境指引",
+    "visaSub": "确保顺利通关入境的重要指南",
+    "visaB1Title": "印度电子旅游签证（e-Visa）：",
+    "visaB1Text": "多数国家公民可在出行前通过印度政府官方门户轻松在线申请电子旅游签证。",
+    "visaB2Title": "推荐申请时间：",
+    "visaB2Text": "建议至少在计划启程日期前两周完成签证申请提交。",
+    "visaB3Title": "护照有效期限要求：",
+    "visaB3Text": "入境时护照有效期必须在6个月以上，且至少备有两页空白盖章页。",
+    "visaB4Title": "静修院抵埗外籍登记：",
+    "visaB4Text": "抵达后，前台将协助您办理印度政府规定的Form-C外籍人员入住登记。",
+    "airItemsRishikesh": [{"title": "德拉敦乔利格兰特机场 (DED)", "distance": "35公里 (乘车约45分钟到达静修院)", "description": "最近的国内机场。从新德里(DEL，45分钟飞行)、孟买、班加罗尔每日有多趟直飞航班。"}, {"title": "新德里英迪拉·甘地国际机场 (DEL)", "distance": "250公里 (乘车约5–6小时或转机)", "description": "国际学员的主要入境枢纽。每日有多个国内航班直达德拉敦，也可乘坐舒适的高速公路出租车。"}],
+    "trainItemsRishikesh": [{"title": "约格纳加里里希开诗火车站 (YNRK)", "distance": "6公里 (乘车约15分钟)", "description": "里希开诗市内的现代化铁路总站，连接北印度各主要铁路枢纽。"}, {"title": "哈里德瓦尔枢纽站 (HW)", "distance": "25公里 (乘车约50分钟)", "description": "主要铁路枢纽，停靠包括范德·巴拉特号和沙塔布迪特快在内的多趟高速列车(距德里约4.5小时)。"}],
+    "roadItemsRishikesh": [{"title": "德里 ISBT 卡什米尔门至里希开诗", "distance": "240公里 (经高速公路约5小时)", "description": "配备空调和卧铺的高级长途客车全天24小时每小时从德里发往里希开诗。"}, {"title": "德拉敦至里希开诗", "distance": "45公里 (约1小时)", "description": "路况优良的邦级公路，全天24小时提供频繁的公交、拼车及专属出租车服务。"}],
+    "airItemsVarkala": [{"title": "特里凡得琅国际机场 (TRV)", "distance": "45公里 (乘车约1小时)", "description": "最近的机场。拥有来自德里、孟买以及中东、东南亚主要航空枢纽的每日直飞航班。"}, {"title": "科钦国际机场 (COK)", "distance": "190公里 (乘车约4.5小时)", "description": "长途国际航班的重要门户。经由NH 66沿海高速或特快列车便捷通往瓦尔卡拉。"}],
+    "trainItemsVarkala": [{"title": "瓦尔卡拉希瓦吉里火车站 (VAK)", "distance": "3公里 (乘嘟嘟车约10分钟)", "description": "镇中心便利的火车站。每日有直达特快列车开往特里凡得琅、科钦、孟买和德里。"}, {"title": "奎隆枢纽站 (QLN)", "distance": "28公里 (乘车约45分钟)", "description": "区域主要铁路大站，停靠来自全国各地的特快列车。"}],
+    "roadItemsVarkala": [{"title": "特里凡得琅至瓦尔卡拉悬崖", "distance": "45公里 (经NH 66约1小时)", "description": "沿海平坦的高速公路车程。全天有密集的公交车和出租车营运。"}, {"title": "科钦至瓦尔卡拉", "distance": "165公里 (经NH 66约4小时)", "description": "穿越喀拉拉邦海岸线的风景优美的自驾路线，沿途配套齐全。"}],
+    "taxiFaresRishikesh": [{"route": "德拉敦机场 (DED) → 瑜伽静修院", "costUsd": "$20", "costInr": "₹1,600"}, {"route": "德里机场 (DEL) → 瑜伽静修院", "costUsd": "$65", "costInr": "₹5,500"}, {"route": "哈里德瓦尔火车站 → 瑜伽静修院", "costUsd": "$15", "costInr": "₹1,200"}, {"route": "里希开诗火车站 (YNRK) → 瑜伽静修院", "costUsd": "$6", "costInr": "₹500"}],
+    "taxiFaresVarkala": [{"route": "特里凡得琅机场 (TRV) → 瓦尔卡拉瑜伽院", "costUsd": "$25", "costInr": "₹2,000"}, {"route": "科钦机场 (COK) → 瓦尔卡拉瑜伽院", "costUsd": "$65", "costInr": "₹5,500"}, {"route": "瓦尔卡拉火车站 (VAK) → 瑜伽院", "costUsd": "$3", "costInr": "₹250"}, {"route": "奎隆火车站 (QLN) → 瓦尔卡拉瑜伽院", "costUsd": "$15", "costInr": "₹1,200"}],
+    "openInMaps": "在Google地图中打开",
+    "syllabusBtn": "下载详细课程大纲",
+    "syllabusTitle": "下载课程大纲",
+    "syllabusDesc": "选择您的课程并输入电子邮箱，即可免费获取完整的详细教学大纲。",
+    "syllabusEmailPlaceholder": "您的电子邮箱",
+    "syllabusSend": "发送课程大纲",
+    "syllabusSending": "发送中...",
+    "syllabusPrompt": "想查看按小时细分的教学时间表和推荐阅读书单吗？"
   }
 };
 
@@ -1839,67 +2351,111 @@ export const FAQS_HEADER_UI: Record<string, FAQsHeaderUIData> = {
     "badge": "Got Questions?",
     "title": "Frequently Asked Questions",
     "subtitleRishikesh": "Everything you need to know about our {courseHours}-Hour Yoga Teacher Training in Tapovan, Rishikesh.",
-    "subtitleVarkala": "Everything you need to know about our {courseHours}-Hour Yoga Teacher Training in Varkala, Kerala."
+    "subtitleVarkala": "Everything you need to know about our {courseHours}-Hour Yoga Teacher Training in Varkala, Kerala.",
+    "chatWhatsApp": "WhatsApp 在线咨询",
+    "helpDeskTitleRishikesh": "对里希开诗课程仍有疑问？",
+    "helpDeskTitleVarkala": "对瓦尔卡拉课程仍有疑问？",
+    "helpDeskSub": "我们的咨询顾问全天候通过 WhatsApp 为您量身规划学习旅程。"
   },
   "nl": {
     "badge": "Vragen?",
     "title": "Veelgestelde Vragen",
     "subtitleRishikesh": "Alles wat je moet weten over onze {courseHours}-Uurs Yogadocentenopleiding in Tapovan, Rishikesh.",
-    "subtitleVarkala": "Alles wat je moet weten over onze {courseHours}-Uurs Yogadocentenopleiding in Varkala, Kerala."
+    "subtitleVarkala": "Alles wat je moet weten over onze {courseHours}-Uurs Yogadocentenopleiding in Varkala, Kerala.",
+    "chatWhatsApp": "Chat via WhatsApp",
+    "helpDeskTitleRishikesh": "Heb je nog vragen over Rishikesh?",
+    "helpDeskTitleVarkala": "Heb je nog vragen over Varkala?",
+    "helpDeskSub": "Ons toelatingsteam is 24/7 bereikbaar via WhatsApp om je reis te helpen plannen."
   },
   "de": {
     "badge": "Fragen?",
     "title": "Häufig Gestellte Fragen",
     "subtitleRishikesh": "Alles, was Sie über unsere {courseHours}-Stunden Yogalehrer-Ausbildung in Tapovan, Rishikesh, wissen müssen.",
-    "subtitleVarkala": "Alles, was Sie über unsere {courseHours}-Stunden Yogalehrer-Ausbildung in Varkala, Kerala, wissen müssen."
+    "subtitleVarkala": "Alles, was Sie über unsere {courseHours}-Stunden Yogalehrer-Ausbildung in Varkala, Kerala, wissen müssen.",
+    "chatWhatsApp": "Auf WhatsApp chatten",
+    "helpDeskTitleRishikesh": "Haben Sie noch Fragen zu Rishikesh?",
+    "helpDeskTitleVarkala": "Haben Sie noch Fragen zu Varkala?",
+    "helpDeskSub": "Unser Beratungsteam steht Ihnen rund um die Uhr auf WhatsApp bei der Reiseplanung zur Seite."
   },
   "fr": {
     "badge": "Des Questions ?",
     "title": "Foire Aux Questions",
     "subtitleRishikesh": "Tout ce que vous devez savoir sur notre formation de professeur de yoga de {courseHours} heures à Tapovan, Rishikesh.",
-    "subtitleVarkala": "Tout ce que vous devez savoir sur notre formation de professeur de yoga de {courseHours} heures à Varkala, Kerala."
+    "subtitleVarkala": "Tout ce que vous devez savoir sur notre formation de professeur de yoga de {courseHours} heures à Varkala, Kerala.",
+    "chatWhatsApp": "Discuter sur WhatsApp",
+    "helpDeskTitleRishikesh": "Une question concernant Rishikesh ?",
+    "helpDeskTitleVarkala": "Une question concernant Varkala ?",
+    "helpDeskSub": "Notre équipe d'admission est disponible 24h/24 et 7j/7 sur WhatsApp pour vous accompagner."
   },
   "es": {
     "badge": "¿Tienes Preguntas?",
     "title": "Preguntas Frecuentes",
     "subtitleRishikesh": "Todo lo que necesitas saber sobre nuestra formación de profesores de yoga de {courseHours} horas en Tapovan, Rishikesh.",
-    "subtitleVarkala": "Todo lo que necesitas saber sobre nuestra formación de profesores de yoga de {courseHours} horas en Varkala, Kerala."
+    "subtitleVarkala": "Todo lo que necesitas saber sobre nuestra formación de profesores de yoga de {courseHours} horas en Varkala, Kerala.",
+    "chatWhatsApp": "Chatear por WhatsApp",
+    "helpDeskTitleRishikesh": "¿Tienes dudas sobre Rishikesh?",
+    "helpDeskTitleVarkala": "¿Tienes dudas sobre Varkala?",
+    "helpDeskSub": "Nuestro equipo de admisiones está disponible las 24 horas en WhatsApp para resolver tus preguntas."
   },
   "it": {
     "badge": "Domande?",
     "title": "Domande Frequenti",
     "subtitleRishikesh": "Tutto quello che c'è da sapere sul nostro corso per insegnanti di yoga da {courseHours} ore a Tapovan, Rishikesh.",
-    "subtitleVarkala": "Tutto quello che c'è da sapere sul nostro corso per insegnanti di yoga da {courseHours} ore a Varkala, Kerala."
+    "subtitleVarkala": "Tutto quello che c'è da sapere sul nostro corso per insegnanti di yoga da {courseHours} ore a Varkala, Kerala.",
+    "chatWhatsApp": "Chatta su WhatsApp",
+    "helpDeskTitleRishikesh": "Hai ancora domande su Rishikesh?",
+    "helpDeskTitleVarkala": "Hai ancora domande su Varkala?",
+    "helpDeskSub": "Il nostro team è disponibile 24 ore su 24 su WhatsApp per aiutarti a organizzare il viaggio."
   },
   "ru": {
     "badge": "Остались вопросы?",
     "title": "Часто задаваемые вопросы",
     "subtitleRishikesh": "Всё, что вам необходимо знать о нашем курсе подготовки преподавателей йоги ({courseHours} часов) в Таповане, Ришикеш.",
-    "subtitleVarkala": "Всё, что вам необходимо знать о нашем курсе подготовки преподавателей йоги ({courseHours} часов) в Варкале, Керала."
+    "subtitleVarkala": "Всё, что вам необходимо знать о нашем курсе подготовки преподавателей йоги ({courseHours} часов) в Варкале, Керала.",
+    "chatWhatsApp": "Чат в WhatsApp",
+    "helpDeskTitleRishikesh": "Остались вопросы о курсе в Ришикеше?",
+    "helpDeskTitleVarkala": "Остались вопросы о курсе в Варкале?",
+    "helpDeskSub": "Наша команда всегда на связи в WhatsApp, чтобы помочь вам спланировать вашу поездку."
   },
   "id": {
     "badge": "Punya Pertanyaan?",
     "title": "Pertanyaan yang Sering Diajukan",
     "subtitleRishikesh": "Semua hal yang perlu Anda ketahui tentang Pelatihan Guru Yoga {courseHours} Jam kami di Tapovan, Rishikesh.",
-    "subtitleVarkala": "Semua hal yang perlu Anda ketahui tentang Pelatihan Guru Yoga {courseHours} Jam kami di Varkala, Kerala."
+    "subtitleVarkala": "Semua hal yang perlu Anda ketahui tentang Pelatihan Guru Yoga {courseHours} Jam kami di Varkala, Kerala.",
+    "chatWhatsApp": "Hubungi via WhatsApp",
+    "helpDeskTitleRishikesh": "Masih ada pertanyaan tentang Rishikesh?",
+    "helpDeskTitleVarkala": "Masih ada pertanyaan tentang Varkala?",
+    "helpDeskSub": "Tim kami siap membantu Anda 24/7 di WhatsApp untuk merencanakan perjalanan Anda."
   },
   "ja": {
     "badge": "よくあるご質問",
     "title": "よくあるご質問（FAQ）",
     "subtitleRishikesh": "リシケシ・タポヴァンで開催される{courseHours}時間ヨガ指導者養成コースに関するすべてのご案内です。",
-    "subtitleVarkala": "ケララ州バルカラで開催される{courseHours}時間ヨガ指導者養成コースに関するすべてのご案内です。"
+    "subtitleVarkala": "ケララ州バルカラで開催される{courseHours}時間ヨガ指導者養成コースに関するすべてのご案内です。",
+    "chatWhatsApp": "WhatsAppで質問する",
+    "helpDeskTitleRishikesh": "リシケシ校についてご不明な点はありますか？",
+    "helpDeskTitleVarkala": "ヴァルカラ校についてご不明な点はありますか？",
+    "helpDeskSub": "渡航前の準備やご相談は、アドミッションチームがWhatsAppで24時間受け付けています。"
   },
   "ko": {
     "badge": "궁금한 점이 있으신가요?",
     "title": "자주 묻는 질문",
     "subtitleRishikesh": "리시케시 타포반에서 진행되는 {courseHours}시간 요가 지도자 과정에 대해 알아야 할 모든 것.",
-    "subtitleVarkala": "케랄라 바르칼라에서 진행되는 {courseHours}시간 요가 지도자 과정에 대해 알아야 할 모든 것."
+    "subtitleVarkala": "케랄라 바르칼라에서 진행되는 {courseHours}시간 요가 지도자 과정에 대해 알아야 할 모든 것.",
+    "chatWhatsApp": "WhatsApp 실시간 상담",
+    "helpDeskTitleRishikesh": "리시케시 과정에 대해 더 궁금한 점이 있으신가요?",
+    "helpDeskTitleVarkala": "바르칼라 과정에 대해 더 궁금한 점이 있으신가요?",
+    "helpDeskSub": "입학 상담팀이 24시간 언제나 여정 계획을 친절히 도와드립니다."
   },
   "zh": {
     "badge": "常见疑问",
     "title": "常见问题解答",
     "subtitleRishikesh": "关于我们在瑞诗凯诗塔波万举办的{courseHours}小时瑜伽教师培训课程所需了解的一切。",
-    "subtitleVarkala": "关于我们在喀拉拉瓦尔卡拉举办的{courseHours}小时瑜伽教师培训课程所需了解的一切。"
+    "subtitleVarkala": "关于我们在喀拉拉瓦尔卡拉举办的{courseHours}小时瑜伽教师培训课程所需了解的一切。",
+    "chatWhatsApp": "通过 WhatsApp 咨询",
+    "helpDeskTitleRishikesh": "关于瑞诗凯诗课程仍有疑问？",
+    "helpDeskTitleVarkala": "关于瓦尔卡拉课程仍有疑问？",
+    "helpDeskSub": "我们的招生咨询团队全天候在WhatsApp在线，随时协助您规划求学之旅。"
   }
 };
 

@@ -19,6 +19,9 @@ export default function CompareCoursesTable({ locale }: CompareCoursesTableProps
 
   const isEn = !activeLocale || activeLocale === "en";
   const ui = (isEn ? null : COMPARE_COURSES_UI[activeLocale || "en"]) || COMPARE_COURSES_UI.en;
+  const rows = (!isEn && ui.rowsRishikesh && ui.rowsRishikesh.length > 0)
+    ? ui.rowsRishikesh
+    : COMPARE_COURSES_DATA.slice(0, -1);
 
   const getFeatureLabel = (feature: string) => {
     switch (feature) {
@@ -84,9 +87,9 @@ export default function CompareCoursesTable({ locale }: CompareCoursesTableProps
                 </tr>
               </thead>
               <tbody className="divide-y divide-border/60 text-sm">
-                {COMPARE_COURSES_DATA.slice(0, -1).map((row, idx) => (
+                {rows.map((row, idx) => (
                   <tr key={idx} className="hover:bg-muted/30 transition-colors">
-                    <td className="py-4 px-6 font-bold text-foreground">{getFeatureLabel(row.feature)}</td>
+                    <td className="py-4 px-6 font-bold text-foreground">{getFeatureLabel(row.feature || COMPARE_COURSES_DATA[idx]?.feature || "")}</td>
                     <td className="py-4 px-6 text-center text-muted-foreground">{row.c100}</td>
                     <td className="py-4 px-6 text-center font-bold text-foreground bg-primary/5 border-x border-primary/20">
                       {row.c200}
@@ -142,19 +145,19 @@ export default function CompareCoursesTable({ locale }: CompareCoursesTableProps
               <ul className="space-y-2 text-sm text-muted-foreground mb-6">
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_duration}: 12 Days (11 Nights)</span>
+                  <span>{ui.f_duration}: {rows[0]?.c100 || "12 Days (11 Nights)"}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_level}: Beginner & Personal Immersion</span>
+                  <span>{ui.f_level}: {rows[1]?.c100 || "Beginner & Personal Immersion"}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_cert}: YogaGarhi Foundation</span>
+                  <span>{ui.f_cert}: {rows[3]?.c100 || "YogaGarhi Foundation"}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_batch}: 8–10 Students Max</span>
+                  <span>{ui.f_batch}: {rows[5]?.c100 || "8–10 Students Max"}</span>
                 </li>
               </ul>
               <Link
@@ -179,19 +182,19 @@ export default function CompareCoursesTable({ locale }: CompareCoursesTableProps
               <ul className="space-y-2 text-sm text-foreground/90 mb-6">
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_duration}: 28 Days (27 Nights)</span>
+                  <span>{ui.f_duration}: {rows[0]?.c200 || "28 Days (27 Nights)"}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_level}: All Levels (Beginner to Intermediate)</span>
+                  <span>{ui.f_level}: {rows[1]?.c200 || "All Levels (Beginner to Intermediate)"}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_cert}: Yoga Alliance RYT 200</span>
+                  <span>{ui.f_cert}: {rows[3]?.c200 || "Yoga Alliance RYT 200"}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_batch}: 8–10 Students Max</span>
+                  <span>{ui.f_batch}: {rows[5]?.c100 || "8–10 Students Max"}</span>
                 </li>
               </ul>
               <Link
@@ -213,11 +216,11 @@ export default function CompareCoursesTable({ locale }: CompareCoursesTableProps
               <ul className="space-y-2 text-sm text-muted-foreground mb-6">
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_duration}: 28 Days (27 Nights)</span>
+                  <span>{ui.f_duration}: {rows[0]?.c200 || "28 Days (27 Nights)"}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_level}: Intermediate to Advanced</span>
+                  <span>{ui.f_level}: {rows[1]?.c300 || "Intermediate to Advanced"}</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />

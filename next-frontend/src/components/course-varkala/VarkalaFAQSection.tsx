@@ -94,7 +94,7 @@ export default function VarkalaFAQSection({ courseHours = "200", locale }: Varka
           <div className="mt-12 p-6 rounded-2xl bg-secondary/40 border border-border/80 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-left">
               <h4 className="font-heading text-base font-bold text-foreground">
-                Still have a question about Varkala?
+                {ui.helpDeskTitleVarkala || "Still have a question about Varkala?"}
               </h4>
               <p className="text-xs md:text-sm text-muted-foreground">
                 Our admissions team is available 24/7 on WhatsApp to help you plan your coastal training.
@@ -107,7 +107,7 @@ export default function VarkalaFAQSection({ courseHours = "200", locale }: Varka
               className="shrink-0 px-6 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white text-sm font-bold rounded-xl shadow-md flex items-center gap-2 transition-all hover:scale-105"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>Chat on WhatsApp</span>
+              <span>{ui.chatWhatsApp || "Chat on WhatsApp"}</span>
             </a>
           </div>
         </div>

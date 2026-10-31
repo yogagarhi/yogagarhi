@@ -18,6 +18,9 @@ export default function BestTimeToVisitRishikeshSection({ locale }: BestTimeToVi
 
   const isEn = !activeLocale || activeLocale === "en";
   const ui = (isEn ? null : BEST_TIME_TO_VISIT_UI[activeLocale || "en"]) || BEST_TIME_TO_VISIT_UI.en;
+  const seasons = (!isEn && ui.seasonsRishikesh && ui.seasonsRishikesh.length > 0)
+    ? ui.seasonsRishikesh.map((s, idx) => ({ ...RISHIKESH_SEASONS[idx], ...s }))
+    : RISHIKESH_SEASONS;
 
   return (
     <section className="py-20 bg-background relative overflow-hidden" id="best-time-to-visit" style={{ contentVisibility: "auto", containIntrinsicSize: "600px" }}>
@@ -40,7 +43,7 @@ export default function BestTimeToVisitRishikeshSection({ locale }: BestTimeToVi
 
           {/* 3 Season Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {RISHIKESH_SEASONS.map((season, idx) => (
+            {seasons.map((season, idx) => (
               <div
                 key={idx}
                 className="bg-card rounded-2xl p-6 border border-border/80 shadow-md hover:shadow-lg transition-all flex flex-col justify-between"

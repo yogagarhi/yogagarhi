@@ -19,6 +19,10 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
 
   const isEn = !activeLocale || activeLocale === "en";
   const ui = (isEn ? null : HOW_TO_REACH_UI[activeLocale || "en"]) || HOW_TO_REACH_UI.en;
+  const airItems = (!isEn && ui.airItemsVarkala && ui.airItemsVarkala.length > 0) ? ui.airItemsVarkala : VARKALA_HOW_TO_REACH_INFO.air;
+  const trainItems = (!isEn && ui.trainItemsVarkala && ui.trainItemsVarkala.length > 0) ? ui.trainItemsVarkala : VARKALA_HOW_TO_REACH_INFO.train;
+  const roadItems = (!isEn && ui.roadItemsVarkala && ui.roadItemsVarkala.length > 0) ? ui.roadItemsVarkala : VARKALA_HOW_TO_REACH_INFO.road;
+  const taxiFares = (!isEn && ui.taxiFaresVarkala && ui.taxiFaresVarkala.length > 0) ? ui.taxiFaresVarkala : VARKALA_HOW_TO_REACH_INFO.taxiFares;
 
   return (
     <section className="py-20 bg-secondary/30 relative overflow-hidden" id="how-to-reach" style={{ contentVisibility: "auto", containIntrinsicSize: "1100px" }}>
@@ -83,7 +87,7 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
           {/* Dynamic Tab Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {activeTab === "air" &&
-              VARKALA_HOW_TO_REACH_INFO.air.map((item, idx) => (
+              airItems.map((item, idx) => (
                 <div
                   key={idx}
                   className="bg-card rounded-2xl p-6 border border-border/80 shadow-md flex flex-col justify-between"
@@ -106,7 +110,7 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
               ))}
 
             {activeTab === "train" &&
-              VARKALA_HOW_TO_REACH_INFO.train.map((item, idx) => (
+              trainItems.map((item, idx) => (
                 <div
                   key={idx}
                   className="bg-card rounded-2xl p-6 border border-border/80 shadow-md flex flex-col justify-between"
@@ -129,7 +133,7 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
               ))}
 
             {activeTab === "road" &&
-              VARKALA_HOW_TO_REACH_INFO.road.map((item, idx) => (
+              roadItems.map((item, idx) => (
                 <div
                   key={idx}
                   className="bg-card rounded-2xl p-6 border border-border/80 shadow-md flex flex-col justify-between"
@@ -160,7 +164,7 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
               </div>
               <div>
                 <h3 className="font-heading text-lg md:text-xl font-bold text-foreground">
-                  Estimated Taxi Fares to YogaGarhi Varkala
+                  {ui.taxiTitleVarkala || "Estimated Taxi Fares to YogaGarhi Varkala"}
                 </h3>
                 <p className="text-xs text-muted-foreground">Standard pre-negotiated driver rates direct to our coastal ashram gates</p>
               </div>
@@ -170,13 +174,13 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
               <table className="w-full text-left text-sm border-collapse">
                 <thead>
                   <tr className="border-b border-border/80 text-muted-foreground text-xs uppercase tracking-wider">
-                    <th className="py-3 px-4 font-bold">Transit Route</th>
-                    <th className="py-3 px-4 font-bold">Approx. Cost (USD)</th>
-                    <th className="py-3 px-4 font-bold">Approx. Cost (INR)</th>
+                    <th className="py-3 px-4 font-bold">{ui.thRoute || "Transit Route"}</th>
+                    <th className="py-3 px-4 font-bold">{ui.thCostUsd || "Approx. Cost (USD)"}</th>
+                    <th className="py-3 px-4 font-bold">{ui.thCostInr || "Approx. Cost (INR)"}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border/60">
-                  {VARKALA_HOW_TO_REACH_INFO.taxiFares.map((fare, idx) => (
+                  {taxiFares.map((fare, idx) => (
                     <tr key={idx} className="hover:bg-muted/40 transition-colors">
                       <td className="py-3.5 px-4 font-semibold text-foreground flex items-center gap-2">
                         <Check className="w-4 h-4 text-primary shrink-0" />
@@ -195,7 +199,7 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
               <div className="flex items-start gap-3">
                 <PhoneCall className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-xs sm:text-sm text-foreground/90">
-                  <strong>We Arrange Airport Pickup:</strong> Share your flight schedule with our admissions team, and our trusted driver will await you at Trivandrum (TRV) or Cochin (COK) arrivals with a personalized name card.
+                  <strong>{ui.pickupStrong || "We Arrange Airport Pickup:"}</strong> {ui.pickupTextVarkala || "Share your flight schedule with our admissions team, and our trusted driver will await you at Trivandrum (TRV) or Cochin (COK) arrivals with a personalized name card."}
                 </p>
               </div>
               <a
@@ -204,7 +208,7 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
                 rel="noopener noreferrer"
                 className="shrink-0 px-4 py-2 bg-primary text-primary-foreground text-xs font-bold rounded-lg shadow-sm hover:opacity-90 transition-opacity flex items-center gap-1.5"
               >
-                <span>Request Pickup</span>
+                <span>{ui.pickupBtn || "Request Pickup"}</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -218,7 +222,7 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
               </div>
               <div>
                 <h3 className="font-heading text-lg md:text-xl font-bold text-foreground">
-                  India Visa & Arrival Advice for International Students
+                  {ui.visaTitle || "India Visa & Arrival Advice for International Students"}
                 </h3>
                 <p className="text-xs text-muted-foreground">Essential travel tips for a smooth arrival in Kerala, India</p>
               </div>
@@ -228,22 +232,22 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
               <div className="space-y-2">
                 <p className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  <span><strong>Indian e-Tourist Visa:</strong> Citizens of over 160 nations can easily apply online for an Indian e-Visa prior to departure via the official Government of India portal.</span>
+                  <span><strong>{ui.visaB1Title || "Indian e-Tourist Visa:"}</strong> {ui.visaB1Text || "Citizens of over 160 nations can easily apply online for an Indian e-Visa prior to departure via the official Government of India portal."}</span>
                 </p>
                 <p className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  <span><strong>Validity:</strong> We suggest applying for a 30-day or 1-year multiple-entry e-Tourist visa approximately 2 to 3 weeks before your travel date.</span>
+                  <span><strong>{ui.visaB2Title || "Validity:"}</strong> {ui.visaB2Text || "We suggest applying for a 30-day or 1-year multiple-entry e-Tourist visa approximately 2 to 3 weeks before your travel date."}</span>
                 </p>
               </div>
 
               <div className="space-y-2">
                 <p className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  <span><strong>Currency & Connectivity:</strong> ATMs and money exchange are widely available in Varkala town. High-speed Wi-Fi is provided at our ashram, and local 5G eSIMs/SIM cards are easily activated.</span>
+                  <span><strong>{ui.visaB3Title || "Currency & Connectivity:"}</strong> {ui.visaB3Text || "ATMs and money exchange are widely available in Varkala town. High-speed Wi-Fi is provided at our ashram, and local 5G eSIMs/SIM cards are easily activated."}</span>
                 </p>
                 <p className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  <span><strong>Check-in Timing:</strong> Official check-in begins at 12:00 PM on the 1st of every month, followed by an evening welcome circle and coastal sunset meditation.</span>
+                  <span><strong>{ui.visaB4Title || "Check-in Timing:"}</strong> {ui.visaB4Text || "Official check-in begins at 12:00 PM on the 1st of every month, followed by an evening welcome circle and coastal sunset meditation."}</span>
                 </p>
               </div>
             </div>
@@ -262,7 +266,7 @@ export default function HowToReachVarkalaSection({ locale }: HowToReachVarkalaSe
                 rel="noopener noreferrer"
                 className="text-xs text-primary font-semibold flex items-center gap-1 hover:underline"
               >
-                <span>Open in Google Maps</span>
+                <span>{ui.openInMaps || "Open in Google Maps"}</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
             </div>
