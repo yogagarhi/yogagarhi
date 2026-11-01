@@ -1,5 +1,6 @@
 "use client";
 import { HOW_TO_REACH_UI } from "@/constants/courseSectionsTranslations";
+import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useTranslations, useLocale } from "next-intl";
@@ -95,7 +96,6 @@ const insta5 = getCloudinaryImage("insta-5.jpg");
 const yogaAllianceBg = getCloudinaryImage("yoga-alliance-graduates-hd.jpg");
 const healthyMeals = getCloudinaryImage("healthy-meals.jpg");
 const yaRyt200 = getCloudinaryImage("ya-ryt-200.png");
-const yaRys100 = getCloudinaryImage("ya-rys-100.png");
 const yaRys200 = getCloudinaryImage("ya-rys-200.jpg");
 const yaAllCertifications = getCloudinaryImage("ya-all-certifications.jpg");
 
@@ -392,7 +392,7 @@ const whatYouWillReceive = [
   },
   {
     title: "Peaceful Bali Surroundings",
-    description: "Experience yoga in the lap of nature. Calm beaches and greenery deepen your practice.",
+    description: "Experience yoga in the lap of nature. Lush rice fields and serene greenery deepen your practice.",
     icon: Mountain,
     image: apartBaliSurroundings
   },
@@ -1218,6 +1218,11 @@ export default function CoursePageTemplate({
           {/* Content */}
           <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
             <div className="max-w-4xl mx-auto flex flex-col items-center">
+              {(isRishikesh || isVarkala) && (
+                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/90 text-white text-sm font-bold tracking-wide uppercase mb-4 shadow-md">
+                  ✦ {isRishikesh ? "First Batch: March 2027" : "First Batch: July 2027"}
+                </div>
+              )}
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tight opacity-0 animate-fade-in text-white leading-tight mb-8" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
                 {t("hero.h1")}
               </h1>
@@ -1321,7 +1326,7 @@ export default function CoursePageTemplate({
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.startingFrom")}</p>
                     <div className="flex flex-col items-center lg:items-start min-w-0">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start flex-wrap">
-                        <span className="text-base text-muted-foreground line-through opacity-60">{startingPrice.originalPrice}</span>
+                        {SHOW_COMPARE_PRICE && (<span className="text-base text-muted-foreground line-through opacity-60">{startingPrice.originalPrice}</span>)}
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
                             {startingPrice.price}
@@ -1329,10 +1334,10 @@ export default function CoursePageTemplate({
                           <div className="absolute -inset-1 bg-primary/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
                         </div>
                       </div>
-                      <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform max-w-full break-words">
+                      {SHOW_COMPARE_PRICE && (<div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform max-w-full break-words">
                         <Zap className="w-3.5 h-3.5 fill-current shrink-0" />
                         <span>{t("quickInfo.earlyBirdDiscount")}</span>
-                      </div>
+                      </div>)}
                     </div>
                   </div>
 
@@ -1662,7 +1667,8 @@ export default function CoursePageTemplate({
             </p>
 
             {/* Horizontal Scrollable Cards */}
-            <div className="relative">
+            {courseKey.includes("200") && (
+              <div className="relative">
               <div tabIndex={0} role="region" aria-label="Course schedule and activities" className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 focus:outline-none">
                 {[
                   syllabusAshtanga,
@@ -1714,6 +1720,7 @@ export default function CoursePageTemplate({
                 })}
               </div>
             </div>
+            )}
 
             {/* Expandable Detailed Syllabus (Semantic HTML) */}
             {syllabusSlot}
@@ -2164,7 +2171,7 @@ export default function CoursePageTemplate({
                           {/* Early Bird */}
                           <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
                             <p className="font-heading font-bold text-foreground text-sm">{t("pricing.earlyBirdPrice")}</p>
-                            <p className="text-primary text-sm font-medium">{tCommon("save")} {item.earlyBirdSaving}</p>
+                            {SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">{tCommon("save")} {item.earlyBirdSaving}</p>)}
                           </div>
 
                           {/* Book Button */}
@@ -2222,10 +2229,10 @@ export default function CoursePageTemplate({
                           <p className="font-heading text-2xl font-bold text-foreground">
                             {datesPricing.tuition.price}
                           </p>
-                          <p className="text-muted-foreground text-sm">
-                            <span className="line-through">{datesPricing.tuition.originalPrice}</span>
+                          {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                            {SHOW_COMPARE_PRICE && (<span className="line-through">{datesPricing.tuition.originalPrice}</span>)}
                             <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                          </p>
+                          </p>)}
                         </div>
                       )}
 
@@ -2236,10 +2243,10 @@ export default function CoursePageTemplate({
                           <p className="font-heading text-2xl font-bold text-foreground">
                             {datesPricing.triple.price}
                           </p>
-                          <p className="text-muted-foreground text-sm">
-                            <span className="line-through">{datesPricing.triple.originalPrice}</span>
+                          {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                            {SHOW_COMPARE_PRICE && (<span className="line-through">{datesPricing.triple.originalPrice}</span>)}
                             <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                          </p>
+                          </p>)}
                         </div>
                       )}
 
@@ -2250,10 +2257,10 @@ export default function CoursePageTemplate({
                           <p className="font-heading text-2xl font-bold text-foreground">
                             {datesPricing.double.price}
                           </p>
-                          <p className="text-muted-foreground text-sm">
-                            <span className="line-through">{datesPricing.double.originalPrice}</span>
+                          {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                            {SHOW_COMPARE_PRICE && (<span className="line-through">{datesPricing.double.originalPrice}</span>)}
                             <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                          </p>
+                          </p>)}
                         </div>
                       )}
 
@@ -2264,10 +2271,10 @@ export default function CoursePageTemplate({
                           <p className="font-heading text-2xl font-bold text-foreground">
                             {datesPricing.private.price}
                           </p>
-                          <p className="text-muted-foreground text-sm">
-                            <span className="line-through">{datesPricing.private.originalPrice}</span>
+                          {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                            {SHOW_COMPARE_PRICE && (<span className="line-through">{datesPricing.private.originalPrice}</span>)}
                             <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                          </p>
+                          </p>)}
                         </div>
                       )}
 
@@ -2573,7 +2580,22 @@ export default function CoursePageTemplate({
           </div>
         </section>
 
-        {/* ===== ACCOMMODATION ===== */}
+        
+        {(isRishikesh || isVarkala) ? (
+          <section className="py-20 bg-secondary/30 border-t border-border/50">
+            <div className="container mx-auto px-4 text-center">
+              <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
+                Accommodation & Campus
+              </h2>
+              <p className="font-heading text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                Accommodation and venue details will be shared soon.
+              </p>
+            </div>
+          </section>
+        ) : (
+          <>
+            {/* ===== ACCOMMODATION ===== */}
+            
         {/* Hero Banner with Background */}
         <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
           {/* Background Image */}
@@ -2782,6 +2804,9 @@ export default function CoursePageTemplate({
 
 
 
+        
+          </>
+        )}
         {/* ===== SATTVIC FOOD ===== */}
         <section className="py-20 bg-secondary/20 relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 3346px" }}>
           {/* Decorative Background */}
@@ -3130,7 +3155,7 @@ export default function CoursePageTemplate({
             <div className="max-w-4xl mx-auto text-center">
               {/* Subtitle */}
               <p className="text-white/90 text-lg mb-2 font-medium">
-                "YOGAGARHI – 200 Hour YTTC"
+                {courseKey.includes("100") ? "\"YOGAGARHI – 100 Hour YTTC\"" : courseKey.includes("300") ? "\"YOGAGARHI – 300 Hour YTTC\"" : "\"YOGAGARHI – 200 Hour YTTC\""}
               </p>
 
               {/* Main Title */}
@@ -3143,7 +3168,7 @@ export default function CoursePageTemplate({
                 Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
                 you will receive an internationally recognized certification, allowing you to become a
                 <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                This certification opens doors for you to teach yoga anywhere in the world.
+                {courseKey.includes("300") ? "Combined with an RYT 200 and at least 100 hours of teaching experience, this training lets you register as an RYT 500 with Yoga Alliance." : "This certification opens doors for you to teach yoga anywhere in the world."}
               </p>
 
               {/* RYS vs RYT Explanation */}
@@ -3183,7 +3208,6 @@ export default function CoursePageTemplate({
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <Image src={yaRys100} alt="RYS 100" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <Image src={yaRyt200} alt="RYT 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
               </div>
@@ -3282,8 +3306,15 @@ export default function CoursePageTemplate({
                 <span className="font-heading text-xl font-semibold text-foreground">Google Reviews</span>
               </div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                {t("ethicsExtra.reviewsHeading")}
+                {(isRishikesh || isVarkala) ? "What Our Bali Graduates Say" : t("ethicsExtra.reviewsHeading")}
               </h2>
+              {(isRishikesh || isVarkala) && (
+                <p className="text-base text-muted-foreground max-w-2xl mx-auto mb-6">
+                  {isRishikesh
+                    ? "Our Rishikesh campus opens in March 2027. These reviews are from students who trained with the same founder, Yogacharya Sachin, and the same teaching method at our Bali school."
+                    : "Our Varkala campus opens in July 2027. These reviews are from students who trained with the same founder, Yogacharya Sachin, and the same teaching method at our Bali school."}
+                </p>
+              )}
 
               {/* Overall Rating */}
               <div className="flex items-center justify-center gap-4 mb-2">

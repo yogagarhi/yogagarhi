@@ -37,6 +37,7 @@ import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
 import { RETREAT_EXTRA_UI } from "@/constants/courseSectionsTranslations";
+import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 
 interface RetreatDetailProps {
   retreat: RetreatPackage;
@@ -242,30 +243,32 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
       />
 
       {/* Top Special Offer Announcement Bar (Bali Yoga School Style) */}
-      <aside aria-label="Special Offer" className="bg-[#460e40] text-white py-2.5 px-4 text-center text-xs md:text-sm font-medium tracking-wide">
-        <div className="container mx-auto flex items-center justify-center gap-3 flex-wrap">
-          <span className="bg-amber-400 text-stone-900 text-[11px] font-bold px-2 py-0.5 rounded-full uppercase">
-            {isEn ? "Limited Time Offer" : (messages?.limitedOfferBadge || "Limited Time Offer")}
-          </span>
-          <span>
-            {isEn ? (
-              <>Save up to <strong>${retreat.earlyBirdSaving} USD</strong> on all upcoming {retreat.locationName} retreat dates!</>
-            ) : (
-              messages?.limitedOfferText
-                ? messages.limitedOfferText.replace(/(\$?[0-9,]+\s*(USD|米ドル|美元)?)/i, `$${retreat.earlyBirdSaving} USD`)
-                : `Save up to $${retreat.earlyBirdSaving} USD on all upcoming dates!`
-            )}
-          </span>
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 font-semibold text-amber-300 hover:text-white underline underline-offset-2 transition-colors ml-1"
-          >
-            {isEn ? "WhatsApp for Quick Booking →" : (messages?.whatsappNow || "WhatsApp for Quick Booking →")}
-          </a>
-        </div>
-      </aside>
+      {SHOW_COMPARE_PRICE && (
+        <aside aria-label="Special Offer" className="bg-[#460e40] text-white py-2.5 px-4 text-center text-xs md:text-sm font-medium tracking-wide">
+          <div className="container mx-auto flex items-center justify-center gap-3 flex-wrap">
+            <span className="bg-amber-400 text-stone-900 text-[11px] font-bold px-2 py-0.5 rounded-full uppercase">
+              {isEn ? "Limited Time Offer" : (messages?.limitedOfferBadge || "Limited Time Offer")}
+            </span>
+            <span>
+              {isEn ? (
+                <>Save up to <strong>${retreat.earlyBirdSaving} USD</strong> on all upcoming {retreat.locationName} retreat dates!</>
+              ) : (
+                messages?.limitedOfferText
+                  ? messages.limitedOfferText.replace(/(\$?[0-9,]+\s*(USD|米ドル|美元)?)/i, `$${retreat.earlyBirdSaving} USD`)
+                  : `Save up to $${retreat.earlyBirdSaving} USD on all upcoming dates!`
+              )}
+            </span>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 font-semibold text-amber-300 hover:text-white underline underline-offset-2 transition-colors ml-1"
+            >
+              {isEn ? "WhatsApp for Quick Booking →" : (messages?.whatsappNow || "WhatsApp for Quick Booking →")}
+            </a>
+          </div>
+        </aside>
+      )}
 
       {/* ========================================================
           HERO & HEADER (Bali Yoga School Style)
@@ -300,7 +303,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           {/* Subtitle Badge */}
           <div className="flex flex-wrap items-center gap-2.5 mb-4">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-amber-100/80 border border-amber-300/60 text-amber-900 text-xs font-bold uppercase tracking-wider">
-              ✦ {isBali ? "AUTHENTIC YOGIC JOURNEY IN UBUD, BALI" : retreat.badge}
+              ✦ {isBali ? "AUTHENTIC YOGIC JOURNEY NEAR UBUD, BALI" : (retreat.locationKey === "rishikesh" ? "First Batch: March 2027" : (retreat.locationKey === "varkala" ? "First Batch: July 2027" : retreat.badge))}
             </span>
             <span className="inline-flex items-center gap-1 px-3 py-1 rounded-md bg-stone-200/60 text-stone-700 text-xs font-medium">
               <MapPin className="w-3.5 h-3.5 text-amber-700" />
@@ -357,7 +360,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               className="bg-amber-800 hover:bg-amber-900 text-white font-bold px-7 py-6 text-sm sm:text-base rounded-xl shadow-md transition-transform active:scale-95"
               onClick={() => setShowEnrollDialog(true)}
             >
-              {isEn ? "Book Your Retreat Now" : (messages?.bookNow || "Book Your Retreat Now")}
+              {(retreat.locationKey === "rishikesh" || retreat.locationKey === "varkala") ? "Reserve Your Seat" : (isEn ? "Book Your Retreat Now" : (messages?.bookNow || "Book Your Retreat Now"))}
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
             <a
@@ -898,60 +901,70 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           <section id="accommodation" className="max-w-4xl">
             <div className="mb-6">
               <span className="text-xs uppercase font-bold tracking-widest text-amber-800">
-                Peaceful Sanctuary
+                {isBali ? "Peaceful Sanctuary" : "Accommodation & Campus"}
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
-                {retreat.accommodation.title}
+                {isBali ? retreat.accommodation.title : "Accommodation & Campus Details"}
               </h2>
             </div>
 
-            <p className="text-stone-700 text-base sm:text-lg leading-relaxed mb-8">
-              {retreat.accommodation.description}
-            </p>
-
-            {/* Campus Highlights Grid */}
-            <div className="grid sm:grid-cols-2 gap-6 mb-8">
-              <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm">
-                <div className="text-xs font-bold uppercase text-amber-800 tracking-wider mb-1">Campus-I</div>
-                <h3 className="font-heading font-bold text-lg text-amber-950 mb-2">Deluxe Garden Sanctuary</h3>
-                <p className="text-xs sm:text-sm text-stone-600 mb-4">
-                  Traditional Balinese stone villas nestled amongst lush tropical frangipani and palm gardens. Features private balconies and serene open-air bamboo shalas.
+            {!isBali ? (
+              <div className="p-8 rounded-2xl bg-[#FAF6F0] border border-amber-900/10 text-center">
+                <p className="font-heading text-lg sm:text-xl text-stone-700 leading-relaxed">
+                  Accommodation and venue details will be shared soon.
                 </p>
-                <div className="text-xs font-semibold text-stone-700 space-y-1">
-                  <div>✓ King Bed or Twin Bed options</div>
-                  <div>✓ Semi-open Balinese hot shower bath</div>
-                  <div>✓ Peaceful jungle view patio</div>
-                </div>
               </div>
-
-              <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm">
-                <div className="text-xs font-bold uppercase text-amber-800 tracking-wider mb-1">Campus-II</div>
-                <h3 className="font-heading font-bold text-lg text-amber-950 mb-2">New Luxury Pool Campus</h3>
-                <p className="text-xs sm:text-sm text-stone-600 mb-4">
-                  Brand new boutique rooms situated right along our sparkling swimming pool with contemporary teakwood styling, sun loungers, and high-speed Wi-Fi.
+            ) : (
+              <>
+                <p className="text-stone-700 text-base sm:text-lg leading-relaxed mb-8">
+                  {retreat.accommodation.description}
                 </p>
-                <div className="text-xs font-semibold text-stone-700 space-y-1">
-                  <div>✓ Direct swimming pool steps</div>
-                  <div>✓ Modern rainfall shower suite</div>
-                  <div>✓ Private sun deck and lounger area</div>
-                </div>
-              </div>
-            </div>
 
-            {/* Amenities Badges */}
-            <div className="p-6 rounded-2xl bg-[#FAF6F0] border border-amber-900/10">
-              <h3 className="font-bold text-sm uppercase text-amber-950 tracking-wider mb-4">
-                Campus Amenities & Facilities
-              </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs sm:text-sm font-medium text-stone-700">
-                <span className="flex items-center gap-2">🏊 Swimming Pool (10 AM - 8 PM)</span>
-                <span className="flex items-center gap-2">❄️ Silent Air Conditioning</span>
-                <span className="flex items-center gap-2">📶 High-Speed Campus Wi-Fi</span>
-                <span className="flex items-center gap-2">🧘 Bamboo Open-Air Yoga Shala</span>
-                <span className="flex items-center gap-2">🚿 Hot Rainfall Showers</span>
-                <span className="flex items-center gap-2">🧹 Daily Housekeeping Service</span>
-              </div>
-            </div>
+                {/* Campus Highlights Grid */}
+                <div className="grid sm:grid-cols-2 gap-6 mb-8">
+                  <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm">
+                    <div className="text-xs font-bold uppercase text-amber-800 tracking-wider mb-1">Campus-I</div>
+                    <h3 className="font-heading font-bold text-lg text-amber-950 mb-2">Deluxe Garden Sanctuary</h3>
+                    <p className="text-xs sm:text-sm text-stone-600 mb-4">
+                      Traditional Balinese stone villas nestled amongst lush tropical frangipani and palm gardens. Features private balconies and serene open-air bamboo shalas.
+                    </p>
+                    <div className="text-xs font-semibold text-stone-700 space-y-1">
+                      <div>✓ King Bed or Twin Bed options</div>
+                      <div>✓ Semi-open Balinese hot shower bath</div>
+                      <div>✓ Peaceful jungle view patio</div>
+                    </div>
+                  </div>
+
+                  <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm">
+                    <div className="text-xs font-bold uppercase text-amber-800 tracking-wider mb-1">Campus-II</div>
+                    <h3 className="font-heading font-bold text-lg text-amber-950 mb-2">New Luxury Pool Campus</h3>
+                    <p className="text-xs sm:text-sm text-stone-600 mb-4">
+                      Brand new boutique rooms situated right along our sparkling swimming pool with contemporary teakwood styling, sun loungers, and high-speed Wi-Fi.
+                    </p>
+                    <div className="text-xs font-semibold text-stone-700 space-y-1">
+                      <div>✓ Direct swimming pool steps</div>
+                      <div>✓ Modern rainfall shower suite</div>
+                      <div>✓ Private sun deck and lounger area</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Amenities Badges */}
+                <div className="p-6 rounded-2xl bg-[#FAF6F0] border border-amber-900/10">
+                  <h3 className="font-bold text-sm uppercase text-amber-950 tracking-wider mb-4">
+                    Campus Amenities & Facilities
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs sm:text-sm font-medium text-stone-700">
+                    <span className="flex items-center gap-2">🏊 Swimming Pool (10 AM - 8 PM)</span>
+                    <span className="flex items-center gap-2">❄️ Silent Air Conditioning</span>
+                    <span className="flex items-center gap-2">📶 High-Speed Campus Wi-Fi</span>
+                    <span className="flex items-center gap-2">🧘 Bamboo Open-Air Yoga Shala</span>
+                    <span className="flex items-center gap-2">🚿 Hot Rainfall Showers</span>
+                    <span className="flex items-center gap-2">🧹 Daily Housekeeping Service</span>
+                  </div>
+                </div>
+              </>
+            )}
           </section>
 
           {/* ========================================================

@@ -4,7 +4,7 @@ import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 import Course100HourRishikesh from "@/components/pages/Course100HourRishikesh";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
-import { BATCHES_100_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
+import { BATCHES_100_HOUR_RISHIKESH, filterUpcomingBatches } from "@/constants/courseDates";
 import { RISHIKESH_FAQS_100_HOUR } from "@/constants/rishikeshCourseData";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -173,7 +173,7 @@ export default async function Page({
     };
 
     const course = courseData["100-hour-rishikesh"];
-    const upcomingBatches = filterUpcomingBatches(BATCHES_100_HOUR);
+    const upcomingBatches = filterUpcomingBatches(BATCHES_100_HOUR_RISHIKESH);
     const pageUrl = locale === "en"
         ? "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-rishikesh"
         : `https://www.yogagarhi.com/${locale}/100-hour-yoga-teacher-training-in-rishikesh`;
@@ -205,7 +205,7 @@ export default async function Page({
             "audienceType": "Beginner yoga practitioners"
         },
         "coursePrerequisites": "No prior teaching experience required",
-        "hasCourseInstance": filterUpcomingBatches(BATCHES_100_HOUR).map((batch) => ({
+        "hasCourseInstance": filterUpcomingBatches(BATCHES_100_HOUR_RISHIKESH).map((batch) => ({
             "@type": "CourseInstance",
             "courseMode": "onsite",
             "startDate": batch.startDate,
@@ -248,6 +248,41 @@ export default async function Page({
     /* =========================
        FAQ SCHEMA (13 Comprehensive Questions)
     ========================= */
+    
+    const eventSchemas = upcomingBatches.map((batch: any) => ({
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": `100 Hour Yoga Teacher Training Rishikesh - ${batch.date}`,
+        "startDate": batch.startDate,
+        "endDate": batch.endDate,
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "YogaGarhi Rishikesh Campus",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Tapovan",
+                "addressLocality": "Rishikesh",
+                "addressRegion": "Uttarakhand",
+                "postalCode": "249192",
+                "addressCountry": "IN"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "YogaGarhi",
+            "url": "https://www.yogagarhi.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "599",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": pageUrl
+        }
+    }));
+        
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -285,6 +320,15 @@ export default async function Page({
 
     return (
         <>
+            
+            {/* Event Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(eventSchemas),
+                }}
+            />
+        
             {/* Course Schema */}
             <script
                 type="application/ld+json"

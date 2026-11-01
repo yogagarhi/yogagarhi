@@ -19,13 +19,15 @@ export async function generateMetadata({
   }
 
   if (locale === "en") {
+    const title = "Yoga Teacher Training in Bali (Ubud) – 100, 200, 300 Hr | YogaGarhi";
+    const description =
+      "Yoga Alliance RYS 200 & RYS 300 school near Ubud, Bali. Small groups of 8–10, multi-style yoga, 1-year mentorship. 5★ on Google. Rishikesh & Varkala from 2027.";
     return {
       metadataBase: new URL("https://www.yogagarhi.com"),
       title: {
-        absolute: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi",
+        absolute: title,
       },
-      description:
-        "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your journey!",
+      description,
       keywords:
         "yoga teacher training Bali, YTTC Ubud, 200 hour yoga certification, yoga alliance certified, yoga retreat Bali, yoga school Indonesia, RYT 200, yoga ashram Bali, meditation training, pranayama course, YogaGarhi",
       alternates: {
@@ -33,9 +35,8 @@ export async function generateMetadata({
         languages: getReviewedHreflang(""),
       },
       openGraph: {
-        title: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi",
-        description:
-          "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage. Book your journey!",
+        title,
+        description,
         url: "https://www.yogagarhi.com",
         type: "website",
         images: [
@@ -43,23 +44,23 @@ export async function generateMetadata({
             url: "/opengraph-image",
             width: 1200,
             height: 630,
-            alt: "YogaGarhi - Yoga Teacher Training Bali",
+            alt: title,
           },
         ],
       },
       twitter: {
         card: "summary_large_image",
-        title: "Yoga Teacher Training in Bali & Rishikesh | YogaGarhi RYT",
-        description:
-          "Join Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Ubud, Bali & Rishikesh. Authentic Himalayan lineage.",
+        title,
+        description,
         images: ["/opengraph-image"],
       },
     };
   }
 
-  const tHero = messages.home?.hero;
-  const title = `${tHero?.h1 || "Yoga Alliance Certified Yoga Teacher Training in Bali & Rishikesh"} | YogaGarhi`;
-  const description = tHero?.tagline || "Ancient Himalayan wisdom. Authentic yoga, lived & taught.";
+  const title = messages.home?.metaTitle || "Yoga Teacher Training in Bali (Ubud) – 100, 200, 300 Hr | YogaGarhi";
+  const description =
+    messages.home?.metaDesc ||
+    "Yoga Alliance RYS 200 & RYS 300 school near Ubud, Bali. Small groups of 8–10, multi-style yoga, 1-year mentorship. 5★ on Google. Rishikesh & Varkala from 2027.";
 
   return applyQualityGate({
     metadataBase: new URL("https://www.yogagarhi.com"),
@@ -169,6 +170,27 @@ export default async function Page({
     "embedUrl": "https://www.youtube.com/embed/aM3Qx1fHk88"
   };
 
+  const homeOrganizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "YogaGarhi",
+    "url": "https://www.yogagarhi.com",
+    "logo": "https://www.yogagarhi.com/favicon.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Banjar Dinas Petak Kaja",
+      "addressLocality": "Gianyar",
+      "addressRegion": "Bali",
+      "postalCode": "80552",
+      "addressCountry": "ID"
+    },
+    "sameAs": [
+      "https://www.instagram.com/yogagarhi",
+      "https://www.facebook.com/yogagarhi",
+      "https://www.youtube.com/@yogagarhi"
+    ]
+  };
+
   return (
     <>
       {/* Preload Hero image for instant browser scanner discovery on Homepage */}
@@ -191,6 +213,10 @@ export default async function Page({
         imageSizes="100vw"
         media="(min-width: 769px)"
         fetchPriority="high"
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeOrganizationSchema) }}
       />
       <script
         type="application/ld+json"

@@ -284,30 +284,33 @@ export default function Header() {
   const isOnlineCoursesActive = pathname === "/yoga-anatomy-masterclass";
   const isAboutActive = pathname === "/about-school" || pathname === "/teachers" || pathname === "/testimonials";
   const isSundayActive = pathname === "/sunday-schedule";
+  const showPromoBar = PROMO_OFFER.enabled;
 
   return (
     <div className="fixed top-0 left-0 right-0 z-[70] w-full max-w-full">
-      {/* Top Countdown Promo Bar - Visible on Mobile & Desktop */}
-      <div className="bg-[#2D7A70] text-white py-1 sm:py-2.5 shadow-sm overflow-hidden w-full max-w-full">
-        <div className="w-full max-w-[1920px] mx-auto px-2 sm:px-4 lg:px-6 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-6 lg:gap-8">
-          <div className="flex items-center justify-center gap-1 sm:gap-2 text-center flex-wrap sm:flex-nowrap min-w-0 max-w-full">
-            <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
-            <span className="text-[10px] min-[375px]:text-xs sm:text-sm font-bold tracking-tight min-[375px]:tracking-wide uppercase leading-tight break-words text-center">
-              {tPromo("title")} 🎉 {tPromo("flat")} <span className="text-amber-300 font-extrabold">{tPromo("discountText")}</span> {tPromo("batchesText")}
-            </span>
-          </div>
-
-          <div className="flex items-center justify-center gap-1.5 sm:gap-3 bg-black/20 px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner shrink-0 scale-95 sm:scale-100">
-            <div className="flex items-center gap-1 sm:gap-1.5 whitespace-nowrap">
-              <Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300 shrink-0" />
-              <span className="text-[9px] min-[375px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest text-white/90">
-                {tPromo("endsIn")}
+      {/* Top Countdown Promo Bar - Hidden when expired */}
+      {showPromoBar && (
+        <div className="bg-[#2D7A70] text-white py-1 sm:py-2.5 shadow-sm overflow-hidden w-full max-w-full">
+          <div className="w-full max-w-[1920px] mx-auto px-2 sm:px-4 lg:px-6 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-6 lg:gap-8">
+            <div className="flex items-center justify-center gap-1 sm:gap-2 text-center flex-wrap sm:flex-nowrap min-w-0 max-w-full">
+              <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
+              <span className="text-[10px] min-[375px]:text-xs sm:text-sm font-bold tracking-tight min-[375px]:tracking-wide uppercase leading-tight break-words text-center">
+                {tPromo("title")} 🎉 {tPromo("flat")} <span className="text-amber-300 font-extrabold">{tPromo("discountText")}</span> {tPromo("batchesText")}
               </span>
             </div>
-            <PromoCountdown className="sm:scale-90 sm:origin-left" />
+
+            <div className="flex items-center justify-center gap-1.5 sm:gap-3 bg-black/20 px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner shrink-0 scale-95 sm:scale-100">
+              <div className="flex items-center gap-1 sm:gap-1.5 whitespace-nowrap">
+                <Clock className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300 shrink-0" />
+                <span className="text-[9px] min-[375px]:text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest text-white/90">
+                  {tPromo("endsIn")}
+                </span>
+              </div>
+              <PromoCountdown className="sm:scale-90 sm:origin-left" />
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       <header
         className={`py-2.5 sm:py-3 transition-colors duration-300 ${scrolled

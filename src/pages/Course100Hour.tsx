@@ -32,7 +32,6 @@ import insta4 from "@/assets/instagram/insta-4.webp";
 import insta5 from "@/assets/instagram/insta-5.jpg";
 import yogaAllianceBg from "@/assets/yoga-alliance-bg.jpg";
 import yaRyt200 from "@/assets/ya-ryt-200.png";
-import yaRys100 from "@/assets/ya-rys-100.png";
 import yaRys200 from "@/assets/ya-rys-200.jpg";
 import yaAllCertifications from "@/assets/ya-all-certifications.jpg";
 import WhyFeatureItem from "@/components/home/WhyFeatureItem";
@@ -120,7 +119,7 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
 
 // Icon Highlights Section
 const iconHighlights = [
-  { icon: Award, title: "Yoga Alliance Certified", subtitle: "RYS 100" },
+  { icon: Award, title: "Foundation Certificate", subtitle: "100 Hours" },
   { icon: Leaf, title: "Multi-Style Yoga", subtitle: "Authentic Teaching" },
   { icon: Heart, title: "Prakriti-Based", subtitle: "Personalized Learning" },
   { icon: Users, title: "Small Batch", subtitle: "8-10 Students" },
@@ -764,7 +763,7 @@ export default function Course100Hour() {
                   {/* Certification */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Certification</p>
-                    <p className="font-heading font-semibold text-foreground">Yoga Alliance RYS 100</p>
+                    <p className="font-heading font-semibold text-foreground">YogaGarhi 100-Hour Yoga Foundation Certificate</p>
                   </div>
 
                   {/* Price */}
@@ -2306,8 +2305,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <img src={yaRys100} alt="RYS 100" className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <img src={yaRys200} alt="RYS 200" className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                                <img src={yaRys200} alt="RYS 200" className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <img src={yaRyt200} alt="RYT 200" className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
               </div>
 

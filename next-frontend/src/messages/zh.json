@@ -66,7 +66,7 @@
     "popupBatches": "11月与12月班期",
     "popupDiscount": "全线直降 $300",
     "contactUs": "联系我们",
-    "heroSpecialOfferPrefix": "预订4月至7月 YTT 课程，免费获赠专业摄影、圣庙参访、机场接机及传统文化体验 –",
+    "heroSpecialOfferPrefix": "预订即将开课的YTT 课程，免费获赠专业摄影、圣庙参访、机场接机及传统文化体验 –",
     "heroSpecialOfferHighlight": "全部免费包含在内。",
     "courseSpecialOfferPrefix": "预订4月至7月 YTT 课程，免费获赠专业摄影、圣庙参访、机场接机及传统文化体验 –",
     "courseSpecialOfferHighlight": "全部免费包含在内。",
@@ -411,9 +411,9 @@
       "chatWhatsApp": "通过 WhatsApp 咨询",
       "emailUs": "发送电子邮件咨询",
       "certifiedBadge": "Yoga Alliance 认证",
-      "graduates": "毕业学员",
-      "countries": "覆盖国家",
-      "rating": "综合评分",
+      "graduates": "全校毕业学员",
+      "countries": "全校学员生源国",
+      "rating": "全校综合评分",
       "wonderingTitle": "还在犹豫这趟瑜伽之旅是否适合您？",
       "wonderingSub": "欢迎随时通过 WhatsApp 或邮件联系我们——我们将真诚为您解答"
     },
@@ -523,11 +523,13 @@
       "whatsappUs": "通过 WhatsApp 交流",
       "responseTiming": "我们通常会在24小时内给予真诚回复",
       "happyStudents": "+497名满意的学员"
-    }
+    },
+    "metaTitle": "巴厘岛（乌布）瑜伽教师培训 – 100、200、300小时 | YogaGarhi",
+    "metaDesc": "巴厘岛乌布附近全美瑜伽联盟RYS 200与RYS 300认证学校。8–10人小班制，多流派瑜伽，1年导师指导。Google五星好评5★。2027年起拓展至瑞诗凯诗与瓦尔卡拉。"
   },
   "course200": {
-    "metaTitle": "巴厘岛200小时瑜伽导师培训 | YogaGarhi",
-    "metaDesc": "印尼巴厘岛乌布 Yoga Alliance 认证200小时瑜伽导师培训。24天全住宿静修式集训，每班仅限8-10人，传承喜马拉雅正统智慧与阿育吠陀。",
+    "metaTitle": "巴厘岛200小时瑜伽教师培训 – 24天，999美元起 | YogaGarhi",
+    "metaDesc": "巴厘岛乌布附近全美瑜伽联盟RYT 200认证24天课程。8–10人小班制，哈他、流瑜伽与阿斯汤加，1年导师指导。Google好评5★。999美元起。",
     "heroTitle": "巴厘岛200小时瑜伽导师培训",
     "heroSub": "在巴厘岛乌布开展的24天深度全寄宿式多流派师资培训。获美国瑜伽联盟 RYT 200 国际认证，每班严格限定8-10人。",
     "hero": {
@@ -1401,8 +1403,8 @@
     }
   },
   "course100": {
-    "metaTitle": "巴厘岛100小时瑜伽教师培训 | Yoga Alliance 乌布",
-    "metaDesc": "在巴厘岛乌布参加100小时瑜伽教师培训，深化您的个人习练。初学者友好课程与有机悦性素食。立即预订席位！",
+    "metaTitle": "巴厘岛100小时瑜伽教师培训 – 初学者12天基础班 | YogaGarhi",
+    "metaDesc": "巴厘岛乌布附近初学者友好的12天100小时瑜伽基础课程。小班授课，多流派瑜伽，调息法与哲学。599美元起。",
     "heroTitle": "巴厘岛100小时瑜伽教师培训",
     "heroSub": "在巴厘岛吉安雅开启12天蜕变之旅。传承喜马拉雅正统脉络，8–10人小班授课，全包套餐仅 $1,149 USD 起。",
     "quickInfo": {
@@ -1483,53 +1485,7 @@
       "hoverMore": "悬停查看详细内容",
       "takeaway": "核心掌握技能",
       "carryHome": "融入日常生活",
-      "careerImpact": "对实际教学的深远影响：",
-      "cards": [
-        {
-          "title": "阿斯汤加瑜伽体式",
-          "content": "阿斯汤加初级序列完整教学。循序渐进掌握拜日式A与B、站立序列、坐姿序列以及迈索尔风格自主练习。"
-        },
-        {
-          "title": "哈他与流瑜伽流派",
-          "content": "风神体式系列、拜日式变体、站立与坐姿体式、后弯、前屈、倒立以及科学编排体式序列的方法。"
-        },
-        {
-          "title": "瑜伽哲学",
-          "content": "深度研读帕坦伽利的《瑜伽经》、阿斯汤加八支体系、脉络（Nadis）、脉轮（Chakras）、五大元气与三德（Gunas）智慧。"
-        },
-        {
-          "title": "调息与呼吸控制法",
-          "content": "系统掌握胜利呼吸（Ujjayi）、风箱调息、圣光调息、经络净化呼吸、蜂鸣调息及清凉调息等古典技法。"
-        },
-        {
-          "title": "解剖学与运动生理学",
-          "content": "人体运动平面、关节保护原则、脊柱骨盆与膝踝生物力学、呼吸机制以及神经肌肉系统的深入剖析。"
-        },
-        {
-          "title": "教学法与实操指导",
-          "content": "课程设计编排、物理与口头正位调整、不同水平学员应对方案、声音运用以及标准化课程规划。"
-        },
-        {
-          "title": "冥想与梵音唱诵",
-          "content": "多种古典冥想练习、神圣梵文唱诵、一点专注法（Trataka）、奥修动态冥想与静默实修。"
-        },
-        {
-          "title": "艾扬格瑜伽与辅助用具",
-          "content": "注重精准正位，通过瑜伽砖、伸展带、毛毯等辅助工具帮助学员建立稳定端正的骨骼对齐，预防损伤。"
-        },
-        {
-          "title": "正位对齐原则",
-          "content": "安全实修的基础：深度理解关节堆叠、肌肉协同发力与骨骼力学，有效保护并增强机体活力。"
-        },
-        {
-          "title": "能量锁（Bandhas）",
-          "content": "掌握会阴锁（Mula）、收腹锁（Uddiyana）与下颌锁（Jalandhara），调控气血循环，巩固核心并深化冥想。"
-        },
-        {
-          "title": "手印与身印（Mudras）",
-          "content": "导引体内生命能量的神圣手印与体印，凝聚意念，辅助呼吸控制并连接更高维度的意识状态。"
-        }
-      ]
+      "careerImpact": "对实际教学的深远影响："
     },
     "schedule": {
       "heading": "静修院经典日程安排",
@@ -1691,118 +1647,113 @@
         {
           "title": "阿斯汤加瑜伽体式",
           "items": [
-            "帕塔比·乔伊斯阿斯汤加初级序列完整教学",
-            "第1周：导论与拜日式A与B",
-            "第2周：站立体式与辅助工具运用",
-            "第3周：坐姿体式与结束序列",
-            "第4周：迈索尔自主练习与教学实操"
+            "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+            "Standing sequence postures & use of yoga props",
+            "Primary series practiced thoroughly",
+            "Mysore style practice examination"
           ]
         },
         {
           "title": "瑜伽哲学",
           "items": [
-            "帕坦伽利《瑜伽经》完整研读",
-            "阿斯汤加瑜伽八支分法",
-            "五大气（Pancha-Vayus）与五鞘（Koshas）",
-            "三德论（Sattva, Rajas, Tamas）",
-            "吠陀经典概论",
-            "伟大瑜伽导师的智慧故事"
+            "Introduction to Yoga Philosophy and its evolution",
+            "Introduction to yoga sutras of Patanjali",
+            "Nadis (Ida, Pingala & Sushumna)",
+            "Chakras - the energy channels",
+            "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+            "Eight limbs of Ashtanga Yoga"
           ]
         },
         {
-          "title": "调息与呼吸法实践",
+          "title": "调息呼吸法练习",
           "items": [
-            "古典调息法完整体系",
-            "六大净化法（Shatkarma）",
-            "进阶呼吸法：清凉调息与啸声调息",
-            "屏息（Kumbhaka）控制",
-            "与体式练习的深度结合"
+            "Introduction to Pranayama and its benefits",
+            "Introduction to Shatkarma (six cleansing practices)",
+            "Clavicular, Thoracic & Diaphragmatic Breathing",
+            "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+            "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi",
+            "Introduction to Mudras & energetic seals"
           ]
         },
         {
-          "title": "神圣梵音唱诵",
+          "title": "神圣梵音颂唱",
           "items": [
-            "传统梵文唱诵全集",
-            "大自在天咒（Om Tryambakam）",
-            "伟大曼陀罗（Maha Mantra）",
-            "帕坦伽利敬礼颂",
-            "每日唱诵晨练"
+            "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+            "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+            "Guru Brahma Guru Vishnu (Guru stotram)",
+            "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
           ]
         },
         {
-          "title": "解剖学与运动生理学",
+          "title": "解剖学与生理学",
           "items": [
-            "人体各大生理系统研习",
-            "肌肉与骨骼关节力学",
-            "呼吸系统与神经调节",
-            "饮食与消化代谢系统",
-            "体式解剖与运动保护工坊"
+            "Body Movement & Planes",
+            "Joints and How to Protect them in Asanas",
+            "Anatomy of Ankle, Knee, Spine & Shoulder",
+            "Breathing mechanism in Yoga"
           ]
         },
         {
-          "title": "瑜伽教学法",
+          "title": "教学法与实践",
           "items": [
-            "完整课程体式编排逻辑",
-            "示范与观察要领",
-            "导师心理与情绪调适",
-            "标准化课程规划步骤",
-            "实训讲课与资深导师评审"
+            "How to sequence a class",
+            "Working with breathing and posture",
+            "Adjustments and corrections",
+            "Working with different level of students",
+            "Building positive & conscious communication"
           ]
         },
         {
-          "title": "冥想与能量锁",
+          "title": "冥想静心",
           "items": [
-            "奥修动态冥想",
-            "梵音共振冥想（Nada Brahma）",
-            "内在静默观照（Antar Mouna）",
-            "四大能量锁（Bandhas）体悟",
-            "调息体式综合能量融合"
+            "Introduction to Meditation",
+            "Different types of meditation techniques",
+            "Om / Mantra Meditation",
+            "Trataka and Silence Meditation"
           ]
         },
         {
-          "title": "精准对齐与手法矫正",
+          "title": "体式顺位原则与辅具调整",
           "items": [
-            "经典体式的功能性解剖正位",
-            "口头口令与安全手法调整",
-            "个体骨骼结构差异辨析",
-            "运用瑜伽砖与拉伸带的退阶策略"
+            "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+            "Safe execution and anatomical alignment in foundational standing and seated poses",
+            "Effective use of props (blocks, straps, bolsters) to support safe practice",
+            "Identifying common postural habits and applying self-correction techniques"
           ]
         },
         {
-          "title": "古典哈他瑜伽实践",
+          "title": "传统哈他瑜伽",
           "items": [
-            "哈他体式精髓与静态保持深度",
-            "哈他完整编排：热身、高潮体式与代偿体式",
-            "调和太阳与月亮双向能量",
-            "静态保持中的能量锁与手印整合"
+            "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+            "Traditional Surya Namaskar variations with breath-synchronized awareness",
+            "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+            "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
           ]
         },
         {
-          "title": "艾扬格精准瑜伽",
+          "title": "艾扬格瑜伽基础",
           "items": [
-            "系统利用辅具的正位教学",
-            "骨盆、脊柱与肩带的几何对齐",
-            "安全倒立序列的阶梯式准备",
-            "修复性辅具支持深度放松"
+            "Introduction to precision, geometry, and anatomical awareness in asanas",
+            "Prop-assisted alignment techniques using blocks, belts, and wall support",
+            "Building strength, stability, and postural endurance through extended holds",
+            "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
           ]
         },
         {
-          "title": "流瑜伽与动态序列",
+          "title": "流瑜伽动态编排",
           "items": [
-            "智能序列架构：热身、峰值与放松",
-            "呼吸引领的动态流动与跳跃衔接",
-            "针对不同水平的主题课程研发",
-            "节奏掌控与能量场域维护"
+            "Breath-synchronized movement connecting postures into fluid sequences",
+            "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+            "Coordinating conscious inhalation with heart openers and exhalation with folds",
+            "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
           ]
         },
         {
-          "title": "特色课程与巴厘岛体验",
+          "title": "特色拓展课程",
           "items": [
-            "颂钵音疗（Sound Healing）",
-            "巴厘岛海滩户外瑜伽",
-            "阴瑜伽与双人阿克罗瑜伽",
-            "阿育吠陀体质学基础",
-            "传统阿格尼霍特拉（火供）仪式"
+            "Kirtan Meditation",
+            "Yin Yoga & Partner Yoga",
+            "阿育吠陀生活方式课程"
           ]
         }
       ]
@@ -2137,8 +2088,8 @@
     "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
   },
   "course300": {
-    "metaTitle": "巴厘岛300小时进阶瑜伽导师培训 | RYT 500 高级课程",
-    "metaDesc": "在巴厘岛参加300小时瑜伽导师进阶培训，全面提升教学技能。涵盖多流派体式、呼吸控制法、解剖学与哲学。立即报名！",
+    "metaTitle": "巴厘岛300小时瑜伽教师培训 – 进阶RYT 500认证 | YogaGarhi",
+    "metaDesc": "面向RYT 200毕业生的巴厘岛乌布附近28天进阶300小时培训。深化教学法、哲学与瑜伽疗愈。8–10人小班教学。",
     "heroTitle": "巴厘岛300小时进阶瑜伽导师培训",
     "heroSub": "在巴厘岛吉安雅开展的28天全封闭式进阶研修。深入研习高难度体式、手法调整与深度哲学，通往 RYT 500 认证。",
     "quickInfo": {
@@ -2219,53 +2170,7 @@
       "hoverMore": "悬停查看详细内容",
       "takeaway": "核心掌握技能",
       "carryHome": "融入日常生活",
-      "careerImpact": "对实际教学的深远影响：",
-      "cards": [
-        {
-          "title": "阿斯汤加瑜伽体式",
-          "content": "阿斯汤加初级序列完整教学。循序渐进掌握拜日式A与B、站立序列、坐姿序列以及迈索尔风格自主练习。"
-        },
-        {
-          "title": "哈他与流瑜伽流派",
-          "content": "风神体式系列、拜日式变体、站立与坐姿体式、后弯、前屈、倒立以及科学编排体式序列的方法。"
-        },
-        {
-          "title": "瑜伽哲学",
-          "content": "深度研读帕坦伽利的《瑜伽经》、阿斯汤加八支体系、脉络（Nadis）、脉轮（Chakras）、五大元气与三德（Gunas）智慧。"
-        },
-        {
-          "title": "调息与呼吸控制法",
-          "content": "系统掌握胜利呼吸（Ujjayi）、风箱调息、圣光调息、经络净化呼吸、蜂鸣调息及清凉调息等古典技法。"
-        },
-        {
-          "title": "解剖学与运动生理学",
-          "content": "人体运动平面、关节保护原则、脊柱骨盆与膝踝生物力学、呼吸机制以及神经肌肉系统的深入剖析。"
-        },
-        {
-          "title": "教学法与实操指导",
-          "content": "课程设计编排、物理与口头正位调整、不同水平学员应对方案、声音运用以及标准化课程规划。"
-        },
-        {
-          "title": "冥想与梵音唱诵",
-          "content": "多种古典冥想练习、神圣梵文唱诵、一点专注法（Trataka）、奥修动态冥想与静默实修。"
-        },
-        {
-          "title": "艾扬格瑜伽与辅助用具",
-          "content": "注重精准正位，通过瑜伽砖、伸展带、毛毯等辅助工具帮助学员建立稳定端正的骨骼对齐，预防损伤。"
-        },
-        {
-          "title": "正位对齐原则",
-          "content": "安全实修的基础：深度理解关节堆叠、肌肉协同发力与骨骼力学，有效保护并增强机体活力。"
-        },
-        {
-          "title": "能量锁（Bandhas）",
-          "content": "掌握会阴锁（Mula）、收腹锁（Uddiyana）与下颌锁（Jalandhara），调控气血循环，巩固核心并深化冥想。"
-        },
-        {
-          "title": "手印与身印（Mudras）",
-          "content": "导引体内生命能量的神圣手印与体印，凝聚意念，辅助呼吸控制并连接更高维度的意识状态。"
-        }
-      ]
+      "careerImpact": "对实际教学的深远影响："
     },
     "schedule": {
       "heading": "静修院经典日程安排",
@@ -2417,120 +2322,126 @@
       },
       "detailedModules": [
         {
-          "title": "阿斯汤加瑜伽体式",
+          "title": "高阶体式精进与手法调整",
           "items": [
-            "帕塔比·乔伊斯阿斯汤加初级序列完整教学",
-            "第1周：导论与拜日式A与B",
-            "第2周：站立体式与辅助工具运用",
-            "第3周：坐姿体式与结束序列",
-            "第4周：迈索尔自主练习与教学实操"
+            "Advanced arm balances & inversions",
+            "Therapeutic modifications & props usage",
+            "Working with injuries & limitations",
+            "Advanced sequencing principles"
           ]
         },
         {
-          "title": "瑜伽哲学",
+          "title": "瑜伽理疗应用",
           "items": [
-            "帕坦伽利《瑜伽经》完整研读",
-            "阿斯汤加瑜伽八支分法",
-            "五大气（Pancha-Vayus）与五鞘（Koshas）",
-            "三德论（Sattva, Rajas, Tamas）",
-            "吠陀经典概论",
-            "伟大瑜伽导师的智慧故事"
+            "Yoga for back pain & spinal health",
+            "Yoga for stress & anxiety",
+            "Prenatal & postnatal yoga",
+            "Yoga for seniors",
+            "Restorative yoga techniques"
           ]
         },
         {
-          "title": "调息与呼吸法实践",
+          "title": "高阶调息法与能量锁(Bandhas)",
           "items": [
-            "古典调息法完整体系",
-            "六大净化法（Shatkarma）",
-            "进阶呼吸法：清凉调息与啸声调息",
-            "屏息（Kumbhaka）控制",
-            "与体式练习的深度结合"
+            "Advanced kumbhaka techniques",
+            "Kriyas for energy awakening",
+            "Bandha integration in advanced asanas",
+            "Pranayama for kundalini activation",
+            "Breath practices for nervous system balance"
           ]
         },
         {
-          "title": "神圣梵音唱诵",
+          "title": "瑜伽睡眠(Yoga Nidra)与深度冥想",
           "items": [
-            "传统梵文唱诵全集",
-            "大自在天咒（Om Tryambakam）",
-            "伟大曼陀罗（Maha Mantra）",
-            "帕坦伽利敬礼颂",
-            "每日唱诵晨练"
+            "Complete Yoga Nidra training",
+            "Leading guided meditations",
+            "Chakra meditation techniques",
+            "Sound & mantra meditation",
+            "Silent retreat practices"
           ]
         },
         {
-          "title": "解剖学与运动生理学",
+          "title": "经典瑜伽哲学研习",
           "items": [
-            "人体各大生理系统研习",
-            "肌肉与骨骼关节力学",
-            "呼吸系统与神经调节",
-            "饮食与消化代谢系统",
-            "体式解剖与运动保护工坊"
+            "Bhagavad Gita study",
+            "Upanishads exploration",
+            "Tantra philosophy",
+            "Samkhya & Vedanta",
+            "Applied philosophy in modern life"
           ]
         },
         {
-          "title": "瑜伽教学法",
+          "title": "高阶解剖学与生物力学",
           "items": [
-            "完整课程体式编排逻辑",
-            "示范与观察要领",
-            "导师心理与情绪调适",
-            "标准化课程规划步骤",
-            "实训讲课与资深导师评审"
+            "Subtle body anatomy (Nadis, Chakras)",
+            "Myofascial release techniques",
+            "Biomechanics of complex poses",
+            "Injury prevention & working safely with common injuries",
+            "Yoga therapy principles"
           ]
         },
         {
-          "title": "冥想与能量锁",
+          "title": "专业瑜伽导师执业：工作坊、静修营与线上教学",
           "items": [
-            "奥修动态冥想",
-            "梵音共振冥想（Nada Brahma）",
-            "内在静默观照（Antar Mouna）",
-            "四大能量锁（Bandhas）体悟",
-            "调息体式综合能量融合"
+            "Workshop & retreat planning",
+            "Private session design",
+            "Online class delivery",
+            "Business of yoga & ethical studio management"
           ]
         },
         {
-          "title": "精准对齐与手法矫正",
+          "title": "高阶精准顺位与生物力学校准",
           "items": [
-            "经典体式的功能性解剖正位",
-            "口头口令与安全手法调整",
-            "个体骨骼结构差异辨析",
-            "运用瑜伽砖与拉伸带的退阶策略"
+            "Micro-alignment principles and postural observation for advanced and complex asanas",
+            "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+            "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+            "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
           ]
         },
         {
-          "title": "古典哈他瑜伽实践",
+          "title": "高阶经典哈他瑜伽",
           "items": [
-            "哈他体式精髓与静态保持深度",
-            "哈他完整编排：热身、高潮体式与代偿体式",
-            "调和太阳与月亮双向能量",
-            "静态保持中的能量锁与手印整合"
+            "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+            "Cultivating steadiness and inward focus through still posture holding and measured breath",
+            "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+            "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
           ]
         },
         {
-          "title": "艾扬格精准瑜伽",
+          "title": "高阶艾扬格瑜伽与修复精准顺位",
           "items": [
-            "系统利用辅具的正位教学",
-            "骨盆、脊柱与肩带的几何对齐",
-            "安全倒立序列的阶梯式准备",
-            "修复性辅具支持深度放松"
+            "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
+            "Structural alignment techniques for posture balance and foundational body mechanics",
+            "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+            "Postural observation for personalized practice"
           ]
         },
         {
-          "title": "流瑜伽与动态序列",
+          "title": "创意串联进程(Vinyasa Krama)与大师编排",
           "items": [
-            "智能序列架构：热身、峰值与放松",
-            "呼吸引领的动态流动与跳跃衔接",
-            "针对不同水平的主题课程研发",
-            "节奏掌控与能量场域维护"
+            "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+            "Creating themed classes and peak posture staging",
+            "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+            "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+            "Designing transformative workshops, masterclasses, and multi-day retreat flows"
           ]
         },
         {
-          "title": "特色课程与巴厘岛体验",
+          "title": "教学督导实操与综合考核",
           "items": [
-            "颂钵音疗（Sound Healing）",
-            "巴厘岛海滩户外瑜伽",
-            "阴瑜伽与双人阿克罗瑜伽",
-            "阿育吠陀体质学基础",
-            "传统阿格尼霍特拉（火供）仪式"
+            "Supervised practice teaching with real-time feedback",
+            "Structured peer feedback and group reflection",
+            "One-on-one teaching mentorship with master faculty",
+            "Practical alignment and adjustment evaluation",
+            "Final comprehensive teaching assessment"
+          ]
+        },
+        {
+          "title": "名师特设工作坊",
+          "items": [
+            "声音疗愈工作坊",
+            "Ayurveda for yoga teachers",
+            "Chakra balancing practices"
           ]
         }
       ]
@@ -2947,53 +2858,7 @@
       "hoverMore": "悬停查看详细内容",
       "takeaway": "核心掌握技能",
       "carryHome": "融入日常生活",
-      "careerImpact": "对实际教学的深远影响：",
-      "cards": [
-        {
-          "title": "阿斯汤加瑜伽体式",
-          "content": "阿斯汤加初级序列完整教学。循序渐进掌握拜日式A与B、站立序列、坐姿序列以及迈索尔风格自主练习。"
-        },
-        {
-          "title": "哈他与流瑜伽流派",
-          "content": "风神体式系列、拜日式变体、站立与坐姿体式、后弯、前屈、倒立以及科学编排体式序列的方法。"
-        },
-        {
-          "title": "瑜伽哲学",
-          "content": "深度研读帕坦伽利的《瑜伽经》、阿斯汤加八支体系、脉络（Nadis）、脉轮（Chakras）、五大元气与三德（Gunas）智慧。"
-        },
-        {
-          "title": "调息与呼吸控制法",
-          "content": "系统掌握胜利呼吸（Ujjayi）、风箱调息、圣光调息、经络净化呼吸、蜂鸣调息及清凉调息等古典技法。"
-        },
-        {
-          "title": "解剖学与运动生理学",
-          "content": "人体运动平面、关节保护原则、脊柱骨盆与膝踝生物力学、呼吸机制以及神经肌肉系统的深入剖析。"
-        },
-        {
-          "title": "教学法与实操指导",
-          "content": "课程设计编排、物理与口头正位调整、不同水平学员应对方案、声音运用以及标准化课程规划。"
-        },
-        {
-          "title": "冥想与梵音唱诵",
-          "content": "多种古典冥想练习、神圣梵文唱诵、一点专注法（Trataka）、奥修动态冥想与静默实修。"
-        },
-        {
-          "title": "艾扬格瑜伽与辅助用具",
-          "content": "注重精准正位，通过瑜伽砖、伸展带、毛毯等辅助工具帮助学员建立稳定端正的骨骼对齐，预防损伤。"
-        },
-        {
-          "title": "正位对齐原则",
-          "content": "安全实修的基础：深度理解关节堆叠、肌肉协同发力与骨骼力学，有效保护并增强机体活力。"
-        },
-        {
-          "title": "能量锁（Bandhas）",
-          "content": "掌握会阴锁（Mula）、收腹锁（Uddiyana）与下颌锁（Jalandhara），调控气血循环，巩固核心并深化冥想。"
-        },
-        {
-          "title": "手印与身印（Mudras）",
-          "content": "导引体内生命能量的神圣手印与体印，凝聚意念，辅助呼吸控制并连接更高维度的意识状态。"
-        }
-      ]
+      "careerImpact": "对实际教学的深远影响："
     },
     "schedule": {
       "heading": "静修院经典日程安排",
@@ -3044,12 +2909,12 @@
       "incKit": "高品质专业瑜伽垫及全套辅具免费使用",
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "传统开学与结业神圣火祭（Agni Hotra）",
-      "incPickup": "开学报到日登巴萨机场（DPS）免费专车接机",
+      "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
       "incPre": "免费 Pre-TTC 线上行前预科学堂",
       "incRepeat": "未来对应班期终身免学费复训资格",
       "notIncHeading": "费用未包含项目",
       "notIncFlights": "往返国际及国内机票",
-      "notIncVisa": "印度尼西亚入境签证费用",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "境外旅行及医疗保险"
     },
     "pricing": {
@@ -3175,118 +3040,113 @@
         {
           "title": "阿斯汤加瑜伽体式",
           "items": [
-            "帕塔比·乔伊斯阿斯汤加初级序列完整教学",
-            "第1周：导论与拜日式A与B",
-            "第2周：站立体式与辅助工具运用",
-            "第3周：坐姿体式与结束序列",
-            "第4周：迈索尔自主练习与教学实操"
+            "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+            "Standing sequence postures & use of yoga props",
+            "Primary series practiced thoroughly",
+            "Mysore style practice examination"
           ]
         },
         {
           "title": "瑜伽哲学",
           "items": [
-            "帕坦伽利《瑜伽经》完整研读",
-            "阿斯汤加瑜伽八支分法",
-            "五大气（Pancha-Vayus）与五鞘（Koshas）",
-            "三德论（Sattva, Rajas, Tamas）",
-            "吠陀经典概论",
-            "伟大瑜伽导师的智慧故事"
+            "Introduction to Yoga Philosophy and its evolution",
+            "Introduction to yoga sutras of Patanjali",
+            "Nadis (Ida, Pingala & Sushumna)",
+            "Chakras - the energy channels",
+            "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+            "Eight limbs of Ashtanga Yoga"
           ]
         },
         {
-          "title": "调息与呼吸法实践",
+          "title": "调息呼吸法练习",
           "items": [
-            "古典调息法完整体系",
-            "六大净化法（Shatkarma）",
-            "进阶呼吸法：清凉调息与啸声调息",
-            "屏息（Kumbhaka）控制",
-            "与体式练习的深度结合"
+            "Introduction to Pranayama and its benefits",
+            "Introduction to Shatkarma (six cleansing practices)",
+            "Clavicular, Thoracic & Diaphragmatic Breathing",
+            "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+            "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi",
+            "Introduction to Mudras & energetic seals"
           ]
         },
         {
-          "title": "神圣梵音唱诵",
+          "title": "神圣梵音颂唱",
           "items": [
-            "传统梵文唱诵全集",
-            "大自在天咒（Om Tryambakam）",
-            "伟大曼陀罗（Maha Mantra）",
-            "帕坦伽利敬礼颂",
-            "每日唱诵晨练"
+            "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+            "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+            "Guru Brahma Guru Vishnu (Guru stotram)",
+            "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
           ]
         },
         {
-          "title": "解剖学与运动生理学",
+          "title": "解剖学与生理学",
           "items": [
-            "人体各大生理系统研习",
-            "肌肉与骨骼关节力学",
-            "呼吸系统与神经调节",
-            "饮食与消化代谢系统",
-            "体式解剖与运动保护工坊"
+            "Body Movement & Planes",
+            "Joints and How to Protect them in Asanas",
+            "Anatomy of Ankle, Knee, Spine & Shoulder",
+            "Breathing mechanism in Yoga"
           ]
         },
         {
-          "title": "瑜伽教学法",
+          "title": "教学法与实践",
           "items": [
-            "完整课程体式编排逻辑",
-            "示范与观察要领",
-            "导师心理与情绪调适",
-            "标准化课程规划步骤",
-            "实训讲课与资深导师评审"
+            "How to sequence a class",
+            "Working with breathing and posture",
+            "Adjustments and corrections",
+            "Working with different level of students",
+            "Building positive & conscious communication"
           ]
         },
         {
-          "title": "冥想与能量锁",
+          "title": "冥想静心",
           "items": [
-            "奥修动态冥想",
-            "梵音共振冥想（Nada Brahma）",
-            "内在静默观照（Antar Mouna）",
-            "四大能量锁（Bandhas）体悟",
-            "调息体式综合能量融合"
+            "Introduction to Meditation",
+            "Different types of meditation techniques",
+            "Om / Mantra Meditation",
+            "Trataka and Silence Meditation"
           ]
         },
         {
-          "title": "精准对齐与手法矫正",
+          "title": "体式顺位原则与辅具调整",
           "items": [
-            "经典体式的功能性解剖正位",
-            "口头口令与安全手法调整",
-            "个体骨骼结构差异辨析",
-            "运用瑜伽砖与拉伸带的退阶策略"
+            "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+            "Safe execution and anatomical alignment in foundational standing and seated poses",
+            "Effective use of props (blocks, straps, bolsters) to support safe practice",
+            "Identifying common postural habits and applying self-correction techniques"
           ]
         },
         {
-          "title": "古典哈他瑜伽实践",
+          "title": "传统哈他瑜伽",
           "items": [
-            "哈他体式精髓与静态保持深度",
-            "哈他完整编排：热身、高潮体式与代偿体式",
-            "调和太阳与月亮双向能量",
-            "静态保持中的能量锁与手印整合"
+            "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+            "Traditional Surya Namaskar variations with breath-synchronized awareness",
+            "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+            "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
           ]
         },
         {
-          "title": "艾扬格精准瑜伽",
+          "title": "艾扬格瑜伽基础",
           "items": [
-            "系统利用辅具的正位教学",
-            "骨盆、脊柱与肩带的几何对齐",
-            "安全倒立序列的阶梯式准备",
-            "修复性辅具支持深度放松"
+            "Introduction to precision, geometry, and anatomical awareness in asanas",
+            "Prop-assisted alignment techniques using blocks, belts, and wall support",
+            "Building strength, stability, and postural endurance through extended holds",
+            "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
           ]
         },
         {
-          "title": "流瑜伽与动态序列",
+          "title": "流瑜伽动态编排",
           "items": [
-            "智能序列架构：热身、峰值与放松",
-            "呼吸引领的动态流动与跳跃衔接",
-            "针对不同水平的主题课程研发",
-            "节奏掌控与能量场域维护"
+            "Breath-synchronized movement connecting postures into fluid sequences",
+            "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+            "Coordinating conscious inhalation with heart openers and exhalation with folds",
+            "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
           ]
         },
         {
-          "title": "特色课程与巴厘岛体验",
+          "title": "特色拓展课程",
           "items": [
-            "颂钵音疗（Sound Healing）",
-            "巴厘岛海滩户外瑜伽",
-            "阴瑜伽与双人阿克罗瑜伽",
-            "阿育吠陀体质学基础",
-            "传统阿格尼霍特拉（火供）仪式"
+            "Kirtan Meditation",
+            "Yin Yoga & Partner Yoga",
+            "阿育吠陀生活方式课程"
           ]
         }
       ]
@@ -3806,12 +3666,12 @@
       "incKit": "高品质专业瑜伽垫及全套辅具免费使用",
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "传统开学与结业神圣火祭（Agni Hotra）",
-      "incPickup": "开学报到日登巴萨机场（DPS）免费专车接机",
+      "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
       "incPre": "免费 Pre-TTC 线上行前预科学堂",
       "incRepeat": "未来对应班期终身免学费复训资格",
       "notIncHeading": "费用未包含项目",
       "notIncFlights": "往返国际及国内机票",
-      "notIncVisa": "印度尼西亚入境签证费用",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "境外旅行及医疗保险"
     },
     "pricing": {
@@ -5765,53 +5625,7 @@
       "hoverMore": "Hover to see more",
       "takeaway": "The Takeaway",
       "carryHome": "Carry Home",
-      "careerImpact": "Career Impact:",
-      "cards": [
-        {
-          "title": "Ashtanga Yoga Postures",
-          "content": "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice."
-        },
-        {
-          "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology."
-        },
-        {
-          "title": "Yoga Philosophy",
-          "content": "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis."
-        },
-        {
-          "title": "Pranayama & Breathing",
-          "content": "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari."
-        },
-        {
-          "title": "Anatomy & Physiology",
-          "content": "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system."
-        },
-        {
-          "title": "Teaching Methodology",
-          "content": "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning."
-        },
-        {
-          "title": "Meditation & Mantra",
-          "content": "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness."
-        },
-        {
-          "title": "Iyengar Yoga",
-          "content": "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries."
-        },
-        {
-          "title": "Alignment Principles",
-          "content": "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body."
-        },
-        {
-          "title": "Bandhas (Energy Locks)",
-          "content": "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice."
-        },
-        {
-          "title": "Mudras (Yogic Gestures)",
-          "content": "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation."
-        }
-      ]
+      "careerImpact": "Career Impact:"
     },
     "schedule": {
       "heading": "A Day at YogaGarhi Ashram",
@@ -5862,12 +5676,12 @@
       "incKit": "Yoga mat and practice props provided",
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
-      "incPickup": "Airport pickup from Denpasar (DPS) on course arrival date",
+      "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
       "incPre": "Complimentary online Pre-TTC preparation module",
       "incRepeat": "Lifetime course repetition privilege (tuition-free)",
       "notIncHeading": "Not Included",
       "notIncFlights": "International and domestic flight tickets",
-      "notIncVisa": "Indonesian visa fees",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "Personal travel and medical insurance"
     },
     "pricing": {
@@ -6003,120 +5817,126 @@
       },
       "detailedModules": [
         {
-          "title": "Ashtanga Yoga Postures",
+          "title": "高阶体式精进与手法调整",
           "items": [
-            "Complete Ashtanga yoga primary series by K. Pattabhi Jois",
-            "Week 1: Introduction & Sun salutation A & B",
-            "Week 2: Standing sequence postures & yoga props",
-            "Week 3: Seated sequence & Finishing postures",
-            "Week 4: Mysore style & Teaching practice"
+            "Advanced arm balances & inversions",
+            "Therapeutic modifications & props usage",
+            "Working with injuries & limitations",
+            "Advanced sequencing principles"
           ]
         },
         {
-          "title": "Yoga Philosophy",
+          "title": "瑜伽理疗应用",
           "items": [
-            "Complete yoga sutras of Patanjali",
-            "Eight limbs of Ashtanga Yoga",
-            "Pancha-Vayus & Panchakoshas",
-            "Sattva, Rajas & Tamas (Triguna)",
-            "Introduction to Vedas",
-            "Lives of yogis (Inspiring stories)"
+            "Yoga for back pain & spinal health",
+            "Yoga for stress & anxiety",
+            "Prenatal & postnatal yoga",
+            "Yoga for seniors",
+            "Restorative yoga techniques"
           ]
         },
         {
-          "title": "Pranayama Breathing Practices",
+          "title": "高阶调息法与能量锁(Bandhas)",
           "items": [
-            "Complete pranayama techniques",
-            "All six Shatkarma cleansing practices",
-            "Advanced breathing: Sheetali, Sheetkari",
-            "Kumbhaka (breath retention)",
-            "Integration with asana practice"
+            "Advanced kumbhaka techniques",
+            "Kriyas for energy awakening",
+            "Bandha integration in advanced asanas",
+            "Pranayama for kundalini activation",
+            "Breath practices for nervous system balance"
           ]
         },
         {
-          "title": "Recitation of Sacred Sound",
+          "title": "瑜伽睡眠(Yoga Nidra)与深度冥想",
           "items": [
-            "Complete mantra collection",
-            "Om Tryambakam Yajamahe",
-            "Hare Rama, Hare Krishna (Maha mantra)",
-            "Yogena Cittasya (Sloka on Sage Patanjali)",
-            "Daily mantra chanting practice"
+            "Complete Yoga Nidra training",
+            "Leading guided meditations",
+            "Chakra meditation techniques",
+            "Sound & mantra meditation",
+            "Silent retreat practices"
           ]
         },
         {
-          "title": "Anatomy and Physiology",
+          "title": "经典瑜伽哲学研习",
           "items": [
-            "Complete body systems study",
-            "Physiology of muscles & joints",
-            "Respiratory & Nervous system",
-            "Food & Digestive System",
-            "Workshop on different Asanas"
+            "Bhagavad Gita study",
+            "Upanishads exploration",
+            "Tantra philosophy",
+            "Samkhya & Vedanta",
+            "Applied philosophy in modern life"
           ]
         },
         {
-          "title": "Teaching Methodology",
+          "title": "高阶解剖学与生物力学",
           "items": [
-            "Complete class sequencing",
-            "Demonstration & observation principles",
-            "Mental & emotional preparation",
-            "Step by step class structure planning",
-            "Practicum & teaching evaluations"
+            "Subtle body anatomy (Nadis, Chakras)",
+            "Myofascial release techniques",
+            "Biomechanics of complex poses",
+            "Injury prevention & working safely with common injuries",
+            "Yoga therapy principles"
           ]
         },
         {
-          "title": "Meditation & Bandhas",
+          "title": "专业瑜伽导师执业：工作坊、静修营与线上教学",
           "items": [
-            "Osho Dynamic meditation",
-            "Nada Brahma Meditation",
-            "Antar Mouna & Ajapa Japa",
-            "All four Bandhas mastery",
-            "Integration with asana & pranayama"
+            "Workshop & retreat planning",
+            "Private session design",
+            "Online class delivery",
+            "Business of yoga & ethical studio management"
           ]
         },
         {
-          "title": "Art of Alignment & Hands-on Adjustments",
+          "title": "高阶精准顺位与生物力学校准",
           "items": [
-            "Comprehensive biomechanics and functional alignment for classical yoga postures",
-            "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
-            "Understanding individual anatomical variations, skeletal compression vs tension",
-            "Modification strategies using props and stance adjustments for diverse student flexibility"
+            "Micro-alignment principles and postural observation for advanced and complex asanas",
+            "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+            "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+            "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
           ]
         },
         {
-          "title": "Classical Hatha Yoga Practice",
+          "title": "高阶经典哈他瑜伽",
           "items": [
-            "In-depth study of classical Hatha asana principles and sustained holds",
-            "Complete Hatha sequencing: preparatory warming, peak postures, and counter-poses",
-            "Balancing solar (Ha) and lunar (Tha) energies through mindful posture practice",
-            "Integration of Bandhas and Mudras within traditional Hatha asana holding"
+            "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+            "Cultivating steadiness and inward focus through still posture holding and measured breath",
+            "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+            "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
           ]
         },
         {
-          "title": "Iyengar Yoga & Precision Alignment",
+          "title": "高阶艾扬格瑜伽与修复精准顺位",
           "items": [
-            "Methodical alignment utilizing blocks, straps, blankets, and props",
-            "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
-            "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
-            "Restorative Iyengar prop setups for supported holding and quiet focus"
+            "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
+            "Structural alignment techniques for posture balance and foundational body mechanics",
+            "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+            "Postural observation for personalized practice"
           ]
         },
         {
-          "title": "Vinyasa Flow & Dynamic Sequencing",
+          "title": "创意串联进程(Vinyasa Krama)与大师编排",
           "items": [
-            "Intelligent sequencing architecture: progressive warm-up, peak pose, and cool down",
-            "Dynamic transitions, jump-backs, and jump-throughs with breath awareness",
-            "Creating thematic vinyasa classes for varying student levels and intentions",
-            "Pacing, tempo modulation, and holding space during energetic flowing sequences"
+            "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+            "Creating themed classes and peak posture staging",
+            "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+            "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+            "Designing transformative workshops, masterclasses, and multi-day retreat flows"
           ]
         },
         {
-          "title": "Additional Classes",
+          "title": "教学督导实操与综合考核",
           "items": [
-            "Sound Healing sessions",
-            "Beach Yoga experience",
-            "Yin Yoga & Acro Yoga",
-            "Ayurveda fundamentals",
-            "Agni Hotra (Fire ceremony)"
+            "Supervised practice teaching with real-time feedback",
+            "Structured peer feedback and group reflection",
+            "One-on-one teaching mentorship with master faculty",
+            "Practical alignment and adjustment evaluation",
+            "Final comprehensive teaching assessment"
+          ]
+        },
+        {
+          "title": "名师特设工作坊",
+          "items": [
+            "声音疗愈工作坊",
+            "Ayurveda for yoga teachers",
+            "Chakra balancing practices"
           ]
         }
       ]
@@ -6539,53 +6359,7 @@
       "hoverMore": "悬停查看详细内容",
       "takeaway": "核心掌握技能",
       "carryHome": "融入日常生活",
-      "careerImpact": "对实际教学的深远影响：",
-      "cards": [
-        {
-          "title": "阿斯汤加瑜伽体式",
-          "content": "阿斯汤加初级序列完整教学。循序渐进掌握拜日式A与B、站立序列、坐姿序列以及迈索尔风格自主练习。"
-        },
-        {
-          "title": "哈他与流瑜伽流派",
-          "content": "风神体式系列、拜日式变体、站立与坐姿体式、后弯、前屈、倒立以及科学编排体式序列的方法。"
-        },
-        {
-          "title": "瑜伽哲学",
-          "content": "深度研读帕坦伽利的《瑜伽经》、阿斯汤加八支体系、脉络（Nadis）、脉轮（Chakras）、五大元气与三德（Gunas）智慧。"
-        },
-        {
-          "title": "调息与呼吸控制法",
-          "content": "系统掌握胜利呼吸（Ujjayi）、风箱调息、圣光调息、经络净化呼吸、蜂鸣调息及清凉调息等古典技法。"
-        },
-        {
-          "title": "解剖学与运动生理学",
-          "content": "人体运动平面、关节保护原则、脊柱骨盆与膝踝生物力学、呼吸机制以及神经肌肉系统的深入剖析。"
-        },
-        {
-          "title": "教学法与实操指导",
-          "content": "课程设计编排、物理与口头正位调整、不同水平学员应对方案、声音运用以及标准化课程规划。"
-        },
-        {
-          "title": "冥想与梵音唱诵",
-          "content": "多种古典冥想练习、神圣梵文唱诵、一点专注法（Trataka）、奥修动态冥想与静默实修。"
-        },
-        {
-          "title": "艾扬格瑜伽与辅助用具",
-          "content": "注重精准正位，通过瑜伽砖、伸展带、毛毯等辅助工具帮助学员建立稳定端正的骨骼对齐，预防损伤。"
-        },
-        {
-          "title": "正位对齐原则",
-          "content": "安全实修的基础：深度理解关节堆叠、肌肉协同发力与骨骼力学，有效保护并增强机体活力。"
-        },
-        {
-          "title": "能量锁（Bandhas）",
-          "content": "掌握会阴锁（Mula）、收腹锁（Uddiyana）与下颌锁（Jalandhara），调控气血循环，巩固核心并深化冥想。"
-        },
-        {
-          "title": "手印与身印（Mudras）",
-          "content": "导引体内生命能量的神圣手印与体印，凝聚意念，辅助呼吸控制并连接更高维度的意识状态。"
-        }
-      ]
+      "careerImpact": "对实际教学的深远影响："
     },
     "schedule": {
       "heading": "静修院经典日程安排",
@@ -6636,12 +6410,12 @@
       "incKit": "高品质专业瑜伽垫及全套辅具免费使用",
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "传统开学与结业神圣火祭（Agni Hotra）",
-      "incPickup": "开学报到日登巴萨机场（DPS）免费专车接机",
+      "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "免费 Pre-TTC 线上行前预科学堂",
       "incRepeat": "未来对应班期终身免学费复训资格",
       "notIncHeading": "费用未包含项目",
       "notIncFlights": "往返国际及国内机票",
-      "notIncVisa": "印度尼西亚入境签证费用",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "境外旅行及医疗保险"
     },
     "pricing": {
@@ -6767,118 +6541,113 @@
         {
           "title": "阿斯汤加瑜伽体式",
           "items": [
-            "帕塔比·乔伊斯阿斯汤加初级序列完整教学",
-            "第1周：导论与拜日式A与B",
-            "第2周：站立体式与辅助工具运用",
-            "第3周：坐姿体式与结束序列",
-            "第4周：迈索尔自主练习与教学实操"
+            "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+            "Standing sequence postures & use of yoga props",
+            "Primary series practiced thoroughly",
+            "Mysore style practice examination"
           ]
         },
         {
           "title": "瑜伽哲学",
           "items": [
-            "帕坦伽利《瑜伽经》完整研读",
-            "阿斯汤加瑜伽八支分法",
-            "五大气（Pancha-Vayus）与五鞘（Koshas）",
-            "三德论（Sattva, Rajas, Tamas）",
-            "吠陀经典概论",
-            "伟大瑜伽导师的智慧故事"
+            "Introduction to Yoga Philosophy and its evolution",
+            "Introduction to yoga sutras of Patanjali",
+            "Nadis (Ida, Pingala & Sushumna)",
+            "Chakras - the energy channels",
+            "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+            "Eight limbs of Ashtanga Yoga"
           ]
         },
         {
-          "title": "调息与呼吸法实践",
+          "title": "调息呼吸法练习",
           "items": [
-            "古典调息法完整体系",
-            "六大净化法（Shatkarma）",
-            "进阶呼吸法：清凉调息与啸声调息",
-            "屏息（Kumbhaka）控制",
-            "与体式练习的深度结合"
+            "Introduction to Pranayama and its benefits",
+            "Introduction to Shatkarma (six cleansing practices)",
+            "Clavicular, Thoracic & Diaphragmatic Breathing",
+            "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+            "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi",
+            "Introduction to Mudras & energetic seals"
           ]
         },
         {
-          "title": "神圣梵音唱诵",
+          "title": "神圣梵音颂唱",
           "items": [
-            "传统梵文唱诵全集",
-            "大自在天咒（Om Tryambakam）",
-            "伟大曼陀罗（Maha Mantra）",
-            "帕坦伽利敬礼颂",
-            "每日唱诵晨练"
+            "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+            "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+            "Guru Brahma Guru Vishnu (Guru stotram)",
+            "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
           ]
         },
         {
-          "title": "解剖学与运动生理学",
+          "title": "解剖学与生理学",
           "items": [
-            "人体各大生理系统研习",
-            "肌肉与骨骼关节力学",
-            "呼吸系统与神经调节",
-            "饮食与消化代谢系统",
-            "体式解剖与运动保护工坊"
+            "Body Movement & Planes",
+            "Joints and How to Protect them in Asanas",
+            "Anatomy of Ankle, Knee, Spine & Shoulder",
+            "Breathing mechanism in Yoga"
           ]
         },
         {
-          "title": "瑜伽教学法",
+          "title": "教学法与实践",
           "items": [
-            "完整课程体式编排逻辑",
-            "示范与观察要领",
-            "导师心理与情绪调适",
-            "标准化课程规划步骤",
-            "实训讲课与资深导师评审"
+            "How to sequence a class",
+            "Working with breathing and posture",
+            "Adjustments and corrections",
+            "Working with different level of students",
+            "Building positive & conscious communication"
           ]
         },
         {
-          "title": "冥想与能量锁",
+          "title": "冥想静心",
           "items": [
-            "奥修动态冥想",
-            "梵音共振冥想（Nada Brahma）",
-            "内在静默观照（Antar Mouna）",
-            "四大能量锁（Bandhas）体悟",
-            "调息体式综合能量融合"
+            "Introduction to Meditation",
+            "Different types of meditation techniques",
+            "Om / Mantra Meditation",
+            "Trataka and Silence Meditation"
           ]
         },
         {
-          "title": "精准对齐与手法矫正",
+          "title": "体式顺位原则与辅具调整",
           "items": [
-            "经典体式的功能性解剖正位",
-            "口头口令与安全手法调整",
-            "个体骨骼结构差异辨析",
-            "运用瑜伽砖与拉伸带的退阶策略"
+            "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+            "Safe execution and anatomical alignment in foundational standing and seated poses",
+            "Effective use of props (blocks, straps, bolsters) to support safe practice",
+            "Identifying common postural habits and applying self-correction techniques"
           ]
         },
         {
-          "title": "古典哈他瑜伽实践",
+          "title": "传统哈他瑜伽",
           "items": [
-            "哈他体式精髓与静态保持深度",
-            "哈他完整编排：热身、高潮体式与代偿体式",
-            "调和太阳与月亮双向能量",
-            "静态保持中的能量锁与手印整合"
+            "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+            "Traditional Surya Namaskar variations with breath-synchronized awareness",
+            "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+            "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
           ]
         },
         {
-          "title": "艾扬格精准瑜伽",
+          "title": "艾扬格瑜伽基础",
           "items": [
-            "系统利用辅具的正位教学",
-            "骨盆、脊柱与肩带的几何对齐",
-            "安全倒立序列的阶梯式准备",
-            "修复性辅具支持深度放松"
+            "Introduction to precision, geometry, and anatomical awareness in asanas",
+            "Prop-assisted alignment techniques using blocks, belts, and wall support",
+            "Building strength, stability, and postural endurance through extended holds",
+            "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
           ]
         },
         {
-          "title": "流瑜伽与动态序列",
+          "title": "流瑜伽动态编排",
           "items": [
-            "智能序列架构：热身、峰值与放松",
-            "呼吸引领的动态流动与跳跃衔接",
-            "针对不同水平的主题课程研发",
-            "节奏掌控与能量场域维护"
+            "Breath-synchronized movement connecting postures into fluid sequences",
+            "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+            "Coordinating conscious inhalation with heart openers and exhalation with folds",
+            "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
           ]
         },
         {
-          "title": "特色课程与巴厘岛体验",
+          "title": "特色拓展课程",
           "items": [
-            "颂钵音疗（Sound Healing）",
-            "巴厘岛海滩户外瑜伽",
-            "阴瑜伽与双人阿克罗瑜伽",
-            "阿育吠陀体质学基础",
-            "传统阿格尼霍特拉（火供）仪式"
+            "Kirtan Meditation",
+            "Yin Yoga & Partner Yoga",
+            "阿育吠陀生活方式课程"
           ]
         }
       ]
@@ -7398,12 +7167,12 @@
       "incKit": "高品质专业瑜伽垫及全套辅具免费使用",
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "传统开学与结业神圣火祭（Agni Hotra）",
-      "incPickup": "开学报到日登巴萨机场（DPS）免费专车接机",
+      "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "免费 Pre-TTC 线上行前预科学堂",
       "incRepeat": "未来对应班期终身免学费复训资格",
       "notIncHeading": "费用未包含项目",
       "notIncFlights": "往返国际及国内机票",
-      "notIncVisa": "印度尼西亚入境签证费用",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "境外旅行及医疗保险"
     },
     "pricing": {
@@ -8075,53 +7844,7 @@
       "hoverMore": "Hover to see more",
       "takeaway": "The Takeaway",
       "carryHome": "Carry Home",
-      "careerImpact": "Career Impact:",
-      "cards": [
-        {
-          "title": "Ashtanga Yoga Postures",
-          "content": "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice."
-        },
-        {
-          "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology."
-        },
-        {
-          "title": "Yoga Philosophy",
-          "content": "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis."
-        },
-        {
-          "title": "Pranayama & Breathing",
-          "content": "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari."
-        },
-        {
-          "title": "Anatomy & Physiology",
-          "content": "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system."
-        },
-        {
-          "title": "Teaching Methodology",
-          "content": "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning."
-        },
-        {
-          "title": "Meditation & Mantra",
-          "content": "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness."
-        },
-        {
-          "title": "Iyengar Yoga",
-          "content": "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries."
-        },
-        {
-          "title": "Alignment Principles",
-          "content": "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body."
-        },
-        {
-          "title": "Bandhas (Energy Locks)",
-          "content": "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice."
-        },
-        {
-          "title": "Mudras (Yogic Gestures)",
-          "content": "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation."
-        }
-      ]
+      "careerImpact": "Career Impact:"
     },
     "schedule": {
       "heading": "A Day at YogaGarhi Ashram",
@@ -8172,12 +7895,12 @@
       "incKit": "Yoga mat and practice props provided",
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
-      "incPickup": "Airport pickup from Denpasar (DPS) on course arrival date",
+      "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "Complimentary online Pre-TTC preparation module",
       "incRepeat": "Lifetime course repetition privilege (tuition-free)",
       "notIncHeading": "Not Included",
       "notIncFlights": "International and domestic flight tickets",
-      "notIncVisa": "Indonesian visa fees",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "Personal travel and medical insurance"
     },
     "pricing": {
@@ -8313,120 +8036,126 @@
       },
       "detailedModules": [
         {
-          "title": "Ashtanga Yoga Postures",
+          "title": "高阶体式精进与手法调整",
           "items": [
-            "Complete Ashtanga yoga primary series by K. Pattabhi Jois",
-            "Week 1: Introduction & Sun salutation A & B",
-            "Week 2: Standing sequence postures & yoga props",
-            "Week 3: Seated sequence & Finishing postures",
-            "Week 4: Mysore style & Teaching practice"
+            "Advanced arm balances & inversions",
+            "Therapeutic modifications & props usage",
+            "Working with injuries & limitations",
+            "Advanced sequencing principles"
           ]
         },
         {
-          "title": "Yoga Philosophy",
+          "title": "瑜伽理疗应用",
           "items": [
-            "Complete yoga sutras of Patanjali",
-            "Eight limbs of Ashtanga Yoga",
-            "Pancha-Vayus & Panchakoshas",
-            "Sattva, Rajas & Tamas (Triguna)",
-            "Introduction to Vedas",
-            "Lives of yogis (Inspiring stories)"
+            "Yoga for back pain & spinal health",
+            "Yoga for stress & anxiety",
+            "Prenatal & postnatal yoga",
+            "Yoga for seniors",
+            "Restorative yoga techniques"
           ]
         },
         {
-          "title": "Pranayama Breathing Practices",
+          "title": "高阶调息法与能量锁(Bandhas)",
           "items": [
-            "Complete pranayama techniques",
-            "All six Shatkarma cleansing practices",
-            "Advanced breathing: Sheetali, Sheetkari",
-            "Kumbhaka (breath retention)",
-            "Integration with asana practice"
+            "Advanced kumbhaka techniques",
+            "Kriyas for energy awakening",
+            "Bandha integration in advanced asanas",
+            "Pranayama for kundalini activation",
+            "Breath practices for nervous system balance"
           ]
         },
         {
-          "title": "Recitation of Sacred Sound",
+          "title": "瑜伽睡眠(Yoga Nidra)与深度冥想",
           "items": [
-            "Complete mantra collection",
-            "Om Tryambakam Yajamahe",
-            "Hare Rama, Hare Krishna (Maha mantra)",
-            "Yogena Cittasya (Sloka on Sage Patanjali)",
-            "Daily mantra chanting practice"
+            "Complete Yoga Nidra training",
+            "Leading guided meditations",
+            "Chakra meditation techniques",
+            "Sound & mantra meditation",
+            "Silent retreat practices"
           ]
         },
         {
-          "title": "Anatomy and Physiology",
+          "title": "经典瑜伽哲学研习",
           "items": [
-            "Complete body systems study",
-            "Physiology of muscles & joints",
-            "Respiratory & Nervous system",
-            "Food & Digestive System",
-            "Workshop on different Asanas"
+            "Bhagavad Gita study",
+            "Upanishads exploration",
+            "Tantra philosophy",
+            "Samkhya & Vedanta",
+            "Applied philosophy in modern life"
           ]
         },
         {
-          "title": "Teaching Methodology",
+          "title": "高阶解剖学与生物力学",
           "items": [
-            "Complete class sequencing",
-            "Demonstration & observation principles",
-            "Mental & emotional preparation",
-            "Step by step class structure planning",
-            "Practicum & teaching evaluations"
+            "Subtle body anatomy (Nadis, Chakras)",
+            "Myofascial release techniques",
+            "Biomechanics of complex poses",
+            "Injury prevention & working safely with common injuries",
+            "Yoga therapy principles"
           ]
         },
         {
-          "title": "Meditation & Bandhas",
+          "title": "专业瑜伽导师执业：工作坊、静修营与线上教学",
           "items": [
-            "Osho Dynamic meditation",
-            "Nada Brahma Meditation",
-            "Antar Mouna & Ajapa Japa",
-            "All four Bandhas mastery",
-            "Integration with asana & pranayama"
+            "Workshop & retreat planning",
+            "Private session design",
+            "Online class delivery",
+            "Business of yoga & ethical studio management"
           ]
         },
         {
-          "title": "Art of Alignment & Hands-on Adjustments",
+          "title": "高阶精准顺位与生物力学校准",
           "items": [
-            "Comprehensive biomechanics and functional alignment for classical yoga postures",
-            "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
-            "Understanding individual anatomical variations, skeletal compression vs tension",
-            "Modification strategies using props and stance adjustments for diverse student flexibility"
+            "Micro-alignment principles and postural observation for advanced and complex asanas",
+            "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+            "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+            "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
           ]
         },
         {
-          "title": "Classical Hatha Yoga Practice",
+          "title": "高阶经典哈他瑜伽",
           "items": [
-            "In-depth study of classical Hatha asana principles and sustained holds",
-            "Complete Hatha sequencing: preparatory warming, peak postures, and counter-poses",
-            "Balancing solar (Ha) and lunar (Tha) energies through mindful posture practice",
-            "Integration of Bandhas and Mudras within traditional Hatha asana holding"
+            "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+            "Cultivating steadiness and inward focus through still posture holding and measured breath",
+            "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+            "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
           ]
         },
         {
-          "title": "Iyengar Yoga & Precision Alignment",
+          "title": "高阶艾扬格瑜伽与修复精准顺位",
           "items": [
-            "Methodical alignment utilizing blocks, straps, blankets, and props",
-            "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
-            "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
-            "Restorative Iyengar prop setups for supported holding and quiet focus"
+            "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
+            "Structural alignment techniques for posture balance and foundational body mechanics",
+            "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+            "Postural observation for personalized practice"
           ]
         },
         {
-          "title": "Vinyasa Flow & Dynamic Sequencing",
+          "title": "创意串联进程(Vinyasa Krama)与大师编排",
           "items": [
-            "Intelligent sequencing architecture: progressive warm-up, peak pose, and cool down",
-            "Dynamic transitions, jump-backs, and jump-throughs with breath awareness",
-            "Creating thematic vinyasa classes for varying student levels and intentions",
-            "Pacing, tempo modulation, and holding space during energetic flowing sequences"
+            "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+            "Creating themed classes and peak posture staging",
+            "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+            "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+            "Designing transformative workshops, masterclasses, and multi-day retreat flows"
           ]
         },
         {
-          "title": "Additional Classes",
+          "title": "教学督导实操与综合考核",
           "items": [
-            "Sound Healing sessions",
-            "Beach Yoga experience",
-            "Yin Yoga & Acro Yoga",
-            "Ayurveda fundamentals",
-            "Agni Hotra (Fire ceremony)"
+            "Supervised practice teaching with real-time feedback",
+            "Structured peer feedback and group reflection",
+            "One-on-one teaching mentorship with master faculty",
+            "Practical alignment and adjustment evaluation",
+            "Final comprehensive teaching assessment"
+          ]
+        },
+        {
+          "title": "名师特设工作坊",
+          "items": [
+            "声音疗愈工作坊",
+            "Ayurveda for yoga teachers",
+            "Chakra balancing practices"
           ]
         }
       ]

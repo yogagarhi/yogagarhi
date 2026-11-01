@@ -170,6 +170,7 @@ export default async function Page({
         home: homeTrimmed,
     };
 
+    const upcomingBatches = filterUpcomingBatches(BATCHES_300_HOUR_RISHIKESH);
     const course = courseData["300-hour-rishikesh"];
     const isEn = locale === "en";
     const pageUrl = isEn
@@ -240,6 +241,41 @@ export default async function Page({
     /* =========================
        FAQ SCHEMA (16 Comprehensive Questions)
     ========================= */
+    
+    const eventSchemas = upcomingBatches.map((batch: any) => ({
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": `300 Hour Yoga Teacher Training Rishikesh - ${batch.date}`,
+        "startDate": batch.startDate,
+        "endDate": batch.endDate,
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "YogaGarhi Rishikesh Campus",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Tapovan",
+                "addressLocality": "Rishikesh",
+                "addressRegion": "Uttarakhand",
+                "postalCode": "249192",
+                "addressCountry": "IN"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "YogaGarhi",
+            "url": "https://www.yogagarhi.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "1299",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": pageUrl
+        }
+    }));
+        
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -274,6 +310,15 @@ export default async function Page({
 
     return (
         <>
+            
+            {/* Event Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(eventSchemas),
+                }}
+            />
+        
             {/* Course Schema */}
             <script
                 type="application/ld+json"

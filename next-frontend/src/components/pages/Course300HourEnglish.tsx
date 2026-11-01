@@ -1,5 +1,6 @@
 "use client";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
+import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -64,7 +65,6 @@ const insta5 = getCloudinaryImage("insta-5.jpg");
 const yogaAllianceBg = getCloudinaryImage("yoga-alliance-bg.jpg");
 const yaRyt200 = getCloudinaryImage("ya-ryt-200.png");
 const healthyMeals = getCloudinaryImage("healthy-meals.jpg");
-const yaRys100 = getCloudinaryImage("ya-rys-100.png");
 const yaRys200 = getCloudinaryImage("ya-rys-200.jpg");
 const yaAllCertifications = getCloudinaryImage("ya-all-certifications.jpg");
 
@@ -359,7 +359,7 @@ const whatYouWillReceive = [
   },
   {
     title: "Peaceful Bali Surroundings",
-    description: "Experience yoga in the lap of nature. Calm beaches and greenery deepen your practice.",
+    description: "Experience yoga in the lap of nature. Lush rice fields and serene greenery deepen your practice.",
     icon: Mountain,
     image: apartBaliSurroundings
   },
@@ -593,32 +593,7 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [showBookingDialog, setShowBookingDialog] = useState(false);
 
-  // Carousel state for syllabus
-  const [syllabusApi, setSyllabusApi] = useState<CarouselApi>();
-  const [currentSyllabus, setCurrentSyllabus] = useState(1);
-  const syllabusTotalItems = 11;
 
-  useEffect(() => {
-    if (!syllabusApi) return;
-
-    const updateProgress = () => {
-      const selected = syllabusApi.selectedScrollSnap();
-      const totalSnaps = syllabusApi.scrollSnapList().length;
-
-      if (totalSnaps <= 1) {
-        setCurrentSyllabus(1);
-        return;
-      }
-
-      // Map snap index 0...totalSnaps-1 to item index 1...11
-      const scaledCurrent = Math.round((selected / (totalSnaps - 1)) * (syllabusTotalItems - 1)) + 1;
-      setCurrentSyllabus(scaledCurrent);
-    };
-
-    updateProgress();
-    syllabusApi.on("select", updateProgress);
-    syllabusApi.on("reInit", updateProgress);
-  }, [syllabusApi]);
   const [showEnrollDialog, setShowEnrollDialog] = useState(false);
   const [showQuickEnquiryDialog, setShowQuickEnquiryDialog] = useState(false);
   const [quickEnquiryForm, setQuickEnquiryForm] = useState({
@@ -1163,10 +1138,10 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
                     <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                      <span className="text-sm text-muted-foreground line-through">$3,125</span>
+                      {SHOW_COMPARE_PRICE && (<span className="text-sm text-muted-foreground line-through">$3,125</span>)}
                       <span className="font-heading text-2xl md:text-3xl font-bold text-primary animate-pulse">$2,499</span>
                     </div>
-                    <span className="inline-block mt-1 px-2 py-0.5 text-xs font-medium bg-green-100 text-green-700 rounded-full">Save $626</span>
+                    {SHOW_COMPARE_PRICE && (<span className="inline-block mt-1 px-2 py-0.5 text-xs font-medium bg-green-100 text-green-700 rounded-full">Save $626</span>)}
                   </div>
 
                   {/* Book Now Button */}
@@ -1680,12 +1655,11 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
                 Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
                 you will receive an internationally recognized certification, allowing you to become a
                 <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                This certification opens doors for you to teach yoga anywhere in the world.
+                Combined with an RYT 200 and at least 100 hours of teaching experience, this training lets you register as an RYT 500 with Yoga Alliance.
               </p>
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <Image src={yaRys100} alt="RYS 100" width={100} height={100} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <Image src={yaRys200} alt="RYS 200" width={100} height={100} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <Image src={yaRyt200} alt="RYT 200" width={100} height={100} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
               </div>
@@ -1717,125 +1691,6 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
               Comprehensive curriculum covering all aspects of yoga teacher training
             </p>
-
-            {/* Horizontal Scrollable Cards */}
-            <div className="relative group/carousel">
-              <Carousel
-                setApi={setSyllabusApi}
-                opts={{
-                  align: "start",
-                  loop: false,
-                }}
-                className="w-full"
-              >
-                <CarouselContent className="-ml-4 md:-ml-6">
-                  {[
-                    {
-                      title: "Ashtanga Yoga Postures",
-                      content: "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice.",
-                      image: syllabusAshtanga
-                    },
-                    {
-                      title: "Hatha & Vinyasa Flow",
-                      content: "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology.",
-                      image: syllabusHathaVinyasa
-                    },
-                    {
-                      title: "Yoga Philosophy",
-                      content: "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis.",
-                      image: syllabus3
-                    },
-                    {
-                      title: "Pranayama & Breathing",
-                      content: "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari.",
-                      image: syllabusPranayamaBreathing
-                    },
-                    {
-                      title: "Anatomy & Physiology",
-                      content: "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system.",
-                      image: syllabusAnatomyPhysiology
-                    },
-                    {
-                      title: "Teaching Methodology",
-                      content: "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning.",
-                      image: syllabus6
-                    },
-                    {
-                      title: "Meditation & Mantra",
-                      content: "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness.",
-                      image: syllabusMeditationMantra
-                    },
-                    {
-                      title: "Iyengar Yoga",
-                      content: "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries.",
-                      image: syllabus8
-                    },
-                    {
-                      title: "Alignment Principles",
-                      content: "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body.",
-                      image: syllabus9
-                    },
-                    {
-                      title: "Bandhas (Energy Locks)",
-                      content: "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice.",
-                      image: syllabus10
-                    },
-                    {
-                      title: "Mudras (Yogic Gestures)",
-                      content: "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation.",
-                      image: syllabusMudras
-                    },
-                  ].map((item, index) => (
-                    <CarouselItem key={index} className="pl-4 md:pl-6 basis-[85%] sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                      <div className="flex flex-col h-full bg-card rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all duration-300 group">
-                        {/* Rectangular Image */}
-                        <div className="relative aspect-[4/3] overflow-hidden">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            className="object-cover transition-transform duration-700 group-hover:scale-110"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                          {/* Slide Counter - Mobile Friendly */}
-                          <div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-md text-primary-foreground rounded-full px-3 py-1 text-xs font-bold shadow-lg flex items-center gap-1">
-                            <span className="text-secondary">{index + 1}</span>
-                            <span className="opacity-60">/</span>
-                            <span>11</span>
-                          </div>
-                        </div>
-
-                        {/* Text Content */}
-                        <div className="p-6 flex flex-col flex-1">
-                          <h3 className="font-heading text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                            {item.title}
-                          </h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
-                            {item.content}
-                          </p>
-                        </div>
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-              </Carousel>
-
-              {/* Custom Scroll Progress Bar */}
-              <div className="mt-8 max-w-xs mx-auto">
-                <div className="h-1 w-full bg-secondary rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-primary transition-all duration-300 ease-out"
-                    style={{ width: `${(currentSyllabus / syllabusTotalItems) * 100}%` }}
-                  />
-                </div>
-                <div className="flex justify-between mt-2 px-1">
-                  <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-bold">Start</span>
-                  <span className="text-xs font-heading font-bold text-primary">{currentSyllabus} of {syllabusTotalItems}</span>
-                  <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-bold">End</span>
-                </div>
-              </div>
-            </div>
 
             {/* Expandable Detailed Syllabus (Semantic HTML) */}
             {syllabusSlot}
@@ -3661,7 +3516,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                           {/* Early Bird */}
                           <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
                             <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                            <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                            {SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>)}
                           </div>
 
                           {/* Book Button */}
@@ -3716,10 +3571,10 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $2,499
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$2,799</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$2,799</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Double Sharing */}
@@ -3728,10 +3583,10 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $2,699
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$2,999</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$2,999</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Private Room */}
@@ -3740,10 +3595,10 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $3,499
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$3,799</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$3,799</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* CTA */}

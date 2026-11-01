@@ -66,7 +66,7 @@
     "popupBatches": "Groepen in november en december",
     "popupDiscount": "Vaste $300 korting",
     "contactUs": "Neem contact op",
-    "heroSpecialOfferPrefix": "Boek je YTT van april t/m juli en ontvang een professionele fotoshoot, een tour langs heilige tempels, luchthaventransfers en culturele activiteiten –",
+    "heroSpecialOfferPrefix": "Boek je YTT voor de komende data en ontvang een professionele fotoshoot, een tour langs heilige tempels, luchthaventransfers en culturele activiteiten –",
     "heroSpecialOfferHighlight": "allemaal gratis inbegrepen.",
     "courseSpecialOfferPrefix": "Boek je YTT van april t/m juli en ontvang een professionele fotoshoot, een tour langs heilige tempels, luchthaventransfers en culturele activiteiten –",
     "courseSpecialOfferHighlight": "allemaal gratis inbegrepen.",
@@ -411,9 +411,9 @@
       "chatWhatsApp": "Stuur ons een WhatsApp",
       "emailUs": "Stuur ons een e-mail",
       "certifiedBadge": "Yoga Alliance gecertificeerd",
-      "graduates": "Afgestudeerden",
-      "countries": "Landen",
-      "rating": "Beoordeling",
+      "graduates": "Afgestudeerden over de hele school",
+      "countries": "Landen over de hele school",
+      "rating": "Beoordeling over de hele school",
       "wonderingTitle": "Vraag je je af of deze reis bij jou past?",
       "wonderingSub": "Praat met ons via WhatsApp of e-mail — we antwoorden eerlijk"
     },
@@ -523,11 +523,13 @@
       "whatsappUs": "Stuur ons een WhatsApp",
       "responseTiming": "We reageren gewoonlijk binnen 24 uur",
       "happyStudents": "+497 tevreden studenten"
-    }
+    },
+    "metaTitle": "Yogadocentenopleiding in Bali (Ubud) – 100, 200, 300 Uur | YogaGarhi",
+    "metaDesc": "Yoga Alliance RYS 200 & RYS 300 school nabij Ubud, Bali. Kleine groepen van 8–10, multi-stijl yoga, 1 jaar mentorschap. 5★ op Google. Rishikesh & Varkala vanaf 2027."
   },
   "course200": {
-    "metaTitle": "200 Uur Yogadocentenopleiding in Bali | YogaGarhi",
-    "metaDesc": "Yoga Alliance gecertificeerde 200 uur yogadocentenopleiding in Ubud, Bali. 24-daagse residentiële verdieping met 8–10 studenten, Ayurveda en authentieke Himalayalijn.",
+    "metaTitle": "200 Uur Yogadocentenopleiding Bali – 24 Dagen, vanaf $999 | YogaGarhi",
+    "metaDesc": "24-daagse Yoga Alliance RYT 200 opleiding nabij Ubud, Bali. Kleine groepen van 8–10, Hatha, Vinyasa & Ashtanga, 1 jaar mentorschap. 5★ op Google. Vanaf $999.",
     "heroTitle": "200 Uur Yogadocentenopleiding in Bali",
     "heroSub": "Een authentieke 24-daagse residentiële multi-style verdieping in Ubud, Bali. Yoga Alliance gecertificeerd als RYT 200 met maximaal 8–10 studenten per groep.",
     "hero": {
@@ -1401,8 +1403,8 @@
     }
   },
   "course100": {
-    "metaTitle": "100-Uurs Yoga Docentenopleiding op Bali | Yoga Alliance Ubud",
-    "metaDesc": "Verdiep je beoefening met de 100-uurs Yoga Docentenopleiding in Ubud, Bali. Geschikt voor beginners en biologische maaltijden. Reserveer vandaag!",
+    "metaTitle": "100 Uur Yogadocentenopleiding Bali – 12 Dagen voor Beginners | YogaGarhi",
+    "metaDesc": "12-daagse beginnersvriendelijke 100-urige yogafundamentcursus nabij Ubud, Bali. Kleine groepen, multi-stijl yoga, pranayama & filosofie. Vanaf $599.",
     "heroTitle": "100-Uurs Yoga Docentenopleiding op Bali",
     "heroSub": "Dompel je onder in een transformerende 12-daagse reis in Gianyar, Bali. Himalaya-traditie, kleine groepen van 8–10, all-inclusive vanaf $1.149 USD.",
     "quickInfo": {
@@ -1483,53 +1485,7 @@
       "hoverMore": "Beweeg voor meer details",
       "takeaway": "Wat je leert",
       "carryHome": "Voor thuis",
-      "careerImpact": "Waarde voor je lessen:",
-      "cards": [
-        {
-          "title": "Ashtanga Yoga Houdingen",
-          "content": "Volledige reeks van de Ashtanga Primary Series. Wekelijkse opbouw via Zonnegroet A & B, staande en zittende houdingen en authentieke Mysore-beoefening."
-        },
-        {
-          "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana-serie, Surya Namaskar-variaties, staande en zittende asana's, achteroverbuigingen, vooroverbuigingen, omgekeerde houdingen en lesopbouw."
-        },
-        {
-          "title": "Yoga Filosofie",
-          "content": "Inleiding tot de Yoga Sutra's van Patanjali, de acht ledematen van yoga, Nadis, Chakra's, Pancha-Vayus, Panchakosha's, Triguna en overleveringen van yogameesters."
-        },
-        {
-          "title": "Pranayama & Ademhaling",
-          "content": "Uitgebreide ademhalingstechnieken: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali en Sheetkari."
-        },
-        {
-          "title": "Anatomie & Fysiologie",
-          "content": "Bewegingsvlakken, gewrichtsbescherming, anatomie van enkel, knie, wervelkolom en schouders, ademhalingsmechanica, spierfysiologie en zenuwstelsel."
-        },
-        {
-          "title": "Lesmethodiek",
-          "content": "Lesopbouw, verbale instructie en handmatige correcties, omgaan met niveauverschillen, stemgebruik, mentale voorbereiding en gestructureerde lesplanning."
-        },
-        {
-          "title": "Meditatie & Mantra",
-          "content": "Diverse meditatievormen, chanten van mantra's, Trataka, Osho Dynamische meditatie, Nada Brahma, Antar Mouna en het cultiveren van innerlijke stilte."
-        },
-        {
-          "title": "Iyengar Yoga",
-          "content": "Precisiegerichte benadering met behulp van blokken, riemen en dekens om een anatomisch zuivere uitlijning te waarborgen en blessures te voorkomen."
-        },
-        {
-          "title": "Uitlijningsprincipes",
-          "content": "Basis van een veilige beoefening: gewrichtsuitlijning, spieractivatiepatronen en biomechanica ter bescherming en versterking van het fysieke lichaam."
-        },
-        {
-          "title": "Bandhas (Energiesloten)",
-          "content": "Beheersing van Mula, Uddiyana en Jalandhara Bandha om de pranastroom te geleiden, de kern te versterken en meditatieve staten te verdiepen."
-        },
-        {
-          "title": "Mudras (Yogische Gebaren)",
-          "content": "Heilige hand- en lichaamsgebaren die levensenergie kanaliseren, de focus aanscherpen en verbinden met hogere staten van bewustzijn."
-        }
-      ]
+      "careerImpact": "Waarde voor je lessen:"
     },
     "schedule": {
       "heading": "Dagritme in de ashram",
@@ -1691,118 +1647,113 @@
         {
           "title": "Ashtanga Yoga Houdingen",
           "items": [
-            "Volledige Ashtanga primary series volgens K. Pattabhi Jois",
-            "Week 1: Introductie & Zonnegroeten A & B",
-            "Week 2: Staande reeks & yogaprops",
-            "Week 3: Zittende reeks & afrondende houdingen",
-            "Week 4: Mysore-stijl & lesgeefpraktijk"
+            "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+            "Standing sequence postures & use of yoga props",
+            "Primary series practiced thoroughly",
+            "Mysore style practice examination"
           ]
         },
         {
-          "title": "Yoga Filosofie",
+          "title": "Yogafilosofie",
           "items": [
-            "Volledige Yoga Sutra's van Patanjali",
-            "Acht ledematen van Ashtanga Yoga",
-            "Pancha-Vayus & Panchakosha's",
-            "Sattva, Rajas & Tamas (Triguna)",
-            "Introductie tot de Veda's",
-            "Inspirerende verhalen van grote yogameesters"
+            "Introduction to Yoga Philosophy and its evolution",
+            "Introduction to yoga sutras of Patanjali",
+            "Nadis (Ida, Pingala & Sushumna)",
+            "Chakras - the energy channels",
+            "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+            "Eight limbs of Ashtanga Yoga"
           ]
         },
         {
-          "title": "Pranayama & Ademhalingsoefeningen",
+          "title": "Pranayama Ademoefeningen",
           "items": [
-            "Volledige pranayama-technieken",
-            "Alle zes Shatkarma reinigingsoefeningen",
-            "Gevorderde ademhaling: Sheetali, Sheetkari",
-            "Kumbhaka (ademinouding)",
-            "Integratie met asana-beoefening"
+            "Introduction to Pranayama and its benefits",
+            "Introduction to Shatkarma (six cleansing practices)",
+            "Clavicular, Thoracic & Diaphragmatic Breathing",
+            "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+            "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi",
+            "Introduction to Mudras & energetic seals"
           ]
         },
         {
-          "title": "Heilige Klanken & Mantra Recitatie",
+          "title": "Recitatie van Heilige Klanken",
           "items": [
-            "Volledige collectie traditionele mantra's",
-            "Om Tryambakam Yajamahe",
-            "Hare Rama, Hare Krishna (Maha mantra)",
-            "Yogena Cittasya (Shloka voor Patanjali)",
-            "Dagelijkse mantra-chanting praktijk"
+            "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+            "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+            "Guru Brahma Guru Vishnu (Guru stotram)",
+            "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
           ]
         },
         {
           "title": "Anatomie en Fysiologie",
           "items": [
-            "Complete studie van lichaamssystemen",
-            "Fysiologie van spieren & gewrichten",
-            "Ademhalings- & zenuwstelsel",
-            "Voeding & spijsvertering",
-            "Praktijkgerichte workshops over asana's"
+            "Body Movement & Planes",
+            "Joints and How to Protect them in Asanas",
+            "Anatomy of Ankle, Knee, Spine & Shoulder",
+            "Breathing mechanism in Yoga"
           ]
         },
         {
           "title": "Lesmethodiek",
           "items": [
-            "Volledige lesopbouw & sequencing",
-            "Demonstratie- & observatieprincipes",
-            "Mentale & emotionele voorbereiding",
-            "Stapsgewijze lesplanning",
-            "Praktijklessen & feedback"
+            "How to sequence a class",
+            "Working with breathing and posture",
+            "Adjustments and corrections",
+            "Working with different level of students",
+            "Building positive & conscious communication"
           ]
         },
         {
-          "title": "Meditatie & Bandha's",
+          "title": "Meditatie",
           "items": [
-            "Osho Dynamische meditatie",
-            "Nada Brahma meditatie",
-            "Antar Mouna & Ajapa Japa",
-            "Beheersing van alle vier de Bandha's",
-            "Harmonische integratie met asana & pranayama"
+            "Introduction to Meditation",
+            "Different types of meditation techniques",
+            "Om / Mantra Meditation",
+            "Trataka and Silence Meditation"
           ]
         },
         {
-          "title": "Uitlijning & Hands-on Correcties",
+          "title": "Uitlijningsprincipes & Aanpassingen",
           "items": [
-            "Functionele biomechanica voor klassieke yogahoudingen",
-            "Verbale instructies en veilige hands-on aanpassingen",
-            "Begrip van individuele anatomische variaties",
-            "Modificatiestrategieën met blokken en riemen"
+            "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+            "Safe execution and anatomical alignment in foundational standing and seated poses",
+            "Effective use of props (blocks, straps, bolsters) to support safe practice",
+            "Identifying common postural habits and applying self-correction techniques"
           ]
         },
         {
-          "title": "Klassieke Hatha Yoga Praktijk",
+          "title": "Traditionele Hatha Yoga",
           "items": [
-            "Diepgaande studie van Hatha-principes en statische houdingen",
-            "Klassieke opbouw: warming-up, piekhouding en tegenhoudingen",
-            "Balans tussen zonne- (Ha) en maan- (Tha) energieën",
-            "Integratie van Bandha's en Mudra's in asana's"
+            "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+            "Traditional Surya Namaskar variations with breath-synchronized awareness",
+            "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+            "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
           ]
         },
         {
-          "title": "Iyengar Yoga & Nauwkeurige Uitlijning",
+          "title": "Iyengar Yoga Fundamenten",
           "items": [
-            "Methodische uitlijning met blokken, riemen en dekens",
-            "Exacte positionering van bekken, wervelkolom en schouders",
-            "Veilige voorbereiding op omgekeerde houdingen",
-            "Herstellende Iyengar-series met hulpmiddelen"
+            "Introduction to precision, geometry, and anatomical awareness in asanas",
+            "Prop-assisted alignment techniques using blocks, belts, and wall support",
+            "Building strength, stability, and postural endurance through extended holds",
+            "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
           ]
         },
         {
-          "title": "Vinyasa Flow & Dynamische Sequencing",
+          "title": "Vinyasa Yoga Flow",
           "items": [
-            "Intelligente lesstructuur: opbouw, piek en ontspanning",
-            "Vloeiende overgangen afgestemd op de ademhaling",
-            "Thematische vinyasa-lessen voor diverse niveaus",
-            "Ritme, tempo en energetische begeleiding"
+            "Breath-synchronized movement connecting postures into fluid sequences",
+            "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+            "Coordinating conscious inhalation with heart openers and exhalation with folds",
+            "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
           ]
         },
         {
-          "title": "Aanvullende Workshops",
+          "title": "Aanvullende Lessen",
           "items": [
-            "Sound Healing klankreizen",
-            "Strandyoga op Bali",
-            "Yin Yoga & Acro Yoga",
-            "Basisprincipes van Ayurveda",
-            "Traditionele Agni Hotra vuurceremonie"
+            "Kirtan Meditation",
+            "Yin Yoga & Partner Yoga",
+            "Ayurvedische levensstijl les"
           ]
         }
       ]
@@ -2137,8 +2088,8 @@
     "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
   },
   "course300": {
-    "metaTitle": "300-Uurs Yoga Docentenopleiding op Bali | Gevorderde 300-Uurs YTTC",
-    "metaDesc": "Verbeter je docentschap met de 300-uurs Yoga TTC op Bali. Multi-stijl asana, pranayama, anatomie en filosofie. Verzeker je plek nu!",
+    "metaTitle": "300 Uur Yogadocentenopleiding Bali – Gevorderd RYT 500 Traject | YogaGarhi",
+    "metaDesc": "28-daagse gevorderde 300-urige training nabij Ubud, Bali voor RYT 200 afgestudeerden. Verdiep lesgeven, filosofie & therapeutische yoga. Kleine groepen van 8–10.",
     "heroTitle": "300-Uurs Yoga Docentenopleiding op Bali",
     "heroSub": "Gevorderde residentiële onderdompeling van 28 dagen in Gianyar, Bali. Verdiep je in geavanceerde asana's en aanpassingen naar RYT 500.",
     "quickInfo": {
@@ -2219,53 +2170,7 @@
       "hoverMore": "Beweeg voor meer details",
       "takeaway": "Wat je leert",
       "carryHome": "Voor thuis",
-      "careerImpact": "Waarde voor je lessen:",
-      "cards": [
-        {
-          "title": "Ashtanga Yoga Houdingen",
-          "content": "Volledige reeks van de Ashtanga Primary Series. Wekelijkse opbouw via Zonnegroet A & B, staande en zittende houdingen en authentieke Mysore-beoefening."
-        },
-        {
-          "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana-serie, Surya Namaskar-variaties, staande en zittende asana's, achteroverbuigingen, vooroverbuigingen, omgekeerde houdingen en lesopbouw."
-        },
-        {
-          "title": "Yoga Filosofie",
-          "content": "Inleiding tot de Yoga Sutra's van Patanjali, de acht ledematen van yoga, Nadis, Chakra's, Pancha-Vayus, Panchakosha's, Triguna en overleveringen van yogameesters."
-        },
-        {
-          "title": "Pranayama & Ademhaling",
-          "content": "Uitgebreide ademhalingstechnieken: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali en Sheetkari."
-        },
-        {
-          "title": "Anatomie & Fysiologie",
-          "content": "Bewegingsvlakken, gewrichtsbescherming, anatomie van enkel, knie, wervelkolom en schouders, ademhalingsmechanica, spierfysiologie en zenuwstelsel."
-        },
-        {
-          "title": "Lesmethodiek",
-          "content": "Lesopbouw, verbale instructie en handmatige correcties, omgaan met niveauverschillen, stemgebruik, mentale voorbereiding en gestructureerde lesplanning."
-        },
-        {
-          "title": "Meditatie & Mantra",
-          "content": "Diverse meditatievormen, chanten van mantra's, Trataka, Osho Dynamische meditatie, Nada Brahma, Antar Mouna en het cultiveren van innerlijke stilte."
-        },
-        {
-          "title": "Iyengar Yoga",
-          "content": "Precisiegerichte benadering met behulp van blokken, riemen en dekens om een anatomisch zuivere uitlijning te waarborgen en blessures te voorkomen."
-        },
-        {
-          "title": "Uitlijningsprincipes",
-          "content": "Basis van een veilige beoefening: gewrichtsuitlijning, spieractivatiepatronen en biomechanica ter bescherming en versterking van het fysieke lichaam."
-        },
-        {
-          "title": "Bandhas (Energiesloten)",
-          "content": "Beheersing van Mula, Uddiyana en Jalandhara Bandha om de pranastroom te geleiden, de kern te versterken en meditatieve staten te verdiepen."
-        },
-        {
-          "title": "Mudras (Yogische Gebaren)",
-          "content": "Heilige hand- en lichaamsgebaren die levensenergie kanaliseren, de focus aanscherpen en verbinden met hogere staten van bewustzijn."
-        }
-      ]
+      "careerImpact": "Waarde voor je lessen:"
     },
     "schedule": {
       "heading": "Dagritme in de ashram",
@@ -2417,120 +2322,126 @@
       },
       "detailedModules": [
         {
-          "title": "Ashtanga Yoga Houdingen",
+          "title": "Gevorderde Asana's & Aanpassingen",
           "items": [
-            "Volledige Ashtanga primary series volgens K. Pattabhi Jois",
-            "Week 1: Introductie & Zonnegroeten A & B",
-            "Week 2: Staande reeks & yogaprops",
-            "Week 3: Zittende reeks & afrondende houdingen",
-            "Week 4: Mysore-stijl & lesgeefpraktijk"
+            "Advanced arm balances & inversions",
+            "Therapeutic modifications & props usage",
+            "Working with injuries & limitations",
+            "Advanced sequencing principles"
           ]
         },
         {
-          "title": "Yoga Filosofie",
+          "title": "Therapeutische Yogatoepassingen",
           "items": [
-            "Volledige Yoga Sutra's van Patanjali",
-            "Acht ledematen van Ashtanga Yoga",
-            "Pancha-Vayus & Panchakosha's",
-            "Sattva, Rajas & Tamas (Triguna)",
-            "Introductie tot de Veda's",
-            "Inspirerende verhalen van grote yogameesters"
+            "Yoga for back pain & spinal health",
+            "Yoga for stress & anxiety",
+            "Prenatal & postnatal yoga",
+            "Yoga for seniors",
+            "Restorative yoga techniques"
           ]
         },
         {
-          "title": "Pranayama & Ademhalingsoefeningen",
+          "title": "Gevorderde Pranayama & Bandha's",
           "items": [
-            "Volledige pranayama-technieken",
-            "Alle zes Shatkarma reinigingsoefeningen",
-            "Gevorderde ademhaling: Sheetali, Sheetkari",
-            "Kumbhaka (ademinouding)",
-            "Integratie met asana-beoefening"
+            "Advanced kumbhaka techniques",
+            "Kriyas for energy awakening",
+            "Bandha integration in advanced asanas",
+            "Pranayama for kundalini activation",
+            "Breath practices for nervous system balance"
           ]
         },
         {
-          "title": "Heilige Klanken & Mantra Recitatie",
+          "title": "Yoga Nidra & Verdiepende Meditatie",
           "items": [
-            "Volledige collectie traditionele mantra's",
-            "Om Tryambakam Yajamahe",
-            "Hare Rama, Hare Krishna (Maha mantra)",
-            "Yogena Cittasya (Shloka voor Patanjali)",
-            "Dagelijkse mantra-chanting praktijk"
+            "Complete Yoga Nidra training",
+            "Leading guided meditations",
+            "Chakra meditation techniques",
+            "Sound & mantra meditation",
+            "Silent retreat practices"
           ]
         },
         {
-          "title": "Anatomie en Fysiologie",
+          "title": "Diepgaande Filosofiestudies",
           "items": [
-            "Complete studie van lichaamssystemen",
-            "Fysiologie van spieren & gewrichten",
-            "Ademhalings- & zenuwstelsel",
-            "Voeding & spijsvertering",
-            "Praktijkgerichte workshops over asana's"
+            "Bhagavad Gita study",
+            "Upanishads exploration",
+            "Tantra philosophy",
+            "Samkhya & Vedanta",
+            "Applied philosophy in modern life"
           ]
         },
         {
-          "title": "Lesmethodiek",
+          "title": "Gevorderde Anatomie & Biomechanica",
           "items": [
-            "Volledige lesopbouw & sequencing",
-            "Demonstratie- & observatieprincipes",
-            "Mentale & emotionele voorbereiding",
-            "Stapsgewijze lesplanning",
-            "Praktijklessen & feedback"
+            "Subtle body anatomy (Nadis, Chakras)",
+            "Myofascial release techniques",
+            "Biomechanics of complex poses",
+            "Injury prevention & working safely with common injuries",
+            "Yoga therapy principles"
           ]
         },
         {
-          "title": "Meditatie & Bandha's",
+          "title": "Lesgeven als Beroep: Workshops, Retreats & Online Lesgeven",
           "items": [
-            "Osho Dynamische meditatie",
-            "Nada Brahma meditatie",
-            "Antar Mouna & Ajapa Japa",
-            "Beheersing van alle vier de Bandha's",
-            "Harmonische integratie met asana & pranayama"
+            "Workshop & retreat planning",
+            "Private session design",
+            "Online class delivery",
+            "Business of yoga & ethical studio management"
           ]
         },
         {
-          "title": "Uitlijning & Hands-on Correcties",
+          "title": "Gevorderde Uitlijning & Biomechanische Aanpassingen",
           "items": [
-            "Functionele biomechanica voor klassieke yogahoudingen",
-            "Verbale instructies en veilige hands-on aanpassingen",
-            "Begrip van individuele anatomische variaties",
-            "Modificatiestrategieën met blokken en riemen"
+            "Micro-alignment principles and postural observation for advanced and complex asanas",
+            "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+            "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+            "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
           ]
         },
         {
-          "title": "Klassieke Hatha Yoga Praktijk",
+          "title": "Gevorderde Klassieke Hatha Yoga",
           "items": [
-            "Diepgaande studie van Hatha-principes en statische houdingen",
-            "Klassieke opbouw: warming-up, piekhouding en tegenhoudingen",
-            "Balans tussen zonne- (Ha) en maan- (Tha) energieën",
-            "Integratie van Bandha's en Mudra's in asana's"
+            "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+            "Cultivating steadiness and inward focus through still posture holding and measured breath",
+            "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+            "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
           ]
         },
         {
-          "title": "Iyengar Yoga & Nauwkeurige Uitlijning",
+          "title": "Gevorderde Iyengar Yoga & Herstellende Uitlijning",
           "items": [
-            "Methodische uitlijning met blokken, riemen en dekens",
-            "Exacte positionering van bekken, wervelkolom en schouders",
-            "Veilige voorbereiding op omgekeerde houdingen",
-            "Herstellende Iyengar-series met hulpmiddelen"
+            "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
+            "Structural alignment techniques for posture balance and foundational body mechanics",
+            "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+            "Postural observation for personalized practice"
           ]
         },
         {
-          "title": "Vinyasa Flow & Dynamische Sequencing",
+          "title": "Creatieve Vinyasa Krama & Master-Sequencing",
           "items": [
-            "Intelligente lesstructuur: opbouw, piek en ontspanning",
-            "Vloeiende overgangen afgestemd op de ademhaling",
-            "Thematische vinyasa-lessen voor diverse niveaus",
-            "Ritme, tempo en energetische begeleiding"
+            "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+            "Creating themed classes and peak posture staging",
+            "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+            "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+            "Designing transformative workshops, masterclasses, and multi-day retreat flows"
           ]
         },
         {
-          "title": "Aanvullende Workshops",
+          "title": "Docentenstage & Beoordeling",
           "items": [
-            "Sound Healing klankreizen",
-            "Strandyoga op Bali",
-            "Yin Yoga & Acro Yoga",
-            "Basisprincipes van Ayurveda",
-            "Traditionele Agni Hotra vuurceremonie"
+            "Supervised practice teaching with real-time feedback",
+            "Structured peer feedback and group reflection",
+            "One-on-one teaching mentorship with master faculty",
+            "Practical alignment and adjustment evaluation",
+            "Final comprehensive teaching assessment"
+          ]
+        },
+        {
+          "title": "Gespecialiseerde Workshops",
+          "items": [
+            "Klankhealing workshop",
+            "Ayurveda for yoga teachers",
+            "Chakra balancing practices"
           ]
         }
       ]
@@ -2947,53 +2858,7 @@
       "hoverMore": "Beweeg voor meer details",
       "takeaway": "Wat je leert",
       "carryHome": "Voor thuis",
-      "careerImpact": "Waarde voor je lessen:",
-      "cards": [
-        {
-          "title": "Ashtanga Yoga Houdingen",
-          "content": "Volledige reeks van de Ashtanga Primary Series. Wekelijkse opbouw via Zonnegroet A & B, staande en zittende houdingen en authentieke Mysore-beoefening."
-        },
-        {
-          "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana-serie, Surya Namaskar-variaties, staande en zittende asana's, achteroverbuigingen, vooroverbuigingen, omgekeerde houdingen en lesopbouw."
-        },
-        {
-          "title": "Yoga Filosofie",
-          "content": "Inleiding tot de Yoga Sutra's van Patanjali, de acht ledematen van yoga, Nadis, Chakra's, Pancha-Vayus, Panchakosha's, Triguna en overleveringen van yogameesters."
-        },
-        {
-          "title": "Pranayama & Ademhaling",
-          "content": "Uitgebreide ademhalingstechnieken: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali en Sheetkari."
-        },
-        {
-          "title": "Anatomie & Fysiologie",
-          "content": "Bewegingsvlakken, gewrichtsbescherming, anatomie van enkel, knie, wervelkolom en schouders, ademhalingsmechanica, spierfysiologie en zenuwstelsel."
-        },
-        {
-          "title": "Lesmethodiek",
-          "content": "Lesopbouw, verbale instructie en handmatige correcties, omgaan met niveauverschillen, stemgebruik, mentale voorbereiding en gestructureerde lesplanning."
-        },
-        {
-          "title": "Meditatie & Mantra",
-          "content": "Diverse meditatievormen, chanten van mantra's, Trataka, Osho Dynamische meditatie, Nada Brahma, Antar Mouna en het cultiveren van innerlijke stilte."
-        },
-        {
-          "title": "Iyengar Yoga",
-          "content": "Precisiegerichte benadering met behulp van blokken, riemen en dekens om een anatomisch zuivere uitlijning te waarborgen en blessures te voorkomen."
-        },
-        {
-          "title": "Uitlijningsprincipes",
-          "content": "Basis van een veilige beoefening: gewrichtsuitlijning, spieractivatiepatronen en biomechanica ter bescherming en versterking van het fysieke lichaam."
-        },
-        {
-          "title": "Bandhas (Energiesloten)",
-          "content": "Beheersing van Mula, Uddiyana en Jalandhara Bandha om de pranastroom te geleiden, de kern te versterken en meditatieve staten te verdiepen."
-        },
-        {
-          "title": "Mudras (Yogische Gebaren)",
-          "content": "Heilige hand- en lichaamsgebaren die levensenergie kanaliseren, de focus aanscherpen en verbinden met hogere staten van bewustzijn."
-        }
-      ]
+      "careerImpact": "Waarde voor je lessen:"
     },
     "schedule": {
       "heading": "Dagritme in de ashram",
@@ -3044,12 +2909,12 @@
       "incKit": "Yogamat en alle benodigde props op locatie aanwezig",
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditionele openings- en afsluitende vuurceremonies (Agni Hotra)",
-      "incPickup": "Ophaalservice vanaf vliegveld Denpasar (DPS) op de officiële aankomstdag",
+      "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
       "incPre": "Gratis online Pre-TTC voorbereidingscursus",
       "incRepeat": "Levenslang het recht om gratis aan te schuiven bij latere edities",
       "notIncHeading": "Niet inbegrepen",
       "notIncFlights": "Internationale en binnenlandse vliegtickets",
-      "notIncVisa": "Kosten voor het Indonesische visum",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "Persoonlijke reis- en ziektekostenverzekering"
     },
     "pricing": {
@@ -3175,118 +3040,113 @@
         {
           "title": "Ashtanga Yoga Houdingen",
           "items": [
-            "Volledige Ashtanga primary series volgens K. Pattabhi Jois",
-            "Week 1: Introductie & Zonnegroeten A & B",
-            "Week 2: Staande reeks & yogaprops",
-            "Week 3: Zittende reeks & afrondende houdingen",
-            "Week 4: Mysore-stijl & lesgeefpraktijk"
+            "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+            "Standing sequence postures & use of yoga props",
+            "Primary series practiced thoroughly",
+            "Mysore style practice examination"
           ]
         },
         {
-          "title": "Yoga Filosofie",
+          "title": "Yogafilosofie",
           "items": [
-            "Volledige Yoga Sutra's van Patanjali",
-            "Acht ledematen van Ashtanga Yoga",
-            "Pancha-Vayus & Panchakosha's",
-            "Sattva, Rajas & Tamas (Triguna)",
-            "Introductie tot de Veda's",
-            "Inspirerende verhalen van grote yogameesters"
+            "Introduction to Yoga Philosophy and its evolution",
+            "Introduction to yoga sutras of Patanjali",
+            "Nadis (Ida, Pingala & Sushumna)",
+            "Chakras - the energy channels",
+            "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+            "Eight limbs of Ashtanga Yoga"
           ]
         },
         {
-          "title": "Pranayama & Ademhalingsoefeningen",
+          "title": "Pranayama Ademoefeningen",
           "items": [
-            "Volledige pranayama-technieken",
-            "Alle zes Shatkarma reinigingsoefeningen",
-            "Gevorderde ademhaling: Sheetali, Sheetkari",
-            "Kumbhaka (ademinouding)",
-            "Integratie met asana-beoefening"
+            "Introduction to Pranayama and its benefits",
+            "Introduction to Shatkarma (six cleansing practices)",
+            "Clavicular, Thoracic & Diaphragmatic Breathing",
+            "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+            "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi",
+            "Introduction to Mudras & energetic seals"
           ]
         },
         {
-          "title": "Heilige Klanken & Mantra Recitatie",
+          "title": "Recitatie van Heilige Klanken",
           "items": [
-            "Volledige collectie traditionele mantra's",
-            "Om Tryambakam Yajamahe",
-            "Hare Rama, Hare Krishna (Maha mantra)",
-            "Yogena Cittasya (Shloka voor Patanjali)",
-            "Dagelijkse mantra-chanting praktijk"
+            "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+            "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+            "Guru Brahma Guru Vishnu (Guru stotram)",
+            "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
           ]
         },
         {
           "title": "Anatomie en Fysiologie",
           "items": [
-            "Complete studie van lichaamssystemen",
-            "Fysiologie van spieren & gewrichten",
-            "Ademhalings- & zenuwstelsel",
-            "Voeding & spijsvertering",
-            "Praktijkgerichte workshops over asana's"
+            "Body Movement & Planes",
+            "Joints and How to Protect them in Asanas",
+            "Anatomy of Ankle, Knee, Spine & Shoulder",
+            "Breathing mechanism in Yoga"
           ]
         },
         {
           "title": "Lesmethodiek",
           "items": [
-            "Volledige lesopbouw & sequencing",
-            "Demonstratie- & observatieprincipes",
-            "Mentale & emotionele voorbereiding",
-            "Stapsgewijze lesplanning",
-            "Praktijklessen & feedback"
+            "How to sequence a class",
+            "Working with breathing and posture",
+            "Adjustments and corrections",
+            "Working with different level of students",
+            "Building positive & conscious communication"
           ]
         },
         {
-          "title": "Meditatie & Bandha's",
+          "title": "Meditatie",
           "items": [
-            "Osho Dynamische meditatie",
-            "Nada Brahma meditatie",
-            "Antar Mouna & Ajapa Japa",
-            "Beheersing van alle vier de Bandha's",
-            "Harmonische integratie met asana & pranayama"
+            "Introduction to Meditation",
+            "Different types of meditation techniques",
+            "Om / Mantra Meditation",
+            "Trataka and Silence Meditation"
           ]
         },
         {
-          "title": "Uitlijning & Hands-on Correcties",
+          "title": "Uitlijningsprincipes & Aanpassingen",
           "items": [
-            "Functionele biomechanica voor klassieke yogahoudingen",
-            "Verbale instructies en veilige hands-on aanpassingen",
-            "Begrip van individuele anatomische variaties",
-            "Modificatiestrategieën met blokken en riemen"
+            "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+            "Safe execution and anatomical alignment in foundational standing and seated poses",
+            "Effective use of props (blocks, straps, bolsters) to support safe practice",
+            "Identifying common postural habits and applying self-correction techniques"
           ]
         },
         {
-          "title": "Klassieke Hatha Yoga Praktijk",
+          "title": "Traditionele Hatha Yoga",
           "items": [
-            "Diepgaande studie van Hatha-principes en statische houdingen",
-            "Klassieke opbouw: warming-up, piekhouding en tegenhoudingen",
-            "Balans tussen zonne- (Ha) en maan- (Tha) energieën",
-            "Integratie van Bandha's en Mudra's in asana's"
+            "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+            "Traditional Surya Namaskar variations with breath-synchronized awareness",
+            "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+            "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
           ]
         },
         {
-          "title": "Iyengar Yoga & Nauwkeurige Uitlijning",
+          "title": "Iyengar Yoga Fundamenten",
           "items": [
-            "Methodische uitlijning met blokken, riemen en dekens",
-            "Exacte positionering van bekken, wervelkolom en schouders",
-            "Veilige voorbereiding op omgekeerde houdingen",
-            "Herstellende Iyengar-series met hulpmiddelen"
+            "Introduction to precision, geometry, and anatomical awareness in asanas",
+            "Prop-assisted alignment techniques using blocks, belts, and wall support",
+            "Building strength, stability, and postural endurance through extended holds",
+            "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
           ]
         },
         {
-          "title": "Vinyasa Flow & Dynamische Sequencing",
+          "title": "Vinyasa Yoga Flow",
           "items": [
-            "Intelligente lesstructuur: opbouw, piek en ontspanning",
-            "Vloeiende overgangen afgestemd op de ademhaling",
-            "Thematische vinyasa-lessen voor diverse niveaus",
-            "Ritme, tempo en energetische begeleiding"
+            "Breath-synchronized movement connecting postures into fluid sequences",
+            "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+            "Coordinating conscious inhalation with heart openers and exhalation with folds",
+            "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
           ]
         },
         {
-          "title": "Aanvullende Workshops",
+          "title": "Aanvullende Lessen",
           "items": [
-            "Sound Healing klankreizen",
-            "Strandyoga op Bali",
-            "Yin Yoga & Acro Yoga",
-            "Basisprincipes van Ayurveda",
-            "Traditionele Agni Hotra vuurceremonie"
+            "Kirtan Meditation",
+            "Yin Yoga & Partner Yoga",
+            "Ayurvedische levensstijl les"
           ]
         }
       ]
@@ -3806,12 +3666,12 @@
       "incKit": "Yogamat en alle benodigde props op locatie aanwezig",
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditionele openings- en afsluitende vuurceremonies (Agni Hotra)",
-      "incPickup": "Ophaalservice vanaf vliegveld Denpasar (DPS) op de officiële aankomstdag",
+      "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
       "incPre": "Gratis online Pre-TTC voorbereidingscursus",
       "incRepeat": "Levenslang het recht om gratis aan te schuiven bij latere edities",
       "notIncHeading": "Niet inbegrepen",
       "notIncFlights": "Internationale en binnenlandse vliegtickets",
-      "notIncVisa": "Kosten voor het Indonesische visum",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "Persoonlijke reis- en ziektekostenverzekering"
     },
     "pricing": {
@@ -5765,53 +5625,7 @@
       "hoverMore": "Hover to see more",
       "takeaway": "The Takeaway",
       "carryHome": "Carry Home",
-      "careerImpact": "Career Impact:",
-      "cards": [
-        {
-          "title": "Ashtanga Yoga Postures",
-          "content": "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice."
-        },
-        {
-          "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology."
-        },
-        {
-          "title": "Yoga Philosophy",
-          "content": "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis."
-        },
-        {
-          "title": "Pranayama & Breathing",
-          "content": "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari."
-        },
-        {
-          "title": "Anatomy & Physiology",
-          "content": "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system."
-        },
-        {
-          "title": "Teaching Methodology",
-          "content": "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning."
-        },
-        {
-          "title": "Meditation & Mantra",
-          "content": "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness."
-        },
-        {
-          "title": "Iyengar Yoga",
-          "content": "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries."
-        },
-        {
-          "title": "Alignment Principles",
-          "content": "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body."
-        },
-        {
-          "title": "Bandhas (Energy Locks)",
-          "content": "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice."
-        },
-        {
-          "title": "Mudras (Yogic Gestures)",
-          "content": "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation."
-        }
-      ]
+      "careerImpact": "Career Impact:"
     },
     "schedule": {
       "heading": "A Day at YogaGarhi Ashram",
@@ -5862,12 +5676,12 @@
       "incKit": "Yoga mat and practice props provided",
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
-      "incPickup": "Airport pickup from Denpasar (DPS) on course arrival date",
+      "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
       "incPre": "Complimentary online Pre-TTC preparation module",
       "incRepeat": "Lifetime course repetition privilege (tuition-free)",
       "notIncHeading": "Not Included",
       "notIncFlights": "International and domestic flight tickets",
-      "notIncVisa": "Indonesian visa fees",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "Personal travel and medical insurance"
     },
     "pricing": {
@@ -6003,120 +5817,126 @@
       },
       "detailedModules": [
         {
-          "title": "Ashtanga Yoga Postures",
+          "title": "Gevorderde Asana's & Aanpassingen",
           "items": [
-            "Complete Ashtanga yoga primary series by K. Pattabhi Jois",
-            "Week 1: Introduction & Sun salutation A & B",
-            "Week 2: Standing sequence postures & yoga props",
-            "Week 3: Seated sequence & Finishing postures",
-            "Week 4: Mysore style & Teaching practice"
+            "Advanced arm balances & inversions",
+            "Therapeutic modifications & props usage",
+            "Working with injuries & limitations",
+            "Advanced sequencing principles"
           ]
         },
         {
-          "title": "Yoga Philosophy",
+          "title": "Therapeutische Yogatoepassingen",
           "items": [
-            "Complete yoga sutras of Patanjali",
-            "Eight limbs of Ashtanga Yoga",
-            "Pancha-Vayus & Panchakoshas",
-            "Sattva, Rajas & Tamas (Triguna)",
-            "Introduction to Vedas",
-            "Lives of yogis (Inspiring stories)"
+            "Yoga for back pain & spinal health",
+            "Yoga for stress & anxiety",
+            "Prenatal & postnatal yoga",
+            "Yoga for seniors",
+            "Restorative yoga techniques"
           ]
         },
         {
-          "title": "Pranayama Breathing Practices",
+          "title": "Gevorderde Pranayama & Bandha's",
           "items": [
-            "Complete pranayama techniques",
-            "All six Shatkarma cleansing practices",
-            "Advanced breathing: Sheetali, Sheetkari",
-            "Kumbhaka (breath retention)",
-            "Integration with asana practice"
+            "Advanced kumbhaka techniques",
+            "Kriyas for energy awakening",
+            "Bandha integration in advanced asanas",
+            "Pranayama for kundalini activation",
+            "Breath practices for nervous system balance"
           ]
         },
         {
-          "title": "Recitation of Sacred Sound",
+          "title": "Yoga Nidra & Verdiepende Meditatie",
           "items": [
-            "Complete mantra collection",
-            "Om Tryambakam Yajamahe",
-            "Hare Rama, Hare Krishna (Maha mantra)",
-            "Yogena Cittasya (Sloka on Sage Patanjali)",
-            "Daily mantra chanting practice"
+            "Complete Yoga Nidra training",
+            "Leading guided meditations",
+            "Chakra meditation techniques",
+            "Sound & mantra meditation",
+            "Silent retreat practices"
           ]
         },
         {
-          "title": "Anatomy and Physiology",
+          "title": "Diepgaande Filosofiestudies",
           "items": [
-            "Complete body systems study",
-            "Physiology of muscles & joints",
-            "Respiratory & Nervous system",
-            "Food & Digestive System",
-            "Workshop on different Asanas"
+            "Bhagavad Gita study",
+            "Upanishads exploration",
+            "Tantra philosophy",
+            "Samkhya & Vedanta",
+            "Applied philosophy in modern life"
           ]
         },
         {
-          "title": "Teaching Methodology",
+          "title": "Gevorderde Anatomie & Biomechanica",
           "items": [
-            "Complete class sequencing",
-            "Demonstration & observation principles",
-            "Mental & emotional preparation",
-            "Step by step class structure planning",
-            "Practicum & teaching evaluations"
+            "Subtle body anatomy (Nadis, Chakras)",
+            "Myofascial release techniques",
+            "Biomechanics of complex poses",
+            "Injury prevention & working safely with common injuries",
+            "Yoga therapy principles"
           ]
         },
         {
-          "title": "Meditation & Bandhas",
+          "title": "Lesgeven als Beroep: Workshops, Retreats & Online Lesgeven",
           "items": [
-            "Osho Dynamic meditation",
-            "Nada Brahma Meditation",
-            "Antar Mouna & Ajapa Japa",
-            "All four Bandhas mastery",
-            "Integration with asana & pranayama"
+            "Workshop & retreat planning",
+            "Private session design",
+            "Online class delivery",
+            "Business of yoga & ethical studio management"
           ]
         },
         {
-          "title": "Art of Alignment & Hands-on Adjustments",
+          "title": "Gevorderde Uitlijning & Biomechanische Aanpassingen",
           "items": [
-            "Comprehensive biomechanics and functional alignment for classical yoga postures",
-            "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
-            "Understanding individual anatomical variations, skeletal compression vs tension",
-            "Modification strategies using props and stance adjustments for diverse student flexibility"
+            "Micro-alignment principles and postural observation for advanced and complex asanas",
+            "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+            "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+            "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
           ]
         },
         {
-          "title": "Classical Hatha Yoga Practice",
+          "title": "Gevorderde Klassieke Hatha Yoga",
           "items": [
-            "In-depth study of classical Hatha asana principles and sustained holds",
-            "Complete Hatha sequencing: preparatory warming, peak postures, and counter-poses",
-            "Balancing solar (Ha) and lunar (Tha) energies through mindful posture practice",
-            "Integration of Bandhas and Mudras within traditional Hatha asana holding"
+            "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+            "Cultivating steadiness and inward focus through still posture holding and measured breath",
+            "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+            "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
           ]
         },
         {
-          "title": "Iyengar Yoga & Precision Alignment",
+          "title": "Gevorderde Iyengar Yoga & Herstellende Uitlijning",
           "items": [
-            "Methodical alignment utilizing blocks, straps, blankets, and props",
-            "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
-            "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
-            "Restorative Iyengar prop setups for supported holding and quiet focus"
+            "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
+            "Structural alignment techniques for posture balance and foundational body mechanics",
+            "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+            "Postural observation for personalized practice"
           ]
         },
         {
-          "title": "Vinyasa Flow & Dynamic Sequencing",
+          "title": "Creatieve Vinyasa Krama & Master-Sequencing",
           "items": [
-            "Intelligent sequencing architecture: progressive warm-up, peak pose, and cool down",
-            "Dynamic transitions, jump-backs, and jump-throughs with breath awareness",
-            "Creating thematic vinyasa classes for varying student levels and intentions",
-            "Pacing, tempo modulation, and holding space during energetic flowing sequences"
+            "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+            "Creating themed classes and peak posture staging",
+            "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+            "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+            "Designing transformative workshops, masterclasses, and multi-day retreat flows"
           ]
         },
         {
-          "title": "Additional Classes",
+          "title": "Docentenstage & Beoordeling",
           "items": [
-            "Sound Healing sessions",
-            "Beach Yoga experience",
-            "Yin Yoga & Acro Yoga",
-            "Ayurveda fundamentals",
-            "Agni Hotra (Fire ceremony)"
+            "Supervised practice teaching with real-time feedback",
+            "Structured peer feedback and group reflection",
+            "One-on-one teaching mentorship with master faculty",
+            "Practical alignment and adjustment evaluation",
+            "Final comprehensive teaching assessment"
+          ]
+        },
+        {
+          "title": "Gespecialiseerde Workshops",
+          "items": [
+            "Klankhealing workshop",
+            "Ayurveda for yoga teachers",
+            "Chakra balancing practices"
           ]
         }
       ]
@@ -6539,53 +6359,7 @@
       "hoverMore": "Beweeg voor meer details",
       "takeaway": "Wat je leert",
       "carryHome": "Voor thuis",
-      "careerImpact": "Waarde voor je lessen:",
-      "cards": [
-        {
-          "title": "Ashtanga Yoga Houdingen",
-          "content": "Volledige reeks van de Ashtanga Primary Series. Wekelijkse opbouw via Zonnegroet A & B, staande en zittende houdingen en authentieke Mysore-beoefening."
-        },
-        {
-          "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana-serie, Surya Namaskar-variaties, staande en zittende asana's, achteroverbuigingen, vooroverbuigingen, omgekeerde houdingen en lesopbouw."
-        },
-        {
-          "title": "Yoga Filosofie",
-          "content": "Inleiding tot de Yoga Sutra's van Patanjali, de acht ledematen van yoga, Nadis, Chakra's, Pancha-Vayus, Panchakosha's, Triguna en overleveringen van yogameesters."
-        },
-        {
-          "title": "Pranayama & Ademhaling",
-          "content": "Uitgebreide ademhalingstechnieken: Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali en Sheetkari."
-        },
-        {
-          "title": "Anatomie & Fysiologie",
-          "content": "Bewegingsvlakken, gewrichtsbescherming, anatomie van enkel, knie, wervelkolom en schouders, ademhalingsmechanica, spierfysiologie en zenuwstelsel."
-        },
-        {
-          "title": "Lesmethodiek",
-          "content": "Lesopbouw, verbale instructie en handmatige correcties, omgaan met niveauverschillen, stemgebruik, mentale voorbereiding en gestructureerde lesplanning."
-        },
-        {
-          "title": "Meditatie & Mantra",
-          "content": "Diverse meditatievormen, chanten van mantra's, Trataka, Osho Dynamische meditatie, Nada Brahma, Antar Mouna en het cultiveren van innerlijke stilte."
-        },
-        {
-          "title": "Iyengar Yoga",
-          "content": "Precisiegerichte benadering met behulp van blokken, riemen en dekens om een anatomisch zuivere uitlijning te waarborgen en blessures te voorkomen."
-        },
-        {
-          "title": "Uitlijningsprincipes",
-          "content": "Basis van een veilige beoefening: gewrichtsuitlijning, spieractivatiepatronen en biomechanica ter bescherming en versterking van het fysieke lichaam."
-        },
-        {
-          "title": "Bandhas (Energiesloten)",
-          "content": "Beheersing van Mula, Uddiyana en Jalandhara Bandha om de pranastroom te geleiden, de kern te versterken en meditatieve staten te verdiepen."
-        },
-        {
-          "title": "Mudras (Yogische Gebaren)",
-          "content": "Heilige hand- en lichaamsgebaren die levensenergie kanaliseren, de focus aanscherpen en verbinden met hogere staten van bewustzijn."
-        }
-      ]
+      "careerImpact": "Waarde voor je lessen:"
     },
     "schedule": {
       "heading": "Dagritme in de ashram",
@@ -6636,12 +6410,12 @@
       "incKit": "Yogamat en alle benodigde props op locatie aanwezig",
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditionele openings- en afsluitende vuurceremonies (Agni Hotra)",
-      "incPickup": "Ophaalservice vanaf vliegveld Denpasar (DPS) op de officiële aankomstdag",
+      "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "Gratis online Pre-TTC voorbereidingscursus",
       "incRepeat": "Levenslang het recht om gratis aan te schuiven bij latere edities",
       "notIncHeading": "Niet inbegrepen",
       "notIncFlights": "Internationale en binnenlandse vliegtickets",
-      "notIncVisa": "Kosten voor het Indonesische visum",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "Persoonlijke reis- en ziektekostenverzekering"
     },
     "pricing": {
@@ -6767,118 +6541,113 @@
         {
           "title": "Ashtanga Yoga Houdingen",
           "items": [
-            "Volledige Ashtanga primary series volgens K. Pattabhi Jois",
-            "Week 1: Introductie & Zonnegroeten A & B",
-            "Week 2: Staande reeks & yogaprops",
-            "Week 3: Zittende reeks & afrondende houdingen",
-            "Week 4: Mysore-stijl & lesgeefpraktijk"
+            "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+            "Standing sequence postures & use of yoga props",
+            "Primary series practiced thoroughly",
+            "Mysore style practice examination"
           ]
         },
         {
-          "title": "Yoga Filosofie",
+          "title": "Yogafilosofie",
           "items": [
-            "Volledige Yoga Sutra's van Patanjali",
-            "Acht ledematen van Ashtanga Yoga",
-            "Pancha-Vayus & Panchakosha's",
-            "Sattva, Rajas & Tamas (Triguna)",
-            "Introductie tot de Veda's",
-            "Inspirerende verhalen van grote yogameesters"
+            "Introduction to Yoga Philosophy and its evolution",
+            "Introduction to yoga sutras of Patanjali",
+            "Nadis (Ida, Pingala & Sushumna)",
+            "Chakras - the energy channels",
+            "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+            "Eight limbs of Ashtanga Yoga"
           ]
         },
         {
-          "title": "Pranayama & Ademhalingsoefeningen",
+          "title": "Pranayama Ademoefeningen",
           "items": [
-            "Volledige pranayama-technieken",
-            "Alle zes Shatkarma reinigingsoefeningen",
-            "Gevorderde ademhaling: Sheetali, Sheetkari",
-            "Kumbhaka (ademinouding)",
-            "Integratie met asana-beoefening"
+            "Introduction to Pranayama and its benefits",
+            "Introduction to Shatkarma (six cleansing practices)",
+            "Clavicular, Thoracic & Diaphragmatic Breathing",
+            "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+            "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi",
+            "Introduction to Mudras & energetic seals"
           ]
         },
         {
-          "title": "Heilige Klanken & Mantra Recitatie",
+          "title": "Recitatie van Heilige Klanken",
           "items": [
-            "Volledige collectie traditionele mantra's",
-            "Om Tryambakam Yajamahe",
-            "Hare Rama, Hare Krishna (Maha mantra)",
-            "Yogena Cittasya (Shloka voor Patanjali)",
-            "Dagelijkse mantra-chanting praktijk"
+            "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+            "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+            "Guru Brahma Guru Vishnu (Guru stotram)",
+            "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
           ]
         },
         {
           "title": "Anatomie en Fysiologie",
           "items": [
-            "Complete studie van lichaamssystemen",
-            "Fysiologie van spieren & gewrichten",
-            "Ademhalings- & zenuwstelsel",
-            "Voeding & spijsvertering",
-            "Praktijkgerichte workshops over asana's"
+            "Body Movement & Planes",
+            "Joints and How to Protect them in Asanas",
+            "Anatomy of Ankle, Knee, Spine & Shoulder",
+            "Breathing mechanism in Yoga"
           ]
         },
         {
           "title": "Lesmethodiek",
           "items": [
-            "Volledige lesopbouw & sequencing",
-            "Demonstratie- & observatieprincipes",
-            "Mentale & emotionele voorbereiding",
-            "Stapsgewijze lesplanning",
-            "Praktijklessen & feedback"
+            "How to sequence a class",
+            "Working with breathing and posture",
+            "Adjustments and corrections",
+            "Working with different level of students",
+            "Building positive & conscious communication"
           ]
         },
         {
-          "title": "Meditatie & Bandha's",
+          "title": "Meditatie",
           "items": [
-            "Osho Dynamische meditatie",
-            "Nada Brahma meditatie",
-            "Antar Mouna & Ajapa Japa",
-            "Beheersing van alle vier de Bandha's",
-            "Harmonische integratie met asana & pranayama"
+            "Introduction to Meditation",
+            "Different types of meditation techniques",
+            "Om / Mantra Meditation",
+            "Trataka and Silence Meditation"
           ]
         },
         {
-          "title": "Uitlijning & Hands-on Correcties",
+          "title": "Uitlijningsprincipes & Aanpassingen",
           "items": [
-            "Functionele biomechanica voor klassieke yogahoudingen",
-            "Verbale instructies en veilige hands-on aanpassingen",
-            "Begrip van individuele anatomische variaties",
-            "Modificatiestrategieën met blokken en riemen"
+            "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+            "Safe execution and anatomical alignment in foundational standing and seated poses",
+            "Effective use of props (blocks, straps, bolsters) to support safe practice",
+            "Identifying common postural habits and applying self-correction techniques"
           ]
         },
         {
-          "title": "Klassieke Hatha Yoga Praktijk",
+          "title": "Traditionele Hatha Yoga",
           "items": [
-            "Diepgaande studie van Hatha-principes en statische houdingen",
-            "Klassieke opbouw: warming-up, piekhouding en tegenhoudingen",
-            "Balans tussen zonne- (Ha) en maan- (Tha) energieën",
-            "Integratie van Bandha's en Mudra's in asana's"
+            "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+            "Traditional Surya Namaskar variations with breath-synchronized awareness",
+            "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+            "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
           ]
         },
         {
-          "title": "Iyengar Yoga & Nauwkeurige Uitlijning",
+          "title": "Iyengar Yoga Fundamenten",
           "items": [
-            "Methodische uitlijning met blokken, riemen en dekens",
-            "Exacte positionering van bekken, wervelkolom en schouders",
-            "Veilige voorbereiding op omgekeerde houdingen",
-            "Herstellende Iyengar-series met hulpmiddelen"
+            "Introduction to precision, geometry, and anatomical awareness in asanas",
+            "Prop-assisted alignment techniques using blocks, belts, and wall support",
+            "Building strength, stability, and postural endurance through extended holds",
+            "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
           ]
         },
         {
-          "title": "Vinyasa Flow & Dynamische Sequencing",
+          "title": "Vinyasa Yoga Flow",
           "items": [
-            "Intelligente lesstructuur: opbouw, piek en ontspanning",
-            "Vloeiende overgangen afgestemd op de ademhaling",
-            "Thematische vinyasa-lessen voor diverse niveaus",
-            "Ritme, tempo en energetische begeleiding"
+            "Breath-synchronized movement connecting postures into fluid sequences",
+            "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+            "Coordinating conscious inhalation with heart openers and exhalation with folds",
+            "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
           ]
         },
         {
-          "title": "Aanvullende Workshops",
+          "title": "Aanvullende Lessen",
           "items": [
-            "Sound Healing klankreizen",
-            "Strandyoga op Bali",
-            "Yin Yoga & Acro Yoga",
-            "Basisprincipes van Ayurveda",
-            "Traditionele Agni Hotra vuurceremonie"
+            "Kirtan Meditation",
+            "Yin Yoga & Partner Yoga",
+            "Ayurvedische levensstijl les"
           ]
         }
       ]
@@ -7398,12 +7167,12 @@
       "incKit": "Yogamat en alle benodigde props op locatie aanwezig",
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditionele openings- en afsluitende vuurceremonies (Agni Hotra)",
-      "incPickup": "Ophaalservice vanaf vliegveld Denpasar (DPS) op de officiële aankomstdag",
+      "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "Gratis online Pre-TTC voorbereidingscursus",
       "incRepeat": "Levenslang het recht om gratis aan te schuiven bij latere edities",
       "notIncHeading": "Niet inbegrepen",
       "notIncFlights": "Internationale en binnenlandse vliegtickets",
-      "notIncVisa": "Kosten voor het Indonesische visum",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "Persoonlijke reis- en ziektekostenverzekering"
     },
     "pricing": {
@@ -8075,53 +7844,7 @@
       "hoverMore": "Hover to see more",
       "takeaway": "The Takeaway",
       "carryHome": "Carry Home",
-      "careerImpact": "Career Impact:",
-      "cards": [
-        {
-          "title": "Ashtanga Yoga Postures",
-          "content": "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice."
-        },
-        {
-          "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology."
-        },
-        {
-          "title": "Yoga Philosophy",
-          "content": "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis."
-        },
-        {
-          "title": "Pranayama & Breathing",
-          "content": "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari."
-        },
-        {
-          "title": "Anatomy & Physiology",
-          "content": "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system."
-        },
-        {
-          "title": "Teaching Methodology",
-          "content": "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning."
-        },
-        {
-          "title": "Meditation & Mantra",
-          "content": "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness."
-        },
-        {
-          "title": "Iyengar Yoga",
-          "content": "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries."
-        },
-        {
-          "title": "Alignment Principles",
-          "content": "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body."
-        },
-        {
-          "title": "Bandhas (Energy Locks)",
-          "content": "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice."
-        },
-        {
-          "title": "Mudras (Yogic Gestures)",
-          "content": "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation."
-        }
-      ]
+      "careerImpact": "Career Impact:"
     },
     "schedule": {
       "heading": "A Day at YogaGarhi Ashram",
@@ -8172,12 +7895,12 @@
       "incKit": "Yoga mat and practice props provided",
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
-      "incPickup": "Airport pickup from Denpasar (DPS) on course arrival date",
+      "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "Complimentary online Pre-TTC preparation module",
       "incRepeat": "Lifetime course repetition privilege (tuition-free)",
       "notIncHeading": "Not Included",
       "notIncFlights": "International and domestic flight tickets",
-      "notIncVisa": "Indonesian visa fees",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "Personal travel and medical insurance"
     },
     "pricing": {
@@ -8313,120 +8036,126 @@
       },
       "detailedModules": [
         {
-          "title": "Ashtanga Yoga Postures",
+          "title": "Gevorderde Asana's & Aanpassingen",
           "items": [
-            "Complete Ashtanga yoga primary series by K. Pattabhi Jois",
-            "Week 1: Introduction & Sun salutation A & B",
-            "Week 2: Standing sequence postures & yoga props",
-            "Week 3: Seated sequence & Finishing postures",
-            "Week 4: Mysore style & Teaching practice"
+            "Advanced arm balances & inversions",
+            "Therapeutic modifications & props usage",
+            "Working with injuries & limitations",
+            "Advanced sequencing principles"
           ]
         },
         {
-          "title": "Yoga Philosophy",
+          "title": "Therapeutische Yogatoepassingen",
           "items": [
-            "Complete yoga sutras of Patanjali",
-            "Eight limbs of Ashtanga Yoga",
-            "Pancha-Vayus & Panchakoshas",
-            "Sattva, Rajas & Tamas (Triguna)",
-            "Introduction to Vedas",
-            "Lives of yogis (Inspiring stories)"
+            "Yoga for back pain & spinal health",
+            "Yoga for stress & anxiety",
+            "Prenatal & postnatal yoga",
+            "Yoga for seniors",
+            "Restorative yoga techniques"
           ]
         },
         {
-          "title": "Pranayama Breathing Practices",
+          "title": "Gevorderde Pranayama & Bandha's",
           "items": [
-            "Complete pranayama techniques",
-            "All six Shatkarma cleansing practices",
-            "Advanced breathing: Sheetali, Sheetkari",
-            "Kumbhaka (breath retention)",
-            "Integration with asana practice"
+            "Advanced kumbhaka techniques",
+            "Kriyas for energy awakening",
+            "Bandha integration in advanced asanas",
+            "Pranayama for kundalini activation",
+            "Breath practices for nervous system balance"
           ]
         },
         {
-          "title": "Recitation of Sacred Sound",
+          "title": "Yoga Nidra & Verdiepende Meditatie",
           "items": [
-            "Complete mantra collection",
-            "Om Tryambakam Yajamahe",
-            "Hare Rama, Hare Krishna (Maha mantra)",
-            "Yogena Cittasya (Sloka on Sage Patanjali)",
-            "Daily mantra chanting practice"
+            "Complete Yoga Nidra training",
+            "Leading guided meditations",
+            "Chakra meditation techniques",
+            "Sound & mantra meditation",
+            "Silent retreat practices"
           ]
         },
         {
-          "title": "Anatomy and Physiology",
+          "title": "Diepgaande Filosofiestudies",
           "items": [
-            "Complete body systems study",
-            "Physiology of muscles & joints",
-            "Respiratory & Nervous system",
-            "Food & Digestive System",
-            "Workshop on different Asanas"
+            "Bhagavad Gita study",
+            "Upanishads exploration",
+            "Tantra philosophy",
+            "Samkhya & Vedanta",
+            "Applied philosophy in modern life"
           ]
         },
         {
-          "title": "Teaching Methodology",
+          "title": "Gevorderde Anatomie & Biomechanica",
           "items": [
-            "Complete class sequencing",
-            "Demonstration & observation principles",
-            "Mental & emotional preparation",
-            "Step by step class structure planning",
-            "Practicum & teaching evaluations"
+            "Subtle body anatomy (Nadis, Chakras)",
+            "Myofascial release techniques",
+            "Biomechanics of complex poses",
+            "Injury prevention & working safely with common injuries",
+            "Yoga therapy principles"
           ]
         },
         {
-          "title": "Meditation & Bandhas",
+          "title": "Lesgeven als Beroep: Workshops, Retreats & Online Lesgeven",
           "items": [
-            "Osho Dynamic meditation",
-            "Nada Brahma Meditation",
-            "Antar Mouna & Ajapa Japa",
-            "All four Bandhas mastery",
-            "Integration with asana & pranayama"
+            "Workshop & retreat planning",
+            "Private session design",
+            "Online class delivery",
+            "Business of yoga & ethical studio management"
           ]
         },
         {
-          "title": "Art of Alignment & Hands-on Adjustments",
+          "title": "Gevorderde Uitlijning & Biomechanische Aanpassingen",
           "items": [
-            "Comprehensive biomechanics and functional alignment for classical yoga postures",
-            "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
-            "Understanding individual anatomical variations, skeletal compression vs tension",
-            "Modification strategies using props and stance adjustments for diverse student flexibility"
+            "Micro-alignment principles and postural observation for advanced and complex asanas",
+            "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+            "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+            "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
           ]
         },
         {
-          "title": "Classical Hatha Yoga Practice",
+          "title": "Gevorderde Klassieke Hatha Yoga",
           "items": [
-            "In-depth study of classical Hatha asana principles and sustained holds",
-            "Complete Hatha sequencing: preparatory warming, peak postures, and counter-poses",
-            "Balancing solar (Ha) and lunar (Tha) energies through mindful posture practice",
-            "Integration of Bandhas and Mudras within traditional Hatha asana holding"
+            "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+            "Cultivating steadiness and inward focus through still posture holding and measured breath",
+            "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+            "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
           ]
         },
         {
-          "title": "Iyengar Yoga & Precision Alignment",
+          "title": "Gevorderde Iyengar Yoga & Herstellende Uitlijning",
           "items": [
-            "Methodical alignment utilizing blocks, straps, blankets, and props",
-            "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
-            "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
-            "Restorative Iyengar prop setups for supported holding and quiet focus"
+            "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
+            "Structural alignment techniques for posture balance and foundational body mechanics",
+            "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+            "Postural observation for personalized practice"
           ]
         },
         {
-          "title": "Vinyasa Flow & Dynamic Sequencing",
+          "title": "Creatieve Vinyasa Krama & Master-Sequencing",
           "items": [
-            "Intelligent sequencing architecture: progressive warm-up, peak pose, and cool down",
-            "Dynamic transitions, jump-backs, and jump-throughs with breath awareness",
-            "Creating thematic vinyasa classes for varying student levels and intentions",
-            "Pacing, tempo modulation, and holding space during energetic flowing sequences"
+            "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+            "Creating themed classes and peak posture staging",
+            "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+            "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+            "Designing transformative workshops, masterclasses, and multi-day retreat flows"
           ]
         },
         {
-          "title": "Additional Classes",
+          "title": "Docentenstage & Beoordeling",
           "items": [
-            "Sound Healing sessions",
-            "Beach Yoga experience",
-            "Yin Yoga & Acro Yoga",
-            "Ayurveda fundamentals",
-            "Agni Hotra (Fire ceremony)"
+            "Supervised practice teaching with real-time feedback",
+            "Structured peer feedback and group reflection",
+            "One-on-one teaching mentorship with master faculty",
+            "Practical alignment and adjustment evaluation",
+            "Final comprehensive teaching assessment"
+          ]
+        },
+        {
+          "title": "Gespecialiseerde Workshops",
+          "items": [
+            "Klankhealing workshop",
+            "Ayurveda for yoga teachers",
+            "Chakra balancing practices"
           ]
         }
       ]

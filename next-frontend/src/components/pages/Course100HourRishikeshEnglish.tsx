@@ -1,12 +1,13 @@
 "use client";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
+import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "@/components/layout/Layout";
 import SEO, { generateCourseSchema } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { CourseBatch, BATCHES_100_HOUR, getBatchBadge } from "@/constants/courseDates";
+import { CourseBatch, BATCHES_100_HOUR_RISHIKESH, getBatchBadge } from "@/constants/courseDates";
 import { PROMO_OFFER } from "@/constants/offers";
 import { useUpcomingBatches } from "@/hooks/useUpcomingBatches";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -72,7 +73,6 @@ const insta5 = getCloudinaryImage("insta-5.jpg");
 const yogaAllianceBg = getCloudinaryImage("yoga-alliance-bg.jpg");
 const yaRyt200 = getCloudinaryImage("ya-ryt-200.png");
 const healthyMeals = getCloudinaryImage("healthy-meals.jpg");
-const yaRys100 = getCloudinaryImage("ya-rys-100.png");
 const yaRys200 = getCloudinaryImage("ya-rys-200.jpg");
 const yaAllCertifications = getCloudinaryImage("ya-all-certifications.jpg");
 import WhyFeatureItem from "@/components/home/WhyFeatureItem";
@@ -220,7 +220,7 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
 
 // Icon Highlights Section
 const iconHighlights = [
-  { icon: Award, title: "Yoga Alliance Certified", subtitle: "RYS 100" },
+  { icon: Award, title: "Foundation Certificate", subtitle: "100 Hours" },
   { icon: Leaf, title: "Multi-Style Yoga", subtitle: "Authentic Teaching" },
   { icon: Heart, title: "Prakriti-Based", subtitle: "Personalized Learning" },
   { icon: Users, title: "Small Batch", subtitle: "8-10 Students" },
@@ -558,7 +558,7 @@ const quizQuestions = [
 ];
 
 export default function Course100HourRishikesh({ initialBatches, syllabusSlot }: { initialBatches?: CourseBatch[]; syllabusSlot?: React.ReactNode }) {
-  const clientBatches = useUpcomingBatches(BATCHES_100_HOUR);
+  const clientBatches = useUpcomingBatches(BATCHES_100_HOUR_RISHIKESH);
   const upcomingDates = initialBatches && initialBatches.length > 0 ? initialBatches : clientBatches;
   const { toast } = useToast();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
@@ -600,32 +600,6 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [showBookingDialog, setShowBookingDialog] = useState(false);
 
-  // Carousel state for syllabus
-  const [syllabusApi, setSyllabusApi] = useState<CarouselApi>();
-  const [currentSyllabus, setCurrentSyllabus] = useState(1);
-  const syllabusTotalItems = 11;
-
-  useEffect(() => {
-    if (!syllabusApi) return;
-
-    const updateProgress = () => {
-      const selected = syllabusApi.selectedScrollSnap();
-      const totalSnaps = syllabusApi.scrollSnapList().length;
-
-      if (totalSnaps <= 1) {
-        setCurrentSyllabus(1);
-        return;
-      }
-
-      // Map snap index 0...totalSnaps-1 to item index 1...11
-      const scaledCurrent = Math.round((selected / (totalSnaps - 1)) * (syllabusTotalItems - 1)) + 1;
-      setCurrentSyllabus(scaledCurrent);
-    };
-
-    updateProgress();
-    syllabusApi.on("select", updateProgress);
-    syllabusApi.on("reInit", updateProgress);
-  }, [syllabusApi]);
   const [showEnrollDialog, setShowEnrollDialog] = useState(false);
   const [showQuickEnquiryDialog, setShowQuickEnquiryDialog] = useState(false);
   const [quickEnquiryForm, setQuickEnquiryForm] = useState({
@@ -1026,6 +1000,10 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
                   </span>
                 ))}
               </div>
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/90 text-white text-sm font-bold tracking-wide uppercase mb-4 shadow-md">
+                ✦ First Batch: March 2027
+              </div>
+
 
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tight opacity-0 animate-fade-in text-primary-foreground/95 leading-tight mb-8" style={{ animationDelay: '1.2s', animationFillMode: 'forwards' }}>
                 100 Hour Yoga Teacher Training in Rishikesh, India
@@ -1159,17 +1137,17 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
                   {/* Certification */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Certification</p>
-                    <p className="font-heading font-semibold text-foreground">Yoga Alliance RYS 100</p>
+                    <p className="font-heading font-semibold text-foreground">YogaGarhi 100-Hour Yoga Foundation Certificate</p>
                   </div>
 
                   {/* Price */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
                     <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                      <span className="text-sm text-muted-foreground line-through">$899</span>
+                      {SHOW_COMPARE_PRICE && (<span className="text-sm text-muted-foreground line-through">$899</span>)}
                       <span className="font-heading text-2xl md:text-3xl font-bold text-primary animate-pulse">$599</span>
                     </div>
-                    <span className="inline-block mt-1 px-2 py-0.5 text-xs font-medium bg-green-100 text-green-700 rounded-full">Save $300</span>
+                    {SHOW_COMPARE_PRICE && (<span className="inline-block mt-1 px-2 py-0.5 text-xs font-medium bg-green-100 text-green-700 rounded-full">Save $300</span>)}
                   </div>
 
                   {/* Book Now Button */}
@@ -1285,7 +1263,7 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
                 <div className="space-y-6 text-muted-foreground leading-relaxed text-left mb-8">
                   {/* First 2 paragraphs - always visible */}
                   <p className="text-base sm:text-lg text-foreground/80 font-medium">
-                    Become a Yoga Alliance Registered Yoga Teacher (RYT 100) through Yogagarhi's
+                    Earn your YogaGarhi 100-Hour Yoga Foundation Certificate through Yogagarhi's
                     100-Hour Yoga Teacher Training in Rishikesh and join a life-changing journey
                     of yoga and self-realization.
                   </p>
@@ -1363,7 +1341,7 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
                 <div className="space-y-6 text-muted-foreground leading-relaxed">
                   {/* First 2 paragraphs - always visible */}
                   <p>
-                    Become a Yoga Alliance Registered Yoga Teacher (RYT 100) through Yogagarhi's
+                    Earn your YogaGarhi 100-Hour Yoga Foundation Certificate through Yogagarhi's
                     100-Hour Yoga Teacher Training IN RISHIKESH Rishikesh and join a life-changing journey
                     of yoga and self-realization.
                   </p>
@@ -1697,8 +1675,7 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <Image src={yaRys100} alt="RYS 100" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                                <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <Image src={yaRyt200} alt="RYT 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
               </div>
 
@@ -1729,125 +1706,6 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
               Comprehensive curriculum covering all aspects of yoga teacher training
             </p>
-
-            {/* Horizontal Scrollable Cards */}
-            <div className="relative group/carousel">
-              <Carousel
-                setApi={setSyllabusApi}
-                opts={{
-                  align: "start",
-                  loop: false,
-                }}
-                className="w-full"
-              >
-                <CarouselContent className="-ml-4 md:-ml-6">
-                  {[
-                    {
-                      title: "Ashtanga Yoga Postures",
-                      content: "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice.",
-                      image: syllabusAshtanga
-                    },
-                    {
-                      title: "Hatha & Vinyasa Flow",
-                      content: "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology.",
-                      image: syllabusHathaVinyasa
-                    },
-                    {
-                      title: "Yoga Philosophy",
-                      content: "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis.",
-                      image: syllabus3
-                    },
-                    {
-                      title: "Pranayama & Breathing",
-                      content: "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari.",
-                      image: syllabusPranayamaBreathing
-                    },
-                    {
-                      title: "Anatomy & Physiology",
-                      content: "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system.",
-                      image: syllabusAnatomyPhysiology
-                    },
-                    {
-                      title: "Teaching Methodology",
-                      content: "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning.",
-                      image: syllabus6
-                    },
-                    {
-                      title: "Meditation & Mantra",
-                      content: "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness.",
-                      image: syllabusMeditationMantra
-                    },
-                    {
-                      title: "Iyengar Yoga",
-                      content: "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries.",
-                      image: syllabus8
-                    },
-                    {
-                      title: "Alignment Principles",
-                      content: "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body.",
-                      image: syllabus9
-                    },
-                    {
-                      title: "Bandhas (Energy Locks)",
-                      content: "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice.",
-                      image: syllabus10
-                    },
-                    {
-                      title: "Mudras (Yogic Gestures)",
-                      content: "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation.",
-                      image: syllabusMudras
-                    },
-                  ].map((item, index) => (
-                    <CarouselItem key={index} className="pl-4 md:pl-6 basis-[85%] sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                      <div className="flex flex-col h-full bg-card rounded-3xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all duration-300 group">
-                        {/* Rectangular Image */}
-                        <div className="relative aspect-[4/3] overflow-hidden">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            className="object-cover transition-transform duration-700 group-hover:scale-110"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                          {/* Slide Counter - Mobile Friendly */}
-                          <div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-md text-primary-foreground rounded-full px-3 py-1 text-xs font-bold shadow-lg flex items-center gap-1">
-                            <span className="text-secondary">{index + 1}</span>
-                            <span className="opacity-60">/</span>
-                            <span>11</span>
-                          </div>
-                        </div>
-
-                        {/* Text Content */}
-                        <div className="p-6 flex flex-col flex-1">
-                          <h3 className="font-heading text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                            {item.title}
-                          </h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
-                            {item.content}
-                          </p>
-                        </div>
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-              </Carousel>
-
-              {/* Custom Scroll Progress Bar */}
-              <div className="mt-8 max-w-xs mx-auto">
-                <div className="h-1 w-full bg-secondary rounded-full overflow-hidden">
-                  <div
-                    className="h-full bg-primary transition-all duration-300 ease-out"
-                    style={{ width: `${(currentSyllabus / syllabusTotalItems) * 100}%` }}
-                  />
-                </div>
-                <div className="flex justify-between mt-2 px-1">
-                  <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-bold">Start</span>
-                  <span className="text-xs font-heading font-bold text-primary">{currentSyllabus} of {syllabusTotalItems}</span>
-                  <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-bold">End</span>
-                </div>
-              </div>
-            </div>
 
             {/* Expandable Detailed Syllabus (Semantic HTML) */}
             {syllabusSlot}
@@ -3270,167 +3128,14 @@ This is not a transactional relationship — it is a lifelong connection.`}
         </section>
 
         {/* ===== ACCOMMODATION ===== */}
-        {/* Hero Banner with Background */}
-        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-          {/* Background Image */}
-          <div className="absolute inset-0 -z-10">
-            <Image
-              src={apartPoolVilla}
-              alt="Rishikesh yoga retreat accommodation"
-              fill sizes="100vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-foreground/60" />
-          </div>
-
-          {/* Content */}
-          <div className="container mx-auto px-4 text-center relative z-10">
-            {/* Main Title */}
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-[0.15em] uppercase mb-8">
-              Accommodation
+        <section className="py-20 bg-secondary/30 border-t border-border/50">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Accommodation & Campus
             </h2>
-
-            {/* Subtitle */}
-            <p className="font-heading text-xl md:text-2xl text-white/90 max-w-2xl mx-auto mb-16 leading-relaxed">
-              A serene yoga retreat in the heart of Rishikesh's sacred Rishikesh region
+            <p className="font-heading text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Accommodation and venue details will be shared soon.
             </p>
-
-            {/* Location Features */}
-            <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {/* Feature 1 - Waterfalls */}
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-4">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                  <Droplets className="w-6 h-6 text-white" />
-                </div>
-                <p className="font-heading text-base md:text-lg text-white text-left">
-                  10 beautiful waterfalls within 10 km
-                </p>
-              </div>
-
-              {/* Feature 2 - Private Forest */}
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-4">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                  <Mountain className="w-6 h-6 text-white" />
-                </div>
-                <p className="font-heading text-base md:text-lg text-white text-left">
-                  Private forest with an in-house waterfall
-                </p>
-              </div>
-
-              {/* Feature 3 - Rice-field Trekking */}
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-4">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                  <Leaf className="w-6 h-6 text-white" />
-                </div>
-                <p className="font-heading text-base md:text-lg text-white text-left">
-                  Peaceful rice-field trekking on-site
-                </p>
-              </div>
-
-              {/* Feature 4 - Distance to Rishikesh */}
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-4">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <p className="font-heading text-base md:text-lg text-white text-left">
-                  Only 15 km from central Rishikesh
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Room Types Section */}
-        <section className="py-20 bg-background" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2278px" }}>
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">Choose Your Stay</p>
-              <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Room Options
-              </h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Rest and recharge in our peaceful living spaces, designed to support your yogic journey
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {[
-                {
-                  title: "Triple Sharing",
-                  beds: 3,
-                  description: "Share your space with two like-minded yogis. A great way to build lasting friendships.",
-                  originalPrice: "$1,399",
-                  price: "$1,149",
-                  images: [tripleBalcony, tripleBathroom, tripleBedroom1, tripleBedroom2, tripleBedroom3],
-                  features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
-                  badge: null,
-                  isPopular: false,
-                },
-                {
-                  title: "Double Sharing",
-                  beds: 2,
-                  description: "Share with one roommate. Perfect balance of community and personal space.",
-                  originalPrice: "$1,649",
-                  price: "$1,349",
-                  images: [doubleBedroom1, doubleBedroom2, doubleBedroom3, doubleBedroom4, doubleBalcony],
-                  features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
-                  badge: "Most Popular",
-                  isPopular: true,
-                },
-                {
-                  title: "Private Room",
-                  beds: 1,
-                  description: "Your own sanctuary for complete privacy and deep personal reflection.",
-                  originalPrice: "$1,999",
-                  price: "$1,649",
-                  images: [
-                    privateNew2,
-                    privateNew3,
-                    privateNew4,
-                    privateNew1,
-                    privateBedroom1,
-                    privateBedroom2,
-                    privateBedroom3,
-                    privateBathroom,
-                    privateBalcony,
-                  ],
-                  features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
-                  badge: "Premium",
-                  isPopular: false,
-                },
-              ].map((room, roomIndex) => (
-                <RoomCard
-                  key={roomIndex}
-                  room={room}
-                  onBookNow={() => setShowEnrollDialog(true)}
-                />
-              ))}
-            </div>
-
-            {/* Common Amenities */}
-            <div className="mt-16 max-w-4xl mx-auto">
-              <h3 className="font-heading text-xl font-bold text-center text-foreground mb-8">
-                All Rooms Include
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {[
-                  { icon: Wifi, label: "Free Wi-Fi" },
-                  { icon: Droplets, label: "Hot Water" },
-                  { icon: Wind, label: "AC / Fan" },
-                  { icon: Sparkles, label: "Daily Cleaning" },
-                ].map((item, index) => {
-                  const IconComponent = item.icon;
-                  return (
-                    <div key={index} className="flex items-center gap-3 p-4 bg-secondary/30 rounded-lg">
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                        <IconComponent className="w-5 h-5 text-primary" />
-                      </div>
-                      <span className="font-medium text-foreground text-sm">{item.label}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
           </div>
         </section>
 
@@ -3670,7 +3375,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         {/* Early Bird */}
                         <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
                           <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                          <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                          {SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>)}
                         </div>
 
                         {/* Book Button */}
@@ -3724,10 +3429,10 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $599
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$899</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$899</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Triple Sharing */}
@@ -3736,10 +3441,10 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,149
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$1,449</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,449</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Double Sharing */}
@@ -3748,10 +3453,10 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,349
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$1,649</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,649</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Private Room */}
@@ -3760,10 +3465,10 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,649
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$1,949</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,949</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* CTA */}
@@ -3853,9 +3558,12 @@ This is not a transactional relationship — it is a lifelong connection.`}
                 </svg>
                 <span className="font-heading text-xl font-semibold text-foreground">Google Reviews</span>
               </div>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                What Our Students Say
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">
+                What Our Bali Graduates Say
               </h2>
+              <p className="text-base text-muted-foreground max-w-2xl mx-auto mb-6">
+                Our Rishikesh campus opens in March 2027. These reviews are from students who trained with the same founder, Yogacharya Sachin, and the same teaching method at our Bali school.
+              </p>
 
               {/* Overall Rating */}
               <div className="flex items-center justify-center gap-4 mb-2">
@@ -3881,7 +3589,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             {/* View All Reviews Link */}
             <div className="text-center mt-10">
               <a
-                href="https://www.google.com/maps/place/Yoga+Teacher+Training+in+Rishikesh+-+Yogagarhi/@30.1312,78.3245,17z/data=!4m6!3m5!1s0x2dd219e70aa3e43d:0x281930517f104591!8m2!3d30.1312!4d78.3245"
+                href="https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"

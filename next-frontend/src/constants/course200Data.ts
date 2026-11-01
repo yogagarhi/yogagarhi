@@ -56,7 +56,8 @@ export const HOW_TO_REACH: HowToReachInfo | null = null;
 export const YOGA_ALLIANCE_PROFILE: YogaAllianceProfile = {
   schoolName: "YogaGarhi",
   rysDesignation: "RYS 200",
-  publicProfileUrl: "", // [CONFIRM: Add Yoga Alliance public directory link here]
+  // TODO: Yoga Alliance profile URL: [PASTE URL] - Currently empty, guarded so no empty link renders
+  publicProfileUrl: "",
 };
 
 // Helpful Guides: verified published blogs on the site

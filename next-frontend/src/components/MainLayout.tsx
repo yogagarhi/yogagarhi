@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation"
 import Header from "./layout/Header"
 import Footer from "./layout/Footer"
 import dynamic from "next/dynamic"
+import { PROMO_OFFER } from "@/constants/offers"
 
 const EarlyBirdPopup = dynamic(() => import("./EarlyBirdPopup"), { ssr: false });
 const StickyContactButton = dynamic(() => import("./StickyContactButton"), { ssr: false });
@@ -85,15 +86,21 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
         "/yogic-energy"
     ].includes(normalizedPathname);
 
+    const mainPadding = !hideHeader
+        ? PROMO_OFFER.enabled
+            ? ' pt-[144px] min-[375px]:pt-[154px] sm:pt-[104px]'
+            : ' pt-[64px] min-[375px]:pt-[72px] sm:pt-[80px]'
+        : '';
+
     return (
         <div className="min-h-screen flex flex-col">
             {!hideHeader && <Header />}
-            <main className={`flex-grow${!hideHeader ? ' pt-[144px] min-[375px]:pt-[154px] sm:pt-[104px]' : ''}`}>{children}</main>
+            <main className={`flex-grow${mainPadding}`}>{children}</main>
             {!hideFooter && (
                 <>
                     <PartnershipsSection />
                     <Footer />
-                    {mountEarlyBird && <EarlyBirdPopup />}
+                    {PROMO_OFFER.enabled && mountEarlyBird && <EarlyBirdPopup />}
                     {!hideHeader && <StickyContactButton />}
                 </>
             )}

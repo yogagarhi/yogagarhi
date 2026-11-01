@@ -1,5 +1,6 @@
 "use client";
 import { HOW_TO_REACH_UI } from "@/constants/courseSectionsTranslations";
+import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useTranslations, useLocale } from "next-intl";
@@ -77,7 +78,6 @@ const insta5 = getCloudinaryImage("insta-5.jpg");
 const yogaAllianceBg = getCloudinaryImage("yoga-alliance-graduates-hd.jpg");
 const healthyMeals = getCloudinaryImage("healthy-meals.jpg");
 const yaRyt200 = getCloudinaryImage("ya-ryt-200.png");
-const yaRys100 = getCloudinaryImage("ya-rys-100.png");
 const yaRys200 = getCloudinaryImage("ya-rys-200.jpg");
 const yaAllCertifications = getCloudinaryImage("ya-all-certifications.jpg");
 
@@ -374,7 +374,7 @@ const whatYouWillReceive = [
   },
   {
     title: "Peaceful Bali Surroundings",
-    description: "Experience yoga in the lap of nature. Calm beaches and greenery deepen your practice.",
+    description: "Experience yoga in the lap of nature. Lush rice fields and serene greenery deepen your practice.",
     icon: Mountain,
     image: apartBaliSurroundings
   },
@@ -1258,7 +1258,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.startingFrom")}</p>
                     <div className="flex flex-col items-center lg:items-start min-w-0">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start flex-wrap">
-                        <span className="text-base text-muted-foreground line-through opacity-60">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>
+                        {SHOW_COMPARE_PRICE && (<span className="text-base text-muted-foreground line-through opacity-60">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>)}
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
                             {COURSE_200_HOUR_PRICING.shared.price}
@@ -1266,10 +1266,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                           <div className="absolute -inset-1 bg-primary/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
                         </div>
                       </div>
-                      <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform max-w-full break-words">
+                      {SHOW_COMPARE_PRICE && (<div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform max-w-full break-words">
                         <Zap className="w-3.5 h-3.5 fill-current shrink-0" />
                         <span>{t("quickInfo.earlyBirdDiscount")}</span>
-                      </div>
+                      </div>)}
                     </div>
                   </div>
 
@@ -2079,7 +2079,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                           {/* Early Bird */}
                           <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
                             <p className="font-heading font-bold text-foreground text-sm">{t("pricing.earlyBirdPrice")}</p>
-                            <p className="text-primary text-sm font-medium">{tCommon("save")} {item.earlyBirdSaving}</p>
+                            {SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">{tCommon("save")} {item.earlyBirdSaving}</p>)}
                           </div>
 
                           {/* Book Button */}
@@ -2136,10 +2136,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.shared.price}
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>)}
                           <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Triple Sharing */}
@@ -2148,10 +2148,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.private.price}
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">{COURSE_200_HOUR_PRICING.private.originalPrice}</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">{COURSE_200_HOUR_PRICING.private.originalPrice}</span>)}
                           <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Double Sharing */}
@@ -2160,10 +2160,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.deluxe.price}
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">{COURSE_200_HOUR_PRICING.deluxe.originalPrice}</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">{COURSE_200_HOUR_PRICING.deluxe.originalPrice}</span>)}
                           <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Private Room */}
@@ -2172,10 +2172,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         <p className="font-heading text-2xl font-bold text-foreground">
                           {COURSE_200_HOUR_PRICING.vip.price}
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">{COURSE_200_HOUR_PRICING.vip.originalPrice}</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">{COURSE_200_HOUR_PRICING.vip.originalPrice}</span>)}
                           <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* CTA */}
@@ -3090,7 +3090,6 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <Image src={yaRys100} alt="RYS 100" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <Image src={yaRyt200} alt="RYT 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
               </div>

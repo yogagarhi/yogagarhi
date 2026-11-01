@@ -24,9 +24,9 @@ export async function generateMetadata({
     }
 
     if (locale === "en") {
-        const title = "100 Hour Yoga Teacher Training in Bali | Yoga Alliance Ubud";
+        const title = "100 Hour Yoga Teacher Training Bali – 12 Days for Beginners | YogaGarhi";
         const description =
-            "Deepen your practice with 100-Hour Yoga Teacher Training in Ubud, Bali. Beginner-friendly curriculum & organic meals. Reserve your spot today!";
+            "12-day beginner-friendly 100-hour yoga foundation course near Ubud, Bali. Small groups, multi-style yoga, pranayama & philosophy. From $599.";
         return {
             metadataBase: new URL("https://www.yogagarhi.com"),
             title: {
@@ -71,10 +71,10 @@ export async function generateMetadata({
         };
     }
 
-    const title = messages.course100?.metaTitle || "100 Hour Yoga Teacher Training in Bali | Yoga Alliance Ubud";
+    const title = messages.course100?.metaTitle || "100 Hour Yoga Teacher Training Bali – 12 Days for Beginners | YogaGarhi";
     const description =
         messages.course100?.metaDesc ||
-        "Deepen your practice with 100-Hour Yoga Teacher Training in Ubud, Bali. Beginner-friendly curriculum & organic meals. Reserve your spot today!";
+        "12-day beginner-friendly 100-hour yoga foundation course near Ubud, Bali. Small groups, multi-style yoga, pranayama & philosophy. From $599.";
     const url = `https://www.yogagarhi.com/${locale}/100-hour-yoga-teacher-training-in-bali`;
 
     return applyQualityGate({
@@ -296,6 +296,41 @@ export default async function Page({
     /* =========================
        FAQ SCHEMA
     ========================= */
+    
+    const eventSchemas = upcomingBatches.map((batch: any) => ({
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": `100 Hour Yoga Teacher Training Bali - ${batch.date}`,
+        "startDate": batch.startDate,
+        "endDate": batch.endDate,
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "YogaGarhi Bali Campus",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Banjar Dinas Petak Kaja",
+                "addressLocality": "Gianyar",
+                "addressRegion": "Bali",
+                "postalCode": "80552",
+                "addressCountry": "ID"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "YogaGarhi",
+            "url": "https://www.yogagarhi.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "599",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": pageUrl
+        }
+    }));
+    
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -368,6 +403,15 @@ export default async function Page({
                 }}
             />
 
+            
+            {/* Event Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(eventSchemas),
+                }}
+            />
+    
             {/* Course Schema */}
             <script
                 type="application/ld+json"

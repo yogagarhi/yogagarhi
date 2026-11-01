@@ -1,5 +1,6 @@
 "use client";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
+import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -72,7 +73,6 @@ const insta5 = getCloudinaryImage("insta-5.jpg");
 const yogaAllianceBg = getCloudinaryImage("yoga-alliance-graduates-hd.jpg");
 const healthyMeals = getCloudinaryImage("healthy-meals.jpg");
 const yaRyt200 = getCloudinaryImage("ya-ryt-200.png");
-const yaRys100 = getCloudinaryImage("ya-rys-100.png");
 const yaRys200 = getCloudinaryImage("ya-rys-200.jpg");
 const yaAllCertifications = getCloudinaryImage("ya-all-certifications.jpg");
 
@@ -1092,6 +1092,10 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
               <div className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold leading-tight mb-6 drop-shadow-2xl text-white">
                 Yogagarhi
               </div>
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/90 text-white text-sm font-bold tracking-wide uppercase mb-4 shadow-md">
+                ✦ First Batch: July 2027
+              </div>
+
 
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold tracking-tight text-white leading-tight mb-8 text-center drop-shadow-lg">
                 300 Hour Yoga Teacher Training in Varkala, Kerala, India
@@ -1148,12 +1152,7 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                   </div>
 
                   {/* Special Offer Box */}
-                  <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
-                    <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                      Book your September to December YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
-                    </p>
                   </div>
-                </div>
               </div>
             </div>
           </div>
@@ -1204,7 +1203,7 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
                     <div className="flex flex-col items-center lg:items-start">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                        <span className="text-base text-muted-foreground line-through opacity-60">$1,299</span>
+                        {SHOW_COMPARE_PRICE && (<span className="text-base text-muted-foreground line-through opacity-60">$1,299</span>)}
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
                             $1,099
@@ -1319,36 +1318,42 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
               <div tabIndex={0} role="region" aria-label="Course highlights" className="overflow-x-auto scrollbar-hide pb-6 -mx-4 px-4 flex gap-6 snap-x snap-mandatory focus:outline-none">
                 {[
                   {
-                    name: "Sarah Jenkins",
-                    country: "United Kingdom",
-                    quote: "Yogagarhi completely redefined my practice. The small batch size (only 8 of us) meant Sachin Ji corrected my alignment daily. I arrived anxious and left a confident teacher.",
-                    avatar: insta1
-                  },
-                  {
-                    name: "David Müller",
-                    country: "Germany",
-                    quote: "Most schools start on Day 1, but Yogagarhi's Pre-TTC mentorship started weeks earlier. When I landed, I already knew the Sanskrit terms and basic sequencing. Truly professional.",
-                    avatar: insta2
-                  },
-                  {
-                    name: "Elena Rostova",
+                    name: "Gurpreet Kaur Dhou",
                     country: "Canada",
-                    quote: "The integration of Ayurveda and philosophy was life-changing. We didn't just learn postures; we learned our own unique energy. It completely transformed my path.",
-                    avatar: insta3
+                    quote: "YogaGhari is truly authentic and deeply rooted in the real essence of yoga. From the very beginning, I felt seen and supported as a person, not treated as just another number. The teachers genuinely care about your growth and help you build confidence in your own voice.",
+                    avatarLetter: "G"
                   },
                   {
-                    name: "Min-Ji Kim",
-                    country: "South Korea",
-                    quote: "I was worried about the language barrier, but the teachers are incredibly patient. The 35+ sequencing book they gave us is a goldmine—I taught my first class the week I got home!",
-                    avatar: insta4
+                    name: "Ilksen Doğan",
+                    country: "Turkey",
+                    quote: "Sachin is hands down one of the most knowledgeable yoga teachers I have been taught by. Despite me being an absolute beginner, he was patient and encouraging. I was able to confidently understand the foundations of asana alignment.",
+                    avatarLetter: "I"
                   },
                   {
-                    name: "Aisha Rahman",
-                    country: "United Arab Emirates",
-                    quote: "Sacred temple tours, sound healing, and professional photoshoot—all included. But the real magic is the lineage and depth of yogic knowledge. Best decision of my life.",
-                    avatar: insta5
+                    name: "Aleksandra Dyachenko",
+                    country: "Russia",
+                    quote: "I completed my yoga teacher training with YogaGarhi, and it was truly magical. 🌺 The knowledge I gained was deep and authentic. The teachers are real mentors who teach from the heart with kindness and wisdom. Felt like being part of a big, warm family.",
+                    avatarLetter: "A"
+                  },
+                  {
+                    name: "Amy Letourneau",
+                    country: "Canada",
+                    quote: "Sachin is such an amazing teacher and human. The training I did here was the start of a beautiful yoga journey, which has now led me to be confident enough to teach in multiple countries around the world.",
+                    avatarLetter: "A"
+                  },
+                  {
+                    name: "Lisa Beltman",
+                    country: "Germany",
+                    quote: "I really appreciate Sachin Ji’s calm, friendly, and welcoming energy. He is knowledgeable and takes the time to guide each student with care. His classes are structured in such a way that you find yourself doing more than you thought you could.",
+                    avatarLetter: "L"
+                  },
+                  {
+                    name: "Nicole Drake",
+                    country: "Australia",
+                    quote: "Sachin’s instruction helped my practice and asana skills develop beyond what I believed I could achieve. I learned the traditional way to practice yoga, with extensive knowledge in anatomy, traditional practice, and alignment.",
+                    avatarLetter: "N"
                   }
-                ].map((t, idx) => (
+                ].map((story, idx) => (
                   <div
                     key={idx}
                     className="w-[300px] md:w-[380px] bg-card rounded-2xl border border-border/80 p-8 shadow-sm flex flex-col justify-between flex-shrink-0 snap-align-start hover:shadow-md hover:border-primary/30 transition-all duration-300 relative group"
@@ -1368,26 +1373,21 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
 
                       {/* Quote text */}
                       <p className="text-muted-foreground text-sm md:text-base leading-relaxed italic relative z-10">
-                        "{t.quote}"
+                        "{story.quote}"
                       </p>
                     </div>
 
                     {/* Student Info */}
                     <div className="flex items-center gap-4 mt-8 pt-6 border-t border-border/60">
-                      <div className="relative w-12 h-12 rounded-full overflow-hidden border border-primary/20 flex-shrink-0">
-                        <Image
-                          src={t.avatar}
-                          alt={t.name}
-                          fill sizes="48px"
-                          className="object-cover"
-                        />
+                      <div className="w-12 h-12 rounded-full bg-primary/10 text-primary font-bold flex items-center justify-center font-heading text-lg flex-shrink-0 border border-primary/20">
+                        {story.avatarLetter}
                       </div>
-                      <div>
-                        <h3 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors">
-                          {t.name}
+                      <div className="flex-1 min-w-0">
+                        <h3 className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors break-words">
+                          {story.name}
                         </h3>
                         <p className="text-[10px] text-muted-foreground font-medium uppercase tracking-widest">
-                          {t.country}
+                          {story.country}
                         </p>
                       </div>
                     </div>
@@ -2076,12 +2076,7 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                 </Button>
 
                 {/* Special Offer Box */}
-                <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
-                  <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    Book your September to December YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities - <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
-                  </p>
                 </div>
-              </div>
             </div>
           </div>
         </section >
@@ -2153,7 +2148,7 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                           {/* Early Bird */}
                           <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
                             <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                            <p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>
+                            {SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>)}
                           </div>
 
                           {/* Book Button */}
@@ -2207,10 +2202,10 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,099
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$1,299</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,299</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Triple Sharing */}
@@ -2219,10 +2214,10 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,399
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$1,599</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,599</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Double Sharing */}
@@ -2231,10 +2226,10 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,699
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$1,899</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,899</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* Private Room */}
@@ -2243,10 +2238,10 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,999
                         </p>
-                        <p className="text-muted-foreground text-sm">
-                          <span className="line-through">$2,199</span>
+                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
+                          {SHOW_COMPARE_PRICE && (<span className="line-through">$2,199</span>)}
                           <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
-                        </p>
+                        </p>)}
                       </div>
 
                       {/* CTA */}
@@ -2552,213 +2547,16 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
 
 
         {/* ===== ACCOMMODATION ===== */}
-        {/* Hero Banner with Background */}
-        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-          {/* Background Image */}
-          <div className="absolute inset-0 -z-10">
-            <Image
-              src={apartPoolVilla}
-              alt="Varkala yoga retreat accommodation"
-              fill sizes="100vw"
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 bg-foreground/60" />
-          </div>
-
-          {/* Content */}
-          <div className="container mx-auto px-4 text-center relative z-10">
-            {/* Main Title */}
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-[0.15em] uppercase mb-8">
-              Accommodation
+        <section className="py-20 bg-secondary/30 border-t border-border/50">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Accommodation & Campus
             </h2>
-
-            {/* Subtitle */}
-            <p className="font-heading text-xl md:text-2xl text-white/90 max-w-2xl mx-auto mb-16 leading-relaxed">
-              A serene yoga retreat in the heart of Varkala's sacred Varkala region
+            <p className="font-heading text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Accommodation and venue details will be shared soon.
             </p>
-
-            {/* Location Features */}
-            <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {/* Feature 1 - Waterfalls */}
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-4">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                  <Droplets className="w-6 h-6 text-white" />
-                </div>
-                <p className="font-heading text-base md:text-lg text-white text-left">
-                  10 beautiful waterfalls within 10 km
-                </p>
-              </div>
-
-              {/* Feature 2 - Private Forest */}
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-4">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                  <Mountain className="w-6 h-6 text-white" />
-                </div>
-                <p className="font-heading text-base md:text-lg text-white text-left">
-                  Private forest with an in-house waterfall
-                </p>
-              </div>
-
-              {/* Feature 3 - Rice-field Trekking */}
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-4">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                  <Leaf className="w-6 h-6 text-white" />
-                </div>
-                <p className="font-heading text-base md:text-lg text-white text-left">
-                  Peaceful rice-field trekking on-site
-                </p>
-              </div>
-
-              {/* Feature 4 - Distance to Varkala */}
-              <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-4">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <p className="font-heading text-base md:text-lg text-white text-left">
-                  Only 15 km from central Varkala
-                </p>
-              </div>
-            </div>
           </div>
         </section>
-
-
-        {/* ===== ACCOMMODATION GALLERY ===== */}
-        <section className="py-12 bg-background border-t border-border/50">
-          <div className="container mx-auto px-4">
-            <h3 className="font-heading text-2xl font-bold text-center text-foreground mb-8">
-              Glimpses of Your Stay
-            </h3>
-
-            <div className="relative">
-              {/* Horizontal Scroll Container */}
-              <div tabIndex={0} role="region" aria-label="Special workshops" className="flex overflow-x-auto gap-4 pb-6 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 focus:outline-none">
-                {[
-                  apartGallery1, apartGallery2, apartGallery3, apartGallery4, apartGallery5,
-                  apartGallery6, apartGallery7, apartGallery8, apartGallery9, apartGallery10
-                ].map((img, index) => (
-                  <div
-                    key={index}
-                    className="relative flex-shrink-0 w-[85vw] md:w-[400px] aspect-[4/3] rounded-2xl overflow-hidden snap-center group"
-                  >
-                    <Image
-                      src={img}
-                      alt={`Accommodation Gallery ${index + 1}`}
-                      fill sizes="(max-width: 768px) 85vw, 400px"
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Room Types Section */}
-        <section className="py-20 bg-background" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2917px" }}>
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <p className="text-primary uppercase tracking-[0.2em] text-sm mb-3">Choose Your Package</p>
-              <h3 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Yoga Teaching & Room Packages
-              </h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Choose the package that suits you best — from tuition-only course attendance to complete residential packages with peaceful room stays.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-              {[
-                {
-                  title: "Tuition Only",
-                  beds: "Course Only",
-                  description: "Full access to classes, study materials, and certification. Accommodation and meals not included.",
-                  originalPrice: "$1,299",
-                  price: "$1,099",
-                  images: [apartGroupClass, apartSeatedTalk, apartGroupPose, apartChildPose, apartMountainPose],
-                  features: ["Yoga Shala", "TTC Manual", "Wi-Fi", "All Classes"],
-                  badge: "Course Only",
-                  isPopular: false,
-                },
-                {
-                  title: "Triple Sharing",
-                  beds: 3,
-                  description: "Share your space with two like-minded yogis. A great way to build lasting friendships.",
-                  originalPrice: "$1,599", price: "$1,399",
-                  images: [tripleBalcony, tripleBathroom, tripleBedroom1, tripleBedroom2, tripleBedroom3],
-                  features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
-                  badge: null,
-                  isPopular: false,
-                },
-                {
-                  title: "Double Sharing",
-                  beds: 2,
-                  description: "Share with one roommate. Perfect balance of community and personal space.",
-                  originalPrice: "$1,899", price: "$1,699",
-                  images: [doubleBedroom1, doubleBedroom2, doubleBedroom3, doubleBedroom4, doubleBalcony],
-                  features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
-                  badge: "Most Popular",
-                  isPopular: true,
-                },
-                {
-                  title: "Private Room",
-                  beds: 1,
-                  description: "Your own sanctuary for complete privacy and deep personal reflection.",
-                  originalPrice: "$2,199", price: "$1,999",
-                  images: [
-                    privateNew2,
-                    privateNew3,
-                    privateNew4,
-                    privateNew1,
-                    privateBedroom1,
-                    privateBedroom2,
-                    privateBedroom3,
-                    privateBathroom,
-                    privateBalcony,
-                  ],
-                  features: ["Hot Water", "AC/Fan", "Wi-Fi", "Daily Clean"],
-                  badge: "Premium",
-                  isPopular: false,
-                },
-              ].map((room, roomIndex) => (
-                <RoomCard
-                  key={roomIndex}
-                  room={room}
-                  onBookNow={() => setShowEnrollDialog(true)}
-                />
-              ))}
-            </div>
-
-            {/* Common Amenities */}
-            <div className="mt-16 max-w-4xl mx-auto">
-              <h3 className="font-heading text-xl font-bold text-center text-foreground mb-8">
-                All Rooms Include
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {[
-                  { icon: Wifi, label: "Free Wi-Fi" },
-                  { icon: Droplets, label: "Hot Water" },
-                  { icon: Wind, label: "AC / Fan" },
-                  { icon: Sparkles, label: "Daily Cleaning" },
-                ].map((item, index) => {
-                  const IconComponent = item.icon;
-                  return (
-                    <div key={index} className="flex items-center gap-3 p-4 bg-secondary/30 rounded-lg">
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                        <IconComponent className="w-5 h-5 text-primary" />
-                      </div>
-                      <span className="font-medium text-foreground text-sm">{item.label}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-
 
         {/* ===== SATTVIC FOOD ===== */}
         <section className="py-20 bg-secondary/20 relative overflow-hidden" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 1836px" }}>
@@ -3114,8 +2912,7 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                <Image src={yaRys100} alt="RYS 100" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                                <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <Image src={yaRyt200} alt="RYT 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
               </div>
 
@@ -3216,9 +3013,12 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                 </svg>
                 <span className="font-heading text-xl font-semibold text-foreground">Google Reviews</span>
               </div>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-                What Our Students Say
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">
+                What Our Bali Graduates Say
               </h2>
+              <p className="text-base text-muted-foreground max-w-2xl mx-auto mb-6">
+                Our Varkala campus opens in July 2027. These reviews are from students who trained with the same founder, Yogacharya Sachin, and the same teaching method at our Bali school.
+              </p>
 
               {/* Overall Rating */}
               <div className="flex items-center justify-center gap-4 mb-2">
@@ -3244,7 +3044,7 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
             {/* View All Reviews Link */}
             <div className="text-center mt-10">
               <a
-                href="https://www.google.com/maps/place/Yoga+Teacher+Training+in+Varkala+-+Yogagarhi/@30.1312,78.3245,17z/data=!4m6!3m5!1s0x2dd219e70aa3e43d:0x281930517f104591!8m2!3d30.1312!4d78.3245"
+                href="https://maps.app.goo.gl/VSRyCTgeJJBCBPrU7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"

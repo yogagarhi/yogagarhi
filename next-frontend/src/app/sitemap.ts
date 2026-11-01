@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { SUPPORTED_LOCALES, isLocaleReviewed, TRANSLATED_PAGES } from '@/config/i18nConfig'
+import { LOCATION_LIVE } from '@/config/locationConfig'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrls: MetadataRoute.Sitemap = [
@@ -263,6 +264,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }
     }
 
-    return [...baseUrls, ...localizedUrls];
+    const allUrls = [...baseUrls, ...localizedUrls].filter((item) => {
+        if (!LOCATION_LIVE.rishikesh && item.url.includes('rishikesh')) return false;
+        if (!LOCATION_LIVE.varkala && item.url.includes('varkala')) return false;
+        return true;
+    });
+
+    return allUrls;
 }
 

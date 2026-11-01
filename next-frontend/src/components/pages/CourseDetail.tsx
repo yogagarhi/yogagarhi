@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
+import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import { PROMO_OFFER } from "@/constants/offers";
 import { Check, Clock, Users, Award, MapPin, Utensils, Gift, ChevronDown, ChevronUp } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
@@ -107,7 +108,9 @@ export default function CourseDetail() {
             <div className="border-t border-primary-foreground/20 pt-6 mb-6">
               <p className="text-lg mb-2">Course Fee:</p>
               <div className="bg-card rounded-lg p-4 text-center">
-                <span className="text-muted-foreground line-through text-xl mr-3">USD {course.originalPrice.replace('$', '')}</span>
+                {SHOW_COMPARE_PRICE && (
+                  <span className="text-muted-foreground line-through text-xl mr-3">USD {course.originalPrice.replace('$', '')}</span>
+                )}
                 <span className="text-foreground font-bold text-3xl">USD {course.price.replace('$', '')}</span>
               </div>
             </div>
@@ -378,7 +381,9 @@ export default function CourseDetail() {
             Limited to 8-10 students per batch for personalized attention
           </p>
           <div className="bg-card/20 backdrop-blur-sm rounded-xl p-6 max-w-md mx-auto mb-8">
-            <span className="text-2xl line-through opacity-70 mr-3">USD {course.originalPrice.replace('$', '')}</span>
+            {SHOW_COMPARE_PRICE && (
+              <span className="text-2xl line-through opacity-70 mr-3">USD {course.originalPrice.replace('$', '')}</span>
+            )}
             <span className="font-heading text-4xl font-bold">USD {course.price.replace('$', '')}</span>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -131,7 +131,8 @@ export async function generateMetadata({
             follow: true,
           },
         },
-    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION &&
+    !process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION.includes("your-google-verification")
       ? {
           verification: {
             google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,

@@ -4,6 +4,9 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 const nextConfig: NextConfig = {
+  experimental: {
+    turbopackUseSystemTlsCerts: true,
+  },
   images: {
     loader: "custom",
     loaderFile: "./src/utils/cloudinary-loader.ts",
@@ -24,19 +27,66 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  experimental: {
-    turbopackUseSystemTlsCerts: true,
-  },
   async redirects() {
     return [
+      {
+        source: '/retreat/warkala',
+        destination: '/retreat/varkala',
+        permanent: true,
+      },
       {
         source: '/retreat/warkala/:path*',
         destination: '/retreat/varkala/:path*',
         permanent: true,
       },
       {
+        source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/retreat/warkala',
+        destination: '/:locale/retreat/varkala',
+        permanent: true,
+      },
+      {
         source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/retreat/warkala/:path*',
         destination: '/:locale/retreat/varkala/:path*',
+        permanent: true,
+      },
+      {
+        source: '/100-hour-yoga-teacher-training-in-warkala',
+        destination: '/100-hour-yoga-teacher-training-in-varkala',
+        permanent: true,
+      },
+      {
+        source: '/200-hour-yoga-teacher-training-in-warkala',
+        destination: '/200-hour-yoga-teacher-training-in-varkala',
+        permanent: true,
+      },
+      {
+        source: '/300-hour-yoga-teacher-training-in-warkala',
+        destination: '/300-hour-yoga-teacher-training-in-varkala',
+        permanent: true,
+      },
+      {
+        source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/100-hour-yoga-teacher-training-in-warkala',
+        destination: '/:locale/100-hour-yoga-teacher-training-in-varkala',
+        permanent: true,
+      },
+      {
+        source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/200-hour-yoga-teacher-training-in-warkala',
+        destination: '/:locale/200-hour-yoga-teacher-training-in-varkala',
+        permanent: true,
+      },
+      {
+        source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/300-hour-yoga-teacher-training-in-warkala',
+        destination: '/:locale/300-hour-yoga-teacher-training-in-varkala',
+        permanent: true,
+      },
+      {
+        source: '/yoga-anatomy-mastery',
+        destination: '/yoga-anatomy-masterclass',
+        permanent: true,
+      },
+      {
+        source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/yoga-anatomy-mastery',
+        destination: '/:locale/yoga-anatomy-masterclass',
         permanent: true,
       },
       {
@@ -132,11 +182,6 @@ const nextConfig: NextConfig = {
       {
         source: '/free-yoga-training',
         destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/yoga-anatomy-mastery',
-        destination: '/yoga-anatomy-masterclass',
         permanent: true,
       },
     ];

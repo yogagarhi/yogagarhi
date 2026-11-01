@@ -12,39 +12,10 @@ const partnerships = [
         icon: <Image src={yogaAllianceLogo} alt="Yoga Alliance" width={66} height={38} className="w-full h-full object-contain filter brightness-95" />,
         bg: "bg-teal-500/5"
     },
-    {
-        name: "Ministry of AYUSH, India",
-        icon: (
-            <svg viewBox="0 0 100 100" className="w-8 h-8">
-                <circle cx="50" cy="50" r="48" fill="#f4911f" opacity="0.1" />
-                <circle cx="50" cy="50" r="35" fill="none" stroke="#f4911f" strokeWidth="2" />
-                <path d="M50 20 L50 80 M20 50 L80 50" stroke="#f4911f" strokeWidth="2" />
-                <circle cx="50" cy="50" r="10" fill="#f4911f" />
-                <path d="M35 65 Q50 85 65 65" fill="none" stroke="#008a45" strokeWidth="3" />
-            </svg>
-        ),
-        bg: "bg-orange-500/5"
-    },
-    {
-        name: "Yoga Certification Board",
-        icon: (
-            <svg viewBox="0 0 100 100" className="w-8 h-8">
-                <circle cx="50" cy="50" r="45" fill="#00529b" />
-                <path d="M30 50 L45 65 L75 35" stroke="white" strokeWidth="8" fill="none" />
-            </svg>
-        ),
-        bg: "bg-blue-500/5"
-    },
-    {
-        name: "Indian Yoga Association",
-        icon: (
-            <svg viewBox="0 0 100 100" className="w-8 h-8">
-                <rect x="10" y="20" width="80" height="60" rx="10" fill="#f4911f" opacity="0.2" />
-                <text x="50" y="60" textAnchor="middle" fill="#f4911f" fontWeight="bold" fontSize="24">IYA</text>
-            </svg>
-        ),
-        bg: "bg-amber-500/5"
-    },
+    // The following accreditation logos are hidden pending verification:
+    // - Ministry of AYUSH, India
+    // - Yoga Certification Board (YCB)
+    // - Indian Yoga Association (IYA)
     {
         name: "BookYogaRetreats",
         icon: (
@@ -79,29 +50,9 @@ const partnerships = [
         ),
         bg: "bg-blue-500/5"
     },
-    {
-        name: "Trustpilot",
-        icon: (
-            <svg viewBox="0 0 100 100" className="w-8 h-8">
-                <path d="M50 0l11.4 34.9h36.7L68.6 56.4l11.4 34.9L50 69.8 19.9 91.3l11.4-34.9L1.8 34.9h36.7z" fill="#00b67a" />
-            </svg>
-        ),
-        bg: "bg-emerald-500/5"
-    },
-    {
-        name: "TripAdvisor",
-        icon: (
-            <svg viewBox="0 0 100 100" className="w-8 h-8">
-                <circle cx="50" cy="50" r="45" fill="#34e0a1" />
-                <circle cx="35" cy="45" r="12" fill="white" />
-                <circle cx="65" cy="45" r="12" fill="white" />
-                <circle cx="35" cy="45" r="4" fill="black" />
-                <circle cx="65" cy="45" r="4" fill="black" />
-                <path d="M50 50 L45 60 L55 60 Z" fill="#2c2c2c" />
-            </svg>
-        ),
-        bg: "bg-green-500/5"
-    },
+    // The following review platform logos are hidden pending verification:
+    // - Trustpilot
+    // - TripAdvisor
 ];
 
 export default function PartnershipsSection() {

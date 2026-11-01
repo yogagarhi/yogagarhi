@@ -66,7 +66,7 @@
     "popupBatches": "11월 및 12월 기수",
     "popupDiscount": "전 코스 $300 할인",
     "contactUs": "문의하기",
-    "heroSpecialOfferPrefix": "4월~7월 YTT 예약 시 전문가 사진 촬영, 성스러운 사원 투어, 공항 픽업, 전통 문화 체험이 –",
+    "heroSpecialOfferPrefix": "다가오는 YTT 예약 시 전문가 사진 촬영, 성스러운 사원 투어, 공항 픽업, 전통 문화 체험이 –",
     "heroSpecialOfferHighlight": "모두 무료로 포함됩니다.",
     "courseSpecialOfferPrefix": "4월~7월 YTT 예약 시 전문가 사진 촬영, 성스러운 사원 투어, 공항 픽업, 전통 문화 체험이 –",
     "courseSpecialOfferHighlight": "모두 무료로 포함됩니다.",
@@ -411,9 +411,9 @@
       "chatWhatsApp": "WhatsApp으로 문의하기",
       "emailUs": "이메일로 문의하기",
       "certifiedBadge": "Yoga Alliance 공인",
-      "graduates": "수료생",
-      "countries": "참가국",
-      "rating": "평점",
+      "graduates": "전교 졸업생",
+      "countries": "전교 출신 국가",
+      "rating": "전교 평점",
       "wonderingTitle": "이 과정이 자신에게 맞는지 고민되시나요?",
       "wonderingSub": "WhatsApp이나 이메일로 편하게 문의하십시오 — 솔직하게 상담해 드립니다"
     },
@@ -523,11 +523,13 @@
       "whatsappUs": "WhatsApp으로 문의하기",
       "responseTiming": "보통 24시간 이내에 친절히 답변드립니다",
       "happyStudents": "+497명의 행복한 수료생"
-    }
+    },
+    "metaTitle": "발리(우붓) 요가 지도자 과정 – 100, 200, 300시간 | YogaGarhi",
+    "metaDesc": "발리 우붓 근처 요가 얼라이언스 RYS 200 및 RYS 300 인증 학교. 8~10명 소수 정예, 멀티스타일 요가, 1년 멘토링. 구글 평점 5★. 2027년부터 리시케시 및 바르칼라 개교."
   },
   "course200": {
-    "metaTitle": "발리 200시간 요가 지도자 과정 | YogaGarhi",
-    "metaDesc": "인도네시아 발리 우붓에서 진행되는 Yoga Alliance 공인 200시간 요가 지도자 과정. 24일간의 숙박형 리트릿, 클래스당 8~10명 소수 정예, 아유르베다와 정통 히말라야의 지혜.",
+    "metaTitle": "발리 200시간 요가 지도자 과정 – 24일, $999부터 | YogaGarhi",
+    "metaDesc": "발리 우붓 근처 24일 요가 얼라이언스 RYT 200 과정. 8~10명 소수 정예, 하타, 빈야사, 아쉬탕가, 1년 멘토링. 구글 평점 5★. $999부터.",
     "heroTitle": "발리 200시간 요가 지도자 과정",
     "heroSub": "발리 우붓에서 열리는 24일간의 정통 숙박형 멀티스타일 지도자 과정. Yoga Alliance RYT 200 공인, 최대 8~10명 소수 정예 수업.",
     "hero": {
@@ -1401,8 +1403,8 @@
     }
   },
   "course100": {
-    "metaTitle": "발리 100시간 요가 지도자 과정 | Yoga Alliance Ubud",
-    "metaDesc": "발리 우붓에서 100시간 요가 지도자 과정을 통해 수련을 심화하세요. 초보자 맞춤 커리큘럼 및 유기농 사트빅 식사. 지금 예약하세요!",
+    "metaTitle": "발리 100시간 요가 지도자 과정 – 초보자를 위한 12일 | YogaGarhi",
+    "metaDesc": "발리 우붓 근처 초보자를 위한 12일 100시간 요가 기초 코스. 소수 정예, 멀티스타일 요가, 프라나야마 및 요가 철학. $599부터.",
     "heroTitle": "발리 100시간 요가 지도자 과정",
     "heroSub": "발리 기아냐르에서 펼쳐지는 12일간의 몰입 여정. 히말라야 정통 계보, 8–10명 소수 정예, $1,149 USD부터 시작합니다.",
     "quickInfo": {
@@ -1483,53 +1485,7 @@
       "hoverMore": "마우스를 올려 상세 내용 보기",
       "takeaway": "습득하게 되는 핵심 역량",
       "carryHome": "일상으로 가져가는 변화",
-      "careerImpact": "실전 지도에 미치는 효과:",
-      "cards": [
-        {
-          "title": "아쉬탕가 요가 아사나",
-          "content": "아쉬탕가 요가 프라이머리 시리즈 전체 시퀀스 수련. 수리야 나마스카라 A & B, 스탠딩 및 시티드 시퀀스, 마이솔 스타일의 체계적인 진도."
-        },
-        {
-          "title": "하타 & 빈야사 플로우",
-          "content": "파완묵타아사나 시리즈, 수리야 나마스카라 변형, 기립 및 좌식 자세, 후굴, 전굴, 역자세 및 종합적인 시퀀싱 방법론."
-        },
-        {
-          "title": "요가 철학",
-          "content": "파탄잘리의 요가 수트라 입문, 아쉬탕가 요가의 8단계 체계, 나디, 차크라, 판차 바유, 판차 코샤, 트리구나 및 위대한 요기들의 영감 넘치는 가르침."
-        },
-        {
-          "title": "프라나야마 & 호흡법",
-          "content": "우짜이, 바스트리카, 카팔바티, 나디 쇼다나, 브라마리, 수리야 베디, 찬드라 베디, 시탈리, 시트카리를 아우르는 완벽한 호흡 체계."
-        },
-        {
-          "title": "해부학 & 생리학",
-          "content": "신체 운동면, 관절 보호 원리, 발목·무릎·척추·어깨의 기능 해부학, 호흡 메커니즘, 근육 생리학 및 신경계의 이해."
-        },
-        {
-          "title": "티칭 방법론 (지도법)",
-          "content": "수업 시퀀싱, 핸즈온 및 구두 수정법, 수준별 수업 운영, 발성법, 멘탈 준비, 시연 원칙 및 단계별 수업 설계."
-        },
-        {
-          "title": "명상 & 만트라",
-          "content": "다양한 명상 기법, 베다 만트라 찬팅, 트라타카, 오쇼 다이내믹 명상, 나다 브라마, 안타르 모우나 및 내면의 고요를 찾는 침묵 수련."
-        },
-        {
-          "title": "아헹가 요가",
-          "content": "블록, 스트랩, 담요 등의 요가 도구를 활용해 올바른 신체 정렬을 구현하고 부상을 예방하는 정밀 중심의 요가 수련."
-        },
-        {
-          "title": "정렬 원리",
-          "content": "안전한 수련의 기초: 관절 정렬, 근육 활성화 패턴 및 생체역학을 깊이 이해하여 신체를 안전하게 보호하고 강화합니다."
-        },
-        {
-          "title": "반다 (에너지 잠금)",
-          "content": "물라, 우디야나, 잘란다라 반다의 체득을 통해 프라나의 흐름을 조절하고 코어를 강화하며 명상의 깊이를 더합니다."
-        },
-        {
-          "title": "무드라 (신성한 손동작)",
-          "content": "생명 에너지를 순환시키고 집중력을 고양하며 높은 차원의 의식 상태로 연결해 주는 손과 신체의 신성한 상징 제스처."
-        }
-      ]
+      "careerImpact": "실전 지도에 미치는 효과:"
     },
     "schedule": {
       "heading": "아쉬람의 하루 일정",
@@ -1691,118 +1647,113 @@
         {
           "title": "아쉬탕가 요가 아사나",
           "items": [
-            "파타비 조이스의 아쉬탕가 프라이머리 시리즈 전체",
-            "1주차: 개요 및 수리야 나마스카라 A & B",
-            "2주차: 스탠딩 시퀀스 및 요가 소도구 활용",
-            "3주차: 시티드 시퀀스 및 피니싱 아사나",
-            "4주차: 마이솔 스타일 및 실전 티칭 실습"
+            "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+            "Standing sequence postures & use of yoga props",
+            "Primary series practiced thoroughly",
+            "Mysore style practice examination"
           ]
         },
         {
           "title": "요가 철학",
           "items": [
-            "파탄잘리의 요가 수트라 완벽 해설",
-            "아쉬탕가 요가의 8단계 체계",
-            "판차 바유 및 판차 코샤",
-            "사트바, 라자스, 타마스 (트리구나)",
-            "베다 철학 입문",
-            "위대한 요기들의 삶과 지혜"
+            "Introduction to Yoga Philosophy and its evolution",
+            "Introduction to yoga sutras of Patanjali",
+            "Nadis (Ida, Pingala & Sushumna)",
+            "Chakras - the energy channels",
+            "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+            "Eight limbs of Ashtanga Yoga"
           ]
         },
         {
           "title": "프라나야마 호흡 수련",
           "items": [
-            "전통 프라나야마 호흡 기법 완벽 습득",
-            "6가지 정화법 샤트카르마 수련",
-            "심화 호흡: 시탈리, 시트카리",
-            "쿰바카 (지식, 숨 참기)",
-            "아사나 수련과의 유기적 결합"
+            "Introduction to Pranayama and its benefits",
+            "Introduction to Shatkarma (six cleansing practices)",
+            "Clavicular, Thoracic & Diaphragmatic Breathing",
+            "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+            "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi",
+            "Introduction to Mudras & energetic seals"
           ]
         },
         {
-          "title": "신성한 소리와 만트라 찬팅",
+          "title": "신성한 만트라 암송",
           "items": [
-            "전통 베다 만트라 전체 수록",
-            "옴 트라이얌바캄 야자마헤",
-            "마하 만트라 (하레 라마, 하레 크리슈나)",
-            "파탄잘리 경배 구절 (요게나 칫타샤)",
-            "매일 진행되는 만트라 찬팅"
+            "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+            "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+            "Guru Brahma Guru Vishnu (Guru stotram)",
+            "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
           ]
         },
         {
           "title": "해부학 및 생리학",
           "items": [
-            "신체 주요 계통의 완벽한 기능 연구",
-            "근육 및 관절의 기능 운동학",
-            "호흡기계 및 신경계의 원리",
-            "식단과 소화기 계통의 이해",
-            "아사나별 정밀 해부학 워크숍"
+            "Body Movement & Planes",
+            "Joints and How to Protect them in Asanas",
+            "Anatomy of Ankle, Knee, Spine & Shoulder",
+            "Breathing mechanism in Yoga"
           ]
         },
         {
-          "title": "티칭 방법론 (교수법)",
+          "title": "교수법 및 티칭 방법론",
           "items": [
-            "체계적인 요가 수업 시퀀싱 구성",
-            "데모 시연 및 관찰의 원칙",
-            "지도자로서의 멘탈 및 감정 관리",
-            "단계별 수업 계획서 작성법",
-            "실전 티칭 실습 및 지도 평가"
+            "How to sequence a class",
+            "Working with breathing and posture",
+            "Adjustments and corrections",
+            "Working with different level of students",
+            "Building positive & conscious communication"
           ]
         },
         {
-          "title": "명상과 반다 (에너지 잠금)",
+          "title": "명상",
           "items": [
-            "오쇼 다이내믹 명상",
-            "나다 브라마 소리 명상",
-            "안타르 모우나 및 아자파 자파",
-            "4대 반다의 완벽한 체득",
-            "아사나 및 호흡과의 유기적 연결"
+            "Introduction to Meditation",
+            "Different types of meditation techniques",
+            "Om / Mantra Meditation",
+            "Trataka and Silence Meditation"
           ]
         },
         {
-          "title": "정렬과 핸즈온 어시스트의 예술",
+          "title": "정렬 원리 및 도구 활용",
           "items": [
-            "전통 아사나의 기능적 정렬과 생체역학",
-            "정확한 구두 큐잉 및 안전한 핸즈온 어시스트",
-            "개인별 해부학적 차이와 골격 압박에 대한 이해",
-            "블록과 스트랩을 활용한 단계별 수정 전략"
+            "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+            "Safe execution and anatomical alignment in foundational standing and seated poses",
+            "Effective use of props (blocks, straps, bolsters) to support safe practice",
+            "Identifying common postural habits and applying self-correction techniques"
           ]
         },
         {
-          "title": "클래식 하타 요가 수련",
+          "title": "전통 하타 요가",
           "items": [
-            "전통 하타 요가 원리와 정적 유지의 깊이",
-            "하타 시퀀싱: 웜업, 피크 포즈, 카운터 포즈",
-            "태양(하)과 달(타) 에너지의 조화로운 균형",
-            "정적 유지 상태에서의 반다와 무드라 결합"
+            "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+            "Traditional Surya Namaskar variations with breath-synchronized awareness",
+            "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+            "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
           ]
         },
         {
-          "title": "아헹가 요가와 정밀 정렬",
+          "title": "아헹가 요가 기초",
           "items": [
-            "블록, 스트랩, 담요를 활용한 정밀 정렬",
-            "골반, 척추, 견갑골의 정확한 기하학적 정렬",
-            "역자세를 위한 안전한 단계별 준비 과정",
-            "도구를 활용한 회복 요가 (리스토러티브)"
+            "Introduction to precision, geometry, and anatomical awareness in asanas",
+            "Prop-assisted alignment techniques using blocks, belts, and wall support",
+            "Building strength, stability, and postural endurance through extended holds",
+            "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
           ]
         },
         {
-          "title": "빈야사 플로우와 다이내믹 시퀀싱",
+          "title": "빈야사 요가 플로우",
           "items": [
-            "스마트 시퀀스 구조: 점진적 워밍업, 피크, 쿨다운",
-            "호흡과 연동된 매끄러운 트랜지션 및 점프",
-            "수준별 맞춤 테마 빈야사 클래스 구성",
-            "수업의 템포 조절 및 에너제틱한 공간 리딩"
+            "Breath-synchronized movement connecting postures into fluid sequences",
+            "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+            "Coordinating conscious inhalation with heart openers and exhalation with folds",
+            "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
           ]
         },
         {
-          "title": "특별 워크숍 및 발리 문화 체험",
+          "title": "추가 특별 수업",
           "items": [
-            "사운드 힐링 (싱잉볼 소리 치유)",
-            "발리 해변 야외 요가 체험",
-            "인요가 & 아크로 요가 워크숍",
-            "아유르베다 체질학 기초",
-            "전통 아그니 호트라 불 의식"
+            "Kirtan Meditation",
+            "Yin Yoga & Partner Yoga",
+            "아유르베다 라이프스타일 수업"
           ]
         }
       ]
@@ -2137,8 +2088,8 @@
     "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
   },
   "course300": {
-    "metaTitle": "발리 300시간 요가 지도자 과정 | 고급 300시간 YTTC",
-    "metaDesc": "발리 300시간 요가 지도자 과정으로 지도의 전문성을 높이세요. 멀티스타일 아사나, 해부학 및 요가 철학. 지금 자리를 확보하세요!",
+    "metaTitle": "발리 300시간 요가 지도자 과정 – RYT 500 상급 코스 | YogaGarhi",
+    "metaDesc": "RYT 200 수료생을 위한 발리 우붓 근처 28일 상급 300시간 과정. 티칭법, 철학 및 테라피 요가 심화. 8~10명 소수 정예.",
     "heroTitle": "발리 300시간 요가 지도자 과정",
     "heroSub": "발리 기아냐르에서 진행되는 28일간의 고급 레지덴셜 과정. 심화 아사나와 핸즈온 정렬을 마스터하고 RYT 500 자격을 취득하세요.",
     "quickInfo": {
@@ -2219,53 +2170,7 @@
       "hoverMore": "마우스를 올려 상세 내용 보기",
       "takeaway": "습득하게 되는 핵심 역량",
       "carryHome": "일상으로 가져가는 변화",
-      "careerImpact": "실전 지도에 미치는 효과:",
-      "cards": [
-        {
-          "title": "아쉬탕가 요가 아사나",
-          "content": "아쉬탕가 요가 프라이머리 시리즈 전체 시퀀스 수련. 수리야 나마스카라 A & B, 스탠딩 및 시티드 시퀀스, 마이솔 스타일의 체계적인 진도."
-        },
-        {
-          "title": "하타 & 빈야사 플로우",
-          "content": "파완묵타아사나 시리즈, 수리야 나마스카라 변형, 기립 및 좌식 자세, 후굴, 전굴, 역자세 및 종합적인 시퀀싱 방법론."
-        },
-        {
-          "title": "요가 철학",
-          "content": "파탄잘리의 요가 수트라 입문, 아쉬탕가 요가의 8단계 체계, 나디, 차크라, 판차 바유, 판차 코샤, 트리구나 및 위대한 요기들의 영감 넘치는 가르침."
-        },
-        {
-          "title": "프라나야마 & 호흡법",
-          "content": "우짜이, 바스트리카, 카팔바티, 나디 쇼다나, 브라마리, 수리야 베디, 찬드라 베디, 시탈리, 시트카리를 아우르는 완벽한 호흡 체계."
-        },
-        {
-          "title": "해부학 & 생리학",
-          "content": "신체 운동면, 관절 보호 원리, 발목·무릎·척추·어깨의 기능 해부학, 호흡 메커니즘, 근육 생리학 및 신경계의 이해."
-        },
-        {
-          "title": "티칭 방법론 (지도법)",
-          "content": "수업 시퀀싱, 핸즈온 및 구두 수정법, 수준별 수업 운영, 발성법, 멘탈 준비, 시연 원칙 및 단계별 수업 설계."
-        },
-        {
-          "title": "명상 & 만트라",
-          "content": "다양한 명상 기법, 베다 만트라 찬팅, 트라타카, 오쇼 다이내믹 명상, 나다 브라마, 안타르 모우나 및 내면의 고요를 찾는 침묵 수련."
-        },
-        {
-          "title": "아헹가 요가",
-          "content": "블록, 스트랩, 담요 등의 요가 도구를 활용해 올바른 신체 정렬을 구현하고 부상을 예방하는 정밀 중심의 요가 수련."
-        },
-        {
-          "title": "정렬 원리",
-          "content": "안전한 수련의 기초: 관절 정렬, 근육 활성화 패턴 및 생체역학을 깊이 이해하여 신체를 안전하게 보호하고 강화합니다."
-        },
-        {
-          "title": "반다 (에너지 잠금)",
-          "content": "물라, 우디야나, 잘란다라 반다의 체득을 통해 프라나의 흐름을 조절하고 코어를 강화하며 명상의 깊이를 더합니다."
-        },
-        {
-          "title": "무드라 (신성한 손동작)",
-          "content": "생명 에너지를 순환시키고 집중력을 고양하며 높은 차원의 의식 상태로 연결해 주는 손과 신체의 신성한 상징 제스처."
-        }
-      ]
+      "careerImpact": "실전 지도에 미치는 효과:"
     },
     "schedule": {
       "heading": "아쉬람의 하루 일정",
@@ -2417,120 +2322,126 @@
       },
       "detailedModules": [
         {
-          "title": "아쉬탕가 요가 아사나",
+          "title": "고급 아사나 및 핸즈온 어드저스트먼트",
           "items": [
-            "파타비 조이스의 아쉬탕가 프라이머리 시리즈 전체",
-            "1주차: 개요 및 수리야 나마스카라 A & B",
-            "2주차: 스탠딩 시퀀스 및 요가 소도구 활용",
-            "3주차: 시티드 시퀀스 및 피니싱 아사나",
-            "4주차: 마이솔 스타일 및 실전 티칭 실습"
+            "Advanced arm balances & inversions",
+            "Therapeutic modifications & props usage",
+            "Working with injuries & limitations",
+            "Advanced sequencing principles"
           ]
         },
         {
-          "title": "요가 철학",
+          "title": "요가 테라피의 실제 적용",
           "items": [
-            "파탄잘리의 요가 수트라 완벽 해설",
-            "아쉬탕가 요가의 8단계 체계",
-            "판차 바유 및 판차 코샤",
-            "사트바, 라자스, 타마스 (트리구나)",
-            "베다 철학 입문",
-            "위대한 요기들의 삶과 지혜"
+            "Yoga for back pain & spinal health",
+            "Yoga for stress & anxiety",
+            "Prenatal & postnatal yoga",
+            "Yoga for seniors",
+            "Restorative yoga techniques"
           ]
         },
         {
-          "title": "프라나야마 호흡 수련",
+          "title": "고급 프라나야마 및 반다",
           "items": [
-            "전통 프라나야마 호흡 기법 완벽 습득",
-            "6가지 정화법 샤트카르마 수련",
-            "심화 호흡: 시탈리, 시트카리",
-            "쿰바카 (지식, 숨 참기)",
-            "아사나 수련과의 유기적 결합"
+            "Advanced kumbhaka techniques",
+            "Kriyas for energy awakening",
+            "Bandha integration in advanced asanas",
+            "Pranayama for kundalini activation",
+            "Breath practices for nervous system balance"
           ]
         },
         {
-          "title": "신성한 소리와 만트라 찬팅",
+          "title": "요가 니드라 및 심화 명상",
           "items": [
-            "전통 베다 만트라 전체 수록",
-            "옴 트라이얌바캄 야자마헤",
-            "마하 만트라 (하레 라마, 하레 크리슈나)",
-            "파탄잘리 경배 구절 (요게나 칫타샤)",
-            "매일 진행되는 만트라 찬팅"
+            "Complete Yoga Nidra training",
+            "Leading guided meditations",
+            "Chakra meditation techniques",
+            "Sound & mantra meditation",
+            "Silent retreat practices"
           ]
         },
         {
-          "title": "해부학 및 생리학",
+          "title": "심층 요가 철학 연구",
           "items": [
-            "신체 주요 계통의 완벽한 기능 연구",
-            "근육 및 관절의 기능 운동학",
-            "호흡기계 및 신경계의 원리",
-            "식단과 소화기 계통의 이해",
-            "아사나별 정밀 해부학 워크숍"
+            "Bhagavad Gita study",
+            "Upanishads exploration",
+            "Tantra philosophy",
+            "Samkhya & Vedanta",
+            "Applied philosophy in modern life"
           ]
         },
         {
-          "title": "티칭 방법론 (교수법)",
+          "title": "고급 해부학 및 생체역학",
           "items": [
-            "체계적인 요가 수업 시퀀싱 구성",
-            "데모 시연 및 관찰의 원칙",
-            "지도자로서의 멘탈 및 감정 관리",
-            "단계별 수업 계획서 작성법",
-            "실전 티칭 실습 및 지도 평가"
+            "Subtle body anatomy (Nadis, Chakras)",
+            "Myofascial release techniques",
+            "Biomechanics of complex poses",
+            "Injury prevention & working safely with common injuries",
+            "Yoga therapy principles"
           ]
         },
         {
-          "title": "명상과 반다 (에너지 잠금)",
+          "title": "전문 지도자로서의 티칭: 워크숍, 리트릿 및 온라인 강의",
           "items": [
-            "오쇼 다이내믹 명상",
-            "나다 브라마 소리 명상",
-            "안타르 모우나 및 아자파 자파",
-            "4대 반다의 완벽한 체득",
-            "아사나 및 호흡과의 유기적 연결"
+            "Workshop & retreat planning",
+            "Private session design",
+            "Online class delivery",
+            "Business of yoga & ethical studio management"
           ]
         },
         {
-          "title": "정렬과 핸즈온 어시스트의 예술",
+          "title": "고급 정렬 및 생체역학적 조정",
           "items": [
-            "전통 아사나의 기능적 정렬과 생체역학",
-            "정확한 구두 큐잉 및 안전한 핸즈온 어시스트",
-            "개인별 해부학적 차이와 골격 압박에 대한 이해",
-            "블록과 스트랩을 활용한 단계별 수정 전략"
+            "Micro-alignment principles and postural observation for advanced and complex asanas",
+            "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+            "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+            "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
           ]
         },
         {
-          "title": "클래식 하타 요가 수련",
+          "title": "고급 클래식 하타 요가",
           "items": [
-            "전통 하타 요가 원리와 정적 유지의 깊이",
-            "하타 시퀀싱: 웜업, 피크 포즈, 카운터 포즈",
-            "태양(하)과 달(타) 에너지의 조화로운 균형",
-            "정적 유지 상태에서의 반다와 무드라 결합"
+            "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+            "Cultivating steadiness and inward focus through still posture holding and measured breath",
+            "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+            "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
           ]
         },
         {
-          "title": "아헹가 요가와 정밀 정렬",
+          "title": "고급 아헹가 요가 및 회복 정렬",
           "items": [
-            "블록, 스트랩, 담요를 활용한 정밀 정렬",
-            "골반, 척추, 견갑골의 정확한 기하학적 정렬",
-            "역자세를 위한 안전한 단계별 준비 과정",
-            "도구를 활용한 회복 요가 (리스토러티브)"
+            "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
+            "Structural alignment techniques for posture balance and foundational body mechanics",
+            "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+            "Postural observation for personalized practice"
           ]
         },
         {
-          "title": "빈야사 플로우와 다이내믹 시퀀싱",
+          "title": "창의적 빈야사 크라마 및 마스터 시퀀싱",
           "items": [
-            "스마트 시퀀스 구조: 점진적 워밍업, 피크, 쿨다운",
-            "호흡과 연동된 매끄러운 트랜지션 및 점프",
-            "수준별 맞춤 테마 빈야사 클래스 구성",
-            "수업의 템포 조절 및 에너제틱한 공간 리딩"
+            "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+            "Creating themed classes and peak posture staging",
+            "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+            "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+            "Designing transformative workshops, masterclasses, and multi-day retreat flows"
           ]
         },
         {
-          "title": "특별 워크숍 및 발리 문화 체험",
+          "title": "티칭 실습 및 최종 평가",
           "items": [
-            "사운드 힐링 (싱잉볼 소리 치유)",
-            "발리 해변 야외 요가 체험",
-            "인요가 & 아크로 요가 워크숍",
-            "아유르베다 체질학 기초",
-            "전통 아그니 호트라 불 의식"
+            "Supervised practice teaching with real-time feedback",
+            "Structured peer feedback and group reflection",
+            "One-on-one teaching mentorship with master faculty",
+            "Practical alignment and adjustment evaluation",
+            "Final comprehensive teaching assessment"
+          ]
+        },
+        {
+          "title": "스페셜티 워크숍",
+          "items": [
+            "사운드 힐링 워크숍",
+            "Ayurveda for yoga teachers",
+            "Chakra balancing practices"
           ]
         }
       ]
@@ -2947,53 +2858,7 @@
       "hoverMore": "마우스를 올려 상세 내용 보기",
       "takeaway": "습득하게 되는 핵심 역량",
       "carryHome": "일상으로 가져가는 변화",
-      "careerImpact": "실전 지도에 미치는 효과:",
-      "cards": [
-        {
-          "title": "아쉬탕가 요가 아사나",
-          "content": "아쉬탕가 요가 프라이머리 시리즈 전체 시퀀스 수련. 수리야 나마스카라 A & B, 스탠딩 및 시티드 시퀀스, 마이솔 스타일의 체계적인 진도."
-        },
-        {
-          "title": "하타 & 빈야사 플로우",
-          "content": "파완묵타아사나 시리즈, 수리야 나마스카라 변형, 기립 및 좌식 자세, 후굴, 전굴, 역자세 및 종합적인 시퀀싱 방법론."
-        },
-        {
-          "title": "요가 철학",
-          "content": "파탄잘리의 요가 수트라 입문, 아쉬탕가 요가의 8단계 체계, 나디, 차크라, 판차 바유, 판차 코샤, 트리구나 및 위대한 요기들의 영감 넘치는 가르침."
-        },
-        {
-          "title": "프라나야마 & 호흡법",
-          "content": "우짜이, 바스트리카, 카팔바티, 나디 쇼다나, 브라마리, 수리야 베디, 찬드라 베디, 시탈리, 시트카리를 아우르는 완벽한 호흡 체계."
-        },
-        {
-          "title": "해부학 & 생리학",
-          "content": "신체 운동면, 관절 보호 원리, 발목·무릎·척추·어깨의 기능 해부학, 호흡 메커니즘, 근육 생리학 및 신경계의 이해."
-        },
-        {
-          "title": "티칭 방법론 (지도법)",
-          "content": "수업 시퀀싱, 핸즈온 및 구두 수정법, 수준별 수업 운영, 발성법, 멘탈 준비, 시연 원칙 및 단계별 수업 설계."
-        },
-        {
-          "title": "명상 & 만트라",
-          "content": "다양한 명상 기법, 베다 만트라 찬팅, 트라타카, 오쇼 다이내믹 명상, 나다 브라마, 안타르 모우나 및 내면의 고요를 찾는 침묵 수련."
-        },
-        {
-          "title": "아헹가 요가",
-          "content": "블록, 스트랩, 담요 등의 요가 도구를 활용해 올바른 신체 정렬을 구현하고 부상을 예방하는 정밀 중심의 요가 수련."
-        },
-        {
-          "title": "정렬 원리",
-          "content": "안전한 수련의 기초: 관절 정렬, 근육 활성화 패턴 및 생체역학을 깊이 이해하여 신체를 안전하게 보호하고 강화합니다."
-        },
-        {
-          "title": "반다 (에너지 잠금)",
-          "content": "물라, 우디야나, 잘란다라 반다의 체득을 통해 프라나의 흐름을 조절하고 코어를 강화하며 명상의 깊이를 더합니다."
-        },
-        {
-          "title": "무드라 (신성한 손동작)",
-          "content": "생명 에너지를 순환시키고 집중력을 고양하며 높은 차원의 의식 상태로 연결해 주는 손과 신체의 신성한 상징 제스처."
-        }
-      ]
+      "careerImpact": "실전 지도에 미치는 효과:"
     },
     "schedule": {
       "heading": "아쉬람의 하루 일정",
@@ -3044,12 +2909,12 @@
       "incKit": "요가 매트 및 소도구 일체 무료 대여",
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "전통 개강 및 종강 화제의식 (Agni Hotra)",
-      "incPickup": "입교일 덴파사르 공항(DPS) 무료 픽업",
+      "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
       "incPre": "무료 Pre-TTC 온라인 사전 준비 모듈",
       "incRepeat": "향후 코스 평생 수강료 무료 재수강 권한",
       "notIncHeading": "포함되지 않는 항목",
       "notIncFlights": "국제선 및 국내선 왕복 항공권",
-      "notIncVisa": "인도네시아 입국 비자 수수료",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "해외 여행자 보험 및 의료 보험"
     },
     "pricing": {
@@ -3175,118 +3040,113 @@
         {
           "title": "아쉬탕가 요가 아사나",
           "items": [
-            "파타비 조이스의 아쉬탕가 프라이머리 시리즈 전체",
-            "1주차: 개요 및 수리야 나마스카라 A & B",
-            "2주차: 스탠딩 시퀀스 및 요가 소도구 활용",
-            "3주차: 시티드 시퀀스 및 피니싱 아사나",
-            "4주차: 마이솔 스타일 및 실전 티칭 실습"
+            "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+            "Standing sequence postures & use of yoga props",
+            "Primary series practiced thoroughly",
+            "Mysore style practice examination"
           ]
         },
         {
           "title": "요가 철학",
           "items": [
-            "파탄잘리의 요가 수트라 완벽 해설",
-            "아쉬탕가 요가의 8단계 체계",
-            "판차 바유 및 판차 코샤",
-            "사트바, 라자스, 타마스 (트리구나)",
-            "베다 철학 입문",
-            "위대한 요기들의 삶과 지혜"
+            "Introduction to Yoga Philosophy and its evolution",
+            "Introduction to yoga sutras of Patanjali",
+            "Nadis (Ida, Pingala & Sushumna)",
+            "Chakras - the energy channels",
+            "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+            "Eight limbs of Ashtanga Yoga"
           ]
         },
         {
           "title": "프라나야마 호흡 수련",
           "items": [
-            "전통 프라나야마 호흡 기법 완벽 습득",
-            "6가지 정화법 샤트카르마 수련",
-            "심화 호흡: 시탈리, 시트카리",
-            "쿰바카 (지식, 숨 참기)",
-            "아사나 수련과의 유기적 결합"
+            "Introduction to Pranayama and its benefits",
+            "Introduction to Shatkarma (six cleansing practices)",
+            "Clavicular, Thoracic & Diaphragmatic Breathing",
+            "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+            "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi",
+            "Introduction to Mudras & energetic seals"
           ]
         },
         {
-          "title": "신성한 소리와 만트라 찬팅",
+          "title": "신성한 만트라 암송",
           "items": [
-            "전통 베다 만트라 전체 수록",
-            "옴 트라이얌바캄 야자마헤",
-            "마하 만트라 (하레 라마, 하레 크리슈나)",
-            "파탄잘리 경배 구절 (요게나 칫타샤)",
-            "매일 진행되는 만트라 찬팅"
+            "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+            "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+            "Guru Brahma Guru Vishnu (Guru stotram)",
+            "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
           ]
         },
         {
           "title": "해부학 및 생리학",
           "items": [
-            "신체 주요 계통의 완벽한 기능 연구",
-            "근육 및 관절의 기능 운동학",
-            "호흡기계 및 신경계의 원리",
-            "식단과 소화기 계통의 이해",
-            "아사나별 정밀 해부학 워크숍"
+            "Body Movement & Planes",
+            "Joints and How to Protect them in Asanas",
+            "Anatomy of Ankle, Knee, Spine & Shoulder",
+            "Breathing mechanism in Yoga"
           ]
         },
         {
-          "title": "티칭 방법론 (교수법)",
+          "title": "교수법 및 티칭 방법론",
           "items": [
-            "체계적인 요가 수업 시퀀싱 구성",
-            "데모 시연 및 관찰의 원칙",
-            "지도자로서의 멘탈 및 감정 관리",
-            "단계별 수업 계획서 작성법",
-            "실전 티칭 실습 및 지도 평가"
+            "How to sequence a class",
+            "Working with breathing and posture",
+            "Adjustments and corrections",
+            "Working with different level of students",
+            "Building positive & conscious communication"
           ]
         },
         {
-          "title": "명상과 반다 (에너지 잠금)",
+          "title": "명상",
           "items": [
-            "오쇼 다이내믹 명상",
-            "나다 브라마 소리 명상",
-            "안타르 모우나 및 아자파 자파",
-            "4대 반다의 완벽한 체득",
-            "아사나 및 호흡과의 유기적 연결"
+            "Introduction to Meditation",
+            "Different types of meditation techniques",
+            "Om / Mantra Meditation",
+            "Trataka and Silence Meditation"
           ]
         },
         {
-          "title": "정렬과 핸즈온 어시스트의 예술",
+          "title": "정렬 원리 및 도구 활용",
           "items": [
-            "전통 아사나의 기능적 정렬과 생체역학",
-            "정확한 구두 큐잉 및 안전한 핸즈온 어시스트",
-            "개인별 해부학적 차이와 골격 압박에 대한 이해",
-            "블록과 스트랩을 활용한 단계별 수정 전략"
+            "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+            "Safe execution and anatomical alignment in foundational standing and seated poses",
+            "Effective use of props (blocks, straps, bolsters) to support safe practice",
+            "Identifying common postural habits and applying self-correction techniques"
           ]
         },
         {
-          "title": "클래식 하타 요가 수련",
+          "title": "전통 하타 요가",
           "items": [
-            "전통 하타 요가 원리와 정적 유지의 깊이",
-            "하타 시퀀싱: 웜업, 피크 포즈, 카운터 포즈",
-            "태양(하)과 달(타) 에너지의 조화로운 균형",
-            "정적 유지 상태에서의 반다와 무드라 결합"
+            "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+            "Traditional Surya Namaskar variations with breath-synchronized awareness",
+            "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+            "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
           ]
         },
         {
-          "title": "아헹가 요가와 정밀 정렬",
+          "title": "아헹가 요가 기초",
           "items": [
-            "블록, 스트랩, 담요를 활용한 정밀 정렬",
-            "골반, 척추, 견갑골의 정확한 기하학적 정렬",
-            "역자세를 위한 안전한 단계별 준비 과정",
-            "도구를 활용한 회복 요가 (리스토러티브)"
+            "Introduction to precision, geometry, and anatomical awareness in asanas",
+            "Prop-assisted alignment techniques using blocks, belts, and wall support",
+            "Building strength, stability, and postural endurance through extended holds",
+            "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
           ]
         },
         {
-          "title": "빈야사 플로우와 다이내믹 시퀀싱",
+          "title": "빈야사 요가 플로우",
           "items": [
-            "스마트 시퀀스 구조: 점진적 워밍업, 피크, 쿨다운",
-            "호흡과 연동된 매끄러운 트랜지션 및 점프",
-            "수준별 맞춤 테마 빈야사 클래스 구성",
-            "수업의 템포 조절 및 에너제틱한 공간 리딩"
+            "Breath-synchronized movement connecting postures into fluid sequences",
+            "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+            "Coordinating conscious inhalation with heart openers and exhalation with folds",
+            "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
           ]
         },
         {
-          "title": "특별 워크숍 및 발리 문화 체험",
+          "title": "추가 특별 수업",
           "items": [
-            "사운드 힐링 (싱잉볼 소리 치유)",
-            "발리 해변 야외 요가 체험",
-            "인요가 & 아크로 요가 워크숍",
-            "아유르베다 체질학 기초",
-            "전통 아그니 호트라 불 의식"
+            "Kirtan Meditation",
+            "Yin Yoga & Partner Yoga",
+            "아유르베다 라이프스타일 수업"
           ]
         }
       ]
@@ -3806,12 +3666,12 @@
       "incKit": "요가 매트 및 소도구 일체 무료 대여",
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "전통 개강 및 종강 화제의식 (Agni Hotra)",
-      "incPickup": "입교일 덴파사르 공항(DPS) 무료 픽업",
+      "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
       "incPre": "무료 Pre-TTC 온라인 사전 준비 모듈",
       "incRepeat": "향후 코스 평생 수강료 무료 재수강 권한",
       "notIncHeading": "포함되지 않는 항목",
       "notIncFlights": "국제선 및 국내선 왕복 항공권",
-      "notIncVisa": "인도네시아 입국 비자 수수료",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "해외 여행자 보험 및 의료 보험"
     },
     "pricing": {
@@ -5765,53 +5625,7 @@
       "hoverMore": "Hover to see more",
       "takeaway": "The Takeaway",
       "carryHome": "Carry Home",
-      "careerImpact": "Career Impact:",
-      "cards": [
-        {
-          "title": "Ashtanga Yoga Postures",
-          "content": "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice."
-        },
-        {
-          "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology."
-        },
-        {
-          "title": "Yoga Philosophy",
-          "content": "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis."
-        },
-        {
-          "title": "Pranayama & Breathing",
-          "content": "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari."
-        },
-        {
-          "title": "Anatomy & Physiology",
-          "content": "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system."
-        },
-        {
-          "title": "Teaching Methodology",
-          "content": "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning."
-        },
-        {
-          "title": "Meditation & Mantra",
-          "content": "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness."
-        },
-        {
-          "title": "Iyengar Yoga",
-          "content": "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries."
-        },
-        {
-          "title": "Alignment Principles",
-          "content": "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body."
-        },
-        {
-          "title": "Bandhas (Energy Locks)",
-          "content": "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice."
-        },
-        {
-          "title": "Mudras (Yogic Gestures)",
-          "content": "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation."
-        }
-      ]
+      "careerImpact": "Career Impact:"
     },
     "schedule": {
       "heading": "A Day at YogaGarhi Ashram",
@@ -5862,12 +5676,12 @@
       "incKit": "Yoga mat and practice props provided",
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
-      "incPickup": "Airport pickup from Denpasar (DPS) on course arrival date",
+      "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
       "incPre": "Complimentary online Pre-TTC preparation module",
       "incRepeat": "Lifetime course repetition privilege (tuition-free)",
       "notIncHeading": "Not Included",
       "notIncFlights": "International and domestic flight tickets",
-      "notIncVisa": "Indonesian visa fees",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "Personal travel and medical insurance"
     },
     "pricing": {
@@ -6003,120 +5817,126 @@
       },
       "detailedModules": [
         {
-          "title": "Ashtanga Yoga Postures",
+          "title": "고급 아사나 및 핸즈온 어드저스트먼트",
           "items": [
-            "Complete Ashtanga yoga primary series by K. Pattabhi Jois",
-            "Week 1: Introduction & Sun salutation A & B",
-            "Week 2: Standing sequence postures & yoga props",
-            "Week 3: Seated sequence & Finishing postures",
-            "Week 4: Mysore style & Teaching practice"
+            "Advanced arm balances & inversions",
+            "Therapeutic modifications & props usage",
+            "Working with injuries & limitations",
+            "Advanced sequencing principles"
           ]
         },
         {
-          "title": "Yoga Philosophy",
+          "title": "요가 테라피의 실제 적용",
           "items": [
-            "Complete yoga sutras of Patanjali",
-            "Eight limbs of Ashtanga Yoga",
-            "Pancha-Vayus & Panchakoshas",
-            "Sattva, Rajas & Tamas (Triguna)",
-            "Introduction to Vedas",
-            "Lives of yogis (Inspiring stories)"
+            "Yoga for back pain & spinal health",
+            "Yoga for stress & anxiety",
+            "Prenatal & postnatal yoga",
+            "Yoga for seniors",
+            "Restorative yoga techniques"
           ]
         },
         {
-          "title": "Pranayama Breathing Practices",
+          "title": "고급 프라나야마 및 반다",
           "items": [
-            "Complete pranayama techniques",
-            "All six Shatkarma cleansing practices",
-            "Advanced breathing: Sheetali, Sheetkari",
-            "Kumbhaka (breath retention)",
-            "Integration with asana practice"
+            "Advanced kumbhaka techniques",
+            "Kriyas for energy awakening",
+            "Bandha integration in advanced asanas",
+            "Pranayama for kundalini activation",
+            "Breath practices for nervous system balance"
           ]
         },
         {
-          "title": "Recitation of Sacred Sound",
+          "title": "요가 니드라 및 심화 명상",
           "items": [
-            "Complete mantra collection",
-            "Om Tryambakam Yajamahe",
-            "Hare Rama, Hare Krishna (Maha mantra)",
-            "Yogena Cittasya (Sloka on Sage Patanjali)",
-            "Daily mantra chanting practice"
+            "Complete Yoga Nidra training",
+            "Leading guided meditations",
+            "Chakra meditation techniques",
+            "Sound & mantra meditation",
+            "Silent retreat practices"
           ]
         },
         {
-          "title": "Anatomy and Physiology",
+          "title": "심층 요가 철학 연구",
           "items": [
-            "Complete body systems study",
-            "Physiology of muscles & joints",
-            "Respiratory & Nervous system",
-            "Food & Digestive System",
-            "Workshop on different Asanas"
+            "Bhagavad Gita study",
+            "Upanishads exploration",
+            "Tantra philosophy",
+            "Samkhya & Vedanta",
+            "Applied philosophy in modern life"
           ]
         },
         {
-          "title": "Teaching Methodology",
+          "title": "고급 해부학 및 생체역학",
           "items": [
-            "Complete class sequencing",
-            "Demonstration & observation principles",
-            "Mental & emotional preparation",
-            "Step by step class structure planning",
-            "Practicum & teaching evaluations"
+            "Subtle body anatomy (Nadis, Chakras)",
+            "Myofascial release techniques",
+            "Biomechanics of complex poses",
+            "Injury prevention & working safely with common injuries",
+            "Yoga therapy principles"
           ]
         },
         {
-          "title": "Meditation & Bandhas",
+          "title": "전문 지도자로서의 티칭: 워크숍, 리트릿 및 온라인 강의",
           "items": [
-            "Osho Dynamic meditation",
-            "Nada Brahma Meditation",
-            "Antar Mouna & Ajapa Japa",
-            "All four Bandhas mastery",
-            "Integration with asana & pranayama"
+            "Workshop & retreat planning",
+            "Private session design",
+            "Online class delivery",
+            "Business of yoga & ethical studio management"
           ]
         },
         {
-          "title": "Art of Alignment & Hands-on Adjustments",
+          "title": "고급 정렬 및 생체역학적 조정",
           "items": [
-            "Comprehensive biomechanics and functional alignment for classical yoga postures",
-            "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
-            "Understanding individual anatomical variations, skeletal compression vs tension",
-            "Modification strategies using props and stance adjustments for diverse student flexibility"
+            "Micro-alignment principles and postural observation for advanced and complex asanas",
+            "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+            "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+            "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
           ]
         },
         {
-          "title": "Classical Hatha Yoga Practice",
+          "title": "고급 클래식 하타 요가",
           "items": [
-            "In-depth study of classical Hatha asana principles and sustained holds",
-            "Complete Hatha sequencing: preparatory warming, peak postures, and counter-poses",
-            "Balancing solar (Ha) and lunar (Tha) energies through mindful posture practice",
-            "Integration of Bandhas and Mudras within traditional Hatha asana holding"
+            "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+            "Cultivating steadiness and inward focus through still posture holding and measured breath",
+            "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+            "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
           ]
         },
         {
-          "title": "Iyengar Yoga & Precision Alignment",
+          "title": "고급 아헹가 요가 및 회복 정렬",
           "items": [
-            "Methodical alignment utilizing blocks, straps, blankets, and props",
-            "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
-            "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
-            "Restorative Iyengar prop setups for supported holding and quiet focus"
+            "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
+            "Structural alignment techniques for posture balance and foundational body mechanics",
+            "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+            "Postural observation for personalized practice"
           ]
         },
         {
-          "title": "Vinyasa Flow & Dynamic Sequencing",
+          "title": "창의적 빈야사 크라마 및 마스터 시퀀싱",
           "items": [
-            "Intelligent sequencing architecture: progressive warm-up, peak pose, and cool down",
-            "Dynamic transitions, jump-backs, and jump-throughs with breath awareness",
-            "Creating thematic vinyasa classes for varying student levels and intentions",
-            "Pacing, tempo modulation, and holding space during energetic flowing sequences"
+            "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+            "Creating themed classes and peak posture staging",
+            "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+            "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+            "Designing transformative workshops, masterclasses, and multi-day retreat flows"
           ]
         },
         {
-          "title": "Additional Classes",
+          "title": "티칭 실습 및 최종 평가",
           "items": [
-            "Sound Healing sessions",
-            "Beach Yoga experience",
-            "Yin Yoga & Acro Yoga",
-            "Ayurveda fundamentals",
-            "Agni Hotra (Fire ceremony)"
+            "Supervised practice teaching with real-time feedback",
+            "Structured peer feedback and group reflection",
+            "One-on-one teaching mentorship with master faculty",
+            "Practical alignment and adjustment evaluation",
+            "Final comprehensive teaching assessment"
+          ]
+        },
+        {
+          "title": "스페셜티 워크숍",
+          "items": [
+            "사운드 힐링 워크숍",
+            "Ayurveda for yoga teachers",
+            "Chakra balancing practices"
           ]
         }
       ]
@@ -6539,53 +6359,7 @@
       "hoverMore": "마우스를 올려 상세 내용 보기",
       "takeaway": "습득하게 되는 핵심 역량",
       "carryHome": "일상으로 가져가는 변화",
-      "careerImpact": "실전 지도에 미치는 효과:",
-      "cards": [
-        {
-          "title": "아쉬탕가 요가 아사나",
-          "content": "아쉬탕가 요가 프라이머리 시리즈 전체 시퀀스 수련. 수리야 나마스카라 A & B, 스탠딩 및 시티드 시퀀스, 마이솔 스타일의 체계적인 진도."
-        },
-        {
-          "title": "하타 & 빈야사 플로우",
-          "content": "파완묵타아사나 시리즈, 수리야 나마스카라 변형, 기립 및 좌식 자세, 후굴, 전굴, 역자세 및 종합적인 시퀀싱 방법론."
-        },
-        {
-          "title": "요가 철학",
-          "content": "파탄잘리의 요가 수트라 입문, 아쉬탕가 요가의 8단계 체계, 나디, 차크라, 판차 바유, 판차 코샤, 트리구나 및 위대한 요기들의 영감 넘치는 가르침."
-        },
-        {
-          "title": "프라나야마 & 호흡법",
-          "content": "우짜이, 바스트리카, 카팔바티, 나디 쇼다나, 브라마리, 수리야 베디, 찬드라 베디, 시탈리, 시트카리를 아우르는 완벽한 호흡 체계."
-        },
-        {
-          "title": "해부학 & 생리학",
-          "content": "신체 운동면, 관절 보호 원리, 발목·무릎·척추·어깨의 기능 해부학, 호흡 메커니즘, 근육 생리학 및 신경계의 이해."
-        },
-        {
-          "title": "티칭 방법론 (지도법)",
-          "content": "수업 시퀀싱, 핸즈온 및 구두 수정법, 수준별 수업 운영, 발성법, 멘탈 준비, 시연 원칙 및 단계별 수업 설계."
-        },
-        {
-          "title": "명상 & 만트라",
-          "content": "다양한 명상 기법, 베다 만트라 찬팅, 트라타카, 오쇼 다이내믹 명상, 나다 브라마, 안타르 모우나 및 내면의 고요를 찾는 침묵 수련."
-        },
-        {
-          "title": "아헹가 요가",
-          "content": "블록, 스트랩, 담요 등의 요가 도구를 활용해 올바른 신체 정렬을 구현하고 부상을 예방하는 정밀 중심의 요가 수련."
-        },
-        {
-          "title": "정렬 원리",
-          "content": "안전한 수련의 기초: 관절 정렬, 근육 활성화 패턴 및 생체역학을 깊이 이해하여 신체를 안전하게 보호하고 강화합니다."
-        },
-        {
-          "title": "반다 (에너지 잠금)",
-          "content": "물라, 우디야나, 잘란다라 반다의 체득을 통해 프라나의 흐름을 조절하고 코어를 강화하며 명상의 깊이를 더합니다."
-        },
-        {
-          "title": "무드라 (신성한 손동작)",
-          "content": "생명 에너지를 순환시키고 집중력을 고양하며 높은 차원의 의식 상태로 연결해 주는 손과 신체의 신성한 상징 제스처."
-        }
-      ]
+      "careerImpact": "실전 지도에 미치는 효과:"
     },
     "schedule": {
       "heading": "아쉬람의 하루 일정",
@@ -6636,12 +6410,12 @@
       "incKit": "요가 매트 및 소도구 일체 무료 대여",
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "전통 개강 및 종강 화제의식 (Agni Hotra)",
-      "incPickup": "입교일 덴파사르 공항(DPS) 무료 픽업",
+      "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "무료 Pre-TTC 온라인 사전 준비 모듈",
       "incRepeat": "향후 코스 평생 수강료 무료 재수강 권한",
       "notIncHeading": "포함되지 않는 항목",
       "notIncFlights": "국제선 및 국내선 왕복 항공권",
-      "notIncVisa": "인도네시아 입국 비자 수수료",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "해외 여행자 보험 및 의료 보험"
     },
     "pricing": {
@@ -6767,118 +6541,113 @@
         {
           "title": "아쉬탕가 요가 아사나",
           "items": [
-            "파타비 조이스의 아쉬탕가 프라이머리 시리즈 전체",
-            "1주차: 개요 및 수리야 나마스카라 A & B",
-            "2주차: 스탠딩 시퀀스 및 요가 소도구 활용",
-            "3주차: 시티드 시퀀스 및 피니싱 아사나",
-            "4주차: 마이솔 스타일 및 실전 티칭 실습"
+            "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+            "Standing sequence postures & use of yoga props",
+            "Primary series practiced thoroughly",
+            "Mysore style practice examination"
           ]
         },
         {
           "title": "요가 철학",
           "items": [
-            "파탄잘리의 요가 수트라 완벽 해설",
-            "아쉬탕가 요가의 8단계 체계",
-            "판차 바유 및 판차 코샤",
-            "사트바, 라자스, 타마스 (트리구나)",
-            "베다 철학 입문",
-            "위대한 요기들의 삶과 지혜"
+            "Introduction to Yoga Philosophy and its evolution",
+            "Introduction to yoga sutras of Patanjali",
+            "Nadis (Ida, Pingala & Sushumna)",
+            "Chakras - the energy channels",
+            "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+            "Eight limbs of Ashtanga Yoga"
           ]
         },
         {
           "title": "프라나야마 호흡 수련",
           "items": [
-            "전통 프라나야마 호흡 기법 완벽 습득",
-            "6가지 정화법 샤트카르마 수련",
-            "심화 호흡: 시탈리, 시트카리",
-            "쿰바카 (지식, 숨 참기)",
-            "아사나 수련과의 유기적 결합"
+            "Introduction to Pranayama and its benefits",
+            "Introduction to Shatkarma (six cleansing practices)",
+            "Clavicular, Thoracic & Diaphragmatic Breathing",
+            "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+            "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi",
+            "Introduction to Mudras & energetic seals"
           ]
         },
         {
-          "title": "신성한 소리와 만트라 찬팅",
+          "title": "신성한 만트라 암송",
           "items": [
-            "전통 베다 만트라 전체 수록",
-            "옴 트라이얌바캄 야자마헤",
-            "마하 만트라 (하레 라마, 하레 크리슈나)",
-            "파탄잘리 경배 구절 (요게나 칫타샤)",
-            "매일 진행되는 만트라 찬팅"
+            "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+            "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+            "Guru Brahma Guru Vishnu (Guru stotram)",
+            "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
           ]
         },
         {
           "title": "해부학 및 생리학",
           "items": [
-            "신체 주요 계통의 완벽한 기능 연구",
-            "근육 및 관절의 기능 운동학",
-            "호흡기계 및 신경계의 원리",
-            "식단과 소화기 계통의 이해",
-            "아사나별 정밀 해부학 워크숍"
+            "Body Movement & Planes",
+            "Joints and How to Protect them in Asanas",
+            "Anatomy of Ankle, Knee, Spine & Shoulder",
+            "Breathing mechanism in Yoga"
           ]
         },
         {
-          "title": "티칭 방법론 (교수법)",
+          "title": "교수법 및 티칭 방법론",
           "items": [
-            "체계적인 요가 수업 시퀀싱 구성",
-            "데모 시연 및 관찰의 원칙",
-            "지도자로서의 멘탈 및 감정 관리",
-            "단계별 수업 계획서 작성법",
-            "실전 티칭 실습 및 지도 평가"
+            "How to sequence a class",
+            "Working with breathing and posture",
+            "Adjustments and corrections",
+            "Working with different level of students",
+            "Building positive & conscious communication"
           ]
         },
         {
-          "title": "명상과 반다 (에너지 잠금)",
+          "title": "명상",
           "items": [
-            "오쇼 다이내믹 명상",
-            "나다 브라마 소리 명상",
-            "안타르 모우나 및 아자파 자파",
-            "4대 반다의 완벽한 체득",
-            "아사나 및 호흡과의 유기적 연결"
+            "Introduction to Meditation",
+            "Different types of meditation techniques",
+            "Om / Mantra Meditation",
+            "Trataka and Silence Meditation"
           ]
         },
         {
-          "title": "정렬과 핸즈온 어시스트의 예술",
+          "title": "정렬 원리 및 도구 활용",
           "items": [
-            "전통 아사나의 기능적 정렬과 생체역학",
-            "정확한 구두 큐잉 및 안전한 핸즈온 어시스트",
-            "개인별 해부학적 차이와 골격 압박에 대한 이해",
-            "블록과 스트랩을 활용한 단계별 수정 전략"
+            "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+            "Safe execution and anatomical alignment in foundational standing and seated poses",
+            "Effective use of props (blocks, straps, bolsters) to support safe practice",
+            "Identifying common postural habits and applying self-correction techniques"
           ]
         },
         {
-          "title": "클래식 하타 요가 수련",
+          "title": "전통 하타 요가",
           "items": [
-            "전통 하타 요가 원리와 정적 유지의 깊이",
-            "하타 시퀀싱: 웜업, 피크 포즈, 카운터 포즈",
-            "태양(하)과 달(타) 에너지의 조화로운 균형",
-            "정적 유지 상태에서의 반다와 무드라 결합"
+            "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+            "Traditional Surya Namaskar variations with breath-synchronized awareness",
+            "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+            "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
           ]
         },
         {
-          "title": "아헹가 요가와 정밀 정렬",
+          "title": "아헹가 요가 기초",
           "items": [
-            "블록, 스트랩, 담요를 활용한 정밀 정렬",
-            "골반, 척추, 견갑골의 정확한 기하학적 정렬",
-            "역자세를 위한 안전한 단계별 준비 과정",
-            "도구를 활용한 회복 요가 (리스토러티브)"
+            "Introduction to precision, geometry, and anatomical awareness in asanas",
+            "Prop-assisted alignment techniques using blocks, belts, and wall support",
+            "Building strength, stability, and postural endurance through extended holds",
+            "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
           ]
         },
         {
-          "title": "빈야사 플로우와 다이내믹 시퀀싱",
+          "title": "빈야사 요가 플로우",
           "items": [
-            "스마트 시퀀스 구조: 점진적 워밍업, 피크, 쿨다운",
-            "호흡과 연동된 매끄러운 트랜지션 및 점프",
-            "수준별 맞춤 테마 빈야사 클래스 구성",
-            "수업의 템포 조절 및 에너제틱한 공간 리딩"
+            "Breath-synchronized movement connecting postures into fluid sequences",
+            "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+            "Coordinating conscious inhalation with heart openers and exhalation with folds",
+            "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
           ]
         },
         {
-          "title": "특별 워크숍 및 발리 문화 체험",
+          "title": "추가 특별 수업",
           "items": [
-            "사운드 힐링 (싱잉볼 소리 치유)",
-            "발리 해변 야외 요가 체험",
-            "인요가 & 아크로 요가 워크숍",
-            "아유르베다 체질학 기초",
-            "전통 아그니 호트라 불 의식"
+            "Kirtan Meditation",
+            "Yin Yoga & Partner Yoga",
+            "아유르베다 라이프스타일 수업"
           ]
         }
       ]
@@ -7398,12 +7167,12 @@
       "incKit": "요가 매트 및 소도구 일체 무료 대여",
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "전통 개강 및 종강 화제의식 (Agni Hotra)",
-      "incPickup": "입교일 덴파사르 공항(DPS) 무료 픽업",
+      "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "무료 Pre-TTC 온라인 사전 준비 모듈",
       "incRepeat": "향후 코스 평생 수강료 무료 재수강 권한",
       "notIncHeading": "포함되지 않는 항목",
       "notIncFlights": "국제선 및 국내선 왕복 항공권",
-      "notIncVisa": "인도네시아 입국 비자 수수료",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "해외 여행자 보험 및 의료 보험"
     },
     "pricing": {
@@ -8075,53 +7844,7 @@
       "hoverMore": "Hover to see more",
       "takeaway": "The Takeaway",
       "carryHome": "Carry Home",
-      "careerImpact": "Career Impact:",
-      "cards": [
-        {
-          "title": "Ashtanga Yoga Postures",
-          "content": "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice."
-        },
-        {
-          "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology."
-        },
-        {
-          "title": "Yoga Philosophy",
-          "content": "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis."
-        },
-        {
-          "title": "Pranayama & Breathing",
-          "content": "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari."
-        },
-        {
-          "title": "Anatomy & Physiology",
-          "content": "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system."
-        },
-        {
-          "title": "Teaching Methodology",
-          "content": "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning."
-        },
-        {
-          "title": "Meditation & Mantra",
-          "content": "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness."
-        },
-        {
-          "title": "Iyengar Yoga",
-          "content": "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries."
-        },
-        {
-          "title": "Alignment Principles",
-          "content": "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body."
-        },
-        {
-          "title": "Bandhas (Energy Locks)",
-          "content": "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice."
-        },
-        {
-          "title": "Mudras (Yogic Gestures)",
-          "content": "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation."
-        }
-      ]
+      "careerImpact": "Career Impact:"
     },
     "schedule": {
       "heading": "A Day at YogaGarhi Ashram",
@@ -8172,12 +7895,12 @@
       "incKit": "Yoga mat and practice props provided",
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
-      "incPickup": "Airport pickup from Denpasar (DPS) on course arrival date",
+      "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "Complimentary online Pre-TTC preparation module",
       "incRepeat": "Lifetime course repetition privilege (tuition-free)",
       "notIncHeading": "Not Included",
       "notIncFlights": "International and domestic flight tickets",
-      "notIncVisa": "Indonesian visa fees",
+      "notIncVisa": "Indian visa fees",
       "notIncInsurance": "Personal travel and medical insurance"
     },
     "pricing": {
@@ -8313,120 +8036,126 @@
       },
       "detailedModules": [
         {
-          "title": "Ashtanga Yoga Postures",
+          "title": "고급 아사나 및 핸즈온 어드저스트먼트",
           "items": [
-            "Complete Ashtanga yoga primary series by K. Pattabhi Jois",
-            "Week 1: Introduction & Sun salutation A & B",
-            "Week 2: Standing sequence postures & yoga props",
-            "Week 3: Seated sequence & Finishing postures",
-            "Week 4: Mysore style & Teaching practice"
+            "Advanced arm balances & inversions",
+            "Therapeutic modifications & props usage",
+            "Working with injuries & limitations",
+            "Advanced sequencing principles"
           ]
         },
         {
-          "title": "Yoga Philosophy",
+          "title": "요가 테라피의 실제 적용",
           "items": [
-            "Complete yoga sutras of Patanjali",
-            "Eight limbs of Ashtanga Yoga",
-            "Pancha-Vayus & Panchakoshas",
-            "Sattva, Rajas & Tamas (Triguna)",
-            "Introduction to Vedas",
-            "Lives of yogis (Inspiring stories)"
+            "Yoga for back pain & spinal health",
+            "Yoga for stress & anxiety",
+            "Prenatal & postnatal yoga",
+            "Yoga for seniors",
+            "Restorative yoga techniques"
           ]
         },
         {
-          "title": "Pranayama Breathing Practices",
+          "title": "고급 프라나야마 및 반다",
           "items": [
-            "Complete pranayama techniques",
-            "All six Shatkarma cleansing practices",
-            "Advanced breathing: Sheetali, Sheetkari",
-            "Kumbhaka (breath retention)",
-            "Integration with asana practice"
+            "Advanced kumbhaka techniques",
+            "Kriyas for energy awakening",
+            "Bandha integration in advanced asanas",
+            "Pranayama for kundalini activation",
+            "Breath practices for nervous system balance"
           ]
         },
         {
-          "title": "Recitation of Sacred Sound",
+          "title": "요가 니드라 및 심화 명상",
           "items": [
-            "Complete mantra collection",
-            "Om Tryambakam Yajamahe",
-            "Hare Rama, Hare Krishna (Maha mantra)",
-            "Yogena Cittasya (Sloka on Sage Patanjali)",
-            "Daily mantra chanting practice"
+            "Complete Yoga Nidra training",
+            "Leading guided meditations",
+            "Chakra meditation techniques",
+            "Sound & mantra meditation",
+            "Silent retreat practices"
           ]
         },
         {
-          "title": "Anatomy and Physiology",
+          "title": "심층 요가 철학 연구",
           "items": [
-            "Complete body systems study",
-            "Physiology of muscles & joints",
-            "Respiratory & Nervous system",
-            "Food & Digestive System",
-            "Workshop on different Asanas"
+            "Bhagavad Gita study",
+            "Upanishads exploration",
+            "Tantra philosophy",
+            "Samkhya & Vedanta",
+            "Applied philosophy in modern life"
           ]
         },
         {
-          "title": "Teaching Methodology",
+          "title": "고급 해부학 및 생체역학",
           "items": [
-            "Complete class sequencing",
-            "Demonstration & observation principles",
-            "Mental & emotional preparation",
-            "Step by step class structure planning",
-            "Practicum & teaching evaluations"
+            "Subtle body anatomy (Nadis, Chakras)",
+            "Myofascial release techniques",
+            "Biomechanics of complex poses",
+            "Injury prevention & working safely with common injuries",
+            "Yoga therapy principles"
           ]
         },
         {
-          "title": "Meditation & Bandhas",
+          "title": "전문 지도자로서의 티칭: 워크숍, 리트릿 및 온라인 강의",
           "items": [
-            "Osho Dynamic meditation",
-            "Nada Brahma Meditation",
-            "Antar Mouna & Ajapa Japa",
-            "All four Bandhas mastery",
-            "Integration with asana & pranayama"
+            "Workshop & retreat planning",
+            "Private session design",
+            "Online class delivery",
+            "Business of yoga & ethical studio management"
           ]
         },
         {
-          "title": "Art of Alignment & Hands-on Adjustments",
+          "title": "고급 정렬 및 생체역학적 조정",
           "items": [
-            "Comprehensive biomechanics and functional alignment for classical yoga postures",
-            "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
-            "Understanding individual anatomical variations, skeletal compression vs tension",
-            "Modification strategies using props and stance adjustments for diverse student flexibility"
+            "Micro-alignment principles and postural observation for advanced and complex asanas",
+            "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+            "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+            "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
           ]
         },
         {
-          "title": "Classical Hatha Yoga Practice",
+          "title": "고급 클래식 하타 요가",
           "items": [
-            "In-depth study of classical Hatha asana principles and sustained holds",
-            "Complete Hatha sequencing: preparatory warming, peak postures, and counter-poses",
-            "Balancing solar (Ha) and lunar (Tha) energies through mindful posture practice",
-            "Integration of Bandhas and Mudras within traditional Hatha asana holding"
+            "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+            "Cultivating steadiness and inward focus through still posture holding and measured breath",
+            "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+            "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
           ]
         },
         {
-          "title": "Iyengar Yoga & Precision Alignment",
+          "title": "고급 아헹가 요가 및 회복 정렬",
           "items": [
-            "Methodical alignment utilizing blocks, straps, blankets, and props",
-            "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
-            "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
-            "Restorative Iyengar prop setups for supported holding and quiet focus"
+            "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
+            "Structural alignment techniques for posture balance and foundational body mechanics",
+            "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+            "Postural observation for personalized practice"
           ]
         },
         {
-          "title": "Vinyasa Flow & Dynamic Sequencing",
+          "title": "창의적 빈야사 크라마 및 마스터 시퀀싱",
           "items": [
-            "Intelligent sequencing architecture: progressive warm-up, peak pose, and cool down",
-            "Dynamic transitions, jump-backs, and jump-throughs with breath awareness",
-            "Creating thematic vinyasa classes for varying student levels and intentions",
-            "Pacing, tempo modulation, and holding space during energetic flowing sequences"
+            "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+            "Creating themed classes and peak posture staging",
+            "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+            "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+            "Designing transformative workshops, masterclasses, and multi-day retreat flows"
           ]
         },
         {
-          "title": "Additional Classes",
+          "title": "티칭 실습 및 최종 평가",
           "items": [
-            "Sound Healing sessions",
-            "Beach Yoga experience",
-            "Yin Yoga & Acro Yoga",
-            "Ayurveda fundamentals",
-            "Agni Hotra (Fire ceremony)"
+            "Supervised practice teaching with real-time feedback",
+            "Structured peer feedback and group reflection",
+            "One-on-one teaching mentorship with master faculty",
+            "Practical alignment and adjustment evaluation",
+            "Final comprehensive teaching assessment"
+          ]
+        },
+        {
+          "title": "스페셜티 워크숍",
+          "items": [
+            "사운드 힐링 워크숍",
+            "Ayurveda for yoga teachers",
+            "Chakra balancing practices"
           ]
         }
       ]

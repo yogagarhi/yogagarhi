@@ -3,7 +3,7 @@ export const courseData = {
         title: "100 HOUR YOGA",
         subtitle: "TEACHER TRAINING COURSE IN BALI",
         duration: "12 Days",
-        location: "Nature's Escape Resort in Ubud Bali",
+        location: "Nature's Escape Resort near Ubud, Bali",
         level: "Beginner",
         originalPrice: "$899",
         price: "$599",
@@ -16,7 +16,7 @@ export const courseData = {
         features: [
             { title: "Multi-style Yoga Teaching", description: "Learn yoga in its authentic, time-tested way. Our teachers preserve the wisdom of yogic tradition." },
             { title: "Yoga Alliance Certified", description: "Receive globally recognized certification. Begin teaching yoga with confidence worldwide." },
-            { title: "Peaceful Bali Surroundings", description: "Experience yoga in the lap of nature. Calm beaches and greenery deepen your practice." },
+            { title: "Peaceful Bali Surroundings", description: "Experience yoga in the lap of nature. Lush rice fields and serene greenery deepen your practice." },
             { title: "Outdoor Excursions", description: "Explore temples, beaches, and nature walks. Balance learning with adventure and culture." },
             { title: "Small Batch Sizes", description: "Get personal attention and guidance. Every student's growth matters to us." },
             { title: "Supportive Community", description: "Be part of a warm and positive family. Grow together in a caring environment." },
@@ -28,120 +28,120 @@ export const courseData = {
             { title: "Experienced Instructors", description: "Learn from certified teachers with years of expertise." },
         ],
         curriculum: [
-            {
-                title: "Ashtanga Yoga Postures",
-                items: [
-                    "Introduction to Ashtanga yoga followed by Sun salutation A & B",
-                    "Standing sequence postures & use of yoga props",
-                    "Primary series practiced thoroughly",
-                    "Mysore style practice examination"
-                ]
-            },
-            {
-                title: "Yoga Philosophy",
-                items: [
-                    "Introduction to Yoga Philosophy and its evolution",
-                    "Introduction to yoga sutras of Patanjali",
-                    "Nadis (Ida, Pingala & Sushumna)",
-                    "Chakras - the energy channels",
-                    "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
-                    "Eight limbs of Ashtanga Yoga"
-                ]
-            },
-            {
-                title: "Pranayama Breathing Practices",
-                items: [
-                    "Introduction to Pranayama and its benefits",
-                    "Introduction to Shatkarma (six cleansing practices)",
-                    "Clavicular, Thoracic & Diaphragmatic Breathing",
-                    "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
-                    "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi"
-                ]
-            },
-            {
-                title: "Recitation of Sacred Sound",
-                items: [
-                    "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
-                    "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
-                    "Guru Brahma Guru Vishnu (Guru stotram)",
-                    "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
-                ]
-            },
-            {
-                title: "Anatomy and Physiology",
-                items: [
-                    "Body Movement & Planes",
-                    "Joints and How to Protect them in Asanas",
-                    "Anatomy of Ankle, Knee, Spine & Shoulder",
-                    "Breathing mechanism in Yoga",
-                    "Introduction to Mudras & Bandhas"
-                ]
-            },
-            {
-                title: "Teaching Methodology",
-                items: [
-                    "How to sequence a class",
-                    "Working with breathing and posture",
-                    "Adjustments and corrections",
-                    "Working with different level of students",
-                    "Building positive & conscious communication"
-                ]
-            },
-            {
-                title: "Meditation",
-                items: [
-                    "Introduction to Meditation",
-                    "Different types of meditation techniques",
-                    "Om / Mantra Meditation",
-                    "Trataka and Silence Meditation"
-                ]
-            },
-            {
-                title: "Alignment Principles & Prop Adjustments",
-                items: [
-                    "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
-                    "Safe execution and anatomical alignment in foundational standing and seated poses",
-                    "Effective use of props (blocks, straps, bolsters) to support safe practice",
-                    "Identifying common postural habits and applying self-correction techniques"
-                ]
-            },
-            {
-                title: "Traditional Hatha Yoga",
-                items: [
-                    "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
-                    "Traditional Surya Namaskar variations with breath-synchronized awareness",
-                    "Foundational standing, balancing, forward bending, and gentle twisting asanas",
-                    "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
-                ]
-            },
-            {
-                title: "Iyengar Yoga Foundations",
-                items: [
-                    "Introduction to precision, geometry, and anatomical awareness in asanas",
-                    "Prop-assisted alignment techniques using blocks, belts, and wall support",
-                    "Building strength, stability, and postural endurance through extended holds",
-                    "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
-                ]
-            },
-            {
-                title: "Vinyasa Yoga Flow",
-                items: [
-                    "Breath-synchronized movement connecting postures into fluid sequences",
-                    "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
-                    "Coordinating conscious inhalation with heart openers and exhalation with folds",
-                    "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
-                ]
-            },
-            {
-                title: "Additional Classes",
-                items: [
-                    "Kirtan Meditation",
-                    "Yin Yoga & Partner Yoga",
-                    "Acro Yoga",
-                    "Iyengar & Ayurvedic class"
-                ]
-            }
-        ],
+          {
+                    title: "Ashtanga Yoga Postures",
+                    items: [
+                              "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+                              "Standing sequence postures & use of yoga props",
+                              "Primary series practiced thoroughly",
+                              "Mysore style practice examination"
+                    ]
+          },
+          {
+                    title: "Yoga Philosophy",
+                    items: [
+                              "Introduction to Yoga Philosophy and its evolution",
+                              "Introduction to yoga sutras of Patanjali",
+                              "Nadis (Ida, Pingala & Sushumna)",
+                              "Chakras - the energy channels",
+                              "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+                              "Eight limbs of Ashtanga Yoga"
+                    ]
+          },
+          {
+                    title: "Pranayama Breathing Practices",
+                    items: [
+                              "Introduction to Pranayama and its benefits",
+                              "Introduction to Shatkarma (six cleansing practices)",
+                              "Clavicular, Thoracic & Diaphragmatic Breathing",
+                              "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+                              "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi",
+                              "Introduction to Mudras & energetic seals"
+                    ]
+          },
+          {
+                    title: "Recitation of Sacred Sound",
+                    items: [
+                              "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+                              "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+                              "Guru Brahma Guru Vishnu (Guru stotram)",
+                              "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
+                    ]
+          },
+          {
+                    title: "Anatomy and Physiology",
+                    items: [
+                              "Body Movement & Planes",
+                              "Joints and How to Protect them in Asanas",
+                              "Anatomy of Ankle, Knee, Spine & Shoulder",
+                              "Breathing mechanism in Yoga"
+                    ]
+          },
+          {
+                    title: "Teaching Methodology",
+                    items: [
+                              "How to sequence a class",
+                              "Working with breathing and posture",
+                              "Adjustments and corrections",
+                              "Working with different level of students",
+                              "Building positive & conscious communication"
+                    ]
+          },
+          {
+                    title: "Meditation",
+                    items: [
+                              "Introduction to Meditation",
+                              "Different types of meditation techniques",
+                              "Om / Mantra Meditation",
+                              "Trataka and Silence Meditation"
+                    ]
+          },
+          {
+                    title: "Alignment Principles & Prop Adjustments",
+                    items: [
+                              "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+                              "Safe execution and anatomical alignment in foundational standing and seated poses",
+                              "Effective use of props (blocks, straps, bolsters) to support safe practice",
+                              "Identifying common postural habits and applying self-correction techniques"
+                    ]
+          },
+          {
+                    title: "Traditional Hatha Yoga",
+                    items: [
+                              "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+                              "Traditional Surya Namaskar variations with breath-synchronized awareness",
+                              "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+                              "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
+                    ]
+          },
+          {
+                    title: "Iyengar Yoga Foundations",
+                    items: [
+                              "Introduction to precision, geometry, and anatomical awareness in asanas",
+                              "Prop-assisted alignment techniques using blocks, belts, and wall support",
+                              "Building strength, stability, and postural endurance through extended holds",
+                              "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
+                    ]
+          },
+          {
+                    title: "Vinyasa Yoga Flow",
+                    items: [
+                              "Breath-synchronized movement connecting postures into fluid sequences",
+                              "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+                              "Coordinating conscious inhalation with heart openers and exhalation with folds",
+                              "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
+                    ]
+          },
+          {
+                    title: "Additional Classes",
+                    items: [
+                              "Kirtan Meditation",
+                              "Yin Yoga & Partner Yoga",
+                              "Ayurvedic lifestyle class"
+                    ]
+          }
+],
+        
         dailySchedule: [
             { time: "6:00 AM", activity: "Wake Up & Morning Cleansing" },
             { time: "6:30 AM", activity: "Pranayama & Meditation" },
@@ -166,7 +166,7 @@ export const courseData = {
             "12 nights accommodation",
             "3 vegetarian/vegan meals daily",
             "All course materials & manuals",
-            "Yoga Alliance Certificate (RYT-100)",
+            "YogaGarhi 100-Hour Yoga Foundation Certificate",
             "Airport pickup & drop",
             "Outdoor excursions & activities",
             "1 Balinese massage",
@@ -179,7 +179,7 @@ export const courseData = {
         title: "200 HOUR YOGA",
         subtitle: "TEACHER TRAINING COURSE IN BALI",
         duration: "24 Days",
-        location: "Nature's Escape Resort in Ubud Bali",
+        location: "Nature's Escape Resort near Ubud, Bali",
         level: "Beginner to Intermediate",
         originalPrice: "$1299",
         price: "$999",
@@ -192,7 +192,7 @@ export const courseData = {
         features: [
             { title: "Multi-style Yoga Teaching", description: "Master Hatha, Vinyasa, Ashtanga & Iyengar styles. Our comprehensive approach covers all major yoga traditions." },
             { title: "Yoga Alliance RYT-200 Certified", description: "Receive the globally recognized 200-hour certification. Teach yoga professionally anywhere in the world." },
-            { title: "Peaceful Bali Surroundings", description: "Experience yoga in the lap of nature. Calm beaches and greenery deepen your practice." },
+            { title: "Peaceful Bali Surroundings", description: "Experience yoga in the lap of nature. Lush rice fields and serene greenery deepen your practice." },
             { title: "Outdoor Excursions", description: "Explore temples, beaches, and nature walks. Balance learning with adventure and culture." },
             { title: "Small Batch Sizes", description: "Get personal attention and guidance. Every student's growth matters to us." },
             { title: "Supportive Community", description: "Be part of a warm and positive family. Grow together in a caring environment." },
@@ -361,7 +361,7 @@ export const courseData = {
         title: "300 HOUR YOGA",
         subtitle: "TEACHER TRAINING COURSE IN BALI",
         duration: "28 Days",
-        location: "Nature's Escape Resort in Ubud Bali",
+        location: "Nature's Escape Resort near Ubud, Bali",
         level: "Intermediate to Advanced",
         originalPrice: "$2999",
         price: "$2399",
@@ -374,7 +374,7 @@ export const courseData = {
         features: [
             { title: "Advanced Multi-style Teaching", description: "Master advanced techniques in Hatha, Vinyasa, Ashtanga & therapeutic yoga applications." },
             { title: "Yoga Alliance RYT-500 Certified", description: "Complete your 500-hour certification. Join the elite group of advanced yoga teachers worldwide." },
-            { title: "Peaceful Bali Surroundings", description: "Experience yoga in the lap of nature. Calm beaches and greenery deepen your practice." },
+            { title: "Peaceful Bali Surroundings", description: "Experience yoga in the lap of nature. Lush rice fields and serene greenery deepen your practice." },
             { title: "Outdoor Excursions", description: "Explore temples, beaches, and nature walks. Balance learning with adventure and culture." },
             { title: "Small Batch Sizes", description: "Get personal attention and guidance. Every student's growth matters to us." },
             { title: "Supportive Community", description: "Be part of a warm and positive family. Grow together in a caring environment." },
@@ -386,123 +386,131 @@ export const courseData = {
             { title: "Expert Instructors", description: "Learn from master teachers with decades of experience." },
         ],
         curriculum: [
-            {
-                title: "Advanced Asana & Adjustments",
-                items: [
-                    "Advanced arm balances & inversions",
-                    "Therapeutic modifications & props usage",
-                    "Hands-on adjustment mastery",
-                    "Working with injuries & limitations",
-                    "Advanced sequencing principles"
-                ]
-            },
-            {
-                title: "Therapeutic Yoga Applications",
-                items: [
-                    "Yoga for back pain & spinal health",
-                    "Yoga for stress & anxiety",
-                    "Prenatal & postnatal yoga",
-                    "Yoga for seniors",
-                    "Restorative yoga techniques"
-                ]
-            },
-            {
-                title: "Advanced Pranayama & Bandhas",
-                items: [
-                    "Advanced kumbhaka techniques",
-                    "Kriyas for energy awakening",
-                    "Bandha integration in advanced asanas",
-                    "Pranayama for kundalini activation",
-                    "Breath therapy applications"
-                ]
-            },
-            {
-                title: "Yoga Nidra & Advanced Meditation",
-                items: [
-                    "Complete Yoga Nidra training",
-                    "Leading guided meditations",
-                    "Chakra meditation techniques",
-                    "Sound & mantra meditation",
-                    "Silent retreat practices"
-                ]
-            },
-            {
-                title: "In-depth Philosophy Studies",
-                items: [
-                    "Bhagavad Gita study",
-                    "Upanishads exploration",
-                    "Tantra philosophy",
-                    "Samkhya & Vedanta",
-                    "Applied philosophy in modern life"
-                ]
-            },
-            {
-                title: "Advanced Anatomy & Biomechanics",
-                items: [
-                    "Subtle body anatomy (Nadis, Chakras)",
-                    "Myofascial release techniques",
-                    "Biomechanics of complex poses",
-                    "Injury prevention & recovery",
-                    "Yoga therapy principles"
-                ]
-            },
-            {
-                title: "Sequencing & Class Design",
-                items: [
-                    "Creating themed classes",
-                    "Workshop & retreat planning",
-                    "Private session design",
-                    "Online class delivery",
-                    "Business of yoga"
-                ]
-            },
-            {
-                title: "Advanced Alignment & Biomechanical Adjustments",
-                items: [
-                    "Micro-alignment principles and postural observation for advanced and complex asanas",
-                    "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
-                    "Advanced postural biomechanics, weight distribution, and multi-directional stability",
-                    "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
-                ]
-            },
-            {
-                title: "Advanced Classical Hatha Yoga",
-                items: [
-                    "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
-                    "Cultivating steadiness and inward focus through still posture holding and measured breath",
-                    "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
-                    "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
-                ]
-            },
-            {
-                title: "Advanced Iyengar Yoga & Restorative Alignment",
-                items: [
-                    "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
-                    "Structural alignment techniques for posture balance and foundational body mechanics",
-                    "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
-                    "Posture observation and personalized alignment sequencing for student needs"
-                ]
-            },
-            {
-                title: "Creative Vinyasa Krama & Master Sequencing",
-                items: [
-                    "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
-                    "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
-                    "Thematic philosophical weaving and somatic cues throughout high-energy flows",
-                    "Designing transformative workshops, masterclasses, and multi-day retreat flows"
-                ]
-            },
-            {
-                title: "Specialty Workshops",
-                items: [
-                    "Aerial yoga introduction",
-                    "Sound healing certification",
-                    "Ayurveda & yoga integration",
-                    "Chakra balancing workshops",
-                    "Partner & Thai yoga massage"
-                ]
-            }
-        ],
+          {
+                    title: "Advanced Asana & Adjustments",
+                    items: [
+                              "Advanced arm balances & inversions",
+                              "Therapeutic modifications & props usage",
+                              "Working with injuries & limitations",
+                              "Advanced sequencing principles"
+                    ]
+          },
+          {
+                    title: "Therapeutic Yoga Applications",
+                    items: [
+                              "Yoga for back pain & spinal health",
+                              "Yoga for stress & anxiety",
+                              "Prenatal & postnatal yoga",
+                              "Yoga for seniors",
+                              "Restorative yoga techniques"
+                    ]
+          },
+          {
+                    title: "Advanced Pranayama & Bandhas",
+                    items: [
+                              "Advanced kumbhaka techniques",
+                              "Kriyas for energy awakening",
+                              "Bandha integration in advanced asanas",
+                              "Pranayama for kundalini activation",
+                              "Breath practices for nervous system balance"
+                    ]
+          },
+          {
+                    title: "Yoga Nidra & Advanced Meditation",
+                    items: [
+                              "Complete Yoga Nidra training",
+                              "Leading guided meditations",
+                              "Chakra meditation techniques",
+                              "Sound & mantra meditation",
+                              "Silent retreat practices"
+                    ]
+          },
+          {
+                    title: "In-depth Philosophy Studies",
+                    items: [
+                              "Bhagavad Gita study",
+                              "Upanishads exploration",
+                              "Tantra philosophy",
+                              "Samkhya & Vedanta",
+                              "Applied philosophy in modern life"
+                    ]
+          },
+          {
+                    title: "Advanced Anatomy & Biomechanics",
+                    items: [
+                              "Subtle body anatomy (Nadis, Chakras)",
+                              "Myofascial release techniques",
+                              "Biomechanics of complex poses",
+                              "Injury prevention & working safely with common injuries",
+                              "Yoga therapy principles"
+                    ]
+          },
+          {
+                    title: "Teaching as a Profession: Workshops, Retreats & Online Teaching",
+                    items: [
+                              "Workshop & retreat planning",
+                              "Private session design",
+                              "Online class delivery",
+                              "Business of yoga & ethical studio management"
+                    ]
+          },
+          {
+                    title: "Advanced Alignment & Biomechanical Adjustments",
+                    items: [
+                              "Micro-alignment principles and postural observation for advanced and complex asanas",
+                              "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+                              "Advanced postural biomechanics, weight distribution, and multi-directional stability",
+                              "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
+                    ]
+          },
+          {
+                    title: "Advanced Classical Hatha Yoga",
+                    items: [
+                              "Advanced classical Hatha asanas with prolonged holding and internal energetic locks",
+                              "Cultivating steadiness and inward focus through still posture holding and measured breath",
+                              "Exploring the classical architecture of Hatha: Prana balance, mental focus, and energetic harmony",
+                              "Designing authentic multi-hour traditional Hatha immersions and sadhana practices"
+                    ]
+          },
+          {
+                    title: "Advanced Iyengar Yoga & Restorative Alignment",
+                    items: [
+                              "Deep structural alignment utilizing advanced prop variations, blocks, and straps",
+                              "Structural alignment techniques for posture balance and foundational body mechanics",
+                              "Restorative sequencing with bolster, blanket, and strap arrangements for restful holding",
+                              "Postural observation for personalized practice"
+                    ]
+          },
+          {
+                    title: "Creative Vinyasa Krama & Master Sequencing",
+                    items: [
+                              "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
+                              "Creating themed classes and peak posture staging",
+                              "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+                              "Thematic philosophical weaving and somatic cues throughout high-energy flows",
+                              "Designing transformative workshops, masterclasses, and multi-day retreat flows"
+                    ]
+          },
+          {
+                    title: "Teaching Practicum & Assessment",
+                    items: [
+                              "Supervised practice teaching with real-time feedback",
+                              "Structured peer feedback and group reflection",
+                              "One-on-one teaching mentorship with master faculty",
+                              "Practical alignment and adjustment evaluation",
+                              "Final comprehensive teaching assessment"
+                    ]
+          },
+          {
+                    title: "Specialty Workshops",
+                    items: [
+                              "Sound healing workshop",
+                              "Ayurveda for yoga teachers",
+                              "Chakra balancing practices"
+                    ]
+          }
+],
+        
         dailySchedule: [
             { time: "5:30 AM", activity: "Wake Up & Morning Cleansing" },
             { time: "6:00 AM", activity: "Advanced Pranayama & Meditation" },
@@ -679,7 +687,7 @@ export const courseData = {
                     "Kirtan Meditation",
                     "Yin Yoga & Partner Yoga",
                     "Acro Yoga",
-                    "Iyengar & Ayurvedic class"
+                    "Ayurvedic lifestyle class"
                 ]
             }
         ],
@@ -707,7 +715,7 @@ export const courseData = {
             "12 nights accommodation",
             "3 vegetarian/vegan meals daily",
             "All course materials & manuals",
-            "Yoga Alliance Certificate (RYT-100)",
+            "YogaGarhi 100-Hour Yoga Foundation Certificate",
             "Airport pickup & drop",
             "Outdoor excursions & activities",
             "1 Ayurvedic massage",

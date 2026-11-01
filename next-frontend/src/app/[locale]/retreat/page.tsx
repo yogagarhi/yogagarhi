@@ -5,6 +5,7 @@ import { ArrowRight, Check } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { RETREAT_LOCATIONS, RETREATS_DATA } from "@/constants/retreats";
+import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
@@ -259,11 +260,13 @@ export default async function RetreatsHubPage({ params }: Props) {
                             }
                           </span>
                         </div>
-                        <div className="absolute top-4 right-4">
-                          <span className="px-3 py-1 bg-primary text-primary-foreground text-xs font-semibold rounded-full shadow-sm">
-                            {isEn ? `Save ${retreat.earlyBirdSaving}` : t("save", { amount: retreat.earlyBirdSaving })}
-                          </span>
-                        </div>
+                        {SHOW_COMPARE_PRICE && (
+                          <div className="absolute top-4 right-4">
+                            <span className="px-3 py-1 bg-primary text-primary-foreground text-xs font-semibold rounded-full shadow-sm">
+                              {isEn ? `Save ${retreat.earlyBirdSaving}` : t("save", { amount: retreat.earlyBirdSaving })}
+                            </span>
+                          </div>
+                        )}
                       </div>
 
                       <div className="p-6">

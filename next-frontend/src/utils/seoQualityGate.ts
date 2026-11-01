@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { isLocaleReviewed, SUPPORTED_LOCALES } from '@/config/i18nConfig';
+import { LOCATION_LIVE } from '@/config/locationConfig';
 
 /**
  * Returns alternate language hreflangs ONLY for locales that have passed the Quality Gate (reviewed: true).
@@ -28,9 +29,14 @@ export function getReviewedHreflang(pagePath: string = ""): Record<string, strin
  * from being indexed by search engines, AND completely removes all hreflang
  * alternates from the page head (Google guidelines: noindex pages must not emit hreflang).
  */
-export function applyQualityGate(meta: Metadata, locale?: string): Metadata {
+export function applyQualityGate(meta: Metadata, locale?: string, pagePath?: string): Metadata {
   const isReviewed = isLocaleReviewed(locale || 'en');
-  if (!isReviewed) {
+  const pathStr = (pagePath || (typeof meta.alternates?.canonical === 'string' ? meta.alternates.canonical : '')).toLowerCase();
+  const isRishikesh = pathStr.includes('rishikesh');
+  const isVarkala = pathStr.includes('varkala');
+  const isLocationDisabled = (isRishikesh && !LOCATION_LIVE.rishikesh) || (isVarkala && !LOCATION_LIVE.varkala);
+
+  if (!isReviewed || isLocationDisabled) {
     return {
       ...meta,
       alternates: {

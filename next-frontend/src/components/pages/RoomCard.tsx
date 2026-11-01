@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Users } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 
 // Room Card Component with Individual State and Ref
 export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: () => void }) {
@@ -159,12 +160,16 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                 {/* Pricing */}
                 <div className="flex items-end justify-between pt-4 border-t border-border mb-4">
                     <div>
-                        <p className="text-muted-foreground line-through text-sm">{room.originalPrice}</p>
+                        {SHOW_COMPARE_PRICE && (
+                            <p className="text-muted-foreground line-through text-sm">{room.originalPrice}</p>
+                        )}
                         <p className="font-heading text-3xl md:text-4xl font-bold text-primary">{room.price}</p>
                     </div>
-                    <span className="px-2.5 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md">
-                        {tCommon("save")} 20%
-                    </span>
+                    {SHOW_COMPARE_PRICE && (
+                        <span className="px-2.5 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md">
+                            {tCommon("save")} 20%
+                        </span>
+                    )}
                 </div>
 
                 {/* Book Now Button */}

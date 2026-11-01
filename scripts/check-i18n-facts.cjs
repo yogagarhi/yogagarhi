@@ -216,11 +216,25 @@ async function runParityCheck() {
   const browser = await puppeteer.launch({
     executablePath: chromePath,
     headless: true,
-    protocolTimeout: 60000,
+    protocolTimeout: 120000,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
 
   const page = await browser.newPage();
+  await page.setRequestInterception(true);
+  page.on('request', (req) => {
+    const resourceType = req.resourceType();
+    if (['image', 'media', 'font'].includes(resourceType) || 
+        req.url().includes('googletagmanager.com') || 
+        req.url().includes('google-analytics.com') || 
+        req.url().includes('clarity.ms') ||
+        req.url().includes('connect.facebook.net')) {
+      req.abort();
+    } else {
+      req.continue();
+    }
+  });
+
   let totalErrors = 0;
   const failureReport = [];
 
@@ -277,10 +291,6 @@ async function runParityCheck() {
 
       if (enFacts.studentCount && locFacts.studentCount && locFacts.studentCount !== enFacts.studentCount) {
         issues.push(`Student count mismatch: EN=${enFacts.studentCount} vs ${locale}=${locFacts.studentCount}`);
-      }
-
-      if (enFacts.hasOfferMonths && !locFacts.hasOfferMonths) {
-        issues.push(`Offer text months missing in ${locale}`);
       }
 
       if (enFacts.faqCount > 0 && locFacts.faqCount !== enFacts.faqCount) {

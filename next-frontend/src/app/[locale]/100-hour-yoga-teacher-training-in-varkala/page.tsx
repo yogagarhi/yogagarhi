@@ -235,6 +235,41 @@ export default async function Page({
     /* =========================
        FAQ SCHEMA (16 Comprehensive Questions)
     ========================= */
+    
+    const eventSchemas = upcomingBatches.map((batch: any) => ({
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": `100 Hour Yoga Teacher Training Varkala - ${batch.date}`,
+        "startDate": batch.startDate,
+        "endDate": batch.endDate,
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+            "@type": "Place",
+            "name": "YogaGarhi Varkala Campus",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "North Cliff",
+                "addressLocality": "Varkala",
+                "addressRegion": "Kerala",
+                "postalCode": "695141",
+                "addressCountry": "IN"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "YogaGarhi",
+            "url": "https://www.yogagarhi.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "599",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": pageUrl
+        }
+    }));
+        
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -300,6 +335,15 @@ export default async function Page({
 
     return (
         <>
+            
+            {/* Event Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(eventSchemas),
+                }}
+            />
+        
             {/* Course Schema */}
             <script
                 type="application/ld+json"

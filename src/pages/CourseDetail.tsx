@@ -133,7 +133,7 @@ const courseData = {
           "Kirtan Meditation",
           "Yin Yoga & Partner Yoga",
           "Acro Yoga",
-          "Iyengar & Ayurvedic class"
+          "Ayurvedic lifestyle class"
         ]
       }
     ],
@@ -161,7 +161,7 @@ const courseData = {
       "12 nights accommodation",
       "3 vegetarian/vegan meals daily",
       "All course materials & manuals",
-      "Yoga Alliance Certificate (RYT-100)",
+      "YogaGarhi 100-Hour Yoga Foundation Certificate",
       "Airport pickup & drop",
       "Outdoor excursions & activities",
       "1 Balinese massage",
@@ -419,7 +419,7 @@ const courseData = {
         title: "Specialty Workshops",
         items: [
           "Aerial yoga introduction",
-          "Sound healing certification",
+          "Sound healing workshop",
           "Ayurveda & yoga integration",
           "Chakra balancing workshops",
           "Partner & Thai yoga massage"

@@ -9,6 +9,9 @@ const courseKeyToNamespace: Record<string, string> = {
   "100-hour-rishikesh": "course100Rishikesh",
   "200-hour-rishikesh": "course200Rishikesh",
   "300-hour-rishikesh": "course300Rishikesh",
+  "100-hour-varkala": "course100Varkala",
+  "200-hour-varkala": "course200Varkala",
+  "300-hour-varkala": "course300Varkala",
   "200-hour": "course200",
 };
 
@@ -51,6 +54,7 @@ export default function CourseSyllabusDetails({
         {curriculum.map((module: any, idx: number) => (
           <details
             key={idx}
+            open={idx === 0}
             className="group bg-card rounded-xl border border-border/70 hover:border-primary/40 open:border-primary/50 transition-all duration-300 overflow-hidden"
           >
             <summary className="flex items-center justify-between cursor-pointer p-4 md:p-5 text-foreground font-heading font-semibold text-base md:text-lg select-none list-none [&::-webkit-details-marker]:hidden">
