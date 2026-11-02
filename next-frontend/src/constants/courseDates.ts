@@ -75,32 +75,32 @@ export const BATCHES_300_HOUR: CourseBatch[] = [
 
 // 100 Hour Yoga Teacher Training Batches (12 Days) - Rishikesh (First Batch: March 2027)
 export const BATCHES_100_HOUR_RISHIKESH: CourseBatch[] = [
-  { startDate: "", endDate: "", date: "March 2027 — Coming Soon", spotsLeft: null, spotsText: "Coming Soon", earlyBirdSaving: "" },
+  { startDate: "2027-03-01", endDate: "2027-03-12", date: "1 Mar - 12 Mar 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$150" },
 ];
 
 // 200 Hour Yoga Teacher Training Batches (24 Days) - Rishikesh (First Batch: March 2027)
 export const BATCHES_200_HOUR_RISHIKESH: CourseBatch[] = [
-  { startDate: "", endDate: "", date: "March 2027 — Coming Soon", spotsLeft: null, spotsText: "Coming Soon", earlyBirdSaving: "" },
+  { startDate: "2027-03-01", endDate: "2027-03-24", date: "1 Mar - 24 Mar 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
 ];
 
 // 300 Hour Yoga Teacher Training Batches (28 Days) - Rishikesh (First Batch: March 2027)
 export const BATCHES_300_HOUR_RISHIKESH: CourseBatch[] = [
-  { startDate: "", endDate: "", date: "March 2027 — Coming Soon", spotsLeft: null, spotsText: "Coming Soon", earlyBirdSaving: "" },
+  { startDate: "2027-03-01", endDate: "2027-03-28", date: "1 Mar - 28 Mar 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
 ];
 
 // 100 Hour Yoga Teacher Training Batches (12 Days) - Varkala (First Batch: July 2027)
 export const BATCHES_100_HOUR_VARKALA: CourseBatch[] = [
-  { startDate: "", endDate: "", date: "July 2027 — Coming Soon", spotsLeft: null, spotsText: "Coming Soon", earlyBirdSaving: "" },
+  { startDate: "2027-07-01", endDate: "2027-07-12", date: "1 Jul - 12 Jul 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$150" },
 ];
 
 // 200 Hour Yoga Teacher Training Batches (24 Days) - Varkala (First Batch: July 2027)
 export const BATCHES_200_HOUR_VARKALA: CourseBatch[] = [
-  { startDate: "", endDate: "", date: "July 2027 — Coming Soon", spotsLeft: null, spotsText: "Coming Soon", earlyBirdSaving: "" },
+  { startDate: "2027-07-01", endDate: "2027-07-24", date: "1 Jul - 24 Jul 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
 ];
 
 // 300 Hour Yoga Teacher Training Batches (28 Days) - Varkala (First Batch: July 2027)
 export const BATCHES_300_HOUR_VARKALA: CourseBatch[] = [
-  { startDate: "", endDate: "", date: "July 2027 — Coming Soon", spotsLeft: null, spotsText: "Coming Soon", earlyBirdSaving: "" },
+  { startDate: "2027-07-01", endDate: "2027-07-28", date: "1 Jul - 28 Jul 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
 ];
 
 /**

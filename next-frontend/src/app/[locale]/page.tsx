@@ -19,9 +19,9 @@ export async function generateMetadata({
   }
 
   if (locale === "en") {
-    const title = "Yoga Teacher Training in Bali (Ubud) – 100, 200, 300 Hr | YogaGarhi";
+    const title = "Yoga Teacher Training in Bali, Rishikesh & Varkala | YogaGarhi";
     const description =
-      "Yoga Alliance RYS 200 & RYS 300 school near Ubud, Bali. Small groups of 8–10, multi-style yoga, 1-year mentorship. 5★ on Google. Rishikesh & Varkala from 2027.";
+      "Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Bali, Rishikesh & Varkala. Authentic Himalayan lineage, small batches 8–10, 1-year mentorship.";
     return {
       metadataBase: new URL("https://www.yogagarhi.com"),
       title: {
@@ -57,10 +57,10 @@ export async function generateMetadata({
     };
   }
 
-  const title = messages.home?.metaTitle || "Yoga Teacher Training Bali – 100, 200, 300 Hr | YogaGarhi";
+  const title = messages.home?.metaTitle || "Yoga Teacher Training in Bali, Rishikesh & Varkala | YogaGarhi";
   const description =
     messages.home?.metaDesc ||
-    "Yoga Alliance RYS 200 & RYS 300 school near Ubud, Bali. Small groups of 8–10, multi-style yoga, 1-year mentorship. 5★ on Google. Rishikesh & Varkala from 2027.";
+    "Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Bali, Rishikesh & Varkala. Authentic Himalayan lineage, small batches 8–10, 1-year mentorship.";
 
   return applyQualityGate({
     metadataBase: new URL("https://www.yogagarhi.com"),

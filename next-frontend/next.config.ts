@@ -90,6 +90,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/courses',
+        destination: '/200-hour-yoga-teacher-training-in-bali',
+        permanent: true,
+      },
+      {
+        source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/courses',
+        destination: '/:locale/200-hour-yoga-teacher-training-in-bali',
+        permanent: true,
+      },
+      {
         source: '/courses/100-hour',
         destination: '/100-hour-yoga-teacher-training-in-bali',
         permanent: true,
