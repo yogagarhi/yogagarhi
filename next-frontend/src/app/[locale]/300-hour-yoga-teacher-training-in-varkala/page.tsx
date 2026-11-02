@@ -171,6 +171,24 @@ export default async function Page({
     /* =========================
        COURSE SCHEMA
     ========================= */
+    const courseInstances = filterUpcomingBatches(BATCHES_300_HOUR_VARKALA).filter(b => !!b.startDate).map((batch) => ({
+        "@type": "CourseInstance",
+        "courseMode": "onsite",
+        "startDate": batch.startDate,
+        "endDate": batch.endDate,
+        "duration": "P28D",
+        "location": {
+            "@type": "Place",
+            "name": "YogaGarhi Ashram",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Varkala",
+                "addressRegion": "Kerala",
+                "addressCountry": "India"
+            }
+        }
+    }));
+
     const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
@@ -192,42 +210,12 @@ export default async function Page({
             "audienceType": "Beginner to advanced yoga practitioners"
         },
         "coursePrerequisites": "Basic yoga practice recommended but not mandatory",
-        "hasCourseInstance": filterUpcomingBatches(BATCHES_300_HOUR_VARKALA).map((batch) => ({
-            "@type": "CourseInstance",
-            "courseMode": "onsite",
-            "startDate": batch.startDate,
-            "endDate": batch.endDate,
-            "duration": "P28D",
-            "location": {
-                "@type": "Place",
-                "name": "YogaGarhi Ashram",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Varkala Cliff, Papanasam Beach",
-                    "addressLocality": "Varkala",
-                    "addressRegion": "Kerala",
-                    "postalCode": "695141",
-                    "addressCountry": "India"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 8.7333,
-                    "longitude": 76.7167
-                }
-            }
-        })),
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "195",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
+        ...(courseInstances.length > 0 ? { "hasCourseInstance": courseInstances } : {}),
         "offers": {
             "@type": "Offer",
             "price": course.price.replace("$", "").replace(",", ""),
             "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
+            "availability": "https://schema.org/PreOrder",
             "url": pageUrl
         }
     };
@@ -236,40 +224,6 @@ export default async function Page({
        FAQ SCHEMA (16 Comprehensive Questions)
     ========================= */
     
-    const eventSchemas = upcomingBatches.map((batch: any) => ({
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": `300 Hour Yoga Teacher Training Varkala - ${batch.date}`,
-        "startDate": batch.startDate,
-        "endDate": batch.endDate,
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "location": {
-            "@type": "Place",
-            "name": "YogaGarhi Varkala Campus",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "North Cliff",
-                "addressLocality": "Varkala",
-                "addressRegion": "Kerala",
-                "postalCode": "695141",
-                "addressCountry": "IN"
-            }
-        },
-        "organizer": {
-            "@type": "Organization",
-            "name": "YogaGarhi",
-            "url": "https://www.yogagarhi.com"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "1299",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": pageUrl
-        }
-    }));
-        
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -336,14 +290,6 @@ export default async function Page({
     return (
         <>
             
-            {/* Event Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(eventSchemas),
-                }}
-            />
-        
             {/* Course Schema */}
             <script
                 type="application/ld+json"

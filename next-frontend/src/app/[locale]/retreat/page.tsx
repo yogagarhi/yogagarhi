@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (locale === "en") {
     return {
+      metadataBase: new URL("https://www.yogagarhi.com"),
       title: {
         absolute: "Yoga Retreats in Bali, Rishikesh & Varkala | YogaGarhi",
       },

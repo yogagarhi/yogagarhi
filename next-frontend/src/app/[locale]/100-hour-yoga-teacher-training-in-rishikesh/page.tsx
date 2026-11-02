@@ -183,6 +183,24 @@ export default async function Page({
     /* =========================
        COURSE SCHEMA
     ========================= */
+    const courseInstances = filterUpcomingBatches(BATCHES_100_HOUR_RISHIKESH).filter(b => !!b.startDate).map((batch) => ({
+        "@type": "CourseInstance",
+        "courseMode": "onsite",
+        "startDate": batch.startDate,
+        "endDate": batch.endDate,
+        "duration": "P12D",
+        "location": {
+            "@type": "Place",
+            "name": "YogaGarhi Ashram",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Rishikesh",
+                "addressRegion": "Uttarakhand",
+                "addressCountry": "India"
+            }
+        }
+    }));
+
     const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
@@ -205,42 +223,12 @@ export default async function Page({
             "audienceType": "Beginner yoga practitioners"
         },
         "coursePrerequisites": "No prior teaching experience required",
-        "hasCourseInstance": filterUpcomingBatches(BATCHES_100_HOUR_RISHIKESH).map((batch) => ({
-            "@type": "CourseInstance",
-            "courseMode": "onsite",
-            "startDate": batch.startDate,
-            "endDate": batch.endDate,
-            "duration": "P12D",
-            "location": {
-                "@type": "Place",
-                "name": "YogaGarhi Ashram",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Tapovan",
-                    "addressLocality": "Rishikesh",
-                    "addressRegion": "Uttarakhand",
-                    "postalCode": "249192",
-                    "addressCountry": "India"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 30.1312,
-                    "longitude": 78.3245
-                }
-            }
-        })),
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "184",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
+        ...(courseInstances.length > 0 ? { "hasCourseInstance": courseInstances } : {}),
         "offers": {
             "@type": "Offer",
             "price": course.price.replace("$", ""),
             "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
+            "availability": "https://schema.org/PreOrder",
             "url": pageUrl
         }
     };
@@ -249,40 +237,6 @@ export default async function Page({
        FAQ SCHEMA (13 Comprehensive Questions)
     ========================= */
     
-    const eventSchemas = upcomingBatches.map((batch: any) => ({
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": `100 Hour Yoga Teacher Training Rishikesh - ${batch.date}`,
-        "startDate": batch.startDate,
-        "endDate": batch.endDate,
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "location": {
-            "@type": "Place",
-            "name": "YogaGarhi Rishikesh Campus",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Tapovan",
-                "addressLocality": "Rishikesh",
-                "addressRegion": "Uttarakhand",
-                "postalCode": "249192",
-                "addressCountry": "IN"
-            }
-        },
-        "organizer": {
-            "@type": "Organization",
-            "name": "YogaGarhi",
-            "url": "https://www.yogagarhi.com"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "599",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": pageUrl
-        }
-    }));
-        
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -321,14 +275,6 @@ export default async function Page({
     return (
         <>
             
-            {/* Event Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(eventSchemas),
-                }}
-            />
-        
             {/* Course Schema */}
             <script
                 type="application/ld+json"

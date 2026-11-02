@@ -52,7 +52,7 @@ export default function TrustBadgesRow({ locale }: TrustBadgesRowProps = {}) {
             </div>
           </div>
 
-          {/* Badge 3: 4.9 Star Rating */}
+          {/* Badge 3: 5.0 Star Rating */}
           <div className="flex items-center gap-3 p-3 rounded-xl bg-background/80 border border-border/60 shadow-sm backdrop-blur-sm">
             <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center shrink-0">
               <Star className="w-5 h-5 text-yellow-600 dark:text-yellow-400 fill-current" />

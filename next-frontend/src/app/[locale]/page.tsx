@@ -57,7 +57,7 @@ export async function generateMetadata({
     };
   }
 
-  const title = messages.home?.metaTitle || "Yoga Teacher Training in Bali (Ubud) – 100, 200, 300 Hr | YogaGarhi";
+  const title = messages.home?.metaTitle || "Yoga Teacher Training Bali – 100, 200, 300 Hr | YogaGarhi";
   const description =
     messages.home?.metaDesc ||
     "Yoga Alliance RYS 200 & RYS 300 school near Ubud, Bali. Small groups of 8–10, multi-style yoga, 1-year mentorship. 5★ on Google. Rishikesh & Varkala from 2027.";

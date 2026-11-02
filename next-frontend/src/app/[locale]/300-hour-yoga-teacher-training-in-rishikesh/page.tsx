@@ -177,6 +177,24 @@ export default async function Page({
         ? "https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-rishikesh"
         : `https://www.yogagarhi.com/${locale}/300-hour-yoga-teacher-training-in-rishikesh`;
 
+    const courseInstances = filterUpcomingBatches(BATCHES_300_HOUR_RISHIKESH).filter(b => !!b.startDate).map((batch) => ({
+        "@type": "CourseInstance",
+        "courseMode": "onsite",
+        "startDate": batch.startDate,
+        "endDate": batch.endDate,
+        "duration": "P28D",
+        "location": {
+            "@type": "Place",
+            "name": "YogaGarhi Ashram",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Rishikesh",
+                "addressRegion": "Uttarakhand",
+                "addressCountry": "India"
+            }
+        }
+    }));
+
     const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
@@ -197,42 +215,12 @@ export default async function Page({
             "audienceType": "Certified 200-Hour Yoga Teachers"
         },
         "coursePrerequisites": "200-Hour Yoga Teacher Training (RYT 200) certification required",
-        "hasCourseInstance": filterUpcomingBatches(BATCHES_300_HOUR_RISHIKESH).map((batch) => ({
-            "@type": "CourseInstance",
-            "courseMode": "onsite",
-            "startDate": batch.startDate,
-            "endDate": batch.endDate,
-            "duration": "P28D",
-            "location": {
-                "@type": "Place",
-                "name": "YogaGarhi Ashram",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Tapovan",
-                    "addressLocality": "Rishikesh",
-                    "addressRegion": "Uttarakhand",
-                    "postalCode": "249192",
-                    "addressCountry": "India"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 30.1312,
-                    "longitude": 78.3245
-                }
-            }
-        })),
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "195",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
+        ...(courseInstances.length > 0 ? { "hasCourseInstance": courseInstances } : {}),
         "offers": {
             "@type": "Offer",
             "price": course.price.replace("$", ""),
             "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
+            "availability": "https://schema.org/PreOrder",
             "url": pageUrl
         },
         "educationalCredentialAwarded": "RYT-500 Yoga Alliance Certification"
@@ -242,40 +230,6 @@ export default async function Page({
        FAQ SCHEMA (16 Comprehensive Questions)
     ========================= */
     
-    const eventSchemas = upcomingBatches.map((batch: any) => ({
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": `300 Hour Yoga Teacher Training Rishikesh - ${batch.date}`,
-        "startDate": batch.startDate,
-        "endDate": batch.endDate,
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "location": {
-            "@type": "Place",
-            "name": "YogaGarhi Rishikesh Campus",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Tapovan",
-                "addressLocality": "Rishikesh",
-                "addressRegion": "Uttarakhand",
-                "postalCode": "249192",
-                "addressCountry": "IN"
-            }
-        },
-        "organizer": {
-            "@type": "Organization",
-            "name": "YogaGarhi",
-            "url": "https://www.yogagarhi.com"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "1299",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": pageUrl
-        }
-    }));
-        
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -311,14 +265,6 @@ export default async function Page({
     return (
         <>
             
-            {/* Event Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(eventSchemas),
-                }}
-            />
-        
             {/* Course Schema */}
             <script
                 type="application/ld+json"

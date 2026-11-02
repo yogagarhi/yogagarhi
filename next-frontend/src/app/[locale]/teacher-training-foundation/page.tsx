@@ -38,6 +38,7 @@ export async function generateMetadata({
         : `https://www.yogagarhi.com/${locale}/teacher-training-foundation`;
 
     const metadata: Metadata = {
+        metadataBase: new URL("https://www.yogagarhi.com"),
         title: {
             absolute: title,
         },

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import YogaAnatomyMasterclass from "@/components/pages/YogaAnatomyMasterclass";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.yogagarhi.com"),
   title: {
     absolute: "Yoga Anatomy & Biomechanics Masterclass | YogaGarhi",
   },

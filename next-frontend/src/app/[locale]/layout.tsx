@@ -226,7 +226,7 @@ export default async function LocaleLayout({
                   },
                   "aggregateRating": {
                     "@type": "AggregateRating",
-                    "ratingValue": "4.9",
+                    "ratingValue": "5.0",
                     "reviewCount": "195",
                     "bestRating": "5",
                     "worstRating": "1"

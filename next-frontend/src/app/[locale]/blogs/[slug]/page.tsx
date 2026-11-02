@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const finalTitle = meta.title.includes("YogaGarhi") ? meta.title : `${meta.title} | YogaGarhi`;
 
     return {
+        metadataBase: new URL("https://www.yogagarhi.com"),
         title: {
             absolute: finalTitle,
         },

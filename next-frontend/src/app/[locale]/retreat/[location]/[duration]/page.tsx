@@ -43,6 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : `https://www.yogagarhi.com/${locale}/retreat/${retreat.locationKey}/${retreat.slug}`;
 
   const baseMeta: Metadata = {
+    metadataBase: new URL("https://www.yogagarhi.com"),
     title: {
       absolute: retreat.seoTitle,
     },

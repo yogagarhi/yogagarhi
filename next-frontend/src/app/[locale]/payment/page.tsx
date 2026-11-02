@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ShieldCheck, CreditCard, RefreshCw, Lock, Sparkles, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.yogagarhi.com"),
   title: {
     absolute: "Payment & Booking Information | YogaGarhi",
   },

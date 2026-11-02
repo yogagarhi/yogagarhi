@@ -1099,7 +1099,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "8–10 Students Max"
     },
     {
-      "tag": "4.9★ Rated",
+      "tag": "5.0★ Rated",
       "title": "500+ Global Grads"
     },
     {
@@ -1117,7 +1117,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "Max. 8–10 Studenten"
     },
     {
-      "tag": "4.9★ Beoordeling",
+      "tag": "5.0★ Beoordeling",
       "title": "500+ Wereldwijde Alumni"
     },
     {
@@ -1135,7 +1135,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "Max. 8–10 Schüler"
     },
     {
-      "tag": "4.9★ Bewertung",
+      "tag": "5.0★ Bewertung",
       "title": "500+ Absolventen weltweit"
     },
     {
@@ -1153,7 +1153,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "Max. 8 à 10 Élèves"
     },
     {
-      "tag": "Noté 4.9★",
+      "tag": "Noté 5.0★",
       "title": "500+ Diplômés Internationaux"
     },
     {
@@ -1171,7 +1171,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "Máx. 8–10 Alumnos"
     },
     {
-      "tag": "Calificación 4.9★",
+      "tag": "Calificación 5.0★",
       "title": "500+ Graduados Globales"
     },
     {
@@ -1189,7 +1189,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "Max. 8–10 Studenti"
     },
     {
-      "tag": "Valutato 4.9★",
+      "tag": "Valutato 5.0★",
       "title": "500+ Diplomati nel Mondo"
     },
     {
@@ -1207,7 +1207,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "Макс. 8–10 Студентов"
     },
     {
-      "tag": "Оценка 4.9★",
+      "tag": "Оценка 5.0★",
       "title": "500+ Выпускников по всему миру"
     },
     {
@@ -1225,7 +1225,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "Maks. 8–10 Siswa"
     },
     {
-      "tag": "Rating 4.9★",
+      "tag": "Rating 5.0★",
       "title": "500+ Lulusan Global"
     },
     {
@@ -1243,7 +1243,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "最大8〜10名限定"
     },
     {
-      "tag": "4.9★ 高評価",
+      "tag": "5.0★ 高評価",
       "title": "500名以上の世界中の卒業生"
     },
     {
@@ -1261,7 +1261,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "최대 8~10명 정원"
     },
     {
-      "tag": "4.9★ 평점",
+      "tag": "5.0★ 평점",
       "title": "500명 이상의 글로벌 졸업생"
     },
     {
@@ -1279,7 +1279,7 @@ export const TRUST_BADGES_VARKALA: Record<string, TrustBadge[]> = {
       "title": "最多8-10名学员"
     },
     {
-      "tag": "4.9★ 高分好评",
+      "tag": "5.0★ 高分好评",
       "title": "500多位全球毕业生"
     },
     {

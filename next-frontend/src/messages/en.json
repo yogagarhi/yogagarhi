@@ -131,7 +131,12 @@
       "heading": "Follow Our Journey",
       "sub": "Daily moments of transformation, wisdom, and community from Bali",
       "followUs": "Follow us"
-    }
+    },
+    "location": "Location",
+    "getPreYttcDetail": "Get Pre-YTTC Detail",
+    "getPreYttcDetails": "Get Pre-YTTC Details",
+    "preYttcDialogDesc": "Learn about our world-first Pre-YTTC preparation program",
+    "sending": "Sending..."
   },
   "footer": {
     "tagline": "Transform Within",
@@ -426,7 +431,29 @@
       "meetTeacher": "Meet The Teacher Behind YogaGarhi",
       "trainedCount": "2500+ Students Trained",
       "experienceYears": "18+ Years Practice",
-      "armyTherapy": "Taught Yoga Therapy to Indian Army"
+      "armyTherapy": "Taught Yoga Therapy to Indian Army",
+      "founderLeadBadge": "Founder & Lead Teacher",
+      "knowMoreTeam": "Know more about team",
+      "discoverResearch": "Discover Sachinji's Research",
+      "imageAlt": "Founder of YogaGarhi",
+      "bio": {
+        "p1Part1": "A fearless child, a curious teen, and a heart that kept seeking. This journey gradually shaped a revolutionary man, ",
+        "p1Em": "not driven by rebellion, but by awareness",
+        "p1Part2": ". What began as exploration unfolded into a life devoted to practice, discipline, teaching, and service.",
+        "quote": "Yoga was not found in a single moment; it revealed itself slowly, through experience, inquiry, inner silence, and lived understanding.",
+        "p2Part1": "Through years of teaching in teacher training schools, a deeper realization emerged. While yoga was being taught with technical precision, ",
+        "p2Strong1": "its living essence was often missing",
+        "p2Part2": ". From this understanding, ",
+        "p2Strong2": "YogaGarhi",
+        "p2Part3": " was founded. ",
+        "p2Em1": "Yoga as union",
+        "p2Part4": " and ",
+        "p2Em2": "garhi as a fortress",
+        "p2Part5": ", created to preserve the true spirit of yoga.",
+        "p3Part1": "Here, ",
+        "p3Strong": "yoga is lived, not merely taught",
+        "p3Part2": "; rooted in nature, breath, awareness, and inner truth, guiding sincere seekers toward balance and authentic transformation."
+      }
     },
     "dosha": {
       "badge": "Ancient Wisdom, Personalized Practice",
@@ -524,7 +551,7 @@
       "tabCourses": "Courses & Accommodation",
       "happyStudents": "+497 happy students"
     },
-    "metaTitle": "Yoga Teacher Training in Bali (Ubud) – 100, 200, 300 Hr | YogaGarhi",
+    "metaTitle": "Yoga Teacher Training Bali – 100, 200, 300 Hr | YogaGarhi",
     "metaDesc": "Yoga Alliance RYS 200 & RYS 300 school near Ubud, Bali. Small groups of 8–10, multi-style yoga, 1-year mentorship. 5★ on Google. Rishikesh & Varkala from 2027."
   },
   "course200": {
@@ -5999,7 +6026,7 @@
     "metaTitle": "100 Hour Yoga Teacher Training in Varkala | YogaGarhi",
     "metaDesc": "Start your yoga journey with 100 hour yoga teacher training in Varkala, Kerala. 12-day beachside intensive, Yoga Alliance certified, small group. Apply today.",
     "heroTitle": "100 Hour Yoga Teacher Training in Varkala, India",
-    "heroSub": "An authentic 12-day yoga journey in Varkala, the Yoga Capital of the World. Learn from traditional Himalayan masters by the holy Arabian Sea from $599 USD.",
+    "heroSub": "An authentic 12-day beachside yoga immersion in Varkala Cliff, Kerala. Study traditional yoga, pranayama, and Ayurveda by the Arabian Sea from $599 USD.",
     "quickInfo": {
       "course": "Course",
       "courseVal": "100-Hour Varkala YTTC",
@@ -6027,13 +6054,13 @@
       "goodieBagSub": "Yoga Essentials"
     },
     "storyTitle": "Transform Your Practice into Living Wisdom",
-    "storyP1": "Our 100 Hour Yoga Teacher Training in Varkala is a residential, foundational immersion designed for practitioners seeking authentic depth rather than mechanical exercises. Located in peaceful Varkala Cliff, Varkala, overlooking the sacred Arabian Sea and Himalayan foothills, YogaGarhi offers a serene sanctuary away from crowded tourist centers.",
-    "storyP2": "Over 24 days, you will study Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment alongside applied anatomy, philosophy, pranayama, and meditation. With cohorts strictly capped at 8–10 students, our experienced Himalayan masters provide intimate, personalized mentorship for every participant.",
+    "storyP1": "Our 100 Hour Yoga Teacher Training in Varkala is a residential, foundational immersion designed for practitioners seeking authentic depth rather than mechanical exercises. Located in peaceful Varkala Cliff, Kerala, overlooking the sacred Arabian Sea, YogaGarhi offers a serene sanctuary away from crowded tourist centers.",
+    "storyP2": "Over 12 days, you will study Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment alongside applied anatomy, philosophy, pranayama, and meditation. With cohorts strictly capped at 8–10 students, our experienced masters provide intimate, personalized mentorship for every participant.",
     "watchVideoStories": "Watch Student Video Stories & Testimonials",
     "videoBannerTitle": "Book a Call. See the School. See Your Room. See Your Yoga Hall.",
     "whyYogaGarhiBox": {
       "badge": "Why Choose YogaGarhi",
-      "heading": "Authentic Himalayan Lineage in an Intimate Varkala Sanctuary",
+      "heading": "Authentic Traditional Lineage in a Peaceful Varkala Beach Sanctuary",
       "sub": "We focus on sincere practitioners rather than crowded factory classrooms. Here is what sets our 200-hour training apart:",
       "p1Title": "8–10 Students Max Per Batch",
       "p1Highlight": "Personalized Focus",
@@ -6127,7 +6154,7 @@
       "incCert": "Yoga Alliance RYT 200 Certificate upon graduation",
       "incManuals": "Official course manuals, notebooks, and study materials",
       "incKit": "Yoga mat and practice props provided",
-      "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
+      "incExcursions": "Sacred coastal excursions (Papanasam Beach sunset meditation, Janardhana Swamy temple visit)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
       "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "Complimentary online Pre-TTC preparation module",
@@ -6189,12 +6216,12 @@
         "answer": "The 100-Hour course runs over 12 days and 11 nights, starting on the 1st of every month. The program provides an intensive, transformative experience covering traditional Hatha, Ashtanga, pranayama, meditation, philosophy, and basic anatomy."
       },
       {
-        "question": "Is Varkala safe for solo travelers?",
-        "answer": "Varkala is one of the safest pilgrimage towns in northern India. Our ashram is situated in the peaceful, elevated sanctuary of Varkala Cliff, offering 24/7 security, dedicated student care, and a safe, nurturing environment for solo travelers from across the globe."
+        "question": "Is Varkala good for yoga teacher training?",
+        "answer": "Varkala is renowned worldwide as a premier spiritual sanctuary in Kerala, famous for its majestic red cliffs, serene Arabian Sea beaches, and centuries of Ayurvedic healing tradition. Studying yoga here offers a peaceful, healing coastal atmosphere, free from noise and distractions, with the cleansing energy of holy Papanasam Beach."
       },
       {
-        "question": "How do I reach the ashram from Delhi?",
-        "answer": "You can take a 45-minute direct flight from Delhi (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Haridwar (4.5 hours). Private taxi pickups directly from Delhi Airport to our ashram gate can also be arranged."
+        "question": "How do I reach the ashram in Varkala?",
+        "answer": "Fly into Trivandrum International Airport (TRV), located just 45 km (approx. 1 hour drive) from our Varkala Cliff ashram. Alternatively, arrive by train at Varkala Sivagiri Railway Station (VAK), just 3 km (10 minutes) away. Complimentary airport pickup assistance can be coordinated upon request."
       },
       {
         "question": "Can I pay in installments?",
@@ -6214,7 +6241,7 @@
       },
       {
         "question": "What is the batch size for the 100-Hour course?",
-        "answer": "We maintain an intimate batch size of 8–10 students to guarantee personalized attention, postural adjustments, and meaningful direct engagement with our experienced Himalayan masters."
+        "answer": "We maintain an intimate batch size of 8–10 students to guarantee personalized attention, postural adjustments, and meaningful direct engagement with our experienced master teachers."
       },
       {
         "question": "Do you provide airport pickup?",
@@ -6224,7 +6251,7 @@
     "hero": {
       "badge": "Yoga Alliance Certified RYT 200",
       "h1": "100 Hour Yoga Teacher Training in Varkala, India",
-      "sub": "An authentic 12-day yoga journey in Varkala, the Yoga Capital of the World. Learn from traditional Himalayan masters by the holy Arabian Sea.",
+      "sub": "An authentic 12-day beachside yoga immersion in Varkala Cliff, Kerala. Study traditional yoga, pranayama, and Ayurveda by the Arabian Sea.",
       "quickDuration": "12 Days",
       "quickLevel": "Beginner to Intermediate",
       "quickCert": "Yoga Alliance Certificate of Completion",
@@ -6237,9 +6264,9 @@
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Varkala",
-      "story": "Our 100 Hour Yoga Teacher Training in Varkala is a 12-day residential foundational course for students who want to build a rock-solid yogic foundation. Located in Varkala Cliff, Varkala, at the foothills of the Himalayas by the sacred Arabian Sea, YogaGarhi immerses you in authentic Classical Hatha, Ashtanga, pranayama, and philosophy.",
-      "p1": "Nestled in the spiritual foothills of the Himalayas along the banks of the sacred river Arabian Sea, our 100-Hour Yoga Teacher Training in Varkala offers an immersive introduction to traditional yogic living.",
-      "p2": "Under the guidance of experienced Indian masters, you study authentic Hatha and Ashtanga yoga, pranayama, meditation, philosophy, and anatomy in an ashram setting with daily Arabian Sea Aarti."
+      "story": "Our 100 Hour Yoga Teacher Training in Varkala is a 12-day residential foundational course for students who want to build a rock-solid yogic foundation. Located in Varkala Cliff, Kerala, by the sacred Arabian Sea, YogaGarhi immerses you in authentic Classical Hatha, Ashtanga, pranayama, and Ayurveda.",
+      "p1": "Nestled along the cliffs of Varkala overlooking the Arabian Sea, our 100-Hour Yoga Teacher Training in Kerala offers an immersive introduction to traditional yogic living and Ayurvedic wellness.",
+      "p2": "Under the guidance of experienced Indian masters, you study authentic Hatha and Ashtanga yoga, pranayama, meditation, philosophy, and anatomy in an ashram setting overlooking the ocean."
     },
     "curriculum": {
       "badge": "Curriculum Modules",
@@ -6425,7 +6452,7 @@
       "feat1": "10 beautiful waterfalls within 10 km",
       "feat2": "Private forest with an in-house waterfall",
       "feat3": "Peaceful rice-field trekking on-site",
-      "feat4": "Overlooking the sacred Arabian Sea and Himalayan foothills",
+      "feat4": "Overlooking the tranquil Arabian Sea and pristine coastal cliffs",
       "glimpses": "Glimpses of Your Stay",
       "allRooms": "All Rooms Include",
       "wifi": "Free Wi-Fi",
@@ -6440,8 +6467,8 @@
     },
     "excursionsSection": {
       "badge": "Beyond The Mat",
-      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
-      "sub": "Immerse yourself in Varkala's sacred spiritual heritage through transformative Himalayan excursions"
+      "heading": "Sacred Coastal Excursions & Cultural Immersion",
+      "sub": "Immerse yourself in Varkala's sacred spiritual heritage through transformative coastal excursions"
     },
     "prakritiResearch": {
       "heading": "Sachin Ji's Research on Personalized Yoga and Prakriti",
@@ -6498,14 +6525,14 @@
       "Herbal teas and purified drinking water",
       "Study material (manuals, notebooks, pens)",
       "Yoga mats and props provided",
-      "Sacred Arabian Sea Aarti & Himalayan excursions",
-      "Airport pickup assistance (Dehradun DED airport)",
+      "Papanasam Beach sunset meditation & Kerala cultural excursions",
+      "Airport pickup assistance (Trivandrum TRV airport)",
       "24/7 on-campus ashram support team",
       "Yoga Alliance accredited RYT certification",
       "Rejuvenating Ayurvedic Abhyanga massage",
-      "Arabian Sea Aarti ceremony at Parmarth Niketan",
-      "Kunjapuri Himalayan sunrise meditation trek",
-      "Vashistha Cave meditation excursion",
+      "Janardhana Swamy ancient temple & cliff sunset walk",
+      "Kerala backwaters day trip & canoe meditation",
+      "Kapilil Beach silent meditation & cliff walk",
       "Pre-TTC online preparation modules",
       "Arm balance & alignment workshops",
       "Ayurveda lifestyle & nutrition workshop",
@@ -6522,51 +6549,19 @@
     "whatYouWillReceiveList": [
       {
         "title": "Multi-Style Yoga Mastery",
-        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
-      },
-      {
-        "title": "Yoga Alliance RYT Certification",
-        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic traditional lineage."
       },
       {
         "title": "Peaceful Varkala Cliff Ashram Surroundings",
-        "description": "Practice in the serene Himalayan foothills overlooking the sacred Arabian Sea away from tourist crowds."
+        "description": "Practice along the pristine red cliffs overlooking the Arabian Sea, enveloped by gentle ocean breezes and tranquil nature."
       },
       {
-        "title": "Sacred Spiritual Excursions",
-        "description": "Explore holy Arabian Sea river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
-      },
-      {
-        "title": "Small Batch Sizes (8–10 Max)",
-        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
-      },
-      {
-        "title": "Supportive Ashram Community",
-        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
-      },
-      {
-        "title": "Ayurvedic Abhyanga Massage",
-        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
-      },
-      {
-        "title": "Arabian Sea Aarti & Vedic Chanting",
-        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Arabian Sea."
-      },
-      {
-        "title": "Sattvic Ayurvedic Cuisine",
-        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
-      },
-      {
-        "title": "Meditation & Yoga Nidra",
-        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
+        "title": "Sacred Coastal & Backwater Excursions",
+        "description": "Explore holy Papanasam beach, serene Kerala backwaters, and ancient cliffside temples."
       },
       {
         "title": "E-RYT 500 Master Instructors",
-        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
-      },
-      {
-        "title": "Living Yogic Philosophy",
-        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
+        "description": "Study under seasoned traditional masters with decades of dedicated teaching and yogic sadhana."
       }
     ],
     "workshopsList": [
@@ -6597,16 +6592,16 @@
     ],
     "excursionsList": [
       {
-        "title": "Parmarth Niketan & Triveni Ghat Arabian Sea Aarti",
-        "description": "Witness the sacred evening Arabian Sea Aarti on the holy banks of the Arabian Sea — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
+        "title": "Janardhana Swamy Temple & Papanasam Beach Sunset Aarti",
+        "description": "Visit the 2,000-year-old cliffside Janardhana Swamy Temple and experience a serene sunset meditation on the sacred waters of Papanasam Beach."
       },
       {
-        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
-        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
+        "title": "Kerala Backwaters & Golden Island (Ponnumthuruthu) Boat Tour",
+        "description": "Glide through the tranquil Kerala backwaters on a traditional boat to the ancient Shiva-Parvati island temple nestled in lush mangrove forests."
       },
       {
-        "title": "Vashistha Cave Meditation & White Sand Arabian Sea Beach",
-        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Arabian Sea, renowned for centuries of sadhana."
+        "title": "Varkala Cliff Coastal Walk & Ayurvedic Medicinal Herb Garden",
+        "description": "Explore the stunning red laterite cliffs of Varkala, coastal sea caves, and a traditional Ayurvedic healing garden guided by local wellness practitioners."
       }
     ],
     "foodMenuList": [
@@ -6614,30 +6609,30 @@
         "meal": "Breakfast",
         "time": "9:15 AM",
         "items": [
-          "Fresh seasonal Himalayan fruits & papaya",
+          "Fresh seasonal Kerala tropical fruits & papaya",
           "Nutritious Ayurvedic grain porridge & oats",
-          "Herbal digestive infusions & mountain chai",
-          "Sprouted moong & wholesome nuts"
+          "Herbal digestive infusions & spiced coastal chai",
+          "Sprouted moong & wholesome roasted nuts"
         ]
       },
       {
         "meal": "Lunch",
         "time": "12:00 PM",
         "items": [
-          "Organic Himalayan khichdi & wholesome lentils",
+          "Organic Kerala red rice & wholesome lentils (Dal)",
           "Freshly baked whole wheat rotis & basmati rice",
-          "Tridosha-balancing seasonal vegetable sabzi",
-          "Crisp organic garden salads"
+          "Tridosha-balancing seasonal vegetable Thoran & Avial",
+          "Crisp organic garden salads & cooling buttermilk"
         ]
       },
       {
         "meal": "Dinner",
-        "time": "7:30 PM",
+        "time": "7:00 PM",
         "items": [
-          "Light nourishing Ayurvedic vegetable soups",
-          "Steamed seasonal mountain greens & lentils",
-          "Digestive herbal broths & wholesome grains",
-          "Golden turmeric almond milk"
+          "Light digestible Ayurvedic kitchari & wholesome soup",
+          "Steamed seasonal coastal greens & spiced vegetables",
+          "Warm golden turmeric milk with Ayurvedic herbs",
+          "Herbal digestion-enhancing decoctions & chamomile"
         ]
       }
     ],
@@ -6710,7 +6705,7 @@
     "metaTitle": "200 Hour Yoga Teacher Training in Varkala | YogaGarhi",
     "metaDesc": "Yoga Alliance certified 200 hour yoga teacher training in Varkala, Kerala. Beachside ashram, small batches 8-10, Ayurveda integration, E-RYT 500 teachers. Enroll from $999.",
     "heroTitle": "200 Hour Yoga Teacher Training in Varkala, India",
-    "heroSub": "28-day residential Yoga Alliance certified RYT 200 in the Yoga Capital of the World. Himalayan lineage, Arabian Sea ashram from $999 USD.",
+    "heroSub": "A transformative 24-day beachside immersion in Varkala Cliff, Kerala. Traditional yoga practices, Ayurveda integration, sunset meditation by the Arabian Sea, and Yoga Alliance RYT 200 certification from $999 USD.",
     "quickInfo": {
       "course": "Course",
       "courseVal": "200-Hour Varkala YTTC",
@@ -6738,13 +6733,13 @@
       "goodieBagSub": "Yoga Essentials"
     },
     "storyTitle": "Transform Your Practice into Living Wisdom",
-    "storyP1": "Our 200 Hour Yoga Teacher Training in Varkala is a residential, full immersion designed for practitioners seeking authentic depth rather than mechanical exercises. Located in peaceful Varkala Cliff, Varkala, overlooking the sacred Arabian Sea and Himalayan foothills, YogaGarhi offers a serene sanctuary away from crowded tourist centers.",
-    "storyP2": "Over 28 days, you will study Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment alongside applied anatomy, philosophy, pranayama, and meditation. With cohorts strictly capped at 8–10 students, our experienced Himalayan masters provide intimate, personalized mentorship for every participant.",
+    "storyP1": "Our 200 Hour Yoga Teacher Training in Varkala is a residential, full immersion designed for practitioners seeking authentic depth rather than mechanical exercises. Located in peaceful Varkala Cliff, Kerala, overlooking the sacred Arabian Sea, YogaGarhi offers a serene sanctuary away from crowded tourist centers.",
+    "storyP2": "Over 24 days, you will study Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment alongside applied anatomy, philosophy, pranayama, and meditation. With cohorts strictly capped at 8–10 students, our experienced masters provide intimate, personalized mentorship for every participant.",
     "watchVideoStories": "Watch Student Video Stories & Testimonials",
     "videoBannerTitle": "Book a Call. See the School. See Your Room. See Your Yoga Hall.",
     "whyYogaGarhiBox": {
       "badge": "Why Choose YogaGarhi",
-      "heading": "Authentic Himalayan Lineage in an Intimate Varkala Sanctuary",
+      "heading": "Authentic Traditional Lineage in a Peaceful Varkala Beach Sanctuary",
       "sub": "We focus on sincere practitioners rather than crowded factory classrooms. Here is what sets our 200-hour training apart:",
       "p1Title": "8–10 Students Max Per Batch",
       "p1Highlight": "Personalized Focus",
@@ -6884,7 +6879,7 @@
       "incCert": "Yoga Alliance RYT 200 Certificate upon graduation",
       "incManuals": "Official course manuals, notebooks, and study materials",
       "incKit": "Yoga mat and practice props provided",
-      "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
+      "incExcursions": "Sacred coastal excursions (Papanasam Beach sunset meditation, Janardhana Swamy temple visit)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
       "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "Complimentary online Pre-TTC preparation module",
@@ -6931,7 +6926,7 @@
       },
       {
         "question": "Is Varkala good for yoga teacher training?",
-        "answer": "Varkala is internationally recognized as the Birthplace and World Capital of Yoga. Nestled in the Himalayan foothills along the sacred Arabian Sea river, Varkala has maintained an unbroken 5,000-year yogic lineage. Studying here immerses you in a high-vibrational spiritual atmosphere filled with historic ashrams, chanting masters, and evening Arabian Sea Aarti ceremonies that cannot be replicated anywhere else in the world."
+        "answer": "Varkala is renowned worldwide as a premier spiritual sanctuary in Kerala, famous for its majestic red cliffs, serene Arabian Sea beaches, and centuries of Ayurvedic healing tradition. Studying yoga here offers a peaceful, healing coastal atmosphere, free from noise and distractions, with the cleansing energy of holy Papanasam Beach."
       },
       {
         "question": "Do I need prior yoga experience to join the 200-Hour YTT?",
@@ -6942,8 +6937,8 @@
         "answer": "Yes, YogaGarhi is a registered Yoga Alliance school (RYS 200, RYS 300, RYS 500). Upon successful completion of our 200-Hour training in Varkala, you will receive an internationally accredited certificate that qualifies you to register as a Registered Yoga Teacher (RYT 200) and teach legally in any country worldwide."
       },
       {
-        "question": "How do I get to the YogaGarhi ashram from Delhi?",
-        "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
+        "question": "How do I reach the ashram in Varkala?",
+        "answer": "Fly into Trivandrum International Airport (TRV), located just 45 km (approx. 1 hour drive) from our Varkala Cliff ashram. Alternatively, arrive by train at Varkala Sivagiri Railway Station (VAK), just 3 km (10 minutes) away. Complimentary airport pickup assistance can be coordinated upon request."
       },
       {
         "question": "Can I pay my course fees in installments?",
@@ -6955,7 +6950,7 @@
       },
       {
         "question": "What is the best time of year to visit Varkala for yoga training?",
-        "answer": "The ideal season to undertake your yoga training in Varkala is between October and March, when daytime temperatures average 15°C to 25°C with crisp Himalayan air, bright sunshine, and cool evenings. April to June brings warm sunshine and vibrant river energy, while July to September features the sacred monsoon season with lush green mountains and peaceful introspective study."
+        "answer": "The ideal season to undertake your yoga training in Varkala is between October and March, when daytime temperatures hover pleasantly around 26–30°C with gentle sea breezes, low humidity, and clear coastal weather ideal for intensive outdoor sadhana."
       },
       {
         "question": "What is the difference between 100-Hour, 200-Hour, and 300-Hour YTT?",
@@ -6970,8 +6965,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Is Varkala good for yoga teacher training?",
+        "answer": "Varkala is renowned worldwide as a premier spiritual sanctuary in Kerala, famous for its majestic red cliffs, serene Arabian Sea beaches, and centuries of Ayurvedic healing tradition. Studying yoga here offers a peaceful, healing coastal atmosphere, free from noise and distractions, with the cleansing energy of holy Papanasam Beach."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -6993,7 +6988,7 @@
     "hero": {
       "badge": "Yoga Alliance Certified RYT 200",
       "h1": "200 Hour Yoga Teacher Training in Varkala, India",
-      "sub": "A transformative 24-day immersion in Varkala, India. Authentic Himalayan master teachers, daily Arabian Sea Aarti, and Yoga Alliance RYT 200 certification.",
+      "sub": "A transformative 24-day beachside immersion in Varkala Cliff, Kerala. Traditional yoga practices, Ayurveda integration, sunset meditation by the Arabian Sea, and Yoga Alliance RYT 200 certification.",
       "quickDuration": "24 Days",
       "quickLevel": "Beginner to Intermediate",
       "quickCert": "Yoga Alliance RYT 200 Certification",
@@ -7006,9 +7001,9 @@
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Varkala",
-      "story": "Our 200 Hour Yoga Teacher Training in Varkala is a comprehensive 24-day residential course for students who want to become confident yoga teachers or deeply understand yoga for their own life. YogaGarhi is located in Varkala Cliff, Varkala, right at the foothills of the Himalayas by the sacred Arabian Sea. During the training, you practice classical asanas every day, learn precision alignment, study traditional pranayama, meditation, Advaita & Patanjali philosophy, anatomy, and authentic teaching methodology.",
-      "p1": "Our 200-Hour Yoga Teacher Training in Varkala provides comprehensive, authentic training rooted in classical Indian yogic traditions. Live and study in the heart of the Yoga Capital of the World, beside the sacred Arabian Sea river.",
-      "p2": "Our Himalayan master teachers guide you through traditional Hatha and Ashtanga Vinyasa, alignment, adjustments, Patanjali yoga sutras, anatomy, and practical teaching methodology to graduate as a confident, certified teacher."
+      "story": "Our 200 Hour Yoga Teacher Training in Varkala is a 24-day residential comprehensive course for students who want to become certified teachers. Located in Varkala Cliff, Kerala, by the sacred Arabian Sea, YogaGarhi immerses you in authentic Classical Hatha, Ashtanga, pranayama, and Ayurveda.",
+      "p1": "Nestled along the cliffs of Varkala overlooking the Arabian Sea, our 200-Hour Yoga Teacher Training in Kerala offers an immersive journey into traditional yogic living and Ayurvedic wellness.",
+      "p2": "Our experienced master teachers guide you through traditional Hatha and Ashtanga Vinyasa, alignment, adjustments, Patanjali yoga sutras, anatomy, and practical teaching methodology to graduate as a confident, certified teacher."
     },
     "curriculum": {
       "badge": "Curriculum Modules",
@@ -7199,7 +7194,7 @@
       "feat1": "10 beautiful waterfalls within 10 km",
       "feat2": "Private forest with an in-house waterfall",
       "feat3": "Peaceful rice-field trekking on-site",
-      "feat4": "Overlooking the sacred Arabian Sea and Himalayan foothills",
+      "feat4": "Overlooking the tranquil Arabian Sea and pristine coastal cliffs",
       "glimpses": "Glimpses of Your Stay",
       "allRooms": "All Rooms Include",
       "wifi": "Free Wi-Fi",
@@ -7214,8 +7209,8 @@
     },
     "excursionsSection": {
       "badge": "Beyond The Mat",
-      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
-      "sub": "Immerse yourself in Varkala's sacred spiritual heritage through transformative Himalayan excursions"
+      "heading": "Sacred Coastal Excursions & Cultural Immersion",
+      "sub": "Immerse yourself in Varkala's sacred spiritual heritage through transformative coastal excursions"
     },
     "prakritiResearch": {
       "heading": "Sachin Ji's Research on Personalized Yoga and Prakriti",
@@ -7272,14 +7267,14 @@
       "Herbal teas and purified drinking water",
       "Study material (manuals, notebooks, pens)",
       "Yoga mats and props provided",
-      "Sacred Arabian Sea Aarti & Himalayan excursions",
-      "Airport pickup assistance (Dehradun DED airport)",
+      "Papanasam Beach sunset meditation & Kerala cultural excursions",
+      "Airport pickup assistance (Trivandrum TRV airport)",
       "24/7 on-campus ashram support team",
       "Yoga Alliance accredited RYT certification",
       "Rejuvenating Ayurvedic Abhyanga massage",
-      "Arabian Sea Aarti ceremony at Parmarth Niketan",
-      "Kunjapuri Himalayan sunrise meditation trek",
-      "Vashistha Cave meditation excursion",
+      "Janardhana Swamy ancient temple & cliff sunset walk",
+      "Kerala backwaters day trip & canoe meditation",
+      "Kapilil Beach silent meditation & cliff walk",
       "Pre-TTC online preparation modules",
       "Arm balance & alignment workshops",
       "Ayurveda lifestyle & nutrition workshop",
@@ -7296,51 +7291,19 @@
     "whatYouWillReceiveList": [
       {
         "title": "Multi-Style Yoga Mastery",
-        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
-      },
-      {
-        "title": "Yoga Alliance RYT Certification",
-        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic traditional lineage."
       },
       {
         "title": "Peaceful Varkala Cliff Ashram Surroundings",
-        "description": "Practice in the serene Himalayan foothills overlooking the sacred Arabian Sea away from tourist crowds."
+        "description": "Practice along the pristine red cliffs overlooking the Arabian Sea, enveloped by gentle ocean breezes and tranquil nature."
       },
       {
-        "title": "Sacred Spiritual Excursions",
-        "description": "Explore holy Arabian Sea river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
-      },
-      {
-        "title": "Small Batch Sizes (8–10 Max)",
-        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
-      },
-      {
-        "title": "Supportive Ashram Community",
-        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
-      },
-      {
-        "title": "Ayurvedic Abhyanga Massage",
-        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
-      },
-      {
-        "title": "Arabian Sea Aarti & Vedic Chanting",
-        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Arabian Sea."
-      },
-      {
-        "title": "Sattvic Ayurvedic Cuisine",
-        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
-      },
-      {
-        "title": "Meditation & Yoga Nidra",
-        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
+        "title": "Sacred Coastal & Backwater Excursions",
+        "description": "Explore holy Papanasam beach, serene Kerala backwaters, and ancient cliffside temples."
       },
       {
         "title": "E-RYT 500 Master Instructors",
-        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
-      },
-      {
-        "title": "Living Yogic Philosophy",
-        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
+        "description": "Study under seasoned traditional masters with decades of dedicated teaching and yogic sadhana."
       }
     ],
     "workshopsList": [
@@ -7371,16 +7334,16 @@
     ],
     "excursionsList": [
       {
-        "title": "Parmarth Niketan & Triveni Ghat Arabian Sea Aarti",
-        "description": "Witness the sacred evening Arabian Sea Aarti on the holy banks of the Arabian Sea — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
+        "title": "Janardhana Swamy Temple & Papanasam Beach Sunset Aarti",
+        "description": "Visit the 2,000-year-old cliffside Janardhana Swamy Temple and experience a serene sunset meditation on the sacred waters of Papanasam Beach."
       },
       {
-        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
-        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
+        "title": "Kerala Backwaters & Golden Island (Ponnumthuruthu) Boat Tour",
+        "description": "Glide through the tranquil Kerala backwaters on a traditional boat to the ancient Shiva-Parvati island temple nestled in lush mangrove forests."
       },
       {
-        "title": "Vashistha Cave Meditation & White Sand Arabian Sea Beach",
-        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Arabian Sea, renowned for centuries of sadhana."
+        "title": "Varkala Cliff Coastal Walk & Ayurvedic Medicinal Herb Garden",
+        "description": "Explore the stunning red laterite cliffs of Varkala, coastal sea caves, and a traditional Ayurvedic healing garden guided by local wellness practitioners."
       }
     ],
     "foodMenuList": [
@@ -7388,30 +7351,30 @@
         "meal": "Breakfast",
         "time": "9:15 AM",
         "items": [
-          "Fresh seasonal Himalayan fruits & papaya",
+          "Fresh seasonal Kerala tropical fruits & papaya",
           "Nutritious Ayurvedic grain porridge & oats",
-          "Herbal digestive infusions & mountain chai",
-          "Sprouted moong & wholesome nuts"
+          "Herbal digestive infusions & spiced coastal chai",
+          "Sprouted moong & wholesome roasted nuts"
         ]
       },
       {
         "meal": "Lunch",
         "time": "12:00 PM",
         "items": [
-          "Organic Himalayan khichdi & wholesome lentils",
+          "Organic Kerala red rice & wholesome lentils (Dal)",
           "Freshly baked whole wheat rotis & basmati rice",
-          "Tridosha-balancing seasonal vegetable sabzi",
-          "Crisp organic garden salads"
+          "Tridosha-balancing seasonal vegetable Thoran & Avial",
+          "Crisp organic garden salads & cooling buttermilk"
         ]
       },
       {
         "meal": "Dinner",
-        "time": "7:30 PM",
+        "time": "7:00 PM",
         "items": [
-          "Light nourishing Ayurvedic vegetable soups",
-          "Steamed seasonal mountain greens & lentils",
-          "Digestive herbal broths & wholesome grains",
-          "Golden turmeric almond milk"
+          "Light digestible Ayurvedic kitchari & wholesome soup",
+          "Steamed seasonal coastal greens & spiced vegetables",
+          "Warm golden turmeric milk with Ayurvedic herbs",
+          "Herbal digestion-enhancing decoctions & chamomile"
         ]
       }
     ],
@@ -7482,9 +7445,9 @@
   },
   "course300Varkala": {
     "metaTitle": "300 Hour Yoga Teacher Training in Varkala | YogaGarhi",
-    "metaDesc": "Advance your teaching with 300 hour yoga teacher training in Varkala, Kerala. Pathway to RYT 500, Ayurveda & beach yoga, E-RYT 500 faculty. Enroll now.",
+    "metaDesc": "Advance your teaching with Yoga Alliance certified 300 hour yoga teacher training in Varkala, Kerala. 28-day beachside intensive, small group 8-10, Ayurveda & advanced alignment.",
     "heroTitle": "300 Hour Yoga Teacher Training in Varkala, India",
-    "heroSub": "28-day residential Yoga Alliance certified 300-hour training in Varkala Cliff, Varkala. Pathway to RYT 500 with E-RYT 500 masters from $1,099 USD.",
+    "heroSub": "Advance your teaching with an intensive 28-day residential 300-hour training in Varkala Cliff, Kerala. Study advanced alignment, pranayama, and Ayurveda by the Arabian Sea from $1,499 USD.",
     "quickInfo": {
       "course": "Course",
       "courseVal": "300-Hour Advanced YTTC Varkala",
@@ -7511,14 +7474,14 @@
       "goodieBag": "Deluxe Teacher Goodie Bag",
       "goodieBagSub": "Props & Manuals Included"
     },
-    "storyTitle": "Elevate Your Teaching to Master Level in the Himalayan Capital of Yoga",
-    "storyP1": "Our 300 Hour Yoga Teacher Training in Varkala is a 28-day advanced residential immersion designed for 200-hour certified teachers who are ready to step into master-level teaching. Located in peaceful Varkala Cliff, Varkala, overlooking the sacred Arabian Sea and Himalayan foothills, YogaGarhi provides the ultimate environment for deep sadhana and professional elevation.",
-    "storyP2": "Over 28 days, you will delve deeply into advanced Ashtanga Vinyasa, complex alignment & hands-on adjustments, yoga therapy, subtle body pranayama, Kundalini awakening, and deep philosophical treatises including Patanjali's Yoga Sutras and the Bhagavad Gita. With cohorts strictly capped at 8–10 students, our E-RYT 500 Himalayan masters provide personalized feedback and apprenticeships.",
+    "storyTitle": "Elevate Your Teaching to Master Level in Coastal Kerala",
+    "storyP1": "Our 300 Hour Yoga Teacher Training in Varkala is a 28-day advanced residential immersion designed for 200-hour certified teachers who are ready to step into master-level teaching. Located in peaceful Varkala Cliff, Kerala, overlooking the sacred Arabian Sea, YogaGarhi provides the ultimate environment for deep sadhana and professional elevation.",
+    "storyP2": "Over 28 days, you will delve deeply into advanced Ashtanga Vinyasa, complex alignment & hands-on adjustments, yoga therapy, subtle body pranayama, Kundalini awakening, and deep philosophical treatises including Patanjali's Yoga Sutras and the Bhagavad Gita. With cohorts strictly capped at 8–10 students, our E-RYT 500 masters provide personalized feedback and apprenticeships.",
     "watchVideoStories": "Watch Student Video Stories & Testimonials",
     "videoBannerTitle": "Book a Call. See the School. See Your Room. See Your Yoga Hall.",
     "whyYogaGarhiBox": {
       "badge": "Why Choose YogaGarhi Varkala",
-      "heading": "Master-Level Training in an Intimate Himalayan Ashram",
+      "heading": "Master-Level Training in an Intimate Coastal Sanctuary",
       "sub": "We prioritize serious practitioners over crowded commercial schools. Here is what sets our 300-hour training apart:",
       "p1Title": "8–10 Students Max Per Batch",
       "p1Highlight": "Master-Level Mentorship",
@@ -7612,7 +7575,7 @@
       "incCert": "Yoga Alliance RYT 200 Certificate upon graduation",
       "incManuals": "Official course manuals, notebooks, and study materials",
       "incKit": "Yoga mat and practice props provided",
-      "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
+      "incExcursions": "Sacred coastal excursions (Papanasam Beach sunset meditation, Janardhana Swamy temple visit)",
       "incCeremonies": "Traditional opening and closing fire ceremonies (Agni Hotra)",
       "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
       "incPre": "Complimentary online Pre-TTC preparation module",
@@ -7670,12 +7633,12 @@
         "answer": "The 300-Hour curriculum goes far beyond the basics, diving into advanced Ashtanga Vinyasa Second Series (Nadi Shodhana), multi-style creative sequencing, hands-on therapeutic adjustments, functional fascial anatomy, Ayurvedic Prakriti evaluation, traditional Yoga Therapy applications, subtle body energetics (Chakras, Nadis, Kundalini), and the profound philosophy of Patanjali's Yoga Sutras and the Bhagavad Gita."
       },
       {
-        "question": "Is Varkala the best place for advanced 300-Hour training?",
-        "answer": "Undoubtedly. An advanced 300-hour sadhana requires deep pranic purity and unbroken spiritual lineage. Training along the holy banks of Mother Arabian Sea in Varkala Cliff, Varkala immerses you in the sacred energy of Himalayan sages, ancient temples, and true Vedic scholarship that elevate your teaching to mastery level."
+        "question": "Is Varkala good for yoga teacher training?",
+        "answer": "Varkala is renowned worldwide as a premier spiritual sanctuary in Kerala, famous for its majestic red cliffs, serene Arabian Sea beaches, and centuries of Ayurvedic healing tradition. Studying yoga here offers a peaceful, healing coastal atmosphere, free from noise and distractions, with the cleansing energy of holy Papanasam Beach."
       },
       {
-        "question": "How do I get to the ashram from Delhi?",
-        "answer": "From New Delhi, you can take a 45-minute flight to Dehradun Airport (DED), located 35 km from our Varkala Cliff ashram, or board the high-speed Vande Bharat train to Haridwar (4.5 hours). Private taxi transfer directly from Delhi Airport to our ashram gate (5 hours) can also be coordinated upon request."
+        "question": "How do I reach the ashram in Varkala?",
+        "answer": "Fly into Trivandrum International Airport (TRV), located just 45 km (approx. 1 hour drive) from our Varkala Cliff ashram. Alternatively, arrive by train at Varkala Sivagiri Railway Station (VAK), just 3 km (10 minutes) away. Complimentary airport pickup assistance can be coordinated upon request."
       },
       {
         "question": "Can I pay in installments?",
@@ -7687,7 +7650,7 @@
       },
       {
         "question": "What is the best time of year to take the 300-Hour training?",
-        "answer": "October to March is ideal with clear, temperate Himalayan weather (15–25°C), allowing for rigorous physical asana and tranquil outdoor meditation. April to June offers warm tapasya energy, and July to September provides quiet monsoon retreat conditions."
+        "answer": "October to March is ideal with clear, temperate coastal weather (24–30°C), allowing for rigorous physical asana and tranquil beachside outdoor meditation. April to June offers warm tapasya energy, and July to September provides quiet monsoon retreat conditions."
       },
       {
         "question": "What is the batch size for the 300-Hour master training?",
@@ -7698,12 +7661,12 @@
         "answer": "You will enjoy a peaceful, private or shared room in our Varkala Cliff ashram featuring an attached bathroom with 24/7 hot water, high-speed Wi-Fi, and air conditioning/heating. Three wholesome, tridosha-balancing Sattvic Ayurvedic meals are prepared fresh daily using local organic produce."
       },
       {
-        "question": "Is Varkala safe for international solo travelers?",
-        "answer": "Yes, Varkala is recognized as one of the safest pilgrimage cities in India. Our ashram maintains 24/7 on-campus security and a supportive community to ensure every international practitioner feels completely safe, respected, and at home."
+        "question": "Is Varkala good for yoga teacher training?",
+        "answer": "Varkala is renowned worldwide as a premier spiritual sanctuary in Kerala, famous for its majestic red cliffs, serene Arabian Sea beaches, and centuries of Ayurvedic healing tradition. Studying yoga here offers a peaceful, healing coastal atmosphere, free from noise and distractions, with the cleansing energy of holy Papanasam Beach."
       },
       {
-        "question": "What excursions are included in the 300-Hour training?",
-        "answer": "You will participate in sacred spiritual excursions including the evening Arabian Sea Aarti ceremony at Parmarth Niketan, a Himalayan sunrise meditation trek at Kunjapuri Temple (1,676m), and deep silent meditation inside Sage Vashistha's ancient subterranean cave along the Arabian Sea."
+        "question": "What excursions are included in the training?",
+        "answer": "Excursions include a guided boat tour through the tranquil Kerala backwaters to Ponnumthuruthu (Golden Island), sunset meditation at holy Papanasam Beach, and visits to the ancient Janardhana Swamy cliff temple."
       },
       {
         "question": "Do you offer Lifetime Free Re-attendance for the 300-Hour course?",
@@ -7721,7 +7684,7 @@
     "hero": {
       "badge": "Yoga Alliance Certified RYT 500 Pathway",
       "h1": "300 Hour Yoga Teacher Training in Varkala, India",
-      "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Varkala Cliff, Varkala. Study with master teachers by the sacred Arabian Sea.",
+      "sub": "Advance your teaching with an intensive 28-day residential 300-hour training in Varkala Cliff, Kerala. Study with master teachers by the sacred Arabian Sea.",
       "quickDuration": "28 Days",
       "quickLevel": "Advanced (200-Hour YTT required)",
       "quickCert": "Yoga Alliance RYT 500 Pathway",
@@ -7734,9 +7697,9 @@
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Varkala",
-      "story": "Our 300 Hour Yoga Teacher Training in Varkala is a transformative 28-day advanced residential program for teachers who hold a 200-hour certification. Located in Varkala Cliff, Varkala, the world's epicentre of yoga, this program deepens your practice across advanced asanas, pranayama, meditation, therapeutics, and traditional philosophy.",
-      "p1": "Our 200-Hour Yoga Teacher Training in Varkala provides comprehensive, authentic training rooted in classical Indian yogic traditions. Live and study in the heart of the Yoga Capital of the World, beside the sacred Arabian Sea river.",
-      "p2": "Our Himalayan master teachers guide you through traditional Hatha and Ashtanga Vinyasa, alignment, adjustments, Patanjali yoga sutras, anatomy, and practical teaching methodology to graduate as a confident, certified teacher."
+      "story": "Our 300 Hour Yoga Teacher Training in Varkala is a transformative 28-day advanced residential program for teachers who hold a 200-hour certification. Located along the stunning cliffs of Varkala, Kerala, overlooking the Arabian Sea, this program deepens your practice across advanced asanas, pranayama, meditation, therapeutics, and traditional philosophy.",
+      "p1": "Our 300-Hour Yoga Teacher Training in Varkala provides advanced, authentic training rooted in classical Indian yogic traditions and Ayurvedic sciences. Live and study overlooking the tranquil Arabian Sea in coastal Kerala.",
+      "p2": "Our experienced master teachers guide you through advanced Hatha and Ashtanga Vinyasa, subtle energy anatomy, advanced adjustments, Patanjali yoga sutras, and therapeutic sequencing to graduate as a confident, certified RYT 500 eligible teacher."
     },
     "curriculum": {
       "badge": "Curriculum Modules",
@@ -7933,7 +7896,7 @@
       "feat1": "10 beautiful waterfalls within 10 km",
       "feat2": "Private forest with an in-house waterfall",
       "feat3": "Peaceful rice-field trekking on-site",
-      "feat4": "Overlooking the sacred Arabian Sea and Himalayan foothills",
+      "feat4": "Overlooking the tranquil Arabian Sea and pristine coastal cliffs",
       "glimpses": "Glimpses of Your Stay",
       "allRooms": "All Rooms Include",
       "wifi": "Free Wi-Fi",
@@ -7948,8 +7911,8 @@
     },
     "excursionsSection": {
       "badge": "Beyond The Mat",
-      "heading": "Sacred Excursions & Himalayan Cultural Immersion",
-      "sub": "Immerse yourself in Varkala's sacred spiritual heritage through transformative Himalayan excursions"
+      "heading": "Sacred Coastal Excursions & Cultural Immersion",
+      "sub": "Immerse yourself in Varkala's sacred spiritual heritage through transformative coastal excursions"
     },
     "prakritiResearch": {
       "heading": "Sachin Ji's Research on Personalized Yoga and Prakriti",
@@ -8006,14 +7969,14 @@
       "Herbal teas and purified drinking water",
       "Study material (manuals, notebooks, pens)",
       "Yoga mats and props provided",
-      "Sacred Arabian Sea Aarti & Himalayan excursions",
-      "Airport pickup assistance (Dehradun DED airport)",
+      "Papanasam Beach sunset meditation & Kerala cultural excursions",
+      "Airport pickup assistance (Trivandrum TRV airport)",
       "24/7 on-campus ashram support team",
       "Yoga Alliance accredited RYT certification",
       "Rejuvenating Ayurvedic Abhyanga massage",
-      "Arabian Sea Aarti ceremony at Parmarth Niketan",
-      "Kunjapuri Himalayan sunrise meditation trek",
-      "Vashistha Cave meditation excursion",
+      "Janardhana Swamy ancient temple & cliff sunset walk",
+      "Kerala backwaters day trip & canoe meditation",
+      "Kapilil Beach silent meditation & cliff walk",
       "Pre-TTC online preparation modules",
       "Arm balance & alignment workshops",
       "Ayurveda lifestyle & nutrition workshop",
@@ -8030,51 +7993,19 @@
     "whatYouWillReceiveList": [
       {
         "title": "Multi-Style Yoga Mastery",
-        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic Himalayan lineage."
-      },
-      {
-        "title": "Yoga Alliance RYT Certification",
-        "description": "Receive globally recognized RYT certification to teach confidently worldwide with international credentials."
+        "description": "Master Classical Hatha, Ashtanga Vinyasa, and Yin Yoga grounded in authentic traditional lineage."
       },
       {
         "title": "Peaceful Varkala Cliff Ashram Surroundings",
-        "description": "Practice in the serene Himalayan foothills overlooking the sacred Arabian Sea away from tourist crowds."
+        "description": "Practice along the pristine red cliffs overlooking the Arabian Sea, enveloped by gentle ocean breezes and tranquil nature."
       },
       {
-        "title": "Sacred Spiritual Excursions",
-        "description": "Explore holy Arabian Sea river banks, Kunjapuri Himalayan sunrise, and ancient sage meditation caves."
-      },
-      {
-        "title": "Small Batch Sizes (8–10 Max)",
-        "description": "Guaranteed small cohort ensuring 1-on-1 mentorship, alignment correction, and daily feedback."
-      },
-      {
-        "title": "Supportive Ashram Community",
-        "description": "Be part of a warm, conscious family of sincere practitioners. Grow together in an uplifting environment."
-      },
-      {
-        "title": "Ayurvedic Abhyanga Massage",
-        "description": "Traditional Ayurvedic herbal oil therapy to relieve muscle tension and accelerate deep bodily rejuvenation."
-      },
-      {
-        "title": "Arabian Sea Aarti & Vedic Chanting",
-        "description": "Participate in evening fire ceremonies and devotional kirtan along the holy banks of Mother Arabian Sea."
-      },
-      {
-        "title": "Sattvic Ayurvedic Cuisine",
-        "description": "Enjoy three freshly prepared organic Ayurvedic meals daily designed to balance doshas and fuel your practice."
-      },
-      {
-        "title": "Meditation & Yoga Nidra",
-        "description": "Cultivate inner stillness with traditional pranayama, mantra meditation, and restorative Yoga Nidra."
+        "title": "Sacred Coastal & Backwater Excursions",
+        "description": "Explore holy Papanasam beach, serene Kerala backwaters, and ancient cliffside temples."
       },
       {
         "title": "E-RYT 500 Master Instructors",
-        "description": "Study under seasoned Himalayan masters with decades of dedicated teaching and yogic sadhana."
-      },
-      {
-        "title": "Living Yogic Philosophy",
-        "description": "Embody Patanjali's Yoga Sutras, Bhagavad Gita wisdom, and yogic ethics for lifelong personal transformation."
+        "description": "Study under seasoned traditional masters with decades of dedicated teaching and yogic sadhana."
       }
     ],
     "workshopsList": [
@@ -8105,16 +8036,16 @@
     ],
     "excursionsList": [
       {
-        "title": "Parmarth Niketan & Triveni Ghat Arabian Sea Aarti",
-        "description": "Witness the sacred evening Arabian Sea Aarti on the holy banks of the Arabian Sea — a mesmerizing ceremony of light, Vedic chanting, and spiritual devotion."
+        "title": "Janardhana Swamy Temple & Papanasam Beach Sunset Aarti",
+        "description": "Visit the 2,000-year-old cliffside Janardhana Swamy Temple and experience a serene sunset meditation on the sacred waters of Papanasam Beach."
       },
       {
-        "title": "Kunjapuri Devi Himalayan Sunrise Meditation & Trek",
-        "description": "Experience breathtaking sunrise views of snow-capped Great Himalayan peaks at Kunjapuri Temple (1,676m). Meditate in pristine mountain stillness."
+        "title": "Kerala Backwaters & Golden Island (Ponnumthuruthu) Boat Tour",
+        "description": "Glide through the tranquil Kerala backwaters on a traditional boat to the ancient Shiva-Parvati island temple nestled in lush mangrove forests."
       },
       {
-        "title": "Vashistha Cave Meditation & White Sand Arabian Sea Beach",
-        "description": "Meditate in the sacred subterranean cave of Sage Vashistha along the pristine white sand banks of the Arabian Sea, renowned for centuries of sadhana."
+        "title": "Varkala Cliff Coastal Walk & Ayurvedic Medicinal Herb Garden",
+        "description": "Explore the stunning red laterite cliffs of Varkala, coastal sea caves, and a traditional Ayurvedic healing garden guided by local wellness practitioners."
       }
     ],
     "foodMenuList": [
@@ -8122,30 +8053,30 @@
         "meal": "Breakfast",
         "time": "9:15 AM",
         "items": [
-          "Fresh seasonal Himalayan fruits & papaya",
+          "Fresh seasonal Kerala tropical fruits & papaya",
           "Nutritious Ayurvedic grain porridge & oats",
-          "Herbal digestive infusions & mountain chai",
-          "Sprouted moong & wholesome nuts"
+          "Herbal digestive infusions & spiced coastal chai",
+          "Sprouted moong & wholesome roasted nuts"
         ]
       },
       {
         "meal": "Lunch",
         "time": "12:00 PM",
         "items": [
-          "Organic Himalayan khichdi & wholesome lentils",
+          "Organic Kerala red rice & wholesome lentils (Dal)",
           "Freshly baked whole wheat rotis & basmati rice",
-          "Tridosha-balancing seasonal vegetable sabzi",
-          "Crisp organic garden salads"
+          "Tridosha-balancing seasonal vegetable Thoran & Avial",
+          "Crisp organic garden salads & cooling buttermilk"
         ]
       },
       {
         "meal": "Dinner",
-        "time": "7:30 PM",
+        "time": "7:00 PM",
         "items": [
-          "Light nourishing Ayurvedic vegetable soups",
-          "Steamed seasonal mountain greens & lentils",
-          "Digestive herbal broths & wholesome grains",
-          "Golden turmeric almond milk"
+          "Light digestible Ayurvedic kitchari & wholesome soup",
+          "Steamed seasonal coastal greens & spiced vegetables",
+          "Warm golden turmeric milk with Ayurvedic herbs",
+          "Herbal digestion-enhancing decoctions & chamomile"
         ]
       }
     ],
@@ -8309,7 +8240,7 @@
         "title": "8–10 Students Max"
       },
       {
-        "tag": "4.9★ Rated",
+        "tag": "5.0★ Rated",
         "title": "500+ Global Grads"
       },
       {

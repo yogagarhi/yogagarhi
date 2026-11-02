@@ -30,6 +30,7 @@ export async function generateMetadata({
         : `https://www.yogagarhi.com/${locale}/pre-yttc-prep`;
 
     const metadata: Metadata = {
+        metadataBase: new URL("https://www.yogagarhi.com"),
         title,
         description,
         alternates: {

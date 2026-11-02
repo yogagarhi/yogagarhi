@@ -1,4 +1,5 @@
 "use client";
+import { getPreferredStartMonths } from "@/utils/monthHelper";
 import { HOW_TO_REACH_UI } from "@/constants/courseSectionsTranslations";
 import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
@@ -745,13 +746,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
     enrollForm.courseName && enrollForm.courseDate && enrollForm.accommodation &&
     enrollForm.gender && enrollForm.country && enrollForm.source;
 
-  const courseDates = [
-    "December, 2025", "January, 2026", "February, 2026", "March, 2026", "April, 2026",
-    "May, 2026", "June, 2026", "July, 2026", "August, 2026", "September, 2026",
-    "October, 2026", "November, 2026", "December, 2026", "January, 2027", "February, 2027",
-    "March, 2027", "April, 2027", "May, 2027", "June, 2027", "July, 2027",
-    "August, 2027", "September, 2027", "October, 2027", "November, 2027", "December, 2027"
-  ];
+  const courseDates = getPreferredStartMonths("bali");
   const [selectedTimezone, setSelectedTimezone] = useState('UTC +05:30 New Delhi, Mumbai');
   const [showTimezoneDropdown, setShowTimezoneDropdown] = useState(false);
   const [isFoodSectionOpen, setIsFoodSectionOpen] = useState(true);
@@ -3574,10 +3569,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
               <DialogTitle className="font-heading text-2xl text-center">
-                Get Pre-YTTC Details
+                {tCommon("getPreYttcDetails") || "Get Pre-YTTC Details"}
               </DialogTitle>
               <DialogDescription className="text-center text-muted-foreground text-sm">
-                Learn about our world-first Pre-YTTC preparation program
+                {tCommon("preYttcDialogDesc") || "Learn about our world-first Pre-YTTC preparation program"}
               </DialogDescription>
             </DialogHeader>
             <form onSubmit={handlePreYTTCSubmit} className="space-y-4 pt-4">
@@ -3617,7 +3612,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 disabled={!preYTTCForm.name || !preYTTCForm.email || isSubmittingPreYTTC}
               >
                 <GraduationCap className="w-4 h-4 mr-2" />
-                {isSubmittingPreYTTC ? "Sending..." : "Get Pre-YTTC Details"}
+                {isSubmittingPreYTTC ? (tCommon("sending") || "Sending...") : (tCommon("getPreYttcDetails") || "Get Pre-YTTC Details")}
               </Button>
             </form>
           </DialogContent>
@@ -4265,7 +4260,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-              Location
+              {tCommon("location") || "Location"}
             </h2>
             <p className="text-center text-muted-foreground mb-12">
               YogaGarhi, Gianyar, Bali 80515, Indonesia
@@ -4392,7 +4387,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 onClick={() => setShowPreYTTCDialog(true)}
               >
                 <GraduationCap className="w-4 h-4 mr-2" />
-                Get Pre-YTTC Detail
+                {tCommon("getPreYttcDetail") || "Get Pre-YTTC Detail"}
               </Button>
               <Button
                 size="lg"

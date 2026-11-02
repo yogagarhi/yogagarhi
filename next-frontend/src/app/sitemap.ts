@@ -81,6 +81,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
+            url: 'https://www.yogagarhi.com/blogs/bali-vs-rishikesh-yttc-comparison',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
             url: 'https://www.yogagarhi.com/contact-us',
             lastModified: new Date(),
             changeFrequency: 'yearly',
@@ -264,9 +270,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }
     }
 
+    const NOINDEX_EXCLUDED_PATHS = ['/thank-you', '/pre-yttc-prep', '/yogic-energy', '/payment'];
+
     const allUrls = [...baseUrls, ...localizedUrls].filter((item) => {
         if (!LOCATION_LIVE.rishikesh && item.url.includes('rishikesh')) return false;
         if (!LOCATION_LIVE.varkala && item.url.includes('varkala')) return false;
+        if (NOINDEX_EXCLUDED_PATHS.some((p) => item.url.endsWith(p) || item.url.includes(`${p}/`))) return false;
         return true;
     });
 

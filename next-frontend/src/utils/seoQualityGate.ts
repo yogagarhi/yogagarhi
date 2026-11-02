@@ -36,9 +36,14 @@ export function applyQualityGate(meta: Metadata, locale?: string, pagePath?: str
   const isVarkala = pathStr.includes('varkala');
   const isLocationDisabled = (isRishikesh && !LOCATION_LIVE.rishikesh) || (isVarkala && !LOCATION_LIVE.varkala);
 
+  const baseMeta: Metadata = {
+    metadataBase: meta.metadataBase || new URL("https://www.yogagarhi.com"),
+    ...meta,
+  };
+
   if (!isReviewed || isLocationDisabled) {
     return {
-      ...meta,
+      ...baseMeta,
       alternates: {
         canonical: meta.alternates?.canonical,
         // No hreflang alternates for unreviewed/noindex pages
@@ -57,5 +62,5 @@ export function applyQualityGate(meta: Metadata, locale?: string, pagePath?: str
       },
     };
   }
-  return meta;
+  return baseMeta;
 }

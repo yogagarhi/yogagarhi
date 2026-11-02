@@ -61,7 +61,7 @@ export default function FounderSection({
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src={founderImage}
-                  alt="Founder of YogaGarhi"
+                  alt={t("imageAlt") || "Founder of YogaGarhi"}
                   width={864}
                   height={1184}
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -79,7 +79,7 @@ export default function FounderSection({
                     <Award className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Founder & Lead Teacher</p>
+                    <p className="text-sm text-muted-foreground">{t("founderLeadBadge")}</p>
                     <p className="font-heading text-lg font-semibold text-foreground">YogaGarhi</p>
                   </div>
                 </div>
@@ -104,28 +104,19 @@ export default function FounderSection({
 
               <div className="space-y-5 text-muted-foreground leading-relaxed mb-8">
                 <p>
-                  A fearless child, a curious teen, and a heart that kept seeking. This journey
-                  gradually shaped a revolutionary man, <em className="text-foreground font-medium">not driven by rebellion,
-                    but by awareness</em>. What began as exploration unfolded into a life devoted to
-                  practice, discipline, teaching, and service.
+                  {t("bio.p1Part1")}<em className="text-foreground font-medium">{t("bio.p1Em")}</em>{t("bio.p1Part2")}
                 </p>
 
                 <p className="text-foreground/90 border-l-2 border-primary/50 pl-4 italic">
-                  "Yoga was not found in a single moment; it revealed itself slowly, through experience,
-                  inquiry, inner silence, and lived understanding."
+                  "{t("bio.quote")}"
                 </p>
 
                 <p>
-                  Through years of teaching in teacher training schools, a deeper realization emerged.
-                  While yoga was being taught with technical precision, <strong className="text-foreground">its living
-                    essence was often missing</strong>. From this understanding, <strong className="text-foreground">YogaGarhi</strong> was
-                  founded. <em className="text-foreground font-medium">Yoga as union</em> and <em className="text-foreground font-medium">garhi
-                    as a fortress</em>, created to preserve the true spirit of yoga.
+                  {t("bio.p2Part1")}<strong className="text-foreground">{t("bio.p2Strong1")}</strong>{t("bio.p2Part2")}<strong className="text-foreground">{t("bio.p2Strong2")}</strong>{t("bio.p2Part3")}<em className="text-foreground font-medium">{t("bio.p2Em1")}</em>{t("bio.p2Part4")}<em className="text-foreground font-medium">{t("bio.p2Em2")}</em>{t("bio.p2Part5")}
                 </p>
 
                 <p>
-                  Here, <strong className="text-foreground">yoga is lived, not merely taught</strong>; rooted in nature, breath,
-                  awareness, and inner truth, guiding sincere seekers toward balance and authentic transformation.
+                  {t("bio.p3Part1")}<strong className="text-foreground">{t("bio.p3Strong")}</strong>{t("bio.p3Part2")}
                 </p>
               </div>
 
@@ -135,14 +126,14 @@ export default function FounderSection({
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="group" asChild>
                   <Link href="/teachers" className="flex items-center gap-2">
-                    Know more about team
+                    {t("knowMoreTeam")}
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </Link>
                 </Button>
 
                 <Button size="lg" variant="outline" className="group border-primary text-primary hover:bg-primary/5 px-6" asChild>
                   <Link href={researchLink} className="flex items-center gap-2">
-                    Discover Sachinji's Research
+                    {t("discoverResearch")}
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </Link>
                 </Button>

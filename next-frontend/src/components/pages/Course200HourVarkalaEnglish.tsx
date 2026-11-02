@@ -1,4 +1,5 @@
 "use client";
+import { getPreferredStartMonths } from "@/utils/monthHelper";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import { useState, useEffect, useRef } from "react";
@@ -682,13 +683,7 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
     enrollForm.courseName && enrollForm.courseDate && enrollForm.accommodation &&
     enrollForm.gender && enrollForm.country && enrollForm.source;
 
-  const courseDates = [
-    "December, 2025", "January, 2026", "February, 2026", "March, 2026", "April, 2026",
-    "May, 2026", "June, 2026", "July, 2026", "August, 2026", "September, 2026",
-    "October, 2026", "November, 2026", "December, 2026", "January, 2027", "February, 2027",
-    "March, 2027", "April, 2027", "May, 2027", "June, 2027", "July, 2027",
-    "August, 2027", "September, 2027", "October, 2027", "November, 2027", "December, 2027"
-  ];
+  const courseDates = getPreferredStartMonths("varkala");
   const [selectedTimezone, setSelectedTimezone] = useState('UTC +05:30 New Delhi, Mumbai');
   const [showTimezoneDropdown, setShowTimezoneDropdown] = useState(false);
   const [isFoodSectionOpen, setIsFoodSectionOpen] = useState(true);
