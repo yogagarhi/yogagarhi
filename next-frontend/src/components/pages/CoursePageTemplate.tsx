@@ -1,6 +1,7 @@
 "use client";
 import { getPreferredStartMonths } from "@/utils/monthHelper";
 import { HOW_TO_REACH_UI } from "@/constants/courseSectionsTranslations";
+import { LOCALIZED_POST_SUPPORT, LOCALIZED_ACCOMMODATION_NOTICE } from "@/constants/courseCardTranslations";
 import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { useState, useEffect, useRef, useMemo } from "react";
@@ -1922,50 +1923,32 @@ export default function CoursePageTemplate({
 
             {/* Support Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              {[
-                {
-                  image: postSupport1,
-                  title: "Bi-annual Upgrade Programs",
-                  description: "Programs to deepen your experience of the practices and upgrade your teaching skills"
-                },
-                {
-                  image: postSupport2,
-                  title: "Extensive Alumni Support",
-                  description: "A dedicated alumni platform for queries, clarifications, and continuous learning"
-                },
-                {
-                  image: postSupport3,
-                  title: "Community Connection",
-                  description: "Integration into a vibrant and supportive global community of YogaGarhi alumni"
-                },
-                {
-                  image: postSupport4,
-                  title: "Teaching Resources",
-                  description: "Access to a repository of articles, videos, and teaching materials"
-                }
-              ].map((item, index) => (
-                <div key={index} className="text-center group">
-                  {/* Circular Image */}
-                  <div className="relative mx-auto mb-6 w-48 h-48 rounded-full overflow-hidden border-4 border-secondary group-hover:border-primary/30 transition-all duration-300 shadow-card group-hover:shadow-elevated flex-shrink-0">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
+              {[postSupport1, postSupport2, postSupport3, postSupport4].map((img, index) => {
+                const card = LOCALIZED_POST_SUPPORT[locale]?.[index] || LOCALIZED_POST_SUPPORT.en[index];
+                return (
+                  <div key={index} className="text-center group">
+                    {/* Circular Image */}
+                    <div className="relative mx-auto mb-6 w-48 h-48 rounded-full overflow-hidden border-4 border-secondary group-hover:border-primary/30 transition-all duration-300 shadow-card group-hover:shadow-elevated flex-shrink-0">
+                      <Image
+                        src={img}
+                        alt={card.title}
+                        fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="font-heading text-lg font-bold text-foreground mb-3">
+                      {card.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-muted-foreground text-sm leading-relaxed px-2">
+                      {card.description}
+                    </p>
                   </div>
-
-                  {/* Title */}
-                  <h3 className="font-heading text-lg font-bold text-foreground mb-3">
-                    {item.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="text-muted-foreground text-sm leading-relaxed px-2">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+                );
+              })}
             </div>
 
             {/* Bottom Highlights - Important Support Pillars */}
@@ -2581,10 +2564,10 @@ export default function CoursePageTemplate({
           <section className="py-20 bg-secondary/30 border-t border-border/50">
             <div className="container mx-auto px-4 text-center">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
-                Accommodation & Campus
+                {locale === "en" ? "Accommodation & Campus" : (LOCALIZED_ACCOMMODATION_NOTICE[locale]?.heading || LOCALIZED_ACCOMMODATION_NOTICE.en.heading)}
               </h2>
               <p className="font-heading text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Accommodation and venue details will be shared soon.
+                {locale === "en" ? "Accommodation and venue details will be shared soon." : (LOCALIZED_ACCOMMODATION_NOTICE[locale]?.sub || LOCALIZED_ACCOMMODATION_NOTICE.en.sub)}
               </p>
             </div>
           </section>

@@ -2,11 +2,23 @@ import React from "react";
 import { Link } from "@/i18n/routing";
 import { BookOpen, ArrowRight } from "lucide-react";
 import { HELPFUL_GUIDES } from "@/constants/course200Data";
-import { useTranslations } from "next-intl";
+import { LOCALIZED_HELPFUL_GUIDES } from "@/constants/courseCardTranslations";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function HelpfulGuidesSection() {
   const t = useTranslations("course200");
+  const locale = useLocale();
+
   if (!HELPFUL_GUIDES || HELPFUL_GUIDES.length === 0) return null;
+
+  const guides = HELPFUL_GUIDES.map((guide, idx) => {
+    const locItem = LOCALIZED_HELPFUL_GUIDES[locale]?.[idx] || LOCALIZED_HELPFUL_GUIDES.en[idx];
+    return {
+      slug: guide.slug,
+      title: locale === "en" ? guide.title : (locItem?.title || guide.title),
+      excerpt: locale === "en" ? guide.excerpt : (locItem?.excerpt || guide.excerpt),
+    };
+  });
 
   return (
     <section className="py-20 bg-secondary/20 relative overflow-hidden" id="helpful-guides">
@@ -26,7 +38,7 @@ export default function HelpfulGuidesSection() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {HELPFUL_GUIDES.map((guide, idx) => (
+            {guides.map((guide, idx) => (
               <Link
                 key={idx}
                 href={`/blogs/${guide.slug}`}
