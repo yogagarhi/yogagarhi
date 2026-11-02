@@ -37,6 +37,7 @@ import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
 import { RETREAT_EXTRA_UI } from "@/constants/courseSectionsTranslations";
+import { getRetreatUI } from "@/constants/retreatUiTranslations";
 import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 
 interface RetreatDetailProps {
@@ -134,6 +135,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
   const displayName = getLocalizedLocName(retreat.locationKey, retreat.locationName, currentLocale);
   const linkPrefix = isEn ? "" : `/${currentLocale}`;
   const extraUI = isEn ? RETREAT_EXTRA_UI.en : (RETREAT_EXTRA_UI[currentLocale] || RETREAT_EXTRA_UI.en);
+  const retreatUI = getRetreatUI(currentLocale);
 
   const retreatKey = `${retreat.locationKey}-${retreat.slug}`;
   const pkg = !isEn && messages?.packages ? messages.packages[retreatKey] : null;
@@ -464,88 +466,30 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                 {isEn ? "YogaGarhi Offers" : (messages?.retreatHighlights || (currentLocale === 'nl' ? "Wat YogaGarhi Biedt" : "YogaGarhi Offers"))}
               </h2>
               <p className="text-stone-600 mt-2 text-sm sm:text-base">
-                An all-inclusive transformative wellness retreat where ancient yogic lineage meets the healing energy of Bali.
+                {isEn
+                  ? (retreat.locationKey === 'rishikesh'
+                      ? "An authentic Himalayan immersion where sacred Ganga river energy meets profound Vedic traditions."
+                      : retreat.locationKey === 'varkala'
+                      ? "A coastal Ayurvedic retreat where Arabian Sea cliff views meet traditional healing therapies."
+                      : "An all-inclusive transformative wellness retreat where ancient yogic lineage meets the healing energy of Bali.")
+                  : (retreatUI.offersSub[retreat.locationKey] || retreatUI.offersSub.bali)}
               </p>
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Card 1: Hatha & Vinyasa */}
-              <div className="p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4 font-bold text-xl">
-                  🧘
+              {(retreatUI.offersCards[retreat.locationKey] || retreatUI.offersCards.bali).map((card, idx) => (
+                <div key={idx} className="p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4 font-bold text-xl">
+                    {card.icon}
+                  </div>
+                  <h3 className="font-heading font-bold text-lg text-amber-950 mb-2 uppercase">
+                    {card.title}
+                  </h3>
+                  <p className="text-stone-600 text-sm leading-relaxed">
+                    {card.desc}
+                  </p>
                 </div>
-                <h3 className="font-heading font-bold text-lg text-amber-950 mb-2 uppercase">
-                  Multi-Style Yoga Practice
-                </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
-                  Daily morning Hatha Vinyasa flows for physical strength followed by gentle evening Yin yoga for deep flexibility, tension release, and spinal alignment.
-                </p>
-              </div>
-
-              {/* Card 2: Balinese Massages */}
-              <div className="p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4 font-bold text-xl">
-                  🌺
-                </div>
-                <h3 className="font-heading font-bold text-lg text-amber-950 mb-2 uppercase">
-                  Daily Balinese Massages
-                </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
-                  Full-body complimentary Balinese massage treatments using warm organic botanical oils to soothe muscles, boost lymphatic flow, and calm the senses.
-                </p>
-              </div>
-
-              {/* Card 3: Sound Healing */}
-              <div className="p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4 font-bold text-xl">
-                  🔔
-                </div>
-                <h3 className="font-heading font-bold text-lg text-amber-950 mb-2 uppercase">
-                  Sound Healing Sessions
-                </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
-                  Immerse in restorative sound baths featuring handcrafted Tibetan singing bowls and gong resonance inside our peaceful open-air bamboo shala.
-                </p>
-              </div>
-
-              {/* Card 4: Water Blessing */}
-              <div className="p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4 font-bold text-xl">
-                  🌊
-                </div>
-                <h3 className="font-heading font-bold text-lg text-amber-950 mb-2 uppercase">
-                  Sacred Melukat Water Blessing
-                </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
-                  Experience ancient Balinese water purification at the sacred Tirta Empul spring temple led by a local priest to wash away stress and revitalize the spirit.
-                </p>
-              </div>
-
-              {/* Card 5: Reiki & Breathwork */}
-              <div className="p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4 font-bold text-xl">
-                  ✨
-                </div>
-                <h3 className="font-heading font-bold text-lg text-amber-950 mb-2 uppercase">
-                  Reiki & Chakra Alignment
-                </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
-                  Himalayan breathwork (pranayama) and gentle hands-on Reiki healing to balance your vital chakras, release emotional weight, and restore mental clarity.
-                </p>
-              </div>
-
-              {/* Card 6: Pure Plant-Based Dining */}
-              <div className="p-6 rounded-2xl bg-white border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4 font-bold text-xl">
-                  🥗
-                </div>
-                <h3 className="font-heading font-bold text-lg text-amber-950 mb-2 uppercase">
-                  Ahimsa Plant-Based Dining
-                </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
-                  Three daily chef-prepared vegan and vegetarian feasts made from clean, organic volcanic-soil ingredients supporting digestion and natural cellular detox.
-                </p>
-              </div>
+              ))}
             </div>
           </section>
 
@@ -571,14 +515,12 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                 <Calendar className="w-5 h-5 text-amber-800 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-amber-950 text-sm sm:text-base">
-                    {isEn ? "Retreat Dates – Year-Round Availability" : (currentLocale === 'nl' ? "Retraitedata – Het hele jaar door beschikbaar" : "Retreat Dates – Year-Round Availability")}
+                    {isEn ? "Retreat Dates – Year-Round Availability" : retreatUI.datesTitle}
                   </h3>
                   <p className="text-stone-700 text-xs sm:text-sm">
                     {isEn
                       ? "We offer yoga retreats year-round. You can start on any day of the week based on your travel schedule."
-                      : (currentLocale === 'nl'
-                          ? "Onze yoga retraites zijn het hele jaar geopend. Je kunt op elke gewenste dag van de week starten."
-                          : "We offer yoga retreats year-round. You can start on any day of the week based on your travel schedule.")}
+                      : retreatUI.datesSub}
                   </p>
                 </div>
               </div>
@@ -588,7 +530,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                 rel="noopener noreferrer"
                 className="flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-800 hover:bg-amber-900 text-white text-xs sm:text-sm font-bold shadow-sm transition-colors"
               >
-                {isEn ? "Check Date Availability →" : (currentLocale === 'nl' ? "Beschikbaarheid controleren →" : "Check Date Availability →")}
+                {isEn ? "Check Date Availability →" : retreatUI.checkAvailability}
               </a>
             </div>
 
@@ -606,7 +548,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                   >
                     {card.popular && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-800 text-white text-[11px] font-bold px-3.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
-                        Most Popular Choice
+                        {isEn ? 'Most Popular Choice' : retreatUI.mostPopular}
                       </div>
                     )}
 
@@ -626,7 +568,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                         <span className="text-2xl sm:text-3xl font-extrabold text-[#b40000]">
                           {card.discountedPrice}
                         </span>
-                        <span className="text-xs text-stone-500 font-medium">/ person</span>
+                        <span className="text-xs text-stone-500 font-medium">{isEn ? "/ person" : retreatUI.perPerson}</span>
                       </div>
 
                       {/* Feature Bullet Points */}
@@ -745,7 +687,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
             <div className="max-w-4xl">
               <div className="mb-6">
                 <span className="text-xs uppercase font-bold tracking-widest text-amber-800">
-                  Nourishment for Body & Mind
+                  {isEn ? "Nourishment for Body & Mind" : retreatUI.diningSubtitle}
                 </span>
                 <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
                   YogaGarhi Dining
@@ -759,10 +701,10 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               {/* Meal Timings Table (Bali Yoga School Style) */}
               <div className="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm mb-6">
                 <div className="bg-amber-900 text-white py-3.5 px-6 font-heading font-bold uppercase tracking-wider text-sm">
-                  Daily Meal Timings
+                  {isEn ? "Daily Meal Timings" : retreatUI.diningTableHeading}
                 </div>
                 <div className="divide-y divide-stone-100">
-                  {retreat.mealTimings && retreat.mealTimings.length > 0 ? (
+                  {retreat.mealTimings && retreat.mealTimings.length > 0 && isEn ? (
                     retreat.mealTimings.map((m, idx) => (
                       <div key={idx} className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                         <div className="font-bold text-amber-950 text-base sm:w-1/3">
@@ -777,23 +719,13 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                       </div>
                     ))
                   ) : (
-                    <>
-                      <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                        <span className="font-bold text-amber-950 text-base">Breakfast</span>
-                        <span className="font-mono text-sm font-semibold text-amber-800">09:30 AM</span>
-                        <span className="text-xs sm:text-sm text-stone-600">Tropical fruits, smoothie bowls, porridge, herbal tea</span>
+                    retreatUI.mealsFallback.map((m, idx) => (
+                      <div key={idx} className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <span className="font-bold text-amber-950 text-base">{m.meal}</span>
+                        <span className="font-mono text-sm font-semibold text-amber-800">{m.time}</span>
+                        <span className="text-xs sm:text-sm text-stone-600">{m.notes}</span>
                       </div>
-                      <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                        <span className="font-bold text-amber-950 text-base">Lunch</span>
-                        <span className="font-mono text-sm font-semibold text-amber-800">12:30 PM – 01:30 PM</span>
-                        <span className="text-xs sm:text-sm text-stone-600">Nutritious organic plant-based bowls, steamed vegetables</span>
-                      </div>
-                      <div className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                        <span className="font-bold text-amber-950 text-base">Dinner</span>
-                        <span className="font-mono text-sm font-semibold text-amber-800">07:00 PM – 08:00 PM</span>
-                        <span className="text-xs sm:text-sm text-stone-600">Warm soul soups, roasted vegetables, curries, and herbal digestion tonics</span>
-                      </div>
-                    </>
+                    ))
                   )}
                 </div>
               </div>
@@ -825,7 +757,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                   {isEn ? "Day-by-Day Schedule" : (messages?.dailyRhythm || (currentLocale === 'nl' ? "Dagelijks Programma" : "Day-by-Day Schedule"))}
                 </h2>
                 <p className="text-stone-600 text-sm sm:text-base mt-1">
-                  {isEn ? "Click on each day below to see the precise schedule from morning awakening to evening silence." : (currentLocale === 'nl' ? "Klik hieronder op elke dag om het volledige programma van ochtend tot avond te bekijken." : "Click on each day below to see the precise schedule from morning awakening to evening silence.")}
+                  {isEn ? "Click on each day below to see the precise schedule from morning awakening to evening silence." : retreatUI.scheduleSub}
                 </p>
               </div>
 
@@ -843,7 +775,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                             : "bg-stone-100 hover:bg-stone-200 text-stone-700"
                         }`}
                       >
-                        {isEn ? day.dayLabel : (currentLocale === 'nl' ? day.dayLabel.replace(/Day/gi, 'Dag') : day.dayLabel)}
+                        {isEn ? day.dayLabel : `${retreatUI.dayTabPrefix} ${idx + 1} ${retreatUI.dayTabSuffix}`.trim()}
                       </button>
                     ))}
                   </div>
@@ -852,10 +784,10 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                   <div className="p-6 sm:p-8 rounded-3xl bg-white border border-stone-200/90 shadow-sm">
                     <div className="flex items-center justify-between border-b border-stone-100 pb-4 mb-6 flex-wrap gap-2">
                       <h3 className="font-heading font-bold text-xl text-amber-950">
-                        {daySchedules[activeDayIndex]?.dayLabel}: {daySchedules[activeDayIndex]?.title}
+                        {isEn ? daySchedules[activeDayIndex]?.dayLabel : `${retreatUI.dayTabPrefix} ${activeDayIndex + 1}`}: {daySchedules[activeDayIndex]?.title}
                       </h3>
                       <span className="text-xs font-semibold uppercase tracking-wider text-amber-800 bg-amber-50 px-3 py-1 rounded-full">
-                        Day {daySchedules[activeDayIndex]?.dayNumber} of {retreat.durationDays}
+                        {isEn ? `Day ${daySchedules[activeDayIndex]?.dayNumber} of ${retreat.durationDays}` : `${retreatUI.dayOfPrefix} ${daySchedules[activeDayIndex]?.dayNumber} ${retreatUI.dayOfConnector} ${retreat.durationDays}`}
                       </span>
                     </div>
 
@@ -924,27 +856,27 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                 <div className="grid sm:grid-cols-2 gap-6 mb-8">
                   <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm">
                     <div className="text-xs font-bold uppercase text-amber-800 tracking-wider mb-1">Campus-I</div>
-                    <h3 className="font-heading font-bold text-lg text-amber-950 mb-2">Deluxe Garden Sanctuary</h3>
+                    <h3 className="font-heading font-bold text-lg text-amber-950 mb-2">{isEn ? "Deluxe Garden Sanctuary" : retreatUI.campusOneTitle}</h3>
                     <p className="text-xs sm:text-sm text-stone-600 mb-4">
-                      Traditional Balinese stone villas nestled amongst lush tropical frangipani and palm gardens. Features private balconies and serene open-air bamboo shalas.
+                      {isEn ? "Traditional Balinese stone villas nestled amongst lush tropical frangipani and palm gardens. Features private balconies and serene open-air bamboo shalas." : retreatUI.campusOneDesc}
                     </p>
                     <div className="text-xs font-semibold text-stone-700 space-y-1">
-                      <div>✓ King Bed or Twin Bed options</div>
-                      <div>✓ Semi-open Balinese hot shower bath</div>
-                      <div>✓ Peaceful jungle view patio</div>
+                      {(isEn ? ["✓ King Bed or Twin Bed options", "✓ Semi-open Balinese hot shower bath", "✓ Peaceful jungle view patio"] : retreatUI.campusOneFeatures).map((f, fIdx) => (
+                        <div key={fIdx}>{f}</div>
+                      ))}
                     </div>
                   </div>
 
                   <div className="p-6 rounded-2xl bg-white border border-stone-200 shadow-sm">
                     <div className="text-xs font-bold uppercase text-amber-800 tracking-wider mb-1">Campus-II</div>
-                    <h3 className="font-heading font-bold text-lg text-amber-950 mb-2">New Luxury Pool Campus</h3>
+                    <h3 className="font-heading font-bold text-lg text-amber-950 mb-2">{isEn ? "New Luxury Pool Campus" : retreatUI.campusTwoTitle}</h3>
                     <p className="text-xs sm:text-sm text-stone-600 mb-4">
-                      Brand new boutique rooms situated right along our sparkling swimming pool with contemporary teakwood styling, sun loungers, and high-speed Wi-Fi.
+                      {isEn ? "Brand new boutique rooms situated right along our sparkling swimming pool with contemporary teakwood styling, sun loungers, and high-speed Wi-Fi." : retreatUI.campusTwoDesc}
                     </p>
                     <div className="text-xs font-semibold text-stone-700 space-y-1">
-                      <div>✓ Direct swimming pool steps</div>
-                      <div>✓ Modern rainfall shower suite</div>
-                      <div>✓ Private sun deck and lounger area</div>
+                      {(isEn ? ["✓ Direct swimming pool steps", "✓ Modern rainfall shower suite", "✓ Private sun deck and lounger area"] : retreatUI.campusTwoFeatures).map((f, fIdx) => (
+                        <div key={fIdx}>{f}</div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -952,15 +884,19 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                 {/* Amenities Badges */}
                 <div className="p-6 rounded-2xl bg-[#FAF6F0] border border-amber-900/10">
                   <h3 className="font-bold text-sm uppercase text-amber-950 tracking-wider mb-4">
-                    Campus Amenities & Facilities
+                    {isEn ? "Campus Amenities & Facilities" : retreatUI.campusAmenitiesTitle}
                   </h3>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs sm:text-sm font-medium text-stone-700">
-                    <span className="flex items-center gap-2">🏊 Swimming Pool (10 AM - 8 PM)</span>
-                    <span className="flex items-center gap-2">❄️ Silent Air Conditioning</span>
-                    <span className="flex items-center gap-2">📶 High-Speed Campus Wi-Fi</span>
-                    <span className="flex items-center gap-2">🧘 Bamboo Open-Air Yoga Shala</span>
-                    <span className="flex items-center gap-2">🚿 Hot Rainfall Showers</span>
-                    <span className="flex items-center gap-2">🧹 Daily Housekeeping Service</span>
+                    {(isEn ? [
+                      "🏊 Swimming Pool (10 AM - 8 PM)",
+                      "❄️ Silent Air Conditioning",
+                      "📶 High-Speed Campus Wi-Fi",
+                      "🧘 Bamboo Open-Air Yoga Shala",
+                      "🚿 Hot Rainfall Showers",
+                      "🧹 Daily Housekeeping Service"
+                    ] : retreatUI.amenitiesList).map((amenity, aIdx) => (
+                      <span key={aIdx} className="flex items-center gap-2">{amenity}</span>
+                    ))}
                   </div>
                 </div>
               </>
@@ -980,48 +916,62 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               </h2>
               <p className="text-stone-600 text-sm sm:text-base mt-2">
                 {isEn
-                  ? "Learn under authentic Himalayan-trained yogacharyas and master teachers with decades of dedicated teaching experience."
-                  : (currentLocale === 'nl'
-                      ? "Leer van authentieke, in de Himalaya opgeleide meesters en ervaren yogadocenten."
-                      : "Learn under authentic Himalayan-trained yogacharyas and master teachers with decades of dedicated teaching experience.")}
+                  ? (retreat.locationKey === 'varkala'
+                      ? "Learn under authentic yoga masters and Ayurvedic teachers with decades of dedicated practice."
+                      : "Learn under authentic Himalayan-trained yogacharyas and master teachers with decades of dedicated teaching experience.")
+                  : (retreatUI.facultySub[retreat.locationKey] || retreatUI.facultySub.bali)}
               </p>
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {RETREAT_TEACHERS.map((teacher, idx) => (
-                <div
-                  key={idx}
-                  className="rounded-2xl overflow-hidden bg-white border border-stone-200/90 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
-                >
-                  <div className="relative h-64 w-full bg-stone-100">
-                    <Image
-                      src={teacher.image}
-                      alt={teacher.name}
-                      fill sizes="(max-width: 768px) 100vw, 33vw" 
-                      className="object-cover object-top"
-                    />
-                  </div>
-                  <div className="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                      <h3 className="font-heading font-bold text-lg text-amber-950">
-                        {teacher.name}
-                      </h3>
-                      <p className="text-xs font-bold text-amber-800 mb-1">{teacher.role}</p>
-                      <p className="text-[11px] text-stone-500 font-mono mb-3">{teacher.credentials}</p>
-                      <p className="text-xs text-stone-600 leading-relaxed line-clamp-3">
-                        {teacher.bio}
-                      </p>
+              {RETREAT_TEACHERS.map((teacher, idx) => {
+                const tUI = retreatUI.teachers[idx];
+                const role = (!isEn && tUI?.role) ? tUI.role : teacher.role;
+                let bio = teacher.bio;
+                if (!isEn && tUI?.bio) {
+                  bio = typeof tUI.bio === 'string' ? tUI.bio : (tUI.bio[retreat.locationKey] || tUI.bio.bali);
+                } else if (isEn && retreat.locationKey === 'varkala') {
+                  if (teacher.name.includes("Sachin")) {
+                    bio = "With over 12 years of dedicated yogic sadhana, Sachin Ji bridges ancient Vedic wisdom with modern mindfulness, guiding practitioners to deep somatic restoration.";
+                  } else if (teacher.name.includes("Rohit")) {
+                    bio = "Trained in classical yoga and breath sciences, Rohit Ji teaches subtle breath mechanics and deep somatic release that melt nervous tension.";
+                  }
+                }
+                return (
+                  <div
+                    key={idx}
+                    className="rounded-2xl overflow-hidden bg-white border border-stone-200/90 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
+                  >
+                    <div className="relative h-64 w-full bg-stone-100">
+                      <Image
+                        src={teacher.image}
+                        alt={teacher.name}
+                        fill sizes="(max-width: 768px) 100vw, 33vw" 
+                        className="object-cover object-top"
+                      />
                     </div>
-                    <div className="mt-4 pt-3 border-t border-stone-100 flex flex-wrap gap-1">
-                      {teacher.specialties.map((spec, sIdx) => (
-                        <span key={sIdx} className="text-[10px] bg-amber-50 text-amber-900 px-2 py-0.5 rounded font-medium">
-                          {spec}
-                        </span>
-                      ))}
+                    <div className="p-5 flex-1 flex flex-col justify-between">
+                      <div>
+                        <h3 className="font-heading font-bold text-lg text-amber-950">
+                          {teacher.name}
+                        </h3>
+                        <p className="text-xs font-bold text-amber-800 mb-1">{role}</p>
+                        <p className="text-[11px] text-stone-500 font-mono mb-3">{teacher.credentials}</p>
+                        <p className="text-xs text-stone-600 leading-relaxed line-clamp-3">
+                          {bio}
+                        </p>
+                      </div>
+                      <div className="mt-4 pt-3 border-t border-stone-100 flex flex-wrap gap-1">
+                        {teacher.specialties.map((spec, sIdx) => (
+                          <span key={sIdx} className="text-[10px] bg-amber-50 text-amber-900 px-2 py-0.5 rounded font-medium">
+                            {spec}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
 
@@ -1044,24 +994,29 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
-              {CAMPUS_GALLERY.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="group relative h-48 sm:h-64 rounded-2xl overflow-hidden shadow-sm border border-stone-200"
-                >
-                  <Image
-                    src={item.url}
-                    alt={item.title}
-                    fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity" />
-                  <div className="absolute bottom-3.5 left-3.5 right-3.5 text-white">
-                    <h3 className="font-bold text-xs sm:text-sm font-heading">{item.title}</h3>
-                    <p className="text-[11px] text-stone-200 hidden sm:block">{item.desc}</p>
+              {CAMPUS_GALLERY.map((item, idx) => {
+                const gUI = (!isEn && retreatUI.gallery && retreatUI.gallery[idx]) ? retreatUI.gallery[idx] : null;
+                const gTitle = gUI ? gUI.title : item.title;
+                const gDesc = gUI ? gUI.desc : item.desc;
+                return (
+                  <div
+                    key={idx}
+                    className="group relative h-48 sm:h-64 rounded-2xl overflow-hidden shadow-sm border border-stone-200"
+                  >
+                    <Image
+                      src={item.url}
+                      alt={gTitle}
+                      fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute bottom-3.5 left-3.5 right-3.5 text-white">
+                      <h3 className="font-bold text-xs sm:text-sm font-heading">{gTitle}</h3>
+                      <p className="text-[11px] text-stone-200 hidden sm:block">{gDesc}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
 
@@ -1085,7 +1040,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                       : (retreat.policy?.reschedule || "Each student is eligible for one course reschedule free of charge."))}
               </p>
               <div className="text-xs text-stone-600 bg-white p-4 rounded-xl border border-stone-200">
-                🔒 <strong>{isEn ? "Student-First Guarantee:" : (currentLocale === 'nl' ? "Studentengarantie:" : "Student-First Guarantee:")}</strong> {isEn ? "We understand travel circumstances change. Your retreat deposit remains protected with one free date reschedule with 15 days notice." : (currentLocale === 'nl' ? "We begrijpen dat reisplannen kunnen veranderen. Je aanbetaling blijft beschermd met één gratis herboeking." : "Your retreat deposit remains protected with one free date reschedule with 15 days notice.")}
+                🔒 <strong>{isEn ? "Student-First Guarantee:" : retreatUI.studentGuaranteeTitle}</strong> {isEn ? "We understand travel circumstances change. Your retreat deposit remains protected with one free date reschedule with 15 days notice." : retreatUI.studentGuaranteeText}
               </div>
             </div>
 
@@ -1103,7 +1058,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                   : extraUI.howToArriveDesc.replace('{loc}', displayName)}
               </p>
               <div className="text-xs text-stone-600 bg-white p-4 rounded-xl border border-stone-200">
-                🚕 <strong>{isEn ? "Private Airport Pickup:" : (currentLocale === 'nl' ? "Luchthaventransfer:" : "Private Airport Pickup:")}</strong> {isEn ? "We arrange reliable, air-conditioned private taxi transfers directly from airport arrivals to our campus reception." : (currentLocale === 'nl' ? "Wij verzorgen betrouwbare transfers met airconditioning vanaf de luchthaven direct naar de receptie." : "We arrange reliable taxi transfers from airport arrivals.")}
+                🚕 <strong>{isEn ? "Private Airport Pickup:" : retreatUI.airportPickupTitle}</strong> {isEn ? "We arrange reliable, air-conditioned private taxi transfers directly from airport arrivals to our campus reception." : retreatUI.airportPickupText}
               </div>
             </div>
           </section>
@@ -1197,7 +1152,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                       : "bg-white/10 hover:bg-white/20 text-white"
                   }`}
                 >
-                  {isEn ? "3 Days Weekend Reset" : (currentLocale === 'nl' ? "3 Dagen Weekend Reset" : "3 Days Weekend Reset")}
+                  {isEn ? "3 Days Weekend Reset" : retreatUI.durationButtons["3-days"]}
                 </Link>
                 <Link
                   href={`${linkPrefix}/retreat/${retreat.locationKey}/7-days`}
@@ -1207,7 +1162,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                       : "bg-white/10 hover:bg-white/20 text-white"
                   }`}
                 >
-                  {isEn ? "7 Days Signature Renewal" : (currentLocale === 'nl' ? "7 Dagen Rejuvenatie" : "7 Days Signature Renewal")}
+                  {isEn ? "7 Days Signature Renewal" : retreatUI.durationButtons["7-days"]}
                 </Link>
                 <Link
                   href={`${linkPrefix}/retreat/${retreat.locationKey}/14-days`}
@@ -1217,7 +1172,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                       : "bg-white/10 hover:bg-white/20 text-white"
                   }`}
                 >
-                  {isEn ? "14 Days Deep Transformation" : (currentLocale === 'nl' ? "14 Dagen Diepe Transformatie" : "14 Days Deep Transformation")}
+                  {isEn ? "14 Days Deep Transformation" : retreatUI.durationButtons["14-days"]}
                 </Link>
               </div>
             </div>
@@ -1247,84 +1202,87 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-                {retreat.locationKey === 'varkala' ? (
-                  <>
-                    <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
-                      <div>
-                        <span className="text-xs font-bold text-primary">12 Days</span>
-                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">100-Hour YTT Varkala</h4>
-                        <p className="text-xs text-muted-foreground mb-4">Beachside beginner immersion with foundational Kerala Ayurveda.</p>
+                {(() => {
+                  const cl = retreatUI.crossLinks;
+                  return retreat.locationKey === 'varkala' ? (
+                    <>
+                      <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
+                        <div>
+                          <span className="text-xs font-bold text-primary">{isEn ? "12 Days" : cl.days12}</span>
+                          <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">100-Hour YTT Varkala</h4>
+                          <p className="text-xs text-muted-foreground mb-4">{isEn ? "Beachside beginner immersion with foundational Kerala Ayurveda." : cl.desc100Varkala}</p>
+                        </div>
+                        <Link href={`${linkPrefix}/100-hour-yoga-teacher-training-in-varkala`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                          <span>{isEn ? "From $599 • Learn More" : cl.fromLearnMore.replace('{price}', '$599')}</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
                       </div>
-                      <Link href={`${linkPrefix}/100-hour-yoga-teacher-training-in-varkala`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
-                        <span>From $599 • Learn More</span>
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
 
-                    <div className="p-5 rounded-2xl bg-card border-2 border-primary shadow-md flex flex-col justify-between relative">
-                      <span className="absolute -top-2.5 right-4 px-2 py-0.5 rounded-full bg-primary text-primary-foreground text-[10px] font-bold">Most Popular</span>
-                      <div>
-                        <span className="text-xs font-bold text-primary">28 Days</span>
-                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">200-Hour YTT Varkala</h4>
-                        <p className="text-xs text-muted-foreground mb-4">Yoga Alliance RYT 200 certification with Ayurvedic immersion.</p>
+                      <div className="p-5 rounded-2xl bg-card border-2 border-primary shadow-md flex flex-col justify-between relative">
+                        <span className="absolute -top-2.5 right-4 px-2 py-0.5 rounded-full bg-primary text-primary-foreground text-[10px] font-bold">{isEn ? "Most Popular" : cl.mostPopular}</span>
+                        <div>
+                          <span className="text-xs font-bold text-primary">{isEn ? "28 Days" : cl.days28}</span>
+                          <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">200-Hour YTT Varkala</h4>
+                          <p className="text-xs text-muted-foreground mb-4">{isEn ? "Yoga Alliance RYT 200 certification with Ayurvedic immersion." : cl.desc200Varkala}</p>
+                        </div>
+                        <Link href={`${linkPrefix}/200-hour-yoga-teacher-training-in-varkala`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                          <span>{isEn ? "From $999 • Learn More" : cl.fromLearnMore.replace('{price}', '$999')}</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
                       </div>
-                      <Link href={`${linkPrefix}/200-hour-yoga-teacher-training-in-varkala`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
-                        <span>From $999 • Learn More</span>
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
 
-                    <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
-                      <div>
-                        <span className="text-xs font-bold text-primary">28 Days</span>
-                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">300-Hour YTT Varkala</h4>
-                        <p className="text-xs text-muted-foreground mb-4">Advanced master training leading to RYT 500 credential.</p>
+                      <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
+                        <div>
+                          <span className="text-xs font-bold text-primary">{isEn ? "28 Days" : cl.days28}</span>
+                          <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">300-Hour YTT Varkala</h4>
+                          <p className="text-xs text-muted-foreground mb-4">{isEn ? "Advanced master training leading to RYT 500 credential." : cl.desc300Varkala}</p>
+                        </div>
+                        <Link href={`${linkPrefix}/300-hour-yoga-teacher-training-in-varkala`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                          <span>{isEn ? "From $1,099 • Learn More" : cl.fromLearnMore.replace('{price}', '$1,099')}</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
                       </div>
-                      <Link href={`${linkPrefix}/300-hour-yoga-teacher-training-in-varkala`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
-                        <span>From $1,099 • Learn More</span>
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
-                      <div>
-                        <span className="text-xs font-bold text-primary">12 Days</span>
-                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">100-Hour YTT</h4>
-                        <p className="text-xs text-muted-foreground mb-4">Comprehensive foundation training for dedicated practitioners.</p>
+                    </>
+                  ) : (
+                    <>
+                      <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
+                        <div>
+                          <span className="text-xs font-bold text-primary">{isEn ? "12 Days" : cl.days12}</span>
+                          <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">100-Hour YTT</h4>
+                          <p className="text-xs text-muted-foreground mb-4">{isEn ? "Comprehensive foundation training for dedicated practitioners." : cl.desc100}</p>
+                        </div>
+                        <Link href={`${linkPrefix}/100-hour-yoga-teacher-training-in-${retreat.locationKey}`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                          <span>{isEn ? "Learn More" : cl.learnMore}</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
                       </div>
-                      <Link href={`${linkPrefix}/100-hour-yoga-teacher-training-in-${retreat.locationKey}`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
-                        <span>Learn More</span>
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
 
-                    <div className="p-5 rounded-2xl bg-card border-2 border-primary shadow-md flex flex-col justify-between">
-                      <div>
-                        <span className="text-xs font-bold text-primary">28 Days</span>
-                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">200-Hour YTT</h4>
-                        <p className="text-xs text-muted-foreground mb-4">Our flagship Yoga Alliance accredited teacher training.</p>
+                      <div className="p-5 rounded-2xl bg-card border-2 border-primary shadow-md flex flex-col justify-between">
+                        <div>
+                          <span className="text-xs font-bold text-primary">{isEn ? "28 Days" : cl.days28}</span>
+                          <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">200-Hour YTT</h4>
+                          <p className="text-xs text-muted-foreground mb-4">{isEn ? "Our flagship Yoga Alliance accredited teacher training." : cl.desc200}</p>
+                        </div>
+                        <Link href={`${linkPrefix}/200-hour-yoga-teacher-training-in-${retreat.locationKey}`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                          <span>{isEn ? "Learn More" : cl.learnMore}</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
                       </div>
-                      <Link href={`${linkPrefix}/200-hour-yoga-teacher-training-in-${retreat.locationKey}`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
-                        <span>Learn More</span>
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
 
-                    <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
-                      <div>
-                        <span className="text-xs font-bold text-primary">28 Days</span>
-                        <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">300-Hour YTT</h4>
-                        <p className="text-xs text-muted-foreground mb-4">Advanced teacher training pathway to RYT 500 credential.</p>
+                      <div className="p-5 rounded-2xl bg-card border border-border/80 shadow-sm flex flex-col justify-between">
+                        <div>
+                          <span className="text-xs font-bold text-primary">{isEn ? "28 Days" : cl.days28}</span>
+                          <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">300-Hour YTT</h4>
+                          <p className="text-xs text-muted-foreground mb-4">{isEn ? "Advanced teacher training pathway to RYT 500 credential." : cl.desc300}</p>
+                        </div>
+                        <Link href={`${linkPrefix}/300-hour-yoga-teacher-training-in-${retreat.locationKey}`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+                          <span>{isEn ? "Learn More" : cl.learnMore}</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
                       </div>
-                      <Link href={`${linkPrefix}/300-hour-yoga-teacher-training-in-${retreat.locationKey}`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
-                        <span>Learn More</span>
-                        <ArrowRight className="w-3.5 h-3.5" />
-                      </Link>
-                    </div>
-                  </>
-                )}
+                    </>
+                  );
+                })()}
               </div>
             </div>
           </section>

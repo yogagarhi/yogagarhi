@@ -460,7 +460,7 @@ async function runParityCheck() {
           const expected = VARKALA_LOCAL[locale] || 'Varkala';
           if (!text.includes(expected)) issues.push(`Missing Varkala local spelling: ${expected}`);
         }
-        if (!/3\s*(?:Days?|Tage|Jours?|Días|Giorni|Dagen|Дней|Дня|Hari|日|天)/i.test(text)) {
+        if (!/3\s*(?:Days?|Tage|Jours?|Días|Giorni|Dagen|Дней|Дня|Hari|日|天|일)/i.test(text)) {
           issues.push('Missing 3 Days package mention');
         }
 

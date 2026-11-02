@@ -87,6 +87,12 @@ export default async function RetreatsHubPage({ params }: Props) {
 
   const isEn = locale === "en";
   const t = await getTranslations({ locale, namespace: "retreatHub" });
+  let messages: any = {};
+  if (!isEn) {
+    try {
+      messages = (await import(`@/messages/${locale}.json`)).default;
+    } catch (e) {}
+  }
   const locations = Object.values(RETREAT_LOCATIONS);
 
   const homeUrl = isEn ? "https://www.yogagarhi.com" : `https://www.yogagarhi.com/${locale}`;
@@ -270,25 +276,33 @@ export default async function RetreatsHubPage({ params }: Props) {
                         )}
                       </div>
 
-                      <div className="p-6">
-                        <span className="text-xs uppercase font-bold tracking-wider text-primary">
-                          {retreat.badge}
-                        </span>
-                        <h3 className="font-heading font-bold text-xl text-foreground mt-1 mb-2">
-                          {retreat.title}
-                        </h3>
-                        <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
-                          {retreat.tagline}
-                        </p>
-                        <div className="space-y-2 mb-6">
-                          {retreat.highlights.slice(0, 3).map((h, i) => (
-                            <div key={i} className="flex items-center gap-2 text-xs text-foreground/80">
-                              <Check className="w-3.5 h-3.5 text-primary flex-shrink-0" />
-                              <span className="line-clamp-1">{h}</span>
+                      {(() => {
+                        const retreatKey = `${retreat.locationKey}-${retreat.slug}`;
+                        const pkg = !isEn && messages?.retreatDetail?.packages ? messages.retreatDetail.packages[retreatKey] : null;
+                        const cardTitle = (!isEn && pkg?.title) ? pkg.title : retreat.title;
+                        const cardHighlights = (!isEn && pkg?.included && pkg.included.length > 0) ? pkg.included.slice(0, 3) : retreat.highlights.slice(0, 3);
+                        return (
+                          <div className="p-6">
+                            <span className="text-xs uppercase font-bold tracking-wider text-primary">
+                              {retreat.badge}
+                            </span>
+                            <h3 className="font-heading font-bold text-xl text-foreground mt-1 mb-2">
+                              {cardTitle}
+                            </h3>
+                            <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
+                              {retreat.tagline}
+                            </p>
+                            <div className="space-y-2 mb-6">
+                              {cardHighlights.map((h: string, i: number) => (
+                                <div key={i} className="flex items-center gap-2 text-xs text-foreground/80">
+                                  <Check className="w-3.5 h-3.5 text-primary flex-shrink-0" />
+                                  <span className="line-clamp-1">{h}</span>
+                                </div>
+                              ))}
                             </div>
-                          ))}
-                        </div>
-                      </div>
+                          </div>
+                        );
+                      })()}
                     </div>
 
                     <div className="p-6 pt-0 border-t border-border/40 mt-auto flex items-center justify-between">

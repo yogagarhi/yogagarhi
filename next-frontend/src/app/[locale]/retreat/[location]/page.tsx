@@ -6,6 +6,7 @@ import { MapPin, Clock, ArrowRight, Sparkles, Check, Phone, CheckCircle2 } from 
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { RETREAT_LOCATIONS, RETREATS_DATA } from "@/constants/retreats";
+import { RETREAT_LOCATION_METADATA } from "@/constants/retreatMetadataTranslations";
 import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -37,20 +38,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const titles: Record<string, string> = {
-    bali: "Yoga Retreats in Bali | Ubud Wellness | YogaGarhi",
-    rishikesh: "Yoga Retreats in Rishikesh | Himalayas | YogaGarhi",
-    varkala: "Yoga Retreats in Varkala | Kerala Beach | YogaGarhi",
-  };
+  const locKey = loc.key as 'bali' | 'rishikesh' | 'varkala';
+  const metaItem = (locale === "en" || !RETREAT_LOCATION_METADATA[locale]?.[locKey])
+    ? RETREAT_LOCATION_METADATA.en[locKey]
+    : RETREAT_LOCATION_METADATA[locale][locKey];
 
-  const descriptions: Record<string, string> = {
-    bali: "Escape to Ubud with 3, 7 & 14-day yoga retreats in Bali. Daily Balinese massage, sound baths, yoga & vegan dining. Check dates & rates!",
-    rishikesh: "Experience yoga retreats in Rishikesh along the Ganges. Daily meditation, Ayurvedic therapy & Sattvic meals. View dates and book online!",
-    varkala: "Oceanfront yoga retreats in Varkala, Kerala. Authentic Ayurvedic healing, beach yoga sessions & sunset meditation. Book your holiday now!",
-  };
-
-  const title = titles[loc.key] || `${loc.name} Yoga Retreats | YogaGarhi`;
-  const description = descriptions[loc.key] || `Find the best Yoga Retreat in ${loc.fullName} with YogaGarhi.`;
+  const title = metaItem.title;
+  const description = metaItem.description;
 
   if (locale === "en") {
     return {
@@ -107,10 +101,41 @@ export default async function RetreatLocationPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "retreatLocation" });
   const tHub = await getTranslations({ locale, namespace: "retreatHub" });
 
+  let messages: any = {};
+  if (!isEn) {
+    try {
+      messages = (await import(`@/messages/${locale}.json`)).default;
+    } catch (e) {}
+  }
+
   const isBali = loc.key === "bali";
   const locationRetreats = Object.values(RETREATS_DATA).filter(
     (r) => r.locationKey === loc.key
   );
+
+  const locHeroSubtitles: Record<string, Record<string, string>> = {
+    id: {
+      bali: "Pusat Budaya Bali & Kedamaian Sakral Ubud",
+      rishikesh: "Ibu Kota Yoga Dunia & Energi Suci Sungai Gangga",
+      varkala: "Tebing Merah, Semilir Angin Laut & Ayurveda Autentik"
+    }
+  };
+
+  const locDescriptions: Record<string, Record<string, string>> = {
+    id: {
+      bali: "Temukan sanctuary damai di Ubud di tengah persawahan tropis, dilengkapi yoga harian, pijat tradisional Bali, sound healing, dan hidangan nabati segar.",
+      rishikesh: "Hirup udara segar pegunungan Himalaya di tepi suci Sungai Gangga, tempat para yogi bermeditasi selama berabad-abad.",
+      varkala: "Rasakan panorama tebing merah menghadap deburan ombak Samudra Hindia yang dipadukan dengan terapi penyembuhan Ayurveda autentik Kerala."
+    }
+  };
+
+  const heroSubtitleText = (!isEn && locHeroSubtitles[locale]?.[loc.key])
+    ? locHeroSubtitles[locale][loc.key]
+    : loc.heroSubtitle;
+
+  const descriptionText = (!isEn && locDescriptions[locale]?.[loc.key])
+    ? locDescriptions[locale][loc.key]
+    : (isEn ? loc.description : (t("heroSub") || loc.description));
 
   const displayName = getLocalizedLocationName(loc.key, loc.name, locale);
 
@@ -177,7 +202,7 @@ export default async function RetreatLocationPage({ params }: Props) {
               ? "bg-amber-100/80 border border-amber-300/60 text-amber-900"
               : "bg-primary/10 border border-primary/20 text-primary"
           }`}>
-            ✦ {loc.heroSubtitle}
+            ✦ {heroSubtitleText}
           </span>
 
           <h1 className={`font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold uppercase tracking-tight leading-tight mb-4 ${
@@ -191,7 +216,7 @@ export default async function RetreatLocationPage({ params }: Props) {
           </h1>
 
           <p className="text-base md:text-lg text-stone-700 max-w-3xl leading-relaxed mb-6 font-serif">
-            {isEn ? loc.description : (t("heroSub") || loc.description)}
+            {descriptionText}
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
@@ -261,21 +286,31 @@ export default async function RetreatLocationPage({ params }: Props) {
                     <span className="text-[11px] uppercase font-bold tracking-wider text-amber-800">
                       {retreat.badge}
                     </span>
-                    <h3 className="font-heading font-bold text-lg text-amber-950 mt-1 mb-2 line-clamp-2">
-                      {retreat.title}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-stone-600 line-clamp-2 mb-5">
-                      {retreat.tagline}
-                    </p>
+                    {(() => {
+                      const retreatKey = `${retreat.locationKey}-${retreat.slug}`;
+                      const pkg = !isEn && messages?.retreatDetail?.packages ? messages.retreatDetail.packages[retreatKey] : null;
+                      const cardTitle = (!isEn && pkg?.title) ? pkg.title : retreat.title;
+                      const cardHighlights = (!isEn && pkg?.included && pkg.included.length > 0) ? pkg.included.slice(0, 4) : retreat.highlights.slice(0, 4);
+                      return (
+                        <>
+                          <h3 className="font-heading font-bold text-lg text-amber-950 mt-1 mb-2 line-clamp-2">
+                            {cardTitle}
+                          </h3>
+                          <p className="text-xs sm:text-sm text-stone-600 line-clamp-2 mb-5">
+                            {retreat.tagline}
+                          </p>
 
-                    <div className="space-y-2 mb-6 pt-4 border-t border-stone-100">
-                      {retreat.highlights.slice(0, 4).map((h, i) => (
-                        <div key={i} className="flex items-start gap-2 text-xs text-stone-700">
-                          <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
-                          <span className="line-clamp-1">{h}</span>
-                        </div>
-                      ))}
-                    </div>
+                          <div className="space-y-2 mb-6 pt-4 border-t border-stone-100">
+                            {cardHighlights.map((h: string, i: number) => (
+                              <div key={i} className="flex items-start gap-2 text-xs text-stone-700">
+                                <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                                <span className="line-clamp-1">{h}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      );
+                    })()}
                   </div>
                 </div>
 

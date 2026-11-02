@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getRetreat, RETREATS_DATA } from "@/constants/retreats";
+import { RETREAT_DETAIL_METADATA } from "@/constants/retreatMetadataTranslations";
 import RetreatDetail from "@/components/pages/RetreatDetail";
 import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 import { setRequestLocale } from "next-intl/server";
@@ -38,6 +39,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const isEn = !locale || locale === "en";
+  const retreatKey = `${retreat.locationKey}-${retreat.slug}`;
+  const metaItem = (isEn || !RETREAT_DETAIL_METADATA[locale || "en"]?.[retreatKey])
+    ? { title: retreat.seoTitle, description: retreat.seoDescription }
+    : RETREAT_DETAIL_METADATA[locale || "en"][retreatKey];
+
+  const pageTitle = metaItem.title;
+  const pageDescription = metaItem.description;
+
   const canonicalUrl = isEn
     ? `https://www.yogagarhi.com/retreat/${retreat.locationKey}/${retreat.slug}`
     : `https://www.yogagarhi.com/${locale}/retreat/${retreat.locationKey}/${retreat.slug}`;
@@ -45,9 +54,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const baseMeta: Metadata = {
     metadataBase: new URL("https://www.yogagarhi.com"),
     title: {
-      absolute: retreat.seoTitle,
+      absolute: pageTitle,
     },
-    description: retreat.seoDescription,
+    description: pageDescription,
     keywords: retreat.keywords,
     alternates: {
       canonical: canonicalUrl,
@@ -65,8 +74,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: retreat.seoTitle,
-      description: retreat.seoDescription,
+      title: pageTitle,
+      description: pageDescription,
       url: canonicalUrl,
       type: "website",
       siteName: "YogaGarhi",
@@ -81,8 +90,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: retreat.seoTitle,
-      description: retreat.seoDescription,
+      title: pageTitle,
+      description: pageDescription,
       images: [retreat.heroImage],
       creator: "@YogaGarhi",
     },
