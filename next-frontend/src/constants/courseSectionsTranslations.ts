@@ -63,11 +63,19 @@ export interface CompareCoursesUIData {
   rowsVarkala?: CompareRow[];
 }
 
+export interface CourseCardUIData {
+  title: string;
+  duration: string;
+  certification: string;
+  description: string;
+}
+
 export interface ExploreMoreCoursesUIData {
   badge: string;
   title: string;
   subtitle: string;
   exploreCourse: string;
+  courses?: Record<string, CourseCardUIData>;
 }
 
 export interface BestTimeToVisitUIData {
@@ -1594,67 +1602,551 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
     "badge": "Continue Your Growth",
     "title": "Explore More Yoga Teacher Training Courses",
     "subtitle": "Discover our full spectrum of Yoga Alliance accredited trainings across Rishikesh and Bali.",
-    "exploreCourse": "Explore Course"
+    "exploreCourse": "Explore Course",
+    "courses": {
+      "100-rishikesh": {
+            "title": "100 Hour Yoga Teacher Training in Rishikesh",
+            "duration": "12 Days (11 Nights)",
+            "certification": "Foundation Immersion",
+            "description": "Ideal foundation course for beginners or time-constrained yogis seeking deep spiritual immersion along the sacred Ganges."
+      },
+      "200-rishikesh": {
+            "title": "200 Hour Yoga Teacher Training in Rishikesh",
+            "duration": "28 Days (27 Nights)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Internationally accredited flagship teacher training. Master multi-style asana, anatomy, philosophy, and alignment in an 8–10 student batch."
+      },
+      "300-rishikesh": {
+            "title": "300 Hour Yoga Teacher Training in Rishikesh",
+            "duration": "28 Days (27 Nights)",
+            "certification": "RYT 500 Pathway",
+            "description": "Advanced master-level training for 200-hour certified teachers. Deepen into therapeutic sequencing, advanced asanas, and classical texts."
+      },
+      "200-bali": {
+            "title": "200 Hour Yoga Teacher Training in Bali",
+            "duration": "28 Days (27 Nights)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Immerse in tropical jungle serenity, sacred water cleansing, sound healing, and holistic yoga teacher training in Bali."
+      },
+      "100-varkala": {
+            "title": "100 Hour Yoga Teacher Training in Varkala",
+            "duration": "12 Days (11 Nights)",
+            "certification": "Foundation Immersion",
+            "description": "Foundation coastal immersion combining classical yoga with traditional Kerala Ayurveda and oceanfront meditation."
+      },
+      "200-varkala": {
+            "title": "200 Hour Yoga Teacher Training in Varkala",
+            "duration": "28 Days (27 Nights)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Comprehensive Yoga Alliance teacher training atop the peaceful red cliffs of Varkala overlooking the Arabian Sea."
+      },
+      "300-varkala": {
+            "title": "300 Hour Yoga Teacher Training in Varkala",
+            "duration": "28 Days (27 Nights)",
+            "certification": "RYT 500 Pathway",
+            "description": "Advanced 300-hour master certification integrating therapeutic sequencing, marma points, and coastal Ayurvedic lifestyle."
+      }
+}
   },
   "nl": {
     "badge": "Blijf Jezelf Ontwikkelen",
     "title": "Ontdek Meer Yogadocentenopleidingen",
     "subtitle": "Ontdek ons volledige aanbod van Yoga Alliance geaccrediteerde opleidingen in Rishikesh en Bali.",
-    "exploreCourse": "Bekijk Opleiding"
+    "exploreCourse": "Bekijk Opleiding",
+    "courses": {
+      "100-rishikesh": {
+            "title": "100-Uur Yogadocentenopleiding in Rishikesh",
+            "duration": "12 Dagen (11 Nachten)",
+            "certification": "Basis Immersion",
+            "description": "Ideale basiscursus voor beginners of reizigers met beperkte tijd die diepe spirituele verbinding zoeken aan de heilige Ganges."
+      },
+      "200-rishikesh": {
+            "title": "200-Uur Yogadocentenopleiding in Rishikesh",
+            "duration": "28 Dagen (27 Nachten)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Internationaal erkende vlaggenschipopleiding. Leer multi-stijl asana's, anatomie, filosofie en uitlijning in groepen van 8–10 personen."
+      },
+      "300-rishikesh": {
+            "title": "300-Uur Yogadocentenopleiding in Rishikesh",
+            "duration": "28 Dagen (27 Nachten)",
+            "certification": "RYT 500 Traject",
+            "description": "Gevorderde meesteropleiding voor 200-uur gecertificeerde docenten. Verdieping in therapeutische sequencing, geavanceerde asana's en klassieke teksten."
+      },
+      "200-bali": {
+            "title": "200-Uur Yogadocentenopleiding op Bali",
+            "duration": "28 Dagen (27 Nachten)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Dompel je onder in de tropische jungle, heilige waterceremonies, klankheling en holistische yogaopleiding op Bali."
+      },
+      "100-varkala": {
+            "title": "100-Uur Yogadocentenopleiding in Varkala",
+            "duration": "12 Dagen (11 Nachten)",
+            "certification": "Basis Immersion",
+            "description": "Kustonderdompeling die klassieke yoga combineert met traditionele Kerala Ayurveda en meditatie aan de oceaan."
+      },
+      "200-varkala": {
+            "title": "200-Uur Yogadocentenopleiding in Varkala",
+            "duration": "28 Dagen (27 Nachten)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Complete Yoga Alliance opleiding bovenop de rustgevende rode kliffen van Varkala met uitzicht op de Arabische Zee."
+      },
+      "300-varkala": {
+            "title": "300-Uur Yogadocentenopleiding in Varkala",
+            "duration": "28 Dagen (27 Nachten)",
+            "certification": "RYT 500 Traject",
+            "description": "Gevorderde 300-uur meestercertificering met therapeutische sequencing, marma-punten en een Ayurvedische levensstijl aan zee."
+      }
+}
   },
   "de": {
     "badge": "Wachsen Sie Weiter",
     "title": "Entdecken Sie Weitere Yogalehrer-Ausbildungen",
     "subtitle": "Entdecken Sie unser gesamtes Angebot an Yoga Alliance akkreditierten Ausbildungen in Rishikesh und auf Bali.",
-    "exploreCourse": "Kurs Entdecken"
+    "exploreCourse": "Kurs Entdecken",
+    "courses": {
+      "100-rishikesh": {
+            "title": "100-Stunden Yogalehrer-Ausbildung in Rishikesh",
+            "duration": "12 Tage (11 Nächte)",
+            "certification": "Grundlagen-Immersion",
+            "description": "Idealer Grundkurs für Anfänger oder zeitlich begrenzte Yogis, die eine tiefe spirituelle Erfahrung am heiligen Ganges suchen."
+      },
+      "200-rishikesh": {
+            "title": "200-Stunden Yogalehrer-Ausbildung in Rishikesh",
+            "duration": "28 Tage (27 Nächte)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "International akkreditierte Flaggschiff-Ausbildung. Meistern Sie Multi-Style Asana, Anatomie, Philosophie und Alignment in Gruppen von 8–10 Schülern."
+      },
+      "300-rishikesh": {
+            "title": "300-Stunden Yogalehrer-Ausbildung in Rishikesh",
+            "duration": "28 Tage (27 Nächte)",
+            "certification": "RYT 500 Weg",
+            "description": "Fortgeschrittenes Meistertraining für 200-Stunden zertifizierte Lehrer. Vertiefung in therapeutisches Sequencing, fortgeschrittene Asanas und klassische Texte."
+      },
+      "200-bali": {
+            "title": "200-Stunden Yogalehrer-Ausbildung auf Bali",
+            "duration": "28 Tage (27 Nächte)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Tauchen Sie ein in tropische Dschungel-Ruhe, heilige Wasserreinigungen, Klangheilung und ganzheitliche Yogalehrer-Ausbildung auf Bali."
+      },
+      "100-varkala": {
+            "title": "100-Stunden Yogalehrer-Ausbildung in Varkala",
+            "duration": "12 Tage (11 Nächte)",
+            "certification": "Grundlagen-Immersion",
+            "description": "Kompakte Küsten-Immersion, die klassisches Yoga mit traditionellem Kerala-Ayurveda und Ozean-Meditation verbindet."
+      },
+      "200-varkala": {
+            "title": "200-Stunden Yogalehrer-Ausbildung in Varkala",
+            "duration": "28 Tage (27 Nächte)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Umfassende Yoga Alliance Lehrerausbildung auf den friedlichen roten Klippen von Varkala mit Blick auf das Arabische Meer."
+      },
+      "300-varkala": {
+            "title": "300-Stunden Yogalehrer-Ausbildung in Varkala",
+            "duration": "28 Tage (27 Nächte)",
+            "certification": "RYT 500 Weg",
+            "description": "Fortgeschrittene 300-Stunden-Zertifizierung mit therapeutischem Sequencing, Marma-Punkten und ayurvedischem Lebensstil am Meer."
+      }
+}
   },
   "fr": {
     "badge": "Poursuivez Votre Évolution",
     "title": "Découvrez Nos Autres Formations de Professeur de Yoga",
     "subtitle": "Découvrez notre éventail complet de formations certifiées Yoga Alliance à Rishikesh et Bali.",
-    "exploreCourse": "Explorer la Formation"
+    "exploreCourse": "Explorer la Formation",
+    "courses": {
+      "100-rishikesh": {
+            "title": "Formation de Professeur de Yoga 100 Heures à Rishikesh",
+            "duration": "12 Jours (11 Nuits)",
+            "certification": "Immersion Fondamentale",
+            "description": "Formation de base idéale pour débutants ou yogis ayant peu de temps, en quête d'une immersion spirituelle profonde le long du Gange sacré."
+      },
+      "200-rishikesh": {
+            "title": "Formation de Professeur de Yoga 200 Heures à Rishikesh",
+            "duration": "28 Jours (27 Nuits)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Formation phare accréditée internationalement. Maîtrisez les asanas multi-styles, l'anatomie, la philosophie et l'alignement en groupe de 8 à 10 élèves."
+      },
+      "300-rishikesh": {
+            "title": "Formation de Professeur de Yoga 300 Heures à Rishikesh",
+            "duration": "28 Jours (27 Nuits)",
+            "certification": "Parcours RYT 500",
+            "description": "Perfectionnement de niveau maître pour professeurs certifiés 200h. Séquençage thérapeutique, asanas avancés et textes classiques."
+      },
+      "200-bali": {
+            "title": "Formation de Professeur de Yoga 200 Heures à Bali",
+            "duration": "28 Jours (27 Nuits)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Plongez dans la sérénité de la jungle tropicale, les rituels de purification par l'eau, la sonothérapie et le yoga holistique à Bali."
+      },
+      "100-varkala": {
+            "title": "Formation de Professeur de Yoga 100 Heures à Varkala",
+            "duration": "12 Jours (11 Nuits)",
+            "certification": "Immersion Fondamentale",
+            "description": "Immersion côtière fondamentale associant yoga traditionnel, Ayurveda authentique du Kerala et méditation face à l'océan."
+      },
+      "200-varkala": {
+            "title": "Formation de Professeur de Yoga 200 Heures à Varkala",
+            "duration": "28 Jours (27 Nuits)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Formation certifiante complète Yoga Alliance sur les falaises rouges paisibles de Varkala dominant la mer d'Arabie."
+      },
+      "300-varkala": {
+            "title": "Formation de Professeur de Yoga 300 Heures à Varkala",
+            "duration": "28 Jours (27 Nuits)",
+            "certification": "Parcours RYT 500",
+            "description": "Certification avancée de 300 heures intégrant séquençage thérapeutique, points marmas et art de vivre ayurvédique au bord de l'océan."
+      }
+}
   },
   "es": {
     "badge": "Continúa Tu Crecimiento",
     "title": "Descubre Más Formaciones de Profesores de Yoga",
     "subtitle": "Descubre nuestra oferta completa de cursos acreditados por Yoga Alliance en Rishikesh y Bali.",
-    "exploreCourse": "Explorar Formación"
+    "exploreCourse": "Explorar Formación",
+    "courses": {
+      "100-rishikesh": {
+            "title": "Formación de Profesores de Yoga 100 Horas en Rishikesh",
+            "duration": "12 Días (11 Noches)",
+            "certification": "Inmersión Fundamental",
+            "description": "Curso básico ideal para principiantes o yoguis con tiempo limitado que buscan una inmersión espiritual profunda junto al sagrado Ganges."
+      },
+      "200-rishikesh": {
+            "title": "Formación de Profesores de Yoga 200 Horas en Rishikesh",
+            "duration": "28 Días (27 Noches)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Curso estrella con acreditación internacional. Domina asanas multiestilo, anatomía, filosofía y alineación en grupos reducidos de 8 a 10 alumnos."
+      },
+      "300-rishikesh": {
+            "title": "Formación de Profesores de Yoga 300 Horas en Rishikesh",
+            "duration": "28 Días (27 Noches)",
+            "certification": "Camino RYT 500",
+            "description": "Entrenamiento de nivel maestro para profesores certificados de 200 horas. Secuenciación terapéutica, asanas avanzadas y textos clásicos."
+      },
+      "200-bali": {
+            "title": "Formación de Profesores de Yoga 200 Horas en Bali",
+            "duration": "28 Días (27 Noches)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Sumérgete en la serenidad de la selva tropical, purificación con agua sagrada, sanación sonora y yoga holístico en Bali."
+      },
+      "100-varkala": {
+            "title": "Formación de Profesores de Yoga 100 Horas en Varkala",
+            "duration": "12 Días (11 Noches)",
+            "certification": "Inmersión Fundamental",
+            "description": "Inmersión costera que combina yoga clásico con Ayurveda tradicional de Kerala y meditación frente al mar."
+      },
+      "200-varkala": {
+            "title": "Formación de Profesores de Yoga 200 Horas en Varkala",
+            "duration": "28 Días (27 Noches)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Completa formación certificada por Yoga Alliance sobre los tranquilos acantilados rojos de Varkala frente al mar Arábigo."
+      },
+      "300-varkala": {
+            "title": "Formación de Profesores de Yoga 300 Horas en Varkala",
+            "duration": "28 Días (27 Noches)",
+            "certification": "Camino RYT 500",
+            "description": "Certificación superior de 300 horas integrando secuenciación terapéutica, puntos marma y estilo de vida ayurvédico costero."
+      }
+}
   },
   "it": {
     "badge": "Continua a Crescere",
     "title": "Esplora Altri Corsi per Insegnanti di Yoga",
     "subtitle": "Scopri la nostra gamma completa di corsi accreditati Yoga Alliance a Rishikesh e Bali.",
-    "exploreCourse": "Scopri il Corso"
+    "exploreCourse": "Scopri il Corso",
+    "courses": {
+      "100-rishikesh": {
+            "title": "Corso Formazione Insegnanti Yoga 100 Ore a Rishikesh",
+            "duration": "12 Giorni (11 Notti)",
+            "certification": "Immersione Fondamentale",
+            "description": "Corso fondamentale ideale per principianti o yogi con poco tempo che cercano una profonda immersione spirituale lungo il Gange."
+      },
+      "200-rishikesh": {
+            "title": "Corso Formazione Insegnanti Yoga 200 Ore a Rishikesh",
+            "duration": "28 Giorni (27 Notti)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Formazione di riferimento accreditata a livello globale. Apprendi asana multi-stile, anatomia, filosofia e allineamento in classi di 8–10 allievi."
+      },
+      "300-rishikesh": {
+            "title": "Corso Formazione Insegnanti Yoga 300 Ore a Rishikesh",
+            "duration": "28 Giorni (27 Notti)",
+            "certification": "Percorso RYT 500",
+            "description": "Corso avanzato di livello master per insegnanti con 200 ore. Sequenze terapeutiche, asana complesse e studio dei testi classici."
+      },
+      "200-bali": {
+            "title": "Corso Formazione Insegnanti Yoga 200 Ore a Bali",
+            "duration": "28 Giorni (27 Notti)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Immergiti nella tranquillità della giungla tropicale, purificazione con acqua sacra, bagni di suoni e yoga olistico a Bali."
+      },
+      "100-varkala": {
+            "title": "Corso Formazione Insegnanti Yoga 100 Ore a Varkala",
+            "duration": "12 Giorni (11 Notti)",
+            "certification": "Immersione Fondamentale",
+            "description": "Immersione costiera di base che unisce yoga classico, Ayurveda tradizionale del Kerala e meditazione sul mare."
+      },
+      "200-varkala": {
+            "title": "Corso Formazione Insegnanti Yoga 200 Ore a Varkala",
+            "duration": "28 Giorni (27 Notti)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Formazione completa Yoga Alliance sulle suggestive scogliere rosse di Varkala affacciate sul Mar Arabico."
+      },
+      "300-varkala": {
+            "title": "Corso Formazione Insegnanti Yoga 300 Ore a Varkala",
+            "duration": "28 Giorni (27 Notti)",
+            "certification": "Percorso RYT 500",
+            "description": "Certificazione master avanzata di 300 ore con sequenze terapeutiche, punti marma e stile di vita ayurvedico costiero."
+      }
+}
   },
   "ru": {
     "badge": "Продолжайте развиваться",
     "title": "Другие курсы подготовки преподавателей йоги",
     "subtitle": "Ознакомьтесь со всеми сертифицированными курсами Yoga Alliance в Ришикеше и на Бали.",
-    "exploreCourse": "Узнать подробнее"
+    "exploreCourse": "Узнать подробнее",
+    "courses": {
+      "100-rishikesh": {
+            "title": "Курс Подготовки Преподавателей Йоги 100 Часов в Ришикеше",
+            "duration": "12 Дней (11 Ночей)",
+            "certification": "Базовое Погружение",
+            "description": "Идеальный базовый курс для начинающих или ограниченных во времени практиков, ищущих духовного опыта на Ганге."
+      },
+      "200-rishikesh": {
+            "title": "Курс Подготовки Преподавателей Йоги 200 Часов в Ришикеше",
+            "duration": "28 Дней (27 Ночей)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Международно признанный флагманский курс. Освойте мульти-стиль асан, анатомию, философию и отстройки в группе из 8–10 человек."
+      },
+      "300-rishikesh": {
+            "title": "Курс Подготовки Преподавателей Йоги 300 Часов в Ришикеше",
+            "duration": "28 Дней (27 Ночей)",
+            "certification": "Путь к RYT 500",
+            "description": "Продвинутое обучение для сертифицированных преподавателей с 200h. Терапевтическое построение уроков, сложные асаны и тексты."
+      },
+      "200-bali": {
+            "title": "Курс Подготовки Преподавателей Йоги 200 Часов на Бали",
+            "duration": "28 Дней (27 Ночей)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Погрузитесь в умиротворение тропических джунглей, водные ритуалы, звукотерапию и целостное обучение йоге на Бали."
+      },
+      "100-varkala": {
+            "title": "Курс Подготовки Преподавателей Йоги 100 Часов в Варкале",
+            "duration": "12 Дней (11 Ночей)",
+            "certification": "Базовое Погружение",
+            "description": "Базовый прибрежный курс, сочетающий классическую йогу с традиционной аюрведой Кералы и медитацией у океана."
+      },
+      "200-varkala": {
+            "title": "Курс Подготовки Преподавателей Йоги 200 Часов в Варкале",
+            "duration": "28 Дней (27 Ночей)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Полный сертифицированный курс Yoga Alliance на живописных красных утесах Варкалы с видом на Аравийское море."
+      },
+      "300-varkala": {
+            "title": "Курс Подготовки Преподавателей Йоги 300 Часов в Варкале",
+            "duration": "28 Дней (27 Ночей)",
+            "certification": "Путь к RYT 500",
+            "description": "Продвинутый мастер-курс 300 часов: йогатерапия, работа с точками марма и аюрведический образ жизни на побережье."
+      }
+}
   },
   "id": {
     "badge": "Lanjutkan Pertumbuhan Anda",
     "title": "Jelajahi Lebih Banyak Kursus Guru Yoga",
     "subtitle": "Temukan seluruh spektrum pelatihan terakreditasi Yoga Alliance kami di Rishikesh dan Bali.",
-    "exploreCourse": "Jelajahi Kursus"
+    "exploreCourse": "Jelajahi Kursus",
+    "courses": {
+      "100-rishikesh": {
+            "title": "Pelatihan Guru Yoga 100 Jam di Rishikesh",
+            "duration": "12 Hari (11 Malam)",
+            "certification": "Imersi Dasar Fondasi",
+            "description": "Kursus dasar ideal bagi pemula atau yogi dengan waktu terbatas yang mencari pendalaman spiritual di sepanjang Sungai Gangga suci."
+      },
+      "200-rishikesh": {
+            "title": "Pelatihan Guru Yoga 200 Jam di Rishikesh",
+            "duration": "28 Hari (27 Malam)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Pelatihan guru unggulan terakreditasi internasional. Kuasai asana multi-gaya, anatomi, filosofi, dan penyelarasan dalam kelompok 8–10 siswa."
+      },
+      "300-rishikesh": {
+            "title": "Pelatihan Guru Yoga 300 Jam di Rishikesh",
+            "duration": "28 Hari (27 Malam)",
+            "certification": "Jalur RYT 500",
+            "description": "Pelatihan tingkat master lanjutan untuk guru bersertifikat 200 jam. Pendalaman sekuensing terapeutik, asana tingkat lanjut, dan teks klasik."
+      },
+      "200-bali": {
+            "title": "Pelatihan Guru Yoga 200 Jam di Bali",
+            "duration": "28 Hari (27 Malam)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Tenggelam dalam ketenangan hutan tropis, penyucian air suci, terapi suara, dan pelatihan guru yoga holistik di Bali."
+      },
+      "100-varkala": {
+            "title": "Pelatihan Guru Yoga 100 Jam di Varkala",
+            "duration": "12 Hari (11 Malam)",
+            "certification": "Imersi Dasar Fondasi",
+            "description": "Imersi pesisir yang memadukan yoga klasik dengan Ayurveda tradisional Kerala dan meditasi tepi laut."
+      },
+      "200-varkala": {
+            "title": "Pelatihan Guru Yoga 200 Jam di Varkala",
+            "duration": "28 Hari (27 Malam)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "Pelatihan guru Yoga Alliance komprehensif di atas tebing merah Varkala yang tenang menghadap Samudra Hindia."
+      },
+      "300-varkala": {
+            "title": "Pelatihan Guru Yoga 300 Jam di Varkala",
+            "duration": "28 Hari (27 Malam)",
+            "certification": "Jalur RYT 500",
+            "description": "Sertifikasi master lanjutan 300 jam yang mengintegrasikan sekuensing terapeutik, titik marma, dan gaya hidup Ayurveda pesisir."
+      }
+}
   },
   "ja": {
     "badge": "さらなる成長へ",
     "title": "その他のヨガ指導者養成コースを探す",
     "subtitle": "リシケシとバリ島で開催される全米ヨガアライアンス認定コースの全ラインナップをご覧ください。",
-    "exploreCourse": "コースを見る"
+    "exploreCourse": "コースを見る",
+    "courses": {
+      "100-rishikesh": {
+            "title": "リシケシ 100時間 ヨガ指導者養成コース",
+            "duration": "12日間（11泊）",
+            "certification": "基礎イマージョン",
+            "description": "聖なるガンジス川のほとりで深い精神的な学びを求める初心者や多忙な方のための理想的な基礎講座。"
+      },
+      "200-rishikesh": {
+            "title": "リシケシ 200時間 ヨガ指導者養成コース",
+            "duration": "28日間（27泊）",
+            "certification": "全米ヨガアライアンス RYT 200",
+            "description": "国際公認フラッグシップ講座。8〜10名の少人数でマルチスタイルのアーサナ、解剖学、哲学、アライメントを完全修得。"
+      },
+      "300-rishikesh": {
+            "title": "リシケシ 300時間 ヨガ指導者養成コース",
+            "duration": "28日間（27泊）",
+            "certification": "RYT 500 ステップアップ",
+            "description": "200時間修了者のための上級マスター講座。セラピー的シークエンス、高度なアーサナ、古典原典の深奥を学びます。"
+      },
+      "200-bali": {
+            "title": "バリ島 200時間 ヨガ指導者養成コース",
+            "duration": "28日間（27泊）",
+            "certification": "全米ヨガアライアンス RYT 200",
+            "description": "熱帯のジャングル、聖なる沐浴浄化、サウンドヒーリング、ホリスティックなヨーガ指導者育成プログラム。"
+      },
+      "100-varkala": {
+            "title": "ヴァルカラ 100時間 ヨガ指導者養成コース",
+            "duration": "12日間（11泊）",
+            "certification": "基礎イマージョン",
+            "description": "古典ヨーガと本場ケーララ州の伝統アーユルヴェーダ、オーシャンビュー瞑想を融合させた沿岸集中講座。"
+      },
+      "200-varkala": {
+            "title": "ヴァルカラ 200時間 ヨガ指導者養成コース",
+            "duration": "28日間（27泊）",
+            "certification": "全米ヨガアライアンス RYT 200",
+            "description": "アラビア海を望むヴァルカラの静穏な赤土の絶壁で開催される全米ヨガアライアンス公認の総合指導者養成講座。"
+      },
+      "300-varkala": {
+            "title": "ヴァルカラ 300時間 ヨガ指導者養成コース",
+            "duration": "28日間（27泊）",
+            "certification": "RYT 500 ステップアップ",
+            "description": "セラピー的シークエンス、マルマ療法、沿岸アーユルヴェーダの叡智を統合した上級300時間マスター講座。"
+      }
+}
   },
   "ko": {
     "badge": "배움을 이어가세요",
     "title": "더 많은 요가 지도자 과정 둘러보기",
     "subtitle": "리시케시와 발리에서 열리는 전미 요가 얼라이언스 공인 과정들을 만나보세요.",
-    "exploreCourse": "과정 살펴보기"
+    "exploreCourse": "과정 살펴보기",
+    "courses": {
+      "100-rishikesh": {
+            "title": "리시케시 100시간 요가 지도자 과정",
+            "duration": "12일 (11박)",
+            "certification": "기초 몰입 과정",
+            "description": "성스러운 갠지스 강변에서 깊은 영적 몰입을 경험하고자 하는 초보자 또는 바쁜 현대인을 위한 기초 과정."
+      },
+      "200-rishikesh": {
+            "title": "리시케시 200시간 요가 지도자 과정",
+            "duration": "28일 (27박)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "국제 공인 플래그십 코스. 8~10명 소수정예로 멀티 스타일 아사나, 해부학, 요가 철학, 정렬법을 완벽히 마스터합니다."
+      },
+      "300-rishikesh": {
+            "title": "리시케시 300시간 요가 지도자 과정",
+            "duration": "28일 (27박)",
+            "certification": "RYT 500 연계 과정",
+            "description": "200시간 자격 보유자를 위한 상급 마스터 과정. 테라피 시퀀싱, 심화 아사나, 고전 원전 강독 집중 교육."
+      },
+      "200-bali": {
+            "title": "발리 200시간 요가 지도자 과정",
+            "duration": "28일 (27박)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "열대 우림의 고요함, 성수 정화 세레모니, 사운드 힐링이 함께하는 발리 홀리스틱 요가 강사 자격 과정."
+      },
+      "100-varkala": {
+            "title": "바르칼라 100시간 요가 지도자 과정",
+            "duration": "12일 (11박)",
+            "certification": "기초 몰입 과정",
+            "description": "전통 요가와 케랄라 정통 아유르베다, 오션뷰 명상이 조화를 이루는 해변 기초 몰입 프로그램."
+      },
+      "200-varkala": {
+            "title": "바르칼라 200시간 요가 지도자 과정",
+            "duration": "28일 (27박)",
+            "certification": "Yoga Alliance RYT 200",
+            "description": "아라비아해를 굽어보는 바르칼라의 붉은 절벽 위에서 펼쳐지는 종합 요가 얼라이언스 공인 강사 코스."
+      },
+      "300-varkala": {
+            "title": "바르칼라 300시간 요가 지도자 과정",
+            "duration": "28일 (27박)",
+            "certification": "RYT 500 연계 과정",
+            "description": "테라피 시퀀싱, 마르마 포인트, 해안 아유르베다 라이프스타일을 결합한 상급 300시간 마스터 과정."
+      }
+}
   },
   "zh": {
     "badge": "持续深造进阶",
     "title": "探索更多瑜伽教师培训课程",
     "subtitle": "探索我们在瑞诗凯诗与巴厘岛开设的全方位瑜伽联盟认证教师培训课程。",
-    "exploreCourse": "了解课程"
+    "exploreCourse": "了解课程",
+    "courses": {
+      "100-rishikesh": {
+            "title": "瑞诗凯诗 100小时 瑜伽导师培训班",
+            "duration": "12天 (11晚)",
+            "certification": "基础筑基精进",
+            "description": "为初学者或时间有限的瑜伽同修量身打造，在圣河恒河之滨体验深邃的灵性沉浸。"
+      },
+      "200-rishikesh": {
+            "title": "瑞诗凯诗 200小时 瑜伽导师培训班",
+            "duration": "28天 (27晚)",
+            "certification": "全美瑜伽联盟 RYT 200",
+            "description": "国际权威旗舰师资认证。在8–10人小班教学中全面掌握多流派体式、运动解剖、哲学与精准正位。"
+      },
+      "300-rishikesh": {
+            "title": "瑞诗凯诗 300小时 瑜伽导师培训班",
+            "duration": "28天 (27晚)",
+            "certification": "迈向 RYT 500 进阶之路",
+            "description": "面向200小时持证导师的高阶研修班。深入研习理疗序列编排、高难度体式精准练习与经典梵文原典。"
+      },
+      "200-bali": {
+            "title": "巴厘岛 200小时 瑜伽导师培训班",
+            "duration": "28天 (27晚)",
+            "certification": "全美瑜伽联盟 RYT 200",
+            "description": "沉浸于热带雨林静谧之中，结合圣泉净身洗礼、西藏颂钵音疗与整体身心瑜伽师资培训。"
+      },
+      "100-varkala": {
+            "title": "瓦卡拉 100小时 瑜伽导师培训班",
+            "duration": "12天 (11晚)",
+            "certification": "基础筑基精进",
+            "description": "将古典瑜伽、喀拉拉邦地道阿育吠陀养生与海滨听涛冥想完美结合的海岸基础课程。"
+      },
+      "200-varkala": {
+            "title": "瓦卡拉 200小时 瑜伽导师培训班",
+            "duration": "28天 (27晚)",
+            "certification": "全美瑜伽联盟 RYT 200",
+            "description": "在俯瞰阿拉伯海的瓦卡拉宁静红砂岩悬崖之上，研习全美瑜伽联盟官方认证全科师资班。"
+      },
+      "300-varkala": {
+            "title": "瓦卡拉 300小时 瑜伽导师培训班",
+            "duration": "28天 (27晚)",
+            "certification": "迈向 RYT 500 进阶之路",
+            "description": "300小时高级大师进阶认证，融合理疗序列设计、Marma经络要穴及海岸阿育吠陀健康生活方式。"
+      }
+}
   }
 };
 
@@ -1722,7 +2214,29 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "subtitleRishikesh": "Pianifica il soggiorno in base al clima himalayano e ai tuoi traguardi personali.",
     "subtitleVarkala": "Pianifica il soggiorno in base alle stagioni tropicali del Kerala.",
     "monthlyStart": "Inizio il 1° di ogni mese",
-    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsRishikesh": [
+      {
+            "badge": "Migliore Stagione",
+            "temp": "18°C – 28°C",
+            "period": "Ottobre – Marzo",
+            "climate": "Soleggiato, Fresco e Sereno",
+            "description": "Inverno mite e cieli limpidi e soleggiati. Ideale per la pratica quotidiana intensa di asana, meditazioni all'aperto lungo il Gange e passeggiate rigeneranti sull'Himalaya."
+      },
+      {
+            "badge": "Stagione Calda",
+            "temp": "24°C – 35°C",
+            "period": "Aprile – Giugno",
+            "climate": "Caldo e Ricco di Prana",
+            "description": "Clima tropicale caldo ideale per la flessibilità muscolare profonda, bagni mattutini nel Gange e satsang filosofici serali sulla terrazza panoramica."
+      },
+      {
+            "badge": "Stagione dei Monsoni",
+            "temp": "22°C – 30°C",
+            "period": "Luglio – Settembre",
+            "climate": "Lussureggiante e Meditativo",
+            "description": "La sacra stagione di Shravan con nebbia verdeggiante sulle cime, cascate vive e profondo silenzio interiore per lo studio contemplativo."
+      }
+],
     "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "ru": {
@@ -1733,7 +2247,29 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "subtitleRishikesh": "Планируйте поездку с учетом климатических особенностей Гималаев и личных целей.",
     "subtitleVarkala": "Планируйте поездку с учетом тропического климата Кералы.",
     "monthlyStart": "Начало 1-го числа каждого месяца",
-    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsRishikesh": [
+      {
+            "badge": "Лучший Сезон",
+            "temp": "18°C – 28°C",
+            "period": "Октябрь – Март",
+            "climate": "Солнечно, Свежо и Безмятежно",
+            "description": "Мягкая прохладная зима и ясное небо. Идеально для интенсивной практики асан, медитаций на берегу Ганги и прогулок по склонам Гималаев."
+      },
+      {
+            "badge": "Теплый Сезон",
+            "temp": "24°C – 35°C",
+            "period": "Апрель – Июнь",
+            "climate": "Тепло и Высокий Уровень Праны",
+            "description": "Теплая погода способствует глубокой гибкости мышц, утренним омовениям в Ганге и вечерним философским сатсангам на крыше ашрама."
+      },
+      {
+            "badge": "Сезон Муссонов",
+            "temp": "22°C – 30°C",
+            "period": "Июль – Сентябрь",
+            "climate": "Изумрудный и Медитативный",
+            "description": "Священный сезон Шраван с пышной гималайской зеленью, водопадами и благодатной тишиной для глубокого созерцательного обучения."
+      }
+],
     "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "id": {
@@ -1744,7 +2280,29 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "subtitleRishikesh": "Rencanakan perjalanan Anda sesuai dengan pola cuaca Himalaya dan tujuan latihan Anda.",
     "subtitleVarkala": "Rencanakan pelatihan tepi pantai Anda sesuai musim tropis Kerala.",
     "monthlyStart": "Mulai setiap tanggal 1 tiap bulan",
-    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsRishikesh": [
+      {
+            "badge": "Musim Terbaik",
+            "temp": "18°C – 28°C",
+            "period": "Oktober – Maret",
+            "climate": "Cerah, Sejuk & Damai",
+            "description": "Musim dingin yang sejuk dan langit biru cerah. Ideal untuk latihan asana harian intensif, meditasi luar ruangan di tepi Sungai Gangga, dan jalan-jalan menyegarkan di Himalaya."
+      },
+      {
+            "badge": "Musim Hangat",
+            "temp": "24°C – 35°C",
+            "period": "April – Juni",
+            "climate": "Hangat & Berenergi Prana Tinggi",
+            "description": "Cuaca tropis yang hangat sangat ideal untuk fleksibilitas otot mendalam, berendam pagi di Sungai Gangga, dan satsang filosofi sore di atap ashram."
+      },
+      {
+            "badge": "Musim Monsun",
+            "temp": "22°C – 30°C",
+            "period": "Juli – September",
+            "climate": "Hijau Subur & Meditatif",
+            "description": "Musim suci Shravan dengan kabut hijau Himalaya yang asri, air terjun segar, dan keheningan batin yang mendalam untuk studi kontemplatif yang tenang."
+      }
+],
     "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "ja": {
@@ -1755,7 +2313,29 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "subtitleRishikesh": "ヒマラヤの気候サイクルとご自身の修練目的に合わせて最適な時期をご検討ください。",
     "subtitleVarkala": "ケララの熱帯気候と海の状況に合わせて受講時期をご検討ください。",
     "monthlyStart": "毎月1日開講",
-    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsRishikesh": [
+      {
+            "badge": "ベストシーズン",
+            "temp": "18°C – 28°C",
+            "period": "10月 – 3月",
+            "climate": "晴天・爽やか・穏やか",
+            "description": "穏やかな冬と澄み渡る青空。日々の本格的なアーサナ実技、ガンジス川の岸辺での屋外瞑想、心地よいヒマラヤの散策に最適な季節です。"
+      },
+      {
+            "badge": "温暖シーズン",
+            "temp": "24°C – 35°C",
+            "period": "4月 – 6月",
+            "climate": "暖かくプラーナに満ちた気候",
+            "description": "温暖な気候が筋肉の柔軟性を引き出し、早朝の沐浴や屋上での夕暮れの哲学サットサンガに理想的な環境です。"
+      },
+      {
+            "badge": "モンスーン（雨季）",
+            "temp": "22°C – 30°C",
+            "period": "7月 – 9月",
+            "climate": "豊かな緑と静寂の瞑想期",
+            "description": "緑深まるヒマラヤの霧と滝に包まれる聖なるシュラヴァンの季節。内なる静寂に浸り、自己探求に没頭するのに適しています。"
+      }
+],
     "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "ko": {
@@ -1766,7 +2346,29 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "subtitleRishikesh": "히말라야의 계절 변화와 개인 수련 목적에 맞춰 일정을 계획하세요.",
     "subtitleVarkala": "케랄라의 열대 계절과 기후 조건에 맞춰 일정을 계획하세요.",
     "monthlyStart": "매월 1일 개강",
-    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsRishikesh": [
+      {
+            "badge": "최고의 계절",
+            "temp": "18°C – 28°C",
+            "period": "10월 – 3월",
+            "climate": "맑고 쾌청하며 평화로운 날씨",
+            "description": "온화하고 쾌적한 겨울과 청명한 하늘. 강도 높은 아사나 수련, 갠지스 강변 야외 명상, 상쾌한 히말라야 숲길 산책에 완벽한 시기입니다."
+      },
+      {
+            "badge": "따뜻한 계절",
+            "temp": "24°C – 35°C",
+            "period": "4월 – 6월",
+            "climate": "따뜻하고 프라나가 충만한 기후",
+            "description": "근육의 깊은 유연성을 키우기 좋은 따뜻한 날씨로, 이른 아침 갠지스강 힐링과 저녁 루프탑 철학 사트상에 제격입니다."
+      },
+      {
+            "badge": "몬순(우기) 시즌",
+            "temp": "22°C – 30°C",
+            "period": "7월 – 9월",
+            "climate": "녹음이 짙고 명상하기 좋은 시기",
+            "description": "신성한 슈라반(Shravan) 시즌으로 짙푸른 히말라야 안개와 폭포, 깊은 내면의 침묵 속에서 사색과 학업에 집중할 수 있습니다."
+      }
+],
     "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   },
   "zh": {
@@ -1777,7 +2379,29 @@ export const BEST_TIME_TO_VISIT_UI: Record<string, BestTimeToVisitUIData> = {
     "subtitleRishikesh": "根据喜马拉雅的气候变化与个人的修习目标，规划你的灵性之旅。",
     "subtitleVarkala": "根据喀拉拉的热带季节特征，规划你的海滨修习之旅。",
     "monthlyStart": "每月1日开营",
-    "seasonsRishikesh": [{"badge": "Best Season", "temp": "18°C – 28°C", "period": "October – March", "climate": "Sunny, Crisp & Serene", "description": "Mild winter and clear sunny skies. Ideal for intense daily asana, outdoor meditation by the Ganges, and pristine Himalayan walks."}, {"badge": "Warm Season", "temp": "24°C – 35°C", "period": "April – June", "climate": "Warm & High Prana", "description": "Warm tropical weather ideal for deep muscular flexibility, early-morning Ganga dips, and evening rooftop philosophical satsangs."}, {"badge": "Monsoon Season", "temp": "22°C – 30°C", "period": "July – September", "climate": "Lush & Meditative", "description": "Sacred Shravan season with lush green Himalayan mist, waterfalls, and profound inner silence for quiet contemplative study."}],
+    "seasonsRishikesh": [
+      {
+            "badge": "最佳时节",
+            "temp": "18°C – 28°C",
+            "period": "10月 – 3月",
+            "climate": "阳光明媚·凉爽宜人·清净安详",
+            "description": "温和舒适的冬日与纯净晴空。极为适合高强度体式精进练习、恒河畔露天冥想与喜马拉雅森林徒步。"
+      },
+      {
+            "badge": "温暖时节",
+            "temp": "24°C – 35°C",
+            "period": "4月 – 6月",
+            "climate": "温暖舒适·生命能量充沛",
+            "description": "温润热带气候有助身心深度柔韧与筋膜舒展，适合清晨恒河净心与傍晚屋顶哲学共修研讨。"
+      },
+      {
+            "badge": "季风时节",
+            "temp": "22°C – 30°C",
+            "period": "7月 – 9月",
+            "climate": "绿意盎然·静心内观佳期",
+            "description": "神圣的吉祥月（Shravan），喜马拉雅山雾氤氲、瀑布奔流，适合收摄感官、深入经藏静修。"
+      }
+],
     "seasonsVarkala": [{"badge": "Best Season", "temp": "24°C – 31°C", "period": "October – March", "climate": "Sunny, Breezy & Dry", "description": "Gentle Arabian Sea breeze and clear sunny days. Ideal for cliff walks, beach yoga, and outdoor Ayurvedic lifestyle."}, {"badge": "Warm Season", "temp": "26°C – 33°C", "period": "April – May", "climate": "Warm, Sunny & Deep Healing", "description": "Sun-drenched days ideal for deep joint mobility, sunset ocean swimming, and cooling Ayurvedic treatments."}, {"badge": "Monsoon Season", "temp": "23°C – 29°C", "period": "June – September", "climate": "Rejuvenating & Lush", "description": "Traditional Ayurvedic rejuvenating season (Karkidaka) with cooling rains, rich humidity, and maximum tissue responsiveness to Ayurvedic treatments."}]
   }
 };
@@ -2352,10 +2976,10 @@ export const FAQS_HEADER_UI: Record<string, FAQsHeaderUIData> = {
     "title": "Frequently Asked Questions",
     "subtitleRishikesh": "Everything you need to know about our {courseHours}-Hour Yoga Teacher Training in Tapovan, Rishikesh.",
     "subtitleVarkala": "Everything you need to know about our {courseHours}-Hour Yoga Teacher Training in Varkala, Kerala.",
-    "chatWhatsApp": "WhatsApp 在线咨询",
-    "helpDeskTitleRishikesh": "对里希开诗课程仍有疑问？",
-    "helpDeskTitleVarkala": "对瓦尔卡拉课程仍有疑问？",
-    "helpDeskSub": "我们的咨询顾问全天候通过 WhatsApp 为您量身规划学习旅程。"
+    "chatWhatsApp": "Chat on WhatsApp",
+    "helpDeskTitleRishikesh": "Still have a question about Rishikesh?",
+    "helpDeskTitleVarkala": "Still have a question about Varkala?",
+    "helpDeskSub": "Our admissions team is available 24/7 on WhatsApp to help you plan your training."
   },
   "nl": {
     "badge": "Vragen?",

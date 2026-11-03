@@ -37,7 +37,7 @@ import { useEnrollment } from "@/components/EnrollmentDialog";
 import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryUrl } from "@/utils/cloudinary";
 import { RETREAT_EXTRA_UI } from "@/constants/courseSectionsTranslations";
-import { getRetreatUI } from "@/constants/retreatUiTranslations";
+import { getRetreatUI, getLocalizedRoomFeature, getLocalizedRoomType, getLocalizedScheduleActivity } from "@/constants/retreatUiTranslations";
 import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 
 interface RetreatDetailProps {
@@ -499,13 +499,13 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
           <section id="pricing" className="scroll-mt-20">
             <div className="text-center max-w-3xl mx-auto mb-8">
               <span className="text-xs uppercase font-bold tracking-widest text-amber-800">
-                Transparent Pricing
+                {isEn ? "Transparent Pricing" : (retreatUI.transparentPricing || "Transparent Pricing")}
               </span>
               <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl font-extrabold text-amber-950 uppercase tracking-tight mt-1">
                 {isEn ? "Retreat Fees & Dates" : (messages?.pricingTitle || "Retreat Fees & Dates")}
               </h2>
               <p className="text-stone-600 mt-2 text-sm sm:text-base">
-                Choose the accommodation style that suits your journey. All packages include daily yoga, treatments, meals, and full campus access.
+                {isEn ? "Choose the accommodation style that suits your journey. All packages include daily yoga, treatments, meals, and full campus access." : (retreatUI.pricingDescription || "Choose the accommodation style that suits your journey. All packages include daily yoga, treatments, meals, and full campus access.")}
               </p>
             </div>
 
@@ -557,7 +557,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                         {card.campus}
                       </div>
                       <h3 className="font-heading text-lg sm:text-xl font-bold text-amber-950 mb-3">
-                        {card.roomType}
+                        {isEn ? card.roomType : getLocalizedRoomType(card.roomType, currentLocale)}
                       </h3>
 
                       {/* Price Display: Strikethrough Regular + Discounted */}
@@ -576,7 +576,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                         {card.features.map((feat, fIdx) => (
                           <li key={fIdx} className="flex items-start gap-2">
                             <Check className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
-                            <span>{feat}</span>
+                            <span>{isEn ? feat : getLocalizedRoomFeature(feat, currentLocale)}</span>
                           </li>
                         ))}
                       </ul>
@@ -817,7 +817,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                     <div key={idx} className="p-4 rounded-xl bg-stone-50 border border-stone-200 flex flex-col sm:flex-row gap-3">
                       <span className="font-mono text-xs font-bold text-amber-800 w-32 flex-shrink-0">{item.time}</span>
                       <div>
-                        <div className="font-bold text-stone-900 text-sm">{item.activity}</div>
+                        <div className="font-bold text-stone-900 text-sm">{isEn ? item.activity : getLocalizedScheduleActivity(item.activity, currentLocale)}</div>
                         <div className="text-xs text-stone-600">{item.description}</div>
                       </div>
                     </div>
@@ -843,7 +843,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
             {!isBali ? (
               <div className="p-8 rounded-2xl bg-[#FAF6F0] border border-amber-900/10 text-center">
                 <p className="font-heading text-lg sm:text-xl text-stone-700 leading-relaxed">
-                  Accommodation and venue details will be shared soon.
+                  {isEn ? "Accommodation and venue details will be shared soon." : (retreatUI.venueDetailsSoon || "Accommodation and venue details will be shared soon.")}
                 </p>
               </div>
             ) : (

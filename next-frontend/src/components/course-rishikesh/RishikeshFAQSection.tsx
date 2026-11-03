@@ -9,6 +9,7 @@ import {
 } from "@/constants/rishikeshCourseData";
 import { useLocale } from "next-intl";
 import { FAQS_HEADER_UI } from "@/constants/courseSectionsTranslations";
+import { getLocalizedFaqQuestion } from "@/constants/rvFaqQuestionTranslations";
 
 interface RishikeshFAQSectionProps {
   courseHours?: "100" | "200" | "300";
@@ -70,7 +71,7 @@ export default function RishikeshFAQSection({ courseHours = "200", locale }: Ris
                     className="w-full py-5 px-6 text-left flex items-center justify-between gap-4 font-heading font-bold text-base md:text-lg text-foreground hover:text-primary transition-colors focus:outline-none"
                     aria-expanded={isOpen}
                   >
-                    <span>{faq.question}</span>
+                    <span>{getLocalizedFaqQuestion(faq.question, activeLocale || "en")}</span>
                     <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
                         isOpen ? "rotate-180 bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"

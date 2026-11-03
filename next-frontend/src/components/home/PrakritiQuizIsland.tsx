@@ -6,9 +6,10 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Sparkles, ArrowRight, Check } from "lucide-react";
+import { getPrakritiQuizUI } from "@/constants/prakritiQuizTranslations";
 
 // Yogic Energy Quiz Questions
-const quizQuestions = [
+const defaultQuizQuestions = [
   {
     question: "How does your body typically feel in the morning?",
     options: [
@@ -62,7 +63,29 @@ const quizQuestions = [
 export default function PrakritiQuizIsland() {
   const router = useRouter();
   const locale = useLocale();
+  const isEn = locale === "en";
   const tCommon = useTranslations("common");
+  const tYogic = useTranslations("yogicEnergy");
+  const quizUI = getPrakritiQuizUI(locale);
+
+  let quizQuestions = defaultQuizQuestions;
+  if (!isEn) {
+    try {
+      const rawQuiz = tYogic.raw("quiz.questions");
+      if (Array.isArray(rawQuiz) && rawQuiz.length === 6) {
+        quizQuestions = defaultQuizQuestions.map((q, idx) => ({
+          question: rawQuiz[idx]?.question || q.question,
+          options: q.options.map((opt, optIdx) => ({
+            ...opt,
+            text: (rawQuiz[idx]?.options && rawQuiz[idx]?.options[optIdx]) || opt.text,
+          })),
+        }));
+      }
+    } catch (e) {
+      quizQuestions = defaultQuizQuestions;
+    }
+  }
+
   const [showQuizDialog, setShowQuizDialog] = useState(false);
   const [quizStep, setQuizStep] = useState(0);
   const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
@@ -93,11 +116,11 @@ export default function PrakritiQuizIsland() {
 
   const handleQuizSubmit = async () => {
     if (!email) {
-      setEmailError("Please enter your email address");
+      setEmailError(quizUI.emailErrorEmpty);
       return;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      setEmailError("Please enter a valid email address");
+      setEmailError(quizUI.emailErrorInvalid);
       return;
     }
 
@@ -146,7 +169,7 @@ YogaGarhi – Bali`,
       }
     } catch (error) {
       console.error(error);
-      setEmailError("Something went wrong. Please try again.");
+      setEmailError(quizUI.errorMessage);
     } finally {
       setIsSubmitting(false);
     }
@@ -190,13 +213,13 @@ YogaGarhi – Bali`,
             </div>
             <DialogTitle className="font-heading text-2xl text-center">
               {quizStep < quizQuestions.length
-                ? "Discover Your Yogic Energy"
-                : "Your Insight Awaits"}
+                ? quizUI.quizTitle
+                : quizUI.resultTitle}
             </DialogTitle>
             <DialogDescription className="text-center text-muted-foreground text-sm mt-1">
               {quizStep < quizQuestions.length
-                ? `Step ${quizStep + 1} of ${quizQuestions.length}: Understand your unique constitution.`
-                : "Enter your details to receive your personalized analysis."}
+                ? quizUI.quizDesc.replace("{step}", String(quizStep + 1)).replace("{total}", String(quizQuestions.length))
+                : quizUI.resultDesc}
             </DialogDescription>
           </DialogHeader>
 
@@ -213,7 +236,7 @@ YogaGarhi – Bali`,
 
                 <div className="text-center mb-2">
                   <span className="text-sm text-muted-foreground">
-                    Question {quizStep + 1} of {quizQuestions.length}
+                    {quizUI.questionStep.replace("{step}", String(quizStep + 1)).replace("{total}", String(quizQuestions.length))}
                   </span>
                 </div>
 
@@ -252,15 +275,14 @@ YogaGarhi – Bali`,
                     <Check className="w-10 h-10 text-amber-600 dark:text-amber-400" />
                   </div>
                   <p className="text-muted-foreground">
-                    Thank you for sharing. Enter your email to receive
-                    your personalized yogic energy insight.
+                    {quizUI.completionNote}
                   </p>
                 </div>
 
                 <div className="space-y-2">
                   <input
                     type="email"
-                    placeholder="Your email address *"
+                    placeholder={quizUI.emailPlaceholder}
                     className={`
                       w-full px-4 py-3 rounded-xl border-2 bg-background 
                       focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary
@@ -284,7 +306,7 @@ YogaGarhi – Bali`,
                   disabled={isSubmitting}
                   onClick={handleQuizSubmit}
                 >
-                  {isSubmitting ? "Submitting..." : "Submit & Receive My Insight"}
+                  {isSubmitting ? quizUI.submitting : quizUI.submitBtn}
                 </Button>
               </div>
             )}
@@ -293,7 +315,7 @@ YogaGarhi – Bali`,
       </Dialog>
 
       <p className="mt-4 text-sm text-muted-foreground max-w-lg mx-auto">
-        Answer 6 simple questions to understand your natural tendencies and how they influence your yoga practice
+        {quizUI.pageSubtitle}
       </p>
     </div>
   );

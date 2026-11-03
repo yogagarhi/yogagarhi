@@ -5,7 +5,8 @@ import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import { ArrowRight, Clock, Award } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import CoursesHelpButton from "./CoursesHelpButton";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
+import { getHomeCoursesCampusUI } from "@/constants/homeUiTranslations";
 
 const course100hr = getCloudinaryImage("course-100hr-new.png");
 const course200hr = getCloudinaryImage("course-200hr-new.png");
@@ -14,6 +15,8 @@ const course300hr = getCloudinaryImage("course-300hr-v2.png");
 export default async function CoursesSection() {
   const t = await getTranslations("home.courses");
   const tCommon = await getTranslations("common");
+  const currentLocale = await getLocale();
+  const campusUI = getHomeCoursesCampusUI(currentLocale);
 
   const courses = [
     {
@@ -193,18 +196,18 @@ export default async function CoursesSection() {
         {/* Campus Exploration Strip */}
         <div className="mt-12 p-6 rounded-2xl bg-secondary/30 border border-border/60 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
-            <p className="text-sm font-bold text-foreground">Explore Our Global Training Campuses</p>
-            <p className="text-xs text-muted-foreground">Yoga Alliance certified residential courses in Bali, Rishikesh & Varkala (Kerala)</p>
+            <p className="text-sm font-bold text-foreground">{campusUI.campusTitle}</p>
+            <p className="text-xs text-muted-foreground">{campusUI.campusSubtitle}</p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
             <Link href="/200-hour-yoga-teacher-training-in-bali" className="px-3.5 py-1.5 rounded-lg bg-background border border-border text-xs font-semibold hover:border-primary transition-colors">
-              🌴 Bali Campus
+              {campusUI.baliCampus}
             </Link>
             <Link href="/200-hour-yoga-teacher-training-in-rishikesh" className="px-3.5 py-1.5 rounded-lg bg-background border border-border text-xs font-semibold hover:border-primary transition-colors">
-              ⛰️ Rishikesh Campus
+              {campusUI.rishikeshCampus}
             </Link>
             <Link href="/200-hour-yoga-teacher-training-in-varkala" className="px-3.5 py-1.5 rounded-lg bg-primary text-primary-foreground text-xs font-semibold hover:opacity-90 transition-opacity">
-              🌊 Varkala (Kerala) Campus
+              {campusUI.varkalaCampus}
             </Link>
           </div>
         </div>

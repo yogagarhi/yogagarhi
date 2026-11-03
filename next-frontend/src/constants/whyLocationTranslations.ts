@@ -7,6 +7,7 @@ export interface WhyLocationData {
   paragraphs: string[];
   photoCaptions: {
     main: string;
+    subMain?: string;
     sub1: string;
     sub2: string;
   };
@@ -224,6 +225,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "Adding to this high-vibrational sanctuary is the 2,000-year-old Janardanaswamy Temple, dedicated to Lord Vishnu and revered as a major coastal pilgrimage site. The town carries a serene spiritual gravity, free from chaotic city distractions. Between intensive training sessions, you can reflect along quiet coconut-fringed shores, watch golden Arabian sunsets, and absorb the natural peace essential for integrating advanced yogic wisdom."
     ],
     "photoCaptions": {
+      "subMain": "Pristine coastal geology overlooking the Arabian Sea",
       "main": "Varkala Red Cliffs & Sacred Papanasam Beach",
       "sub1": "Historic 2,000-Year Janardanaswamy Temple",
       "sub2": "Arabian Sea Sunset Meditation"
@@ -250,6 +252,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "Verstärkt wird dieser Ort durch den über 2.000 Jahre alten Janardanaswamy-Tempel, ein bedeutendes Küstenheiligtum. Zwischen den intensiven Unterrichtsstunden können Sie an palmengesäumten Pfaden spazieren, spektakuläre Sonnenuntergänge über dem Arabischen Meer erleben und die nötige Ruhe finden, um das Gelernte nachhaltig zu verinnerlichen."
     ],
     "photoCaptions": {
+      "subMain": "Unberührte Küstengeologie mit Blick auf das Arabische Meer",
       "main": "Varkala Klippen & Heiliger Papanasam Strand",
       "sub1": "Historischer Janardanaswamy Tempel",
       "sub2": "Sonnenuntergangs-Meditation am Meer"
@@ -276,6 +279,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "Ce lieu à haute vibration abrite également le temple vieux de 2 000 ans de Janardanaswamy, haut lieu de pèlerinage côtier dédié au Seigneur Vishnu. Entre les cours intensifs, vous pourrez contempler les couchers de soleil dorés sur la mer d'Oman et savourer le calme nécessaire pour assimiler les enseignements yogiques profonds."
     ],
     "photoCaptions": {
+      "subMain": "Géologie côtière immaculée surplombant la mer d'Arabie",
       "main": "Falaises Rouges de Varkala et Plage Sacrée de Papanasam",
       "sub1": "Temple Historique Bicentenaire de Janardanaswamy",
       "sub2": "Méditation au Coucher du Soleil sur la Mer d'Oman"
@@ -302,6 +306,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "El entorno se enriquece con el templo de Janardanaswamy, con más de 2.000 años de historia. La serenidad del lugar, libre de distracciones urbanas, te permite pasear entre palmeras, admirar atardeceres dorados y absorber con calma la sabiduría yogica recibida en clase."
     ],
     "photoCaptions": {
+      "subMain": "Geología costera prístina con vistas al mar Arábigo",
       "main": "Acantilados Rojos de Varkala y Playa Sagrada Papanasam",
       "sub1": "Templo Histórico de Janardanaswamy de 2.000 Años",
       "sub2": "Meditación al Atardecer frente al Mar Arábigo"
@@ -328,6 +333,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "さらに、2000年の歴史を誇るジャナルダナスワーミ寺院の神聖なエネルギーがこの地を守っています。都会の喧騒から完全に隔絶された静かな環境で、ヤシの木が揺れる砂浜を歩き、黄金色に染まる夕日を眺めながら、学んだ知識を深く心に染み渡らせることができます。"
     ],
     "photoCaptions": {
+      "subMain": "アラビア海を見渡す息をのむほど美しい沿岸の赤土絶壁の景観",
       "main": "ヴァルカラの赤い断崖と聖なるパパナサム・ビーチ",
       "sub1": "2000年の歴史を持つジャナルダナスワーミ寺院",
       "sub2": "アラビア海を望むサンセット瞑想"
@@ -354,6 +360,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "2천 년 역사를 지닌 자나르다나스와미 사원의 영적 기운 또한 바르칼라를 특별하게 만듭니다. 도시의 소음에서 벗어나 해변 산책로를 거닐고 아라비아해 위로 떨어지는 붉은 노을을 바라보며 깊은 요가 지혜를 자연스럽게 체화할 수 있습니다."
     ],
     "photoCaptions": {
+      "subMain": "아라비아해를 굽어보는 태고의 붉은 절벽과 천혜의 해안 지질 경관",
       "main": "바르칼라 붉은 절벽과 신성한 파파나삼 해변",
       "sub1": "2,000년 역사의 자나르다나스와미 사원",
       "sub2": "아라비아해 일몰 명상"
@@ -380,6 +387,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "拥有两千年历史的贾纳尔达纳斯瓦米神庙更赋予了这片土地深厚的灵性能量。远离喧嚣的大都市，您可以在椰林掩映的安静海岸漫步，静观阿拉伯海壮丽的金色日落，在自然的宁静中彻底消化与沉淀深奥的瑜伽智慧。"
     ],
     "photoCaptions": {
+      "subMain": "俯瞰浩瀚阿拉伯海的原始天然红砂岩海岸地质奇观",
       "main": "瓦尔卡拉红色悬崖与神圣帕帕纳萨姆海滩",
       "sub1": "两千年历史的贾纳尔达纳斯瓦米古庙",
       "sub2": "阿拉伯海日落冥想"
@@ -406,6 +414,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "Особую духовную силу этому месту придает 2000-летний храм Джанарданасвами, посвященный Господу Вишну. Между занятиями вы сможете гулять по уединенным пальмовым рощам, наблюдать закаты над Аравийским морем и впитывать природную тишину, необходимую для глубокой интеграции знаний."
     ],
     "photoCaptions": {
+      "subMain": "Живописная первозданная геология побережья с видом на Аравийское море",
       "main": "Красные скалы Варкалы и пляж Папанасам",
       "sub1": "Древний храм Джанарданасвами (2000 лет)",
       "sub2": "Медитация на закате у Аравийского моря"
@@ -432,6 +441,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "A impreziosire questo luogo c'è il tempio di Janardanaswamy, risalente a oltre 2.000 anni fa. Tra una lezione e l'altra potrai passeggiare lungo spiagge tranquille, ammirare tramonti dorati sul Mar Arabico e trovare la calma necessaria per assimilare gli insegnamenti."
     ],
     "photoCaptions": {
+      "subMain": "Incontaminata geologia costiera affacciata sul Mar Arabico",
       "main": "Scogliere Rosse di Varkala e Spiaggia Papanasam",
       "sub1": "Storico Tempio Janardanaswamy di 2.000 Anni",
       "sub2": "Meditazione al Tramonto sul Mar Arabico"
@@ -458,6 +468,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "Dit gebied wordt gezegend door de 2.000 jaar oude Janardanaswamy-tempel. Tussen de intensieve lessen door kun je wandelen langs rustige, met palmen omzoomde paden, genieten van gouden zonsondergangen en de stilte ervaren die nodig is om de opgedane kennis te verankeren."
     ],
     "photoCaptions": {
+      "subMain": "Ongerepte kustgeologie met uitzicht op de Arabische Zee",
       "main": "Varkala Rode Kliffen & Heilig Papanasam Strand",
       "sub1": "Historische 2.000 Jaar Oude Janardanaswamy Tempel",
       "sub2": "Zonsondergang Meditatie aan de Arabische Zee"
@@ -484,6 +495,7 @@ export const WHY_VARKALA_TRANSLATIONS: Record<string, WhyLocationData> = {
       "Kuil Janardanaswamy yang berusia 2.000 tahun semakin memperkaya energi spiritual kawasan ini. Jauh dari hiruk pikuk kota, Anda dapat merenung di sepanjang pantai berbingkai pohon kelapa, menyaksikan matahari terbenam keemasan di Laut Arab, dan menyerap kedamaian alami yang penting bagi perjalanan yoga Anda."
     ],
     "photoCaptions": {
+      "subMain": "Geologi pesisir alami yang menghadap ke Samudra Hindia",
       "main": "Tebing Merah Varkala & Pantai Suci Papanasam",
       "sub1": "Kuil Bersejarah Janardanaswamy 2.000 Tahun",
       "sub2": "Meditasi Matahari Terbenam di Tepi Laut Arab"

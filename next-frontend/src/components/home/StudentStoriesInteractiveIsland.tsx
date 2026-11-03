@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Play, Quote } from "lucide-react";
+import { useLocale } from "next-intl";
+import { getStudentStoriesUI } from "@/constants/homeUiTranslations";
 
 export interface VideoTestimonial {
   id: string;
@@ -82,6 +84,8 @@ export default function StudentStoriesInteractiveIsland({
   extraContent,
   initialVisibleCount = 2,
 }: StudentStoriesInteractiveIslandProps) {
+  const currentLocale = useLocale();
+  const storiesUI = getStudentStoriesUI(currentLocale);
   const [activeVideo, setActiveVideo] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showAll, setShowAll] = useState(false);
@@ -183,7 +187,7 @@ export default function StudentStoriesInteractiveIsland({
             aria-expanded={showAll}
             className="mt-4 w-full py-2.5 px-4 text-xs font-semibold text-primary hover:text-primary/80 bg-primary/5 hover:bg-primary/10 rounded-xl border border-primary/20 transition-colors flex items-center justify-center gap-2"
           >
-            <span>{showAll ? "Show Less" : `Watch All Stories (${videos.length})`}</span>
+            <span>{showAll ? storiesUI.showLess : storiesUI.watchAllStories.replace("{count}", String(videos.length))}</span>
             <span className={`transform transition-transform duration-200 ${showAll ? "rotate-180" : ""}`}>↓</span>
           </button>
         )}
@@ -191,10 +195,10 @@ export default function StudentStoriesInteractiveIsland({
         {/* CTA */}
         <div className="mt-8">
           <a
-            href="/testimonials"
+            href={currentLocale === "en" ? "/testimonials" : `/${currentLocale}/testimonials`}
             className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md transition-colors group"
           >
-            View All Stories
+            {storiesUI.viewAllStories}
             <span className="group-hover:translate-x-1 transition-transform">→</span>
           </a>
         </div>

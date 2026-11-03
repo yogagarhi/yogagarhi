@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import {
     Dialog,
@@ -15,9 +15,10 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { useYogicEnergy } from "../YogicEnergyDialog";
+import { getPrakritiQuizUI } from "@/constants/prakritiQuizTranslations";
 
 // Yogic Energy Quiz Questions (Dosha Test)
-const quizQuestions = [
+const defaultQuizQuestions = [
     {
         question: "How does your body typically feel in the morning?",
         options: [
@@ -70,6 +71,28 @@ const quizQuestions = [
 
 export default function YogicEnergyModal() {
     const locale = useLocale();
+    const isEn = locale === "en";
+    const tYogic = useTranslations("yogicEnergy");
+    const quizUI = getPrakritiQuizUI(locale);
+
+    let quizQuestions = defaultQuizQuestions;
+    if (!isEn) {
+        try {
+            const rawQuiz = tYogic.raw("quiz.questions");
+            if (Array.isArray(rawQuiz) && rawQuiz.length === 6) {
+                quizQuestions = defaultQuizQuestions.map((q, idx) => ({
+                    question: rawQuiz[idx]?.question || q.question,
+                    options: q.options.map((opt, optIdx) => ({
+                        ...opt,
+                        text: (rawQuiz[idx]?.options && rawQuiz[idx]?.options[optIdx]) || opt.text,
+                    })),
+                }));
+            }
+        } catch (e) {
+            quizQuestions = defaultQuizQuestions;
+        }
+    }
+
     const { showYogicEnergy, setShowYogicEnergy } = useYogicEnergy();
     const [quizStep, setQuizStep] = useState(0);
     const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
@@ -162,13 +185,13 @@ YogaGarhi – Bali`,
                     <DialogHeader className="mb-6">
                         <DialogTitle className="text-center font-heading text-3xl text-[#2D7A70] tracking-tight leading-tight">
                             {quizStep < quizQuestions.length
-                                ? "Discover Your Yogic Energy"
-                                : "Your Insight Awaits"}
+                                ? quizUI.quizTitle
+                                : quizUI.resultTitle}
                         </DialogTitle>
                         <DialogDescription className="text-center text-[#1A4D45]/70 mt-2 text-base">
                             {quizStep < quizQuestions.length
-                                ? `Question ${quizStep + 1} of ${quizQuestions.length}: How does your body typically feel in the morning?`
-                                : "Enter your details to receive your personalized yogic energy analysis."}
+                                ? `${quizUI.questionStep.replace("{step}", String(quizStep + 1)).replace("{total}", String(quizQuestions.length))}: ${quizQuestions[quizStep].question}`
+                                : quizUI.resultDesc}
                         </DialogDescription>
                     </DialogHeader>
 
@@ -208,10 +231,10 @@ YogaGarhi – Bali`,
                     ) : (
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div className="space-y-1.5">
-                                <Label htmlFor="quiz-name" className="text-[#1A4D45] font-semibold text-sm">Full Name *</Label>
+                                <Label htmlFor="quiz-name" className="text-[#1A4D45] font-semibold text-sm">{quizUI.nameLabel}</Label>
                                 <Input
                                     id="quiz-name"
-                                    placeholder="Enter your name"
+                                    placeholder={quizUI.namePlaceholder}
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                     required
@@ -220,11 +243,11 @@ YogaGarhi – Bali`,
                             </div>
 
                             <div className="space-y-1.5">
-                                <Label htmlFor="quiz-email" className="text-[#1A4D45] font-semibold text-sm">Email *</Label>
+                                <Label htmlFor="quiz-email" className="text-[#1A4D45] font-semibold text-sm">{quizUI.emailLabel}</Label>
                                 <Input
                                     id="quiz-email"
                                     type="email"
-                                    placeholder="Enter your email"
+                                    placeholder={quizUI.emailPlaceholder}
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
@@ -237,7 +260,7 @@ YogaGarhi – Bali`,
                                 disabled={isSubmitting || !name || !email}
                                 className="w-full bg-[#2D7A70] hover:bg-[#1A4D45] text-white rounded-xl h-14 text-lg font-bold shadow-lg mt-4"
                             >
-                                {isSubmitting ? "Submitting..." : "Reveal My Energy"}
+                                {isSubmitting ? quizUI.submitting : quizUI.revealEnergyBtn}
                             </Button>
                         </form>
                     )}

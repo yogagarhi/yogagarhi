@@ -6,6 +6,7 @@ import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 import DynamicBatchDate from "@/components/DynamicBatchDate";
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useTranslations, useLocale } from "next-intl";
+import { getYogaAllianceUI } from "@/constants/yogaAllianceTranslations";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -633,6 +634,8 @@ export default function CoursePageTemplate({
   const tWhy = useTranslations("whyChoose");
   const tHome = useTranslations("home");
   const locale = useLocale();
+  const isEn = !locale || locale === "en";
+  const yaUI = getYogaAllianceUI(locale || "en");
   const startingPrice = pricingConfig.heroStartingPrice || pricingConfig.tuition || pricingConfig.triple;
   const datesPricing = pricingConfig.datesCard || pricingConfig;
   const isRishikesh = courseKey?.includes("rishikesh") || namespace?.includes("rishikesh");
@@ -3134,38 +3137,48 @@ export default function CoursePageTemplate({
             <div className="max-w-4xl mx-auto text-center">
               {/* Subtitle */}
               <p className="text-white/90 text-lg mb-2 font-medium">
-                {courseKey.includes("100") ? "\"YOGAGARHI – 100 Hour YTTC\"" : courseKey.includes("300") ? "\"YOGAGARHI – 300 Hour YTTC\"" : "\"YOGAGARHI – 200 Hour YTTC\""}
+                {courseKey.includes("100") ? yaUI.sub100 : courseKey.includes("300") ? yaUI.sub300 : yaUI.sub200}
               </p>
 
               {/* Main Title */}
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
-                Yoga Alliance USA CERTIFIED
+                {isEn ? "Yoga Alliance USA CERTIFIED" : yaUI.title}
               </h2>
 
               {/* Description */}
               <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-8 leading-relaxed">
-                Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
-                you will receive an internationally recognized certification, allowing you to become a
-                <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                {courseKey.includes("300") ? "Combined with an RYT 200 and at least 100 hours of teaching experience, this training lets you register as an RYT 500 with Yoga Alliance." : "This certification opens doors for you to teach yoga anywhere in the world."}
+                {isEn ? (
+                  <>
+                    Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
+                    you will receive an internationally recognized certification, allowing you to become a
+                    <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
+                    {courseKey.includes("300") ? " Combined with an RYT 200 and at least 100 hours of teaching experience, this training lets you register as an RYT 500 with Yoga Alliance." : " This certification opens doors for you to teach yoga anywhere in the world."}
+                  </>
+                ) : (
+                  <>
+                    {yaUI.descLead}
+                    <span className="text-white font-medium">{yaUI.rytText}</span>
+                    {courseKey.includes("300") ? yaUI.desc300 : yaUI.descStandard}
+                  </>
+                )}
               </p>
 
               {/* RYS vs RYT Explanation */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8 text-left">
                 <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10">
                   <span className="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">
-                    RYS (Registered Yoga School)
+                    {isEn ? "RYS (Registered Yoga School)" : yaUI.rysTitle}
                   </span>
                   <p className="text-xs text-white/80 leading-relaxed">
-                    YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.
+                    {isEn ? "YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards." : yaUI.rysDesc}
                   </p>
                 </div>
                 <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10">
                   <span className="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">
-                    RYT (Registered Yoga Teacher)
+                    {isEn ? "RYT (Registered Yoga Teacher)" : yaUI.rytTitle}
                   </span>
                   <p className="text-xs text-white/80 leading-relaxed">
-                    The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide.
+                    {isEn ? "The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide." : yaUI.rytDesc}
                   </p>
                 </div>
               </div>

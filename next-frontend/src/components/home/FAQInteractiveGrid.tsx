@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { ChevronDown, MessageCircle, HelpCircle, Plane, Calendar, Clock, MapPin, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getFaqTestimonialUI } from "@/constants/homeUiTranslations";
 
 export interface FAQItem {
   category: string;
@@ -26,6 +27,8 @@ const faqCategories: FAQCategory[] = [
 
 export default function FAQInteractiveGrid() {
   const t = useTranslations("home.faq");
+  const currentLocale = useLocale();
+  const faqTestimonialUI = getFaqTestimonialUI(currentLocale);
   const [activeCategory, setActiveCategory] = useState("travel");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [mobileOpenIndex, setMobileOpenIndex] = useState<number | null>(0);
@@ -320,8 +323,7 @@ export default function FAQInteractiveGrid() {
             </div>
 
             <p className="text-lg italic text-foreground/80 leading-relaxed mb-6 relative z-10">
-              "The team answered all my questions before I even arrived. From visa guidance to what to pack —
-              they made me feel completely prepared and supported."
+              "{faqTestimonialUI.testimonialQuote}"
             </p>
 
             <div className="flex items-center gap-4 relative z-10">
@@ -330,7 +332,7 @@ export default function FAQInteractiveGrid() {
               </div>
               <div>
                 <p className="font-medium text-foreground">Jessica L.</p>
-                <p className="text-sm text-muted-foreground">200hr Graduate • Australia</p>
+                <p className="text-sm text-muted-foreground">{faqTestimonialUI.testimonialRole}</p>
               </div>
             </div>
 

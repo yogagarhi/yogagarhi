@@ -12,6 +12,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Input } from "@/components/ui/input";
 import SacredGeometryLazy from "@/components/3d/SacredGeometryLazy";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import { getYttcSupportUI } from "@/constants/homeUiTranslations";
 
 const postSupport1 = getCloudinaryImage("post-support-1.jpg");
 const postSupport2 = getCloudinaryImage("post-support-2.jpg");
@@ -58,6 +59,7 @@ export default function YTTCSupportInteractiveIsland() {
   const t = useTranslations("home.support");
   const tCommon = useTranslations("common");
   const locale = useLocale();
+  const yttcUI = getYttcSupportUI(locale);
   const preTitles = [t("b1Title"), t("b2Title"), t("b3Title"), t("tabBefore")];
   const preDescs = [t("b1Desc"), t("b2Desc"), t("b3Desc"), t("subtitle")];
   const postTitles = [t("a1Title"), t("alumniTitle"), t("a3Title"), t("asstTitle")];
@@ -287,7 +289,7 @@ export default function YTTCSupportInteractiveIsland() {
                       <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-background shadow-card group-hover:shadow-elevated transition-all duration-300">
                         <Image
                           src={item.image}
-                          alt={postTitles[index] || item.title}
+                          alt={yttcUI.postCards[index]?.title || postTitles[index] || item.title}
                           fill
                           sizes="160px"
                           className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -306,12 +308,12 @@ export default function YTTCSupportInteractiveIsland() {
 
                     {/* Title */}
                     <h4 className="font-heading text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                      {postTitles[index] || item.title}
+                      {yttcUI.postCards[index]?.title || postTitles[index] || item.title}
                     </h4>
 
                     {/* Description */}
                     <p className="text-muted-foreground text-sm leading-relaxed px-2">
-                      {postDescs[index] || item.description}
+                      {yttcUI.postCards[index]?.description || postDescs[index] || item.description}
                     </p>
                   </div>
                 );
@@ -377,7 +379,7 @@ export default function YTTCSupportInteractiveIsland() {
               : 'bg-white/40 dark:bg-white/5 border-white/20 dark:border-white/10 text-foreground shadow-[0_4px_16px_rgba(0,0,0,0.08)] group-hover:bg-white/60 group-hover:shadow-lg group-hover:-translate-y-0.5'
               }`}>
               <p className="font-heading font-bold text-[10px] md:text-sm leading-tight text-center whitespace-nowrap md:whitespace-normal">{t("tabBefore")}</p>
-              <p className={`text-[9px] md:text-[10px] mt-0.5 font-bold uppercase tracking-widest ${activeTab === 'pre' ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>Preparation</p>
+              <p className={`text-[9px] md:text-[10px] mt-0.5 font-bold uppercase tracking-widest ${activeTab === 'pre' ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>{yttcUI.timelinePrep}</p>
             </div>
           </div>
 
@@ -388,7 +390,7 @@ export default function YTTCSupportInteractiveIsland() {
             </div>
             <div className="mt-4 px-2 md:px-6 py-2 md:py-2.5 flex flex-col items-center">
               <p className="font-heading font-bold text-[10px] md:text-sm text-foreground text-center whitespace-nowrap md:whitespace-normal">{t("tabDuring")}</p>
-              <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-muted-foreground">21-24 Days</p>
+              <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest text-muted-foreground">{yttcUI.timelineDays}</p>
             </div>
           </div>
 
@@ -409,14 +411,14 @@ export default function YTTCSupportInteractiveIsland() {
               : 'bg-white/40 dark:bg-white/5 border-white/20 dark:border-white/10 text-foreground shadow-[0_4px_16px_rgba(0,0,0,0.08)] group-hover:bg-white/60 group-hover:shadow-lg group-hover:-translate-y-0.5'
               }`}>
               <p className="font-heading font-bold text-[10px] md:text-sm leading-tight text-center whitespace-nowrap md:whitespace-normal">{t("tabAfter")}</p>
-              <p className={`text-[9px] md:text-[10px] mt-0.5 font-bold uppercase tracking-widest ${activeTab === 'post' ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>Lifelong Support</p>
+              <p className={`text-[9px] md:text-[10px] mt-0.5 font-bold uppercase tracking-widest ${activeTab === 'post' ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>{yttcUI.timelineLifelong}</p>
             </div>
           </div>
         </div>
 
         {/* Hint Text */}
         <p className="text-center mt-8 text-sm text-muted-foreground italic">
-          👆 Click on <span className="font-bold text-amber-900 dark:text-amber-300 cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('pre')}>{t("tabBefore")}</span> or <span className="font-bold text-amber-900 dark:text-amber-300 cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('post')}>{t("tabAfter")}</span> to see what we offer
+          {yttcUI.timelineHintPart1} <span className="font-bold text-amber-900 dark:text-amber-300 cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('pre')}>{t("tabBefore")}</span> {yttcUI.timelineHintPart2} <span className="font-bold text-amber-900 dark:text-amber-300 cursor-pointer hover:underline underline-offset-4" onClick={() => setActiveTab('post')}>{t("tabAfter")}</span> {yttcUI.timelineHintPart3}
         </p>
       </div>
 
@@ -443,10 +445,10 @@ export default function YTTCSupportInteractiveIsland() {
 
             <DialogHeader className="text-center space-y-2">
               <DialogTitle className="font-heading text-2xl font-bold text-foreground">
-                Get "Before You Join" Details
+                {yttcUI.dialogTitle}
               </DialogTitle>
               <DialogDescription className="text-muted-foreground text-sm">
-                Enter your email to receive the complete "Before You Join" preparation guide
+                {yttcUI.dialogDesc}
               </DialogDescription>
             </DialogHeader>
 
@@ -456,7 +458,7 @@ export default function YTTCSupportInteractiveIsland() {
                 <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                 <Input
                   type="email"
-                  placeholder="Enter your email address"
+                  placeholder={yttcUI.dialogPlaceholder}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="pl-12 py-6 rounded-xl border-2 border-border focus:border-amber-500 transition-colors"
@@ -484,14 +486,14 @@ export default function YTTCSupportInteractiveIsland() {
                 ) : (
                   <span className="flex items-center gap-2">
                     <Send className="w-5 h-5" />
-                    Send Me "Before You Join" Guide
+                    {yttcUI.dialogBtn}
                   </span>
                 )}
               </Button>
 
               {/* Privacy Note */}
               <p className="text-center text-xs text-muted-foreground">
-                🔒 We respect your privacy. No spam, ever.
+                {yttcUI.dialogPrivacy}
               </p>
             </form>
           </div>

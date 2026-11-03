@@ -64,7 +64,7 @@ export default function WhyVarkalaSection({ locale }: WhyVarkalaSectionProps = {
                       <MapPin className="w-4 h-4 text-primary" />
                       {data.photoCaptions.main}
                     </p>
-                    <p className="text-white/80 text-xs">Pristine coastal geology overlooking the Arabian Sea</p>
+                    <p className="text-white/80 text-xs">{(!isEn && data.photoCaptions.subMain) ? data.photoCaptions.subMain : "Pristine coastal geology overlooking the Arabian Sea"}</p>
                   </div>
                 </div>
               </div>
