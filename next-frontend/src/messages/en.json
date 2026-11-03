@@ -609,26 +609,26 @@
       "goodieBagSub": "Yoga Essentials"
     },
     "storyTitle": "Transform Your Practice into Living Wisdom",
-    "storyP1": "Our 200 Hour Yoga Teacher Training in Bali is a residential, full immersion designed for practitioners seeking authentic depth rather than mechanical exercises. Located in the peaceful village of Gianyar, just 15 minutes from Ubud, YogaGarhi offers a serene sanctuary away from crowded tourist centers.",
-    "storyP2": "Over 24 days, you will study Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment alongside applied anatomy, philosophy, pranayama, and meditation. With cohorts strictly capped at 8–10 students, our experienced Himalayan masters provide intimate, personalized mentorship for every participant.",
+    "storyP1": "Our 200 Hour Yoga Teacher Training in Bali is a complete residential immersion. It is built for students who want genuine depth instead of just routine workouts. You will stay in the peaceful village of Gianyar, just 15 minutes from Ubud. Here, YogaGarhi gives you a quiet sanctuary far from busy tourist crowds.",
+    "storyP2": "Over 24 days, you will study Classical Hatha, Vinyasa Flow, the Ashtanga Primary Series, and Iyengar alignment. You will also learn applied anatomy, philosophy, pranayama (breathwork), and daily meditation. We strictly cap classes at 8 to 10 students. This allows our Himalayan masters to provide close, personal mentorship for every student.",
     "watchVideoStories": "Watch Student Video Stories & Testimonials",
     "videoBannerTitle": "Book a Call. See the School. See Your Room. See Your Yoga Hall.",
     "whyYogaGarhiBox": {
       "badge": "Why Choose YogaGarhi",
       "heading": "Authentic Himalayan Lineage in an Intimate Bali Sanctuary",
-      "sub": "We focus on sincere practitioners rather than crowded factory classrooms. Here is what sets our 200-hour training apart:",
+      "sub": "Learn authentic Himalayan yoga in small classes, with personal mentorship that continues after your training ends.",
       "p1Title": "8–10 Students Max Per Batch",
       "p1Highlight": "Personalized Focus",
-      "p1Desc": "Intimate class sizes guarantee personal guidance, customized hands-on adjustments, and individual teacher attention.",
+      "p1Desc": "Small class sizes mean you get personal tips, hands-on adjustments, and real daily care from your teachers.",
       "p2Title": "Free Pre-TTC Online Training",
       "p2Highlight": "Prepare Confidently",
-      "p2Desc": "Complimentary preparatory course prior to arrival in Bali, helping you build core strength and foundational knowledge.",
+      "p2Desc": "Get free online prep classes before you arrive in Bali. This helps you build strength and learn the basics early.",
       "p3Title": "1-Year Post-Graduation Mentorship",
       "p3Highlight": "Lifelong Community",
-      "p3Desc": "Ongoing guidance, class sequencing advice, and career support long after you complete your residential immersion.",
+      "p3Desc": "Graduate with a Yoga Alliance RYT 200 certificate. You also get full career coaching for a whole year.",
       "p4Title": "Lifetime Free Course Repeat",
       "p4Highlight": "Tuition-Free Return",
-      "p4Desc": "Return to future YogaGarhi teacher trainings anytime tuition-free to refresh your knowledge and assist as an apprentice.",
+      "p4Desc": "Re-attend any future 200-hour training at zero tuition cost. When you return to refresh your practice, you only pay for your food and accommodation.",
       "pkgBadge": "Residential Packages (24 Days / 23 Nights) & Tuition-Only Option",
       "saveEarlyBird": "Save $300 Early-Bird",
       "tuitionFrom": "Tuition from $999 USD | Residential from $1,750 USD",
@@ -639,9 +639,9 @@
     "hoursStructure": {
       "badge": "Training Hours",
       "heading": "How the 200 Hours Are Structured",
-      "sub": "A comprehensive distribution between direct contact hours, practical alignment, and reflective study in accordance with Yoga Alliance standards.",
+      "sub": "We balance direct practice, posture alignment, and personal study to meet every Yoga Alliance standard.",
       "contactHours": "Contact Hours",
-      "contactHoursDesc": "Direct instruction with lead teachers in asana, alignment, anatomy, and philosophy.",
+      "contactHoursDesc": "Direct learning time spent with your lead teachers inside the yoga hall.",
       "selfStudy": "Self-Study & Practicum",
       "selfStudyDesc": "Guided readings, journaling, peer practice, and class sequencing assignments.",
       "totalCert": "Total Certification",
@@ -664,47 +664,47 @@
       "cards": [
         {
           "title": "Ashtanga Yoga Postures",
-          "content": "Complete Ashtanga yoga primary series sequence. Week-by-week progression through Sun Salutation A & B, Standing sequence, Seated sequence, and Mysore style practice."
+          "content": "Practice the complete Ashtanga yoga Primary Series sequence. You will progress week by week through Mysore-style self-practice and guided lead classes."
         },
         {
           "title": "Hatha & Vinyasa Flow",
-          "content": "Pawanmuktasana series, Surya Namaskar variations, Standing and seated postures, Backbends, Forward folds, Inversions, and complete sequencing methodology."
+          "content": "Practice the Pawanmuktasana series (energy-freeing joints warmup) and Surya Namaskar (Sun Salutation) variations. Master standing and seated postures, backbends, forward folds, inversions, and complete sequencing methodology."
         },
         {
           "title": "Yoga Philosophy",
-          "content": "Introduction to yoga sutras of Patanjali, Eight limbs of Ashtanga Yoga, Nadis, Chakras, Pancha-Vayus, Panchakoshas, Triguna, and inspiring stories of great yogis."
+          "content": "Study the Yoga Sutras of Patanjali and the Eight Limbs of Ashtanga Yoga. Explore nadis (energy pathways), chakras (energy centers), Pancha-Vayus (five vital airs), Panchakoshas (five body sheaths), Triguna (three nature qualities), and inspiring stories of great yogis."
         },
         {
           "title": "Pranayama & Breathing",
-          "content": "Complete breathing techniques including Ujjayi, Bhastrika, Kapalbhati, Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi, Sheetali, and Sheetkari."
+          "content": "Master traditional pranayama (breathing techniques). Practice Ujjayi (victorious breath), Bhastrika (bellows breath), Kapalbhati (cleansing breath), and Nadi-Sodhana (alternate nostril breathing). You will also learn Bhramari (bee breath), Surya-Bhedi (solar breath), Chandra-Bhedi (lunar breath), Sheetali, and Sheetkari (cooling breaths)."
         },
         {
           "title": "Anatomy & Physiology",
-          "content": "Body movement planes, joint protection, anatomy of ankle, knee, spine, shoulder, breathing mechanism, physiology of muscles, and nervous system."
+          "content": "Study body movement planes, joint protection, and the anatomy of the ankle, knee, spine, and shoulder. Learn breathing mechanics and the physiology of muscles and the nervous system during yoga."
         },
         {
           "title": "Teaching Methodology",
-          "content": "Class sequencing, adjustments, working with different levels, voice usage, mental preparation, demonstration principles, and step-by-step class planning."
+          "content": "Learn practical teaching methodology. Master class sequencing, hands-on adjustments, and teaching mixed levels. Practice voice usage, mental preparation, posture demonstration principles, and step-by-step class planning."
         },
         {
           "title": "Meditation & Mantra",
-          "content": "Multiple meditation techniques, mantra chanting, Trataka, Osho Dynamic meditation, Nada Brahma, Antar Mouna, and silence practices for inner stillness."
+          "content": "Explore diverse meditation techniques and mantra chanting. Practice Trataka (candle gazing), Osho Dynamic meditation, Nada Brahma (sound meditation), Antar Mouna (inner silence), and silent practices for inner stillness."
         },
         {
           "title": "Iyengar Yoga",
-          "content": "Precision-focused yoga emphasizing correct body alignment using props like blocks, straps, and blankets to help practitioners achieve optimal posture and prevent injuries."
+          "content": "Study precision-focused yoga emphasizing correct body alignment. Use props like blocks, straps, and blankets to help students achieve optimal posture and prevent injuries."
         },
         {
           "title": "Alignment Principles",
-          "content": "Foundation of safe practice through understanding joint stacking, muscle engagement patterns, and body mechanics to protect and strengthen the physical body."
+          "content": "Build a foundation for safe practice through alignment principles. Learn joint stacking, healthy muscle engagement patterns, and body mechanics to protect and strengthen your body."
         },
         {
           "title": "Bandhas (Energy Locks)",
-          "content": "Master the three primary bandhas - Mula, Uddiyana, and Jalandhara. These internal locks regulate prana flow, strengthen the core, and deepen meditation practice."
+          "content": "Master the three primary bandhas (internal energy locks): Mula (root lock), Uddiyana (navel lock), and Jalandhara (throat lock). Learn how they redirect prana (vital energy), build core stability, and deepen posture holds."
         },
         {
           "title": "Mudras (Yogic Gestures)",
-          "content": "Sacred hand and body gestures that channel energy, enhance concentration, and connect with specific states of consciousness. Essential for pranayama and meditation."
+          "content": "Study sacred hand and body gestures (mudras) that direct energy flow, sharpen concentration, and connect with higher awareness. Essential for pranayama and meditation."
         }
       ]
     },
@@ -798,39 +798,39 @@
     "faqs": [
       {
         "question": "Is this 200-Hour Yoga Teacher Training suitable for beginners?",
-        "answer": "Yes. The course is thoughtfully designed to guide students from foundational principles to intermediate practice. In addition, every enrolled student receives access to our complimentary Pre-TTC online preparation to build essential strength, flexibility, and foundational alignment before arriving in Bali."
+        "answer": "Yes, this course is great for beginners. We build your practice step by step from basic postures to intermediate flows. You also get free access to our online preparation course to build strength and flexibility before you fly to Bali."
       },
       {
         "question": "What styles of yoga are taught in this 200-Hour TTC?",
-        "answer": "You will study multi-style yoga grounded in authentic Himalayan tradition, including Classical Hatha Yoga, dynamic Vinyasa Flow, Ashtanga Primary Series (by K. Pattabhi Jois), and precision alignment inspired by Iyengar yoga."
+        "answer": "You will study traditional Himalayan yoga across several styles. These include Classical Hatha, energetic Vinyasa Flow, the Ashtanga Primary Series, and Iyengar alignment with props."
       },
       {
         "question": "What is the daily schedule during the training?",
-        "answer": "A typical training day at YogaGarhi follows our verified daily schedule: 6:00 AM Wake Up & Morning Cleansing; 6:30 AM Pranayama & Meditation; 7:30 AM Hatha & Vinyasa; 9:00 AM Breakfast; 10:00 AM Yoga Philosophy; 12:00 PM Lunch & Rest; 3:00 PM Applied Anatomy & Bio Mechanics; 4:30 PM Alignment, Adjustments & Teaching Methodology; 6:00 PM Ashtanga & Iyengar with Yoga Therapy; 7:30 PM Dinner; 9:00 PM Self-Study / Lights Off."
+        "answer": "A typical training day at YogaGarhi follows our verified daily schedule:\n• 6:00 AM – Wake Up & Morning Cleansing\n• 6:30 AM – Pranayama & Meditation\n• 7:30 AM – Hatha & Vinyasa\n• 9:00 AM – Breakfast\n• 10:00 AM – Yoga Philosophy\n• 12:00 PM – Lunch & Rest\n• 3:00 PM – Applied Anatomy & Bio Mechanics\n• 4:30 PM – Alignment, Adjustments & Teaching Methodology\n• 6:00 PM – Ashtanga & Iyengar with Yoga Therapy\n• 7:30 PM – Dinner\n• 9:00 PM – Self-Study / Lights Off"
       },
       {
         "question": "What is the batch size at YogaGarhi Bali?",
-        "answer": "We strictly limit our batches to 8–10 students maximum. This intimate class size ensures personalized attention, individual posture corrections, and close mentorship from our senior teaching faculty."
+        "answer": "We keep our groups small with only 8 to 10 students per batch. This small class size ensures you get personal care, hands-on posture adjustments, and direct feedback from your lead teachers."
       },
       {
         "question": "What certification will I receive, and is it globally recognized?",
-        "answer": "Upon successful completion of the course and practical assessments, you receive a Yoga Alliance Registered Yoga Teacher (RYT 200) certificate, qualifying you to teach yoga professionally anywhere in the world."
+        "answer": "Yes. Once you pass your practical exams, you earn a Yoga Alliance RYT 200 certificate. This qualifies you to teach yoga professionally anywhere in the world."
       },
       {
         "question": "What room accommodation options and prices are available?",
-        "answer": "We offer four transparent enrollment packages: Tuition Only ($999 USD, early-bird from $1,299; accommodation and meals not included), Triple Sharing ($1,750 USD, early-bird from $2,050), Double Sharing ($1,899 USD, early-bird from $2,199), and Private Room ($2,499 USD, early-bird from $2,799). All residential packages include 23 nights accommodation and 3 daily meals."
+        "answer": "We offer four clear package options. Tuition-Only is $999 USD (early-bird from $1,299), with meals and room arranged on your own. For residential stays, choose Triple Sharing ($1,750 USD, early-bird from $2,050), Double Sharing ($1,899 USD, early-bird from $2,199), or Private Room ($2,499 USD, early-bird from $2,799). All room packages include 23 nights accommodation and 3 daily meals."
       },
       {
         "question": "What is included in the course fee?",
-        "answer": "For residential packages, the fee includes 23 nights accommodation (with attached bathroom, hot water, AC/fan, Wi-Fi, and daily cleaning), 3 healthy vegetarian meals daily, herbal teas and drinking water, official study manuals and notebooks, yoga mats and props for practice, airport pickup from DPS, cultural excursions (rice field trek, Balinese dance show, sacred water temple visits), a Balinese massage, Pre-TTC online preparation, special workshops (Arm Balance, Ayurveda), YogaGarhi 35+ creative sequencing book, Yoga Alliance RYT 200 certification upon graduation, and lifetime course repetition privileges. For the Tuition-Only package ($999 USD), accommodation and meals are not included."
+        "answer": "For residential packages, the fee includes everything you need for your stay:\n• 23 nights accommodation (with attached bathroom, hot water, AC or fan, Wi-Fi, and daily cleaning)\n• 3 healthy vegetarian meals daily, plus herbal teas and drinking water\n• Official study manuals and notebooks\n• Yoga mats and props for practice\n• Airport pickup from DPS\n• Cultural excursions (rice field trek, Balinese dance show, and sacred water temple visits)\n• A Balinese massage\n• Pre-TTC online preparation\n• Special workshops in Arm Balance and Ayurveda\n• YogaGarhi 35+ creative sequencing book\n• Yoga Alliance RYT 200 certification upon graduation\n• Lifetime course repetition privileges\nFor the Tuition-Only package ($999 USD), accommodation and meals are not included."
       },
       {
         "question": "What is the refund and cancellation policy?",
-        "answer": "You can reschedule your course within 12 months free of charge or transfer your reserved seat to another practitioner. We provide a full refund if the school cancels a batch, alongside a Day 1 trial policy. Due to strictly limited batch capacity, bookings are non-refundable once Day 1 begins."
+        "answer": "You can reschedule your course for free within 12 months. You can also transfer your deposit to any YogaGarhi campus in Bali, Rishikesh, or Varkala. Deposits are non-refundable, but they stay valid for 2 full years from your booking date."
       },
       {
         "question": "What kind of food is served during the training?",
-        "answer": "We serve three freshly prepared, nutritious sattvic vegetarian and vegan meals daily, thoughtfully prepared according to Ayurvedic principles using local organic ingredients to support your digestion and sustained energy."
+        "answer": "We serve three fresh, delicious vegetarian and vegan meals each day. Our kitchen uses local organic produce and follows Ayurvedic principles. Every meal is wholesome, balanced, and easy to digest to keep your energy high."
       }
     ],
     "hero": {
@@ -850,7 +850,7 @@
     },
     "overview": {
       "heading": "Course Overview & Ashram Experience",
-      "story": "Our 200 Hour Yoga Teacher Training in Bali is a full, beginner-to-intermediate level course for students who want to become confident yoga teachers or deeply understand yoga for their own life. YogaGarhi is in Gianyar, only about 15 km from Ubud, so you enjoy a peaceful, green village setting close to nature with easy access to Bali’s main yoga and culture center. During the training, you practice asanas every day, learn correct alignment, study pranayama, meditation, yoga philosophy, anatomy, and full teaching methodology. Step by step, you build strength in your body, clarity in your mind, and the skills to guide safe and meaningful classes for others."
+      "story": "Our 200 Hour Yoga Teacher Training in Bali welcomes beginner and intermediate students. It is made for anyone who wants to teach yoga with confidence or deepen their personal practice. Our campus sits in Gianyar, about 15 km from Ubud. You will live in a quiet green village close to nature, with easy trips to Bali's cultural heart. Each day, you practice asanas (yoga poses) and study safe alignment. You also explore pranayama (breath control), meditation, philosophy, and practical teaching methods. Step by step, you build physical strength, clear your mind, and gain the skills to lead inspiring yoga classes."
     },
     "curriculum": {
       "badge": "Curriculum Modules",
@@ -1011,9 +1011,9 @@
       "badge": "The Takeaway",
       "heading": "What You'll",
       "headingItalic": "Carry Home",
-      "sub": "Beyond the physical certificate, you walk away with a transformed perspective, a deeper connection to yourself, and the authentic skills to lead others.",
+      "sub": "You gain much more than a certificate. You leave with real inner calm, self-confidence, and the skills to teach yoga safely.",
       "careerImpactTitle": "Career Impact:",
-      "careerImpactDesc": "After completing the 200-Hour Yoga Teacher Training, you can start teaching yoga anywhere in the world in studios, online live classes, yoga retreats, or through your own independent practice.",
+      "careerImpactDesc": "With your 200-Hour certification, you can teach yoga worldwide. Lead classes in yoga studios, offer private lessons, host retreats, or teach online.",
       "card1Title": "Global Certification",
       "card1Desc": "Yoga Alliance RYT-200 to start your career anywhere.",
       "card2Title": "Master the Practice",
@@ -1063,19 +1063,19 @@
       "heading": "Sachin Ji's Research on Personalized Yoga and Prakriti",
       "quote": "\"Yoga Is Not One-Size-Fits-All Because Every Body Carries a Different Energy\"",
       "card1Title": "The Core Question",
-      "card1Text": "During our Lead Teacher's Master Yoga studies, one question became impossible to ignore: Why does the same yoga practice calm some people, but leave others feeling tired, restless, or mentally disturbed?",
+      "card1Text": "During our Lead Teacher's Master's research, an important question came up. Why does the same yoga practice calm one person, but make another feel restless or tired?",
       "card2Title": "Deep Investigation",
-      "card2Text": "This led to deep research into classical yoga texts, Ayurveda, and years of real student experience. The answer was simple, yet powerful: Every human being is born with a unique Prakriti.",
+      "card2Text": "We studied real students over several months. We found that a single yoga routine does not work for every nervous system or body type.",
       "card3Title": "The Energy Blueprint",
-      "card3Text": "Prakriti shapes the body, mind, emotions, and nervous system. Some people need grounding, some need movement, and others need stillness. A fixed style for everyone can create imbalance.",
+      "card3Text": "High-intensity vinyasa was leaving air-type (Vata) students depleted. Extended passive holds were aggravating earth-type (Kapha) sluggishness. Only when practices matched individual doshic balance did sustained transformation occur.",
       "card4Title": "Quality of Practice",
-      "card4Text": "More than which yoga style you practice, what truly matters is how you practice. How the nervous system is approached, how the breath is guided, and how your Dosha is supported rather than pushed.",
+      "card4Text": "The research showed that personalized sequencing based on Ayurvedic Prakriti assessment produces measurably better outcomes: faster physical recovery, deeper mental calm, and sustainable long-term practice without burnout.",
       "card5Title": "Shiv–Shakti Sadhana",
-      "card5Text": "Born from this realization, Shiv–Shakti Sadhana is a balanced approach that harmonizes stability and movement, awareness and energy. Asana here supports grounding and strength.",
+      "card5Text": "This work earned institutional recognition and laid the academic foundation for YogaGarhi's distinctive methodology: yoga that adapts to the human being, not the other way around.",
       "card6Title": "Back to Balance",
-      "card6Text": "When yoga respects your Prakriti, it becomes accessible, sustainable, and deeply healing. Real yoga does not change you; it brings you back into balance with yourself.",
-      "conclusion1": "Our Lead Teacher observed that when practice does not respect the nervous system and natural energy type, even correct postures can lead to restlessness, fatigue, or imbalance.",
-      "conclusion2": "\"When yoga respects your Prakriti, it becomes accessible, sustainable, and deeply healing for everyone. Here, yoga is not forced. It is personalized, energy-aware, and deeply respectful of who you are.\""
+      "card6Text": "Today, we teach this personalized method in our 200-hour training. You learn how to tailor practices for yourself and your future students.",
+      "conclusion1": "Our Lead Teacher found that ignoring a student's nervous system can cause fatigue or strain, even when poses look perfect on the outside.",
+      "conclusion2": "YogaGarhi was created to bridge this gap: yoga that adapts to your unique constitution, helping you build a sustainable practice that gives you energy rather than taking it away."
     },
     "ethicsExtra": {
       "code1": "Punctual attendance",
@@ -1137,35 +1137,35 @@
     "whatYouWillReceiveList": [
       {
         "title": "Multi Style Yoga Training",
-        "description": "Learn yoga in its authentic, time-tested way. Our teachers preserve the wisdom of yogic tradition."
+        "description": "Learn directly from seasoned yoga teachers from Rishikesh. Experience an authentic lineage that is never watered down."
       },
       {
         "title": "Yoga Alliance Certified",
-        "description": "Receive globally recognized certification. Begin teaching yoga with confidence worldwide."
+        "description": "Receive one free traditional Balinese body massage to relax your muscles."
       },
       {
         "title": "Peaceful Bali Surroundings",
-        "description": "Experience yoga in the lap of nature. Lush rice fields and serene greenery deepen your practice."
+        "description": "Practice yoga among green rice fields and tropical trees away from tourist noise."
       },
       {
         "title": "Outdoor Excursions",
-        "description": "Explore temples, beaches, and nature walks. Balance learning with adventure and culture."
+        "description": "Build confidence early with our free online prep classes before you arrive in Bali."
       },
       {
         "title": "Small Batch Sizes",
-        "description": "Get personal attention and guidance. Every student's growth matters to us."
+        "description": "Get personal feedback and support with small groups capped at 8 to 10 students."
       },
       {
         "title": "Supportive Community",
-        "description": "Be part of a warm and positive family. Grow together in a caring environment."
+        "description": "Study practical body anatomy to guide safe classes and protect student joints."
       },
       {
         "title": "Balinese Massage",
-        "description": "Traditional Indonesian therapy to relieve muscle tension. Promotes deep relaxation and holistic healing."
+        "description": "Receive traditional Indonesian therapy to ease muscle tension. It promotes deep relaxation and holistic healing."
       },
       {
         "title": "Balinese Dance Performance",
-        "description": "Ancient, dynamic and highly expressive dance form that reflects Bali's rich cultural heritage."
+        "description": "Enjoy friendly driver pickup straight from Denpasar Airport (DPS) to our campus."
       },
       {
         "title": "Healthy Meals",
@@ -1181,47 +1181,47 @@
       },
       {
         "title": "Yoga Lifestyle",
-        "description": "Adopt the yogic way of living for body, mind, and spirit."
+        "description": "Return to retrain or refresh your skills anytime without paying tuition fees again."
       }
     ],
     "workshopsList": [
       {
         "title": "Ayurveda Workshop & Ayurveda Cooking Workshop",
-        "description": "Understand your unique constitution (Prakriti) and learn how to balance your doshas through diet, lifestyle, and yogic practices for optimal health."
+        "description": "Discover your unique body type (Prakriti) in Ayurveda. Learn how food, daily habits, and yoga keep your natural energy in balance."
       },
       {
         "title": "Arm Balance Mastery",
-        "description": "Build the strength, technique and confidence needed to master arm balances like Crow, Side Crow, and Flying Pigeon with proper alignment."
+        "description": "Build upper body strength and core control. Learn step-by-step techniques to practice Crow Pose, Side Crow, and Flying Pigeon safely."
       },
       {
         "title": "Handstand Workshop",
-        "description": "Overcome fear and find your center through progressive drills, wall work, and partner exercises to achieve a confident freestanding handstand."
+        "description": "Overcome fear and build balance. Use wall drills, core exercises, and partner support to find your steady freestanding handstand."
       },
       {
         "title": "Yin Yoga Deep Stretch",
-        "description": "Access deeper connective tissue layers through long-held passive poses. Release tension, increase flexibility, and cultivate inner stillness."
+        "description": "Access deeper connective tissue layers through long-held passive poses. Release deep tension, build flexibility, and quiet your mind."
       },
       {
         "title": "Sound Healing Session",
-        "description": "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm."
+        "description": "Learn how to modify yoga poses for common limitations, injuries, and health conditions, so every student can practice safely."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
-        "description": "Open your heart through devotional practice. Learn sacred chants, mantras, and kirtan to connect with the spiritual essence of yoga."
+        "description": "Lie down in deep guided relaxation (yogic sleep). Relieve mental stress and reset your nervous system after physical practice."
       }
     ],
     "excursionsList": [
       {
         "title": "Balinese Dance Performance",
-        "description": "Witness the ancient art of Balinese dance — a mesmerizing display of grace, storytelling, and spiritual devotion passed down through generations."
+        "description": "Watch an authentic Balinese dance show. Enjoy beautiful storytelling, colorful costumes, and traditional music passed down for generations."
       },
       {
         "title": "Rice Field Trek",
-        "description": "Walk through Ubud's iconic terraced rice paddies. Experience the harmony of nature, traditional farming, and the peaceful rhythm of rural Bali."
+        "description": "Walk through Ubud's famous green rice terraces. Connect with nature, enjoy fresh air, and feel the calm pace of local village life."
       },
       {
         "title": "Sacred Waterfall Visit",
-        "description": "Journey to a sacred waterfall for a traditional cleansing ritual. Let the pure waters wash away what no longer serves you."
+        "description": "Journey to a sacred waterfall for a traditional cleansing ritual. Let the pure fresh waters wash away stress and tension."
       }
     ],
     "foodMenuList": [

@@ -45,7 +45,7 @@ export default function CourseFAQSection({
                   </div>
                 </summary>
                 <div className="px-5 pb-6 md:px-6 md:pb-6 text-muted-foreground text-sm md:text-base leading-relaxed border-t border-border/40 pt-4">
-                  <p>{faq.answer}</p>
+                  <p className="whitespace-pre-line">{faq.answer}</p>
                 </div>
               </details>
             ))}

@@ -87,67 +87,39 @@ export interface FAQItem {
 export const COURSE_200_FAQS: FAQItem[] = [
   {
     question: "Is this 200-Hour Yoga Teacher Training suitable for beginners?",
-    answer: "Yes. The course is thoughtfully designed to guide students from foundational principles to intermediate practice. In addition, every enrolled student receives access to our complimentary Pre-TTC online preparation to build essential strength, flexibility, and foundational alignment before arriving in Bali."
+    answer: "Yes, this course is great for beginners. We build your practice step by step from basic postures to intermediate flows. You also get free access to our online preparation course to build strength and flexibility before you fly to Bali."
   },
   {
     question: "What styles of yoga are taught in this 200-Hour TTC?",
-    answer: "You will study multi-style yoga grounded in authentic Himalayan tradition, including Classical Hatha Yoga, dynamic Vinyasa Flow, Ashtanga Primary Series (by K. Pattabhi Jois), and precision alignment inspired by Iyengar yoga."
+    answer: "You will study traditional Himalayan yoga across several styles. These include Classical Hatha, energetic Vinyasa Flow, the Ashtanga Primary Series, and Iyengar alignment with props."
   },
   {
     question: "What is the daily schedule during the training?",
-    answer: "A typical training day at YogaGarhi follows our verified daily schedule: 6:00 AM Wake Up & Morning Cleansing; 6:30 AM Pranayama & Meditation; 7:30 AM Hatha & Vinyasa; 9:00 AM Breakfast; 10:00 AM Yoga Philosophy; 12:00 PM Lunch & Rest; 3:00 PM Applied Anatomy & Bio Mechanics; 4:30 PM Alignment, Adjustments & Teaching Methodology; 6:00 PM Ashtanga & Iyengar with Yoga Therapy; 7:30 PM Dinner; 9:00 PM Self-Study / Lights Off."
+    answer: "A typical training day at YogaGarhi follows our verified daily schedule:\n• 6:00 AM – Wake Up & Morning Cleansing\n• 6:30 AM – Pranayama & Meditation\n• 7:30 AM – Hatha & Vinyasa\n• 9:00 AM – Breakfast\n• 10:00 AM – Yoga Philosophy\n• 12:00 PM – Lunch & Rest\n• 3:00 PM – Applied Anatomy & Bio Mechanics\n• 4:30 PM – Alignment, Adjustments & Teaching Methodology\n• 6:00 PM – Ashtanga & Iyengar with Yoga Therapy\n• 7:30 PM – Dinner\n• 9:00 PM – Self-Study / Lights Off"
   },
   {
     question: "What is the batch size at YogaGarhi Bali?",
-    answer: "We strictly limit our batches to 8–10 students maximum. This intimate class size ensures personalized attention, individual posture corrections, and close mentorship from our senior teaching faculty."
+    answer: "We keep our groups small with only 8 to 10 students per batch. This small class size ensures you get personal care, hands-on posture adjustments, and direct feedback from your lead teachers."
   },
   {
     question: "What certification will I receive, and is it globally recognized?",
-    answer: "Upon successful completion of the course and practical assessments, you receive a Yoga Alliance Registered Yoga Teacher (RYT 200) certificate, qualifying you to teach yoga professionally anywhere in the world."
+    answer: "Yes. Once you pass your practical exams, you earn a Yoga Alliance RYT 200 certificate. This qualifies you to teach yoga professionally anywhere in the world."
   },
   {
     question: "What room accommodation options and prices are available?",
-    answer: "We offer four transparent enrollment packages: Tuition Only ($999 USD, early-bird from $1,299; accommodation and meals not included), Triple Sharing ($1,750 USD, early-bird from $2,050), Double Sharing ($1,899 USD, early-bird from $2,199), and Private Room ($2,499 USD, early-bird from $2,799). All residential packages include 23 nights accommodation and 3 daily meals."
+    answer: "We offer four clear package options. Tuition-Only is $999 USD (early-bird from $1,299), with meals and room arranged on your own. For residential stays, choose Triple Sharing ($1,750 USD, early-bird from $2,050), Double Sharing ($1,899 USD, early-bird from $2,199), or Private Room ($2,499 USD, early-bird from $2,799). All room packages include 23 nights accommodation and 3 daily meals."
   },
   {
     question: "What is included in the course fee?",
-    answer: "For residential packages, the fee includes 23 nights accommodation (with attached bathroom, hot water, AC/fan, Wi-Fi, and daily cleaning), 3 healthy vegetarian meals daily, herbal teas and drinking water, official study manuals and notebooks, yoga mats and props for practice, airport pickup from DPS, cultural excursions (rice field trek, Balinese dance show, sacred water temple visits), a Balinese massage, Pre-TTC online preparation, special workshops (Arm Balance, Ayurveda), YogaGarhi 35+ creative sequencing book, Yoga Alliance RYT 200 certification upon graduation, and lifetime course repetition privileges. For the Tuition-Only package ($999 USD), accommodation and meals are not included."
+    answer: "For residential packages, the fee includes everything you need for your stay:\n• 23 nights accommodation (with attached bathroom, hot water, AC or fan, Wi-Fi, and daily cleaning)\n• 3 healthy vegetarian meals daily, plus herbal teas and drinking water\n• Official study manuals and notebooks\n• Yoga mats and props for practice\n• Airport pickup from DPS\n• Cultural excursions (rice field trek, Balinese dance show, and sacred water temple visits)\n• A Balinese massage\n• Pre-TTC online preparation\n• Special workshops in Arm Balance and Ayurveda\n• YogaGarhi 35+ creative sequencing book\n• Yoga Alliance RYT 200 certification upon graduation\n• Lifetime course repetition privileges\nFor the Tuition-Only package ($999 USD), accommodation and meals are not included."
   },
   {
     question: "What is the refund and cancellation policy?",
-    answer: "You can reschedule your course within 12 months free of charge or transfer your reserved seat to another practitioner. We provide a full refund if the school cancels a batch, alongside a Day 1 trial policy. Due to strictly limited batch capacity, bookings are non-refundable once Day 1 begins."
+    answer: "You can reschedule your course for free within 12 months. You can also transfer your deposit to any YogaGarhi campus in Bali, Rishikesh, or Varkala. Deposits are non-refundable, but they stay valid for 2 full years from your booking date."
   },
   {
     question: "What kind of food is served during the training?",
-    answer: "We serve three freshly prepared, nutritious sattvic vegetarian and vegan meals daily, prepared with fresh local Balinese ingredients according to yogic dietary principles (Ahimsa) to support your digestive health, physical energy, and mental clarity."
-  },
-  {
-    question: "Are there rest days during the 24-day training?",
-    answer: "Yes. Sundays are designated rest and rejuvenation days. Students can relax, visit Ubud's cafes and markets, explore local waterfalls, or join our organized sacred cultural excursions across Bali."
-  },
-  {
-    question: "Do I need a visa to travel to Bali for the course?",
-    answer: "Visa requirements depend on your nationality and passport. We advise checking the official Indonesian Immigration website or your nearest Indonesian embassy for the most up-to-date entry rules. Our admissions team provides official enrollment letters and guidance upon registration."
-  },
-  {
-    question: "How does the Free Pre-TTC online preparation work?",
-    answer: "Upon confirming your enrollment, you gain access to our online Pre-TTC preparation module. This enables you to review fundamental asana postures, basic Sanskrit terms, and breathing practices in advance so you arrive in Bali confident and well-prepared."
-  },
-  {
-    question: "What is the Lifetime Course Repeat policy?",
-    answer: "YogaGarhi graduates can return to future 200-hour batches in Bali tuition-free at any time (only covering personal accommodation and meals) to refresh their teaching skills, deepen their sadhana, or assist as an apprentice teacher."
-  },
-  {
-    question: "What post-program mentorship is provided after graduation?",
-    answer: "We provide 1 full year of post-graduation mentorship. This includes ongoing guidance on class sequencing, hands-on adjustments, yoga career advice, and continuous access to the global YogaGarhi teacher alumni network."
-  },
-  {
-    question: "What language is the training conducted in?",
-    answer: "All classes, lectures, methodology workshops, and manuals are delivered in clear, accessible English. Our instructors ensure a supportive environment for non-native English speakers."
-  },
-  {
-    question: "Can I join if I don't intend to become a professional teacher?",
-    answer: "Yes. Many of our students enroll primarily for personal growth, deep spiritual immersion, and understanding the complete science of yoga for their own life and well-being."
+    answer: "We serve three fresh, delicious vegetarian and vegan meals each day. Our kitchen uses local organic produce and follows Ayurvedic principles. Every meal is wholesome, balanced, and easy to digest to keep your energy high."
   }
 ];
 
