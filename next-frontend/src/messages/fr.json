@@ -464,7 +464,30 @@
       "idealPractice": "Une pratique adaptée à votre morphotype",
       "philosophy": "L'harmonie globale par la sagesse ayurvédique",
       "quizBtn": "Faire le quiz des Doshas",
-      "takeQuiz": "Découvrir votre profil Prakriti"
+      "takeQuiz": "Découvrir votre profil Prakriti",
+      "cards": {
+        "vata": {
+          "element": "Air & Éther",
+          "trait1": "Créatif",
+          "trait2": "Énergique",
+          "trait3": "Vif d'esprit",
+          "yogaStyle": "Pratiques d'ancrage au rythme lent"
+        },
+        "pitta": {
+          "element": "Feu & Eau",
+          "trait1": "Concentré",
+          "trait2": "Déterminé",
+          "trait3": "Passionné",
+          "yogaStyle": "Flows rafraîchissants d'intensité modérée"
+        },
+        "kapha": {
+          "element": "Terre & Eau",
+          "trait1": "Stable",
+          "trait2": "Bienveillant",
+          "trait3": "Patient",
+          "yogaStyle": "Séquences revigorantes et dynamiques"
+        }
+      }
     },
     "videoGallery": {
       "badge": "Vie à l'ashram",

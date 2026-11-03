@@ -464,7 +464,30 @@
       "idealPractice": "Práctica adaptada a tu constitución",
       "philosophy": "Armonía integral mediante la sabiduría tradicional",
       "quizBtn": "Iniciar test de Doshas",
-      "takeQuiz": "Descubre tu tipo de Prakriti"
+      "takeQuiz": "Descubre tu tipo de Prakriti",
+      "cards": {
+        "vata": {
+          "element": "Aire y Éter",
+          "trait1": "Creativo",
+          "trait2": "Enérgico",
+          "trait3": "De mente ágil",
+          "yogaStyle": "Prácticas de enraizamiento a ritmo pausado"
+        },
+        "pitta": {
+          "element": "Fuego y Agua",
+          "trait1": "Enfocado",
+          "trait2": "Determinado",
+          "trait3": "Apasionado",
+          "yogaStyle": "Flujos refrescantes de intensidad moderada"
+        },
+        "kapha": {
+          "element": "Tierra y Agua",
+          "trait1": "Estable",
+          "trait2": "Nutricio",
+          "trait3": "Paciente",
+          "yogaStyle": "Secuencias vigorizantes y dinámicas"
+        }
+      }
     },
     "videoGallery": {
       "badge": "Vida en el ashram",

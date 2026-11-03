@@ -464,7 +464,30 @@
       "desc": "In Ayurveda, your unique constitution—your Prakriti—determines which yoga practices will bring you into balance. One size never fits all.",
       "idealPractice": "Ideal Practice",
       "philosophy": "At YogaGarhi, we teach multi-style yoga not to confuse, but to liberate. By understanding Hatha, Vinyasa, Ashtanga, and Iyengar as complete systems, you learn to adapt yoga to the individual—not force the individual into yoga.",
-      "quizBtn": "Take Free Prakriti Quiz"
+      "quizBtn": "Take Free Prakriti Quiz",
+      "cards": {
+        "vata": {
+          "element": "Air & Ether",
+          "trait1": "Creative",
+          "trait2": "Energetic",
+          "trait3": "Quick-minded",
+          "yogaStyle": "Grounding, slow-paced practices"
+        },
+        "pitta": {
+          "element": "Fire & Water",
+          "trait1": "Focused",
+          "trait2": "Driven",
+          "trait3": "Passionate",
+          "yogaStyle": "Cooling, moderate-intensity flows"
+        },
+        "kapha": {
+          "element": "Earth & Water",
+          "trait1": "Steady",
+          "trait2": "Nurturing",
+          "trait3": "Patient",
+          "yogaStyle": "Invigorating, dynamic sequences"
+        }
+      }
     },
     "videoGallery": {
       "badge": "Ashram Life",

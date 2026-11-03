@@ -464,7 +464,30 @@
       "idealPractice": "Praktik yang disesuaikan dengan konstitusi Anda",
       "philosophy": "Harmoni holistik melalui kearifan kuno",
       "quizBtn": "Ikuti Tes Dosha",
-      "takeQuiz": "Temukan Tipe Prakriti Anda"
+      "takeQuiz": "Temukan Tipe Prakriti Anda",
+      "cards": {
+        "vata": {
+          "element": "Udara & Eter",
+          "trait1": "Kreatif",
+          "trait2": "Energik",
+          "trait3": "Berpikir Cepat",
+          "yogaStyle": "Praktik yang menenangkan dan bertempo lambat"
+        },
+        "pitta": {
+          "element": "Api & Air",
+          "trait1": "Fokus",
+          "trait2": "Berorientasi Tujuan",
+          "trait3": "Penuh Semangat",
+          "yogaStyle": "Aliran yang menyejukkan dengan intensitas sedang"
+        },
+        "kapha": {
+          "element": "Tanah & Air",
+          "trait1": "Stabil",
+          "trait2": "Penuh Kasih",
+          "trait3": "Sabar",
+          "yogaStyle": "Sekuens yang membangkitkan energi dan dinamis"
+        }
+      }
     },
     "videoGallery": {
       "badge": "Kehidupan Ashram",

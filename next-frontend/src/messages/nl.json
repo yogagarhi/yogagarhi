@@ -464,7 +464,30 @@
       "idealPractice": "Oefening afgestemd op jouw constitutie",
       "philosophy": "Holistische harmonie door oeroude kennis",
       "quizBtn": "Start Dosha-test",
-      "takeQuiz": "Ontdek jouw Prakriti-type"
+      "takeQuiz": "Ontdek jouw Prakriti-type",
+      "cards": {
+        "vata": {
+          "element": "Lucht & Ether",
+          "trait1": "Creatief",
+          "trait2": "Energiek",
+          "trait3": "Snel van begrip",
+          "yogaStyle": "Aardende, rustige lessen"
+        },
+        "pitta": {
+          "element": "Vuur & Water",
+          "trait1": "Gefocust",
+          "trait2": "Gedreven",
+          "trait3": "Gepassioneerd",
+          "yogaStyle": "Verkoelende flows met matige intensiteit"
+        },
+        "kapha": {
+          "element": "Aarde & Water",
+          "trait1": "Stabiel",
+          "trait2": "Zorgzaam",
+          "trait3": "Geduldig",
+          "yogaStyle": "Verkwikkende, dynamische reeksen"
+        }
+      }
     },
     "videoGallery": {
       "badge": "Ashramleven",

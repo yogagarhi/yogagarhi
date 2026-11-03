@@ -464,7 +464,30 @@
       "idealPractice": "契合体质的量身定制修习",
       "philosophy": "古老智慧带来的整体平衡",
       "quizBtn": "测试您的 Dosha 体质",
-      "takeQuiz": "测一测您的体质类型"
+      "takeQuiz": "测一测您的体质类型",
+      "cards": {
+        "vata": {
+          "element": "风与空",
+          "trait1": "富有创造力",
+          "trait2": "精力充沛",
+          "trait3": "思维敏捷",
+          "yogaStyle": "扎根稳定、节奏和缓的练习"
+        },
+        "pitta": {
+          "element": "火与水",
+          "trait1": "专注坚定",
+          "trait2": "目标导向",
+          "trait3": "充满热情",
+          "yogaStyle": "清凉降燥、适度强度的流动练习"
+        },
+        "kapha": {
+          "element": "土与水",
+          "trait1": "沉稳持重",
+          "trait2": "善于关怀",
+          "trait3": "富有耐心",
+          "yogaStyle": "振奋身心、充满活力的动态序列"
+        }
+      }
     },
     "videoGallery": {
       "badge": "静修院日常",

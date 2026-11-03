@@ -464,7 +464,30 @@
       "idealPractice": "体質に合わせた最適なヨガ練習",
       "philosophy": "古の知恵によるホリスティックな調和",
       "quizBtn": "ドーシャ診断を受ける",
-      "takeQuiz": "あなたの体質タイプを診断"
+      "takeQuiz": "あなたの体質タイプを診断",
+      "cards": {
+        "vata": {
+          "element": "風と空",
+          "trait1": "創造的",
+          "trait2": "エネルギッシュ",
+          "trait3": "頭の回転が速い",
+          "yogaStyle": "グラウンディングを促す、ゆったりとした練習"
+        },
+        "pitta": {
+          "element": "火と水",
+          "trait1": "集中力がある",
+          "trait2": "情熱的",
+          "trait3": "行動的",
+          "yogaStyle": "熱を鎮める適度な強度のフロー"
+        },
+        "kapha": {
+          "element": "地と水",
+          "trait1": "安定的",
+          "trait2": "包容力がある",
+          "trait3": "忍耐強い",
+          "yogaStyle": "活力を高めるダイナミックなシークエンス"
+        }
+      }
     },
     "videoGallery": {
       "badge": "アシュラムの暮らし",

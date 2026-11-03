@@ -464,7 +464,30 @@
       "idealPractice": "Auf deine Konstitution abgestimmte Praxis",
       "philosophy": "Ganzheitliche Harmonie durch altes Wissen",
       "quizBtn": "Dosha-Quiz starten",
-      "takeQuiz": "Ermittle deinen Prakriti-Typ"
+      "takeQuiz": "Ermittle deinen Prakriti-Typ",
+      "cards": {
+        "vata": {
+          "element": "Luft & Äther",
+          "trait1": "Kreativ",
+          "trait2": "Energisch",
+          "trait3": "Geistig flexibel",
+          "yogaStyle": "Erdende, ruhige Praxis"
+        },
+        "pitta": {
+          "element": "Feuer & Wasser",
+          "trait1": "Fokussiert",
+          "trait2": "Zielstrebig",
+          "trait3": "Leidenschaftlich",
+          "yogaStyle": "Kühlende Flows mittlerer Intensität"
+        },
+        "kapha": {
+          "element": "Erde & Wasser",
+          "trait1": "Beständig",
+          "trait2": "Fürsorglich",
+          "trait3": "Geduldig",
+          "yogaStyle": "Belebende, dynamische Sequenzen"
+        }
+      }
     },
     "videoGallery": {
       "badge": "Ashram-Leben",

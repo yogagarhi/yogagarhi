@@ -464,7 +464,30 @@
       "idealPractice": "체질에 꼭 맞춘 이상적인 수련",
       "philosophy": "고대의 지혜가 주는 전인적 조화",
       "quizBtn": "도샤 체질 테스트하기",
-      "takeQuiz": "나의 체질 유형 확인하기"
+      "takeQuiz": "나의 체질 유형 확인하기",
+      "cards": {
+        "vata": {
+          "element": "바람 & 에테르",
+          "trait1": "창의적인",
+          "trait2": "에너지 넘치는",
+          "trait3": "명석하고 빠른 두뇌",
+          "yogaStyle": "그라운딩을 돕는 차분한 속도의 수련"
+        },
+        "pitta": {
+          "element": "불 & 물",
+          "trait1": "집중력 있는",
+          "trait2": "목표 지향적인",
+          "trait3": "열정적인",
+          "yogaStyle": "열을 식혀주는 중간 강도의 플로우"
+        },
+        "kapha": {
+          "element": "흙 & 물",
+          "trait1": "안정적인",
+          "trait2": "따뜻하고 배려심 깊은",
+          "trait3": "인내심 있는",
+          "yogaStyle": "활력을 불어넣는 역동적인 시퀀스"
+        }
+      }
     },
     "videoGallery": {
       "badge": "아쉬람 일상",

@@ -464,7 +464,30 @@
       "idealPractice": "Pratica calibrata sulla tua costituzione",
       "philosophy": "Armonia olistica basata sui princìpi tradizionali",
       "quizBtn": "Fai il test dei Dosha",
-      "takeQuiz": "Scopri la tua costituzione Prakriti"
+      "takeQuiz": "Scopri la tua costituzione Prakriti",
+      "cards": {
+        "vata": {
+          "element": "Aria ed Etere",
+          "trait1": "Creativo",
+          "trait2": "Energico",
+          "trait3": "Mente agile",
+          "yogaStyle": "Pratiche radicanti a ritmo calmo"
+        },
+        "pitta": {
+          "element": "Fuoco e Acqua",
+          "trait1": "Focalizzato",
+          "trait2": "Determinato",
+          "trait3": "Appassionato",
+          "yogaStyle": "Flow rinfrescanti a intensità moderata"
+        },
+        "kapha": {
+          "element": "Terra e Acqua",
+          "trait1": "Stabile",
+          "trait2": "Premuroso",
+          "trait3": "Paziente",
+          "yogaStyle": "Sequenze rinvigorenti e dinamiche"
+        }
+      }
     },
     "videoGallery": {
       "badge": "Vita nell'ashram",

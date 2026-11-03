@@ -6,37 +6,31 @@ const PrakritiQuizIsland = dynamic(() => import("@/components/home/PrakritiQuizI
 
 
 
-// Dosha types with their characteristics
-const doshaTypes = [
+// Dosha configurations with visual attributes
+const doshaConfigs = [
   {
+    key: "vata" as const,
     name: "Vata",
-    element: "Air & Ether",
     icon: Wind,
     color: "from-sky-400/20 to-indigo-400/20",
     borderColor: "border-sky-400/30",
     iconColor: "text-sky-500",
-    traits: ["Creative", "Energetic", "Quick-minded"],
-    yogaStyle: "Grounding, slow-paced practices",
   },
   {
+    key: "pitta" as const,
     name: "Pitta",
-    element: "Fire & Water",
     icon: Flame,
     color: "from-orange-400/20 to-red-400/20",
     borderColor: "border-orange-400/30",
     iconColor: "text-orange-500",
-    traits: ["Focused", "Driven", "Passionate"],
-    yogaStyle: "Cooling, moderate-intensity flows",
   },
   {
+    key: "kapha" as const,
     name: "Kapha",
-    element: "Earth & Water",
     icon: Droplets,
     color: "from-emerald-400/20 to-teal-400/20",
     borderColor: "border-emerald-400/30",
     iconColor: "text-emerald-500",
-    traits: ["Steady", "Nurturing", "Patient"],
-    yogaStyle: "Invigorating, dynamic sequences",
   },
 ];
 
@@ -120,8 +114,15 @@ export default async function WhyOneStyleSection() {
 
         {/* Three Dosha Cards */}
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
-          {doshaTypes.map((dosha, index) => {
+          {doshaConfigs.map((dosha, index) => {
             const Icon = dosha.icon;
+            const element = t(`cards.${dosha.key}.element`);
+            const traits = [
+              t(`cards.${dosha.key}.trait1`),
+              t(`cards.${dosha.key}.trait2`),
+              t(`cards.${dosha.key}.trait3`),
+            ];
+            const yogaStyle = t(`cards.${dosha.key}.yogaStyle`);
 
             return (
               <div
@@ -153,12 +154,12 @@ export default async function WhyOneStyleSection() {
                   {dosha.name}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4 italic">
-                  {dosha.element}
+                  {element}
                 </p>
 
                 {/* Traits */}
                 <div className="space-y-2 mb-4">
-                  {dosha.traits.map((trait, i) => (
+                  {traits.map((trait, i) => (
                     <div
                       key={i}
                       className="flex items-center gap-2 text-sm text-foreground/80 transition-all duration-300 group-hover:translate-x-1"
@@ -172,7 +173,7 @@ export default async function WhyOneStyleSection() {
                 {/* Yoga recommendation */}
                 <div className="pt-4 border-t border-foreground/10 transition-all duration-500 opacity-70 group-hover:opacity-100">
                   <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{t("idealPractice")}</p>
-                  <p className="text-sm font-medium text-foreground">{dosha.yogaStyle}</p>
+                  <p className="text-sm font-medium text-foreground">{yogaStyle}</p>
                 </div>
               </div>
             );
