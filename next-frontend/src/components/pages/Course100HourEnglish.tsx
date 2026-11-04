@@ -441,7 +441,7 @@ const workshops = [
   },
   {
     title: "Sound Healing Session",
-    description: "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm.",
+    description: "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness.",
     image: workshopSoundHealingUpdate
   },
   {

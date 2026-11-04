@@ -429,7 +429,7 @@
       "role": "Gründer & leitender Dozent, YogaGarhi",
       "quote": "„Yoga als Einheit – wenn Yoga gelebt und nicht bloß gelehrt wird, verwandelt es alles.“",
       "meetTeacher": "Lerne den Lehrer hinter YogaGarhi kennen",
-      "trainedCount": "Über 2500 Absolventen ausgebildet",
+      "trainedCount": "Über 2000 Absolventen ausgebildet",
       "experienceYears": "Über 18 Jahre Praxis",
       "armyTherapy": "Lehrte Yogatherapie für die indische Armee",
       "founderLeadBadge": "Gründer & Hauptlehrer",
@@ -572,7 +572,7 @@
       "askDirectly": "Frag uns direkt",
       "whatsappUs": "Schreib uns auf WhatsApp",
       "responseTiming": "Wir antworten meist innerhalb von 24 Stunden",
-      "happyStudents": "+497 glückliche Schüler"
+      "happyStudents": "+600 Absolventen"
     },
     "metaTitle": "Yogalehrer Ausbildung in Bali, Rishikesh & Varkala | YogaGarhi",
     "metaDesc": "Yoga Alliance zertifizierte 100, 200 & 300 Std. Yogalehrer Ausbildung in Bali, Rishikesh & Varkala. Authentische Himalaya-Tradition, kleine Gruppen 8–10, 1 Jahr Mentoring."
@@ -923,7 +923,7 @@
       "heading": "Zimmerkategorien & Preise",
       "sub": "Transparente Komplettpreise ohne versteckte Kosten.",
       "tuitionOnly": "Nur Unterricht (ohne Zimmer)",
-      "tuitionOnlyDesc": "Kursunterricht, alle Mahlzeiten, Studienmaterialien und Zertifizierung. Externe Unterkunft.",
+      "tuitionOnlyDesc": "Kursunterricht, offizielle Studienmaterialien und Yoga Alliance-Zertifizierung. Unterkunft und Mahlzeiten sind nicht inbegriffen.",
       "triple": "Dreibettzimmer",
       "tripleDesc": "Geräumiges, klimatisiertes Zimmer geteilt mit zwei Mitreisenden, eigenes Bad, Balkon.",
       "double": "Doppelzimmer",
@@ -986,7 +986,7 @@
       },
       {
         "question": "Welche Unterkunftsoptionen und Preise gibt es?",
-        "answer": "Wir bieten vier transparente Pakete: Nur Unterricht ($999 USD, regulär $1,299; ohne Unterkunft/Mahlzeiten), Dreibettzimmer ($1,750 USD, regulär $2,050), Doppelzimmer ($1,899 USD, regulär $2,199) und Einzelzimmer ($2,499 USD, regulär $2,799). Alle Wohnpakete beinhalten 23 Nächte Unterkunft und 3 tägliche Mahlzeiten."
+        "answer": "Wir bieten vier transparente Paketoptionen. Nur Unterricht kostet regulär $1.299 USD (Frühbucher $999 USD), wobei Unterkunft und Verpflegung selbst außerhalb organisiert werden. Für Aufenthalte mit Unterkunft wählen Sie Dreibettzimmer (regulär $2.050 USD, Frühbucher $1.750 USD), Doppelzimmer (regulär $2.199 USD, Frühbucher $1.899 USD) oder Einzelzimmer (regulär $2.799 USD, Frühbucher $2.499 USD). Alle Wohnpakete beinhalten 23 Übernachtungen und 3 tägliche Mahlzeiten."
       },
       {
         "question": "Was ist in den Kursgebühren enthalten?",
@@ -1141,7 +1141,7 @@
       },
       {
         "title": "Yoga Alliance Zertifizierung",
-        "description": "Erhalte ein weltweit anerkanntes Zertifikat und beginne vertrauensvoll überall zu unterrichten."
+        "description": "Erhalten Sie ein weltweit anerkanntes Yoga Alliance RYT 200-Zertifikat, um weltweit professionell zu unterrichten."
       },
       {
         "title": "Friedvolle Umgebung auf Bali",
@@ -1149,7 +1149,7 @@
       },
       {
         "title": "Ausflüge in die Natur",
-        "description": "Erkunde Tempel, Strände und Naturpfade. Verbinde intensives Lernen mit Kultur und Entspannung."
+        "description": "Erkunden Sie heilige Wassertempel, Reisterrassen und kulturelle Sehenswürdigkeiten bei geführten Ausflügen."
       },
       {
         "title": "Kleine Gruppengrößen",
@@ -1157,7 +1157,7 @@
       },
       {
         "title": "Unterstützende Gemeinschaft",
-        "description": "Werde Teil einer herzlichen, positiven Familie und wachse in einem geschützten Raum."
+        "description": "Werden Sie Teil einer herzlichen Sangha aufrichtiger Praktizierender und schließen Sie lebenslange Freundschaften."
       },
       {
         "title": "Balinesische Massage",
@@ -1165,7 +1165,7 @@
       },
       {
         "title": "Balinesische Tanzaufführung",
-        "description": "Ausdrucksstarke rituelle Tanzkunst, die das reiche spirituelle Erbe Balis widerspiegelt."
+        "description": "Erleben Sie eine traditionelle balinesische Tanzaufführung, die das spirituelle Erbe der Insel feiert."
       },
       {
         "title": "Gesunde Mahlzeiten",
@@ -1181,7 +1181,7 @@
       },
       {
         "title": "Yogischer Lebensstil",
-        "description": "Verankere die yogische Lebensweise nachhaltig für Körper, Geist und Seele."
+        "description": "Verinnerlichen Sie den yogischen Lebensstil mit morgendlicher Sadhana, achtsamer Ernährung und Gemeinschaft."
       }
     ],
     "workshopsList": [
@@ -1203,11 +1203,19 @@
       },
       {
         "title": "Klangschalen- & Sound-Healing-Session",
-        "description": "Erlebe die transformative Wirkung tibetischer Klangschalen, Gongs und Mantras für tiefe Entspannung."
+        "description": "Erleben Sie die heilsame Kraft beruhigender Klangvibrationen und heiliger Gesänge, um tiefe körperliche Spannungen zu lösen, das Nervensystem zu beruhigen und innere Stille zu finden."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
-        "description": "Öffne dein Herz durch hingebungsvolles Singen traditioneller Mantras und Kirtan in Gemeinschaft."
+        "description": "Öffnen Sie Ihr Herz durch Kirtan-Gesänge, vedische Mantras und die hingebungsvolle Philosophie des Bhakti Yoga."
+      },
+      {
+        "title": "Yogatherapie & Haltungsanpassungen",
+        "description": "Lernen Sie, wie Sie Yogaposen bei Einschränkungen und Verletzungen anpassen, damit alle Schüler sicher praktizieren können."
+      },
+      {
+        "title": "Yoga Nidra Tiefenentspannung",
+        "description": "Erleben Sie tiefe geführte Entspannung (yogischer Schlaf). Bauen Sie mentalen Stress ab und regenerieren Sie Ihr Nervensystem."
       }
     ],
     "excursionsList": [
@@ -2024,7 +2032,7 @@
       },
       {
         "title": "Klangschalen- & Sound-Healing-Session",
-        "description": "Erlebe die transformative Wirkung tibetischer Klangschalen, Gongs und Mantras für tiefe Entspannung."
+        "description": "Erleben Sie die heilsame Kraft beruhigender Klangvibrationen und heiliger Gesänge, um tiefe körperliche Spannungen zu lösen, das Nervensystem zu beruhigen und innere Stille zu finden."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -2712,7 +2720,7 @@
       },
       {
         "title": "Klangschalen- & Sound-Healing-Session",
-        "description": "Erlebe die transformative Wirkung tibetischer Klangschalen, Gongs und Mantras für tiefe Entspannung."
+        "description": "Erleben Sie die heilsame Kraft beruhigender Klangvibrationen und heiliger Gesänge, um tiefe körperliche Spannungen zu lösen, das Nervensystem zu beruhigen und innere Stille zu finden."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -3418,7 +3426,7 @@
       },
       {
         "title": "Klangschalen- & Sound-Healing-Session",
-        "description": "Erlebe die transformative Wirkung tibetischer Klangschalen, Gongs und Mantras für tiefe Entspannung."
+        "description": "Erleben Sie die heilsame Kraft beruhigender Klangvibrationen und heiliger Gesänge, um tiefe körperliche Spannungen zu lösen, das Nervensystem zu beruhigen und innere Stille zu finden."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -4192,7 +4200,7 @@
       },
       {
         "title": "Klangschalen- & Sound-Healing-Session",
-        "description": "Erlebe die transformative Wirkung tibetischer Klangschalen, Gongs und Mantras für tiefe Entspannung."
+        "description": "Erleben Sie die heilsame Kraft beruhigender Klangvibrationen und heiliger Gesänge, um tiefe körperliche Spannungen zu lösen, das Nervensystem zu beruhigen und innere Stille zu finden."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -5060,7 +5068,7 @@
     "trust": {
       "accreditation": "Yoga Alliance",
       "accreditationSub": "Zertifizierte Schule",
-      "graduates": "500+ Absolventen",
+      "graduates": "600+ Absolventen",
       "graduatesSub": "Weltweit",
       "rating": "5★ Bewertung",
       "ratingSub": "Auf Google"
@@ -6255,7 +6263,7 @@
       },
       {
         "title": "Klangschalen- & Sound-Healing-Session",
-        "description": "Erlebe die transformative Wirkung tibetischer Klangschalen, Gongs und Mantras für tiefe Entspannung."
+        "description": "Erleben Sie die heilsame Kraft beruhigender Klangvibrationen und heiliger Gesänge, um tiefe körperliche Spannungen zu lösen, das Nervensystem zu beruhigen und innere Stille zu finden."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -6966,7 +6974,7 @@
       },
       {
         "title": "Klangschalen- & Sound-Healing-Session",
-        "description": "Erlebe die transformative Wirkung tibetischer Klangschalen, Gongs und Mantras für tiefe Entspannung."
+        "description": "Erleben Sie die heilsame Kraft beruhigender Klangvibrationen und heiliger Gesänge, um tiefe körperliche Spannungen zu lösen, das Nervensystem zu beruhigen und innere Stille zu finden."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -7740,7 +7748,7 @@
       },
       {
         "title": "Klangschalen- & Sound-Healing-Session",
-        "description": "Erlebe die transformative Wirkung tibetischer Klangschalen, Gongs und Mantras für tiefe Entspannung."
+        "description": "Erleben Sie die heilsame Kraft beruhigender Klangvibrationen und heiliger Gesänge, um tiefe körperliche Spannungen zu lösen, das Nervensystem zu beruhigen und innere Stille zu finden."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -8514,7 +8522,7 @@
       },
       {
         "title": "Klangschalen- & Sound-Healing-Session",
-        "description": "Erlebe die transformative Wirkung tibetischer Klangschalen, Gongs und Mantras für tiefe Entspannung."
+        "description": "Erleben Sie die heilsame Kraft beruhigender Klangvibrationen und heiliger Gesänge, um tiefe körperliche Spannungen zu lösen, das Nervensystem zu beruhigen und innere Stille zu finden."
       },
       {
         "title": "Bhakti Yoga & Kirtan",

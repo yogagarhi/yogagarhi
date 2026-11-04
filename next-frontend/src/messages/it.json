@@ -429,7 +429,7 @@
       "role": "Fondatore e Formatore Principale, YogaGarhi",
       "quote": "«Lo yoga è unione: quando lo yoga viene vissuto e non semplicemente insegnato, rivoluziona ogni cosa.»",
       "meetTeacher": "Incontra l'insegnante dietro YogaGarhi",
-      "trainedCount": "Oltre 2500 allievi formati",
+      "trainedCount": "2000+ Studenti Formati",
       "experienceYears": "Oltre 18 anni di pratica",
       "armyTherapy": "Ha insegnato yogaterapia all'esercito indiano",
       "founderLeadBadge": "Fondatore e Maestro Principale",
@@ -572,7 +572,7 @@
       "askDirectly": "Scrivici direttamente",
       "whatsappUs": "Chatta con noi su WhatsApp",
       "responseTiming": "Rispondiamo di solito entro 24 ore",
-      "happyStudents": "+497 studenti soddisfatti"
+      "happyStudents": "+600 diplomati"
     },
     "metaTitle": "Corso Formazione Insegnanti Yoga a Bali, Rishikesh e Varkala | YogaGarhi",
     "metaDesc": "Corso di formazione insegnanti yoga 100, 200 e 300 ore certificato Yoga Alliance a Bali, Rishikesh e Varkala. Autentica tradizione himalayana, piccoli gruppi 8–10."
@@ -923,7 +923,7 @@
       "heading": "Sistemazioni e tariffe",
       "sub": "Quote chiare, tutto compreso, senza voci nascoste.",
       "tuitionOnly": "Formula Solo Corso",
-      "tuitionOnlyDesc": "Didattica, pasti completi, materiali didattici e attestato. Pernottamento esterno.",
+      "tuitionOnlyDesc": "Quota del corso, materiali di studio ufficiali e certificazione Yoga Alliance. Alloggio e pasti non sono inclusi.",
       "triple": "Camera tripla condivisa",
       "tripleDesc": "Stanza luminosa e climatizzata condivisa con due compagni, bagno interno e balcone.",
       "double": "Camera doppia condivisa",
@@ -986,7 +986,7 @@
       },
       {
         "question": "Quali soluzioni di alloggio e costi sono previsti?",
-        "answer": "Offriamo quattro soluzioni chiare: Solo corso ($999 USD con sconto anticipato rispetto a $1,299; vitto e alloggio non inclusi), Camera tripla ($1,750 USD rispetto a $2,050), Camera doppia ($1,899 USD rispetto a $2,199) e Camera singola privata ($2,499 USD rispetto a $2,799). Tutti i pacchetti residenziali includono 23 notti e 3 pasti quotidiani."
+        "answer": "Offriamo quattro pacchetti trasparenti. Solo Corso è regolare $1.299 USD (early-bird $999 USD), con pasti e alloggio gestiti autonomamente fuori dal campus. Per i soggiorni residenziali puoi scegliere Camera Tripla (regolare $2.050 USD, early-bird $1.750 USD), Doppia Condivisa (regolare $2.199 USD, early-bird $1.899 USD) o Camera Privata (regolare $2.799 USD, early-bird $2.499 USD). Tutti i pacchetti residenziali includono 23 notti di alloggio e 3 pasti sani al giorno."
       },
       {
         "question": "Cosa comprende la quota del corso?",
@@ -1141,7 +1141,7 @@
       },
       {
         "title": "Certificazione Yoga Alliance",
-        "description": "Ottieni un diploma riconosciuto a livello internazionale per insegnare con padronanza ovunque."
+        "description": "Ottieni la certificazione riconosciuta a livello globale Yoga Alliance RYT 200 per insegnare in tutto il mondo."
       },
       {
         "title": "Atmosfera serena a Bali",
@@ -1149,7 +1149,7 @@
       },
       {
         "title": "Escursioni all'aperto",
-        "description": "Visita templi sacri, spiagge e sentieri naturali, integrando studio, scoperta e cultura locale."
+        "description": "Esplora sacri templi dell'acqua, risaie di Ubud e luoghi culturali durante le escursioni guidate."
       },
       {
         "title": "Piccoli gruppi",
@@ -1157,7 +1157,7 @@
       },
       {
         "title": "Comunità accogliente",
-        "description": "Unisciti a una famiglia calorosa e positiva per evolvere in uno spazio sicuro e collaborativo."
+        "description": "Unisciti a una comunità calorosa di praticanti sinceri e crea amicizie durature in un ambiente accogliente."
       },
       {
         "title": "Massaggio balinese",
@@ -1165,7 +1165,7 @@
       },
       {
         "title": "Danza sacra balinese",
-        "description": "Spettacolo tradizionale ricco di fascino, espressività e profondo simbolismo spirituale balinese."
+        "description": "Assisti a uno spettacolo di danza tradizionale balinese che celebra il ricco patrimonio spirituale dell'isola."
       },
       {
         "title": "Pasti sani ed equilibrati",
@@ -1181,7 +1181,7 @@
       },
       {
         "title": "Stile di vita yóguico",
-        "description": "Integra sane abitudini yóguiche quotidiane a beneficio di corpo, mente e spirito."
+        "description": "Adotta lo stile di vita yogico con la sadhana mattutina, alimentazione consapevole e vita comunitaria."
       }
     ],
     "workshopsList": [
@@ -1203,11 +1203,19 @@
       },
       {
         "title": "Sessione di campane tibetane e suonoterapia",
-        "description": "Sperimenta il potere armonizzante di campane tibetane, gong e mantra per un profondo riposo interiore."
+        "description": "Sperimenta il potere rigenerante delle vibrazioni sonore e dei canti sacri per rilasciare tensioni e calmare il sistema nervoso."
       },
       {
         "title": "Bhakti Yoga e Kirtan",
-        "description": "Apri il cuore attraverso il canto corale devozionale dei mantra e il kirtan per connetterti all'essenza dello yoga."
+        "description": "Apri il cuore attraverso il kirtan devozionale, mantra vedici e la filosofia della Bhakti yoga."
+      },
+      {
+        "title": "Yoga Terapia e Modifiche delle Posizioni",
+        "description": "Impara ad adattare le posizioni yoga per limitazioni fisiche e infortuni, garantendo una pratica sicura a tutti."
+      },
+      {
+        "title": "Rilassamento Guidato Yoga Nidra",
+        "description": "Sperimenta un profondo rilassamento guidato (sonno yogico) per sciogliere lo stress mentale e rigenerare il sistema nervoso."
       }
     ],
     "excursionsList": [
@@ -2024,7 +2032,7 @@
       },
       {
         "title": "Sessione di campane tibetane e suonoterapia",
-        "description": "Sperimenta il potere armonizzante di campane tibetane, gong e mantra per un profondo riposo interiore."
+        "description": "Sperimenta il potere rigenerante delle vibrazioni sonore e dei canti sacri per rilasciare tensioni e calmare il sistema nervoso."
       },
       {
         "title": "Bhakti Yoga e Kirtan",
@@ -2712,7 +2720,7 @@
       },
       {
         "title": "Sessione di campane tibetane e suonoterapia",
-        "description": "Sperimenta il potere armonizzante di campane tibetane, gong e mantra per un profondo riposo interiore."
+        "description": "Sperimenta il potere rigenerante delle vibrazioni sonore e dei canti sacri per rilasciare tensioni e calmare il sistema nervoso."
       },
       {
         "title": "Bhakti Yoga e Kirtan",
@@ -3418,7 +3426,7 @@
       },
       {
         "title": "Sessione di campane tibetane e suonoterapia",
-        "description": "Sperimenta il potere armonizzante di campane tibetane, gong e mantra per un profondo riposo interiore."
+        "description": "Sperimenta il potere rigenerante delle vibrazioni sonore e dei canti sacri per rilasciare tensioni e calmare il sistema nervoso."
       },
       {
         "title": "Bhakti Yoga e Kirtan",
@@ -4192,7 +4200,7 @@
       },
       {
         "title": "Sessione di campane tibetane e suonoterapia",
-        "description": "Sperimenta il potere armonizzante di campane tibetane, gong e mantra per un profondo riposo interiore."
+        "description": "Sperimenta il potere rigenerante delle vibrazioni sonore e dei canti sacri per rilasciare tensioni e calmare il sistema nervoso."
       },
       {
         "title": "Bhakti Yoga e Kirtan",
@@ -5060,7 +5068,7 @@
     "trust": {
       "accreditation": "Yoga Alliance",
       "accreditationSub": "Scuola Certificata",
-      "graduates": "500+ Diplomati",
+      "graduates": "600+ Diplomati",
       "graduatesSub": "In Tutto il Mondo",
       "rating": "Valutazione 5★",
       "ratingSub": "Su Google"
@@ -6255,7 +6263,7 @@
       },
       {
         "title": "Sessione di campane tibetane e suonoterapia",
-        "description": "Sperimenta il potere armonizzante di campane tibetane, gong e mantra per un profondo riposo interiore."
+        "description": "Sperimenta il potere rigenerante delle vibrazioni sonore e dei canti sacri per rilasciare tensioni e calmare il sistema nervoso."
       },
       {
         "title": "Bhakti Yoga e Kirtan",
@@ -6966,7 +6974,7 @@
       },
       {
         "title": "Sessione di campane tibetane e suonoterapia",
-        "description": "Sperimenta il potere armonizzante di campane tibetane, gong e mantra per un profondo riposo interiore."
+        "description": "Sperimenta il potere rigenerante delle vibrazioni sonore e dei canti sacri per rilasciare tensioni e calmare il sistema nervoso."
       },
       {
         "title": "Bhakti Yoga e Kirtan",
@@ -7740,7 +7748,7 @@
       },
       {
         "title": "Sessione di campane tibetane e suonoterapia",
-        "description": "Sperimenta il potere armonizzante di campane tibetane, gong e mantra per un profondo riposo interiore."
+        "description": "Sperimenta il potere rigenerante delle vibrazioni sonore e dei canti sacri per rilasciare tensioni e calmare il sistema nervoso."
       },
       {
         "title": "Bhakti Yoga e Kirtan",
@@ -8514,7 +8522,7 @@
       },
       {
         "title": "Sessione di campane tibetane e suonoterapia",
-        "description": "Sperimenta il potere armonizzante di campane tibetane, gong e mantra per un profondo riposo interiore."
+        "description": "Sperimenta il potere rigenerante delle vibrazioni sonore e dei canti sacri per rilasciare tensioni e calmare il sistema nervoso."
       },
       {
         "title": "Bhakti Yoga e Kirtan",

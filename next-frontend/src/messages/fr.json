@@ -429,7 +429,7 @@
       "role": "Fondateur & Formateur principal, YogaGarhi",
       "quote": "« Le yoga comme union : quand le yoga est vécu et pas seulement enseigné, il transforme tout. »",
       "meetTeacher": "Rencontrez le maître derrière YogaGarhi",
-      "trainedCount": "Plus de 2500 élèves formés",
+      "trainedCount": "Plus de 2000 étudiants formés",
       "experienceYears": "Plus de 18 ans de pratique",
       "armyTherapy": "A enseigné la yogathérapie à l'armée indienne",
       "founderLeadBadge": "Fondateur & Enseignant Principal",
@@ -572,7 +572,7 @@
       "askDirectly": "Posez-nous vos questions directement",
       "whatsappUs": "Écrivez-nous sur WhatsApp",
       "responseTiming": "Nous répondons généralement sous 24 heures",
-      "happyStudents": "+497 élèves comblés"
+      "happyStudents": "+600 diplômés"
     },
     "metaTitle": "Formation de Professeur de Yoga à Bali, Rishikesh et Varkala | YogaGarhi",
     "metaDesc": "Formation de professeur de yoga 100, 200 et 300 h certifiée Yoga Alliance à Bali, Rishikesh et Varkala. Lignée authentique de l'Himalaya, petits groupes 8–10."
@@ -923,7 +923,7 @@
       "heading": "Hébergement & Tarifs",
       "sub": "Des tarifs transparents, tout compris, sans frais cachés.",
       "tuitionOnly": "Formule Cours Seul",
-      "tuitionOnlyDesc": "Frais de scolarité, tous les repas, matériel pédagogique et certification. Hébergement hors campus.",
+      "tuitionOnlyDesc": "Frais de scolarité du cours, matériel d'étude officiel et certification Yoga Alliance. L'hébergement et les repas ne sont pas inclus.",
       "triple": "Chambre triple partagée",
       "tripleDesc": "Chambre spacieuse et climatisée partagée avec deux autres élèves, salle de bain attenante, balcon.",
       "double": "Chambre double partagée",
@@ -986,7 +986,7 @@
       },
       {
         "question": "Quelles formules d'hébergement et quels prix sont proposés ?",
-        "answer": "Nous proposons quatre formules transparentes : Cours seul ($999 USD, tarif lève-tôt au lieu de $1,299 ; repas et chambre non inclus), Chambre triple ($1,750 USD au lieu de $2,050), Chambre double ($1,899 USD au lieu de $2,199) et Chambre privée ($2,499 USD au lieu de $2,799). Toutes les formules résidentielles incluent 23 nuits d'hébergement et 3 repas par jour."
+        "answer": "Nous proposons quatre options claires. La formule Cours Seul est au tarif régulier de 1 299 $ USD (early-bird 999 $ USD), les repas et l'hébergement étant organisés par vous-même hors campus. Pour les séjours résidentiels, choisissez la Chambre Triple (tarif régulier 2 050 $ USD, early-bird 1 750 $ USD), la Chambre Double (tarif régulier 2 199 $ USD, early-bird 1 899 $ USD) ou la Chambre Privée (tarif régulier 2 799 $ USD, early-bird 2 499 $ USD). Tous les forfaits résidentiels comprennent 23 nuits d'hébergement et 3 repas sains par jour."
       },
       {
         "question": "Qu'est-ce qui est inclus dans le tarif de la formation ?",
@@ -1141,7 +1141,7 @@
       },
       {
         "title": "Certifié Yoga Alliance",
-        "description": "Obtenez une certification reconnue dans le monde entier et commencez à enseigner avec confiance."
+        "description": "Obtenez une certification Yoga Alliance RYT 200 reconnue internationalement pour enseigner dans le monde entier."
       },
       {
         "title": "Cadre paisible à Bali",
@@ -1149,7 +1149,7 @@
       },
       {
         "title": "Excursions en pleine nature",
-        "description": "Découvrez des temples sacrés, des plages et des sentiers naturels alliant apprentissage et immersion."
+        "description": "Explorez les temples d'eau sacrés, les rizières d'Ubud et les trésors culturels lors d'excursions guidées."
       },
       {
         "title": "Effectifs réduits",
@@ -1157,7 +1157,7 @@
       },
       {
         "title": "Communauté chaleureuse",
-        "description": "Rejoignez une famille bienveillante et évoluez au sein d'un environnement attentionné et inspirant."
+        "description": "Rejoignez une communauté bienveillante de pratiquants sincères et forgez des amitiés durables."
       },
       {
         "title": "Massage balinais",
@@ -1165,7 +1165,7 @@
       },
       {
         "title": "Spectacle de danse balinaise",
-        "description": "Art chorégraphique sacré fascinant, miroir de la richesse culturelle et spirituelle de Bali."
+        "description": "Découvrez un spectacle de danse traditionnelle balinaise célébrant le patrimoine spirituel et culturel de l'île."
       },
       {
         "title": "Repas sains et équilibrés",
@@ -1181,7 +1181,7 @@
       },
       {
         "title": "Art de vivre yogique",
-        "description": "Intégrez durablement le mode de vie yogique pour harmoniser le corps, l'esprit et la conscience."
+        "description": "Adoptez le style de vie yogique grâce à la sadhana matinale, une alimentation consciente et la vie en communauté."
       }
     ],
     "workshopsList": [
@@ -1203,11 +1203,19 @@
       },
       {
         "title": "Séance de sonothérapie & bols tibétains",
-        "description": "Bénéficiez du pouvoir vibratoire des bols chantants, gongs et mantras pour un lâcher-prise régénérateur."
+        "description": "Découvrez le pouvoir relaxant des vibrations sonores pour libérer les tensions et apaiser le système nerveux."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
-        "description": "Ouvrez votre cœur par la dévotion et le chant partagé de mantras sacrés lors d'instants de kirtan inspirants."
+        "description": "Ouvrez votre cœur à travers le kirtan dévotionnel, les chants de mantras et la philosophie du Bhakti yoga."
+      },
+      {
+        "title": "Yoga Thérapie & Modifications Posturales",
+        "description": "Apprenez à adapter les postures de yoga pour les blessures et limitations physiques, afin de guider chaque élève en sécurité."
+      },
+      {
+        "title": "Relaxation Guidée Yoga Nidra",
+        "description": "Plongez dans une profonde relaxation guidée (sommeil yogique) pour libérer le stress mental et rééquilibrer le système nerveux."
       }
     ],
     "excursionsList": [
@@ -5060,7 +5068,7 @@
     "trust": {
       "accreditation": "Yoga Alliance",
       "accreditationSub": "École Certifiée",
-      "graduates": "500+ Diplômés",
+      "graduates": "600+ Diplômés",
       "graduatesSub": "Dans le Monde",
       "rating": "Note 5★",
       "ratingSub": "Sur Google"

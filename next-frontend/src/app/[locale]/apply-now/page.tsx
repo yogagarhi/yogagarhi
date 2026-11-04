@@ -30,11 +30,14 @@ export async function generateMetadata({
         messages = (await import(`@/messages/en.json`)).default;
     }
 
-    const title = locale === "en" ? "Apply for Yoga Teacher Training | YogaGarhi" : (messages.applyNow?.metaTitle || "Apply for Yoga Teacher Training | YogaGarhi");
-    const description = locale === "en" ? "Apply for Yoga Alliance certified 100, 200 & 300-hour yoga teacher training courses in Bali and Rishikesh. Admissions, prerequisites & dates." : (messages.applyNow?.metaDesc || "Apply for Yoga Alliance certified 100, 200 & 300-hour yoga teacher training courses in Bali and Rishikesh. Admissions, prerequisites & dates.");
+    const enTitle = "Apply for Yoga Teacher Training | YogaGarhi";
+    const enDesc = "Apply for Yoga Alliance certified 100, 200 & 300-hour yoga teacher training courses in Bali, Rishikesh & Varkala. Admissions, prerequisites & dates.";
+
+    const title = locale === "en" ? enTitle : (messages.applyNow?.metaTitle || enTitle);
+    const description = locale === "en" ? enDesc : (messages.applyNow?.metaDesc || enDesc);
     const url = locale === "en" ? "https://www.yogagarhi.com/apply-now" : `https://www.yogagarhi.com/${locale}/apply-now`;
 
-    const metadata: Metadata = {
+    return {
         metadataBase: new URL("https://www.yogagarhi.com"),
         title: {
             absolute: title,
@@ -42,7 +45,16 @@ export async function generateMetadata({
         description,
         alternates: {
             canonical: url,
-            languages: getReviewedHreflang("/apply-now"),
+            // Google Webmaster Guidelines: Do not emit hreflang links on or pointing to noindex pages
+            languages: undefined,
+        },
+        robots: {
+            index: false,
+            follow: true,
+            googleBot: {
+                index: false,
+                follow: true,
+            },
         },
         openGraph: {
             title,
@@ -51,8 +63,6 @@ export async function generateMetadata({
             type: "website",
         },
     };
-
-    return locale === "en" ? metadata : applyQualityGate(metadata, locale);
 }
 
 export const revalidate = 86400;

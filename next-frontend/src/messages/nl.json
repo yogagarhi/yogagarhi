@@ -429,7 +429,7 @@
       "role": "Oprichter & Hoofddocent, YogaGarhi",
       "quote": "«Yoga als eenheid: wanneer yoga wordt geleefd en niet alleen onderwezen, verandert het alles.»",
       "meetTeacher": "Ontmoet de docent achter YogaGarhi",
-      "trainedCount": "2500+ studenten opgeleid",
+      "trainedCount": "2000+ Studenten Opgeleid",
       "experienceYears": "18+ jaar beoefening",
       "armyTherapy": "Gaf yogatherapie aan het Indiase leger",
       "founderLeadBadge": "Oprichter & Hoofddocent",
@@ -572,7 +572,7 @@
       "askDirectly": "Vraag het ons rechtstreeks",
       "whatsappUs": "Stuur ons een WhatsApp",
       "responseTiming": "We reageren gewoonlijk binnen 24 uur",
-      "happyStudents": "+497 tevreden studenten"
+      "happyStudents": "+600 afgestudeerden"
     },
     "metaTitle": "Yogadocentenopleiding in Bali, Rishikesh & Varkala | YogaGarhi",
     "metaDesc": "Yoga Alliance gecertificeerde 100, 200 & 300 uur yogadocentenopleiding in Bali, Rishikesh & Varkala. Authentieke Himalaya-traditie, kleine groepen van 8–10, 1 jaar mentorschap."
@@ -923,7 +923,7 @@
       "heading": "Kamers & Prijzen",
       "sub": "Volledig transparante all-in tarieven zonder verborgen kosten.",
       "tuitionOnly": "Alleen lesgeld",
-      "tuitionOnlyDesc": "Lessen, alle maaltijden, lesmateriaal en certificaat. Verblijf buiten de ashram.",
+      "tuitionOnlyDesc": "Cursusgeld, officiële studiematerialen en Yoga Alliance-certificering. Accommodatie en maaltijden zijn niet inbegrepen.",
       "triple": "Gedeelde driepersoonskamer",
       "tripleDesc": "Ruime kamer met airco gedeeld met twee medestudenten, eigen badkamer en balkon.",
       "double": "Gedeelde tweepersoonskamer",
@@ -986,7 +986,7 @@
       },
       {
         "question": "Welke kamers en prijzen zijn er beschikbaar?",
-        "answer": "We bieden vier duidelijke opties: Alleen lesgeld ($999 USD vroegboekprijs i.p.v. $1,299; zonder kamer en maaltijden), Drie personen ($1,750 USD i.p.v. $2,050), Twee personen ($1,899 USD i.p.v. $2,199) en Privékamer ($2,499 USD i.p.v. $2,799). Alle residentiële pakketten omvatten 23 overnachtingen en 3 dagelijkse maaltijden."
+        "answer": "We bieden vier duidelijke pakketopties. Alleen Cursusgeld is regulier $1.299 USD (vroegboeking $999 USD), waarbij maaltijden en verblijf buiten de campus zelf geregeld worden. Voor residentiële verblijven kiest u Drieluik Delen (regulier $2.050 USD, vroegboeking $1.750 USD), Tweepersoonskamer (regulier $2.199 USD, vroegboeking $1.899 USD) of Privékamer (regulier $2.799 USD, vroegboeking $2.499 USD). Alle verblijfspakketten zijn inclusief 23 overnachtingen en 3 dagelijkse maaltijden."
       },
       {
         "question": "Wat is er allemaal inbegrepen in de cursusprijs?",
@@ -1141,7 +1141,7 @@
       },
       {
         "title": "Yoga Alliance gecertificeerd",
-        "description": "Behaal een internationaal erkend diploma en start vol zelfvertrouwen met lesgeven."
+        "description": "Behaal een wereldwijd erkend Yoga Alliance RYT 200-certificaat om overal ter wereld les te geven."
       },
       {
         "title": "Vreedzame omgeving op Bali",
@@ -1149,7 +1149,7 @@
       },
       {
         "title": "Buitenexcursies",
-        "description": "Verken tempels, stranden en natuurpaden en combineer studie met inspirerende cultuur."
+        "description": "Verken heilige watertempels, rijstterrassen en culturele hoogtepunten tijdens begeleide groepsexcursies."
       },
       {
         "title": "Kleine lesgroepen",
@@ -1157,7 +1157,7 @@
       },
       {
         "title": "Warme gemeenschap",
-        "description": "Maak deel uit van een hechte, positieve yogafamilie en groei in een veilige omgeving."
+        "description": "Sluit je aan bij een warme sangha van oprechte beoefenaars en bouw levenslange vriendschappen op."
       },
       {
         "title": "Balinese massage",
@@ -1165,7 +1165,7 @@
       },
       {
         "title": "Balinese dansvoorstelling",
-        "description": "Eeuwenoude, expressieve danskunst die het rijke spirituele erfgoed van Bali toont."
+        "description": "Ervaar een traditionele Balinese dansvoorstelling die het culturele erfgoed van het eiland viert."
       },
       {
         "title": "Gezonde maaltijden",
@@ -1181,7 +1181,7 @@
       },
       {
         "title": "Yogische levenswijze",
-        "description": "Maak de yogische manier van leven eigen voor een gezonde balans van lichaam en geest."
+        "description": "Omarm de yogische levensstijl met ochtendsadhana, bewuste voeding en harmonieus samenleven."
       }
     ],
     "workshopsList": [
@@ -1203,11 +1203,19 @@
       },
       {
         "title": "Klankbad & sound healing sessie",
-        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+        "description": "Ervaar de rustgevende kracht van geluidstrillingen en gewijde zang om diepe spanning los te laten en het zenuwstelsel te kalmeren."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
-        "description": "Open je hart met devotionele gezangen en kirtan om contact te maken met de spirituele essentie van yoga."
+        "description": "Open je hart door devotionele kirtan, vedische mantra's en de filosofie van Bhakti yoga."
+      },
+      {
+        "title": "Yogatherapie & Houdingsaanpassingen",
+        "description": "Leer hoe je yogahoudingen aanpast voor blessures en beperkingen, zodat elke student veilig kan oefenen."
+      },
+      {
+        "title": "Yoga Nidra Begeleide Ontspanning",
+        "description": "Ervaar diepe begeleide ontspanning (yogische slaap) om stress te verlichten en je zenuwstelsel te herstellen."
       }
     ],
     "excursionsList": [
@@ -2024,7 +2032,7 @@
       },
       {
         "title": "Klankbad & sound healing sessie",
-        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+        "description": "Ervaar de rustgevende kracht van geluidstrillingen en gewijde zang om diepe spanning los te laten en het zenuwstelsel te kalmeren."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -2712,7 +2720,7 @@
       },
       {
         "title": "Klankbad & sound healing sessie",
-        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+        "description": "Ervaar de rustgevende kracht van geluidstrillingen en gewijde zang om diepe spanning los te laten en het zenuwstelsel te kalmeren."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -3418,7 +3426,7 @@
       },
       {
         "title": "Klankbad & sound healing sessie",
-        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+        "description": "Ervaar de rustgevende kracht van geluidstrillingen en gewijde zang om diepe spanning los te laten en het zenuwstelsel te kalmeren."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -4192,7 +4200,7 @@
       },
       {
         "title": "Klankbad & sound healing sessie",
-        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+        "description": "Ervaar de rustgevende kracht van geluidstrillingen en gewijde zang om diepe spanning los te laten en het zenuwstelsel te kalmeren."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -5060,7 +5068,7 @@
     "trust": {
       "accreditation": "Yoga Alliance",
       "accreditationSub": "Gecertificeerde School",
-      "graduates": "500+ Afgestudeerden",
+      "graduates": "600+ Afgestudeerden",
       "graduatesSub": "Wereldwijd",
       "rating": "5★ Beoordeling",
       "ratingSub": "Op Google"
@@ -6255,7 +6263,7 @@
       },
       {
         "title": "Klankbad & sound healing sessie",
-        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+        "description": "Ervaar de rustgevende kracht van geluidstrillingen en gewijde zang om diepe spanning los te laten en het zenuwstelsel te kalmeren."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -6966,7 +6974,7 @@
       },
       {
         "title": "Klankbad & sound healing sessie",
-        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+        "description": "Ervaar de rustgevende kracht van geluidstrillingen en gewijde zang om diepe spanning los te laten en het zenuwstelsel te kalmeren."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -7740,7 +7748,7 @@
       },
       {
         "title": "Klankbad & sound healing sessie",
-        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+        "description": "Ervaar de rustgevende kracht van geluidstrillingen en gewijde zang om diepe spanning los te laten en het zenuwstelsel te kalmeren."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -8514,7 +8522,7 @@
       },
       {
         "title": "Klankbad & sound healing sessie",
-        "description": "Ervaar de trillingen van Tibetaanse klankschalen, gongs en mantra's voor een grondige reset."
+        "description": "Ervaar de rustgevende kracht van geluidstrillingen en gewijde zang om diepe spanning los te laten en het zenuwstelsel te kalmeren."
       },
       {
         "title": "Bhakti Yoga & Kirtan",

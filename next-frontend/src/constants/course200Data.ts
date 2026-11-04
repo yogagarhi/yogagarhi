@@ -107,7 +107,7 @@ export const COURSE_200_FAQS: FAQItem[] = [
   },
   {
     question: "What room accommodation options and prices are available?",
-    answer: "We offer four clear package options. Tuition-Only is $999 USD (early-bird from $1,299), with meals and room arranged on your own. For residential stays, choose Triple Sharing ($1,750 USD, early-bird from $2,050), Double Sharing ($1,899 USD, early-bird from $2,199), or Private Room ($2,499 USD, early-bird from $2,799). All room packages include 23 nights accommodation and 3 daily meals."
+    answer: "We offer four clear package options. Tuition-Only is regular $1,299 USD (early-bird $999 USD), with meals and room arranged off-campus on your own. For residential stays, choose Triple Sharing (regular $2,050 USD, early-bird $1,750 USD), Double Sharing (regular $2,199 USD, early-bird $1,899 USD), or Private Room (regular $2,799 USD, early-bird $2,499 USD). All residential room packages include 23 nights accommodation and 3 daily meals."
   },
   {
     question: "What is included in the course fee?",

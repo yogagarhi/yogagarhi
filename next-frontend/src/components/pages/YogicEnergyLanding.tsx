@@ -345,7 +345,7 @@ export default function YogicEnergyLanding({ locale: propLocale }: YogicEnergyLa
                         <div className="mt-10 w-full grid grid-cols-3 gap-3 text-center">
                             {[
                                 { icon: Award, label: "Yoga Alliance", sub: isEn ? "Certified School" : t("trust.accreditationSub") },
-                                { icon: Users, label: isEn ? "500+ Graduates" : t("trust.graduates"), sub: isEn ? "Worldwide" : t("trust.graduatesSub") },
+                                { icon: Users, label: isEn ? "600+ Graduates" : t("trust.graduates"), sub: isEn ? "Worldwide" : t("trust.graduatesSub") },
                                 { icon: Star, label: isEn ? "5★ Rated" : t("trust.rating"), sub: isEn ? "On Google" : t("trust.ratingSub") },
                             ].map(({ icon: Icon, label, sub }) => (
                                 <div key={label} className="flex flex-col items-center gap-1 py-4 rounded-2xl bg-white border border-[#2D7A70]/10">

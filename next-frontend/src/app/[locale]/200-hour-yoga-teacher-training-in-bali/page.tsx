@@ -318,10 +318,14 @@ export default async function Page({
         }
     }));
     
+    const activeFaqs = (locale !== "en" && messages.course200?.faqs && Array.isArray(messages.course200.faqs) && messages.course200.faqs.length === COURSE_200_FAQS.length)
+        ? messages.course200.faqs
+        : COURSE_200_FAQS;
+
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": COURSE_200_FAQS.map((faq) => ({
+        "mainEntity": activeFaqs.map((faq: any) => ({
             "@type": "Question",
             "name": faq.question,
             "acceptedAnswer": {

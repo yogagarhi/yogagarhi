@@ -429,7 +429,7 @@
       "role": "Pendiri & Guru Utama, YogaGarhi",
       "quote": "«Yoga sebagai penyatuan: ketika yoga dihayati dan bukan sekadar diajarkan, ia mentransformasi segalanya.»",
       "meetTeacher": "Kenali Guru di Balik YogaGarhi",
-      "trainedCount": "2500+ Siswa Terlatih",
+      "trainedCount": "2000+ Siswa Terlatih",
       "experienceYears": "18+ Tahun Praktik",
       "armyTherapy": "Mengajar Terapi Yoga untuk Militer India",
       "founderLeadBadge": "Pendiri & Guru Utama",
@@ -572,7 +572,7 @@
       "askDirectly": "Tanyakan Langsung Kepada Kami",
       "whatsappUs": "Chat WhatsApp Kami",
       "responseTiming": "Kami biasanya merespons dalam waktu 24 jam",
-      "happyStudents": "+497 siswa bahagia"
+      "happyStudents": "+600 lulusan"
     },
     "metaTitle": "Pelatihan Guru Yoga di Bali, Rishikesh & Varkala | YogaGarhi",
     "metaDesc": "Pelatihan Guru Yoga 100, 200 & 300 Jam bersertifikat Yoga Alliance di Bali, Rishikesh & Varkala. Tradisi autentik Himalaya, kelompok kecil 8–10, bimbingan 1 tahun."
@@ -923,7 +923,7 @@
       "heading": "Paket Akomodasi & Harga",
       "sub": "Harga transparan dan all-inclusive tanpa ada biaya tersembunyi.",
       "tuitionOnly": "Paket Hanya Biaya Kursus",
-      "tuitionOnlyDesc": "Biaya kursus, semua makanan, materi belajar, dan sertifikat. Tinggal di luar ashram.",
+      "tuitionOnlyDesc": "Biaya kursus, materi belajar resmi, dan sertifikasi Yoga Alliance. Akomodasi dan makanan tidak termasuk.",
       "triple": "Kamar Bertiga (Triple)",
       "tripleDesc": "Kamar ber-AC luas dibagi bersama dua rekan siswa, kamar mandi dalam, balkon pribadi.",
       "double": "Kamar Berdua (Double)",
@@ -986,7 +986,7 @@
       },
       {
         "question": "Pilihan kamar apa saja yang ada dan berapa biayanya?",
-        "answer": "Kami menawarkan empat pilihan transparan: Hanya Biaya Kursus ($999 USD harga early bird dibanding normal $1,299; tanpa kamar dan makan), Kamar Bertiga ($1,750 USD dibanding $2,050), Kamar Berdua ($1,899 USD dibanding $2,199), dan Kamar Pribadi ($2,499 USD dibanding $2,799). Semua paket residensial mencakup 23 malam dan 3 kali makan setiap hari."
+        "answer": "Kami menawarkan empat pilihan paket yang jelas. Hanya Biaya Kursus harga normal $1.299 USD (early-bird $999 USD), dengan makanan dan kamar diatur sendiri di luar ashram. Untuk paket menginap, pilih Kamar Triple (harga normal $2.050 USD, early-bird $1.750 USD), Kamar Double (harga normal $2.199 USD, early-bird $1.899 USD), atau Kamar Privat (harga normal $2.799 USD, early-bird $2.499 USD). Semua paket kamar residensial mencakup akomodasi 23 malam dan 3 kali makan sehat setiap hari."
       },
       {
         "question": "Apa saja yang tercakup dalam biaya paket residensial?",
@@ -1141,7 +1141,7 @@
       },
       {
         "title": "Bersertifikasi Yoga Alliance",
-        "description": "Raih sertifikat yang diakui secara global untuk mulai mengajar yoga dengan penuh percaya diri."
+        "description": "Dapatkan sertifikasi Yoga Alliance RYT 200 yang diakui secara global untuk mengajar yoga di seluruh dunia."
       },
       {
         "title": "Suasana damai di Bali",
@@ -1149,7 +1149,7 @@
       },
       {
         "title": "Wisata alam terbuka",
-        "description": "Kunjungi pura bersejarah, pantai, dan jalur alam yang memadukan pembelajaran dengan kebudayaan lokal."
+        "description": "Jelajahi pura mata air suci, terasering sawah Ubud yang indah, dan situs budaya dalam tamasya terpandu."
       },
       {
         "title": "Jumlah siswa per kelas terbatas",
@@ -1157,7 +1157,7 @@
       },
       {
         "title": "Komunitas yang hangat",
-        "description": "Jadilah bagian dari keluarga yang suportif dan bertumbuh bersama dalam atmosfer penuh kepedulian."
+        "description": "Bergabunglah dengan komunitas sangha yang hangat dan jalin persahabatan seumur hidup dalam lingkungan yang suportif."
       },
       {
         "title": "Pijat tradisional Bali",
@@ -1165,7 +1165,7 @@
       },
       {
         "title": "Pentas tari tradisional Bali",
-        "description": "Seni pertunjukan sarat makna yang mencerminkan kekayaan budaya dan spiritualitas masyarakat Bali."
+        "description": "Nikmati pertunjukan tari tradisional Bali yang memukau, merayakan warisan spiritual dan budaya pulau Dewata."
       },
       {
         "title": "Makanan bergizi dan bersih",
@@ -1181,7 +1181,7 @@
       },
       {
         "title": "Gaya hidup yogik",
-        "description": "Terapkan gaya hidup selaras untuk menyatukan kesehatan raga, pikiran, dan jiwa secara utuh."
+        "description": "Terapkan gaya hidup yogi sehari-hari melalui sadhana pagi, pola makan berkesadaran, dan hidup harmonis."
       }
     ],
     "workshopsList": [
@@ -1203,11 +1203,19 @@
       },
       {
         "title": "Sesi relaksasi suara & Tibetan singing bowl",
-        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+        "description": "Rasakan terapi getaran suara yang menenangkan dan lantunan suci untuk melepaskan ketegangan fisik mendalam, menenangkan sistem saraf, dan mencapai keheningan batin."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
-        "description": "Buka ruang hati Anda lewat nyanyian lantunan mantra suci dan kirtan untuk terhubung dengan esensi yoga."
+        "description": "Buka hati Anda melalui kirtan suci, pelantunan mantra Weda, dan filosofi pengabdian Bhakti yoga."
+      },
+      {
+        "title": "Terapi Yoga & Modifikasi Postur",
+        "description": "Pelajari cara memodifikasi pose yoga untuk keterbatasan fisik, cedera, dan kondisi kesehatan agar setiap siswa dapat berlatih dengan aman."
+      },
+      {
+        "title": "Relaksasi Terpandu Yoga Nidra",
+        "description": "Berbaring dalam relaksasi mendalam (tidur yogi) untuk melepaskan stres mental dan memulihkan sistem saraf setelah latihan fisik."
       }
     ],
     "excursionsList": [
@@ -2024,7 +2032,7 @@
       },
       {
         "title": "Sesi relaksasi suara & Tibetan singing bowl",
-        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+        "description": "Rasakan terapi getaran suara yang menenangkan dan lantunan suci untuk melepaskan ketegangan fisik mendalam, menenangkan sistem saraf, dan mencapai keheningan batin."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -2712,7 +2720,7 @@
       },
       {
         "title": "Sesi relaksasi suara & Tibetan singing bowl",
-        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+        "description": "Rasakan terapi getaran suara yang menenangkan dan lantunan suci untuk melepaskan ketegangan fisik mendalam, menenangkan sistem saraf, dan mencapai keheningan batin."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -3418,7 +3426,7 @@
       },
       {
         "title": "Sesi relaksasi suara & Tibetan singing bowl",
-        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+        "description": "Rasakan terapi getaran suara yang menenangkan dan lantunan suci untuk melepaskan ketegangan fisik mendalam, menenangkan sistem saraf, dan mencapai keheningan batin."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -4192,7 +4200,7 @@
       },
       {
         "title": "Sesi relaksasi suara & Tibetan singing bowl",
-        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+        "description": "Rasakan terapi getaran suara yang menenangkan dan lantunan suci untuk melepaskan ketegangan fisik mendalam, menenangkan sistem saraf, dan mencapai keheningan batin."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -5060,7 +5068,7 @@
     "trust": {
       "accreditation": "Yoga Alliance",
       "accreditationSub": "Sekolah Bersertifikat",
-      "graduates": "500+ Lulusan",
+      "graduates": "600+ Lulusan",
       "graduatesSub": "Di Seluruh Dunia",
       "rating": "Rating 5★",
       "ratingSub": "Di Google"
@@ -6255,7 +6263,7 @@
       },
       {
         "title": "Sesi relaksasi suara & Tibetan singing bowl",
-        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+        "description": "Rasakan terapi getaran suara yang menenangkan dan lantunan suci untuk melepaskan ketegangan fisik mendalam, menenangkan sistem saraf, dan mencapai keheningan batin."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -6966,7 +6974,7 @@
       },
       {
         "title": "Sesi relaksasi suara & Tibetan singing bowl",
-        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+        "description": "Rasakan terapi getaran suara yang menenangkan dan lantunan suci untuk melepaskan ketegangan fisik mendalam, menenangkan sistem saraf, dan mencapai keheningan batin."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -7740,7 +7748,7 @@
       },
       {
         "title": "Sesi relaksasi suara & Tibetan singing bowl",
-        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+        "description": "Rasakan terapi getaran suara yang menenangkan dan lantunan suci untuk melepaskan ketegangan fisik mendalam, menenangkan sistem saraf, dan mencapai keheningan batin."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -8514,7 +8522,7 @@
       },
       {
         "title": "Sesi relaksasi suara & Tibetan singing bowl",
-        "description": "Rasakan getaran nada mangkuk bernyanyi, gong, dan lantunan mantra untuk pemulihan energi batin."
+        "description": "Rasakan terapi getaran suara yang menenangkan dan lantunan suci untuk melepaskan ketegangan fisik mendalam, menenangkan sistem saraf, dan mencapai keheningan batin."
       },
       {
         "title": "Bhakti Yoga & Kirtan",

@@ -20,7 +20,7 @@ export default function StudentStoriesSection({ initialVisibleCount }: StudentSt
       {/* Stats Row */}
       <div className="mt-6 grid grid-cols-3 gap-4">
         {[
-          { number: "500+", label: t("graduates") },
+          { number: "600+", label: t("graduates") },
           { number: "45+", label: t("countries") },
           { number: "5.0", label: t("rating") },
         ].map((stat, index) => (

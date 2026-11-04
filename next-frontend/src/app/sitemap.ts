@@ -159,12 +159,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
-            url: 'https://www.yogagarhi.com/apply-now',
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.6,
-        },
-        {
             url: 'https://www.yogagarhi.com/sunday-schedule',
             lastModified: new Date(),
             changeFrequency: 'weekly',
@@ -270,7 +264,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }
     }
 
-    const NOINDEX_EXCLUDED_PATHS = ['/thank-you', '/pre-yttc-prep', '/yogic-energy', '/payment'];
+    const NOINDEX_EXCLUDED_PATHS = ['/thank-you', '/pre-yttc-prep', '/yogic-energy', '/payment', '/apply-now'];
 
     const allUrls = [...baseUrls, ...localizedUrls].filter((item) => {
         if (!LOCATION_LIVE.rishikesh && item.url.includes('rishikesh')) return false;

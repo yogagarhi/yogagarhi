@@ -429,7 +429,7 @@
       "role": "Fundador y Maestro Principal, YogaGarhi",
       "quote": "«El yoga como unión: cuando el yoga se vive y no solo se enseña, transforma todo.»",
       "meetTeacher": "Conoce al maestro detrás de YogaGarhi",
-      "trainedCount": "Más de 2500 alumnos formados",
+      "trainedCount": "Más de 2000 estudiantes formados",
       "experienceYears": "Más de 18 años de práctica",
       "armyTherapy": "Enseñó yogaterapia al ejército indio",
       "founderLeadBadge": "Fundador y Maestro Principal",
@@ -572,7 +572,7 @@
       "askDirectly": "Pregúntanos directamente",
       "whatsappUs": "Escríbenos por WhatsApp",
       "responseTiming": "Respondemos habitualmente en menos de 24 horas",
-      "happyStudents": "+497 estudiantes felices"
+      "happyStudents": "+600 graduados"
     },
     "metaTitle": "Formación de Profesores de Yoga en Bali, Rishikesh y Varkala | YogaGarhi",
     "metaDesc": "Formación de profesores de yoga de 100, 200 y 300 horas certificada por Yoga Alliance en Bali, Rishikesh y Varkala. Linaje auténtico del Himalaya, grupos de 8–10."
@@ -923,7 +923,7 @@
       "heading": "Habitaciones y precios",
       "sub": "Precios claros y todo incluido, sin sorpresas ni costes ocultos.",
       "tuitionOnly": "Paquete solo formación",
-      "tuitionOnlyDesc": "Matrícula, comidas completas, material pedagógico y certificación. Alojamiento fuera del ashram.",
+      "tuitionOnlyDesc": "Matrícula del curso, materiales de estudio oficiales y certificación de Yoga Alliance. El alojamiento y las comidas no están incluidos.",
       "triple": "Habitación triple compartida",
       "tripleDesc": "Habitación amplia con aire acondicionado compartida con dos compañeros, baño privado y balcón.",
       "double": "Habitación doble compartida",
@@ -986,7 +986,7 @@
       },
       {
         "question": "¿Cuáles son las modalidades de habitación y sus precios?",
-        "answer": "Contamos con cuatro opciones claras: Solo formación ($999 USD, precio anticipado frente a $1,299 habitual; comidas y habitación no incluidas), Habitación triple ($1,750 USD frente a $2,050), Habitación doble ($1,899 USD frente a $2,199) y Habitación privada ($2,499 USD frente a $2,799). Todos los paquetes residenciales contemplan 23 noches de estancia y 3 comidas diarias."
+        "answer": "Ofrecemos cuatro opciones de paquetes claras. Solo Matrícula tiene un precio regular de $1,299 USD (reserva anticipada $999 USD), organizando el alojamiento y las comidas por su cuenta fuera del campus. Para estancias residenciales, elija Habitación Triple (regular $2,050 USD, reserva anticipada $1,750 USD), Doble Compartida (regular $2,199 USD, reserva anticipada $1,899 USD) o Habitación Privada (regular $2,799 USD, reserva anticipada $2,499 USD). Todos los paquetes residenciales incluyen 23 noches de alojamiento y 3 comidas saludables al día."
       },
       {
         "question": "¿Qué servicios están contemplados en el precio del curso?",
@@ -1141,7 +1141,7 @@
       },
       {
         "title": "Certificado por Yoga Alliance",
-        "description": "Obtén una titulación reconocida en todo el mundo y comienza a impartir clases con plena seguridad."
+        "description": "Obtenga una certificación Yoga Alliance RYT 200 reconocida internacionalmente para enseñar en todo el mundo."
       },
       {
         "title": "Entorno sereno en Bali",
@@ -1149,7 +1149,7 @@
       },
       {
         "title": "Excursiones al aire libre",
-        "description": "Descubre templos sagrados, playas y senderos naturales equilibrando formación con vivencias culturales."
+        "description": "Explore templos sagrados de agua, terrazas de arroz y lugares culturales en excursiones guiadas."
       },
       {
         "title": "Grupos reducidos",
@@ -1157,7 +1157,7 @@
       },
       {
         "title": "Comunidad acogedora",
-        "description": "Forma parte de una familia cálida y positiva en un entorno de aprendizaje seguro y empático."
+        "description": "Únase a una comunidad cálida de practicantes sinceros y forje amistades para toda la vida."
       },
       {
         "title": "Masaje balinés",
@@ -1165,7 +1165,7 @@
       },
       {
         "title": "Danza tradicional balinesa",
-        "description": "Expresión artística ancestral cargada de espiritualidad que refleja el valioso legado cultural de Bali."
+        "description": "Disfrute de una danza tradicional balinesa que celebra el rico patrimonio cultural y espiritual de la isla."
       },
       {
         "title": "Comidas saludables",
@@ -1181,7 +1181,7 @@
       },
       {
         "title": "Estilo de vida yóguico",
-        "description": "Adopta hábitos yóguicos que transformarán positivamente tu cuerpo, mente y alma."
+        "description": "Adopte el estilo de vida yóguico con sadhana matutina, nutrición consciente y hábitos saludables."
       }
     ],
     "workshopsList": [
@@ -1203,11 +1203,19 @@
       },
       {
         "title": "Sesión de sanación con sonido y cuencos",
-        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+        "description": "Experimente el poder restaurador de la vibración sonora terapéutica y cantos sagrados para liberar tensiones y calmar el sistema nervioso."
       },
       {
         "title": "Bhakti Yoga y Kirtan",
-        "description": "Abre tu corazón con cantos sagrados y mantras devocionales conectando con la faceta espiritual del yoga."
+        "description": "Abra su corazón a través del kirtan devocional, mantras védicos y la filosofía del Bhakti yoga."
+      },
+      {
+        "title": "Terapia de Yoga y Modificaciones de Posturas",
+        "description": "Aprenda a modificar posturas de yoga para limitaciones físicas y lesiones, garantizando una práctica segura para todos."
+      },
+      {
+        "title": "Relajación Guiada Yoga Nidra",
+        "description": "Descanse en una profunda relajación guiada (sueño yóguico) para aliviar el estrés mental y resetear su sistema nervioso."
       }
     ],
     "excursionsList": [
@@ -2024,7 +2032,7 @@
       },
       {
         "title": "Sesión de sanación con sonido y cuencos",
-        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+        "description": "Experimente el poder restaurador de la vibración sonora terapéutica y cantos sagrados para liberar tensiones y calmar el sistema nervioso."
       },
       {
         "title": "Bhakti Yoga y Kirtan",
@@ -2712,7 +2720,7 @@
       },
       {
         "title": "Sesión de sanación con sonido y cuencos",
-        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+        "description": "Experimente el poder restaurador de la vibración sonora terapéutica y cantos sagrados para liberar tensiones y calmar el sistema nervioso."
       },
       {
         "title": "Bhakti Yoga y Kirtan",
@@ -3418,7 +3426,7 @@
       },
       {
         "title": "Sesión de sanación con sonido y cuencos",
-        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+        "description": "Experimente el poder restaurador de la vibración sonora terapéutica y cantos sagrados para liberar tensiones y calmar el sistema nervioso."
       },
       {
         "title": "Bhakti Yoga y Kirtan",
@@ -4192,7 +4200,7 @@
       },
       {
         "title": "Sesión de sanación con sonido y cuencos",
-        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+        "description": "Experimente el poder restaurador de la vibración sonora terapéutica y cantos sagrados para liberar tensiones y calmar el sistema nervioso."
       },
       {
         "title": "Bhakti Yoga y Kirtan",
@@ -5060,7 +5068,7 @@
     "trust": {
       "accreditation": "Yoga Alliance",
       "accreditationSub": "Escuela Certificada",
-      "graduates": "500+ Graduados",
+      "graduates": "600+ Graduados",
       "graduatesSub": "En Todo el Mundo",
       "rating": "Calificación 5★",
       "ratingSub": "En Google"
@@ -6255,7 +6263,7 @@
       },
       {
         "title": "Sesión de sanación con sonido y cuencos",
-        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+        "description": "Experimente el poder restaurador de la vibración sonora terapéutica y cantos sagrados para liberar tensiones y calmar el sistema nervioso."
       },
       {
         "title": "Bhakti Yoga y Kirtan",
@@ -6966,7 +6974,7 @@
       },
       {
         "title": "Sesión de sanación con sonido y cuencos",
-        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+        "description": "Experimente el poder restaurador de la vibración sonora terapéutica y cantos sagrados para liberar tensiones y calmar el sistema nervioso."
       },
       {
         "title": "Bhakti Yoga y Kirtan",
@@ -7740,7 +7748,7 @@
       },
       {
         "title": "Sesión de sanación con sonido y cuencos",
-        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+        "description": "Experimente el poder restaurador de la vibración sonora terapéutica y cantos sagrados para liberar tensiones y calmar el sistema nervioso."
       },
       {
         "title": "Bhakti Yoga y Kirtan",
@@ -8514,7 +8522,7 @@
       },
       {
         "title": "Sesión de sanación con sonido y cuencos",
-        "description": "Disfruta del poder vibracional de los cuencos tibetanos, gongs y mantras para una relajación renovadora."
+        "description": "Experimente el poder restaurador de la vibración sonora terapéutica y cantos sagrados para liberar tensiones y calmar el sistema nervioso."
       },
       {
         "title": "Bhakti Yoga y Kirtan",

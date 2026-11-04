@@ -32,23 +32,23 @@ export const BATCHES_100_HOUR: CourseBatch[] = [
 // 200 Hour Yoga Teacher Training Batches (24 Days) - Bali & Rishikesh
 export const BATCHES_200_HOUR: CourseBatch[] = [
   // Existing batches (Sept 2026 - Feb 2027)
-  { startDate: "2026-09-01", endDate: "2026-09-24", date: "1 Sept - 24 Sept 2026", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2026-10-08", endDate: "2026-10-31", date: "8 Oct - 31 Oct 2026", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2026-11-01", endDate: "2026-11-24", date: "1 Nov - 24 Nov 2026", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2026-12-01", endDate: "2026-12-24", date: "1 Dec - 24 Dec 2026", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-01-01", endDate: "2027-01-24", date: "1 Jan - 24 Jan 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-02-01", endDate: "2027-02-24", date: "1 Feb - 24 Feb 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2026-09-01", endDate: "2026-09-24", date: "1 Sept - 24 Sept 2026", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2026-10-08", endDate: "2026-10-31", date: "8 Oct - 31 Oct 2026", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2026-11-01", endDate: "2026-11-24", date: "1 Nov - 24 Nov 2026", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2026-12-01", endDate: "2026-12-24", date: "1 Dec - 24 Dec 2026", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-01-01", endDate: "2027-01-24", date: "1 Jan - 24 Jan 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-02-01", endDate: "2027-02-24", date: "1 Feb - 24 Feb 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
   // Extended batches (March 2027 - December 2027)
-  { startDate: "2027-03-01", endDate: "2027-03-24", date: "1 Mar - 24 Mar 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-04-01", endDate: "2027-04-24", date: "1 Apr - 24 Apr 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-05-01", endDate: "2027-05-24", date: "1 May - 24 May 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-06-01", endDate: "2027-06-24", date: "1 Jun - 24 Jun 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-07-01", endDate: "2027-07-24", date: "1 Jul - 24 Jul 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-08-01", endDate: "2027-08-24", date: "1 Aug - 24 Aug 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-09-01", endDate: "2027-09-24", date: "1 Sept - 24 Sept 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-10-01", endDate: "2027-10-24", date: "1 Oct - 24 Oct 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-11-01", endDate: "2027-11-24", date: "1 Nov - 24 Nov 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
-  { startDate: "2027-12-01", endDate: "2027-12-24", date: "1 Dec - 24 Dec 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$200" },
+  { startDate: "2027-03-01", endDate: "2027-03-24", date: "1 Mar - 24 Mar 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-04-01", endDate: "2027-04-24", date: "1 Apr - 24 Apr 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-05-01", endDate: "2027-05-24", date: "1 May - 24 May 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-06-01", endDate: "2027-06-24", date: "1 Jun - 24 Jun 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-07-01", endDate: "2027-07-24", date: "1 Jul - 24 Jul 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-08-01", endDate: "2027-08-24", date: "1 Aug - 24 Aug 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-09-01", endDate: "2027-09-24", date: "1 Sept - 24 Sept 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-10-01", endDate: "2027-10-24", date: "1 Oct - 24 Oct 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-11-01", endDate: "2027-11-24", date: "1 Nov - 24 Nov 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
+  { startDate: "2027-12-01", endDate: "2027-12-24", date: "1 Dec - 24 Dec 2027", spotsLeft: null, spotsText: "Booking open", earlyBirdSaving: "$300" },
 ];
 
 // 300 Hour Yoga Teacher Training Batches (28 Days) - Bali

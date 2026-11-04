@@ -429,7 +429,7 @@
       "role": "Founder & Lead Teacher, YogaGarhi",
       "quote": "\"Yoga as union — when yoga is lived, not merely taught, it transforms everything.\"",
       "meetTeacher": "Meet The Teacher Behind YogaGarhi",
-      "trainedCount": "2500+ Students Trained",
+      "trainedCount": "2000+ Students Trained",
       "experienceYears": "18+ Years Practice",
       "armyTherapy": "Taught Yoga Therapy to Indian Army",
       "founderLeadBadge": "Founder & Lead Teacher",
@@ -572,7 +572,7 @@
       "tabSchedule": "Schedule",
       "tabStay": "Stay & Location",
       "tabCourses": "Courses & Accommodation",
-      "happyStudents": "+497 happy students"
+      "happyStudents": "+600 graduates"
     },
     "metaTitle": "Yoga Teacher Training in Bali, Rishikesh & Varkala | YogaGarhi",
     "metaDesc": "Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training in Bali, Rishikesh & Varkala. Authentic Himalayan lineage, small batches 8–10, 1-year mentorship."
@@ -609,7 +609,7 @@
       "goodieBagSub": "Yoga Essentials"
     },
     "storyTitle": "Transform Your Practice into Living Wisdom",
-    "storyP1": "Our 200 Hour Yoga Teacher Training in Bali is a complete residential immersion. It is built for students who want genuine depth instead of just routine workouts. You will stay in the peaceful village of Gianyar, just 15 minutes from Ubud. Here, YogaGarhi gives you a quiet sanctuary far from busy tourist crowds.",
+    "storyP1": "Our 200 Hour Yoga Teacher Training in Bali is a complete residential immersion. It is built for students who want genuine depth instead of just routine workouts. You will stay in the peaceful village of Gianyar, about 15 km from Ubud. Here, YogaGarhi gives you a quiet sanctuary far from busy tourist crowds.",
     "storyP2": "Over 24 days, you will study Classical Hatha, Vinyasa Flow, the Ashtanga Primary Series, and Iyengar alignment. You will also learn applied anatomy, philosophy, pranayama (breathwork), and daily meditation. We strictly cap classes at 8 to 10 students. This allows our Himalayan masters to provide close, personal mentorship for every student.",
     "watchVideoStories": "Watch Student Video Stories & Testimonials",
     "videoBannerTitle": "Book a Call. See the School. See Your Room. See Your Yoga Hall.",
@@ -769,7 +769,7 @@
       "heading": "Accommodation & Pricing Packages",
       "sub": "Transparent, all-inclusive pricing with zero hidden charges.",
       "tuitionOnly": "Tuition Only Package",
-      "tuitionOnlyDesc": "Course tuition, all meals, study materials, and certification. Accommodation off-campus.",
+      "tuitionOnlyDesc": "Course tuition, official study materials, and Yoga Alliance certification. Accommodation and meals are not included.",
       "triple": "Triple Sharing Room",
       "tripleDesc": "Spacious air-conditioned room shared with two fellow students, ensuite bathroom, private balcony.",
       "double": "Double Sharing Room",
@@ -818,7 +818,7 @@
       },
       {
         "question": "What room accommodation options and prices are available?",
-        "answer": "We offer four clear package options. Tuition-Only is $999 USD (early-bird from $1,299), with meals and room arranged on your own. For residential stays, choose Triple Sharing ($1,750 USD, early-bird from $2,050), Double Sharing ($1,899 USD, early-bird from $2,199), or Private Room ($2,499 USD, early-bird from $2,799). All room packages include 23 nights accommodation and 3 daily meals."
+        "answer": "We offer four clear package options. Tuition-Only is regular $1,299 USD (early-bird $999 USD), with meals and room arranged off-campus on your own. For residential stays, choose Triple Sharing (regular $2,050 USD, early-bird $1,750 USD), Double Sharing (regular $2,199 USD, early-bird $1,899 USD), or Private Room (regular $2,799 USD, early-bird $2,499 USD). All residential room packages include 23 nights accommodation and 3 daily meals."
       },
       {
         "question": "What is included in the course fee?",
@@ -1141,7 +1141,7 @@
       },
       {
         "title": "Yoga Alliance Certified",
-        "description": "Receive one free traditional Balinese body massage to relax your muscles."
+        "description": "Earn an internationally recognized Yoga Alliance RYT 200 credential to register and teach worldwide."
       },
       {
         "title": "Peaceful Bali Surroundings",
@@ -1149,7 +1149,7 @@
       },
       {
         "title": "Outdoor Excursions",
-        "description": "Build confidence early with our free online prep classes before you arrive in Bali."
+        "description": "Explore sacred water temples, iconic Ubud rice terraces, and cultural landmarks on guided group excursions."
       },
       {
         "title": "Small Batch Sizes",
@@ -1157,7 +1157,7 @@
       },
       {
         "title": "Supportive Community",
-        "description": "Study practical body anatomy to guide safe classes and protect student joints."
+        "description": "Join a warm, close-knit sangha of sincere practitioners and build lifelong friendships in a caring environment."
       },
       {
         "title": "Balinese Massage",
@@ -1165,7 +1165,7 @@
       },
       {
         "title": "Balinese Dance Performance",
-        "description": "Enjoy friendly driver pickup straight from Denpasar Airport (DPS) to our campus."
+        "description": "Experience an authentic traditional Balinese dance show celebrating the island’s rich spiritual and cultural heritage."
       },
       {
         "title": "Healthy Meals",
@@ -1181,7 +1181,7 @@
       },
       {
         "title": "Yoga Lifestyle",
-        "description": "Return to retrain or refresh your skills anytime without paying tuition fees again."
+        "description": "Embrace daily yogic living with early morning sadhana, mindful nourishment, and conscious community habits."
       }
     ],
     "workshopsList": [
@@ -1203,10 +1203,18 @@
       },
       {
         "title": "Sound Healing Session",
-        "description": "Learn how to modify yoga poses for common limitations, injuries, and health conditions, so every student can practice safely."
+        "description": "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
+        "description": "Open your heart through sacred call-and-response kirtan, Vedic mantras, and the devotional philosophy of Bhakti yoga."
+      },
+      {
+        "title": "Yoga Therapy & Posture Modifications",
+        "description": "Learn how to modify yoga poses for common limitations, injuries, and health conditions, so every student can practice safely."
+      },
+      {
+        "title": "Yoga Nidra Guided Relaxation",
         "description": "Lie down in deep guided relaxation (yogic sleep). Relieve mental stress and reset your nervous system after physical practice."
       }
     ],
@@ -2024,7 +2032,7 @@
       },
       {
         "title": "Sound Healing Session",
-        "description": "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm."
+        "description": "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -2712,7 +2720,7 @@
       },
       {
         "title": "Sound Healing Session",
-        "description": "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm."
+        "description": "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -3418,7 +3426,7 @@
       },
       {
         "title": "Sound Healing Session",
-        "description": "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm."
+        "description": "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -4192,7 +4200,7 @@
       },
       {
         "title": "Sound Healing Session",
-        "description": "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm."
+        "description": "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -4779,7 +4787,7 @@
     "trust": {
       "accreditation": "Yoga Alliance",
       "accreditationSub": "Certified School",
-      "graduates": "500+ Graduates",
+      "graduates": "600+ Graduates",
       "graduatesSub": "Worldwide",
       "rating": "5★ Rated",
       "ratingSub": "On Google"
@@ -5934,7 +5942,7 @@
       },
       {
         "title": "Sound Healing Session",
-        "description": "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm."
+        "description": "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -6645,7 +6653,7 @@
       },
       {
         "title": "Sound Healing Session",
-        "description": "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm."
+        "description": "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -7419,7 +7427,7 @@
       },
       {
         "title": "Sound Healing Session",
-        "description": "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm."
+        "description": "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness."
       },
       {
         "title": "Bhakti Yoga & Kirtan",
@@ -8153,7 +8161,7 @@
       },
       {
         "title": "Sound Healing Session",
-        "description": "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm."
+        "description": "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness."
       },
       {
         "title": "Bhakti Yoga & Kirtan",

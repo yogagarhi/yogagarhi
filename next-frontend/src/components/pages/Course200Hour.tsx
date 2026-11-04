@@ -461,13 +461,23 @@ const workshops = [
   },
   {
     title: "Sound Healing Session",
-    description: "Experience the transformative power of Tibetan singing bowls, gongs, and mantras. Vibration therapy for deep relaxation and inner calm.",
+    description: "Experience the restorative power of therapeutic sound vibration and sacred chanting to release deep physical tension, calm the nervous system, and enter a state of inner stillness.",
     image: workshopSoundHealingUpdate
   },
   {
     title: "Bhakti Yoga & Kirtan",
     description: "Open your heart through devotional practice. Learn sacred chants, mantras, and kirtan to connect with the spiritual essence of yoga.",
     image: workshopBhakti
+  },
+  {
+    title: "Yoga Therapy & Posture Modifications",
+    description: "Learn how to modify yoga poses for common limitations, injuries, and health conditions, so every student can practice safely.",
+    image: apartGroupPose
+  },
+  {
+    title: "Yoga Nidra Guided Relaxation",
+    description: "Lie down in deep guided relaxation (yogic sleep). Relieve mental stress and reset your nervous system after physical practice.",
+    image: apartSeatedTalk
   },
 ];
 
