@@ -67,8 +67,6 @@ const yogaAllianceBg = getCloudinaryImage("yoga-alliance-bg.jpg");
 const yaRyt200 = getCloudinaryImage("ya-ryt-200.png");
 const healthyMeals = getCloudinaryImage("healthy-meals.jpg");
 const yaRys200 = getCloudinaryImage("ya-rys-200.jpg");
-const yaAllCertifications = getCloudinaryImage("ya-all-certifications.jpg");
-
 import WhyFeatureItem from "@/components/home/WhyFeatureItem";
 import HomeVideoGallerySection from "@/components/home/HomeVideoGallerySection";
 import StudentStoriesSection from "@/components/home/StudentStoriesSection";
@@ -1629,11 +1627,6 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <Image src={yaRys200} alt="RYS 200" width={100} height={100} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <Image src={yaRyt200} alt="RYT 200" width={100} height={100} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
-              </div>
-
-              {/* Full Certification Banner */}
-              <div className="mt-10">
-                <Image src={yaAllCertifications} alt="All Yoga Alliance Certifications" width={800} height={400} className="max-w-full md:max-w-2xl mx-auto rounded-lg shadow-lg" />
               </div>
             </div>
           </div>
