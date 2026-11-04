@@ -60,9 +60,9 @@ export default function Payment() {
             <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-700 flex items-center justify-center font-bold text-lg mx-auto">
               3
             </div>
-            <h3 className="font-heading text-xl font-bold text-foreground">Pay Balance on Arrival</h3>
+            <h3 className="font-heading text-xl font-bold text-foreground">Balance Due 30 Days Prior</h3>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              The remaining balance is comfortably settled upon your check-in at the ashram on orientation day.
+              The remaining course fee balance is due at least 30 days before your course start date.
             </p>
           </div>
         </div>

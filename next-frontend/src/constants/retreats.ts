@@ -235,7 +235,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { meal: 'Dinner', time: '07:00 PM – 08:00 PM', notes: 'Warm soul soups, roasted vegetables, curries, and herbal digestion tonics' }
     ],
     policy: {
-      reschedule: 'Each student is eligible for one course reschedule free of charge. Once rescheduled, your dates are firmly reserved for maximum flexibility.',
+      reschedule: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.',
       airportGuide: 'The best and most convenient way to travel to YogaGarhi Bali is to take a flight to Denpasar Bali Airport (DPS). Denpasar Airport is merely 38 km away from our Ubud campus.',
       arrivalInfo: 'Campus check-in begins at 12:00 PM on your arrival day. Early arrival and luggage storage are gladly assisted.'
     },
@@ -463,7 +463,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { meal: 'Dinner', time: '07:00 PM – 08:00 PM', notes: 'Warm soul soups, roasted vegetables, curries, and herbal digestion tonics' }
     ],
     policy: {
-      reschedule: 'Each student is eligible for one course reschedule free of charge. Once the course has been rescheduled, no further changes to the course dates will be permitted. We provide complete booking flexibility.',
+      reschedule: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.',
       airportGuide: 'The best and most convenient way to travel to YogaGarhi Bali is to take a flight to Denpasar Bali Airport (DPS). Denpasar Airport is merely 38 km away from our Ubud retreat campus.',
       arrivalInfo: 'Campus check-in begins at 12:00 PM on Day 1. If you arrive early, feel free to relax by the swimming pool or enjoy our herbal welcome drinks.'
     },
@@ -694,7 +694,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { meal: 'Dinner', time: '07:00 PM – 08:00 PM', notes: 'Warm soul soups, roasted vegetables, curries, and herbal digestion tonics' }
     ],
     policy: {
-      reschedule: 'Each student is eligible for one course reschedule free of charge. Once rescheduled, your dates are firmly reserved for maximum flexibility.',
+      reschedule: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.',
       airportGuide: 'The best and most convenient way to travel to YogaGarhi Bali is to take a flight to Denpasar Bali Airport (DPS). Denpasar Airport is merely 38 km away from our Ubud retreat campus.',
       arrivalInfo: 'Campus check-in begins at 12:00 PM on Day 1. If you arrive early, feel free to relax by the swimming pool or enjoy our herbal welcome drinks.'
     },
