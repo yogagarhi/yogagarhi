@@ -1322,7 +1322,9 @@
         }
       ]
     },
-    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
+    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India",
+    "whatYouWillReceiveHeading": "このトレーニングで得られるもの",
+    "whatYouWillReceiveSub": "200時間の旅に含まれる主要な学び、体験、そして一生の財産。"
   },
   "whyChoose": {
     "heading": "YOGAGARHI が選ばれる理由",
@@ -1493,7 +1495,7 @@
     },
     "storyTitle": "あなたの練習を生きた知恵へと昇華させる",
     "storyP1": "当校のバリ島200時間ヨガ指導者養成コースは、形だけのポーズではなく本物のヨガの深淵に触れたいと願う方のための滞在型集中プログラムです。ウブドから車でわずか15分のギャニャール村に位置し、喧騒を離れた穏やかな環境で学びに専念できます。",
-    "storyP2": "24日間をかけて、古典Hatha、Vinyasa Flow、Ashtangaプライマリーシリーズ、Iyengarのアライメントに加え、解剖学、ヨガ哲学、pranayama、瞑想を学びます。各クラス8〜10名に限定されているため、ヒマラヤ直系の熟練講師が個々の成長に寄り添って指導します。",
+    "storyP2": "12日間をかけて、古典Hatha、Vinyasa Flow、Ashtangaプライマリーシリーズ、Iyengarのアライメントに加え、解剖学、ヨガ哲学、pranayama、瞑想を学びます。各クラス8〜10名に限定されているため、ヒマラヤ直系の熟練講師が個々の成長に寄り添って指導します。",
     "watchVideoStories": "修了生たちの体験談動画を見る",
     "videoBannerTitle": "ビデオ相談を予約。学校を見る。お部屋を見る。ヨガホールを見る。",
     "whyYogaGarhiBox": {
@@ -1512,7 +1514,7 @@
       "p4Title": "受講料永久無料でコース再受講が可能",
       "p4Highlight": "いつでも戻れる場所",
       "p4Desc": "将来バリ島で開催されるコースに受講料無料で何度でも参加し、知識を再確認できます。",
-      "pkgBadge": "宿泊パッケージ（24日間 / 23泊）＆ 受講のみプラン",
+      "pkgBadge": "宿泊パッケージ（12 Days / 11 Nights）＆ 受講のみプラン",
       "saveEarlyBird": "早割で $300 お得",
       "tuitionFrom": "受講のみ $999 USD〜 | 宿泊付き $1,750 USD〜",
       "breakdown": "受講のみ：$999 • 3人部屋：$1,750 • 2人部屋：$1,899 • 個室：$2,499",
@@ -1521,14 +1523,14 @@
     },
     "hoursStructure": {
       "badge": "学習時間",
-      "heading": "200時間のカリキュラム構成",
+      "heading": "100時間のカリキュラム構成",
       "sub": "全米ヨガアライアンス基準に準拠した、対面指導時間、実践演習、自己探求のバランスの取れた時間配分。",
       "contactHours": "対面指導時間",
       "contactHoursDesc": "リード講師によるポーズ、アライメント、解剖学、哲学の直接講義。",
       "selfStudy": "自習・ティーチング実習",
       "selfStudyDesc": "推薦図書の読書、課題、受講生同士での実践的な教え合いの演習。",
       "totalCert": "認定時間合計",
-      "totalCertDesc": "Yoga Alliance RYT 200 の基準を満たし、さらに上回る内容。",
+      "totalCertDesc": "Yoga Alliance RYS 200 (100 hours) の基準を満たし、さらに上回る内容。",
       "hoursUnit": "時間"
     },
     "syllabus": {
@@ -1587,9 +1589,9 @@
     "inclusions": {
       "heading": "コース料金に含まれるもの",
       "sub": "受講期間中、余計な心配なく学びに専念できるようすべてが整えられています。",
-      "incAccom": "アシュラム宿泊（23泊分）",
+      "incAccom": "アシュラム宿泊（11泊分）",
       "incMeals": "毎日のサットヴァ料理（ベジタリアン/ヴィーガン）3食",
-      "incCert": "修了時の全米ヨガアライアンス RYT 200 認定証",
+      "incCert": "YogaGarhi（Yoga Alliance RYS 200）発行の100時間修了証明書。この時間はYogaGarhiでの200時間トレーニングにカウントできます。",
       "incManuals": "公式トレーニングテキスト・ノート・学習資料一式",
       "incKit": "ヨガマットおよび各種プロップスの無料貸出",
       "incExcursions": "聖なる文化体験（ティルタエンプル寺院、ライステラス、バリ舞踊）",
@@ -1628,8 +1630,9 @@
     "ethics": {
       "codeOfConduct": "受講生行動規範",
       "refundCancellation": "キャンセル・返金規定",
-      "ryt200Title": "登録ヨガ指導者（RYT 200）",
-      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る"
+      "ryt200Title": "100時間修了証明書",
+      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る",
+      "meetsStandards": "ヨガアライアンス認定校（RYS 200）YogaGarhi発行"
     },
     "faqsHeading": "よくあるご質問",
     "faqs": [
@@ -2160,7 +2163,7 @@
       "level": "対象レベル",
       "levelVal": "上級（RYT 200 修了者対象）",
       "certification": "取得資格",
-      "certificationVal": "Yoga Alliance RYT 500 公式認定",
+      "certificationVal": "YogaGarhi発行の300時間修了証明書",
       "startingFrom": "$2,499 USD",
       "startingFromVal": "$999 USD",
       "save": "割引",
@@ -2178,7 +2181,7 @@
     },
     "storyTitle": "あなたの練習を生きた知恵へと昇華させる",
     "storyP1": "当校のバリ島200時間ヨガ指導者養成コースは、形だけのポーズではなく本物のヨガの深淵に触れたいと願う方のための滞在型集中プログラムです。ウブドから車でわずか15分のギャニャール村に位置し、喧騒を離れた穏やかな環境で学びに専念できます。",
-    "storyP2": "24日間をかけて、古典Hatha、Vinyasa Flow、Ashtangaプライマリーシリーズ、Iyengarのアライメントに加え、解剖学、ヨガ哲学、pranayama、瞑想を学びます。各クラス8〜10名に限定されているため、ヒマラヤ直系の熟練講師が個々の成長に寄り添って指導します。",
+    "storyP2": "28日間をかけて、古典Hatha、Vinyasa Flow、Ashtangaプライマリーシリーズ、Iyengarのアライメントに加え、解剖学、ヨガ哲学、pranayama、瞑想を学びます。各クラス8〜10名に限定されているため、ヒマラヤ直系の熟練講師が個々の成長に寄り添って指導します。",
     "watchVideoStories": "修了生たちの体験談動画を見る",
     "videoBannerTitle": "ビデオ相談を予約。学校を見る。お部屋を見る。ヨガホールを見る。",
     "whyYogaGarhiBox": {
@@ -2197,7 +2200,7 @@
       "p4Title": "受講料永久無料でコース再受講が可能",
       "p4Highlight": "いつでも戻れる場所",
       "p4Desc": "将来バリ島で開催されるコースに受講料無料で何度でも参加し、知識を再確認できます。",
-      "pkgBadge": "宿泊パッケージ（24日間 / 23泊）＆ 受講のみプラン",
+      "pkgBadge": "宿泊パッケージ（28 Days / 27 Nights）＆ 受講のみプラン",
       "saveEarlyBird": "早割で $300 お得",
       "tuitionFrom": "受講のみ $999 USD〜 | 宿泊付き $1,750 USD〜",
       "breakdown": "受講のみ：$999 • 3人部屋：$1,750 • 2人部屋：$1,899 • 個室：$2,499",
@@ -2206,14 +2209,14 @@
     },
     "hoursStructure": {
       "badge": "学習時間",
-      "heading": "200時間のカリキュラム構成",
+      "heading": "300時間のカリキュラム構成",
       "sub": "全米ヨガアライアンス基準に準拠した、対面指導時間、実践演習、自己探求のバランスの取れた時間配分。",
       "contactHours": "対面指導時間",
       "contactHoursDesc": "リード講師によるポーズ、アライメント、解剖学、哲学の直接講義。",
       "selfStudy": "自習・ティーチング実習",
       "selfStudyDesc": "推薦図書の読書、課題、受講生同士での実践的な教え合いの演習。",
       "totalCert": "認定時間合計",
-      "totalCertDesc": "Yoga Alliance RYT 200 の基準を満たし、さらに上回る内容。",
+      "totalCertDesc": "YogaGarhi発行の300時間修了証明書 (300 hours).",
       "hoursUnit": "時間"
     },
     "syllabus": {
@@ -2272,9 +2275,9 @@
     "inclusions": {
       "heading": "コース料金に含まれるもの",
       "sub": "受講期間中、余計な心配なく学びに専念できるようすべてが整えられています。",
-      "incAccom": "アシュラム宿泊（23泊分）",
+      "incAccom": "アシュラム宿泊（27泊分）",
       "incMeals": "毎日のサットヴァ料理（ベジタリアン/ヴィーガン）3食",
-      "incCert": "修了時の全米ヨガアライアンス RYT 200 認定証",
+      "incCert": "YogaGarhi発行の300時間修了証明書",
       "incManuals": "公式トレーニングテキスト・ノート・学習資料一式",
       "incKit": "ヨガマットおよび各種プロップスの無料貸出",
       "incExcursions": "聖なる文化体験（ティルタエンプル寺院、ライステラス、バリ舞踊）",

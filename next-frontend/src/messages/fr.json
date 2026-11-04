@@ -1322,7 +1322,9 @@
         }
       ]
     },
-    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
+    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India",
+    "whatYouWillReceiveHeading": "Ce que vous recevrez lors de cette formation",
+    "whatYouWillReceiveSub": "Avantages clés, immersions et expériences inoubliables inclus dans votre parcours de 200 heures."
   },
   "whyChoose": {
     "heading": "LA DIFFÉRENCE YOGAGARHI",
@@ -1493,7 +1495,7 @@
     },
     "storyTitle": "Transformez votre pratique en sagesse vivante",
     "storyP1": "Notre formation de professeur de yoga 200 heures à Bali est une immersion complète conçue pour les pratiquants en quête de profondeur authentique plutôt que d'enchaînements mécaniques. Situé dans le village paisible de Gianyar, à seulement 15 minutes d'Ubud, YogaGarhi offre un havre de paix loin de la foule.",
-    "storyP2": "Pendant 24 jours, vous étudierez le Hatha classique, le Vinyasa Flow, la série Ashtanga Primary et l'alignement Iyengar aux côtés de l'anatomie appliquée, de la philosophie, du pranayama et de la méditation. Avec des promotions strictement limitées à 8–10 élèves, nos maîtres himalayens offrent un accompagnement attentif à chacun.",
+    "storyP2": "Pendant 12 jours, vous étudierez le Hatha classique, le Vinyasa Flow, la série Ashtanga Primary et l'alignement Iyengar aux côtés de l'anatomie appliquée, de la philosophie, du pranayama et de la méditation. Avec des promotions strictement limitées à 8–10 élèves, nos maîtres himalayens offrent un accompagnement attentif à chacun.",
     "watchVideoStories": "Regarder les témoignages vidéo des diplômés",
     "videoBannerTitle": "Réservez un appel. Découvrez l'école. Visitez votre chambre. Visitez la shala.",
     "whyYogaGarhiBox": {
@@ -1512,7 +1514,7 @@
       "p4Title": "Répétition gratuite du cours à vie",
       "p4Highlight": "Retour sans frais",
       "p4Desc": "Participez gratuitement aux futures formations YogaGarhi à tout moment pour renouveler vos acquis ou assister en tant qu'apprenti.",
-      "pkgBadge": "Formules avec hébergement (24 jours / 23 nuits) & Option cours seul",
+      "pkgBadge": "Formules avec hébergement (12 Days / 11 Nights) & Option cours seul",
       "saveEarlyBird": "Économisez $300 avec le tarif lève-tôt",
       "tuitionFrom": "Cours seul dès $999 USD | Résidentiel dès $1,750 USD",
       "breakdown": "Cours uniquement : $999 • Chambre triple : $1,750 • Chambre double : $1,899 • Chambre privée : $2,499",
@@ -1521,14 +1523,14 @@
     },
     "hoursStructure": {
       "badge": "Volume horaire",
-      "heading": "Structure des 200 heures de formation",
+      "heading": "Structure des 100 heures de formation",
       "sub": "Une répartition équilibrée entre heures de contact direct, alignement pratique et étude réflexive conforme aux normes de Yoga Alliance.",
       "contactHours": "Heures de contact direct",
       "contactHoursDesc": "Enseignement direct avec les formateurs seniors en asana, alignement, anatomie et philosophie.",
       "selfStudy": "Auto-apprentissage & Pratique",
       "selfStudyDesc": "Lectures guidées, tenue d'un journal, pratique entre pairs et création de séquences.",
       "totalCert": "Certification totale",
-      "totalCertDesc": "Satisfait et dépasse les exigences Yoga Alliance RYT 200.",
+      "totalCertDesc": "Satisfait et dépasse les exigences Yoga Alliance RYS 200 (100 hours).",
       "hoursUnit": "Heures"
     },
     "syllabus": {
@@ -1587,9 +1589,9 @@
     "inclusions": {
       "heading": "Ce qui est inclus dans votre formation",
       "sub": "Tout est prévu pour assurer un séjour profondément transformateur et sans tracas.",
-      "incAccom": "23 nuits d'hébergement en ashram",
+      "incAccom": "11 nuits d'hébergement en ashram",
       "incMeals": "3 repas sattviques fraîchement cuisinés par jour (végétarien / vegan)",
-      "incCert": "Certificat Yoga Alliance RYT 200 à la fin de la formation",
+      "incCert": "Certificat de fin de formation de 100 heures de YogaGarhi (Yoga Alliance RYS 200). Ces heures peuvent compter pour votre formation de 200 heures chez YogaGarhi.",
       "incManuals": "Manuels officiels de formation, carnets de notes et supports d'étude",
       "incKit": "Tapis de yoga et accessoires de pratique fournis sur place",
       "incExcursions": "Excursions culturelles sacrées (temple de l'eau, rizières, danse balinaise)",
@@ -1628,8 +1630,9 @@
     "ethics": {
       "codeOfConduct": "Code de conduite",
       "refundCancellation": "Remboursement & Annulation",
-      "ryt200Title": "Professeur de yoga enregistré (RYT 200)",
-      "viewRegistry": "Consulter l'annuaire de Yoga Alliance"
+      "ryt200Title": "Certificat de Fin de Formation 100 Heures",
+      "viewRegistry": "Consulter l'annuaire de Yoga Alliance",
+      "meetsStandards": "Délivré par YogaGarhi, école de yoga enregistrée auprès de Yoga Alliance (RYS 200)"
     },
     "faqsHeading": "Foire Aux Questions",
     "faqs": [
@@ -2160,7 +2163,7 @@
       "level": "Niveau",
       "levelVal": "Avancé (diplôme RYT 200 requis)",
       "certification": "Certification",
-      "certificationVal": "Certification Yoga Alliance RYT 500",
+      "certificationVal": "Certificat de fin de formation de 300 heures de YogaGarhi",
       "startingFrom": "$2,499 USD",
       "startingFromVal": "$999 USD",
       "save": "Économiser",
@@ -2178,7 +2181,7 @@
     },
     "storyTitle": "Transformez votre pratique en sagesse vivante",
     "storyP1": "Notre formation de professeur de yoga 200 heures à Bali est une immersion complète conçue pour les pratiquants en quête de profondeur authentique plutôt que d'enchaînements mécaniques. Situé dans le village paisible de Gianyar, à seulement 15 minutes d'Ubud, YogaGarhi offre un havre de paix loin de la foule.",
-    "storyP2": "Pendant 24 jours, vous étudierez le Hatha classique, le Vinyasa Flow, la série Ashtanga Primary et l'alignement Iyengar aux côtés de l'anatomie appliquée, de la philosophie, du pranayama et de la méditation. Avec des promotions strictement limitées à 8–10 élèves, nos maîtres himalayens offrent un accompagnement attentif à chacun.",
+    "storyP2": "Pendant 28 jours, vous étudierez le Hatha classique, le Vinyasa Flow, la série Ashtanga Primary et l'alignement Iyengar aux côtés de l'anatomie appliquée, de la philosophie, du pranayama et de la méditation. Avec des promotions strictement limitées à 8–10 élèves, nos maîtres himalayens offrent un accompagnement attentif à chacun.",
     "watchVideoStories": "Regarder les témoignages vidéo des diplômés",
     "videoBannerTitle": "Réservez un appel. Découvrez l'école. Visitez votre chambre. Visitez la shala.",
     "whyYogaGarhiBox": {
@@ -2197,7 +2200,7 @@
       "p4Title": "Répétition gratuite du cours à vie",
       "p4Highlight": "Retour sans frais",
       "p4Desc": "Participez gratuitement aux futures formations YogaGarhi à tout moment pour renouveler vos acquis ou assister en tant qu'apprenti.",
-      "pkgBadge": "Formules avec hébergement (24 jours / 23 nuits) & Option cours seul",
+      "pkgBadge": "Formules avec hébergement (28 Days / 27 Nights) & Option cours seul",
       "saveEarlyBird": "Économisez $300 avec le tarif lève-tôt",
       "tuitionFrom": "Cours seul dès $999 USD | Résidentiel dès $1,750 USD",
       "breakdown": "Cours uniquement : $999 • Chambre triple : $1,750 • Chambre double : $1,899 • Chambre privée : $2,499",
@@ -2206,14 +2209,14 @@
     },
     "hoursStructure": {
       "badge": "Volume horaire",
-      "heading": "Structure des 200 heures de formation",
+      "heading": "Structure des 300 heures de formation",
       "sub": "Une répartition équilibrée entre heures de contact direct, alignement pratique et étude réflexive conforme aux normes de Yoga Alliance.",
       "contactHours": "Heures de contact direct",
       "contactHoursDesc": "Enseignement direct avec les formateurs seniors en asana, alignement, anatomie et philosophie.",
       "selfStudy": "Auto-apprentissage & Pratique",
       "selfStudyDesc": "Lectures guidées, tenue d'un journal, pratique entre pairs et création de séquences.",
       "totalCert": "Certification totale",
-      "totalCertDesc": "Satisfait et dépasse les exigences Yoga Alliance RYT 200.",
+      "totalCertDesc": "Certificat de fin de formation de 300 heures de YogaGarhi (300 hours).",
       "hoursUnit": "Heures"
     },
     "syllabus": {
@@ -2272,9 +2275,9 @@
     "inclusions": {
       "heading": "Ce qui est inclus dans votre formation",
       "sub": "Tout est prévu pour assurer un séjour profondément transformateur et sans tracas.",
-      "incAccom": "23 nuits d'hébergement en ashram",
+      "incAccom": "27 nuits d'hébergement en ashram",
       "incMeals": "3 repas sattviques fraîchement cuisinés par jour (végétarien / vegan)",
-      "incCert": "Certificat Yoga Alliance RYT 200 à la fin de la formation",
+      "incCert": "Certificat de fin de formation de 300 heures de YogaGarhi",
       "incManuals": "Manuels officiels de formation, carnets de notes et supports d'étude",
       "incKit": "Tapis de yoga et accessoires de pratique fournis sur place",
       "incExcursions": "Excursions culturelles sacrées (temple de l'eau, rizières, danse balinaise)",

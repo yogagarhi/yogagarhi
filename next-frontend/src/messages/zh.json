@@ -1322,7 +1322,9 @@
         }
       ]
     },
-    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
+    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India",
+    "whatYouWillReceiveHeading": "您将在本次培训中获得的内容",
+    "whatYouWillReceiveSub": "包含在您的200小时旅程中的核心收获、沉浸式体验与终身价值。"
   },
   "whyChoose": {
     "heading": "为什么选择 YOGAGARHI",
@@ -1493,7 +1495,7 @@
     },
     "storyTitle": "将您的个人修习升华为生命的真实智慧",
     "storyP1": "YogaGarhi 巴厘岛200小时瑜伽教师培训是一场为期24天的沉浸式集训，专为渴望超越表层动作、触摸瑜伽本源深度的修习者打造。学院坐落于距乌布仅15分钟车程的吉安雅宁静村落中，让您远离繁华喧闹，全身心投入修行。",
-    "storyP2": "在24天时间里，您将全面学习传统古典 Hatha、动态流动的 Vinyasa Flow、Ashtanga 初级序列、Iyengar 精准解剖对齐，以及功能解剖学、瑜伽哲学、pranayama 与深层冥想。每班严控在8-10人，喜马拉雅正统明师每日亲自为您答疑修正。",
+    "storyP2": "在12天时间里，您将全面学习传统古典 Hatha、动态流动的 Vinyasa Flow、Ashtanga 初级序列、Iyengar 精准解剖对齐，以及功能解剖学、瑜伽哲学、pranayama 与深层冥想。每班严控在8-10人，喜马拉雅正统明师每日亲自为您答疑修正。",
     "watchVideoStories": "观看往届毕业学员真实故事与评价",
     "videoBannerTitle": "预约免费视频咨询。亲眼看一看我们的校园、客房和瑜伽大厅。",
     "whyYogaGarhiBox": {
@@ -1512,7 +1514,7 @@
       "p4Title": "终身免学费重修特权",
       "p4Highlight": "随时可以停靠的心灵家园",
       "p4Desc": "未来您可以终身免学费再次报名参加在巴厘岛举办的200小时班期，随时温故知新。",
-      "pkgBadge": "全住宿套餐（24天 / 23晚）与仅限学费方案",
+      "pkgBadge": "全住宿套餐（12 Days / 11 Nights）与仅限学费方案",
       "saveEarlyBird": "早鸟特惠立减 $300",
       "tuitionFrom": "仅限学费 $999 USD 起 | 含住宿套餐 $1,750 USD 起",
       "breakdown": "仅学费：$999 • 三人间：$1,750 • 双人间：$1,899 • 单人间：$2,499",
@@ -1521,14 +1523,14 @@
     },
     "hoursStructure": {
       "badge": "学时结构",
-      "heading": "200小时课程学时分布",
+      "heading": "100小时课程学时分布",
       "sub": "完全符合美国瑜伽联盟国际标准，实现面授实操、理论研读与个人修习的黄金配比。",
       "contactHours": "导师面对面实授学时",
       "contactHoursDesc": "主讲导师亲自领衔的体式拆解、解剖对齐、哲学与教学法面授。",
       "selfStudy": "自学研习与教学实训",
       "selfStudyDesc": "经典研读、作业撰写以及学员之间的模拟排课与实景试讲练习。",
       "totalCert": "认证总学时",
-      "totalCertDesc": "完全符合并超越 Yoga Alliance RYT 200 国际认证标准要求。",
+      "totalCertDesc": "完全符合并超越 Yoga Alliance RYS 200 (100 hours) 国际认证标准要求。",
       "hoursUnit": "小时"
     },
     "syllabus": {
@@ -1587,9 +1589,9 @@
     "inclusions": {
       "heading": "课程费用包含明细",
       "sub": "所有细节均已妥善安排，让您在整个培训期间心无旁骛、专心精进。",
-      "incAccom": "静修院舒适客房住宿（23晚）",
+      "incAccom": "静修院舒适客房住宿（11晚）",
       "incMeals": "每日3餐阿育吠陀纯素/素食营养膳食",
-      "incCert": "顺利毕业颁发的 Yoga Alliance RYT 200 国际认证执照",
+      "incCert": "YogaGarhi（瑜伽联盟 RYS 200）颁发的100小时结业证书。学时可计入YogaGarhi的200小时培训。",
       "incManuals": "全套官方培训教材、随堂讲义与研习笔记",
       "incKit": "高品质专业瑜伽垫及全套辅具免费使用",
       "incExcursions": "圣迹文化采风（圣泉寺参访、梯田游览及传统巴厘舞蹈）",
@@ -1628,8 +1630,9 @@
     "ethics": {
       "codeOfConduct": "学员行为规范守则",
       "refundCancellation": "退款与改期政策",
-      "ryt200Title": "Yoga Alliance 认证教师（RYT 200）",
-      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面"
+      "ryt200Title": "100小时结业证书",
+      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面",
+      "meetsStandards": "由瑜伽联盟认证瑜伽学校（RYS 200）YogaGarhi颁发"
     },
     "faqsHeading": "常见问题解答",
     "faqs": [
@@ -2160,7 +2163,7 @@
       "level": "适合级别",
       "levelVal": "高级（需持有 RYT 200 证书）",
       "certification": "国际认证",
-      "certificationVal": "Yoga Alliance RYT 500 高级认证证书",
+      "certificationVal": "YogaGarhi颁发的300小时结业证书",
       "startingFrom": "$2,499 USD",
       "startingFromVal": "$999 USD",
       "save": "立省",
@@ -2178,7 +2181,7 @@
     },
     "storyTitle": "将您的个人修习升华为生命的真实智慧",
     "storyP1": "YogaGarhi 巴厘岛200小时瑜伽教师培训是一场为期24天的沉浸式集训，专为渴望超越表层动作、触摸瑜伽本源深度的修习者打造。学院坐落于距乌布仅15分钟车程的吉安雅宁静村落中，让您远离繁华喧闹，全身心投入修行。",
-    "storyP2": "在24天时间里，您将全面学习传统古典 Hatha、动态流动的 Vinyasa Flow、Ashtanga 初级序列、Iyengar 精准解剖对齐，以及功能解剖学、瑜伽哲学、pranayama 与深层冥想。每班严控在8-10人，喜马拉雅正统明师每日亲自为您答疑修正。",
+    "storyP2": "在28天时间里，您将全面学习传统古典 Hatha、动态流动的 Vinyasa Flow、Ashtanga 初级序列、Iyengar 精准解剖对齐，以及功能解剖学、瑜伽哲学、pranayama 与深层冥想。每班严控在8-10人，喜马拉雅正统明师每日亲自为您答疑修正。",
     "watchVideoStories": "观看往届毕业学员真实故事与评价",
     "videoBannerTitle": "预约免费视频咨询。亲眼看一看我们的校园、客房和瑜伽大厅。",
     "whyYogaGarhiBox": {
@@ -2197,7 +2200,7 @@
       "p4Title": "终身免学费重修特权",
       "p4Highlight": "随时可以停靠的心灵家园",
       "p4Desc": "未来您可以终身免学费再次报名参加在巴厘岛举办的200小时班期，随时温故知新。",
-      "pkgBadge": "全住宿套餐（24天 / 23晚）与仅限学费方案",
+      "pkgBadge": "全住宿套餐（28 Days / 27 Nights）与仅限学费方案",
       "saveEarlyBird": "早鸟特惠立减 $300",
       "tuitionFrom": "仅限学费 $999 USD 起 | 含住宿套餐 $1,750 USD 起",
       "breakdown": "仅学费：$999 • 三人间：$1,750 • 双人间：$1,899 • 单人间：$2,499",
@@ -2206,14 +2209,14 @@
     },
     "hoursStructure": {
       "badge": "学时结构",
-      "heading": "200小时课程学时分布",
+      "heading": "300小时课程学时分布",
       "sub": "完全符合美国瑜伽联盟国际标准，实现面授实操、理论研读与个人修习的黄金配比。",
       "contactHours": "导师面对面实授学时",
       "contactHoursDesc": "主讲导师亲自领衔的体式拆解、解剖对齐、哲学与教学法面授。",
       "selfStudy": "自学研习与教学实训",
       "selfStudyDesc": "经典研读、作业撰写以及学员之间的模拟排课与实景试讲练习。",
       "totalCert": "认证总学时",
-      "totalCertDesc": "完全符合并超越 Yoga Alliance RYT 200 国际认证标准要求。",
+      "totalCertDesc": "YogaGarhi颁发的300小时结业证书 (300 hours).",
       "hoursUnit": "小时"
     },
     "syllabus": {
@@ -2272,9 +2275,9 @@
     "inclusions": {
       "heading": "课程费用包含明细",
       "sub": "所有细节均已妥善安排，让您在整个培训期间心无旁骛、专心精进。",
-      "incAccom": "静修院舒适客房住宿（23晚）",
+      "incAccom": "静修院舒适客房住宿（27晚）",
       "incMeals": "每日3餐阿育吠陀纯素/素食营养膳食",
-      "incCert": "顺利毕业颁发的 Yoga Alliance RYT 200 国际认证执照",
+      "incCert": "YogaGarhi颁发的300小时结业证书",
       "incManuals": "全套官方培训教材、随堂讲义与研习笔记",
       "incKit": "高品质专业瑜伽垫及全套辅具免费使用",
       "incExcursions": "圣迹文化采风（圣泉寺参访、梯田游览及传统巴厘舞蹈）",

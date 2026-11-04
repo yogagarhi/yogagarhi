@@ -24,7 +24,7 @@ export async function generateMetadata({
     }
 
     if (locale === "en") {
-        const title = "300 Hour Yoga Teacher Training Bali – Advanced RYT 500 Path | YogaGarhi";
+        const title = "300 Hour Yoga Teacher Training Bali – Advanced Immersion | YogaGarhi";
         const description =
             "28-day advanced 300-hour training near Ubud, Bali for RYT 200 graduates. Deepen teaching, philosophy & therapeutic yoga. Small groups of 8–10.";
         return {
@@ -63,7 +63,7 @@ export async function generateMetadata({
         };
     }
 
-    const title = messages.course300?.metaTitle || "300 Hour Yoga Teacher Training Bali – Advanced RYT 500 Path | YogaGarhi";
+    const title = messages.course300?.metaTitle || "300 Hour Yoga Teacher Training Bali – Advanced Immersion | YogaGarhi";
     const description =
         messages.course300?.metaDesc ||
         "28-day advanced 300-hour training near Ubud, Bali for RYT 200 graduates. Deepen teaching, philosophy & therapeutic yoga. Small groups of 8–10.";
@@ -239,7 +239,7 @@ export default async function Page({
             "availability": "https://schema.org/InStock",
             "url": pageUrl
         },
-        "educationalCredentialAwarded": "RYT-500 Yoga Alliance Certification",
+        "educationalCredentialAwarded": "300-Hour Certificate of Completion from YogaGarhi",
         "coursePrerequisites": [
             {
                 "@type": "Course",

@@ -2261,7 +2261,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <section className="py-20 bg-background overflow-hidden">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-primary mb-4">
-              {t("inclusions.heading")}
+              {t("whatYouWillReceiveHeading") || "What You Will Receive in This Training"}
             </h2>
             {/* Decorative Mandala Icon */}
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -2277,7 +2277,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto italic">
-              {t("inclusions.sub")}
+              {t("whatYouWillReceiveSub") || t("inclusions.sub")}
             </p>
 
             {/* Horizontal Scrollable Flip Cards */}

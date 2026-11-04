@@ -1322,7 +1322,9 @@
         }
       ]
     },
-    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
+    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India",
+    "whatYouWillReceiveHeading": "Wat je ontvangt tijdens deze opleiding",
+    "whatYouWillReceiveSub": "Belangrijke voordelen, ervaringen en levenslange waarden inbegrepen in je 200-urige reis."
   },
   "whyChoose": {
     "heading": "HET YOGAGARHI VERSCHIL",
@@ -1493,7 +1495,7 @@
     },
     "storyTitle": "Transformeer je beoefening in levende wijsheid",
     "storyP1": "Onze 200 uur yogadocentenopleiding in Bali is een residentiële verdieping voor wie verlangt naar authentieke diepgang in plaats van oppervlakkige fitnesslessen. Gelegen in het rustige dorpje Gianyar, op slechts 15 minuten van Ubud, biedt YogaGarhi een vredig toevluchtsoord ver weg van de drukte.",
-    "storyP2": "Gedurende 24 dagen bestudeer je klassiek Hatha, Vinyasa Flow, de Ashtanga Primary Series en Iyengar-uitlijning naast toegepaste anatomie, filosofie, pranayama en meditatie. Met strikt 8–10 studenten per groep bieden onze ervaren docenten uit de Himalaya persoonlijke aandacht aan iedereen.",
+    "storyP2": "Gedurende 12 dagen bestudeer je klassiek Hatha, Vinyasa Flow, de Ashtanga Primary Series en Iyengar-uitlijning naast toegepaste anatomie, filosofie, pranayama en meditatie. Met strikt 8–10 studenten per groep bieden onze ervaren docenten uit de Himalaya persoonlijke aandacht aan iedereen.",
     "watchVideoStories": "Bekijk video's en reviews van studenten",
     "videoBannerTitle": "Plan een gesprek. Zie de school. Zie je kamer. Zie de yogazaal.",
     "whyYogaGarhiBox": {
@@ -1512,7 +1514,7 @@
       "p4Title": "Levenslang gratis de opleiding herhalen",
       "p4Highlight": "Kosteloos terugkeren",
       "p4Desc": "Sluit je in de toekomst kosteloos aan bij YogaGarhi-opleidingen om je kennis op te frissen of te assisteren.",
-      "pkgBadge": "Verblijfspakketten (24 dagen / 23 nachten) & optie alleen lesgeld",
+      "pkgBadge": "Verblijfspakketten (12 Days / 11 Nights) & optie alleen lesgeld",
       "saveEarlyBird": "Bespaar $300 met vroegboekkorting",
       "tuitionFrom": "Alleen lesgeld vanaf $999 USD | Met verblijf vanaf $1,750 USD",
       "breakdown": "Alleen lesgeld: $999 • Drie personen: $1,750 • Twee personen: $1,899 • Privékamer: $2,499",
@@ -1521,14 +1523,14 @@
     },
     "hoursStructure": {
       "badge": "Lesuren",
-      "heading": "Opbouw van de 200 studie-uren",
+      "heading": "Opbouw van de 100 studie-uren",
       "sub": "Een evenwichtige verdeling tussen directe contacturen, praktijklessen en zelfstudie conform de Yoga Alliance richtlijnen.",
       "contactHours": "Contacturen",
       "contactHoursDesc": "Direct onderwijs van hoofddocenten in asana, uitlijning, anatomie en filosofie.",
       "selfStudy": "Zelfstudie & lespraktijk",
       "selfStudyDesc": "Gerichte literatuurstudie, journalen, oefenen met medestudenten en lessen ontwerpen.",
       "totalCert": "Totale certificering",
-      "totalCertDesc": "Voldoet ruim aan de standaarden voor Yoga Alliance RYT 200.",
+      "totalCertDesc": "Voldoet ruim aan de standaarden voor Yoga Alliance RYS 200 (100 hours).",
       "hoursUnit": "Uur"
     },
     "syllabus": {
@@ -1587,9 +1589,9 @@
     "inclusions": {
       "heading": "Wat is inbegrepen in je opleiding",
       "sub": "Alles geregeld voor een zorgeloos en diepgaand verblijf.",
-      "incAccom": "23 nachten verblijf in de ashram",
+      "incAccom": "11 nachten verblijf in de ashram",
       "incMeals": "Dagelijks 3 vers bereide sattvische maaltijden (vegetarisch/veganistisch)",
-      "incCert": "Yoga Alliance RYT 200 certificaat na voltooiing",
+      "incCert": "100-uurs certificaat van deelname van YogaGarhi (Yoga Alliance RYS 200). Deze uren kunnen meetellen voor je 200-uurs opleiding bij YogaGarhi.",
       "incManuals": "Officiële lesboeken, notitieblokken en studiemateriaal",
       "incKit": "Yogamat en alle benodigde props op locatie aanwezig",
       "incExcursions": "Heilige culturele excursies (watertempel, rijstvelden, Balinese dans)",
@@ -1628,8 +1630,9 @@
     "ethics": {
       "codeOfConduct": "Gedragscode",
       "refundCancellation": "Restitutie & Annulering",
-      "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
-      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+      "ryt200Title": "100-Uurs Certificaat van Deelname",
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister",
+      "meetsStandards": "Uitgegeven door YogaGarhi, een Yoga Alliance Registered Yoga School (RYS 200)"
     },
     "faqsHeading": "Veelgestelde vragen",
     "faqs": [
@@ -2160,7 +2163,7 @@
       "level": "Niveau",
       "levelVal": "Gevorderd (RYT 200 vereist)",
       "certification": "Certificering",
-      "certificationVal": "Yoga Alliance RYT 500 Certificering",
+      "certificationVal": "300-uurs certificaat van deelname van YogaGarhi",
       "startingFrom": "$2,499 USD",
       "startingFromVal": "$999 USD",
       "save": "Bespaar",
@@ -2178,7 +2181,7 @@
     },
     "storyTitle": "Transformeer je beoefening in levende wijsheid",
     "storyP1": "Onze 200 uur yogadocentenopleiding in Bali is een residentiële verdieping voor wie verlangt naar authentieke diepgang in plaats van oppervlakkige fitnesslessen. Gelegen in het rustige dorpje Gianyar, op slechts 15 minuten van Ubud, biedt YogaGarhi een vredig toevluchtsoord ver weg van de drukte.",
-    "storyP2": "Gedurende 24 dagen bestudeer je klassiek Hatha, Vinyasa Flow, de Ashtanga Primary Series en Iyengar-uitlijning naast toegepaste anatomie, filosofie, pranayama en meditatie. Met strikt 8–10 studenten per groep bieden onze ervaren docenten uit de Himalaya persoonlijke aandacht aan iedereen.",
+    "storyP2": "Gedurende 28 dagen bestudeer je klassiek Hatha, Vinyasa Flow, de Ashtanga Primary Series en Iyengar-uitlijning naast toegepaste anatomie, filosofie, pranayama en meditatie. Met strikt 8–10 studenten per groep bieden onze ervaren docenten uit de Himalaya persoonlijke aandacht aan iedereen.",
     "watchVideoStories": "Bekijk video's en reviews van studenten",
     "videoBannerTitle": "Plan een gesprek. Zie de school. Zie je kamer. Zie de yogazaal.",
     "whyYogaGarhiBox": {
@@ -2197,7 +2200,7 @@
       "p4Title": "Levenslang gratis de opleiding herhalen",
       "p4Highlight": "Kosteloos terugkeren",
       "p4Desc": "Sluit je in de toekomst kosteloos aan bij YogaGarhi-opleidingen om je kennis op te frissen of te assisteren.",
-      "pkgBadge": "Verblijfspakketten (24 dagen / 23 nachten) & optie alleen lesgeld",
+      "pkgBadge": "Verblijfspakketten (28 Days / 27 Nights) & optie alleen lesgeld",
       "saveEarlyBird": "Bespaar $300 met vroegboekkorting",
       "tuitionFrom": "Alleen lesgeld vanaf $999 USD | Met verblijf vanaf $1,750 USD",
       "breakdown": "Alleen lesgeld: $999 • Drie personen: $1,750 • Twee personen: $1,899 • Privékamer: $2,499",
@@ -2206,14 +2209,14 @@
     },
     "hoursStructure": {
       "badge": "Lesuren",
-      "heading": "Opbouw van de 200 studie-uren",
+      "heading": "Opbouw van de 300 studie-uren",
       "sub": "Een evenwichtige verdeling tussen directe contacturen, praktijklessen en zelfstudie conform de Yoga Alliance richtlijnen.",
       "contactHours": "Contacturen",
       "contactHoursDesc": "Direct onderwijs van hoofddocenten in asana, uitlijning, anatomie en filosofie.",
       "selfStudy": "Zelfstudie & lespraktijk",
       "selfStudyDesc": "Gerichte literatuurstudie, journalen, oefenen met medestudenten en lessen ontwerpen.",
       "totalCert": "Totale certificering",
-      "totalCertDesc": "Voldoet ruim aan de standaarden voor Yoga Alliance RYT 200.",
+      "totalCertDesc": "300-uurs certificaat van deelname van YogaGarhi (300 hours).",
       "hoursUnit": "Uur"
     },
     "syllabus": {
@@ -2272,9 +2275,9 @@
     "inclusions": {
       "heading": "Wat is inbegrepen in je opleiding",
       "sub": "Alles geregeld voor een zorgeloos en diepgaand verblijf.",
-      "incAccom": "23 nachten verblijf in de ashram",
+      "incAccom": "27 nachten verblijf in de ashram",
       "incMeals": "Dagelijks 3 vers bereide sattvische maaltijden (vegetarisch/veganistisch)",
-      "incCert": "Yoga Alliance RYT 200 certificaat na voltooiing",
+      "incCert": "300-uurs certificaat van deelname van YogaGarhi",
       "incManuals": "Officiële lesboeken, notitieblokken en studiemateriaal",
       "incKit": "Yogamat en alle benodigde props op locatie aanwezig",
       "incExcursions": "Heilige culturele excursies (watertempel, rijstvelden, Balinese dans)",

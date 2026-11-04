@@ -351,7 +351,7 @@ const whatYouWillReceive = [
   },
   {
     title: "Yoga Alliance Certified",
-    description: "Receive globally recognized certification. Begin teaching yoga with confidence worldwide.",
+    description: "100-Hour Certificate of Completion from YogaGarhi. Build a solid personal foundation, with hours eligible to count toward future 200-Hour training at YogaGarhi.",
     icon: Award,
     image: apartYogaAllianceGraduates
   },
@@ -1233,43 +1233,7 @@ export default function Course100Hour({ initialBatches, syllabusSlot }: { initia
                   </div>
                 </div>
 
-                <div className="space-y-6 text-muted-foreground leading-relaxed text-left mb-8">
-                  {/* First 2 paragraphs - always visible */}
-                  <p className="text-base sm:text-lg text-foreground/80 font-medium">
-                    Earn your YogaGarhi 100-Hour Yoga Foundation Certificate through Yogagarhi's
-                    100-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
-                    of yoga and self-realization.
-                  </p>
-                  <p>
-                    Our professional course is made for both beginners and intermediate practitioners.
-                    This course covers all essential aspects of yoga, including asanas, pranayama,
-                    anatomy, and teaching methodology.
-                  </p>
 
-                  {/* Expandable content */}
-                  <div
-                    className={`overflow-hidden transition-all duration-500 ease-in-out ${showWelcomeExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                      }`}
-                  >
-                    <p className="pt-2">
-                      Become a part of this transformative once in a lifetime experience in the
-                      mesmerizing beauty of Bali. This holistic program prepares you to become a
-                      professional yoga teacher having expertise, skills, and confidence.
-                    </p>
-                  </div>
-
-                  {/* Read More / Read Less Button */}
-                  <button
-                    onClick={() => setShowWelcomeExpanded(!showWelcomeExpanded)}
-                    className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors mt-2 group"
-                  >
-                    {showWelcomeExpanded ? 'Read Less' : 'Read More'}
-                    <ChevronDown
-                      className={`w-4 h-4 transition-transform duration-300 ${showWelcomeExpanded ? 'rotate-180' : ''
-                      }`}
-                  />
-                </button>
-                </div>
 
                 {/* Mobile-only Pre-YTTC Section */}
                 <div className="mb-10 p-6 rounded-2xl bg-primary/10 border-2 border-primary/20 lg:hidden group shadow-sm text-left">
@@ -1331,8 +1295,7 @@ export default function Course100Hour({ initialBatches, syllabusSlot }: { initia
                   >
                     <p className="pt-6">
                       Become a part of this transformative once in a lifetime experience in the
-                      mesmerizing beauty of Bali. This holistic program prepares you to become a
-                      professional yoga teacher having expertise, skills, and confidence. Many students complete their first 100 hours with us and later continue on to complete their full <Link href="/200-hour-yoga-teacher-training-in-bali" className="text-primary font-semibold underline hover:text-primary/80">200 hour yoga teacher training in Bali</Link>.
+                      mesmerizing beauty of Bali. Students receive a foundational 100-Hour Certificate of Completion, and many later return to complete their full <Link href="/200-hour-yoga-teacher-training-in-bali" className="text-primary font-semibold underline hover:text-primary/80">200 hour yoga teacher training in Bali</Link>.
                     </p>
                   </div>
 
@@ -1490,7 +1453,7 @@ export default function Course100Hour({ initialBatches, syllabusSlot }: { initia
                 {[
                   {
                     title: "Global Certification",
-                    desc: "Yoga Alliance Certification to start your career anywhere.",
+                    desc: "100-Hour Certificate of Completion from YogaGarhi (Yoga Alliance RYS 200). These hours can count toward your 200-Hour training at YogaGarhi.",
                     icon: Award
                   },
                   {
@@ -1641,16 +1604,12 @@ export default function Course100Hour({ initialBatches, syllabusSlot }: { initia
 
               {/* Description */}
               <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-                Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
-                you will receive an internationally recognized certification, allowing you to become a
-                <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                This certification opens doors for you to teach yoga anywhere in the world.
+                Upon completing this course, you will receive a <span className="text-white font-medium">100-Hour Certificate of Completion</span> issued by YogaGarhi, a Yoga Alliance Registered Yoga School (RYS 200). These hours can count toward your 200-Hour training at YogaGarhi.
               </p>
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                                <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRyt200} alt="RYT 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                <Image src={yaRys200} alt="Yoga Alliance RYS 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
               </div>
 
               {/* Full Certification Banner */}
@@ -4038,7 +3997,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-20">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Sachin Ji’s Research on Personalized Yoga and Prakriti
+                Yogacharya Sachin (Sachin Ji)’s Research on Personalized Yoga and Prakriti
               </h2>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />

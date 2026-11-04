@@ -1322,7 +1322,9 @@
         }
       ]
     },
-    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
+    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India",
+    "whatYouWillReceiveHeading": "Apa yang Akan Anda Dapatkan dalam Pelatihan Ini",
+    "whatYouWillReceiveSub": "Manfaat utama, pengalaman mendalam, dan nilai seumur hidup dalam perjalanan 200 jam Anda."
   },
   "whyChoose": {
     "heading": "KEISTIMEWAAN YOGAGARHI",
@@ -1492,14 +1494,14 @@
       "goodieBagSub": "Perlengkapan yoga"
     },
     "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
-    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
-    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
+    "storyP1": "Pelatihan Guru Yoga 100 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP2": "Selama 12 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
       "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
-      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
+      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 100 jam kami:",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
       "p1Desc": "Jumlah siswa terbatas memastikan arahan personal, koreksi postur langsung, dan perhatian penuh dari guru.",
@@ -1512,7 +1514,7 @@
       "p4Title": "Mengulang Kursus Gratis Seumur Hidup",
       "p4Highlight": "Kembali Tanpa Biaya",
       "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
-      "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
+      "pkgBadge": "Paket Residensial (12 Days / 11 Nights) & Opsi Hanya Biaya Kursus",
       "saveEarlyBird": "Hemat $300 Diskon Early Bird",
       "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
       "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
@@ -1521,14 +1523,14 @@
     },
     "hoursStructure": {
       "badge": "Jam Pelatihan",
-      "heading": "Struktur Jam Belajar 200 Jam",
+      "heading": "Struktur Jam Belajar 100 Jam",
       "sub": "Pembagian seimbang antara jam tatap muka langsung, penjajaran praktik, dan studi mandiri sesuai ketentuan Yoga Alliance.",
       "contactHours": "Jam Tatap Muka",
       "contactHoursDesc": "Instruksi langsung bersama guru utama dalam asana, penjajaran, anatomi, dan filosofi.",
       "selfStudy": "Studi Mandiri & Praktik Mengajar",
       "selfStudyDesc": "Bacaan terarah, jurnal, praktik bersama rekan, dan perancangan sekuens kelas.",
       "totalCert": "Total Sertifikasi",
-      "totalCertDesc": "Memenuhi dan melampaui standar Yoga Alliance RYT 200.",
+      "totalCertDesc": "Memenuhi dan melampaui standar Yoga Alliance RYS 200 (100 hours).",
       "hoursUnit": "Jam"
     },
     "syllabus": {
@@ -1587,9 +1589,9 @@
     "inclusions": {
       "heading": "Apa yang Termasuk dalam Pelatihan Anda",
       "sub": "Semua fasilitas disiapkan untuk memastikan masa tinggal yang tenang dan transformatif.",
-      "incAccom": "Akomodasi ashram selama 23 malam",
+      "incAccom": "Akomodasi ashram selama 11 malam",
       "incMeals": "3 kali makan bergizi sattvik (vegetarian/vegan) segar setiap hari",
-      "incCert": "Sertifikat Yoga Alliance RYT 200 setelah kelulusan",
+      "incCert": "Sertifikat Kelulusan 100 Jam dari YogaGarhi (Yoga Alliance RYS 200). Jam belajar ini dapat dihitung untuk pelatihan 200 Jam Anda di YogaGarhi.",
       "incManuals": "Buku panduan kursus resmi, buku catatan, dan bahan ajar",
       "incKit": "Matras yoga dan alat peraga latihan disediakan di ashram",
       "incExcursions": "Ekskursi budaya sakral (pura tirta empul, sawah terasering, tari Bali)",
@@ -1628,8 +1630,9 @@
     "ethics": {
       "codeOfConduct": "Kode Etik",
       "refundCancellation": "Pengembalian Dana & Pembatalan",
-      "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
-      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+      "ryt200Title": "Sertifikat Kelulusan 100 Jam",
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance",
+      "meetsStandards": "Diterbitkan oleh YogaGarhi, Sekolah Yoga Terdaftar di Yoga Alliance (RYS 200)"
     },
     "faqsHeading": "Pertanyaan yang Sering Diajukan",
     "faqs": [
@@ -2160,7 +2163,7 @@
       "level": "Tingkat",
       "levelVal": "Lanjutan (memerlukan RYT 200)",
       "certification": "Sertifikasi",
-      "certificationVal": "Sertifikasi Yoga Alliance RYT 500",
+      "certificationVal": "Sertifikat Kelulusan 300 Jam dari YogaGarhi",
       "startingFrom": "$2,499 USD",
       "startingFromVal": "$999 USD",
       "save": "Hemat",
@@ -2177,14 +2180,14 @@
       "goodieBagSub": "Perlengkapan yoga"
     },
     "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
-    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
-    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
+    "storyP1": "Pelatihan Guru Yoga 300 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP2": "Selama 28 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
       "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
-      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
+      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 300 jam kami:",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
       "p1Desc": "Jumlah siswa terbatas memastikan arahan personal, koreksi postur langsung, dan perhatian penuh dari guru.",
@@ -2197,7 +2200,7 @@
       "p4Title": "Mengulang Kursus Gratis Seumur Hidup",
       "p4Highlight": "Kembali Tanpa Biaya",
       "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
-      "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
+      "pkgBadge": "Paket Residensial (28 Days / 27 Nights) & Opsi Hanya Biaya Kursus",
       "saveEarlyBird": "Hemat $300 Diskon Early Bird",
       "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
       "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
@@ -2206,14 +2209,14 @@
     },
     "hoursStructure": {
       "badge": "Jam Pelatihan",
-      "heading": "Struktur Jam Belajar 200 Jam",
+      "heading": "Struktur Jam Belajar 300 Jam",
       "sub": "Pembagian seimbang antara jam tatap muka langsung, penjajaran praktik, dan studi mandiri sesuai ketentuan Yoga Alliance.",
       "contactHours": "Jam Tatap Muka",
       "contactHoursDesc": "Instruksi langsung bersama guru utama dalam asana, penjajaran, anatomi, dan filosofi.",
       "selfStudy": "Studi Mandiri & Praktik Mengajar",
       "selfStudyDesc": "Bacaan terarah, jurnal, praktik bersama rekan, dan perancangan sekuens kelas.",
       "totalCert": "Total Sertifikasi",
-      "totalCertDesc": "Memenuhi dan melampaui standar Yoga Alliance RYT 200.",
+      "totalCertDesc": "Sertifikat Kelulusan 300 Jam dari YogaGarhi (300 hours).",
       "hoursUnit": "Jam"
     },
     "syllabus": {
@@ -2272,9 +2275,9 @@
     "inclusions": {
       "heading": "Apa yang Termasuk dalam Pelatihan Anda",
       "sub": "Semua fasilitas disiapkan untuk memastikan masa tinggal yang tenang dan transformatif.",
-      "incAccom": "Akomodasi ashram selama 23 malam",
+      "incAccom": "Akomodasi ashram selama 27 malam",
       "incMeals": "3 kali makan bergizi sattvik (vegetarian/vegan) segar setiap hari",
-      "incCert": "Sertifikat Yoga Alliance RYT 200 setelah kelulusan",
+      "incCert": "Sertifikat Kelulusan 300 Jam dari YogaGarhi",
       "incManuals": "Buku panduan kursus resmi, buku catatan, dan bahan ajar",
       "incKit": "Matras yoga dan alat peraga latihan disediakan di ashram",
       "incExcursions": "Ekskursi budaya sakral (pura tirta empul, sawah terasering, tari Bali)",

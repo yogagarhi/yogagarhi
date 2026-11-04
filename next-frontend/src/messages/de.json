@@ -1322,7 +1322,9 @@
         }
       ]
     },
-    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
+    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India",
+    "whatYouWillReceiveHeading": "Was Sie in dieser Ausbildung erhalten",
+    "whatYouWillReceiveSub": "Wichtige Vorteile, Erfahrungen und lebenslange Werte Ihrer 200-Stunden-Reise."
   },
   "whyChoose": {
     "heading": "DER YOGAGARHI-UNTERSCHIED",
@@ -1492,14 +1494,14 @@
       "goodieBagSub": "Yoga-Grundausstattung"
     },
     "storyTitle": "Verwandle deine Praxis in gelebte Weisheit",
-    "storyP1": "Unsere 200-Stunden Yogalehrer-Ausbildung in Bali ist ein ganzheitliches Intensivprogramm für Suchende, die echte Tiefe statt oberflächlicher Fitnessübungen suchen. Gelegen im ruhigen Dorf Gianyar, nur 15 Minuten von Ubud entfernt, bietet YogaGarhi ein friedvolles Refugium abseits des Massentourismus.",
-    "storyP2": "Über 24 Tage hinweg studierst du klassisches Hatha, Vinyasa Flow, die Ashtanga Primary Series und Iyengar-Ausrichtung gemeinsam mit angewandter Anatomie, Philosophie, Pranayama und Meditation. Bei strikt 8–10 Teilnehmern pro Gruppe gewährleisten unsere erfahrenen Himalaya-Lehrer intensive persönliche Betreuung.",
+    "storyP1": "Unsere 100-Stunden Yogalehrer-Ausbildung in Bali ist ein ganzheitliches Intensivprogramm für Suchende, die echte Tiefe statt oberflächlicher Fitnessübungen suchen. Gelegen im ruhigen Dorf Gianyar, nur 15 Minuten von Ubud entfernt, bietet YogaGarhi ein friedvolles Refugium abseits des Massentourismus.",
+    "storyP2": "Über 12 Tage hinweg studierst du klassisches Hatha, Vinyasa Flow, die Ashtanga Primary Series und Iyengar-Ausrichtung gemeinsam mit angewandter Anatomie, Philosophie, Pranayama und Meditation. Bei strikt 8–10 Teilnehmern pro Gruppe gewährleisten unsere erfahrenen Himalaya-Lehrer intensive persönliche Betreuung.",
     "watchVideoStories": "Erfahrungsberichte und Videos von Absolventen ansehen",
     "videoBannerTitle": "Buche ein Gespräch. Sieh die Schule. Sieh dein Zimmer. Sieh deine Yogahalle.",
     "whyYogaGarhiBox": {
       "badge": "Warum YogaGarhi wählen",
       "heading": "Authentische Himalaya-Tradition in einem intimen Refugium auf Bali",
-      "sub": "Wir widmen uns aufrichtig Praktizierenden statt überfüllter Massenkurse. Das zeichnet unsere 200-Stunden-Ausbildung aus:",
+      "sub": "Wir widmen uns aufrichtig Praktizierenden statt überfüllter Massenkurse. Das zeichnet unsere 100-Stunden-Ausbildung aus:",
       "p1Title": "Maximal 8–10 Schüler pro Gruppe",
       "p1Highlight": "Individueller Fokus",
       "p1Desc": "Kleine Gruppen garantieren persönliche Anleitung, individuelle physische Korrekturen und direkte Zuwendung.",
@@ -1512,7 +1514,7 @@
       "p4Title": "Lebenslange gebührenfreie Kurswiederholung",
       "p4Highlight": "Kostenfreie Rückkehr",
       "p4Desc": "Nimm jederzeit gebührenfrei an zukünftigen YogaGarhi-Ausbildungen teil, um dein Wissen aufzufrischen oder zu assistieren.",
-      "pkgBadge": "Wohnpakete (24 Tage / 23 Nächte) & Option ohne Unterkunft",
+      "pkgBadge": "Wohnpakete (12 Days / 11 Nights) & Option ohne Unterkunft",
       "saveEarlyBird": "Spare $300 Frühbucherrabatt",
       "tuitionFrom": "Unterricht ab $999 USD | Wohnpakete ab $1,750 USD",
       "breakdown": "Nur Unterricht: $999 • Dreibettzimmer: $1,750 • Doppelzimmer: $1,899 • Einzelzimmer: $2,499",
@@ -1521,14 +1523,14 @@
     },
     "hoursStructure": {
       "badge": "Ausbildungsstunden",
-      "heading": "Struktur der 200 Unterrichtsstunden",
+      "heading": "Struktur der 100 Unterrichtsstunden",
       "sub": "Ausgewogene Verteilung zwischen direktem Kontaktunterricht, praktischer Ausrichtung und Selbststudium gemäß Yoga Alliance Richtlinien.",
       "contactHours": "Kontaktstunden",
       "contactHoursDesc": "Direkter Unterricht mit Hauptlehrern in Asana, Ausrichtung, Anatomie und Philosophie.",
       "selfStudy": "Selbststudium & Lehrpraxis",
       "selfStudyDesc": "Geführte Lektüre, Journaling, gegenseitiges Unterrichten und Sequenzierungsaufgaben.",
       "totalCert": "Gesamtzertifizierung",
-      "totalCertDesc": "Erfüllt und übertrifft die Standards der Yoga Alliance RYT 200.",
+      "totalCertDesc": "Erfüllt und übertrifft die Standards der Yoga Alliance RYS 200 (100 hours).",
       "hoursUnit": "Stunden"
     },
     "syllabus": {
@@ -1587,9 +1589,9 @@
     "inclusions": {
       "heading": "Was in deiner Ausbildung enthalten ist",
       "sub": "Alles bereitgestellt für einen sorgenfreien, tiefgreifenden Aufenthalt.",
-      "incAccom": "23 Nächte Unterkunft im Ashram",
+      "incAccom": "11 Nächte Unterkunft im Ashram",
       "incMeals": "3 täglich frisch zubereitete sattvische Mahlzeiten (vegetarisch/vegan)",
-      "incCert": "Yoga Alliance RYT 200 Zertifikat nach erfolgreichem Abschluss",
+      "incCert": "100-Stunden-Teilnahmezertifikat von YogaGarhi (Yoga Alliance RYS 200). Diese Stunden können auf Ihre 200-Stunden-Ausbildung bei YogaGarhi angerechnet werden.",
       "incManuals": "Offizielle Ausbildungshandbücher, Notizbücher und Studienunterlagen",
       "incKit": "Yogamatte und alle Übungshilfsmittel vor Ort bereitgestellt",
       "incExcursions": "Kulturelle Ausflüge (Wassertempel, Reisfelder, balinesischer Tanz)",
@@ -1628,8 +1630,9 @@
     "ethics": {
       "codeOfConduct": "Verhaltenskodex",
       "refundCancellation": "Rückerstattung & Stornierung",
-      "ryt200Title": "Registrierter Yogalehrer (RYT 200)",
-      "viewRegistry": "Schulverzeichnis der Yoga Alliance ansehen"
+      "ryt200Title": "100-Stunden-Teilnahmezertifikat",
+      "viewRegistry": "Schulverzeichnis der Yoga Alliance ansehen",
+      "meetsStandards": "Ausgestellt von YogaGarhi, einer von der Yoga Alliance registrierten Yogaschule (RYS 200)"
     },
     "faqsHeading": "Häufig gestellte Fragen",
     "faqs": [
@@ -2160,7 +2163,7 @@
       "level": "Niveau",
       "levelVal": "Fortgeschritten (RYT 200 erforderlich)",
       "certification": "Zertifizierung",
-      "certificationVal": "Yoga Alliance RYT 500 Zertifizierung",
+      "certificationVal": "300-Stunden-Teilnahmezertifikat von YogaGarhi",
       "startingFrom": "$2,499 USD",
       "startingFromVal": "$999 USD",
       "save": "Sparen",
@@ -2177,14 +2180,14 @@
       "goodieBagSub": "Yoga-Grundausstattung"
     },
     "storyTitle": "Verwandle deine Praxis in gelebte Weisheit",
-    "storyP1": "Unsere 200-Stunden Yogalehrer-Ausbildung in Bali ist ein ganzheitliches Intensivprogramm für Suchende, die echte Tiefe statt oberflächlicher Fitnessübungen suchen. Gelegen im ruhigen Dorf Gianyar, nur 15 Minuten von Ubud entfernt, bietet YogaGarhi ein friedvolles Refugium abseits des Massentourismus.",
-    "storyP2": "Über 24 Tage hinweg studierst du klassisches Hatha, Vinyasa Flow, die Ashtanga Primary Series und Iyengar-Ausrichtung gemeinsam mit angewandter Anatomie, Philosophie, Pranayama und Meditation. Bei strikt 8–10 Teilnehmern pro Gruppe gewährleisten unsere erfahrenen Himalaya-Lehrer intensive persönliche Betreuung.",
+    "storyP1": "Unsere 300-Stunden Yogalehrer-Ausbildung in Bali ist ein ganzheitliches Intensivprogramm für Suchende, die echte Tiefe statt oberflächlicher Fitnessübungen suchen. Gelegen im ruhigen Dorf Gianyar, nur 15 Minuten von Ubud entfernt, bietet YogaGarhi ein friedvolles Refugium abseits des Massentourismus.",
+    "storyP2": "Über 28 Tage hinweg studierst du klassisches Hatha, Vinyasa Flow, die Ashtanga Primary Series und Iyengar-Ausrichtung gemeinsam mit angewandter Anatomie, Philosophie, Pranayama und Meditation. Bei strikt 8–10 Teilnehmern pro Gruppe gewährleisten unsere erfahrenen Himalaya-Lehrer intensive persönliche Betreuung.",
     "watchVideoStories": "Erfahrungsberichte und Videos von Absolventen ansehen",
     "videoBannerTitle": "Buche ein Gespräch. Sieh die Schule. Sieh dein Zimmer. Sieh deine Yogahalle.",
     "whyYogaGarhiBox": {
       "badge": "Warum YogaGarhi wählen",
       "heading": "Authentische Himalaya-Tradition in einem intimen Refugium auf Bali",
-      "sub": "Wir widmen uns aufrichtig Praktizierenden statt überfüllter Massenkurse. Das zeichnet unsere 200-Stunden-Ausbildung aus:",
+      "sub": "Wir widmen uns aufrichtig Praktizierenden statt überfüllter Massenkurse. Das zeichnet unsere 300-Stunden-Ausbildung aus:",
       "p1Title": "Maximal 8–10 Schüler pro Gruppe",
       "p1Highlight": "Individueller Fokus",
       "p1Desc": "Kleine Gruppen garantieren persönliche Anleitung, individuelle physische Korrekturen und direkte Zuwendung.",
@@ -2197,7 +2200,7 @@
       "p4Title": "Lebenslange gebührenfreie Kurswiederholung",
       "p4Highlight": "Kostenfreie Rückkehr",
       "p4Desc": "Nimm jederzeit gebührenfrei an zukünftigen YogaGarhi-Ausbildungen teil, um dein Wissen aufzufrischen oder zu assistieren.",
-      "pkgBadge": "Wohnpakete (24 Tage / 23 Nächte) & Option ohne Unterkunft",
+      "pkgBadge": "Wohnpakete (28 Days / 27 Nights) & Option ohne Unterkunft",
       "saveEarlyBird": "Spare $300 Frühbucherrabatt",
       "tuitionFrom": "Unterricht ab $999 USD | Wohnpakete ab $1,750 USD",
       "breakdown": "Nur Unterricht: $999 • Dreibettzimmer: $1,750 • Doppelzimmer: $1,899 • Einzelzimmer: $2,499",
@@ -2206,14 +2209,14 @@
     },
     "hoursStructure": {
       "badge": "Ausbildungsstunden",
-      "heading": "Struktur der 200 Unterrichtsstunden",
+      "heading": "Struktur der 300 Unterrichtsstunden",
       "sub": "Ausgewogene Verteilung zwischen direktem Kontaktunterricht, praktischer Ausrichtung und Selbststudium gemäß Yoga Alliance Richtlinien.",
       "contactHours": "Kontaktstunden",
       "contactHoursDesc": "Direkter Unterricht mit Hauptlehrern in Asana, Ausrichtung, Anatomie und Philosophie.",
       "selfStudy": "Selbststudium & Lehrpraxis",
       "selfStudyDesc": "Geführte Lektüre, Journaling, gegenseitiges Unterrichten und Sequenzierungsaufgaben.",
       "totalCert": "Gesamtzertifizierung",
-      "totalCertDesc": "Erfüllt und übertrifft die Standards der Yoga Alliance RYT 200.",
+      "totalCertDesc": "300-Stunden-Teilnahmezertifikat von YogaGarhi (300 hours).",
       "hoursUnit": "Stunden"
     },
     "syllabus": {
@@ -2272,9 +2275,9 @@
     "inclusions": {
       "heading": "Was in deiner Ausbildung enthalten ist",
       "sub": "Alles bereitgestellt für einen sorgenfreien, tiefgreifenden Aufenthalt.",
-      "incAccom": "23 Nächte Unterkunft im Ashram",
+      "incAccom": "27 Nächte Unterkunft im Ashram",
       "incMeals": "3 täglich frisch zubereitete sattvische Mahlzeiten (vegetarisch/vegan)",
-      "incCert": "Yoga Alliance RYT 200 Zertifikat nach erfolgreichem Abschluss",
+      "incCert": "300-Stunden-Teilnahmezertifikat von YogaGarhi",
       "incManuals": "Offizielle Ausbildungshandbücher, Notizbücher und Studienunterlagen",
       "incKit": "Yogamatte und alle Übungshilfsmittel vor Ort bereitgestellt",
       "incExcursions": "Kulturelle Ausflüge (Wassertempel, Reisfelder, balinesischer Tanz)",

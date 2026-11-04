@@ -1322,7 +1322,9 @@
         }
       ]
     },
-    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
+    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India",
+    "whatYouWillReceiveHeading": "What You Will Receive in This Training",
+    "whatYouWillReceiveSub": "Key benefits, immersions, and lifelong experiences included in your 200-hour journey."
   },
   "whyChoose": {
     "heading": "THE YOGAGARHI DIFFERENCE",
@@ -1492,14 +1494,14 @@
       "goodieBagSub": "Yoga Essentials"
     },
     "storyTitle": "Transform Your Practice into Living Wisdom",
-    "storyP1": "Our 200 Hour Yoga Teacher Training in Bali is a residential, full immersion designed for practitioners seeking authentic depth rather than mechanical exercises. Located in the peaceful village of Gianyar, just 15 minutes from Ubud, YogaGarhi offers a serene sanctuary away from crowded tourist centers.",
-    "storyP2": "Over 24 days, you will study Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment alongside applied anatomy, philosophy, pranayama, and meditation. With cohorts strictly capped at 8–10 students, our experienced Himalayan masters provide intimate, personalized mentorship for every participant.",
+    "storyP1": "Our 100 Hour Yoga Teacher Training in Bali is a residential, full immersion designed for practitioners seeking authentic depth rather than mechanical exercises. Located in the peaceful village of Gianyar, just 15 minutes from Ubud, YogaGarhi offers a serene sanctuary away from crowded tourist centers.",
+    "storyP2": "Over 12 days, you will study Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment alongside applied anatomy, philosophy, pranayama, and meditation. With cohorts strictly capped at 8–10 students, our experienced Himalayan masters provide intimate, personalized mentorship for every participant.",
     "watchVideoStories": "Watch Student Video Stories & Testimonials",
     "videoBannerTitle": "Book a Call. See the School. See Your Room. See Your Yoga Hall.",
     "whyYogaGarhiBox": {
       "badge": "Why Choose YogaGarhi",
       "heading": "Authentic Himalayan Lineage in an Intimate Bali Sanctuary",
-      "sub": "We focus on sincere practitioners rather than crowded factory classrooms. Here is what sets our 200-hour training apart:",
+      "sub": "We focus on sincere practitioners rather than crowded factory classrooms. Here is what sets our 100-hour training apart:",
       "p1Title": "8–10 Students Max Per Batch",
       "p1Highlight": "Personalized Focus",
       "p1Desc": "Intimate class sizes guarantee personal guidance, customized hands-on adjustments, and individual teacher attention.",
@@ -1512,7 +1514,7 @@
       "p4Title": "Lifetime Free Course Repeat",
       "p4Highlight": "Tuition-Free Return",
       "p4Desc": "Return to future YogaGarhi teacher trainings anytime tuition-free to refresh your knowledge and assist as an apprentice.",
-      "pkgBadge": "Residential Packages (24 Days / 23 Nights) & Tuition-Only Option",
+      "pkgBadge": "Residential Packages (12 Days / 11 Nights) & Tuition-Only Option",
       "saveEarlyBird": "Save $300 Early-Bird",
       "tuitionFrom": "Tuition from $999 USD | Residential from $1,750 USD",
       "breakdown": "Tuition Only: $999 • Triple Sharing: $1,750 • Double Sharing: $1,899 • Private Room: $2,499",
@@ -1521,14 +1523,14 @@
     },
     "hoursStructure": {
       "badge": "Training Hours",
-      "heading": "How the 200 Hours Are Structured",
+      "heading": "How the 100 Hours Are Structured",
       "sub": "A comprehensive distribution between direct contact hours, practical alignment, and reflective study in accordance with Yoga Alliance standards.",
       "contactHours": "Contact Hours",
       "contactHoursDesc": "Direct instruction with lead teachers in asana, alignment, anatomy, and philosophy.",
       "selfStudy": "Self-Study & Practicum",
       "selfStudyDesc": "Guided readings, journaling, peer practice, and class sequencing assignments.",
       "totalCert": "Total Certification",
-      "totalCertDesc": "Meets and exceeds Yoga Alliance RYT 200 standards.",
+      "totalCertDesc": "Meets and exceeds Yoga Alliance RYS 200 (100 hours) standards.",
       "hoursUnit": "Hours"
     },
     "syllabus": {
@@ -1587,9 +1589,9 @@
     "inclusions": {
       "heading": "What's Included in Your Training",
       "sub": "Everything provided to ensure a worry-free, deeply transformative stay.",
-      "incAccom": "23 Nights residential accommodation",
+      "incAccom": "11 Nights residential accommodation",
       "incMeals": "3 Freshly prepared sattvic vegetarian/vegan meals daily",
-      "incCert": "Yoga Alliance RYT 200 Certificate upon graduation",
+      "incCert": "100-Hour Certificate of Completion from YogaGarhi (Yoga Alliance RYS 200). These hours can count toward your 200-Hour training at YogaGarhi.",
       "incManuals": "Official course manuals, notebooks, and study materials",
       "incKit": "Yoga mat and practice props provided",
       "incExcursions": "Sacred cultural excursions (water temple, rice fields, Balinese dance)",
@@ -1628,8 +1630,9 @@
     "ethics": {
       "codeOfConduct": "Code of Conduct",
       "refundCancellation": "Refund & Cancellation",
-      "ryt200Title": "Registered Yoga Teacher (RYT 200)",
-      "viewRegistry": "View Yoga Alliance School Registry"
+      "ryt200Title": "100-Hour Certificate of Completion",
+      "viewRegistry": "View Yoga Alliance School Registry",
+      "meetsStandards": "Issued by YogaGarhi, a Yoga Alliance Registered Yoga School (RYS 200)"
     },
     "faqsHeading": "Frequently Asked Questions",
     "faqs": [
@@ -2146,7 +2149,7 @@
     "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
   },
   "course300": {
-    "metaTitle": "300 Hour Yoga Teacher Training Bali – Advanced RYT 500 Path | YogaGarhi",
+    "metaTitle": "300 Hour Yoga Teacher Training Bali – Advanced Immersion | YogaGarhi",
     "metaDesc": "28-day advanced 300-hour training near Ubud, Bali for RYT 200 graduates. Deepen teaching, philosophy & therapeutic yoga. Small groups of 8–10.",
     "heroTitle": "300 Hour Yoga Teacher Training Bali",
     "heroSub": "Take your teaching and personal practice to the highest level. 28-day advanced residential training in Gianyar, Bali for RYT 200 graduates.",
@@ -2158,9 +2161,9 @@
       "style": "Style",
       "styleVal": "Multi-Style Yoga",
       "level": "Level",
-      "levelVal": "Advanced",
+      "levelVal": "Advanced (Prerequisite: RYT 200)",
       "certification": "Certification",
-      "certificationVal": "RYT 500 Certification",
+      "certificationVal": "300-Hour Certificate of Completion from YogaGarhi",
       "startingFrom": "$2,499 USD",
       "startingFromVal": "$999 USD",
       "save": "Save",
@@ -2177,14 +2180,14 @@
       "goodieBagSub": "Yoga Essentials"
     },
     "storyTitle": "Transform Your Practice into Living Wisdom",
-    "storyP1": "Our 200 Hour Yoga Teacher Training in Bali is a residential, full immersion designed for practitioners seeking authentic depth rather than mechanical exercises. Located in the peaceful village of Gianyar, just 15 minutes from Ubud, YogaGarhi offers a serene sanctuary away from crowded tourist centers.",
-    "storyP2": "Over 24 days, you will study Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment alongside applied anatomy, philosophy, pranayama, and meditation. With cohorts strictly capped at 8–10 students, our experienced Himalayan masters provide intimate, personalized mentorship for every participant.",
+    "storyP1": "Our 300 Hour Yoga Teacher Training in Bali is a residential, full immersion designed for practitioners seeking authentic depth rather than mechanical exercises. Located in the peaceful village of Gianyar, just 15 minutes from Ubud, YogaGarhi offers a serene sanctuary away from crowded tourist centers.",
+    "storyP2": "Over 28 days, you will study Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment alongside applied anatomy, philosophy, pranayama, and meditation. With cohorts strictly capped at 8–10 students, our experienced Himalayan masters provide intimate, personalized mentorship for every participant.",
     "watchVideoStories": "Watch Student Video Stories & Testimonials",
     "videoBannerTitle": "Book a Call. See the School. See Your Room. See Your Yoga Hall.",
     "whyYogaGarhiBox": {
       "badge": "Why Choose YogaGarhi",
       "heading": "Authentic Himalayan Lineage in an Intimate Bali Sanctuary",
-      "sub": "We focus on sincere practitioners rather than crowded factory classrooms. Here is what sets our 200-hour training apart:",
+      "sub": "We focus on sincere practitioners rather than crowded factory classrooms. Here is what sets our 300-hour training apart:",
       "p1Title": "8–10 Students Max Per Batch",
       "p1Highlight": "Personalized Focus",
       "p1Desc": "Intimate class sizes guarantee personal guidance, customized hands-on adjustments, and individual teacher attention.",
@@ -2197,7 +2200,7 @@
       "p4Title": "Lifetime Free Course Repeat",
       "p4Highlight": "Tuition-Free Return",
       "p4Desc": "Return to future YogaGarhi teacher trainings anytime tuition-free to refresh your knowledge and assist as an apprentice.",
-      "pkgBadge": "Residential Packages (24 Days / 23 Nights) & Tuition-Only Option",
+      "pkgBadge": "Residential Packages (28 Days / 27 Nights) & Tuition-Only Option",
       "saveEarlyBird": "Save $300 Early-Bird",
       "tuitionFrom": "Tuition from $999 USD | Residential from $1,750 USD",
       "breakdown": "Tuition Only: $999 • Triple Sharing: $1,750 • Double Sharing: $1,899 • Private Room: $2,499",
@@ -2206,14 +2209,14 @@
     },
     "hoursStructure": {
       "badge": "Training Hours",
-      "heading": "How the 200 Hours Are Structured",
+      "heading": "How the 300 Hours Are Structured",
       "sub": "A comprehensive distribution between direct contact hours, practical alignment, and reflective study in accordance with Yoga Alliance standards.",
       "contactHours": "Contact Hours",
       "contactHoursDesc": "Direct instruction with lead teachers in asana, alignment, anatomy, and philosophy.",
       "selfStudy": "Self-Study & Practicum",
       "selfStudyDesc": "Guided readings, journaling, peer practice, and class sequencing assignments.",
       "totalCert": "Total Certification",
-      "totalCertDesc": "Meets and exceeds Yoga Alliance RYT 200 standards.",
+      "totalCertDesc": "300-Hour Certificate of Completion from YogaGarhi (300 hours).",
       "hoursUnit": "Hours"
     },
     "syllabus": {
@@ -2272,9 +2275,9 @@
     "inclusions": {
       "heading": "What's Included in Your Training",
       "sub": "Everything provided to ensure a worry-free, deeply transformative stay.",
-      "incAccom": "23 Nights residential accommodation",
+      "incAccom": "27 Nights residential accommodation",
       "incMeals": "3 Freshly prepared sattvic vegetarian/vegan meals daily",
-      "incCert": "Yoga Alliance RYT 200 Certificate upon graduation",
+      "incCert": "300-Hour Certificate of Completion from YogaGarhi",
       "incManuals": "Official course manuals, notebooks, and study materials",
       "incKit": "Yoga mat and practice props provided",
       "incExcursions": "Sacred cultural excursions (water temple, rice fields, Balinese dance)",

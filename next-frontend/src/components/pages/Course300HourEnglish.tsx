@@ -1240,43 +1240,7 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
                   </div>
                 </div>
 
-                <div className="space-y-6 text-muted-foreground leading-relaxed text-left mb-8">
-                  {/* First 2 paragraphs - always visible */}
-                  <p className="text-base sm:text-lg text-foreground/80 font-medium">
-                    Advance your teaching credentials towards RYT 500 through Yogagarhi's
-                    300-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
-                    of yoga and self-realization.
-                  </p>
-                  <p>
-                    Our professional course is made for both beginners and intermediate practitioners.
-                    This course covers all essential aspects of yoga, including asanas, pranayama,
-                    anatomy, and teaching methodology.
-                  </p>
 
-                  {/* Expandable content */}
-                  <div
-                    className={`overflow-hidden transition-all duration-500 ease-in-out ${showWelcomeExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                      }`}
-                  >
-                    <p className="pt-2">
-                      Become a part of this transformative once in a lifetime experience in the
-                      mesmerizing beauty of Bali. This holistic program prepares you to become a
-                      professional yoga teacher having expertise, skills, and confidence.
-                    </p>
-                  </div>
-
-                  {/* Read More / Read Less Button */}
-                  <button
-                    onClick={() => setShowWelcomeExpanded(!showWelcomeExpanded)}
-                    className="inline-flex items-center gap-2 text-primary font-medium hover:text-primary/80 transition-colors mt-2 group"
-                  >
-                    {showWelcomeExpanded ? 'Read Less' : 'Read More'}
-                    <ChevronDown
-                      className={`w-4 h-4 transition-transform duration-300 ${showWelcomeExpanded ? 'rotate-180' : ''
-                      }`}
-                  />
-                </button>
-                </div>
 
                 {/* Mobile-only Pre-YTTC Section */}
                 <div className="mb-10 p-6 rounded-2xl bg-primary/10 border-2 border-primary/20 lg:hidden group shadow-sm text-left">
@@ -1318,17 +1282,25 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
                   </Button>
                 </div>
 
-                <div className="space-y-6 text-muted-foreground leading-relaxed">
+                {/* Prerequisite & Certification Callout */}
+                <div className="mb-6 p-4 rounded-xl bg-primary/10 border border-primary/20 text-left">
+                  <p className="text-sm font-bold text-foreground mb-1">
+                    Prerequisite: completion of a 200-hour Yoga Alliance registered training (RYT 200).
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    <span className="font-semibold text-primary">Award:</span> 300-Hour Certificate of Completion from YogaGarhi.
+                  </p>
+                </div>
+
+                <div className="space-y-6 text-muted-foreground leading-relaxed text-left">
                   {/* First 2 paragraphs - always visible */}
-                  <p>
-                    Advance your teaching credentials towards RYT 500 through Yogagarhi's
+                  <p className="text-base sm:text-lg text-foreground/80 font-medium">
+                    Deepen your teaching credentials with a 300-Hour Certificate of Completion from YogaGarhi through our
                     300-Hour Yoga Teacher Training in Bali Ubud and join a life-changing journey
                     of yoga and self-realization.
                   </p>
                   <p>
-                    Our professional course is made for both beginners and intermediate practitioners.
-                    This course covers all essential aspects of yoga, including asanas, pranayama,
-                    anatomy, and teaching methodology.
+                    This advanced training is designed specifically for graduates of a 200-hour Yoga Alliance registered training (RYT 200) seeking master-level teaching credentials, advanced pranayama, and therapeutic alignment.
                   </p>
 
                   {/* Expandable content */}
@@ -1650,7 +1622,7 @@ export default function Course300Hour({ initialBatches, syllabusSlot }: { initia
                 Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
                 you will receive an internationally recognized certification, allowing you to become a
                 <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                Combined with an RYT 200 and at least 100 hours of teaching experience, this training lets you register as an RYT 500 with Yoga Alliance.
+                Upon completing this course, you will receive a 300-Hour Certificate of Completion from YogaGarhi, recognizing advanced mastery in asana, pranayama, and philosophy.
               </p>
 
               {/* Certification Badges - Real Images */}
@@ -4035,7 +4007,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-20">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Sachin Ji’s Research on Personalized Yoga and Prakriti
+                Yogacharya Sachin (Sachin Ji)’s Research on Personalized Yoga and Prakriti
               </h2>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />
