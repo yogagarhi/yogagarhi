@@ -30,7 +30,7 @@ export const RISHIKESH_FAQS_200_HOUR: FAQItem[] = [
   },
   {
     question: "What is the refund and cancellation policy?",
-    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the full balance you paid; bank fees are deducted. If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the full balance you paid; bank fees are deducted. If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins. If YogaGarhi cancels a batch, you can choose a full refund of everything you paid or move to another batch at no extra cost."
   },
   {
     question: "What is the best time of year to visit Rishikesh for yoga training?",
@@ -105,7 +105,7 @@ export const RISHIKESH_FAQS_100_HOUR: FAQItem[] = [
   },
   {
     question: "What is the refund policy?",
-    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the full balance you paid; bank fees are deducted. If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the full balance you paid; bank fees are deducted. If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins. If YogaGarhi cancels a batch, you can choose a full refund of everything you paid or move to another batch at no extra cost."
   },
   {
     question: "What is the best time of year to visit Rishikesh?",
@@ -156,7 +156,7 @@ export const RISHIKESH_FAQS_300_HOUR: FAQItem[] = [
   },
   {
     question: "What is the refund and rescheduling policy?",
-    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the full balance you paid; bank fees are deducted. If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the full balance you paid; bank fees are deducted. If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins. If YogaGarhi cancels a batch, you can choose a full refund of everything you paid or move to another batch at no extra cost."
   },
   {
     question: "What is the best time of year to take the 300-Hour training?",
