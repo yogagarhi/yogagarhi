@@ -233,7 +233,7 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
 
 // Icon Highlights Section
 const iconHighlights = [
-  { icon: Award, title: "Yoga Alliance Certified", subtitle: "RYS 200" },
+  { icon: Award, title: "Yoga Alliance Registered School (RYS 200)", subtitle: "RYS 200" },
   { icon: Leaf, title: "Multi-Style Yoga", subtitle: "Authentic Teaching" },
   { icon: Heart, title: "Prakriti-Based", subtitle: "Personalized Learning" },
   { icon: Users, title: "Small Batch", subtitle: "8-10 Students" },
@@ -372,7 +372,7 @@ const whatYouWillReceive = [
     image: apartGroupClass
   },
   {
-    title: "Yoga Alliance Certified",
+    title: "Yoga Alliance Registered School (RYS 200)",
     description: "Receive globally recognized certification. Begin teaching yoga with confidence worldwide.",
     icon: Award,
     image: apartYogaAllianceGraduates
@@ -2894,7 +2894,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
 
               {/* Main Title */}
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
-                Yoga Alliance USA CERTIFIED
+                Yoga Alliance USA Registered School (RYS 200)
               </h2>
 
               {/* Description */}
@@ -3958,7 +3958,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-20">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Sachin Ji’s Research on Personalized Yoga and Prakriti
+                Yogacharya Sachin’s Research on Personalized Yoga and Prakriti
               </h2>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />

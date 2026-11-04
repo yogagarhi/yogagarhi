@@ -27,14 +27,14 @@ export async function generateMetadata({
 
     if (locale === "en") {
         const title = "300 Hour Yoga Teacher Training in Varkala | YogaGarhi";
-        const description = "Advance your teaching with 300 hour yoga teacher training in Varkala, Kerala. Pathway to RYT 500, Ayurveda & beach yoga, E-RYT 500 faculty. Enroll now.";
+        const description = "Advance your teaching with 300 hour yoga teacher training in Varkala, Kerala. Advanced Immersion, Ayurveda & beach yoga, E-RYT 500 faculty. Enroll now.";
         return {
             metadataBase: new URL("https://www.yogagarhi.com"),
             title: {
                 absolute: title,
             },
             description,
-            keywords: ["300 hour yoga teacher training in varkala","advanced yoga teacher training kerala","ryt 500 varkala","yoga teacher training varkala"],
+            keywords: ["300 hour yoga teacher training in varkala","advanced yoga teacher training kerala","300 hour yoga varkala","yoga teacher training varkala"],
             alternates: {
                 canonical: "https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-varkala",
                 languages: getReviewedHreflang("/300-hour-yoga-teacher-training-in-varkala"),
@@ -66,7 +66,7 @@ export async function generateMetadata({
     }
 
     const title = messages.course300Varkala?.metaTitle || "300 Hour Yoga Teacher Training in Varkala | YogaGarhi";
-    const description = messages.course300Varkala?.metaDesc || "Advance your teaching with 300 hour yoga teacher training in Varkala, Kerala. Pathway to RYT 500, Ayurveda & beach yoga, E-RYT 500 faculty. Enroll now.";
+    const description = messages.course300Varkala?.metaDesc || "Advance your teaching with 300 hour yoga teacher training in Varkala, Kerala. Advanced Immersion, Ayurveda & beach yoga, E-RYT 500 faculty. Enroll now.";
     const url = `https://www.yogagarhi.com/${locale}/300-hour-yoga-teacher-training-in-varkala`;
 
     return applyQualityGate({
@@ -75,7 +75,7 @@ export async function generateMetadata({
             absolute: title,
         },
         description,
-        keywords: ["300 hour yoga teacher training in varkala","advanced yoga teacher training kerala","ryt 500 varkala","yoga teacher training varkala"],
+        keywords: ["300 hour yoga teacher training in varkala","advanced yoga teacher training kerala","300 hour yoga varkala","yoga teacher training varkala"],
         alternates: {
             canonical: url,
             languages: getReviewedHreflang("/300-hour-yoga-teacher-training-in-varkala"),
@@ -199,7 +199,7 @@ export default async function Page({
             ? course.welcomeText
             : messages.course300Varkala?.metaDesc || course.welcomeText,
         "inLanguage": "en",
-        "educationalCredentialAwarded": "RYT 500 Pathway Yoga Alliance Certification",
+        "educationalCredentialAwarded": "300-Hour Certificate of Completion from YogaGarhi",
         "provider": {
             "@type": "Organization",
             "name": "YogaGarhi",

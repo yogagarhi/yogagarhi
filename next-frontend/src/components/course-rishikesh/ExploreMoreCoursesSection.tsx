@@ -56,7 +56,7 @@ export default function ExploreMoreCoursesSection({ currentCourse = "200-rishike
       location: "Tapovan, Rishikesh, India",
       duration: "28 Days (27 Nights)",
       price: "$1,099",
-      certification: "RYT 500 Pathway",
+      certification: "300-Hour Certificate",
       image: warriorSequence,
       href: "/300-hour-yoga-teacher-training-in-rishikesh",
       description: "Advanced master-level training for 200-hour certified teachers. Deepen into therapeutic sequencing, advanced asanas, and classical texts."

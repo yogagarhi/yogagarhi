@@ -129,7 +129,7 @@ export default async function Page({
         "name": "Is YogaGarhi accredited with Yoga Alliance?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, YogaGarhi is a Registered Yoga School (RYS 200, RYS 300, RYS 500) with Yoga Alliance. Upon successful completion of our courses, you receive an internationally recognized certificate to register as an RYT."
+          "text": "Yes, YogaGarhi is a Registered Yoga School (RYS 200) with Yoga Alliance. Upon successful completion of our courses, you receive an internationally recognized certificate to register as an RYT."
         }
       },
       {

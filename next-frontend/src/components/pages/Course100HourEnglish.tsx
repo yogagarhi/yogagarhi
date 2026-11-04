@@ -3997,7 +3997,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-20">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Yogacharya Sachin (Sachin Ji)’s Research on Personalized Yoga and Prakriti
+                Yogacharya Sachin’s Research on Personalized Yoga and Prakriti
               </h2>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />

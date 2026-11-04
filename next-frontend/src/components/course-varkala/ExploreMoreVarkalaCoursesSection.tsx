@@ -56,7 +56,7 @@ export default function ExploreMoreVarkalaCoursesSection({ currentCourse = "200-
       location: "North Cliff, Varkala, Kerala",
       duration: "28 Days (27 Nights)",
       price: "$1,099",
-      certification: "RYT 500 Pathway",
+      certification: "300-Hour Certificate",
       image: varkalaAyurvedaHerbs,
       href: "/300-hour-yoga-teacher-training-in-varkala",
       description: "Advanced master-level immersion for 200-hour certified teachers. Deepen into therapeutic sequencing, Panchakarma, and advanced sadhana."

@@ -3152,7 +3152,7 @@ export default function CoursePageTemplate({
                     Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
                     you will receive an internationally recognized certification, allowing you to become a
                     <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                    {courseKey.includes("300") ? " Combined with an RYT 200 and at least 100 hours of teaching experience, this training lets you register as an RYT 500 with Yoga Alliance." : " This certification opens doors for you to teach yoga anywhere in the world."}
+                    {courseKey.includes("300") ? " Combined with an RYT 200 and at least 100 hours of teaching experience, you will receive a 300-Hour Certificate of Completion from YogaGarhi." : " This certification opens doors for you to teach yoga anywhere in the world."}
                   </>
                 ) : (
                   <>

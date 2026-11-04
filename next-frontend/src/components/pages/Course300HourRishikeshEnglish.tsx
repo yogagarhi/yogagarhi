@@ -233,7 +233,7 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
 
 // Icon Highlights Section
 const iconHighlights = [
-  { icon: Award, title: "Yoga Alliance Certified", subtitle: "RYT 500 Pathway" },
+  { icon: Award, title: "Yoga Alliance Registered School (RYS 200)", subtitle: "300-Hour Certificate" },
   { icon: Leaf, title: "Multi-Style Yoga", subtitle: "Authentic Teaching" },
   { icon: Heart, title: "Prakriti-Based", subtitle: "Personalized Learning" },
   { icon: Users, title: "Small Batch", subtitle: "8-10 Students" },
@@ -372,7 +372,7 @@ const whatYouWillReceive = [
     image: apartGroupClass
   },
   {
-    title: "Yoga Alliance Certified",
+    title: "Yoga Alliance Registered School (RYS 200)",
     description: "Receive globally recognized certification. Begin teaching yoga with confidence worldwide.",
     icon: Award,
     image: apartYogaAllianceGraduates
@@ -1190,7 +1190,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                   {/* Certification */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Certification</p>
-                    <p className="font-heading font-semibold text-foreground">Yoga Alliance RYT 500 pathway</p>
+                    <p className="font-heading font-semibold text-foreground">300-Hour Certificate of Completion from YogaGarhi</p>
                   </div>
 
                   {/* Price */}
@@ -1434,7 +1434,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                 <div className="space-y-6 text-muted-foreground leading-relaxed mb-8 text-left">
                   {/* First 2 paragraphs - always visible */}
                   <p className="text-base sm:text-lg text-foreground/80 font-medium">
-                    Become a Yoga Alliance Registered Yoga Teacher (RYT 500 pathway) through Yogagarhi's
+                    Become a Yoga Alliance 300-Hour Certificate of Completion from YogaGarhi through Yogagarhi's
                     200-Hour Yoga Teacher Training in Rishikesh and join a life-changing journey
                     of yoga and self-realization.
                   </p>
@@ -2894,7 +2894,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
 
               {/* Main Title */}
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
-                Yoga Alliance USA CERTIFIED
+                Yoga Alliance USA Registered School (RYS 200)
               </h2>
 
               {/* Description */}
@@ -3958,7 +3958,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-20">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Sachin Ji’s Research on Personalized Yoga and Prakriti
+                Yogacharya Sachin’s Research on Personalized Yoga and Prakriti
               </h2>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />

@@ -360,8 +360,8 @@ const whatYouWillReceive = [
     image: apartSeatedTalk
   },
   {
-    title: "Yoga Alliance Certified",
-    description: "Receive globally recognized certification. Begin teaching yoga with confidence worldwide.",
+    title: "Yoga Alliance Registered School (RYS 200)",
+    description: "100-Hour Certificate of Completion from YogaGarhi. Build a solid personal foundation, with hours eligible to count toward future 200-Hour training at YogaGarhi.",
     icon: Award,
     image: apartYogaAllianceGraduates
   },
@@ -1657,22 +1657,18 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
 
               {/* Main Title */}
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
-                Yoga Alliance USA CERTIFIED
+                Yoga Alliance USA Registered School (RYS 200)
               </h2>
 
               {/* Description */}
               <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-                Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
-                you will receive an internationally recognized certification, allowing you to become a
-                <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                This certification opens doors for you to teach yoga anywhere in the world.
+                Upon completing this course, you will receive a <span className="text-white font-medium">100-Hour Certificate of Completion</span> issued by YogaGarhi, a Yoga Alliance Registered Yoga School (RYS 200). These hours can count toward your 200-Hour training at YogaGarhi.
               </p>
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                                <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRyt200} alt="RYT 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
-              </div>
+                                <Image src={yaRys200} alt="Yoga Alliance RYS 200" width={96} height={96} className="h-20 md:h-24 w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                </div>
 
               {/* Full Certification Banner */}
               <div className="mt-10">
@@ -3908,7 +3904,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-20">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Sachin Ji’s Research on Personalized Yoga and Prakriti
+                Yogacharya Sachin’s Research on Personalized Yoga and Prakriti
               </h2>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />

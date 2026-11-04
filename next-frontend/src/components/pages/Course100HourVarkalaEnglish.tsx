@@ -233,7 +233,7 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
 
 // Icon Highlights Section
 const iconHighlights = [
-  { icon: Award, title: "Yoga Alliance Certified", subtitle: "RYS 200" },
+  { icon: Award, title: "Yoga Alliance Registered School (RYS 200)", subtitle: "RYS 200" },
   { icon: Leaf, title: "Multi-Style Yoga", subtitle: "Authentic Teaching" },
   { icon: Heart, title: "Prakriti-Based", subtitle: "Personalized Learning" },
   { icon: Users, title: "Small Batch", subtitle: "8-10 Students" },
@@ -372,8 +372,8 @@ const whatYouWillReceive = [
     image: apartGroupClass
   },
   {
-    title: "Yoga Alliance Certified",
-    description: "Receive globally recognized certification. Begin teaching yoga with confidence worldwide.",
+    title: "Yoga Alliance Registered School (RYS 200)",
+    description: "100-Hour Certificate of Completion from YogaGarhi. Build a solid personal foundation, with hours eligible to count toward future 200-Hour training at YogaGarhi.",
     icon: Award,
     image: apartYogaAllianceGraduates
   },
@@ -1190,7 +1190,7 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                   {/* Certification */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Certification</p>
-                    <p className="font-heading font-semibold text-foreground">Yoga Alliance RYT 200</p>
+                    <p className="font-heading font-semibold text-foreground">100-Hour Certificate (RYS 200)</p>
                   </div>
 
                   {/* Price */}
@@ -2444,7 +2444,7 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
                 {[
                   {
                     title: "Global Certification",
-                    desc: "Yoga Alliance RYT-200 to start your career anywhere.",
+                    desc: "100-Hour Certificate of Completion from YogaGarhi (Yoga Alliance RYS 200).",
                     icon: Award
                   },
                   {
@@ -2894,22 +2894,18 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
 
               {/* Main Title */}
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
-                Yoga Alliance USA CERTIFIED
+                Yoga Alliance USA Registered School (RYS 200)
               </h2>
 
               {/* Description */}
               <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-                Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
-                you will receive an internationally recognized certification, allowing you to become a
-                <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                This certification opens doors for you to teach yoga anywhere in the world.
+                Upon completing this course, you will receive a <span className="text-white font-medium">100-Hour Certificate of Completion</span> issued by YogaGarhi, a Yoga Alliance Registered Yoga School (RYS 200). These hours can count toward your 200-Hour training at YogaGarhi.
               </p>
 
               {/* Certification Badges - Real Images */}
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
-                                <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-                <Image src={yaRyt200} alt="RYT 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
-              </div>
+                                <Image src={yaRys200} alt="Yoga Alliance RYS 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
+                </div>
 
               {/* Full Certification Banner */}
               <div className="mt-10">
@@ -3958,7 +3954,7 @@ export default function Course200HourVarkala({ initialBatches, syllabusSlot }: {
             {/* Section Header */}
             <div className="max-w-4xl mx-auto text-center mb-20">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Sachin Ji’s Research on Personalized Yoga and Prakriti
+                Yogacharya Sachin’s Research on Personalized Yoga and Prakriti
               </h2>
               <div className="flex items-center justify-center gap-3 mb-8">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-primary" />

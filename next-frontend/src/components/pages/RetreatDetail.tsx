@@ -1235,7 +1235,7 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
                         <div>
                           <span className="text-xs font-bold text-primary">{isEn ? "28 Days" : cl.days28}</span>
                           <h4 className="font-heading font-bold text-base text-foreground mt-1 mb-2">300-Hour YTT Varkala</h4>
-                          <p className="text-xs text-muted-foreground mb-4">{isEn ? "Advanced master training leading to RYT 500 credential." : cl.desc300Varkala}</p>
+                          <p className="text-xs text-muted-foreground mb-4">{isEn ? "300-Hour Certificate of Completion from YogaGarhi." : cl.desc300Varkala}</p>
                         </div>
                         <Link href={`${linkPrefix}/300-hour-yoga-teacher-training-in-varkala`} className="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
                           <span>{isEn ? "From $1,099 • Learn More" : cl.fromLearnMore.replace('{price}', '$1,099')}</span>

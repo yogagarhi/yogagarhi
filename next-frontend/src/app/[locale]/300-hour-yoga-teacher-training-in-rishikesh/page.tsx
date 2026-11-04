@@ -27,7 +27,7 @@ export async function generateMetadata({
     if (locale === "en") {
         const title = "300 Hour Yoga Teacher Training in Rishikesh | YogaGarhi";
         const description =
-            "Advance your teaching with Yoga Alliance certified 300 hour yoga teacher training in Rishikesh. Pathway to RYT 500, E-RYT 500 faculty. Enroll now.";
+            "Advance your teaching with Yoga Alliance certified 300 hour yoga teacher training in Rishikesh. Advanced Immersion, E-RYT 500 faculty. Enroll now.";
         return {
             metadataBase: new URL("https://www.yogagarhi.com"),
             title: {
@@ -37,7 +37,7 @@ export async function generateMetadata({
             keywords: [
                 "300 hour yoga teacher training in rishikesh",
                 "advanced yoga teacher training rishikesh",
-                "ryt 500 rishikesh"
+                "300 hour yoga rishikesh"
             ],
             alternates: {
                 canonical: "https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-rishikesh",
@@ -72,7 +72,7 @@ export async function generateMetadata({
     const title = messages.course300Rishikesh?.metaTitle || "300 Hour Yoga Teacher Training in Rishikesh | YogaGarhi";
     const description =
         messages.course300Rishikesh?.metaDesc ||
-        "Advance your teaching with Yoga Alliance certified 300 hour yoga teacher training in Rishikesh. Pathway to RYT 500, E-RYT 500 faculty. Enroll now.";
+        "Advance your teaching with Yoga Alliance certified 300 hour yoga teacher training in Rishikesh. Advanced Immersion, E-RYT 500 faculty. Enroll now.";
     const url = `https://www.yogagarhi.com/${locale}/300-hour-yoga-teacher-training-in-rishikesh`;
 
     return applyQualityGate({
@@ -202,8 +202,8 @@ export default async function Page({
             ? "300 Hour Yoga Teacher Training in Rishikesh | YogaGarhi"
             : messages.course300Rishikesh?.metaTitle || "300 Hour Yoga Teacher Training in Rishikesh | YogaGarhi",
         "description": isEn
-            ? "Advance your teaching with Yoga Alliance certified 300 hour yoga teacher training in Rishikesh. Pathway to RYT 500, E-RYT 500 faculty. Enroll now."
-            : messages.course300Rishikesh?.metaDesc || "Advance your teaching with Yoga Alliance certified 300 hour yoga teacher training in Rishikesh. Pathway to RYT 500, E-RYT 500 faculty. Enroll now.",
+            ? "Advance your teaching with Yoga Alliance certified 300 hour yoga teacher training in Rishikesh. Advanced Immersion, E-RYT 500 faculty. Enroll now."
+            : messages.course300Rishikesh?.metaDesc || "Advance your teaching with Yoga Alliance certified 300 hour yoga teacher training in Rishikesh. Advanced Immersion, E-RYT 500 faculty. Enroll now.",
         "inLanguage": "en",
         "provider": {
             "@type": "Organization",
@@ -223,7 +223,7 @@ export default async function Page({
             "availability": "https://schema.org/PreOrder",
             "url": pageUrl
         },
-        "educationalCredentialAwarded": "RYT-500 Yoga Alliance Certification"
+        "educationalCredentialAwarded": "300-Hour Certificate of Completion from YogaGarhi"
     };
 
     /* =========================

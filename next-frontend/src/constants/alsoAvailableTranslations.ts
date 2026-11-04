@@ -49,8 +49,8 @@ export const ALSO_AVAILABLE_RISHIKESH: Record<string, SisterCampusData> = {
         "title": "300 Hour Yoga Teacher Training in Rishikesh",
         "duration": "28 Days (27 Nights)",
         "price": "$1,099",
-        "certification": "RYT 500 Pathway",
-        "description": "Advanced 300-hour master training with Himalayan lineage masters. Pathway to elite Yoga Alliance RYT 500."
+        "certification": "300-Hour Certificate",
+        "description": "Advanced 300-hour master training with Himalayan lineage masters. 300-Hour Certificate of Completion from YogaGarhi."
       }
     ]
   },
@@ -83,7 +83,7 @@ export const ALSO_AVAILABLE_RISHIKESH: Record<string, SisterCampusData> = {
         "title": "300-Stunden Yogalehrerausbildung in Rishikesh",
         "duration": "28 Tage (27 Nächte)",
         "price": "$1.099",
-        "certification": "Weg zum RYT 500",
+        "certification": "300-Stunden-Zertifikat",
         "description": "Fortgeschrittene 300-Stunden-Ausbildung mit erfahrenen Himalaya-Meistern zur Erlangung des Yoga Alliance RYT 500."
       }
     ]
@@ -426,8 +426,8 @@ export const ALSO_AVAILABLE_VARKALA: Record<string, SisterCampusData> = {
         "title": "300 Hour Yoga Teacher Training in Varkala",
         "duration": "28 Days (27 Nights)",
         "price": "$1,099",
-        "certification": "RYT 500 Pathway",
-        "description": "Advanced 300-hour master training with Himalayan lineage masters and clinical Ayurveda. Pathway to elite Yoga Alliance RYT 500."
+        "certification": "300-Hour Certificate",
+        "description": "Advanced 300-hour master training with Himalayan lineage masters and clinical Ayurveda. 300-Hour Certificate of Completion from YogaGarhi."
       }
     ]
   },
@@ -460,7 +460,7 @@ export const ALSO_AVAILABLE_VARKALA: Record<string, SisterCampusData> = {
         "title": "300-Stunden Yogalehrerausbildung in Varkala",
         "duration": "28 Tage (27 Nächte)",
         "price": "$1.099",
-        "certification": "Weg zum RYT 500",
+        "certification": "300-Stunden-Zertifikat",
         "description": "Fortgeschrittene 300-Stunden-Masterausbildung mit Himalaya-Meistern und klinischem Ayurveda zur RYT 500 Zertifizierung."
       }
     ]

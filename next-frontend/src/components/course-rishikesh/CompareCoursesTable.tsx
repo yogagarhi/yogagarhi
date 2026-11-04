@@ -224,7 +224,7 @@ export default function CompareCoursesTable({ locale }: CompareCoursesTableProps
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />
-                  <span>{ui.f_cert}: RYT 500 Pathway</span>
+                  <span>{ui.f_cert}: 300-Hour Certificate</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Check className="w-4 h-4 text-primary shrink-0" />

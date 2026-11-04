@@ -3030,7 +3030,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
               {/* Main Title */}
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
-                Yoga Alliance USA CERTIFIED
+                Yoga Alliance USA Registered School (RYS 200)
               </h2>
 
               {/* Description */}
