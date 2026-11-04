@@ -118,8 +118,8 @@ export default async function RefundPolicy({
             </h3>
             <p className="text-xs text-muted-foreground">
               {isEn
-                ? "Cancel 30 or more days before start to receive a full refund of your balance (minus deposit and bank fees)."
-                : (t.highlight2Text || "Cancel 30 or more days before start to receive a full refund of your balance (minus deposit and bank fees).")}
+                ? "Cancel 30 or more days before start to receive a full refund of your balance; bank fees are deducted."
+                : (t.highlight2Text || "Cancel 30 or more days before start to receive a full refund of your balance; bank fees are deducted.")}
             </p>
           </div>
 
@@ -177,8 +177,8 @@ export default async function RefundPolicy({
             <ul className="list-disc pl-5 space-y-2 mt-3 text-sm text-muted-foreground leading-relaxed">
               <li>
                 {isEn
-                  ? "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees."
-                  : (t.section3Bullet1 || "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees.")}
+                  ? "If you cancel 30 or more days before the start date: We refund the full balance you paid. The $250 deposit is non-refundable, and any bank fees are deducted."
+                  : (t.section3Bullet1 || "If you cancel 30 or more days before the start date: We refund the full balance you paid. The $250 deposit is non-refundable, and any bank fees are deducted.")}
               </li>
               <li>
                 {isEn

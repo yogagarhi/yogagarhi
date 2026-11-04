@@ -235,7 +235,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { meal: 'Dinner', time: '07:00 PM – 08:00 PM', notes: 'Warm soul soups, roasted vegetables, curries, and herbal digestion tonics' }
     ],
     policy: {
-      reschedule: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.',
+      reschedule: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, your deposit can be moved to a future date within 12 months. If you cancel 30 or more days before the start date, we refund the full balance you paid; bank fees are deducted. If you cancel less than 30 days before the start date, your balance becomes credit valid for 12 months. No refunds are given after the retreat begins. If YogaGarhi cancels a retreat, you will receive a full refund of all payments or a free date transfer.',
       airportGuide: 'The best and most convenient way to travel to YogaGarhi Bali is to take a flight to Denpasar Bali Airport (DPS). Denpasar Airport is merely 38 km away from our Ubud campus.',
       arrivalInfo: 'Campus check-in begins at 12:00 PM on your arrival day. Early arrival and luggage storage are gladly assisted.'
     },
@@ -463,7 +463,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { meal: 'Dinner', time: '07:00 PM – 08:00 PM', notes: 'Warm soul soups, roasted vegetables, curries, and herbal digestion tonics' }
     ],
     policy: {
-      reschedule: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.',
+      reschedule: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, your deposit can be moved to a future date within 12 months. If you cancel 30 or more days before the start date, we refund the full balance you paid; bank fees are deducted. If you cancel less than 30 days before the start date, your balance becomes credit valid for 12 months. No refunds are given after the retreat begins. If YogaGarhi cancels a retreat, you will receive a full refund of all payments or a free date transfer.',
       airportGuide: 'The best and most convenient way to travel to YogaGarhi Bali is to take a flight to Denpasar Bali Airport (DPS). Denpasar Airport is merely 38 km away from our Ubud retreat campus.',
       arrivalInfo: 'Campus check-in begins at 12:00 PM on Day 1. If you arrive early, feel free to relax by the swimming pool or enjoy our herbal welcome drinks.'
     },
@@ -513,7 +513,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { question: 'What is the Melukat Water Blessing ceremony?', answer: 'Melukat is an ancient Balinese water purification ritual at the sacred Tirta Empul spring temple, guided by a traditional Balinese priest to cleanse emotional burdens and restore clarity.' },
       {
         question: 'What is your Cancellation and Deposit Policy?',
-        answer: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.'
+        answer: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, your deposit can be moved to a future date within 12 months. If you cancel 30 or more days before the start date, we refund the full balance you paid; bank fees are deducted. If you cancel less than 30 days before the start date, your balance becomes credit valid for 12 months. No refunds are given after the retreat begins. If YogaGarhi cancels a retreat, you will receive a full refund of all payments or a free date transfer.'
       },
       { question: 'How do I arrive at the retreat from the airport?', answer: 'Fly to Denpasar International Airport (DPS), which is 38 km away. We coordinate reliable private driver transfers directly to our Ubud campus.' }
     ]
@@ -694,7 +694,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { meal: 'Dinner', time: '07:00 PM – 08:00 PM', notes: 'Warm soul soups, roasted vegetables, curries, and herbal digestion tonics' }
     ],
     policy: {
-      reschedule: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.',
+      reschedule: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, your deposit can be moved to a future date within 12 months. If you cancel 30 or more days before the start date, we refund the full balance you paid; bank fees are deducted. If you cancel less than 30 days before the start date, your balance becomes credit valid for 12 months. No refunds are given after the retreat begins. If YogaGarhi cancels a retreat, you will receive a full refund of all payments or a free date transfer.',
       airportGuide: 'The best and most convenient way to travel to YogaGarhi Bali is to take a flight to Denpasar Bali Airport (DPS). Denpasar Airport is merely 38 km away from our Ubud retreat campus.',
       arrivalInfo: 'Campus check-in begins at 12:00 PM on Day 1. If you arrive early, feel free to relax by the swimming pool or enjoy our herbal welcome drinks.'
     },
@@ -742,7 +742,7 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { question: 'Is round-trip airport transfer included?', answer: 'Yes, for the 14-day retreat, both airport pickup and airport drop-off from Denpasar (DPS) are included.' },
       {
         question: 'What is your Cancellation and Deposit Policy?',
-        answer: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.'
+        answer: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, your deposit can be moved to a future date within 12 months. If you cancel 30 or more days before the start date, we refund the full balance you paid; bank fees are deducted. If you cancel less than 30 days before the start date, your balance becomes credit valid for 12 months. No refunds are given after the retreat begins. If YogaGarhi cancels a retreat, you will receive a full refund of all payments or a free date transfer.'
       }
     ]
   },

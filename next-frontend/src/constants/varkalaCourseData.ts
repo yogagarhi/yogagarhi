@@ -30,7 +30,7 @@ export const VARKALA_FAQS_200_HOUR: FAQItem[] = [
   },
   {
     question: "What is the refund and cancellation policy?",
-    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the full balance you paid; bank fees are deducted. If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
   },
   {
     question: "What is the best time of year to undertake yoga training in Varkala?",
@@ -121,7 +121,7 @@ export const VARKALA_FAQS_100_HOUR: FAQItem[] = [
   },
   {
     question: "What happens if I need to reschedule my dates?",
-    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the full balance you paid; bank fees are deducted. If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
   },
   {
     question: "Will I learn about Ayurvedic diets during the course?",
@@ -200,7 +200,7 @@ export const VARKALA_FAQS_300_HOUR: FAQItem[] = [
   },
   {
     question: "What is the policy for deposit transfer if my dates change?",
-    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the full balance you paid; bank fees are deducted. If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
   }
 ];
 

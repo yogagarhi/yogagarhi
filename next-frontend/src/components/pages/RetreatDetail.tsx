@@ -1034,10 +1034,10 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               </div>
               <p className="text-stone-700 text-sm sm:text-base leading-relaxed mb-4">
                 {isEn
-                  ? (retreat.policy?.reschedule || "Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.")
+                  ? (retreat.policy?.reschedule || "Your $250 deposit is non-refundable. If you cancel due to an emergency, your deposit can be moved to a future date within 12 months. If you cancel 30 or more days before the start date, we refund the full balance you paid; bank fees are deducted. If you cancel less than 30 days before the start date, your balance becomes credit valid for 12 months. No refunds are given after the retreat begins. If YogaGarhi cancels a retreat, you will receive a full refund of all payments or a free date transfer.")
                   : (currentLocale === 'nl'
                       ? "Elke deelnemer heeft recht op één kosteloze herboeking van de cursusdata bij melding tot 15 dagen voor aanvang."
-                      : (retreat.policy?.reschedule || "Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins."))}
+                      : (retreat.policy?.reschedule || "Your $250 deposit is non-refundable. If you cancel due to an emergency, your deposit can be moved to a future date within 12 months. If you cancel 30 or more days before the start date, we refund the full balance you paid; bank fees are deducted. If you cancel less than 30 days before the start date, your balance becomes credit valid for 12 months. No refunds are given after the retreat begins. If YogaGarhi cancels a retreat, you will receive a full refund of all payments or a free date transfer."))}
               </p>
               <div className="text-xs text-stone-600 bg-white p-4 rounded-xl border border-stone-200">
                 🔒 <strong>{isEn ? "Emergency Deposit Protection:" : retreatUI.studentGuaranteeTitle}</strong> {isEn ? "If you must cancel due to a flight or medical emergency, your $250 deposit can be moved to any future retreat date within 12 months." : retreatUI.studentGuaranteeText}
