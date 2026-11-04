@@ -26,11 +26,11 @@ export const RISHIKESH_FAQS_200_HOUR: FAQItem[] = [
   },
   {
     question: "Can I pay my course fees in installments?",
-    answer: "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+    answer: "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
   },
   {
     question: "What is the refund and cancellation policy?",
-    answer: "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
   },
   {
     question: "What is the best time of year to visit Rishikesh for yoga training?",
@@ -101,11 +101,11 @@ export const RISHIKESH_FAQS_100_HOUR: FAQItem[] = [
   },
   {
     question: "Can I pay in installments?",
-    answer: "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+    answer: "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
   },
   {
     question: "What is the refund policy?",
-    answer: "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months, provided you notify us at least 14 days in advance."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
   },
   {
     question: "What is the best time of year to visit Rishikesh?",
@@ -152,11 +152,11 @@ export const RISHIKESH_FAQS_300_HOUR: FAQItem[] = [
   },
   {
     question: "Can I pay in installments?",
-    answer: "Yes, you can secure your reservation with a $200–$300 registration deposit, and clear the remaining course balance in convenient installments prior to arrival or in person upon checking into the ashram."
+    answer: "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
   },
   {
     question: "What is the refund and rescheduling policy?",
-    answer: "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months with at least 14 days advance written notice."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
   },
   {
     question: "What is the best time of year to take the 300-Hour training?",

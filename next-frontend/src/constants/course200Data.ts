@@ -115,7 +115,7 @@ export const COURSE_200_FAQS: FAQItem[] = [
   },
   {
     question: "What is the refund and cancellation policy?",
-    answer: "You can reschedule your course for free within 12 months. You can also transfer your deposit to any YogaGarhi campus in Bali, Rishikesh, or Varkala. Deposits are non-refundable, but they stay valid for 2 full years from your booking date."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
   },
   {
     question: "What kind of food is served during the training?",

@@ -224,8 +224,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "✓ Modern rainfall shower suite",
       "✓ Private sun deck and lounger area"
     ],
-    "studentGuaranteeTitle": "Student-First Guarantee:",
-    "studentGuaranteeText": "We understand travel circumstances change. Your retreat deposit remains protected with one free date reschedule with 15 days notice.",
+    "studentGuaranteeTitle": "Emergency Deposit Protection:",
+    "studentGuaranteeText": "If you must cancel due to a flight or medical emergency, your $250 deposit can be moved to any future retreat date within 12 months.",
     "airportPickupTitle": "Private Airport Pickup:",
     "airportPickupText": "We arrange reliable, air-conditioned private taxi transfers directly from airport arrivals to our campus reception.",
     "durationButtons": {

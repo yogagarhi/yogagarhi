@@ -5588,9 +5588,16 @@
     "section2Text": "Если вы не можете приехать к запланированной дате, вы можете бесплатно перенести обучение на любой следующий поток в течение 12 месяцев, уведомив приемную комиссию не позднее чем за 15 дней до старта программы.",
     "section3Title": "3. Условия Оплаты Оставшейся Части",
     "section3Text": "Оставшаяся часть стоимости курса оплачивается по прибытии в ашрам в день ориентации (или заранее банковским переводом / картой). После начала курса и заселения оплата обучения и проживания не подлежит возврату, поскольку ресурсы и номера резервируются заранее.",
-    "section4Title": "4. Вопросы и Поддержка Студентов",
+    "section4Title": "6. Вопросы и Поддержка Студентов",
     "section4Text": "По любым вопросам переноса дат или индивидуальных графиков оплаты вы можете ежедневно связаться с приемной комиссией по email {email} или в WhatsApp по номеру {phone}.",
-    "contactBtn": "Связаться с Приемной Комиссией"
+    "contactBtn": "Связаться с Приемной Комиссией",
+    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
+    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees.",
+    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
+    "sectionAfterStartTitle": "4. After the Course Begins",
+    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
+    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
+    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
   },
   "course300Rishikesh": {
     "metaTitle": "300-часовой курс подготовки преподавателей йоги в Ришикеше | RYT 500 Индия",

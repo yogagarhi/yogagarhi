@@ -5588,9 +5588,16 @@
     "section2Text": "Mocht je verhinderd zijn voor jouw startdatum, dan kun je kosteloos omboeken naar een latere groep binnen 12 maanden, mits je onze toelatingsafdeling minimaal 15 dagen voor aanvang op de hoogte stelt.",
     "section3Title": "3. Betalingsvoorwaarden Restantbedrag",
     "section3Text": "Het resterende opleidingsbedrag dient bij aankomst op de ashram tijdens de introductiedag te worden voldaan (of vooraf via bankoverschrijving / creditcardlink). Zodra een opleiding is gestart en de student is ingecheckt, zijn lesgelden en verblijfskosten niet-restitueerbaar, aangezien middelen en kamers definitief zijn vastgelegd.",
-    "section4Title": "4. Vragen & Ondersteuning bij Toelating",
+    "section4Title": "6. Vragen & Ondersteuning bij Toelating",
     "section4Text": "Voor vragen over het verplaatsen van data of betalingsregelingen is ons toelatingsteam dagelijks bereikbaar via {email} of WhatsApp op {phone}.",
-    "contactBtn": "Contacteer Toelatingsdesk"
+    "contactBtn": "Contacteer Toelatingsdesk",
+    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
+    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees.",
+    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
+    "sectionAfterStartTitle": "4. After the Course Begins",
+    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
+    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
+    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
   },
   "course300Rishikesh": {
     "metaTitle": "300-Uurs Yoga Docentenopleiding in Rishikesh | RYT 500 India",

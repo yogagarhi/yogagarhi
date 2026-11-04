@@ -4084,11 +4084,11 @@ This is not a transactional relationship — it is a lifelong connection.`}
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    "Reschedule within 12 months",
-                    "Transfer seat allowed",
-                    "Full refund if we cancel",
-                    "Trial day policy",
-                    "No refund after Day 1"
+                    "Deposit is non-refundable",
+                    "Deposit transferable within 12 months (emergencies)",
+                    "Balance refundable 30+ days before start",
+                    "No refund after the course begins",
+                    "Full refund if school cancels"
                   ].map((item, i) => (
                     <span
                       key={i}

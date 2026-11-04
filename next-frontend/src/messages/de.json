@@ -5588,9 +5588,16 @@
     "section2Text": "Falls Du an Deinem geplanten Starttermin verhindert bist, kannst Du innerhalb von 12 Monaten gebührenfrei auf einen späteren Jahrgang umbuchen, sofern Du unser Zulassungsbüro mindestens 15 Tage vor Kursbeginn informierst.",
     "section3Title": "3. Restzahlungsbedingungen",
     "section3Text": "Der verbleibende Restbetrag der Kursgebühr ist bei Ankunft im Ashram am Orientierungstag fällig (oder vorab per Banküberweisung / Kreditkarten-Link). Sobald ein Kurs begonnen hat und der Schüler eingecheckt hat, sind Studiengebühren und Unterkunftskosten nicht erstattungsfähig, da Ressourcen und Zimmerkontingente verbindlich gebunden sind.",
-    "section4Title": "4. Fragen & Beratung zur Zulassung",
+    "section4Title": "6. Fragen & Beratung zur Zulassung",
     "section4Text": "Bei Fragen zur Terminverschiebung oder zu individuellen Zahlungsplänen ist unser Zulassungsteam täglich per E-Mail unter {email} oder per WhatsApp unter {phone} erreichbar.",
-    "contactBtn": "Zulassungsbüro Kontaktieren"
+    "contactBtn": "Zulassungsbüro Kontaktieren",
+    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
+    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees.",
+    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
+    "sectionAfterStartTitle": "4. After the Course Begins",
+    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
+    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
+    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
   },
   "course300Rishikesh": {
     "metaTitle": "300-Stunden-Yoga-Lehrerausbildung in Rishikesh | RYT 500 Indien",

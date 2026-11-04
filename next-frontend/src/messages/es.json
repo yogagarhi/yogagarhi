@@ -5588,9 +5588,16 @@
     "section2Text": "Si no puedes incorporarte en la fecha inicialmente prevista, podrás cambiarte a cualquier grupo posterior dentro de los 12 meses siguientes sin recargo alguno, siempre que avises a nuestra oficina de admisiones con al menos 15 días de antelación al inicio del curso.",
     "section3Title": "3. Condiciones de Abono del Saldo Restante",
     "section3Text": "El importe restante del curso se abonará a la llegada al ashram durante la jornada de bienvenida (o con anterioridad mediante transferencia bancaria o enlace de tarjeta). Una vez iniciado el curso y efectuado el registro de entrada, la matrícula y el coste de alojamiento no son reembolsables al haberse comprometido ya los recursos y habitaciones.",
-    "section4Title": "4. Preguntas y Asistencia de Admisiones",
+    "section4Title": "6. Preguntas y Asistencia de Admisiones",
     "section4Text": "Para cualquier duda relativa a cambios de grupo o facilidades de pago, nuestro equipo de admisiones atiende a diario por email en {email} o por WhatsApp en {phone}.",
-    "contactBtn": "Contactar con Admisiones"
+    "contactBtn": "Contactar con Admisiones",
+    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
+    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees.",
+    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
+    "sectionAfterStartTitle": "4. After the Course Begins",
+    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
+    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
+    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
   },
   "course300Rishikesh": {
     "metaTitle": "Formación de Profesores de Yoga 300 Horas en Rishikesh | RYT 500 India",

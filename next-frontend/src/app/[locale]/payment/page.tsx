@@ -122,8 +122,8 @@ export default function Payment() {
           <div className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border">
             <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
             <div>
-              <strong className="text-foreground text-sm block mb-1">100% Deposit Transfer Guarantee</strong>
-              <p>Need to reschedule your course? Your deposit remains valid for 12 months for any future batch in Bali or Rishikesh.</p>
+              <strong className="text-foreground text-sm block mb-1">Emergency Deposit Transfer</strong>
+              <p>If you must cancel because of an emergency, you can move your $250 deposit to a future batch within 12 months. The rest of your fee is due 30 days before your course starts.</p>
             </div>
           </div>
 

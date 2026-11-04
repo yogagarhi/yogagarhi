@@ -5588,9 +5588,16 @@
     "section2Text": "Si vous ne pouvez vous joindre à la promotion prévue, vous avez la possibilité de reporter votre venue sur n'importe quelle session dans les 12 mois sans pénalité, sous réserve d'en avertir notre bureau des admissions au minimum 15 jours avant l'ouverture du cursus.",
     "section3Title": "3. Modalités de Règlements du Solde",
     "section3Text": "Le reliquat des frais de formation est exigible à l'arrivée à l'ashram lors de la journée d'orientation (ou en amont par virement bancaire / lien sécurisé de carte bancaire). Dès lors que la formation a débuté et que l'élève a pris possession de sa chambre, les droits d'enseignement et l'hébergement ne font l'objet d'aucun remboursement, les ressources et logements ayant été définitivement engagés.",
-    "section4Title": "4. Questions et Assistance Inscriptions",
+    "section4Title": "6. Questions et Assistance Inscriptions",
     "section4Text": "Pour toute question relative aux reports de session ou aux facilités de paiement, notre équipe des admissions est joignable au quotidien par e-mail à {email} ou par WhatsApp au {phone}.",
-    "contactBtn": "Joindre les Admissions"
+    "contactBtn": "Joindre les Admissions",
+    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
+    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees.",
+    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
+    "sectionAfterStartTitle": "4. After the Course Begins",
+    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
+    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
+    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
   },
   "course300Rishikesh": {
     "metaTitle": "Formation Professeur de Yoga 300 Heures à Rishikesh | RYT 500 Inde",

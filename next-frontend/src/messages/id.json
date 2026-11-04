@@ -5588,9 +5588,16 @@
     "section2Text": "Jika Anda tidak dapat bergabung pada tanggal mulai yang dijadwalkan, Anda dapat menjadwalkan ulang ke angkatan berikutnya dalam waktu 12 bulan tanpa penalti, asalkan Anda memberi tahu kantor penerimaan kami setidaknya 15 hari sebelum tanggal mulai kursus.",
     "section3Title": "3. Ketentuan Pembayaran Sisa Biaya",
     "section3Text": "Sisa biaya kursus harus dibayarkan setibanya di ashram pada hari orientasi (atau melalui transfer bank / tautan kartu kredit sebelum kedatangan). Setelah kursus dimulai dan siswa melakukan check-in, biaya pelatihan dan akomodasi tidak dapat dikembalikan karena alokasi sumber daya dan kamar telah dikomitmenkan.",
-    "section4Title": "4. Pertanyaan & Layanan Pendaftaran",
+    "section4Title": "6. Pertanyaan & Layanan Pendaftaran",
     "section4Text": "Untuk pertanyaan mengenai penjadwalan ulang angkatan atau rencana pembayaran khusus, tim pendaftaran kami siap membantu setiap hari melalui email di {email} atau WhatsApp di {phone}.",
-    "contactBtn": "Hubungi Meja Pendaftaran"
+    "contactBtn": "Hubungi Meja Pendaftaran",
+    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
+    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees.",
+    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
+    "sectionAfterStartTitle": "4. After the Course Begins",
+    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
+    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
+    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
   },
   "course300Rishikesh": {
     "metaTitle": "Pelatihan Guru Yoga 300 Jam di Rishikesh | Jalur Lanjutan RYT 500 India",

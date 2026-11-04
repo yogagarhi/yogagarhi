@@ -5588,9 +5588,16 @@
     "section2Text": "ご予定の期に参加できなくなった場合でも、開講日の15日前までに事務局へご連絡いただければ、手数料なしで12か月以内の今後の期へ変更が可能です。",
     "section3Title": "3. コース残金のお支払い規定",
     "section3Text": "受講料の残金は、アシュラム到着時のオリエンテーション当日にお支払いいただきます（または渡航前に銀行振込／クレジットカード決済）。コースが開講しチェックインが完了した後は、客室および講師リソースが確定しているため、受講料および宿泊費の返金はいたしかねます。",
-    "section4Title": "4. ご相談・入学サポート",
+    "section4Title": "6. ご相談・入学サポート",
     "section4Text": "日程変更のご相談や分割払いのご相談は、毎日メール {email} または WhatsApp {phone} にて日本語・英語等でお気軽にお問い合わせいただけます。",
-    "contactBtn": "入学相談デスクに問い合わせる"
+    "contactBtn": "入学相談デスクに問い合わせる",
+    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
+    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees.",
+    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
+    "sectionAfterStartTitle": "4. After the Course Begins",
+    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
+    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
+    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
   },
   "course300Rishikesh": {
     "metaTitle": "リシケシ300時間ヨガ指導者養成コース | RYT 500 インド",

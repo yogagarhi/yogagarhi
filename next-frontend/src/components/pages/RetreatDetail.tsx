@@ -1029,18 +1029,18 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
               <div className="flex items-center gap-3 mb-4">
                 <ShieldCheck className="w-6 h-6 text-amber-800 flex-shrink-0" />
                 <h2 className="font-heading text-lg sm:text-xl font-bold text-amber-950 uppercase">
-                  {isEn ? "Course Reschedule Terms & Conditions" : (messages?.reschedulePolicyTitle || (currentLocale === 'nl' ? "Herboekingsvoorwaarden" : "Course Reschedule Terms & Conditions"))}
+                  {isEn ? "Cancellation & Deposit Terms" : (messages?.reschedulePolicyTitle || (currentLocale === 'nl' ? "Herboekingsvoorwaarden" : "Cancellation & Deposit Terms"))}
                 </h2>
               </div>
               <p className="text-stone-700 text-sm sm:text-base leading-relaxed mb-4">
                 {isEn
-                  ? (retreat.policy?.reschedule || "Each student is eligible for one course reschedule free of charge. Once the course has been rescheduled, no further changes to the course dates will be permitted.")
+                  ? (retreat.policy?.reschedule || "Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.")
                   : (currentLocale === 'nl'
                       ? "Elke deelnemer heeft recht op één kosteloze herboeking van de cursusdata bij melding tot 15 dagen voor aanvang."
-                      : (retreat.policy?.reschedule || "Each student is eligible for one course reschedule free of charge."))}
+                      : (retreat.policy?.reschedule || "Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins."))}
               </p>
               <div className="text-xs text-stone-600 bg-white p-4 rounded-xl border border-stone-200">
-                🔒 <strong>{isEn ? "Student-First Guarantee:" : retreatUI.studentGuaranteeTitle}</strong> {isEn ? "We understand travel circumstances change. Your retreat deposit remains protected with one free date reschedule with 15 days notice." : retreatUI.studentGuaranteeText}
+                🔒 <strong>{isEn ? "Emergency Deposit Protection:" : retreatUI.studentGuaranteeTitle}</strong> {isEn ? "If you must cancel due to a flight or medical emergency, your $250 deposit can be moved to any future retreat date within 12 months." : retreatUI.studentGuaranteeText}
               </div>
             </div>
 

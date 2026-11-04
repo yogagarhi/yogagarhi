@@ -511,7 +511,10 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { question: 'What is the check-in and check-out time?', answer: 'Check-in is at 12:00 PM on Day 1, and check-out is at 12:00 PM on Day 7.' },
       { question: 'Is the daily Balinese massage really included every day?', answer: 'Yes! You receive 6 full-body complimentary Balinese massage treatments (one on each full day of your retreat).' },
       { question: 'What is the Melukat Water Blessing ceremony?', answer: 'Melukat is an ancient Balinese water purification ritual at the sacred Tirta Empul spring temple, guided by a traditional Balinese priest to cleanse emotional burdens and restore clarity.' },
-      { question: 'What is your Course Reschedule Policy?', answer: 'Each student is eligible for one free course reschedule. You can reschedule your retreat dates with prior notice, ensuring complete peace of mind when booking.' },
+      {
+        question: 'What is your Cancellation and Deposit Policy?',
+        answer: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.'
+      },
       { question: 'How do I arrive at the retreat from the airport?', answer: 'Fly to Denpasar International Airport (DPS), which is 38 km away. We coordinate reliable private driver transfers directly to our Ubud campus.' }
     ]
   },
@@ -737,7 +740,10 @@ export const RETREATS_DATA: Record<string, RetreatPackage> = {
       { question: 'What is the check-in and check-out time?', answer: 'Check-in is at 12:00 PM on Day 1, and check-out is at 12:00 PM on Day 14.' },
       { question: 'How many massages are included in 14 days?', answer: 'You receive 12 full-body complimentary Balinese massages during your two-week stay.' },
       { question: 'Is round-trip airport transfer included?', answer: 'Yes, for the 14-day retreat, both airport pickup and airport drop-off from Denpasar (DPS) are included.' },
-      { question: 'What is your Course Reschedule Policy?', answer: 'Each student is eligible for one free course reschedule with prior notice.' }
+      {
+        question: 'What is your Cancellation and Deposit Policy?',
+        answer: 'Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins.'
+      }
     ]
   },
 

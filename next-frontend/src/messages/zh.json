@@ -5588,9 +5588,16 @@
     "section2Text": "若您无法按原计划报到，只需在开课前至少15天通知招生办公室，即可在12个月内免费改期至后续任意班次，无需承担任何违约罚金。",
     "section3Title": "3. 尾款支付与退改细则",
     "section3Text": "课程尾款于开学迎新日当天在静修中心现场支付（或提前通过银行电汇 / 信用卡链接结清）。一旦课程开班且学员完成入住，由于房间及教学师资资源已完成锁定，学费及住宿费恕不退还。",
-    "section4Title": "4. 疑问咨询与招生支持",
+    "section4Title": "6. 疑问咨询与招生支持",
     "section4Text": "有关改期安排或个性化分期方案，我们的招生顾问每日均可通过电邮 {email} 或 WhatsApp {phone} 为您提供贴心解答。",
-    "contactBtn": "联系招生办公室"
+    "contactBtn": "联系招生办公室",
+    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
+    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees.",
+    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
+    "sectionAfterStartTitle": "4. After the Course Begins",
+    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
+    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
+    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
   },
   "course300Rishikesh": {
     "metaTitle": "瑞诗凯诗300小时瑜伽导师培训 | RYT 500 印度",

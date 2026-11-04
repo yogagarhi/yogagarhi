@@ -26,11 +26,11 @@ export const VARKALA_FAQS_200_HOUR: FAQItem[] = [
   },
   {
     question: "Can I pay my course fees in installments?",
-    answer: "Yes, we offer flexible payment options to help you budget comfortably. You can secure your seat in your preferred monthly batch with an initial deposit of $200–$300, and settle the remaining course tuition either in flexible installments prior to arrival or on your official check-in day at the ashram campus."
+    answer: "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
   },
   {
     question: "What is the refund and cancellation policy?",
-    answer: "We understand that international travel plans can change unexpectedly. While reservation deposits are non-refundable due to strictly capped batch sizes (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala, Rishikesh, or Bali batch within 12 months with at least 14 days prior notice at zero extra fee."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
   },
   {
     question: "What is the best time of year to undertake yoga training in Varkala?",
@@ -121,7 +121,7 @@ export const VARKALA_FAQS_100_HOUR: FAQItem[] = [
   },
   {
     question: "What happens if I need to reschedule my dates?",
-    answer: "Your registration deposit is 100% transferable. You can reschedule your course to any future batch at our Varkala, Rishikesh, or Bali campuses within 12 months with at least 14 days prior notice."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
   },
   {
     question: "Will I learn about Ayurvedic diets during the course?",
@@ -184,7 +184,7 @@ export const VARKALA_FAQS_300_HOUR: FAQItem[] = [
   },
   {
     question: "Can I pay my fees in installments?",
-    answer: "Yes, you can secure your reservation with a $200–$300 deposit and pay the remaining balance in convenient installments leading up to your course start date or upon check-in at the ashram."
+    answer: "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
   },
   {
     question: "What is YogaGarhi's Lifetime Re-attendance policy for 300-Hour graduates?",
@@ -200,7 +200,7 @@ export const VARKALA_FAQS_300_HOUR: FAQItem[] = [
   },
   {
     question: "What is the policy for deposit transfer if my dates change?",
-    answer: "Deposits are 100% transferable to any future training date or location (Varkala, Rishikesh, Bali) within 12 months with at least 14 days advance notice."
+    answer: "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
   }
 ];
 

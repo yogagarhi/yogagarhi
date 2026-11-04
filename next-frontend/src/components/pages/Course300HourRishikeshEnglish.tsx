@@ -3089,9 +3089,11 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                 </div>
                 <div className="flex flex-wrap gap-3">
                   {[
-                    "Reschedule within 12 months", "Transfer seat allowed",
-                    "Full refund if we cancel", "Trial day policy",
-                    "No refund after Day 1"
+                    "Deposit is non-refundable",
+                    "Deposit transferable within 12 months (emergencies)",
+                    "Balance refundable 30+ days before start",
+                    "No refund after the course begins",
+                    "Full refund if school cancels"
                   ].map((item, i) => (
                     <span key={i} className="px-3 py-1.5 bg-secondary/50 rounded-full text-sm font-medium text-foreground border border-border flex items-center gap-2">
                       <Check className="w-3 h-3 text-primary" />

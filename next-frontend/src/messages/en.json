@@ -826,7 +826,7 @@
       },
       {
         "question": "What is the refund and cancellation policy?",
-        "answer": "You can reschedule your course for free within 12 months. You can also transfer your deposit to any YogaGarhi campus in Bali, Rishikesh, or Varkala. Deposits are non-refundable, but they stay valid for 2 full years from your booking date."
+        "answer": "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
       },
       {
         "question": "What kind of food is served during the training?",
@@ -1086,11 +1086,11 @@
       "code6": "Respect all",
       "code7": "No phones in class",
       "code8": "Full attendance required",
-      "refund1": "Reschedule within 12 months",
-      "refund2": "Transfer seat allowed",
-      "refund3": "Full refund if we cancel",
-      "refund4": "Trial day policy",
-      "refund5": "No refund after Day 1",
+      "refund1": "Deposit is non-refundable",
+      "refund2": "Deposit transferable within 12 months (emergencies)",
+      "refund3": "Balance refundable 30+ days before start",
+      "refund4": "No refund after the course begins",
+      "refund5": "Full refund if school cancels",
       "reviewsHeading": "What Our Students Say",
       "viewAllGoogle": "View all reviews on Google",
       "basedOnReviews": "Based on",
@@ -1907,11 +1907,11 @@
       "code6": "Respect all",
       "code7": "No phones in class",
       "code8": "Full attendance required",
-      "refund1": "Reschedule within 12 months",
-      "refund2": "Transfer seat allowed",
-      "refund3": "Full refund if we cancel",
-      "refund4": "Trial day policy",
-      "refund5": "No refund after Day 1",
+      "refund1": "Deposit is non-refundable",
+      "refund2": "Deposit transferable within 12 months (emergencies)",
+      "refund3": "Balance refundable 30+ days before start",
+      "refund4": "No refund after the course begins",
+      "refund5": "Full refund if school cancels",
       "reviewsHeading": "What Our Students Say",
       "viewAllGoogle": "View all reviews on Google",
       "basedOnReviews": "Based on",
@@ -2595,11 +2595,11 @@
       "code6": "Respect all",
       "code7": "No phones in class",
       "code8": "Full attendance required",
-      "refund1": "Reschedule within 12 months",
-      "refund2": "Transfer seat allowed",
-      "refund3": "Full refund if we cancel",
-      "refund4": "Trial day policy",
-      "refund5": "No refund after Day 1",
+      "refund1": "Deposit is non-refundable",
+      "refund2": "Deposit transferable within 12 months (emergencies)",
+      "refund3": "Balance refundable 30+ days before start",
+      "refund4": "No refund after the course begins",
+      "refund5": "Full refund if school cancels",
       "reviewsHeading": "What Our Students Say",
       "viewAllGoogle": "View all reviews on Google",
       "basedOnReviews": "Based on",
@@ -3028,11 +3028,11 @@
       },
       {
         "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "answer": "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
       },
       {
         "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "answer": "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
       },
       {
         "question": "What is the best time of year to visit Rishikesh?",
@@ -3300,11 +3300,11 @@
       "code6": "Respect all",
       "code7": "No phones in class",
       "code8": "Full attendance required",
-      "refund1": "Reschedule within 12 months",
-      "refund2": "Transfer seat allowed",
-      "refund3": "Full refund if we cancel",
-      "refund4": "Trial day policy",
-      "refund5": "No refund after Day 1",
+      "refund1": "Deposit is non-refundable",
+      "refund2": "Deposit transferable within 12 months (emergencies)",
+      "refund3": "Balance refundable 30+ days before start",
+      "refund4": "No refund after the course begins",
+      "refund5": "Full refund if school cancels",
       "reviewsHeading": "What Our Students Say",
       "viewAllGoogle": "View all reviews on Google",
       "basedOnReviews": "Based on",
@@ -3777,11 +3777,11 @@
       },
       {
         "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "answer": "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
       },
       {
         "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "answer": "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -4074,11 +4074,11 @@
       "code6": "Respect all",
       "code7": "No phones in class",
       "code8": "Full attendance required",
-      "refund1": "Reschedule within 12 months",
-      "refund2": "Transfer seat allowed",
-      "refund3": "Full refund if we cancel",
-      "refund4": "Trial day policy",
-      "refund5": "No refund after Day 1",
+      "refund1": "Deposit is non-refundable",
+      "refund2": "Deposit transferable within 12 months (emergencies)",
+      "refund3": "Balance refundable 30+ days before start",
+      "refund4": "No refund after the course begins",
+      "refund5": "Full refund if school cancels",
       "reviewsHeading": "What Our Students Say",
       "viewAllGoogle": "View all reviews on Google",
       "basedOnReviews": "Based on",
@@ -4754,8 +4754,8 @@
     "faqTitle": "Frequently Asked Questions",
     "needGuidance": "Need Guidance on Choosing the Right Retreat?",
     "guidanceSub": "Our admissions team is here to assist with flight connections, visa questions, and tailoring your retreat dates.",
-    "reschedulePolicyTitle": "Course Reschedule Terms & Conditions",
-    "reschedulePolicyText": "Flexible rescheduling terms: transferable within 12 months. No refund after Day 1."
+    "reschedulePolicyTitle": "Cancellation & Deposit Terms",
+    "reschedulePolicyText": "Your $250 deposit is non-refundable. If you cancel due to an emergency, you can move your deposit to a future date within 12 months. Remaining balance is refundable 30+ days before start. No refunds once the retreat begins."
   },
   "yogicEnergy": {
     "metaTitle": "Reveal Your Unique Yogic Energy",
@@ -5291,24 +5291,31 @@
   },
   "refundPolicy": {
     "metaTitle": "Refund & Cancellation Policy | YogaGarhi",
-    "metaDesc": "YogaGarhi transparent refund, booking deposit, and batch transfer policy for Yoga Teacher Training courses and retreats in Bali and Rishikesh.",
-    "badge": "Confidence & Flexibility Guarantee",
-    "title": "Refund & Batch Transfer Policy",
-    "intro": "We understand that life circumstances change. At YogaGarhi, we offer transparent, flexible booking terms designed to protect your investment in your spiritual journey.",
-    "highlight1Title": "100% Transferable",
-    "highlight1Text": "Your deposit is 100% transferable to any future batch or different location (Bali / Rishikesh) within 12 months.",
-    "highlight2Title": "12-Month Validity",
-    "highlight2Text": "Need to reschedule? You have 1 full year from your original date to attend your teacher training or retreat.",
-    "highlight3Title": "Medical Emergencies",
-    "highlight3Text": "In cases of unforeseen health or travel emergencies with documentation, priority batch rebooking is provided at zero fee.",
-    "section1Title": "1. Booking Deposit & Seat Reservation",
-    "section1Text": "To guarantee your spot and accommodation in your chosen Yoga Teacher Training Course or Retreat, a deposit of $250 USD (or equivalent) is required at the time of enrollment. This allows our ashram to reserve your room, prepare educational materials, and assign dedicated faculty mentors.",
-    "section2Title": "2. Batch Rescheduling & Date Changes",
-    "section2Text": "If you are unable to join your scheduled start date, you may reschedule to any upcoming batch within 12 months at zero penalty, provided you inform our admissions office at least 15 days prior to the course start date.",
-    "section3Title": "3. Balance Payment Terms",
-    "section3Text": "The remaining course fee balance is payable upon arrival at the ashram on orientation day (or via bank transfer / credit card link prior to arrival). Once a course has commenced and student has checked in, tuition fees and accommodation costs are non-refundable as resources and room allocations have been committed.",
-    "section4Title": "4. Questions & Admissions Support",
-    "section4Text": "For any questions regarding batch rescheduling or custom payment plans, our admissions team is available daily via email at {email} or WhatsApp at {phone}.",
+    "metaDesc": "YogaGarhi official refund, booking deposit, and cancellation policy for Yoga Teacher Training courses and retreats in Bali, Rishikesh, and Varkala.",
+    "badge": "Official Booking Terms",
+    "title": "Refund & Cancellation Policy",
+    "intro": "We want you to feel confident when you book. Here is our official policy regarding booking deposits, balance payments, and course cancellations.",
+    "highlightsSr": "Policy Highlights",
+    "highlight1Title": "Deposit Transfer",
+    "highlight1Text": "If you must cancel due to an emergency, you can move your deposit to a future batch within 12 months.",
+    "highlight2Title": "30-Day Balance Refund",
+    "highlight2Text": "Cancel 30 or more days before start to receive a full refund of your balance (minus deposit and bank fees).",
+    "highlight3Title": "Late Cancellation Credit",
+    "highlight3Text": "If you cancel less than 30 days before start, 100% of your balance becomes credit valid for 12 months.",
+    "section1Title": "1. Booking Deposit",
+    "section1Text": "To reserve your place and your room, we ask for a $250 USD deposit once your application is approved. This deposit is non-refundable. We use it right away to book your room and plan meals and staff for your batch.",
+    "section2Title": "2. Deposit Transfer (Within 12 Months)",
+    "section2Text": "Life can change suddenly. If you must cancel because of a flight problem, a medical issue, or another emergency, you can move your deposit to a future batch. The new start date must be within 12 months of your original start date.",
+    "section3Title": "3. Remaining Balance & Cancellations",
+    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
+    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid, minus the $250 deposit and any bank fees.",
+    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
+    "sectionAfterStartTitle": "4. After the Course Begins",
+    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
+    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
+    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost.",
+    "section4Title": "6. Questions & Admissions Support",
+    "section4Text": "For any questions regarding your booking or cancellations, our admissions team is available daily via email at {email} or WhatsApp at {phone}.",
     "contactBtn": "Contact Admissions Desk"
   },
   "course300Rishikesh": {
@@ -5510,11 +5517,11 @@
       },
       {
         "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your reservation with a $200–$300 registration deposit, and clear the remaining course balance in convenient installments prior to arrival or in person upon checking into the ashram."
+        "answer": "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
       },
       {
         "question": "What is the refund and rescheduling policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months with at least 14 days advance written notice."
+        "answer": "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
       },
       {
         "question": "What is the best time of year to take the 300-Hour training?",
@@ -5809,11 +5816,11 @@
       "code6": "Respect all",
       "code7": "No phones in class",
       "code8": "Full attendance required",
-      "refund1": "Reschedule within 12 months",
-      "refund2": "Transfer seat allowed",
-      "refund3": "Full refund if we cancel",
-      "refund4": "Trial day policy",
-      "refund5": "No refund after Day 1",
+      "refund1": "Deposit is non-refundable",
+      "refund2": "Deposit transferable within 12 months (emergencies)",
+      "refund3": "Balance refundable 30+ days before start",
+      "refund4": "No refund after the course begins",
+      "refund5": "Full refund if school cancels",
       "reviewsHeading": "What Our Students Say",
       "viewAllGoogle": "View all reviews on Google",
       "basedOnReviews": "Based on",
@@ -6248,11 +6255,11 @@
       },
       {
         "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "answer": "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
       },
       {
         "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "answer": "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
       },
       {
         "question": "What is the best time of year to visit Varkala?",
@@ -6520,11 +6527,11 @@
       "code6": "Respect all",
       "code7": "No phones in class",
       "code8": "Full attendance required",
-      "refund1": "Reschedule within 12 months",
-      "refund2": "Transfer seat allowed",
-      "refund3": "Full refund if we cancel",
-      "refund4": "Trial day policy",
-      "refund5": "No refund after Day 1",
+      "refund1": "Deposit is non-refundable",
+      "refund2": "Deposit transferable within 12 months (emergencies)",
+      "refund3": "Balance refundable 30+ days before start",
+      "refund4": "No refund after the course begins",
+      "refund5": "Full refund if school cancels",
       "reviewsHeading": "What Our Students Say",
       "viewAllGoogle": "View all reviews on Google",
       "basedOnReviews": "Based on",
@@ -6997,11 +7004,11 @@
       },
       {
         "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "answer": "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
       },
       {
         "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "answer": "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
       },
       {
         "question": "What is the best time of year to visit Varkala for yoga training?",
@@ -7294,11 +7301,11 @@
       "code6": "Respect all",
       "code7": "No phones in class",
       "code8": "Full attendance required",
-      "refund1": "Reschedule within 12 months",
-      "refund2": "Transfer seat allowed",
-      "refund3": "Full refund if we cancel",
-      "refund4": "Trial day policy",
-      "refund5": "No refund after Day 1",
+      "refund1": "Deposit is non-refundable",
+      "refund2": "Deposit transferable within 12 months (emergencies)",
+      "refund3": "Balance refundable 30+ days before start",
+      "refund4": "No refund after the course begins",
+      "refund5": "Full refund if school cancels",
       "reviewsHeading": "What Our Students Say",
       "viewAllGoogle": "View all reviews on Google",
       "basedOnReviews": "Based on",
@@ -7729,11 +7736,11 @@
       },
       {
         "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your reservation with a $200–$300 registration deposit, and clear the remaining course balance in convenient installments prior to arrival or in person upon checking into the ashram."
+        "answer": "Yes, you can reserve your seat with a $250 deposit. The remaining balance is due at least 30 days before your course starts."
       },
       {
         "question": "What is the refund and rescheduling policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months with at least 14 days advance written notice."
+        "answer": "Your $250 deposit is non-refundable. If you must cancel because of an emergency, you can move it to a future batch within 12 months. The rest of the fee is due 30 days before the course starts. If you cancel 30 or more days before the start, we refund the balance (minus the deposit and bank fees). If you cancel later, the balance becomes credit for any course within 12 months. There are no refunds after the course begins."
       },
       {
         "question": "What is the best time of year to take the 300-Hour training?",
@@ -8028,11 +8035,11 @@
       "code6": "Respect all",
       "code7": "No phones in class",
       "code8": "Full attendance required",
-      "refund1": "Reschedule within 12 months",
-      "refund2": "Transfer seat allowed",
-      "refund3": "Full refund if we cancel",
-      "refund4": "Trial day policy",
-      "refund5": "No refund after Day 1",
+      "refund1": "Deposit is non-refundable",
+      "refund2": "Deposit transferable within 12 months (emergencies)",
+      "refund3": "Balance refundable 30+ days before start",
+      "refund4": "No refund after the course begins",
+      "refund5": "Full refund if school cancels",
       "reviewsHeading": "What Our Students Say",
       "viewAllGoogle": "View all reviews on Google",
       "basedOnReviews": "Based on",
