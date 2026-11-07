@@ -218,16 +218,18 @@
       "h1": "Yoga Alliance gecertificeerde yogadocentenopleiding in Bali & Rishikesh",
       "tagline": "Eeuwenoude wijsheid uit de Himalaya. Echte yoga, geleefd en onderwezen.",
       "statStudents": "Afgestudeerde studenten",
-      "statStyle": "Multi-Style",
+      "statStyle": "Multistijl",
       "statStyleSub": "Authentieke yoga",
       "statBatch": "8–10 studenten",
       "statBatchSub": "Kleine groepen",
       "statCert": "100%",
-      "statCertSub": "Yoga Alliance gecertificeerd",
+      "statCertSub": "Officieel gecertificeerd",
       "explore200": "Ontdek 200 Uur YTTC",
       "bookCall": "Plan gesprek",
       "quickEnquiry": "Snelle vraag",
-      "chatWhatsApp": "WhatsApp"
+      "chatWhatsApp": "WhatsApp",
+      "statStudentsCount": "500+",
+      "statAlliance": "Yoga Alliance"
     },
     "welcome": {
       "badge": "Over YogaGarhi Ashram",

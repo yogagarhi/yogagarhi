@@ -218,16 +218,18 @@
       "h1": "Formation de professeur de yoga certifiée Yoga Alliance à Bali & Rishikesh",
       "tagline": "Sagesse ancestrale de l'Himalaya. Un yoga authentique, vécu & enseigné.",
       "statStudents": "Élèves diplômés",
-      "statStyle": "Multi-Style",
+      "statStyle": "Multi-Styles",
       "statStyleSub": "Yoga authentique",
       "statBatch": "8–10 élèves",
       "statBatchSub": "Petits groupes",
       "statCert": "100%",
-      "statCertSub": "Certifié Yoga Alliance",
+      "statCertSub": "Officiellement certifié",
       "explore200": "Découvrir le YTTC 200 heures",
       "bookCall": "Réserver un appel",
       "quickEnquiry": "Demande rapide",
-      "chatWhatsApp": "WhatsApp"
+      "chatWhatsApp": "WhatsApp",
+      "statStudentsCount": "500+",
+      "statAlliance": "Yoga Alliance"
     },
     "welcome": {
       "badge": "À propos de l'ashram YogaGarhi",

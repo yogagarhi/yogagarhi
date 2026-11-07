@@ -218,16 +218,18 @@
       "h1": "Курс подготовки преподавателей йоги с сертификацией Yoga Alliance на Бали и в Ришикеше",
       "tagline": "Древняя мудрость Гималаев. Подлинная йога, прожитая и переданная мастерами.",
       "statStudents": "Выпускников",
-      "statStyle": "Multi-Style",
+      "statStyle": "Мульти-стиль",
       "statStyleSub": "Подлинная йога",
       "statBatch": "8–10 студентов",
       "statBatchSub": "Маленькие группы",
       "statCert": "100%",
-      "statCertSub": "Сертификация Yoga Alliance",
+      "statCertSub": "Официальный сертификат",
       "explore200": "Узнать о 200-часовом YTTC",
       "bookCall": "Записаться на звонок",
       "quickEnquiry": "Быстрый запрос",
-      "chatWhatsApp": "WhatsApp"
+      "chatWhatsApp": "WhatsApp",
+      "statStudentsCount": "500+",
+      "statAlliance": "Yoga Alliance"
     },
     "welcome": {
       "badge": "Об ашраме YogaGarhi",

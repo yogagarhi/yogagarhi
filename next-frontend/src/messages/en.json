@@ -223,11 +223,13 @@
       "statBatch": "8–10 Students",
       "statBatchSub": "Small Group Size",
       "statCert": "100%",
-      "statCertSub": "Yoga Alliance Certified",
+      "statCertSub": "Officially Certified",
       "explore200": "Explore 200-Hour YTTC",
       "bookCall": "Book a Call",
       "quickEnquiry": "Quick Enquiry",
-      "chatWhatsApp": "WhatsApp"
+      "chatWhatsApp": "WhatsApp",
+      "statStudentsCount": "500+",
+      "statAlliance": "Yoga Alliance"
     },
     "welcome": {
       "badge": "Welcome to YogaGarhi",

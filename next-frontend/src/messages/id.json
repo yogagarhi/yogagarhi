@@ -218,16 +218,18 @@
       "h1": "Pelatihan Guru Yoga Bersertifikat Yoga Alliance di Bali & Rishikesh",
       "tagline": "Kebijaksanaan kuno Himalaya. Yoga autentik, dihayati & diajarkan.",
       "statStudents": "Siswa Lulusan",
-      "statStyle": "Multi-Style",
+      "statStyle": "Multi-Gaya",
       "statStyleSub": "Yoga Autentik",
       "statBatch": "8–10 Siswa",
       "statBatchSub": "Grup Kelas Kecil",
       "statCert": "100%",
-      "statCertSub": "Sertifikasi Yoga Alliance",
+      "statCertSub": "Sertifikasi Resmi",
       "explore200": "Pelajari YTTC 200 Jam",
       "bookCall": "Jadwalkan Panggilan",
       "quickEnquiry": "Pertanyaan Cepat",
-      "chatWhatsApp": "WhatsApp"
+      "chatWhatsApp": "WhatsApp",
+      "statStudentsCount": "500+",
+      "statAlliance": "Yoga Alliance"
     },
     "welcome": {
       "badge": "Tentang Ashram YogaGarhi",

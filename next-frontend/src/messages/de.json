@@ -223,11 +223,13 @@
       "statBatch": "8–10 Schüler",
       "statBatchSub": "Kleine Gruppengröße",
       "statCert": "100%",
-      "statCertSub": "Yoga Alliance zertifiziert",
+      "statCertSub": "Offiziell zertifiziert",
       "explore200": "200-Stunden YTTC entdecken",
       "bookCall": "Gespräch buchen",
       "quickEnquiry": "Schnellanfrage",
-      "chatWhatsApp": "WhatsApp"
+      "chatWhatsApp": "WhatsApp",
+      "statStudentsCount": "500+",
+      "statAlliance": "Yoga Alliance"
     },
     "welcome": {
       "badge": "Über den YogaGarhi Ashram",

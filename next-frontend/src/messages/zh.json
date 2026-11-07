@@ -223,11 +223,13 @@
       "statBatch": "8-10人",
       "statBatchSub": "精品小班教学",
       "statCert": "100%",
-      "statCertSub": "Yoga Alliance 认证",
+      "statCertSub": "官方认证",
       "explore200": "了解 200小时 YTTC",
       "bookCall": "预约免费咨询",
       "quickEnquiry": "快速咨询",
-      "chatWhatsApp": "WhatsApp 咨询"
+      "chatWhatsApp": "WhatsApp 咨询",
+      "statStudentsCount": "500+",
+      "statAlliance": "Yoga Alliance"
     },
     "welcome": {
       "badge": "关于 YogaGarhi 静修院",

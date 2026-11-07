@@ -249,45 +249,51 @@ export default function Header() {
       if (headerRowRef.current && logoRef.current) {
         const totalAvail = headerRowRef.current.clientWidth;
         
-        // 0. Use full unconstrained natural logo width (measure clone or scrollWidth, safe floor at 190)
+        // 0. Use full unconstrained natural logo width (measure clone or scrollWidth)
+        // Between 1024 and 1279px, logo is scaled down proportionally to ~120px; at 1280px+ full 175px+
+        const isLgLaptop = window.innerWidth >= 1024 && window.innerWidth < 1280;
+        const logoFloor = isLgLaptop ? 115 : 175;
         const naturalLogoWidth = Math.max(
           measureLogoRef.current?.offsetWidth || 0,
           logoRef.current?.scrollWidth || 0,
           logoRef.current?.offsetWidth || 0,
-          190
+          logoFloor
         );
         
         // 1. Dynamic CTA measurement from rendered elements
-        const standardWidth = measureStandardCtaRef.current?.offsetWidth || standardCtaRef.current?.offsetWidth || 150;
-        const compactWidth = measureCompactCtaRef.current?.offsetWidth || compactCtaRef.current?.offsetWidth || 120;
-        const maxCtaWidth = Math.max(standardWidth, compactWidth);
+        const standardWidth = measureStandardCtaRef.current?.offsetWidth || standardCtaRef.current?.offsetWidth || 140;
+        const compactWidth = measureCompactCtaRef.current?.offsetWidth || compactCtaRef.current?.offsetWidth || 105;
 
         // 2. Dynamic LanguageSwitcher measurement
-        const switcherWidth = measureSwitcherRef.current?.offsetWidth || switcherRef.current?.offsetWidth || 85;
+        const switcherWidth = measureSwitcherRef.current?.offsetWidth || switcherRef.current?.offsetWidth || 80;
 
-        // Gap between logo and nav (at least 16px, user requirement 4) + gap between nav and right controls (20px) + right controls internal gap (12px) + buffer (16px)
-        const navToLogoGap = 24;
-        const navToRightGap = 20;
-        const rightInternalGap = 12;
-        const safetyBuffer = 16;
-        const reservedRightWidth = switcherWidth + maxCtaWidth + rightInternalGap;
+        // Gap between logo and nav: reduced to exactly 16px (user requirement 3)
+        const navToLogoGap = 16;
+        const navToRightGap = 16;
+        const rightInternalGap = 8;
+        const fullSafetyBuffer = 20; // safe buffer to guarantee full nav never overflows
+        const compactSafetyBuffer = 6;
 
         // 3. Dynamic Nav measurement directly from DOM (full vs compact)
         const fullNavWidth = measureFullNavRef.current?.scrollWidth || navRef.current?.scrollWidth || 0;
         const compactNavWidth = measureCompactNavRef.current?.scrollWidth || 0;
 
-        const spaceForNav = totalAvail - naturalLogoWidth - reservedRightWidth - navToLogoGap - navToRightGap - safetyBuffer;
+        const reservedRightForFull = switcherWidth + standardWidth + rightInternalGap;
+        const spaceForFullNav = totalAvail - naturalLogoWidth - reservedRightForFull - navToLogoGap - navToRightGap - fullSafetyBuffer;
 
-        if (fullNavWidth > 0 && fullNavWidth <= spaceForNav) {
-          // Standard full desktop nav fits comfortably
+        const reservedRightForCompact = switcherWidth + compactWidth + rightInternalGap;
+        const spaceForCompactNav = totalAvail - naturalLogoWidth - reservedRightForCompact - navToLogoGap - navToRightGap - compactSafetyBuffer;
+
+        if (fullNavWidth > 0 && fullNavWidth <= spaceForFullNav) {
+          // 1. Standard full desktop nav fits comfortably
           setUseDesktopHamburger(false);
           setIsCompactNav(false);
-        } else if (compactNavWidth > 0 && compactNavWidth <= spaceForNav) {
-          // Compact desktop nav fits
+        } else if (compactNavWidth > 0 && compactNavWidth <= spaceForCompactNav) {
+          // 2. Compact desktop nav fits
           setUseDesktopHamburger(false);
           setIsCompactNav(true);
         } else {
-          // Still doesn't fit -> desktop hamburger menu with compact CTA
+          // 3. Still doesn't fit -> desktop hamburger menu with compact CTA
           setUseDesktopHamburger(true);
           setIsCompactNav(true);
         }
@@ -354,8 +360,8 @@ export default function Header() {
           : 'bg-background'
           }`}
       >
-        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-4 lg:px-6 2xl:px-8">
-          <div ref={headerRowRef} className="flex items-center justify-between flex-nowrap gap-2 sm:gap-3 md:gap-4 lg:gap-6 w-full min-w-0">
+        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-4 lg:px-4 xl:px-6 2xl:px-8">
+          <div ref={headerRowRef} className="flex items-center justify-between flex-nowrap gap-2 sm:gap-3 md:gap-4 lg:gap-4 xl:gap-6 w-full min-w-0">
 
             {/* Logo */}
             <Link
@@ -363,7 +369,7 @@ export default function Header() {
               data-testid="header-logo"
               href="/"
               prefetch={false}
-              className="flex items-center gap-1.5 sm:gap-2 group shrink min-w-0 md:shrink-0 md:min-w-fit max-md:overflow-hidden"
+              className="flex items-center gap-1.5 sm:gap-2 lg:gap-1.5 xl:gap-2 group shrink min-w-0 md:shrink-0 md:min-w-fit max-md:overflow-hidden"
             >
               <div className="relative shrink-0">
                 <Image
@@ -372,13 +378,13 @@ export default function Header() {
                   width={128}
                   height={118}
                   unoptimized
-                  className="object-contain h-7 min-[375px]:h-8 sm:h-11 md:h-14 w-auto aspect-[128/118] shrink-0"
+                  className="object-contain h-7 min-[375px]:h-8 sm:h-11 md:h-14 lg:h-8 xl:h-14 w-auto aspect-[128/118] shrink-0"
                 />
                 <div className="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-300" />
               </div>
 
               <div className="flex flex-col min-w-0 md:min-w-fit md:shrink-0 max-md:overflow-hidden">
-                <span className="font-heading font-bold text-primary tracking-wide text-xs min-[375px]:text-sm sm:text-lg md:text-xl max-md:truncate whitespace-nowrap">
+                <span className="font-heading font-bold text-primary tracking-wide text-xs min-[375px]:text-sm sm:text-lg md:text-xl lg:text-sm xl:text-xl max-md:truncate whitespace-nowrap">
                   YOGAGARHI
                 </span>
                 <span className={`text-[10px] text-muted-foreground tracking-[0.1em] uppercase ${isCompactNav || useDesktopHamburger ? 'hidden' : 'hidden 2xl:block'} whitespace-nowrap`}>
@@ -394,7 +400,7 @@ export default function Header() {
               aria-label="Main Navigation"
             >
               <ul className={`flex items-center bg-secondary/30 rounded-full list-none m-0 p-0 ${
-                isCompactNav ? 'px-1 py-1 gap-0.5' : 'px-1.5 py-1 xl:px-2 xl:py-1.5 gap-0.5 xl:gap-1'
+                isCompactNav ? 'px-1 py-0.5 gap-0.5' : 'px-1.5 py-1 xl:px-2 xl:py-1.5 gap-0.5 xl:gap-1'
               }`}>
                 {navLinks.map((link) => {
                   const isDropdownActive = link.id === 'courses' ? isCoursesActive :
@@ -418,9 +424,9 @@ export default function Header() {
                             aria-expanded={openDropdown === dropdownKey}
                             aria-label={`${link.name} navigation menu`}
                             onClick={() => setOpenDropdown(openDropdown === dropdownKey ? null : dropdownKey)}
-                            className={`flex items-center gap-1 rounded-full font-medium transition-all duration-300 whitespace-nowrap shrink-0 ${
+                            className={`flex items-center ${isCompactNav ? 'gap-0.5' : 'gap-1'} rounded-full font-medium transition-all duration-300 whitespace-nowrap shrink-0 ${
                               isCompactNav
-                                ? 'px-2 py-1 text-xs'
+                                ? 'px-1 py-1 text-[11px] min-[1366px]:text-xs'
                                 : 'px-2.5 py-1.5 xl:px-3.5 xl:py-2 text-xs xl:text-sm'
                             } ${isDropdownActive
                               ? 'bg-primary text-primary-foreground'
@@ -428,7 +434,7 @@ export default function Header() {
                               }`}
                           >
                             {link.name}
-                            <ChevronDown className={`h-3.5 w-3.5 shrink-0 transition-transform duration-200 ${openDropdown === dropdownKey ? 'rotate-180' : ''
+                            <ChevronDown className={`${isCompactNav ? 'h-3 w-3' : 'h-3.5 w-3.5'} shrink-0 transition-transform duration-200 ${openDropdown === dropdownKey ? 'rotate-180' : ''
                               }`} />
                           </button>
 
@@ -530,11 +536,11 @@ export default function Header() {
                         <Link
                           href={link.href}
                           prefetch={false}
-                          className={`rounded-full font-medium transition-all duration-300 whitespace-nowrap shrink-0 ${
-                            isCompactNav
-                              ? 'px-2 py-1 text-xs'
-                              : 'px-2.5 py-1.5 xl:px-3.5 xl:py-2 text-xs xl:text-sm'
-                          } ${isActive(link.href)
+                              className={`rounded-full font-medium transition-all duration-300 whitespace-nowrap shrink-0 ${
+                                isCompactNav
+                                  ? 'px-1 py-1 text-[11px] min-[1366px]:text-xs'
+                                  : 'px-2.5 py-1.5 xl:px-3.5 xl:py-2 text-xs xl:text-sm'
+                              } ${isActive(link.href)
                             ? 'bg-primary text-primary-foreground'
                             : 'text-foreground/70 hover:text-primary hover:bg-secondary/50'
                             }`}
@@ -571,7 +577,7 @@ export default function Header() {
                 ref={standardCtaRef}
                 type="button"
                 variant="default"
-                className={`${useDesktopHamburger ? 'hidden' : 'hidden md:flex'} bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-3.5 py-2 xl:px-5 xl:py-2.5 text-xs xl:text-sm h-9 lg:h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap shrink-0`}
+                className={`${useDesktopHamburger ? 'hidden' : 'hidden md:flex'} bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg ${isCompactNav ? 'px-2.5 py-1.5 text-xs' : 'px-3.5 py-2 xl:px-5 xl:py-2.5 text-xs xl:text-sm'} h-9 lg:h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap shrink-0`}
                 onClick={() => setShowEnrollDialog(true)}
               >
                 {tNav("beginJourney")}
@@ -759,7 +765,7 @@ export default function Header() {
           <div
             ref={measureLogoRef}
             tabIndex={-1}
-            className="flex items-center gap-2 shrink-0 select-none"
+            className="flex items-center gap-1.5 sm:gap-2 lg:gap-1.5 xl:gap-2 shrink-0 select-none"
           >
             <div className="relative shrink-0">
               <Image
@@ -768,11 +774,11 @@ export default function Header() {
                 width={128}
                 height={118}
                 unoptimized
-                className="object-contain h-14 w-auto aspect-[128/118] shrink-0"
+                className="object-contain h-7 min-[375px]:h-8 sm:h-11 md:h-14 lg:h-8 xl:h-14 w-auto aspect-[128/118] shrink-0"
               />
             </div>
             <div className="flex flex-col shrink-0">
-              <span className="font-heading font-bold text-primary tracking-wide text-xl whitespace-nowrap">
+              <span className="font-heading font-bold text-primary tracking-wide text-xs min-[375px]:text-sm sm:text-lg md:text-xl lg:text-sm xl:text-xl whitespace-nowrap">
                 YOGAGARHI
               </span>
             </div>
@@ -790,7 +796,7 @@ export default function Header() {
           <span
             ref={measureCompactCtaRef}
             tabIndex={-1}
-            className="inline-flex items-center justify-center bg-[#2D7A70] text-white font-semibold rounded-lg px-2.5 sm:px-3.5 h-9 text-xs sm:text-sm whitespace-nowrap select-none"
+            className="inline-flex items-center justify-center bg-[#2D7A70] text-white font-semibold rounded-lg px-2.5 py-1.5 h-9 text-xs whitespace-nowrap select-none"
           >
             {tNav("beginJourney")}
           </span>
@@ -804,11 +810,11 @@ export default function Header() {
             ))}
           </ul>
           {/* Compact nav clone */}
-          <ul ref={measureCompactNavRef} tabIndex={-1} className="flex items-center px-1 py-1 gap-0.5 text-xs list-none m-0 p-0 font-medium select-none">
+          <ul ref={measureCompactNavRef} tabIndex={-1} className="flex items-center px-1 py-0.5 gap-0.5 list-none m-0 p-0 font-medium select-none">
             {navLinks.map((link) => (
-              <li key={link.id || link.name} tabIndex={-1} className="flex items-center gap-1 px-2 py-1 whitespace-nowrap">
+              <li key={link.id || link.name} tabIndex={-1} className="flex items-center gap-0.5 px-1 py-1 text-[11px] min-[1366px]:text-xs whitespace-nowrap">
                 <span>{link.name}</span>
-                {link.dropdown && <ChevronDown className="h-3.5 w-3.5 shrink-0" />}
+                {link.dropdown && <ChevronDown className="h-3 w-3 shrink-0" />}
               </li>
             ))}
           </ul>

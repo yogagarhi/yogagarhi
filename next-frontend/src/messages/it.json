@@ -218,16 +218,18 @@
       "h1": "Corso di formazione per insegnanti di yoga certificato Yoga Alliance a Bali e Rishikesh",
       "tagline": "Antica saggezza dell'Himalaya. Yoga autentico, vissuto e insegnato.",
       "statStudents": "Allievi diplomati",
-      "statStyle": "Multi-Style",
+      "statStyle": "Multi-Stile",
       "statStyleSub": "Yoga autentico",
       "statBatch": "8–10 allievi",
       "statBatchSub": "Piccoli gruppi",
       "statCert": "100%",
-      "statCertSub": "Certificato Yoga Alliance",
+      "statCertSub": "Certificazione ufficiale",
       "explore200": "Scopri il corso 200 Ore",
       "bookCall": "Prenota una chiamata",
       "quickEnquiry": "Richiesta rapida",
-      "chatWhatsApp": "WhatsApp"
+      "chatWhatsApp": "WhatsApp",
+      "statStudentsCount": "500+",
+      "statAlliance": "Yoga Alliance"
     },
     "welcome": {
       "badge": "Sull'ashram YogaGarhi",

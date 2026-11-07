@@ -223,11 +223,13 @@
       "statBatch": "8〜10名",
       "statBatchSub": "少人数限定",
       "statCert": "100%",
-      "statCertSub": "Yoga Alliance 認定",
+      "statCertSub": "公式認定",
       "explore200": "200時間 YTTC を見る",
       "bookCall": "無料相談を予約",
       "quickEnquiry": "クイック相談",
-      "chatWhatsApp": "WhatsApp"
+      "chatWhatsApp": "WhatsApp",
+      "statStudentsCount": "500+",
+      "statAlliance": "Yoga Alliance"
     },
     "welcome": {
       "badge": "YogaGarhi アシュラムについて",

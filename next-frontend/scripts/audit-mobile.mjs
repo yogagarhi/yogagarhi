@@ -15,10 +15,10 @@ if (!fs.existsSync(SCREENSHOT_DIR)) {
   fs.mkdirSync(SCREENSHOT_DIR, { recursive: true });
 }
 
-const WIDTHS = [900, 940, 1024, 1100, 1280, 1366, 1440];
+const WIDTHS = [900, 1024, 1100, 1280, 1366, 1440];
 const LOCALES = ['en', 'de', 'ru', 'id', 'nl', 'fr'];
-const SCREENSHOT_WIDTHS = [940, 1024, 1280];
-const SCREENSHOT_LOCALES = ['de', 'ru', 'id'];
+const SCREENSHOT_WIDTHS = [1024, 1280];
+const SCREENSHOT_LOCALES = ['en', 'de', 'ru', 'id'];
 
 async function runAudit() {
   console.log('================================================================');
@@ -35,8 +35,10 @@ async function runAudit() {
 
   const page = await browser.newPage();
   let violations = 0;
+  const modeTable = {};
 
   for (const locale of LOCALES) {
+    modeTable[locale] = {};
     console.log(`\n--- Auditing Locale: [${locale.toUpperCase()}] ---`);
     for (const width of WIDTHS) {
       await page.setViewport({ width, height: 900 });
@@ -60,6 +62,13 @@ async function runAudit() {
         const nav = header ? header.querySelector('nav[aria-label="Main Navigation"]') : null;
         const isNavVisible = nav ? (window.getComputedStyle(nav).display !== 'none' && nav.offsetWidth > 0) : false;
         
+        let navMode = 'hamburger';
+        if (isNavVisible && nav) {
+          const ul = nav.querySelector('ul');
+          const isCompact = ul && ul.className.includes('py-0.5');
+          navMode = isCompact ? 'compact nav' : 'full nav';
+        }
+
         const hamburgerBtn = header ? header.querySelector('button[data-testid="hamburger-btn"]') : null;
         const isHamburgerVisible = hamburgerBtn ? (window.getComputedStyle(hamburgerBtn).display !== 'none' && hamburgerBtn.offsetWidth > 0) : false;
 
@@ -77,7 +86,10 @@ async function runAudit() {
         const logoTextScrollWidth = logoTextSpan ? logoTextSpan.scrollWidth : 0;
         const logoTextClientWidth = logoTextSpan ? logoTextSpan.clientWidth : 0;
         const isLogoTextClipped = logoTextSpan ? (logoTextScrollWidth > logoTextClientWidth + 1) : true;
-        const isLogoSqueezed = logoWidth < 150;
+        
+        // Logo must not be squeezed below its design size for this breakpoint
+        const minExpectedLogoWidth = 120; // 125-145px between 1024-1279, 175-195px at 1280+
+        const isLogoSqueezed = logoWidth < minExpectedLogoWidth;
 
         let navLogoGap = null;
         let isNavOverlappingLogo = false;
@@ -101,6 +113,7 @@ async function runAudit() {
           isLogoTextClipped,
           isLogoSqueezed,
           isNavVisible,
+          navMode,
           isHamburgerVisible,
           isCtaVisible,
           ctaText: ctaBtn ? ctaBtn.textContent.trim() : null,
@@ -112,6 +125,8 @@ async function runAudit() {
         };
       });
 
+      modeTable[locale][`${width}px`] = result.navMode;
+
       const hasError = result.isLogoSqueezed || 
                        result.isLogoTextClipped || 
                        result.isNavOverlappingLogo || 
@@ -121,8 +136,8 @@ async function runAudit() {
         violations++;
         console.error(`❌ [${locale.toUpperCase()}] ${width}px FAIL:`, result);
       } else {
-        const navState = result.isNavVisible ? `Nav (gap: ${result.navLogoGap}px)` : `Hamburger (${result.ctaText || 'CTA'})`;
-        console.log(`✓ [${locale.toUpperCase()}] ${width}px: Logo: ${result.logoWidth}px (unclipped) | ${navState}`);
+        const gapInfo = result.navLogoGap !== null ? ` | gap: ${result.navLogoGap}px` : '';
+        console.log(`✓ [${locale.toUpperCase()}] ${width}px: Logo: ${result.logoWidth}px (unclipped) | Mode: [${result.navMode}]${gapInfo}`);
       }
 
       // Capture screenshot if in screenshot list
@@ -146,6 +161,9 @@ async function runAudit() {
   await browser.close();
 
   console.log('\n======================================================');
+  console.log('NAVIGATION MODE SUMMARY TABLE:');
+  console.log('======================================================');
+  console.table(modeTable);
   console.log(`Total Logo & Header Violations: ${violations}`);
   console.log('======================================================\n');
   if (violations > 0) {

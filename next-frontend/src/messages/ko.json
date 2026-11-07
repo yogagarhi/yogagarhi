@@ -223,11 +223,13 @@
       "statBatch": "8~10명",
       "statBatchSub": "소수 정예 수업",
       "statCert": "100%",
-      "statCertSub": "Yoga Alliance 공인",
+      "statCertSub": "공식 인증",
       "explore200": "200시간 YTTC 보기",
       "bookCall": "무료 상담 예약",
       "quickEnquiry": "빠른 문의",
-      "chatWhatsApp": "WhatsApp 상담"
+      "chatWhatsApp": "WhatsApp 상담",
+      "statStudentsCount": "500+",
+      "statAlliance": "Yoga Alliance"
     },
     "welcome": {
       "badge": "YogaGarhi 아쉬람 소개",
