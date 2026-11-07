@@ -136,7 +136,9 @@
     "getPreYttcDetail": "Get Pre-YTTC Detail",
     "getPreYttcDetails": "Get Pre-YTTC Details",
     "preYttcDialogDesc": "Learn about our world-first Pre-YTTC preparation program",
-    "sending": "Sending..."
+    "sending": "Sending...",
+    "pricingNotice": "Tuition only from <price>{tuitionPrice}</price> | Residential packages from <price>{residentialPrice}</price>",
+    "nextAvailableTraining": "Next available training: {startDate} – {endDate}"
   },
   "footer": {
     "tagline": "Transform Within",
@@ -579,9 +581,9 @@
   },
   "course200": {
     "metaTitle": "200 Hour Yoga Teacher Training Bali – 24 Days, from $999 | YogaGarhi",
-    "metaDesc": "24-day Yoga Alliance RYT 200 course near Ubud, Bali. Small groups of 8–10, Hatha, Vinyasa & Ashtanga, 1-year mentorship. 5★ on Google. From $999.",
+    "metaDesc": "24-day Yoga Alliance RYS 200 course near Ubud, Bali. Eligible to register as RYT 200. Small groups of 8–10, 1-year mentorship. 5★ on Google. From $999.",
     "heroTitle": "200-Hour Yoga Teacher Training in Bali",
-    "heroSub": "An authentic 24-day residential multi-style immersion in Ubud, Bali. Certified by Yoga Alliance as RYT 200 with strictly 8–10 students per cohort.",
+    "heroSub": "Run by YogaGarhi, a Yoga Alliance Registered Yoga School (RYS 200). Graduates are eligible to register as RYT 200. Strictly 8–10 students per cohort.",
     "quickInfo": {
       "course": "Course",
       "courseVal": "200-Hour YTTC",
@@ -592,7 +594,7 @@
       "level": "Level",
       "levelVal": "Beginner to Intermediate",
       "certification": "Certification",
-      "certificationVal": "Yoga Alliance Registered School (RYS 200)",
+      "certificationVal": "Yoga Alliance Registered Yoga School (RYS 200)",
       "startingFrom": "Starting From",
       "startingFromVal": "$999 USD",
       "save": "Save",
@@ -625,7 +627,7 @@
       "p2Desc": "Get free online prep classes before you arrive in Bali. This helps you build strength and learn the basics early.",
       "p3Title": "1-Year Post-Graduation Mentorship",
       "p3Highlight": "Lifelong Community",
-      "p3Desc": "Graduate with a Yoga Alliance RYT 200 certificate. You also get full career coaching for a whole year.",
+      "p3Desc": "Graduate with a certificate of completion from a Yoga Alliance Registered Yoga School (RYS 200), eligible to register with Yoga Alliance as RYT 200. You also get full career coaching for a whole year.",
       "p4Title": "Lifetime Free Course Repeat",
       "p4Highlight": "Tuition-Free Return",
       "p4Desc": "Re-attend any future 200-hour training at zero tuition cost. When you return to refresh your practice, you only pay for your food and accommodation.",
@@ -645,7 +647,7 @@
       "selfStudy": "Self-Study & Practicum",
       "selfStudyDesc": "Guided readings, journaling, peer practice, and class sequencing assignments.",
       "totalCert": "Total Certification",
-      "totalCertDesc": "Meets and exceeds Yoga Alliance RYT 200 standards.",
+      "totalCertDesc": "Meets and exceeds Yoga Alliance RYS 200 standards.",
       "hoursUnit": "Hours"
     },
     "syllabus": {
@@ -752,7 +754,7 @@
       "sub": "Everything provided to ensure a worry-free, deeply transformative stay.",
       "incAccom": "23 Nights residential accommodation",
       "incMeals": "3 Freshly prepared sattvic vegetarian/vegan meals daily",
-      "incCert": "Yoga Alliance RYT 200 Certificate upon graduation",
+      "incCert": "Certificate of Completion from YogaGarhi (RYS 200); eligible to register with Yoga Alliance as RYT 200",
       "incManuals": "Official course manuals, notebooks, and study materials",
       "incKit": "Yoga mat and practice props provided",
       "incExcursions": "Sacred cultural excursions (water temple, rice fields, Balinese dance)",
@@ -769,7 +771,7 @@
       "heading": "Accommodation & Pricing Packages",
       "sub": "Transparent, all-inclusive pricing with zero hidden charges.",
       "tuitionOnly": "Tuition Only Package",
-      "tuitionOnlyDesc": "Course tuition, official study materials, and Yoga Alliance certification. Accommodation and meals are not included.",
+      "tuitionOnlyDesc": "Course tuition, official study materials, and YogaGarhi RYS 200 certification (eligible to register with Yoga Alliance as RYT 200). Accommodation and meals are not included.",
       "triple": "Triple Sharing Room",
       "tripleDesc": "Spacious air-conditioned room shared with two fellow students, ensuite bathroom, private balcony.",
       "double": "Double Sharing Room",
@@ -792,7 +794,13 @@
       "codeOfConduct": "Code of Conduct",
       "refundCancellation": "Refund & Cancellation",
       "ryt200Title": "Registered Yoga Teacher (RYT 200)",
-      "viewRegistry": "View Yoga Alliance School Registry"
+      "viewRegistry": "View Yoga Alliance School Registry",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA Registered School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course, you will receive an internationally recognized certification, allowing you to become a Registered Yoga Teacher (RYT). This certification opens doors for you to teach yoga anywhere in the world.",
+      "rysLabel": "RYS (Registered Yoga School)",
+      "rysDesc": "YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.",
+      "rytLabel": "RYT (Registered Yoga Teacher)",
+      "rytDesc": "The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide."
     },
     "faqsHeading": "Frequently Asked Questions",
     "faqs": [
@@ -814,7 +822,7 @@
       },
       {
         "question": "What certification will I receive, and is it globally recognized?",
-        "answer": "Yes. Once you pass your practical exams, you earn a Yoga Alliance RYT 200 certificate. This qualifies you to teach yoga professionally anywhere in the world."
+        "answer": "Upon completing all contact hours and passing practical assessments, you receive a 200-Hour Certificate of Completion from YogaGarhi, a Yoga Alliance Registered Yoga School (RYS 200). Graduates are eligible to register with Yoga Alliance as RYT 200, qualifying you to teach yoga professionally worldwide."
       },
       {
         "question": "What room accommodation options and prices are available?",
@@ -822,7 +830,7 @@
       },
       {
         "question": "What is included in the course fee?",
-        "answer": "For residential packages, the fee includes everything you need for your stay:\n• 23 nights accommodation (with attached bathroom, hot water, AC or fan, Wi-Fi, and daily cleaning)\n• 3 healthy vegetarian meals daily, plus herbal teas and drinking water\n• Official study manuals and notebooks\n• Yoga mats and props for practice\n• Airport pickup from DPS\n• Cultural excursions (rice field trek, Balinese dance show, and sacred water temple visits)\n• A Balinese massage\n• Pre-TTC online preparation\n• Special workshops in Arm Balance and Ayurveda\n• YogaGarhi 35+ creative sequencing book\n• Yoga Alliance RYT 200 certification upon graduation\n• Lifetime course repetition privileges\nFor the Tuition-Only package ($999 USD), accommodation and meals are not included."
+        "answer": "For residential packages, the fee includes everything you need for your stay:\n• 23 nights accommodation (with attached bathroom, hot water, AC or fan, Wi-Fi, and daily cleaning)\n• 3 healthy vegetarian meals daily, plus herbal teas and drinking water\n• Official study manuals and notebooks\n• Yoga mats and props for practice\n• Airport pickup from DPS\n• Cultural excursions (rice field trek, Balinese dance show, and sacred water temple visits)\n• A Balinese massage\n• Pre-TTC online preparation\n• Special workshops in Arm Balance and Ayurveda\n• YogaGarhi 35+ creative sequencing book\n• Certificate of Completion from YogaGarhi (RYS 200), eligible to register with Yoga Alliance as RYT 200\n• Lifetime course repetition privileges\nFor the Tuition-Only package ($999 USD), accommodation and meals are not included."
       },
       {
         "question": "What is the refund and cancellation policy?",
@@ -834,19 +842,21 @@
       }
     ],
     "hero": {
-      "badge": "Yoga Alliance Certified RYT 200",
+      "badge": "Yoga Alliance Registered Yoga School (RYS 200)",
       "h1": "200 Hour Yoga Teacher Training in Bali",
       "sub": "Authentic Himalayan lineage, small intimate batches (8–10 students), serene Gianyar ashram near Ubud.",
       "quickDuration": "24 Days",
       "quickLevel": "Beginner to Intermediate",
-      "quickCert": "RYT 200 Yoga Alliance",
+      "quickCert": "RYS 200 (RYT 200 Eligible)",
       "quickLang": "English",
       "quickBatch": "8–10 Students",
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
       "btnCounselor": "Talk to Counselor",
-      "title": "200-Hour Yoga Teacher Training in Bali"
+      "title": "200-Hour Yoga Teacher Training in Bali",
+      "pricingNotice": "Tuition only from <price>{tuitionPrice}</price> | Residential packages from <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Next available training: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Course Overview & Ashram Experience",
@@ -1015,7 +1025,7 @@
       "careerImpactTitle": "Career Impact:",
       "careerImpactDesc": "With your 200-Hour certification, you can teach yoga worldwide. Lead classes in yoga studios, offer private lessons, host retreats, or teach online.",
       "card1Title": "Global Certification",
-      "card1Desc": "Yoga Alliance RYT-200 to start your career anywhere.",
+      "card1Desc": "Graduates are eligible to register with Yoga Alliance as RYT 200 to start your career anywhere.",
       "card2Title": "Master the Practice",
       "card2Desc": "Expert guidance in Hatha, Vinyasa, Ashtanga & Iyengar.",
       "card3Title": "Safety & Anatomy",
@@ -1117,7 +1127,7 @@
       "Outdoor excursions / weekend trips",
       "Airport pickup (nearest airport)",
       "24/7 campus support team",
-      "Certification upon completion",
+      "Certificate of Completion from YogaGarhi (RYS 200), eligible to register with Yoga Alliance as RYT 200",
       "Balinese massage",
       "Balinese dance show",
       "Rice field trek",
@@ -1140,8 +1150,8 @@
         "description": "Learn directly from seasoned yoga teachers from Rishikesh. Experience an authentic lineage that is never watered down."
       },
       {
-        "title": "Yoga Alliance Certified",
-        "description": "Earn an internationally recognized Yoga Alliance RYT 200 credential to register and teach worldwide."
+        "title": "200-Hour Certificate (RYT 200 Eligible)",
+        "description": "Receive a certificate from YogaGarhi, a Yoga Alliance Registered Yoga School (RYS 200), making graduates eligible to register with Yoga Alliance as RYT 200 to teach worldwide."
       },
       {
         "title": "Peaceful Bali Surroundings",
@@ -1282,7 +1292,7 @@
     "studentStories": {
       "badge": "Student Stories",
       "heading": "Hearts Transformed at Yogagarhi",
-      "sub": "\"Don't take our word for it. Hear from the practitioners who lived the journey.\"",
+      "sub": "Real journeys from teachers and seekers who walked this path before you.",
       "stories": [
         {
           "name": "Gurpreet Kaur Dhou",
@@ -1632,7 +1642,13 @@
       "refundCancellation": "Refund & Cancellation",
       "ryt200Title": "100-Hour Certificate of Completion",
       "viewRegistry": "View Yoga Alliance School Registry",
-      "meetsStandards": "Issued by YogaGarhi, a Yoga Alliance Registered Yoga School (RYS 200)"
+      "meetsStandards": "Issued by YogaGarhi, a Yoga Alliance Registered Yoga School (RYS 200)",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA Registered School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course, you will receive an internationally recognized certification, allowing you to become a Registered Yoga Teacher (RYT). This certification opens doors for you to teach yoga anywhere in the world.",
+      "rysLabel": "RYS (Registered Yoga School)",
+      "rysDesc": "YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.",
+      "rytLabel": "RYT (Registered Yoga Teacher)",
+      "rytDesc": "The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide."
     },
     "faqsHeading": "Frequently Asked Questions",
     "faqs": [
@@ -1681,7 +1697,9 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnCounselor": "Talk to Counselor",
+      "pricingNotice": "Tuition only from <price>{tuitionPrice}</price> | Residential packages from <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Next available training: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Bali",
@@ -2317,7 +2335,13 @@
       "codeOfConduct": "Code of Conduct",
       "refundCancellation": "Refund & Cancellation",
       "ryt200Title": "Registered Yoga Teacher (RYT 200)",
-      "viewRegistry": "View Yoga Alliance School Registry"
+      "viewRegistry": "View Yoga Alliance School Registry",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA Registered School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course, you will receive an internationally recognized certification, allowing you to become a Registered Yoga Teacher (RYT). This certification opens doors for you to teach yoga anywhere in the world.",
+      "rysLabel": "RYS (Registered Yoga School)",
+      "rysDesc": "YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.",
+      "rytLabel": "RYT (Registered Yoga Teacher)",
+      "rytDesc": "The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide."
     },
     "faqsHeading": "Frequently Asked Questions",
     "faqs": [
@@ -2358,7 +2382,9 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnCounselor": "Talk to Counselor",
+      "pricingNotice": "Tuition only from <price>{tuitionPrice}</price> | Residential packages from <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Next available training: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Advance Your Yogic Journey at YogaGarhi Bali",
@@ -3005,7 +3031,13 @@
       "codeOfConduct": "Code of Conduct",
       "refundCancellation": "Refund & Cancellation",
       "ryt200Title": "Registered Yoga Teacher (RYT 200)",
-      "viewRegistry": "View Yoga Alliance School Registry"
+      "viewRegistry": "View Yoga Alliance School Registry",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA Registered School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course, you will receive an internationally recognized certification, allowing you to become a Registered Yoga Teacher (RYT). This certification opens doors for you to teach yoga anywhere in the world.",
+      "rysLabel": "RYS (Registered Yoga School)",
+      "rysDesc": "YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.",
+      "rytLabel": "RYT (Registered Yoga Teacher)",
+      "rytDesc": "The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide."
     },
     "faqsHeading": "Frequently Asked Questions",
     "faqs": [
@@ -3074,7 +3106,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnCounselor": "Talk to Counselor",
+      "pricingNotice": "Tuition only from <price>{tuitionPrice}</price> | Residential packages from <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Next available training: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Rishikesh",
@@ -3762,7 +3796,13 @@
       "codeOfConduct": "Code of Conduct",
       "refundCancellation": "Refund & Cancellation",
       "ryt200Title": "Registered Yoga Teacher (RYT 200)",
-      "viewRegistry": "View Yoga Alliance School Registry"
+      "viewRegistry": "View Yoga Alliance School Registry",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA Registered School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course, you will receive an internationally recognized certification, allowing you to become a Registered Yoga Teacher (RYT). This certification opens doors for you to teach yoga anywhere in the world.",
+      "rysLabel": "RYS (Registered Yoga School)",
+      "rysDesc": "YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.",
+      "rytLabel": "RYT (Registered Yoga Teacher)",
+      "rytDesc": "The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide."
     },
     "faqsHeading": "Frequently Asked Questions",
     "faqs": [
@@ -3843,7 +3883,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnCounselor": "Talk to Counselor",
+      "pricingNotice": "Tuition only from <price>{tuitionPrice}</price> | Residential packages from <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Next available training: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Rishikesh",
@@ -5498,7 +5540,13 @@
       "codeOfConduct": "Code of Conduct",
       "refundCancellation": "Refund & Cancellation",
       "ryt200Title": "Registered Yoga Teacher (RYT 200)",
-      "viewRegistry": "View Yoga Alliance School Registry"
+      "viewRegistry": "View Yoga Alliance School Registry",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA Registered School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course, you will receive an internationally recognized certification, allowing you to become a Registered Yoga Teacher (RYT). This certification opens doors for you to teach yoga anywhere in the world.",
+      "rysLabel": "RYS (Registered Yoga School)",
+      "rysDesc": "YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.",
+      "rytLabel": "RYT (Registered Yoga Teacher)",
+      "rytDesc": "The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide."
     },
     "faqsHeading": "Frequently Asked Questions",
     "faqs": [
@@ -5579,7 +5627,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnCounselor": "Talk to Counselor",
+      "pricingNotice": "Tuition only from <price>{tuitionPrice}</price> | Residential packages from <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Next available training: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Rishikesh",
@@ -6232,7 +6282,13 @@
       "codeOfConduct": "Code of Conduct",
       "refundCancellation": "Refund & Cancellation",
       "ryt200Title": "Registered Yoga Teacher (RYT 200)",
-      "viewRegistry": "View Yoga Alliance School Registry"
+      "viewRegistry": "View Yoga Alliance School Registry",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA Registered School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course, you will receive an internationally recognized certification, allowing you to become a Registered Yoga Teacher (RYT). This certification opens doors for you to teach yoga anywhere in the world.",
+      "rysLabel": "RYS (Registered Yoga School)",
+      "rysDesc": "YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.",
+      "rytLabel": "RYT (Registered Yoga Teacher)",
+      "rytDesc": "The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide."
     },
     "faqsHeading": "Frequently Asked Questions",
     "faqs": [
@@ -6301,7 +6357,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnCounselor": "Talk to Counselor",
+      "pricingNotice": "Tuition only from <price>{tuitionPrice}</price> | Residential packages from <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Next available training: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Varkala",
@@ -6989,7 +7047,13 @@
       "codeOfConduct": "Code of Conduct",
       "refundCancellation": "Refund & Cancellation",
       "ryt200Title": "Registered Yoga Teacher (RYT 200)",
-      "viewRegistry": "View Yoga Alliance School Registry"
+      "viewRegistry": "View Yoga Alliance School Registry",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA Registered School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course, you will receive an internationally recognized certification, allowing you to become a Registered Yoga Teacher (RYT). This certification opens doors for you to teach yoga anywhere in the world.",
+      "rysLabel": "RYS (Registered Yoga School)",
+      "rysDesc": "YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.",
+      "rytLabel": "RYT (Registered Yoga Teacher)",
+      "rytDesc": "The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide."
     },
     "faqsHeading": "Frequently Asked Questions",
     "faqs": [
@@ -7070,7 +7134,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnCounselor": "Talk to Counselor",
+      "pricingNotice": "Tuition only from <price>{tuitionPrice}</price> | Residential packages from <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Next available training: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Varkala",
@@ -7717,7 +7783,13 @@
       "codeOfConduct": "Code of Conduct",
       "refundCancellation": "Refund & Cancellation",
       "ryt200Title": "Registered Yoga Teacher (RYT 200)",
-      "viewRegistry": "View Yoga Alliance School Registry"
+      "viewRegistry": "View Yoga Alliance School Registry",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA Registered School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course, you will receive an internationally recognized certification, allowing you to become a Registered Yoga Teacher (RYT). This certification opens doors for you to teach yoga anywhere in the world.",
+      "rysLabel": "RYS (Registered Yoga School)",
+      "rysDesc": "YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.",
+      "rytLabel": "RYT (Registered Yoga Teacher)",
+      "rytDesc": "The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide."
     },
     "faqsHeading": "Frequently Asked Questions",
     "faqs": [
@@ -7798,7 +7870,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Reserve Your Spot",
       "btnBrochure": "Download Syllabus",
-      "btnCounselor": "Talk to Counselor"
+      "btnCounselor": "Talk to Counselor",
+      "pricingNotice": "Tuition only from <price>{tuitionPrice}</price> | Residential packages from <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Next available training: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welcome to YogaGarhi Varkala",

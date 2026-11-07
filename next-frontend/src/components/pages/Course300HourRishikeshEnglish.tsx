@@ -1726,7 +1726,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                 <DialogTrigger asChild>
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-[#FF8C00] to-[#FF4500] text-white hover:from-[#FF4500] hover:to-[#FF8C00] font-bold px-10 shadow-xl shadow-orange-500/30 hover:scale-105 transition-all duration-300 border-none h-14 relative overflow-hidden group/btn"
+                    className="bg-gradient-to-r from-[#FF8C00] to-[#FF4500] text-white hover:from-[#FF4500] hover:to-[#FF8C00] font-bold px-10 shadow-xl shadow-orange-500/30 hover:scale-105 transition-all duration-300 border-none h-auto min-h-12 sm:h-14 py-3 sm:py-0 relative overflow-hidden group/btn text-center whitespace-normal break-words"
                   >
                     <span className="relative z-10 flex items-center gap-2">
                       <Download className="w-5 h-5" />
@@ -2028,24 +2028,24 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                 {dailySchedule.map((item, index) => (
                   <div
                     key={index}
-                    className="relative flex items-center gap-6"
+                    className="relative flex items-center gap-2 sm:gap-6 min-w-0"
                   >
                     {/* Time */}
-                    <div className="w-24 md:w-28 flex-shrink-0 text-right">
-                      <span className="font-heading text-lg md:text-xl font-semibold text-primary">{item.time}</span>
+                    <div className="w-16 min-[375px]:w-20 sm:w-24 md:w-28 flex-shrink-0 text-right min-w-0">
+                      <span className="font-heading text-xs min-[375px]:text-sm sm:text-lg md:text-xl font-semibold text-primary break-words leading-tight block">{item.time}</span>
                     </div>
 
                     {/* Timeline dot with pulse animation */}
                     <div className="flex-shrink-0 z-10">
                       <div
-                        className="w-4 h-4 rounded-full bg-primary animate-pulse-dot"
+                        className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary animate-pulse-dot"
                         style={{ animationDelay: `${index * 0.5}s` }}
                       />
                     </div>
 
                     {/* Activity card */}
-                    <div className="flex-1 bg-card border border-border rounded-lg px-6 py-4 shadow-sm">
-                      <span className="text-foreground font-medium">{item.activity}</span>
+                    <div className="flex-1 min-w-0 bg-card border border-border rounded-lg px-3 sm:px-6 py-2.5 sm:py-4 shadow-sm">
+                      <span className="text-foreground font-medium text-xs sm:text-base break-words">{item.activity}</span>
                     </div>
                   </div>
                 ))}
@@ -3651,7 +3651,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
               <Button
                 type="submit"
                 disabled={isSubmittingTour}
-                className="w-full h-12 bg-primary text-primary-foreground font-bold rounded-xl mt-2 transition-all hover:bg-primary/90"
+                className="w-full h-auto min-h-12 py-3 bg-primary text-primary-foreground font-bold rounded-xl mt-2 transition-all hover:bg-primary/90 text-center whitespace-normal break-words"
               >
                 {isSubmittingTour ? "Scheduling..." : "Submit Booking"}
               </Button>
@@ -4295,7 +4295,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
 
             {/* Sticky Footer */}
             <div className="px-6 sm:px-8 py-4 border-t border-border bg-background rounded-b-2xl sm:rounded-b-xl">
-              <Button className="w-full h-12 text-base font-bold" size="lg" disabled={!isEnrollFormComplete || isSubmittingEnroll} onClick={handleEnrollSubmit}>
+              <Button className="w-full h-auto min-h-12 py-3 text-base font-bold text-center whitespace-normal break-words" size="lg" disabled={!isEnrollFormComplete || isSubmittingEnroll} onClick={handleEnrollSubmit}>
                 {isSubmittingEnroll ? "Submitting..." : "Submit Enrollment"}
               </Button>
               <p className="text-center text-xs text-muted-foreground mt-2">Your information is secure and never shared</p>
@@ -4379,7 +4379,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
             <div className="grid grid-cols-1 gap-4 mt-6">
               <Button
                 variant="outline"
-                className="h-16 rounded-2xl text-lg gap-4 border-primary/20 bg-background hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 shadow-sm hover:shadow-md"
+                className="h-auto min-h-14 sm:h-16 py-3 rounded-2xl text-base sm:text-lg gap-3 sm:gap-4 border-primary/20 bg-background hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 shadow-sm hover:shadow-md text-center whitespace-normal break-words"
                 asChild
               >
                 <a
@@ -4395,7 +4395,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
               </Button>
               <Button
                 variant="outline"
-                className="h-16 rounded-2xl text-lg gap-4 border-primary/20 bg-background hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md"
+                className="h-auto min-h-14 sm:h-16 py-3 rounded-2xl text-base sm:text-lg gap-3 sm:gap-4 border-primary/20 bg-background hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md text-center whitespace-normal break-words"
                 asChild
               >
                 <a href="mailto:yogagarhi@gmail.com">

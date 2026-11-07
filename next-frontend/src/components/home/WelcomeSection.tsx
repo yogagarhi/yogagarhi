@@ -121,7 +121,7 @@ export default async function WelcomeSection() {
               <div className="flex flex-wrap gap-4">
                 <Button
                   variant="outline"
-                  className="h-12 px-6 rounded-xl text-base gap-2.5 border-primary/20 bg-background/80 hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 shadow-sm hover:shadow-md"
+                  className="h-auto min-h-12 py-3 px-6 rounded-xl text-sm sm:text-base gap-2.5 border-primary/20 bg-background/80 hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 shadow-sm hover:shadow-md text-center whitespace-normal break-words"
                   asChild
                 >
                   <a
@@ -135,7 +135,7 @@ export default async function WelcomeSection() {
                 </Button>
                 <Button
                   variant="outline"
-                  className="h-12 px-6 rounded-xl text-base gap-2.5 border-primary/20 bg-background/80 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md"
+                  className="h-auto min-h-12 py-3 px-6 rounded-xl text-sm sm:text-base gap-2.5 border-primary/20 bg-background/80 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md text-center whitespace-normal break-words"
                   asChild
                 >
                   <a href="mailto:yogagarhi@gmail.com">

@@ -136,7 +136,9 @@
     "getPreYttcDetail": "Получить подробности Pre-YTTC",
     "getPreYttcDetails": "Получить подробности Pre-YTTC",
     "preYttcDialogDesc": "Узнайте о нашей уникальной в мире программе предварительной подготовки к Pre-YTTC",
-    "sending": "Отправка..."
+    "sending": "Отправка...",
+    "pricingNotice": "Только обучение от <price>{tuitionPrice}</price> | Проживание с обучением от <price>{residentialPrice}</price>",
+    "nextAvailableTraining": "Следующий доступный курс: {startDate} – {endDate}"
   },
   "footer": {
     "tagline": "Трансформируйтесь изнутри",
@@ -595,7 +597,9 @@
       "btnReserve": "Забронировать место",
       "btnBrochure": "Скачать программу",
       "btnCounselor": "Консультация",
-      "title": "200-часовой курс подготовки преподавателей йоги на Бали"
+      "title": "200-часовой курс подготовки преподавателей йоги на Бали",
+      "pricingNotice": "Только обучение от <price>{tuitionPrice}</price> | Проживание с обучением от <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Следующий доступный курс: {startDate} – {endDate}"
     },
     "quickInfo": {
       "course": "Курс",
@@ -960,7 +964,13 @@
       "codeOfConduct": "Кодекс поведения",
       "refundCancellation": "Возврат и отмена",
       "ryt200Title": "Зарегистрированный преподаватель йоги (RYT 200)",
-      "viewRegistry": "Посмотреть реестр школ Yoga Alliance"
+      "viewRegistry": "Посмотреть реестр школ Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Зарегистрированная школа Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Наша школа YogaGarhi зарегистрирована в Yoga Alliance USA. После окончания курса вы получите международный сертификат, дающий право зарегистрироваться в качестве Registered Yoga Teacher (RYT). Этот сертификат позволяет преподавать йогу по всему миру.",
+      "rysLabel": "RYS (Зарегистрированная школа йоги)",
+      "rysDesc": "YogaGarhi — аккредитованная школа, уполномоченная обучать и сертифицировать преподавателей йоги в соответствии со строгими международными стандартами Yoga Alliance.",
+      "rytLabel": "RYT (Зарегистрированный преподаватель йоги)",
+      "rytDesc": "Международная квалификация, которую вы получаете после окончания курса, дающая право зарегистрироваться в Yoga Alliance и проводить занятия по всему миру."
     },
     "faqsHeading": "Часто задаваемые вопросы",
     "faqs": [
@@ -1632,7 +1642,13 @@
       "refundCancellation": "Возврат и отмена",
       "ryt200Title": "Сертификат об окончании 100-часового курса",
       "viewRegistry": "Посмотреть реестр школ Yoga Alliance",
-      "meetsStandards": "Выдан школой YogaGarhi, зарегистрированной школой Yoga Alliance (RYS 200)"
+      "meetsStandards": "Выдан школой YogaGarhi, зарегистрированной школой Yoga Alliance (RYS 200)",
+      "yaRegisteredSchoolTitle": "Зарегистрированная школа Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Наша школа YogaGarhi зарегистрирована в Yoga Alliance USA. После окончания курса вы получите международный сертификат, дающий право зарегистрироваться в качестве Registered Yoga Teacher (RYT). Этот сертификат позволяет преподавать йогу по всему миру.",
+      "rysLabel": "RYS (Зарегистрированная школа йоги)",
+      "rysDesc": "YogaGarhi — аккредитованная школа, уполномоченная обучать и сертифицировать преподавателей йоги в соответствии со строгими международными стандартами Yoga Alliance.",
+      "rytLabel": "RYT (Зарегистрированный преподаватель йоги)",
+      "rytDesc": "Международная квалификация, которую вы получаете после окончания курса, дающая право зарегистрироваться в Yoga Alliance и проводить занятия по всему миру."
     },
     "faqsHeading": "Часто задаваемые вопросы",
     "faqs": [
@@ -1681,7 +1697,9 @@
       "quickLocation": "Гианьяр, Бали",
       "btnReserve": "Забронировать место",
       "btnBrochure": "Скачать программу",
-      "btnCounselor": "Консультация"
+      "btnCounselor": "Консультация",
+      "pricingNotice": "Только обучение от <price>{tuitionPrice}</price> | Проживание с обучением от <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Следующий доступный курс: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Добро пожаловать в YogaGarhi Бали",
@@ -2317,7 +2335,13 @@
       "codeOfConduct": "Кодекс поведения",
       "refundCancellation": "Возврат и отмена",
       "ryt200Title": "Зарегистрированный преподаватель йоги (RYT 200)",
-      "viewRegistry": "Посмотреть реестр школ Yoga Alliance"
+      "viewRegistry": "Посмотреть реестр школ Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Зарегистрированная школа Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Наша школа YogaGarhi зарегистрирована в Yoga Alliance USA. После окончания курса вы получите международный сертификат, дающий право зарегистрироваться в качестве Registered Yoga Teacher (RYT). Этот сертификат позволяет преподавать йогу по всему миру.",
+      "rysLabel": "RYS (Зарегистрированная школа йоги)",
+      "rysDesc": "YogaGarhi — аккредитованная школа, уполномоченная обучать и сертифицировать преподавателей йоги в соответствии со строгими международными стандартами Yoga Alliance.",
+      "rytLabel": "RYT (Зарегистрированный преподаватель йоги)",
+      "rytDesc": "Международная квалификация, которую вы получаете после окончания курса, дающая право зарегистрироваться в Yoga Alliance и проводить занятия по всему миру."
     },
     "faqsHeading": "Часто задаваемые вопросы",
     "faqs": [
@@ -2358,7 +2382,9 @@
       "quickLocation": "Гианьяр, Бали",
       "btnReserve": "Забронировать место",
       "btnBrochure": "Скачать программу",
-      "btnCounselor": "Консультация"
+      "btnCounselor": "Консультация",
+      "pricingNotice": "Только обучение от <price>{tuitionPrice}</price> | Проживание с обучением от <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Следующий доступный курс: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Углубите свой путь в YogaGarhi Бали",
@@ -3005,7 +3031,13 @@
       "codeOfConduct": "Кодекс поведения",
       "refundCancellation": "Возврат и отмена",
       "ryt200Title": "Зарегистрированный преподаватель йоги (RYT 200)",
-      "viewRegistry": "Посмотреть реестр школ Yoga Alliance"
+      "viewRegistry": "Посмотреть реестр школ Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Зарегистрированная школа Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Наша школа YogaGarhi зарегистрирована в Yoga Alliance USA. После окончания курса вы получите международный сертификат, дающий право зарегистрироваться в качестве Registered Yoga Teacher (RYT). Этот сертификат позволяет преподавать йогу по всему миру.",
+      "rysLabel": "RYS (Зарегистрированная школа йоги)",
+      "rysDesc": "YogaGarhi — аккредитованная школа, уполномоченная обучать и сертифицировать преподавателей йоги в соответствии со строгими международными стандартами Yoga Alliance.",
+      "rytLabel": "RYT (Зарегистрированный преподаватель йоги)",
+      "rytDesc": "Международная квалификация, которую вы получаете после окончания курса, дающая право зарегистрироваться в Yoga Alliance и проводить занятия по всему миру."
     },
     "faqsHeading": "Часто задаваемые вопросы",
     "faqs": [
@@ -3074,7 +3106,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Забронировать место",
       "btnBrochure": "Скачать программу",
-      "btnCounselor": "Консультация"
+      "btnCounselor": "Консультация",
+      "pricingNotice": "Только обучение от <price>{tuitionPrice}</price> | Проживание с обучением от <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Следующий доступный курс: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Добро пожаловать в YogaGarhi Ришикеш",
@@ -3762,7 +3796,13 @@
       "codeOfConduct": "Кодекс поведения",
       "refundCancellation": "Возврат и отмена",
       "ryt200Title": "Зарегистрированный преподаватель йоги (RYT 200)",
-      "viewRegistry": "Посмотреть реестр школ Yoga Alliance"
+      "viewRegistry": "Посмотреть реестр школ Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Зарегистрированная школа Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Наша школа YogaGarhi зарегистрирована в Yoga Alliance USA. После окончания курса вы получите международный сертификат, дающий право зарегистрироваться в качестве Registered Yoga Teacher (RYT). Этот сертификат позволяет преподавать йогу по всему миру.",
+      "rysLabel": "RYS (Зарегистрированная школа йоги)",
+      "rysDesc": "YogaGarhi — аккредитованная школа, уполномоченная обучать и сертифицировать преподавателей йоги в соответствии со строгими международными стандартами Yoga Alliance.",
+      "rytLabel": "RYT (Зарегистрированный преподаватель йоги)",
+      "rytDesc": "Международная квалификация, которую вы получаете после окончания курса, дающая право зарегистрироваться в Yoga Alliance и проводить занятия по всему миру."
     },
     "faqsHeading": "Часто задаваемые вопросы",
     "faqs": [
@@ -3843,7 +3883,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Забронировать место",
       "btnBrochure": "Скачать программу",
-      "btnCounselor": "Консультация"
+      "btnCounselor": "Консультация",
+      "pricingNotice": "Только обучение от <price>{tuitionPrice}</price> | Проживание с обучением от <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Следующий доступный курс: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Добро пожаловать в YogaGarhi Ришикеш",
@@ -5825,7 +5867,13 @@
       "codeOfConduct": "Кодекс поведения",
       "refundCancellation": "Возврат и отмена",
       "ryt200Title": "Зарегистрированный преподаватель йоги (RYT 200)",
-      "viewRegistry": "Посмотреть реестр школ Yoga Alliance"
+      "viewRegistry": "Посмотреть реестр школ Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Зарегистрированная школа Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Наша школа YogaGarhi зарегистрирована в Yoga Alliance USA. После окончания курса вы получите международный сертификат, дающий право зарегистрироваться в качестве Registered Yoga Teacher (RYT). Этот сертификат позволяет преподавать йогу по всему миру.",
+      "rysLabel": "RYS (Зарегистрированная школа йоги)",
+      "rysDesc": "YogaGarhi — аккредитованная школа, уполномоченная обучать и сертифицировать преподавателей йоги в соответствии со строгими международными стандартами Yoga Alliance.",
+      "rytLabel": "RYT (Зарегистрированный преподаватель йоги)",
+      "rytDesc": "Международная квалификация, которую вы получаете после окончания курса, дающая право зарегистрироваться в Yoga Alliance и проводить занятия по всему миру."
     },
     "faqsHeading": "Часто задаваемые вопросы",
     "faqs": [
@@ -5906,7 +5954,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Забронировать место",
       "btnBrochure": "Скачать программу",
-      "btnCounselor": "Консультация"
+      "btnCounselor": "Консультация",
+      "pricingNotice": "Только обучение от <price>{tuitionPrice}</price> | Проживание с обучением от <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Следующий доступный курс: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Добро пожаловать в YogaGarhi Ришикеш",
@@ -6553,7 +6603,13 @@
       "codeOfConduct": "Кодекс поведения",
       "refundCancellation": "Возврат и отмена",
       "ryt200Title": "Зарегистрированный преподаватель йоги (RYT 200)",
-      "viewRegistry": "Посмотреть реестр школ Yoga Alliance"
+      "viewRegistry": "Посмотреть реестр школ Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Зарегистрированная школа Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Наша школа YogaGarhi зарегистрирована в Yoga Alliance USA. После окончания курса вы получите международный сертификат, дающий право зарегистрироваться в качестве Registered Yoga Teacher (RYT). Этот сертификат позволяет преподавать йогу по всему миру.",
+      "rysLabel": "RYS (Зарегистрированная школа йоги)",
+      "rysDesc": "YogaGarhi — аккредитованная школа, уполномоченная обучать и сертифицировать преподавателей йоги в соответствии со строгими международными стандартами Yoga Alliance.",
+      "rytLabel": "RYT (Зарегистрированный преподаватель йоги)",
+      "rytDesc": "Международная квалификация, которую вы получаете после окончания курса, дающая право зарегистрироваться в Yoga Alliance и проводить занятия по всему миру."
     },
     "faqsHeading": "Часто задаваемые вопросы",
     "faqs": [
@@ -6622,7 +6678,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Забронировать место",
       "btnBrochure": "Скачать программу",
-      "btnCounselor": "Консультация"
+      "btnCounselor": "Консультация",
+      "pricingNotice": "Только обучение от <price>{tuitionPrice}</price> | Проживание с обучением от <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Следующий доступный курс: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Добро пожаловать в YogaGarhi Варкала",
@@ -7310,7 +7368,13 @@
       "codeOfConduct": "Кодекс поведения",
       "refundCancellation": "Возврат и отмена",
       "ryt200Title": "Зарегистрированный преподаватель йоги (RYT 200)",
-      "viewRegistry": "Посмотреть реестр школ Yoga Alliance"
+      "viewRegistry": "Посмотреть реестр школ Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Зарегистрированная школа Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Наша школа YogaGarhi зарегистрирована в Yoga Alliance USA. После окончания курса вы получите международный сертификат, дающий право зарегистрироваться в качестве Registered Yoga Teacher (RYT). Этот сертификат позволяет преподавать йогу по всему миру.",
+      "rysLabel": "RYS (Зарегистрированная школа йоги)",
+      "rysDesc": "YogaGarhi — аккредитованная школа, уполномоченная обучать и сертифицировать преподавателей йоги в соответствии со строгими международными стандартами Yoga Alliance.",
+      "rytLabel": "RYT (Зарегистрированный преподаватель йоги)",
+      "rytDesc": "Международная квалификация, которую вы получаете после окончания курса, дающая право зарегистрироваться в Yoga Alliance и проводить занятия по всему миру."
     },
     "faqsHeading": "Часто задаваемые вопросы",
     "faqs": [
@@ -7391,7 +7455,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Забронировать место",
       "btnBrochure": "Скачать программу",
-      "btnCounselor": "Консультация"
+      "btnCounselor": "Консультация",
+      "pricingNotice": "Только обучение от <price>{tuitionPrice}</price> | Проживание с обучением от <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Следующий доступный курс: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Добро пожаловать в YogaGarhi Варкала",
@@ -8084,7 +8150,13 @@
       "codeOfConduct": "Кодекс поведения",
       "refundCancellation": "Возврат и отмена",
       "ryt200Title": "Зарегистрированный преподаватель йоги (RYT 200)",
-      "viewRegistry": "Посмотреть реестр школ Yoga Alliance"
+      "viewRegistry": "Посмотреть реестр школ Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Зарегистрированная школа Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Наша школа YogaGarhi зарегистрирована в Yoga Alliance USA. После окончания курса вы получите международный сертификат, дающий право зарегистрироваться в качестве Registered Yoga Teacher (RYT). Этот сертификат позволяет преподавать йогу по всему миру.",
+      "rysLabel": "RYS (Зарегистрированная школа йоги)",
+      "rysDesc": "YogaGarhi — аккредитованная школа, уполномоченная обучать и сертифицировать преподавателей йоги в соответствии со строгими международными стандартами Yoga Alliance.",
+      "rytLabel": "RYT (Зарегистрированный преподаватель йоги)",
+      "rytDesc": "Международная квалификация, которую вы получаете после окончания курса, дающая право зарегистрироваться в Yoga Alliance и проводить занятия по всему миру."
     },
     "faqsHeading": "Часто задаваемые вопросы",
     "faqs": [
@@ -8165,7 +8237,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Забронировать место",
       "btnBrochure": "Скачать программу",
-      "btnCounselor": "Консультация"
+      "btnCounselor": "Консультация",
+      "pricingNotice": "Только обучение от <price>{tuitionPrice}</price> | Проживание с обучением от <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Следующий доступный курс: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Добро пожаловать в YogaGarhi Варкала",

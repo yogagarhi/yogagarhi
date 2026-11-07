@@ -136,7 +136,9 @@
     "getPreYttcDetail": "Pre-YTTC 상세 정보 받기",
     "getPreYttcDetails": "Pre-YTTC 상세 정보 받기",
     "preYttcDialogDesc": "세계 최초의 독점적인 Pre-YTTC 사전 준비 프로그램에 대해 알아보세요",
-    "sending": "전송 중..."
+    "sending": "전송 중...",
+    "pricingNotice": "수업료 전용 <price>{tuitionPrice}</price>부터 | 숙박 패키지 <price>{residentialPrice}</price>부터",
+    "nextAvailableTraining": "다음 참여 가능한 교육: {startDate} ~ {endDate}"
   },
   "footer": {
     "tagline": "내면의 변화",
@@ -595,7 +597,9 @@
       "btnReserve": "예약하기",
       "btnBrochure": "상세 강의계획서 다운로드",
       "btnCounselor": "상담원과 대화하기",
-      "title": "발리 200시간 요가 지도자 과정"
+      "title": "발리 200시간 요가 지도자 과정",
+      "pricingNotice": "수업료 전용 <price>{tuitionPrice}</price>부터 | 숙박 패키지 <price>{residentialPrice}</price>부터",
+      "nextAvailableTraining": "다음 참여 가능한 교육: {startDate} ~ {endDate}"
     },
     "quickInfo": {
       "course": "과정명",
@@ -960,7 +964,13 @@
       "codeOfConduct": "수강생 행동 규범",
       "refundCancellation": "환불 및 취소 규정",
       "ryt200Title": "Yoga Alliance 등록 강사 (RYT 200)",
-      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기"
+      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 등록 스쿨 (RYS 200)",
+      "yaRegisteredSchoolDesc": "요가가르히는 Yoga Alliance USA 등록 스쿨입니다. 본 과정을 수료하면 국제적으로 공인된 수료증을 취득하여 Registered Yoga Teacher (RYT)로 등록할 수 있으며, 전 세계 어디서든 요가를 지도할 수 있는 자격을 갖추게 됩니다.",
+      "rysLabel": "RYS (등록 요가 스쿨)",
+      "rysDesc": "요가가르히는 Yoga Alliance의 엄격한 글로벌 커리큘럼 기준에 따라 요가 교사를 양성하고 인증할 수 있는 공인 스쿨입니다.",
+      "rytLabel": "RYT (등록 요가 교사)",
+      "rytDesc": "졸업 시 취득하는 국제 공인 자격으로, Yoga Alliance에 등록하여 전 세계 어디서나 수업을 진행할 수 있습니다."
     },
     "faqsHeading": "자주 묻는 질문",
     "faqs": [
@@ -1632,7 +1642,13 @@
       "refundCancellation": "환불 및 취소 규정",
       "ryt200Title": "100시간 수료증",
       "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기",
-      "meetsStandards": "요가 얼라이언스 등록 요가 학교(RYS 200) YogaGarhi 발행"
+      "meetsStandards": "요가 얼라이언스 등록 요가 학교(RYS 200) YogaGarhi 발행",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 등록 스쿨 (RYS 200)",
+      "yaRegisteredSchoolDesc": "요가가르히는 Yoga Alliance USA 등록 스쿨입니다. 본 과정을 수료하면 국제적으로 공인된 수료증을 취득하여 Registered Yoga Teacher (RYT)로 등록할 수 있으며, 전 세계 어디서든 요가를 지도할 수 있는 자격을 갖추게 됩니다.",
+      "rysLabel": "RYS (등록 요가 스쿨)",
+      "rysDesc": "요가가르히는 Yoga Alliance의 엄격한 글로벌 커리큘럼 기준에 따라 요가 교사를 양성하고 인증할 수 있는 공인 스쿨입니다.",
+      "rytLabel": "RYT (등록 요가 교사)",
+      "rytDesc": "졸업 시 취득하는 국제 공인 자격으로, Yoga Alliance에 등록하여 전 세계 어디서나 수업을 진행할 수 있습니다."
     },
     "faqsHeading": "자주 묻는 질문",
     "faqs": [
@@ -1681,7 +1697,9 @@
       "quickLocation": "발리 기안야르",
       "btnReserve": "예약하기",
       "btnBrochure": "상세 강의계획서 다운로드",
-      "btnCounselor": "상담원과 대화하기"
+      "btnCounselor": "상담원과 대화하기",
+      "pricingNotice": "수업료 전용 <price>{tuitionPrice}</price>부터 | 숙박 패키지 <price>{residentialPrice}</price>부터",
+      "nextAvailableTraining": "다음 참여 가능한 교육: {startDate} ~ {endDate}"
     },
     "overview": {
       "heading": "YogaGarhi 발리에 오신 것을 환영합니다",
@@ -2317,7 +2335,13 @@
       "codeOfConduct": "수강생 행동 규범",
       "refundCancellation": "환불 및 취소 규정",
       "ryt200Title": "Yoga Alliance 등록 강사 (RYT 200)",
-      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기"
+      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 등록 스쿨 (RYS 200)",
+      "yaRegisteredSchoolDesc": "요가가르히는 Yoga Alliance USA 등록 스쿨입니다. 본 과정을 수료하면 국제적으로 공인된 수료증을 취득하여 Registered Yoga Teacher (RYT)로 등록할 수 있으며, 전 세계 어디서든 요가를 지도할 수 있는 자격을 갖추게 됩니다.",
+      "rysLabel": "RYS (등록 요가 스쿨)",
+      "rysDesc": "요가가르히는 Yoga Alliance의 엄격한 글로벌 커리큘럼 기준에 따라 요가 교사를 양성하고 인증할 수 있는 공인 스쿨입니다.",
+      "rytLabel": "RYT (등록 요가 교사)",
+      "rytDesc": "졸업 시 취득하는 국제 공인 자격으로, Yoga Alliance에 등록하여 전 세계 어디서나 수업을 진행할 수 있습니다."
     },
     "faqsHeading": "자주 묻는 질문",
     "faqs": [
@@ -2358,7 +2382,9 @@
       "quickLocation": "발리 기안야르",
       "btnReserve": "예약하기",
       "btnBrochure": "상세 강의계획서 다운로드",
-      "btnCounselor": "상담원과 대화하기"
+      "btnCounselor": "상담원과 대화하기",
+      "pricingNotice": "수업료 전용 <price>{tuitionPrice}</price>부터 | 숙박 패키지 <price>{residentialPrice}</price>부터",
+      "nextAvailableTraining": "다음 참여 가능한 교육: {startDate} ~ {endDate}"
     },
     "overview": {
       "heading": "YogaGarhi 발리에서 더 깊은 요가의 길로 나아가세요",
@@ -3005,7 +3031,13 @@
       "codeOfConduct": "수강생 행동 규범",
       "refundCancellation": "환불 및 취소 규정",
       "ryt200Title": "Yoga Alliance 등록 강사 (RYT 200)",
-      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기"
+      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 등록 스쿨 (RYS 200)",
+      "yaRegisteredSchoolDesc": "요가가르히는 Yoga Alliance USA 등록 스쿨입니다. 본 과정을 수료하면 국제적으로 공인된 수료증을 취득하여 Registered Yoga Teacher (RYT)로 등록할 수 있으며, 전 세계 어디서든 요가를 지도할 수 있는 자격을 갖추게 됩니다.",
+      "rysLabel": "RYS (등록 요가 스쿨)",
+      "rysDesc": "요가가르히는 Yoga Alliance의 엄격한 글로벌 커리큘럼 기준에 따라 요가 교사를 양성하고 인증할 수 있는 공인 스쿨입니다.",
+      "rytLabel": "RYT (등록 요가 교사)",
+      "rytDesc": "졸업 시 취득하는 국제 공인 자격으로, Yoga Alliance에 등록하여 전 세계 어디서나 수업을 진행할 수 있습니다."
     },
     "faqsHeading": "자주 묻는 질문",
     "faqs": [
@@ -3074,7 +3106,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "예약하기",
       "btnBrochure": "상세 강의계획서 다운로드",
-      "btnCounselor": "상담원과 대화하기"
+      "btnCounselor": "상담원과 대화하기",
+      "pricingNotice": "수업료 전용 <price>{tuitionPrice}</price>부터 | 숙박 패키지 <price>{residentialPrice}</price>부터",
+      "nextAvailableTraining": "다음 참여 가능한 교육: {startDate} ~ {endDate}"
     },
     "overview": {
       "heading": "YogaGarhi 리시케시에 오신 것을 환영합니다",
@@ -3762,7 +3796,13 @@
       "codeOfConduct": "수강생 행동 규범",
       "refundCancellation": "환불 및 취소 규정",
       "ryt200Title": "Yoga Alliance 등록 강사 (RYT 200)",
-      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기"
+      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 등록 스쿨 (RYS 200)",
+      "yaRegisteredSchoolDesc": "요가가르히는 Yoga Alliance USA 등록 스쿨입니다. 본 과정을 수료하면 국제적으로 공인된 수료증을 취득하여 Registered Yoga Teacher (RYT)로 등록할 수 있으며, 전 세계 어디서든 요가를 지도할 수 있는 자격을 갖추게 됩니다.",
+      "rysLabel": "RYS (등록 요가 스쿨)",
+      "rysDesc": "요가가르히는 Yoga Alliance의 엄격한 글로벌 커리큘럼 기준에 따라 요가 교사를 양성하고 인증할 수 있는 공인 스쿨입니다.",
+      "rytLabel": "RYT (등록 요가 교사)",
+      "rytDesc": "졸업 시 취득하는 국제 공인 자격으로, Yoga Alliance에 등록하여 전 세계 어디서나 수업을 진행할 수 있습니다."
     },
     "faqsHeading": "자주 묻는 질문",
     "faqs": [
@@ -3843,7 +3883,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "예약하기",
       "btnBrochure": "상세 강의계획서 다운로드",
-      "btnCounselor": "상담원과 대화하기"
+      "btnCounselor": "상담원과 대화하기",
+      "pricingNotice": "수업료 전용 <price>{tuitionPrice}</price>부터 | 숙박 패키지 <price>{residentialPrice}</price>부터",
+      "nextAvailableTraining": "다음 참여 가능한 교육: {startDate} ~ {endDate}"
     },
     "overview": {
       "heading": "YogaGarhi 리시케시에 오신 것을 환영합니다",
@@ -5825,7 +5867,13 @@
       "codeOfConduct": "수강생 행동 규범",
       "refundCancellation": "환불 및 취소 규정",
       "ryt200Title": "Yoga Alliance 등록 강사 (RYT 200)",
-      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기"
+      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 등록 스쿨 (RYS 200)",
+      "yaRegisteredSchoolDesc": "요가가르히는 Yoga Alliance USA 등록 스쿨입니다. 본 과정을 수료하면 국제적으로 공인된 수료증을 취득하여 Registered Yoga Teacher (RYT)로 등록할 수 있으며, 전 세계 어디서든 요가를 지도할 수 있는 자격을 갖추게 됩니다.",
+      "rysLabel": "RYS (등록 요가 스쿨)",
+      "rysDesc": "요가가르히는 Yoga Alliance의 엄격한 글로벌 커리큘럼 기준에 따라 요가 교사를 양성하고 인증할 수 있는 공인 스쿨입니다.",
+      "rytLabel": "RYT (등록 요가 교사)",
+      "rytDesc": "졸업 시 취득하는 국제 공인 자격으로, Yoga Alliance에 등록하여 전 세계 어디서나 수업을 진행할 수 있습니다."
     },
     "faqsHeading": "자주 묻는 질문",
     "faqs": [
@@ -5906,7 +5954,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "예약하기",
       "btnBrochure": "상세 강의계획서 다운로드",
-      "btnCounselor": "상담원과 대화하기"
+      "btnCounselor": "상담원과 대화하기",
+      "pricingNotice": "수업료 전용 <price>{tuitionPrice}</price>부터 | 숙박 패키지 <price>{residentialPrice}</price>부터",
+      "nextAvailableTraining": "다음 참여 가능한 교육: {startDate} ~ {endDate}"
     },
     "overview": {
       "heading": "YogaGarhi 리시케시에 오신 것을 환영합니다",
@@ -6553,7 +6603,13 @@
       "codeOfConduct": "수강생 행동 규범",
       "refundCancellation": "환불 및 취소 규정",
       "ryt200Title": "Yoga Alliance 등록 강사 (RYT 200)",
-      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기"
+      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 등록 스쿨 (RYS 200)",
+      "yaRegisteredSchoolDesc": "요가가르히는 Yoga Alliance USA 등록 스쿨입니다. 본 과정을 수료하면 국제적으로 공인된 수료증을 취득하여 Registered Yoga Teacher (RYT)로 등록할 수 있으며, 전 세계 어디서든 요가를 지도할 수 있는 자격을 갖추게 됩니다.",
+      "rysLabel": "RYS (등록 요가 스쿨)",
+      "rysDesc": "요가가르히는 Yoga Alliance의 엄격한 글로벌 커리큘럼 기준에 따라 요가 교사를 양성하고 인증할 수 있는 공인 스쿨입니다.",
+      "rytLabel": "RYT (등록 요가 교사)",
+      "rytDesc": "졸업 시 취득하는 국제 공인 자격으로, Yoga Alliance에 등록하여 전 세계 어디서나 수업을 진행할 수 있습니다."
     },
     "faqsHeading": "자주 묻는 질문",
     "faqs": [
@@ -6622,7 +6678,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "예약하기",
       "btnBrochure": "상세 강의계획서 다운로드",
-      "btnCounselor": "상담원과 대화하기"
+      "btnCounselor": "상담원과 대화하기",
+      "pricingNotice": "수업료 전용 <price>{tuitionPrice}</price>부터 | 숙박 패키지 <price>{residentialPrice}</price>부터",
+      "nextAvailableTraining": "다음 참여 가능한 교육: {startDate} ~ {endDate}"
     },
     "overview": {
       "heading": "YogaGarhi 바르칼라에 오신 것을 환영합니다",
@@ -7310,7 +7368,13 @@
       "codeOfConduct": "수강생 행동 규범",
       "refundCancellation": "환불 및 취소 규정",
       "ryt200Title": "Yoga Alliance 등록 강사 (RYT 200)",
-      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기"
+      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 등록 스쿨 (RYS 200)",
+      "yaRegisteredSchoolDesc": "요가가르히는 Yoga Alliance USA 등록 스쿨입니다. 본 과정을 수료하면 국제적으로 공인된 수료증을 취득하여 Registered Yoga Teacher (RYT)로 등록할 수 있으며, 전 세계 어디서든 요가를 지도할 수 있는 자격을 갖추게 됩니다.",
+      "rysLabel": "RYS (등록 요가 스쿨)",
+      "rysDesc": "요가가르히는 Yoga Alliance의 엄격한 글로벌 커리큘럼 기준에 따라 요가 교사를 양성하고 인증할 수 있는 공인 스쿨입니다.",
+      "rytLabel": "RYT (등록 요가 교사)",
+      "rytDesc": "졸업 시 취득하는 국제 공인 자격으로, Yoga Alliance에 등록하여 전 세계 어디서나 수업을 진행할 수 있습니다."
     },
     "faqsHeading": "자주 묻는 질문",
     "faqs": [
@@ -7391,7 +7455,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "예약하기",
       "btnBrochure": "상세 강의계획서 다운로드",
-      "btnCounselor": "상담원과 대화하기"
+      "btnCounselor": "상담원과 대화하기",
+      "pricingNotice": "수업료 전용 <price>{tuitionPrice}</price>부터 | 숙박 패키지 <price>{residentialPrice}</price>부터",
+      "nextAvailableTraining": "다음 참여 가능한 교육: {startDate} ~ {endDate}"
     },
     "overview": {
       "heading": "YogaGarhi 바르칼라에 오신 것을 환영합니다",
@@ -8084,7 +8150,13 @@
       "codeOfConduct": "수강생 행동 규범",
       "refundCancellation": "환불 및 취소 규정",
       "ryt200Title": "Yoga Alliance 등록 강사 (RYT 200)",
-      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기"
+      "viewRegistry": "Yoga Alliance 공식 학교 등록 페이지 보기",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 등록 스쿨 (RYS 200)",
+      "yaRegisteredSchoolDesc": "요가가르히는 Yoga Alliance USA 등록 스쿨입니다. 본 과정을 수료하면 국제적으로 공인된 수료증을 취득하여 Registered Yoga Teacher (RYT)로 등록할 수 있으며, 전 세계 어디서든 요가를 지도할 수 있는 자격을 갖추게 됩니다.",
+      "rysLabel": "RYS (등록 요가 스쿨)",
+      "rysDesc": "요가가르히는 Yoga Alliance의 엄격한 글로벌 커리큘럼 기준에 따라 요가 교사를 양성하고 인증할 수 있는 공인 스쿨입니다.",
+      "rytLabel": "RYT (등록 요가 교사)",
+      "rytDesc": "졸업 시 취득하는 국제 공인 자격으로, Yoga Alliance에 등록하여 전 세계 어디서나 수업을 진행할 수 있습니다."
     },
     "faqsHeading": "자주 묻는 질문",
     "faqs": [
@@ -8165,7 +8237,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "예약하기",
       "btnBrochure": "상세 강의계획서 다운로드",
-      "btnCounselor": "상담원과 대화하기"
+      "btnCounselor": "상담원과 대화하기",
+      "pricingNotice": "수업료 전용 <price>{tuitionPrice}</price>부터 | 숙박 패키지 <price>{residentialPrice}</price>부터",
+      "nextAvailableTraining": "다음 참여 가능한 교육: {startDate} ~ {endDate}"
     },
     "overview": {
       "heading": "YogaGarhi 바르칼라에 오신 것을 환영합니다",

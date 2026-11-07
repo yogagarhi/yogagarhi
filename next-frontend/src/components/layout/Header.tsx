@@ -204,6 +204,14 @@ export default function Header() {
   const navRef = useRef<HTMLElement>(null);
   const logoRef = useRef<HTMLAnchorElement>(null);
   const rightRef = useRef<HTMLDivElement>(null);
+  const switcherRef = useRef<HTMLDivElement>(null);
+  const standardCtaRef = useRef<HTMLButtonElement>(null);
+  const compactCtaRef = useRef<HTMLButtonElement>(null);
+  const measureSwitcherRef = useRef<HTMLDivElement>(null);
+  const measureStandardCtaRef = useRef<HTMLElement>(null);
+  const measureCompactCtaRef = useRef<HTMLElement>(null);
+  const measureFullNavRef = useRef<HTMLUListElement>(null);
+  const measureCompactNavRef = useRef<HTMLUListElement>(null);
   const pathname = usePathname();
   const { setShowEnrollDialog } = useEnrollment();
   const { setShowQuickEnquiry } = useQuickEnquiry();
@@ -228,7 +236,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Adaptive nav fit check: Follows strict order a -> b -> c
+  // Adaptive nav fit check: Dynamic DOM measurements for CTAs, Switcher, and Nav widths
   useEffect(() => {
     const checkNavFit = () => {
       if (typeof window === "undefined") return;
@@ -237,37 +245,53 @@ export default function Header() {
         setIsCompactNav(false);
         return;
       }
-      if (headerRowRef.current && logoRef.current && rightRef.current) {
+      if (headerRowRef.current && logoRef.current) {
         const totalAvail = headerRowRef.current.clientWidth;
         const logoWidth = logoRef.current.offsetWidth;
-        const rightWidth = rightRef.current.offsetWidth;
-        const navEl = navRef.current;
-        const navNeeded = navEl ? navEl.scrollWidth : 0;
-        const spaceForNav = totalAvail - logoWidth - rightWidth - 24;
+        
+        // 1. Dynamic CTA measurement from rendered elements
+        const standardWidth = measureStandardCtaRef.current?.offsetWidth || standardCtaRef.current?.offsetWidth || 150;
+        const compactWidth = measureCompactCtaRef.current?.offsetWidth || compactCtaRef.current?.offsetWidth || 120;
+        const maxCtaWidth = Math.max(standardWidth, compactWidth);
 
-        if (navNeeded <= spaceForNav) {
+        // 2. Dynamic LanguageSwitcher measurement
+        const switcherWidth = measureSwitcherRef.current?.offsetWidth || switcherRef.current?.offsetWidth || 85;
+
+        // Reserved space: switcher + max CTA + gaps & safety padding (88px)
+        const reservedRightWidth = switcherWidth + maxCtaWidth + 88;
+
+        // 3. Dynamic Nav measurement directly from DOM (full vs compact)
+        const fullNavWidth = measureFullNavRef.current?.scrollWidth || navRef.current?.scrollWidth || 0;
+        const compactNavWidth = measureCompactNavRef.current?.scrollWidth || 0;
+
+        const spaceForNav = totalAvail - logoWidth - reservedRightWidth;
+
+        if (fullNavWidth > 0 && fullNavWidth <= spaceForNav) {
           // Standard full desktop nav fits comfortably
           setUseDesktopHamburger(false);
           setIsCompactNav(false);
+        } else if (compactNavWidth > 0 && compactNavWidth <= spaceForNav) {
+          // Compact desktop nav fits
+          setUseDesktopHamburger(false);
+          setIsCompactNav(true);
         } else {
-          // a) gaps/padding thoda kam + b) hide tagline (compact nav needs ~835px)
-          const compactNeeded = navNeeded - 220;
-          if (compactNeeded <= spaceForNav) {
-            setUseDesktopHamburger(false);
-            setIsCompactNav(true);
-          } else {
-            // c) Still doesn't fit -> desktop hamburger menu
-            setUseDesktopHamburger(true);
-            setIsCompactNav(true);
-          }
+          // Still doesn't fit -> desktop hamburger menu
+          setUseDesktopHamburger(true);
+          setIsCompactNav(true);
         }
       }
     };
 
     checkNavFit();
+
+    // Re-check after custom webfonts finish loading
+    if (typeof document !== "undefined" && document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(checkNavFit);
+    }
+
     window.addEventListener("resize", checkNavFit);
     return () => window.removeEventListener("resize", checkNavFit);
-  }, [navLinks]);
+  }, [navLinks, pathname]);
 
   // Close mobile menu on route change
   useEffect(() => {
@@ -318,11 +342,11 @@ export default function Header() {
           : 'bg-background'
           }`}
       >
-        <div className="w-full max-w-[1920px] mx-auto px-1.5 min-[375px]:px-3 sm:px-4 lg:px-6 2xl:px-8">
-          <div ref={headerRowRef} className="flex items-center justify-between gap-1 min-[375px]:gap-2 sm:gap-3 min-w-0">
+        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-4 lg:px-6 2xl:px-8">
+          <div ref={headerRowRef} className="flex items-center justify-between flex-nowrap gap-2 sm:gap-3 w-full min-w-0">
 
             {/* Logo */}
-            <Link ref={logoRef} href="/" prefetch={false} className="flex items-center gap-1.5 sm:gap-2 group shrink-0">
+            <Link ref={logoRef} href="/" prefetch={false} className="flex items-center gap-1.5 sm:gap-2 group shrink min-w-0 overflow-hidden">
               <div className="relative shrink-0">
                 <Image
                   src={logo}
@@ -330,13 +354,13 @@ export default function Header() {
                   width={128}
                   height={118}
                   unoptimized
-                  className="object-contain h-8 min-[375px]:h-11 sm:h-14 w-auto aspect-[128/118]"
+                  className="object-contain h-7 min-[375px]:h-8 sm:h-11 md:h-14 w-auto aspect-[128/118] shrink-0"
                 />
                 <div className="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-300" />
               </div>
 
-              <div className="flex flex-col">
-                <span className="font-heading font-bold text-primary tracking-wide text-xs min-[375px]:text-base sm:text-xl whitespace-nowrap">
+              <div className="flex flex-col min-w-0 overflow-hidden">
+                <span className="font-heading font-bold text-primary tracking-wide text-xs min-[375px]:text-sm sm:text-lg md:text-xl truncate">
                   YOGAGARHI
                 </span>
                 <span className={`text-[10px] text-muted-foreground tracking-[0.1em] uppercase ${isCompactNav || useDesktopHamburger ? 'hidden' : 'hidden 2xl:block'} whitespace-nowrap`}>
@@ -507,34 +531,39 @@ export default function Header() {
             </nav>
 
             {/* Right Side - Switcher & CTA */}
-            <div ref={rightRef} className="flex items-center gap-1 min-[375px]:gap-2 sm:gap-3 shrink-0">
-              <LanguageSwitcher />
+            <div ref={rightRef} className="flex items-center gap-2 sm:gap-3 shrink-0">
+              <div ref={switcherRef} className="shrink-0">
+                <LanguageSwitcher className="shrink-0" />
+              </div>
 
-              {/* Mobile CTA Button (also used when desktop hamburger is active) */}
+              {/* Compact CTA Button on tablet/desktop when desktop hamburger is active */}
               <Button
+                ref={compactCtaRef}
                 type="button"
                 variant="default"
                 size="sm"
-                className={`${useDesktopHamburger ? 'flex' : 'lg:hidden'} bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-2 min-[375px]:px-3.5 sm:px-4 h-8 min-[375px]:h-9 text-[11px] min-[375px]:text-xs sm:text-sm shadow-sm transition-all whitespace-nowrap shrink-0`}
+                className={`${useDesktopHamburger ? 'hidden md:flex' : 'hidden'} bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-semibold rounded-lg px-2.5 sm:px-3.5 h-9 text-xs sm:text-sm shadow-sm transition-all whitespace-nowrap shrink-0`}
                 onClick={() => setShowEnrollDialog(true)}
               >
                 {tNav("beginJourney")}
               </Button>
 
-              {/* Desktop CTA Button */}
+              {/* Standard Header CTA Button - visible on tablet and desktop (md+) when desktop hamburger is false */}
               <Button
+                ref={standardCtaRef}
                 type="button"
                 variant="default"
-                className={`${useDesktopHamburger ? 'hidden' : 'hidden lg:flex'} bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-3.5 py-2 xl:px-5 xl:py-2.5 text-xs xl:text-sm h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap shrink-0`}
+                className={`${useDesktopHamburger ? 'hidden' : 'hidden md:flex'} bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg px-3.5 py-2 xl:px-5 xl:py-2.5 text-xs xl:text-sm h-9 lg:h-auto shadow-sm hover:scale-105 active:scale-95 transition-all duration-300 whitespace-nowrap shrink-0`}
                 onClick={() => setShowEnrollDialog(true)}
               >
                 {tNav("beginJourney")}
               </Button>
 
-              {/* Mobile / Overflow Menu Button */}
+              {/* Mobile / Overflow Menu Button (always visible, never pushed off) */}
               <button
                 type="button"
-                className={`${useDesktopHamburger ? 'flex' : 'lg:hidden'} p-1.5 min-[375px]:p-2 rounded-full hover:bg-secondary transition-colors shrink-0`}
+                data-testid="hamburger-btn"
+                className={`${useDesktopHamburger ? 'flex' : 'lg:hidden'} p-2 rounded-full hover:bg-secondary transition-colors shrink-0`}
                 onClick={() => setIsOpen((prev) => !prev)}
                 aria-label={tNav("toggleMenu")}
               >
@@ -557,7 +586,22 @@ export default function Header() {
             isOpen ? 'max-h-[85vh] opacity-100 pointer-events-auto overflow-y-auto' : 'max-h-0 opacity-0 pointer-events-none'
           }`}
         >
-          <nav className="container mx-auto px-4 py-6 flex flex-col gap-1">
+          <nav className="container mx-auto px-4 py-5 flex flex-col gap-1">
+            {/* Prominent Mobile CTA Button at top of menu */}
+            <div className="pb-3 pt-1 md:hidden">
+              <Button
+                type="button"
+                className="w-full bg-[#2D7A70] hover:bg-[#2D7A70]/90 text-white font-bold rounded-lg py-3 text-sm shadow-sm transition-all whitespace-normal text-center"
+                onClick={() => {
+                  setShowEnrollDialog(true);
+                  setTimeout(() => {
+                    setIsOpen(false);
+                  }, 150);
+                }}
+              >
+                {tNav("beginJourney")}
+              </Button>
+            </div>
             {navLinks.map((link) => {
               const isMobileDropdownActive = link.id === 'courses' ? isCoursesActive :
                 link.id === 'retreat' ? isRetreatActive :
@@ -683,6 +727,51 @@ export default function Header() {
               </Button>
             </div>
           </nav>
+        </div>
+
+        {/* Visually hidden measurement scratchpad for dynamic element sizing */}
+        <div
+          inert={true as any}
+          aria-hidden="true"
+          tabIndex={-1}
+          className="absolute -left-[9999px] top-0 pointer-events-none invisible flex items-center gap-3 shrink-0"
+          style={{ position: "absolute", visibility: "hidden", left: -9999, top: 0 }}
+        >
+          <div ref={measureSwitcherRef} tabIndex={-1}>
+            <LanguageSwitcher />
+          </div>
+          <span
+            ref={measureStandardCtaRef}
+            tabIndex={-1}
+            className="inline-flex items-center justify-center bg-[#2D7A70] text-white font-bold rounded-lg px-3.5 py-2 xl:px-5 xl:py-2.5 text-xs xl:text-sm h-9 lg:h-auto whitespace-nowrap select-none"
+          >
+            {tNav("beginJourney")}
+          </span>
+          <span
+            ref={measureCompactCtaRef}
+            tabIndex={-1}
+            className="inline-flex items-center justify-center bg-[#2D7A70] text-white font-semibold rounded-lg px-2.5 sm:px-3.5 h-9 text-xs sm:text-sm whitespace-nowrap select-none"
+          >
+            {tNav("beginJourney")}
+          </span>
+          {/* Full nav clone */}
+          <ul ref={measureFullNavRef} tabIndex={-1} className="flex items-center px-1.5 py-1 xl:px-2 xl:py-1.5 gap-0.5 xl:gap-1 text-xs xl:text-sm list-none m-0 p-0 font-medium select-none">
+            {navLinks.map((link) => (
+              <li key={link.id || link.name} tabIndex={-1} className="flex items-center gap-1 px-2.5 py-1.5 xl:px-3.5 xl:py-2 whitespace-nowrap">
+                <span>{link.name}</span>
+                {link.dropdown && <ChevronDown className="h-3.5 w-3.5 shrink-0" />}
+              </li>
+            ))}
+          </ul>
+          {/* Compact nav clone */}
+          <ul ref={measureCompactNavRef} tabIndex={-1} className="flex items-center px-1 py-1 gap-0.5 text-xs list-none m-0 p-0 font-medium select-none">
+            {navLinks.map((link) => (
+              <li key={link.id || link.name} tabIndex={-1} className="flex items-center gap-1 px-2 py-1 whitespace-nowrap">
+                <span>{link.name}</span>
+                {link.dropdown && <ChevronDown className="h-3.5 w-3.5 shrink-0" />}
+              </li>
+            ))}
+          </ul>
         </div>
       </header>
     </div>

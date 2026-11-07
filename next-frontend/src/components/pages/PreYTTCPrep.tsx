@@ -170,7 +170,7 @@ export default function PreYTTCPrep({ locale: propLocale }: PreYTTCPrepProps) {
                                 <Button
                                     type="submit"
                                     disabled={!isValidEmail || isSubmitting}
-                                    className="h-14 px-8 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold text-lg hover:shadow-lg transition-all duration-300 flex items-center gap-2"
+                                    className="h-auto min-h-14 py-3 px-8 rounded-full bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold text-base sm:text-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 text-center whitespace-normal break-words"
                                 >
                                     {isSubmitting ? (
                                         isEn ? "Sending..." : t("hero.form.submitting")

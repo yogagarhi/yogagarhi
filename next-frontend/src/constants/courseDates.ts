@@ -122,8 +122,7 @@ export function isBatchUpcoming(batch: CourseBatch, referenceDate: Date = new Da
  * Fallback to original list if all are in past.
  */
 export function filterUpcomingBatches(batches: CourseBatch[], referenceDate: Date = new Date()): CourseBatch[] {
-  const filtered = batches.filter((b) => isBatchUpcoming(b, referenceDate));
-  return filtered.length > 0 ? filtered : batches;
+  return batches.filter((b) => isBatchUpcoming(b, referenceDate));
 }
 
 /**

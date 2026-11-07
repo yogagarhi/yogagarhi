@@ -131,7 +131,7 @@ YogaGarhi Team`
                     </div>
                     <Button
                         type="submit"
-                        className="w-full h-12 text-lg font-bold shadow-lg"
+                        className="w-full h-auto min-h-12 py-3 text-base sm:text-lg font-bold shadow-lg text-center whitespace-normal break-words"
                         disabled={isLoading}
                     >
                         {isLoading ? (

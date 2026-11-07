@@ -21,62 +21,62 @@ export default function TrustBadgesRow({ locale }: TrustBadgesRowProps = {}) {
   return (
     <section className="py-6 bg-secondary/40 border-y border-border/60">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 max-w-5xl mx-auto">
           {/* Badge 1: Yoga Alliance */}
-          <div className="flex items-center gap-3 p-3 rounded-xl bg-background/80 border border-border/60 shadow-sm backdrop-blur-sm">
-            <div className="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center shrink-0">
-              <Award className="w-5 h-5 text-amber-600 dark:text-amber-400" />
+          <div className="flex flex-col min-[375px]:flex-row items-start min-[375px]:items-center gap-2 sm:gap-3 p-2.5 sm:p-3 rounded-xl bg-background/80 border border-border/60 shadow-sm backdrop-blur-sm min-w-0">
+            <div className="w-8 h-8 min-[375px]:w-10 min-[375px]:h-10 rounded-lg bg-amber-500/10 flex items-center justify-center shrink-0">
+              <Award className="w-4 h-4 min-[375px]:w-5 min-[375px]:h-5 text-amber-600 dark:text-amber-400" />
             </div>
-            <div>
-              <p className="text-xs font-black uppercase tracking-wider text-amber-600 dark:text-amber-400">
+            <div className="min-w-0 flex-1">
+              <p className="text-[10px] min-[375px]:text-xs font-black uppercase tracking-wider text-amber-600 dark:text-amber-400 break-words leading-tight">
                 {badges[0].tag}
               </p>
-              <p className="text-xs font-bold text-foreground">
+              <p className="text-[11px] min-[375px]:text-xs font-bold text-foreground break-words leading-tight mt-0.5">
                 {badges[0].title}
               </p>
             </div>
           </div>
 
           {/* Badge 2: Small Batches */}
-          <div className="flex items-center gap-3 p-3 rounded-xl bg-background/80 border border-border/60 shadow-sm backdrop-blur-sm">
-            <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-              <Users className="w-5 h-5 text-primary" />
+          <div className="flex flex-col min-[375px]:flex-row items-start min-[375px]:items-center gap-2 sm:gap-3 p-2.5 sm:p-3 rounded-xl bg-background/80 border border-border/60 shadow-sm backdrop-blur-sm min-w-0">
+            <div className="w-8 h-8 min-[375px]:w-10 min-[375px]:h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+              <Users className="w-4 h-4 min-[375px]:w-5 min-[375px]:h-5 text-primary" />
             </div>
-            <div>
-              <p className="text-xs font-black uppercase tracking-wider text-primary">
+            <div className="min-w-0 flex-1">
+              <p className="text-[10px] min-[375px]:text-xs font-black uppercase tracking-wider text-primary break-words leading-tight">
                 {badges[1].tag}
               </p>
-              <p className="text-xs font-bold text-foreground">
+              <p className="text-[11px] min-[375px]:text-xs font-bold text-foreground break-words leading-tight mt-0.5">
                 {badges[1].title}
               </p>
             </div>
           </div>
 
-          {/* Badge 3: 5.0 Star Rating */}
-          <div className="flex items-center gap-3 p-3 rounded-xl bg-background/80 border border-border/60 shadow-sm backdrop-blur-sm">
-            <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center shrink-0">
-              <Star className="w-5 h-5 text-yellow-600 dark:text-yellow-400 fill-current" />
+          {/* Badge 3 */}
+          <div className="flex flex-col min-[375px]:flex-row items-start min-[375px]:items-center gap-2 sm:gap-3 p-2.5 sm:p-3 rounded-xl bg-background/80 border border-border/60 shadow-sm backdrop-blur-sm min-w-0">
+            <div className="w-8 h-8 min-[375px]:w-10 min-[375px]:h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center shrink-0">
+              <Star className="w-4 h-4 min-[375px]:w-5 min-[375px]:h-5 text-yellow-600 dark:text-yellow-400 fill-current" />
             </div>
-            <div>
-              <p className="text-xs font-black uppercase tracking-wider text-yellow-600 dark:text-yellow-400">
+            <div className="min-w-0 flex-1">
+              <p className="text-[10px] min-[375px]:text-xs font-black uppercase tracking-wider text-yellow-600 dark:text-yellow-400 break-words leading-tight">
                 {badges[2].tag}
               </p>
-              <p className="text-xs font-bold text-foreground">
+              <p className="text-[11px] min-[375px]:text-xs font-bold text-foreground break-words leading-tight mt-0.5">
                 {badges[2].title}
               </p>
             </div>
           </div>
 
-          {/* Badge 4: 100% Completion */}
-          <div className="flex items-center gap-3 p-3 rounded-xl bg-background/80 border border-border/60 shadow-sm backdrop-blur-sm">
-            <div className="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0">
-              <ShieldCheck className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+          {/* Badge 4 */}
+          <div className="flex flex-col min-[375px]:flex-row items-start min-[375px]:items-center gap-2 sm:gap-3 p-2.5 sm:p-3 rounded-xl bg-background/80 border border-border/60 shadow-sm backdrop-blur-sm min-w-0">
+            <div className="w-8 h-8 min-[375px]:w-10 min-[375px]:h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center shrink-0">
+              <ShieldCheck className="w-4 h-4 min-[375px]:w-5 min-[375px]:h-5 text-emerald-600 dark:text-emerald-400" />
             </div>
-            <div>
-              <p className="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+            <div className="min-w-0 flex-1">
+              <p className="text-[10px] min-[375px]:text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 break-words leading-tight">
                 {badges[3].tag}
               </p>
-              <p className="text-xs font-bold text-foreground">
+              <p className="text-[11px] min-[375px]:text-xs font-bold text-foreground break-words leading-tight mt-0.5">
                 {badges[3].title}
               </p>
             </div>

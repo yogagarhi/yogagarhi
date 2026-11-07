@@ -82,10 +82,10 @@ export default async function Hero() {
                 </span>
               </span>
             </div>
-            <h1 className="text-lg sm:text-xl md:text-3xl font-heading font-medium max-w-4xl mx-auto leading-snug">
+            <h1 className="text-[clamp(1.25rem,5vw,2rem)] sm:text-xl md:text-3xl font-heading font-medium max-w-4xl mx-auto leading-snug break-words px-2">
               {t("h1")}
             </h1>
-            <p className="text-sm sm:text-lg md:text-xl font-light max-w-2xl mx-auto">
+            <p className="text-sm sm:text-lg md:text-xl font-light max-w-2xl mx-auto break-words px-2">
               {t("tagline")}
             </p>
 

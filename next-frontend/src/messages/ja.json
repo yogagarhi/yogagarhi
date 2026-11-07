@@ -136,7 +136,9 @@
     "getPreYttcDetail": "Pre-YTTCの詳細を見る",
     "getPreYttcDetails": "Pre-YTTCの詳細を見る",
     "preYttcDialogDesc": "世界初となる当校独自のPre-YTTC準備プログラムについて詳しく知る",
-    "sending": "送信中..."
+    "sending": "送信中...",
+    "pricingNotice": "受講料のみ <price>{tuitionPrice}</price> から | 滞在付きパッケージ <price>{residentialPrice}</price> から",
+    "nextAvailableTraining": "次回開催のトレーニング：{startDate}～{endDate}"
   },
   "footer": {
     "tagline": "内なる変容",
@@ -595,7 +597,9 @@
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
       "btnCounselor": "カウンセラーに相談",
-      "title": "バリ島200時間ヨガ指導者養成講座"
+      "title": "バリ島200時間ヨガ指導者養成講座",
+      "pricingNotice": "受講料のみ <price>{tuitionPrice}</price> から | 滞在付きパッケージ <price>{residentialPrice}</price> から",
+      "nextAvailableTraining": "次回開催のトレーニング：{startDate}～{endDate}"
     },
     "quickInfo": {
       "course": "コース",
@@ -960,7 +964,13 @@
       "codeOfConduct": "受講生行動規範",
       "refundCancellation": "キャンセル・返金規定",
       "ryt200Title": "登録ヨガ指導者（RYT 200）",
-      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る"
+      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 認定校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "ヨガガーヒはYoga Alliance USAの認定校です。本コース修了後、世界的に認知された修了証が授与され、Registered Yoga Teacher (RYT) として登録することが可能になります。世界中どこでもヨガを指導できる道が開かれます。",
+      "rysLabel": "RYS (全米ヨガアライアンス認定校)",
+      "rysDesc": "ヨガガーヒは、Yoga Allianceの厳格なグローバルカリキュラム基準に基づき、ヨガ指導者を育成・認定する資格を持つ認定校です。",
+      "rytLabel": "RYT (全米ヨガアライアンス認定指導者)",
+      "rytDesc": "卒業時に取得できる国際資格であり、全米ヨガアライアンスに登録して世界中でレッスンを指導する権利を得られます。"
     },
     "faqsHeading": "よくあるご質問",
     "faqs": [
@@ -1632,7 +1642,13 @@
       "refundCancellation": "キャンセル・返金規定",
       "ryt200Title": "100時間修了証明書",
       "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る",
-      "meetsStandards": "ヨガアライアンス認定校（RYS 200）YogaGarhi発行"
+      "meetsStandards": "ヨガアライアンス認定校（RYS 200）YogaGarhi発行",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 認定校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "ヨガガーヒはYoga Alliance USAの認定校です。本コース修了後、世界的に認知された修了証が授与され、Registered Yoga Teacher (RYT) として登録することが可能になります。世界中どこでもヨガを指導できる道が開かれます。",
+      "rysLabel": "RYS (全米ヨガアライアンス認定校)",
+      "rysDesc": "ヨガガーヒは、Yoga Allianceの厳格なグローバルカリキュラム基準に基づき、ヨガ指導者を育成・認定する資格を持つ認定校です。",
+      "rytLabel": "RYT (全米ヨガアライアンス認定指導者)",
+      "rytDesc": "卒業時に取得できる国際資格であり、全米ヨガアライアンスに登録して世界中でレッスンを指導する権利を得られます。"
     },
     "faqsHeading": "よくあるご質問",
     "faqs": [
@@ -1681,7 +1697,9 @@
       "quickLocation": "バリ島ギャニャール",
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
-      "btnCounselor": "カウンセラーに相談"
+      "btnCounselor": "カウンセラーに相談",
+      "pricingNotice": "受講料のみ <price>{tuitionPrice}</price> から | 滞在付きパッケージ <price>{residentialPrice}</price> から",
+      "nextAvailableTraining": "次回開催のトレーニング：{startDate}～{endDate}"
     },
     "overview": {
       "heading": "YogaGarhi バリ島へようこそ",
@@ -2317,7 +2335,13 @@
       "codeOfConduct": "受講生行動規範",
       "refundCancellation": "キャンセル・返金規定",
       "ryt200Title": "登録ヨガ指導者（RYT 200）",
-      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る"
+      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 認定校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "ヨガガーヒはYoga Alliance USAの認定校です。本コース修了後、世界的に認知された修了証が授与され、Registered Yoga Teacher (RYT) として登録することが可能になります。世界中どこでもヨガを指導できる道が開かれます。",
+      "rysLabel": "RYS (全米ヨガアライアンス認定校)",
+      "rysDesc": "ヨガガーヒは、Yoga Allianceの厳格なグローバルカリキュラム基準に基づき、ヨガ指導者を育成・認定する資格を持つ認定校です。",
+      "rytLabel": "RYT (全米ヨガアライアンス認定指導者)",
+      "rytDesc": "卒業時に取得できる国際資格であり、全米ヨガアライアンスに登録して世界中でレッスンを指導する権利を得られます。"
     },
     "faqsHeading": "よくあるご質問",
     "faqs": [
@@ -2358,7 +2382,9 @@
       "quickLocation": "バリ島ギャニャール",
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
-      "btnCounselor": "カウンセラーに相談"
+      "btnCounselor": "カウンセラーに相談",
+      "pricingNotice": "受講料のみ <price>{tuitionPrice}</price> から | 滞在付きパッケージ <price>{residentialPrice}</price> から",
+      "nextAvailableTraining": "次回開催のトレーニング：{startDate}～{endDate}"
     },
     "overview": {
       "heading": "YogaGarhi バリ島でさらなる高みへ",
@@ -3005,7 +3031,13 @@
       "codeOfConduct": "受講生行動規範",
       "refundCancellation": "キャンセル・返金規定",
       "ryt200Title": "登録ヨガ指導者（RYT 200）",
-      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る"
+      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 認定校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "ヨガガーヒはYoga Alliance USAの認定校です。本コース修了後、世界的に認知された修了証が授与され、Registered Yoga Teacher (RYT) として登録することが可能になります。世界中どこでもヨガを指導できる道が開かれます。",
+      "rysLabel": "RYS (全米ヨガアライアンス認定校)",
+      "rysDesc": "ヨガガーヒは、Yoga Allianceの厳格なグローバルカリキュラム基準に基づき、ヨガ指導者を育成・認定する資格を持つ認定校です。",
+      "rytLabel": "RYT (全米ヨガアライアンス認定指導者)",
+      "rytDesc": "卒業時に取得できる国際資格であり、全米ヨガアライアンスに登録して世界中でレッスンを指導する権利を得られます。"
     },
     "faqsHeading": "よくあるご質問",
     "faqs": [
@@ -3074,7 +3106,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
-      "btnCounselor": "カウンセラーに相談"
+      "btnCounselor": "カウンセラーに相談",
+      "pricingNotice": "受講料のみ <price>{tuitionPrice}</price> から | 滞在付きパッケージ <price>{residentialPrice}</price> から",
+      "nextAvailableTraining": "次回開催のトレーニング：{startDate}～{endDate}"
     },
     "overview": {
       "heading": "YogaGarhi リシケシへようこそ",
@@ -3762,7 +3796,13 @@
       "codeOfConduct": "受講生行動規範",
       "refundCancellation": "キャンセル・返金規定",
       "ryt200Title": "登録ヨガ指導者（RYT 200）",
-      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る"
+      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 認定校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "ヨガガーヒはYoga Alliance USAの認定校です。本コース修了後、世界的に認知された修了証が授与され、Registered Yoga Teacher (RYT) として登録することが可能になります。世界中どこでもヨガを指導できる道が開かれます。",
+      "rysLabel": "RYS (全米ヨガアライアンス認定校)",
+      "rysDesc": "ヨガガーヒは、Yoga Allianceの厳格なグローバルカリキュラム基準に基づき、ヨガ指導者を育成・認定する資格を持つ認定校です。",
+      "rytLabel": "RYT (全米ヨガアライアンス認定指導者)",
+      "rytDesc": "卒業時に取得できる国際資格であり、全米ヨガアライアンスに登録して世界中でレッスンを指導する権利を得られます。"
     },
     "faqsHeading": "よくあるご質問",
     "faqs": [
@@ -3843,7 +3883,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
-      "btnCounselor": "カウンセラーに相談"
+      "btnCounselor": "カウンセラーに相談",
+      "pricingNotice": "受講料のみ <price>{tuitionPrice}</price> から | 滞在付きパッケージ <price>{residentialPrice}</price> から",
+      "nextAvailableTraining": "次回開催のトレーニング：{startDate}～{endDate}"
     },
     "overview": {
       "heading": "YogaGarhi リシケシへようこそ",
@@ -5825,7 +5867,13 @@
       "codeOfConduct": "受講生行動規範",
       "refundCancellation": "キャンセル・返金規定",
       "ryt200Title": "登録ヨガ指導者（RYT 200）",
-      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る"
+      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 認定校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "ヨガガーヒはYoga Alliance USAの認定校です。本コース修了後、世界的に認知された修了証が授与され、Registered Yoga Teacher (RYT) として登録することが可能になります。世界中どこでもヨガを指導できる道が開かれます。",
+      "rysLabel": "RYS (全米ヨガアライアンス認定校)",
+      "rysDesc": "ヨガガーヒは、Yoga Allianceの厳格なグローバルカリキュラム基準に基づき、ヨガ指導者を育成・認定する資格を持つ認定校です。",
+      "rytLabel": "RYT (全米ヨガアライアンス認定指導者)",
+      "rytDesc": "卒業時に取得できる国際資格であり、全米ヨガアライアンスに登録して世界中でレッスンを指導する権利を得られます。"
     },
     "faqsHeading": "よくあるご質問",
     "faqs": [
@@ -5906,7 +5954,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
-      "btnCounselor": "カウンセラーに相談"
+      "btnCounselor": "カウンセラーに相談",
+      "pricingNotice": "受講料のみ <price>{tuitionPrice}</price> から | 滞在付きパッケージ <price>{residentialPrice}</price> から",
+      "nextAvailableTraining": "次回開催のトレーニング：{startDate}～{endDate}"
     },
     "overview": {
       "heading": "YogaGarhi リシケシへようこそ",
@@ -6553,7 +6603,13 @@
       "codeOfConduct": "受講生行動規範",
       "refundCancellation": "キャンセル・返金規定",
       "ryt200Title": "登録ヨガ指導者（RYT 200）",
-      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る"
+      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 認定校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "ヨガガーヒはYoga Alliance USAの認定校です。本コース修了後、世界的に認知された修了証が授与され、Registered Yoga Teacher (RYT) として登録することが可能になります。世界中どこでもヨガを指導できる道が開かれます。",
+      "rysLabel": "RYS (全米ヨガアライアンス認定校)",
+      "rysDesc": "ヨガガーヒは、Yoga Allianceの厳格なグローバルカリキュラム基準に基づき、ヨガ指導者を育成・認定する資格を持つ認定校です。",
+      "rytLabel": "RYT (全米ヨガアライアンス認定指導者)",
+      "rytDesc": "卒業時に取得できる国際資格であり、全米ヨガアライアンスに登録して世界中でレッスンを指導する権利を得られます。"
     },
     "faqsHeading": "よくあるご質問",
     "faqs": [
@@ -6622,7 +6678,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
-      "btnCounselor": "カウンセラーに相談"
+      "btnCounselor": "カウンセラーに相談",
+      "pricingNotice": "受講料のみ <price>{tuitionPrice}</price> から | 滞在付きパッケージ <price>{residentialPrice}</price> から",
+      "nextAvailableTraining": "次回開催のトレーニング：{startDate}～{endDate}"
     },
     "overview": {
       "heading": "YogaGarhi ヴァルカラへようこそ",
@@ -7310,7 +7368,13 @@
       "codeOfConduct": "受講生行動規範",
       "refundCancellation": "キャンセル・返金規定",
       "ryt200Title": "登録ヨガ指導者（RYT 200）",
-      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る"
+      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 認定校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "ヨガガーヒはYoga Alliance USAの認定校です。本コース修了後、世界的に認知された修了証が授与され、Registered Yoga Teacher (RYT) として登録することが可能になります。世界中どこでもヨガを指導できる道が開かれます。",
+      "rysLabel": "RYS (全米ヨガアライアンス認定校)",
+      "rysDesc": "ヨガガーヒは、Yoga Allianceの厳格なグローバルカリキュラム基準に基づき、ヨガ指導者を育成・認定する資格を持つ認定校です。",
+      "rytLabel": "RYT (全米ヨガアライアンス認定指導者)",
+      "rytDesc": "卒業時に取得できる国際資格であり、全米ヨガアライアンスに登録して世界中でレッスンを指導する権利を得られます。"
     },
     "faqsHeading": "よくあるご質問",
     "faqs": [
@@ -7391,7 +7455,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
-      "btnCounselor": "カウンセラーに相談"
+      "btnCounselor": "カウンセラーに相談",
+      "pricingNotice": "受講料のみ <price>{tuitionPrice}</price> から | 滞在付きパッケージ <price>{residentialPrice}</price> から",
+      "nextAvailableTraining": "次回開催のトレーニング：{startDate}～{endDate}"
     },
     "overview": {
       "heading": "YogaGarhi ヴァルカラへようこそ",
@@ -8084,7 +8150,13 @@
       "codeOfConduct": "受講生行動規範",
       "refundCancellation": "キャンセル・返金規定",
       "ryt200Title": "登録ヨガ指導者（RYT 200）",
-      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る"
+      "viewRegistry": "全米ヨガアライアンス公式登録校ページを見る",
+      "yaRegisteredSchoolTitle": "Yoga Alliance USA 認定校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "ヨガガーヒはYoga Alliance USAの認定校です。本コース修了後、世界的に認知された修了証が授与され、Registered Yoga Teacher (RYT) として登録することが可能になります。世界中どこでもヨガを指導できる道が開かれます。",
+      "rysLabel": "RYS (全米ヨガアライアンス認定校)",
+      "rysDesc": "ヨガガーヒは、Yoga Allianceの厳格なグローバルカリキュラム基準に基づき、ヨガ指導者を育成・認定する資格を持つ認定校です。",
+      "rytLabel": "RYT (全米ヨガアライアンス認定指導者)",
+      "rytDesc": "卒業時に取得できる国際資格であり、全米ヨガアライアンスに登録して世界中でレッスンを指導する権利を得られます。"
     },
     "faqsHeading": "よくあるご質問",
     "faqs": [
@@ -8165,7 +8237,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "予約する",
       "btnBrochure": "シラバスをダウンロード",
-      "btnCounselor": "カウンセラーに相談"
+      "btnCounselor": "カウンセラーに相談",
+      "pricingNotice": "受講料のみ <price>{tuitionPrice}</price> から | 滞在付きパッケージ <price>{residentialPrice}</price> から",
+      "nextAvailableTraining": "次回開催のトレーニング：{startDate}～{endDate}"
     },
     "overview": {
       "heading": "YogaGarhi ヴァルカラへようこそ",

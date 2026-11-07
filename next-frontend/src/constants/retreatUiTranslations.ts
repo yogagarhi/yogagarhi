@@ -427,17 +427,17 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
     "mealsFallback": [
       {
         "meal": "Sarapan Pagi",
-        "time": "09:30 AM",
+        "time": "09.30",
         "notes": "Buah-buahan tropis segar, smoothie bowl, bubur bernutrisi, teh herbal"
       },
       {
         "meal": "Makan Siang",
-        "time": "12:30 PM – 01:30 PM",
+        "time": "12.30 – 13.30",
         "notes": "Hidangan mangkuk nabati organik bergizi, sayuran kukus lezat"
       },
       {
         "meal": "Makan Malam",
-        "time": "07:00 PM – 08:00 PM",
+        "time": "19.00 – 20.00",
         "notes": "Sup hangat bernutrisi, kari sayuran, dan tonik pencernaan herbal"
       }
     ],
@@ -448,14 +448,14 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
     "dayOfConnector": "dari",
     "campusAmenitiesTitle": "Fasilitas & Kenyamanan Kampus",
     "amenitiesList": [
-      "🏊 Kolam Renang (10:00 - 20:00)",
+      "🏊 Kolam Renang (10.00 – 20.00)",
       "❄️ Pendingin Ruangan (AC) Sunyi",
       "📶 Wi-Fi Berkecepatan Tinggi",
       "🧘 Shala Yoga Bambu Terbuka",
       "🚿 Pancuran Air Panas",
       "🧹 Layanan Kebersihan Harian"
     ],
-    "campusOneTitle": "Sanctuary Taman Tropis Deluxe",
+    "campusOneTitle": "Oase Taman Deluxe",
     "campusOneDesc": "Vila batu tradisional Bali di tengah rimbunnya tanaman kamboja dan palem tropis. Dilengkapi teras pribadi dan shala yoga bambu yang tenang.",
     "campusOneFeatures": [
       "✓ Pilihan Tempat Tidur King atau Twin",
@@ -480,8 +480,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
     },
     "gallery": [
       {
-        "title": "Kolam Renang Sanctuary",
-        "desc": "Buka setiap hari pukul 10:00 – 20:00 di tengah asrinya alam tropis"
+        "title": "Kolam Renang Tropis",
+        "desc": "Buka setiap hari pukul 10.00 – 20.00 di tengah asrinya alam tropis"
       },
       {
         "title": "Shala Yoga Bambu Terbuka",
@@ -492,7 +492,7 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
         "desc": "Tempat tidur king nyaman, pendingin ruangan sunyi & teras pribadi"
       },
       {
-        "title": "Kenyamanan Kamar Bersama Twin",
+        "title": "Kenyamanan Kamar Berbagi Twin",
         "desc": "Tata ruang luas dengan dua tempat tidur terpisah & kamar mandi dalam"
       },
       {
@@ -2866,7 +2866,7 @@ export function getRetreatUI(locale: string): RetreatUIData {
 export const ROOM_FEATURES_I18N: Record<string, Record<string, string>> = {
   "10:00 AM to 8:00 PM swimming pool access": {
     "en": "10:00 AM to 8:00 PM swimming pool access",
-    "id": "Akses kolam renang pukul 10:00 hingga 20:00",
+    "id": "Akses kolam renang pukul 10.00 hingga 20.00",
     "de": "Zugang zum Swimmingpool von 10:00 bis 20:00 Uhr",
     "fr": "Accès à la piscine de 10h00 à 20h00",
     "es": "Acceso a la piscina de 10:00 a 20:00",
@@ -3217,7 +3217,7 @@ export const ROOM_FEATURES_I18N: Record<string, Record<string, string>> = {
   },
   "High-Speed Wi-Fi across the entire sanctuary": {
     "en": "High-Speed Wi-Fi across the entire sanctuary",
-    "id": "Wi-Fi berkecepatan tinggi di seluruh area suaka",
+    "id": "Wi-Fi berkecepatan tinggi di seluruh area kampus",
     "de": "Highspeed-WLAN im gesamten Refugium",
     "fr": "Wi-Fi haut débit dans l'ensemble du sanctuaire",
     "es": "Wifi de alta velocidad en todo el santuario",
@@ -3282,7 +3282,7 @@ export const ROOM_FEATURES_I18N: Record<string, Record<string, string>> = {
   },
   "Large outdoor swimming pool open 10:00 AM to 8:00 PM": {
     "en": "Large outdoor swimming pool open 10:00 AM to 8:00 PM",
-    "id": "Kolam renang luar ruangan besar buka pukul 10:00 hingga 20:00",
+    "id": "Kolam renang luar ruangan besar buka pukul 10.00 hingga 20.00",
     "de": "Großer Außenpool, geöffnet von 10:00 bis 20:00 Uhr",
     "fr": "Grande piscine extérieure ouverte de 10h00 à 20h00",
     "es": "Gran piscina al aire libre abierta de 10:00 a 20:00",
@@ -3321,7 +3321,7 @@ export const ROOM_FEATURES_I18N: Record<string, Record<string, string>> = {
   },
   "Peaceful sanctuary location in Ubud": {
     "en": "Peaceful sanctuary location in Ubud",
-    "id": "Lokasi suaka yang tenang di Ubud",
+    "id": "Lokasi asri yang tenang di Ubud",
     "de": "Ruhiges Refugium in Ubud",
     "fr": "Emplacement paisible dans un sanctuaire à Ubud",
     "es": "Ubicación en un santuario tranquilo en Ubud",
@@ -3733,7 +3733,7 @@ export const ROOM_TYPES_I18N: Record<string, Record<string, string>> = {
   },
   "Twin Shared Room in Campus-I": {
     "en": "Twin Shared Room in Campus-I",
-    "id": "Kamar Bersama Twin di Kampus-I",
+    "id": "Kamar Berbagi Twin di Kampus-I",
     "de": "Zweibett-Gemeinschaftszimmer auf Campus-I",
     "fr": "Chambre partagée lits jumeaux sur le Campus-I",
     "es": "Habitación compartida con dos camas en el Campus-I",

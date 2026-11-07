@@ -25,4 +25,6 @@ dist-ssr
 
 # Scratch & temporary test scripts
 scratch/
+review-screenshots/
+next-frontend/review-screenshots/
 

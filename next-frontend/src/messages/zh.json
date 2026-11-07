@@ -136,7 +136,9 @@
     "getPreYttcDetail": "获取Pre-YTTC详细信息",
     "getPreYttcDetails": "获取Pre-YTTC详细信息",
     "preYttcDialogDesc": "了解我们全球首创的Pre-YTTC预备课程项目",
-    "sending": "发送中..."
+    "sending": "发送中...",
+    "pricingNotice": "仅学费 <price>{tuitionPrice}</price> 起 | 住宿套餐 <price>{residentialPrice}</price> 起",
+    "nextAvailableTraining": "下一期培训时间：{startDate} – {endDate}"
   },
   "footer": {
     "tagline": "由内而外的蜕变",
@@ -595,7 +597,9 @@
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
       "btnCounselor": "与课程顾问沟通",
-      "title": "巴厘岛200小时瑜伽导师培训"
+      "title": "巴厘岛200小时瑜伽导师培训",
+      "pricingNotice": "仅学费 <price>{tuitionPrice}</price> 起 | 住宿套餐 <price>{residentialPrice}</price> 起",
+      "nextAvailableTraining": "下一期培训时间：{startDate} – {endDate}"
     },
     "quickInfo": {
       "course": "培训课程",
@@ -960,7 +964,13 @@
       "codeOfConduct": "学员行为规范守则",
       "refundCancellation": "退款与改期政策",
       "ryt200Title": "Yoga Alliance 认证教师（RYT 200）",
-      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面"
+      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面",
+      "yaRegisteredSchoolTitle": "美国瑜伽联盟认证学校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "YogaGarhi 是美国瑜伽联盟（Yoga Alliance USA）认证学校。完成本课程后，您将获得国际认可的结业证书，有资格注册为认证瑜伽导师（RYT），为您在世界各地教授瑜伽开启广阔天地。",
+      "rysLabel": "RYS (注册瑜伽学校)",
+      "rysDesc": "YogaGarhi 是一所经过认证的学校，完全具备按照严格的国际瑜伽联盟课程标准培训并认证瑜伽导师的资质。",
+      "rytLabel": "RYT (注册瑜伽导师)",
+      "rytDesc": "毕业时获得的国际资质认证，让您有权在瑜伽联盟注册并在全球范围内开展教学。"
     },
     "faqsHeading": "常见问题解答",
     "faqs": [
@@ -1632,7 +1642,13 @@
       "refundCancellation": "退款与改期政策",
       "ryt200Title": "100小时结业证书",
       "viewRegistry": "查看美国瑜伽联盟官方学校登记页面",
-      "meetsStandards": "由瑜伽联盟认证瑜伽学校（RYS 200）YogaGarhi颁发"
+      "meetsStandards": "由瑜伽联盟认证瑜伽学校（RYS 200）YogaGarhi颁发",
+      "yaRegisteredSchoolTitle": "美国瑜伽联盟认证学校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "YogaGarhi 是美国瑜伽联盟（Yoga Alliance USA）认证学校。完成本课程后，您将获得国际认可的结业证书，有资格注册为认证瑜伽导师（RYT），为您在世界各地教授瑜伽开启广阔天地。",
+      "rysLabel": "RYS (注册瑜伽学校)",
+      "rysDesc": "YogaGarhi 是一所经过认证的学校，完全具备按照严格的国际瑜伽联盟课程标准培训并认证瑜伽导师的资质。",
+      "rytLabel": "RYT (注册瑜伽导师)",
+      "rytDesc": "毕业时获得的国际资质认证，让您有权在瑜伽联盟注册并在全球范围内开展教学。"
     },
     "faqsHeading": "常见问题解答",
     "faqs": [
@@ -1681,7 +1697,9 @@
       "quickLocation": "巴厘岛吉安雅",
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
-      "btnCounselor": "与课程顾问沟通"
+      "btnCounselor": "与课程顾问沟通",
+      "pricingNotice": "仅学费 <price>{tuitionPrice}</price> 起 | 住宿套餐 <price>{residentialPrice}</price> 起",
+      "nextAvailableTraining": "下一期培训时间：{startDate} – {endDate}"
     },
     "overview": {
       "heading": "欢迎来到巴厘岛 YogaGarhi",
@@ -2317,7 +2335,13 @@
       "codeOfConduct": "学员行为规范守则",
       "refundCancellation": "退款与改期政策",
       "ryt200Title": "Yoga Alliance 认证教师（RYT 200）",
-      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面"
+      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面",
+      "yaRegisteredSchoolTitle": "美国瑜伽联盟认证学校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "YogaGarhi 是美国瑜伽联盟（Yoga Alliance USA）认证学校。完成本课程后，您将获得国际认可的结业证书，有资格注册为认证瑜伽导师（RYT），为您在世界各地教授瑜伽开启广阔天地。",
+      "rysLabel": "RYS (注册瑜伽学校)",
+      "rysDesc": "YogaGarhi 是一所经过认证的学校，完全具备按照严格的国际瑜伽联盟课程标准培训并认证瑜伽导师的资质。",
+      "rytLabel": "RYT (注册瑜伽导师)",
+      "rytDesc": "毕业时获得的国际资质认证，让您有权在瑜伽联盟注册并在全球范围内开展教学。"
     },
     "faqsHeading": "常见问题解答",
     "faqs": [
@@ -2358,7 +2382,9 @@
       "quickLocation": "巴厘岛吉安雅",
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
-      "btnCounselor": "与课程顾问沟通"
+      "btnCounselor": "与课程顾问沟通",
+      "pricingNotice": "仅学费 <price>{tuitionPrice}</price> 起 | 住宿套餐 <price>{residentialPrice}</price> 起",
+      "nextAvailableTraining": "下一期培训时间：{startDate} – {endDate}"
     },
     "overview": {
       "heading": "在巴厘岛 YogaGarhi 提升您的灵性旅程",
@@ -3005,7 +3031,13 @@
       "codeOfConduct": "学员行为规范守则",
       "refundCancellation": "退款与改期政策",
       "ryt200Title": "Yoga Alliance 认证教师（RYT 200）",
-      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面"
+      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面",
+      "yaRegisteredSchoolTitle": "美国瑜伽联盟认证学校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "YogaGarhi 是美国瑜伽联盟（Yoga Alliance USA）认证学校。完成本课程后，您将获得国际认可的结业证书，有资格注册为认证瑜伽导师（RYT），为您在世界各地教授瑜伽开启广阔天地。",
+      "rysLabel": "RYS (注册瑜伽学校)",
+      "rysDesc": "YogaGarhi 是一所经过认证的学校，完全具备按照严格的国际瑜伽联盟课程标准培训并认证瑜伽导师的资质。",
+      "rytLabel": "RYT (注册瑜伽导师)",
+      "rytDesc": "毕业时获得的国际资质认证，让您有权在瑜伽联盟注册并在全球范围内开展教学。"
     },
     "faqsHeading": "常见问题解答",
     "faqs": [
@@ -3074,7 +3106,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
-      "btnCounselor": "与课程顾问沟通"
+      "btnCounselor": "与课程顾问沟通",
+      "pricingNotice": "仅学费 <price>{tuitionPrice}</price> 起 | 住宿套餐 <price>{residentialPrice}</price> 起",
+      "nextAvailableTraining": "下一期培训时间：{startDate} – {endDate}"
     },
     "overview": {
       "heading": "欢迎来到瑞诗凯诗 YogaGarhi",
@@ -3762,7 +3796,13 @@
       "codeOfConduct": "学员行为规范守则",
       "refundCancellation": "退款与改期政策",
       "ryt200Title": "Yoga Alliance 认证教师（RYT 200）",
-      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面"
+      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面",
+      "yaRegisteredSchoolTitle": "美国瑜伽联盟认证学校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "YogaGarhi 是美国瑜伽联盟（Yoga Alliance USA）认证学校。完成本课程后，您将获得国际认可的结业证书，有资格注册为认证瑜伽导师（RYT），为您在世界各地教授瑜伽开启广阔天地。",
+      "rysLabel": "RYS (注册瑜伽学校)",
+      "rysDesc": "YogaGarhi 是一所经过认证的学校，完全具备按照严格的国际瑜伽联盟课程标准培训并认证瑜伽导师的资质。",
+      "rytLabel": "RYT (注册瑜伽导师)",
+      "rytDesc": "毕业时获得的国际资质认证，让您有权在瑜伽联盟注册并在全球范围内开展教学。"
     },
     "faqsHeading": "常见问题解答",
     "faqs": [
@@ -3843,7 +3883,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
-      "btnCounselor": "与课程顾问沟通"
+      "btnCounselor": "与课程顾问沟通",
+      "pricingNotice": "仅学费 <price>{tuitionPrice}</price> 起 | 住宿套餐 <price>{residentialPrice}</price> 起",
+      "nextAvailableTraining": "下一期培训时间：{startDate} – {endDate}"
     },
     "overview": {
       "heading": "欢迎来到瑞诗凯诗 YogaGarhi",
@@ -5825,7 +5867,13 @@
       "codeOfConduct": "学员行为规范守则",
       "refundCancellation": "退款与改期政策",
       "ryt200Title": "Yoga Alliance 认证教师（RYT 200）",
-      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面"
+      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面",
+      "yaRegisteredSchoolTitle": "美国瑜伽联盟认证学校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "YogaGarhi 是美国瑜伽联盟（Yoga Alliance USA）认证学校。完成本课程后，您将获得国际认可的结业证书，有资格注册为认证瑜伽导师（RYT），为您在世界各地教授瑜伽开启广阔天地。",
+      "rysLabel": "RYS (注册瑜伽学校)",
+      "rysDesc": "YogaGarhi 是一所经过认证的学校，完全具备按照严格的国际瑜伽联盟课程标准培训并认证瑜伽导师的资质。",
+      "rytLabel": "RYT (注册瑜伽导师)",
+      "rytDesc": "毕业时获得的国际资质认证，让您有权在瑜伽联盟注册并在全球范围内开展教学。"
     },
     "faqsHeading": "常见问题解答",
     "faqs": [
@@ -5906,7 +5954,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
-      "btnCounselor": "与课程顾问沟通"
+      "btnCounselor": "与课程顾问沟通",
+      "pricingNotice": "仅学费 <price>{tuitionPrice}</price> 起 | 住宿套餐 <price>{residentialPrice}</price> 起",
+      "nextAvailableTraining": "下一期培训时间：{startDate} – {endDate}"
     },
     "overview": {
       "heading": "欢迎来到瑞诗凯诗 YogaGarhi",
@@ -6553,7 +6603,13 @@
       "codeOfConduct": "学员行为规范守则",
       "refundCancellation": "退款与改期政策",
       "ryt200Title": "Yoga Alliance 认证教师（RYT 200）",
-      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面"
+      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面",
+      "yaRegisteredSchoolTitle": "美国瑜伽联盟认证学校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "YogaGarhi 是美国瑜伽联盟（Yoga Alliance USA）认证学校。完成本课程后，您将获得国际认可的结业证书，有资格注册为认证瑜伽导师（RYT），为您在世界各地教授瑜伽开启广阔天地。",
+      "rysLabel": "RYS (注册瑜伽学校)",
+      "rysDesc": "YogaGarhi 是一所经过认证的学校，完全具备按照严格的国际瑜伽联盟课程标准培训并认证瑜伽导师的资质。",
+      "rytLabel": "RYT (注册瑜伽导师)",
+      "rytDesc": "毕业时获得的国际资质认证，让您有权在瑜伽联盟注册并在全球范围内开展教学。"
     },
     "faqsHeading": "常见问题解答",
     "faqs": [
@@ -6622,7 +6678,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
-      "btnCounselor": "与课程顾问沟通"
+      "btnCounselor": "与课程顾问沟通",
+      "pricingNotice": "仅学费 <price>{tuitionPrice}</price> 起 | 住宿套餐 <price>{residentialPrice}</price> 起",
+      "nextAvailableTraining": "下一期培训时间：{startDate} – {endDate}"
     },
     "overview": {
       "heading": "欢迎来到瓦尔卡拉 YogaGarhi",
@@ -7310,7 +7368,13 @@
       "codeOfConduct": "学员行为规范守则",
       "refundCancellation": "退款与改期政策",
       "ryt200Title": "Yoga Alliance 认证教师（RYT 200）",
-      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面"
+      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面",
+      "yaRegisteredSchoolTitle": "美国瑜伽联盟认证学校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "YogaGarhi 是美国瑜伽联盟（Yoga Alliance USA）认证学校。完成本课程后，您将获得国际认可的结业证书，有资格注册为认证瑜伽导师（RYT），为您在世界各地教授瑜伽开启广阔天地。",
+      "rysLabel": "RYS (注册瑜伽学校)",
+      "rysDesc": "YogaGarhi 是一所经过认证的学校，完全具备按照严格的国际瑜伽联盟课程标准培训并认证瑜伽导师的资质。",
+      "rytLabel": "RYT (注册瑜伽导师)",
+      "rytDesc": "毕业时获得的国际资质认证，让您有权在瑜伽联盟注册并在全球范围内开展教学。"
     },
     "faqsHeading": "常见问题解答",
     "faqs": [
@@ -7391,7 +7455,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
-      "btnCounselor": "与课程顾问沟通"
+      "btnCounselor": "与课程顾问沟通",
+      "pricingNotice": "仅学费 <price>{tuitionPrice}</price> 起 | 住宿套餐 <price>{residentialPrice}</price> 起",
+      "nextAvailableTraining": "下一期培训时间：{startDate} – {endDate}"
     },
     "overview": {
       "heading": "欢迎来到瓦尔卡拉 YogaGarhi",
@@ -8084,7 +8150,13 @@
       "codeOfConduct": "学员行为规范守则",
       "refundCancellation": "退款与改期政策",
       "ryt200Title": "Yoga Alliance 认证教师（RYT 200）",
-      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面"
+      "viewRegistry": "查看美国瑜伽联盟官方学校登记页面",
+      "yaRegisteredSchoolTitle": "美国瑜伽联盟认证学校 (RYS 200)",
+      "yaRegisteredSchoolDesc": "YogaGarhi 是美国瑜伽联盟（Yoga Alliance USA）认证学校。完成本课程后，您将获得国际认可的结业证书，有资格注册为认证瑜伽导师（RYT），为您在世界各地教授瑜伽开启广阔天地。",
+      "rysLabel": "RYS (注册瑜伽学校)",
+      "rysDesc": "YogaGarhi 是一所经过认证的学校，完全具备按照严格的国际瑜伽联盟课程标准培训并认证瑜伽导师的资质。",
+      "rytLabel": "RYT (注册瑜伽导师)",
+      "rytDesc": "毕业时获得的国际资质认证，让您有权在瑜伽联盟注册并在全球范围内开展教学。"
     },
     "faqsHeading": "常见问题解答",
     "faqs": [
@@ -8165,7 +8237,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "立即预订席位",
       "btnBrochure": "下载详细教学大纲",
-      "btnCounselor": "与课程顾问沟通"
+      "btnCounselor": "与课程顾问沟通",
+      "pricingNotice": "仅学费 <price>{tuitionPrice}</price> 起 | 住宿套餐 <price>{residentialPrice}</price> 起",
+      "nextAvailableTraining": "下一期培训时间：{startDate} – {endDate}"
     },
     "overview": {
       "heading": "欢迎来到瓦尔卡拉 YogaGarhi",

@@ -108,7 +108,7 @@
     "freeWebinar": "Webinar Gratis",
     "accommodationExtra": {
       "featuresTitle": "Akomodasi",
-      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "featuresSub": "Tempat peristirahatan yoga yang damai di jantung kawasan suci Ubud, Bali",
       "feat1": "10 air terjun indah dalam radius 10 km",
       "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
       "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
@@ -136,7 +136,9 @@
     "getPreYttcDetail": "Dapatkan Detail Pre-YTTC",
     "getPreYttcDetails": "Dapatkan Detail Pre-YTTC",
     "preYttcDialogDesc": "Pelajari program persiapan Pre-YTTC pertama di dunia dari kami",
-    "sending": "Mengirim..."
+    "sending": "Mengirim...",
+    "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
+    "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
   },
   "footer": {
     "tagline": "Transformasi dari Dalam",
@@ -149,7 +151,7 @@
     "termsConditions": "Syarat & Ketentuan",
     "refundPolicy": "Kebijakan Pengembalian Dana",
     "copyright": "Hak cipta dilindungi undang-undang.",
-    "authenticBali": "Yoga Otentik di Bali",
+    "authenticBali": "Yoga Autentik di Bali",
     "sutra": "Yoga adalah penghentian riak-riak pikiran",
     "transformingLives": "Mentransformasi hidup melalui yoga"
   },
@@ -214,10 +216,10 @@
     "hero": {
       "welcome": "Selamat Datang di",
       "h1": "Pelatihan Guru Yoga Bersertifikat Yoga Alliance di Bali & Rishikesh",
-      "tagline": "Kebijaksanaan kuno Himalaya. Yoga otentik, dihayati & diajarkan.",
+      "tagline": "Kebijaksanaan kuno Himalaya. Yoga autentik, dihayati & diajarkan.",
       "statStudents": "Siswa Lulusan",
       "statStyle": "Multi-Style",
-      "statStyleSub": "Yoga Otentik",
+      "statStyleSub": "Yoga Autentik",
       "statBatch": "8–10 Siswa",
       "statBatchSub": "Grup Kelas Kecil",
       "statCert": "100%",
@@ -229,11 +231,11 @@
     },
     "welcome": {
       "badge": "Tentang Ashram YogaGarhi",
-      "title": "Suaka Himalaya Otentik bagi Para Pencari Spiritual Sejati",
+      "title": "Ashram Himalaya Autentik bagi Para Pencari Spiritual Sejati",
       "p1": "Di YogaGarhi, kami menjaga dan mewariskan kebijaksanaan abadi yoga klasik. Didirikan oleh guru-guru master pembawa silsilah langsung dari Himalaya, ashram kami di Ubud, Bali dan Rishikesh, India menyediakan tempat perlindungan yang tenang jauh dari tren kebugaran komersial.",
       "p2": "Baik Anda memulai perjalanan dengan fondasi 200 jam kami atau memperdalam sadhana melalui sertifikasi tingkat lanjut, Anda akan mengalami pelatihan berdisiplin, filosofi mendalam, dan bimbingan guru yang tulus.",
       "feature1Title": "Tradisi Himalaya",
-      "feature1Desc": "Berakar pada naskah klasik otentik dan silsilah hidup.",
+      "feature1Desc": "Berakar pada naskah klasik autentik dan silsilah hidup.",
       "feature2Title": "Kelas Kecil",
       "feature2Desc": "8–10 siswa per angkatan untuk menjamin bimbingan personal.",
       "feature3Title": "Sadhana Transformatif",
@@ -250,7 +252,7 @@
       "inTraining1": "Menguasai Hatha, Ashtanga & Vinyasa dengan penjajaran aman dan tepat",
       "inTraining2": "Memahami dasar-dasar filosofi yoga dan Ayurveda",
       "inTraining3": "Membangun keterampilan mengajar nyata untuk memandu kelas dengan percaya diri",
-      "quote": "«Setiap napas adalah langkah menuju kebebasan, setiap latihan adalah perjalanan menuju keutuhan.»",
+      "quote": "“Setiap napas adalah langkah menuju kebebasan, setiap latihan adalah perjalanan menuju keutuhan.”",
       "askAnything": "Ada yang ingin Anda tanyakan?",
       "emailUs": "Kirim Email"
     },
@@ -308,12 +310,12 @@
       "methodCategory": "Metodologi",
       "methodTitle": "Metode Shiv-Shakti",
       "methodDesc": "Pendekatan khas kami yang menerjemahkan teori yoga kuno menjadi kebijaksanaan hidup yang nyata.",
-      "philosophyBadge": "Otentik",
+      "philosophyBadge": "Autentik",
       "philosophyCategory": "Kebijaksanaan Yoga",
       "philosophyTitle": "Berlandaskan Filosofi",
       "philosophyDesc": "Filosofi yoga tertinggi dihayati melalui ritual, meditasi, dan satsang.",
       "traditionBadge": "Tradisional",
-      "traditionCategory": "Teks Otentik",
+      "traditionCategory": "Teks Autentik",
       "traditionTitle": "Tradisi Nyata, Diajarkan dengan Jelas",
       "traditionDesc": "Kami mempelajari teks-teks klasik asli — Yoga Sutras, Hatha Yoga Pradipika, Bhagavad Gita — dan mempraktikkannya setiap hari. Dalam bahasa Inggris yang terstruktur, jelas, dan modern. Tradisional tidak harus membingungkan.",
       "smallGroupCategory": "Mentoring",
@@ -325,7 +327,7 @@
       "handsOnDesc": "Pelajari penyesuaian fisik yang aman, prinsip penjajaran cerdas, dan penyusunan sekuens kreatif untuk berbagai bentuk tubuh.",
       "manifestoBadge": "Manifesto Siswa",
       "manifestoHeading": "Tidak berencana untuk mengajar? Sekolah ini justru diciptakan khusus untuk Anda.",
-      "manifestoQuote": "«Saya sebenarnya tidak berniat mengajar. Saya hanya ingin mendalami latihan saya.»",
+      "manifestoQuote": "“Saya sebenarnya tidak berniat mengajar. Saya hanya ingin mendalami latihan saya.”",
       "manifestoIntro": "Lebih dari separuh orang yang menulis kepada kami mengatakan hal ini, hampir seperti meminta maaf. Tolong jangan meminta maaf. Di India, yoga tidak pernah menjadi kursus kejuruan semata — yoga adalah jalan untuk memahami diri sendiri. Siswa selalu menjadi yang utama.",
       "manifestoB1Title": "Anda Adalah Tradisi Itu:",
       "manifestoB1Desc": "Selama ribuan tahun, orang-orang datang menemui guru karena satu alasan: penemuan jati diri.",
@@ -360,7 +362,7 @@
       "communityDesc": "Terhubung dengan keluarga besar alumni yang suportif di seluruh dunia.",
       "lineageBadge": "Silsilah Himalaya",
       "lineageTitle": "Kebijaksanaan Hidup",
-      "lineageDesc": "Belajar langsung dari guru yang membawa transmisi silsilah otentik.",
+      "lineageDesc": "Belajar langsung dari guru yang membawa transmisi silsilah autentik.",
       "smallGroupBadge": "8–10 Siswa",
       "smallGroupTitle": "Kelompok Kecil",
       "smallGroupDesc": "Menjamin perhatian penuh dan bimbingan mendalam untuk setiap siswa."
@@ -381,7 +383,7 @@
       "b2Desc": "Bantuan langkah demi langkah untuk visa turis Indonesia, penjemputan bandara, dan panduan membawa barang untuk iklim tropis Bali.",
       "b3Title": "Akses Langsung ke Pengajar",
       "b3Desc": "Bicaralah langsung dengan pengajar utama kami sebelum tiba untuk mendiskusikan cedera, kondisi kesehatan, atau tujuan belajar Anda.",
-      "d1Title": "Angkatan Intim 8–10 Siswa",
+      "d1Title": "angkatan kecil 8–10 Siswa",
       "d1Desc": "Jangan pernah merasa terabaikan. Nikmati perhatian personal, koreksi postur yang tepat, dan bimbingan yang mendalam.",
       "d2Title": "Gaya Hidup Sattvik Holistik",
       "d2Desc": "Tiga kali makan makanan Ayurvedic organik setiap hari, area refleksi yang tenang, dan akomodasi bersih di tengah alam asri Bali.",
@@ -427,7 +429,7 @@
       "title": "Dibimbing oleh Kebijaksanaan Sejati",
       "name": "Yogacharya Sachin",
       "role": "Pendiri & Guru Utama, YogaGarhi",
-      "quote": "«Yoga sebagai penyatuan: ketika yoga dihayati dan bukan sekadar diajarkan, ia mentransformasi segalanya.»",
+      "quote": "“Yoga sebagai penyatuan: ketika yoga dihayati dan bukan sekadar diajarkan, ia mentransformasi segalanya.”",
       "meetTeacher": "Kenali Guru di Balik YogaGarhi",
       "trainedCount": "2000+ Siswa Terlatih",
       "experienceYears": "18+ Tahun Praktik",
@@ -579,23 +581,25 @@
   },
   "course200": {
     "metaTitle": "Pelatihan Guru Yoga 200 Jam Bali – 24 Hari, mulai $999 | YogaGarhi",
-    "metaDesc": "Kursus Yoga Alliance RYT 200 24 hari dekat Ubud, Bali. Grup kecil 8–10 orang, Hatha, Vinyasa & Ashtanga, bimbingan 1 tahun. 5★ di Google. Mulai $999.",
+    "metaDesc": "Pelatihan Guru Yoga 24 hari Yoga Alliance RYS 200 dekat Ubud, Bali. Memenuhi syarat RYT 200. Kelompok kecil 8–10 siswa, bimbingan 1 tahun. Mulai $999.",
     "heroTitle": "Pelatihan Guru Yoga 200 Jam di Bali",
-    "heroSub": "Imersi residensial multi-style 24 hari yang otentik di Ubud, Bali. Bersertifikat Yoga Alliance RYT 200 dengan kapasitas ketat 8–10 siswa per angkatan.",
+    "heroSub": "Dikelola oleh YogaGarhi, Sekolah Yoga Terdaftar Yoga Alliance (RYS 200). Lulusan memenuhi syarat untuk mendaftar sebagai RYT 200. Kapasitas ketat 8–10 siswa per angkatan.",
     "hero": {
-      "badge": "Sertifikasi Yoga Alliance RYT 200",
+      "badge": "Sekolah Yoga Terdaftar Yoga Alliance (RYS 200)",
       "h1": "Pelatihan Guru Yoga 200 Jam di Bali",
-      "sub": "Silsilah Himalaya otentik, kelompok intim 8–10 siswa, ashram damai di Gianyar dekat Ubud.",
+      "sub": "Silsilah Himalaya autentik, kelompok kecil (8–10 siswa), ashram damai di Gianyar dekat Ubud.",
       "quickDuration": "24 Hari",
       "quickLevel": "Pemula hingga Menengah",
-      "quickCert": "RYT 200 Yoga Alliance",
+      "quickCert": "RYS 200 (Memenuhi Syarat RYT 200)",
       "quickLang": "Bahasa Inggris",
       "quickBatch": "8–10 Siswa",
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
       "btnCounselor": "Konsultasi",
-      "title": "Pelatihan Guru Yoga 200 Jam di Bali"
+      "title": "Pelatihan Guru Yoga 200 Jam di Bali",
+      "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
     },
     "quickInfo": {
       "course": "Kursus",
@@ -607,7 +611,7 @@
       "level": "Tingkat",
       "levelVal": "Pemula hingga Menengah",
       "certification": "Sertifikasi",
-      "certificationVal": "Yoga Alliance Registered School (RYS 200)",
+      "certificationVal": "Sekolah Yoga Terdaftar Yoga Alliance (RYS 200)",
       "startingFrom": "Mulai dari",
       "startingFromVal": "$999 USD",
       "save": "Hemat",
@@ -624,14 +628,14 @@
       "goodieBagSub": "Perlengkapan yoga"
     },
     "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
-    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
-    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial yang lengkap. Program ini dirancang bagi siswa yang menginginkan kedalaman sejati, bukan sekadar rutinitas latihan fisik biasa. Anda akan tinggal di desa Gianyar yang damai, sekitar 15 km dari Ubud. Di sini, YogaGarhi memberikan Anda tempat peristirahatan yang tenang, jauh dari kawasan wisata yang ramai. Anda dapat benar-benar melepaskan kepenatan dan berfokus penuh pada latihan Anda.",
+    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran postur Iyengar. Anda juga akan mempelajari anatomi terapan, filosofi, pranayama (latihan pernapasan), dan meditasi harian. Kami membatasi kelas secara ketat hanya 8 hingga 10 siswa. Hal ini memungkinkan para guru master Himalaya kami memberikan bimbingan yang dekat dan penuh perhatian kepada setiap siswa.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
-      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
-      "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
+      "heading": "Silsilah Autentik Himalaya di ashram tenang di Bali",
+      "sub": "Pelajari yoga Himalaya autentik dalam kelompok kecil, dengan bimbingan pribadi yang berlanjut setelah pelatihan Anda selesai.",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
       "p1Desc": "Jumlah siswa terbatas memastikan arahan personal, koreksi postur langsung, dan perhatian penuh dari guru.",
@@ -640,7 +644,7 @@
       "p2Desc": "Kursus persiapan cuma-cuma sebelum tiba di Bali untuk membangun kekuatan fisik dan wawasan dasar.",
       "p3Title": "Mentoring 1 Tahun Pasca Kelulusan",
       "p3Highlight": "Komunitas Berkelanjutan",
-      "p3Desc": "Bimbingan lanjutan, saran penyusunan sekuens kelas, dan dukungan karier jauh setelah masa pelatihan usai.",
+      "p3Desc": "Lulus dengan sertifikat penyelesaian dari Sekolah Yoga Terdaftar di Yoga Alliance (RYS 200), memenuhi syarat untuk mendaftar di Yoga Alliance sebagai RYT 200. Anda juga mendapatkan bimbingan karier penuh selama satu tahun.",
       "p4Title": "Mengulang Kursus Gratis Seumur Hidup",
       "p4Highlight": "Kembali Tanpa Biaya",
       "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
@@ -660,7 +664,7 @@
       "selfStudy": "Studi Mandiri & Praktik Mengajar",
       "selfStudyDesc": "Bacaan terarah, jurnal, praktik bersama rekan, dan perancangan sekuens kelas.",
       "totalCert": "Total Sertifikasi",
-      "totalCertDesc": "Memenuhi dan melampaui standar Yoga Alliance RYT 200.",
+      "totalCertDesc": "Memenuhi dan melampaui standar kurikulum Yoga Alliance RYS 200.",
       "hoursUnit": "Jam"
     },
     "overview": {
@@ -877,27 +881,27 @@
       "eveningAsana": "Latihan Sore (Ashtanga / Yin / Restoratif)",
       "dinner": "Makan Malam Sattvik",
       "selfStudy": "Belajar Mandiri, Keheningan & Jam Tidur",
-      "time1": "06:00",
+      "time1": "06.00",
       "act1": "Bangun Pagi & Pembersihan Diri",
-      "time2": "06:30",
+      "time2": "06.30",
       "act2": "Pranayama, Melantunkan Mantra & Meditasi",
-      "time3": "07:30",
+      "time3": "07.30",
       "act3": "Latihan Asana Pagi (Hatha / Vinyasa)",
-      "time4": "09:00",
+      "time4": "09.00",
       "act4": "Sarapan Sattvik Bernutrisi",
-      "time5": "10:00",
+      "time5": "10.00",
       "act5": "Filosofi Yoga & Studi Naskah Klasik",
-      "time6": "12:00",
+      "time6": "12.00",
       "act6": "Makan Siang Sehat & Istirahat",
-      "time7": "15:00",
+      "time7": "15.00",
       "act7": "Anatomi Terapan & Fisiologi",
-      "time8": "16:30",
+      "time8": "16.30",
       "act8": "Metodologi Pengajaran & Klinik Penjajaran",
-      "time9": "18:00",
+      "time9": "18.00",
       "act9": "Latihan Sore (Ashtanga / Yin / Restoratif)",
-      "time10": "19:30",
+      "time10": "19.30",
       "act10": "Makan Malam Sattvik",
-      "time11": "21:00",
+      "time11": "21.00",
       "act11": "Belajar Mandiri, Keheningan & Waktu Istirahat",
       "beyondTheMat": "Di Luar Matras"
     },
@@ -906,7 +910,7 @@
       "sub": "Semua fasilitas disiapkan untuk memastikan masa tinggal yang tenang dan transformatif.",
       "incAccom": "Akomodasi ashram selama 23 malam",
       "incMeals": "3 kali makan bergizi sattvik (vegetarian/vegan) segar setiap hari",
-      "incCert": "Sertifikat Yoga Alliance RYT 200 setelah kelulusan",
+      "incCert": "Sertifikat Penyelesaian dari YogaGarhi (RYS 200); memenuhi syarat untuk mendaftar di Yoga Alliance sebagai RYT 200",
       "incManuals": "Buku panduan kursus resmi, buku catatan, dan bahan ajar",
       "incKit": "Matras yoga dan alat peraga latihan disediakan di ashram",
       "incExcursions": "Ekskursi budaya sakral (pura tirta empul, sawah terasering, tari Bali)",
@@ -923,13 +927,13 @@
       "heading": "Paket Akomodasi & Harga",
       "sub": "Harga transparan dan all-inclusive tanpa ada biaya tersembunyi.",
       "tuitionOnly": "Paket Hanya Biaya Kursus",
-      "tuitionOnlyDesc": "Biaya kursus, materi belajar resmi, dan sertifikasi Yoga Alliance. Akomodasi dan makanan tidak termasuk.",
+      "tuitionOnlyDesc": "Biaya kursus, materi belajar resmi, dan sertifikasi YogaGarhi RYS 200 (memenuhi syarat untuk mendaftar di Yoga Alliance sebagai RYT 200). Akomodasi dan makanan tidak termasuk.",
       "triple": "Kamar Bertiga (Triple)",
       "tripleDesc": "Kamar ber-AC luas dibagi bersama dua rekan siswa, kamar mandi dalam, balkon pribadi.",
       "double": "Kamar Berdua (Double)",
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
-      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
       "earlyBird": "Diskon Early Bird",
       "save300": "Hemat $300 USD",
       "earlyBirdPrice": "Harga Early Bird",
@@ -960,7 +964,13 @@
       "codeOfConduct": "Kode Etik",
       "refundCancellation": "Pengembalian Dana & Pembatalan",
       "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
-      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Sekolah Yoga Terdaftar Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Sekolah kami, YogaGarhi, terdaftar di Yoga Alliance USA. Setelah menyelesaikan kursus ini, Anda akan menerima sertifikasi yang diakui secara internasional, memungkinkan Anda untuk menjadi Guru Yoga Terdaftar (RYT). Sertifikasi ini membuka jalan bagi Anda untuk mengajar yoga di mana saja di seluruh dunia.",
+      "rysLabel": "RYS (Sekolah Yoga Terdaftar)",
+      "rysDesc": "YogaGarhi adalah sekolah terakreditasi yang memenuhi kualifikasi untuk melatih dan mensertifikasi guru yoga sesuai standar kurikulum global Yoga Alliance yang ketat.",
+      "rytLabel": "RYT (Guru Yoga Terdaftar)",
+      "rytDesc": "Kredensial internasional yang Anda raih setelah kelulusan, memberi Anda hak untuk mendaftar di Yoga Alliance dan memimpin kelas di seluruh dunia."
     },
     "faqsHeading": "Pertanyaan yang Sering Diajukan",
     "faqs": [
@@ -970,7 +980,7 @@
       },
       {
         "question": "Gaya yoga apa saja yang dipelajari dalam TTC 200 Jam ini?",
-        "answer": "Anda akan mempelajari yoga multi-style yang bersumber dari tradisi otentik Himalaya: Hatha Yoga klasik, Vinyasa Flow dinamis, Ashtanga Primary Series (menurut K. Pattabhi Jois), dan penjajaran mendetail yang terinspirasi oleh Iyengar Yoga."
+        "answer": "Anda akan mempelajari yoga multi-style yang bersumber dari tradisi autentik Himalaya: Hatha Yoga klasik, Vinyasa Flow dinamis, Ashtanga Primary Series (menurut K. Pattabhi Jois), dan penjajaran mendetail yang terinspirasi oleh Iyengar Yoga."
       },
       {
         "question": "Bagaimana jadwal harian selama pelatihan berlangsung?",
@@ -982,7 +992,7 @@
       },
       {
         "question": "Sertifikat apa yang didapat dan apakah diakui secara internasional?",
-        "answer": "Setelah menuntaskan seluruh jam tatap muka dan ujian praktik, Anda menerima sertifikat Registered Yoga Teacher (RYT 200) dari Yoga Alliance yang diakui secara sah di seluruh dunia untuk mengajar profesional."
+        "answer": "Setelah menyelesaikan semua jam tatap muka dan lulus ujian praktik, Anda menerima Sertifikat Penyelesaian 200 Jam dari YogaGarhi, Sekolah Yoga Terdaftar di Yoga Alliance (RYS 200). Lulusan memenuhi syarat untuk mendaftar di Yoga Alliance sebagai RYT 200, memberikan kualifikasi bagi Anda untuk mengajar yoga secara profesional di seluruh dunia."
       },
       {
         "question": "Pilihan kamar apa saja yang ada dan berapa biayanya?",
@@ -990,11 +1000,11 @@
       },
       {
         "question": "Apa saja yang tercakup dalam biaya paket residensial?",
-        "answer": "Biaya mencakup menginap 23 malam (kamar mandi dalam, air panas, AC/kipas, Wi-Fi), 3 kali makan sehat vegetarian setiap hari, teh herbal dan air minum, buku panduan resmi, matras dan props, penjemputan dari bandara DPS, pijat Bali, wisata budaya, persiapan Pra-TTC online, buku 35+ sekuens, sertifikat Yoga Alliance RYT 200, dan hak mengulang gratis seumur hidup. Paket hanya biaya kursus ($999 USD) tidak termasuk kamar dan makan."
+        "answer": "Untuk paket residensial, biaya mencakup semua yang Anda butuhkan selama masa tinggal Anda:\n• 23 malam akomodasi (dengan kamar mandi dalam, air panas, AC atau kipas angin, Wi-Fi, dan pembersihan harian)\n• 3 kali makan vegetarian sehat setiap hari, ditambah teh herbal dan air minum\n• Buku panduan belajar resmi dan buku catatan\n• Matras yoga dan alat bantu (props) untuk latihan\n• Penjemputan bandara dari DPS\n• Ekskursi budaya (jelajah sawah, pertunjukan tari Bali, dan kunjungan ke pura air suci)\n• Satu sesi pijat Bali\n• Kursus persiapan online Pra-TTC\n• Lokakarya khusus dalam Keseimbangan Lengan (Arm Balance) dan Ayurveda\n• Buku 35+ sekuens kreatif dari YogaGarhi\n• Sertifikat Penyelesaian dari YogaGarhi (RYS 200), memenuhi syarat untuk mendaftar di Yoga Alliance sebagai RYT 200\n• Hak istimewa mengulang kursus seumur hidup\nUntuk paket Hanya Biaya Kursus ($999 USD), akomodasi dan makanan tidak termasuk."
       },
       {
         "question": "Bagaimana kebijakan pembatalan dan pengembalian uangnya?",
-        "answer": "Anda dapat menjadwal ulang tanggal kursus secara gratis dalam kurun 12 bulan atau mengalihkan tempat Anda kepada orang lain. Kami mengembalikan 100% dana jika pihak sekolah membatalkan kelas, disertai uji coba Hari ke-1. Mengingat kuota terbatas, pembayaran tidak dapat dikembalikan setelah Hari ke-1 dimulai."
+        "answer": "Deposit sebesar $250 Anda bersifat non-refundable (tidak dapat dikembalikan). Jika Anda harus membatalkan karena keadaan darurat, Anda dapat memindahkannya ke angkatan mendatang dalam waktu 12 bulan. Sisa biaya jatuh tempo 30 hari sebelum kursus dimulai. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa pembayaran yang telah Anda bayarkan; biaya bank dipotong. Jika Anda membatalkan lebih lambat, sisa pembayaran menjadi kredit untuk kursus apa pun dalam waktu 12 bulan. Tidak ada pengembalian dana setelah kursus dimulai. Jika YogaGarhi membatalkan suatu angkatan, Anda dapat memilih pengembalian dana penuh atas semua yang telah Anda bayarkan atau pindah ke angkatan lain tanpa biaya tambahan."
       },
       {
         "question": "Makanan seperti apa yang disajikan selama pelatihan?",
@@ -1015,7 +1025,7 @@
       "careerImpactTitle": "Peluang Karier:",
       "careerImpactDesc": "Setelah menyelesaikan Pelatihan Guru Yoga 200 Jam, Anda dapat mulai mengajar yoga di mana saja di dunia: studio, kelas privat daring, retret yoga, atau membangun komunitas mandiri.",
       "card1Title": "Sertifikasi Global",
-      "card1Desc": "Yoga Alliance RYT-200 untuk memulai karier mengajar di negara mana pun.",
+      "card1Desc": "Lulusan memenuhi syarat untuk mendaftar di Yoga Alliance sebagai RYT 200 untuk memulai karier di mana saja.",
       "card2Title": "Penguasaan Praktik",
       "card2Desc": "Bimbingan mendalam dalam Hatha, Vinyasa, Ashtanga, dan Iyengar.",
       "card3Title": "Keselamatan & Anatomi",
@@ -1037,7 +1047,7 @@
     },
     "accommodationExtra": {
       "featuresTitle": "Akomodasi",
-      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "featuresSub": "Tempat peristirahatan yoga yang damai di jantung kawasan suci Ubud, Bali",
       "feat1": "10 air terjun indah dalam radius 10 km",
       "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
       "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
@@ -1061,7 +1071,7 @@
     },
     "prakritiResearch": {
       "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
-      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "quote": "“Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda”",
       "card1Title": "Pertanyaan Mendasar",
       "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
       "card2Title": "Penyelidikan Mendalam",
@@ -1075,7 +1085,7 @@
       "card6Title": "Kembali ke Keseimbangan",
       "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
       "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
-      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+      "conclusion2": "“Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.”"
     },
     "ethicsExtra": {
       "code1": "Hadir tepat waktu",
@@ -1086,11 +1096,11 @@
       "code6": "Saling menghargai sesama",
       "code7": "Dilarang membawa ponsel ke dalam kelas",
       "code8": "Wajib mengikuti seluruh rangkaian kelas",
-      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
-      "refund2": "Dapat dialihkan ke peserta lain",
-      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
-      "refund4": "Kebijakan hari percobaan",
-      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "refund1": "Deposit bersifat non-refundable (tidak dapat dikembalikan)",
+      "refund2": "Deposit dapat dialihkan dalam kurun 12 bulan (keadaan darurat)",
+      "refund3": "Sisa pembayaran dapat dikembalikan 30+ hari sebelum tanggal mulai",
+      "refund4": "Tidak ada pengembalian dana setelah kursus dimulai",
+      "refund5": "Pengembalian dana penuh jika pihak sekolah membatalkan",
       "reviewsHeading": "Apa Kata Para Siswa Kami",
       "viewAllGoogle": "Lihat semua ulasan di Google",
       "basedOnReviews": "Berdasarkan",
@@ -1117,7 +1127,7 @@
       "Kunjungan alam dan kegiatan akhir pekan",
       "Penjemputan bandara pada hari kedatangan (bandara terdekat)",
       "Staf pendampingan kampus siaga 24 jam",
-      "Sertifikat kelulusan resmi setelah menyelesaikan kursus",
+      "Sertifikat Penyelesaian dari YogaGarhi (RYS 200), memenuhi syarat untuk mendaftar di Yoga Alliance sebagai RYT 200",
       "Pijat relaksasi khas Bali tradisional",
       "Pertunjukan tarian tradisional Bali",
       "Trekking menyusuri sawah Ubud",
@@ -1140,8 +1150,8 @@
         "description": "Pelajari yoga dengan pendekatan murni dan teruji. Guru kami menjaga kemurnian tradisi leluhur yoga."
       },
       {
-        "title": "Bersertifikasi Yoga Alliance",
-        "description": "Dapatkan sertifikasi Yoga Alliance RYT 200 yang diakui secara global untuk mengajar yoga di seluruh dunia."
+        "title": "Sertifikat 200 Jam (Memenuhi Syarat RYT 200)",
+        "description": "Terima sertifikat dari YogaGarhi, Sekolah Yoga Terdaftar di Yoga Alliance (RYS 200), yang membuat lulusan memenuhi syarat untuk mendaftar di Yoga Alliance sebagai RYT 200 untuk mengajar di seluruh dunia."
       },
       {
         "title": "Suasana damai di Bali",
@@ -1282,7 +1292,7 @@
     "studentStories": {
       "badge": "Kisah Siswa",
       "heading": "Hati yang Berkelimpahan di YogaGarhi",
-      "sub": "\"Dengarkan langsung penuturan tulus dari para praktisi yang telah menjalani perjalanan transformasi ini.\"",
+      "sub": "Kisah perjalanan nyata dari para guru dan pencari yang telah menapaki jalan ini sebelum Anda.",
       "stories": [
         {
           "name": "Gurpreet Kaur Dhou",
@@ -1322,7 +1332,7 @@
         }
       ]
     },
-    "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India",
+    "alsoAvailableInRishikeshTitle": "Juga Tersedia di Rishikesh, India",
     "whatYouWillReceiveHeading": "Apa yang Akan Anda Dapatkan dalam Pelatihan Ini",
     "whatYouWillReceiveSub": "Manfaat utama, pengalaman mendalam, dan nilai seumur hidup dalam perjalanan 200 jam Anda."
   },
@@ -1354,12 +1364,12 @@
     "methodCategory": "Metodologi",
     "methodTitle": "Metode Shiv-Shakti",
     "methodDesc": "Pendekatan khas kami yang menerjemahkan teori yoga kuno menjadi kebijaksanaan hidup yang nyata.",
-    "philosophyBadge": "Otentik",
+    "philosophyBadge": "Autentik",
     "philosophyCategory": "Kebijaksanaan Yoga",
     "philosophyTitle": "Berlandaskan Filosofi",
     "philosophyDesc": "Filosofi yoga tertinggi dihayati melalui ritual, meditasi, dan satsang.",
     "traditionBadge": "Tradisional",
-    "traditionCategory": "Teks Otentik",
+    "traditionCategory": "Teks Autentik",
     "traditionTitle": "Tradisi Nyata, Diajarkan dengan Jelas",
     "traditionDesc": "Kami mempelajari teks-teks klasik asli — Yoga Sutras, Hatha Yoga Pradipika, Bhagavad Gita — dan mempraktikkannya setiap hari. Dalam bahasa Inggris yang terstruktur, jelas, dan modern. Tradisional tidak harus membingungkan.",
     "smallGroupCategory": "Mentoring",
@@ -1371,7 +1381,7 @@
     "handsOnDesc": "Pelajari penyesuaian fisik yang aman, prinsip penjajaran cerdas, dan penyusunan sekuens kreatif untuk berbagai bentuk tubuh.",
     "manifestoBadge": "Manifesto Siswa",
     "manifestoHeading": "Tidak berencana untuk mengajar? Sekolah ini justru diciptakan khusus untuk Anda.",
-    "manifestoQuote": "«Saya sebenarnya tidak berniat mengajar. Saya hanya ingin mendalami latihan saya.»",
+    "manifestoQuote": "“Saya sebenarnya tidak berniat mengajar. Saya hanya ingin mendalami latihan saya.”",
     "manifestoIntro": "Lebih dari separuh orang yang menulis kepada kami mengatakan hal ini, hampir seperti meminta maaf. Tolong jangan meminta maaf. Di India, yoga tidak pernah menjadi kursus kejuruan semata — yoga adalah jalan untuk memahami diri sendiri. Siswa selalu menjadi yang utama.",
     "manifestoB1Title": "Anda Adalah Tradisi Itu:",
     "manifestoB1Desc": "Selama ribuan tahun, orang-orang datang menemui guru karena satu alasan: penemuan jati diri.",
@@ -1406,7 +1416,7 @@
     "communityDesc": "Terhubung dengan keluarga besar alumni yang suportif di seluruh dunia.",
     "lineageBadge": "Silsilah Himalaya",
     "lineageTitle": "Kebijaksanaan Hidup",
-    "lineageDesc": "Belajar langsung dari guru yang membawa transmisi silsilah otentik.",
+    "lineageDesc": "Belajar langsung dari guru yang membawa transmisi silsilah autentik.",
     "smallGroupBadge": "8–10 Siswa",
     "smallGroupTitle": "Kelompok Kecil",
     "smallGroupDesc": "Menjamin perhatian penuh dan bimbingan mendalam untuk setiap siswa."
@@ -1494,13 +1504,13 @@
       "goodieBagSub": "Perlengkapan yoga"
     },
     "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
-    "storyP1": "Pelatihan Guru Yoga 100 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP1": "Pelatihan Guru Yoga 100 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman autentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan tempat peristirahatan damai yang jauh dari keramaian.",
     "storyP2": "Selama 12 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
-      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
+      "heading": "Silsilah Autentik Himalaya di ashram tenang di Bali",
       "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 100 jam kami:",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
@@ -1614,7 +1624,7 @@
       "double": "Kamar Berdua (Double)",
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
-      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
       "earlyBird": "Diskon Early Bird",
       "save300": "Hemat $300 USD",
       "earlyBirdPrice": "Harga Early Bird",
@@ -1632,7 +1642,13 @@
       "refundCancellation": "Pengembalian Dana & Pembatalan",
       "ryt200Title": "Sertifikat Kelulusan 100 Jam",
       "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance",
-      "meetsStandards": "Diterbitkan oleh YogaGarhi, Sekolah Yoga Terdaftar di Yoga Alliance (RYS 200)"
+      "meetsStandards": "Diterbitkan oleh YogaGarhi, Sekolah Yoga Terdaftar di Yoga Alliance (RYS 200)",
+      "yaRegisteredSchoolTitle": "Sekolah Yoga Terdaftar Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Sekolah kami, YogaGarhi, terdaftar di Yoga Alliance USA. Setelah menyelesaikan kursus ini, Anda akan menerima sertifikasi yang diakui secara internasional, memungkinkan Anda untuk menjadi Guru Yoga Terdaftar (RYT). Sertifikasi ini membuka jalan bagi Anda untuk mengajar yoga di mana saja di seluruh dunia.",
+      "rysLabel": "RYS (Sekolah Yoga Terdaftar)",
+      "rysDesc": "YogaGarhi adalah sekolah terakreditasi yang memenuhi kualifikasi untuk melatih dan mensertifikasi guru yoga sesuai standar kurikulum global Yoga Alliance yang ketat.",
+      "rytLabel": "RYT (Guru Yoga Terdaftar)",
+      "rytDesc": "Kredensial internasional yang Anda raih setelah kelulusan, memberi Anda hak untuk mendaftar di Yoga Alliance dan memimpin kelas di seluruh dunia."
     },
     "faqsHeading": "Pertanyaan yang Sering Diajukan",
     "faqs": [
@@ -1642,7 +1658,7 @@
       },
       {
         "question": "Gaya yoga apa saja yang dipelajari dalam TTC 200 Jam ini?",
-        "answer": "Anda akan mempelajari yoga multi-style yang bersumber dari tradisi otentik Himalaya: Hatha Yoga klasik, Vinyasa Flow dinamis, Ashtanga Primary Series (menurut K. Pattabhi Jois), dan penjajaran mendetail yang terinspirasi oleh Iyengar Yoga."
+        "answer": "Anda akan mempelajari yoga multi-style yang bersumber dari tradisi autentik Himalaya: Hatha Yoga klasik, Vinyasa Flow dinamis, Ashtanga Primary Series (menurut K. Pattabhi Jois), dan penjajaran mendetail yang terinspirasi oleh Iyengar Yoga."
       },
       {
         "question": "Bagaimana jadwal harian selama pelatihan berlangsung?",
@@ -1681,7 +1697,9 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
-      "btnCounselor": "Konsultasi"
+      "btnCounselor": "Konsultasi",
+      "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Selamat Datang di YogaGarhi Bali",
@@ -1869,7 +1887,7 @@
     },
     "accommodationExtra": {
       "featuresTitle": "Akomodasi",
-      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "featuresSub": "Tempat peristirahatan yoga yang damai di jantung kawasan suci Ubud, Bali",
       "feat1": "10 air terjun indah dalam radius 10 km",
       "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
       "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
@@ -1893,7 +1911,7 @@
     },
     "prakritiResearch": {
       "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
-      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "quote": "“Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda”",
       "card1Title": "Pertanyaan Mendasar",
       "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
       "card2Title": "Penyelidikan Mendalam",
@@ -1907,7 +1925,7 @@
       "card6Title": "Kembali ke Keseimbangan",
       "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
       "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
-      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+      "conclusion2": "“Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.”"
     },
     "ethicsExtra": {
       "code1": "Hadir tepat waktu",
@@ -2180,13 +2198,13 @@
       "goodieBagSub": "Perlengkapan yoga"
     },
     "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
-    "storyP1": "Pelatihan Guru Yoga 300 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP1": "Pelatihan Guru Yoga 300 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman autentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan tempat peristirahatan damai yang jauh dari keramaian.",
     "storyP2": "Selama 28 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
-      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Bali",
+      "heading": "Silsilah Autentik Himalaya di ashram tenang di Bali",
       "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 300 jam kami:",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
@@ -2300,7 +2318,7 @@
       "double": "Kamar Berdua (Double)",
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
-      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
       "earlyBird": "Diskon Early Bird",
       "save300": "Hemat $300 USD",
       "earlyBirdPrice": "Harga Early Bird",
@@ -2317,7 +2335,13 @@
       "codeOfConduct": "Kode Etik",
       "refundCancellation": "Pengembalian Dana & Pembatalan",
       "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
-      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Sekolah Yoga Terdaftar Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Sekolah kami, YogaGarhi, terdaftar di Yoga Alliance USA. Setelah menyelesaikan kursus ini, Anda akan menerima sertifikasi yang diakui secara internasional, memungkinkan Anda untuk menjadi Guru Yoga Terdaftar (RYT). Sertifikasi ini membuka jalan bagi Anda untuk mengajar yoga di mana saja di seluruh dunia.",
+      "rysLabel": "RYS (Sekolah Yoga Terdaftar)",
+      "rysDesc": "YogaGarhi adalah sekolah terakreditasi yang memenuhi kualifikasi untuk melatih dan mensertifikasi guru yoga sesuai standar kurikulum global Yoga Alliance yang ketat.",
+      "rytLabel": "RYT (Guru Yoga Terdaftar)",
+      "rytDesc": "Kredensial internasional yang Anda raih setelah kelulusan, memberi Anda hak untuk mendaftar di Yoga Alliance dan memimpin kelas di seluruh dunia."
     },
     "faqsHeading": "Pertanyaan yang Sering Diajukan",
     "faqs": [
@@ -2327,7 +2351,7 @@
       },
       {
         "question": "Gaya yoga apa saja yang dipelajari dalam TTC 200 Jam ini?",
-        "answer": "Anda akan mempelajari yoga multi-style yang bersumber dari tradisi otentik Himalaya: Hatha Yoga klasik, Vinyasa Flow dinamis, Ashtanga Primary Series (menurut K. Pattabhi Jois), dan penjajaran mendetail yang terinspirasi oleh Iyengar Yoga."
+        "answer": "Anda akan mempelajari yoga multi-style yang bersumber dari tradisi autentik Himalaya: Hatha Yoga klasik, Vinyasa Flow dinamis, Ashtanga Primary Series (menurut K. Pattabhi Jois), dan penjajaran mendetail yang terinspirasi oleh Iyengar Yoga."
       },
       {
         "question": "Bagaimana jadwal harian selama pelatihan berlangsung?",
@@ -2358,7 +2382,9 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
-      "btnCounselor": "Konsultasi"
+      "btnCounselor": "Konsultasi",
+      "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Tingkatkan Perjalanan Yoga Anda di YogaGarhi Bali",
@@ -2557,7 +2583,7 @@
     },
     "accommodationExtra": {
       "featuresTitle": "Akomodasi",
-      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "featuresSub": "Tempat peristirahatan yoga yang damai di jantung kawasan suci Ubud, Bali",
       "feat1": "10 air terjun indah dalam radius 10 km",
       "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
       "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
@@ -2581,7 +2607,7 @@
     },
     "prakritiResearch": {
       "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
-      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "quote": "“Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda”",
       "card1Title": "Pertanyaan Mendasar",
       "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
       "card2Title": "Penyelidikan Mendalam",
@@ -2595,7 +2621,7 @@
       "card6Title": "Kembali ke Keseimbangan",
       "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
       "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
-      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+      "conclusion2": "“Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.”"
     },
     "ethicsExtra": {
       "code1": "Hadir tepat waktu",
@@ -2868,13 +2894,13 @@
       "goodieBagSub": "Perlengkapan yoga"
     },
     "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
-    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman autentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan tempat peristirahatan damai yang jauh dari keramaian.",
     "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
-      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Rishikesh",
+      "heading": "Silsilah Autentik Himalaya di ashram tenang di Rishikesh",
       "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
@@ -2988,7 +3014,7 @@
       "double": "Kamar Berdua (Double)",
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
-      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
       "earlyBird": "Diskon Early Bird",
       "save300": "Hemat $300 USD",
       "earlyBirdPrice": "Harga Early Bird",
@@ -3005,7 +3031,13 @@
       "codeOfConduct": "Kode Etik",
       "refundCancellation": "Pengembalian Dana & Pembatalan",
       "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
-      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Sekolah Yoga Terdaftar Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Sekolah kami, YogaGarhi, terdaftar di Yoga Alliance USA. Setelah menyelesaikan kursus ini, Anda akan menerima sertifikasi yang diakui secara internasional, memungkinkan Anda untuk menjadi Guru Yoga Terdaftar (RYT). Sertifikasi ini membuka jalan bagi Anda untuk mengajar yoga di mana saja di seluruh dunia.",
+      "rysLabel": "RYS (Sekolah Yoga Terdaftar)",
+      "rysDesc": "YogaGarhi adalah sekolah terakreditasi yang memenuhi kualifikasi untuk melatih dan mensertifikasi guru yoga sesuai standar kurikulum global Yoga Alliance yang ketat.",
+      "rytLabel": "RYT (Guru Yoga Terdaftar)",
+      "rytDesc": "Kredensial internasional yang Anda raih setelah kelulusan, memberi Anda hak untuk mendaftar di Yoga Alliance dan memimpin kelas di seluruh dunia."
     },
     "faqsHeading": "Pertanyaan yang Sering Diajukan",
     "faqs": [
@@ -3074,7 +3106,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
-      "btnCounselor": "Konsultasi"
+      "btnCounselor": "Konsultasi",
+      "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Selamat Datang di YogaGarhi Rishikesh",
@@ -3262,7 +3296,7 @@
     },
     "accommodationExtra": {
       "featuresTitle": "Akomodasi",
-      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "featuresSub": "Tempat peristirahatan yoga yang damai di jantung kawasan suci Ubud, Bali",
       "feat1": "10 air terjun indah dalam radius 10 km",
       "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
       "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
@@ -3286,7 +3320,7 @@
     },
     "prakritiResearch": {
       "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
-      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "quote": "“Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda”",
       "card1Title": "Pertanyaan Mendasar",
       "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
       "card2Title": "Penyelidikan Mendalam",
@@ -3300,7 +3334,7 @@
       "card6Title": "Kembali ke Keseimbangan",
       "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
       "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
-      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+      "conclusion2": "“Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.”"
     },
     "ethicsExtra": {
       "code1": "Hadir tepat waktu",
@@ -3370,7 +3404,7 @@
         "description": "Raih sertifikasi RYT yang diakui secara internasional untuk mengajar dengan percaya diri di seluruh dunia."
       },
       {
-        "title": "Lingkungan Suaka Tapovan yang Damai",
+        "title": "Lingkungan Tenang Tapovan yang Damai",
         "description": "Berlatih di kaki bukit Himalaya yang tenang menghadap Sungai Gangga suci dengan energi prana yang melimpah."
       },
       {
@@ -3453,7 +3487,7 @@
     "foodMenuList": [
       {
         "meal": "Breakfast",
-        "time": "9:15 AM",
+        "time": "09.15",
         "items": [
           "Fresh seasonal Himalayan fruits & papaya",
           "Nutritious Ayurvedic grain porridge & oats",
@@ -3463,7 +3497,7 @@
       },
       {
         "meal": "Lunch",
-        "time": "12:00 PM",
+        "time": "12.00",
         "items": [
           "Organic Himalayan khichdi & wholesome lentils",
           "Freshly baked whole wheat rotis & basmati rice",
@@ -3473,7 +3507,7 @@
       },
       {
         "meal": "Dinner",
-        "time": "7:30 PM",
+        "time": "19.30",
         "items": [
           "Light nourishing Ayurvedic vegetable soups",
           "Steamed seasonal mountain greens & lentils",
@@ -3579,13 +3613,13 @@
       "goodieBagSub": "Perlengkapan yoga"
     },
     "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
-    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman autentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan tempat peristirahatan damai yang jauh dari keramaian.",
     "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
-      "heading": "Silsilah Otentik Himalaya di Ashram Intim di Rishikesh",
+      "heading": "Silsilah Autentik Himalaya di ashram tenang di Rishikesh",
       "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
@@ -3745,7 +3779,7 @@
       "double": "Kamar Berdua (Double)",
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
-      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
       "earlyBird": "Diskon Early Bird",
       "save300": "Hemat $300 USD",
       "earlyBirdPrice": "Harga Early Bird",
@@ -3762,7 +3796,13 @@
       "codeOfConduct": "Kode Etik",
       "refundCancellation": "Pengembalian Dana & Pembatalan",
       "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
-      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Sekolah Yoga Terdaftar Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Sekolah kami, YogaGarhi, terdaftar di Yoga Alliance USA. Setelah menyelesaikan kursus ini, Anda akan menerima sertifikasi yang diakui secara internasional, memungkinkan Anda untuk menjadi Guru Yoga Terdaftar (RYT). Sertifikasi ini membuka jalan bagi Anda untuk mengajar yoga di mana saja di seluruh dunia.",
+      "rysLabel": "RYS (Sekolah Yoga Terdaftar)",
+      "rysDesc": "YogaGarhi adalah sekolah terakreditasi yang memenuhi kualifikasi untuk melatih dan mensertifikasi guru yoga sesuai standar kurikulum global Yoga Alliance yang ketat.",
+      "rytLabel": "RYT (Guru Yoga Terdaftar)",
+      "rytDesc": "Kredensial internasional yang Anda raih setelah kelulusan, memberi Anda hak untuk mendaftar di Yoga Alliance dan memimpin kelas di seluruh dunia."
     },
     "faqsHeading": "Pertanyaan yang Sering Diajukan",
     "faqs": [
@@ -3808,7 +3848,7 @@
       },
       {
         "question": "What is the daily schedule like at the Rishikesh ashram?",
-        "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
+        "answer": "A typical training day begins at 06.00 with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 06.30. Morning asana practice runs from 7:30 to 09.00, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 19.30 and quiet reflection."
       },
       {
         "question": "Is Rishikesh safe for solo female travelers?",
@@ -3843,7 +3883,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
-      "btnCounselor": "Konsultasi"
+      "btnCounselor": "Konsultasi",
+      "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Selamat Datang di YogaGarhi Rishikesh",
@@ -4036,7 +4078,7 @@
     },
     "accommodationExtra": {
       "featuresTitle": "Akomodasi",
-      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "featuresSub": "Tempat peristirahatan yoga yang damai di jantung kawasan suci Ubud, Bali",
       "feat1": "10 air terjun indah dalam radius 10 km",
       "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
       "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
@@ -4060,7 +4102,7 @@
     },
     "prakritiResearch": {
       "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
-      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "quote": "“Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda”",
       "card1Title": "Pertanyaan Mendasar",
       "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
       "card2Title": "Penyelidikan Mendalam",
@@ -4074,7 +4116,7 @@
       "card6Title": "Kembali ke Keseimbangan",
       "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
       "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
-      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+      "conclusion2": "“Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.”"
     },
     "ethicsExtra": {
       "code1": "Hadir tepat waktu",
@@ -4144,7 +4186,7 @@
         "description": "Raih sertifikasi RYT yang diakui secara internasional untuk mengajar dengan percaya diri di seluruh dunia."
       },
       {
-        "title": "Lingkungan Suaka Tapovan yang Damai",
+        "title": "Lingkungan Tenang Tapovan yang Damai",
         "description": "Berlatih di kaki bukit Himalaya yang tenang menghadap Sungai Gangga suci dengan energi prana yang melimpah."
       },
       {
@@ -4227,7 +4269,7 @@
     "foodMenuList": [
       {
         "meal": "Breakfast",
-        "time": "9:15 AM",
+        "time": "09.15",
         "items": [
           "Fresh seasonal Himalayan fruits & papaya",
           "Nutritious Ayurvedic grain porridge & oats",
@@ -4237,7 +4279,7 @@
       },
       {
         "meal": "Lunch",
-        "time": "12:00 PM",
+        "time": "12.00",
         "items": [
           "Organic Himalayan khichdi & wholesome lentils",
           "Freshly baked whole wheat rotis & basmati rice",
@@ -4247,7 +4289,7 @@
       },
       {
         "meal": "Dinner",
-        "time": "7:30 PM",
+        "time": "19.30",
         "items": [
           "Light nourishing Ayurvedic vegetable soups",
           "Steamed seasonal mountain greens & lentils",
@@ -4448,7 +4490,7 @@
     "readLess": "Tutup",
     "chandaRole": "Rekan Pendiri",
     "chandaShort": "Lahir dalam silsilah yoga yang sakral, perjalanan Chanda Maheshwari dimulai jauh sebelum ia menginjakkan kaki di atas matras. Ayahnya, seorang Hatha Yogi yang taat, menanamkan benih yoga sejak masa kecilnya sebagai jalan hidup.",
-    "chandaFull": "Jalannya terbentang melalui aliran kuno Yoga, dari disiplin Hatha Yoga, pengabdian Bhakti Yoga, hingga kebangkitan batin Kriya Yoga. Dibimbing oleh ayahnya dan para Guru terhormat, ia mendedikasikan lebih dari empat dekade dalam sadhana yang mendalam.\n\nDengan pengalaman mengajar lebih dari 15 tahun, Chanda Maheshwari mendirikan YogaGarhi sebagai suaka hidup bagi kebijaksanaan tradisional. Ia membagikan esensi abadi yoga sebagai perjalanan transformasi dari raga menuju jiwa.",
+    "chandaFull": "Jalannya terbentang melalui aliran kuno Yoga, dari disiplin Hatha Yoga, pengabdian Bhakti Yoga, hingga kebangkitan batin Kriya Yoga. Dibimbing oleh ayahnya dan para Guru terhormat, ia mendedikasikan lebih dari empat dekade dalam sadhana yang mendalam.\n\nDengan pengalaman mengajar lebih dari 15 tahun, Chanda Maheshwari mendirikan YogaGarhi sebagai tempat bernaung hidup bagi kebijaksanaan tradisional. Ia membagikan esensi abadi yoga sebagai perjalanan transformasi dari raga menuju jiwa.",
     "chandaSpec1": "Hatha Yoga",
     "chandaSpec2": "Bhakti Yoga",
     "chandaSpec3": "Kriya Yoga",
@@ -4543,7 +4585,7 @@
     "hoursLabel": "Dukungan Harian (WITA / IST)",
     "hoursTime": "08.00 – 20.00",
     "campusBadge": "Dua Kampus Global",
-    "campusTitle": "Tempat Tradisi Leluhur Bertemu Suaka Tropis",
+    "campusTitle": "Tempat Tradisi Leluhur Bertemu Oase Tropis",
     "baliBadge": "Kantor Pusat & Ashram Utama",
     "baliTitle": "YogaGarhi Bali Ashram",
     "baliAddress": "Ds Madangan Kaja, Desa Petak, Petak Kaja, Kec. Gianyar, Kabupaten Gianyar, Bali 80515, Indonesia",
@@ -4585,7 +4627,7 @@
     "metaDesc": "Daftar kursus pelatihan guru yoga bersertifikat Yoga Alliance 100, 200 & 300 jam di Bali dan Rishikesh. Penerimaan, prasyarat & tanggal.",
     "badge": "Sekolah Terdaftar Yoga Alliance RYS • Pendaftaran Dibuka 2026–2027",
     "heroHeading": "Daftar Pelatihan Guru Yoga",
-    "heroSub": "Mulailah perjalanan Anda untuk menjadi guru yoga bersertifikat dan autentik. Pilih program Anda, pelajari persyaratannya, dan amankan tempat Anda di kelas intim kami.",
+    "heroSub": "Mulailah perjalanan Anda untuk menjadi guru yoga bersertifikat dan autentik. Pilih program Anda, pelajari persyaratannya, dan amankan tempat Anda di kelas kecil kami.",
     "smallCohorts": "Kelas kecil 8–10 siswa",
     "flexibleRescheduling": "Penjadwalan ulang fleksibel",
     "rytCertification": "Sertifikasi Yoga Alliance RYT",
@@ -4640,7 +4682,7 @@
     "q4": "Apa saja yang termasuk dalam pendaftaran saya?",
     "a4": "Paket residensial mencakup biaya kuliah penuh, sertifikat terakreditasi Yoga Alliance, manual pelatihan cetak, akomodasi selama kursus, 3 makanan Sattvic/vegetarian harian yang bergizi, tamasya akhir pekan, dan akses langsung ke portal online Pre-YTTC. Opsi hanya kuliah juga tersedia.",
     "q5": "Berapa banyak siswa di setiap angkatan?",
-    "a5": "Untuk memastikan perhatian pribadi, umpan balik keselarasan individu, dan pembelajaran mendalam, angkatan kami mempertahankan ukuran kelas intim dengan bimbingan guru yang berdedikasi.",
+    "a5": "Untuk memastikan perhatian pribadi, umpan balik keselarasan individu, dan pembelajaran mendalam, angkatan kami mempertahankan ukuran kelas kecil dengan bimbingan guru yang berdedikasi.",
     "ctaHeading": "Butuh Panduan Memilih Pelatihan yang Tepat?",
     "ctaSub": "Tim penerimaan kami siap membantu Anda dengan pertanyaan mengenai silabus kursus, pengaturan perjalanan, pilihan kamar, dan prasyarat.",
     "whatsappButton": "Obrolan di WhatsApp",
@@ -4691,7 +4733,7 @@
   "retreatHub": {
     "metaTitle": "Retret Yoga di Bali, Rishikesh & Varkala | YogaGarhi",
     "metaDesc": "Segarkan diri dengan retret yoga 3, 7, dan 14 hari di Ubud Bali, Rishikesh, dan pantai Varkala. Yoga harian, sound healing, dan makanan organik.",
-    "badge": "✦ Suaka Kebugaran Sakral",
+    "badge": "✦ Tempat Kebugaran Sakral",
     "heroHeading": "Retret Yoga Transformatif",
     "heroSub": "Tinggalkan rutinitas dan selami praktik penyembuhan, nutrisi sattvik, dan ketenangan alam di Bali, Rishikesh, dan Varkala.",
     "packagesDown": "Pilihan Paket ↓",
@@ -4731,7 +4773,7 @@
     "badgeShared": "Kamar Berbagi (Sharing)",
     "badgePrivate": "Kamar Pribadi",
     "earlyBird": "Hemat Early Bird",
-    "reserveMat": "Amankan Tempat Anda",
+    "reserveMat": "Pesan Tempat Anda",
     "talkCounselor": "Bicara dengan Konsultan Retret",
     "quickOverview": "Ringkasan Singkat",
     "duration": "Durasi",
@@ -4739,7 +4781,7 @@
     "skillLevel": "Tingkat Kemahiran",
     "skillLevelVal": "Semua Tingkatan Diterima (Pemula hingga Mahir)",
     "groupSize": "Kapasitas Grup",
-    "groupSizeVal": "Kelompok Intim (Maksimal 12 orang)",
+    "groupSizeVal": "Kelompok Kecil (Maksimal 12)",
     "language": "Bahasa",
     "languageVal": "Bahasa Inggris (Komunitas Internasional)",
     "navOverview": "Ringkasan",
@@ -4758,15 +4800,15 @@
     "whatIsNotIncluded": "Yang Tidak Termasuk",
     "pricingTitle": "Pilih Tipe Kamar Anda",
     "tripleRoom": "Kamar Berbagi (Twin / Triple)",
-    "privateRoom": "Kamar Santuari Pribadi",
-    "perPerson": "per orang (All-inclusive)",
+    "privateRoom": "Kamar Pribadi",
+    "perPerson": "per orang (all-inclusive)",
     "bookNow": "Pesan Sekarang",
     "leadTeachers": "Guru Pembimbing Yoga",
     "faqTitle": "Pertanyaan yang Sering Diajukan",
     "needGuidance": "Butuh Bantuan Memilih Paket Retret?",
     "guidanceSub": "Tim kami siap membantu terkait penerbangan, visa, dan penyesuaian tanggal perjalanan Anda.",
-    "reschedulePolicyTitle": "Kebijakan Penjadwalan Ulang",
-    "reschedulePolicyText": "Jadwal dapat diubah dalam kurun waktu 12 bulan. Tidak ada pengembalian dana setelah Hari ke-1.",
+    "reschedulePolicyTitle": "Ketentuan Pembatalan & Deposit",
+    "reschedulePolicyText": "Deposit sebesar $250 Anda bersifat non-refundable (tidak dapat dikembalikan). Jika Anda membatalkan karena keadaan darurat, deposit Anda dapat dipindahkan ke tanggal mendatang dalam waktu 12 bulan. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa pembayaran yang telah Anda bayarkan; biaya bank dipotong. Jika Anda membatalkan kurang dari 30 hari sebelum tanggal mulai, sisa pembayaran Anda menjadi kredit yang berlaku selama 12 bulan. Tidak ada pengembalian dana setelah retret dimulai. Jika YogaGarhi membatalkan retret, Anda akan menerima pengembalian dana penuh atas semua pembayaran atau pemindahan tanggal secara gratis.",
     "packages": {
       "bali-3-days": {
         "title": "RETREAT YOGA 3 HARI & 2 MALAM DI UBUD BALI",
@@ -5054,7 +5096,7 @@
     "metaDesc": "Ikuti kuis Prakriti 6 pertanyaan kami dan temukan apakah Anda Vata, Pitta, atau Kapha — serta latihan yoga mana yang benar-benar akan mengubah hidup Anda.",
     "ogTitle": "Apa Tipe Energi Yogik Anda?",
     "ogDesc": "Temukan konstitusi Dosha unik Anda dengan kuis Prakriti 6 pertanyaan gratis dari YogaGarhi.",
-    "tagline": "Sekolah Yoga Otentik di Bali",
+    "tagline": "Sekolah Yoga Autentik di Bali",
     "heroBadge": "Kuis Prakriti Gratis — Hanya 30 Detik",
     "heroTitle": "Apa",
     "heroTitleHighlight": "Energi Yogik Unik Anda?",
@@ -5188,10 +5230,10 @@
     "metaDesc": "Ikuti Masterclass Fondasi Guru Yoga 2 Hari dari YogaGarhi. Temukan cara menjadi guru bersertifikat dan memulai karier yang bermakna.",
     "ogTitle": "Fondasi Guru Yoga 2 Hari | Mulai Karier Anda",
     "ogDesc": "Ikuti Masterclass Fondasi Guru Yoga 2 Hari dari YogaGarhi. Temukan jalan menjadi guru yoga bersertifikat dan bangun karier yang penuh tujuan.",
-    "tagline": "Sekolah Yoga Otentik di Bali",
+    "tagline": "Sekolah Yoga Autentik di Bali",
     "batchNotice": {
       "prefix": "Angkatan Berikutnya:",
-      "schedule": "10:00 AM CET (Waktu Jerman) | 5:00 PM (Singapura) | 6:00 PM (Korea Selatan)"
+      "schedule": "10.00 CET (Waktu Jerman) | 17.00 (Singapura) | 18.00 (Korea Selatan)"
     },
     "hero": {
       "subtitlePrefix": "Ragu Memilih YTTC yang Tepat?",
@@ -5310,10 +5352,10 @@
       "founder": "Sachin Ji",
       "role": "Pendiri, YogaGarhi",
       "heading": "Mengapa Mengikuti Fondasi Ini?",
-      "desc": "YogaGarhi mewakili silsilah Himalaya yang otentik. Kami tidak hanya mengajarkan asana; kami menyediakan cara hidup yang telah mengubah ribuan kehidupan.",
+      "desc": "YogaGarhi mewakili silsilah Himalaya yang autentik. Kami tidak hanya mengajarkan asana; kami menyediakan cara hidup yang telah mengubah ribuan kehidupan.",
       "features": [
         {
-          "title": "Silsilah Otentik",
+          "title": "Silsilah Autentik",
           "desc": "Berakar pada kearifan tradisional Himalaya, bukan tren komersial."
         },
         {
@@ -5365,9 +5407,9 @@
           "dayLabel": "Hari:",
           "day": "Selasa",
           "timeLabel": "Waktu (Bali):",
-          "time": "5:00 PM WITA",
-          "timeSydney": "• Sydney: 7:00 PM AEST",
-          "timeUsEast": "• US East: 7:00 AM EDT",
+          "time": "17.00 WITA",
+          "timeSydney": "• Sydney: 19.00 AEST",
+          "timeUsEast": "• US East: 07.00 EDT",
           "bestForLabel": "Terbaik untuk:",
           "bestForDesc": "Australia, Selandia Baru, dan peserta Pantai Timur AS yang bangun pagi."
         },
@@ -5378,9 +5420,9 @@
           "dayLabel": "Hari:",
           "day": "Kamis",
           "timeLabel": "Waktu (Bali):",
-          "time": "7:00 PM WITA",
-          "timeUk": "• Inggris: 12:00 PM BST",
-          "timeGermany": "• Jerman: 1:00 PM CEST",
+          "time": "19.00 WITA",
+          "timeUk": "• Inggris: 12.00 BST",
+          "timeGermany": "• Jerman: 13.00 CEST",
           "bestForLabel": "Terbaik untuk:",
           "bestForDesc": "Inggris Raya, Jerman, dan seluruh Eropa."
         },
@@ -5391,9 +5433,9 @@
           "dayLabel": "Hari:",
           "day": "Sabtu",
           "timeLabel": "Waktu (Bali):",
-          "time": "9:00 AM WITA",
-          "timeUsWest": "• US Pantai Barat: 7:00 PM (Jumat)",
-          "timeUsEast": "• US Pantai Timur: 10:00 PM (Jumat)",
+          "time": "09.00 WITA",
+          "timeUsWest": "• US Pantai Barat: 19.00 (Jumat)",
+          "timeUsEast": "• US Pantai Timur: 22.00 (Jumat)",
           "bestForLabel": "Terbaik untuk:",
           "bestForDesc": "Amerika Serikat dan Kanada."
         }
@@ -5408,32 +5450,32 @@
           {
             "region": "Australia (Sydney/Melbourne)",
             "tz": "AEST (UTC+10/+11)",
-            "local": "7:00 – 8:00 PM",
-            "base": "5:00 – 6:00 PM"
+            "local": "19.00 – 20.00",
+            "base": "17.00 – 18.00"
           },
           {
             "region": "Inggris Raya (London)",
             "tz": "BST/GMT (UTC+0/+1)",
-            "local": "12:00 – 1:00 PM",
-            "base": "7:00 – 8:00 PM"
+            "local": "12.00 – 13.00",
+            "base": "19.00 – 20.00"
           },
           {
             "region": "Jerman (Berlin)",
             "tz": "CEST (UTC+1/+2)",
-            "local": "7:00 – 8:00 PM",
-            "base": "1:00 – 2:00 AM"
+            "local": "19.00 – 20.00",
+            "base": "01.00 – 02.00"
           },
           {
             "region": "US Pantai Timur (New York)",
             "tz": "EDT (UTC-4)",
-            "local": "7:00 – 8:00 PM",
-            "base": "6:00 – 7:00 AM"
+            "local": "19.00 – 20.00",
+            "base": "06.00 – 07.00"
           },
           {
             "region": "US Pantai Barat (Los Angeles)",
             "tz": "PDT (UTC-7)",
-            "local": "7:00 – 8:00 PM",
-            "base": "9:00 – 10:00 AM"
+            "local": "19.00 – 20.00",
+            "base": "09.00 – 10.00"
           }
         ]
       }
@@ -5536,7 +5578,7 @@
     "readMore": "Baca Selengkapnya",
     "guideAria": "Baca panduan lengkap: {title}",
     "metaTitle": "Artikel Yoga & Blog Kearifan | YogaGarhi",
-    "metaDesc": "Jelajahi artikel otentik tentang filosofi yoga, pelatihan guru, alignment asana, dan kehidupan ashram di Bali & Rishikesh."
+    "metaDesc": "Jelajahi artikel autentik tentang filosofi yoga, pelatihan guru, alignment asana, dan kehidupan ashram di Bali & Rishikesh."
   },
   "legalCommon": {
     "disclaimerTitle": "Pemberitahuan",
@@ -5608,7 +5650,8 @@
     "sectionAfterStartTitle": "4. After the Course Begins",
     "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
     "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
-    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
+    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost.",
+    "highlightsSr": "Sorotan Kebijakan"
   },
   "course300Rishikesh": {
     "metaTitle": "Pelatihan Guru Yoga 300 Jam di Rishikesh | Jalur Lanjutan RYT 500 India",
@@ -5643,12 +5686,12 @@
     },
     "storyTitle": "Tingkatkan Pengajaran Anda ke Tingkat Master di Ibu Kota Yoga Dunia",
     "storyP1": "Pelatihan Guru Yoga 300 Jam kami di Rishikesh adalah program residensial lanjutan 28 hari yang dirancang bagi para guru bersertifikat 200 jam yang siap melangkah ke tingkat pengajaran master. Terletak di Tapovan yang tenang di Rishikesh, menghadap Sungai Gangga yang suci dan kaki bukit Himalaya, YogaGarhi menyediakan lingkungan ideal untuk sadhana mendalam.",
-    "storyP2": "Selama 28 hari, Anda akan mendalami Ashtanga Vinyasa tingkat lanjut, penyesuaian postur langsung, terapi yoga, pranayama tubuh halus, serta teks-teks filosofis mendalam seperti Yoga Sutra Patanjali dan Bhagavad Gita bersama guru-guru master E-RYT 500 dalam kelompok intim 8–10 siswa.",
+    "storyP2": "Selama 28 hari, Anda akan mendalami Ashtanga Vinyasa tingkat lanjut, penyesuaian postur langsung, terapi yoga, pranayama tubuh halus, serta teks-teks filosofis mendalam seperti Yoga Sutra Patanjali dan Bhagavad Gita bersama guru-guru master E-RYT 500 dalam kelompok kecil 8–10 siswa.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
-      "heading": "Pelatihan Tingkat Master di Ashram Himalaya yang Intim",
+      "heading": "Pelatihan Tingkat Master di Ashram Himalaya yang Kecil",
       "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
@@ -5808,7 +5851,7 @@
       "double": "Kamar Berdua (Double)",
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
-      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
       "earlyBird": "Diskon Early Bird",
       "save300": "Hemat $300 USD",
       "earlyBirdPrice": "Harga Early Bird",
@@ -5825,7 +5868,13 @@
       "codeOfConduct": "Kode Etik",
       "refundCancellation": "Pengembalian Dana & Pembatalan",
       "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
-      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Sekolah Yoga Terdaftar Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Sekolah kami, YogaGarhi, terdaftar di Yoga Alliance USA. Setelah menyelesaikan kursus ini, Anda akan menerima sertifikasi yang diakui secara internasional, memungkinkan Anda untuk menjadi Guru Yoga Terdaftar (RYT). Sertifikasi ini membuka jalan bagi Anda untuk mengajar yoga di mana saja di seluruh dunia.",
+      "rysLabel": "RYS (Sekolah Yoga Terdaftar)",
+      "rysDesc": "YogaGarhi adalah sekolah terakreditasi yang memenuhi kualifikasi untuk melatih dan mensertifikasi guru yoga sesuai standar kurikulum global Yoga Alliance yang ketat.",
+      "rytLabel": "RYT (Guru Yoga Terdaftar)",
+      "rytDesc": "Kredensial internasional yang Anda raih setelah kelulusan, memberi Anda hak untuk mendaftar di Yoga Alliance dan memimpin kelas di seluruh dunia."
     },
     "faqsHeading": "Pertanyaan yang Sering Diajukan",
     "faqs": [
@@ -5871,7 +5920,7 @@
       },
       {
         "question": "What is the daily schedule like at the Rishikesh ashram?",
-        "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
+        "answer": "A typical training day begins at 06.00 with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 06.30. Morning asana practice runs from 7:30 to 09.00, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 19.30 and quiet reflection."
       },
       {
         "question": "Is Rishikesh safe for solo female travelers?",
@@ -5906,7 +5955,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
-      "btnCounselor": "Konsultasi"
+      "btnCounselor": "Konsultasi",
+      "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Selamat Datang di YogaGarhi Rishikesh",
@@ -6099,7 +6150,7 @@
     },
     "accommodationExtra": {
       "featuresTitle": "Akomodasi",
-      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "featuresSub": "Tempat peristirahatan yoga yang damai di jantung kawasan suci Ubud, Bali",
       "feat1": "10 air terjun indah dalam radius 10 km",
       "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
       "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
@@ -6123,7 +6174,7 @@
     },
     "prakritiResearch": {
       "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
-      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "quote": "“Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda”",
       "card1Title": "Pertanyaan Mendasar",
       "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
       "card2Title": "Penyelidikan Mendalam",
@@ -6137,7 +6188,7 @@
       "card6Title": "Kembali ke Keseimbangan",
       "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
       "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
-      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+      "conclusion2": "“Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.”"
     },
     "ethicsExtra": {
       "code1": "Hadir tepat waktu",
@@ -6207,7 +6258,7 @@
         "description": "Raih sertifikasi RYT yang diakui secara internasional untuk mengajar dengan percaya diri di seluruh dunia."
       },
       {
-        "title": "Lingkungan Suaka Tapovan yang Damai",
+        "title": "Lingkungan Tenang Tapovan yang Damai",
         "description": "Berlatih di kaki bukit Himalaya yang tenang menghadap Sungai Gangga suci dengan energi prana yang melimpah."
       },
       {
@@ -6290,7 +6341,7 @@
     "foodMenuList": [
       {
         "meal": "Breakfast",
-        "time": "9:15 AM",
+        "time": "09.15",
         "items": [
           "Fresh seasonal Himalayan fruits & papaya",
           "Nutritious Ayurvedic grain porridge & oats",
@@ -6300,7 +6351,7 @@
       },
       {
         "meal": "Lunch",
-        "time": "12:00 PM",
+        "time": "12.00",
         "items": [
           "Organic Himalayan khichdi & wholesome lentils",
           "Freshly baked whole wheat rotis & basmati rice",
@@ -6310,7 +6361,7 @@
       },
       {
         "meal": "Dinner",
-        "time": "7:30 PM",
+        "time": "19.30",
         "items": [
           "Light nourishing Ayurvedic vegetable soups",
           "Steamed seasonal mountain greens & lentils",
@@ -6416,13 +6467,13 @@
       "goodieBagSub": "Perlengkapan yoga"
     },
     "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
-    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman autentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan tempat peristirahatan damai yang jauh dari keramaian.",
     "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
-      "heading": "Silsilah Tradisional Otentik di Suaka Tepi Pantai Varkala yang Damai",
+      "heading": "Silsilah Tradisional Autentik di Resor Tepi Pantai Varkala yang Damai",
       "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
@@ -6536,7 +6587,7 @@
       "double": "Kamar Berdua (Double)",
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
-      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
       "earlyBird": "Diskon Early Bird",
       "save300": "Hemat $300 USD",
       "earlyBirdPrice": "Harga Early Bird",
@@ -6553,7 +6604,13 @@
       "codeOfConduct": "Kode Etik",
       "refundCancellation": "Pengembalian Dana & Pembatalan",
       "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
-      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Sekolah Yoga Terdaftar Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Sekolah kami, YogaGarhi, terdaftar di Yoga Alliance USA. Setelah menyelesaikan kursus ini, Anda akan menerima sertifikasi yang diakui secara internasional, memungkinkan Anda untuk menjadi Guru Yoga Terdaftar (RYT). Sertifikasi ini membuka jalan bagi Anda untuk mengajar yoga di mana saja di seluruh dunia.",
+      "rysLabel": "RYS (Sekolah Yoga Terdaftar)",
+      "rysDesc": "YogaGarhi adalah sekolah terakreditasi yang memenuhi kualifikasi untuk melatih dan mensertifikasi guru yoga sesuai standar kurikulum global Yoga Alliance yang ketat.",
+      "rytLabel": "RYT (Guru Yoga Terdaftar)",
+      "rytDesc": "Kredensial internasional yang Anda raih setelah kelulusan, memberi Anda hak untuk mendaftar di Yoga Alliance dan memimpin kelas di seluruh dunia."
     },
     "faqsHeading": "Pertanyaan yang Sering Diajukan",
     "faqs": [
@@ -6579,7 +6636,7 @@
       },
       {
         "question": "Apakah Varkala tempat yang bagus untuk pelatihan guru yoga?",
-        "answer": "Varkala terkenal di seluruh dunia sebagai suaka spiritual utama di Kerala, terkenal dengan tebing merah megah, pantai Laut Arab yang tenang, dan tradisi penyembuhan Ayurveda berusia berabad-abad. Belajar yoga di sini menawarkan suasana pesisir yang damai dan menyembuhkan, bebas dari kebisingan dan gangguan, dengan energi pembersihan Pantai Papanasam yang suci."
+        "answer": "Varkala terkenal di seluruh dunia sebagai destinasi spiritual utama di Kerala, terkenal dengan tebing merah megah, pantai Laut Arab yang tenang, dan tradisi penyembuhan Ayurveda berusia berabad-abad. Belajar yoga di sini menawarkan suasana pesisir yang damai dan menyembuhkan, bebas dari kebisingan dan gangguan, dengan energi pembersihan Pantai Papanasam yang suci."
       },
       {
         "question": "Bagaimana cara menuju ashram di Varkala?",
@@ -6622,7 +6679,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
-      "btnCounselor": "Konsultasi"
+      "btnCounselor": "Konsultasi",
+      "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Selamat Datang di YogaGarhi Varkala",
@@ -6810,7 +6869,7 @@
     },
     "accommodationExtra": {
       "featuresTitle": "Akomodasi",
-      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "featuresSub": "Tempat peristirahatan yoga yang damai di jantung kawasan suci Ubud, Bali",
       "feat1": "10 air terjun indah dalam radius 10 km",
       "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
       "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
@@ -6834,7 +6893,7 @@
     },
     "prakritiResearch": {
       "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
-      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "quote": "“Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda”",
       "card1Title": "Pertanyaan Mendasar",
       "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
       "card2Title": "Penyelidikan Mendalam",
@@ -6848,7 +6907,7 @@
       "card6Title": "Kembali ke Keseimbangan",
       "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
       "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
-      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+      "conclusion2": "“Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.”"
     },
     "ethicsExtra": {
       "code1": "Hadir tepat waktu",
@@ -6918,7 +6977,7 @@
         "description": "Raih sertifikasi RYT yang diakui secara internasional untuk mengajar dengan percaya diri di seluruh dunia."
       },
       {
-        "title": "Lingkungan Suaka Tebing Varkala yang Damai",
+        "title": "Lingkungan Tenang Tebing Varkala yang Damai",
         "description": "Berlatih di atas tebing merah Varkala yang tenang dengan pemandangan Samudra Hindia dan prana laut yang segar."
       },
       {
@@ -6927,7 +6986,7 @@
       },
       {
         "title": "Kelas Kecil Eksklusif (Maks 8–10 Siswa)",
-        "description": "Jaminan kelompok kecil intim untuk bimbingan personal 1-lawan-1, koreksi postur, dan ikatan mendalam."
+        "description": "Jaminan kelompok kecil untuk bimbingan personal 1-lawan-1, koreksi postur, dan ikatan mendalam."
       },
       {
         "title": "Komunitas Ashram yang Penuh Dukungan",
@@ -7127,13 +7186,13 @@
       "goodieBagSub": "Perlengkapan yoga"
     },
     "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
-    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman otentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan suaka damai yang jauh dari keramaian.",
+    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman autentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan tempat peristirahatan damai yang jauh dari keramaian.",
     "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
-      "heading": "Silsilah Tradisional Otentik di Suaka Tepi Pantai Varkala yang Damai",
+      "heading": "Silsilah Tradisional Autentik di Resor Tepi Pantai Varkala yang Damai",
       "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
@@ -7293,7 +7352,7 @@
       "double": "Kamar Berdua (Double)",
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
-      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
       "earlyBird": "Diskon Early Bird",
       "save300": "Hemat $300 USD",
       "earlyBirdPrice": "Harga Early Bird",
@@ -7310,7 +7369,13 @@
       "codeOfConduct": "Kode Etik",
       "refundCancellation": "Pengembalian Dana & Pembatalan",
       "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
-      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Sekolah Yoga Terdaftar Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Sekolah kami, YogaGarhi, terdaftar di Yoga Alliance USA. Setelah menyelesaikan kursus ini, Anda akan menerima sertifikasi yang diakui secara internasional, memungkinkan Anda untuk menjadi Guru Yoga Terdaftar (RYT). Sertifikasi ini membuka jalan bagi Anda untuk mengajar yoga di mana saja di seluruh dunia.",
+      "rysLabel": "RYS (Sekolah Yoga Terdaftar)",
+      "rysDesc": "YogaGarhi adalah sekolah terakreditasi yang memenuhi kualifikasi untuk melatih dan mensertifikasi guru yoga sesuai standar kurikulum global Yoga Alliance yang ketat.",
+      "rytLabel": "RYT (Guru Yoga Terdaftar)",
+      "rytDesc": "Kredensial internasional yang Anda raih setelah kelulusan, memberi Anda hak untuk mendaftar di Yoga Alliance dan memimpin kelas di seluruh dunia."
     },
     "faqsHeading": "Pertanyaan yang Sering Diajukan",
     "faqs": [
@@ -7320,7 +7385,7 @@
       },
       {
         "question": "Apakah Varkala tempat yang bagus untuk pelatihan guru yoga?",
-        "answer": "Varkala terkenal di seluruh dunia sebagai suaka spiritual utama di Kerala, terkenal dengan tebing merah megah, pantai Laut Arab yang tenang, dan tradisi penyembuhan Ayurveda berusia berabad-abad. Belajar yoga di sini menawarkan suasana pesisir yang damai dan menyembuhkan, bebas dari kebisingan dan gangguan, dengan energi pembersihan Pantai Papanasam yang suci."
+        "answer": "Varkala terkenal di seluruh dunia sebagai destinasi spiritual utama di Kerala, terkenal dengan tebing merah megah, pantai Laut Arab yang tenang, dan tradisi penyembuhan Ayurveda berusia berabad-abad. Belajar yoga di sini menawarkan suasana pesisir yang damai dan menyembuhkan, bebas dari kebisingan dan gangguan, dengan energi pembersihan Pantai Papanasam yang suci."
       },
       {
         "question": "Do I need prior yoga experience to join the 200-Hour YTT?",
@@ -7356,11 +7421,11 @@
       },
       {
         "question": "What is the daily schedule like at the Varkala ashram?",
-        "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
+        "answer": "A typical training day begins at 06.00 with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 06.30. Morning asana practice runs from 7:30 to 09.00, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 19.30 and quiet reflection."
       },
       {
         "question": "Apakah Varkala tempat yang bagus untuk pelatihan guru yoga?",
-        "answer": "Varkala terkenal di seluruh dunia sebagai suaka spiritual utama di Kerala, terkenal dengan tebing merah megah, pantai Laut Arab yang tenang, dan tradisi penyembuhan Ayurveda berusia berabad-abad. Belajar yoga di sini menawarkan suasana pesisir yang damai dan menyembuhkan, bebas dari kebisingan dan gangguan, dengan energi pembersihan Pantai Papanasam yang suci."
+        "answer": "Varkala terkenal di seluruh dunia sebagai destinasi spiritual utama di Kerala, terkenal dengan tebing merah megah, pantai Laut Arab yang tenang, dan tradisi penyembuhan Ayurveda berusia berabad-abad. Belajar yoga di sini menawarkan suasana pesisir yang damai dan menyembuhkan, bebas dari kebisingan dan gangguan, dengan energi pembersihan Pantai Papanasam yang suci."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -7391,7 +7456,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
-      "btnCounselor": "Konsultasi"
+      "btnCounselor": "Konsultasi",
+      "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Selamat Datang di YogaGarhi Varkala",
@@ -7584,7 +7651,7 @@
     },
     "accommodationExtra": {
       "featuresTitle": "Akomodasi",
-      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "featuresSub": "Tempat peristirahatan yoga yang damai di jantung kawasan suci Ubud, Bali",
       "feat1": "10 air terjun indah dalam radius 10 km",
       "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
       "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
@@ -7608,7 +7675,7 @@
     },
     "prakritiResearch": {
       "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
-      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "quote": "“Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda”",
       "card1Title": "Pertanyaan Mendasar",
       "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
       "card2Title": "Penyelidikan Mendalam",
@@ -7622,7 +7689,7 @@
       "card6Title": "Kembali ke Keseimbangan",
       "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
       "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
-      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+      "conclusion2": "“Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.”"
     },
     "ethicsExtra": {
       "code1": "Hadir tepat waktu",
@@ -7692,7 +7759,7 @@
         "description": "Raih sertifikasi RYT yang diakui secara internasional untuk mengajar dengan percaya diri di seluruh dunia."
       },
       {
-        "title": "Lingkungan Suaka Tebing Varkala yang Damai",
+        "title": "Lingkungan Tenang Tebing Varkala yang Damai",
         "description": "Berlatih di atas tebing merah Varkala yang tenang dengan pemandangan Samudra Hindia dan prana laut yang segar."
       },
       {
@@ -7701,7 +7768,7 @@
       },
       {
         "title": "Kelas Kecil Eksklusif (Maks 8–10 Siswa)",
-        "description": "Jaminan kelompok kecil intim untuk bimbingan personal 1-lawan-1, koreksi postur, dan ikatan mendalam."
+        "description": "Jaminan kelompok kecil untuk bimbingan personal 1-lawan-1, koreksi postur, dan ikatan mendalam."
       },
       {
         "title": "Komunitas Ashram yang Penuh Dukungan",
@@ -7907,7 +7974,7 @@
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
       "badge": "Mengapa Memilih YogaGarhi",
-      "heading": "Pelatihan Tingkat Master di Suaka Pesisir Varkala yang Intim",
+      "heading": "Pelatihan Tingkat Master di Tempat Peristirahatan Pesisir Varkala yang Kecil",
       "sub": "Kami fokus pada praktisi yang bersungguh-sungguh, bukan kelas pabrikan massal. Inilah yang membedakan pelatihan 200 jam kami:",
       "p1Title": "Maksimal 8–10 Siswa per Angkatan",
       "p1Highlight": "Fokus Personal",
@@ -8067,7 +8134,7 @@
       "double": "Kamar Berdua (Double)",
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
-      "privateDesc": "Suaka pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
+      "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
       "earlyBird": "Diskon Early Bird",
       "save300": "Hemat $300 USD",
       "earlyBirdPrice": "Harga Early Bird",
@@ -8084,7 +8151,13 @@
       "codeOfConduct": "Kode Etik",
       "refundCancellation": "Pengembalian Dana & Pembatalan",
       "ryt200Title": "Guru Yoga Terdaftar (RYT 200)",
-      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance"
+      "viewRegistry": "Lihat Direktori Sekolah Yoga Alliance",
+      "yaRegisteredSchoolTitle": "Sekolah Yoga Terdaftar Yoga Alliance USA (RYS 200)",
+      "yaRegisteredSchoolDesc": "Sekolah kami, YogaGarhi, terdaftar di Yoga Alliance USA. Setelah menyelesaikan kursus ini, Anda akan menerima sertifikasi yang diakui secara internasional, memungkinkan Anda untuk menjadi Guru Yoga Terdaftar (RYT). Sertifikasi ini membuka jalan bagi Anda untuk mengajar yoga di mana saja di seluruh dunia.",
+      "rysLabel": "RYS (Sekolah Yoga Terdaftar)",
+      "rysDesc": "YogaGarhi adalah sekolah terakreditasi yang memenuhi kualifikasi untuk melatih dan mensertifikasi guru yoga sesuai standar kurikulum global Yoga Alliance yang ketat.",
+      "rytLabel": "RYT (Guru Yoga Terdaftar)",
+      "rytDesc": "Kredensial internasional yang Anda raih setelah kelulusan, memberi Anda hak untuk mendaftar di Yoga Alliance dan memimpin kelas di seluruh dunia."
     },
     "faqsHeading": "Pertanyaan yang Sering Diajukan",
     "faqs": [
@@ -8094,7 +8167,7 @@
       },
       {
         "question": "Apakah Varkala tempat yang bagus untuk pelatihan guru yoga?",
-        "answer": "Varkala terkenal di seluruh dunia sebagai suaka spiritual utama di Kerala, terkenal dengan tebing merah megah, pantai Laut Arab yang tenang, dan tradisi penyembuhan Ayurveda berusia berabad-abad. Belajar yoga di sini menawarkan suasana pesisir yang damai dan menyembuhkan, bebas dari kebisingan dan gangguan, dengan energi pembersihan Pantai Papanasam yang suci."
+        "answer": "Varkala terkenal di seluruh dunia sebagai destinasi spiritual utama di Kerala, terkenal dengan tebing merah megah, pantai Laut Arab yang tenang, dan tradisi penyembuhan Ayurveda berusia berabad-abad. Belajar yoga di sini menawarkan suasana pesisir yang damai dan menyembuhkan, bebas dari kebisingan dan gangguan, dengan energi pembersihan Pantai Papanasam yang suci."
       },
       {
         "question": "Do I need prior yoga experience to join the 200-Hour YTT?",
@@ -8130,11 +8203,11 @@
       },
       {
         "question": "What is the daily schedule like at the Varkala ashram?",
-        "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
+        "answer": "A typical training day begins at 06.00 with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 06.30. Morning asana practice runs from 7:30 to 09.00, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 19.30 and quiet reflection."
       },
       {
         "question": "Apakah Varkala tempat yang bagus untuk pelatihan guru yoga?",
-        "answer": "Varkala terkenal di seluruh dunia sebagai suaka spiritual utama di Kerala, terkenal dengan tebing merah megah, pantai Laut Arab yang tenang, dan tradisi penyembuhan Ayurveda berusia berabad-abad. Belajar yoga di sini menawarkan suasana pesisir yang damai dan menyembuhkan, bebas dari kebisingan dan gangguan, dengan energi pembersihan Pantai Papanasam yang suci."
+        "answer": "Varkala terkenal di seluruh dunia sebagai destinasi spiritual utama di Kerala, terkenal dengan tebing merah megah, pantai Laut Arab yang tenang, dan tradisi penyembuhan Ayurveda berusia berabad-abad. Belajar yoga di sini menawarkan suasana pesisir yang damai dan menyembuhkan, bebas dari kebisingan dan gangguan, dengan energi pembersihan Pantai Papanasam yang suci."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -8165,7 +8238,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
-      "btnCounselor": "Konsultasi"
+      "btnCounselor": "Konsultasi",
+      "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Selamat Datang di YogaGarhi Varkala",
@@ -8358,7 +8433,7 @@
     },
     "accommodationExtra": {
       "featuresTitle": "Akomodasi",
-      "featuresSub": "Suaka yoga yang damai di jantung kawasan suci Ubud, Bali",
+      "featuresSub": "Tempat peristirahatan yoga yang damai di jantung kawasan suci Ubud, Bali",
       "feat1": "10 air terjun indah dalam radius 10 km",
       "feat2": "Hutan privat alami dengan air terjun di dalam area sekolah",
       "feat3": "Trekking santai menyusuri sawah hijau di lokasi",
@@ -8382,7 +8457,7 @@
     },
     "prakritiResearch": {
       "heading": "Riset Sachin Ji tentang Yoga Personal dan Prakriti",
-      "quote": "«Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda»",
+      "quote": "“Yoga bukan pendekatan satu ukuran untuk semua, karena setiap tubuh membawa energi yang berbeda”",
       "card1Title": "Pertanyaan Mendasar",
       "card1Text": "Saat studi Master Yoga guru utama kami, muncul pertanyaan yang tak terhindarkan: Mengapa latihan yang sama menenangkan sebagian orang, namun membuat yang lain merasa lelah atau gelisah?",
       "card2Title": "Penyelidikan Mendalam",
@@ -8396,7 +8471,7 @@
       "card6Title": "Kembali ke Keseimbangan",
       "card6Text": "Ketika yoga menghormati Prakriti Anda, latihan menjadi alami, berkelanjutan, dan memulihkan. Yoga sejati tidak mengubah siapa Anda; ia mengembalikan harmoni dalam diri Anda.",
       "conclusion1": "Guru utama kami mengamati bahwa ketika latihan tidak selaras dengan sistem saraf dan tipe energi alami, postur yang tampak benar sekalipun dapat memicu kelelahan batin.",
-      "conclusion2": "«Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.»"
+      "conclusion2": "“Ketika yoga selaras dengan Prakriti Anda, manfaatnya dapat dirasakan secara berkelanjutan dan memulihkan. Di sini yoga tidak dipaksakan: ia personal, sadar, dan menghargai diri Anda.”"
     },
     "ethicsExtra": {
       "code1": "Hadir tepat waktu",
@@ -8466,7 +8541,7 @@
         "description": "Raih sertifikasi RYT yang diakui secara internasional untuk mengajar dengan percaya diri di seluruh dunia."
       },
       {
-        "title": "Lingkungan Suaka Tebing Varkala yang Damai",
+        "title": "Lingkungan Tenang Tebing Varkala yang Damai",
         "description": "Berlatih di atas tebing merah Varkala yang tenang dengan pemandangan Samudra Hindia dan prana laut yang segar."
       },
       {
@@ -8475,7 +8550,7 @@
       },
       {
         "title": "Kelas Kecil Eksklusif (Maks 8–10 Siswa)",
-        "description": "Jaminan kelompok kecil intim untuk bimbingan personal 1-lawan-1, koreksi postur, dan ikatan mendalam."
+        "description": "Jaminan kelompok kecil untuk bimbingan personal 1-lawan-1, koreksi postur, dan ikatan mendalam."
       },
       {
         "title": "Komunitas Ashram yang Penuh Dukungan",
@@ -8652,7 +8727,7 @@
       {
         "badge": "MENTORSHIP PRIBADI",
         "title": "Grup Kecil: Maksimal 8–10 Siswa",
-        "description": "Sementara sebagian besar institusi yoga komersial di Rishikesh menjejalkan 25 hingga 35 siswa ke dalam satu aula besar, YogaGarhi secara ketat membatasi setiap angkatan hanya 8 hingga 10 praktisi. Lingkungan yang intim ini memungkinkan para guru master kami mengamati napas, penyelarasan postur, dan keterlibatan otot Anda di setiap asana. Anda menerima umpan balik anatomi tatap muka setiap hari, penyesuaian postur sesuai struktur tubuh unik Anda, dan bimbingan mendalam untuk setiap pertanyaan spiritual Anda."
+        "description": "Sementara sebagian besar institusi yoga komersial di Rishikesh menjejalkan 25 hingga 35 siswa ke dalam satu aula besar, YogaGarhi secara ketat membatasi setiap angkatan hanya 8 hingga 10 praktisi. lingkungan yang akrab ini memungkinkan para guru master kami mengamati napas, penyelarasan postur, dan keterlibatan otot Anda di setiap asana. Anda menerima umpan balik anatomi tatap muka setiap hari, penyesuaian postur sesuai struktur tubuh unik Anda, dan bimbingan mendalam untuk setiap pertanyaan spiritual Anda."
       },
       {
         "badge": "EKSKLUSIF DI YOGAGARHI",
@@ -8685,7 +8760,7 @@
       {
         "badge": "MENTORSHIP PRIBADI",
         "title": "Grup Kecil: Maksimal 8–10 Siswa",
-        "description": "Sementara sebagian besar institusi yoga komersial di Rishikesh menjejalkan 25 hingga 35 siswa ke dalam satu aula besar, YogaGarhi secara ketat membatasi setiap angkatan hanya 8 hingga 10 praktisi. Lingkungan yang intim ini memungkinkan para guru master kami mengamati napas, penyelarasan postur, dan keterlibatan otot Anda di setiap asana. Anda menerima umpan balik anatomi tatap muka setiap hari, penyesuaian postur sesuai struktur tubuh unik Anda, dan bimbingan mendalam untuk setiap pertanyaan spiritual Anda."
+        "description": "Sementara sebagian besar institusi yoga komersial di Rishikesh menjejalkan 25 hingga 35 siswa ke dalam satu aula besar, YogaGarhi secara ketat membatasi setiap angkatan hanya 8 hingga 10 praktisi. lingkungan yang akrab ini memungkinkan para guru master kami mengamati napas, penyelarasan postur, dan keterlibatan otot Anda di setiap asana. Anda menerima umpan balik anatomi tatap muka setiap hari, penyesuaian postur sesuai struktur tubuh unik Anda, dan bimbingan mendalam untuk setiap pertanyaan spiritual Anda."
       },
       {
         "badge": "EKSKLUSIF DI YOGAGARHI",
@@ -8818,5 +8893,6 @@
     "galleryDesc": "Sekilas kehidupan di dalam sanctuary damai kami di {loc}, kolam tropis yang asri, dan lokakarya spiritual.",
     "teacherTrainingTitle": "Ingin Menjadi Guru Yoga Bersertifikat di {loc}?",
     "teacherTrainingDesc": "Tingkatkan latihan Anda dengan pelatihan guru bersertifikat Yoga Alliance kami di {loc}."
-  }
+  },
+  "sachinjiResearch": "Riset Yogacharya Sachin tentang Yoga Personal dan Prakriti"
 }

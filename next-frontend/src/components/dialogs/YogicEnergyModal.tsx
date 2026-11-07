@@ -258,7 +258,7 @@ YogaGarhi – Bali`,
                             <Button
                                 type="submit"
                                 disabled={isSubmitting || !name || !email}
-                                className="w-full bg-[#2D7A70] hover:bg-[#1A4D45] text-white rounded-xl h-14 text-lg font-bold shadow-lg mt-4"
+                                className="w-full bg-[#2D7A70] hover:bg-[#1A4D45] text-white rounded-xl h-auto min-h-14 py-3 text-base sm:text-lg font-bold shadow-lg mt-4 text-center whitespace-normal break-words"
                             >
                                 {isSubmitting ? quizUI.submitting : quizUI.revealEnergyBtn}
                             </Button>

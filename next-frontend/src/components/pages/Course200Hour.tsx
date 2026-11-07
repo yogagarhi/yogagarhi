@@ -648,6 +648,18 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
     return whatYouWillReceive;
   }, [t]);
   const upcomingDates = useUpcomingBatches(BATCHES_200_HOUR, initialBatches);
+  const firstBatch = upcomingDates && upcomingDates.length > 0 ? upcomingDates[0] : null;
+  const formattedDates = useMemo(() => {
+    if (!firstBatch?.startDate || !firstBatch?.endDate) {
+      return { startDate: "", endDate: "" };
+    }
+    const s = new Date(firstBatch.startDate + "T00:00:00Z");
+    const e = new Date(firstBatch.endDate + "T00:00:00Z");
+    const dateLocale = locale === "en" ? "en-GB" : locale;
+    const startFmt = new Intl.DateTimeFormat(dateLocale, { day: "numeric", month: "short", timeZone: "UTC" }).format(s);
+    const endFmt = new Intl.DateTimeFormat(dateLocale, { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }).format(e);
+    return { startDate: startFmt, endDate: endFmt };
+  }, [firstBatch, locale]);
   const { toast } = useToast();
   const router = useRouter();
   const { setShowBookingDialog: openBookingDialog } = useBooking();
@@ -1159,40 +1171,49 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
           </div>
 
           {/* Content */}
-          <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
-            <div className="max-w-4xl mx-auto flex flex-col items-center">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tight opacity-0 animate-fade-in text-white leading-tight mb-8" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+          <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center text-primary-foreground max-w-full">
+            <div className="max-w-4xl mx-auto flex flex-col items-center w-full px-2 sm:px-4">
+              <h1 className="text-[clamp(1.75rem,7vw,2.5rem)] sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tight opacity-0 animate-fade-in text-white leading-tight mb-6 sm:mb-8 max-w-full break-words" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
                 {t("hero.h1")}
               </h1>
 
-              <div className="space-y-6 opacity-0 animate-fade-in mb-8" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-                <p className="text-xl md:text-3xl font-medium max-w-4xl mx-auto leading-relaxed text-white/90">
+              <div className="space-y-4 sm:space-y-6 opacity-0 animate-fade-in mb-6 sm:mb-8 w-full max-w-3xl" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
+                <p className="text-base sm:text-xl md:text-2xl font-medium mx-auto leading-relaxed text-white/90 break-words">
                   {t("hero.sub")}
                 </p>
               </div>
 
               {/* Trust Line & Pricing */}
-              <div className="space-y-4 opacity-0 animate-fade-in mb-8" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
-                <p className="text-lg md:text-xl font-medium text-white/90">
+              <div className="space-y-4 opacity-0 animate-fade-in mb-6 sm:mb-8 w-full max-w-xl" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
+                <p className="text-sm sm:text-base md:text-lg font-medium text-white/90 break-words px-2 leading-relaxed">
                   {t("hero.quickBatch")} • {t("hero.quickLevel")} • {t("hero.badge")}
                 </p>
-                <div className="inline-block bg-black/30 backdrop-blur-sm rounded-lg px-6 py-3 border border-white/10">
-                  <p className="text-white font-semibold">
-                    Tuition only from {COURSE_200_HOUR_PRICING.shared.price} | Residential packages from {COURSE_200_HOUR_PRICING.private.price}
+                <div className="w-full max-w-md mx-auto bg-black/30 backdrop-blur-sm rounded-lg px-4 sm:px-6 py-3 border border-white/10 text-center">
+                  <p className="text-white font-semibold text-xs sm:text-sm md:text-base leading-snug break-words">
+                    {t.rich("hero.pricingNotice", {
+                      tuitionPrice: COURSE_200_HOUR_PRICING.shared.price,
+                      residentialPrice: COURSE_200_HOUR_PRICING.private.price,
+                      price: (chunks) => <span className="whitespace-nowrap">{chunks}</span>,
+                    })}
                   </p>
-                  <p className="text-white/80 text-sm mt-1">
-                    Next available training: <span suppressHydrationWarning>{upcomingDates[0]?.date || initialBatches?.[0]?.date || BATCHES_200_HOUR[0].date}</span>
-                  </p>
+                  {firstBatch && formattedDates.startDate && formattedDates.endDate ? (
+                    <p className="text-white/80 text-xs sm:text-sm mt-1.5 leading-snug break-words">
+                      {t("hero.nextAvailableTraining", {
+                        startDate: formattedDates.startDate,
+                        endDate: formattedDates.endDate,
+                      })}
+                    </p>
+                  ) : null}
                 </div>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col items-center justify-center pt-4 space-y-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+              <div className="flex flex-col items-center justify-center pt-2 sm:pt-4 space-y-4 opacity-0 animate-fade-in w-full" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full">
                   <Button
                     variant="hero"
                     size="xl"
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl"
+                    className="w-full sm:w-auto max-w-[320px] bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl h-auto min-h-12 py-3 px-6 text-center whitespace-normal break-words"
                     onClick={() => {
                       trackEvent("enroll_click", { course: "200-hour-bali", section: "hero" });
                       setShowEnrollDialog(true);
@@ -1203,7 +1224,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <Button
                     variant="outline"
                     size="xl"
-                    className="bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm shadow-xl"
+                    className="w-full sm:w-auto max-w-[320px] bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm shadow-xl h-auto min-h-12 py-3 px-6 text-center whitespace-normal break-words"
                     onClick={() => {
                       trackEvent("video_call_click", { course: "200-hour-bali", section: "hero" });
                       setShowCalendarDialog(true);
@@ -1646,7 +1667,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <DialogTrigger asChild>
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-[#FF8C00] to-[#FF4500] text-white hover:from-[#FF4500] hover:to-[#FF8C00] font-bold px-10 shadow-xl shadow-orange-500/30 hover:scale-105 transition-all duration-300 border-none h-14 relative overflow-hidden group/btn"
+                    className="bg-gradient-to-r from-[#FF8C00] to-[#FF4500] text-white hover:from-[#FF4500] hover:to-[#FF8C00] font-bold px-10 shadow-xl shadow-orange-500/30 hover:scale-105 transition-all duration-300 border-none h-auto min-h-12 sm:h-14 py-3 sm:py-0 relative overflow-hidden group/btn text-center whitespace-normal break-words"
                   >
                     <span className="relative z-10 flex items-center gap-2">
                       <Download className="w-5 h-5" />
@@ -1947,23 +1968,23 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="relative flex items-center gap-2.5 sm:gap-6 min-w-0"
+                    className="relative flex items-center gap-2 sm:gap-6 min-w-0"
                   >
                     {/* Time */}
-                    <div className="w-20 sm:w-24 md:w-28 flex-shrink-0 text-right min-w-0">
-                      <span className="font-heading text-sm sm:text-lg md:text-xl font-semibold text-primary break-words">{item.time}</span>
+                    <div className="w-16 min-[375px]:w-20 sm:w-24 md:w-28 flex-shrink-0 text-right min-w-0">
+                      <span className="font-heading text-xs min-[375px]:text-sm sm:text-lg md:text-xl font-semibold text-primary break-words leading-tight block">{item.time}</span>
                     </div>
 
                     {/* Timeline dot with pulse animation */}
                     <div className="flex-shrink-0 z-10">
                       <div
-                        className="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-primary animate-pulse-dot"
+                        className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-primary animate-pulse-dot"
                         style={{ animationDelay: `${index * 0.5}s` }}
                       />
                     </div>
 
                     {/* Activity card */}
-                    <div className="flex-1 min-w-0 bg-card border border-border rounded-lg px-3.5 sm:px-6 py-3 sm:py-4 shadow-sm">
+                    <div className="flex-1 min-w-0 bg-card border border-border rounded-lg px-3 sm:px-6 py-2.5 sm:py-4 shadow-sm">
                       <span className="text-foreground font-medium text-xs sm:text-base break-words">{item.activity}</span>
                     </div>
                   </div>
@@ -3028,33 +3049,30 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
               {/* Main Title */}
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-amber-500 mb-6">
-                Yoga Alliance USA Registered School (RYS 200)
+                {t("ethics.yaRegisteredSchoolTitle")}
               </h2>
 
               {/* Description */}
               <p className="text-white/90 text-base md:text-lg max-w-3xl mx-auto mb-8 leading-relaxed">
-                Our school, YogaGarhi, is registered with Yoga Alliance USA. Upon completing this course,
-                you will receive an internationally recognized certification, allowing you to become a
-                <span className="text-white font-medium"> Registered Yoga Teacher (RYT)</span>.
-                This certification opens doors for you to teach yoga anywhere in the world.
+                {t("ethics.yaRegisteredSchoolDesc")}
               </p>
 
               {/* RYS vs RYT Explanation */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8 text-left">
                 <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10">
                   <span className="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">
-                    RYS (Registered Yoga School)
+                    {t("ethics.rysLabel")}
                   </span>
                   <p className="text-xs text-white/80 leading-relaxed">
-                    YogaGarhi is an accredited school qualified to train and certify yoga teachers according to rigorous global Yoga Alliance curriculum standards.
+                    {t("ethics.rysDesc")}
                   </p>
                 </div>
                 <div className="bg-black/40 backdrop-blur-md rounded-xl p-4 border border-white/10">
                   <span className="text-amber-400 font-bold text-xs uppercase tracking-wider block mb-1">
-                    RYT (Registered Yoga Teacher)
+                    {t("ethics.rytLabel")}
                   </span>
                   <p className="text-xs text-white/80 leading-relaxed">
-                    The international credential you earn upon graduation, empowering you to register with Yoga Alliance and lead classes worldwide.
+                    {t("ethics.rytDesc")}
                   </p>
                 </div>
               </div>
@@ -3068,7 +3086,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500 hover:bg-amber-600 text-black font-semibold text-xs tracking-wider uppercase transition-colors"
                   >
-                    <span>View Yoga Alliance School Registry</span>
+                    <span>{t("ethics.viewRegistry")}</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -3801,7 +3819,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <Button
                 type="submit"
                 disabled={isSubmittingTour}
-                className="w-full h-12 bg-primary text-primary-foreground font-bold rounded-xl mt-2 transition-all hover:bg-primary/90"
+                className="w-full h-auto min-h-12 py-3 bg-primary text-primary-foreground font-bold rounded-xl mt-2 transition-all hover:bg-primary/90 text-center whitespace-normal break-words"
               >
                 {isSubmittingTour ? "Scheduling..." : "Submit Booking"}
               </Button>
@@ -4471,7 +4489,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             <div className="grid grid-cols-1 gap-4 mt-6">
               <Button
                 variant="outline"
-                className="h-16 rounded-2xl text-lg gap-4 border-primary/20 bg-background hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 shadow-sm hover:shadow-md"
+                className="h-auto min-h-14 sm:h-16 py-3 rounded-2xl text-base sm:text-lg gap-3 sm:gap-4 border-primary/20 bg-background hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all duration-300 shadow-sm hover:shadow-md text-center whitespace-normal break-words"
                 asChild
               >
                 <a
@@ -4488,7 +4506,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               </Button>
               <Button
                 variant="outline"
-                className="h-16 rounded-2xl text-lg gap-4 border-primary/20 bg-background hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md"
+                className="h-auto min-h-14 sm:h-16 py-3 rounded-2xl text-base sm:text-lg gap-3 sm:gap-4 border-primary/20 bg-background hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md text-center whitespace-normal break-words"
                 asChild
               >
                 <a href="mailto:yogagarhi@gmail.com">
@@ -4670,7 +4688,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             {/* Sticky Footer */}
             <div className="px-6 sm:px-8 py-4 border-t border-border bg-background">
               <Button
-                className="w-full h-12 text-base font-bold"
+                className="w-full h-auto min-h-12 py-3 text-base font-bold text-center whitespace-normal break-words"
                 size="lg"
                 disabled={!isEnrollFormComplete || isSubmittingEnroll}
                 onClick={handleEnrollSubmit}

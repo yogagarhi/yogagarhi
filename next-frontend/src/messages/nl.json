@@ -136,7 +136,9 @@
     "getPreYttcDetail": "Pre-YTTC-details ontvangen",
     "getPreYttcDetails": "Pre-YTTC-details ontvangen",
     "preYttcDialogDesc": "Ontdek ons unieke Pre-YTTC-voorbereidingsprogramma, een wereldprimeur",
-    "sending": "Verzenden..."
+    "sending": "Verzenden...",
+    "pricingNotice": "Alleen cursusgeld vanaf <price>{tuitionPrice}</price> | Residentiële pakketten vanaf <price>{residentialPrice}</price>",
+    "nextAvailableTraining": "Eerstvolgende beschikbare opleiding: {startDate} – {endDate}"
   },
   "footer": {
     "tagline": "Transformeer van binnenuit",
@@ -595,7 +597,9 @@
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
       "btnCounselor": "Praat met een adviseur",
-      "title": "200 Uur Yogadocentenopleiding in Bali"
+      "title": "200 Uur Yogadocentenopleiding in Bali",
+      "pricingNotice": "Alleen cursusgeld vanaf <price>{tuitionPrice}</price> | Residentiële pakketten vanaf <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Eerstvolgende beschikbare opleiding: {startDate} – {endDate}"
     },
     "quickInfo": {
       "course": "Opleiding",
@@ -960,7 +964,13 @@
       "codeOfConduct": "Gedragscode",
       "refundCancellation": "Restitutie & Annulering",
       "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
-      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister",
+      "yaRegisteredSchoolTitle": "Bij Yoga Alliance USA Geregistreerde School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Onze school, YogaGarhi, is geregistreerd bij Yoga Alliance USA. Na voltooiing van deze opleiding ontvang je een internationaal erkend certificaat, waarmee je Registered Yoga Teacher (RYT) kunt worden. Dit certificaat opent deuren om overal ter wereld yoga te geven.",
+      "rysLabel": "RYS (Geregistreerde Yogaschool)",
+      "rysDesc": "YogaGarhi is een geaccrediteerde school die bevoegd is om yogadocenten op te leiden en te certificeren volgens de strenge wereldwijde Yoga Alliance-normen.",
+      "rytLabel": "RYT (Geregistreerd Yogadocent)",
+      "rytDesc": "Het internationale certificaat dat je na je afstuderen behaalt, waarmee je je kunt registreren bij Yoga Alliance en overal ter wereld les kunt geven."
     },
     "faqsHeading": "Veelgestelde vragen",
     "faqs": [
@@ -1632,7 +1642,13 @@
       "refundCancellation": "Restitutie & Annulering",
       "ryt200Title": "100-Uurs Certificaat van Deelname",
       "viewRegistry": "Bekijk Yoga Alliance schoolregister",
-      "meetsStandards": "Uitgegeven door YogaGarhi, een Yoga Alliance Registered Yoga School (RYS 200)"
+      "meetsStandards": "Uitgegeven door YogaGarhi, een Yoga Alliance Registered Yoga School (RYS 200)",
+      "yaRegisteredSchoolTitle": "Bij Yoga Alliance USA Geregistreerde School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Onze school, YogaGarhi, is geregistreerd bij Yoga Alliance USA. Na voltooiing van deze opleiding ontvang je een internationaal erkend certificaat, waarmee je Registered Yoga Teacher (RYT) kunt worden. Dit certificaat opent deuren om overal ter wereld yoga te geven.",
+      "rysLabel": "RYS (Geregistreerde Yogaschool)",
+      "rysDesc": "YogaGarhi is een geaccrediteerde school die bevoegd is om yogadocenten op te leiden en te certificeren volgens de strenge wereldwijde Yoga Alliance-normen.",
+      "rytLabel": "RYT (Geregistreerd Yogadocent)",
+      "rytDesc": "Het internationale certificaat dat je na je afstuderen behaalt, waarmee je je kunt registreren bij Yoga Alliance en overal ter wereld les kunt geven."
     },
     "faqsHeading": "Veelgestelde vragen",
     "faqs": [
@@ -1681,7 +1697,9 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
-      "btnCounselor": "Praat met een adviseur"
+      "btnCounselor": "Praat met een adviseur",
+      "pricingNotice": "Alleen cursusgeld vanaf <price>{tuitionPrice}</price> | Residentiële pakketten vanaf <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Eerstvolgende beschikbare opleiding: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welkom bij YogaGarhi Bali",
@@ -2317,7 +2335,13 @@
       "codeOfConduct": "Gedragscode",
       "refundCancellation": "Restitutie & Annulering",
       "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
-      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister",
+      "yaRegisteredSchoolTitle": "Bij Yoga Alliance USA Geregistreerde School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Onze school, YogaGarhi, is geregistreerd bij Yoga Alliance USA. Na voltooiing van deze opleiding ontvang je een internationaal erkend certificaat, waarmee je Registered Yoga Teacher (RYT) kunt worden. Dit certificaat opent deuren om overal ter wereld yoga te geven.",
+      "rysLabel": "RYS (Geregistreerde Yogaschool)",
+      "rysDesc": "YogaGarhi is een geaccrediteerde school die bevoegd is om yogadocenten op te leiden en te certificeren volgens de strenge wereldwijde Yoga Alliance-normen.",
+      "rytLabel": "RYT (Geregistreerd Yogadocent)",
+      "rytDesc": "Het internationale certificaat dat je na je afstuderen behaalt, waarmee je je kunt registreren bij Yoga Alliance en overal ter wereld les kunt geven."
     },
     "faqsHeading": "Veelgestelde vragen",
     "faqs": [
@@ -2358,7 +2382,9 @@
       "quickLocation": "Gianyar, Bali",
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
-      "btnCounselor": "Praat met een adviseur"
+      "btnCounselor": "Praat met een adviseur",
+      "pricingNotice": "Alleen cursusgeld vanaf <price>{tuitionPrice}</price> | Residentiële pakketten vanaf <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Eerstvolgende beschikbare opleiding: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Verdiep je yogapad bij YogaGarhi Bali",
@@ -3005,7 +3031,13 @@
       "codeOfConduct": "Gedragscode",
       "refundCancellation": "Restitutie & Annulering",
       "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
-      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister",
+      "yaRegisteredSchoolTitle": "Bij Yoga Alliance USA Geregistreerde School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Onze school, YogaGarhi, is geregistreerd bij Yoga Alliance USA. Na voltooiing van deze opleiding ontvang je een internationaal erkend certificaat, waarmee je Registered Yoga Teacher (RYT) kunt worden. Dit certificaat opent deuren om overal ter wereld yoga te geven.",
+      "rysLabel": "RYS (Geregistreerde Yogaschool)",
+      "rysDesc": "YogaGarhi is een geaccrediteerde school die bevoegd is om yogadocenten op te leiden en te certificeren volgens de strenge wereldwijde Yoga Alliance-normen.",
+      "rytLabel": "RYT (Geregistreerd Yogadocent)",
+      "rytDesc": "Het internationale certificaat dat je na je afstuderen behaalt, waarmee je je kunt registreren bij Yoga Alliance en overal ter wereld les kunt geven."
     },
     "faqsHeading": "Veelgestelde vragen",
     "faqs": [
@@ -3074,7 +3106,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
-      "btnCounselor": "Praat met een adviseur"
+      "btnCounselor": "Praat met een adviseur",
+      "pricingNotice": "Alleen cursusgeld vanaf <price>{tuitionPrice}</price> | Residentiële pakketten vanaf <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Eerstvolgende beschikbare opleiding: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welkom bij YogaGarhi Rishikesh",
@@ -3762,7 +3796,13 @@
       "codeOfConduct": "Gedragscode",
       "refundCancellation": "Restitutie & Annulering",
       "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
-      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister",
+      "yaRegisteredSchoolTitle": "Bij Yoga Alliance USA Geregistreerde School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Onze school, YogaGarhi, is geregistreerd bij Yoga Alliance USA. Na voltooiing van deze opleiding ontvang je een internationaal erkend certificaat, waarmee je Registered Yoga Teacher (RYT) kunt worden. Dit certificaat opent deuren om overal ter wereld yoga te geven.",
+      "rysLabel": "RYS (Geregistreerde Yogaschool)",
+      "rysDesc": "YogaGarhi is een geaccrediteerde school die bevoegd is om yogadocenten op te leiden en te certificeren volgens de strenge wereldwijde Yoga Alliance-normen.",
+      "rytLabel": "RYT (Geregistreerd Yogadocent)",
+      "rytDesc": "Het internationale certificaat dat je na je afstuderen behaalt, waarmee je je kunt registreren bij Yoga Alliance en overal ter wereld les kunt geven."
     },
     "faqsHeading": "Veelgestelde vragen",
     "faqs": [
@@ -3843,7 +3883,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
-      "btnCounselor": "Praat met een adviseur"
+      "btnCounselor": "Praat met een adviseur",
+      "pricingNotice": "Alleen cursusgeld vanaf <price>{tuitionPrice}</price> | Residentiële pakketten vanaf <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Eerstvolgende beschikbare opleiding: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welkom bij YogaGarhi Rishikesh",
@@ -5825,7 +5867,13 @@
       "codeOfConduct": "Gedragscode",
       "refundCancellation": "Restitutie & Annulering",
       "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
-      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister",
+      "yaRegisteredSchoolTitle": "Bij Yoga Alliance USA Geregistreerde School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Onze school, YogaGarhi, is geregistreerd bij Yoga Alliance USA. Na voltooiing van deze opleiding ontvang je een internationaal erkend certificaat, waarmee je Registered Yoga Teacher (RYT) kunt worden. Dit certificaat opent deuren om overal ter wereld yoga te geven.",
+      "rysLabel": "RYS (Geregistreerde Yogaschool)",
+      "rysDesc": "YogaGarhi is een geaccrediteerde school die bevoegd is om yogadocenten op te leiden en te certificeren volgens de strenge wereldwijde Yoga Alliance-normen.",
+      "rytLabel": "RYT (Geregistreerd Yogadocent)",
+      "rytDesc": "Het internationale certificaat dat je na je afstuderen behaalt, waarmee je je kunt registreren bij Yoga Alliance en overal ter wereld les kunt geven."
     },
     "faqsHeading": "Veelgestelde vragen",
     "faqs": [
@@ -5906,7 +5954,9 @@
       "quickLocation": "Tapovan, Rishikesh",
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
-      "btnCounselor": "Praat met een adviseur"
+      "btnCounselor": "Praat met een adviseur",
+      "pricingNotice": "Alleen cursusgeld vanaf <price>{tuitionPrice}</price> | Residentiële pakketten vanaf <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Eerstvolgende beschikbare opleiding: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welkom bij YogaGarhi Rishikesh",
@@ -6553,7 +6603,13 @@
       "codeOfConduct": "Gedragscode",
       "refundCancellation": "Restitutie & Annulering",
       "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
-      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister",
+      "yaRegisteredSchoolTitle": "Bij Yoga Alliance USA Geregistreerde School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Onze school, YogaGarhi, is geregistreerd bij Yoga Alliance USA. Na voltooiing van deze opleiding ontvang je een internationaal erkend certificaat, waarmee je Registered Yoga Teacher (RYT) kunt worden. Dit certificaat opent deuren om overal ter wereld yoga te geven.",
+      "rysLabel": "RYS (Geregistreerde Yogaschool)",
+      "rysDesc": "YogaGarhi is een geaccrediteerde school die bevoegd is om yogadocenten op te leiden en te certificeren volgens de strenge wereldwijde Yoga Alliance-normen.",
+      "rytLabel": "RYT (Geregistreerd Yogadocent)",
+      "rytDesc": "Het internationale certificaat dat je na je afstuderen behaalt, waarmee je je kunt registreren bij Yoga Alliance en overal ter wereld les kunt geven."
     },
     "faqsHeading": "Veelgestelde vragen",
     "faqs": [
@@ -6622,7 +6678,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
-      "btnCounselor": "Praat met een adviseur"
+      "btnCounselor": "Praat met een adviseur",
+      "pricingNotice": "Alleen cursusgeld vanaf <price>{tuitionPrice}</price> | Residentiële pakketten vanaf <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Eerstvolgende beschikbare opleiding: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welkom bij YogaGarhi Varkala",
@@ -7310,7 +7368,13 @@
       "codeOfConduct": "Gedragscode",
       "refundCancellation": "Restitutie & Annulering",
       "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
-      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister",
+      "yaRegisteredSchoolTitle": "Bij Yoga Alliance USA Geregistreerde School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Onze school, YogaGarhi, is geregistreerd bij Yoga Alliance USA. Na voltooiing van deze opleiding ontvang je een internationaal erkend certificaat, waarmee je Registered Yoga Teacher (RYT) kunt worden. Dit certificaat opent deuren om overal ter wereld yoga te geven.",
+      "rysLabel": "RYS (Geregistreerde Yogaschool)",
+      "rysDesc": "YogaGarhi is een geaccrediteerde school die bevoegd is om yogadocenten op te leiden en te certificeren volgens de strenge wereldwijde Yoga Alliance-normen.",
+      "rytLabel": "RYT (Geregistreerd Yogadocent)",
+      "rytDesc": "Het internationale certificaat dat je na je afstuderen behaalt, waarmee je je kunt registreren bij Yoga Alliance en overal ter wereld les kunt geven."
     },
     "faqsHeading": "Veelgestelde vragen",
     "faqs": [
@@ -7391,7 +7455,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
-      "btnCounselor": "Praat met een adviseur"
+      "btnCounselor": "Praat met een adviseur",
+      "pricingNotice": "Alleen cursusgeld vanaf <price>{tuitionPrice}</price> | Residentiële pakketten vanaf <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Eerstvolgende beschikbare opleiding: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welkom bij YogaGarhi Varkala",
@@ -8084,7 +8150,13 @@
       "codeOfConduct": "Gedragscode",
       "refundCancellation": "Restitutie & Annulering",
       "ryt200Title": "Geregistreerd Yogadocent (RYT 200)",
-      "viewRegistry": "Bekijk Yoga Alliance schoolregister"
+      "viewRegistry": "Bekijk Yoga Alliance schoolregister",
+      "yaRegisteredSchoolTitle": "Bij Yoga Alliance USA Geregistreerde School (RYS 200)",
+      "yaRegisteredSchoolDesc": "Onze school, YogaGarhi, is geregistreerd bij Yoga Alliance USA. Na voltooiing van deze opleiding ontvang je een internationaal erkend certificaat, waarmee je Registered Yoga Teacher (RYT) kunt worden. Dit certificaat opent deuren om overal ter wereld yoga te geven.",
+      "rysLabel": "RYS (Geregistreerde Yogaschool)",
+      "rysDesc": "YogaGarhi is een geaccrediteerde school die bevoegd is om yogadocenten op te leiden en te certificeren volgens de strenge wereldwijde Yoga Alliance-normen.",
+      "rytLabel": "RYT (Geregistreerd Yogadocent)",
+      "rytDesc": "Het internationale certificaat dat je na je afstuderen behaalt, waarmee je je kunt registreren bij Yoga Alliance en overal ter wereld les kunt geven."
     },
     "faqsHeading": "Veelgestelde vragen",
     "faqs": [
@@ -8165,7 +8237,9 @@
       "quickLocation": "Varkala Cliff, Varkala",
       "btnReserve": "Plek reserveren",
       "btnBrochure": "Lesprogramma downloaden",
-      "btnCounselor": "Praat met een adviseur"
+      "btnCounselor": "Praat met een adviseur",
+      "pricingNotice": "Alleen cursusgeld vanaf <price>{tuitionPrice}</price> | Residentiële pakketten vanaf <price>{residentialPrice}</price>",
+      "nextAvailableTraining": "Eerstvolgende beschikbare opleiding: {startDate} – {endDate}"
     },
     "overview": {
       "heading": "Welkom bij YogaGarhi Varkala",

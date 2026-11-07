@@ -390,7 +390,7 @@ export default function EnrollmentModal() {
             <div className="px-6 sm:px-8 py-4 border-t border-border bg-background rounded-b-xl">
               <Button
                 onClick={handleSubmit}
-                className="w-full h-12 text-base font-bold rounded-xl shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
+                className="w-full h-auto min-h-12 py-3 text-base font-bold rounded-xl shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 text-center whitespace-normal break-words"
                 size="lg"
                 disabled={isLoading || !isFormValid}
               >

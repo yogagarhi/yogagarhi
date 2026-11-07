@@ -44,11 +44,11 @@ export default function HowToReachRishikeshSection({ locale }: HowToReachRishike
           </div>
 
           {/* Interactive Mode Tabs */}
-          <div className="flex justify-center mb-8">
-            <div className="inline-flex p-1.5 rounded-xl bg-background border border-border shadow-sm">
+          <div className="flex justify-center mb-8 max-w-full">
+            <div className="inline-flex flex-wrap justify-center gap-1 p-1 sm:p-1.5 rounded-xl bg-background border border-border shadow-sm max-w-full">
               <button
                 onClick={() => setActiveTab("air")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
+                className={`flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
                   activeTab === "air"
                     ? "bg-primary text-primary-foreground shadow-sm"
                     : "text-muted-foreground hover:text-foreground"
@@ -60,7 +60,7 @@ export default function HowToReachRishikeshSection({ locale }: HowToReachRishike
 
               <button
                 onClick={() => setActiveTab("train")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
+                className={`flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
                   activeTab === "train"
                     ? "bg-primary text-primary-foreground shadow-sm"
                     : "text-muted-foreground hover:text-foreground"
@@ -72,7 +72,7 @@ export default function HowToReachRishikeshSection({ locale }: HowToReachRishike
 
               <button
                 onClick={() => setActiveTab("road")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
+                className={`flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all ${
                   activeTab === "road"
                     ? "bg-primary text-primary-foreground shadow-sm"
                     : "text-muted-foreground hover:text-foreground"

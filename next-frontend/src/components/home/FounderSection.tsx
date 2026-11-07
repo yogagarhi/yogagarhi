@@ -54,8 +54,8 @@ export default function FounderSection({
             {/* Image Column */}
             <div className="relative order-1 lg:order-1">
               {/* Decorative Ring */}
-              <div className="absolute inset-0 -m-4 border-2 border-primary/20 rounded-3xl rotate-3" />
-              <div className="absolute inset-0 -m-4 border-2 border-accent/20 rounded-3xl -rotate-3" />
+              <div className="hidden sm:block absolute inset-0 -m-4 border-2 border-primary/20 rounded-3xl rotate-3" />
+              <div className="hidden sm:block absolute inset-0 -m-4 border-2 border-accent/20 rounded-3xl -rotate-3" />
 
               {/* Main Image Container */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
@@ -73,7 +73,7 @@ export default function FounderSection({
               </div>
 
               {/* Floating Badge */}
-              <div className="absolute -bottom-6 -right-6 bg-card rounded-2xl p-4 shadow-elevated border border-border/50 animate-float-ultra-smooth">
+              <div className="absolute -bottom-4 right-0 sm:-bottom-6 sm:-right-6 bg-card rounded-2xl p-3 sm:p-4 shadow-elevated border border-border/50 animate-float-ultra-smooth max-w-[calc(100%-1rem)]">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Award className="w-6 h-6 text-primary" />
