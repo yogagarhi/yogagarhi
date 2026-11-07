@@ -212,6 +212,7 @@ export default function Header() {
   const measureCompactCtaRef = useRef<HTMLElement>(null);
   const measureFullNavRef = useRef<HTMLUListElement>(null);
   const measureCompactNavRef = useRef<HTMLUListElement>(null);
+  const measureLogoRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const { setShowEnrollDialog } = useEnrollment();
   const { setShowQuickEnquiry } = useQuickEnquiry();
@@ -247,7 +248,14 @@ export default function Header() {
       }
       if (headerRowRef.current && logoRef.current) {
         const totalAvail = headerRowRef.current.clientWidth;
-        const logoWidth = logoRef.current.offsetWidth;
+        
+        // 0. Use full unconstrained natural logo width (measure clone or scrollWidth, safe floor at 190)
+        const naturalLogoWidth = Math.max(
+          measureLogoRef.current?.offsetWidth || 0,
+          logoRef.current?.scrollWidth || 0,
+          logoRef.current?.offsetWidth || 0,
+          190
+        );
         
         // 1. Dynamic CTA measurement from rendered elements
         const standardWidth = measureStandardCtaRef.current?.offsetWidth || standardCtaRef.current?.offsetWidth || 150;
@@ -257,14 +265,18 @@ export default function Header() {
         // 2. Dynamic LanguageSwitcher measurement
         const switcherWidth = measureSwitcherRef.current?.offsetWidth || switcherRef.current?.offsetWidth || 85;
 
-        // Reserved space: switcher + max CTA + gaps & safety padding (88px)
-        const reservedRightWidth = switcherWidth + maxCtaWidth + 88;
+        // Gap between logo and nav (at least 16px, user requirement 4) + gap between nav and right controls (20px) + right controls internal gap (12px) + buffer (16px)
+        const navToLogoGap = 24;
+        const navToRightGap = 20;
+        const rightInternalGap = 12;
+        const safetyBuffer = 16;
+        const reservedRightWidth = switcherWidth + maxCtaWidth + rightInternalGap;
 
         // 3. Dynamic Nav measurement directly from DOM (full vs compact)
         const fullNavWidth = measureFullNavRef.current?.scrollWidth || navRef.current?.scrollWidth || 0;
         const compactNavWidth = measureCompactNavRef.current?.scrollWidth || 0;
 
-        const spaceForNav = totalAvail - logoWidth - reservedRightWidth;
+        const spaceForNav = totalAvail - naturalLogoWidth - reservedRightWidth - navToLogoGap - navToRightGap - safetyBuffer;
 
         if (fullNavWidth > 0 && fullNavWidth <= spaceForNav) {
           // Standard full desktop nav fits comfortably
@@ -275,7 +287,7 @@ export default function Header() {
           setUseDesktopHamburger(false);
           setIsCompactNav(true);
         } else {
-          // Still doesn't fit -> desktop hamburger menu
+          // Still doesn't fit -> desktop hamburger menu with compact CTA
           setUseDesktopHamburger(true);
           setIsCompactNav(true);
         }
@@ -343,10 +355,16 @@ export default function Header() {
           }`}
       >
         <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-4 lg:px-6 2xl:px-8">
-          <div ref={headerRowRef} className="flex items-center justify-between flex-nowrap gap-2 sm:gap-3 w-full min-w-0">
+          <div ref={headerRowRef} className="flex items-center justify-between flex-nowrap gap-2 sm:gap-3 md:gap-4 lg:gap-6 w-full min-w-0">
 
             {/* Logo */}
-            <Link ref={logoRef} href="/" prefetch={false} className="flex items-center gap-1.5 sm:gap-2 group shrink min-w-0 overflow-hidden">
+            <Link
+              ref={logoRef}
+              data-testid="header-logo"
+              href="/"
+              prefetch={false}
+              className="flex items-center gap-1.5 sm:gap-2 group shrink min-w-0 md:shrink-0 md:min-w-fit max-md:overflow-hidden"
+            >
               <div className="relative shrink-0">
                 <Image
                   src={logo}
@@ -359,8 +377,8 @@ export default function Header() {
                 <div className="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-300" />
               </div>
 
-              <div className="flex flex-col min-w-0 overflow-hidden">
-                <span className="font-heading font-bold text-primary tracking-wide text-xs min-[375px]:text-sm sm:text-lg md:text-xl truncate">
+              <div className="flex flex-col min-w-0 md:min-w-fit md:shrink-0 max-md:overflow-hidden">
+                <span className="font-heading font-bold text-primary tracking-wide text-xs min-[375px]:text-sm sm:text-lg md:text-xl max-md:truncate whitespace-nowrap">
                   YOGAGARHI
                 </span>
                 <span className={`text-[10px] text-muted-foreground tracking-[0.1em] uppercase ${isCompactNav || useDesktopHamburger ? 'hidden' : 'hidden 2xl:block'} whitespace-nowrap`}>
@@ -372,7 +390,7 @@ export default function Header() {
             {/* Desktop Navigation - Semantic & Accessible */}
             <nav
               ref={navRef}
-              className={`${useDesktopHamburger ? 'hidden' : 'hidden lg:flex'} items-center`}
+              className={`${useDesktopHamburger ? 'hidden' : 'hidden lg:flex'} items-center shrink-0 min-w-0`}
               aria-label="Main Navigation"
             >
               <ul className={`flex items-center bg-secondary/30 rounded-full list-none m-0 p-0 ${
@@ -737,6 +755,28 @@ export default function Header() {
           className="absolute -left-[9999px] top-0 pointer-events-none invisible flex items-center gap-3 shrink-0"
           style={{ position: "absolute", visibility: "hidden", left: -9999, top: 0 }}
         >
+          {/* Logo clone for measuring unconstrained desktop width */}
+          <div
+            ref={measureLogoRef}
+            tabIndex={-1}
+            className="flex items-center gap-2 shrink-0 select-none"
+          >
+            <div className="relative shrink-0">
+              <Image
+                src={logo}
+                alt="YogaGarhi"
+                width={128}
+                height={118}
+                unoptimized
+                className="object-contain h-14 w-auto aspect-[128/118] shrink-0"
+              />
+            </div>
+            <div className="flex flex-col shrink-0">
+              <span className="font-heading font-bold text-primary tracking-wide text-xl whitespace-nowrap">
+                YOGAGARHI
+              </span>
+            </div>
+          </div>
           <div ref={measureSwitcherRef} tabIndex={-1}>
             <LanguageSwitcher />
           </div>
