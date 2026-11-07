@@ -426,7 +426,7 @@ export default function Header() {
                             onClick={() => setOpenDropdown(openDropdown === dropdownKey ? null : dropdownKey)}
                             className={`flex items-center ${isCompactNav ? 'gap-0.5' : 'gap-1'} rounded-full font-medium transition-all duration-300 whitespace-nowrap shrink-0 ${
                               isCompactNav
-                                ? 'px-1 py-1 text-[11px] min-[1366px]:text-xs'
+                                ? 'px-1.5 py-1 text-xs'
                                 : 'px-2.5 py-1.5 xl:px-3.5 xl:py-2 text-xs xl:text-sm'
                             } ${isDropdownActive
                               ? 'bg-primary text-primary-foreground'
@@ -538,7 +538,7 @@ export default function Header() {
                           prefetch={false}
                               className={`rounded-full font-medium transition-all duration-300 whitespace-nowrap shrink-0 ${
                                 isCompactNav
-                                  ? 'px-1 py-1 text-[11px] min-[1366px]:text-xs'
+                                  ? 'px-1.5 py-1 text-xs'
                                   : 'px-2.5 py-1.5 xl:px-3.5 xl:py-2 text-xs xl:text-sm'
                               } ${isActive(link.href)
                             ? 'bg-primary text-primary-foreground'
@@ -812,7 +812,7 @@ export default function Header() {
           {/* Compact nav clone */}
           <ul ref={measureCompactNavRef} tabIndex={-1} className="flex items-center px-1 py-0.5 gap-0.5 list-none m-0 p-0 font-medium select-none">
             {navLinks.map((link) => (
-              <li key={link.id || link.name} tabIndex={-1} className="flex items-center gap-0.5 px-1 py-1 text-[11px] min-[1366px]:text-xs whitespace-nowrap">
+              <li key={link.id || link.name} tabIndex={-1} className="flex items-center gap-0.5 px-1.5 py-1 text-xs whitespace-nowrap">
                 <span>{link.name}</span>
                 {link.dropdown && <ChevronDown className="h-3 w-3 shrink-0" />}
               </li>
