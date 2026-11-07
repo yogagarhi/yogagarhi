@@ -42,3 +42,28 @@ next-env.d.ts
 
 # review screenshots
 review-screenshots/
+
+# Performance & test audit outputs
+audit-*.json
+audit_*.txt
+batchexecute_raw.txt
+exact-5runs-both-results.json
+filmstrip_*.jpg
+lcp_*.json
+lh-*.json
+lh_*.json
+mobile-network-audit.json
+official_lh_sample.json
+psi-*.json
+psi-*.png
+psi_*.json
+results-*.json
+section_heights_*.json
+step3k-*.json
+step3k-*.png
+test-results-*
+test_hero_orig.jpg
+/public/images/hero/hero-blur-test*.webp
+/public/images/hero/hero-blur-1k.webp
+/public/images/hero/hero-blur-1_5k.webp
+/public/images/hero/hero-blur-base64.txt
