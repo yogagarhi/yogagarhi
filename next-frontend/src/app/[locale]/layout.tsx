@@ -2,7 +2,6 @@ import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "../globals.css";
 import type { Metadata } from "next";
 import MainLayout from "@/components/MainLayout";
-import { getCloudinaryUrl } from "@/utils/cloudinary";
 import { Providers } from "@/components/Providers";
 import UtmTracker from "@/components/UtmTracker";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -95,7 +94,7 @@ export async function generateMetadata({
         "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs at YogaGarhi.",
       images: [
         {
-          url: "/og-image.jpg",
+          url: "https://www.yogagarhi.com/og-image.jpg",
           width: 1200,
           height: 630,
           alt: "YogaGarhi - Yoga Teacher Training Bali",
@@ -107,7 +106,7 @@ export async function generateMetadata({
       title: "YogaGarhi - Yoga Teacher Training in Bali, Ubud",
       description:
         "Transform your life with authentic yoga teacher training in Bali. 100, 200 & 300 hour Yoga Alliance certified programs.",
-      images: ["/og-image.jpg"],
+      images: ["https://www.yogagarhi.com/og-image.jpg"],
       creator: "@YogaGarhi",
       site: "@YogaGarhi",
     },
@@ -205,12 +204,11 @@ export default async function LocaleLayout({
                   "@id": "https://www.yogagarhi.com/#organization",
                   "name": "YogaGarhi",
                   "url": "https://www.yogagarhi.com",
-                  "logo": getCloudinaryUrl("about-yoga-3"),
+                  "logo": "https://www.yogagarhi.com/yogagarhi-logo-hd-preview.png",
                   "image": "https://www.yogagarhi.com/og-image.jpg",
-                  "description": "Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training school and spiritual ashram in Ubud Bali & Rishikesh India.",
+                  "description": "Yoga Alliance certified 100, 200 & 300 Hour Yoga Teacher Training school and spiritual ashram in Gianyar Bali, Rishikesh & Varkala Kerala India.",
                   "telephone": "+91-7895350563",
                   "email": "yogagarhi@gmail.com",
-                  "priceRange": "$$",
                   "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "Gianyar",
@@ -218,18 +216,6 @@ export default async function LocaleLayout({
                     "addressRegion": "Bali",
                     "postalCode": "80515",
                     "addressCountry": "ID"
-                  },
-                  "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": -8.4982,
-                    "longitude": 115.3051
-                  },
-                  "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "5.0",
-                    "reviewCount": "195",
-                    "bestRating": "5",
-                    "worstRating": "1"
                   },
                   "contactPoint": {
                     "@type": "ContactPoint",
@@ -257,7 +243,7 @@ export default async function LocaleLayout({
                   "@type": "LocalBusiness",
                   "@id": "https://www.yogagarhi.com/#localbusiness-bali",
                   "name": "YogaGarhi Ashram & Yoga School - Bali",
-                  "image": getCloudinaryUrl("about-yoga-3"),
+                  "image": "https://www.yogagarhi.com/hero-yoga-group.jpg",
                   "url": "https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-bali",
                   "telephone": "+91-7895350563",
                   "priceRange": "$$",
@@ -299,7 +285,7 @@ export default async function LocaleLayout({
                   "@type": "LocalBusiness",
                   "@id": "https://www.yogagarhi.com/#localbusiness-rishikesh",
                   "name": "YogaGarhi Yoga School - Rishikesh",
-                  "image": getCloudinaryUrl("about-yoga-3"),
+                  "image": "https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/rishikesh-surroundings.png",
                   "url": "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-rishikesh",
                   "telephone": "+91-7895350563",
                   "priceRange": "$$",

@@ -29,8 +29,8 @@ export function getCloudinaryUrl(path: string, options: CloudinaryImageOptions =
     const resource = cloudinaryMap[cleanPath] || cloudinaryMap[filename];
 
     if (!resource) {
-        if (process.env.NODE_ENV === 'development') {
-            // console.warn(`[Cloudinary] Image not found in map: ${path}`);
+        if (process.env.NODE_ENV !== 'production' || typeof window === 'undefined') {
+            console.warn(`[Cloudinary] Image not found in map: ${path}`);
         }
         // Ensure path starts with / for next/image if it's not a URL
         return path.startsWith('/') ? path : `/${path}`;
@@ -63,8 +63,8 @@ export function getCloudinaryImage(filename: string) {
     const resource = cloudinaryMap[cleanPath] || cloudinaryMap[cleanName];
 
     if (!resource) {
-        if (process.env.NODE_ENV === 'development') {
-            // console.warn(`[Cloudinary] Image not found for object: ${filename}`);
+        if (process.env.NODE_ENV !== 'production' || typeof window === 'undefined') {
+            console.warn(`[Cloudinary] Image not found for object: ${filename}`);
         }
         return {
             src: filename.startsWith('/') ? filename : `/${filename}`,

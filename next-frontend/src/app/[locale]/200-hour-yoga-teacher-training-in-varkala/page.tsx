@@ -203,9 +203,7 @@ export default async function Page({
         "inLanguage": "en",
         "educationalCredentialAwarded": "RYT 200 Yoga Alliance Certification",
         "provider": {
-            "@type": "Organization",
-            "name": "YogaGarhi",
-            "url": "https://www.yogagarhi.com"
+            "@id": "https://www.yogagarhi.com/#organization"
         },
         "audience": {
             "@type": "Audience",
@@ -266,11 +264,14 @@ export default async function Page({
     ========================= */
     const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "YogaGarhi Varkala",
-        "url": "https://www.yogagarhi.com",
-        "logo": "https://www.yogagarhi.com/yogagarhi-logo.jpg",
-        "image": "https://images.unsplash.com/photo-1512100356356-de1b84283e18?auto=format&fit=crop&w=1200&q=80",
+        "@type": "LocalBusiness",
+        "@id": "https://www.yogagarhi.com/#localbusiness-varkala",
+        "name": "YogaGarhi Yoga School - Varkala",
+        "parentOrganization": {
+            "@id": "https://www.yogagarhi.com/#organization"
+        },
+        "url": pageUrl,
+        "image": "https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/beach-yoga.jpg",
         "description": "Yoga Alliance certified yoga teacher training and authentic Ayurveda immersion school in Varkala, Kerala, India.",
         "address": {
             "@type": "PostalAddress",
@@ -278,7 +279,7 @@ export default async function Page({
             "addressLocality": "Varkala",
             "addressRegion": "Kerala",
             "postalCode": "695141",
-            "addressCountry": "India"
+            "addressCountry": "IN"
         },
         "geo": {
             "@type": "GeoCoordinates",

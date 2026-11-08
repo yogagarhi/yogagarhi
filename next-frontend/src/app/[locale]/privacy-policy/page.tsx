@@ -24,8 +24,7 @@ export async function generateMetadata({
   const metadata: Metadata = {
     metadataBase: new URL("https://www.yogagarhi.com"),
     title: {
-      default: title,
-      template: "%s | YogaGarhi",
+      absolute: title,
     },
     description,
     alternates: {
