@@ -1005,8 +1005,8 @@
         "answer": "Untuk paket residensial, biaya mencakup semua yang Anda butuhkan selama masa tinggal Anda:\n• 23 malam akomodasi (dengan kamar mandi dalam, air panas, AC atau kipas angin, Wi-Fi, dan pembersihan harian)\n• 3 kali makan vegetarian sehat setiap hari, ditambah teh herbal dan air minum\n• Buku panduan belajar resmi dan buku catatan\n• Matras yoga dan alat bantu (props) untuk latihan\n• Penjemputan bandara dari DPS\n• Ekskursi budaya (jelajah sawah, pertunjukan tari Bali, dan kunjungan ke pura air suci)\n• Satu sesi pijat Bali\n• Kursus persiapan online Pra-TTC\n• Lokakarya khusus dalam Keseimbangan Lengan (Arm Balance) dan Ayurveda\n• Buku 35+ sekuens kreatif dari YogaGarhi\n• Sertifikat Penyelesaian dari YogaGarhi (RYS 200), memenuhi syarat untuk mendaftar di Yoga Alliance sebagai RYT 200\n• Hak istimewa mengulang kursus seumur hidup\nUntuk paket Hanya Biaya Kursus ($999 USD), akomodasi dan makanan tidak termasuk."
       },
       {
-        "question": "Bagaimana kebijakan pembatalan dan pengembalian uangnya?",
-        "answer": "Deposit sebesar $250 Anda bersifat non-refundable (tidak dapat dikembalikan). Jika Anda harus membatalkan karena keadaan darurat, Anda dapat memindahkannya ke angkatan mendatang dalam waktu 12 bulan. Sisa biaya jatuh tempo 30 hari sebelum kursus dimulai. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa pembayaran yang telah Anda bayarkan; biaya bank dipotong. Jika Anda membatalkan lebih lambat, sisa pembayaran menjadi kredit untuk kursus apa pun dalam waktu 12 bulan. Tidak ada pengembalian dana setelah kursus dimulai. Jika YogaGarhi membatalkan suatu angkatan, Anda dapat memilih pengembalian dana penuh atas semua yang telah Anda bayarkan atau pindah ke angkatan lain tanpa biaya tambahan."
+        "question": "Bagaimana kebijakan pengembalian dana dan pembatalan?",
+        "answer": "Deposit $250 USD Anda bersifat non-refundable. Jika Anda harus membatalkan karena keadaan darurat, deposit dapat dialihkan ke angkatan mendatang dalam waktu 12 bulan. Sisa biaya jatuh tempo 30 hari sebelum kursus dimulai. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa saldo yang telah Anda bayar; biaya perbankan dipotong. Jika membatalkan lebih lambat, saldo menjadi kredit untuk kursus apa pun dalam waktu 12 bulan. Tidak ada pengembalian dana setelah kursus dimulai. Jika YogaGarhi membatalkan angkatan, Anda dapat memilih pengembalian dana penuh atau beralih ke angkatan lain tanpa biaya tambahan."
       },
       {
         "question": "Makanan seperti apa yang disajikan selama pelatihan?",
@@ -1098,11 +1098,11 @@
       "code6": "Saling menghargai sesama",
       "code7": "Dilarang membawa ponsel ke dalam kelas",
       "code8": "Wajib mengikuti seluruh rangkaian kelas",
-      "refund1": "Deposit bersifat non-refundable (tidak dapat dikembalikan)",
-      "refund2": "Deposit dapat dialihkan dalam kurun 12 bulan (keadaan darurat)",
-      "refund3": "Sisa pembayaran dapat dikembalikan 30+ hari sebelum tanggal mulai",
-      "refund4": "Tidak ada pengembalian dana setelah kursus dimulai",
-      "refund5": "Pengembalian dana penuh jika pihak sekolah membatalkan",
+      "refund1": "Deposit bersifat non-refundable",
+      "refund2": "Deposit dapat dialihkan dalam 12 bulan (darurat)",
+      "refund3": "Saldo dapat dikembalikan 30+ hari sebelum mulai",
+      "refund4": "Tidak ada pengembalian setelah kursus dimulai",
+      "refund5": "Pengembalian penuh jika sekolah membatalkan",
       "reviewsHeading": "Apa Kata Para Siswa Kami",
       "viewAllGoogle": "Lihat semua ulasan di Google",
       "basedOnReviews": "Berdasarkan",
@@ -1683,8 +1683,8 @@
         "answer": "Biaya mencakup menginap 23 malam (kamar mandi dalam, air panas, AC/kipas, Wi-Fi), 3 kali makan sehat vegetarian setiap hari, teh herbal dan air minum, buku panduan resmi, matras dan props, penjemputan dari bandara DPS, pijat Bali, wisata budaya, persiapan Pra-TTC online, buku 35+ sekuens, sertifikat Yoga Alliance RYT 200, dan hak mengulang gratis seumur hidup. Paket hanya biaya kursus ($999 USD) tidak termasuk kamar dan makan."
       },
       {
-        "question": "Bagaimana kebijakan pembatalan dan pengembalian uangnya?",
-        "answer": "Anda dapat menjadwal ulang tanggal kursus secara gratis dalam kurun 12 bulan atau mengalihkan tempat Anda kepada orang lain. Kami mengembalikan 100% dana jika pihak sekolah membatalkan kelas, disertai uji coba Hari ke-1. Mengingat kuota terbatas, pembayaran tidak dapat dikembalikan setelah Hari ke-1 dimulai."
+        "question": "Bagaimana kebijakan pengembalian dana dan pembatalan?",
+        "answer": "Deposit $250 USD Anda bersifat non-refundable. Jika Anda harus membatalkan karena keadaan darurat, deposit dapat dialihkan ke angkatan mendatang dalam waktu 12 bulan. Sisa biaya jatuh tempo 30 hari sebelum kursus dimulai. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa saldo yang telah Anda bayar; biaya perbankan dipotong. Jika membatalkan lebih lambat, saldo menjadi kredit untuk kursus apa pun dalam waktu 12 bulan. Tidak ada pengembalian dana setelah kursus dimulai. Jika YogaGarhi membatalkan angkatan, Anda dapat memilih pengembalian dana penuh atau beralih ke angkatan lain tanpa biaya tambahan."
       }
     ],
     "hero": {
@@ -1938,11 +1938,11 @@
       "code6": "Saling menghargai sesama",
       "code7": "Dilarang membawa ponsel ke dalam kelas",
       "code8": "Wajib mengikuti seluruh rangkaian kelas",
-      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
-      "refund2": "Dapat dialihkan ke peserta lain",
-      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
-      "refund4": "Kebijakan hari percobaan",
-      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "refund1": "Deposit bersifat non-refundable",
+      "refund2": "Deposit dapat dialihkan dalam 12 bulan (darurat)",
+      "refund3": "Saldo dapat dikembalikan 30+ hari sebelum mulai",
+      "refund4": "Tidak ada pengembalian setelah kursus dimulai",
+      "refund5": "Pengembalian penuh jika sekolah membatalkan",
       "reviewsHeading": "Apa Kata Para Siswa Kami",
       "viewAllGoogle": "Lihat semua ulasan di Google",
       "basedOnReviews": "Berdasarkan",
@@ -2634,11 +2634,11 @@
       "code6": "Saling menghargai sesama",
       "code7": "Dilarang membawa ponsel ke dalam kelas",
       "code8": "Wajib mengikuti seluruh rangkaian kelas",
-      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
-      "refund2": "Dapat dialihkan ke peserta lain",
-      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
-      "refund4": "Kebijakan hari percobaan",
-      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "refund1": "Deposit bersifat non-refundable",
+      "refund2": "Deposit dapat dialihkan dalam 12 bulan (darurat)",
+      "refund3": "Saldo dapat dikembalikan 30+ hari sebelum mulai",
+      "refund4": "Tidak ada pengembalian setelah kursus dimulai",
+      "refund5": "Pengembalian penuh jika sekolah membatalkan",
       "reviewsHeading": "Apa Kata Para Siswa Kami",
       "viewAllGoogle": "Lihat semua ulasan di Google",
       "basedOnReviews": "Berdasarkan",
@@ -3072,12 +3072,12 @@
         "answer": "You can take a 45-minute direct flight from Delhi (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Haridwar (4.5 hours). Private taxi pickups directly from Delhi Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Bisakah saya membayar dengan cicilan?",
+        "answer": "Ya, Anda dapat mengamankan kursi Anda dengan deposit $250 USD. Sisa pembayaran wajib diselesaikan paling lambat 30 hari sebelum kursus dimulai."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Bagaimana kebijakan pengembalian dana dan pembatalan?",
+        "answer": "Deposit $250 USD Anda bersifat non-refundable. Jika Anda harus membatalkan karena keadaan darurat, deposit dapat dialihkan ke angkatan mendatang dalam waktu 12 bulan. Sisa biaya jatuh tempo 30 hari sebelum kursus dimulai. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa saldo yang telah Anda bayar; biaya perbankan dipotong. Jika membatalkan lebih lambat, saldo menjadi kredit untuk kursus apa pun dalam waktu 12 bulan. Tidak ada pengembalian dana setelah kursus dimulai. Jika YogaGarhi membatalkan angkatan, Anda dapat memilih pengembalian dana penuh atau beralih ke angkatan lain tanpa biaya tambahan."
       },
       {
         "question": "What is the best time of year to visit Rishikesh?",
@@ -3347,11 +3347,11 @@
       "code6": "Saling menghargai sesama",
       "code7": "Dilarang membawa ponsel ke dalam kelas",
       "code8": "Wajib mengikuti seluruh rangkaian kelas",
-      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
-      "refund2": "Dapat dialihkan ke peserta lain",
-      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
-      "refund4": "Kebijakan hari percobaan",
-      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "refund1": "Deposit bersifat non-refundable",
+      "refund2": "Deposit dapat dialihkan dalam 12 bulan (darurat)",
+      "refund3": "Saldo dapat dikembalikan 30+ hari sebelum mulai",
+      "refund4": "Tidak ada pengembalian setelah kursus dimulai",
+      "refund5": "Pengembalian penuh jika sekolah membatalkan",
       "reviewsHeading": "Apa Kata Para Siswa Kami",
       "viewAllGoogle": "Lihat semua ulasan di Google",
       "basedOnReviews": "Berdasarkan",
@@ -3829,12 +3829,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Bisakah saya membayar dengan cicilan?",
+        "answer": "Ya, Anda dapat mengamankan kursi Anda dengan deposit $250 USD. Sisa pembayaran wajib diselesaikan paling lambat 30 hari sebelum kursus dimulai."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Bagaimana kebijakan pengembalian dana dan pembatalan?",
+        "answer": "Deposit $250 USD Anda bersifat non-refundable. Jika Anda harus membatalkan karena keadaan darurat, deposit dapat dialihkan ke angkatan mendatang dalam waktu 12 bulan. Sisa biaya jatuh tempo 30 hari sebelum kursus dimulai. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa saldo yang telah Anda bayar; biaya perbankan dipotong. Jika membatalkan lebih lambat, saldo menjadi kredit untuk kursus apa pun dalam waktu 12 bulan. Tidak ada pengembalian dana setelah kursus dimulai. Jika YogaGarhi membatalkan angkatan, Anda dapat memilih pengembalian dana penuh atau beralih ke angkatan lain tanpa biaya tambahan."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -3853,8 +3853,8 @@
         "answer": "A typical training day begins at 06.00 with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 06.30. Morning asana practice runs from 7:30 to 09.00, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 19.30 and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Bisakah saya membayar dengan cicilan?",
+        "answer": "Ya, Anda dapat mengamankan kursi Anda dengan deposit $250 USD. Sisa pembayaran wajib diselesaikan paling lambat 30 hari sebelum kursus dimulai."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -4129,11 +4129,11 @@
       "code6": "Saling menghargai sesama",
       "code7": "Dilarang membawa ponsel ke dalam kelas",
       "code8": "Wajib mengikuti seluruh rangkaian kelas",
-      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
-      "refund2": "Dapat dialihkan ke peserta lain",
-      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
-      "refund4": "Kebijakan hari percobaan",
-      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "refund1": "Deposit bersifat non-refundable",
+      "refund2": "Deposit dapat dialihkan dalam 12 bulan (darurat)",
+      "refund3": "Saldo dapat dikembalikan 30+ hari sebelum mulai",
+      "refund4": "Tidak ada pengembalian setelah kursus dimulai",
+      "refund5": "Pengembalian penuh jika sekolah membatalkan",
       "reviewsHeading": "Apa Kata Para Siswa Kami",
       "viewAllGoogle": "Lihat semua ulasan di Google",
       "basedOnReviews": "Berdasarkan",
@@ -4631,7 +4631,7 @@
     "heroHeading": "Daftar Pelatihan Guru Yoga",
     "heroSub": "Mulailah perjalanan Anda untuk menjadi guru yoga bersertifikat dan autentik. Pilih program Anda, pelajari persyaratannya, dan amankan tempat Anda di kelas kecil kami.",
     "smallCohorts": "Kelas kecil 8–10 siswa",
-    "flexibleRescheduling": "Penjadwalan ulang fleksibel",
+    "flexibleRescheduling": "Perlindungan Deposit Keadaan Darurat",
     "rytCertification": "Sertifikasi Yoga Alliance RYT",
     "chooseHeading": "Langkah 1: Pilih Kursus Anda",
     "chooseSub": "Pilih pelatihan guru yang selaras dengan latihan dan aspirasi karier Anda saat ini.",
@@ -4668,7 +4668,7 @@
     "s2Title": "Periksa Prasyarat & Kelayakan",
     "s2Desc": "100 Jam & 200 Jam terbuka untuk pemula yang berdedikasi maupun praktisi berpengalaman. 300 Jam membutuhkan sertifikat RYT 200 Jam bersertifikat.",
     "s3Title": "Amankan Kursi Anda",
-    "s3Desc": "Kunci tanggal dan tingkat kamar pilihan Anda. Dilindungi oleh kebijakan pemesanan dan penjadwalan ulang kami yang fleksibel.",
+    "s3Desc": "Amankan tanggal dan tipe kamar pilihan Anda dengan deposit $250 USD, dapat dialihkan dalam 12 bulan untuk keadaan darurat.",
     "s4Title": "Akses Online Pre-YTTC Langsung",
     "s4Desc": "Dapatkan Panduan Selamat Datang YogaGarhi dan akses instan ke modul video persiapan online Pre-YTTC dan fondasi anatomi kami.",
     "s5Title": "Tiba di Kampus & Menyelam",
@@ -4680,7 +4680,7 @@
     "q2": "Bagaimana cara mengamankan kursi saya dan apa ketentuan pembayarannya?",
     "a2": "Deposit pendaftaran mengamankan kursi Anda dan mengonfirmasi pendaftaran Anda. Rincian lengkap mengenai jadwal pembayaran dan metode yang diterima diberikan selama proses pendaftaran.",
     "q3": "Bagaimana jika tanggal perjalanan atau jadwal saya berubah?",
-    "a3": "Kami menawarkan opsi penjadwalan ulang yang fleksibel untuk angkatan mendatang kami. Hubungi tim penerimaan kami terlebih dahulu jika Anda perlu menyesuaikan tanggal Anda.",
+    "a3": "Jika Anda harus membatalkan karena keadaan darurat, Anda dapat mengalihkan deposit $250 USD ke angkatan mendatang dalam waktu 12 bulan. Silakan hubungi tim admisi kami sesegera mungkin untuk mengatur tanggal baru Anda.",
     "q4": "Apa saja yang termasuk dalam pendaftaran saya?",
     "a4": "Paket residensial mencakup biaya kuliah penuh, sertifikat terakreditasi Yoga Alliance, manual pelatihan cetak, akomodasi selama kursus, 3 makanan Sattvic/vegetarian harian yang bergizi, tamasya akhir pekan, dan akses langsung ke portal online Pre-YTTC. Opsi hanya kuliah juga tersedia.",
     "q5": "Berapa banyak siswa di setiap angkatan?",
@@ -4810,7 +4810,7 @@
     "needGuidance": "Butuh Bantuan Memilih Paket Retret?",
     "guidanceSub": "Tim kami siap membantu terkait penerbangan, visa, dan penyesuaian tanggal perjalanan Anda.",
     "reschedulePolicyTitle": "Ketentuan Pembatalan & Deposit",
-    "reschedulePolicyText": "Deposit sebesar $250 Anda bersifat non-refundable (tidak dapat dikembalikan). Jika Anda membatalkan karena keadaan darurat, deposit Anda dapat dipindahkan ke tanggal mendatang dalam waktu 12 bulan. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa pembayaran yang telah Anda bayarkan; biaya bank dipotong. Jika Anda membatalkan kurang dari 30 hari sebelum tanggal mulai, sisa pembayaran Anda menjadi kredit yang berlaku selama 12 bulan. Tidak ada pengembalian dana setelah retret dimulai. Jika YogaGarhi membatalkan retret, Anda akan menerima pengembalian dana penuh atas semua pembayaran atau pemindahan tanggal secara gratis.",
+    "reschedulePolicyText": "Deposit $250 USD Anda tidak dapat dikembalikan. Jika Anda membatalkan karena keadaan darurat, deposit dapat dialihkan ke tanggal mendatang dalam waktu 12 bulan. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa saldo yang telah dibayar; biaya administrasi bank dipotong. Jika membatalkan kurang dari 30 hari sebelum mulai, saldo Anda menjadi kredit yang berlaku selama 12 bulan. Tidak ada pengembalian setelah retret dimulai. Jika YogaGarhi membatalkan retret, Anda akan menerima pengembalian penuh atas semua pembayaran atau pemindahan jadwal tanpa biaya.",
     "packages": {
       "bali-3-days": {
         "title": "RETREAT YOGA 3 HARI & 2 MALAM DI UBUD BALI",
@@ -4880,7 +4880,7 @@
           },
           {
             "question": "Bagaimana kebijakan penjadwalan ulang?",
-            "answer": "Setiap peserta berhak atas satu kali penjadwalan ulang gratis dengan pemberitahuan 15 hari sebelumnya."
+            "answer": "Deposit $250 USD Anda bersifat non-refundable. Jika Anda membatalkan karena keadaan darurat, deposit dapat dialihkan dalam kurun 12 bulan. Sisa biaya dapat dikembalikan jika dibatalkan 30 hari atau lebih sebelum mulai."
           },
           {
             "question": "Bagaimana dengan penjemputan bandara?",
@@ -5627,33 +5627,32 @@
   },
   "refundPolicy": {
     "metaTitle": "Kebijakan Pengembalian Dana & Pembatalan | YogaGarhi",
-    "metaDesc": "Kebijakan pengembalian dana, deposit, dan pemindahan angkatan yang transparan dari YogaGarhi untuk kursus guru yoga dan retreat di Bali dan Rishikesh.",
-    "badge": "Jaminan Ketenangan & Fleksibilitas",
-    "title": "Kebijakan Pengembalian Dana & Pemindahan Angkatan",
-    "intro": "Kami memahami bahwa keadaan hidup dapat berubah. Di YogaGarhi, kami menawarkan ketentuan pemesanan yang transparan dan fleksibel untuk melindungi investasi perjalanan spiritual Anda.",
-    "highlight1Title": "100% Dapat Dipindahtangankan",
-    "highlight1Text": "Deposit Anda 100% dapat dipindahkan ke angkatan mendatang atau lokasi lain (Bali / Rishikesh) dalam kurun waktu 12 bulan.",
-    "highlight2Title": "Masa Berlaku 12 Bulan",
-    "highlight2Text": "Perlu menjadwalkan ulang? Anda memiliki waktu 1 tahun penuh dari tanggal awal untuk menghadiri pelatihan atau retreat Anda.",
-    "highlight3Title": "Keadaan Darurat Medis",
-    "highlight3Text": "Dalam kasus darurat kesehatan atau perjalanan yang tidak terduga dengan bukti dokumen, penjadwalan ulang prioritas diberikan tanpa biaya tambahan.",
-    "section1Title": "1. Deposit Pemesanan & Reservasi Tempat",
-    "section1Text": "Untuk mengamankan tempat dan akomodasi Anda dalam Pelatihan Guru Yoga atau Retreat pilihan Anda, deposit sebesar $250 USD (atau setara) diperlukan pada saat pendaftaran. Ini memungkinkan ashram kami memesan kamar Anda, menyiapkan materi pembelajaran, dan menugaskan mentor pengajar.",
-    "section2Title": "2. Penjadwalan Ulang Angkatan & Perubahan Tanggal",
-    "section2Text": "Jika Anda tidak dapat bergabung pada tanggal mulai yang dijadwalkan, Anda dapat menjadwalkan ulang ke angkatan berikutnya dalam waktu 12 bulan tanpa penalti, asalkan Anda memberi tahu kantor penerimaan kami setidaknya 15 hari sebelum tanggal mulai kursus.",
-    "section3Title": "3. Ketentuan Pembayaran Sisa Biaya",
-    "section3Text": "Sisa biaya kursus harus dibayarkan setibanya di ashram pada hari orientasi (atau melalui transfer bank / tautan kartu kredit sebelum kedatangan). Setelah kursus dimulai dan siswa melakukan check-in, biaya pelatihan dan akomodasi tidak dapat dikembalikan karena alokasi sumber daya dan kamar telah dikomitmenkan.",
-    "section4Title": "6. Pertanyaan & Layanan Pendaftaran",
-    "section4Text": "Untuk pertanyaan mengenai penjadwalan ulang angkatan atau rencana pembayaran khusus, tim pendaftaran kami siap membantu setiap hari melalui email di {email} atau WhatsApp di {phone}.",
-    "contactBtn": "Hubungi Meja Pendaftaran",
-    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
-    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid. The $250 deposit is non-refundable, and any bank fees are deducted.",
-    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
-    "sectionAfterStartTitle": "4. After the Course Begins",
-    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
-    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
-    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost.",
-    "highlightsSr": "Sorotan Kebijakan"
+    "metaDesc": "Kebijakan resmi YogaGarhi mengenai pengembalian dana, deposit pemesanan, dan pembatalan untuk pelatihan guru yoga serta retret di Bali, Rishikesh, dan Varkala.",
+    "badge": "Ketentuan Resmi Pemesanan",
+    "title": "Kebijakan Pengembalian Dana & Pembatalan",
+    "intro": "Kami ingin Anda merasa yakin dan tenang saat mendaftar. Berikut adalah kebijakan resmi kami mengenai deposit pemesanan, pelunasan sisa biaya, dan pembatalan kursus.",
+    "highlight1Title": "Pengalihan Deposit",
+    "highlight1Text": "Jika Anda terpaksa membatalkan karena keadaan darurat, deposit Anda dapat dialihkan ke angkatan mendatang dalam waktu 12 bulan.",
+    "highlight2Title": "Pengembalian Saldo (30 Hari)",
+    "highlight2Text": "Batalkan 30 hari atau lebih sebelum tanggal mulai untuk menerima pengembalian penuh sisa saldo Anda; biaya bank dipotong.",
+    "highlight3Title": "Kredit Pembatalan Terlambat",
+    "highlight3Text": "Jika Anda membatalkan kurang dari 30 hari sebelum tanggal mulai, 100% sisa saldo Anda menjadi kredit yang berlaku selama 12 bulan.",
+    "section1Title": "1. Deposit Pemesanan",
+    "section1Text": "Untuk mengamankan tempat dan kamar Anda, kami meminta deposit sebesar $250 USD setelah pendaftaran Anda disetujui. Deposit ini tidak dapat dikembalikan (non-refundable). Kami langsung menggunakannya untuk memesan akomodasi Anda serta menyiapkan konsumsi dan tim pengajar untuk angkatan Anda.",
+    "section2Title": "2. Pengalihan Deposit (Dalam Waktu 12 Bulan)",
+    "section2Text": "Rencana hidup dapat berubah sewaktu-waktu. Jika Anda harus membatalkan karena kendala penerbangan, masalah medis, atau keadaan darurat lainnya, Anda dapat mengalihkan deposit Anda ke angkatan berikutnya. Tanggal mulai yang baru harus berada dalam waktu 12 bulan dari jadwal mulai awal Anda.",
+    "section3Title": "3. Sisa Pembayaran & Ketentuan Pembatalan",
+    "section4Title": "6. Pertanyaan & Layanan Admisi",
+    "section4Text": "Untuk pertanyaan apa pun seputar pemesanan atau pembatalan, tim admisi kami siap membantu setiap hari melalui email di {email} atau WhatsApp di {phone}.",
+    "contactBtn": "Hubungi Meja Admisi",
+    "section3Intro": "Sisa biaya kursus Anda wajib dilunasi paling lambat 30 hari sebelum kursus dimulai.",
+    "section3Bullet1": "Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai: Kami mengembalikan seluruh saldo yang telah Anda bayarkan. Deposit $250 USD bersifat non-refundable, dan potongan biaya bank berlaku.",
+    "section3Bullet2": "Jika Anda membatalkan kurang dari 30 hari sebelum tanggal mulai: Sisa biaya tidak dikembalikan secara tunai. Sebagai gantinya, kami menyimpan 100% dana tersebut sebagai kredit yang dapat Anda gunakan untuk kursus apa pun dalam waktu 12 bulan.",
+    "sectionAfterStartTitle": "4. Setelah Kursus Dimulai",
+    "sectionAfterStartText": "Setelah kursus berjalan, kami tidak dapat memberikan pengembalian dana atau kredit apabila Anda meninggalkan kursus lebih awal, mengundurkan diri, atau melewatkan kelas karena sakit maupun alasan pribadi.",
+    "sectionSchoolCancelTitle": "5. Jika YogaGarhi Membatalkan Angkatan",
+    "sectionSchoolCancelText": "Apabila kami terpaksa membatalkan suatu angkatan, Anda berhak memilih pengembalian dana penuh atas semua pembayaran yang telah dilakukan, atau beralih ke angkatan lain tanpa biaya tambahan.",
+    "highlightsSr": "Poin Utama Kebijakan"
   },
   "course300Rishikesh": {
     "metaTitle": "Pelatihan Guru Yoga 300 Jam di Rishikesh | Jalur Lanjutan RYT 500 India",
@@ -5901,12 +5900,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Bisakah saya membayar dengan cicilan?",
+        "answer": "Ya, Anda dapat mengamankan kursi Anda dengan deposit $250 USD. Sisa pembayaran wajib diselesaikan paling lambat 30 hari sebelum kursus dimulai."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Bagaimana kebijakan pengembalian dana dan pembatalan?",
+        "answer": "Deposit $250 USD Anda bersifat non-refundable. Jika Anda harus membatalkan karena keadaan darurat, deposit dapat dialihkan ke angkatan mendatang dalam waktu 12 bulan. Sisa biaya jatuh tempo 30 hari sebelum kursus dimulai. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa saldo yang telah Anda bayar; biaya perbankan dipotong. Jika membatalkan lebih lambat, saldo menjadi kredit untuk kursus apa pun dalam waktu 12 bulan. Tidak ada pengembalian dana setelah kursus dimulai. Jika YogaGarhi membatalkan angkatan, Anda dapat memilih pengembalian dana penuh atau beralih ke angkatan lain tanpa biaya tambahan."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -5925,8 +5924,8 @@
         "answer": "A typical training day begins at 06.00 with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 06.30. Morning asana practice runs from 7:30 to 09.00, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 19.30 and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Bisakah saya membayar dengan cicilan?",
+        "answer": "Ya, Anda dapat mengamankan kursi Anda dengan deposit $250 USD. Sisa pembayaran wajib diselesaikan paling lambat 30 hari sebelum kursus dimulai."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -6201,11 +6200,11 @@
       "code6": "Saling menghargai sesama",
       "code7": "Dilarang membawa ponsel ke dalam kelas",
       "code8": "Wajib mengikuti seluruh rangkaian kelas",
-      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
-      "refund2": "Dapat dialihkan ke peserta lain",
-      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
-      "refund4": "Kebijakan hari percobaan",
-      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "refund1": "Deposit bersifat non-refundable",
+      "refund2": "Deposit dapat dialihkan dalam 12 bulan (darurat)",
+      "refund3": "Saldo dapat dikembalikan 30+ hari sebelum mulai",
+      "refund4": "Tidak ada pengembalian setelah kursus dimulai",
+      "refund5": "Pengembalian penuh jika sekolah membatalkan",
       "reviewsHeading": "Apa Kata Para Siswa Kami",
       "viewAllGoogle": "Lihat semua ulasan di Google",
       "basedOnReviews": "Berdasarkan",
@@ -6645,12 +6644,12 @@
         "answer": "Terbanglah ke Bandara Internasional Trivandrum (TRV), yang berjarak hanya 45 km (sekitar 1 jam perjalanan) dari ashram Varkala Cliff kami. Atau, tiba dengan kereta api di Stasiun Kereta Api Varkala Sivagiri (VAK), hanya berjarak 3 km (10 menit). Bantuan penjemputan bandara dapat dikoordinasikan berdasarkan permintaan."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Bisakah saya membayar dengan cicilan?",
+        "answer": "Ya, Anda dapat mengamankan kursi Anda dengan deposit $250 USD. Sisa pembayaran wajib diselesaikan paling lambat 30 hari sebelum kursus dimulai."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Bagaimana kebijakan pengembalian dana dan pembatalan?",
+        "answer": "Deposit $250 USD Anda bersifat non-refundable. Jika Anda harus membatalkan karena keadaan darurat, deposit dapat dialihkan ke angkatan mendatang dalam waktu 12 bulan. Sisa biaya jatuh tempo 30 hari sebelum kursus dimulai. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa saldo yang telah Anda bayar; biaya perbankan dipotong. Jika membatalkan lebih lambat, saldo menjadi kredit untuk kursus apa pun dalam waktu 12 bulan. Tidak ada pengembalian dana setelah kursus dimulai. Jika YogaGarhi membatalkan angkatan, Anda dapat memilih pengembalian dana penuh atau beralih ke angkatan lain tanpa biaya tambahan."
       },
       {
         "question": "What is the best time of year to visit Varkala?",
@@ -6920,11 +6919,11 @@
       "code6": "Saling menghargai sesama",
       "code7": "Dilarang membawa ponsel ke dalam kelas",
       "code8": "Wajib mengikuti seluruh rangkaian kelas",
-      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
-      "refund2": "Dapat dialihkan ke peserta lain",
-      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
-      "refund4": "Kebijakan hari percobaan",
-      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "refund1": "Deposit bersifat non-refundable",
+      "refund2": "Deposit dapat dialihkan dalam 12 bulan (darurat)",
+      "refund3": "Saldo dapat dikembalikan 30+ hari sebelum mulai",
+      "refund4": "Tidak ada pengembalian setelah kursus dimulai",
+      "refund5": "Pengembalian penuh jika sekolah membatalkan",
       "reviewsHeading": "Apa Kata Para Siswa Kami",
       "viewAllGoogle": "Lihat semua ulasan di Google",
       "basedOnReviews": "Berdasarkan",
@@ -7402,12 +7401,12 @@
         "answer": "Terbanglah ke Bandara Internasional Trivandrum (TRV), yang berjarak hanya 45 km (sekitar 1 jam perjalanan) dari ashram Varkala Cliff kami. Atau, tiba dengan kereta api di Stasiun Kereta Api Varkala Sivagiri (VAK), hanya berjarak 3 km (10 menit). Bantuan penjemputan bandara dapat dikoordinasikan berdasarkan permintaan."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Bisakah saya membayar dengan cicilan?",
+        "answer": "Ya, Anda dapat mengamankan kursi Anda dengan deposit $250 USD. Sisa pembayaran wajib diselesaikan paling lambat 30 hari sebelum kursus dimulai."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Bagaimana kebijakan pengembalian dana dan pembatalan?",
+        "answer": "Deposit $250 USD Anda bersifat non-refundable. Jika Anda harus membatalkan karena keadaan darurat, deposit dapat dialihkan ke angkatan mendatang dalam waktu 12 bulan. Sisa biaya jatuh tempo 30 hari sebelum kursus dimulai. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa saldo yang telah Anda bayar; biaya perbankan dipotong. Jika membatalkan lebih lambat, saldo menjadi kredit untuk kursus apa pun dalam waktu 12 bulan. Tidak ada pengembalian dana setelah kursus dimulai. Jika YogaGarhi membatalkan angkatan, Anda dapat memilih pengembalian dana penuh atau beralih ke angkatan lain tanpa biaya tambahan."
       },
       {
         "question": "Kapan waktu terbaik dalam setahun untuk mengunjungi Varkala?",
@@ -7702,11 +7701,11 @@
       "code6": "Saling menghargai sesama",
       "code7": "Dilarang membawa ponsel ke dalam kelas",
       "code8": "Wajib mengikuti seluruh rangkaian kelas",
-      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
-      "refund2": "Dapat dialihkan ke peserta lain",
-      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
-      "refund4": "Kebijakan hari percobaan",
-      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "refund1": "Deposit bersifat non-refundable",
+      "refund2": "Deposit dapat dialihkan dalam 12 bulan (darurat)",
+      "refund3": "Saldo dapat dikembalikan 30+ hari sebelum mulai",
+      "refund4": "Tidak ada pengembalian setelah kursus dimulai",
+      "refund5": "Pengembalian penuh jika sekolah membatalkan",
       "reviewsHeading": "Apa Kata Para Siswa Kami",
       "viewAllGoogle": "Lihat semua ulasan di Google",
       "basedOnReviews": "Berdasarkan",
@@ -8184,12 +8183,12 @@
         "answer": "Terbanglah ke Bandara Internasional Trivandrum (TRV), yang berjarak hanya 45 km (sekitar 1 jam perjalanan) dari ashram Varkala Cliff kami. Atau, tiba dengan kereta api di Stasiun Kereta Api Varkala Sivagiri (VAK), hanya berjarak 3 km (10 menit). Bantuan penjemputan bandara dapat dikoordinasikan berdasarkan permintaan."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Bisakah saya membayar dengan cicilan?",
+        "answer": "Ya, Anda dapat mengamankan kursi Anda dengan deposit $250 USD. Sisa pembayaran wajib diselesaikan paling lambat 30 hari sebelum kursus dimulai."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Bagaimana kebijakan pengembalian dana dan pembatalan?",
+        "answer": "Deposit $250 USD Anda bersifat non-refundable. Jika Anda harus membatalkan karena keadaan darurat, deposit dapat dialihkan ke angkatan mendatang dalam waktu 12 bulan. Sisa biaya jatuh tempo 30 hari sebelum kursus dimulai. Jika Anda membatalkan 30 hari atau lebih sebelum tanggal mulai, kami mengembalikan seluruh sisa saldo yang telah Anda bayar; biaya perbankan dipotong. Jika membatalkan lebih lambat, saldo menjadi kredit untuk kursus apa pun dalam waktu 12 bulan. Tidak ada pengembalian dana setelah kursus dimulai. Jika YogaGarhi membatalkan angkatan, Anda dapat memilih pengembalian dana penuh atau beralih ke angkatan lain tanpa biaya tambahan."
       },
       {
         "question": "What is the best time of year to visit Varkala for yoga training?",
@@ -8484,11 +8483,11 @@
       "code6": "Saling menghargai sesama",
       "code7": "Dilarang membawa ponsel ke dalam kelas",
       "code8": "Wajib mengikuti seluruh rangkaian kelas",
-      "refund1": "Jadwal ulang berlaku hingga 12 bulan",
-      "refund2": "Dapat dialihkan ke peserta lain",
-      "refund3": "Pengembalian penuh bila pembatalan dari pihak kami",
-      "refund4": "Kebijakan hari percobaan",
-      "refund5": "Tidak ada pengembalian dana setelah Hari ke-1",
+      "refund1": "Deposit bersifat non-refundable",
+      "refund2": "Deposit dapat dialihkan dalam 12 bulan (darurat)",
+      "refund3": "Saldo dapat dikembalikan 30+ hari sebelum mulai",
+      "refund4": "Tidak ada pengembalian setelah kursus dimulai",
+      "refund5": "Pengembalian penuh jika sekolah membatalkan",
       "reviewsHeading": "Apa Kata Para Siswa Kami",
       "viewAllGoogle": "Lihat semua ulasan di Google",
       "basedOnReviews": "Berdasarkan",

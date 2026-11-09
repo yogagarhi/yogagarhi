@@ -1006,7 +1006,7 @@
       },
       {
         "question": "Wie lautet die Rückerstattungs- und Stornierungsrichtlinie?",
-        "answer": "Du kannst deinen Kurs innerhalb von 12 Monaten kostenfrei umbuchen oder deinen reservierten Platz an einen anderen Praktizierenden übertragen. Bei Kursabsage durch die Schule erstatten wir 100 % zurück, ergänzt durch eine Tag-1-Probepolice. Aufgrund limitierter Plätze sind Buchungen nach Beginn von Tag 1 nicht mehr erstattungsfähig."
+        "answer": "Ihre Anzahlung von 250 USD ist nicht erstattungsfähig. Wenn Sie aus einem Notfall stornieren müssen, können Sie diese innerhalb von 12 Monaten auf einen späteren Jahrgang übertragen. Der restliche Betrag ist 30 Tage vor Kursbeginn fällig. Bei einer Stornierung 30 oder mehr Tage vor Kursbeginn erstatten wir den gesamten gezahlten Restbetrag zurück; Bankgebühren werden abgezogen. Bei einer späteren Stornierung wird der Restbetrag als Guthaben für einen beliebigen Kurs innerhalb von 12 Monaten gutgeschrieben. Nach Kursbeginn gibt es keine Rückerstattungen. Falls YogaGarhi einen Jahrgang absagt, können Sie eine vollständige Rückerstattung aller Zahlungen wählen oder ohne Aufpreis in einen anderen Jahrgang wechseln."
       },
       {
         "question": "Welche Verpflegung wird während des Trainings serviert?",
@@ -1098,11 +1098,11 @@
       "code6": "Respektvoller Umgang",
       "code7": "Keine Handys im Unterricht",
       "code8": "Vollständige Teilnahme erforderlich",
-      "refund1": "Umbuchung innerhalb von 12 Monaten",
-      "refund2": "Übertragung des Platzes möglich",
-      "refund3": "Volle Rückerstattung bei Absage unsererseits",
-      "refund4": "Probetag-Regelung",
-      "refund5": "Keine Rückerstattung nach Tag 1",
+      "refund1": "Anzahlung ist nicht erstattungsfähig",
+      "refund2": "Anzahlung innerhalb von 12 Monaten übertragbar (in Notfällen)",
+      "refund3": "Restbetrag bis 30+ Tage vor Start erstattungsfähig",
+      "refund4": "Keine Rückerstattung nach Kursbeginn",
+      "refund5": "Vollständige Erstattung bei Schulabsage",
       "reviewsHeading": "Was unsere Schüler sagen",
       "viewAllGoogle": "Alle Bewertungen auf Google ansehen",
       "basedOnReviews": "Basierend auf",
@@ -1684,7 +1684,7 @@
       },
       {
         "question": "Wie lautet die Rückerstattungs- und Stornierungsrichtlinie?",
-        "answer": "Du kannst deinen Kurs innerhalb von 12 Monaten kostenfrei umbuchen oder deinen reservierten Platz an einen anderen Praktizierenden übertragen. Bei Kursabsage durch die Schule erstatten wir 100 % zurück, ergänzt durch eine Tag-1-Probepolice. Aufgrund limitierter Plätze sind Buchungen nach Beginn von Tag 1 nicht mehr erstattungsfähig."
+        "answer": "Ihre Anzahlung von 250 USD ist nicht erstattungsfähig. Wenn Sie aus einem Notfall stornieren müssen, können Sie diese innerhalb von 12 Monaten auf einen späteren Jahrgang übertragen. Der restliche Betrag ist 30 Tage vor Kursbeginn fällig. Bei einer Stornierung 30 oder mehr Tage vor Kursbeginn erstatten wir den gesamten gezahlten Restbetrag zurück; Bankgebühren werden abgezogen. Bei einer späteren Stornierung wird der Restbetrag als Guthaben für einen beliebigen Kurs innerhalb von 12 Monaten gutgeschrieben. Nach Kursbeginn gibt es keine Rückerstattungen. Falls YogaGarhi einen Jahrgang absagt, können Sie eine vollständige Rückerstattung aller Zahlungen wählen oder ohne Aufpreis in einen anderen Jahrgang wechseln."
       }
     ],
     "hero": {
@@ -1938,11 +1938,11 @@
       "code6": "Respektvoller Umgang",
       "code7": "Keine Handys im Unterricht",
       "code8": "Vollständige Teilnahme erforderlich",
-      "refund1": "Umbuchung innerhalb von 12 Monaten",
-      "refund2": "Übertragung des Platzes möglich",
-      "refund3": "Volle Rückerstattung bei Absage unsererseits",
-      "refund4": "Probetag-Regelung",
-      "refund5": "Keine Rückerstattung nach Tag 1",
+      "refund1": "Anzahlung ist nicht erstattungsfähig",
+      "refund2": "Anzahlung innerhalb von 12 Monaten übertragbar (in Notfällen)",
+      "refund3": "Restbetrag bis 30+ Tage vor Start erstattungsfähig",
+      "refund4": "Keine Rückerstattung nach Kursbeginn",
+      "refund5": "Vollständige Erstattung bei Schulabsage",
       "reviewsHeading": "Was unsere Schüler sagen",
       "viewAllGoogle": "Alle Bewertungen auf Google ansehen",
       "basedOnReviews": "Basierend auf",
@@ -2634,11 +2634,11 @@
       "code6": "Respektvoller Umgang",
       "code7": "Keine Handys im Unterricht",
       "code8": "Vollständige Teilnahme erforderlich",
-      "refund1": "Umbuchung innerhalb von 12 Monaten",
-      "refund2": "Übertragung des Platzes möglich",
-      "refund3": "Volle Rückerstattung bei Absage unsererseits",
-      "refund4": "Probetag-Regelung",
-      "refund5": "Keine Rückerstattung nach Tag 1",
+      "refund1": "Anzahlung ist nicht erstattungsfähig",
+      "refund2": "Anzahlung innerhalb von 12 Monaten übertragbar (in Notfällen)",
+      "refund3": "Restbetrag bis 30+ Tage vor Start erstattungsfähig",
+      "refund4": "Keine Rückerstattung nach Kursbeginn",
+      "refund5": "Vollständige Erstattung bei Schulabsage",
       "reviewsHeading": "Was unsere Schüler sagen",
       "viewAllGoogle": "Alle Bewertungen auf Google ansehen",
       "basedOnReviews": "Basierend auf",
@@ -3072,12 +3072,12 @@
         "answer": "You can take a 45-minute direct flight from Delhi (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Haridwar (4.5 hours). Private taxi pickups directly from Delhi Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Kann ich die Kursgebühr in Raten zahlen?",
+        "answer": "Ja, Sie können Ihren Platz mit einer Anzahlung von 250 USD reservieren. Der restliche Betrag ist mindestens 30 Tage vor Kursbeginn fällig."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Wie lautet die Rückerstattungs- und Stornierungsrichtlinie?",
+        "answer": "Ihre Anzahlung von 250 USD ist nicht erstattungsfähig. Wenn Sie aus einem Notfall stornieren müssen, können Sie diese innerhalb von 12 Monaten auf einen späteren Jahrgang übertragen. Der restliche Betrag ist 30 Tage vor Kursbeginn fällig. Bei einer Stornierung 30 oder mehr Tage vor Kursbeginn erstatten wir den gesamten gezahlten Restbetrag zurück; Bankgebühren werden abgezogen. Bei einer späteren Stornierung wird der Restbetrag als Guthaben für einen beliebigen Kurs innerhalb von 12 Monaten gutgeschrieben. Nach Kursbeginn gibt es keine Rückerstattungen. Falls YogaGarhi einen Jahrgang absagt, können Sie eine vollständige Rückerstattung aller Zahlungen wählen oder ohne Aufpreis in einen anderen Jahrgang wechseln."
       },
       {
         "question": "What is the best time of year to visit Rishikesh?",
@@ -3347,11 +3347,11 @@
       "code6": "Respektvoller Umgang",
       "code7": "Keine Handys im Unterricht",
       "code8": "Vollständige Teilnahme erforderlich",
-      "refund1": "Umbuchung innerhalb von 12 Monaten",
-      "refund2": "Übertragung des Platzes möglich",
-      "refund3": "Volle Rückerstattung bei Absage unsererseits",
-      "refund4": "Probetag-Regelung",
-      "refund5": "Keine Rückerstattung nach Tag 1",
+      "refund1": "Anzahlung ist nicht erstattungsfähig",
+      "refund2": "Anzahlung innerhalb von 12 Monaten übertragbar (in Notfällen)",
+      "refund3": "Restbetrag bis 30+ Tage vor Start erstattungsfähig",
+      "refund4": "Keine Rückerstattung nach Kursbeginn",
+      "refund5": "Vollständige Erstattung bei Schulabsage",
       "reviewsHeading": "Was unsere Schüler sagen",
       "viewAllGoogle": "Alle Bewertungen auf Google ansehen",
       "basedOnReviews": "Basierend auf",
@@ -3829,12 +3829,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Kann ich die Kursgebühr in Raten zahlen?",
+        "answer": "Ja, Sie können Ihren Platz mit einer Anzahlung von 250 USD reservieren. Der restliche Betrag ist mindestens 30 Tage vor Kursbeginn fällig."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Wie lautet die Rückerstattungs- und Stornierungsrichtlinie?",
+        "answer": "Ihre Anzahlung von 250 USD ist nicht erstattungsfähig. Wenn Sie aus einem Notfall stornieren müssen, können Sie diese innerhalb von 12 Monaten auf einen späteren Jahrgang übertragen. Der restliche Betrag ist 30 Tage vor Kursbeginn fällig. Bei einer Stornierung 30 oder mehr Tage vor Kursbeginn erstatten wir den gesamten gezahlten Restbetrag zurück; Bankgebühren werden abgezogen. Bei einer späteren Stornierung wird der Restbetrag als Guthaben für einen beliebigen Kurs innerhalb von 12 Monaten gutgeschrieben. Nach Kursbeginn gibt es keine Rückerstattungen. Falls YogaGarhi einen Jahrgang absagt, können Sie eine vollständige Rückerstattung aller Zahlungen wählen oder ohne Aufpreis in einen anderen Jahrgang wechseln."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -3853,8 +3853,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Kann ich die Kursgebühr in Raten zahlen?",
+        "answer": "Ja, Sie können Ihren Platz mit einer Anzahlung von 250 USD reservieren. Der restliche Betrag ist mindestens 30 Tage vor Kursbeginn fällig."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -4129,11 +4129,11 @@
       "code6": "Respektvoller Umgang",
       "code7": "Keine Handys im Unterricht",
       "code8": "Vollständige Teilnahme erforderlich",
-      "refund1": "Umbuchung innerhalb von 12 Monaten",
-      "refund2": "Übertragung des Platzes möglich",
-      "refund3": "Volle Rückerstattung bei Absage unsererseits",
-      "refund4": "Probetag-Regelung",
-      "refund5": "Keine Rückerstattung nach Tag 1",
+      "refund1": "Anzahlung ist nicht erstattungsfähig",
+      "refund2": "Anzahlung innerhalb von 12 Monaten übertragbar (in Notfällen)",
+      "refund3": "Restbetrag bis 30+ Tage vor Start erstattungsfähig",
+      "refund4": "Keine Rückerstattung nach Kursbeginn",
+      "refund5": "Vollständige Erstattung bei Schulabsage",
       "reviewsHeading": "Was unsere Schüler sagen",
       "viewAllGoogle": "Alle Bewertungen auf Google ansehen",
       "basedOnReviews": "Basierend auf",
@@ -4631,7 +4631,7 @@
     "heroHeading": "Für Yogalehrer-Ausbildung bewerben",
     "heroSub": "Beginnen Sie Ihre Reise zu einem authentischen, zertifizierten Yogalehrer. Wählen Sie Ihr Programm, prüfen Sie die Voraussetzungen und sichern Sie sich Ihren Platz in unseren intimen Gruppen.",
     "smallCohorts": "8–10 Teilnehmer kleine Gruppen",
-    "flexibleRescheduling": "Flexible Umbuchung",
+    "flexibleRescheduling": "Notfall-Schutz für Ihre Anzahlung",
     "rytCertification": "Yoga Alliance RYT Zertifizierung",
     "chooseHeading": "Schritt 1: Wählen Sie Ihren Kurs",
     "chooseSub": "Wählen Sie die Lehrerausbildung, die zu Ihrer aktuellen Praxis und Ihren Karrierezielen passt.",
@@ -4668,7 +4668,7 @@
     "s2Title": "Voraussetzungen & Berechtigung prüfen",
     "s2Desc": "100-Std & 200-Std stehen engagierten Anfängern und erfahrenen Praktizierenden offen. 300-Std erfordert ein zertifiziertes 200-Stunden RYT Zertifikat.",
     "s3Title": "Sichern Sie sich Ihren Platz",
-    "s3Desc": "Sichern Sie sich Ihre bevorzugten Daten und Zimmerkategorie. Geschützt durch unsere flexiblen Buchungs- und Umbuchungsrichtlinien.",
+    "s3Desc": "Sichern Sie sich Ihr Wunschdatum und Ihre Zimmerkategorie mit 250 USD Anzahlung, in Notfällen innerhalb von 12 Monaten übertragbar.",
     "s4Title": "Sofortiger Pre-YTTC Online-Zugang",
     "s4Desc": "Erhalten Sie Ihren YogaGarhi Willkommensleitfaden und sofortigen Zugang zu unseren Pre-YTTC Online-Vorbereitungsmodulen und Anatomie-Grundlagen.",
     "s5Title": "Am Campus ankommen & eintauchen",
@@ -4679,8 +4679,8 @@
     "a1": "Nein. Unser 200-Stunden-Lehrplan ist von den Grundlagen bis zu fortgeschrittenen Anwendungen strukturiert. Wir heißen Praktizierende aller Altersgruppen, Hintergründe und Flexibilitätsstufen willkommen. Was am meisten zählt, sind Hingabe, Offenheit und aufrichtige Neugier.",
     "q2": "Wie sichere ich meinen Platz und wie sind die Zahlungsbedingungen?",
     "a2": "Eine Registrierungsanzahlung sichert Ihren Platz und bestätigt Ihre Anmeldung. Vollständige Details zu Zahlungsplänen und akzeptierten Methoden erhalten Sie während des Bewerbungsprozesses.",
-    "q3": "Was passiert, wenn sich meine Reisedaten oder mein Zeitplan ändern?",
-    "a3": "Wir bieten flexible Umbuchungsoptionen für unsere kommenden Gruppen. Kontaktieren Sie unser Zulassungsteam im Voraus, wenn Sie Ihre Daten anpassen müssen.",
+    "q3": "Was passiert, wenn sich meine Reisedaten oder Pläne ändern?",
+    "a3": "Wenn Sie aus einem Notfall stornieren müssen, können Sie Ihre Anzahlung von 250 USD innerhalb von 12 Monaten auf einen späteren Jahrgang übertragen. Bitte kontaktieren Sie unser Zulassungsteam baldmöglichst, um Ihren neuen Termin abzustimmen.",
     "q4": "Was ist in meiner Anmeldung enthalten?",
     "a4": "Wohnpakete beinhalten den vollen Unterricht, das von der Yoga Alliance akkreditierte Zertifikat, das gedruckte Ausbildungshandbuch, die Unterkunft für die gesamte Kursdauer, 3 tägliche nährende Sattvic/vegetarische Mahlzeiten, Wochenendausflüge und sofortigen Zugang zum Pre-YTTC Online-Portal. Nur-Unterricht-Optionen sind ebenfalls verfügbar.",
     "q5": "Wie viele Schüler sind in jeder Gruppe?",
@@ -4809,8 +4809,8 @@
     "faqTitle": "Häufig gestellte Fragen",
     "needGuidance": "Brauchen Sie Beratung bei der Auswahl?",
     "guidanceSub": "Unser Team hilft Ihnen gerne bei Fragen zu Flügen, Visa und individuellen Terminen.",
-    "reschedulePolicyTitle": "Umbuchungs- und Stornobedingungen",
-    "reschedulePolicyText": "Flexible Umbuchung innerhalb von 12 Monaten möglich. Keine Rückerstattung nach Tag 1.",
+    "reschedulePolicyTitle": "Stornierungs- & Anzahlungsbedingungen",
+    "reschedulePolicyText": "Ihre Anzahlung von 250 USD ist nicht erstattungsfähig. Bei einer Stornierung aufgrund eines Notfalls kann Ihre Anzahlung innerhalb von 12 Monaten auf einen späteren Termin übertragen werden. Wenn Sie 30 oder mehr Tage vor dem Startdatum stornieren, erstatten wir den gesamten gezahlten Restbetrag zurück; Bankgebühren werden abgezogen. Bei einer Stornierung weniger als 30 Tage vor Beginn wird Ihr Restbetrag zu einem für 12 Monate gültigen Guthaben. Nach Beginn des Retreats erfolgen keine Rückerstattungen. Falls YogaGarhi ein Retreat absagt, erhalten Sie eine vollständige Rückerstattung aller Zahlungen oder eine kostenfreie Umbuchung.",
     "packages": {
       "bali-3-days": {
         "title": "3 TAGE & 2 NÄCHTE YOGA RETREAT IN UBUD BALI",
@@ -4884,7 +4884,7 @@
           },
           {
             "question": "Wie lautet die Umbuchungsrichtlinie?",
-            "answer": "Jeder Teilnehmer hat Anspruch auf eine kostenfreie Terminumbuchung bei vorheriger Ankündigung."
+            "answer": "Ihre Anzahlung von 250 USD ist nicht erstattungsfähig. Bei einer Stornierung aufgrund eines Notfalls kann die Anzahlung innerhalb von 12 Monaten auf einen späteren Termin übertragen werden. Der Restbetrag ist bis 30 Tage vor Beginn erstattungsfähig."
           },
           {
             "question": "Wie gelange ich vom Flughafen zum Retreat?",
@@ -5627,32 +5627,32 @@
   },
   "refundPolicy": {
     "metaTitle": "Rückerstattungs- & Stornierungsrichtlinie | YogaGarhi",
-    "metaDesc": "Transparente Rückerstattungs-, Anzahlungs- und Umbuchungsrichtlinien für Yoga-Lehrerausbildungen und Retreats in Bali und Rishikesh bei YogaGarhi.",
-    "badge": "Garantie für Sicherheit & Flexibilität",
-    "title": "Rückerstattungs- & Umbuchungsrichtlinie",
-    "intro": "Wir wissen, dass sich Lebensumstände unvorhergesehen ändern können. Bei YogaGarhi bieten wir transparente und flexible Buchungsbedingungen, die Deine Investition in Deine spirituelle Reise schützen.",
-    "highlight1Title": "100% Übertragbar",
-    "highlight1Text": "Deine Anzahlung ist innerhalb von 12 Monaten zu 100% auf jeden zukünftigen Ausbildungsjahrgang oder Standort (Bali / Rishikesh) übertragbar.",
-    "highlight2Title": "12 Monate Gültigkeit",
-    "highlight2Text": "Musst Du Deinen Termin verschieben? Du hast ab Deinem ursprünglichen Datum ein ganzes Jahr Zeit, um an Deiner Ausbildung oder Deinem Retreat teilzunehmen.",
-    "highlight3Title": "Medizinische Notfälle",
-    "highlight3Text": "Bei nachgewiesenen unvorhergesehenen gesundheitlichen oder reisebezogenen Notfällen bieten wir eine prioritäre Umbuchung ohne jegliche Gebühren an.",
-    "section1Title": "1. Buchungsanzahlung & Platzreservierung",
-    "section1Text": "Um Deinen Ausbildungs- und Unterbringungsplatz in Deinem gewählten Kurs oder Retreat verbindlich zu sichern, ist bei der Anmeldung eine Anzahlung von $250 USD (oder der entsprechende Gegenwert) erforderlich. Dies ermöglicht unserem Ashram, Dein Zimmer zu reservieren, Unterrichtsmaterialien vorzubereiten und persönliche Mentoren zuzuweisen.",
-    "section2Title": "2. Terminumbuchung & Datumsänderungen",
-    "section2Text": "Falls Du an Deinem geplanten Starttermin verhindert bist, kannst Du innerhalb von 12 Monaten gebührenfrei auf einen späteren Jahrgang umbuchen, sofern Du unser Zulassungsbüro mindestens 15 Tage vor Kursbeginn informierst.",
-    "section3Title": "3. Restzahlungsbedingungen",
-    "section3Text": "Der verbleibende Restbetrag der Kursgebühr ist bei Ankunft im Ashram am Orientierungstag fällig (oder vorab per Banküberweisung / Kreditkarten-Link). Sobald ein Kurs begonnen hat und der Schüler eingecheckt hat, sind Studiengebühren und Unterkunftskosten nicht erstattungsfähig, da Ressourcen und Zimmerkontingente verbindlich gebunden sind.",
+    "metaDesc": "Offizielle Richtlinie von YogaGarhi zu Rückerstattungen, Anzahlungen und Stornierungen für Yogalehrer-Ausbildungen und Retreats in Bali, Rishikesh und Varkala.",
+    "badge": "Offizielle Buchungsbedingungen",
+    "title": "Rückerstattungs- & Stornierungsrichtlinie",
+    "intro": "Wir möchten, dass Sie bei Ihrer Buchung ein sicheres Gefühl haben. Hier finden Sie unsere offizielle Richtlinie zu Anzahlungen, Restzahlungen und Kursstornierungen.",
+    "highlight1Title": "Anzahlung Übertragen",
+    "highlight1Text": "Wenn Sie aus einem Notfall stornieren müssen, können Sie Ihre Anzahlung innerhalb von 12 Monaten auf einen späteren Jahrgang übertragen.",
+    "highlight2Title": "Rückerstattung des Restbetrags (30 Tage)",
+    "highlight2Text": "Bei einer Stornierung 30 oder mehr Tage vor Kursbeginn erhalten Sie Ihren Restbetrag vollständig zurück; Bankgebühren werden abgezogen.",
+    "highlight3Title": "Gutschrift bei Später Stornierung",
+    "highlight3Text": "Bei einer Stornierung weniger als 30 Tage vor Kursbeginn wird der Restbetrag zu 100 % als Guthaben für 12 Monate gutgeschrieben.",
+    "section1Title": "1. Buchungsanzahlung",
+    "section1Text": "Um Ihren Platz und Ihr Zimmer verbindlich zu reservieren, bitten wir nach Genehmigung Ihrer Anmeldung um eine Anzahlung von 250 USD. Diese Anzahlung ist nicht erstattungsfähig. Wir nutzen sie unmittelbar zur Reservierung Ihres Zimmers sowie zur Planung von Mahlzeiten und Personal für Ihren Ausbildungsjahrgang.",
+    "section2Title": "2. Übertragung der Anzahlung (Innerhalb von 12 Monaten)",
+    "section2Text": "Lebensumstände können sich unvorhergesehen ändern. Falls Sie Ihre Teilnahme aufgrund eines Flugproblems, eines medizinischen Notfalls oder einer anderen unvorhersehbaren Notlage absagen müssen, können Sie Ihre Anzahlung auf einen späteren Jahrgang übertragen. Das neue Startdatum muss innerhalb von 12 Monaten nach Ihrem ursprünglichen Beginn liegen.",
+    "section3Title": "3. Restzahlung & Stornierungsbedingungen",
     "section4Title": "6. Fragen & Beratung zur Zulassung",
-    "section4Text": "Bei Fragen zur Terminverschiebung oder zu individuellen Zahlungsplänen ist unser Zulassungsteam täglich per E-Mail unter {email} oder per WhatsApp unter {phone} erreichbar.",
+    "section4Text": "Bei allen Fragen zu Ihrer Buchung oder Stornierung steht Ihnen unser Zulassungsteam täglich per E-Mail unter {email} oder per WhatsApp unter {phone} zur Verfügung.",
     "contactBtn": "Zulassungsbüro Kontaktieren",
-    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
-    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid. The $250 deposit is non-refundable, and any bank fees are deducted.",
-    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
-    "sectionAfterStartTitle": "4. After the Course Begins",
-    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
-    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
-    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
+    "section3Intro": "Der restliche Betrag Ihrer Kursgebühr ist mindestens 30 Tage vor Beginn Ihrer Ausbildung fällig.",
+    "section3Bullet1": "Bei Stornierung 30 oder mehr Tage vor dem Startdatum: Wir erstatten den gesamten gezahlten Restbetrag zurück. Die Anzahlung von 250 USD ist nicht erstattungsfähig, und etwaige Bankgebühren werden abgezogen.",
+    "section3Bullet2": "Bei Stornierung weniger als 30 Tage vor dem Startdatum: Der Restbetrag wird nicht ausgezahlt. Stattdessen sichern wir 100 % der Summe als Guthaben, das Sie innerhalb von 12 Monaten für einen beliebigen Kurs einlösen können.",
+    "sectionAfterStartTitle": "4. Nach Beginn des Kurses",
+    "sectionAfterStartText": "Sobald der Kurs begonnen hat, können wir bei vorzeitigem Abbruch, freiwilligem Ausstieg oder versäumten Unterrichtsstunden aufgrund von Krankheit oder persönlichen Gründen keine Erstattungen oder Gutschriften mehr gewähren.",
+    "sectionSchoolCancelTitle": "5. Wenn YogaGarhi einen Jahrgang absagt",
+    "sectionSchoolCancelText": "Sollten wir jemals einen Jahrgang absagen müssen, haben Sie die Wahl zwischen einer vollständigen Erstattung aller gezahlten Beträge oder dem gebührenfreien Wechsel in einen anderen Jahrgang.",
+    "highlightsSr": "Wichtige Punkte der Richtlinie"
   },
   "course300Rishikesh": {
     "metaTitle": "300-Stunden-Yoga-Lehrerausbildung in Rishikesh | RYT 500 Indien",
@@ -5900,12 +5900,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Kann ich die Kursgebühr in Raten zahlen?",
+        "answer": "Ja, Sie können Ihren Platz mit einer Anzahlung von 250 USD reservieren. Der restliche Betrag ist mindestens 30 Tage vor Kursbeginn fällig."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Wie lautet die Rückerstattungs- und Stornierungsrichtlinie?",
+        "answer": "Ihre Anzahlung von 250 USD ist nicht erstattungsfähig. Wenn Sie aus einem Notfall stornieren müssen, können Sie diese innerhalb von 12 Monaten auf einen späteren Jahrgang übertragen. Der restliche Betrag ist 30 Tage vor Kursbeginn fällig. Bei einer Stornierung 30 oder mehr Tage vor Kursbeginn erstatten wir den gesamten gezahlten Restbetrag zurück; Bankgebühren werden abgezogen. Bei einer späteren Stornierung wird der Restbetrag als Guthaben für einen beliebigen Kurs innerhalb von 12 Monaten gutgeschrieben. Nach Kursbeginn gibt es keine Rückerstattungen. Falls YogaGarhi einen Jahrgang absagt, können Sie eine vollständige Rückerstattung aller Zahlungen wählen oder ohne Aufpreis in einen anderen Jahrgang wechseln."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -5924,8 +5924,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Kann ich die Kursgebühr in Raten zahlen?",
+        "answer": "Ja, Sie können Ihren Platz mit einer Anzahlung von 250 USD reservieren. Der restliche Betrag ist mindestens 30 Tage vor Kursbeginn fällig."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -6200,11 +6200,11 @@
       "code6": "Respektvoller Umgang",
       "code7": "Keine Handys im Unterricht",
       "code8": "Vollständige Teilnahme erforderlich",
-      "refund1": "Umbuchung innerhalb von 12 Monaten",
-      "refund2": "Übertragung des Platzes möglich",
-      "refund3": "Volle Rückerstattung bei Absage unsererseits",
-      "refund4": "Probetag-Regelung",
-      "refund5": "Keine Rückerstattung nach Tag 1",
+      "refund1": "Anzahlung ist nicht erstattungsfähig",
+      "refund2": "Anzahlung innerhalb von 12 Monaten übertragbar (in Notfällen)",
+      "refund3": "Restbetrag bis 30+ Tage vor Start erstattungsfähig",
+      "refund4": "Keine Rückerstattung nach Kursbeginn",
+      "refund5": "Vollständige Erstattung bei Schulabsage",
       "reviewsHeading": "Was unsere Schüler sagen",
       "viewAllGoogle": "Alle Bewertungen auf Google ansehen",
       "basedOnReviews": "Basierend auf",
@@ -6644,12 +6644,12 @@
         "answer": "Fliegen Sie zum internationalen Flughafen Trivandrum (TRV), der nur 45 km (ca. 1 Stunde Fahrt) von unserem Varkala Cliff Ashram entfernt liegt. Alternativ reisen Sie mit der Bahn zum Bahnhof Varkala Sivagiri (VAK), der nur 3 km (10 Minuten) entfernt ist. Ein bequemer Flughafen-Transfer kann auf Anfrage koordiniert werden."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Kann ich die Kursgebühr in Raten zahlen?",
+        "answer": "Ja, Sie können Ihren Platz mit einer Anzahlung von 250 USD reservieren. Der restliche Betrag ist mindestens 30 Tage vor Kursbeginn fällig."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Wie lautet die Rückerstattungs- und Stornierungsrichtlinie?",
+        "answer": "Ihre Anzahlung von 250 USD ist nicht erstattungsfähig. Wenn Sie aus einem Notfall stornieren müssen, können Sie diese innerhalb von 12 Monaten auf einen späteren Jahrgang übertragen. Der restliche Betrag ist 30 Tage vor Kursbeginn fällig. Bei einer Stornierung 30 oder mehr Tage vor Kursbeginn erstatten wir den gesamten gezahlten Restbetrag zurück; Bankgebühren werden abgezogen. Bei einer späteren Stornierung wird der Restbetrag als Guthaben für einen beliebigen Kurs innerhalb von 12 Monaten gutgeschrieben. Nach Kursbeginn gibt es keine Rückerstattungen. Falls YogaGarhi einen Jahrgang absagt, können Sie eine vollständige Rückerstattung aller Zahlungen wählen oder ohne Aufpreis in einen anderen Jahrgang wechseln."
       },
       {
         "question": "What is the best time of year to visit Varkala?",
@@ -6919,11 +6919,11 @@
       "code6": "Respektvoller Umgang",
       "code7": "Keine Handys im Unterricht",
       "code8": "Vollständige Teilnahme erforderlich",
-      "refund1": "Umbuchung innerhalb von 12 Monaten",
-      "refund2": "Übertragung des Platzes möglich",
-      "refund3": "Volle Rückerstattung bei Absage unsererseits",
-      "refund4": "Probetag-Regelung",
-      "refund5": "Keine Rückerstattung nach Tag 1",
+      "refund1": "Anzahlung ist nicht erstattungsfähig",
+      "refund2": "Anzahlung innerhalb von 12 Monaten übertragbar (in Notfällen)",
+      "refund3": "Restbetrag bis 30+ Tage vor Start erstattungsfähig",
+      "refund4": "Keine Rückerstattung nach Kursbeginn",
+      "refund5": "Vollständige Erstattung bei Schulabsage",
       "reviewsHeading": "Was unsere Schüler sagen",
       "viewAllGoogle": "Alle Bewertungen auf Google ansehen",
       "basedOnReviews": "Basierend auf",
@@ -7401,12 +7401,12 @@
         "answer": "Fliegen Sie zum internationalen Flughafen Trivandrum (TRV), der nur 45 km (ca. 1 Stunde Fahrt) von unserem Varkala Cliff Ashram entfernt liegt. Alternativ reisen Sie mit der Bahn zum Bahnhof Varkala Sivagiri (VAK), der nur 3 km (10 Minuten) entfernt ist. Ein bequemer Flughafen-Transfer kann auf Anfrage koordiniert werden."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Kann ich die Kursgebühr in Raten zahlen?",
+        "answer": "Ja, Sie können Ihren Platz mit einer Anzahlung von 250 USD reservieren. Der restliche Betrag ist mindestens 30 Tage vor Kursbeginn fällig."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Wie lautet die Rückerstattungs- und Stornierungsrichtlinie?",
+        "answer": "Ihre Anzahlung von 250 USD ist nicht erstattungsfähig. Wenn Sie aus einem Notfall stornieren müssen, können Sie diese innerhalb von 12 Monaten auf einen späteren Jahrgang übertragen. Der restliche Betrag ist 30 Tage vor Kursbeginn fällig. Bei einer Stornierung 30 oder mehr Tage vor Kursbeginn erstatten wir den gesamten gezahlten Restbetrag zurück; Bankgebühren werden abgezogen. Bei einer späteren Stornierung wird der Restbetrag als Guthaben für einen beliebigen Kurs innerhalb von 12 Monaten gutgeschrieben. Nach Kursbeginn gibt es keine Rückerstattungen. Falls YogaGarhi einen Jahrgang absagt, können Sie eine vollständige Rückerstattung aller Zahlungen wählen oder ohne Aufpreis in einen anderen Jahrgang wechseln."
       },
       {
         "question": "Wann ist die beste Reisezeit für eine Yoga-Ausbildung in Varkala?",
@@ -7425,8 +7425,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Kann ich die Kursgebühr in Raten zahlen?",
+        "answer": "Ja, Sie können Ihren Platz mit einer Anzahlung von 250 USD reservieren. Der restliche Betrag ist mindestens 30 Tage vor Kursbeginn fällig."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -7701,11 +7701,11 @@
       "code6": "Respektvoller Umgang",
       "code7": "Keine Handys im Unterricht",
       "code8": "Vollständige Teilnahme erforderlich",
-      "refund1": "Umbuchung innerhalb von 12 Monaten",
-      "refund2": "Übertragung des Platzes möglich",
-      "refund3": "Volle Rückerstattung bei Absage unsererseits",
-      "refund4": "Probetag-Regelung",
-      "refund5": "Keine Rückerstattung nach Tag 1",
+      "refund1": "Anzahlung ist nicht erstattungsfähig",
+      "refund2": "Anzahlung innerhalb von 12 Monaten übertragbar (in Notfällen)",
+      "refund3": "Restbetrag bis 30+ Tage vor Start erstattungsfähig",
+      "refund4": "Keine Rückerstattung nach Kursbeginn",
+      "refund5": "Vollständige Erstattung bei Schulabsage",
       "reviewsHeading": "Was unsere Schüler sagen",
       "viewAllGoogle": "Alle Bewertungen auf Google ansehen",
       "basedOnReviews": "Basierend auf",
@@ -8183,12 +8183,12 @@
         "answer": "Fliegen Sie zum internationalen Flughafen Trivandrum (TRV), der nur 45 km (ca. 1 Stunde Fahrt) von unserem Varkala Cliff Ashram entfernt liegt. Alternativ reisen Sie mit der Bahn zum Bahnhof Varkala Sivagiri (VAK), der nur 3 km (10 Minuten) entfernt ist. Ein bequemer Flughafen-Transfer kann auf Anfrage koordiniert werden."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Kann ich die Kursgebühr in Raten zahlen?",
+        "answer": "Ja, Sie können Ihren Platz mit einer Anzahlung von 250 USD reservieren. Der restliche Betrag ist mindestens 30 Tage vor Kursbeginn fällig."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Wie lautet die Rückerstattungs- und Stornierungsrichtlinie?",
+        "answer": "Ihre Anzahlung von 250 USD ist nicht erstattungsfähig. Wenn Sie aus einem Notfall stornieren müssen, können Sie diese innerhalb von 12 Monaten auf einen späteren Jahrgang übertragen. Der restliche Betrag ist 30 Tage vor Kursbeginn fällig. Bei einer Stornierung 30 oder mehr Tage vor Kursbeginn erstatten wir den gesamten gezahlten Restbetrag zurück; Bankgebühren werden abgezogen. Bei einer späteren Stornierung wird der Restbetrag als Guthaben für einen beliebigen Kurs innerhalb von 12 Monaten gutgeschrieben. Nach Kursbeginn gibt es keine Rückerstattungen. Falls YogaGarhi einen Jahrgang absagt, können Sie eine vollständige Rückerstattung aller Zahlungen wählen oder ohne Aufpreis in einen anderen Jahrgang wechseln."
       },
       {
         "question": "What is the best time of year to visit Varkala for yoga training?",
@@ -8207,8 +8207,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Kann ich die Kursgebühr in Raten zahlen?",
+        "answer": "Ja, Sie können Ihren Platz mit einer Anzahlung von 250 USD reservieren. Der restliche Betrag ist mindestens 30 Tage vor Kursbeginn fällig."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -8483,11 +8483,11 @@
       "code6": "Respektvoller Umgang",
       "code7": "Keine Handys im Unterricht",
       "code8": "Vollständige Teilnahme erforderlich",
-      "refund1": "Umbuchung innerhalb von 12 Monaten",
-      "refund2": "Übertragung des Platzes möglich",
-      "refund3": "Volle Rückerstattung bei Absage unsererseits",
-      "refund4": "Probetag-Regelung",
-      "refund5": "Keine Rückerstattung nach Tag 1",
+      "refund1": "Anzahlung ist nicht erstattungsfähig",
+      "refund2": "Anzahlung innerhalb von 12 Monaten übertragbar (in Notfällen)",
+      "refund3": "Restbetrag bis 30+ Tage vor Start erstattungsfähig",
+      "refund4": "Keine Rückerstattung nach Kursbeginn",
+      "refund5": "Vollständige Erstattung bei Schulabsage",
       "reviewsHeading": "Was unsere Schüler sagen",
       "viewAllGoogle": "Alle Bewertungen auf Google ansehen",
       "basedOnReviews": "Basierend auf",

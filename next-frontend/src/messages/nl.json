@@ -1005,8 +1005,8 @@
         "answer": "Bij de pakketten met verblijf is inbegrepen: 23 nachten accommodatie (eigen badkamer, warm water, airco/ventilator, wifi), dagelijks 3 gezonde maaltijden, kruidenthee en drinkwater, officiële lesboeken, yogamatten en props, luchthaventransfer vanaf DPS, Balinese massage, culturele uitstapjes, online voorbereidingscursus, boek met lessenseries, Yoga Alliance certificaat en levenslang gratis herhalen. Bij het pakket 'Alleen lesgeld' ($999 USD) zijn verblijf en maaltijden niet inbegrepen."
       },
       {
-        "question": "Wat is het annulerings- en restitutiebeleid?",
-        "answer": "Je kunt je startdatum binnen 12 maanden kosteloos verplaatsen of overdragen aan een andere beoefenaar. Mocht de school een groep annuleren, dan restitueren we 100% van het bedrag, aangevuld met een Dag 1 proefgarantie. Vanwege de beperkte capaciteit zijn boekingen niet meer restitueerbaar zodra Dag 1 is gestart."
+        "question": "Wat is het restitutie- en annuleringsbeleid?",
+        "answer": "Uw aanbetaling van $250 USD kan niet worden gerestitueerd. Mocht u door een noodgeval moeten annuleren, dan kunt u deze binnen 12 maanden overzetten naar een toekomstige groep. Het restant van de cursusprijs is 30 dagen voor de startdatum verschuldigd. Bij annulering 30 of meer dagen voor aanvang storten wij het volledige voldane restbedrag terug; eventuele bankkosten worden ingehouden. Bij een latere annulering wordt het restbedrag omgezet in een tegoed voor een willekeurige cursus binnen 12 maanden. Na aanvang van de cursus vindt geen restitutie plaats. Indien YogaGarhi een groep annuleert, heeft u recht op volledige terugbetaling of kosteloze deelname aan een andere groep."
       },
       {
         "question": "Wat voor maaltijden worden er geserveerd?",
@@ -1098,11 +1098,11 @@
       "code6": "Wederzijds respect voor iedereen",
       "code7": "Geen telefoons in de lesruimte",
       "code8": "Volledige aanwezigheid verplicht",
-      "refund1": "Omboeken mogelijk binnen 12 maanden",
-      "refund2": "Plek overdragen toegestaan",
-      "refund3": "Volledige terugbetaling bij annulering door ons",
-      "refund4": "Proefdag-voorwaarde van toepassing",
-      "refund5": "Geen restitutie na Dag 1",
+      "refund1": "Aanbetaling kan niet worden gerestitueerd",
+      "refund2": "Aanbetaling binnen 12 maanden overdraagbaar (noodgevallen)",
+      "refund3": "Restbedrag tot 30+ dagen voor aanvang restitueerbaar",
+      "refund4": "Geen restitutie na aanvang van de cursus",
+      "refund5": "Volledige restitutie bij annulering door school",
       "reviewsHeading": "Ervaringen van onze studenten",
       "viewAllGoogle": "Bekijk alle recensies op Google",
       "basedOnReviews": "Gebaseerd op",
@@ -1683,8 +1683,8 @@
         "answer": "Bij de pakketten met verblijf is inbegrepen: 23 nachten accommodatie (eigen badkamer, warm water, airco/ventilator, wifi), dagelijks 3 gezonde maaltijden, kruidenthee en drinkwater, officiële lesboeken, yogamatten en props, luchthaventransfer vanaf DPS, Balinese massage, culturele uitstapjes, online voorbereidingscursus, boek met lessenseries, Yoga Alliance certificaat en levenslang gratis herhalen. Bij het pakket 'Alleen lesgeld' ($999 USD) zijn verblijf en maaltijden niet inbegrepen."
       },
       {
-        "question": "Wat is het annulerings- en restitutiebeleid?",
-        "answer": "Je kunt je startdatum binnen 12 maanden kosteloos verplaatsen of overdragen aan een andere beoefenaar. Mocht de school een groep annuleren, dan restitueren we 100% van het bedrag, aangevuld met een Dag 1 proefgarantie. Vanwege de beperkte capaciteit zijn boekingen niet meer restitueerbaar zodra Dag 1 is gestart."
+        "question": "Wat is het restitutie- en annuleringsbeleid?",
+        "answer": "Uw aanbetaling van $250 USD kan niet worden gerestitueerd. Mocht u door een noodgeval moeten annuleren, dan kunt u deze binnen 12 maanden overzetten naar een toekomstige groep. Het restant van de cursusprijs is 30 dagen voor de startdatum verschuldigd. Bij annulering 30 of meer dagen voor aanvang storten wij het volledige voldane restbedrag terug; eventuele bankkosten worden ingehouden. Bij een latere annulering wordt het restbedrag omgezet in een tegoed voor een willekeurige cursus binnen 12 maanden. Na aanvang van de cursus vindt geen restitutie plaats. Indien YogaGarhi een groep annuleert, heeft u recht op volledige terugbetaling of kosteloze deelname aan een andere groep."
       }
     ],
     "hero": {
@@ -1938,11 +1938,11 @@
       "code6": "Wederzijds respect voor iedereen",
       "code7": "Geen telefoons in de lesruimte",
       "code8": "Volledige aanwezigheid verplicht",
-      "refund1": "Omboeken mogelijk binnen 12 maanden",
-      "refund2": "Plek overdragen toegestaan",
-      "refund3": "Volledige terugbetaling bij annulering door ons",
-      "refund4": "Proefdag-voorwaarde van toepassing",
-      "refund5": "Geen restitutie na Dag 1",
+      "refund1": "Aanbetaling kan niet worden gerestitueerd",
+      "refund2": "Aanbetaling binnen 12 maanden overdraagbaar (noodgevallen)",
+      "refund3": "Restbedrag tot 30+ dagen voor aanvang restitueerbaar",
+      "refund4": "Geen restitutie na aanvang van de cursus",
+      "refund5": "Volledige restitutie bij annulering door school",
       "reviewsHeading": "Ervaringen van onze studenten",
       "viewAllGoogle": "Bekijk alle recensies op Google",
       "basedOnReviews": "Gebaseerd op",
@@ -2634,11 +2634,11 @@
       "code6": "Wederzijds respect voor iedereen",
       "code7": "Geen telefoons in de lesruimte",
       "code8": "Volledige aanwezigheid verplicht",
-      "refund1": "Omboeken mogelijk binnen 12 maanden",
-      "refund2": "Plek overdragen toegestaan",
-      "refund3": "Volledige terugbetaling bij annulering door ons",
-      "refund4": "Proefdag-voorwaarde van toepassing",
-      "refund5": "Geen restitutie na Dag 1",
+      "refund1": "Aanbetaling kan niet worden gerestitueerd",
+      "refund2": "Aanbetaling binnen 12 maanden overdraagbaar (noodgevallen)",
+      "refund3": "Restbedrag tot 30+ dagen voor aanvang restitueerbaar",
+      "refund4": "Geen restitutie na aanvang van de cursus",
+      "refund5": "Volledige restitutie bij annulering door school",
       "reviewsHeading": "Ervaringen van onze studenten",
       "viewAllGoogle": "Bekijk alle recensies op Google",
       "basedOnReviews": "Gebaseerd op",
@@ -3072,12 +3072,12 @@
         "answer": "You can take a 45-minute direct flight from Delhi (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Haridwar (4.5 hours). Private taxi pickups directly from Delhi Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Kan ik in termijnen betalen?",
+        "answer": "Ja, u kunt uw opleidingsplaats reserveren met een aanbetaling van $250 USD. Het resterende saldo dient uiterlijk 30 dagen voor aanvang van uw cursus te worden voldaan."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Wat is het restitutie- en annuleringsbeleid?",
+        "answer": "Uw aanbetaling van $250 USD kan niet worden gerestitueerd. Mocht u door een noodgeval moeten annuleren, dan kunt u deze binnen 12 maanden overzetten naar een toekomstige groep. Het restant van de cursusprijs is 30 dagen voor de startdatum verschuldigd. Bij annulering 30 of meer dagen voor aanvang storten wij het volledige voldane restbedrag terug; eventuele bankkosten worden ingehouden. Bij een latere annulering wordt het restbedrag omgezet in een tegoed voor een willekeurige cursus binnen 12 maanden. Na aanvang van de cursus vindt geen restitutie plaats. Indien YogaGarhi een groep annuleert, heeft u recht op volledige terugbetaling of kosteloze deelname aan een andere groep."
       },
       {
         "question": "What is the best time of year to visit Rishikesh?",
@@ -3347,11 +3347,11 @@
       "code6": "Wederzijds respect voor iedereen",
       "code7": "Geen telefoons in de lesruimte",
       "code8": "Volledige aanwezigheid verplicht",
-      "refund1": "Omboeken mogelijk binnen 12 maanden",
-      "refund2": "Plek overdragen toegestaan",
-      "refund3": "Volledige terugbetaling bij annulering door ons",
-      "refund4": "Proefdag-voorwaarde van toepassing",
-      "refund5": "Geen restitutie na Dag 1",
+      "refund1": "Aanbetaling kan niet worden gerestitueerd",
+      "refund2": "Aanbetaling binnen 12 maanden overdraagbaar (noodgevallen)",
+      "refund3": "Restbedrag tot 30+ dagen voor aanvang restitueerbaar",
+      "refund4": "Geen restitutie na aanvang van de cursus",
+      "refund5": "Volledige restitutie bij annulering door school",
       "reviewsHeading": "Ervaringen van onze studenten",
       "viewAllGoogle": "Bekijk alle recensies op Google",
       "basedOnReviews": "Gebaseerd op",
@@ -3829,12 +3829,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Kan ik in termijnen betalen?",
+        "answer": "Ja, u kunt uw opleidingsplaats reserveren met een aanbetaling van $250 USD. Het resterende saldo dient uiterlijk 30 dagen voor aanvang van uw cursus te worden voldaan."
       },
       {
         "question": "Wat is het restitutie- en annuleringsbeleid?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "answer": "Uw aanbetaling van $250 USD kan niet worden gerestitueerd. Mocht u door een noodgeval moeten annuleren, dan kunt u deze binnen 12 maanden overzetten naar een toekomstige groep. Het restant van de cursusprijs is 30 dagen voor de startdatum verschuldigd. Bij annulering 30 of meer dagen voor aanvang storten wij het volledige voldane restbedrag terug; eventuele bankkosten worden ingehouden. Bij een latere annulering wordt het restbedrag omgezet in een tegoed voor een willekeurige cursus binnen 12 maanden. Na aanvang van de cursus vindt geen restitutie plaats. Indien YogaGarhi een groep annuleert, heeft u recht op volledige terugbetaling of kosteloze deelname aan een andere groep."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -3853,8 +3853,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Kan ik in termijnen betalen?",
+        "answer": "Ja, u kunt uw opleidingsplaats reserveren met een aanbetaling van $250 USD. Het resterende saldo dient uiterlijk 30 dagen voor aanvang van uw cursus te worden voldaan."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -4129,11 +4129,11 @@
       "code6": "Wederzijds respect voor iedereen",
       "code7": "Geen telefoons in de lesruimte",
       "code8": "Volledige aanwezigheid verplicht",
-      "refund1": "Omboeken mogelijk binnen 12 maanden",
-      "refund2": "Plek overdragen toegestaan",
-      "refund3": "Volledige terugbetaling bij annulering door ons",
-      "refund4": "Proefdag-voorwaarde van toepassing",
-      "refund5": "Geen restitutie na Dag 1",
+      "refund1": "Aanbetaling kan niet worden gerestitueerd",
+      "refund2": "Aanbetaling binnen 12 maanden overdraagbaar (noodgevallen)",
+      "refund3": "Restbedrag tot 30+ dagen voor aanvang restitueerbaar",
+      "refund4": "Geen restitutie na aanvang van de cursus",
+      "refund5": "Volledige restitutie bij annulering door school",
       "reviewsHeading": "Ervaringen van onze studenten",
       "viewAllGoogle": "Bekijk alle recensies op Google",
       "basedOnReviews": "Gebaseerd op",
@@ -4631,7 +4631,7 @@
     "heroHeading": "Aanmelden voor Yogadocent Opleiding",
     "heroSub": "Begin je reis naar een authentieke, gecertificeerde yogadocent. Kies je programma, ontdek de toelatingseisen en reserveer je plek in onze kleinschalige groepen.",
     "smallCohorts": "Kleine groepen van 8–10 studenten",
-    "flexibleRescheduling": "Flexibel omboeken",
+    "flexibleRescheduling": "Noodgeval-Aanbetalingsgarantie",
     "rytCertification": "Yoga Alliance RYT Certificering",
     "chooseHeading": "Stap 1: Kies je opleiding",
     "chooseSub": "Selecteer de docentenopleiding die aansluit bij jouw huidige beoefening en ambities.",
@@ -4668,7 +4668,7 @@
     "s2Title": "Controleer toelatingseisen",
     "s2Desc": "100 uur & 200 uur staan open voor zowel gemotiveerde beginners als ervaren yogi's. 300 uur vereist een 200-uurs RYT certificaat.",
     "s3Title": "Reserveer je plek",
-    "s3Desc": "Leg je gewenste data en kamertype vast. Beschermd door ons flexibele boekings- en omboekingsbeleid.",
+    "s3Desc": "Leg uw gewenste data en kamertype vast met een aanbetaling van $250 USD, in noodsituaties binnen 12 maanden overdraagbaar.",
     "s4Title": "Directe Pre-YTTC online toegang",
     "s4Desc": "Ontvang je YogaGarhi Welkomstgids en directe toegang tot onze online voorbereidingsmodules en anatomie-fundamenten.",
     "s5Title": "Aankomst op de campus & onderdompeling",
@@ -4680,7 +4680,7 @@
     "q2": "Hoe reserveer ik mijn plek en wat zijn de betalingsvoorwaarden?",
     "a2": "Een aanbetaling reserveert je plek en bevestigt je inschrijving. Volledige details over betalingsschema's worden tijdens het aanmeldproces verstrekt.",
     "q3": "Wat als mijn reisdata of plannen veranderen?",
-    "a3": "We bieden flexibele omboekingsopties voor komende groepen. Neem vooraf contact op met ons toelatingsteam als je data moet aanpassen.",
+    "a3": "Als u moet annuleren wegens een noodgeval, kunt u uw aanbetaling van $250 USD binnen 12 maanden meenemen naar een toekomstige groep. Neem zo snel mogelijk contact op met onze toelatingsafdeling om uw nieuwe data vast te leggen.",
     "q4": "Wat is inbegrepen bij mijn inschrijving?",
     "a4": "Residentiële pakketten omvatten het volledige lesprogramma, Yoga Alliance certificaat, gedrukt lesboek, verblijf voor de volledige duur, 3 dagelijkse voedzame Sattvic maaltijden, weekendexcursies en directe toegang tot het Pre-YTTC portaal.",
     "q5": "Hoeveel studenten zitten er in elke groep?",
@@ -4809,8 +4809,8 @@
     "faqTitle": "Veelgestelde Vragen",
     "needGuidance": "Hulp nodig bij het kiezen van je retreat?",
     "guidanceSub": "Ons team helpt je graag met vluchten, visa en ideale reisdata.",
-    "reschedulePolicyTitle": "Voorwaarden voor omboeken",
-    "reschedulePolicyText": "Flexibele omboeking binnen 12 maanden mogelijk. Geen restitutie na Dag 1.",
+    "reschedulePolicyTitle": "Annulerings- & Aanbetalingsvoorwaarden",
+    "reschedulePolicyText": "Uw aanbetaling van $250 USD kan niet worden gerestitueerd. Indien u annuleert wegens een noodgeval, kan uw aanbetaling worden verplaatst naar een toekomstige datum binnen 12 maanden. Bij annulering 30 of meer dagen voor aanvang storten wij het volledige betaalde restbedrag terug; eventuele bankkosten worden ingehouden. Bij annulering minder dan 30 dagen voor de startdatum wordt uw saldo omgezet in een cursustegoed dat 12 maanden geldig is. Er worden geen restituties verleend nadat de retraite is begonnen. Indien YogaGarhi een retraite annuleert, ontvangt u een volledige terugbetaling van alle betalingen of een kosteloze omboeking.",
     "packages": {
       "bali-3-days": {
         "title": "3 DAGEN & 2 NACHTEN YOGA RETRAITE IN UBUD BALI",
@@ -5627,32 +5627,32 @@
   },
   "refundPolicy": {
     "metaTitle": "Restitutie- & Annuleringsbeleid | YogaGarhi",
-    "metaDesc": "Transparant restitutie-, aanbetalings- en omboekingsbeleid van YogaGarhi voor yogadocentenopleidingen en retraites in Bali en Rishikesh.",
-    "badge": "Zekerheids- & Flexibiliteitsgarantie",
-    "title": "Restitutie- & Omboekingsbeleid",
-    "intro": "Wij begrijpen dat levensomstandigheden onverwacht kunnen wijzigen. Bij YogaGarhi hanteren we heldere, flexibele voorwaarden om jouw investering in je spirituele reis te waarborgen.",
-    "highlight1Title": "100% Overdraagbaar",
-    "highlight1Text": "Jouw aanbetaling is binnen 12 maanden 100% overdraagbaar naar een toekomstige groep of andere locatie (Bali / Rishikesh).",
-    "highlight2Title": "12 Maanden Geldigheid",
-    "highlight2Text": "Moet je jouw data verzetten? Je hebt vanaf de oorspronkelijke datum 1 vol jaar om deel te nemen aan jouw opleiding of retraite.",
-    "highlight3Title": "Medische Noodgevallen",
-    "highlight3Text": "Bij aantoonbare medische of reisnoodsituaties wordt voorrang gegeven aan kosteloze omboeking.",
-    "section1Title": "1. Aanbetaling & Plaatsreservering",
-    "section1Text": "Om jouw opleidingsplek en accommodatie te garanderen, is bij aanmelding een aanbetaling van $250 USD (of equivalent) vereist. Hierdoor kan onze ashram jouw kamer reserveren, lesmateriaal voorbereiden en docentenmentoren toewijzen.",
-    "section2Title": "2. Verplaatsen van Data & Groepen",
-    "section2Text": "Mocht je verhinderd zijn voor jouw startdatum, dan kun je kosteloos omboeken naar een latere groep binnen 12 maanden, mits je onze toelatingsafdeling minimaal 15 dagen voor aanvang op de hoogte stelt.",
-    "section3Title": "3. Betalingsvoorwaarden Restantbedrag",
-    "section3Text": "Het resterende opleidingsbedrag dient bij aankomst op de ashram tijdens de introductiedag te worden voldaan (of vooraf via bankoverschrijving / creditcardlink). Zodra een opleiding is gestart en de student is ingecheckt, zijn lesgelden en verblijfskosten niet-restitueerbaar, aangezien middelen en kamers definitief zijn vastgelegd.",
-    "section4Title": "6. Vragen & Ondersteuning bij Toelating",
-    "section4Text": "Voor vragen over het verplaatsen van data of betalingsregelingen is ons toelatingsteam dagelijks bereikbaar via {email} of WhatsApp op {phone}.",
-    "contactBtn": "Contacteer Toelatingsdesk",
-    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
-    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid. The $250 deposit is non-refundable, and any bank fees are deducted.",
-    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
-    "sectionAfterStartTitle": "4. After the Course Begins",
-    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
-    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
-    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
+    "metaDesc": "Het officiële beleid van YogaGarhi inzake restituties, aanbetalingen en annuleringen voor yogadocentenopleidingen en retraites op Bali, in Rishikesh en Varkala.",
+    "badge": "Officiële Boekingsvoorwaarden",
+    "title": "Restitutie- & Annuleringsbeleid",
+    "intro": "Wij willen dat u met een gerust hart boekt. Hier vindt u ons officiële beleid met betrekking tot aanbetalingen, restantbetalingen en cursusannuleringen.",
+    "highlight1Title": "Aanbetaling Overdragen",
+    "highlight1Text": "Als u wegens een noodgeval moet annuleren, kunt u uw aanbetaling binnen 12 maanden meenemen naar een toekomstige groep.",
+    "highlight2Title": "Restitutie Restbedrag (30 Dagen)",
+    "highlight2Text": "Annuleer 30 of meer dagen voor aanvang om het volledige restbedrag terug te ontvangen; bankkosten worden ingehouden.",
+    "highlight3Title": "Krediet bij Late Annulering",
+    "highlight3Text": "Bij annulering minder dan 30 dagen voor de startdatum wordt 100% van uw restbedrag omgezet in een tegoed dat 12 maanden geldig is.",
+    "section1Title": "1. Aanbetaling bij Boeking",
+    "section1Text": "Om uw plaats en uw kamer definitief te reserveren, vragen wij na goedkeuring van uw aanmelding om een aanbetaling van $250 USD. Deze aanbetaling kan niet worden gerestitueerd. Wij gebruiken deze direct om uw kamer vast te leggen en de maaltijden en het personeel voor uw opleidingsgroep in te plannen.",
+    "section2Title": "2. Aanbetaling Meenemen (Binnen 12 Maanden)",
+    "section2Text": "Plannen kunnen onverwachts wijzigen. Mocht u moeten annuleren vanwege vluchtproblemen, medische noodsituaties of een ander noodgeval, dan kunt u uw aanbetaling overzetten naar een toekomstige groep. De nieuwe startdatum dient binnen 12 maanden na uw oorspronkelijke startdatum te vallen.",
+    "section3Title": "3. Restantbetaling & Annuleringen",
+    "section4Title": "6. Vragen & Contact met Toelatingen",
+    "section4Text": "Voor vragen over uw boeking of annulering staat ons toelatingsteam dagelijks voor u klaar via e-mail op {email} of via WhatsApp op {phone}.",
+    "contactBtn": "Contact Opnemen met Toelatingscommissie",
+    "section3Intro": "Het resterende deel van het cursusgeld dient uiterlijk 30 dagen voor aanvang van uw opleiding te zijn voldaan.",
+    "section3Bullet1": "Bij annulering 30 of meer dagen voor de startdatum: Wij storten het volledige betaalde restbedrag terug. De aanbetaling van $250 USD kan niet worden gerestitueerd en eventuele bankkosten worden ingehouden.",
+    "section3Bullet2": "Bij annulering minder dan 30 dagen voor de startdatum: Het restbedrag wordt niet contant teruggestort. In plaats daarvan behoudt u 100% van dit bedrag als cursustegoed, te besteden aan een cursus naar keuze binnen 12 maanden.",
+    "sectionAfterStartTitle": "4. Na Aanvang van de Cursus",
+    "sectionAfterStartText": "Zodra de opleiding is gestart, kunnen wij geen restituties of tegoeden meer verlenen voor vroegtijdig vertrek, vrijwillig stoppen of gemiste lessen wegens ziekte of persoonlijke omstandigheden.",
+    "sectionSchoolCancelTitle": "5. Indien YogaGarhi een Groep Annuleert",
+    "sectionSchoolCancelText": "Mochten wij ooit genoodzaakt zijn een groep te annuleren, dan kunt u kiezen voor een volledige terugbetaling van alle betaalde bedragen, of voor kosteloze overplaatsing naar een andere groep.",
+    "highlightsSr": "Belangrijkste Punten van het Beleid"
   },
   "course300Rishikesh": {
     "metaTitle": "300-Uurs Yoga Docentenopleiding in Rishikesh | RYT 500 India",
@@ -5900,12 +5900,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Kan ik in termijnen betalen?",
+        "answer": "Ja, u kunt uw opleidingsplaats reserveren met een aanbetaling van $250 USD. Het resterende saldo dient uiterlijk 30 dagen voor aanvang van uw cursus te worden voldaan."
       },
       {
         "question": "Wat is het restitutie- en annuleringsbeleid?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "answer": "Uw aanbetaling van $250 USD kan niet worden gerestitueerd. Mocht u door een noodgeval moeten annuleren, dan kunt u deze binnen 12 maanden overzetten naar een toekomstige groep. Het restant van de cursusprijs is 30 dagen voor de startdatum verschuldigd. Bij annulering 30 of meer dagen voor aanvang storten wij het volledige voldane restbedrag terug; eventuele bankkosten worden ingehouden. Bij een latere annulering wordt het restbedrag omgezet in een tegoed voor een willekeurige cursus binnen 12 maanden. Na aanvang van de cursus vindt geen restitutie plaats. Indien YogaGarhi een groep annuleert, heeft u recht op volledige terugbetaling of kosteloze deelname aan een andere groep."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -5924,8 +5924,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Kan ik in termijnen betalen?",
+        "answer": "Ja, u kunt uw opleidingsplaats reserveren met een aanbetaling van $250 USD. Het resterende saldo dient uiterlijk 30 dagen voor aanvang van uw cursus te worden voldaan."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -6200,11 +6200,11 @@
       "code6": "Wederzijds respect voor iedereen",
       "code7": "Geen telefoons in de lesruimte",
       "code8": "Volledige aanwezigheid verplicht",
-      "refund1": "Omboeken mogelijk binnen 12 maanden",
-      "refund2": "Plek overdragen toegestaan",
-      "refund3": "Volledige terugbetaling bij annulering door ons",
-      "refund4": "Proefdag-voorwaarde van toepassing",
-      "refund5": "Geen restitutie na Dag 1",
+      "refund1": "Aanbetaling kan niet worden gerestitueerd",
+      "refund2": "Aanbetaling binnen 12 maanden overdraagbaar (noodgevallen)",
+      "refund3": "Restbedrag tot 30+ dagen voor aanvang restitueerbaar",
+      "refund4": "Geen restitutie na aanvang van de cursus",
+      "refund5": "Volledige restitutie bij annulering door school",
       "reviewsHeading": "Ervaringen van onze studenten",
       "viewAllGoogle": "Bekijk alle recensies op Google",
       "basedOnReviews": "Gebaseerd op",
@@ -6644,12 +6644,12 @@
         "answer": "You can take a 45-minute direct flight from Trivandrum (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Varkala Sivagiri (4.5 hours). Private taxi pickups directly from Trivandrum Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Kan ik in termijnen betalen?",
+        "answer": "Ja, u kunt uw opleidingsplaats reserveren met een aanbetaling van $250 USD. Het resterende saldo dient uiterlijk 30 dagen voor aanvang van uw cursus te worden voldaan."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Wat is het restitutie- en annuleringsbeleid?",
+        "answer": "Uw aanbetaling van $250 USD kan niet worden gerestitueerd. Mocht u door een noodgeval moeten annuleren, dan kunt u deze binnen 12 maanden overzetten naar een toekomstige groep. Het restant van de cursusprijs is 30 dagen voor de startdatum verschuldigd. Bij annulering 30 of meer dagen voor aanvang storten wij het volledige voldane restbedrag terug; eventuele bankkosten worden ingehouden. Bij een latere annulering wordt het restbedrag omgezet in een tegoed voor een willekeurige cursus binnen 12 maanden. Na aanvang van de cursus vindt geen restitutie plaats. Indien YogaGarhi een groep annuleert, heeft u recht op volledige terugbetaling of kosteloze deelname aan een andere groep."
       },
       {
         "question": "What is the best time of year to visit Varkala?",
@@ -6919,11 +6919,11 @@
       "code6": "Wederzijds respect voor iedereen",
       "code7": "Geen telefoons in de lesruimte",
       "code8": "Volledige aanwezigheid verplicht",
-      "refund1": "Omboeken mogelijk binnen 12 maanden",
-      "refund2": "Plek overdragen toegestaan",
-      "refund3": "Volledige terugbetaling bij annulering door ons",
-      "refund4": "Proefdag-voorwaarde van toepassing",
-      "refund5": "Geen restitutie na Dag 1",
+      "refund1": "Aanbetaling kan niet worden gerestitueerd",
+      "refund2": "Aanbetaling binnen 12 maanden overdraagbaar (noodgevallen)",
+      "refund3": "Restbedrag tot 30+ dagen voor aanvang restitueerbaar",
+      "refund4": "Geen restitutie na aanvang van de cursus",
+      "refund5": "Volledige restitutie bij annulering door school",
       "reviewsHeading": "Ervaringen van onze studenten",
       "viewAllGoogle": "Bekijk alle recensies op Google",
       "basedOnReviews": "Gebaseerd op",
@@ -7401,12 +7401,12 @@
         "answer": "From New Trivandrum, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Trivandrum to Varkala Sivagiri (4.5 hours) or book a private taxi directly from Trivandrum to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Kan ik in termijnen betalen?",
+        "answer": "Ja, u kunt uw opleidingsplaats reserveren met een aanbetaling van $250 USD. Het resterende saldo dient uiterlijk 30 dagen voor aanvang van uw cursus te worden voldaan."
       },
       {
         "question": "Wat is het restitutie- en annuleringsbeleid?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "answer": "Uw aanbetaling van $250 USD kan niet worden gerestitueerd. Mocht u door een noodgeval moeten annuleren, dan kunt u deze binnen 12 maanden overzetten naar een toekomstige groep. Het restant van de cursusprijs is 30 dagen voor de startdatum verschuldigd. Bij annulering 30 of meer dagen voor aanvang storten wij het volledige voldane restbedrag terug; eventuele bankkosten worden ingehouden. Bij een latere annulering wordt het restbedrag omgezet in een tegoed voor een willekeurige cursus binnen 12 maanden. Na aanvang van de cursus vindt geen restitutie plaats. Indien YogaGarhi een groep annuleert, heeft u recht op volledige terugbetaling of kosteloze deelname aan een andere groep."
       },
       {
         "question": "Wat is de beste tijd van het jaar om Varkala te bezoeken voor yoga?",
@@ -7425,8 +7425,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Kan ik in termijnen betalen?",
+        "answer": "Ja, u kunt uw opleidingsplaats reserveren met een aanbetaling van $250 USD. Het resterende saldo dient uiterlijk 30 dagen voor aanvang van uw cursus te worden voldaan."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -7701,11 +7701,11 @@
       "code6": "Wederzijds respect voor iedereen",
       "code7": "Geen telefoons in de lesruimte",
       "code8": "Volledige aanwezigheid verplicht",
-      "refund1": "Omboeken mogelijk binnen 12 maanden",
-      "refund2": "Plek overdragen toegestaan",
-      "refund3": "Volledige terugbetaling bij annulering door ons",
-      "refund4": "Proefdag-voorwaarde van toepassing",
-      "refund5": "Geen restitutie na Dag 1",
+      "refund1": "Aanbetaling kan niet worden gerestitueerd",
+      "refund2": "Aanbetaling binnen 12 maanden overdraagbaar (noodgevallen)",
+      "refund3": "Restbedrag tot 30+ dagen voor aanvang restitueerbaar",
+      "refund4": "Geen restitutie na aanvang van de cursus",
+      "refund5": "Volledige restitutie bij annulering door school",
       "reviewsHeading": "Ervaringen van onze studenten",
       "viewAllGoogle": "Bekijk alle recensies op Google",
       "basedOnReviews": "Gebaseerd op",
@@ -8183,12 +8183,12 @@
         "answer": "From New Trivandrum, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Trivandrum to Varkala Sivagiri (4.5 hours) or book a private taxi directly from Trivandrum to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Kan ik in termijnen betalen?",
+        "answer": "Ja, u kunt uw opleidingsplaats reserveren met een aanbetaling van $250 USD. Het resterende saldo dient uiterlijk 30 dagen voor aanvang van uw cursus te worden voldaan."
       },
       {
         "question": "Wat is het restitutie- en annuleringsbeleid?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "answer": "Uw aanbetaling van $250 USD kan niet worden gerestitueerd. Mocht u door een noodgeval moeten annuleren, dan kunt u deze binnen 12 maanden overzetten naar een toekomstige groep. Het restant van de cursusprijs is 30 dagen voor de startdatum verschuldigd. Bij annulering 30 of meer dagen voor aanvang storten wij het volledige voldane restbedrag terug; eventuele bankkosten worden ingehouden. Bij een latere annulering wordt het restbedrag omgezet in een tegoed voor een willekeurige cursus binnen 12 maanden. Na aanvang van de cursus vindt geen restitutie plaats. Indien YogaGarhi een groep annuleert, heeft u recht op volledige terugbetaling of kosteloze deelname aan een andere groep."
       },
       {
         "question": "What is the best time of year to visit Varkala for yoga training?",
@@ -8207,8 +8207,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Kan ik in termijnen betalen?",
+        "answer": "Ja, u kunt uw opleidingsplaats reserveren met een aanbetaling van $250 USD. Het resterende saldo dient uiterlijk 30 dagen voor aanvang van uw cursus te worden voldaan."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -8483,11 +8483,11 @@
       "code6": "Wederzijds respect voor iedereen",
       "code7": "Geen telefoons in de lesruimte",
       "code8": "Volledige aanwezigheid verplicht",
-      "refund1": "Omboeken mogelijk binnen 12 maanden",
-      "refund2": "Plek overdragen toegestaan",
-      "refund3": "Volledige terugbetaling bij annulering door ons",
-      "refund4": "Proefdag-voorwaarde van toepassing",
-      "refund5": "Geen restitutie na Dag 1",
+      "refund1": "Aanbetaling kan niet worden gerestitueerd",
+      "refund2": "Aanbetaling binnen 12 maanden overdraagbaar (noodgevallen)",
+      "refund3": "Restbedrag tot 30+ dagen voor aanvang restitueerbaar",
+      "refund4": "Geen restitutie na aanvang van de cursus",
+      "refund5": "Volledige restitutie bij annulering door school",
       "reviewsHeading": "Ervaringen van onze studenten",
       "viewAllGoogle": "Bekijk alle recensies op Google",
       "basedOnReviews": "Gebaseerd op",

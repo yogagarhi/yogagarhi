@@ -1006,7 +1006,7 @@
       },
       {
         "question": "Quelle est la politique de remboursement et d'annulation ?",
-        "answer": "Vous pouvez reporter votre session gratuitement sur 12 mois ou transférer votre place à un autre pratiquant. Nous offrons un remboursement intégral si l'école annule une promotion, ainsi qu'une politique d'essai le Jour 1. En raison du nombre de places strictement restreint, les inscriptions deviennent non remboursables dès le début du Jour 1."
+        "answer": "Votre acompte de 250 USD n'est pas remboursable. Si vous devez annuler pour cause d'urgence, vous pouvez le reporter sur une future session dans un délai de 12 mois. Le reste des frais est dû 30 jours avant le début de la formation. Si vous annulez 30 jours ou plus avant le début, nous remboursons l'intégralité du solde payé ; les frais bancaires sont déduits. Si vous annulez plus tard, le solde devient un avoir valable pour toute formation dans les 12 mois. Aucun remboursement n'est accordé après le début de la formation. Si YogaGarhi annule une session, vous pouvez choisir un remboursement intégral de tous vos versements ou rejoindre une autre session sans frais supplémentaires."
       },
       {
         "question": "Quel type de nourriture est servi pendant la formation ?",
@@ -1098,11 +1098,11 @@
       "code6": "Respect envers chacun",
       "code7": "Téléphones interdits en salle",
       "code8": "Présence complète obligatoire",
-      "refund1": "Report possible sous 12 mois",
-      "refund2": "Transfert de place autorisé",
-      "refund3": "Remboursement intégral en cas d'annulation de notre part",
-      "refund4": "Journée d'essai garantie",
-      "refund5": "Aucun remboursement après le Jour 1",
+      "refund1": "Acompte non remboursable",
+      "refund2": "Acompte transférable sous 12 mois (urgences)",
+      "refund3": "Solde remboursable 30+ jours avant le début",
+      "refund4": "Aucun remboursement après le début",
+      "refund5": "Remboursement intégral si l'école annule",
       "reviewsHeading": "Les avis de nos élèves",
       "viewAllGoogle": "Voir tous les avis sur Google",
       "basedOnReviews": "Basé sur",
@@ -1684,7 +1684,7 @@
       },
       {
         "question": "Quelle est la politique de remboursement et d'annulation ?",
-        "answer": "Vous pouvez reporter votre session gratuitement sur 12 mois ou transférer votre place à un autre pratiquant. Nous offrons un remboursement intégral si l'école annule une promotion, ainsi qu'une politique d'essai le Jour 1. En raison du nombre de places strictement restreint, les inscriptions deviennent non remboursables dès le début du Jour 1."
+        "answer": "Votre acompte de 250 USD n'est pas remboursable. Si vous devez annuler pour cause d'urgence, vous pouvez le reporter sur une future session dans un délai de 12 mois. Le reste des frais est dû 30 jours avant le début de la formation. Si vous annulez 30 jours ou plus avant le début, nous remboursons l'intégralité du solde payé ; les frais bancaires sont déduits. Si vous annulez plus tard, le solde devient un avoir valable pour toute formation dans les 12 mois. Aucun remboursement n'est accordé après le début de la formation. Si YogaGarhi annule une session, vous pouvez choisir un remboursement intégral de tous vos versements ou rejoindre une autre session sans frais supplémentaires."
       }
     ],
     "hero": {
@@ -1938,11 +1938,11 @@
       "code6": "Respect envers chacun",
       "code7": "Téléphones interdits en salle",
       "code8": "Présence complète obligatoire",
-      "refund1": "Report possible sous 12 mois",
-      "refund2": "Transfert de place autorisé",
-      "refund3": "Remboursement intégral en cas d'annulation de notre part",
-      "refund4": "Journée d'essai garantie",
-      "refund5": "Aucun remboursement après le Jour 1",
+      "refund1": "Acompte non remboursable",
+      "refund2": "Acompte transférable sous 12 mois (urgences)",
+      "refund3": "Solde remboursable 30+ jours avant le début",
+      "refund4": "Aucun remboursement après le début",
+      "refund5": "Remboursement intégral si l'école annule",
       "reviewsHeading": "Les avis de nos élèves",
       "viewAllGoogle": "Voir tous les avis sur Google",
       "basedOnReviews": "Basé sur",
@@ -2634,11 +2634,11 @@
       "code6": "Respect envers chacun",
       "code7": "Téléphones interdits en salle",
       "code8": "Présence complète obligatoire",
-      "refund1": "Report possible sous 12 mois",
-      "refund2": "Transfert de place autorisé",
-      "refund3": "Remboursement intégral en cas d'annulation de notre part",
-      "refund4": "Journée d'essai garantie",
-      "refund5": "Aucun remboursement après le Jour 1",
+      "refund1": "Acompte non remboursable",
+      "refund2": "Acompte transférable sous 12 mois (urgences)",
+      "refund3": "Solde remboursable 30+ jours avant le début",
+      "refund4": "Aucun remboursement après le début",
+      "refund5": "Remboursement intégral si l'école annule",
       "reviewsHeading": "Les avis de nos élèves",
       "viewAllGoogle": "Voir tous les avis sur Google",
       "basedOnReviews": "Basé sur",
@@ -3072,12 +3072,12 @@
         "answer": "You can take a 45-minute direct flight from Delhi (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Haridwar (4.5 hours). Private taxi pickups directly from Delhi Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Puis-je payer en plusieurs fois ?",
+        "answer": "Oui, vous pouvez réserver votre place avec un acompte de 250 USD. Le solde restant est dû au moins 30 jours avant le début de votre formation."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Quelle est la politique de remboursement et d'annulation ?",
+        "answer": "Votre acompte de 250 USD n'est pas remboursable. Si vous devez annuler pour cause d'urgence, vous pouvez le reporter sur une future session dans un délai de 12 mois. Le reste des frais est dû 30 jours avant le début de la formation. Si vous annulez 30 jours ou plus avant le début, nous remboursons l'intégralité du solde payé ; les frais bancaires sont déduits. Si vous annulez plus tard, le solde devient un avoir valable pour toute formation dans les 12 mois. Aucun remboursement n'est accordé après le début de la formation. Si YogaGarhi annule une session, vous pouvez choisir un remboursement intégral de tous vos versements ou rejoindre une autre session sans frais supplémentaires."
       },
       {
         "question": "What is the best time of year to visit Rishikesh?",
@@ -3347,11 +3347,11 @@
       "code6": "Respect envers chacun",
       "code7": "Téléphones interdits en salle",
       "code8": "Présence complète obligatoire",
-      "refund1": "Report possible sous 12 mois",
-      "refund2": "Transfert de place autorisé",
-      "refund3": "Remboursement intégral en cas d'annulation de notre part",
-      "refund4": "Journée d'essai garantie",
-      "refund5": "Aucun remboursement après le Jour 1",
+      "refund1": "Acompte non remboursable",
+      "refund2": "Acompte transférable sous 12 mois (urgences)",
+      "refund3": "Solde remboursable 30+ jours avant le début",
+      "refund4": "Aucun remboursement après le début",
+      "refund5": "Remboursement intégral si l'école annule",
       "reviewsHeading": "Les avis de nos élèves",
       "viewAllGoogle": "Voir tous les avis sur Google",
       "basedOnReviews": "Basé sur",
@@ -3829,12 +3829,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Puis-je payer en plusieurs fois ?",
+        "answer": "Oui, vous pouvez réserver votre place avec un acompte de 250 USD. Le solde restant est dû au moins 30 jours avant le début de votre formation."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Quelle est la politique de remboursement et d'annulation ?",
+        "answer": "Votre acompte de 250 USD n'est pas remboursable. Si vous devez annuler pour cause d'urgence, vous pouvez le reporter sur une future session dans un délai de 12 mois. Le reste des frais est dû 30 jours avant le début de la formation. Si vous annulez 30 jours ou plus avant le début, nous remboursons l'intégralité du solde payé ; les frais bancaires sont déduits. Si vous annulez plus tard, le solde devient un avoir valable pour toute formation dans les 12 mois. Aucun remboursement n'est accordé après le début de la formation. Si YogaGarhi annule une session, vous pouvez choisir un remboursement intégral de tous vos versements ou rejoindre une autre session sans frais supplémentaires."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -3853,8 +3853,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Puis-je payer en plusieurs fois ?",
+        "answer": "Oui, vous pouvez réserver votre place avec un acompte de 250 USD. Le solde restant est dû au moins 30 jours avant le début de votre formation."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -4129,11 +4129,11 @@
       "code6": "Respect envers chacun",
       "code7": "Téléphones interdits en salle",
       "code8": "Présence complète obligatoire",
-      "refund1": "Report possible sous 12 mois",
-      "refund2": "Transfert de place autorisé",
-      "refund3": "Remboursement intégral en cas d'annulation de notre part",
-      "refund4": "Journée d'essai garantie",
-      "refund5": "Aucun remboursement après le Jour 1",
+      "refund1": "Acompte non remboursable",
+      "refund2": "Acompte transférable sous 12 mois (urgences)",
+      "refund3": "Solde remboursable 30+ jours avant le début",
+      "refund4": "Aucun remboursement après le début",
+      "refund5": "Remboursement intégral si l'école annule",
       "reviewsHeading": "Les avis de nos élèves",
       "viewAllGoogle": "Voir tous les avis sur Google",
       "basedOnReviews": "Basé sur",
@@ -4631,7 +4631,7 @@
     "heroHeading": "Postuler à la Formation de Professeur de Yoga",
     "heroSub": "Commencez votre voyage pour devenir un professeur de yoga authentique et certifié. Sélectionnez votre programme, explorez les prérequis et réservez votre place dans nos promotions intimistes.",
     "smallCohorts": "Petites promotions de 8–10 élèves",
-    "flexibleRescheduling": "Report flexible",
+    "flexibleRescheduling": "Protection d'Acompte en Cas d'Urgence",
     "rytCertification": "Certification Yoga Alliance RYT",
     "chooseHeading": "Étape 1 : Choisissez votre formation",
     "chooseSub": "Sélectionnez la formation d'enseignant correspondant à votre pratique actuelle et à vos aspirations professionnelles.",
@@ -4668,7 +4668,7 @@
     "s2Title": "Vérifiez les prérequis & l'éligibilité",
     "s2Desc": "Les 100h et 200h sont ouvertes aux débutants engagés comme aux pratiquants expérimentés. Le 300h requiert un certificat certifié RYT 200 heures.",
     "s3Title": "Réservez votre place",
-    "s3Desc": "Bloquez vos dates et votre catégorie de chambre préférées. Protégé par notre politique flexible de réservation et de report.",
+    "s3Desc": "Réservez vos dates et votre chambre avec un acompte de 250 USD, transférable sous 12 mois en cas d'urgence.",
     "s4Title": "Accès en ligne immédiat Pre-YTTC",
     "s4Desc": "Recevez votre Guide de Bienvenue YogaGarhi et un accès instantané à nos modules vidéo de préparation Pre-YTTC et aux bases d'anatomie.",
     "s5Title": "Arrivez sur le campus & immergez-vous",
@@ -4679,8 +4679,8 @@
     "a1": "Non. Notre programme de 200 heures est structuré des bases fondamentales jusqu'aux applications avancées. Nous accueillons les pratiquants passionnés de tous âges, horizons et niveaux de souplesse. L'essentiel réside dans le dévouement, l'ouverture d'esprit et la sincérité.",
     "q2": "Comment sécuriser ma place et quelles sont les modalités de paiement ?",
     "a2": "Un acompte d'inscription réserve votre place et confirme votre inscription. Tous les détails concernant l'échéancier et les modes de paiement sont fournis lors de la candidature.",
-    "q3": "Que se passe-t-il si mes dates de voyage ou mon calendrier changent ?",
-    "a3": "Nous proposons des options de report flexibles pour nos futures promotions. Contactez notre équipe d'admission à l'avance si vous devez modifier vos dates.",
+    "q3": "Que se passe-t-il si mes dates de voyage ou mes plans changent ?",
+    "a3": "Si vous devez annuler en raison d'un cas de force majeure, vous pouvez reporter votre acompte de 250 USD sur une session future dans un délai de 12 mois. Veuillez contacter notre équipe des admissions au plus tôt pour convenir de vos nouvelles dates.",
     "q4": "Qu'est-ce qui est inclus dans mon inscription ?",
     "a4": "Les forfaits résidentiels comprennent l'enseignement complet, le certificat accrédité Yoga Alliance, le manuel de formation imprimé, l'hébergement pour toute la durée du cours, 3 repas quotidiens Sattvic/végétariens nourrissants, les excursions du week-end et l'accès immédiat au portail Pre-YTTC en ligne. Options sans hébergement également disponibles.",
     "q5": "Combien d'élèves compte chaque promotion ?",
@@ -4809,8 +4809,8 @@
     "faqTitle": "Questions Fréquentes",
     "needGuidance": "Besoin de conseils pour choisir votre retraite ?",
     "guidanceSub": "Notre équipe vous conseille pour vos vols, visas et l'organisation de votre séjour.",
-    "reschedulePolicyTitle": "Conditions de report de formation",
-    "reschedulePolicyText": "Report flexible possible sous 12 mois. Aucun remboursement après le Jour 1.",
+    "reschedulePolicyTitle": "Conditions d'Annulation et d'Acompte",
+    "reschedulePolicyText": "Votre acompte de 250 USD n'est pas remboursable. Si vous annulez pour cause d'urgence, votre acompte peut être reporté à une date ultérieure dans un délai de 12 mois. Si vous annulez 30 jours ou plus avant la date de début, nous remboursons l'intégralité du solde versé ; les frais bancaires sont déduits. Si vous annulez moins de 30 jours avant la date de début, votre solde est converti en avoir valable pendant 12 mois. Aucun remboursement n'est accordé après le début de la retraite. Si YogaGarhi annule une retraite, vous recevrez un remboursement intégral de tous les paiements ou un report gratuit de date.",
     "packages": {
       "bali-3-days": {
         "title": "3 JOURS & 2 NUITS RETRAITE DE YOGA À UBUD BALI",
@@ -5627,32 +5627,32 @@
   },
   "refundPolicy": {
     "metaTitle": "Politique de Remboursement et d'Annulation | YogaGarhi",
-    "metaDesc": "Conditions transparentes de remboursement, d'acompte de réservation et de report de session pour les formations de yoga et retraites à Bali et Rishikesh.",
-    "badge": "Garantie de Sérénité et de Flexibilité",
-    "title": "Politique de Remboursement et de Report de Session",
-    "intro": "Nous savons que les aléas de l'existence peuvent survenir à tout moment. Chez YogaGarhi, nous proposons des conditions de réservation transparentes et souples, conçues pour préserver votre investissement dans votre cheminement spirituel.",
-    "highlight1Title": "100% Transférable",
-    "highlight1Text": "Votre acompte est transférable à 100% sur toute session ultérieure ou sur un autre lieu de formation (Bali / Rishikesh) dans un délai de 12 mois.",
-    "highlight2Title": "Validité de 12 Mois",
-    "highlight2Text": "Besoin de reporter ? Vous disposez d'une année complète à compter de la date initiale pour effectuer votre formation ou votre retraite.",
-    "highlight3Title": "Urgences Médicales",
-    "highlight3Text": "En présence d'un cas de force majeure médicale ou de voyage dûment attesté, une reprogrammation prioritaire est offerte sans aucun frais.",
-    "section1Title": "1. Acompte de Réservation et Attribution de Place",
-    "section1Text": "Afin de garantir votre place et votre hébergement au sein de la formation de professeur ou de la retraite choisie, un acompte de $250 USD (ou contre-valeur) est requis lors de l'inscription. Cela permet à notre ashram de bloquer votre chambre, de préparer vos supports pédagogiques et de vous assigner un tuteur référent.",
-    "section2Title": "2. Report de Session et Modification de Dates",
-    "section2Text": "Si vous ne pouvez vous joindre à la promotion prévue, vous avez la possibilité de reporter votre venue sur n'importe quelle session dans les 12 mois sans pénalité, sous réserve d'en avertir notre bureau des admissions au minimum 15 jours avant l'ouverture du cursus.",
-    "section3Title": "3. Modalités de Règlements du Solde",
-    "section3Text": "Le reliquat des frais de formation est exigible à l'arrivée à l'ashram lors de la journée d'orientation (ou en amont par virement bancaire / lien sécurisé de carte bancaire). Dès lors que la formation a débuté et que l'élève a pris possession de sa chambre, les droits d'enseignement et l'hébergement ne font l'objet d'aucun remboursement, les ressources et logements ayant été définitivement engagés.",
-    "section4Title": "6. Questions et Assistance Inscriptions",
-    "section4Text": "Pour toute question relative aux reports de session ou aux facilités de paiement, notre équipe des admissions est joignable au quotidien par e-mail à {email} ou par WhatsApp au {phone}.",
-    "contactBtn": "Joindre les Admissions",
-    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
-    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid. The $250 deposit is non-refundable, and any bank fees are deducted.",
-    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
-    "sectionAfterStartTitle": "4. After the Course Begins",
-    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
-    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
-    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
+    "metaDesc": "Politique officielle de YogaGarhi sur les remboursements, acomptes et annulations pour les formations de professeur de yoga et retraites à Bali, Rishikesh et Varkala.",
+    "badge": "Conditions Officielles de Réservation",
+    "title": "Politique de Remboursement et d'Annulation",
+    "intro": "Nous souhaitons que vous réserviez en toute sérénité. Voici notre politique officielle concernant les acomptes de réservation, le solde et les annulations de formation.",
+    "highlight1Title": "Report d'Acompte",
+    "highlight1Text": "En cas d'annulation pour force majeure, votre acompte peut être transféré vers une session ultérieure dans un délai de 12 mois.",
+    "highlight2Title": "Remboursement du Solde (30 Jours)",
+    "highlight2Text": "Annulez 30 jours ou plus avant le début pour recevoir le remboursement intégral de votre solde ; les frais bancaires sont déduits.",
+    "highlight3Title": "Avoir pour Annulation Tardive",
+    "highlight3Text": "En cas d'annulation moins de 30 jours avant le début, 100 % de votre solde est converti en avoir valable pendant 12 mois.",
+    "section1Title": "1. Acompte de Réservation",
+    "section1Text": "Pour réserver votre place et votre chambre, un acompte de 250 USD est demandé dès l'approbation de votre candidature. Cet acompte n'est pas remboursable. Il est immédiatement utilisé pour réserver votre hébergement et planifier les repas ainsi que l'équipe pédagogique pour votre promotion.",
+    "section2Title": "2. Report de l'Acompte (Dans les 12 Mois)",
+    "section2Text": "Des imprévus peuvent survenir. Si vous devez annuler en raison d'un problème de vol, d'une urgence médicale ou d'un cas de force majeure, vous pouvez transférer votre acompte sur une session future. La nouvelle date de début doit se situer dans les 12 mois suivant votre date de départ initiale.",
+    "section3Title": "3. Solde Restant et Conditions d'Annulation",
+    "section4Title": "6. Questions et Support Admissions",
+    "section4Text": "Pour toute question relative à votre réservation ou à une annulation, notre équipe des admissions est disponible chaque jour par e-mail à {email} ou par WhatsApp au {phone}.",
+    "contactBtn": "Contacter le Bureau des Admissions",
+    "section3Intro": "Le solde restant de vos frais de formation est dû au moins 30 jours avant le début de votre formation.",
+    "section3Bullet1": "Si vous annulez 30 jours ou plus avant la date de début : Nous remboursons l'intégralité du solde versé. L'acompte de 250 USD n'est pas remboursable et les éventuels frais bancaires sont déduits.",
+    "section3Bullet2": "Si vous annulez moins de 30 jours avant la date de début : Le solde n'est pas remboursé. En revanche, 100 % du montant est conservé sous forme d'avoir utilisable pour toute formation dans un délai de 12 mois.",
+    "sectionAfterStartTitle": "4. Après le Début de la Formation",
+    "sectionAfterStartText": "Une fois la formation commencée, aucun remboursement ni avoir ne peut être accordé pour cause de départ anticipé, d'abandon volontaire ou de cours manqués pour raisons médicales ou personnelles.",
+    "sectionSchoolCancelTitle": "5. En Cas d'Annulation par YogaGarhi",
+    "sectionSchoolCancelText": "Si nous devions annuler une session, vous pourrez choisir entre un remboursement intégral de tous les montants versés ou le transfert vers une autre session sans frais supplémentaires.",
+    "highlightsSr": "Points Clés de la Politique"
   },
   "course300Rishikesh": {
     "metaTitle": "Formation Professeur de Yoga 300 Heures à Rishikesh | RYT 500 Inde",
@@ -5900,12 +5900,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Puis-je payer en plusieurs fois ?",
+        "answer": "Oui, vous pouvez réserver votre place avec un acompte de 250 USD. Le solde restant est dû au moins 30 jours avant le début de votre formation."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Quelle est la politique de remboursement et d'annulation ?",
+        "answer": "Votre acompte de 250 USD n'est pas remboursable. Si vous devez annuler pour cause d'urgence, vous pouvez le reporter sur une future session dans un délai de 12 mois. Le reste des frais est dû 30 jours avant le début de la formation. Si vous annulez 30 jours ou plus avant le début, nous remboursons l'intégralité du solde payé ; les frais bancaires sont déduits. Si vous annulez plus tard, le solde devient un avoir valable pour toute formation dans les 12 mois. Aucun remboursement n'est accordé après le début de la formation. Si YogaGarhi annule une session, vous pouvez choisir un remboursement intégral de tous vos versements ou rejoindre une autre session sans frais supplémentaires."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -5924,8 +5924,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Puis-je payer en plusieurs fois ?",
+        "answer": "Oui, vous pouvez réserver votre place avec un acompte de 250 USD. Le solde restant est dû au moins 30 jours avant le début de votre formation."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -6200,11 +6200,11 @@
       "code6": "Respect envers chacun",
       "code7": "Téléphones interdits en salle",
       "code8": "Présence complète obligatoire",
-      "refund1": "Report possible sous 12 mois",
-      "refund2": "Transfert de place autorisé",
-      "refund3": "Remboursement intégral en cas d'annulation de notre part",
-      "refund4": "Journée d'essai garantie",
-      "refund5": "Aucun remboursement après le Jour 1",
+      "refund1": "Acompte non remboursable",
+      "refund2": "Acompte transférable sous 12 mois (urgences)",
+      "refund3": "Solde remboursable 30+ jours avant le début",
+      "refund4": "Aucun remboursement après le début",
+      "refund5": "Remboursement intégral si l'école annule",
       "reviewsHeading": "Les avis de nos élèves",
       "viewAllGoogle": "Voir tous les avis sur Google",
       "basedOnReviews": "Basé sur",
@@ -6644,12 +6644,12 @@
         "answer": "Atterrissez à l’aéroport international de Trivandrum (TRV), situé à seulement 45 km (environ 1h de route) de notre ashram de Varkala Cliff. Vous pouvez également arriver en train à la gare de Varkala Sivagiri (VAK), à 3 km (10 minutes). Un service d’accueil depuis l’aéroport peut être organisé sur demande."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Puis-je payer en plusieurs fois ?",
+        "answer": "Oui, vous pouvez réserver votre place avec un acompte de 250 USD. Le solde restant est dû au moins 30 jours avant le début de votre formation."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Quelle est la politique de remboursement et d'annulation ?",
+        "answer": "Votre acompte de 250 USD n'est pas remboursable. Si vous devez annuler pour cause d'urgence, vous pouvez le reporter sur une future session dans un délai de 12 mois. Le reste des frais est dû 30 jours avant le début de la formation. Si vous annulez 30 jours ou plus avant le début, nous remboursons l'intégralité du solde payé ; les frais bancaires sont déduits. Si vous annulez plus tard, le solde devient un avoir valable pour toute formation dans les 12 mois. Aucun remboursement n'est accordé après le début de la formation. Si YogaGarhi annule une session, vous pouvez choisir un remboursement intégral de tous vos versements ou rejoindre une autre session sans frais supplémentaires."
       },
       {
         "question": "What is the best time of year to visit Varkala?",
@@ -6919,11 +6919,11 @@
       "code6": "Respect envers chacun",
       "code7": "Téléphones interdits en salle",
       "code8": "Présence complète obligatoire",
-      "refund1": "Report possible sous 12 mois",
-      "refund2": "Transfert de place autorisé",
-      "refund3": "Remboursement intégral en cas d'annulation de notre part",
-      "refund4": "Journée d'essai garantie",
-      "refund5": "Aucun remboursement après le Jour 1",
+      "refund1": "Acompte non remboursable",
+      "refund2": "Acompte transférable sous 12 mois (urgences)",
+      "refund3": "Solde remboursable 30+ jours avant le début",
+      "refund4": "Aucun remboursement après le début",
+      "refund5": "Remboursement intégral si l'école annule",
       "reviewsHeading": "Les avis de nos élèves",
       "viewAllGoogle": "Voir tous les avis sur Google",
       "basedOnReviews": "Basé sur",
@@ -7401,12 +7401,12 @@
         "answer": "Atterrissez à l’aéroport international de Trivandrum (TRV), situé à seulement 45 km (environ 1h de route) de notre ashram de Varkala Cliff. Vous pouvez également arriver en train à la gare de Varkala Sivagiri (VAK), à 3 km (10 minutes). Un service d’accueil depuis l’aéroport peut être organisé sur demande."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Puis-je payer en plusieurs fois ?",
+        "answer": "Oui, vous pouvez réserver votre place avec un acompte de 250 USD. Le solde restant est dû au moins 30 jours avant le début de votre formation."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Quelle est la politique de remboursement et d'annulation ?",
+        "answer": "Votre acompte de 250 USD n'est pas remboursable. Si vous devez annuler pour cause d'urgence, vous pouvez le reporter sur une future session dans un délai de 12 mois. Le reste des frais est dû 30 jours avant le début de la formation. Si vous annulez 30 jours ou plus avant le début, nous remboursons l'intégralité du solde payé ; les frais bancaires sont déduits. Si vous annulez plus tard, le solde devient un avoir valable pour toute formation dans les 12 mois. Aucun remboursement n'est accordé après le début de la formation. Si YogaGarhi annule une session, vous pouvez choisir un remboursement intégral de tous vos versements ou rejoindre une autre session sans frais supplémentaires."
       },
       {
         "question": "Quelle est la meilleure période de l'année pour suivre une formation à Varkala ?",
@@ -7425,8 +7425,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Puis-je payer en plusieurs fois ?",
+        "answer": "Oui, vous pouvez réserver votre place avec un acompte de 250 USD. Le solde restant est dû au moins 30 jours avant le début de votre formation."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -7701,11 +7701,11 @@
       "code6": "Respect envers chacun",
       "code7": "Téléphones interdits en salle",
       "code8": "Présence complète obligatoire",
-      "refund1": "Report possible sous 12 mois",
-      "refund2": "Transfert de place autorisé",
-      "refund3": "Remboursement intégral en cas d'annulation de notre part",
-      "refund4": "Journée d'essai garantie",
-      "refund5": "Aucun remboursement après le Jour 1",
+      "refund1": "Acompte non remboursable",
+      "refund2": "Acompte transférable sous 12 mois (urgences)",
+      "refund3": "Solde remboursable 30+ jours avant le début",
+      "refund4": "Aucun remboursement après le début",
+      "refund5": "Remboursement intégral si l'école annule",
       "reviewsHeading": "Les avis de nos élèves",
       "viewAllGoogle": "Voir tous les avis sur Google",
       "basedOnReviews": "Basé sur",
@@ -8183,12 +8183,12 @@
         "answer": "Atterrissez à l’aéroport international de Trivandrum (TRV), situé à seulement 45 km (environ 1h de route) de notre ashram de Varkala Cliff. Vous pouvez également arriver en train à la gare de Varkala Sivagiri (VAK), à 3 km (10 minutes). Un service d’accueil depuis l’aéroport peut être organisé sur demande."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Puis-je payer en plusieurs fois ?",
+        "answer": "Oui, vous pouvez réserver votre place avec un acompte de 250 USD. Le solde restant est dû au moins 30 jours avant le début de votre formation."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Quelle est la politique de remboursement et d'annulation ?",
+        "answer": "Votre acompte de 250 USD n'est pas remboursable. Si vous devez annuler pour cause d'urgence, vous pouvez le reporter sur une future session dans un délai de 12 mois. Le reste des frais est dû 30 jours avant le début de la formation. Si vous annulez 30 jours ou plus avant le début, nous remboursons l'intégralité du solde payé ; les frais bancaires sont déduits. Si vous annulez plus tard, le solde devient un avoir valable pour toute formation dans les 12 mois. Aucun remboursement n'est accordé après le début de la formation. Si YogaGarhi annule une session, vous pouvez choisir un remboursement intégral de tous vos versements ou rejoindre une autre session sans frais supplémentaires."
       },
       {
         "question": "What is the best time of year to visit Varkala for yoga training?",
@@ -8207,8 +8207,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Puis-je payer en plusieurs fois ?",
+        "answer": "Oui, vous pouvez réserver votre place avec un acompte de 250 USD. Le solde restant est dû au moins 30 jours avant le début de votre formation."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -8483,11 +8483,11 @@
       "code6": "Respect envers chacun",
       "code7": "Téléphones interdits en salle",
       "code8": "Présence complète obligatoire",
-      "refund1": "Report possible sous 12 mois",
-      "refund2": "Transfert de place autorisé",
-      "refund3": "Remboursement intégral en cas d'annulation de notre part",
-      "refund4": "Journée d'essai garantie",
-      "refund5": "Aucun remboursement après le Jour 1",
+      "refund1": "Acompte non remboursable",
+      "refund2": "Acompte transférable sous 12 mois (urgences)",
+      "refund3": "Solde remboursable 30+ jours avant le début",
+      "refund4": "Aucun remboursement après le début",
+      "refund5": "Remboursement intégral si l'école annule",
       "reviewsHeading": "Les avis de nos élèves",
       "viewAllGoogle": "Voir tous les avis sur Google",
       "basedOnReviews": "Basé sur",

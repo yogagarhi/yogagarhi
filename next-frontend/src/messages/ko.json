@@ -1005,8 +1005,8 @@
         "answer": "숙박 패키지에는 23박 숙박(에어컨, 전용 욕실, Wi-Fi), 매일 사트빅 채식 3식, 허브티, 교재 전권, 요가 매트 및 도구, 덴파사르 공항 픽업, 발리 전통 마사지, 문화 탐방 투어, 무료 사전 온라인 강좌, 35+ 시퀀스 가이드북, RYT 200 인증서, 평생 무료 재수강 권한이 모두 포함됩니다. 수업 전용 플랜($999 USD)에는 숙박과 식사가 제외됩니다."
       },
       {
-        "question": "취소 및 환불 정책은 어떻게 되나요?",
-        "answer": "12개월 이내라면 수수료 없이 다른 기수로 일정을 변경하실 수 있으며, 타인에게 양도도 가능합니다. 학교 사정으로 취소될 경우 전액 환불됩니다. 또한 과정 첫날(Day 1) 만족 보장 제도를 운영하고 있으나, 소수 정예 정원제 특성상 첫날 종료 후에는 환불이 불가합니다."
+        "question": "환불 및 취소 정책은 어떻게 되나요?",
+        "answer": "미화 250달러의 예약금은 환불되지 않습니다. 응급 상황으로 취소하셔야 하는 경우 12개월 이내의 다음 기수로 이월 가능합니다. 잔금은 코스 시작 30일 전까지 납부하셔야 합니다. 시작 30일 이전에 취소하시면 납부하신 잔금 전액을 환불해 드립니다(은행 수수료 제외). 그 이후에 취소하시면 잔금은 12개월간 사용 가능한 수강 크레딧으로 전환됩니다. 코스 시작 후에는 환불되지 않습니다. 만약 YogaGarhi 사정으로 기수가 취소될 경우 전액 환불받으시거나 추가 비용 없이 다른 기수로 변경하실 수 있습니다."
       },
       {
         "question": "코스 기간 동안 어떤 식사가 제공되나요?",
@@ -1098,11 +1098,11 @@
       "code6": "동료와 스승에 대한 상호 존중",
       "code7": "수련실 내 휴대전화 소지 금지",
       "code8": "모든 수업 100% 출석 필수",
-      "refund1": "12개월 이내 일정 변경 가능",
-      "refund2": "타인에게 자리 양도 가능",
-      "refund3": "학교 사정으로 취소 시 100% 전액 환불",
-      "refund4": "첫날 체험 정책 적용",
-      "refund5": "1일차 종료 후 환불 불가",
+      "refund1": "예약금은 환불 불가",
+      "refund2": "응급 상황 시 12개월 이내 예약금 이월 가능",
+      "refund3": "시작 30일 전까지 잔금 환불 가능",
+      "refund4": "코스 시작 후 환불 불가",
+      "refund5": "학교 사정으로 취소 시 전액 환불",
       "reviewsHeading": "수료생들의 생생한 후기",
       "viewAllGoogle": "Google에서 전체 리뷰 보기",
       "basedOnReviews": "기준 리뷰",
@@ -1683,8 +1683,8 @@
         "answer": "숙박 패키지에는 23박 숙박(에어컨, 전용 욕실, Wi-Fi), 매일 사트빅 채식 3식, 허브티, 교재 전권, 요가 매트 및 도구, 덴파사르 공항 픽업, 발리 전통 마사지, 문화 탐방 투어, 무료 사전 온라인 강좌, 35+ 시퀀스 가이드북, RYT 200 인증서, 평생 무료 재수강 권한이 모두 포함됩니다. 수업 전용 플랜($999 USD)에는 숙박과 식사가 제외됩니다."
       },
       {
-        "question": "취소 및 환불 정책은 어떻게 되나요?",
-        "answer": "12개월 이내라면 수수료 없이 다른 기수로 일정을 변경하실 수 있으며, 타인에게 양도도 가능합니다. 학교 사정으로 취소될 경우 전액 환불됩니다. 또한 과정 첫날(Day 1) 만족 보장 제도를 운영하고 있으나, 소수 정예 정원제 특성상 첫날 종료 후에는 환불이 불가합니다."
+        "question": "환불 및 취소 정책은 어떻게 되나요?",
+        "answer": "미화 250달러의 예약금은 환불되지 않습니다. 응급 상황으로 취소하셔야 하는 경우 12개월 이내의 다음 기수로 이월 가능합니다. 잔금은 코스 시작 30일 전까지 납부하셔야 합니다. 시작 30일 이전에 취소하시면 납부하신 잔금 전액을 환불해 드립니다(은행 수수료 제외). 그 이후에 취소하시면 잔금은 12개월간 사용 가능한 수강 크레딧으로 전환됩니다. 코스 시작 후에는 환불되지 않습니다. 만약 YogaGarhi 사정으로 기수가 취소될 경우 전액 환불받으시거나 추가 비용 없이 다른 기수로 변경하실 수 있습니다."
       }
     ],
     "hero": {
@@ -1938,11 +1938,11 @@
       "code6": "동료와 스승에 대한 상호 존중",
       "code7": "수련실 내 휴대전화 소지 금지",
       "code8": "모든 수업 100% 출석 필수",
-      "refund1": "12개월 이내 일정 변경 가능",
-      "refund2": "타인에게 자리 양도 가능",
-      "refund3": "학교 사정으로 취소 시 100% 전액 환불",
-      "refund4": "첫날 체험 정책 적용",
-      "refund5": "1일차 종료 후 환불 불가",
+      "refund1": "예약금은 환불 불가",
+      "refund2": "응급 상황 시 12개월 이내 예약금 이월 가능",
+      "refund3": "시작 30일 전까지 잔금 환불 가능",
+      "refund4": "코스 시작 후 환불 불가",
+      "refund5": "학교 사정으로 취소 시 전액 환불",
       "reviewsHeading": "수료생들의 생생한 후기",
       "viewAllGoogle": "Google에서 전체 리뷰 보기",
       "basedOnReviews": "기준 리뷰",
@@ -2634,11 +2634,11 @@
       "code6": "동료와 스승에 대한 상호 존중",
       "code7": "수련실 내 휴대전화 소지 금지",
       "code8": "모든 수업 100% 출석 필수",
-      "refund1": "12개월 이내 일정 변경 가능",
-      "refund2": "타인에게 자리 양도 가능",
-      "refund3": "학교 사정으로 취소 시 100% 전액 환불",
-      "refund4": "첫날 체험 정책 적용",
-      "refund5": "1일차 종료 후 환불 불가",
+      "refund1": "예약금은 환불 불가",
+      "refund2": "응급 상황 시 12개월 이내 예약금 이월 가능",
+      "refund3": "시작 30일 전까지 잔금 환불 가능",
+      "refund4": "코스 시작 후 환불 불가",
+      "refund5": "학교 사정으로 취소 시 전액 환불",
       "reviewsHeading": "수료생들의 생생한 후기",
       "viewAllGoogle": "Google에서 전체 리뷰 보기",
       "basedOnReviews": "기준 리뷰",
@@ -3072,12 +3072,12 @@
         "answer": "You can take a 45-minute direct flight from Delhi (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Haridwar (4.5 hours). Private taxi pickups directly from Delhi Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "분할 납부가 가능한가요?",
+        "answer": "네, 미화 250달러의 예약금으로 자리를 먼저 예약하실 수 있습니다. 잔금은 코스 시작 최소 30일 전까지 납부해 주셔야 합니다."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "환불 및 취소 정책은 어떻게 되나요?",
+        "answer": "미화 250달러의 예약금은 환불되지 않습니다. 응급 상황으로 취소하셔야 하는 경우 12개월 이내의 다음 기수로 이월 가능합니다. 잔금은 코스 시작 30일 전까지 납부하셔야 합니다. 시작 30일 이전에 취소하시면 납부하신 잔금 전액을 환불해 드립니다(은행 수수료 제외). 그 이후에 취소하시면 잔금은 12개월간 사용 가능한 수강 크레딧으로 전환됩니다. 코스 시작 후에는 환불되지 않습니다. 만약 YogaGarhi 사정으로 기수가 취소될 경우 전액 환불받으시거나 추가 비용 없이 다른 기수로 변경하실 수 있습니다."
       },
       {
         "question": "What is the best time of year to visit Rishikesh?",
@@ -3347,11 +3347,11 @@
       "code6": "동료와 스승에 대한 상호 존중",
       "code7": "수련실 내 휴대전화 소지 금지",
       "code8": "모든 수업 100% 출석 필수",
-      "refund1": "12개월 이내 일정 변경 가능",
-      "refund2": "타인에게 자리 양도 가능",
-      "refund3": "학교 사정으로 취소 시 100% 전액 환불",
-      "refund4": "첫날 체험 정책 적용",
-      "refund5": "1일차 종료 후 환불 불가",
+      "refund1": "예약금은 환불 불가",
+      "refund2": "응급 상황 시 12개월 이내 예약금 이월 가능",
+      "refund3": "시작 30일 전까지 잔금 환불 가능",
+      "refund4": "코스 시작 후 환불 불가",
+      "refund5": "학교 사정으로 취소 시 전액 환불",
       "reviewsHeading": "수료생들의 생생한 후기",
       "viewAllGoogle": "Google에서 전체 리뷰 보기",
       "basedOnReviews": "기준 리뷰",
@@ -3829,12 +3829,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "분할 납부가 가능한가요?",
+        "answer": "네, 미화 250달러의 예약금으로 자리를 먼저 예약하실 수 있습니다. 잔금은 코스 시작 최소 30일 전까지 납부해 주셔야 합니다."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "환불 및 취소 정책은 어떻게 되나요?",
+        "answer": "미화 250달러의 예약금은 환불되지 않습니다. 응급 상황으로 취소하셔야 하는 경우 12개월 이내의 다음 기수로 이월 가능합니다. 잔금은 코스 시작 30일 전까지 납부하셔야 합니다. 시작 30일 이전에 취소하시면 납부하신 잔금 전액을 환불해 드립니다(은행 수수료 제외). 그 이후에 취소하시면 잔금은 12개월간 사용 가능한 수강 크레딧으로 전환됩니다. 코스 시작 후에는 환불되지 않습니다. 만약 YogaGarhi 사정으로 기수가 취소될 경우 전액 환불받으시거나 추가 비용 없이 다른 기수로 변경하실 수 있습니다."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -3853,8 +3853,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "분할 납부가 가능한가요?",
+        "answer": "네, 미화 250달러의 예약금으로 자리를 먼저 예약하실 수 있습니다. 잔금은 코스 시작 최소 30일 전까지 납부해 주셔야 합니다."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -4129,11 +4129,11 @@
       "code6": "동료와 스승에 대한 상호 존중",
       "code7": "수련실 내 휴대전화 소지 금지",
       "code8": "모든 수업 100% 출석 필수",
-      "refund1": "12개월 이내 일정 변경 가능",
-      "refund2": "타인에게 자리 양도 가능",
-      "refund3": "학교 사정으로 취소 시 100% 전액 환불",
-      "refund4": "첫날 체험 정책 적용",
-      "refund5": "1일차 종료 후 환불 불가",
+      "refund1": "예약금은 환불 불가",
+      "refund2": "응급 상황 시 12개월 이내 예약금 이월 가능",
+      "refund3": "시작 30일 전까지 잔금 환불 가능",
+      "refund4": "코스 시작 후 환불 불가",
+      "refund5": "학교 사정으로 취소 시 전액 환불",
       "reviewsHeading": "수료생들의 생생한 후기",
       "viewAllGoogle": "Google에서 전체 리뷰 보기",
       "basedOnReviews": "기준 리뷰",
@@ -4631,7 +4631,7 @@
     "heroHeading": "요가 지도자 과정 신청하기",
     "heroSub": "진정한 공인 요가 지도자로 거듭나는 여정을 시작하세요. 과정을 선택하고 자격 조건을 확인한 후, 소수 정예 클래스 자리를 확보하세요.",
     "smallCohorts": "8–10명 소수 정예 코호트",
-    "flexibleRescheduling": "유연한 일정 변경",
+    "flexibleRescheduling": "응급 상황 예약금 보호 보장",
     "rytCertification": "Yoga Alliance RYT 국제 자격증",
     "chooseHeading": "1단계: 과정 선택하기",
     "chooseSub": "현재의 수련 상태와 지도자로서의 목표에 부합하는 트레이닝 과정을 선택하세요.",
@@ -4668,7 +4668,7 @@
     "s2Title": "자격 요건 및 대상 확인",
     "s2Desc": "100시간 및 200시간은 열정적인 초보자부터 숙련자까지 모두 참여 가능합니다. 300시간은 200시간 RYT 수료증이 필요합니다.",
     "s3Title": "수강 자리 예약",
-    "s3Desc": "원하는 일정과 룸 타입을 예약하세요. 유연한 일정 변경 정책으로 안전하게 보호됩니다.",
+    "s3Desc": "미화 250달러 예약금으로 일정과 객실을 확정하세요. 응급 상황 시 12개월 이내 이월이 가능합니다.",
     "s4Title": "Pre-YTTC 온라인 사전 학습 즉시 시작",
     "s4Desc": "YogaGarhi 웰컴 가이드와 함께 사전 학습 영상 모듈 및 해부학 기초 과정에 즉시 접속할 수 있습니다.",
     "s5Title": "캠퍼스 도착 및 정통 아쉬람 몰입",
@@ -4679,8 +4679,8 @@
     "a1": "아닙니다. 200시간 커리큘럼은 기초 원리부터 고급 실습까지 체계적으로 구성되어 있습니다. 나이, 경력, 유연성에 관계없이 진지한 열정과 배우고자 하는 마음이 있는 분이라면 누구나 환영합니다.",
     "q2": "수강 자리를 확보하는 방법과 결제 조건은 어떻게 되나요?",
     "a2": "등록 보증금을 입금하시면 자리가 확정 예약됩니다. 결제 일정과 이용 가능한 결제 수단에 대한 자세한 안내는 지원 과정에서 제공됩니다.",
-    "q3": "여행 일정이나 스케줄이 변경되면 어떻게 하나요?",
-    "a3": "추후 개설되는 기수로 일정을 유연하게 변경하실 수 있습니다. 일정 변경이 필요한 경우 입학팀에 미리 연락해 주시면 됩니다.",
+    "q3": "여행 일정이나 개인 계획이 변경되면 어떻게 하나요?",
+    "a3": "응급 상황으로 취소해야 하는 경우, $250 예약금을 12개월 이내의 다음 기수로 이월할 수 있습니다. 새로운 일정을 조율하시려면 입학 상담팀에 가능한 한 빨리 문의해 주시기 바랍니다.",
     "q4": "수강료에는 어떤 항목들이 포함되어 있나요?",
     "a4": "기숙형 패키지에는 전 과정 수업료, Yoga Alliance 공인 수료증, 정규 교재, 전체 기간 숙박, 일 3식 영양 만점 Sattvic 채식 식단, 주말 필드 트립 및 Pre-YTTC 온라인 사전 학습 포털 이용권이 모두 포함됩니다. 숙박 제외 패키지도 선택 가능합니다.",
     "q5": "한 클래스당 정원은 몇 명인가요?",
@@ -4809,8 +4809,8 @@
     "faqTitle": "자주 묻는 질문",
     "needGuidance": "리트릿 선택에 도움이 필요하신가요?",
     "guidanceSub": "항공편, 비자, 맞춤 일정에 대해 친절히 안내해 드립니다.",
-    "reschedulePolicyTitle": "일정 변경 및 취소 규정",
-    "reschedulePolicyText": "12개월 내 유연한 일정 변경 가능. 1일차 시작 후 환불 불가.",
+    "reschedulePolicyTitle": "취소 및 예약금 약관",
+    "reschedulePolicyText": "미화 250달러의 예약금은 환불되지 않습니다. 응급 사유로 취소하시는 경우 예약금을 12개월 이내의 다른 일정으로 이월할 수 있습니다. 시작일 기준 30일 이전까지 취소 시 납부하신 잔금 전액을 환불해 드립니다(은행 수수료 차감). 시작일 전 30일 이내 취소 시 잔금은 12개월간 유효한 수강 크레딧으로 전환됩니다. 리트릿 시작 후에는 환불이 불가합니다. YogaGarhi 사정으로 리트릿이 취소되는 경우 전액 환불 또는 무료 일정 변경을 지원합니다.",
     "packages": {
       "bali-3-days": {
         "title": "우붓 발리 3일 2박 요가 리트릿",
@@ -4880,7 +4880,7 @@
           },
           {
             "question": "일정 변경 정책은 어떻게 되나요?",
-            "answer": "출발 15일 전 통보 시 1회에 한해 수수료 없이 무료로 일정을 변경하실 수 있습니다."
+            "answer": "250달러 예약금은 환불되지 않습니다. 응급 상황 시 12개월 이내 일정 변경이 가능하며, 잔금은 시작 30일 전까지 전액 환불됩니다."
           },
           {
             "question": "공항 픽업은 어떻게 진행되나요?",
@@ -5626,33 +5626,33 @@
     "contactBtn": "행정팀에 문의하기"
   },
   "refundPolicy": {
-    "metaTitle": "환불 및 취소 규정 | YogaGarhi",
-    "metaDesc": "발리와 리시케시 요가 지도자 과정 및 리트릿을 위한 YogaGarhi의 투명한 환불, 예약금 및 기수 변경 규정 안내.",
-    "badge": "안심 보장 & 유연한 일정 변경",
-    "title": "환불 및 기수 변경 규정",
-    "intro": "살아가다 보면 예상치 못한 삶의 변화가 찾아올 수 있음을 잘 알고 있습니다. YogaGarhi는 여러분의 영적 여정에 대한 소중한 투자를 안전하게 보호할 수 있도록 유연하고 투명한 예약 규정을 제공합니다.",
-    "highlight1Title": "100% 기수 양도 및 변경 가능",
-    "highlight1Text": "납부하신 예약금은 12개월 이내에 향후 열리는 다른 기수나 다른 지역(발리 / 리시케시)으로 100% 이전하여 사용하실 수 있습니다.",
-    "highlight2Title": "12개월 유효 기간",
-    "highlight2Text": "일정을 연기하셔야 하나요? 원래 시작일로부터 만 1년 동안 언제든지 원하는 기수로 참석하실 수 있습니다.",
-    "highlight3Title": "의료 응급 상황 지원",
-    "highlight3Text": "진단서 등 증빙이 가능한 건강 문제나 긴급 여행 차질 발생 시, 추가 비용 없이 최우선 일정 변경을 지원합니다.",
-    "section1Title": "1. 예약금 및 숙소 자리 배정",
-    "section1Text": "선택하신 요가 지도자 과정 또는 리트릿의 교육 자리와 전용 숙소를 확정하기 위해 신청 시 $250 USD(또는 이에 상응하는 금액)의 예약금이 결제됩니다. 이를 통해 아쉬람은 객실 배정, 교재 준비 및 전담 멘토 배정을 체계적으로 진행합니다.",
-    "section2Title": "2. 기수 일정 변경 안내",
-    "section2Text": "예정된 시작일에 참석하기 어려우신 경우, 과정 개강 최소 15일 전까지 입학처에 알려주시면 수수료 없이 12개월 내 다음 기수로 자유롭게 연기하실 수 있습니다.",
-    "section3Title": "3. 잔금 납부 및 중도 취소 규정",
-    "section3Text": "과정 잔금은 오리엔테이션 당일 아쉬람 현장에서 납부하시거나(또는 입국 전 해외 송금/카드 결제) 처리됩니다. 과정이 개강하고 체크인이 완료된 이후에는 객실 및 지도 인력이 전면 배정되므로 수업료와 숙박비는 환불되지 않습니다.",
-    "section4Title": "6. 일정 문의 및 입학 상담",
-    "section4Text": "기수 변경이나 분할 납부 등 상담이 필요하신 경우 매일 이메일 {email} 또는 WhatsApp {phone}을 통해 편안하게 문의해 주시기 바랍니다.",
-    "contactBtn": "입학 상담팀 문의",
-    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
-    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid. The $250 deposit is non-refundable, and any bank fees are deducted.",
-    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
-    "sectionAfterStartTitle": "4. After the Course Begins",
-    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
-    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
-    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
+    "metaTitle": "환불 및 취소 정책 | YogaGarhi",
+    "metaDesc": "발리, 리시케시, 바르칼라 요가 강사 양성 과정 및 리트릿에 대한 YogaGarhi 공식 예약금, 잔금 결제 및 취소 정책 안내입니다.",
+    "badge": "공식 예약 약관",
+    "title": "환불 및 취소 정책",
+    "intro": "안심하고 등록하실 수 있도록 예약금, 잔금 납부, 코스 취소에 관한 공식 규정을 명확히 안내해 드립니다.",
+    "highlight1Title": "예약금 이월",
+    "highlight1Text": "응급 상황으로 인해 취소해야 하는 경우, 예약금을 12개월 이내의 다음 기수로 이월할 수 있습니다.",
+    "highlight2Title": "시작 30일 전 잔금 환불",
+    "highlight2Text": "시작일 기준 30일 이전까지 취소 시 납부하신 잔금 전액을 환불해 드립니다(은행 수수료 제외).",
+    "highlight3Title": "임박 취소 시 크레딧 전환",
+    "highlight3Text": "시작일 전 30일 이내에 취소하시는 경우, 잔금의 100%가 12개월간 유효한 수강 크레딧으로 전환됩니다.",
+    "section1Title": "1. 예약 보증금",
+    "section1Text": "좌석과 객실을 확정하기 위해 신청서 승인 후 미화 250달러($250 USD)의 예약금을 요청드립니다. 이 예약금은 환불되지 않습니다. 입금 즉시 객실 배정과 식사 준비, 강사진 배정을 위해 사용됩니다.",
+    "section2Title": "2. 예약금 이월 (12개월 이내)",
+    "section2Text": "예기치 못한 상황은 누구에게나 일어날 수 있습니다. 항공편 문제, 건강상의 응급 사유 등으로 부득이 취소하셔야 하는 경우 예약금을 추후 기수로 이월할 수 있습니다. 새로운 시작일은 원래 시작일로부터 12개월 이내여야 합니다.",
+    "section3Title": "3. 잔금 납부 및 취소 규정",
+    "section4Title": "6. 문의 및 입학 상담 지원",
+    "section4Text": "예약 또는 취소와 관련된 모든 문의 사항은 입학 상담팀의 이메일 {email} 또는 WhatsApp {phone}을 통해 매일 안내받으실 수 있습니다.",
+    "contactBtn": "입학 상담팀에 문의하기",
+    "section3Intro": "수강료의 잔금은 코스 시작 최소 30일 전까지 전액 납부해 주셔야 합니다.",
+    "section3Bullet1": "시작일 30일 이전 취소 시: 납부하신 잔금 전액을 환불해 드립니다. 단, $250 예약금은 환불 불가이며 발생한 금융 수수료는 차감됩니다.",
+    "section3Bullet2": "시작일 30일 이내 취소 시: 잔금은 현금으로 환불되지 않습니다. 대신 납부 금액의 100%를 12개월 이내에 개설되는 모든 과정에서 사용 가능한 수강 크레딧으로 보관해 드립니다.",
+    "sectionAfterStartTitle": "4. 코스 시작 이후",
+    "sectionAfterStartText": "코스가 일단 시작된 이후에는 조기 퇴교, 자진 중도 포기, 질병이나 개인적 사유로 인한 결석에 대해 환불이나 크레딧 제공이 불가합니다.",
+    "sectionSchoolCancelTitle": "5. YogaGarhi 사정으로 과정이 취소되는 경우",
+    "sectionSchoolCancelText": "만일 당교의 사정으로 코스가 취소되는 경우, 납부하신 전액을 100% 환불받으시거나 추가 비용 없이 다른 기수로 변경하실 수 있습니다.",
+    "highlightsSr": "정책 주요 내용"
   },
   "course300Rishikesh": {
     "metaTitle": "리시케시 300시간 요가 지도자 과정 | RYT 500 인도",
@@ -5900,12 +5900,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "분할 납부가 가능한가요?",
+        "answer": "네, 미화 250달러의 예약금으로 자리를 먼저 예약하실 수 있습니다. 잔금은 코스 시작 최소 30일 전까지 납부해 주셔야 합니다."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "환불 및 취소 정책은 어떻게 되나요?",
+        "answer": "미화 250달러의 예약금은 환불되지 않습니다. 응급 상황으로 취소하셔야 하는 경우 12개월 이내의 다음 기수로 이월 가능합니다. 잔금은 코스 시작 30일 전까지 납부하셔야 합니다. 시작 30일 이전에 취소하시면 납부하신 잔금 전액을 환불해 드립니다(은행 수수료 제외). 그 이후에 취소하시면 잔금은 12개월간 사용 가능한 수강 크레딧으로 전환됩니다. 코스 시작 후에는 환불되지 않습니다. 만약 YogaGarhi 사정으로 기수가 취소될 경우 전액 환불받으시거나 추가 비용 없이 다른 기수로 변경하실 수 있습니다."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -5924,8 +5924,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "분할 납부가 가능한가요?",
+        "answer": "네, 미화 250달러의 예약금으로 자리를 먼저 예약하실 수 있습니다. 잔금은 코스 시작 최소 30일 전까지 납부해 주셔야 합니다."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -6200,11 +6200,11 @@
       "code6": "동료와 스승에 대한 상호 존중",
       "code7": "수련실 내 휴대전화 소지 금지",
       "code8": "모든 수업 100% 출석 필수",
-      "refund1": "12개월 이내 일정 변경 가능",
-      "refund2": "타인에게 자리 양도 가능",
-      "refund3": "학교 사정으로 취소 시 100% 전액 환불",
-      "refund4": "첫날 체험 정책 적용",
-      "refund5": "1일차 종료 후 환불 불가",
+      "refund1": "예약금은 환불 불가",
+      "refund2": "응급 상황 시 12개월 이내 예약금 이월 가능",
+      "refund3": "시작 30일 전까지 잔금 환불 가능",
+      "refund4": "코스 시작 후 환불 불가",
+      "refund5": "학교 사정으로 취소 시 전액 환불",
       "reviewsHeading": "수료생들의 생생한 후기",
       "viewAllGoogle": "Google에서 전체 리뷰 보기",
       "basedOnReviews": "기준 리뷰",
@@ -6644,12 +6644,12 @@
         "answer": "You can take a 45-minute direct flight from Trivandrum (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Varkala Sivagiri (4.5 hours). Private taxi pickups directly from Trivandrum Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "분할 납부가 가능한가요?",
+        "answer": "네, 미화 250달러의 예약금으로 자리를 먼저 예약하실 수 있습니다. 잔금은 코스 시작 최소 30일 전까지 납부해 주셔야 합니다."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "환불 및 취소 정책은 어떻게 되나요?",
+        "answer": "미화 250달러의 예약금은 환불되지 않습니다. 응급 상황으로 취소하셔야 하는 경우 12개월 이내의 다음 기수로 이월 가능합니다. 잔금은 코스 시작 30일 전까지 납부하셔야 합니다. 시작 30일 이전에 취소하시면 납부하신 잔금 전액을 환불해 드립니다(은행 수수료 제외). 그 이후에 취소하시면 잔금은 12개월간 사용 가능한 수강 크레딧으로 전환됩니다. 코스 시작 후에는 환불되지 않습니다. 만약 YogaGarhi 사정으로 기수가 취소될 경우 전액 환불받으시거나 추가 비용 없이 다른 기수로 변경하실 수 있습니다."
       },
       {
         "question": "What is the best time of year to visit Varkala?",
@@ -6919,11 +6919,11 @@
       "code6": "동료와 스승에 대한 상호 존중",
       "code7": "수련실 내 휴대전화 소지 금지",
       "code8": "모든 수업 100% 출석 필수",
-      "refund1": "12개월 이내 일정 변경 가능",
-      "refund2": "타인에게 자리 양도 가능",
-      "refund3": "학교 사정으로 취소 시 100% 전액 환불",
-      "refund4": "첫날 체험 정책 적용",
-      "refund5": "1일차 종료 후 환불 불가",
+      "refund1": "예약금은 환불 불가",
+      "refund2": "응급 상황 시 12개월 이내 예약금 이월 가능",
+      "refund3": "시작 30일 전까지 잔금 환불 가능",
+      "refund4": "코스 시작 후 환불 불가",
+      "refund5": "학교 사정으로 취소 시 전액 환불",
       "reviewsHeading": "수료생들의 생생한 후기",
       "viewAllGoogle": "Google에서 전체 리뷰 보기",
       "basedOnReviews": "기준 리뷰",
@@ -7401,12 +7401,12 @@
         "answer": "From New Trivandrum, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Trivandrum to Varkala Sivagiri (4.5 hours) or book a private taxi directly from Trivandrum to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "분할 납부가 가능한가요?",
+        "answer": "네, 미화 250달러의 예약금으로 자리를 먼저 예약하실 수 있습니다. 잔금은 코스 시작 최소 30일 전까지 납부해 주셔야 합니다."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "환불 및 취소 정책은 어떻게 되나요?",
+        "answer": "미화 250달러의 예약금은 환불되지 않습니다. 응급 상황으로 취소하셔야 하는 경우 12개월 이내의 다음 기수로 이월 가능합니다. 잔금은 코스 시작 30일 전까지 납부하셔야 합니다. 시작 30일 이전에 취소하시면 납부하신 잔금 전액을 환불해 드립니다(은행 수수료 제외). 그 이후에 취소하시면 잔금은 12개월간 사용 가능한 수강 크레딧으로 전환됩니다. 코스 시작 후에는 환불되지 않습니다. 만약 YogaGarhi 사정으로 기수가 취소될 경우 전액 환불받으시거나 추가 비용 없이 다른 기수로 변경하실 수 있습니다."
       },
       {
         "question": "바르칼라에서 요가 과정을 수련하기 가장 좋은 시기는 언제인가요?",
@@ -7425,8 +7425,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "분할 납부가 가능한가요?",
+        "answer": "네, 미화 250달러의 예약금으로 자리를 먼저 예약하실 수 있습니다. 잔금은 코스 시작 최소 30일 전까지 납부해 주셔야 합니다."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -7701,11 +7701,11 @@
       "code6": "동료와 스승에 대한 상호 존중",
       "code7": "수련실 내 휴대전화 소지 금지",
       "code8": "모든 수업 100% 출석 필수",
-      "refund1": "12개월 이내 일정 변경 가능",
-      "refund2": "타인에게 자리 양도 가능",
-      "refund3": "학교 사정으로 취소 시 100% 전액 환불",
-      "refund4": "첫날 체험 정책 적용",
-      "refund5": "1일차 종료 후 환불 불가",
+      "refund1": "예약금은 환불 불가",
+      "refund2": "응급 상황 시 12개월 이내 예약금 이월 가능",
+      "refund3": "시작 30일 전까지 잔금 환불 가능",
+      "refund4": "코스 시작 후 환불 불가",
+      "refund5": "학교 사정으로 취소 시 전액 환불",
       "reviewsHeading": "수료생들의 생생한 후기",
       "viewAllGoogle": "Google에서 전체 리뷰 보기",
       "basedOnReviews": "기준 리뷰",
@@ -8183,12 +8183,12 @@
         "answer": "From New Trivandrum, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Trivandrum to Varkala Sivagiri (4.5 hours) or book a private taxi directly from Trivandrum to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "분할 납부가 가능한가요?",
+        "answer": "네, 미화 250달러의 예약금으로 자리를 먼저 예약하실 수 있습니다. 잔금은 코스 시작 최소 30일 전까지 납부해 주셔야 합니다."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "환불 및 취소 정책은 어떻게 되나요?",
+        "answer": "미화 250달러의 예약금은 환불되지 않습니다. 응급 상황으로 취소하셔야 하는 경우 12개월 이내의 다음 기수로 이월 가능합니다. 잔금은 코스 시작 30일 전까지 납부하셔야 합니다. 시작 30일 이전에 취소하시면 납부하신 잔금 전액을 환불해 드립니다(은행 수수료 제외). 그 이후에 취소하시면 잔금은 12개월간 사용 가능한 수강 크레딧으로 전환됩니다. 코스 시작 후에는 환불되지 않습니다. 만약 YogaGarhi 사정으로 기수가 취소될 경우 전액 환불받으시거나 추가 비용 없이 다른 기수로 변경하실 수 있습니다."
       },
       {
         "question": "What is the best time of year to visit Varkala for yoga training?",
@@ -8207,8 +8207,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "분할 납부가 가능한가요?",
+        "answer": "네, 미화 250달러의 예약금으로 자리를 먼저 예약하실 수 있습니다. 잔금은 코스 시작 최소 30일 전까지 납부해 주셔야 합니다."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -8483,11 +8483,11 @@
       "code6": "동료와 스승에 대한 상호 존중",
       "code7": "수련실 내 휴대전화 소지 금지",
       "code8": "모든 수업 100% 출석 필수",
-      "refund1": "12개월 이내 일정 변경 가능",
-      "refund2": "타인에게 자리 양도 가능",
-      "refund3": "학교 사정으로 취소 시 100% 전액 환불",
-      "refund4": "첫날 체험 정책 적용",
-      "refund5": "1일차 종료 후 환불 불가",
+      "refund1": "예약금은 환불 불가",
+      "refund2": "응급 상황 시 12개월 이내 예약금 이월 가능",
+      "refund3": "시작 30일 전까지 잔금 환불 가능",
+      "refund4": "코스 시작 후 환불 불가",
+      "refund5": "학교 사정으로 취소 시 전액 환불",
       "reviewsHeading": "수료생들의 생생한 후기",
       "viewAllGoogle": "Google에서 전체 리뷰 보기",
       "basedOnReviews": "기준 리뷰",

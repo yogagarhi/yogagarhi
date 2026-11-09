@@ -469,8 +469,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "✓ Kamar mandi modern dengan shower rainfall",
       "✓ Area berjemur dan bersantai pribadi"
     ],
-    "studentGuaranteeTitle": "Garansi Siswa:",
-    "studentGuaranteeText": "Kami memahami rencana perjalanan dapat berubah. Deposit retret Anda tetap terlindungi dengan satu kali penjadwalan ulang gratis dengan pemberitahuan 15 hari.",
+    "studentGuaranteeTitle": "Perlindungan Deposit Keadaan Darurat:",
+    "studentGuaranteeText": "Jika Anda terpaksa membatalkan karena kendala penerbangan atau keadaan darurat medis, deposit $250 USD Anda dapat dialihkan ke jadwal retret mana pun dalam waktu 12 bulan.",
     "airportPickupTitle": "Penjemputan Bandara Pribadi:",
     "airportPickupText": "Kami menyediakan layanan taksi pribadi ber-AC yang nyaman langsung dari area kedatangan bandara menuju resepsionis kampus kami.",
     "durationButtons": {
@@ -714,8 +714,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "✓ Modernes Bad mit Regendusche",
       "✓ Eigene Sonnenterrasse mit Liegen"
     ],
-    "studentGuaranteeTitle": "Teilnehmer-Garantie:",
-    "studentGuaranteeText": "Reisepläne können sich ändern. Deine Anzahlung ist durch eine kostenlose Terminumbuchung geschützt.",
+    "studentGuaranteeTitle": "Notfall-Schutz für Ihre Anzahlung:",
+    "studentGuaranteeText": "Wenn Sie aufgrund eines Flugausfalls oder eines medizinischen Notfalls stornieren müssen, kann Ihre Anzahlung von 250 USD auf jeden späteren Retreat-Termin innerhalb von 12 Monaten übertragen werden.",
     "airportPickupTitle": "Privater Flughafentransfer:",
     "airportPickupText": "Wir organisieren zuverlässige, klimatisierte Taxis direkt von der Ankunftshalle zum Retreat.",
     "durationButtons": {
@@ -966,8 +966,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "Toegang tot alle faciliteiten van Campus I",
       "Ideaal voor stille contemplatie en herstel"
     ],
-    "studentGuaranteeTitle": "Onze Toewijding aan Jouw Welzijn",
-    "studentGuaranteeText": "Wij garanderen een veilige, respectvolle en diep verzorgende omgeving. Onze docenten en therapeuten begeleiden je met persoonlijke aandacht en oprechte zorg.",
+    "studentGuaranteeTitle": "Noodgeval-Aanbetalingsgarantie:",
+    "studentGuaranteeText": "Mocht u door een vluchtprobleem of een medische noodsituatie moeten annuleren, dan kan uw aanbetaling van $250 USD binnen 12 maanden worden overgezet naar elke toekomstige retraitedatum.",
     "airportPickupTitle": "Inbegrepen Luchthaventransfer",
     "airportPickupText": "Je retraite begint zorgeloos. Wij zorgen voor een vriendelijke privéchauffeur die je opwacht bij aankomst op de luchthaven.",
     "durationButtons": {
@@ -1223,8 +1223,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "Accès complet à toutes les commodités du Campus I",
       "Parfait pour la méditation et le repos réparateur"
     ],
-    "studentGuaranteeTitle": "Notre Engagement pour Votre Bien-Être",
-    "studentGuaranteeText": "Nous vous assurons un cadre bienveillant, sécurisé et profondément ressourçant. Notre équipe et nos thérapeutes sont à votre écoute à chaque étape.",
+    "studentGuaranteeTitle": "Protection d'Acompte en Cas d'Urgence :",
+    "studentGuaranteeText": "Si vous devez annuler en raison d'un problème de vol ou d'une urgence médicale, votre acompte de 250 USD peut être reporté à toute date de retraite future dans un délai de 12 mois.",
     "airportPickupTitle": "Transfert Aéroport Inclus",
     "airportPickupText": "Votre voyage commence l'esprit serein : notre chauffeur privé vous accueille personnellement à la sortie de l'aéroport.",
     "durationButtons": {
@@ -1480,8 +1480,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "Acceso total a todas las instalaciones del Campus I",
       "Entorno idóneo para la meditación y el sosiego"
     ],
-    "studentGuaranteeTitle": "Nuestro Compromiso con tu Bienestar",
-    "studentGuaranteeText": "Te ofrecemos un entorno seguro, respetuoso y profundamente sanador. Nuestros profesores y terapeutas te acompañarán con dedicación y calidez.",
+    "studentGuaranteeTitle": "Protección de Depósito por Emergencia:",
+    "studentGuaranteeText": "Si debe cancelar por una emergencia médica o problema de vuelo, su depósito de $250 USD puede trasladarse a cualquier fecha de retiro futura en un plazo de 12 meses.",
     "airportPickupTitle": "Traslado desde el Aeropuerto Incluido",
     "airportPickupText": "Inicia tu retiro sin preocupaciones: un conductor privado te esperará en la terminal a tu llegada.",
     "durationButtons": {
@@ -1737,8 +1737,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "Pieno accesso a tutti i servizi del Campus I",
       "Atmosfera ideale per il raccoglimento e il riposo"
     ],
-    "studentGuaranteeTitle": "Il Nostro Impegno per il Tuo Benessere",
-    "studentGuaranteeText": "Ti garantiamo un ambiente sicuro, accogliente e rigenerante. I nostri docenti e operatori ti seguiranno con cura e dedizione costante.",
+    "studentGuaranteeTitle": "Protezione del Deposito per Emergenze:",
+    "studentGuaranteeText": "In caso di cancellazione per problemi di volo o emergenza medica, il deposito di $250 USD può essere posticipato a qualsiasi data di ritiro successiva entro 12 mesi.",
     "airportPickupTitle": "Transfer Aeroportuale Incluso",
     "airportPickupText": "Inizia la tua esperienza in tutta tranquillità: un autista privato ti attenderà all'uscita del terminal.",
     "durationButtons": {
@@ -1994,8 +1994,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "Полный доступ ко всей инфраструктуре Кампуса I",
       "Идеально для медитации и безмятежного отдыха"
     ],
-    "studentGuaranteeTitle": "Наша Забота о Вашем Благе",
-    "studentGuaranteeText": "Мы создаем безопасное, поддерживающее и восстанавливающее пространство. Наши наставники сопровождают вас с чуткостью и искренним вниманием.",
+    "studentGuaranteeTitle": "Защита Депозита при Форс-Мажоре:",
+    "studentGuaranteeText": "Если вам необходимо отменить поездку из-за отмены рейса или проблем со здоровьем, депозит $250 USD можно перенести на любую будущую дату ретрита в течение 12 месяцев.",
     "airportPickupTitle": "Трансфер из Аэропорта Включен",
     "airportPickupText": "Ваш отдых начнется без лишних забот: персональный водитель встретит вас с табличкой в зоне прилета.",
     "durationButtons": {
@@ -2251,8 +2251,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "キャンパスIのすべての施設を自由にご利用可能",
       "静かな瞑想や心身の休息に最適なロケーション"
     ],
-    "studentGuaranteeTitle": "安心と安全をお約束する私たちの理念",
-    "studentGuaranteeText": "お一人おひとりを尊重し、深く心身を癒やす安全な環境をご用意しています。講師やセラピストが誠意を持って寄り添います。",
+    "studentGuaranteeTitle": "緊急時の予約金保護保証：",
+    "studentGuaranteeText": "フライトの欠航や急病などの緊急事態によりキャンセルが必要な場合、250米ドルの予約金を12ヶ月以内の任意のリトリート日程へ移行できます。",
     "airportPickupTitle": "空港送迎サービス完備",
     "airportPickupText": "ご到着時からリラックスしていただけるよう、空港出口にて専用ドライバーがお出迎えいたします。",
     "durationButtons": {
@@ -2508,8 +2508,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "캠퍼스 I의 모든 시설 자유롭게 이용 가능",
       "깊은 명상과 쉼에 최적화된 고요한 환경"
     ],
-    "studentGuaranteeTitle": "수강생 여러분을 위한 진심 어린 약속",
-    "studentGuaranteeText": "안전하고 존중받는 따뜻한 치유의 공간을 제공합니다. 경험 많은 강사진과 테라피스트들이 정성을 다해 함께합니다.",
+    "studentGuaranteeTitle": "응급 상황 예약금 보호 보장:",
+    "studentGuaranteeText": "항공 결항이나 질병 등 불가피한 사유로 취소하셔야 하는 경우, $250 예약금을 12개월 이내의 향후 리트릿 일정으로 이월하실 수 있습니다.",
     "airportPickupTitle": "공항 픽업 서비스 무료 포함",
     "airportPickupText": "도착하시는 순간부터 안심하실 수 있도록 전용 기사가 공항 출구에서 직접 마중을 나갑니다.",
     "durationButtons": {
@@ -2765,8 +2765,8 @@ export const RETREAT_DETAIL_UI: Record<string, RetreatUIData> = {
       "全权共享使用一号校区的所有公共设施与服务",
       "静思默想、身心深度修复的理想世外桃源"
     ],
-    "studentGuaranteeTitle": "我们对每位学员的由衷承诺",
-    "studentGuaranteeText": "我们承诺为您营造一个安全、受尊重且充满关爱的疗愈环境。资深导师与理疗团队将全心全意陪伴您的蜕变旅程。",
+    "studentGuaranteeTitle": "紧急情况定金保障：",
+    "studentGuaranteeText": "如因航班延误或医疗紧急情况必须取消，您的250美元定金可在12个月内顺延至未来的任何静修营期次。",
     "airportPickupTitle": "全流程贴心免费机场接送",
     "airportPickupText": "从抵埗之刻起便安心无忧：专属私家车司机将在机场出口举牌恭候，安全送达校区。",
     "durationButtons": {

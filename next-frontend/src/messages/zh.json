@@ -1005,8 +1005,8 @@
         "answer": "住宿套餐包含23晚空调独卫客房住宿、每日3餐阿育吠陀素食、草本茶饮、全套纸质与电子教材、瑜伽垫辅具、登巴萨机场专车接机、巴厘岛传统按摩、文化圣地参访、线上行前预科班、35+排课手册、RYT 200 国际认证以及终身免学费重修资格。「仅限学费」方案（$999 USD）不含食宿。"
       },
       {
-        "question": "取消预订与退款政策是如何规定的？",
-        "answer": "学员可在12个月内免费改期至任何后续班期，或无偿转让名额给朋友。若因学校原因取消全额退款。此外，我们提供开课第一天（Day 1）无忧体验保证，但因严格小班名额限制，第一天课程结束后恕不办理退款。"
+        "question": "退款和取消政策是什么？",
+        "answer": "您的250美元定金不予退还。如因紧急情况必须取消，可在12个月内转至将来的期次。剩余学费须在开课前30天付清。若在开课前30天或更早取消，我们将退还您所付的全部尾款；银行手续费将予以扣除。若在此之后取消，尾款将转为12个月内适用于任何课程的抵用金。课程开课后概不退款。若 YogaGarhi 取消期次，您可以选择全额退还全部已付费用，或免费顺延至其他期次。"
       },
       {
         "question": "培训期间为学员提供什么样的日常饮食？",
@@ -1098,11 +1098,11 @@
       "code6": "同修之间互尊互爱",
       "code7": "课堂严禁携带手机",
       "code8": "须全勤完成各项课程",
-      "refund1": "12个月内免费改期",
-      "refund2": "名额允许转让给他人",
-      "refund3": "若校方原因取消全额退款",
-      "refund4": "首日试听无忧政策",
-      "refund5": "开课第1天结束后不予退款",
+      "refund1": "定金概不退还",
+      "refund2": "突发紧急情况下定金可在12个月内顺延",
+      "refund3": "开课前30天及以上可退还尾款",
+      "refund4": "课程开始后不设退款",
+      "refund5": "学校取消则全额退款",
       "reviewsHeading": "历届学员真实评价",
       "viewAllGoogle": "在 Google 查看全部评价",
       "basedOnReviews": "评价基于",
@@ -1683,8 +1683,8 @@
         "answer": "住宿套餐包含23晚空调独卫客房住宿、每日3餐阿育吠陀素食、草本茶饮、全套纸质与电子教材、瑜伽垫辅具、登巴萨机场专车接机、巴厘岛传统按摩、文化圣地参访、线上行前预科班、35+排课手册、RYT 200 国际认证以及终身免学费重修资格。「仅限学费」方案（$999 USD）不含食宿。"
       },
       {
-        "question": "取消预订与退款政策是如何规定的？",
-        "answer": "学员可在12个月内免费改期至任何后续班期，或无偿转让名额给朋友。若因学校原因取消全额退款。此外，我们提供开课第一天（Day 1）无忧体验保证，但因严格小班名额限制，第一天课程结束后恕不办理退款。"
+        "question": "退款和取消政策是什么？",
+        "answer": "您的250美元定金不予退还。如因紧急情况必须取消，可在12个月内转至将来的期次。剩余学费须在开课前30天付清。若在开课前30天或更早取消，我们将退还您所付的全部尾款；银行手续费将予以扣除。若在此之后取消，尾款将转为12个月内适用于任何课程的抵用金。课程开课后概不退款。若 YogaGarhi 取消期次，您可以选择全额退还全部已付费用，或免费顺延至其他期次。"
       }
     ],
     "hero": {
@@ -1938,11 +1938,11 @@
       "code6": "同修之间互尊互爱",
       "code7": "课堂严禁携带手机",
       "code8": "须全勤完成各项课程",
-      "refund1": "12个月内免费改期",
-      "refund2": "名额允许转让给他人",
-      "refund3": "若校方原因取消全额退款",
-      "refund4": "首日试听无忧政策",
-      "refund5": "开课第1天结束后不予退款",
+      "refund1": "定金概不退还",
+      "refund2": "突发紧急情况下定金可在12个月内顺延",
+      "refund3": "开课前30天及以上可退还尾款",
+      "refund4": "课程开始后不设退款",
+      "refund5": "学校取消则全额退款",
       "reviewsHeading": "历届学员真实评价",
       "viewAllGoogle": "在 Google 查看全部评价",
       "basedOnReviews": "评价基于",
@@ -2634,11 +2634,11 @@
       "code6": "同修之间互尊互爱",
       "code7": "课堂严禁携带手机",
       "code8": "须全勤完成各项课程",
-      "refund1": "12个月内免费改期",
-      "refund2": "名额允许转让给他人",
-      "refund3": "若校方原因取消全额退款",
-      "refund4": "首日试听无忧政策",
-      "refund5": "开课第1天结束后不予退款",
+      "refund1": "定金概不退还",
+      "refund2": "突发紧急情况下定金可在12个月内顺延",
+      "refund3": "开课前30天及以上可退还尾款",
+      "refund4": "课程开始后不设退款",
+      "refund5": "学校取消则全额退款",
       "reviewsHeading": "历届学员真实评价",
       "viewAllGoogle": "在 Google 查看全部评价",
       "basedOnReviews": "评价基于",
@@ -3072,12 +3072,12 @@
         "answer": "You can take a 45-minute direct flight from Delhi (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Haridwar (4.5 hours). Private taxi pickups directly from Delhi Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "可以分期付款吗？",
+        "answer": "可以，您可以通过支付250美元定金锁定名额。剩余学费须在开课前至少30天全额付清。"
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "退款和取消政策是什么？",
+        "answer": "您的250美元定金不予退还。如因紧急情况必须取消，可在12个月内转至将来的期次。剩余学费须在开课前30天付清。若在开课前30天或更早取消，我们将退还您所付的全部尾款；银行手续费将予以扣除。若在此之后取消，尾款将转为12个月内适用于任何课程的抵用金。课程开课后概不退款。若 YogaGarhi 取消期次，您可以选择全额退还全部已付费用，或免费顺延至其他期次。"
       },
       {
         "question": "What is the best time of year to visit Rishikesh?",
@@ -3347,11 +3347,11 @@
       "code6": "同修之间互尊互爱",
       "code7": "课堂严禁携带手机",
       "code8": "须全勤完成各项课程",
-      "refund1": "12个月内免费改期",
-      "refund2": "名额允许转让给他人",
-      "refund3": "若校方原因取消全额退款",
-      "refund4": "首日试听无忧政策",
-      "refund5": "开课第1天结束后不予退款",
+      "refund1": "定金概不退还",
+      "refund2": "突发紧急情况下定金可在12个月内顺延",
+      "refund3": "开课前30天及以上可退还尾款",
+      "refund4": "课程开始后不设退款",
+      "refund5": "学校取消则全额退款",
       "reviewsHeading": "历届学员真实评价",
       "viewAllGoogle": "在 Google 查看全部评价",
       "basedOnReviews": "评价基于",
@@ -3829,12 +3829,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "可以分期付款吗？",
+        "answer": "可以，您可以通过支付250美元定金锁定名额。剩余学费须在开课前至少30天全额付清。"
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "退款和取消政策是什么？",
+        "answer": "您的250美元定金不予退还。如因紧急情况必须取消，可在12个月内转至将来的期次。剩余学费须在开课前30天付清。若在开课前30天或更早取消，我们将退还您所付的全部尾款；银行手续费将予以扣除。若在此之后取消，尾款将转为12个月内适用于任何课程的抵用金。课程开课后概不退款。若 YogaGarhi 取消期次，您可以选择全额退还全部已付费用，或免费顺延至其他期次。"
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -3853,8 +3853,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "可以分期付款吗？",
+        "answer": "可以，您可以通过支付250美元定金锁定名额。剩余学费须在开课前至少30天全额付清。"
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -4129,11 +4129,11 @@
       "code6": "同修之间互尊互爱",
       "code7": "课堂严禁携带手机",
       "code8": "须全勤完成各项课程",
-      "refund1": "12个月内免费改期",
-      "refund2": "名额允许转让给他人",
-      "refund3": "若校方原因取消全额退款",
-      "refund4": "首日试听无忧政策",
-      "refund5": "开课第1天结束后不予退款",
+      "refund1": "定金概不退还",
+      "refund2": "突发紧急情况下定金可在12个月内顺延",
+      "refund3": "开课前30天及以上可退还尾款",
+      "refund4": "课程开始后不设退款",
+      "refund5": "学校取消则全额退款",
       "reviewsHeading": "历届学员真实评价",
       "viewAllGoogle": "在 Google 查看全部评价",
       "basedOnReviews": "评价基于",
@@ -4631,7 +4631,7 @@
     "heroHeading": "申请瑜伽导师培训课程",
     "heroSub": "开启成为正统、国际认证瑜伽导师的旅程。选择您的课程，查看入学要求，并锁定精品小班名额。",
     "smallCohorts": "8–10人精品小班",
-    "flexibleRescheduling": "灵活调整改期",
+    "flexibleRescheduling": "紧急情况定金保障",
     "rytCertification": "Yoga Alliance RYT 国际认证",
     "chooseHeading": "步骤 1：选择您的课程",
     "chooseSub": "选择与您当前的练习水平和职业发展目标契合的导师培训项目。",
@@ -4668,7 +4668,7 @@
     "s2Title": "核对申请资格与要求",
     "s2Desc": "100与200小时对热忱的初学者及有经验者均开放；300小时需要持有认证的200小时RYT证书。",
     "s3Title": "锁定您的学习席位",
-    "s3Desc": "确定心仪的开课日期与房型。享受灵活的预订与延期保障政策。",
+    "s3Desc": "支付250美元定金锁定心仪日期和房型，紧急情况下可在12个月内顺延。",
     "s4Title": "即刻开通 Pre-YTTC 预习资源",
     "s4Desc": "获得 YogaGarhi 入学指南，并立即解锁 Pre-YTTC 在线解剖学与基础预习视频模块。",
     "s5Title": "抵达校区并开启浸润之旅",
@@ -4679,8 +4679,8 @@
     "a1": "不需要。我们的200小时课程体系从最根本的底蕴逐步进阶到高级应用。我们真诚欢迎不同年龄、背景及柔韧度的练习者。最重要的是内心的专注、开放与求知欲。",
     "q2": "如何锁定名额，付款流程是怎样的？",
     "a2": "支付注册定金即可确认报名并保留您的席位。申请过程中将提供详细的付款进度与支持的支付方式。",
-    "q3": "如果行程变动或日期需要调整该怎么办？",
-    "a3": "我们为未来的期次提供灵活的改期政策。如需更改时间，请提前与我们的招生团队联系。",
+    "q3": "如果我的旅行日期或行程有变怎么办？",
+    "a3": "如果因紧急情况必须取消，您可在12个月内将250美元定金顺延至将来的期次。请尽快联系我们的招生团队安排新日期。",
     "q4": "学费包含哪些内容？",
     "a4": "住宿制套餐包含全额学费、全美瑜伽联盟认证证书、纸质教材、全程住宿、每日3餐 Sattvic 纯净素食、周末文化游览以及 Pre-YTTC 在线学习平台权限。",
     "q5": "每期班级有多少名学员？",
@@ -4809,8 +4809,8 @@
     "faqTitle": "常见问题解答",
     "needGuidance": "需要帮助挑选合适的静修营吗？",
     "guidanceSub": "我们的顾问团队随时协助您办理机票接驳、签证及行程定制。",
-    "reschedulePolicyTitle": "改期与退订条款",
-    "reschedulePolicyText": "可在12个月内灵活改期。第1天课程开始后概不退费。",
+    "reschedulePolicyTitle": "取消与定金条款",
+    "reschedulePolicyText": "您的250美元定金概不退还。如因突发紧急情况取消，定金可在12个月内转至未来日期。若在开营日前30天或更早取消，我们将退还您支付的全部剩余尾款；银行手续费将予以扣除。若在开营日前30天内取消，尾款将全额转换为有效期12个月的抵用金。静修营正式开始后概不退款。若 YogaGarhi 取消静修营，您将获得全额退款或免费改期。",
     "packages": {
       "bali-3-days": {
         "title": "巴厘岛乌布 3天2晚 瑜伽静修营",
@@ -4880,7 +4880,7 @@
           },
           {
             "question": "改期政策是怎样的？",
-            "answer": "提前15天通知，每位学员均享有一次免费更改日期的权利。"
+            "answer": "您的250美元定金不可退还。因紧急情况可于12个月内延期，剩余学费在开营30天前可全额退款。"
           },
           {
             "question": "机场交通如何安排？",
@@ -5626,33 +5626,33 @@
     "contactBtn": "联系教务团队"
   },
   "refundPolicy": {
-    "metaTitle": "退款与改期政策 | YogaGarhi",
-    "metaDesc": "YogaGarhi为巴厘岛和瑞诗凯诗瑜伽导师培训及静修营提供透明、灵活的定金与转班政策。",
-    "badge": "安心保障 ＆ 灵活改期承诺",
-    "title": "退款与班期调换政策",
-    "intro": "我们深知生活中难免出现不可预见的变动。在YogaGarhi，我们提供透明而灵活的预订条款，全方位守护您对心灵成长之旅的投入。",
-    "highlight1Title": "100%支持名额顺延",
-    "highlight1Text": "您支付的定金在12个月内100%有效，可自由顺延至未来任意班期或调换校区（巴厘岛 / 瑞诗凯诗）。",
-    "highlight2Title": "12个月超长有效期",
-    "highlight2Text": "需要调整行程？自原定开课日起，您整整拥有1年时间安排入学参加培训或静修。",
-    "highlight3Title": "医疗紧急情况保障",
-    "highlight3Text": "如遇有医疗凭证或行程受阻的突发不可抗力，我们提供零手续费优先改期支持。",
-    "section1Title": "1. 预订定金与名额席位锁定",
-    "section1Text": "为确保您在所选导师培训课程或静修营中的教学席位与专属客房，报名时需支付 $250 USD（或等值货币）定金。此费用用于静修中心提前保留房间、印制教学手册及分配专属教学导师。",
-    "section2Title": "2. 班期调整与开课改期",
-    "section2Text": "若您无法按原计划报到，只需在开课前至少15天通知招生办公室，即可在12个月内免费改期至后续任意班次，无需承担任何违约罚金。",
-    "section3Title": "3. 尾款支付与退改细则",
-    "section3Text": "课程尾款于开学迎新日当天在静修中心现场支付（或提前通过银行电汇 / 信用卡链接结清）。一旦课程开班且学员完成入住，由于房间及教学师资资源已完成锁定，学费及住宿费恕不退还。",
-    "section4Title": "6. 疑问咨询与招生支持",
-    "section4Text": "有关改期安排或个性化分期方案，我们的招生顾问每日均可通过电邮 {email} 或 WhatsApp {phone} 为您提供贴心解答。",
-    "contactBtn": "联系招生办公室",
-    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
-    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid. The $250 deposit is non-refundable, and any bank fees are deducted.",
-    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
-    "sectionAfterStartTitle": "4. After the Course Begins",
-    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
-    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
-    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
+    "metaTitle": "退款与取消政策 | YogaGarhi",
+    "metaDesc": "YogaGarhi 针对巴厘岛、瑞诗凯诗和瓦尔卡拉瑜伽导师培训及静修营的官方定金、余款支付与取消退款政策。",
+    "badge": "官方预订条款",
+    "title": "退款与取消政策",
+    "intro": "我们希望您在预订时倍感安心。以下是关于预订定金、尾款支付及课程取消的官方政策说明。",
+    "highlight1Title": "定金延期顺延",
+    "highlight1Text": "如因突发紧急情况必须取消，您可在12个月内将定金转至未来的其他期次。",
+    "highlight2Title": "开课前30天退还尾款",
+    "highlight2Text": "在开课前30天或更早取消，可获得已付尾款的全额退款；银行手续费将予以扣除。",
+    "highlight3Title": "临期取消转为学费抵用金",
+    "highlight3Text": "如在开课前30天以内取消，已付尾款的100%将转换为有效期为12个月的课程抵用金。",
+    "section1Title": "1. 预订定金",
+    "section1Text": "为保留您的席位与住宿房间，在您的申请获批后需支付250美元的预订定金。该笔定金概不退还。我们将立即用于为您预订住宿房型，并筹备您所在期次的餐饮与导师服务团队。",
+    "section2Title": "2. 定金转期（12个月内有效）",
+    "section2Text": "生活难免出现突发变故。如因航班问题、突发身体疾病或其他不可抗力紧急情况必须取消，您可将定金转至未来的培训期次。新的开课日期须在原开课日起12个月以内。",
+    "section3Title": "3. 尾款支付与取消规定",
+    "section4Title": "6. 咨询与招生咨询支持",
+    "section4Text": "如有任何关于预订或取消的疑问，我们的招生团队每天均可通过电子邮件 {email} 或 WhatsApp {phone} 为您解答。",
+    "contactBtn": "联系招生处",
+    "section3Intro": "剩余课程学费必须在课程开始前至少30天全额付清。",
+    "section3Bullet1": "若在开课前30天或更早取消：我们将全额退还您支付的剩余学费。250美元定金不予退还，且需扣除相关银行手续费。",
+    "section3Bullet2": "若在开课前30天内取消：剩余学费将不以现金形式退还。作为替代方案，我们将保留该金额的100%作为学费抵用金，可在12个月内用于任何课程。",
+    "sectionAfterStartTitle": "4. 课程正式开始后",
+    "sectionAfterStartText": "课程一旦正式开课，如因个人原因、自愿放弃或因病缺课，恕不提供任何退款或课程抵用金。",
+    "sectionSchoolCancelTitle": "5. 若 YogaGarhi 取消期次",
+    "sectionSchoolCancelText": "若因校方原因必须取消某一期次，您可以选择全额退还已付的全部费用，或免费更换至其他培训期次。",
+    "highlightsSr": "政策要点摘要"
   },
   "course300Rishikesh": {
     "metaTitle": "瑞诗凯诗300小时瑜伽导师培训 | RYT 500 印度",
@@ -5900,12 +5900,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "可以分期付款吗？",
+        "answer": "可以，您可以通过支付250美元定金锁定名额。剩余学费须在开课前至少30天全额付清。"
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "退款和取消政策是什么？",
+        "answer": "您的250美元定金不予退还。如因紧急情况必须取消，可在12个月内转至将来的期次。剩余学费须在开课前30天付清。若在开课前30天或更早取消，我们将退还您所付的全部尾款；银行手续费将予以扣除。若在此之后取消，尾款将转为12个月内适用于任何课程的抵用金。课程开课后概不退款。若 YogaGarhi 取消期次，您可以选择全额退还全部已付费用，或免费顺延至其他期次。"
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -5924,8 +5924,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "可以分期付款吗？",
+        "answer": "可以，您可以通过支付250美元定金锁定名额。剩余学费须在开课前至少30天全额付清。"
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -6200,11 +6200,11 @@
       "code6": "同修之间互尊互爱",
       "code7": "课堂严禁携带手机",
       "code8": "须全勤完成各项课程",
-      "refund1": "12个月内免费改期",
-      "refund2": "名额允许转让给他人",
-      "refund3": "若校方原因取消全额退款",
-      "refund4": "首日试听无忧政策",
-      "refund5": "开课第1天结束后不予退款",
+      "refund1": "定金概不退还",
+      "refund2": "突发紧急情况下定金可在12个月内顺延",
+      "refund3": "开课前30天及以上可退还尾款",
+      "refund4": "课程开始后不设退款",
+      "refund5": "学校取消则全额退款",
       "reviewsHeading": "历届学员真实评价",
       "viewAllGoogle": "在 Google 查看全部评价",
       "basedOnReviews": "评价基于",
@@ -6644,12 +6644,12 @@
         "answer": "You can take a 45-minute direct flight from Trivandrum (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Varkala Sivagiri (4.5 hours). Private taxi pickups directly from Trivandrum Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "可以分期付款吗？",
+        "answer": "可以，您可以通过支付250美元定金锁定名额。剩余学费须在开课前至少30天全额付清。"
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "退款和取消政策是什么？",
+        "answer": "您的250美元定金不予退还。如因紧急情况必须取消，可在12个月内转至将来的期次。剩余学费须在开课前30天付清。若在开课前30天或更早取消，我们将退还您所付的全部尾款；银行手续费将予以扣除。若在此之后取消，尾款将转为12个月内适用于任何课程的抵用金。课程开课后概不退款。若 YogaGarhi 取消期次，您可以选择全额退还全部已付费用，或免费顺延至其他期次。"
       },
       {
         "question": "What is the best time of year to visit Varkala?",
@@ -6919,11 +6919,11 @@
       "code6": "同修之间互尊互爱",
       "code7": "课堂严禁携带手机",
       "code8": "须全勤完成各项课程",
-      "refund1": "12个月内免费改期",
-      "refund2": "名额允许转让给他人",
-      "refund3": "若校方原因取消全额退款",
-      "refund4": "首日试听无忧政策",
-      "refund5": "开课第1天结束后不予退款",
+      "refund1": "定金概不退还",
+      "refund2": "突发紧急情况下定金可在12个月内顺延",
+      "refund3": "开课前30天及以上可退还尾款",
+      "refund4": "课程开始后不设退款",
+      "refund5": "学校取消则全额退款",
       "reviewsHeading": "历届学员真实评价",
       "viewAllGoogle": "在 Google 查看全部评价",
       "basedOnReviews": "评价基于",
@@ -7401,12 +7401,12 @@
         "answer": "From New Trivandrum, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Trivandrum to Varkala Sivagiri (4.5 hours) or book a private taxi directly from Trivandrum to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "可以分期付款吗？",
+        "answer": "可以，您可以通过支付250美元定金锁定名额。剩余学费须在开课前至少30天全额付清。"
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "退款和取消政策是什么？",
+        "answer": "您的250美元定金不予退还。如因紧急情况必须取消，可在12个月内转至将来的期次。剩余学费须在开课前30天付清。若在开课前30天或更早取消，我们将退还您所付的全部尾款；银行手续费将予以扣除。若在此之后取消，尾款将转为12个月内适用于任何课程的抵用金。课程开课后概不退款。若 YogaGarhi 取消期次，您可以选择全额退还全部已付费用，或免费顺延至其他期次。"
       },
       {
         "question": "去瓦尔卡拉参加瑜伽培训的最佳季节是什么时候？",
@@ -7425,8 +7425,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "可以分期付款吗？",
+        "answer": "可以，您可以通过支付250美元定金锁定名额。剩余学费须在开课前至少30天全额付清。"
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -7701,11 +7701,11 @@
       "code6": "同修之间互尊互爱",
       "code7": "课堂严禁携带手机",
       "code8": "须全勤完成各项课程",
-      "refund1": "12个月内免费改期",
-      "refund2": "名额允许转让给他人",
-      "refund3": "若校方原因取消全额退款",
-      "refund4": "首日试听无忧政策",
-      "refund5": "开课第1天结束后不予退款",
+      "refund1": "定金概不退还",
+      "refund2": "突发紧急情况下定金可在12个月内顺延",
+      "refund3": "开课前30天及以上可退还尾款",
+      "refund4": "课程开始后不设退款",
+      "refund5": "学校取消则全额退款",
       "reviewsHeading": "历届学员真实评价",
       "viewAllGoogle": "在 Google 查看全部评价",
       "basedOnReviews": "评价基于",
@@ -8183,12 +8183,12 @@
         "answer": "From New Trivandrum, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Trivandrum to Varkala Sivagiri (4.5 hours) or book a private taxi directly from Trivandrum to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "可以分期付款吗？",
+        "answer": "可以，您可以通过支付250美元定金锁定名额。剩余学费须在开课前至少30天全额付清。"
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "退款和取消政策是什么？",
+        "answer": "您的250美元定金不予退还。如因紧急情况必须取消，可在12个月内转至将来的期次。剩余学费须在开课前30天付清。若在开课前30天或更早取消，我们将退还您所付的全部尾款；银行手续费将予以扣除。若在此之后取消，尾款将转为12个月内适用于任何课程的抵用金。课程开课后概不退款。若 YogaGarhi 取消期次，您可以选择全额退还全部已付费用，或免费顺延至其他期次。"
       },
       {
         "question": "What is the best time of year to visit Varkala for yoga training?",
@@ -8207,8 +8207,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "可以分期付款吗？",
+        "answer": "可以，您可以通过支付250美元定金锁定名额。剩余学费须在开课前至少30天全额付清。"
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -8483,11 +8483,11 @@
       "code6": "同修之间互尊互爱",
       "code7": "课堂严禁携带手机",
       "code8": "须全勤完成各项课程",
-      "refund1": "12个月内免费改期",
-      "refund2": "名额允许转让给他人",
-      "refund3": "若校方原因取消全额退款",
-      "refund4": "首日试听无忧政策",
-      "refund5": "开课第1天结束后不予退款",
+      "refund1": "定金概不退还",
+      "refund2": "突发紧急情况下定金可在12个月内顺延",
+      "refund3": "开课前30天及以上可退还尾款",
+      "refund4": "课程开始后不设退款",
+      "refund5": "学校取消则全额退款",
       "reviewsHeading": "历届学员真实评价",
       "viewAllGoogle": "在 Google 查看全部评价",
       "basedOnReviews": "评价基于",

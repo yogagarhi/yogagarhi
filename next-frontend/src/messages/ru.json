@@ -1005,8 +1005,8 @@
         "answer": "В стоимость входит 23 ночи проживания (санузел, горячая вода, кондиционер, Wi-Fi), 3-разовое вегетарианское питание, травяные чаи и вода, учебники, коврики и пропсы, трансфер из аэропорта DPS, балийский массаж, экскурсии, онлайн-подготовка, книга последовательностей, сертификат Yoga Alliance RYT 200 и право бесплатного повторения курса. В пакете «Только обучение» ($999 USD) проживание и питание не предусмотрены."
       },
       {
-        "question": "Каковы условия отмены и возврата средств?",
-        "answer": "Вы можете бесплатно перенести дату курса в течение 12 месяцев или передать бронь другому человеку. При отмене курса школой мы возвращаем 100% средств, а также действует гарантия пробного Дня 1. Из-за лимита мест после начала Дня 1 оплата возврату не подлежит."
+        "question": "Каковы правила возврата и отмены участия?",
+        "answer": "Депозит $250 USD является невозвратным. При вынужденной отмене из-за непредвиденных обстоятельств его можно перенести на будущий поток в течение 12 месяцев. Оставшаяся часть стоимости вносится за 30 дней до начала курса. При отмене за 30 и более дней до старта возвращается полный остаток внесенной оплаты; банковские комиссии удерживаются. При более поздней отмене остаток зачисляется как депозит на любой курс в течение 12 месяцев. После начала курса средства не возвращаются. В случае отмены потока школой YogaGarhi вы можете получить полный возврат всех внесенных средств либо перенести бронирование без доплат."
       },
       {
         "question": "Какая еда подается во время обучения?",
@@ -1098,11 +1098,11 @@
       "code6": "Взаимное уважение",
       "code7": "Запрет телефонов в зале практики",
       "code8": "Обязательное 100% присутствие",
-      "refund1": "Перенос даты в течение 12 месяцев",
-      "refund2": "Возможна передача брони другому лицу",
-      "refund3": "Полный возврат при отмене курса школой",
-      "refund4": "Правило пробного дня",
-      "refund5": "Без возврата оплаты после Дня 1",
+      "refund1": "Депозит является невозвратным",
+      "refund2": "Перенос депозита в течение 12 месяцев (при форс-мажоре)",
+      "refund3": "Возврат остатка за 30+ дней до старта",
+      "refund4": "Возврат средств невозможен после начала курса",
+      "refund5": "Полный возврат средств при отмене потока школой",
       "reviewsHeading": "Отзывы наших выпускников",
       "viewAllGoogle": "Смотреть все отзывы на Google",
       "basedOnReviews": "На основе",
@@ -1683,8 +1683,8 @@
         "answer": "В стоимость входит 23 ночи проживания (санузел, горячая вода, кондиционер, Wi-Fi), 3-разовое вегетарианское питание, травяные чаи и вода, учебники, коврики и пропсы, трансфер из аэропорта DPS, балийский массаж, экскурсии, онлайн-подготовка, книга последовательностей, сертификат Yoga Alliance RYT 200 и право бесплатного повторения курса. В пакете «Только обучение» ($999 USD) проживание и питание не предусмотрены."
       },
       {
-        "question": "Каковы условия отмены и возврата средств?",
-        "answer": "Вы можете бесплатно перенести дату курса в течение 12 месяцев или передать бронь другому человеку. При отмене курса школой мы возвращаем 100% средств, а также действует гарантия пробного Дня 1. Из-за лимита мест после начала Дня 1 оплата возврату не подлежит."
+        "question": "Каковы правила возврата и отмены участия?",
+        "answer": "Депозит $250 USD является невозвратным. При вынужденной отмене из-за непредвиденных обстоятельств его можно перенести на будущий поток в течение 12 месяцев. Оставшаяся часть стоимости вносится за 30 дней до начала курса. При отмене за 30 и более дней до старта возвращается полный остаток внесенной оплаты; банковские комиссии удерживаются. При более поздней отмене остаток зачисляется как депозит на любой курс в течение 12 месяцев. После начала курса средства не возвращаются. В случае отмены потока школой YogaGarhi вы можете получить полный возврат всех внесенных средств либо перенести бронирование без доплат."
       }
     ],
     "hero": {
@@ -1938,11 +1938,11 @@
       "code6": "Взаимное уважение",
       "code7": "Запрет телефонов в зале практики",
       "code8": "Обязательное 100% присутствие",
-      "refund1": "Перенос даты в течение 12 месяцев",
-      "refund2": "Возможна передача брони другому лицу",
-      "refund3": "Полный возврат при отмене курса школой",
-      "refund4": "Правило пробного дня",
-      "refund5": "Без возврата оплаты после Дня 1",
+      "refund1": "Депозит является невозвратным",
+      "refund2": "Перенос депозита в течение 12 месяцев (при форс-мажоре)",
+      "refund3": "Возврат остатка за 30+ дней до старта",
+      "refund4": "Возврат средств невозможен после начала курса",
+      "refund5": "Полный возврат средств при отмене потока школой",
       "reviewsHeading": "Отзывы наших выпускников",
       "viewAllGoogle": "Смотреть все отзывы на Google",
       "basedOnReviews": "На основе",
@@ -2634,11 +2634,11 @@
       "code6": "Взаимное уважение",
       "code7": "Запрет телефонов в зале практики",
       "code8": "Обязательное 100% присутствие",
-      "refund1": "Перенос даты в течение 12 месяцев",
-      "refund2": "Возможна передача брони другому лицу",
-      "refund3": "Полный возврат при отмене курса школой",
-      "refund4": "Правило пробного дня",
-      "refund5": "Без возврата оплаты после Дня 1",
+      "refund1": "Депозит является невозвратным",
+      "refund2": "Перенос депозита в течение 12 месяцев (при форс-мажоре)",
+      "refund3": "Возврат остатка за 30+ дней до старта",
+      "refund4": "Возврат средств невозможен после начала курса",
+      "refund5": "Полный возврат средств при отмене потока школой",
       "reviewsHeading": "Отзывы наших выпускников",
       "viewAllGoogle": "Смотреть все отзывы на Google",
       "basedOnReviews": "На основе",
@@ -3072,12 +3072,12 @@
         "answer": "You can take a 45-minute direct flight from Delhi (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Haridwar (4.5 hours). Private taxi pickups directly from Delhi Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Возможна ли оплата в рассрочку?",
+        "answer": "Да, закрепить место за собой можно внесением депозита $250 USD. Оставшаяся сумма подлежит оплате не позднее чем за 30 дней до начала курса."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Каковы правила возврата и отмены участия?",
+        "answer": "Депозит $250 USD является невозвратным. При вынужденной отмене из-за непредвиденных обстоятельств его можно перенести на будущий поток в течение 12 месяцев. Оставшаяся часть стоимости вносится за 30 дней до начала курса. При отмене за 30 и более дней до старта возвращается полный остаток внесенной оплаты; банковские комиссии удерживаются. При более поздней отмене остаток зачисляется как депозит на любой курс в течение 12 месяцев. После начала курса средства не возвращаются. В случае отмены потока школой YogaGarhi вы можете получить полный возврат всех внесенных средств либо перенести бронирование без доплат."
       },
       {
         "question": "What is the best time of year to visit Rishikesh?",
@@ -3347,11 +3347,11 @@
       "code6": "Взаимное уважение",
       "code7": "Запрет телефонов в зале практики",
       "code8": "Обязательное 100% присутствие",
-      "refund1": "Перенос даты в течение 12 месяцев",
-      "refund2": "Возможна передача брони другому лицу",
-      "refund3": "Полный возврат при отмене курса школой",
-      "refund4": "Правило пробного дня",
-      "refund5": "Без возврата оплаты после Дня 1",
+      "refund1": "Депозит является невозвратным",
+      "refund2": "Перенос депозита в течение 12 месяцев (при форс-мажоре)",
+      "refund3": "Возврат остатка за 30+ дней до старта",
+      "refund4": "Возврат средств невозможен после начала курса",
+      "refund5": "Полный возврат средств при отмене потока школой",
       "reviewsHeading": "Отзывы наших выпускников",
       "viewAllGoogle": "Смотреть все отзывы на Google",
       "basedOnReviews": "На основе",
@@ -3829,12 +3829,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Возможна ли оплата в рассрочку?",
+        "answer": "Да, закрепить место за собой можно внесением депозита $250 USD. Оставшаяся сумма подлежит оплате не позднее чем за 30 дней до начала курса."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Каковы правила возврата и отмены участия?",
+        "answer": "Депозит $250 USD является невозвратным. При вынужденной отмене из-за непредвиденных обстоятельств его можно перенести на будущий поток в течение 12 месяцев. Оставшаяся часть стоимости вносится за 30 дней до начала курса. При отмене за 30 и более дней до старта возвращается полный остаток внесенной оплаты; банковские комиссии удерживаются. При более поздней отмене остаток зачисляется как депозит на любой курс в течение 12 месяцев. После начала курса средства не возвращаются. В случае отмены потока школой YogaGarhi вы можете получить полный возврат всех внесенных средств либо перенести бронирование без доплат."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -3853,8 +3853,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Возможна ли оплата в рассрочку?",
+        "answer": "Да, закрепить место за собой можно внесением депозита $250 USD. Оставшаяся сумма подлежит оплате не позднее чем за 30 дней до начала курса."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -4129,11 +4129,11 @@
       "code6": "Взаимное уважение",
       "code7": "Запрет телефонов в зале практики",
       "code8": "Обязательное 100% присутствие",
-      "refund1": "Перенос даты в течение 12 месяцев",
-      "refund2": "Возможна передача брони другому лицу",
-      "refund3": "Полный возврат при отмене курса школой",
-      "refund4": "Правило пробного дня",
-      "refund5": "Без возврата оплаты после Дня 1",
+      "refund1": "Депозит является невозвратным",
+      "refund2": "Перенос депозита в течение 12 месяцев (при форс-мажоре)",
+      "refund3": "Возврат остатка за 30+ дней до старта",
+      "refund4": "Возврат средств невозможен после начала курса",
+      "refund5": "Полный возврат средств при отмене потока школой",
       "reviewsHeading": "Отзывы наших выпускников",
       "viewAllGoogle": "Смотреть все отзывы на Google",
       "basedOnReviews": "На основе",
@@ -4631,7 +4631,7 @@
     "heroHeading": "Подать заявку на курс инструкторов йоги",
     "heroSub": "Начните свой путь к становлению сертифицированным преподавателем йоги. Выберите программу, ознакомьтесь с требованиями и забронируйте место в камерной группе.",
     "smallCohorts": "Малые группы из 8–10 студентов",
-    "flexibleRescheduling": "Гибкий перенос дат",
+    "flexibleRescheduling": "Защита Депозита при Форс-Мажоре",
     "rytCertification": "Сертификация Yoga Alliance RYT",
     "chooseHeading": "Шаг 1: Выберите курс",
     "chooseSub": "Выберите курс подготовки преподавателей, соответствующий вашей личной практике и целям.",
@@ -4668,7 +4668,7 @@
     "s2Title": "Проверьте требования и допуск",
     "s2Desc": "Курсы 100 и 200 часов открыты для мотивированных новичков и опытных практиков. Для 300 часов необходим сертификат RYT 200 часов.",
     "s3Title": "Забронируйте место",
-    "s3Desc": "Зафиксируйте выбранные даты и тип номера. Защищено нашей гибкой политикой бронирования и переноса дат.",
+    "s3Desc": "Закрепите даты и категорию номера депозитом $250 USD, переносимым в течение 12 месяцев при форс-мажоре.",
     "s4Title": "Мгновенный онлайн-доступ Pre-YTTC",
     "s4Desc": "Получите приветственный гид YogaGarhi и мгновенный доступ к подготовительным видеомодулям и основам анатомии.",
     "s5Title": "Прибытие на кампус и погружение",
@@ -4679,8 +4679,8 @@
     "a1": "Нет. Наша 200-часовая программа построена от самых основ до продвинутых техник. Главное — искренний интерес, открытость и преданность практике.",
     "q2": "Как забронировать место и каковы условия оплаты?",
     "a2": "Регистрационный депозит бронирует место за вами. Подробные графики платежей и доступные способы предоставляются в процессе оформления.",
-    "q3": "Что делать, если изменятся даты поездки или личные планы?",
-    "a3": "Мы предлагаем гибкие условия переноса бронирования на будущие потоки. Заранее свяжитесь с нашей приемной комиссией.",
+    "q3": "Что если даты моей поездки или планы изменятся?",
+    "a3": "Если вы вынуждены отменить участие по непредвиденным обстоятельствам, ваш депозит в размере $250 USD можно перенести на будущий поток в течение 12 месяцев. Пожалуйста, свяжитесь с нашей приемной комиссией как можно раньше для согласования новых дат.",
     "q4": "Что входит в стоимость обучения?",
     "a4": "Пакеты с проживанием включают все занятия, международный сертификат Yoga Alliance, печатное учебное пособие, проживание, 3-разовое питание Sattvic, экскурсии выходного дня и доступ к порталу Pre-YTTC.",
     "q5": "Сколько студентов обучается в одной группе?",
@@ -4809,8 +4809,8 @@
     "faqTitle": "Часто задаваемые вопросы",
     "needGuidance": "Нужна помощь с выбором программы?",
     "guidanceSub": "Наша команда проконсультирует вас по перелетам, визам и подберет удобные даты.",
-    "reschedulePolicyTitle": "Условия переноса бронирования",
-    "reschedulePolicyText": "Гибкий перенос дат в течение 12 месяцев. Возврат после 1-го дня не предусмотрен.",
+    "reschedulePolicyTitle": "Условия Отмены и Депозита",
+    "reschedulePolicyText": "Ваш депозит в размере $250 USD возврату не подлежит. В случае отмены по чрезвычайным обстоятельствам депозит можно перенести на будущую дату в течение 12 месяцев. При отмене за 30 и более дней до старта мы возвращаем полную сумму внесенного остатка; банковские комиссии вычитаются. При отмене менее чем за 30 дней остаток сохраняется в виде кредита на 12 месяцев. После начала ретрита возврат средств не производится. В случае отмены ретрита школой YogaGarhi предоставляется полный возврат всех платежей или бесплатный перенос дат.",
     "packages": {
       "bali-3-days": {
         "title": "3 ДНЯ И 2 НОЧИ ЙОГА-РЕТРИТ В УБУДЕ, БАЛИ",
@@ -4880,7 +4880,7 @@
           },
           {
             "question": "Какова политика переноса дат?",
-            "answer": "Каждый участник имеет право на один бесплатный перенос дат с уведомлением за 15 дней."
+            "answer": "Депозит $250 USD не возвращается. В экстренных случаях его можно перенести на другую дату в течение 12 месяцев. Остаток суммы возвращается при отмене за 30 и более дней."
           },
           {
             "question": "Как добраться из аэропорта?",
@@ -5626,33 +5626,33 @@
     "contactBtn": "Связаться с Командой"
   },
   "refundPolicy": {
-    "metaTitle": "Политика Возврата и Отмены | YogaGarhi",
-    "metaDesc": "Прозрачные правила возврата средств, внесения депозита и переноса дат курсов преподавателей йоги и ретритов на Бали и в Ришикеше.",
-    "badge": "Гарантия Спокойствия и Гибкости",
-    "title": "Политика Возврата и Переноса Курса",
-    "intro": "Мы понимаем, что жизненные обстоятельства могут меняться. В YogaGarhi мы предлагаем прозрачные и гибкие условия бронирования, защищающие ваши инвестиции в духовное развитие.",
-    "highlight1Title": "100% Переносимый Депозит",
-    "highlight1Text": "Ваш депозит на 100% сохраняется и может быть перенесен на любой будущий поток или другую локацию (Бали / Ришикеш) в течение 12 месяцев.",
-    "highlight2Title": "Срок Действия 12 Месяцев",
-    "highlight2Text": "Нужно изменить дату поездки? У вас есть целый год с первоначальной даты для прохождения курса или ретрита.",
-    "highlight3Title": "Медицинские Форс-мажоры",
-    "highlight3Text": "В случае документально подтвержденных непредвиденных медицинских обстоятельств перенос даты осуществляется вне очереди и абсолютно бесплатно.",
-    "section1Title": "1. Депозит при Бронировании и Закрепление Места",
-    "section1Text": "Для гарантированного бронирования вашего места и проживания на курсе подготовки преподавателей или ретрите требуется внесение депозита в размере $250 USD (или эквивалент) при регистрации. Это позволяет ашраму забронировать ваш номер, подготовить учебные материалы и назначить куратора.",
-    "section2Title": "2. Перенос Дат и Смена Потока",
-    "section2Text": "Если вы не можете приехать к запланированной дате, вы можете бесплатно перенести обучение на любой следующий поток в течение 12 месяцев, уведомив приемную комиссию не позднее чем за 15 дней до старта программы.",
-    "section3Title": "3. Условия Оплаты Оставшейся Части",
-    "section3Text": "Оставшаяся часть стоимости курса оплачивается по прибытии в ашрам в день ориентации (или заранее банковским переводом / картой). После начала курса и заселения оплата обучения и проживания не подлежит возврату, поскольку ресурсы и номера резервируются заранее.",
-    "section4Title": "6. Вопросы и Поддержка Студентов",
-    "section4Text": "По любым вопросам переноса дат или индивидуальных графиков оплаты вы можете ежедневно связаться с приемной комиссией по email {email} или в WhatsApp по номеру {phone}.",
+    "metaTitle": "Правила Возврата и Отмены | YogaGarhi",
+    "metaDesc": "Официальная политика YogaGarhi по возврату средств, депозитам и отмене участия в курсах подготовки преподавателей йоги и ретритах на Бали, в Ришикеше и Варкале.",
+    "badge": "Официальные Условия Бронирования",
+    "title": "Правила Возврата и Отмены",
+    "intro": "Мы стремимся к тому, чтобы вы чувствовали уверенность при бронировании. Ниже изложены официальные условия в отношении депозитов, оплаты остатка и отмены участия в курсах.",
+    "highlight1Title": "Перенос Депозита",
+    "highlight1Text": "В случае вынужденной отмены из-за чрезвычайных обстоятельств депозит можно перенести на будущий поток в течение 12 месяцев.",
+    "highlight2Title": "Возврат Остатка (За 30 Дней)",
+    "highlight2Text": "При отмене за 30 и более дней до начала возвращается полная сумма остатка оплаты за вычетом банковских комиссий.",
+    "highlight3Title": "Кредит при Поздней Отмене",
+    "highlight3Text": "При отмене менее чем за 30 дней до начала 100% остатка суммы сохраняется в виде депозитного кредита на 12 месяцев.",
+    "section1Title": "1. Депозит для Бронирования",
+    "section1Text": "Чтобы зарезервировать за вами место на курсе и комнату, после одобрения заявки вносится депозит в размере $250 USD. Данный депозит является невозвратным. Он сразу направляется на закрепление вашего номера, закупку питания и координацию преподавательского состава для вашего потока.",
+    "section2Title": "2. Перенос Депозита (В Течение 12 Месяцев)",
+    "section2Text": "Обстоятельства могут измениться внезапно. Если вам приходится отменить поездку из-за сбоев авиасообщения, медицинских показаний или других непредвиденных ситуаций, депозит можно перенести на следующий поток. Новая дата начала должна приходиться на период в пределах 12 месяцев от исходной даты.",
+    "section3Title": "3. Оплата Остатка и Условия Отмены",
+    "section4Title": "6. Вопросы и Служба Приема",
+    "section4Text": "По всем вопросам, связанным с бронированием или отменой, приемная комиссия готова помочь ежедневно по электронной почте {email} или в WhatsApp по номеру {phone}.",
     "contactBtn": "Связаться с Приемной Комиссией",
-    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
-    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid. The $250 deposit is non-refundable, and any bank fees are deducted.",
-    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
-    "sectionAfterStartTitle": "4. After the Course Begins",
-    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
-    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
-    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
+    "section3Intro": "Оставшаяся часть стоимости курса должна быть полностью внесена не позднее чем за 30 дней до даты начала обучения.",
+    "section3Bullet1": "При отмене за 30 и более дней до даты старта: Мы возвращаем всю сумму внесенного остатка. Депозит в размере $250 USD возврату не подлежит; банковские комиссии вычитаются.",
+    "section3Bullet2": "При отмене менее чем за 30 дней до даты старта: Остаток суммы не выплачивается наличными. Вместо этого 100% средств сохраняются в виде кредита, который можно применить к любому курсу в течение 12 месяцев.",
+    "sectionAfterStartTitle": "4. После Начала Обучения",
+    "sectionAfterStartText": "После фактического старта курса возврат средств и начисление кредитов не производятся в случае досрочного отъезда, добровольного отказа от обучения или пропуска занятий по причине болезни либо личным обстоятельствам.",
+    "sectionSchoolCancelTitle": "5. В Случае Отмены Потока Школой YogaGarhi",
+    "sectionSchoolCancelText": "Если нам когда-либо потребуется отменить запланированный поток, вы вправе выбрать полный возврат всех внесенных средств либо перевод на другой поток без каких-либо доплат.",
+    "highlightsSr": "Ключевые Положения Политики"
   },
   "course300Rishikesh": {
     "metaTitle": "300-часовой курс подготовки преподавателей йоги в Ришикеше | RYT 500 Индия",
@@ -5900,12 +5900,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Возможна ли оплата в рассрочку?",
+        "answer": "Да, закрепить место за собой можно внесением депозита $250 USD. Оставшаяся сумма подлежит оплате не позднее чем за 30 дней до начала курса."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Каковы правила возврата и отмены участия?",
+        "answer": "Депозит $250 USD является невозвратным. При вынужденной отмене из-за непредвиденных обстоятельств его можно перенести на будущий поток в течение 12 месяцев. Оставшаяся часть стоимости вносится за 30 дней до начала курса. При отмене за 30 и более дней до старта возвращается полный остаток внесенной оплаты; банковские комиссии удерживаются. При более поздней отмене остаток зачисляется как депозит на любой курс в течение 12 месяцев. После начала курса средства не возвращаются. В случае отмены потока школой YogaGarhi вы можете получить полный возврат всех внесенных средств либо перенести бронирование без доплат."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -5924,8 +5924,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Возможна ли оплата в рассрочку?",
+        "answer": "Да, закрепить место за собой можно внесением депозита $250 USD. Оставшаяся сумма подлежит оплате не позднее чем за 30 дней до начала курса."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -6200,11 +6200,11 @@
       "code6": "Взаимное уважение",
       "code7": "Запрет телефонов в зале практики",
       "code8": "Обязательное 100% присутствие",
-      "refund1": "Перенос даты в течение 12 месяцев",
-      "refund2": "Возможна передача брони другому лицу",
-      "refund3": "Полный возврат при отмене курса школой",
-      "refund4": "Правило пробного дня",
-      "refund5": "Без возврата оплаты после Дня 1",
+      "refund1": "Депозит является невозвратным",
+      "refund2": "Перенос депозита в течение 12 месяцев (при форс-мажоре)",
+      "refund3": "Возврат остатка за 30+ дней до старта",
+      "refund4": "Возврат средств невозможен после начала курса",
+      "refund5": "Полный возврат средств при отмене потока школой",
       "reviewsHeading": "Отзывы наших выпускников",
       "viewAllGoogle": "Смотреть все отзывы на Google",
       "basedOnReviews": "На основе",
@@ -6644,12 +6644,12 @@
         "answer": "You can take a 45-minute direct flight from Trivandrum (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Varkala Sivagiri (4.5 hours). Private taxi pickups directly from Trivandrum Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Возможна ли оплата в рассрочку?",
+        "answer": "Да, закрепить место за собой можно внесением депозита $250 USD. Оставшаяся сумма подлежит оплате не позднее чем за 30 дней до начала курса."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Каковы правила возврата и отмены участия?",
+        "answer": "Депозит $250 USD является невозвратным. При вынужденной отмене из-за непредвиденных обстоятельств его можно перенести на будущий поток в течение 12 месяцев. Оставшаяся часть стоимости вносится за 30 дней до начала курса. При отмене за 30 и более дней до старта возвращается полный остаток внесенной оплаты; банковские комиссии удерживаются. При более поздней отмене остаток зачисляется как депозит на любой курс в течение 12 месяцев. После начала курса средства не возвращаются. В случае отмены потока школой YogaGarhi вы можете получить полный возврат всех внесенных средств либо перенести бронирование без доплат."
       },
       {
         "question": "What is the best time of year to visit Varkala?",
@@ -6919,11 +6919,11 @@
       "code6": "Взаимное уважение",
       "code7": "Запрет телефонов в зале практики",
       "code8": "Обязательное 100% присутствие",
-      "refund1": "Перенос даты в течение 12 месяцев",
-      "refund2": "Возможна передача брони другому лицу",
-      "refund3": "Полный возврат при отмене курса школой",
-      "refund4": "Правило пробного дня",
-      "refund5": "Без возврата оплаты после Дня 1",
+      "refund1": "Депозит является невозвратным",
+      "refund2": "Перенос депозита в течение 12 месяцев (при форс-мажоре)",
+      "refund3": "Возврат остатка за 30+ дней до старта",
+      "refund4": "Возврат средств невозможен после начала курса",
+      "refund5": "Полный возврат средств при отмене потока школой",
       "reviewsHeading": "Отзывы наших выпускников",
       "viewAllGoogle": "Смотреть все отзывы на Google",
       "basedOnReviews": "На основе",
@@ -7401,12 +7401,12 @@
         "answer": "From New Trivandrum, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Trivandrum to Varkala Sivagiri (4.5 hours) or book a private taxi directly from Trivandrum to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Возможна ли оплата в рассрочку?",
+        "answer": "Да, закрепить место за собой можно внесением депозита $250 USD. Оставшаяся сумма подлежит оплате не позднее чем за 30 дней до начала курса."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Каковы правила возврата и отмены участия?",
+        "answer": "Депозит $250 USD является невозвратным. При вынужденной отмене из-за непредвиденных обстоятельств его можно перенести на будущий поток в течение 12 месяцев. Оставшаяся часть стоимости вносится за 30 дней до начала курса. При отмене за 30 и более дней до старта возвращается полный остаток внесенной оплаты; банковские комиссии удерживаются. При более поздней отмене остаток зачисляется как депозит на любой курс в течение 12 месяцев. После начала курса средства не возвращаются. В случае отмены потока школой YogaGarhi вы можете получить полный возврат всех внесенных средств либо перенести бронирование без доплат."
       },
       {
         "question": "Какое время года лучше всего подходит для обучения йоге в Варкале?",
@@ -7425,8 +7425,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Возможна ли оплата в рассрочку?",
+        "answer": "Да, закрепить место за собой можно внесением депозита $250 USD. Оставшаяся сумма подлежит оплате не позднее чем за 30 дней до начала курса."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -7701,11 +7701,11 @@
       "code6": "Взаимное уважение",
       "code7": "Запрет телефонов в зале практики",
       "code8": "Обязательное 100% присутствие",
-      "refund1": "Перенос даты в течение 12 месяцев",
-      "refund2": "Возможна передача брони другому лицу",
-      "refund3": "Полный возврат при отмене курса школой",
-      "refund4": "Правило пробного дня",
-      "refund5": "Без возврата оплаты после Дня 1",
+      "refund1": "Депозит является невозвратным",
+      "refund2": "Перенос депозита в течение 12 месяцев (при форс-мажоре)",
+      "refund3": "Возврат остатка за 30+ дней до старта",
+      "refund4": "Возврат средств невозможен после начала курса",
+      "refund5": "Полный возврат средств при отмене потока школой",
       "reviewsHeading": "Отзывы наших выпускников",
       "viewAllGoogle": "Смотреть все отзывы на Google",
       "basedOnReviews": "На основе",
@@ -8183,12 +8183,12 @@
         "answer": "From New Trivandrum, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Trivandrum to Varkala Sivagiri (4.5 hours) or book a private taxi directly from Trivandrum to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Возможна ли оплата в рассрочку?",
+        "answer": "Да, закрепить место за собой можно внесением депозита $250 USD. Оставшаяся сумма подлежит оплате не позднее чем за 30 дней до начала курса."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Каковы правила возврата и отмены участия?",
+        "answer": "Депозит $250 USD является невозвратным. При вынужденной отмене из-за непредвиденных обстоятельств его можно перенести на будущий поток в течение 12 месяцев. Оставшаяся часть стоимости вносится за 30 дней до начала курса. При отмене за 30 и более дней до старта возвращается полный остаток внесенной оплаты; банковские комиссии удерживаются. При более поздней отмене остаток зачисляется как депозит на любой курс в течение 12 месяцев. После начала курса средства не возвращаются. В случае отмены потока школой YogaGarhi вы можете получить полный возврат всех внесенных средств либо перенести бронирование без доплат."
       },
       {
         "question": "What is the best time of year to visit Varkala for yoga training?",
@@ -8207,8 +8207,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Возможна ли оплата в рассрочку?",
+        "answer": "Да, закрепить место за собой можно внесением депозита $250 USD. Оставшаяся сумма подлежит оплате не позднее чем за 30 дней до начала курса."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -8483,11 +8483,11 @@
       "code6": "Взаимное уважение",
       "code7": "Запрет телефонов в зале практики",
       "code8": "Обязательное 100% присутствие",
-      "refund1": "Перенос даты в течение 12 месяцев",
-      "refund2": "Возможна передача брони другому лицу",
-      "refund3": "Полный возврат при отмене курса школой",
-      "refund4": "Правило пробного дня",
-      "refund5": "Без возврата оплаты после Дня 1",
+      "refund1": "Депозит является невозвратным",
+      "refund2": "Перенос депозита в течение 12 месяцев (при форс-мажоре)",
+      "refund3": "Возврат остатка за 30+ дней до старта",
+      "refund4": "Возврат средств невозможен после начала курса",
+      "refund5": "Полный возврат средств при отмене потока школой",
       "reviewsHeading": "Отзывы наших выпускников",
       "viewAllGoogle": "Смотреть все отзывы на Google",
       "basedOnReviews": "На основе",

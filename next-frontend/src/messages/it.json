@@ -993,8 +993,8 @@
         "answer": "Manteniamo rigorosamente il limite massimo di 8–10 allievi. Questo assicura attenzione capillare a ciascuno, correzioni continue della postura e un dialogo aperto e costante con i docenti."
       },
       {
-        "question": "Quale certificazione si ottiene ed è riconosciuta ovunque?",
-        "answer": "Superate le ore previste e le prove pratiche, ottieni la certificazione Registered Yoga Teacher (RYT 200) di Yoga Alliance, valida in tutto il mondo per intraprendere la professione di insegnante."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
         "question": "Quali soluzioni di alloggio e costi sono previsti?",
@@ -1006,7 +1006,7 @@
       },
       {
         "question": "Qual è la politica di rimborso e cancellazione?",
-        "answer": "Puoi posticipare gratuitamente la tua iscrizione entro 12 mesi o cedere il tuo posto a un altro praticante. Rimborsiamo integralmente se la scuola annulla l'edizione, con clausola di prova al Giorno 1. Considerata la capienza ristretta, le quote non sono più rimborsabili dall'avvio del Giorno 1."
+        "answer": "Il deposito di $250 USD non è rimborsabile. Se dovete cancellare per un'emergenza, potete trasferirlo a un gruppo successivo entro 12 mesi. La parte restante è dovuta 30 giorni prima dell'inizio del corso. Cancellando 30 o più giorni prima dell'inizio, rimborsiamo l'intero saldo versato; le commissioni bancarie vengono trattenute. In caso di cancellazione successiva, il saldo diventa un credito valido per qualsiasi corso entro 12 mesi. Non sono previsti rimborsi dopo l'avvio del corso. Qualora YogaGarhi dovesse annullare un corso, potrete scegliere tra il rimborso integrale o lo spostamento ad altra data senza costi aggiuntivi."
       },
       {
         "question": "Che tipologia di alimentazione viene servita durante la permanenza?",
@@ -1098,11 +1098,11 @@
       "code6": "Rispetto reciproco",
       "code7": "Cellulari vietati in aula",
       "code8": "Partecipazione al 100% richiesta",
-      "refund1": "Riprogrammabile entro 12 mesi",
-      "refund2": "Cessione del posto consentita",
-      "refund3": "Rimborso totale in caso di annullamento da parte nostra",
-      "refund4": "Politica della giornata di prova",
-      "refund5": "Nessun rimborso dopo il Giorno 1",
+      "refund1": "Deposito non rimborsabile",
+      "refund2": "Deposito trasferibile entro 12 mesi (emergenze)",
+      "refund3": "Saldo rimborsabile fino a 30+ giorni prima",
+      "refund4": "Nessun rimborso dopo l'inizio del corso",
+      "refund5": "Rimborso totale se la scuola cancella",
       "reviewsHeading": "Cosa dicono i nostri studenti",
       "viewAllGoogle": "Visualizza tutte le recensioni su Google",
       "basedOnReviews": "Basato su",
@@ -1671,8 +1671,8 @@
         "answer": "Manteniamo rigorosamente il limite massimo di 8–10 allievi. Questo assicura attenzione capillare a ciascuno, correzioni continue della postura e un dialogo aperto e costante con i docenti."
       },
       {
-        "question": "Quale certificazione si ottiene ed è riconosciuta ovunque?",
-        "answer": "Superate le ore previste e le prove pratiche, ottieni la certificazione Registered Yoga Teacher (RYT 200) di Yoga Alliance, valida in tutto il mondo per intraprendere la professione di insegnante."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
         "question": "Quali soluzioni di alloggio e costi sono previsti?",
@@ -1684,7 +1684,7 @@
       },
       {
         "question": "Qual è la politica di rimborso e cancellazione?",
-        "answer": "Puoi posticipare gratuitamente la tua iscrizione entro 12 mesi o cedere il tuo posto a un altro praticante. Rimborsiamo integralmente se la scuola annulla l'edizione, con clausola di prova al Giorno 1. Considerata la capienza ristretta, le quote non sono più rimborsabili dall'avvio del Giorno 1."
+        "answer": "Il deposito di $250 USD non è rimborsabile. Se dovete cancellare per un'emergenza, potete trasferirlo a un gruppo successivo entro 12 mesi. La parte restante è dovuta 30 giorni prima dell'inizio del corso. Cancellando 30 o più giorni prima dell'inizio, rimborsiamo l'intero saldo versato; le commissioni bancarie vengono trattenute. In caso di cancellazione successiva, il saldo diventa un credito valido per qualsiasi corso entro 12 mesi. Non sono previsti rimborsi dopo l'avvio del corso. Qualora YogaGarhi dovesse annullare un corso, potrete scegliere tra il rimborso integrale o lo spostamento ad altra data senza costi aggiuntivi."
       }
     ],
     "hero": {
@@ -1938,11 +1938,11 @@
       "code6": "Rispetto reciproco",
       "code7": "Cellulari vietati in aula",
       "code8": "Partecipazione al 100% richiesta",
-      "refund1": "Riprogrammabile entro 12 mesi",
-      "refund2": "Cessione del posto consentita",
-      "refund3": "Rimborso totale in caso di annullamento da parte nostra",
-      "refund4": "Politica della giornata di prova",
-      "refund5": "Nessun rimborso dopo il Giorno 1",
+      "refund1": "Deposito non rimborsabile",
+      "refund2": "Deposito trasferibile entro 12 mesi (emergenze)",
+      "refund3": "Saldo rimborsabile fino a 30+ giorni prima",
+      "refund4": "Nessun rimborso dopo l'inizio del corso",
+      "refund5": "Rimborso totale se la scuola cancella",
       "reviewsHeading": "Cosa dicono i nostri studenti",
       "viewAllGoogle": "Visualizza tutte le recensioni su Google",
       "basedOnReviews": "Basato su",
@@ -2364,8 +2364,8 @@
         "answer": "Manteniamo rigorosamente il limite massimo di 8–10 allievi. Questo assicura attenzione capillare a ciascuno, correzioni continue della postura e un dialogo aperto e costante con i docenti."
       },
       {
-        "question": "Quale certificazione si ottiene ed è riconosciuta ovunque?",
-        "answer": "Superate le ore previste e le prove pratiche, ottieni la certificazione Registered Yoga Teacher (RYT 200) di Yoga Alliance, valida in tutto il mondo per intraprendere la professione di insegnante."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
         "question": "Quali soluzioni di alloggio e costi sono previsti?",
@@ -2634,11 +2634,11 @@
       "code6": "Rispetto reciproco",
       "code7": "Cellulari vietati in aula",
       "code8": "Partecipazione al 100% richiesta",
-      "refund1": "Riprogrammabile entro 12 mesi",
-      "refund2": "Cessione del posto consentita",
-      "refund3": "Rimborso totale in caso di annullamento da parte nostra",
-      "refund4": "Politica della giornata di prova",
-      "refund5": "Nessun rimborso dopo il Giorno 1",
+      "refund1": "Deposito non rimborsabile",
+      "refund2": "Deposito trasferibile entro 12 mesi (emergenze)",
+      "refund3": "Saldo rimborsabile fino a 30+ giorni prima",
+      "refund4": "Nessun rimborso dopo l'inizio del corso",
+      "refund5": "Rimborso totale se la scuola cancella",
       "reviewsHeading": "Cosa dicono i nostri studenti",
       "viewAllGoogle": "Visualizza tutte le recensioni su Google",
       "basedOnReviews": "Basato su",
@@ -3072,12 +3072,12 @@
         "answer": "You can take a 45-minute direct flight from Delhi (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Haridwar (4.5 hours). Private taxi pickups directly from Delhi Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Rishikesh or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Qual è la politica di rimborso e cancellazione?",
+        "answer": "Il deposito di $250 USD non è rimborsabile. Se dovete cancellare per un'emergenza, potete trasferirlo a un gruppo successivo entro 12 mesi. La parte restante è dovuta 30 giorni prima dell'inizio del corso. Cancellando 30 o più giorni prima dell'inizio, rimborsiamo l'intero saldo versato; le commissioni bancarie vengono trattenute. In caso di cancellazione successiva, il saldo diventa un credito valido per qualsiasi corso entro 12 mesi. Non sono previsti rimborsi dopo l'avvio del corso. Qualora YogaGarhi dovesse annullare un corso, potrete scegliere tra il rimborso integrale o lo spostamento ad altra data senza costi aggiuntivi."
       },
       {
         "question": "What is the best time of year to visit Rishikesh?",
@@ -3347,11 +3347,11 @@
       "code6": "Rispetto reciproco",
       "code7": "Cellulari vietati in aula",
       "code8": "Partecipazione al 100% richiesta",
-      "refund1": "Riprogrammabile entro 12 mesi",
-      "refund2": "Cessione del posto consentita",
-      "refund3": "Rimborso totale in caso di annullamento da parte nostra",
-      "refund4": "Politica della giornata di prova",
-      "refund5": "Nessun rimborso dopo il Giorno 1",
+      "refund1": "Deposito non rimborsabile",
+      "refund2": "Deposito trasferibile entro 12 mesi (emergenze)",
+      "refund3": "Saldo rimborsabile fino a 30+ giorni prima",
+      "refund4": "Nessun rimborso dopo l'inizio del corso",
+      "refund5": "Rimborso totale se la scuola cancella",
       "reviewsHeading": "Cosa dicono i nostri studenti",
       "viewAllGoogle": "Visualizza tutte le recensioni su Google",
       "basedOnReviews": "Basato su",
@@ -3829,12 +3829,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Qual è la politica di rimborso e cancellazione?",
+        "answer": "Il deposito di $250 USD non è rimborsabile. Se dovete cancellare per un'emergenza, potete trasferirlo a un gruppo successivo entro 12 mesi. La parte restante è dovuta 30 giorni prima dell'inizio del corso. Cancellando 30 o più giorni prima dell'inizio, rimborsiamo l'intero saldo versato; le commissioni bancarie vengono trattenute. In caso di cancellazione successiva, il saldo diventa un credito valido per qualsiasi corso entro 12 mesi. Non sono previsti rimborsi dopo l'avvio del corso. Qualora YogaGarhi dovesse annullare un corso, potrete scegliere tra il rimborso integrale o lo spostamento ad altra data senza costi aggiuntivi."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -3853,8 +3853,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -4129,11 +4129,11 @@
       "code6": "Rispetto reciproco",
       "code7": "Cellulari vietati in aula",
       "code8": "Partecipazione al 100% richiesta",
-      "refund1": "Riprogrammabile entro 12 mesi",
-      "refund2": "Cessione del posto consentita",
-      "refund3": "Rimborso totale in caso di annullamento da parte nostra",
-      "refund4": "Politica della giornata di prova",
-      "refund5": "Nessun rimborso dopo il Giorno 1",
+      "refund1": "Deposito non rimborsabile",
+      "refund2": "Deposito trasferibile entro 12 mesi (emergenze)",
+      "refund3": "Saldo rimborsabile fino a 30+ giorni prima",
+      "refund4": "Nessun rimborso dopo l'inizio del corso",
+      "refund5": "Rimborso totale se la scuola cancella",
       "reviewsHeading": "Cosa dicono i nostri studenti",
       "viewAllGoogle": "Visualizza tutte le recensioni su Google",
       "basedOnReviews": "Basato su",
@@ -4631,7 +4631,7 @@
     "heroHeading": "Candidati per la Formazione Insegnanti Yoga",
     "heroSub": "Inizia il tuo percorso per diventare un insegnante di yoga autentico e certificato. Scegli il tuo programma, esplora i prerequisiti e riserva il tuo posto nei nostri gruppi ristretti.",
     "smallCohorts": "Gruppi ristretti di 8–10 studenti",
-    "flexibleRescheduling": "Riprogrammazione flessibile",
+    "flexibleRescheduling": "Protezione del Deposito per Emergenze",
     "rytCertification": "Certificazione Yoga Alliance RYT",
     "chooseHeading": "Passo 1: Scegli il tuo corso",
     "chooseSub": "Seleziona la formazione insegnanti allineata con la tua pratica attuale e le tue aspirazioni.",
@@ -4668,7 +4668,7 @@
     "s2Title": "Verifica prerequisiti e idoneità",
     "s2Desc": "I corsi da 100 e 200 ore sono aperti sia a principianti motivati che a praticanti esperti. Il 300 ore richiede certificato RYT 200 ore.",
     "s3Title": "Riserva il tuo posto",
-    "s3Desc": "Blocca le tue date preferite e la categoria di stanza. Protetto dalla nostra politica flessibile di prenotazione e riprogrammazione.",
+    "s3Desc": "Garantitevi date e camera con un deposito di $250 USD, trasferibile entro 12 mesi in caso di emergenza.",
     "s4Title": "Accesso online immediato Pre-YTTC",
     "s4Desc": "Ricevi la tua Guida di Benvenuto YogaGarhi e l'accesso immediato ai nostri moduli video di preparazione Pre-YTTC e ai fondamenti di anatomia.",
     "s5Title": "Arriva al campus e immergiti",
@@ -4680,7 +4680,7 @@
     "q2": "Come posso bloccare il mio posto e quali sono i termini di pagamento?",
     "a2": "Un acconto di registrazione riserva il tuo posto e conferma l'iscrizione. Dettagli completi su piani di pagamento e metodi accettati vengono forniti durante il processo di candidatura.",
     "q3": "Cosa succede se le mie date di viaggio o i miei piani cambiano?",
-    "a3": "Offriamo opzioni flessibili di riprogrammazione per i corsi futuri. Contatta il nostro team delle ammissioni in anticipo se hai necessità di modificare le date.",
+    "a3": "Se dovete cancellare per una situazione di emergenza, potete trasferire il vostro deposito di $250 USD a un corso successivo entro 12 mesi. Vi invitiamo a contattare il nostro team ammissioni il prima possibile per concordare le nuove date.",
     "q4": "Cosa è incluso nella mia iscrizione?",
     "a4": "I pacchetti residenziali includono l'insegnamento completo, il certificato accreditato Yoga Alliance, il manuale stampato, l'alloggio per l'intera durata, 3 pasti quotidiani nutrienti Sattvic/vegetariani, escursioni nel weekend e accesso immediato al portale online Pre-YTTC. Disponibili anche opzioni solo corso.",
     "q5": "Quanti studenti ci sono in ogni gruppo?",
@@ -4809,8 +4809,8 @@
     "faqTitle": "Domande Frequenti",
     "needGuidance": "Hai bisogno di supporto nella scelta?",
     "guidanceSub": "Il nostro team è pronto ad aiutarti con voli, visti e organizzazione delle date.",
-    "reschedulePolicyTitle": "Condizioni di cambio data",
-    "reschedulePolicyText": "Riprogrammazione flessibile entro 12 mesi. Nessun rimborso dopo il Giorno 1.",
+    "reschedulePolicyTitle": "Condizioni di Cancellazione e Deposito",
+    "reschedulePolicyText": "Il deposito di $250 non è rimborsabile. In caso di cancellazione dovuta a un'emergenza, il deposito può essere trasferito a una data futura entro 12 mesi. Se cancellate 30 o più giorni prima della data d'inizio, rimborsiamo l'intero saldo versato; vengono dedotte le commissioni bancarie. Se cancellate con meno di 30 giorni di preavviso, il saldo si converte in un credito valido per 12 mesi. Non è previsto alcun rimborso dopo l'inizio del ritiro. Se YogaGarhi annulla un ritiro, riceverete il rimborso completo di tutti i pagamenti o una modifica gratuita della data.",
     "packages": {
       "bali-3-days": {
         "title": "3 GIORNI E 2 NOTTI RITIRO DI YOGA A UBUD BALI",
@@ -4884,7 +4884,7 @@
           },
           {
             "question": "Qual è la politica di cancellazione/riprogrammazione?",
-            "answer": "Ogni allievo può riprogrammare gratuitamente una volta con preavviso."
+            "answer": "Il deposito di $250 USD non è rimborsabile. In caso di emergenza, può essere trasferito entro 12 mesi. Il saldo residuo è rimborsabile con almeno 30 giorni di preavviso."
           },
           {
             "question": "Come arrivare dall'aeroporto?",
@@ -5627,32 +5627,32 @@
   },
   "refundPolicy": {
     "metaTitle": "Politica di Rimborso e Cancellazione | YogaGarhi",
-    "metaDesc": "Politica trasparente di rimborso, acconto di prenotazione e trasferimento sessione per corsi di formazione insegnanti yoga e ritiri a Bali e Rishikesh.",
-    "badge": "Garanzia di Serenità e Flessibilità",
-    "title": "Politica di Rimborso e Trasferimento Sessione",
-    "intro": "Sappiamo che gli imprevisti della vita possono accadere. A YogaGarhi offriamo condizioni di prenotazione trasparenti e flessibili, studiate per tutelare il tuo investimento nel tuo cammino spirituale.",
-    "highlight1Title": "100% Trasferibile",
-    "highlight1Text": "Il tuo acconto è trasferibile al 100% a qualsiasi sessione futura o a un'altra sede (Bali / Rishikesh) nell'arco di 12 mesi.",
-    "highlight2Title": "Validità 12 Mesi",
-    "highlight2Text": "Hai bisogno di riprogrammare? Hai a disposizione 1 anno intero dalla data originaria per partecipare al tuo corso o ritiro.",
-    "highlight3Title": "Emergenze Mediche",
-    "highlight3Text": "In presenza di documentate emergenze sanitarie o di viaggio impreviste, viene garantita la riprogrammazione prioritaria senza alcun costo aggiuntivo.",
-    "section1Title": "1. Acconto di Prenotazione e Assegnazione del Posto",
-    "section1Text": "Per confermare il tuo posto e l'alloggio nel Corso di Formazione Insegnanti Yoga o Ritiro prescelto, è richiesto un acconto di $250 USD (o importo equivalente) al momento dell'iscrizione. Ciò consente al nostro ashram di riservare la camera, predisporre i materiali didattici e assegnare i mentori docenti.",
-    "section2Title": "2. Spostamento Date e Riprogrammazione Sessione",
-    "section2Text": "Se non puoi partecipare nella data programmata, puoi posticipare la partecipazione a qualsiasi sessione futura entro 12 mesi senza alcuna penale, comunicandolo alla segreteria ammissioni almeno 15 giorni prima dell'inizio del corso.",
-    "section3Title": "3. Modalità di Saldo della Quota",
-    "section3Text": "Il saldo residuo della quota di partecipazione è dovuto all'arrivo presso l'ashram durante la giornata di orientamento (o anticipatamente tramite bonifico bancario / link con carta). Una volta iniziato il corso ed effettuato il check-in, i costi di iscrizione e vitto/alloggio non sono rimborsabili in quanto le risorse e le stanze sono state irrevocabilmente impegnate.",
-    "section4Title": "6. Domande e Supporto Ammissioni",
-    "section4Text": "Per qualsiasi dubbio in merito a cambi sessione o rateizzazioni personalizzate, il nostro ufficio ammissioni è a disposizione quotidianamente via email a {email} o tramite WhatsApp al {phone}.",
+    "metaDesc": "Informativa ufficiale di YogaGarhi su rimborsi, depositi di prenotazione e cancellazioni per corsi di formazione insegnanti yoga e ritiri a Bali, Rishikesh e Varkala.",
+    "badge": "Condizioni Ufficiali di Prenotazione",
+    "title": "Politica di Rimborso e Cancellazione",
+    "intro": "Desideriamo che prenotiate con la massima serenità. Di seguito sono riportate le nostre condizioni ufficiali relative a depositi di prenotazione, saldo del corso e cancellazioni.",
+    "highlight1Title": "Trasferimento del Deposito",
+    "highlight1Text": "In caso di cancellazione per emergenza, potete trasferire il vostro deposito a un corso futuro entro 12 mesi.",
+    "highlight2Title": "Rimborso del Saldo (30 Giorni)",
+    "highlight2Text": "Cancellando 30 o più giorni prima dell'inizio riceverete il rimborso completo del saldo; le commissioni bancarie vengono trattenute.",
+    "highlight3Title": "Credito per Cancellazione Tardiva",
+    "highlight3Text": "Se cancellate con meno di 30 giorni dall'inizio, il 100% del saldo viene convertito in credito valido per 12 mesi.",
+    "section1Title": "1. Deposito di Prenotazione",
+    "section1Text": "Per riservare il vostro posto e la vostra camera, richiediamo un deposito di $250 USD a seguito dell'approvazione della candidatura. Questo deposito non è rimborsabile. Viene impiegato immediatamente per bloccare la sistemazione e pianificare vitto e personale per il vostro gruppo.",
+    "section2Title": "2. Trasferimento del Deposito (Entro 12 Mesi)",
+    "section2Text": "Gli imprevisti possono accadere. Se dovete cancellare la partecipazione a causa di problemi con i voli, emergenze mediche o altri eventi imprevisti, potete trasferire il deposito a un'edizione successiva. La nuova data d'inizio deve essere fissata entro 12 mesi dalla data originale.",
+    "section3Title": "3. Saldo Rimanente e Termini di Cancellazione",
+    "section4Title": "6. Domande e Assistenza Iscrizioni",
+    "section4Text": "Per qualsiasi richiesta relativa a prenotazioni o cancellazioni, il nostro team ammissioni è disponibile tutti i giorni via email a {email} o su WhatsApp al {phone}.",
     "contactBtn": "Contatta l'Ufficio Ammissioni",
-    "section3Intro": "The rest of your course fee is due at least 30 days before your course starts.",
-    "section3Bullet1": "If you cancel 30 or more days before the start date: We refund the full balance you paid. The $250 deposit is non-refundable, and any bank fees are deducted.",
-    "section3Bullet2": "If you cancel less than 30 days before the start date: The balance is not refunded. Instead, we save 100% of it as credit you can use for any course within 12 months.",
-    "sectionAfterStartTitle": "4. After the Course Begins",
-    "sectionAfterStartText": "Once the course starts, we cannot give refunds or credits for leaving early, choosing to stop, or missing classes because of illness or personal reasons.",
-    "sectionSchoolCancelTitle": "5. If YogaGarhi Cancels a Batch",
-    "sectionSchoolCancelText": "If we ever need to cancel a batch, you can choose a full refund of everything you paid, or move to another batch at no extra cost."
+    "section3Intro": "Il saldo rimanente della quota del corso è dovuto almeno 30 giorni prima dell'inizio della formazione.",
+    "section3Bullet1": "In caso di cancellazione 30 o più giorni prima della data d'inizio: Rimborsiamo per intero il saldo versato. Il deposito di $250 non è rimborsabile e vengono dedotte le commissioni bancarie.",
+    "section3Bullet2": "In caso di cancellazione a meno di 30 giorni dalla data d'inizio: Il saldo non viene rimborsato in denaro. In alternativa, conserviamo il 100% dell'importo come credito da utilizzare per qualsiasi corso entro 12 mesi.",
+    "sectionAfterStartTitle": "4. Dopo l'Inizio del Corso",
+    "sectionAfterStartText": "Una volta iniziato il corso, non possiamo concedere rimborsi né crediti in caso di partenze anticipate, rinunce volontarie o lezioni saltate per malattia o motivi personali.",
+    "sectionSchoolCancelTitle": "5. Nel Caso in cui YogaGarhi Cancelli un Corso",
+    "sectionSchoolCancelText": "Se dovessimo annullare un'edizione del corso, potrete scegliere tra il rimborso completo di tutte le somme versate o il passaggio a un'altra edizione senza alcun costo aggiuntivo.",
+    "highlightsSr": "Punti Salienti della Politica"
   },
   "course300Rishikesh": {
     "metaTitle": "Corso Insegnanti Yoga 300 Ore a Rishikesh | RYT 500 India",
@@ -5900,12 +5900,12 @@
         "answer": "From New Delhi, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Tapovan. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Delhi to Haridwar (4.5 hours) or book a private taxi directly from Delhi to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Rishikesh or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Qual è la politica di rimborso e cancellazione?",
+        "answer": "Il deposito di $250 USD non è rimborsabile. Se dovete cancellare per un'emergenza, potete trasferirlo a un gruppo successivo entro 12 mesi. La parte restante è dovuta 30 giorni prima dell'inizio del corso. Cancellando 30 o più giorni prima dell'inizio, rimborsiamo l'intero saldo versato; le commissioni bancarie vengono trattenute. In caso di cancellazione successiva, il saldo diventa un credito valido per qualsiasi corso entro 12 mesi. Non sono previsti rimborsi dopo l'avvio del corso. Qualora YogaGarhi dovesse annullare un corso, potrete scegliere tra il rimborso integrale o lo spostamento ad altra data senza costi aggiuntivi."
       },
       {
         "question": "What is the best time of year to visit Rishikesh for yoga training?",
@@ -5924,8 +5924,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Rishikesh safe for solo female travelers?",
-        "answer": "Rishikesh is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Tapovan with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -6200,11 +6200,11 @@
       "code6": "Rispetto reciproco",
       "code7": "Cellulari vietati in aula",
       "code8": "Partecipazione al 100% richiesta",
-      "refund1": "Riprogrammabile entro 12 mesi",
-      "refund2": "Cessione del posto consentita",
-      "refund3": "Rimborso totale in caso di annullamento da parte nostra",
-      "refund4": "Politica della giornata di prova",
-      "refund5": "Nessun rimborso dopo il Giorno 1",
+      "refund1": "Deposito non rimborsabile",
+      "refund2": "Deposito trasferibile entro 12 mesi (emergenze)",
+      "refund3": "Saldo rimborsabile fino a 30+ giorni prima",
+      "refund4": "Nessun rimborso dopo l'inizio del corso",
+      "refund5": "Rimborso totale se la scuola cancella",
       "reviewsHeading": "Cosa dicono i nostri studenti",
       "viewAllGoogle": "Visualizza tutte le recensioni su Google",
       "basedOnReviews": "Basato su",
@@ -6644,12 +6644,12 @@
         "answer": "You can take a 45-minute direct flight from Trivandrum (DEL) to Dehradun Jolly Grant Airport (DED), which is only 35 km from our ashram, or take the express Shatabdi or Vande Bharat train to Varkala Sivagiri (4.5 hours). Private taxi pickups directly from Trivandrum Airport to our ashram gate can also be arranged."
       },
       {
-        "question": "Can I pay in installments?",
-        "answer": "Yes, you can secure your enrollment with a modest deposit of $200 and pay the remaining balance upon your arrival at the ashram or via flexible payment milestones before the course commences."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
-        "question": "What is the refund policy?",
-        "answer": "Course deposits are non-refundable but 100% transferable to any future batch in Varkala or Bali within 12 months, provided you notify us at least 14 days in advance."
+        "question": "Qual è la politica di rimborso e cancellazione?",
+        "answer": "Il deposito di $250 USD non è rimborsabile. Se dovete cancellare per un'emergenza, potete trasferirlo a un gruppo successivo entro 12 mesi. La parte restante è dovuta 30 giorni prima dell'inizio del corso. Cancellando 30 o più giorni prima dell'inizio, rimborsiamo l'intero saldo versato; le commissioni bancarie vengono trattenute. In caso di cancellazione successiva, il saldo diventa un credito valido per qualsiasi corso entro 12 mesi. Non sono previsti rimborsi dopo l'avvio del corso. Qualora YogaGarhi dovesse annullare un corso, potrete scegliere tra il rimborso integrale o lo spostamento ad altra data senza costi aggiuntivi."
       },
       {
         "question": "What is the best time of year to visit Varkala?",
@@ -6919,11 +6919,11 @@
       "code6": "Rispetto reciproco",
       "code7": "Cellulari vietati in aula",
       "code8": "Partecipazione al 100% richiesta",
-      "refund1": "Riprogrammabile entro 12 mesi",
-      "refund2": "Cessione del posto consentita",
-      "refund3": "Rimborso totale in caso di annullamento da parte nostra",
-      "refund4": "Politica della giornata di prova",
-      "refund5": "Nessun rimborso dopo il Giorno 1",
+      "refund1": "Deposito non rimborsabile",
+      "refund2": "Deposito trasferibile entro 12 mesi (emergenze)",
+      "refund3": "Saldo rimborsabile fino a 30+ giorni prima",
+      "refund4": "Nessun rimborso dopo l'inizio del corso",
+      "refund5": "Rimborso totale se la scuola cancella",
       "reviewsHeading": "Cosa dicono i nostri studenti",
       "viewAllGoogle": "Visualizza tutte le recensioni su Google",
       "basedOnReviews": "Basato su",
@@ -7401,12 +7401,12 @@
         "answer": "From New Trivandrum, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Trivandrum to Varkala Sivagiri (4.5 hours) or book a private taxi directly from Trivandrum to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Qual è la politica di rimborso e cancellazione?",
+        "answer": "Il deposito di $250 USD non è rimborsabile. Se dovete cancellare per un'emergenza, potete trasferirlo a un gruppo successivo entro 12 mesi. La parte restante è dovuta 30 giorni prima dell'inizio del corso. Cancellando 30 o più giorni prima dell'inizio, rimborsiamo l'intero saldo versato; le commissioni bancarie vengono trattenute. In caso di cancellazione successiva, il saldo diventa un credito valido per qualsiasi corso entro 12 mesi. Non sono previsti rimborsi dopo l'avvio del corso. Qualora YogaGarhi dovesse annullare un corso, potrete scegliere tra il rimborso integrale o lo spostamento ad altra data senza costi aggiuntivi."
       },
       {
         "question": "Qual è il periodo migliore dell'anno per una formazione yoga a Varkala?",
@@ -7425,8 +7425,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -7701,11 +7701,11 @@
       "code6": "Rispetto reciproco",
       "code7": "Cellulari vietati in aula",
       "code8": "Partecipazione al 100% richiesta",
-      "refund1": "Riprogrammabile entro 12 mesi",
-      "refund2": "Cessione del posto consentita",
-      "refund3": "Rimborso totale in caso di annullamento da parte nostra",
-      "refund4": "Politica della giornata di prova",
-      "refund5": "Nessun rimborso dopo il Giorno 1",
+      "refund1": "Deposito non rimborsabile",
+      "refund2": "Deposito trasferibile entro 12 mesi (emergenze)",
+      "refund3": "Saldo rimborsabile fino a 30+ giorni prima",
+      "refund4": "Nessun rimborso dopo l'inizio del corso",
+      "refund5": "Rimborso totale se la scuola cancella",
       "reviewsHeading": "Cosa dicono i nostri studenti",
       "viewAllGoogle": "Visualizza tutte le recensioni su Google",
       "basedOnReviews": "Basato su",
@@ -8183,12 +8183,12 @@
         "answer": "From New Trivandrum, you can take a quick 45-minute domestic flight from Indira Gandhi International Airport (DEL) to Dehradun Jolly Grant Airport (DED), located just 35 km (45 minutes drive) from our ashram in Varkala Cliff. Alternatively, you can take the comfortable Vande Bharat or Shatabdi Express train from New Trivandrum to Varkala Sivagiri (4.5 hours) or book a private taxi directly from Trivandrum to our ashram gate (approx. 5 hours via the expressway). We also coordinate direct airport pickup for all students."
       },
       {
-        "question": "Can I pay my course fees in installments?",
-        "answer": "Yes, we offer flexible payment plans to ease your financial planning. You can secure your seat in your chosen batch with a small advance deposit of $200–$300, and settle the remaining course tuition either in installments prior to arrival or on the official check-in day at the ashram campus."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
-        "question": "What is the refund and cancellation policy?",
-        "answer": "We understand that life plans can change unexpectedly. While reservation deposits are non-refundable due to limited cohort caps (8–10 students), they are 100% transferable. If you need to postpone, you can transfer your deposit to any future Varkala or Bali batch within 12 months with at least 14 days prior notice at zero extra charge."
+        "question": "Qual è la politica di rimborso e cancellazione?",
+        "answer": "Il deposito di $250 USD non è rimborsabile. Se dovete cancellare per un'emergenza, potete trasferirlo a un gruppo successivo entro 12 mesi. La parte restante è dovuta 30 giorni prima dell'inizio del corso. Cancellando 30 o più giorni prima dell'inizio, rimborsiamo l'intero saldo versato; le commissioni bancarie vengono trattenute. In caso di cancellazione successiva, il saldo diventa un credito valido per qualsiasi corso entro 12 mesi. Non sono previsti rimborsi dopo l'avvio del corso. Qualora YogaGarhi dovesse annullare un corso, potrete scegliere tra il rimborso integrale o lo spostamento ad altra data senza costi aggiuntivi."
       },
       {
         "question": "What is the best time of year to visit Varkala for yoga training?",
@@ -8207,8 +8207,8 @@
         "answer": "A typical training day begins at 6:00 AM with herbal tea and morning cleansing kriyas, followed by pranayama and meditation at 6:30 AM. Morning asana practice runs from 7:30 to 9:00 AM, followed by a wholesome Ayurvedic breakfast. Midday sessions include Yoga Philosophy, Anatomy, and Alignment workshops, followed by lunch and rest. The afternoon continues with teaching methodology and evening Ashtanga, culminating in dinner at 7:30 PM and quiet reflection."
       },
       {
-        "question": "Is Varkala safe for solo female travelers?",
-        "answer": "Varkala is celebrated as one of the safest, most welcoming spiritual towns in India, with a large international community of yogis and solo female travelers. Our ashram is located in the safe, serene neighborhood of Varkala Cliff with 24/7 campus security, dedicated female support staff, and escorted excursions to ensure you feel secure and comfortable at all times."
+        "question": "Posso pagare a rate?",
+        "answer": "Sì, potete riservare il vostro posto con un deposito di $250 USD. Il saldo rimanente deve essere corrisposto almeno 30 giorni prima dell'inizio del corso."
       },
       {
         "question": "What kind of accommodation and food is provided?",
@@ -8483,11 +8483,11 @@
       "code6": "Rispetto reciproco",
       "code7": "Cellulari vietati in aula",
       "code8": "Partecipazione al 100% richiesta",
-      "refund1": "Riprogrammabile entro 12 mesi",
-      "refund2": "Cessione del posto consentita",
-      "refund3": "Rimborso totale in caso di annullamento da parte nostra",
-      "refund4": "Politica della giornata di prova",
-      "refund5": "Nessun rimborso dopo il Giorno 1",
+      "refund1": "Deposito non rimborsabile",
+      "refund2": "Deposito trasferibile entro 12 mesi (emergenze)",
+      "refund3": "Saldo rimborsabile fino a 30+ giorni prima",
+      "refund4": "Nessun rimborso dopo l'inizio del corso",
+      "refund5": "Rimborso totale se la scuola cancella",
       "reviewsHeading": "Cosa dicono i nostri studenti",
       "viewAllGoogle": "Visualizza tutte le recensioni su Google",
       "basedOnReviews": "Basato su",
