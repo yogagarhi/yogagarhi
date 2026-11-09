@@ -168,9 +168,10 @@ export default function RetreatDetail({ retreat, locale = "en", messages = {} }:
         "touristType": ["Yoga Enthusiast", "Wellness Traveler", "Solo Traveler"],
         "provider": {
           "@type": "Organization",
+          "@id": "https://www.yogagarhi.com/#organization",
           "name": "YogaGarhi",
           "url": "https://www.yogagarhi.com",
-          "logo": "https://www.yogagarhi.com/favicon.png"
+          "logo": "https://www.yogagarhi.com/yogagarhi-logo-hd-preview.png"
         },
         "offers": {
           "@type": "Offer",
