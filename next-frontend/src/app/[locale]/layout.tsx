@@ -187,6 +187,7 @@ export default async function LocaleLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#0f766e" />
         <meta name="naver-site-verification" content="818943e1707585bd047312aadb3877ff0cd37f1f" />
+        <meta name="msvalidate.01" content="47840B6346918D9747CDDB62C18CD5CD" />
         <script
           id="init-datalayer"
           dangerouslySetInnerHTML={{
