@@ -160,14 +160,14 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                 {/* Pricing */}
                 <div className="flex items-end justify-between pt-4 border-t border-border mb-4">
                     <div>
-                        {SHOW_COMPARE_PRICE && (
+                        {(room.showComparePrice !== undefined ? room.showComparePrice : SHOW_COMPARE_PRICE) && (
                             <p className="text-muted-foreground line-through text-sm">{room.originalPrice}</p>
                         )}
                         <p className="font-heading text-3xl md:text-4xl font-bold text-primary">{room.price}</p>
                     </div>
-                    {SHOW_COMPARE_PRICE && (
+                    {(room.showComparePrice !== undefined ? room.showComparePrice : SHOW_COMPARE_PRICE) && (
                         <span className="px-2.5 py-1 bg-primary/10 text-primary text-xs font-medium rounded-md">
-                            {tCommon("save")} 20%
+                            {room.discountText || `${tCommon("save")} 20%`}
                         </span>
                     )}
                 </div>

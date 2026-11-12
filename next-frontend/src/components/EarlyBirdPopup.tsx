@@ -3,46 +3,52 @@ import { useState, useEffect } from "react";
 import { X, Sparkles } from "lucide-react";
 import { useQuickEnquiry } from "./QuickEnquiryDialog";
 import { useTranslations } from "next-intl";
+import { bali200, isSaleLive } from "@/config/bali200";
 
 const EarlyBirdPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
+  const [saleLive, setSaleLive] = useState(() => isSaleLive());
   const { setShowQuickEnquiry } = useQuickEnquiry();
   const tPromo = useTranslations("promo");
   const tCommon = useTranslations("common");
 
-  // Check sessionStorage only in the browser after mount
+  // Check sessionStorage and live sale status only in browser after mount
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const dismissed = sessionStorage.getItem('earlyBirdDismissed') === 'true';
+    const live = isSaleLive();
+    setSaleLive(live);
+    if (!live) return;
+
+    if (typeof window !== "undefined") {
+      const dismissed = sessionStorage.getItem("earlyBirdDismissed") === "true";
       setIsDismissed(dismissed);
     }
   }, []);
 
   useEffect(() => {
-    // If already dismissed, don't show
-    if (isDismissed) return;
+    // If sale not live or already dismissed, don't show
+    if (!saleLive || isDismissed) return;
 
     // Show popup: on mobile trigger smoothly after mount (since MainLayout already waited for scroll or idle+8s);
     // on desktop keep original 4s delay after mount.
-    const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+    const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
     const delay = isMobile ? 80 : 4000;
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, delay);
 
     return () => clearTimeout(timer);
-  }, [isDismissed]);
+  }, [saleLive, isDismissed]);
 
   const handleDismiss = () => {
     setIsVisible(false);
     setIsDismissed(true);
-    if (typeof window !== 'undefined') {
-      sessionStorage.setItem('earlyBirdDismissed', 'true');
+    if (typeof window !== "undefined") {
+      sessionStorage.setItem("earlyBirdDismissed", "true");
     }
   };
 
-  if (isDismissed) return null;
+  if (!saleLive || isDismissed) return null;
 
   return (
     <div
@@ -50,8 +56,8 @@ const EarlyBirdPopup = () => {
         bottom-3 left-3 right-3 max-w-[380px] mx-auto
         md:bottom-auto md:left-0 md:right-auto md:top-1/2 md:-translate-y-1/2 md:max-w-none md:mx-0 md:origin-left
         ${isVisible
-          ? 'translate-y-0 opacity-100 pointer-events-auto md:translate-x-0 md:opacity-100'
-          : 'translate-y-8 opacity-0 pointer-events-none md:-translate-x-full md:pointer-events-none'
+          ? "translate-y-0 opacity-100 pointer-events-auto md:translate-x-0 md:opacity-100"
+          : "translate-y-8 opacity-0 pointer-events-none md:-translate-x-full md:pointer-events-none"
         }`}
     >
       <div className="relative">
@@ -80,20 +86,20 @@ const EarlyBirdPopup = () => {
             <Sparkles className="absolute top-2 right-2 w-3.5 h-3.5 md:w-4 md:h-4 text-yellow-300 animate-pulse" />
 
             <h3 className="text-white font-heading text-lg md:text-xl font-bold tracking-tight leading-tight">
-              {tPromo("popupTitle")}
+              {bali200.sale.label} 🎉
             </h3>
 
             {/* Bird Banner */}
             <div className="relative -mx-4 md:-mx-6 my-1.5 md:my-2">
               <div className="bg-primary py-1.5 md:py-2 px-3 md:px-4 transform -rotate-1 md:-rotate-2">
-                <span className="text-primary-foreground font-heading text-sm md:text-lg font-bold">
-                  {tPromo("popupBatches")}
+                <span className="text-primary-foreground font-heading text-xs sm:text-sm md:text-base font-bold">
+                  {bali200.sale.headline}
                 </span>
               </div>
             </div>
 
             <p className="text-white font-heading text-base md:text-lg font-semibold">
-              {tPromo("popupDiscount")}
+              Save ${bali200.sale.discount} USD
             </p>
 
             {/* Decorative line */}

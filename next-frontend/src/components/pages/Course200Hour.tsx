@@ -15,6 +15,7 @@ import Layout from "@/components/layout/Layout";
 import SEO, { generateCourseSchema } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { BATCHES_200_HOUR, CourseBatch, getBatchBadge } from "@/constants/courseDates";
+import { bali200, isSaleLive, getBali200Batches, getBatchSeatsBadge, getBali200Price } from "@/config/bali200";
 import { useUpcomingBatches } from "@/hooks/useUpcomingBatches";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -647,8 +648,20 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
     } catch {}
     return whatYouWillReceive;
   }, [t]);
-  const upcomingDates = useUpcomingBatches(BATCHES_200_HOUR, initialBatches);
+  const [saleLive, setSaleLive] = useState(() => isSaleLive());
+  const [upcomingDates, setUpcomingDates] = useState<CourseBatch[]>(() => {
+    if (initialBatches && initialBatches.length > 0) return initialBatches;
+    return getBali200Batches();
+  });
+  useEffect(() => {
+    setSaleLive(isSaleLive());
+    setUpcomingDates(getBali200Batches());
+  }, []);
   const firstBatch = upcomingDates && upcomingDates.length > 0 ? upcomingDates[0] : null;
+  const tuitionPricing = useMemo(() => getBali200Price("Tuition Only"), []);
+  const triplePricing = useMemo(() => getBali200Price("Triple Sharing"), []);
+  const doublePricing = useMemo(() => getBali200Price("Double Sharing"), []);
+  const privatePricing = useMemo(() => getBali200Price("Private Room"), []);
   const formattedDates = useMemo(() => {
     if (!firstBatch?.startDate || !firstBatch?.endDate) {
       return { startDate: "", endDate: "" };
@@ -968,7 +981,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
   const handleBookingSubmit = async () => {
     setIsSubmittingBooking(true);
     const bookingDate = selectedDay && selectedMonth !== null
-      ? `${selectedDay} ${new Date(2026, selectedMonth, 1).toLocaleDateString(locale, { month: "long", year: "numeric" })}`
+      ? `${selectedDay} ${new Date(new Date().getFullYear(), selectedMonth, 1).toLocaleDateString(locale, { month: "long", year: "numeric" })}`
       : "";
 
     try {
@@ -1191,8 +1204,8 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="w-full max-w-md mx-auto bg-black/30 backdrop-blur-sm rounded-lg px-4 sm:px-6 py-3 border border-white/10 text-center">
                   <p className="text-white font-semibold text-xs sm:text-sm md:text-base leading-snug break-words">
                     {t.rich("hero.pricingNotice", {
-                      tuitionPrice: COURSE_200_HOUR_PRICING.shared.price,
-                      residentialPrice: COURSE_200_HOUR_PRICING.private.price,
+                      tuitionPrice: `$${(saleLive ? tuitionPricing.sale : tuitionPricing.original).toLocaleString()}`,
+                      residentialPrice: `$${(saleLive ? triplePricing.sale : triplePricing.original).toLocaleString()}`,
                       price: (chunks) => <span className="whitespace-nowrap">{chunks}</span>,
                     })}
                   </p>
@@ -1283,17 +1296,17 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.startingFrom")}</p>
                     <div className="flex flex-col items-center lg:items-start min-w-0">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start flex-wrap">
-                        {SHOW_COMPARE_PRICE && (<span className="text-base text-muted-foreground line-through opacity-60">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>)}
+                        {saleLive && (<span className="text-base text-muted-foreground line-through opacity-60">${tuitionPricing.original.toLocaleString()}</span>)}
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
-                            {COURSE_200_HOUR_PRICING.shared.price}
+                            ${(saleLive ? tuitionPricing.sale : tuitionPricing.original).toLocaleString()}
                           </span>
                           <div className="absolute -inset-1 bg-primary/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
                         </div>
                       </div>
-                      {SHOW_COMPARE_PRICE && (<div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform max-w-full break-words">
+                      {saleLive && (<div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform max-w-full break-words">
                         <Zap className="w-3.5 h-3.5 fill-current shrink-0" />
-                        <span>{t("quickInfo.earlyBirdDiscount")}</span>
+                        <span>Save ${bali200.sale.discount} Now</span>
                       </div>)}
                     </div>
                   </div>
@@ -2011,7 +2024,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 {/* Special Offer Box */}
                 <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                   <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    {tPromo("heroSpecialOfferPrefix")} <span className="text-amber-600 dark:text-amber-400">{tPromo("heroSpecialOfferHighlight")}</span>
+                    Book your March to July 2027 YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities – <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
                   </p>
                 </div>
               </div>
@@ -2052,7 +2065,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 {/* Dates List */}
                 <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
                   {upcomingDates.map((item, index) => {
-                    const { isFull, isUrgent, text: badgeText, colorClass: badgeColorClass } = getBatchBadge(item);
+                    const { isFull, isUrgent, text: badgeText, colorClass: badgeColorClass } = getBatchSeatsBadge(item.spotsLeft);
                     return (
                       <div
                         key={index}
@@ -2084,10 +2097,12 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                           )}
 
                           {/* Early Bird */}
-                          <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
-                            <p className="font-heading font-bold text-foreground text-sm">{t("pricing.earlyBirdPrice")}</p>
-                            {SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">{tCommon("save")} {item.earlyBirdSaving}</p>)}
-                          </div>
+                          {saleLive && (
+                            <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
+                              <p className="font-heading font-bold text-foreground text-sm">{t("pricing.earlyBirdPrice")}</p>
+                              <p className="text-primary text-sm font-medium">Save ${bali200.sale.discount}</p>
+                            </div>
+                          )}
 
                           {/* Book Button */}
                           {isFull ? (
@@ -2141,11 +2156,11 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.tuitionFees")}</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          {COURSE_200_HOUR_PRICING.shared.price}
+                          ${(saleLive ? tuitionPricing.sale : tuitionPricing.original).toLocaleString()}
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">{COURSE_200_HOUR_PRICING.shared.originalPrice}</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
+                        {saleLive && (<p className="text-muted-foreground text-sm">
+                          <span className="line-through">${tuitionPricing.original.toLocaleString()}</span>
+                          <span className="ml-2 text-green-600 font-semibold">(Save ${bali200.sale.discount})</span>
                         </p>)}
                       </div>
 
@@ -2153,11 +2168,11 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.tripleSharing")}</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          {COURSE_200_HOUR_PRICING.private.price}
+                          ${(saleLive ? triplePricing.sale : triplePricing.original).toLocaleString()}
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">{COURSE_200_HOUR_PRICING.private.originalPrice}</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
+                        {saleLive && (<p className="text-muted-foreground text-sm">
+                          <span className="line-through">${triplePricing.original.toLocaleString()}</span>
+                          <span className="ml-2 text-green-600 font-semibold">(Save ${bali200.sale.discount})</span>
                         </p>)}
                       </div>
 
@@ -2165,11 +2180,11 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.doubleSharing")}</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          {COURSE_200_HOUR_PRICING.deluxe.price}
+                          ${(saleLive ? doublePricing.sale : doublePricing.original).toLocaleString()}
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">{COURSE_200_HOUR_PRICING.deluxe.originalPrice}</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
+                        {saleLive && (<p className="text-muted-foreground text-sm">
+                          <span className="line-through">${doublePricing.original.toLocaleString()}</span>
+                          <span className="ml-2 text-green-600 font-semibold">(Save ${bali200.sale.discount})</span>
                         </p>)}
                       </div>
 
@@ -2177,11 +2192,11 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">{t("pricing.privateRoom")}</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          {COURSE_200_HOUR_PRICING.vip.price}
+                          ${(saleLive ? privatePricing.sale : privatePricing.original).toLocaleString()}
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">{COURSE_200_HOUR_PRICING.vip.originalPrice}</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
+                        {saleLive && (<p className="text-muted-foreground text-sm">
+                          <span className="line-through">${privatePricing.original.toLocaleString()}</span>
+                          <span className="ml-2 text-green-600 font-semibold">(Save ${bali200.sale.discount})</span>
                         </p>)}
                       </div>
 
@@ -2605,8 +2620,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   title: t("pricing.tuitionOnly"),
                   beds: t("accommodationExtra.courseOnly"),
                   description: t("pricing.tuitionOnlyDesc"),
-                  originalPrice: COURSE_200_HOUR_PRICING.shared.originalPrice,
-                  price: COURSE_200_HOUR_PRICING.shared.price,
+                  originalPrice: `$${tuitionPricing.original.toLocaleString()}`,
+                  price: `$${(saleLive ? tuitionPricing.sale : tuitionPricing.original).toLocaleString()}`,
+                  showComparePrice: saleLive,
+                  discountText: `Save $${bali200.sale.discount}`,
                   images: [apartGroupClass, apartSeatedTalk, apartGroupPose, apartChildPose, apartMountainPose],
                   features: ["Yoga Shala", "TTC Manual", "Wi-Fi", "All Classes"],
                   badge: t("accommodationExtra.courseOnly"),
@@ -2616,8 +2633,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   title: t("pricing.triple"),
                   beds: 3,
                   description: t("pricing.tripleDesc"),
-                  originalPrice: COURSE_200_HOUR_PRICING.private.originalPrice,
-                  price: COURSE_200_HOUR_PRICING.private.price,
+                  originalPrice: `$${triplePricing.original.toLocaleString()}`,
+                  price: `$${(saleLive ? triplePricing.sale : triplePricing.original).toLocaleString()}`,
+                  showComparePrice: saleLive,
+                  discountText: `Save $${bali200.sale.discount}`,
                   images: [tripleBalcony, tripleBathroom, tripleBedroom1, tripleBedroom2, tripleBedroom3],
                   features: roomFeatures,
                   badge: null,
@@ -2627,8 +2646,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   title: t("pricing.double"),
                   beds: 2,
                   description: t("pricing.doubleDesc"),
-                  originalPrice: COURSE_200_HOUR_PRICING.deluxe.originalPrice,
-                  price: COURSE_200_HOUR_PRICING.deluxe.price,
+                  originalPrice: `$${doublePricing.original.toLocaleString()}`,
+                  price: `$${(saleLive ? doublePricing.sale : doublePricing.original).toLocaleString()}`,
+                  showComparePrice: saleLive,
+                  discountText: `Save $${bali200.sale.discount}`,
                   images: [doubleBedroom1, doubleBedroom2, doubleBedroom3, doubleBedroom4, doubleBalcony],
                   features: roomFeatures,
                   badge: t("accommodationExtra.mostPopular"),
@@ -2638,8 +2659,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   title: t("pricing.private"),
                   beds: 1,
                   description: t("pricing.privateDesc"),
-                  originalPrice: COURSE_200_HOUR_PRICING.vip.originalPrice,
-                  price: COURSE_200_HOUR_PRICING.vip.price,
+                  originalPrice: `$${privatePricing.original.toLocaleString()}`,
+                  price: `$${(saleLive ? privatePricing.sale : privatePricing.original).toLocaleString()}`,
+                  showComparePrice: saleLive,
+                  discountText: `Save $${bali200.sale.discount}`,
                   images: [
                     privateNew2,
                     privateNew3,
@@ -3853,7 +3876,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     <ChevronDown className="w-5 h-5 rotate-90" />
                   </button>
                   <span className="font-heading font-bold text-lg min-w-[140px] text-center">
-                    {["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][selectedMonth]} 2026
+                    {["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][selectedMonth]} {new Date().getFullYear()}
                   </span>
                   <button
                     onClick={() => setSelectedMonth(prev => prev < 11 ? prev + 1 : 0)}
@@ -3865,13 +3888,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
                 {/* Calendar Grid */}
                 <div className="grid grid-cols-7 gap-1 text-center text-sm">
-                  {[0, 1, 2, 3, 4, 5, 6].map(i => new Date(2026, 0, 4 + i).toLocaleDateString(locale, { weekday: "short" }).toUpperCase()).map(day => (
+                  {[0, 1, 2, 3, 4, 5, 6].map(i => new Date(2024, 0, 7 + i).toLocaleDateString(locale, { weekday: "short" }).toUpperCase()).map(day => (
                     <div key={day} className="py-2 text-xs font-medium text-primary-foreground/60">
                       {day}
                     </div>
                   ))}
                   {/* Empty cells for offset */}
-                  {Array.from({ length: new Date(2026, selectedMonth, 1).getDay() }).map((_, i) => (
+                  {Array.from({ length: new Date(new Date().getFullYear(), selectedMonth, 1).getDay() }).map((_, i) => (
                     <div key={`empty-${i}`} className="py-2" />
                   ))}
                   {/* Days */}
@@ -3880,7 +3903,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     const isSelected = selectedDay === day;
                     // All upcoming dates (today and future) are available
                     const today = new Date();
-                    const currentYear = 2026;
+                    const currentYear = new Date().getFullYear();
                     const calendarDate = new Date(currentYear, selectedMonth, day);
                     const isUpcoming = calendarDate >= new Date(today.getFullYear(), today.getMonth(), today.getDate());
                     // Check if the day exists in this month
@@ -3923,7 +3946,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div>
                   <h4 className="font-medium text-foreground mb-1">{tDialog("whatTimeBest")}</h4>
                   <p className="text-sm text-muted-foreground mb-4">
-                    {tDialog("showingTimesFor")} <span className="font-medium text-foreground">{selectedDay ? new Date(2026, selectedMonth, selectedDay).toLocaleDateString(locale, { day: "numeric", month: "long", year: "numeric" }) : ""}</span>
+                    {tDialog("showingTimesFor")} <span className="font-medium text-foreground">{selectedDay ? new Date(new Date().getFullYear(), selectedMonth, selectedDay).toLocaleDateString(locale, { day: "numeric", month: "long", year: "numeric" }) : ""}</span>
                   </p>
 
                   {/* Timezone Dropdown */}
@@ -4006,7 +4029,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <DialogTitle className="font-heading text-xl">{tDialog("bookingTitle")}</DialogTitle>
               <DialogDescription className="text-sm text-muted-foreground mt-2">
                 {selectedDay && selectedTime && (
-                  <>Scheduled for {selectedDay} {["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][selectedMonth]} 2026 at {selectedTime}</>
+                  <>Scheduled for {selectedDay} {["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][selectedMonth]} {new Date().getFullYear()} at {selectedTime}</>
                 )}
               </DialogDescription>
             </DialogHeader>

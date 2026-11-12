@@ -3,7 +3,7 @@ import { applyQualityGate, getReviewedHreflang } from "@/utils/seoQualityGate";
 import Course200Hour from "@/components/pages/Course200Hour";
 import CourseSyllabusDetails from "@/components/course200/CourseSyllabusDetails";
 import { courseData } from "@/constants/courses";
-import { BATCHES_200_HOUR, filterUpcomingBatches } from "@/constants/courseDates";
+import { bali200, getBali200Batches, isSaleLive } from "@/config/bali200";
 import { COURSE_200_FAQS } from "@/constants/course200Data";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
@@ -156,7 +156,7 @@ export default async function Page({
     };
 
     const course = courseData["200-hour"];
-    const initialBatches = filterUpcomingBatches(BATCHES_200_HOUR);
+    const initialBatches = getBali200Batches();
     const pageUrl = locale === "en"
         ? "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali"
         : `https://www.yogagarhi.com/${locale}/200-hour-yoga-teacher-training-in-bali`;
@@ -200,12 +200,8 @@ export default async function Page({
     const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": isEn
-            ? "200 Hour Yoga Teacher Training in Bali | Yogagarhi"
-            : messages.course200?.metaTitle || "200 Hour Yoga Teacher Training in Bali | Yogagarhi",
-        "description": isEn
-            ? "Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation."
-            : messages.course200?.metaDesc || "Join our residential 200 Hour Yoga Teacher Training in Bali, a Yoga Alliance RYT 200 course offering authentic yoga, asana, pranayama, and meditation.",
+        "name": "200 Hour Yoga Teacher Training in Bali",
+        "description": "Comprehensive 24-day Yoga Alliance RYT 200 residential course in Gianyar, Bali covering authentic Hatha, Vinyasa, Ashtanga, pranayama, meditation, philosophy, anatomy, and teaching methodology.",
         "inLanguage": "en",
         "educationalCredentialAwarded":
             "RYT 200 Yoga Alliance Certification",
@@ -223,6 +219,7 @@ export default async function Page({
         "hasCourseInstance": initialBatches.map((batch) => ({
             "@type": "CourseInstance",
             "courseMode": "onsite",
+            "courseWorkload": "PT200H",
             "startDate": batch.startDate,
             "endDate": batch.endDate,
             "duration": "P24D",
@@ -231,10 +228,10 @@ export default async function Page({
                 "name": "YogaGarhi Ashram",
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Gianyar",
+                    "streetAddress": "Ds Madangan Kaja, Desa Petak, Petak Kaja",
                     "addressLocality": "Gianyar",
                     "addressRegion": "Bali",
-                    "postalCode": "80515",
+                    "postalCode": "80552",
                     "addressCountry": "Indonesia"
                 },
                 "geo": {
@@ -244,40 +241,14 @@ export default async function Page({
                 }
             }
         })),
-        "offers": [
-            {
-                "@type": "Offer",
-                "name": "Tuition Only Package",
-                "price": "999",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "url": pageUrl
-            },
-            {
-                "@type": "Offer",
-                "name": "Triple Sharing Package",
-                "price": "1750",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "url": pageUrl
-            },
-            {
-                "@type": "Offer",
-                "name": "Double Sharing Package",
-                "price": "1899",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "url": pageUrl
-            },
-            {
-                "@type": "Offer",
-                "name": "Private Room Package",
-                "price": "2499",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "url": pageUrl
-            }
-        ]
+        "offers": bali200.prices.map((pkg) => ({
+            "@type": "Offer",
+            "name": `${pkg.name} Package`,
+            "price": (isSaleLive() ? pkg.sale : pkg.original).toString(),
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": pageUrl
+        }))
     };
 
     /* =========================
@@ -297,7 +268,7 @@ export default async function Page({
             "name": "YogaGarhi Bali Campus",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Banjar Dinas Petak Kaja",
+                "streetAddress": "Ds Madangan Kaja, Desa Petak, Petak Kaja",
                 "addressLocality": "Gianyar",
                 "addressRegion": "Bali",
                 "postalCode": "80552",
@@ -372,10 +343,10 @@ export default async function Page({
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Gianyar",
+            "streetAddress": "Ds Madangan Kaja, Desa Petak, Petak Kaja",
             "addressLocality": "Gianyar",
             "addressRegion": "Bali",
-            "postalCode": "80515",
+            "postalCode": "80552",
             "addressCountry": "ID"
         },
         "geo": {

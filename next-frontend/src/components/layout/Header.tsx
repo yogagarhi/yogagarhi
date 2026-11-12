@@ -10,6 +10,7 @@ import { useQuickEnquiry } from "@/components/QuickEnquiryDialog";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import PromoCountdown from "@/components/PromoCountdown";
 import { PROMO_OFFER } from "@/constants/offers";
+import { bali200, isSaleLive } from "@/config/bali200";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const logo = "/images/logo/yogagarhi-logo.png";
@@ -326,20 +327,40 @@ export default function Header() {
   const isOnlineCoursesActive = pathname === "/yoga-anatomy-masterclass";
   const isAboutActive = pathname === "/about-school" || pathname === "/teachers" || pathname === "/testimonials";
   const isSundayActive = pathname === "/sunday-schedule";
-  const showPromoBar = PROMO_OFFER.enabled;
+  const cleanPath = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, "").replace(/\/+$/, "") || "/";
+  const isBali200 = cleanPath === "/200-hour-yoga-teacher-training-in-bali";
+  const isHome = cleanPath === "/";
+  const isExcluded =
+    cleanPath.includes("rishikesh") ||
+    cleanPath.includes("varkala") ||
+    cleanPath.includes("100-hour") ||
+    cleanPath.includes("300-hour") ||
+    cleanPath.startsWith("/retreat") ||
+    cleanPath.startsWith("/blogs") ||
+    cleanPath.startsWith("/blog");
+
+  const [saleLive, setSaleLive] = useState(() => isSaleLive());
+  useEffect(() => {
+    setSaleLive(isSaleLive());
+  }, []);
+
+  const showPromoBar = (isBali200 || isHome) && !isExcluded && saleLive;
 
   return (
     <div className="fixed top-0 left-0 right-0 z-[70] w-full max-w-full">
-      {/* Top Countdown Promo Bar - Hidden when expired */}
+      {/* Top Countdown Promo Bar - Hidden when expired or inactive */}
       {showPromoBar && (
         <div className="bg-[#2D7A70] text-white py-1 sm:py-2.5 shadow-sm overflow-hidden w-full max-w-full">
           <div className="w-full max-w-[1920px] mx-auto px-2 sm:px-4 lg:px-6 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-6 lg:gap-8">
-            <div className="flex items-center justify-center gap-1 sm:gap-2 text-center flex-wrap sm:flex-nowrap min-w-0 max-w-full">
+            <Link
+              href="/200-hour-yoga-teacher-training-in-bali"
+              className="flex items-center justify-center gap-1 sm:gap-2 text-center flex-wrap sm:flex-nowrap min-w-0 max-w-full hover:opacity-90 transition-opacity"
+            >
               <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
               <span className="text-[10px] min-[375px]:text-xs sm:text-sm font-bold tracking-tight min-[375px]:tracking-wide uppercase leading-tight break-words text-center">
-                {tPromo("title")} 🎉 {tPromo("flat")} <span className="text-amber-300 font-extrabold">{tPromo("discountText")}</span> {tPromo("batchesText")}
+                {bali200.sale.label} 🎉 <span className="text-amber-300 font-extrabold">{bali200.sale.headline}</span>
               </span>
-            </div>
+            </Link>
 
             <div className="flex items-center justify-center gap-1.5 sm:gap-3 bg-black/20 px-2.5 sm:px-4 py-0.5 sm:py-1 rounded-full border border-white/10 backdrop-blur-sm shadow-inner shrink-0 scale-95 sm:scale-100">
               <div className="flex items-center gap-1 sm:gap-1.5 whitespace-nowrap">
@@ -348,7 +369,11 @@ export default function Header() {
                   {tPromo("endsIn")}
                 </span>
               </div>
-              <PromoCountdown className="sm:scale-90 sm:origin-left" />
+              <PromoCountdown
+                targetDate={bali200.sale.endsAt}
+                onExpire={() => setSaleLive(false)}
+                className="sm:scale-90 sm:origin-left"
+              />
             </div>
           </div>
         </div>

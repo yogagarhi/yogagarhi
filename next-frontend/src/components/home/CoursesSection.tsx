@@ -2,6 +2,7 @@ import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
+import { bali200, isSaleLive, getBali200Price } from "@/config/bali200";
 import { ArrowRight, Clock, Award } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
 import CoursesHelpButton from "./CoursesHelpButton";
@@ -17,6 +18,8 @@ export default async function CoursesSection() {
   const tCommon = await getTranslations("common");
   const currentLocale = await getLocale();
   const campusUI = getHomeCoursesCampusUI(currentLocale);
+  const is200Sale = isSaleLive();
+  const baliTuition = getBali200Price("Tuition Only");
 
   const courses = [
     {
@@ -41,9 +44,10 @@ export default async function CoursesSection() {
       description: t("c200Desc"),
       duration: `24 ${tCommon("days")}`,
       level: t("beginnerToIntermediate"),
-      price: "$999",
-      originalPrice: "$1299",
-      savings: "$300",
+      price: is200Sale ? `$${baliTuition.sale}` : `$${baliTuition.original}`,
+      originalPrice: `$${baliTuition.original}`,
+      savings: `$${bali200.sale.discount}`,
+      showCompare: is200Sale && SHOW_COMPARE_PRICE,
       href: "/200-hour-yoga-teacher-training-in-bali",
       image: course200hr,
       featured: true,
@@ -160,12 +164,12 @@ export default async function CoursesSection() {
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{t("startingFrom")}</p>
                         <div className="flex items-baseline gap-2">
                           <span className="font-heading text-3xl font-bold text-foreground">{course.price}</span>
-                          {SHOW_COMPARE_PRICE && (
+                          {(course.showCompare !== undefined ? course.showCompare : SHOW_COMPARE_PRICE) && (
                             <span className="text-sm text-muted-foreground line-through">{course.originalPrice}</span>
                           )}
                         </div>
                       </div>
-                      {SHOW_COMPARE_PRICE && (
+                      {(course.showCompare !== undefined ? course.showCompare : SHOW_COMPARE_PRICE) && (
                         <span className="text-xs font-semibold text-amber-900 dark:text-amber-200 bg-amber-100 dark:bg-amber-900/40 px-3 py-1.5 rounded-full">
                           {t("save")} {course.savings}
                         </span>

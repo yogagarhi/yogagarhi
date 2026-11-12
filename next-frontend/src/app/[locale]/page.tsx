@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+
+export const revalidate = 86400;
 import Index from "@/components/pages/Index";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";

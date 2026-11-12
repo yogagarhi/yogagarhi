@@ -1,13 +1,32 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
 interface PromoCountdownProps {
     className?: string;
+    targetDate?: string;
+    onExpire?: () => void;
 }
 
-function calculateTimeLeft() {
+function calculateTimeLeft(targetDate?: string) {
     const now = new Date();
+
+    if (targetDate) {
+        const targetMs = new Date(targetDate).getTime();
+        const distance = targetMs - now.getTime();
+        if (distance <= 0) {
+            return { days: 0, hours: 0, minutes: 0, seconds: 0, isExpired: true };
+        }
+        return {
+            days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+            minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+            seconds: Math.floor((distance % (1000 * 60)) / 1000),
+            isExpired: false
+        };
+    }
+
+    // Default reference date fallback
     const referenceDate = new Date("2026-05-22T00:00:00Z");
     const cycleMs = 15 * 24 * 60 * 60 * 1000; // 15 days in ms
 
@@ -24,20 +43,34 @@ function calculateTimeLeft() {
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
         hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
         minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((distance % (1000 * 60)) / 1000)
+        seconds: Math.floor((distance % (1000 * 60)) / 1000),
+        isExpired: false
     };
 }
 
-const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
+const PromoCountdown = ({ className = "", targetDate, onExpire }: PromoCountdownProps) => {
     const t = useTranslations("promo");
+    const [expired, setExpired] = useState(false);
     const daysRef = useRef<HTMLSpanElement>(null);
     const hoursRef = useRef<HTMLSpanElement>(null);
     const minsRef = useRef<HTMLSpanElement>(null);
     const secsRef = useRef<HTMLSpanElement>(null);
 
     useEffect(() => {
+        const initial = calculateTimeLeft(targetDate);
+        if (initial.isExpired) {
+            setExpired(true);
+            onExpire?.();
+            return;
+        }
+
         const update = () => {
-            const time = calculateTimeLeft();
+            const time = calculateTimeLeft(targetDate);
+            if (time.isExpired) {
+                setExpired(true);
+                onExpire?.();
+                return;
+            }
             if (daysRef.current) daysRef.current.textContent = time.days.toString().padStart(2, '0');
             if (hoursRef.current) hoursRef.current.textContent = time.hours.toString().padStart(2, '0');
             if (minsRef.current) minsRef.current.textContent = time.minutes.toString().padStart(2, '0');
@@ -47,7 +80,11 @@ const PromoCountdown = ({ className = "" }: PromoCountdownProps) => {
         update();
         const timer = setInterval(update, 1000);
         return () => clearInterval(timer);
-    }, []);
+    }, [targetDate, onExpire]);
+
+    if (expired) {
+        return null;
+    }
 
     return (
         <div className={`flex items-center justify-center ${className}`}>
