@@ -3,11 +3,12 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Users } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { SHOW_COMPARE_PRICE } from "@/config/pricingConfig";
 
 // Room Card Component with Individual State and Ref
 export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: () => void }) {
+    const locale = useLocale();
     const tCommon = useTranslations("common");
     const tAcc = useTranslations("common.accommodationExtra");
     const carouselRef = useRef<HTMLDivElement>(null);
@@ -93,7 +94,7 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                 <button
                     onClick={handlePrev}
                     className="absolute left-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all duration-300 active:scale-95 opacity-0 group-hover:opacity-100"
-                    aria-label="Previous image"
+                    aria-label={locale === "it" ? "Immagine precedente" : "Previous image"}
                 >
                     <svg className="w-5 h-5 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -102,7 +103,7 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                 <button
                     onClick={handleNext}
                     className="absolute right-2 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all duration-300 active:scale-95 opacity-0 group-hover:opacity-100"
-                    aria-label="Next image"
+                    aria-label={locale === "it" ? "Immagine successiva" : "Next image"}
                 >
                     <svg className="w-5 h-5 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -119,7 +120,7 @@ export default function RoomCard({ room, onBookNow }: { room: any, onBookNow: ()
                                 scrollToIndex(idx);
                             }}
                             className={`w-1.5 h-1.5 rounded-full transition-all ${idx === currentImageIndex ? 'bg-white w-3' : 'bg-white/60 hover:bg-white'}`}
-                            aria-label={`Go to image ${idx + 1}`}
+                            aria-label={locale === "it" ? `Vai all'immagine ${idx + 1}` : `Go to image ${idx + 1}`}
                         />
                     ))}
                 </div>

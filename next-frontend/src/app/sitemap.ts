@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
 import { SUPPORTED_LOCALES, isLocaleReviewed, TRANSLATED_PAGES } from '@/config/i18nConfig'
 import { LOCATION_LIVE } from '@/config/locationConfig'
+import { SOUND_HEALING_PAGE_READY } from '@/config/soundHealingConfig'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrls: MetadataRoute.Sitemap = [
@@ -41,6 +42,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 1,
+            images: ['https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/course-200-hour.jpg']
+        },
+        {
+            url: 'https://www.yogagarhi.com/bali-200-ghante-yoga-shikshak-prashikshan',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+            images: ['https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/course-200-hour.jpg']
+        },
+        {
+            url: 'https://www.yogagarhi.com/italia-200-ore-formazione-insegnanti-yoga',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
             images: ['https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/course-200-hour.jpg']
         },
         {
@@ -242,6 +257,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 0.9,
         },
+        ...(SOUND_HEALING_PAGE_READY ? [{
+            url: 'https://www.yogagarhi.com/sound-healing-certification-in-rishikesh',
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
+        }] : []),
     ];
 
     // Dynamic inclusion of reviewed non-English locales

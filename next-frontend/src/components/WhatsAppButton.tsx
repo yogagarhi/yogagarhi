@@ -8,12 +8,15 @@ import { useTranslations } from "next-intl";
 export default function WhatsAppButton() {
     const t = useTranslations("common");
     const pathname = usePathname();
+    const normalizedPathname = pathname?.replace(/^\/(en|id|de|ko|ja|zh|nl|ru|it|es|fr)(\/|$)/, '/') || pathname;
     const isLandingPage = [
         "/yoga-anatomy-masterclass",
         "/pre-yttc-prep",
         "/teacher-training-foundation",
-        "/yogic-energy"
-    ].includes(pathname);
+        "/yogic-energy",
+        "/bali-200-ghante-yoga-shikshak-prashikshan",
+        "/italia-200-ore-formazione-insegnanti-yoga"
+    ].includes(normalizedPathname);
 
     if (isLandingPage) return null;
 

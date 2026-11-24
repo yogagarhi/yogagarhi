@@ -293,7 +293,7 @@ export const ALSO_AVAILABLE_RISHIKESH: Record<string, SisterCampusData> = {
     ]
   },
   "it": {
-    "badge": "Campus Gemello dell'Himalaya",
+    "badge": "Sede Gemella dell'Himalaya",
     "title": "Disponibile anche a Rishikesh, India",
     "subtitle": "Preferisci studiare nel luogo di nascita dello yoga? Esplora i nostri corsi certificati Yoga Alliance nel nostro tranquillo ashram di Tapovan affacciato sul sacro Gange.",
     "exploreBtn": "Scopri il Corso",
@@ -314,7 +314,7 @@ export const ALSO_AVAILABLE_RISHIKESH: Record<string, SisterCampusData> = {
         "duration": "28 Giorni (27 Notti)",
         "price": "$999",
         "certification": "Yoga Alliance RYT 200",
-        "description": "Corso principale certificato nella capitale mondiale dello yoga. Preparazione online e frequenza gratuita a vita."
+        "description": "Corso principale certificato nella capitale mondiale dello yoga. Preparazione a distanza e frequenza gratuita a vita."
       },
       {
         "id": "300-rishikesh",
@@ -670,7 +670,7 @@ export const ALSO_AVAILABLE_VARKALA: Record<string, SisterCampusData> = {
     ]
   },
   "it": {
-    "badge": "Campus Costiero Gemello",
+    "badge": "Sede Costiera Gemella",
     "title": "Disponibile anche a Varkala, Kerala",
     "subtitle": "Preferisci studiare lungo le acque rilassanti del Mar Arabico? Scopri i nostri corsi Yoga Alliance nel nostro ashram sulle scogliere del Kerala.",
     "exploreBtn": "Scopri il Corso",

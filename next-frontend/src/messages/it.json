@@ -8,19 +8,19 @@
     "tripleSharing": "Camera tripla condivisa",
     "doubleSharing": "Camera doppia condivisa",
     "privateRoom": "Camera privata",
-    "earlyBird": "Tariffa Early Bird",
+    "earlyBird": "Tariffa anticipata",
     "preTtcMentorship": "Mentoring Pre-TTC",
     "ashram": "Ashram"
   },
   "nav": {
-    "home": "Home",
+    "home": "Inizio",
     "about": "Chi siamo",
     "courses": "Corsi",
     "retreat": "Ritiro",
-    "onlineCourses": "Corsi online",
+    "onlineCourses": "Corsi a distanza",
     "gallery": "Galleria",
     "sundaySchedule": "Programma domenicale",
-    "blogs": "Blog",
+    "blogs": "Articoli",
     "contact": "Contatti",
     "beginJourney": "Inizia il viaggio",
     "beginYourJourney": "Inizia il tuo viaggio",
@@ -28,7 +28,8 @@
     "tagline": "Trasformati dall'interno",
     "transformWithin": "Trasformati da dentro",
     "teachers": "I nostri insegnanti",
-    "testimonials": "Testimonianze"
+    "testimonials": "Testimonianze",
+    "mainNavAria": "Navigazione principale"
   },
   "navDropdown": {
     "aboutSchool": "La nostra scuola",
@@ -49,10 +50,18 @@
     "retreat3Days": "Ritiro di 3 giorni",
     "retreat7Days": "Ritiro di 7 giorni",
     "retreat14Days": "Ritiro di 14 giorni",
-    "varkalaLocation": "Varkala, Kerala"
+    "varkalaLocation": "Varkala, Kerala",
+    "course200Hindi": "Formazione 200 Ore a Bali (Hindi)",
+    "course200Italy": "Corso Yoga 200 Ore in Italia",
+    "course100Rishikesh": "100 Ore Yoga TTC a Rishikesh",
+    "course200Rishikesh": "200 Ore Yoga TTC a Rishikesh",
+    "course300Rishikesh": "300 Ore Yoga TTC a Rishikesh",
+    "course100Varkala": "100 Ore Yoga TTC a Varkala",
+    "course200Varkala": "200 Ore Yoga TTC a Varkala",
+    "course300Varkala": "300 Ore Yoga TTC a Varkala"
   },
   "promo": {
-    "title": "Offerta Early Bird",
+    "title": "Offerta iscrizione anticipata",
     "flat": "Sconto diretto di",
     "discountText": "$300 DI SCONTO",
     "batchesText": "sui corsi da marzo a luglio 2027",
@@ -62,7 +71,7 @@
     "mins": "Min",
     "secs": "Sec",
     "popupFor": "Per",
-    "popupTitle": "Offerta Early Bird 🎉",
+    "popupTitle": "Offerta iscrizione anticipata 🎉",
     "popupBatches": "Corsi da marzo a luglio 2027",
     "popupDiscount": "$300 di sconto diretto",
     "contactUs": "Contattaci",
@@ -145,9 +154,9 @@
     "description": "Scuola di formazione per insegnanti di yoga certificata Yoga Alliance (100, 200 & 300 ore) e ashram spirituale a Ubud Bali & Rishikesh India.",
     "coursesHeading": "Corsi",
     "retreatsHeading": "Ritiri",
-    "quickLinksHeading": "Link rapidi",
+    "quickLinksHeading": "Collegamenti rapidi",
     "contactHeading": "Contattaci",
-    "privacyPolicy": "Informativa sulla privacy",
+    "privacyPolicy": "Informativa sulla riservatezza",
     "termsConditions": "Termini e condizioni",
     "refundPolicy": "Politica di rimborso",
     "copyright": "Tutti i diritti riservati.",
@@ -187,7 +196,7 @@
     "enquiryTitle": "Richiesta rapida",
     "enquiryDesc": "Hai domande? Ti rispondiamo generalmente entro poche ore via WhatsApp o e-mail.",
     "preYttcTitle": "Inizia il tuo cammino",
-    "preYttcDesc": "Connettiti con i nostri fondatori per iniziare le tue sessioni online di preparazione dal vivo.",
+    "preYttcDesc": "Connettiti con i nostri fondatori per iniziare le tue sessioni a distanza di preparazione dal vivo.",
     "continueWhatsApp": "Continua su WhatsApp",
     "sendEmail": "Inviaci un'e-mail",
     "replyTiming": "Risponde abitualmente entro poche ore per aiutarti a iniziare.",
@@ -294,11 +303,11 @@
       "stage3Title": "Sostegno professionale dopo il diploma",
       "preTtcBadge": "Programma gratuito di preparazione al tuo YTTC",
       "preTtcTitle": "Mentoring Pre-TTC",
-      "preTtcDesc": "Ti stai chiedendo se sei davvero pronto per una formazione insegnanti (TTC)? Questo percorso propedeutico è pensato per consentirti di verificare la tua preparazione. Mentre quasi tutte le scuole iniziano solo al primo giorno, noi partiamo con settimane d'anticipo, online e in modo del tutto gratuito, per permetterti di arrivare sereno, radicato e fiducioso.",
+      "preTtcDesc": "Ti stai chiedendo se sei davvero pronto per una formazione insegnanti (TTC)? Questo percorso propedeutico è pensato per consentirti di verificare la tua preparazione. Mentre quasi tutte le scuole iniziano solo al primo giorno, noi partiamo con settimane d'anticipo, a distanza e in modo del tutto gratuito, per permetterti di arrivare sereno, radicato e fiducioso.",
       "preTtcTag": "Verifica prima il tuo livello di preparazione",
       "postTtcBadge": "1 anno di supporto post-TTC",
       "postTtcTitle": "Il tuo maestro resta al tuo fianco per un anno intero",
-      "postTtcDesc": "La maggior parte delle scuole saluta gli studenti il giorno del diploma. Noi no. Nei 12 mesi successivi alla formazione riceverai sessioni mensili dal vivo con noi: revisione delle tue lezioni se insegni, guida alla pratica personale se non insegni, e un maestro a cui rivolgerti per ogni dubbio. Non è un'invenzione commerciale: allievi dei corsi passati del nostro fondatore praticano online con lui da 3, 4 o 5 anni. Abbiamo semplicemente promesso ciò che era già una consuetudine naturale.",
+      "postTtcDesc": "La maggior parte delle scuole saluta gli studenti il giorno del diploma. Noi no. Nei 12 mesi successivi alla formazione riceverai sessioni mensili dal vivo con noi: revisione delle tue lezioni se insegni, guida alla pratica personale se non insegni, e un maestro a cui rivolgerti per ogni dubbio. Non è un'invenzione commerciale: allievi dei corsi passati del nostro fondatore praticano a distanza con lui da 3, 4 o 5 anni. Abbiamo semplicemente promesso ciò che era già una consuetudine naturale.",
       "postTtcShort": "La maggior parte delle scuole si congeda il giorno della consegna diplomi. Noi no. Per 12 mesi avrai sessioni mensili live...",
       "readFullDetails": "Leggi tutti i dettagli ▾",
       "postTtcDetail": "Ricevi supporto pratico per le tue prime lezioni, indicazioni per il tuo sadhana quotidiano e un canale diretto con il tuo formatore.",
@@ -352,7 +361,7 @@
       "careerBadge": "Professione",
       "careerCategory": "Avviamento",
       "careerTitle": "Mentoring per carriera e avvio studio",
-      "careerDesc": "Impara come strutturare workshop, accogliere allievi privati, insegnare all'estero e gestire l'accreditamento con Yoga Alliance.",
+      "careerDesc": "Impara come strutturare laboratori, accogliere allievi privati, insegnare all'estero e gestire l'accreditamento con Yoga Alliance.",
       "repeatCategory": "Aggiornamento continuo",
       "repeatCardTitle": "Ripetizione a vita senza costi di frequenza",
       "repeatCardDesc": "Torna a frequentare liberamente i futuri corsi di 200 ore di YogaGarhi a Bali in qualsiasi momento senza dover pagare il corso.",
@@ -379,8 +388,8 @@
       "tabAfter": "Dopo il diploma",
       "tabPre": "Prima di iniziare",
       "tabPost": "Dopo il diploma",
-      "b1Title": "Programma online gratuito Pre-TTC",
-      "b1Desc": "Moduli online per familiarizzare con le asana di base, elementi di sanscrito e pranayama per arrivare calmo e preparato.",
+      "b1Title": "Programma a distanza gratuito Pre-TTC",
+      "b1Desc": "Moduli a distanza per familiarizzare con le asana di base, elementi di sanscrito e pranayama per arrivare calmo e preparato.",
       "b2Title": "Consulenza visto e logistica di viaggio",
       "b2Desc": "Assistenza puntuale per visti turistici indonesiani, transfer aeroportuali e suggerimenti pratici sul bagaglio per Bali.",
       "b3Title": "Contatto diretto con i formatori",
@@ -397,7 +406,7 @@
       "a2Desc": "Partecipa di nuovo senza spese di corso alle future edizioni di 200 ore a Bali per rinvigorire la tua sadhana o fare da assistente.",
       "a3Title": "Community globale degli ex allievi",
       "a3Desc": "Interagisci con una rete attiva di diplomati di YogaGarhi per opportunità di insegnamento e collaborazioni.",
-      "optOnline": "Programma online opzionale e gratuito",
+      "optOnline": "Programma a distanza opzionale e gratuito",
       "compOpt": "Gratuito e Opzionale",
       "noPanic": "non entri in ansia",
       "grounded": "radicato",
@@ -506,7 +515,7 @@
     },
     "webinar": {
       "badge": "Incontro interattivo gratuito",
-      "title": "Masterclass di yoga online con domande e risposte dal vivo",
+      "title": "Masterclass di yoga a distanza con domande e risposte dal vivo",
       "desc": "Partecipa a una sessione live gratuita di 60 minuti con i nostri docenti. Scopri il nostro metodo didattico, esplora l'allineamento di base e poni ogni tua domanda.",
       "btn": "Riserva il tuo posto gratuito",
       "reserveFreeSpot": "Riserva il tuo posto gratuito",
@@ -520,7 +529,7 @@
     "gallery": {
       "badge": "Momenti nel santuario",
       "title": "La quotidianità all'ashram YogaGarhi",
-      "desc": "Accarezzato da risaie e vegetazione tropicale, il nostro campus regala la pace perfetta per una profonda introspezione.",
+      "desc": "Accarezzato da risaie e vegetazione tropicale, il nostro ashram regala la pace perfetta per una profonda introspezione.",
       "practiceMeetsPurpose": "Dove la pratica incontra il suo scopo.",
       "exploreGallery": "Esplora l'intera galleria"
     },
@@ -617,7 +626,7 @@
       "startingFrom": "A partire da",
       "startingFromVal": "$999 USD",
       "save": "Risparmia",
-      "earlyBirdDiscount": "Risparmia $300 con la tariffa Early Bird"
+      "earlyBirdDiscount": "Risparmia $300 con l'iscrizione anticipata"
     },
     "highlights": {
       "smallGroups": "Gruppi ristretti (max 8–10 allievi)",
@@ -641,7 +650,7 @@
       "p1Title": "Massimo 8–10 allievi per sessione",
       "p1Highlight": "Attenzione individuale",
       "p1Desc": "Gruppi raccolti che permettono correzioni fisiche puntuali e un rapporto diretto con i maestri.",
-      "p2Title": "Corso online Pre-TTC gratuito",
+      "p2Title": "Corso Pre-TTC a distanza gratuito",
       "p2Highlight": "Arriva preparato",
       "p2Desc": "Percorso preliminare prima della partenza per iniziare ad acquisire forza e dimestichezza con la materia.",
       "p3Title": "1 anno di mentoring post-diploma",
@@ -651,7 +660,7 @@
       "p4Highlight": "Ritorno gratuito",
       "p4Desc": "Partecipa di nuovo gratis ai futuri percorsi di YogaGarhi per ripassare o affiancare come assistente.",
       "pkgBadge": "Pacchetti con alloggio (24 giorni / 23 notti) e opzione solo corso",
-      "saveEarlyBird": "Risparmia $300 con la tariffa Early Bird",
+      "saveEarlyBird": "Risparmia $300 con l'iscrizione anticipata",
       "tuitionFrom": "Solo corso da $999 USD | Con alloggio da $1,750 USD",
       "breakdown": "Solo corso: $999 • Camera tripla: $1,750 • Camera doppia: $1,899 • Camera singola: $2,499",
       "checkAvailability": "Verifica disponibilità",
@@ -918,7 +927,7 @@
       "incExcursions": "Escursioni culturali nei luoghi sacri (tempio dell'acqua, risaie, danze)",
       "incCeremonies": "Cerimonie tradizionali del fuoco di inizio e fine corso (Agni Hotra)",
       "incPickup": "Pick-up all'aeroporto di Denpasar (DPS) il giorno di inizio del corso",
-      "incPre": "Modulo online gratuito di preparazione Pre-TTC",
+      "incPre": "Modulo a distanza gratuito di preparazione Pre-TTC",
       "incRepeat": "Diritto di ripetere il corso a vita (senza ulteriori quote di corso)",
       "notIncHeading": "Non incluso",
       "notIncFlights": "Voli aerei nazionali e internazionali",
@@ -934,11 +943,11 @@
       "tripleDesc": "Stanza luminosa e climatizzata condivisa con due compagni, bagno interno e balcone.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Stanza accogliente per due persone, con bagno privato, aria condizionata e vista giardino o piscina.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Oasi privata con letto king/queen size, bagno riservato, aria condizionata e balcone esclusivo.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD",
-      "earlyBirdPrice": "Tariffa Early Bird",
+      "earlyBirdPrice": "Tariffa anticipata",
       "tuitionFees": "Quota di partecipazione",
       "tripleSharing": "Camera tripla condivisa",
       "doubleSharing": "Camera doppia condivisa",
@@ -957,9 +966,9 @@
       "tripleDesc": "Camera con aria condizionata condivisa tra tre corsisti con bagno privato e terrazzo.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Camera condivisa per due persone con bagno, aria condizionata e affaccio sul verde.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Camera singola con letto matrimoniale, bagno en-suite, clima e terrazzino.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD"
     },
     "ethics": {
@@ -968,7 +977,7 @@
       "ryt200Title": "Insegnante di Yoga Registrato (RYT 200)",
       "viewRegistry": "Consulta il registro ufficiale Yoga Alliance",
       "yaRegisteredSchoolTitle": "Scuola Registrata Yoga Alliance USA (RYS 200)",
-      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare Registered Yoga Teacher (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
+      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare insegnante certificato (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
       "rysLabel": "RYS (Scuola Yoga Registrata)",
       "rysDesc": "YogaGarhi è una scuola accreditata e qualificata per formare e certificare insegnanti di yoga secondo i rigorosi standard curricolari di Yoga Alliance.",
       "rytLabel": "RYT (Insegnante Yoga Registrato)",
@@ -978,7 +987,7 @@
     "faqs": [
       {
         "question": "Questo corso da 200 ore è accessibile anche ai principianti?",
-        "answer": "Sì. Il piano formativo è pensato per accompagnare con cura dai fondamenti fino a un livello intermedio. Inoltre, ogni iscritto riceve l'accesso alla preparazione online gratuita per sviluppare mobilità, forza e princìpi di allineamento prima dell'arrivo a Bali."
+        "answer": "Sì. Il piano formativo è pensato per accompagnare con cura dai fondamenti fino a un livello intermedio. Inoltre, ogni iscritto riceve l'accesso alla preparazione a distanza gratuita per sviluppare mobilità, forza e princìpi di allineamento prima dell'arrivo a Bali."
       },
       {
         "question": "Quali stili di yoga vengono insegnati in questo TTC 200 ore?",
@@ -998,11 +1007,11 @@
       },
       {
         "question": "Quali soluzioni di alloggio e costi sono previsti?",
-        "answer": "Offriamo quattro pacchetti trasparenti. Solo Corso è regolare $1.299 USD (early-bird $999 USD), con pasti e alloggio gestiti autonomamente fuori dal campus. Per i soggiorni residenziali puoi scegliere Camera Tripla (regolare $2.050 USD, early-bird $1.750 USD), Doppia Condivisa (regolare $2.199 USD, early-bird $1.899 USD) o Camera Privata (regolare $2.799 USD, early-bird $2.499 USD). Tutti i pacchetti residenziali includono 23 notti di alloggio e 3 pasti sani al giorno."
+        "answer": "Offriamo quattro pacchetti trasparenti. Solo Corso è regolare $1.299 USD (tariffa anticipata $999 USD), con pasti e alloggio gestiti autonomamente fuori dalla struttura. Per i soggiorni residenziali puoi scegliere Camera Tripla (regolare $2.050 USD, tariffa anticipata $1.750 USD), Doppia Condivisa (regolare $2.199 USD, tariffa anticipata $1.899 USD) o Camera Privata (regolare $2.799 USD, tariffa anticipata $2.499 USD). Tutti i pacchetti residenziali includono 23 notti di alloggio e 3 pasti sani al giorno."
       },
       {
         "question": "Cosa comprende la quota del corso?",
-        "answer": "Per le opzioni residenziali la quota include 23 notti (bagno privato, acqua calda, AC/ventilatore, Wi-Fi), 3 pasti vegetariani sani al giorno, tisane e acqua depurata, dispense ufficiali, tappetini e supporti, transfer dall'aeroporto DPS, massaggio balinese, uscite culturali, corso propedeutico online, libro con oltre 35 sequenze, certificato Yoga Alliance RYT 200 e possibilità di ripetere il corso gratis per sempre. Nell'opzione solo corso ($999 USD), vitto e alloggio non sono compresi."
+        "answer": "Per le opzioni residenziali la quota include 23 notti (bagno privato, acqua calda, AC/ventilatore, Wi-Fi), 3 pasti vegetariani sani al giorno, tisane e acqua depurata, dispense ufficiali, tappetini e supporti, trasferimento dall'aeroporto DPS, massaggio balinese, uscite culturali, corso propedeutico a distanza, libro con oltre 35 sequenze, certificato Yoga Alliance RYT 200 e possibilità di ripetere il corso gratis per sempre. Nell'opzione solo corso ($999 USD), vitto e alloggio non sono compresi."
       },
       {
         "question": "Qual è la politica di rimborso e cancellazione?",
@@ -1015,7 +1024,7 @@
     ],
     "tourCall": {
       "heading": "Vuoi vedere la scuola prima di prenotare?",
-      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato di campus, aule, yoga shala e stanze.",
+      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato della sede, aule, yoga shala e stanze.",
       "cta": "Prenota una chiamata. Guarda la scuola. Guarda la tua stanza. Guarda la sala yoga.",
       "bookCallLive": "Guarda la scuola, la tua stanza e lo yoga shala dal vivo. Inserisci i tuoi dettagli qui sotto per prenotare."
     },
@@ -1025,7 +1034,7 @@
       "headingItalic": "a casa con te",
       "sub": "Oltre al certificato cartaceo, tornerai con una visione rinnovata, una connessione autentica con te stesso e solide capacità per guidare gli altri.",
       "careerImpactTitle": "Sbocchi professionali:",
-      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, online, retreat o avviando la tua attività autonoma.",
+      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in centri yoga, a distanza, in ritiri o avviando la tua attività autonoma.",
       "card1Title": "Certificazione globale",
       "card1Desc": "Yoga Alliance RYT-200 per iniziare la tua carriera ovunque.",
       "card2Title": "Padronanza della pratica",
@@ -1128,14 +1137,14 @@
       "Tappetini yoga e supporti inclusi",
       "Escursioni nella natura e gite nel weekend",
       "Transfer di benvenuto all'arrivo (aeroporto più vicino)",
-      "Team di supporto sul campus 24 ore su 24",
+      "Team di supporto nella struttura 24 ore su 24",
       "Attestato ufficiale al termine del corso",
       "Massaggio tradizionale balinese",
       "Spettacolo di danza balinese",
       "Trekking guidato nelle risaie",
-      "Preparazione online Pre-TTC inclusa",
-      "Workshop specialistico di bracciate e arm balance",
-      "Workshop pratico di Ayurveda",
+      "Preparazione Pre-TTC a distanza inclusa",
+      "Laboratorio specialistico di bracciate e equilibri sulle braccia",
+      "Laboratorio pratico di Ayurveda",
       "Ripetizione gratuita del corso a vita inclusa",
       "Libro YogaGarhi con oltre 35 sequenze creative"
     ],
@@ -1198,15 +1207,15 @@
     ],
     "workshopsList": [
       {
-        "title": "Workshop di Ayurveda e cucina curativa",
+        "title": "Laboratorio pratico di Ayurveda e cucina curativa",
         "description": "Comprendi la tua Prakriti e impara a riequilibrare i tuoi dosha con alimentazione e abitudini consapevoli."
       },
       {
-        "title": "Padronanza degli arm balance",
+        "title": "Padronanza degli equilibri sulle braccia",
         "description": "Acquisisci forza, tecnica e sicurezza per eseguire posizioni come Bakasana, Parsva Bakasana ed Eka Pada Galavasana."
       },
       {
-        "title": "Workshop di Handstand (verticale)",
+        "title": "Laboratorio di verticali sulle mani",
         "description": "Vinci la paura e stabilizza il baricentro con esercizi progressivi al muro e in coppia verso la verticale libera."
       },
       {
@@ -1336,7 +1345,17 @@
     },
     "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India",
     "whatYouWillReceiveHeading": "Cosa riceverai in questa formazione",
-    "whatYouWillReceiveSub": "Vantaggi chiave, immersioni ed esperienze durature incluse nel tuo percorso di 200 ore."
+    "whatYouWillReceiveSub": "Vantaggi chiave, immersioni ed esperienze durature incluse nel tuo percorso di 200 ore.",
+    "topVideoReviews": [
+      {
+        "role": "Diplomata YTTC di 200 Ore",
+        "quote": "Un'esperienza che cambia la vita: l'autentica saggezza himalayana mi ha dato vera fiducia per insegnare in tutto il mondo."
+      },
+      {
+        "role": "Diplomata YTTC di 200 Ore",
+        "quote": "Ho trovato la mia vera vocazione. Il gruppo ristretto ha permesso agli insegnanti di correggere le mie posture personalmente ogni singolo giorno."
+      }
+    ]
   },
   "whyChoose": {
     "heading": "LA DIFFERENZA YOGAGARHI",
@@ -1348,11 +1367,11 @@
     "stage3Title": "Sostegno professionale dopo il diploma",
     "preTtcBadge": "Programma gratuito di preparazione al tuo YTTC",
     "preTtcTitle": "Mentoring Pre-TTC",
-    "preTtcDesc": "Ti stai chiedendo se sei davvero pronto per una formazione insegnanti (TTC)? Questo percorso propedeutico è pensato per consentirti di verificare la tua preparazione. Mentre quasi tutte le scuole iniziano solo al primo giorno, noi partiamo con settimane d'anticipo, online e in modo del tutto gratuito, per permetterti di arrivare sereno, radicato e fiducioso.",
+    "preTtcDesc": "Ti stai chiedendo se sei davvero pronto per una formazione insegnanti (TTC)? Questo percorso propedeutico è pensato per consentirti di verificare la tua preparazione. Mentre quasi tutte le scuole iniziano solo al primo giorno, noi partiamo con settimane d'anticipo, a distanza e in modo del tutto gratuito, per permetterti di arrivare sereno, radicato e fiducioso.",
     "preTtcTag": "Verifica prima il tuo livello di preparazione",
     "postTtcBadge": "1 anno di supporto post-TTC",
     "postTtcTitle": "Il tuo maestro resta al tuo fianco per un anno intero",
-    "postTtcDesc": "La maggior parte delle scuole saluta gli studenti il giorno del diploma. Noi no. Nei 12 mesi successivi alla formazione riceverai sessioni mensili dal vivo con noi: revisione delle tue lezioni se insegni, guida alla pratica personale se non insegni, e un maestro a cui rivolgerti per ogni dubbio. Non è un'invenzione commerciale: allievi dei corsi passati del nostro fondatore praticano online con lui da 3, 4 o 5 anni. Abbiamo semplicemente promesso ciò che era già una consuetudine naturale.",
+    "postTtcDesc": "La maggior parte delle scuole saluta gli studenti il giorno del diploma. Noi no. Nei 12 mesi successivi alla formazione riceverai sessioni mensili dal vivo con noi: revisione delle tue lezioni se insegni, guida alla pratica personale se non insegni, e un maestro a cui rivolgerti per ogni dubbio. Non è un'invenzione commerciale: allievi dei corsi passati del nostro fondatore praticano a distanza con lui da 3, 4 o 5 anni. Abbiamo semplicemente promesso ciò che era già una consuetudine naturale.",
     "postTtcShort": "La maggior parte delle scuole si congeda il giorno della consegna diplomi. Noi no. Per 12 mesi avrai sessioni mensili live...",
     "readFullDetails": "Leggi tutti i dettagli ▾",
     "postTtcDetail": "Ricevi supporto pratico per le tue prime lezioni, indicazioni per il tuo sadhana quotidiano e un canale diretto con il tuo formatore.",
@@ -1406,7 +1425,7 @@
     "careerBadge": "Professione",
     "careerCategory": "Avviamento",
     "careerTitle": "Mentoring per carriera e avvio studio",
-    "careerDesc": "Impara come strutturare workshop, accogliere allievi privati, insegnare all'estero e gestire l'accreditamento con Yoga Alliance.",
+    "careerDesc": "Impara come strutturare laboratori, accogliere allievi privati, insegnare all'estero e gestire l'accreditamento con Yoga Alliance.",
     "repeatCategory": "Aggiornamento continuo",
     "repeatCardTitle": "Ripetizione a vita senza costi di frequenza",
     "repeatCardDesc": "Torna a frequentare liberamente i futuri corsi di 200 ore di YogaGarhi a Bali in qualsiasi momento senza dover pagare il corso.",
@@ -1450,7 +1469,7 @@
       "step3Desc": "Ricevi la guida preparatoria, la lista di letture consigliate e tutto il necessario prima dell'arrivo.",
       "step3Time": "Entro 48 ore",
       "step4Title": "Pianificazione del viaggio",
-      "step4Desc": "Ti assisteremo con indicazioni sul visto, consigli di viaggio e organizzazione del transfer dall'aeroporto.",
+      "step4Desc": "Ti assisteremo con indicazioni sul visto, consigli di viaggio e organizzazione del trasferimento dall'aeroporto.",
       "step4Time": "1 settimana prima"
     },
     "whileYouWait": {
@@ -1493,7 +1512,7 @@
       "startingFrom": "$1,149 USD",
       "startingFromVal": "$999 USD",
       "save": "Risparmia",
-      "earlyBirdDiscount": "Risparmia $250 con la tariffa Early Bird"
+      "earlyBirdDiscount": "Risparmia $250 con l'iscrizione anticipata"
     },
     "highlights": {
       "smallGroups": "Gruppi ristretti (max 8–10 allievi)",
@@ -1517,7 +1536,7 @@
       "p1Title": "Massimo 8–10 allievi per sessione",
       "p1Highlight": "Attenzione individuale",
       "p1Desc": "Gruppi raccolti che permettono correzioni fisiche puntuali e un rapporto diretto con i maestri.",
-      "p2Title": "Corso online Pre-TTC gratuito",
+      "p2Title": "Corso Pre-TTC a distanza gratuito",
       "p2Highlight": "Arriva preparato",
       "p2Desc": "Percorso preliminare prima della partenza per iniziare ad acquisire forza e dimestichezza con la materia.",
       "p3Title": "1 anno di mentoring post-diploma",
@@ -1527,7 +1546,7 @@
       "p4Highlight": "Ritorno gratuito",
       "p4Desc": "Partecipa di nuovo gratis ai futuri percorsi di YogaGarhi per ripassare o affiancare come assistente.",
       "pkgBadge": "Pacchetti con alloggio (12 Days / 11 Nights) e opzione solo corso",
-      "saveEarlyBird": "Risparmia $300 con la tariffa Early Bird",
+      "saveEarlyBird": "Risparmia $300 con l'iscrizione anticipata",
       "tuitionFrom": "Solo corso da $999 USD | Con alloggio da $1,750 USD",
       "breakdown": "Solo corso: $999 • Camera tripla: $1,750 • Camera doppia: $1,899 • Camera singola: $2,499",
       "checkAvailability": "Verifica disponibilità",
@@ -1609,7 +1628,7 @@
       "incExcursions": "Escursioni culturali nei luoghi sacri (tempio dell'acqua, risaie, danze)",
       "incCeremonies": "Cerimonie tradizionali del fuoco di inizio e fine corso (Agni Hotra)",
       "incPickup": "Pick-up all'aeroporto di Denpasar (DPS) il giorno di inizio del corso",
-      "incPre": "Modulo online gratuito di preparazione Pre-TTC",
+      "incPre": "Modulo a distanza gratuito di preparazione Pre-TTC",
       "incRepeat": "Diritto di ripetere il corso a vita (senza ulteriori quote di corso)",
       "notIncHeading": "Non incluso",
       "notIncFlights": "Voli aerei nazionali e internazionali",
@@ -1625,11 +1644,11 @@
       "tripleDesc": "Stanza luminosa e climatizzata condivisa con due compagni, bagno interno e balcone.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Stanza accogliente per due persone, con bagno privato, aria condizionata e vista giardino o piscina.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Oasi privata con letto king/queen size, bagno riservato, aria condizionata e balcone esclusivo.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD",
-      "earlyBirdPrice": "Tariffa Early Bird",
+      "earlyBirdPrice": "Tariffa anticipata",
       "tuitionFees": "Tariffe & Camere (100 Ore)",
       "tripleSharing": "Camera Tripla ($1.149)",
       "doubleSharing": "Camera Doppia ($1.349)",
@@ -1646,7 +1665,7 @@
       "viewRegistry": "Consulta il registro ufficiale Yoga Alliance",
       "meetsStandards": "Rilasciato da YogaGarhi, Scuola di Yoga Registrata presso Yoga Alliance (RYS 200)",
       "yaRegisteredSchoolTitle": "Scuola Registrata Yoga Alliance USA (RYS 200)",
-      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare Registered Yoga Teacher (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
+      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare insegnante certificato (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
       "rysLabel": "RYS (Scuola Yoga Registrata)",
       "rysDesc": "YogaGarhi è una scuola accreditata e qualificata per formare e certificare insegnanti di yoga secondo i rigorosi standard curricolari di Yoga Alliance.",
       "rytLabel": "RYT (Insegnante Yoga Registrato)",
@@ -1656,7 +1675,7 @@
     "faqs": [
       {
         "question": "Questo corso da 200 ore è accessibile anche ai principianti?",
-        "answer": "Sì. Il piano formativo è pensato per accompagnare con cura dai fondamenti fino a un livello intermedio. Inoltre, ogni iscritto riceve l'accesso alla preparazione online gratuita per sviluppare mobilità, forza e princìpi di allineamento prima dell'arrivo a Bali."
+        "answer": "Sì. Il piano formativo è pensato per accompagnare con cura dai fondamenti fino a un livello intermedio. Inoltre, ogni iscritto riceve l'accesso alla preparazione a distanza gratuita per sviluppare mobilità, forza e princìpi di allineamento prima dell'arrivo a Bali."
       },
       {
         "question": "Quali stili di yoga vengono insegnati in questo TTC 200 ore?",
@@ -1680,7 +1699,7 @@
       },
       {
         "question": "Cosa comprende la quota del corso?",
-        "answer": "Per le opzioni residenziali la quota include 23 notti (bagno privato, acqua calda, AC/ventilatore, Wi-Fi), 3 pasti vegetariani sani al giorno, tisane e acqua depurata, dispense ufficiali, tappetini e supporti, transfer dall'aeroporto DPS, massaggio balinese, uscite culturali, corso propedeutico online, libro con oltre 35 sequenze, certificato Yoga Alliance RYT 200 e possibilità di ripetere il corso gratis per sempre. Nell'opzione solo corso ($999 USD), vitto e alloggio non sono compresi."
+        "answer": "Per le opzioni residenziali la quota include 23 notti (bagno privato, acqua calda, AC/ventilatore, Wi-Fi), 3 pasti vegetariani sani al giorno, tisane e acqua depurata, dispense ufficiali, tappetini e supporti, trasferimento dall'aeroporto DPS, massaggio balinese, uscite culturali, corso propedeutico a distanza, libro con oltre 35 sequenze, certificato Yoga Alliance RYT 200 e possibilità di ripetere il corso gratis per sempre. Nell'opzione solo corso ($999 USD), vitto e alloggio non sono compresi."
       },
       {
         "question": "Qual è la politica di rimborso e cancellazione?",
@@ -1848,14 +1867,14 @@
       "tripleDesc": "Camera con aria condizionata condivisa tra tre corsisti con bagno privato e terrazzo.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Camera condivisa per due persone con bagno, aria condizionata e affaccio sul verde.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Camera singola con letto matrimoniale, bagno en-suite, clima e terrazzino.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD"
     },
     "tourCall": {
       "heading": "Vuoi vedere la scuola prima di prenotare?",
-      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato di campus, aule, yoga shala e stanze.",
+      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato della sede, aule, yoga shala e stanze.",
       "cta": "Prenota una chiamata. Guarda la scuola. Guarda la tua stanza. Guarda la sala yoga.",
       "bookCallLive": "Guarda la scuola, la tua stanza e lo yoga shala dal vivo. Inserisci i tuoi dettagli qui sotto per prenotare."
     },
@@ -1865,7 +1884,7 @@
       "headingItalic": "a casa con te",
       "sub": "Oltre al certificato cartaceo, tornerai con una visione rinnovata, una connessione autentica con te stesso e solide capacità per guidare gli altri.",
       "careerImpactTitle": "Sbocchi professionali:",
-      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, online, retreat o avviando la tua attività autonoma.",
+      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, a distanza, ritiri o avviando la tua attività autonoma.",
       "card1Title": "Certificazione globale",
       "card1Desc": "Yoga Alliance RYT-200 per iniziare la tua carriera ovunque.",
       "card2Title": "Padronanza della pratica",
@@ -1968,14 +1987,14 @@
       "Tappetini yoga e supporti inclusi",
       "Escursioni nella natura e gite nel weekend",
       "Transfer di benvenuto all'arrivo (aeroporto più vicino)",
-      "Team di supporto sul campus 24 ore su 24",
+      "Team di supporto nella struttura 24 ore su 24",
       "Attestato ufficiale al termine del corso",
       "Massaggio tradizionale balinese",
       "Spettacolo di danza balinese",
       "Trekking guidato nelle risaie",
-      "Preparazione online Pre-TTC inclusa",
-      "Workshop specialistico di bracciate e arm balance",
-      "Workshop pratico di Ayurveda",
+      "Preparazione Pre-TTC a distanza inclusa",
+      "Laboratorio specialistico di bracciate e equilibri sulle braccia",
+      "Laboratorio pratico di Ayurveda",
       "Ripetizione gratuita del corso a vita inclusa",
       "Libro YogaGarhi con oltre 35 sequenze creative"
     ],
@@ -2042,7 +2061,7 @@
         "description": "Comprendi la tua Prakriti e impara a riequilibrare i tuoi dosha con alimentazione e abitudini consapevoli."
       },
       {
-        "title": "Padronanza degli arm balance",
+        "title": "Padronanza degli equilibri sulle braccia",
         "description": "Acquisisci forza, tecnica e sicurezza per eseguire posizioni come Bakasana, Parsva Bakasana ed Eka Pada Galavasana."
       },
       {
@@ -2187,7 +2206,7 @@
       "startingFrom": "$2,499 USD",
       "startingFromVal": "$999 USD",
       "save": "Risparmia",
-      "earlyBirdDiscount": "Risparmia $300 con la tariffa Early Bird"
+      "earlyBirdDiscount": "Risparmia $300 con l'iscrizione anticipata"
     },
     "highlights": {
       "smallGroups": "Gruppi ristretti (max 8–10 allievi)",
@@ -2211,7 +2230,7 @@
       "p1Title": "Massimo 8–10 allievi per sessione",
       "p1Highlight": "Attenzione individuale",
       "p1Desc": "Gruppi raccolti che permettono correzioni fisiche puntuali e un rapporto diretto con i maestri.",
-      "p2Title": "Corso online Pre-TTC gratuito",
+      "p2Title": "Corso Pre-TTC a distanza gratuito",
       "p2Highlight": "Arriva preparato",
       "p2Desc": "Percorso preliminare prima della partenza per iniziare ad acquisire forza e dimestichezza con la materia.",
       "p3Title": "1 anno di mentoring post-diploma",
@@ -2221,7 +2240,7 @@
       "p4Highlight": "Ritorno gratuito",
       "p4Desc": "Partecipa di nuovo gratis ai futuri percorsi di YogaGarhi per ripassare o affiancare come assistente.",
       "pkgBadge": "Pacchetti con alloggio (28 Days / 27 Nights) e opzione solo corso",
-      "saveEarlyBird": "Risparmia $300 con la tariffa Early Bird",
+      "saveEarlyBird": "Risparmia $300 con l'iscrizione anticipata",
       "tuitionFrom": "Solo corso da $999 USD | Con alloggio da $1,750 USD",
       "breakdown": "Solo corso: $999 • Camera tripla: $1,750 • Camera doppia: $1,899 • Camera singola: $2,499",
       "checkAvailability": "Verifica disponibilità",
@@ -2303,7 +2322,7 @@
       "incExcursions": "Escursioni culturali nei luoghi sacri (tempio dell'acqua, risaie, danze)",
       "incCeremonies": "Cerimonie tradizionali del fuoco di inizio e fine corso (Agni Hotra)",
       "incPickup": "Pick-up all'aeroporto di Denpasar (DPS) il giorno di inizio del corso",
-      "incPre": "Modulo online gratuito di preparazione Pre-TTC",
+      "incPre": "Modulo a distanza gratuito di preparazione Pre-TTC",
       "incRepeat": "Diritto di ripetere il corso a vita (senza ulteriori quote di corso)",
       "notIncHeading": "Non incluso",
       "notIncFlights": "Voli aerei nazionali e internazionali",
@@ -2319,11 +2338,11 @@
       "tripleDesc": "Stanza luminosa e climatizzata condivisa con due compagni, bagno interno e balcone.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Stanza accogliente per due persone, con bagno privato, aria condizionata e vista giardino o piscina.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Oasi privata con letto king/queen size, bagno riservato, aria condizionata e balcone esclusivo.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD",
-      "earlyBirdPrice": "Tariffa Early Bird",
+      "earlyBirdPrice": "Tariffa anticipata",
       "tuitionFees": "Tariffe & Camere (300 Ore)",
       "tripleSharing": "Camera Tripla ($2.499)",
       "doubleSharing": "Camera Doppia ($2.699)",
@@ -2339,7 +2358,7 @@
       "ryt200Title": "Insegnante di Yoga Registrato (RYT 200)",
       "viewRegistry": "Consulta il registro ufficiale Yoga Alliance",
       "yaRegisteredSchoolTitle": "Scuola Registrata Yoga Alliance USA (RYS 200)",
-      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare Registered Yoga Teacher (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
+      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare insegnante certificato (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
       "rysLabel": "RYS (Scuola Yoga Registrata)",
       "rysDesc": "YogaGarhi è una scuola accreditata e qualificata per formare e certificare insegnanti di yoga secondo i rigorosi standard curricolari di Yoga Alliance.",
       "rytLabel": "RYT (Insegnante Yoga Registrato)",
@@ -2349,7 +2368,7 @@
     "faqs": [
       {
         "question": "Questo corso da 200 ore è accessibile anche ai principianti?",
-        "answer": "Sì. Il piano formativo è pensato per accompagnare con cura dai fondamenti fino a un livello intermedio. Inoltre, ogni iscritto riceve l'accesso alla preparazione online gratuita per sviluppare mobilità, forza e princìpi di allineamento prima dell'arrivo a Bali."
+        "answer": "Sì. Il piano formativo è pensato per accompagnare con cura dai fondamenti fino a un livello intermedio. Inoltre, ogni iscritto riceve l'accesso alla preparazione a distanza gratuita per sviluppare mobilità, forza e princìpi di allineamento prima dell'arrivo a Bali."
       },
       {
         "question": "Quali stili di yoga vengono insegnati in questo TTC 200 ore?",
@@ -2413,7 +2432,7 @@
         {
           "title": "Asana Avanzate e Aggiustamenti",
           "items": [
-            "Advanced arm balances & inversions",
+            "Advanced equilibri sulle braccias & inversions",
             "Therapeutic modifications & props usage",
             "Working with injuries & limitations",
             "Advanced sequencing principles"
@@ -2446,7 +2465,7 @@
             "Leading guided meditations",
             "Chakra meditation techniques",
             "Sound & mantra meditation",
-            "Silent retreat practices"
+            "Silent ritiri practices"
           ]
         },
         {
@@ -2472,7 +2491,7 @@
         {
           "title": "Insegnare come Professione: Workshop, Ritiri e Insegnamento Online",
           "items": [
-            "Workshop & retreat planning",
+            "Workshop & ritiri planning",
             "Private session design",
             "Online class delivery",
             "Business of yoga & ethical studio management"
@@ -2482,7 +2501,7 @@
           "title": "Allineamento Avanzato e Regolazioni Biomeccaniche",
           "items": [
             "Micro-alignment principles and postural observation for advanced and complex asanas",
-            "Hands-on adjustment mastery for deep backbends, arm balances, and inversions",
+            "Hands-on adjustment mastery for deep backbends, equilibri sulle braccias, and inversions",
             "Advanced postural biomechanics, weight distribution, and multi-directional stability",
             "Adaptive biomechanics and posture modifications for diverse body types and athletic students"
           ]
@@ -2510,9 +2529,9 @@
           "items": [
             "Master-level Vinyasa Krama (wise progression) toward complex peak postures",
             "Creating themed classes and peak posture staging",
-            "Seamless fluid transitions: floating, arm balance entries, and inversion integrations",
+            "Seamless fluid transitions: floating, equilibri sulle braccia entries, and inversion integrations",
             "Thematic philosophical weaving and somatic cues throughout high-energy flows",
-            "Designing transformative workshops, masterclasses, and multi-day retreat flows"
+            "Designing transformative workshops, masterclasses, and multi-day ritiri flows"
           ]
         },
         {
@@ -2544,14 +2563,14 @@
       "tripleDesc": "Camera con aria condizionata condivisa tra tre corsisti con bagno privato e terrazzo.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Camera condivisa per due persone con bagno, aria condizionata e affaccio sul verde.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Camera singola con letto matrimoniale, bagno en-suite, clima e terrazzino.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD"
     },
     "tourCall": {
       "heading": "Vuoi vedere la scuola prima di prenotare?",
-      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato di campus, aule, yoga shala e stanze.",
+      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato della sede, aule, yoga shala e stanze.",
       "cta": "Prenota una chiamata. Guarda la scuola. Guarda la tua stanza. Guarda la sala yoga.",
       "bookCallLive": "Guarda la scuola, la tua stanza e lo yoga shala dal vivo. Inserisci i tuoi dettagli qui sotto per prenotare."
     },
@@ -2561,7 +2580,7 @@
       "headingItalic": "a casa con te",
       "sub": "Oltre al certificato cartaceo, tornerai con una visione rinnovata, una connessione autentica con te stesso e solide capacità per guidare gli altri.",
       "careerImpactTitle": "Sbocchi professionali:",
-      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, online, retreat o avviando la tua attività autonoma.",
+      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, a distanza, ritiri o avviando la tua attività autonoma.",
       "card1Title": "Certificazione globale",
       "card1Desc": "Yoga Alliance RYT-200 per iniziare la tua carriera ovunque.",
       "card2Title": "Padronanza della pratica",
@@ -2664,14 +2683,14 @@
       "Tappetini yoga e supporti inclusi",
       "Escursioni nella natura e gite nel weekend",
       "Transfer di benvenuto all'arrivo (aeroporto più vicino)",
-      "Team di supporto sul campus 24 ore su 24",
+      "Team di supporto nella struttura 24 ore su 24",
       "Attestato ufficiale al termine del corso",
       "Massaggio tradizionale balinese",
       "Spettacolo di danza balinese",
       "Trekking guidato nelle risaie",
-      "Preparazione online Pre-TTC inclusa",
-      "Workshop specialistico di bracciate e arm balance",
-      "Workshop pratico di Ayurveda",
+      "Preparazione Pre-TTC a distanza inclusa",
+      "Laboratorio specialistico di bracciate e equilibri sulle braccia",
+      "Laboratorio pratico di Ayurveda",
       "Ripetizione gratuita del corso a vita inclusa",
       "Libro YogaGarhi con oltre 35 sequenze creative"
     ],
@@ -2738,7 +2757,7 @@
         "description": "Comprendi la tua Prakriti e impara a riequilibrare i tuoi dosha con alimentazione e abitudini consapevoli."
       },
       {
-        "title": "Padronanza degli arm balance",
+        "title": "Padronanza degli equilibri sulle braccia",
         "description": "Acquisisci forza, tecnica e sicurezza per eseguire posizioni come Bakasana, Parsva Bakasana ed Eka Pada Galavasana."
       },
       {
@@ -2883,7 +2902,7 @@
       "startingFrom": "$1,149 USD",
       "startingFromVal": "$999 USD",
       "save": "Risparmia",
-      "earlyBirdDiscount": "Risparmia $200 con la tariffa Early Bird"
+      "earlyBirdDiscount": "Risparmia $200 con l'iscrizione anticipata"
     },
     "highlights": {
       "smallGroups": "Gruppi ristretti (max 8–10 allievi)",
@@ -2907,7 +2926,7 @@
       "p1Title": "Massimo 8–10 allievi per sessione",
       "p1Highlight": "Attenzione individuale",
       "p1Desc": "Gruppi raccolti che permettono correzioni fisiche puntuali e un rapporto diretto con i maestri.",
-      "p2Title": "Corso online Pre-TTC gratuito",
+      "p2Title": "Corso Pre-TTC a distanza gratuito",
       "p2Highlight": "Arriva preparato",
       "p2Desc": "Percorso preliminare prima della partenza per iniziare ad acquisire forza e dimestichezza con la materia.",
       "p3Title": "1 anno di mentoring post-diploma",
@@ -2917,7 +2936,7 @@
       "p4Highlight": "Ritorno gratuito",
       "p4Desc": "Partecipa di nuovo gratis ai futuri percorsi di YogaGarhi per ripassare o affiancare come assistente.",
       "pkgBadge": "Pacchetti con alloggio (24 giorni / 23 notti) e opzione solo corso",
-      "saveEarlyBird": "Risparmia $300 con la tariffa Early Bird",
+      "saveEarlyBird": "Risparmia $300 con l'iscrizione anticipata",
       "tuitionFrom": "Solo corso da $999 USD | Con alloggio da $1,750 USD",
       "breakdown": "Solo corso: $999 • Camera tripla: $1,750 • Camera doppia: $1,899 • Camera singola: $2,499",
       "checkAvailability": "Verifica disponibilità",
@@ -2999,7 +3018,7 @@
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Cerimonie tradizionali del fuoco di inizio e fine corso (Agni Hotra)",
       "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
-      "incPre": "Modulo online gratuito di preparazione Pre-TTC",
+      "incPre": "Modulo a distanza gratuito di preparazione Pre-TTC",
       "incRepeat": "Diritto di ripetere il corso a vita (senza ulteriori quote di corso)",
       "notIncHeading": "Non incluso",
       "notIncFlights": "Voli aerei nazionali e internazionali",
@@ -3015,11 +3034,11 @@
       "tripleDesc": "Stanza luminosa e climatizzata condivisa con due compagni, bagno interno e balcone.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Stanza accogliente per due persone, con bagno privato, aria condizionata e vista giardino o piscina.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Oasi privata con letto king/queen size, bagno riservato, aria condizionata e balcone esclusivo.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD",
-      "earlyBirdPrice": "Tariffa Early Bird",
+      "earlyBirdPrice": "Tariffa anticipata",
       "tuitionFees": "Tariffe & Camere (100 Ore Rishikesh)",
       "tripleSharing": "Camera Tripla ($1.149)",
       "doubleSharing": "Camera Doppia ($1.349)",
@@ -3035,7 +3054,7 @@
       "ryt200Title": "Insegnante di Yoga Registrato (RYT 200)",
       "viewRegistry": "Consulta il registro ufficiale Yoga Alliance",
       "yaRegisteredSchoolTitle": "Scuola Registrata Yoga Alliance USA (RYS 200)",
-      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare Registered Yoga Teacher (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
+      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare insegnante certificato (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
       "rysLabel": "RYS (Scuola Yoga Registrata)",
       "rysDesc": "YogaGarhi è una scuola accreditata e qualificata per formare e certificare insegnanti di yoga secondo i rigorosi standard curricolari di Yoga Alliance.",
       "rytLabel": "RYT (Insegnante Yoga Registrato)",
@@ -3257,14 +3276,14 @@
       "tripleDesc": "Camera con aria condizionata condivisa tra tre corsisti con bagno privato e terrazzo.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Camera condivisa per due persone con bagno, aria condizionata e affaccio sul verde.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Camera singola con letto matrimoniale, bagno en-suite, clima e terrazzino.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD"
     },
     "tourCall": {
       "heading": "Vuoi vedere la scuola prima di prenotare?",
-      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato di campus, aule, yoga shala e stanze.",
+      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato della sede, aule, yoga shala e stanze.",
       "cta": "Prenota una chiamata. Guarda la scuola. Guarda la tua stanza. Guarda la sala yoga.",
       "bookCallLive": "Guarda la scuola, la tua stanza e lo yoga shala dal vivo. Inserisci i tuoi dettagli qui sotto per prenotare."
     },
@@ -3274,7 +3293,7 @@
       "headingItalic": "a casa con te",
       "sub": "Oltre al certificato cartaceo, tornerai con una visione rinnovata, una connessione autentica con te stesso e solide capacità per guidare gli altri.",
       "careerImpactTitle": "Sbocchi professionali:",
-      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, online, retreat o avviando la tua attività autonoma.",
+      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, a distanza, ritiri o avviando la tua attività autonoma.",
       "card1Title": "Certificazione globale",
       "card1Desc": "Yoga Alliance RYT-200 per iniziare la tua carriera ovunque.",
       "card2Title": "Padronanza della pratica",
@@ -3377,13 +3396,13 @@
       "Tappetini e supporti yoga forniti",
       "Sacro Ganga Aarti ed escursioni sull'Himalaya",
       "Assistenza per il trasferimento dall'aeroporto (Aeroporto Dehradun DED)",
-      "Team di supporto presente nel campus dell'ashram 24/7",
+      "Team di supporto presente nell'ashram dell'ashram 24/7",
       "Certificazione RYT accreditata Yoga Alliance",
       "Massaggio ayurvedico rigenerante Abhyanga",
       "Cerimonia Ganga Aarti a Parmarth Niketan",
       "Trekking meditativo all'alba sull'Himalaya a Kunjapuri",
       "Escursione meditativa nella grotta millenaria di Vashistha",
-      "Moduli di preparazione online Pre-TTC inclusi",
+      "Moduli di preparazione Pre-TTC a distanza inclusi",
       "Workshop su equilibri sulle braccia e allineamenti",
       "Workshop su stile di vita e nutrizione ayurvedica",
       "Ripetizione gratuita del corso a vita inclusa",
@@ -3452,7 +3471,7 @@
         "description": "Comprendi la tua Prakriti e impara a riequilibrare i tuoi dosha con alimentazione e abitudini consapevoli."
       },
       {
-        "title": "Padronanza degli arm balance",
+        "title": "Padronanza degli equilibri sulle braccia",
         "description": "Acquisisci forza, tecnica e sicurezza per eseguire posizioni come Bakasana, Parsva Bakasana ed Eka Pada Galavasana."
       },
       {
@@ -3602,7 +3621,7 @@
       "startingFrom": "$999 USD",
       "startingFromVal": "$999 USD",
       "save": "Risparmia",
-      "earlyBirdDiscount": "Risparmia $300 con la tariffa Early Bird"
+      "earlyBirdDiscount": "Risparmia $300 con l'iscrizione anticipata"
     },
     "highlights": {
       "smallGroups": "Gruppi ristretti (max 8–10 allievi)",
@@ -3626,7 +3645,7 @@
       "p1Title": "Massimo 8–10 allievi per sessione",
       "p1Highlight": "Attenzione individuale",
       "p1Desc": "Gruppi raccolti che permettono correzioni fisiche puntuali e un rapporto diretto con i maestri.",
-      "p2Title": "Corso online Pre-TTC gratuito",
+      "p2Title": "Corso Pre-TTC a distanza gratuito",
       "p2Highlight": "Arriva preparato",
       "p2Desc": "Percorso preliminare prima della partenza per iniziare ad acquisire forza e dimestichezza con la materia.",
       "p3Title": "1 anno di mentoring post-diploma",
@@ -3636,7 +3655,7 @@
       "p4Highlight": "Ritorno gratuito",
       "p4Desc": "Partecipa di nuovo gratis ai futuri percorsi di YogaGarhi per ripassare o affiancare come assistente.",
       "pkgBadge": "Pacchetti con alloggio (24 giorni / 23 notti) e opzione solo corso",
-      "saveEarlyBird": "Risparmia $300 con la tariffa Early Bird",
+      "saveEarlyBird": "Risparmia $300 con l'iscrizione anticipata",
       "tuitionFrom": "Solo corso da $999 USD | Con alloggio da $1,750 USD",
       "breakdown": "Solo corso: $999 • Camera tripla: $1,750 • Camera doppia: $1,899 • Camera singola: $2,499",
       "checkAvailability": "Verifica disponibilità",
@@ -3764,7 +3783,7 @@
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Cerimonie tradizionali del fuoco di inizio e fine corso (Agni Hotra)",
       "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
-      "incPre": "Modulo online gratuito di preparazione Pre-TTC",
+      "incPre": "Modulo a distanza gratuito di preparazione Pre-TTC",
       "incRepeat": "Diritto di ripetere il corso a vita (senza ulteriori quote di corso)",
       "notIncHeading": "Non incluso",
       "notIncFlights": "Voli aerei nazionali e internazionali",
@@ -3780,11 +3799,11 @@
       "tripleDesc": "Stanza luminosa e climatizzata condivisa con due compagni, bagno interno e balcone.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Stanza accogliente per due persone, con bagno privato, aria condizionata e vista giardino o piscina.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Oasi privata con letto king/queen size, bagno riservato, aria condizionata e balcone esclusivo.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD",
-      "earlyBirdPrice": "Tariffa Early Bird",
+      "earlyBirdPrice": "Tariffa anticipata",
       "tuitionFees": "Tariffe & Camere (200 Ore Rishikesh)",
       "tripleSharing": "Camera Tripla ($1.750)",
       "doubleSharing": "Camera Doppia ($1.899)",
@@ -3800,7 +3819,7 @@
       "ryt200Title": "Insegnante di Yoga Registrato (RYT 200)",
       "viewRegistry": "Consulta il registro ufficiale Yoga Alliance",
       "yaRegisteredSchoolTitle": "Scuola Registrata Yoga Alliance USA (RYS 200)",
-      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare Registered Yoga Teacher (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
+      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare insegnante certificato (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
       "rysLabel": "RYS (Scuola Yoga Registrata)",
       "rysDesc": "YogaGarhi è una scuola accreditata e qualificata per formare e certificare insegnanti di yoga secondo i rigorosi standard curricolari di Yoga Alliance.",
       "rytLabel": "RYT (Insegnante Yoga Registrato)",
@@ -3818,7 +3837,7 @@
       },
       {
         "question": "Do I need prior yoga experience to join the 200-Hour YTT?",
-        "answer": "No prior teaching experience or advanced flexibility is required. Our 200-Hour curriculum is designed to systematically build your practice from foundational principles to intermediate mastery. Furthermore, every enrolled student receives immediate access to our complimentary Pre-YTTC online preparation modules so you can build strength, mobility, and Sanskrit familiarity before arriving at the ashram."
+        "answer": "No prior teaching experience or advanced flexibility is required. Our 200-Hour curriculum is designed to systematically build your practice from foundational principles to intermediate mastery. Furthermore, every enrolled student receives immediate access to our complimentary Pre-YTTC a distanza preparation modules so you can build strength, mobility, and Sanskrit familiarity before arriving at the ashram."
       },
       {
         "question": "Is the 200-Hour certification internationally recognized by Yoga Alliance?",
@@ -4039,14 +4058,14 @@
       "tripleDesc": "Camera con aria condizionata condivisa tra tre corsisti con bagno privato e terrazzo.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Camera condivisa per due persone con bagno, aria condizionata e affaccio sul verde.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Camera singola con letto matrimoniale, bagno en-suite, clima e terrazzino.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD"
     },
     "tourCall": {
       "heading": "Vuoi vedere la scuola prima di prenotare?",
-      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato di campus, aule, yoga shala e stanze.",
+      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato della sede, aule, yoga shala e stanze.",
       "cta": "Prenota una chiamata. Guarda la scuola. Guarda la tua stanza. Guarda la sala yoga.",
       "bookCallLive": "Guarda la scuola, la tua stanza e lo yoga shala dal vivo. Inserisci i tuoi dettagli qui sotto per prenotare."
     },
@@ -4056,7 +4075,7 @@
       "headingItalic": "a casa con te",
       "sub": "Oltre al certificato cartaceo, tornerai con una visione rinnovata, una connessione autentica con te stesso e solide capacità per guidare gli altri.",
       "careerImpactTitle": "Sbocchi professionali:",
-      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, online, retreat o avviando la tua attività autonoma.",
+      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, a distanza, ritiri o avviando la tua attività autonoma.",
       "card1Title": "Certificazione globale",
       "card1Desc": "Yoga Alliance RYT-200 per iniziare la tua carriera ovunque.",
       "card2Title": "Padronanza della pratica",
@@ -4159,13 +4178,13 @@
       "Tappetini e supporti yoga forniti",
       "Sacro Ganga Aarti ed escursioni sull'Himalaya",
       "Assistenza per il trasferimento dall'aeroporto (Aeroporto Dehradun DED)",
-      "Team di supporto presente nel campus dell'ashram 24/7",
+      "Team di supporto presente nell'ashram dell'ashram 24/7",
       "Certificazione RYT accreditata Yoga Alliance",
       "Massaggio ayurvedico rigenerante Abhyanga",
       "Cerimonia Ganga Aarti a Parmarth Niketan",
       "Trekking meditativo all'alba sull'Himalaya a Kunjapuri",
       "Escursione meditativa nella grotta millenaria di Vashistha",
-      "Moduli di preparazione online Pre-TTC inclusi",
+      "Moduli di preparazione Pre-TTC a distanza inclusi",
       "Workshop su equilibri sulle braccia e allineamenti",
       "Workshop su stile di vita e nutrizione ayurvedica",
       "Ripetizione gratuita del corso a vita inclusa",
@@ -4234,7 +4253,7 @@
         "description": "Comprendi la tua Prakriti e impara a riequilibrare i tuoi dosha con alimentazione e abitudini consapevoli."
       },
       {
-        "title": "Padronanza degli arm balance",
+        "title": "Padronanza degli equilibri sulle braccia",
         "description": "Acquisisci forza, tecnica e sicurezza per eseguire posizioni come Bakasana, Parsva Bakasana ed Eka Pada Galavasana."
       },
       {
@@ -4642,7 +4661,7 @@
     "course200F1": "Certificazione mondiale Yoga Alliance RYT 200",
     "course200F2": "Metodologia didattica completa Hatha, Ashtanga e Vinyasa",
     "course200F3": "23 notti di alloggio e 3 pasti Sattvic quotidiani (residenziale)",
-    "course200F4": "Materiali di studio online Pre-YTTC inclusi immediatamente",
+    "course200F4": "Materiali di studio a distanza Pre-YTTC inclusi immediatamente",
     "course100Title": "Formazione Insegnanti Yoga 100 Ore",
     "course100Tag": "Reset Fondamentale • Formazione Continua",
     "course100Duration": "12 Giorni / 11 Notti",
@@ -4662,14 +4681,14 @@
     "applyBali": "Candidati a Bali",
     "applyRishikesh": "Candidati a Rishikesh",
     "stepsHeading": "Il Processo di Ammissione e Iscrizione",
-    "stepsSub": "Dalla candidatura all'arrivo nel campus, il nostro processo è semplice, trasparente e pienamente supportato.",
+    "stepsSub": "Dalla candidatura all'arrivo nell'ashram, il nostro processo è semplice, trasparente e pienamente supportato.",
     "s1Title": "Seleziona il tuo corso e la destinazione",
     "s1Desc": "Scegli tra programmi di formazione da 100, 200 o 300 ore a Ubud (Bali) o Rishikesh (Himalaya) in base ai tuoi obiettivi.",
     "s2Title": "Verifica prerequisiti e idoneità",
     "s2Desc": "I corsi da 100 e 200 ore sono aperti sia a principianti motivati che a praticanti esperti. Il 300 ore richiede certificato RYT 200 ore.",
     "s3Title": "Riserva il tuo posto",
     "s3Desc": "Garantitevi date e camera con un deposito di $250 USD, trasferibile entro 12 mesi in caso di emergenza.",
-    "s4Title": "Accesso online immediato Pre-YTTC",
+    "s4Title": "Accesso a distanza immediato Pre-YTTC",
     "s4Desc": "Ricevi la tua Guida di Benvenuto YogaGarhi e l'accesso immediato ai nostri moduli video di preparazione Pre-YTTC e ai fondamenti di anatomia.",
     "s5Title": "Arriva al campus e immergiti",
     "s5Desc": "Gruppi rigorosamente limitati a 8–10 studenti garantiscono tutoraggio personale, correzioni di allineamento 1 a 1 e autentica immersione nell'ashram.",
@@ -4682,7 +4701,7 @@
     "q3": "Cosa succede se le mie date di viaggio o i miei piani cambiano?",
     "a3": "Se dovete cancellare per una situazione di emergenza, potete trasferire il vostro deposito di $250 USD a un corso successivo entro 12 mesi. Vi invitiamo a contattare il nostro team ammissioni il prima possibile per concordare le nuove date.",
     "q4": "Cosa è incluso nella mia iscrizione?",
-    "a4": "I pacchetti residenziali includono l'insegnamento completo, il certificato accreditato Yoga Alliance, il manuale stampato, l'alloggio per l'intera durata, 3 pasti quotidiani nutrienti Sattvic/vegetariani, escursioni nel weekend e accesso immediato al portale online Pre-YTTC. Disponibili anche opzioni solo corso.",
+    "a4": "I pacchetti residenziali includono l'insegnamento completo, il certificato accreditato Yoga Alliance, il manuale stampato, l'alloggio per l'intera durata, 3 pasti quotidiani nutrienti Sattvic/vegetariani, escursioni nel weekend e accesso immediato al portale a distanza Pre-YTTC. Disponibili anche opzioni solo corso.",
     "q5": "Quanti studenti ci sono in ogni gruppo?",
     "a5": "Per garantire attenzione personalizzata, feedback individuale sull'allineamento e un apprendimento profondo, manteniamo classi intime con tutoraggio dedicato.",
     "ctaHeading": "Hai bisogno di consigli per scegliere la formazione giusta?",
@@ -4732,7 +4751,7 @@
     "theme2": "Tradizione e Artigianato",
     "theme3": "Spiritualità e Rinnovamento"
   },
-  "retreatHub": {
+  "ritiriHub": {
     "metaTitle": "Ritiri di Yoga a Bali, Rishikesh e Varkala | YogaGarhi",
     "metaDesc": "Rigenerati con ritiri yoga da 3, 7 e 14 giorni a Ubud Bali, Rishikesh e sulla spiaggia di Varkala. Yoga quotidiano, meditazione e pasti biologici.",
     "badge": "✦ Santuari Sacri del Benessere",
@@ -4754,7 +4773,7 @@
     "faqA3": "Tutti i pacchetti includono yoga quotidiano, meditazione, massaggi, 3 pasti biologici vegetariani/vegani al giorno, escursioni e alloggio.",
     "privateVilla": "Villa privata"
   },
-  "retreatLocation": {
+  "ritiriLocation": {
     "limitedOfferBadge": "Offerta a Tempo Limitato",
     "limitedOfferText": "Risparmia fino a 200 $ USD sulle prossime prenotazioni a Bali!",
     "whatsappFastBooking": "WhatsApp per prenotazione rapida →",
@@ -4767,14 +4786,14 @@
     "packagesSub": "Disponibile tutto l'anno con date flessibili. Scegli tra 3, 7 o 14 giorni di rigenerazione.",
     "viewDetailsSchedule": "Visualizza dettagli e programma del ritiro →"
   },
-  "retreatDetail": {
+  "ritiriDetail": {
     "limitedOfferBadge": "Offerta a Tempo Limitato",
-    "limitedOfferText": "Risparmia fino a 200 $ USD sulle prossime date. Tariffa Early Bird disponibile.",
+    "limitedOfferText": "Risparmia fino a 200 $ USD sulle prossime date. Tariffa anticipata disponibile.",
     "whatsappNow": "Contattaci su WhatsApp →",
     "breadcrumbRetreats": "Ritiri",
     "badgeShared": "Camera Condivisa",
     "badgePrivate": "Camera Privata",
-    "earlyBird": "Risparmio Early Bird",
+    "earlyBird": "Risparmio iscrizione anticipata",
     "reserveMat": "Prenota il tuo posto",
     "talkCounselor": "Parla con un consulente",
     "quickOverview": "Panoramica rapida",
@@ -4794,7 +4813,7 @@
     "navPricing": "Prezzi",
     "navFaq": "FAQ",
     "aboutRetreat": "Informazioni sul ritiro",
-    "retreatHighlights": "Caratteristiche e inclusioni",
+    "ritiriHighlights": "Caratteristiche e inclusioni",
     "dailyRhythm": "Esempio di programma giornaliero",
     "scheduleNote": "Nota: Gli orari sono studiati per bilanciare la pratica yoga con il riposo rigenerante.",
     "stayDining": "Alloggio e Cucina Vegetale",
@@ -5312,7 +5331,7 @@
           "Esplora i principi cardine della filosofia yogica",
           "Come la certificazione TTC modella l'insegnamento dello yoga moderno",
           "Le competenze didattiche: sequenze, indicazioni vocali, sicurezza e presenza",
-          "L'economia attuale dell'insegnamento: studi, aziende, corsi online",
+          "L'economia attuale dell'insegnamento: studi, aziende, corsi a distanza",
           "Come costruire un'attività duratura con guadagni consapevoli",
           "Come monetizzare l'insegnamento dello yoga senza snaturarne l'autenticità"
         ]
@@ -5563,7 +5582,7 @@
       "headingToday": "Oggi",
       "headingPart2": ", Non Solo a Bali.",
       "para1": "La maggior parte delle scuole ti immerge subito in un programma serrato. A YogaGarhi scegliamo un approccio più attento.",
-      "para2Part1": "Offriamo un programma di preparazione online completo affinché, quando inizierà il percorso,",
+      "para2Part1": "Offriamo un programma di preparazione a distanza completo affinché, quando inizierà il percorso,",
       "para2Panic": "tu non vada in ansia",
       "para2Part2": ".",
       "para3": "Arrivi con radicamento. Arrivi con limpidezza. Arrivi pronto ad accogliere l'esperienza trasformativa che ti attende."
@@ -5603,7 +5622,7 @@
     "metaDesc": "Consulta i termini e condizioni di YogaGarhi, il regolamento dell'ashram, il codice etico e le linee guida per la certificazione Yoga Alliance.",
     "badge": "Linee Guida dell'Ashram & Accordo dello Studente",
     "title": "Termini e Condizioni",
-    "intro": "Benvenuto a YogaGarhi. Con l'iscrizione ai nostri corsi, ritiri o programmi online, ti impegni a rispettare i valori del nostro ashram, il codice di condotta e le linee guida della nostra comunità.",
+    "intro": "Benvenuto a YogaGarhi. Con l'iscrizione ai nostri corsi, ritiri o programmi a distanza, ti impegni a rispettare i valori del nostro ashram, il codice di condotta e le linee guida della nostra comunità.",
     "section1Title": "1. Codice di Condotta dell'Ashram (Yama & Niyama)",
     "section1Intro": "YogaGarhi è un santuario consacrato all'apprendimento spirituale. In segno di profondo rispetto per la tradizione yogica, tutti gli studenti e gli ospiti sono tenuti a osservare:",
     "section1Point1Title": "Ambiente Senza Sostanze:",
@@ -5673,7 +5692,7 @@
       "startingFrom": "$999 USD",
       "startingFromVal": "$999 USD",
       "save": "Risparmia",
-      "earlyBirdDiscount": "Risparmia $300 con la tariffa Early Bird"
+      "earlyBirdDiscount": "Risparmia $300 con l'iscrizione anticipata"
     },
     "highlights": {
       "smallGroups": "Gruppi ristretti (max 8–10 allievi)",
@@ -5697,7 +5716,7 @@
       "p1Title": "Massimo 8–10 allievi per sessione",
       "p1Highlight": "Attenzione individuale",
       "p1Desc": "Gruppi raccolti che permettono correzioni fisiche puntuali e un rapporto diretto con i maestri.",
-      "p2Title": "Corso online Pre-TTC gratuito",
+      "p2Title": "Corso Pre-TTC a distanza gratuito",
       "p2Highlight": "Arriva preparato",
       "p2Desc": "Percorso preliminare prima della partenza per iniziare ad acquisire forza e dimestichezza con la materia.",
       "p3Title": "1 anno di mentoring post-diploma",
@@ -5707,7 +5726,7 @@
       "p4Highlight": "Ritorno gratuito",
       "p4Desc": "Partecipa di nuovo gratis ai futuri percorsi di YogaGarhi per ripassare o affiancare come assistente.",
       "pkgBadge": "Pacchetti con alloggio (24 giorni / 23 notti) e opzione solo corso",
-      "saveEarlyBird": "Risparmia $300 con la tariffa Early Bird",
+      "saveEarlyBird": "Risparmia $300 con l'iscrizione anticipata",
       "tuitionFrom": "Solo corso da $999 USD | Con alloggio da $1,750 USD",
       "breakdown": "Solo corso: $999 • Camera tripla: $1,750 • Camera doppia: $1,899 • Camera singola: $2,499",
       "checkAvailability": "Verifica disponibilità",
@@ -5835,7 +5854,7 @@
       "incExcursions": "Sacred Himalayan excursions (Ganga Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Cerimonie tradizionali del fuoco di inizio e fine corso (Agni Hotra)",
       "incPickup": "Airport pickup from Dehradun Airport (DED) on course arrival date (available upon request)",
-      "incPre": "Modulo online gratuito di preparazione Pre-TTC",
+      "incPre": "Modulo a distanza gratuito di preparazione Pre-TTC",
       "incRepeat": "Diritto di ripetere il corso a vita (senza ulteriori quote di corso)",
       "notIncHeading": "Non incluso",
       "notIncFlights": "Voli aerei nazionali e internazionali",
@@ -5851,11 +5870,11 @@
       "tripleDesc": "Stanza luminosa e climatizzata condivisa con due compagni, bagno interno e balcone.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Stanza accogliente per due persone, con bagno privato, aria condizionata e vista giardino o piscina.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Oasi privata con letto king/queen size, bagno riservato, aria condizionata e balcone esclusivo.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD",
-      "earlyBirdPrice": "Tariffa Early Bird",
+      "earlyBirdPrice": "Tariffa anticipata",
       "tuitionFees": "Tariffe & Camere (200 Ore Rishikesh)",
       "tripleSharing": "Camera Tripla ($1.750)",
       "doubleSharing": "Camera Doppia ($1.899)",
@@ -5871,7 +5890,7 @@
       "ryt200Title": "Insegnante di Yoga Registrato (RYT 200)",
       "viewRegistry": "Consulta il registro ufficiale Yoga Alliance",
       "yaRegisteredSchoolTitle": "Scuola Registrata Yoga Alliance USA (RYS 200)",
-      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare Registered Yoga Teacher (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
+      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare insegnante certificato (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
       "rysLabel": "RYS (Scuola Yoga Registrata)",
       "rysDesc": "YogaGarhi è una scuola accreditata e qualificata per formare e certificare insegnanti di yoga secondo i rigorosi standard curricolari di Yoga Alliance.",
       "rytLabel": "RYT (Insegnante Yoga Registrato)",
@@ -5889,7 +5908,7 @@
       },
       {
         "question": "Do I need prior yoga experience to join the 200-Hour YTT?",
-        "answer": "No prior teaching experience or advanced flexibility is required. Our 200-Hour curriculum is designed to systematically build your practice from foundational principles to intermediate mastery. Furthermore, every enrolled student receives immediate access to our complimentary Pre-YTTC online preparation modules so you can build strength, mobility, and Sanskrit familiarity before arriving at the ashram."
+        "answer": "No prior teaching experience or advanced flexibility is required. Our 200-Hour curriculum is designed to systematically build your practice from foundational principles to intermediate mastery. Furthermore, every enrolled student receives immediate access to our complimentary Pre-YTTC a distanza preparation modules so you can build strength, mobility, and Sanskrit familiarity before arriving at the ashram."
       },
       {
         "question": "Is the 200-Hour certification internationally recognized by Yoga Alliance?",
@@ -6110,14 +6129,14 @@
       "tripleDesc": "Camera con aria condizionata condivisa tra tre corsisti con bagno privato e terrazzo.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Camera condivisa per due persone con bagno, aria condizionata e affaccio sul verde.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Camera singola con letto matrimoniale, bagno en-suite, clima e terrazzino.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD"
     },
     "tourCall": {
       "heading": "Vuoi vedere la scuola prima di prenotare?",
-      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato di campus, aule, yoga shala e stanze.",
+      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato della sede, aule, yoga shala e stanze.",
       "cta": "Prenota una chiamata. Guarda la scuola. Guarda la tua stanza. Guarda la sala yoga.",
       "bookCallLive": "Guarda la scuola, la tua stanza e lo yoga shala dal vivo. Inserisci i tuoi dettagli qui sotto per prenotare."
     },
@@ -6127,7 +6146,7 @@
       "headingItalic": "a casa con te",
       "sub": "Oltre al certificato cartaceo, tornerai con una visione rinnovata, una connessione autentica con te stesso e solide capacità per guidare gli altri.",
       "careerImpactTitle": "Sbocchi professionali:",
-      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, online, retreat o avviando la tua attività autonoma.",
+      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, a distanza, ritiri o avviando la tua attività autonoma.",
       "card1Title": "Certificazione globale",
       "card1Desc": "Yoga Alliance RYT-200 per iniziare la tua carriera ovunque.",
       "card2Title": "Padronanza della pratica",
@@ -6230,13 +6249,13 @@
       "Tappetini e supporti yoga forniti",
       "Sacro Ganga Aarti ed escursioni sull'Himalaya",
       "Assistenza per il trasferimento dall'aeroporto (Aeroporto Dehradun DED)",
-      "Team di supporto presente nel campus dell'ashram 24/7",
+      "Team di supporto presente nell'ashram dell'ashram 24/7",
       "Certificazione RYT accreditata Yoga Alliance",
       "Massaggio ayurvedico rigenerante Abhyanga",
       "Cerimonia Ganga Aarti a Parmarth Niketan",
       "Trekking meditativo all'alba sull'Himalaya a Kunjapuri",
       "Escursione meditativa nella grotta millenaria di Vashistha",
-      "Moduli di preparazione online Pre-TTC inclusi",
+      "Moduli di preparazione Pre-TTC a distanza inclusi",
       "Workshop su equilibri sulle braccia e allineamenti",
       "Workshop su stile di vita e nutrizione ayurvedica",
       "Ripetizione gratuita del corso a vita inclusa",
@@ -6305,7 +6324,7 @@
         "description": "Comprendi la tua Prakriti e impara a riequilibrare i tuoi dosha con alimentazione e abitudini consapevoli."
       },
       {
-        "title": "Padronanza degli arm balance",
+        "title": "Padronanza degli equilibri sulle braccia",
         "description": "Acquisisci forza, tecnica e sicurezza per eseguire posizioni come Bakasana, Parsva Bakasana ed Eka Pada Galavasana."
       },
       {
@@ -6455,7 +6474,7 @@
       "startingFrom": "$1,149 USD",
       "startingFromVal": "$999 USD",
       "save": "Risparmia",
-      "earlyBirdDiscount": "Risparmia $200 con la tariffa Early Bird"
+      "earlyBirdDiscount": "Risparmia $200 con l'iscrizione anticipata"
     },
     "highlights": {
       "smallGroups": "Gruppi ristretti (max 8–10 allievi)",
@@ -6479,7 +6498,7 @@
       "p1Title": "Massimo 8–10 allievi per sessione",
       "p1Highlight": "Attenzione individuale",
       "p1Desc": "Gruppi raccolti che permettono correzioni fisiche puntuali e un rapporto diretto con i maestri.",
-      "p2Title": "Corso online Pre-TTC gratuito",
+      "p2Title": "Corso Pre-TTC a distanza gratuito",
       "p2Highlight": "Arriva preparato",
       "p2Desc": "Percorso preliminare prima della partenza per iniziare ad acquisire forza e dimestichezza con la materia.",
       "p3Title": "1 anno di mentoring post-diploma",
@@ -6489,7 +6508,7 @@
       "p4Highlight": "Ritorno gratuito",
       "p4Desc": "Partecipa di nuovo gratis ai futuri percorsi di YogaGarhi per ripassare o affiancare come assistente.",
       "pkgBadge": "Pacchetti con alloggio (24 giorni / 23 notti) e opzione solo corso",
-      "saveEarlyBird": "Risparmia $300 con la tariffa Early Bird",
+      "saveEarlyBird": "Risparmia $300 con l'iscrizione anticipata",
       "tuitionFrom": "Solo corso da $999 USD | Con alloggio da $1,750 USD",
       "breakdown": "Solo corso: $999 • Camera tripla: $1,750 • Camera doppia: $1,899 • Camera singola: $2,499",
       "checkAvailability": "Verifica disponibilità",
@@ -6571,7 +6590,7 @@
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Cerimonie tradizionali del fuoco di inizio e fine corso (Agni Hotra)",
       "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
-      "incPre": "Modulo online gratuito di preparazione Pre-TTC",
+      "incPre": "Modulo a distanza gratuito di preparazione Pre-TTC",
       "incRepeat": "Diritto di ripetere il corso a vita (senza ulteriori quote di corso)",
       "notIncHeading": "Non incluso",
       "notIncFlights": "Voli aerei nazionali e internazionali",
@@ -6587,11 +6606,11 @@
       "tripleDesc": "Stanza luminosa e climatizzata condivisa con due compagni, bagno interno e balcone.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Stanza accogliente per due persone, con bagno privato, aria condizionata e vista giardino o piscina.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Oasi privata con letto king/queen size, bagno riservato, aria condizionata e balcone esclusivo.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD",
-      "earlyBirdPrice": "Tariffa Early Bird",
+      "earlyBirdPrice": "Tariffa anticipata",
       "tuitionFees": "Tariffe & Camere (100 Ore Varkala)",
       "tripleSharing": "Camera Tripla ($1.149)",
       "doubleSharing": "Camera Doppia ($1.349)",
@@ -6607,7 +6626,7 @@
       "ryt200Title": "Insegnante di Yoga Registrato (RYT 200)",
       "viewRegistry": "Consulta il registro ufficiale Yoga Alliance",
       "yaRegisteredSchoolTitle": "Scuola Registrata Yoga Alliance USA (RYS 200)",
-      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare Registered Yoga Teacher (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
+      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare insegnante certificato (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
       "rysLabel": "RYS (Scuola Yoga Registrata)",
       "rysDesc": "YogaGarhi è una scuola accreditata e qualificata per formare e certificare insegnanti di yoga secondo i rigorosi standard curricolari di Yoga Alliance.",
       "rytLabel": "RYT (Insegnante Yoga Registrato)",
@@ -6829,14 +6848,14 @@
       "tripleDesc": "Camera con aria condizionata condivisa tra tre corsisti con bagno privato e terrazzo.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Camera condivisa per due persone con bagno, aria condizionata e affaccio sul verde.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Camera singola con letto matrimoniale, bagno en-suite, clima e terrazzino.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD"
     },
     "tourCall": {
       "heading": "Vuoi vedere la scuola prima di prenotare?",
-      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato di campus, aule, yoga shala e stanze.",
+      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato della sede, aule, yoga shala e stanze.",
       "cta": "Prenota una chiamata. Guarda la scuola. Guarda la tua stanza. Guarda la sala yoga.",
       "bookCallLive": "Guarda la scuola, la tua stanza e lo yoga shala dal vivo. Inserisci i tuoi dettagli qui sotto per prenotare."
     },
@@ -6846,7 +6865,7 @@
       "headingItalic": "a casa con te",
       "sub": "Oltre al certificato cartaceo, tornerai con una visione rinnovata, una connessione autentica con te stesso e solide capacità per guidare gli altri.",
       "careerImpactTitle": "Sbocchi professionali:",
-      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, online, retreat o avviando la tua attività autonoma.",
+      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, a distanza, ritiri o avviando la tua attività autonoma.",
       "card1Title": "Certificazione globale",
       "card1Desc": "Yoga Alliance RYT-200 per iniziare la tua carriera ovunque.",
       "card2Title": "Padronanza della pratica",
@@ -6949,13 +6968,13 @@
       "Tappetini e supporti yoga forniti",
       "Meditazione al tramonto a Papanasam Beach ed escursioni culturali in Kerala",
       "Assistenza per il trasferimento dall'aeroporto (Aeroporto Trivandrum TRV)",
-      "Team di supporto presente nel campus dell'ashram 24/7",
+      "Team di supporto presente nell'ashram dell'ashram 24/7",
       "Certificazione RYT accreditata Yoga Alliance",
       "Massaggio ayurvedico rigenerante Abhyanga",
       "Visita all'antico tempio Janardhana Swamy e passeggiata sulla scogliera",
       "Gita giornaliera sulle famose Backwaters del Kerala e meditazione in canoa",
       "Meditazione silenziosa a Kapilil Beach e sentiero panoramico",
-      "Moduli di preparazione online Pre-TTC inclusi",
+      "Moduli di preparazione Pre-TTC a distanza inclusi",
       "Workshop su equilibri sulle braccia e allineamenti",
       "Workshop su stile di vita e nutrizione ayurvedica",
       "Ripetizione gratuita del corso a vita inclusa",
@@ -7024,7 +7043,7 @@
         "description": "Comprendi la tua Prakriti e impara a riequilibrare i tuoi dosha con alimentazione e abitudini consapevoli."
       },
       {
-        "title": "Padronanza degli arm balance",
+        "title": "Padronanza degli equilibri sulle braccia",
         "description": "Acquisisci forza, tecnica e sicurezza per eseguire posizioni come Bakasana, Parsva Bakasana ed Eka Pada Galavasana."
       },
       {
@@ -7174,7 +7193,7 @@
       "startingFrom": "$999 USD",
       "startingFromVal": "$999 USD",
       "save": "Risparmia",
-      "earlyBirdDiscount": "Risparmia $300 con la tariffa Early Bird"
+      "earlyBirdDiscount": "Risparmia $300 con l'iscrizione anticipata"
     },
     "highlights": {
       "smallGroups": "Gruppi ristretti (max 8–10 allievi)",
@@ -7198,7 +7217,7 @@
       "p1Title": "Massimo 8–10 allievi per sessione",
       "p1Highlight": "Attenzione individuale",
       "p1Desc": "Gruppi raccolti che permettono correzioni fisiche puntuali e un rapporto diretto con i maestri.",
-      "p2Title": "Corso online Pre-TTC gratuito",
+      "p2Title": "Corso Pre-TTC a distanza gratuito",
       "p2Highlight": "Arriva preparato",
       "p2Desc": "Percorso preliminare prima della partenza per iniziare ad acquisire forza e dimestichezza con la materia.",
       "p3Title": "1 anno di mentoring post-diploma",
@@ -7208,7 +7227,7 @@
       "p4Highlight": "Ritorno gratuito",
       "p4Desc": "Partecipa di nuovo gratis ai futuri percorsi di YogaGarhi per ripassare o affiancare come assistente.",
       "pkgBadge": "Pacchetti con alloggio (24 giorni / 23 notti) e opzione solo corso",
-      "saveEarlyBird": "Risparmia $300 con la tariffa Early Bird",
+      "saveEarlyBird": "Risparmia $300 con l'iscrizione anticipata",
       "tuitionFrom": "Solo corso da $999 USD | Con alloggio da $1,750 USD",
       "breakdown": "Solo corso: $999 • Camera tripla: $1,750 • Camera doppia: $1,899 • Camera singola: $2,499",
       "checkAvailability": "Verifica disponibilità",
@@ -7336,7 +7355,7 @@
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Cerimonie tradizionali del fuoco di inizio e fine corso (Agni Hotra)",
       "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
-      "incPre": "Modulo online gratuito di preparazione Pre-TTC",
+      "incPre": "Modulo a distanza gratuito di preparazione Pre-TTC",
       "incRepeat": "Diritto di ripetere il corso a vita (senza ulteriori quote di corso)",
       "notIncHeading": "Non incluso",
       "notIncFlights": "Voli aerei nazionali e internazionali",
@@ -7352,11 +7371,11 @@
       "tripleDesc": "Stanza luminosa e climatizzata condivisa con due compagni, bagno interno e balcone.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Stanza accogliente per due persone, con bagno privato, aria condizionata e vista giardino o piscina.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Oasi privata con letto king/queen size, bagno riservato, aria condizionata e balcone esclusivo.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD",
-      "earlyBirdPrice": "Tariffa Early Bird",
+      "earlyBirdPrice": "Tariffa anticipata",
       "tuitionFees": "Tariffe & Camere (200 Ore Varkala)",
       "tripleSharing": "Camera Tripla ($1.750)",
       "doubleSharing": "Camera Doppia ($1.899)",
@@ -7372,7 +7391,7 @@
       "ryt200Title": "Insegnante di Yoga Registrato (RYT 200)",
       "viewRegistry": "Consulta il registro ufficiale Yoga Alliance",
       "yaRegisteredSchoolTitle": "Scuola Registrata Yoga Alliance USA (RYS 200)",
-      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare Registered Yoga Teacher (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
+      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare insegnante certificato (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
       "rysLabel": "RYS (Scuola Yoga Registrata)",
       "rysDesc": "YogaGarhi è una scuola accreditata e qualificata per formare e certificare insegnanti di yoga secondo i rigorosi standard curricolari di Yoga Alliance.",
       "rytLabel": "RYT (Insegnante Yoga Registrato)",
@@ -7390,7 +7409,7 @@
       },
       {
         "question": "Do I need prior yoga experience to join the 200-Hour YTT?",
-        "answer": "No prior teaching experience or advanced flexibility is required. Our 200-Hour curriculum is designed to systematically build your practice from foundational principles to intermediate mastery. Furthermore, every enrolled student receives immediate access to our complimentary Pre-YTTC online preparation modules so you can build strength, mobility, and Sanskrit familiarity before arriving at the ashram."
+        "answer": "No prior teaching experience or advanced flexibility is required. Our 200-Hour curriculum is designed to systematically build your practice from foundational principles to intermediate mastery. Furthermore, every enrolled student receives immediate access to our complimentary Pre-YTTC a distanza preparation modules so you can build strength, mobility, and Sanskrit familiarity before arriving at the ashram."
       },
       {
         "question": "Is the 200-Hour certification internationally recognized by Yoga Alliance?",
@@ -7611,14 +7630,14 @@
       "tripleDesc": "Camera con aria condizionata condivisa tra tre corsisti con bagno privato e terrazzo.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Camera condivisa per due persone con bagno, aria condizionata e affaccio sul verde.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Camera singola con letto matrimoniale, bagno en-suite, clima e terrazzino.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD"
     },
     "tourCall": {
       "heading": "Vuoi vedere la scuola prima di prenotare?",
-      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato di campus, aule, yoga shala e stanze.",
+      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato della sede, aule, yoga shala e stanze.",
       "cta": "Prenota una chiamata. Guarda la scuola. Guarda la tua stanza. Guarda la sala yoga.",
       "bookCallLive": "Guarda la scuola, la tua stanza e lo yoga shala dal vivo. Inserisci i tuoi dettagli qui sotto per prenotare."
     },
@@ -7628,7 +7647,7 @@
       "headingItalic": "a casa con te",
       "sub": "Oltre al certificato cartaceo, tornerai con una visione rinnovata, una connessione autentica con te stesso e solide capacità per guidare gli altri.",
       "careerImpactTitle": "Sbocchi professionali:",
-      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, online, retreat o avviando la tua attività autonoma.",
+      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, a distanza, ritiri o avviando la tua attività autonoma.",
       "card1Title": "Certificazione globale",
       "card1Desc": "Yoga Alliance RYT-200 per iniziare la tua carriera ovunque.",
       "card2Title": "Padronanza della pratica",
@@ -7731,13 +7750,13 @@
       "Tappetini e supporti yoga forniti",
       "Meditazione al tramonto a Papanasam Beach ed escursioni culturali in Kerala",
       "Assistenza per il trasferimento dall'aeroporto (Aeroporto Trivandrum TRV)",
-      "Team di supporto presente nel campus dell'ashram 24/7",
+      "Team di supporto presente nell'ashram dell'ashram 24/7",
       "Certificazione RYT accreditata Yoga Alliance",
       "Massaggio ayurvedico rigenerante Abhyanga",
       "Visita all'antico tempio Janardhana Swamy e passeggiata sulla scogliera",
       "Gita giornaliera sulle famose Backwaters del Kerala e meditazione in canoa",
       "Meditazione silenziosa a Kapilil Beach e sentiero panoramico",
-      "Moduli di preparazione online Pre-TTC inclusi",
+      "Moduli di preparazione Pre-TTC a distanza inclusi",
       "Workshop su equilibri sulle braccia e allineamenti",
       "Workshop su stile di vita e nutrizione ayurvedica",
       "Ripetizione gratuita del corso a vita inclusa",
@@ -7806,7 +7825,7 @@
         "description": "Comprendi la tua Prakriti e impara a riequilibrare i tuoi dosha con alimentazione e abitudini consapevoli."
       },
       {
-        "title": "Padronanza degli arm balance",
+        "title": "Padronanza degli equilibri sulle braccia",
         "description": "Acquisisci forza, tecnica e sicurezza per eseguire posizioni come Bakasana, Parsva Bakasana ed Eka Pada Galavasana."
       },
       {
@@ -7956,7 +7975,7 @@
       "startingFrom": "$999 USD",
       "startingFromVal": "$999 USD",
       "save": "Risparmia",
-      "earlyBirdDiscount": "Risparmia $300 con la tariffa Early Bird"
+      "earlyBirdDiscount": "Risparmia $300 con l'iscrizione anticipata"
     },
     "highlights": {
       "smallGroups": "Gruppi ristretti (max 8–10 allievi)",
@@ -7980,7 +7999,7 @@
       "p1Title": "Massimo 8–10 allievi per sessione",
       "p1Highlight": "Attenzione individuale",
       "p1Desc": "Gruppi raccolti che permettono correzioni fisiche puntuali e un rapporto diretto con i maestri.",
-      "p2Title": "Corso online Pre-TTC gratuito",
+      "p2Title": "Corso Pre-TTC a distanza gratuito",
       "p2Highlight": "Arriva preparato",
       "p2Desc": "Percorso preliminare prima della partenza per iniziare ad acquisire forza e dimestichezza con la materia.",
       "p3Title": "1 anno di mentoring post-diploma",
@@ -7990,7 +8009,7 @@
       "p4Highlight": "Ritorno gratuito",
       "p4Desc": "Partecipa di nuovo gratis ai futuri percorsi di YogaGarhi per ripassare o affiancare come assistente.",
       "pkgBadge": "Pacchetti con alloggio (24 giorni / 23 notti) e opzione solo corso",
-      "saveEarlyBird": "Risparmia $300 con la tariffa Early Bird",
+      "saveEarlyBird": "Risparmia $300 con l'iscrizione anticipata",
       "tuitionFrom": "Solo corso da $999 USD | Con alloggio da $1,750 USD",
       "breakdown": "Solo corso: $999 • Camera tripla: $1,750 • Camera doppia: $1,899 • Camera singola: $2,499",
       "checkAvailability": "Verifica disponibilità",
@@ -8118,7 +8137,7 @@
       "incExcursions": "Sacred Himalayan excursions (Arabian Sea Aarti, Kunjapuri sunrise, Vashistha cave)",
       "incCeremonies": "Cerimonie tradizionali del fuoco di inizio e fine corso (Agni Hotra)",
       "incPickup": "Airport pickup from Trivandrum International Airport (TRV) on course arrival date (available upon request)",
-      "incPre": "Modulo online gratuito di preparazione Pre-TTC",
+      "incPre": "Modulo a distanza gratuito di preparazione Pre-TTC",
       "incRepeat": "Diritto di ripetere il corso a vita (senza ulteriori quote di corso)",
       "notIncHeading": "Non incluso",
       "notIncFlights": "Voli aerei nazionali e internazionali",
@@ -8134,11 +8153,11 @@
       "tripleDesc": "Stanza luminosa e climatizzata condivisa con due compagni, bagno interno e balcone.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Stanza accogliente per due persone, con bagno privato, aria condizionata e vista giardino o piscina.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Oasi privata con letto king/queen size, bagno riservato, aria condizionata e balcone esclusivo.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD",
-      "earlyBirdPrice": "Tariffa Early Bird",
+      "earlyBirdPrice": "Tariffa anticipata",
       "tuitionFees": "Tariffe & Camere (200 Ore Varkala)",
       "tripleSharing": "Camera Tripla ($1.750)",
       "doubleSharing": "Camera Doppia ($1.899)",
@@ -8154,7 +8173,7 @@
       "ryt200Title": "Insegnante di Yoga Registrato (RYT 200)",
       "viewRegistry": "Consulta il registro ufficiale Yoga Alliance",
       "yaRegisteredSchoolTitle": "Scuola Registrata Yoga Alliance USA (RYS 200)",
-      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare Registered Yoga Teacher (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
+      "yaRegisteredSchoolDesc": "La nostra scuola, YogaGarhi, è registrata presso Yoga Alliance USA. Al termine di questo corso, riceverai una certificazione riconosciuta a livello internazionale, che ti consente di diventare insegnante certificato (RYT). Questa certificazione ti apre le porte per insegnare yoga in tutto il mondo.",
       "rysLabel": "RYS (Scuola Yoga Registrata)",
       "rysDesc": "YogaGarhi è una scuola accreditata e qualificata per formare e certificare insegnanti di yoga secondo i rigorosi standard curricolari di Yoga Alliance.",
       "rytLabel": "RYT (Insegnante Yoga Registrato)",
@@ -8172,7 +8191,7 @@
       },
       {
         "question": "Do I need prior yoga experience to join the 200-Hour YTT?",
-        "answer": "No prior teaching experience or advanced flexibility is required. Our 200-Hour curriculum is designed to systematically build your practice from foundational principles to intermediate mastery. Furthermore, every enrolled student receives immediate access to our complimentary Pre-YTTC online preparation modules so you can build strength, mobility, and Sanskrit familiarity before arriving at the ashram."
+        "answer": "No prior teaching experience or advanced flexibility is required. Our 200-Hour curriculum is designed to systematically build your practice from foundational principles to intermediate mastery. Furthermore, every enrolled student receives immediate access to our complimentary Pre-YTTC a distanza preparation modules so you can build strength, mobility, and Sanskrit familiarity before arriving at the ashram."
       },
       {
         "question": "Is the 200-Hour certification internationally recognized by Yoga Alliance?",
@@ -8393,14 +8412,14 @@
       "tripleDesc": "Camera con aria condizionata condivisa tra tre corsisti con bagno privato e terrazzo.",
       "double": "Camera doppia condivisa",
       "doubleDesc": "Camera condivisa per due persone con bagno, aria condizionata e affaccio sul verde.",
-      "private": "Camera privata Deluxe",
+      "private": "Camera privata di lusso",
       "privateDesc": "Camera singola con letto matrimoniale, bagno en-suite, clima e terrazzino.",
-      "earlyBird": "Sconto Early Bird",
+      "earlyBird": "Sconto iscrizione anticipata",
       "save300": "Risparmia $300 USD"
     },
     "tourCall": {
       "heading": "Vuoi vedere la scuola prima di prenotare?",
-      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato di campus, aule, yoga shala e stanze.",
+      "sub": "Partecipa a una videochiamata dal vivo per un tour personalizzato della sede, aule, yoga shala e stanze.",
       "cta": "Prenota una chiamata. Guarda la scuola. Guarda la tua stanza. Guarda la sala yoga.",
       "bookCallLive": "Guarda la scuola, la tua stanza e lo yoga shala dal vivo. Inserisci i tuoi dettagli qui sotto per prenotare."
     },
@@ -8410,7 +8429,7 @@
       "headingItalic": "a casa con te",
       "sub": "Oltre al certificato cartaceo, tornerai con una visione rinnovata, una connessione autentica con te stesso e solide capacità per guidare gli altri.",
       "careerImpactTitle": "Sbocchi professionali:",
-      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, online, retreat o avviando la tua attività autonoma.",
+      "careerImpactDesc": "Dopo aver completato il corso insegnanti yoga da 200 ore, potrai insegnare ovunque nel mondo: in studi, a distanza, ritiri o avviando la tua attività autonoma.",
       "card1Title": "Certificazione globale",
       "card1Desc": "Yoga Alliance RYT-200 per iniziare la tua carriera ovunque.",
       "card2Title": "Padronanza della pratica",
@@ -8513,13 +8532,13 @@
       "Tappetini e supporti yoga forniti",
       "Meditazione al tramonto a Papanasam Beach ed escursioni culturali in Kerala",
       "Assistenza per il trasferimento dall'aeroporto (Aeroporto Trivandrum TRV)",
-      "Team di supporto presente nel campus dell'ashram 24/7",
+      "Team di supporto presente nell'ashram dell'ashram 24/7",
       "Certificazione RYT accreditata Yoga Alliance",
       "Massaggio ayurvedico rigenerante Abhyanga",
       "Visita all'antico tempio Janardhana Swamy e passeggiata sulla scogliera",
       "Gita giornaliera sulle famose Backwaters del Kerala e meditazione in canoa",
       "Meditazione silenziosa a Kapilil Beach e sentiero panoramico",
-      "Moduli di preparazione online Pre-TTC inclusi",
+      "Moduli di preparazione Pre-TTC a distanza inclusi",
       "Workshop su equilibri sulle braccia e allineamenti",
       "Workshop su stile di vita e nutrizione ayurvedica",
       "Ripetizione gratuita del corso a vita inclusa",
@@ -8588,7 +8607,7 @@
         "description": "Comprendi la tua Prakriti e impara a riequilibrare i tuoi dosha con alimentazione e abitudini consapevoli."
       },
       {
-        "title": "Padronanza degli arm balance",
+        "title": "Padronanza degli equilibri sulle braccia",
         "description": "Acquisisci forza, tecnica e sicurezza per eseguire posizioni come Bakasana, Parsva Bakasana ed Eka Pada Galavasana."
       },
       {
@@ -8742,8 +8761,8 @@
       },
       {
         "badge": "ACCESSO IMMEDIATO A VITA",
-        "title": "Preparazione Online Pre-YTTC",
-        "description": "Il tuo percorso di trasformazione inizia subito dopo la conferma dell'iscrizione. Ricevi accesso a vita al nostro portale video di preparazione online Pre-YTTC. Con moduli creati dai nostri insegnanti guida su pronuncia sanscrita, allineamenti base, tecniche respiratorie e mobilità articolare. Arriverai al nostro ashram di Tapovan già preparato sul piano fisico e mentale, pronto per immergerti nello studio."
+        "title": "preparazione a distanza Pre-YTTC",
+        "description": "Il tuo percorso di trasformazione inizia subito dopo la conferma dell'iscrizione. Ricevi accesso a vita al nostro portale video di preparazione a distanza Pre-YTTC. Con moduli creati dai nostri insegnanti guida su pronuncia sanscrita, allineamenti base, tecniche respiratorie e mobilità articolare. Arriverai al nostro ashram di Tapovan già preparato sul piano fisico e mentale, pronto per immergerti nello studio."
       },
       {
         "badge": "COMMUNITY A VITA",

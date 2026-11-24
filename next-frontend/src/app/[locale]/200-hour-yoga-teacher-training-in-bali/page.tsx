@@ -25,30 +25,26 @@ export async function generateMetadata({
         messages = (await import(`@/messages/en.json`)).default;
     }
 
-    if (locale === "en") {
-        const title = "200 Hour Yoga Teacher Training Bali – 24 Days, from $999 | YogaGarhi";
+    // Only English page should be indexed by Google US
+    if (locale !== "en") {
+        const title = messages.course200?.metaTitle || "200 Hour Yoga Teacher Training Bali – 24 Days, from $999 | YogaGarhi";
         const description =
+            messages.course200?.metaDesc ||
             "24-day Yoga Alliance RYT 200 course near Ubud, Bali. Small groups of 8–10, Hatha, Vinyasa & Ashtanga, 1-year mentorship. 5★ on Google. From $999.";
+
         return {
             metadataBase: new URL("https://www.yogagarhi.com"),
             title: {
                 absolute: title,
             },
             description,
-            keywords: [
-                "200 hour yoga teacher training in bali",
-                "200 hour yoga TTC bali",
-                "ryt 200 yoga teacher training bali",
-                "yoga alliance 200 hour bali",
-                "yoga teacher training bali 2027"
-            ],
+            robots: {
+                index: false,
+                follow: true,
+            },
             alternates: {
                 canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
                 languages: getReviewedHreflang("/200-hour-yoga-teacher-training-in-bali"),
-            },
-            robots: {
-                index: true,
-                follow: true,
             },
             openGraph: {
                 title,
@@ -72,14 +68,12 @@ export async function generateMetadata({
         };
     }
 
-    const title = messages.course200?.metaTitle || "200 Hour Yoga Teacher Training Bali – 24 Days, from $999 | YogaGarhi";
+    // English page metadata
+    const title = "200 Hour Yoga Teacher Training in Bali | Yoga Alliance RYT 200";
     const description =
-        messages.course200?.metaDesc ||
-        "24-day Yoga Alliance RYT 200 course near Ubud, Bali. Small groups of 8–10, Hatha, Vinyasa & Ashtanga, 1-year mentorship. 5★ on Google. From $999.";
+        "Join our Yoga Alliance certified 200 hour yoga teacher training in Bali. Daily practice, expert instructors, lifetime support. Enroll now.";
 
-    const url = `https://www.yogagarhi.com/${locale}/200-hour-yoga-teacher-training-in-bali`;
-
-    return applyQualityGate({
+    return {
         metadataBase: new URL("https://www.yogagarhi.com"),
         title: {
             absolute: title,
@@ -93,7 +87,7 @@ export async function generateMetadata({
             "yoga teacher training bali 2027"
         ],
         alternates: {
-            canonical: `https://www.yogagarhi.com/${locale}/200-hour-yoga-teacher-training-in-bali`,
+            canonical: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
             languages: getReviewedHreflang("/200-hour-yoga-teacher-training-in-bali"),
         },
         robots: {
@@ -103,7 +97,7 @@ export async function generateMetadata({
         openGraph: {
             title,
             description,
-            url,
+            url: "https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-bali",
             type: "website",
             images: [
                 {
@@ -119,7 +113,7 @@ export async function generateMetadata({
             title,
             description,
         },
-    }, locale);
+    };
 }
 
 /* =========================
@@ -200,11 +194,14 @@ export default async function Page({
     const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
-        "name": "200 Hour Yoga Teacher Training in Bali",
-        "description": "Comprehensive 24-day Yoga Alliance RYT 200 residential course in Gianyar, Bali covering authentic Hatha, Vinyasa, Ashtanga, pranayama, meditation, philosophy, anatomy, and teaching methodology.",
-        "inLanguage": "en",
-        "educationalCredentialAwarded":
-            "RYT 200 Yoga Alliance Certification",
+        "name": locale === "it" ? "Corso di Formazione Insegnanti Yoga 200 Ore a Bali" : "200 Hour Yoga Teacher Training in Bali",
+        "description": locale === "it"
+            ? "Corso residenziale intensivo di 24 giorni certificato Yoga Alliance RYT 200 a Gianyar, Bali, che comprende Hatha autentico, Vinyasa, Ashtanga, pranayama, meditazione, filosofia, anatomia e metodologia didattica."
+            : "Comprehensive 24-day Yoga Alliance RYT 200 residential course in Gianyar, Bali covering authentic Hatha, Vinyasa, Ashtanga, pranayama, meditation, philosophy, anatomy, and teaching methodology.",
+        "inLanguage": locale === "it" ? "it" : "en",
+        "educationalCredentialAwarded": locale === "it"
+            ? "Certificazione Yoga Alliance RYT 200"
+            : "RYT 200 Yoga Alliance Certification",
         "provider": {
             "@type": "Organization",
             "name": "YogaGarhi",
@@ -212,10 +209,11 @@ export default async function Page({
         },
         "audience": {
             "@type": "Audience",
-            "audienceType": "Beginner to intermediate yoga practitioners"
+            "audienceType": locale === "it" ? "Praticanti di yoga da principianti a intermedi" : "Beginner to intermediate yoga practitioners"
         },
-        "coursePrerequisites":
-            "Basic yoga practice recommended but not mandatory",
+        "coursePrerequisites": locale === "it"
+            ? "Pratica yoga di base consigliata ma non obbligatoria"
+            : "Basic yoga practice recommended but not mandatory",
         "hasCourseInstance": initialBatches.map((batch) => ({
             "@type": "CourseInstance",
             "courseMode": "onsite",
@@ -258,7 +256,7 @@ export default async function Page({
     const eventSchemas = initialBatches.map((batch) => ({
         "@context": "https://schema.org",
         "@type": "Event",
-        "name": `200 Hour Yoga Teacher Training Bali - ${batch.date}`,
+        "name": locale === "it" ? `Corso Insegnanti Yoga 200 Ore Bali - ${batch.date}` : `200 Hour Yoga Teacher Training Bali - ${batch.date}`,
         "startDate": batch.startDate,
         "endDate": batch.endDate,
         "eventStatus": "https://schema.org/EventScheduled",
@@ -322,7 +320,7 @@ export default async function Page({
             {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "200 Hour Yoga Teacher Training in Bali",
+                "name": locale === "it" ? "Corso Insegnanti Yoga 200 Ore a Bali" : "200 Hour Yoga Teacher Training in Bali",
                 "item": pageUrl
             }
         ]
@@ -336,7 +334,9 @@ export default async function Page({
         "@type": "LocalBusiness",
         "@id": "https://www.yogagarhi.com/#school-bali",
         "name": "YogaGarhi Bali",
-        "description": "Yoga Alliance certified residential Yoga Teacher Training School in Gianyar, Bali.",
+        "description": locale === "it"
+            ? "Scuola residenziale per insegnanti di yoga certificata Yoga Alliance a Gianyar, Bali."
+            : "Yoga Alliance certified residential Yoga Teacher Training School in Gianyar, Bali.",
         "image": "https://www.yogagarhi.com/logo.png",
         "url": pageUrl,
         "telephone": "+917895350563",

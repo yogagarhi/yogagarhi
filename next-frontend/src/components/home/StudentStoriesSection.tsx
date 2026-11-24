@@ -1,5 +1,5 @@
 import StudentStoriesInteractiveIsland, { VideoTestimonial } from "./StudentStoriesInteractiveIsland";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 const videoTestimonials: VideoTestimonial[] = [
   { id: "OGmWr_aC4WA", name: "Fernanda", country: "Australia", quote: "Life-changing experience" },
@@ -9,12 +9,28 @@ const videoTestimonials: VideoTestimonial[] = [
   { id: "ta-5jHBCpKY", name: "Aania", country: "Italy", quote: "Deeply spiritual journey" },
 ];
 
+const LOCALIZED_TESTIMONIAL_QUOTES: Record<string, string[]> = {
+  it: [
+    "Esperienza che ti cambia la vita",
+    "Ho trovato la mia vera vocazione",
+    "Oltre ogni aspettativa",
+    "Ha trasformato la mia pratica",
+    "Un cammino spirituale profondo"
+  ]
+};
+
 interface StudentStoriesSectionProps {
   initialVisibleCount?: number;
 }
 
 export default function StudentStoriesSection({ initialVisibleCount }: StudentStoriesSectionProps = {}) {
   const t = useTranslations("home.studentStories");
+  const locale = useLocale();
+
+  const activeVideos = videoTestimonials.map((v, i) => ({
+    ...v,
+    quote: LOCALIZED_TESTIMONIAL_QUOTES[locale]?.[i] || v.quote
+  }));
   const extraContent = (
     <>
       {/* Stats Row */}
@@ -44,7 +60,7 @@ export default function StudentStoriesSection({ initialVisibleCount }: StudentSt
           <svg className="w-5 h-5 text-amber-500 fill-amber-500" viewBox="0 0 24 24">
             <use href="#icon-star" />
           </svg>
-          <span className="text-sm font-medium text-foreground">5.0 Google Rating</span>
+          <span className="text-sm font-medium text-foreground">{locale === 'it' ? "Valutazione Google 5.0" : "5.0 Google Rating"}</span>
         </div>
       </div>
 
@@ -119,7 +135,7 @@ export default function StudentStoriesSection({ initialVisibleCount }: StudentSt
 
         {/* Interactive Island: Video Player & Thumbnails */}
         <StudentStoriesInteractiveIsland
-          videos={videoTestimonials}
+          videos={activeVideos}
           extraContent={extraContent}
           initialVisibleCount={initialVisibleCount}
         />

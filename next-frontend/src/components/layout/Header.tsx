@@ -3,6 +3,7 @@ import { useState, useEffect, useMemo, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/routing";
+import NextLink from "next/link";
 import { Menu, X, ChevronDown, Sparkles, Globe, Mountain, ArrowRight, Clock, Palmtree, Waves } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEnrollment } from "@/components/EnrollmentDialog";
@@ -100,7 +101,15 @@ interface NavDropdownItem {
   subItems?: { id?: string; name: string; href: string }[];
 }
 
-const getCourses = (t: any): NavDropdownItem[] => [
+const getCourses = (t: any): NavDropdownItem[] => {
+  const safeT = (key: string, fallback: string) => {
+    try {
+      return t.has(key) ? t(key) : fallback;
+    } catch {
+      return fallback;
+    }
+  };
+  return [
   {
     id: "bali",
     name: t("baliLocation"),
@@ -110,6 +119,16 @@ const getCourses = (t: any): NavDropdownItem[] => [
       { id: "course100", name: t("course100"), href: "/100-hour-yoga-teacher-training-in-bali" },
       { id: "course200", name: t("course200"), href: "/200-hour-yoga-teacher-training-in-bali" },
       { id: "course300", name: t("course300"), href: "/300-hour-yoga-teacher-training-in-bali" },
+      { id: "course200Hindi", name: safeT("course200Hindi", "बाली में २०० घंटे का योग शिक्षक प्रशिक्षण"), href: "/bali-200-ghante-yoga-shikshak-prashikshan" },
+    ]
+  },
+  {
+    id: "italy",
+    name: "Italia",
+    href: "#",
+    icon: Globe,
+    subItems: [
+      { id: "course200Italy", name: "Formazione Yoga 200 Ore in Italia", href: "/italia-200-ore-formazione-insegnanti-yoga" },
     ]
   },
   {
@@ -135,6 +154,7 @@ const getCourses = (t: any): NavDropdownItem[] => [
     ]
   },
 ];
+};
 
 const getRetreats = (t: any): NavDropdownItem[] => [
   {
@@ -422,7 +442,7 @@ export default function Header() {
             <nav
               ref={navRef}
               className={`${useDesktopHamburger ? 'hidden' : 'hidden lg:flex'} items-center shrink-0 min-w-0`}
-              aria-label="Main Navigation"
+              aria-label={tNav.has("mainNavAria") ? tNav("mainNavAria") : "Main Navigation"}
             >
               <ul className={`flex items-center bg-secondary/30 rounded-full list-none m-0 p-0 ${
                 isCompactNav ? 'px-1 py-0.5 gap-0.5' : 'px-1.5 py-1 xl:px-2 xl:py-1.5 gap-0.5 xl:gap-1'
@@ -512,24 +532,28 @@ export default function Header() {
                                           }`}
                                       >
                                         <ul className="p-2 list-none m-0">
-                                          {item.subItems.map((sub) => (
-                                            <li key={sub.id || sub.name} className="list-none">
-                                              <Link
-                                                href={sub.href}
-                                                prefetch={false}
-                                                onClick={() => {
-                                                  setOpenDropdown(null);
-                                                  setOpenSubDropdown(null);
-                                                }}
-                                                className={`block px-4 py-2.5 rounded-xl text-sm transition-all duration-200 ${pathname === sub.href
-                                                  ? 'bg-primary/10 text-primary font-medium'
-                                                  : 'text-foreground/70 hover:bg-secondary hover:text-primary'
-                                                  }`}
-                                              >
-                                                {sub.name}
-                                              </Link>
-                                            </li>
-                                          ))}
+                                          {item.subItems.map((sub) => {
+                                            const isDirectLink = sub.href === '/sound-healing-certification-in-rishikesh' || sub.href === '/bali-200-ghante-yoga-shikshak-prashikshan' || sub.href === '/italia-200-ore-formazione-insegnanti-yoga';
+                                            const SubLinkComponent = isDirectLink ? NextLink : Link;
+                                            return (
+                                              <li key={sub.id || sub.name} className="list-none">
+                                                <SubLinkComponent
+                                                  href={sub.href}
+                                                  prefetch={false}
+                                                  onClick={() => {
+                                                    setOpenDropdown(null);
+                                                    setOpenSubDropdown(null);
+                                                  }}
+                                                  className={`block px-4 py-2.5 rounded-xl text-sm transition-all duration-200 ${pathname === sub.href
+                                                    ? 'bg-primary/10 text-primary font-medium'
+                                                    : 'text-foreground/70 hover:bg-secondary hover:text-primary'
+                                                    }`}
+                                                >
+                                                  {sub.name}
+                                                </SubLinkComponent>
+                                              </li>
+                                            );
+                                          })}
                                         </ul>
                                       </div>
                                     </div>
@@ -701,19 +725,23 @@ export default function Header() {
                                   </button>
                                   <div className={`overflow-hidden transition-all duration-300 ${mobileOpenSubDropdown === subItemKey ? 'max-h-48 mt-1' : 'max-h-0'}`}>
                                     <div className="pl-8 flex flex-col gap-1 pb-2">
-                                      {item.subItems.map((sub) => (
-                                        <Link
-                                          key={sub.id || sub.name}
-                                          href={sub.href}
-                                          onClick={() => setIsOpen(false)}
-                                          className={`block py-2 px-4 rounded-lg text-xs transition-all ${pathname === sub.href
-                                            ? 'bg-primary/10 text-primary'
-                                            : 'text-foreground/50 hover:text-primary'
-                                            }`}
-                                        >
-                                          {sub.name}
-                                        </Link>
-                                      ))}
+                                      {item.subItems.map((sub) => {
+                                        const isDirectLink = sub.href === '/sound-healing-certification-in-rishikesh' || sub.href === '/bali-200-ghante-yoga-shikshak-prashikshan' || sub.href === '/italia-200-ore-formazione-insegnanti-yoga';
+                                        const SubLinkComponent = isDirectLink ? NextLink : Link;
+                                        return (
+                                          <SubLinkComponent
+                                            key={sub.id || sub.name}
+                                            href={sub.href}
+                                            onClick={() => setIsOpen(false)}
+                                            className={`block py-2 px-4 rounded-lg text-xs transition-all ${pathname === sub.href
+                                              ? 'bg-primary/10 text-primary'
+                                              : 'text-foreground/50 hover:text-primary'
+                                              }`}
+                                          >
+                                            {sub.name}
+                                          </SubLinkComponent>
+                                        );
+                                      })}
                                     </div>
                                   </div>
                                 </>

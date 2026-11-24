@@ -17,7 +17,7 @@ export default async function Hero() {
 
   return (
     <>
-      <section className="relative flex items-center justify-center overflow-hidden bg-[#1c130d] md:min-h-[85vh] lg:min-h-screen pt-12 pb-10 sm:pt-14 sm:pb-12 md:pt-24 md:pb-12 lg:pt-24 lg:pb-12">
+      <section className="relative flex items-center justify-center overflow-hidden bg-[#1c130d] md:min-h-[85vh] lg:min-h-screen pt-28 pb-10 sm:pt-20 sm:pb-12 md:pt-24 md:pb-12 lg:pt-24 lg:pb-12">
         {/* Background Container: Full-bleed smart crop on mobile (zero cut faces), full cover on desktop */}
         <div className="absolute inset-0 w-full h-full z-0 overflow-hidden bg-[#1c130d]">
           {/* Single Responsive Picture & exactly ONE <img> in DOM (LCP element) */}
@@ -72,7 +72,7 @@ export default async function Hero() {
             <p className="text-sm sm:text-base md:text-lg lg:text-xl font-bold tracking-[0.25em] sm:tracking-[0.3em] uppercase opacity-90 [text-shadow:0_1px_4px_rgba(0,0,0,0.5)]">
               {t("welcome")}
             </p>
-            <div className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight [text-shadow:0_2px_12px_rgba(0,0,0,0.5)]">
+            <div className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight [text-shadow:0_2px_12px_rgba(0,0,0,0.5)]">
               {"Yogagarh".split("").map((char, index) => (
                 <span
                   key={index}

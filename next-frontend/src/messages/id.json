@@ -582,14 +582,14 @@
     "metaDesc": "Pelatihan Guru Yoga 100, 200 & 300 Jam bersertifikat Yoga Alliance di Bali, Rishikesh & Varkala. Tradisi autentik Himalaya, kelompok kecil 8–10, bimbingan 1 tahun."
   },
   "course200": {
-    "metaTitle": "Pelatihan Guru Yoga 200 Jam Bali – 24 Hari, mulai $999 | YogaGarhi",
-    "metaDesc": "Pelatihan Guru Yoga 24 hari Yoga Alliance RYS 200 dekat Ubud, Bali. Memenuhi syarat RYT 200. Kelompok kecil 8–10 siswa, bimbingan 1 tahun. Mulai $999.",
-    "heroTitle": "Pelatihan Guru Yoga 200 Jam di Bali",
-    "heroSub": "Dikelola oleh YogaGarhi, Sekolah Yoga Terdaftar Yoga Alliance (RYS 200). Lulusan memenuhi syarat untuk mendaftar sebagai RYT 200. Kapasitas ketat 8–10 siswa per angkatan.",
+    "metaTitle": "Pelatihan Instruktur Yoga 200 Jam di Bali (Bersertifikat) | YogaGarhi",
+    "metaDesc": "Ikuti pelatihan instruktur yoga 200 jam bersertifikat Yoga Alliance (RYS 200) di Bali. Program residensial 24 hari dekat Ubud, kelompok kecil 8–10 siswa, tradisi autentik Himalaya & bimbingan 1 tahun. Mulai $999.",
+    "heroTitle": "Pelatihan Instruktur Yoga 200 Jam Bersertifikat di Bali",
+    "heroSub": "Program pelatihan instruktur yoga 200 jam bersertifikat Yoga Alliance (RYS 200). Memenuhi syarat untuk pendaftaran RYT 200.",
     "hero": {
       "badge": "Sekolah Yoga Terdaftar Yoga Alliance (RYS 200)",
-      "h1": "Pelatihan Guru Yoga 200 Jam di Bali",
-      "sub": "Silsilah Himalaya autentik, kelompok kecil (8–10 siswa), ashram damai di Gianyar dekat Ubud.",
+      "h1": "Pelatihan Instruktur Yoga 200 Jam Bersertifikat di Bali",
+      "sub": "Program pelatihan instruktur yoga bersertifikat dengan silsilah Himalaya autentik, kelompok kecil (8–10 siswa), di ashram damai Gianyar dekat Ubud, Bali.",
       "quickDuration": "24 Hari",
       "quickLevel": "Pemula hingga Menengah",
       "quickCert": "RYS 200 (Memenuhi Syarat RYT 200)",
@@ -599,7 +599,7 @@
       "btnReserve": "Pesan Tempat Anda",
       "btnBrochure": "Unduh Silabus",
       "btnCounselor": "Konsultasi",
-      "title": "Pelatihan Guru Yoga 200 Jam di Bali",
+      "title": "Pelatihan Instruktur Yoga 200 Jam Bersertifikat di Bali",
       "pricingNotice": "Hanya biaya kursus mulai <price>{tuitionPrice}</price> | Paket residensial mulai <price>{residentialPrice}</price>",
       "nextAvailableTraining": "Pelatihan berikutnya yang tersedia: {startDate} – {endDate}"
     },
@@ -629,9 +629,9 @@
       "goodieBag": "Paket bingkisan gratis",
       "goodieBagSub": "Perlengkapan yoga"
     },
-    "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
-    "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial yang lengkap. Program ini dirancang bagi siswa yang menginginkan kedalaman sejati, bukan sekadar rutinitas latihan fisik biasa. Anda akan tinggal di desa Gianyar yang damai, sekitar 15 km dari Ubud. Di sini, YogaGarhi memberikan Anda tempat peristirahatan yang tenang, jauh dari kawasan wisata yang ramai. Anda dapat benar-benar melepaskan kepenatan dan berfokus penuh pada latihan Anda.",
-    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran postur Iyengar. Anda juga akan mempelajari anatomi terapan, filosofi, pranayama (latihan pernapasan), dan meditasi harian. Kami membatasi kelas secara ketat hanya 8 hingga 10 siswa. Hal ini memungkinkan para guru master Himalaya kami memberikan bimbingan yang dekat dan penuh perhatian kepada setiap siswa.",
+    "storyTitle": "Ubah Latihan Anda Menjadi Pengajar Yoga Profesional",
+    "storyP1": "Pelatihan instruktur yoga 200 jam kami di Bali adalah program imersi residensial yang lengkap dan mendalam. Sebagai pelatihan yoga bersertifikat Yoga Alliance (RYS 200), kursus ini dirancang bagi praktisi yang menginginkan kedalaman sejati dan keterampilan mengajar nyata, bukan sekadar rutinitas latihan fisik biasa. Anda akan tinggal di desa Gianyar yang damai, sekitar 15 km dari Ubud—memberikan lingkungan ashram yang hening untuk belajar dan bertransformasi.",
+    "storyP2": "Selama 24 hari pelatihan yoga bersertifikat ini, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran postur Iyengar, dilengkapi anatomi terapan, filosofi, pranayama, dan meditasi harian. Kami membatasi kuota kelas hanya 8 hingga 10 peserta agar para guru master Himalaya kami dapat memberikan bimbingan personal yang intensif kepada setiap calon instruktur yoga.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
@@ -2169,9 +2169,9 @@
     "alsoAvailableInRishikeshTitle": "Also Available in Rishikesh, India"
   },
   "course300": {
-    "metaTitle": "Pelatihan Guru Yoga 300 Jam Bali – Jalur Lanjutan RYT 500 | YogaGarhi",
-    "metaDesc": "Pelatihan lanjutan 300 jam 28 hari dekat Ubud, Bali untuk lulusan RYT 200. Perdalam pengajaran, filosofi & yoga terapeutik. Grup kecil 8–10 orang.",
-    "heroTitle": "Pelatihan Guru Yoga 300 Jam di Bali",
+    "metaTitle": "300 Hr YTT Bali – Pelatihan Guru Yoga 300 Jam (Jalur RYT 500) | YogaGarhi",
+    "metaDesc": "Program 300 Hr YTT di Ubud, Bali selama 28 hari untuk lulusan RYT 200 menuju RYT 500. Perdalam pengajaran asana lanjutan, filosofi & yoga terapeutik bersama YogaGarhi.",
+    "heroTitle": "300 Hr YTT Bali – Pelatihan Guru Yoga 300 Jam Lanjutan",
     "heroSub": "Pelatihan residensial lanjutan 28 hari di Gianyar, Bali. Perdalam asana tingkat lanjut dan penyesuaian menuju sertifikasi RYT 500.",
     "quickInfo": {
       "course": "Kursus",
@@ -2374,8 +2374,8 @@
     ],
     "hero": {
       "badge": "Sertifikasi Yoga Alliance RYT 200",
-      "h1": "Pelatihan Guru Yoga 300 Jam di Bali",
-      "sub": "Pelatihan residensial intensif 28 hari di Gianyar, Bali. Kuasai asana tingkat lanjut, teknik penyesuaian langsung, dan filosofi mendalam menuju RYT 500.",
+      "h1": "300 Hr YTT Bali – Pelatihan Guru Yoga 300 Jam Lanjutan",
+      "sub": "Pelatihan residensial 300 Hr YTT intensif 28 hari di Gianyar, Bali untuk lulusan RYT 200 dalam perjalanan menuju RYT 500.",
       "quickDuration": "28 Hari",
       "quickLevel": "Lanjutan (memerlukan RYT 200)",
       "quickCert": "Sertifikasi Yoga Alliance RYT 500",

@@ -1,6 +1,7 @@
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "../globals.css";
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import MainLayout from "@/components/MainLayout";
 import { Providers } from "@/components/Providers";
 import UtmTracker from "@/components/UtmTracker";
@@ -157,6 +158,9 @@ export default async function LocaleLayout({
   }
 
   const messages: any = await getMessages();
+  const headerList = await headers();
+  const currentPath = headerList.get("x-pathname") || headerList.get("x-invoke-path") || "";
+  const docLang = currentPath.includes("italia-200-ore") ? "it" : currentPath.includes("bali-200-ghante") ? "hi" : locale;
 
   // Pick only layout messages for root client provider to keep First Load JS & HTML payload tiny
   const layoutMessages = {
@@ -182,7 +186,7 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className={`${cormorant.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
+    <html lang={docLang} className={`${cormorant.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#0f766e" />
@@ -194,6 +198,7 @@ export default async function LocaleLayout({
             __html: `window.dataLayer = window.dataLayer || [];`,
           }}
         />
+        {!currentPath.includes("italia-200-ore") && !currentPath.includes("bali-200-ghante") && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -339,6 +344,7 @@ export default async function LocaleLayout({
             })
           }}
         />
+        )}
       </head>
       <body className="font-body bg-background text-foreground antialiased scroll-smooth" suppressHydrationWarning>
         <SvgSprite />
@@ -400,7 +406,7 @@ export default async function LocaleLayout({
 })();`
           }}
         />
-        <NextIntlClientProvider locale={locale} messages={layoutMessages}>
+        <NextIntlClientProvider locale={docLang} messages={currentPath.includes("italia-200-ore") ? {} : layoutMessages}>
           <Providers>
             <MainLayout>
               {children}

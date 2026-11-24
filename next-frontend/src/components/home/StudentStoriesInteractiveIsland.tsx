@@ -22,12 +22,14 @@ const VideoPlayer = ({
   video,
   isPlaying,
   onPlay,
-  videoKey
+  videoKey,
+  locale
 }: {
   video: VideoTestimonial;
   isPlaying: boolean;
   onPlay: () => void;
   videoKey: string;
+  locale?: string;
 }) => (
   <div className="relative rounded-2xl overflow-hidden shadow-elevated bg-muted">
     <div className="aspect-video">
@@ -56,7 +58,7 @@ const VideoPlayer = ({
           <button
             type="button"
             onClick={onPlay}
-            aria-label={`Play testimonial video by ${video.name}`}
+            aria-label={locale === "it" ? `Riproduci la testimonianza di ${video.name}` : `Play testimonial video by ${video.name}`}
             className="absolute inset-0 flex items-center justify-center group/play"
           >
             <div className="w-20 h-20 rounded-full bg-primary-foreground/95 flex items-center justify-center shadow-xl transform group-hover/play:scale-110 transition-transform duration-300">
@@ -70,7 +72,7 @@ const VideoPlayer = ({
               {video.name}
             </p>
             <p className="text-primary-foreground/70 text-sm">
-              {video.country} • Click to play
+              {video.country} • {locale === "it" ? "Clicca per riprodurre" : "Click to play"}
             </p>
           </div>
         </div>
@@ -118,6 +120,7 @@ export default function StudentStoriesInteractiveIsland({
             isPlaying={isPlaying}
             onPlay={() => setIsPlaying(true)}
             videoKey={`video-${activeVideo}-${isPlaying}`}
+            locale={currentLocale}
           />
         </div>
       </div>
@@ -132,7 +135,7 @@ export default function StudentStoriesInteractiveIsland({
               <button
                 key={index}
                 type="button"
-                aria-label={`Select testimonial video by ${video.name}`}
+                aria-label={currentLocale === "it" ? `Seleziona testimonianza di ${video.name}` : `Select testimonial video by ${video.name}`}
                 onClick={() => handleVideoChange(index)}
                 className={`w-full ${isHidden ? 'hidden' : 'flex'} items-center gap-4 p-3 rounded-xl transition-all duration-300 text-left group ${activeVideo === index
                   ? 'bg-primary/10 border-l-4 border-primary'

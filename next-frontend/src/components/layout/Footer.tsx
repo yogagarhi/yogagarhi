@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
+import NextLink from "next/link";
 import { useTranslations } from "next-intl";
 import { Instagram, Facebook, Youtube, Phone, Mail, MapPin, Sparkles } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
+import { SOUND_HEALING_PAGE_READY } from "@/config/soundHealingConfig";
 const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
 // Animated Lotus SVG
@@ -20,16 +22,29 @@ export default function Footer() {
   const tNavDropdown = useTranslations("navDropdown");
   const tCommon = useTranslations("common");
 
+  const safeDrop = (key: string, fallback: string) => {
+    try {
+      return tNavDropdown.has(key) ? tNavDropdown(key) : fallback;
+    } catch {
+      return fallback;
+    }
+  };
+
   const courses = [
-    { name: tNavDropdown("course200"), href: "/200-hour-yoga-teacher-training-in-bali" },
-    { name: tNavDropdown("course100"), href: "/100-hour-yoga-teacher-training-in-bali" },
-    { name: tNavDropdown("course300"), href: "/300-hour-yoga-teacher-training-in-bali" },
-    { name: "200 Hour Yoga TTC in Rishikesh", href: "/200-hour-yoga-teacher-training-in-rishikesh" },
-    { name: "100 Hour Yoga TTC in Rishikesh", href: "/100-hour-yoga-teacher-training-in-rishikesh" },
-    { name: "300 Hour Yoga TTC in Rishikesh", href: "/300-hour-yoga-teacher-training-in-rishikesh" },
-    { name: "100 Hour Yoga TTC in Varkala", href: "/100-hour-yoga-teacher-training-in-varkala" },
-    { name: "200 Hour Yoga TTC in Varkala", href: "/200-hour-yoga-teacher-training-in-varkala" },
-    { name: "300 Hour Yoga TTC in Varkala", href: "/300-hour-yoga-teacher-training-in-varkala" },
+    { name: safeDrop("course200", "200 Hour Yoga TTC in Bali"), href: "/200-hour-yoga-teacher-training-in-bali" },
+    { name: safeDrop("course200Hindi", "बाली में २०० घंटे का योग शिक्षक प्रशिक्षण"), href: "/bali-200-ghante-yoga-shikshak-prashikshan" },
+    { name: safeDrop("course200Italy", "Corso Yoga 200 Ore in Italia"), href: "/italia-200-ore-formazione-insegnanti-yoga" },
+    { name: safeDrop("course100", "100 Hour Yoga TTC in Bali"), href: "/100-hour-yoga-teacher-training-in-bali" },
+    { name: safeDrop("course300", "300 Hour Yoga TTC in Bali"), href: "/300-hour-yoga-teacher-training-in-bali" },
+    { name: safeDrop("course200Rishikesh", "200 Hour Yoga TTC in Rishikesh"), href: "/200-hour-yoga-teacher-training-in-rishikesh" },
+    { name: safeDrop("course100Rishikesh", "100 Hour Yoga TTC in Rishikesh"), href: "/100-hour-yoga-teacher-training-in-rishikesh" },
+    { name: safeDrop("course300Rishikesh", "300 Hour Yoga TTC in Rishikesh"), href: "/300-hour-yoga-teacher-training-in-rishikesh" },
+    ...(SOUND_HEALING_PAGE_READY ? [
+      { name: safeDrop("soundHealing", "Sound Healing Certification"), href: "/sound-healing-certification-in-rishikesh" }
+    ] : []),
+    { name: safeDrop("course100Varkala", "100 Hour Yoga TTC in Varkala"), href: "/100-hour-yoga-teacher-training-in-varkala" },
+    { name: safeDrop("course200Varkala", "200 Hour Yoga TTC in Varkala"), href: "/200-hour-yoga-teacher-training-in-varkala" },
+    { name: safeDrop("course300Varkala", "300 Hour Yoga TTC in Varkala"), href: "/300-hour-yoga-teacher-training-in-varkala" },
   ];
 
   const explore = [
@@ -93,16 +108,20 @@ export default function Footer() {
 
         {/* Links in Horizontal Layout */}
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-12 text-sm">
-          {courses.map((link, i) => (
-            <Link
-              key={link.name}
-              href={link.href}
+          {courses.map((link, i) => {
+            const isDirectLink = link.href === '/sound-healing-certification-in-rishikesh' || link.href === '/bali-200-ghante-yoga-shikshak-prashikshan' || link.href === '/italia-200-ore-formazione-insegnanti-yoga';
+            const LinkComponent = isDirectLink ? NextLink : Link;
+            return (
+              <LinkComponent
+                key={link.name}
+                href={link.href}
               className="text-primary-foreground/70 hover:text-primary-foreground transition-colors relative group"
             >
               {link.name}
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary-foreground/50 group-hover:w-full transition-all duration-300" />
-            </Link>
-          ))}
+            </LinkComponent>
+            );
+          })}
           <span className="text-primary-foreground/30">•</span>
           {explore.map((link) => (
             <Link

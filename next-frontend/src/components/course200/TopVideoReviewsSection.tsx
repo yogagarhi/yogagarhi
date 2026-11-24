@@ -27,6 +27,18 @@ export default function TopVideoReviewsSection({ onBookCall }: TopVideoReviewsSe
     }
   ];
 
+  let localizedReviews = reviews;
+  try {
+    const raw = t.raw("topVideoReviews");
+    if (Array.isArray(raw) && raw.length > 0) {
+      localizedReviews = reviews.map((r, i) => ({
+        ...r,
+        role: raw[i]?.role || r.role,
+        quote: raw[i]?.quote || r.quote
+      }));
+    }
+  } catch {}
+
   return (
     <section className="py-14 bg-background relative overflow-hidden border-b border-border/50">
       <div className="container mx-auto px-4 relative z-10">
@@ -47,7 +59,7 @@ export default function TopVideoReviewsSection({ onBookCall }: TopVideoReviewsSe
 
           {/* Video Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-            {reviews.map((rev) => (
+            {localizedReviews.map((rev) => (
               <div
                 key={rev.id}
                 className="bg-card rounded-2xl overflow-hidden border border-border/80 shadow-sm hover:shadow-md hover:border-primary/40 transition-all duration-300 flex flex-col justify-between"

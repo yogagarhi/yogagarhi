@@ -8,37 +8,31 @@ interface PromoCountdownProps {
     onExpire?: () => void;
 }
 
-function calculateTimeLeft(targetDate?: string) {
+export function getOfferEndDate(): Date {
+    const CYCLE_DAYS = 7;
     const now = new Date();
 
-    if (targetDate) {
-        const targetMs = new Date(targetDate).getTime();
-        const distance = targetMs - now.getTime();
-        if (distance <= 0) {
-            return { days: 0, hours: 0, minutes: 0, seconds: 0, isExpired: true };
-        }
-        return {
-            days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-            hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-            minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-            seconds: Math.floor((distance % (1000 * 60)) / 1000),
-            isExpired: false
-        };
+    // Use a fixed anchor date (site launch or any past Monday)
+    const anchor = new Date('2024-01-01T00:00:00Z');
+
+    // Calculate how many full 7-day cycles have passed
+    const msElapsed = now.getTime() - anchor.getTime();
+    const msCycle = CYCLE_DAYS * 24 * 60 * 60 * 1000;
+    const cyclesPassed = Math.floor(msElapsed / msCycle);
+
+    // Next end date = anchor + (cyclesPassed + 1) cycles
+    const nextEnd = new Date(anchor.getTime() + (cyclesPassed + 1) * msCycle);
+    return nextEnd;
+}
+
+function calculateTimeLeft(_targetDate?: string) {
+    const now = new Date();
+    const endDate = getOfferEndDate();
+
+    const distance = endDate.getTime() - now.getTime();
+    if (distance <= 0) {
+        return { days: 0, hours: 0, minutes: 0, seconds: 0, isExpired: false };
     }
-
-    // Default reference date fallback
-    const referenceDate = new Date("2026-05-22T00:00:00Z");
-    const cycleMs = 15 * 24 * 60 * 60 * 1000; // 15 days in ms
-
-    let distance;
-    if (now.getTime() < referenceDate.getTime()) {
-        distance = referenceDate.getTime() - now.getTime();
-    } else {
-        const elapsedMs = now.getTime() - referenceDate.getTime();
-        const timeInCurrentCycle = elapsedMs % cycleMs;
-        distance = cycleMs - timeInCurrentCycle;
-    }
-
     return {
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
         hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
@@ -57,6 +51,9 @@ const PromoCountdown = ({ className = "", targetDate, onExpire }: PromoCountdown
     const secsRef = useRef<HTMLSpanElement>(null);
 
     useEffect(() => {
+        const endDate = getOfferEndDate();
+        console.log("Offer ends at (7-day cycle):", endDate.toISOString());
+
         const initial = calculateTimeLeft(targetDate);
         if (initial.isExpired) {
             setExpired(true);

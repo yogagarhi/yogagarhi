@@ -92,7 +92,7 @@ export default function PartnershipsSection() {
                                 {item.icon}
                             </div>
                             <span className="text-sm md:text-base font-bold text-foreground/90 group-hover/item:text-primary transition-colors">
-                                {item.name}
+                                {activeLocale === "it" && item.name === "Google Reviews" ? "Recensioni Google" : item.name}
                             </span>
                         </div>
                     ))}

@@ -181,10 +181,57 @@ const sattvicDinner = getCloudinaryImage("sattvic-dinner-new.jpg");
 
 
 
+const ITALIAN_REVIEWS_MAP: Record<string, { date: string; text: string; location?: string }> = {
+  "Gurpreet Kaur Dhou": {
+    date: "1 settimana fa",
+    location: "Canada",
+    text: "YogaGarhi è autentica e profondamente radicata nella vera essenza dello yoga. Fin dall'inizio mi sono sentita accolta e supportata come persona, mai come un semplice numero. La scuola offre un sostegno straordinario prima, durante e dopo il corso. Gli insegnanti hanno a cuore la tua crescita non solo come praticante ma soprattutto come insegnante di yoga. Dedicano tempo a guidarti e a darti fiducia nella tua voce e nel tuo stile."
+  },
+  "Ilksen Doğan": {
+    date: "2 mesi fa",
+    location: "Turchia",
+    text: "Sachin è senza dubbio uno degli insegnanti di yoga più competenti con cui abbia mai studiato. Nonostante fossi una principiante assoluta all'epoca, è stato estremamente paziente e incoraggiante, cosa di cui gli sarò per sempre grata. Grazie ai suoi insegnamenti sono riuscita a comprendere con sicurezza le basi dell'allineamento delle asana."
+  },
+  "Aleksandra Dyachenko": {
+    date: "2 mesi fa",
+    location: "Russia",
+    text: "Ho completato il corso di formazione insegnanti yoga di 200 ore a Bali ed è stato davvero magico. 🌺 Le conoscenze che ho acquisito sono profonde e autentiche. Ma ciò che ha reso l'esperienza davvero speciale sono stati gli insegnanti: veri mentori che insegnano con il cuore, saggezza e gentilezza. Il legame tra studenti e maestri è autentico e familiare."
+  },
+  "Amy Letourneau": {
+    date: "3 mesi fa",
+    location: "Canada",
+    text: "Sachin è un insegnante e un essere umano straordinario. Ha un modo perfetto di spiegare concetti profondi rendendoli semplici e illuminanti. La formazione a Bali è stata l'inizio di un meraviglioso percorso di vita che mi ha dato la sicurezza necessaria per insegnare in diversi paesi del mondo."
+  },
+  "Livia B": {
+    date: "4 mesi fa",
+    location: "Svizzera",
+    text: "Un'esperienza straordinaria a YogaGarhi Bali! I gruppi ristretti fanno la vera differenza: ogni correzione è personalizzata e attenta. I maestri insegnano con passione autentica e creano un ambiente sicuro in cui crescere ed evolversi."
+  },
+  "Sarah Jenkins": {
+    date: "5 mesi fa",
+    location: "Regno Unito",
+    text: "Frequentare il corso residenziale di 200 ore a Bali è stata una delle migliori decisioni della mia vita. Dal cibo sattvico eccellente alla shala immersa nel verde, ogni dettaglio è curato per favorire la pratica e la serenità interiore."
+  },
+  "Lisa Beltman": {
+    date: "3 mesi fa",
+    location: "Germania",
+    text: "Apprezzo immensamente la calma, il calore e l'accoglienza di Sachin Ji. Ha una competenza enciclopedica e si prende cura di ciascun allievo con dedizione. Le sue lezioni sono strutturate in modo tale da farti superare ogni limite. È davvero stimolante imparare da Sachin Ji. Consiglio questa scuola con tutto il cuore a chiunque desideri approfondire sia le asana sia la spiritualità dello yoga."
+  },
+  "Nicole Drake": {
+    date: "2 mesi fa",
+    location: "Australia",
+    text: "La guida di Sachin ha permesso alla mia pratica e alle mie asana di evolversi ben oltre quanto ritenessi possibile. Grazie a lui ho imparato il metodo tradizionale per praticare lo yoga, con storia sanscrita e antica saggezza integrate in ogni lezione. La sua profonda conoscenza di anatomia, allineamento e pratica autentica mi ha resa sicura del mio corpo e delle competenze acquisite."
+  }
+};
+
 function ReviewCard({ review }: { review: { name: string; location: string; avatar: string; rating: number; date: string; text: string } }) {
   const tCommon = useTranslations("common");
+  const locale = useLocale();
   const [expanded, setExpanded] = useState(false);
-  const isLongText = review.text.length > 120;
+  const activeReview = (locale === "it" && ITALIAN_REVIEWS_MAP[review.name])
+    ? { ...review, ...ITALIAN_REVIEWS_MAP[review.name] }
+    : review;
+  const isLongText = activeReview.text.length > 120;
 
   return (
     <div className="bg-card p-6 rounded-xl border border-border hover:shadow-card transition-shadow duration-300">
@@ -198,7 +245,7 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
         {/* Name & Location */}
         <div className="flex-1 min-w-0">
           <h3 className="font-medium text-foreground text-sm">{review.name}</h3>
-          <p className="text-xs text-muted-foreground">{review.location}</p>
+          <p className="text-xs text-muted-foreground">{activeReview.location}</p>
         </div>
 
         {/* Google Icon */}
@@ -217,12 +264,12 @@ function ReviewCard({ review }: { review: { name: string; location: string; avat
             <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
           ))}
         </div>
-        <span className="text-xs text-muted-foreground">{review.date}</span>
+        <span className="text-xs text-muted-foreground">{activeReview.date}</span>
       </div>
 
       {/* Review Text */}
       <p className="text-sm text-muted-foreground leading-relaxed break-words">
-        {review.text}
+        {activeReview.text}
       </p>
     </div>
   );
@@ -534,6 +581,24 @@ const foodPhilosophy = [
   { icon: Heart, title: "Sattvic Principles", description: "Food that promotes clarity & peace" },
   { icon: Apple, title: "Locally Sourced", description: "Fresh ingredients from Bali farms" },
   { icon: Sparkles, title: "Ayurvedic Balance", description: "Meals designed for your dosha" },
+];
+
+const foodPhilosophyIt = [
+  { icon: Leaf, title: "Nutrizione e alimentazione sana", description: "Cucina vegetariana e vegana pura" },
+  { icon: Heart, title: "Princìpi sattvici", description: "Cibo che favorisce chiarezza e pace mentale" },
+  { icon: Apple, title: "Ingredienti a km zero", description: "Prodotti freschi dalle coltivazioni di Bali" },
+  { icon: Sparkles, title: "Equilibrio ayurvedico", description: "Pasti bilanciati per i tuoi dosha" },
+];
+
+const dietaryOptionsIt = [
+  { icon: Leaf, name: "Vegano", description: "Pasti 100% vegetali" },
+  { icon: Milk, name: "Senza lattosio", description: "Alternative vegetali senza latticini" },
+  { icon: Wheat, name: "Senza glutine", description: "Senza frumento né glutine" },
+  { icon: Sprout, name: "Crudismo", description: "Opzioni con cibi vivi e vitali" },
+  { icon: CircleDot, name: "Nutrizione e cibi sani", description: "Alimentazione equilibrata e salutare" },
+  { icon: Cherry, name: "Fruttariano", description: "Pasti a base di frutta fresca" },
+  { icon: Sun, name: "Dieta yogica", description: "Alimentazione sattvica tradizionale" },
+  { icon: MessageSquare, name: "Richieste personalizzate", description: "Altre diete specifiche su richiesta" },
 ];
 
 
@@ -1306,7 +1371,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       </div>
                       {saleLive && (<div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform max-w-full break-words">
                         <Zap className="w-3.5 h-3.5 fill-current shrink-0" />
-                        <span>Save ${bali200.sale.discount} Now</span>
+                        <span>{locale === "it" ? `Risparmia $${bali200.sale.discount} ora` : `Save $${bali200.sale.discount} Now`}</span>
                       </div>)}
                     </div>
                   </div>
@@ -1500,7 +1565,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                             {story.country}
                           </p>
                           <span className="text-[10px] text-primary/80 font-medium">
-                            • Google Review
+                            • {locale === "it" ? "Recensione Google" : "Google Review"}
                           </span>
                         </div>
                       </div>
@@ -1704,9 +1769,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                       onChange={(e) => setSelectedSyllabusCourse(e.target.value)}
                       className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                     >
-                      <option value="100">100 Hour YTTC</option>
-                      <option value="200">200 Hour YTTC</option>
-                      <option value="300">300 Hour YTTC</option>
+                      <option value="100">{locale === "it" ? "Corso 100 Ore YTTC" : "100 Hour YTTC"}</option>
+                      <option value="200">{locale === "it" ? "Corso 200 Ore YTTC" : "200 Hour YTTC"}</option>
+                      <option value="300">{locale === "it" ? "Corso 300 Ore YTTC" : "300 Hour YTTC"}</option>
                     </select>
                     <input
                       type="email"
@@ -1733,7 +1798,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 </DialogContent>
               </Dialog>
               <p className="mt-4 text-sm text-muted-foreground italic">
-                Want to see the hour-by-hour breakdown and reading list?
+                {syllabusUI.syllabusPrompt || (locale === "it" ? "Vuoi consultare la suddivisione oraria e l'elenco dei testi consigliati?" : "Want to see the hour-by-hour breakdown and reading list?")}
               </p>
 
               {/* Syllabus Thank You Dialog */}
@@ -1753,10 +1818,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     </div>
                     <div>
                       <DialogTitle className="font-heading text-2xl font-bold text-primary mb-2">
-                        Thank You! 🙏
+                        {locale === "it" ? "Grazie! 🙏" : "Thank You! 🙏"}
                       </DialogTitle>
                       <DialogDescription className="text-muted-foreground">
-                        Your {selectedSyllabusCourse}-hour YTTC syllabus is on its way to <span className="font-medium text-foreground">{syllabusEmail}</span>
+                        {locale === "it" ? <>Il programma del corso da {selectedSyllabusCourse} ore è in arrivo su <span className="font-medium text-foreground">{syllabusEmail}</span></> : <>Your {selectedSyllabusCourse}-hour YTTC syllabus is on its way to <span className="font-medium text-foreground">{syllabusEmail}</span></>}
                       </DialogDescription>
                     </div>
                     <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground">
@@ -1789,7 +1854,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <section className="py-20 bg-secondary/30" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2426px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-              Special Workshops Included
+              {locale === "it" ? "Seminari speciali inclusi" : "Special Workshops Included"}
             </h2>
             {/* Decorative Hands/Mudra Icon */}
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -1801,7 +1866,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
             </div>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Enhance your training with these exclusive bonus workshops — all included free
+              {locale === "it" ? "Arricchisci la tua formazione con questi seminari intensivi inclusi gratuitamente" : "Enhance your training with these exclusive bonus workshops — all included free"}
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -1855,7 +1920,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             {/* Section Header */}
             <div className="text-center mb-16">
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
-                Post-Program Support
+                {locale === "it" ? "Supporto post-formazione" : "Post-Program Support"}
               </h2>
               {/* Decorative Flourish */}
               <div className="flex items-center justify-center gap-2">
@@ -2024,7 +2089,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 {/* Special Offer Box */}
                 <div className="bg-amber-100/95 dark:bg-amber-900/40 border border-amber-200/50 dark:border-amber-800/50 px-6 py-3 rounded-xl shadow-xl animate-bounce-subtle backdrop-blur-md text-center max-w-lg mx-auto">
                   <p className="text-amber-900 dark:text-amber-100 text-sm font-bold leading-relaxed">
-                    Book your March to July 2027 YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities – <span className="text-amber-600 dark:text-amber-400">all included for free.</span>
+                    {locale === "it" ? <>Prenota il tuo corso da marzo a luglio 2027 e ricevi servizio fotografico professionale, tour dei templi sacri, trasferimento dall'aeroporto e attività culturali – <span className="text-amber-600 dark:text-amber-400">tutto incluso gratuitamente.</span></> : <>Book your March to July 2027 YTT and get a Professional Photoshoot, Sacred Temple Tour, Airport Pick-up, and Cultural Activities – <span className="text-amber-600 dark:text-amber-400">all included for free.</span></>}
                   </p>
                 </div>
               </div>
@@ -2039,10 +2104,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
         <section id="book-now" className="py-20 bg-background scroll-mt-24" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 2932px" }}>
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-center text-foreground mb-2">
-              200 Hour Yoga Teacher Training
+              {locale === "it" ? "Corso di formazione insegnanti yoga 200 ore" : "200 Hour Yoga Teacher Training"}
             </h2>
             <p className="text-center text-primary font-heading text-lg tracking-[0.3em] uppercase mb-2">
-              Upcoming Dates
+              {locale === "it" ? "Prossime date" : "Upcoming Dates"}
             </p>
             {/* Decorative Calendar Icon */}
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -2066,6 +2131,17 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="lg:col-span-2 space-y-0 divide-y divide-border border border-border rounded-xl overflow-hidden bg-card">
                   {upcomingDates.map((item, index) => {
                     const { isFull, isUrgent, text: badgeText, colorClass: badgeColorClass } = getBatchSeatsBadge(item.spotsLeft);
+                    const formattedBatchDate = locale === "it"
+                      ? item.date
+                          .replace(/Jan/g, "Gen")
+                          .replace(/May/g, "Mag")
+                          .replace(/Jun/g, "Giu")
+                          .replace(/Jul/g, "Lug")
+                          .replace(/Aug/g, "Ago")
+                          .replace(/Sep/g, "Set")
+                          .replace(/Oct/g, "Ott")
+                          .replace(/Dec/g, "Dic")
+                      : item.date;
                     return (
                       <div
                         key={index}
@@ -2075,11 +2151,11 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         <div className="flex flex-col gap-1 min-w-[200px]">
                           <div className="flex items-center gap-3">
                             <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
-                            <span className="font-medium text-foreground">{item.date}</span>
+                            <span className="font-medium text-foreground">{formattedBatchDate}</span>
                           </div>
                           {isUrgent && (
                             <span className="text-xs font-semibold text-amber-600 dark:text-amber-500 flex items-center gap-1 mt-1 animate-pulse">
-                              🔥 Hurry up! Limited seats, fast filling. Book quickly!
+                              {locale === "it" ? "🔥 Affrettati! Posti limitati, in rapido esaurimento. Prenota subito!" : "🔥 Hurry up! Limited seats, fast filling. Book quickly!"}
                             </span>
                           )}
                         </div>
@@ -2088,11 +2164,11 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         <div className="flex items-center gap-4 sm:gap-6 flex-wrap sm:flex-nowrap">
                           {isFull ? (
                             <span className="text-sm px-3 py-1.5 rounded-md whitespace-nowrap bg-muted text-muted-foreground">
-                              Fully Booked
+                              {locale === "it" ? "Tutto esaurito" : "Fully Booked"}
                             </span>
                           ) : (
                             <span className={`text-sm px-3 py-1.5 rounded-md whitespace-nowrap ${badgeColorClass}`}>
-                              {badgeText}
+                              {locale === "it" && badgeText === "Booking open" ? "Iscrizioni aperte" : (locale === "it" && badgeText === "Fully Booked" ? "Tutto esaurito" : badgeText)}
                             </span>
                           )}
 
@@ -2100,7 +2176,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                           {saleLive && (
                             <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
                               <p className="font-heading font-bold text-foreground text-sm">{t("pricing.earlyBirdPrice")}</p>
-                              <p className="text-primary text-sm font-medium">Save ${bali200.sale.discount}</p>
+                              <p className="text-primary text-sm font-medium">{locale === "it" ? `Risparmia $${bali200.sale.discount}` : `Save $${bali200.sale.discount}`}</p>
                             </div>
                           )}
 
@@ -2112,13 +2188,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                               className="whitespace-nowrap bg-muted text-muted-foreground hover:bg-muted hover:text-muted-foreground border border-border"
                               onClick={() => {
                                 toast({
-                                  title: "Full Now",
-                                  description: "This batch is fully booked.",
+                                  title: locale === "it" ? "Posti esauriti" : "Full Now",
+                                  description: locale === "it" ? "Questo gruppo è al completo." : "This batch is fully booked.",
                                   variant: "destructive",
                                 });
                               }}
                             >
-                              Full
+                              {locale === "it" ? "Completo" : "Full"}
                             </Button>
                           ) : (
                             <Button
@@ -2160,7 +2236,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         </p>
                         {saleLive && (<p className="text-muted-foreground text-sm">
                           <span className="line-through">${tuitionPricing.original.toLocaleString()}</span>
-                          <span className="ml-2 text-green-600 font-semibold">(Save ${bali200.sale.discount})</span>
+                          <span className="ml-2 text-green-600 font-semibold">({locale === "it" ? "Risparmia" : "Save"} ${bali200.sale.discount})</span>
                         </p>)}
                       </div>
 
@@ -2172,7 +2248,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         </p>
                         {saleLive && (<p className="text-muted-foreground text-sm">
                           <span className="line-through">${triplePricing.original.toLocaleString()}</span>
-                          <span className="ml-2 text-green-600 font-semibold">(Save ${bali200.sale.discount})</span>
+                          <span className="ml-2 text-green-600 font-semibold">({locale === "it" ? "Risparmia" : "Save"} ${bali200.sale.discount})</span>
                         </p>)}
                       </div>
 
@@ -2184,7 +2260,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         </p>
                         {saleLive && (<p className="text-muted-foreground text-sm">
                           <span className="line-through">${doublePricing.original.toLocaleString()}</span>
-                          <span className="ml-2 text-green-600 font-semibold">(Save ${bali200.sale.discount})</span>
+                          <span className="ml-2 text-green-600 font-semibold">({locale === "it" ? "Risparmia" : "Save"} ${bali200.sale.discount})</span>
                         </p>)}
                       </div>
 
@@ -2196,7 +2272,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                         </p>
                         {saleLive && (<p className="text-muted-foreground text-sm">
                           <span className="line-through">${privatePricing.original.toLocaleString()}</span>
-                          <span className="ml-2 text-green-600 font-semibold">(Save ${bali200.sale.discount})</span>
+                          <span className="ml-2 text-green-600 font-semibold">({locale === "it" ? "Risparmia" : "Save"} ${bali200.sale.discount})</span>
                         </p>)}
                       </div>
 
@@ -2623,9 +2699,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   originalPrice: `$${tuitionPricing.original.toLocaleString()}`,
                   price: `$${(saleLive ? tuitionPricing.sale : tuitionPricing.original).toLocaleString()}`,
                   showComparePrice: saleLive,
-                  discountText: `Save $${bali200.sale.discount}`,
+                  discountText: locale === "it" ? `Risparmia $${bali200.sale.discount}` : `Save $${bali200.sale.discount}`,
                   images: [apartGroupClass, apartSeatedTalk, apartGroupPose, apartChildPose, apartMountainPose],
-                  features: ["Yoga Shala", "TTC Manual", "Wi-Fi", "All Classes"],
+                  features: locale === "it" ? ["Yoga Shala", "Manuale del corso", "Wi-Fi", "Tutte le lezioni"] : ["Yoga Shala", "TTC Manual", "Wi-Fi", "All Classes"],
                   badge: t("accommodationExtra.courseOnly"),
                   isPopular: false,
                 },
@@ -2636,7 +2712,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   originalPrice: `$${triplePricing.original.toLocaleString()}`,
                   price: `$${(saleLive ? triplePricing.sale : triplePricing.original).toLocaleString()}`,
                   showComparePrice: saleLive,
-                  discountText: `Save $${bali200.sale.discount}`,
+                  discountText: locale === "it" ? `Risparmia $${bali200.sale.discount}` : `Save $${bali200.sale.discount}`,
                   images: [tripleBalcony, tripleBathroom, tripleBedroom1, tripleBedroom2, tripleBedroom3],
                   features: roomFeatures,
                   badge: null,
@@ -2649,7 +2725,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   originalPrice: `$${doublePricing.original.toLocaleString()}`,
                   price: `$${(saleLive ? doublePricing.sale : doublePricing.original).toLocaleString()}`,
                   showComparePrice: saleLive,
-                  discountText: `Save $${bali200.sale.discount}`,
+                  discountText: locale === "it" ? `Risparmia $${bali200.sale.discount}` : `Save $${bali200.sale.discount}`,
                   images: [doubleBedroom1, doubleBedroom2, doubleBedroom3, doubleBedroom4, doubleBalcony],
                   features: roomFeatures,
                   badge: t("accommodationExtra.mostPopular"),
@@ -2662,7 +2738,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   originalPrice: `$${privatePricing.original.toLocaleString()}`,
                   price: `$${(saleLive ? privatePricing.sale : privatePricing.original).toLocaleString()}`,
                   showComparePrice: saleLive,
-                  discountText: `Save $${bali200.sale.discount}`,
+                  discountText: locale === "it" ? `Risparmia $${bali200.sale.discount}` : `Save $${bali200.sale.discount}`,
                   images: [
                     privateNew2,
                     privateNew3,
@@ -2730,10 +2806,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             <div className="text-center mb-16">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
                 <UtensilsCrossed className="w-4 h-4" />
-                Nourishment for Body & Soul
+                {locale === "it" ? "Nutrimento per corpo e anima" : "Nourishment for Body & Soul"}
               </span>
               <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
-                Sattvic Food Experience
+                {locale === "it" ? "Esperienza culinaria sattvica" : "Sattvic Food Experience"}
               </h2>
               {/* Decorative Leaf/Plant Icon */}
               <div className="flex items-center justify-center gap-2 mb-4">
@@ -2745,14 +2821,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="h-px w-12 bg-gradient-to-l from-transparent to-primary/60" />
               </div>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Three daily meals prepared with love, following ancient yogic principles
-                to support your practice and elevate your consciousness.
+                {locale === "it" ? "Tre pasti al giorno preparati con amore, seguendo gli antichi princìpi yogici per sostenere la tua pratica ed elevare la consapevolezza." : "Three daily meals prepared with love, following ancient yogic principles to support your practice and elevate your consciousness."}
               </p>
             </div>
 
             {/* Food Philosophy Grid - Always Visible */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">
-              {foodPhilosophy.map((item, index) => {
+              {(locale === "it" ? foodPhilosophyIt : foodPhilosophy).map((item, index) => {
                 const IconComponent = item.icon;
                 return (
                   <div
@@ -2858,7 +2933,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     </p>
 
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                      {dietaryOptions.map((diet, index) => {
+                      {(locale === "it" ? dietaryOptionsIt : dietaryOptions).map((diet, index) => {
                         const DietIcon = diet.icon;
                         return (
                           <div
@@ -2881,15 +2956,15 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     <div className="inline-flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
                       <span className="flex items-center gap-2 px-4 py-2 bg-background rounded-full border border-border">
                         <Check className="w-4 h-4 text-primary" />
-                        Fresh coconut water daily
+                        {locale === "it" ? "Acqua di cocco fresca ogni giorno" : "Fresh coconut water daily"}
                       </span>
                       <span className="flex items-center gap-2 px-4 py-2 bg-background rounded-full border border-border">
                         <Check className="w-4 h-4 text-primary" />
-                        Seasonal tropical fruits
+                        {locale === "it" ? "Frutta tropicale di stagione" : "Seasonal tropical fruits"}
                       </span>
                       <span className="flex items-center gap-2 px-4 py-2 bg-background rounded-full border border-border">
                         <Check className="w-4 h-4 text-primary" />
-                        Special requests welcome
+                        {locale === "it" ? "Richieste particolari benvenute" : "Special requests welcome"}
                       </span>
                     </div>
                   </div>
@@ -3067,7 +3142,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             <div className="max-w-4xl mx-auto text-center">
               {/* Subtitle */}
               <p className="text-white/90 text-lg mb-2 font-medium">
-                "YOGAGARHI – 200 Hour YTTC"
+                {locale === "it" ? '"YOGAGARHI – YTTC 200 ORE"' : '"YOGAGARHI – 200 Hour YTTC"'}
               </p>
 
               {/* Main Title */}
@@ -3207,7 +3282,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
                   <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
                 </svg>
-                <span className="font-heading text-xl font-semibold text-foreground">Google Reviews</span>
+                <span className="font-heading text-xl font-semibold text-foreground">
+                  {locale === "it" ? "Recensioni Google" : "Google Reviews"}
+                </span>
               </div>
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
                 {t("ethicsExtra.reviewsHeading")}
@@ -3430,7 +3507,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Name */}
               <div>
                 <label className="text-sm font-medium text-foreground mb-1 block">
-                  Full Name <span className="text-destructive">*</span>
+                  {locale === "it" ? "Nome e cognome" : "Full Name"} <span className="text-destructive">*</span>
                 </label>
                 <input
                   type="text"
@@ -3445,11 +3522,11 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Email */}
               <div>
                 <label className="text-sm font-medium text-foreground mb-1 block">
-                  Email Address <span className="text-destructive">*</span>
+                  {locale === "it" ? "Indirizzo email" : "Email Address"} <span className="text-destructive">*</span>
                 </label>
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder={locale === "it" ? "Inserisci la tua email" : "Enter your email"}
                   required
                   value={webinarForm.email}
                   onChange={(e) => setWebinarForm(prev => ({ ...prev, email: e.target.value }))}
@@ -3460,7 +3537,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Timezone */}
               <div>
                 <label className="text-sm font-medium text-foreground mb-1 block">
-                  Your Timezone <span className="text-destructive">*</span>
+                  {locale === "it" ? "Il tuo fuso orario" : "Your Timezone"} <span className="text-destructive">*</span>
                 </label>
                 <select
                   required
@@ -3507,7 +3584,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Preferred Date */}
               <div>
                 <label className="text-sm font-medium text-foreground mb-1 block">
-                  Preferred Date <span className="text-destructive">*</span>
+                  {locale === "it" ? "Data preferita" : "Preferred Date"} <span className="text-destructive">*</span>
                 </label>
                 <input
                   type="date"
@@ -3521,7 +3598,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               {/* Preferred Time */}
               <div>
                 <label className="text-sm font-medium text-foreground mb-1 block">
-                  Preferred Time <span className="text-destructive">*</span>
+                  {locale === "it" ? "Orario preferito" : "Preferred Time"} <span className="text-destructive">*</span>
                 </label>
                 <select
                   required
@@ -3542,7 +3619,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 size="lg"
                 disabled={!isWebinarFormComplete || isSubmittingWebinar}
               >
-                {isSubmittingWebinar ? "Registering..." : "Register Now"}
+                {isSubmittingWebinar ? (locale === "it" ? "Registrazione in corso..." : "Registering...") : (locale === "it" ? "Registrati ora" : "Register Now")}
               </Button>
 
               <p className="text-xs text-center text-muted-foreground">
@@ -3571,7 +3648,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   {tDialog("registeredTitle")}
                 </DialogTitle>
                 <DialogDescription className="text-muted-foreground">
-                  Thank you, <span className="font-medium text-foreground">{webinarForm.name}</span>! Your webinar registration is confirmed.
+                  {locale === "it" ? <>Grazie, <span className="font-medium text-foreground">{webinarForm.name}</span>! La tua registrazione alla chiamata è confermata.</> : <>Thank you, <span className="font-medium text-foreground">{webinarForm.name}</span>! Your webinar registration is confirmed.</>}
                 </DialogDescription>
               </div>
               <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground space-y-2">
@@ -3585,7 +3662,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 }}
                 className="w-full"
               >
-                Close
+                {locale === "it" ? "Chiudi" : "Close"}
               </Button>
             </div>
           </DialogContent>
@@ -3610,7 +3687,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 </label>
                 <input
                   type="text"
-                  placeholder="Enter your full name"
+                  placeholder={locale === "it" ? "Inserisci il tuo nome e cognome" : "Enter your full name"}
                   required
                   value={preYTTCForm.name}
                   onChange={(e) => setPreYTTCForm(prev => ({ ...prev, name: e.target.value }))}
@@ -3624,7 +3701,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 </label>
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder={locale === "it" ? "Inserisci la tua email" : "Enter your email"}
                   required
                   value={preYTTCForm.email}
                   onChange={(e) => setPreYTTCForm(prev => ({ ...prev, email: e.target.value }))}
@@ -3659,14 +3736,14 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               </div>
               <div>
                 <DialogTitle className="font-heading text-2xl font-bold text-primary mb-2">
-                  Details on the Way! 🎓
+                  {locale === "it" ? "Dettagli in arrivo! 🎓" : "Details on the Way! 🎓"}
                 </DialogTitle>
                 <DialogDescription className="text-muted-foreground">
-                  Thank you, <span className="font-medium text-foreground">{preYTTCForm.name}</span>! Your Pre-YTTC program details will be sent to your email.
+                  {locale === "it" ? <>Grazie, <span className="font-medium text-foreground">{preYTTCForm.name}</span>! I dettagli del percorso propedeutico ti saranno inviati via email.</> : <>Thank you, <span className="font-medium text-foreground">{preYTTCForm.name}</span>! Your Pre-YTTC program details will be sent to your email.</>}
                 </DialogDescription>
               </div>
               <div className="bg-secondary/50 rounded-lg p-4 text-sm text-muted-foreground">
-                📧 Sent to: <span className="font-medium text-foreground">{preYTTCForm.email}</span>
+                {locale === "it" ? "📧 Inviato a: " : "📧 Sent to: "}<span className="font-medium text-foreground">{preYTTCForm.email}</span>
               </div>
               <Button
                 onClick={() => {
@@ -3675,7 +3752,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 }}
                 className="w-full"
               >
-                Close
+                {locale === "it" ? "Chiudi" : "Close"}
               </Button>
             </div>
           </DialogContent>
@@ -3686,10 +3763,10 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
               <DialogTitle className="font-heading text-2xl text-center">
-                Get Free Study Manual
+                {locale === "it" ? "Ricevi il manuale di studio gratuito" : "Get Free Study Manual"}
               </DialogTitle>
               <DialogDescription className="text-center text-muted-foreground text-sm">
-                Enter your details to receive our comprehensive yoga training manual
+                {locale === "it" ? "Inserisci i tuoi dati per ricevere il nostro manuale completo di formazione yoga" : "Enter your details to receive our comprehensive yoga training manual"}
               </DialogDescription>
             </DialogHeader>
             <form onSubmit={handleManualSubmit} className="space-y-4 pt-4">
@@ -3699,7 +3776,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 </label>
                 <input
                   type="text"
-                  placeholder="Enter your full name"
+                  placeholder={locale === "it" ? "Inserisci il tuo nome e cognome" : "Enter your full name"}
                   required
                   value={manualForm.name}
                   onChange={(e) => setManualForm(prev => ({ ...prev, name: e.target.value }))}
@@ -3712,7 +3789,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 </label>
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder={locale === "it" ? "Inserisci la tua email" : "Enter your email"}
                   required
                   value={manualForm.email}
                   onChange={(e) => setManualForm(prev => ({ ...prev, email: e.target.value }))}
@@ -3726,7 +3803,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 disabled={!manualForm.name || !manualForm.email || isSubmittingManual}
               >
                 <BookOpen className="w-4 h-4 mr-2" />
-                {isSubmittingManual ? "Sending..." : "Get Free Manual"}
+                {isSubmittingManual ? (locale === "it" ? "Invio in corso..." : "Sending...") : (locale === "it" ? "Ricevi manuale gratuito" : "Get Free Manual")}
               </Button>
             </form>
           </DialogContent>
@@ -3743,17 +3820,17 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               </div>
               <div>
                 <DialogTitle className="font-heading text-2xl font-bold text-primary mb-2">
-                  Manual on the Way! 📚
+                  {locale === "it" ? "Manuale in arrivo! 📚" : "Manual on the Way! 📚"}
                 </DialogTitle>
                 <DialogDescription className="text-muted-foreground">
-                  Thank you! The study manual has been sent to <span className="font-medium text-foreground">{manualForm.email}</span>
+                  {locale === "it" ? <>Grazie! Il manuale di studio è stato inviato a <span className="font-medium text-foreground">{manualForm.email}</span></> : <>Thank you! The study manual has been sent to <span className="font-medium text-foreground">{manualForm.email}</span></>}
                 </DialogDescription>
               </div>
               <Button
                 onClick={() => setShowManualThankYou(false)}
                 className="w-full"
               >
-                Close
+                {locale === "it" ? "Chiudi" : "Close"}
               </Button>
             </div>
           </DialogContent>
@@ -3771,17 +3848,17 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
           <DialogContent className="max-w-md p-6 bg-card rounded-2xl border border-border shadow-2xl">
             <DialogHeader className="mb-4">
               <DialogTitle className="font-heading text-2xl font-bold text-foreground">
-                Book a Live Tour & Call
+                {locale === "it" ? "Prenota tour e videochiamata dal vivo" : "Book a Live Tour & Call"}
               </DialogTitle>
               <DialogDescription className="text-muted-foreground text-sm mt-1">
-                See the school, your room, and the yoga shala live. Fill in your details below to schedule.
+                {locale === "it" ? "Guarda la scuola, la tua stanza e la yoga shala dal vivo. Inserisci i tuoi dati per concordare la visita." : "See the school, your room, and the yoga shala live. Fill in your details below to schedule."}
               </DialogDescription>
             </DialogHeader>
 
             <form onSubmit={handleTourCallSubmit} className="space-y-4">
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                  Email Address
+                  {locale === "it" ? "Indirizzo email" : "Email Address"}
                 </label>
                 <Input
                   type="email"
@@ -3795,7 +3872,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                  Preferred Date
+                  {locale === "it" ? "Data preferita" : "Preferred Date"}
                 </label>
                 <Input
                   type="date"
@@ -3808,12 +3885,12 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                  Preferred Time
+                  {locale === "it" ? "Orario preferito" : "Preferred Time"}
                 </label>
                 <Input
                   type="text"
                   required
-                  placeholder="e.g. 3:00 PM, or Morning call"
+                  placeholder={locale === "it" ? "es. ore 15:00, oppure mattina" : "e.g. 3:00 PM, or Morning call"}
                   value={tourTime}
                   onChange={(e) => setTourTime(e.target.value)}
                   className="h-12 rounded-xl bg-background/50 border-border/80 focus:border-primary"
@@ -3822,7 +3899,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
 
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                  Time Zone
+                  {locale === "it" ? "Fuso orario" : "Time Zone"}
                 </label>
                 <select
                   required
@@ -3844,7 +3921,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 disabled={isSubmittingTour}
                 className="w-full h-auto min-h-12 py-3 bg-primary text-primary-foreground font-bold rounded-xl mt-2 transition-all hover:bg-primary/90 text-center whitespace-normal break-words"
               >
-                {isSubmittingTour ? "Scheduling..." : "Submit Booking"}
+                {isSubmittingTour ? (locale === "it" ? "Prenotazione in corso..." : "Scheduling...") : (locale === "it" ? "Conferma prenotazione" : "Submit Booking")}
               </Button>
             </form>
           </DialogContent>
@@ -3871,16 +3948,16 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="flex items-center justify-center gap-4 mb-6">
                   <button
                     onClick={() => setSelectedMonth(prev => prev > 0 ? prev - 1 : 11)}
-                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors" aria-label="Previous month"
+                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors" aria-label={locale === "it" ? "Mese precedente" : "Previous month"}
                   >
                     <ChevronDown className="w-5 h-5 rotate-90" />
                   </button>
                   <span className="font-heading font-bold text-lg min-w-[140px] text-center">
-                    {["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][selectedMonth]} {new Date().getFullYear()}
+                    {new Date(new Date().getFullYear(), selectedMonth, 1).toLocaleDateString(locale, { month: "long" })} {new Date().getFullYear()}
                   </span>
                   <button
                     onClick={() => setSelectedMonth(prev => prev < 11 ? prev + 1 : 0)}
-                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors" aria-label="Next month"
+                    className="p-1 hover:bg-primary-foreground/10 rounded transition-colors" aria-label={locale === "it" ? "Mese successivo" : "Next month"}
                   >
                     <ChevronDown className="w-5 h-5 -rotate-90" />
                   </button>
@@ -3938,7 +4015,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="mb-8">
                   <h4 className="font-medium text-foreground mb-3">{tDialog("meetingDuration")}</h4>
                   <div className="bg-secondary/50 rounded-lg p-3 text-center text-muted-foreground">
-                    30 mins
+                    {locale === "it" ? "30 min" : "30 mins"}
                   </div>
                 </div>
 
@@ -4012,7 +4089,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     className="w-full mt-2 text-muted-foreground hover:text-foreground"
                     onClick={() => setShowCalendarDialog(false)}
                   >
-                    Cancel
+                    {locale === "it" ? "Annulla" : "Cancel"}
                   </Button>
                 </div>
               </div>
@@ -4029,7 +4106,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <DialogTitle className="font-heading text-xl">{tDialog("bookingTitle")}</DialogTitle>
               <DialogDescription className="text-sm text-muted-foreground mt-2">
                 {selectedDay && selectedTime && (
-                  <>Scheduled for {selectedDay} {["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][selectedMonth]} {new Date().getFullYear()} at {selectedTime}</>
+                  <>{locale === "it" ? `Fissato per il ${selectedDay} ${new Date(new Date().getFullYear(), selectedMonth, 1).toLocaleDateString(locale, { month: "long" })} ${new Date().getFullYear()} alle ore ${selectedTime}` : `Scheduled for ${selectedDay} ${["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][selectedMonth]} ${new Date().getFullYear()} at ${selectedTime}`}</>
                 )}
               </DialogDescription>
             </DialogHeader>
@@ -4099,9 +4176,9 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 </label>
                 <div className="space-y-2">
                   {[
-                    { value: '100', label: '100 Hour YTTC' },
-                    { value: '200', label: '200 Hour YTTC' },
-                    { value: '300', label: '300 Hour YTTC' }
+                    { value: '100', label: locale === 'it' ? 'Corso 100 Ore YTTC' : '100 Hour YTTC' },
+                    { value: '200', label: locale === 'it' ? 'Corso 200 Ore YTTC' : '200 Hour YTTC' },
+                    { value: '300', label: locale === 'it' ? 'Corso 300 Ore YTTC' : '300 Hour YTTC' }
                   ].map((option) => (
                     <label
                       key={option.value}
@@ -4303,7 +4380,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Yogagarhi Location - Gianyar, Bali"
+                  title={locale === "it" ? "Sede Yogagarhi - Gianyar, Bali" : "Yogagarhi Location - Gianyar, Bali"}
                 />
               </div>
 
@@ -4486,7 +4563,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   required
                   value={quickEnquiryForm.message}
                   onChange={(e) => setQuickEnquiryForm(prev => ({ ...prev, message: e.target.value }))}
-                  placeholder="Tell us about your interest in yoga teacher training..."
+                  placeholder={locale === "it" ? "Raccontaci il tuo interesse per la formazione insegnanti yoga..." : "Tell us about your interest in yoga teacher training..."}
                   className="min-h-[120px]"
                 />
               </div>
@@ -4541,7 +4618,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               </Button>
             </div>
             <p className="text-center text-xs text-muted-foreground mt-6">
-              Typically replies within a few hours to help you get started.
+              {locale === "it" ? "Rispondiamo solitamente entro poche ore per aiutarti a iniziare." : "Typically replies within a few hours to help you get started."}
             </p>
           </DialogContent>
         </Dialog>
@@ -4564,7 +4641,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <label className="block text-sm font-semibold text-foreground">{tDialog("fullName")} <span className="text-destructive">*</span></label>
                 <input
                   type="text"
-                  aria-label="Full Name"
+                  aria-label={locale === "it" ? "Nome e cognome" : "Full Name"}
                   value={enrollForm.name}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, name: e.target.value }))}
                   placeholder={tDialog("fullName")}
@@ -4575,7 +4652,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <label className="block text-sm font-semibold text-foreground">{tDialog("email")} <span className="text-destructive">*</span></label>
                 <input
                   type="email"
-                  aria-label="Email Address"
+                  aria-label={locale === "it" ? "Indirizzo email" : "Email Address"}
                   value={enrollForm.email}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, email: e.target.value }))}
                   placeholder={tDialog("email")}
@@ -4586,7 +4663,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <label className="block text-sm font-semibold text-foreground">{tDialog("phone")} <span className="text-destructive">*</span></label>
                 <div className="flex gap-2">
                   <select
-                    aria-label="Country Code"
+                    aria-label={locale === "it" ? "Prefisso internazionale" : "Country Code"}
                     value={enrollForm.countryCode}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, countryCode: e.target.value }))}
                     className="w-24 px-2 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4601,7 +4678,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                   </select>
                   <input
                     type="tel"
-                    aria-label="Phone number"
+                    aria-label={locale === "it" ? "Numero di telefono" : "Phone number"}
                     value={enrollForm.contact}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, contact: e.target.value }))}
                     placeholder={tDialog("phone")}
@@ -4613,21 +4690,21 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">{tDialog("course")} <span className="text-destructive">*</span></label>
                   <select
-                    aria-label="Select Course"
+                    aria-label={locale === "it" ? "Seleziona corso" : "Select Course"}
                     value={enrollForm.courseName}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, courseName: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
                   >
                     <option value="">{tDialog("select")}</option>
-                    <option value="100 Hour Yoga Teacher Training Course in Bali">100 Hr YTTC</option>
-                    <option value="200 Hour Yoga Teacher Training Course in Bali">200 Hr YTTC</option>
-                    <option value="300 Hour Yoga Teacher Training Course in Bali">300 Hr YTTC</option>
+                    <option value="100 Hour Yoga Teacher Training Course in Bali">{locale === "it" ? "Corso 100 Ore YTTC" : "100 Hr YTTC"}</option>
+                    <option value="200 Hour Yoga Teacher Training Course in Bali">{locale === "it" ? "Corso 200 Ore YTTC" : "200 Hr YTTC"}</option>
+                    <option value="300 Hour Yoga Teacher Training Course in Bali">{locale === "it" ? "Corso 300 Ore YTTC" : "300 Hr YTTC"}</option>
                   </select>
                 </div>
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">{locale === 'en' ? 'Date' : tDialog("date")} <span className="text-destructive">*</span></label>
                   <select
-                    aria-label="Select Date"
+                    aria-label={locale === "it" ? "Seleziona data" : "Select Date"}
                     value={enrollForm.courseDate}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, courseDate: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4643,7 +4720,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">{locale === 'en' ? 'Room' : tDialog("room")} <span className="text-destructive">*</span></label>
                   <select
-                    aria-label="Select Room"
+                    aria-label={locale === "it" ? "Seleziona camera" : "Select Room"}
                     value={enrollForm.accommodation}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, accommodation: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4657,7 +4734,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <div className="space-y-1.5">
                   <label className="block text-sm font-semibold text-foreground">{tDialog("gender")} <span className="text-destructive">*</span></label>
                   <select
-                    aria-label="Select Gender"
+                    aria-label={locale === "it" ? "Seleziona genere" : "Select Gender"}
                     value={enrollForm.gender}
                     onChange={(e) => setEnrollForm(prev => ({ ...prev, gender: e.target.value }))}
                     className="w-full px-3 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4673,7 +4750,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                 <label className="block text-sm font-semibold text-foreground">{tDialog("country")} <span className="text-destructive">*</span></label>
                 <input
                   type="text"
-                  aria-label="Country"
+                  aria-label={locale === "it" ? "Paese" : "Country"}
                   value={enrollForm.country}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, country: e.target.value }))}
                   placeholder={locale === 'en' ? "Your country" : tDialog("country")}
@@ -4683,7 +4760,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">{tDialog("howHeard")} <span className="text-destructive">*</span></label>
                 <select
-                  aria-label="How did you hear about us"
+                  aria-label={locale === "it" ? "Come hai saputo di noi" : "How did you hear about us"}
                   value={enrollForm.source}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, source: e.target.value }))}
                   className="w-full px-4 py-3 rounded-xl border-2 border-border bg-background text-foreground focus:outline-none focus:border-primary transition-colors text-sm"
@@ -4698,7 +4775,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               <div className="space-y-1.5">
                 <label className="block text-sm font-semibold text-foreground">{tDialog("messageOptional")}</label>
                 <textarea
-                  aria-label="Optional message"
+                  aria-label={locale === "it" ? "Messaggio facoltativo" : "Optional message"}
                   value={enrollForm.message}
                   onChange={(e) => setEnrollForm(prev => ({ ...prev, message: e.target.value }))}
                   placeholder={tDialog("placeholderMessage")}
@@ -4734,7 +4811,7 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
             <button
               onClick={scrollToTop}
               className="fixed bottom-6 right-6 z-50 w-12 h-12 bg-primary text-primary-foreground rounded-full shadow-elevated hover:bg-primary/90 transition-all duration-300 hidden md:flex items-center justify-center animate-fade-in hover:scale-110"
-              aria-label="Scroll to top"
+              aria-label={locale === "it" ? "Torna all'inizio" : "Scroll to top"}
             >
               <ChevronDown className="w-6 h-6 rotate-180" />
             </button>
