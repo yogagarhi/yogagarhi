@@ -30,6 +30,26 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/italia-200-ore-formazione-insegnanti-yoga',
+        destination: '/200-hour-yoga-teacher-training-in-bali',
+        permanent: true,
+      },
+      {
+        source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/italia-200-ore-formazione-insegnanti-yoga',
+        destination: '/200-hour-yoga-teacher-training-in-bali',
+        permanent: true,
+      },
+      {
+        source: '/bali-200-ghante-yoga-shikshak-prashikshan',
+        destination: '/200-hour-yoga-teacher-training-in-bali',
+        permanent: true,
+      },
+      {
+        source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/bali-200-ghante-yoga-shikshak-prashikshan',
+        destination: '/200-hour-yoga-teacher-training-in-bali',
+        permanent: true,
+      },
+      {
         source: '/retreat/warkala',
         destination: '/retreat/varkala',
         permanent: true,

@@ -32,8 +32,6 @@ export default function Footer() {
 
   const courses = [
     { name: safeDrop("course200", "200 Hour Yoga TTC in Bali"), href: "/200-hour-yoga-teacher-training-in-bali" },
-    { name: safeDrop("course200Hindi", "बाली में २०० घंटे का योग शिक्षक प्रशिक्षण"), href: "/bali-200-ghante-yoga-shikshak-prashikshan" },
-    { name: safeDrop("course200Italy", "Corso Yoga 200 Ore in Italia"), href: "/italia-200-ore-formazione-insegnanti-yoga" },
     { name: safeDrop("course100", "100 Hour Yoga TTC in Bali"), href: "/100-hour-yoga-teacher-training-in-bali" },
     { name: safeDrop("course300", "300 Hour Yoga TTC in Bali"), href: "/300-hour-yoga-teacher-training-in-bali" },
     { name: safeDrop("course200Rishikesh", "200 Hour Yoga TTC in Rishikesh"), href: "/200-hour-yoga-teacher-training-in-rishikesh" },
@@ -109,7 +107,7 @@ export default function Footer() {
         {/* Links in Horizontal Layout */}
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-12 text-sm">
           {courses.map((link, i) => {
-            const isDirectLink = link.href === '/sound-healing-certification-in-rishikesh' || link.href === '/bali-200-ghante-yoga-shikshak-prashikshan' || link.href === '/italia-200-ore-formazione-insegnanti-yoga';
+            const isDirectLink = link.href === '/sound-healing-certification-in-rishikesh';
             const LinkComponent = isDirectLink ? NextLink : Link;
             return (
               <LinkComponent

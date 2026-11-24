@@ -160,7 +160,7 @@ export default async function LocaleLayout({
   const messages: any = await getMessages();
   const headerList = await headers();
   const currentPath = headerList.get("x-pathname") || headerList.get("x-invoke-path") || "";
-  const docLang = currentPath.includes("italia-200-ore") ? "it" : currentPath.includes("bali-200-ghante") ? "hi" : locale;
+  const docLang = locale;
 
   // Pick only layout messages for root client provider to keep First Load JS & HTML payload tiny
   const layoutMessages = {
@@ -198,7 +198,6 @@ export default async function LocaleLayout({
             __html: `window.dataLayer = window.dataLayer || [];`,
           }}
         />
-        {!currentPath.includes("italia-200-ore") && !currentPath.includes("bali-200-ghante") && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -344,7 +343,6 @@ export default async function LocaleLayout({
             })
           }}
         />
-        )}
       </head>
       <body className="font-body bg-background text-foreground antialiased scroll-smooth" suppressHydrationWarning>
         <SvgSprite />
@@ -406,7 +404,7 @@ export default async function LocaleLayout({
 })();`
           }}
         />
-        <NextIntlClientProvider locale={docLang} messages={currentPath.includes("italia-200-ore") ? {} : layoutMessages}>
+        <NextIntlClientProvider locale={docLang} messages={layoutMessages}>
           <Providers>
             <MainLayout>
               {children}

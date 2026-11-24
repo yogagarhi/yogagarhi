@@ -13,9 +13,7 @@ export default function WhatsAppButton() {
         "/yoga-anatomy-masterclass",
         "/pre-yttc-prep",
         "/teacher-training-foundation",
-        "/yogic-energy",
-        "/bali-200-ghante-yoga-shikshak-prashikshan",
-        "/italia-200-ore-formazione-insegnanti-yoga"
+        "/yogic-energy"
     ].includes(normalizedPathname);
 
     if (isLandingPage) return null;

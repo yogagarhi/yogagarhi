@@ -119,16 +119,6 @@ const getCourses = (t: any): NavDropdownItem[] => {
       { id: "course100", name: t("course100"), href: "/100-hour-yoga-teacher-training-in-bali" },
       { id: "course200", name: t("course200"), href: "/200-hour-yoga-teacher-training-in-bali" },
       { id: "course300", name: t("course300"), href: "/300-hour-yoga-teacher-training-in-bali" },
-      { id: "course200Hindi", name: safeT("course200Hindi", "बाली में २०० घंटे का योग शिक्षक प्रशिक्षण"), href: "/bali-200-ghante-yoga-shikshak-prashikshan" },
-    ]
-  },
-  {
-    id: "italy",
-    name: "Italia",
-    href: "#",
-    icon: Globe,
-    subItems: [
-      { id: "course200Italy", name: "Formazione Yoga 200 Ore in Italia", href: "/italia-200-ore-formazione-insegnanti-yoga" },
     ]
   },
   {
@@ -533,7 +523,7 @@ export default function Header() {
                                       >
                                         <ul className="p-2 list-none m-0">
                                           {item.subItems.map((sub) => {
-                                            const isDirectLink = sub.href === '/sound-healing-certification-in-rishikesh' || sub.href === '/bali-200-ghante-yoga-shikshak-prashikshan' || sub.href === '/italia-200-ore-formazione-insegnanti-yoga';
+                                            const isDirectLink = sub.href === '/sound-healing-certification-in-rishikesh';
                                             const SubLinkComponent = isDirectLink ? NextLink : Link;
                                             return (
                                               <li key={sub.id || sub.name} className="list-none">
@@ -726,7 +716,7 @@ export default function Header() {
                                   <div className={`overflow-hidden transition-all duration-300 ${mobileOpenSubDropdown === subItemKey ? 'max-h-48 mt-1' : 'max-h-0'}`}>
                                     <div className="pl-8 flex flex-col gap-1 pb-2">
                                       {item.subItems.map((sub) => {
-                                        const isDirectLink = sub.href === '/sound-healing-certification-in-rishikesh' || sub.href === '/bali-200-ghante-yoga-shikshak-prashikshan' || sub.href === '/italia-200-ore-formazione-insegnanti-yoga';
+                                        const isDirectLink = sub.href === '/sound-healing-certification-in-rishikesh';
                                         const SubLinkComponent = isDirectLink ? NextLink : Link;
                                         return (
                                           <SubLinkComponent

@@ -77,17 +77,13 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
         "/yoga-anatomy-masterclass",
         "/pre-yttc-prep",
         "/teacher-training-foundation",
-        "/yogic-energy",
-        "/bali-200-ghante-yoga-shikshak-prashikshan",
-        "/italia-200-ore-formazione-insegnanti-yoga"
+        "/yogic-energy"
     ].includes(normalizedPathname);
 
     const hideFooter = [
         "/yoga-anatomy-masterclass",
         "/pre-yttc-prep",
-        "/yogic-energy",
-        "/bali-200-ghante-yoga-shikshak-prashikshan",
-        "/italia-200-ore-formazione-insegnanti-yoga"
+        "/yogic-energy"
     ].includes(normalizedPathname);
 
     const mainPadding = !hideHeader

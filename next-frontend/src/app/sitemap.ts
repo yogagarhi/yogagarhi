@@ -45,20 +45,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             images: ['https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/course-200-hour.jpg']
         },
         {
-            url: 'https://www.yogagarhi.com/bali-200-ghante-yoga-shikshak-prashikshan',
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-            images: ['https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/course-200-hour.jpg']
-        },
-        {
-            url: 'https://www.yogagarhi.com/italia-200-ore-formazione-insegnanti-yoga',
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-            images: ['https://res.cloudinary.com/dngsqdwbb/image/upload/f_auto,q_auto/yogagarhi/assets/course-200-hour.jpg']
-        },
-        {
             url: 'https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-bali',
             lastModified: new Date(),
             changeFrequency: 'weekly',
