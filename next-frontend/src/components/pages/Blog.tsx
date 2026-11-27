@@ -105,12 +105,12 @@ export default function Blog({ locale: propLocale }: BlogProps) {
                 key={post.slug}
                 className="group bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-elevated transition-all duration-500 hover:-translate-y-2"
               >
-                <div className="relative h-56 overflow-hidden">
+                <div className="relative w-full aspect-[1200/630] overflow-hidden bg-muted">
                   <Image
                     src={post.image}
                     alt={(post as any).imageAlt || post.title}
-                    fill sizes="(max-width: 768px) 100vw, 33vw" 
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6">
