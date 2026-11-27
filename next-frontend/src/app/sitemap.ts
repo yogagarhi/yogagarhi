@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next'
 import { SUPPORTED_LOCALES, isLocaleReviewed, TRANSLATED_PAGES } from '@/config/i18nConfig'
 import { LOCATION_LIVE } from '@/config/locationConfig'
-import { SOUND_HEALING_PAGE_READY } from '@/config/soundHealingConfig'
+import { SOUND_HEALING_RISHIKESH_READY, KUNDALINI_RISHIKESH_READY, PRENATAL_RISHIKESH_READY } from '@/config/specialtyCoursesConfig'
+import { DHARAMSHALA_200_READY, DHARAMSHALA_100_READY, DHARAMSHALA_300_READY } from '@/config/dharamshalaConfig'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrls: MetadataRoute.Sitemap = [
@@ -62,6 +63,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: 0.7,
+        },
+        {
+            url: 'https://www.yogagarhi.com/blogs/yoga-instructor-certification-bali',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+            images: ['https://www.yogagarhi.com/images/blogs/yoga-instructor-certification-bali-poster.jpg']
         },
         {
             url: 'https://www.yogagarhi.com/blogs/benefits-yttc-bali',
@@ -243,8 +251,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'weekly',
             priority: 0.9,
         },
-        ...(SOUND_HEALING_PAGE_READY ? [{
-            url: 'https://www.yogagarhi.com/sound-healing-certification-in-rishikesh',
+        ...(SOUND_HEALING_RISHIKESH_READY ? [{
+            url: 'https://www.yogagarhi.com/sound-healing-course-in-rishikesh',
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
+        }] : []),
+        ...(KUNDALINI_RISHIKESH_READY ? [{
+            url: 'https://www.yogagarhi.com/200-hour-kundalini-yoga-teacher-training-in-rishikesh',
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
+        }] : []),
+        ...(PRENATAL_RISHIKESH_READY ? [{
+            url: 'https://www.yogagarhi.com/85-hour-prenatal-yoga-teacher-training-in-rishikesh',
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
+        }] : []),
+        ...(DHARAMSHALA_100_READY ? [{
+            url: 'https://www.yogagarhi.com/100-hour-yoga-teacher-training-in-dharamshala',
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
+        }] : []),
+        ...(DHARAMSHALA_200_READY ? [{
+            url: 'https://www.yogagarhi.com/200-hour-yoga-teacher-training-in-dharamshala',
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.8,
+        }] : []),
+        ...(DHARAMSHALA_300_READY ? [{
+            url: 'https://www.yogagarhi.com/300-hour-yoga-teacher-training-in-dharamshala',
             lastModified: new Date(),
             changeFrequency: 'weekly' as const,
             priority: 0.8,

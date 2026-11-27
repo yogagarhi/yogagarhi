@@ -6,7 +6,7 @@ export interface FAQItem {
 export const RISHIKESH_FAQS_200_HOUR: FAQItem[] = [
   {
     question: "What is the cost of 200-Hour Yoga Teacher Training in Rishikesh?",
-    answer: "The 200-Hour Yoga Teacher Training in Rishikesh starts from $999 for tuition-only, $1,299 for a shared quad room, $1,499 for a twin-sharing double room, and $1,799 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
+    answer: "The 200-Hour Yoga Teacher Training in Rishikesh is €1,550 for double / shared occupancy and €2,000 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
   },
   {
     question: "Is Rishikesh good for yoga teacher training?",
@@ -38,7 +38,7 @@ export const RISHIKESH_FAQS_200_HOUR: FAQItem[] = [
   },
   {
     question: "What is the difference between 100-Hour, 200-Hour, and 300-Hour YTT?",
-    answer: "The 100-Hour course (12 days) is an introductory immersion designed for beginners or time-constrained practitioners seeking deep personal transformation without full teaching credentials. The 200-Hour course (28 days) is the foundational international benchmark that qualifies you to teach as an RYT 200. The 300-Hour course (28 days) is an advanced master-level training for existing 200-Hour graduates aiming for the elite RYT 500 credential."
+    answer: "The 100-Hour course (12 days) is an introductory immersion designed for beginners or time-constrained practitioners seeking deep personal transformation without full teaching credentials. The 200-Hour course (22 Days / 21 Nights) is the foundational international benchmark that qualifies you to teach as an RYT 200. The 300-Hour course (28 days) is an advanced master-level training for existing 200-Hour graduates aiming for the elite RYT 500 credential."
   },
   {
     question: "What styles of yoga are taught during the 200-Hour training?",
@@ -73,7 +73,7 @@ export const RISHIKESH_FAQS_200_HOUR: FAQItem[] = [
 export const RISHIKESH_FAQS_100_HOUR: FAQItem[] = [
   {
     question: "What is the cost of the 100-Hour Yoga Teacher Training in Rishikesh?",
-    answer: "The 100-Hour Yoga Teacher Training in Rishikesh starts from $599 for tuition-only, $799 for a shared quad room, $999 for a double room, and $1,199 for a private room with attached private bath. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
+    answer: "The 100-Hour Yoga Teacher Training in Rishikesh is €900. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
   },
   {
     question: "Is the 100-Hour course suitable for beginners?",
@@ -268,7 +268,7 @@ export const COMPARE_COURSES_DATA = [
   {
     feature: "Duration",
     c100: "12 Days (11 Nights)",
-    c200: "28 Days (27 Nights)",
+    c200: "22 Days / 21 Nights",
     c300: "28 Days (27 Nights)"
   },
   {
@@ -303,8 +303,8 @@ export const COMPARE_COURSES_DATA = [
   },
   {
     feature: "Starting Price",
-    c100: "$599 (Tuition) / $799 (Room)",
-    c200: "$999 (Tuition) / $1,299 (Room)",
+    c100: "€900",
+    c200: "€1,550 (Shared) / €2,000 (Private)",
     c300: "$1,099 (Tuition) / $1,399 (Room)"
   },
   {

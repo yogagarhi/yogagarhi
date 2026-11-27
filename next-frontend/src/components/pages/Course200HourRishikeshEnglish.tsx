@@ -236,7 +236,7 @@ const iconHighlights = [
   { icon: Heart, title: "Prakriti-Based", subtitle: "Personalized Learning" },
   { icon: Users, title: "Small Batch", subtitle: "8-10 Students" },
   { icon: BookOpen, title: "Traditional + Practical", subtitle: "Complete System" },
-  { icon: MapPin, title: "Rishikesh Immersion", subtitle: "24-Day Retreat" },
+  { icon: MapPin, title: "Rishikesh Immersion", subtitle: "22-Day Retreat" },
 ];
 
 // What Sets Apart Data
@@ -1170,7 +1170,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                   {/* Course Length */}
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Duration</p>
-                    <p data-course-duration className="font-heading font-semibold text-foreground">24 Days</p>
+                    <p data-course-duration className="font-heading font-semibold text-foreground">22 Days / 21 Nights</p>
                   </div>
 
                   {/* Yoga Style */}
@@ -1196,17 +1196,17 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
                     <div className="flex flex-col items-center lg:items-start">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                        {SHOW_COMPARE_PRICE && (<span className="text-base text-muted-foreground line-through opacity-60">$1299</span>)}
+                        
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
-                            $999
+                            €1550
                           </span>
                           <div className="absolute -inset-1 bg-primary/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
                         </div>
                       </div>
                       <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform">
                         <Zap className="w-3.5 h-3.5 fill-current" />
-                        Save $300 Now
+                        Apply Now
                       </div>
                     </div>
                   </div>
@@ -2126,7 +2126,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                           )}
                         </div>
 
-                        {/* Spots Left, Early Bird & Button */}
+                        {/* Course Fee & Button */}
                         <div className="flex items-center gap-4 sm:gap-6 flex-wrap sm:flex-nowrap">
                           {isFull ? (
                             <span className="text-sm px-3 py-1.5 rounded-md whitespace-nowrap bg-muted text-muted-foreground">
@@ -2138,10 +2138,9 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                             </span>
                           )}
 
-                          {/* Early Bird */}
+                          {/* Course Fee */}
                           <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
-                            <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                            {SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>)}
+                            <p className="font-heading font-bold text-foreground text-sm">Course Fee</p>
                           </div>
 
                           {/* Book Button */}
@@ -2186,55 +2185,25 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                     {/* Content */}
                     <div className="p-6 space-y-5">
                       <p className="text-center text-foreground font-medium border-b border-border pb-4">
-                        Course Duration: 23 Nights / 24 Days
+                        Course Duration: 22 Days / 21 Nights
                       </p>
 
-                      {/* Tuition Fees */}
+                      {/* Double / Shared Occupancy */}
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Tuition Fees</p>
+                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Double / Shared Occupancy</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          $999
+                          €1550
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,299</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>)}
-                      </div>
-
-                      {/* Triple Sharing */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Triple Sharing</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,750
-                        </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$2,050</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>)}
-                      </div>
-
-                      {/* Double Sharing */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Double Sharing</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,899
-                        </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$2,199</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>)}
+                        
                       </div>
 
                       {/* Private Room */}
                       <div className="text-center p-4 bg-secondary/30 rounded-lg">
                         <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Private Room</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          $2,499
+                          €2000
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$2,799</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>)}
+                        
                       </div>
 
                       {/* CTA */}
@@ -2512,10 +2481,10 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
                     <Calendar className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="font-heading text-lg font-bold text-foreground mb-2">
-                    Training: 1st – 24th of each month
+                    Training: 1st – 22nd of each month
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Immersive 24-day program every month IN RISHIKESH
+                    Immersive 22-day program every month IN RISHIKESH
                   </p>
                 </div>
 
@@ -4309,7 +4278,7 @@ export default function Course200HourRishikesh({ initialBatches, syllabusSlot }:
         <Dialog open={showQuickEnquiryDialog} onOpenChange={setShowQuickEnquiryDialog}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
-              <DialogTitle className="font-heading text-2xl">Claim Your $250 Early Bird Discount</DialogTitle>
+              <DialogTitle className="font-heading text-2xl">Apply for Your Course</DialogTitle>
               <DialogDescription className="text-sm text-muted-foreground">
                 Connect with us and begin your journey of transformation
               </DialogDescription>

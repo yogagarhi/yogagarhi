@@ -1345,7 +1345,7 @@ export default function CoursePageTemplate({
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">{t("quickInfo.startingFrom")}</p>
                     <div className="flex flex-col items-center lg:items-start min-w-0">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start flex-wrap">
-                        {SHOW_COMPARE_PRICE && (<span className="text-base text-muted-foreground line-through opacity-60">{startingPrice.originalPrice}</span>)}
+                        {SHOW_COMPARE_PRICE && startingPrice.originalPrice && startingPrice.originalPrice !== startingPrice.price && (<span className="text-base text-muted-foreground line-through opacity-60">{startingPrice.originalPrice}</span>)}
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
                             {startingPrice.price}
@@ -1353,10 +1353,7 @@ export default function CoursePageTemplate({
                           <div className="absolute -inset-1 bg-primary/20 blur-lg rounded-full opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
                         </div>
                       </div>
-                      {SHOW_COMPARE_PRICE && (<div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform max-w-full break-words">
-                        <Zap className="w-3.5 h-3.5 fill-current shrink-0" />
-                        <span>{t("quickInfo.earlyBirdDiscount")}</span>
-                      </div>)}
+                      {SHOW_COMPARE_PRICE && t("quickInfo.earlyBirdDiscount") && (<div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform max-w-full break-words"><Sparkles className="w-4 h-4 shrink-0" /><span>{t("quickInfo.earlyBirdDiscount")}</span></div>)}
                     </div>
                   </div>
 
@@ -2171,8 +2168,7 @@ export default function CoursePageTemplate({
 
                           {/* Early Bird */}
                           <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
-                            <p className="font-heading font-bold text-foreground text-sm">{t("pricing.earlyBirdPrice")}</p>
-                            {SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">{tCommon("save")} {item.earlyBirdSaving}</p>)}
+                            {item.earlyBirdSaving ? (<><p className="font-heading font-bold text-foreground text-sm">{t("pricing.earlyBirdPrice")}</p>{SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">{tCommon("save")} {item.earlyBirdSaving}</p>)}</>) : (<p className="font-heading font-bold text-foreground text-sm">{t("pricing.courseFee") || t("pricing.earlyBirdPrice")}</p>)}
                           </div>
 
                           {/* Book Button */}
@@ -2231,7 +2227,7 @@ export default function CoursePageTemplate({
                             {datesPricing.tuition.price}
                           </p>
                           {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                            {SHOW_COMPARE_PRICE && (<span className="line-through">{datesPricing.tuition.originalPrice}</span>)}
+                            {SHOW_COMPARE_PRICE && datesPricing.tuition.originalPrice && datesPricing.tuition.originalPrice !== datesPricing.tuition.price && (<span className="line-through">{datesPricing.tuition.originalPrice}</span>)}
                             <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
                           </p>)}
                         </div>
@@ -2245,7 +2241,7 @@ export default function CoursePageTemplate({
                             {datesPricing.triple.price}
                           </p>
                           {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                            {SHOW_COMPARE_PRICE && (<span className="line-through">{datesPricing.triple.originalPrice}</span>)}
+                            {SHOW_COMPARE_PRICE && datesPricing.triple.originalPrice && datesPricing.triple.originalPrice !== datesPricing.triple.price && (<span className="line-through">{datesPricing.triple.originalPrice}</span>)}
                             <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
                           </p>)}
                         </div>
@@ -2259,7 +2255,7 @@ export default function CoursePageTemplate({
                             {datesPricing.double.price}
                           </p>
                           {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                            {SHOW_COMPARE_PRICE && (<span className="line-through">{datesPricing.double.originalPrice}</span>)}
+                            {SHOW_COMPARE_PRICE && datesPricing.double.originalPrice && datesPricing.double.originalPrice !== datesPricing.double.price && (<span className="line-through">{datesPricing.double.originalPrice}</span>)}
                             <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
                           </p>)}
                         </div>
@@ -2273,7 +2269,7 @@ export default function CoursePageTemplate({
                             {datesPricing.private.price}
                           </p>
                           {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                            {SHOW_COMPARE_PRICE && (<span className="line-through">{datesPricing.private.originalPrice}</span>)}
+                            {SHOW_COMPARE_PRICE && datesPricing.private.originalPrice && datesPricing.private.originalPrice !== datesPricing.private.price && (<span className="line-through">{datesPricing.private.originalPrice}</span>)}
                             <span className="ml-2 text-green-600 font-semibold">({t("pricing.saveUSD")})</span>
                           </p>)}
                         </div>

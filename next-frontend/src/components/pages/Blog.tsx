@@ -11,6 +11,14 @@ const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 
 const blogPosts = [
   {
+    title: "Yoga Instructor Certification in Bali: The Complete 2027 Guide",
+    excerpt: "How to get a yoga instructor certification in Bali: RYT 200 rules, real costs, visas, where to train and how to choose a school. Updated for 2027.",
+    date: "January 25, 2027",
+    image: "/images/blogs/yoga-instructor-certification-bali-poster.png",
+    slug: "yoga-instructor-certification-bali",
+    imageAlt: "Students practising yoga in an open-air shala in Bali during a yoga instructor certification course"
+  },
+  {
     title: "Benefits of Yoga Teacher Training in Bali",
     excerpt: "Discover why Bali has become the world's premier destination for yoga teacher training and how it can transform your practice.",
     date: "January 5, 2025",
@@ -100,7 +108,7 @@ export default function Blog({ locale: propLocale }: BlogProps) {
                 <div className="relative h-56 overflow-hidden">
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={(post as any).imageAlt || post.title}
                     fill sizes="(max-width: 768px) 100vw, 33vw" 
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />

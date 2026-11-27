@@ -14,6 +14,291 @@ const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 
 const blogPosts = [
   {
+    title: "Yoga Instructor Certification in Bali: 2027 Guide",
+    h1Title: "Yoga Instructor Certification in Bali: The Complete 2027 Guide",
+    excerpt: "How to get a yoga instructor certification in Bali: RYT 200 rules, real costs, visas, where to train and how to choose a school. Updated for 2027.",
+    date: "January 25, 2027",
+    image: "/images/blogs/yoga-instructor-certification-bali-poster.png",
+    imageAlt: "Students practising yoga in an open-air shala in Bali during a yoga instructor certification course",
+    slug: "yoga-instructor-certification-bali",
+    faqSchema: [
+      {
+        "@type": "Question",
+        "name": "How long does it take to get a yoga instructor certification in Bali?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A 200-hour training in Bali usually takes 3–4 weeks of full-time study. Yogagarhi's Bali course runs 24 Days / 23 Nights."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to be advanced to do yoga teacher training?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. You don't need to do advanced poses. Most schools recommend at least six months to a year of regular practice and a real interest in learning. The training is designed to build your practice and your teaching skills from the ground up."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Yoga Alliance certification required to teach yoga in the US?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It isn't a legal requirement, but most US studios and gyms prefer or require teachers with RYT 200 or a 200-hour certificate from a registered school."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I start teaching straight after a 200-hour course?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A 200-hour certificate is the standard qualification to teach general classes. Many new teachers start with community classes, gyms or private sessions while they build experience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost in total to get certified in Bali?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Course fees are usually US$1,600–4,000. Add flights, visa (about US$30), insurance, Bali's tourist levy and $115 for first-year Yoga Alliance registration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I do a yoga teacher training on a Visa on Arrival?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most students use the 30-day Visa on Arrival, which covers a typical 200-hour course and can be extended once. Rules depend on your nationality and change often, so always confirm on the official Indonesian immigration portal before you travel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between a 200-hour and a 300-hour certification?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "200 hours is the foundation level for new teachers. 300 hours is advanced training for people who already hold a 200-hour certificate. Completing both is the path towards RYT 500."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I train in Bali or India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both are excellent. Bali offers a tropical, nature-focused setting. India (for example Rishikesh) offers yoga's traditional roots on the banks of the Ganges, usually at a lower price. Yogagarhi runs trainings in both, so you can compare the Rishikesh course and choose what suits you."
+        }
+      }
+    ],
+    content: `
+Getting your **yoga instructor certification in Bali** is one of the most popular ways to start teaching yoga, and it's easy to see why. You train for three to four weeks on an island where yoga, temples and daily ritual are part of everyday life, and you fly home with a certificate that studios around the world recognise.
+
+But "certification" can mean different things depending on the school, and prices, visas and course quality vary a lot. This guide explains what a yoga certification in Bali actually gives you, how the Yoga Alliance system works, what it really costs, and how to pick a school you can trust.
+
+> **Quick answer**
+> - The standard entry-level qualification is a **200-hour yoga teacher training** with a Yoga Alliance Registered Yoga School (RYS 200).
+> - After graduating you can register as an **RYT 200** with Yoga Alliance: a $50 one-time application fee plus $65 per year.
+> - Most 200-hour trainings in Bali take **3–4 weeks** and cost roughly **US$1,600–4,000**, depending on the school and room type.
+> - Most nationalities can enter on a **30-day Visa on Arrival**, which can be extended once.
+
+---
+
+## What "Yoga Instructor Certification" Actually Means
+
+There are two separate things people mean when they say "certified yoga instructor":
+
+1. **Your school's certificate.** When you finish a teacher training, the school assesses you and issues a certificate (for example, a 200-hour certificate). This is your actual qualification.
+2. **Yoga Alliance registration.** [Yoga Alliance](https://www.yogaalliance.org/) is a US-based non-profit that keeps a public registry of schools and teachers. It is not a government body and registration is voluntary, but it's the credential most studios, gyms and retreat centres look for, especially in the USA, Canada, Europe and Australia.
+
+If your school is a **Registered Yoga School (RYS 200)**, you can use your certificate to apply for the **RYT 200** (Registered Yoga Teacher) credential. One important rule: all 200 hours must come from the same registered school. You can't combine two shorter courses from different schools to reach 200 hours.
+
+So when you compare schools in Bali, the key question isn't "do you give a certificate?" (they all do). It's **"is this specific course registered with Yoga Alliance as an RYS 200?"**
+
+![Students resting in Savasana inside our tranquil, nature-surrounded yoga shala in Bali](/images/blogs/yoga-shala-savasana-bali.jpg)
+
+---
+
+## How to Become a Certified Yoga Instructor in Bali (Step by Step)
+
+### Step 1: Choose your level
+
+- **100 hours:** a foundation course to deepen your own practice. It does not qualify you for RYT 200 on its own. See our [100 hour yoga teacher training in Bali](/100-hour-yoga-teacher-training-in-bali).
+- **200 hours:** the standard qualification to start teaching. This is where most people begin.
+- **300 hours:** advanced training for people who have already completed a 200-hour course. Together, 200 + 300 hours is the route towards RYT 500. See our [300 hour yoga teacher training in Bali](/300-hour-yoga-teacher-training-in-bali).
+
+### Step 2: Shortlist registered schools
+
+Search the school's name in the [Yoga Alliance directory](https://www.yogaalliance.org/). Check that the exact course you want (for example "200-hour") is listed, not just the school name.
+
+### Step 3: Compare the curriculum
+
+A Yoga Alliance 200-hour course follows a set core curriculum (see the table below). Ask each school for a syllabus that shows how many hours go to each area.
+
+### Step 4: Book, sort your visa and travel
+
+Reserve your place, check visa rules for your passport (more on this below) and plan to arrive a day or two early to get over jet lag.
+
+### Step 5: Complete the training and assessments
+
+Expect daily practice, theory classes, practice teaching and a final assessment. You only receive your certificate when you pass.
+
+### Step 6: Register with Yoga Alliance (optional)
+
+Create an account on the Yoga Alliance website, link your school, and pay the fees. First-year cost is **$115** ($50 application + $65 annual membership). To stay registered you renew every year and complete continuing education every three years.
+
+---
+
+## What You'll Study: The 200-Hour Curriculum
+
+Under Yoga Alliance's current RYS 200 standards, every registered 200-hour course covers four core areas:
+
+| Area | Minimum hours | What it includes |
+|---|---|---|
+| Techniques, Training & Practice | 75 | Asana, pranayama, subtle body, meditation |
+| Anatomy & Physiology | 30 | Body systems, biomechanics, safe alignment |
+| Yoga Humanities | 30 | History, philosophy (e.g. Yoga Sutras), ethics |
+| Professional Essentials | 50 | Teaching methodology, practice teaching, business basics |
+| School's own emphasis | 15 | Extra hours in the school's style or specialty |
+| **Total** | **200** | |
+
+Up to 40 of the 200 hours may be delivered online under the current rules. In a residential Bali training, almost everything is taught in person.
+
+![Lead teacher Yogacharya Sachin providing precise hands-on alignment and posture correction during yoga teacher training in Bali](/images/blogs/hands-on-yoga-alignment-training-bali.jpg)
+
+---
+
+## How Much Does Yoga Certification in Bali Cost?
+
+Most 200-hour trainings in Bali fall roughly between **US$1,600 and US$4,000**. Boutique programs with private villas can go higher. The price usually depends on:
+
+- **Room type:** shared rooms are cheapest, private rooms cost more.
+- **What's included:** meals, accommodation, airport pickup, manual, excursions.
+- **Group size and teacher experience:** small groups with senior teachers cost more.
+
+**Other costs to budget for:**
+
+- Flights to Denpasar (DPS)
+- Visa on Arrival: IDR 500,000 (about US$30), plus the same again if you extend
+- Bali's tourist levy, paid once per visit
+- Travel insurance
+- Yoga Alliance registration after you graduate: $115 in the first year
+
+At Yogagarhi, our [200 hour yoga teacher training in Bali](/200-hour-yoga-teacher-training-in-bali) starts from **$1,750** for 24 Days / 23 Nights, with accommodation and meals included. We show one clear price per room type, with no hidden extras.
+
+---
+
+## Ubud, Canggu or Uluwatu: Where Should You Train?
+
+| Area | Best for | Feel |
+|---|---|---|
+| **Ubud** | Traditional, spiritual focus | Jungle, rice terraces, temples, Bali's cultural heart |
+| **Canggu** | Social atmosphere, beach life | Surf town with cafés and a busy nightlife |
+| **Uluwatu** | Ocean views, quieter days | Clifftop beaches, more spread out |
+
+If your main goal is to focus on your training, a calm area with fewer distractions makes a big difference. Our Bali trainings run in Ubud (Gianyar).
+
+---
+
+## Best Time of Year for Yoga Teacher Training in Bali
+
+Bali is warm all year (around 27–32°C), so you can train in any month. The main difference is rain:
+
+- **Dry season (roughly April–October):** sunnier days and the busiest time for trainings. Book early.
+- **Wet season (roughly November–March):** short, heavy tropical showers, often in the afternoon. Fewer tourists and greener landscapes.
+
+Most open-air shalas are covered, so rain rarely interrupts practice.
+
+---
+
+## Visa Basics for Yoga Students in Bali
+
+Most nationalities, including the US, UK, Canada, Australia and EU countries, can enter Indonesia on a **Visa on Arrival (VoA)** or apply online for an **e-VoA**.
+
+- It allows a **30-day stay**, which is enough for most 200-hour trainings.
+- It can be **extended once for another 30 days**, for a maximum of 60 days. Several sources report that extensions now require a visit to an immigration office, so allow time for this if your stay is longer than 30 days.
+- Your passport should be valid for at least six months, and you may be asked for a return or onward ticket.
+
+Visa rules change often and depend on your passport. Always check the latest rules on the official Indonesian immigration portal ([evisa.imigrasi.go.id](https://evisa.imigrasi.go.id/)) before you book flights.
+
+---
+
+## How to Choose the Right Yoga School in Bali: 8-Point Checklist
+
+1. **Registered course:** the exact course is listed as an RYS 200 in the Yoga Alliance directory.
+2. **Lead trainer credentials:** under Yoga Alliance rules, the lead trainer of an RYS 200 must hold the E-RYT 500 credential. Ask who that is.
+3. **Clear syllabus:** hours are shown for each curriculum area.
+4. **Group size:** smaller groups (around 10–20) mean more personal feedback.
+5. **Practice teaching:** you teach real classes during the course, not just theory.
+6. **Transparent pricing:** one clear price, with what's included spelled out.
+7. **Real reviews:** read reviews on Google and Yoga Alliance, not just on the school's site.
+8. **Fair policies:** a written deposit, refund and transfer policy.
+
+---
+
+## A Typical Day During a Yoga Teacher Training in Bali
+
+| Time | Session |
+|---|---|
+| 6:30 – 7:00 | Meditation or pranayama |
+| 7:00 – 8:45 | Morning asana practice |
+| 9:00 – 10:00 | Breakfast |
+| 10:00 – 12:30 | Philosophy / anatomy |
+| 12:30 – 14:30 | Lunch and rest |
+| 14:30 – 16:30 | Teaching methodology and practice teaching |
+| 16:30 – 18:00 | Evening practice (yin, restorative or alignment) |
+| 19:00 | Dinner |
+
+Most trainings have one day off per week. Students often use it to visit rice terraces, waterfalls or temples.
+
+![Wholesome breakfast and fresh tropical fruits enjoyed outdoors overlooking the Balinese greenery](/images/blogs/sattvic-breakfast-dining-bali-yttc.jpg)
+
+---
+
+## Is a Bali Yoga Certification Recognised in the USA?
+
+Yes, as long as you trained with a Yoga Alliance Registered Yoga School. In the US there's no legal licence required to teach yoga, but most studios and gyms ask for RYT 200 (or at least a 200-hour certificate from a registered school). Many also ask for liability insurance and CPR/first aid.
+
+Yoga Alliance has announced changes to its credential system. Before you apply, check [yogaalliance.org](https://www.yogaalliance.org/) for the latest requirements.
+
+---
+
+## Train With Yogagarhi in Bali
+
+Yogagarhi's [yoga teacher training in Bali](/200-hour-yoga-teacher-training-in-bali) is built for people who want a solid, traditional foundation and the confidence to teach from day one. You get daily practice, small groups, real practice teaching and support after you graduate.
+
+Our 200-hour Bali course is registered with Yoga Alliance, so graduates can apply for RYT 200.
+
+- See dates, curriculum and room prices on the [Bali 200 hour course page](/200-hour-yoga-teacher-training-in-bali)
+- Not sure about Bali? Compare it with our [200 hour yoga teacher training in Rishikesh, India](/200-hour-yoga-teacher-training-in-rishikesh)
+- Ready to join? [Apply now](/apply-now)
+
+---
+
+## Frequently Asked Questions
+
+### How long does it take to get a yoga instructor certification in Bali?
+A 200-hour training in Bali usually takes 3–4 weeks of full-time study. Yogagarhi's Bali course runs 24 Days / 23 Nights.
+
+### Do I need to be advanced to do yoga teacher training?
+No. You don't need to do advanced poses. Most schools recommend at least six months to a year of regular practice and a real interest in learning. The training is designed to build your practice and your teaching skills from the ground up.
+
+### Is Yoga Alliance certification required to teach yoga in the US?
+It isn't a legal requirement, but most US studios and gyms prefer or require teachers with RYT 200 or a 200-hour certificate from a registered school.
+
+### Can I start teaching straight after a 200-hour course?
+Yes. A 200-hour certificate is the standard qualification to teach general classes. Many new teachers start with community classes, gyms or private sessions while they build experience.
+
+### How much does it cost in total to get certified in Bali?
+Course fees are usually US$1,600–4,000. Add flights, visa (about US$30), insurance, Bali's tourist levy and $115 for first-year Yoga Alliance registration.
+
+### Can I do a yoga teacher training on a Visa on Arrival?
+Most students use the 30-day Visa on Arrival, which covers a typical 200-hour course and can be extended once. Rules depend on your nationality and change often, so always confirm on the official Indonesian immigration portal before you travel.
+
+### What's the difference between a 200-hour and a 300-hour certification?
+200 hours is the foundation level for new teachers. 300 hours is advanced training for people who already hold a 200-hour certificate. Completing both is the path towards RYT 500.
+
+### Should I train in Bali or India?
+Both are excellent. Bali offers a tropical, nature-focused setting. India (for example Rishikesh) offers yoga's traditional roots on the banks of the Ganges, usually at a lower price. Yogagarhi runs trainings in both, so you can [compare the Rishikesh course](/200-hour-yoga-teacher-training-in-rishikesh) and choose what suits you.
+`
+  },
+  {
     title: "Benefits of Yoga Teacher Training in Bali",
     excerpt: "Discover why Bali has become the world's premier destination for yoga teacher training and how it can transform your practice.",
     date: "January 5, 2025",
@@ -511,14 +796,16 @@ export default function BlogPost() {
   const headings = React.useMemo(() => {
     if (!post?.content) return [];
     const lines = post.content.split('\n');
-    const items: { text: string; id: string; level: number }[] = [];
+    const items: { text: string; id: string; level: number; sectionNum?: number }[] = [];
+    let h2Counter = 0;
     lines.forEach((line) => {
       const h2Match = line.match(/^##\s+(.+)$/);
       const h3Match = line.match(/^###\s+(.+)$/);
       if (h2Match) {
+        h2Counter += 1;
         const text = h2Match[1].replace(/[*_~`]/g, '').trim();
         const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-        items.push({ text, id, level: 2 });
+        items.push({ text, id, level: 2, sectionNum: h2Counter });
       } else if (h3Match) {
         const text = h3Match[1].replace(/[*_~`]/g, '').trim();
         const id = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -529,6 +816,12 @@ export default function BlogPost() {
   }, [post?.content]);
 
   const keyTakeawaysMap: Record<string, string[]> = {
+    "yoga-instructor-certification-bali": [
+      "Standard entry-level qualification is a 200-hour yoga teacher training with a Yoga Alliance RYS 200 registered school.",
+      "Graduates can register as an RYT 200 with Yoga Alliance for internationally recognised teaching credentials.",
+      "Course fees in Bali typically range from US$1,600 to $4,000, with YogaGarhi starting at $1,750 all-inclusive.",
+      "Most nationalities can enter Indonesia on a 30-day Visa on Arrival (VoA / e-VoA), extendable for up to 60 days."
+    ],
     "benefits-yttc-bali": [
       "Bali blends authentic Himalayan lineage with serene natural surroundings, creating an ideal setting for deep spiritual immersion.",
       "Comprehensive multi-style curriculum covers Classical Hatha, Vinyasa Flow, Ashtanga Primary Series, and Iyengar alignment.",
@@ -579,7 +872,7 @@ export default function BlogPost() {
             "author": {
               "@type": "Person",
               "name": "Yogacharya Sachin",
-              "jobTitle": "Lead Yoga Master & Founder",
+              "jobTitle": "Lead Yoga Master & Founder, E-RYT 500",
               "url": "https://www.yogagarhi.com/teachers",
               "knowsAbout": ["Hatha Yoga", "Ashtanga Vinyasa", "Pranayama", "Patanjali Yoga Sutras"]
             },
@@ -635,6 +928,18 @@ export default function BlogPost() {
           })
         }}
       />
+      {(post as any).faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": (post as any).faqSchema
+            })
+          }}
+        />
+      )}
 
       {/* Blog Article Hero */}
       <section className="relative py-20 lg:py-28 overflow-hidden bg-secondary">
@@ -682,11 +987,11 @@ export default function BlogPost() {
             {post.h1Title || post.title}
           </h1>
 
-          <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-elevated mb-12 border border-border/40">
+          <div className="relative w-full aspect-[1200/630] rounded-3xl overflow-hidden shadow-elevated mb-12 border border-border/40 bg-muted">
             <Image
               src={post.image}
-              alt={post.title}
-              fill sizes="(max-width: 1024px) 100vw, 800px" 
+              alt={(post as any).imageAlt || post.title}
+              fill sizes="(max-width: 1024px) 100vw, 896px" 
               className="object-cover"
               priority
             />
@@ -727,7 +1032,7 @@ export default function BlogPost() {
                     }`}
                   >
                     <a href={`#${item.id}`} className="hover:underline underline-offset-2">
-                      {item.level === 2 ? `${idx + 1}. ` : "• "}
+                      {item.level === 2 ? `${item.sectionNum}. ` : "• "}
                       {item.text}
                     </a>
                   </li>
@@ -760,8 +1065,37 @@ export default function BlogPost() {
                       </h3>
                     );
                   },
-                  p: ({ node, ...props }) => (
-                    <p className="text-foreground/80 text-[1.05rem] md:text-lg leading-[1.85] mb-6 font-normal" {...props} />
+                  p: ({ node, children, ...props }) => {
+                    const hasImage = node?.children?.some(
+                      (child: any) => child.tagName === "img" || (child.type === "element" && child.tagName === "img")
+                    );
+                    if (hasImage) {
+                      return <div className="my-10">{children}</div>;
+                    }
+                    return (
+                      <p className="text-foreground/80 text-[1.05rem] md:text-lg leading-[1.85] mb-6 font-normal" {...props}>
+                        {children}
+                      </p>
+                    );
+                  },
+                  img: ({ node, src, alt, ...props }) => (
+                    <figure className="mx-auto max-w-lg">
+                      <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-elevated border border-border/50 bg-secondary/30">
+                        <Image
+                          src={typeof src === "string" ? src : ""}
+                          alt={alt || "Yoga teacher training in Bali"}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 512px"
+                          className="object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                      {alt && (
+                        <figcaption className="text-center text-xs sm:text-sm text-muted-foreground mt-3 italic px-4 leading-relaxed">
+                          {alt}
+                        </figcaption>
+                      )}
+                    </figure>
                   ),
                   ul: ({ node, ...props }) => (
                     <ul className="space-y-3 mb-6 text-foreground/80 text-[1.05rem] md:text-lg pl-6 list-disc marker:text-primary" {...props} />

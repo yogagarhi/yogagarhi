@@ -327,20 +327,6 @@
       "handsOnCategory": "Pengajaran",
       "handsOnTitle": "Penyesuaian Fisik & Sekuensing",
       "handsOnDesc": "Pelajari penyesuaian fisik yang aman, prinsip penjajaran cerdas, dan penyusunan sekuens kreatif untuk berbagai bentuk tubuh.",
-      "manifestoBadge": "Manifesto Siswa",
-      "manifestoHeading": "Tidak berencana untuk mengajar? Sekolah ini justru diciptakan khusus untuk Anda.",
-      "manifestoQuote": "“Saya sebenarnya tidak berniat mengajar. Saya hanya ingin mendalami latihan saya.”",
-      "manifestoIntro": "Lebih dari separuh orang yang menulis kepada kami mengatakan hal ini, hampir seperti meminta maaf. Tolong jangan meminta maaf. Di India, yoga tidak pernah menjadi kursus kejuruan semata — yoga adalah jalan untuk memahami diri sendiri. Siswa selalu menjadi yang utama.",
-      "manifestoB1Title": "Anda Adalah Tradisi Itu:",
-      "manifestoB1Desc": "Selama ribuan tahun, orang-orang datang menemui guru karena satu alasan: penemuan jati diri.",
-      "manifestoB2Title": "Praktik Sebagai Prioritas Utama:",
-      "manifestoB2Desc": "Anda akan menghayati yoga sebagaimana mestinya: sadhana, pranayama, makanan murni, dan naskah suci.",
-      "manifestoB3Title": "Pemahaman Terdalam:",
-      "manifestoB3Desc": "Mampu menjelaskan postur adalah cara terbaik untuk memahaminya secara menyeluruh di tubuh Anda sendiri.",
-      "manifestoB4Title": "1 Tahun Dukungan Sadhana:",
-      "manifestoB4Desc": "Mentoring diperuntukkan bagi semua praktisi, bukan hanya guru. Kami mendukung sadhana harian Anda.",
-      "manifestoFooter": "Datanglah sebagai pembelajar. Pulanglah dengan pemahaman yang lebih dalam. Itu sudah lebih dari cukup.",
-      "manifestoPill": "Tanpa Tekanan • Tanpa Kadaluarsa",
       "seqBookBadge": "Termasuk",
       "seqBookCategory": "Sumber Daya",
       "seqBookTitle": "Buku 35+ Sekuens Kreatif",
@@ -1381,20 +1367,6 @@
     "handsOnCategory": "Pengajaran",
     "handsOnTitle": "Penyesuaian Fisik & Sekuensing",
     "handsOnDesc": "Pelajari penyesuaian fisik yang aman, prinsip penjajaran cerdas, dan penyusunan sekuens kreatif untuk berbagai bentuk tubuh.",
-    "manifestoBadge": "Manifesto Siswa",
-    "manifestoHeading": "Tidak berencana untuk mengajar? Sekolah ini justru diciptakan khusus untuk Anda.",
-    "manifestoQuote": "“Saya sebenarnya tidak berniat mengajar. Saya hanya ingin mendalami latihan saya.”",
-    "manifestoIntro": "Lebih dari separuh orang yang menulis kepada kami mengatakan hal ini, hampir seperti meminta maaf. Tolong jangan meminta maaf. Di India, yoga tidak pernah menjadi kursus kejuruan semata — yoga adalah jalan untuk memahami diri sendiri. Siswa selalu menjadi yang utama.",
-    "manifestoB1Title": "Anda Adalah Tradisi Itu:",
-    "manifestoB1Desc": "Selama ribuan tahun, orang-orang datang menemui guru karena satu alasan: penemuan jati diri.",
-    "manifestoB2Title": "Praktik Sebagai Prioritas Utama:",
-    "manifestoB2Desc": "Anda akan menghayati yoga sebagaimana mestinya: sadhana, pranayama, makanan murni, dan naskah suci.",
-    "manifestoB3Title": "Pemahaman Terdalam:",
-    "manifestoB3Desc": "Mampu menjelaskan postur adalah cara terbaik untuk memahaminya secara menyeluruh di tubuh Anda sendiri.",
-    "manifestoB4Title": "1 Tahun Dukungan Sadhana:",
-    "manifestoB4Desc": "Mentoring diperuntukkan bagi semua praktisi, bukan hanya guru. Kami mendukung sadhana harian Anda.",
-    "manifestoFooter": "Datanglah sebagai pembelajar. Pulanglah dengan pemahaman yang lebih dalam. Itu sudah lebih dari cukup.",
-    "manifestoPill": "Tanpa Tekanan • Tanpa Kadaluarsa",
     "seqBookBadge": "Termasuk",
     "seqBookCategory": "Sumber Daya",
     "seqBookTitle": "Buku 35+ Sekuens Kreatif",
@@ -2880,10 +2852,10 @@
       "levelVal": "Pemula hingga Menengah",
       "certification": "Sertifikasi",
       "certificationVal": "Sertifikat Yoga Alliance",
-      "startingFrom": "$1,149 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€900",
+      "startingFromVal": "€900",
       "save": "Hemat",
-      "earlyBirdDiscount": "Hemat $200 Diskon Early Bird"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "Grup kecil (maks 8–10)",
@@ -2917,9 +2889,9 @@
       "p4Highlight": "Kembali Tanpa Biaya",
       "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
       "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
-      "saveEarlyBird": "Hemat $300 Diskon Early Bird",
-      "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
-      "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
+      "saveEarlyBird": "",
+      "tuitionFrom": "Hanya biaya kursus mulai €900 | Residensial mulai €900",
+      "breakdown": "Hanya kursus: €900 • Kamar bertiga: €900 • Kamar berdua: €900 • Kamar pribadi: €900",
       "checkAvailability": "Cek Ketersediaan",
       "bookFreeCall": "Pesan Panggilan Video Gratis"
     },
@@ -3017,16 +2989,16 @@
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
       "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
-      "earlyBird": "Diskon Early Bird",
-      "save300": "Hemat $300 USD",
-      "earlyBirdPrice": "Harga Early Bird",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "Pilihan Kamar & Biaya (100 Jam Rishikesh)",
-      "tripleSharing": "Kamar Berbagi Bertiga ($1.149)",
-      "doubleSharing": "Kamar Berbagi Berdua ($1.349)",
-      "privateRoom": "Kamar Privat ($1.649)",
+      "tripleSharing": "Kamar Berbagi Bertiga (€900)",
+      "doubleSharing": "Kamar Berbagi Berdua (€900)",
+      "privateRoom": "Kamar Privat (€900)",
       "choosePackage": "Pilih Paket Anda",
       "reserveSpot": "Amankan Tempat Anda",
-      "saveUSD": "Hemat $300 USD",
+      "saveUSD": "",
       "residentialDuration": "Pelatihan yoga residensial 12 hari di Rishikesh, India"
     },
     "ethics": {
@@ -3045,7 +3017,7 @@
     "faqs": [
       {
         "question": "What is the cost of the 100-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh starts from $599 for tuition-only, $799 for a shared quad room, $999 for a double room, and $1,199 for a private room with attached private bath. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
+        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh is €900. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
       },
       {
         "question": "Is the 100-Hour course suitable for beginners?",
@@ -3259,8 +3231,8 @@
       "doubleDesc": "Kamar ber-AC untuk dua orang dengan kamar mandi dan pemandangan asri.",
       "private": "Kamar Pribadi Deluxe",
       "privateDesc": "Kamar tunggal ber-AC dengan kasur king, kamar mandi dalam, dan teras pribadi.",
-      "earlyBird": "Diskon Early Bird",
-      "save300": "Hemat $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "Ingin Melihat Sekolah Sebelum Mendaftar?",
@@ -3587,22 +3559,22 @@
     "metaTitle": "Pelatihan Guru Yoga 200 Jam di Rishikesh | RYT 200 India",
     "metaDesc": "Kuasai yoga autentik dengan pelatihan 200 jam di Rishikesh. Kursus residensial bersertifikat Yoga Alliance RYT 200 di tepi Sungai Gangga.",
     "heroTitle": "Pelatihan Guru Yoga 200 Jam di Rishikesh",
-    "heroSub": "Pelatihan residensial 24 hari bersertifikasi Yoga Alliance RYT 200 di Ibu Kota Yoga Dunia. Ashram Sungai Gangga mulai $999 USD.",
+    "heroSub": "Pelatihan residensial 22 hari bersertifikasi Yoga Alliance RYT 200 di Ibu Kota Yoga Dunia. Ashram Sungai Gangga mulai €1550.",
     "quickInfo": {
       "course": "Kursus",
       "courseVal": "YTTC 200 Jam Rishikesh",
       "duration": "Durasi",
-      "durationVal": "24 Days",
+      "durationVal": "22 Days / 21 Nights",
       "style": "Gaya",
       "styleVal": "Yoga Multi-Style",
       "level": "Tingkat",
       "levelVal": "Pemula hingga Menengah",
       "certification": "Sertifikasi",
       "certificationVal": "Sertifikasi Yoga Alliance RYT 200",
-      "startingFrom": "$999 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€1550",
+      "startingFromVal": "€1550",
       "save": "Hemat",
-      "earlyBirdDiscount": "Hemat $300 Diskon Early Bird"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "Grup kecil (maks 8–10)",
@@ -3616,7 +3588,7 @@
     },
     "storyTitle": "Ubah Latihan Anda Menjadi Kebijaksanaan Hidup",
     "storyP1": "Pelatihan Guru Yoga 200 Jam kami di Bali adalah imersi residensial penuh bagi para praktisi yang mendambakan kedalaman autentik, bukan sekadar olahraga fisik mekanis. Terletak di desa Gianyar yang asri, hanya 15 menit dari Ubud, YogaGarhi menghadirkan tempat peristirahatan damai yang jauh dari keramaian.",
-    "storyP2": "Selama 24 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
+    "storyP2": "Selama 22 hari, Anda akan mempelajari Hatha klasik, Vinyasa Flow, Ashtanga Primary Series, dan penjajaran Iyengar bersama anatomi terapan, filosofi, pranayama, dan meditasi. Dengan kapasitas dibatasi ketat 8–10 siswa, para master Himalaya kami memberikan bimbingan yang dekat dan tulus bagi setiap peserta.",
     "watchVideoStories": "Tonton video cerita dan testimoni siswa",
     "videoBannerTitle": "Jadwalkan panggilan. Lihat sekolah. Lihat kamar Anda. Lihat aula yoga.",
     "whyYogaGarhiBox": {
@@ -3635,10 +3607,10 @@
       "p4Title": "Mengulang Kursus Gratis Seumur Hidup",
       "p4Highlight": "Kembali Tanpa Biaya",
       "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
-      "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
-      "saveEarlyBird": "Hemat $300 Diskon Early Bird",
-      "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
-      "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
+      "pkgBadge": "Paket Residensial (22 Hari / 21 Malam) & Opsi Hanya Biaya Kursus",
+      "saveEarlyBird": "",
+      "tuitionFrom": "Hanya biaya kursus mulai €1550 | Residensial mulai €2000",
+      "breakdown": "Hanya kursus: €1550 • Kamar bertiga: €1550 • Kamar berdua: €1550 • Kamar pribadi: €2000",
       "checkAvailability": "Cek Ketersediaan",
       "bookFreeCall": "Pesan Panggilan Video Gratis"
     },
@@ -3756,7 +3728,7 @@
     "inclusions": {
       "heading": "Apa yang Termasuk dalam Pelatihan Anda",
       "sub": "Semua fasilitas disiapkan untuk memastikan masa tinggal yang tenang dan transformatif.",
-      "incAccom": "Akomodasi ashram selama 23 malam",
+      "incAccom": "Akomodasi ashram selama 21 malam",
       "incMeals": "3 kali makan bergizi sattvik (vegetarian/vegan) segar setiap hari",
       "incCert": "Sertifikat Yoga Alliance RYT 200 setelah kelulusan",
       "incManuals": "Buku panduan kursus resmi, buku catatan, dan bahan ajar",
@@ -3774,7 +3746,7 @@
     "pricing": {
       "heading": "Paket Akomodasi & Harga",
       "sub": "Harga transparan dan all-inclusive tanpa ada biaya tersembunyi.",
-      "tuitionOnly": "Hanya Kursus ($999)",
+      "tuitionOnly": "Hanya Kursus (€1550)",
       "tuitionOnlyDesc": "Biaya kursus, semua makanan, materi belajar, dan sertifikat. Tinggal di luar ashram.",
       "triple": "Kamar Bertiga (Triple)",
       "tripleDesc": "Kamar ber-AC luas dibagi bersama dua rekan siswa, kamar mandi dalam, balkon pribadi.",
@@ -3782,17 +3754,17 @@
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
       "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
-      "earlyBird": "Diskon Early Bird",
-      "save300": "Hemat $300 USD",
-      "earlyBirdPrice": "Harga Early Bird",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "Pilihan Kamar & Biaya (200 Jam Rishikesh)",
-      "tripleSharing": "Kamar Berbagi Bertiga ($1.750)",
-      "doubleSharing": "Kamar Berbagi Berdua ($1.899)",
-      "privateRoom": "Kamar Privat ($2.499)",
+      "tripleSharing": "Kamar Berbagi Bertiga (€1550)",
+      "doubleSharing": "Kamar Berbagi Berdua (€1550)",
+      "privateRoom": "Kamar Privat (€2000)",
       "choosePackage": "Pilih Paket Anda",
       "reserveSpot": "Amankan Tempat Anda",
-      "saveUSD": "Hemat $300 USD",
-      "residentialDuration": "Pelatihan yoga residensial 24 hari di Rishikesh, India"
+      "saveUSD": "",
+      "residentialDuration": "Pelatihan yoga residensial 22 hari / 21 malam di Rishikesh, India"
     },
     "ethics": {
       "codeOfConduct": "Kode Etik",
@@ -3810,7 +3782,7 @@
     "faqs": [
       {
         "question": "What is the cost of 200-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh starts from $999 for tuition-only, $1,299 for a shared quad room, $1,499 for a twin-sharing double room, and $1,799 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
+        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh is €1,550 for double / shared occupancy and €2,000 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
       },
       {
         "question": "Is Rishikesh good for yoga teacher training?",
@@ -4041,8 +4013,8 @@
       "doubleDesc": "Kamar ber-AC untuk dua orang dengan kamar mandi dan pemandangan asri.",
       "private": "Kamar Pribadi Deluxe",
       "privateDesc": "Kamar tunggal ber-AC dengan kasur king, kamar mandi dalam, dan teras pribadi.",
-      "earlyBird": "Diskon Early Bird",
-      "save300": "Hemat $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "Ingin Melihat Sekolah Sebelum Mendaftar?",
@@ -5673,7 +5645,7 @@
       "startingFrom": "$999 USD",
       "startingFromVal": "$999 USD",
       "save": "Hemat",
-      "earlyBirdDiscount": "Hemat $300 Diskon Early Bird"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "Grup kecil (maks 8–10)",
@@ -5707,7 +5679,7 @@
       "p4Highlight": "Kembali Tanpa Biaya",
       "p4Desc": "Kembalilah ke pelatihan guru YogaGarhi mendatang kapan saja tanpa biaya kursus untuk menyegarkan ilmu atau menjadi asisten.",
       "pkgBadge": "Paket Residensial (24 Hari / 23 Malam) & Opsi Hanya Biaya Kursus",
-      "saveEarlyBird": "Hemat $300 Diskon Early Bird",
+      "saveEarlyBird": "",
       "tuitionFrom": "Hanya biaya kursus mulai $999 USD | Residensial mulai $1,750 USD",
       "breakdown": "Hanya kursus: $999 • Kamar bertiga: $1,750 • Kamar berdua: $1,899 • Kamar pribadi: $2,499",
       "checkAvailability": "Cek Ketersediaan",
@@ -5853,16 +5825,16 @@
       "doubleDesc": "Kamar nyaman bersama satu rekan, kamar mandi dalam, AC, pemandangan taman/kolam.",
       "private": "Kamar Pribadi Deluxe",
       "privateDesc": "Kamar pribadi dengan kasur king/queen, kamar mandi dalam, AC, dan balkon eksklusif.",
-      "earlyBird": "Diskon Early Bird",
-      "save300": "Hemat $300 USD",
-      "earlyBirdPrice": "Harga Early Bird",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "Pilihan Kamar & Biaya (200 Jam Rishikesh)",
       "tripleSharing": "Kamar Berbagi Bertiga ($1.750)",
       "doubleSharing": "Kamar Berbagi Berdua ($1.899)",
       "privateRoom": "Kamar Privat ($2.499)",
       "choosePackage": "Pilih Paket Anda",
       "reserveSpot": "Amankan Tempat Anda",
-      "saveUSD": "Hemat $300 USD",
+      "saveUSD": "",
       "residentialDuration": "Pelatihan yoga residensial 24 hari di Rishikesh, India"
     },
     "ethics": {
@@ -6112,8 +6084,8 @@
       "doubleDesc": "Kamar ber-AC untuk dua orang dengan kamar mandi dan pemandangan asri.",
       "private": "Kamar Pribadi Deluxe",
       "privateDesc": "Kamar tunggal ber-AC dengan kasur king, kamar mandi dalam, dan teras pribadi.",
-      "earlyBird": "Diskon Early Bird",
-      "save300": "Hemat $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "Ingin Melihat Sekolah Sebelum Mendaftar?",

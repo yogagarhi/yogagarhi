@@ -327,20 +327,6 @@
       "handsOnCategory": "ティーチング",
       "handsOnTitle": "ハンズオンアジャストメント ＆ シークエンス",
       "handsOnDesc": "安全な身体の補助法、解剖学的なアライメント原則、個々の体格に合わせた柔軟なシークエンス構成を学びます。",
-      "manifestoBadge": "受講生へのマニフェスト",
-      "manifestoHeading": "教える予定がなくても大丈夫。まさにあなたのために作られた学校です。",
-      "manifestoQuote": "「指導者になりたいわけではなく、ただ自分のヨガを深めたいのです。」",
-      "manifestoIntro": "お問い合わせいただく方の半数以上が、少し申し訳なさそうにこう仰います。どうぞ謝らないでください。本来インドにおいて、ヨガは就職のための講座ではなく、自己を深く知るための道でした。いつの時代も、まず生徒自身の成長が最優先です。",
-      "manifestoB1Title": "あなた自身が伝統です：",
-      "manifestoB1Desc": "何千年もの間、人々が一人の師のもとを訪れた理由はただ一つ、自己探求のためでした。",
-      "manifestoB2Title": "実践を何よりも大切に：",
-      "manifestoB2Desc": "sadhana、pranayama、純粋な食事、原典の教えなど、ヨガのあるべき姿を丸ごと体感します。",
-      "manifestoB3Title": "最も深い学び：",
-      "manifestoB3Desc": "ポーズの意図を他人に説明できるようになることは、自らの身体で深く理解するための最良の道です。",
-      "manifestoB4Title": "1年間の練習サポート：",
-      "manifestoB4Desc": "メンターシップは講師のためだけのものではありません。日々の実践を長くサポートします。",
-      "manifestoFooter": "一人の生徒として参加し、より深い探求者として日常へ帰る。それだけで充分なのです。",
-      "manifestoPill": "プレッシャーなし • 期限なし",
       "seqBookBadge": "特典",
       "seqBookCategory": "教材",
       "seqBookTitle": "35以上の実践シークエンス解説書",
@@ -1381,20 +1367,6 @@
     "handsOnCategory": "ティーチング",
     "handsOnTitle": "ハンズオンアジャストメント ＆ シークエンス",
     "handsOnDesc": "安全な身体の補助法、解剖学的なアライメント原則、個々の体格に合わせた柔軟なシークエンス構成を学びます。",
-    "manifestoBadge": "受講生へのマニフェスト",
-    "manifestoHeading": "教える予定がなくても大丈夫。まさにあなたのために作られた学校です。",
-    "manifestoQuote": "「指導者になりたいわけではなく、ただ自分のヨガを深めたいのです。」",
-    "manifestoIntro": "お問い合わせいただく方の半数以上が、少し申し訳なさそうにこう仰います。どうぞ謝らないでください。本来インドにおいて、ヨガは就職のための講座ではなく、自己を深く知るための道でした。いつの時代も、まず生徒自身の成長が最優先です。",
-    "manifestoB1Title": "あなた自身が伝統です：",
-    "manifestoB1Desc": "何千年もの間、人々が一人の師のもとを訪れた理由はただ一つ、自己探求のためでした。",
-    "manifestoB2Title": "実践を何よりも大切に：",
-    "manifestoB2Desc": "sadhana、pranayama、純粋な食事、原典の教えなど、ヨガのあるべき姿を丸ごと体感します。",
-    "manifestoB3Title": "最も深い学び：",
-    "manifestoB3Desc": "ポーズの意図を他人に説明できるようになることは、自らの身体で深く理解するための最良の道です。",
-    "manifestoB4Title": "1年間の練習サポート：",
-    "manifestoB4Desc": "メンターシップは講師のためだけのものではありません。日々の実践を長くサポートします。",
-    "manifestoFooter": "一人の生徒として参加し、より深い探求者として日常へ帰る。それだけで充分なのです。",
-    "manifestoPill": "プレッシャーなし • 期限なし",
     "seqBookBadge": "特典",
     "seqBookCategory": "教材",
     "seqBookTitle": "35以上の実践シークエンス解説書",
@@ -2880,10 +2852,10 @@
       "levelVal": "初心者〜中級者",
       "certification": "取得資格",
       "certificationVal": "Yoga Alliance 修了認定証",
-      "startingFrom": "$1,149 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€900",
+      "startingFromVal": "€900",
       "save": "割引",
-      "earlyBirdDiscount": "早割で $200 お得"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "少人数制（最大8〜10名）",
@@ -2917,9 +2889,9 @@
       "p4Highlight": "いつでも戻れる場所",
       "p4Desc": "将来バリ島で開催されるコースに受講料無料で何度でも参加し、知識を再確認できます。",
       "pkgBadge": "宿泊パッケージ（24日間 / 23泊）＆ 受講のみプラン",
-      "saveEarlyBird": "早割で $300 お得",
-      "tuitionFrom": "受講のみ $999 USD〜 | 宿泊付き $1,750 USD〜",
-      "breakdown": "受講のみ：$999 • 3人部屋：$1,750 • 2人部屋：$1,899 • 個室：$2,499",
+      "saveEarlyBird": "",
+      "tuitionFrom": "受講のみ €900〜 | 宿泊付き €900〜",
+      "breakdown": "受講のみ：€900 • 3人部屋：€900 • 2人部屋：€900 • 個室：€900",
       "checkAvailability": "空き状況を確認する",
       "bookFreeCall": "無料ビデオ相談を予約する"
     },
@@ -3017,16 +2989,16 @@
       "doubleDesc": "快適な2名用のお部屋。専用バスルーム、エアコン、ガーデンまたはプールビュー付き。",
       "private": "デラックス個室",
       "privateDesc": "大型ベッド、専用バスルーム、エアコン、プライベートバルコニー完備の贅沢な個室。",
-      "earlyBird": "早割キャンペーン",
-      "save300": "$300 USD お得",
-      "earlyBirdPrice": "早割特別価格",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "受講料・宿泊プラン（リシケシ 100時間）",
-      "tripleSharing": "3人部屋（$1,149）",
-      "doubleSharing": "2人部屋（$1,349）",
-      "privateRoom": "個室（$1,649）",
+      "tripleSharing": "3人部屋（€900）",
+      "doubleSharing": "2人部屋（€900）",
+      "privateRoom": "個室（€900）",
       "choosePackage": "プランを選択する",
       "reserveSpot": "予約を確定する",
-      "saveUSD": "$300 USD お得",
+      "saveUSD": "",
       "residentialDuration": "インド・リシケシ 12日間 合宿ヨガTTC"
     },
     "ethics": {
@@ -3045,7 +3017,7 @@
     "faqs": [
       {
         "question": "What is the cost of the 100-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh starts from $599 for tuition-only, $799 for a shared quad room, $999 for a double room, and $1,199 for a private room with attached private bath. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
+        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh is €900. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
       },
       {
         "question": "Is the 100-Hour course suitable for beginners?",
@@ -3259,8 +3231,8 @@
       "doubleDesc": "エアコン、専用バスルーム付きの快適な2人部屋。",
       "private": "デラックス個室",
       "privateDesc": "大型ベッド、エアコン、専用バスルーム完備の静かな個室。",
-      "earlyBird": "早割キャンペーン",
-      "save300": "$300 USD お得"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "ご予約前に学校の様子をご覧になりませんか？",
@@ -3587,22 +3559,22 @@
     "metaTitle": "リシケシ 200時間 ヨガ指導者養成コース | RYT 200 インド",
     "metaDesc": "リシケシでの200時間ヨガTTCで本物のヨガを極める。ガンジス川沿い合宿型 Yoga Alliance RYT 200 認定。今すぐ参加登録！",
     "heroTitle": "リシケシ 200時間 ヨガ指導者養成コース",
-    "heroSub": "ヨガの聖地リシケシでの24日間 Yoga Alliance RYT 200 認定合宿。ヒマラヤの系譜、ガンジス川アシュラム（$999 USD〜）。",
+    "heroSub": "ヨガの聖地リシケシでの22日間 Yoga Alliance RYT 200 認定合宿。ヒマラヤの系譜、ガンジス川アシュラム（€1550〜）。",
     "quickInfo": {
       "course": "コース",
       "courseVal": "リシケシ 200時間 ヨガTTC",
       "duration": "期間",
-      "durationVal": "24 Days",
+      "durationVal": "22 Days / 21 Nights",
       "style": "スタイル",
       "styleVal": "マルチスタイル・ヨガ",
       "level": "対象レベル",
       "levelVal": "初心者〜中級者",
       "certification": "取得資格",
       "certificationVal": "Yoga Alliance RYT 200 公式認定証",
-      "startingFrom": "$999 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€1550",
+      "startingFromVal": "€1550",
       "save": "割引",
-      "earlyBirdDiscount": "早割で $300 お得"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "少人数制（最大8〜10名）",
@@ -3616,7 +3588,7 @@
     },
     "storyTitle": "あなたの練習を生きた知恵へと昇華させる",
     "storyP1": "当校のバリ島200時間ヨガ指導者養成コースは、形だけのポーズではなく本物のヨガの深淵に触れたいと願う方のための滞在型集中プログラムです。ウブドから車でわずか15分のギャニャール村に位置し、喧騒を離れた穏やかな環境で学びに専念できます。",
-    "storyP2": "24日間をかけて、古典Hatha、Vinyasa Flow、Ashtangaプライマリーシリーズ、Iyengarのアライメントに加え、解剖学、ヨガ哲学、pranayama、瞑想を学びます。各クラス8〜10名に限定されているため、ヒマラヤ直系の熟練講師が個々の成長に寄り添って指導します。",
+    "storyP2": "22日間をかけて、古典Hatha、Vinyasa Flow、Ashtangaプライマリーシリーズ、Iyengarのアライメントに加え、解剖学、ヨガ哲学、pranayama、瞑想を学びます。各クラス8〜10名に限定されているため、ヒマラヤ直系の熟練講師が個々の成長に寄り添って指導します。",
     "watchVideoStories": "修了生たちの体験談動画を見る",
     "videoBannerTitle": "ビデオ相談を予約。学校を見る。お部屋を見る。ヨガホールを見る。",
     "whyYogaGarhiBox": {
@@ -3635,10 +3607,10 @@
       "p4Title": "受講料永久無料でコース再受講が可能",
       "p4Highlight": "いつでも戻れる場所",
       "p4Desc": "将来バリ島で開催されるコースに受講料無料で何度でも参加し、知識を再確認できます。",
-      "pkgBadge": "宿泊パッケージ（24日間 / 23泊）＆ 受講のみプラン",
-      "saveEarlyBird": "早割で $300 お得",
-      "tuitionFrom": "受講のみ $999 USD〜 | 宿泊付き $1,750 USD〜",
-      "breakdown": "受講のみ：$999 • 3人部屋：$1,750 • 2人部屋：$1,899 • 個室：$2,499",
+      "pkgBadge": "宿泊パッケージ（22日間 / 21泊）＆ 受講のみプラン",
+      "saveEarlyBird": "",
+      "tuitionFrom": "受講のみ €1550〜 | 宿泊付き €2000〜",
+      "breakdown": "受講のみ：€1550 • 3人部屋：€1550 • 2人部屋：€1550 • 個室：€2000",
       "checkAvailability": "空き状況を確認する",
       "bookFreeCall": "無料ビデオ相談を予約する"
     },
@@ -3756,7 +3728,7 @@
     "inclusions": {
       "heading": "コース料金に含まれるもの",
       "sub": "受講期間中、余計な心配なく学びに専念できるようすべてが整えられています。",
-      "incAccom": "アシュラム宿泊（23泊分）",
+      "incAccom": "アシュラム宿泊（21泊分）",
       "incMeals": "毎日のサットヴァ料理（ベジタリアン/ヴィーガン）3食",
       "incCert": "修了時の全米ヨガアライアンス RYT 200 認定証",
       "incManuals": "公式トレーニングテキスト・ノート・学習資料一式",
@@ -3774,7 +3746,7 @@
     "pricing": {
       "heading": "お部屋タイプと料金プラン",
       "sub": "追加費用のない、明確で透明性のあるオールインワン価格です。",
-      "tuitionOnly": "受講のみ（$999）",
+      "tuitionOnly": "受講のみ（€1550）",
       "tuitionOnlyDesc": "講義受講、食事、教材、認定証発行を含みます。宿泊は各自手配となります。",
       "triple": "3人部屋シェア",
       "tripleDesc": "エアコン付きの広々としたお部屋を仲間3名で利用。専用バスルーム・バルコニー付き。",
@@ -3782,17 +3754,17 @@
       "doubleDesc": "快適な2名用のお部屋。専用バスルーム、エアコン、ガーデンまたはプールビュー付き。",
       "private": "デラックス個室",
       "privateDesc": "大型ベッド、専用バスルーム、エアコン、プライベートバルコニー完備の贅沢な個室。",
-      "earlyBird": "早割キャンペーン",
-      "save300": "$300 USD お得",
-      "earlyBirdPrice": "早割特別価格",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "受講料・宿泊プラン（リシケシ 200時間）",
-      "tripleSharing": "3人部屋（$1,750）",
-      "doubleSharing": "2人部屋（$1,899）",
-      "privateRoom": "個室（$2,499）",
+      "tripleSharing": "3人部屋（€1550）",
+      "doubleSharing": "2人部屋（€1550）",
+      "privateRoom": "個室（€2000）",
       "choosePackage": "プランを選択する",
       "reserveSpot": "予約を確定する",
-      "saveUSD": "$300 USD お得",
-      "residentialDuration": "インド・リシケシ 24日間 合宿ヨガTTC"
+      "saveUSD": "",
+      "residentialDuration": "インド・リシケシ 22日間 / 21泊 合宿ヨガTTC"
     },
     "ethics": {
       "codeOfConduct": "受講生行動規範",
@@ -3810,7 +3782,7 @@
     "faqs": [
       {
         "question": "What is the cost of 200-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh starts from $999 for tuition-only, $1,299 for a shared quad room, $1,499 for a twin-sharing double room, and $1,799 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
+        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh is €1,550 for double / shared occupancy and €2,000 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
       },
       {
         "question": "Is Rishikesh good for yoga teacher training?",
@@ -4041,8 +4013,8 @@
       "doubleDesc": "エアコン、専用バスルーム付きの快適な2人部屋。",
       "private": "デラックス個室",
       "privateDesc": "大型ベッド、エアコン、専用バスルーム完備の静かな個室。",
-      "earlyBird": "早割キャンペーン",
-      "save300": "$300 USD お得"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "ご予約前に学校の様子をご覧になりませんか？",
@@ -5673,7 +5645,7 @@
       "startingFrom": "$999 USD",
       "startingFromVal": "$999 USD",
       "save": "割引",
-      "earlyBirdDiscount": "早割で $300 お得"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "少人数制（最大8〜10名）",
@@ -5707,7 +5679,7 @@
       "p4Highlight": "いつでも戻れる場所",
       "p4Desc": "将来バリ島で開催されるコースに受講料無料で何度でも参加し、知識を再確認できます。",
       "pkgBadge": "宿泊パッケージ（24日間 / 23泊）＆ 受講のみプラン",
-      "saveEarlyBird": "早割で $300 お得",
+      "saveEarlyBird": "",
       "tuitionFrom": "受講のみ $999 USD〜 | 宿泊付き $1,750 USD〜",
       "breakdown": "受講のみ：$999 • 3人部屋：$1,750 • 2人部屋：$1,899 • 個室：$2,499",
       "checkAvailability": "空き状況を確認する",
@@ -5853,16 +5825,16 @@
       "doubleDesc": "快適な2名用のお部屋。専用バスルーム、エアコン、ガーデンまたはプールビュー付き。",
       "private": "デラックス個室",
       "privateDesc": "大型ベッド、専用バスルーム、エアコン、プライベートバルコニー完備の贅沢な個室。",
-      "earlyBird": "早割キャンペーン",
-      "save300": "$300 USD お得",
-      "earlyBirdPrice": "早割特別価格",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "受講料・宿泊プラン（リシケシ 200時間）",
       "tripleSharing": "3人部屋（$1,750）",
       "doubleSharing": "2人部屋（$1,899）",
       "privateRoom": "個室（$2,499）",
       "choosePackage": "プランを選択する",
       "reserveSpot": "予約を確定する",
-      "saveUSD": "$300 USD お得",
+      "saveUSD": "",
       "residentialDuration": "インド・リシケシ 24日間 合宿ヨガTTC"
     },
     "ethics": {
@@ -6112,8 +6084,8 @@
       "doubleDesc": "エアコン、専用バスルーム付きの快適な2人部屋。",
       "private": "デラックス個室",
       "privateDesc": "大型ベッド、エアコン、専用バスルーム完備の静かな個室。",
-      "earlyBird": "早割キャンペーン",
-      "save300": "$300 USD お得"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "ご予約前に学校の様子をご覧になりませんか？",
@@ -8894,5 +8866,6 @@
     "galleryDesc": "{loc}の静寂なアシュラムでの生活、緑豊かなプール、スピリチュアルなワークショップの様子をご覧ください。",
     "teacherTrainingTitle": "{loc}で全米ヨガアライアンス認定指導者を目指しませんか？",
     "teacherTrainingDesc": "{loc}で開催される国際公認の全米ヨガアライアンス認定コースで学びを深めましょう。"
-  }
+  },
+  "sachinjiResearch": "パーソナライズされたヨガとプラクリティに関するヨガチャリア・サチンの研究"
 }

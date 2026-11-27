@@ -28,7 +28,7 @@ export async function generateMetadata({
     if (locale === "en") {
         const title = "200 Hour Yoga Teacher Training in Rishikesh | YogaGarhi";
         const description =
-            "Yoga Alliance certified 200 hour yoga teacher training in Rishikesh, India. Small batches 8-10, E-RYT 500 teachers, Himalayan ashram. Enroll from $999.";
+            "Yoga Alliance certified 200 hour yoga teacher training in Rishikesh, India. Small batches 8-10, E-RYT 500 teachers, Himalayan ashram. Enroll from €1550.";
         return {
             metadataBase: new URL("https://www.yogagarhi.com"),
             title: {
@@ -190,7 +190,7 @@ export default async function Page({
         "courseMode": "onsite",
         "startDate": batch.startDate,
         "endDate": batch.endDate,
-        "duration": "P24D",
+        "duration": "P22D",
         "location": {
             "@type": "Place",
             "name": "YogaGarhi Ashram",
@@ -229,8 +229,8 @@ export default async function Page({
         ...(courseInstances.length > 0 ? { "hasCourseInstance": courseInstances } : {}),
         "offers": {
             "@type": "Offer",
-            "price": course.price.replace("$", ""),
-            "priceCurrency": "USD",
+            "price": "1550",
+            "priceCurrency": "EUR",
             "availability": "https://schema.org/PreOrder",
             "url": pageUrl
         }

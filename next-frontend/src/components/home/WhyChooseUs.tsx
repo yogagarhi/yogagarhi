@@ -364,57 +364,6 @@ export default function WhyChooseUs() {
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Not Planning to Teach? Manifesto Card */}
-              <div className="col-span-full md:col-span-2 lg:col-span-4 group relative rounded-2xl overflow-hidden border-2 border-accent/20 bg-gradient-to-br from-accent/[0.05] via-transparent to-background p-8 lg:p-12 shadow-sm hover:shadow-md transition-all duration-500">
-                <div className="absolute top-0 right-0 w-48 h-48 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
-                
-                <div className="flex flex-col lg:flex-row gap-8 items-start relative z-10">
-                  <div className="lg:w-1/3 space-y-4">
-                    <div className="inline-block px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-semibold">
-                      {t("manifestoBadge")}
-                    </div>
-                    <h4 className="font-heading text-xl lg:text-2xl font-black text-foreground leading-tight group-hover:text-accent transition-colors text-left">
-                      {t("manifestoHeading")}
-                    </h4>
-                    <p className="text-muted-foreground text-sm italic font-medium text-left">
-                      {t("manifestoQuote")}
-                    </p>
-                  </div>
-                  
-                  <div className="lg:w-2/3 space-y-6 text-left">
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {t("manifestoIntro")}
-                    </p>
-                    
-                    <ul className="grid sm:grid-cols-2 gap-4 text-xs sm:text-sm text-foreground/80 font-medium">
-                      <li className="flex items-start gap-2.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                        <span><strong className="text-foreground">{t("manifestoB1Title")}</strong> {t("manifestoB1Desc")}</span>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                        <span><strong className="text-foreground">{t("manifestoB2Title")}</strong> {t("manifestoB2Desc")}</span>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                        <span><strong className="text-foreground">{t("manifestoB3Title")}</strong> {t("manifestoB3Desc")}</span>
-                      </li>
-                      <li className="flex items-start gap-2.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                        <span><strong className="text-foreground">{t("manifestoB4Title")}</strong> {t("manifestoB4Desc")}</span>
-                      </li>
-                    </ul>
-                    
-                    <div className="pt-4 border-t border-border/50 text-xs text-muted-foreground flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-                      <span>{t("manifestoFooter")}</span>
-                      <span className="font-bold text-accent bg-accent/10 px-3 py-1 rounded-full uppercase tracking-wider text-[10px]">
-                        {t("manifestoPill")}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               {/* 35+ Sequencing Book */}
               <div className="group relative rounded-2xl overflow-hidden border border-border bg-card hover:shadow-lg transition-all duration-500 flex flex-col justify-between">
                 <div>

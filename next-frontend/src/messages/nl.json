@@ -327,20 +327,6 @@
       "handsOnCategory": "Lesgeven",
       "handsOnTitle": "Hands-on correcties & lesopbouw",
       "handsOnDesc": "Leer veilige fysieke correcties, doordachte uitlijning en creatieve lesopbouw voor verschillende lichaamstypes.",
-      "manifestoBadge": "Studentenmanifest",
-      "manifestoHeading": "Ben je niet van plan om les te geven? Dan is deze school juist voor jou gemaakt.",
-      "manifestoQuote": "«Ik wil eigenlijk niet lesgeven. Ik wil gewoon de diepte in.»",
-      "manifestoIntro": "Meer dan de helft van de mensen die ons schrijven zegt dit, bijna verontschuldigend. Verontschuldig je alsjeblieft niet. In India is yoga nooit een beroepsopleiding geweest; het was een pad van zelfonderzoek. De student stond altijd centraal.",
-      "manifestoB1Title": "Jij bent de traditie:",
-      "manifestoB1Desc": "Al duizenden jaren zochten mensen een meester om één reden: zelfontdekking.",
-      "manifestoB2Title": "Praktijk op de eerste plaats:",
-      "manifestoB2Desc": "Je beleeft yoga zoals het bedoeld is: sadhana, pranayama, gezonde voeding en teksten.",
-      "manifestoB3Title": "Diepste begrip:",
-      "manifestoB3Desc": "Houdingen leren uitleggen is de beste manier om ze in je eigen lichaam werkelijk te begrijpen.",
-      "manifestoB4Title": "1 jaar Sadhana-ondersteuning:",
-      "manifestoB4Desc": "Mentorschap is er voor iedereen, niet alleen voor docenten. We steunen jouw dagelijkse beoefening.",
-      "manifestoFooter": "Kom als student. Vertrek als een diepere beoefenaar. Dat is meer dan genoeg.",
-      "manifestoPill": "Geen druk • Geen vervaldatum",
       "seqBookBadge": "Inbegrepen",
       "seqBookCategory": "Hulpmiddelen",
       "seqBookTitle": "Boek met 35+ creatieve lessenseries",
@@ -1381,20 +1367,6 @@
     "handsOnCategory": "Lesgeven",
     "handsOnTitle": "Hands-on correcties & lesopbouw",
     "handsOnDesc": "Leer veilige fysieke correcties, doordachte uitlijning en creatieve lesopbouw voor verschillende lichaamstypes.",
-    "manifestoBadge": "Studentenmanifest",
-    "manifestoHeading": "Ben je niet van plan om les te geven? Dan is deze school juist voor jou gemaakt.",
-    "manifestoQuote": "«Ik wil eigenlijk niet lesgeven. Ik wil gewoon de diepte in.»",
-    "manifestoIntro": "Meer dan de helft van de mensen die ons schrijven zegt dit, bijna verontschuldigend. Verontschuldig je alsjeblieft niet. In India is yoga nooit een beroepsopleiding geweest; het was een pad van zelfonderzoek. De student stond altijd centraal.",
-    "manifestoB1Title": "Jij bent de traditie:",
-    "manifestoB1Desc": "Al duizenden jaren zochten mensen een meester om één reden: zelfontdekking.",
-    "manifestoB2Title": "Praktijk op de eerste plaats:",
-    "manifestoB2Desc": "Je beleeft yoga zoals het bedoeld is: sadhana, pranayama, gezonde voeding en teksten.",
-    "manifestoB3Title": "Diepste begrip:",
-    "manifestoB3Desc": "Houdingen leren uitleggen is de beste manier om ze in je eigen lichaam werkelijk te begrijpen.",
-    "manifestoB4Title": "1 jaar Sadhana-ondersteuning:",
-    "manifestoB4Desc": "Mentorschap is er voor iedereen, niet alleen voor docenten. We steunen jouw dagelijkse beoefening.",
-    "manifestoFooter": "Kom als student. Vertrek als een diepere beoefenaar. Dat is meer dan genoeg.",
-    "manifestoPill": "Geen druk • Geen vervaldatum",
     "seqBookBadge": "Inbegrepen",
     "seqBookCategory": "Hulpmiddelen",
     "seqBookTitle": "Boek met 35+ creatieve lessenseries",
@@ -2880,10 +2852,10 @@
       "levelVal": "Beginners tot Gevorderden",
       "certification": "Certificering",
       "certificationVal": "Yoga Alliance Certificaat",
-      "startingFrom": "$1,149 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€900",
+      "startingFromVal": "€900",
       "save": "Bespaar",
-      "earlyBirdDiscount": "Bespaar $200 met vroegboekkorting"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "Kleine groepen (max 8–10)",
@@ -2917,9 +2889,9 @@
       "p4Highlight": "Kosteloos terugkeren",
       "p4Desc": "Sluit je in de toekomst kosteloos aan bij YogaGarhi-opleidingen om je kennis op te frissen of te assisteren.",
       "pkgBadge": "Verblijfspakketten (24 dagen / 23 nachten) & optie alleen lesgeld",
-      "saveEarlyBird": "Bespaar $300 met vroegboekkorting",
-      "tuitionFrom": "Alleen lesgeld vanaf $999 USD | Met verblijf vanaf $1,750 USD",
-      "breakdown": "Alleen lesgeld: $999 • Drie personen: $1,750 • Twee personen: $1,899 • Privékamer: $2,499",
+      "saveEarlyBird": "",
+      "tuitionFrom": "Alleen lesgeld vanaf €900 | Met verblijf vanaf €900",
+      "breakdown": "Alleen lesgeld: €900 • Drie personen: €900 • Twee personen: €900 • Privékamer: €900",
       "checkAvailability": "Beschikbaarheid controleren",
       "bookFreeCall": "Gratis video-adviesgesprek plannen"
     },
@@ -3017,16 +2989,16 @@
       "doubleDesc": "Comfortabele kamer voor twee personen met eigen badkamer, airco en uitzicht op tuin of zwembad.",
       "private": "Deluxe privékamer",
       "privateDesc": "Eigen toevluchtsoord met groot tweepersoonsbed, eigen badkamer, airco en privébalkon.",
-      "earlyBird": "Vroegboekkorting",
-      "save300": "Bespaar $300 USD",
-      "earlyBirdPrice": "Vroegboekprijs",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "Tarieven & Kamers (100 Uur Rishikesh)",
-      "tripleSharing": "Driepersoonskamer ($1.149)",
-      "doubleSharing": "Tweepersoonskamer ($1.349)",
-      "privateRoom": "Privékamer ($1.649)",
+      "tripleSharing": "Driepersoonskamer (€900)",
+      "doubleSharing": "Tweepersoonskamer (€900)",
+      "privateRoom": "Privékamer (€900)",
       "choosePackage": "Kies je pakket",
       "reserveSpot": "Reserveer je plek",
-      "saveUSD": "Bespaar $300 USD",
+      "saveUSD": "",
       "residentialDuration": "12 dagen residentiële yoga-opleiding in Rishikesh, India"
     },
     "ethics": {
@@ -3045,7 +3017,7 @@
     "faqs": [
       {
         "question": "What is the cost of the 100-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh starts from $599 for tuition-only, $799 for a shared quad room, $999 for a double room, and $1,199 for a private room with attached private bath. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
+        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh is €900. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
       },
       {
         "question": "Is de 100-uurs cursus geschikt voor beginners?",
@@ -3259,8 +3231,8 @@
       "doubleDesc": "Fijne kamer voor twee personen met badkamer, airconditioning en tuinzicht.",
       "private": "Luxe privékamer",
       "privateDesc": "Privékamer met groot bed, badkamer ensuite, airco en eigen balkon.",
-      "earlyBird": "Vroegboekkorting",
-      "save300": "Bespaar $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "Wil je de school bekijken voor je boekt?",
@@ -3587,22 +3559,22 @@
     "metaTitle": "200-Uurs Yoga Docentenopleiding in Rishikesh | RYT 200 India",
     "metaDesc": "Beheers authentieke yoga met de 200-uurs Yoga TTC in Rishikesh. Yoga Alliance RYT 200 residentiële cursus aan de Ganges. Meld je aan!",
     "heroTitle": "200-Uurs Yoga Docentenopleiding in Rishikesh",
-    "heroSub": "24-daagse Yoga Alliance RYT 200 opleiding in de yogahoofdstad van de wereld. Himalaya-traditie, Ganga ashram vanaf $999 USD.",
+    "heroSub": "22-daagse Yoga Alliance RYT 200 opleiding in de yogahoofdstad van de wereld. Himalaya-traditie, Ganga ashram vanaf €1550.",
     "quickInfo": {
       "course": "Opleiding",
       "courseVal": "200-Uurs Rishikesh TTC",
       "duration": "Duur",
-      "durationVal": "24 Days",
+      "durationVal": "22 Days / 21 Nights",
       "style": "Stijl",
       "styleVal": "Multi-Style Yoga",
       "level": "Niveau",
       "levelVal": "Beginners tot Gevorderden",
       "certification": "Certificering",
       "certificationVal": "Yoga Alliance RYT 200 Certificering",
-      "startingFrom": "$999 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€1550",
+      "startingFromVal": "€1550",
       "save": "Bespaar",
-      "earlyBirdDiscount": "Bespaar $300 met vroegboekkorting"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "Kleine groepen (max 8–10)",
@@ -3616,7 +3588,7 @@
     },
     "storyTitle": "Transformeer je beoefening in levende wijsheid",
     "storyP1": "Onze 200 uur yogadocentenopleiding in Bali is een residentiële verdieping voor wie verlangt naar authentieke diepgang in plaats van oppervlakkige fitnesslessen. Gelegen in het rustige dorpje Gianyar, op slechts 15 minuten van Ubud, biedt YogaGarhi een vredig toevluchtsoord ver weg van de drukte.",
-    "storyP2": "Gedurende 24 dagen bestudeer je klassiek Hatha, Vinyasa Flow, de Ashtanga Primary Series en Iyengar-uitlijning naast toegepaste anatomie, filosofie, pranayama en meditatie. Met strikt 8–10 studenten per groep bieden onze ervaren docenten uit de Himalaya persoonlijke aandacht aan iedereen.",
+    "storyP2": "Gedurende 22 dagen bestudeer je klassiek Hatha, Vinyasa Flow, de Ashtanga Primary Series en Iyengar-uitlijning naast toegepaste anatomie, filosofie, pranayama en meditatie. Met strikt 8–10 studenten per groep bieden onze ervaren docenten uit de Himalaya persoonlijke aandacht aan iedereen.",
     "watchVideoStories": "Bekijk video's en reviews van studenten",
     "videoBannerTitle": "Plan een gesprek. Zie de school. Zie je kamer. Zie de yogazaal.",
     "whyYogaGarhiBox": {
@@ -3635,10 +3607,10 @@
       "p4Title": "Levenslang gratis de opleiding herhalen",
       "p4Highlight": "Kosteloos terugkeren",
       "p4Desc": "Sluit je in de toekomst kosteloos aan bij YogaGarhi-opleidingen om je kennis op te frissen of te assisteren.",
-      "pkgBadge": "Verblijfspakketten (24 dagen / 23 nachten) & optie alleen lesgeld",
-      "saveEarlyBird": "Bespaar $300 met vroegboekkorting",
-      "tuitionFrom": "Alleen lesgeld vanaf $999 USD | Met verblijf vanaf $1,750 USD",
-      "breakdown": "Alleen lesgeld: $999 • Drie personen: $1,750 • Twee personen: $1,899 • Privékamer: $2,499",
+      "pkgBadge": "Verblijfspakketten (22 dagen / 21 nachten) & optie alleen lesgeld",
+      "saveEarlyBird": "",
+      "tuitionFrom": "Alleen lesgeld vanaf €1550 | Met verblijf vanaf €2000",
+      "breakdown": "Alleen lesgeld: €1550 • Drie personen: €1550 • Twee personen: €1550 • Privékamer: €2000",
       "checkAvailability": "Beschikbaarheid controleren",
       "bookFreeCall": "Gratis video-adviesgesprek plannen"
     },
@@ -3756,7 +3728,7 @@
     "inclusions": {
       "heading": "Wat is inbegrepen in je opleiding",
       "sub": "Alles geregeld voor een zorgeloos en diepgaand verblijf.",
-      "incAccom": "23 nachten verblijf in de ashram",
+      "incAccom": "21 nachten verblijf in de ashram",
       "incMeals": "Dagelijks 3 vers bereide sattvische maaltijden (vegetarisch/veganistisch)",
       "incCert": "Yoga Alliance RYT 200 certificaat na voltooiing",
       "incManuals": "Officiële lesboeken, notitieblokken en studiemateriaal",
@@ -3774,7 +3746,7 @@
     "pricing": {
       "heading": "Kamers & Prijzen",
       "sub": "Volledig transparante all-in tarieven zonder verborgen kosten.",
-      "tuitionOnly": "Alleen cursus ($999)",
+      "tuitionOnly": "Alleen cursus (€1550)",
       "tuitionOnlyDesc": "Lessen, alle maaltijden, lesmateriaal en certificaat. Verblijf buiten de ashram.",
       "triple": "Gedeelde driepersoonskamer",
       "tripleDesc": "Ruime kamer met airco gedeeld met twee medestudenten, eigen badkamer en balkon.",
@@ -3782,17 +3754,17 @@
       "doubleDesc": "Comfortabele kamer voor twee personen met eigen badkamer, airco en uitzicht op tuin of zwembad.",
       "private": "Deluxe privékamer",
       "privateDesc": "Eigen toevluchtsoord met groot tweepersoonsbed, eigen badkamer, airco en privébalkon.",
-      "earlyBird": "Vroegboekkorting",
-      "save300": "Bespaar $300 USD",
-      "earlyBirdPrice": "Vroegboekprijs",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "Tarieven & Kamers (200 Uur Rishikesh)",
-      "tripleSharing": "Driepersoonskamer ($1.750)",
-      "doubleSharing": "Tweepersoonskamer ($1.899)",
-      "privateRoom": "Privékamer ($2.499)",
+      "tripleSharing": "Driepersoonskamer (€1550)",
+      "doubleSharing": "Tweepersoonskamer (€1550)",
+      "privateRoom": "Privékamer (€2000)",
       "choosePackage": "Kies je pakket",
       "reserveSpot": "Reserveer je plek",
-      "saveUSD": "Bespaar $300 USD",
-      "residentialDuration": "24 dagen residentiële yoga-opleiding in Rishikesh, India"
+      "saveUSD": "",
+      "residentialDuration": "22 dagen / 21 nachten residentiële yoga-opleiding in Rishikesh, India"
     },
     "ethics": {
       "codeOfConduct": "Gedragscode",
@@ -3810,7 +3782,7 @@
     "faqs": [
       {
         "question": "What is the cost of 200-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh starts from $999 for tuition-only, $1,299 for a shared quad room, $1,499 for a twin-sharing double room, and $1,799 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
+        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh is €1,550 for double / shared occupancy and €2,000 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
       },
       {
         "question": "Is Rishikesh good for yoga teacher training?",
@@ -4041,8 +4013,8 @@
       "doubleDesc": "Fijne kamer voor twee personen met badkamer, airconditioning en tuinzicht.",
       "private": "Luxe privékamer",
       "privateDesc": "Privékamer met groot bed, badkamer ensuite, airco en eigen balkon.",
-      "earlyBird": "Vroegboekkorting",
-      "save300": "Bespaar $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "Wil je de school bekijken voor je boekt?",
@@ -5673,7 +5645,7 @@
       "startingFrom": "$999 USD",
       "startingFromVal": "$999 USD",
       "save": "Bespaar",
-      "earlyBirdDiscount": "Bespaar $300 met vroegboekkorting"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "Kleine groepen (max 8–10)",
@@ -5707,7 +5679,7 @@
       "p4Highlight": "Kosteloos terugkeren",
       "p4Desc": "Sluit je in de toekomst kosteloos aan bij YogaGarhi-opleidingen om je kennis op te frissen of te assisteren.",
       "pkgBadge": "Verblijfspakketten (24 dagen / 23 nachten) & optie alleen lesgeld",
-      "saveEarlyBird": "Bespaar $300 met vroegboekkorting",
+      "saveEarlyBird": "",
       "tuitionFrom": "Alleen lesgeld vanaf $999 USD | Met verblijf vanaf $1,750 USD",
       "breakdown": "Alleen lesgeld: $999 • Drie personen: $1,750 • Twee personen: $1,899 • Privékamer: $2,499",
       "checkAvailability": "Beschikbaarheid controleren",
@@ -5853,16 +5825,16 @@
       "doubleDesc": "Comfortabele kamer voor twee personen met eigen badkamer, airco en uitzicht op tuin of zwembad.",
       "private": "Deluxe privékamer",
       "privateDesc": "Eigen toevluchtsoord met groot tweepersoonsbed, eigen badkamer, airco en privébalkon.",
-      "earlyBird": "Vroegboekkorting",
-      "save300": "Bespaar $300 USD",
-      "earlyBirdPrice": "Vroegboekprijs",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "Tarieven & Kamers (200 Uur Rishikesh)",
       "tripleSharing": "Driepersoonskamer ($1.750)",
       "doubleSharing": "Tweepersoonskamer ($1.899)",
       "privateRoom": "Privékamer ($2.499)",
       "choosePackage": "Kies je pakket",
       "reserveSpot": "Reserveer je plek",
-      "saveUSD": "Bespaar $300 USD",
+      "saveUSD": "",
       "residentialDuration": "24 dagen residentiële yoga-opleiding in Rishikesh, India"
     },
     "ethics": {
@@ -6112,8 +6084,8 @@
       "doubleDesc": "Fijne kamer voor twee personen met badkamer, airconditioning en tuinzicht.",
       "private": "Luxe privékamer",
       "privateDesc": "Privékamer met groot bed, badkamer ensuite, airco en eigen balkon.",
-      "earlyBird": "Vroegboekkorting",
-      "save300": "Bespaar $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "Wil je de school bekijken voor je boekt?",
@@ -8894,5 +8866,6 @@
     "galleryDesc": "Een impressie van onze vredige ashram in {loc}, weelderige zwembaden en spirituele workshops.",
     "teacherTrainingTitle": "Wil je een gecertificeerd yogadocent worden in {loc}?",
     "teacherTrainingDesc": "Verdiep je beoefening met onze Yoga Alliance gecertificeerde opleidingen (100, 200 en 300 uur) in {loc}."
-  }
+  },
+  "sachinjiResearch": "Yogacharya Sachin's onderzoek naar gepersonaliseerde yoga en prakriti"
 }

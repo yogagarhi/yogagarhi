@@ -1,4 +1,4 @@
-import { BATCHES_100_HOUR, CourseBatch } from "@/constants/courseDates";
+import { BATCHES_100_HOUR_RISHIKESH, CourseBatch } from "@/constants/courseDates";
 
 export default async function Course100HourRishikesh({
   locale = "en",
@@ -24,19 +24,19 @@ export default async function Course100HourRishikesh({
     <CoursePageTemplate
       namespace="course100Rishikesh"
       courseKey="100-hour-rishikesh"
-      defaultBatches={BATCHES_100_HOUR}
+      defaultBatches={BATCHES_100_HOUR_RISHIKESH}
       initialBatches={initialBatches}
       syllabusSlot={syllabusSlot}
       pricingConfig={{
-        heroStartingPrice: { originalPrice: "$899", price: "$599" },
-        triple: { originalPrice: "$1,399", price: "$1,149" },
-        double: { originalPrice: "$1,649", price: "$1,349" },
-        private: { originalPrice: "$1,999", price: "$1,649" },
+        heroStartingPrice: { originalPrice: "€900", price: "€900" },
+        triple: { originalPrice: "€900", price: "€900" },
+        double: { originalPrice: "€900", price: "€900" },
+        private: { originalPrice: "€900", price: "€900" },
         datesCard: {
-          tuition: { originalPrice: "$899", price: "$599" },
-          triple: { originalPrice: "$1,449", price: "$1,149" },
-          double: { originalPrice: "$1,649", price: "$1,349" },
-          private: { originalPrice: "$1,949", price: "$1,649" },
+          tuition: { originalPrice: "€900", price: "€900" },
+          triple: { originalPrice: "€900", price: "€900" },
+          double: { originalPrice: "€900", price: "€900" },
+          private: { originalPrice: "€900", price: "€900" },
         }
       }}
     />

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-sound-healing.cjs && next build",
+    "build": "node scripts/check-rishikesh-specialty-pages.cjs && node scripts/check-dharamshala-pages.cjs && next build",
     "start": "next start",
     "lint": "eslint",
     "check:i18n-facts": "node ../scripts/check-i18n-facts.cjs"

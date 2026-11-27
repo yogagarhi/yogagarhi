@@ -327,20 +327,6 @@
       "handsOnCategory": "教学实训",
       "handsOnTitle": "手法辅助正位与课程编排",
       "handsOnDesc": "掌握安全无伤的双手辅助触碰技巧、解剖学对齐原则以及根据不同体格灵活排课的能力。",
-      "manifestoBadge": "学员宣言",
-      "manifestoHeading": "即便您从未打算以此谋生授课，这也正是为您量身打造的圣殿。",
-      "manifestoQuote": "“我并不想成为一名瑜伽老师，我只是想深刻地认识自己的瑜伽。”",
-      "manifestoIntro": "超过半数前来咨询的学员，都会带着略显歉意的语气说出这句话。请千万不要感到抱歉。在印度，瑜伽从来就不是一门为了找工作的职业培训班，而是一条寻回真实自我的修行之路。在任何时代，学生内心的成长永远是第一位的。",
-      "manifestoB1Title": "您本身就是传承：",
-      "manifestoB1Desc": "数千年来，求索者跋山涉水追随明师，唯一的目的就是探索内在的自我。",
-      "manifestoB2Title": "全心沉浸于纯粹的修习：",
-      "manifestoB2Desc": "sadhana、pranayama、悦性饮食与古圣先贤的智慧，让您全方位体验瑜伽本该有的生活模样。",
-      "manifestoB3Title": "最深刻的自我领悟：",
-      "manifestoB3Desc": "当你能够将体式的核心原理清晰地教授给他人时，才是用自己的身体完全领悟它的最佳时刻。",
-      "manifestoB4Title": "长达一年的持续修习支持：",
-      "manifestoB4Desc": "我们的导师伴学不仅仅服务于职业老师，更为您的终身个人习练提供长久护航。",
-      "manifestoFooter": "带着学生的心态而来，成为一位更通透的求索者回归日常生活。这就足够美好。",
-      "manifestoPill": "无压力 • 无效期限制",
       "seqBookBadge": "专属赠礼",
       "seqBookCategory": "学习资料",
       "seqBookTitle": "35+ 套实战课程编排手册",
@@ -1381,20 +1367,6 @@
     "handsOnCategory": "教学实训",
     "handsOnTitle": "手法辅助正位与课程编排",
     "handsOnDesc": "掌握安全无伤的双手辅助触碰技巧、解剖学对齐原则以及根据不同体格灵活排课的能力。",
-    "manifestoBadge": "学员宣言",
-    "manifestoHeading": "即便您从未打算以此谋生授课，这也正是为您量身打造的圣殿。",
-    "manifestoQuote": "“我并不想成为一名瑜伽老师，我只是想深刻地认识自己的瑜伽。”",
-    "manifestoIntro": "超过半数前来咨询的学员，都会带着略显歉意的语气说出这句话。请千万不要感到抱歉。在印度，瑜伽从来就不是一门为了找工作的职业培训班，而是一条寻回真实自我的修行之路。在任何时代，学生内心的成长永远是第一位的。",
-    "manifestoB1Title": "您本身就是传承：",
-    "manifestoB1Desc": "数千年来，求索者跋山涉水追随明师，唯一的目的就是探索内在的自我。",
-    "manifestoB2Title": "全心沉浸于纯粹的修习：",
-    "manifestoB2Desc": "sadhana、pranayama、悦性饮食与古圣先贤的智慧，让您全方位体验瑜伽本该有的生活模样。",
-    "manifestoB3Title": "最深刻的自我领悟：",
-    "manifestoB3Desc": "当你能够将体式的核心原理清晰地教授给他人时，才是用自己的身体完全领悟它的最佳时刻。",
-    "manifestoB4Title": "长达一年的持续修习支持：",
-    "manifestoB4Desc": "我们的导师伴学不仅仅服务于职业老师，更为您的终身个人习练提供长久护航。",
-    "manifestoFooter": "带着学生的心态而来，成为一位更通透的求索者回归日常生活。这就足够美好。",
-    "manifestoPill": "无压力 • 无效期限制",
     "seqBookBadge": "专属赠礼",
     "seqBookCategory": "学习资料",
     "seqBookTitle": "35+ 套实战课程编排手册",
@@ -2880,10 +2852,10 @@
       "levelVal": "初级至中级",
       "certification": "国际认证",
       "certificationVal": "Yoga Alliance 结业证书",
-      "startingFrom": "$1,149 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€900",
+      "startingFromVal": "€900",
       "save": "立省",
-      "earlyBirdDiscount": "早鸟特惠立减 $200"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "小班教学（限8-10人）",
@@ -2917,9 +2889,9 @@
       "p4Highlight": "随时可以停靠的心灵家园",
       "p4Desc": "未来您可以终身免学费再次报名参加在巴厘岛举办的200小时班期，随时温故知新。",
       "pkgBadge": "全住宿套餐（24天 / 23晚）与仅限学费方案",
-      "saveEarlyBird": "早鸟特惠立减 $300",
-      "tuitionFrom": "仅限学费 $999 USD 起 | 含住宿套餐 $1,750 USD 起",
-      "breakdown": "仅学费：$999 • 三人间：$1,750 • 双人间：$1,899 • 单人间：$2,499",
+      "saveEarlyBird": "",
+      "tuitionFrom": "仅限学费 €900 起 | 含住宿套餐 €900 起",
+      "breakdown": "仅学费：€900 • 三人间：€900 • 双人间：€900 • 单人间：€900",
       "checkAvailability": "查询剩余名额",
       "bookFreeCall": "预约免费视频沟通"
     },
@@ -3017,16 +2989,16 @@
       "doubleDesc": "温馨宜人的双人间，享有独立卫浴、空调以及花园或泳池景观。",
       "private": "豪华单人独立房",
       "privateDesc": "私密宁静的专属独立大床房，配备专属卫浴、空调与私人阳台。",
-      "earlyBird": "早鸟特惠立减",
-      "save300": "优惠 $300 USD",
-      "earlyBirdPrice": "早鸟特惠价",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "学费及住宿方案（瑞诗凯诗100小时）",
-      "tripleSharing": "三人共享房（$1,149）",
-      "doubleSharing": "双人共享房（$1,349）",
-      "privateRoom": "单人私密房（$1,649）",
+      "tripleSharing": "三人共享房（€900）",
+      "doubleSharing": "双人共享房（€900）",
+      "privateRoom": "单人私密房（€900）",
       "choosePackage": "选择此套餐",
       "reserveSpot": "锁定我的席位",
-      "saveUSD": "立省 $300 USD",
+      "saveUSD": "",
       "residentialDuration": "印度瑞诗凯诗 12天 住宿式瑜伽培训"
     },
     "ethics": {
@@ -3045,7 +3017,7 @@
     "faqs": [
       {
         "question": "What is the cost of the 100-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh starts from $599 for tuition-only, $799 for a shared quad room, $999 for a double room, and $1,199 for a private room with attached private bath. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
+        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh is €900. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
       },
       {
         "question": "Is the 100-Hour course suitable for beginners?",
@@ -3259,8 +3231,8 @@
       "doubleDesc": "配有空调、独立卫浴的雅致双人套房。",
       "private": "豪华单人房",
       "privateDesc": "配有大床、独立卫浴与空调的私密静音单人间。",
-      "earlyBird": "早鸟优惠活动",
-      "save300": "优惠 $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "在预订前想亲自了解学校吗？",
@@ -3587,22 +3559,22 @@
     "metaTitle": "瑞诗凯诗200小时瑜伽教师培训 | 印度 RYT 200 课程",
     "metaDesc": "在瑞诗凯诗参加200小时瑜伽培训，掌握正统瑜伽精髓。恒河畔 Yoga Alliance RYT 200 全封闭住宿班。立即报名！",
     "heroTitle": "瑞诗凯诗200小时瑜伽教师培训",
-    "heroSub": "世界瑜伽之都24天 Yoga Alliance RYT 200 国际认证班。喜马拉雅师承，恒河静修院仅 $999 USD 起。",
+    "heroSub": "世界瑜伽之都22天 Yoga Alliance RYT 200 国际认证班。喜马拉雅师承，恒河静修院仅 €1550 起。",
     "quickInfo": {
       "course": "培训课程",
       "courseVal": "瑞诗凯诗200小时全科班",
       "duration": "集训时长",
-      "durationVal": "24 Days",
+      "durationVal": "22 Days / 21 Nights",
       "style": "修习流派",
       "styleVal": "多流派融合瑜伽",
       "level": "适合级别",
       "levelVal": "初级至中级",
       "certification": "国际认证",
       "certificationVal": "Yoga Alliance RYT 200 国际认证证书",
-      "startingFrom": "$999 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€1550",
+      "startingFromVal": "€1550",
       "save": "立省",
-      "earlyBirdDiscount": "早鸟特惠立减 $300"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "小班教学（限8-10人）",
@@ -3616,7 +3588,7 @@
     },
     "storyTitle": "将您的个人修习升华为生命的真实智慧",
     "storyP1": "YogaGarhi 巴厘岛200小时瑜伽教师培训是一场为期24天的沉浸式集训，专为渴望超越表层动作、触摸瑜伽本源深度的修习者打造。学院坐落于距乌布仅15分钟车程的吉安雅宁静村落中，让您远离繁华喧闹，全身心投入修行。",
-    "storyP2": "在24天时间里，您将全面学习传统古典 Hatha、动态流动的 Vinyasa Flow、Ashtanga 初级序列、Iyengar 精准解剖对齐，以及功能解剖学、瑜伽哲学、pranayama 与深层冥想。每班严控在8-10人，喜马拉雅正统明师每日亲自为您答疑修正。",
+    "storyP2": "在22天时间里，您将全面学习传统古典 Hatha、动态流动的 Vinyasa Flow、Ashtanga 初级序列、Iyengar 精准解剖对齐，以及功能解剖学、瑜伽哲学、pranayama 与深层冥想。每班严控在8-10人，喜马拉雅正统明师每日亲自为您答疑修正。",
     "watchVideoStories": "观看往届毕业学员真实故事与评价",
     "videoBannerTitle": "预约免费视频咨询。亲眼看一看我们的校园、客房和瑜伽大厅。",
     "whyYogaGarhiBox": {
@@ -3635,10 +3607,10 @@
       "p4Title": "终身免学费重修特权",
       "p4Highlight": "随时可以停靠的心灵家园",
       "p4Desc": "未来您可以终身免学费再次报名参加在巴厘岛举办的200小时班期，随时温故知新。",
-      "pkgBadge": "全住宿套餐（24天 / 23晚）与仅限学费方案",
-      "saveEarlyBird": "早鸟特惠立减 $300",
-      "tuitionFrom": "仅限学费 $999 USD 起 | 含住宿套餐 $1,750 USD 起",
-      "breakdown": "仅学费：$999 • 三人间：$1,750 • 双人间：$1,899 • 单人间：$2,499",
+      "pkgBadge": "全住宿套餐（22天 / 21晚）与仅限学费方案",
+      "saveEarlyBird": "",
+      "tuitionFrom": "仅限学费 €1550 起 | 含住宿套餐 €2000 起",
+      "breakdown": "仅学费：€1550 • 三人间：€1550 • 双人间：€1550 • 单人间：€2000",
       "checkAvailability": "查询剩余名额",
       "bookFreeCall": "预约免费视频沟通"
     },
@@ -3756,7 +3728,7 @@
     "inclusions": {
       "heading": "课程费用包含明细",
       "sub": "所有细节均已妥善安排，让您在整个培训期间心无旁骛、专心精进。",
-      "incAccom": "静修院舒适客房住宿（23晚）",
+      "incAccom": "静修院舒适客房住宿（21晚）",
       "incMeals": "每日3餐阿育吠陀纯素/素食营养膳食",
       "incCert": "顺利毕业颁发的 Yoga Alliance RYT 200 国际认证执照",
       "incManuals": "全套官方培训教材、随堂讲义与研习笔记",
@@ -3774,7 +3746,7 @@
     "pricing": {
       "heading": "房型选择与学费标准",
       "sub": "公开透明的全包式定价，绝无任何隐藏附加费用。",
-      "tuitionOnly": "仅课程学费（$999）",
+      "tuitionOnly": "仅课程学费（€1550）",
       "tuitionOnlyDesc": "包含全套培训课程、教材与证书认证。食宿需自行在校外安排。",
       "triple": "三人间拼房",
       "tripleDesc": "宽敞舒适的三人间，配有独立卫浴、空调与观景阳台。",
@@ -3782,17 +3754,17 @@
       "doubleDesc": "温馨宜人的双人间，享有独立卫浴、空调以及花园或泳池景观。",
       "private": "豪华单人独立房",
       "privateDesc": "私密宁静的专属独立大床房，配备专属卫浴、空调与私人阳台。",
-      "earlyBird": "早鸟特惠立减",
-      "save300": "优惠 $300 USD",
-      "earlyBirdPrice": "早鸟特惠价",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "学费及住宿方案（瑞诗凯诗200小时）",
-      "tripleSharing": "三人共享房（$1,750）",
-      "doubleSharing": "双人共享房（$1,899）",
-      "privateRoom": "单人私密房（$2,499）",
+      "tripleSharing": "三人共享房（€1550）",
+      "doubleSharing": "双人共享房（€1550）",
+      "privateRoom": "单人私密房（€2000）",
       "choosePackage": "选择此套餐",
       "reserveSpot": "锁定我的席位",
-      "saveUSD": "立省 $300 USD",
-      "residentialDuration": "印度瑞诗凯诗 24天 封闭式瑜伽导师班"
+      "saveUSD": "",
+      "residentialDuration": "印度瑞诗凯诗 22天 / 21晚 封闭式瑜伽导师班"
     },
     "ethics": {
       "codeOfConduct": "学员行为规范守则",
@@ -3810,7 +3782,7 @@
     "faqs": [
       {
         "question": "What is the cost of 200-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh starts from $999 for tuition-only, $1,299 for a shared quad room, $1,499 for a twin-sharing double room, and $1,799 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
+        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh is €1,550 for double / shared occupancy and €2,000 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
       },
       {
         "question": "Is Rishikesh good for yoga teacher training?",
@@ -4041,8 +4013,8 @@
       "doubleDesc": "配有空调、独立卫浴的雅致双人套房。",
       "private": "豪华单人房",
       "privateDesc": "配有大床、独立卫浴与空调的私密静音单人间。",
-      "earlyBird": "早鸟优惠活动",
-      "save300": "优惠 $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "在预订前想亲自了解学校吗？",
@@ -5673,7 +5645,7 @@
       "startingFrom": "$999 USD",
       "startingFromVal": "$999 USD",
       "save": "立省",
-      "earlyBirdDiscount": "早鸟特惠立减 $300"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "小班教学（限8-10人）",
@@ -5707,7 +5679,7 @@
       "p4Highlight": "随时可以停靠的心灵家园",
       "p4Desc": "未来您可以终身免学费再次报名参加在巴厘岛举办的200小时班期，随时温故知新。",
       "pkgBadge": "全住宿套餐（24天 / 23晚）与仅限学费方案",
-      "saveEarlyBird": "早鸟特惠立减 $300",
+      "saveEarlyBird": "",
       "tuitionFrom": "仅限学费 $999 USD 起 | 含住宿套餐 $1,750 USD 起",
       "breakdown": "仅学费：$999 • 三人间：$1,750 • 双人间：$1,899 • 单人间：$2,499",
       "checkAvailability": "查询剩余名额",
@@ -5853,16 +5825,16 @@
       "doubleDesc": "温馨宜人的双人间，享有独立卫浴、空调以及花园或泳池景观。",
       "private": "豪华单人独立房",
       "privateDesc": "私密宁静的专属独立大床房，配备专属卫浴、空调与私人阳台。",
-      "earlyBird": "早鸟特惠立减",
-      "save300": "优惠 $300 USD",
-      "earlyBirdPrice": "早鸟特惠价",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "学费及住宿方案（瑞诗凯诗200小时）",
       "tripleSharing": "三人共享房（$1,750）",
       "doubleSharing": "双人共享房（$1,899）",
       "privateRoom": "单人私密房（$2,499）",
       "choosePackage": "选择此套餐",
       "reserveSpot": "锁定我的席位",
-      "saveUSD": "立省 $300 USD",
+      "saveUSD": "",
       "residentialDuration": "印度瑞诗凯诗 24天 封闭式瑜伽导师班"
     },
     "ethics": {
@@ -6112,8 +6084,8 @@
       "doubleDesc": "配有空调、独立卫浴的雅致双人套房。",
       "private": "豪华单人房",
       "privateDesc": "配有大床、独立卫浴与空调的私密静音单人间。",
-      "earlyBird": "早鸟优惠活动",
-      "save300": "优惠 $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "在预订前想亲自了解学校吗？",
@@ -8894,5 +8866,6 @@
     "galleryDesc": "领略我们在{loc}静谧修道院的日常修习、热带泳池庭院与灵性工作坊的温馨点滴。",
     "teacherTrainingTitle": "渴望在{loc}成为国际认证的专业瑜伽导师吗？",
     "teacherTrainingDesc": "探索我们在{loc}开设的经由全美瑜伽联盟权威认证的专业教师培训项目。"
-  }
+  },
+  "sachinjiResearch": "Yogacharya Sachin 关于个性化瑜伽与体质（Prakriti）的研究"
 }

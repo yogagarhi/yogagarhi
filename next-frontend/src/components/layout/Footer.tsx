@@ -4,7 +4,8 @@ import NextLink from "next/link";
 import { useTranslations } from "next-intl";
 import { Instagram, Facebook, Youtube, Phone, Mail, MapPin, Sparkles } from "lucide-react";
 import { getCloudinaryImage } from "@/utils/cloudinary";
-import { SOUND_HEALING_PAGE_READY } from "@/config/soundHealingConfig";
+import { SOUND_HEALING_RISHIKESH_READY, KUNDALINI_RISHIKESH_READY, PRENATAL_RISHIKESH_READY } from "@/config/specialtyCoursesConfig";
+import { DHARAMSHALA_200_READY, DHARAMSHALA_100_READY, DHARAMSHALA_300_READY } from "@/config/dharamshalaConfig";
 const logo = getCloudinaryImage("yogagarhi-logo-hd-preview.png");
 
 // Animated Lotus SVG
@@ -37,12 +38,15 @@ export default function Footer() {
     { name: safeDrop("course200Rishikesh", "200 Hour Yoga TTC in Rishikesh"), href: "/200-hour-yoga-teacher-training-in-rishikesh" },
     { name: safeDrop("course100Rishikesh", "100 Hour Yoga TTC in Rishikesh"), href: "/100-hour-yoga-teacher-training-in-rishikesh" },
     { name: safeDrop("course300Rishikesh", "300 Hour Yoga TTC in Rishikesh"), href: "/300-hour-yoga-teacher-training-in-rishikesh" },
-    ...(SOUND_HEALING_PAGE_READY ? [
-      { name: safeDrop("soundHealing", "Sound Healing Certification"), href: "/sound-healing-certification-in-rishikesh" }
-    ] : []),
+    ...(SOUND_HEALING_RISHIKESH_READY ? [{ name: "Sound Healing Course in Rishikesh", href: "/sound-healing-course-in-rishikesh", isDirect: true }] : []),
+    ...(KUNDALINI_RISHIKESH_READY ? [{ name: "200 Hour Kundalini Yoga TTC in Rishikesh", href: "/200-hour-kundalini-yoga-teacher-training-in-rishikesh", isDirect: true }] : []),
+    ...(PRENATAL_RISHIKESH_READY ? [{ name: "85 Hour Prenatal Yoga TTC in Rishikesh", href: "/85-hour-prenatal-yoga-teacher-training-in-rishikesh", isDirect: true }] : []),
     { name: safeDrop("course100Varkala", "100 Hour Yoga TTC in Varkala"), href: "/100-hour-yoga-teacher-training-in-varkala" },
     { name: safeDrop("course200Varkala", "200 Hour Yoga TTC in Varkala"), href: "/200-hour-yoga-teacher-training-in-varkala" },
     { name: safeDrop("course300Varkala", "300 Hour Yoga TTC in Varkala"), href: "/300-hour-yoga-teacher-training-in-varkala" },
+    ...(DHARAMSHALA_100_READY ? [{ name: "100 Hour Yoga TTC in Dharamshala", href: "/100-hour-yoga-teacher-training-in-dharamshala", isDirect: true }] : []),
+    ...(DHARAMSHALA_200_READY ? [{ name: "200 Hour Yoga TTC in Dharamshala", href: "/200-hour-yoga-teacher-training-in-dharamshala", isDirect: true }] : []),
+    ...(DHARAMSHALA_300_READY ? [{ name: "300 Hour Yoga TTC in Dharamshala", href: "/300-hour-yoga-teacher-training-in-dharamshala", isDirect: true }] : []),
   ];
 
   const explore = [
@@ -106,18 +110,17 @@ export default function Footer() {
 
         {/* Links in Horizontal Layout */}
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-12 text-sm">
-          {courses.map((link, i) => {
-            const isDirectLink = link.href === '/sound-healing-certification-in-rishikesh';
-            const LinkComponent = isDirectLink ? NextLink : Link;
+          {courses.map((link) => {
+            const LinkComp = (link as any).isDirect ? NextLink : Link;
             return (
-              <LinkComponent
+              <LinkComp
                 key={link.name}
                 href={link.href}
-              className="text-primary-foreground/70 hover:text-primary-foreground transition-colors relative group"
-            >
-              {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary-foreground/50 group-hover:w-full transition-all duration-300" />
-            </LinkComponent>
+                className="text-primary-foreground/70 hover:text-primary-foreground transition-colors relative group"
+              >
+                {link.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-px bg-primary-foreground/50 group-hover:w-full transition-all duration-300" />
+              </LinkComp>
             );
           })}
           <span className="text-primary-foreground/30">•</span>

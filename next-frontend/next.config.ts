@@ -50,6 +50,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/sound-healing-certification-in-rishikesh',
+        destination: '/sound-healing-course-in-rishikesh',
+        permanent: true,
+      },
+      {
+        source: '/:locale(id|de|ko|ja|zh|nl|ru|it|es|fr)/sound-healing-certification-in-rishikesh',
+        destination: '/sound-healing-course-in-rishikesh',
+        permanent: true,
+      },
+      {
         source: '/retreat/warkala',
         destination: '/retreat/varkala',
         permanent: true,

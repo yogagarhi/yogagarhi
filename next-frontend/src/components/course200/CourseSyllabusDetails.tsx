@@ -24,7 +24,7 @@ export default function CourseSyllabusDetails({
 }) {
   const targetNamespace = namespace || courseKeyToNamespace[courseKey] || "course200";
   const tCurriculum = useTranslations(`${targetNamespace}.curriculum` as any);
-  const fallbackCurriculum = courseData[courseKey]?.curriculum || [];
+  const fallbackCurriculum = (courseData[courseKey] as any)?.curriculum || [];
   let detailedModules: any[] = [];
   try {
     detailedModules = (tCurriculum.raw("detailedModules") as Array<{ title: string; items: string[] }>) || [];

@@ -159,7 +159,7 @@ export const courseData = {
             { title: "Not Just Transform Yoga - A Transform You", description: "Yoga is taught as a way of living, not as a skill to perform. Focus on how you think, react, handle stress, and relate to others." },
             { title: "Lifetime Re-Attendance & Assistant Teaching", description: "Graduates can return to future trainings for deeper practice and assist as teachers to build confidence." },
             { title: "Small Group Deep Work", description: "8-10 students per batch for personalized guidance, deeper alignment, and maximum benefit from every session." },
-            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, therapeutic understanding, and class structuring." },
+            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, functional movement understanding, and class structuring." },
             { title: "Rooted in Himalayan Lineage", description: "Teachings inspired by Himalayan yogic traditions covering Karma, Jnana, Bhakti, and Raja Yoga paths." },
         ],
         includes: [
@@ -339,7 +339,7 @@ export const courseData = {
             { title: "Not Just Transform Yoga - A Transform You", description: "Yoga is taught as a way of living, not as a skill to perform. Focus on how you think, react, handle stress, and relate to others." },
             { title: "Lifetime Re-Attendance & Assistant Teaching", description: "Graduates can return to future trainings for deeper practice and assist as teachers to build confidence." },
             { title: "Small Group Deep Work", description: "8-10 students per batch for personalized guidance, deeper alignment, and maximum benefit from every session." },
-            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, therapeutic understanding, and class structuring." },
+            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, functional movement understanding, and class structuring." },
             { title: "Rooted in Himalayan Lineage", description: "Teachings inspired by Himalayan yogic traditions covering Karma, Jnana, Bhakti, and Raja Yoga paths." },
         ],
         includes: [
@@ -528,7 +528,7 @@ export const courseData = {
             { title: "Not Just Transform Yoga - A Transform You", description: "Yoga is taught as a way of living, not as a skill to perform. Focus on how you think, react, handle stress, and relate to others." },
             { title: "Lifetime Re-Attendance & Assistant Teaching", description: "Graduates can return to future trainings for deeper practice and assist as teachers to build confidence." },
             { title: "Small Group Deep Work", description: "8-10 students per batch for personalized guidance, deeper alignment, and maximum benefit from every session." },
-            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, therapeutic understanding, and class structuring." },
+            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, functional movement understanding, and class structuring." },
             { title: "Rooted in Himalayan Lineage", description: "Teachings inspired by Himalayan yogic traditions covering Karma, Jnana, Bhakti, and Raja Yoga paths." },
         ],
         includes: [
@@ -554,8 +554,8 @@ export const courseData = {
         duration: "12 Days",
         location: "YogaGarhi Ashram in Rishikesh India",
         level: "Beginner",
-        originalPrice: "$899",
-        price: "$599",
+        originalPrice: "€900",
+        price: "€900",
         certification: "Yoga Alliance Certification",
         meals: "Delicious and Nutritious Vegan & Vegetarian Dishes",
         bonus: "Get a bonus 1 month access of live class, an ancient yoga textbook, and a non-slip yoga mat to elevate your practice.",
@@ -708,7 +708,7 @@ export const courseData = {
             { title: "Not Just Transform Yoga - A Transform You", description: "Yoga is taught as a way of living, not as a skill to perform. Focus on how you think, react, handle stress, and relate to others." },
             { title: "Lifetime Re-Attendance & Assistant Teaching", description: "Graduates can return to future trainings for deeper practice and assist as teachers to build confidence." },
             { title: "Small Group Deep Work", description: "8-10 students per batch for personalized guidance, deeper alignment, and maximum benefit from every session." },
-            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, therapeutic understanding, and class structuring." },
+            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, functional movement understanding, and class structuring." },
             { title: "Rooted in Himalayan Lineage", description: "Teachings inspired by Himalayan yogic traditions covering Karma, Jnana, Bhakti, and Raja Yoga paths." },
         ],
         includes: [
@@ -727,17 +727,17 @@ export const courseData = {
     "200-hour-rishikesh": {
         title: "200 HOUR YOGA",
         subtitle: "TEACHER TRAINING COURSE IN RISHIKESH",
-        duration: "24 Days",
+        duration: "22 Days / 21 Nights",
         location: "YogaGarhi Ashram in Rishikesh India",
         level: "Beginner to Intermediate",
-        originalPrice: "$1299",
-        price: "$999",
+        originalPrice: "€1550",
+        price: "€1550",
         certification: "Yoga Alliance Certification",
         meals: "Delicious and Nutritious Vegan & Vegetarian Dishes",
         bonus: "Get a bonus 1 month access of live class, an ancient yoga textbook, and a non-slip yoga mat to elevate your practice.",
         welcomeTitle: "Welcome to Yogagarhi",
         welcomeText: "Our most popular 200-Hour Yoga Teacher Training (TTC) in Rishikesh is designed for those seeking to become certified yoga teachers with comprehensive knowledge and practical skills. This internationally recognized Yoga Alliance certification prepares you to teach confidently anywhere in the world.",
-        welcomeText2: "Immerse yourself in an intensive 24-day journey covering multi-style yoga including Hatha, Vinyasa, Ashtanga, and Iyengar. Our holistic curriculum ensures you graduate not just as a yoga teacher, but as a transformed individual ready to spread the wisdom of yoga globally.",
+        welcomeText2: "Immerse yourself in an intensive 22-day journey covering multi-style yoga including Hatha, Vinyasa, Ashtanga, and Iyengar. Our holistic curriculum ensures you graduate not just as a yoga teacher, but as a transformed individual ready to spread the wisdom of yoga globally.",
         features: [
             { title: "Multi-style Yoga Teaching", description: "Master Hatha, Vinyasa, Ashtanga & Iyengar styles. Our comprehensive approach covers all major yoga traditions." },
             { title: "Yoga Alliance RYT-200 Certified", description: "Receive the globally recognized 200-hour certification. Teach yoga professionally anywhere in the world." },
@@ -888,11 +888,11 @@ export const courseData = {
             { title: "Not Just Transform Yoga - A Transform You", description: "Yoga is taught as a way of living, not as a skill to perform. Focus on how you think, react, handle stress, and relate to others." },
             { title: "Lifetime Re-Attendance & Assistant Teaching", description: "Graduates can return to future trainings for deeper practice and assist as teachers to build confidence." },
             { title: "Small Group Deep Work", description: "8-10 students per batch for personalized guidance, deeper alignment, and maximum benefit from every session." },
-            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, therapeutic understanding, and class structuring." },
+            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, functional movement understanding, and class structuring." },
             { title: "Rooted in Himalayan Lineage", description: "Teachings inspired by Himalayan yogic traditions covering Karma, Jnana, Bhakti, and Raja Yoga paths." },
         ],
         includes: [
-            "24 nights accommodation",
+            "21 nights accommodation",
             "3 vegetarian/vegan meals daily",
             "All course materials & manuals",
             "Yoga Alliance Certificate (RYT-200)",
@@ -913,7 +913,7 @@ export const courseData = {
         location: "YogaGarhi Ashram in Rishikesh India",
         level: "Intermediate to Advanced",
         prerequisite: "200-Hour Yoga Teacher Training (RYT 200) required",
-        originalPrice: "$1299",
+        originalPrice: "$1099",
         price: "$1099",
         certification: "300-Hour Certificate of Completion from YogaGarhi",
         meals: "Delicious and Nutritious Vegan & Vegetarian Dishes",
@@ -942,7 +942,7 @@ export const courseData = {
                     "Advanced Ashtanga Primary & Intermediate series breakdowns",
                     "Arm balances, deep backbends, and inversion progression mechanics",
                     "Hands-on adjustments and intelligent touch methodology",
-                    "Therapeutic posture modifications and prop biomechanics"
+                    "Adaptive posture modifications and prop biomechanics"
                 ]
             },
             {
@@ -1552,6 +1552,451 @@ export const courseData = {
             "1-month complimentary access to live online alumni classes",
             "Pre-YTTC online preparation course",
             "Lifetime re-attendance opportunity",
+        ],
+    },
+    "100-hour-dharamshala": {
+        title: "100 HOUR YOGA",
+        subtitle: "TEACHER TRAINING COURSE IN DHARAMSHALA",
+        duration: "12 Days / 11 Nights",
+        location: "[[CONFIRM_VENUE: McLeod Ganj / Dharamkot / Bhagsu]], Dharamshala, India",
+        level: "Beginner",
+        originalPrice: "€850",
+        price: "€850",
+        certification: "100-Hour Certificate of Completion [[CONFIRM_YA_STATUS]]",
+        meals: "Nutritious Sattvic Himalayan Vegetarian & Vegan Cuisine",
+        bonus: "Complimentary access to Pre-YTTC online preparatory modules, traditional textbook, and practice materials.",
+        welcomeTitle: "Welcome to YogaGarhi Dharamshala",
+        welcomeText: "Set high in the Dhauladhar range of the Himalayas, our 100-Hour Yoga Teacher Training in Dharamshala (also spelled Dharamsala) offers an intensive 12-day personal immersion in classical Hatha and Ashtanga Vinyasa yoga. Nestled amid deodar cedar forests, serene mountain air, and a tranquil Tibetan Buddhist meditation atmosphere, this foundational immersion is designed for seekers seeking self-transformation and deep practice.",
+        welcomeText2: "Whether you wish to experience ashram discipline, cultivate a consistent morning sadhana, or take the first step towards a full 200-hour teaching certificate, our Himalayan campus provides personal guidance in small, intimate cohorts.",
+        features: [
+            { title: "Himalayan Mountain Setting", description: "Practice yoga surrounded by cedar forests, snow-dusted peaks, and peaceful mountain air." },
+            { title: "Foundational Asana & Alignment", description: "Systematic instruction in classical Hatha and Ashtanga Vinyasa postures with intelligent alignment." },
+            { title: "Pranayama & Himalayan Meditation", description: "Daily breathwork, nadi shodhana, and silent meditation inspired by Himalayan and Tibetan traditions." },
+            { title: "Small Intimate Cohorts", description: "Personalized mentorship and attentive posture adjustments from dedicated lead instructors." },
+            { title: "Sattvic Mountain Meals", description: "Three nourishing Ayurvedic and vegetarian meals daily, freshly prepared with seasonal Himalayan ingredients." },
+            { title: "Weekend Excursions", description: "Visit the sacred Bhagsu waterfall and historic Buddhist monasteries across Dharamkot and McLeod Ganj." },
+        ],
+        curriculum: [
+            {
+                title: "Ashtanga Yoga Postures",
+                items: [
+                    "Introduction to Ashtanga yoga followed by Sun salutation A & B",
+                    "Standing sequence postures & use of yoga props",
+                    "Primary series practiced thoroughly",
+                    "Mysore style practice examination"
+                ]
+            },
+            {
+                title: "Yoga Philosophy",
+                items: [
+                    "Introduction to Yoga Philosophy and its evolution",
+                    "Introduction to yoga sutras of Patanjali",
+                    "Nadis (Ida, Pingala & Sushumna)",
+                    "Chakras - the energy channels",
+                    "Hatha yoga limbs (Shatkarma, Asana, Pranayama)",
+                    "Eight limbs of Ashtanga Yoga"
+                ]
+            },
+            {
+                title: "Pranayama Breathing Practices",
+                items: [
+                    "Introduction to Pranayama and its benefits",
+                    "Introduction to Shatkarma (six cleansing practices)",
+                    "Clavicular, Thoracic & Diaphragmatic Breathing",
+                    "Yogic Breathing, Ujjayi, Bhastrika, Kapalbhati",
+                    "Nadi-Sodhana, Bhramari, Surya-Bhedi, Chandra-Bhedi"
+                ]
+            },
+            {
+                title: "Recitation of Sacred Sound",
+                items: [
+                    "Om Asato Maa Sadgamaya (Mantra from Upanishad)",
+                    "Vande Gurunam Charnarvinde (Ashtanga opening mantra)",
+                    "Guru Brahma Guru Vishnu (Guru stotram)",
+                    "Om Tryambakam Yajamahe (Mantra on Lord Shiva)"
+                ]
+            },
+            {
+                title: "Anatomy and Physiology",
+                items: [
+                    "Body Movement & Planes",
+                    "Joints and How to Protect them in Asanas",
+                    "Anatomy of Ankle, Knee, Spine & Shoulder",
+                    "Breathing mechanism in Yoga",
+                    "Introduction to Mudras & Bandhas"
+                ]
+            },
+            {
+                title: "Teaching Methodology",
+                items: [
+                    "How to sequence a class",
+                    "Working with breathing and posture",
+                    "Adjustments and corrections",
+                    "Working with different level of students",
+                    "Building positive & conscious communication"
+                ]
+            },
+            {
+                title: "Meditation",
+                items: [
+                    "Introduction to Meditation",
+                    "Different types of meditation techniques",
+                    "Om / Mantra Meditation",
+                    "Trataka and Silence Meditation"
+                ]
+            },
+            {
+                title: "Alignment Principles & Prop Adjustments",
+                items: [
+                    "Fundamental principles of joint stacking, pelvic neutrality, and spine lengthening",
+                    "Safe execution and anatomical alignment in foundational standing and seated poses",
+                    "Effective use of props (blocks, straps, bolsters) to support safe practice",
+                    "Identifying common postural habits and applying self-correction techniques"
+                ]
+            },
+            {
+                title: "Traditional Hatha Yoga",
+                items: [
+                    "Classical Pawanmuktasana series 1, 2, and 3 for joint mobility and prana flow",
+                    "Traditional Surya Namaskar variations with breath-synchronized awareness",
+                    "Foundational standing, balancing, forward bending, and gentle twisting asanas",
+                    "Principles of Sthira Sukham Asanam (cultivating steadiness and ease in each pose)"
+                ]
+            },
+            {
+                title: "Iyengar Yoga Foundations",
+                items: [
+                    "Introduction to precision, geometry, and anatomical awareness in asanas",
+                    "Prop-assisted alignment techniques using blocks, belts, and wall support",
+                    "Building strength, stability, and postural endurance through extended holds",
+                    "Safe alignment techniques for knee tracking, hip mobility, and spinal posture"
+                ]
+            },
+            {
+                title: "Vinyasa Yoga Flow",
+                items: [
+                    "Breath-synchronized movement connecting postures into fluid sequences",
+                    "Step-by-step breakdown of Sun Salutation transitions and basic vinyasa waves",
+                    "Coordinating conscious inhalation with heart openers and exhalation with folds",
+                    "Cultivating mind-body rhythm, fluid grace, and conscious breath awareness"
+                ]
+            },
+            {
+                title: "Additional Classes",
+                items: [
+                    "Kirtan Meditation",
+                    "Yin Yoga & Partner Yoga",
+                    "Acro Yoga",
+                    "Ayurvedic lifestyle class"
+                ]
+            }
+        ],
+        dailySchedule: [
+            { time: "6:00 AM", activity: "Wake Up & Morning Cleansing" },
+            { time: "6:30 AM", activity: "Pranayama & Meditation" },
+            { time: "7:30 AM", activity: "Asana Practice (Hatha/Ashtanga)" },
+            { time: "9:00 AM", activity: "Breakfast" },
+            { time: "10:00 AM", activity: "Yoga Philosophy / Anatomy" },
+            { time: "12:00 PM", activity: "Lunch & Rest" },
+            { time: "3:00 PM", activity: "Teaching Methodology / Alignment" },
+            { time: "5:00 PM", activity: "Asana Practice (Vinyasa)" },
+            { time: "7:00 PM", activity: "Dinner" },
+            { time: "8:00 PM", activity: "Evening Meditation / Free Time" },
+        ],
+        whatSetsApart: [
+            { title: "Begin Before You Begin - Pre YTTC", description: "The World's First Pre-YTTC school. Optional Complimentary Online Pre-YTTC Preparation to feel confident and prepared." },
+            { title: "Not Just Transform Yoga - A Transform You", description: "Yoga is taught as a way of living, not as a skill to perform. Focus on how you think, react, handle stress, and relate to others." },
+            { title: "Lifetime Re-Attendance & Assistant Teaching", description: "Graduates can return to future trainings for deeper practice and assist as teachers to build confidence." },
+            { title: "Small Group Deep Work", description: "8-10 students per batch for personalized guidance, deeper alignment, and maximum benefit from every session." },
+            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, functional movement understanding, and class structuring." },
+            { title: "Rooted in Himalayan Lineage", description: "Teachings inspired by Himalayan yogic traditions covering Karma, Jnana, Bhakti, and Raja Yoga paths." },
+        ],
+        includes: [
+            "11 nights residential ashram accommodation",
+            "3 sattvic Ayurvedic vegetarian meals daily",
+            "100-Hour Certificate of Completion",
+            "Comprehensive course study manual",
+            "Pre-YTTC online preparation materials",
+            "Weekend cultural excursion in Dharamshala",
+        ],
+    },
+    "200-hour-dharamshala": {
+        title: "200 HOUR YOGA",
+        subtitle: "TEACHER TRAINING COURSE IN DHARAMSHALA",
+        duration: "22 Days / 21 Nights",
+        location: "[[CONFIRM_VENUE: McLeod Ganj / Dharamkot / Bhagsu]], Dharamshala, India",
+        level: "Beginner to Intermediate",
+        originalPrice: "€1450",
+        price: "€1450",
+        certification: "200-Hour Certificate of Completion [[CONFIRM_YA_STATUS]]",
+        meals: "Nutritious Sattvic Himalayan Vegetarian & Vegan Cuisine",
+        bonus: "Complimentary access to Pre-YTTC preparatory course, yoga mat, and comprehensive study manuals.",
+        welcomeTitle: "Welcome to YogaGarhi Dharamshala",
+        welcomeText: "Experience a life-changing 22-day residential 200-Hour Yoga Teacher Training in Dharamshala, nestled in the peaceful Dhauladhar Himalayan foothills of Himachal Pradesh. Surrounded by deodar cedar forests and vibrant spiritual culture, our program blends authentic Hatha, Ashtanga Vinyasa, pranayama, anatomy, and yogic philosophy.",
+        welcomeText2: "Studying in Dharamshala (Dharamsala) provides a contemplative refuge from crowded city centers. Our structured curriculum equips you with the pedagogical skills, voice calibration, hands-on adjustments, and ethical grounding needed to graduate as a confident, knowledgeable yoga instructor.",
+        features: [
+            { title: "Dhauladhar Mountain Sanctuary", description: "Study in an elevated sanctuary blessed with crisp Himalayan air, quiet walking trails, and rich Tibetan spiritual culture." },
+            { title: "Multi-Style Asana Mastery", description: "In-depth practice of traditional Hatha yoga and primary series Ashtanga Vinyasa with biomechanical precision." },
+            { title: "Hands-on Adjustment & Sequencing", description: "Learn safe hands-on assists, postural modifications for diverse body types, and intelligent class design." },
+            { title: "Subtle Anatomy & Philosophy", description: "Comprehensive exploration of Patanjali's Yoga Sutras, nadis, chakras, bandhas, and functional muscular anatomy." },
+            { title: "Intimate Cohorts (8–10 Students)", description: "Direct daily mentorship and personalized teaching feedback from experienced Himalayan gurus." },
+            { title: "Sacred Himalayan Treks", description: "Weekend guided excursions including the iconic Triund mountain trek and visits to historic Buddhist monasteries." },
+        ],
+        curriculum: [
+            {
+                title: "Ashtanga Yoga Postures",
+                items: [
+                    "Complete Ashtanga yoga primary series by K. Pattabhi Jois",
+                    "Week 1: Introduction & Sun salutation A & B",
+                    "Week 2: Standing sequence postures & yoga props",
+                    "Week 3: Seated sequence & Finishing postures",
+                    "Week 4: Mysore style & Teaching practice"
+                ]
+            },
+            {
+                title: "Yoga Philosophy",
+                items: [
+                    "Complete yoga sutras of Patanjali",
+                    "Eight limbs of Ashtanga Yoga",
+                    "Pancha-Vayus & Panchakoshas",
+                    "Sattva, Rajas & Tamas (Triguna)",
+                    "Introduction to Vedas",
+                    "Lives of yogis (Inspiring stories)"
+                ]
+            },
+            {
+                title: "Pranayama Breathing Practices",
+                items: [
+                    "Complete pranayama techniques",
+                    "All six Shatkarma cleansing practices",
+                    "Advanced breathing: Sheetali, Sheetkari",
+                    "Kumbhaka (breath retention)",
+                    "Integration with asana practice"
+                ]
+            },
+            {
+                title: "Recitation of Sacred Sound",
+                items: [
+                    "Complete mantra collection",
+                    "Om Tryambakam Yajamahe",
+                    "Hare Rama, Hare Krishna (Maha mantra)",
+                    "Yogena Cittasya (Sloka on Sage Patanjali)",
+                    "Daily mantra chanting practice"
+                ]
+            },
+            {
+                title: "Anatomy and Physiology",
+                items: [
+                    "Complete body systems study",
+                    "Physiology of muscles & joints",
+                    "Respiratory & Nervous system",
+                    "Food & Digestive System",
+                    "Workshop on different Asanas"
+                ]
+            },
+            {
+                title: "Teaching Methodology",
+                items: [
+                    "Complete class sequencing",
+                    "Demonstration & observation principles",
+                    "Mental & emotional preparation",
+                    "Step by step class structure planning",
+                    "Practicum & teaching evaluations"
+                ]
+            },
+            {
+                title: "Meditation & Bandhas",
+                items: [
+                    "Osho Dynamic meditation",
+                    "Nada Brahma Meditation",
+                    "Antar Mouna & Ajapa Japa",
+                    "All four Bandhas mastery",
+                    "Integration with asana & pranayama"
+                ]
+            },
+            {
+                title: "Art of Alignment & Hands-on Adjustments",
+                items: [
+                    "Comprehensive biomechanics and functional alignment for classical yoga postures",
+                    "Verbal cueing methodology, tactile touch cues, and safe hands-on assists",
+                    "Understanding individual anatomical variations, skeletal compression vs tension",
+                    "Modification strategies using props and stance adjustments for diverse student flexibility"
+                ]
+            },
+            {
+                title: "Classical Hatha Yoga Practice",
+                items: [
+                    "In-depth study of classical Hatha asana principles and sustained holds",
+                    "Complete Hatha sequencing: preparatory warming, peak postures, and counter-poses",
+                    "Balancing solar (Ha) and lunar (Tha) energies through mindful posture practice",
+                    "Integration of Bandhas and Mudras within traditional Hatha asana holding"
+                ]
+            },
+            {
+                title: "Iyengar Yoga & Precision Alignment",
+                items: [
+                    "Methodical alignment utilizing blocks, straps, blankets, and props",
+                    "Precise geometric positioning of hips, pelvis, spine, and shoulder girdle",
+                    "Inversion preparation and prop-assisted alignment for safe headstand and shoulderstand",
+                    "Restorative Iyengar prop setups for supported holding and quiet focus"
+                ]
+            },
+            {
+                title: "Vinyasa Flow & Dynamic Sequencing",
+                items: [
+                    "Intelligent sequencing architecture: progressive warm-up, peak pose, and cool down",
+                    "Dynamic transitions, jump-backs, and jump-throughs with breath awareness",
+                    "Creating thematic vinyasa classes for varying student levels and intentions",
+                    "Pacing, tempo modulation, and holding space during energetic flowing sequences"
+                ]
+            },
+            {
+                title: "Additional Classes",
+                items: [
+                    "Sound Healing sessions",
+                    "Ganges Yoga experience",
+                    "Yin Yoga & Acro Yoga",
+                    "Ayurveda fundamentals",
+                    "Kirtan & Bhajan sessions"
+                ]
+            }
+        ],
+        dailySchedule: [
+            { time: "6:00 AM", activity: "Wake Up & Morning Cleansing" },
+            { time: "6:30 AM", activity: "Pranayama & Meditation" },
+            { time: "7:30 AM", activity: "Asana Practice (Hatha/Ashtanga)" },
+            { time: "9:00 AM", activity: "Breakfast" },
+            { time: "10:00 AM", activity: "Yoga Philosophy / Anatomy" },
+            { time: "12:00 PM", activity: "Lunch & Rest" },
+            { time: "3:00 PM", activity: "Teaching Methodology / Alignment" },
+            { time: "5:00 PM", activity: "Asana Practice (Vinyasa)" },
+            { time: "7:00 PM", activity: "Dinner" },
+            { time: "8:00 PM", activity: "Evening Meditation / Kirtan" },
+        ],
+        whatSetsApart: [
+            { title: "Begin Before You Begin - Pre YTTC", description: "The World's First Pre-YTTC school. Optional Complimentary Online Pre-YTTC Preparation to feel confident and prepared." },
+            { title: "Not Just Transform Yoga - A Transform You", description: "Yoga is taught as a way of living, not as a skill to perform. Focus on how you think, react, handle stress, and relate to others." },
+            { title: "Lifetime Re-Attendance & Assistant Teaching", description: "Graduates can return to future trainings for deeper practice and assist as teachers to build confidence." },
+            { title: "Small Group Deep Work", description: "8-10 students per batch for personalized guidance, deeper alignment, and maximum benefit from every session." },
+            { title: "35+ Functional Ready-to-Use Sequences", description: "Purpose-based yoga sequences for personal practice, teaching clarity, functional movement understanding, and class structuring." },
+            { title: "Rooted in Himalayan Lineage", description: "Teachings inspired by Himalayan yogic traditions covering Karma, Jnana, Bhakti, and Raja Yoga paths." },
+        ],
+        includes: [
+            "21 nights residential accommodation",
+            "3 wholesome sattvic Ayurvedic meals daily",
+            "200-Hour Certificate of Completion",
+            "All physical study manuals and course textbooks",
+            "Guided weekend trek to Triund / Bhagsu waterfall",
+            "Complimentary Pre-YTTC online preparation course",
+        ],
+    },
+    "300-hour-dharamshala": {
+        title: "300 HOUR YOGA",
+        subtitle: "TEACHER TRAINING COURSE IN DHARAMSHALA",
+        duration: "28 Days / 27 Nights",
+        location: "[[CONFIRM_VENUE: McLeod Ganj / Dharamkot / Bhagsu]], Dharamshala, India",
+        level: "Intermediate to Advanced",
+        prerequisite: "Completed 200-Hour Yoga Teacher Training Certificate",
+        originalPrice: "€1850",
+        price: "€1850",
+        certification: "300-Hour Certificate towards RYT 500 pathway [[CONFIRM_YA_STATUS]]",
+        meals: "Nutritious Sattvic Himalayan Vegetarian & Vegan Cuisine",
+        bonus: "Complimentary access to advanced preparatory course, advanced manuals, and lifelong mentorship.",
+        welcomeTitle: "Welcome to YogaGarhi Dharamshala",
+        welcomeText: "Advance your teaching artistry and spiritual sadhana with our intensive 28-day 300-Hour Yoga Teacher Training in Dharamshala, India. Designed exclusively for certified 200-hour teachers, this master-level immersion delves deep into advanced asana mechanics, adaptive alignment, pranayama, Yoga Sutras, and the pathway towards RYT 500 credentials.",
+        welcomeText2: "Immersed in the serene Himalayan heights of Dharamshala (Dharamsala), you will refine your unique teaching voice, master subtle adjustments, explore restorative and adaptive principles, and develop the professional confidence to facilitate workshops, retreats, and foundational teacher trainings worldwide.",
+        features: [
+            { title: "Advanced Asana & Biomechanics", description: "Master advanced inversions, arm balances, deep hip openers, and injury-preventative biomechanics." },
+            { title: "Pathway Towards RYT 500", description: "Advanced 300-hour curriculum serving as your core credential towards the Yoga Alliance 500-hour master pathway." },
+            { title: "Adaptive Alignment & Prop Methodology", description: "Integrate supportive alignment approaches, adaptive adjustments, and restorative relaxation practices." },
+            { title: "Esoteric Himalayan Philosophy", description: "Comprehensive study of the Bhagavad Gita, Upanishads, Patanjali Yoga Sutras, and Tantric subtle energetics." },
+            { title: "Intimate Master Mentorship", description: "Direct daily apprentice-style guidance with seasoned Himalayan senior teachers." },
+            { title: "Mountain Treks & Contemplative Solitude", description: "Contemplative practice amidst towering Himalayan pines, high-altitude meditation, and monastery visits." },
+        ],
+        curriculum: [
+            {
+                title: "Advanced Asana Mastery & Alignment",
+                items: [
+                    "Advanced Ashtanga Primary & Intermediate series breakdowns",
+                    "Arm balances, deep backbends, and inversion progression mechanics",
+                    "Hands-on adjustments and intelligent touch methodology",
+                    "Therapeutic posture modifications and prop biomechanics"
+                ]
+            },
+            {
+                title: "Advanced Pranayama, Bandhas & Kriyas",
+                items: [
+                    "Shatkarma purification practices (Neti, Dhauti, Nauli, Trataka)",
+                    "Classical Kumbhaka retention practices and energy lock (Bandha) mastery",
+                    "Nadi Shodhana, Bhastrika, Kapalabhati, and Sheetali progressions",
+                    "Pranic energy channels, Kundalini awakening principles, and micro-cosmic orbit"
+                ]
+            },
+            {
+                title: "Yoga Philosophy, Sutras & Sacred Texts",
+                items: [
+                    "In-depth commentary on Patanjali Yoga Sutras (Samadhi and Sadhana Padas)",
+                    "Bhagavad Gita core teachings on Karma, Bhakti, Jnana, and Raja Yoga",
+                    "Upanishadic wisdom and Advaita Vedanta non-dual philosophy",
+                    "Ethics of yoga teaching, teacher-student relationship, and spiritual code of conduct"
+                ]
+            },
+            {
+                title: "Functional Anatomy & Biomechanics",
+                items: [
+                    "Musculoskeletal analysis of complex asanas and spinal mechanics",
+                    "Fascia, nervous system regulation, and neuromuscular re-education",
+                    "Preventing and rehabilitating common yoga injuries (lumbar, SI joint, shoulder, wrist)",
+                    "Subtle anatomy: Chakras, Nadis, Vayus, and Koshas mapped to the physical body"
+                ]
+            },
+            {
+                title: "Advanced Sequencing & Teaching Methodology",
+                items: [
+                    "Vinyasa Krama: Intelligent peak pose class architecture",
+                    "Thematic sequencing for stress relief, energetic balancing, and physical strength",
+                    "Voice projection, classroom psychology, holding space, and inclusive adjustments",
+                    "Designing workshops, specialty series, and weekend intensive retreats"
+                ]
+            },
+            {
+                title: "Meditation, Yoga Nidra & Sound Healing",
+                items: [
+                    "Vipassana, Antar Mouna, and active dynamic meditation practices",
+                    "Yoga Nidra script design and nervous system down-regulation",
+                    "Vedic mantra chanting, Japa meditation, and sound healing frequencies",
+                    "Evening Satsang, Kirtan, and contemplative self-inquiry (Swadhyaya)"
+                ]
+            }
+        ],
+        dailySchedule: [
+            { time: "06:00 AM", activity: "Wake Up & Herbal Tea Cleansing" },
+            { time: "06:30 AM", activity: "Shatkarma, Pranayama & Meditation" },
+            { time: "07:30 AM", activity: "Advanced Asana Practice (Ashtanga / Hatha Vinyasa)" },
+            { time: "09:15 AM", activity: "Sattvic Ayurvedic Breakfast" },
+            { time: "10:30 AM", activity: "Advanced Anatomy, Biomechanics & Injury Prevention" },
+            { time: "12:00 PM", activity: "Nutritious Vegetarian / Vegan Lunch & Rest" },
+            { time: "03:00 PM", activity: "Yoga Philosophy, Sutras & Ethics" },
+            { time: "04:30 PM", activity: "Teaching Practicum, Alignment & Adjustments Lab" },
+            { time: "06:00 PM", activity: "Gentle Yin Yoga, Yoga Nidra & Meditation" },
+            { time: "07:30 PM", activity: "Ayurvedic Dinner" },
+            { time: "08:30 PM", activity: "Evening Satsang, Kirtan, or Silent Reflection" },
+        ],
+        whatSetsApart: [
+            { title: "World's First Pre-YTTC School", description: "Get complimentary access to our online Pre-YTTC course before you arrive so you start Day 1 confident and ready." },
+            { title: "True 8–10 Student Batch Size", description: "Strict cap on class sizes ensuring direct daily feedback from senior E-RYT 500 teachers, never overcrowded halls." },
+            { title: "Pathway to Yoga Alliance RYT 500", description: "Fully certified curriculum allowing you to graduate as an internationally accredited 500-hour master instructor." },
+            { title: "Tapovan Spiritual Ashram Setting", description: "Immerse in peaceful Tapovan near the sacred Ganges, walking distance from Laxman Jhula and tranquil Himalayan forest trails." },
+            { title: "Lifetime Re-Attendance Privilege", description: "Graduates are welcomed back to repeat future training modules free of tuition at any YogaGarhi global campus." },
+            { title: "Comprehensive Holistic Living", description: "Organic Ayurvedic cuisine, private/shared Himalayan-view rooms, and rejuvenating Ayurvedic massages included." },
+        ],
+        includes: [
+            "27 nights residential ashram accommodation",
+            "3 organic sattvic Ayurvedic meals daily",
+            "300-Hour Certificate of Completion (RYT 500 pathway)",
+            "Comprehensive advanced 300-hour curriculum manual",
+            "Guided Himalayan excursions and temple visits",
+            "Pre-YTTC online preparation modules",
         ],
     },
 };

@@ -40,30 +40,30 @@ export const PRICING_200_HOUR_TIERS = {
 // 300 Hour Yoga Teacher Training Rishikesh Pricing
 export const COURSE_300_HOUR_RISHIKESH_PRICING = {
   shared: {
-    originalPrice: "$1,299",
+    originalPrice: "$1,099",
     price: "$1,099",
-    savings: 200,
+    savings: 0,
     roomType: "Tuition Only",
     numericPrice: 1099
   },
   triple: {
-    originalPrice: "$1,599",
+    originalPrice: "$1,399",
     price: "$1,399",
-    savings: 200,
+    savings: 0,
     roomType: "Shared Room",
     numericPrice: 1399
   },
   deluxe: {
-    originalPrice: "$1,899",
+    originalPrice: "$1,699",
     price: "$1,699",
-    savings: 200,
+    savings: 0,
     roomType: "Double Sharing",
     numericPrice: 1699
   },
   vip: {
-    originalPrice: "$2,199",
+    originalPrice: "$1,999",
     price: "$1,999",
-    savings: 200,
+    savings: 0,
     roomType: "Private Room",
     numericPrice: 1999
   }

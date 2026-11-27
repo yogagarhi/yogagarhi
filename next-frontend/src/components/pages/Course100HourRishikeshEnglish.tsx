@@ -1138,10 +1138,10 @@ export default function Course100HourRishikesh({ initialBatches, syllabusSlot }:
                   <div className="text-center lg:text-left border-r border-border/30 pr-4 last:border-r-0">
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
                     <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                      {SHOW_COMPARE_PRICE && (<span className="text-sm text-muted-foreground line-through">$899</span>)}
-                      <span className="font-heading text-2xl md:text-3xl font-bold text-primary animate-pulse">$599</span>
+                      
+                      <span className="font-heading text-2xl md:text-3xl font-bold text-primary animate-pulse">€900</span>
                     </div>
-                    {SHOW_COMPARE_PRICE && (<span className="inline-block mt-1 px-2 py-0.5 text-xs font-medium bg-green-100 text-green-700 rounded-full">Save $300</span>)}
+                    
                   </div>
 
                   {/* Book Now Button */}
@@ -3357,10 +3357,9 @@ This is not a transactional relationship — it is a lifelong connection.`}
                           </span>
                         )}
 
-                        {/* Early Bird */}
+                        {/* Course Fee */}
                         <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
-                          <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                          {SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>)}
+                          <p className="font-heading font-bold text-foreground text-sm">Course Fee</p>
                         </div>
 
                         {/* Book Button */}
@@ -3408,52 +3407,13 @@ This is not a transactional relationship — it is a lifelong connection.`}
                         Course Duration: 11 Nights / 12 Days
                       </p>
 
-                      {/* Tuition Fee Only */}
+                      {/* Course Fee */}
                       <div className="text-center p-4 bg-secondary/30 rounded-lg border-2 border-accent/20">
-                        <p className="text-xs text-accent font-bold uppercase tracking-wider mb-1">Tuition Fee Only</p>
+                        <p className="text-xs text-accent font-bold uppercase tracking-wider mb-1">Course Fee</p>
                         <p className="font-heading text-2xl font-bold text-foreground">
-                          $599
+                          €900
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$899</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>)}
-                      </div>
-
-                      {/* Triple Sharing */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Triple Sharing</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,149
-                        </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,449</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>)}
-                      </div>
-
-                      {/* Double Sharing */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Double Sharing</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,349
-                        </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,649</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>)}
-                      </div>
-
-                      {/* Private Room */}
-                      <div className="text-center p-4 bg-secondary/30 rounded-lg">
-                        <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Private Room</p>
-                        <p className="font-heading text-2xl font-bold text-foreground">
-                          $1,649
-                        </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,949</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($300 OFF)</span>
-                        </p>)}
+                        
                       </div>
 
                       {/* CTA */}
@@ -4402,7 +4362,7 @@ This is not a transactional relationship — it is a lifelong connection.`}
         <Dialog open={showQuickEnquiryDialog} onOpenChange={setShowQuickEnquiryDialog}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
-              <DialogTitle className="font-heading text-2xl">Claim Your $250 Early Bird Discount</DialogTitle>
+              <DialogTitle className="font-heading text-2xl">Apply for Your Course</DialogTitle>
               <DialogDescription className="text-sm text-muted-foreground">
                 Connect with us and begin your journey of transformation
               </DialogDescription>

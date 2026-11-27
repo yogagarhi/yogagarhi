@@ -12,6 +12,8 @@ import { getCloudinaryImage } from "@/utils/cloudinary";
 import PromoCountdown from "@/components/PromoCountdown";
 import { PROMO_OFFER } from "@/constants/offers";
 import { bali200, isSaleLive } from "@/config/bali200";
+import { SOUND_HEALING_RISHIKESH_READY, KUNDALINI_RISHIKESH_READY, PRENATAL_RISHIKESH_READY } from "@/config/specialtyCoursesConfig";
+import { DHARAMSHALA_200_READY, DHARAMSHALA_100_READY, DHARAMSHALA_300_READY, IS_DHARAMSHALA_LOCATION_VISIBLE } from "@/config/dharamshalaConfig";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const logo = "/images/logo/yogagarhi-logo.png";
@@ -98,7 +100,7 @@ interface NavDropdownItem {
   name: string;
   href: string;
   icon: any;
-  subItems?: { id?: string; name: string; href: string }[];
+  subItems?: { id?: string; name: string; href: string; isDirect?: boolean }[];
 }
 
 const getCourses = (t: any): NavDropdownItem[] => {
@@ -130,6 +132,9 @@ const getCourses = (t: any): NavDropdownItem[] => {
       { id: "course100", name: t("course100"), href: "/100-hour-yoga-teacher-training-in-rishikesh" },
       { id: "course200", name: t("course200"), href: "/200-hour-yoga-teacher-training-in-rishikesh" },
       { id: "course300", name: t("course300"), href: "/300-hour-yoga-teacher-training-in-rishikesh" },
+      ...(SOUND_HEALING_RISHIKESH_READY ? [{ id: "soundHealingRishikesh", name: "Sound Healing Course", href: "/sound-healing-course-in-rishikesh", isDirect: true }] : []),
+      ...(KUNDALINI_RISHIKESH_READY ? [{ id: "kundaliniRishikesh", name: "200 Hour Kundalini Yoga TTC", href: "/200-hour-kundalini-yoga-teacher-training-in-rishikesh", isDirect: true }] : []),
+      ...(PRENATAL_RISHIKESH_READY ? [{ id: "prenatalRishikesh", name: "85 Hour Prenatal Yoga TTC", href: "/85-hour-prenatal-yoga-teacher-training-in-rishikesh", isDirect: true }] : []),
     ]
   },
   {
@@ -143,6 +148,17 @@ const getCourses = (t: any): NavDropdownItem[] => {
       { id: "course300", name: t("course300"), href: "/300-hour-yoga-teacher-training-in-varkala" },
     ]
   },
+  ...(IS_DHARAMSHALA_LOCATION_VISIBLE ? [{
+    id: "dharamshala",
+    name: "Dharamshala, India",
+    href: "#",
+    icon: Mountain,
+    subItems: [
+      ...(DHARAMSHALA_100_READY ? [{ id: "course100Dharamshala", name: "100 Hour Yoga TTC", href: "/100-hour-yoga-teacher-training-in-dharamshala", isDirect: true }] : []),
+      ...(DHARAMSHALA_200_READY ? [{ id: "course200Dharamshala", name: "200 Hour Yoga TTC", href: "/200-hour-yoga-teacher-training-in-dharamshala", isDirect: true }] : []),
+      ...(DHARAMSHALA_300_READY ? [{ id: "course300Dharamshala", name: "300 Hour Yoga TTC", href: "/300-hour-yoga-teacher-training-in-dharamshala", isDirect: true }] : []),
+    ]
+  }] : []),
 ];
 };
 
@@ -342,6 +358,7 @@ export default function Header() {
   const isHome = cleanPath === "/";
   const isExcluded =
     cleanPath.includes("rishikesh") ||
+    cleanPath.includes("dharamshala") ||
     cleanPath.includes("varkala") ||
     cleanPath.includes("100-hour") ||
     cleanPath.includes("300-hour") ||
@@ -523,11 +540,10 @@ export default function Header() {
                                       >
                                         <ul className="p-2 list-none m-0">
                                           {item.subItems.map((sub) => {
-                                            const isDirectLink = sub.href === '/sound-healing-certification-in-rishikesh';
-                                            const SubLinkComponent = isDirectLink ? NextLink : Link;
+                                            const SubLink = (sub as any).isDirect ? NextLink : Link;
                                             return (
                                               <li key={sub.id || sub.name} className="list-none">
-                                                <SubLinkComponent
+                                                <SubLink
                                                   href={sub.href}
                                                   prefetch={false}
                                                   onClick={() => {
@@ -540,7 +556,7 @@ export default function Header() {
                                                     }`}
                                                 >
                                                   {sub.name}
-                                                </SubLinkComponent>
+                                                </SubLink>
                                               </li>
                                             );
                                           })}
@@ -716,10 +732,9 @@ export default function Header() {
                                   <div className={`overflow-hidden transition-all duration-300 ${mobileOpenSubDropdown === subItemKey ? 'max-h-48 mt-1' : 'max-h-0'}`}>
                                     <div className="pl-8 flex flex-col gap-1 pb-2">
                                       {item.subItems.map((sub) => {
-                                        const isDirectLink = sub.href === '/sound-healing-certification-in-rishikesh';
-                                        const SubLinkComponent = isDirectLink ? NextLink : Link;
+                                        const SubLink = (sub as any).isDirect ? NextLink : Link;
                                         return (
-                                          <SubLinkComponent
+                                          <SubLink
                                             key={sub.id || sub.name}
                                             href={sub.href}
                                             onClick={() => setIsOpen(false)}
@@ -729,7 +744,7 @@ export default function Header() {
                                               }`}
                                           >
                                             {sub.name}
-                                          </SubLinkComponent>
+                                          </SubLink>
                                         );
                                       })}
                                     </div>

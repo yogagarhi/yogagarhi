@@ -327,20 +327,6 @@
       "handsOnCategory": "티칭 실습",
       "handsOnTitle": "핸즈온 어시스트 & 시퀀싱",
       "handsOnDesc": "부상 없는 안전한 핸즈온 기술, 해부학적 원리, 체형별 맞춤 시퀀스 구성법을 습득합니다.",
-      "manifestoBadge": "수강생 선언문",
-      "manifestoHeading": "남을 가르칠 생각이 없으셔도 괜찮습니다. 바로 여러분을 위해 준비된 학교입니다.",
-      "manifestoQuote": "\"저는 강사가 되려는 게 아니라, 그저 제 요가를 깊이 알고 싶을 뿐이에요.\"",
-      "manifestoIntro": "저희에게 문의하시는 분의 절반 이상이 조심스럽게 이렇게 말씀하십니다. 전혀 미안해하실 필요가 없습니다. 원래 인도에서 요가는 취업 준비 과정이 아니라, 진정한 나를 찾아가는 구도의 길이었습니다. 시대가 변해도 가장 중요한 것은 언제나 수련자 자신의 내적 성장입니다.",
-      "manifestoB1Title": "당신 자신이 바로 전통입니다:",
-      "manifestoB1Desc": "수천 년 동안 사람들이 구루를 찾아 떠났던 유일한 이유는 오직 자기 탐구 때문이었습니다.",
-      "manifestoB2Title": "오롯이 수련에 집중하는 경험:",
-      "manifestoB2Desc": "sadhana, pranayama, 순수한 식단, 경전 공부 등 요가가 가진 본래의 삶을 온전히 누려보십시오.",
-      "manifestoB3Title": "가장 깊은 배움의 길:",
-      "manifestoB3Desc": "아사나의 원리를 타인에게 설명할 수 있게 되는 것은, 내 몸으로 완전히 이해하는 가장 좋은 방법입니다.",
-      "manifestoB4Title": "1년간의 수련 멘토링:",
-      "manifestoB4Desc": "저희의 멘토링은 요가 강사만을 위한 것이 아닙니다. 여러분의 평생 수련을 길게 응원합니다.",
-      "manifestoFooter": "한 명의 학생으로 오셔서, 더 깊은 구도자가 되어 일상으로 돌아가십시오. 그것만으로도 충분합니다.",
-      "manifestoPill": "부담 없이 • 유효기간 없이",
       "seqBookBadge": "특별 혜택",
       "seqBookCategory": "교재",
       "seqBookTitle": "35가지 실전 시퀀스 가이드북",
@@ -1381,20 +1367,6 @@
     "handsOnCategory": "티칭 실습",
     "handsOnTitle": "핸즈온 어시스트 & 시퀀싱",
     "handsOnDesc": "부상 없는 안전한 핸즈온 기술, 해부학적 원리, 체형별 맞춤 시퀀스 구성법을 습득합니다.",
-    "manifestoBadge": "수강생 선언문",
-    "manifestoHeading": "남을 가르칠 생각이 없으셔도 괜찮습니다. 바로 여러분을 위해 준비된 학교입니다.",
-    "manifestoQuote": "\"저는 강사가 되려는 게 아니라, 그저 제 요가를 깊이 알고 싶을 뿐이에요.\"",
-    "manifestoIntro": "저희에게 문의하시는 분의 절반 이상이 조심스럽게 이렇게 말씀하십니다. 전혀 미안해하실 필요가 없습니다. 원래 인도에서 요가는 취업 준비 과정이 아니라, 진정한 나를 찾아가는 구도의 길이었습니다. 시대가 변해도 가장 중요한 것은 언제나 수련자 자신의 내적 성장입니다.",
-    "manifestoB1Title": "당신 자신이 바로 전통입니다:",
-    "manifestoB1Desc": "수천 년 동안 사람들이 구루를 찾아 떠났던 유일한 이유는 오직 자기 탐구 때문이었습니다.",
-    "manifestoB2Title": "오롯이 수련에 집중하는 경험:",
-    "manifestoB2Desc": "sadhana, pranayama, 순수한 식단, 경전 공부 등 요가가 가진 본래의 삶을 온전히 누려보십시오.",
-    "manifestoB3Title": "가장 깊은 배움의 길:",
-    "manifestoB3Desc": "아사나의 원리를 타인에게 설명할 수 있게 되는 것은, 내 몸으로 완전히 이해하는 가장 좋은 방법입니다.",
-    "manifestoB4Title": "1년간의 수련 멘토링:",
-    "manifestoB4Desc": "저희의 멘토링은 요가 강사만을 위한 것이 아닙니다. 여러분의 평생 수련을 길게 응원합니다.",
-    "manifestoFooter": "한 명의 학생으로 오셔서, 더 깊은 구도자가 되어 일상으로 돌아가십시오. 그것만으로도 충분합니다.",
-    "manifestoPill": "부담 없이 • 유효기간 없이",
     "seqBookBadge": "특별 혜택",
     "seqBookCategory": "교재",
     "seqBookTitle": "35가지 실전 시퀀스 가이드북",
@@ -2880,10 +2852,10 @@
       "levelVal": "초급 ~ 중급",
       "certification": "취득 자격",
       "certificationVal": "Yoga Alliance 수료증",
-      "startingFrom": "$1,149 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€900",
+      "startingFromVal": "€900",
       "save": "할인",
-      "earlyBirdDiscount": "얼리버드 $200 특별 할인"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "소수 정예 (최대 8~10명)",
@@ -2917,9 +2889,9 @@
       "p4Highlight": "언제든 돌아올 수 있는 안식처",
       "p4Desc": "향후 발리에서 열리는 200시간 과정에 수업료 전액 무료로 언제든 다시 참여하실 수 있습니다.",
       "pkgBadge": "숙박 패키지 (24일 / 23박) 및 교육만 등록 플랜",
-      "saveEarlyBird": "얼리버드 $300 특별 할인",
-      "tuitionFrom": "수업만 $999 USD부터 | 숙박 포함 $1,750 USD부터",
-      "breakdown": "수업만: $999 • 3인실: $1,750 • 2인실: $1,899 • 1인실: $2,499",
+      "saveEarlyBird": "",
+      "tuitionFrom": "수업만 €900부터 | 숙박 포함 €900부터",
+      "breakdown": "수업만: €900 • 3인실: €900 • 2인실: €900 • 1인실: €900",
       "checkAvailability": "잔여 자리 확인하기",
       "bookFreeCall": "무료 화상 상담 예약하기"
     },
@@ -3017,16 +2989,16 @@
       "doubleDesc": "전용 욕실, 에어컨, 정원 또는 수영장 전망을 갖춘 편안한 2인 객실.",
       "private": "디럭스 1인실 (프라이빗)",
       "privateDesc": "대형 침대, 전용 욕실, 에어컨, 독립 발코니를 갖춘 안락한 1인 전용 객실.",
-      "earlyBird": "얼리버드 프로모션",
-      "save300": "$300 USD 할인",
-      "earlyBirdPrice": "얼리버드 특별가",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "수강료 및 숙소 안내 (리시케시 100시간)",
-      "tripleSharing": "3인실 ($1,149)",
-      "doubleSharing": "2인실 ($1,349)",
-      "privateRoom": "1인실 ($1,649)",
+      "tripleSharing": "3인실 (€900)",
+      "doubleSharing": "2인실 (€900)",
+      "privateRoom": "1인실 (€900)",
       "choosePackage": "패키지 선택하기",
       "reserveSpot": "자리 확정하기",
-      "saveUSD": "$300 USD 할인",
+      "saveUSD": "",
       "residentialDuration": "인도 리시케시 12일 합숙 요가 TTC"
     },
     "ethics": {
@@ -3045,7 +3017,7 @@
     "faqs": [
       {
         "question": "What is the cost of the 100-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh starts from $599 for tuition-only, $799 for a shared quad room, $999 for a double room, and $1,199 for a private room with attached private bath. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
+        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh is €900. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
       },
       {
         "question": "Is the 100-Hour course suitable for beginners?",
@@ -3259,8 +3231,8 @@
       "doubleDesc": "에어컨, 전용 욕실이 구비된 아늑한 2인 객실.",
       "private": "디럭스 1인실 (프라이빗)",
       "privateDesc": "대형 침대, 에어컨, 전용 욕실이 딸린 조용한 1인 전용 객실.",
-      "earlyBird": "얼리버드 프로모션",
-      "save300": "$300 USD 할인"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "예약 전에 학교 시설을 미리 둘러보고 싶으신가요?",
@@ -3587,22 +3559,22 @@
     "metaTitle": "리시케시 200시간 요가 지도자 과정 | RYT 200 인도",
     "metaDesc": "리시케시 200시간 요가 TTC로 정통 요가를 마스터하세요. 갠지스강변 레지덴셜 Yoga Alliance RYT 200 인증 과정. 지금 등록하세요!",
     "heroTitle": "리시케시 200시간 요가 지도자 과정",
-    "heroSub": "세계 요가의 수도 리시케시에서 열리는 24일간의 Yoga Alliance RYT 200 합숙 코스. 히말라야 정통 계보 아쉬람 ($999 USD부터).",
+    "heroSub": "세계 요가의 수도 리시케시에서 열리는 22일간의 Yoga Alliance RYT 200 합숙 코스. 히말라야 정통 계보 아쉬람 (€1550부터).",
     "quickInfo": {
       "course": "과정명",
       "courseVal": "리시케시 200시간 요가 TTC",
       "duration": "교육 기간",
-      "durationVal": "24 Days",
+      "durationVal": "22 Days / 21 Nights",
       "style": "수련 스타일",
       "styleVal": "멀티스타일 요가",
       "level": "대상 레벨",
       "levelVal": "초급 ~ 중급",
       "certification": "취득 자격",
       "certificationVal": "Yoga Alliance RYT 200 공식 자격증",
-      "startingFrom": "$999 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€1550",
+      "startingFromVal": "€1550",
       "save": "할인",
-      "earlyBirdDiscount": "얼리버드 $300 특별 할인"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "소수 정예 (최대 8~10명)",
@@ -3616,7 +3588,7 @@
     },
     "storyTitle": "당신의 수련을 살아있는 지혜로 승화시키다",
     "storyP1": "YogaGarhi 발리 200시간 요가 지도자 과정은 겉모습뿐인 동작을 넘어 요가의 깊은 본질을 경험하고 싶은 분들을 위한 24일간의 몰입형 숙박 프로그램입니다. 우붓에서 차로 15분 거리인 기안야르의 평화로운 마을에 위치하여 소음 없이 온전히 배움에 집중할 수 있습니다.",
-    "storyP2": "24일 동안 고전 Hatha, Vinyasa Flow, Ashtanga 프라이머리 시리즈, 정밀한 Iyengar 정렬 기법, 그리고 해부학, 요가 철학, pranayama, 명상을 배웁니다. 한 반에 8~10명만 참여하므로 히말라야 직계 베테랑 강사진이 매일 개별 피드백을 제공합니다.",
+    "storyP2": "22일 동안 고전 Hatha, Vinyasa Flow, Ashtanga 프라이머리 시리즈, 정밀한 Iyengar 정렬 기법, 그리고 해부학, 요가 철학, pranayama, 명상을 배웁니다. 한 반에 8~10명만 참여하므로 히말라야 직계 베테랑 강사진이 매일 개별 피드백을 제공합니다.",
     "watchVideoStories": "수료생들의 생생한 영상 후기 보기",
     "videoBannerTitle": "무료 화상 상담을 예약하십시오. 학교, 객실, 요가 홀을 직접 보여드립니다.",
     "whyYogaGarhiBox": {
@@ -3635,10 +3607,10 @@
       "p4Title": "평생 수강료 무료 재수강 혜택",
       "p4Highlight": "언제든 돌아올 수 있는 안식처",
       "p4Desc": "향후 발리에서 열리는 200시간 과정에 수업료 전액 무료로 언제든 다시 참여하실 수 있습니다.",
-      "pkgBadge": "숙박 패키지 (24일 / 23박) 및 교육만 등록 플랜",
-      "saveEarlyBird": "얼리버드 $300 특별 할인",
-      "tuitionFrom": "수업만 $999 USD부터 | 숙박 포함 $1,750 USD부터",
-      "breakdown": "수업만: $999 • 3인실: $1,750 • 2인실: $1,899 • 1인실: $2,499",
+      "pkgBadge": "숙박 패키지 (22일 / 21박) 및 교육만 등록 플랜",
+      "saveEarlyBird": "",
+      "tuitionFrom": "수업만 €1550부터 | 숙박 포함 €2000부터",
+      "breakdown": "수업만: €1550 • 3인실: €1550 • 2인실: €1550 • 1인실: €2000",
       "checkAvailability": "잔여 자리 확인하기",
       "bookFreeCall": "무료 화상 상담 예약하기"
     },
@@ -3756,7 +3728,7 @@
     "inclusions": {
       "heading": "과정 등록 시 포함 내역",
       "sub": "수련 기간 동안 온전히 배움에만 전념하실 수 있도록 모든 것을 세심하게 준비했습니다.",
-      "incAccom": "아쉬람 숙박 (23박)",
+      "incAccom": "아쉬람 숙박 (21박)",
       "incMeals": "매일 정갈한 사트빅 식단 3식 (채식/비건)",
       "incCert": "수료 시 전미 요가 협회 RYT 200 공인 인증서",
       "incManuals": "공식 트레이닝 교재, 노트 및 학습 자료 전권",
@@ -3774,7 +3746,7 @@
     "pricing": {
       "heading": "객실 유형 및 수강료 안내",
       "sub": "숨겨진 추가 비용이 없는 투명한 올인원 요금제입니다.",
-      "tuitionOnly": "수업만 등록 ($999)",
+      "tuitionOnly": "수업만 등록 (€1550)",
       "tuitionOnlyDesc": "수업 참여, 식사, 교재, 자격증 발급 포함. 숙소는 외부에서 개별 예약.",
       "triple": "3인 1실 쉐어",
       "tripleDesc": "에어컨과 전용 욕실, 발코니가 구비된 넓고 쾌적한 3인 공유 객실.",
@@ -3782,17 +3754,17 @@
       "doubleDesc": "전용 욕실, 에어컨, 정원 또는 수영장 전망을 갖춘 편안한 2인 객실.",
       "private": "디럭스 1인실 (프라이빗)",
       "privateDesc": "대형 침대, 전용 욕실, 에어컨, 독립 발코니를 갖춘 안락한 1인 전용 객실.",
-      "earlyBird": "얼리버드 프로모션",
-      "save300": "$300 USD 할인",
-      "earlyBirdPrice": "얼리버드 특별가",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "수강료 및 숙소 안내 (리시케시 200시간)",
-      "tripleSharing": "3인실 ($1,750)",
-      "doubleSharing": "2인실 ($1,899)",
-      "privateRoom": "1인실 ($2,499)",
+      "tripleSharing": "3인실 (€1550)",
+      "doubleSharing": "2인실 (€1550)",
+      "privateRoom": "1인실 (€2000)",
       "choosePackage": "패키지 선택하기",
       "reserveSpot": "자리 확정하기",
-      "saveUSD": "$300 USD 할인",
-      "residentialDuration": "인도 리시케시 24일 합숙 요가 TTC"
+      "saveUSD": "",
+      "residentialDuration": "인도 리시케시 22일 / 21박 합숙 요가 TTC"
     },
     "ethics": {
       "codeOfConduct": "수강생 행동 규범",
@@ -3810,7 +3782,7 @@
     "faqs": [
       {
         "question": "What is the cost of 200-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh starts from $999 for tuition-only, $1,299 for a shared quad room, $1,499 for a twin-sharing double room, and $1,799 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
+        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh is €1,550 for double / shared occupancy and €2,000 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
       },
       {
         "question": "Is Rishikesh good for yoga teacher training?",
@@ -4041,8 +4013,8 @@
       "doubleDesc": "에어컨, 전용 욕실이 구비된 아늑한 2인 객실.",
       "private": "디럭스 1인실 (프라이빗)",
       "privateDesc": "대형 침대, 에어컨, 전용 욕실이 딸린 조용한 1인 전용 객실.",
-      "earlyBird": "얼리버드 프로모션",
-      "save300": "$300 USD 할인"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "예약 전에 학교 시설을 미리 둘러보고 싶으신가요?",
@@ -5673,7 +5645,7 @@
       "startingFrom": "$999 USD",
       "startingFromVal": "$999 USD",
       "save": "할인",
-      "earlyBirdDiscount": "얼리버드 $300 특별 할인"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "소수 정예 (최대 8~10명)",
@@ -5707,7 +5679,7 @@
       "p4Highlight": "언제든 돌아올 수 있는 안식처",
       "p4Desc": "향후 발리에서 열리는 200시간 과정에 수업료 전액 무료로 언제든 다시 참여하실 수 있습니다.",
       "pkgBadge": "숙박 패키지 (24일 / 23박) 및 교육만 등록 플랜",
-      "saveEarlyBird": "얼리버드 $300 특별 할인",
+      "saveEarlyBird": "",
       "tuitionFrom": "수업만 $999 USD부터 | 숙박 포함 $1,750 USD부터",
       "breakdown": "수업만: $999 • 3인실: $1,750 • 2인실: $1,899 • 1인실: $2,499",
       "checkAvailability": "잔여 자리 확인하기",
@@ -5853,16 +5825,16 @@
       "doubleDesc": "전용 욕실, 에어컨, 정원 또는 수영장 전망을 갖춘 편안한 2인 객실.",
       "private": "디럭스 1인실 (프라이빗)",
       "privateDesc": "대형 침대, 전용 욕실, 에어컨, 독립 발코니를 갖춘 안락한 1인 전용 객실.",
-      "earlyBird": "얼리버드 프로모션",
-      "save300": "$300 USD 할인",
-      "earlyBirdPrice": "얼리버드 특별가",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "수강료 및 숙소 안내 (리시케시 200시간)",
       "tripleSharing": "3인실 ($1,750)",
       "doubleSharing": "2인실 ($1,899)",
       "privateRoom": "1인실 ($2,499)",
       "choosePackage": "패키지 선택하기",
       "reserveSpot": "자리 확정하기",
-      "saveUSD": "$300 USD 할인",
+      "saveUSD": "",
       "residentialDuration": "인도 리시케시 24일 합숙 요가 TTC"
     },
     "ethics": {
@@ -6112,8 +6084,8 @@
       "doubleDesc": "에어컨, 전용 욕실이 구비된 아늑한 2인 객실.",
       "private": "디럭스 1인실 (프라이빗)",
       "privateDesc": "대형 침대, 에어컨, 전용 욕실이 딸린 조용한 1인 전용 객실.",
-      "earlyBird": "얼리버드 프로모션",
-      "save300": "$300 USD 할인"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "예약 전에 학교 시설을 미리 둘러보고 싶으신가요?",
@@ -8894,5 +8866,6 @@
     "galleryDesc": "{loc}의 평화로운 아슈람 힐링 공간, 열대 수영장, 깊이 있는 영적 워크숍 풍경을 미리 만나보세요.",
     "teacherTrainingTitle": "{loc}에서 국제 공인 요가 지도자가 되고 싶으신가요?",
     "teacherTrainingDesc": "{loc}에서 열리는 전미 요가 얼라이언스 공인 교사 양성 과정으로 배움을 확장하세요."
-  }
+  },
+  "sachinjiResearch": "개인 맞춤형 요가와 프라크리티에 관한 요가차리야 사친의 연구"
 }

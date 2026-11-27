@@ -226,8 +226,8 @@ export default async function Page({
         ...(courseInstances.length > 0 ? { "hasCourseInstance": courseInstances } : {}),
         "offers": {
             "@type": "Offer",
-            "price": course.price.replace("$", ""),
-            "priceCurrency": "USD",
+            "price": "900",
+            "priceCurrency": "EUR",
             "availability": "https://schema.org/PreOrder",
             "url": pageUrl
         }

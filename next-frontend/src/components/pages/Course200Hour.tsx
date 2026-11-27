@@ -3191,10 +3191,25 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
               )}
 
               {/* Certification Badges - Real Images */}
-              <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+              <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 mb-8">
                 <Image src={yaRys200} alt="RYS 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
                 <Image src={yaRyt200} alt="RYT 200" width={96} height={96} className="w-auto object-contain hover:scale-110 transition-transform duration-300" />
               </div>
+
+              {locale === "en" && (
+                <div className="pt-2">
+                  <p className="text-white/80 text-sm">
+                    Planning to teach internationally? Read{" "}
+                    <Link
+                      href="/blogs/yoga-instructor-certification-bali"
+                      className="text-amber-400 hover:text-amber-300 font-semibold underline underline-offset-4 transition-colors"
+                    >
+                      our complete guide to yoga instructor certification in Bali
+                    </Link>
+                    .
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </section>

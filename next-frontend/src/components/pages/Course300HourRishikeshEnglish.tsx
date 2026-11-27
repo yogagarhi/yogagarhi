@@ -1196,7 +1196,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                     <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">Starting From</p>
                     <div className="flex flex-col items-center lg:items-start">
                       <div className="flex items-baseline gap-2 justify-center lg:justify-start">
-                        {SHOW_COMPARE_PRICE && (<span className="text-base text-muted-foreground line-through opacity-60">$1,299</span>)}
+                        
                         <div className="relative group">
                           <span className="font-heading text-4xl md:text-5xl font-extrabold text-primary drop-shadow-[0_0_15px_rgba(255,140,0,0.3)] animate-pulse inline-block">
                             $1,099
@@ -1206,7 +1206,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                       </div>
                       <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 text-sm font-bold bg-green-500 text-white rounded-full shadow-lg shadow-green-500/20 transform hover:scale-105 transition-transform">
                         <Zap className="w-3.5 h-3.5 fill-current" />
-                        Save $200 Now
+                        Apply Now
                       </div>
                     </div>
                   </div>
@@ -2126,7 +2126,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                           )}
                         </div>
 
-                        {/* Spots Left, Early Bird & Button */}
+                        {/* Course Fee & Button */}
                         <div className="flex items-center gap-4 sm:gap-6 flex-wrap sm:flex-nowrap">
                           {isFull ? (
                             <span className="text-sm px-3 py-1.5 rounded-md whitespace-nowrap bg-muted text-muted-foreground">
@@ -2138,10 +2138,9 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                             </span>
                           )}
 
-                          {/* Early Bird */}
+                          {/* Course Fee */}
                           <div className={`text-center ${isFull ? "opacity-40" : ""}`}>
-                            <p className="font-heading font-bold text-foreground text-sm">Early Bird Price</p>
-                            {SHOW_COMPARE_PRICE && (<p className="text-primary text-sm font-medium">save {item.earlyBirdSaving}</p>)}
+                            <p className="font-heading font-bold text-foreground text-sm">Course Fee</p>
                           </div>
 
                           {/* Book Button */}
@@ -2195,10 +2194,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,099
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,299</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
-                        </p>)}
+                        
                       </div>
 
                       {/* Shared Room */}
@@ -2207,10 +2203,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,399
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,599</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
-                        </p>)}
+                        
                       </div>
 
                       {/* Double Sharing */}
@@ -2219,10 +2212,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,699
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$1,899</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
-                        </p>)}
+                        
                       </div>
 
                       {/* Private Room */}
@@ -2231,10 +2221,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
                         <p className="font-heading text-2xl font-bold text-foreground">
                           $1,999
                         </p>
-                        {SHOW_COMPARE_PRICE && (<p className="text-muted-foreground text-sm">
-                          {SHOW_COMPARE_PRICE && (<span className="line-through">$2,199</span>)}
-                          <span className="ml-2 text-green-600 font-semibold">($200 OFF)</span>
-                        </p>)}
+                        
                       </div>
 
                       {/* CTA */}
@@ -4309,7 +4296,7 @@ export default function Course300HourRishikeshEnglish({ initialBatches, syllabus
         <Dialog open={showQuickEnquiryDialog} onOpenChange={setShowQuickEnquiryDialog}>
           <DialogContent className="sm:max-w-lg">
             <DialogHeader>
-              <DialogTitle className="font-heading text-2xl">Claim Your $250 Early Bird Discount</DialogTitle>
+              <DialogTitle className="font-heading text-2xl">Apply for Your Course</DialogTitle>
               <DialogDescription className="text-sm text-muted-foreground">
                 Connect with us and begin your journey of transformation
               </DialogDescription>

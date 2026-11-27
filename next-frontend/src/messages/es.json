@@ -327,20 +327,6 @@
       "handsOnCategory": "Enseñanza",
       "handsOnTitle": "Ajustes manuales y secuenciación",
       "handsOnDesc": "Aprende ajustes físicos seguros, principios de alineación inteligente y secuenciación creativa adaptada a todo tipo de cuerpos.",
-      "manifestoBadge": "Manifiesto del estudiante",
-      "manifestoHeading": "¿No planeas enseñar? Precisamente para ti fue creada esta escuela.",
-      "manifestoQuote": "«En realidad no quiero enseñar. Solo quiero profundizar en mi práctica.»",
-      "manifestoIntro": "Más de la mitad de las personas que nos escriben dicen esto, casi disculpándose. Por favor no te disculpes. En la India, el yoga nunca fue un curso laboral; era un sendero para conocerse a uno mismo. El estudiante siempre fue lo primero.",
-      "manifestoB1Title": "Tú eres la tradición:",
-      "manifestoB1Desc": "Durante miles de años la gente acudió a un maestro por un solo motivo: el autodescubrimiento.",
-      "manifestoB2Title": "La práctica es lo primero:",
-      "manifestoB2Desc": "Vivirás el yoga como debe vivirse: sadhana, pranayama, alimentación consciente y textos sagrados.",
-      "manifestoB3Title": "Comprensión profunda:",
-      "manifestoB3Desc": "Aprender a explicar posturas es el mejor entrenamiento para entenderlas en tu propio cuerpo.",
-      "manifestoB4Title": "1 año de apoyo para tu Sadhana:",
-      "manifestoB4Desc": "La mentoría es para practicantes, no solo para maestros. Apoyamos tu sadhana de la vida diaria.",
-      "manifestoFooter": "Ven como estudiante. Vete como un practicante más profundo. Eso es suficiente.",
-      "manifestoPill": "Sin presión • Sin caducidad",
       "seqBookBadge": "Incluido",
       "seqBookCategory": "Recursos",
       "seqBookTitle": "Libro con más de 35 secuencias creativas",
@@ -1381,20 +1367,6 @@
     "handsOnCategory": "Enseñanza",
     "handsOnTitle": "Ajustes manuales y secuenciación",
     "handsOnDesc": "Aprende ajustes físicos seguros, principios de alineación inteligente y secuenciación creativa adaptada a todo tipo de cuerpos.",
-    "manifestoBadge": "Manifiesto del estudiante",
-    "manifestoHeading": "¿No planeas enseñar? Precisamente para ti fue creada esta escuela.",
-    "manifestoQuote": "«En realidad no quiero enseñar. Solo quiero profundizar en mi práctica.»",
-    "manifestoIntro": "Más de la mitad de las personas que nos escriben dicen esto, casi disculpándose. Por favor no te disculpes. En la India, el yoga nunca fue un curso laboral; era un sendero para conocerse a uno mismo. El estudiante siempre fue lo primero.",
-    "manifestoB1Title": "Tú eres la tradición:",
-    "manifestoB1Desc": "Durante miles de años la gente acudió a un maestro por un solo motivo: el autodescubrimiento.",
-    "manifestoB2Title": "La práctica es lo primero:",
-    "manifestoB2Desc": "Vivirás el yoga como debe vivirse: sadhana, pranayama, alimentación consciente y textos sagrados.",
-    "manifestoB3Title": "Comprensión profunda:",
-    "manifestoB3Desc": "Aprender a explicar posturas es el mejor entrenamiento para entenderlas en tu propio cuerpo.",
-    "manifestoB4Title": "1 año de apoyo para tu Sadhana:",
-    "manifestoB4Desc": "La mentoría es para practicantes, no solo para maestros. Apoyamos tu sadhana de la vida diaria.",
-    "manifestoFooter": "Ven como estudiante. Vete como un practicante más profundo. Eso es suficiente.",
-    "manifestoPill": "Sin presión • Sin caducidad",
     "seqBookBadge": "Incluido",
     "seqBookCategory": "Recursos",
     "seqBookTitle": "Libro con más de 35 secuencias creativas",
@@ -2880,10 +2852,10 @@
       "levelVal": "Principiante a Intermedio",
       "certification": "Certificación",
       "certificationVal": "Certificado Yoga Alliance",
-      "startingFrom": "$1,149 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€900",
+      "startingFromVal": "€900",
       "save": "Ahorra",
-      "earlyBirdDiscount": "Ahorra $200 con precio anticipado"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "Grupos reducidos (máx. 8–10)",
@@ -2917,9 +2889,9 @@
       "p4Highlight": "Regreso sin matrícula",
       "p4Desc": "Regresa gratis a futuras formaciones de YogaGarhi para actualizar tus conocimientos o colaborar como asistente.",
       "pkgBadge": "Paquetes con alojamiento (24 días / 23 noches) y opción de solo formación",
-      "saveEarlyBird": "Ahorra $300 con precio anticipado",
-      "tuitionFrom": "Solo formación desde $999 USD | Residencial desde $1,750 USD",
-      "breakdown": "Solo formación: $999 • Habitación triple: $1,750 • Habitación doble: $1,899 • Habitación privada: $2,499",
+      "saveEarlyBird": "",
+      "tuitionFrom": "Solo formación desde €900 | Residencial desde €900",
+      "breakdown": "Solo formación: €900 • Habitación triple: €900 • Habitación doble: €900 • Habitación privada: €900",
       "checkAvailability": "Consultar disponibilidad",
       "bookFreeCall": "Reservar videollamada gratuita"
     },
@@ -3017,16 +2989,16 @@
       "doubleDesc": "Habitación cómoda para dos personas con baño privado, aire acondicionado y vistas al jardín o piscina.",
       "private": "Habitación privada Deluxe",
       "privateDesc": "Espacio privado con cama matrimonial grande, baño privado, aire acondicionado y balcón exclusivo.",
-      "earlyBird": "Descuento anticipado",
-      "save300": "Ahorra $300 USD",
-      "earlyBirdPrice": "Precio anticipado",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "Tarifas y Habitaciones (100 Horas Rishikesh)",
-      "tripleSharing": "Habitación Triple ($1,149)",
-      "doubleSharing": "Habitación Doble ($1,349)",
-      "privateRoom": "Habitación Privada ($1,649)",
+      "tripleSharing": "Habitación Triple (€900)",
+      "doubleSharing": "Habitación Doble (€900)",
+      "privateRoom": "Habitación Privada (€900)",
       "choosePackage": "Elige tu paquete",
       "reserveSpot": "Reserva tu plaza",
-      "saveUSD": "Ahorra $300 USD",
+      "saveUSD": "",
       "residentialDuration": "12 días de formación residencial en Rishikesh, India"
     },
     "ethics": {
@@ -3045,7 +3017,7 @@
     "faqs": [
       {
         "question": "What is the cost of the 100-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh starts from $599 for tuition-only, $799 for a shared quad room, $999 for a double room, and $1,199 for a private room with attached private bath. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
+        "answer": "The 100-Hour Yoga Teacher Training in Rishikesh is €900. All residential packages include your ashram room in Tapovan, three daily Sattvic meals, study materials, sacred Ganga Aarti excursions, and airport transfer support."
       },
       {
         "question": "Is the 100-Hour course suitable for beginners?",
@@ -3259,8 +3231,8 @@
       "doubleDesc": "Habitación climatizada para dos personas con baño privado y vista al jardín.",
       "private": "Habitación privada Deluxe",
       "privateDesc": "Habitación individual con cama king, baño en suite, aire acondicionado y balcón.",
-      "earlyBird": "Precio anticipado",
-      "save300": "Ahorra $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "¿Quieres conocer la escuela antes de reservar?",
@@ -3587,22 +3559,22 @@
     "metaTitle": "Formación de Profesores de Yoga 200 Horas en Rishikesh | RYT 200 India",
     "metaDesc": "Domina el yoga auténtico con el curso de 200 horas en Rishikesh. Certificación Yoga Alliance RYT 200 junto al Ganges. ¡Inscríbete ahora!",
     "heroTitle": "Formación de Profesores de Yoga 200 Horas en Rishikesh",
-    "heroSub": "Formación residencial de 24 días con certificación Yoga Alliance RYT 200 en la capital del yoga. Ashram en el Ganges desde $999 USD.",
+    "heroSub": "Formación residencial de 22 días con certificación Yoga Alliance RYT 200 en la capital del yoga. Ashram en el Ganges desde €1550.",
     "quickInfo": {
       "course": "Curso",
       "courseVal": "YTTC 200 Horas Rishikesh",
       "duration": "Duración",
-      "durationVal": "24 Days",
+      "durationVal": "22 Days / 21 Nights",
       "style": "Estilo",
       "styleVal": "Yoga Multi-Style",
       "level": "Nivel",
       "levelVal": "Principiante a Intermedio",
       "certification": "Certificación",
       "certificationVal": "Certificación Yoga Alliance RYT 200",
-      "startingFrom": "$999 USD",
-      "startingFromVal": "$999 USD",
+      "startingFrom": "€1550",
+      "startingFromVal": "€1550",
       "save": "Ahorra",
-      "earlyBirdDiscount": "Ahorra $300 con precio anticipado"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "Grupos reducidos (máx. 8–10)",
@@ -3616,7 +3588,7 @@
     },
     "storyTitle": "Transforma tu práctica en sabiduría viva",
     "storyP1": "Nuestra formación de profesores de yoga de 200 horas en Bali es una inmersión completa orientada a practicantes que buscan profundidad genuina en lugar de posturas mecánicas. Ubicado en el tranquilo pueblo de Gianyar, a solo 15 minutos de Ubud, YogaGarhi ofrece un refugio sereno lejos del turismo masivo.",
-    "storyP2": "A lo largo de 24 días estudiarás Hatha clásico, Vinyasa Flow, la serie Ashtanga Primary y alineación de Iyengar junto con anatomía aplicada, filosofía, pranayama y meditación. Con un cupo riguroso de 8–10 alumnos, nuestros maestros del Himalaya ofrecen un acompañamiento íntimo a cada persona.",
+    "storyP2": "A lo largo de 22 días estudiarás Hatha clásico, Vinyasa Flow, la serie Ashtanga Primary y alineación de Iyengar junto con anatomía aplicada, filosofía, pranayama y meditación. Con un cupo riguroso de 8–10 alumnos, nuestros maestros del Himalaya ofrecen un acompañamiento íntimo a cada persona.",
     "watchVideoStories": "Ver vídeos y testimonios de estudiantes",
     "videoBannerTitle": "Reserva una llamada. Conoce la escuela. Mira tu habitación. Mira la shala.",
     "whyYogaGarhiBox": {
@@ -3635,10 +3607,10 @@
       "p4Title": "Repetición del curso gratis de por vida",
       "p4Highlight": "Regreso sin matrícula",
       "p4Desc": "Regresa gratis a futuras formaciones de YogaGarhi para actualizar tus conocimientos o colaborar como asistente.",
-      "pkgBadge": "Paquetes con alojamiento (24 días / 23 noches) y opción de solo formación",
-      "saveEarlyBird": "Ahorra $300 con precio anticipado",
-      "tuitionFrom": "Solo formación desde $999 USD | Residencial desde $1,750 USD",
-      "breakdown": "Solo formación: $999 • Habitación triple: $1,750 • Habitación doble: $1,899 • Habitación privada: $2,499",
+      "pkgBadge": "Paquetes con alojamiento (22 días / 21 noches) y opción de solo formación",
+      "saveEarlyBird": "",
+      "tuitionFrom": "Solo formación desde €1550 | Residencial desde €2000",
+      "breakdown": "Solo formación: €1550 • Habitación triple: €1550 • Habitación doble: €1550 • Habitación privada: €2000",
       "checkAvailability": "Consultar disponibilidad",
       "bookFreeCall": "Reservar videollamada gratuita"
     },
@@ -3756,7 +3728,7 @@
     "inclusions": {
       "heading": "Qué incluye tu formación",
       "sub": "Todo dispuesto para asegurar una experiencia profunda y libre de preocupaciones.",
-      "incAccom": "23 noches de estancia en el ashram",
+      "incAccom": "21 noches de estancia en el ashram",
       "incMeals": "3 comidas sátvicas recién elaboradas al día (vegetariano/vegano)",
       "incCert": "Certificado Yoga Alliance RYT 200 tras completar el curso",
       "incManuals": "Manuales oficiales de la formación, cuadernos y materiales de estudio",
@@ -3774,7 +3746,7 @@
     "pricing": {
       "heading": "Habitaciones y precios",
       "sub": "Precios claros y todo incluido, sin sorpresas ni costes ocultos.",
-      "tuitionOnly": "Solo curso ($999)",
+      "tuitionOnly": "Solo curso (€1550)",
       "tuitionOnlyDesc": "Matrícula, comidas completas, material pedagógico y certificación. Alojamiento fuera del ashram.",
       "triple": "Habitación triple compartida",
       "tripleDesc": "Habitación amplia con aire acondicionado compartida con dos compañeros, baño privado y balcón.",
@@ -3782,17 +3754,17 @@
       "doubleDesc": "Habitación cómoda para dos personas con baño privado, aire acondicionado y vistas al jardín o piscina.",
       "private": "Habitación privada Deluxe",
       "privateDesc": "Espacio privado con cama matrimonial grande, baño privado, aire acondicionado y balcón exclusivo.",
-      "earlyBird": "Descuento anticipado",
-      "save300": "Ahorra $300 USD",
-      "earlyBirdPrice": "Precio anticipado",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "Tarifas y Habitaciones (200 Horas Rishikesh)",
-      "tripleSharing": "Habitación Triple ($1,750)",
-      "doubleSharing": "Habitación Doble ($1,899)",
-      "privateRoom": "Habitación Privada ($2,499)",
+      "tripleSharing": "Habitación Triple (€1550)",
+      "doubleSharing": "Habitación Doble (€1550)",
+      "privateRoom": "Habitación Privada (€2000)",
       "choosePackage": "Elige tu paquete",
       "reserveSpot": "Reserva tu plaza",
-      "saveUSD": "Ahorra $300 USD",
-      "residentialDuration": "24 días de formación residencial en Rishikesh, India"
+      "saveUSD": "",
+      "residentialDuration": "22 días / 21 noches de formación residencial en Rishikesh, India"
     },
     "ethics": {
       "codeOfConduct": "Código de conducta",
@@ -3810,7 +3782,7 @@
     "faqs": [
       {
         "question": "What is the cost of 200-Hour Yoga Teacher Training in Rishikesh?",
-        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh starts from $999 for tuition-only, $1,299 for a shared quad room, $1,499 for a twin-sharing double room, and $1,799 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
+        "answer": "The 200-Hour Yoga Teacher Training in Rishikesh is €1,550 for double / shared occupancy and €2,000 for a private room with attached bathroom. All residential packages include your room in Tapovan, three daily Sattvic Ayurvedic meals, study manuals, Yoga Alliance certification, sacred Ganga excursions, and complimentary airport pickup assistance."
       },
       {
         "question": "Is Rishikesh good for yoga teacher training?",
@@ -4041,8 +4013,8 @@
       "doubleDesc": "Habitación climatizada para dos personas con baño privado y vista al jardín.",
       "private": "Habitación privada Deluxe",
       "privateDesc": "Habitación individual con cama king, baño en suite, aire acondicionado y balcón.",
-      "earlyBird": "Precio anticipado",
-      "save300": "Ahorra $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "¿Quieres conocer la escuela antes de reservar?",
@@ -5673,7 +5645,7 @@
       "startingFrom": "$999 USD",
       "startingFromVal": "$999 USD",
       "save": "Ahorra",
-      "earlyBirdDiscount": "Ahorra $300 con precio anticipado"
+      "earlyBirdDiscount": ""
     },
     "highlights": {
       "smallGroups": "Grupos reducidos (máx. 8–10)",
@@ -5707,7 +5679,7 @@
       "p4Highlight": "Regreso sin matrícula",
       "p4Desc": "Regresa gratis a futuras formaciones de YogaGarhi para actualizar tus conocimientos o colaborar como asistente.",
       "pkgBadge": "Paquetes con alojamiento (24 días / 23 noches) y opción de solo formación",
-      "saveEarlyBird": "Ahorra $300 con precio anticipado",
+      "saveEarlyBird": "",
       "tuitionFrom": "Solo formación desde $999 USD | Residencial desde $1,750 USD",
       "breakdown": "Solo formación: $999 • Habitación triple: $1,750 • Habitación doble: $1,899 • Habitación privada: $2,499",
       "checkAvailability": "Consultar disponibilidad",
@@ -5853,16 +5825,16 @@
       "doubleDesc": "Habitación cómoda para dos personas con baño privado, aire acondicionado y vistas al jardín o piscina.",
       "private": "Habitación privada Deluxe",
       "privateDesc": "Espacio privado con cama matrimonial grande, baño privado, aire acondicionado y balcón exclusivo.",
-      "earlyBird": "Descuento anticipado",
-      "save300": "Ahorra $300 USD",
-      "earlyBirdPrice": "Precio anticipado",
+      "earlyBird": "",
+      "save300": "",
+      "earlyBirdPrice": "",
       "tuitionFees": "Tarifas y Habitaciones (200 Horas Rishikesh)",
       "tripleSharing": "Habitación Triple ($1,750)",
       "doubleSharing": "Habitación Doble ($1,899)",
       "privateRoom": "Habitación Privada ($2,499)",
       "choosePackage": "Elige tu paquete",
       "reserveSpot": "Reserva tu plaza",
-      "saveUSD": "Ahorra $300 USD",
+      "saveUSD": "",
       "residentialDuration": "24 días de formación residencial en Rishikesh, India"
     },
     "ethics": {
@@ -6112,8 +6084,8 @@
       "doubleDesc": "Habitación climatizada para dos personas con baño privado y vista al jardín.",
       "private": "Habitación privada Deluxe",
       "privateDesc": "Habitación individual con cama king, baño en suite, aire acondicionado y balcón.",
-      "earlyBird": "Precio anticipado",
-      "save300": "Ahorra $300 USD"
+      "earlyBird": "",
+      "save300": ""
     },
     "tourCall": {
       "heading": "¿Quieres conocer la escuela antes de reservar?",
@@ -8894,5 +8866,6 @@
     "galleryDesc": "Imágenes de la vida en nuestro sereno santuario en {loc}, piscinas tropicales y talleres espirituales.",
     "teacherTrainingTitle": "¿Deseas Convertirte en Profesor de Yoga Certificado en {loc}?",
     "teacherTrainingDesc": "Profundiza en tu práctica con nuestras formaciones acreditadas por Yoga Alliance en {loc}."
-  }
+  },
+  "sachinjiResearch": "Investigación de Yogacharya Sachin sobre Yoga Personalizado y Prakriti"
 }

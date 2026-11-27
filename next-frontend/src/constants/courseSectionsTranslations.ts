@@ -1322,7 +1322,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "Core Focus",
     "f_batch": "Batch Size",
     "f_price": "Starting Price",
-    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "22 Days (21 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "$1,099 USD"}],
     "rowsVarkala": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "nl": {
@@ -1349,7 +1349,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "Kernfocus",
     "f_batch": "Groepsgrootte",
     "f_price": "Vanaf-prijs",
-    "rowsRishikesh": [{"c100": "12 Dagen (11 Nachten)", "c200": "28 Dagen (27 Nachten)", "c300": "28 Dagen (27 Nachten)"}, {"c100": "Beginners & Zoekers", "c200": "Beginner tot Halfgevorderd", "c300": "Halfgevorderd tot Gevorderd"}, {"c100": "Geen (Open Geest)", "c200": "Regelmatige eigen beoefening", "c300": "200-Uurs Certificaat"}, {"c100": "Basis Certificaat", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Basis & Eigen Beoefening", "c200": "Lesvaardigheden & Anatomie", "c300": "Gevorderde Sequenties & Verdieping"}, {"c100": "Max. 8–10 Studenten", "c200": "Max. 8–10 Studenten", "c300": "Max. 8–10 Studenten"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1.099 USD"}],
+    "rowsRishikesh": [{"c100": "12 Dagen (11 Nachten)", "c200": "22 Dagen (21 Nachten)", "c300": "28 Dagen (27 Nachten)"}, {"c100": "Beginners & Zoekers", "c200": "Beginner tot Halfgevorderd", "c300": "Halfgevorderd tot Gevorderd"}, {"c100": "Geen (Open Geest)", "c200": "Regelmatige eigen beoefening", "c300": "200-Uurs Certificaat"}, {"c100": "Basis Certificaat", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Basis & Eigen Beoefening", "c200": "Lesvaardigheden & Anatomie", "c300": "Gevorderde Sequenties & Verdieping"}, {"c100": "Max. 8–10 Studenten", "c200": "Max. 8–10 Studenten", "c300": "Max. 8–10 Studenten"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "$1.099 USD"}],
     "rowsVarkala": [{"c100": "12 Dagen (11 Nachten)", "c200": "28 Dagen (27 Nachten)", "c300": "28 Dagen (27 Nachten)"}, {"c100": "Beginners & Zoekers", "c200": "Beginner tot Halfgevorderd", "c300": "Halfgevorderd tot Gevorderd"}, {"c100": "Geen (Open Geest)", "c200": "Regelmatige eigen beoefening", "c300": "200-Uurs Certificaat"}, {"c100": "Basis Certificaat", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Basis & Eigen Beoefening", "c200": "Lesvaardigheden & Anatomie", "c300": "Gevorderde Sequenties & Verdieping"}, {"c100": "Max. 8–10 Studenten", "c200": "Max. 8–10 Studenten", "c300": "Max. 8–10 Studenten"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1.099 USD"}]
   },
   "de": {
@@ -1376,7 +1376,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "Hauptfokus",
     "f_batch": "Gruppengröße",
     "f_price": "Startpreis",
-    "rowsRishikesh": [{"c100": "12 Tage (11 Nächte)", "c200": "28 Tage (27 Nächte)", "c300": "28 Tage (27 Nächte)"}, {"c100": "Anfänger & Suchende", "c200": "Anfänger bis Mittelstufe", "c300": "Mittelstufe bis Fortgeschritten"}, {"c100": "Keine (Offener Geist)", "c200": "Regelmäßige eigene Praxis", "c300": "200-Std. Zertifikat"}, {"c100": "Grundlagenzertifikat", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Grundlagen & Eigenpraxis", "c200": "Didaktik, Anatomie & Praxis", "c300": "Meisterkurs & Vertiefung"}, {"c100": "Max. 8–10 Schüler", "c200": "Max. 8–10 Schüler", "c300": "Max. 8–10 Schüler"}, {"c100": "599 $ USD", "c200": "999 $ USD", "c300": "1.099 $ USD"}],
+    "rowsRishikesh": [{"c100": "12 Tage (11 Nächte)", "c200": "22 Tage (21 Nächte)", "c300": "28 Tage (27 Nächte)"}, {"c100": "Anfänger & Suchende", "c200": "Anfänger bis Mittelstufe", "c300": "Mittelstufe bis Fortgeschritten"}, {"c100": "Keine (Offener Geist)", "c200": "Regelmäßige eigene Praxis", "c300": "200-Std. Zertifikat"}, {"c100": "Grundlagenzertifikat", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Grundlagen & Eigenpraxis", "c200": "Didaktik, Anatomie & Praxis", "c300": "Meisterkurs & Vertiefung"}, {"c100": "Max. 8–10 Schüler", "c200": "Max. 8–10 Schüler", "c300": "Max. 8–10 Schüler"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "1.099 $ USD"}],
     "rowsVarkala": [{"c100": "12 Tage (11 Nächte)", "c200": "28 Tage (27 Nächte)", "c300": "28 Tage (27 Nächte)"}, {"c100": "Anfänger & Suchende", "c200": "Anfänger bis Mittelstufe", "c300": "Mittelstufe bis Fortgeschritten"}, {"c100": "Keine (Offener Geist)", "c200": "Regelmäßige eigene Praxis", "c300": "200-Std. Zertifikat"}, {"c100": "Grundlagenzertifikat", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Grundlagen & Eigenpraxis", "c200": "Didaktik, Anatomie & Praxis", "c300": "Meisterkurs & Vertiefung"}, {"c100": "Max. 8–10 Schüler", "c200": "Max. 8–10 Schüler", "c300": "Max. 8–10 Schüler"}, {"c100": "599 $ USD", "c200": "999 $ USD", "c300": "1.099 $ USD"}]
   },
   "fr": {
@@ -1403,7 +1403,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "Objectif Principal",
     "f_batch": "Taille du Groupe",
     "f_price": "Tarif à partir de",
-    "rowsRishikesh": [{"c100": "12 Jours (11 Nuits)", "c200": "28 Jours (27 Nuits)", "c300": "28 Jours (27 Nuits)"}, {"c100": "Débutants & Passionnés", "c200": "Débutant à Intermédiaire", "c300": "Intermédiaire à Avancé"}, {"c100": "Aucun (Esprit Ouvert)", "c200": "Pratique personnelle régulière", "c300": "Certification 200 Heures"}, {"c100": "Certificat d'Immersion", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Bases & Pratique Personnelle", "c200": "Pédagogie & Anatomie", "c300": "Séquençage Avancé & Maîtrise"}, {"c100": "8–10 Élèves Max", "c200": "8–10 Élèves Max", "c300": "8–10 Élèves Max"}, {"c100": "599 $ USD", "c200": "999 $ USD", "c300": "1 099 $ USD"}],
+    "rowsRishikesh": [{"c100": "12 Jours (11 Nuits)", "c200": "22 Jours (21 Nuits)", "c300": "28 Jours (27 Nuits)"}, {"c100": "Débutants & Passionnés", "c200": "Débutant à Intermédiaire", "c300": "Intermédiaire à Avancé"}, {"c100": "Aucun (Esprit Ouvert)", "c200": "Pratique personnelle régulière", "c300": "Certification 200 Heures"}, {"c100": "Certificat d'Immersion", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Bases & Pratique Personnelle", "c200": "Pédagogie & Anatomie", "c300": "Séquençage Avancé & Maîtrise"}, {"c100": "8–10 Élèves Max", "c200": "8–10 Élèves Max", "c300": "8–10 Élèves Max"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "1 099 $ USD"}],
     "rowsVarkala": [{"c100": "12 Jours (11 Nuits)", "c200": "28 Jours (27 Nuits)", "c300": "28 Jours (27 Nuits)"}, {"c100": "Débutants & Passionnés", "c200": "Débutant à Intermédiaire", "c300": "Intermédiaire à Avancé"}, {"c100": "Aucun (Esprit Ouvert)", "c200": "Pratique personnelle régulière", "c300": "Certification 200 Heures"}, {"c100": "Certificat d'Immersion", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Bases & Pratique Personnelle", "c200": "Pédagogie & Anatomie", "c300": "Séquençage Avancé & Maîtrise"}, {"c100": "8–10 Élèves Max", "c200": "8–10 Élèves Max", "c300": "8–10 Élèves Max"}, {"c100": "599 $ USD", "c200": "999 $ USD", "c300": "1 099 $ USD"}]
   },
   "es": {
@@ -1430,7 +1430,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "Enfoque Principal",
     "f_batch": "Tamaño del Grupo",
     "f_price": "Precio desde",
-    "rowsRishikesh": [{"c100": "12 Días (11 Noches)", "c200": "28 Días (27 Noches)", "c300": "28 Días (27 Noches)"}, {"c100": "Principiantes y Buscadores", "c200": "Principiante a Intermedio", "c300": "Intermedio a Avanzado"}, {"c100": "Ninguno (Mente Abierta)", "c200": "Práctica personal regular", "c300": "Certificación de 200 Horas"}, {"c100": "Certificado de Inmersión", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Fundamentos y Autopráctica", "c200": "Habilidades Pedagógicas y Anatomía", "c300": "Secuenciación Avanzada y Maestría"}, {"c100": "Máx. 8–10 Alumnos", "c200": "Máx. 8–10 Alumnos", "c300": "Máx. 8–10 Alumnos"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1.099 USD"}],
+    "rowsRishikesh": [{"c100": "12 Días (11 Noches)", "c200": "22 Días (21 Noches)", "c300": "28 Días (27 Noches)"}, {"c100": "Principiantes y Buscadores", "c200": "Principiante a Intermedio", "c300": "Intermedio a Avanzado"}, {"c100": "Ninguno (Mente Abierta)", "c200": "Práctica personal regular", "c300": "Certificación de 200 Horas"}, {"c100": "Certificado de Inmersión", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Fundamentos y Autopráctica", "c200": "Habilidades Pedagógicas y Anatomía", "c300": "Secuenciación Avanzada y Maestría"}, {"c100": "Máx. 8–10 Alumnos", "c200": "Máx. 8–10 Alumnos", "c300": "Máx. 8–10 Alumnos"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "$1.099 USD"}],
     "rowsVarkala": [{"c100": "12 Días (11 Noches)", "c200": "28 Días (27 Noches)", "c300": "28 Días (27 Noches)"}, {"c100": "Principiantes y Buscadores", "c200": "Principiante a Intermedio", "c300": "Intermedio a Avanzado"}, {"c100": "Ninguno (Mente Abierta)", "c200": "Práctica personal regular", "c300": "Certificación de 200 Horas"}, {"c100": "Certificado de Inmersión", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Fundamentos y Autopráctica", "c200": "Habilidades Pedagógicas y Anatomía", "c300": "Secuenciación Avanzada y Maestría"}, {"c100": "Máx. 8–10 Alumnos", "c200": "Máx. 8–10 Alumnos", "c300": "Máx. 8–10 Alumnos"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1.099 USD"}]
   },
   "it": {
@@ -1457,7 +1457,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "Focus Principale",
     "f_batch": "Dimensione del Gruppo",
     "f_price": "Prezzo a partire da",
-    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "22 Days (21 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "$1,099 USD"}],
     "rowsVarkala": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "ru": {
@@ -1484,7 +1484,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "Ключевой фокус",
     "f_batch": "Размер группы",
     "f_price": "Стоимость от",
-    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "22 Days (21 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "$1,099 USD"}],
     "rowsVarkala": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "id": {
@@ -1511,7 +1511,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "Fokus Utama",
     "f_batch": "Ukuran Grup",
     "f_price": "Mulai dari",
-    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "22 Days (21 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "$1,099 USD"}],
     "rowsVarkala": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "ja": {
@@ -1538,7 +1538,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "学習の重点",
     "f_batch": "定員",
     "f_price": "最低受講料",
-    "rowsRishikesh": [{"c100": "12日間（11泊）", "c200": "28日間（27泊）", "c300": "28日間（27泊）"}, {"c100": "初級者・ヨガ探求者", "c200": "初級〜中級者", "c300": "中級〜上級者"}, {"c100": "不問（素直な探求心）", "c200": "定期的な自主練習", "c300": "200時間修了資格"}, {"c100": "基礎修了証", "c200": "全米ヨガアライアンス RYT 200", "c300": "全米ヨガアライアンス RYT 500"}, {"c100": "基礎知識と自己鍛錬", "c200": "指導法・解剖学・アライメント", "c300": "高度なシークエンスと指導の極意"}, {"c100": "8〜10名の少人数制", "c200": "8〜10名の少人数制", "c300": "8〜10名の少人数制"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsRishikesh": [{"c100": "12日間（11泊）", "c200": "22日間（21泊）", "c300": "28日間（27泊）"}, {"c100": "初級者・ヨガ探求者", "c200": "初級〜中級者", "c300": "中級〜上級者"}, {"c100": "不問（素直な探求心）", "c200": "定期的な自主練習", "c300": "200時間修了資格"}, {"c100": "基礎修了証", "c200": "全米ヨガアライアンス RYT 200", "c300": "全米ヨガアライアンス RYT 500"}, {"c100": "基礎知識と自己鍛錬", "c200": "指導法・解剖学・アライメント", "c300": "高度なシークエンスと指導の極意"}, {"c100": "8〜10名の少人数制", "c200": "8〜10名の少人数制", "c300": "8〜10名の少人数制"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "$1,099 USD"}],
     "rowsVarkala": [{"c100": "12日間（11泊）", "c200": "28日間（27泊）", "c300": "28日間（27泊）"}, {"c100": "初級者・ヨガ探求者", "c200": "初級〜中級者", "c300": "中級〜上級者"}, {"c100": "不問（素直な探求心）", "c200": "定期的な自主練習", "c300": "200時間修了資格"}, {"c100": "基礎修了証", "c200": "全米ヨガアライアンス RYT 200", "c300": "全米ヨガアライアンス RYT 500"}, {"c100": "基礎知識と自己鍛錬", "c200": "指導法・解剖学・アライメント", "c300": "高度なシークエンスと指導の極意"}, {"c100": "8〜10名の少人数制", "c200": "8〜10名の少人数制", "c300": "8〜10名の少人数制"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "ko": {
@@ -1565,7 +1565,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "핵심 커리큘럼",
     "f_batch": "정원",
     "f_price": "시작 가격",
-    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsRishikesh": [{"c100": "12 Days (11 Nights)", "c200": "22 Days (21 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "$1,099 USD"}],
     "rowsVarkala": [{"c100": "12 Days (11 Nights)", "c200": "28 Days (27 Nights)", "c300": "28 Days (27 Nights)"}, {"c100": "Beginners & Seekers", "c200": "Beginner to Intermediate", "c300": "Intermediate to Advanced"}, {"c100": "None (Open Mind)", "c200": "Consistent Self-Practice", "c300": "200-Hour Certification"}, {"c100": "Foundation Certificate", "c200": "Yoga Alliance RYT 200", "c300": "Yoga Alliance RYT 500"}, {"c100": "Foundations & Self-Practice", "c200": "Teaching Skills & Anatomy", "c300": "Advanced Sequencing & Mastery"}, {"c100": "8–10 Students Max", "c200": "8–10 Students Max", "c300": "8–10 Students Max"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   },
   "zh": {
@@ -1592,7 +1592,7 @@ export const COMPARE_COURSES_UI: Record<string, CompareCoursesUIData> = {
     "f_focus": "核心重点",
     "f_batch": "班级规模",
     "f_price": "起步学费",
-    "rowsRishikesh": [{"c100": "12天（11晚）", "c200": "28天（27晚）", "c300": "28天（27晚）"}, {"c100": "初学者与灵性探索者", "c200": "初级至中级修习者", "c300": "中级至资深导师"}, {"c100": "无需先修（持开放心态）", "c200": "规律的自我修习习惯", "c300": "具备200小时认证资质"}, {"c100": "基础沉浸修学证书", "c200": "全美瑜伽联盟 RYT 200", "c300": "全美瑜伽联盟 RYT 500"}, {"c100": "基础体式与自我修行", "c200": "教学技能与应用解剖学", "c300": "高阶体式编排与大师之道"}, {"c100": "8–10人小班授课", "c200": "8–10人小班授课", "c300": "8–10人小班授课"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}],
+    "rowsRishikesh": [{"c100": "12天（11晚）", "c200": "22天（21晚）", "c300": "28天（27晚）"}, {"c100": "初学者与灵性探索者", "c200": "初级至中级修习者", "c300": "中级至资深导师"}, {"c100": "无需先修（持开放心态）", "c200": "规律的自我修习习惯", "c300": "具备200小时认证资质"}, {"c100": "基础沉浸修学证书", "c200": "全美瑜伽联盟 RYT 200", "c300": "全美瑜伽联盟 RYT 500"}, {"c100": "基础体式与自我修行", "c200": "教学技能与应用解剖学", "c300": "高阶体式编排与大师之道"}, {"c100": "8–10人小班授课", "c200": "8–10人小班授课", "c300": "8–10人小班授课"}, {"c100": "€900", "c200": "€1,550 (Shared) / €2,000 (Private)", "c300": "$1,099 USD"}],
     "rowsVarkala": [{"c100": "12天（11晚）", "c200": "28天（27晚）", "c300": "28天（27晚）"}, {"c100": "初学者与灵性探索者", "c200": "初级至中级修习者", "c300": "中级至资深导师"}, {"c100": "无需先修（持开放心态）", "c200": "规律的自我修习习惯", "c300": "具备200小时认证资质"}, {"c100": "基础沉浸修学证书", "c200": "全美瑜伽联盟 RYT 200", "c300": "全美瑜伽联盟 RYT 500"}, {"c100": "基础体式与自我修行", "c200": "教学技能与应用解剖学", "c300": "高阶体式编排与大师之道"}, {"c100": "8–10人小班授课", "c200": "8–10人小班授课", "c300": "8–10人小班授课"}, {"c100": "$599 USD", "c200": "$999 USD", "c300": "$1,099 USD"}]
   }
 };
@@ -1612,7 +1612,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "200 Hour Yoga Teacher Training in Rishikesh",
-            "duration": "28 Days (27 Nights)",
+            "duration": "22 Days (21 Nights)",
             "certification": "Yoga Alliance RYT 200",
             "description": "Internationally accredited flagship teacher training. Master multi-style asana, anatomy, philosophy, and alignment in an 8–10 student batch."
       },
@@ -1662,7 +1662,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "200-Uur Yogadocentenopleiding in Rishikesh",
-            "duration": "28 Dagen (27 Nachten)",
+            "duration": "22 Dagen (21 Nachten)",
             "certification": "Yoga Alliance RYT 200",
             "description": "Internationaal erkende vlaggenschipopleiding. Leer multi-stijl asana's, anatomie, filosofie en uitlijning in groepen van 8–10 personen."
       },
@@ -1712,7 +1712,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "200-Stunden Yogalehrer-Ausbildung in Rishikesh",
-            "duration": "28 Tage (27 Nächte)",
+            "duration": "22 Tage (21 Nächte)",
             "certification": "Yoga Alliance RYT 200",
             "description": "International akkreditierte Flaggschiff-Ausbildung. Meistern Sie Multi-Style Asana, Anatomie, Philosophie und Alignment in Gruppen von 8–10 Schülern."
       },
@@ -1762,7 +1762,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "Formation de Professeur de Yoga 200 Heures à Rishikesh",
-            "duration": "28 Jours (27 Nuits)",
+            "duration": "22 Jours (21 Nuits)",
             "certification": "Yoga Alliance RYT 200",
             "description": "Formation phare accréditée internationalement. Maîtrisez les asanas multi-styles, l'anatomie, la philosophie et l'alignement en groupe de 8 à 10 élèves."
       },
@@ -1812,7 +1812,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "Formación de Profesores de Yoga 200 Horas en Rishikesh",
-            "duration": "28 Días (27 Noches)",
+            "duration": "22 Días (21 Noches)",
             "certification": "Yoga Alliance RYT 200",
             "description": "Curso estrella con acreditación internacional. Domina asanas multiestilo, anatomía, filosofía y alineación en grupos reducidos de 8 a 10 alumnos."
       },
@@ -1862,7 +1862,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "Corso Formazione Insegnanti Yoga 200 Ore a Rishikesh",
-            "duration": "28 Giorni (27 Notti)",
+            "duration": "22 Giorni (21 Notti)",
             "certification": "Yoga Alliance RYT 200",
             "description": "Formazione di riferimento accreditata a livello globale. Apprendi asana multi-stile, anatomia, filosofia e allineamento in classi di 8–10 allievi."
       },
@@ -1912,7 +1912,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "Курс Подготовки Преподавателей Йоги 200 Часов в Ришикеше",
-            "duration": "28 Дней (27 Ночей)",
+            "duration": "22 Дней (21 Ночей)",
             "certification": "Yoga Alliance RYT 200",
             "description": "Международно признанный флагманский курс. Освойте мульти-стиль асан, анатомию, философию и отстройки в группе из 8–10 человек."
       },
@@ -1962,7 +1962,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "Pelatihan Guru Yoga 200 Jam di Rishikesh",
-            "duration": "28 Hari (27 Malam)",
+            "duration": "22 Hari (21 Malam)",
             "certification": "Yoga Alliance RYT 200",
             "description": "Pelatihan guru unggulan terakreditasi internasional. Kuasai asana multi-gaya, anatomi, filosofi, dan penyelarasan dalam kelompok 8–10 siswa."
       },
@@ -2012,7 +2012,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "リシケシ 200時間 ヨガ指導者養成コース",
-            "duration": "28日間（27泊）",
+            "duration": "22日間（21泊）",
             "certification": "全米ヨガアライアンス RYT 200",
             "description": "国際公認フラッグシップ講座。8〜10名の少人数でマルチスタイルのアーサナ、解剖学、哲学、アライメントを完全修得。"
       },
@@ -2062,7 +2062,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "리시케시 200시간 요가 지도자 과정",
-            "duration": "28일 (27박)",
+            "duration": "22일 (21박)",
             "certification": "Yoga Alliance RYT 200",
             "description": "국제 공인 플래그십 코스. 8~10명 소수정예로 멀티 스타일 아사나, 해부학, 요가 철학, 정렬법을 완벽히 마스터합니다."
       },
@@ -2112,7 +2112,7 @@ export const EXPLORE_MORE_COURSES_UI: Record<string, ExploreMoreCoursesUIData> =
       },
       "200-rishikesh": {
             "title": "瑞诗凯诗 200小时 瑜伽导师培训班",
-            "duration": "28天 (27晚)",
+            "duration": "22天 (21晚)",
             "certification": "全美瑜伽联盟 RYT 200",
             "description": "国际权威旗舰师资认证。在8–10人小班教学中全面掌握多流派体式、运动解剖、哲学与精准正位。"
       },
