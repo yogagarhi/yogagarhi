@@ -9,6 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const slug = (await params).slug;
 
     const postMetadata: Record<string, { title: string; description: string; image?: string; imageAlt?: string }> = {
+        "how-to-become-a-yoga-instructor": {
+            title: "Become a Yoga Instructor: 2027 Step-by-Step Guide | YogaGarhi",
+            description: "Learn how to become a yoga instructor with this step-by-step guide for 2027: training, skills, Yoga Alliance credential updates and your first class.",
+            image: "https://www.yogagarhi.com/images/blogs/how-to-become-a-yoga-instructor-poster.jpg",
+            imageAlt: "How to become a yoga instructor — step-by-step guide 2027 by Yogagarhi",
+        },
         "yoga-instructor-certification-bali": {
             title: "Yoga Instructor Certification in Bali: 2027 Guide | YogaGarhi",
             description: "How to get a yoga instructor certification in Bali: RYT 200 rules, real costs, visas, where to train and how to choose a school. Updated for 2027.",

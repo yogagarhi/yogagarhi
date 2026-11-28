@@ -3206,6 +3206,13 @@ export default function Course200Hour({ initialBatches, syllabusSlot }: { initia
                     >
                       our complete guide to yoga instructor certification in Bali
                     </Link>
+                    , or follow our{" "}
+                    <Link
+                      href="/blogs/how-to-become-a-yoga-instructor"
+                      className="text-amber-400 hover:text-amber-300 font-semibold underline underline-offset-4 transition-colors"
+                    >
+                      step-by-step guide to becoming a yoga instructor
+                    </Link>
                     .
                   </p>
                 </div>

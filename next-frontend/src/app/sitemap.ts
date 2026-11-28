@@ -65,6 +65,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.7,
         },
         {
+            url: 'https://www.yogagarhi.com/blogs/how-to-become-a-yoga-instructor',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.8,
+            images: ['https://www.yogagarhi.com/images/blogs/how-to-become-a-yoga-instructor-poster.jpg']
+        },
+        {
             url: 'https://www.yogagarhi.com/blogs/yoga-instructor-certification-bali',
             lastModified: new Date(),
             changeFrequency: 'weekly',

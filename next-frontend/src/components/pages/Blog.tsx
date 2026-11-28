@@ -11,6 +11,14 @@ const heroImage = getCloudinaryImage("hero-yoga-bali.jpg");
 
 const blogPosts = [
   {
+    title: "How to Become a Yoga Instructor: Step-by-Step Guide (2027)",
+    excerpt: "Learn how to become a yoga instructor with this step-by-step guide for 2027: training, skills, Yoga Alliance credential updates and your first class.",
+    date: "March 1, 2027",
+    image: "/images/blogs/how-to-become-a-yoga-instructor-poster.png",
+    slug: "how-to-become-a-yoga-instructor",
+    imageAlt: "How to become a yoga instructor — step-by-step guide 2027 by Yogagarhi"
+  },
+  {
     title: "Yoga Instructor Certification in Bali: The Complete 2027 Guide",
     excerpt: "How to get a yoga instructor certification in Bali: RYT 200 rules, real costs, visas, where to train and how to choose a school. Updated for 2027.",
     date: "January 25, 2027",
